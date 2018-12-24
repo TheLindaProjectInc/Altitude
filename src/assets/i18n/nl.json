@@ -40,16 +40,16 @@
             "BYTES": "bytes"
         },
         "STAKING": {
-            "UNLOCK": "Ontgrendel voor uitzetten",
+            "UNLOCK": "Ontgrendel voor staking",
             "LOCK": "Vergrendel Wallet",
-            "STAKINGTITLE": "Wallet wordt momenteel ontgrendeld voor uitzetten.",
-            "NOTENABLEDTITLE": "Uitzetten is niet ingeschakeld",
-            "NOTENABLEDINFO": "Uitzetten is momenteel niet ingeschakeld.",
-            "NOTENABLEDINSTR": "Om in te zetten, moet u staking setting staking = 1 in uw Linda.conf-bestand configureren.",
-            "NOTSTAKINGTITLE": "Wallet zet niet in",
-            "NOTSTAKINGINFO": "Je portemonnee is momenteel vergrendeld voor uitzetten.",
-            "NOTSTAKINGINSTR": "Je kunt starten met uitzetten door je portemonnee te ontgrendelen voor uitzetten",
-            "INPUTSTITLE": "Uitgezette inputs",
+            "STAKINGTITLE": "Wallet wordt momenteel ontgrendeld voor staking.",
+            "NOTENABLEDTITLE": "Staking is niet ingeschakeld",
+            "NOTENABLEDINFO": "Staking is momenteel niet ingeschakeld.",
+            "NOTENABLEDINSTR": "Om te staken, moet u staking setting staking = 1 in uw Linda.conf-bestand configureren.",
+            "NOTSTAKINGTITLE": "Wallet staked niet",
+            "NOTSTAKINGINFO": "Je portemonnee is momenteel vergrendeld voor staking.",
+            "NOTSTAKINGINSTR": "Je kunt starten met staking door je portemonnee te ontgrendelen voor staking",
+            "INPUTSTITLE": "Staking inputs",
             "EXPECTEDRETURN": "Verwachte tijd tot beloning",
             "YOURWEIGHT": "Je gewicht",
             "NETWORKWEIGHT": "Netwerk Gewicht",
@@ -59,7 +59,7 @@
             "METAB": "Mijn Masternodes",
             "LISTTAB": "Alle Masternodes",
             "PROTOCOL": "Protocol",
-            "LASTSEEN": "Laatst gezien",
+            "LASTSEEN": "Laatst gezien om",
             "ACTIVETIME": "Actieve tijd",
             "IP": "IP",
             "ADDRESS": "Adres",
@@ -67,8 +67,8 @@
             "NOTENABLEDTITLE": "Masternodes niet ingeschakeld",
             "NOTENABLEDINSTR": "Als u een masternode wilt activeren, moet u masternodes inschakelen door masternode = 1 in uw Linda.conf-bestand configureren.",
             "STARTBUTTON": "Start Lokaal",
-            "STARTALIASBUTTON": "Begin alias",
-            "STARTALLBUTTON": "Begin alle"
+            "STARTALIASBUTTON": "Start alias",
+            "STARTALLBUTTON": "Start alle"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Teken bericht",
@@ -76,7 +76,7 @@
             "SIGN_DESCRIPTION": "U kunt berichten ondertekenen met uw adressen om te bewijzen dat u de eigenaar bent. Pas op dat u niets vaags tekent, want phishing-aanvallen kunnen u proberen te misleiden om uw identiteit aan hen te laten zien. Teken alleen volledig uitgewerkte verklaringen waarmee u akkoord gaat.",
             "SIGNATURE": "Handtekening",
             "BUTTONSIGN": "Teken bericht",
-            "VERIFY_DESCRIPTION": "Voer het ondertekeningsadres in, bericht (zorg ervoor dat u regelafbrekingen, spaties, tabbladen, enz. Exact kopieert) en handtekening hieronder om het bericht te verifiëren. Zorg ervoor dat je niet meer leest in de handtekening dan in het ondertekende bericht zelf, om te voorkomen dat je wordt misleid door een man-in-the-middle-aanval.",
+            "VERIFY_DESCRIPTION": "Voer het ondertekeningsadres in, het bericht (zorg ervoor dat u regelafbrekingen, spaties, tabbladen, enz. Exact kopieert) en handtekening hieronder om het bericht te verifiëren. Zorg ervoor dat je niet meer leest in de handtekening dan in het ondertekende bericht zelf, om te voorkomen dat je wordt misleid door een man-in-the-middle-aanval.",
             "BUTTONVERIFY": "Verifieer bericht",
             "ENTERMESSAGE": "Voer bericht in",
             "VERIFYSUCCESS": "Bericht geverifieerd",
@@ -85,7 +85,7 @@
         "TOOLS": {
             "INFORMATIONTAB": "Informatie",
             "DEBUGTAB": "Foutopsporingsconsole",
-            "PEERSTAB": "peers",
+            "PEERSTAB": "Peers",
             "REPAIRTAB": "Portemonnee repareren",
             "ABOUT": {
                 "GENERALTITLE": "Algemeen",
@@ -101,7 +101,7 @@
             },
             "DEBUG": {
                 "CONSOLEINFO": "Welkom bij de Linda Core RPC-console. Typ help voor een overzicht van beschikbare opdrachten.",
-                "CONSOLEWARNING": "WAARSCHUWING: oplichters zijn actief geweest en vertelden gebruikers hier commando's te typen en de inhoud van hun portemonnee te stelen. Gebruik deze console niet zonder de vertakking van een opdracht volledig te begrijpen.",
+                "CONSOLEWARNING": "WAARSCHUWING: Oplichters zijn actief geweest en vertelden gebruikers hier commando's te typen en de inhoud van hun portemonnee te stelen. Gebruik deze console niet zonder de inhoud van een opdracht volledig te begrijpen.",
                 "COMMANDPLACEHODLER": "Voer het commando in"
             },
             "PEERS": {
@@ -117,7 +117,7 @@
             },
             "REPAIR": {
                 "INFOEXTERNAL": "Deze reparatieopdrachten kunnen niet worden uitgevoerd wanneer Linda Core extern wordt uitgevoerd",
-                "INFO": "De onderstaande knoppen zullen Linda Core opnieuw opstarten met opdrachtregelopties om de portefeuille te herstellen, problemen met corrupte blockchain-bestanden of ontbrekende / verouderde transacties op te lossen.",
+                "INFO": "De onderstaande knoppen zullen Linda Core opnieuw opstarten met opdrachtregelopties om de portefeuille te herstellen, problemen met corrupte blockchain-bestanden of ontbrekende / verouderde transacties te herstellen.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: poging om persoonlijke sleutels te herstellen van een corrupte wallet.dat.",
                 "RESCANBUTTON": "Bestanden van blockchain-bestanden opnieuw scannen",
@@ -164,7 +164,7 @@
             "TABLE_BITS": "Bits",
             "TABLE_MINT": "Munt",
             "TABLE_VERSION": "Versie",
-            "TABLE_BLOCKTRUST": "Vertrouw blokkeren",
+            "TABLE_BLOCKTRUST": "Trust blokkeren",
             "TABLE_CHAINTRUST": "Chain Trust",
             "TABLE_FLAGS": "vlaggen",
             "TABLE_MERKLEROOT": "Merkle Root",
@@ -189,12 +189,12 @@
             "STAKING": "staking",
             "MASTERNODES": "Masternodes",
             "SYNC": {
-                "CONNECTING": "Aansluiten",
+                "CONNECTING": "Verbinden",
                 "NOBLOCKS": "Wachten op blokken",
                 "BLOCKS": "blokken",
                 "TIMESINCEBLOCK": "sinds laatste blok",
                 "PEERS": "peers",
-                "NOPEERS": "Wachten op collega's"
+                "NOPEERS": "Wachten op peers"
             },
             "STATUS": {
                 "UNENCRYPTED": "Portefeuille is niet gecodeerd",
@@ -210,7 +210,7 @@
             "EXPLORER": "Block Explorer"
         },
         "PROMPT": {
-            "ENTERPASSPHRASETITLE": "Voer uw wachtwoordzin voor uw Wallet in",
+            "ENTERPASSPHRASETITLE": "Voer uw wachtwoordzin voor uw Portemonnee in",
             "UNLOCKSTAKINGONLY": "Ontgrendel alleen voor uitzetten",
             "CLIENTUPDATETITLE": "Linda Core Update beschikbaar",
             "CLIENTUPDATEINFO": "Een update is beschikbaar voor Linda Core. Wilt u het nu installeren?",
@@ -238,13 +238,13 @@
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
-            "SENDINGINFO": "Dit zijn uw opgeslagen Linda-adres voor het verzenden van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verzendt",
-            "RECEIVINGINFO": "Dit zijn uw opgeslagen Linda-adres voor het ontvangen van betalingen.",
+            "SENDINGINFO": "Dit zijn uw opgeslagen Linda-adressen voor het verzenden van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verzendt",
+            "RECEIVINGINFO": "Dit zijn uw opgeslagen Linda-adressen voor het ontvangen van betalingen.",
             "BUTTONSELECT": "kiezen",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Adres",
-            "SENDINGTAB": "Bezig met verzenden",
-            "RECEIVINGTAB": "Het ontvangen"
+            "SENDINGTAB": "Verzenden",
+            "RECEIVINGTAB": "Ontvangen"
         }
     },
     "MENU": {
