@@ -1,0 +1,34 @@
+<div class="content" *ngIf="account">
+
+  <div class="manage-account-wrapper">
+
+    <div class="account-identicon">
+      <canvas identicon-canvas width="100" height="100" title='{{account.identicon}}'></canvas>
+    </div>
+
+    <div>
+      <div class="account-name">
+        <fa-icon icon="wallet"></fa-icon>
+        <input type="text" class="form-control" (change)="renameAccount()" [(ngModel)]="this.account.mainAddress.newAccount" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}">
+      </div>
+      <h2>
+        {{helpers.prettyCoins(account.balance)}}
+        <span>Linda</span>
+      </h2>
+      <h4>
+        {{account.address}}
+        <button class="btn btn-icon" (click)="copyAddress()">
+          <fa-icon icon="copy"></fa-icon>
+        </button>
+      </h4>
+    </div>
+
+  </div>
+
+
+
+  <div class="qrcode-wrapper">
+    <div id="qrcode"></div>
+  </div>
+
+</div>

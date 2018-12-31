@@ -1,0 +1,77 @@
+<div class="content">
+
+    <div class="tabs">
+        <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+            {{'PAGES.SIGNMESSAGE.SIGNMESSAGETAB' | translate}}
+        </button>
+        <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+            {{'PAGES.SIGNMESSAGE.VERIFYMESSAGETAB' | translate}}
+        </button>
+    </div>
+
+    <!-- Sign Message -->
+    <div class="tab-content" *ngIf="tab==0">
+        <p>{{'PAGES.SIGNMESSAGE.SIGN_DESCRIPTION' | translate}}</p>
+        <div class="form-inline">
+            <input type="text" [(ngModel)]="sign.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
+                minlength="34" required>
+            <button class="btn btn-default btn-icon" (click)="getFromAddressBook(true)">
+                <fa-icon icon="address-book"></fa-icon>
+            </button>
+        </div>
+
+        <div class="form-inline">
+            <textarea [(ngModel)]="sign.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"></textarea>
+        </div>
+
+        <p>{{'PAGES.SIGNMESSAGE.SIGNATURE' | translate}}</p>
+        <div class="form-inline">
+            <textarea [(ngModel)]="sign.signature" disabled></textarea>
+        </div>
+
+        <div class="toolbar-bottom">
+            <button class="btn btn-default" (click)="sign_reset()">{{ 'MISC.CLEARALLBUTTON' | translate }}</button>
+            <button class="btn btn-primary right" (click)="signMessage()">
+                {{ 'PAGES.SIGNMESSAGE.BUTTONSIGN' | translate }}
+            </button>
+        </div>
+
+    </div>
+    <!-- Verify Message -->
+    <div class="tab-content" *ngIf="tab==1">
+        <p>{{'PAGES.SIGNMESSAGE.VERIFY_DESCRIPTION' | translate}}</p>
+        <div class="form-inline">
+            <input type="text" [(ngModel)]="verify.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
+                minlength="34" required>
+            <button class="btn btn-default btn-icon" (click)="getFromAddressBook(false)">
+                <fa-icon icon="address-book"></fa-icon>
+            </button>
+        </div>
+
+        <div class="form-inline">
+            <textarea [(ngModel)]="verify.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"
+                required></textarea>
+        </div>
+
+        <div class="form-inline">
+            <textarea type="text" [(ngModel)]="verify.signature" placeholder="{{ 'PAGES.SIGNMESSAGE.SIGNATURE' | translate }}"
+                required></textarea>
+        </div>
+
+        <p class="success" *ngIf="verify.result==true">
+            {{ 'PAGES.SIGNMESSAGE.VERIFYSUCCESS' | translate }}
+        </p>
+        <p class="danger" *ngIf="verify.result==false">
+            {{ 'PAGES.SIGNMESSAGE.VERIFYFAIL' | translate }}
+        </p>
+
+        <div class="toolbar-bottom">
+            <button class="btn btn-default" (click)="verify_reset()">{{ 'MISC.CLEARALLBUTTON' | translate }}</button>
+            <button class="btn btn-primary right" (click)="verifyMessage()">
+                {{ 'PAGES.SIGNMESSAGE.BUTTONVERIFY' | translate }}
+            </button>
+        </div>
+
+    </div>
+
+</div>

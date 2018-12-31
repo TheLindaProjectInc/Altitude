@@ -1,0 +1,55 @@
+ngx-smart-modal {
+    .nsm-dialog {
+        max-width: 100%;
+        justify-content: center;
+    }
+    h1 {
+        margin-top: .5em;
+        margin-bottom: 1em;
+    }
+    .nsm-content {
+        background-color: $background-primary;
+        min-width: 400px;
+    }
+    .nsm-body,
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        textarea,
+        input:not([type]),
+        input[type="email" i],
+        input[type="number" i],
+        input[type="password" i],
+        input[type="tel" i],
+        input[type="url" i],
+        input[type="text" i] {
+            margin-bottom: 5px;
+        }
+    }
+    .nsm-dialog-btn-close {
+        color: $font-primary;
+    }
+    .modal-buttons-end {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2em;
+    }
+    .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+    .alert-modal {
+        .nsm-content {
+            width: 400px;
+        }
+    }
+}
+
+.address-book {
+    .nsm-content {
+        width: 100%;
+    }
+}

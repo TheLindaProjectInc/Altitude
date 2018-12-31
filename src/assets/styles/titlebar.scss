@@ -1,0 +1,170 @@
+.titlebar {
+    z-index: 100;
+    position: fixed;
+    right: -1px;
+    top: -1px;
+    display: block;
+    height: 32px;
+    padding: 0;
+    -webkit-app-region: drag;
+    background: $background-primary
+}
+
+.titlebar-controls {
+    float: right;
+    text-align: left;
+}
+
+.titlebar:after,
+.titlebar-controls:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.titlebar-minimize,
+.titlebar-resize,
+.titlebar-close {
+    float: left;
+    width: 45px;
+    height: 31px;
+    margin: 1px 1px 0 0;
+    text-align: center;
+    line-height: 29px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+    -webkit-app-region: no-drag;
+}
+
+.titlebar-minimize svg,
+.titlebar-resize svg.maximize-svg,
+.titlebar-resize svg.fullscreen-svg,
+.titlebar-close svg {
+    width: 10px;
+    height: 10px;
+    shape-rendering: crispEdges;
+}
+
+.titlebar-close svg polygon {
+    -webkit-transition: fill .2s;
+    -moz-transition: fill .2s;
+    -ms-transition: fill .2s;
+    -o-transition: fill .2s;
+    transition: fill .2s;
+}
+
+.titlebar:not(.fullscreen) svg.maximize-svg {
+    display: none;
+}
+
+.titlebar.fullscreen svg.fullscreen-svg {
+    display: none;
+}
+
+.titlebar-minimize:hover,
+.titlebar-resize:hover,
+.titlebar-fullscreen:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.titlebar-light .titlebar-minimize:hover,
+.titlebar-light .titlebar-resize:hover,
+.titlebar-light .titlebar-fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.titlebar-close:hover {
+    background-color: rgba(232, 17, 35, 0.9);
+}
+
+.titlebar-close:hover svg polygon {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.titlebar-light .titlebar-close:hover {
+    fill: rgba(0, 0, 0, 1);
+}
+
+.titlebar-light svg polygon,
+.titlebar-light svg rect,
+.titlebar-light svg>path {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.titlebar-light .titlebar-close:hover {
+    background-color: rgba(232, 17, 35, 0.9);
+}
+
+.titlebar-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    hr {
+        border-color: rgba(255, 255, 255, .1);
+        margin: 2px 6px;
+    }
+    .dropdown {
+        height: 32px;
+        display: flex;
+        .dropbtn {
+            -webkit-transition: fill .2s;
+            -moz-transition: fill .2s;
+            -ms-transition: fill .2s;
+            -o-transition: fill .2s;
+            transition: fill .2s;
+            padding: 0 8px;
+            font-size: 14px;
+            border: none;
+            color: $font-primary;
+            background-color: inherit;
+            &:hover,
+            &:active {
+                background-color: rgba(255, 255, 255, 0.1)
+            }
+        }
+    }
+    &.selected {
+        .dropdown:hover,
+        .dropdown.hover {
+            .dropbtn {
+                background-color: rgba(255, 255, 255, 0.1)
+            }
+            .dropdown-content {
+                display: block;
+            }
+        }
+    }
+    .dropdown-content {
+        display: none;
+        top: 32px;
+        background: $background-accent;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        padding: 5px 0;
+        button {
+            float: none;
+            font-size: 14px;
+            color: $font-primary;
+            white-space: nowrap;
+            padding: 5px 20px;
+            display: block;
+            text-align: left;
+            background: none;
+            border: none;
+            margin: 0;
+            width: 100%;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $background-primary;
+            }
+        }
+    }
+}

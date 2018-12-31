@@ -1,0 +1,14 @@
+<div class="content">
+
+  <h1>{{ 'PAGES.LOCALE.TITLE' | translate }}</h1>
+
+  <div class="form-inline">
+    <span>{{ 'MISC.SEARCH' | translate }}</span>
+    <input type="text" [(ngModel)]="search" (keyup)="filter()" >
+  </div>
+
+  <button class="btn btn-default" (click)="setLangauge(language)" *ngFor="let language of languages" [ngClass]="{'btn-primary':language.code==currentLanguage}">
+    {{language.local}}
+  </button>
+
+</div>

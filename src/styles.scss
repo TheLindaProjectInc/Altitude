@@ -1,0 +1,654 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~ngx-smart-modal/ngx-smart-modal";
+@import "./assets/styles/variables";
+@import "./assets/styles/button";
+@import "./assets/styles/modal";
+@import "./assets/styles/titlebar";
+@import "./assets/styles/clientStatus.scss";
+@import "./assets/styles/tabs.scss";
+@import "./assets/styles/tables.scss";
+@import "./assets/styles/contextMenu.scss";
+@import "./assets/styles/checkbox.scss";
+html,
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: $background-primary;
+}
+
+body {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    color: $font-primary;
+    flex-direction: column;
+    padding-top: 31px;
+    -webkit-app-region: drag;
+}
+
+button,
+a {
+    -webkit-app-region: no-drag;
+}
+
+.wrapper {
+    position: absolute;
+    top: 31px;
+    bottom: 9px;
+    right: 0;
+    left: 0;
+    margin-left: 250px;
+    flex: 1;
+}
+
+.block {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+    .subtitle {
+        font-size: .75em
+    }
+}
+
+a {
+    -webkit-user-drag: none;
+}
+
+.success {
+    color: $color-success;
+}
+
+.danger {
+    color: $color-danger;
+}
+
+.primary {
+    color: $color-primary;
+}
+
+.flex {
+    display: flex;
+}
+
+.right {
+    float: right;
+}
+
+.content {
+    overflow: auto;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 250px;
+    min-width: 250px;
+    background: $background-accent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sidebar-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        min-width: 250px;
+    }
+    .logo {
+        height: 125px;
+        padding-top: 20px;
+    }
+    h3 {
+        color: $color-primary;
+        font-weight: normal;
+        margin: 0;
+        font-size: 16px;
+    }
+    .balance-currency {
+        font-size: 10px;
+    }
+    ul {
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        list-style-image: none;
+        a {
+            color: $font-primary;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            &:hover,
+            &:active,
+            &.active {
+                background: $background-primary;
+                color: $color-primary;
+            }
+            fa-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+    .wallet-sync {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-end;
+        font-size: 14px;
+        align-items: flex-start;
+        line-height: 20px;
+        width: 100%;
+        fa-icon {
+            margin-right: 5px;
+        }
+    }
+    .wallet-status {
+        width: 100%;
+        padding-bottom: 10px;
+        fa-icon {
+            margin: 5px;
+            &:first-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// Accounts
+.accounts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.account {
+    background-color: $background-accent;
+    min-width: 300px;
+    border-radius: 6px;
+    margin: 10px;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    .account-inner {
+        width: 100%;
+        float: left;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .account-identicon {
+        padding-right: 15px;
+    }
+    .account-name {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 0;
+        h5 {
+            padding: 0 10px;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+    .account-balance {
+        padding: 0 10px;
+        margin: 0px;
+        color: $color-primary;
+        font-size: 16px;
+        line-height: 1.8;
+        span {
+            font-size: 12px;
+        }
+    }
+    .account-address {
+        padding: 10px;
+        padding-top: 0;
+        margin: 0px;
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 1.8;
+    }
+    .wave {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background: lighten($color: $background-primary, $amount: 10%);
+        z-index: -1;
+    }
+    .wave:before,
+    .wave:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: lighten($color: $background-primary, $amount: 20%);
+        background: -moz-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, lighten($color: $background-primary, $amount: 20%)), color-stop(100%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3)));
+        background: -webkit-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
+        background: -o-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
+        background: -ms-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
+        background: linear-gradient(to bottom, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c10e1a', endColorstr='#f1404c', GradientType=0);
+        -webkit-border-radius: 50% 50%;
+        -moz-border-radius: 50% 50%;
+        border-radius: 50% 50%;
+    }
+    .wave:after {
+        height: 200%;
+        width: 100%;
+        left: 35%;
+        top: 20%;
+        opacity: 0.8;
+    }
+    .wave:before {
+        height: 360px;
+        width: 360px;
+        left: -5%;
+        top: -70%;
+    }
+}
+
+.account-identicon {
+    display: flex;
+    justify-content: flex-end;
+    canvas {
+        background: $background-primary;
+        border-radius: 99px;
+        padding: 6px;
+    }
+}
+
+// Transactions
+.transactions {
+    width: 100%;
+    padding-bottom: 10px;
+    .transaction {
+        height: 92px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $background-primary;
+        position: relative;
+        .icon {
+            padding: 15px;
+        }
+        .detail {
+            flex: 1;
+            padding: 10px 0;
+        }
+        .value {
+            padding: 10px;
+            padding-left: 0;
+            text-align: right;
+            .small {
+                font-size: 12px;
+            }
+        }
+        &.confirmed {
+            background: $background-accent;
+        }
+    }
+    .progress {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        &.unconfirmed {
+            transition: right 2s;
+            background: -webkit-linear-gradient(left, $background-accent 30%, lighten($color: $background-accent, $amount: 10%) 80%, $background-accent 100%) repeat;
+            -webkit-background-size: 50% 100%;
+            -webkit-animation-name: moving-gradient;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+        &.confirmed {
+            background: $background-accent;
+        }
+    }
+    tr {
+        background: $background-accent;
+        -webkit-transition: background-image 1s ease-in-out;
+        transition: background-image 1s ease-in-out;
+    }
+    h5 {
+        padding: 0 10px;
+        margin: 0px;
+        line-height: 1.8;
+    }
+    h6 {
+        padding: 0 10px;
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+@-webkit-keyframes moving-gradient {
+    0% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
+
+// maanage account
+.manage-account-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    .account-identicon {
+        margin-right: 20px;
+        canvas {
+            background: $background-accent !important;
+        }
+    }
+    .account-name {
+        display: flex;
+        align-items: center;
+        fa-icon {
+            font-size: 24px;
+        }
+        input {
+            background: none;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            font-size: 24px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    h2,
+    h4 {
+        margin: 5px 0;
+    }
+    h2 {
+        color: $color-primary;
+        span {
+            font-size: 14px
+        }
+    }
+}
+
+.manage-account-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.qrcode-wrapper {
+    display: flex;
+    justify-content: center;
+    #qrcode {
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+        width: 129px;
+    }
+}
+
+// inputs
+textarea,
+input:not([type]),
+input[type="email" i],
+input[type="number" i],
+input[type="password" i],
+input[type="tel" i],
+input[type="url" i],
+input[type="text" i] {
+    border: 1px solid white;
+    border-radius: 99px;
+    padding: 10px 20px;
+    color: white;
+    background: none;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &[disabled] {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+// checkbox
+// forms
+.form-inline {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    textarea,
+    input:not([type]),
+    input[type="email" i],
+    input[type="number" i],
+    input[type="password" i],
+    input[type="tel" i],
+    input[type="url" i],
+    input[type="text" i] {
+        flex: 1;
+        margin-left: 5px;
+    }
+    span {
+        min-width: 80px;
+    }
+}
+
+// titlebar
+// send
+.toolbar-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    padding: 10px;
+    background: $background-primary;
+    input:not([type]),
+    input[type="email" i],
+    input[type="number" i],
+    input[type="password" i],
+    input[type="tel" i],
+    input[type="url" i],
+    input[type="text" i] {
+        flex: 1;
+    }
+}
+
+.send-recipients {
+    margin-bottom: 150px;
+}
+
+.send-recipient {
+    position: relative;
+    background: $background-accent;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 5px;
+    padding-top: 35px;
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.send-source {
+    background: $background-accent;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 50px;
+    h4 {
+        margin-top: 1em;
+    }
+}
+
+.inputs-list {
+    table {
+        border-spacing: 0;
+        width: 100%;
+        th {
+            background: $background-primary;
+            padding: 5px;
+        }
+        td {
+            padding: 5px;
+            text-align: center;
+            fa-icon {
+                margin-left: -10px;
+            }
+        }
+        tbody {
+            td:nth-child(4) {
+                font-size: 12px
+            }
+        }
+    }
+}
+
+.inputs-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    p {
+        margin: 5px
+    }
+}
+
+.inputs-header-wrapper {
+    border: 1px solid white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.send-summary {
+    text-align: right;
+    h5:first-child {
+        margin-top: 0;
+    }
+}
+
+.notification-box {
+    background: $background-accent;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.information-table {
+    margin-top: 1em;
+    text-align: left;
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+//debug console
+.rpc-commands {
+    margin-bottom: 70px;
+    font-family: monospace;
+    fa-icon {
+        margin-right: 10px;
+    }
+    .line {
+        display: flex;
+        padding: 3px 0;
+    }
+    pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        margin: 0;
+    }
+    .timestamp {
+        min-width: 90px;
+    }
+}
+
+// scrollbar
+::-webkit-scrollbar {
+    width: .4em;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+    overflow: visible;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .2);
+}
+
+.cover-bar {
+    position: absolute;
+    background: $background-primary;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: .4em;
+    -webkit-transition: all .5s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.page:hover .cover-bar {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s;
+}
+
+.badge {
+    border-radius: 99px;
+    font-size: 12px;
+    padding: 2px 4px;
+    text-align: center;
+    &.primary {
+        background: $color-primary;
+        color: inherit !important;
+    }
+}
+
+.alerts {
+    padding: 10px;
+    border-radius: 5px;
+    background: $color-danger;
+    h1 {
+        margin: 0;
+    }
+}

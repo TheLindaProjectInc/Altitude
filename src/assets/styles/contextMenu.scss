@@ -1,0 +1,17 @@
+.context-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    &.visible {
+        display: block;
+        z-index: 1050;
+    }
+    .dropdown {
+        height: 0;
+    }
+    .dropdown-content {
+        display: block;
+        top: 0;
+    }
+}

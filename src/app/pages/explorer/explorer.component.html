@@ -1,0 +1,176 @@
+<div class="content">
+
+  <h1>{{ 'PAGES.EXPLORER.TITLE' | translate }}</h1>
+
+  <form (submit)="search()">
+    <div class="form-inline">
+      <span>{{ 'MISC.SEARCH' | translate }}</span>
+      <input type="text" name="searchInput" [(ngModel)]="searchInput" placeholder="{{ 'PAGES.EXPLORER.SEARCHPLACEHOLDER' | translate }}">
+    </div>
+  </form>
+
+  <h2 *ngIf="currentBlock">
+    {{ 'PAGES.EXPLORER.BLOCKTITLE' | translate }} #{{currentBlock.height}}
+  </h2>
+
+  <h2 *ngIf="!currentBlock && currentTransaction">
+    {{ 'PAGES.EXPLORER.TRANSACTIONTITLE' | translate }}
+    <span class="subtitle">{{currentTransaction.txid}}</span>
+  </h2>
+
+  <table *ngIf="currentBlock" class="table table-explorer">
+    <thead>
+      <tr>
+        <th colspan="2">{{ 'PAGES.EXPLORER.TABLE_SUMMARY' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_HEIGHT' | translate }}</th>
+        <td>{{currentBlock.height}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_HASH' | translate }}</th>
+        <td>{{currentBlock.hash}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_PREVHASH' | translate }}</th>
+        <td><button class="btn btn-link primary" (click)="loadBlock(0,currentBlock.previousblockhash)">{{currentBlock.previousblockhash}}</button></td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_NEXTHEIGHT' | translate }}</th>
+        <td><button class="btn btn-link primary" (click)="loadBlock(currentBlock.height+1)">{{currentBlock.height+1}}</button></td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_FLAGS' | translate }}</th>
+        <td>{{currentBlock.flags}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_TIME' | translate }}</th>
+        <td>{{currentBlock.time*1000 | date:'MMM d yyyy, h:mm:ss a'}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_TRANSACTIONS' | translate }}</th>
+        <td>
+          <span class="badge primary">{{currentBlock.tx.length}}</span>
+          <br />
+          <button *ngFor="let tx of currentBlock.tx" class="btn btn-link primary block" (click)="loadTransaction(tx)">{{tx}}</button>
+        </td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_MINT' | translate }}</th>
+        <td>{{helpers.prettyCoins(currentBlock.mint)}} Linda</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_VERSION' | translate }}</th>
+        <td>{{currentBlock.version}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_SIZE' | translate }}</th>
+        <td>{{currentBlock.size}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_BLOCKTRUST' | translate }}</th>
+        <td>{{currentBlock.blocktrust}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_CHAINTRUST' | translate }}</th>
+        <td>{{currentBlock.chaintrust}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_BITS' | translate }}</th>
+        <td>{{currentBlock.bits}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_NONCE' | translate }}</th>
+        <td>{{currentBlock.nonce}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_MERKLEROOT' | translate }}</th>
+        <td>{{currentBlock.merkleroot}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_MODIFIER' | translate }}</th>
+        <td>{{currentBlock.modifier}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_PROOFHASH' | translate }}</th>
+        <td>{{currentBlock.proofhash}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_SIGNATURE' | translate }}</th>
+        <td>{{currentBlock.signature}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_DIFFICULTY' | translate }}</th>
+        <td>{{currentBlock.difficulty}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_ENTROPYBIT' | translate }}</th>
+        <td>{{currentBlock.entropybit}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <table *ngIf="!currentBlock && currentTransaction" class="table table-explorer">
+    <thead>
+      <tr>
+        <th colspan="2">{{ 'PAGES.EXPLORER.TABLE_SUMMARY' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_HASH' | translate }}</th>
+        <td>{{currentTransaction.txid}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_BLOCKHASH' | translate }}</th>
+        <td><button class="btn btn-link primary" (click)="loadBlock(0,currentTransaction.blockhash)">{{currentTransaction.blockhash}}</button></td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_CONFIRMATIONS' | translate }}</th>
+        <td>{{currentTransaction.confirmations}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_TIME' | translate }}</th>
+        <td>{{currentTransaction.time*1000 | date:'MMM d yyyy, h:mm:ss a'}}</td>
+      </tr>
+      <tr>
+        <th>{{ 'PAGES.EXPLORER.TABLE_VERSION' | translate }}</th>
+        <td>{{currentTransaction.version}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table *ngIf="!currentBlock && currentTransaction" class="table table-explorer">
+    <thead>
+      <tr>
+        <th colspan="3">{{ 'PAGES.EXPLORER.TABLE_INPUTOUTPUT' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="vinvout" *ngFor="let vin of currentTransaction.vin">
+            <span *ngIf="vin.coinbase">{{ 'PAGES.EXPLORER.COINBASE' | translate }}</span>
+            <span *ngFor="let addr of vin.addresses">{{ addr }}</span>
+            <span *ngIf="vin.value" class="badge primary">{{helpers.prettyCoins(vin.value)}} Linda</span>
+          </div>
+        </td>
+        <td>
+          <fa-icon icon="arrow-right"></fa-icon>
+        </td>
+        <td>
+          <div class="vinvout" *ngFor="let vout of currentTransaction.vout">
+            <span *ngIf="vout.scriptPubKey.type=='nonstandard'">{{ 'PAGES.EXPLORER.NONSTANDARD' | translate }}</span>
+            <span *ngFor="let addr of vout.scriptPubKey.addresses">{{ addr }}</span>
+            <span *ngIf="vout.value" class="badge primary">{{helpers.prettyCoins(vout.value)}} Linda</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+
+</div>

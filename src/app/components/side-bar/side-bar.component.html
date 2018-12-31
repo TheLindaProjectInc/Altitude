@@ -1,0 +1,48 @@
+<div class="sidebar">
+    <div class="sidebar-top">
+        <!-- Balance -->
+        <img src="assets/logo.png" alt="Linda" class="logo">
+        <!-- Balance -->
+        <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
+        <span>
+            {{helpers.prettyCoins(wallet.balance)}}
+            <span class="balance-currency">Linda</span>
+        </span>
+        <!-- Menu -->
+        <ul routerLinkActive="active">
+            <li>
+                <a routerLink="/dashboard" routerLinkActive="active">
+                    <fa-icon icon="columns"></fa-icon> {{ 'COMPONENTS.SIDEBAR.DASHBOARD' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/send" routerLinkActive="active">
+                    <fa-icon icon="wallet"></fa-icon> {{ 'COMPONENTS.SIDEBAR.SEND' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/transactions" routerLinkActive="active">
+                    <fa-icon icon="receipt"></fa-icon> {{ 'COMPONENTS.SIDEBAR.TRANSACTIONS' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/staking" routerLinkActive="active">
+                    <fa-icon icon="coins"></fa-icon> {{ 'COMPONENTS.SIDEBAR.STAKING' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/masternodes" routerLinkActive="active">
+                    <fa-icon icon="network-wired"></fa-icon> {{ 'COMPONENTS.SIDEBAR.MASTERNODES' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/explorer/-1" routerLinkActive="active">
+                    <fa-icon icon="link"></fa-icon> {{ 'COMPONENTS.SIDEBAR.EXPLORER' | translate }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <sync-status></sync-status>
+
+</div>

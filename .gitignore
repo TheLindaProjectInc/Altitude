@@ -1,0 +1,46 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+/app-builds
+/release
+main.js
+src/**/*.js
+*.js.map
+lib/*.js
+
+# dependencies
+/node_modules
+!src/assets/*.js
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/typings
+package-lock.json
+
+# e2e
+/e2e/*.js
+!/e2e/protractor.conf.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+

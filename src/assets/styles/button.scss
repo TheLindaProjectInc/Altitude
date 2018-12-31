@@ -1,0 +1,111 @@
+button {
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn {
+    height: 35px;
+    min-width: 100px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    border-color: transparent;
+    color: $font-primary;
+    text-align: center;
+    background: none;
+    padding: 0 10px;
+    margin: 2px;
+    transition: background-color 0.15s ease-in-out, color 0.05s ease-in-out;
+    &.btn-link {
+        text-align: left;
+        font-size: initial;
+        padding: 0;
+        margin: 0;
+        border: none !important;
+        min-width: 0;
+        height: auto;
+    }
+    &.btn-sm {
+        font-size: 12px;
+        min-width: 0;
+        height: 25px;
+    }
+    &.btn-default {
+        color: $font-primary;
+        border: 2px solid $font-primary;
+        &:hover {
+            animation: glow-default 2s ease-in infinite;
+            color: $background-primary;
+            background-color: $font-primary;
+        }
+    }
+    &.btn-primary {
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        &:hover {
+            animation: glow-primary 2s ease-in infinite;
+            color: $font-primary;
+            background-color: $color-primary;
+        }
+    }
+    &.btn-success {
+        color: $color-success;
+        border: 2px solid $color-success;
+        &:hover {
+            animation: glow-success 2s ease-in infinite;
+            color: $font-primary;
+            background-color: $color-success;
+        }
+    }
+    &.btn-danger {
+        color: $color-danger;
+        border: 2px solid $color-danger;
+        &:hover {
+            animation: glow-danger 2s ease-in infinite;
+            color: $font-primary;
+            background-color: $color-danger;
+        }
+    }
+    &.btn-icon {
+        min-width: 10px;
+    }
+    &[disabled] {
+        cursor: default;
+        filter: brightness(50%);
+    }
+}
+
+@keyframes glow-primary {
+    35% {
+        border-color: lighten($color: $color-primary, $amount: 5%);
+        background: lighten($color: $color-primary, $amount: 5%);
+        box-shadow: 0 0 20px lighten($color: rgba($color-primary, .4), $amount: 5%);
+    }
+}
+
+@keyframes glow-success {
+    35% {
+        border-color: lighten($color: $color-success, $amount: 5%);
+        background: lighten($color: $color-success, $amount: 5%);
+        box-shadow: 0 0 20px lighten($color: rgba($color-success, .4), $amount: 5%);
+    }
+}
+
+@keyframes glow-danger {
+    35% {
+        border-color: lighten($color: $color-danger, $amount: 5%);
+        background: lighten($color: $color-danger, $amount: 5%);
+        box-shadow: 0 0 20px lighten($color: rgba($color-danger, .4), $amount: 5%);
+    }
+}
+
+@keyframes glow-default {
+    35% {
+        border-color: lighten($color: $font-primary, $amount: 5%);
+        background: lighten($color: $font-primary, $amount: 5%);
+        box-shadow: 0 0 20px lighten($color: rgba($font-primary, .4), $amount: 5%);
+    }
+}

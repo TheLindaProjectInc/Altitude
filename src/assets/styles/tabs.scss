@@ -1,0 +1,37 @@
+.tabs {
+    border-bottom: 1px solid darken($color: $font-primary, $amount: 40%);
+    margin-bottom: 20px;
+    position: fixed;
+    right: 20px;
+    left: 270px;
+    background: $background-primary;
+    z-index: 10;
+    margin-top: -10px;
+    button {
+        background: none;
+        color: darken($color: $font-primary, $amount: 40%);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+            color: darken($color: $font-primary, $amount: 20%);
+            border-bottom: 1px solid darken($color: $font-primary, $amount: 20%);
+            padding-bottom: 9px;
+        }
+        &.active {
+            color: $font-primary;
+            border-bottom: 1px solid $font-primary;
+            padding-bottom: 9px;
+        }
+    }
+    &.not-fixed {
+        position: initial;
+        margin-top: 0;
+    }
+}
+
+.tab-content {
+    margin-top: 50px
+}

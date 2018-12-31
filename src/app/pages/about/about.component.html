@@ -1,0 +1,15 @@
+<div class="content">
+
+  <div class="tabs">
+    <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+      {{'PAGES.HELP.ABOUTCORETAB' | translate}}
+    </button>
+    <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+        {{'PAGES.HELP.ABOUTALTITUDETAB' | translate}}
+      </button>
+  </div>
+
+  <p class="tab-content" *ngIf="tab==0" innerHTML="{{'PAGES.HELP.ABOUTCORE' | translate}}"> </p>
+  <p class="tab-content" *ngIf="tab==1" innerHTML="{{'PAGES.HELP.ABOUTALTITUDE' | translate}}"> </p>
+
+</div>

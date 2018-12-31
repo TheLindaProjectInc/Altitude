@@ -1,0 +1,136 @@
+<div class="content" #scrollingBlock>
+
+  <div class="tabs">
+    <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+      {{'PAGES.MASTERNODES.METAB' | translate}}
+    </button>
+    <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+      {{'PAGES.MASTERNODES.LISTTAB' | translate}}
+    </button>
+  </div>
+
+  <div class="tab-content" *ngIf="tab==0">
+    <!-- masternode not enabled -->
+    <h5 *ngIf="!wallet.masternode.setup">{{ 'PAGES.MASTERNODES.NOTENABLEDTITLE' | translate }}</h5>
+    <p *ngIf="!wallet.masternode.setup">{{ 'PAGES.MASTERNODES.NOTENABLEDINSTR' | translate }}</p>
+
+    <!-- my masternodes table -->
+    <div class="transactions">
+      <div class="transaction confirmed" *ngFor="let mn of items_me" (contextmenu)="onRightClick($event,mn)">
+        <div class="icon">
+          <fa-icon class="success" *ngIf="mn.enabled" icon="toggle-on"></fa-icon>
+          <fa-icon class="danger" *ngIf="!mn.enabled" icon="toggle-off"></fa-icon>
+        </div>
+        <div class="detail">
+          <h5>{{mn.pubkey}}</h5>
+          <h5>{{mn.address}}</h5>
+          <h5>{{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}: {{mn.protocolVersion}}</h5>
+        </div>
+        <div class="value">
+          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
+            {{helpers.formatTimeEplased(mn.lastTimeSeen,dateNow)}}
+            {{
+            'MISC.AGO' |
+            translate }}</h5>
+          <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: {{helpers.formatTime(mn.activeseconds,dateNow)}}</h5>
+        </div>
+      </div>
+      <div class="transaction confirmed" *ngFor="let mn of items_me_off" (contextmenu)="onRightClick($event,mn)">
+        <div class="icon">
+          <fa-icon class="danger" icon="toggle-off"></fa-icon>
+        </div>
+        <div class="detail">
+          <h5>{{mn.address}}</h5>
+        </div>
+        <div class="value">
+          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}: N/A</h5>
+          <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: N/A</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-bottom">
+      <button *ngIf="wallet.masternode.setup" class="btn btn-default" (click)="start()">{{
+        'PAGES.MASTERNODES.STARTBUTTON' | translate }}</button>
+      <button class="btn btn-default" (click)="startAll()">{{ 'PAGES.MASTERNODES.STARTALLBUTTON' | translate }}</button>
+    </div>
+
+  </div>
+
+  <!-- List tab -->
+  <div class="tab-content" *ngIf="tab==1">
+    <div class="notification-box" style="margin-bottom: 10px">
+      <table class="table-tools">
+        <tr>
+          <td class="title">
+            <h4>{{'MISC.SORTBY' | translate}}</h4>
+          </td>
+          <td class="options">
+            <button class="btn btn-sm btn-default" (click)="sort('pubkey')">
+              {{ 'PAGES.MASTERNODES.ADDRESS' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='pubkey' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='pubkey' && !desc"></fa-icon>
+            </button>
+            <button class="btn btn-sm btn-default" (click)="sort('address')">
+              {{ 'PAGES.MASTERNODES.IP' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='address' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='address' && !desc"></fa-icon>
+            </button>
+            <button class="btn btn-sm btn-default" (click)="sort('protocolVersion')">
+              {{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='protocolVersion' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='protocolVersion' && !desc"></fa-icon>
+            </button>
+            <button class="btn btn-sm btn-default" (click)="sort('enabled')">
+              {{ 'PAGES.MASTERNODES.ENABLED' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='enabled' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='enabled' && !desc"></fa-icon>
+            </button>
+            <button class="btn btn-sm btn-default" (click)="sort('lastTimeSeen')">
+              {{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='lastTimeSeen' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='lastTimeSeen' && !desc"></fa-icon>
+            </button>
+            <button class="btn btn-sm btn-default" (click)="sort('activeseconds')">
+              {{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='activeseconds' && desc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='activeseconds' && !desc"></fa-icon>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="title">
+            <h4>{{'MISC.SEARCH' | translate}}</h4>
+          </td>
+          <td class="options">
+            <input type="text" (input)="filter()" [(ngModel)]="searchFilter">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <virtual-scroller #scroll class="transactions" [items]="items" [parentScroll]="scrollingBlock">
+      <div class="transaction confirmed" *ngFor="let mn of scroll.viewPortItems" style="width: 100%;height: 92px;">
+        <div class="icon">
+          <fa-icon class="success" *ngIf="mn.enabled" icon="toggle-on"></fa-icon>
+          <fa-icon class="danger" *ngIf="!mn.enabled" icon="toggle-off"></fa-icon>
+        </div>
+        <div class="detail">
+          <h5>{{mn.pubkey}}</h5>
+          <h5>{{mn.address}}</h5>
+          <h5>{{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}: {{mn.protocolVersion}}</h5>
+        </div>
+        <div class="value">
+          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
+            {{helpers.formatTimeEplased(mn.lastTimeSeen,dateNow)}}
+            {{
+            'MISC.AGO' |
+            translate }}</h5>
+          <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: {{helpers.formatTime(mn.activeseconds,dateNow)}}</h5>
+        </div>
+      </div>
+    </virtual-scroller>
+
+  </div>
+
+</div>

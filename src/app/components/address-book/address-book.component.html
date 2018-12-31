@@ -1,0 +1,102 @@
+<ngx-smart-modal #addressBookModal class="address-book" identifier="addressBookModal" customClass="nsm-centered"
+    [closable]="false">
+    <h1>{{ 'COMPONENTS.ADDRESSBOOK.TITLE' | translate }}</h1>
+
+
+    <div class="tabs not-fixed" *ngIf="showSending">
+        <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+            {{'COMPONENTS.ADDRESSBOOK.SENDINGTAB' | translate}}
+        </button>
+        <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+            {{'COMPONENTS.ADDRESSBOOK.RECEIVINGTAB' | translate}}
+        </button>
+    </div>
+
+    <!-- Sending -->
+    <div *ngIf="tab==0 && showSending">
+        <p>{{ 'COMPONENTS.ADDRESSBOOK.SENDINGINFO' | translate }}</p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>{{ 'COMPONENTS.ADDRESSBOOK.TABLECOLUMNS_LABEL' | translate }}</th>
+                    <th>{{ 'COMPONENTS.ADDRESSBOOK.TABLECOLUMNS_ADDRESS' | translate }}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let address of wallet.addressBook">
+                    <td>{{address.account}}</td>
+                    <td>{{address.address}}</td>
+                    <td class="actions">
+                        <button class="btn btn-icon btn-primary" (click)="selectAddress(address)">
+                            <fa-icon icon="hand-pointer"></fa-icon>
+                        </button>
+                        <button class="btn btn-icon btn-default" (click)="copyAddress(address)">
+                            <fa-icon icon="copy"></fa-icon>
+                        </button>
+                        <button class="btn btn-icon btn-danger" (click)="deleteAddress(address)">
+                            <fa-icon icon="trash"></fa-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <div class="form-inline">
+                            <input type="text" [(ngModel)]="newLabel" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-inline">
+                            <input type="text" [(ngModel)]="newAddress" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
+                                minlength="34">
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="btn btn-icon btn-success" (click)="addAddress()">
+                            <fa-icon icon="save"></fa-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- receiving -->
+    <div *ngIf="tab==1 || !showSending">
+        <p>{{ 'COMPONENTS.ADDRESSBOOK.RECEIVINGINFO' | translate }}</p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>{{ 'COMPONENTS.ADDRESSBOOK.TABLECOLUMNS_LABEL' | translate }}</th>
+                    <th>{{ 'COMPONENTS.ADDRESSBOOK.TABLECOLUMNS_ADDRESS' | translate }}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let account of wallet.getAccounts(true)">
+                    <td>{{account.name}}</td>
+                    <td>{{account.address}}</td>
+                    <td class="actions">
+                        <button class="btn btn-icon btn-primary" (click)="selectAddress(account)">
+                            <fa-icon icon="hand-pointer"></fa-icon>
+                        </button>
+                        <button class="btn btn-icon btn-default" (click)="copyAddress(account)">
+                            <fa-icon icon="copy"></fa-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal-buttons">
+        <button class="btn btn-default" (click)="cancel()">
+            {{ 'MISC.CANCELBUTTON' | translate }}
+        </button>
+    </div>
+
+</ngx-smart-modal>

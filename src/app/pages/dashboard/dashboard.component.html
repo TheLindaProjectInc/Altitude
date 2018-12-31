@@ -1,0 +1,81 @@
+<div class="content">
+
+  <div class="alerts" *ngIf="wallet.walletStatus.errors">
+    <h1>Alert</h1>
+    {{wallet.walletStatus.errors}}
+  </div>
+
+  <h1>{{ 'PAGES.DASHBOARD.ACCOUNTS' | translate }}</h1>
+  <button class="btn btn-primary" (click)="showNewAccountModal()">
+    <fa-icon icon="plus"></fa-icon>
+    {{ 'PAGES.DASHBOARD.ADDACCOUNT' | translate }}
+  </button>
+
+  <div class="right" style="padding-top: 10px;">
+    <input id="chkShowEmpty" [(ngModel)]="hideEmptyAccounts" type='checkbox' />
+    <label for="chkShowEmpty">{{ 'PAGES.DASHBOARD.HIDEEMPTYACCOUNTS' | translate }}</label>
+  </div>
+
+  <div class="accounts">
+    <div class="account" *ngFor="let account of wallet.getAccounts(hideEmptyAccounts)" (click)="manageAccount(account)">
+      <div class="account-inner">
+        <div>
+          <div class="account-name">
+            <fa-icon icon="wallet"></fa-icon>
+            <h5>{{account.name}}</h5>
+          </div>
+          <h6 class="account-balance">
+            {{helpers.prettyCoins(account.balance)}}
+            <span>Linda</span>
+          </h6>
+          <h6 class="account-address">{{account.address}}</h6>
+        </div>
+        <div class="account-identicon">
+          <canvas identicon-canvas width="50" height="50" title='{{account.identicon}}'></canvas>
+        </div>
+      </div>
+      <div class="wave"></div>
+    </div>
+  </div>
+
+  <h1>{{ 'PAGES.DASHBOARD.TRANSACTIONS' | translate }}</h1>
+
+  <div class="transactions">
+    <div class="transaction" *ngFor="let trx of displayTransactions()" title="{{trx.confirmations}} confirmations"
+      (contextmenu)="onRightClick($event,trx)">
+      <div class="progress" [ngStyle]="wallet.getTrxProgress(trx)" [ngClass]="{'unconfirmed':trx.confirmations<wallet.confirmations,'confirmed':trx.confirmations>=wallet.confirmations}"></div>
+      <div class="icon">
+        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Payment'" icon="sign-out-alt"></fa-icon>
+        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Received'" icon="sign-in-alt"></fa-icon>
+        <fa-icon class="primary" *ngIf="trx.category=='Payment To Self'" icon="exchange-alt"></fa-icon>
+        <fa-icon class="success" *ngIf="trx.category=='Mined'" icon="piggy-bank"></fa-icon>
+        <fa-icon class="danger" *ngIf="trx.category=='Orphan'" icon="exclamation-circle"></fa-icon>
+        <fa-icon *ngIf="trx.category=='Immature'" icon="spinner"></fa-icon>
+      </div>
+      <div class="detail">
+        <h5>{{trx.category}}</h5>
+        <h6>{{trx.timestamp | date:'MMM d, h:mm a'}}</h6>
+        <h5>{{trx.account || trx.address}}</h5>
+      </div>
+      <div class="value">
+        <div class="amount" [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
+          {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{helpers.prettyCoins(trx.amount)}} Linda
+        </div>
+        <div *ngIf="trx.fee" class="small danger">{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(trx.fee)}}
+          Linda</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Add account modal -->
+<ngx-smart-modal #addAccountModal identifier="addAccountModal" customClass="nsm-centered" [closable]="false">
+  <h1>{{ 'PAGES.DASHBOARD.CREATEACCOUNTTITLE' | translate }}</h1>
+  <input type="text" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}" [(ngModel)]="newAccountLabel">
+  <div class="modal-buttons">
+    <button class="btn btn-default" (click)="addAccountModal.close()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
+    <button class="btn btn-primary" (click)="createNewAccount()">{{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate
+      }}</button>
+  </div>
+</ngx-smart-modal>
