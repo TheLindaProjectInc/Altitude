@@ -8,6 +8,12 @@
             {{helpers.prettyCoins(wallet.balance)}}
             <span class="balance-currency">Linda</span>
         </span>
+        <!-- Staking -->
+        <h3 *ngIf="wallet.stake">{{ 'MISC.STAKE' | translate | uppercase }}</h3>
+        <span *ngIf="wallet.stake">
+            {{helpers.prettyCoins(wallet.stake)}}
+            <span class="balance-currency">Linda</span>
+        </span>
         <!-- Menu -->
         <ul routerLinkActive="active">
             <li>

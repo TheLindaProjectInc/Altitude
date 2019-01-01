@@ -8,6 +8,7 @@ export class WalletStatus {
     errors: string = '';
     latestBlockHeight: number = 0;
     latestBlockTime: number = 0;
+    stake: number = 0;
 }
 
 export enum EncryptionStatus {

@@ -103,6 +103,10 @@ export class WalletService {
         return balance;
     }
 
+    get stake(): Big {
+        return this.walletStatus.stake;
+    }
+
     public requestDataSync(type: DATASYNCTYPES) {
         for (let i = 0; i < this.dataSyncs.length; i++) {
             let dataSync = this.dataSyncs[i];
@@ -201,6 +205,7 @@ export class WalletService {
             this.walletStatus.connections = data.connections;
             this.walletStatus.encryption_status = data.encryption_status;
             this.walletStatus.errors = data.errors;
+            this.walletStatus.stake = data.stake;
 
             if (encryptionChanged) this.encryptionStatusChanges.emit()
         }
