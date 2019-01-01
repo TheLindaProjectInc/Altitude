@@ -9,7 +9,7 @@
             <span class="balance-currency">Linda</span>
         </span>
         <!-- Staking -->
-        <h3 *ngIf="wallet.stake">{{ 'COMPONENTS.SIDEBAR.STAKING' | translate | uppercase }}</h3>
+        <h3 *ngIf="wallet.stake" class="stake">{{ 'COMPONENTS.SIDEBAR.STAKING' | translate | uppercase }}</h3>
         <span *ngIf="wallet.stake">
             {{helpers.prettyCoins(wallet.stake)}}
             <span class="balance-currency">Linda</span>
