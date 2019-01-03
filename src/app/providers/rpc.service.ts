@@ -319,14 +319,18 @@ export class RpcService {
             let change = Number(sendingBalance.minus(recevingBalance).toString());
 
             // unlock wallet
-            await this.unlockWallet(passphrase, 5);
+            if (passphrase) await this.unlockWallet(passphrase, 5);
             // create change address
             if (change > 0) {
                 if (!changeAddress) {
                     let changeRequest: any = await this.callServer("getnewaddress", ['(change)']);
                     changeAddress = changeRequest.result;
                 }
-                outputs[changeAddress] = change;
+                if (outputs[changeAddress]) {
+                    let outputAmount = Big(outputs[changeAddress]).add(change);
+                    outputs[changeAddress] = Number(outputAmount.toString());
+                }
+                else outputs[changeAddress] = change;
             }
             // create raw transaction
             let raw: any = await this.callServer("createrawtransaction", [inputs, outputs]);
