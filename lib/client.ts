@@ -50,6 +50,14 @@ export default class Client {
         } else if (os.platform() === 'darwin') {
             this.clientConfigLocation = path.join(app.getPath('home'), 'Library', 'Application Support', 'Linda', 'Linda.conf');
         }
+        // check if we passed a custom data dir
+        for (let i = 0; i < process.argv.length; i++) {
+            let arg = process.argv[i];
+            if (arg.toLowerCase().indexOf('-datadir=') > -1) {
+                this.clientConfigLocation = path.join(arg.split("=")[1].trim(), 'Linda.conf');
+                break;
+            }
+        }
         log.info('Client', 'Config location', this.clientConfigLocation);
     }
 
@@ -266,11 +274,14 @@ export default class Client {
         }
     }
 
-    runClient(bin, commands) {
-        let startupCommands = [];
-        startupCommands = startupCommands.concat(commands);
+    runClient(bin, startupCommands = []) {
+        // check for startup commands
+        if (app.isPackaged && process.argv.length > 1)
+            startupCommands = startupCommands.concat(process.argv.slice(1, process.argv.length));
         log.info("Client", "Running with commands", startupCommands);
+        // start client
         this.proc = spawn('"' + path.join(this.clientsLocation, bin) + '"', startupCommands, { shell: true });
+        // listen for unexpected close
         this.proc.once('close', () => {
             if (
                 this.proc &&
