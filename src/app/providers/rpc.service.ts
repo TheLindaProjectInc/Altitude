@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import Big from 'big.js';
 import { ElectronService, ClientStatus } from './electron.service';
 import { PromptService } from '../components/prompt/prompt.service';
+import Helpers from '../helpers';
 
 @Injectable()
 export class RpcService {
@@ -17,6 +18,8 @@ export class RpcService {
     public RPCReady = false
     public RPCWarmupMessage = '';
     private hasRPCCredentials = false;
+
+    private RPCSubscriptions = [];
 
     private readonly unlockTimeout = 31000000;
 
@@ -37,7 +40,11 @@ export class RpcService {
         // electron for client status
         this.electron.clientStatusEvent.subscribe((status: ClientStatus) => {
             this.clientStatus = status;
-            if (status === ClientStatus.CLOSEDUNEXPECTED) this.notifyClientCloseUnexpected();
+            if (status === ClientStatus.CLOSEDUNEXPECTED) {
+                this.stopClient();
+                this.notifyClientCloseUnexpected();
+            }
+            else if (status === ClientStatus.SHUTTINGDOWN) this.stopClient();
         });
         // electron for RPC status
         this.electron.RCPStatusEvent.subscribe((status: { ready: boolean, message: string }) => {
@@ -46,9 +53,14 @@ export class RpcService {
         });
     }
 
-    public restartClient(commands = null) {
+    public stopClient() {
         this.hasRPCCredentials = false;
         this.RPCReady = false;
+        this.cancelAllRPCCalls();
+    }
+
+    public restartClient(commands = null) {
+        this.stopClient();
         this.electron.ipcRenderer.send('client-node', 'RESTART', commands);
     }
 
@@ -408,31 +420,52 @@ export class RpcService {
                 let start = new Date().getTime();
                 let url = `http://${this.username}:${this.password}@127.0.0.1:${this.port}/`;
                 let payload = { jsonrpc: '1.0', id: 'Tunnel', method: method, params: params };
-                let sub;
 
+                // create RPC subscriptioon so it can be cancelled on timeout or stop client
+                let subscription = { id: Helpers.guid(), sub: null, reject: reject };
+                this.RPCSubscriptions.push(subscription);
                 // reject if request takes more than 10 seconds
                 // this is usually due to an rpc lockup during sync
-                const requestTimedOut = () => {
-                    if (sub) sub.unsubscribe();
-                    reject({ rpcTimeout: true });
-                }
-                let requestTimeout = setTimeout(requestTimedOut, 10000);
+                let requestTimeout = setTimeout(() => this.clearRPCCall(subscription.id, true), 10000);
 
-                sub = this.http.post<any>(url, payload)
+                subscription.sub = this.http.post<any>(url, payload)
                     .subscribe(data => {
                         let time = new Date().getTime() - start + 'ms';
                         if (isDevMode()) console.log('CallServer', time, method, data);
                         clearTimeout(requestTimeout);
+                        this.clearRPCCall(subscription.id);
                         resolve(data);
                     }, err => {
                         let time = new Date().getTime() - start + 'ms';
                         if (isDevMode()) console.error('CallServer', time, method, err);
                         this.checkClientStopped(err);
                         clearTimeout(requestTimeout);
+                        this.clearRPCCall(subscription.id);
                         reject(err);
                     });
             }
         })
+    }
+
+    clearRPCCall(subId, timeout = false) {
+        for (let i = 0; i < this.RPCSubscriptions.length; i++) {
+            let subscription = this.RPCSubscriptions[i];
+            if (subscription.id === subId) {
+                if (subscription.sub) subscription.sub.unsubscribe();
+                if (timeout) subscription.reject({ rpcTimeout: true });
+            }
+            this.RPCSubscriptions.splice(i, 1);
+            break;
+        }
+    }
+
+    cancelAllRPCCalls() {
+        for (let i = 0; i < this.RPCSubscriptions.length; i++) {
+            let subscription = this.RPCSubscriptions[i];
+            if (subscription.sub) subscription.sub.unsubscribe();
+            subscription.reject({ rpcTimeout: true });
+        }
+        this.RPCSubscriptions = [];
     }
 
     async checkClientStopped(err) {

@@ -353,10 +353,8 @@ export class TitlebarComponent {
 
   close() {
     this.wallet.stopSyncService();
+    this.rpc.stopClient()
     this.electron.remote.app.quit()
   }
-
-
-
 
 }

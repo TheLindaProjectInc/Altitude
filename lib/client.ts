@@ -286,6 +286,10 @@ export default class Client {
     }
 
     public stop(shuttingDown = true) {
+        // set RPC stopped
+        this.rpcRunning = false;
+        this.sendRPCStatus();
+        // set client status to stopping
         if (shuttingDown) this.setClientStatus(ClientStatus.SHUTTINGDOWN);
         else this.setClientStatus(ClientStatus.RESTARTING);
 
