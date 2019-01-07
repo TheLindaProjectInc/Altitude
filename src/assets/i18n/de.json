@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Netzwerk",
             "WINDOTAB": "Fenster",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Stellen Sie eine Verbindung über den SOCKS5-Proxy her",
+                "PROXYIP": "Proxy-IP",
+                "PROXYPORT": "Hafen",
+                "PROXYTOR": "Verwenden Sie einen separaten SOCKS5-Proxy, um Peers über versteckte Dienste von Tor zu erreichen",
+                "ONLYNET": "Verbinden Sie sich nur mit Knoten im Netzwerk",
+                "BLOCKINCOMING": "Keine eingehenden Verbindungen zulassen",
+                "RESTARTREQUIRED": "Ein Client-Neustart ist erforderlich, um Änderungen an diesen Einstellungen zu aktivieren."
+            },
             "WINDOW": {
                 "HIDETRAY": "Taskleistensymbol ausblenden",
                 "MINIMIZETOTRAY": "Minimieren Sie das Tablett anstelle der Taskleiste",

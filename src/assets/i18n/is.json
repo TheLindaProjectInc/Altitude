@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Net",
             "WINDOTAB": "Gluggi",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Tengdu í gegnum SOCKS5 umboð",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Höfn",
+                "PROXYTOR": "Notaðu sérstaka SOCKS5 umboð til að ná sambandi við Tor falinn þjónustu",
+                "ONLYNET": "Tengdu aðeins við hnúta í neti",
+                "BLOCKINCOMING": "Ekki leyfa komandi tengingar",
+                "RESTARTREQUIRED": "Endurheimt viðskiptavinar er nauðsynlegt til að virkja allar breytingar á þessum stillingum."
+            },
             "WINDOW": {
                 "HIDETRAY": "Fela bakki helgimynd",
                 "MINIMIZETOTRAY": "Lágmarkaðu í bakkann í stað verkefnisins",

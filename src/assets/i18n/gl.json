@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Rede",
             "WINDOTAB": "Fiestra",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Conéctese a través do proxy SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Porto",
+                "PROXYTOR": "Use un proxy SOCKS5 separado para acceder aos seus compañeiros a través de servizos ocultos de Tor",
+                "ONLYNET": "Só se conecta a nós na rede",
+                "BLOCKINCOMING": "Non permitas conexións entrantes",
+                "RESTARTREQUIRED": "Requírese un reinicio do cliente para activar os cambios nesta configuración."
+            },
             "WINDOW": {
                 "HIDETRAY": "Ocultar o ícone da bandexa",
                 "MINIMIZETOTRAY": "Minimice á bandexa en lugar da barra de tarefas",

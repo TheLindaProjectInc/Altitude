@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Vindu",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Koble gjennom SOCKS5 proxy",
+                "PROXYIP": "proxy IP",
+                "PROXYPORT": "Havn",
+                "PROXYTOR": "Bruk separat SOCKS5 proxy for å nå jevnaldrende via Tor skjulte tjenester",
+                "ONLYNET": "Bare koble til noder i nettverket",
+                "BLOCKINCOMING": "Ikke tillat innkommende tilkoblinger",
+                "RESTARTREQUIRED": "En omstart av klienten er nødvendig for å aktivere eventuelle endringer i disse innstillingene."
+            },
             "WINDOW": {
                 "HIDETRAY": "Skjul skuffikonet",
                 "MINIMIZETOTRAY": "Minimer til skuffen i stedet for oppgavelinjen",

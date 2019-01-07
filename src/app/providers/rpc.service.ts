@@ -60,7 +60,7 @@ export class RpcService {
         this.cancelAllRPCCalls();
     }
 
-    public restartClient(commands = null) {
+    public restartClient(commands = []) {
         this.stopClient();
         this.electron.ipcRenderer.send('client-node', 'RESTART', commands);
     }

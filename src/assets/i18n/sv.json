@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Nätverk",
             "WINDOTAB": "Fönster",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Anslut via SOCKS5 proxy",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Hamn",
+                "PROXYTOR": "Använd separata SOCKS5 proxy för att nå kamrater via Tor dolda tjänster",
+                "ONLYNET": "Anslut bara till noder i nätverket",
+                "BLOCKINCOMING": "Tillåt inte inkommande anslutningar",
+                "RESTARTREQUIRED": "En omstart av klienten krävs för att aktivera ändringar i dessa inställningar."
+            },
             "WINDOW": {
                 "HIDETRAY": "Dölj fackikon",
                 "MINIMIZETOTRAY": "Minimera till facket istället för aktivitetsfältet",

@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "회로망",
             "WINDOTAB": "창문",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "SOCKS5 프록시를 통해 연결",
+                "PROXYIP": "프록시 IP",
+                "PROXYPORT": "포트",
+                "PROXYTOR": "별도의 SOCKS5 프록시를 사용하여 Tor 숨겨진 서비스를 통해 피어에 도달",
+                "ONLYNET": "네트워크의 노드에만 연결",
+                "BLOCKINCOMING": "들어오는 연결을 허용하지 않음",
+                "RESTARTREQUIRED": "이 설정을 변경하려면 클라이언트를 다시 시작해야합니다."
+            },
             "WINDOW": {
                 "HIDETRAY": "트레이 아이콘 숨기기",
                 "MINIMIZETOTRAY": "작업 표시 줄 대신 용지함을 최소화하십시오.",

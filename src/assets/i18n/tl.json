@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Window",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Kumonekta sa pamamagitan ng SOCKS5 proxy",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Gumamit ng hiwalay na proxy na SOCKS5 upang maabot ang mga kapantay sa pamamagitan ng mga nakatagong serbisyo ng Tor",
+                "ONLYNET": "Kumonekta lamang sa mga node sa network",
+                "BLOCKINCOMING": "Huwag pahintulutan ang mga papasok na koneksyon",
+                "RESTARTREQUIRED": "Kinakailangan ang pag-restart ng Client upang maisaaktibo ang anumang mga pagbabago sa mga setting na ito."
+            },
             "WINDOW": {
                 "HIDETRAY": "Itago ang icon ng tray",
                 "MINIMIZETOTRAY": "I-minimize ang tray sa halip na ang taskbar",

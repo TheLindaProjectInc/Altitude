@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Jaringan",
             "WINDOTAB": "Jendela",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Terhubung melalui proxy SOCKS5",
+                "PROXYIP": "IP Proksi",
+                "PROXYPORT": "Pelabuhan",
+                "PROXYTOR": "Gunakan proxy SOCKS5 yang terpisah untuk menjangkau teman melalui layanan tersembunyi Tor",
+                "ONLYNET": "Hanya terhubung ke node di jaringan",
+                "BLOCKINCOMING": "Jangan izinkan koneksi masuk",
+                "RESTARTREQUIRED": "Restart Klien diperlukan untuk mengaktifkan segala perubahan pada pengaturan ini."
+            },
             "WINDOW": {
                 "HIDETRAY": "Sembunyikan ikon baki",
                 "MINIMIZETOTRAY": "Minimalkan ke baki alih-alih bilah tugas",

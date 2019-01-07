@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Tinklas",
             "WINDOTAB": "Langas",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Prijunkite per SOCKS5 proxy",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Uostas",
+                "PROXYTOR": "Naudokite atskirą „SOCKS5“ tarpinį serverį, kad pasiektumėte bendraamžius per „Tor“ paslėptąsias paslaugas",
+                "ONLYNET": "Prijunkite tik prie tinklo mazgų",
+                "BLOCKINCOMING": "Neleiskite gaunamų ryšių",
+                "RESTARTREQUIRED": "Norint įjungti bet kokius šių nustatymų pakeitimus, reikia iš naujo paleisti klientą."
+            },
             "WINDOW": {
                 "HIDETRAY": "Slėpti piktogramą",
                 "MINIMIZETOTRAY": "Vietoj užduočių juostos sumažinkite į dėklą",

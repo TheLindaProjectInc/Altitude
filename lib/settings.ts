@@ -19,19 +19,8 @@ export function set_skipCoreUpdate(hash: string) {
     saveSettings();
 }
 
-export function set_skipWalletUpdate(version: string) {
-    settings.skipWalletUpdate = version;
-    saveSettings();
-}
-
-export function set_hideCoinControlFeatures(hide: boolean) {
-    settings.hideCoinControlFeatures = hide;
-    saveSettings();
-}
-
-export function set_locale(locale: string) {
-    settings.locale = locale;
-    saveSettings();
+export function setWindow(window) {
+    win = window;
 }
 
 export function set_fullScreen(fullScreen: boolean) {
@@ -39,24 +28,55 @@ export function set_fullScreen(fullScreen: boolean) {
     saveSettings();
 }
 
-export function set_hideTrayIcon(hideTrayIcon: boolean) {
+function set_skipWalletUpdate(version: string) {
+    settings.skipWalletUpdate = version;
+    saveSettings();
+}
+
+function set_hideCoinControlFeatures(hide: boolean) {
+    settings.hideCoinControlFeatures = hide;
+    saveSettings();
+}
+
+function set_locale(locale: string) {
+    settings.locale = locale;
+    saveSettings();
+}
+
+function set_hideTrayIcon(hideTrayIcon: boolean) {
     settings.hideTrayIcon = hideTrayIcon;
     if (onToggleTrayIcon) onToggleTrayIcon(settings.hideTrayIcon);
     saveSettings();
 }
 
-export function set_minimiseToTray(minimiseToTray: boolean) {
+function set_minimiseToTray(minimiseToTray: boolean) {
     settings.minimiseToTray = minimiseToTray;
     saveSettings();
 }
 
-export function set_minimiseOnClose(minimiseOnClose: boolean) {
+function set_minimiseOnClose(minimiseOnClose: boolean) {
     settings.minimiseOnClose = minimiseOnClose;
     saveSettings();
 }
 
-export function setWindow(window) {
-    win = window;
+function set_blockIncoming(allowIncoming: boolean) {
+    settings.blockIncomingConnections = allowIncoming;
+    saveSettings();
+}
+
+function set_proxy(proxy: string) {
+    settings.proxy = proxy;
+    saveSettings();
+}
+
+function set_tor(proxy: string) {
+    settings.tor = proxy;
+    saveSettings();
+}
+
+function set_onlynet(net: string) {
+    settings.onlynet = net;
+    saveSettings();
 }
 
 function loadSettings() {
@@ -99,6 +119,18 @@ function setupIPC() {
             case 'SETMINIMISECLOSE':
                 set_minimiseOnClose(data);
                 break;
+            case 'SETBLOCKINCOMING':
+                set_blockIncoming(data);
+                break;
+            case 'SETPROXY':
+                set_proxy(data);
+                break;
+            case 'SETTOR':
+                set_tor(data);
+                break;
+            case 'SETONLYNET':
+                set_onlynet(data);
+                break;
         }
     });
 }
@@ -106,7 +138,6 @@ function setupIPC() {
 function IPC_sendSettings() {
     if (win) win.webContents.send('settings', 'GET', settings);
 }
-
 
 export class Settings {
     skipCoreUpdate: string = "";
@@ -117,6 +148,10 @@ export class Settings {
     hideTrayIcon: boolean = false;
     minimiseToTray: boolean = false;
     minimiseOnClose: boolean = false;
+    blockIncomingConnections: boolean = false;
+    proxy: string = '';
+    tor: string = '';
+    onlynet: string = '';
 }
 
 // load settings from storage straight away

@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "sieť",
             "WINDOTAB": "okno",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Pripojte sa prostredníctvom proxy servera SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "prístav",
+                "PROXYTOR": "Použite samostatný proxy servera SOCKS5, aby ste sa dostali k kolegom prostredníctvom skrytých služieb Tor",
+                "ONLYNET": "Pripojte sa iba na uzly v sieti",
+                "BLOCKINCOMING": "Nedovoľte prichádzajúce pripojenia",
+                "RESTARTREQUIRED": "Na aktiváciu akýchkoľvek zmien týchto nastavení je potrebné reštartovanie klienta."
+            },
             "WINDOW": {
                 "HIDETRAY": "Skryť ikonu zásobníka",
                 "MINIMIZETOTRAY": "Minimalizujte na zásobník namiesto panela úloh",

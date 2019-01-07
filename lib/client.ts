@@ -276,6 +276,14 @@ export default class Client {
         // check for startup commands
         if (app.isPackaged && process.argv.length > 1)
             startupCommands = startupCommands.concat(process.argv.slice(1, process.argv.length));
+        const appSettings = settings.getSettings();
+        if (appSettings.blockIncomingConnections) startupCommands.push('-listen=0')
+        if (appSettings.onlynet) {
+            let nets = appSettings.onlynet.split(",");
+            nets.forEach(net => startupCommands.push('-onlynet=' + net))
+        }
+        if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
+        if (appSettings.tor) startupCommands.push('-tor=' + appSettings.tor)
         log.info("Client", "Running with commands", startupCommands);
         // start client
         this.proc = spawn(path.join(this.clientsLocation, bin), startupCommands);

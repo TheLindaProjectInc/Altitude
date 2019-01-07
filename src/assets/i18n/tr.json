@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Ağ",
             "WINDOTAB": "pencere",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "SOCKS5 proxy üzerinden bağlanın",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Liman",
+                "PROXYTOR": "Tor gizli servisleri ile arkadaşlarınıza ulaşmak için ayrı SOCKS5 proxy kullanın",
+                "ONLYNET": "Yalnızca ağdaki düğümlere bağlan",
+                "BLOCKINCOMING": "Gelen bağlantılara izin verme",
+                "RESTARTREQUIRED": "Bu ayarlarda yapılan herhangi bir değişikliği etkinleştirmek için bir İstemci yeniden başlatılması gerekiyor."
+            },
             "WINDOW": {
                 "HIDETRAY": "Tepsi simgesini gizle",
                 "MINIMIZETOTRAY": "Görev çubuğu yerine tepsiye küçült",

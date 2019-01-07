@@ -37,7 +37,7 @@
       </div>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.AMOUNT' | translate }}</span>
-        <input type="number" (input)="calculateOutput()" [(ngModel)]="rec.amount">
+        <text-input type="number" (input)="calculateOutput()" [(inputModel)]="rec.amount"></text-input>
         <button class="btn btn-default" (click)="useAvailable(rec)">{{ 'PAGES.SEND.SENDAVAILABLE' | translate }}</button>
       </div>
     </div>

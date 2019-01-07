@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "ネットワーク",
             "WINDOTAB": "窓",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "SOCKS 5プロキシを介して接続する",
+                "PROXYIP": "プロキシIP",
+                "PROXYPORT": "港",
+                "PROXYTOR": "Torの隠しサービスを介してピアに到達するために別のSOCKS 5プロキシを使用する",
+                "ONLYNET": "ネットワーク内のノードにのみ接続する",
+                "BLOCKINCOMING": "着信接続を許可しない",
+                "RESTARTREQUIRED": "これらの設定に対する変更を有効にするには、クライアントの再起動が必要です。"
+            },
             "WINDOW": {
                 "HIDETRAY": "トレイアイコンを隠す",
                 "MINIMIZETOTRAY": "タスクバーではなくトレイに最小化する",

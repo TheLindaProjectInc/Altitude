@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Red",
             "WINDOTAB": "Ventana",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Conectar a través del proxy SOCKS5",
+                "PROXYIP": "IP Proxy",
+                "PROXYPORT": "Puerto",
+                "PROXYTOR": "Use el proxy SOCKS5 separado para llegar a sus compañeros a través de los servicios ocultos de Tor",
+                "ONLYNET": "Solo conectarse a nodos en red.",
+                "BLOCKINCOMING": "No permitir conexiones entrantes",
+                "RESTARTREQUIRED": "Se requiere un reinicio del Cliente para activar cualquier cambio en estas configuraciones."
+            },
             "WINDOW": {
                 "HIDETRAY": "Ocultar icono de bandeja",
                 "MINIMIZETOTRAY": "Minimizar a la bandeja en lugar de la barra de tareas",

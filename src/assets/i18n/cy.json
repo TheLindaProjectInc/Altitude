@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Rhwydwaith",
             "WINDOTAB": "Ffenestr",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Cysylltwch trwy gyfrwng SOCKS5",
+                "PROXYIP": "IP Dirprwy",
+                "PROXYPORT": "Porthladd",
+                "PROXYTOR": "Defnyddiwch ddirprwy SOCKS5 ar wahān i gyrraedd cyfoedion trwy wasanaethau cudd Tor",
+                "ONLYNET": "Cysylltwch â nodau yn y rhwydwaith yn unig",
+                "BLOCKINCOMING": "Peidiwch â chaniatáu i gysylltiadau sy'n dod i mewn",
+                "RESTARTREQUIRED": "Mae angen ailgychwyn Client i weithredu unrhyw newidiadau i'r gosodiadau hyn."
+            },
             "WINDOW": {
                 "HIDETRAY": "Cuddiwch yr eicon hambwrdd",
                 "MINIMIZETOTRAY": "Lleiafswm i'r hambwrdd yn lle'r bar tasgau",

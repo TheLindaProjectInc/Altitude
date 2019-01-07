@@ -11,6 +11,53 @@
 
   <!-- Network -->
   <div class="tab-content" *ngIf="tab==0">
+    <div>
+
+      <h4 class="danger">{{ 'PAGES.OPTIONS.NETWORK.RESTARTREQUIRED' | translate }}</h4>
+
+      <!--  incoming connections -->
+      <input id="chkBlockInc" (change)="setBlockIncoming()" [(ngModel)]="electron.settings.blockIncomingConnections"
+        type='checkbox' />
+      <label for="chkBlockInc">{{ 'PAGES.OPTIONS.NETWORK.BLOCKINCOMING' | translate }}</label>
+    </div>
+    <!-- Proxy -->
+    <div style="padding-top: 10px;">
+      <input id="chkProxy" (change)="setProxy()" [(ngModel)]="proxy.allow" type='checkbox' />
+      <label for="chkProxy">{{ 'PAGES.OPTIONS.NETWORK.PROXY' | translate }}</label>
+    </div>
+    <div class="form-inline">
+      <span>{{ 'PAGES.OPTIONS.NETWORK.PROXYIP' | translate }}:</span>
+      <text-input [disabled]="!proxy.allow" [(inputModel)]="proxy.ip" (change)="setProxy()" placeholder="127.0.0.1"></text-input>
+      <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
+      <text-input type="number" [disabled]="!proxy.allow" [(inputModel)]="proxy.port" (change)="setProxy()" placeholder="33820"></text-input>
+    </div>
+    <!-- only net -->
+    <div class="form-inline" style="padding-top: 20px;">
+      <span>{{ 'PAGES.OPTIONS.NETWORK.ONLYNET' | translate }}:</span>
+      <div style="padding-left: 10px;">
+        <input id="chkIPv4" [(ngModel)]="onlyNet.IPv4" type='checkbox' (change)="setOnlyNet()" />
+        <label for="chkIPv4">IPv4</label>
+      </div>
+      <div style="padding-left: 10px;">
+        <input id="chkIPv6" [(ngModel)]="onlyNet.IPv6" type='checkbox' (change)="setOnlyNet()" />
+        <label for="chkIPv6">IPv6</label>
+      </div>
+      <div style="padding-left: 10px;">
+        <input id="chkOnlyNetTor" [(ngModel)]="onlyNet.Tor" type='checkbox' (change)="setOnlyNet()" />
+        <label for="chkOnlyNetTor">Tor</label>
+      </div>
+    </div>
+    <!-- tor -->
+    <div style="padding-top: 20px;">
+      <input id="chkTor" (change)="setTor()" [(ngModel)]="tor.allow" type='checkbox' />
+      <label for="chkTor">{{ 'PAGES.OPTIONS.NETWORK.PROXYTOR' | translate }}</label>
+    </div>
+    <div class="form-inline">
+      <span>{{ 'PAGES.OPTIONS.NETWORK.PROXYIP' | translate }}:</span>
+      <text-input [disabled]="!tor.allow" [(inputModel)]="tor.ip" (change)="setTor()" placeholder="127.0.0.1"></text-input>
+      <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
+      <text-input type="number" [disabled]="!tor.allow" [(inputModel)]="tor.port" (change)="setTor()" placeholder="33820"></text-input>
+    </div>
 
   </div>
 

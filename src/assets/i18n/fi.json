@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "verkko",
             "WINDOTAB": "Ikkuna",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Yhdistä SOCKS5-välityspalvelimen kautta",
+                "PROXYIP": "Välityspalvelimen IP",
+                "PROXYPORT": "portti",
+                "PROXYTOR": "Käytä erillistä SOCKS5-välityspalvelinta päästäksesi peers-palveluihin Tor-piilotettujen palvelujen kautta",
+                "ONLYNET": "Yhdistä vain verkon solmuihin",
+                "BLOCKINCOMING": "Älä salli saapuvia yhteyksiä",
+                "RESTARTREQUIRED": "Asiakkaan uudelleenkäynnistäminen edellyttää näiden asetusten muutosten aktivoimista."
+            },
             "WINDOW": {
                 "HIDETRAY": "Piilota lokeron kuvake",
                 "MINIMIZETOTRAY": "Minimoi lokero tehtäväpalkin sijasta",

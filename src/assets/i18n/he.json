@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "רשת",
             "WINDOTAB": "חלון",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "התחבר דרך פרוקסי SOCKS5",
+                "PROXYIP": "כתובת פרוקסי",
+                "PROXYPORT": "נמל",
+                "PROXYTOR": "השתמש פרוקסי SOCKS5 נפרדים כדי להגיע לעמיתים באמצעות שירותים מוסתרים Tor",
+                "ONLYNET": "התחבר רק לצמתים ברשת",
+                "BLOCKINCOMING": "אל תאפשר חיבורים נכנסים",
+                "RESTARTREQUIRED": "נדרשת הפעלה מחדש של לקוח כדי להפעיל שינויים כלשהם בהגדרות אלה."
+            },
             "WINDOW": {
                 "HIDETRAY": "הסתר את סמל המגש",
                 "MINIMIZETOTRAY": "מזעור למגש במקום בשורת המשימות",

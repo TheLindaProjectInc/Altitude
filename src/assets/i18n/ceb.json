@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Window",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Sumpayan pinaagi sa proxy nga SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Gamita ang separado nga proxy nga SOCKS5 aron maabot ang mga kaubanan pinaagi sa mga serbisyo nga gitago ni Tor",
+                "ONLYNET": "Pagkonektar lamang sa mga binurotan sa network",
+                "BLOCKINCOMING": "Ayaw tugoti ang umaabot nga koneksyon",
+                "RESTARTREQUIRED": "Kinahanglan nga i-restart ang usa ka Kliyente aron ma-activate ang bisan unsang mga kausaban sa mga setting."
+            },
             "WINDOW": {
                 "HIDETRAY": "Tagoa ang tray icon",
                 "MINIMIZETOTRAY": "Pagmenos sa tray sa baylo sa taskbar",

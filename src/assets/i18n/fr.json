@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Réseau",
             "WINDOTAB": "La fenêtre",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Connectez-vous via un proxy SOCKS5",
+                "PROXYIP": "Adresse IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Utilisez un proxy SOCKS5 distinct pour atteindre vos pairs via les services cachés de Tor",
+                "ONLYNET": "Se connecter uniquement aux nœuds du réseau",
+                "BLOCKINCOMING": "Ne pas autoriser les connexions entrantes",
+                "RESTARTREQUIRED": "Un redémarrage du client est requis pour activer toute modification de ces paramètres."
+            },
             "WINDOW": {
                 "HIDETRAY": "Masquer l'icône de plateau",
                 "MINIMIZETOTRAY": "Réduire dans la barre d'état au lieu de la barre des tâches",

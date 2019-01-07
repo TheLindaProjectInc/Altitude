@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Netværk",
             "WINDOTAB": "Vindue",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Forbind via SOCKS5 proxy",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Havn",
+                "PROXYTOR": "Brug separate SOCKS5 proxy for at nå jævnaldrende via Tor skjulte tjenester",
+                "ONLYNET": "Kun tilslutt til knudepunkter i netværket",
+                "BLOCKINCOMING": "Tillad ikke indgående forbindelser",
+                "RESTARTREQUIRED": "En klient genstart er nødvendig for at aktivere ændringer i disse indstillinger."
+            },
             "WINDOW": {
                 "HIDETRAY": "Skjul bakkeikon",
                 "MINIMIZETOTRAY": "Minimer til bakken i stedet for proceslinjen",

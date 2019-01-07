@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Rede",
             "WINDOTAB": "Janela",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Conecte-se por meio do proxy SOCKS5",
+                "PROXYIP": "IP de Proxy",
+                "PROXYPORT": "Porta",
+                "PROXYTOR": "Use o proxy SOCKS5 separado para alcançar os pares por meio de serviços ocultos do Tor",
+                "ONLYNET": "Conecte-se somente a nós na rede",
+                "BLOCKINCOMING": "Não permitir conexões de entrada",
+                "RESTARTREQUIRED": "Uma reinicialização do cliente é necessária para ativar quaisquer alterações nessas configurações."
+            },
             "WINDOW": {
                 "HIDETRAY": "Ocultar ícone da bandeja",
                 "MINIMIZETOTRAY": "Minimizar para a bandeja em vez da barra de tarefas",

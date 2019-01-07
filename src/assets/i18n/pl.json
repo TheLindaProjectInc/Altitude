@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Sieć",
             "WINDOTAB": "Okno",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Połącz przez serwer proxy SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Użyj oddzielnego proxy SOCKS5, aby dotrzeć do rówieśników za pośrednictwem ukrytych usług Tora",
+                "ONLYNET": "Łącz się tylko z węzłami w sieci",
+                "BLOCKINCOMING": "Nie zezwalaj na połączenia przychodzące",
+                "RESTARTREQUIRED": "Ponowne uruchomienie klienta jest wymagane, aby aktywować wszelkie zmiany tych ustawień."
+            },
             "WINDOW": {
                 "HIDETRAY": "Ukryj ikonę paska",
                 "MINIMIZETOTRAY": "Zminimalizuj do zasobnika zamiast paska zadań",

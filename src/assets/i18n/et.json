@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Võrk",
             "WINDOTAB": "Aken",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Ühendage läbi SOCKS5 puhverserveri",
+                "PROXYIP": "Puhverserveri IP",
+                "PROXYPORT": "Sadam",
+                "PROXYTOR": "Kasutage eraldi SOCKS5 puhverserverit, et jõuda Tor peidetud teenuste kaudu",
+                "ONLYNET": "Ühendage ainult võrgu sõlmedega",
+                "BLOCKINCOMING": "Ärge lubage sissetulevaid ühendusi",
+                "RESTARTREQUIRED": "Nende sätete muutmise aktiveerimiseks on vajalik kliendi taaskäivitamine."
+            },
             "WINDOW": {
                 "HIDETRAY": "Peida salve ikoon",
                 "MINIMIZETOTRAY": "Minimeerige tegumiriba asemel salve",

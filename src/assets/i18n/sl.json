@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Omrežje",
             "WINDOTAB": "Okno",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Povežite se s posrednikom SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Pristanišče",
+                "PROXYTOR": "Uporabite ločen SOCKS5 proxy, da dosežete vrstnike prek skritih storitev Tor",
+                "ONLYNET": "Povežite se samo z vozlišči v omrežju",
+                "BLOCKINCOMING": "Ne dovoli vhodnih povezav",
+                "RESTARTREQUIRED": "Za aktiviranje sprememb teh nastavitev je potreben ponovni zagon odjemalca."
+            },
             "WINDOW": {
                 "HIDETRAY": "Skrij ikono pladnja",
                 "MINIMIZETOTRAY": "Zmanjšajte na pladenj namesto v opravilni vrstici",

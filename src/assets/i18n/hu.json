@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Hálózat",
             "WINDOTAB": "Ablak",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Csatlakoztassa a SOCKS5 proxy segítségével",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Kikötő",
+                "PROXYTOR": "Használjon külön SOCKS5 proxy-t, hogy elérje a partnereket a Tor rejtett szolgáltatásain keresztül",
+                "ONLYNET": "Csak hálózati csomópontokhoz csatlakozzon",
+                "BLOCKINCOMING": "Ne engedélyezze a bejövő kapcsolatokat",
+                "RESTARTREQUIRED": "Ezen beállítások módosításának aktiválásához szükség van az ügyfél újraindítására."
+            },
             "WINDOW": {
                 "HIDETRAY": "A tálca ikon elrejtése",
                 "MINIMIZETOTRAY": "Minimalizálja a tálcát a tálca helyett",

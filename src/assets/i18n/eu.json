@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Sarea",
             "WINDOTAB": "Leiho",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "SOCKS5 proxy bidez konektatu",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Erabili SOCKS5 proxy desberdineko kideak Tor ezkutuko zerbitzuen bidez",
+                "ONLYNET": "Sareko nodoetara bakarrik konektatu",
+                "BLOCKINCOMING": "Ez utzi sarrerako konexioak",
+                "RESTARTREQUIRED": "Bezeroen berrabiaraztea beharrezkoa da ezarpen hauetarako aldaketak aktibatzeko."
+            },
             "WINDOW": {
                 "HIDETRAY": "Ezkutatu erretiluko ikonoa",
                 "MINIMIZETOTRAY": "Ertzean minimizatu barrako ikonoaren ordez",

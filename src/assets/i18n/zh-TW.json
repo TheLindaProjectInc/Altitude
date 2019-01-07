@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "網絡",
             "WINDOTAB": "窗口",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "通過SOCKS5代理連接",
+                "PROXYIP": "代理服務器的IP",
+                "PROXYPORT": "港口",
+                "PROXYTOR": "使用單獨的SOCKS5代理通過Tor隱藏服務到達同行",
+                "ONLYNET": "僅連接到網絡中的節點",
+                "BLOCKINCOMING": "不允許傳入連接",
+                "RESTARTREQUIRED": "需要重新啟動客戶端才能激活對這些設置的任何更改。"
+            },
             "WINDOW": {
                 "HIDETRAY": "隱藏托盤圖標",
                 "MINIMIZETOTRAY": "最小化到托盤而不是任務欄",

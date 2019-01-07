@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Mreža",
             "WINDOTAB": "Prozor",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Povežite se preko SOCKS5 proxyja",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Koristite odvojeni SOCKS5 proxy da biste došli do vršnjaka preko Tor skrivenih servisa",
+                "ONLYNET": "Povežite se samo sa čvorovima u mreži",
+                "BLOCKINCOMING": "Ne dozvolite dolazne veze",
+                "RESTARTREQUIRED": "Za ponovno pokretanje ovih postavki potrebno je ponovno pokretanje klijenta."
+            },
             "WINDOW": {
                 "HIDETRAY": "Sakrijte ikonicu ladice",
                 "MINIMIZETOTRAY": "Minimizirajte u ležište umesto trake zadataka",

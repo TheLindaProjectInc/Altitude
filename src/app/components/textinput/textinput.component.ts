@@ -15,6 +15,7 @@ import { ContextMenuService } from '../context-menu/context-menu.service';
   (keydown.ArrowDown)="keydownArrowDown.emit($event)"
   (keydown.ArrowUp)="keydownArrowUp.emit($event)"
   [disabled]="disabled"
+  type="{{type || 'text'}}"
   />`,
 })
 export class TextinputComponent {
@@ -23,6 +24,7 @@ export class TextinputComponent {
   @Input() placeholder: string;
   @Input() inputModel: string;
   @Input() disabled: boolean;
+  @Input() type: boolean;
 
   @Output() inputModelChange = new EventEmitter<string>();
   @Output() change = new EventEmitter<Function>();

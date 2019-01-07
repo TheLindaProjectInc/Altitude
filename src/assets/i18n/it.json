@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Rete",
             "WINDOTAB": "Finestra",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Connessione tramite proxy SOCKS5",
+                "PROXYIP": "IP Proxy",
+                "PROXYPORT": "Porta",
+                "PROXYTOR": "Utilizzare il proxy SOCKS5 separato per raggiungere i peer tramite i servizi nascosti Tor",
+                "ONLYNET": "Connetti solo ai nodi nella rete",
+                "BLOCKINCOMING": "Non consentire connessioni in entrata",
+                "RESTARTREQUIRED": "È necessario un riavvio del client per attivare eventuali modifiche a queste impostazioni."
+            },
             "WINDOW": {
                 "HIDETRAY": "Nascondi icona del vassoio",
                 "MINIMIZETOTRAY": "Riduci al minimo il vassoio anziché la barra delle applicazioni",

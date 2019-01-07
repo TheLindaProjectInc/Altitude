@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Venster",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Koppel deur SOCKS5 proxy",
+                "PROXYIP": "Volmag IP",
+                "PROXYPORT": "Port",
+                "PROXYTOR": "Gebruik aparte SOCKS5 proxy om gelykes via Tor versteekte dienste te bereik",
+                "ONLYNET": "Koppel net aan nodusse in netwerk",
+                "BLOCKINCOMING": "Moenie inkomende verbindings toelaat nie",
+                "RESTARTREQUIRED": "'N Kliëntherbegin is nodig om enige veranderinge aan hierdie instellings te aktiveer."
+            },
             "WINDOW": {
                 "HIDETRAY": "Versteek skinkbordikoon",
                 "MINIMIZETOTRAY": "Minimeer na die skinkbord in plaas van die taakbalk",

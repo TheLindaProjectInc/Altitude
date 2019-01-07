@@ -186,7 +186,15 @@
         "OPTIONS": {
             "NETWORKTAB": "Mạng",
             "WINDOTAB": "Cửa sổ",
-            "NETWORK": {},
+            "NETWORK": {
+                "PROXY": "Kết nối thông qua proxy SOCKS5",
+                "PROXYIP": "Proxy IP",
+                "PROXYPORT": "Hải cảng",
+                "PROXYTOR": "Sử dụng proxy SOCKS5 riêng biệt để tiếp cận các đồng nghiệp thông qua các dịch vụ ẩn Tor",
+                "ONLYNET": "Chỉ kết nối với các nút trong mạng",
+                "BLOCKINCOMING": "Không cho phép kết nối đến",
+                "RESTARTREQUIRED": "Yêu cầu khởi động lại máy khách để kích hoạt bất kỳ thay đổi nào đối với các cài đặt này."
+            },
             "WINDOW": {
                 "HIDETRAY": "Biểu tượng trên khay ẩn",
                 "MINIMIZETOTRAY": "Thu nhỏ vào khay thay vì thanh tác vụ",
