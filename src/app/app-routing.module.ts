@@ -12,6 +12,7 @@ import { MasternodesComponent } from './pages/masternodes/masternodes.component'
 import { AboutComponent } from './pages/about/about.component';
 import { LocaleComponent } from './pages/locale/locale.component';
 import { ExplorerComponent } from './pages/explorer/explorer.component';
+import { OptionsComponent } from './pages/options/options.component';
 
 export const routingDeclarations = [
     SendComponent,
@@ -24,7 +25,8 @@ export const routingDeclarations = [
     MasternodesComponent,
     AboutComponent,
     LocaleComponent,
-    ExplorerComponent
+    ExplorerComponent,
+    OptionsComponent
 ]
 
 const routes: Routes = [
@@ -37,6 +39,7 @@ const routes: Routes = [
     { path: 'masternodes', component: MasternodesComponent },
     { path: 'signmessage/:tab', component: SignMessageComponent },
     { path: 'tools/:tab', component: ToolsComponent },
+    { path: 'options', component: OptionsComponent },
     { path: 'about/:tab', component: AboutComponent },
     { path: 'locale', component: LocaleComponent },
     { path: 'explorer/:search', component: ExplorerComponent },

@@ -76,6 +76,7 @@ export class TitlebarComponent {
           'MENU.FILE.SIGNMESSAGE',
           'MENU.FILE.VERIFYMESSAGE',
           'SEPERATOR',
+          'MENU.FILE.OPTIONS',
           'MENU.FILE.LOCALE',
           'SEPERATOR',
           'MENU.FILE.RESTARTCORE',
@@ -163,6 +164,7 @@ export class TitlebarComponent {
     this.electron.ipcRenderer.on('MENU.FILE.BACKUPWALLET', () => this.backupWallet());
     this.electron.ipcRenderer.on('MENU.FILE.SIGNMESSAGE', () => this.goToSignMessage());
     this.electron.ipcRenderer.on('MENU.FILE.VERIFYMESSAGE', () => this.goToVerifyMessage());
+    this.electron.ipcRenderer.on('MENU.FILE.OPTIONS', () => this.goToOptions());
     this.electron.ipcRenderer.on('MENU.FILE.LOCALE', () => this.goToLocale());
     this.electron.ipcRenderer.on('MENU.FILE.RESTARTCORE', () => this.restartCore());
     this.electron.ipcRenderer.on('MENU.FILE.EXIT', () => this.close());
@@ -216,6 +218,10 @@ export class TitlebarComponent {
 
   goToVerifyMessage() {
     this.router.navigate(['/signmessage/1']);
+  }
+
+  goToOptions() {
+    this.router.navigate(['/options']);
   }
 
   goToLocale() {
@@ -337,7 +343,13 @@ export class TitlebarComponent {
   }
 
   minimize() {
-    this.appWindow.minimize();
+    if (this.electron.settings.minimiseToTray) {
+      // minimise to tray
+      this.electron.ipcRenderer.send('window', 'HIDE');
+    } else {
+      // minimise to taskbar
+      this.appWindow.minimize();
+    }
   }
 
   resize() {
@@ -352,9 +364,15 @@ export class TitlebarComponent {
   }
 
   close() {
-    this.wallet.stopSyncService();
-    this.rpc.stopClient()
-    this.electron.remote.app.quit()
+    if (this.electron.settings.minimiseOnClose) {
+      // minimise
+      this.minimize();
+    } else {
+      // close
+      this.wallet.stopSyncService();
+      this.rpc.stopClient()
+      this.electron.remote.app.quit()
+    }
   }
 
 }

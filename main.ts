@@ -1,4 +1,4 @@
-import { app, BrowserWindow, screen, Menu, Tray, MenuItem } from 'electron';
+import { app, BrowserWindow, screen, Menu, Tray, ipcMain } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 import Client from './lib/client';
@@ -15,9 +15,12 @@ serve = args.some(val => val === '--serve');
 let tray: Tray
 let isHidden = false;
 
+// listen if we toggle the tray icon
+settings.setOnToggleTrayHander(toggleTray);
+
 function createApp() {
-  createTray();
   createWindow();
+  setupIPC();
 }
 
 function createWindow() {
@@ -59,12 +62,14 @@ function createWindow() {
   // setup settings
   log.info('Initiate settings');
   settings.setWindow(mainWindow);
-  // set windowsize
+  // make any adjustments when settings are ready
   const handler = () => {
     const appSettings = settings.getSettings();
     if (!appSettings) setTimeout(handler, 100);
     else {
       if (appSettings.fullScreen) mainWindow.maximize();
+      log.info('appSettings.hideTrayIcon', appSettings.hideTrayIcon)
+      toggleTray(appSettings.hideTrayIcon);
     }
   }
   handler();
@@ -92,12 +97,17 @@ function createWindow() {
 
 }
 
-function createTray() {
+function createTray(force: boolean = false) {
   // Create the Tray icon
   tray = new Tray(path.resolve(__dirname, 'assets/icons/png/16x16.png'));
   tray.setToolTip('Altitude')
-  tray.on('click', toggleMainWindows)
-  updateTray()
+  tray.on('click', toggleMainWindows);
+  updateTray(force)
+}
+
+function toggleTray(hide) {
+  if (hide && tray) tray.destroy();
+  else if (!hide) createTray();
 }
 
 function toggleMainWindows(): void {
@@ -112,25 +122,31 @@ function toggleMainWindows(): void {
   }
 }
 
-function updateTray(): void {
-  const contextMenu: Menu = Menu.buildFromTemplate(
-    (isHidden
-      ? [{
-        click: toggleMainWindows,
-        label: 'Show Altitude',
-      }]
-      : [{
-        click: toggleMainWindows,
-        label: 'Hide Altitude',
-      }]
-    ).concat(
-      [{
-        click: () => app.quit(),
-        label: 'Exit',
-      }]
+function updateTray(force: boolean = false): void {
+  if (force || !settings.getSettings().hideTrayIcon) {
+    const contextMenu: Menu = Menu.buildFromTemplate(
+      (isHidden
+        ? [{
+          click: toggleMainWindows,
+          label: 'Show Altitude',
+        }]
+        : [{
+          click: toggleMainWindows,
+          label: 'Hide Altitude',
+        }]
+      ).concat(
+        [{
+          click: () => app.quit(),
+          label: 'Exit',
+        }]
+      )
     )
-  )
-  tray.setContextMenu(contextMenu)
+    tray.setContextMenu(contextMenu)
+  } else if (isHidden) {
+    createTray(true);
+  } else {
+    toggleTray(true)
+  }
 }
 
 function closeApp(event) {
@@ -182,4 +198,15 @@ try {
 } catch (e) {
   // Catch Error
   // throw e;
+}
+
+function setupIPC() {
+  ipcMain.on('window', (event, cmd, data) => {
+    log.debug('Received IPC:window', cmd, data);
+    switch (cmd) {
+      case 'HIDE':
+        toggleMainWindows();
+        break;
+    }
+  });
 }

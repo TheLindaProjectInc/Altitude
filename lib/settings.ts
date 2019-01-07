@@ -4,9 +4,14 @@ import * as storage from 'electron-json-storage';
 
 let settings: Settings;
 let win: BrowserWindow;
+let onToggleTrayIcon: Function;
 
 export function getSettings(): Settings {
     return settings;
+}
+
+export function setOnToggleTrayHander(fn) {
+    onToggleTrayIcon = fn;
 }
 
 export function set_skipCoreUpdate(hash: string) {
@@ -34,14 +39,30 @@ export function set_fullScreen(fullScreen: boolean) {
     saveSettings();
 }
 
+export function set_hideTrayIcon(hideTrayIcon: boolean) {
+    settings.hideTrayIcon = hideTrayIcon;
+    if (onToggleTrayIcon) onToggleTrayIcon(settings.hideTrayIcon);
+    saveSettings();
+}
+
+export function set_minimiseToTray(minimiseToTray: boolean) {
+    settings.minimiseToTray = minimiseToTray;
+    saveSettings();
+}
+
+export function set_minimiseOnClose(minimiseOnClose: boolean) {
+    settings.minimiseOnClose = minimiseOnClose;
+    saveSettings();
+}
+
 export function setWindow(window) {
     win = window;
 }
 
 function loadSettings() {
-    settings = new Settings();
     storage.get('settings', (error, data) => {
         if (!error && data) settings = data;
+        else settings = new Settings();
     });
 }
 
@@ -69,6 +90,15 @@ function setupIPC() {
             case 'SETFULLSCREEN':
                 set_fullScreen(data);
                 break;
+            case 'SETHIDETRAY':
+                set_hideTrayIcon(data);
+                break;
+            case 'SETMINIMISETRAY':
+                set_minimiseToTray(data);
+                break;
+            case 'SETMINIMISECLOSE':
+                set_minimiseOnClose(data);
+                break;
         }
     });
 }
@@ -84,6 +114,9 @@ export class Settings {
     hideCoinControlFeatures: boolean = true;
     locale: string = "en";
     fullScreen: boolean = false;
+    hideTrayIcon: boolean = false;
+    minimiseToTray: boolean = false;
+    minimiseOnClose: boolean = false;
 }
 
 // load settings from storage straight away

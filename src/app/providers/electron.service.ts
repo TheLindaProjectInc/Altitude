@@ -124,7 +124,6 @@ export class ElectronService {
       });
     })
   }
-
 }
 
 export enum ClientStatus {

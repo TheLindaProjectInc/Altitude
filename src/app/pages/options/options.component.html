@@ -1,0 +1,33 @@
+<div class="content">
+
+  <div class="tabs">
+    <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+      {{'PAGES.OPTIONS.NETWORKTAB' | translate}}
+    </button>
+    <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+      {{'PAGES.OPTIONS.WINDOTAB' | translate}}
+    </button>
+  </div>
+
+  <!-- Network -->
+  <div class="tab-content" *ngIf="tab==0">
+
+  </div>
+
+  <!-- Window -->
+  <div class="tab-content" *ngIf="tab==1">
+    <div style="padding-top: 10px;">
+      <input id="chkHideTray" (change)="setHideTray()" [(ngModel)]="electron.settings.hideTrayIcon" type='checkbox' />
+      <label for="chkHideTray">{{ 'PAGES.OPTIONS.WINDOW.HIDETRAY' | translate }}</label>
+    </div>
+    <div style="padding-top: 10px;">
+      <input id="chkMinTray" (change)="setMinimiseToTray()" [(ngModel)]="electron.settings.minimiseToTray" type='checkbox' />
+      <label for="chkMinTray">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZETOTRAY' | translate }}</label>
+    </div>
+    <div style="padding-top: 10px;">
+      <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose" type='checkbox' />
+      <label for="chkMinClose">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZEONCLOSE' | translate }}</label>
+    </div>
+  </div>
+
+</div>
