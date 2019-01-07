@@ -41,6 +41,8 @@ async function translateLanguageFiles() {
         fs.writeFileSync(transaltionFile, JSON.stringify(output, null, 4));
         console.log("Translating", languageName, "completed in", (new Date().getTime() - start) / 1000, 'seconds');
     }
+
+    console.log("Translation finished");
 }
 
 async function walkObject(obj, output, languageCode) {
