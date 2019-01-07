@@ -19,6 +19,7 @@ import { Input } from '../../classes';
 export class SendComponent implements OnInit, OnDestroy {
   recipients = [];
   changeAddress = '';
+  changeAddressLabel = '';
   enabledChangeAddress = false;
   tableStyle = {};
   resizeTimeout;
@@ -129,6 +130,44 @@ export class SendComponent implements OnInit, OnDestroy {
       amount: '',
       label: ''
     });
+  }
+
+  getSavedAccount(address: string, label: string) {
+    // check address book
+    for (let i = 0; i < this.wallet.addressBook.length; i++) {
+      let addr = this.wallet.addressBook[i];
+      if (address && addr.address === address)
+        return addr.account;
+      else if (label && addr.account.toLowerCase() === label.toLowerCase())
+        return addr.address;
+    }
+    // check my accounts
+    let accounts = this.wallet.getAccounts()
+    for (let i = 0; i < accounts.length; i++) {
+      let addr = accounts[i];
+      if (address && addr.address === address)
+        return addr.name;
+      else if (label && addr.name.toLowerCase() === label.toLowerCase())
+        return addr.address;
+    }
+    return "";
+  }
+
+  checkSavedAccount(recp: any, isAddress: boolean) {
+    if (isAddress) {
+      let acc = this.getSavedAccount(recp.address, "")
+      if (acc) recp.label = acc;
+    } else {
+      let addr = this.getSavedAccount("", recp.label)
+      if (addr) recp.address = addr;
+    }
+  }
+
+  checkSavedChangeAccount() {
+    let acc = this.getSavedAccount(this.changeAddress, "");
+    console.log(acc)
+    if (acc) this.changeAddressLabel = acc;
+    else this.changeAddressLabel = "";
   }
 
   async getFromAddressBook(recp): Promise<void> {
