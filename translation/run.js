@@ -85,6 +85,8 @@ async function translateLanguagesFile() {
     fs.writeFile(`./src/assets/i18n/languages.json`, JSON.stringify(languages, null, 4), function (err) {
         if (err) throw err;
     });
+
+    console.log("Translation finished");
 }
 
 // run this to translate the list of languages to their local translation
