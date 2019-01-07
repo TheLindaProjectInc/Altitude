@@ -5,6 +5,7 @@ import { ChangeEvent } from 'ngx-virtual-scroller';
 import { ErrorService } from '../../providers/error.service';
 import { ContextMenuService } from '../../components/context-menu/context-menu.service';
 import { ElectronService } from '../../providers/electron.service';
+import { Transaction } from '../../classes';
 
 @Component({
   selector: 'app-transactions',
@@ -44,11 +45,27 @@ export class TransactionsComponent {
     this.loading = false;
   }
 
-  onRightClick(e, trx) {
+  onRightClick(e, trx: Transaction) {
     const items = [
+      {
+        name: 'PAGES.TRANSACTIONS.COPYACCOUNT',
+        func: () => this.electron.clipboard.writeText(trx.account)
+      },
+      {
+        name: 'PAGES.TRANSACTIONS.COPYADDRESS',
+        func: () => this.electron.clipboard.writeText(trx.address)
+      },
+      {
+        name: 'PAGES.TRANSACTIONS.COPYAMOUNT',
+        func: () => this.electron.clipboard.writeText(trx.amount.toString())
+      },
       {
         name: 'PAGES.TRANSACTIONS.COPYBLOCKHASH',
         func: () => this.electron.clipboard.writeText(trx.blockHash)
+      },
+      {
+        name: 'PAGES.TRANSACTIONS.COPTBLOCKINDEX',
+        func: () => this.electron.clipboard.writeText(trx.blockIndex.toString())
       },
       {
         name: 'PAGES.TRANSACTIONS.COPYTXID',
