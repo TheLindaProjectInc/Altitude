@@ -41,11 +41,7 @@ export function setWindow(window) {
 function loadSettings() {
     settings = new Settings();
     storage.get('settings', (error, data) => {
-        if (!error && data) {
-            if (data.skipCoreUpdate) settings.skipCoreUpdate = data.skipCoreUpdate;
-            if (data.skipWalletUpdate) settings.skipWalletUpdate = data.skipWalletUpdate;
-            if (data.locale) settings.locale = data.locale;
-        }
+        if (!error && data) settings = data;
     });
 }
 
