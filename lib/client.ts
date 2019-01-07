@@ -65,9 +65,6 @@ export default class Client {
         ipcMain.on('client-node', (event, cmd, data) => {
             log.debug('Received IPC:client-node', cmd, data);
             switch (cmd) {
-                case 'CREDENTIALS':
-                    this.IPC_sendCredentials();
-                    break;
                 case 'STATUS':
                     this.setClientStatus(this.status);
                     break;
@@ -90,12 +87,17 @@ export default class Client {
                     if (data === true) settings.set_skipCoreUpdate(this.clientConfig.download.sha256); // skip this update
                     if (this.updateResponse) this.updateResponse(false);
                     break;
+                case 'CALLCLIENT':
+                    this.callClient(data.method, data.params).then(result => {
+                        this.IPC_sendCallClientResponse(data.callId, data.method, result);
+                    })
+                    break;
             }
         });
     }
 
-    IPC_sendCredentials() {
-        if (this.win) this.win.webContents.send('client-node', 'CREDENTIALS', { rpcUser: this.rpcUser, rpcPassword: this.rpcPassword, rpcPort: this.rpcPort });
+    IPC_sendCallClientResponse(callId: string, method: string, result: any) {
+        if (this.win) this.win.webContents.send('client-node', 'CALLCLIENT', { callId, method, result });
     }
 
     async startClient(restart = false, update = false, commands = []) {
@@ -113,8 +115,6 @@ export default class Client {
                     this.setClientStatus(ClientStatus.NOCREDENTIALS);
                     return;
                 }
-                // send credentials to renderer
-                this.IPC_sendCredentials();
                 // if already running exit here
                 log.info("Client", "Check if already running");
                 if ((await this.callClient('help') as any).success) {
@@ -232,8 +232,6 @@ export default class Client {
                 log.info("Client", "Couldn't get credentials from config");
                 this.setClientStatus(ClientStatus.NOCREDENTIALS);
             } else {
-                // send credentials to renderer
-                this.IPC_sendCredentials();
                 // set status as running
                 this.setClientStatus(ClientStatus.RUNNING);
             }
@@ -256,9 +254,9 @@ export default class Client {
         const res: any = await this.callClient('getinfo');
         this.rpcMessage = "";
 
-        if (res.error) {
+        if (!res.success) {
             try {
-                if (res.error.code === -28) this.rpcMessage = res.error.message;
+                if (res.body.error.code === -28) this.rpcMessage = res.body.error.message;
             } catch (ex) {
                 //error isn't formed as expected
             }
@@ -280,7 +278,7 @@ export default class Client {
             startupCommands = startupCommands.concat(process.argv.slice(1, process.argv.length));
         log.info("Client", "Running with commands", startupCommands);
         // start client
-        this.proc = spawn('"' + path.join(this.clientsLocation, bin) + '"', startupCommands, { shell: true });
+        this.proc = spawn(path.join(this.clientsLocation, bin), startupCommands);
         // listen for unexpected close
         this.proc.once('close', () => {
             if (
@@ -297,9 +295,6 @@ export default class Client {
     }
 
     public stop(shuttingDown = true) {
-        // set RPC stopped
-        this.rpcRunning = false;
-        this.sendRPCStatus();
         // set client status to stopping
         if (shuttingDown) this.setClientStatus(ClientStatus.SHUTTINGDOWN);
         else this.setClientStatus(ClientStatus.RESTARTING);
@@ -363,17 +358,24 @@ export default class Client {
         return false;
     }
 
-    async callClient(method): Promise<{}> {
+    async callClient(method, params = []): Promise<{}> {
         return new Promise((resolve, reject) => {
             const options = {
                 method: 'POST',
                 url: `http://${this.rpcUser}:${this.rpcPassword}@127.0.0.1:${this.rpcPort}/`,
-                body: { jsonrpc: '1.0', id: 'Tunnel', method: method, params: [] },
-                json: true
+                body: { jsonrpc: '1.0', id: 'Tunnel', method: method, params: params },
+                json: true,
+                timeout: 10000
             };
 
             request(options, (error, response, body) => {
-                if (error || body.error) resolve({ success: false, error: error || body.error });
+                if (error || body.error) {
+                    // check if client has stopped
+                    if (this.status === ClientStatus.RUNNINGEXTERNAL && error.code === "ECONNREFUSED") {
+                        this.setClientStatus(ClientStatus.STOPPED)
+                    }
+                    resolve({ success: false, body, error });
+                }
                 else resolve({ success: true, body });
             });
         })
@@ -382,6 +384,14 @@ export default class Client {
     setClientStatus(status: ClientStatus) {
         this.status = status;
         if (this.win) this.win.webContents.send('client-node', 'STATUS', this.status);
+        // check if RPC has stopped
+        if (status === ClientStatus.STOPPED ||
+            status === ClientStatus.SHUTTINGDOWN ||
+            status === ClientStatus.RESTARTING ||
+            status === ClientStatus.CLOSEDUNEXPECTED) {
+            this.rpcRunning = false;
+            this.sendRPCStatus();
+        }
     }
 
     sendRPCStatus() {

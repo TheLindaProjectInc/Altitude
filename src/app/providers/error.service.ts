@@ -13,18 +13,19 @@ export class ErrorService {
     public diagnose(ex: any): void {
         if (isDevMode()) console.log('ErrorService', ex);
 
-        if (ex.statusText && ex.statusText === "Unknown Error") {
-            // ex.statusText !== "Unknown Error" denotes a problem connecting to the
+        if (ex.error && ex.error.code === "ECONNREFUSED") {
+            // ECONNREFUSED denotes a problem connecting to the
             // client this error is handled and notifed to the user in the rpc service
-        } else if (ex.error && ex.error.error) {
-            const msg = `(${ex.error.error.code}) ${ex.error.error.message.replace('Error:', '').trim()}`;
-            this.notification.notify('error', msg, false);
-        } else if (ex.rpcNotReady) {
-            // ex.rpcNotReady is returned when we try to call the RPC before it's
-            // ready we can ignore this error
-        } else if (ex.rpcTimeout) {
-            // ex.rpcTimeout is returned when the RPC fails to respond in time
+        } else if (ex.error && ex.error.code === "ESOCKETTIMEDOUT") {
+            // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
             // this is usually during sync and heavy loads so we can ignore this error
+        } else if (ex.rpcCancelled) {
+            // ex.rpcCancelled is returned when the RPC calls are cancelled
+            // this is usually during a expected or unexpected shutdown of the client
+        } else if (ex.body.error) {
+            // an error from the daemon
+            const msg = `(${ex.body.error.code}) ${ex.body.error.message.replace('Error:', '').trim()}`;
+            this.notification.notify('error', msg, false);
         } else {
             log.error('ErrorService', 'New error', ex);
             this.notification.notify('error', 'NOTIFICATIONS.GENERICERROR');

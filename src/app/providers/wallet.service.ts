@@ -1,5 +1,4 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import Big from 'big.js';
 
 import { RPCMethods, RpcService } from './rpc.service';
@@ -66,7 +65,6 @@ export class WalletService {
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
 
     constructor(
-        private http: HttpClient,
         private rpc: RpcService,
         private electron: ElectronService,
         private errorService: ErrorService

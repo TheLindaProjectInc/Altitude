@@ -19,9 +19,9 @@ export class ElectronService {
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
-  @Output() CredentialsEvent: EventEmitter<any> = new EventEmitter();
   @Output() checkUpdateEvent: EventEmitter<any> = new EventEmitter();
   @Output() languageChangedEvent: EventEmitter<any> = new EventEmitter();
+  @Output() RPCResponseEvent: EventEmitter<any> = new EventEmitter();
 
   constructor(
     private http: HttpClient,
@@ -52,9 +52,6 @@ export class ElectronService {
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
       if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
       switch (cmd) {
-        case 'CREDENTIALS':
-          this.CredentialsEvent.emit(data);
-          break;
         case 'STATUS':
           this.clientStatusEvent.emit(data);
           break;
@@ -64,10 +61,11 @@ export class ElectronService {
         case 'CHECKUPDATE':
           this.checkUpdateEvent.emit({ type: 'core', hasUpdate: data });
           break;
+          case 'CALLCLIENT':
+          this.RPCResponseEvent.emit(data);
+          break;
       }
     });
-    // ask for credentials
-    this.ipcRenderer.send('client-node', 'CREDENTIALS');
     // ask for client status
     this.ipcRenderer.send('client-node', 'STATUS');
     // ask for rpc status

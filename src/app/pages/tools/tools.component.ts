@@ -66,14 +66,13 @@ export class ToolsComponent implements OnInit {
         let params = this.rpcCommand.split(" ");
         const method = params.shift();
         params = this.parseRPCParams(params);
-        console.log(params)
         const res: any = await this.rpc.callServer(method, params);
         let isJson = false;
         if (res.result) isJson = typeof (res.result) === 'object';
         this.rpcHistory.push({ ts: new Date(), send: false, data: res.result || res.error, json: isJson });
       } catch (ex) {
         let err = ex.statusText;
-        if (ex.error.error) err = `${ex.error.error.message} (code ${ex.error.error.code})`;
+        if (ex.error) err = `${ex.error.message} (code ${ex.error.code})`;
         this.rpcHistory.push({ ts: new Date(), send: false, data: err, json: false });
       }
       this.rpcCommand = "";

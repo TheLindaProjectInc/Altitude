@@ -1,5 +1,4 @@
-import { Injectable, isDevMode, Output, EventEmitter } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable, isDevMode } from '@angular/core';
 import Big from 'big.js';
 import { ElectronService, ClientStatus } from './electron.service';
 import { PromptService } from '../components/prompt/prompt.service';
@@ -7,24 +6,16 @@ import Helpers from '../helpers';
 
 @Injectable()
 export class RpcService {
-    private port: number;
-    private username: string;
-    private password: string;
     private encryptionStatus = 'Unencrypted';
-    private confirmations = 10;
-    private masternodePort = 33820;
-
     public clientStatus: ClientStatus;
     public RPCReady = false
     public RPCWarmupMessage = '';
-    private hasRPCCredentials = false;
 
-    private RPCSubscriptions = [];
+    private RPCSubscriptions = {};
 
     private readonly unlockTimeout = 31000000;
 
     constructor(
-        private http: HttpClient,
         private electron: ElectronService,
         private prompt: PromptService
     ) {
@@ -33,16 +24,15 @@ export class RpcService {
     }
 
     setupListeners() {
-        // listen for RPC credentials
-        this.electron.CredentialsEvent.subscribe(creds => {
-            this.setCredentials(creds.rpcUser, creds.rpcPassword, creds.rpcPort);
-        });
         // electron for client status
         this.electron.clientStatusEvent.subscribe((status: ClientStatus) => {
             this.clientStatus = status;
             if (status === ClientStatus.CLOSEDUNEXPECTED) {
                 this.stopClient();
                 this.notifyClientCloseUnexpected();
+            } else if (status === ClientStatus.STOPPED && this.RPCReady) {
+                this.stopClient();
+                this.notifyClientStopped();
             }
             else if (status === ClientStatus.SHUTTINGDOWN) this.stopClient();
         });
@@ -51,10 +41,21 @@ export class RpcService {
             this.RPCReady = status.ready;
             this.RPCWarmupMessage = status.message
         });
+        // listen for RPC responses
+        this.electron.RPCResponseEvent.subscribe(data => {
+            let sub = this.RPCSubscriptions[data.callId];
+            if (sub) {
+                let result = data.result;
+                let time = new Date().getTime() - sub.ts + 'ms';
+                if (isDevMode()) console.log('CallServer Response', time, data.method, result);
+                if (result.success) sub.resolve(result.body);
+                else sub.reject(result);
+                delete this.RPCSubscriptions[data.callId]
+            }
+        });
     }
 
     public stopClient() {
-        this.hasRPCCredentials = false;
         this.RPCReady = false;
         this.cancelAllRPCCalls();
     }
@@ -62,13 +63,6 @@ export class RpcService {
     public restartClient(commands = null) {
         this.stopClient();
         this.electron.ipcRenderer.send('client-node', 'RESTART', commands);
-    }
-
-    private setCredentials(username: string, password: string, port: number) {
-        this.hasRPCCredentials = true;
-        this.username = username;
-        this.password = password;
-        this.port = port;
     }
 
     public async requestData(method, params = []) {
@@ -409,77 +403,31 @@ export class RpcService {
         return { result: { initRequired: !init.result } };
     }
 
-    private get isRPCReady() {
-        return this.RPCReady && this.hasRPCCredentials && (this.clientStatus === ClientStatus.RUNNING || this.clientStatus === ClientStatus.RUNNINGEXTERNAL)
-    }
-
     public callServer(method, params = []) {
         return new Promise((resolve, reject) => {
-            if (!this.isRPCReady) reject({ rpcNotReady: true });
-            else {
-                let start = new Date().getTime();
-                let url = `http://${this.username}:${this.password}@127.0.0.1:${this.port}/`;
-                let payload = { jsonrpc: '1.0', id: 'Tunnel', method: method, params: params };
-
-                // create RPC subscriptioon so it can be cancelled on timeout or stop client
-                let subscription = { id: Helpers.guid(), sub: null, reject: reject };
-                this.RPCSubscriptions.push(subscription);
-                // reject if request takes more than 10 seconds
-                // this is usually due to an rpc lockup during sync
-                let requestTimeout = setTimeout(() => this.clearRPCCall(subscription.id, true), 10000);
-
-                subscription.sub = this.http.post<any>(url, payload)
-                    .subscribe(data => {
-                        let time = new Date().getTime() - start + 'ms';
-                        if (isDevMode()) console.log('CallServer', time, method, data);
-                        clearTimeout(requestTimeout);
-                        this.clearRPCCall(subscription.id);
-                        resolve(data);
-                    }, err => {
-                        let time = new Date().getTime() - start + 'ms';
-                        if (isDevMode()) console.error('CallServer', time, method, err);
-                        this.checkClientStopped(err);
-                        clearTimeout(requestTimeout);
-                        this.clearRPCCall(subscription.id);
-                        reject(err);
-                    });
-            }
+            let callId = Helpers.guid();
+            this.RPCSubscriptions[callId] = { resolve, reject, ts: new Date().getTime() };
+            const callData = { callId, method, params }
+            this.electron.ipcRenderer.send('client-node', 'CALLCLIENT', callData);
         })
     }
 
-    clearRPCCall(subId, timeout = false) {
-        for (let i = 0; i < this.RPCSubscriptions.length; i++) {
-            let subscription = this.RPCSubscriptions[i];
-            if (subscription.id === subId) {
-                if (subscription.sub) subscription.sub.unsubscribe();
-                if (timeout) subscription.reject({ rpcTimeout: true });
-            }
-            this.RPCSubscriptions.splice(i, 1);
-            break;
-        }
-    }
-
     cancelAllRPCCalls() {
-        for (let i = 0; i < this.RPCSubscriptions.length; i++) {
-            let subscription = this.RPCSubscriptions[i];
-            if (subscription.sub) subscription.sub.unsubscribe();
-            subscription.reject({ rpcTimeout: true });
-        }
-        this.RPCSubscriptions = [];
+        Object.keys(this.RPCSubscriptions).forEach(key => {
+            this.RPCSubscriptions[key].reject({ rpcCancelled: true });
+        })
+        this.RPCSubscriptions = {};
     }
 
-    async checkClientStopped(err) {
+    async notifyClientStopped() {
         // if we lost connection to external client. notify user
-        if (this.clientStatus === ClientStatus.RUNNINGEXTERNAL && err.statusText === "Unknown Error") {
-            this.clientStatus = ClientStatus.STOPPED;
-            try {
-                await this.prompt.alert('COMPONENTS.PROMPT.CLIENTSTOPPEDTITLE', 'COMPONENTS.PROMPT.CLIENTSTOPPEDINFO', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
-                // start internal client
-                this.restartClient();
-            } catch (ex) {
-                // chose to stop wallet
-                this.electron.remote.app.quit()
-            }
+        try {
+            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTSTOPPEDTITLE', 'COMPONENTS.PROMPT.CLIENTSTOPPEDINFO', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            // start internal client
+            this.restartClient();
+        } catch (ex) {
+            // chose to stop wallet
+            this.electron.remote.app.quit()
         }
     }
 
