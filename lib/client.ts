@@ -72,7 +72,7 @@ export default class Client {
                     this.sendRPCStatus();
                     break;
                 case 'RESTART':
-                    this.stop(false).then(() => this.startClient(true, data));
+                    this.stop(false).then(() => this.startClient(true, false, data));
                     break;
                 case 'CHECKUPDATE':
                     this.checkClientUpdate();
