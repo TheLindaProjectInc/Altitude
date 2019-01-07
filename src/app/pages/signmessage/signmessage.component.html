@@ -13,20 +13,19 @@
     <div class="tab-content" *ngIf="tab==0">
         <p>{{'PAGES.SIGNMESSAGE.SIGN_DESCRIPTION' | translate}}</p>
         <div class="form-inline">
-            <input type="text" [(ngModel)]="sign.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
-                minlength="34" required>
+            <text-input [(inputModel)]="sign.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
             <button class="btn btn-default btn-icon" (click)="getFromAddressBook(true)">
                 <fa-icon icon="address-book"></fa-icon>
             </button>
         </div>
 
         <div class="form-inline">
-            <textarea [(ngModel)]="sign.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"></textarea>
+            <text-area [(inputModel)]="sign.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"></text-area>
         </div>
 
         <p>{{'PAGES.SIGNMESSAGE.SIGNATURE' | translate}}</p>
         <div class="form-inline">
-            <textarea [(ngModel)]="sign.signature" disabled></textarea>
+            <text-area [(inputModel)]="sign.signature" disabled></text-area>
         </div>
 
         <div class="toolbar-bottom">
@@ -41,21 +40,18 @@
     <div class="tab-content" *ngIf="tab==1">
         <p>{{'PAGES.SIGNMESSAGE.VERIFY_DESCRIPTION' | translate}}</p>
         <div class="form-inline">
-            <input type="text" [(ngModel)]="verify.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
-                minlength="34" required>
+            <text-input [(inputModel)]="verify.address" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
             <button class="btn btn-default btn-icon" (click)="getFromAddressBook(false)">
                 <fa-icon icon="address-book"></fa-icon>
             </button>
         </div>
 
         <div class="form-inline">
-            <textarea [(ngModel)]="verify.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"
-                required></textarea>
+            <text-area [(inputModel)]="verify.message" placeholder="{{'PAGES.SIGNMESSAGE.ENTERMESSAGE' | translate}}"></text-area>
         </div>
 
         <div class="form-inline">
-            <textarea type="text" [(ngModel)]="verify.signature" placeholder="{{ 'PAGES.SIGNMESSAGE.SIGNATURE' | translate }}"
-                required></textarea>
+            <text-area [(inputModel)]="verify.signature" placeholder="{{ 'PAGES.SIGNMESSAGE.SIGNATURE' | translate }}"></text-area>
         </div>
 
         <p class="success" *ngIf="verify.result==true">

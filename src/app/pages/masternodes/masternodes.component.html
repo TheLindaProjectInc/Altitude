@@ -103,7 +103,7 @@
             <h4>{{'MISC.SEARCH' | translate}}</h4>
           </td>
           <td class="options">
-            <input type="text" (input)="filter()" [(ngModel)]="searchFilter">
+            <text-input [(inputModel)]="searchFilter" (input)="filter()"></text-input>
           </td>
         </tr>
       </table>

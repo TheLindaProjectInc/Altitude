@@ -85,10 +85,10 @@
     </div>
 
     <form class="toolbar-bottom flex" (ngSubmit)="sendRPC()">
-      <input name="rpcCommand" type="text" [(ngModel)]="rpcCommand" (keydown.ArrowUp)="rpcKeyUp($event)"
-        (keydown.ArrowDown)="rpcKeyDown($event)">
-      <button class="btn btn-default" type="button" (click)="clearRPCHistory()">{{ 'MISC.CLEARALLBUTTON' | translate
-        }}</button>
+      <text-input name="rpcCommand" [(inputModel)]="rpcCommand" (keydownArrowUp)="rpcKeyUp($event)" (keydownArrowDown)="rpcKeyDown($event)"></text-input>
+      <button class="btn btn-default" type="button" (click)="clearRPCHistory()">
+        {{ 'MISC.CLEARALLBUTTON' | translate}}
+      </button>
     </form>
   </div>
 

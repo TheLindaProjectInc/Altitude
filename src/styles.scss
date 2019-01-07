@@ -426,6 +426,23 @@ a {
 }
 
 // inputs
+text-input {
+    flex: 1;
+    display: flex;
+    input:not([type]),
+    input[type="text" i] {
+        flex: 1;
+    }
+}
+
+text-area {
+    flex: 1;
+    display: flex;
+    textarea {
+        flex: 1;
+    }
+}
+
 textarea,
 input:not([type]),
 input[type="email" i],

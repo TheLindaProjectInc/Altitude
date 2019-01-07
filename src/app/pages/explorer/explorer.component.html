@@ -5,7 +5,7 @@
   <form (submit)="search()">
     <div class="form-inline">
       <span>{{ 'MISC.SEARCH' | translate }}</span>
-      <input type="text" name="searchInput" [(ngModel)]="searchInput" placeholder="{{ 'PAGES.EXPLORER.SEARCHPLACEHOLDER' | translate }}">
+      <text-input name="searchInput" [(inputModel)]="searchInput" placeholder="{{ 'PAGES.EXPLORER.SEARCHPLACEHOLDER' | translate }}"></text-input>
     </div>
   </form>
 

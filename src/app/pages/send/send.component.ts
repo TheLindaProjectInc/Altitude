@@ -113,6 +113,7 @@ export class SendComponent implements OnInit, OnDestroy {
     this.recipients = []
     this.addRecipient();
     this.changeAddress = '';
+    this.changeAddressLabel = '';
     this.enabledChangeAddress = false;
     this.getInputs().forEach(inp => inp.selected = false);
     this.UI_selectedBalance = new Big(0);

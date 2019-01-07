@@ -9,7 +9,8 @@
     <div>
       <div class="account-name">
         <fa-icon icon="wallet"></fa-icon>
-        <input type="text" class="form-control" (change)="renameAccount()" [(ngModel)]="this.account.mainAddress.newAccount" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}">
+        <text-input class="form-control" (change)="renameAccount()" [(ngModel)]="this.account.mainAddress.newAccount"
+          placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
       </div>
       <h2>
         {{helpers.prettyCoins(account.balance)}}

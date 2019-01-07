@@ -13,8 +13,8 @@
     <div class="form-inline" style="margin-top: 1em;">
       <input id="chkChangeAddress" [(ngModel)]="enabledChangeAddress" type='checkbox' />
       <label for="chkChangeAddress">{{ 'PAGES.SEND.CUSTOMCHANGE' | translate }}</label>
-      <input type="text" (change)="checkSavedChangeAccount()" [disabled]="!enabledChangeAddress" [(ngModel)]="changeAddress"
-        placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}" minlength="34">
+      <text-input (change)="checkSavedChangeAccount()" [disabled]="!enabledChangeAddress" [(inputModel)]="changeAddress"
+        placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
       <label style="margin-left:5px">{{changeAddressLabel}}</label>
     </div>
   </div>
@@ -26,15 +26,14 @@
       </button>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.PAYTO' | translate }}</span>
-        <input type="text" [(ngModel)]="rec.address" (change)="checkSavedAccount(rec,true)" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"
-          minlength="34" required>
-        <button class="btn btn-default btn-icon" (click)="getFromAddressBook(rec)">
-          <fa-icon icon="address-book"></fa-icon>
-        </button>
+        <text-input [(inputModel)]="rec.address" (change)="checkSavedAccount(rec,true)" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
+          <button class="btn btn-default btn-icon" (click)="getFromAddressBook(rec)">
+            <fa-icon icon="address-book"></fa-icon>
+          </button>
       </div>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.LABEL' | translate }}</span>
-        <input type="text" [(ngModel)]="rec.label" (change)="checkSavedAccount(rec,false)" placeholder="{{ 'PAGES.SEND.LABELPLACEHOLDER' | translate }}">
+        <text-input [(inputModel)]="rec.label" (change)="checkSavedAccount(rec,false)" placeholder="{{ 'PAGES.SEND.LABELPLACEHOLDER' | translate }}"></text-input>
       </div>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.AMOUNT' | translate }}</span>

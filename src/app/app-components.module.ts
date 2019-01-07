@@ -9,6 +9,8 @@ import { AddressBookComponent } from './components/address-book/address-book.com
 import { AddressBookService } from './components/address-book/address-book.service';
 import { SyncStatusComponent } from './components/sync-status/sync-status.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { TextinputComponent } from './components/textinput/textinput.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
 
 export const componentDeclarations = [
     PromptComponent,
@@ -17,7 +19,9 @@ export const componentDeclarations = [
     AddressBookComponent,
     ContextMenuComponent,
     SyncStatusComponent,
-    SideBarComponent
+    SideBarComponent,
+    TextinputComponent,
+    TextareaComponent
 ]
 
 export const componentProviders = [
