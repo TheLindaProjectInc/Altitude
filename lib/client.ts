@@ -379,7 +379,7 @@ export default class Client {
             request(options, (error, response, body) => {
                 if (error || body.error) {
                     // check if client has stopped
-                    if (this.status === ClientStatus.RUNNINGEXTERNAL && error.code === "ECONNREFUSED") {
+                    if (this.status === ClientStatus.RUNNINGEXTERNAL && error && error.code === "ECONNREFUSED") {
                         this.setClientStatus(ClientStatus.STOPPED)
                     }
                     resolve({ success: false, body, error });
