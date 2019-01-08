@@ -283,7 +283,8 @@ export class RpcService {
     private async getWalletInfo() {
         let data: any = await this.callServer("getinfo");
 
-        this.encryptionStatus = data.result.encryption_status
+        if (!data.result.unlocked_until || (new Date().getTime() - data.result.unlocked_until * 1000) > 10 * 1000)
+            this.encryptionStatus = data.result.encryption_status
 
         return data;
     }
