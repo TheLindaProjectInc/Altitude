@@ -330,7 +330,8 @@ export class TitlebarComponent {
   async checkUpdateWallet() {
     this.notification.loading('NOTIFICATIONS.CHECKINGUPDATE');
     try {
-      await this.electron.checkForWalletUpdate(false);
+      let hasUpdate = await this.electron.checkForWalletUpdate(false);
+      if (!hasUpdate) return this.notification.notify('default', 'NOTIFICATIONS.NOUPDATE');
     } catch (ex) {
       this.notification.notify('error', 'NOTIFICATIONS.CHECKINGUPDATEFAILED');
     }
