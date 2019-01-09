@@ -256,9 +256,7 @@ export class WalletService {
                     let localTrx = this.transactions[i];
                     if (localTrx.txId === serverTrx.txId && localTrx.blockIndex === localTrx.blockIndex) {
                         hasMatch = true;
-                        // update confirmations
-                        localTrx.confirmations = serverTrx.confirmations;
-                        localTrx.category = serverTrx.category;
+                        this.transactions[i] = serverTrx;
                     }
                 }
                 if (!hasMatch) this.transactions.push(serverTrx)
