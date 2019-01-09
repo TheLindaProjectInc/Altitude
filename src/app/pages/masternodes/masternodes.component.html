@@ -11,8 +11,8 @@
 
   <div class="tab-content" *ngIf="tab==0">
     <!-- masternode not enabled -->
-    <h5 *ngIf="!wallet.masternode.setup">{{ 'PAGES.MASTERNODES.NOTENABLEDTITLE' | translate }}</h5>
-    <p *ngIf="!wallet.masternode.setup">{{ 'PAGES.MASTERNODES.NOTENABLEDINSTR' | translate }}</p>
+    <h5 *ngIf="!wallet.masternode.setup && !items_me.length">{{ 'PAGES.MASTERNODES.NOTENABLEDTITLE' | translate }}</h5>
+    <p *ngIf="!wallet.masternode.setup && !items_me.length">{{ 'PAGES.MASTERNODES.NOTENABLEDINSTR' | translate }}</p>
 
     <!-- my masternodes table -->
     <div class="transactions">
