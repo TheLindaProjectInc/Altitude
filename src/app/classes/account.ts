@@ -47,7 +47,7 @@ export class Account {
     }
 
     get identicon(): string {
-        return this.addresses[0].address + ' - ' + this.balance.toString();
+        return this.addresses[0].address;
     }
 
     syncAddresses(newAddresses: Array<Address>) {
