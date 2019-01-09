@@ -28,6 +28,10 @@
         <td>{{wallet.walletStatus.version}}</td>
       </tr>
       <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}:</td>
+        <td>{{electron.remote.app.getVersion()}}</td>
+      </tr>
+      <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.PROTOCOLVERSION' | translate }}:</td>
         <td>{{wallet.walletStatus.protocolversion}}</td>
       </tr>

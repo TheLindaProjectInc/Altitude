@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { WalletService } from '../../providers/wallet.service';
+import { ElectronService } from '../../providers/electron.service';
 
 @Component({
   selector: 'app-about',
@@ -10,7 +12,9 @@ export class AboutComponent {
   tab = 0;
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public wallet: WalletService,
+    public electron: ElectronService
   ) { }
 
   ngOnInit() {

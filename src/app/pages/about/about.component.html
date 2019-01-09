@@ -5,11 +5,18 @@
       {{'PAGES.HELP.ABOUTCORETAB' | translate}}
     </button>
     <button (click)="tab=1" [ngClass]="{'active':tab==1}">
-        {{'PAGES.HELP.ABOUTALTITUDETAB' | translate}}
-      </button>
+      {{'PAGES.HELP.ABOUTALTITUDETAB' | translate}}
+    </button>
   </div>
 
-  <p class="tab-content" *ngIf="tab==0" innerHTML="{{'PAGES.HELP.ABOUTCORE' | translate}}"> </p>
-  <p class="tab-content" *ngIf="tab==1" innerHTML="{{'PAGES.HELP.ABOUTALTITUDE' | translate}}"> </p>
+  <div class="tab-content" *ngIf="tab==0">
+    <h4>{{ 'PAGES.TOOLS.ABOUT.COREVERSION' | translate }}: {{wallet.walletStatus.version}}</h4>
+    <p innerHTML="{{'PAGES.HELP.ABOUTCORE' | translate}}"> </p>
+  </div>
+
+  <div class="tab-content" *ngIf="tab==1">
+    <h4>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}: {{electron.remote.app.getVersion()}}</h4>
+    <p innerHTML="{{'PAGES.HELP.ABOUTALTITUDE' | translate}}"> </p>
+  </div>
 
 </div>

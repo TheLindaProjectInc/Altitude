@@ -29,7 +29,7 @@ export class ToolsComponent implements OnInit {
     private route: ActivatedRoute,
     private rpc: RpcService,
     public wallet: WalletService,
-    private electron: ElectronService,
+    public electron: ElectronService,
     private cdRef: ChangeDetectorRef
   ) { }
 
