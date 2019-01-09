@@ -95,9 +95,10 @@ export class WalletService {
     get balance(): Big {
         let balance = Big(0);
         this.accounts.forEach(acc => balance = balance.add(acc.balance));
-        if (this.masternode.running)
+        if (this.masternode.running) {
             balance = balance.add(this.masternodeCollateral)
-
+        }
+        balance = balance.add(this.walletStatus.stake);
         return balance;
     }
 
