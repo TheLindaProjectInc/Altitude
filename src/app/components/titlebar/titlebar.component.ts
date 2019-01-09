@@ -121,8 +121,6 @@ export class TitlebarComponent {
   }
 
   async buildMenu() {
-    if (isDevMode()) console.log("Rebuild menu");
-
     let appMenu = new this.electron.remote.Menu();
 
     const menus = this.getMenus();
@@ -147,6 +145,21 @@ export class TitlebarComponent {
         submenu: submenu
       })
       appMenu.append(menuItem);
+    }
+
+    // OSX needs the edit menu for keyboard shortcuts to work
+    if (window.process.platform === 'darwin') {
+      const menuItem = new this.electron.remote.MenuItem({
+        label: 'Edit',
+        submenu: [
+          { role: 'cut' },
+          { role: 'copy' },
+          { role: 'paste' },
+          { role: 'delete' },
+          { role: 'selectall' }
+        ]
+      })
+      appMenu.insert(1, menuItem);
     }
 
     this.electron.remote.Menu.setApplicationMenu(appMenu)
