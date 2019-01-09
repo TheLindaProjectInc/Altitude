@@ -28,7 +28,9 @@
     "publisherName": "Linda Project Inc."
   },
   "nsis": {
-    "runAfterFinish": false
+    "runAfterFinish": false,
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
   },
   "mac": {
     "icon": "assets/icons/mac/icon.icns",
