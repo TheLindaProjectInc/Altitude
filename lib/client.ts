@@ -212,8 +212,8 @@ export default class Client {
                 this.setClientStatus(ClientStatus.INVALIDHASH);
                 return false;
             } else {
-                helpers.renameFile(this.clientDownloadLocation, this.clientLocalLocation);
-                if (os.platform() !== 'win32') helpers.setFileExecutable(this.clientLocalLocation);
+                await helpers.renameFile(this.clientDownloadLocation, this.clientLocalLocation);
+                if (os.platform() !== 'win32') await helpers.setFileExecutable(this.clientLocalLocation);
             }
             return true;
         } catch (ex) {
