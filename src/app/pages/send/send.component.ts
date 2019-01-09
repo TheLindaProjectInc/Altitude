@@ -3,7 +3,6 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 import Big from 'big.js';
 import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
 import Helpers from '../../helpers';
-import { NotifierService } from 'angular-notifier';
 import { PromptService } from '../../components/prompt/prompt.service';
 import { AddressBookService } from '../../components/address-book/address-book.service';
 import { ContextMenuService } from '../../components/context-menu/context-menu.service';
@@ -33,7 +32,6 @@ export class SendComponent implements OnInit, OnDestroy {
   constructor(
     private ngxModal: NgxSmartModalService,
     public wallet: WalletService,
-    private notifier: NotifierService,
     private prompt: PromptService,
     private addressBook: AddressBookService,
     private contextMenu: ContextMenuService,
@@ -43,11 +41,13 @@ export class SendComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    this.reset();
+    this.reset(false);
     window.addEventListener('resize', () => this.onResize());
+    this.loadState();
   }
 
   ngOnDestroy(): void {
+    this.saveState();
     window.removeEventListener('resize', () => this.onResize());
   }
 
@@ -110,16 +110,49 @@ export class SendComponent implements OnInit, OnDestroy {
     return inputs;
   }
 
-  reset(): void {
+  reset(resetInputs = true): void {
     this.recipients = []
     this.addRecipient();
     this.changeAddress = '';
     this.changeAddressLabel = '';
     this.enabledChangeAddress = false;
-    this.getInputs().forEach(inp => inp.selected = false);
+
     this.UI_selectedBalance = new Big(0);
     this.UI_fee = 0;
     this.UI_total = new Big(0);
+    if (resetInputs) this.getInputs().forEach(inp => inp.selected = false);
+  }
+
+  saveState(): void {
+    localStorage.setItem('PAGES.SEND', JSON.stringify({
+      recipients: this.recipients,
+      changeAddress: this.changeAddress,
+      changeAddressLabel: this.changeAddressLabel,
+      enabledChangeAddress: this.enabledChangeAddress,
+      UI_selectedBalance: this.UI_selectedBalance,
+      UI_fee: this.UI_fee,
+      UI_total: this.UI_total,
+      coinControlTreeMode: this.coinControlTreeMode,
+    }));
+  }
+
+  loadState(): void {
+    try {
+      const state = localStorage.getItem('PAGES.SEND');
+      if (state) {
+        const stateJSON = JSON.parse(state);
+        this.recipients = stateJSON.recipients;
+        this.changeAddress = stateJSON.changeAddress;
+        this.changeAddressLabel = stateJSON.changeAddressLabel;
+        this.enabledChangeAddress = stateJSON.enabledChangeAddress;
+        this.UI_selectedBalance = new Big(stateJSON.UI_selectedBalance);
+        this.UI_fee = stateJSON.UI_fee;
+        this.UI_total = new Big(stateJSON.UI_total);
+        this.coinControlTreeMode = stateJSON.coinControlTreeMode;
+      }
+    } catch (ex) {
+
+    }
   }
 
   removeRecipient(index): void {
@@ -167,7 +200,6 @@ export class SendComponent implements OnInit, OnDestroy {
 
   checkSavedChangeAccount() {
     let acc = this.getSavedAccount(this.changeAddress, "");
-    console.log(acc)
     if (acc) this.changeAddressLabel = acc;
     else this.changeAddressLabel = "";
   }
