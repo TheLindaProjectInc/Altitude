@@ -36,7 +36,9 @@ import {
     faArrowUp,
     faSpinner,
     faExclamationCircle,
-    faLink
+    faLink,
+    faChevronDown,
+    faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -77,6 +79,8 @@ export function setupIcons() {
         faArrowUp,
         faSpinner,
         faExclamationCircle,
-        faLink
+        faLink,
+        faChevronDown,
+        faChevronRight
     );
 }

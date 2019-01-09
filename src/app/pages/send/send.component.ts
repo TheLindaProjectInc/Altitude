@@ -28,6 +28,7 @@ export class SendComponent implements OnInit, OnDestroy {
   UI_selectedBalance = new Big(0);
   UI_fee = 0;
   UI_total = new Big(0);
+  coinControlTreeMode = true;
 
   constructor(
     private ngxModal: NgxSmartModalService,
@@ -106,7 +107,7 @@ export class SendComponent implements OnInit, OnDestroy {
         })
       })
     })
-    return inputs
+    return inputs;
   }
 
   reset(): void {
@@ -179,17 +180,58 @@ export class SendComponent implements OnInit, OnDestroy {
     }
   }
 
+  changeCoinControlMode() {
+    this.coinControlTreeMode = !this.coinControlTreeMode;
+    this.getTableInputs();
+  }
+
   showSelectInputsModal(): void {
     this.setTableDimensions();
+    this.getTableInputs();
+    this.ngxModal.getModal('selectInputsModal').open()
+  }
+
+  getTableInputs() {
     this.tableInputs = [];
-    this.wallet.accounts.forEach(acc => {
-      acc.addresses.forEach(addr => {
-        addr.allInputs().forEach(inp => {
-          this.tableInputs.push(inp)
+    if (this.coinControlTreeMode) {
+      this.wallet.accounts.forEach(acc => {
+        let header = { account: acc.name, address: acc.address, amount: Big(0), selected: false, inputs: [], showChildren: true };
+        acc.addresses.forEach(addr => {
+          addr.allInputs().forEach(inp => {
+            header.inputs.push(inp);
+            header.amount = header.amount.add(inp.amount);
+          })
+        })
+        if (header.amount.gt(0)) {
+          this.tableInputs.push(header);
+          this.checkHeaderSelected(header)
+        }
+      })
+    } else {
+      this.wallet.accounts.forEach(acc => {
+        acc.addresses.forEach(addr => {
+          addr.allInputs().forEach(inp => {
+            this.tableInputs.push(inp)
+          })
         })
       })
+    }
+  }
+
+  toggleHeader(header) {
+    header.inputs.forEach((inp: Input) => {
+      if (!inp.locked) inp.selected = header.selected;
     })
-    this.ngxModal.getModal('selectInputsModal').open()
+  }
+
+  checkHeaderSelected(header) {
+    for (let i = 0; i < header.inputs.length; i++) {
+      if (!header.inputs[i].locked && !header.inputs[i].selected) {
+        header.selected = false;
+        return
+      }
+    }
+    header.selected = true;
   }
 
   getSelectedAmount(): Big {
@@ -219,6 +261,9 @@ export class SendComponent implements OnInit, OnDestroy {
     let select = true;
     if (spread > 0.5) select = false
     this.getInputs().forEach(inp => inp.selected = select)
+    if (this.coinControlTreeMode) {
+      this.tableInputs.forEach(header => this.checkHeaderSelected(header));
+    }
   }
 
   cancelSelectInputsModal(): void {
