@@ -24,7 +24,7 @@ Altitude is built using the Angular7 and Electron frameworks for maximum cross-p
 Clone this repository locally :
 
 ``` bash
-git clone https://github.com/thelindaproject/Altitude.git
+git clone https://github.com/thelindaprojectinc/Altitude.git
 ```
 
 Install dependencies with npm. Using yarn on linux and macos may fail:
