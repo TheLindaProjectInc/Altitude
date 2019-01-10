@@ -1,6 +1,5 @@
 {
   "productName": "Altitude",
-  "artifactName": "${productName}-${platform}-${arch}.${ext}",
   "directories": {
     "output": "release/"
   },
@@ -22,6 +21,7 @@
   ],
   "win": {
     "icon": "assets/icons/win/icon.ico",
+    "artifactName": "${productName}-win32.${ext}",
     "target": [
       "nsis"
     ],
@@ -35,6 +35,7 @@
   },
   "mac": {
     "icon": "assets/icons/mac/icon.icns",
+    "artifactName": "${productName}-mac-x64.${ext}",
     "target": [
       "dmg"
     ],
@@ -42,6 +43,7 @@
   },
   "linux": {
     "icon": "assets/icons/png",
+    "artifactName": "${productName}-linux-x64.${ext}",
     "target": [
       "AppImage"
     ],

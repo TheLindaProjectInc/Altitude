@@ -1,0 +1,42 @@
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.0
+      language: node_js
+      node_js: "11"
+      env:
+        - ELECTRON_CACHE=$HOME/.cache/electron
+        - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+      deploy:
+        provider: releases
+        api_key: $GITHUB_OAUTH_TOKEN
+        file:
+          - "release/Altitude-win32-x64.exe"
+          - "release/Altitude-win32-x86.exe"
+          - "release/Altitude-linux-x64.AppImage"
+          - "release/Altitude-mac-x64.dmg"
+        skip_cleanup: true
+        draft: true
+        on:
+          tags: true
+
+cache:
+  directories:
+    - node_modules
+    - $HOME/.cache/electron
+    - $HOME/.cache/electron-builder
+
+script:
+  - yarn electron:mac
+  - yarn electron:linux
+  - yarn electron:windows
+  - mv release/Altitude-win32.exe release/Altitude-win32-x64.exe 
+  - yarn electron:windows32
+  - mv release/Altitude-win32.exe release/Altitude-win32-x86.exe 
+
+before_cache:
+  - rm -rf $HOME/.cache/electron-builder/wine
+
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
