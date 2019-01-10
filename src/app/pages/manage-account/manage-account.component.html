@@ -9,7 +9,7 @@
     <div>
       <div class="account-name">
         <fa-icon icon="wallet"></fa-icon>
-        <text-input class="form-control" (change)="renameAccount()" [(ngModel)]="this.account.mainAddress.newAccount"
+        <text-input class="form-control" (change)="renameAccount()" [(inputModel)]="this.account.mainAddress.newAccount"
           placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
       </div>
       <h2>
