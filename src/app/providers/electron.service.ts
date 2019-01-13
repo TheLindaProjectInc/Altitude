@@ -9,12 +9,12 @@ var supportedLanguages = require('../pages/locale/languages');
 
 @Injectable()
 export class ElectronService {
-  
+
   ipcRenderer: typeof ipcRenderer;
   remote: typeof remote;
   clipboard: typeof clipboard;
   shell: typeof shell;
-
+  
   settings: any = {};
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
@@ -61,7 +61,7 @@ export class ElectronService {
         case 'CHECKUPDATE':
           this.checkUpdateEvent.emit({ type: 'core', hasUpdate: data });
           break;
-          case 'CALLCLIENT':
+        case 'CALLCLIENT':
           this.RPCResponseEvent.emit(data);
           break;
       }
@@ -101,7 +101,7 @@ export class ElectronService {
   }
 
   setLanguage() {
-    if (this.translate.getDefaultLang() !== this.settings.locale) {
+    if (this.settings.locale && this.translate.getDefaultLang() !== this.settings.locale) {
       if (isDevMode()) console.log("Setting language to", this.settings.locale)
       this.translate.setDefaultLang(this.settings.locale);
       this.languageChangedEvent.emit();
