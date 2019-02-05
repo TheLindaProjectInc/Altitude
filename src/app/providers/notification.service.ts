@@ -27,12 +27,12 @@ export class NotificationService {
 
     public async loading(translation: string, translate: boolean = true): Promise<void> {
 
-        const id = new Date().getTime();
+        const id = new Date().getTime().toString();
         this.dismissableNotificationList.push(id);
 
         setTimeout(async () => {
             if (this.dismissableNotificationList.indexOf(id) > -1) {
-                this.notifier.notify('default', translate ? await this.translation.translate(translation) : translation);
+                this.notifier.notify('default', translate ? await this.translation.translate(translation) : translation, id);
             }
         }, 500);
     }
