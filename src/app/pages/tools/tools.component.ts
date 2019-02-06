@@ -21,7 +21,7 @@ export class ToolsComponent implements OnInit {
   myCommands = [];
   myCommandIndex = -1;
 
-  dateNow
+  dateNow: Date;
 
   repairCommands = ['-salvagewallet', '-rescan', '-zapwallettxes=1', '-zapwallettxes=2', '-upgradewallet', '-reindex'];
 
@@ -71,8 +71,9 @@ export class ToolsComponent implements OnInit {
         if (res.result) isJson = typeof (res.result) === 'object';
         this.rpcHistory.push({ ts: new Date(), send: false, data: res.result || res.error, json: isJson });
       } catch (ex) {
-        let err = ex.statusText;
-        if (ex.error) err = `${ex.error.message} (code ${ex.error.code})`;
+        let err = 'Error';
+        if (ex.error) err = ex.error;
+        if (ex.body.error) err = `${ex.body.error.message} (code ${ex.body.error.code})`;
         this.rpcHistory.push({ ts: new Date(), send: false, data: err, json: false });
       }
       this.rpcCommand = "";
