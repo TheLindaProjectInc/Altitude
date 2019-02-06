@@ -382,12 +382,13 @@ export default class Client {
 
     async callClient(method, params = []): Promise<{}> {
         return new Promise((resolve, reject) => {
+            let timeout = method === 'importprivkey' ? 60000 : 10000
             const options = {
                 method: 'POST',
                 url: `http://${this.rpcUser}:${this.rpcPassword}@127.0.0.1:${this.rpcPort}/`,
                 body: { jsonrpc: '1.0', id: 'Tunnel', method: method, params: params },
                 json: true,
-                timeout: 10000
+                timeout: timeout
             };
 
             request(options, (error, response, body) => {
