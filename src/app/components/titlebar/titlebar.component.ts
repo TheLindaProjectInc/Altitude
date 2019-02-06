@@ -370,7 +370,7 @@ export class TitlebarComponent {
     if (this.appWindow.isMaximized()) {
       this.appWindow.unmaximize();
       this.appWindow.setSize(800, 600);
-      this.electron.ipcRenderer.send('settings', 'SETFULLSCREEN', true);
+      this.electron.ipcRenderer.send('settings', 'SETFULLSCREEN', false);
     } else {
       this.appWindow.maximize();
       this.electron.ipcRenderer.send('settings', 'SETFULLSCREEN', true);

@@ -67,6 +67,7 @@ function createWindow() {
     const appSettings = settings.getSettings();
     if (!appSettings) setTimeout(handler, 100);
     else {
+      log.info('appSettings.fullScreen', appSettings.fullScreen);
       if (appSettings.fullScreen) mainWindow.maximize();
       log.info('appSettings.hideTrayIcon', appSettings.hideTrayIcon)
       toggleTray(appSettings.hideTrayIcon);
