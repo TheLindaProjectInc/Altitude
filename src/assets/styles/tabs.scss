@@ -1,9 +1,9 @@
 .tabs {
-    border-bottom: 1px solid darken($color: $font-primary, $amount: 40%);
     margin-bottom: 20px;
     position: fixed;
-    right: 20px;
-    left: 270px;
+    padding-left: 20px;
+    left: 250px;
+    right: 0;
     background: $background-primary;
     z-index: 10;
     margin-top: -10px;
@@ -29,6 +29,14 @@
     &.not-fixed {
         position: initial;
         margin-top: 0;
+    }
+    &::after {
+        position: fixed;
+        content: '';
+        border-bottom: 1px solid #999999;
+        top: 66px;
+        left: 270px;
+        right: 20px;
     }
 }
 
