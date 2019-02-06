@@ -19,6 +19,7 @@ export default class Client {
     clientConfig: ClientConfig;
     clientLocalLocation: string;
     clientDownloadLocation: string;
+    clientVersion: string;
     // rpc credentials
     rpcUser: string;
     rpcPassword: string;
@@ -91,6 +92,9 @@ export default class Client {
                     this.callClient(data.method, data.params).then(result => {
                         this.IPC_sendCallClientResponse(data.callId, data.method, result);
                     })
+                    break;
+                case 'VERSION':
+                    this.sendClientVersion();
                     break;
             }
         });
@@ -189,9 +193,12 @@ export default class Client {
             throw ClientStatus.UNSUPPORTEDPLATFORM
         }
         // set client details
+        this.clientVersion = clientBinaries[this.clientName].version;
         this.clientConfig = clientBinaries[this.clientName][platform][arch];
         this.clientLocalLocation = path.join(this.clientsLocation, this.clientConfig.bin);
         this.clientDownloadLocation = path.join(this.clientsLocation, 'download');
+        // send client version too renderer
+        this.sendClientVersion();
     }
 
     async waitForUpdateResponse() {
@@ -404,6 +411,10 @@ export default class Client {
 
     sendRPCStatus() {
         if (this.win) this.win.webContents.send('client-node', 'RPC', { ready: this.rpcRunning, message: this.rpcMessage });
+    }
+
+    sendClientVersion() {
+        if (this.win) this.win.webContents.send('client-node', 'VERSION', this.clientVersion);
     }
 
     async checkClientUpdate() {

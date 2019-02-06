@@ -14,8 +14,9 @@ export class ElectronService {
   remote: typeof remote;
   clipboard: typeof clipboard;
   shell: typeof shell;
-  
+
   settings: any = {};
+  clientVersion: string = '0';
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
@@ -64,12 +65,17 @@ export class ElectronService {
         case 'CALLCLIENT':
           this.RPCResponseEvent.emit(data);
           break;
+        case 'VERSION':
+          this.clientVersion = data;
+          break;
       }
     });
     // ask for client status
     this.ipcRenderer.send('client-node', 'STATUS');
     // ask for rpc status
     this.ipcRenderer.send('client-node', 'RPC');
+    // ask for client version
+    this.ipcRenderer.send('client-node', 'VERSION');
   }
 
   connectSettingsIPC() {
