@@ -7,6 +7,7 @@ import { spawn, ChildProcess } from 'child_process';
 import * as helpers from './helpers';
 import * as log from 'electron-log';
 import * as settings from './settings';
+import * as compareVersions from 'compare-versions';
 var localClientBinaries = require('../clientBinaries.json');
 
 const sleep = require('util').promisify(setTimeout)
@@ -290,7 +291,13 @@ export default class Client {
             nets.forEach(net => startupCommands.push('-onlynet=' + net))
         }
         if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
-        if (appSettings.tor) startupCommands.push('-tor=' + appSettings.tor)
+        if (appSettings.tor) {
+            // Linda Core 3.3 renames tor startup command to onion
+            if (compareVersions(this.clientVersion, '3.3.0.0') >= 0)
+                startupCommands.push('-tor=' + appSettings.tor)
+            else
+                startupCommands.push('-onion=' + appSettings.tor)
+        }
         log.info("Client", "Running with commands", startupCommands);
         // start client
         this.proc = spawn(path.join(this.clientsLocation, bin), startupCommands);
