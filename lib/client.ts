@@ -8,6 +8,7 @@ import * as helpers from './helpers';
 import * as log from 'electron-log';
 import * as settings from './settings';
 import * as compareVersions from 'compare-versions';
+import * as clientVersions from './clientVersions';
 var localClientBinaries = require('../clientBinaries.json');
 
 const sleep = require('util').promisify(setTimeout)
@@ -194,12 +195,11 @@ export default class Client {
             throw ClientStatus.UNSUPPORTEDPLATFORM
         }
         // set client details
-        this.clientVersion = clientBinaries[this.clientName].version;
         this.clientConfig = clientBinaries[this.clientName][platform][arch];
         this.clientLocalLocation = path.join(this.clientsLocation, this.clientConfig.bin);
         this.clientDownloadLocation = path.join(this.clientsLocation, 'download');
-        // send client version too renderer
-        this.sendClientVersion();
+        // get client version
+        await this.getClientVersion();
     }
 
     async waitForUpdateResponse() {
@@ -434,6 +434,18 @@ export default class Client {
         } catch (ex) {
         }
         return;
+    }
+
+    async getClientVersion() {
+        const fileHash = await helpers.getFileHash(this.clientLocalLocation) as string;
+        this.clientVersion = clientVersions.lookupTable[fileHash];
+        if (!this.clientVersion) {
+            this.clientVersion = '3.2.0.0';
+            log.info('Client', 'Unknown version. Assuming', this.clientVersion);
+        } else {
+            log.info('Client', 'Client Version', this.clientVersion);
+        }
+        this.sendClientVersion();
     }
 
     destroy() {

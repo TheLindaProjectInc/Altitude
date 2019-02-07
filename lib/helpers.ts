@@ -3,7 +3,6 @@ import * as https from 'https';
 import * as fs from 'fs'
 import * as crypto from 'crypto'
 import { exec } from 'child_process';
-import * as log from 'electron-log';
 
 export async function pathExists(path) {
     return new Promise((resolve, reject) => {
