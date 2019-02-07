@@ -34,17 +34,19 @@ export class WalletService {
     conversionSyncTimer;
     syncServiceTimer;
 
-    transactions: Array<Transaction>;
-    accounts: Array<Account>;
-
     // wallet state
     walletStatus: WalletStatus;
     stakingStatus: StakingStatus;
     masternode: MasternodeStatus;
+
+    // transactions
+    private _transactions: Array<Transaction>;
+    // accounts
+    private _accounts: Array<Account>;
     // peers list
-    peers: Array<Peer>;;
+    private _peers: Array<Peer>;
     // address book
-    addressBook: Array<AddressBookItem>;
+    private _addressBook: Array<AddressBookItem>;
 
     // data syncs
     dataSyncs = [
@@ -75,13 +77,13 @@ export class WalletService {
 
     resetState() {
         this.running = false;
-        this.transactions = new Array<Transaction>();
-        this.accounts = new Array<Account>();
+        this._transactions = new Array<Transaction>();
+        this._accounts = new Array<Account>();
         this.walletStatus = new WalletStatus();
         this.stakingStatus = new StakingStatus();
         this.masternode = new MasternodeStatus();
-        this.peers = new Array<Peer>();
-        this.addressBook = new Array<AddressBookItem>();
+        this._peers = new Array<Peer>();
+        this._addressBook = new Array<AddressBookItem>();
     }
 
     setupListeners() {
@@ -92,11 +94,27 @@ export class WalletService {
         });
     }
 
-    get balance(): Big {
+    public get balance(): Big {
         let balance = Big(0);
-        this.accounts.forEach(acc => balance = balance.add(acc.balance));
+        this._accounts.forEach(acc => balance = balance.add(acc.balance));
         balance = balance.add(this.walletStatus.stake);
         return balance;
+    }
+
+    public get accounts(): Array<Account> {
+        return this._accounts.slice();
+    }
+
+    public get transactions(): Array<Transaction> {
+        return this._transactions.slice();
+    }
+
+    public get peers(): Array<Peer> {
+        return this._peers.slice();
+    }
+
+    public get addressBook(): Array<AddressBookItem> {
+        return this._addressBook.slice();
     }
 
     public requestDataSync(type: DATASYNCTYPES) {
@@ -207,7 +225,7 @@ export class WalletService {
         let accountList: any = await this.rpc.requestData(RPCMethods.GETACCOUNTS);
         let newAccountList = new Array<Account>();
         // flag all address as to remove
-        this.accounts.forEach(acc => {
+        this._accounts.forEach(acc => {
             acc.addresses.forEach(addr => addr.removeFromAccount = true)
         })
         // add and update accounts from server
@@ -219,28 +237,28 @@ export class WalletService {
             newAccountList.push(account);
             // check if have match
             let hasMatch = false;
-            for (let i = 0; i < this.accounts.length; i++) {
-                if (this.accounts[i].addresses[0] && this.accounts[i].addresses[0].address === account.addresses[0].address) {
-                    this.accounts[i].syncAddresses(account.addresses);
+            for (let i = 0; i < this._accounts.length; i++) {
+                if (this._accounts[i].addresses[0] && this._accounts[i].addresses[0].address === account.addresses[0].address) {
+                    this._accounts[i].syncAddresses(account.addresses);
                     hasMatch = true;
                     break;
                 }
             }
             if (!hasMatch)
-                this.accounts.push(account);
+                this._accounts.push(account);
         })
 
         // remove any accounts that aren't in the new list from the server
-        for (let i = 0; i < this.accounts.length; i++) {
+        for (let i = 0; i < this._accounts.length; i++) {
             let hasMatch = false;
             for (let j = 0; j < newAccountList.length; j++) {
-                if (this.accounts[i].name === newAccountList[j].name) {
+                if (this._accounts[i].name === newAccountList[j].name) {
                     hasMatch = true;
                     break;
                 }
             }
-            if (!hasMatch) this.accounts.splice(i--, 1);
-            else this.accounts[i].removeRenamedAddresses(); // remove any addresses that have been renamed
+            if (!hasMatch) this._accounts.splice(i--, 1);
+            else this._accounts[i].removeRenamedAddresses(); // remove any addresses that have been renamed
         }
         this.accountsUpdated.emit();
     }
@@ -251,16 +269,16 @@ export class WalletService {
             transactionData.forEach(trans => {
                 let serverTrx = new Transaction(trans);
                 let hasMatch = false;
-                for (let i = 0; i < this.transactions.length; i++) {
-                    let localTrx = this.transactions[i];
+                for (let i = 0; i < this._transactions.length; i++) {
+                    let localTrx = this._transactions[i];
                     if (localTrx.txId === serverTrx.txId && localTrx.blockIndex === localTrx.blockIndex) {
                         hasMatch = true;
-                        this.transactions[i] = serverTrx;
+                        this._transactions[i] = serverTrx;
                     }
                 }
-                if (!hasMatch) this.transactions.push(serverTrx)
+                if (!hasMatch) this._transactions.push(serverTrx)
             })
-            this.transactions.sort((a, b) => { return b.timestamp.getTime() - a.timestamp.getTime(); })
+            this._transactions.sort((a, b) => { return b.timestamp.getTime() - a.timestamp.getTime(); })
         }
     }
 
@@ -296,12 +314,12 @@ export class WalletService {
     }
 
     private async getPeersList() {
-        this.peers = await this.rpc.requestData(RPCMethods.PEERS);
+        this._peers = await this.rpc.requestData(RPCMethods.PEERS);
     }
 
     private async getAddressBook() {
         let res = await this.rpc.requestData(RPCMethods.ADDRESSBOOKLIST);
-        if (!res.error) this.addressBook = res
+        if (!res.error) this._addressBook = res
     }
 
     private syncConverstion() {
@@ -317,12 +335,12 @@ export class WalletService {
     public addressBookAdd(address: string, label: string): Promise<any> {
         return new Promise(async (resolve, reject) => {
             try {
-                for (let i = 0; i < this.addressBook.length; i++) {
-                    if (this.addressBook[i].address === address) return true;
+                for (let i = 0; i < this._addressBook.length; i++) {
+                    if (this._addressBook[i].address === address) return true;
                 }
                 await this.rpc.requestData(RPCMethods.ADDRESSBOOKADD, [address, label]);
                 // add address to addressbook
-                this.addressBook.push({ address: address, account: label });
+                this._addressBook.push({ address: address, account: label });
                 resolve();
             } catch (ex) {
                 reject(ex);
@@ -335,9 +353,9 @@ export class WalletService {
             try {
                 await this.rpc.requestData(RPCMethods.ADDRESSBOOKREMOVE, [address]);
                 // remove address to addressbook
-                for (let i = 0; i < this.addressBook.length; i++) {
-                    if (this.addressBook[i].address === address) {
-                        this.addressBook.splice(i, 1);
+                for (let i = 0; i < this._addressBook.length; i++) {
+                    if (this._addressBook[i].address === address) {
+                        this._addressBook.splice(i, 1);
                         break;
                     }
                 }
@@ -356,14 +374,14 @@ export class WalletService {
                     transactionData.forEach(trans => {
                         let serverTrx = new Transaction(trans);
                         let hasMatch = false;
-                        for (let i = 0; i < this.transactions.length; i++) {
-                            let localTrx = this.transactions[i];
+                        for (let i = 0; i < this._transactions.length; i++) {
+                            let localTrx = this._transactions[i];
                             if (localTrx.txId === serverTrx.txId && localTrx.blockIndex === localTrx.blockIndex) {
                                 hasMatch = true;
                                 localTrx.confirmations = serverTrx.confirmations; // update confirmations
                             }
                         }
-                        if (!hasMatch) this.transactions.push(serverTrx)
+                        if (!hasMatch) this._transactions.push(serverTrx)
                     })
                 }
                 resolve();
@@ -533,11 +551,12 @@ export class WalletService {
 
     public getAccounts(hideEmpty: boolean = false) {
         let accList = new Array<Account>();
-        this.accounts.forEach(acc => {
+        let accounts = this._accounts;
+        accounts.forEach(acc => {
             if (acc.name !== 'Unnamed' || acc.balance > 0 || !hideEmpty)
                 accList.push(acc);
         })
-        if (hideEmpty && !accList.length && this.accounts.length) accList.push(this.accounts[0]);
+        if (hideEmpty && !accList.length && accounts.length) accList.push(accounts[0]);
 
         // sort balance descending then name
         return accList.sort((a: Account, b) => {
