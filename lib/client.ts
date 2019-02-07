@@ -22,10 +22,8 @@ export default class Client {
     clientLocalLocation: string;
     clientDownloadLocation: string;
     clientVersion: string;
-    // rpc credentials
-    rpcUser: string;
-    rpcPassword: string;
-    rpcPort: number;
+    // client config file
+    clientConfigFile: ClientConfigFile;
     // rpc status
     rpcRunning = false;
     rpcMessage = "";
@@ -116,7 +114,7 @@ export default class Client {
             if (await this.getClientConfig()) {
                 log.info("Client", "Config exists");
                 // check we got credentials
-                if (!this.rpcUser || !this.rpcPassword || !this.rpcPort) {
+                if (!this.clientConfigFile.hasRPCDetails) {
                     log.info("Client", "Couldn't get credentials from config");
                     this.setClientStatus(ClientStatus.NOCREDENTIALS);
                     return;
@@ -236,7 +234,7 @@ export default class Client {
         if (await this.getClientConfig()) {
             log.info("Client", "Config exists");
             // check we got credentials
-            if (!this.rpcUser || !this.rpcPassword || !this.rpcPort) {
+            if (!this.clientConfigFile.rpcuser || !this.clientConfigFile.rpcpassword || !this.clientConfigFile.rpcport) {
                 log.info("Client", "Couldn't get credentials from config");
                 this.setClientStatus(ClientStatus.NOCREDENTIALS);
             } else {
@@ -281,6 +279,12 @@ export default class Client {
     }
 
     runClient(bin, startupCommands = []) {
+        // check for invalid masternode setup
+        if (!this.clientConfigFile.hasValidMasternodeSetup) {
+            log.error("Client", "Invalid masternode configuration. Please check your Linda.conf file");
+            this.setClientStatus(ClientStatus.INVALIDMASTERNODECONFIG);
+            return;
+        }
         // check for startup commands
         if (app.isPackaged && process.argv.length > 1)
             startupCommands = startupCommands.concat(process.argv.slice(1, process.argv.length));
@@ -359,6 +363,7 @@ export default class Client {
 
     async getClientConfig() {
         try {
+            this.clientConfigFile = new ClientConfigFile();
             if (await helpers.pathExists(this.clientConfigLocation)) {
                 let data = await helpers.readFile(this.clientConfigLocation) as string;
                 let lines = data.split(os.EOL);
@@ -367,9 +372,9 @@ export default class Client {
                         lines[i] = lines[i].replace('\r', '').replace('\n', '');
                         const key = lines[i].split("=")[0].trim();
                         const val = lines[i].split("=")[1].trim();
-                        if (key === 'rpcuser') this.rpcUser = val;
-                        if (key === 'rpcpassword') this.rpcPassword = val;
-                        if (key === 'rpcport') this.rpcPort = Number(val);
+
+                        if (key === 'addnode') this.clientConfigFile.nodes.push(val)
+                        else this.clientConfigFile[key] = val
                     }
                 }
                 return true;
@@ -385,7 +390,7 @@ export default class Client {
             let timeout = method === 'importprivkey' ? 60000 : 10000
             const options = {
                 method: 'POST',
-                url: `http://${this.rpcUser}:${this.rpcPassword}@127.0.0.1:${this.rpcPort}/`,
+                url: `http://${this.clientConfigFile.rpcuser}:${this.clientConfigFile.rpcpassword}@127.0.0.1:${this.clientConfigFile.rpcport}/`,
                 body: { jsonrpc: '1.0', id: 'Tunnel', method: method, params: params },
                 json: true,
                 timeout: timeout
@@ -465,11 +470,12 @@ export enum ClientStatus {
     STOPPED,
     NOCREDENTIALS,
     INVALIDHASH,
+    INVALIDMASTERNODECONFIG,
     DOWNLOADFAILED,
     UNSUPPORTEDPLATFORM,
     SHUTTINGDOWN,
     RESTARTING,
-    CLOSEDUNEXPECTED
+    CLOSEDUNEXPECTED,
 }
 
 class ClientConfig {
@@ -478,4 +484,28 @@ class ClientConfig {
         sha256: string,
     }
     bin: string
+}
+
+class ClientConfigFile {
+    daemon: string;
+    server: string;
+    rpcallowip: string = '127.0.0.1';
+    rpcport: string;
+    rpcuser: string;
+    rpcpassword: string;
+    masternode: string;
+    masternodeprivkey: string;
+    masternodeaddr: string;
+    nodes: Array<string> = [];
+
+
+    get hasRPCDetails(): boolean {
+        if (!this.rpcuser || !this.rpcpassword || !this.rpcport) return false;
+        return true;
+    }
+
+    get hasValidMasternodeSetup(): boolean {
+        if (this.masternode === '1' && (!this.masternodeprivkey || !this.masternodeaddr)) return false;
+        return true;
+    }
 }

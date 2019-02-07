@@ -33,8 +33,12 @@ export class RpcService {
             } else if (status === ClientStatus.STOPPED && this.RPCReady) {
                 this.stopClient();
                 this.notifyClientStopped();
+            } else if (status === ClientStatus.INVALIDMASTERNODECONFIG) {
+                this.stopClient();
+                this.notifyClientInvalidConfig();
+            } else if (status === ClientStatus.SHUTTINGDOWN) {
+                this.stopClient();
             }
-            else if (status === ClientStatus.SHUTTINGDOWN) this.stopClient();
         });
         // electron for RPC status
         this.electron.RCPStatusEvent.subscribe((status: { ready: boolean, message: string }) => {
@@ -436,6 +440,19 @@ export class RpcService {
         try {
             await this.prompt.alert('COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDTITLE', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
             // restart internal client
+            this.restartClient();
+        } catch (ex) {
+            // chose to stop wallet
+            this.electron.remote.app.quit()
+        }
+    }
+
+    async notifyClientInvalidConfig() {
+        // if we tried starting the client but the config has a bad masternode setup
+        // that will just cause the client to exit
+        try {
+            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTINVALIDCONFIGTITLE', 'COMPONENTS.PROMPT.CLIENTINVALIDCONFIGINFO', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            // start internal client
             this.restartClient();
         } catch (ex) {
             // chose to stop wallet
