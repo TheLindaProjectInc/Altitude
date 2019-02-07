@@ -65,6 +65,7 @@ export class WalletService {
     @Output() accountsUpdated: EventEmitter<boolean> = new EventEmitter();
     @Output() masternodeListUpdated: EventEmitter<any> = new EventEmitter();
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
+    @Output() transactionsUpdated: EventEmitter<any> = new EventEmitter();
 
     constructor(
         private rpc: RpcService,
@@ -115,6 +116,13 @@ export class WalletService {
 
     public get addressBook(): Array<AddressBookItem> {
         return this._addressBook.slice();
+    }
+
+    public cleanupTransactions() {
+        if (this._transactions.length > 10) {
+            const toRemove = this._transactions.length - 10;
+            this._transactions.splice(10, toRemove);
+        }
     }
 
     public requestDataSync(type: DATASYNCTYPES) {
@@ -279,6 +287,7 @@ export class WalletService {
                 if (!hasMatch) this._transactions.push(serverTrx)
             })
             this._transactions.sort((a, b) => { return b.timestamp.getTime() - a.timestamp.getTime(); })
+            this.transactionsUpdated.emit();
         }
     }
 

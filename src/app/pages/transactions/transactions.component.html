@@ -2,7 +2,7 @@
 
   <h1>{{'PAGES.TRANSACTIONS.TITLE' | translate}}</h1>
 
-  <virtual-scroller #scroll class="transactions" [items]="wallet.transactions" [parentScroll]="scrollingBlock" (vsEnd)="fetchMore($event)">
+  <virtual-scroller #scroll class="transactions" [items]="transactions" [parentScroll]="scrollingBlock" (vsEnd)="fetchMore($event)">
     <div class="transaction" *ngFor="let trx of scroll.viewPortItems" style="width: 100%;height: 92px;" title="{{trx.confirmations}} confirmations"
       (contextmenu)="onRightClick($event,trx)">
       <div class="progress" [ngStyle]="wallet.getTrxProgress(trx)" [ngClass]="{'unconfirmed':trx.confirmations<wallet.confirmations,'confirmed':trx.confirmations>=wallet.confirmations}"></div>

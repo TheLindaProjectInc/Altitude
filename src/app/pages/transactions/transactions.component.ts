@@ -13,6 +13,8 @@ import { Transaction } from '../../classes';
 })
 
 export class TransactionsComponent {
+  sub;
+
   public helpers = Helpers;
   transactions = [];
   skip = 10;
@@ -26,11 +28,16 @@ export class TransactionsComponent {
   ) {
   }
 
+  ngOnInit(): void {
+    this.transactions = this.wallet.transactions;
+    this.sub = this.wallet.transactionsUpdated.subscribe(() => {
+      this.transactions = this.wallet.transactions;
+    });
+  }
+
   ngOnDestroy() {
-    if (this.wallet.transactions.length > 10) {
-      const toRemove = this.wallet.transactions.length - 10;
-      this.wallet.transactions.splice(10, toRemove);
-    }
+    this.sub.unsubscribe();
+    this.wallet.cleanupTransactions();
   }
 
   async fetchMore(event: ChangeEvent) {
@@ -38,6 +45,7 @@ export class TransactionsComponent {
     this.loading = true;
     try {
       await this.wallet.getTransactions(10, this.skip);
+      this.transactions = this.wallet.transactions;
       this.skip += 10;
     } catch (ex) {
       this.errorService.diagnose(ex);
