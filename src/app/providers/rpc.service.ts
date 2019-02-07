@@ -448,6 +448,7 @@ export class Transaction {
     account: string;
     address: string;
     category: string;
+    subCategory: string;
     amount: string;
     fee: number;
     confirmations: number
@@ -461,6 +462,7 @@ export class Transaction {
         this.account = data.account;
         this.address = data.address;
         this.category = data.category;
+        this.subCategory = data.subcategory;
         this.amount = data.amount.toString();
         this.fee = data.fee;
         this.confirmations = data.confirmations;
@@ -469,9 +471,13 @@ export class Transaction {
         this.blockTime = data.blocktime;
         this.txId = data.txid;
         this.timestamp = data.time;
+        // santise subcategory
+        if (this.subCategory === "mined") this.subCategory = "Mined"
+        if (this.subCategory === "minted") this.subCategory = "Minted"
+        if (this.subCategory === "masternode reward") this.subCategory = "Masternode Reward"
         // santise category
         if (this.category === "send") this.category = "Payment"
-        if (this.category === "generate") this.category = "Mined"
+        if (this.category === "generate") this.category = "Generated"
         if (this.category === "receive") this.category = "Received"
         if (this.category === "immature") this.category = "Immature"
         if (this.category === "orphan") this.category = "Orphan"

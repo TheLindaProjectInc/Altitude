@@ -4,6 +4,7 @@ export class Transaction {
     account: string;
     address: string;
     category: string;
+    subCategory: string;
     amount: Big;
     confirmations: number;
     blockHash: string;
@@ -18,6 +19,7 @@ export class Transaction {
             this.account = transactionData.account;
             this.address = transactionData.address;
             this.category = transactionData.category;
+            this.subCategory = transactionData.subCategory;
             this.amount = Big(transactionData.amount);
             this.confirmations = transactionData.confirmations;
             this.blockHash = transactionData.blockHash;
