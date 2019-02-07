@@ -227,7 +227,7 @@ export class SendComponent implements OnInit, OnDestroy {
     this.tableInputs = [];
     if (this.coinControlTreeMode) {
       this.wallet.accounts.forEach(acc => {
-        let header = { account: acc.name, address: acc.address, amount: Big(0), selected: false, inputs: [], showChildren: true };
+        let header = { account: acc.name, address: acc.address, amount: Big(0), selected: false, inputs: [], showChildren: false };
         acc.addresses.forEach(addr => {
           addr.allInputs().forEach(inp => {
             header.inputs.push(inp);
