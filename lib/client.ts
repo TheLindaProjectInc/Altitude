@@ -8,7 +8,6 @@ import * as helpers from './helpers';
 import * as log from 'electron-log';
 import * as settings from './settings';
 import * as compareVersions from 'compare-versions';
-import * as clientVersions from './clientVersions';
 var localClientBinaries = require('../clientBinaries.json');
 
 const sleep = require('util').promisify(setTimeout)
@@ -22,6 +21,7 @@ export default class Client {
     clientLocalLocation: string;
     clientDownloadLocation: string;
     clientVersion: string;
+    clientVersionHistory = {};
     // client config file
     clientConfigFile: ClientConfigFile;
     // rpc status
@@ -196,6 +196,7 @@ export default class Client {
         this.clientConfig = clientBinaries[this.clientName][platform][arch];
         this.clientLocalLocation = path.join(this.clientsLocation, this.clientConfig.bin);
         this.clientDownloadLocation = path.join(this.clientsLocation, 'download');
+        this.clientVersionHistory = clientBinaries[this.clientName].versions;
         // get client version
         await this.getClientVersion();
     }
@@ -443,7 +444,12 @@ export default class Client {
 
     async getClientVersion() {
         const fileHash = await helpers.getFileHash(this.clientLocalLocation) as string;
-        this.clientVersion = clientVersions.lookupTable[fileHash];
+        if (this.clientVersionHistory) {
+            Object.keys(this.clientVersionHistory).forEach(key => {
+                if (!this.clientVersion && this.clientVersionHistory[key].indexOf(fileHash) > -1)
+                    this.clientVersion = key;
+            })
+        }
         if (!this.clientVersion) {
             this.clientVersion = '3.2.0.0';
             log.info('Client', 'Unknown version. Assuming', this.clientVersion);
