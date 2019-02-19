@@ -21,6 +21,9 @@ export class ToolsComponent implements OnInit {
   myCommands = [];
   myCommandIndex = -1;
 
+  peersSub;
+  peers = [];
+
   dateNow: Date;
 
   repairCommands = ['-salvagewallet', '-rescan', '-zapwallettxes=1', '-zapwallettxes=2', '-upgradewallet', '-reindex'];
@@ -42,10 +45,15 @@ export class ToolsComponent implements OnInit {
     this.sub = this.route.params.subscribe(params => {
       this.tab = Number(params['tab']);
     });
+    this.peers = this.wallet.peers;
+    this.peersSub = this.wallet.transactionsUpdated.subscribe(() => {
+      this.peers = this.wallet.peers;
+    });
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+    this.peersSub.unsubscribe();
   }
 
   rpcKeyUp(e) {

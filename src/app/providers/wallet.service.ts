@@ -66,6 +66,7 @@ export class WalletService {
     @Output() masternodeListUpdated: EventEmitter<any> = new EventEmitter();
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
     @Output() transactionsUpdated: EventEmitter<any> = new EventEmitter();
+    @Output() peersUpdated: EventEmitter<any> = new EventEmitter();
 
     constructor(
         private rpc: RpcService,
@@ -324,6 +325,7 @@ export class WalletService {
 
     private async getPeersList() {
         this._peers = await this.rpc.requestData(RPCMethods.PEERS);
+        this.peersUpdated.emit();
     }
 
     private async getAddressBook() {

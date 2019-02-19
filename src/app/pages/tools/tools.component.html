@@ -98,7 +98,7 @@
 
   <!-- Peers -->
   <div class="tab-content" *ngIf="tab==2">
-    <virtual-scroller #scroll class="transactions" [items]="wallet.peers" [parentScroll]="scrollingBlock">
+    <virtual-scroller #scroll class="transactions" [items]="peers" [parentScroll]="scrollingBlock">
       <div class="transaction confirmed" *ngFor="let peer of scroll.viewPortItems" style="min-width:700px;height: 92px;">
         <div class="icon">
           <fa-icon class="primary" *ngIf="peer.inbound" icon="arrow-right" title="{{ 'PAGES.TOOLS.PEERS.INBOUND' | translate }}"></fa-icon>
