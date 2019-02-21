@@ -72,6 +72,7 @@ export class SendComponent implements OnInit, OnDestroy {
 
   toggleCoinControlFeatures(): void {
     this.electron.ipcRenderer.send('settings', 'SETHIDECOINCONTROLFEATURES', !this.electron.settings.hideCoinControlFeatures);
+    this.getInputs().forEach(inp => inp.selected = false);
   }
 
   onRightClick(e, input: Input): void {
