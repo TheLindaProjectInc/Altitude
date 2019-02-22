@@ -221,6 +221,7 @@ export default class Client {
             } else {
                 await helpers.renameFile(this.clientDownloadLocation, this.clientLocalLocation);
                 if (os.platform() !== 'win32') await helpers.setFileExecutable(this.clientLocalLocation);
+                await this.getClientVersion();
             }
             return true;
         } catch (ex) {
@@ -411,6 +412,7 @@ export default class Client {
     }
 
     setClientStatus(status: ClientStatus) {
+        log.info('Client', 'Status', status);
         this.status = status;
         if (this.win) this.win.webContents.send('client-node', 'STATUS', this.status);
         // check if RPC has stopped
@@ -443,20 +445,22 @@ export default class Client {
     }
 
     async getClientVersion() {
-        const fileHash = await helpers.getFileHash(this.clientLocalLocation) as string;
-        if (this.clientVersionHistory) {
-            Object.keys(this.clientVersionHistory).forEach(key => {
-                if (!this.clientVersion && this.clientVersionHistory[key].indexOf(fileHash) > -1)
-                    this.clientVersion = key;
-            })
+        if (await helpers.pathExists(this.clientLocalLocation)) {
+            const fileHash = await helpers.getFileHash(this.clientLocalLocation) as string;
+            if (this.clientVersionHistory) {
+                Object.keys(this.clientVersionHistory).forEach(key => {
+                    if (!this.clientVersion && this.clientVersionHistory[key].indexOf(fileHash) > -1)
+                        this.clientVersion = key;
+                })
+            }
+            if (!this.clientVersion) {
+                this.clientVersion = '3.2.0.0';
+                log.info('Client', 'Unknown version. Assuming', this.clientVersion);
+            } else {
+                log.info('Client', 'Client Version', this.clientVersion);
+            }
+            this.sendClientVersion();
         }
-        if (!this.clientVersion) {
-            this.clientVersion = '3.2.0.0';
-            log.info('Client', 'Unknown version. Assuming', this.clientVersion);
-        } else {
-            log.info('Client', 'Client Version', this.clientVersion);
-        }
-        this.sendClientVersion();
     }
 
     destroy() {
