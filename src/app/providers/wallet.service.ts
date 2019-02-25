@@ -273,21 +273,36 @@ export class WalletService {
     }
 
     private async syncTransactions() {
-        let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [10])
+        let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [20]);
+        this.updateTransactions(transactionData);
+    }
+
+    private updateTransactions(transactionData) {
         if (transactionData && transactionData.length) {
-            transactionData.forEach(trans => {
-                let serverTrx = new Transaction(trans);
+            // update any changed trx details (confirms, block, etc)
+            transactionData.forEach((serverTrx: Transaction) => {
+                // check if we have it already
                 let hasMatch = false;
                 for (let i = 0; i < this._transactions.length; i++) {
                     let localTrx = this._transactions[i];
-                    if (localTrx.txId === serverTrx.txId && localTrx.blockIndex === localTrx.blockIndex) {
+                    if (
+                        localTrx.txId === serverTrx.txId &&
+                        localTrx.address === serverTrx.address
+                    ) {
                         hasMatch = true;
-                        this._transactions[i] = serverTrx;
+                        this.transactions[i].update(serverTrx)
                     }
                 }
                 if (!hasMatch) this._transactions.push(serverTrx)
             })
-            this._transactions.sort((a, b) => { return b.timestamp.getTime() - a.timestamp.getTime(); })
+            // sort by timestamp then address
+            this._transactions.sort((a, b) => {
+                if (b.timestamp.getTime() < a.timestamp.getTime()) return -1
+                if (b.timestamp.getTime() > a.timestamp.getTime()) return 1
+                if (b.vout > a.vout) return -1
+                return 1;
+            });
+            // notify UI of change
             this.transactionsUpdated.emit();
         }
     }
@@ -380,21 +395,8 @@ export class WalletService {
     public getTransactions(count, skip): Promise<any> {
         return new Promise(async (resolve, reject) => {
             try {
-                let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [count, skip])
-                if (transactionData && transactionData.length) {
-                    transactionData.forEach(trans => {
-                        let serverTrx = new Transaction(trans);
-                        let hasMatch = false;
-                        for (let i = 0; i < this._transactions.length; i++) {
-                            let localTrx = this._transactions[i];
-                            if (localTrx.txId === serverTrx.txId && localTrx.blockIndex === localTrx.blockIndex) {
-                                hasMatch = true;
-                                localTrx.confirmations = serverTrx.confirmations; // update confirmations
-                            }
-                        }
-                        if (!hasMatch) this._transactions.push(serverTrx)
-                    })
-                }
+                let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [count, skip]);
+                this.updateTransactions(transactionData);
                 resolve();
             } catch (ex) {
                 reject(ex);

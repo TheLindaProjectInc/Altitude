@@ -30,12 +30,7 @@ export class DashboardComponent {
   }
 
   displayTransactions() {
-    let trx = [];
-    for (let i = 0; i <= 10; i++) {
-      if (this.wallet.transactions[i])
-        trx.push(this.wallet.transactions[i]);
-    }
-    return trx;
+    return this.wallet.transactions.slice(0, 10);
   }
 
   manageAccount(account) {

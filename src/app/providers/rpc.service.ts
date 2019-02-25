@@ -3,6 +3,7 @@ import Big from 'big.js';
 import { ElectronService, ClientStatus } from './electron.service';
 import { PromptService } from '../components/prompt/prompt.service';
 import Helpers from '../helpers';
+import { Transaction } from '../classes';
 
 @Injectable()
 export class RpcService {
@@ -215,7 +216,7 @@ export class RpcService {
             for (let j = 0; j < grp.length; j++) {
                 let newAddress = {
                     address: grp[j][0],
-                    amount: grp[j][1],
+                    amount: 0,
                     account: grp[j][2],
                     unspents: []
                 }
@@ -385,12 +386,13 @@ export class RpcService {
         // group payments to self
         outputs.forEach((output, index) => {
             for (let i = index + 1; i < outputs.length; i++) {
+                // check if payment to self
                 if (
+                    output.txId === outputs[i].txId &&
                     output.address === outputs[i].address &&
-                    output.timestamp === outputs[i].timestamp &&
-                    Big(output.amount.replace("-", "")).eq(Big(outputs[i].amount.replace("-", "")))
+                    output.amount.abs().cmp(outputs[i].amount.abs()) == 0
                 ) {
-                    output.amount = output.amount.replace("-", "");
+                    output.amount = output.amount.abs()
                     output.category = "Payment To Self";
                     output.fee = output.fee || outputs[i].fee;
                     outputs.splice(i, 1);
@@ -458,46 +460,6 @@ export class RpcService {
             // chose to stop wallet
             this.electron.remote.app.quit()
         }
-    }
-}
-
-export class Transaction {
-    account: string;
-    address: string;
-    category: string;
-    subCategory: string;
-    amount: string;
-    fee: number;
-    confirmations: number
-    blockHash: string;
-    blockIndex: number;
-    blockTime: number;
-    txId: string;
-    timestamp: number;
-
-    constructor(data: any) {
-        this.account = data.account;
-        this.address = data.address;
-        this.category = data.category;
-        this.subCategory = data.subcategory;
-        this.amount = data.amount.toString();
-        this.fee = data.fee;
-        this.confirmations = data.confirmations;
-        this.blockHash = data.blockhash;
-        this.blockIndex = data.blockindex;
-        this.blockTime = data.blocktime;
-        this.txId = data.txid;
-        this.timestamp = data.time;
-        // santise subcategory
-        if (this.subCategory === "mined") this.subCategory = "Mined"
-        if (this.subCategory === "minted") this.subCategory = "Minted"
-        if (this.subCategory === "masternode reward") this.subCategory = "Masternode Reward"
-        // santise category
-        if (this.category === "send") this.category = "Payment"
-        if (this.category === "generate") this.category = "Generated"
-        if (this.category === "receive") this.category = "Received"
-        if (this.category === "immature") this.category = "Immature"
-        if (this.category === "orphan") this.category = "Orphan"
     }
 }
 
