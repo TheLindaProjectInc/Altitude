@@ -48,6 +48,10 @@ export class Transaction {
         }
     }
 
+    get time() {
+        return this.blockTime || this.timestamp;
+    }
+
     update(trx: Transaction) {
         if (this.confirmations != trx.confirmations) this.confirmations = trx.confirmations;
         if (this.blockHash != trx.blockHash) this.blockHash = trx.blockHash;

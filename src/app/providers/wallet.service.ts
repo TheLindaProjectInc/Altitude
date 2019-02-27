@@ -303,8 +303,8 @@ export class WalletService {
             })
             // sort by timestamp then address
             this._transactions.sort((a, b) => {
-                if (b.timestamp.getTime() < a.timestamp.getTime()) return -1
-                if (b.timestamp.getTime() > a.timestamp.getTime()) return 1
+                if (b.time.getTime() < a.time.getTime()) return -1
+                if (b.time.getTime() > a.time.getTime()) return 1
                 if (b.vout > a.vout) return -1
                 return 1;
             });
