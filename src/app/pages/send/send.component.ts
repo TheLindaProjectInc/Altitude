@@ -172,18 +172,18 @@ export class SendComponent implements OnInit, OnDestroy {
     // check address book
     for (let i = 0; i < this.wallet.addressBook.length; i++) {
       let addr = this.wallet.addressBook[i];
-      if (address && addr.address === address)
+      if (address && addr.address.toLowerCase().trim() === address.toLowerCase().trim())
         return addr.account;
-      else if (label && addr.account.toLowerCase() === label.toLowerCase())
+      else if (label && addr.account.toLowerCase().trim() === label.toLowerCase().trim())
         return addr.address;
     }
     // check my accounts
     let accounts = this.wallet.getAccounts()
     for (let i = 0; i < accounts.length; i++) {
       let addr = accounts[i];
-      if (address && addr.address === address)
+      if (address && addr.address.toLowerCase().trim() === address.toLowerCase().trim())
         return addr.name;
-      else if (label && addr.name.toLowerCase() === label.toLowerCase())
+      else if (label && addr.name.toLowerCase().trim() === label.toLowerCase().trim())
         return addr.address;
     }
     return "";
@@ -191,9 +191,11 @@ export class SendComponent implements OnInit, OnDestroy {
 
   checkSavedAccount(recp: any, isAddress: boolean) {
     if (isAddress) {
+      if (!recp.address) return recp.label = ''
       let acc = this.getSavedAccount(recp.address, "")
       if (acc) recp.label = acc;
     } else {
+      if (!recp.label) return recp.address = '';
       let addr = this.getSavedAccount("", recp.label)
       if (addr) recp.address = addr;
     }
