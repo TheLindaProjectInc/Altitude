@@ -8,7 +8,8 @@ import { ContextMenuService } from '../context-menu/context-menu.service';
   template: `<textarea 
   placeholder="{{placeholder}}" 
   (contextmenu)="onRightClick($event)"
-  [(ngModel)]="inputModel" 
+  [(ngModel)]="inputModel"
+  (ngModelChange)="inputModelChange.emit(inputModel)"
   [disabled]="disabled"
   ></textarea>`,
 })
