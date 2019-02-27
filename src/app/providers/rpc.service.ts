@@ -14,6 +14,10 @@ export class RpcService {
 
     private RPCSubscriptions = {};
 
+    // set to try when we are unlocking the wallet temporarily to access keys
+    // so we can return it to it's original state
+    private isUsingEncryption = false;
+
     private readonly unlockTimeout = 31000000;
 
     constructor(
@@ -182,7 +186,11 @@ export class RpcService {
     private async signMessage(params) {
         const [address, message, passphrase] = params;
         try {
-            await this.unlockWallet(passphrase, 5);
+            // unlock wallet
+            if (passphrase) {
+                await this.unlockWallet(passphrase, 5);
+                this.isUsingEncryption = true;
+            }
             const signdata: any = await this.callServer("signmessage", [address, message]);
             this.checkUnlock(passphrase);
             return signdata;
@@ -287,8 +295,8 @@ export class RpcService {
 
     private async getWalletInfo() {
         let data: any = await this.callServer("getinfo");
-
-        if (!data.result.unlocked_until || (new Date().getTime() - data.result.unlocked_until * 1000) > 10 * 1000)
+        
+        if (!this.isUsingEncryption)
             this.encryptionStatus = data.result.encryption_status
 
         return data;
@@ -331,7 +339,10 @@ export class RpcService {
             let change = Number(sendingBalance.minus(recevingBalance).toString());
 
             // unlock wallet
-            if (passphrase) await this.unlockWallet(passphrase, 5);
+            if (passphrase) {
+                await this.unlockWallet(passphrase, 5);
+                this.isUsingEncryption = true;
+            }
             // create change address
             if (change > 0) {
                 if (!changeAddress) {
@@ -362,6 +373,7 @@ export class RpcService {
 
     private checkUnlock(passphrase) {
         try {
+            this.isUsingEncryption = false;
             if (passphrase) {
                 if (this.encryptionStatus === 'LockedForStaking')
                     this.unlockWallet(passphrase, this.unlockTimeout, true)
