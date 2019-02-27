@@ -220,7 +220,7 @@ export class RpcService {
                     account: grp[j][2],
                     unspents: []
                 }
-                if (newAddress.account && newAccount.length) accounts.push([newAddress]);
+                if (newAddress.account !== undefined && newAccount.length) accounts.push([newAddress]);
                 else newAccount.push(newAddress);
                 // removing matching address in address list
                 for (let k = 0; k < addresses.result.length; k++) {
