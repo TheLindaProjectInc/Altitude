@@ -172,7 +172,7 @@ export class RpcService {
         } catch (ex) {
             // if we called unlock when our wallet is already unlock or
             // unencrypted just ignore it
-            if (ex.error.error.code === -15 || ex.error.error.code === -17)
+            if (ex.body.error.code === -15 || ex.body.error.code === -17)
                 return {}
             else
                 throw ex
@@ -318,7 +318,7 @@ export class RpcService {
                 }
                 if (!foundMatch) return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONMISMATCH" } };
             }
-            // get total receving
+            // get total receiving
             let recevingBalance = Big(fee);
             Object.keys(outputs).forEach(key => {
                 recevingBalance = recevingBalance.add(Big(outputs[key]));
@@ -362,10 +362,12 @@ export class RpcService {
 
     private checkUnlock(passphrase) {
         try {
-            if (this.encryptionStatus === 'LockedForStaking')
-                this.unlockWallet(passphrase, this.unlockTimeout, true)
-            else if (this.encryptionStatus === 'Unlocked')
-                this.unlockWallet(passphrase, this.unlockTimeout)
+            if (passphrase) {
+                if (this.encryptionStatus === 'LockedForStaking')
+                    this.unlockWallet(passphrase, this.unlockTimeout, true)
+                else if (this.encryptionStatus === 'Unlocked')
+                    this.unlockWallet(passphrase, this.unlockTimeout)
+            }
         } catch (ex) {
 
         }
