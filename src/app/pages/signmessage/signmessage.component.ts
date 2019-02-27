@@ -63,7 +63,6 @@ export class SignMessageComponent {
   }
 
   async signMessage() {
-    console.log(this.sign)
     if (!this.sign.address || !this.sign.message)
       return this.notification.notify('error', 'NOTIFICATIONS.EMPTYFIELDS');
 
