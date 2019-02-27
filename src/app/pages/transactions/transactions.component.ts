@@ -6,6 +6,7 @@ import { ErrorService } from '../../providers/error.service';
 import { ContextMenuService } from '../../components/context-menu/context-menu.service';
 import { ElectronService } from '../../providers/electron.service';
 import { Transaction } from '../../classes';
+import { NotificationService } from '../../providers/notification.service';
 
 @Component({
   selector: 'app-transactions',
@@ -24,7 +25,8 @@ export class TransactionsComponent {
     public wallet: WalletService,
     private errorService: ErrorService,
     private contextMenu: ContextMenuService,
-    private electron: ElectronService
+    private electron: ElectronService,
+    private notification: NotificationService
   ) {
   }
 
@@ -81,6 +83,15 @@ export class TransactionsComponent {
       }
     ]
     this.contextMenu.show(e, items)
+  }
+
+  copyTransactions() {
+    let txt = 'Account,Address,Amount,Fee,Category,Sub Category,Confirmations,Time,Transaction Hash,Block Hash\n';
+    this.transactions.forEach((trx: Transaction) => {
+      txt += `${trx.account},${trx.address},${trx.amount},${trx.fee ? trx.fee : 0},${trx.category},${trx.subCategory},${trx.confirmations},${trx.blockTime},${trx.txId},${trx.blockHash}\n`;
+    })
+    this.electron.clipboard.writeText(txt)
+    this.notification.notify('success', 'NOTIFICATIONS.TRANSACTIONSCOPIEDCLIPBOARD');
   }
 
 
