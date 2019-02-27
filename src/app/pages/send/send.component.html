@@ -6,8 +6,10 @@
 
     <div>
       <button class="btn btn-default" (click)="showSelectInputsModal()">{{ 'PAGES.SEND.INPUTS' | translate }}</button>
-      <span *ngIf="!getSelectedQuantity()" style="margin-left: 1em;">{{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}</span>
-      <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">{{helpers.prettyCoins(getSelectedAmount())}} Linda</span>
+      <span *ngIf="!getSelectedQuantity()"
+        style="margin-left: 1em;">{{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}</span>
+      <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">{{helpers.prettyCoins(getSelectedAmount())}}
+        Linda</span>
     </div>
 
     <div class="form-inline" style="margin-top: 1em;">
@@ -26,19 +28,22 @@
       </button>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.PAYTO' | translate }}</span>
-        <text-input [(inputModel)]="rec.address" (change)="checkSavedAccount(rec,true)" placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
+        <text-input [(inputModel)]="rec.address" (change)="checkSavedAccount(rec,true)"
+          placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
         <button class="btn btn-default btn-icon" (click)="getFromAddressBook(rec)">
           <fa-icon icon="address-book"></fa-icon>
         </button>
       </div>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.LABEL' | translate }}</span>
-        <text-input [(inputModel)]="rec.label" (change)="checkSavedAccount(rec,false)" placeholder="{{ 'PAGES.SEND.LABELPLACEHOLDER' | translate }}"></text-input>
+        <text-input [(inputModel)]="rec.label" (change)="checkSavedAccount(rec,false)"
+          placeholder="{{ 'PAGES.SEND.LABELPLACEHOLDER' | translate }}"></text-input>
       </div>
       <div class="form-inline">
         <span>{{ 'PAGES.SEND.AMOUNT' | translate }}</span>
         <text-input type="number" (input)="calculateOutput()" [(inputModel)]="rec.amount"></text-input>
-        <button class="btn btn-default" (click)="useAvailable(rec)">{{ 'PAGES.SEND.SENDAVAILABLE' | translate }}</button>
+        <button class="btn btn-default"
+          (click)="useAvailable(rec)">{{ 'PAGES.SEND.SENDAVAILABLE' | translate }}</button>
       </div>
     </div>
   </div>
@@ -85,11 +90,31 @@
         <thead #header>
           <tr>
             <th></th>
-            <th>{{ 'PAGES.SEND.TABLECOLUMNS_AMOUNT' | translate }}</th>
-            <th>{{ 'PAGES.SEND.TABLECOLUMNS_LABEL' | translate }}</th>
-            <th>{{ 'PAGES.SEND.TABLECOLUMNS_ADDRESS' | translate }}</th>
-            <th>{{ 'PAGES.SEND.TABLECOLUMNS_DATE' | translate }}</th>
-            <th>{{ 'PAGES.SEND.TABLECOLUMNS_CONFIRMS' | translate }}</th>
+            <th (click)="sortCoinControl('amount')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_AMOUNT' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='amount' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='amount' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('account')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_LABEL' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='account' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='account' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('address')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_ADDRESS' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='address' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='address' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('blockTime')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_DATE' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='blockTime' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='blockTime' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('confirmations')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_CONFIRMS' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='confirmations' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='confirmations' && !sortDesc"></fa-icon>
+            </th>
           </tr>
         </thead>
         <!-- tree mode -->
@@ -101,7 +126,8 @@
                   <fa-icon *ngIf="header.showChildren" icon='chevron-down'></fa-icon>
                   <fa-icon *ngIf="!header.showChildren" icon='chevron-right'></fa-icon>
                 </button>
-                <input id="chkHeader{{i}}" [(ngModel)]="header.selected" (change)="toggleHeader(header)" type='checkbox' />
+                <input id="chkHeader{{i}}" [(ngModel)]="header.selected" (change)="toggleHeader(header)"
+                  type='checkbox' />
                 <label for="chkHeader{{i}}">({{header.inputs?header.inputs.length:0}})</label>
               </td>
               <td>{{header.amount}}</td>
@@ -116,7 +142,8 @@
                   <input *ngIf="!inp.locked" id="chkInput{{i}}-{{j}}" [(ngModel)]="inp.selected" type='checkbox'
                     (change)="checkHeaderSelected(header)" />
                   <label for="chkInput{{i}}-{{j}}"></label>
-                  <fa-icon style="margin-right: 13px;" *ngIf="inp.locked" icon='lock' title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
+                  <fa-icon style="margin-right: 13px;" *ngIf="inp.locked" icon='lock'
+                    title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
                 </td>
                 <td>{{inp.amount}}</td>
                 <td>{{inp.account}}</td>
@@ -129,7 +156,8 @@
         </tbody>
         <!-- list mode -->
         <tbody #container *ngIf="!coinControlTreeMode">
-          <tr *ngFor="let inp of scroll.viewPortItems; let i = index" style="width: 100%;height: 30px;" (contextmenu)="onRightClick($event,inp)">
+          <tr *ngFor="let inp of scroll.viewPortItems; let i = index" style="width: 100%;height: 30px;"
+            (contextmenu)="onRightClick($event,inp)">
             <td>
               <input *ngIf="!inp.locked" id="chkInput{{i}}" [(ngModel)]="inp.selected" type='checkbox' />
               <label for="chkInput{{i}}"></label>
@@ -150,7 +178,8 @@
 
   <div class="modal-buttons">
     <div stlye="flex-direction:row">
-      <button class="btn btn-default" (click)="selectUnselectAll()">{{ 'PAGES.SEND.ALL_SELECTUNSELECT' | translate }}</button>
+      <button class="btn btn-default"
+        (click)="selectUnselectAll()">{{ 'PAGES.SEND.ALL_SELECTUNSELECT' | translate }}</button>
       <span style="padding-left:5px">
         <input id="chkTreeMode" type='checkbox' [checked]="coinControlTreeMode" (change)="changeCoinControlMode()" />
         <label for="chkTreeMode">{{ 'PAGES.SEND.TREEMODE' | translate}}</label>

@@ -582,8 +582,8 @@ export class WalletService {
         return accList.sort((a: Account, b: Account) => {
             const s1 = a.name !== 'Unnamed' ? a.name.toLowerCase() : 'z';
             const s2 = b.name !== 'Unnamed' ? b.name.toLowerCase() : 'z';
-            const s3 = a.balance.toFixed();
-            const s4 = b.balance.toFixed();
+            const s3 = Number(a.balance);
+            const s4 = Number(b.balance);
             if (s1 > s2) return 1;
             if (s1 < s2) return -1;
             if (s3 > s4) return 1;

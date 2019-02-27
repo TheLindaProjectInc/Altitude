@@ -21,13 +21,16 @@ export class SendComponent implements OnInit, OnDestroy {
   changeAddressLabel = '';
   enabledChangeAddress = false;
   tableStyle = {};
-  resizeTimeout;
+  resizeTimeout: any;
   tableInputs = [];
   helpers = Helpers;
   UI_selectedBalance = new Big(0);
   UI_fee = 0;
   UI_total = new Big(0);
   coinControlTreeMode = true;
+  // sort coin control table
+  sortField = '';
+  sortDesc = false;
 
   constructor(
     private ngxModal: NgxSmartModalService,
@@ -251,6 +254,7 @@ export class SendComponent implements OnInit, OnDestroy {
         })
       })
     }
+    this.checkCoinControlSort();
   }
 
   toggleHeader(header) {
@@ -516,5 +520,38 @@ export class SendComponent implements OnInit, OnDestroy {
     inputs.forEach(inp => balance = balance.add(inp.balance));
     return balance;
   }
+
+  sortCoinControl(field) {
+    this.sortField = field;
+    this.sortDesc = !this.sortDesc;
+    this.checkCoinControlSort();
+  }
+
+  checkCoinControlSort() {
+    if (this.sortField && this.tableInputs.length) {
+      let sortFunc = (a, b) => {
+        let aField = a[this.sortField];
+        let bField = b[this.sortField];
+        if (this.sortField === 'amount') {
+          aField = Number(aField)
+          bField = Number(bField);
+        }
+        if (aField > bField) {
+          return !this.sortDesc ? 1 : -1;
+        } else if (aField < bField) {
+          return this.sortDesc ? 1 : -1;
+        } else {
+          return 0;
+        }
+      };
+
+      this.tableInputs = [].concat(this.tableInputs).sort(sortFunc);
+      // sort children if in tree mode
+      this.tableInputs.forEach(tableInput => {
+        if (tableInput.inputs) tableInput.inputs.sort(sortFunc);
+      });
+    }
+  }
+
 
 }

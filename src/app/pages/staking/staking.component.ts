@@ -65,8 +65,8 @@ export class StakingComponent {
     this.stakingInputs = inputList.sort((a: Input, b: Input) => {
       var m1 = this.isMature(a);
       var m2 = this.isMature(b);
-      var a1 = a.amount.toFixed();
-      var a2 = b.amount.toFixed();
+      var a1 = Number(a.amount);
+      var a2 = Number(b.amount);
       if (m1 < m2) return 1;
       if (m1 > m2) return -1;
       if (a1 < a2) return -1;
