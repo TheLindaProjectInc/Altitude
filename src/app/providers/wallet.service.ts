@@ -27,6 +27,12 @@ export class WalletService {
     readonly matureTime = 24;
     readonly confirmations = 10;
 
+    // account filters
+    accountFilters = {
+        hideEmptyAccounts: true,
+        sort: 'name'
+    }
+
     // syncing flag
     running: boolean;
 
@@ -563,6 +569,7 @@ export class WalletService {
     }
 
     public getAccounts(hideEmpty: boolean = false) {
+        if (!hideEmpty) hideEmpty = this.accountFilters.hideEmptyAccounts;
         let accList = new Array<Account>();
         let accounts = this._accounts;
         accounts.forEach(acc => {
@@ -571,16 +578,16 @@ export class WalletService {
         })
         if (hideEmpty && !accList.length && accounts.length) accList.push(accounts[0]);
 
-        // sort balance descending then name
-        return accList.sort((a: Account, b) => {
-            var o1 = a.balance;
-            var o2 = b.balance;
-            var p1 = a.name.toLowerCase();
-            var p2 = b.name.toLowerCase();
-            if (o1 < o2) return 1;
-            if (o1 > o2) return -1;
-            if (p1 < p2) return -1;
-            if (p1 > p2) return 1;
+        // sort by name then balance
+        return accList.sort((a: Account, b: Account) => {
+            const s1 = a.name !== 'Unnamed' ? a.name.toLowerCase() : 'z';
+            const s2 = b.name !== 'Unnamed' ? b.name.toLowerCase() : 'z';
+            const s3 = a.balance.toFixed();
+            const s4 = b.balance.toFixed();
+            if (s1 > s2) return 1;
+            if (s1 < s2) return -1;
+            if (s3 > s4) return 1;
+            if (s3 < s4) return -1;
             return 0;
         })
 

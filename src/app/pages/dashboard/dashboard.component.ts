@@ -16,7 +16,6 @@ import { Transaction } from '../../classes';
 export class DashboardComponent {
   public helpers = helpers;
   newAccountLabel = '';
-  hideEmptyAccounts = true;
 
   constructor(
     public wallet: WalletService,

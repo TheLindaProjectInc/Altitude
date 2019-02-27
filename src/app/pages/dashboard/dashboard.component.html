@@ -12,12 +12,12 @@
   </button>
 
   <div class="right" style="padding-top: 10px;">
-    <input id="chkShowEmpty" [(ngModel)]="hideEmptyAccounts" type='checkbox' />
+    <input id="chkShowEmpty" [(ngModel)]="wallet.accountFilters.hideEmptyAccounts" type='checkbox' />
     <label for="chkShowEmpty">{{ 'PAGES.DASHBOARD.HIDEEMPTYACCOUNTS' | translate }}</label>
   </div>
 
   <div class="accounts">
-    <div class="account" *ngFor="let account of wallet.getAccounts(hideEmptyAccounts)" (click)="manageAccount(account)">
+    <div class="account" *ngFor="let account of wallet.getAccounts()" (click)="manageAccount(account)">
       <div class="account-inner">
         <div>
           <div class="account-name">
