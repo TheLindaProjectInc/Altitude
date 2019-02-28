@@ -295,7 +295,7 @@ export class RpcService {
 
     private async getWalletInfo() {
         let data: any = await this.callServer("getinfo");
-        
+
         if (!this.isUsingEncryption)
             this.encryptionStatus = data.result.encryption_status
 
@@ -328,33 +328,42 @@ export class RpcService {
             }
             // get total receiving
             let recevingBalance = Big(fee);
-            Object.keys(outputs).forEach(key => {
-                recevingBalance = recevingBalance.add(Big(outputs[key]));
-            })
+            let outputAddresses = Object.keys(outputs);
+            for (let i = 0; i < outputAddresses.length; i++) {
+                let address = outputAddresses[i];
+                recevingBalance = recevingBalance.add(outputs[address]);
+                if (this.isUnsafeAmount(outputs[address]))
+                    return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONOUTPUTTOOLARGE" } };
+            }
             // safety check
             if (sendingBalance.lt(recevingBalance)) {
                 return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONMISMATCH" } };
             }
             // calculate change
-            let change = Number(sendingBalance.minus(recevingBalance).toString());
-
+            let change = sendingBalance.minus(recevingBalance);
             // unlock wallet
             if (passphrase) {
                 await this.unlockWallet(passphrase, 5);
                 this.isUsingEncryption = true;
             }
             // create change address
-            if (change > 0) {
+            if (change.gt(0)) {
                 if (!changeAddress) {
                     let changeRequest: any = await this.callServer("getnewaddress", ['(change)']);
                     changeAddress = changeRequest.result;
                 }
-                if (outputs[changeAddress]) {
-                    let outputAmount = Big(outputs[changeAddress]).add(change);
-                    outputs[changeAddress] = Number(outputAmount.toString());
-                }
-                else outputs[changeAddress] = change;
+                if (outputs[changeAddress])
+                    outputs[changeAddress] = outputs[changeAddress].add(change);
+                else
+                    outputs[changeAddress] = change;
+
+                if (this.isUnsafeAmount(outputs[changeAddress]))
+                    return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONCHANGETOOLARGE" } };
             }
+            // convert outputs to number
+            Object.keys(outputs).forEach(key => {
+                outputs[key] = Number(outputs[key]);
+            })
             // create raw transaction
             let raw: any = await this.callServer("createrawtransaction", [inputs, outputs]);
             raw = raw.result;
@@ -369,6 +378,17 @@ export class RpcService {
             this.checkUnlock(passphrase);
             throw ex;
         }
+    }
+
+    private isUnsafeAmount(amount: Big) {
+        // js must convert to a number to send it to the daemon
+        // this limits the maximum we can send as 90,071,992.54740992
+        // otherwise there are overflow errors
+        // we'll update lindacore in the future to handle strings
+        // so we can circumvent this issue
+        if (amount.times(100000000).gt(9007199254740992))
+            return true;
+        return false;
     }
 
     private checkUnlock(passphrase) {

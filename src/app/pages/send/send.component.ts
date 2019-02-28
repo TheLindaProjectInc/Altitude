@@ -393,7 +393,7 @@ export class SendComponent implements OnInit, OnDestroy {
 
     // get outputs
     for (let i = 0; i < this.recipients.length; i++) {
-      outputs[this.recipients[i].address] = Number(this.recipients[i].amount);
+      outputs[this.recipients[i].address] = Big(this.recipients[i].amount);
     }
     // get fee
     let fee = this.calculateFee();
@@ -414,7 +414,7 @@ export class SendComponent implements OnInit, OnDestroy {
           // reset page
           this.reset();
         } else {
-          this.notification.notify('error', res.message);
+          this.notification.notify('error', res.error);
           // load accounts
           this.wallet.requestDataSync(DATASYNCTYPES.ACCOUNTS);
         }
