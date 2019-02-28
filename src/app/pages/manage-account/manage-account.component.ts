@@ -5,6 +5,7 @@ import helpers from '../../helpers';
 import { ElectronService } from '../../providers/electron.service';
 import { ErrorService } from '../../providers/error.service';
 import { NotificationService } from '../../providers/notification.service';
+import { Transaction, Account } from '../../classes';
 
 declare let QRCode: any;
 
@@ -14,9 +15,15 @@ declare let QRCode: any;
 })
 
 export class ManageAccountComponent {
-  account;
+  account: Account;
   sub;
+  tab = 0;
+  // transactions tab
   public helpers = helpers;
+  skipTransactions = 10;
+  transactions = [];
+  loadingTransactions = false;
+  transactionSub;
 
   constructor(
     private router: Router,
@@ -40,10 +47,16 @@ export class ManageAccountComponent {
       }
       if (!this.account) this.router.navigate(['/dashboard']);
     });
+
+    this.transactionSub = this.wallet.transactionsUpdated.subscribe(() => {
+      if (this.tab === 1) this.getTransactionsToShow();
+    });
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+    this.sub.unsubscribe();
+    this.wallet.cleanupTransactions();
   }
 
   ngAfterViewInit() {
@@ -77,8 +90,34 @@ export class ManageAccountComponent {
         colorLight: "#ffffff",
       });
     } else {
-      setTimeout(() => this.showQrCode(), 500);
+      setTimeout(() => this.showQrCode(), 100);
     }
+  }
+
+  changeTab(tab: number) {
+    if (this.tab !== 0 && tab === 0) this.showQrCode();
+    if (this.tab !== 1 && tab === 1) this.getTransactionsToShow();
+    this.tab = tab;
+  }
+
+  getTransactionsToShow() {
+    let transactions = [];
+    this.wallet.transactions.forEach((trx: Transaction) => {
+      if (this.account.hasAddress(trx.address)) transactions.push(trx);
+    })
+    this.transactions = transactions;
+  }
+
+  async fetchMoreTransactions(event) {
+    if (this.loadingTransactions || event.end !== this.transactions.length - 1) return;
+    this.loadingTransactions = true;
+    try {
+      await this.wallet.getTransactions(10, this.skipTransactions);
+      this.skipTransactions += 10;
+    } catch (ex) {
+      this.errorService.diagnose(ex);
+    }
+    this.loadingTransactions = false;
   }
 
 

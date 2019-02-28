@@ -11,6 +11,7 @@ import { SyncStatusComponent } from './components/sync-status/sync-status.compon
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { TextinputComponent } from './components/textinput/textinput.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
+import { TransactionRowComponent } from './components/transaction-row/transaction-row.component';
 
 export const componentDeclarations = [
     PromptComponent,
@@ -21,7 +22,8 @@ export const componentDeclarations = [
     SyncStatusComponent,
     SideBarComponent,
     TextinputComponent,
-    TextareaComponent
+    TextareaComponent,
+    TransactionRowComponent
 ]
 
 export const componentProviders = [

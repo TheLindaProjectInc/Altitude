@@ -74,4 +74,11 @@ export class Account {
         }
     }
 
+    hasAddress(address: string) {
+        for (let i = 0; i < this.addresses.length; i++) {
+            if (this.addresses[i].address === address) return true;
+        }
+        return false;
+    }
+
 }

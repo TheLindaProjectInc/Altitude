@@ -41,37 +41,7 @@
   <h1>{{ 'PAGES.DASHBOARD.TRANSACTIONS' | translate }}</h1>
 
   <div class="transactions">
-    <div class="transaction" *ngFor="let trx of displayTransactions()" title="{{trx.confirmations}} confirmations"
-      (contextmenu)="onRightClick($event,trx)">
-      <div class="progress" [ngStyle]="wallet.getTrxProgress(trx)"
-        [ngClass]="{'unconfirmed':trx.confirmations<wallet.confirmations,'confirmed':trx.confirmations>=wallet.confirmations}">
-      </div>
-      <div class="icon">
-        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Payment'"
-          icon="sign-out-alt"></fa-icon>
-        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Received'"
-          icon="sign-in-alt"></fa-icon>
-        <fa-icon class="primary" *ngIf="trx.category=='Payment To Self'" icon="exchange-alt"></fa-icon>
-        <fa-icon class="success" *ngIf="trx.category=='Generated'" icon="piggy-bank"></fa-icon>
-        <fa-icon class="danger" *ngIf="trx.category=='Orphan'" icon="exclamation-circle"></fa-icon>
-        <fa-icon *ngIf="trx.category=='Immature'" icon="spinner"></fa-icon>
-      </div>
-      <div class="detail">
-        <h5>{{trx.subCategory || trx.category}}</h5>
-        <h6>{{trx.time | date:'MMM d, h:mm a'}}</h6>
-        <h5>{{trx.account || trx.address}}</h5>
-      </div>
-      <div class="value">
-        <div class="amount"
-          [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
-          {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{helpers.prettyCoins(trx.amount)}} Linda
-        </div>
-        <div *ngIf="trx.fee" class="small danger">
-          {{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(trx.fee)}}
-          Linda
-        </div>
-      </div>
-    </div>
+    <transaction-row *ngFor="let trx of displayTransactions()" [trx]="trx"></transaction-row>
   </div>
 
 </div>
