@@ -55,7 +55,6 @@ export class OptionsComponent implements OnInit {
   setProxy() {
     let proxy = '';
     if (this.proxy.allow && this.proxy.ip && this.proxy.port) proxy = this.proxy.ip + ":" + this.proxy.port;
-    console.log(this.proxy, proxy)
     this.electron.ipcRenderer.send('settings', 'SETPROXY', proxy);
   }
 
