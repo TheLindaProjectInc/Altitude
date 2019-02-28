@@ -58,6 +58,7 @@ export class Transaction {
         if (this.blockIndex != trx.blockIndex) this.blockIndex = trx.blockIndex
         if (this.blockTime != trx.blockTime) this.blockTime = trx.blockTime;
         if (this.timestamp != trx.timestamp) this.timestamp = trx.timestamp;
+        if (this.category != trx.category) this.category = trx.category;
     }
 
 }
