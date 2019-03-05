@@ -175,7 +175,7 @@ export default class Client {
     async getClientBinaries(restart) {
         const arch = os.arch();
         const platform = os.platform();
-        log.verbose("Client", "Running on platform", platform, arch);
+        log.info("Client", "Running on platform", platform, arch);
         // load local client binaries
         let clientBinaries = localClientBinaries;
         // try to get remote file for updates. Skip this if we are restarted the client

@@ -226,7 +226,7 @@ export class SendComponent implements OnInit, OnDestroy {
   showSelectInputsModal(): void {
     this.setTableDimensions();
     this.getTableInputs();
-    this.ngxModal.getModal('selectInputsModal').open()
+    this.ngxModal.getModal('selectInputsModal').open();
   }
 
   getTableInputs() {
