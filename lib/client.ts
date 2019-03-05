@@ -274,6 +274,8 @@ export default class Client {
             await sleep(1000);
             return this.waitForClientReady();
         } else {
+            this.clientVersion = res.body.result.version.replace("-g", "").replace("v", "");
+            this.sendClientVersion();
             this.rpcRunning = true;
             this.sendRPCStatus();
             log.info("Client", "RPC Ready");
