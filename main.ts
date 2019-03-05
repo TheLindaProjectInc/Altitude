@@ -151,8 +151,6 @@ function updateTray(force: boolean = false): void {
 function closeApp(event) {
   if (client.proc) {
     event.preventDefault();
-    // save window size
-    settings.set_fullScreen(mainWindow.isMinimized());
     client.stop().then(() => {
       app.quit();
     });
