@@ -4,6 +4,7 @@ import { ElectronService, ClientStatus } from './electron.service';
 import { PromptService } from '../components/prompt/prompt.service';
 import Helpers from '../helpers';
 import { Transaction } from '../classes';
+import * as compareVersions from 'compare-versions';
 
 @Injectable()
 export class RpcService {
@@ -326,15 +327,17 @@ export class RpcService {
                 }
                 if (!foundMatch) return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONMISMATCH" } };
             }
+            let isUnsafeTransaction = false;
             // get total receiving
             let recevingBalance = Big(fee);
-            let outputAddresses = Object.keys(outputs);
-            for (let i = 0; i < outputAddresses.length; i++) {
-                let address = outputAddresses[i];
+            Object.keys(outputs).forEach(address => {
                 recevingBalance = recevingBalance.add(outputs[address]);
-                if (this.isUnsafeAmount(outputs[address]))
-                    return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONOUTPUTTOOLARGE" } };
-            }
+                if (this.isUnsafeAmount(outputs[address])) isUnsafeTransaction = true;
+            })
+            // Core V3.3.0 and older cannot create transactions that would produce a number overflow
+            if (isUnsafeTransaction && !this.canSendUnsafeTransaction)
+                return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONOUTPUTTOOLARGE" } };
+
             // safety check
             if (sendingBalance.lt(recevingBalance)) {
                 return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONMISMATCH" } };
@@ -357,16 +360,31 @@ export class RpcService {
                 else
                     outputs[changeAddress] = change;
 
-                if (this.isUnsafeAmount(outputs[changeAddress]))
-                    return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONCHANGETOOLARGE" } };
+                if (this.isUnsafeAmount(outputs[changeAddress])) {
+                    isUnsafeTransaction = true;
+                    if (!this.canSendUnsafeTransaction)
+                        return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONCHANGETOOLARGE" } };
+                }
             }
-            // convert outputs to number
-            Object.keys(outputs).forEach(key => {
-                outputs[key] = Number(outputs[key]);
-            })
+
             // create raw transaction
-            let raw: any = await this.callServer("createrawtransaction", [inputs, outputs]);
-            raw = raw.result;
+            let raw: any;
+            if (!isUnsafeTransaction) {
+                // convert outputs to number
+                Object.keys(outputs).forEach(key => {
+                    outputs[key] = Number(outputs[key]);
+                })
+                raw = await this.callServer("createrawtransaction", [inputs, outputs]);
+                raw = raw.result;
+            } else {
+                // starting Core 3.3.1 we can send transactions as string and in satoshi
+                // to avoid overflow issues from javascipt
+                Object.keys(outputs).forEach(key => {
+                    outputs[key] = Helpers.toSatoshi(outputs[key]).toString();
+                })
+                raw = await this.callServer("createpreciserawtransaction", [inputs, outputs]);
+                raw = raw.result;
+            }
             // sign raw transaction
             let signed: any = await this.callServer("signrawtransaction", [raw]);
             this.checkUnlock(passphrase);
@@ -378,6 +396,10 @@ export class RpcService {
             this.checkUnlock(passphrase);
             throw ex;
         }
+    }
+
+    private get canSendUnsafeTransaction() {
+        return compareVersions(this.electron.clientVersion, '3.3.1.0') >= 0
     }
 
     private isUnsafeAmount(amount: Big) {
