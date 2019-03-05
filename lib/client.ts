@@ -515,6 +515,7 @@ class ClientConfigFile {
     }
 
     get hasValidMasternodeSetup(): boolean {
+        if (!this.masternode) return true;
         if (this.masternode === '1' && (this.masternodeprivkey || this.masternodeaddr)) return true;
         return false;
     }
