@@ -262,7 +262,7 @@ export class RpcService {
                     let addr = acc[k];
                     if (addr.address === unspent.address) {
                         addr.unspents.push({
-                            amount: unspent.amount,
+                            amount: Helpers.fromSatoshi(Big(unspent.rawamount)) || unspent.amount,
                             blockTime: unspent.time,
                             confirmations: unspent.confirmations,
                             scriptPubKey: unspent.scriptPubKey,
@@ -321,7 +321,8 @@ export class RpcService {
                             return { result: { success: false, error: "NOTIFICATIONS.MINIMUMCONFIRMATIONS" } };
                         }
                         foundMatch = true;
-                        sendingBalance = sendingBalance.add(Big(unspent.amount));
+                        let unspentAmount = Helpers.fromSatoshi(Big(unspent.rawamount)) || Big(unspent.amount);
+                        sendingBalance = sendingBalance.add(unspentAmount);
                         break;
                     }
                 }
