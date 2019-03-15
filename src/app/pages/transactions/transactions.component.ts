@@ -54,9 +54,9 @@ export class TransactionsComponent {
   }
 
   copyTransactions() {
-    let txt = 'Account,Address,Amount,Fee,Category,Sub Category,Confirmations,Time,Transaction Hash,Block Hash\n';
+    let txt = 'Account\tAddress\tAmount\tFee\tCategory\tSub Category\tConfirmations\tTime\tTransaction Hash\tBlock Hash\n';
     this.transactions.forEach((trx: Transaction) => {
-      txt += `${trx.account},${trx.address},${trx.amount},${trx.fee ? trx.fee : 0},${trx.category},${trx.subCategory},${trx.confirmations},${trx.blockTime},${trx.txId},${trx.blockHash}\n`;
+      txt += `${trx.account}\t${trx.address}\t${trx.amount}\t${trx.fee ? trx.fee : 0}\t${trx.category}\t${trx.subCategory}\t${trx.confirmations}\t${trx.blockTime}\t${trx.txId}\t${trx.blockHash}\n`;
     })
     this.electron.clipboard.writeText(txt)
     this.notification.notify('success', 'NOTIFICATIONS.TRANSACTIONSCOPIEDCLIPBOARD');
