@@ -74,7 +74,7 @@
   <div class="inputs-header-wrapper">
     <div class="inputs-header">
       <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{helpers.prettyCoins(getSelectedAmount())}} Linda</p>
-      <p>{{ 'MISC.FEE' | translate }}: {{helpers.getFee(getSelectedQuantity(), recipients.length, wallet.fee)}}</p>
+      <p>{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(getSelectedFee())}}</p>
       <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{helpers.prettyCoins(getSelectedAftFee())}} Linda</p>
     </div>
     <div class="inputs-header">

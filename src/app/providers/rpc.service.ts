@@ -385,13 +385,19 @@ export class RpcService {
                 raw = await this.callServer("createpreciserawtransaction", [inputs, outputs]);
                 raw = raw.result;
             }
-            // sign raw transaction
-            let signed: any = await this.callServer("signrawtransaction", [raw]);
-            this.checkUnlock(passphrase);
-            signed = signed.result.hex;
-            // send raw transaction
-            await this.callServer("sendrawtransaction", [signed]);
-            return { result: { success: true } };
+            // confirm the fee
+            let actualFee = Math.ceil(raw.length / 1000) * Helpers.params.fee;
+            if (actualFee > Number(fee)) {
+                return { result: { success: false, newFee: actualFee } };
+            } else {
+                // sign raw transaction
+                let signed: any = await this.callServer("signrawtransaction", [raw]);
+                this.checkUnlock(passphrase);
+                signed = signed.result.hex;
+                // send raw transaction
+                await this.callServer("sendrawtransaction", [signed]);
+                return { result: { success: true } };
+            }
         } catch (ex) {
             this.checkUnlock(passphrase);
             throw ex;
@@ -402,13 +408,13 @@ export class RpcService {
         return compareVersions(this.electron.clientVersion, '3.3.1.0') >= 0
     }
 
-    private isUnsafeAmount(amount: Big) {
+    private isUnsafeAmount(amount: number | Big) {
         // js must convert to a number to send it to the daemon
         // this limits the maximum we can send as 90,071,992.54740992
         // otherwise there are overflow errors
         // we'll update lindacore in the future to handle strings
         // so we can circumvent this issue
-        if (amount.times(100000000).gt(9007199254740992))
+        if (Big(amount).times(100000000).gt(9007199254740992))
             return true;
         return false;
     }

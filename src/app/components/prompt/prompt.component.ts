@@ -153,12 +153,14 @@ export class PromptComponent {
     reject: null,
     title: '',
     content: '',
+    extraContent: '',
     doneButtonContent: '',
     cancelButtonContent: '',
     hide: () => this.ngxModal.getModal('alertModal').close(),
-    show: (title, content, doneButtonContent, cancelButtonContent) => {
+    show: (title, content, doneButtonContent, cancelButtonContent, extraContent = '') => {
       this.alertModal.title = title;
       this.alertModal.content = content;
+      this.alertModal.extraContent = extraContent;
       this.alertModal.doneButtonContent = doneButtonContent;
       this.alertModal.cancelButtonContent = cancelButtonContent;
       this.ngxModal.getModal('alertModal').open();

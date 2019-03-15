@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, isDevMode } from '@angular/core';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import Big from 'big.js';
 import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
@@ -281,8 +281,12 @@ export class SendComponent implements OnInit, OnDestroy {
     return amount;
   }
 
+  getSelectedFee(): Big {
+    return Helpers.getFee(this.getSelectedQuantity(), this.recipients.length);
+  }
+
   getSelectedAftFee(): Big {
-    return this.getSelectedAmount().sub(Helpers.getFee(this.getSelectedQuantity(), this.recipients.length, this.wallet.fee))
+    return this.getSelectedAmount().sub(this.getSelectedFee())
   }
 
   getSelectedQuantity(): number {
@@ -367,7 +371,7 @@ export class SendComponent implements OnInit, OnDestroy {
   }
 
   getBaseFee(): Big {
-    return Helpers.getFee(1, this.recipients.length, this.wallet.fee)
+    return Helpers.getFee(1, this.recipients.length)
   }
 
   calculateFee(): Big {
@@ -377,7 +381,7 @@ export class SendComponent implements OnInit, OnDestroy {
     });
     if (total.gt(0)) {
       const inputs = this.selectInputs();
-      if (inputs.length) return Helpers.getFee(inputs.length, this.recipients.length, this.wallet.fee);
+      if (inputs.length) return Helpers.getFee(inputs.length, this.recipients.length);
     }
     return this.getBaseFee()
   }
@@ -399,33 +403,46 @@ export class SendComponent implements OnInit, OnDestroy {
     let fee = this.calculateFee();
     // get change address is any
     let change = this.enabledChangeAddress ? this.changeAddress : null;
-
     try {
       let passphrase, stakingOnly;
       if (this.wallet.requireUnlock()) [passphrase, stakingOnly] = await this.prompt.getPassphrase();
-
       this.notification.loading('NOTIFICATIONS.SENDINGTRANSACTION');
-      try {
-        const res = await this.wallet.sendTransaction(inputs, outputs, fee, passphrase, change);
-        if (res.success) {
-          this.notification.notify('success', 'NOTIFICATIONS.TRANSACTIONSENT');
-          // add and labeled addressed to address book
-          this.addRecipientsToAddressBook();
-          // reset page
-          this.reset();
-        } else {
-          this.notification.notify('error', res.error);
-          // load accounts
-          this.wallet.requestDataSync(DATASYNCTYPES.ACCOUNTS);
-        }
-        // load transactions
-        this.wallet.requestDataSync(DATASYNCTYPES.TRANSACTIONS);
-      } catch (ex) {
-        this.errorService.diagnose(ex);
-      }
-      this.notification.dismissNotifications();
+      this.createTransaction(inputs, outputs, fee, passphrase, change)
     } catch (ex) {
       // passphrase prompt closed
+    }
+  }
+
+  async createTransaction(inputs, outputs, fee, passphrase, change): Promise<void> {
+    this.notification.loading('NOTIFICATIONS.SENDINGTRANSACTION');
+    let originalOutputs = JSON.parse(JSON.stringify(outputs));
+    try {
+      const res = await this.wallet.sendTransaction(inputs, outputs, fee, passphrase, change);
+      if (res.success) {
+        this.notification.notify('success', 'NOTIFICATIONS.TRANSACTIONSENT');
+        // add and labeled addressed to address book
+        this.addRecipientsToAddressBook();
+        // reset page
+        this.reset();
+      } else if (res.newFee) {
+        // our calculated fee didn't match the actual fee
+        this.notification.dismissNotifications();
+        try {
+          await this.prompt.alert('PAGES.SEND.ALERTFEECHANGETITLE', 'PAGES.SEND.ALERTFEECHANGECONTENT', 'MISC.ACCEPTBUTTON', 'MISC.CANCELBUTTON', res.newFee);
+          return this.createTransaction(inputs, originalOutputs, res.newFee, passphrase, change)
+        } catch (ex) {
+          // prompt closed
+        }
+      } else {
+        this.notification.notify('error', res.error);
+        // load accounts
+        this.wallet.requestDataSync(DATASYNCTYPES.ACCOUNTS);
+      }
+      // load transactions
+      this.wallet.requestDataSync(DATASYNCTYPES.TRANSACTIONS);
+    } catch (ex) {
+      if (isDevMode()) console.log(ex);
+      this.errorService.diagnose(ex);
     }
   }
 

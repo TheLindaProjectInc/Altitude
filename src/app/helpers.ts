@@ -2,6 +2,14 @@ import Big from 'big.js';
 
 export default class Helpers {
 
+  public static readonly params: CoinParams = {
+    masternodeCollateral: 2000000,
+    fee: 0.001,
+    masternodeConfirms: 10,
+    matureTime: 24,
+    confirmations: 10,
+  }
+
   public static toSatoshi(amount: number | Big) {
     try {
       return (amount as Big).times(100000000);
@@ -43,19 +51,20 @@ export default class Helpers {
   }
 
 
-  public static getFee(numInputs: number, numOutputs: number, baseFee: number): number {
+  public static getFee(numInputs: number, numOutputs: number): number {
     const totalBytes = this.getBytes(numInputs, numOutputs);
     const feeMultiplier = Math.ceil(totalBytes / 1000);
-    return Math.round(baseFee * feeMultiplier * 1000) / 1000;
+    return Math.round(this.params.fee * feeMultiplier * 1000) / 1000;
   }
 
   public static getBytes(numInputs: number, numOutputs: number): number {
-    const baseSize = 44;
-    const outputSize = 34;
-    const inputSize = 148;
+    const baseSize = 28;
+    const outputSize = 68;
+    const changeSize = outputSize;
+    const inputSize = 82;
     const inputBytes = inputSize * numInputs;
     const outputBytes = numOutputs * outputSize;
-    return baseSize + inputBytes + outputBytes;
+    return baseSize + inputBytes + outputBytes + changeSize;
   }
 
   public static formatTimeEplased(amount, now = new Date()) {
@@ -129,4 +138,13 @@ export default class Helpers {
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
   }
 
+}
+
+
+interface CoinParams {
+  masternodeCollateral: number,
+  fee: number,
+  masternodeConfirms: number,
+  matureTime: number,
+  confirmations: number,
 }

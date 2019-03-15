@@ -20,13 +20,6 @@ import {
 
 @Injectable()
 export class WalletService {
-    // Linda parameters
-    readonly masternodeCollateral = 2000000;
-    readonly fee = 0.001;
-    readonly masternodeConfirms = 10;
-    readonly matureTime = 24;
-    readonly confirmations = 10;
-
     // account filters
     accountFilters = {
         hideEmptyAccounts: true,
@@ -247,7 +240,7 @@ export class WalletService {
         accountList.forEach(acc => {
             let account = new Account();
             acc.forEach(addr => {
-                account.addresses.push(new Address(addr, this.matureTime));
+                account.addresses.push(new Address(addr, Helpers.params.matureTime));
             })
             newAccountList.push(account);
             // check if have match
@@ -556,7 +549,7 @@ export class WalletService {
     }
 
     public getTrxProgress(trx) {
-        let progress = Math.round(trx.confirmations / this.confirmations * 100);
+        let progress = Math.round(trx.confirmations / Helpers.params.confirmations * 100);
         let indicator = {
             "right": "0",
         }

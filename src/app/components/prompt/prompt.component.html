@@ -65,9 +65,12 @@
   <form (submit)="changePassphraseModal.buttonDone()">
     <h1>{{ 'COMPONENTS.PROMPT.CHANGEPASSPHRASETITLE' | translate }}</h1>
 
-    <input type="password" name="currentPassphrase" [(ngModel)]="changePassphraseModal.currentPassphrase" [placeholder]="'COMPONENTS.PROMPT.CHANGEPASSPHRASE_CURRENT' | translate">
-    <input type="password" name="newPassphrase" [(ngModel)]="changePassphraseModal.newPassphrase" [placeholder]="'COMPONENTS.PROMPT.NEWPASSPHRASE' | translate">
-    <input type="password" name="confPassphrase" [(ngModel)]="changePassphraseModal.confPassphrase" [placeholder]="'COMPONENTS.PROMPT.CONFPASSPHRASE' | translate">
+    <input type="password" name="currentPassphrase" [(ngModel)]="changePassphraseModal.currentPassphrase"
+      [placeholder]="'COMPONENTS.PROMPT.CHANGEPASSPHRASE_CURRENT' | translate">
+    <input type="password" name="newPassphrase" [(ngModel)]="changePassphraseModal.newPassphrase"
+      [placeholder]="'COMPONENTS.PROMPT.NEWPASSPHRASE' | translate">
+    <input type="password" name="confPassphrase" [(ngModel)]="changePassphraseModal.confPassphrase"
+      [placeholder]="'COMPONENTS.PROMPT.CONFPASSPHRASE' | translate">
 
     <div class="modal-buttons">
       <button type="button" class="btn btn-default" (click)="changePassphraseModal.buttonCancel()">
@@ -85,8 +88,10 @@
   <form (submit)="encryptModal.buttonDone()">
     <h1>{{ 'COMPONENTS.PROMPT.ENCRYPTTITLE' | translate }}</h1>
 
-    <input type="password" name="newPassphrase" [(ngModel)]="encryptModal.newPassphrase" [placeholder]="'COMPONENTS.PROMPT.NEWPASSPHRASE' | translate">
-    <input type="password" name="confPassphrase" [(ngModel)]="encryptModal.confPassphrase" [placeholder]="'COMPONENTS.PROMPT.CONFPASSPHRASE' | translate">
+    <input type="password" name="newPassphrase" [(ngModel)]="encryptModal.newPassphrase"
+      [placeholder]="'COMPONENTS.PROMPT.NEWPASSPHRASE' | translate">
+    <input type="password" name="confPassphrase" [(ngModel)]="encryptModal.confPassphrase"
+      [placeholder]="'COMPONENTS.PROMPT.CONFPASSPHRASE' | translate">
 
     <div class="modal-buttons">
       <button type="button" class="btn btn-default" (click)="encryptModal.buttonCancel()">
@@ -104,7 +109,10 @@
   [dismissable]="false">
   <h1>{{ alertModal.title | translate }}</h1>
 
-  <p>{{ alertModal.content | translate }}</p>
+  <p>
+    {{ alertModal.content | translate }}
+    <span *ngIf="alertModal.extraContent">{{alertModal.extraContent}}</span>
+  </p>
 
   <div class="modal-buttons">
     <button class="btn btn-default" (click)="alertModal.buttonCancel()" *ngIf="alertModal.cancelButtonContent">
