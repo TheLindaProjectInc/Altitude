@@ -216,7 +216,7 @@ export class RpcService {
         // get address groupings
         let groups: any = await this.callServer("listaddressgroupings");
         // get all unspent
-        let unspents: any = await this.callServer("listunspent", [1, 9999999, [], true]);
+        let unspents: any = await this.listUnspent();
         // assemble accounts
         let accounts = [];
         for (let i = 0; i < groups.result.length; i++) {
@@ -303,11 +303,19 @@ export class RpcService {
         return data;
     }
 
+    private listUnspent() {
+        // as of v3.4 listunspent now has a watchonlyconfig flag
+        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
+            return this.callServer("listunspent", [1, 9999999, [], 1, true]);
+        else
+            return this.callServer("listunspent", [1, 9999999, [], true]);
+    }
+
     private async createTransaction(params) {
         let [inputs, outputs, fee, passphrase, changeAddress] = params;
         try {
             // get unspents
-            let unspents: any = await this.callServer("listunspent", [1, 9999999, [], true]);
+            let unspents: any = await this.listUnspent();
             unspents = unspents.result;
             // safety check inputs
             let sendingBalance = Big(0);
