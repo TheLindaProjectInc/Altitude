@@ -1,18 +1,18 @@
 {
     "Lindad": {
-        "version": "3.3.1.0",
+        "version": "3.3.2.0",
         "win32": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.1.0-023a0f4/Lindad-win32-x64.exe",
-                    "sha256": "A9524D872FD942E1EC108FF61D1292951A2279F5A6E127CCE96EC3213AF1A7B2"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-win32-x64.exe",
+                    "sha256": "79351C69AABD74ADD7BBB577049B62570CAFEC6D01C838340049C4B559C6B081"
                 },
                 "bin": "Lindad.exe"
             },
             "ia32": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.1.0-023a0f4/Lindad-win32-x86.exe",
-                    "sha256": "7CEDA5478533F4300DE25E58E5E506C9D1309A8E6727601BA6701B603B082E56"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-win32-x86.exe",
+                    "sha256": "CA9B76E89E10B248338DDA2E012B0E63A31D1B217F6C2E6D4F92A5F47DCB6F4D"
                 },
                 "bin": "Lindad.exe"
             }
@@ -20,8 +20,8 @@
         "linux": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.1.0-023a0f4/Lindad-linux-x64",
-                    "sha256": "DBD61F0649317335D89E609EE52D49CC2932F588A90C8F3016CEDC7B538E4DB2"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-linux-x64",
+                    "sha256": "A20AC32D0289E9E84042F6ED8F0F50079CE15710AEFE855DF77C36798419E611"
                 },
                 "bin": "Lindad"
             }
@@ -29,13 +29,19 @@
         "darwin": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.1.0-023a0f4/Lindad-darwin-x64",
-                    "sha256": "765361DE2984DA6FF3DE0683CEDF9A770735DAF38052B958891BBDA2ACA5B0AF"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-darwin-x64",
+                    "sha256": "0568113EC3E00B8C4A110B703A56EFB901FC5A93EB5939BBBA506465AFC52CB8"
                 },
                 "bin": "Lindad"
             }
         },
         "versions": {
+            "3.3.2.0": [
+                "79351C69AABD74ADD7BBB577049B62570CAFEC6D01C838340049C4B559C6B081",
+                "CA9B76E89E10B248338DDA2E012B0E63A31D1B217F6C2E6D4F92A5F47DCB6F4D",
+                "A20AC32D0289E9E84042F6ED8F0F50079CE15710AEFE855DF77C36798419E611",
+                "0568113EC3E00B8C4A110B703A56EFB901FC5A93EB5939BBBA506465AFC52CB8"
+            ],
             "3.3.1.0": [
                 "A9524D872FD942E1EC108FF61D1292951A2279F5A6E127CCE96EC3213AF1A7B2",
                 "7CEDA5478533F4300DE25E58E5E506C9D1309A8E6727601BA6701B603B082E56",
