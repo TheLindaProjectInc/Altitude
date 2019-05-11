@@ -16,8 +16,8 @@ export class WalletStatus {
 export enum EncryptionStatus {
     UNENCRYPTED = 'Unencrypted',
     LOCKED = 'Locked',
-    ENCRYPTING = "Encrypting",
-    LOCKEDFORSTAKING = "LockedForStaking",
-    UNLOCKEDANONYMONLY = "UnlockedForAnonymizationOnly",
-    UNLOCKED = "Unlocked"
+    ENCRYPTING = 'Encrypting',
+    LOCKEDFORSTAKING = 'LockedForStaking',
+    UNLOCKEDANONYMONLY = 'UnlockedForAnonymizationOnly',
+    UNLOCKED = 'Unlocked'
 }
