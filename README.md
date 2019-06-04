@@ -1,5 +1,5 @@
 # Altitude
-The Altitude wallet is the wallet of choice for Lindacoin.
+The Altitude wallet is the wallet of choice for Metrix.
 
 ## Help and troubleshooting
 
@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-By default Altitude will download the latest Lindad binary and run it internally. You can connect your own Lindad binary by running it before starting the wallet.
+By default Altitude will download the latest metrixd binary and run it internally. You can connect your own metrixd binary by running it before starting the wallet.
 
 ### Development Commands
 

@@ -21,7 +21,7 @@ Shutdown Altitude if it is already running and then run the installer.
 - Added right click menu for copy and paste on text inputs
 - Added autofill label/address in send page when entering either a known address or label
 - Added extra copy items to transactions
-- Added support for Linda startup commands through the Altitude application. You can now enter startup commands on the Altitude executable like you would the Linda executable 
+- Added support for Metrix startup commands through the Altitude application. You can now enter startup commands on the Altitude executable like you would the Metrix executable 
 ### Bug Fixes
 - Fixed an issue causing  the daemon to freeze on close causing a force kill
 - Fixed an issue where wallet repair sometimes didn't execute

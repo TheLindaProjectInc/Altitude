@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Ang Wallet ay kasalukuyang staking",
             "NOTENABLEDTITLE": "Hindi pinaganang ang staking",
             "NOTENABLEDINFO": "Kasalukuyang hindi pinagana ang staking.",
-            "NOTENABLEDINSTR": "Sa stake kailangan mong paganahin ang staking setting staking = 1 sa iyong Linda.conf file.",
+            "NOTENABLEDINSTR": "Sa stake kailangan mong paganahin ang staking setting staking = 1 sa iyong metrix.conf file.",
             "NOTSTAKINGTITLE": "Hindi nagtatagal ang Wallet",
             "NOTSTAKINGINFO": "Ang iyong wallet ay kasalukuyang naka-lock para sa staking.",
             "NOTSTAKINGINSTR": "Maaari mong simulan ang staking sa pamamagitan ng pag-unlock ng iyong wallet para sa staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Address",
             "ENABLED": "Pinagana",
             "NOTENABLEDTITLE": "Hindi pinagana ang Masternodes",
-            "NOTENABLEDINSTR": "Upang magpatakbo ng isang masternode kakailanganin mong paganahin ang masternodes sa pamamagitan ng pagtatakda ng masternode = 1 at pag-configure ng mga 'masternodeprivkey' at 'masternodeaddr' na mga variable sa iyong Linda.conf file.",
+            "NOTENABLEDINSTR": "Upang magpatakbo ng isang masternode kakailanganin mong paganahin ang masternodes sa pamamagitan ng pagtatakda ng masternode = 1 at pag-configure ng mga 'masternodeprivkey' at 'masternodeaddr' na mga variable sa iyong metrix.conf file.",
             "STARTBUTTON": "Simulan ang Lokal",
             "STARTALIASBUTTON": "Simulan ang Alias",
             "STARTALLBUTTON": "Simulan ang Lahat"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Maligayang pagdating sa console ng Linda Core RPC. Mag-type ng tulong para sa pangkalahatang ideya ng mga magagamit na utos.",
+                "CONSOLEINFO": "Maligayang pagdating sa console ng Metrix Core RPC. Mag-type ng tulong para sa pangkalahatang ideya ng mga magagamit na utos.",
                 "CONSOLEWARNING": "BABALA: Aktibo ang mga scammers, na nagsasabi sa mga gumagamit na mag-type ng mga command dito, pagnanakaw ng mga nilalaman ng kanilang pitaka. Huwag gamitin ang console na ito nang hindi lubos na nauunawaan ang pag-uumpisa ng isang command.",
                 "COMMANDPLACEHODLER": "Ipasok ang Command"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Pagsisimula ng Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ang mga utos ng pag-aayos ay hindi maaaring tumakbo kapag ang Linda Core ay tumatakbo sa labas",
-                "INFO": "Ang mga pindutan sa ibaba ay muling simulan ang Linda Core sa mga pagpipilian sa command-line upang maayos ang wallet, ayusin ang mga isyu sa mga sira na blockchain file o nawawala / hindi na ginagamit transaksyon.",
+                "INFOEXTERNAL": "Ang mga utos ng pag-aayos ay hindi maaaring tumakbo kapag ang Metrix Core ay tumatakbo sa labas",
+                "INFO": "Ang mga pindutan sa ibaba ay muling simulan ang Metrix Core sa mga pagpipilian sa command-line upang maayos ang wallet, ayusin ang mga isyu sa mga sira na blockchain file o nawawala / hindi na ginagamit transaksyon.",
                 "SALVAGEBUTTON": "Pagsagip Wallet",
                 "SALVAGEINFO": "-salvagewallet: Pag-usig upang mabawi ang mga pribadong key mula sa isang sira wallet.dat.",
                 "RESCANBUTTON": "I-rescan ang mga blockchain file",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Ang mga developer ng Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ang NovaCoin developer <br/> Copyright © 2014-2018 Ang mga developer Linda <br/><br/> Ito ay pang-eksperimentong software. <br/> Ibinahagi sa ilalim ng lisensya ng software ng MIT / X11, tingnan ang kasamang file COPYING o http://www.opensource.org/licenses/mit-license.php. <br/><br/> Kasama sa produktong ito ang software na binuo ng OpenSSL Project para gamitin sa OpenSSL Toolkit (https://www.openssl.org) at cryptographic software na isinulat ni Eric Young (eay@cryptsoft.com) at UPnP software na isinulat ni Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Ang mga developer ng Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ang NovaCoin developer <br/> Copyright © 2014-2019 Ang mga developer Metrix <br/><br/> Ito ay pang-eksperimentong software. <br/> Ibinahagi sa ilalim ng lisensya ng software ng MIT / X11, tingnan ang kasamang file COPYING o http://www.opensource.org/licenses/mit-license.php. <br/><br/> Kasama sa produktong ito ang software na binuo ng OpenSSL Project para gamitin sa OpenSSL Toolkit (https://www.openssl.org) at cryptographic software na isinulat ni Eric Young (eay@cryptsoft.com) at UPnP software na isinulat ni Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitude",
-            "ABOUTALTITUDE": "Copyright © 2018 Ang mga developer ni Linda <br/><br/> Ang software na ito ay ipinamamahagi sa ilalim ng lisensya ng GPL-3.0, tingnan ang https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE para sa karagdagang impormasyon."
+            "ABOUTALTITUDE": "Copyright © 2019 Ang mga developer ni Metrix <br/><br/> Ang software na ito ay ipinamamahagi sa ilalim ng lisensya ng GPL-3.0, tingnan ang https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE para sa karagdagang impormasyon."
         },
         "LOCALE": {
             "TITLE": "Piliin ang Wika"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ipasok ang iyong Passphrase ng Wallet",
             "UNLOCKSTAKINGONLY": "I-unlock para sa staking lamang",
-            "CLIENTUPDATETITLE": "Available ang Linda Core Update",
-            "CLIENTUPDATEINFO": "Available ang pag-update para kay Linda Core. Gusto mo bang i-install ito ngayon?",
+            "CLIENTUPDATETITLE": "Available ang Metrix Core Update",
+            "CLIENTUPDATEINFO": "Available ang pag-update para kay Metrix Core. Gusto mo bang i-install ito ngayon?",
             "WALLETUPDATETITLE": "Available ang Pag-update ng Altitude",
             "WALLETUPDATEINFO": "Available ang pag-update para sa Altitude. Gusto mo bang i-download ito ngayon?",
             "CLIENTUPDATEBUTTON": "I-update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Baguhin ang Passphrase",
             "ENCRYPTTITLE": "I-encrypt ang iyong wallet",
             "ENCRYPTBUTTON": "I-encrypt",
-            "CLIENTSTOPPEDTITLE": "Tumigil si Linda Core",
-            "CLIENTSTOPPEDINFO": "Nawala ang koneksyon kay Linda Core. Maaari mong ihinto ang wallet o simulan ang panloob na Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Tumigil si Metrix Core",
+            "CLIENTSTOPPEDINFO": "Nawala ang koneksyon kay Metrix Core. Maaari mong ihinto ang wallet o simulan ang panloob na Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Lumabas sa Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Simulan ang Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Simulan ang Metrix Core",
             "ENCRYPTEDTITLE": "Naka-encrypt ang Wallet",
             "ENCRYPTEDCONTENT": "Anumang mga naunang backup na iyong ginawa sa iyong wallet file ay dapat mapalitan ng bagong nabuong, naka-encrypt na file ng wallet. Para sa mga kadahilanang pang-seguridad, ang mga nakaraang pag-backup ng hindi naka-encrypt na wallet file ay magiging walang silbi sa lalong madaling simulan mo ang paggamit ng bagong, naka-encrypt na wallet.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Tumigil si Linda Core nang hindi inaasahan",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Nagkaroon ng problema sa Linda Core na naging dahilan upang wakasan ito. Inirerekumenda na suriin ang iyong debug.log file para sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Tumigil si Metrix Core nang hindi inaasahan",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Nagkaroon ng problema sa Metrix Core na naging dahilan upang wakasan ito. Inirerekumenda na suriin ang iyong debug.log file para sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "I-restart ang Client",
-            "CLIENTINVALIDCONFIGTITLE": "Di-wastong Configuration ng Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ang iyong Linda.conf ay may hindi wastong pag-setup ng masternode na kung saan ay magiging sanhi agad si Linda Core upang lumabas. Mangyaring suriin ang file na ito."
+            "CLIENTINVALIDCONFIGTITLE": "Di-wastong Configuration ng metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Ang iyong metrix.conf ay may hindi wastong pag-setup ng masternode na kung saan ay magiging sanhi agad si Metrix Core upang lumabas. Mangyaring suriin ang file na ito."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
-            "SENDINGINFO": "Ito ang iyong nai-save na address ni Linda para sa pagpapadala ng mga pagbabayad. Palaging suriin ang halaga at pagtanggap ng address bago magpadala ng mga barya",
-            "RECEIVINGINFO": "Ito ang iyong nai-save na address ni Linda para sa pagtanggap ng mga pagbabayad.",
+            "SENDINGINFO": "Ito ang iyong nai-save na address ni Metrix para sa pagpapadala ng mga pagbabayad. Palaging suriin ang halaga at pagtanggap ng address bago magpadala ng mga barya",
+            "RECEIVINGINFO": "Ito ang iyong nai-save na address ni Metrix para sa pagtanggap ng mga pagbabayad.",
             "BUTTONSELECT": "Piliin ang",
             "TABLECOLUMNS_LABEL": "Tatak",
             "TABLECOLUMNS_ADDRESS": "Address",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Mag-sign Message...",
             "VERIFYMESSAGE": "I-verify ang Mensahe...",
             "LOCALE": "Wika...",
-            "RESTARTCORE": "I-restart ang Linda Core",
+            "RESTARTCORE": "I-restart ang Metrix Core",
             "EXIT": "Lumabas",
             "OPTIONS": "Mga Pagpipilian..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Tulong",
             "COMMANDLINEOPTIONS": "Mga Pagpipilian sa Linya ng Command...",
-            "CHECKUPDATECORE": "Suriin para sa Linda Core Update...",
+            "CHECKUPDATECORE": "Suriin para sa Metrix Core Update...",
             "CHECKUPDATEWALLET": "Suriin ang Update ng Altitude...",
-            "ABOUTCORE": "Tungkol sa Linda Core...",
+            "ABOUTCORE": "Tungkol sa Metrix Core...",
             "ABOUTALTITUDE": "Tungkol sa Altitude...",
             "DISCORD": "Discord...",
             "ISSUE": "Mag-ulat ng Isang Isyu..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Alisin lahat",
         "ENTERACCOUNTLABEL": "Magpasok ng label para sa address na ito",
-        "ENTERADDRESSLABEL": "Magpasok ng isang address ni Linda",
+        "ENTERADDRESSLABEL": "Magpasok ng isang address ni Metrix",
         "AGO": "nakaraan",
         "SORTBY": "Ayusin Ayon sa",
         "SEARCH": "Paghahanap",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Tanggapin"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialising Linda Core...",
-        "DOWNLOADCLIENT": "Nagda-download ng Linda Core...",
-        "UPDATEAVAILABLE": "Available ang Linda Core Update",
-        "SHUTTINGDOWN": "Pag-shut down Linda Core...",
-        "RESTARTING": "I-restart ang Linda Core..."
+        "INITIALISING": "Initialising Metrix Core...",
+        "DOWNLOADCLIENT": "Nagda-download ng Metrix Core...",
+        "UPDATEAVAILABLE": "Available ang Metrix Core Update",
+        "SHUTTINGDOWN": "Pag-shut down Metrix Core...",
+        "RESTARTING": "I-restart ang Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Matagumpay na nalikha ang bagong account",

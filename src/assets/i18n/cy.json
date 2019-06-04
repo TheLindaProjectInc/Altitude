@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Mae Wallet ar hyn o bryd yn taro",
             "NOTENABLEDTITLE": "Nid yw Staking wedi'i alluogi",
             "NOTENABLEDINFO": "Nid yw Staking wedi'i alluogi ar hyn o bryd.",
-            "NOTENABLEDINSTR": "I'r fantol bydd angen i chi alluogi gosod staking staking = 1 yn eich ffeil Linda.conf.",
+            "NOTENABLEDINSTR": "I'r fantol bydd angen i chi alluogi gosod staking staking = 1 yn eich ffeil metrix.conf.",
             "NOTSTAKINGTITLE": "Waled heb beidio",
             "NOTSTAKINGINFO": "Mae'ch waled wedi'i gloi ar hyn o bryd ar gyfer stacio.",
             "NOTSTAKINGINSTR": "Gallwch chi ddechrau stacio trwy ddatgloi eich waled am droi",
@@ -69,7 +69,7 @@
             "ADDRESS": "Cyfeiriad",
             "ENABLED": "Wedi'i alluogi",
             "NOTENABLEDTITLE": "Nid yw Masternodes wedi eu galluogi",
-            "NOTENABLEDINSTR": "I redeg masternode bydd angen i chi alluogi masternodes trwy osod masternode = 1 a ffurfweddu newidynnau 'masternodeprivkey' a 'masternodeaddr' yn eich ffeil Linda.conf.",
+            "NOTENABLEDINSTR": "I redeg masternode bydd angen i chi alluogi masternodes trwy osod masternode = 1 a ffurfweddu newidynnau 'masternodeprivkey' a 'masternodeaddr' yn eich ffeil metrix.conf.",
             "STARTBUTTON": "Dechrau Lleol",
             "STARTALIASBUTTON": "Dechreuwch Alias",
             "STARTALLBUTTON": "Dechrau'r cyfan"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Fersiwn Uchel"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Croeso i consol Linda Core RPC. Math o gymorth i gael trosolwg o'r gorchmynion sydd ar gael.",
+                "CONSOLEINFO": "Croeso i consol Metrix Core RPC. Math o gymorth i gael trosolwg o'r gorchmynion sydd ar gael.",
                 "CONSOLEWARNING": "RHYBUDD: Mae sgamwyr wedi bod yn weithgar, gan ddweud wrth ddefnyddwyr i deipio gorchmynion yma, gan ddwyn eu cynnwys gwaledi. Peidiwch â defnyddio'r consol hwn heb ddeall yn llawn ramiad gorchymyn.",
                 "COMMANDPLACEHODLER": "Rhowch Command"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Bloc Cychwyn"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ni ellir rhedeg y gorchmynion trwsio hyn pan fo Linda Core yn cael ei redeg yn allanol",
-                "INFO": "Bydd y botymau isod yn ailgychwyn Linda Core gydag opsiynau llinell gorchymyn i atgyweirio'r waled, datrys problemau gyda ffeiliau blocyn llwgr neu drafodion ar goll / wedi'u darfod.",
+                "INFOEXTERNAL": "Ni ellir rhedeg y gorchmynion trwsio hyn pan fo Metrix Core yn cael ei redeg yn allanol",
+                "INFO": "Bydd y botymau isod yn ailgychwyn Metrix Core gydag opsiynau llinell gorchymyn i atgyweirio'r waled, datrys problemau gyda ffeiliau blocyn llwgr neu drafodion ar goll / wedi'u darfod.",
                 "SALVAGEBUTTON": "Waledyn Achub",
                 "SALVAGEINFO": "-salvagewallet: Ceisio adfer allweddau preifat o wallet.dat llygredig.",
                 "RESCANBUTTON": "Ffeiliau blocfwrdd Rescan",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Craidd",
-            "ABOUTCORE": "Hawlfraint © 2009-2015 Y datblygwyr Bitcoin <br/> Hawlfraint © 2011-2012 Datblygwyr PPCoin <br/> Hawlfraint © 2012-2014 Datblygwyr NovaCoin <br/> Hawlfraint © 2014-2018 Y datblygwyr Linda <br/><br/> Mae hwn yn feddalwedd arbrofol. <br/> Wedi'i ddosbarthu o dan drwydded feddalwedd MIT / X11, gweler y ffeil COPYING neu http://www.opensource.org/licenses/mit-license.php. <br/><br/> Mae'r cynnyrch hwn yn cynnwys meddalwedd a ddatblygwyd gan y Prosiect OpenSSL i'w ddefnyddio yn y Pecyn Cymorth OpenSSL (https://www.openssl.org) a meddalwedd cryptograffig a ysgrifennwyd gan Eric Young (eay@cryptsoft.com) a meddalwedd UPnP a ysgrifennwyd gan Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Craidd",
+            "ABOUTCORE": "Hawlfraint © 2009-2015 Y datblygwyr Bitcoin <br/> Hawlfraint © 2011-2012 Datblygwyr PPCoin <br/> Hawlfraint © 2012-2014 Datblygwyr NovaCoin <br/> Hawlfraint © 2014-2019 Y datblygwyr Metrix <br/><br/> Mae hwn yn feddalwedd arbrofol. <br/> Wedi'i ddosbarthu o dan drwydded feddalwedd MIT / X11, gweler y ffeil COPYING neu http://www.opensource.org/licenses/mit-license.php. <br/><br/> Mae'r cynnyrch hwn yn cynnwys meddalwedd a ddatblygwyd gan y Prosiect OpenSSL i'w ddefnyddio yn y Pecyn Cymorth OpenSSL (https://www.openssl.org) a meddalwedd cryptograffig a ysgrifennwyd gan Eric Young (eay@cryptsoft.com) a meddalwedd UPnP a ysgrifennwyd gan Thomas Bernard.",
             "ABOUTALTITUDETAB": "Uchder",
-            "ABOUTALTITUDE": "Hawlfraint © 2018 Y datblygwyr Linda <br/><br/> Dosbarthir y meddalwedd hon o dan y drwydded GPL-3.0, gweler https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE am ragor o wybodaeth."
+            "ABOUTALTITUDE": "Hawlfraint © 2019 Y datblygwyr Metrix <br/><br/> Dosbarthir y meddalwedd hon o dan y drwydded GPL-3.0, gweler https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE am ragor o wybodaeth."
         },
         "LOCALE": {
             "TITLE": "Dewis Iaith"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Rhowch Gylchred Cyfnod Eich Waled",
             "UNLOCKSTAKINGONLY": "Datgloi am staking yn unig",
-            "CLIENTUPDATETITLE": "Diweddariad Linda Craidd ar gael",
-            "CLIENTUPDATEINFO": "Mae diweddariad ar gael ar gyfer Linda Core. Hoffech chi ei osod yn awr?",
+            "CLIENTUPDATETITLE": "Diweddariad Metrix Craidd ar gael",
+            "CLIENTUPDATEINFO": "Mae diweddariad ar gael ar gyfer Metrix Core. Hoffech chi ei osod yn awr?",
             "WALLETUPDATETITLE": "Diweddariad uchder ar gael",
             "WALLETUPDATEINFO": "Mae diweddariad ar gael ar gyfer uchder. Hoffech chi ei lwytho i lawr yn awr?",
             "CLIENTUPDATEBUTTON": "Diweddariad",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Newid Trosglwyddiad Pas",
             "ENCRYPTTITLE": "Amgryptio'ch waled",
             "ENCRYPTBUTTON": "Amgryptio",
-            "CLIENTSTOPPEDTITLE": "Linda Craidd wedi'i Stopio",
-            "CLIENTSTOPPEDINFO": "Collwyd cysylltiad â Linda Core. Gallwch chi stopio'r waled neu gychwyn y Linda Craidd mewnol.",
+            "CLIENTSTOPPEDTITLE": "Metrix Craidd wedi'i Stopio",
+            "CLIENTSTOPPEDINFO": "Collwyd cysylltiad â Metrix Core. Gallwch chi stopio'r waled neu gychwyn y Metrix Craidd mewnol.",
             "CLIENTSTOPPEDBUTTONEXIT": "Bwled Ymadael",
-            "CLIENTSTOPPEDBUTTONSTART": "Dechreuwch Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Dechreuwch Metrix Core",
             "ENCRYPTEDTITLE": "Waled wedi'i amgryptio",
             "ENCRYPTEDCONTENT": "Dylai'r ffeil waled wedi'i hamgryptio newydd gael ei disodli gan unrhyw wrth gefn blaenorol a wnaethoch o'ch ffeil waled. Am resymau diogelwch, bydd copïau wrth gefn o'r ffeil waled heb ei grybwyll yn dod yn ddiwerth cyn gynted ag y byddwch yn dechrau defnyddio'r waled newydd wedi'i hamgryptio.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Craidd Wedi'i Stopio Yn annisgwyl",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Linda Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Craidd Wedi'i Stopio Yn annisgwyl",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ail-gychwyn Cleient",
-            "CLIENTINVALIDCONFIGTITLE": "Cyfluniad Linda.conf annilys",
-            "CLIENTINVALIDCONFIGINFO": "Mae gan eich Linda.conf osodiad masternode annilys a fydd yn achosi Linda Core i adael ar unwaith. Gwiriwch y ffeil hon."
+            "CLIENTINVALIDCONFIGTITLE": "Cyfluniad metrix.conf annilys",
+            "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr cyfeiriadau",
-            "SENDINGINFO": "Dyma'ch cyfeiriad Linda a arbedwyd ar gyfer anfon taliadau. Gwiriwch y swm a chyfeiriad derbyn cyn anfon arian",
-            "RECEIVINGINFO": "Dyma'ch cyfeiriad Linda a achubwyd am dderbyn taliadau.",
+            "SENDINGINFO": "Dyma'ch cyfeiriad Metrix a arbedwyd ar gyfer anfon taliadau. Gwiriwch y swm a chyfeiriad derbyn cyn anfon arian",
+            "RECEIVINGINFO": "Dyma'ch cyfeiriad Metrix a achubwyd am dderbyn taliadau.",
             "BUTTONSELECT": "Dewiswch",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Cyfeiriad",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Neges Arwydd...",
             "VERIFYMESSAGE": "Gwirio Neges...",
             "LOCALE": "Iaith...",
-            "RESTARTCORE": "Ailgychwyn Linda Craidd",
+            "RESTARTCORE": "Ailgychwyn Metrix Craidd",
             "EXIT": "Ymadael",
             "OPTIONS": "Opsiynau..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Help",
             "COMMANDLINEOPTIONS": "Dewisiadau Llinell Reoli...",
-            "CHECKUPDATECORE": "Gwiriwch am Ddiweddaraf Linda Craidd...",
+            "CHECKUPDATECORE": "Gwiriwch am Ddiweddaraf Metrix Craidd...",
             "CHECKUPDATEWALLET": "Gwiriwch am Ddiweddiad Agwedd...",
-            "ABOUTCORE": "Ynglŷn â Linda Core...",
+            "ABOUTCORE": "Ynglŷn â Metrix Core...",
             "ABOUTALTITUDE": "Am uchder...",
             "DISCORD": "Discord...",
             "ISSUE": "Adrodd Rhifyn..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "iawn",
         "CLEARALLBUTTON": "Clir i Bawb",
         "ENTERACCOUNTLABEL": "Rhowch label ar gyfer y cyfeiriad hwn",
-        "ENTERADDRESSLABEL": "Rhowch gyfeiriad Linda",
+        "ENTERADDRESSLABEL": "Rhowch gyfeiriad Metrix",
         "AGO": "yn ôl",
         "SORTBY": "Trefnu Yn ôl",
         "SEARCH": "Chwilio",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Derbyn"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Cychwyn Linda Craidd...",
-        "DOWNLOADCLIENT": "Lawrlwytho Linda Craidd...",
-        "UPDATEAVAILABLE": "Diweddariad Linda Craidd ar gael",
-        "SHUTTINGDOWN": "Cipio Linda Craidd...",
-        "RESTARTING": "Ailgychwyn Linda Craidd..."
+        "INITIALISING": "Cychwyn Metrix Craidd...",
+        "DOWNLOADCLIENT": "Lawrlwytho Metrix Craidd...",
+        "UPDATEAVAILABLE": "Diweddariad Metrix Craidd ar gael",
+        "SHUTTINGDOWN": "Cipio Metrix Craidd...",
+        "RESTARTING": "Ailgychwyn Metrix Craidd..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Crëwyd cyfrif newydd yn llwyddiannus",

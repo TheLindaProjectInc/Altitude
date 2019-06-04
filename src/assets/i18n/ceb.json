@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Ang panudlanan sa kasing-kasing karon",
             "NOTENABLEDTITLE": "Ang pagtabang dili mahimo",
             "NOTENABLEDINFO": "Ang Staking wala mabuhat karon.",
-            "NOTENABLEDINSTR": "Sa stake imong gikinahanglan aron makahimo sa staking setting staking = 1 sa imong Linda.conf file.",
+            "NOTENABLEDINSTR": "Sa stake imong gikinahanglan aron makahimo sa staking setting staking = 1 sa imong metrix.conf file.",
             "NOTSTAKINGTITLE": "Ang tibud nga dili matay-og",
             "NOTSTAKINGINFO": "Ang imong pitaka kasamtangang naka-lock tungod sa staking.",
             "NOTSTAKINGINSTR": "Mahimo ka magsugod sa pag-stake pinaagi sa pag-abli sa imong pitaka alang sa staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Address",
             "ENABLED": "Maagwanta",
             "NOTENABLEDTITLE": "Ang mga Masternodes wala makahimo",
-            "NOTENABLEDINSTR": "Sa pagpadagan sa masternode gikinahanglan nimo ang paghimo sa masternodes pinaagi sa paghimo sa masternode = 1 ug pag-configure sa mga 'masternodeprivkey' ug 'masternodeaddr' nga mga kapilian sa imong Linda.conf file.",
+            "NOTENABLEDINSTR": "Sa pagpadagan sa masternode gikinahanglan nimo ang paghimo sa masternodes pinaagi sa paghimo sa masternode = 1 ug pag-configure sa mga 'masternodeprivkey' ug 'masternodeaddr' nga mga kapilian sa imong metrix.conf file.",
             "STARTBUTTON": "Pagsugod sa Lokal",
             "STARTALIASBUTTON": "Pagsugod Alias",
             "STARTALLBUTTON": "Sugdi ang Tanan"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Bersyon sa Altitude"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Welcome sa Linda Core RPC console. Ilista ang tabang alang sa kinatibuk-ang paghulagway sa mga anaa nga mga sugo.",
+                "CONSOLEINFO": "Welcome sa Metrix Core RPC console. Ilista ang tabang alang sa kinatibuk-ang paghulagway sa mga anaa nga mga sugo.",
                 "CONSOLEWARNING": "PASIDAAN: Ang mga scammers aktibo, nagsulti sa mga tiggamit sa pag-type sa mga sugo dinhi, pagpangawat sa mga sulod sa pitaka. Ayaw gamita kini nga console nga dili hingpit nga masabtan ang paghimo sa usa ka sugo.",
                 "COMMANDPLACEHODLER": "Pagsulod"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Pagsugod nga Sumpong"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Kini nga mga pag-ayo nga mga sugo dili mahimong modagan kon si Linda Core gipadagan sa gawas",
-                "INFO": "Ang mga butones sa ubos magsugod pag-usab sa Linda Core uban sa mga kapilian sa command-line aron ayuhon ang pitaka, ayuhon ang mga isyu sa mga korap nga file sa blockchain o nawala / wala'y bayad nga mga transaksyon.",
+                "INFOEXTERNAL": "Kini nga mga pag-ayo nga mga sugo dili mahimong modagan kon si Metrix Core gipadagan sa gawas",
+                "INFO": "Ang mga butones sa ubos magsugod pag-usab sa Metrix Core uban sa mga kapilian sa command-line aron ayuhon ang pitaka, ayuhon ang mga isyu sa mga korap nga file sa blockchain o nawala / wala'y bayad nga mga transaksyon.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Pagtinguha nga makuha ang pribado nga mga yawe gikan sa usa ka dunot nga wallet.dat.",
                 "RESCANBUTTON": "Pag-rescan sa mga file nga blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Ang mga developer sa Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ang mga nag-develop sa NovaCoin <br/> Copyright © 2014-2018 Ang mga developers ni Linda <br/><br/> Kini ang eksperimento nga software. <br/> Gipahat ngadto sa lisensya sa MIT / X11 software, tan-awa ang nag-uban nga file COPYING o http://www.opensource.org/licenses/mit-license.php. <br/><br/> Kini nga produkto naglakip sa software nga gimugna sa OpenSSL Project alang sa paggamit sa OpenSSL Toolkit (https://www.openssl.org) ug cryptographic software nga gisulat ni Eric Young (eay@cryptsoft.com) ug UPnP software nga gisulat ni Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Ang mga developer sa Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ang mga nag-develop sa NovaCoin <br/> Copyright © 2014-2019 Ang mga developers ni Metrix <br/><br/> Kini ang eksperimento nga software. <br/> Gipahat ngadto sa lisensya sa MIT / X11 software, tan-awa ang nag-uban nga file COPYING o http://www.opensource.org/licenses/mit-license.php. <br/><br/> Kini nga produkto naglakip sa software nga gimugna sa OpenSSL Project alang sa paggamit sa OpenSSL Toolkit (https://www.openssl.org) ug cryptographic software nga gisulat ni Eric Young (eay@cryptsoft.com) ug UPnP software nga gisulat ni Thomas Bernard.",
             "ABOUTALTITUDETAB": "Gitas-on",
-            "ABOUTALTITUDE": "Copyright © 2018 Ang mga developers ni Linda <br/><br/> Kini nga software gipanagtag ubos sa lisensya sa GPL-3.0, tan-awa ang https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE alang sa dugang kasayuran."
+            "ABOUTALTITUDE": "Copyright © 2019 Ang mga developers ni Metrix <br/><br/> Kini nga software gipanagtag ubos sa lisensya sa GPL-3.0, tan-awa ang https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE alang sa dugang kasayuran."
         },
         "LOCALE": {
             "TITLE": "Pagpili sa Pinulongan"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Pagsulod sa imong Passphrase sa Wallet",
             "UNLOCKSTAKINGONLY": "Pag-abli alang sa staking lamang",
-            "CLIENTUPDATETITLE": "Ang Linda Core Update Magamit",
-            "CLIENTUPDATEINFO": "Adunay usa ka update alang sa Linda Core. Gusto ka bang i-install kini karon?",
+            "CLIENTUPDATETITLE": "Ang Metrix Core Update Magamit",
+            "CLIENTUPDATEINFO": "Adunay usa ka update alang sa Metrix Core. Gusto ka bang i-install kini karon?",
             "WALLETUPDATETITLE": "Pag-update sa Altitude",
             "WALLETUPDATEINFO": "Adunay usa ka update alang sa Altitude. Gusto ba nimo nga i-download kini karon?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Usba ang Passphrase",
             "ENCRYPTTITLE": "I-encrypt ang imong pitaka",
             "ENCRYPTBUTTON": "I-encrypt",
-            "CLIENTSTOPPEDTITLE": "Si Linda Core Mihunong",
-            "CLIENTSTOPPEDINFO": "Ang koneksyon nawala sa Linda Core. Mahimo nimong pugngan ang pitaka o sugdan ang internal nga Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Si Metrix Core Mihunong",
+            "CLIENTSTOPPEDINFO": "Ang koneksyon nawala sa Metrix Core. Mahimo nimong pugngan ang pitaka o sugdan ang internal nga Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Sugdi si Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Sugdi si Metrix Core",
             "ENCRYPTEDTITLE": "Na-encrypt ang Wallet",
             "ENCRYPTEDCONTENT": "Ang bisan unsang nangaging mga pag-backup nga imong nahimo sa imong wallet file kinahanglan nga ilisan uban sa bag-ong namugna, gi-encrypt nga wallet file. Alang sa mga katarungan sa seguridad, ang mga naunang pag-backup sa wala ma-encrypt nga wallet file mahimong walay pulos sa diha nga magsugod ka sa paggamit sa bag-o, na-encrypt nga pitaka.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Si Linda Core mibiya sa wala damha",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Linda Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Si Metrix Core mibiya sa wala damha",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Metrix Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Pagsugod sa Client",
-            "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga Linda.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Ang imong Linda.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Linda Core nga mogawas dayon. Palihug check kini nga file."
+            "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga metrix.conf Configuration",
+            "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
-            "SENDINGINFO": "Kini ang imong giluwas nga address ni Linda sa pagpadala sa mga bayad. Kanunay nga susihon ang kantidad ug pagdawat sa address sa dili pa magpadala og mga sinsilyo",
-            "RECEIVINGINFO": "Kini ang imong giluwas nga address ni Linda sa pagdawat sa bayad.",
+            "SENDINGINFO": "Kini ang imong giluwas nga address ni Metrix sa pagpadala sa mga bayad. Kanunay nga susihon ang kantidad ug pagdawat sa address sa dili pa magpadala og mga sinsilyo",
+            "RECEIVINGINFO": "Kini ang imong giluwas nga address ni Metrix sa pagdawat sa bayad.",
             "BUTTONSELECT": "Pagpili",
             "TABLECOLUMNS_LABEL": "Butangan",
             "TABLECOLUMNS_ADDRESS": "Address",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sign Message...",
             "VERIFYMESSAGE": "Tinoa ang Mensahe...",
             "LOCALE": "Pinulongan...",
-            "RESTARTCORE": "I-restart ang Linda Core",
+            "RESTARTCORE": "I-restart ang Metrix Core",
             "EXIT": "Paggawas",
             "OPTIONS": "Mga Opsyon..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Tabang",
             "COMMANDLINEOPTIONS": "Mga Linya sa Command sa Command...",
-            "CHECKUPDATECORE": "Susiha ang Linda Core Update...",
+            "CHECKUPDATECORE": "Susiha ang Metrix Core Update...",
             "CHECKUPDATEWALLET": "Pagsusi alang sa Altitude Update...",
-            "ABOUTCORE": "Mahitungod sa Linda Core...",
+            "ABOUTCORE": "Mahitungod sa Metrix Core...",
             "ABOUTALTITUDE": "Mahitungod sa Altitude...",
             "DISCORD": "Pagsaway...",
             "ISSUE": "Pagreport Usa ka Isyu..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Hawani ang Tanan",
         "ENTERACCOUNTLABEL": "Pagsulod og label alang niini nga address",
-        "ENTERADDRESSLABEL": "Pagsulod sa usa ka address ni Linda",
+        "ENTERADDRESSLABEL": "Pagsulod sa usa ka address ni Metrix",
         "AGO": "kanhi",
         "SORTBY": "Susunod By",
         "SEARCH": "Pagpangita",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Dawata"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Pag-uswag sa Linda Core...",
-        "DOWNLOADCLIENT": "Pag-download sa Linda Core...",
-        "UPDATEAVAILABLE": "Ang Linda Core Update Magamit",
-        "SHUTTINGDOWN": "Pagsira sa Linda Core...",
-        "RESTARTING": "Pagsugod sa Linda Core..."
+        "INITIALISING": "Pag-uswag sa Metrix Core...",
+        "DOWNLOADCLIENT": "Pag-download sa Metrix Core...",
+        "UPDATEAVAILABLE": "Ang Metrix Core Update Magamit",
+        "SHUTTINGDOWN": "Pagsira sa Metrix Core...",
+        "RESTARTING": "Pagsugod sa Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ang bag-ong asoy nagmalamposon",

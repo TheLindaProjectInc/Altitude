@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Гаманець наразі готується",
             "NOTENABLEDTITLE": "Стакінг не активований",
             "NOTENABLEDINFO": "Стакінг наразі не активований.",
-            "NOTENABLEDINSTR": "Щоб зробити ставку, потрібно ввімкнути параметр staking = 1 у вашому файлі Linda.conf.",
+            "NOTENABLEDINSTR": "Щоб зробити ставку, потрібно ввімкнути параметр staking = 1 у вашому файлі metrix.conf.",
             "NOTSTAKINGTITLE": "Гаманець не ставить",
             "NOTSTAKINGINFO": "Ваш кошечок наразі заблоковано для копіювання.",
             "NOTSTAKINGINSTR": "Ви можете приступити до розміщення, розблокувавши гаманець для розміщення",
@@ -69,7 +69,7 @@
             "ADDRESS": "Адреса",
             "ENABLED": "Увімкнено",
             "NOTENABLEDTITLE": "Masternodes не ввімкнено",
-            "NOTENABLEDINSTR": "Для запуску masternode потрібно включити masternodes, встановивши masternode = 1 і налаштувавши змінні 'masternodeprivkey' і 'masternodeaddr' у файлі Linda.conf.",
+            "NOTENABLEDINSTR": "Для запуску masternode потрібно включити masternodes, встановивши masternode = 1 і налаштувавши змінні 'masternodeprivkey' і 'masternodeaddr' у файлі metrix.conf.",
             "STARTBUTTON": "Початок Місцевий",
             "STARTALIASBUTTON": "Запустити псевдонім",
             "STARTALLBUTTON": "Почати все"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Версія висоти"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Ласкаво просимо на консоль RPC Linda Core. Введіть довідку для огляду доступних команд.",
+                "CONSOLEINFO": "Ласкаво просимо на консоль RPC Metrix Core. Введіть довідку для огляду доступних команд.",
                 "CONSOLEWARNING": "ПОПЕРЕДЖЕННЯ. Шахраї були активними, вказувавши користувачам вводити команди тут, викрадаючи вміст свого кошелька. Не використовуйте цю консоль без повного розуміння розгалуження команди.",
                 "COMMANDPLACEHODLER": "Введіть команду"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Запуск блоку"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ці команди відновлення не можуть запускатися, коли Linda Core запускається зовні",
-                "INFO": "Наведені нижче кнопки перезавантажуватимуть Linda Core з параметрами командного рядка, щоб відновити кошик, виправити проблеми з корумпованими файлами блокчейнів або відсутніми / застарілими транзакціями.",
+                "INFOEXTERNAL": "Ці команди відновлення не можуть запускатися, коли Metrix Core запускається зовні",
+                "INFO": "Наведені нижче кнопки перезавантажуватимуть Metrix Core з параметрами командного рядка, щоб відновити кошик, виправити проблеми з корумпованими файлами блокчейнів або відсутніми / застарілими транзакціями.",
                 "SALVAGEBUTTON": "Гаманець Salvage",
                 "SALVAGEINFO": "-salvagewallet: Спробуйте відновити приватні ключі від пошкодженого wallet.dat.",
                 "RESCANBUTTON": "Перезавантажте файли блокчейнів",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Лінда Корін",
-            "ABOUTCORE": "Copyright © 2009-2015 Розробники Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Авторські права © 2012-2014 Розробники NovaCoin <br/> Copyright © 2014-2018 Розробники Linda <br/><br/> Це експериментальне програмне забезпечення. <br/> Розповсюджується за ліцензією на програмне забезпечення MIT / X11, дивіться супровідний файл КОПІЮВАННЯ або http://www.opensource.org/licenses/mit-license.php. <br/><br/> Цей продукт включає в себе програмне забезпечення, розроблене проектом OpenSSL для використання в OpenSSL Toolkit (https://www.openssl.org) та криптографічне програмне забезпечення, написане Еріком Янгом (eay@cryptsoft.com) та програмним забезпеченням UPnP, написаним Томасом Бернардом.",
+            "ABOUTCORE": "Copyright © 2009-2015 Розробники Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Авторські права © 2012-2014 Розробники NovaCoin <br/> Copyright © 2014-2019 Розробники Metrix <br/><br/> Це експериментальне програмне забезпечення. <br/> Розповсюджується за ліцензією на програмне забезпечення MIT / X11, дивіться супровідний файл КОПІЮВАННЯ або http://www.opensource.org/licenses/mit-license.php. <br/><br/> Цей продукт включає в себе програмне забезпечення, розроблене проектом OpenSSL для використання в OpenSSL Toolkit (https://www.openssl.org) та криптографічне програмне забезпечення, написане Еріком Янгом (eay@cryptsoft.com) та програмним забезпеченням UPnP, написаним Томасом Бернардом.",
             "ABOUTALTITUDETAB": "Висота",
-            "ABOUTALTITUDE": "Copyright © 2018 Розробники Linda <br/><br/> Це програмне забезпечення поширюється за ліцензією GPL-3.0, перегляньте https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE для отримання додаткової інформації."
+            "ABOUTALTITUDE": "Copyright © 2019 Розробники Metrix <br/><br/> Це програмне забезпечення поширюється за ліцензією GPL-3.0, перегляньте https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE для отримання додаткової інформації."
         },
         "LOCALE": {
             "TITLE": "Оберіть мову"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Введіть парольну фразу Wallet",
             "UNLOCKSTAKINGONLY": "Розблокувати лише для ставок",
-            "CLIENTUPDATETITLE": "Доступна оновлення Linda Core",
-            "CLIENTUPDATEINFO": "Оновлення доступно для Linda Core. Чи хотіли б ви встановити його зараз?",
+            "CLIENTUPDATETITLE": "Доступна оновлення Metrix Core",
+            "CLIENTUPDATEINFO": "Оновлення доступно для Metrix Core. Чи хотіли б ви встановити його зараз?",
             "WALLETUPDATETITLE": "Доступне оновлення висот",
             "WALLETUPDATEINFO": "Доступне оновлення для Altitude. Хочете завантажити його зараз?",
             "CLIENTUPDATEBUTTON": "Оновити",
@@ -259,21 +259,21 @@
             "ENCRYPTTITLE": "Шифрування кошика",
             "ENCRYPTBUTTON": "Шифрувати",
             "CLIENTSTOPPEDTITLE": "Кінцева лінда зупинена",
-            "CLIENTSTOPPEDINFO": "З'єднання втрачено для Linda Core. Ви можете зупинити кошик або запустити внутрішній сердечник Linda.",
+            "CLIENTSTOPPEDINFO": "З'єднання втрачено для Metrix Core. Ви можете зупинити кошик або запустити внутрішній сердечник Metrix.",
             "CLIENTSTOPPEDBUTTONEXIT": "Вийти з гаманця",
             "CLIENTSTOPPEDBUTTONSTART": "Запустіть Лінду Корне",
             "ENCRYPTEDTITLE": "Гаманець зашифрований",
             "ENCRYPTEDCONTENT": "Будь-які попередні резервні копії, зроблені з вашого файлу кошельника, повинні бути замінені новим згенерованим, зашифрованим файлом кошелька. З міркувань безпеки попередні резервні копії незашифрованого файлу кошелька стають марними, як тільки ви почнете використовувати новий, зашифрований кошель.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда ядра несподівано зупинилася",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Виникла проблема з Linda Core, що призвело до його припинення. Рекомендую перевірити файл debug.log для вирішення проблем.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Виникла проблема з Metrix Core, що призвело до його припинення. Рекомендую перевірити файл debug.log для вирішення проблем.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Перезапустіть клієнта",
-            "CLIENTINVALIDCONFIGTITLE": "Недійсна конфігурація Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "У вашій Linda.conf є неправильна настройка masternode, яка змусить Linda Core негайно вийти. Перевірте цей файл."
+            "CLIENTINVALIDCONFIGTITLE": "Недійсна конфігурація metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "У вашій metrix.conf є неправильна настройка masternode, яка змусить Metrix Core негайно вийти. Перевірте цей файл."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
-            "SENDINGINFO": "Це ваша збережена адреса Linda для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет",
-            "RECEIVINGINFO": "Це ваша збережена адреса Linda для отримання платежів.",
+            "SENDINGINFO": "Це ваша збережена адреса Metrix для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет",
+            "RECEIVINGINFO": "Це ваша збережена адреса Metrix для отримання платежів.",
             "BUTTONSELECT": "Виберіть",
             "TABLECOLUMNS_LABEL": "Етикетка",
             "TABLECOLUMNS_ADDRESS": "Адреса",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Підписати повідомлення...",
             "VERIFYMESSAGE": "Перевірити повідомлення...",
             "LOCALE": "Мова...",
-            "RESTARTCORE": "Перезапустити Linda Core",
+            "RESTARTCORE": "Перезапустити Metrix Core",
             "EXIT": "Вхід",
             "OPTIONS": "Параметри..."
         },
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "Допомога",
             "COMMANDLINEOPTIONS": "Параметри командного рядка...",
-            "CHECKUPDATECORE": "Перевірте оновлення Linda Core...",
+            "CHECKUPDATECORE": "Перевірте оновлення Metrix Core...",
             "CHECKUPDATEWALLET": "Перевірте оновлення висоти...",
             "ABOUTCORE": "Про Лінду Корне...",
             "ABOUTALTITUDE": "Про висоту...",
@@ -329,7 +329,7 @@
         "OKBUTTON": "в порядку",
         "CLEARALLBUTTON": "Очистити все",
         "ENTERACCOUNTLABEL": "Введіть мітку для цієї адреси",
-        "ENTERADDRESSLABEL": "Введіть адресу Linda",
+        "ENTERADDRESSLABEL": "Введіть адресу Metrix",
         "AGO": "тому назад",
         "SORTBY": "Сортувати за",
         "SEARCH": "Пошук",
@@ -337,10 +337,10 @@
         "ACCEPTBUTTON": "Прийняти"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Ініціалізація Linda Core...",
-        "DOWNLOADCLIENT": "Завантаження Linda Core...",
-        "UPDATEAVAILABLE": "Доступна оновлення Linda Core",
-        "SHUTTINGDOWN": "Виключення Linda Core...",
+        "INITIALISING": "Ініціалізація Metrix Core...",
+        "DOWNLOADCLIENT": "Завантаження Metrix Core...",
+        "UPDATEAVAILABLE": "Доступна оновлення Metrix Core",
+        "SHUTTINGDOWN": "Виключення Metrix Core...",
         "RESTARTING": "Перезапустіть Лінду Корне..."
     },
     "NOTIFICATIONS": {

@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Bous se kounye a k ap pran",
             "NOTENABLEDTITLE": "Gaye pa pèmèt",
             "NOTENABLEDINFO": "Gaye se pa kounye a pèmèt.",
-            "NOTENABLEDINSTR": "Pye a ou pral bezwen yo ki ap pèmèt anviwònman paking = 1 nan dosye Linda.conf ou a.",
+            "NOTENABLEDINSTR": "Pye a ou pral bezwen yo ki ap pèmèt anviwònman paking = 1 nan dosye metrix.conf ou a.",
             "NOTSTAKINGTITLE": "Bous pa pran",
             "NOTSTAKINGINFO": "Se bous ou kounye a fèmen pou pran.",
             "NOTSTAKINGINSTR": "Ou ka kòmanse pran pa déblotché bous ou pou pran",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adrès",
             "ENABLED": "Pèmèt",
             "NOTENABLEDTITLE": "Masternodes pa pèmèt",
-            "NOTENABLEDINSTR": "Kouri yon masternode ou pral bezwen yo ki pèmèt masternodes pa mete masternode = 1 ak konfigirasyon 'masternodeprivkey' ak 'masternodeaddr' varyab nan dosye Linda.conf ou a.",
+            "NOTENABLEDINSTR": "Kouri yon masternode ou pral bezwen yo ki pèmèt masternodes pa mete masternode = 1 ak konfigirasyon 'masternodeprivkey' ak 'masternodeaddr' varyab nan dosye metrix.conf ou a.",
             "STARTBUTTON": "Kòmanse Lokal",
             "STARTALIASBUTTON": "Kòmanse alyas",
             "STARTALLBUTTON": "Kòmanse tout"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitid Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Byenveni nan Linda Core RPC konsole a. Kalite èd pou yon BECA de kòmandman ki disponib.",
+                "CONSOLEINFO": "Byenveni nan Metrix Core RPC konsole a. Kalite èd pou yon BECA de kòmandman ki disponib.",
                 "CONSOLEWARNING": "AVÈTISMAN: SCAMMERS yo te aktif, di itilizatè yo tape kòmandman isit la, vòlè sa yo bous. Pa sèvi ak konsole sa a san konplètman konprann ramification yon lòd.",
                 "COMMANDPLACEHODLER": "Mete kòmandman an"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Kòmanse blòk"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Kòmand reparasyon sa yo pa ka kouri lè Linda Core ap kouri deyò",
-                "INFO": "Bouton ki anba a yo pral rekòmanse Linda Nwayo ak lòd liy-liy opsyon pou repare bous la, ranje pwoblèm ak dosye bloke koripsyon oswa tranzaksyon ki manke / obsolèt.",
+                "INFOEXTERNAL": "Kòmand reparasyon sa yo pa ka kouri lè Metrix Core ap kouri deyò",
+                "INFO": "Bouton ki anba a yo pral rekòmanse Metrix Nwayo ak lòd liy-liy opsyon pou repare bous la, ranje pwoblèm ak dosye bloke koripsyon oswa tranzaksyon ki manke / obsolèt.",
                 "SALVAGEBUTTON": "Salvage bous",
                 "SALVAGEINFO": "-salvagewallet: Eseye refè kle prive ki sòti nan yon wallet.dat fin pouri.",
                 "RESCANBUTTON": "Rescan blockchain dosye",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Nwayo",
-            "ABOUTCORE": "Copyright © 2009-2015 devlopè yo Bitcoin <br/> Copyright © 2011-2012 devlopè PPCoin <br/> Copyright © 2012-2014 Developer yo NovaCoin <br/> Copyright © 2014-2018 devlopè Linda <br/><br/> Sa a se lojisyèl eksperimantal. <br/> Distribye anba lisans lojisyèl MIT / X11 lan, gade kopi ki mache avèk li a oswa http://www.opensource.org/licenses/mit-license.php. <br/><br/> Pwodui sa a gen ladan lojisyèl devlope pa OpenSSL Pwojè a pou itilize nan OpenSSL Toolkit la (https://www.openssl.org) ak lojisyèl kriptografik ekri pa Eric Young (eay@cryptsoft.com) ak lojisyèl UPnP ekri pa Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Nwayo",
+            "ABOUTCORE": "Copyright © 2009-2015 devlopè yo Bitcoin <br/> Copyright © 2011-2012 devlopè PPCoin <br/> Copyright © 2012-2014 Developer yo NovaCoin <br/> Copyright © 2014-2019 devlopè Metrix <br/><br/> Sa a se lojisyèl eksperimantal. <br/> Distribye anba lisans lojisyèl MIT / X11 lan, gade kopi ki mache avèk li a oswa http://www.opensource.org/licenses/mit-license.php. <br/><br/> Pwodui sa a gen ladan lojisyèl devlope pa OpenSSL Pwojè a pou itilize nan OpenSSL Toolkit la (https://www.openssl.org) ak lojisyèl kriptografik ekri pa Eric Young (eay@cryptsoft.com) ak lojisyèl UPnP ekri pa Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitid",
-            "ABOUTALTITUDE": "Copyright © 2018 devlopè yo Linda <br/><br/> Lojisyèl sa a distribye dapre lisans GPL-3.0, gade https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE pou plis enfòmasyon."
+            "ABOUTALTITUDE": "Copyright © 2019 devlopè yo Metrix <br/><br/> Lojisyèl sa a distribye dapre lisans GPL-3.0, gade https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE pou plis enfòmasyon."
         },
         "LOCALE": {
             "TITLE": "Chwazi lang"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Antre nan Passifrase bous ou",
             "UNLOCKSTAKINGONLY": "Degaje pou pran sèlman",
-            "CLIENTUPDATETITLE": "Linda Nwayo Mizajou Disponib",
-            "CLIENTUPDATEINFO": "Yon ajou ki disponib pou Linda Nwayo. Èske ou ta renmen enstale li kounye a?",
+            "CLIENTUPDATETITLE": "Metrix Nwayo Mizajou Disponib",
+            "CLIENTUPDATEINFO": "Yon ajou ki disponib pou Metrix Nwayo. Èske ou ta renmen enstale li kounye a?",
             "WALLETUPDATETITLE": "Altitid Mizajou ki disponib",
             "WALLETUPDATEINFO": "Yon ajou ki disponib pou Altitid. Èske ou ta renmen download li kounye a?",
             "CLIENTUPDATEBUTTON": "Mete ajou",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Chanje Passphrase",
             "ENCRYPTTITLE": "Ankripte bous ou",
             "ENCRYPTBUTTON": "Ankouraje",
-            "CLIENTSTOPPEDTITLE": "Linda Nwayo sispann",
-            "CLIENTSTOPPEDINFO": "Koneksyon ki te pèdi nan Linda Nwayo. Ou ka sispann bous la oswa kòmanse entèn Linda Nwayo a.",
+            "CLIENTSTOPPEDTITLE": "Metrix Nwayo sispann",
+            "CLIENTSTOPPEDINFO": "Koneksyon ki te pèdi nan Metrix Nwayo. Ou ka sispann bous la oswa kòmanse entèn Metrix Nwayo a.",
             "CLIENTSTOPPEDBUTTONEXIT": "Sòti bous",
-            "CLIENTSTOPPEDBUTTONSTART": "Kòmanse Linda Nwayo",
+            "CLIENTSTOPPEDBUTTONSTART": "Kòmanse Metrix Nwayo",
             "ENCRYPTEDTITLE": "Bousè chiffres",
             "ENCRYPTEDCONTENT": "Nenpòt backups anvan ou te fè nan dosye bous ou ta dwe ranplase ak dosye a ki fèk kreye, chiffres bous. Pou rezon sekirite, sovgad anvan yo nan dosye a bouskriptè ki pa eskize pral vin initil le pli vit ke ou kòmanse lè l sèvi avèk nouvo, chiffres bous.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Nwayo sispann Sanzatann",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Te gen yon pwoblèm ak Linda Nwayo ki te lakòz li nan fen. Li rekòmande yo tcheke dosye debug.log ou a pou pwoblèm.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Nwayo sispann Sanzatann",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Te gen yon pwoblèm ak Metrix Nwayo ki te lakòz li nan fen. Li rekòmande yo tcheke dosye debug.log ou a pou pwoblèm.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rekòmanse Kliyan",
-            "CLIENTINVALIDCONFIGTITLE": "Enskri Linda.conf konte genyen",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Linda Nwayo sòti imedyatman. Tanpri tcheke dosye sa a."
+            "CLIENTINVALIDCONFIGTITLE": "Enskri metrix.conf konte genyen",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Metrix Nwayo sòti imedyatman. Tanpri tcheke dosye sa a."
         },
         "ADDRESSBOOK": {
             "TITLE": "Liv adrès",
-            "SENDINGINFO": "Sa yo se sove ou Linda adrès pou voye peman yo. Toujou tcheke kantite lajan an ak resevwa adrès anvan voye pyès monnen",
-            "RECEIVINGINFO": "Sa yo se adrès sove Linda ou a pou resevwa peman yo.",
+            "SENDINGINFO": "Sa yo se sove ou Metrix adrès pou voye peman yo. Toujou tcheke kantite lajan an ak resevwa adrès anvan voye pyès monnen",
+            "RECEIVINGINFO": "Sa yo se adrès sove Metrix ou a pou resevwa peman yo.",
             "BUTTONSELECT": "Chwazi",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Adrès",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Siyen Mesaj...",
             "VERIFYMESSAGE": "Verify Mesaj...",
             "LOCALE": "Lang...",
-            "RESTARTCORE": "Rekòmanse Linda Nwayo",
+            "RESTARTCORE": "Rekòmanse Metrix Nwayo",
             "EXIT": "Sòti",
             "OPTIONS": "Opsyon..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Èd",
             "COMMANDLINEOPTIONS": "Kòmandman Liy Opsyon...",
-            "CHECKUPDATECORE": "Tcheke pou Linda Nwayo Mizajou...",
+            "CHECKUPDATECORE": "Tcheke pou Metrix Nwayo Mizajou...",
             "CHECKUPDATEWALLET": "Tcheke pou Altitid...",
-            "ABOUTCORE": "About Linda Nwayo...",
+            "ABOUTCORE": "About Metrix Nwayo...",
             "ABOUTALTITUDE": "Konsènan Altitid...",
             "DISCORD": "Discord...",
             "ISSUE": "Rapòte yon pwoblèm..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Klè tout",
         "ENTERACCOUNTLABEL": "Mete yon etikèt pou adrès sa a",
-        "ENTERADDRESSLABEL": "Mete yon adrès Linda",
+        "ENTERADDRESSLABEL": "Mete yon adrès Metrix",
         "AGO": "de sa",
         "SORTBY": "Triye pa",
         "SEARCH": "Search",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Aksepte"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inisyalize Linda Nwayo...",
-        "DOWNLOADCLIENT": "Download Linda Nwayo...",
-        "UPDATEAVAILABLE": "Linda Nwayo Mizajou Disponib",
-        "SHUTTINGDOWN": "Fèmen Linda Nwayo...",
-        "RESTARTING": "Rekòmanse Linda Nwayo..."
+        "INITIALISING": "Inisyalize Metrix Nwayo...",
+        "DOWNLOADCLIENT": "Download Metrix Nwayo...",
+        "UPDATEAVAILABLE": "Metrix Nwayo Mizajou Disponib",
+        "SHUTTINGDOWN": "Fèmen Metrix Nwayo...",
+        "RESTARTING": "Rekòmanse Metrix Nwayo..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nouvo kont kreye avèk siksè",

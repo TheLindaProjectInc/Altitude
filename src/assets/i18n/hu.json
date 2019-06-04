@@ -49,7 +49,7 @@
             "STAKINGTITLE": "A pénztárca jelenleg üres",
             "NOTENABLEDTITLE": "A Staking nem engedélyezett",
             "NOTENABLEDINFO": "A Staking jelenleg nincs engedélyezve.",
-            "NOTENABLEDINSTR": "A tét érdekében a Linda.conf fájlban engedélyezni kell a staking = 1 staking beállítást.",
+            "NOTENABLEDINSTR": "A tét érdekében a metrix.conf fájlban engedélyezni kell a staking = 1 staking beállítást.",
             "NOTSTAKINGTITLE": "A pénztárca nem üres",
             "NOTSTAKINGINFO": "A mobiltárca jelenleg zárolva van a zároláshoz.",
             "NOTSTAKINGINSTR": "Elkezdheti a staking-et, ha feloldja a pénztárcáját",
@@ -69,7 +69,7 @@
             "ADDRESS": "Cím",
             "ENABLED": "Bekapcsolt",
             "NOTENABLEDTITLE": "A masternodes nincs engedélyezve",
-            "NOTENABLEDINSTR": "A masternode futtatásához engedélyezni kell a masternódok engedélyezését az masternode = 1 beállításával és a \"masternodeprivkey\" és a \"masternodeaddr\" változók beállításával a Linda.conf fájlban.",
+            "NOTENABLEDINSTR": "A masternode futtatásához engedélyezni kell a masternódok engedélyezését az masternode = 1 beállításával és a \"masternodeprivkey\" és a \"masternodeaddr\" változók beállításával a metrix.conf fájlban.",
             "STARTBUTTON": "Helyi indítás",
             "STARTALIASBUTTON": "Az Alias elindítása",
             "STARTALLBUTTON": "Indítsa el az összeset"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Magassági verzió"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Üdvözöljük a Linda Core RPC konzolon. Írja be a súgót az elérhető parancsok áttekintéséhez.",
+                "CONSOLEINFO": "Üdvözöljük a Metrix Core RPC konzolon. Írja be a súgót az elérhető parancsok áttekintéséhez.",
                 "CONSOLEWARNING": "FIGYELMEZTETÉS: A csalók aktívak voltak, és azt mondták a felhasználóknak, hogy ide írják a parancsokat, és ellopják a tárca tartalmát. Ne használja ezt a konzolt anélkül, hogy tökéletesen megértené a parancs elágazását.",
                 "COMMANDPLACEHODLER": "Adja meg a parancsot"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Blokk elindítása"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ezeket a javítási parancsokat nem lehet futtatni, ha a Linda Core külsőleg fut",
-                "INFO": "Az alábbi gombok újraindítják a Linda Core parancssori opciókat a tárhely javításához, a korrupt blokkcsatornákkal kapcsolatos problémák megoldásához, illetve a hiányzó / elavult tranzakciókhoz.",
+                "INFOEXTERNAL": "Ezeket a javítási parancsokat nem lehet futtatni, ha a Metrix Core külsőleg fut",
+                "INFO": "Az alábbi gombok újraindítják a Metrix Core parancssori opciókat a tárhely javításához, a korrupt blokkcsatornákkal kapcsolatos problémák megoldásához, illetve a hiányzó / elavult tranzakciókhoz.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Próbálja meg visszaszerezni a privát kulcsokat egy korrupt wallet.dat-ből.",
                 "RESCANBUTTON": "Lapolvasási fájlok újrakeresése",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 A Bitcoin fejlesztői <br/> Copyright © 2011-2012 PPCoin fejlesztők <br/> Copyright © 2012-2014 A NovaCoin fejlesztői <br/> Copyright © 2014-2018 A Linda fejlesztői <br/><br/> Ez kísérleti szoftver. <br/> Az MIT / X11 szoftversz licenccel elosztva nézze meg a kísérő COPYING vagy a http://www.opensource.org/licenses/mit-license.php fájlt. <br/><br/> Ez a termék az OpenSSL Project által kifejlesztett szoftvert használja az OpenSSL Toolkit (https://www.openssl.org) és az Eric Young (eay@cryptsoft.com) és a Thomas Bernard által írt UPnP szoftver által írt kriptográfiai szoftverekhez.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 A Bitcoin fejlesztői <br/> Copyright © 2011-2012 PPCoin fejlesztők <br/> Copyright © 2012-2014 A NovaCoin fejlesztői <br/> Copyright © 2014-2019 A Metrix fejlesztői <br/><br/> Ez kísérleti szoftver. <br/> Az MIT / X11 szoftversz licenccel elosztva nézze meg a kísérő COPYING vagy a http://www.opensource.org/licenses/mit-license.php fájlt. <br/><br/> Ez a termék az OpenSSL Project által kifejlesztett szoftvert használja az OpenSSL Toolkit (https://www.openssl.org) és az Eric Young (eay@cryptsoft.com) és a Thomas Bernard által írt UPnP szoftver által írt kriptográfiai szoftverekhez.",
             "ABOUTALTITUDETAB": "Magasság",
-            "ABOUTALTITUDE": "Copyright © 2018 A Linda fejlesztői <br/><br/> Ez a szoftver a GPL-3.0 licenc alatt található, további információkért lásd: https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 A Metrix fejlesztői <br/><br/> Ez a szoftver a GPL-3.0 licenc alatt található, további információkért lásd: https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Válasszon nyelvet"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Adja meg a Wallet jelszavát",
             "UNLOCKSTAKINGONLY": "Csak zárolás engedélyezése",
-            "CLIENTUPDATETITLE": "Linda Core frissítés elérhető",
-            "CLIENTUPDATEINFO": "Frissítés elérhető a Linda Core számára. Szeretne most telepíteni?",
+            "CLIENTUPDATETITLE": "Metrix Core frissítés elérhető",
+            "CLIENTUPDATEINFO": "Frissítés elérhető a Metrix Core számára. Szeretne most telepíteni?",
             "WALLETUPDATETITLE": "Magassági frissítés elérhető",
             "WALLETUPDATEINFO": "Frissítés elérhető a Magassághoz. Szeretne letölteni most?",
             "CLIENTUPDATEBUTTON": "frissítés",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Passphrase módosítása",
             "ENCRYPTTITLE": "Titkosítsa a tárcáját",
             "ENCRYPTBUTTON": "titkosítása",
-            "CLIENTSTOPPEDTITLE": "Linda Core megállt",
-            "CLIENTSTOPPEDINFO": "A kapcsolat elvesztette a Linda Core-t. Leállíthatja a pénztárcát vagy elindíthatja a belső Linda Core-t.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core megállt",
+            "CLIENTSTOPPEDINFO": "A kapcsolat elvesztette a Metrix Core-t. Leállíthatja a pénztárcát vagy elindíthatja a belső Metrix Core-t.",
             "CLIENTSTOPPEDBUTTONEXIT": "Kilépés a pénztárcából",
-            "CLIENTSTOPPEDBUTTONSTART": "Indítsa el Linda Core-et",
+            "CLIENTSTOPPEDBUTTONSTART": "Indítsa el Metrix Core-et",
             "ENCRYPTEDTITLE": "Titkosított pénztárca",
             "ENCRYPTEDCONTENT": "A pénztárcafájlról készített minden korábbi mentést ki kell cserélni az újonnan létrehozott, titkosított tárcakönyvtárral. Biztonsági okokból a titkosítatlan pénztárcakönyv korábbi mentései használhatatlanná válnak, amint elkezdi használni az új, titkosított tárcát.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core váratlanul állt meg",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma volt a Linda Core-szal, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák miatt.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core váratlanul állt meg",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma volt a Metrix Core-szal, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák miatt.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Indítsa újra az Ügyfelet",
-            "CLIENTINVALIDCONFIGTITLE": "Érvénytelen Linda.conf konfiguráció",
-            "CLIENTINVALIDCONFIGINFO": "A Linda.conf-nak érvénytelen masternode-beállítása van, ami a Linda Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt."
+            "CLIENTINVALIDCONFIGTITLE": "Érvénytelen metrix.conf konfiguráció",
+            "CLIENTINVALIDCONFIGINFO": "A metrix.conf-nak érvénytelen masternode-beállítása van, ami a Metrix Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt."
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
-            "SENDINGINFO": "Ezek a megtakarított Linda címek a kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó címet, mielőtt érméket küldene",
-            "RECEIVINGINFO": "Ezek a megtakarított Linda címek a befizetések fogadására.",
+            "SENDINGINFO": "Ezek a megtakarított Metrix címek a kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó címet, mielőtt érméket küldene",
+            "RECEIVINGINFO": "Ezek a megtakarított Metrix címek a befizetések fogadására.",
             "BUTTONSELECT": "választ",
             "TABLECOLUMNS_LABEL": "Címke",
             "TABLECOLUMNS_ADDRESS": "Cím",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Üzenet írása...",
             "VERIFYMESSAGE": "Az üzenet ellenőrzése...",
             "LOCALE": "Nyelv...",
-            "RESTARTCORE": "Indítsa újra a Linda Core-t",
+            "RESTARTCORE": "Indítsa újra a Metrix Core-t",
             "EXIT": "Kijárat",
             "OPTIONS": "Opciók..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Segítség",
             "COMMANDLINEOPTIONS": "Parancssor opciók...",
-            "CHECKUPDATECORE": "Ellenőrizze a Linda Core frissítést...",
+            "CHECKUPDATECORE": "Ellenőrizze a Metrix Core frissítést...",
             "CHECKUPDATEWALLET": "Ellenőrizze a magassági frissítést...",
-            "ABOUTCORE": "Linda Core-ről...",
+            "ABOUTCORE": "Metrix Core-ről...",
             "ABOUTALTITUDE": "Körülbelül Magasság...",
             "DISCORD": "Viszály...",
             "ISSUE": "Jelentés küldése..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "rendben",
         "CLEARALLBUTTON": "Mindent kitöröl",
         "ENTERACCOUNTLABEL": "Adjon meg egy címkét ehhez a címhez",
-        "ENTERADDRESSLABEL": "Adjon meg egy Linda címet",
+        "ENTERADDRESSLABEL": "Adjon meg egy Metrix címet",
         "AGO": "ezelőtt",
         "SORTBY": "Sorrend",
         "SEARCH": "Keresés",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Elfogad"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core indítása...",
-        "DOWNLOADCLIENT": "Linda Core letöltése...",
-        "UPDATEAVAILABLE": "Linda Core frissítés elérhető",
-        "SHUTTINGDOWN": "Linda Core leállítása...",
-        "RESTARTING": "Linda Core újraindítása..."
+        "INITIALISING": "Metrix Core indítása...",
+        "DOWNLOADCLIENT": "Metrix Core letöltése...",
+        "UPDATEAVAILABLE": "Metrix Core frissítés elérhető",
+        "SHUTTINGDOWN": "Metrix Core leállítása...",
+        "RESTARTING": "Metrix Core újraindítása..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Új fiók sikeresen létrehozva",

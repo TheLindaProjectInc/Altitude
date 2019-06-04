@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Tá sparán á stiúradh faoi láthair",
             "NOTENABLEDTITLE": "Níl cumas ag caint",
             "NOTENABLEDINFO": "Níl cumas ag caint faoi láthair.",
-            "NOTENABLEDINSTR": "Chun páirt a ghlacadh beidh ort socrú a dhéanamh ar shuíomh staking = 1 i do chomhad Linda.conf.",
+            "NOTENABLEDINSTR": "Chun páirt a ghlacadh beidh ort socrú a dhéanamh ar shuíomh staking = 1 i do chomhad metrix.conf.",
             "NOTSTAKINGTITLE": "Níl sparán á stiúradh",
             "NOTSTAKINGINFO": "Tá do sparán faoi ghlas faoi láthair le haghaidh stánaithe.",
             "NOTSTAKINGINSTR": "Is féidir leat tosú ag bogadh trí do chuid sparán a dhíghlasáil chun stádú",
@@ -69,7 +69,7 @@
             "ADDRESS": "Seoladh",
             "ENABLED": "Cumasaithe",
             "NOTENABLEDTITLE": "Níor chuir Masternodes ar chumas",
-            "NOTENABLEDINSTR": "Chun masternode a reáchtáil, caithfidh tú a chumasú do masternodes trí masternode = 1 a leagan síos agus athruithe 'masternodeprivkey' agus 'masternodeaddr' a chumrú i do chomhad Linda.conf.",
+            "NOTENABLEDINSTR": "Chun masternode a reáchtáil, caithfidh tú a chumasú do masternodes trí masternode = 1 a leagan síos agus athruithe 'masternodeprivkey' agus 'masternodeaddr' a chumrú i do chomhad metrix.conf.",
             "STARTBUTTON": "Tosaigh Áitiúil",
             "STARTALIASBUTTON": "Tosaigh Alias",
             "STARTALLBUTTON": "Tosaigh Gach"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Leagan airde"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Fáilte go dtí consól Linda Core RPC. Tabhair cabhair le haghaidh forbhreathnú ar na horduithe atá ar fáil.",
+                "CONSOLEINFO": "Fáilte go dtí consól Metrix Core RPC. Tabhair cabhair le haghaidh forbhreathnú ar na horduithe atá ar fáil.",
                 "CONSOLEWARNING": "RABHADH: Tá scammers gníomhach, ag insint do na húsáideoirí na horduithe a chlóscríobh anseo, ag stealladh a n-ábhar sparán. Ná húsáid an consól seo gan tuiscint iomlán a thabhairt ar an rúnú ar ordú.",
                 "COMMANDPLACEHODLER": "Cuir isteach Ordú"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Bloc Tosaithe"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ní féidir na horduithe deisiúcháin seo a reáchtáil nuair a reáchtáiltear Linda Core go seachtrach",
-                "INFO": "Tosóidh na cnaipí thíos Linda Core le roghanna líne ordú chun an sparán a dheisiú, ceisteanna a shocrú le comhaid blockchain truaillithe nó idirbhearta ar iarraidh / as feidhm.",
+                "INFOEXTERNAL": "Ní féidir na horduithe deisiúcháin seo a reáchtáil nuair a reáchtáiltear Metrix Core go seachtrach",
+                "INFO": "Tosóidh na cnaipí thíos Metrix Core le roghanna líne ordú chun an sparán a dheisiú, ceisteanna a shocrú le comhaid blockchain truaillithe nó idirbhearta ar iarraidh / as feidhm.",
                 "SALVAGEBUTTON": "Sparán Sábhála",
                 "SALVAGEINFO": "-salvagewallet: Déan iarracht eochracha príobháideacha a ghnóthú ó wallet.dat truaillithe.",
                 "RESCANBUTTON": "Comhaid blockchain Rescan",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Cóipcheart © 2009-2015 Na forbróirí Bitcoin <br/> Cóipcheart © 2011-2012 Forbróirí PPCoin <br/> Cóipcheart © 2012-2014 Forbróirí NovaCoin <br/> Cóipcheart © 2014-2018 Forbróirí Linda <br/><br/> Is bogearraí turgnamhacha é seo. <br/> Dáileadh faoi cheadúnas bogearraí MIT / X11, féach an comhad a ghabhann leis COPYING nó http://www.opensource.org/licenses/mit-license.php. <br/><br/> Áirítear leis an táirge seo bogearraí arna bhforbairt ag an Tionscadal OpenSSL le húsáid i Toolkit Toolkit (https://www.openssl.org) agus bogearraí cripteagrafacha a scríobh Eric Young (eay@cryptsoft.com) agus bogearraí UPnP a scríobh Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Cóipcheart © 2009-2015 Na forbróirí Bitcoin <br/> Cóipcheart © 2011-2012 Forbróirí PPCoin <br/> Cóipcheart © 2012-2014 Forbróirí NovaCoin <br/> Cóipcheart © 2014-2019 Forbróirí Metrix <br/><br/> Is bogearraí turgnamhacha é seo. <br/> Dáileadh faoi cheadúnas bogearraí MIT / X11, féach an comhad a ghabhann leis COPYING nó http://www.opensource.org/licenses/mit-license.php. <br/><br/> Áirítear leis an táirge seo bogearraí arna bhforbairt ag an Tionscadal OpenSSL le húsáid i Toolkit Toolkit (https://www.openssl.org) agus bogearraí cripteagrafacha a scríobh Eric Young (eay@cryptsoft.com) agus bogearraí UPnP a scríobh Thomas Bernard.",
             "ABOUTALTITUDETAB": "Airde",
-            "ABOUTALTITUDE": "Cóipcheart © 2018 Forbróirí Linda <br/><br/> Déantar an bogearraí seo a dháileadh faoin gceadúnas GPL-3.0, féach https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE le haghaidh tuilleadh eolais."
+            "ABOUTALTITUDE": "Cóipcheart © 2019 Forbróirí Metrix <br/><br/> Déantar an bogearraí seo a dháileadh faoin gceadúnas GPL-3.0, féach https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE le haghaidh tuilleadh eolais."
         },
         "LOCALE": {
             "TITLE": "Roghnaigh Teanga"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Iontráil Do Ráta Soghluaiste",
             "UNLOCKSTAKINGONLY": "Díghlasáil le haghaidh staking amháin",
-            "CLIENTUPDATETITLE": "Nuashonrú Linda Core ar fáil",
-            "CLIENTUPDATEINFO": "Tá nuashonrú ar fáil do Linda Core. Ar mhaith leat é a shuiteáil anois?",
+            "CLIENTUPDATETITLE": "Nuashonrú Metrix Core ar fáil",
+            "CLIENTUPDATEINFO": "Tá nuashonrú ar fáil do Metrix Core. Ar mhaith leat é a shuiteáil anois?",
             "WALLETUPDATETITLE": "Nuashonrú ar airde ar fáil",
             "WALLETUPDATEINFO": "Tá nuashonrú ar fáil le haghaidh airde. Ar mhaith leat é a íoslódáil anois?",
             "CLIENTUPDATEBUTTON": "Nuashonrú",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Athraigh an Pasfhocal",
             "ENCRYPTTITLE": "Criptigh do sparán",
             "ENCRYPTBUTTON": "Criptigh",
-            "CLIENTSTOPPEDTITLE": "Stop Linda Core",
-            "CLIENTSTOPPEDINFO": "Tá an nasc ceangailte le Linda Core. Is féidir leat an sparán a stopadh nó an Linda Core inmheánach a thosú.",
+            "CLIENTSTOPPEDTITLE": "Stop Metrix Core",
+            "CLIENTSTOPPEDINFO": "Tá an nasc ceangailte le Metrix Core. Is féidir leat an sparán a stopadh nó an Metrix Core inmheánach a thosú.",
             "CLIENTSTOPPEDBUTTONEXIT": "Sparán Scoir",
-            "CLIENTSTOPPEDBUTTONSTART": "Tosaigh Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Tosaigh Metrix Core",
             "ENCRYPTEDTITLE": "Sparán Criptithe",
             "ENCRYPTEDCONTENT": "Ba cheart go gcuirfí an comhad sparán criptithe nua-ghinte in ionad aon chúltaca roimhe sin a rinne tú ar do chomhad sparán. Ar chúiseanna slándála, beidh cúltacaí roimhe seo den chomhadán sparán gan criptiú gan úsáid chomh luath agus a thosaíonn tú ag baint úsáide as an sparán nua criptithe.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopadh Linda Core gan choinne",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Linda Core a d'fhág go dtiocfadh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh ceisteanna.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopadh Metrix Core gan choinne",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a d'fhág go dtiocfadh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh ceisteanna.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Cliaint Atosaigh",
-            "CLIENTINVALIDCONFIGTITLE": "Cumraíocht Linda.conf neamhbhailí",
-            "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do Linda.conf a chuirfidh faoi deara go bhfuil Linda Core scoir láithreach. Seiceáil an comhad seo le do thoil."
+            "CLIENTINVALIDCONFIGTITLE": "Cumraíocht metrix.conf neamhbhailí",
+            "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do metrix.conf a chuirfidh faoi deara go bhfuil Metrix Core scoir láithreach. Seiceáil an comhad seo le do thoil."
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar seoltaí",
-            "SENDINGINFO": "Seo iad do sheoladh Linda shábháil le haghaidh íocaíochtaí a sheoladh. Seiceáil i gcónaí an méid agus an seoladh glactha sula gcuirfear na boinn",
-            "RECEIVINGINFO": "Seo iad do sheoladh shábháil Linda chun íocaíochtaí a fháil.",
+            "SENDINGINFO": "Seo iad do sheoladh Metrix shábháil le haghaidh íocaíochtaí a sheoladh. Seiceáil i gcónaí an méid agus an seoladh glactha sula gcuirfear na boinn",
+            "RECEIVINGINFO": "Seo iad do sheoladh shábháil Metrix chun íocaíochtaí a fháil.",
             "BUTTONSELECT": "Roghnaigh",
             "TABLECOLUMNS_LABEL": "Lipéad",
             "TABLECOLUMNS_ADDRESS": "Seoladh",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Teachtaireacht Comhartha...",
             "VERIFYMESSAGE": "Teachtaireacht a fhíorú...",
             "LOCALE": "Teanga...",
-            "RESTARTCORE": "Atosaigh Linda Core",
+            "RESTARTCORE": "Atosaigh Metrix Core",
             "EXIT": "An slí amach",
             "OPTIONS": "Roghanna..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Cabhrú",
             "COMMANDLINEOPTIONS": "Roghanna Líne Ordú...",
-            "CHECKUPDATECORE": "Seiceáil le haghaidh Linda Core Update...",
+            "CHECKUPDATECORE": "Seiceáil le haghaidh Metrix Core Update...",
             "CHECKUPDATEWALLET": "Seiceáil le haghaidh Nuashonrú ar airde...",
-            "ABOUTCORE": "Maidir Linda Core...",
+            "ABOUTCORE": "Maidir Metrix Core...",
             "ABOUTALTITUDE": "Faoi airde...",
             "DISCORD": "Discord...",
             "ISSUE": "Tuairisc ar an Eisiúint..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Soiléir ar fad",
         "ENTERACCOUNTLABEL": "Cuir isteach lipéad don seoladh seo",
-        "ENTERADDRESSLABEL": "Cuir isteach seoladh Linda",
+        "ENTERADDRESSLABEL": "Cuir isteach seoladh Metrix",
         "AGO": "ó shin",
         "SORTBY": "Sórtáil de réir",
         "SEARCH": "Cuardaigh",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Glac leis"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Ag tosú Linda Core...",
-        "DOWNLOADCLIENT": "Íoslódáil Linda Core...",
-        "UPDATEAVAILABLE": "Nuashonrú Linda Core ar fáil",
-        "SHUTTINGDOWN": "Ag cur síos ar Linda Core...",
-        "RESTARTING": "Athshlánú Linda Core..."
+        "INITIALISING": "Ag tosú Metrix Core...",
+        "DOWNLOADCLIENT": "Íoslódáil Metrix Core...",
+        "UPDATEAVAILABLE": "Nuashonrú Metrix Core ar fáil",
+        "SHUTTINGDOWN": "Ag cur síos ar Metrix Core...",
+        "RESTARTING": "Athshlánú Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cruthaíodh cuntas nua go rathúil",

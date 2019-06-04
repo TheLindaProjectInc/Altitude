@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Кашалёк у цяперашні час стаўкі",
             "NOTENABLEDTITLE": "Разбіўка не ўключаны",
             "NOTENABLEDINFO": "Разбіўка ў цяперашні час не ўключаная.",
-            "NOTENABLEDINSTR": "Для разбіўкі вам трэба будзе ўключыць стаўку наладу зачеканенных = 1 у файле Linda.conf.",
+            "NOTENABLEDINSTR": "Для разбіўкі вам трэба будзе ўключыць стаўку наладу зачеканенных = 1 у файле metrix.conf.",
             "NOTSTAKINGTITLE": "Кашалёк не робячы стаўку",
             "NOTSTAKINGINFO": "Ваш кашалёк у цяперашні час заблакаваны за стаўку.",
             "NOTSTAKINGINSTR": "Вы можаце пачаць зачеканенную абудзіўшы ваш кашалёк для правешваннем",
@@ -69,7 +69,7 @@
             "ADDRESS": "адрас",
             "ENABLED": "уключана",
             "NOTENABLEDTITLE": "Masternodes не ўключаны",
-            "NOTENABLEDINSTR": "Для запуску masternode вам неабходна ўключыць masternodes, усталяваўшы masternode = 1 і настройка «masternodeprivkey» і зменныя «masternodeaddr» у файле Linda.conf.",
+            "NOTENABLEDINSTR": "Для запуску masternode вам неабходна ўключыць masternodes, усталяваўшы masternode = 1 і настройка «masternodeprivkey» і зменныя «masternodeaddr» у файле metrix.conf.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Пачатак Аліяс",
             "STARTALLBUTTON": "Start All"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Вышыня над узроўнем мора Версія"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Сардэчна запрашаем у кансоль Linda Ядро RPC. Тып даведка для атрымання дадатковай інфармацыі аб даступных камандах.",
+                "CONSOLEINFO": "Сардэчна запрашаем у кансоль Metrix Ядро RPC. Тып даведка для атрымання дадатковай інфармацыі аб даступных камандах.",
                 "CONSOLEWARNING": "УВАГА: Ашуканцы былі актыўныя, кажучы карыстальнікам ўводзіць каманды тут, крадучы іх змесціва паперніка. Не выкарыстоўвайце гэтую кансоль без поўнага разумення галінавання каманды.",
                 "COMMANDPLACEHODLER": "увядзіце каманду"
             },
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda ядро",
-            "ABOUTCORE": "Усе правы абаронены © 2009-2015 Распрацоўнікі Bitcoin <br/> Copyright © 2011-2012 PPCoin распрацоўшчыкаў <br/> Усе правы абаронены © 2012-2014 Распрацоўнікі NovaCoin <br/> Copyright © 2014-2018 распрацоўшчыкаў Лінды <br/><br/> Гэта эксперыментальнае праграмнае забеспячэнне. <br/> Распаўсюджваецца пад ліцэнзіяй MIT / X11 см суправаджальнага КАПІЯВАННЯ файла або http://www.opensource.org/licenses/mit-license.php. <br/><br/> Гэты прадукт ўключае ў сябе праграмнае забеспячэнне, распрацаванае ў рамках праекта OpenSSL для выкарыстання ў наборы інструментаў OpenSSL (https://www.openssl.org) і крыптаграфічнага праграмнага забеспячэння, напісанага Эрыкам Янгом (eay@cryptsoft.com) і праграмнага забеспячэння UPnP, напісанай Томасам Бернарда.",
+            "ABOUTCORETAB": "Metrix ядро",
+            "ABOUTCORE": "Усе правы абаронены © 2009-2015 Распрацоўнікі Bitcoin <br/> Copyright © 2011-2012 PPCoin распрацоўшчыкаў <br/> Усе правы абаронены © 2012-2014 Распрацоўнікі NovaCoin <br/> Copyright © 2014-2019 распрацоўшчыкаў Лінды <br/><br/> Гэта эксперыментальнае праграмнае забеспячэнне. <br/> Распаўсюджваецца пад ліцэнзіяй MIT / X11 см суправаджальнага КАПІЯВАННЯ файла або http://www.opensource.org/licenses/mit-license.php. <br/><br/> Гэты прадукт ўключае ў сябе праграмнае забеспячэнне, распрацаванае ў рамках праекта OpenSSL для выкарыстання ў наборы інструментаў OpenSSL (https://www.openssl.org) і крыптаграфічнага праграмнага забеспячэння, напісанага Эрыкам Янгом (eay@cryptsoft.com) і праграмнага забеспячэння UPnP, напісанай Томасам Бернарда.",
             "ABOUTALTITUDETAB": "вышыня над узроўнем мора",
-            "ABOUTALTITUDE": "Copyright © 2018 распрацоўшчыкаў Лінды <br/><br/> Гэта праграмнае забеспячэнне распаўсюджваецца пад ліцэнзіяй GPL-3.0 см https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE для атрымання дадатковай інфармацыі."
+            "ABOUTALTITUDE": "Copyright © 2019 распрацоўшчыкаў Лінды <br/><br/> Гэта праграмнае забеспячэнне распаўсюджваецца пад ліцэнзіяй GPL-3.0 см https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE для атрымання дадатковай інфармацыі."
         },
         "LOCALE": {
             "TITLE": "выбар мовы"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Калі ласка, увядзіце Ваш кашалёк Passphrase",
             "UNLOCKSTAKINGONLY": "Разблакіроўка для стаўку толькі",
-            "CLIENTUPDATETITLE": "Linda Ядро Даступныя абнаўлення",
-            "CLIENTUPDATEINFO": "Абнаўленне даступна для Linda Core. Вы хочаце ўсталяваць яго цяпер?",
+            "CLIENTUPDATETITLE": "Metrix Ядро Даступныя абнаўлення",
+            "CLIENTUPDATEINFO": "Абнаўленне даступна для Metrix Core. Вы хочаце ўсталяваць яго цяпер?",
             "WALLETUPDATETITLE": "Вышыня над узроўнем мора Даступныя абнаўлення",
             "WALLETUPDATEINFO": "Абнаўленне даступна для вышыні. загрузіць зараз вы хочаце?",
             "CLIENTUPDATEBUTTON": "абнаўленне",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "змена Passphrase",
             "ENCRYPTTITLE": "шыфраванне кашалёк",
             "ENCRYPTBUTTON": "шыфраваць",
-            "CLIENTSTOPPEDTITLE": "Linda Ядро Спыніўся",
+            "CLIENTSTOPPEDTITLE": "Metrix Ядро Спыніўся",
             "CLIENTSTOPPEDINFO": "Падключэнне было страчана Ліндзе Core. Вы можаце спыніць кашалёк або пачаць ўнутраную Лінду Co.",
             "CLIENTSTOPPEDBUTTONEXIT": "Выхад з паперніка",
             "CLIENTSTOPPEDBUTTONSTART": "Пачаць Ліндзе Стрыжань",
             "ENCRYPTEDTITLE": "кашалёк Зашыфраваныя",
             "ENCRYPTEDCONTENT": "Усе папярэднія рэзервовыя копіі, якія вы зрабілі з файла кашалька павінны быць замененыя на зноў створаным зашыфраваны файл кашалёк. Па меркаваннях бяспекі, папярэднія рэзервовыя копіі ў неабароненым файл папернік стануць бескарыснай, як толькі вы пачнеце выкарыстоўваць новы, зашыфраваны кашалёк.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Ядро Раптоўная",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Ядро Раптоўная",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Існаваў праблема з Ліндай Ядры, якая прымусіла яго спыніць. Гэта рэкамендуецца праверыць файл debug.log для пытанняў.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "перазагрузка кліента",
-            "CLIENTINVALIDCONFIGTITLE": "Недапушчальны Канфігурацыя Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ваш Linda.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл."
+            "CLIENTINVALIDCONFIGTITLE": "Недапушчальны Канфігурацыя metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адрасная кніга",
-            "SENDINGINFO": "Гэта захаваны Linda адрас для адпраўкі плацяжоў. Заўсёды правярайце суму і атрымліваць адрас перад адпраўкай манет",
-            "RECEIVINGINFO": "Гэта захаваны Linda адрас для прыёму плацяжоў.",
+            "SENDINGINFO": "Гэта захаваны Metrix адрас для адпраўкі плацяжоў. Заўсёды правярайце суму і атрымліваць адрас перад адпраўкай манет",
+            "RECEIVINGINFO": "Гэта захаваны Metrix адрас для прыёму плацяжоў.",
             "BUTTONSELECT": "выбраць",
             "TABLECOLUMNS_LABEL": "этыкетка",
             "TABLECOLUMNS_ADDRESS": "адрас",
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "дапамогу",
             "COMMANDLINEOPTIONS": "Параметры каманднага радка...",
-            "CHECKUPDATECORE": "Праверыць ядра Update Linda...",
+            "CHECKUPDATECORE": "Праверыць ядра Update Metrix...",
             "CHECKUPDATEWALLET": "Праверце Altitude абнаўлення...",
             "ABOUTCORE": "Аб Ліндзе Ядры...",
             "ABOUTALTITUDE": "Інфармацыя пра вышыню...",
@@ -329,7 +329,7 @@
         "OKBUTTON": "добра",
         "CLEARALLBUTTON": "Ачысціць усё",
         "ENTERACCOUNTLABEL": "Калі ласка, увядзіце пазнаку для гэтага адрасу",
-        "ENTERADDRESSLABEL": "Калі ласка, увядзіце адрас Linda",
+        "ENTERADDRESSLABEL": "Калі ласка, увядзіце адрас Metrix",
         "AGO": "назад",
         "SORTBY": "Сартаваць па",
         "SEARCH": "пошук",
@@ -338,8 +338,8 @@
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ініцыяванне Лінда Стрыжань...",
-        "DOWNLOADCLIENT": "Загрузка Linda Стрыжань...",
-        "UPDATEAVAILABLE": "Linda Ядро Даступныя абнаўлення",
+        "DOWNLOADCLIENT": "Загрузка Metrix Стрыжань...",
+        "UPDATEAVAILABLE": "Metrix Ядро Даступныя абнаўлення",
         "SHUTTINGDOWN": "Выключэнне Ліндзе Стрыжань...",
         "RESTARTING": "Перазапуск Лінда Стрыжань..."
     },

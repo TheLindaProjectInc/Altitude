@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Chikwata chechikwata iye zvino chiri kupinza",
             "NOTENABLEDTITLE": "Kutsika hakubvumiri",
             "NOTENABLEDINFO": "Staking haisi ikozvino yakabvumira.",
-            "NOTENABLEDINSTR": "Dambudziko rekuti iwe unofanirwa kuita kuti staking iite staking = 1 mune yako Linda.conf file.",
+            "NOTENABLEDINSTR": "Dambudziko rekuti iwe unofanirwa kuita kuti staking iite staking = 1 mune yako metrix.conf file.",
             "NOTSTAKINGTITLE": "Chiremba hachigadzi",
             "NOTSTAKINGINFO": "Mari yechikwama chako ikozvino chakavharwa kuti chigadzike.",
             "NOTSTAKINGINSTR": "Iwe unogona kutanga kutengesa nekuzarura chikwama chako chekugadzira",
@@ -69,7 +69,7 @@
             "ADDRESS": "Address",
             "ENABLED": "Yakagadzirirwa",
             "NOTENABLEDTITLE": "Masternodes haina kubvumira",
-            "NOTENABLEDINSTR": "Kuti utange masternode iwe uchada kubatsira masternodes nekuisa masternode = 1 uye kugadzirisa 'masternodeprivkey' uye 'masternodeaddr' mhando dziri muLinda.conf yako file.",
+            "NOTENABLEDINSTR": "Kuti utange masternode iwe uchada kubatsira masternodes nekuisa masternode = 1 uye kugadzirisa 'masternodeprivkey' uye 'masternodeaddr' mhando dziri mumetrix.conf yako file.",
             "STARTBUTTON": "Tanga Nharaunda",
             "STARTALIASBUTTON": "Tanga Alias",
             "STARTALLBUTTON": "Tanga Zvose"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Kureba kweAtitude"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Kugamuchirwa kuLinda Core RPC console. Tora rubatsiro rwekupfupisa kwemirairo iripo.",
+                "CONSOLEINFO": "Kugamuchirwa kuMetrix Core RPC console. Tora rubatsiro rwekupfupisa kwemirairo iripo.",
                 "CONSOLEWARNING": "CHENYENZISO: Vashanduri vave vachishanda, vachiudza vashandisi kuti vape mairairo pano, vachibira chikwama chavo mukati. Usashandise iyi console usinganyatsonzwisisi ramification yemurairo.",
                 "COMMANDPLACEHODLER": "Enter Command"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Kutanga Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Iyi mirairo yekugadzirisa haigoni kuendeswa apo Linda Core iri kumhanya kunze",
-                "INFO": "Iko mabhatani ari pasi apa anotanga kugovera Linda Core nemasarudza-mutsara wemirairo yekugadzirisa chikwereti, kugadzirisa nyaya neefodhi ye block block kana kusipo / kusagadzikana kwekutengesa.",
+                "INFOEXTERNAL": "Iyi mirairo yekugadzirisa haigoni kuendeswa apo Metrix Core iri kumhanya kunze",
+                "INFO": "Iko mabhatani ari pasi apa anotanga kugovera Metrix Core nemasarudza-mutsara wemirairo yekugadzirisa chikwereti, kugadzirisa nyaya neefodhi ye block block kana kusipo / kusagadzikana kwekutengesa.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Kuedza kuwana mahwindo ega ega kubva pachikwama chakaipa.dat.",
                 "RESCANBUTTON": "Rescan files blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 VaBitcoin vanokurudzira <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Vashandisi veNovaCoin <br/> Copyright © 2014-2018 Vashandi veLinda <br/><br/> Icho chiri kuedza software. <br/> Akaparidzirwa pasi peMIT / X11 software software, ona firimu iripo COPYING kana http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ichi chigadzirwa chinosanganisira software yakagadzirwa neWorldSSL Project kuti ishandiswe muWorldSSL Toolkit (https://www.openssl.org) uye cryptographic software yakanyorwa naEric Young (eay@cryptsoft.com) uye UPnP software yakanyorwa naTombert Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 VaBitcoin vanokurudzira <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Vashandisi veNovaCoin <br/> Copyright © 2014-2019 Vashandi veLinda <br/><br/> Icho chiri kuedza software. <br/> Akaparidzirwa pasi peMIT / X11 software software, ona firimu iripo COPYING kana http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ichi chigadzirwa chinosanganisira software yakagadzirwa neWorldSSL Project kuti ishandiswe muWorldSSL Toolkit (https://www.openssl.org) uye cryptographic software yakanyorwa naEric Young (eay@cryptsoft.com) uye UPnP software yakanyorwa naTombert Bernard.",
             "ABOUTALTITUDETAB": "Altitude",
-            "ABOUTALTITUDE": "Copyright © 2018 Vashandi veLinda <br/><br/> Iyi software inowanikwa pasi peiri reGPL-3.0, ona https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kuti uwane mamwe mashoko."
+            "ABOUTALTITUDE": "Copyright © 2019 Vashandi veLinda <br/><br/> Iyi software inowanikwa pasi peiri reGPL-3.0, ona https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kuti uwane mamwe mashoko."
         },
         "LOCALE": {
             "TITLE": "Sarudza Mutauro"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Pinda Your Wallet Passphrase",
             "UNLOCKSTAKINGONLY": "Svinurai kuti muite staking chete",
-            "CLIENTUPDATETITLE": "Linda Core Update Available",
-            "CLIENTUPDATEINFO": "Chimwe chiitiko chinowanika kuna Linda Core. Ungada kuisa ikozvino here?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Available",
+            "CLIENTUPDATEINFO": "Chimwe chiitiko chinowanika kuna Metrix Core. Ungada kuisa ikozvino here?",
             "WALLETUPDATETITLE": "Altitude Update Update Available",
             "WALLETUPDATEINFO": "Chimwe chiitiko chinowanikwa kune Altitude. Ungada kuitora ikozvino here?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,17 +258,17 @@
             "CHANGEPASSPHRASEBUTTON": "Shandura Passphrase",
             "ENCRYPTTITLE": "Chengetedza chikwama chako",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core Akadziviswa",
-            "CLIENTSTOPPEDINFO": "Kubatana kwave kwakarasikirwa naLinda Core. Iwe unogona kumira chikwama kana kutanga mukati Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Akadziviswa",
+            "CLIENTSTOPPEDINFO": "Kubatana kwave kwakarasikirwa naMetrix Core. Iwe unogona kumira chikwama kana kutanga mukati Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Buda Muchechi",
-            "CLIENTSTOPPEDBUTTONSTART": "Tanga Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Tanga Metrix Core",
             "ENCRYPTEDTITLE": "Machechi Akafuridzirwa",
             "ENCRYPTEDCONTENT": "Chero zvipi zvekare zvawakachengetedza zvepahomwe yako faira inofanira kuchinjwa neyo ichangobva kugadzirwa, yakavharwa chikwama chikwama. Nezvikonzero zvekuchengeteka, zvipembenene zvekare zveiyo asina kuvharwa faira refurheni zvichange zvisina zvazvinobatsira pakarepo paunotanga kushandisa svondo itsva, yakavharidzirwa.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core Akadzima Zvisingatarisirwi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Paiva nechinetso naLinda Core chakaita kuti chigumise. Iyo inokurudzira kuongorora yako debug.log file yezinyaya.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Akadzima Zvisingatarisirwi",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Paiva nechinetso naMetrix Core chakaita kuti chigumise. Iyo inokurudzira kuongorora yako debug.log file yezinyaya.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Dzorerazve Client",
-            "CLIENTINVALIDCONFIGTITLE": "Chisina kukodzera Linda.conf Kugadzirisa",
-            "CLIENTINVALIDCONFIGINFO": "Wako Linda.conf ane musternode yakashata yakasangana iyo ichaita kuti Linda Core abve pakarepo. Ndapota chengeta iyi faira."
+            "CLIENTINVALIDCONFIGTITLE": "Chisina kukodzera metrix.conf Kugadzirisa",
+            "CLIENTINVALIDCONFIGINFO": "Wako metrix.conf ane musternode yakashata yakasangana iyo ichaita kuti Metrix Core abve pakarepo. Ndapota chengeta iyi faira."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sign Message...",
             "VERIFYMESSAGE": "Vhura Mharidzo...",
             "LOCALE": "Mutauro...",
-            "RESTARTCORE": "Dzorerazve Linda Core",
+            "RESTARTCORE": "Dzorerazve Metrix Core",
             "EXIT": "Buda",
             "OPTIONS": "Sarudzo..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Rubatsiro",
             "COMMANDLINEOPTIONS": "Rairai Zvitsva Zvitsva...",
-            "CHECKUPDATECORE": "Tarisa Linda Core Update...",
+            "CHECKUPDATECORE": "Tarisa Metrix Core Update...",
             "CHECKUPDATEWALLET": "Tarisa Altitude Update...",
-            "ABOUTCORE": "Pamusoro peLinda Core...",
+            "ABOUTCORE": "Pamusoro peMetrix Core...",
             "ABOUTALTITUDE": "Nezvekumusoro...",
             "DISCORD": "Kurambana...",
             "ISSUE": "Taura Nyaya..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Bvuma"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialising Linda Core...",
-        "DOWNLOADCLIENT": "Kudzingirira Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Available",
-        "SHUTTINGDOWN": "Kuvhara pasi Linda Core...",
-        "RESTARTING": "Kudzorera Linda Core..."
+        "INITIALISING": "Initialising Metrix Core...",
+        "DOWNLOADCLIENT": "Kudzingirira Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Available",
+        "SHUTTINGDOWN": "Kuvhara pasi Metrix Core...",
+        "RESTARTING": "Kudzorera Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nhoroondo itsva yakagadzirwa kubudirira",

@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Сатҳ",
             "NOTENABLEDTITLE": "Нобуд кардан фаъол нест",
             "NOTENABLEDINFO": "Ҳаво ҳоло фаъол нест.",
-            "NOTENABLEDINSTR": "Барои сигнали шумо лозим аст, ки ба қадами гузоштани параметр = 1 дар файли Linda.conf.",
+            "NOTENABLEDINSTR": "Барои сигнали шумо лозим аст, ки ба қадами гузоштани параметр = 1 дар файли metrix.conf.",
             "NOTSTAKINGTITLE": "Сатҳи печида нест",
             "NOTSTAKINGINFO": "Хазинаи шумо ҳоло барои пӯшидани пӯшида аст.",
             "NOTSTAKINGINSTR": "Шумо метавонед кушишро бо роҳи кушодани коғази худ оғоз кунед",
@@ -69,7 +69,7 @@
             "ADDRESS": "Суроға",
             "ENABLED": "Ин имкон медиҳад",
             "NOTENABLEDTITLE": "Массивҳо фаъол нестанд",
-            "NOTENABLEDINSTR": "Барои коркард кардани оксиген, шумо бояд миқдори массивҳоро бо роҳи ташкили массивери = 1 ва танзим кардани 'masternodeprivkey' ва 'masternodeaddr' дар файлҳои Linda.conf созед.",
+            "NOTENABLEDINSTR": "Барои коркард кардани оксиген, шумо бояд миқдори массивҳоро бо роҳи ташкили массивери = 1 ва танзим кардани 'masternodeprivkey' ва 'masternodeaddr' дар файлҳои metrix.conf созед.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Аломати оғоз",
             "STARTALLBUTTON": "Ҳама сар кунед"
@@ -121,8 +121,8 @@
                 "HEIGHT": "Блоки оғоз"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ин фармонҳои таъмир, вақте ки Linda Core берун аз сар гузаронида мешавад",
-                "INFO": "Тугмаҳо дар зер Linda Core бо имконоти фармоишӣ барои таъмири пулӣ, масъалаҳои ҳалли файлҳои блокҳои коррупсионӣ ё амалиёти нопурра / корношоямро барқарор мекунанд.",
+                "INFOEXTERNAL": "Ин фармонҳои таъмир, вақте ки Metrix Core берун аз сар гузаронида мешавад",
+                "INFO": "Тугмаҳо дар зер Metrix Core бо имконоти фармоишӣ барои таъмири пулӣ, масъалаҳои ҳалли файлҳои блокҳои коррупсионӣ ё амалиёти нопурра / корношоямро барқарор мекунанд.",
                 "SALVAGEBUTTON": "Салафиҳо",
                 "SALVAGEINFO": "-Аввал: Диққати ба даст овардани калидҳои шахсӣ аз коғази корношоям.",
                 "RESCANBUTTON": "Файлҳои панели барқароршуда",
@@ -139,7 +139,7 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Линда Коре",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin Developers <br/> Copyright © 2011-2012 Developers PPCoin <br/> Copyright © 2012-2014 Developers NovaCoin <br/> Copyright © 2014-2018 Линдаҳои таҳиякунандагон <br/><br/> Ин нармафзори таҷрибавӣ аст. <br/> Дар асоси литсензияи нармафзори MIT / X11 тақсим карда шудааст, ба файли ҳамроҳшавӣ COPYING ё http://www.opensource.org/licenses/mit-license.php нигаред. <br/><br/> Ин маҳсулот дорои нармафзорест, ки аз ҷониби OpenSSL таҳия шудааст, барои истифода дар воҳиди OpenSSL (https://www.openssl.org) ва нармафзори кредитӣ, ки аз тарафи Эрик Янг (eay@cryptsoft.com) ва нармафзори UPnP навиштааст, Томас Бернард навиштааст.",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin Developers <br/> Copyright © 2011-2012 Developers PPCoin <br/> Copyright © 2012-2014 Developers NovaCoin <br/> Copyright © 2014-2019 Линдаҳои таҳиякунандагон <br/><br/> Ин нармафзори таҷрибавӣ аст. <br/> Дар асоси литсензияи нармафзори MIT / X11 тақсим карда шудааст, ба файли ҳамроҳшавӣ COPYING ё http://www.opensource.org/licenses/mit-license.php нигаред. <br/><br/> Ин маҳсулот дорои нармафзорест, ки аз ҷониби OpenSSL таҳия шудааст, барои истифода дар воҳиди OpenSSL (https://www.openssl.org) ва нармафзори кредитӣ, ки аз тарафи Эрик Янг (eay@cryptsoft.com) ва нармафзори UPnP навиштааст, Томас Бернард навиштааст.",
             "ABOUTALTITUDETAB": "Баландӣ",
             "ABOUTALTITUDE": "Copyright © 2014 Фурудгоҳи Линде <br/><br/> Ин нармафзор дар доираи иҷозатномаи GPL-3.0 тақсим карда шудааст, барои маълумоти бештар https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE нигаред."
         },
@@ -245,7 +245,7 @@
             "ENTERPASSPHRASETITLE": "Passphrase шарҳи худро ворид кунед",
             "UNLOCKSTAKINGONLY": "Кушодан барои танзими каҷ",
             "CLIENTUPDATETITLE": "Линк Корр",
-            "CLIENTUPDATEINFO": "Навсозӣ барои Linda Core дастрас аст. Оё мехоҳед ҳоло онро насб кунед?",
+            "CLIENTUPDATEINFO": "Навсозӣ барои Metrix Core дастрас аст. Оё мехоҳед ҳоло онро насб кунед?",
             "WALLETUPDATETITLE": "Бастаи навтарин",
             "WALLETUPDATEINFO": "Навсозӣ барои баландии дастрас дастрас аст. Оё мехоҳед ҳоло онро бор кунед?",
             "CLIENTUPDATEBUTTON": "Навсозӣ",
@@ -259,7 +259,7 @@
             "ENCRYPTTITLE": "Пойгоҳи худро пинҳон кунед",
             "ENCRYPTBUTTON": "Кушодан",
             "CLIENTSTOPPEDTITLE": "Линда Core қатъ шуд",
-            "CLIENTSTOPPEDINFO": "Пайвастшавӣ ба Линда Коре гум карда шудааст. Шумо метавонед ҳамёнро аз даст диҳед ё курсии Linda дохил кунед.",
+            "CLIENTSTOPPEDINFO": "Пайвастшавӣ ба Линда Коре гум карда шудааст. Шумо метавонед ҳамёнро аз даст диҳед ё курсии Metrix дохил кунед.",
             "CLIENTSTOPPEDBUTTONEXIT": "Ҷойгиршавӣ",
             "CLIENTSTOPPEDBUTTONSTART": "Линзаи Core оғоз кунед",
             "ENCRYPTEDTITLE": "Сатҳи изофӣ",
@@ -267,13 +267,13 @@
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда Core ногаҳонӣ қатъ шуд",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Бо мушкилоти Лини Ло, мушкиле вуҷуд дошт, ки онро ба охир расонд. Барои таваққуф кардани файли debug.log худ тавсия дода мешавад.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Client Restart",
-            "CLIENTINVALIDCONFIGTITLE": "Танзимоти Linda.conf-и нодуруст",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf дорои системаи танзимоти ғайриоддӣ аст, ки ба зудӣ аз ҷониби Линда Корри ба воя мерасонад. Лутфан ин файлро тафтиш кунед."
+            "CLIENTINVALIDCONFIGTITLE": "Танзимоти metrix.conf-и нодуруст",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf дорои системаи танзимоти ғайриоддӣ аст, ки ба зудӣ аз ҷониби Линда Корри ба воя мерасонад. Лутфан ин файлро тафтиш кунед."
         },
         "ADDRESSBOOK": {
             "TITLE": "Китобҳои адресӣ",
-            "SENDINGINFO": "Ин адреси Linda-ро барои фиристодани пардохтҳо маҳфуз доред. Пеш аз фиристодани тангаҳо ҳамеша миқдор ва суроғаро гиред",
-            "RECEIVINGINFO": "Инҳо суроғаи почтаи Linda-ро барои гирифтани пардохтҳо мебошанд.",
+            "SENDINGINFO": "Ин адреси Metrix-ро барои фиристодани пардохтҳо маҳфуз доред. Пеш аз фиристодани тангаҳо ҳамеша миқдор ва суроғаро гиред",
+            "RECEIVINGINFO": "Инҳо суроғаи почтаи Metrix-ро барои гирифтани пардохтҳо мебошанд.",
             "BUTTONSELECT": "Интихоб кунед",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Суроға",
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Кумак",
             "COMMANDLINEOPTIONS": "Имкониятҳои хаттии фармон...",
-            "CHECKUPDATECORE": "Ҷустуҷӯ барои Linda Core Update...",
+            "CHECKUPDATECORE": "Ҷустуҷӯ барои Metrix Core Update...",
             "CHECKUPDATEWALLET": "Тағйирёбии болотар...",
-            "ABOUTCORE": "Дар бораи Linda Core...",
+            "ABOUTCORE": "Дар бораи Metrix Core...",
             "ABOUTALTITUDE": "Дар бораи баландии...",
             "DISCORD": "Дур...",
             "ISSUE": "Ҳисоботи мавзӯъ..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Хуб",
         "CLEARALLBUTTON": "Ҳама тоза кунед",
         "ENTERACCOUNTLABEL": "Нишонаи ин нишондодро ворид кунед",
-        "ENTERADDRESSLABEL": "Ба суроғаи Linda ворид кунед",
+        "ENTERADDRESSLABEL": "Ба суроғаи Metrix ворид кунед",
         "AGO": "пештар",
         "SORTBY": "Ҷудо кардан ба",
         "SEARCH": "Ҷустуҷӯ",
@@ -338,7 +338,7 @@
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Линда Корри...",
-        "DOWNLOADCLIENT": "Download Linda Core...",
+        "DOWNLOADCLIENT": "Download Metrix Core...",
         "UPDATEAVAILABLE": "Линк Корр",
         "SHUTTINGDOWN": "Линда Хонда...",
         "RESTARTING": "Линда Корри..."

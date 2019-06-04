@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Gaur egun, zorroa dago",
             "NOTENABLEDTITLE": "Staking ez dago gaituta",
             "NOTENABLEDINFO": "Oraintxe aktibatuta ez da eszenatokia.",
-            "NOTENABLEDINSTR": "Partaidetzarekin staking settings staking = 1 zure Linda.conf fitxategian gaitu beharko duzu.",
+            "NOTENABLEDINSTR": "Partaidetzarekin staking settings staking = 1 zure metrix.conf fitxategian gaitu beharko duzu.",
             "NOTSTAKINGTITLE": "Kartoia ez dago staking",
             "NOTSTAKINGINFO": "Zure zorroa une honetan blokeatuta dago.",
             "NOTSTAKINGINSTR": "Irudian hasteko aukera duzu zure zorroa desblokeatzeko",
@@ -69,7 +69,7 @@
             "ADDRESS": "Helbidea",
             "ENABLED": "Gaituta",
             "NOTENABLEDTITLE": "Masternodes ez dago gaituta",
-            "NOTENABLEDINSTR": "Masternode bat exekutatzeko, masternodes gaitu beharko dituzu masternode = 1 ezarri eta 'masternodeprivkey' eta 'masternodeaddr' aldagaiak konfiguratuz zure Linda.conf fitxategian.",
+            "NOTENABLEDINSTR": "Masternode bat exekutatzeko, masternodes gaitu beharko dituzu masternode = 1 ezarri eta 'masternodeprivkey' eta 'masternodeaddr' aldagaiak konfiguratuz zure metrix.conf fitxategian.",
             "STARTBUTTON": "Hasi tokikoa",
             "STARTALIASBUTTON": "Hasi aliasa",
             "STARTALLBUTTON": "Hasi dena"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitudearen bertsioa"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Ongietorri Linda Core RPC kontsolara. Idatzi komando erabilgarrien ikuspegi orokorra.",
+                "CONSOLEINFO": "Ongietorri Metrix Core RPC kontsolara. Idatzi komando erabilgarrien ikuspegi orokorra.",
                 "CONSOLEWARNING": "OHARRA: Iruzurgileak aktibo egon dira, erabiltzaileei komandoak idazteko, euren zorroko edukiak lapurtzen. Ez erabili kontsola hau komando baten ramifikazioa erabat ulertu gabe.",
                 "COMMANDPLACEHODLER": "Idatzi komandoa"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Blokeoaren hasiera"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Konponketa komando hauek ezin dira exekutatu kanpoko exekutatzen Linda Core exekutatzen denean",
-                "INFO": "Beheko botoiak Linda Core komando-lerroko aukerak berrabiaraziko dituzte zorroa konpondu ahal izateko, konpondu blokeatutako fitxategien hondatutako arazoak edo falta diren edota transakzio zaharkituak.",
+                "INFOEXTERNAL": "Konponketa komando hauek ezin dira exekutatu kanpoko exekutatzen Metrix Core exekutatzen denean",
+                "INFO": "Beheko botoiak Metrix Core komando-lerroko aukerak berrabiaraziko dituzte zorroa konpondu ahal izateko, konpondu blokeatutako fitxategien hondatutako arazoak edo falta diren edota transakzio zaharkituak.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: gako pribatuak berreskuratzeko saiakera hondatuta dago.",
                 "RESCANBUTTON": "Blokeatu fitxategiak blokeatu",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-eko garatzaileak <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin garatzaileei <br/> Copyright © 2014-2018 Linda garatzaileei <br/><br/> Hau software esperimentala da. <br/> MIT / X11 softwarearen lizentziapean banatuta, ikus COPYING edo http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produktu honek OpenSSL Proiektuak OpenSSL Toolkit-en (https://www.openssl.org) eta Eric Young (eay@cryptsoft.com) eta Thomas Bernard-ek idatzitako UPnP softwareak idatzitako software kriptografikoan garatutako softwarea da.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-eko garatzaileak <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin garatzaileei <br/> Copyright © 2014-2019 Metrix garatzaileei <br/><br/> Hau software esperimentala da. <br/> MIT / X11 softwarearen lizentziapean banatuta, ikus COPYING edo http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produktu honek OpenSSL Proiektuak OpenSSL Toolkit-en (https://www.openssl.org) eta Eric Young (eay@cryptsoft.com) eta Thomas Bernard-ek idatzitako UPnP softwareak idatzitako software kriptografikoan garatutako softwarea da.",
             "ABOUTALTITUDETAB": "altitude",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda garatzaileak <br/><br/> Software hau GPL 3.0 lizentziapean banatzen da, ikusi https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE informazio gehiagorako."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix garatzaileak <br/><br/> Software hau GPL 3.0 lizentziapean banatzen da, ikusi https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE informazio gehiagorako."
         },
         "LOCALE": {
             "TITLE": "Hautatu hizkuntza"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sartu zure zorroa pasaesaldia",
             "UNLOCKSTAKINGONLY": "Desblokeatzeko soilik deitzeko",
-            "CLIENTUPDATETITLE": "Linda Core eguneratzea erabilgarri",
-            "CLIENTUPDATEINFO": "Hornidurak Linda Core-erako eguneratze bat da. Orain instalatu nahi duzu?",
+            "CLIENTUPDATETITLE": "Metrix Core eguneratzea erabilgarri",
+            "CLIENTUPDATEINFO": "Hornidurak Metrix Core-erako eguneratze bat da. Orain instalatu nahi duzu?",
             "WALLETUPDATETITLE": "Altitude Update Available",
             "WALLETUPDATEINFO": "Eguneratze bat dago Altitudearen eskura. Deskargatu nahi duzu orain?",
             "CLIENTUPDATEBUTTON": "eguneratzearen",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Aldatu pasahitza",
             "ENCRYPTTITLE": "Zifratu zure zorroa",
             "ENCRYPTBUTTON": "enkriptatu",
-            "CLIENTSTOPPEDTITLE": "Linda Core gelditu egin zen",
-            "CLIENTSTOPPEDINFO": "Lotura galdu da Linda Core-era. Zorroa gelditu edo barruko Linda Core abiarazi dezakezu.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core gelditu egin zen",
+            "CLIENTSTOPPEDINFO": "Lotura galdu da Metrix Core-era. Zorroa gelditu edo barruko Metrix Core abiarazi dezakezu.",
             "CLIENTSTOPPEDBUTTONEXIT": "Irten zorroa",
-            "CLIENTSTOPPEDBUTTONSTART": "Hasi Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Hasi Metrix Core",
             "ENCRYPTEDTITLE": "Txartel enkriptatua",
             "ENCRYPTEDCONTENT": "Zure zorroaren fitxategian egindako aurreko babeskopiak berriki sortutako zifratutako zorro fitxategiarekin ordeztu behar dira. Segurtasun arrazoiengatik, aurrez kargatu gabeko zorroaren fitxategien babeskopiak ez dira erabilgarri izango zorro zifratua berria erabiltzen hasten zarenean.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core ustekabean gelditu zen",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Arazo bat izan da Linda Core-ekin amaitzeko. Gomendagarria da zure debug.log fitxategiaren egiaztatzea gaietarako.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ustekabean gelditu zen",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Arazo bat izan da Metrix Core-ekin amaitzeko. Gomendagarria da zure debug.log fitxategiaren egiaztatzea gaietarako.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Berrabiarazi bezeroa",
-            "CLIENTINVALIDCONFIGTITLE": "Linda.conf konfigurazioa baliogabea da",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf-ek konfigurazio okerra du, Linda Core-ek berehala irteteko. Egiaztatu fitxategi hau."
+            "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfigurazioa baliogabea da",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ek konfigurazio okerra du, Metrix Core-ek berehala irteteko. Egiaztatu fitxategi hau."
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide liburu",
-            "SENDINGINFO": "Zure ordainketak bidaltzeko gordetako Linda helbidea da. Egiaztatu beti zenbatekoa eta jaso helbidea txanponak bidali aurretik",
-            "RECEIVINGINFO": "Zure ordainketak jasotzeko Linda helbidea duzu.",
+            "SENDINGINFO": "Zure ordainketak bidaltzeko gordetako Metrix helbidea da. Egiaztatu beti zenbatekoa eta jaso helbidea txanponak bidali aurretik",
+            "RECEIVINGINFO": "Zure ordainketak jasotzeko Metrix helbidea duzu.",
             "BUTTONSELECT": "Aukeratu",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Helbidea",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sinatu mezua...",
             "VERIFYMESSAGE": "Egiaztatu mezua...",
             "LOCALE": "Hizkuntza...",
-            "RESTARTCORE": "Berrabiarazi Linda Core",
+            "RESTARTCORE": "Berrabiarazi Metrix Core",
             "EXIT": "Irten",
             "OPTIONS": "Aukerak..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Laguntza",
             "COMMANDLINEOPTIONS": "Komando lerroko aukerak...",
-            "CHECKUPDATECORE": "Begiratu Linda Core eguneratzea...",
+            "CHECKUPDATECORE": "Begiratu Metrix Core eguneratzea...",
             "CHECKUPDATEWALLET": "Egiaztatu Altitude Eguneratzea...",
-            "ABOUTCORE": "Linda Core-i buruz...",
+            "ABOUTCORE": "Metrix Core-i buruz...",
             "ABOUTALTITUDE": "Altitudeari buruz...",
             "DISCORD": "Discord...",
             "ISSUE": "Eman berri bat..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Ados",
         "CLEARALLBUTTON": "Garbitu guztiak",
         "ENTERACCOUNTLABEL": "Idatzi helbide honetarako etiketa bat",
-        "ENTERADDRESSLABEL": "Idatzi Linda helbidea",
+        "ENTERADDRESSLABEL": "Idatzi Metrix helbidea",
         "AGO": "duela",
         "SORTBY": "Ordenatu arabera",
         "SEARCH": "Search",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Onartu"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core hasieratzen...",
-        "DOWNLOADCLIENT": "Linda Core deskargatzea...",
-        "UPDATEAVAILABLE": "Linda Core eguneratzea erabilgarri",
-        "SHUTTINGDOWN": "Linda Core itxi...",
-        "RESTARTING": "Linda Core berrabiarazi..."
+        "INITIALISING": "Metrix Core hasieratzen...",
+        "DOWNLOADCLIENT": "Metrix Core deskargatzea...",
+        "UPDATEAVAILABLE": "Metrix Core eguneratzea erabilgarri",
+        "SHUTTINGDOWN": "Metrix Core itxi...",
+        "RESTARTING": "Metrix Core berrabiarazi..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kontu berria sortu da",

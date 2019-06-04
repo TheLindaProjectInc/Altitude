@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Ny Wallet izao dia mihazakazaka",
             "NOTENABLEDTITLE": "Ny fametahana dia tsy navela",
             "NOTENABLEDINFO": "Ny fametahana dia tsy misy amin'izao fotoana izao.",
-            "NOTENABLEDINSTR": "Ho an'ny tsikombakomba dia mila mamela ny fikandrana mihazakazaka = 1 ianao ao amin'ny file Linda.conf.",
+            "NOTENABLEDINSTR": "Ho an'ny tsikombakomba dia mila mamela ny fikandrana mihazakazaka = 1 ianao ao amin'ny file metrix.conf.",
             "NOTSTAKINGTITLE": "Ny kitapo tsy mitongilana",
             "NOTSTAKINGINFO": "Ny kitapo misy anao amin'izao fotoana izao dia mihidy ho an'ny mihazakazaka.",
             "NOTSTAKINGINSTR": "Azonao ajanona ny fisakanana amin'ny famafana ny kitapom-batonao amin'ny fiatoana",
@@ -69,7 +69,7 @@
             "ADDRESS": "Address",
             "ENABLED": "afaka",
             "NOTENABLEDTITLE": "Masternodes not allowed",
-            "NOTENABLEDINSTR": "Ny famoahana milina dia mila mametaka mastersodes amin'ny fametrahana masternode = 1 ary mampifanaraka ny 'masternodeprivkey' sy 'variable mastersodeaddr' ao amin'ny file Linda.conf.",
+            "NOTENABLEDINSTR": "Ny famoahana milina dia mila mametaka mastersodes amin'ny fametrahana masternode = 1 ary mampifanaraka ny 'masternodeprivkey' sy 'variable mastersodeaddr' ao amin'ny file metrix.conf.",
             "STARTBUTTON": "Atombohy eo an-toerana",
             "STARTALIASBUTTON": "Manomboka Alias",
             "STARTALLBUTTON": "Start All"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Tongasoa eto amin'ny console Linda Core RPC. Soraty ny fanampiana ho an'ny fijerena ireo baiko azo atao.",
+                "CONSOLEINFO": "Tongasoa eto amin'ny console Metrix Core RPC. Soraty ny fanampiana ho an'ny fijerena ireo baiko azo atao.",
                 "CONSOLEWARNING": "FAMPITANDREMANA: Mpikatroka mavitrika, nilazalaza ny mpampiasa mba hizara baiko eto, mangalatra ny votoatiny. Aza mampiasa an'io solosaina io raha tsy efa nahatakatra tsara ny fanolorana baiko.",
                 "COMMANDPLACEHODLER": "Midira ao amin'ny baiko"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Manomboka Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ireo baiko fanamboarana ireo dia tsy mety mihazakazaka rehefa mihazakazaka ivelan'i Linda Core",
-                "INFO": "Ny bokotra etsy ambany dia hamerina indray ny Linda Core miaraka amin'ny safidin-dàlan'ny baiko handrafetana ny kitapo, hamaha olana amin'ny rakitra blockchain maloto na ny fifanakalozana tsy misy / efa ela.",
+                "INFOEXTERNAL": "Ireo baiko fanamboarana ireo dia tsy mety mihazakazaka rehefa mihazakazaka ivelan'i Metrix Core",
+                "INFO": "Ny bokotra etsy ambany dia hamerina indray ny Metrix Core miaraka amin'ny safidin-dàlan'ny baiko handrafetana ny kitapo, hamaha olana amin'ny rakitra blockchain maloto na ny fifanakalozana tsy misy / efa ela.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Fikononana hanangona ireo fanalahidy tsy miankina amin'ny wallet.dat.",
                 "RESCANBUTTON": "Rescan blockchain rakitra",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 The developers of Bitcoin <br/> Copyright © 2011-2012 PP Developers Developers <br/> Copyright © 2012-2014 Ireo mpandrindra NovaCoin <br/> Copyright © 2014-2018 Ireo mpandrindra Linda <br/><br/> Ity no rindrambaiko experimental. <br/> Ampitahao ny lisitry ny rindrambaiko MIT / X11, jereo ny rakitra miaraka amin'i COPYING na http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ity vokatra ity dia misy rindrambaiko novolavolain'ny OpenSSL Project ho ampiasaina ao amin'ny OpenSSL Toolkit (https://www.openssl.org) sy rindrambaiko lojika nosoratan'i Eric Young (eay@cryptsoft.com) sy software UPnP nosoratan'i Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 The developers of Bitcoin <br/> Copyright © 2011-2012 PP Developers Developers <br/> Copyright © 2012-2014 Ireo mpandrindra NovaCoin <br/> Copyright © 2014-2019 Ireo mpandrindra Metrix <br/><br/> Ity no rindrambaiko experimental. <br/> Ampitahao ny lisitry ny rindrambaiko MIT / X11, jereo ny rakitra miaraka amin'i COPYING na http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ity vokatra ity dia misy rindrambaiko novolavolain'ny OpenSSL Project ho ampiasaina ao amin'ny OpenSSL Toolkit (https://www.openssl.org) sy rindrambaiko lojika nosoratan'i Eric Young (eay@cryptsoft.com) sy software UPnP nosoratan'i Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitude",
-            "ABOUTALTITUDE": "Copyright © 2018 Ireo mpandrindra Linda <br/><br/> Ity rindrambaiko ity dia zaraina amin'ny lisansa GPL-3.0, jereo https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE raha mila fanazavana fanampiny."
+            "ABOUTALTITUDE": "Copyright © 2019 Ireo mpandrindra Metrix <br/><br/> Ity rindrambaiko ity dia zaraina amin'ny lisansa GPL-3.0, jereo https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE raha mila fanazavana fanampiny."
         },
         "LOCALE": {
             "TITLE": "Fidio ny fiteny"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ampidiro ny pasipaoronao",
             "UNLOCKSTAKINGONLY": "Mialà amin'ny famonoana",
-            "CLIENTUPDATETITLE": "Fandraisana an'i Linda Core available",
-            "CLIENTUPDATEINFO": "Misy famandrihana iray ho an'ny Linda Core. Te-hametraka azy ve ianao izao?",
+            "CLIENTUPDATETITLE": "Fandraisana an'i Metrix Core available",
+            "CLIENTUPDATEINFO": "Misy famandrihana iray ho an'ny Metrix Core. Te-hametraka azy ve ianao izao?",
             "WALLETUPDATETITLE": "Alimina vaovao azo alaina",
             "WALLETUPDATEINFO": "Misy famandrihana iray ho an'ny Altitude. Te-haka azy io ve ianao izao?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Change Passphrase",
             "ENCRYPTTITLE": "Hamafiso ny kitaponao",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Nijanona i Linda Core",
-            "CLIENTSTOPPEDINFO": "Ny fifandraisana dia very tamin'i Linda Core. Azonao atao ny manakana ny kitapo na manomboka ny Linda Core ao anatiny.",
+            "CLIENTSTOPPEDTITLE": "Nijanona i Metrix Core",
+            "CLIENTSTOPPEDINFO": "Ny fifandraisana dia very tamin'i Metrix Core. Azonao atao ny manakana ny kitapo na manomboka ny Metrix Core ao anatiny.",
             "CLIENTSTOPPEDBUTTONEXIT": "Afo ny Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Manomboka Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Manomboka Metrix Core",
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Ireo loham-piantsorohana teo aloha izay nataonao tamin'ny rakitra boribory dia tokony hosoloina amin'ny rakitra boribory vaovao noforonina vaovao. Noho ny antony fiarovana, dia tsy misy ilàna azy ny tahirin-tsarimihetsika vita amin'ny rakitry ny birao raha vao manomboka mampiasa ny kitapo vaovao.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core dia tampoka tsy nampoizina",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana teo amin'i Linda Core izay nahatonga azy hofoanana. Manorata dia alefaso ny rakitra debug.log ho an'ny olana.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dia tampoka tsy nampoizina",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana teo amin'i Metrix Core izay nahatonga azy hofoanana. Manorata dia alefaso ny rakitra debug.log ho an'ny olana.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Atsaharo ny mpanjifa",
-            "CLIENTINVALIDCONFIGTITLE": "Lisitra tsy voafetra an'i Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ny Linda.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Linda Core. Azafady azafady ity rakitra ity."
+            "CLIENTINVALIDCONFIGTITLE": "Lisitra tsy voafetra an'i metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Ny metrix.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Metrix Core. Azafady azafady ity rakitra ity."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adiresy boky",
-            "SENDINGINFO": "Ireto ny adiresy an-dalanao navoakan'i Linda handefasana vola. Andramo matetika ny vola ary raiso ny adiresy alohan'ny handefasana vola madinika",
-            "RECEIVINGINFO": "Ireto ny adiresy adiresy Linda anao amin'ny fandraisana ny fandoavam-bola.",
+            "SENDINGINFO": "Ireto ny adiresy an-dalanao navoakan'i Metrix handefasana vola. Andramo matetika ny vola ary raiso ny adiresy alohan'ny handefasana vola madinika",
+            "RECEIVINGINFO": "Ireto ny adiresy adiresy Metrix anao amin'ny fandraisana ny fandoavam-bola.",
             "BUTTONSELECT": "Select",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Address",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sign Message...",
             "VERIFYMESSAGE": "Hamarino ny hafatra...",
             "LOCALE": "Language...",
-            "RESTARTCORE": "Atreho ny Linda Core",
+            "RESTARTCORE": "Atreho ny Metrix Core",
             "EXIT": "Fivoahana",
             "OPTIONS": "Options..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Vonjeo",
             "COMMANDLINEOPTIONS": "Fanomezana baikon'ny baiko...",
-            "CHECKUPDATECORE": "Hamarino an'i Linda Core Update...",
+            "CHECKUPDATECORE": "Hamarino an'i Metrix Core Update...",
             "CHECKUPDATEWALLET": "Hamarino ny fisokafan'ny toetr'andro...",
-            "ABOUTCORE": "About Linda Core...",
+            "ABOUTCORE": "About Metrix Core...",
             "ABOUTALTITUDE": "About Altitude...",
             "DISCORD": "Ady...",
             "ISSUE": "Hanoratra lahatsoratra iray..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "ok",
         "CLEARALLBUTTON": "Clear All",
         "ENTERACCOUNTLABEL": "Ampidio marika ho an'ity adiresy ity",
-        "ENTERADDRESSLABEL": "Ampidiro adiresy Linda",
+        "ENTERADDRESSLABEL": "Ampidiro adiresy Metrix",
         "AGO": "lasa izay",
         "SORTBY": "Sivanina araka",
         "SEARCH": "Search",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Ekeo"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialising Linda Core...",
-        "DOWNLOADCLIENT": "Download Linda Core...",
-        "UPDATEAVAILABLE": "Fandraisana an'i Linda Core available",
-        "SHUTTINGDOWN": "Afaho ny Linda Core...",
-        "RESTARTING": "Manombohana an'i Linda Core..."
+        "INITIALISING": "Initialising Metrix Core...",
+        "DOWNLOADCLIENT": "Download Metrix Core...",
+        "UPDATEAVAILABLE": "Fandraisana an'i Metrix Core available",
+        "SHUTTINGDOWN": "Afaho ny Metrix Core...",
+        "RESTARTING": "Manombohana an'i Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novaina tsara ny kaonty vaovao",

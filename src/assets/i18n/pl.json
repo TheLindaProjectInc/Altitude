@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Portfel obecnie toczy się",
             "NOTENABLEDTITLE": "Tyczenie nie jest włączone",
             "NOTENABLEDINFO": "Tyczenie nie jest obecnie włączone.",
-            "NOTENABLEDINSTR": "Aby postawić, musisz włączyć ustawienie tyczenia = 1 w pliku Linda.conf.",
+            "NOTENABLEDINSTR": "Aby postawić, musisz włączyć ustawienie tyczenia = 1 w pliku metrix.conf.",
             "NOTSTAKINGTITLE": "Portfel nie stawia",
             "NOTSTAKINGINFO": "Twój portfel jest obecnie zablokowany na tyczenie.",
             "NOTSTAKINGINSTR": "Możesz zacząć staking przez odblokowanie swojego portfela do stakingu",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adres",
             "ENABLED": "Włączone",
             "NOTENABLEDTITLE": "Masternodes nie jest włączony",
-            "NOTENABLEDINSTR": "Aby uruchomić masternodę, musisz włączyć masternody, ustawiając masternode = 1 i konfigurując zmienne \"masternodeprivkey\" i \"masternodeaddr\" w pliku Linda.conf.",
+            "NOTENABLEDINSTR": "Aby uruchomić masternodę, musisz włączyć masternody, ustawiając masternode = 1 i konfigurując zmienne \"masternodeprivkey\" i \"masternodeaddr\" w pliku metrix.conf.",
             "STARTBUTTON": "Uruchom lokalnie",
             "STARTALIASBUTTON": "Uruchom Alias",
             "STARTALLBUTTON": "Rozpocznij wszystko"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Wersja wysokościowa"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Witamy na konsoli RPC Linda Core. Wpisz pomoc, aby uzyskać przegląd dostępnych poleceń.",
+                "CONSOLEINFO": "Witamy na konsoli RPC Metrix Core. Wpisz pomoc, aby uzyskać przegląd dostępnych poleceń.",
                 "CONSOLEWARNING": "OSTRZEŻENIE: Scamery były aktywne, mówiąc użytkownikom, aby wpisywali tutaj polecenia, kradnąc ich zawartość portfela. Nie używaj tej konsoli bez pełnego zrozumienia rozgałęzienia polecenia.",
                 "COMMANDPLACEHODLER": "Wejdź do Command"
             },
@@ -121,7 +121,7 @@
                 "HEIGHT": "Blok startowy"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Te polecenia naprawy nie mogą być uruchamiane, gdy Linda Core jest uruchamiana zewnętrznie",
+                "INFOEXTERNAL": "Te polecenia naprawy nie mogą być uruchamiane, gdy Metrix Core jest uruchamiana zewnętrznie",
                 "INFO": "Poniższe przyciski uruchomią ponownie Linę Core z opcjami wiersza poleceń, aby naprawić portfel, naprawić problemy z uszkodzonymi plikami blockchain lub brakującymi / przestarzałymi transakcjami.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Próba odzyskania kluczy prywatnych z uszkodzonego pliku wallet.dat.",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Twórcy Bitcoin <br/> Copyright © 2011-2012 Programiści PPCoin <br/> Copyright © 2012-2014 Twórcy NovaCoin <br/> Copyright © 2014-2018 Programiści Linda <br/><br/> To jest oprogramowanie eksperymentalne. <br/> Rozproszone w ramach licencji na oprogramowanie MIT / X11, patrz załączony plik COPYING lub http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w zestawie narzędzi OpenSSL Toolkit (https://www.openssl.org) i oprogramowaniu kryptograficznym napisanym przez Erica Younga (eay@cryptsoft.com) i oprogramowania UPnP napisanego przez Thomasa Bernarda.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Twórcy Bitcoin <br/> Copyright © 2011-2012 Programiści PPCoin <br/> Copyright © 2012-2014 Twórcy NovaCoin <br/> Copyright © 2014-2019 Programiści Metrix <br/><br/> To jest oprogramowanie eksperymentalne. <br/> Rozproszone w ramach licencji na oprogramowanie MIT / X11, patrz załączony plik COPYING lub http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w zestawie narzędzi OpenSSL Toolkit (https://www.openssl.org) i oprogramowaniu kryptograficznym napisanym przez Erica Younga (eay@cryptsoft.com) i oprogramowania UPnP napisanego przez Thomasa Bernarda.",
             "ABOUTALTITUDETAB": "Wysokość",
-            "ABOUTALTITUDE": "Copyright © 2018 Twórcy Linda <br/><br/> To oprogramowanie jest rozpowszechniane na licencji GPL-3.0, więcej informacji można znaleźć na stronie https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Twórcy Metrix <br/><br/> To oprogramowanie jest rozpowszechniane na licencji GPL-3.0, więcej informacji można znaleźć na stronie https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Wybierz język"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Wprowadź hasło do Portfela",
             "UNLOCKSTAKINGONLY": "Odblokuj tylko dla stakingu",
-            "CLIENTUPDATETITLE": "Dostępna aktualizacja Linda Core",
-            "CLIENTUPDATEINFO": "Aktualizacja jest dostępna dla Linda Core. Czy chcesz go teraz zainstalować?",
+            "CLIENTUPDATETITLE": "Dostępna aktualizacja Metrix Core",
+            "CLIENTUPDATEINFO": "Aktualizacja jest dostępna dla Metrix Core. Czy chcesz go teraz zainstalować?",
             "WALLETUPDATETITLE": "Dostępna aktualizacja wysokości",
             "WALLETUPDATEINFO": "Aktualizacja jest dostępna dla wysokości. Czy chcesz go teraz pobrać?",
             "CLIENTUPDATEBUTTON": "Aktualizacja",
@@ -258,17 +258,17 @@
             "CHANGEPASSPHRASEBUTTON": "Zmień hasło",
             "ENCRYPTTITLE": "Zaszyfruj portfel",
             "ENCRYPTBUTTON": "Szyfruj",
-            "CLIENTSTOPPEDTITLE": "Linda Core Zatrzymany",
-            "CLIENTSTOPPEDINFO": "Połączenie zostało utracone z Linda Core. Możesz zatrzymać portfel lub uruchomić wewnętrzny Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Zatrzymany",
+            "CLIENTSTOPPEDINFO": "Połączenie zostało utracone z Metrix Core. Możesz zatrzymać portfel lub uruchomić wewnętrzny Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Wyjdź z Portfela",
-            "CLIENTSTOPPEDBUTTONSTART": "Zacznij Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Zacznij Metrix Core",
             "ENCRYPTEDTITLE": "Portfel zaszyfrowany",
             "ENCRYPTEDCONTENT": "Wszystkie poprzednie kopie zapasowe utworzone w pliku portfela należy zastąpić nowo wygenerowanym, zaszyfrowanym plikiem portfela. Ze względów bezpieczeństwa poprzednie kopie niezaszyfrowanego pliku portfela staną się bezużyteczne, gdy tylko zaczniesz korzystać z nowego, zaszyfrowanego portfela.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core zatrzymała się nieoczekiwanie",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Wystąpił problem z Linda Core, który spowodował jej zakończenie. Zaleca się sprawdzenie pliku debug.log w poszukiwaniu problemów.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core zatrzymała się nieoczekiwanie",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Wystąpił problem z Metrix Core, który spowodował jej zakończenie. Zaleca się sprawdzenie pliku debug.log w poszukiwaniu problemów.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Zrestartuj klienta",
-            "CLIENTINVALIDCONFIGTITLE": "Nieprawidłowa konfiguracja Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Twój Linda.conf ma nieprawidłową konfigurację masternodu, która spowoduje natychmiastowe wyjście Lindy Core. Sprawdź ten plik."
+            "CLIENTINVALIDCONFIGTITLE": "Nieprawidłowa konfiguracja metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Twój metrix.conf ma nieprawidłową konfigurację masternodu, która spowoduje natychmiastowe wyjście Lindy Core. Sprawdź ten plik."
         },
         "ADDRESSBOOK": {
             "TITLE": "Książka adresowa",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Podpisz wiadomość...",
             "VERIFYMESSAGE": "Zweryfikuj wiadomość...",
             "LOCALE": "Język...",
-            "RESTARTCORE": "Uruchom ponownie Linda Core",
+            "RESTARTCORE": "Uruchom ponownie Metrix Core",
             "EXIT": "Wyjście",
             "OPTIONS": "Opcje..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Wsparcie",
             "COMMANDLINEOPTIONS": "Opcje wiersza poleceń...",
-            "CHECKUPDATECORE": "Sprawdź aktualizację Linda Core...",
+            "CHECKUPDATECORE": "Sprawdź aktualizację Metrix Core...",
             "CHECKUPDATEWALLET": "Sprawdź aktualizację wysokości...",
-            "ABOUTCORE": "O firmie Linda Core...",
+            "ABOUTCORE": "O firmie Metrix Core...",
             "ABOUTALTITUDE": "Informacje o wysokości...",
             "DISCORD": "Niezgoda...",
             "ISSUE": "Zgłoś problem..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Zaakceptować"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inicjalizacja Linda Core...",
-        "DOWNLOADCLIENT": "Pobieranie Linda Core...",
-        "UPDATEAVAILABLE": "Dostępna aktualizacja Linda Core",
-        "SHUTTINGDOWN": "Zamykanie Linda Core...",
-        "RESTARTING": "Ponowne uruchamianie Linda Core..."
+        "INITIALISING": "Inicjalizacja Metrix Core...",
+        "DOWNLOADCLIENT": "Pobieranie Metrix Core...",
+        "UPDATEAVAILABLE": "Dostępna aktualizacja Metrix Core",
+        "SHUTTINGDOWN": "Zamykanie Metrix Core...",
+        "RESTARTING": "Ponowne uruchamianie Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nowe konto zostało pomyślnie utworzone",

@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Cüzdan şu anda lekeleniyor",
             "NOTENABLEDTITLE": "İşe alım etkin değil",
             "NOTENABLEDINFO": "Oylama şu anda etkin değil.",
-            "NOTENABLEDINSTR": "Bahis etmek için Linda.conf dosyanızda esnetme ayarını = 1 ayarlamayı etkinleştirmeniz gerekir.",
+            "NOTENABLEDINSTR": "Bahis etmek için metrix.conf dosyanızda esnetme ayarını = 1 ayarlamayı etkinleştirmeniz gerekir.",
             "NOTSTAKINGTITLE": "Cüzdanda durma",
             "NOTSTAKINGINFO": "Cüzdanınız şu anda sabitleme için kilitlendi.",
             "NOTSTAKINGINSTR": "İstiflemek için cüzdanınızın kilidini açarak istiflemeye başlayabilirsiniz.",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adres",
             "ENABLED": "Etkin",
             "NOTENABLEDTITLE": "Masternodlar etkin değil",
-            "NOTENABLEDINSTR": "Bir masternode çalıştırmak için, masternode = 1 ayarlayarak ve 'masternodeprivkey' ve 'masternodeaddr' değişkenlerini Linda.conf dosyanızda yapılandırarak masternode'ları etkinleştirmeniz gerekir.",
+            "NOTENABLEDINSTR": "Bir masternode çalıştırmak için, masternode = 1 ayarlayarak ve 'masternodeprivkey' ve 'masternodeaddr' değişkenlerini metrix.conf dosyanızda yapılandırarak masternode'ları etkinleştirmeniz gerekir.",
             "STARTBUTTON": "Yerel Başlat",
             "STARTALIASBUTTON": "Diğerleri Başlat",
             "STARTALLBUTTON": "Tümünü Başlat"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "İrtifa Sürümü"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPC konsoluna hoş geldiniz. Mevcut komutlara genel bakış için yardım yazın.",
+                "CONSOLEINFO": "Metrix Core RPC konsoluna hoş geldiniz. Mevcut komutlara genel bakış için yardım yazın.",
                 "CONSOLEWARNING": "UYARI: Scammers aktif hale geldi, kullanıcılara buraya komut yazmaları ve cüzdan içeriğini çalmalarını söylediler. Komutun anlaşılmasını tam olarak anlayamadan bu konsolu kullanmayın.",
                 "COMMANDPLACEHODLER": "Komutu Gir"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Başlangıç bloğu"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Linda Core harici olarak çalıştırıldığında bu onarım komutları çalıştırılamaz",
-                "INFO": "Aşağıdaki düğmeler, cüzdanı onarmak, bozuk blockchain dosyaları veya eksik / eski işlemler ile ilgili sorunları düzeltmek için komut satırı seçenekleriyle Linda Core'u yeniden başlatacaktır.",
+                "INFOEXTERNAL": "Metrix Core harici olarak çalıştırıldığında bu onarım komutları çalıştırılamaz",
+                "INFO": "Aşağıdaki düğmeler, cüzdanı onarmak, bozuk blockchain dosyaları veya eksik / eski işlemler ile ilgili sorunları düzeltmek için komut satırı seçenekleriyle Metrix Core'u yeniden başlatacaktır.",
                 "SALVAGEBUTTON": "Kurtarma Cüzdanı",
                 "SALVAGEINFO": "-salvagewallet: bozuk bir wallet.dat özel anahtarları kurtarmak için girişimi.",
                 "RESCANBUTTON": "Blockchain dosyalarını yeniden tara",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Çekirdek",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin geliştiricileri <br/> Telif Hakkı © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin geliştiricileri <br/> Telif hakkı © 2014-2018 Linda geliştiricileri <br/><br/> Bu deneysel bir yazılımdır. <br/> MIT / X11 yazılım lisansı altında dağıtılmış, eşlik eden COPYING dosyasına veya http://www.opensource.org/licenses/mit-license.php adresine bakınız. <br/><br/> Bu ürün, OpenSSL Toolkit (https://www.openssl.org) ve Eric Young (eay@cryptsoft.com) tarafından yazılan şifreleme yazılımı ve Thomas Bernard tarafından yazılan UPnP yazılımı için OpenSSL Project tarafından geliştirilen yazılımı içermektedir.",
+            "ABOUTCORETAB": "Metrix Çekirdek",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin geliştiricileri <br/> Telif Hakkı © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin geliştiricileri <br/> Telif hakkı © 2014-2019 Metrix geliştiricileri <br/><br/> Bu deneysel bir yazılımdır. <br/> MIT / X11 yazılım lisansı altında dağıtılmış, eşlik eden COPYING dosyasına veya http://www.opensource.org/licenses/mit-license.php adresine bakınız. <br/><br/> Bu ürün, OpenSSL Toolkit (https://www.openssl.org) ve Eric Young (eay@cryptsoft.com) tarafından yazılan şifreleme yazılımı ve Thomas Bernard tarafından yazılan UPnP yazılımı için OpenSSL Project tarafından geliştirilen yazılımı içermektedir.",
             "ABOUTALTITUDETAB": "rakım",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda geliştiricileri <br/><br/> Bu yazılım GPL-3.0 lisansı altında dağıtılmaktadır, daha fazla bilgi için https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE adresine bakınız."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix geliştiricileri <br/><br/> Bu yazılım GPL-3.0 lisansı altında dağıtılmaktadır, daha fazla bilgi için https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE adresine bakınız."
         },
         "LOCALE": {
             "TITLE": "Dil Seçin"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Cüzdan Parolanızı Girin",
             "UNLOCKSTAKINGONLY": "Yalnızca sabitleme için kilidini aç",
-            "CLIENTUPDATETITLE": "Linda Çekirdek Güncelleme Mevcut",
-            "CLIENTUPDATEINFO": "Linda Core için bir güncelleme var. Şimdi kurmak ister misiniz?",
+            "CLIENTUPDATETITLE": "Metrix Çekirdek Güncelleme Mevcut",
+            "CLIENTUPDATEINFO": "Metrix Core için bir güncelleme var. Şimdi kurmak ister misiniz?",
             "WALLETUPDATETITLE": "İrtifa Güncellemesi Mevcut",
             "WALLETUPDATEINFO": "Altitude için bir güncelleme var. Şimdi indirmek ister misiniz?",
             "CLIENTUPDATEBUTTON": "Güncelleştirme",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Parolayı Değiştir",
             "ENCRYPTTITLE": "Cüzdanınızı şifreleyin",
             "ENCRYPTBUTTON": "şifrele",
-            "CLIENTSTOPPEDTITLE": "Linda Core Durduruldu",
-            "CLIENTSTOPPEDINFO": "Bağlantı Linda Core'a kayboldu. Cüzdanı durdurabilir veya dahili Linda Çekirdeğini başlatabilirsiniz.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Durduruldu",
+            "CLIENTSTOPPEDINFO": "Bağlantı Metrix Core'a kayboldu. Cüzdanı durdurabilir veya dahili Metrix Çekirdeğini başlatabilirsiniz.",
             "CLIENTSTOPPEDBUTTONEXIT": "Çıkış Cüzdanı",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Çekirdeğini Başlat",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Çekirdeğini Başlat",
             "ENCRYPTEDTITLE": "Cüzdan Şifreli",
             "ENCRYPTEDCONTENT": "M-cüzdan dosyanızda yaptığınız önceki yedekler yeni oluşturulan, şifrelenmiş cüzdan dosyası ile değiştirilmelidir. Güvenlik nedenleriyle, şifrelenmemiş cüzdan dosyasının önceki yedeklemeleri, yeni, şifrelenmiş cüzdanı kullanmaya başladığınız anda işe yaramaz.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core beklenmedik bir şekilde durdu",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core’un sonlandırmasına neden olan bir problem vardı. Hatalar için debug.log dosyanızı kontrol etmeniz önerilir.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core beklenmedik bir şekilde durdu",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core’un sonlandırmasına neden olan bir problem vardı. Hatalar için debug.log dosyanızı kontrol etmeniz önerilir.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "İstemciyi Yeniden Başlat",
-            "CLIENTINVALIDCONFIGTITLE": "Geçersiz Linda.conf Yapılandırması",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf dosyanızda Linda Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin."
+            "CLIENTINVALIDCONFIGTITLE": "Geçersiz metrix.conf Yapılandırması",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf dosyanızda Metrix Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres defteri",
-            "SENDINGINFO": "Bunlar, ödemeleri göndermek için kaydettiğiniz Linda adresiniz. Sikke göndermeden önce her zaman miktarı ve alıcı adresini kontrol edin",
-            "RECEIVINGINFO": "Bunlar ödemeleri almak için kaydettiğiniz Linda adresiniz.",
+            "SENDINGINFO": "Bunlar, ödemeleri göndermek için kaydettiğiniz Metrix adresiniz. Sikke göndermeden önce her zaman miktarı ve alıcı adresini kontrol edin",
+            "RECEIVINGINFO": "Bunlar ödemeleri almak için kaydettiğiniz Metrix adresiniz.",
             "BUTTONSELECT": "seçmek",
             "TABLECOLUMNS_LABEL": "Etiket",
             "TABLECOLUMNS_ADDRESS": "Adres",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Mesaj İmzala...",
             "VERIFYMESSAGE": "İletiyi Doğrula...",
             "LOCALE": "Dil...",
-            "RESTARTCORE": "Linda Çekirdeğini Yeniden Başlat",
+            "RESTARTCORE": "Metrix Çekirdeğini Yeniden Başlat",
             "EXIT": "çıkış",
             "OPTIONS": "Seçenekler..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "yardım et",
             "COMMANDLINEOPTIONS": "Komut Satırı Seçenekleri...",
-            "CHECKUPDATECORE": "Linda Core Güncellemesini Kontrol Et...",
+            "CHECKUPDATECORE": "Metrix Core Güncellemesini Kontrol Et...",
             "CHECKUPDATEWALLET": "Yükseklik Güncellemesini Kontrol Et...",
-            "ABOUTCORE": "Linda Core hakkında...",
+            "ABOUTCORE": "Metrix Core hakkında...",
             "ABOUTALTITUDE": "İrtifa hakkında...",
             "DISCORD": "Ahenksizlik...",
             "ISSUE": "Bir Sorunu Bildirin..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "tamam",
         "CLEARALLBUTTON": "Hepsini temizle",
         "ENTERACCOUNTLABEL": "Bu adres için bir etiket girin",
-        "ENTERADDRESSLABEL": "Bir Linda adresi girin",
+        "ENTERADDRESSLABEL": "Bir Metrix adresi girin",
         "AGO": "önce",
         "SORTBY": "Göre sırala",
         "SEARCH": "Arama",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Kabul etmek"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core'u başlatıyor...",
-        "DOWNLOADCLIENT": "Linda Core'u indiriyor...",
-        "UPDATEAVAILABLE": "Linda Çekirdek Güncelleme Mevcut",
-        "SHUTTINGDOWN": "Linda Core'u kapatıyor...",
-        "RESTARTING": "Linda Çekirdeğini Yeniden Başlatıyor..."
+        "INITIALISING": "Metrix Core'u başlatıyor...",
+        "DOWNLOADCLIENT": "Metrix Core'u indiriyor...",
+        "UPDATEAVAILABLE": "Metrix Çekirdek Güncelleme Mevcut",
+        "SHUTTINGDOWN": "Metrix Core'u kapatıyor...",
+        "RESTARTING": "Metrix Çekirdeğini Yeniden Başlatıyor..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yeni hesap başarıyla oluşturuldu",

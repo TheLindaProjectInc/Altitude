@@ -9,7 +9,7 @@
       <span *ngIf="!getSelectedQuantity()"
         style="margin-left: 1em;">{{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}</span>
       <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">{{helpers.prettyCoins(getSelectedAmount())}}
-        Linda</span>
+        Metrix</span>
     </div>
 
     <div class="form-inline" style="margin-top: 1em;">
@@ -73,9 +73,9 @@
 
   <div class="inputs-header-wrapper">
     <div class="inputs-header">
-      <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{helpers.prettyCoins(getSelectedAmount())}} Linda</p>
+      <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{helpers.prettyCoins(getSelectedAmount())}} Metrix</p>
       <p>{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(getSelectedFee())}}</p>
-      <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{helpers.prettyCoins(getSelectedAftFee())}} Linda</p>
+      <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{helpers.prettyCoins(getSelectedAftFee())}} Metrix</p>
     </div>
     <div class="inputs-header">
       <p>{{ 'PAGES.SEND.QUANTITY' | translate }}: {{getSelectedQuantity()}}</p>

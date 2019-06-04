@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Seifs pašlaik tiek sakārtots",
             "NOTENABLEDTITLE": "Staking nav iespējots",
             "NOTENABLEDINFO": "Staking pašlaik nav iespējots.",
-            "NOTENABLEDINSTR": "Lai veiktu likmi, Linda.conf failā būs jāiespējo staking = staking = 1.",
+            "NOTENABLEDINSTR": "Lai veiktu likmi, metrix.conf failā būs jāiespējo staking = staking = 1.",
             "NOTSTAKINGTITLE": "Maka nav stacking",
             "NOTSTAKINGINFO": "Jūsu seifs pašlaik ir bloķēts, lai veiktu stakcijas.",
             "NOTSTAKINGINSTR": "Varat sākt staking, atbloķējot seifu, lai tas būtu steiks",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adrese",
             "ENABLED": "Iespējots",
             "NOTENABLEDTITLE": "Masternodes nav iespējotas",
-            "NOTENABLEDINSTR": "Lai palaistu masternodu, jums būs jāiespējo masternodes, nosakot masternode = 1 un konfigurējot \"masternodeprivkey\" un \"masternodeaddr\" mainīgos jūsu Linda.conf failā.",
+            "NOTENABLEDINSTR": "Lai palaistu masternodu, jums būs jāiespējo masternodes, nosakot masternode = 1 un konfigurējot \"masternodeprivkey\" un \"masternodeaddr\" mainīgos jūsu metrix.conf failā.",
             "STARTBUTTON": "Sāciet lokāli",
             "STARTALIASBUTTON": "Sākt alias",
             "STARTALLBUTTON": "Sāciet visu"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Augstuma versija"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Laipni lūdzam Linda Core RPC konsolē. Ievadiet palīdzību, lai apskatītu pieejamās komandas.",
+                "CONSOLEINFO": "Laipni lūdzam Metrix Core RPC konsolē. Ievadiet palīdzību, lai apskatītu pieejamās komandas.",
                 "CONSOLEWARNING": "BRĪDINĀJUMS: Scammers ir bijušas aktīvas, stāstot, ka lietotāji šeit ierakstīja komandas, zādzot to seifa saturu. Neizmantojiet šo konsoli, pilnībā neizprotot komandas atvieglošanu.",
                 "COMMANDPLACEHODLER": "Ievadiet komandu"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Starta bloks"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Šīs labošanas komandas nevar palaist, kad Linda Core palaiž ārā",
-                "INFO": "Tālāk norādītās pogas restartēs Linda Core ar komandrindas opcijām, lai labotu seifu, novērstu problēmas ar korumpētiem blokkainu failiem vai trūkstošiem / novecojušiem darījumiem.",
+                "INFOEXTERNAL": "Šīs labošanas komandas nevar palaist, kad Metrix Core palaiž ārā",
+                "INFO": "Tālāk norādītās pogas restartēs Metrix Core ar komandrindas opcijām, lai labotu seifu, novērstu problēmas ar korumpētiem blokkainu failiem vai trūkstošiem / novecojušiem darījumiem.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Mēģinājums atgūt privātās atslēgas no korumpētā wallet.dat.",
                 "RESCANBUTTON": "Rescan blokshēmas failus",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin izstrādātāji <br/> Autortiesības © 2011-2012 PPCoin izstrādātāji <br/> Autortiesības © 2012-2014 NovaCoin izstrādātāji <br/> Autortiesības © 2014-2018 Linda izstrādātāji <br/><br/> Šī ir eksperimentāla programmatūra. <br/> Izplatīti saskaņā ar MIT / X11 programmatūras licenci, skatiet pievienoto failu COPYING vai http://www.opensource.org/licenses/mit-license.php. <br/><br/> Šajā produktā ietilpst programmatūra, ko izstrādājis OpenSSL projekts, lai to izmantotu OpenSSL rīkkopa (https://www.openssl.org) un kriptogrāfijas programmatūrā, ko ir uzrakstījis Eric Young (eay@cryptsoft.com) un Thomas Bernard raksta UPnP programmatūra.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin izstrādātāji <br/> Autortiesības © 2011-2012 PPCoin izstrādātāji <br/> Autortiesības © 2012-2014 NovaCoin izstrādātāji <br/> Autortiesības © 2014-2019 Metrix izstrādātāji <br/><br/> Šī ir eksperimentāla programmatūra. <br/> Izplatīti saskaņā ar MIT / X11 programmatūras licenci, skatiet pievienoto failu COPYING vai http://www.opensource.org/licenses/mit-license.php. <br/><br/> Šajā produktā ietilpst programmatūra, ko izstrādājis OpenSSL projekts, lai to izmantotu OpenSSL rīkkopa (https://www.openssl.org) un kriptogrāfijas programmatūrā, ko ir uzrakstījis Eric Young (eay@cryptsoft.com) un Thomas Bernard raksta UPnP programmatūra.",
             "ABOUTALTITUDETAB": "Augstums",
-            "ABOUTALTITUDE": "Copyright © 2018 Lindas izstrādātāji <br/><br/> Šī programmatūra tiek izplatīta saskaņā ar GPL-3.0 licenci, plašāku informāciju skatiet vietnē https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Lindas izstrādātāji <br/><br/> Šī programmatūra tiek izplatīta saskaņā ar GPL-3.0 licenci, plašāku informāciju skatiet vietnē https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Izvēlēties valodu"
@@ -244,7 +244,7 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ievadiet savu maka parakstu",
             "UNLOCKSTAKINGONLY": "Atbloķē tikai staking",
-            "CLIENTUPDATETITLE": "Pieejama Linda Core atjauninājums",
+            "CLIENTUPDATETITLE": "Pieejama Metrix Core atjauninājums",
             "CLIENTUPDATEINFO": "Lindai Core ir pieejams atjauninājums. Vai vēlaties to instalēt tagad?",
             "WALLETUPDATETITLE": "Pieejams augstuma augstums",
             "WALLETUPDATEINFO": "Augstumam ir pieejams jauninājums. Vai vēlaties to lejupielādēt tagad?",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Mainīt paroļu frāzi",
             "ENCRYPTTITLE": "Šifrēt savu seifu",
             "ENCRYPTBUTTON": "Šifrēt",
-            "CLIENTSTOPPEDTITLE": "Linda Core pārtraukta",
-            "CLIENTSTOPPEDINFO": "Linda Core savienojums ir zaudēts. Jūs varat apturēt seifu vai sākt iekšējo Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core pārtraukta",
+            "CLIENTSTOPPEDINFO": "Metrix Core savienojums ir zaudēts. Jūs varat apturēt seifu vai sākt iekšējo Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Iziet no maka",
-            "CLIENTSTOPPEDBUTTONSTART": "Sākt Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Sākt Metrix Core",
             "ENCRYPTEDTITLE": "Maka šifrēts",
             "ENCRYPTEDCONTENT": "Jebkura iepriekšējā dublējumkopija, ko esat veicis no sava seifa faila, ir jāaizstāj ar jaunizveidoto šifrēto seifa failu. Drošības apsvērumu dēļ iepriekšējo nešifrētā seifa faila dublējumi kļūs nederīgi, tiklīdz jūs sākat izmantot jauno šifrētu seifu.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core negaidīti apstājās",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Linda Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core negaidīti apstājās",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartējiet klientu",
-            "CLIENTINVALIDCONFIGTITLE": "Nederīga Linda.conf konfigurācija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsu Linda.conf ir nederīgs masternode iestatījums, kas izraisīs Linda Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu."
+            "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
+            "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
-            "SENDINGINFO": "Tie ir jūsu saglabātā Linda adrese maksājumu nosūtīšanai. Pirms monētu nosūtīšanas vienmēr pārbaudiet summu un adresi",
-            "RECEIVINGINFO": "Tie ir jūsu saglabātā Linda adrese maksājumu saņemšanai.",
+            "SENDINGINFO": "Tie ir jūsu saglabātā Metrix adrese maksājumu nosūtīšanai. Pirms monētu nosūtīšanas vienmēr pārbaudiet summu un adresi",
+            "RECEIVINGINFO": "Tie ir jūsu saglabātā Metrix adrese maksājumu saņemšanai.",
             "BUTTONSELECT": "Izvēlieties",
             "TABLECOLUMNS_LABEL": "Uzlīme",
             "TABLECOLUMNS_ADDRESS": "Adrese",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Parakstiet paziņojumu...",
             "VERIFYMESSAGE": "Pārbaudīt ziņojumu...",
             "LOCALE": "Valoda...",
-            "RESTARTCORE": "Restartējiet Linda Core",
+            "RESTARTCORE": "Restartējiet Metrix Core",
             "EXIT": "Izeja",
             "OPTIONS": "Iespējas..."
         },
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "Palīdzība",
             "COMMANDLINEOPTIONS": "Komandrindas opcijas...",
-            "CHECKUPDATECORE": "Pārbaudiet Linda Core atjauninājumu...",
+            "CHECKUPDATECORE": "Pārbaudiet Metrix Core atjauninājumu...",
             "CHECKUPDATEWALLET": "Pārbaudiet augstuma atjauninājumu...",
             "ABOUTCORE": "Par Lindu Core...",
             "ABOUTALTITUDE": "Par augstumu...",
@@ -337,10 +337,10 @@
         "ACCEPTBUTTON": "Pieņemt"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core inicializēšana...",
+        "INITIALISING": "Metrix Core inicializēšana...",
         "DOWNLOADCLIENT": "Lindas koda lejupielāde...",
-        "UPDATEAVAILABLE": "Pieejama Linda Core atjauninājums",
-        "SHUTTINGDOWN": "Linda Core izslēgšana...",
+        "UPDATEAVAILABLE": "Pieejama Metrix Core atjauninājums",
+        "SHUTTINGDOWN": "Metrix Core izslēgšana...",
         "RESTARTING": "Lindas Core atjaunošana..."
     },
     "NOTIFICATIONS": {

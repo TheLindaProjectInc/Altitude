@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Portofelul este în prezent de licitare",
             "NOTENABLEDTITLE": "Staking nu este activată",
             "NOTENABLEDINFO": "Stakingul nu este activat în prezent.",
-            "NOTENABLEDINSTR": "Pentru a miza, va trebui să activați staking setarea = 1 în fișierul Linda.conf.",
+            "NOTENABLEDINSTR": "Pentru a miza, va trebui să activați staking setarea = 1 în fișierul metrix.conf.",
             "NOTSTAKINGTITLE": "Portofelul nu se aplică",
             "NOTSTAKINGINFO": "Portofelul dvs. este în prezent blocat pentru activare.",
             "NOTSTAKINGINSTR": "Puteți începe să pariați prin deblocarea portofelului pentru pariere",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adresa",
             "ENABLED": "Activat",
             "NOTENABLEDTITLE": "Masternozele nu sunt activate",
-            "NOTENABLEDINSTR": "Pentru a rula un masternode, va trebui să activați masternodes prin setarea masternode = 1 și configurarea variabilelor \"masternodeprivkey\" și \"masternodeaddr\" în fișierul Linda.conf.",
+            "NOTENABLEDINSTR": "Pentru a rula un masternode, va trebui să activați masternodes prin setarea masternode = 1 și configurarea variabilelor \"masternodeprivkey\" și \"masternodeaddr\" în fișierul metrix.conf.",
             "STARTBUTTON": "Porniți Local",
             "STARTALIASBUTTON": "Porneste Alias",
             "STARTALLBUTTON": "Începeți totul"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Versiunea altitudinii"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Bine ați venit la consola Linda Core RPC. Introduceți ajutor pentru o prezentare generală a comenzilor disponibile.",
+                "CONSOLEINFO": "Bine ați venit la consola Metrix Core RPC. Introduceți ajutor pentru o prezentare generală a comenzilor disponibile.",
                 "CONSOLEWARNING": "AVERTISMENT: Escrocii au fost activi, spunând utilizatorilor să introducă comenzi aici, fură conținutul portofelului lor. Nu utilizați această consolă fără a înțelege pe deplin ramificarea unei comenzi.",
                 "COMMANDPLACEHODLER": "Introduceți comanda"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Pornirea Blocului"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Aceste comenzi de reparații nu pot fi executate atunci când Linda Core este rulat extern",
-                "INFO": "Butoanele de mai jos vor reporni Linda Core cu opțiuni de linie de comandă pentru a repara portofelul, pentru a remedia problemele cu fișiere blocate de blocuri sau pentru tranzacții care lipsesc sau depășesc.",
+                "INFOEXTERNAL": "Aceste comenzi de reparații nu pot fi executate atunci când Metrix Core este rulat extern",
+                "INFO": "Butoanele de mai jos vor reporni Metrix Core cu opțiuni de linie de comandă pentru a repara portofelul, pentru a remedia problemele cu fișiere blocate de blocuri sau pentru tranzacții care lipsesc sau depășesc.",
                 "SALVAGEBUTTON": "Salvare Portofel",
                 "SALVAGEINFO": "-salvagewallet: încercați să recuperați cheile private de pe un wallet.dat corupt.",
                 "RESCANBUTTON": "Rescanarea fișierelor de blocare",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Dezvoltatorii Bitcoin <br/> Copyright © 2011-2012 Dezvoltatori PPCoin <br/> Copyright © 2012-2014 Dezvoltatorii NovaCoin <br/> Copyright © 2014-2018 Dezvoltatorii Linda <br/><br/> Acesta este software-ul experimental. <br/> Distribuită sub licența software MIT / X11, consultați fișierul de însoțire COPYING sau http://www.opensource.org/licenses/mit-license.php. <br/><br/> Acest produs include software dezvoltat de OpenSSL Project pentru utilizarea în OpenSSL Toolkit (https://www.openssl.org) și software-ul criptografic scris de Eric Young (eay@cryptsoft.com) și software-ul UPnP scris de Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Dezvoltatorii Bitcoin <br/> Copyright © 2011-2012 Dezvoltatori PPCoin <br/> Copyright © 2012-2014 Dezvoltatorii NovaCoin <br/> Copyright © 2014-2019 Dezvoltatorii Metrix <br/><br/> Acesta este software-ul experimental. <br/> Distribuită sub licența software MIT / X11, consultați fișierul de însoțire COPYING sau http://www.opensource.org/licenses/mit-license.php. <br/><br/> Acest produs include software dezvoltat de OpenSSL Project pentru utilizarea în OpenSSL Toolkit (https://www.openssl.org) și software-ul criptografic scris de Eric Young (eay@cryptsoft.com) și software-ul UPnP scris de Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitudine",
-            "ABOUTALTITUDE": "Copyright © 2018 Dezvoltatorii Linda <br/><br/> Acest software este distribuit sub licența GPL-3.0, pentru mai multe informații, consultați https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Dezvoltatorii Metrix <br/><br/> Acest software este distribuit sub licența GPL-3.0, pentru mai multe informații, consultați https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Selecteaza limba"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Introduceți expresia de acces la Wallet",
             "UNLOCKSTAKINGONLY": "Deblocați numai pentru pariere",
-            "CLIENTUPDATETITLE": "Linda Core Update Available",
-            "CLIENTUPDATEINFO": "O actualizare este disponibilă pentru Linda Core. Doriți să îl instalați acum?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Available",
+            "CLIENTUPDATEINFO": "O actualizare este disponibilă pentru Metrix Core. Doriți să îl instalați acum?",
             "WALLETUPDATETITLE": "Actualizare altitudine disponibilă",
             "WALLETUPDATEINFO": "O actualizare este disponibilă pentru altitudine. Doriți să îl descărcați acum?",
             "CLIENTUPDATEBUTTON": "Actualizați",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Schimbați expresia de acces",
             "ENCRYPTTITLE": "Criptați portofelul",
             "ENCRYPTBUTTON": "Criptați",
-            "CLIENTSTOPPEDTITLE": "Linda Core sa oprit",
-            "CLIENTSTOPPEDINFO": "Conexiunea a fost pierdută pentru Linda Core. Puteți opri portofelul sau puteți porni Linda Core internă.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core sa oprit",
+            "CLIENTSTOPPEDINFO": "Conexiunea a fost pierdută pentru Metrix Core. Puteți opri portofelul sau puteți porni Metrix Core internă.",
             "CLIENTSTOPPEDBUTTONEXIT": "Ieșiți din Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Începeți Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Începeți Metrix Core",
             "ENCRYPTEDTITLE": "Portofel criptat",
             "ENCRYPTEDCONTENT": "Toate backup-urile anterioare pe care le-ați realizat din fișierul dvs. de portofel trebuie înlocuite cu fișierul portofel criptat nou generat. Din motive de securitate, backup-urile anterioare ale fișierului portofel necriptat vor deveni inutile imediat ce veți începe să utilizați noul portofel criptat.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core sa oprit în mod neașteptat",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Linda Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core sa oprit în mod neașteptat",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reporniți Clientul",
-            "CLIENTINVALIDCONFIGTITLE": "Configurația Linda.conf este nevalidă",
-            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. Linda.conf are o setare invalidă de tip masternode care va determina Linda Core să iasă imediat. Verificați acest fișier."
+            "CLIENTINVALIDCONFIGTITLE": "Configurația metrix.conf este nevalidă",
+            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier."
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
-            "SENDINGINFO": "Acestea sunt adresa salvată Linda pentru trimiterea plăților. Verificați întotdeauna suma și adresa de primire înainte de a trimite monede",
-            "RECEIVINGINFO": "Acestea sunt adresa salvată Linda pentru primirea plăților.",
+            "SENDINGINFO": "Acestea sunt adresa salvată Metrix pentru trimiterea plăților. Verificați întotdeauna suma și adresa de primire înainte de a trimite monede",
+            "RECEIVINGINFO": "Acestea sunt adresa salvată Metrix pentru primirea plăților.",
             "BUTTONSELECT": "Selectați",
             "TABLECOLUMNS_LABEL": "Eticheta",
             "TABLECOLUMNS_ADDRESS": "Adresa",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Semnează mesajul...",
             "VERIFYMESSAGE": "Verificați mesajul...",
             "LOCALE": "Limba...",
-            "RESTARTCORE": "Reporniți Linda Core",
+            "RESTARTCORE": "Reporniți Metrix Core",
             "EXIT": "Ieșire",
             "OPTIONS": "Opțiuni..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Ajutor",
             "COMMANDLINEOPTIONS": "Opțiunile liniei de comandă...",
-            "CHECKUPDATECORE": "Verificați actualizarea Linda Core...",
+            "CHECKUPDATECORE": "Verificați actualizarea Metrix Core...",
             "CHECKUPDATEWALLET": "Verificați actualizarea altitudinii...",
-            "ABOUTCORE": "Despre Linda Core...",
+            "ABOUTCORE": "Despre Metrix Core...",
             "ABOUTALTITUDE": "Despre altitudine...",
             "DISCORD": "Discordie...",
             "ISSUE": "Raportează o problemă..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "O.K",
         "CLEARALLBUTTON": "Curata tot",
         "ENTERACCOUNTLABEL": "Introduceți o etichetă pentru această adresă",
-        "ENTERADDRESSLABEL": "Introduceți o adresă Linda",
+        "ENTERADDRESSLABEL": "Introduceți o adresă Metrix",
         "AGO": "în urmă",
         "SORTBY": "Filtrează după",
         "SEARCH": "Căutare",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Accept"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inițierea Linda Core...",
-        "DOWNLOADCLIENT": "Descărcarea Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Available",
-        "SHUTTINGDOWN": "Închiderea Linda Core...",
-        "RESTARTING": "Reporniți Linda Core..."
+        "INITIALISING": "Inițierea Metrix Core...",
+        "DOWNLOADCLIENT": "Descărcarea Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Available",
+        "SHUTTINGDOWN": "Închiderea Metrix Core...",
+        "RESTARTING": "Reporniți Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Contul nou a fost creat cu succes",

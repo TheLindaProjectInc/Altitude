@@ -21,9 +21,9 @@
     <div class="value">
         <div class="amount"
             [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
-            {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{helpers.prettyCoins(trx.amount)}} Linda
+            {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{helpers.prettyCoins(trx.amount)}} Metrix
         </div>
         <div *ngIf="trx.fee" class="small danger">{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(trx.fee)}}
-            Linda</div>
+            Metrix</div>
     </div>
 </div>

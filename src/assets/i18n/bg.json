@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Понастоящем портфейлът се зарежда",
             "NOTENABLEDTITLE": "Залагането не е активирано",
             "NOTENABLEDINFO": "Закупуването понастоящем не е активирано.",
-            "NOTENABLEDINSTR": "За да заложите, трябва да разрешите залагането на залагания = 1 във вашия файл Linda.conf.",
+            "NOTENABLEDINSTR": "За да заложите, трябва да разрешите залагането на залагания = 1 във вашия файл metrix.conf.",
             "NOTSTAKINGTITLE": "Портфейл не залага",
             "NOTSTAKINGINFO": "Вашият портфейл в момента е заключен за залагания.",
             "NOTSTAKINGINSTR": "Можете да започнете да залагате, като отключвате портфейла си за залагане",
@@ -69,7 +69,7 @@
             "ADDRESS": "адрес",
             "ENABLED": "Enabled",
             "NOTENABLEDTITLE": "Мастерионите не са активирани",
-            "NOTENABLEDINSTR": "За да стартирате masternode, ще трябва да активирате masternodes, като зададете masternode = 1 и конфигурирате променливите 'masternodeprivkey' и 'masternodeaddr' във вашия файл Linda.conf.",
+            "NOTENABLEDINSTR": "За да стартирате masternode, ще трябва да активирате masternodes, като зададете masternode = 1 и конфигурирате променливите 'masternodeprivkey' и 'masternodeaddr' във вашия файл metrix.conf.",
             "STARTBUTTON": "Стартирайте локално",
             "STARTALIASBUTTON": "Стартирайте Псевдоним",
             "STARTALLBUTTON": "Започнете всички"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Версия за надморска височина"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Добре дошли в конзолата Linda Core RPC. Въведете помощ за преглед на наличните команди.",
+                "CONSOLEINFO": "Добре дошли в конзолата Metrix Core RPC. Въведете помощ за преглед на наличните команди.",
                 "CONSOLEWARNING": "ПРЕДУПРЕЖДЕНИЕ: Измамници са били активни, казвайки на потребителите да въвеждат команди тук, като крадат съдържанието на портфейла си. Не използвайте тази конзола, без да разберете напълно разклонението на командата.",
                 "COMMANDPLACEHODLER": "Въведете командата"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Стартов блок"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Тези команди за ремонт не могат да се изпълняват, когато Linda Core се изпълнява външно",
-                "INFO": "Бутоните по-долу ще рестартират Linda Core с опции в командния ред, за да поправя портфейла, да решат проблемите с корумпирани блокове с фрагменти или липсващи / остарели транзакции.",
+                "INFOEXTERNAL": "Тези команди за ремонт не могат да се изпълняват, когато Metrix Core се изпълнява външно",
+                "INFO": "Бутоните по-долу ще рестартират Metrix Core с опции в командния ред, за да поправя портфейла, да решат проблемите с корумпирани блокове с фрагменти или липсващи / остарели транзакции.",
                 "SALVAGEBUTTON": "Папката за спасяване",
                 "SALVAGEINFO": "-Salvagewallet: Опитвате се да възстановите частните ключове от корумпиран портфейл.",
                 "RESCANBUTTON": "Повторно сканиране на блокови файлове",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Линда Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Разработчиците на Bitcoin <br/> Copyright © 2011-2012 PPCoin разработчици <br/> Copyright © 2012-2014 Разработчиците на NovaCoin <br/> Copyright © 2014-2018 Линда разработчици <br/><br/> Това е експериментален софтуер. <br/> Разпространяван под лиценза за софтуер MIT / X11, вижте придружаващия го файл COPYING или http://www.opensource.org/licenses/mit-license.php. <br/><br/> Този продукт включва софтуер, разработен от OpenSSL Project за използване в OpenSSL Toolkit (https://www.openssl.org) и криптографски софтуер, написан от Eric Young (eay@cryptsoft.com) и UPnP софтуер, написан от Thomas Bernard.",
+            "ABOUTCORE": "Copyright © 2009-2015 Разработчиците на Bitcoin <br/> Copyright © 2011-2012 PPCoin разработчици <br/> Copyright © 2012-2014 Разработчиците на NovaCoin <br/> Copyright © 2014-2019 Линда разработчици <br/><br/> Това е експериментален софтуер. <br/> Разпространяван под лиценза за софтуер MIT / X11, вижте придружаващия го файл COPYING или http://www.opensource.org/licenses/mit-license.php. <br/><br/> Този продукт включва софтуер, разработен от OpenSSL Project за използване в OpenSSL Toolkit (https://www.openssl.org) и криптографски софтуер, написан от Eric Young (eay@cryptsoft.com) и UPnP софтуер, написан от Thomas Bernard.",
             "ABOUTALTITUDETAB": "Надморска височина",
-            "ABOUTALTITUDE": "Copyright © 2018 Линда разработчици <br/><br/> Този софтуер се разпространява под лиценз GPL-3.0, за повече информация вижте https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Линда разработчици <br/><br/> Този софтуер се разпространява под лиценз GPL-3.0, за повече информация вижте https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Избери език"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Въведете фраза за вашия Wallet",
             "UNLOCKSTAKINGONLY": "Отключете само за залагания",
-            "CLIENTUPDATETITLE": "Налице е актуализация на Linda Core",
-            "CLIENTUPDATEINFO": "Налице е актуализация за Linda Core. Искате ли да го инсталирате сега?",
+            "CLIENTUPDATETITLE": "Налице е актуализация на Metrix Core",
+            "CLIENTUPDATEINFO": "Налице е актуализация за Metrix Core. Искате ли да го инсталирате сега?",
             "WALLETUPDATETITLE": "Налична актуализация за надморската височина",
             "WALLETUPDATEINFO": "Налице е актуализация за Altitude. Искате ли да го изтеглите сега?",
             "CLIENTUPDATEBUTTON": "Актуализация",
@@ -259,21 +259,21 @@
             "ENCRYPTTITLE": "Шифровайте портфейла си",
             "ENCRYPTBUTTON": "Encrypt",
             "CLIENTSTOPPEDTITLE": "Линда ядро спря",
-            "CLIENTSTOPPEDINFO": "Свързана е загубата на Линда Core. Можете да спрете портфейла или да стартирате вътрешния Linda Core.",
+            "CLIENTSTOPPEDINFO": "Свързана е загубата на Линда Core. Можете да спрете портфейла или да стартирате вътрешния Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Излезте от Wallet",
             "CLIENTSTOPPEDBUTTONSTART": "Започнете Линда Core",
             "ENCRYPTEDTITLE": "Калъфът е шифрован",
             "ENCRYPTEDCONTENT": "Всички предишни архиви, които сте направили от файла на портфейла, трябва да бъдат заменени с новоиздадения, шифрован файл на портфейла. От съображения за сигурност, предишните архиви на нешифрования файл с портфейли ще станат безполезни веднага щом започнете да използвате новия криптиран портфейл.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда ядро спря неочаквано",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем с Linda Core, който го е причинил да прекрати. Препоръчваме да проверите файла debug.log за проблеми.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем с Metrix Core, който го е причинил да прекрати. Препоръчваме да проверите файла debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирайте клиента",
-            "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашият Linda.conf има невалидна настройка на masternode, която ще накара Linda Core да излезе веднага. Моля, проверете този файл."
+            "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
-            "SENDINGINFO": "Това е вашият спасен адрес на Linda за изпращане на плащания. Винаги проверявайте сумата и получавате адрес, преди да изпратите монети",
-            "RECEIVINGINFO": "Това са вашите запазени адреси Linda за получаване на плащания.",
+            "SENDINGINFO": "Това е вашият спасен адрес на Metrix за изпращане на плащания. Винаги проверявайте сумата и получавате адрес, преди да изпратите монети",
+            "RECEIVINGINFO": "Това са вашите запазени адреси Metrix за получаване на плащания.",
             "BUTTONSELECT": "Изберете",
             "TABLECOLUMNS_LABEL": "етикет",
             "TABLECOLUMNS_ADDRESS": "адрес",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Подпишете съобщение...",
             "VERIFYMESSAGE": "Потвърдете съобщението...",
             "LOCALE": "Език...",
-            "RESTARTCORE": "Рестартирайте Linda Core",
+            "RESTARTCORE": "Рестартирайте Metrix Core",
             "EXIT": "изход",
             "OPTIONS": "Настроики..."
         },
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "Помогне",
             "COMMANDLINEOPTIONS": "Опции за команден ред...",
-            "CHECKUPDATECORE": "Проверете за актуализацията на Linda Core...",
+            "CHECKUPDATECORE": "Проверете за актуализацията на Metrix Core...",
             "CHECKUPDATEWALLET": "Проверка за актуализиране на надморската височина...",
             "ABOUTCORE": "За Линда Core...",
             "ABOUTALTITUDE": "За Надморска височина...",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "приемам"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Инициализиране на Linda Core...",
+        "INITIALISING": "Инициализиране на Metrix Core...",
         "DOWNLOADCLIENT": "Изтегляне на Линда Core...",
-        "UPDATEAVAILABLE": "Налице е актуализация на Linda Core",
+        "UPDATEAVAILABLE": "Налице е актуализация на Metrix Core",
         "SHUTTINGDOWN": "Прекратяване на Линда Core...",
-        "RESTARTING": "Рестартиране на Linda Core..."
+        "RESTARTING": "Рестартиране на Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Създаден е нов профил",

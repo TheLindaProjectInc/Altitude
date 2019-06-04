@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Դրամապանակն այժմ խփում է",
             "NOTENABLEDTITLE": "Staking միացված չէ",
             "NOTENABLEDINFO": "Staking- ը ներկայումս միացված չէ:",
-            "NOTENABLEDINSTR": "Ցանկության դեպքում դուք պետք է հնարավորություն ընձեռեք ձեր Linda.conf ֆայլում staking setting staking = 1:",
+            "NOTENABLEDINSTR": "Ցանկության դեպքում դուք պետք է հնարավորություն ընձեռեք ձեր metrix.conf ֆայլում staking setting staking = 1:",
             "NOTSTAKINGTITLE": "Դրամապանակը չխանգարեց",
             "NOTSTAKINGINFO": "Ձեր դրամապանակը այժմ փակ է պահելու համար:",
             "NOTSTAKINGINSTR": "Կարող եք սկսել staking- ի միջոցով ձեր դրամապանակը ապամոնտաժելու համար",
@@ -69,7 +69,7 @@
             "ADDRESS": "Հասցե",
             "ENABLED": "Հասանելի է",
             "NOTENABLEDTITLE": "Masternodes- ը միացված չէ",
-            "NOTENABLEDINSTR": "Masternode վարելու համար հարկավոր է ակտիվացնել masternodes `masternode = 1-ը եւ configuring 'masternodeprivkey' եւ 'masternodeaddr' փոփոխականները ձեր Linda.conf ֆայլում:",
+            "NOTENABLEDINSTR": "Masternode վարելու համար հարկավոր է ակտիվացնել masternodes `masternode = 1-ը եւ configuring 'masternodeprivkey' եւ 'masternodeaddr' փոփոխականները ձեր metrix.conf ֆայլում:",
             "STARTBUTTON": "Սկսել տեղական",
             "STARTALIASBUTTON": "Սկսեք Alias- ը",
             "STARTALLBUTTON": "Սկսեք բոլորը"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Բարձրության տարբերակ"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Բարի գալուստ Linda Core RPC կոնսոլից: Մուտքագրեք օգնությունը մատչելի հրամանների ակնարկի համար:",
+                "CONSOLEINFO": "Բարի գալուստ Metrix Core RPC կոնսոլից: Մուտքագրեք օգնությունը մատչելի հրամանների ակնարկի համար:",
                 "CONSOLEWARNING": "ԶԳՈՒՇԱՑՈՒՄ. Scammers- ը ակտիվացել է, օգտագործողներին պատմել հրամանների մասին, գողանալ իրենց դրամապանակի բովանդակությունը: Մի օգտագործեք այս մխիթարելը, առանց հրամանատարության ճնշումը լիովին հասկանալու համար:",
                 "COMMANDPLACEHODLER": "Մուտքագրեք հրամանը"
             },
@@ -122,7 +122,7 @@
             },
             "REPAIR": {
                 "INFOEXTERNAL": "Այս վերանորոգման հրամանները չեն կարող գործարկվել, երբ Լինդա Քորին դուրս է գալիս արտաքինից",
-                "INFO": "Ստորեւ բերված կոճակները կվերսկսեն Linda Core- ին, դրամապանակի վերանորոգման հրամանի տող տարբերակները, հիմնախնդիրները կոռումպացված բլոկչերային ֆայլերով կամ անհայտ բացակայող / հնացած գործարքների հետ:",
+                "INFO": "Ստորեւ բերված կոճակները կվերսկսեն Metrix Core- ին, դրամապանակի վերանորոգման հրամանի տող տարբերակները, հիմնախնդիրները կոռումպացված բլոկչերային ֆայլերով կամ անհայտ բացակայող / հնացած գործարքների հետ:",
                 "SALVAGEBUTTON": "Փրկարարական դրամապանակ",
                 "SALVAGEINFO": "-salvagewallet. փորձել վերականգնել անձնական բանալիներ կոռումպացված wallet.dat- ից:",
                 "RESCANBUTTON": "Rescan blockchain ֆայլերը",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Լինդա Կորե",
-            "ABOUTCORE": "Copyright © 2009-2015 The Bitcoin մշակողները <br/> Հեղինակային իրավունք © 2011-2012 PPCoin մշակողները <br/> Copyright © 2012-2014 The NovaCoin մշակողները <br/> Copyright © 2014-2018 The Linda մշակողները <br/><br/> Սա փորձարարական ծրագրակազմ է: <br/> MIT / X11 ծրագրային ապահովման լիցենզիայի ներքո տարածված տես `COPYING կամ http://www.opensource.org/licenses/mit-license.php ուղեկցող ֆայլը: <br/><br/> Այս արտադրանքը ներառում է OpenSSL ծրագրի կողմից օգտագործված OpenSSL Toolkit- ում (https://www.openssl.org) եւ Eric Young- ի (eay@cryptsoft.com) գրված ծրագրային ապահովման եւ Թոմ Բերնարդի կողմից գրված UPnP ծրագրային ապահովման օգտագործման համար նախատեսված ծրագրակազմ:",
+            "ABOUTCORE": "Copyright © 2009-2015 The Bitcoin մշակողները <br/> Հեղինակային իրավունք © 2011-2012 PPCoin մշակողները <br/> Copyright © 2012-2014 The NovaCoin մշակողները <br/> Copyright © 2014-2019 The Metrix մշակողները <br/><br/> Սա փորձարարական ծրագրակազմ է: <br/> MIT / X11 ծրագրային ապահովման լիցենզիայի ներքո տարածված տես `COPYING կամ http://www.opensource.org/licenses/mit-license.php ուղեկցող ֆայլը: <br/><br/> Այս արտադրանքը ներառում է OpenSSL ծրագրի կողմից օգտագործված OpenSSL Toolkit- ում (https://www.openssl.org) եւ Eric Young- ի (eay@cryptsoft.com) գրված ծրագրային ապահովման եւ Թոմ Բերնարդի կողմից գրված UPnP ծրագրային ապահովման օգտագործման համար նախատեսված ծրագրակազմ:",
             "ABOUTALTITUDETAB": "Բարձրությունը",
-            "ABOUTALTITUDE": "Copyright © 2018 The Linda մշակողները <br/><br/> Այս ծրագիրը տարածվում է GPL-3.0 լիցենզիայի տակ, տես https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE լրացուցիչ տեղեկությունների համար:"
+            "ABOUTALTITUDE": "Copyright © 2019 The Metrix մշակողները <br/><br/> Այս ծրագիրը տարածվում է GPL-3.0 լիցենզիայի տակ, տես https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE լրացուցիչ տեղեկությունների համար:"
         },
         "LOCALE": {
             "TITLE": "Ընտրել լեզուն"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Մուտքագրեք ձեր դրամապանակի ստեղնաշարը",
             "UNLOCKSTAKINGONLY": "Բացեք միայն staking համար",
-            "CLIENTUPDATETITLE": "Linda Core թարմացումը հասանելի է",
-            "CLIENTUPDATEINFO": "Թարմացում կարելի է ձեռք բերել Linda Core- ի համար: Ցանկանում եք տեղադրել այն հիմա:",
+            "CLIENTUPDATETITLE": "Metrix Core թարմացումը հասանելի է",
+            "CLIENTUPDATEINFO": "Թարմացում կարելի է ձեռք բերել Metrix Core- ի համար: Ցանկանում եք տեղադրել այն հիմա:",
             "WALLETUPDATETITLE": "Բարձրության թարմացում",
             "WALLETUPDATEINFO": "Բարձրության համար հասանելի է թարմացում: Ցանկանում եք ներբեռնել հիմա:",
             "CLIENTUPDATEBUTTON": "Թարմացնել",
@@ -259,16 +259,16 @@
             "ENCRYPTTITLE": "Կողպեք ձեր դրամապանակը",
             "ENCRYPTBUTTON": "Կողպեք",
             "CLIENTSTOPPEDTITLE": "Լինդա Քորն ընդհատեց",
-            "CLIENTSTOPPEDINFO": "Կապը կորել է Լինդա Քորեին: Դուք կարող եք դադարեցնել դրամապանակը կամ սկսել ներքին Linda Core:",
+            "CLIENTSTOPPEDINFO": "Կապը կորել է Լինդա Քորեին: Դուք կարող եք դադարեցնել դրամապանակը կամ սկսել ներքին Metrix Core:",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet- ը",
-            "CLIENTSTOPPEDBUTTONSTART": "Սկսեք Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Սկսեք Metrix Core",
             "ENCRYPTEDTITLE": "Դրամապանակ կոդավորված է",
             "ENCRYPTEDCONTENT": "Ցանկացած նախորդ կրկնօրինակները, որոնք պատրաստել եք դրամապանակի ֆայլը, պետք է փոխարինել նորացված, կոդավորված դրամապանակի ֆայլով: Անվտանգության նկատառումներից ելնելով, unencrypted դրամապանակի ֆայլի նախորդ կրկնօրինակները անօգուտ են դառնում, երբ դուք սկսում եք օգտագործել նոր, կոդավորված դրամապանակ:",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Լինդա Քորն անսպասելիորեն կանգ առավ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Լինդա Քորեի հետ կապված խնդիր առաջացավ, որը դադարեցրեց նրան: Խորհուրդ է տալիս ստուգել ձեր debug.log ֆայլը հարցերի համար:",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Հաճախորդի վերսկսումը",
-            "CLIENTINVALIDCONFIGTITLE": "Անվավեր Linda.conf կոնֆիգուրացիան",
-            "CLIENTINVALIDCONFIGINFO": "Ձեր Linda.conf- ն ունի անսահմանափակ masternode կարգավորում, որը կհանգեցնի Linda Core- ին անմիջապես դուրս գալու: Խնդրում ենք ստուգել այս ֆայլը:"
+            "CLIENTINVALIDCONFIGTITLE": "Անվավեր metrix.conf կոնֆիգուրացիան",
+            "CLIENTINVALIDCONFIGINFO": "Ձեր metrix.conf- ն ունի անսահմանափակ masternode կարգավորում, որը կհանգեցնի Metrix Core- ին անմիջապես դուրս գալու: Խնդրում ենք ստուգել այս ֆայլը:"
         },
         "ADDRESSBOOK": {
             "TITLE": "Հասցեագիրք",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Մուտքագրեք հաղորդագրություն...",
             "VERIFYMESSAGE": "Ստուգեք հաղորդագրությունը...",
             "LOCALE": "Լեզու...",
-            "RESTARTCORE": "Վերագործարկել Linda Core- ը",
+            "RESTARTCORE": "Վերագործարկել Metrix Core- ը",
             "EXIT": "Ելք",
             "OPTIONS": "Ընտրանքներ..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Օգնություն",
             "COMMANDLINEOPTIONS": "Հրամանի տող ընտրանքներ...",
-            "CHECKUPDATECORE": "Ստուգեք Linda Core Update- ը...",
+            "CHECKUPDATECORE": "Ստուգեք Metrix Core Update- ը...",
             "CHECKUPDATEWALLET": "Ստուգեք Altitude Update- ը...",
-            "ABOUTCORE": "Linda Core- ի մասին...",
+            "ABOUTCORE": "Metrix Core- ի մասին...",
             "ABOUTALTITUDE": "Բարձրության մասին...",
             "DISCORD": "Discord- ը...",
             "ISSUE": "Հաղորդեք հարց..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "լավ",
         "CLEARALLBUTTON": "Մաքրել բոլորը",
         "ENTERACCOUNTLABEL": "Մուտքագրեք այս հասցեի պիտակը",
-        "ENTERADDRESSLABEL": "Մուտքագրեք Linda- ի հասցեն",
+        "ENTERADDRESSLABEL": "Մուտքագրեք Metrix- ի հասցեն",
         "AGO": "առաջ",
         "SORTBY": "Դասավորել ըստ",
         "SEARCH": "Որոնում",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Ընդունել"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Նախաձեռնող Linda Core...",
-        "DOWNLOADCLIENT": "Ներբեռնումը Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core թարմացումը հասանելի է",
-        "SHUTTINGDOWN": "Անջատելով Linda Core...",
-        "RESTARTING": "Վերսկսել Linda Core..."
+        "INITIALISING": "Նախաձեռնող Metrix Core...",
+        "DOWNLOADCLIENT": "Ներբեռնումը Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core թարմացումը հասանելի է",
+        "SHUTTINGDOWN": "Անջատելով Metrix Core...",
+        "RESTARTING": "Վերսկսել Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Նոր հաշիվը հաջողությամբ է ստեղծվել",

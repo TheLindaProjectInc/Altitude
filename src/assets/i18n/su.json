@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Dompét geus ayeuna staking",
             "NOTENABLEDTITLE": "Staking teu diaktipkeun",
             "NOTENABLEDINFO": "Staking henteu ayeuna diaktipkeun.",
-            "NOTENABLEDINSTR": "Pikeun stake anjeun bakal kedah ngaktipkeun staking setting staking = 1 dina file Linda.conf Anjeun.",
+            "NOTENABLEDINSTR": "Pikeun stake anjeun bakal kedah ngaktipkeun staking setting staking = 1 dina file metrix.conf Anjeun.",
             "NOTSTAKINGTITLE": "Dompét teu staking",
             "NOTSTAKINGINFO": "dompét anjeun ayeuna dikonci pikeun staking.",
             "NOTSTAKINGINSTR": "Anjeun bisa ngamimitian staking ku muka konci dompét anjeun staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "alamat",
             "ENABLED": "diaktipkeun",
             "NOTENABLEDTITLE": "Masternodes teu diaktipkeun",
-            "NOTENABLEDINSTR": "Pikeun ngajalankeun masternode a anjeun bakal kedah ngaktipkeun masternodes ku netepkeun masternode = 1 na Konfigurasi 'masternodeprivkey' sarta 'masternodeaddr' variabel dina file Linda.conf Anjeun.",
+            "NOTENABLEDINSTR": "Pikeun ngajalankeun masternode a anjeun bakal kedah ngaktipkeun masternodes ku netepkeun masternode = 1 na Konfigurasi 'masternodeprivkey' sarta 'masternodeaddr' variabel dina file metrix.conf Anjeun.",
             "STARTBUTTON": "mimitian Lokal",
             "STARTALIASBUTTON": "mimitian Alias",
             "STARTALLBUTTON": "mimitian Sadaya"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "luhurna Vérsi"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Wilujeng sumping di konsol Linda Core RPC. Tipe pitulung pikeun tinjauan Paréntah aya.",
+                "CONSOLEINFO": "Wilujeng sumping di konsol Metrix Core RPC. Tipe pitulung pikeun tinjauan Paréntah aya.",
                 "CONSOLEWARNING": "PERHATOSAN: scammers geus aktip, sangkan pamaké pikeun ngetik Paréntah dieu, maok eusi dompét maranéhanana. Ulah make konsol ieu tanpa pinuh pamahaman ramification tina paréntah nu.",
                 "COMMANDPLACEHODLER": "Lebetkeun Komando"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "dimimitian Blok"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Paréntah perbaikan ieu teu bisa ngajalankeun nalika Linda Core ieu ngajalankeun externally",
-                "INFO": "The tombol di handap bakal ngabalikan Linda Core kalawan pilihan paréntah-garis pikeun ngalereskeun dompet, ngalereskeun isu kalawan file blockchain ngaruksak atawa leungit / transaksi leungit.",
+                "INFOEXTERNAL": "Paréntah perbaikan ieu teu bisa ngajalankeun nalika Metrix Core ieu ngajalankeun externally",
+                "INFO": "The tombol di handap bakal ngabalikan Metrix Core kalawan pilihan paréntah-garis pikeun ngalereskeun dompet, ngalereskeun isu kalawan file blockchain ngaruksak atawa leungit / transaksi leungit.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: usaha cageur kenop swasta ti wallet.dat ngaruksak.",
                 "RESCANBUTTON": "Rescan blockchain file",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 pamekar The Bitcoin <br/> Copyright © 2011-2012 PPCoin pamekar <br/> Copyright © 2012-2014 pamekar The NovaCoin <br/> Copyright © 2014-2018 The Linda pamekar <br/><br/> Ieu software eksperimen. <br/> Disebarkeun di handapeun lisénsi software MIT / X11, ningali file nyalin dibéré bareng atanapi http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produk ieu ngawengku software dimekarkeun ku Proyek OpenSSL pikeun pamakéan di Toolkit OpenSSL (https://www.openssl.org) jeung software cryptographic ditulis ku Eric Young (eay@cryptsoft.com) jeung software UPnP ditulis ku Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 pamekar The Bitcoin <br/> Copyright © 2011-2012 PPCoin pamekar <br/> Copyright © 2012-2014 pamekar The NovaCoin <br/> Copyright © 2014-2019 The Metrix pamekar <br/><br/> Ieu software eksperimen. <br/> Disebarkeun di handapeun lisénsi software MIT / X11, ningali file nyalin dibéré bareng atanapi http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produk ieu ngawengku software dimekarkeun ku Proyek OpenSSL pikeun pamakéan di Toolkit OpenSSL (https://www.openssl.org) jeung software cryptographic ditulis ku Eric Young (eay@cryptsoft.com) jeung software UPnP ditulis ku Thomas Bernard.",
             "ABOUTALTITUDETAB": "luhurna",
-            "ABOUTALTITUDE": "Copyright © 2018 The Linda pamekar <br/><br/> software ieu disebarkeun dina GPL-3.0 lisénsi, tingali https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kanggo inpormasi lengkep."
+            "ABOUTALTITUDE": "Copyright © 2019 The Metrix pamekar <br/><br/> software ieu disebarkeun dina GPL-3.0 lisénsi, tingali https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kanggo inpormasi lengkep."
         },
         "LOCALE": {
             "TITLE": "Pilih Basa"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Lebetkeun Wallet Passphrase anjeun",
             "UNLOCKSTAKINGONLY": "Muka konci pikeun staking wungkul",
-            "CLIENTUPDATETITLE": "Update Linda Core Sadia",
-            "CLIENTUPDATEINFO": "Pamutahiran geus sadia pikeun Linda Core. Rék install deui ayeuna?",
+            "CLIENTUPDATETITLE": "Update Metrix Core Sadia",
+            "CLIENTUPDATEINFO": "Pamutahiran geus sadia pikeun Metrix Core. Rék install deui ayeuna?",
             "WALLETUPDATETITLE": "Luhurna Update Sadia",
             "WALLETUPDATEINFO": "Pamutahiran geus sadia pikeun Luhurna. Rék pikeun ngundeur éta ayeuna?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "robah Passphrase",
             "ENCRYPTTITLE": "Encrypt dompét anjeun",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core dieureunkeun",
-            "CLIENTSTOPPEDINFO": "Sambungan geus leungit ka Linda Core. Anjeun tiasa ngeureunkeun dompét atawa ngamimitian internal Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core dieureunkeun",
+            "CLIENTSTOPPEDINFO": "Sambungan geus leungit ka Metrix Core. Anjeun tiasa ngeureunkeun dompét atawa ngamimitian internal Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "kaluar Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Mimitian Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Mimitian Metrix Core",
             "ENCRYPTEDTITLE": "dompét énkripsi",
             "ENCRYPTEDCONTENT": "Sagala cadangan saméméhna geus dijieun tina file dompét anjeun kudu diganti ku karek dihasilkeun, file dompét énkripsi. Sangkan aman, cadangan saméméhna tina file dompét unencrypted baris jadi gunana pas Anjeun ngamimitian ngagunakeun anyar, dompét énkripsi.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core dieureunkeun Tanpa disangka",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah jeung Linda Core nu geus ngabalukarkeun ka nungtungan. Éta nyarankeun mariksa berkas debug.log anjeun isu.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dieureunkeun Tanpa disangka",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah jeung Metrix Core nu geus ngabalukarkeun ka nungtungan. Éta nyarankeun mariksa berkas debug.log anjeun isu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "balikan deui klien",
-            "CLIENTINVALIDCONFIGTITLE": "Linda.conf Konfigurasi sah",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Linda Core ka LN langsung. Mangga parios file ieu."
+            "CLIENTINVALIDCONFIGTITLE": "metrix.conf Konfigurasi sah",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Metrix Core ka LN langsung. Mangga parios file ieu."
         },
         "ADDRESSBOOK": {
             "TITLE": "alamat Book",
-            "SENDINGINFO": "Ieu alamatna Linda anjeun disimpen pikeun ngirim pangmayaran. Salawasna pariksa jumlah jeung narima alamat saméméh ngirim koin",
-            "RECEIVINGINFO": "Ieu alamatna Linda anjeun disimpen pikeun narima pangmayaran.",
+            "SENDINGINFO": "Ieu alamatna Metrix anjeun disimpen pikeun ngirim pangmayaran. Salawasna pariksa jumlah jeung narima alamat saméméh ngirim koin",
+            "RECEIVINGINFO": "Ieu alamatna Metrix anjeun disimpen pikeun narima pangmayaran.",
             "BUTTONSELECT": "milih",
             "TABLECOLUMNS_LABEL": "etiket",
             "TABLECOLUMNS_ADDRESS": "alamat",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Asup Pesen...",
             "VERIFYMESSAGE": "Pariksa Pesen...",
             "LOCALE": "Basa...",
-            "RESTARTCORE": "Pareuman terus hurungkeun deui Linda Core",
+            "RESTARTCORE": "Pareuman terus hurungkeun deui Metrix Core",
             "EXIT": "Kaluar",
             "OPTIONS": "Pilihan..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Tulung",
             "COMMANDLINEOPTIONS": "Paréntah Pilihan Line...",
-            "CHECKUPDATECORE": "Pariksa keur Linda Core Update...",
+            "CHECKUPDATECORE": "Pariksa keur Metrix Core Update...",
             "CHECKUPDATEWALLET": "Pariksa keur Luhurna Update...",
-            "ABOUTCORE": "Ngeunaan Linda Core...",
+            "ABOUTCORE": "Ngeunaan Metrix Core...",
             "ABOUTALTITUDE": "Ngeunaan Luhurna...",
             "DISCORD": "Discord...",
             "ISSUE": "Ngalaporkeun Hiji Ngaluarkeun..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Oké",
         "CLEARALLBUTTON": "jelas Sadaya",
         "ENTERACCOUNTLABEL": "Lebetkeun labél pikeun alamat ieu",
-        "ENTERADDRESSLABEL": "Lebetkeun alamat Linda",
+        "ENTERADDRESSLABEL": "Lebetkeun alamat Metrix",
         "AGO": "tukang",
         "SORTBY": "Diurutkeun dumasarkeun",
         "SEARCH": "neangan",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "narima"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialising Linda Core...",
-        "DOWNLOADCLIENT": "Ngundeur Linda Core...",
-        "UPDATEAVAILABLE": "Update Linda Core Sadia",
-        "SHUTTINGDOWN": "Shutting handap Linda Core...",
-        "RESTARTING": "Dibalikan deui Linda Core..."
+        "INITIALISING": "Initialising Metrix Core...",
+        "DOWNLOADCLIENT": "Ngundeur Metrix Core...",
+        "UPDATEAVAILABLE": "Update Metrix Core Sadia",
+        "SHUTTINGDOWN": "Shutting handap Metrix Core...",
+        "RESTARTING": "Dibalikan deui Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "akun anyar dijieun hasil",

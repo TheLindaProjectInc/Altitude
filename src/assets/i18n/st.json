@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Hona joale li-Wallet li ntse li tsitsa",
             "NOTENABLEDTITLE": "Staking ha e khonehe",
             "NOTENABLEDINFO": "Hona joale ha ho hajoe Staking.",
-            "NOTENABLEDINSTR": "Ha u le thupeng u tla hloka ho lumella staking setting staking = 1 ka faele ea hau ea Linda.conf.",
+            "NOTENABLEDINSTR": "Ha u le thupeng u tla hloka ho lumella staking setting staking = 1 ka faele ea hau ea metrix.conf.",
             "NOTSTAKINGTITLE": "Wallet ha e tsitsitse",
             "NOTSTAKINGINFO": "Kajeno sepache sa hao se koetsoe bakeng sa staking.",
             "NOTSTAKINGINSTR": "U ka qala ho tsitsa ka ho bula sepache sa hau bakeng sa staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Aterese",
             "ENABLED": "E nolofalitsoe",
             "NOTENABLEDTITLE": "Masternodes ha ea lumelloa",
-            "NOTENABLEDINSTR": "Ho tsamaisa masternode ho tla hlokahala hore u lumelle masternode ka ho beha masternode = 1 le ho lokisa 'masternodeprivkey' le 'masternodeaddr' mefuta e fapaneng file ea Linda.conf ea hau.",
+            "NOTENABLEDINSTR": "Ho tsamaisa masternode ho tla hlokahala hore u lumelle masternode ka ho beha masternode = 1 le ho lokisa 'masternodeprivkey' le 'masternodeaddr' mefuta e fapaneng file ea metrix.conf ea hau.",
             "STARTBUTTON": "Qala sebakeng sa heno",
             "STARTALIASBUTTON": "Qala Lintho tse ling",
             "STARTALLBUTTON": "Qala Bohle"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Phetolelo ea Boelebe"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Rea o amohela ho console ea Linda Core RPC. Tlatsa thuso bakeng sa kakaretso ea litaelo tse teng.",
+                "CONSOLEINFO": "Rea o amohela ho console ea Metrix Core RPC. Tlatsa thuso bakeng sa kakaretso ea litaelo tse teng.",
                 "CONSOLEWARNING": "TŠENYETSO: Bahlaseli ba 'nile ba sebetsa, ba bolella basebelisi hore ba thaepe litaelo mona, ba utsoetse sepache sa bona kahare. U se ke ua sebelisa console ena u sa utloisise ka botlalo ramification ea taelo.",
                 "COMMANDPLACEHODLER": "Kenya litaelo"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Ho qala ho thibela"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Melao ena ea ho lokisa ha e sebetse ha Linda Core e matha ka ntle",
-                "INFO": "Likhohlopo tse ka tlase li tla qala hape Linda Core ka mekhoa ea litaelo tsa litaelo ho lokisa sepache, ho lokisa litaba le lifaele tse senyehileng kapa ho se sebetse.",
+                "INFOEXTERNAL": "Melao ena ea ho lokisa ha e sebetse ha Metrix Core e matha ka ntle",
+                "INFO": "Likhohlopo tse ka tlase li tla qala hape Metrix Core ka mekhoa ea litaelo tsa litaelo ho lokisa sepache, ho lokisa litaba le lifaele tse senyehileng kapa ho se sebetse.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Teko ea ho fumana mefuta ea sekhukhu e tsoang sepacheng se senyehileng.dat.",
                 "RESCANBUTTON": "Fumana lifaele tsa blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Basebelisi ba Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Bahahlauli ba NovaCoin <br/> Copyright © 2014-2018 Basebelisi ba Linda <br/><br/> Ena ke software ea liteko. <br/> Ajoa tlas'a tsamaiso ea Software ea MIT / X11, sheba fono e tsamaeang le COPYING kapa http://www.opensource.org/licenses/mit-license.php. <br/><br/> Sehlahiswa sena se kenyelletsa lenaneo le hlahisoang ke Project Project ea OpenSSL e sebelisoang OpenSSL Toolkit (https://www.openssl.org) le software ea cryptographic e ngotsoeng ke Eric Young (eay@cryptsoft.com) le software ea UPnP e ngotsoeng ke Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Basebelisi ba Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Bahahlauli ba NovaCoin <br/> Copyright © 2014-2019 Basebelisi ba Metrix <br/><br/> Ena ke software ea liteko. <br/> Ajoa tlas'a tsamaiso ea Software ea MIT / X11, sheba fono e tsamaeang le COPYING kapa http://www.opensource.org/licenses/mit-license.php. <br/><br/> Sehlahiswa sena se kenyelletsa lenaneo le hlahisoang ke Project Project ea OpenSSL e sebelisoang OpenSSL Toolkit (https://www.openssl.org) le software ea cryptographic e ngotsoeng ke Eric Young (eay@cryptsoft.com) le software ea UPnP e ngotsoeng ke Thomas Bernard.",
             "ABOUTALTITUDETAB": "Boholo ba sebaka",
-            "ABOUTALTITUDE": "Copyright © 2018 Basebelisi ba Linda <br/><br/> Software ena e ajoa tlas'a lengolo la GPL-3.0, bona https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE bakeng sa boitsebiso bo eketsehileng."
+            "ABOUTALTITUDE": "Copyright © 2019 Basebelisi ba Metrix <br/><br/> Software ena e ajoa tlas'a lengolo la GPL-3.0, bona https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE bakeng sa boitsebiso bo eketsehileng."
         },
         "LOCALE": {
             "TITLE": "Khetha Puo"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Kenya Passphrase ea Wallet ea hau",
             "UNLOCKSTAKINGONLY": "Tlohela ho staking feela",
-            "CLIENTUPDATETITLE": "Lenaneo la Cinda la Linda le fumaneha",
-            "CLIENTUPDATEINFO": "Nchafatso e fumaneha bakeng sa Linda Core. O ka rata ho e kenya hona joale?",
+            "CLIENTUPDATETITLE": "Lenaneo la Cinda la Metrix le fumaneha",
+            "CLIENTUPDATEINFO": "Nchafatso e fumaneha bakeng sa Metrix Core. O ka rata ho e kenya hona joale?",
             "WALLETUPDATETITLE": "Phetoho ea Bochabela e fumaneha",
             "WALLETUPDATEINFO": "Nchafatso e fumaneha bakeng sa Boemo ba Altitude. Na u ka rata ho e jarolla hona joale?",
             "CLIENTUPDATEBUTTON": "Phetoho",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Fetola tsela e ngotsoeng",
             "ENCRYPTTITLE": "Tlanya sepache sa hau",
             "ENCRYPTBUTTON": "Tlanya",
-            "CLIENTSTOPPEDTITLE": "Linda Core o ile a emisa",
-            "CLIENTSTOPPEDINFO": "Kopano e lahlile ho Linda Core. U ka emisa sepache kapa qala Linda Core ea ka hare.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core o ile a emisa",
+            "CLIENTSTOPPEDINFO": "Kopano e lahlile ho Metrix Core. U ka emisa sepache kapa qala Metrix Core ea ka hare.",
             "CLIENTSTOPPEDBUTTONEXIT": "Tloha Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Qala Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Qala Metrix Core",
             "ENCRYPTEDTITLE": "Wallet e ngotsoe",
             "ENCRYPTEDCONTENT": "Tlhahiso leha e le efe e fetileng eo u e entseng ea faele ea hau ea sepache e lokela ho nkeloa sebaka ke faele ea sepache e sa tsoa hlahisoa, e ngotsoeng. Bakeng sa mabaka a tšireletso, likopi tse fetileng tsa faele ea sepache tse sa ngolisoeng li tla ba se nang thuso hang ha u qala ho sebelisa sepache se secha, se kentsoeng.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core o ile a ema ka tšohanyetso",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Linda Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core o ile a ema ka tšohanyetso",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Metrix Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qala hape Mookameli",
-            "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Linda Core a tsoe hang-hang. Ka kopo, sheba faele ena."
+            "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Aterese",
-            "SENDINGINFO": "Ena ke aterese ea hau ea pholoho ea Linda bakeng sa ho romella tefo. Kamehla hlahloba chelete le ho amohela aterese pele u romela lichelete tsa tšepe",
-            "RECEIVINGINFO": "Ena ke aterese ea hau ea pholoso ea Linda bakeng sa ho amohela litefello.",
+            "SENDINGINFO": "Ena ke aterese ea hau ea pholoho ea Metrix bakeng sa ho romella tefo. Kamehla hlahloba chelete le ho amohela aterese pele u romela lichelete tsa tšepe",
+            "RECEIVINGINFO": "Ena ke aterese ea hau ea pholoso ea Metrix bakeng sa ho amohela litefello.",
             "BUTTONSELECT": "Khetha",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Aterese",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Molaetsa oa hoena...",
             "VERIFYMESSAGE": "Netefatsa Molaetsa...",
             "LOCALE": "Puo...",
-            "RESTARTCORE": "Qala hape Linda Core",
+            "RESTARTCORE": "Qala hape Metrix Core",
             "EXIT": "Etsoa",
             "OPTIONS": "Khetho..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Thusa",
             "COMMANDLINEOPTIONS": "Litsela tsa Lintlha tsa Taolo...",
-            "CHECKUPDATECORE": "Sheba Lenane la Core la Linda...",
+            "CHECKUPDATECORE": "Sheba Lenane la Core la Metrix...",
             "CHECKUPDATEWALLET": "Hlahloba Tlhahlobo ea Altitude...",
-            "ABOUTCORE": "Mabapi le Linda Core...",
+            "ABOUTCORE": "Mabapi le Metrix Core...",
             "ABOUTALTITUDE": "Mabapi le Altitude...",
             "DISCORD": "Khahlano...",
             "ISSUE": "Tlaleha Sengoliloeng..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Hlakola tsohle",
         "ENTERACCOUNTLABEL": "Kenya lebokose bakeng sa aterese ena",
-        "ENTERADDRESSLABEL": "Kenya aterese ea Linda",
+        "ENTERADDRESSLABEL": "Kenya aterese ea Metrix",
         "AGO": "e fetileng",
         "SORTBY": "Hlophisa ka",
         "SEARCH": "Batla",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Amohela"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Ho qala Linda Core...",
-        "DOWNLOADCLIENT": "Ho lata Linda Core...",
-        "UPDATEAVAILABLE": "Lenaneo la Cinda la Linda le fumaneha",
-        "SHUTTINGDOWN": "Ho thibela Linda Core...",
-        "RESTARTING": "Ho qala hape Linda Core..."
+        "INITIALISING": "Ho qala Metrix Core...",
+        "DOWNLOADCLIENT": "Ho lata Metrix Core...",
+        "UPDATEAVAILABLE": "Lenaneo la Cinda la Metrix le fumaneha",
+        "SHUTTINGDOWN": "Ho thibela Metrix Core...",
+        "RESTARTING": "Ho qala hape Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Konte e ncha e entsoe ka katleho",

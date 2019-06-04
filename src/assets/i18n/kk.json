@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Әмиян қазіргі уақытта өтіп жатыр",
             "NOTENABLEDTITLE": "Стаканды қосу мүмкін емес",
             "NOTENABLEDINFO": "Қазіргі уақытта қойылмайды.",
-            "NOTENABLEDINSTR": "Сізге Linda.conf файлында staking = 1 орнатуды қосу қажет болады.",
+            "NOTENABLEDINSTR": "Сізге metrix.conf файлында staking = 1 орнатуды қосу қажет болады.",
             "NOTSTAKINGTITLE": "Әмиян қойылмайды",
             "NOTSTAKINGINFO": "Сіздің әмияныңыз қазір стака қою үшін бекітілген.",
             "NOTSTAKINGINSTR": "Сіз өзіңіздің әмияныңызды стаканды ашу үшін құлыптан босатып бастауыңызға болады",
@@ -69,7 +69,7 @@
             "ADDRESS": "Мекенжай",
             "ENABLED": "Қосылған",
             "NOTENABLEDTITLE": "Шеңберлер қосылмаған",
-            "NOTENABLEDINSTR": "Masternode іске қосу үшін Masternode = 1 параметрін орнатып, Linda.conf файлында 'masternodeprivkey' және 'masternodeaddr' айнымалы мәндерін теңшеу арқылы masternodes қосу керек.",
+            "NOTENABLEDINSTR": "Masternode іске қосу үшін Masternode = 1 параметрін орнатып, metrix.conf файлында 'masternodeprivkey' және 'masternodeaddr' айнымалы мәндерін теңшеу арқылы masternodes қосу керек.",
             "STARTBUTTON": "Жергілікті іске қосу",
             "STARTALIASBUTTON": "Бүркеншік атты бастау",
             "STARTALLBUTTON": "Барлығын бастаңыз"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Биіктік нұсқасы"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPC консоліне қош келдіңіз. Қол жетімді пәрмендерді шолу үшін анықтаманы енгізіңіз.",
+                "CONSOLEINFO": "Metrix Core RPC консоліне қош келдіңіз. Қол жетімді пәрмендерді шолу үшін анықтаманы енгізіңіз.",
                 "CONSOLEWARNING": "ЕСКЕРТУ: Scammers белсенді болып, пайдаланушыларға әмиянның мазмұнын ұрлап, осы жерден командаларды теруге шақырды. Бұл консольді команданың шифрын толық түсінбестен қолданбаңыз.",
                 "COMMANDPLACEHODLER": "Команданы енгізіңіз"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Блокты бастау"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Бұл жөндеу командалары Linda Core сыртта басқарылатын кезде іске қосылмайды",
-                "INFO": "Төмендегі түймелер әмиянды жөндеу үшін пәрмен жолы опцияларымен Linda Core-ды қалпына келтіреді, мәселелерді бұзылған блохаин файлдарымен немесе ескірген / ескірген транзакциялармен түзетеді.",
+                "INFOEXTERNAL": "Бұл жөндеу командалары Metrix Core сыртта басқарылатын кезде іске қосылмайды",
+                "INFO": "Төмендегі түймелер әмиянды жөндеу үшін пәрмен жолы опцияларымен Metrix Core-ды қалпына келтіреді, мәселелерді бұзылған блохаин файлдарымен немесе ескірген / ескірген транзакциялармен түзетеді.",
                 "SALVAGEBUTTON": "Құтқару әмияны",
                 "SALVAGEINFO": "-алвагвайлық: Жеке кілттерді бүлінген wallet.dat-дан қалпына келтіру әрекеті.",
                 "RESCANBUTTON": "Файлдарды қайта қарап шығу",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Линден Коре",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin әзірлеушілер <br/> Copyright © 2011-2012 PPCoin әзірлеушілер <br/> Copyright © 2012-2014 NovaCoin әзірлеушілер <br/> Copyright © 2014-2018 Линденді әзірлеушілер <br/><br/> Бұл тәжірибелік бағдарлама. <br/> MIT / X11 бағдарламалық жасақтамасының лицензиясы бойынша таратылатын COPYING немесе http://www.opensource.org/licenses/mit-license.php файлын қараңыз. <br/><br/> Бұл өнімде OpenSSL жобасы OpenSSL құралдар жиынтығында (https://www.openssl.org) және Эрик Янг (eay@cryptsoft.com) мен UPNP бағдарламасының Thomas Bernard жазған бағдарламалық қамтамасыз етуін пайдалану үшін әзірленген бағдарламалық құралы бар.",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin әзірлеушілер <br/> Copyright © 2011-2012 PPCoin әзірлеушілер <br/> Copyright © 2012-2014 NovaCoin әзірлеушілер <br/> Copyright © 2014-2019 Линденді әзірлеушілер <br/><br/> Бұл тәжірибелік бағдарлама. <br/> MIT / X11 бағдарламалық жасақтамасының лицензиясы бойынша таратылатын COPYING немесе http://www.opensource.org/licenses/mit-license.php файлын қараңыз. <br/><br/> Бұл өнімде OpenSSL жобасы OpenSSL құралдар жиынтығында (https://www.openssl.org) және Эрик Янг (eay@cryptsoft.com) мен UPNP бағдарламасының Thomas Bernard жазған бағдарламалық қамтамасыз етуін пайдалану үшін әзірленген бағдарламалық құралы бар.",
             "ABOUTALTITUDETAB": "Биіктік",
-            "ABOUTALTITUDE": "Copyright © 2018 Линденді әзірлеушілер <br/><br/> Бұл бағдарламалық жасақтама GPL-3.0 лицензиясы бойынша таратылады, қосымша ақпарат алу үшін https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE торабын қараңыз."
+            "ABOUTALTITUDE": "Copyright © 2019 Линденді әзірлеушілер <br/><br/> Бұл бағдарламалық жасақтама GPL-3.0 лицензиясы бойынша таратылады, қосымша ақпарат алу үшін https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE торабын қараңыз."
         },
         "LOCALE": {
             "TITLE": "Тілді таңдаңыз"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Әмиян пароліңізді енгізіңіз",
             "UNLOCKSTAKINGONLY": "Тек стаканы ашу үшін құлпын ашыңыз",
-            "CLIENTUPDATETITLE": "Linda Core Update қол жетімді",
-            "CLIENTUPDATEINFO": "Жаңарту Linda Core үшін қол жетімді. Қазір оны орнатқыңыз келе ме?",
+            "CLIENTUPDATETITLE": "Metrix Core Update қол жетімді",
+            "CLIENTUPDATEINFO": "Жаңарту Metrix Core үшін қол жетімді. Қазір оны орнатқыңыз келе ме?",
             "WALLETUPDATETITLE": "Биіктікті жаңарту қол жетімді",
             "WALLETUPDATEINFO": "Биіктік үшін жаңарту қол жетімді. Қазір оны жүктеп алғыңыз келе ме?",
             "CLIENTUPDATEBUTTON": "Жаңарту",
@@ -258,17 +258,17 @@
             "CHANGEPASSPHRASEBUTTON": "Парольді өзгерту",
             "ENCRYPTTITLE": "Әмияныңызды шифрлаңыз",
             "ENCRYPTBUTTON": "Шифрлау",
-            "CLIENTSTOPPEDTITLE": "Linda Core тоқталды",
-            "CLIENTSTOPPEDINFO": "Қосылу Linda Core-ге жоғалды. Әмиянды тоқтатуға немесе ішкі Linda Core-ді бастауға болады.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core тоқталды",
+            "CLIENTSTOPPEDINFO": "Қосылу Metrix Core-ге жоғалды. Әмиянды тоқтатуға немесе ішкі Metrix Core-ді бастауға болады.",
             "CLIENTSTOPPEDBUTTONEXIT": "Әмияннан шығыңыз",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Core іске қосыңыз",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Core іске қосыңыз",
             "ENCRYPTEDTITLE": "Әмиян шифрланған",
             "ENCRYPTEDCONTENT": "Әмиян файлын жасаған кез келген бұрынғы сақтық көшірмелер жаңадан құрылған шифрланған әмиян файлымен ауыстырылуы тиіс. Қауіпсіздік мақсатында, шифрланбаған әмиян файлының бұрынғы сақтық көшірмесі жаңа, шифрланған әмиянды пайдалануды бастағаннан кейін пайдасыз болады.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линден Коре күтпеген жерден тоқтады",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core-мен проблема болды, ол оны тоқтатуға мәжбүр болды. Қателерге арналған debug.log файлын тексеру ұсынылады.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-мен проблема болды, ол оны тоқтатуға мәжбүр болды. Қателерге арналған debug.log файлын тексеру ұсынылады.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентті қайта іске қосыңыз",
-            "CLIENTINVALIDCONFIGTITLE": "Конфигурация Linda.conf жарамсыз",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf-ң Linda Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз."
+            "CLIENTINVALIDCONFIGTITLE": "Конфигурация metrix.conf жарамсыз",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз."
         },
         "ADDRESSBOOK": {
             "TITLE": "Мекенжайлық кітап",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Хабарға қол қою...",
             "VERIFYMESSAGE": "Хабарды тексеру...",
             "LOCALE": "Тіл...",
-            "RESTARTCORE": "Linda Core-ді қайта іске қосыңыз",
+            "RESTARTCORE": "Metrix Core-ді қайта іске қосыңыз",
             "EXIT": "Шығу",
             "OPTIONS": "Опциялар..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Көмектесіңдер",
             "COMMANDLINEOPTIONS": "Пәрмен жолы параметрлері...",
-            "CHECKUPDATECORE": "Linda Core жаңартуын тексеру...",
+            "CHECKUPDATECORE": "Metrix Core жаңартуын тексеру...",
             "CHECKUPDATEWALLET": "Биіктікті жаңартуды тексеру...",
-            "ABOUTCORE": "Linda Core туралы...",
+            "ABOUTCORE": "Metrix Core туралы...",
             "ABOUTALTITUDE": "Биіктік туралы...",
             "DISCORD": "Арасындағы айырмашылық...",
             "ISSUE": "Есеп беру мәселесі..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "ЖАРАЙДЫ МА",
         "CLEARALLBUTTON": "Барлығын тазалау",
         "ENTERACCOUNTLABEL": "Бұл мекенжайға белгі енгізіңіз",
-        "ENTERADDRESSLABEL": "Linda мекенжайын енгізіңіз",
+        "ENTERADDRESSLABEL": "Metrix мекенжайын енгізіңіз",
         "AGO": "бұрын",
         "SORTBY": "Бойынша сұрыптау",
         "SEARCH": "Іздеу",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Қабылдау"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core-ні инициализациялау...",
-        "DOWNLOADCLIENT": "Linda Core жүктеу...",
-        "UPDATEAVAILABLE": "Linda Core Update қол жетімді",
-        "SHUTTINGDOWN": "Linda Core-ты өшіріп...",
-        "RESTARTING": "Linda Core-ты қайта..."
+        "INITIALISING": "Metrix Core-ні инициализациялау...",
+        "DOWNLOADCLIENT": "Metrix Core жүктеу...",
+        "UPDATEAVAILABLE": "Metrix Core Update қол жетімді",
+        "SHUTTINGDOWN": "Metrix Core-ты өшіріп...",
+        "RESTARTING": "Metrix Core-ты қайта..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Жаңа есептік жазба сәтті жасалды",

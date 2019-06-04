@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Plånboken stannar för närvarande",
             "NOTENABLEDTITLE": "Staking är inte aktiverat",
             "NOTENABLEDINFO": "Staking är för närvarande inte aktiverat.",
-            "NOTENABLEDINSTR": "För att spela in måste du aktivera staking setting staking = 1 i din Linda.conf-fil.",
+            "NOTENABLEDINSTR": "För att spela in måste du aktivera staking setting staking = 1 i din metrix.conf-fil.",
             "NOTSTAKINGTITLE": "Plånboken stannar inte",
             "NOTSTAKINGINFO": "Din plånbok är för tillfället låst för staking.",
             "NOTSTAKINGINSTR": "Du kan börja staking genom att låsa upp din plånbok för staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adress",
             "ENABLED": "Aktiverad",
             "NOTENABLEDTITLE": "Masternoder inte aktiverade",
-            "NOTENABLEDINSTR": "För att köra en masternode måste du aktivera masternoder genom att ställa in masternode = 1 och konfigurera masternodeprivkey- och masternodeaddr-variabler i din Linda.conf-fil.",
+            "NOTENABLEDINSTR": "För att köra en masternode måste du aktivera masternoder genom att ställa in masternode = 1 och konfigurera masternodeprivkey- och masternodeaddr-variabler i din metrix.conf-fil.",
             "STARTBUTTON": "Starta Lokal",
             "STARTALIASBUTTON": "Starta alias",
             "STARTALLBUTTON": "Starta alla"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Höjdversion"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Välkommen till Linda Core RPC-konsolen. Skriv hjälp för en översikt över tillgängliga kommandon.",
+                "CONSOLEINFO": "Välkommen till Metrix Core RPC-konsolen. Skriv hjälp för en översikt över tillgängliga kommandon.",
                 "CONSOLEWARNING": "VARNING: Svindlarna har varit aktiva och säger att användarna skriver kommandon här och stjäl innehållet i plånboken. Använd inte den här konsolen utan att förstå förstärkningen av ett kommando.",
                 "COMMANDPLACEHODLER": "Ange kommando"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Startblock"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Dessa reparationskommandon kan inte köras när Linda Core körs externt",
-                "INFO": "Knapparna nedan kommer att starta om Linda Core med kommandoradsalternativ för att reparera plånboken, åtgärda problem med korrupta blockchain-filer eller saknade / föråldrade transaktioner.",
+                "INFOEXTERNAL": "Dessa reparationskommandon kan inte köras när Metrix Core körs externt",
+                "INFO": "Knapparna nedan kommer att starta om Metrix Core med kommandoradsalternativ för att reparera plånboken, åtgärda problem med korrupta blockchain-filer eller saknade / föråldrade transaktioner.",
                 "SALVAGEBUTTON": "Salvage Plånbok",
                 "SALVAGEINFO": "-salvagewallet: Försök att återställa privata nycklar från en korrupt wallet.dat.",
                 "RESCANBUTTON": "Rescan blockchain-filer",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-utvecklarna <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin-utvecklarna <br/> Copyright © 2014-2018 Linda-utvecklarna <br/><br/> Detta är experimentell mjukvara. <br/> Distribueras under MIT / X11-programvarulicensen, se den medföljande filen COPYING eller http://www.opensource.org/licenses/mit-license.php. <br/><br/> Denna produkt innehåller programvara som utvecklats av OpenSSL-projektet för användning i OpenSSL Toolkit (https://www.openssl.org) och kryptografisk programvara, skrivet av Eric Young (eay@cryptsoft.com) och UPnP-programvara som skrevs av Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-utvecklarna <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin-utvecklarna <br/> Copyright © 2014-2019 Metrix-utvecklarna <br/><br/> Detta är experimentell mjukvara. <br/> Distribueras under MIT / X11-programvarulicensen, se den medföljande filen COPYING eller http://www.opensource.org/licenses/mit-license.php. <br/><br/> Denna produkt innehåller programvara som utvecklats av OpenSSL-projektet för användning i OpenSSL Toolkit (https://www.openssl.org) och kryptografisk programvara, skrivet av Eric Young (eay@cryptsoft.com) och UPnP-programvara som skrevs av Thomas Bernard.",
             "ABOUTALTITUDETAB": "Höjd över havet",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda-utvecklarna <br/><br/> Denna programvara distribueras under GPL-3.0-licensen, se https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE för mer information."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix-utvecklarna <br/><br/> Denna programvara distribueras under GPL-3.0-licensen, se https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE för mer information."
         },
         "LOCALE": {
             "TITLE": "Välj språk"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ange ditt lösenord för lösenord",
             "UNLOCKSTAKINGONLY": "Lås upp för staking bara",
-            "CLIENTUPDATETITLE": "Linda Core Update Available",
-            "CLIENTUPDATEINFO": "En uppdatering är tillgänglig för Linda Core. Vill du installera det nu?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Available",
+            "CLIENTUPDATEINFO": "En uppdatering är tillgänglig för Metrix Core. Vill du installera det nu?",
             "WALLETUPDATETITLE": "Höjd uppdatering tillgänglig",
             "WALLETUPDATEINFO": "En uppdatering är tillgänglig för Altitude. Vill du ladda ner det nu?",
             "CLIENTUPDATEBUTTON": "Uppdatering",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Ändra lösenordsfras",
             "ENCRYPTTITLE": "Kryptera din plånbok",
             "ENCRYPTBUTTON": "Kryptera",
-            "CLIENTSTOPPEDTITLE": "Linda Core Stopped",
-            "CLIENTSTOPPEDINFO": "Anslutning har gått vilse för Linda Core. Du kan stoppa plånboken eller starta den interna Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Stopped",
+            "CLIENTSTOPPEDINFO": "Anslutning har gått vilse för Metrix Core. Du kan stoppa plånboken eller starta den interna Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Börja Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Börja Metrix Core",
             "ENCRYPTEDTITLE": "Plånbok Krypterad",
             "ENCRYPTEDCONTENT": "Alla tidigare säkerhetskopior du har gjort av din plånboksfil ska ersättas med den nybildade, krypterade plånbokfilen. Av säkerhetsskäl kommer tidigare säkerhetskopior av den okrypterade plånbokfilen att bli värdelös så snart du börjar använda den nya krypterade plånboken.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core stannade oväntat",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var ett problem med Linda Core som har orsakat det att säga upp. Det rekommenderas att kontrollera din debug.log-fil för problem.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stannade oväntat",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var ett problem med Metrix Core som har orsakat det att säga upp. Det rekommenderas att kontrollera din debug.log-fil för problem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Starta om klienten",
-            "CLIENTINVALIDCONFIGTITLE": "Ogiltig Linda.conf Konfiguration",
-            "CLIENTINVALIDCONFIGINFO": "Din Linda.conf har en ogiltig masternode-inställning som gör att Linda Core slutar omedelbart. Kontrollera den här filen."
+            "CLIENTINVALIDCONFIGTITLE": "Ogiltig metrix.conf Konfiguration",
+            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ogiltig masternode-inställning som gör att Metrix Core slutar omedelbart. Kontrollera den här filen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbok",
-            "SENDINGINFO": "Det här är din sparade Linda-adress för att skicka betalningar. Kontrollera alltid beloppet och mottagningsadressen innan du skickar mynt",
-            "RECEIVINGINFO": "Dessa är din sparade Linda adress för att ta emot betalningar.",
+            "SENDINGINFO": "Det här är din sparade Metrix-adress för att skicka betalningar. Kontrollera alltid beloppet och mottagningsadressen innan du skickar mynt",
+            "RECEIVINGINFO": "Dessa är din sparade Metrix adress för att ta emot betalningar.",
             "BUTTONSELECT": "Välj",
             "TABLECOLUMNS_LABEL": "Märka",
             "TABLECOLUMNS_ADDRESS": "Adress",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Skriv meddelande...",
             "VERIFYMESSAGE": "Verifiera meddelande...",
             "LOCALE": "Språk...",
-            "RESTARTCORE": "Starta om Linda Core",
+            "RESTARTCORE": "Starta om Metrix Core",
             "EXIT": "Utgång",
             "OPTIONS": "Alternativ..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Hjälp",
             "COMMANDLINEOPTIONS": "Kommandoradsalternativ...",
-            "CHECKUPDATECORE": "Kolla efter Linda Core Update...",
+            "CHECKUPDATECORE": "Kolla efter Metrix Core Update...",
             "CHECKUPDATEWALLET": "Kontrollera efter uppdatering av höjd...",
-            "ABOUTCORE": "Om Linda Core...",
+            "ABOUTCORE": "Om Metrix Core...",
             "ABOUTALTITUDE": "Om höjden...",
             "DISCORD": "Disharmoni...",
             "ISSUE": "Rapportera ett problem..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "ok",
         "CLEARALLBUTTON": "Rensa alla",
         "ENTERACCOUNTLABEL": "Ange en etikett för den här adressen",
-        "ENTERADDRESSLABEL": "Ange en Linda-adress",
+        "ENTERADDRESSLABEL": "Ange en Metrix-adress",
         "AGO": "sedan",
         "SORTBY": "Sortera efter",
         "SEARCH": "Sök",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Acceptera"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialisering av Linda Core...",
-        "DOWNLOADCLIENT": "Nedladdning av Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Available",
-        "SHUTTINGDOWN": "Stänger ner Linda Core...",
-        "RESTARTING": "Starta om Linda Core..."
+        "INITIALISING": "Initialisering av Metrix Core...",
+        "DOWNLOADCLIENT": "Nedladdning av Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Available",
+        "SHUTTINGDOWN": "Stänger ner Metrix Core...",
+        "RESTARTING": "Starta om Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nytt konto skapades framgångsrikt",

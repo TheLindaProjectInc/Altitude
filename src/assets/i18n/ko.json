@@ -49,7 +49,7 @@
             "STAKINGTITLE": "월렛이 현재 측근 중입니다.",
             "NOTENABLEDTITLE": "스테이징이 활성화되지 않았습니다.",
             "NOTENABLEDINFO": "스테이 킹은 현재 사용할 수 없습니다.",
-            "NOTENABLEDINSTR": "스테이크하려면 Linda.conf 파일에 스테이 킹 설정 = 1을 설정해야합니다.",
+            "NOTENABLEDINSTR": "스테이크하려면 metrix.conf 파일에 스테이 킹 설정 = 1을 설정해야합니다.",
             "NOTSTAKINGTITLE": "월렛이 스테이징하지 않음",
             "NOTSTAKINGINFO": "지갑은 현재 가위로 잠겨 있습니다.",
             "NOTSTAKINGINSTR": "당신은 경비를 위해 지갑을 열어서 말뚝 박기를 시작할 수 있습니다.",
@@ -69,7 +69,7 @@
             "ADDRESS": "주소",
             "ENABLED": "사용",
             "NOTENABLEDTITLE": "Masternodes가 활성화되지 않았습니다.",
-            "NOTENABLEDINSTR": "masternode를 실행하려면 masternode를 1로 설정하고 Linda.conf 파일에서 'masternodeprivkey'및 'masternodeaddr'변수를 구성하여 masternode를 활성화해야합니다.",
+            "NOTENABLEDINSTR": "masternode를 실행하려면 masternode를 1로 설정하고 metrix.conf 파일에서 'masternodeprivkey'및 'masternodeaddr'변수를 구성하여 masternode를 활성화해야합니다.",
             "STARTBUTTON": "로컬 시작",
             "STARTALIASBUTTON": "별칭 시작",
             "STARTALLBUTTON": "모두 시작"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "고도 버전"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPC 콘솔에 오신 것을 환영합니다. 사용 가능한 명령의 개요를 보려면 help를 입력하십시오.",
+                "CONSOLEINFO": "Metrix Core RPC 콘솔에 오신 것을 환영합니다. 사용 가능한 명령의 개요를 보려면 help를 입력하십시오.",
                 "CONSOLEWARNING": "경고 : 사기꾼이 활성화되어 사용자에게 여기에 명령을 입력하고 지갑 내용을 훔치라고 알려줍니다. 명령의 파생을 완전히 이해하지 않고이 콘솔을 사용하지 마십시오.",
                 "COMMANDPLACEHODLER": "명령 입력"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "시작 블록"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Linda Core를 외부에서 실행할 때 이러한 복구 명령을 실행할 수 없습니다.",
-                "INFO": "아래 버튼은 Wallet을 복구하기 위해 명령 줄 옵션을 사용하여 Linda Core를 다시 시작하고 손상된 블록 체인 파일의 문제 또는 누락 된 / 쓸모없는 트랜잭션을 수정합니다.",
+                "INFOEXTERNAL": "Metrix Core를 외부에서 실행할 때 이러한 복구 명령을 실행할 수 없습니다.",
+                "INFO": "아래 버튼은 Wallet을 복구하기 위해 명령 줄 옵션을 사용하여 Metrix Core를 다시 시작하고 손상된 블록 체인 파일의 문제 또는 누락 된 / 쓸모없는 트랜잭션을 수정합니다.",
                 "SALVAGEBUTTON": "구조 가방",
                 "SALVAGEINFO": "-salvagewallet : 손상된 wallet.dat에서 개인 키를 복구하려고 시도합니다.",
                 "RESCANBUTTON": "블록 체인 파일 다시 검사",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "린다 코어",
-            "ABOUTCORE": "저작권 © 2009-2015 Bitcoin 개발자 <br/> 저작권 © 2011-2012 PPCoin 개발자 <br/> 저작권 © 2012-2014 NovaCoin 개발자 <br/> 저작권 © 2014-2018 The Linda 개발자 <br/><br/> 이것은 실험적인 소프트웨어입니다. <br/> MIT / X11 소프트웨어 라이센스에 따라 배포되는 COPYING 또는 http://www.opensource.org/licenses/mit-license.php 파일을 참조하십시오. <br/><br/> 이 제품에는 OpenSSL Project (OpenSSL Toolkit) (https://www.openssl.org) 및 Eric Young (eay@cryptsoft.com)이 작성한 암호화 소프트웨어 및 Thomas Bernard가 작성한 UPnP 소프트웨어 용으로 OpenSSL Project에서 개발 한 소프트웨어가 포함되어 있습니다.",
+            "ABOUTCORE": "저작권 © 2009-2015 Bitcoin 개발자 <br/> 저작권 © 2011-2012 PPCoin 개발자 <br/> 저작권 © 2012-2014 NovaCoin 개발자 <br/> 저작권 © 2014-2019 The Metrix 개발자 <br/><br/> 이것은 실험적인 소프트웨어입니다. <br/> MIT / X11 소프트웨어 라이센스에 따라 배포되는 COPYING 또는 http://www.opensource.org/licenses/mit-license.php 파일을 참조하십시오. <br/><br/> 이 제품에는 OpenSSL Project (OpenSSL Toolkit) (https://www.openssl.org) 및 Eric Young (eay@cryptsoft.com)이 작성한 암호화 소프트웨어 및 Thomas Bernard가 작성한 UPnP 소프트웨어 용으로 OpenSSL Project에서 개발 한 소프트웨어가 포함되어 있습니다.",
             "ABOUTALTITUDETAB": "고도",
-            "ABOUTALTITUDE": "저작권 © 2018 린다 개발자 <br/><br/> 이 소프트웨어는 GPL-3.0 라이센스에 따라 배포됩니다. 자세한 내용은 https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE를 참조하십시오."
+            "ABOUTALTITUDE": "저작권 © 2019 린다 개발자 <br/><br/> 이 소프트웨어는 GPL-3.0 라이센스에 따라 배포됩니다. 자세한 내용은 https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE를 참조하십시오."
         },
         "LOCALE": {
             "TITLE": "언어 선택"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "지갑 암호 입력",
             "UNLOCKSTAKINGONLY": "단지 스테이 킹을 위해 잠금 해제",
-            "CLIENTUPDATETITLE": "Linda 핵심 업데이트 사용 가능",
-            "CLIENTUPDATEINFO": "Linda Core에 대한 업데이트를 사용할 수 있습니다. 지금 설치 하시겠습니까?",
+            "CLIENTUPDATETITLE": "Metrix 핵심 업데이트 사용 가능",
+            "CLIENTUPDATEINFO": "Metrix Core에 대한 업데이트를 사용할 수 있습니다. 지금 설치 하시겠습니까?",
             "WALLETUPDATETITLE": "사용 가능한 고도 업데이트",
             "WALLETUPDATEINFO": "Altitude에 대한 업데이트를 사용할 수 있습니다. 지금 다운로드 하시겠습니까?",
             "CLIENTUPDATEBUTTON": "최신 정보",
@@ -259,16 +259,16 @@
             "ENCRYPTTITLE": "지갑을 암호화하십시오.",
             "ENCRYPTBUTTON": "암호화",
             "CLIENTSTOPPEDTITLE": "린다 코어 중지됨",
-            "CLIENTSTOPPEDINFO": "Linda Core와의 연결이 끊어졌습니다. 지갑을 중지하거나 내부 Linda 코어를 시작할 수 있습니다.",
+            "CLIENTSTOPPEDINFO": "Metrix Core와의 연결이 끊어졌습니다. 지갑을 중지하거나 내부 Metrix 코어를 시작할 수 있습니다.",
             "CLIENTSTOPPEDBUTTONEXIT": "지갑 종료",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Core 시작",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Core 시작",
             "ENCRYPTEDTITLE": "월렛 암호화 됨",
             "ENCRYPTEDCONTENT": "이전에 Wallet 파일로 작성한 백업은 새로 생성되고 암호화 된 Wallet 파일로 대체되어야합니다. 보안상의 이유로 새 암호화 된 Wallet을 사용하자 마자 암호화되지 않은 Wallet 파일의 이전 백업은 쓸모 없게됩니다.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "예기치 않게 Linda Core가 중지되었습니다.",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core가 종료되는 문제가있었습니다. debug.log 파일에서 문제점을 확인하는 것이 좋습니다.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "예기치 않게 Metrix Core가 중지되었습니다.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core가 종료되는 문제가있었습니다. debug.log 파일에서 문제점을 확인하는 것이 좋습니다.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "클라이언트 다시 시작",
-            "CLIENTINVALIDCONFIGTITLE": "잘못된 Linda.conf 구성",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오."
+            "CLIENTINVALIDCONFIGTITLE": "잘못된 metrix.conf 구성",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오."
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "메시지 서명...",
             "VERIFYMESSAGE": "메시지 확인...",
             "LOCALE": "언어...",
-            "RESTARTCORE": "Linda Core 다시 시작",
+            "RESTARTCORE": "Metrix Core 다시 시작",
             "EXIT": "출구",
             "OPTIONS": "옵션..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "도움",
             "COMMANDLINEOPTIONS": "명령 행 옵션...",
-            "CHECKUPDATECORE": "Linda Core Update 확인...",
+            "CHECKUPDATECORE": "Metrix Core Update 확인...",
             "CHECKUPDATEWALLET": "고도 업데이트 확인...",
-            "ABOUTCORE": "Linda Core 정보...",
+            "ABOUTCORE": "Metrix Core 정보...",
             "ABOUTALTITUDE": "고도 정보...",
             "DISCORD": "불일치...",
             "ISSUE": "문제 신고..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "동의"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core 초기화 중...",
-        "DOWNLOADCLIENT": "Linda Core 다운로드 중...",
-        "UPDATEAVAILABLE": "Linda 핵심 업데이트 사용 가능",
-        "SHUTTINGDOWN": "Linda Core 종료 중...",
-        "RESTARTING": "Linda Core 재시동 중..."
+        "INITIALISING": "Metrix Core 초기화 중...",
+        "DOWNLOADCLIENT": "Metrix Core 다운로드 중...",
+        "UPDATEAVAILABLE": "Metrix 핵심 업데이트 사용 가능",
+        "SHUTTINGDOWN": "Metrix Core 종료 중...",
+        "RESTARTING": "Metrix Core 재시동 중..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "새 계정이 성공적으로 생성되었습니다.",

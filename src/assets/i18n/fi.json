@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Lompakko on parhaillaan piilossa",
             "NOTENABLEDTITLE": "Staking ei ole käytössä",
             "NOTENABLEDINFO": "Staking ei ole tällä hetkellä käytössä.",
-            "NOTENABLEDINSTR": "Panokseksi sinun on otettava käyttöön stake-asetus staking = 1 Linda.conf-tiedostossasi.",
+            "NOTENABLEDINSTR": "Panokseksi sinun on otettava käyttöön stake-asetus staking = 1 metrix.conf-tiedostossasi.",
             "NOTSTAKINGTITLE": "Lompakko ei ole staking",
             "NOTSTAKINGINFO": "Lompakko on tällä hetkellä lukittuna.",
             "NOTSTAKINGINSTR": "Voit aloittaa panostamisen avaamalla lompakonne stakeille",
@@ -69,7 +69,7 @@
             "ADDRESS": "Osoite",
             "ENABLED": "käytössä",
             "NOTENABLEDTITLE": "Masternodes ei ole käytössä",
-            "NOTENABLEDINSTR": "Masternodin suorittaminen edellyttää masternodien ottamista käyttöön asettamalla masternode = 1 ja määrittämällä \"masternodeprivkey\" ja \"masternodeaddr\" muuttujat Linda.conf-tiedostossasi.",
+            "NOTENABLEDINSTR": "Masternodin suorittaminen edellyttää masternodien ottamista käyttöön asettamalla masternode = 1 ja määrittämällä \"masternodeprivkey\" ja \"masternodeaddr\" muuttujat metrix.conf-tiedostossasi.",
             "STARTBUTTON": "Aloita paikalliset",
             "STARTALIASBUTTON": "Aloita Alias",
             "STARTALLBUTTON": "Aloita kaikki"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Korkeusversio"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Tervetuloa Linda Core RPC -konsoliin. Kirjoita apu yleiskuvan käytettävissä olevista komennoista.",
+                "CONSOLEINFO": "Tervetuloa Metrix Core RPC -konsoliin. Kirjoita apu yleiskuvan käytettävissä olevista komennoista.",
                 "CONSOLEWARNING": "VAROITUS: Scammers ovat olleet aktiivisia, kertoen käyttäjille kirjoittavan komentoja täältä varastaen lompakon sisällön. Älä käytä tätä konsolia täysin ymmärtämättä komennon haarautumista.",
                 "COMMANDPLACEHODLER": "Anna komento"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Aloituskenttä"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Näitä korjauskäskyjä ei voida käyttää, kun Linda Corea käytetään ulkoisesti",
-                "INFO": "Alla olevat painikkeet käynnistävät Linda Core -ohjelman komentorivivalitsimilla korjaamaan lompakon, korjaamaan ongelmat, joissa on vioittuneita lohkotiedostoja tai puuttuvia / vanhentuneita tapahtumia.",
+                "INFOEXTERNAL": "Näitä korjauskäskyjä ei voida käyttää, kun Metrix Corea käytetään ulkoisesti",
+                "INFO": "Alla olevat painikkeet käynnistävät Metrix Core -ohjelman komentorivivalitsimilla korjaamaan lompakon, korjaamaan ongelmat, joissa on vioittuneita lohkotiedostoja tai puuttuvia / vanhentuneita tapahtumia.",
                 "SALVAGEBUTTON": "Salvage Lompakko",
                 "SALVAGEINFO": "-salvagewallet: Yritä palauttaa yksityiset avaimet korruptoituneesta wallet.dat-tietokannasta.",
                 "RESCANBUTTON": "Rescan blockchain -tiedostot",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-kehittäjät <br/> Copyright © 2011-2012 PPCoin-kehittäjät <br/> Copyright © 2012-2014 NovaCoin-kehittäjät <br/> Copyright © 2014-2018 Linda-kehittäjät <br/><br/> Tämä on kokeellinen ohjelmisto. <br/> MIT / X11-ohjelmistolisenssin mukaisesti hajautettu tiedosto on KOPIOINTI tai http://www.opensource.org/licenses/mit-license.php. <br/><br/> Tämä tuote sisältää OpenSSL-projektin kehittämän ohjelmiston käytettäväksi OpenSSL Toolkit -ohjelmistossa (https://www.openssl.org) ja Eric Youngin (eay@cryptsoft.com) kirjoittama salausohjelmisto sekä Thomas Bernardin kirjoittama UPnP-ohjelmisto.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin-kehittäjät <br/> Copyright © 2011-2012 PPCoin-kehittäjät <br/> Copyright © 2012-2014 NovaCoin-kehittäjät <br/> Copyright © 2014-2019 Metrix-kehittäjät <br/><br/> Tämä on kokeellinen ohjelmisto. <br/> MIT / X11-ohjelmistolisenssin mukaisesti hajautettu tiedosto on KOPIOINTI tai http://www.opensource.org/licenses/mit-license.php. <br/><br/> Tämä tuote sisältää OpenSSL-projektin kehittämän ohjelmiston käytettäväksi OpenSSL Toolkit -ohjelmistossa (https://www.openssl.org) ja Eric Youngin (eay@cryptsoft.com) kirjoittama salausohjelmisto sekä Thomas Bernardin kirjoittama UPnP-ohjelmisto.",
             "ABOUTALTITUDETAB": "Korkeus",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda-kehittäjät <br/><br/> Tämä ohjelmisto on jaettu GPL-3.0-lisenssin alla, katso lisätietoja osoitteesta https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix-kehittäjät <br/><br/> Tämä ohjelmisto on jaettu GPL-3.0-lisenssin alla, katso lisätietoja osoitteesta https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Valitse kieli"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Anna Wallet-salasanasi",
             "UNLOCKSTAKINGONLY": "Avaa vain skaalausta varten",
-            "CLIENTUPDATETITLE": "Linda Core -päivitys saatavilla",
-            "CLIENTUPDATEINFO": "Linda Coreille on saatavana päivitys. Haluatko asentaa sen nyt?",
+            "CLIENTUPDATETITLE": "Metrix Core -päivitys saatavilla",
+            "CLIENTUPDATEINFO": "Metrix Coreille on saatavana päivitys. Haluatko asentaa sen nyt?",
             "WALLETUPDATETITLE": "Korkeuden päivitys saatavilla",
             "WALLETUPDATEINFO": "Päivitys on käytettävissä Korkeudessa. Haluatko ladata sen nyt?",
             "CLIENTUPDATEBUTTON": "Päivittää",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Muuta salasanaa",
             "ENCRYPTTITLE": "Salaa lompakkosi",
             "ENCRYPTBUTTON": "Salaa",
-            "CLIENTSTOPPEDTITLE": "Linda Core pysähtyi",
-            "CLIENTSTOPPEDINFO": "Yhteys on menetetty Linda Coreille. Voit lopettaa lompakon tai aloittaa sisäisen Linda Corein.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core pysähtyi",
+            "CLIENTSTOPPEDINFO": "Yhteys on menetetty Metrix Coreille. Voit lopettaa lompakon tai aloittaa sisäisen Metrix Corein.",
             "CLIENTSTOPPEDBUTTONEXIT": "Poistu lompakosta",
-            "CLIENTSTOPPEDBUTTONSTART": "Aloita Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Aloita Metrix Core",
             "ENCRYPTEDTITLE": "Lompakko salattu",
             "ENCRYPTEDCONTENT": "Kaikki aiemmat varmuuskopiot, jotka olet tehnyt lompakon tiedostosta, on korvattava äskettäin luodulla, salatulla lompakon tiedostolla. Turvallisuussyistä salaamattomien lompakon tiedostojen aiemmat varmuuskopiot tulevat hyödyttömiksi heti, kun aloitat uuden salatun lompakon käyttämisen.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core pysähtyi yllättäen",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core pysähtyi yllättäen",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Käynnistä asiakas uudelleen",
-            "CLIENTINVALIDCONFIGTITLE": "Virheellinen Linda.conf-määritys",
-            "CLIENTINVALIDCONFIGINFO": "Linda.confilla on virheellinen masternode-asetus, joka aiheuttaa Linda Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto."
+            "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
+            "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto."
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
-            "SENDINGINFO": "Nämä ovat tallennettu Linda-osoitetta maksujen lähettämiseen. Tarkista aina summa ja vastaanottoosoite ennen kolikoiden lähettämistä",
-            "RECEIVINGINFO": "Nämä ovat tallennettu Linda-osoitetta maksujen vastaanottamiseen.",
+            "SENDINGINFO": "Nämä ovat tallennettu Metrix-osoitetta maksujen lähettämiseen. Tarkista aina summa ja vastaanottoosoite ennen kolikoiden lähettämistä",
+            "RECEIVINGINFO": "Nämä ovat tallennettu Metrix-osoitetta maksujen vastaanottamiseen.",
             "BUTTONSELECT": "valita",
             "TABLECOLUMNS_LABEL": "etiketti",
             "TABLECOLUMNS_ADDRESS": "Osoite",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Viesti viesti...",
             "VERIFYMESSAGE": "Vahvista viesti...",
             "LOCALE": "Kieli...",
-            "RESTARTCORE": "Käynnistä Linda Core uudelleen",
+            "RESTARTCORE": "Käynnistä Metrix Core uudelleen",
             "EXIT": "poistuminen",
             "OPTIONS": "Vaihtoehdot..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "auta",
             "COMMANDLINEOPTIONS": "Komentorivivalinnat...",
-            "CHECKUPDATECORE": "Tarkista Linda Core Update...",
+            "CHECKUPDATECORE": "Tarkista Metrix Core Update...",
             "CHECKUPDATEWALLET": "Tarkista korkeuden päivitys...",
-            "ABOUTCORE": "Tietoja Linda Core...",
+            "ABOUTCORE": "Tietoja Metrix Core...",
             "ABOUTALTITUDE": "Tietoja korkeudesta...",
             "DISCORD": "Eripuraa...",
             "ISSUE": "Ilmoita ongelma..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "kunnossa",
         "CLEARALLBUTTON": "Tyhjennä",
         "ENTERACCOUNTLABEL": "Anna tämän osoitteen etiketti",
-        "ENTERADDRESSLABEL": "Anna Linda-osoite",
+        "ENTERADDRESSLABEL": "Anna Metrix-osoite",
         "AGO": "sitten",
         "SORTBY": "Järjestä",
         "SEARCH": "Hae",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Hyväksyä"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Corein alustaminen...",
-        "DOWNLOADCLIENT": "Ladataan Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core -päivitys saatavilla",
-        "SHUTTINGDOWN": "Linda Corein sulkeminen...",
-        "RESTARTING": "Linda Corein uudelleen käynnistäminen..."
+        "INITIALISING": "Metrix Corein alustaminen...",
+        "DOWNLOADCLIENT": "Ladataan Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core -päivitys saatavilla",
+        "SHUTTINGDOWN": "Metrix Corein sulkeminen...",
+        "RESTARTING": "Metrix Corein uudelleen käynnistäminen..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uusi tili luotu onnistuneesti",

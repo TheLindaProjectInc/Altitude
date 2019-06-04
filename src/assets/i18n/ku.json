@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Wallet niha hêdî ye",
             "NOTENABLEDTITLE": "Staking ne çalak e",
             "NOTENABLEDINFO": "Sting niha nehatiye çalak kirin.",
-            "NOTENABLEDINSTR": "Pêdivî ye ku hûn ê hewce bike ku pêdivîkirina xiftanê = 1 di pelê Linda.conf de bikişînin.",
+            "NOTENABLEDINSTR": "Pêdivî ye ku hûn ê hewce bike ku pêdivîkirina xiftanê = 1 di pelê metrix.conf de bikişînin.",
             "NOTSTAKINGTITLE": "Welat naxwaze",
             "NOTSTAKINGINFO": "Walletê niha ji bo veşartinê vekirî ye.",
             "NOTSTAKINGINSTR": "Hûn dikarin ji hêla staliya xwe ve vekişînin dest bi dest pê bikin",
@@ -69,7 +69,7 @@
             "ADDRESS": "Navnîşan",
             "ENABLED": "Vekirî",
             "NOTENABLEDTITLE": "Masternodes ne çalak kirin",
-            "NOTENABLEDINSTR": "Ji bo ku hûn modeode bisekinin, hûn ê hewceyê ku mîhengên masternode = 1 û mîhengkirina 'masternodeprivkey' û 'masternodeaddr' guherînên li pelê Linda.conf bikar bîne.",
+            "NOTENABLEDINSTR": "Ji bo ku hûn modeode bisekinin, hûn ê hewceyê ku mîhengên masternode = 1 û mîhengkirina 'masternodeprivkey' û 'masternodeaddr' guherînên li pelê metrix.conf bikar bîne.",
             "STARTBUTTON": "Niştecîh bikin",
             "STARTALIASBUTTON": "Destûra Alias",
             "STARTALLBUTTON": "Destpêk Dest"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Vebijêrk"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Bi xweşî hatî ferhenga Konferansa Linda Core RPC. Pêwîste alîkarî ji bo pêşniyarên peymanên peyde.",
+                "CONSOLEINFO": "Bi xweşî hatî ferhenga Konferansa Metrix Core RPC. Pêwîste alîkarî ji bo pêşniyarên peymanên peyde.",
                 "CONSOLEWARNING": "WARNING: Scammers çalak bûn, bikarhêneran re dibêjin ku li vir li vir emir bikin, şertên walletê. Bêyî vê yekê konsolê bikar bînin, bêyî fêmkirina ramanê.",
                 "COMMANDPLACEHODLER": "Fermana Enter"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Daxistina Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Dema ku Biryara Linda Core di hundurê de têne rêve kirin",
-                "INFO": "Belgeyên jêrîn dê ji bo veguhastina rêveberên Linda Core dîsa vekin. Ji bo pelên blokên pirsgirêk û pirsgirêkên vekirî / barkirina obsolete de pirsgirêkên çareser bikin.",
+                "INFOEXTERNAL": "Dema ku Biryara Metrix Core di hundurê de têne rêve kirin",
+                "INFO": "Belgeyên jêrîn dê ji bo veguhastina rêveberên Metrix Core dîsa vekin. Ji bo pelên blokên pirsgirêk û pirsgirêkên vekirî / barkirina obsolete de pirsgirêkên çareser bikin.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Ji bo destûra taybet ên ji wallet.dat hewl bike.",
                 "RESCANBUTTON": "Fîlmên jêbirinê hilbijêre",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Developers of Bitcoin <br/> Copyright © 2011-2012 Developers of PPCoin <br/> Copyright © 2012-2014 Developers of NovaCoin <br/> Copyright © 2014-2018 pêşveçûna Linda <br/><br/> Ev nivîsbarê ezmûn e. <br/> Di bin lîsansê de MIT / X11 belav kirin, pelê bi hevpeymaniya COPYING an http://www.opensource.org/licenses/mit-license.php bibînin. <br/><br/> Di vê hilberê de nivîsbariya ku di bikaranîna Bikaranîna OpenSSL Toolkitê de (https://www.openssl.org) û nivîsbarê krîptografîk ji aliyê Eric Young (eay@cryptsoft.com) û nivîsbarên UPnP ve hatî nivîsîn Thomas Thomas.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Developers of Bitcoin <br/> Copyright © 2011-2012 Developers of PPCoin <br/> Copyright © 2012-2014 Developers of NovaCoin <br/> Copyright © 2014-2019 pêşveçûna Metrix <br/><br/> Ev nivîsbarê ezmûn e. <br/> Di bin lîsansê de MIT / X11 belav kirin, pelê bi hevpeymaniya COPYING an http://www.opensource.org/licenses/mit-license.php bibînin. <br/><br/> Di vê hilberê de nivîsbariya ku di bikaranîna Bikaranîna OpenSSL Toolkitê de (https://www.openssl.org) û nivîsbarê krîptografîk ji aliyê Eric Young (eay@cryptsoft.com) û nivîsbarên UPnP ve hatî nivîsîn Thomas Thomas.",
             "ABOUTALTITUDETAB": "Bilindayî",
-            "ABOUTALTITUDE": "Copyright © 2018 Developers of Linda <br/><br/> Ev nivîsbar di bin lîsansa GPL-3.0 de hate belavkirin, ji bo bêtir agahdarî https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE binêre."
+            "ABOUTALTITUDE": "Copyright © 2019 Developers of Metrix <br/><br/> Ev nivîsbar di bin lîsansa GPL-3.0 de hate belavkirin, ji bo bêtir agahdarî https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE binêre."
         },
         "LOCALE": {
             "TITLE": "Ziman hilbijêre"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Enter Passfrase Your Enter",
             "UNLOCKSTAKINGONLY": "Pêdivî ye ku tenê hêşîn",
-            "CLIENTUPDATETITLE": "Update Linda Core Available",
-            "CLIENTUPDATEINFO": "An update ji bo Linda Core heye. Ma hûn dixwazin dixwazin niha saz bikin?",
+            "CLIENTUPDATETITLE": "Update Metrix Core Available",
+            "CLIENTUPDATEINFO": "An update ji bo Metrix Core heye. Ma hûn dixwazin dixwazin niha saz bikin?",
             "WALLETUPDATETITLE": "Update Available Altitude",
             "WALLETUPDATEINFO": "Guhertoya Altitude ji bo rojane ye. Ma hûn dixwazin ku niha dakêşin?",
             "CLIENTUPDATEBUTTON": "Rojanekirin",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Guhertina Passphrase",
             "ENCRYPTTITLE": "Walletê wergirtin",
             "ENCRYPTBUTTON": "Şîfrekirin",
-            "CLIENTSTOPPEDTITLE": "Linda Core Stopped",
-            "CLIENTSTOPPEDINFO": "Girêdana Linda Korê winda kir. Hûn dikarin bendê rawestin an jî Lindeya hundurê vekin.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Stopped",
+            "CLIENTSTOPPEDINFO": "Girêdana Metrix Korê winda kir. Hûn dikarin bendê rawestin an jî Lindeya hundurê vekin.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Destûra Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Destûra Metrix Core",
             "ENCRYPTEDTITLE": "Encrypted Wallet",
             "ENCRYPTEDCONTENT": "Pêdiviyên paşîn ên ku hûn ji pelê wallet ve hatine çêkirin divê bi pelê nû ve hatî çêkirin, pelê wesayît kirin. Ji ber sedemên ewlehiyê, pelê berê ya paşê ya pelê unencrypted dê zû bê bêbawer bibe wekî ku hûn bikar bi karanîna nû, şîfreyek şîfre bikin.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core Nayê rawestandin",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Linda Korek bû ku ji bo winda kirin. Ew pêşniyaz dike ku pelên debug .logê kontrol bikin.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nayê rawestandin",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Metrix Korek bû ku ji bo winda kirin. Ew pêşniyaz dike ku pelên debug .logê kontrol bikin.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Vebijêrk Client",
-            "CLIENTINVALIDCONFIGTITLE": "Guhertina Linda.conf çewt",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Linda Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin."
+            "CLIENTINVALIDCONFIGTITLE": "Guhertina metrix.conf çewt",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin."
         },
         "ADDRESSBOOK": {
             "TITLE": "Navnîşana Navnîşan",
-            "SENDINGINFO": "Ev ji we re pereyên Linda ji bo şandina xwe rizgar kirin. Her dem her dem ji ber ku şandina şandina dravê û navnîşan bigirin",
-            "RECEIVINGINFO": "Ev ji te re rizgariya Linda rizgar kirine.",
+            "SENDINGINFO": "Ev ji we re pereyên Metrix ji bo şandina xwe rizgar kirin. Her dem her dem ji ber ku şandina şandina dravê û navnîşan bigirin",
+            "RECEIVINGINFO": "Ev ji te re rizgariya Metrix rizgar kirine.",
             "BUTTONSELECT": "Neqandin",
             "TABLECOLUMNS_LABEL": "Awanasî",
             "TABLECOLUMNS_ADDRESS": "Navnîşan",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Peyama Şîfreya...",
             "VERIFYMESSAGE": "Peyama Verêde...",
             "LOCALE": "Ziman...",
-            "RESTARTCORE": "Linda Core Restart",
+            "RESTARTCORE": "Metrix Core Restart",
             "EXIT": "Derî",
             "OPTIONS": "Options..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Alîkarî",
             "COMMANDLINEOPTIONS": "Options Options Line...",
-            "CHECKUPDATECORE": "Ji bo Linda Core Update Check Check...",
+            "CHECKUPDATECORE": "Ji bo Metrix Core Update Check Check...",
             "CHECKUPDATEWALLET": "Ji bo Altitude Update...",
-            "ABOUTCORE": "About Linda Core...",
+            "ABOUTCORE": "About Metrix Core...",
             "ABOUTALTITUDE": "Derheqê Altitude...",
             "DISCORD": "Discord...",
             "ISSUE": "Pirsgirêka Raporta..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Hemî Paqij",
         "ENTERACCOUNTLABEL": "Ji bo vê navnîşanek navnîşek binivîse",
-        "ENTERADDRESSLABEL": "Navnîşana Linda binivîse",
+        "ENTERADDRESSLABEL": "Navnîşana Metrix binivîse",
         "AGO": "pêşî",
         "SORTBY": "Bi Sort By",
         "SEARCH": "Gerr",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Baweranîn"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Destpêka Linda Core...",
-        "DOWNLOADCLIENT": "Linda Core Daxistin...",
-        "UPDATEAVAILABLE": "Update Linda Core Available",
-        "SHUTTINGDOWN": "Linda Core Veşandin...",
-        "RESTARTING": "Linda Core Restarting..."
+        "INITIALISING": "Destpêka Metrix Core...",
+        "DOWNLOADCLIENT": "Metrix Core Daxistin...",
+        "UPDATEAVAILABLE": "Update Metrix Core Available",
+        "SHUTTINGDOWN": "Metrix Core Veşandin...",
+        "RESTARTING": "Metrix Core Restarting..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Hesabê nû yê serkeftî çêkir",

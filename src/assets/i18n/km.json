@@ -49,7 +49,7 @@
             "STAKINGTITLE": "កាបូបកំពុងចាក់សោ",
             "NOTENABLEDTITLE": "ការចាក់សោតមិនត្រូវបានបើកទេ",
             "NOTENABLEDINFO": "ការចាក់ថ្នាំមិនត្រូវបានបើកទេ។",
-            "NOTENABLEDINSTR": "ដើម្បីចូលរួមភ្នាល់អ្នកនឹងត្រូវការបើកការដាក់ stack = 1 ក្នុងឯកសារ Linda.conf របស់អ្នក។",
+            "NOTENABLEDINSTR": "ដើម្បីចូលរួមភ្នាល់អ្នកនឹងត្រូវការបើកការដាក់ stack = 1 ក្នុងឯកសារ metrix.conf របស់អ្នក។",
             "NOTSTAKINGTITLE": "កាបូបមិនមានការភ្នាល់",
             "NOTSTAKINGINFO": "កាបូបរបស់អ្នកបច្ចុប្បន្នត្រូវបានចាក់សោសម្រាប់ការភ្នាល់។",
             "NOTSTAKINGINSTR": "អ្នកអាចចាប់ផ្តើមដាក់ប្រាក់ដោយដោះសោកាបូបរបស់អ្នកសម្រាប់ការភ្នាល់",
@@ -69,7 +69,7 @@
             "ADDRESS": "អាសយដ្ឋាន",
             "ENABLED": "បានបើក",
             "NOTENABLEDTITLE": "Masternodes មិនត្រូវបានបើកទេ",
-            "NOTENABLEDINSTR": "ដើម្បីដំណើរការ masternode អ្នកនឹងត្រូវបើកដំណើរការ masternodes ដោយកំណត់ masternode = 1 និងកំណត់រចនាសម្ព័ន្ធអថេរ 'masternodeprivkey' និង 'masternodeaddr' នៅក្នុងឯកសារ Linda.conf របស់អ្នក។",
+            "NOTENABLEDINSTR": "ដើម្បីដំណើរការ masternode អ្នកនឹងត្រូវបើកដំណើរការ masternodes ដោយកំណត់ masternode = 1 និងកំណត់រចនាសម្ព័ន្ធអថេរ 'masternodeprivkey' និង 'masternodeaddr' នៅក្នុងឯកសារ metrix.conf របស់អ្នក។",
             "STARTBUTTON": "ចាប់ផ្ដើមមូលដ្ឋាន",
             "STARTALIASBUTTON": "ចាប់ផ្ដើមឈ្មោះក្លែងក្លាយ",
             "STARTALLBUTTON": "ចាប់ផ្តើមទាំងអស់"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "កម្ពស់កំណែ"
             },
             "DEBUG": {
-                "CONSOLEINFO": "ស្វាគមន៍មកកាន់កុងសូល Linda Core RPC ។ វាយបញ្ចូលជំនួយសម្រាប់ទិដ្ឋភាពទូទៅនៃពាក្យបញ្ជាដែលមាន។",
+                "CONSOLEINFO": "ស្វាគមន៍មកកាន់កុងសូល Metrix Core RPC ។ វាយបញ្ចូលជំនួយសម្រាប់ទិដ្ឋភាពទូទៅនៃពាក្យបញ្ជាដែលមាន។",
                 "CONSOLEWARNING": "ព្រមាន: អ្នកបោកប្រាស់បានសកម្មប្រាប់អ្នកប្រើឱ្យបញ្ចូលពាក្យបញ្ជានៅទីនេះលួចមាតិកាកាបូបរបស់ពួកគេ។ កុំប្រើកុងសូលនេះដោយមិនចាំបាច់យល់អំពីការបែងចែកនៃពាក្យបញ្ជា។",
                 "COMMANDPLACEHODLER": "បញ្ចូលពាក្យបញ្ជា"
             },
@@ -121,7 +121,7 @@
                 "HEIGHT": "ចាប់ផ្តើមប្លុក"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "ពាក្យបញ្ជាជួសជុលទាំងនេះមិនអាចដំណើរការនៅពេល Linda Core ត្រូវបានដំណើរការពីខាងក្រៅ",
+                "INFOEXTERNAL": "ពាក្យបញ្ជាជួសជុលទាំងនេះមិនអាចដំណើរការនៅពេល Metrix Core ត្រូវបានដំណើរការពីខាងក្រៅ",
                 "INFO": "ប៊ូតុងខាងក្រោមនឹងចាប់ផ្តើមលីនុចស្នូលឡើងវិញជាមួយជម្រើសបន្ទាត់ពាក្យបញ្ជាដើម្បីជួសជុលកាបូបជួសជុលបញ្ហាដែលមានបញ្ហា blockchain ឯកសារឬប្រតិបត្តិការដែលបាត់ / លែងប្រើ។",
                 "SALVAGEBUTTON": "កន្សែង Salvage",
                 "SALVAGEINFO": "-salvagewallet: ប៉ុនប៉ងដើម្បីទាញយកកូនសោឯកជនពីពុករលួយ wallet.dat ។",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "រក្សាសិទ្ធិ© 2009-2015 អ្នកបង្កើត Bitcoin <br/> រក្សាសិទ្ធិ© 2011-2012 អ្នកអភិវឌ្ឍន៍ PPCoin <br/> រក្សាសិទ្ធិ© 2012-2014 អ្នកអភិវឌ្ឍន៍ NovaCoin <br/> រក្សាសិទ្ធិ© 2014-2018 អ្នកអភិវឌ្ឍន៍លីនដា <br/><br/> នេះគឺជាកម្មវិធីពិសោធន៏។ <br/> បានចែកចាយនៅក្រោមអាជ្ញាប័ណ្ណកម្មវិធី MIT / X11 សូមមើលឯកសារភ្ជាប់ជាមួយ COPYING ឬ http://www.opensource.org/licenses/mit-license.php ។ <br/><br/> ផលិតផលនេះរួមមានកម្មវិធីដែលបានបង្កើតឡើងដោយគម្រោង OpenSSL សម្រាប់ប្រើនៅក្នុង OpenSSL Toolkit (https://www.openssl.org) និងកម្មវិធីគ្រីបដែលសរសេរដោយ Eric Young (eay@cryptsoft.com) និងកម្មវិធី UPnP ដែលសរសេរដោយលោក Thomas Bernard ។",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "រក្សាសិទ្ធិ© 2009-2015 អ្នកបង្កើត Bitcoin <br/> រក្សាសិទ្ធិ© 2011-2012 អ្នកអភិវឌ្ឍន៍ PPCoin <br/> រក្សាសិទ្ធិ© 2012-2014 អ្នកអភិវឌ្ឍន៍ NovaCoin <br/> រក្សាសិទ្ធិ© 2014-2019 អ្នកអភិវឌ្ឍន៍លីនដា <br/><br/> នេះគឺជាកម្មវិធីពិសោធន៏។ <br/> បានចែកចាយនៅក្រោមអាជ្ញាប័ណ្ណកម្មវិធី MIT / X11 សូមមើលឯកសារភ្ជាប់ជាមួយ COPYING ឬ http://www.opensource.org/licenses/mit-license.php ។ <br/><br/> ផលិតផលនេះរួមមានកម្មវិធីដែលបានបង្កើតឡើងដោយគម្រោង OpenSSL សម្រាប់ប្រើនៅក្នុង OpenSSL Toolkit (https://www.openssl.org) និងកម្មវិធីគ្រីបដែលសរសេរដោយ Eric Young (eay@cryptsoft.com) និងកម្មវិធី UPnP ដែលសរសេរដោយលោក Thomas Bernard ។",
             "ABOUTALTITUDETAB": "កម្ពស់",
-            "ABOUTALTITUDE": "រក្សាសិទ្ធិ© 2018 អ្នកអភិវឌ្ឍន៍លីនដា <br/><br/> កម្មវិធីនេះត្រូវបានចែកចាយក្រោមអាជ្ញាប័ណ្ណ GPL-3.0 សូមមើល https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE សម្រាប់ព័ត៌មានបន្ថែម។"
+            "ABOUTALTITUDE": "រក្សាសិទ្ធិ© 2019 អ្នកអភិវឌ្ឍន៍លីនដា <br/><br/> កម្មវិធីនេះត្រូវបានចែកចាយក្រោមអាជ្ញាប័ណ្ណ GPL-3.0 សូមមើល https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE សម្រាប់ព័ត៌មានបន្ថែម។"
         },
         "LOCALE": {
             "TITLE": "ជ្រើសរើស​ភាសា"
@@ -245,7 +245,7 @@
             "ENTERPASSPHRASETITLE": "បញ្ចូលឃ្លាសម្ងាត់កាបូបរបស់អ្នក",
             "UNLOCKSTAKINGONLY": "ដោះសោសម្រាប់តែការភ្នាល់ប៉ុណ្ណោះ",
             "CLIENTUPDATETITLE": "លីនដាស្នូលទាន់សម័យអាចរកបាន",
-            "CLIENTUPDATEINFO": "ការធ្វើបច្ចុប្បន្នភាពអាចរកបានសម្រាប់ Linda Core ។ តើអ្នកចង់ដំឡើងវាឥឡូវនេះទេ?",
+            "CLIENTUPDATEINFO": "ការធ្វើបច្ចុប្បន្នភាពអាចរកបានសម្រាប់ Metrix Core ។ តើអ្នកចង់ដំឡើងវាឥឡូវនេះទេ?",
             "WALLETUPDATETITLE": "ធ្វើបច្ចុប្បន្នភាពកម្ពស់",
             "WALLETUPDATEINFO": "មានការធ្វើបច្ចុប្បន្នភាពសម្រាប់កម្ពស់។ តើអ្នកចង់ទាញយកវាឥឡូវនេះទេ?",
             "CLIENTUPDATEBUTTON": "ធ្វើបច្ចុប្បន្នភាព",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "ប្តូរឃ្លាសម្ងាត់",
             "ENCRYPTTITLE": "អ៊ិនគ្រីបកាបូបរបស់អ្នក",
             "ENCRYPTBUTTON": "អ៊ិនគ្រីប",
-            "CLIENTSTOPPEDTITLE": "Linda Core បានបញ្ឈប់",
-            "CLIENTSTOPPEDINFO": "ការតភ្ជាប់ត្រូវបានបាត់បង់ទៅ Linda Core ។ អ្នកអាចបញ្ឈប់កាបូបឬចាប់ផ្តើមលីនដាស្នូល។",
+            "CLIENTSTOPPEDTITLE": "Metrix Core បានបញ្ឈប់",
+            "CLIENTSTOPPEDINFO": "ការតភ្ជាប់ត្រូវបានបាត់បង់ទៅ Metrix Core ។ អ្នកអាចបញ្ឈប់កាបូបឬចាប់ផ្តើមលីនដាស្នូល។",
             "CLIENTSTOPPEDBUTTONEXIT": "ចេញពីកាបូប",
             "CLIENTSTOPPEDBUTTONSTART": "ចាប់ផ្តើមលីនដាស្នូល",
             "ENCRYPTEDTITLE": "កាបូបបានអ៊ិនគ្រីប",
             "ENCRYPTEDCONTENT": "រាល់ការបម្រុងទុកពីមុនដែលអ្នកបានធ្វើពីឯកសារកាបូបរបស់អ្នកគួរតែត្រូវបានជំនួសដោយឯកសារកាបូបដែលបានអ៊ិនគ្រីបថ្មី។ ចំពោះហេតុផលសុវត្ថិភាពការបម្រុងទុកមុននៃឯកសារកាបូបដែលមិនបានបម្លែងនឹងក្លាយជាគ្មានប្រយោជន៍នៅពេលអ្នកចាប់ផ្ដើមប្រើកាបូបដែលបានអ៊ិនគ្រីបថ្មី។",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "លីនដាស្នេលបានបញ្ឈប់ដោយមិននឹកស្មានដល់",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "មានបញ្ហាជាមួយ Linda Core ដែលបណ្តាលឱ្យវាបញ្ចប់។ វាត្រូវបានណែនាំឱ្យពិនិត្យមើលឯកសារបំបាត់កំហុសរបស់អ្នកសម្រាប់បញ្ហា។",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "មានបញ្ហាជាមួយ Metrix Core ដែលបណ្តាលឱ្យវាបញ្ចប់។ វាត្រូវបានណែនាំឱ្យពិនិត្យមើលឯកសារបំបាត់កំហុសរបស់អ្នកសម្រាប់បញ្ហា។",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ចាប់ផ្ដើមម៉ាស៊ីនភ្ញៀវឡើងវិញ",
-            "CLIENTINVALIDCONFIGTITLE": "ការកំណត់រចនាសម្ព័ន្ធ Linda.conf មិនត្រឹមត្រូវ",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf របស់អ្នកមានការរៀបចំម៉ាសាណែតមិនត្រឹមត្រូវដែលនឹងធ្វើអោយ Linda Core ចាកចេញភ្លាមៗ។ សូមពិនិត្យមើលឯកសារនេះ។"
+            "CLIENTINVALIDCONFIGTITLE": "ការកំណត់រចនាសម្ព័ន្ធ metrix.conf មិនត្រឹមត្រូវ",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf របស់អ្នកមានការរៀបចំម៉ាសាណែតមិនត្រឹមត្រូវដែលនឹងធ្វើអោយ Metrix Core ចាកចេញភ្លាមៗ។ សូមពិនិត្យមើលឯកសារនេះ។"
         },
         "ADDRESSBOOK": {
             "TITLE": "សៀវភៅ​អាស័យ​ដ្ឋាន",
-            "SENDINGINFO": "ទាំងនេះគឺជាអាសយដ្ឋាន Linda ដែលបានរក្សាទុករបស់អ្នកសម្រាប់ការផ្ញើការទូទាត់។ តែងតែពិនិត្យមើលចំនួននិងទទួលអាសយដ្ឋានមុនពេលផ្ញើកាក់",
-            "RECEIVINGINFO": "ទាំងនេះគឺជាអាសយដ្ឋាន Linda ដែលបានរក្សាទុករបស់អ្នកសម្រាប់ទទួលការទូទាត់។",
+            "SENDINGINFO": "ទាំងនេះគឺជាអាសយដ្ឋាន Metrix ដែលបានរក្សាទុករបស់អ្នកសម្រាប់ការផ្ញើការទូទាត់។ តែងតែពិនិត្យមើលចំនួននិងទទួលអាសយដ្ឋានមុនពេលផ្ញើកាក់",
+            "RECEIVINGINFO": "ទាំងនេះគឺជាអាសយដ្ឋាន Metrix ដែលបានរក្សាទុករបស់អ្នកសម្រាប់ទទួលការទូទាត់។",
             "BUTTONSELECT": "ជ្រើសរើស",
             "TABLECOLUMNS_LABEL": "ស្លាក​សញ្ញា",
             "TABLECOLUMNS_ADDRESS": "អាសយដ្ឋាន",
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "ជំនួយ",
             "COMMANDLINEOPTIONS": "ជម្រើសបន្ទាត់ពាក្យបញ្ជា...",
-            "CHECKUPDATECORE": "ពិនិត្យមើលបច្ចុប្បន្នភាពស្នូល Linda...",
+            "CHECKUPDATECORE": "ពិនិត្យមើលបច្ចុប្បន្នភាពស្នូល Metrix...",
             "CHECKUPDATEWALLET": "ពិនិត្យមើលភាពទាន់សម័យលើកម្ពស់...",
             "ABOUTCORE": "អំពីលីនដាស្នូល...",
             "ABOUTALTITUDE": "អំពីកម្ពស់...",
@@ -340,7 +340,7 @@
         "INITIALISING": "កំពុងចាប់ផ្ដើមលីនុចស្នូល...",
         "DOWNLOADCLIENT": "ទាញយកលីនដាស្នូល...",
         "UPDATEAVAILABLE": "លីនដាស្នូលទាន់សម័យអាចរកបាន",
-        "SHUTTINGDOWN": "បិទ Linda Core...",
+        "SHUTTINGDOWN": "បិទ Metrix Core...",
         "RESTARTING": "ចាប់ផ្តើមលីនុចឡើងវិញ..."
     },
     "NOTIFICATIONS": {

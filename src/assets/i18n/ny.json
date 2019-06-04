@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Pulogalamu yamakono ikugwedeza",
             "NOTENABLEDTITLE": "Kuphwanyika sikungathandize",
             "NOTENABLEDINFO": "Kuphwanyika sikukuthandizidwa.",
-            "NOTENABLEDINSTR": "Powopsya mudzafunika kuti staking ikule staking = 1 mu fayilo yanu ya Linda.conf.",
+            "NOTENABLEDINSTR": "Powopsya mudzafunika kuti staking ikule staking = 1 mu fayilo yanu ya metrix.conf.",
             "NOTSTAKINGTITLE": "Chikwama sichikugwedeza",
             "NOTSTAKINGINFO": "Chikwama chako pakali pano chatsekedwa chifukwa cha staking.",
             "NOTSTAKINGINSTR": "Mukhoza kuyamba kugwedeza mwa kutsegula chikwama chanu cha staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adilesi",
             "ENABLED": "Yathandiza",
             "NOTENABLEDTITLE": "Masternodes sichimathandizidwa",
-            "NOTENABLEDINSTR": "Kuti muyambe masternode muyenera kuonetsetsa masternodes poika masternode = 1 ndi kukonza 'masternodeprivkey' ndi 'masternodeaddr' zosiyanasiyana mu file Linda.conf.",
+            "NOTENABLEDINSTR": "Kuti muyambe masternode muyenera kuonetsetsa masternodes poika masternode = 1 ndi kukonza 'masternodeprivkey' ndi 'masternodeaddr' zosiyanasiyana mu file metrix.conf.",
             "STARTBUTTON": "Yambani Mderalo",
             "STARTALIASBUTTON": "Yambani Zamoyo",
             "STARTALLBUTTON": "Yambani Zonse"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Vuto lakumtunda"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Takulandirani ku Linda Core RPC console. Thandizani chithandizo kuti muwone mwachidule malamulo omwe alipo.",
+                "CONSOLEINFO": "Takulandirani ku Metrix Core RPC console. Thandizani chithandizo kuti muwone mwachidule malamulo omwe alipo.",
                 "CONSOLEWARNING": "CHENJEZO: Anthu opanga mafilimu akhala akugwira ntchito, akuwuza ogwiritsa ntchito kufalitsa malamulo pano, kuba za chikwama chawo. Musagwiritse ntchito console iyi musamvetsetse ramification ya lamulo.",
                 "COMMANDPLACEHODLER": "Lowani Lamulo"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Yambani Kutseka"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Malamulo okonzanso sangathe kuthamanga pamene Linda Core ikuyendetsedwa kunja",
-                "INFO": "Mabatani omwe ali pamunsiwa ayambanso Linda Core ndi njira zopangira maulamuliro kuti akonze chikwama, akonze zinthu ndi mafayilo owononga blockchain kapena zosowa / obsolete.",
+                "INFOEXTERNAL": "Malamulo okonzanso sangathe kuthamanga pamene Metrix Core ikuyendetsedwa kunja",
+                "INFO": "Mabatani omwe ali pamunsiwa ayambanso Metrix Core ndi njira zopangira maulamuliro kuti akonze chikwama, akonze zinthu ndi mafayilo owononga blockchain kapena zosowa / obsolete.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Kuyesera kubwezera mafungulo apachiyero kuchokera ku chikwama choyipa.dat.",
                 "RESCANBUTTON": "Lembani mafayilo a blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Omwe akuwongolera Bitcoin <br/> Copyright © 2011-2012 PPCoin Onsintha <br/> Copyright © 2012-2014 Oyambitsa NovaCoin <br/> Copyright © 2014-2018 Olemba Linda <br/><br/> Izi ndi mapulogalamu oyesera. <br/> Kugawidwa pansi pa MIT / X11 mapulogalamu a mapulogalamu, onani fayilo yomwe ilipo COPYING kapena http://www.opensource.org/licenses/mit-license.php. <br/><br/> Chida ichi chimaphatikizapo mapulogalamu opangidwa ndi Project OpenSSL kuti agwiritsidwe ntchito mu OpenSSL Toolkit (https://www.openssl.org) ndi pulogalamu ya cryptographic yolembedwa ndi Eric Young (eay@cryptsoft.com) ndi pulogalamu ya UPnP yolembedwa ndi Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Omwe akuwongolera Bitcoin <br/> Copyright © 2011-2012 PPCoin Onsintha <br/> Copyright © 2012-2014 Oyambitsa NovaCoin <br/> Copyright © 2014-2019 Olemba Metrix <br/><br/> Izi ndi mapulogalamu oyesera. <br/> Kugawidwa pansi pa MIT / X11 mapulogalamu a mapulogalamu, onani fayilo yomwe ilipo COPYING kapena http://www.opensource.org/licenses/mit-license.php. <br/><br/> Chida ichi chimaphatikizapo mapulogalamu opangidwa ndi Project OpenSSL kuti agwiritsidwe ntchito mu OpenSSL Toolkit (https://www.openssl.org) ndi pulogalamu ya cryptographic yolembedwa ndi Eric Young (eay@cryptsoft.com) ndi pulogalamu ya UPnP yolembedwa ndi Thomas Bernard.",
             "ABOUTALTITUDETAB": "Kutalika",
-            "ABOUTALTITUDE": "Copyright © 2018 Oyambitsa Linda <br/><br/> Pulogalamuyi imaperekedwa pansi pa chilolezo cha GPL-3.0, onani https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kuti mudziwe zambiri."
+            "ABOUTALTITUDE": "Copyright © 2019 Oyambitsa Metrix <br/><br/> Pulogalamuyi imaperekedwa pansi pa chilolezo cha GPL-3.0, onani https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kuti mudziwe zambiri."
         },
         "LOCALE": {
             "TITLE": "Sankhani Chilankhulo"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Lowani Passphrase Yanu Yogulitsa",
             "UNLOCKSTAKINGONLY": "Kutsegula kwa staking yekha",
-            "CLIENTUPDATETITLE": "Chiyambi Chachikulu cha Linda Chipezeka",
-            "CLIENTUPDATEINFO": "Kusintha kulipo kwa Linda Core. Kodi mukufuna kuikonza tsopano?",
+            "CLIENTUPDATETITLE": "Chiyambi Chachikulu cha Metrix Chipezeka",
+            "CLIENTUPDATEINFO": "Kusintha kulipo kwa Metrix Core. Kodi mukufuna kuikonza tsopano?",
             "WALLETUPDATETITLE": "Kusintha kwazitali Kumapezeka",
             "WALLETUPDATEINFO": "Kusintha kulipo kwa Altitude. Kodi mungakonde kuzilandira tsopano?",
             "CLIENTUPDATEBUTTON": "Sintha",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Sinthani Passphrase",
             "ENCRYPTTITLE": "Lembani chikwama chanu",
             "ENCRYPTBUTTON": "Tsekani",
-            "CLIENTSTOPPEDTITLE": "Linda Core Anasiya",
-            "CLIENTSTOPPEDINFO": "Kugwirizana kwatayika kwa Linda Core. Mungathe kuimitsa chikwama kapena kuyamba Linda Core mkati.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Anasiya",
+            "CLIENTSTOPPEDINFO": "Kugwirizana kwatayika kwa Metrix Core. Mungathe kuimitsa chikwama kapena kuyamba Metrix Core mkati.",
             "CLIENTSTOPPEDBUTTONEXIT": "Chotsani Chikwama",
-            "CLIENTSTOPPEDBUTTONSTART": "Yambani Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Yambani Metrix Core",
             "ENCRYPTEDTITLE": "Chikwama Chimafufuzidwa",
             "ENCRYPTEDCONTENT": "Zomwe mwasunga kale zomwe munapanga pa fayilo yanu ya chikwama ziyenera kusinthidwa ndi fayilo yatsopano yophimbidwa. Chifukwa cha chitetezo, mafayilo akale a fayilo yam'chikwama chosadziwika sangakhale yopanda phindu mutangoyamba kugwiritsa ntchito chikwama chatsopano, chobisika.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Cholowa cha Linda Chinadutsa Mwadzidzidzi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Linda Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Cholowa cha Metrix Chinadutsa Mwadzidzidzi",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Yambiraninso Wotsatsa",
-            "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa Linda.conf kosavomerezeka",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Linda Core mwamsanga. Chonde onani fayilo iyi."
+            "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa metrix.conf kosavomerezeka",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi."
         },
         "ADDRESSBOOK": {
             "TITLE": "Bukhu la Maadiresi",
-            "SENDINGINFO": "Awa ndi adilesi yanu ya Linda yopulumutsidwa. Nthawi zonse yesani ndalama ndi kulandira adiresi musanatumize ndalama",
-            "RECEIVINGINFO": "Awa ndi adilesi yanu ya Linda yopulumutsidwa.",
+            "SENDINGINFO": "Awa ndi adilesi yanu ya Metrix yopulumutsidwa. Nthawi zonse yesani ndalama ndi kulandira adiresi musanatumize ndalama",
+            "RECEIVINGINFO": "Awa ndi adilesi yanu ya Metrix yopulumutsidwa.",
             "BUTTONSELECT": "Sankhani",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Adilesi",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Uthenga Wosayina...",
             "VERIFYMESSAGE": "Tsimikizani Uthenga...",
             "LOCALE": "Chilankhulo...",
-            "RESTARTCORE": "Yambirani Linda Core",
+            "RESTARTCORE": "Yambirani Metrix Core",
             "EXIT": "Potulukira",
             "OPTIONS": "Zosankha..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Thandizeni",
             "COMMANDLINEOPTIONS": "Sankhani Zolemba Zina...",
-            "CHECKUPDATECORE": "Fufuzani Chiyambi Chachikulu cha Linda...",
+            "CHECKUPDATECORE": "Fufuzani Chiyambi Chachikulu cha Metrix...",
             "CHECKUPDATEWALLET": "Sungani Zowonjezera Zamtunda...",
-            "ABOUTCORE": "About Linda Core...",
+            "ABOUTCORE": "About Metrix Core...",
             "ABOUTALTITUDE": "About Altitude...",
             "DISCORD": "Kusamvana...",
             "ISSUE": "Lembani Nkhani..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Chabwino",
         "CLEARALLBUTTON": "Sula Zonse",
         "ENTERACCOUNTLABEL": "Lowetsani chizindikiro pa adilesiyi",
-        "ENTERADDRESSLABEL": "Lowani adilesi ya Linda",
+        "ENTERADDRESSLABEL": "Lowani adilesi ya Metrix",
         "AGO": "kale",
         "SORTBY": "Sanjani potengera",
         "SEARCH": "Sakani",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Landirani"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Kuyambitsa Linda Core...",
-        "DOWNLOADCLIENT": "Kuyang'anira Linda Core...",
-        "UPDATEAVAILABLE": "Chiyambi Chachikulu cha Linda Chipezeka",
-        "SHUTTINGDOWN": "Kuletsa Linda Core...",
-        "RESTARTING": "Kuyambanso Linda Core..."
+        "INITIALISING": "Kuyambitsa Metrix Core...",
+        "DOWNLOADCLIENT": "Kuyang'anira Metrix Core...",
+        "UPDATEAVAILABLE": "Chiyambi Chachikulu cha Metrix Chipezeka",
+        "SHUTTINGDOWN": "Kuletsa Metrix Core...",
+        "RESTARTING": "Kuyambanso Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nkhani yatsopano idapangidwa bwino",

@@ -49,7 +49,7 @@
             "STAKINGTITLE": "ပိုက်ဆံအိတ်သည်လက်ရှိတွင်အရံတိုင်ဖြစ်ပါသည်",
             "NOTENABLEDTITLE": "ရှယ်ယာ enabled မဟုတ်ပါ",
             "NOTENABLEDINFO": "ရှယ်ယာလက်ရှိဖွင့်မသည်။",
-            "NOTENABLEDINSTR": "အစုရှယ်ယာမှသင်သည်သင်၏ Linda.conf ဖိုင်ထဲမှာရှယ်ယာ = 1 setting ရံတိုင်ကို enable ဖို့လိုအပ်ပါလိမ့်မယ်။",
+            "NOTENABLEDINSTR": "အစုရှယ်ယာမှသင်သည်သင်၏ metrix.conf ဖိုင်ထဲမှာရှယ်ယာ = 1 setting ရံတိုင်ကို enable ဖို့လိုအပ်ပါလိမ့်မယ်။",
             "NOTSTAKINGTITLE": "ပိုက်ဆံအိတ်ရံတိုင်မရ",
             "NOTSTAKINGINFO": "သင့်ရဲ့ပိုက်ဆံအိတ်လက်ရှိရှယ်ယာများအတွက်သော့ခတ်ထားသည်။",
             "NOTSTAKINGINSTR": "သငျသညျအရံတိုင်အဘို့သင့်ပိုက်ဆံအိတ်သော့ဖွင့်ခြင်းဖြင့်အရံတိုင်စတင်နိုင်ပါသည်",
@@ -69,7 +69,7 @@
             "ADDRESS": "လိပ်စာ",
             "ENABLED": "enabled",
             "NOTENABLEDTITLE": "Masternodes ဖွင့်မ",
-            "NOTENABLEDINSTR": "တစ်ဦး masternode ကို run ရန်သင့်အား masternode = 1 setting နဲ့ 'masternodeprivkey' 'နှင့်သင့် Linda.conf ဖိုင်ထဲတွင်' 'masternodeaddr' 'variable တွေကိုပြင်ဆင် သတ်မှတ်. masternodes enable လုပ်ဖို့လိုအပ်ပါလိမ့်မယ်။",
+            "NOTENABLEDINSTR": "တစ်ဦး masternode ကို run ရန်သင့်အား masternode = 1 setting နဲ့ 'masternodeprivkey' 'နှင့်သင့် metrix.conf ဖိုင်ထဲတွင်' 'masternodeaddr' 'variable တွေကိုပြင်ဆင် သတ်မှတ်. masternodes enable လုပ်ဖို့လိုအပ်ပါလိမ့်မယ်။",
             "STARTBUTTON": "ဒေသခံ Start",
             "STARTALIASBUTTON": "Alias Start",
             "STARTALLBUTTON": "အားလုံး Start"
@@ -121,7 +121,7 @@
                 "HEIGHT": "Block ကိုစတင်ခြင်း"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Linda Core ပြင်ပမှ run သောအခါဤရွေ့ကားပြုပြင် command များကို run မရနိုငျ",
+                "INFOEXTERNAL": "Metrix Core ပြင်ပမှ run သောအခါဤရွေ့ကားပြုပြင် command များကို run မရနိုငျ",
                 "INFO": "အောက်ကခလုတ်, ထိုပိုက်ဆံအိတ်ပြုပြင် command-line options များနှင့်အတူလင်ဒါ Core ပြန်လည်စတင်ရန်အကျင့်ပျက် blockchain ဖိုင်တွေသို့မဟုတ်ပျောက်ဆုံး / အသုံးမပြုတော့တဲ့ငွေကြေးလွှဲပြောင်းမှုမှာနှင့်အတူပြဿနာများကိုဖြေရှင်းပါလိမ့်မယ်။",
                 "SALVAGEBUTTON": "ဆယ်ပိုက်ဆံအိတ်",
                 "SALVAGEINFO": "-salvagewallet: တစ်အကျင့်ပျက် wallet.dat ကနေ private keys တွေကိုပြန်လည်ဖေါ်ထုတ်ရန်ကြိုးစားကြပါတယ်။",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "မူပိုင်ခွင့်© 2009-2015 အဆိုပါ Bitcoin developer များ <br/> မူပိုင်ခွင့်© 2011-2012 PPCoin Developers <br/> မူပိုင်ခွင့်© 2012-2014 အဆိုပါ NovaCoin developer များ <br/> မူပိုင်ခွင့်© 2014-2018 အဆိုပါလင်ဒါ developer များ <br/><br/> ဤသည်စမ်းသပ်ဆဲ software ဖြစ်ပါသည်။ <br/> အဆိုပါ MIT က / X11 software ကိုလိုင်စင်အောက်မှာဖြန့်ဝေ, ပူးတွဲပါဖိုင်မိတ္တူသို့မဟုတ် http://www.opensource.org/licenses/mit-license.php ကြည့်ပါ။ <br/><br/> ဒီထုတ်ကုန်ဟာ OpenSSL ကို Toolkit ကို (https://www.openssl.org) နှင့်အဲရစ်လူငယ် (eay@cryptsoft.com) နှင့်သောမတ်စ်ဘားကရေးသား UPnP software ကိုရေးသားသော cryptographic ဆော့ဖ်ဝဲကိုအသုံးပြုခြင်းများအတွက် OpenSSL Project မှတီထွင် software ကိုပါဝင်သည်။",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "မူပိုင်ခွင့်© 2009-2015 အဆိုပါ Bitcoin developer များ <br/> မူပိုင်ခွင့်© 2011-2012 PPCoin Developers <br/> မူပိုင်ခွင့်© 2012-2014 အဆိုပါ NovaCoin developer များ <br/> မူပိုင်ခွင့်© 2014-2019 အဆိုပါလင်ဒါ developer များ <br/><br/> ဤသည်စမ်းသပ်ဆဲ software ဖြစ်ပါသည်။ <br/> အဆိုပါ MIT က / X11 software ကိုလိုင်စင်အောက်မှာဖြန့်ဝေ, ပူးတွဲပါဖိုင်မိတ္တူသို့မဟုတ် http://www.opensource.org/licenses/mit-license.php ကြည့်ပါ။ <br/><br/> ဒီထုတ်ကုန်ဟာ OpenSSL ကို Toolkit ကို (https://www.openssl.org) နှင့်အဲရစ်လူငယ် (eay@cryptsoft.com) နှင့်သောမတ်စ်ဘားကရေးသား UPnP software ကိုရေးသားသော cryptographic ဆော့ဖ်ဝဲကိုအသုံးပြုခြင်းများအတွက် OpenSSL Project မှတီထွင် software ကိုပါဝင်သည်။",
             "ABOUTALTITUDETAB": "အမြင့်",
-            "ABOUTALTITUDE": "မူပိုင်ခွင့်© 2018 အဆိုပါလင်ဒါ developer များ <br/><br/> ဒီဆော့ဗ်ဝဲဟာ GPL-3.0 လိုင်စင်အောက်မှာဖြန့်ဝေသည်ပိုမိုသောအချက်အလက်များအဘို့အ https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE ကြည့်ပါ။"
+            "ABOUTALTITUDE": "မူပိုင်ခွင့်© 2019 အဆိုပါလင်ဒါ developer များ <br/><br/> ဒီဆော့ဗ်ဝဲဟာ GPL-3.0 လိုင်စင်အောက်မှာဖြန့်ဝေသည်ပိုမိုသောအချက်အလက်များအဘို့အ https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE ကြည့်ပါ။"
         },
         "LOCALE": {
             "TITLE": "ဘာသာစကားများကိုရွေးချယ်ပါ"
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Change Passphrase",
             "ENCRYPTTITLE": "သင့်ရဲ့ပိုက်ဆံအိတ် Encrypt",
             "ENCRYPTBUTTON": "စာဝှက်",
-            "CLIENTSTOPPEDTITLE": "Linda Core ရပ်သွား",
+            "CLIENTSTOPPEDTITLE": "Metrix Core ရပ်သွား",
             "CLIENTSTOPPEDINFO": "connection လင်ဒါ Core မှပျောက်ဆုံးသွားခဲ့တာဖြစ်ပါတယ်။ သင်ကပိုက်ဆံအိတ်ကိုရပ်တန့်ပါသို့မဟုတ်ပြည်တွင်းရေးလင်ဒါ Core စတင်နိုင်ပါသည်။",
             "CLIENTSTOPPEDBUTTONEXIT": "ထွက်ပေါက်ပိုက်ဆံအိတ်",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Core Start",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Core Start",
             "ENCRYPTEDTITLE": "ပိုက်ဆံအိတ် encrypted",
             "ENCRYPTEDCONTENT": "သင်သည်သင်၏ပိုက်ဆံအိတ်ဖိုင်ရာ၌ခန့်ထားပြီမဆိုယခင် Backup တွေကိုအသစ်ထုတ်လုပ်လိုက်တဲ့စာဝှက်ထားတဲ့ပိုက်ဆံအိတ်ဖိုင်ဖြင့်အစားထိုးသင့်ပါတယ်။ လုံခြုံရေးအကြောင်းပြချက်များအဘို့, encrypt မလုပ်ထားသည့်ပိုက်ဆံအိတ်ဖိုင်ယခင် Backup တွေကိုအဖြစ်မကြာမီသငျသညျသစ်ကိုစာဝှက်ထားတဲ့ပိုက်ဆံအိတ်စတင်သုံးစွဲအဖြစ်အသုံးမဖြစ်လာပါလိမ့်မယ်။",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core မမျှော်လင့်ဘဲရပ်သွား",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core မမျှော်လင့်ဘဲရပ်သွား",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ကရပ်ဆိုင်းစေခဲ့သည်လင်ဒါ Core နှင့်အတူပြဿနာတစ်ခုရှိခဲ့သည်။ ဒါဟာကိစ္စရပ်များကိုအဘို့သင့် debug.log file ကိုစစျဆေးဖို့အကြံပြုသည်။",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ပြန်လည်စတင်ပါလိုင်း",
-            "CLIENTINVALIDCONFIGTITLE": "မှားနေသော Linda.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ Linda.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။"
+            "CLIENTINVALIDCONFIGTITLE": "မှားနေသော metrix.conf Configuration",
+            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ metrix.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။"
         },
         "ADDRESSBOOK": {
             "TITLE": "လိပ်စာစာအုပ်",
-            "SENDINGINFO": "ဤရွေ့ကားငွေပေးချေမှုပေးပို့ခြင်းအဘို့သင့်သည်ကယ်တင်ခြင်းသို့ရောက် Linda လိပ်စာဖြစ်ကြသည်။ ငွေပမာဏကိုအမြဲတမ်းစစ်ဆေးနှင့်ဒင်္ဂါးပြားများပေးပို့ခြင်းမပြုမီလိပ်စာလက်ခံရရှိ",
-            "RECEIVINGINFO": "ဤရွေ့ကားငွေပေးချေမှုကိုလက်ခံရရှိအဘို့သင့်သည်ကယ်တင်ခြင်းသို့ရောက် Linda လိပ်စာဖြစ်ကြသည်။",
+            "SENDINGINFO": "ဤရွေ့ကားငွေပေးချေမှုပေးပို့ခြင်းအဘို့သင့်သည်ကယ်တင်ခြင်းသို့ရောက် Metrix လိပ်စာဖြစ်ကြသည်။ ငွေပမာဏကိုအမြဲတမ်းစစ်ဆေးနှင့်ဒင်္ဂါးပြားများပေးပို့ခြင်းမပြုမီလိပ်စာလက်ခံရရှိ",
+            "RECEIVINGINFO": "ဤရွေ့ကားငွေပေးချေမှုကိုလက်ခံရရှိအဘို့သင့်သည်ကယ်တင်ခြင်းသို့ရောက် Metrix လိပ်စာဖြစ်ကြသည်။",
             "BUTTONSELECT": "ကို Select လုပ်ပါ",
             "TABLECOLUMNS_LABEL": "တံဆိပ်",
             "TABLECOLUMNS_ADDRESS": "လိပ်စာ",
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "ကူညီပါ",
             "COMMANDLINEOPTIONS": "command လိုင်း Options... ကို",
-            "CHECKUPDATECORE": "Linda Core Update ကိုစစ်ဆေးသည်...",
+            "CHECKUPDATECORE": "Metrix Core Update ကိုစစ်ဆေးသည်...",
             "CHECKUPDATEWALLET": "အမြင့် Update ကိုစစ်ဆေးသည်...",
-            "ABOUTCORE": "Linda Core အကြောင်း...",
+            "ABOUTCORE": "Metrix Core အကြောင်း...",
             "ABOUTALTITUDE": "အမြင့်အကြောင်း...",
             "DISCORD": "စိတ်တိုးပွား...",
             "ISSUE": "တစ်ခုကပြဿနာအစီရင်ခံရန်..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Accept"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core Initialising...",
-        "DOWNLOADCLIENT": "Linda Core ကိုဒေါင်းလုဒ်...",
+        "INITIALISING": "Metrix Core Initialising...",
+        "DOWNLOADCLIENT": "Metrix Core ကိုဒေါင်းလုဒ်...",
         "UPDATEAVAILABLE": "ရရှိနိုင်လင်ဒါ Core Update ကို",
-        "SHUTTINGDOWN": "Linda Core အကြာတွင်ပိတ်ပါမည်...",
-        "RESTARTING": "Linda Core ပြန်လည်စတင်..."
+        "SHUTTINGDOWN": "Metrix Core အကြာတွင်ပိတ်ပါမည်...",
+        "RESTARTING": "Metrix Core ပြန်လည်စတင်..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "အောင်မြင်စွာဖန်တီးအကောင့်အသစ်",

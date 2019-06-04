@@ -59,7 +59,7 @@
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_MINT' | translate }}</th>
-        <td>{{helpers.prettyCoins(currentBlock.mint)}} Linda</td>
+        <td>{{helpers.prettyCoins(currentBlock.mint)}} Metrix</td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_VERSION' | translate }}</th>
@@ -155,7 +155,7 @@
           <div class="vinvout" *ngFor="let vin of currentTransaction.vin">
             <span *ngIf="vin.coinbase">{{ 'PAGES.EXPLORER.COINBASE' | translate }}</span>
             <span *ngFor="let addr of vin.addresses">{{ addr }}</span>
-            <span *ngIf="vin.value" class="badge primary">{{helpers.prettyCoins(vin.value)}} Linda</span>
+            <span *ngIf="vin.value" class="badge primary">{{helpers.prettyCoins(vin.value)}} Metrix</span>
           </div>
         </td>
         <td>
@@ -165,7 +165,7 @@
           <div class="vinvout" *ngFor="let vout of currentTransaction.vout">
             <span *ngIf="vout.scriptPubKey.type=='nonstandard'">{{ 'PAGES.EXPLORER.NONSTANDARD' | translate }}</span>
             <span *ngFor="let addr of vout.scriptPubKey.addresses">{{ addr }}</span>
-            <span *ngIf="vout.value" class="badge primary">{{helpers.prettyCoins(vout.value)}} Linda</span>
+            <span *ngIf="vout.value" class="badge primary">{{helpers.prettyCoins(vout.value)}} Metrix</span>
           </div>
         </td>
       </tr>

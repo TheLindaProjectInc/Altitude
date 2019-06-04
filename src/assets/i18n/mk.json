@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Паричник во моментов е зафатен",
             "NOTENABLEDTITLE": "Staking не е овозможено",
             "NOTENABLEDINFO": "Staking моментално не е овозможено.",
-            "NOTENABLEDINSTR": "За удел ќе треба да овозможите staking поставување на ставање = 1 во вашата датотека Linda.conf.",
+            "NOTENABLEDINSTR": "За удел ќе треба да овозможите staking поставување на ставање = 1 во вашата датотека metrix.conf.",
             "NOTSTAKINGTITLE": "Паричник не се заглавува",
             "NOTSTAKINGINFO": "Вашиот паричник е моментално заклучен за затегнување.",
             "NOTSTAKINGINSTR": "Можете да почнете да запечатувате со отклучување на вашиот паричник за стекнување",
@@ -69,7 +69,7 @@
             "ADDRESS": "Адреса",
             "ENABLED": "Овозможено",
             "NOTENABLEDTITLE": "Мастровените не се дозволени",
-            "NOTENABLEDINSTR": "За да ја стартувате masternode, ќе треба да ги вклучите masternodes со поставување masternode = 1 и конфигурирање на \"masternodeprivkey\" и \"masternodeaddr\" променливи во вашата Linda.conf датотека.",
+            "NOTENABLEDINSTR": "За да ја стартувате masternode, ќе треба да ги вклучите masternodes со поставување masternode = 1 и конфигурирање на \"masternodeprivkey\" и \"masternodeaddr\" променливи во вашата metrix.conf датотека.",
             "STARTBUTTON": "Стартувај локално",
             "STARTALIASBUTTON": "Започни алијас",
             "STARTALLBUTTON": "Започни ги сите"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Верзија на висина"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Добредојдовте во конзолата Linda Core RPC. Внесете помош за преглед на расположивите команди.",
+                "CONSOLEINFO": "Добредојдовте во конзолата Metrix Core RPC. Внесете помош за преглед на расположивите команди.",
                 "CONSOLEWARNING": "ПРЕДУПРЕДУВАЊЕ: Scammers се активни, им кажува на корисниците да напишат команди тука, крадејќи ја содржината на паричникот. Не користете ја оваа конзола без целосно разбирање на раздвојувањето на командата.",
                 "COMMANDPLACEHODLER": "Внесете команда"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Почетен блок"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Овие команди за поправка не може да се стартуваат кога Linda Core се изведува однадвор",
-                "INFO": "Копчињата подолу ќе го рестартираат Linda Core со опции за командната линија за поправка на паричникот, ги поправаат проблемите со корумпираните датотеки со блокирања или исчезнати / застарени трансакции.",
+                "INFOEXTERNAL": "Овие команди за поправка не може да се стартуваат кога Metrix Core се изведува однадвор",
+                "INFO": "Копчињата подолу ќе го рестартираат Metrix Core со опции за командната линија за поправка на паричникот, ги поправаат проблемите со корумпираните датотеки со блокирања или исчезнати / застарени трансакции.",
                 "SALVAGEBUTTON": "Спасувачки паричник",
                 "SALVAGEINFO": "-salvagewallet: Обид за враќање на приватни клучеви од корумпиран wallet.dat.",
                 "RESCANBUTTON": "Ресетирајте блокчејни датотеки",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Линда Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Биткоин програмери <br/> Copyright © 2011-2012 PPCoin Developers <br/> Авторски права © 2012-2014 НоваКоин програмери <br/> Copyright © 2014-2018 Линда програмери <br/><br/> Ова е експериментален софтвер. <br/> Дистрибуирани според лиценцата за софтвер MIT / X11, видете ја придружната датотека COPYING или http://www.opensource.org/licenses/mit-license.php. <br/><br/> Овој производ вклучува софтвер развиен од OpenSSL проектот за употреба во OpenSSL Toolkit (https://www.openssl.org) и криптографски софтвер напишан од Ерик Јанг (eay@cryptsoft.com) и UPnP софтвер напишан од Томас Бернард.",
+            "ABOUTCORE": "Copyright © 2009-2015 Биткоин програмери <br/> Copyright © 2011-2012 PPCoin Developers <br/> Авторски права © 2012-2014 НоваКоин програмери <br/> Copyright © 2014-2019 Линда програмери <br/><br/> Ова е експериментален софтвер. <br/> Дистрибуирани според лиценцата за софтвер MIT / X11, видете ја придружната датотека COPYING или http://www.opensource.org/licenses/mit-license.php. <br/><br/> Овој производ вклучува софтвер развиен од OpenSSL проектот за употреба во OpenSSL Toolkit (https://www.openssl.org) и криптографски софтвер напишан од Ерик Јанг (eay@cryptsoft.com) и UPnP софтвер напишан од Томас Бернард.",
             "ABOUTALTITUDETAB": "Висина",
-            "ABOUTALTITUDE": "Авторски права © 2018 Линда програмери <br/><br/> Овој софтвер е дистрибуиран под лиценцата GPL-3.0, видете https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE за повеќе информации."
+            "ABOUTALTITUDE": "Авторски права © 2019 Линда програмери <br/><br/> Овој софтвер е дистрибуиран под лиценцата GPL-3.0, видете https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE за повеќе информации."
         },
         "LOCALE": {
             "TITLE": "Одбери јазик"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Внесете ја лозинката за Ваше паричник",
             "UNLOCKSTAKINGONLY": "Отклучете само за стекнување",
-            "CLIENTUPDATETITLE": "Достапна е верзија на Core Linda",
-            "CLIENTUPDATEINFO": "Ажурирање е достапна за Linda Core. Дали сакате да го инсталирате сега?",
+            "CLIENTUPDATETITLE": "Достапна е верзија на Core Metrix",
+            "CLIENTUPDATEINFO": "Ажурирање е достапна за Metrix Core. Дали сакате да го инсталирате сега?",
             "WALLETUPDATETITLE": "Достапно е надградба на надморска височина",
             "WALLETUPDATEINFO": "Достапна е ажурирање за надморска височина. Дали сакате да го преземете сега?",
             "CLIENTUPDATEBUTTON": "Ажурирање",
@@ -259,16 +259,16 @@
             "ENCRYPTTITLE": "Шифрирајте го вашиот паричник",
             "ENCRYPTBUTTON": "Шифрирај",
             "CLIENTSTOPPEDTITLE": "Линда Core престана",
-            "CLIENTSTOPPEDINFO": "Врската е изгубена од Линда Core. Можете да го запрете паричникот или да го стартувате внатрешниот Linda Core.",
+            "CLIENTSTOPPEDINFO": "Врската е изгубена од Линда Core. Можете да го запрете паричникот или да го стартувате внатрешниот Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Излез паричник",
             "CLIENTSTOPPEDBUTTONSTART": "Започнете Линда Core",
             "ENCRYPTEDTITLE": "Шифрирана кошничка",
             "ENCRYPTEDCONTENT": "Сите претходни резервни копии што сте ги направиле од вашата датотека за паричник треба да се заменат со ново генерираната, шифрирана датотека на паричник. Поради безбедносни причини, претходните копии од енкриптираната датотека на паричникот ќе станат бескорисни веднаш штом ќе почнете да го користите новиот, шифриран паричник.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда Core неочекувано застана",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем со Linda Core што ја предизвика да прекине. Препорачливо е да ја проверите вашата датотека debug.log за проблеми.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем со Metrix Core што ја предизвика да прекине. Препорачливо е да ја проверите вашата датотека debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирај го клиентот",
-            "CLIENTINVALIDCONFIGTITLE": "Неважечка Конфигурација на Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашиот Linda.conf има неправилен поставувач на masternode кој ќе предизвика Linda Core да излезе веднаш. Проверете ја оваа датотека."
+            "CLIENTINVALIDCONFIGTITLE": "Неважечка Конфигурација на metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "Помош",
             "COMMANDLINEOPTIONS": "Опции на командната линија...",
-            "CHECKUPDATECORE": "Провери ја Linda Core Update...",
+            "CHECKUPDATECORE": "Провери ја Metrix Core Update...",
             "CHECKUPDATEWALLET": "Провери надградба на надморска височина...",
             "ABOUTCORE": "За Линда Core...",
             "ABOUTALTITUDE": "За надморска височина...",
@@ -338,10 +338,10 @@
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Иницијализирање на Линда Core...",
-        "DOWNLOADCLIENT": "Преземање на Linda Core...",
-        "UPDATEAVAILABLE": "Достапна е верзија на Core Linda",
+        "DOWNLOADCLIENT": "Преземање на Metrix Core...",
+        "UPDATEAVAILABLE": "Достапна е верзија на Core Metrix",
         "SHUTTINGDOWN": "Исклучување на Линда Core...",
-        "RESTARTING": "Рестартирање на Linda Core..."
+        "RESTARTING": "Рестартирање на Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нова сметка креирана успешно",
