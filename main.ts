@@ -36,7 +36,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     center: true,
     minWidth: 800,
-    minHeight: 530,
+    minHeight: 535,
     title: 'Altitude',
     width: width < size.width ? width : size.width,
     height: height < size.height ? height : size.height,

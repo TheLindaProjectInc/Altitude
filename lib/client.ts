@@ -36,7 +36,7 @@ export default class Client {
     // client status
     status: ClientStatus = ClientStatus.INITIALISING;
     // when using hash of unknown daemon assume version
-    readonly assumeClientVersion = '3.4.0.0';
+    readonly assumeClientVersion = '3.3.3.0';
 
     constructor(win) {
         this.win = win;
@@ -186,7 +186,10 @@ export default class Client {
         if (!restart) {
             try {
                 const res: any = await helpers.getRequest("https://raw.githubusercontent.com/thelindaprojectinc/altitude/master/clientBinaries.json");
-                clientBinaries = JSON.parse(res.body);
+                let remoteClientBinaries = JSON.parse(res.body);
+                if (compareVersions(clientBinaries[this.clientName].version, remoteClientBinaries[this.clientName].version) >= 0) {
+                    clientBinaries = remoteClientBinaries
+                }
             } catch (ex) {
                 log.info("Client", "Failed to get remote client binaries, using local");
             }
