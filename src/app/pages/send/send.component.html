@@ -63,7 +63,7 @@
       <span *ngIf="!electron.settings.hideCoinControlFeatures">{{ 'PAGES.SEND.HIDECOINCONTROL' | translate }}</span>
       <span *ngIf="electron.settings.hideCoinControlFeatures">{{ 'PAGES.SEND.SHOWCOINCONTROL' | translate }}</span>
     </button>
-    <button class="btn btn-primary right" (click)="send()">{{ 'PAGES.SEND.SEND' | translate }}</button>
+    <button class="btn btn-default right" (click)="send()">{{ 'PAGES.SEND.SEND' | translate }}</button>
   </div>
 </div>
 
@@ -191,7 +191,7 @@
     </div>
     <div>
       <button class="btn btn-default" (click)="cancelSelectInputsModal()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
-      <button class="btn btn-primary" (click)="doneSelectInputsModal()">
+      <button class="btn btn-default" (click)="doneSelectInputsModal()">
         {{ 'PAGES.SEND.SELECTINPUTSBUTTON' | translate }}
       </button>
     </div>

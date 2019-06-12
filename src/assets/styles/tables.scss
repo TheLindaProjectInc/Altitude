@@ -6,33 +6,39 @@
     width: 100%;
     border-spacing: 0;
     border: .5px solid;
+
     thead {
         th {
             border-bottom: 1px solid;
             padding: 15px 5px;
             border-top: .5px solid;
+
             &:first-child {
                 border-left: 1px solid;
             }
+
             &:last-child {
                 border-right: 1px solid;
             }
         }
     }
+
     td {
         border-bottom: .5px solid;
         padding: 5px;
+
         &.actions {
             text-align: center;
         }
+
         textarea,
         input:not([type]),
-        input[type="email" i],
-        input[type="number" i],
-        input[type="password" i],
-        input[type="tel" i],
-        input[type="url" i],
-        input[type="text" i] {
+        input[type="email"i],
+        input[type="number"i],
+        input[type="password"i],
+        input[type="tel"i],
+        input[type="url"i],
+        input[type="text"i] {
             border: none;
         }
     }
@@ -42,20 +48,30 @@
     text-align: left;
     word-break: break-word;
     margin-bottom: 20px;
+
     th {
         border-bottom: .5px solid;
         padding: 5px;
     }
+
     th:first-child {
         min-width: 110px;
     }
+
     .vinvout {
         padding: 5px;
         display: flex;
         align-items: center;
+
         .badge {
             margin-left: 5px
         }
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 17px;
+        list-style-type: decimal;
     }
 }
 
@@ -67,8 +83,10 @@
 
 .table-tools {
     width: 100%;
+
     .title {
         min-width: 60px;
+
         h4 {
             margin: 1em 0;
         }
@@ -79,13 +97,16 @@
     th {
         cursor: pointer;
     }
+
     .btn-icon {
         height: auto;
         padding-right: 5px;
     }
+
     td:first-child {
         min-width: 80px;
         width: 80px;
+
         label {
             z-index: -1;
         }

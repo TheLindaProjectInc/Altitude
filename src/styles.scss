@@ -10,6 +10,7 @@
 @import "./assets/styles/tables.scss";
 @import "./assets/styles/contextMenu.scss";
 @import "./assets/styles/checkbox.scss";
+
 html,
 body {
     overflow: hidden;
@@ -63,6 +64,7 @@ h1 {
 
 h2 {
     font-size: 1.25em;
+
     .subtitle {
         font-size: .75em
     }
@@ -111,6 +113,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .sidebar-top {
         display: flex;
         flex-direction: column;
@@ -118,40 +121,59 @@ a {
         width: 250px;
         min-width: 250px;
     }
+
     .logo {
         height: 125px;
-        padding-top: 20px;
+        padding-top: 38px;
     }
+
     h3 {
         color: $color-primary;
         font-weight: normal;
         margin: 0;
+        margin-top: 5px;
         font-size: 16px;
     }
+
     .balance-currency {
         font-size: 10px;
     }
+
     ul {
         width: 100%;
         padding: 0;
         list-style: none;
         list-style-image: none;
+
         a {
             color: $font-primary;
             display: block;
             padding: 10px 20px;
             text-decoration: none;
+
             &:hover,
             &:active,
             &.active {
-                background: $background-primary;
-                color: $color-primary;
+                &::before {
+                    content: "";
+                    height: 38px;
+                    width: 4px;
+                    background-color: $color-accent;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    margin-top: -10px;
+                    box-shadow: 2px 0px 10px -1px $color-accent;
+                }
             }
+
             fa-icon {
                 margin-right: 10px;
             }
+
         }
     }
+
     .wallet-sync {
         display: flex;
         flex: 1;
@@ -162,15 +184,19 @@ a {
         align-items: flex-start;
         line-height: 20px;
         width: 100%;
+
         fa-icon {
             margin-right: 5px;
         }
     }
+
     .wallet-status {
         width: 100%;
         padding-bottom: 10px;
+
         fa-icon {
             margin: 5px;
+
             &:first-child {
                 margin-left: 10px;
             }
@@ -194,6 +220,7 @@ a {
     overflow: hidden;
     z-index: 1;
     cursor: pointer;
+
     .account-inner {
         width: 100%;
         float: left;
@@ -204,14 +231,17 @@ a {
         justify-content: space-between;
         align-items: center;
     }
+
     .account-identicon {
         padding-right: 15px;
     }
+
     .account-name {
         display: flex;
         align-items: center;
         padding: 10px;
         padding-bottom: 0;
+
         h5 {
             padding: 0 10px;
             margin: 0;
@@ -220,16 +250,19 @@ a {
             text-transform: uppercase;
         }
     }
+
     .account-balance {
         padding: 0 10px;
         margin: 0px;
         color: $color-primary;
         font-size: 16px;
         line-height: 1.8;
+
         span {
             font-size: 12px;
         }
     }
+
     .account-address {
         padding: 10px;
         padding-top: 0;
@@ -238,6 +271,7 @@ a {
         font-weight: normal;
         line-height: 1.8;
     }
+
     .wave {
         height: 100%;
         width: 100%;
@@ -245,6 +279,7 @@ a {
         background: lighten($color: $background-primary, $amount: 10%);
         z-index: -1;
     }
+
     .wave:before,
     .wave:after {
         content: "";
@@ -257,11 +292,12 @@ a {
         background: -o-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
         background: -ms-linear-gradient(top, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
         background: linear-gradient(to bottom, lighten($color: $background-primary, $amount: 20%) 0%, rgba(lighten($color: $background-primary, $amount: 35%), 0.3) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c10e1a', endColorstr='#f1404c', GradientType=0);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c10e1a', endColorstr='#f1404c', GradientType=0);
         -webkit-border-radius: 50% 50%;
         -moz-border-radius: 50% 50%;
         border-radius: 50% 50%;
     }
+
     .wave:after {
         height: 200%;
         width: 100%;
@@ -269,6 +305,7 @@ a {
         top: 20%;
         opacity: 0.8;
     }
+
     .wave:before {
         height: 360px;
         width: 360px;
@@ -280,6 +317,7 @@ a {
 .account-identicon {
     display: flex;
     justify-content: flex-end;
+
     canvas {
         background: $background-primary;
         border-radius: 99px;
@@ -297,31 +335,38 @@ a {
 .transactions {
     width: 100%;
     padding-bottom: 10px;
+
     .transaction {
         height: 92px;
         display: flex;
         align-items: center;
         border-bottom: 1px solid $background-primary;
         position: relative;
+
         .icon {
             padding: 15px;
         }
+
         .detail {
             flex: 1;
             padding: 10px 0;
         }
+
         .value {
             padding: 10px;
             padding-left: 0;
             text-align: right;
+
             .small {
                 font-size: 12px;
             }
         }
+
         &.confirmed {
             background: $background-accent;
         }
     }
+
     .progress {
         position: absolute;
         left: 0;
@@ -329,6 +374,7 @@ a {
         top: 0;
         bottom: 0;
         z-index: -1;
+
         &.unconfirmed {
             transition: right 2s;
             background: -webkit-linear-gradient(left, $background-accent 30%, lighten($color: $background-accent, $amount: 10%) 80%, $background-accent 100%) repeat;
@@ -338,20 +384,24 @@ a {
             -webkit-animation-iteration-count: infinite;
             -webkit-animation-timing-function: linear;
         }
+
         &.confirmed {
             background: $background-accent;
         }
     }
+
     tr {
         background: $background-accent;
         -webkit-transition: background-image 1s ease-in-out;
         transition: background-image 1s ease-in-out;
     }
+
     h5 {
         padding: 0 10px;
         margin: 0px;
         line-height: 1.8;
     }
+
     h6 {
         padding: 0 10px;
         margin: 0px;
@@ -365,6 +415,7 @@ a {
     0% {
         background-position: left bottom;
     }
+
     100% {
         background-position: right bottom;
     }
@@ -377,35 +428,44 @@ a {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+
     .account-identicon {
         margin-right: 20px;
+
         canvas {
             background: $background-accent !important;
         }
     }
+
     .account-name {
         display: flex;
         align-items: center;
+
         fa-icon {
             font-size: 24px;
         }
+
         input {
             background: none;
             border: none;
             color: white;
             margin-left: 10px;
             font-size: 24px;
+
             &:focus {
                 outline: none;
             }
         }
     }
+
     h2,
     h4 {
         margin: 5px 0;
     }
+
     h2 {
         color: $color-primary;
+
         span {
             font-size: 14px
         }
@@ -423,6 +483,7 @@ a {
 .qrcode-wrapper {
     display: flex;
     justify-content: center;
+
     #qrcode {
         padding: 10px;
         background: white;
@@ -435,8 +496,9 @@ a {
 text-input {
     flex: 1;
     display: flex;
+
     input:not([type]),
-    input[type="text" i] {
+    input[type="text"i] {
         flex: 1;
     }
 }
@@ -444,6 +506,7 @@ text-input {
 text-area {
     flex: 1;
     display: flex;
+
     textarea {
         flex: 1;
     }
@@ -451,21 +514,23 @@ text-area {
 
 textarea,
 input:not([type]),
-input[type="email" i],
-input[type="number" i],
-input[type="password" i],
-input[type="tel" i],
-input[type="url" i],
-input[type="text" i] {
+input[type="email"i],
+input[type="number"i],
+input[type="password"i],
+input[type="tel"i],
+input[type="url"i],
+input[type="text"i] {
     border: 1px solid white;
     border-radius: 99px;
     padding: 10px 20px;
     color: white;
     background: none;
+
     &:focus,
     &:active {
         outline: none;
     }
+
     &[disabled] {
         background: rgba(0, 0, 0, 0.3);
         color: rgba(255, 255, 255, 0.3);
@@ -478,17 +543,19 @@ input[type="text" i] {
     display: flex;
     align-items: center;
     padding: 5px;
+
     textarea,
     input:not([type]),
-    input[type="email" i],
-    input[type="number" i],
-    input[type="password" i],
-    input[type="tel" i],
-    input[type="url" i],
-    input[type="text" i] {
+    input[type="email"i],
+    input[type="number"i],
+    input[type="password"i],
+    input[type="tel"i],
+    input[type="url"i],
+    input[type="text"i] {
         flex: 1;
         margin-left: 5px;
     }
+
     span {
         min-width: 80px;
     }
@@ -503,13 +570,14 @@ input[type="text" i] {
     right: 0;
     padding: 10px;
     background: $background-primary;
+
     input:not([type]),
-    input[type="email" i],
-    input[type="number" i],
-    input[type="password" i],
-    input[type="tel" i],
-    input[type="url" i],
-    input[type="text" i] {
+    input[type="email"i],
+    input[type="number"i],
+    input[type="password"i],
+    input[type="tel"i],
+    input[type="url"i],
+    input[type="text"i] {
         flex: 1;
     }
 }
@@ -525,6 +593,7 @@ input[type="text" i] {
     padding: 10px;
     margin-bottom: 5px;
     padding-top: 35px;
+
     .close {
         position: absolute;
         right: 0;
@@ -537,6 +606,7 @@ input[type="text" i] {
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 50px;
+
     h4 {
         margin-top: 1em;
     }
@@ -546,17 +616,21 @@ input[type="text" i] {
     table {
         border-spacing: 0;
         width: 100%;
+
         th {
             background: $background-primary;
             padding: 5px;
         }
+
         td {
             padding: 5px;
             text-align: center;
+
             fa-icon {
                 margin-left: -10px;
             }
         }
+
         tbody {
             td:nth-child(4) {
                 font-size: 12px
@@ -570,6 +644,7 @@ input[type="text" i] {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px;
+
     p {
         margin: 5px
     }
@@ -583,6 +658,7 @@ input[type="text" i] {
 
 .send-summary {
     text-align: right;
+
     h5:first-child {
         margin-top: 0;
     }
@@ -597,6 +673,7 @@ input[type="text" i] {
 .information-table {
     margin-top: 1em;
     text-align: left;
+
     h4 {
         margin-top: 10px;
         margin-bottom: 5px;
@@ -607,18 +684,22 @@ input[type="text" i] {
 .rpc-commands {
     margin-bottom: 70px;
     font-family: monospace;
+
     fa-icon {
         margin-right: 10px;
     }
+
     .line {
         display: flex;
         padding: 3px 0;
     }
+
     pre {
         white-space: pre-wrap;
         word-break: break-word;
         margin: 0;
     }
+
     .timestamp {
         min-width: 90px;
     }
@@ -662,8 +743,14 @@ input[type="text" i] {
     font-size: 12px;
     padding: 2px 4px;
     text-align: center;
+
     &.primary {
         background: $color-primary;
+        color: inherit !important;
+    }
+
+    &.accent {
+        background: $color-accent;
         color: inherit !important;
     }
 }
@@ -672,6 +759,7 @@ input[type="text" i] {
     padding: 10px;
     border-radius: 5px;
     background: $color-danger;
+
     h1 {
         margin: 0;
     }
