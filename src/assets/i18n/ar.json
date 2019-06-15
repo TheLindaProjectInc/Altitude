@@ -49,7 +49,7 @@
             "STAKINGTITLE": "المحفظة مسجلة حاليًا",
             "NOTENABLEDTITLE": "التوقيع غير ممكن",
             "NOTENABLEDINFO": "التوقيع المساحي غير ممكن حاليًا.",
-            "NOTENABLEDINSTR": "للحساب ، ستحتاج إلى تمكين staking setting staking = 1 في ملف Linda.conf الخاص بك.",
+            "NOTENABLEDINSTR": "للحساب ، ستحتاج إلى تمكين staking setting staking = 1 في ملف metrix.conf الخاص بك.",
             "NOTSTAKINGTITLE": "المحفظة لا staking",
             "NOTSTAKINGINFO": "تم قفل محفظتك حاليًا للتوقيع.",
             "NOTSTAKINGINSTR": "يمكنك البدء في التوقيع المساحي عن طريق إلغاء قفل محفظتك",
@@ -69,7 +69,7 @@
             "ADDRESS": "عنوان",
             "ENABLED": "تمكين",
             "NOTENABLEDTITLE": "Masternodes غير ممكّن",
-            "NOTENABLEDINSTR": "لتشغيل masternode ، ستحتاج إلى تمكين masternodes عن طريق تعيين masternode = 1 وتكوين متغيري masternodeprivkey و masternodeaddr في ملف Linda.conf الخاص بك.",
+            "NOTENABLEDINSTR": "لتشغيل masternode ، ستحتاج إلى تمكين masternodes عن طريق تعيين masternode = 1 وتكوين متغيري masternodeprivkey و masternodeaddr في ملف metrix.conf الخاص بك.",
             "STARTBUTTON": "البدء المحلية",
             "STARTALIASBUTTON": "ابدأ الاسم المستعار",
             "STARTALLBUTTON": "ابدأ الكل"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "إصدار الارتفاع"
             },
             "DEBUG": {
-                "CONSOLEINFO": "مرحبًا بك في وحدة تحكم Linda Core RPC. اكتب التعليمات للحصول على نظرة عامة على الأوامر المتوفرة.",
+                "CONSOLEINFO": "مرحبًا بك في وحدة تحكم Metrix Core RPC. اكتب التعليمات للحصول على نظرة عامة على الأوامر المتوفرة.",
                 "CONSOLEWARNING": "تحذير: المخادعون نشطون ، ويطلبون من المستخدمين كتابة الأوامر هنا ، وسرقة محتويات محفظتهم. لا تستخدم وحدة التحكم هذه بدون فهم تباين أمر ما تمامًا.",
                 "COMMANDPLACEHODLER": "دخول القيادة"
             },
@@ -121,7 +121,7 @@
                 "HEIGHT": "بدء بلوك"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "لا يمكن تشغيل أوامر الإصلاح هذه عند تشغيل Linda Core خارجيًا",
+                "INFOEXTERNAL": "لا يمكن تشغيل أوامر الإصلاح هذه عند تشغيل Metrix Core خارجيًا",
                 "INFO": "ستقوم الأزرار الموجودة أدناه بإعادة تشغيل ليندا كور مع خيارات سطر الأوامر لإصلاح المحفظة ، وإصلاح المشكلات المتعلقة بملفات blockchain الفاسدة أو المعاملات المفقودة / البالية.",
                 "SALVAGEBUTTON": "محفظة الإنقاذ",
                 "SALVAGEINFO": "-salvagewallet: محاولة استرداد مفاتيح خاصة من wallet.dat فاسدة.",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "ليندا كور",
-            "ABOUTCORE": "حقوق الطبع والنشر © 2009-2015 مطوري Bitcoin <br/> حقوق الطبع والنشر © 2011-2012 PPCoin Developers <br/> حقوق الطبع والنشر © 2012-2014 مطوري NovaCoin <br/> حقوق الطبع والنشر © 2014-2018 مطوري ليندا <br/><br/> هذا هو برنامج تجريبي. <br/> موزعة تحت رخصة برنامج MIT / X11 ، انظر الملف المرفق COPYING أو http://www.opensource.org/licenses/mit-license.php. <br/><br/> يتضمن هذا المنتج برنامجًا تم تطويره بواسطة OpenSSL Project للاستخدام في مجموعة أدوات OpenSSL (https://www.openssl.org) وبرنامج التشفير الذي كتبه Eric Young (eay@cryptsoft.com) وبرمجيات UPnP التي كتبها توماس برنار.",
+            "ABOUTCORE": "حقوق الطبع والنشر © 2009-2015 مطوري Bitcoin <br/> حقوق الطبع والنشر © 2011-2012 PPCoin Developers <br/> حقوق الطبع والنشر © 2012-2014 مطوري NovaCoin <br/> حقوق الطبع والنشر © 2014-2019 مطوري ليندا <br/><br/> هذا هو برنامج تجريبي. <br/> موزعة تحت رخصة برنامج MIT / X11 ، انظر الملف المرفق COPYING أو http://www.opensource.org/licenses/mit-license.php. <br/><br/> يتضمن هذا المنتج برنامجًا تم تطويره بواسطة OpenSSL Project للاستخدام في مجموعة أدوات OpenSSL (https://www.openssl.org) وبرنامج التشفير الذي كتبه Eric Young (eay@cryptsoft.com) وبرمجيات UPnP التي كتبها توماس برنار.",
             "ABOUTALTITUDETAB": "ارتفاع",
-            "ABOUTALTITUDE": "حقوق الطبع والنشر © 2018 مطوري ليندا <br/><br/> يتم توزيع هذا البرنامج بموجب ترخيص GPL-3.0 ، راجع https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE لمزيد من المعلومات."
+            "ABOUTALTITUDE": "حقوق الطبع والنشر © 2019 مطوري ليندا <br/><br/> يتم توزيع هذا البرنامج بموجب ترخيص GPL-3.0 ، راجع https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE لمزيد من المعلومات."
         },
         "LOCALE": {
             "TITLE": "اختار اللغة"
@@ -245,7 +245,7 @@
             "ENTERPASSPHRASETITLE": "أدخل عبارة مرور المحفظة الخاصة بك",
             "UNLOCKSTAKINGONLY": "فتح عن التوقيع المساحي فقط",
             "CLIENTUPDATETITLE": "تحديث ليندا الأساسية المتاحة",
-            "CLIENTUPDATEINFO": "يتوفر تحديث لـ Linda Core. هل ترغب في تثبيته الان؟",
+            "CLIENTUPDATEINFO": "يتوفر تحديث لـ Metrix Core. هل ترغب في تثبيته الان؟",
             "WALLETUPDATETITLE": "تحديث الارتفاع متاح",
             "WALLETUPDATEINFO": "يتوفر تحديث للارتفاع. هل ترغب في تنزيله الآن؟",
             "CLIENTUPDATEBUTTON": "تحديث",
@@ -259,7 +259,7 @@
             "ENCRYPTTITLE": "تشفير محفظتك",
             "ENCRYPTBUTTON": "تشفير",
             "CLIENTSTOPPEDTITLE": "ليندا كور توقف",
-            "CLIENTSTOPPEDINFO": "تم فقد الاتصال بـ Linda Core. يمكنك إيقاف المحفظة أو بدء ليندا كور الداخلي.",
+            "CLIENTSTOPPEDINFO": "تم فقد الاتصال بـ Metrix Core. يمكنك إيقاف المحفظة أو بدء ليندا كور الداخلي.",
             "CLIENTSTOPPEDBUTTONEXIT": "اخرج من المحفظة",
             "CLIENTSTOPPEDBUTTONSTART": "ابدأ ليندا كور",
             "ENCRYPTEDTITLE": "محفظة مشفرة",
@@ -267,8 +267,8 @@
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ليندا الأساسية توقفت بشكل غير متوقع",
             "CLIENTCLOSEDUNEXPECTEDINFO": "كانت هناك مشكلة مع ليندا كور التي تسببت في إنهاؤها. من المستحسن التحقق من ملف debug.log الخاص بك للتعرف على المشكلات.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "إعادة تشغيل العميل",
-            "CLIENTINVALIDCONFIGTITLE": "تكوين Linda.conf غير صالح",
-            "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج Linda.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Linda Core على الفور. يرجى التحقق من هذا الملف."
+            "CLIENTINVALIDCONFIGTITLE": "تكوين metrix.conf غير صالح",
+            "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج metrix.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Metrix Core على الفور. يرجى التحقق من هذا الملف."
         },
         "ADDRESSBOOK": {
             "TITLE": "دليل العناوين",

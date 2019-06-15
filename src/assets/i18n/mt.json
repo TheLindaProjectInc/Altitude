@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Kartiera bħalissa qed timxi",
             "NOTENABLEDTITLE": "Staking mhux attivat",
             "NOTENABLEDINFO": "L-istaking mhux attwalment attivat.",
-            "NOTENABLEDINSTR": "Biex tilqa 'hemm bżonn li tkun tista' tħalli l-istaking setting staking = 1 fil-fajl Linda.conf tiegħek.",
+            "NOTENABLEDINSTR": "Biex tilqa 'hemm bżonn li tkun tista' tħalli l-istaking setting staking = 1 fil-fajl metrix.conf tiegħek.",
             "NOTSTAKINGTITLE": "Kartiera mhux staking",
             "NOTSTAKINGINFO": "Il-kartiera tiegħek bħalissa hija maqfula għall-istaking.",
             "NOTSTAKINGINSTR": "Tista 'tibda tħares billi tinfetaħ il-kartiera tiegħek biex issajjar",
@@ -69,7 +69,7 @@
             "ADDRESS": "Indirizz",
             "ENABLED": "Habilita",
             "NOTENABLEDTITLE": "Masternodes mhux attivat",
-            "NOTENABLEDINSTR": "Biex tmexxi masternode, ikollok bzonn li tippermetti masternodes billi tissettja masternode = 1 u tikkonfigura l-varjabbli 'masternodeprivkey' u 'masternodeaddr' fil-fajl Linda.conf tiegħek.",
+            "NOTENABLEDINSTR": "Biex tmexxi masternode, ikollok bzonn li tippermetti masternodes billi tissettja masternode = 1 u tikkonfigura l-varjabbli 'masternodeprivkey' u 'masternodeaddr' fil-fajl metrix.conf tiegħek.",
             "STARTBUTTON": "Bidu Lokali",
             "STARTALIASBUTTON": "Ibda Alias",
             "STARTALLBUTTON": "Bidu Kollox"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Verżjoni tal-altitudni"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Merħba fil-console Linda Core RPC. Tip jgħinu għal ħarsa ġenerali tal-kmandi disponibbli.",
+                "CONSOLEINFO": "Merħba fil-console Metrix Core RPC. Tip jgħinu għal ħarsa ġenerali tal-kmandi disponibbli.",
                 "CONSOLEWARNING": "TWISSIJA: L-iskammaturi kienu attivi, u għarrfu lill-utenti biex jikkmandaw it-tip hawn, billi qabdu l-kontenuti tal-kartiera tagħhom. Tużax dan il-console mingħajr fehim sħiħ tar-ramifikazzjoni ta 'kmand.",
                 "COMMANDPLACEHODLER": "Daħħal Kmand"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Bidu tal-Blokk"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Dawn il-kmandi tat-tiswija ma jistgħux jitmexxew meta Linda Core titħaddem esternament",
-                "INFO": "Il-buttuni hawn taħt se jerġgħu jibdew Linda Core b'għażliet tal-linja tal-kmand biex isewwu l-kartiera, jiffissaw kwistjonijiet b'fajls ta 'blockchain korrotti jew tranżazzjonijiet neqsin / skaduti.",
+                "INFOEXTERNAL": "Dawn il-kmandi tat-tiswija ma jistgħux jitmexxew meta Metrix Core titħaddem esternament",
+                "INFO": "Il-buttuni hawn taħt se jerġgħu jibdew Metrix Core b'għażliet tal-linja tal-kmand biex isewwu l-kartiera, jiffissaw kwistjonijiet b'fajls ta 'blockchain korrotti jew tranżazzjonijiet neqsin / skaduti.",
                 "SALVAGEBUTTON": "Kartiera ta 'Salvataġġ",
                 "SALVAGEINFO": "-salvagewallet: Attentat biex tirkupra ċwievet privati minn wallet.dat korrotta.",
                 "RESCANBUTTON": "Aċċekkja fajls blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 L-iżviluppaturi ta 'Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 L-iżviluppaturi NovaCoin <br/> Copyright © 2014-2018 L-iżviluppaturi Linda <br/><br/> Dan huwa software sperimentali. <br/> Imqassam taħt il-liċenzja tas-softwer MIT / X11, ara l-fajl li jakkumpanja COPYING jew http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dan il-prodott jinkludi softwer żviluppat mill-Proġett OpenSSL għall-użu fil-OpenSSL Toolkit (https://www.openssl.org) u softwer kriptografiku miktub minn Eric Young (eay@cryptsoft.com) u softwer UPnP miktub minn Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 L-iżviluppaturi ta 'Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 L-iżviluppaturi NovaCoin <br/> Copyright © 2014-2019 L-iżviluppaturi Metrix <br/><br/> Dan huwa software sperimentali. <br/> Imqassam taħt il-liċenzja tas-softwer MIT / X11, ara l-fajl li jakkumpanja COPYING jew http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dan il-prodott jinkludi softwer żviluppat mill-Proġett OpenSSL għall-użu fil-OpenSSL Toolkit (https://www.openssl.org) u softwer kriptografiku miktub minn Eric Young (eay@cryptsoft.com) u softwer UPnP miktub minn Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitudni",
-            "ABOUTALTITUDE": "Copyright © 2018 L-iżviluppaturi Linda <br/><br/> Dan is-software huwa mqassam taħt il-liċenzja GPL-3.0, ara https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE għal aktar informazzjoni."
+            "ABOUTALTITUDE": "Copyright © 2019 L-iżviluppaturi Metrix <br/><br/> Dan is-software huwa mqassam taħt il-liċenzja GPL-3.0, ara https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE għal aktar informazzjoni."
         },
         "LOCALE": {
             "TITLE": "Agħżel Lingwa"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Daħħal il-Kowd Passphrase tiegħek",
             "UNLOCKSTAKINGONLY": "Niftħu għal staking biss",
-            "CLIENTUPDATETITLE": "Aġġornament ta 'Core Linda",
-            "CLIENTUPDATEINFO": "Aġġornament huwa disponibbli għal Linda Core. Trid tinstallaha issa?",
+            "CLIENTUPDATETITLE": "Aġġornament ta 'Core Metrix",
+            "CLIENTUPDATEINFO": "Aġġornament huwa disponibbli għal Metrix Core. Trid tinstallaha issa?",
             "WALLETUPDATETITLE": "Aġġornament ta 'Altitudni Disponibbli",
             "WALLETUPDATEINFO": "Aġġornament huwa disponibbli għall-Altitudni. Trid tniżżel issa?",
             "CLIENTUPDATEBUTTON": "Aġġornament",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Daħħal il-pass tal-bidla",
             "ENCRYPTTITLE": "Iċċekkja l-kartiera tiegħek",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core waqfet",
-            "CLIENTSTOPPEDINFO": "Intilfet il-konnessjoni lil Linda Core. Tista 'twaqqaf il-kartiera jew tibda l-intern Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core waqfet",
+            "CLIENTSTOPPEDINFO": "Intilfet il-konnessjoni lil Metrix Core. Tista 'twaqqaf il-kartiera jew tibda l-intern Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Kartiera tal-Ħruġ",
-            "CLIENTSTOPPEDBUTTONSTART": "Ibda Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Ibda Metrix Core",
             "ENCRYPTEDTITLE": "Kartiera kriptata",
             "ENCRYPTEDCONTENT": "Kwalunkwe backups preċedenti li għamilt mill-fajl tal-portafoll tiegħek għandhom jiġu sostitwiti bil-fajl tal-kartiera ġġenerat ġdid, kriptat. Għal raġunijiet ta 'sigurtà, backups ta' qabel tal-fajl tal-kartiera mhux enċiklat se jsiru inutli malli tibda tuża l-kartiera ġdida kriptata.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core waqfet bla mistenni",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Linda Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core waqfet bla mistenni",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Metrix Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
-            "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni Linda.conf invalida",
-            "CLIENTINVALIDCONFIGINFO": "Il-Linda.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Linda Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl."
+            "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni metrix.conf invalida",
+            "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-indirizzi",
-            "SENDINGINFO": "Dawn huma l-indirizz iffrankat tiegħek Linda biex jintbagħtu l-pagamenti. Dejjem iċċekkja l-ammont u tirċievi l-indirizz qabel ma tibgħat il-muniti",
-            "RECEIVINGINFO": "Dawn huma l-indirizz iffrankat tiegħek Linda biex jirċievu pagamenti.",
+            "SENDINGINFO": "Dawn huma l-indirizz iffrankat tiegħek Metrix biex jintbagħtu l-pagamenti. Dejjem iċċekkja l-ammont u tirċievi l-indirizz qabel ma tibgħat il-muniti",
+            "RECEIVINGINFO": "Dawn huma l-indirizz iffrankat tiegħek Metrix biex jirċievu pagamenti.",
             "BUTTONSELECT": "Agħżel",
             "TABLECOLUMNS_LABEL": "Tikketta",
             "TABLECOLUMNS_ADDRESS": "Indirizz",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Messaġġ Sinjal...",
             "VERIFYMESSAGE": "Ivverifika l-messaġġ...",
             "LOCALE": "Lingwa...",
-            "RESTARTCORE": "Erġa 'ibda Linda Core",
+            "RESTARTCORE": "Erġa 'ibda Metrix Core",
             "EXIT": "Ħruġ",
             "OPTIONS": "Għażliet..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Għajnuna",
             "COMMANDLINEOPTIONS": "Għażliet tal-Linja tal-Kmand...",
-            "CHECKUPDATECORE": "Iċċekkja għal Linda Core Update...",
+            "CHECKUPDATECORE": "Iċċekkja għal Metrix Core Update...",
             "CHECKUPDATEWALLET": "Iċċekkja għal Aġġornament ta 'Altitudni...",
-            "ABOUTCORE": "Dwar Linda Core...",
+            "ABOUTCORE": "Dwar Metrix Core...",
             "ABOUTALTITUDE": "Dwar Altitudni...",
             "DISCORD": "Discord...",
             "ISSUE": "Irrapporta Kwistjoni..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "kollox sew",
         "CLEARALLBUTTON": "Żbarazza kollox",
         "ENTERACCOUNTLABEL": "Daħħal tikketta għal dan l-indirizz",
-        "ENTERADDRESSLABEL": "Daħħal l-indirizz ta 'Linda",
+        "ENTERADDRESSLABEL": "Daħħal l-indirizz ta 'Metrix",
         "AGO": "ilu",
         "SORTBY": "Irranġa skond",
         "SEARCH": "Fittex",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Aċċetta"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inizjalment Linda Core...",
-        "DOWNLOADCLIENT": "Tniżżil Linda Core...",
-        "UPDATEAVAILABLE": "Aġġornament ta 'Core Linda",
-        "SHUTTINGDOWN": "Inwaqqfu Linda Core...",
-        "RESTARTING": "Bidu mill-ġdid ta 'Linda Core..."
+        "INITIALISING": "Inizjalment Metrix Core...",
+        "DOWNLOADCLIENT": "Tniżżil Metrix Core...",
+        "UPDATEAVAILABLE": "Aġġornament ta 'Core Metrix",
+        "SHUTTINGDOWN": "Inwaqqfu Metrix Core...",
+        "RESTARTING": "Bidu mill-ġdid ta 'Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kont ġdid maħluq b'suċċess",

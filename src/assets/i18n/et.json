@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Rahakott on praeguses seisus",
             "NOTENABLEDTITLE": "Staking pole lubatud",
             "NOTENABLEDINFO": "Staking pole praegu lubatud.",
-            "NOTENABLEDINSTR": "Panuseks peate lubama Linda.conf-failis staking set staking = 1.",
+            "NOTENABLEDINSTR": "Panuseks peate lubama metrix.conf-failis staking set staking = 1.",
             "NOTSTAKINGTITLE": "Rahakott ei paista",
             "NOTSTAKINGINFO": "Teie rahakott on praegu lukustatud postitamiseks.",
             "NOTSTAKINGINSTR": "Saate alustada stakeerimist, kui vabastate oma rahakotti stakeerimiseks",
@@ -69,7 +69,7 @@
             "ADDRESS": "Aadress",
             "ENABLED": "Lubatud",
             "NOTENABLEDTITLE": "Masternodes pole lubatud",
-            "NOTENABLEDINSTR": "Masternode käivitamiseks peate lubama masternodid, seades masternode = 1 ja konfigureerides \"masternodeprivkey\" ja \"masternodeaddr\" muutujad oma Linda.conf failis.",
+            "NOTENABLEDINSTR": "Masternode käivitamiseks peate lubama masternodid, seades masternode = 1 ja konfigureerides \"masternodeprivkey\" ja \"masternodeaddr\" muutujad oma metrix.conf failis.",
             "STARTBUTTON": "Alusta kohalikku",
             "STARTALIASBUTTON": "Alusta nimega",
             "STARTALLBUTTON": "Alusta kõik"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude versioon"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Tere tulemast Linda Core RPC konsooli. Tippige abi saadaolevate käskude ülevaade.",
+                "CONSOLEINFO": "Tere tulemast Metrix Core RPC konsooli. Tippige abi saadaolevate käskude ülevaade.",
                 "CONSOLEWARNING": "HOIATUS: petturid on olnud aktiivsed, öeldes, et kasutajad kirjutavad siin käske, varastades nende rahakoti sisu. Ärge kasutage seda konsooli, ilma et oleksite täielikult aru saanud käsu ramifikatsioonist.",
                 "COMMANDPLACEHODLER": "Sisestage käsk"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Alustades plokki"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Neid remondikäske ei saa käivitada, kui Linda Core'i käivitatakse väljapoole",
-                "INFO": "Allpool olevad nupud taaskäivitavad Linda Core'i käsurea valikud rahakoti parandamiseks, probleemide lahendamiseks korrumpeerunud plokkide failidega või puuduvate / vananenud tehingutega.",
+                "INFOEXTERNAL": "Neid remondikäske ei saa käivitada, kui Metrix Core'i käivitatakse väljapoole",
+                "INFO": "Allpool olevad nupud taaskäivitavad Metrix Core'i käsurea valikud rahakoti parandamiseks, probleemide lahendamiseks korrumpeerunud plokkide failidega või puuduvate / vananenud tehingutega.",
                 "SALVAGEBUTTON": "Salvage rahakott",
                 "SALVAGEINFO": "-salvagewallet: proovib tagasi privaatseid võtmeid rikutud wallet.dat.",
                 "RESCANBUTTON": "Uurige plokkkanali faile uuesti",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoini arendajad <br/> Copyright © 2011-2012 PPCoin Arendajad <br/> Autoriõigus © 2012-2014 The NovaCoin arendajad <br/> Copyright © 2014-2018 Linda arendajad <br/><br/> See on eksperimentaalne tarkvara. <br/> MIT / X11 tarkvaralitsentsi alusel levitatav saatedokument COPYING või http://www.opensource.org/licenses/mit-license.php. <br/><br/> See toode sisaldab tarkvara, mille OpenSSL Project on välja töötanud OpenSSL-i tööriistakomplekti (https://www.openssl.org) ja krüptograafilise tarkvara jaoks, mille on kirjutanud Eric Young (eay@cryptsoft.com) ja Thomas Bernardi poolt kirjutatud UPnP-tarkvara.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoini arendajad <br/> Copyright © 2011-2012 PPCoin Arendajad <br/> Autoriõigus © 2012-2014 The NovaCoin arendajad <br/> Copyright © 2014-2019 Metrix arendajad <br/><br/> See on eksperimentaalne tarkvara. <br/> MIT / X11 tarkvaralitsentsi alusel levitatav saatedokument COPYING või http://www.opensource.org/licenses/mit-license.php. <br/><br/> See toode sisaldab tarkvara, mille OpenSSL Project on välja töötanud OpenSSL-i tööriistakomplekti (https://www.openssl.org) ja krüptograafilise tarkvara jaoks, mille on kirjutanud Eric Young (eay@cryptsoft.com) ja Thomas Bernardi poolt kirjutatud UPnP-tarkvara.",
             "ABOUTALTITUDETAB": "Kõrgus",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda arendajad <br/><br/> See tarkvara levitatakse GPL-3.0 litsentsi all, vaadake lisateavet aadressilt https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix arendajad <br/><br/> See tarkvara levitatakse GPL-3.0 litsentsi all, vaadake lisateavet aadressilt https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Vali keel"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sisestage oma Rahakoti salasõna",
             "UNLOCKSTAKINGONLY": "Ava ainult stackimiseks",
-            "CLIENTUPDATETITLE": "Linda Core'i värskendus saadaval",
-            "CLIENTUPDATEINFO": "Linda Core'ile on saadaval värskendus. Kas soovite selle nüüd installida?",
+            "CLIENTUPDATETITLE": "Metrix Core'i värskendus saadaval",
+            "CLIENTUPDATEINFO": "Metrix Core'ile on saadaval värskendus. Kas soovite selle nüüd installida?",
             "WALLETUPDATETITLE": "Saadaval on kõrguse värskendus",
             "WALLETUPDATEINFO": "Altitude on saadaval värskendus. Kas soovite selle kohe alla laadida?",
             "CLIENTUPDATEBUTTON": "Uuenda",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Muuda paroolifraasi",
             "ENCRYPTTITLE": "Rahakoti krüpteerimine",
             "ENCRYPTBUTTON": "Krüpteeri",
-            "CLIENTSTOPPEDTITLE": "Linda tuum katkestas",
-            "CLIENTSTOPPEDINFO": "Connection on kaotatud Linda Core'ile. Sa võid rahakoti peatada või sisemuse Linda Core käivitada.",
+            "CLIENTSTOPPEDTITLE": "Metrix tuum katkestas",
+            "CLIENTSTOPPEDINFO": "Connection on kaotatud Metrix Core'ile. Sa võid rahakoti peatada või sisemuse Metrix Core käivitada.",
             "CLIENTSTOPPEDBUTTONEXIT": "Välju rahakott",
-            "CLIENTSTOPPEDBUTTONSTART": "Start Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Start Metrix Core",
             "ENCRYPTEDTITLE": "Rahakott krüpteeritud",
             "ENCRYPTEDCONTENT": "Kõik varasemad varukoopiad, mille olete oma rahakoti faili teinud, tuleks asendada hiljuti loodud krüpteeritud rahakotiga. Turvakaalutlustel muutub krüptitud rahakoti faili varasemad varukoopiad kohe, kui hakkate kasutama uut krüptitud rahakotti.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda tuum katkestas ootamatult",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix tuum katkestas ootamatult",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Taaskäivitage klient",
-            "CLIENTINVALIDCONFIGTITLE": "Kehtetu Linda.conf konfiguratsioon",
-            "CLIENTINVALIDCONFIGINFO": "Teie Linda.confil on kehtetu masternode seadistus, mis põhjustab Linda Core'i väljumise kohe. Palun kontrollige seda faili."
+            "CLIENTINVALIDCONFIGTITLE": "Kehtetu metrix.conf konfiguratsioon",
+            "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili."
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
-            "SENDINGINFO": "Need on teie salvestatud Linda aadress maksete saatmiseks. Enne müntide saatmist kontrollige alati summa ja aadressi",
-            "RECEIVINGINFO": "Need on teie salvestatud Linda aadress maksete saamiseks.",
+            "SENDINGINFO": "Need on teie salvestatud Metrix aadress maksete saatmiseks. Enne müntide saatmist kontrollige alati summa ja aadressi",
+            "RECEIVINGINFO": "Need on teie salvestatud Metrix aadress maksete saamiseks.",
             "BUTTONSELECT": "Vali",
             "TABLECOLUMNS_LABEL": "Silt",
             "TABLECOLUMNS_ADDRESS": "Aadress",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Logi sõnum...",
             "VERIFYMESSAGE": "Kinnitage sõnumit...",
             "LOCALE": "Keel...",
-            "RESTARTCORE": "Taaskäivita Linda Core",
+            "RESTARTCORE": "Taaskäivita Metrix Core",
             "EXIT": "Välju",
             "OPTIONS": "Valikud..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Abi",
             "COMMANDLINEOPTIONS": "Käsurea valikud...",
-            "CHECKUPDATECORE": "Kontrollige Linda Core'i värskendust...",
+            "CHECKUPDATECORE": "Kontrollige Metrix Core'i värskendust...",
             "CHECKUPDATEWALLET": "Kontrollige kõrguse värskendust...",
-            "ABOUTCORE": "Linda Core'i kohta...",
+            "ABOUTCORE": "Metrix Core'i kohta...",
             "ABOUTALTITUDE": "Altitudeist...",
             "DISCORD": "Meelehea...",
             "ISSUE": "Teata probleemist..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Okei",
         "CLEARALLBUTTON": "Kustuta kõik",
         "ENTERACCOUNTLABEL": "Sisestage selle aadressi silt",
-        "ENTERADDRESSLABEL": "Sisestage Linda aadress",
+        "ENTERADDRESSLABEL": "Sisestage Metrix aadress",
         "AGO": "tagasi",
         "SORTBY": "Sorteerima",
         "SEARCH": "Otsing",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Nõustu"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core'i initsialiseerimine...",
-        "DOWNLOADCLIENT": "Linda Core allalaadimine...",
-        "UPDATEAVAILABLE": "Linda Core'i värskendus saadaval",
-        "SHUTTINGDOWN": "Linda Core'i sulgemine...",
-        "RESTARTING": "Linda Core taaskäivitamine..."
+        "INITIALISING": "Metrix Core'i initsialiseerimine...",
+        "DOWNLOADCLIENT": "Metrix Core allalaadimine...",
+        "UPDATEAVAILABLE": "Metrix Core'i värskendus saadaval",
+        "SHUTTINGDOWN": "Metrix Core'i sulgemine...",
+        "RESTARTING": "Metrix Core taaskäivitamine..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uus konto on edukalt loodud",

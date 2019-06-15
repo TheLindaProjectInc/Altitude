@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Akpa na-arụ ọrụ ugbu a",
             "NOTENABLEDTITLE": "Enweghị ike ịkwado ya",
             "NOTENABLEDINFO": "E nwebeghị ike ịkwado nzọụkwụ.",
-            "NOTENABLEDINSTR": "N'okpo osisi ị ga-achọ iji mee ka ịkwado ịtọ ụda = 1 n'ime faịlụ Linda.conf gị.",
+            "NOTENABLEDINSTR": "N'okpo osisi ị ga-achọ iji mee ka ịkwado ịtọ ụda = 1 n'ime faịlụ metrix.conf gị.",
             "NOTSTAKINGTITLE": "Ekebeghi akpa",
             "NOTSTAKINGINFO": "A na-ekpochi akpa gị ugbu a maka ịkwado.",
             "NOTSTAKINGINSTR": "Ị nwere ike ịmalite ịkwado site na imeghe obere akpa gị maka ịkwado",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adreesị",
             "ENABLED": "Kwadoro",
             "NOTENABLEDTITLE": "Masternodes enyereghị",
-            "NOTENABLEDINSTR": "Iji na-agba ọsọ maka nnabata ị ga - achọ ka masternodes site na ịmepụta masternode = 1 na configuring 'variables' na 'masternodeaddr' na faịlụ Linda.conf gị.",
+            "NOTENABLEDINSTR": "Iji na-agba ọsọ maka nnabata ị ga - achọ ka masternodes site na ịmepụta masternode = 1 na configuring 'variables' na 'masternodeaddr' na faịlụ metrix.conf gị.",
             "STARTBUTTON": "Malite mpaghara",
             "STARTALIASBUTTON": "Malite aha",
             "STARTALLBUTTON": "Malite niile"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Nabata Linda Core RPC console. Enyemaka aka maka nyochaa nke iwu dịnụ.",
+                "CONSOLEINFO": "Nabata Metrix Core RPC console. Enyemaka aka maka nyochaa nke iwu dịnụ.",
                 "CONSOLEWARNING": "ỊDỌ AKA NA NTỊ: Ndị ọkachamara na-arụ ọrụ na-arụ ọrụ, na-agwa ndị ọrụ ka ha tinye iwu ebe a, na-ezu ohi ha. Ejikwala njikwa a n'enweghị nghọta zuru ezu na nchịkọta nke iwu.",
                 "COMMANDPLACEHODLER": "Tinye Iwu"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Malite Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Iwu mmezi ndị a agaghị enwe ike ịgba ọsọ mgbe Linda Core na-agba ọsọ n'èzí",
-                "INFO": "Igodo dị n'okpuru a ga-amalitegharịa Linda Core na nhọrọ ntinye iwu iji rụkwaa obere akpa ahụ, dozie nsogbu na faịlụ blockchain rụrụ arụ ma ọ bụ ọrụ ndị na-efu ma ọ bụ ndị na-adịghị ahụ anya.",
+                "INFOEXTERNAL": "Iwu mmezi ndị a agaghị enwe ike ịgba ọsọ mgbe Metrix Core na-agba ọsọ n'èzí",
+                "INFO": "Igodo dị n'okpuru a ga-amalitegharịa Metrix Core na nhọrọ ntinye iwu iji rụkwaa obere akpa ahụ, dozie nsogbu na faịlụ blockchain rụrụ arụ ma ọ bụ ọrụ ndị na-efu ma ọ bụ ndị na-adịghị ahụ anya.",
                 "SALVAGEBUTTON": "Akpọrọ akpa akwa",
                 "SALVAGEINFO": "-salvagewallet: Ngbalị iji weghachite igodo nzuzo site na wallet.dat rụrụ arụ.",
                 "RESCANBUTTON": "Fetu faịlụ blockan",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Ndị mmepe Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ndị mmepe NovaCoin <br/> Copyright © 2014-2018 Ndị Mmepe Linda <br/><br/> Nke a bụ ngwanrọ nnwale. <br/> Ekekọrịta n'okpuru ikikere software MIT / X11, lee faịlụ na-esote ma ọ bụ COPYING ma ọ bụ http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ngwaahịa a gụnyere software nke OpenSSL Project wuru maka iji na OpenSSL Toolkit (https://www.openssl.org) na software cryptographic dere Eric Young (eay@cryptsoft.com) na UPnP software nke Thomas Bernard dere.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Ndị mmepe Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Ndị mmepe NovaCoin <br/> Copyright © 2014-2019 Ndị Mmepe Metrix <br/><br/> Nke a bụ ngwanrọ nnwale. <br/> Ekekọrịta n'okpuru ikikere software MIT / X11, lee faịlụ na-esote ma ọ bụ COPYING ma ọ bụ http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ngwaahịa a gụnyere software nke OpenSSL Project wuru maka iji na OpenSSL Toolkit (https://www.openssl.org) na software cryptographic dere Eric Young (eay@cryptsoft.com) na UPnP software nke Thomas Bernard dere.",
             "ABOUTALTITUDETAB": "Elu",
-            "ABOUTALTITUDE": "Copyright © 2018 Ndị Mmepe Linda <br/><br/> A na-ekesa software a n'okpuru ikikere GPL-3.0, lee https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE maka ama ndị ọzọ."
+            "ABOUTALTITUDE": "Copyright © 2019 Ndị Mmepe Metrix <br/><br/> A na-ekesa software a n'okpuru ikikere GPL-3.0, lee https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE maka ama ndị ọzọ."
         },
         "LOCALE": {
             "TITLE": "Họrọ Asụsụ"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Tinye Pasphrase obere akpa gị",
             "UNLOCKSTAKINGONLY": "Unlock maka na-eri nanị",
-            "CLIENTUPDATETITLE": "Linda Core Update Dị",
-            "CLIENTUPDATEINFO": "Mmelite dị maka Linda Core. Ọ ga-amasị gị ịwụnye ya ugbu a?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Dị",
+            "CLIENTUPDATEINFO": "Mmelite dị maka Metrix Core. Ọ ga-amasị gị ịwụnye ya ugbu a?",
             "WALLETUPDATETITLE": "Elu Mmiri dị elu dị",
             "WALLETUPDATEINFO": "Mmelite dị maka Altitude. Ọ ga-amasị gị ibudata ya ugbu a?",
             "CLIENTUPDATEBUTTON": "Mmelite",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Gbanwee okwu mkpịsị",
             "ENCRYPTTITLE": "Zoo obere akpa gị",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core akwụsị",
-            "CLIENTSTOPPEDINFO": "Njikọ Linda Core ejirila njikọ. I nwere ike ịkwụsị akpa ma ọ bụ malite Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core akwụsị",
+            "CLIENTSTOPPEDINFO": "Njikọ Metrix Core ejirila njikọ. I nwere ike ịkwụsị akpa ma ọ bụ malite Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Wepụ obere akpa",
-            "CLIENTSTOPPEDBUTTONSTART": "Malite Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Malite Metrix Core",
             "ENCRYPTEDTITLE": "Ezochiri akpa akpa",
             "ENCRYPTEDCONTENT": "Okwesiri nkwado ọ bụla i mere site na obere akpa gị kwesịrị dochie ya site na faịlụ ọhụụ ọhụrụ, nke ezoro ezo. Maka ihe nchedo, nkwado ndabere na mpaghara nke akpa akpa akpaghị akwụkwọ ga-aba uru ozugbo ịmalite iji obere obere akpa ego.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core akwụsịghị na mberede",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Linda Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core akwụsịghị na mberede",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Malitegharịa ekwentị",
-            "CLIENTINVALIDCONFIGTITLE": "Linda.conf nhazi",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Linda Core pụọ ozugbo. Biko lelee faịlụ a."
+            "CLIENTINVALIDCONFIGTITLE": "metrix.conf nhazi",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a."
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
-            "SENDINGINFO": "Ndị a bụ adreesị Linda maka izipụ ịkwụ ụgwọ. Na-enyocha ego na ịnweta adreesị mgbe niile tupu izipu mkpụrụ ego",
-            "RECEIVINGINFO": "Ndị a bụ adreesị Linda maka ịnweta ịkwụ ụgwọ.",
+            "SENDINGINFO": "Ndị a bụ adreesị Metrix maka izipụ ịkwụ ụgwọ. Na-enyocha ego na ịnweta adreesị mgbe niile tupu izipu mkpụrụ ego",
+            "RECEIVINGINFO": "Ndị a bụ adreesị Metrix maka ịnweta ịkwụ ụgwọ.",
             "BUTTONSELECT": "Họrọ",
             "TABLECOLUMNS_LABEL": "Aha",
             "TABLECOLUMNS_ADDRESS": "Adreesị",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Nbanye Ozi...",
             "VERIFYMESSAGE": "Nyochaa ozi...",
             "LOCALE": "Asụsụ...",
-            "RESTARTCORE": "Maliteghachi Linda Core",
+            "RESTARTCORE": "Maliteghachi Metrix Core",
             "EXIT": "Ụzọ ọpụpụ",
             "OPTIONS": "Nhọrọ..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Enyemaka",
             "COMMANDLINEOPTIONS": "Nhọrọ Nhọrọ Iwu.",
-            "CHECKUPDATECORE": "Lelee Linda Core Update...",
+            "CHECKUPDATECORE": "Lelee Metrix Core Update...",
             "CHECKUPDATEWALLET": "Lelee maka Nwelite Elu...",
-            "ABOUTCORE": "Banyere Linda Core...",
+            "ABOUTCORE": "Banyere Metrix Core...",
             "ABOUTALTITUDE": "Banyere Altitude...",
             "DISCORD": "Iju...",
             "ISSUE": "Kpee ihe esemokwu..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Ọ DỊ MMA",
         "CLEARALLBUTTON": "Kọwaa niile",
         "ENTERACCOUNTLABEL": "Tinye labeelu maka adres a",
-        "ENTERADDRESSLABEL": "Tinye adres Linda",
+        "ENTERADDRESSLABEL": "Tinye adres Metrix",
         "AGO": "gara aga",
         "SORTBY": "Hazie site na",
         "SEARCH": "Chọọ",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Nabata"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Ibalite Linda Core...",
-        "DOWNLOADCLIENT": "Nbudata Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Dị",
-        "SHUTTINGDOWN": "Na-ehichapụ Linda Core...",
-        "RESTARTING": "Malitegharia Linda isi..."
+        "INITIALISING": "Ibalite Metrix Core...",
+        "DOWNLOADCLIENT": "Nbudata Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Dị",
+        "SHUTTINGDOWN": "Na-ehichapụ Metrix Core...",
+        "RESTARTING": "Malitegharia Metrix isi..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ejiri akaụntụ ọhụrụ rụọ ọrụ nke ọma",

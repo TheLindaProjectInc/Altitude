@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Wallet is op it stuit stakke",
             "NOTENABLEDTITLE": "Staking is net ynskeakele",
             "NOTENABLEDINFO": "Staking is no op dit stuit net aktivearre.",
-            "NOTENABLEDINSTR": "Om te stean moatte jo de staking ynstellings staking = 1 yn jo Linda.conf bestân ynskeakelje.",
+            "NOTENABLEDINSTR": "Om te stean moatte jo de staking ynstellings staking = 1 yn jo metrix.conf bestân ynskeakelje.",
             "NOTSTAKINGTITLE": "Portemonnee net stakke",
             "NOTSTAKINGINFO": "Jo wallet is no opsletten foar staking.",
             "NOTSTAKINGINSTR": "Jo kinne begjinne mei it sluten fan jo slûf foar it staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adres",
             "ENABLED": "Mooglik meitsje",
             "NOTENABLEDTITLE": "Masternodes net ynskeakele",
-            "NOTENABLEDINSTR": "Om in masinod te runen moatte jo de mastersodus ynskeakelje troch de masternode = 1 te ynstallearjen en it konfiguraasje 'masternodeprivkey' en 'masternodeaddr' fariabelen yn jo Linda.conf-bestân.",
+            "NOTENABLEDINSTR": "Om in masinod te runen moatte jo de mastersodus ynskeakelje troch de masternode = 1 te ynstallearjen en it konfiguraasje 'masternodeprivkey' en 'masternodeaddr' fariabelen yn jo metrix.conf-bestân.",
             "STARTBUTTON": "Begjin Lokale",
             "STARTALIASBUTTON": "Start Alias",
             "STARTALLBUTTON": "Start All"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitieve ferzje"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Wolkom by de Linda Core RPC-konsole. Typ help foar in oersicht fan beskikbere kommando's.",
+                "CONSOLEINFO": "Wolkom by de Metrix Core RPC-konsole. Typ help foar in oersicht fan beskikbere kommando's.",
                 "CONSOLEWARNING": "WARNING: Scammers binne aktyf, fertelle gebrûkers fan gebrûk fan kommando's te stean, en steane har wallet ynhâld. Brûk dizze konsole net sûnder it folslein ferstean fan 'e fergunning fan in kommando.",
                 "COMMANDPLACEHODLER": "Kommando ynfiere"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Startblok"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Dizze reparandobehearders kinne net útfiere as Linda Core ekstrearre wurdt",
-                "INFO": "De ûndersteande knoppen sil Linda Core opnij begjinne mei kommando-rigel-opsjes om de poarte te reparearjen, befetsje problemen mei korrupte blokken-bestannen of fereaskjende / ôfhanneljende transaksjes.",
+                "INFOEXTERNAL": "Dizze reparandobehearders kinne net útfiere as Metrix Core ekstrearre wurdt",
+                "INFO": "De ûndersteande knoppen sil Metrix Core opnij begjinne mei kommando-rigel-opsjes om de poarte te reparearjen, befetsje problemen mei korrupte blokken-bestannen of fereaskjende / ôfhanneljende transaksjes.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: besykje privee kaaien werom te finen fan in korrupte wallet.dat.",
                 "RESCANBUTTON": "Rescan blockchain files",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 De Bitcoin ûntwikkelders <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 De NovaCoin ûntwikkelders <br/> Copyright © 2014-2018 De Linda ûntwikkelers <br/><br/> Dit is eksperimintele software. <br/> Ferwurden ûnder de lisinsje fan MIT / X11, sjoch de oanbefellende bestânCOPYING of http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dit produkt befettet software dy't troch it OpenSSL Project ûntwikkele binne foar gebrûk yn 'e OpenSSL Toolkit (https://www.openssl.org) en kryptografyske software skreaun troch Eric Young (eay@cryptsoft.com) en UPnP-software skreaun troch Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 De Bitcoin ûntwikkelders <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 De NovaCoin ûntwikkelders <br/> Copyright © 2014-2019 De Metrix ûntwikkelers <br/><br/> Dit is eksperimintele software. <br/> Ferwurden ûnder de lisinsje fan MIT / X11, sjoch de oanbefellende bestânCOPYING of http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dit produkt befettet software dy't troch it OpenSSL Project ûntwikkele binne foar gebrûk yn 'e OpenSSL Toolkit (https://www.openssl.org) en kryptografyske software skreaun troch Eric Young (eay@cryptsoft.com) en UPnP-software skreaun troch Thomas Bernard.",
             "ABOUTALTITUDETAB": "Hichte",
-            "ABOUTALTITUDE": "Copyright © 2018 De Linda ûntwikkelders <br/><br/> Dizze software is ferspraat ûnder de lisinsje fan GPL-3.0, sjoch https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE foar mear ynformaasje."
+            "ABOUTALTITUDE": "Copyright © 2019 De Metrix ûntwikkelders <br/><br/> Dizze software is ferspraat ûnder de lisinsje fan GPL-3.0, sjoch https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE foar mear ynformaasje."
         },
         "LOCALE": {
             "TITLE": "Selektearje taal"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Fier jo paadwizer yn",
             "UNLOCKSTAKINGONLY": "Skeakelje foar allinich staking",
-            "CLIENTUPDATETITLE": "Linda Core Update beskikber",
-            "CLIENTUPDATEINFO": "In update is beskikber foar Linda Core. Wolle jo it no ynstallearje?",
+            "CLIENTUPDATETITLE": "Metrix Core Update beskikber",
+            "CLIENTUPDATEINFO": "In update is beskikber foar Metrix Core. Wolle jo it no ynstallearje?",
             "WALLETUPDATETITLE": "Altyd fernijend beskikber",
             "WALLETUPDATEINFO": "In update is beskikber foar Altitude. Wolle jo it no downloade?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Wizigje passphrase",
             "ENCRYPTTITLE": "Fersifere jo wallet",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core stopt",
-            "CLIENTSTOPPEDINFO": "Ferbining is ferlern gien oan Linda Core. Jo kinne de broek stopje of de ynterne Linda Core begjinne.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core stopt",
+            "CLIENTSTOPPEDINFO": "Ferbining is ferlern gien oan Metrix Core. Jo kinne de broek stopje of de ynterne Metrix Core begjinne.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Start Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Start Metrix Core",
             "ENCRYPTEDTITLE": "Wallet fersifere",
             "ENCRYPTEDCONTENT": "Alle foarige backups dy't jo fan jo wallet bestân makke binne moatte ferfangen wurde troch de nij generearre, fersifere wallet bestân. Foar feiligens redenen, foarige reservekopy fan 'e ûnbeskriuwde triemtafel sil nutteloos wurde as jo begjinne mei it brûken fan de nije, fersifere wallet.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core stoppet ûnferwachts",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Der wie in probleem mei Linda Core dy't it feroarsake hat. It is oan te rieden om jo debug.log triem te kontrolearjen foar saken.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppet ûnferwachts",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Der wie in probleem mei Metrix Core dy't it feroarsake hat. It is oan te rieden om jo debug.log triem te kontrolearjen foar saken.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Kwaliteit opnij starte",
-            "CLIENTINVALIDCONFIGTITLE": "Unjildige Linda.conf konfiguraasje",
-            "CLIENTINVALIDCONFIGINFO": "Jo Linda.conf hat in ûnjildige masternode opset dy't Linda Core feroaret om fuortendaliks fuort te gean. Kontrolearje dizze triem."
+            "CLIENTINVALIDCONFIGTITLE": "Unjildige metrix.conf konfiguraasje",
+            "CLIENTINVALIDCONFIGINFO": "Jo metrix.conf hat in ûnjildige masternode opset dy't Metrix Core feroaret om fuortendaliks fuort te gean. Kontrolearje dizze triem."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
-            "SENDINGINFO": "Dit binne jo bewarre Linda adres foar it ferstjoeren fan betellingen. Kontrolearje altyd it bedrach en it adres fan it adres foardat jo munten brûke",
-            "RECEIVINGINFO": "Dit binne jo bewarre Linda adres om betelingen te ûntfangen.",
+            "SENDINGINFO": "Dit binne jo bewarre Metrix adres foar it ferstjoeren fan betellingen. Kontrolearje altyd it bedrach en it adres fan it adres foardat jo munten brûke",
+            "RECEIVINGINFO": "Dit binne jo bewarre Metrix adres om betelingen te ûntfangen.",
             "BUTTONSELECT": "Útkieze",
             "TABLECOLUMNS_LABEL": "Etiket",
             "TABLECOLUMNS_ADDRESS": "Adres",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Oanmelde berjocht...",
             "VERIFYMESSAGE": "Berjocht befetsje...",
             "LOCALE": "Taal...",
-            "RESTARTCORE": "Restart Linda Core",
+            "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "Útgong",
             "OPTIONS": "Opsjes..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Help",
             "COMMANDLINEOPTIONS": "Kommando- rigelopsjes...",
-            "CHECKUPDATECORE": "Kontrolearje foar Linda Core Update...",
+            "CHECKUPDATECORE": "Kontrolearje foar Metrix Core Update...",
             "CHECKUPDATEWALLET": "Kontrolearje nei Altydûntwerp...",
-            "ABOUTCORE": "Oer Linda Core...",
+            "ABOUTCORE": "Oer Metrix Core...",
             "ABOUTALTITUDE": "Oer Altitude...",
             "DISCORD": "Discord...",
             "ISSUE": "Rapportearje in útjefte..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Alles wiskje",
         "ENTERACCOUNTLABEL": "In label meitsje foar dit adres",
-        "ENTERADDRESSLABEL": "Fier in adres yn Linda yn",
+        "ENTERADDRESSLABEL": "Fier in adres yn Metrix yn",
         "AGO": "lyn",
         "SORTBY": "Sort By",
         "SEARCH": "Sykje",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Oannimme"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inisjalisaasje fan Linda Core...",
-        "DOWNLOADCLIENT": "Download fan Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update beskikber",
-        "SHUTTINGDOWN": "Ofslútdyk Linda Core...",
-        "RESTARTING": "Restaurearje Linda Core..."
+        "INITIALISING": "Inisjalisaasje fan Metrix Core...",
+        "DOWNLOADCLIENT": "Download fan Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update beskikber",
+        "SHUTTINGDOWN": "Ofslútdyk Metrix Core...",
+        "RESTARTING": "Restaurearje Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nije akkount is mei sukses makke",

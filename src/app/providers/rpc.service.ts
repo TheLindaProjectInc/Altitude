@@ -421,7 +421,7 @@ export class RpcService {
         // js must convert to a number to send it to the daemon
         // this limits the maximum we can send as 90,071,992.54740992
         // otherwise there are overflow errors
-        // we'll update lindacore in the future to handle strings
+        // we'll update metrixcore in the future to handle strings
         // so we can circumvent this issue
         if (Big(amount).times(100000000).gt(9007199254740992))
             return true;

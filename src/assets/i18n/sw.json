@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Mkoba kwa sasa hupiga",
             "NOTENABLEDTITLE": "Kuunganisha hakuwezeshwa",
             "NOTENABLEDINFO": "Kuweka kwa sasa hakuwezeshwa.",
-            "NOTENABLEDINSTR": "Hatari unahitaji kuwezesha staking kuweka staking = 1 katika faili yako ya Linda.conf.",
+            "NOTENABLEDINSTR": "Hatari unahitaji kuwezesha staking kuweka staking = 1 katika faili yako ya metrix.conf.",
             "NOTSTAKINGTITLE": "Mkoba haukupiga",
             "NOTSTAKINGINFO": "Mkoba wako sasa umefungwa kwa staking.",
             "NOTSTAKINGINSTR": "Unaweza kuanza kuunganisha kwa kufungua mkoba wako kwa staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Anwani",
             "ENABLED": "Imewezeshwa",
             "NOTENABLEDTITLE": "Masternodes haijawezeshwa",
-            "NOTENABLEDINSTR": "Ili kukimbia msimu unahitaji kuwezesha masternodes kwa kuweka masternode = 1 na kusanidi 'masternodeprivkey' na 'masternodeaddr' vigezo katika faili yako ya Linda.conf.",
+            "NOTENABLEDINSTR": "Ili kukimbia msimu unahitaji kuwezesha masternodes kwa kuweka masternode = 1 na kusanidi 'masternodeprivkey' na 'masternodeaddr' vigezo katika faili yako ya metrix.conf.",
             "STARTBUTTON": "Anza Mitaa",
             "STARTALIASBUTTON": "Anza Alias",
             "STARTALLBUTTON": "Anza Wote"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Version ya urefu"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Karibu kwenye console ya Linda Core RPC. Weka usaidizi kwa maelezo ya jumla ya amri zilizopo.",
+                "CONSOLEINFO": "Karibu kwenye console ya Metrix Core RPC. Weka usaidizi kwa maelezo ya jumla ya amri zilizopo.",
                 "CONSOLEWARNING": "WARNING: Wasifu wamekuwa wakifanya kazi, wakiambia watumiaji kuandika amri hapa, kuiba maudhui yao ya mkoba. Usitumie hii console bila kuelewa kikamilifu ramification ya amri.",
                 "COMMANDPLACEHODLER": "Ingiza Amri"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Kuanza Kuzuia"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Amri hizi za kutengeneza haziwezi kukimbia wakati Linda Core inaendeshwa nje",
-                "INFO": "Vifungo vilivyo chini vitaanza Linda Core na chaguo la mstari wa amri ili kutengeneza mkoba, kurekebisha masuala na mafaili yenye uharibifu wa blockchain au shughuli zisizopo / kizamani.",
+                "INFOEXTERNAL": "Amri hizi za kutengeneza haziwezi kukimbia wakati Metrix Core inaendeshwa nje",
+                "INFO": "Vifungo vilivyo chini vitaanza Metrix Core na chaguo la mstari wa amri ili kutengeneza mkoba, kurekebisha masuala na mafaili yenye uharibifu wa blockchain au shughuli zisizopo / kizamani.",
                 "SALVAGEBUTTON": "Salvage Mkoba",
                 "SALVAGEINFO": "-salvagewallet: Jaribio la kurejesha funguo za faragha kutoka kwenye mkoba wa duru.",
                 "RESCANBUTTON": "Fungua faili za blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Chumba cha Linda",
-            "ABOUTCORE": "Hati miliki © 2009-2015 Watengenezaji wa Bitcoin <br/> Hati miliki © 2011-2012 PPCoin Waendelezaji <br/> Hati miliki © 2012-2014 Watengenezaji wa NovaCoin <br/> Copyright © 2014-2018 Watengenezaji wa Linda <br/><br/> Hii ni programu ya majaribio. <br/> Iligawanywa chini ya leseni ya programu ya MIT / X11, angalia faili inayoambatana na COPYING au http://www.opensource.org/licenses/mit-license.php. <br/><br/> Bidhaa hii inajumuisha programu iliyoandaliwa na Mradi wa OpenSSL kwa kutumia kwenye OpenSSL Toolkit (https://www.openssl.org) na programu ya cryptographic iliyoandikwa na Eric Young (eay@cryptsoft.com) na programu ya UPnP iliyoandikwa na Thomas Bernard.",
+            "ABOUTCORETAB": "Chumba cha Metrix",
+            "ABOUTCORE": "Hati miliki © 2009-2015 Watengenezaji wa Bitcoin <br/> Hati miliki © 2011-2012 PPCoin Waendelezaji <br/> Hati miliki © 2012-2014 Watengenezaji wa NovaCoin <br/> Copyright © 2014-2019 Watengenezaji wa Metrix <br/><br/> Hii ni programu ya majaribio. <br/> Iligawanywa chini ya leseni ya programu ya MIT / X11, angalia faili inayoambatana na COPYING au http://www.opensource.org/licenses/mit-license.php. <br/><br/> Bidhaa hii inajumuisha programu iliyoandaliwa na Mradi wa OpenSSL kwa kutumia kwenye OpenSSL Toolkit (https://www.openssl.org) na programu ya cryptographic iliyoandikwa na Eric Young (eay@cryptsoft.com) na programu ya UPnP iliyoandikwa na Thomas Bernard.",
             "ABOUTALTITUDETAB": "Urefu",
-            "ABOUTALTITUDE": "Hati miliki © 2018 Waendelezaji wa Linda <br/><br/> Programu hii inashirikiwa chini ya leseni ya GPL-3.0, angalia https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kwa maelezo zaidi."
+            "ABOUTALTITUDE": "Hati miliki © 2019 Waendelezaji wa Metrix <br/><br/> Programu hii inashirikiwa chini ya leseni ya GPL-3.0, angalia https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE kwa maelezo zaidi."
         },
         "LOCALE": {
             "TITLE": "Chagua lugha"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ingiza Passphrase yako ya Wallet",
             "UNLOCKSTAKINGONLY": "Fungua kwa staking tu",
-            "CLIENTUPDATETITLE": "Mwisho wa Cinda wa Linda Unapatikana",
-            "CLIENTUPDATEINFO": "Sasisho linapatikana kwa Linda Core. Ungependa kuifunga sasa?",
+            "CLIENTUPDATETITLE": "Mwisho wa Cinda wa Metrix Unapatikana",
+            "CLIENTUPDATEINFO": "Sasisho linapatikana kwa Metrix Core. Ungependa kuifunga sasa?",
             "WALLETUPDATETITLE": "Mwisho wa Mwisho Inapatikana",
             "WALLETUPDATEINFO": "Sasisho linapatikana kwa Urefu. Je! Ungependa kupakua sasa?",
             "CLIENTUPDATEBUTTON": "Sasisha",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Badilisha Passphrase",
             "ENCRYPTTITLE": "Tuma mkoba wako",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Chumba cha Linda kiliacha",
-            "CLIENTSTOPPEDINFO": "Uunganisho umepotea kwa Linda Core. Unaweza kuacha mkoba au kuanza Linda Core ndani.",
+            "CLIENTSTOPPEDTITLE": "Chumba cha Metrix kiliacha",
+            "CLIENTSTOPPEDINFO": "Uunganisho umepotea kwa Metrix Core. Unaweza kuacha mkoba au kuanza Metrix Core ndani.",
             "CLIENTSTOPPEDBUTTONEXIT": "Toka Mkoba",
-            "CLIENTSTOPPEDBUTTONSTART": "Anza Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Anza Metrix Core",
             "ENCRYPTEDTITLE": "Mkoba umefunikwa",
             "ENCRYPTEDCONTENT": "Vidokezo vyovyote vilivyotengenezwa kwenye faili yako ya mkoba lazima zibadilishwe na faili iliyotengenezwa iliyochapishwa, iliyochapishwa. Kwa sababu za kiusalama, salama zilizopita za faili ya mkoba isiyojulikana haitakuwa na maana mara tu unapoanza kutumia mkoba mpya, uliofichwa.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Chumba cha Linda kiliacha bila kutarajia",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Linda Core ambayo imesababisha kukomesha. Inapendekeza kuangalia faili yako ya debug.log kwa masuala.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Chumba cha Metrix kiliacha bila kutarajia",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Metrix Core ambayo imesababisha kukomesha. Inapendekeza kuangalia faili yako ya debug.log kwa masuala.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Anza upya Mteja",
-            "CLIENTINVALIDCONFIGTITLE": "Configuration Linda.conf isiyo sahihi",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Linda Core kuondoka mara moja. Tafadhali angalia faili hii."
+            "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf isiyo sahihi",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Metrix Core kuondoka mara moja. Tafadhali angalia faili hii."
         },
         "ADDRESSBOOK": {
             "TITLE": "Kitabu cha anwani",
-            "SENDINGINFO": "Hizi ni anwani yako ya Linda iliyookolewa kwa kutuma malipo. Daima angalia anwani na kupokea anwani kabla ya kutuma sarafu",
-            "RECEIVINGINFO": "Hizi ndio anwani yako ya Linda iliyookolewa kwa kupokea malipo.",
+            "SENDINGINFO": "Hizi ni anwani yako ya Metrix iliyookolewa kwa kutuma malipo. Daima angalia anwani na kupokea anwani kabla ya kutuma sarafu",
+            "RECEIVINGINFO": "Hizi ndio anwani yako ya Metrix iliyookolewa kwa kupokea malipo.",
             "BUTTONSELECT": "Chagua",
             "TABLECOLUMNS_LABEL": "Lebo",
             "TABLECOLUMNS_ADDRESS": "Anwani",
@@ -314,7 +314,7 @@
         "HELP": {
             "TITLE": "Msaada",
             "COMMANDLINEOPTIONS": "Chaguo cha Nambari za Amri...",
-            "CHECKUPDATECORE": "Angalia Mwisho wa Mwisho wa Linda...",
+            "CHECKUPDATECORE": "Angalia Mwisho wa Mwisho wa Metrix...",
             "CHECKUPDATEWALLET": "Angalia Mwisho wa Mwisho...",
             "ABOUTCORE": "Kuhusu Cinda Core...",
             "ABOUTALTITUDE": "Kuhusu Altitude...",
@@ -329,7 +329,7 @@
         "OKBUTTON": "sawa",
         "CLEARALLBUTTON": "Futa Wote",
         "ENTERACCOUNTLABEL": "Ingiza lebo kwa anwani hii",
-        "ENTERADDRESSLABEL": "Ingiza anwani ya Linda",
+        "ENTERADDRESSLABEL": "Ingiza anwani ya Metrix",
         "AGO": "iliyopita",
         "SORTBY": "Panga kwa",
         "SEARCH": "Tafuta",
@@ -338,9 +338,9 @@
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Kuanzisha Cinda Core...",
-        "DOWNLOADCLIENT": "Inapakua Linda Core...",
-        "UPDATEAVAILABLE": "Mwisho wa Cinda wa Linda Unapatikana",
-        "SHUTTINGDOWN": "Kuzuia Linda Core...",
+        "DOWNLOADCLIENT": "Inapakua Metrix Core...",
+        "UPDATEAVAILABLE": "Mwisho wa Cinda wa Metrix Unapatikana",
+        "SHUTTINGDOWN": "Kuzuia Metrix Core...",
         "RESTARTING": "Kuanzisha tena Cinda Core..."
     },
     "NOTIFICATIONS": {

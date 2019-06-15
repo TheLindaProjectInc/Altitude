@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Portofoli aktualisht është duke u hedhur",
             "NOTENABLEDTITLE": "Stakimi nuk është i aktivizuar",
             "NOTENABLEDINFO": "Staking aktualisht nuk është i aktivizuar.",
-            "NOTENABLEDINSTR": "Për aksion do t'ju duhet të aktivizoni staking settings staking = 1 në skedarin tuaj Linda.conf.",
+            "NOTENABLEDINSTR": "Për aksion do t'ju duhet të aktivizoni staking settings staking = 1 në skedarin tuaj metrix.conf.",
             "NOTSTAKINGTITLE": "Portofoli nuk po hedh",
             "NOTSTAKINGINFO": "Portofoli juaj aktualisht është i bllokuar për sasi.",
             "NOTSTAKINGINSTR": "Ju mund të filloni të sillni duke zhbllokuar portofolin tuaj për sasi",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adresë",
             "ENABLED": "enabled",
             "NOTENABLEDTITLE": "Masternodes nuk aktivizohen",
-            "NOTENABLEDINSTR": "Për të drejtuar një masternode ju do të duhet të aktivizoni masternodes duke vendosur masternode = 1 dhe konfigurimin e variablave 'masternodeprivkey' dhe 'masternodeaddr' në skedarin tuaj Linda.conf.",
+            "NOTENABLEDINSTR": "Për të drejtuar një masternode ju do të duhet të aktivizoni masternodes duke vendosur masternode = 1 dhe konfigurimin e variablave 'masternodeprivkey' dhe 'masternodeaddr' në skedarin tuaj metrix.conf.",
             "STARTBUTTON": "Filloni Lokale",
             "STARTALIASBUTTON": "Filloni Alias",
             "STARTALLBUTTON": "Filloni të gjitha"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Versioni i lartësisë"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Mirë se vini në Linda Core RPC console. Ndihmoni tipin për një pasqyrë të komandave në dispozicion.",
+                "CONSOLEINFO": "Mirë se vini në Metrix Core RPC console. Ndihmoni tipin për një pasqyrë të komandave në dispozicion.",
                 "CONSOLEWARNING": "KUJDES: Përhershme kanë qenë aktive, duke u thënë përdoruesve të shkruajnë komanda këtu, duke vjedhur përmbajtjen e tyre të portofolit. Mos e përdorni këtë tastierë pa kuptuar plotësisht degëzimin e një komande.",
                 "COMMANDPLACEHODLER": "Shkruani komandën"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Fillimi i Bllokut"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Këto komanda riparimi nuk mund të përdoren kur Linda Core është drejtuar jashtë",
-                "INFO": "Butonat më poshtë do të rifillojnë Linda Core me opsione të komandës për të riparuar portofolin, të rregullojnë çështjet me skedarë të korruptuar bllokues ose transaksione të zhdukura / të vjetëruara.",
+                "INFOEXTERNAL": "Këto komanda riparimi nuk mund të përdoren kur Metrix Core është drejtuar jashtë",
+                "INFO": "Butonat më poshtë do të rifillojnë Metrix Core me opsione të komandës për të riparuar portofolin, të rregullojnë çështjet me skedarë të korruptuar bllokues ose transaksione të zhdukura / të vjetëruara.",
                 "SALVAGEBUTTON": "Portofolin e rikuperimit",
                 "SALVAGEINFO": "-salvagewallet: Përpjekje për të rimarrë çelësat privatë nga një portofol korruptuar.",
                 "RESCANBUTTON": "Rescan files blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Zhvilluesit e Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Zhvilluesit NovaCoin <br/> Copyright © 2014-2018 Zhvilluesit e Linda <br/><br/> Ky është një program eksperimental. <br/> Shpërndarë nën licencën e softuerit MIT / X11, shihni skedarin shoqërues COPYING ose http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ky produkt përfshin softuer të zhvilluar nga Projekti OpenSSL për përdorim në OpenSSL Toolkit (https://www.openssl.org) dhe softueri kriptografik i shkruar nga Eric Young (eay@cryptsoft.com) dhe softueri UPnP shkruar nga Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Zhvilluesit e Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Zhvilluesit NovaCoin <br/> Copyright © 2014-2019 Zhvilluesit e Metrix <br/><br/> Ky është një program eksperimental. <br/> Shpërndarë nën licencën e softuerit MIT / X11, shihni skedarin shoqërues COPYING ose http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ky produkt përfshin softuer të zhvilluar nga Projekti OpenSSL për përdorim në OpenSSL Toolkit (https://www.openssl.org) dhe softueri kriptografik i shkruar nga Eric Young (eay@cryptsoft.com) dhe softueri UPnP shkruar nga Thomas Bernard.",
             "ABOUTALTITUDETAB": "lartësi",
-            "ABOUTALTITUDE": "Copyright © 2018 Zhvilluesit e Linda <br/><br/> Ky softuer shpërndahet nën licencën GPL-3.0, shiko https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE për më shumë informacion."
+            "ABOUTALTITUDE": "Copyright © 2019 Zhvilluesit e Metrix <br/><br/> Ky softuer shpërndahet nën licencën GPL-3.0, shiko https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE për më shumë informacion."
         },
         "LOCALE": {
             "TITLE": "Zgjidh gjuhen"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Futni Passphrase të Portofolit tuaj",
             "UNLOCKSTAKINGONLY": "Zhblloko vetëm për staking",
-            "CLIENTUPDATETITLE": "Linda Core Update dispozicion",
-            "CLIENTUPDATEINFO": "Një përditësim është në dispozicion për Linda Core. Dëshiron ta instalosh tani?",
+            "CLIENTUPDATETITLE": "Metrix Core Update dispozicion",
+            "CLIENTUPDATEINFO": "Një përditësim është në dispozicion për Metrix Core. Dëshiron ta instalosh tani?",
             "WALLETUPDATETITLE": "Përditësimi i lartësisë në dispozicion",
             "WALLETUPDATEINFO": "Një përditësim është në dispozicion për Lartësi. Dëshiron ta shkarkosh tani?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Ndrysho fjalëkalimin",
             "ENCRYPTTITLE": "Kriptosh portofolin tënd",
             "ENCRYPTBUTTON": "encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core u ndal",
-            "CLIENTSTOPPEDINFO": "Lidhja është humbur për Linda Core. Ju mund ta ndalni portofolin ose të filloni Linda Core brendshëm.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core u ndal",
+            "CLIENTSTOPPEDINFO": "Lidhja është humbur për Metrix Core. Ju mund ta ndalni portofolin ose të filloni Metrix Core brendshëm.",
             "CLIENTSTOPPEDBUTTONEXIT": "Dalja e portofolit",
-            "CLIENTSTOPPEDBUTTONSTART": "Filloni Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Filloni Metrix Core",
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Çdo kopje rezervë e mëparshme që keni bërë nga dosja e portofolit tuaj duhet të zëvendësohet me skedarin e portofolit të sapokrijuar, të koduar. Për arsye sigurie, kopjet e mëparshme të skedarit të portofolit të paskrupuar do të bëhen të padobishme sapo të filloni të përdorni portofolin e ri të koduar.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core u ndal papritur",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Linda Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core u ndal papritur",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Metrix Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rinis Klientin",
-            "CLIENTINVALIDCONFIGTITLE": "Konfigurimi Linda.conf i pavlefshëm",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Linda Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar."
+            "CLIENTINVALIDCONFIGTITLE": "Konfigurimi metrix.conf i pavlefshëm",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar."
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i adresave",
-            "SENDINGINFO": "Këto janë adresat tuaja të ruajtura të Linda për dërgimin e pagesave. Gjithmonë kontrolloni shumën dhe marrjen e adresës para se të dërgoni monedha",
-            "RECEIVINGINFO": "Këto janë adresa juaj e ruajtur e Linda për marrjen e pagesave.",
+            "SENDINGINFO": "Këto janë adresat tuaja të ruajtura të Metrix për dërgimin e pagesave. Gjithmonë kontrolloni shumën dhe marrjen e adresës para se të dërgoni monedha",
+            "RECEIVINGINFO": "Këto janë adresa juaj e ruajtur e Metrix për marrjen e pagesave.",
             "BUTTONSELECT": "zgjedh",
             "TABLECOLUMNS_LABEL": "etiketë",
             "TABLECOLUMNS_ADDRESS": "Adresë",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Mesazhi i mesazhit...",
             "VERIFYMESSAGE": "Verifiko mesazhin...",
             "LOCALE": "Gjuhe...",
-            "RESTARTCORE": "Restart Linda Core",
+            "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "dalje",
             "OPTIONS": "Opsione..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Ndihmë",
             "COMMANDLINEOPTIONS": "Opsionet e linjës së komandës...",
-            "CHECKUPDATECORE": "Kontrolloni për Linda Core Update...",
+            "CHECKUPDATECORE": "Kontrolloni për Metrix Core Update...",
             "CHECKUPDATEWALLET": "Kontrollo për përditësimin e lartësisë...",
-            "ABOUTCORE": "Rreth Linda Core...",
+            "ABOUTCORE": "Rreth Metrix Core...",
             "ABOUTALTITUDE": "Rreth lartësisë...",
             "DISCORD": "Mosmarrëveshje...",
             "ISSUE": "Raporto një çështje..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Ne rregull",
         "CLEARALLBUTTON": "Pastroji të gjitha",
         "ENTERACCOUNTLABEL": "Futni një etiketë për këtë adresë",
-        "ENTERADDRESSLABEL": "Shkruani një adresë Linda",
+        "ENTERADDRESSLABEL": "Shkruani një adresë Metrix",
         "AGO": "më parë",
         "SORTBY": "Ndaj sipas",
         "SEARCH": "kërkim",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "pranoj"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Fillimi i Linda Core...",
-        "DOWNLOADCLIENT": "Shkarkimi i Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update dispozicion",
-        "SHUTTINGDOWN": "Mbyllja Linda Core...",
-        "RESTARTING": "Rinisni Linda Core..."
+        "INITIALISING": "Fillimi i Metrix Core...",
+        "DOWNLOADCLIENT": "Shkarkimi i Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update dispozicion",
+        "SHUTTINGDOWN": "Mbyllja Metrix Core...",
+        "RESTARTING": "Rinisni Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Llogaria e re është krijuar me sukses",

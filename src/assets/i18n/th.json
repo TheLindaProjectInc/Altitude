@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Wallet กำลังปักหลักอยู่",
             "NOTENABLEDTITLE": "การปักหลักไม่ได้เปิดใช้งาน",
             "NOTENABLEDINFO": "ขณะนี้ยังไม่เปิดใช้การปักหลัก",
-            "NOTENABLEDINSTR": "ในการเดิมพันคุณจะต้องเปิดใช้การตั้งค่าการปักหลัก = 1 ในไฟล์ Linda.conf ของคุณ",
+            "NOTENABLEDINSTR": "ในการเดิมพันคุณจะต้องเปิดใช้การตั้งค่าการปักหลัก = 1 ในไฟล์ metrix.conf ของคุณ",
             "NOTSTAKINGTITLE": "กระเป๋าสตางค์ไม่ปักหลัก",
             "NOTSTAKINGINFO": "กระเป๋าสตางค์ของคุณถูกล็อคไว้สำหรับการปักหลัก",
             "NOTSTAKINGINSTR": "คุณสามารถเริ่มปักหลักได้โดยปลดล็อกกระเป๋าเงินของคุณเพื่อทำการปักหลัก",
@@ -69,7 +69,7 @@
             "ADDRESS": "ที่อยู่",
             "ENABLED": "เปิดการใช้งาน",
             "NOTENABLEDTITLE": "Masternodes ไม่ได้เปิดใช้งาน",
-            "NOTENABLEDINSTR": "ในการใช้งาน masternode คุณจะต้องเปิดใช้งาน masternode โดยการตั้งค่า masternode = 1 และกำหนดค่าตัวแปร 'masternodeprivkey' และ 'masternodeaddr' ในไฟล์ Linda.conf ของคุณ",
+            "NOTENABLEDINSTR": "ในการใช้งาน masternode คุณจะต้องเปิดใช้งาน masternode โดยการตั้งค่า masternode = 1 และกำหนดค่าตัวแปร 'masternodeprivkey' และ 'masternodeaddr' ในไฟล์ metrix.conf ของคุณ",
             "STARTBUTTON": "เริ่มต้น Local",
             "STARTALIASBUTTON": "เริ่มนามแฝง",
             "STARTALLBUTTON": "เริ่มต้นทั้งหมด"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "เวอร์ชั่นระดับความสูง"
             },
             "DEBUG": {
-                "CONSOLEINFO": "ยินดีต้อนรับสู่คอนโซล Linda Core RPC พิมพ์ help เพื่อดูภาพรวมของคำสั่งที่พร้อมใช้งาน",
+                "CONSOLEINFO": "ยินดีต้อนรับสู่คอนโซล Metrix Core RPC พิมพ์ help เพื่อดูภาพรวมของคำสั่งที่พร้อมใช้งาน",
                 "CONSOLEWARNING": "คำเตือน: ผู้หลอกลวงมีการใช้งานอยู่โดยบอกผู้ใช้ให้พิมพ์คำสั่งที่นี่และขโมยข้อมูลในกระเป๋าสตางค์ อย่าใช้คอนโซลนี้โดยไม่เข้าใจความแตกต่างของคำสั่ง",
                 "COMMANDPLACEHODLER": "ป้อนคำสั่ง"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "กำลังเริ่มต้นบล็อก"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "คำสั่งซ่อมแซมเหล่านี้ไม่สามารถเรียกใช้เมื่อใช้ Linda Core ภายนอก",
-                "INFO": "ปุ่มด้านล่างจะเริ่มต้นใหม่ Linda Core ด้วยตัวเลือกบรรทัดคำสั่งเพื่อซ่อมแซมกระเป๋าสตางค์แก้ไขปัญหาเกี่ยวกับไฟล์ blockchain ที่เสียหายหรือการทำธุรกรรมที่ขาดหายไปหรือล้าสมัย",
+                "INFOEXTERNAL": "คำสั่งซ่อมแซมเหล่านี้ไม่สามารถเรียกใช้เมื่อใช้ Metrix Core ภายนอก",
+                "INFO": "ปุ่มด้านล่างจะเริ่มต้นใหม่ Metrix Core ด้วยตัวเลือกบรรทัดคำสั่งเพื่อซ่อมแซมกระเป๋าสตางค์แก้ไขปัญหาเกี่ยวกับไฟล์ blockchain ที่เสียหายหรือการทำธุรกรรมที่ขาดหายไปหรือล้าสมัย",
                 "SALVAGEBUTTON": "กระเป๋าเงินกู้ภัย",
                 "SALVAGEINFO": "-salvagewallet: พยายามกู้คืนคีย์ส่วนตัวจากกระเป๋าสตางค์ที่เสียหาย",
                 "RESCANBUTTON": "สแกนใหม่ blockchain ไฟล์",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "ลิขสิทธิ์© 2009-2015 นักพัฒนา Bitcoin <br/> ลิขสิทธิ์© 2011-2012 นักพัฒนาซอฟต์แวร์ PPCoin <br/> สงวนลิขสิทธิ์© 2012-2014 นักพัฒนา NovaCoin <br/> สงวนลิขสิทธิ์© 2014-2018 นักพัฒนาซอฟต์แวร์ Linda <br/><br/> นี่เป็นซอฟต์แวร์ทดลอง <br/> แจกจ่ายภายใต้ใบอนุญาตซอฟต์แวร์ MIT / X11 ดูไฟล์ COPYING ที่แนบมาหรือ http://www.opensource.org/licenses/mit-license.php <br/><br/> ผลิตภัณฑ์นี้ประกอบด้วยซอฟต์แวร์ที่พัฒนาโดย OpenSSL Project เพื่อใช้ใน OpenSSL Toolkit (https://www.openssl.org) และซอฟต์แวร์เข้ารหัสลับที่เขียนขึ้นโดย Eric Young (eay@cryptsoft.com) และซอฟต์แวร์ UPnP ที่เขียนโดย Thomas Bernard",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "ลิขสิทธิ์© 2009-2015 นักพัฒนา Bitcoin <br/> ลิขสิทธิ์© 2011-2012 นักพัฒนาซอฟต์แวร์ PPCoin <br/> สงวนลิขสิทธิ์© 2012-2014 นักพัฒนา NovaCoin <br/> สงวนลิขสิทธิ์© 2014-2019 นักพัฒนาซอฟต์แวร์ Metrix <br/><br/> นี่เป็นซอฟต์แวร์ทดลอง <br/> แจกจ่ายภายใต้ใบอนุญาตซอฟต์แวร์ MIT / X11 ดูไฟล์ COPYING ที่แนบมาหรือ http://www.opensource.org/licenses/mit-license.php <br/><br/> ผลิตภัณฑ์นี้ประกอบด้วยซอฟต์แวร์ที่พัฒนาโดย OpenSSL Project เพื่อใช้ใน OpenSSL Toolkit (https://www.openssl.org) และซอฟต์แวร์เข้ารหัสลับที่เขียนขึ้นโดย Eric Young (eay@cryptsoft.com) และซอฟต์แวร์ UPnP ที่เขียนโดย Thomas Bernard",
             "ABOUTALTITUDETAB": "ระดับความสูง",
-            "ABOUTALTITUDE": "สงวนลิขสิทธิ์© 2018 นักพัฒนาซอฟต์แวร์ Linda <br/><br/> ซอฟต์แวร์นี้เผยแพร่ภายใต้ใบอนุญาต GPL-3.0 ดู https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE สำหรับข้อมูลเพิ่มเติม"
+            "ABOUTALTITUDE": "สงวนลิขสิทธิ์© 2019 นักพัฒนาซอฟต์แวร์ Metrix <br/><br/> ซอฟต์แวร์นี้เผยแพร่ภายใต้ใบอนุญาต GPL-3.0 ดู https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE สำหรับข้อมูลเพิ่มเติม"
         },
         "LOCALE": {
             "TITLE": "เลือกภาษา"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ใส่รหัสผ่านของกระเป๋าสตางค์ของคุณ",
             "UNLOCKSTAKINGONLY": "ปลดล็อกสำหรับปักหลักเท่านั้น",
-            "CLIENTUPDATETITLE": "มีการปรับปรุง Core Linda",
-            "CLIENTUPDATEINFO": "มีการปรับปรุงสำหรับ Linda Core คุณต้องการติดตั้งเดี๋ยวนี้หรือไม่?",
+            "CLIENTUPDATETITLE": "มีการปรับปรุง Core Metrix",
+            "CLIENTUPDATEINFO": "มีการปรับปรุงสำหรับ Metrix Core คุณต้องการติดตั้งเดี๋ยวนี้หรือไม่?",
             "WALLETUPDATETITLE": "อัปเดตระดับความสูงที่พร้อมใช้งาน",
             "WALLETUPDATEINFO": "มีการอัปเดตสำหรับระดับความสูง คุณต้องการดาวน์โหลดตอนนี้หรือไม่?",
             "CLIENTUPDATEBUTTON": "ปรับปรุง",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "เปลี่ยน Passphrase",
             "ENCRYPTTITLE": "เข้ารหัสกระเป๋าสตางค์ของคุณ",
             "ENCRYPTBUTTON": "การเข้ารหัสลับ",
-            "CLIENTSTOPPEDTITLE": "Linda Core หยุดทำงาน",
-            "CLIENTSTOPPEDINFO": "การเชื่อมต่อสูญหายไปกับ Linda Core คุณสามารถหยุดกระเป๋าสตางค์หรือเริ่มต้น Linda Core ภายในได้",
+            "CLIENTSTOPPEDTITLE": "Metrix Core หยุดทำงาน",
+            "CLIENTSTOPPEDINFO": "การเชื่อมต่อสูญหายไปกับ Metrix Core คุณสามารถหยุดกระเป๋าสตางค์หรือเริ่มต้น Metrix Core ภายในได้",
             "CLIENTSTOPPEDBUTTONEXIT": "ออกจาก Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "เริ่มต้น Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "เริ่มต้น Metrix Core",
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "การสำรองข้อมูลก่อนหน้าใด ๆ ที่คุณทำจากไฟล์กระเป๋าสตางค์ของคุณควรถูกแทนที่โดยใช้ไฟล์กระเป๋าสตางค์ที่เข้ารหัสลับสร้างขึ้นใหม่ เพื่อความปลอดภัยการสำรองข้อมูลก่อนหน้าของไฟล์กระเป๋าสตางค์ที่ไม่ได้เข้ารหัสจะกลายเป็นสิ่งที่ไม่ได้ผลทันทีที่คุณเริ่มใช้กระเป๋าเงินที่เข้ารหัสใหม่",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ลินดาคอร์ปหยุดกะทันหัน",
             "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับลินดาคอร์ที่ทำให้มันสิ้นสุดลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log สำหรับปัญหา",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "รีสตาร์ทไคลเอ็นต์",
-            "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า Linda.conf ไม่ถูกต้อง",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Linda Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้"
+            "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
-            "SENDINGINFO": "ที่อยู่ Linda ที่บันทึกไว้ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่ที่รับก่อนที่จะส่งเหรียญ",
-            "RECEIVINGINFO": "ที่อยู่ Linda ที่บันทึกไว้เพื่อรับการชำระเงิน",
+            "SENDINGINFO": "ที่อยู่ Metrix ที่บันทึกไว้ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่ที่รับก่อนที่จะส่งเหรียญ",
+            "RECEIVINGINFO": "ที่อยู่ Metrix ที่บันทึกไว้เพื่อรับการชำระเงิน",
             "BUTTONSELECT": "เลือก",
             "TABLECOLUMNS_LABEL": "ฉลาก",
             "TABLECOLUMNS_ADDRESS": "ที่อยู่",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "ลงชื่อเข้าใช้ข้อความ...",
             "VERIFYMESSAGE": "ยืนยันข้อความ...",
             "LOCALE": "ภาษา...",
-            "RESTARTCORE": "เริ่มต้น Linda Core ใหม่",
+            "RESTARTCORE": "เริ่มต้น Metrix Core ใหม่",
             "EXIT": "ทางออก",
             "OPTIONS": "ตัวเลือก..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "ช่วยด้วย",
             "COMMANDLINEOPTIONS": "ตัวเลือกบรรทัดคำสั่ง...",
-            "CHECKUPDATECORE": "ตรวจสอบการอัปเดตหลักของ Linda Core...",
+            "CHECKUPDATECORE": "ตรวจสอบการอัปเดตหลักของ Metrix Core...",
             "CHECKUPDATEWALLET": "ตรวจสอบการอัปเดตความสูง...",
-            "ABOUTCORE": "เกี่ยวกับ Linda Core...",
+            "ABOUTCORE": "เกี่ยวกับ Metrix Core...",
             "ABOUTALTITUDE": "เกี่ยวกับระดับความสูง...",
             "DISCORD": "ความขัดแย้ง...",
             "ISSUE": "รายงานปัญหา..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "ตกลง",
         "CLEARALLBUTTON": "ลบทั้งหมด",
         "ENTERACCOUNTLABEL": "ป้อนป้ายกำกับสำหรับที่อยู่นี้",
-        "ENTERADDRESSLABEL": "ป้อนที่อยู่ของ Linda",
+        "ENTERADDRESSLABEL": "ป้อนที่อยู่ของ Metrix",
         "AGO": "มาแล้ว",
         "SORTBY": "เรียงตาม",
         "SEARCH": "ค้นหา",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "ยอมรับ"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "กำลังเริ่มต้นใช้งาน Linda Core...",
-        "DOWNLOADCLIENT": "กำลังดาวน์โหลด Linda Core...",
-        "UPDATEAVAILABLE": "มีการปรับปรุง Core Linda",
-        "SHUTTINGDOWN": "กำลังปิดเครื่อง Linda Core...",
-        "RESTARTING": "กำลังเริ่มต้นใหม่ Linda Core..."
+        "INITIALISING": "กำลังเริ่มต้นใช้งาน Metrix Core...",
+        "DOWNLOADCLIENT": "กำลังดาวน์โหลด Metrix Core...",
+        "UPDATEAVAILABLE": "มีการปรับปรุง Core Metrix",
+        "SHUTTINGDOWN": "กำลังปิดเครื่อง Metrix Core...",
+        "RESTARTING": "กำลังเริ่มต้นใหม่ Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "สร้างบัญชีใหม่เรียบร้อยแล้ว",

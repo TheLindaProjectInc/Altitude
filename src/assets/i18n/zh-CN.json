@@ -49,7 +49,7 @@
             "STAKINGTITLE": "钱包目前正在赌注",
             "NOTENABLEDTITLE": "未启用放样",
             "NOTENABLEDINFO": "目前尚未启用放样。",
-            "NOTENABLEDINSTR": "要放样，您需要在Linda.conf文件中启用放样设置staking = 1。",
+            "NOTENABLEDINSTR": "要放样，您需要在metrix.conf文件中启用放样设置staking = 1。",
             "NOTSTAKINGTITLE": "钱包没有赌注",
             "NOTSTAKINGINFO": "您的钱包目前已被锁定以进行赌注。",
             "NOTSTAKINGINSTR": "您可以通过解锁钱包来开始赌注",
@@ -69,7 +69,7 @@
             "ADDRESS": "地址",
             "ENABLED": "启用",
             "NOTENABLEDTITLE": "未启用Masternodes",
-            "NOTENABLEDINSTR": "要运行masternode，您需要通过设置masternode = 1并在Linda.conf文件中配置'masternodeprivkey'和'masternodeaddr'变量来启用masternode。",
+            "NOTENABLEDINSTR": "要运行masternode，您需要通过设置masternode = 1并在metrix.conf文件中配置'masternodeprivkey'和'masternodeaddr'变量来启用masternode。",
             "STARTBUTTON": "开始本地",
             "STARTALIASBUTTON": "启动Alias",
             "STARTALLBUTTON": "全部启动"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "海拔高度版"
             },
             "DEBUG": {
-                "CONSOLEINFO": "欢迎使用Linda Core RPC控制台。键入help以获取可用命令的概述。",
+                "CONSOLEINFO": "欢迎使用Metrix Core RPC控制台。键入help以获取可用命令的概述。",
                 "CONSOLEWARNING": "警告：诈骗者一直处于活动状态，告诉用户在这里键入命令，窃取他们的钱包内容。如果没有完全理解命令的分支，请不要使用此控制台。",
                 "COMMANDPLACEHODLER": "输入命令"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "起跑"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "当Linda Core在外部运行时，无法运行这些修复命令",
-                "INFO": "下面的按钮将使用命令行选项重新启动Linda Core以修复钱包，修复损坏的区块链文件或丢失/过时事务的问题。",
+                "INFOEXTERNAL": "当Metrix Core在外部运行时，无法运行这些修复命令",
+                "INFO": "下面的按钮将使用命令行选项重新启动Metrix Core以修复钱包，修复损坏的区块链文件或丢失/过时事务的问题。",
                 "SALVAGEBUTTON": "打捞钱包",
                 "SALVAGEINFO": "-salvagewallet：尝试从损坏的wallet.dat中恢复私钥。",
                 "RESCANBUTTON": "重新扫描区块链文件",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "琳达核心",
-            "ABOUTCORE": "版权所有©2009-2015比特币开发者<br/>版权所有©2011-2012 PPCoin Developers <br/>版权所有©2012-2014 NovaCoin开发人员<br/>版权所有©2014-2018 Linda开发人员<br/><br/>这是实验性软件。 <br/>根据MIT / X11软件许可证分发，请参阅随附文件COPYING或http://www.opensource.org/licenses/mit-license.php。 <br/><br/>本产品包括由OpenSSL Project开发的用于OpenSSL Toolkit（https://www.openssl.org）的软件和由Eric Young（eay@cryptsoft.com）编写的加密软件和由Thomas Bernard编写的UPnP软件。",
+            "ABOUTCORE": "版权所有©2009-2015比特币开发者<br/>版权所有©2011-2012 PPCoin Developers <br/>版权所有©2012-2014 NovaCoin开发人员<br/>版权所有©2014-2019 Linda开发人员<br/><br/>这是实验性软件。 <br/>根据MIT / X11软件许可证分发，请参阅随附文件COPYING或http://www.opensource.org/licenses/mit-license.php。 <br/><br/>本产品包括由OpenSSL Project开发的用于OpenSSL Toolkit（https://www.openssl.org）的软件和由Eric Young（eay@cryptsoft.com）编写的加密软件和由Thomas Bernard编写的UPnP软件。",
             "ABOUTALTITUDETAB": "高度",
-            "ABOUTALTITUDE": "版权所有©2018 Linda开发人员<br/><br/>此软件根据GPL-3.0许可证分发，有关详细信息，请参阅https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE。"
+            "ABOUTALTITUDE": "版权所有©2019 Linda开发人员<br/><br/>此软件根据GPL-3.0许可证分发，有关详细信息，请参阅https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE。"
         },
         "LOCALE": {
             "TITLE": "选择语言"
@@ -245,7 +245,7 @@
             "ENTERPASSPHRASETITLE": "输入您的电子钱包密码",
             "UNLOCKSTAKINGONLY": "解锁只有赌注",
             "CLIENTUPDATETITLE": "Linda核心更新可用",
-            "CLIENTUPDATEINFO": "Linda Core提供了更新。你想现在安装吗？",
+            "CLIENTUPDATEINFO": "Metrix Core提供了更新。你想现在安装吗？",
             "WALLETUPDATETITLE": "高度更新可用",
             "WALLETUPDATEINFO": "Altitude可以更新。你想现在下载吗？",
             "CLIENTUPDATEBUTTON": "更新",
@@ -259,16 +259,16 @@
             "ENCRYPTTITLE": "加密你的钱包",
             "ENCRYPTBUTTON": "加密",
             "CLIENTSTOPPEDTITLE": "琳达核心停了下来",
-            "CLIENTSTOPPEDINFO": "Linda Core已失去连接。您可以停止钱包或启动内部Linda Core。",
+            "CLIENTSTOPPEDINFO": "Metrix Core已失去连接。您可以停止钱包或启动内部Metrix Core。",
             "CLIENTSTOPPEDBUTTONEXIT": "退出钱包",
-            "CLIENTSTOPPEDBUTTONSTART": "启动Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "启动Metrix Core",
             "ENCRYPTEDTITLE": "钱包加密",
             "ENCRYPTEDCONTENT": "您对钱包文件进行的所有先前备份应替换为新生成的加密钱包文件。出于安全原因，一旦开始使用新的加密钱包，未加密的钱包文件的先前备份将变得无用。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "琳达核心出乎意料地停了下来",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core出现问题导致它终止。建议检查debug.log文件以查找问题。",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出现问题导致它终止。建议检查debug.log文件以查找问题。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "重启客户端",
-            "CLIENTINVALIDCONFIGTITLE": "Linda.conf配置无效",
-            "CLIENTINVALIDCONFIGINFO": "您的Linda.conf具有无效的masternode设置，这将导致Linda Core立即退出。请检查此文件。"
+            "CLIENTINVALIDCONFIGTITLE": "metrix.conf配置无效",
+            "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有无效的masternode设置，这将导致Metrix Core立即退出。请检查此文件。"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "签署留言......",
             "VERIFYMESSAGE": "验证消息...",
             "LOCALE": "语言...",
-            "RESTARTCORE": "重启Linda Core",
+            "RESTARTCORE": "重启Metrix Core",
             "EXIT": "出口",
             "OPTIONS": "选项..."
         },
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "接受"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "初始化Linda Core......",
-        "DOWNLOADCLIENT": "正在下载Linda Core......",
+        "INITIALISING": "初始化Metrix Core......",
+        "DOWNLOADCLIENT": "正在下载Metrix Core......",
         "UPDATEAVAILABLE": "Linda核心更新可用",
         "SHUTTINGDOWN": "关闭琳达核心......",
-        "RESTARTING": "重启Linda Core......"
+        "RESTARTING": "重启Metrix Core......"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新帐户已成功创建",

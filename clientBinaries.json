@@ -1,4 +1,49 @@
 {
+    "metrixd": {
+        "version": "3.3.3.0",
+        "win32": {
+            "x64": {
+                "download": {
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.3.3.0-e725be4/metrixd-win32-x64.exe",
+                    "sha256": "BA5873940F863D9720B3C9769A960EF6AD92D29EA102CD7A0849A1EB27DA1CB2"
+                },
+                "bin": "metrixd.exe"
+            },
+            "ia32": {
+                "download": {
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.3.3.0-e725be4/metrixd-win32-x86.exe",
+                    "sha256": "DC71790B7DEF0097455CE4EFAC698DAC9A432D8FC7F4162630A2CD4D025456BA"
+                },
+                "bin": "metrixd.exe"
+            }
+        },
+        "linux": {
+            "x64": {
+                "download": {
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.3.3.0-e725be4/metrixd-linux-x64",
+                    "sha256": "6F3EA9B5CBEDA8EFB945ABA828C91910EE1B40963CA99DB2BBF2F2E5D2B7D2F5"
+                },
+                "bin": "metrixd"
+            }
+        },
+        "darwin": {
+            "x64": {
+                "download": {
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.3.3.0-e725be4/metrixd-darwin-x64",
+                    "sha256": "D6D9B51A808540F503AA7B5CF4CF1AFCB5E8D5F3AF6BEA85FFB3433CC26C8F70"
+                },
+                "bin": "metrixd"
+            }
+        },
+        "versions": {
+            "3.3.3.0": [
+                "D6D9B51A808540F503AA7B5CF4CF1AFCB5E8D5F3AF6BEA85FFB3433CC26C8F70",
+                "6F3EA9B5CBEDA8EFB945ABA828C91910EE1B40963CA99DB2BBF2F2E5D2B7D2F5",
+                "DC71790B7DEF0097455CE4EFAC698DAC9A432D8FC7F4162630A2CD4D025456BA",
+                "BA5873940F863D9720B3C9769A960EF6AD92D29EA102CD7A0849A1EB27DA1CB2"
+            ]
+        }
+    },
     "Lindad": {
         "version": "3.3.2.0",
         "win32": {

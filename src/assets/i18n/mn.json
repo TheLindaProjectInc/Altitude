@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Түрийвч одоогоор хатаж байна",
             "NOTENABLEDTITLE": "Staking идэвхжээгүй байна",
             "NOTENABLEDINFO": "Staking одоогоор идэвхжээгүй байна.",
-            "NOTENABLEDINSTR": "Гадасны хувьд та Linda.conf файлдаа staking = 1 гэсэн stack тохируулгыг идэвхжүүлэх хэрэгтэй болно.",
+            "NOTENABLEDINSTR": "Гадасны хувьд та metrix.conf файлдаа staking = 1 гэсэн stack тохируулгыг идэвхжүүлэх хэрэгтэй болно.",
             "NOTSTAKINGTITLE": "Түрийвч түрийвчгүй",
             "NOTSTAKINGINFO": "Таны хэтэвч одоогоор түгжигдсэн байна.",
             "NOTSTAKINGINSTR": "Та түрийвчээ түрийлгээд түрийвчээ түрхээд зогсоож болно",
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Дээд зэрэглэлийн хувилбар"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPC консолид тавтай морилно уу. Боломжтой командуудын тоймыг харахын тулд тусламжийг оруулна уу.",
+                "CONSOLEINFO": "Metrix Core RPC консолид тавтай морилно уу. Боломжтой командуудын тоймыг харахын тулд тусламжийг оруулна уу.",
                 "CONSOLEWARNING": "АНХААРУУЛГА: Scammers идэвхтэй байна, хэрэглэгчдийг энд бичиж, хэтэвчий агуулгыг хулгайлахыг хэлэв. Тухайн командыг бүрэн ойлгоогүй бол энэ консолыг бүү ашигла.",
                 "COMMANDPLACEHODLER": "Тушаал оруулна уу"
             },
@@ -122,7 +122,7 @@
             },
             "REPAIR": {
                 "INFOEXTERNAL": "Эдгээр засварын командуудыг Линда Кор нь гаднаас ажиллуулах үед ажиллуулах боломжгүй",
-                "INFO": "Доорх товчлуурууд нь Linda Core-ийг тушаалын мөрийн тусламжтайгаар хэтэвчийг засах, авлигад блокийн файлууд эсвэл хуучирсан гүйлгээтэй холбоотой асуудлыг засах болно.",
+                "INFO": "Доорх товчлуурууд нь Metrix Core-ийг тушаалын мөрийн тусламжтайгаар хэтэвчийг засах, авлигад блокийн файлууд эсвэл хуучирсан гүйлгээтэй холбоотой асуудлыг засах болно.",
                 "SALVAGEBUTTON": "Тасралтгүй түрийвч",
                 "SALVAGEINFO": "-salvagewallet: Авлигад хэтэвчээс авсан хувийн түлхүүрүүдийг сэргээх оролдлого.",
                 "RESCANBUTTON": "Rescan blockchain файлууд",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "Линда Голд",
-            "ABOUTCORE": "Зохиогчийн эрх © 2009-2015 Bitcoin хөгжүүлэгчид <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 The NovaCoin developers <br/> Зохиогчийн эрх © 2014-2018 Линда хөгжүүлэгчид <br/><br/> Энэ бол туршилтын програм юм. <br/> MIT / X11 програм хангамжийн лицензийн дагуу тарааж байгаа COPYING буюу http://www.opensource.org/licenses/mit-license.php файлыг үзнэ үү. <br/><br/> Энэ бүтээгдэхүүн нь OpenSSL Toolkit (https://www.openssl.org) болон Eric Young (eay@cryptsoft.com) бичсэн криптографийн програм хангамж болон Томас Бернардын бичсэн UPnP програм хангамжид зориулж боловсруулсан програм хангамж юм.",
+            "ABOUTCORE": "Зохиогчийн эрх © 2009-2015 Bitcoin хөгжүүлэгчид <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 The NovaCoin developers <br/> Зохиогчийн эрх © 2014-2019 Линда хөгжүүлэгчид <br/><br/> Энэ бол туршилтын програм юм. <br/> MIT / X11 програм хангамжийн лицензийн дагуу тарааж байгаа COPYING буюу http://www.opensource.org/licenses/mit-license.php файлыг үзнэ үү. <br/><br/> Энэ бүтээгдэхүүн нь OpenSSL Toolkit (https://www.openssl.org) болон Eric Young (eay@cryptsoft.com) бичсэн криптографийн програм хангамж болон Томас Бернардын бичсэн UPnP програм хангамжид зориулж боловсруулсан програм хангамж юм.",
             "ABOUTALTITUDETAB": "Өндөр",
-            "ABOUTALTITUDE": "Зохиогчийн эрх © 2018 Линда хөгжүүлэгчид <br/><br/> Энэ програм хангамж нь GPL-3.0 лицензийн доор тархсан бөгөөд https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE хаягийг үзнэ үү."
+            "ABOUTALTITUDE": "Зохиогчийн эрх © 2019 Линда хөгжүүлэгчид <br/><br/> Энэ програм хангамж нь GPL-3.0 лицензийн доор тархсан бөгөөд https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE хаягийг үзнэ үү."
         },
         "LOCALE": {
             "TITLE": "Хэл сонгох"
@@ -259,7 +259,7 @@
             "ENCRYPTTITLE": "Түрийвчээ шифрлэ",
             "ENCRYPTBUTTON": "Шифрлэх",
             "CLIENTSTOPPEDTITLE": "Линда Гол зогсов",
-            "CLIENTSTOPPEDINFO": "Линда Корегийн холболтыг алдсан байна. Та түрийвчийг зогсоох эсвэл дотоод Linda Core-г эхлүүлж болно.",
+            "CLIENTSTOPPEDINFO": "Линда Корегийн холболтыг алдсан байна. Та түрийвчийг зогсоох эсвэл дотоод Metrix Core-г эхлүүлж болно.",
             "CLIENTSTOPPEDBUTTONEXIT": "Түрийвч гарна уу",
             "CLIENTSTOPPEDBUTTONSTART": "Линда Голдийг эхлүүлээрэй",
             "ENCRYPTEDTITLE": "Түрийвчийг шифрлэсэн",
@@ -268,11 +268,11 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Линда Кор-ийн хувьд үүнийг зогсооход хүргэсэн. Асуудлын талаар өөрийн debug.log файлыг шалгаж үзэхийг зөвлөж байна.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентийг дахин эхлүүлэх",
             "CLIENTINVALIDCONFIGTITLE": "Линда.conf тохируулга буруу байна",
-            "CLIENTINVALIDCONFIGINFO": "Таны Linda.conf нь Linda Core-ийг нэн даруй гарахад хүргэдэг буруу masternode тохируулгатай байна. Энэ файлыг шалгана уу."
+            "CLIENTINVALIDCONFIGINFO": "Таны metrix.conf нь Metrix Core-ийг нэн даруй гарахад хүргэдэг буруу masternode тохируулгатай байна. Энэ файлыг шалгана уу."
         },
         "ADDRESSBOOK": {
             "TITLE": "Хаяг хадгалах ном",
-            "SENDINGINFO": "Эдгээр нь төлбөрөө илгээхэд зориулж хадгалсан Linda хаяг юм. Зоос илгээхээсээ өмнө дүн болон хүлээн авах хаягаа үргэлж шалгаж бай",
+            "SENDINGINFO": "Эдгээр нь төлбөрөө илгээхэд зориулж хадгалсан Metrix хаяг юм. Зоос илгээхээсээ өмнө дүн болон хүлээн авах хаягаа үргэлж шалгаж бай",
             "RECEIVINGINFO": "Эдгээр нь таны төлбөрийг хүлээн авах Линда хаягдах болно.",
             "BUTTONSELECT": "Сонгох",
             "TABLECOLUMNS_LABEL": "Шошго",
@@ -337,10 +337,10 @@
         "ACCEPTBUTTON": "Хүлээн авах"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core-ийг эхлүүлээд...",
+        "INITIALISING": "Metrix Core-ийг эхлүүлээд...",
         "DOWNLOADCLIENT": "Линда Голыг татаж авах...",
         "UPDATEAVAILABLE": "Линда Гол Сайтын шинэчлэл боломжтой",
-        "SHUTTINGDOWN": "Linda Core-ийг унтраа...",
+        "SHUTTINGDOWN": "Metrix Core-ийг унтраа...",
         "RESTARTING": "Линда Гол дахин эхлүүлэх..."
     },
     "NOTIFICATIONS": {

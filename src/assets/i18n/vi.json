@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Ví hiện đang được đặt",
             "NOTENABLEDTITLE": "Đặt cược không được kích hoạt",
             "NOTENABLEDINFO": "Đặt cược hiện không được kích hoạt.",
-            "NOTENABLEDINSTR": "Để đặt cược, bạn sẽ cần kích hoạt cài đặt stakes = 1 trong tệp Linda.conf của bạn.",
+            "NOTENABLEDINSTR": "Để đặt cược, bạn sẽ cần kích hoạt cài đặt stakes = 1 trong tệp metrix.conf của bạn.",
             "NOTSTAKINGTITLE": "Ví không đặt cọc",
             "NOTSTAKINGINFO": "Ví của bạn hiện đang bị khóa để đặt cược.",
             "NOTSTAKINGINSTR": "Bạn có thể bắt đầu đặt cược bằng cách mở khóa ví của bạn để đặt cược",
@@ -69,7 +69,7 @@
             "ADDRESS": "Địa chỉ nhà",
             "ENABLED": "Đã bật",
             "NOTENABLEDTITLE": "Masternodes không được kích hoạt",
-            "NOTENABLEDINSTR": "Để chạy mã chính, bạn sẽ cần bật mã chủ bằng cách đặt masternode = 1 và định cấu hình các biến 'masternodeprivkey' và 'masternodeaddr' trong tệp Linda.conf của bạn.",
+            "NOTENABLEDINSTR": "Để chạy mã chính, bạn sẽ cần bật mã chủ bằng cách đặt masternode = 1 và định cấu hình các biến 'masternodeprivkey' và 'masternodeaddr' trong tệp metrix.conf của bạn.",
             "STARTBUTTON": "Bắt đầu địa phương",
             "STARTALIASBUTTON": "Bắt đầu bí danh",
             "STARTALLBUTTON": "Bắt đầu tất cả"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Phiên bản độ cao"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Chào mừng bạn đến với bảng điều khiển Linda Core RPC. Nhập trợ giúp để biết tổng quan về các lệnh có sẵn.",
+                "CONSOLEINFO": "Chào mừng bạn đến với bảng điều khiển Metrix Core RPC. Nhập trợ giúp để biết tổng quan về các lệnh có sẵn.",
                 "CONSOLEWARNING": "CẢNH BÁO: Kẻ lừa đảo đã hoạt động, yêu cầu người dùng nhập lệnh tại đây, đánh cắp nội dung ví của họ. Không sử dụng bàn điều khiển này mà không hiểu đầy đủ về sự phân nhánh của lệnh.",
                 "COMMANDPLACEHODLER": "Nhập lệnh"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Khối bắt đầu"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Các lệnh sửa chữa này không thể chạy khi Linda Core được chạy bên ngoài",
-                "INFO": "Các nút bên dưới sẽ khởi động lại Linda Core với các tùy chọn dòng lệnh để sửa chữa ví, khắc phục các sự cố với tệp blockchain bị hỏng hoặc giao dịch bị thiếu / lỗi thời.",
+                "INFOEXTERNAL": "Các lệnh sửa chữa này không thể chạy khi Metrix Core được chạy bên ngoài",
+                "INFO": "Các nút bên dưới sẽ khởi động lại Metrix Core với các tùy chọn dòng lệnh để sửa chữa ví, khắc phục các sự cố với tệp blockchain bị hỏng hoặc giao dịch bị thiếu / lỗi thời.",
                 "SALVAGEBUTTON": "Ví cứu hộ",
                 "SALVAGEINFO": "-salvagewallet: Cố gắng khôi phục khóa riêng tư từ ví.dat bị hỏng.",
                 "RESCANBUTTON": "Quét lại các tập tin blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Lõi Linda",
-            "ABOUTCORE": "Bản quyền © 2009-2015 Các nhà phát triển Bitcoin <br/> Bản quyền © 2011-2012 Nhà phát triển PPCoin <br/> Bản quyền © 2012-2014 Các nhà phát triển NovaCoin <br/> Bản quyền © 2014-2018 Nhà phát triển Linda <br/><br/> Đây là phần mềm thử nghiệm. <br/> Được phân phối theo giấy phép phần mềm MIT / X11, xem tệp đi kèm COPYING hoặc http://www.opensource.org/licenses/mit-license.php. <br/><br/> Sản phẩm này bao gồm phần mềm do Dự án OpenSSL phát triển để sử dụng trong Bộ công cụ OpenSSL (https://www.openssl.org) và phần mềm mật mã được viết bởi Eric Young (eay@cryptsoft.com) và phần mềm UPnP được viết bởi Thomas Bernard.",
+            "ABOUTCORETAB": "Lõi Metrix",
+            "ABOUTCORE": "Bản quyền © 2009-2015 Các nhà phát triển Bitcoin <br/> Bản quyền © 2011-2012 Nhà phát triển PPCoin <br/> Bản quyền © 2012-2014 Các nhà phát triển NovaCoin <br/> Bản quyền © 2014-2019 Nhà phát triển Metrix <br/><br/> Đây là phần mềm thử nghiệm. <br/> Được phân phối theo giấy phép phần mềm MIT / X11, xem tệp đi kèm COPYING hoặc http://www.opensource.org/licenses/mit-license.php. <br/><br/> Sản phẩm này bao gồm phần mềm do Dự án OpenSSL phát triển để sử dụng trong Bộ công cụ OpenSSL (https://www.openssl.org) và phần mềm mật mã được viết bởi Eric Young (eay@cryptsoft.com) và phần mềm UPnP được viết bởi Thomas Bernard.",
             "ABOUTALTITUDETAB": "Độ cao",
-            "ABOUTALTITUDE": "Bản quyền © 2018 Các nhà phát triển Linda <br/><br/> Phần mềm này được phân phối theo giấy phép GPL-3.0, xem https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE để biết thêm thông tin."
+            "ABOUTALTITUDE": "Bản quyền © 2019 Các nhà phát triển Metrix <br/><br/> Phần mềm này được phân phối theo giấy phép GPL-3.0, xem https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE để biết thêm thông tin."
         },
         "LOCALE": {
             "TITLE": "Chọn ngôn ngữ"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Nhập cụm mật khẩu ví của bạn",
             "UNLOCKSTAKINGONLY": "Mở khóa chỉ để đặt cược",
-            "CLIENTUPDATETITLE": "Có sẵn cập nhật lõi Linda",
-            "CLIENTUPDATEINFO": "Một bản cập nhật có sẵn cho Linda Core. Bạn có muốn cài đặt nó bây giờ?",
+            "CLIENTUPDATETITLE": "Có sẵn cập nhật lõi Metrix",
+            "CLIENTUPDATEINFO": "Một bản cập nhật có sẵn cho Metrix Core. Bạn có muốn cài đặt nó bây giờ?",
             "WALLETUPDATETITLE": "Cập nhật độ cao có sẵn",
             "WALLETUPDATEINFO": "Một bản cập nhật có sẵn cho Độ cao. Bạn có muốn tải về nó bây giờ?",
             "CLIENTUPDATEBUTTON": "Cập nhật",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Thay đổi cụm mật khẩu",
             "ENCRYPTTITLE": "Mã hóa ví của bạn",
             "ENCRYPTBUTTON": "Mã hóa",
-            "CLIENTSTOPPEDTITLE": "Lõi Linda dừng lại",
-            "CLIENTSTOPPEDINFO": "Kết nối đã bị mất với Linda Core. Bạn có thể dừng ví hoặc khởi động Linda Core nội bộ.",
+            "CLIENTSTOPPEDTITLE": "Lõi Metrix dừng lại",
+            "CLIENTSTOPPEDINFO": "Kết nối đã bị mất với Metrix Core. Bạn có thể dừng ví hoặc khởi động Metrix Core nội bộ.",
             "CLIENTSTOPPEDBUTTONEXIT": "Thoát ví",
-            "CLIENTSTOPPEDBUTTONSTART": "Bắt đầu Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Bắt đầu Metrix Core",
             "ENCRYPTEDTITLE": "Ví được mã hóa",
             "ENCRYPTEDCONTENT": "Bất kỳ bản sao lưu nào trước đây bạn đã tạo từ tệp ví của mình nên được thay thế bằng tệp ví được mã hóa mới được tạo. Vì lý do bảo mật, các bản sao lưu trước đó của tệp ví không được mã hóa sẽ trở nên vô dụng ngay khi bạn bắt đầu sử dụng ví mới được mã hóa.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core dừng lại một cách bất ngờ",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Có một vấn đề với Linda Core đã khiến nó chấm dứt. Bạn nên kiểm tra tệp debug.log của mình để biết các vấn đề.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dừng lại một cách bất ngờ",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Có một vấn đề với Metrix Core đã khiến nó chấm dứt. Bạn nên kiểm tra tệp debug.log của mình để biết các vấn đề.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Khởi động lại khách hàng",
-            "CLIENTINVALIDCONFIGTITLE": "Cấu hình Linda.conf không hợp lệ",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Linda Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này."
+            "CLIENTINVALIDCONFIGTITLE": "Cấu hình metrix.conf không hợp lệ",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này."
         },
         "ADDRESSBOOK": {
             "TITLE": "Sổ địa chỉ",
-            "SENDINGINFO": "Đây là địa chỉ Linda đã lưu của bạn để gửi thanh toán. Luôn kiểm tra số tiền và địa chỉ nhận trước khi gửi tiền",
-            "RECEIVINGINFO": "Đây là địa chỉ Linda đã lưu của bạn để nhận thanh toán.",
+            "SENDINGINFO": "Đây là địa chỉ Metrix đã lưu của bạn để gửi thanh toán. Luôn kiểm tra số tiền và địa chỉ nhận trước khi gửi tiền",
+            "RECEIVINGINFO": "Đây là địa chỉ Metrix đã lưu của bạn để nhận thanh toán.",
             "BUTTONSELECT": "Lựa chọn",
             "TABLECOLUMNS_LABEL": "Nhãn",
             "TABLECOLUMNS_ADDRESS": "Địa chỉ nhà",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Ký tin nhắn...",
             "VERIFYMESSAGE": "Xác nhận tin nhắn...",
             "LOCALE": "Ngôn ngữ...",
-            "RESTARTCORE": "Khởi động lại Linda Core",
+            "RESTARTCORE": "Khởi động lại Metrix Core",
             "EXIT": "Lối thoát hiểm",
             "OPTIONS": "Tùy chọn..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Cứu giúp",
             "COMMANDLINEOPTIONS": "Tùy chọn dòng lệnh...",
-            "CHECKUPDATECORE": "Kiểm tra cập nhật Linda Core...",
+            "CHECKUPDATECORE": "Kiểm tra cập nhật Metrix Core...",
             "CHECKUPDATEWALLET": "Kiểm tra cập nhật độ cao...",
-            "ABOUTCORE": "Về Linda Core...",
+            "ABOUTCORE": "Về Metrix Core...",
             "ABOUTALTITUDE": "Về độ cao...",
             "DISCORD": "Bất hòa...",
             "ISSUE": "Báo cáo một vấn đề..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "được",
         "CLEARALLBUTTON": "Quet sạch tât cả",
         "ENTERACCOUNTLABEL": "Nhập nhãn cho địa chỉ này",
-        "ENTERADDRESSLABEL": "Nhập địa chỉ Linda",
+        "ENTERADDRESSLABEL": "Nhập địa chỉ Metrix",
         "AGO": "trước đây",
         "SORTBY": "Sắp xếp theo",
         "SEARCH": "Tìm kiếm",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Chấp nhận"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Khởi tạo Linda Core...",
-        "DOWNLOADCLIENT": "Đang tải xuống Linda Core...",
-        "UPDATEAVAILABLE": "Có sẵn cập nhật lõi Linda",
-        "SHUTTINGDOWN": "Tắt Linda Core...",
-        "RESTARTING": "Khởi động lại Linda Core..."
+        "INITIALISING": "Khởi tạo Metrix Core...",
+        "DOWNLOADCLIENT": "Đang tải xuống Metrix Core...",
+        "UPDATEAVAILABLE": "Có sẵn cập nhật lõi Metrix",
+        "SHUTTINGDOWN": "Tắt Metrix Core...",
+        "RESTARTING": "Khởi động lại Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tài khoản mới được tạo thành công",

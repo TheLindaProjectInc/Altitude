@@ -49,7 +49,7 @@
             "STAKINGTITLE": "საფულე ამჟამად დგას",
             "NOTENABLEDTITLE": "გაფრთხილება არ არის ჩართული",
             "NOTENABLEDINFO": "ამჟამად არ არის ჩართული.",
-            "NOTENABLEDINSTR": "დაქორწინებისთვის საჭიროა თქვენი Linda.conf ფაილი 1-ის სტაგირება.",
+            "NOTENABLEDINSTR": "დაქორწინებისთვის საჭიროა თქვენი metrix.conf ფაილი 1-ის სტაგირება.",
             "NOTSTAKINGTITLE": "საფულე არ არის საყურადღებო",
             "NOTSTAKINGINFO": "შენი საფულე ამჟამად ჩაკეტილია.",
             "NOTSTAKINGINSTR": "თქვენ შეგიძლიათ დაიწყოთ წამოსაწყებად თქვენი ჩამოსხმის დაბლოკვა",
@@ -69,7 +69,7 @@
             "ADDRESS": "მისამართი",
             "ENABLED": "ჩართულია",
             "NOTENABLEDTITLE": "მალენდოდები არ არის ჩართული",
-            "NOTENABLEDINSTR": "მენდოსტის გასაშვებად თქვენ უნდა მიიღოთ მენდოდედები = 1 და დააკონფიგურიროთ \"მენდალდეპრივი\" და \"მენდოსდედრი\" ცვლადები თქვენს Linda.conf ფაილში.",
+            "NOTENABLEDINSTR": "მენდოსტის გასაშვებად თქვენ უნდა მიიღოთ მენდოდედები = 1 და დააკონფიგურიროთ \"მენდალდეპრივი\" და \"მენდოსდედრი\" ცვლადები თქვენს metrix.conf ფაილში.",
             "STARTBUTTON": "ლოკალური დაწყება",
             "STARTALIASBUTTON": "ალიასის დაწყება",
             "STARTALLBUTTON": "დაიწყე ყველაფერი"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "სიმაღლის ვერსია"
             },
             "DEBUG": {
-                "CONSOLEINFO": "კეთილი იყოს თქვენი მობრძანება Linda Core RPC console. შეიტანეთ დახმარება ხელმისაწვდომი ბრძანებების მიმოხილვაზე.",
+                "CONSOLEINFO": "კეთილი იყოს თქვენი მობრძანება Metrix Core RPC console. შეიტანეთ დახმარება ხელმისაწვდომი ბრძანებების მიმოხილვაზე.",
                 "CONSOLEWARNING": "გაფრთხილება: Scammers აქტიური, ვეუბნებოდი წევრებს ტიპის ბრძანებები აქ, ქურდობაში მათი საფულე შინაარსი. ნუ გამოიყენებთ ამ კონსოლს, სრულად ვერ გაიგებ ბრძანების რადიფიკაციას.",
                 "COMMANDPLACEHODLER": "შეიყვანეთ ბრძანება"
             },
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "ლინდა კორ",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin დეველოპერები <br/> Copyright © 2011-2012 PPCoin დეველოპერები <br/> Copyright © 2012-2014 NovaCoin დეველოპერები <br/> Copyright © 2014-2018 ლინდა დეველოპერები <br/><br/> ეს არის ექსპერიმენტული პროგრამა. <br/> განაწილებულია MIT / X11 პროგრამული ლიცენზიით, იხილეთ თანდართული ფაილი COPYING ან http://www.opensource.org/licenses/mit-license.php. <br/><br/> ეს პროდუქტი მოიცავს OpenSSL პროექტის მიერ შემუშავებულ პროგრამას OpenSSL Toolkit- ში (https://www.openssl.org) და ერიკ იანგის (eay@cryptsoft.com) მიერ დაწერილი კრიპტოგრაფიული პროგრამული უზრუნველყოფა და თომას ბერნარტის მიერ UPnP პროგრამული უზრუნველყოფა.",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin დეველოპერები <br/> Copyright © 2011-2012 PPCoin დეველოპერები <br/> Copyright © 2012-2014 NovaCoin დეველოპერები <br/> Copyright © 2014-2019 ლინდა დეველოპერები <br/><br/> ეს არის ექსპერიმენტული პროგრამა. <br/> განაწილებულია MIT / X11 პროგრამული ლიცენზიით, იხილეთ თანდართული ფაილი COPYING ან http://www.opensource.org/licenses/mit-license.php. <br/><br/> ეს პროდუქტი მოიცავს OpenSSL პროექტის მიერ შემუშავებულ პროგრამას OpenSSL Toolkit- ში (https://www.openssl.org) და ერიკ იანგის (eay@cryptsoft.com) მიერ დაწერილი კრიპტოგრაფიული პროგრამული უზრუნველყოფა და თომას ბერნარტის მიერ UPnP პროგრამული უზრუნველყოფა.",
             "ABOUTALTITUDETAB": "სიმაღლე",
-            "ABOUTALTITUDE": "Copyright © 2018 ლინდა დეველოპერები <br/><br/> ეს პროგრამა ვრცელდება GPL-3.0 ლიცენზიით, იხილეთ https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE დამატებითი ინფორმაციისთვის."
+            "ABOUTALTITUDE": "Copyright © 2019 ლინდა დეველოპერები <br/><br/> ეს პროგრამა ვრცელდება GPL-3.0 ლიცენზიით, იხილეთ https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE დამატებითი ინფორმაციისთვის."
         },
         "LOCALE": {
             "TITLE": "Აირჩიეთ ენა"
@@ -267,8 +267,8 @@
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ლინდა კორი მოულოდნელად შეაჩერა",
             "CLIENTCLOSEDUNEXPECTEDINFO": "იყო პრობლემა ლინდა Core, რომელმაც გამოიწვია ეს შეწყვიტოს. რეკომენდირებულია შეამოწმოთ თქვენი debug.log ფაილის საკითხები.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "გადატვირთვა კლიენტი",
-            "CLIENTINVALIDCONFIGTITLE": "არასწორი Linda.conf კონფიგურაცია",
-            "CLIENTINVALIDCONFIGINFO": "თქვენი Linda.conf აქვს ბათილი მაჩანოდის კონფიგურაცია, რამაც გამოიწვიოს ლინდა Core გამოდის დაუყოვნებლივ. გთხოვთ, შეამოწმოთ ეს ფაილი."
+            "CLIENTINVALIDCONFIGTITLE": "არასწორი metrix.conf კონფიგურაცია",
+            "CLIENTINVALIDCONFIGINFO": "თქვენი metrix.conf აქვს ბათილი მაჩანოდის კონფიგურაცია, რამაც გამოიწვიოს ლინდა Core გამოდის დაუყოვნებლივ. გთხოვთ, შეამოწმოთ ეს ფაილი."
         },
         "ADDRESSBOOK": {
             "TITLE": "Მისამართების წიგნი",

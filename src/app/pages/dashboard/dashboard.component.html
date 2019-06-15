@@ -6,7 +6,7 @@
   </div>
 
   <h1>{{ 'PAGES.DASHBOARD.ACCOUNTS' | translate }}</h1>
-  <button class="btn btn-primary" (click)="showNewAccountModal()">
+  <button class="btn btn-default" (click)="showNewAccountModal()">
     <fa-icon icon="plus"></fa-icon>
     {{ 'PAGES.DASHBOARD.ADDACCOUNT' | translate }}
   </button>
@@ -26,7 +26,7 @@
           </div>
           <h6 class="account-balance">
             {{helpers.prettyCoins(account.balance)}}
-            <span>Linda</span>
+            <span>Metrix</span>
           </h6>
           <h6 class="account-address">{{account.address}}</h6>
         </div>
@@ -52,7 +52,7 @@
   <text-input [(inputModel)]="newAccountLabel" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
   <div class="modal-buttons">
     <button class="btn btn-default" (click)="addAccountModal.close()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
-    <button class="btn btn-primary" (click)="createNewAccount()">{{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate
+    <button class="btn btn-default" (click)="createNewAccount()">{{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate
       }}</button>
   </div>
 </ngx-smart-modal>

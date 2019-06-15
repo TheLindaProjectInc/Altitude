@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Hnab tsho tam sim no yog khaus",
             "NOTENABLEDTITLE": "Txaus tsis tau",
             "NOTENABLEDINFO": "Txaus tsis yog tam sim no enabled.",
-            "NOTENABLEDINSTR": "Rau ceg txheem ntseeg koj yuav tsum pab kom staking chaw staking = 1 hauv koj cov ntaub ntawv Linda.conf.",
+            "NOTENABLEDINSTR": "Rau ceg txheem ntseeg koj yuav tsum pab kom staking chaw staking = 1 hauv koj cov ntaub ntawv metrix.conf.",
             "NOTSTAKINGTITLE": "Hnab ntub tsis staking",
             "NOTSTAKINGINFO": "Koj lub hnab nyiaj tam sim no tau muab xauv cia rau staking.",
             "NOTSTAKINGINSTR": "Koj tuaj yeem pib staking los ntawm txhob xauv lub hnab nyiaj rau staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Chaw nyob",
             "ENABLED": "Enabled",
             "NOTENABLEDTITLE": "Masternodes tsis tau tso cai",
-            "NOTENABLEDINSTR": "Khiav lub nplais pobzeb koj yuav xav kom pab kom tau kev ua haujlwm masternode los ntawm kev teeming masitzode = 1 thiab configure 'masternodeprivkey' thiab 'masternodeaddr' zog rau hauv koj cov ntaub ntawv Linda.conf.",
+            "NOTENABLEDINSTR": "Khiav lub nplais pobzeb koj yuav xav kom pab kom tau kev ua haujlwm masternode los ntawm kev teeming masitzode = 1 thiab configure 'masternodeprivkey' thiab 'masternodeaddr' zog rau hauv koj cov ntaub ntawv metrix.conf.",
             "STARTBUTTON": "Pib hauv zos",
             "STARTALIASBUTTON": "Pib Alias",
             "STARTALLBUTTON": "Pib Txhua"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Txais tos rau Linda Core RPC console. Ntaus kev pabcuam rau cov ntsiab lus muaj nyob rau hauv.",
+                "CONSOLEINFO": "Txais tos rau Metrix Core RPC console. Ntaus kev pabcuam rau cov ntsiab lus muaj nyob rau hauv.",
                 "CONSOLEWARNING": "CEEB TOOM: Scammers tau ua haujlwm, qhia cov neeg siv hom ntaus nqi ntawm no, nyiag lawv lub hnab ntawv. Tsis txhob siv cov console no tsis nkag siab txog qhov ramification ntawm ib lo lus txib.",
                 "COMMANDPLACEHODLER": "Sau kev hais kom ua"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Pib Thaiv"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Cov kev kho lus txib no tsis tuaj yeem khiav thaum Linda Core khiav tawm sab nraud",
-                "INFO": "Cov nyees khawm hauv qab no yuav pib dua Linda Core nrog cov kab-kev xaiv kom kho lub hnab, txhim kho teeb meem nrog cov ntaub ntawv tsis sib xws blockchain los yog cov khoom tsis pom / tsis raug mob.",
+                "INFOEXTERNAL": "Cov kev kho lus txib no tsis tuaj yeem khiav thaum Metrix Core khiav tawm sab nraud",
+                "INFO": "Cov nyees khawm hauv qab no yuav pib dua Metrix Core nrog cov kab-kev xaiv kom kho lub hnab, txhim kho teeb meem nrog cov ntaub ntawv tsis sib xws blockchain los yog cov khoom tsis pom / tsis raug mob.",
                 "SALVAGEBUTTON": "Khaws Cia Hnab",
                 "SALVAGEINFO": "-Txhoob Daim Ntawv Teeb Meem: Tiv thaiv kom rov qab tau cov yuam sij los ntawm lub hnab nyiaj tsis ncaj.",
                 "RESCANBUTTON": "Rescan blockchain cov ntaub ntawv",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin kws tsim tawm <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin neeg tsim khoom <br/> Copyright © 2014-2018 Linda developers <br/><br/> Qhov no yog sim software. <br/> Muab faib raws li MIT / X11 software daim ntawv tso cai, saib cov ntaub ntawv nrog COPYING lossis http://www.opensource.org/licenses/mit-license.php. <br/><br/> Cov khoom no suav nrog software tsim los ntawm OpenSSL Project rau kev siv OpenSSL Toolkit (https://www.openssl.org) thiab cryptographic software sau los ntawm Eric Young (eay@cryptsoft.com) thiab UPnP software sau los ntawm Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin kws tsim tawm <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 NovaCoin neeg tsim khoom <br/> Copyright © 2014-2019 Metrix developers <br/><br/> Qhov no yog sim software. <br/> Muab faib raws li MIT / X11 software daim ntawv tso cai, saib cov ntaub ntawv nrog COPYING lossis http://www.opensource.org/licenses/mit-license.php. <br/><br/> Cov khoom no suav nrog software tsim los ntawm OpenSSL Project rau kev siv OpenSSL Toolkit (https://www.openssl.org) thiab cryptographic software sau los ntawm Eric Young (eay@cryptsoft.com) thiab UPnP software sau los ntawm Thomas Bernard.",
             "ABOUTALTITUDETAB": "Tshaj siab",
-            "ABOUTALTITUDE": "Copyright © 2018 Linda developers <br/><br/> Qhov software no muab faib raws li daim ntawv tso cai GPL-3.0, saib https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE rau cov lus qhia ntxiv."
+            "ABOUTALTITUDE": "Copyright © 2019 Metrix developers <br/><br/> Qhov software no muab faib raws li daim ntawv tso cai GPL-3.0, saib https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE rau cov lus qhia ntxiv."
         },
         "LOCALE": {
             "TITLE": "Xaiv Lus"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sau koj lub hnab ntawv Passphrase",
             "UNLOCKSTAKINGONLY": "Account rau staking xwb",
-            "CLIENTUPDATETITLE": "Linda Core Update Muaj",
-            "CLIENTUPDATEINFO": "Kev hloov tshiab muaj rau Linda Core. Koj puas xav nruab nws tam sim no?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Muaj",
+            "CLIENTUPDATEINFO": "Kev hloov tshiab muaj rau Metrix Core. Koj puas xav nruab nws tam sim no?",
             "WALLETUPDATETITLE": "Tshaj Tawm Tshav Kub Muaj",
             "WALLETUPDATEINFO": "Kev hloov tshiab muaj nyob rau ntawm Altitude. Koj puas xav mus download tau nws tam sim no?",
             "CLIENTUPDATEBUTTON": "Hloov tshiab",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Hloov Cov Passphrase",
             "ENCRYPTTITLE": "Encrypt koj lub hnab nyiaj",
             "ENCRYPTBUTTON": "Tshem tawm",
-            "CLIENTSTOPPEDTITLE": "Linda Core Nres",
-            "CLIENTSTOPPEDINFO": "Kev sib txuas tau ploj mus rau Linda Core. Koj tuaj yeem nres lub hnab lossis pib Linda Core nrog.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core Nres",
+            "CLIENTSTOPPEDINFO": "Kev sib txuas tau ploj mus rau Metrix Core. Koj tuaj yeem nres lub hnab lossis pib Metrix Core nrog.",
             "CLIENTSTOPPEDBUTTONEXIT": "Tawm Hnav Qeb",
-            "CLIENTSTOPPEDBUTTONSTART": "Pib Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Pib Metrix Core",
             "ENCRYPTEDTITLE": "Hnab ntim Encrypted",
             "ENCRYPTEDCONTENT": "Cov backups yav dhau los koj tau ua los ntawm koj lub hnab nyiaj yuav tsum tau hloov nrog lub tshiab generated, encrypted hnab ntawv. Rau kev ruaj ntseg, yav dhau los backups ntawm lub hnab ntaub ntawv unencrypted yuav ua tsis tau li sai tau thaum koj pib siv cov tshiab, encrypted hnab nyiaj.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core Nres Tshem Tawm",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj ib qho teeb meem nrog Linda Core uas tau ua rau nws xaus. Nws yog pom zoo kom xyuas koj cov ntaub ntawv debug.log rau cov teeb meem.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nres Tshem Tawm",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj ib qho teeb meem nrog Metrix Core uas tau ua rau nws xaus. Nws yog pom zoo kom xyuas koj cov ntaub ntawv debug.log rau cov teeb meem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rov Qab Client",
-            "CLIENTINVALIDCONFIGTITLE": "Invalid Linda.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Koj tus Linda.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Linda Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no."
+            "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
+            "CLIENTINVALIDCONFIGINFO": "Koj tus metrix.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Metrix Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no."
         },
         "ADDRESSBOOK": {
             "TITLE": "Chaw Nyob Hauv Phau Ntawv",
-            "SENDINGINFO": "Cov no yog koj qhov chaw nyob Linda saved rau kev xa nyiaj. Nco ntsoov xyuas qhov nyiaj thiab txais qhov chaw nyob ua ntej xa nyiaj npib",
-            "RECEIVINGINFO": "Cov no yog koj qhov chaw nyob Linda tau txais kev pabcuam rau kev txais nyiaj.",
+            "SENDINGINFO": "Cov no yog koj qhov chaw nyob Metrix saved rau kev xa nyiaj. Nco ntsoov xyuas qhov nyiaj thiab txais qhov chaw nyob ua ntej xa nyiaj npib",
+            "RECEIVINGINFO": "Cov no yog koj qhov chaw nyob Metrix tau txais kev pabcuam rau kev txais nyiaj.",
             "BUTTONSELECT": "Xaiv",
             "TABLECOLUMNS_LABEL": "Daim ntawv lo",
             "TABLECOLUMNS_ADDRESS": "Chaw nyob",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sau Npe...",
             "VERIFYMESSAGE": "Tshawb xyuas...",
             "LOCALE": "Hais lus...",
-            "RESTARTCORE": "Rov Qab Pib Linda Core",
+            "RESTARTCORE": "Rov Qab Pib Metrix Core",
             "EXIT": "Tawm",
             "OPTIONS": "Kev xaiv..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Pab",
             "COMMANDLINEOPTIONS": "Hais kom ua kab xaiv...",
-            "CHECKUPDATECORE": "Xyuas rau Linda Core Update...",
+            "CHECKUPDATECORE": "Xyuas rau Metrix Core Update...",
             "CHECKUPDATEWALLET": "Xyuas kom Tshaj Xo Tshaj Tawm...",
-            "ABOUTCORE": "Txog Linda Core...",
+            "ABOUTCORE": "Txog Metrix Core...",
             "ABOUTALTITUDE": "Txog Altitude...",
             "DISCORD": "Discord...",
             "ISSUE": "Daim ntawv qhia txog qhov teeb meem..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Tshem Tag Nrho",
         "ENTERACCOUNTLABEL": "Sau ib daim ntawv lo rau qhov chaw nyob no",
-        "ENTERADDRESSLABEL": "Sau ib qhov chaw nyob hauv Linda",
+        "ENTERADDRESSLABEL": "Sau ib qhov chaw nyob hauv Metrix",
         "AGO": "dhau los",
         "SORTBY": "Tsi Yog",
         "SEARCH": "Tshawb nrhiav",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Txais"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Thaum pib Linda Core...",
-        "DOWNLOADCLIENT": "Downloading Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Muaj",
-        "SHUTTINGDOWN": "Shutting down Linda Core...",
-        "RESTARTING": "Rov Qab Los Linda Caw..."
+        "INITIALISING": "Thaum pib Metrix Core...",
+        "DOWNLOADCLIENT": "Downloading Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Muaj",
+        "SHUTTINGDOWN": "Shutting down Metrix Core...",
+        "RESTARTING": "Rov Qab Los Metrix Caw..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tus account tshiab tau zoo",

@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Dompet sedang staking",
             "NOTENABLEDTITLE": "Staking tidak didayakan",
             "NOTENABLEDINFO": "Staking tidak didayakan pada masa ini.",
-            "NOTENABLEDINSTR": "Untuk memangkinkan anda perlu mendayakan setting staking = 1 dalam fail Linda.conf anda.",
+            "NOTENABLEDINSTR": "Untuk memangkinkan anda perlu mendayakan setting staking = 1 dalam fail metrix.conf anda.",
             "NOTSTAKINGTITLE": "Dompet tidak mengasyikkan",
             "NOTSTAKINGINFO": "Dompet anda saat ini terkunci untuk staking.",
             "NOTSTAKINGINSTR": "Anda boleh mula staking dengan membuka kunci dompet anda untuk staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "Alamat",
             "ENABLED": "Dihidupkan",
             "NOTENABLEDTITLE": "Masternodes tidak didayakan",
-            "NOTENABLEDINSTR": "Untuk menjalankan masternode, anda perlu mengaktifkan masternodes dengan menetapkan masternode = 1 dan mengkonfigurasi pembolehubah 'masternodeprivkey' dan 'masternodeaddr' dalam fail Linda.conf anda.",
+            "NOTENABLEDINSTR": "Untuk menjalankan masternode, anda perlu mengaktifkan masternodes dengan menetapkan masternode = 1 dan mengkonfigurasi pembolehubah 'masternodeprivkey' dan 'masternodeaddr' dalam fail metrix.conf anda.",
             "STARTBUTTON": "Mula Tempatan",
             "STARTALIASBUTTON": "Mula Alias",
             "STARTALLBUTTON": "Mulakan Semua"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Version"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Selamat datang ke konsol Linda Core RPC. Taipkan bantuan untuk gambaran keseluruhan arahan yang ada.",
+                "CONSOLEINFO": "Selamat datang ke konsol Metrix Core RPC. Taipkan bantuan untuk gambaran keseluruhan arahan yang ada.",
                 "CONSOLEWARNING": "AMARAN: Penipu telah aktif, memberitahu pengguna untuk menaip perintah di sini, mencuri kandungan dompet mereka. Jangan gunakan konsol ini tanpa memahami sepenuhnya ramuan arahan.",
                 "COMMANDPLACEHODLER": "Masukkan Perintah"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Blok Memulakan"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Perintah pembaikan ini tidak boleh dijalankan apabila Linda Core dijalankan secara luaran",
-                "INFO": "Butang di bawah akan memulakan semula Linda Core dengan pilihan baris arahan untuk membaiki dompet, menyelesaikan masalah dengan fail blockchain yang rosak atau transaksi yang hilang / usang.",
+                "INFOEXTERNAL": "Perintah pembaikan ini tidak boleh dijalankan apabila Metrix Core dijalankan secara luaran",
+                "INFO": "Butang di bawah akan memulakan semula Metrix Core dengan pilihan baris arahan untuk membaiki dompet, menyelesaikan masalah dengan fail blockchain yang rosak atau transaksi yang hilang / usang.",
                 "SALVAGEBUTTON": "Dompet Penyelamatan",
                 "SALVAGEINFO": "-salvagewallet: Cuba untuk mendapatkan kunci peribadi dari wallet.dat yang rosak.",
                 "RESCANBUTTON": "Rescan blockchain files",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Hak cipta © 2009-2015 Pemaju Bitcoin <br/> Hak Cipta © 2011-2012 PPCoin Developers <br/> Hak cipta © 2012-2014 Pemaju NovaCoin <br/> Hak cipta © 2014-2018 Pemaju Linda <br/><br/> Ini adalah perisian percubaan. <br/> Diagihkan di bawah lesen perisian MIT / X11, lihat fail yang disertakan COPYING atau http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produk ini termasuk perisian yang dibangunkan oleh Projek OpenSSL untuk digunakan dalam OpenSSL Toolkit (https://www.openssl.org) dan perisian kriptografi yang ditulis oleh Eric Young (eay@cryptsoft.com) dan perisian UPnP yang ditulis oleh Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Hak cipta © 2009-2015 Pemaju Bitcoin <br/> Hak Cipta © 2011-2012 PPCoin Developers <br/> Hak cipta © 2012-2014 Pemaju NovaCoin <br/> Hak cipta © 2014-2019 Pemaju Metrix <br/><br/> Ini adalah perisian percubaan. <br/> Diagihkan di bawah lesen perisian MIT / X11, lihat fail yang disertakan COPYING atau http://www.opensource.org/licenses/mit-license.php. <br/><br/> Produk ini termasuk perisian yang dibangunkan oleh Projek OpenSSL untuk digunakan dalam OpenSSL Toolkit (https://www.openssl.org) dan perisian kriptografi yang ditulis oleh Eric Young (eay@cryptsoft.com) dan perisian UPnP yang ditulis oleh Thomas Bernard.",
             "ABOUTALTITUDETAB": "Ketinggian",
-            "ABOUTALTITUDE": "Hak cipta © 2018 Pemaju Linda <br/><br/> Perisian ini diedarkan di bawah lesen GPL-3.0, lihat https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE untuk maklumat lanjut."
+            "ABOUTALTITUDE": "Hak cipta © 2019 Pemaju Metrix <br/><br/> Perisian ini diedarkan di bawah lesen GPL-3.0, lihat https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE untuk maklumat lanjut."
         },
         "LOCALE": {
             "TITLE": "Pilih Bahasa"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Masukkan Frasa Sandi Wallet anda",
             "UNLOCKSTAKINGONLY": "Buka kunci untuk pendakian sahaja",
-            "CLIENTUPDATETITLE": "Kemas kini Teras Linda Tersedia",
-            "CLIENTUPDATEINFO": "Kemas kini tersedia untuk Linda Core. Adakah anda ingin memasangnya sekarang?",
+            "CLIENTUPDATETITLE": "Kemas kini Teras Metrix Tersedia",
+            "CLIENTUPDATEINFO": "Kemas kini tersedia untuk Metrix Core. Adakah anda ingin memasangnya sekarang?",
             "WALLETUPDATETITLE": "Kemas kini Ketinggian Tersedia",
             "WALLETUPDATEINFO": "Kemas kini tersedia untuk Ketinggian. Adakah anda mahu memuat turunnya sekarang?",
             "CLIENTUPDATEBUTTON": "Kemas kini",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Tukar frasa laluan",
             "ENCRYPTTITLE": "Menyulitkan dompet anda",
             "ENCRYPTBUTTON": "Menyulitkan",
-            "CLIENTSTOPPEDTITLE": "Linda Core berhenti",
-            "CLIENTSTOPPEDINFO": "Sambungan telah hilang kepada Linda Core. Anda boleh menghentikan dompet atau memulakan Core Linda dalaman.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core berhenti",
+            "CLIENTSTOPPEDINFO": "Sambungan telah hilang kepada Metrix Core. Anda boleh menghentikan dompet atau memulakan Core Metrix dalaman.",
             "CLIENTSTOPPEDBUTTONEXIT": "Keluar Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Mula Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Mula Metrix Core",
             "ENCRYPTEDTITLE": "Wallet Disulitkan",
             "ENCRYPTEDCONTENT": "Mana-mana sandaran sebelumnya yang telah anda buat dari fail dompet anda harus diganti dengan fail dompet yang baru dihasilkan dan dienkripsi. Atas sebab keselamatan, backup sebelumnya dari fail dompet yang tidak disenarai akan menjadi tidak berguna sebaik sahaja anda mula menggunakan dompet yang baru dan disulitkan.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core Berhenti tanpa diduga",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Linda Core yang menyebabkan ia ditamatkan. Ia mengesyorkan untuk menyemak fail debug.log anda untuk masalah.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Berhenti tanpa diduga",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Metrix Core yang menyebabkan ia ditamatkan. Ia mengesyorkan untuk menyemak fail debug.log anda untuk masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Pelanggan",
-            "CLIENTINVALIDCONFIGTITLE": "Konfigurasi Linda.conf tidak sah",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Linda Core keluar segera. Sila semak fail ini."
+            "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak sah",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Metrix Core keluar segera. Sila semak fail ini."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
-            "SENDINGINFO": "Ini adalah alamat Linda yang disimpan untuk menghantar pembayaran. Selalu periksa jumlah dan alamat penerima sebelum menghantar syiling",
-            "RECEIVINGINFO": "Ini adalah alamat Linda yang disimpan untuk menerima pembayaran.",
+            "SENDINGINFO": "Ini adalah alamat Metrix yang disimpan untuk menghantar pembayaran. Selalu periksa jumlah dan alamat penerima sebelum menghantar syiling",
+            "RECEIVINGINFO": "Ini adalah alamat Metrix yang disimpan untuk menerima pembayaran.",
             "BUTTONSELECT": "Pilih",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Alamat",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Tandatangan Mesej...",
             "VERIFYMESSAGE": "Sahkan Mesej...",
             "LOCALE": "Bahasa...",
-            "RESTARTCORE": "Mulakan semula Linda Core",
+            "RESTARTCORE": "Mulakan semula Metrix Core",
             "EXIT": "Keluar",
             "OPTIONS": "Pilihan..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Bantuan",
             "COMMANDLINEOPTIONS": "Pilihan Talian Perintah...",
-            "CHECKUPDATECORE": "Semak Linda Core...",
+            "CHECKUPDATECORE": "Semak Metrix Core...",
             "CHECKUPDATEWALLET": "Semak Kemaskini Ketinggian...",
-            "ABOUTCORE": "Mengenai Linda Core...",
+            "ABOUTCORE": "Mengenai Metrix Core...",
             "ABOUTALTITUDE": "Mengenai Ketinggian...",
             "DISCORD": "Percakapan...",
             "ISSUE": "Laporkan Isu..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "okey",
         "CLEARALLBUTTON": "Kosongkan semua",
         "ENTERACCOUNTLABEL": "Masukkan label untuk alamat ini",
-        "ENTERADDRESSLABEL": "Masukkan alamat Linda",
+        "ENTERADDRESSLABEL": "Masukkan alamat Metrix",
         "AGO": "sebelum ini",
         "SORTBY": "Disusun mengikut",
         "SEARCH": "Carian",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Terima"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inisialisasi Linda Core...",
-        "DOWNLOADCLIENT": "Memuat turun Linda Core...",
-        "UPDATEAVAILABLE": "Kemas kini Teras Linda Tersedia",
-        "SHUTTINGDOWN": "Menutup Linda Core...",
-        "RESTARTING": "Mulakan semula Core Linda..."
+        "INITIALISING": "Inisialisasi Metrix Core...",
+        "DOWNLOADCLIENT": "Memuat turun Metrix Core...",
+        "UPDATEAVAILABLE": "Kemas kini Teras Metrix Tersedia",
+        "SHUTTINGDOWN": "Menutup Metrix Core...",
+        "RESTARTING": "Mulakan semula Core Metrix..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaun baru berjaya dibuat",

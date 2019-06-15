@@ -15,7 +15,7 @@ const sleep = require('util').promisify(setTimeout)
 export default class Client {
     // client details
     clientsLocation = path.join(app.getPath('userData'), 'clients');
-    clientName = 'Lindad';
+    clientName = 'metrixd';
     clientConfigLocation = ''
     clientConfig: ClientConfig;
     clientLocalLocation: string;
@@ -36,7 +36,7 @@ export default class Client {
     // client status
     status: ClientStatus = ClientStatus.INITIALISING;
     // when using hash of unknown daemon assume version
-    readonly assumeClientVersion = '3.4.0.0';
+    readonly assumeClientVersion = '3.3.3.0';
 
     constructor(win) {
         this.win = win;
@@ -46,18 +46,20 @@ export default class Client {
     }
 
     getClientConfigLocation() {
+        const confName = 'metrix.conf';
+        const dataDir = 'metrix';
         if (os.platform() === 'win32') {
-            this.clientConfigLocation = path.join(app.getPath('userData'), '../', 'Linda', 'Linda.conf');
+            this.clientConfigLocation = path.join(app.getPath('userData'), '../', dataDir, confName);
         } else if (os.platform() === 'linux') {
-            this.clientConfigLocation = path.join(app.getPath('home'), '.Linda', 'Linda.conf');
+            this.clientConfigLocation = path.join(app.getPath('home'), '.' + dataDir, confName);
         } else if (os.platform() === 'darwin') {
-            this.clientConfigLocation = path.join(app.getPath('home'), 'Library', 'Application Support', 'Linda', 'Linda.conf');
+            this.clientConfigLocation = path.join(app.getPath('home'), 'Library', 'Application Support', dataDir, confName);
         }
         // check if we passed a custom data dir
         for (let i = 0; i < process.argv.length; i++) {
             let arg = process.argv[i];
             if (arg.toLowerCase().indexOf('-datadir=') > -1) {
-                this.clientConfigLocation = path.join(arg.split("=")[1].trim(), 'Linda.conf');
+                this.clientConfigLocation = path.join(arg.split("=")[1].trim(), confName);
                 break;
             }
         }
@@ -184,7 +186,10 @@ export default class Client {
         if (!restart) {
             try {
                 const res: any = await helpers.getRequest("https://raw.githubusercontent.com/thelindaprojectinc/altitude/master/clientBinaries.json");
-                clientBinaries = JSON.parse(res.body);
+                let remoteClientBinaries = JSON.parse(res.body);
+                if (compareVersions(clientBinaries[this.clientName].version, remoteClientBinaries[this.clientName].version) >= 0) {
+                    clientBinaries = remoteClientBinaries
+                }
             } catch (ex) {
                 log.info("Client", "Failed to get remote client binaries, using local");
             }
@@ -287,7 +292,7 @@ export default class Client {
     runClient(bin, startupCommands = []) {
         // check for invalid masternode setup
         if (!this.clientConfigFile.hasValidMasternodeSetup) {
-            log.error("Client", "Invalid masternode configuration. Please check your Linda.conf file");
+            log.error("Client", "Invalid masternode configuration. Please check your metrix.conf file");
             this.setClientStatus(ClientStatus.INVALIDMASTERNODECONFIG);
             return;
         }
@@ -302,7 +307,7 @@ export default class Client {
         }
         if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
         if (appSettings.tor) {
-            // Linda Core 3.3 renames tor startup command to onion
+            // Metrix Core 3.3 renames tor startup command to onion
             if (compareVersions(this.clientVersion, '3.3.0.0') >= 0)
                 startupCommands.push('-tor=' + appSettings.tor)
             else

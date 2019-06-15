@@ -5,7 +5,8 @@
   <form (submit)="search()">
     <div class="form-inline">
       <span>{{ 'MISC.SEARCH' | translate }}</span>
-      <text-input name="searchInput" [(inputModel)]="searchInput" placeholder="{{ 'PAGES.EXPLORER.SEARCHPLACEHOLDER' | translate }}"></text-input>
+      <text-input name="searchInput" [(inputModel)]="searchInput"
+        placeholder="{{ 'PAGES.EXPLORER.SEARCHPLACEHOLDER' | translate }}"></text-input>
     </div>
   </form>
 
@@ -35,11 +36,13 @@
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_PREVHASH' | translate }}</th>
-        <td><button class="btn btn-link primary" (click)="loadBlock(0,currentBlock.previousblockhash)">{{currentBlock.previousblockhash}}</button></td>
+        <td><button class="btn btn-link primary"
+            (click)="loadBlock(0,currentBlock.previousblockhash)">{{currentBlock.previousblockhash}}</button></td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_NEXTHEIGHT' | translate }}</th>
-        <td><button class="btn btn-link primary" (click)="loadBlock(currentBlock.height+1)">{{currentBlock.height+1}}</button></td>
+        <td><button class="btn btn-link primary"
+            (click)="loadBlock(currentBlock.height+1)">{{currentBlock.height+1}}</button></td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_FLAGS' | translate }}</th>
@@ -52,14 +55,16 @@
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_TRANSACTIONS' | translate }}</th>
         <td>
-          <span class="badge primary">{{currentBlock.tx.length}}</span>
-          <br />
-          <button *ngFor="let tx of currentBlock.tx" class="btn btn-link primary block" (click)="loadTransaction(tx)">{{tx}}</button>
+          <ul>
+            <li *ngFor="let tx of currentBlock.tx">
+              <button class="btn btn-link primary block" (click)="loadTransaction(tx)">{{tx}}</button>
+            </li>
+          </ul>
         </td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_MINT' | translate }}</th>
-        <td>{{helpers.prettyCoins(currentBlock.mint)}} Linda</td>
+        <td>{{helpers.prettyCoins(currentBlock.mint)}} Metrix</td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_VERSION' | translate }}</th>
@@ -126,7 +131,8 @@
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_BLOCKHASH' | translate }}</th>
-        <td><button class="btn btn-link primary" (click)="loadBlock(0,currentTransaction.blockhash)">{{currentTransaction.blockhash}}</button></td>
+        <td><button class="btn btn-link primary"
+            (click)="loadBlock(0,currentTransaction.blockhash)">{{currentTransaction.blockhash}}</button></td>
       </tr>
       <tr>
         <th>{{ 'PAGES.EXPLORER.TABLE_CONFIRMATIONS' | translate }}</th>
@@ -155,7 +161,7 @@
           <div class="vinvout" *ngFor="let vin of currentTransaction.vin">
             <span *ngIf="vin.coinbase">{{ 'PAGES.EXPLORER.COINBASE' | translate }}</span>
             <span *ngFor="let addr of vin.addresses">{{ addr }}</span>
-            <span *ngIf="vin.value" class="badge primary">{{helpers.prettyCoins(vin.value)}} Linda</span>
+            <span *ngIf="vin.value" class="badge accent">{{helpers.prettyCoins(vin.value)}} Metrix</span>
           </div>
         </td>
         <td>
@@ -165,7 +171,7 @@
           <div class="vinvout" *ngFor="let vout of currentTransaction.vout">
             <span *ngIf="vout.scriptPubKey.type=='nonstandard'">{{ 'PAGES.EXPLORER.NONSTANDARD' | translate }}</span>
             <span *ngFor="let addr of vout.scriptPubKey.addresses">{{ addr }}</span>
-            <span *ngIf="vout.value" class="badge primary">{{helpers.prettyCoins(vout.value)}} Linda</span>
+            <span *ngIf="vout.value" class="badge accent">{{helpers.prettyCoins(vout.value)}} Metrix</span>
           </div>
         </td>
       </tr>

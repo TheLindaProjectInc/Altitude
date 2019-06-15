@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Denarnica trenutno stakne",
             "NOTENABLEDTITLE": "Staking ni omogočeno",
             "NOTENABLEDINFO": "Staking trenutno ni omogočen.",
-            "NOTENABLEDINSTR": "Če želite vložiti, morate omogočiti nastavitev stakinga = 1 v datoteki Linda.conf.",
+            "NOTENABLEDINSTR": "Če želite vložiti, morate omogočiti nastavitev stakinga = 1 v datoteki metrix.conf.",
             "NOTSTAKINGTITLE": "Denarnica ne stakne",
             "NOTSTAKINGINFO": "Vaša denarnica je trenutno zaklenjena za stakiranje.",
             "NOTSTAKINGINSTR": "Lahko začnete z vložkom tako, da odklenete denarnico za vložek",
@@ -69,7 +69,7 @@
             "ADDRESS": "Naslov",
             "ENABLED": "Omogočeno",
             "NOTENABLEDTITLE": "Masternode niso omogočene",
-            "NOTENABLEDINSTR": "Če želite zagnati masternode, boste morali omogočiti masternodes z nastavitvijo masternode = 1 in nastavitvijo spremenljivk 'masternodeprivkey' in 'masternodeaddr' v datoteki Linda.conf.",
+            "NOTENABLEDINSTR": "Če želite zagnati masternode, boste morali omogočiti masternodes z nastavitvijo masternode = 1 in nastavitvijo spremenljivk 'masternodeprivkey' in 'masternodeaddr' v datoteki metrix.conf.",
             "STARTBUTTON": "Začni lokalno",
             "STARTALIASBUTTON": "Začnite vzdevke",
             "STARTALLBUTTON": "Začni vse"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Različica za nadmorsko višino"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Dobrodošli na konzoli Linda Core RPC. Vnesite pomoč za pregled razpoložljivih ukazov.",
+                "CONSOLEINFO": "Dobrodošli na konzoli Metrix Core RPC. Vnesite pomoč za pregled razpoložljivih ukazov.",
                 "CONSOLEWARNING": "OPOZORILO: dejavniki scammers so bili aktivni in uporabnikom povedali, da tukaj vnesejo ukaze in krajo vsebine denarnice. Ne uporabljajte te konzole brez popolnega razumevanja razvejanosti ukaza.",
                 "COMMANDPLACEHODLER": "Vnesite ukaz"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Začetni blok"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Te ukaze za popravilo ni mogoče zagnati, ko Linda Core deluje zunaj",
-                "INFO": "Gumbi spodaj bodo znova zagnali Linda Core z možnostmi ukazne vrstice za popravilo denarnice, odpravljanje težav s poškodovanimi datotekami blokiranih datotek ali manjkajočimi / zastarelimi transakcijami.",
+                "INFOEXTERNAL": "Te ukaze za popravilo ni mogoče zagnati, ko Metrix Core deluje zunaj",
+                "INFO": "Gumbi spodaj bodo znova zagnali Metrix Core z možnostmi ukazne vrstice za popravilo denarnice, odpravljanje težav s poškodovanimi datotekami blokiranih datotek ali manjkajočimi / zastarelimi transakcijami.",
                 "SALVAGEBUTTON": "Salvage Denarnica",
                 "SALVAGEINFO": "-salvagewallet: Poskus obnovitve zasebnih ključev iz korupcije wallet.dat.",
                 "RESCANBUTTON": "Rescan binarne datoteke",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Razvijalci Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Razvijalci NoveCoin <br/> Copyright © 2014-2018 Razvijalci Linda <br/><br/> To je eksperimentalna programska oprema. <br/> Distribuirano v skladu z licenco za programsko opremo MIT / X11 si oglejte spremno datoteko COPYING ali http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ta izdelek vključuje programsko opremo, ki jo je razvil OpenSSL Project za uporabo v OpenSSL Toolkitu (https://www.openssl.org) in kriptografsko programsko opremo, ki jo je napisal Eric Young (eay@cryptsoft.com) in programsko opremo UPnP, ki jo je napisal Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Razvijalci Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Razvijalci NoveCoin <br/> Copyright © 2014-2019 Razvijalci Metrix <br/><br/> To je eksperimentalna programska oprema. <br/> Distribuirano v skladu z licenco za programsko opremo MIT / X11 si oglejte spremno datoteko COPYING ali http://www.opensource.org/licenses/mit-license.php. <br/><br/> Ta izdelek vključuje programsko opremo, ki jo je razvil OpenSSL Project za uporabo v OpenSSL Toolkitu (https://www.openssl.org) in kriptografsko programsko opremo, ki jo je napisal Eric Young (eay@cryptsoft.com) in programsko opremo UPnP, ki jo je napisal Thomas Bernard.",
             "ABOUTALTITUDETAB": "Nadmorska višina",
-            "ABOUTALTITUDE": "Copyright © 2018 Razvijalci Linda <br/><br/> Ta programska oprema je distribuirana v okviru licence GPL-3.0, za več informacij si oglejte https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Razvijalci Metrix <br/><br/> Ta programska oprema je distribuirana v okviru licence GPL-3.0, za več informacij si oglejte https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Izberi jezik"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Vnesite geslo za geslo za Google Denarnico",
             "UNLOCKSTAKINGONLY": "Odklenite samo za stakiranje",
-            "CLIENTUPDATETITLE": "Linda Core Update je na voljo",
-            "CLIENTUPDATEINFO": "Posodobitev je na voljo za Linda Core. Ali ga želite zdaj namestiti?",
+            "CLIENTUPDATETITLE": "Metrix Core Update je na voljo",
+            "CLIENTUPDATEINFO": "Posodobitev je na voljo za Metrix Core. Ali ga želite zdaj namestiti?",
             "WALLETUPDATETITLE": "Na voljo je nadgradnja nadmorske višine",
             "WALLETUPDATEINFO": "Na voljo je posodobitev za Altitude. Želite jo zdaj prenesti?",
             "CLIENTUPDATEBUTTON": "Nadgradnja",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Spremeni geslo",
             "ENCRYPTTITLE": "Šifrirajte svojo denarnico",
             "ENCRYPTBUTTON": "Šifriraj",
-            "CLIENTSTOPPEDTITLE": "Linda Core je ustavil",
-            "CLIENTSTOPPEDINFO": "Povezava je bila izgubljena za Linda Core. Lahko zaustavite denarnico ali zaženete notranjo Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core je ustavil",
+            "CLIENTSTOPPEDINFO": "Povezava je bila izgubljena za Metrix Core. Lahko zaustavite denarnico ali zaženete notranjo Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Izhodna denarnica",
-            "CLIENTSTOPPEDBUTTONSTART": "Začni Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Začni Metrix Core",
             "ENCRYPTEDTITLE": "Denarnica šifrirana",
             "ENCRYPTEDCONTENT": "Vse prejšnje varnostne kopije, ki ste jih naredili iz vaše denarnice, je treba zamenjati z novo generirano, šifrirano datoteko denarnice. Iz varnostnih razlogov bodo prejšnje varnostne kopije nešifrirane datoteke denarnice postale neuporabne, takoj ko začnete uporabljati novo, šifrirano denarnico.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core je nepričakovano prenehal",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Pri Linda Coreju je prišlo do težave, zaradi česar je prenehal. Priporočamo, da preverite datoteko debug.log za težave.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core je nepričakovano prenehal",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Pri Metrix Coreju je prišlo do težave, zaradi česar je prenehal. Priporočamo, da preverite datoteko debug.log za težave.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ponovno zaženite odjemalca",
-            "CLIENTINVALIDCONFIGTITLE": "Neveljavna konfiguracija Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaša Linda.conf ima neveljavno nastavitev masternode, ki bo povzročila, da bo Linda Core takoj zapustil. Preverite to datoteko."
+            "CLIENTINVALIDCONFIGTITLE": "Neveljavna konfiguracija metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima neveljavno nastavitev masternode, ki bo povzročila, da bo Metrix Core takoj zapustil. Preverite to datoteko."
         },
         "ADDRESSBOOK": {
             "TITLE": "Imenik",
-            "SENDINGINFO": "To je vaš shranjeni naslov Linda za pošiljanje plačil. Pred pošiljanjem kovancev vedno preverite količino in naslov prejemnika",
-            "RECEIVINGINFO": "To je vaš shranjeni naslov Linda za prejemanje plačil.",
+            "SENDINGINFO": "To je vaš shranjeni naslov Metrix za pošiljanje plačil. Pred pošiljanjem kovancev vedno preverite količino in naslov prejemnika",
+            "RECEIVINGINFO": "To je vaš shranjeni naslov Metrix za prejemanje plačil.",
             "BUTTONSELECT": "Izberite",
             "TABLECOLUMNS_LABEL": "Oznaka",
             "TABLECOLUMNS_ADDRESS": "Naslov",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Prijava sporočila...",
             "VERIFYMESSAGE": "Preveri sporočilo...",
             "LOCALE": "Jezik...",
-            "RESTARTCORE": "Znova zaženite Linda Core",
+            "RESTARTCORE": "Znova zaženite Metrix Core",
             "EXIT": "Izhod",
             "OPTIONS": "Opcije..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Pomoč",
             "COMMANDLINEOPTIONS": "Možnosti ukazne vrstice...",
-            "CHECKUPDATECORE": "Preverite, ali je posodobitev Linda Core...",
+            "CHECKUPDATECORE": "Preverite, ali je posodobitev Metrix Core...",
             "CHECKUPDATEWALLET": "Preverite nadgradnjo nadmorske višine...",
-            "ABOUTCORE": "O Linda Core...",
+            "ABOUTCORE": "O Metrix Core...",
             "ABOUTALTITUDE": "O višini...",
             "DISCORD": "Diskord...",
             "ISSUE": "Prijavite težavo..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "v redu",
         "CLEARALLBUTTON": "Počisti vse",
         "ENTERACCOUNTLABEL": "Vnesite oznako za ta naslov",
-        "ENTERADDRESSLABEL": "Vnesite Linda naslov",
+        "ENTERADDRESSLABEL": "Vnesite Metrix naslov",
         "AGO": "nazaj",
         "SORTBY": "Razvrsti po",
         "SEARCH": "Iskanje",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Sprejmi"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inicializacija Linda Coreja...",
-        "DOWNLOADCLIENT": "Prenos Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update je na voljo",
-        "SHUTTINGDOWN": "Izklop Linda Coreja...",
-        "RESTARTING": "Ponovni zagon Linda Core..."
+        "INITIALISING": "Inicializacija Metrix Coreja...",
+        "DOWNLOADCLIENT": "Prenos Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update je na voljo",
+        "SHUTTINGDOWN": "Izklop Metrix Coreja...",
+        "RESTARTING": "Ponovni zagon Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novi račun je bil ustvarjen uspešno",

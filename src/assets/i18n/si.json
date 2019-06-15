@@ -49,7 +49,7 @@
             "STAKINGTITLE": "පසුම්බිය වර්තමානයේ රැඳී තිබේ",
             "NOTENABLEDTITLE": "Stake සක්රීය කර නැත",
             "NOTENABLEDINFO": "Staking දැනට සක්රීය කර නොමැත.",
-            "NOTENABLEDINSTR": "පාර්ශ්වයට ඔබ ඔබේ Linda.conf ගොනුවේ staking = 1 මට්ටම සක්රිය කිරීමට අවශ්ය වනු ඇත.",
+            "NOTENABLEDINSTR": "පාර්ශ්වයට ඔබ ඔබේ metrix.conf ගොනුවේ staking = 1 මට්ටම සක්රිය කිරීමට අවශ්ය වනු ඇත.",
             "NOTSTAKINGTITLE": "ටොයිලට් නොසැලකේ",
             "NOTSTAKINGINFO": "ඔබගේ පසුම්බිය වර්තමානයේදී අගුලු දමා ඇත.",
             "NOTSTAKINGINSTR": "ඔබ මුදල් පසුම්බිය සඳහා ඔබේ පසුම්බිය අගුලු දැමීම මගින් ඔබට ලබා ගත හැක",
@@ -69,7 +69,7 @@
             "ADDRESS": "ලිපිනය",
             "ENABLED": "සක්රීයයි",
             "NOTENABLEDTITLE": "Masternodes සක්රීය කර නැත",
-            "NOTENABLEDINSTR": "Masternode මෙහෙයවීම සඳහා masternode = 1 සහ masternodeprivkey සහ masternodeaddr විචල්යයන් ඔබේ Linda.conf ගොනුවේ ස්ථාපනය කිරීමට අවශ්ය වනු ඇත.",
+            "NOTENABLEDINSTR": "Masternode මෙහෙයවීම සඳහා masternode = 1 සහ masternodeprivkey සහ masternodeaddr විචල්යයන් ඔබේ metrix.conf ගොනුවේ ස්ථාපනය කිරීමට අවශ්ය වනු ඇත.",
             "STARTBUTTON": "දේශීයව ආරම්භ කරන්න",
             "STARTALIASBUTTON": "ආරම්භ කරන්න අන්වර්ථය",
             "STARTALLBUTTON": "සියල්ල ආරම්භ කරන්න"
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "ලින්ඩා Core",
-            "ABOUTCORE": "කතුහිමිකම © 2009-2015 Bitcoin සංවර්ධකයින් <br/> කතුහිමිකම © 2011-2012 PPCoin සංවර්ධකයින් <br/> කතුහිමිකම © 2012-2014 NovaCoin සංවර්ධකයින් <br/> කතුහිමිකම © 2014-2018 ලින්ඩා සංවර්ධකයින් <br/><br/> මෙය පර්යේෂණාත්මක මෘදුකාංගයකි. <br/> MIT / X11 මෘදුකාංග බලපත්රය යටතේ බෙදාහැර ඇති COPYING හෝ http://www.opensource.org/licenses/mit-license.php යන ලිපිගොනුව බලන්න. <br/><br/> OpenSSL උපාංග කට්ටලය (https://www.openssl.org) සහ OpenSSL මෙවලමෙන් (OpenSSL Toolkit) සහ එරික් යන්ග් (eay@cryptsoft.com) සහ ටොම්ස් බර්නාර්ඩ් විසින් ලියන ලද UPnP මෘදුකාංගය විසින් නිර්මාණය කරන ලද මෘදුකාංගයකි.",
+            "ABOUTCORE": "කතුහිමිකම © 2009-2015 Bitcoin සංවර්ධකයින් <br/> කතුහිමිකම © 2011-2012 PPCoin සංවර්ධකයින් <br/> කතුහිමිකම © 2012-2014 NovaCoin සංවර්ධකයින් <br/> කතුහිමිකම © 2014-2019 ලින්ඩා සංවර්ධකයින් <br/><br/> මෙය පර්යේෂණාත්මක මෘදුකාංගයකි. <br/> MIT / X11 මෘදුකාංග බලපත්රය යටතේ බෙදාහැර ඇති COPYING හෝ http://www.opensource.org/licenses/mit-license.php යන ලිපිගොනුව බලන්න. <br/><br/> OpenSSL උපාංග කට්ටලය (https://www.openssl.org) සහ OpenSSL මෙවලමෙන් (OpenSSL Toolkit) සහ එරික් යන්ග් (eay@cryptsoft.com) සහ ටොම්ස් බර්නාර්ඩ් විසින් ලියන ලද UPnP මෘදුකාංගය විසින් නිර්මාණය කරන ලද මෘදුකාංගයකි.",
             "ABOUTALTITUDETAB": "උන්නතාංශය",
-            "ABOUTALTITUDE": "කතුහිමිකම © 2018 ලින්ඩා සංවර්ධකයින් <br/><br/> මෙම මෘදුකාංගය GPL-3.0 බලපත්රය යටතේ බෙදාහරින අතර, වැඩි විස්තර සඳහා https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE බලන්න."
+            "ABOUTALTITUDE": "කතුහිමිකම © 2019 ලින්ඩා සංවර්ධකයින් <br/><br/> මෙම මෘදුකාංගය GPL-3.0 බලපත්රය යටතේ බෙදාහරින අතර, වැඩි විස්තර සඳහා https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE බලන්න."
         },
         "LOCALE": {
             "TITLE": "භාෂාව තෝරන්න"
@@ -267,8 +267,8 @@
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ලින්ඩා කේන්ද්රය අනපේක්ෂිතව නවත්වන ලදි",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ලින්ඩා Core සමඟ ඇති වූ ගැටළුවක් විය. ගැටළු සඳහා ඔබේ debug.log ගොනුව පිරික්සීමට නිර්දේශ කරනු ලැබේ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
-            "CLIENTINVALIDCONFIGTITLE": "අවලංගු Linda.conf මානකරනය",
-            "CLIENTINVALIDCONFIGINFO": "ඔබේ Linda.conf සතුව වැරදි මුරපදයක් තිබේ නම්, ලින්ඩා කේන්ද්රය වහාම පිටව යාමට ඉඩ ඇත. කරුණාකර මෙම ගොනුව පරික්ෂා කරන්න."
+            "CLIENTINVALIDCONFIGTITLE": "අවලංගු metrix.conf මානකරනය",
+            "CLIENTINVALIDCONFIGINFO": "ඔබේ metrix.conf සතුව වැරදි මුරපදයක් තිබේ නම්, ලින්ඩා කේන්ද්රය වහාම පිටව යාමට ඉඩ ඇත. කරුණාකර මෙම ගොනුව පරික්ෂා කරන්න."
         },
         "ADDRESSBOOK": {
             "TITLE": "ලිපින පොත",

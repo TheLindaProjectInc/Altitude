@@ -12,7 +12,7 @@ Shutdown Altitude if it is already running and then run the installer.
 ### What's New
 - Added masternode config check to alert if you have a bad masternode setup
 - Remember user full screen selection
-- Add support for Linda Core V3.3
+- Add support for Metrix Core V3.3
 
 ### Bug Fixes
 - Fixed an issue causing Altitude to freeze on the peers page

@@ -69,7 +69,7 @@
             "ADDRESS": "Adresas",
             "ENABLED": "Įjungtas",
             "NOTENABLEDTITLE": "Masternodes neįjungtas",
-            "NOTENABLEDINSTR": "Norint paleisti masternodą, turėsite įjungti masternodus, nustatydami masternode = 1 ir konfigūruodami „masternodeprivkey“ ir „masternodeaddr“ kintamuosius savo Linda.conf faile.",
+            "NOTENABLEDINSTR": "Norint paleisti masternodą, turėsite įjungti masternodus, nustatydami masternode = 1 ir konfigūruodami „masternodeprivkey“ ir „masternodeaddr“ kintamuosius savo metrix.conf faile.",
             "STARTBUTTON": "Pradėti vietinį",
             "STARTALIASBUTTON": "Pradėti Alias",
             "STARTALLBUTTON": "Pradėti viską"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Aukšties versija"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Sveiki atvykę į \"Linda Core RPC\" konsolę. Įveskite pagalbą, kad galėtumėte peržiūrėti galimas komandas.",
+                "CONSOLEINFO": "Sveiki atvykę į \"Metrix Core RPC\" konsolę. Įveskite pagalbą, kad galėtumėte peržiūrėti galimas komandas.",
                 "CONSOLEWARNING": "ĮSPĖJIMAS: \"Scammers\" buvo aktyvūs, nurodydami vartotojams įvesti komandas čia, vogdami savo piniginės turinį. Negalima naudoti šios konsolės be visiškai suprasti komandos ramification.",
                 "COMMANDPLACEHODLER": "Įveskite komandą"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Pradedantis blokas"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Šios taisymo komandos negali būti paleidžiamos, kai \"Linda Core\" paleidžiama išoriškai",
-                "INFO": "Žemiau esantys mygtukai iš naujo paleidžia \"Linda Core\" komandų eilutės parinktis, kad pataisytumėte piniginę, išspręstumėte problemas, susijusias su sugadintomis \"blockchain\" failais arba trūkstamais / pasenusiais sandoriais.",
+                "INFOEXTERNAL": "Šios taisymo komandos negali būti paleidžiamos, kai \"Metrix Core\" paleidžiama išoriškai",
+                "INFO": "Žemiau esantys mygtukai iš naujo paleidžia \"Metrix Core\" komandų eilutės parinktis, kad pataisytumėte piniginę, išspręstumėte problemas, susijusias su sugadintomis \"blockchain\" failais arba trūkstamais / pasenusiais sandoriais.",
                 "SALVAGEBUTTON": "\"Salvage\" piniginė",
                 "SALVAGEINFO": "-salvagewallet: bandymas susigrąžinti privačius raktus iš sugadinto wallet.dat.",
                 "RESCANBUTTON": "Iš naujo ieškokite failų su blokais",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin kūrėjai <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 The NovaCoin kūrėjai <br/> Copyright © 2014-2018 Linda kūrėjai <br/><br/> Tai eksperimentinė programinė įranga. <br/> Platinama pagal MIT / X11 programinės įrangos licenciją, žr. Lydinčią failą KOPIJAVIMAS arba http://www.opensource.org/licenses/mit-license.php. <br/><br/> Šis produktas yra \"OpenSSL Project\" sukurta programinė įranga, skirta naudoti \"OpenSSL Toolkit\" (https://www.openssl.org) ir kriptografijos programinė įranga, kurią parašė Ericas Youngas (eay@cryptsoft.com) ir \"UPnP\" programinė įranga, sukurta Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Bitcoin kūrėjai <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 The NovaCoin kūrėjai <br/> Copyright © 2014-2019 Metrix kūrėjai <br/><br/> Tai eksperimentinė programinė įranga. <br/> Platinama pagal MIT / X11 programinės įrangos licenciją, žr. Lydinčią failą KOPIJAVIMAS arba http://www.opensource.org/licenses/mit-license.php. <br/><br/> Šis produktas yra \"OpenSSL Project\" sukurta programinė įranga, skirta naudoti \"OpenSSL Toolkit\" (https://www.openssl.org) ir kriptografijos programinė įranga, kurią parašė Ericas Youngas (eay@cryptsoft.com) ir \"UPnP\" programinė įranga, sukurta Thomas Bernard.",
             "ABOUTALTITUDETAB": "Aukštis",
-            "ABOUTALTITUDE": "Copyright © 2018 \"Linda\" kūrėjai <br/><br/> Ši programinė įranga platinama pagal GPL-3.0 licenciją, daugiau informacijos rasite https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 \"Metrix\" kūrėjai <br/><br/> Ši programinė įranga platinama pagal GPL-3.0 licenciją, daugiau informacijos rasite https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Pasirinkite kalbą"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Įveskite piniginės slaptafrazę",
             "UNLOCKSTAKINGONLY": "Atrakinkite, kad statytumėte tik",
-            "CLIENTUPDATETITLE": "\"Linda Core\" atnaujinimas prieinamas",
-            "CLIENTUPDATEINFO": "\"Linda Core\" atnaujinimai. Ar norėtumėte jį dabar įdiegti?",
+            "CLIENTUPDATETITLE": "\"Metrix Core\" atnaujinimas prieinamas",
+            "CLIENTUPDATEINFO": "\"Metrix Core\" atnaujinimai. Ar norėtumėte jį dabar įdiegti?",
             "WALLETUPDATETITLE": "Galimas aukštis virš jūros lygio",
             "WALLETUPDATEINFO": "Galima atnaujinti \"Altitude\". Ar norėtumėte jį atsisiųsti dabar?",
             "CLIENTUPDATEBUTTON": "Atnaujinti",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Keisti slaptažodžio frazę",
             "ENCRYPTTITLE": "Užšifruoti piniginę",
             "ENCRYPTBUTTON": "Šifruoti",
-            "CLIENTSTOPPEDTITLE": "\"Linda Core\" sustojo",
-            "CLIENTSTOPPEDINFO": "\"Linda Core\" prarado ryšį. Galite sustabdyti piniginę arba paleisti vidinę \"Linda Core\".",
+            "CLIENTSTOPPEDTITLE": "\"Metrix Core\" sustojo",
+            "CLIENTSTOPPEDINFO": "\"Metrix Core\" prarado ryšį. Galite sustabdyti piniginę arba paleisti vidinę \"Metrix Core\".",
             "CLIENTSTOPPEDBUTTONEXIT": "Išeiti iš piniginės",
-            "CLIENTSTOPPEDBUTTONSTART": "Pradėti \"Linda Core\"",
+            "CLIENTSTOPPEDBUTTONSTART": "Pradėti \"Metrix Core\"",
             "ENCRYPTEDTITLE": "Piniginė užšifruojama",
             "ENCRYPTEDCONTENT": "Bet kokios ankstesnės atsarginės kopijos, kurias padarėte iš savo piniginės failo, turėtų būti pakeistos naujai sukurtu užkoduotu piniginės failu. Saugumo sumetimais ankstesnės neužšifruoto piniginės failo atsarginės kopijos bus netinkamos, kai tik pradėsite naudoti naują užkoduotą piniginę.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core netikėtai sustojo",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Linda Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core netikėtai sustojo",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Metrix Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Iš naujo paleiskite klientą",
-            "CLIENTINVALIDCONFIGTITLE": "Netinkama „Linda.conf“ konfigūracija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsų „Linda.conf“ turi netinkamą masternodą, dėl kurio „Linda Core“ išeis iš karto. Patikrinkite šį failą."
+            "CLIENTINVALIDCONFIGTITLE": "Netinkama „metrix.conf“ konfigūracija",
+            "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
-            "SENDINGINFO": "Tai yra jūsų išsaugotas Linda adresas mokėjimams siųsti. Prieš siųsdami monetas, visada patikrinkite sumą ir adresą",
-            "RECEIVINGINFO": "Tai yra jūsų išsaugotas \"Linda\" adresas mokėjimų priėmimui.",
+            "SENDINGINFO": "Tai yra jūsų išsaugotas Metrix adresas mokėjimams siųsti. Prieš siųsdami monetas, visada patikrinkite sumą ir adresą",
+            "RECEIVINGINFO": "Tai yra jūsų išsaugotas \"Metrix\" adresas mokėjimų priėmimui.",
             "BUTTONSELECT": "Pasirinkite",
             "TABLECOLUMNS_LABEL": "Etiketė",
             "TABLECOLUMNS_ADDRESS": "Adresas",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Pasirašyti pranešimą...",
             "VERIFYMESSAGE": "Patvirtinti pranešimą...",
             "LOCALE": "Kalba...",
-            "RESTARTCORE": "Paleiskite \"Linda Core\"",
+            "RESTARTCORE": "Paleiskite \"Metrix Core\"",
             "EXIT": "Išeiti",
             "OPTIONS": "Galimybės..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Pagalba",
             "COMMANDLINEOPTIONS": "Komandinės eilutės parinktys...",
-            "CHECKUPDATECORE": "Patikrinkite \"Linda Core Update\"...",
+            "CHECKUPDATECORE": "Patikrinkite \"Metrix Core Update\"...",
             "CHECKUPDATEWALLET": "Patikrinkite aukštį virš jūros lygio...",
-            "ABOUTCORE": "Apie Linda Core...",
+            "ABOUTCORE": "Apie Metrix Core...",
             "ABOUTALTITUDE": "Apie aukštį...",
             "DISCORD": "Nesąmonė...",
             "ISSUE": "Pranešti apie problemą..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Gerai",
         "CLEARALLBUTTON": "Išvalyti viską",
         "ENTERACCOUNTLABEL": "Įveskite šio adreso etiketę",
-        "ENTERADDRESSLABEL": "Įveskite Linda adresą",
+        "ENTERADDRESSLABEL": "Įveskite Metrix adresą",
         "AGO": "prieš",
         "SORTBY": "Rūšiuoti pagal",
         "SEARCH": "Paieška",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Priimti"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Pradedama Linda Core...",
-        "DOWNLOADCLIENT": "\"Linda Core\" parsisiuntimas...",
-        "UPDATEAVAILABLE": "\"Linda Core\" atnaujinimas prieinamas",
-        "SHUTTINGDOWN": "\"Linda Core\" išjungimas...",
-        "RESTARTING": "Linda Core paleidimas iš naujo..."
+        "INITIALISING": "Pradedama Metrix Core...",
+        "DOWNLOADCLIENT": "\"Metrix Core\" parsisiuntimas...",
+        "UPDATEAVAILABLE": "\"Metrix Core\" atnaujinimas prieinamas",
+        "SHUTTINGDOWN": "\"Metrix Core\" išjungimas...",
+        "RESTARTING": "Metrix Core paleidimas iš naujo..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nauja paskyra sėkmingai sukurta",

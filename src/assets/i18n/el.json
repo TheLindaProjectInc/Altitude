@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Το Πορτοφόλι τρέχει αυτή τη στιγμή",
             "NOTENABLEDTITLE": "Η δέσμευση δεν είναι ενεργοποιημένη",
             "NOTENABLEDINFO": "Η επιδότηση δεν ενεργοποιείται αυτήν τη στιγμή.",
-            "NOTENABLEDINSTR": "Για το στοίχημα θα χρειαστεί να ενεργοποιήσετε το staking setting stacking = 1 στο αρχείο Linda.conf.",
+            "NOTENABLEDINSTR": "Για το στοίχημα θα χρειαστεί να ενεργοποιήσετε το staking setting stacking = 1 στο αρχείο metrix.conf.",
             "NOTSTAKINGTITLE": "Το πορτοφόλι δεν στοιχηματίζει",
             "NOTSTAKINGINFO": "Το πορτοφόλι σας είναι κλειδωμένο για να στοιχηματίσετε.",
             "NOTSTAKINGINSTR": "Μπορείτε να ξεκινήσετε να στοιχηματίζετε ξεκλειδώνοντας το πορτοφόλι σας για να στοιχηματίσετε",
@@ -69,7 +69,7 @@
             "ADDRESS": "Διεύθυνση",
             "ENABLED": "Ενεργοποιήθηκε",
             "NOTENABLEDTITLE": "Δεν είναι ενεργοποιημένες οι μάστορες",
-            "NOTENABLEDINSTR": "Για να εκτελέσετε ένα masternode θα χρειαστεί να ενεργοποιήσετε τους masternodes ρυθμίζοντας το masternode = 1 και διαμορφώνοντας τις μεταβλητές \"masternodeprivkey\" και \"masternodeaddr\" στο αρχείο Linda.conf.",
+            "NOTENABLEDINSTR": "Για να εκτελέσετε ένα masternode θα χρειαστεί να ενεργοποιήσετε τους masternodes ρυθμίζοντας το masternode = 1 και διαμορφώνοντας τις μεταβλητές \"masternodeprivkey\" και \"masternodeaddr\" στο αρχείο metrix.conf.",
             "STARTBUTTON": "Ξεκινήστε το τοπικό",
             "STARTALIASBUTTON": "Ξεκινήστε το ψευδώνυμο",
             "STARTALLBUTTON": "Ξεκινήστε όλες"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Υψόμετρο Έκδοση"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Καλώς ήλθατε στην κονσόλα Linda Core RPC. Πληκτρολογήστε βοήθεια για μια επισκόπηση των διαθέσιμων εντολών.",
+                "CONSOLEINFO": "Καλώς ήλθατε στην κονσόλα Metrix Core RPC. Πληκτρολογήστε βοήθεια για μια επισκόπηση των διαθέσιμων εντολών.",
                 "CONSOLEWARNING": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Οι απατεώνες είναι ενεργοί, λέγοντας στους χρήστες να πληκτρολογούν εντολές εδώ, κλέβοντας τα περιεχόμενα του πορτοφολιού τους. Μην χρησιμοποιείτε αυτήν την κονσόλα χωρίς να κατανοείτε πλήρως την απόκλιση μιας εντολής.",
                 "COMMANDPLACEHODLER": "Εισαγάγετε εντολή"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Έναρξη μπλοκ"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Αυτές οι εντολές επισκευής δεν μπορούν να εκτελεστούν όταν το Linda Core εκτελείται εξωτερικά",
-                "INFO": "Τα παρακάτω κουμπιά θα κάνουν επανεκκίνηση του Linda Core με επιλογές γραμμής εντολών για την επιδιόρθωση του πορτοφολιού, την επίλυση προβλημάτων με τα διεφθαρμένα αρχεία μπλοκ αλυσίδων ή τις ελλείψεις / παρωχημένες συναλλαγές.",
+                "INFOEXTERNAL": "Αυτές οι εντολές επισκευής δεν μπορούν να εκτελεστούν όταν το Metrix Core εκτελείται εξωτερικά",
+                "INFO": "Τα παρακάτω κουμπιά θα κάνουν επανεκκίνηση του Metrix Core με επιλογές γραμμής εντολών για την επιδιόρθωση του πορτοφολιού, την επίλυση προβλημάτων με τα διεφθαρμένα αρχεία μπλοκ αλυσίδων ή τις ελλείψεις / παρωχημένες συναλλαγές.",
                 "SALVAGEBUTTON": "Πορτοφόλι διάσωσης",
                 "SALVAGEINFO": "-salvagewallet: Προσπαθήστε να ανακτήσετε ιδιωτικά κλειδιά από ένα διεφθαρμένο wallet.dat.",
                 "RESCANBUTTON": "Επαναλάβετε τα αρχεία blockchain",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Οι προγραμματιστές Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Οι προγραμματιστές της NovaCoin <br/> Copyright © 2014-2018 Οι προγραμματιστές της Linda <br/><br/> Πρόκειται για πειραματικό λογισμικό. <br/> Διανέμεται υπό την άδεια χρήσης του λογισμικού MIT / X11, δείτε το συνοδευτικό αρχείο COPYING ή http://www.opensource.org/licenses/mit-license.php. <br/><br/> Αυτό το προϊόν περιλαμβάνει το λογισμικό που αναπτύχθηκε από το OpenSSL Project για χρήση στο OpenSSL Toolkit (https://www.openssl.org) και το κρυπτογραφικό λογισμικό που έγραψε ο Eric Young (eay@cryptsoft.com) και το λογισμικό UPnP που συνέταξε ο Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Οι προγραμματιστές Bitcoin <br/> Copyright © 2011-2012 PPCoin Developers <br/> Copyright © 2012-2014 Οι προγραμματιστές της NovaCoin <br/> Copyright © 2014-2019 Οι προγραμματιστές της Metrix <br/><br/> Πρόκειται για πειραματικό λογισμικό. <br/> Διανέμεται υπό την άδεια χρήσης του λογισμικού MIT / X11, δείτε το συνοδευτικό αρχείο COPYING ή http://www.opensource.org/licenses/mit-license.php. <br/><br/> Αυτό το προϊόν περιλαμβάνει το λογισμικό που αναπτύχθηκε από το OpenSSL Project για χρήση στο OpenSSL Toolkit (https://www.openssl.org) και το κρυπτογραφικό λογισμικό που έγραψε ο Eric Young (eay@cryptsoft.com) και το λογισμικό UPnP που συνέταξε ο Thomas Bernard.",
             "ABOUTALTITUDETAB": "Υψόμετρο",
-            "ABOUTALTITUDE": "Copyright © 2018 Οι προγραμματιστές της Linda <br/><br/> Αυτό το λογισμικό διανέμεται υπό την άδεια GPL-3.0, ανατρέξτε στη διεύθυνση https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE για περισσότερες πληροφορίες."
+            "ABOUTALTITUDE": "Copyright © 2019 Οι προγραμματιστές της Metrix <br/><br/> Αυτό το λογισμικό διανέμεται υπό την άδεια GPL-3.0, ανατρέξτε στη διεύθυνση https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE για περισσότερες πληροφορίες."
         },
         "LOCALE": {
             "TITLE": "Επιλέξτε γλώσσα"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Εισαγάγετε τη φράση πρόσβασης στο πορτοφόλι σας",
             "UNLOCKSTAKINGONLY": "Ξεκλειδώστε μόνο για στοιβασία",
-            "CLIENTUPDATETITLE": "Η διαθέσιμη ενημέρωση πυρήνα Linda",
-            "CLIENTUPDATEINFO": "Μια ενημερωμένη έκδοση είναι διαθέσιμη για το Linda Core. Θέλετε να το εγκαταστήσετε τώρα;",
+            "CLIENTUPDATETITLE": "Η διαθέσιμη ενημέρωση πυρήνα Metrix",
+            "CLIENTUPDATEINFO": "Μια ενημερωμένη έκδοση είναι διαθέσιμη για το Metrix Core. Θέλετε να το εγκαταστήσετε τώρα;",
             "WALLETUPDATETITLE": "Υπάρχει διαθέσιμη ενημέρωση ύψους",
             "WALLETUPDATEINFO": "Υπάρχει μια ενημέρωση για το Υψόμετρο. Θα θέλατε να το κατεβάσετε τώρα;",
             "CLIENTUPDATEBUTTON": "Εκσυγχρονίζω",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Αλλαγή φράσης πρόσβασης",
             "ENCRYPTTITLE": "Κρυπτογράφηση του πορτοφολιού σας",
             "ENCRYPTBUTTON": "Κρυπτογράφηση",
-            "CLIENTSTOPPEDTITLE": "Η Linda Core σταμάτησε",
-            "CLIENTSTOPPEDINFO": "Έχει χαθεί σύνδεση με την Linda Core. Μπορείτε να σταματήσετε το πορτοφόλι ή να ξεκινήσετε την εσωτερική Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Η Metrix Core σταμάτησε",
+            "CLIENTSTOPPEDINFO": "Έχει χαθεί σύνδεση με την Metrix Core. Μπορείτε να σταματήσετε το πορτοφόλι ή να ξεκινήσετε την εσωτερική Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Έξοδος από το Πορτοφόλι",
-            "CLIENTSTOPPEDBUTTONSTART": "Ξεκινήστε την Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Ξεκινήστε την Metrix Core",
             "ENCRYPTEDTITLE": "Πορτοφόλι κρυπτογραφημένο",
             "ENCRYPTEDCONTENT": "Οποιαδήποτε προηγούμενα αντίγραφα ασφαλείας που έχετε δημιουργήσει από το αρχείο πορτοφολιού σας θα πρέπει να αντικατασταθούν με το πρόσφατα δημιουργημένο αρχείο κρυπτογραφημένου πορτοφολιού. Για λόγους ασφαλείας, τα προηγούμενα αντίγραφα ασφαλείας του μη κρυπτογραφημένου αρχείου πορτοφολιού θα καταστούν άχρηστα μόλις αρχίσετε να χρησιμοποιείτε το νέο κρυπτογραφημένο πορτοφόλι.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Η Linda Core σταμάτησε απροσδόκητα",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Υπήρξε ένα πρόβλημα με την Linda Core που την έχει προκαλέσει να τερματίσει. Συνιστάται να ελέγξετε το αρχείο debug.log για θέματα.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Η Metrix Core σταμάτησε απροσδόκητα",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Υπήρξε ένα πρόβλημα με την Metrix Core που την έχει προκαλέσει να τερματίσει. Συνιστάται να ελέγξετε το αρχείο debug.log για θέματα.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Επανεκκινήστε τον υπολογιστή",
-            "CLIENTINVALIDCONFIGTITLE": "Μη έγκυρη διαμόρφωση του Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Το σύστημά σας Linda.conf έχει μη έγκυρη ρύθμιση masternode που θα προκαλέσει την άμεση έξοδο της Linda Core. Ελέγξτε αυτό το αρχείο."
+            "CLIENTINVALIDCONFIGTITLE": "Μη έγκυρη διαμόρφωση του metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Το σύστημά σας metrix.conf έχει μη έγκυρη ρύθμιση masternode που θα προκαλέσει την άμεση έξοδο της Metrix Core. Ελέγξτε αυτό το αρχείο."
         },
         "ADDRESSBOOK": {
             "TITLE": "Βιβλίο διευθύνσεων",
-            "SENDINGINFO": "Αυτές είναι η αποθηκευμένη σας διεύθυνση Linda για την αποστολή πληρωμών. Ελέγχετε πάντα το ποσό και τη διεύθυνση παραλαβής πριν στείλετε τα κέρματα",
-            "RECEIVINGINFO": "Αυτές είναι η αποθηκευμένη σας διεύθυνση Linda για τη λήψη πληρωμών.",
+            "SENDINGINFO": "Αυτές είναι η αποθηκευμένη σας διεύθυνση Metrix για την αποστολή πληρωμών. Ελέγχετε πάντα το ποσό και τη διεύθυνση παραλαβής πριν στείλετε τα κέρματα",
+            "RECEIVINGINFO": "Αυτές είναι η αποθηκευμένη σας διεύθυνση Metrix για τη λήψη πληρωμών.",
             "BUTTONSELECT": "Επιλέγω",
             "TABLECOLUMNS_LABEL": "Επιγραφή",
             "TABLECOLUMNS_ADDRESS": "Διεύθυνση",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Υπογραφή μηνύματος...",
             "VERIFYMESSAGE": "Επαλήθευση μηνύματος...",
             "LOCALE": "Γλώσσα...",
-            "RESTARTCORE": "Κάντε επανεκκίνηση του Linda Core",
+            "RESTARTCORE": "Κάντε επανεκκίνηση του Metrix Core",
             "EXIT": "Εξοδος",
             "OPTIONS": "Επιλογές..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Βοήθεια",
             "COMMANDLINEOPTIONS": "Επιλογές γραμμής εντολών...",
-            "CHECKUPDATECORE": "Ελέγξτε για την ενημέρωση πυρήνα Linda...",
+            "CHECKUPDATECORE": "Ελέγξτε για την ενημέρωση πυρήνα Metrix...",
             "CHECKUPDATEWALLET": "Έλεγχος για ενημέρωση ύψους...",
-            "ABOUTCORE": "Σχετικά με την Linda Core...",
+            "ABOUTCORE": "Σχετικά με την Metrix Core...",
             "ABOUTALTITUDE": "Σχετικά με το υψόμετρο...",
             "DISCORD": "Διχόνοια...",
             "ISSUE": "Αναφέρετε ένα πρόβλημα..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Εντάξει",
         "CLEARALLBUTTON": "Τα καθαρίζω όλα",
         "ENTERACCOUNTLABEL": "Καταχωρίστε μια ετικέτα για αυτήν τη διεύθυνση",
-        "ENTERADDRESSLABEL": "Εισαγάγετε μια διεύθυνση Linda",
+        "ENTERADDRESSLABEL": "Εισαγάγετε μια διεύθυνση Metrix",
         "AGO": "πριν",
         "SORTBY": "Ταξινόμηση κατά",
         "SEARCH": "Ψάξιμο",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Αποδέχομαι"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Ξεκινώντας την Linda Core...",
-        "DOWNLOADCLIENT": "Λήψη του Linda Core...",
-        "UPDATEAVAILABLE": "Η διαθέσιμη ενημέρωση πυρήνα Linda",
-        "SHUTTINGDOWN": "Κλείνοντας τη Linda Core...",
-        "RESTARTING": "Επανεκκίνηση του Linda Core..."
+        "INITIALISING": "Ξεκινώντας την Metrix Core...",
+        "DOWNLOADCLIENT": "Λήψη του Metrix Core...",
+        "UPDATEAVAILABLE": "Η διαθέσιμη ενημέρωση πυρήνα Metrix",
+        "SHUTTINGDOWN": "Κλείνοντας τη Metrix Core...",
+        "RESTARTING": "Επανεκκίνηση του Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ο νέος λογαριασμός δημιουργήθηκε με επιτυχία",

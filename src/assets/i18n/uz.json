@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Hozirgi paytda hamyon ishlamoqda",
             "NOTENABLEDTITLE": "Staking funksiyasi yoqilmagan",
             "NOTENABLEDINFO": "Staking hozirda yoqilmagan.",
-            "NOTENABLEDINSTR": "Ishtirok etish uchun Linda.conf faylida staking = 1 qiymatini sozlashni faollashtirishingiz kerak.",
+            "NOTENABLEDINSTR": "Ishtirok etish uchun metrix.conf faylida staking = 1 qiymatini sozlashni faollashtirishingiz kerak.",
             "NOTSTAKINGTITLE": "Pul kiska staking emas",
             "NOTSTAKINGINFO": "Sizning hamyoningiz hozirda to'xtash uchun qulflangan.",
             "NOTSTAKINGINSTR": "Siz cho'ntakni ochish uchun qulfni ochib qo'yishingiz mumkin",
@@ -69,7 +69,7 @@
             "ADDRESS": "Manzil",
             "ENABLED": "Faol",
             "NOTENABLEDTITLE": "Masternodes yoqilmagan",
-            "NOTENABLEDINSTR": "Masternode ishlatish uchun masternode = 1 sozlash va Linda.conf faylida 'masternodeprivkey' va 'masternodeaddr' parametrlarini sozlash orqali masternodes yoqish kerak.",
+            "NOTENABLEDINSTR": "Masternode ishlatish uchun masternode = 1 sozlash va metrix.conf faylida 'masternodeprivkey' va 'masternodeaddr' parametrlarini sozlash orqali masternodes yoqish kerak.",
             "STARTBUTTON": "Mahalliy dasturni boshlang",
             "STARTALIASBUTTON": "Aliasni boshlang",
             "STARTALLBUTTON": "Barchasini ishga tushiring"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Balandlik versiyasi"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPC konsoliga xush kelibsiz. Mavjud buyruqlar haqida umumiy ma'lumot uchun yordam yozing.",
+                "CONSOLEINFO": "Metrix Core RPC konsoliga xush kelibsiz. Mavjud buyruqlar haqida umumiy ma'lumot uchun yordam yozing.",
                 "CONSOLEWARNING": "OGOHLANTIRISH: Scammers faol bo'lib, foydalanuvchilarga bu erda buyruqlar yozib, hamyonlar tarkibini o'g'irlashni aytdi. Ushbu konsolni buyruqni bajarishdan to'liq foydalanmasdan foydalanmang.",
                 "COMMANDPLACEHODLER": "Buyruqni kiriting"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Blokni boshlash"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Ushbu ta'mirlash buyruqlar Linda Core tashqi tomonidan boshqarilganda bajarilmaydi",
-                "INFO": "Quyidagi tugmalar hamyonni rekonstruksiya qilish, buzilgan blok-fayllar bilan bog'liq muammolarni tuzatish yoki etishmayotgan / eskirgan bitimlar uchun Linda Core-ni buyruq qatori variantlari bilan qayta ishga tushiradi.",
+                "INFOEXTERNAL": "Ushbu ta'mirlash buyruqlar Metrix Core tashqi tomonidan boshqarilganda bajarilmaydi",
+                "INFO": "Quyidagi tugmalar hamyonni rekonstruksiya qilish, buzilgan blok-fayllar bilan bog'liq muammolarni tuzatish yoki etishmayotgan / eskirgan bitimlar uchun Metrix Core-ni buyruq qatori variantlari bilan qayta ishga tushiradi.",
                 "SALVAGEBUTTON": "Najot pul ishlang",
                 "SALVAGEINFO": "-salvagewallet: buzuq cüzdan.dat'dan xususiy kalitlarni tiklashga harakat qilish.",
                 "RESCANBUTTON": "Blockchain fayllarini qayta ko'rib chiqing",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Mualliflik huquqi © 2009-2015 Bitcoin ishlab chiquvchilari <br/> Copyright © 2011-2012 PPCoin ishlab chiquvchilari <br/> Copyright © 2012-2014 NovaCoin ishlab chiquvchilari <br/> Mualliflik huquqi © 2014-2018 Linda dasturchilari <br/><br/> Bu eksperimental dastur. <br/> MIT / X11 dasturiy ta'minot litsenziyasi ostida tarqatilgan ushbu faylni COPYING yoki http://www.opensource.org/licenses/mit-license.php sahifasiga qarang. <br/><br/> Ushbu mahsulot OpenSSL loyihasi tomonidan OpenSSL Toolkit (https://www.openssl.org) va Erik Young (eay@cryptsoft.com) tomonidan yozilgan kriptografik dastur va Tomas Bernard tomonidan yozilgan UPnP dasturidan foydalanish uchun ishlab chiqilgan dasturlarni o'z ichiga oladi.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Mualliflik huquqi © 2009-2015 Bitcoin ishlab chiquvchilari <br/> Copyright © 2011-2012 PPCoin ishlab chiquvchilari <br/> Copyright © 2012-2014 NovaCoin ishlab chiquvchilari <br/> Mualliflik huquqi © 2014-2019 Metrix dasturchilari <br/><br/> Bu eksperimental dastur. <br/> MIT / X11 dasturiy ta'minot litsenziyasi ostida tarqatilgan ushbu faylni COPYING yoki http://www.opensource.org/licenses/mit-license.php sahifasiga qarang. <br/><br/> Ushbu mahsulot OpenSSL loyihasi tomonidan OpenSSL Toolkit (https://www.openssl.org) va Erik Young (eay@cryptsoft.com) tomonidan yozilgan kriptografik dastur va Tomas Bernard tomonidan yozilgan UPnP dasturidan foydalanish uchun ishlab chiqilgan dasturlarni o'z ichiga oladi.",
             "ABOUTALTITUDETAB": "Balandligi",
-            "ABOUTALTITUDE": "Mualliflik huquqi © 2018 Linda ishlab chiqaruvchilari <br/><br/> Ushbu dastur GPL-3.0 litsenziyasi bo'yicha tarqatiladi, batafsil ma'lumot uchun https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE saytiga qarang."
+            "ABOUTALTITUDE": "Mualliflik huquqi © 2019 Metrix ishlab chiqaruvchilari <br/><br/> Ushbu dastur GPL-3.0 litsenziyasi bo'yicha tarqatiladi, batafsil ma'lumot uchun https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE saytiga qarang."
         },
         "LOCALE": {
             "TITLE": "Tilni tanlang"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Hamyoningizning parolini kiriting",
             "UNLOCKSTAKINGONLY": "Faqat staking uchun qulfdan chiqaring",
-            "CLIENTUPDATETITLE": "Linda Core yangilash mavjud",
-            "CLIENTUPDATEINFO": "Linda Core uchun yangilanish mavjud. Uni hozir o'rnatmoqchimisiz?",
+            "CLIENTUPDATETITLE": "Metrix Core yangilash mavjud",
+            "CLIENTUPDATEINFO": "Metrix Core uchun yangilanish mavjud. Uni hozir o'rnatmoqchimisiz?",
             "WALLETUPDATETITLE": "Er balandligi yangilanishi mavjud",
             "WALLETUPDATEINFO": "Qator uchun yangilanish mavjud. Uni endi yuklab olishni xohlaysizmi?",
             "CLIENTUPDATEBUTTON": "Yangilash",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Parolni o'zgartiring",
             "ENCRYPTTITLE": "Hamyoningizni shifrlash",
             "ENCRYPTBUTTON": "Shifrlang",
-            "CLIENTSTOPPEDTITLE": "Linda Core to'xtadi",
-            "CLIENTSTOPPEDINFO": "Linda Core aloqasi yo'qoldi. Siz hamyonni to'xtatishingiz yoki ichki Linda Core ni ishga tushirishingiz mumkin.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core to'xtadi",
+            "CLIENTSTOPPEDINFO": "Metrix Core aloqasi yo'qoldi. Siz hamyonni to'xtatishingiz yoki ichki Metrix Core ni ishga tushirishingiz mumkin.",
             "CLIENTSTOPPEDBUTTONEXIT": "Walletdan chiqish",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Core ni boshlang",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Core ni boshlang",
             "ENCRYPTEDTITLE": "Hamyon shifrlangan",
             "ENCRYPTEDCONTENT": "Sizning hamyoningiz faylini yaratgan oldingi zaxiralashlar yangi yaratilgan, shifrlangan hamyonlar fayllari bilan almashtirilishi kerak. Xavfsizlik uchun, yangi shifrlangan hamyonni ishlatishdan oldin shifrlanmagan hamyon faylining oldingi zahiralari foydasiz bo'ladi.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core kutilmaganda to'xtadi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Core bilan muammo yuzaga keldi va bu uning tugatilishiga olib keldi. Muammolar uchun debug.log faylini tekshirish tavsiya etiladi.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core kutilmaganda to'xtadi",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core bilan muammo yuzaga keldi va bu uning tugatilishiga olib keldi. Muammolar uchun debug.log faylini tekshirish tavsiya etiladi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Mijozni qayta ishga tushiring",
-            "CLIENTINVALIDCONFIGTITLE": "Linda.conf konfiguratsiyasi noto'g'ri",
-            "CLIENTINVALIDCONFIGINFO": "Sizning Linda.conf-da Linda Core-ning darhol chiqib ketishiga olib keladigan noto'g'ri masternode moslamasi mavjud. Iltimos, ushbu faylni tekshiring."
+            "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfiguratsiyasi noto'g'ri",
+            "CLIENTINVALIDCONFIGINFO": "Sizning metrix.conf-da Metrix Core-ning darhol chiqib ketishiga olib keladigan noto'g'ri masternode moslamasi mavjud. Iltimos, ushbu faylni tekshiring."
         },
         "ADDRESSBOOK": {
             "TITLE": "Manzillar kitobi",
-            "SENDINGINFO": "Bu to'lovlarni jo'natish uchun saqlangan Linda manzilingiz. Pullarni yuborishdan oldin har doim pul miqdorini va manzilni tekshiring",
-            "RECEIVINGINFO": "Bu to'lovlarni qabul qilish uchun sizning saqlangan Linda manzilingiz.",
+            "SENDINGINFO": "Bu to'lovlarni jo'natish uchun saqlangan Metrix manzilingiz. Pullarni yuborishdan oldin har doim pul miqdorini va manzilni tekshiring",
+            "RECEIVINGINFO": "Bu to'lovlarni qabul qilish uchun sizning saqlangan Metrix manzilingiz.",
             "BUTTONSELECT": "Tanlang",
             "TABLECOLUMNS_LABEL": "Yorliq",
             "TABLECOLUMNS_ADDRESS": "Manzil",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Xabarga imzo qo'yish...",
             "VERIFYMESSAGE": "Xabarni tasdiqlash...",
             "LOCALE": "Til...",
-            "RESTARTCORE": "Linda Core'ni qayta ishga tushiring",
+            "RESTARTCORE": "Metrix Core'ni qayta ishga tushiring",
             "EXIT": "Chiqish",
             "OPTIONS": "Tanlovlar..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Yordam bering",
             "COMMANDLINEOPTIONS": "Buyruqning parametrlari...",
-            "CHECKUPDATECORE": "Linda Yadro yangilanishini tekshiring...",
+            "CHECKUPDATECORE": "Metrix Yadro yangilanishini tekshiring...",
             "CHECKUPDATEWALLET": "Dengiz sathidan yangilashni tekshiring...",
-            "ABOUTCORE": "Linda Core haqida...",
+            "ABOUTCORE": "Metrix Core haqida...",
             "ABOUTALTITUDE": "Balandligi haqida...",
             "DISCORD": "Ajratish...",
             "ISSUE": "Muammo haqida xabar berish..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Hammasini tozalamoq",
         "ENTERACCOUNTLABEL": "Ushbu manzil uchun yorliqni kiriting",
-        "ENTERADDRESSLABEL": "Linda manzilini kiriting",
+        "ENTERADDRESSLABEL": "Metrix manzilini kiriting",
         "AGO": "oldin",
         "SORTBY": "Saralash turi",
         "SEARCH": "Qidirmoq",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Qabul qiling"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core-ni ishga tushirish...",
-        "DOWNLOADCLIENT": "Linda Core-ni yuklab olish...",
-        "UPDATEAVAILABLE": "Linda Core yangilash mavjud",
-        "SHUTTINGDOWN": "Linda Coreni o'chirish...",
-        "RESTARTING": "Linda Core-ni qayta ishga tushirish..."
+        "INITIALISING": "Metrix Core-ni ishga tushirish...",
+        "DOWNLOADCLIENT": "Metrix Core-ni yuklab olish...",
+        "UPDATEAVAILABLE": "Metrix Core yangilash mavjud",
+        "SHUTTINGDOWN": "Metrix Coreni o'chirish...",
+        "RESTARTING": "Metrix Core-ni qayta ishga tushirish..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yangi hisob muvaffaqiyatli yaratildi",

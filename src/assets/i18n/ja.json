@@ -49,7 +49,7 @@
             "STAKINGTITLE": "ウォレットは現在懸架しています",
             "NOTENABLEDTITLE": "ステイキングが有効になっていない",
             "NOTENABLEDINFO": "ステイキングは現在有効になっていません。",
-            "NOTENABLEDINSTR": "Linda.confファイルでステーキング設定staking = 1を有効にする必要があります。",
+            "NOTENABLEDINSTR": "metrix.confファイルでステーキング設定staking = 1を有効にする必要があります。",
             "NOTSTAKINGTITLE": "ウォレットがかしめていない",
             "NOTSTAKINGINFO": "あなたの財布は現在、ステーキングのためにロックされています。",
             "NOTSTAKINGINSTR": "あなたはステークするためにあなたの財布のロックを解除することによってステークを始めることができます",
@@ -69,7 +69,7 @@
             "ADDRESS": "住所",
             "ENABLED": "有効",
             "NOTENABLEDTITLE": "Masternodesは有効になっていません",
-            "NOTENABLEDINSTR": "マスターノードを実行するには、masternode = 1を設定し、Linda.confファイルで 'masternodeprivkey'および 'masternodeaddr'変数を設定して、マスターノードを有効にする必要があります。",
+            "NOTENABLEDINSTR": "マスターノードを実行するには、masternode = 1を設定し、metrix.confファイルで 'masternodeprivkey'および 'masternodeaddr'変数を設定して、マスターノードを有効にする必要があります。",
             "STARTBUTTON": "ローカル開始",
             "STARTALIASBUTTON": "エイリアスを開始",
             "STARTALLBUTTON": "すべて開始"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "高度バージョン"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Linda Core RPCコンソールへようこそ。使用可能なコマンドの概要については、helpと入力してください。",
+                "CONSOLEINFO": "Metrix Core RPCコンソールへようこそ。使用可能なコマンドの概要については、helpと入力してください。",
                 "CONSOLEWARNING": "警告：Scammersはアクティブで、ここにコマンドを入力し、ウォレットの内容を盗むように指示しています。コマンドの分岐を完全に理解していない場合は、このコンソールを使用しないでください。",
                 "COMMANDPLACEHODLER": "コマンドを入力"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "開始ブロック"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "これらの修復コマンドは、Linda Coreが外部で実行されているときには実行できません。",
-                "INFO": "以下のボタンは、Walletを修復するためのコマンドラインオプションを使用してLinda Coreを再起動し、壊れたブロックチェーンファイルの問題や廃止/廃止されたトランザクションを修正します。",
+                "INFOEXTERNAL": "これらの修復コマンドは、Metrix Coreが外部で実行されているときには実行できません。",
+                "INFO": "以下のボタンは、Walletを修復するためのコマンドラインオプションを使用してMetrix Coreを再起動し、壊れたブロックチェーンファイルの問題や廃止/廃止されたトランザクションを修正します。",
                 "SALVAGEBUTTON": "サルベージウォレット",
                 "SALVAGEINFO": "-salvagewallet：破損したwallet.datから秘密鍵を回復しようとします。",
                 "RESCANBUTTON": "ブロックチェーンファイルを再スキャンする",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "リンダコア",
-            "ABOUTCORE": "著作権©2009-2015 Bitcoin開発者<br/>著作権©2011-2012 PPCoin開発者<br/>著作権©2012-2014 NovaCoin開発者<br/>著作権©2014-2018 The Linda開発者<br/><br/>これは実験的なソフトウェアです。 <br/> MIT / X11ソフトウェアライセンスに基づいて配布するには、添付ファイルCOPYINGまたはhttp://www.opensource.org/licenses/mit-license.phpを参照してください。 <br/><br/>本製品には、OpenSSL Project（OpenSSL Toolkit（https://www.openssl.org）用）およびEric Young（eay@cryptsoft.com）が作成した暗号化ソフトウェアおよびThomas Bernardが作成したUPnPソフトウェア用に開発されたソフトウェアが含まれています。",
+            "ABOUTCORE": "著作権©2009-2015 Bitcoin開発者<br/>著作権©2011-2012 PPCoin開発者<br/>著作権©2012-2014 NovaCoin開発者<br/>著作権©2014-2019 The Linda開発者<br/><br/>これは実験的なソフトウェアです。 <br/> MIT / X11ソフトウェアライセンスに基づいて配布するには、添付ファイルCOPYINGまたはhttp://www.opensource.org/licenses/mit-license.phpを参照してください。 <br/><br/>本製品には、OpenSSL Project（OpenSSL Toolkit（https://www.openssl.org）用）およびEric Young（eay@cryptsoft.com）が作成した暗号化ソフトウェアおよびThomas Bernardが作成したUPnPソフトウェア用に開発されたソフトウェアが含まれています。",
             "ABOUTALTITUDETAB": "高度",
-            "ABOUTALTITUDE": "著作権©2018 The Linda開発者<br/><br/>このソフトウェアは、GPL-3.0ライセンスに基づいて配布されています。詳しくは、https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSEをご覧ください。"
+            "ABOUTALTITUDE": "著作権©2019 The Linda開発者<br/><br/>このソフトウェアは、GPL-3.0ライセンスに基づいて配布されています。詳しくは、https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSEをご覧ください。"
         },
         "LOCALE": {
             "TITLE": "言語を選択する"
@@ -245,7 +245,7 @@
             "ENTERPASSPHRASETITLE": "ウォレットのパスフレーズを入力",
             "UNLOCKSTAKINGONLY": "ステイキングのみのロック解除",
             "CLIENTUPDATETITLE": "Lindaコアアップデートが利用可能",
-            "CLIENTUPDATEINFO": "Linda Coreのアップデートが利用可能です。今すぐインストールしますか？",
+            "CLIENTUPDATEINFO": "Metrix Coreのアップデートが利用可能です。今すぐインストールしますか？",
             "WALLETUPDATETITLE": "利用可能な高度の更新",
             "WALLETUPDATEINFO": "Altitudeのアップデートが利用可能です。今すぐダウンロードしますか？",
             "CLIENTUPDATEBUTTON": "更新",
@@ -259,16 +259,16 @@
             "ENCRYPTTITLE": "ウォレットを暗号化する",
             "ENCRYPTBUTTON": "暗号化する",
             "CLIENTSTOPPEDTITLE": "リンダコア停止",
-            "CLIENTSTOPPEDINFO": "Linda Coreに接続が失われました。ウォレットを止めるか、内部のLinda Coreを起動することができます。",
+            "CLIENTSTOPPEDINFO": "Metrix Coreに接続が失われました。ウォレットを止めるか、内部のMetrix Coreを起動することができます。",
             "CLIENTSTOPPEDBUTTONEXIT": "ウォレットを終了",
-            "CLIENTSTOPPEDBUTTONSTART": "Linda Coreを起動する",
+            "CLIENTSTOPPEDBUTTONSTART": "Metrix Coreを起動する",
             "ENCRYPTEDTITLE": "ウォレットの暗号化",
             "ENCRYPTEDCONTENT": "ウォレット・ファイルの以前のバックアップは、新しく生成され、暗号化されたウォレット・ファイルに置き換えてください。セキュリティ上の理由から、暗号化されていないウォレット・ファイルの以前のバックアップは、新しい暗号化ウォレットの使用を開始するとすぐに無用になります。",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Coreが突然停止しました",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Linda Coreに問題があり、終了させました。 debug.logファイルで問題を確認することをお勧めします。",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Coreが突然停止しました",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coreに問題があり、終了させました。 debug.logファイルで問題を確認することをお勧めします。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "クライアントを再起動する",
-            "CLIENTINVALIDCONFIGTITLE": "無効なLinda.conf設定",
-            "CLIENTINVALIDCONFIGINFO": "あなたのLinda.confは無効なマスターノード設定を持っています。これはLinda Coreを直ちに終了させます。このファイルを確認してください。"
+            "CLIENTINVALIDCONFIGTITLE": "無効なmetrix.conf設定",
+            "CLIENTINVALIDCONFIGINFO": "あなたのmetrix.confは無効なマスターノード設定を持っています。これはMetrix Coreを直ちに終了させます。このファイルを確認してください。"
         },
         "ADDRESSBOOK": {
             "TITLE": "住所録",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "メッセージに署名する...",
             "VERIFYMESSAGE": "メッセージを確認...",
             "LOCALE": "言語...",
-            "RESTARTCORE": "Linda Coreを再起動する",
+            "RESTARTCORE": "Metrix Coreを再起動する",
             "EXIT": "出口",
             "OPTIONS": "オプション..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "助けて",
             "COMMANDLINEOPTIONS": "コマンドラインオプション...",
-            "CHECKUPDATECORE": "Linda Core Updateを確認してください...",
+            "CHECKUPDATECORE": "Metrix Core Updateを確認してください...",
             "CHECKUPDATEWALLET": "高度の更新を確認する...",
-            "ABOUTCORE": "Linda Coreについて...",
+            "ABOUTCORE": "Metrix Coreについて...",
             "ABOUTALTITUDE": "高度について...",
             "DISCORD": "不和...",
             "ISSUE": "問題を報告する..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "受け入れる"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Coreを初期化しています...",
-        "DOWNLOADCLIENT": "Linda Coreをダウンロード中...",
+        "INITIALISING": "Metrix Coreを初期化しています...",
+        "DOWNLOADCLIENT": "Metrix Coreをダウンロード中...",
         "UPDATEAVAILABLE": "Lindaコアアップデートが利用可能",
-        "SHUTTINGDOWN": "Linda Coreをシャットダウンする",
-        "RESTARTING": "Linda Coreを再起動します..."
+        "SHUTTINGDOWN": "Metrix Coreをシャットダウンする",
+        "RESTARTING": "Metrix Coreを再起動します..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新しいアカウントが正常に作成されました",

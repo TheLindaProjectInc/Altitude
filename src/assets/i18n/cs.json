@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Peněženka aktuálně stahuje",
             "NOTENABLEDTITLE": "Stažení není povoleno",
             "NOTENABLEDINFO": "Staking není aktuálně povolen.",
-            "NOTENABLEDINSTR": "Chcete-li vsadit, musíte ve svém souboru Linda.conf aktivovat staking nastavení = 1.",
+            "NOTENABLEDINSTR": "Chcete-li vsadit, musíte ve svém souboru metrix.conf aktivovat staking nastavení = 1.",
             "NOTSTAKINGTITLE": "Peněženka není stahování",
             "NOTSTAKINGINFO": "Peněženka je v současné době uzamčena pro staking.",
             "NOTSTAKINGINSTR": "Začněte nabíjet tím, že odemknete peněženku za účelem stahování",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adresa",
             "ENABLED": "Povoleno",
             "NOTENABLEDTITLE": "Masternodes není povoleno",
-            "NOTENABLEDINSTR": "Chcete-li spustit masternode, musíte povolit masternodes nastavením masternode = 1 a konfigurací proměnných masternodeprivkey a masternodeaddr ve vašem souboru Linda.conf.",
+            "NOTENABLEDINSTR": "Chcete-li spustit masternode, musíte povolit masternodes nastavením masternode = 1 a konfigurací proměnných masternodeprivkey a masternodeaddr ve vašem souboru metrix.conf.",
             "STARTBUTTON": "Spusťte místní",
             "STARTALIASBUTTON": "Spusťte alias",
             "STARTALLBUTTON": "Začněte vše"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Verze nadmořské výšky"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Vítejte v konzole Linda Core RPC. Zadejte nápovědu pro přehled dostupných příkazů.",
+                "CONSOLEINFO": "Vítejte v konzole Metrix Core RPC. Zadejte nápovědu pro přehled dostupných příkazů.",
                 "CONSOLEWARNING": "UPOZORNĚNÍ: Podvodníci byli aktivní a říkali uživatelům, že tu zadávají příkazy a ukradou obsah peněženky. Tuto konzolu nepoužívejte, aniž byste plně pochopili rozvětvení příkazu.",
                 "COMMANDPLACEHODLER": "Zadejte příkaz"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Startovní blok"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Tyto opravné příkazy nelze spustit, pokud je aplikace Linda Core spuštěna externě",
-                "INFO": "Tlačítka níže restartují službu Linda Core s možnostmi příkazového řádku pro opravu peněženky, opravu problémů s poškozenými soubory bloků nebo chybějící / zastaralé transakce.",
+                "INFOEXTERNAL": "Tyto opravné příkazy nelze spustit, pokud je aplikace Metrix Core spuštěna externě",
+                "INFO": "Tlačítka níže restartují službu Metrix Core s možnostmi příkazového řádku pro opravu peněženky, opravu problémů s poškozenými soubory bloků nebo chybějící / zastaralé transakce.",
                 "SALVAGEBUTTON": "Záchranná peněženka",
                 "SALVAGEINFO": "-salvagewallet: Pokus o obnovení soukromých klíčů z poškozeného wallet.dat.",
                 "RESCANBUTTON": "Znovu vyhledat soubory bloků",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 Vývojáři společnosti Bitcoin <br/> Copyright © 2011-2012 PPCoin Vývojáři <br/> Copyright © 2012-2014 Vývojáři NovaCoin <br/> Copyright © 2014-2018 Vývojáři společnosti Linda <br/><br/> Jedná se o experimentální software. <br/> Distribuované pod licencí softwaru MIT / X11 naleznete v doprovodném souboru COPYING nebo http://www.opensource.org/licenses/mit-license.php. <br/><br/> Tento produkt obsahuje software vyvinutý v rámci projektu OpenSSL pro použití v OpenSSL Toolkit (https://www.openssl.org) a šifrovacím softwaru napsaném Ericem Youngm (eay@cryptsoft.com) a softwarem UPnP napsaným Thomasem Bernardem.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 Vývojáři společnosti Bitcoin <br/> Copyright © 2011-2012 PPCoin Vývojáři <br/> Copyright © 2012-2014 Vývojáři NovaCoin <br/> Copyright © 2014-2019 Vývojáři společnosti Metrix <br/><br/> Jedná se o experimentální software. <br/> Distribuované pod licencí softwaru MIT / X11 naleznete v doprovodném souboru COPYING nebo http://www.opensource.org/licenses/mit-license.php. <br/><br/> Tento produkt obsahuje software vyvinutý v rámci projektu OpenSSL pro použití v OpenSSL Toolkit (https://www.openssl.org) a šifrovacím softwaru napsaném Ericem Youngm (eay@cryptsoft.com) a softwarem UPnP napsaným Thomasem Bernardem.",
             "ABOUTALTITUDETAB": "Nadmořská výška",
-            "ABOUTALTITUDE": "Copyright © 2018 Vývojáři společnosti Linda <br/><br/> Tento software je distribuován pod licencí GPL-3.0, další informace naleznete na adrese https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
+            "ABOUTALTITUDE": "Copyright © 2019 Vývojáři společnosti Metrix <br/><br/> Tento software je distribuován pod licencí GPL-3.0, další informace naleznete na adrese https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE."
         },
         "LOCALE": {
             "TITLE": "Zvolte jazyk"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Zadejte peněžní frázi peněľenky",
             "UNLOCKSTAKINGONLY": "Odemknout pouze pro stacking",
-            "CLIENTUPDATETITLE": "K dispozici je aktualizace Linda Core Core",
-            "CLIENTUPDATEINFO": "Aktualizace je k dispozici pro společnost Linda Core. Chcete jej nyní nainstalovat?",
+            "CLIENTUPDATETITLE": "K dispozici je aktualizace Metrix Core Core",
+            "CLIENTUPDATEINFO": "Aktualizace je k dispozici pro společnost Metrix Core. Chcete jej nyní nainstalovat?",
             "WALLETUPDATETITLE": "Nadmořská výška k dispozici",
             "WALLETUPDATEINFO": "Aktualizace je dostupná pro Altitude. Chcete jej stáhnout nyní?",
             "CLIENTUPDATEBUTTON": "Aktualizace",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Změna hesla",
             "ENCRYPTTITLE": "Šifrování peněženky",
             "ENCRYPTBUTTON": "Šifrování",
-            "CLIENTSTOPPEDTITLE": "Linda Core se zastavila",
-            "CLIENTSTOPPEDINFO": "Ke společnosti Linda Core došlo ke ztrátě spojení. Můžete zastavit peněženku nebo spustit interní Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core se zastavila",
+            "CLIENTSTOPPEDINFO": "Ke společnosti Metrix Core došlo ke ztrátě spojení. Můžete zastavit peněženku nebo spustit interní Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Ukončit peněženku",
-            "CLIENTSTOPPEDBUTTONSTART": "Spusťte Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Spusťte Metrix Core",
             "ENCRYPTEDTITLE": "Šifrována peněženka",
             "ENCRYPTEDCONTENT": "Jakékoli předchozí zálohy, které jste vytvořili v souboru peněľenky, by měly být nahrazeny nově vytvořeným šifrovaným souborem peněženky. Z bezpečnostních důvodů se předchozí zálohování souboru neukódované peněženky stane zbytečným, jakmile začnete používat novou šifrovanou peněženku.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core se nečekaně zastavila",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "U Linda Core došlo k problému, který způsobil, že skončí. Doporučuje se zkontrolovat v souboru debug.log problémy.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core se nečekaně zastavila",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "U Metrix Core došlo k problému, který způsobil, že skončí. Doporučuje se zkontrolovat v souboru debug.log problémy.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartujte klienta",
-            "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurace aplikace Linda.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaše zařízení Linda.conf má neplatné nastavení masternode, které způsobí, že společnost Linda Core okamžitě opustí. Zkontrolujte prosím tento soubor."
+            "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurace aplikace metrix.conf",
+            "CLIENTINVALIDCONFIGINFO": "Vaše zařízení metrix.conf má neplatné nastavení masternode, které způsobí, že společnost Metrix Core okamžitě opustí. Zkontrolujte prosím tento soubor."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresář",
-            "SENDINGINFO": "Toto jsou vaše uložená adresa Linda pro zasílání plateb. Před odesláním mincí vždy zkontrolujte množství a adresu příjmu",
-            "RECEIVINGINFO": "Toto jsou vaše uložená adresa Linda pro příjem plateb.",
+            "SENDINGINFO": "Toto jsou vaše uložená adresa Metrix pro zasílání plateb. Před odesláním mincí vždy zkontrolujte množství a adresu příjmu",
+            "RECEIVINGINFO": "Toto jsou vaše uložená adresa Metrix pro příjem plateb.",
             "BUTTONSELECT": "Vybrat",
             "TABLECOLUMNS_LABEL": "Označení",
             "TABLECOLUMNS_ADDRESS": "Adresa",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Podepsat zprávu...",
             "VERIFYMESSAGE": "Ověřit zprávu...",
             "LOCALE": "Jazyk...",
-            "RESTARTCORE": "Restartujte Linda Core",
+            "RESTARTCORE": "Restartujte Metrix Core",
             "EXIT": "Výstup",
             "OPTIONS": "Možnosti..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Pomoc",
             "COMMANDLINEOPTIONS": "Možnosti příkazového řádku...",
-            "CHECKUPDATECORE": "Kontrola aktualizace Linda Core...",
+            "CHECKUPDATECORE": "Kontrola aktualizace Metrix Core...",
             "CHECKUPDATEWALLET": "Kontrola aktualizace nadmořské výšky...",
-            "ABOUTCORE": "O společnosti Linda Core...",
+            "ABOUTCORE": "O společnosti Metrix Core...",
             "ABOUTALTITUDE": "O výšce...",
             "DISCORD": "Svár...",
             "ISSUE": "Nahlásit problém..."
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Akceptovat"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Inicializace Linda Core...",
-        "DOWNLOADCLIENT": "Stažení Linda Core...",
-        "UPDATEAVAILABLE": "K dispozici je aktualizace Linda Core Core",
+        "INITIALISING": "Inicializace Metrix Core...",
+        "DOWNLOADCLIENT": "Stažení Metrix Core...",
+        "UPDATEAVAILABLE": "K dispozici je aktualizace Metrix Core Core",
         "SHUTTINGDOWN": "Vypnutí Lindy Core...",
-        "RESTARTING": "Restartování Linda Core..."
+        "RESTARTING": "Restartování Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nový účet byl úspěšně vytvořen",

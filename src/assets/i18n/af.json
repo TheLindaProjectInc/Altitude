@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Wallet staak tans",
             "NOTENABLEDTITLE": "Staking is nie geaktiveer nie",
             "NOTENABLEDINFO": "Staking is nie tans aangeskakel nie.",
-            "NOTENABLEDINSTR": "Vir die spel moet jy die staking-instelling staking = 1 in jou Linda.conf-lêer aktiveer.",
+            "NOTENABLEDINSTR": "Vir die spel moet jy die staking-instelling staking = 1 in jou metrix.conf-lêer aktiveer.",
             "NOTSTAKINGTITLE": "Wallet staak nie",
             "NOTSTAKINGINFO": "Jou beursie is tans gesluit vir staking.",
             "NOTSTAKINGINSTR": "Jy kan begin staak deur jou beursie te ontsluit vir staking",
@@ -69,7 +69,7 @@
             "ADDRESS": "adres",
             "ENABLED": "enabled",
             "NOTENABLEDTITLE": "Masternodes nie aangeskakel nie",
-            "NOTENABLEDINSTR": "Om 'n masternode uit te voer, moet jy masternodes aktiveer deur masternode = 1 te stel en die 'masternodeprivkey'- en' masternodeaddr'-veranderlikes in jou Linda.conf-lêer op te stel.",
+            "NOTENABLEDINSTR": "Om 'n masternode uit te voer, moet jy masternodes aktiveer deur masternode = 1 te stel en die 'masternodeprivkey'- en' masternodeaddr'-veranderlikes in jou metrix.conf-lêer op te stel.",
             "STARTBUTTON": "Begin Plaaslik",
             "STARTALIASBUTTON": "Begin alias",
             "STARTALLBUTTON": "Begin alles"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Hoogte weergawe"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Welkom by die Linda Core RPC-konsole. Tik hulp vir 'n oorsig van beskikbare opdragte.",
+                "CONSOLEINFO": "Welkom by die Metrix Core RPC-konsole. Tik hulp vir 'n oorsig van beskikbare opdragte.",
                 "CONSOLEWARNING": "WAARSKUWING: Scammers is aktief, en vertel gebruikers om opdragte hier te tik, om hul beursie-inhoud te steel. Moenie hierdie konsole gebruik sonder om die ramifikasie van 'n opdrag ten volle te verstaan nie.",
                 "COMMANDPLACEHODLER": "Gee opdrag"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Begin Blok"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Hierdie herstel bevele kan nie uitgevoer word wanneer Linda Core ekstern uitgevoer word nie",
-                "INFO": "Die onderstaande knoppies sal Linda Core herlaai met die opsies vir die beheer van die opsies om die beursie te herstel, probleme met korrupte blockchain-lêers of ontbrekende / verouderde transaksies reg te stel.",
+                "INFOEXTERNAL": "Hierdie herstel bevele kan nie uitgevoer word wanneer Metrix Core ekstern uitgevoer word nie",
+                "INFO": "Die onderstaande knoppies sal Metrix Core herlaai met die opsies vir die beheer van die opsies om die beursie te herstel, probleme met korrupte blockchain-lêers of ontbrekende / verouderde transaksies reg te stel.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Poging om privaat sleutels van 'n korrupte beursie te herstel.",
                 "RESCANBUTTON": "Herccan blockchain lêers",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Kopiereg © 2009-2015 Die Bitcoin-ontwikkelaars <br/> Kopiereg © 2011-2012 PPCoin Developers <br/> Kopiereg © 2012-2014 Die NovaCoin-ontwikkelaars <br/> Kopiereg © 2014-2018 Die Linda-ontwikkelaars <br/><br/> Dit is eksperimentele sagteware. <br/> Verdeel onder die MIT / X11 sagteware lisensie, sien die meegaande lêer COPYING of http://www.opensource.org/licenses/mit-license.php. <br/><br/> Hierdie produk sluit in sagteware wat ontwikkel is deur die OpenSSL-projek vir gebruik in die OpenSSL Toolkit (https: / / www.openssl.org) en kriptografiese sagteware geskryf deur Eric Young (eay@cryptsoft.com) en UPnP sagteware geskryf deur Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Kopiereg © 2009-2015 Die Bitcoin-ontwikkelaars <br/> Kopiereg © 2011-2012 PPCoin Developers <br/> Kopiereg © 2012-2014 Die NovaCoin-ontwikkelaars <br/> Kopiereg © 2014-2019 Die Metrix-ontwikkelaars <br/><br/> Dit is eksperimentele sagteware. <br/> Verdeel onder die MIT / X11 sagteware lisensie, sien die meegaande lêer COPYING of http://www.opensource.org/licenses/mit-license.php. <br/><br/> Hierdie produk sluit in sagteware wat ontwikkel is deur die OpenSSL-projek vir gebruik in die OpenSSL Toolkit (https: / / www.openssl.org) en kriptografiese sagteware geskryf deur Eric Young (eay@cryptsoft.com) en UPnP sagteware geskryf deur Thomas Bernard.",
             "ABOUTALTITUDETAB": "Hoogte",
-            "ABOUTALTITUDE": "Kopiereg © 2018 Die Linda-ontwikkelaars <br/><br/> Hierdie sagteware word onder die GPL-3.0 lisensie versprei, sien https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE vir meer inligting."
+            "ABOUTALTITUDE": "Kopiereg © 2019 Die Metrix-ontwikkelaars <br/><br/> Hierdie sagteware word onder die GPL-3.0 lisensie versprei, sien https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE vir meer inligting."
         },
         "LOCALE": {
             "TITLE": "Kies taal"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Voer jou Wallet Wagwoordfrase in",
             "UNLOCKSTAKINGONLY": "Ontsluit slegs vir staking",
-            "CLIENTUPDATETITLE": "Linda Core Update beskikbaar",
-            "CLIENTUPDATEINFO": "'N Werk is beskikbaar vir Linda Core. Wil jy dit nou installeer?",
+            "CLIENTUPDATETITLE": "Metrix Core Update beskikbaar",
+            "CLIENTUPDATEINFO": "'N Werk is beskikbaar vir Metrix Core. Wil jy dit nou installeer?",
             "WALLETUPDATETITLE": "Hoogte opdatering beskikbaar",
             "WALLETUPDATEINFO": "'N Werk is beskikbaar vir Altitude. Wil jy dit nou aflaai?",
             "CLIENTUPDATEBUTTON": "Opdateer",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Verander wagwoordfrase",
             "ENCRYPTTITLE": "Enkripteer jou beursie",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Kern Gestop",
-            "CLIENTSTOPPEDINFO": "Verband is verlore vir Linda Core. Jy kan die beursie stop of die interne Linda Core begin.",
+            "CLIENTSTOPPEDTITLE": "Metrix Kern Gestop",
+            "CLIENTSTOPPEDINFO": "Verband is verlore vir Metrix Core. Jy kan die beursie stop of die interne Metrix Core begin.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Begin Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Begin Metrix Core",
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Enige vorige rugsteun wat u van u beursie-lêer gemaak het, moet vervang word met die nuut gegenereerde, geïnkripteer beursie-lêer. Om sekuriteitsredes sal vorige back-ups van die ongecodeerde beursie-lêer nutteloos raak sodra u die nuwe, versleutelde beursie begin gebruik.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core het onverwags gestop",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Linda Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core het onverwags gestop",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Herbegin Kliënt",
-            "CLIENTINVALIDCONFIGTITLE": "Ongeldige Linda.conf-konfigurasie",
-            "CLIENTINVALIDCONFIGINFO": "U Linda.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Linda Core onmiddellik uittree. Gaan asseblief hierdie lêer na."
+            "CLIENTINVALIDCONFIGTITLE": "Ongeldige metrix.conf-konfigurasie",
+            "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres boek",
-            "SENDINGINFO": "Dit is jou gered Linda-adres vir die stuur van betalings. Kontroleer altyd die bedrag en ontvangsadres voordat u munte stuur",
-            "RECEIVINGINFO": "Dit is jou gered Linda-adres vir die ontvangs van betalings.",
+            "SENDINGINFO": "Dit is jou gered Metrix-adres vir die stuur van betalings. Kontroleer altyd die bedrag en ontvangsadres voordat u munte stuur",
+            "RECEIVINGINFO": "Dit is jou gered Metrix-adres vir die ontvangs van betalings.",
             "BUTTONSELECT": "Kies",
             "TABLECOLUMNS_LABEL": "Etiket",
             "TABLECOLUMNS_ADDRESS": "adres",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Teken boodskap...",
             "VERIFYMESSAGE": "Verifieer Boodskap...",
             "LOCALE": "Taal...",
-            "RESTARTCORE": "Herbegin Linda Core",
+            "RESTARTCORE": "Herbegin Metrix Core",
             "EXIT": "uitgang",
             "OPTIONS": "Opsies..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "help",
             "COMMANDLINEOPTIONS": "Opdrag lyn opsies...",
-            "CHECKUPDATECORE": "Kyk vir Linda Core Update...",
+            "CHECKUPDATECORE": "Kyk vir Metrix Core Update...",
             "CHECKUPDATEWALLET": "Gaan na Hoogte-opdatering...",
-            "ABOUTCORE": "Oor Linda Core...",
+            "ABOUTCORE": "Oor Metrix Core...",
             "ABOUTALTITUDE": "Oor Hoogte...",
             "DISCORD": "Onmin...",
             "ISSUE": "Gee 'n probleem aan..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "OK",
         "CLEARALLBUTTON": "Maak alles skoon",
         "ENTERACCOUNTLABEL": "Voer 'n etiket vir hierdie adres in",
-        "ENTERADDRESSLABEL": "Voer 'n Linda-adres in",
+        "ENTERADDRESSLABEL": "Voer 'n Metrix-adres in",
         "AGO": "gelede",
         "SORTBY": "Sorteer Volgens",
         "SEARCH": "Soek",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "aanvaar"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialisering van Linda Core...",
-        "DOWNLOADCLIENT": "Laai Linda Core af...",
-        "UPDATEAVAILABLE": "Linda Core Update beskikbaar",
-        "SHUTTINGDOWN": "Sluiting van Linda Core...",
-        "RESTARTING": "Herlaai Linda Core..."
+        "INITIALISING": "Initialisering van Metrix Core...",
+        "DOWNLOADCLIENT": "Laai Metrix Core af...",
+        "UPDATEAVAILABLE": "Metrix Core Update beskikbaar",
+        "SHUTTINGDOWN": "Sluiting van Metrix Core...",
+        "RESTARTING": "Herlaai Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nuwe rekening geskep suksesvol",

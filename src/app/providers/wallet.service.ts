@@ -348,7 +348,7 @@ export class WalletService {
     }
 
     private syncConverstion() {
-        /* this.http.get(`https://api.coingecko.com/api/v3/coins/linda`)
+        /* this.http.get(`https://api.coingecko.com/api/v3/coins/metrix`)
             .subscribe((data: any) => {
                 this.market = new MarketData(data);
             });

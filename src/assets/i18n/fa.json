@@ -49,7 +49,7 @@
             "STAKINGTITLE": "کیف پول در حال حاضر بسته است",
             "NOTENABLEDTITLE": "پک کردن فعال نیست",
             "NOTENABLEDINFO": "Staking در حال حاضر فعال نیست",
-            "NOTENABLEDINSTR": "برای به خطر انداختن شما نیاز به فعال کردن staking setting staking = 1 در فایل Linda.conf خود دارید.",
+            "NOTENABLEDINSTR": "برای به خطر انداختن شما نیاز به فعال کردن staking setting staking = 1 در فایل metrix.conf خود دارید.",
             "NOTSTAKINGTITLE": "کیف پول پاکت نیست",
             "NOTSTAKINGINFO": "کیف پول شما در حال حاضر برای قفل گذاری قفل شده است.",
             "NOTSTAKINGINSTR": "شما می توانید با قفل کردن کیف پول خود را برای پاکسازی شروع کنید",
@@ -69,7 +69,7 @@
             "ADDRESS": "نشانی",
             "ENABLED": "فعال شده است",
             "NOTENABLEDTITLE": "Masternodes فعال نیست",
-            "NOTENABLEDINSTR": "برای اجرای masternode شما باید masternodes را با تنظیم masternode = 1 و تنظیمات masternodeprivkey و masternodeaddr در فایل Linda.conf خود تنظیم کنید.",
+            "NOTENABLEDINSTR": "برای اجرای masternode شما باید masternodes را با تنظیم masternode = 1 و تنظیمات masternodeprivkey و masternodeaddr در فایل metrix.conf خود تنظیم کنید.",
             "STARTBUTTON": "شروع محلی",
             "STARTALIASBUTTON": "شروع نام مستعار",
             "STARTALLBUTTON": "شروع همه"
@@ -121,8 +121,8 @@
                 "HEIGHT": "شروع بلوک"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "این دستورات تعمیر را نمی توان هنگامی اجرا کرد که Linda Core خارج از آن اجرا شود",
-                "INFO": "دکمه های زیر Linda Core را با گزینه های خط فرمان برای تعمیر کیف پول راه اندازی مجدد، حل مشکلات با فایل های blockchain فاسد یا معاملات گم شده / منسوخ.",
+                "INFOEXTERNAL": "این دستورات تعمیر را نمی توان هنگامی اجرا کرد که Metrix Core خارج از آن اجرا شود",
+                "INFO": "دکمه های زیر Metrix Core را با گزینه های خط فرمان برای تعمیر کیف پول راه اندازی مجدد، حل مشکلات با فایل های blockchain فاسد یا معاملات گم شده / منسوخ.",
                 "SALVAGEBUTTON": "کیف پول نجات",
                 "SALVAGEINFO": "-salvagewallet: تلاش برای بازیابی کلید خصوصی از wallet.dat فاسد.",
                 "RESCANBUTTON": "Rescan فایل های بلوک چینی",
@@ -139,9 +139,9 @@
         },
         "HELP": {
             "ABOUTCORETAB": "لیندا هسته",
-            "ABOUTCORE": "کپی رایت © 2009-2015 توسعه دهندگان Bitcoin <br/> کپی رایت © 2011-2012 PPCoin Developers <br/> کپی رایت © 2012-2014 توسعه دهندگان NovaCoin <br/> کپی رایت © 2014-2018 توسعه دهندگان لیندا <br/><br/> این نرم افزار آزمایشی است. <br/> توزیع شده تحت مجوز نرم افزار MIT / X11، همراه با فایل COPYING یا http://www.opensource.org/licenses/mit-license.php را ببینید. <br/><br/> این محصول شامل نرم افزارهایی است که توسط پروژه OpenSSL برای استفاده در OpenSSL Toolkit (https://www.openssl.org) و نرم افزار رمزنگاری نوشته شده توسط اریک یانگ (eay@cryptsoft.com) و نرم افزار UPnP نوشته شده توسط توماس برنارد ساخته شده است.",
+            "ABOUTCORE": "کپی رایت © 2009-2015 توسعه دهندگان Bitcoin <br/> کپی رایت © 2011-2012 PPCoin Developers <br/> کپی رایت © 2012-2014 توسعه دهندگان NovaCoin <br/> کپی رایت © 2014-2019 توسعه دهندگان لیندا <br/><br/> این نرم افزار آزمایشی است. <br/> توزیع شده تحت مجوز نرم افزار MIT / X11، همراه با فایل COPYING یا http://www.opensource.org/licenses/mit-license.php را ببینید. <br/><br/> این محصول شامل نرم افزارهایی است که توسط پروژه OpenSSL برای استفاده در OpenSSL Toolkit (https://www.openssl.org) و نرم افزار رمزنگاری نوشته شده توسط اریک یانگ (eay@cryptsoft.com) و نرم افزار UPnP نوشته شده توسط توماس برنارد ساخته شده است.",
             "ABOUTALTITUDETAB": "ارتفاع",
-            "ABOUTALTITUDE": "کپی رایت © 2018 توسعه دهندگان لیندا <br/><br/> این نرم افزار تحت مجوز GPL-3.0 توزیع شده است، برای اطلاعات بیشتر به https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE مراجعه کنید."
+            "ABOUTALTITUDE": "کپی رایت © 2019 توسعه دهندگان لیندا <br/><br/> این نرم افزار تحت مجوز GPL-3.0 توزیع شده است، برای اطلاعات بیشتر به https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE مراجعه کنید."
         },
         "LOCALE": {
             "TITLE": "زبان را انتخاب کنید"
@@ -267,8 +267,8 @@
             "CLIENTCLOSEDUNEXPECTEDTITLE": "لیندا هسته غیرمنتظره متوقف شد",
             "CLIENTCLOSEDUNEXPECTEDINFO": "لیندا کور مشکل داشت که موجب خفه شدن آن شد. توصیه می شود فایل debug.log خود را برای مسائل بررسی کنید.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "راه اندازی مجدد مشتری",
-            "CLIENTINVALIDCONFIGTITLE": "پیکربندی Linda.conf نامعتبر است",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf شما دارای تنظیمات masternode نامعتبر است که باعث می شود لیندا هسته بلافاصله خروج. لطفا این فایل را بررسی کنید"
+            "CLIENTINVALIDCONFIGTITLE": "پیکربندی metrix.conf نامعتبر است",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf شما دارای تنظیمات masternode نامعتبر است که باعث می شود لیندا هسته بلافاصله خروج. لطفا این فایل را بررسی کنید"
         },
         "ADDRESSBOOK": {
             "TITLE": "دفترچه آدرس",
@@ -341,7 +341,7 @@
         "DOWNLOADCLIENT": "دانلود لیندا هسته...",
         "UPDATEAVAILABLE": "لیندا هسته بروز رسانی در دسترس است",
         "SHUTTINGDOWN": "خاموش شدن لیندا هسته...",
-        "RESTARTING": "راه اندازی مجدد Linda Core..."
+        "RESTARTING": "راه اندازی مجدد Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "حساب جدید با موفقیت ایجاد شد",

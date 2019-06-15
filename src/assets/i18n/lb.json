@@ -49,7 +49,7 @@
             "STAKINGTITLE": "De Portemonnaie ass momentan geschloen",
             "NOTENABLEDTITLE": "Staking ass net erlaabt",
             "NOTENABLEDINFO": "Staking ass momentan net aktivéiert.",
-            "NOTENABLEDINSTR": "Fir Iech geet et drëm, fir de Klick op d'Plaz ze verloossen = 1 an der Linda.conf-Datei.",
+            "NOTENABLEDINSTR": "Fir Iech geet et drëm, fir de Klick op d'Plaz ze verloossen = 1 an der metrix.conf-Datei.",
             "NOTSTAKINGTITLE": "Wallet net geschloen",
             "NOTSTAKINGINFO": "Äre Portemonnaie ass momentan fir d'Nokucke gespaart.",
             "NOTSTAKINGINSTR": "Dir kënnt de Schwämm ufänken, andeems Dir Är Portemonnaie opmaacht fir de Bommeleeër z'entwéckelen",
@@ -69,7 +69,7 @@
             "ADDRESS": "Adress",
             "ENABLED": "Aktivéiert",
             "NOTENABLEDTITLE": "Masternoden net aktivéiert",
-            "NOTENABLEDINSTR": "Fir eng Masternode ze maache musst Dir Maschinnen erstallt hunn, andeems se masternode = 1 festleet an déi Variablen \"masternodeprivkey\" an \"masternodeaddr\" an Ärer Linda.conf-Datei konfiguréieren.",
+            "NOTENABLEDINSTR": "Fir eng Masternode ze maache musst Dir Maschinnen erstallt hunn, andeems se masternode = 1 festleet an déi Variablen \"masternodeprivkey\" an \"masternodeaddr\" an Ärer metrix.conf-Datei konfiguréieren.",
             "STARTBUTTON": "Start Lokal",
             "STARTALIASBUTTON": "Start Alias benotzen",
             "STARTALLBUTTON": "Start All"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Altitude Versioun"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Wëllkomm op der Linda Core RPC Konsole. Typ Hëllef fir eng Iwwersiichtskaart vu verfügbaren Kommandoen.",
+                "CONSOLEINFO": "Wëllkomm op der Metrix Core RPC Konsole. Typ Hëllef fir eng Iwwersiichtskaart vu verfügbaren Kommandoen.",
                 "CONSOLEWARNING": "WARNUNG: Scammers sinn aktiv, seet d'Benotzer fir d'Kommandoen unzeginn, seng Matbestëmmung ze stäifen. Keng dës Konsole net benotzen ouni d'Verzweiflung vun engem Kommando voll ze verstoen.",
                 "COMMANDPLACEHODLER": "Befehl dréckt"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Start Block"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Dës Reparaturbefehle kënnen net ausgezeechent ginn, wann Linda Core dobaussen gefrot gëtt",
-                "INFO": "D'Knäppchen hei drënner den Linda Core mat Kommando-Linn opmaachen fir de Portemonnaie opmaachen ze maachen, Problem mat korrupte Blockchain-Dateien oder fehlend / onbestänneg Transaktioune fixéieren.",
+                "INFOEXTERNAL": "Dës Reparaturbefehle kënnen net ausgezeechent ginn, wann Metrix Core dobaussen gefrot gëtt",
+                "INFO": "D'Knäppchen hei drënner den Metrix Core mat Kommando-Linn opmaachen fir de Portemonnaie opmaachen ze maachen, Problem mat korrupte Blockchain-Dateien oder fehlend / onbestänneg Transaktioune fixéieren.",
                 "SALVAGEBUTTON": "Salvage Wallet",
                 "SALVAGEINFO": "-salvagewallet: Versucht déi privat Schlësselen ze korrigéieren vu korrupte wallet.dat.",
                 "RESCANBUTTON": "Rescan blockechain Dateien",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Copyright © 2009-2015 D'Bitcoin Entwéckler <br/> Copyright © 2011-2012 PPCoin Entwéckler <br/> Copyright © 2012-2014 D'NovaCoin Entwéckler <br/> Copyright © 2014-2018 D'Linda Entwéckler <br/><br/> Dëst ass experimentell Software. <br/> D'Verdeelung ënner der MIT / X11-Software Lizenz, kuckt déi beigefügte FichierCOPYING oder http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dëst Produkt enthält Software déi vum OpenSSL Project entwéckelt gouf fir den OpenSSL Toolkit (https://www.openssl.org) a kryptographesch Software vum Eric Young (eay@cryptsoft.com) an der UPnP Software geschriwwen vum Thomas Bernard.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Copyright © 2009-2015 D'Bitcoin Entwéckler <br/> Copyright © 2011-2012 PPCoin Entwéckler <br/> Copyright © 2012-2014 D'NovaCoin Entwéckler <br/> Copyright © 2014-2019 D'Metrix Entwéckler <br/><br/> Dëst ass experimentell Software. <br/> D'Verdeelung ënner der MIT / X11-Software Lizenz, kuckt déi beigefügte FichierCOPYING oder http://www.opensource.org/licenses/mit-license.php. <br/><br/> Dëst Produkt enthält Software déi vum OpenSSL Project entwéckelt gouf fir den OpenSSL Toolkit (https://www.openssl.org) a kryptographesch Software vum Eric Young (eay@cryptsoft.com) an der UPnP Software geschriwwen vum Thomas Bernard.",
             "ABOUTALTITUDETAB": "Altitude",
-            "ABOUTALTITUDE": "Copyright © 2018 D'Linda Entwéckler <br/><br/> Dës Software gëtt ënnert der GPL-3.0 Lizenz verdeelt, kuck https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE fir méi Informatiounen."
+            "ABOUTALTITUDE": "Copyright © 2019 D'Metrix Entwéckler <br/><br/> Dës Software gëtt ënnert der GPL-3.0 Lizenz verdeelt, kuck https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE fir méi Informatiounen."
         },
         "LOCALE": {
             "TITLE": "Sprooch auswielen"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Gitt Är Portemonnaie Passphrase",
             "UNLOCKSTAKINGONLY": "Entspriechen just fir ze klappen",
-            "CLIENTUPDATETITLE": "Linda Core Update Disponibel",
-            "CLIENTUPDATEINFO": "E Update ass verfügbar fir Linda Core. Wëllt Dir Iech se elo installéieren?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Disponibel",
+            "CLIENTUPDATEINFO": "E Update ass verfügbar fir Metrix Core. Wëllt Dir Iech se elo installéieren?",
             "WALLETUPDATETITLE": "Altitude Update Disponibel",
             "WALLETUPDATEINFO": "E Update ass iwwregens fir Altitude. Wëllt Dir se elo eroflueden?",
             "CLIENTUPDATEBUTTON": "Update",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Passwuert änneren",
             "ENCRYPTTITLE": "Encrypt Är Portemonnaie",
             "ENCRYPTBUTTON": "Encrypt",
-            "CLIENTSTOPPEDTITLE": "Linda Core ass gestuerwen",
-            "CLIENTSTOPPEDINFO": "D'Verbindung ass verluer fir Linda Core. Dir kënnt de Portemonnaie ophalen oder d'intern Linda Core starten.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core ass gestuerwen",
+            "CLIENTSTOPPEDINFO": "D'Verbindung ass verluer fir Metrix Core. Dir kënnt de Portemonnaie ophalen oder d'intern Metrix Core starten.",
             "CLIENTSTOPPEDBUTTONEXIT": "Exit Wallet",
-            "CLIENTSTOPPEDBUTTONSTART": "Start Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Start Metrix Core",
             "ENCRYPTEDTITLE": "Portemonnaie Verschlësselt",
             "ENCRYPTEDCONTENT": "All fréiere Backups déi Dir aus Ärem Portemonnaie hutt gemaach däerf duerch déi nei generéiert verschlësselte Portemonnaie ersat ginn. Aus Sécherheetsgrënn, de virdrun Reservéierunge vun der onverschlësselte Portemonnaie gëtt net nëtzlech, soubal Dir den neie verschlësselte Portemonnaie benotzt.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core gestoppt Unexpectedly",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Et war e Problem mam Linda Core, dat huet et verlooss. Et ass recommandéiert fir Är Debug.log Datei fir Froen ze kontrolléieren.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gestoppt Unexpectedly",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Et war e Problem mam Metrix Core, dat huet et verlooss. Et ass recommandéiert fir Är Debug.log Datei fir Froen ze kontrolléieren.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "De Client klickt weider",
-            "CLIENTINVALIDCONFIGTITLE": "Invalid Linda.conf Konfiguratioun",
-            "CLIENTINVALIDCONFIGINFO": "Är Linda.conf huet eng ongëlteg Masternoden-Setup, déi d'Linda Core fir direkt beherrschen. Kuckt dës Datei op."
+            "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Konfiguratioun",
+            "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternoden-Setup, déi d'Metrix Core fir direkt beherrschen. Kuckt dës Datei op."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
-            "SENDINGINFO": "Dëst sinn Är gespäichert Linda-Adress fir SMSen ze schécken. Iwwerpréift ëmmer de Betrag an d'Empfangsadresse virum Mëttegiessen",
-            "RECEIVINGINFO": "Dëst sinn Är gespäichert Linda Adress fir d'Bezuelung ze kréien.",
+            "SENDINGINFO": "Dëst sinn Är gespäichert Metrix-Adress fir SMSen ze schécken. Iwwerpréift ëmmer de Betrag an d'Empfangsadresse virum Mëttegiessen",
+            "RECEIVINGINFO": "Dëst sinn Är gespäichert Metrix Adress fir d'Bezuelung ze kréien.",
             "BUTTONSELECT": "Auswielen",
             "TABLECOLUMNS_LABEL": "Label",
             "TABLECOLUMNS_ADDRESS": "Adress",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Sende Message...",
             "VERIFYMESSAGE": "Verify Message...",
             "LOCALE": "Sprooch...",
-            "RESTARTCORE": "Restauratioun Linda Core",
+            "RESTARTCORE": "Restauratioun Metrix Core",
             "EXIT": "Exit",
             "OPTIONS": "Optiounen..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Hëllef",
             "COMMANDLINEOPTIONS": "Kommandozeiloptiounen...",
-            "CHECKUPDATECORE": "Scheck fir Linda Core Update...",
+            "CHECKUPDATECORE": "Scheck fir Metrix Core Update...",
             "CHECKUPDATEWALLET": "Scheck fir Altitude Update...",
-            "ABOUTCORE": "Iwwert Linda Core...",
+            "ABOUTCORE": "Iwwert Metrix Core...",
             "ABOUTALTITUDE": "Iwwert den Altitude...",
             "DISCORD": "Discord...",
             "ISSUE": "Report An Issue..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "ok",
         "CLEARALLBUTTON": "Clear All",
         "ENTERACCOUNTLABEL": "Gitt e Label fir dës Adress",
-        "ENTERADDRESSLABEL": "Gitt eng Linda Adress",
+        "ENTERADDRESSLABEL": "Gitt eng Metrix Adress",
         "AGO": "viru laanger Zäit",
         "SORTBY": "Sort By",
         "SEARCH": "Sich",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Akzeptéieren"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Linda Core initialiséieren...",
-        "DOWNLOADCLIENT": "Korrigéiere vun Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Disponibel",
-        "SHUTTINGDOWN": "Schäerfen Linda Core...",
-        "RESTARTING": "Restart Linda Core..."
+        "INITIALISING": "Metrix Core initialiséieren...",
+        "DOWNLOADCLIENT": "Korrigéiere vun Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Disponibel",
+        "SHUTTINGDOWN": "Schäerfen Metrix Core...",
+        "RESTARTING": "Restart Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neit Kont erstellen erstallt",

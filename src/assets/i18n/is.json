@@ -49,7 +49,7 @@
             "STAKINGTITLE": "Veski er nú að stinga",
             "NOTENABLEDTITLE": "Staking er ekki virkt",
             "NOTENABLEDINFO": "Stöðvun er ekki virk.",
-            "NOTENABLEDINSTR": "Til að gera hlut þarftu að virkja staking setting staking = 1 í Linda.conf skránum þínum.",
+            "NOTENABLEDINSTR": "Til að gera hlut þarftu að virkja staking setting staking = 1 í metrix.conf skránum þínum.",
             "NOTSTAKINGTITLE": "Veski berst ekki",
             "NOTSTAKINGINFO": "Veskið þitt er nú læst til að slá inn.",
             "NOTSTAKINGINSTR": "Þú getur byrjað að slá inn með því að opna veskið þitt fyrir slátrun",
@@ -69,7 +69,7 @@
             "ADDRESS": "Heimilisfang",
             "ENABLED": "Virkja",
             "NOTENABLEDTITLE": "Masternodes ekki virkt",
-            "NOTENABLEDINSTR": "Til að keyra masternode þarftu að virkja masternodes með því að setja masternode = 1 og stilla 'masternodeprivkey' og 'masternodeaddr' breytur í Linda.conf skránum þínum.",
+            "NOTENABLEDINSTR": "Til að keyra masternode þarftu að virkja masternodes með því að setja masternode = 1 og stilla 'masternodeprivkey' og 'masternodeaddr' breytur í metrix.conf skránum þínum.",
             "STARTBUTTON": "Byrjaðu á staðnum",
             "STARTALIASBUTTON": "Byrja Alias",
             "STARTALLBUTTON": "Byrja Allt"
@@ -105,7 +105,7 @@
                 "ALTITUDEVERSION": "Hæð útgáfa"
             },
             "DEBUG": {
-                "CONSOLEINFO": "Velkomin á Linda Core RPC hugga. Gerðu hjálp til að fá yfirlit yfir fyrirliggjandi skipanir.",
+                "CONSOLEINFO": "Velkomin á Metrix Core RPC hugga. Gerðu hjálp til að fá yfirlit yfir fyrirliggjandi skipanir.",
                 "CONSOLEWARNING": "VIÐVÖRUN: Svindlarar hafa verið virkir og sagt notendum að slá inn skipanir hér og stela veskis innihaldi þeirra. Notaðu ekki þennan hugga án þess að skilja skilninguna á stjórn.",
                 "COMMANDPLACEHODLER": "Sláðu inn stjórn"
             },
@@ -121,8 +121,8 @@
                 "HEIGHT": "Byrjar blokk"
             },
             "REPAIR": {
-                "INFOEXTERNAL": "Þessar viðgerð skipanir geta ekki verið keyrðar þegar Linda Core er keyrt utanaðkomandi",
-                "INFO": "Hnapparnir hér að neðan munu endurræsa Linda Core með skipanalínu valkosti til að gera við veskið, laga mál með skemmdum blockchain skrám eða vantar / úreltum viðskiptum.",
+                "INFOEXTERNAL": "Þessar viðgerð skipanir geta ekki verið keyrðar þegar Metrix Core er keyrt utanaðkomandi",
+                "INFO": "Hnapparnir hér að neðan munu endurræsa Metrix Core með skipanalínu valkosti til að gera við veskið, laga mál með skemmdum blockchain skrám eða vantar / úreltum viðskiptum.",
                 "SALVAGEBUTTON": "Salvage Veski",
                 "SALVAGEINFO": "-salvagewallet: Tilraun til að endurheimta einkalykla frá spilltum veski.dat.",
                 "RESCANBUTTON": "Rescan blockchain skrár",
@@ -138,10 +138,10 @@
             }
         },
         "HELP": {
-            "ABOUTCORETAB": "Linda Core",
-            "ABOUTCORE": "Höfundarréttur © 2009-2015 The Bitcoin verktaki <br/> Höfundarréttur © 2011-2012 PPCoin Developers <br/> Höfundarréttur © 2012-2014 The NovaCoin verktaki <br/> Höfundarréttur © 2014-2018 Linda verktaki <br/><br/> Þetta er tilraunaforrit. <br/> Dreift samkvæmt hugbúnaðarleyfi MIT / X11, sjá fylgiskjalið COPYING eða http://www.opensource.org/licenses/mit-license.php. <br/><br/> Þessi vara inniheldur hugbúnað sem þróuð er af OpenSSL Project til notkunar í OpenSSL Toolkit (https://www.openssl.org) og dulritunarforriti skrifað af Eric Young (eay@cryptsoft.com) og UPnP hugbúnaði sem Thomas Bernard skrifar.",
+            "ABOUTCORETAB": "Metrix Core",
+            "ABOUTCORE": "Höfundarréttur © 2009-2015 The Bitcoin verktaki <br/> Höfundarréttur © 2011-2012 PPCoin Developers <br/> Höfundarréttur © 2012-2014 The NovaCoin verktaki <br/> Höfundarréttur © 2014-2019 Metrix verktaki <br/><br/> Þetta er tilraunaforrit. <br/> Dreift samkvæmt hugbúnaðarleyfi MIT / X11, sjá fylgiskjalið COPYING eða http://www.opensource.org/licenses/mit-license.php. <br/><br/> Þessi vara inniheldur hugbúnað sem þróuð er af OpenSSL Project til notkunar í OpenSSL Toolkit (https://www.openssl.org) og dulritunarforriti skrifað af Eric Young (eay@cryptsoft.com) og UPnP hugbúnaði sem Thomas Bernard skrifar.",
             "ABOUTALTITUDETAB": "Hæð",
-            "ABOUTALTITUDE": "Höfundarréttur © 2018 Linda verktaki <br/><br/> Þessi hugbúnaður er dreift undir GPL-3.0 leyfinu, sjá https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE fyrir frekari upplýsingar."
+            "ABOUTALTITUDE": "Höfundarréttur © 2019 Metrix verktaki <br/><br/> Þessi hugbúnaður er dreift undir GPL-3.0 leyfinu, sjá https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE fyrir frekari upplýsingar."
         },
         "LOCALE": {
             "TITLE": "Veldu tungumál"
@@ -244,8 +244,8 @@
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sláðu inn veskislykilorðið þitt",
             "UNLOCKSTAKINGONLY": "Opnaðu aðeins til að stíga",
-            "CLIENTUPDATETITLE": "Linda Core Update Available",
-            "CLIENTUPDATEINFO": "Uppfærsla er í boði fyrir Linda Core. Viltu setja það upp núna?",
+            "CLIENTUPDATETITLE": "Metrix Core Update Available",
+            "CLIENTUPDATEINFO": "Uppfærsla er í boði fyrir Metrix Core. Viltu setja það upp núna?",
             "WALLETUPDATETITLE": "Altitude Update Available",
             "WALLETUPDATEINFO": "Uppfærsla er í boði fyrir Altitude. Viltu hlaða niður því núna?",
             "CLIENTUPDATEBUTTON": "Uppfæra",
@@ -258,22 +258,22 @@
             "CHANGEPASSPHRASEBUTTON": "Breyta lykilorði",
             "ENCRYPTTITLE": "Dulritaðu veskið þitt",
             "ENCRYPTBUTTON": "Dulrita",
-            "CLIENTSTOPPEDTITLE": "Linda Core hætt",
-            "CLIENTSTOPPEDINFO": "Tengingin hefur tapast fyrir Linda Core. Þú getur stöðvað veskið eða byrjað á innri Linda Core.",
+            "CLIENTSTOPPEDTITLE": "Metrix Core hætt",
+            "CLIENTSTOPPEDINFO": "Tengingin hefur tapast fyrir Metrix Core. Þú getur stöðvað veskið eða byrjað á innri Metrix Core.",
             "CLIENTSTOPPEDBUTTONEXIT": "Hætta við veskið",
-            "CLIENTSTOPPEDBUTTONSTART": "Byrja Linda Core",
+            "CLIENTSTOPPEDBUTTONSTART": "Byrja Metrix Core",
             "ENCRYPTEDTITLE": "Veski dulkóðuð",
             "ENCRYPTEDCONTENT": "Öllum fyrri afritum sem þú hefur búið til úr veskisskránni þinni ætti að skipta út fyrir nýbúið, dulritað veskisskrá. Af öryggisástæðum verða fyrri afrit af ótryggðu veskisskránni gagnslaus um leið og þú byrjar að nota nýja dulkóðuðu veskið.",
-            "CLIENTCLOSEDUNEXPECTEDTITLE": "Linda Core stoppaði óvænt",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Linda Core sem hefur valdið því að það lýkur. Það er mælt með því að athuga debug.log skrána þína fyrir vandamál.",
+            "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppaði óvænt",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Metrix Core sem hefur valdið því að það lýkur. Það er mælt með því að athuga debug.log skrána þína fyrir vandamál.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Endurræstu viðskiptavini",
-            "CLIENTINVALIDCONFIGTITLE": "Ógildur Linda.conf stillingar",
-            "CLIENTINVALIDCONFIGINFO": "Linda.conf þinn hefur ógildan masternode skipulag sem veldur því að Linda Core hættir strax. Vinsamlegast athugaðu þessa skrá."
+            "CLIENTINVALIDCONFIGTITLE": "Ógildur metrix.conf stillingar",
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf þinn hefur ógildan masternode skipulag sem veldur því að Metrix Core hættir strax. Vinsamlegast athugaðu þessa skrá."
         },
         "ADDRESSBOOK": {
             "TITLE": "Heimilisfangabók",
-            "SENDINGINFO": "Þetta eru vistuð Linda netfangið þitt til að senda greiðslur. Athugaðu alltaf upphæð og móttökusendingu áður en þú sendir peninga",
-            "RECEIVINGINFO": "Þetta eru vistaðar Linda netfangið þitt til að fá greiðslur.",
+            "SENDINGINFO": "Þetta eru vistuð Metrix netfangið þitt til að senda greiðslur. Athugaðu alltaf upphæð og móttökusendingu áður en þú sendir peninga",
+            "RECEIVINGINFO": "Þetta eru vistaðar Metrix netfangið þitt til að fá greiðslur.",
             "BUTTONSELECT": "Veldu",
             "TABLECOLUMNS_LABEL": "Merki",
             "TABLECOLUMNS_ADDRESS": "Heimilisfang",
@@ -293,7 +293,7 @@
             "SIGNMESSAGE": "Skráðu skilaboð...",
             "VERIFYMESSAGE": "Staðfestu skilaboð...",
             "LOCALE": "Tungumál...",
-            "RESTARTCORE": "Endurræstu Linda Core",
+            "RESTARTCORE": "Endurræstu Metrix Core",
             "EXIT": "Hætta",
             "OPTIONS": "Valkostir..."
         },
@@ -314,9 +314,9 @@
         "HELP": {
             "TITLE": "Hjálp",
             "COMMANDLINEOPTIONS": "Valmöguleikar skipanalínu...",
-            "CHECKUPDATECORE": "Athugaðu að uppfæra Linda Core...",
+            "CHECKUPDATECORE": "Athugaðu að uppfæra Metrix Core...",
             "CHECKUPDATEWALLET": "Athugaðu að uppfæra hæð...",
-            "ABOUTCORE": "Um Linda Core...",
+            "ABOUTCORE": "Um Metrix Core...",
             "ABOUTALTITUDE": "Um hæð...",
             "DISCORD": "Discord...",
             "ISSUE": "Tilkynna um útgáfu..."
@@ -329,7 +329,7 @@
         "OKBUTTON": "Allt í lagi",
         "CLEARALLBUTTON": "Hreinsa allt",
         "ENTERACCOUNTLABEL": "Sláðu inn merki fyrir þetta netfang",
-        "ENTERADDRESSLABEL": "Sláðu inn Linda heimilisfang",
+        "ENTERADDRESSLABEL": "Sláðu inn Metrix heimilisfang",
         "AGO": "síðan",
         "SORTBY": "Raða eftir",
         "SEARCH": "Leita",
@@ -337,11 +337,11 @@
         "ACCEPTBUTTON": "Samþykkja"
     },
     "CLIENTSTATUS": {
-        "INITIALISING": "Initialising Linda Core...",
-        "DOWNLOADCLIENT": "Sæki Linda Core...",
-        "UPDATEAVAILABLE": "Linda Core Update Available",
-        "SHUTTINGDOWN": "Loka niður Linda Core...",
-        "RESTARTING": "Endurræsa Linda Core..."
+        "INITIALISING": "Initialising Metrix Core...",
+        "DOWNLOADCLIENT": "Sæki Metrix Core...",
+        "UPDATEAVAILABLE": "Metrix Core Update Available",
+        "SHUTTINGDOWN": "Loka niður Metrix Core...",
+        "RESTARTING": "Endurræsa Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ný reikningur búin til með góðum árangri",
