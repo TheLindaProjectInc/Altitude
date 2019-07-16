@@ -1,8 +1,9 @@
 
 import Big from 'big.js';
-import { Address } from './address';
+import IInput from '../interfaces/IInput';
+import IAddress from '../interfaces/IAddress';
 
-export class Input {
+export class Input implements IInput {
     account: string;
     address: string;
     amount: Big;
@@ -16,7 +17,7 @@ export class Input {
 
     selected: boolean = false;
 
-    constructor(rawData: any, address: Address, matureTime: number) {
+    constructor(rawData: any, address: IAddress, matureTime: number) {
         this.account = address.account;
         this.address = address.address;
         this.amount = Big(rawData.amount);

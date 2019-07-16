@@ -1,7 +1,8 @@
 import { Input } from "./input";
 import Big from 'big.js';
+import IAddress from '../interfaces/IAddress';
 
-export class Address {
+export class Address implements IAddress {
     address: string;
     account: string;
     newAccount: string;
