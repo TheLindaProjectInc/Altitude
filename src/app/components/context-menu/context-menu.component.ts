@@ -21,10 +21,12 @@ export class ContextMenuComponent {
   ) {
     contextMenuService.showContextMenu = (event) => {
       this.menuActive = true;
-      let left = event.x;
+      let left = event.x
       if (left + 200 > window.innerWidth) left = window.innerWidth - 200;
+      left -= 310;
+      let top = event.y - 30;
       this.position.left = left + "px";
-      this.position.top = event.y + "px";
+      this.position.top = top + "px";
 
     }
     contextMenuService.hideContextMenu = () => {

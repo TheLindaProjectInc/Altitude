@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ElectronService } from '../../providers/electron.service';
+import { ElectronService } from 'app/providers/electron.service';
 var supportedLanguages = require('./languages');
 
 @Component({

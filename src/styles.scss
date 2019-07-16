@@ -10,6 +10,7 @@
 @import "./assets/styles/tables.scss";
 @import "./assets/styles/contextMenu.scss";
 @import "./assets/styles/checkbox.scss";
+@import "./assets/styles/appbar.scss";
 
 html,
 body {
@@ -46,7 +47,7 @@ a {
     bottom: 9px;
     right: 0;
     left: 0;
-    margin-left: 250px;
+    margin-left: $sidebar-padding;
     flex: 1;
 }
 
@@ -107,6 +108,7 @@ a {
     position: fixed;
     bottom: 0;
     top: 0;
+    left: 60px;
     width: 250px;
     min-width: 250px;
     background: $background-accent;
@@ -566,7 +568,7 @@ input[type="text"i] {
 .toolbar-bottom {
     position: fixed;
     bottom: 0;
-    left: 250px;
+    left: $sidebar-padding;
     right: 0;
     padding: 10px;
     background: $background-primary;

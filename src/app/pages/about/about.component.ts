@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { WalletService } from '../../providers/wallet.service';
-import { ElectronService } from '../../providers/electron.service';
+import { WalletService } from 'app/metrix/providers/wallet.service';
+import { ElectronService } from 'app/providers/electron.service';
 
 @Component({
   selector: 'app-about',

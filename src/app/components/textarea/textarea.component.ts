@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ElectronService } from '../../providers/electron.service';
-import { ContextMenuService } from '../context-menu/context-menu.service';
+import { ElectronService } from 'app/providers/electron.service';
+import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
 
 
 @Component({

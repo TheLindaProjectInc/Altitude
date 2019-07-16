@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Routes, RouterModule } from '@angular/router';
 // modal
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 // virtual scroll
@@ -19,18 +20,17 @@ import { setupIcons } from './icon-module';
 import { NotifierModule } from 'angular-notifier';
 
 // routing
-import { AppRoutingModule, routingDeclarations } from './app-routing.module';
+// import { AppRoutingModule, routingDeclarations } from './app-routing.module';
 // components
 import { componentDeclarations, componentProviders } from './app-components.module';
 // services
 import { ElectronService } from './providers/electron.service';
-import { RpcService } from './providers/rpc.service';
-import { WalletService } from './providers/wallet.service';
 import { ErrorService } from './providers/error.service';
 import { NotificationService } from './providers/notification.service';
 import { TranslationService } from './providers/translation.service';
 // app
 import { AppComponent } from './app.component';
+import * as metrix from './metrix/metrix.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,17 +39,23 @@ export function HttpLoaderFactory(http: HttpClient) {
 // AoT requires the files to be explicitly imported
 setupIcons();
 
+// routes
+const routes: Routes = [
+  { path: '', redirectTo: '/metrix', pathMatch: 'full' },
+  metrix.route
+];
+
 @NgModule({
   declarations: [
     AppComponent,
-    ...routingDeclarations,
-    ...componentDeclarations
+    ...componentDeclarations,
+    ...metrix.declarations
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
+    RouterModule.forRoot(routes, { useHash: true }),
     FontAwesomeModule,
     VirtualScrollerModule,
     NgxSmartModalModule.forRoot(),
@@ -71,11 +77,10 @@ setupIcons();
   ],
   providers: [
     ElectronService,
-    RpcService,
-    WalletService,
     ErrorService,
     NotificationService,
     TranslationService,
+    ...metrix.providers,
     ...componentProviders
   ],
   bootstrap: [
