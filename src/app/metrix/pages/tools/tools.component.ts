@@ -11,7 +11,7 @@ import { ElectronService, ClientStatus } from 'app/providers/electron.service';
 })
 export class ToolsComponent implements OnInit {
 
-  @ViewChild('scrollingBlock') private myScrollContainer: ElementRef;
+  @ViewChild('scrollingBlock', { static: false }) private myScrollContainer: ElementRef;
   helpers = Helpers
   sub;
   tab = 0;

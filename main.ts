@@ -41,7 +41,7 @@ function createWindow() {
     width: width < size.width ? width : size.width,
     height: height < size.height ? height : size.height,
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
-    webPreferences: { webSecurity: false },
+    webPreferences: { webSecurity: false, nodeIntegration: true },
     frame: process.platform !== 'win32',
     titleBarStyle: 'hidden'
   });

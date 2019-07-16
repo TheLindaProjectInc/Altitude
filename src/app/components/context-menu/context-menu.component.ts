@@ -10,7 +10,7 @@ import { ContextMenuService } from './context-menu.service';
 })
 export class ContextMenuComponent {
 
-  @ViewChild('contextMenu') contextMenu: ElementRef;
+  @ViewChild('contextMenu', { static: false }) contextMenu: ElementRef;
 
   menuActive = false;
   position = { left: '0px', top: '0px' };
