@@ -10,6 +10,7 @@ export class WalletStatus {
     errors: string = '';
     latestBlockHeight: number = 0;
     latestBlockTime: number = 0;
+    startupBlockTime: number = 0;    
     stake: Big = Big(0);
 }
 

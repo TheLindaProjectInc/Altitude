@@ -17,6 +17,7 @@ import {
     WalletStatus,
     EncryptionStatus
 } from '../classes';
+import { DesktopNotificationService } from '../../providers/desktop-notification.service';
 
 @Injectable()
 export class WalletService {
@@ -70,7 +71,8 @@ export class WalletService {
     constructor(
         private rpc: RpcService,
         private electron: ElectronService,
-        private errorService: ErrorService
+        private errorService: ErrorService,
+        private desktopNotification: DesktopNotificationService
     ) {
         this.resetState();
         if (electron.isElectron()) this.setupListeners()
@@ -292,7 +294,10 @@ export class WalletService {
                         this.transactions[i].update(serverTrx)
                     }
                 }
-                if (!hasMatch) this._transactions.push(serverTrx)
+                if (!hasMatch) {
+                    this._transactions.push(serverTrx);
+                    this.notifyUserNewTransaction(serverTrx);
+                }
             })
             // sort by timestamp then address
             this._transactions.sort((a, b) => {
@@ -303,6 +308,23 @@ export class WalletService {
             });
             // notify UI of change
             this.transactionsUpdated.emit();
+        }
+    }
+
+    private notifyUserNewTransaction(serverTrx: Transaction) {
+        // only notify new coins received
+        if (serverTrx.category === "Generated" || serverTrx.category === 'Received') {
+            // check we have a block height so we don't notify already known transactions
+            if (this.walletStatus.startupBlockTime) {
+                // check we recieved this after the last time we synced
+                if (serverTrx.timestamp.getTime() > this.walletStatus.startupBlockTime) {
+                    //  check we aren't notifying a super old one (only notify a week old)
+                    let diff = new Date().getTime() - serverTrx.timestamp.getTime();
+                    if (diff <= 1000 * 60 * 60 * 24 * 7) {
+                        this.desktopNotification.notifyNewTransaction(serverTrx);
+                    }
+                }
+            }
         }
     }
 
@@ -319,6 +341,8 @@ export class WalletService {
         let blockData: any = await this.rpc.requestData(RPCMethods.GETLATESTBLOCK);
         this.walletStatus.latestBlockHeight = blockData.height;
         this.walletStatus.latestBlockTime = blockData.time * 1000;
+        if (!this.walletStatus.startupBlockTime)
+            this.walletStatus.startupBlockTime = this.walletStatus.latestBlockTime;
     }
 
     private async getMasternodeInfo(dataSync) {

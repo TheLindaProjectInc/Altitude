@@ -28,6 +28,7 @@ import { ElectronService } from './providers/electron.service';
 import { ErrorService } from './providers/error.service';
 import { NotificationService } from './providers/notification.service';
 import { TranslationService } from './providers/translation.service';
+import { DesktopNotificationService } from './providers/desktop-notification.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
@@ -80,6 +81,7 @@ const routes: Routes = [
     ErrorService,
     NotificationService,
     TranslationService,
+    DesktopNotificationService,
     ...metrix.providers,
     ...componentProviders
   ],

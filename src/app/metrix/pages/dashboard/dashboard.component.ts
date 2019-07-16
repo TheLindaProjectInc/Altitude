@@ -33,7 +33,7 @@ export class DashboardComponent {
 
   showNewAccountModal() {
     this.newAccountLabel = '';
-    this.ngxModal.getModal('addAccountModal').open()
+    this.ngxModal.getModal('addAccountModal').open();
   }
 
   async createNewAccount() {
