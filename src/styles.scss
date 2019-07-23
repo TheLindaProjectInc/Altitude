@@ -109,8 +109,8 @@ a {
     bottom: 0;
     top: 0;
     left: 60px;
-    width: 250px;
-    min-width: 250px;
+    width: $sidebar-width;
+    min-width: $sidebar-width;
     background: $background-accent;
     display: flex;
     flex-direction: column;
@@ -120,8 +120,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 250px;
-        min-width: 250px;
     }
 
     .logo {
@@ -206,6 +204,13 @@ a {
     }
 }
 
+.content-card {
+    background: $content-background;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    padding: 10px;
+}
+
 // Accounts
 .accounts {
     display: flex;
@@ -214,9 +219,9 @@ a {
 
 .account {
     background-color: $background-accent;
-    min-width: 300px;
+    min-width: 260px;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
     flex-grow: 1;
     position: relative;
     overflow: hidden;
@@ -235,7 +240,7 @@ a {
     }
 
     .account-identicon {
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     .account-name {
@@ -243,6 +248,7 @@ a {
         align-items: center;
         padding: 10px;
         padding-bottom: 0;
+        padding-right: 0;
 
         h5 {
             padding: 0 10px;
@@ -255,6 +261,7 @@ a {
 
     .account-balance {
         padding: 0 10px;
+        padding-right: 0;
         margin: 0px;
         color: $color-primary;
         font-size: 16px;
@@ -268,6 +275,7 @@ a {
     .account-address {
         padding: 10px;
         padding-top: 0;
+        padding-right: 0;
         margin: 0px;
         font-size: 10px;
         font-weight: normal;
@@ -590,9 +598,6 @@ input[type="text"] {
 
 .send-recipient {
     position: relative;
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
     margin-bottom: 5px;
     padding-top: 35px;
 
@@ -604,9 +609,6 @@ input[type="text"] {
 }
 
 .send-source {
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
     margin-bottom: 50px;
 
     h4 {
@@ -664,12 +666,6 @@ input[type="text"] {
     h5:first-child {
         margin-top: 0;
     }
-}
-
-.notification-box {
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
 }
 
 .information-table {

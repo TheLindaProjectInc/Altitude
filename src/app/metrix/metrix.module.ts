@@ -11,6 +11,8 @@ import { AddressBookService } from './components/address-book/address-book.servi
 import { SyncStatusComponent } from './components/sync-status/sync-status.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { TransactionRowComponent } from './components/transaction-row/transaction-row.component';
+import { AccountsComponent } from './components/accounts/accounts.component';
+import { MarketPriceComponent } from './components/market-price/market-price.component';
 
 // pages
 import { SendComponent } from './pages/send/send.component';
@@ -75,5 +77,7 @@ export const declarations = [
     AddressBookComponent,
     SyncStatusComponent,
     SideBarComponent,
-    TransactionRowComponent
+    TransactionRowComponent,
+    AccountsComponent,
+    MarketPriceComponent,
 ]

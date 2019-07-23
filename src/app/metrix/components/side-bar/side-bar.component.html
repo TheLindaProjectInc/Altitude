@@ -5,7 +5,7 @@
         <!-- Balance -->
         <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
         <span>
-            {{helpers.prettyCoins(wallet.balance)}}
+            {{helpers.prettyCoins(wallet.balance, 4)}}
             <span class="balance-currency">Metrix</span>
         </span>
         <!-- Menu -->

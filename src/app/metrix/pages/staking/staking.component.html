@@ -1,14 +1,14 @@
 <div class="content" #scrollingBlock>
 
   <!-- staking not enabled -->
-  <div class="notification-box" *ngIf="!wallet.stakingStatus.enabled">
+  <div class="content-card" *ngIf="!wallet.stakingStatus.enabled">
     <h1>{{ 'PAGES.STAKING.NOTENABLEDTITLE' | translate }}</h1>
     <p>{{ 'PAGES.STAKING.NOTENABLEDINFO' | translate }}</p>
     <p>{{ 'PAGES.STAKING.NOTENABLEDINSTR' | translate }}</p>
   </div>
 
   <!-- staking not started -->
-  <div class="notification-box" *ngIf="wallet.stakingStatus.enabled && !wallet.staking">
+  <div class="content-card" *ngIf="wallet.stakingStatus.enabled && !wallet.staking">
     <h1>{{ 'PAGES.STAKING.NOTSTAKINGTITLE' | translate }}</h1>
     <p>{{ 'PAGES.STAKING.NOTSTAKINGINFO' | translate }}</p>
     <p>{{ 'PAGES.STAKING.NOTSTAKINGINSTR' | translate }}</p>
@@ -18,7 +18,7 @@
   <!-- Is Staking -->
   <div *ngIf="wallet.staking">
 
-    <div class="notification-box">
+    <div class="content-card">
       <h1>{{ 'PAGES.STAKING.STAKINGTITLE' | translate }}</h1>
       <p>{{ 'PAGES.STAKING.EXPECTEDRETURN' | translate }}: {{wallet.stakingStatus.expectedTime}}
         {{wallet.stakingStatus.expectedType}}</p>
@@ -27,25 +27,25 @@
       <button class="btn btn-danger" (click)="wallet.lockWallet()">{{ 'PAGES.STAKING.LOCK' | translate }}</button>
     </div>
 
-    <h1>{{ 'PAGES.STAKING.INPUTSTITLE' | translate }}</h1>
+      <h1>{{ 'PAGES.STAKING.INPUTSTITLE' | translate }}</h1>
 
-    <virtual-scroller #scroll class="transactions" [items]="stakingInputs" [parentScroll]="scrollingBlock">
-      <div class="transaction confirmed" *ngFor="let input of scroll.viewPortItems" style="width: 100%;height: 92px;">
-        <div class="icon">
-          <fa-icon class="success" *ngIf="isMature(input)" icon="check-circle"></fa-icon>
-          <fa-icon class="danger" *ngIf="!isMature(input)" icon="times-circle"></fa-icon>
-        </div>
-        <div class="detail">
-          <h5>{{input.account || input.address}}</h5>
-          <h6>{{ 'PAGES.STAKING.MATURE' | translate }}: {{input.matureTime | date:'MMM d, y, h:mm a'}}</h6>
-        </div>
-        <div class="value">
-          <div class="amount">
-            {{helpers.prettyCoins(input.amount)}} Metrix
+      <virtual-scroller #scroll class="transactions" [items]="stakingInputs" [parentScroll]="scrollingBlock">
+        <div class="transaction confirmed" *ngFor="let input of scroll.viewPortItems" style="width: 100%;height: 92px;">
+          <div class="icon">
+            <fa-icon class="success" *ngIf="isMature(input)" icon="check-circle"></fa-icon>
+            <fa-icon class="danger" *ngIf="!isMature(input)" icon="times-circle"></fa-icon>
+          </div>
+          <div class="detail">
+            <h5>{{input.account || input.address}}</h5>
+            <h6>{{ 'PAGES.STAKING.MATURE' | translate }}: {{input.matureTime | date:'MMM d, y, h:mm a'}}</h6>
+          </div>
+          <div class="value">
+            <div class="amount">
+              {{helpers.prettyCoins(input.amount)}} Metrix
+            </div>
           </div>
         </div>
-      </div>
-    </virtual-scroller>
+      </virtual-scroller>
 
   </div>
 

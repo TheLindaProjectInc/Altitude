@@ -1,0 +1,26 @@
+<div class="content-card" style="padding: 0;position: relative;">
+    <h1 class="title">MRX/BTC</h1>
+    <div class="chart-buttons">
+        <button class="btn btn-sm" (click)="updateChart(1)"
+            [ngClass]="{'btn-success':marketPeriod===1,'btn-default':marketPeriod!==1}">
+            24h
+        </button>
+        <button class="btn btn-sm" (click)="updateChart(7)"
+            [ngClass]="{'btn-success':marketPeriod===7,'btn-default':marketPeriod!==7}">
+            7d
+        </button>
+        <button class="btn btn-sm" (click)="updateChart(30)"
+            [ngClass]="{'btn-success':marketPeriod===30,'btn-default':marketPeriod!==30}">
+            1m
+        </button>
+    </div>
+    <div *ngIf="chartLoadFailed" class="load-failed">
+        <h3>Failed to load market data</h3>
+        <button class="btn btn-default btn-sm" (click)="loadMarketData()">
+            Retry
+        </button>
+    </div>
+    <loader paddingTop="100" paddingBottom="50" *ngIf="loadingChart"></loader>
+    <canvas id="priceChart" style="border-radius: 6px;"
+        [ngStyle]="{'display':loadingChart||chartLoadFailed?'none':'block'}"></canvas>
+</div>

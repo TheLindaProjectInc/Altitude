@@ -1,6 +1,6 @@
 <div class="content">
 
-  <div class="send-source" *ngIf="!electron.settings.hideCoinControlFeatures">
+  <div class="content-card send-source" *ngIf="!electron.settings.hideCoinControlFeatures">
 
     <h4>{{ 'PAGES.SEND.COINCONTROL' | translate }}</h4>
 
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="send-recipients">
+  <div class="content-card send-recipients">
     <div *ngFor="let rec of recipients;let i=index" class="send-recipient">
       <button class="btn btn-icon close" (click)="removeRecipient(i)" [disabled]="recipients.length==1">
         <fa-icon icon="times"></fa-icon>

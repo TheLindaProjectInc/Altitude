@@ -1,0 +1,29 @@
+.outer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background: url('/assets/img/altitude-logo-greyscale.png');
+    background-size: contain;
+    position: relative;
+    transition: all 0.8s;
+    overflow: hidden;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
