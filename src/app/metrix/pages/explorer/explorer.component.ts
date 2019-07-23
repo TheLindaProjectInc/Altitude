@@ -70,7 +70,7 @@ export class ExplorerComponent {
         const result = await this.wallet.getBlock(this.searchInput);
         this.currentBlock = result;
       } catch (ex) {
-        if (ex.error && ex.error.error && ex.error.error.code === -5)
+        if (ex.body && ex.body.error && ex.body.error.code === -5)
           this.searchForTransaction()
         else
           this.errorService.diagnose(ex);
