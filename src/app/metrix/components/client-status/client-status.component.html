@@ -1,7 +1,5 @@
 <div *ngIf="showStatusIndicator()" class="clienstatus-backdrop">
-    <div>
-        <div id="clienstatus-loading"></div>
-    </div>
+    <loader></loader>
     <h3 *ngIf="!rpc.RPCWarmupMessage">
         {{ getRPCStatus() | translate }}
     </h3>

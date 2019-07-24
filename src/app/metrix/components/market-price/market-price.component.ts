@@ -88,8 +88,6 @@ export class MarketPriceComponent {
       if (value > max) max = value;
     }
 
-    console.log(incomeData)
-
     // get chart
     var ctx = (document.getElementById('priceChart') as any).getContext("2d");
 

@@ -35,7 +35,6 @@ export class CurrencyService {
                         this.currencies.push(key.toUpperCase());
                     });
                     this.market = data;
-                    console.log(this.currencies, this.market);
                 });
         } catch (ex) {
             this.marketLoadFailed = true;
