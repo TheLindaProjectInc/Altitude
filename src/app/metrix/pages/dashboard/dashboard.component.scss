@@ -13,3 +13,19 @@ metrix-accounts {
     padding-left: 10px;
     width: 50%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .layout-outer {
+        flex-direction: column-reverse;
+    }
+
+    .layout-lhs {
+        width: 100%;
+    }
+
+    metrix-accounts {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+}
