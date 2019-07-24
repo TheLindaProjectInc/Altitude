@@ -5,8 +5,8 @@
         <!-- Balance -->
         <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
         <span>
-            {{helpers.prettyCoins(wallet.balance, 4)}}
-            <span class="balance-currency">Metrix</span>
+            {{currencyService.convert(wallet.balance)}}
+            <span class="balance-currency">{{currencyService.currency}}</span>
         </span>
         <!-- Menu -->
         <ul routerLinkActive="active">

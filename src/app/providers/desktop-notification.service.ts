@@ -3,11 +3,14 @@ import { TranslationService } from './translation.service';
 import { Transaction } from '../metrix/classes';
 import Helpers from '../helpers';
 
+import { CurrencyService } from 'app/providers/currency.service';
+
 @Injectable()
 export class DesktopNotificationService {
 
     constructor(
-        private translation: TranslationService
+        private translation: TranslationService,
+        public currencyService: CurrencyService
     ) {
     }
 
@@ -27,7 +30,7 @@ export class DesktopNotificationService {
         if (eplased[0]) eplasedBody = `${eplased[0]} `;
         eplasedBody += await this.translation.translate(eplased[1]);
         eplasedBody += ' ' + await this.translation.translate('MISC.AGO');
-        let body = `${Helpers.prettyCoins(trx.amount)} MRX (${eplasedBody})`;
+        let body = `${this.currencyService.displayLocal(trx.amount)} (${eplasedBody})`;
 
         // show
         this.notify(title, body, true, false);

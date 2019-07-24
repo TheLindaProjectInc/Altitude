@@ -21,8 +21,8 @@
                         <h5>{{account.name}}</h5>
                     </div>
                     <h6 class="account-balance">
-                        {{helpers.prettyCoins(account.balance)}}
-                        <span>Metrix</span>
+                        {{currencyService.convert(account.balance)}}
+                        <span>{{currencyService.currency}}</span>
                     </h6>
                     <h6 class="account-address">{{account.address}}</h6>
                 </div>

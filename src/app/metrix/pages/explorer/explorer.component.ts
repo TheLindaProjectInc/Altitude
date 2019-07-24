@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { WalletService } from '../../providers/wallet.service';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
-import Helpers from 'app/helpers';
+import { CurrencyService } from 'app/providers/currency.service';
 
 @Component({
   selector: 'app-explorer',
@@ -15,12 +15,11 @@ export class ExplorerComponent {
   currentBlock;
   currentTransaction;
 
-  public helpers = Helpers;
-
   constructor(
     private notification: NotificationService,
     private wallet: WalletService,
-    private errorService: ErrorService
+    private errorService: ErrorService,
+    public currencyService: CurrencyService
   ) {
 
   }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { WalletService } from '../../providers/wallet.service';
-import Helpers from 'app/helpers';
+import { CurrencyService } from 'app/providers/currency.service';
 
 @Component({
   selector: 'side-bar',
@@ -10,10 +10,9 @@ import Helpers from 'app/helpers';
 
 export class SideBarComponent {
 
-  public helpers = Helpers;
-
   constructor(
     public wallet: WalletService,
+    public currencyService: CurrencyService
   ) {
 
   }

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
-import Helpers from 'app/helpers';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
+import { CurrencyService } from '../../../providers/currency.service';
 
 @Component({
   selector: 'metrix-accounts',
@@ -14,7 +14,6 @@ import { NotificationService } from 'app/providers/notification.service';
 
 export class AccountsComponent {
   newAccountLabel = '';
-  public helpers = Helpers;
 
   constructor(
     public wallet: WalletService,
@@ -22,6 +21,7 @@ export class AccountsComponent {
     public ngxModal: NgxSmartModalService,
     private notification: NotificationService,
     private errorService: ErrorService,
+    private currencyService: CurrencyService
   ) {
 
   }

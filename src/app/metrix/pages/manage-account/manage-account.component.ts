@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { WalletService } from '../../providers/wallet.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import Helpers from 'app/helpers';
 import { ElectronService } from 'app/providers/electron.service';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { Transaction, Account } from '../../classes';
+import { CurrencyService } from 'app/providers/currency.service';
 
 declare let QRCode: any;
 
@@ -19,7 +19,6 @@ export class ManageAccountComponent {
   sub;
   tab = 0;
   // transactions tab
-  public helpers = Helpers;
   skipTransactions = 10;
   transactions = [];
   loadingTransactions = false;
@@ -31,7 +30,8 @@ export class ManageAccountComponent {
     private route: ActivatedRoute,
     private electron: ElectronService,
     private notification: NotificationService,
-    private errorService: ErrorService
+    private errorService: ErrorService,
+    public currencyService: CurrencyService
   ) {
 
   }

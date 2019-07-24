@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { ipcRenderer, remote, clipboard, shell } from 'electron';
 import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
+import { CurrencyService } from './currency.service';
 var supportedLanguages = require('../pages/locale/languages');
 
 @Injectable()
@@ -27,6 +28,7 @@ export class ElectronService {
   constructor(
     private http: HttpClient,
     private translate: TranslateService,
+    private currencyService: CurrencyService
   ) {
     // Conditional imports
     if (this.isElectron()) {
@@ -86,6 +88,7 @@ export class ElectronService {
         case 'GET':
           this.settings = data;
           this.setLanguage();
+          this.setDisplayCurrency();
           break;
       }
     });
@@ -111,6 +114,13 @@ export class ElectronService {
       if (isDevMode()) console.log("Setting language to", this.settings.locale)
       this.translate.setDefaultLang(this.settings.locale);
       this.languageChangedEvent.emit();
+    }
+  }
+
+  setDisplayCurrency() {
+    if (this.settings.currency && this.currencyService.currency !== this.settings.currency) {
+      if (isDevMode()) console.log("Setting display currency to", this.settings.currency)
+      this.currencyService.changeCurrency(this.settings.currency);
     }
   }
 

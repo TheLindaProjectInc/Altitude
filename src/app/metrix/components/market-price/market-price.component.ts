@@ -4,6 +4,7 @@ import { Chart, ChartPoint } from 'chart.js';
 import { HttpClient } from '@angular/common/http';
 import { TranslationService } from 'app/providers/translation.service';
 import { ErrorService } from 'app/providers/error.service';
+import { CurrencyService } from 'app/providers/currency.service';
 
 @Component({
   selector: 'market-price-chart',
@@ -20,7 +21,8 @@ export class MarketPriceComponent {
   constructor(
     private http: HttpClient,
     private translation: TranslationService,
-    private error: ErrorService
+    private error: ErrorService,
+    private currenyService: CurrencyService
   ) {
   }
 
@@ -38,10 +40,8 @@ export class MarketPriceComponent {
     this.loadingChart = true;
     if (this.priceChart) this.priceChart.destroy();
     try {
-      this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${this.marketPeriod}`)
-        .subscribe((data: any) => {
-          this.drawIncomeChart(data.prices);
-        });
+      let prices: any = await this.currenyService.getMarketChart(this.marketPeriod);
+      this.drawIncomeChart(prices);
     } catch (ex) {
       this.chartLoadFailed = true;
       this.error.diagnose(ex);
@@ -87,6 +87,8 @@ export class MarketPriceComponent {
       if (value < min) min = value;
       if (value > max) max = value;
     }
+
+    console.log(incomeData)
 
     // get chart
     var ctx = (document.getElementById('priceChart') as any).getContext("2d");

@@ -19,8 +19,6 @@ import { setupIcons } from './icon-module';
 // alerts
 import { NotifierModule } from 'angular-notifier';
 
-// routing
-// import { AppRoutingModule, routingDeclarations } from './app-routing.module';
 // components
 import { componentDeclarations, componentProviders } from './app-components.module';
 // services
@@ -29,6 +27,7 @@ import { ErrorService } from './providers/error.service';
 import { NotificationService } from './providers/notification.service';
 import { TranslationService } from './providers/translation.service';
 import { DesktopNotificationService } from './providers/desktop-notification.service';
+import { CurrencyService } from './providers/currency.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
@@ -82,6 +81,7 @@ const routes: Routes = [
     NotificationService,
     TranslationService,
     DesktopNotificationService,
+    CurrencyService,
     ...metrix.providers,
     ...componentProviders
   ],

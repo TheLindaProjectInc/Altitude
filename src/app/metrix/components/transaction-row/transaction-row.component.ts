@@ -3,6 +3,7 @@ import { WalletService } from '../../providers/wallet.service';
 import { ElectronService } from 'app/providers/electron.service';
 import { Transaction } from '../../classes';
 import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
+import { CurrencyService } from 'app/providers/currency.service';
 import Helpers from 'app/helpers';
 
 @Component({
@@ -14,11 +15,11 @@ export class TransactionRowComponent {
   @Input() trx: Transaction;
 
   public helpers = Helpers;
-
   constructor(
     public wallet: WalletService,
     private electron: ElectronService,
-    private contextMenu: ContextMenuService
+    private contextMenu: ContextMenuService,
+    public currencyService: CurrencyService
   ) {
 
   }

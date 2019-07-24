@@ -10,6 +10,7 @@ import { ElectronService } from 'app/providers/electron.service';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { Input } from '../../classes';
+import { CurrencyService } from 'app/providers/currency.service';
 
 @Component({
   selector: 'app-send',
@@ -41,6 +42,7 @@ export class SendComponent implements OnInit, OnDestroy {
     public electron: ElectronService,
     private errorService: ErrorService,
     private notification: NotificationService,
+    public currencyService: CurrencyService,
   ) { }
 
   ngOnInit(): void {

@@ -32,6 +32,7 @@ import { MasterComponent } from './pages/master/master.component';
 // services
 import { RpcService } from './providers/rpc.service';
 import { WalletService } from './providers/wallet.service';
+import { CurrencyComponent } from './pages/currency/currency.component';
 
 const routes: Routes = [
     { path: '', component: DashboardComponent },
@@ -45,6 +46,7 @@ const routes: Routes = [
     { path: 'options', component: OptionsComponent },
     { path: 'about/:tab', component: AboutComponent },
     { path: 'locale', component: LocaleComponent },
+    { path: 'currency', component: CurrencyComponent },
     { path: 'explorer/:search', component: ExplorerComponent },
 ];
 
@@ -80,4 +82,5 @@ export const declarations = [
     TransactionRowComponent,
     AccountsComponent,
     MarketPriceComponent,
+    CurrencyComponent
 ]

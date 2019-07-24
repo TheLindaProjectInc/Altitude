@@ -179,6 +179,7 @@ export class TitlebarComponent {
     this.electron.ipcRenderer.on('MENU.FILE.VERIFYMESSAGE', () => this.goToVerifyMessage());
     this.electron.ipcRenderer.on('MENU.FILE.OPTIONS', () => this.goToOptions());
     this.electron.ipcRenderer.on('MENU.FILE.LOCALE', () => this.goToLocale());
+    this.electron.ipcRenderer.on('MENU.FILE.CURRENCIES', () => this.goToCurrency());
     this.electron.ipcRenderer.on('MENU.FILE.RESTARTCORE', () => this.restartCore());
     this.electron.ipcRenderer.on('MENU.FILE.EXIT', () => this.close());
 
@@ -239,6 +240,10 @@ export class TitlebarComponent {
 
   goToLocale() {
     this.router.navigate(['/metrix/locale']);
+  }
+
+  goToCurrency() {
+    this.router.navigate(['/metrix/currency']);
   }
 
   async encryptWallet() {

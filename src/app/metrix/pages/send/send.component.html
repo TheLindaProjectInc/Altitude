@@ -53,7 +53,10 @@
   <div class="toolbar-bottom">
     <div class="send-summary">
       <h5>{{ 'MISC.FEE' | translate }}: {{UI_fee}}</h5>
-      <h5>{{ 'PAGES.SEND.TOTAL' | translate }}: {{helpers.prettyCoins(UI_total)}}</h5>
+      <h5>
+        {{ 'PAGES.SEND.TOTAL' | translate }}: {{helpers.prettyCoins(UI_total)}}
+        {{currencyService.currency!=='MRX' ? '(' + currencyService.displayLocal(UI_total) + ')' : ''}}
+      </h5>
       <hr />
     </div>
 
