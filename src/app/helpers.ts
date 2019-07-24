@@ -27,7 +27,7 @@ export default class Helpers {
   }
 
   public static roundCoins(coins: Big, decimals: number = 8): Big {
-    const parts = coins.toString().split(".");
+    const parts = coins.toFixed(8).toString().split(".");
     if (parts.length === 2) {
       const dec = Number("0." + parts[1]);
       const len = parts[1].length;

@@ -23,7 +23,8 @@
             [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
             {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{currencyService.displayLocal(trx.amount)}}
         </div>
-        <div *ngIf="trx.fee" class="small danger">{{ 'MISC.FEE' | translate }}: {{currencyService.convert(trx.fee)}}
-            Metrix</div>
+        <div *ngIf="trx.fee" class="small danger">
+            {{ 'MISC.FEE' | translate }}: {{currencyService.displayLocal(trx.fee)}}
+        </div>
     </div>
 </div>
