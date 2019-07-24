@@ -6,10 +6,12 @@
 
     <div>
       <button class="btn btn-default" (click)="showSelectInputsModal()">{{ 'PAGES.SEND.INPUTS' | translate }}</button>
-      <span *ngIf="!getSelectedQuantity()"
-        style="margin-left: 1em;">{{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}</span>
-      <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">{{helpers.prettyCoins(getSelectedAmount())}}
-        Metrix</span>
+      <span *ngIf="!getSelectedQuantity()" style="margin-left: 1em;">
+        {{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}
+      </span>
+      <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">
+        {{helpers.prettyCoins(getSelectedAmount())}} Metrix
+      </span>
     </div>
 
     <div class="form-inline" style="margin-top: 1em;">
@@ -92,7 +94,7 @@
       <table class="table table-send">
         <thead #header>
           <tr>
-            <th></th>
+            <th colspan="2"></th>
             <th (click)="sortCoinControl('amount')">
               {{ 'PAGES.SEND.TABLECOLUMNS_AMOUNT' | translate }}
               <fa-icon icon="arrow-down" *ngIf="sortField=='amount' && sortDesc"></fa-icon>
@@ -124,7 +126,7 @@
         <tbody #container *ngIf="coinControlTreeMode">
           <ng-container *ngFor="let header of scroll.viewPortItems; let i = index">
             <tr>
-              <td style="text-align: left;">
+              <td colspan="2" style="text-align: left;">
                 <button class="btn btn-icon" (click)="header.showChildren=!header.showChildren">
                   <fa-icon *ngIf="header.showChildren" icon='chevron-down'></fa-icon>
                   <fa-icon *ngIf="!header.showChildren" icon='chevron-right'></fa-icon>
@@ -142,11 +144,20 @@
             <ng-container *ngIf="header.showChildren">
               <tr *ngFor="let inp of header.inputs;let j = index" (contextmenu)="onRightClick($event,inp)">
                 <td style="padding: 5px 0;text-align: right">
+                  <!-- select -->
                   <input *ngIf="!inp.locked" id="chkInput{{i}}-{{j}}" [(ngModel)]="inp.selected" type='checkbox'
                     (change)="checkHeaderSelected(header)" />
                   <label for="chkInput{{i}}-{{j}}"></label>
+                  <!-- locked -->
                   <fa-icon style="margin-right: 13px;" *ngIf="inp.locked" icon='lock'
                     title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
+                </td>
+                <td>
+                  <!-- confirmed -->
+                  <fa-icon *ngIf="inp.confirmations>=helpers.params.confirmations" icon='check-circle'
+                    class="fa-lg success" title="{{ 'MISC.CONFIRMED' | translate}}"></fa-icon>
+                  <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
+                    title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
                 </td>
                 <td>{{inp.amount}}</td>
                 <td>{{inp.account}}</td>
@@ -162,9 +173,18 @@
           <tr *ngFor="let inp of scroll.viewPortItems; let i = index" style="width: 100%;height: 30px;"
             (contextmenu)="onRightClick($event,inp)">
             <td>
+              <!-- select -->
               <input *ngIf="!inp.locked" id="chkInput{{i}}" [(ngModel)]="inp.selected" type='checkbox' />
               <label for="chkInput{{i}}"></label>
+              <!-- locked -->
               <fa-icon *ngIf="inp.locked" icon='lock' title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
+            </td>
+            <td>
+              <!-- confirmed -->
+              <fa-icon *ngIf="inp.confirmations>=helpers.params.confirmations" icon='check-circle' class="fa-lg success"
+                title="{{ 'MISC.CONFIRMED' | translate}}"></fa-icon>
+              <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
+                title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
             </td>
             <td>{{inp.amount}}</td>
             <td>{{inp.account}}</td>
