@@ -13,6 +13,8 @@ Shutdown Altitude if it is already running and then run the installer.
 - Added desktop notifications for new coins.
 - Added market price graph to dashboard.
 - Added support for fiat display currencies.
+- Added ability to create local Masternode within Altitude
+- Added ability to add remote Masterodes to Altitude without restarting metrixd
 
 ### Bug Fixes
 - Fixed the `Block Not Found` error when searching for a transaction in the block explorer.

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Wāina",
             "ENABLED": "Hoʻonāʻia",
-            "NOTENABLEDTITLE": "ʻAʻole i hoʻokūʻia nā Masternodes",
-            "NOTENABLEDINSTR": "No ka holoʻana i kahi masternode e pono aiʻoe e kōkua i nā masternodes ma ka hoʻonohonohoʻana i ka masternode = 1 a me ka hoʻonohonoho i nā 'masternodeprivkey' a 'masternodeaddr' hoʻololi i kāu waihona metrix.conf.",
             "STARTBUTTON": "E hoʻomaka i ka waena",
             "STARTALIASBUTTON": "E hoʻomaka i kaʻAia",
-            "STARTALLBUTTON": "Hoʻomaka Ka hoʻomaka"
+            "STARTALLBUTTON": "Hoʻomaka Ka hoʻomaka",
+            "NOMASTERNODES": "ʻAʻohe āu mana",
+            "NOMNOUTPUTS": "ʻAʻole loaʻa nā pūnaewele Masternode. No ka holoʻana i kahi Masternode o ka'āina e hoʻouna aku i nā'āpana 2,000,000 i kāu hale pule Masternode ae kali i 15 mau hōʻoia.",
+            "STOPBUTTON": "Kāpae Kele",
+            "STOPALIASBUTTON": "Kāohi i'Alia",
+            "ADDREMOTE": "Hoʻokomo i ka Hale Kūʻai",
+            "REMOVEMN": "Wehe i ka Halepule",
+            "ADDLOCAL": "E hoʻonohonoho i ka Hale Kūkulu Kūloko",
+            "DISABLELOCAL": "Hoʻohemo i ka Masternode Local",
+            "LOCALNOTRUNNING": "Wahi Kū i ka Hale Kūloko"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Kākau memo",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ua pilikia ka Metrix Core i hoʻomaha ai. He'ōlelo manaʻo e nānā i kāu file debug.log no nā pilikia.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "E hoʻomaka hou i ka mea kūʻai",
             "CLIENTINVALIDCONFIGTITLE": "ʻO metrix.conf Hōʻokoʻa",
-            "CLIENTINVALIDCONFIGINFO": "ʻO kāu metrix.conf kahi hoʻonohonoho masternode kūponoʻole e hiki ai iā Metrix Core ke hele koke. Eʻoluʻolu e nānā i kēia faila."
+            "CLIENTINVALIDCONFIGINFO": "ʻO kāu metrix.conf kahi hoʻonohonoho masternode kūponoʻole e hiki ai iā Metrix Core ke hele koke. Eʻoluʻolu e nānā i kēia faila.",
+            "ADDREMOTEMNTITLE": "Hoʻokomo i ka Hale Kūʻai",
+            "ADDREMOTEMNALIAS": "ʻO'AliaʻAnakala",
+            "ADDREMOTEMNIP": "Kapiho IP: Kaona",
+            "ADDREMOTEMNKEY": "Kelehua Palekana Masternode",
+            "ADDREMOTEMNTXHASH": "ʻO Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "ʻO ka papa inoa Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Buke Helu",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Pono nā mea e komo ai ma kahi o ka hōʻoia 1 ma mua o ka hoʻolimalimaʻana.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nā kope i kopeʻia i ka papa palani",
         "TRANSACTIONOUTPUTTOOLARGE": "ʻO kekahi o kāu uku i ka nui he nui ka hoʻounaʻana me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ua nui loa kāu loli e hoʻouna aku me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ua nui loa kāu loli e hoʻouna aku me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Ke kū nei masternode...",
+        "FAILEDTOWRITECONFIG": "Ua pilikia ka kākauʻana i kāu kōnae metrix.conf. E hōʻoia i ka waihona o ka waihona a aiaʻo Altitude i nāʻae palapala.",
+        "NOPUBLICUP": "ʻAʻohe IP IP i loaʻa. E hoʻopaʻa i kāu pūnaewele pūnaewele a hoʻihoʻi hou i ka Altitude.",
+        "CONFIGURINGLOCALMN": "Hoʻonohonoho i ka Hale Kūkulu Kūloko..."
     },
     "TIME": {
         "AFEWSECONDS": "Kekona kekona",

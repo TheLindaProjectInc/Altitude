@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "адрес",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Мастерионите не са активирани",
-            "NOTENABLEDINSTR": "За да стартирате masternode, ще трябва да активирате masternodes, като зададете masternode = 1 и конфигурирате променливите 'masternodeprivkey' и 'masternodeaddr' във вашия файл metrix.conf.",
             "STARTBUTTON": "Стартирайте локално",
             "STARTALIASBUTTON": "Стартирайте Псевдоним",
-            "STARTALLBUTTON": "Започнете всички"
+            "STARTALLBUTTON": "Започнете всички",
+            "NOMASTERNODES": "Нямате никакви мастернодези",
+            "NOMNOUTPUTS": "Не са намерени изходи за Masternode. За да стартирате локален Masternode изпратете точно 2,000,000 монети на вашия адрес Masternode и изчакайте 15 потвърждения.",
+            "STOPBUTTON": "Стоп локално",
+            "STOPALIASBUTTON": "Спрете псевдонима",
+            "ADDREMOTE": "Добавете отдалечен Masternode",
+            "REMOVEMN": "Премахване на Masternode",
+            "ADDLOCAL": "Настройка на локален мастернод",
+            "DISABLELOCAL": "Деактивиране на локалния мастернод",
+            "LOCALNOTRUNNING": "Не се изпълнява локален Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Подписване на съобщението",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем с Metrix Core, който го е причинил да прекрати. Препоръчваме да проверите файла debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирайте клиента",
             "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл."
+            "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл.",
+            "ADDREMOTEMNTITLE": "Добавете отдалечен Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Псевдоним",
+            "ADDREMOTEMNIP": "IP адрес: порт",
+            "ADDREMOTEMNKEY": "Личен ключ за Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Всички входящи данни изискват поне 1 потвърждение преди разходването.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциите са копирани в клипборда",
         "TRANSACTIONOUTPUTTOOLARGE": "Едно от сумите, които плащате, е твърде голямо, за да бъде изпратено безопасно. Максимумът е 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Промяната ви е твърде голяма, за да се изпраща безопасно. Максимумът е 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Промяната ви е твърде голяма, за да се изпраща безопасно. Максимумът е 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Спирането на masternode...",
+        "FAILEDTOWRITECONFIG": "Възникна проблем при записването във вашия файл metrix.conf. Проверете дали файлът съществува и че Altitude има разрешения за запис.",
+        "NOPUBLICUP": "Няма намерен публичен IP адрес. Проверете връзката си с интернет и рестартирайте Altitude.",
+        "CONFIGURINGLOCALMN": "Конфигуриране на местния Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Няколко секунди",

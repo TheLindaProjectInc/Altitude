@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Cím",
             "ENABLED": "Bekapcsolt",
-            "NOTENABLEDTITLE": "A masternodes nincs engedélyezve",
-            "NOTENABLEDINSTR": "A masternode futtatásához engedélyezni kell a masternódok engedélyezését az masternode = 1 beállításával és a \"masternodeprivkey\" és a \"masternodeaddr\" változók beállításával a metrix.conf fájlban.",
             "STARTBUTTON": "Helyi indítás",
             "STARTALIASBUTTON": "Az Alias elindítása",
-            "STARTALLBUTTON": "Indítsa el az összeset"
+            "STARTALLBUTTON": "Indítsa el az összeset",
+            "NOMASTERNODES": "Nincsenek masternódjaid",
+            "NOMNOUTPUTS": "Nem található Masternode kimenet. A helyi Masternode futtatásához pontosan 2.000.000 érmét küldjön a Masternode címére, és várjon 15 megerősítést.",
+            "STOPBUTTON": "Stop helyi",
+            "STOPALIASBUTTON": "Állítsa le az álnevet",
+            "ADDREMOTE": "Távoli Masternode hozzáadása",
+            "REMOVEMN": "Távolítsa el a Masternode-ot",
+            "ADDLOCAL": "Helyi Masternode beállítása",
+            "DISABLELOCAL": "A Helyi Masternode letiltása",
+            "LOCALNOTRUNNING": "A helyi Masternode nem fut"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Jelentkezzen az üzenetre",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma volt a Metrix Core-szal, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák miatt.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Indítsa újra az Ügyfelet",
             "CLIENTINVALIDCONFIGTITLE": "Érvénytelen metrix.conf konfiguráció",
-            "CLIENTINVALIDCONFIGINFO": "A metrix.conf-nak érvénytelen masternode-beállítása van, ami a Metrix Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt."
+            "CLIENTINVALIDCONFIGINFO": "A metrix.conf-nak érvénytelen masternode-beállítása van, ami a Metrix Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt.",
+            "ADDREMOTEMNTITLE": "Távoli Masternode hozzáadása",
+            "ADDREMOTEMNALIAS": "Masternode alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode magánkulcs",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Minden bemenet legalább 1 megerősítést igényel a kiadások előtt.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "A vágólapra másolt tranzakciók",
         "TRANSACTIONOUTPUTTOOLARGE": "Az Ön által fizetett összegek egyike túl nagy ahhoz, hogy biztonságosan küldje el. Maximum 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "A változtatás túl nagy ahhoz, hogy biztonságosan elküldhesse. Maximum 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "A változtatás túl nagy ahhoz, hogy biztonságosan elküldhesse. Maximum 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "A masternode leállítása...",
+        "FAILEDTOWRITECONFIG": "Problémát jelentett a metrix.conf fájljában. Ellenőrizze, hogy létezik-e a fájl, és hogy az Altitude írási jogosultságokkal rendelkezik.",
+        "NOPUBLICUP": "Nem található nyilvános IP-cím. Ellenőrizze az internetkapcsolatot és indítsa újra a Magasságot.",
+        "CONFIGURINGLOCALMN": "A helyi Masternode beállítása..."
     },
     "TIME": {
         "AFEWSECONDS": "Néhány másodperc",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Indirizz",
             "ENABLED": "Habilita",
-            "NOTENABLEDTITLE": "Masternodes mhux attivat",
-            "NOTENABLEDINSTR": "Biex tmexxi masternode, ikollok bzonn li tippermetti masternodes billi tissettja masternode = 1 u tikkonfigura l-varjabbli 'masternodeprivkey' u 'masternodeaddr' fil-fajl metrix.conf tiegħek.",
             "STARTBUTTON": "Bidu Lokali",
             "STARTALIASBUTTON": "Ibda Alias",
-            "STARTALLBUTTON": "Bidu Kollox"
+            "STARTALLBUTTON": "Bidu Kollox",
+            "NOMASTERNODES": "M'għandekx masternodes",
+            "NOMNOUTPUTS": "Ma nstab l-ebda prodott ta 'Masternode. Biex tmexxi Masternode lokali ibgħat eżattament 2,000,000 munita fl-indirizz Masternode tiegħek u stenna 15-il konferma.",
+            "STOPBUTTON": "Stop Lokali",
+            "STOPALIASBUTTON": "Waqqaf Alias",
+            "ADDREMOTE": "Żid Remote Masternode",
+            "REMOVEMN": "Neħħi Masternode",
+            "ADDLOCAL": "Setup Lokali Masternode",
+            "DISABLELOCAL": "Itfi Masternode Lokali",
+            "LOCALNOTRUNNING": "Masternode Lokali Mhux Running"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Messaġġ ta 'Sinjal",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Metrix Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni metrix.conf invalida",
-            "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl."
+            "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl.",
+            "ADDREMOTEMNTITLE": "Żid Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Ċavetta Privata",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Indiċi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-indirizzi",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "L-inputs kollha jeħtieġu mill-inqas konferma waħda qabel l-infiq.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranżazzjonijiet ikkupjati lill-clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Wieħed mill-paga tiegħek għall-ammonti huwa kbir wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Il-bidla tiegħek hija kbira wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Il-bidla tiegħek hija kbira wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Waqqaf il-masternode...",
+        "FAILEDTOWRITECONFIG": "Kien hemm problema biex tikteb fil-fajl metrix.conf tiegħek. Iċċekkja li jeżisti l-fajl u li l-Altitudni għandha permessi għall-kitba.",
+        "NOPUBLICUP": "Ma nstab l-ebda indirizz IP pubbliku. Iċċekkja l-konnessjoni bl-internet tiegħek u erġa ibda l-Altitudni.",
+        "CONFIGURINGLOCALMN": "Konfigurazzjoni ta 'Masternode lokali..."
     },
     "TIME": {
         "AFEWSECONDS": "Xi ftit sekondi",

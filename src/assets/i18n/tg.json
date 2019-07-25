@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Суроға",
             "ENABLED": "Ин имкон медиҳад",
-            "NOTENABLEDTITLE": "Массивҳо фаъол нестанд",
-            "NOTENABLEDINSTR": "Барои коркард кардани оксиген, шумо бояд миқдори массивҳоро бо роҳи ташкили массивери = 1 ва танзим кардани 'masternodeprivkey' ва 'masternodeaddr' дар файлҳои metrix.conf созед.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Аломати оғоз",
-            "STARTALLBUTTON": "Ҳама сар кунед"
+            "STARTALLBUTTON": "Ҳама сар кунед",
+            "NOMASTERNODES": "Шумо ягон masternode надоред",
+            "NOMNOUTPUTS": "Ягон баромади Masternode ёфт нашуд. Барои идора кардани Masternode маҳаллии шумо маҳз 2,000,000 тангаҳоро ба суроғаи Masternode фиристед ва 15 тасдиқро интизор шавед.",
+            "STOPBUTTON": "Қатъи маҳаллӣ",
+            "STOPALIASBUTTON": "Қатъи алифбо",
+            "ADDREMOTE": "Иловаи Masternode дурдаст",
+            "REMOVEMN": "Masternode-ро тоза кунед",
+            "ADDLOCAL": "Насб кардани Masternode маҳаллӣ",
+            "DISABLELOCAL": "Хомӯш кардани Masternode маҳаллиро",
+            "LOCALNOTRUNNING": "Masternode маҳаллӣ кор намекунад"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Паёмнависӣ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Бо мушкилоти Лини Ло, мушкиле вуҷуд дошт, ки онро ба охир расонд. Барои таваққуф кардани файли debug.log худ тавсия дода мешавад.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Client Restart",
             "CLIENTINVALIDCONFIGTITLE": "Танзимоти metrix.conf-и нодуруст",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf дорои системаи танзимоти ғайриоддӣ аст, ки ба зудӣ аз ҷониби Линда Корри ба воя мерасонад. Лутфан ин файлро тафтиш кунед."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf дорои системаи танзимоти ғайриоддӣ аст, ки ба зудӣ аз ҷониби Линда Корри ба воя мерасонад. Лутфан ин файлро тафтиш кунед.",
+            "ADDREMOTEMNTITLE": "Иловаи Masternode дурдаст",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: бандар",
+            "ADDREMOTEMNKEY": "Калиди хусусии Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Индекси Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Китобҳои адресӣ",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ҳамаи захираҳо пеш аз сарф кардан аз ҳадди ақал 1 тасдиқ мекунанд.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Амалиётҳо ба клипҳои коғазӣ копир шуда метавонанд",
         "TRANSACTIONOUTPUTTOOLARGE": "Яке аз пардохтҳои шумо ба маблағи зиёд барои фиристодан фиристода мешавад. Максимум 90,071,992,54740992 аст.",
-        "TRANSACTIONCHANGETOOLARGE": "Тағири шумо барои фиристодани бехатарӣ хеле калон аст. Максимум 90,071,992,54740992 аст."
+        "TRANSACTIONCHANGETOOLARGE": "Тағири шумо барои фиристодани бехатарӣ хеле калон аст. Максимум 90,071,992,54740992 аст.",
+        "STOPPINGMASTERNODE": "Қатъи masternode...",
+        "FAILEDTOWRITECONFIG": "Ҳангоми навиштани файли metrix.conf шумо мушкилӣ пайдо шуд. Файли вуҷуддоштаро тафтиш кунед ва Altitude дорои иҷозати навиштан мебошад.",
+        "NOPUBLICUP": "Ягон суроғаи IP умумӣ ёфт нашуд. Пайвасти интернети худро санҷед ва Altitude-ро аз нав оғоз кунед.",
+        "CONFIGURINGLOCALMN": "Танзимоти Masternode маҳаллии..."
     },
     "TIME": {
         "AFEWSECONDS": "Якчанд сония",

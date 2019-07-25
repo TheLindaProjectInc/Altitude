@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adirẹsi",
             "ENABLED": "Ti ṣiṣẹ",
-            "NOTENABLEDTITLE": "Masternodes ko ṣiṣẹ",
-            "NOTENABLEDINSTR": "Lati ṣe igbimọ ile-iṣẹ ti o nilo lati ṣe afihan masternodes nipa fifi masternode = 1 ati titobi 'masternodeprivkey' ati awọn 'variables masternodeaddr' ninu faili metrix.conf rẹ.",
             "STARTBUTTON": "Bẹrẹ Agbegbe",
             "STARTALIASBUTTON": "Bẹrẹ Akosile",
-            "STARTALLBUTTON": "Bẹrẹ Gbogbo"
+            "STARTALLBUTTON": "Bẹrẹ Gbogbo",
+            "NOMASTERNODES": "O ko ni awọn awo-pẹlẹbẹ eyikeyi",
+            "NOMNOUTPUTS": "Ko si awọn iṣawari Masternode ti a rii. Lati ṣiṣẹ Masternode agbegbe kan firanṣẹ awọn owo 2,000,000 deede si adirẹsi Masternode rẹ ki o duro fun awọn iṣeduro 15.",
+            "STOPBUTTON": "Duro Agbegbe",
+            "STOPALIASBUTTON": "Da Alias duro",
+            "ADDREMOTE": "Fikun Masternode Latọna jijin",
+            "REMOVEMN": "Yọ Masternode",
+            "ADDLOCAL": "Ṣeto Masternode Agbegbe",
+            "DISABLELOCAL": "Mu Masternode Agbegbe wa",
+            "LOCALNOTRUNNING": "Masternode Agbegbe Ko Nṣiṣẹ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Wole Ifiranṣẹ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro wa pẹlu Metrix Core ti o mu ki o pari. O ṣe iṣeduro lati ṣayẹwo faili debug.log rẹ fun awọn oran.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Onibara tuntun bẹrẹ",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf iṣeto ni aiyipada",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii.",
+            "ADDREMOTEMNTITLE": "Fikun Masternode Latọna jijin",
+            "ADDREMOTEMNALIAS": "Aliasode Masternode",
+            "ADDREMOTEMNIP": "IP9 Masternode: Port",
+            "ADDREMOTEMNKEY": "Bọtini Ikọkọ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Atọka Masxodeode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adirẹsi Iwe",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Gbogbo awọn ipinnu nilo ni o kere ju iṣeduro ṣaaju ki o to lilo.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Awọn iṣẹ ti a ṣe apẹrẹ si paadi",
         "TRANSACTIONOUTPUTTOOLARGE": "Ọkan ninu owo-ori rẹ si iye owo tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Iyipada rẹ tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Iyipada rẹ tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Idaduro masternode...",
+        "FAILEDTOWRITECONFIG": "Iṣoro kan wa ninu kikọwe si faili faili metrix.conf rẹ. Ṣayẹwo faili naa wa ati pe Altitude ti kọ awọn igbanilaaye.",
+        "NOPUBLICUP": "Ko si adiresi IP gbangba ti o wa. Ṣayẹwo asopọ intanẹẹti rẹ ati tun bẹrẹ Altitude.",
+        "CONFIGURINGLOCALMN": "Tito leto Masternode agbegbe..."
     },
     "TIME": {
         "AFEWSECONDS": "Aaya meji diẹ",

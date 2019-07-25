@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Cinwaanka",
             "ENABLED": "Haboon",
-            "NOTENABLEDTITLE": "Mawduucyada aan awoodin",
-            "NOTENABLEDINSTR": "Si aad u maamusho masaxode waxaad u baahan doontaa inaad awood u yeelatid masawiro adigoo dejinaya masternode = 1 oo isku habaynaya 'masternodeprivkey' iyo 'masternodeaddr' ee ku jira faylkaaga metrix.conf.",
             "STARTBUTTON": "Bilow Degmada",
             "STARTALIASBUTTON": "Bilow Qaadashada",
-            "STARTALLBUTTON": "All Start"
+            "STARTALLBUTTON": "All Start",
+            "NOMASTERNODES": "Ma lihid wax masar ah",
+            "NOMNOUTPUTS": "Wax soo saar Masternode ah lama helin. Si aad u maamusho Masternode maxalliga ah u dir 2,000,000 oo lacagta lacagta ah cinwaankaaga Masternode oo sug illaa 15 xaqiijin.",
+            "STOPBUTTON": "Joogso Deegaanka",
+            "STOPALIASBUTTON": "Jooji Alias",
+            "ADDREMOTE": "Kudar Masternode Remote",
+            "REMOVEMN": "Ka saar Masternode",
+            "ADDLOCAL": "Dejinta Masternode Maxalliga ah",
+            "DISABLELOCAL": "Disable Masternode Maxalliga ah",
+            "LOCALNOTRUNNING": "Masternode maxalliga ahi ma ordayaan"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Fariin Fariin",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Dhibaato ayaa ka dhacday Metrix Core taas oo keentay inay joojiso. Waxaa lagugula talinayaa in aad eegto feylka debug.log ee arimaha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Cusbooneysiinta Macmiilka",
             "CLIENTINVALIDCONFIGTITLE": "Dejinta metrix.conf aan sharci ahayn",
-            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf waxay leedahay qalab aan caqli-gal ahayn oo sababa Metrix Core si aad uga baxdo. Fadlan hubi feylkan."
+            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf waxay leedahay qalab aan caqli-gal ahayn oo sababa Metrix Core si aad uga baxdo. Fadlan hubi feylkan.",
+            "ADDREMOTEMNTITLE": "Kudar Masternode Remote",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Dekadda",
+            "ADDREMOTEMNKEY": "Furaha Gaarka ah ee Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Tusaha Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buugga Cinwaanka",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Dhamaan qodobbada waxay u baahan yihiin ugu yaraan 1 cadayn ka hor intaan la bixin.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Wareegyada lagu daabacay qashinka",
         "TRANSACTIONOUTPUTTOOLARGE": "Mid ka mid ah mushaharkaaga miisaankiisu aad buu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Isbedelkaagu aad ayuu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Isbedelkaagu aad ayuu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Joojinta masternode...",
+        "FAILEDTOWRITECONFIG": "Dhibaato ayaa ka jirtay qoritaanka faylkaaga metrix.conf. Hubi faylka jira iyo in Altitude leeyahay rukhsad qoraal ah.",
+        "NOPUBLICUP": "Cinwaanka IP-ga Dadweynaha lama helin. Hubi khadkaaga internetka oo dib u bilaabi Altitude.",
+        "CONFIGURINGLOCALMN": "Aasaasidda Masternode maxalliga ah..."
     },
     "TIME": {
         "AFEWSECONDS": "Dhowr ilbiriqsi",

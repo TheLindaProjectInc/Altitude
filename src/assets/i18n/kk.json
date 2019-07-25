@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Мекенжай",
             "ENABLED": "Қосылған",
-            "NOTENABLEDTITLE": "Шеңберлер қосылмаған",
-            "NOTENABLEDINSTR": "Masternode іске қосу үшін Masternode = 1 параметрін орнатып, metrix.conf файлында 'masternodeprivkey' және 'masternodeaddr' айнымалы мәндерін теңшеу арқылы masternodes қосу керек.",
             "STARTBUTTON": "Жергілікті іске қосу",
             "STARTALIASBUTTON": "Бүркеншік атты бастау",
-            "STARTALLBUTTON": "Барлығын бастаңыз"
+            "STARTALLBUTTON": "Барлығын бастаңыз",
+            "NOMASTERNODES": "Сізде мастронодтар жоқ",
+            "NOMNOUTPUTS": "Masternode шығысы табылған жоқ. Жергілікті Masternode бағдарламасын іске қосу үшін Masternode мекен-жайына 2 000 000 тиын жіберіп, 15 растауды күтіңіз.",
+            "STOPBUTTON": "Жергілікті тоқтату",
+            "STOPALIASBUTTON": "Лақап атты тоқтату",
+            "ADDREMOTE": "Қашықтағы Masternode қосыңыз",
+            "REMOVEMN": "Masternode жойыңыз",
+            "ADDLOCAL": "Жергілікті Masternode орнатыңыз",
+            "DISABLELOCAL": "Жергілікті мастернодты өшіру",
+            "LOCALNOTRUNNING": "Жергілікті Masternode жұмыс істемейді"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Қол хабарламасы",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-мен проблема болды, ол оны тоқтатуға мәжбүр болды. Қателерге арналған debug.log файлын тексеру ұсынылады.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентті қайта іске қосыңыз",
             "CLIENTINVALIDCONFIGTITLE": "Конфигурация metrix.conf жарамсыз",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз.",
+            "ADDREMOTEMNTITLE": "Қашықтағы Masternode қосыңыз",
+            "ADDREMOTEMNALIAS": "Masternode лақап аты",
+            "ADDREMOTEMNIP": "Masternode IP: порт",
+            "ADDREMOTEMNKEY": "Masternode жеке кілті",
+            "ADDREMOTEMNTXHASH": "Masternode Trx хэш",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индексі"
         },
         "ADDRESSBOOK": {
             "TITLE": "Мекенжайлық кітап",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Барлық кірістер жұмсамастан бұрын кем дегенде 1 растауды талап етеді.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Алмасу буферіне көшірілген транзакциялар",
         "TRANSACTIONOUTPUTTOOLARGE": "Төлемдеріңіздің біреуі қауіпсіз жіберуге тым үлкен. Максимум - 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Сіздің өзгертуіңіз қауіпсіз жіберілу үшін тым үлкен. Максимум - 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Сіздің өзгертуіңіз қауіпсіз жіберілу үшін тым үлкен. Максимум - 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Мастеродты тоқтату...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf файлына жазуда қиындық туындады. Файлдың бар екенін және Биіктікте жазуға рұқсат бар екенін тексеріңіз.",
+        "NOPUBLICUP": "Жалпы IP мекенжайы табылған жоқ. Интернет қосылымын тексеріп, Биіктікті қайта қосыңыз.",
+        "CONFIGURINGLOCALMN": "Жергілікті Masternode теңшелуде..."
     },
     "TIME": {
         "AFEWSECONDS": "Бірнеше секунд",

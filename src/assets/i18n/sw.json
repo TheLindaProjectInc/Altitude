@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Anwani",
             "ENABLED": "Imewezeshwa",
-            "NOTENABLEDTITLE": "Masternodes haijawezeshwa",
-            "NOTENABLEDINSTR": "Ili kukimbia msimu unahitaji kuwezesha masternodes kwa kuweka masternode = 1 na kusanidi 'masternodeprivkey' na 'masternodeaddr' vigezo katika faili yako ya metrix.conf.",
             "STARTBUTTON": "Anza Mitaa",
             "STARTALIASBUTTON": "Anza Alias",
-            "STARTALLBUTTON": "Anza Wote"
+            "STARTALLBUTTON": "Anza Wote",
+            "NOMASTERNODES": "Huna masternode yoyote",
+            "NOMNOUTPUTS": "Hakuna matokeo ya Masternode yaliyopatikana. Ili kuendesha Masternode ya eneo lako tuma sarafu 2,000,000 kwa anwani yako ya Masternode na subiri uthibitisho 15.",
+            "STOPBUTTON": "Acha Mitaa",
+            "STOPALIASBUTTON": "Acha Alias",
+            "ADDREMOTE": "Ongeza Masternode ya mbali",
+            "REMOVEMN": "Ondoa Masternode",
+            "ADDLOCAL": "Sanidi Masternode ya Mitaa",
+            "DISABLELOCAL": "Lemaza Masternode ya Mitaa",
+            "LOCALNOTRUNNING": "Masternode ya Mitaa Haikimbilii"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Ujumbe wa Ishara",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Metrix Core ambayo imesababisha kukomesha. Inapendekeza kuangalia faili yako ya debug.log kwa masuala.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Anza upya Mteja",
             "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf isiyo sahihi",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Metrix Core kuondoka mara moja. Tafadhali angalia faili hii."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Metrix Core kuondoka mara moja. Tafadhali angalia faili hii.",
+            "ADDREMOTEMNTITLE": "Ongeza Masternode ya mbali",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Ufunguo wa kibinafsi wa Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Kitabu cha anwani",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Pembejeo zote zinahitaji uthibitisho angalau 1 kabla ya kutumia.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Shughuli zilizokopiwa kwenye ubaoboaji",
         "TRANSACTIONOUTPUTTOOLARGE": "Moja ya kulipa kwako kwa kiasi ni kubwa sana kutuma salama. Upeo ni 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mabadiliko yako ni makubwa sana kutuma kwa salama. Upeo ni 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Mabadiliko yako ni makubwa sana kutuma kwa salama. Upeo ni 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Inasimamisha masternode...",
+        "FAILEDTOWRITECONFIG": "Kulikuwa na shida kuandika kwa faili yako ya metrix.conf. Angalia faili iko na kwamba Urefu una idhini ya kuandika.",
+        "NOPUBLICUP": "Hakuna anwani ya IP ya Umma iliyopatikana. Angalia muunganisho wako wa mtandao na uanze tena Urefu.",
+        "CONFIGURINGLOCALMN": "Inasanikisha Masternode ya ndani..."
     },
     "TIME": {
         "AFEWSECONDS": "Sekunde chache",

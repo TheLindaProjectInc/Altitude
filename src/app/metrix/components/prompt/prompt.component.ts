@@ -179,6 +179,46 @@ export class PromptComponent {
     }
   }
 
+  addRemoteMNModal = {
+    resolve: null,
+    reject: null,
+    alias: '',
+    ip: '',
+    key: '',
+    txHash: '',
+    txIndex: '',
+    hide: () => this.ngxModal.getModal('addRemoteMNModal').close(),
+    reset: () => {
+      this.addRemoteMNModal.alias = "";
+      this.addRemoteMNModal.ip = "";
+      this.addRemoteMNModal.key = "";
+      this.addRemoteMNModal.txHash = "";
+      this.addRemoteMNModal.txIndex = "";
+    },
+    show: () => {
+      this.addRemoteMNModal.reset();
+      this.ngxModal.getModal('addRemoteMNModal').open();
+      return new Promise((resolve, reject) => {
+        this.addRemoteMNModal.resolve = resolve;
+        this.addRemoteMNModal.reject = reject;
+      })
+    },
+    buttonDone: () => {
+      this.addRemoteMNModal.hide();
+      this.addRemoteMNModal.resolve([
+        this.addRemoteMNModal.alias,
+        this.addRemoteMNModal.ip,
+        this.addRemoteMNModal.key,
+        this.addRemoteMNModal.txHash,
+        this.addRemoteMNModal.txIndex
+      ]);
+    },
+    buttonCancel: () => {
+      this.addRemoteMNModal.hide();
+      this.addRemoteMNModal.reject();
+    }
+  }
+
   constructor(
     private prompt: PromptService,
     private ngxModal: NgxSmartModalService
@@ -189,6 +229,7 @@ export class PromptComponent {
     prompt.changePassphrase = this.changePassphraseModal.show;
     prompt.encrypt = this.encryptModal.show;
     prompt.alert = this.alertModal.show;
+    prompt.addRemoteMasternode = this.addRemoteMNModal.show;
   }
 
 

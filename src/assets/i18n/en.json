@@ -82,11 +82,18 @@
             "IP": "IP",
             "ADDRESS": "Address",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Masternodes not enabled",
-            "NOTENABLEDINSTR": "To run a masternode you will need to enable masternodes by setting masternode=1 and configuring 'masternodeprivkey' and 'masternodeaddr' variables in your metrix.conf file.",
+            "NOMASTERNODES": "You don't have any masternodes",
+            "NOMNOUTPUTS": "No Masternode outputs found. To run a local Masternode send exactly 2,000,000 coins to your Masternode address and wait for 15 confirmations.",
             "STARTBUTTON": "Start Local",
+            "STOPBUTTON": "Stop Local",
             "STARTALIASBUTTON": "Start Alias",
-            "STARTALLBUTTON": "Start All"
+            "STOPALIASBUTTON": "Stop Alias",
+            "STARTALLBUTTON": "Start All",
+            "ADDREMOTE": "Add Remote Masternode",
+            "REMOVEMN": "Remove Masternode",
+            "ADDLOCAL": "Setup Local Masternode",
+            "DISABLELOCAL": "Disable Local Masternode",
+            "LOCALNOTRUNNING": "Local Masternode Not Running"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "There was a problem with Metrix Core that has caused it to terminate. It is recommend to check your debug.log file for issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf has an invalid masternode setup which will cause Metrix Core to exit immediately. Please check this file."
+            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf has an invalid masternode setup which will cause Metrix Core to exit immediately. Please check this file.",
+            "ADDREMOTEMNTITLE": "Add Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP:Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -370,6 +383,7 @@
         "WALLETENCRYPTING": "Encrypting wallet...",
         "CHANGINGPASSPHARASE": "Changing passphrase...",
         "STARTINGMASTERNODE": "Starting masternode...",
+        "STOPPINGMASTERNODE": "Stopping masternode...",
         "SENDINGTRANSACTION": "Sending transaction...",
         "SIGNINGMESSAGE": "Signing message...",
         "SIGNEDMESSAGE": "Message signed",
@@ -378,7 +392,10 @@
         "TRANSACTIONMISMATCH": "Transaction error. Please try again.",
         "TRANSACTIONOUTPUTTOOLARGE": "One of your pay to amounts is too large to safely send. Maximum is 90,071,992.54740992.",
         "TRANSACTIONCHANGETOOLARGE": "Your change is too large to safely send. Maximum is 90,071,992.54740992.",
-        "MINIMUMCONFIRMATIONS": "All inputs require at least 1 confirmation before spending."
+        "MINIMUMCONFIRMATIONS": "All inputs require at least 1 confirmation before spending.",
+        "FAILEDTOWRITECONFIG": "There was a problem writing to your metrix.conf file. Check the file exists and that Altitude has write permissions.",
+        "NOPUBLICUP": "No Public IP address found. Check your internet connection and restart Altitude.",
+        "CONFIGURINGLOCALMN": "Configuring local Masternode..."
     },
     "DESKTOPNOTIFICATIONS": {
         "NEWTRANSACTION_TITLE_RECEIVED": "Received Coins",

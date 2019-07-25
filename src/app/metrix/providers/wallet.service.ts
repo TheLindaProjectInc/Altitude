@@ -1,6 +1,5 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import Big from 'big.js';
-
 import { RPCMethods, RpcService } from './rpc.service';
 import Helpers from 'app/helpers';
 import { ElectronService } from 'app/providers/electron.service';
@@ -54,7 +53,7 @@ export class WalletService {
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.ACCOUNTS, fn: () => this.syncAccounts() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.STAKING, fn: () => this.syncStaking() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.LATESTBLOCK, fn: () => this.syncLatestBlock() },
-        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODE, fn: (dataSync) => this.getMasternodeInfo(dataSync) },
+        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODE, fn: () => this.getMasternodeInfo() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.TRANSACTIONS, fn: () => this.syncTransactions() },
         { timestamp: 0, interval: 10000, async: false, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODELIST, fn: () => this.getMasternodeList() },
         { timestamp: 0, interval: 10000, async: false, showLoading: false, running: false, name: DATASYNCTYPES.PEERSLIST, fn: () => this.getPeersList() },
@@ -156,7 +155,6 @@ export class WalletService {
         if (!this.running) {
             this.running = true;
             this.runSyncService();
-            this.syncConverstion();
         }
     }
 
@@ -345,9 +343,18 @@ export class WalletService {
             this.walletStatus.startupBlockTime = this.walletStatus.latestBlockTime;
     }
 
-    private async getMasternodeInfo(dataSync) {
+    private async getMasternodeInfo() {
         let data: any = await this.rpc.requestData(RPCMethods.MASTERNODESTATUS);
         this.masternode.setup = !data.initRequired;
+        this.masternode.outputs = data.outputs;
+        if (data.status[0]) {
+            this.masternode.running = data.status[0].activeseconds > 0;
+            this.masternode.activeseconds = data.status[0].activeseconds;
+            this.masternode.address = data.status[0].address;
+            this.masternode.lastTimeSeen = data.status[0].lastTimeSeen;
+            this.masternode.pubkey = data.status[0].pubkey;
+            this.masternode.status = data.status[0].status;
+        }
     }
 
     private async getMasternodeList() {
@@ -369,14 +376,6 @@ export class WalletService {
     private async getAddressBook() {
         let res = await this.rpc.requestData(RPCMethods.ADDRESSBOOKLIST);
         if (!res.error) this._addressBook = res
-    }
-
-    private syncConverstion() {
-        /* this.http.get(`https://api.coingecko.com/api/v3/coins/metrix`)
-            .subscribe((data: any) => {
-                this.market = new MarketData(data);
-            });
-        this.conversionSyncTimer = setTimeout(() => this.syncConverstion(), 1000 * 60 * 60) */
     }
     // end sync data
 
@@ -518,6 +517,20 @@ export class WalletService {
                 return this.rpc.requestData(RPCMethods.MASTERNODESTARTALIAS, params);
             case 'start-many':
                 return this.rpc.requestData(RPCMethods.MASTERNODESTARTMANY, params);
+            case 'addremote':
+                return this.rpc.requestData(RPCMethods.MASTERNODEADDREMOTE, params);
+            case 'removeremote':
+                return this.rpc.requestData(RPCMethods.MASTERNODEREMOVEREMOTE, params);
+            case 'init':
+                return this.rpc.requestData(RPCMethods.MASTERNODEINIT, params);
+            case 'genkey':
+                return this.rpc.requestData(RPCMethods.MASTERNODEGENKEY);
+            case 'kill':
+                return this.rpc.requestData(RPCMethods.MASTERNODEKILL);
+            case 'stop':
+                return this.rpc.requestData(RPCMethods.MASTERNODESTOP, params);
+            case 'stop-alias':
+                return this.rpc.requestData(RPCMethods.MASTERNODESTOPALIAS, params);
         }
     }
 

@@ -139,6 +139,27 @@ export class RpcService {
             case RPCMethods.MASTERNODELISTCONF:
                 data = await this.callServer("masternode", ['list-conf']);
                 break;
+            case RPCMethods.MASTERNODEADDREMOTE:
+                data = await this.callServer("masternode", ['addremote', ...params]);
+                break;
+            case RPCMethods.MASTERNODEREMOVEREMOTE:
+                data = await this.callServer("masternode", ['removeremote', ...params]);
+                break;
+            case RPCMethods.MASTERNODEINIT:
+                data = await this.callServer("masternode", ['init', ...params]);
+                break;
+            case RPCMethods.MASTERNODEGENKEY:
+                data = await this.callServer("masternode", ['genkey']);
+                break;
+            case RPCMethods.MASTERNODEKILL:
+                data = await this.callServer("masternode", ['kill']);
+                break;
+            case RPCMethods.MASTERNODESTOP:
+                data = await this.callServer("masternode", ['stop', ...params])
+                break;
+            case RPCMethods.MASTERNODESTOPALIAS:
+                data = await this.callServer("masternode", ['stop-alias', ...params])
+                break;
             case RPCMethods.SIGNMESSAGE:
                 data = await this.signMessage(params);
                 break;
@@ -474,9 +495,17 @@ export class RpcService {
     }
 
     private async masternodeStatus() {
-        // check initialised
+        // check initialised and get outputs
+        let outputs = {};
+        let status = [];
         let init: any = await this.callServer("masternode", ['isInit']);
-        return { result: { initRequired: !init.result } };
+        if (init.result) {
+            // get outputs
+            outputs = (await this.callServer("masternode", ['outputs']) as any).result;
+            // get status
+            status = (await this.callServer("masternode", ['status']) as any).result;
+        }
+        return { result: { initRequired: !init.result, outputs, status } };
     }
 
     public callServer(method, params = []) {
@@ -553,6 +582,13 @@ export enum RPCMethods {
     MASTERNODESTATUS,
     MASTERNODESTATUSALL,
     MASTERNODELISTCONF,
+    MASTERNODEADDREMOTE,
+    MASTERNODEREMOVEREMOTE,
+    MASTERNODEINIT,
+    MASTERNODEGENKEY,
+    MASTERNODEKILL,
+    MASTERNODESTOP,
+    MASTERNODESTOPALIAS,
     BACKUPWALLET,
     SIGNMESSAGE,
     VERIFYMESSAGE,

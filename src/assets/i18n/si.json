@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "ලිපිනය",
             "ENABLED": "සක්රීයයි",
-            "NOTENABLEDTITLE": "Masternodes සක්රීය කර නැත",
-            "NOTENABLEDINSTR": "Masternode මෙහෙයවීම සඳහා masternode = 1 සහ masternodeprivkey සහ masternodeaddr විචල්යයන් ඔබේ metrix.conf ගොනුවේ ස්ථාපනය කිරීමට අවශ්ය වනු ඇත.",
             "STARTBUTTON": "දේශීයව ආරම්භ කරන්න",
             "STARTALIASBUTTON": "ආරම්භ කරන්න අන්වර්ථය",
-            "STARTALLBUTTON": "සියල්ල ආරම්භ කරන්න"
+            "STARTALLBUTTON": "සියල්ල ආරම්භ කරන්න",
+            "NOMASTERNODES": "ඔබට කිසිදු මාස්ටර්නෝඩ් නොමැත",
+            "NOMNOUTPUTS": "මාස්ටර්නෝඩ් ප්‍රතිදානයන් හමු නොවීය. දේශීය මාස්ටර්නෝඩ් එකක් ධාවනය කිරීම සඳහා ඔබේ මාස්ටර්නෝඩ් ලිපිනයට හරියටම කාසි 2,000,000 ක් යවා තහවුරු කිරීම් 15 ක් සඳහා රැඳී සිටින්න.",
+            "STOPBUTTON": "දේශීයව නවත්වන්න",
+            "STOPALIASBUTTON": "අන්වර්ථය නවත්වන්න",
+            "ADDREMOTE": "දුරස්ථ මාස්ටර්නෝඩ් එක් කරන්න",
+            "REMOVEMN": "මාස්ටර්නෝඩ් ඉවත් කරන්න",
+            "ADDLOCAL": "දේශීය මාස්ටර්නෝඩ් සැකසීම",
+            "DISABLELOCAL": "දේශීය මාස්ටර්නෝඩ් අක්‍රීය කරන්න",
+            "LOCALNOTRUNNING": "දේශීය මාස්ටර්නෝඩ් ක්‍රියාත්මක නොවේ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "සංඥා පණිවිඩය",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ලින්ඩා Core සමඟ ඇති වූ ගැටළුවක් විය. ගැටළු සඳහා ඔබේ debug.log ගොනුව පිරික්සීමට නිර්දේශ කරනු ලැබේ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "අවලංගු metrix.conf මානකරනය",
-            "CLIENTINVALIDCONFIGINFO": "ඔබේ metrix.conf සතුව වැරදි මුරපදයක් තිබේ නම්, ලින්ඩා කේන්ද්රය වහාම පිටව යාමට ඉඩ ඇත. කරුණාකර මෙම ගොනුව පරික්ෂා කරන්න."
+            "CLIENTINVALIDCONFIGINFO": "ඔබේ metrix.conf සතුව වැරදි මුරපදයක් තිබේ නම්, ලින්ඩා කේන්ද්රය වහාම පිටව යාමට ඉඩ ඇත. කරුණාකර මෙම ගොනුව පරික්ෂා කරන්න.",
+            "ADDREMOTEMNTITLE": "දුරස්ථ මාස්ටර්නෝඩ් එක් කරන්න",
+            "ADDREMOTEMNALIAS": "මාස්ටර්නෝඩ් අන්වර්ථය",
+            "ADDREMOTEMNIP": "මාස්ටර්නෝඩ් අයිපී: වරාය",
+            "ADDREMOTEMNKEY": "මාස්ටර්නෝඩ් පුද්ගලික යතුර",
+            "ADDREMOTEMNTXHASH": "මාස්ටර්නෝඩ් ට්‍රක්ස් හැෂ්",
+            "ADDREMOTEMNTXINDEX": "Masterode Trx දර්ශකය"
         },
         "ADDRESSBOOK": {
             "TITLE": "ලිපින පොත",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "සියලු යෙදවුම් සඳහා වියදම් කිරීමට පෙර අවම වශයෙන් 1 තහවුරු කිරීමක් අවශ්ය වේ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "අලුත්වැඩියා වීම් පසුරුපත්රයේ පිටපත් කර ඇත",
         "TRANSACTIONOUTPUTTOOLARGE": "ආරක්ෂිතව යැවීමට ප්රමාණවත් මුදලක් ප්රමාණවත් ය. උපරිමය 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "ආරක්ෂිතව යැවීමට ඔබගේ වෙනස් කිරීම විශාල වේ. උපරිමය 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "ආරක්ෂිතව යැවීමට ඔබගේ වෙනස් කිරීම විශාල වේ. උපරිමය 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "මාස්ටර්නෝඩ් නතර කිරීම...",
+        "FAILEDTOWRITECONFIG": "ඔබගේ metrix.conf ගොනුවට ලිවීමේ ගැටලුවක් විය. ගොනුව පවතින බවත් උන්නතාංශයට ලිඛිත අවසර ඇති බවත් පරීක්ෂා කරන්න.",
+        "NOPUBLICUP": "පොදු IP ලිපිනයක් හමු නොවීය. ඔබගේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කර උන්නතාංශය නැවත ආරම්භ කරන්න.",
+        "CONFIGURINGLOCALMN": "දේශීය මාස්ටර්නෝඩ් වින්‍යාස කිරීම..."
     },
     "TIME": {
         "AFEWSECONDS": "තත්පර කීපයක්",

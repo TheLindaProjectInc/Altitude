@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adresse",
             "ENABLED": "Activée",
-            "NOTENABLEDTITLE": "Masternodes non activé",
-            "NOTENABLEDINSTR": "Pour exécuter un masternode, vous devez l'activer en définissant masternode = 1 et en configurant les variables 'masternodeprivkey' et 'masternodeaddr' dans votre fichier metrix.conf.",
             "STARTBUTTON": "Démarrer local",
             "STARTALIASBUTTON": "Alias ​​de départ",
-            "STARTALLBUTTON": "Tout commencer"
+            "STARTALLBUTTON": "Tout commencer",
+            "NOMASTERNODES": "Vous n'avez pas de masternodes",
+            "NOMNOUTPUTS": "Aucune sortie Masternode trouvée. Pour exécuter un Masternode local, envoyez exactement 2 000 000 de pièces à votre adresse Masternode et attendez 15 confirmations.",
+            "STOPBUTTON": "Arrêter Local",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Ajouter un masternode distant",
+            "REMOVEMN": "Supprimer le masternode",
+            "ADDLOCAL": "Configurer le masternode local",
+            "DISABLELOCAL": "Désactiver le masternode local",
+            "LOCALNOTRUNNING": "Masternode local ne fonctionne pas"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Message de signe",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Il y avait un problème avec Metrix Core qui l'a amené à se terminer. Il est recommandé de rechercher des problèmes dans votre fichier debug.log.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Redémarrer le client",
             "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf non valide",
-            "CLIENTINVALIDCONFIGINFO": "Votre fichier metrix.conf a une configuration de masternode non valide qui entraînera la fermeture immédiate de Metrix Core. Veuillez vérifier ce fichier."
+            "CLIENTINVALIDCONFIGINFO": "Votre fichier metrix.conf a une configuration de masternode non valide qui entraînera la fermeture immédiate de Metrix Core. Veuillez vérifier ce fichier.",
+            "ADDREMOTEMNTITLE": "Ajouter un masternode distant",
+            "ADDREMOTEMNALIAS": "Alias Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Clé privée Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Carnet d'adresses",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Toutes les entrées nécessitent au moins une confirmation avant d’être dépensées.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copiées dans le presse-papiers",
         "TRANSACTIONOUTPUTTOOLARGE": "L’un de vos montants est trop important pour pouvoir être envoyé en toute sécurité. Le maximum est 90 071 992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Votre changement est trop volumineux pour être envoyé en toute sécurité. Le maximum est 90 071 992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Votre changement est trop volumineux pour être envoyé en toute sécurité. Le maximum est 90 071 992,54740992.",
+        "STOPPINGMASTERNODE": "Arrêt du masternode...",
+        "FAILEDTOWRITECONFIG": "Un problème est survenu lors de l'écriture dans votre fichier metrix.conf. Vérifiez que le fichier existe et qu'Altitude dispose des autorisations d'écriture.",
+        "NOPUBLICUP": "Aucune adresse IP publique trouvée. Vérifiez votre connexion Internet et redémarrez Altitude.",
+        "CONFIGURINGLOCALMN": "Configuration du masternode local..."
     },
     "TIME": {
         "AFEWSECONDS": "Quelques secondes",

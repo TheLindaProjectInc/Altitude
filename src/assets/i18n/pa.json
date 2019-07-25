@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "ਪਤਾ",
             "ENABLED": "ਸਮਰਥਿਤ",
-            "NOTENABLEDTITLE": "ਮਾਸਟਰੋਡਸ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ",
-            "NOTENABLEDINSTR": "ਮਾਸਰਨੌਂਡ ਚਲਾਉਣ ਲਈ ਤੁਹਾਨੂੰ ਮਾਸਟਰੋਡ = 1 ਸੈਟ ਕਰਕੇ ਅਤੇ 'ਲੌਂਡਾ.ਕੌਂਫ ਫਾਈਲ' ਵਿਚ 'ਮਾਸਟਰੋਡਪਿੱਛੇਕ' ਅਤੇ 'ਮੈਸਨੋਡੀਏਡਿਦ' ਵੇਰੀਬਲ ਦੀ ਸੰਰਚਨਾ ਕਰਕੇ ਮਾਧਿਅਮ ਬਣਾਉਣਾ ਪਵੇਗਾ.",
             "STARTBUTTON": "ਲੋਕਲ ਸ਼ੁਰੂ ਕਰੋ",
             "STARTALIASBUTTON": "ਉਪਨਾਮ ਸ਼ੁਰੂ ਕਰੋ",
-            "STARTALLBUTTON": "ਸਭ ਸ਼ੁਰੂ ਕਰੋ"
+            "STARTALLBUTTON": "ਸਭ ਸ਼ੁਰੂ ਕਰੋ",
+            "NOMASTERNODES": "ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ masternodes ਨਹੀਂ ਹੈ",
+            "NOMNOUTPUTS": "ਕੋਈ ਮਾਸਟਰੋਡ ਆਉਟਪੁਟ ਨਹੀਂ ਮਿਲਿਆ. ਇੱਕ ਸਥਾਨਕ ਮਸਰਟਨੋਡ ਨੂੰ ਚਲਾਉਣ ਲਈ ਤੁਹਾਡੇ ਮਾਸਟਰੋਡੇਅ ਐਡਰੈਸ ਨੂੰ 2,000,000 ਸਿੱਕੇ ਭੇਜੋ ਅਤੇ 15 ਪੁਸ਼ਟੀਕਰਨ ਦੀ ਉਡੀਕ ਕਰੋ.",
+            "STOPBUTTON": "ਸਥਾਨਕ ਰੋਕੋ",
+            "STOPALIASBUTTON": "ਉਪਨਾਮ ਰੋਕੋ",
+            "ADDREMOTE": "ਰਿਮੋਟ ਮਾਸਟਰੋਡ ਜੋੜੋ",
+            "REMOVEMN": "ਮਾਸਟਰੋਡ ਹਟਾਓ",
+            "ADDLOCAL": "ਸਥਾਨਕ ਮਾਸਟਰੋਡ ਸੈੱਟਅੱਪ ਕਰੋ",
+            "DISABLELOCAL": "ਸਥਾਨਕ ਮਾਸਟਰੋਡ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾਓ",
+            "LOCALNOTRUNNING": "ਸਥਾਨਕ ਮਾਸਟਰੋਡੇਨ ਚੱਲ ਨਹੀਂ ਰਿਹਾ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "ਸਾਈਨ ਸੁਨੇਹਾ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ਲਿਂਡਾ ਕੋਰ ਨਾਲ ਸਮੱਸਿਆ ਆਈ ਹੈ ਜਿਸ ਨੇ ਇਸ ਨੂੰ ਖਤਮ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰ ਦਿੱਤਾ ਹੈ. ਇਹ ਮੁਆਫੀਆਂ ਲਈ ਆਪਣੀ debug.log ਫਾਇਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਹੈ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ਕਲਾਇੰਟ ਮੁੜ ਚਾਲੂ ਕਰੋ",
             "CLIENTINVALIDCONFIGTITLE": "ਗਲਤ metrix.conf ਸੰਰਚਨਾ",
-            "CLIENTINVALIDCONFIGINFO": "ਤੁਹਾਡੀ metrix.conf ਇੱਕ ਗਲਤ masternode ਸੈਟਅੱਪ ਹੈ ਜਿਸ ਨਾਲ ਲਿੰਡਾ ਕੋਰ ਤੁਰੰਤ ਬੰਦ ਹੋ ਜਾਵੇਗਾ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰੋ."
+            "CLIENTINVALIDCONFIGINFO": "ਤੁਹਾਡੀ metrix.conf ਇੱਕ ਗਲਤ masternode ਸੈਟਅੱਪ ਹੈ ਜਿਸ ਨਾਲ ਲਿੰਡਾ ਕੋਰ ਤੁਰੰਤ ਬੰਦ ਹੋ ਜਾਵੇਗਾ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰੋ.",
+            "ADDREMOTEMNTITLE": "ਰਿਮੋਟ ਮਾਸਟਰੋਡ ਜੋੜੋ",
+            "ADDREMOTEMNALIAS": "ਮਾਸਟਰੋਡੇ ਏਲੀਅਸ",
+            "ADDREMOTEMNIP": "ਮਾਸਟਰੋਡ ਆਈਪੀ: ਪੋਰਟ",
+            "ADDREMOTEMNKEY": "ਮਾਸਟਰੋਡ ਪ੍ਰਾਈਵੇਟ ਕੁੰਜੀ",
+            "ADDREMOTEMNTXHASH": "ਮਾਸਟਰੋਡ ਟ੍ਰੈਕਸ ਹੈਸ਼",
+            "ADDREMOTEMNTXINDEX": "ਮਾਸਟਰੋਡ ਟ੍ਰੈਕਸ ਇੰਡੈਕਸ"
         },
         "ADDRESSBOOK": {
             "TITLE": "ਐਡਰੈੱਸ ਬੁੱਕ",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "ਖਰਚ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਸਭ ਚੀਜ਼ਾਂ ਲਈ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਪੁਸ਼ਟੀ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ",
         "TRANSACTIONOUTPUTTOOLARGE": "ਰਕਮ ਦੀ ਤੁਹਾਡੀ ਤਨਖਾਹ ਵਿੱਚੋਂ ਇਕ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਭੇਜਣ ਲਈ ਬਹੁਤ ਵੱਡਾ ਹੈ ਅਧਿਕਤਮ 90,071,992.54740992 ਹੈ",
-        "TRANSACTIONCHANGETOOLARGE": "ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਭੇਜਣ ਲਈ ਤੁਹਾਡਾ ਬਦਲਾਵ ਬਹੁਤ ਵੱਡਾ ਹੈ ਅਧਿਕਤਮ 90,071,992.54740992 ਹੈ"
+        "TRANSACTIONCHANGETOOLARGE": "ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਭੇਜਣ ਲਈ ਤੁਹਾਡਾ ਬਦਲਾਵ ਬਹੁਤ ਵੱਡਾ ਹੈ ਅਧਿਕਤਮ 90,071,992.54740992 ਹੈ",
+        "STOPPINGMASTERNODE": "ਮਾਸਟਰੋਡ ਨੂੰ ਰੋਕ ਰਿਹਾ ਹੈ...",
+        "FAILEDTOWRITECONFIG": "ਤੁਹਾਡੀ metrix.conf ਫਾਇਲ ਨੂੰ ਲਿਖਣ ਵਿੱਚ ਇੱਕ ਸਮੱਸਿਆ ਸੀ. ਜਾਂਚ ਕਰੋ ਕਿ ਫਾਇਲ ਮੌਜੂਦ ਹੈ ਅਤੇ ਆੱਟਟਾਈਟਟ ਵਿੱਚ ਲਿਖਣ ਅਧਿਕਾਰ ਹਨ.",
+        "NOPUBLICUP": "ਕੋਈ ਪਬਲਿਕ IP ਪਤਾ ਨਹੀਂ ਮਿਲਿਆ ਆਪਣੇ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਉਚਾਈ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ.",
+        "CONFIGURINGLOCALMN": "ਸਥਾਨਕ ਮਾਸਟਰੋਡ ਨੂੰ ਕੌਂਫਿਗਰ ਕਰ ਰਿਹਾ ਹੈ..."
     },
     "TIME": {
         "AFEWSECONDS": "ਕੁਝ ਸਕਿੰਟ",

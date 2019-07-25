@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Naslov",
             "ENABLED": "Omogočeno",
-            "NOTENABLEDTITLE": "Masternode niso omogočene",
-            "NOTENABLEDINSTR": "Če želite zagnati masternode, boste morali omogočiti masternodes z nastavitvijo masternode = 1 in nastavitvijo spremenljivk 'masternodeprivkey' in 'masternodeaddr' v datoteki metrix.conf.",
             "STARTBUTTON": "Začni lokalno",
             "STARTALIASBUTTON": "Začnite vzdevke",
-            "STARTALLBUTTON": "Začni vse"
+            "STARTALLBUTTON": "Začni vse",
+            "NOMASTERNODES": "Nimate nobenih masternodes",
+            "NOMNOUTPUTS": "Najden ni bil noben izhod Masternode. Če želite zagnati lokalno Masternode, pošljete natanko 2.000.000 kovancev na vaš naslov Masternode in počakajte na 15 potrditev.",
+            "STOPBUTTON": "Ustavi lokalno",
+            "STOPALIASBUTTON": "Ustavite Alias",
+            "ADDREMOTE": "Dodaj oddaljeno masternode",
+            "REMOVEMN": "Odstrani Masternode",
+            "ADDLOCAL": "Nastavite Local Masternode",
+            "DISABLELOCAL": "Onemogoči lokalno masternode",
+            "LOCALNOTRUNNING": "Lokalna masternode ne teče"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Podpiši sporočilo",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pri Metrix Coreju je prišlo do težave, zaradi česar je prenehal. Priporočamo, da preverite datoteko debug.log za težave.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ponovno zaženite odjemalca",
             "CLIENTINVALIDCONFIGTITLE": "Neveljavna konfiguracija metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima neveljavno nastavitev masternode, ki bo povzročila, da bo Metrix Core takoj zapustil. Preverite to datoteko."
+            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima neveljavno nastavitev masternode, ki bo povzročila, da bo Metrix Core takoj zapustil. Preverite to datoteko.",
+            "ADDREMOTEMNTITLE": "Dodaj oddaljeno masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Vrata",
+            "ADDREMOTEMNKEY": "Masternode zasebni ključ",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Imenik",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Vsi vložki zahtevajo vsaj eno potrditev pred porabo.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcije, kopirane v odložišče",
         "TRANSACTIONOUTPUTTOOLARGE": "Ena od vaših plačil za zneske je prevelika za varno pošiljanje. Največja je 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Vaša sprememba je prevelika za varno pošiljanje. Največja je 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Vaša sprememba je prevelika za varno pošiljanje. Največja je 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Ustavitev masternode...",
+        "FAILEDTOWRITECONFIG": "Pri pisanju v datoteko metrix.conf je prišlo do težave. Preverite, ali datoteka obstaja in da ima Altitude dovoljenja za pisanje.",
+        "NOPUBLICUP": "Ni najdenega javnega naslova IP. Preverite internetno povezavo in znova zaženite Altitude.",
+        "CONFIGURINGLOCALMN": "Konfiguriranje lokalne Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Nekaj sekund",

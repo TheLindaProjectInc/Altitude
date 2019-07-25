@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adress",
             "ENABLED": "Aktivéiert",
-            "NOTENABLEDTITLE": "Masternoden net aktivéiert",
-            "NOTENABLEDINSTR": "Fir eng Masternode ze maache musst Dir Maschinnen erstallt hunn, andeems se masternode = 1 festleet an déi Variablen \"masternodeprivkey\" an \"masternodeaddr\" an Ärer metrix.conf-Datei konfiguréieren.",
             "STARTBUTTON": "Start Lokal",
             "STARTALIASBUTTON": "Start Alias benotzen",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "Dir hutt keng Masternoden",
+            "NOMNOUTPUTS": "Keng Masternode Ausgabe fonnt. Fir e lokalen Masternode auszeféieren, schéckt exakt 2.000.000 Mënzen op Är Masternode Adress a waart op 15 Confirmatioune.",
+            "STOPBUTTON": "Stop Lokal",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Füügt Remote Masternode",
+            "REMOVEMN": "De Masternode erofhuelen",
+            "ADDLOCAL": "Setzt Lokal Masternode",
+            "DISABLELOCAL": "Lokal Masternode auszeschalten",
+            "LOCALNOTRUNNING": "Lokal Masternode Net Lafen"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sende Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Et war e Problem mam Metrix Core, dat huet et verlooss. Et ass recommandéiert fir Är Debug.log Datei fir Froen ze kontrolléieren.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "De Client klickt weider",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Konfiguratioun",
-            "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternoden-Setup, déi d'Metrix Core fir direkt beherrschen. Kuckt dës Datei op."
+            "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternoden-Setup, déi d'Metrix Core fir direkt beherrschen. Kuckt dës Datei op.",
+            "ADDREMOTEMNTITLE": "Füügt Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "All Inputen brauchen op d'mannst 1 Bestätigung virum Budget.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiounen déi an de Klemmte kopéiert sinn",
         "TRANSACTIONOUTPUTTOOLARGE": "Eent vun Ärem Bezuelnis fir Quantitéiten ass ze grouss, fir séch ze schécken. Maximum ass 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Är Ännerung ass ze grouss, fir séch ze schécken. Maximum ass 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Är Ännerung ass ze grouss, fir séch ze schécken. Maximum ass 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Stoppen Masternode...",
+        "FAILEDTOWRITECONFIG": "Et gouf e Problem fir Är Metrix.conf Datei ze schreiwen. Préift de Fichier existéiert an datt Altitude Schreiwe Permisiounen huet.",
+        "NOPUBLICUP": "Keng Ëffentlech IP Adress fonnt. Préift Är Internetverbindung a restart Altitude.",
+        "CONFIGURINGLOCALMN": "Lokal Masternode konfiguréieren..."
     },
     "TIME": {
         "AFEWSECONDS": "E puer Sekonnen",

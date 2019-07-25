@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Address",
             "ENABLED": "Maagwanta",
-            "NOTENABLEDTITLE": "Ang mga Masternodes wala makahimo",
-            "NOTENABLEDINSTR": "Sa pagpadagan sa masternode gikinahanglan nimo ang paghimo sa masternodes pinaagi sa paghimo sa masternode = 1 ug pag-configure sa mga 'masternodeprivkey' ug 'masternodeaddr' nga mga kapilian sa imong metrix.conf file.",
             "STARTBUTTON": "Pagsugod sa Lokal",
             "STARTALIASBUTTON": "Pagsugod Alias",
-            "STARTALLBUTTON": "Sugdi ang Tanan"
+            "STARTALLBUTTON": "Sugdi ang Tanan",
+            "NOMASTERNODES": "Wala ka'y masternodes",
+            "NOMNOUTPUTS": "Walay masugatan nga Masternode. Ang pagdumala sa usa ka lokal nga Masternode magpadala sa eksaktong 2,000,000 nga mga sensilyo sa imong address sa Masternode ug maghulat alang sa 15 nga pagkumpirma.",
+            "STOPBUTTON": "Hunong sa Lokal",
+            "STOPALIASBUTTON": "Mohunong Alias",
+            "ADDREMOTE": "Pagdugang sa Remote Masternode",
+            "REMOVEMN": "Kuhaa ang Masternode",
+            "ADDLOCAL": "Pagpahimutang sa Lokal nga Masternode",
+            "DISABLELOCAL": "Paglikay sa Lokal nga Masternode",
+            "LOCALNOTRUNNING": "Ang Lokal nga Masternode Dili Pagpadagan"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Pagsulat sa Mensahe",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Metrix Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Pagsugod sa Client",
             "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file."
+            "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file.",
+            "ADDREMOTEMNTITLE": "Pagdugang sa Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ang tanan nga mga input nagkinahanglan labing menos usa ka kumpirmasyon sa dili pa mogasto.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Mga transaksyon nga gikopya sa clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Usa sa imong suweldo sa kantidad dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ang imong pagbag-o dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ang imong pagbag-o dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Paghunong sa masternode...",
+        "FAILEDTOWRITECONFIG": "Adunay problema pagsulat sa imong metrix.conf file. Susiha ang file nga anaa ug nga ang Altitude adunay mga permiso sa pagsulat.",
+        "NOPUBLICUP": "Walay IP Address sa IP. Susiha ang imong koneksyon sa internet ug i-restart ang Altitude.",
+        "CONFIGURINGLOCALMN": "Pag-configure sa lokal nga Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Pipila ka segundo",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adireshin",
             "ENABLED": "An kunna",
-            "NOTENABLEDTITLE": "Masternodes ba a kunna ba",
-            "NOTENABLEDINSTR": "Don gudanar da masternode za ku buƙaci kunna masternodes ta hanyar kafa masternode = 1 da kuma kirgarar 'masternodeprivkey' da 'masternodeaddr' a cikin rukunin metrix.conf.",
             "STARTBUTTON": "Fara yankin",
             "STARTALIASBUTTON": "Fara Alias",
-            "STARTALLBUTTON": "Fara Duk"
+            "STARTALLBUTTON": "Fara Duk",
+            "NOMASTERNODES": "Ba ku da wani masternodes",
+            "NOMNOUTPUTS": "Ba'a sami Masabayanba ba. Don gudanar da Masternode na gida aika tsabar tsabar kudi 2,000,000 zuwa adireshin Masternode ku jira tabbacin 15.",
+            "STOPBUTTON": "Dakatar da Yanki",
+            "STOPALIASBUTTON": "Dakatar da sunan",
+            "ADDREMOTE": "Sanya Maballin Nesa",
+            "REMOVEMN": "Cire Masternode",
+            "ADDLOCAL": "Saita Masallacin Gida",
+            "DISABLELOCAL": "Kashe Masallacin Gida",
+            "LOCALNOTRUNNING": "Masternode na gida Ba Gudun ba"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sanya Saƙo",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Akwai matsala tare da Metrix Core wanda ya sa shi ya ƙare. Yana da shawarar don duba fayil din debug.log don al'amurra.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Sake kunna Mutumin",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Kanada Kanada",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf naka yana da saiti mara kyau wanda zai sa Metrix Core ya fita nan da nan. Da fatan a duba wannan fayil."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf naka yana da saiti mara kyau wanda zai sa Metrix Core ya fita nan da nan. Da fatan a duba wannan fayil.",
+            "ADDREMOTEMNTITLE": "Sanya Maballin Nesa",
+            "ADDREMOTEMNALIAS": "Masternode sunan Alias",
+            "ADDREMOTEMNIP": "IP na Masternode: tashar jiragen ruwa",
+            "ADDREMOTEMNKEY": "Maɓallin Keɓaɓɓu na Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Index na Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Littafin adireshi",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Dukkan bayanai suna buƙatar akalla 1 tabbaci kafin jawabin.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ayyukan da aka kwafe zuwa takarda",
         "TRANSACTIONOUTPUTTOOLARGE": "Ɗaya daga cikin kuɗin kuɗin zuwa yawa yana da yawa don aika sako lafiya. Yawanci shine 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Yawan canji ya yi girma da yawa don aika sako lafiya. Yawanci shine 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Yawan canji ya yi girma da yawa don aika sako lafiya. Yawanci shine 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Dakatar da",
+        "FAILEDTOWRITECONFIG": "An sami matsala wajen rubuta fayil ɗin metrix.conf ɗinku. Duba fayil ɗin yana wanzu kuma Altitude yana da izini na izini.",
+        "NOPUBLICUP": "Ba a sami adireshin IP na Jama'a ba. Duba haɗin intanet ɗin ka kuma sake kunna Altitude.",
+        "CONFIGURINGLOCALMN": "Harhadawa Masternode na gida..."
     },
     "TIME": {
         "AFEWSECONDS": "Bayan 'yan kaɗan",

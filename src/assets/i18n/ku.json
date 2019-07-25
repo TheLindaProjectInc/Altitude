@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Navnîşan",
             "ENABLED": "Vekirî",
-            "NOTENABLEDTITLE": "Masternodes ne çalak kirin",
-            "NOTENABLEDINSTR": "Ji bo ku hûn modeode bisekinin, hûn ê hewceyê ku mîhengên masternode = 1 û mîhengkirina 'masternodeprivkey' û 'masternodeaddr' guherînên li pelê metrix.conf bikar bîne.",
             "STARTBUTTON": "Niştecîh bikin",
             "STARTALIASBUTTON": "Destûra Alias",
-            "STARTALLBUTTON": "Destpêk Dest"
+            "STARTALLBUTTON": "Destpêk Dest",
+            "NOMASTERNODES": "Hûn ne moryod hene",
+            "NOMNOUTPUTS": "No outputs Mountode found. Ji bo ku Mownode ya herêmî vebikin, bi şikrek 2,000,000 cinsê navnîşana navnîşana Masternode bişînin û paşnavên 15 bisekinin.",
+            "STOPBUTTON": "Niştecîh bikin",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Mountode Remote",
+            "REMOVEMN": "Modeode jêbirin",
+            "ADDLOCAL": "Setup Local Modeode",
+            "DISABLELOCAL": "Modeode Local",
+            "LOCALNOTRUNNING": "Local Modeode Not Running"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Peyama Şîfre",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Metrix Korek bû ku ji bo winda kirin. Ew pêşniyaz dike ku pelên debug .logê kontrol bikin.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Vebijêrk Client",
             "CLIENTINVALIDCONFIGTITLE": "Guhertina metrix.conf çewt",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin.",
+            "ADDREMOTEMNTITLE": "Mountode Remote",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Modeode IP: Port",
+            "ADDREMOTEMNKEY": "Key Key",
+            "ADDREMOTEMNTXHASH": "Trx Hash Modeode",
+            "ADDREMOTEMNTXINDEX": "Index Trx Modeode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Navnîşana Navnîşan",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Hemû agahiyên ku ji ber mesrefên herî kêm 1 pejirandinê hewce ne.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Veguhastin veguherandin clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Yek ji perê we ji hêla veguhastina pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Guhertina te pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Guhertina te pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Moppingode...",
+        "FAILEDTOWRITECONFIG": "Vê pelê pirsgirêkek metrix.conf heye. Vê pelê binivîse û hebûna Altitude destûrnameyan nivîsî.",
+        "NOPUBLICUP": "Navnîşana IP-ê nehatiye dîtin. Têkiliya înternetê kontrol bikin û Altitude dîsa vekin.",
+        "CONFIGURINGLOCALMN": "Mîhodehekî herêmî damezirandin..."
     },
     "TIME": {
         "AFEWSECONDS": "Hin çend sêl",

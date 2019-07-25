@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Indirizzu",
             "ENABLED": "Habilita",
-            "NOTENABLEDTITLE": "Masternodes ùn attivate micca",
-            "NOTENABLEDINSTR": "Per run un masternode avete bisognu di attivà l'espurtazioni di l'usu di l'usu di l'espurtazione di l'espurtazione di l'espurtazione.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Start Alias",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "Ùn avete micca manternodes",
+            "NOMNOUTPUTS": "Ùn truvatu micca uscite Masternode. Per fà un Masternode lucale spedite esattamente 2,000,000 muniti à u vostru indirizzu Masternode è aspettate 15 conferme.",
+            "STOPBUTTON": "Stop Local",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Aghjunghje Masternode Remoto",
+            "REMOVEMN": "Rimuovi Masternode",
+            "ADDLOCAL": "Installazione Locale Masternode",
+            "DISABLELOCAL": "Disattiva u Masternode Locale",
+            "LOCALNOTRUNNING": "Locu Masternode Non Fucili"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè un prublema cù Metrix Core chì hà causatu à finisce. Hè ricumandemu à verificà u vostru file debug.log per issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf invàlida",
-            "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu."
+            "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu.",
+            "ADDREMOTEMNTITLE": "Aghjunghje Masternode Remoto",
+            "ADDREMOTEMNALIAS": "Alterni Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Chiave Privata Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indice Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Tutte e inputs necessanu almenu 1 cunferma prima di gastru.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "E transaccii copiati à u portali",
         "TRANSACTIONOUTPUTTOOLARGE": "Unu di a vostra pagari a quantità ùn hè troppu grande per sguassà. Massimi hè 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "U vostru cambiamentu hè troppu grande per sguassà mandà. Massimi hè 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "U vostru cambiamentu hè troppu grande per sguassà mandà. Massimi hè 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Cessendu masternode...",
+        "FAILEDTOWRITECONFIG": "Ci era un problema à scrive in u vostru file metrix.conf. Verificate chì u schedariu esiste è chì Altitudine hà permessi di scrittura.",
+        "NOPUBLICUP": "Ùn hè micca scuppatu u indirizzu IP pubblicu. Verificate a vostra cunnessione internet è ripartite Altitudine.",
+        "CONFIGURINGLOCALMN": "Configurazione di u Masternode locale..."
     },
     "TIME": {
         "AFEWSECONDS": "Qualchì siconda",

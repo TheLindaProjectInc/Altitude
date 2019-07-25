@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "អាសយដ្ឋាន",
             "ENABLED": "បានបើក",
-            "NOTENABLEDTITLE": "Masternodes មិនត្រូវបានបើកទេ",
-            "NOTENABLEDINSTR": "ដើម្បីដំណើរការ masternode អ្នកនឹងត្រូវបើកដំណើរការ masternodes ដោយកំណត់ masternode = 1 និងកំណត់រចនាសម្ព័ន្ធអថេរ 'masternodeprivkey' និង 'masternodeaddr' នៅក្នុងឯកសារ metrix.conf របស់អ្នក។",
             "STARTBUTTON": "ចាប់ផ្ដើមមូលដ្ឋាន",
             "STARTALIASBUTTON": "ចាប់ផ្ដើមឈ្មោះក្លែងក្លាយ",
-            "STARTALLBUTTON": "ចាប់ផ្តើមទាំងអស់"
+            "STARTALLBUTTON": "ចាប់ផ្តើមទាំងអស់",
+            "NOMASTERNODES": "អ្នកមិនមានម៉ាសាតទេ",
+            "NOMNOUTPUTS": "រកមិនឃើញលទ្ធផល Masternode ។ ដើម្បីដំណើរការ Masternode ក្នុងតំបន់សូមផ្ញើរលុយយ៉ាងហោចណាស់ 2000,000 កាក់ទៅអាសយដ្ឋាន Masternode របស់អ្នកហើយរង់ចាំការអះអាងចំនួន 15 ។",
+            "STOPBUTTON": "បញ្ឈប់មូលដ្ឋាន",
+            "STOPALIASBUTTON": "បញ្ឈប់ឈ្មោះក្លែងក្លាយ",
+            "ADDREMOTE": "បន្ថែមលេខកូដសម្ងាត់ពីចម្ងាយ",
+            "REMOVEMN": "យក Masternode",
+            "ADDLOCAL": "រៀបចំតំបន់មេន",
+            "DISABLELOCAL": "បិទដំណើរការគេហទំព័រមេន",
+            "LOCALNOTRUNNING": "តំបន់ក្រៅផ្លូវការមិនដំណើរការទេ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "ចុះហត្ថលេខាសារ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "មានបញ្ហាជាមួយ Metrix Core ដែលបណ្តាលឱ្យវាបញ្ចប់។ វាត្រូវបានណែនាំឱ្យពិនិត្យមើលឯកសារបំបាត់កំហុសរបស់អ្នកសម្រាប់បញ្ហា។",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ចាប់ផ្ដើមម៉ាស៊ីនភ្ញៀវឡើងវិញ",
             "CLIENTINVALIDCONFIGTITLE": "ការកំណត់រចនាសម្ព័ន្ធ metrix.conf មិនត្រឹមត្រូវ",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf របស់អ្នកមានការរៀបចំម៉ាសាណែតមិនត្រឹមត្រូវដែលនឹងធ្វើអោយ Metrix Core ចាកចេញភ្លាមៗ។ សូមពិនិត្យមើលឯកសារនេះ។"
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf របស់អ្នកមានការរៀបចំម៉ាសាណែតមិនត្រឹមត្រូវដែលនឹងធ្វើអោយ Metrix Core ចាកចេញភ្លាមៗ។ សូមពិនិត្យមើលឯកសារនេះ។",
+            "ADDREMOTEMNTITLE": "បន្ថែមលេខកូដសម្ងាត់ពីចម្ងាយ",
+            "ADDREMOTEMNALIAS": "ឈ្មោះក្លែងក្លាយ",
+            "ADDREMOTEMNIP": "IP Masternode: ច្រក",
+            "ADDREMOTEMNKEY": "សោឯកជន Masternode",
+            "ADDREMOTEMNTXHASH": "ម៉ាសស្ទីសហាស",
+            "ADDREMOTEMNTXINDEX": "សន្ទស្សន៍ Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "សៀវភៅ​អាស័យ​ដ្ឋាន",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "ធាតុចូលទាំងអស់តម្រូវឱ្យមានការបញ្ជាក់យ៉ាងហោចណាស់ 1 មុននឹងចំណាយ។",
         "TRANSACTIONSCOPIEDCLIPBOARD": "កិច្ចការបានចម្លងទៅក្ដារតម្បៀតខ្ទាស់",
         "TRANSACTIONOUTPUTTOOLARGE": "មួយក្នុងចំនោមប្រាក់ខែរបស់អ្នកដល់ចំនួនទឹកប្រាក់ធំពេកមិនអាចផ្ញើរបានទេ។ អតិបរមាគឺ 90,071,992,54740992 ។",
-        "TRANSACTIONCHANGETOOLARGE": "ការផ្លាស់ប្តូររបស់អ្នកមានទំហំធំពេកដើម្បីបញ្ជូនដោយសុវត្ថិភាព។ អតិបរមាគឺ 90,071,992,54740992 ។"
+        "TRANSACTIONCHANGETOOLARGE": "ការផ្លាស់ប្តូររបស់អ្នកមានទំហំធំពេកដើម្បីបញ្ជូនដោយសុវត្ថិភាព។ អតិបរមាគឺ 90,071,992,54740992 ។",
+        "STOPPINGMASTERNODE": "កំពុងបញ្ឈប់ការផ្សំ...",
+        "FAILEDTOWRITECONFIG": "មានបញ្ហាក្នុងការសរសេរទៅឯកសារ metrix.conf របស់អ្នក។ ពិនិត្យមើលឯកសារហើយ Altitude មានសិទ្ធិសរសេរ។",
+        "NOPUBLICUP": "រកមិនឃើញអាសយដ្ឋាន IP សាធារណៈ។ ពិនិត្យមើលការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នកនិងចាប់ផ្តើមឡើងវិញនូវកម្ពស់។",
+        "CONFIGURINGLOCALMN": "កំពុងកំណត់រចនាសម្ព័ន្ធ Masternode មូលដ្ឋាន..."
     },
     "TIME": {
         "AFEWSECONDS": "ប៉ុន្មានវិនាទី",

@@ -68,11 +68,18 @@
             "IP": "આઇપી",
             "ADDRESS": "સરનામું",
             "ENABLED": "સક્ષમ",
-            "NOTENABLEDTITLE": "Masternodes સક્ષમ નથી",
-            "NOTENABLEDINSTR": "માસ્ટર્નોડને ચલાવવા માટે તમારે mternternode = 1 સેટ કરીને અને તમારા metrix.conf ફાઇલમાં 'masternodeprivkey' અને 'materternodeaddr' ચલો ગોઠવીને મસ્ટર્નોડ્સને સક્ષમ કરવાની જરૂર પડશે.",
             "STARTBUTTON": "સ્થાનિક શરૂ કરો",
             "STARTALIASBUTTON": "ઉપનામ શરૂ કરો",
-            "STARTALLBUTTON": "બધા પ્રારંભ કરો"
+            "STARTALLBUTTON": "બધા પ્રારંભ કરો",
+            "NOMASTERNODES": "તમારી પાસે કોઈ માસ્ટર્નોડ્સ નથી",
+            "NOMNOUTPUTS": "કોઈ મસાર્નોડ આઉટપુટ મળી નથી. સ્થાનિક માસર્નોડોડને ચલાવવા માટે તમારા માર્નનોડેડ સરનામાં પર 2,000,000 સિક્કા મોકલો અને 15 પુષ્ટિકરણો માટે રાહ જુઓ.",
+            "STOPBUTTON": "સ્થાનિક રોકો",
+            "STOPALIASBUTTON": "ઉપનામ રોકો",
+            "ADDREMOTE": "દૂરસ્થ માસ્ટર્નોડ ઉમેરો",
+            "REMOVEMN": "Masternode દૂર કરો",
+            "ADDLOCAL": "સેટઅપ સ્થાનિક માસર્નોડેડ",
+            "DISABLELOCAL": "સ્થાનિક માસર્નોડને અક્ષમ કરો",
+            "LOCALNOTRUNNING": "સ્થાનિક માસર્નોડોડ ચાલી રહ્યું નથી"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "સંદેશ મોકલો",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "લિન્ડા કોર સાથે સમસ્યા આવી હતી જેના કારણે તેને સમાપ્ત થઈ ગયું છે. સમસ્યાઓ માટે તમારી ડિબગ.લોગ ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ક્લાઈન્ટ પુનઃપ્રારંભ કરો",
             "CLIENTINVALIDCONFIGTITLE": "અમાન્ય metrix.conf રૂપરેખાંકન",
-            "CLIENTINVALIDCONFIGINFO": "તમારા metrix.conf માં અમાન્ય માસ્ટર્નોડ સેટઅપ છે જે લીન્ડા કોરને તાત્કાલિક બહાર નીકળશે. કૃપા કરીને આ ફાઇલ તપાસો."
+            "CLIENTINVALIDCONFIGINFO": "તમારા metrix.conf માં અમાન્ય માસ્ટર્નોડ સેટઅપ છે જે લીન્ડા કોરને તાત્કાલિક બહાર નીકળશે. કૃપા કરીને આ ફાઇલ તપાસો.",
+            "ADDREMOTEMNTITLE": "દૂરસ્થ માસ્ટર્નોડ ઉમેરો",
+            "ADDREMOTEMNALIAS": "માસ્ટર્નોડ એલિયાસ",
+            "ADDREMOTEMNIP": "માસર્નોડ આઇપી: પોર્ટ",
+            "ADDREMOTEMNKEY": "માસર્નોડેડ પ્રાઇવેટ કી",
+            "ADDREMOTEMNTXHASH": "માસર્નોડેડ ટ્રેક્સ હેશ",
+            "ADDREMOTEMNTXINDEX": "માસર્નોડ ટીએક્સ ઇન્ડેક્સ"
         },
         "ADDRESSBOOK": {
             "TITLE": "સરનામા પુસ્તિકા",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "બધા ઇનપુટ્સમાં ખર્ચ કરતા પહેલા ઓછામાં ઓછી 1 પુષ્ટિની જરૂર છે.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ક્લિપબોર્ડ પર ટ્રાંઝેક્શન્સ કૉપિ",
         "TRANSACTIONOUTPUTTOOLARGE": "તમારા પગારમાંથી એક ચૂકવણી સુરક્ષિત રીતે મોકલવા માટે ખૂબ મોટી છે. મહત્તમ 90,071,992.54740992 છે.",
-        "TRANSACTIONCHANGETOOLARGE": "તમારો ફેરફાર સલામત રીતે મોકલવા માટે ખૂબ મોટો છે. મહત્તમ 90,071,992.54740992 છે."
+        "TRANSACTIONCHANGETOOLARGE": "તમારો ફેરફાર સલામત રીતે મોકલવા માટે ખૂબ મોટો છે. મહત્તમ 90,071,992.54740992 છે.",
+        "STOPPINGMASTERNODE": "મસ્ટર્નોડ અટકાવી રહ્યું છે...",
+        "FAILEDTOWRITECONFIG": "તમારી metrix.conf ફાઇલ પર લખવામાં સમસ્યા આવી હતી. ફાઇલ અસ્તિત્વમાં છે તે તપાસો અને તે Altitude પાસે લખવાની પરવાનગીઓ છે.",
+        "NOPUBLICUP": "કોઈ જાહેર IP સરનામું મળ્યું નથી. તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને Altitude પુનઃપ્રારંભ કરો.",
+        "CONFIGURINGLOCALMN": "સ્થાનિક માસ્ર્નોડોડને ગોઠવી રહ્યું છે..."
     },
     "TIME": {
         "AFEWSECONDS": "થોડા સેકંડ",

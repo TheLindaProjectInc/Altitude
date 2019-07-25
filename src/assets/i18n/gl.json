@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Enderezo",
             "ENABLED": "Activado",
-            "NOTENABLEDTITLE": "Masternodes non habilitados",
-            "NOTENABLEDINSTR": "Para executar un masternode necesitará habilitar maisternodes establecendo masternode = 1 e configurando variables 'masternodeprivkey' e 'masternodeaddr' no seu arquivo metrix.conf.",
             "STARTBUTTON": "Comezar Local",
             "STARTALIASBUTTON": "Comezar alias",
-            "STARTALLBUTTON": "Comezar todo"
+            "STARTALLBUTTON": "Comezar todo",
+            "NOMASTERNODES": "Non tes masternodes",
+            "NOMNOUTPUTS": "Non se atoparon saídas Masternode. Para executar un Masternode local envíe exactamente 2.000.000 de moedas ao seu enderezo Masternode e agarde 15 confirmacións.",
+            "STOPBUTTON": "Parar local",
+            "STOPALIASBUTTON": "Pare de alias",
+            "ADDREMOTE": "Engade un remoto remoto",
+            "REMOVEMN": "Eliminar Masternode",
+            "ADDLOCAL": "Configurar o local de Masternode",
+            "DISABLELOCAL": "Desactivar a función local",
+            "LOCALNOTRUNNING": "Masternode local non executado"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sinatura de mensaxe",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Houbo un problema con Metrix Core que o fixo acabar. Recoméndase comprobar o ficheiro debug.log para problemas.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reiniciar o cliente",
             "CLIENTINVALIDCONFIGTITLE": "Configuración metrix.conf non válida",
-            "CLIENTINVALIDCONFIGINFO": "O seu metrix.conf ten unha configuración máis pequena non válida que fará que Metrix Core saia inmediatamente. Verifique este ficheiro."
+            "CLIENTINVALIDCONFIGINFO": "O seu metrix.conf ten unha configuración máis pequena non válida que fará que Metrix Core saia inmediatamente. Verifique este ficheiro.",
+            "ADDREMOTEMNTITLE": "Engade un remoto remoto",
+            "ADDREMOTEMNALIAS": "Alternas Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: porto",
+            "ADDREMOTEMNKEY": "Chave privada de Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Índice Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Axenda",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Todas as entradas requiren polo menos 1 confirmación antes de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccións copiadas no portapapeis",
         "TRANSACTIONOUTPUTTOOLARGE": "Un dos teus pagos a cantidades é demasiado grande para enviar con seguridade. O máximo é 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "O cambio é demasiado grande para enviar con seguridade. O máximo é 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "O cambio é demasiado grande para enviar con seguridade. O máximo é 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Detendo o masternode...",
+        "FAILEDTOWRITECONFIG": "Houbo un problema ao escribir no ficheiro metrix.conf. Verifique que o ficheiro existe e que Altitude ten permisos de escritura.",
+        "NOPUBLICUP": "Non se atopou ningún enderezo IP público. Verifique a súa conexión a Internet e reinicie Altitude.",
+        "CONFIGURINGLOCALMN": "Configuración de Masternode local..."
     },
     "TIME": {
         "AFEWSECONDS": "Algúns segundos",

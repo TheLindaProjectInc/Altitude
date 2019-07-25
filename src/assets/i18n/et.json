@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Aadress",
             "ENABLED": "Lubatud",
-            "NOTENABLEDTITLE": "Masternodes pole lubatud",
-            "NOTENABLEDINSTR": "Masternode käivitamiseks peate lubama masternodid, seades masternode = 1 ja konfigureerides \"masternodeprivkey\" ja \"masternodeaddr\" muutujad oma metrix.conf failis.",
             "STARTBUTTON": "Alusta kohalikku",
             "STARTALIASBUTTON": "Alusta nimega",
-            "STARTALLBUTTON": "Alusta kõik"
+            "STARTALLBUTTON": "Alusta kõik",
+            "NOMASTERNODES": "Sul pole masternode",
+            "NOMNOUTPUTS": "Masternode väljundeid ei leitud. Kohaliku Masternode käivitamiseks saatke Masternode aadressile täpselt 2 000 000 münti ja oodake 15 kinnitust.",
+            "STOPBUTTON": "Peatage kohalik",
+            "STOPALIASBUTTON": "Peatage varjunimi",
+            "ADDREMOTE": "Lisage Remote Masternode",
+            "REMOVEMN": "Eemaldage Masternode",
+            "ADDLOCAL": "Kohaliku Masternode seadistamine",
+            "DISABLELOCAL": "Keela kohalik masternode",
+            "LOCALNOTRUNNING": "Kohalik Masternode ei tööta"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sõnumi signatuur",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Taaskäivitage klient",
             "CLIENTINVALIDCONFIGTITLE": "Kehtetu metrix.conf konfiguratsioon",
-            "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili."
+            "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili.",
+            "ADDREMOTEMNTITLE": "Lisage Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode alias",
+            "ADDREMOTEMNIP": "Masternode IP: port",
+            "ADDREMOTEMNKEY": "Masternode privaatvõti",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Kõik sisendid nõuavad enne kulutusi vähemalt 1 kinnitust.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tehingud kopeeritakse lõikepuhvrisse",
         "TRANSACTIONOUTPUTTOOLARGE": "Üks teie tasu summasid on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Teie muudatus on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Teie muudatus on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Masternoodi peatamine...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf-faili kirjutamisel ilmnes probleem. Kontrollige, kas fail on olemas ja et kõrgusel on kirjutusõigused.",
+        "NOPUBLICUP": "Ei leitud avalikku IP-aadressi. Kontrollige oma internetiühendust ja taaskäivitage kõrgus.",
+        "CONFIGURINGLOCALMN": "Kohaliku Masternode seadistamine..."
     },
     "TIME": {
         "AFEWSECONDS": "Paar sekundit",

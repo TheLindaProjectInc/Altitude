@@ -1,20 +1,20 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
-import { WalletService } from '../../providers/wallet.service';
+import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
 import Helpers from 'app/helpers';
 import { PromptService } from '../../components/prompt/prompt.service';
-import { NotifierService } from 'angular-notifier';
 import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
+import { ElectronService } from '../../../providers/electron.service';
 
 @Component({
-  selector: 'app-masternodes',
-  templateUrl: './masternodes.component.html'
+  templateUrl: './masternodes.component.html',
+  styleUrls: ['./masternodes.component.scss']
 })
 export class MasternodesComponent {
   // make helpers accessible for html
   helpers = Helpers;
-  // sport masternode list
+  // sort masternode list
   desc = false;
   sortField;
   // filter masternode list
@@ -22,9 +22,7 @@ export class MasternodesComponent {
   // filtered masternode list
   items;
   // my online masternode list
-  items_me;
-  // my offline masternode list
-  items_me_off;
+  myMasternodes = [];
   // subscribe to masternode changes from wallet to update list
   sub;
   // which tab to show
@@ -36,10 +34,10 @@ export class MasternodesComponent {
     public wallet: WalletService,
     private cdRef: ChangeDetectorRef,
     private prompt: PromptService,
-    private notifier: NotifierService,
     private notification: NotificationService,
     private contextMenu: ContextMenuService,
-    private errorService: ErrorService
+    private errorService: ErrorService,
+    private electronService: ElectronService
   ) { }
 
   ngAfterViewChecked() {
@@ -60,15 +58,15 @@ export class MasternodesComponent {
   }
 
   getMyList() {
-    let items = [];
-    let itemsOffline = [];
+    let masternodes = [];
     let ipList = [];
+
     // get ips for all masternodes in my masternode.conf file
     this.wallet.masternode.config.forEach(mn => ipList.push(mn.address))
     this.wallet.masternode.list.forEach(mn => {
-      // check if i'm running a masternode. will have the 'status' field
-      if (mn.status !== undefined) items.push(mn);
-      else if (ipList.indexOf(mn.address) > -1) { // or check if it is in my masternode.conf file
+      // check if it is in my masternode.conf file
+      if (ipList.indexOf(mn.address) > -1) {
+        console.log('MN', mn);
         ipList.splice(ipList.indexOf(mn.address), 1);
         // add alias to masternode for context menu
         for (let i = 0; i < this.wallet.masternode.config.length; i++) {
@@ -77,17 +75,17 @@ export class MasternodesComponent {
             mn['alias'] = mnConf.alias
           }
         }
-        items.push(mn)
+        masternodes.push(mn)
       }
     })
+    // add any other masternodes from conf file not in mn list
     this.wallet.masternode.config.forEach(mn => {
       if (ipList.indexOf(mn.address) > -1) {
-        itemsOffline.push(mn);
+        masternodes.push(mn);
       }
     })
 
-    this.items_me = items;
-    this.items_me_off = itemsOffline;
+    this.myMasternodes = masternodes;
   }
 
   ngOnDestroy() {
@@ -132,13 +130,32 @@ export class MasternodesComponent {
   }
 
   onRightClick(e, masternode) {
-    if (masternode.alias) {
-      const items = [{
-        name: 'PAGES.MASTERNODES.STARTALIASBUTTON',
-        func: () => this.startAlias(masternode.alias)
-      }]
-      this.contextMenu.show(e, items)
+    let items = []
+    if (masternode && masternode.alias) {
+      items = [
+        !masternode.enabled ? {
+          name: 'PAGES.MASTERNODES.STARTALIASBUTTON',
+          func: () => this.startAlias(masternode.alias)
+        } :
+          {
+            name: 'PAGES.MASTERNODES.STOPALIASBUTTON',
+            func: () => this.stopAlias(masternode.alias)
+          },
+        {
+          name: 'PAGES.MASTERNODES.REMOVEMN',
+          func: () => this.removeMasternode(masternode.alias)
+        },
+      ]
+    } else if (this.wallet.masternode.running) {
+      items = [
+        {
+          name: 'PAGES.MASTERNODES.STOPBUTTON',
+          func: () => this.stop()
+        }
+      ]
     }
+
+    if (items.length) this.contextMenu.show(e, items)
   }
 
   start() {
@@ -147,6 +164,14 @@ export class MasternodesComponent {
 
   startAlias(alias: string) {
     this.sendStart("start-alias", [alias]);
+  }
+
+  stop() {
+    this.sendStop("stop");
+  }
+
+  stopAlias(alias: string) {
+    this.sendStop("stop-alias", [alias]);
   }
 
   startAll() {
@@ -167,14 +192,97 @@ export class MasternodesComponent {
         if (res.overall) return this.notification.notify('default', res.overall, false);
         if (res.result === "successful") return this.notification.notify('success', res.alias + ' ' + res.result, false);
         this.notification.notify('default', res, false);
+        this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODE);
       } catch (ex) {
         this.errorService.diagnose(ex);
       }
-      this.notification.dismissNotifications()
-
     } catch (ex) {
       // passphrase prompt closed
     }
+  }
+
+  async sendStop(cmd, params = []) {
+    try {
+      if (this.wallet.requireUnlock()) {
+        const [passphrase, stakingOnly] = await this.prompt.getPassphrase();
+        params.push(passphrase);
+      }
+
+      this.notification.loading('NOTIFICATIONS.STOPPINGMASTERNODE');
+      try {
+        const res = await this.wallet.masternodeCMD(cmd, params);
+        if (res.result === "failed") return this.notification.notify('error', res.errorMessage, false);
+        if (res.overall) return this.notification.notify('default', res.overall, false);
+        if (res.result === "successful") return this.notification.notify('success', res.alias + ' ' + res.result, false);
+        this.notification.notify('default', res, false);
+        this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODE);
+      } catch (ex) {
+        this.errorService.diagnose(ex);
+      }
+    } catch (ex) {
+      // passphrase prompt closed
+    }
+  }
+
+  async removeMasternode(alias) {
+    try {
+      const res = await this.wallet.masternodeCMD('removeremote', [alias]);
+      if (res === "Masternode not found") return this.notification.notify('error', res, false);
+      this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODELISTCONF);
+    } catch (ex) {
+      this.errorService.diagnose(ex);
+    }
+  }
+
+  async addRemote() {
+    try {
+      const [alias, ip, key, txHash, txIndex] = await this.prompt.addRemoteMasternode();
+      if (alias && ip && key && txHash && txIndex) {
+        const res = await this.wallet.masternodeCMD('addremote', [alias, ip, key, txHash, txIndex]);
+        if (res !== "Masternode created") return this.notification.notify('error', res, false);
+        this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODELISTCONF);
+      }
+    } catch (ex) {
+      // prompt closed
+    }
+  }
+
+  async setupLocal() {
+    if (!this.electronService.publicIP) {
+      return this.notification.notify('error', 'NOTIFICATIONS.NOPUBLICUP');
+    }
+    this.notification.loading('NOTIFICATIONS.CONFIGURINGLOCALMN');
+    try {
+      // get priv key
+      const privKey = await this.wallet.masternodeCMD('genkey');
+      // enable mn
+      const addr = this.electronService.publicIP + ':33820';
+      await this.wallet.masternodeCMD('init', [privKey, addr]);
+      // write conf file
+      this.electronService.ipcRenderer.send('client-node', 'MASTERNODE', { destroy: false, key: privKey, ip: addr });
+      this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODE);
+      this.notification.dismissNotifications();
+    } catch (ex) {
+      this.errorService.diagnose(ex);
+    }
+  }
+
+  async disableLocal() {
+    this.notification.loading('NOTIFICATIONS.CONFIGURINGLOCALMN');
+    try {
+      // kill mn
+      await this.wallet.masternodeCMD('kill');
+      // write conf file
+      this.electronService.ipcRenderer.send('client-node', 'MASTERNODE', { destroy: true });
+      this.wallet.requestDataSync(DATASYNCTYPES.MASTERNODE);
+      this.notification.dismissNotifications();
+    } catch (ex) {
+      this.errorService.diagnose(ex);
+    }
+  }
+
+  public get canStartLocalMN() {
+    return Object.keys(this.wallet.masternode.outputs).length
   }
 
 

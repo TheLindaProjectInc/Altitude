@@ -68,11 +68,18 @@
             "IP": "आईपी",
             "ADDRESS": "ठेगाना",
             "ENABLED": "सक्षम गरियो",
-            "NOTENABLEDTITLE": "Masternodes सक्षम छैन",
-            "NOTENABLEDINSTR": "Masternode चलाउनका लागि तपाईंलाई masternode = 1 र Myinda.conf फाइलमा 'masternodeprivkey' र 'masternodeaddr' चर कन्फिगर गरेर masternodes सक्षम गर्न आवश्यक छ।",
             "STARTBUTTON": "स्थानीय सुरू गर्नुहोस्",
             "STARTALIASBUTTON": "उपनाम सुरु गर्नुहोस्",
-            "STARTALLBUTTON": "सबै सुरू गर्नुहोस्"
+            "STARTALLBUTTON": "सबै सुरू गर्नुहोस्",
+            "NOMASTERNODES": "तपाईंसँग कुनै masternodes छैन",
+            "NOMNOUTPUTS": "कुनै Modeode outputs फेला परेन। स्थानीय Masternode लाई चलाउनका लागि ठीक 2000,000 सिक्काहरू तपाईंको Masternode ठेगानामा पठाउनुहोस् र 15 पुष्टिकरणहरूको लागि प्रतीक्षा गर्नुहोस्।",
+            "STOPBUTTON": "स्थानीय बन्द गर्नुहोस्",
+            "STOPALIASBUTTON": "उपनाम रोक्नुहोस्",
+            "ADDREMOTE": "रिमोट Masternode थप्नुहोस्",
+            "REMOVEMN": "Modeode हटाउनुहोस्",
+            "ADDLOCAL": "स्थानीय Modeode सेटअप गर्नुहोस्",
+            "DISABLELOCAL": "स्थानीय Modeode असक्षम पार्नुहोस्",
+            "LOCALNOTRUNNING": "स्थानीय Modeode चालु छैन"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "सन्देश पठाउनुहोस्",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "लिंडा कोरसँग एउटा समस्या थियो जसले यसलाई समाप्त गर्न मद्दत गर्यो। यो समस्याहरूको लागि तपाईंको डिबग.लग फाइल जाँच गर्न सिफारिस गरिएको छ।",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ग्राहक पुनः सुरु गर्नुहोस्",
             "CLIENTINVALIDCONFIGTITLE": "अवैध लिंडा.कन्फ कन्फिगरेसन",
-            "CLIENTINVALIDCONFIGINFO": "तपाईंको metrix.conf सँग एक अवैध masternode सेटअप छ जसले लिंडा कोरलाई तुरुन्तै निस्कन सक्छ। यो फाईल जाँच गर्नुहोस्।"
+            "CLIENTINVALIDCONFIGINFO": "तपाईंको metrix.conf सँग एक अवैध masternode सेटअप छ जसले लिंडा कोरलाई तुरुन्तै निस्कन सक्छ। यो फाईल जाँच गर्नुहोस्।",
+            "ADDREMOTEMNTITLE": "रिमोट Masternode थप्नुहोस्",
+            "ADDREMOTEMNALIAS": "Modeode Alias",
+            "ADDREMOTEMNIP": "Modeode IP: पोर्ट",
+            "ADDREMOTEMNKEY": "Mrenchode निजी कुञ्जी",
+            "ADDREMOTEMNTXHASH": "Modeode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Modeode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "ठेगाना पुस्तिका",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "सबै आगतहरू कम्तिमा 1 पुष्टिकरण खर्च गर्नु अघि आवश्यक छ।",
         "TRANSACTIONSCOPIEDCLIPBOARD": "लेनदेन क्लिपबोर्डमा प्रतिलिपि गरियो",
         "TRANSACTIONOUTPUTTOOLARGE": "तपाईंको भुक्तानीमा एक भुक्तानी सुरक्षित रूपमा पठाउन धेरै ठूलो छ। अधिकतम 9 0 9 71,992.54740 992 हो।",
-        "TRANSACTIONCHANGETOOLARGE": "तपाईंको परिवर्तन सुरक्षित रूपमा पठाउनको लागि अति ठूलो छ। अधिकतम 9 0 9 71,992.54740 992 हो।"
+        "TRANSACTIONCHANGETOOLARGE": "तपाईंको परिवर्तन सुरक्षित रूपमा पठाउनको लागि अति ठूलो छ। अधिकतम 9 0 9 71,992.54740 992 हो।",
+        "STOPPINGMASTERNODE": "मनिडिड रोक्दै...",
+        "FAILEDTOWRITECONFIG": "तपाईंको metrix.conf फाइलमा एक समस्या थियो। फाईल जाँच गर्नुहोस् र अक्षांशमा लेखहरू अनुमति छ।",
+        "NOPUBLICUP": "कुनै सार्वजनिक आईपी ठेगाना भेटिएन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस् र अक्षांश पुन: सुरु गर्नुहोस्।",
+        "CONFIGURINGLOCALMN": "स्थानीय Modeode कन्फिगर गर्दै..."
     },
     "TIME": {
         "AFEWSECONDS": "केहि सेकन्ड",

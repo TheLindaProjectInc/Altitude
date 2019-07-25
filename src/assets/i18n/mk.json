@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Адреса",
             "ENABLED": "Овозможено",
-            "NOTENABLEDTITLE": "Мастровените не се дозволени",
-            "NOTENABLEDINSTR": "За да ја стартувате masternode, ќе треба да ги вклучите masternodes со поставување masternode = 1 и конфигурирање на \"masternodeprivkey\" и \"masternodeaddr\" променливи во вашата metrix.conf датотека.",
             "STARTBUTTON": "Стартувај локално",
             "STARTALIASBUTTON": "Започни алијас",
-            "STARTALLBUTTON": "Започни ги сите"
+            "STARTALLBUTTON": "Започни ги сите",
+            "NOMASTERNODES": "Немате мастерноди",
+            "NOMNOUTPUTS": "Не се пронајдени резултати од Masternode. За да ја стартувате локалната Masternode, испратете точно 2 000 000 парички на вашата адреса на Masternode и почекајте 15 потврди.",
+            "STOPBUTTON": "Стоп за локално",
+            "STOPALIASBUTTON": "Стоп за алијас",
+            "ADDREMOTE": "Додај далечинско Masternode",
+            "REMOVEMN": "Отстранете го Masternode",
+            "ADDLOCAL": "Поставување локална Masternode",
+            "DISABLELOCAL": "Оневозможи локална Masternode",
+            "LOCALNOTRUNNING": "Локалната Masternode не работи"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Пријавете порака",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем со Metrix Core што ја предизвика да прекине. Препорачливо е да ја проверите вашата датотека debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирај го клиентот",
             "CLIENTINVALIDCONFIGTITLE": "Неважечка Конфигурација на metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека."
+            "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека.",
+            "ADDREMOTEMNTITLE": "Додај далечинско Masternode",
+            "ADDREMOTEMNALIAS": "Мастерноде алијас",
+            "ADDREMOTEMNIP": "Masternode IP: порта",
+            "ADDREMOTEMNKEY": "Мастерно приватен клуч",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Сите влезови бараат најмалку 1 потврда пред трошење.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Трансакциите се копирани во таблата со исечоци",
         "TRANSACTIONOUTPUTTOOLARGE": "Еден од вашите плати на износи е премногу голем за безбедно да испратите. Максимум е 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Вашата промена е преголема за безбедно испраќање. Максимум е 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Вашата промена е преголема за безбедно испраќање. Максимум е 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Запирање на masternode...",
+        "FAILEDTOWRITECONFIG": "Имаше проблем со пишување на вашата датотека metrix.conf. Проверете дали датотеката постои и дека Височината има дозволи за запишување.",
+        "NOPUBLICUP": "Не се пронајдени јавни IP адреси. Проверете ја вашата интернет конекција и рестартирајте ја височината.",
+        "CONFIGURINGLOCALMN": "Конфигурирање на локална Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Неколку секунди",

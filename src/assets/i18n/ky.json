@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "дарек",
             "ENABLED": "Иштетилген",
-            "NOTENABLEDTITLE": "Masternodes иштетилген эмес",
-            "NOTENABLEDINSTR": "бир masternode чуркап коюу masternode = 1 жана \"masternodeprivkey\" жана \"masternodeaddr:\" Сенин metrix.conf делосуна өзгөрмө орнотууга менен masternodes иштетүү үчүн керек болот.",
             "STARTBUTTON": "Start Жергиликтүү",
             "STARTALIASBUTTON": "Start ат",
-            "STARTALLBUTTON": "Башталган Баарын"
+            "STARTALLBUTTON": "Башталган Баарын",
+            "NOMASTERNODES": "Сиз кандай masternodes ээ эмес",
+            "NOMNOUTPUTS": "Эч кандай Masternode натыйжалары табылган жок. Жергиликтүү Masternode сиздин Masternode дарекке так 2,000,000 тыйын жиберүү жана 15 ырасталган күтө топтоду.",
+            "STOPBUTTON": "Stop Жергиликтүү",
+            "STOPALIASBUTTON": "Stop ат",
+            "ADDREMOTE": "Кошуу Remote Masternode",
+            "REMOVEMN": "алып салуу Masternode",
+            "ADDLOCAL": "Орнотуу Жергиликтүү Masternode",
+            "DISABLELOCAL": "Өчүрүү Жергиликтүү Masternode",
+            "LOCALNOTRUNNING": "Жергиликтүү Masternode Иштеген жок"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign сүйлөшүү",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "аны токтотууга алып келген жок Линда Корак менен көйгөй чыкты. Бул маселелер боюнча debug.log билэни текшерүүгө сунуш болуп саналат.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "кайра Кардар",
             "CLIENTINVALIDCONFIGTITLE": "Жараксыз metrix.conf Тарам орнотуусу",
-            "CLIENTINVALIDCONFIGINFO": "Сиздин metrix.conf дароо чыгып Линда Коракты алып келем жараксыз masternode орнотуп жазыла элек. Бу билэни текшерүү."
+            "CLIENTINVALIDCONFIGINFO": "Сиздин metrix.conf дароо чыгып Линда Коракты алып келем жараксыз masternode орнотуп жазыла элек. Бу билэни текшерүү.",
+            "ADDREMOTEMNTITLE": "Кошуу Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode ат",
+            "ADDREMOTEMNIP": "Masternode IP: Порт-",
+            "ADDREMOTEMNKEY": "Masternode купуя ачкыч",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Дарек китеби",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Бардык ресурстар чыгымдоо чейин кеминде 1 ырасталышын талап кылган.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Бүтүмдөр тактасына көчүрүлдү",
         "TRANSACTIONOUTPUTTOOLARGE": "суммаларды үчүн акы бири аман-эсен жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат.",
-        "TRANSACTIONCHANGETOOLARGE": "Сиздин өзгөртүү коопсуз жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат."
+        "TRANSACTIONCHANGETOOLARGE": "Сиздин өзгөртүү коопсуз жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат.",
+        "STOPPINGMASTERNODE": "Токтотуу masternode...",
+        "FAILEDTOWRITECONFIG": "Сиздин metrix.conf делосуна жазуу көйгөй келип чыкты. билэни текшерип бар жана тоолуу жаз уруксаттар бар.",
+        "NOPUBLICUP": "Эч кандай коомдук IP дареги табылган. Интернет байланышын жана кайра Сумки Ecco текшерүү.",
+        "CONFIGURINGLOCALMN": "жергиликтүү Masternode Configuring..."
     },
     "TIME": {
         "AFEWSECONDS": "Бир нече секунд",

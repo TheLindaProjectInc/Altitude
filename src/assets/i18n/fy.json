@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adres",
             "ENABLED": "Mooglik meitsje",
-            "NOTENABLEDTITLE": "Masternodes net ynskeakele",
-            "NOTENABLEDINSTR": "Om in masinod te runen moatte jo de mastersodus ynskeakelje troch de masternode = 1 te ynstallearjen en it konfiguraasje 'masternodeprivkey' en 'masternodeaddr' fariabelen yn jo metrix.conf-bestân.",
             "STARTBUTTON": "Begjin Lokale",
             "STARTALIASBUTTON": "Start Alias",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "Jo hawwe gjin masternodes",
+            "NOMNOUTPUTS": "Gjin Masternode-útfier fûn. Om in lokale Masternode út te fieren, stjoer eksakt 2.000.000 munten nei jo Masternode-adres en wachtsje op 15 befestigingen.",
+            "STOPBUTTON": "Lokaal stopje",
+            "STOPALIASBUTTON": "Stopje Alias",
+            "ADDREMOTE": "Masternode op ôfstân tafoegje",
+            "REMOVEMN": "Masternode ferwiderje",
+            "ADDLOCAL": "Pleatslike Masternode ynstelle",
+            "DISABLELOCAL": "Lokale masternode útskeakelje",
+            "LOCALNOTRUNNING": "Lokale masternode rint net"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Oanmelde berjocht",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Der wie in probleem mei Metrix Core dy't it feroarsake hat. It is oan te rieden om jo debug.log triem te kontrolearjen foar saken.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Kwaliteit opnij starte",
             "CLIENTINVALIDCONFIGTITLE": "Unjildige metrix.conf konfiguraasje",
-            "CLIENTINVALIDCONFIGINFO": "Jo metrix.conf hat in ûnjildige masternode opset dy't Metrix Core feroaret om fuortendaliks fuort te gean. Kontrolearje dizze triem."
+            "CLIENTINVALIDCONFIGINFO": "Jo metrix.conf hat in ûnjildige masternode opset dy't Metrix Core feroaret om fuortendaliks fuort te gean. Kontrolearje dizze triem.",
+            "ADDREMOTEMNTITLE": "Masternode op ôfstân tafoegje",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-yndeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Alle ynputs freegje op syn minst 1 befestiging foar de útjeften.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjes kopieare nei klamboerd",
         "TRANSACTIONOUTPUTTOOLARGE": "Ien fan jo beteljen foar bedraggen is te grut om safier te stjoeren. Maksimum is 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jo feroaring is te grut om safier te stjoeren. Maksimum is 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jo feroaring is te grut om safier te stjoeren. Maksimum is 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Masternode stopje...",
+        "FAILEDTOWRITECONFIG": "Der wie in probleem by it skriuwen nei jo metrix.conf-bestân. Kontrolearje of it bestân bestiet en dat Altitude skriuwrjochten hat.",
+        "NOPUBLICUP": "Gjin iepenbier IP-adres fûn. Kontrolearje jo ynternetferbining en starte Altitude opnij.",
+        "CONFIGURINGLOCALMN": "Lokale Masternode ynstelle..."
     },
     "TIME": {
         "AFEWSECONDS": "In pear sekonden",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Wāhitau",
             "ENABLED": "Kua whakahohe",
-            "NOTENABLEDTITLE": "Kāore i te whakahohea nga papatono",
-            "NOTENABLEDINSTR": "Hei whakahaere i te masternode ka hiahia koe ki te whakahohe i nga matternodes mā te whakarite masternode = 1 me te whirihora i te 'masternodeprivkey' me te 'masternodeaddr' i roto i to kōnae metrix.conf.",
             "STARTBUTTON": "Tīmatahia te Paetata",
             "STARTALIASBUTTON": "Tīmatahia te Ingoa",
-            "STARTALLBUTTON": "Tīmata Katoa"
+            "STARTALLBUTTON": "Tīmata Katoa",
+            "NOMASTERNODES": "Kaore koe i te katoa o nga puna",
+            "NOMNOUTPUTS": "Kaore i kitea he putanga Masternode. Hei whakahaere i tetahi Masternode o te rohe ka tukuna atu kia 2,000,000 moni ki to whare noho o Masternode me te tatari mo te 15 whakaputanga.",
+            "STOPBUTTON": "Aukati i te Rohe",
+            "STOPALIASBUTTON": "Katihia te Waea",
+            "ADDREMOTE": "Tāpirihia te Motuhake Mamao",
+            "REMOVEMN": "Tangohia te Masternode",
+            "ADDLOCAL": "Whakaritea te Masternode Local",
+            "DISABLELOCAL": "Monokia te Masternode Local",
+            "LOCALNOTRUNNING": "Kaore e Taumahi ana te Motuhake"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Waitohu Karere",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "He raruraru kei a Metrix Core kua mutu te whakamutu. He tūtohutanga kia tirohia to kōnae debug.log mo nga take.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Tīmatahia te Kiritaki",
             "CLIENTINVALIDCONFIGTITLE": "Motuhake metrix.conf Whirihoranga",
-            "CLIENTINVALIDCONFIGINFO": "Kei a metrix.conf tetahi tautuhinga matternode kaore e pai kia puta wawe a Metrix Core. Tirohia koa tenei kōnae."
+            "CLIENTINVALIDCONFIGINFO": "Kei a metrix.conf tetahi tautuhinga matternode kaore e pai kia puta wawe a Metrix Core. Tirohia koa tenei kōnae.",
+            "ADDREMOTEMNTITLE": "Tāpirihia te Motuhake Mamao",
+            "ADDREMOTEMNALIAS": "Masiasode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Kaupapa Whaiaro Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Taurangi Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Puka Wāhitau",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ko nga waahanga katoa e hiahia ana kia neke atu i te 1 te tiwhikete i mua i te whakapaunga",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ko nga mahi i tuhia ki te papapātuhi",
         "TRANSACTIONOUTPUTTOOLARGE": "Ko tetahi o to utu ki te nui he nui rawa atu ki te tuku atu ma te hauora. Ko te morahi ko 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "He nui rawa to huringa ki te tuku maanatia. Ko te morahi ko 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "He nui rawa to huringa ki te tuku maanatia. Ko te morahi ko 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Kati ana i te matternode...",
+        "FAILEDTOWRITECONFIG": "He raruraru te tuhi ki to kōnae metrix.conf. Tirohia te ahua o te kōnae, me nga whakaaetanga tuhituhi a Altitude.",
+        "NOPUBLICUP": "Kaore i kitea tetahi IP IP. Tirohia to hononga ipurangi me te tīmata anō i te Altitude.",
+        "CONFIGURINGLOCALMN": "Te whakatōpū i te Masternode o te rohe..."
     },
     "TIME": {
         "AFEWSECONDS": "He torutoru hēkona",

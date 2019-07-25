@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "adresa",
             "ENABLED": "povolené",
-            "NOTENABLEDTITLE": "Masternódy nie sú povolené",
-            "NOTENABLEDINSTR": "Ak chcete spustiť masternode, musíte aktivovať masternodes nastavením masternode = 1 a konfiguráciou premenných masternodeprivkey a masternodeaddr vo vašom súbore metrix.conf.",
             "STARTBUTTON": "Spustiť lokálne",
             "STARTALIASBUTTON": "Začať alias",
-            "STARTALLBUTTON": "Začať všetko"
+            "STARTALLBUTTON": "Začať všetko",
+            "NOMASTERNODES": "Nemáte žiadne masternódy",
+            "NOMNOUTPUTS": "Neboli nájdené žiadne výstupy Masternode. Ak chcete spustiť miestny Masternode, pošlite na svoju adresu Masternode presne 2 000 000 mincí a čakajte na 15 potvrdení.",
+            "STOPBUTTON": "Zastaviť miestne",
+            "STOPALIASBUTTON": "Zastavte Alias",
+            "ADDREMOTE": "Pridať vzdialený masternód",
+            "REMOVEMN": "Odstrániť Masternode",
+            "ADDLOCAL": "Nastavenie miestneho masternódu",
+            "DISABLELOCAL": "Zakázať miestny masternód",
+            "LOCALNOTRUNNING": "Miestny masternód nie je spustený"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Podpísať správu",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Vyskytol sa problém s Metrix Core, ktorý spôsobil jeho ukončenie. Odporúčame vám skontrolovať problém debug.log.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reštartujte klienta",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurácia služby metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf má neplatné nastavenie masternode, ktoré spôsobí, že Metrix Core okamžite opustí. Skontrolujte tento súbor."
+            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf má neplatné nastavenie masternode, ktoré spôsobí, že Metrix Core okamžite opustí. Skontrolujte tento súbor.",
+            "ADDREMOTEMNTITLE": "Pridať vzdialený masternód",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Súkromný kľúč Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Index trxu Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresár",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Všetky vstupy vyžadujú minimálne 1 potvrdenie pred tým, než sa utratí.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcie boli skopírované do schránky",
         "TRANSACTIONOUTPUTTOOLARGE": "Jedna z vašich platieb na sumy je príliš veľká, aby ste mohli bezpečne odoslať. Maximálna hodnota je 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Vaša zmena je príliš veľká na bezpečné odoslanie. Maximálna hodnota je 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Vaša zmena je príliš veľká na bezpečné odoslanie. Maximálna hodnota je 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Zastavuje sa masternode...",
+        "FAILEDTOWRITECONFIG": "Pri zápise do súboru metrix.conf sa vyskytol problém. Skontrolujte, či súbor existuje a či má Altitude oprávnenie na zápis.",
+        "NOPUBLICUP": "Nenašla sa žiadna verejná adresa IP. Skontrolujte svoje pripojenie k internetu a reštartujte výšku.",
+        "CONFIGURINGLOCALMN": "Konfigurácia miestnej masternódy..."
     },
     "TIME": {
         "AFEWSECONDS": "Niekoľko sekúnd",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adresa",
             "ENABLED": "Activat",
-            "NOTENABLEDTITLE": "Masternozele nu sunt activate",
-            "NOTENABLEDINSTR": "Pentru a rula un masternode, va trebui să activați masternodes prin setarea masternode = 1 și configurarea variabilelor \"masternodeprivkey\" și \"masternodeaddr\" în fișierul metrix.conf.",
             "STARTBUTTON": "Porniți Local",
             "STARTALIASBUTTON": "Porneste Alias",
-            "STARTALLBUTTON": "Începeți totul"
+            "STARTALLBUTTON": "Începeți totul",
+            "NOMASTERNODES": "Nu aveți niciun fel de mastere",
+            "NOMNOUTPUTS": "Nu au fost găsite ieșiri Masternode. Pentru a rula un Masternode local trimiteți exact 2 000 000 de monede pe adresa dvs. de la Masternode și așteptați 15 confirmări.",
+            "STOPBUTTON": "Opriți Local",
+            "STOPALIASBUTTON": "Opriți Aliasul",
+            "ADDREMOTE": "Adăugați masina de la distanță",
+            "REMOVEMN": "Scoateți Masternode",
+            "ADDLOCAL": "Setup Masternode local",
+            "DISABLELOCAL": "Dezactivați Masternode locală",
+            "LOCALNOTRUNNING": "Masternodul local nu se execută"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Semnează mesajul",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reporniți Clientul",
             "CLIENTINVALIDCONFIGTITLE": "Configurația metrix.conf este nevalidă",
-            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier."
+            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier.",
+            "ADDREMOTEMNTITLE": "Adăugați masina de la distanță",
+            "ADDREMOTEMNALIAS": "Alienul Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Cheia privată Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indexul Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Toate intrările necesită cel puțin o confirmare înainte de a cheltui.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzacțiile copiate în clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Una dintre plățile dvs. către sume este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Schimbarea dvs. este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Schimbarea dvs. este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Oprirea masternozei...",
+        "FAILEDTOWRITECONFIG": "A apărut o problemă la scrierea fișierului dvs. metrix.conf. Verificați existența fișierului și că altitudinea are permisiuni de scriere.",
+        "NOPUBLICUP": "Nu a fost găsită nicio adresă IP publică. Verificați conexiunea la internet și reporniți altitudinea.",
+        "CONFIGURINGLOCALMN": "Configurarea Masternode locale..."
     },
     "TIME": {
         "AFEWSECONDS": "Câteva secunde",

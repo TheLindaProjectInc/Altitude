@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 
 // components
 import { PromptComponent } from './components/prompt/prompt.component';
@@ -13,6 +12,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { TransactionRowComponent } from './components/transaction-row/transaction-row.component';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { MarketPriceComponent } from './components/market-price/market-price.component';
+import { CurrencyComponent } from './pages/currency/currency.component';
+import { MasternodeComponent } from './components/masternode/masternode.component';
 
 // pages
 import { SendComponent } from './pages/send/send.component';
@@ -32,7 +33,6 @@ import { MasterComponent } from './pages/master/master.component';
 // services
 import { RpcService } from './providers/rpc.service';
 import { WalletService } from './providers/wallet.service';
-import { CurrencyComponent } from './pages/currency/currency.component';
 
 const routes: Routes = [
     { path: '', component: DashboardComponent },
@@ -82,5 +82,6 @@ export const declarations = [
     TransactionRowComponent,
     AccountsComponent,
     MarketPriceComponent,
-    CurrencyComponent
+    CurrencyComponent,
+    MasternodeComponent
 ]

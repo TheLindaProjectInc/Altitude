@@ -11,48 +11,29 @@
 
   <div class="tab-content" *ngIf="tab==0">
     <!-- masternode not enabled -->
-    <h5 *ngIf="!wallet.masternode.setup && !items_me.length">{{ 'PAGES.MASTERNODES.NOTENABLEDTITLE' | translate }}</h5>
-    <p *ngIf="!wallet.masternode.setup && !items_me.length">{{ 'PAGES.MASTERNODES.NOTENABLEDINSTR' | translate }}</p>
+    <h5 *ngIf="!wallet.masternode.setup && !myMasternodes.length">{{ 'PAGES.MASTERNODES.NOMASTERNODES' | translate }}</h5>
 
-    <!-- my masternodes table -->
-    <div class="transactions">
-      <div class="transaction confirmed" *ngFor="let mn of items_me" (contextmenu)="onRightClick($event,mn)">
-        <div class="icon">
-          <fa-icon class="success" *ngIf="mn.enabled" icon="toggle-on"></fa-icon>
-          <fa-icon class="danger" *ngIf="!mn.enabled" icon="toggle-off"></fa-icon>
-        </div>
-        <div class="detail">
-          <h5>{{mn.pubkey}}</h5>
-          <h5>{{mn.address}}</h5>
-          <h5>{{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}: {{mn.protocolVersion}}</h5>
-        </div>
-        <div class="value">
-          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
-            {{helpers.formatTimeEplased(mn.lastTimeSeen,dateNow)}}
-            {{
-            'MISC.AGO' |
-            translate }}</h5>
-          <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: {{helpers.formatTime(mn.activeseconds,dateNow)}}</h5>
-        </div>
-      </div>
-      <div class="transaction confirmed" *ngFor="let mn of items_me_off" (contextmenu)="onRightClick($event,mn)">
-        <div class="icon">
-          <fa-icon class="danger" icon="toggle-off"></fa-icon>
-        </div>
-        <div class="detail">
-          <h5>{{mn.address}}</h5>
-        </div>
-        <div class="value">
-          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}: N/A</h5>
-          <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: N/A</h5>
-        </div>
-      </div>
+    <div class="masternode-container">
+      <!-- local -->
+      <masternode *ngIf="wallet.masternode.setup" [mn]="wallet.masternode" [local]="true" (start)="start()"
+        [canStart]="canStartLocalMN" (contextmenu)="onRightClick($event)"></masternode>
+      <!-- remotes -->
+      <masternode *ngFor="let mn of myMasternodes" [mn]="mn" (contextmenu)="onRightClick($event,mn)"></masternode>
     </div>
 
     <div class="toolbar-bottom">
-      <button *ngIf="wallet.masternode.setup" class="btn btn-default" (click)="start()">{{
-        'PAGES.MASTERNODES.STARTBUTTON' | translate }}</button>
-      <button class="btn btn-default" (click)="startAll()">{{ 'PAGES.MASTERNODES.STARTALLBUTTON' | translate }}</button>
+      <button class="btn btn-default" (click)="startAll()">
+        {{ 'PAGES.MASTERNODES.STARTALLBUTTON' | translate }}
+      </button>
+      <button class="btn btn-default" (click)="addRemote()">
+        {{ 'PAGES.MASTERNODES.ADDREMOTE' | translate }}
+      </button>
+      <button class="btn btn-default" (click)="setupLocal()" *ngIf="!wallet.masternode.setup">
+        {{ 'PAGES.MASTERNODES.ADDLOCAL' | translate }}
+      </button>
+      <button class="btn btn-default" (click)="disableLocal()" *ngIf="wallet.masternode.setup">
+        {{ 'PAGES.MASTERNODES.DISABLELOCAL' | translate }}
+      </button>
     </div>
 
   </div>
@@ -121,11 +102,11 @@
           <h5>{{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}: {{mn.protocolVersion}}</h5>
         </div>
         <div class="value">
-          <h5>{{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
+          <h5>
+            {{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
             {{helpers.formatTimeEplased(mn.lastTimeSeen,dateNow)}}
-            {{
-            'MISC.AGO' |
-            translate }}</h5>
+            {{'MISC.AGO' | translate }}
+          </h5>
           <h5>{{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: {{helpers.formatTime(mn.activeseconds,dateNow)}}</h5>
         </div>
       </div>

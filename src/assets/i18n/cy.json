@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Cyfeiriad",
             "ENABLED": "Wedi'i alluogi",
-            "NOTENABLEDTITLE": "Nid yw Masternodes wedi eu galluogi",
-            "NOTENABLEDINSTR": "I redeg masternode bydd angen i chi alluogi masternodes trwy osod masternode = 1 a ffurfweddu newidynnau 'masternodeprivkey' a 'masternodeaddr' yn eich ffeil metrix.conf.",
             "STARTBUTTON": "Dechrau Lleol",
             "STARTALIASBUTTON": "Dechreuwch Alias",
-            "STARTALLBUTTON": "Dechrau'r cyfan"
+            "STARTALLBUTTON": "Dechrau'r cyfan",
+            "NOMASTERNODES": "Does gennych chi ddim masternodau",
+            "NOMNOUTPUTS": "Ni ddarganfuwyd allbynnau Masternode. I redeg Masternode lleol, anfonwch 2,000,000 o ddarnau arian i'ch cyfeiriad Masternode ac aros am 15 cadarnhad.",
+            "STOPBUTTON": "Stopiwch Lleol",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Ychwanegu Remote Masternode",
+            "REMOVEMN": "Dileu Masternode",
+            "ADDLOCAL": "Setup Local Masternode",
+            "DISABLELOCAL": "Analluogi Local Masternode",
+            "LOCALNOTRUNNING": "Masternode Lleol ddim yn Rhedeg"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Neges Arwyddion",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ail-gychwyn Cleient",
             "CLIENTINVALIDCONFIGTITLE": "Cyfluniad metrix.conf annilys",
-            "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon."
+            "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon.",
+            "ADDREMOTEMNTITLE": "Ychwanegu Remote Masternode",
+            "ADDREMOTEMNALIAS": "Alias Masternode",
+            "ADDREMOTEMNIP": "IP Masternode: Porthladd",
+            "ADDREMOTEMNKEY": "Allwedd Preifat Masternode",
+            "ADDREMOTEMNTXHASH": "Triongl Masternode",
+            "ADDREMOTEMNTXINDEX": "Mynegai Triongl Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr cyfeiriadau",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Rhaid i bob mewnbyniad o leiaf 1 gadarnhau cyn gwario.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Trosglwyddiadau wedi'u copïo i'r clipfwrdd",
         "TRANSACTIONOUTPUTTOOLARGE": "Mae un o'ch cyflog i symiau yn rhy fawr i'w hanfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mae'ch newid yn rhy fawr i'w anfon yn ddiogel. Uchafswm yw 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Mae'ch newid yn rhy fawr i'w anfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Stopio masternode...",
+        "FAILEDTOWRITECONFIG": "Roedd yna broblem ysgrifennu at eich ffeil metrix.conf. Gwiriwch fod y ffeil yn bodoli a bod Uchder yn ysgrifennu caniatâd.",
+        "NOPUBLICUP": "Ni ddarganfuwyd cyfeiriad IP cyhoeddus. Gwiriwch eich cysylltiad rhyngrwyd ac ailddechrau Uchder.",
+        "CONFIGURINGLOCALMN": "Ffurfweddu Masternode lleol..."
     },
     "TIME": {
         "AFEWSECONDS": "Ychydig eiliadau",

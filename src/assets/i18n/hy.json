@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Հասցե",
             "ENABLED": "Հասանելի է",
-            "NOTENABLEDTITLE": "Masternodes- ը միացված չէ",
-            "NOTENABLEDINSTR": "Masternode վարելու համար հարկավոր է ակտիվացնել masternodes `masternode = 1-ը եւ configuring 'masternodeprivkey' եւ 'masternodeaddr' փոփոխականները ձեր metrix.conf ֆայլում:",
             "STARTBUTTON": "Սկսել տեղական",
             "STARTALIASBUTTON": "Սկսեք Alias- ը",
-            "STARTALLBUTTON": "Սկսեք բոլորը"
+            "STARTALLBUTTON": "Սկսեք բոլորը",
+            "NOMASTERNODES": "Դուք չունեք որեւէ masternodes",
+            "NOMNOUTPUTS": "Ոչ մի Masternode արդյունք չի գտնվել: Տեղական Masternode տեղադրելու համար ձեր Masternode հասցեին ուղարկեք ընդամենը 2,000,000 մետաղադրամ եւ սպասեք 15 հաստատումներին:",
+            "STOPBUTTON": "Տեղադրել Տեղաբաշխում",
+            "STOPALIASBUTTON": "Stop Alias- ը",
+            "ADDREMOTE": "Ավելացնել Remote Masternode",
+            "REMOVEMN": "Հեռացնել Masternode- ը",
+            "ADDLOCAL": "Տեղադրեք Տեղական Masternode",
+            "DISABLELOCAL": "Անջատել տեղական Masternode",
+            "LOCALNOTRUNNING": "Տեղական Masternode- ն չի աշխատում"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Մուտքագրեք հաղորդագրություն",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Լինդա Քորեի հետ կապված խնդիր առաջացավ, որը դադարեցրեց նրան: Խորհուրդ է տալիս ստուգել ձեր debug.log ֆայլը հարցերի համար:",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Հաճախորդի վերսկսումը",
             "CLIENTINVALIDCONFIGTITLE": "Անվավեր metrix.conf կոնֆիգուրացիան",
-            "CLIENTINVALIDCONFIGINFO": "Ձեր metrix.conf- ն ունի անսահմանափակ masternode կարգավորում, որը կհանգեցնի Metrix Core- ին անմիջապես դուրս գալու: Խնդրում ենք ստուգել այս ֆայլը:"
+            "CLIENTINVALIDCONFIGINFO": "Ձեր metrix.conf- ն ունի անսահմանափակ masternode կարգավորում, որը կհանգեցնի Metrix Core- ին անմիջապես դուրս գալու: Խնդրում ենք ստուգել այս ֆայլը:",
+            "ADDREMOTEMNTITLE": "Ավելացնել Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias- ը",
+            "ADDREMOTEMNIP": "Masternode IP- պորտ",
+            "ADDREMOTEMNKEY": "Masternode Անձնական բանալի",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash- ը",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx ինդեքսը"
         },
         "ADDRESSBOOK": {
             "TITLE": "Հասցեագիրք",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Բոլոր մուտքերը պահանջում են առնվազն մեկ հաստատում `նախքան ծախսելը:",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Գործիքներ, որոնք պատճենված են clipboard- ին",
         "TRANSACTIONOUTPUTTOOLARGE": "Ձեր վճարումներից մեկի գումարը չափազանց մեծ է `ապահով ուղարկելու համար: Առավելագույնը `90,071,992.54740992:",
-        "TRANSACTIONCHANGETOOLARGE": "Ձեր փոփոխությունը չափազանց մեծ է անվտանգ ուղարկելու համար: Առավելագույնը `90,071,992.54740992:"
+        "TRANSACTIONCHANGETOOLARGE": "Ձեր փոփոխությունը չափազանց մեծ է անվտանգ ուղարկելու համար: Առավելագույնը `90,071,992.54740992:",
+        "STOPPINGMASTERNODE": "Stopping masternode...",
+        "FAILEDTOWRITECONFIG": "Ձեր metrix.conf ֆայլին գրելու խնդիր կար: Ստուգեք ֆայլը, եւ որ Բարձրությունը գրում է թույլտվությունները:",
+        "NOPUBLICUP": "Հանրային IP հասցե չկա: Ստուգեք ձեր ինտերնետ կապը եւ վերագործեք Բարձրությունը:",
+        "CONFIGURINGLOCALMN": "Տեղական Masternode- ի կոնֆիգուրացիա..."
     },
     "TIME": {
         "AFEWSECONDS": "Մի քանի վայրկյան",

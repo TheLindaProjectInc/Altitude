@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adreesị",
             "ENABLED": "Kwadoro",
-            "NOTENABLEDTITLE": "Masternodes enyereghị",
-            "NOTENABLEDINSTR": "Iji na-agba ọsọ maka nnabata ị ga - achọ ka masternodes site na ịmepụta masternode = 1 na configuring 'variables' na 'masternodeaddr' na faịlụ metrix.conf gị.",
             "STARTBUTTON": "Malite mpaghara",
             "STARTALIASBUTTON": "Malite aha",
-            "STARTALLBUTTON": "Malite niile"
+            "STARTALLBUTTON": "Malite niile",
+            "NOMASTERNODES": "I nweghi masternodes",
+            "NOMNOUTPUTS": "Enweghị achọpụtara Masternode. Iji mee ka Masternode nke ime obodo zipu mkpụrụ ego 2,000,000 na adreesị Masternode gị wee chere maka nkwenye 15.",
+            "STOPBUTTON": "Kwụsị Mpaghara",
+            "STOPALIASBUTTON": "Kwụsị Alias",
+            "ADDREMOTE": "Tinye Remote Masternode",
+            "REMOVEMN": "Wepu Masternode",
+            "ADDLOCAL": "Mbido obodo Masternode",
+            "DISABLELOCAL": "Gbanyụọ Masternode Mpaghara",
+            "LOCALNOTRUNNING": "Masternode Mpaghara anaghị agba ọsọ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Zipu Ozi",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Malitegharịa ekwentị",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf nhazi",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a.",
+            "ADDREMOTEMNTITLE": "Tinye Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "IP nke Masternode: Port",
+            "ADDREMOTEMNKEY": "Masternode n'onwe Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Index Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ntinye niile chọrọ ọ dịkarịa ala 1 nkwenye tupu emefu.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ahịa ndị e depụtara gaa na windo",
         "TRANSACTIONOUTPUTTOOLARGE": "Otu n'ime ụgwọ ị na-akwụ na oke ego dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mgbanwe gị dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Mgbanwe gị dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Nkwụsị masternode...",
+        "FAILEDTOWRITECONFIG": "Enwere nsogbu idegara faịlụ metrix.conf gị. Lelee faịlụ dị na Altitude nwere ikike ikike ide.",
+        "NOPUBLICUP": "Onweghi Adreesị IP Ọha. Lelee njikọ ịntanetị gị ma malitegharịa Altitude.",
+        "CONFIGURINGLOCALMN": "Ijikwa mpaghara Masternode…"
     },
     "TIME": {
         "AFEWSECONDS": "Sekọnd ole na ole",

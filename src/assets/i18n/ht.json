@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adrès",
             "ENABLED": "Pèmèt",
-            "NOTENABLEDTITLE": "Masternodes pa pèmèt",
-            "NOTENABLEDINSTR": "Kouri yon masternode ou pral bezwen yo ki pèmèt masternodes pa mete masternode = 1 ak konfigirasyon 'masternodeprivkey' ak 'masternodeaddr' varyab nan dosye metrix.conf ou a.",
             "STARTBUTTON": "Kòmanse Lokal",
             "STARTALIASBUTTON": "Kòmanse alyas",
-            "STARTALLBUTTON": "Kòmanse tout"
+            "STARTALLBUTTON": "Kòmanse tout",
+            "NOMASTERNODES": "Ou pa gen okenn masternodes",
+            "NOMNOUTPUTS": "Pa gen rezilta Masternode jwenn. Kouri yon Masternode lokal voye egzakteman 2,000,000 pyès monnen nan adrès Masternode ou epi tann pou 15 konfimasyon.",
+            "STOPBUTTON": "One Stop Lokal",
+            "STOPALIASBUTTON": "Sispann alyas",
+            "ADDREMOTE": "Add Remote Masternode",
+            "REMOVEMN": "Retire Masternode",
+            "ADDLOCAL": "Enstalasyon lokal Masternode",
+            "DISABLELOCAL": "Enfim lokal Masternode",
+            "LOCALNOTRUNNING": "Lokal Masternode Pa Kouri"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Siyen Mesaj",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Te gen yon pwoblèm ak Metrix Nwayo ki te lakòz li nan fen. Li rekòmande yo tcheke dosye debug.log ou a pou pwoblèm.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rekòmanse Kliyan",
             "CLIENTINVALIDCONFIGTITLE": "Enskri metrix.conf konte genyen",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Metrix Nwayo sòti imedyatman. Tanpri tcheke dosye sa a."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Metrix Nwayo sòti imedyatman. Tanpri tcheke dosye sa a.",
+            "ADDREMOTEMNTITLE": "Add Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode alyas",
+            "ADDREMOTEMNIP": "Masternode IP: Pò",
+            "ADDREMOTEMNKEY": "Masternode Prive Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Liv adrès",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Tout entrain mande pou omwen 1 konfimasyon anvan depans.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksyon kopye nan clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Youn nan peye ou a kantite lajan an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Chanjman ou an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Chanjman ou an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
+        "STOPPINGMASTERNODE": "Sispann masternode...",
+        "FAILEDTOWRITECONFIG": "Te gen yon pwoblèm pou ekri nan dosye metrix.conf ou. Tcheke dosye a egziste e ke Altitid gen pèmisyon ekri.",
+        "NOPUBLICUP": "Pa gen adrès IP Piblik yo te jwenn. Tcheke koneksyon entènèt ou an epi rekòmanse Altitid.",
+        "CONFIGURINGLOCALMN": "Konfigirasyon lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Yon kèk segond",

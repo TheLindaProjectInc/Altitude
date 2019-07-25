@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "ທີ່ຢູ່",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Masternodes ບໍ່ຖືກເປີດໃຊ້",
-            "NOTENABLEDINSTR": "ເພື່ອດໍາເນີນການ masternode ທ່ານຈະຕ້ອງເປີດໃຊ້ masternodes ໂດຍຕັ້ງຄ່າ masternode = 1 ແລະກໍານົດຕົວແປ 'masternodeprivkey' ແລະ 'masternodeaddr' ໃນແຟ້ມ metrix.conf ຂອງທ່ານ.",
             "STARTBUTTON": "ເລີ່ມຕົ້ນທ້ອງຖິ່ນ",
             "STARTALIASBUTTON": "ເລີ່ມ Alias",
-            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງຫມົດ"
+            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງຫມົດ",
+            "NOMASTERNODES": "ທ່ານບໍ່ມີ masternodes ໃດ",
+            "NOMNOUTPUTS": "ບໍ່ພົບຜົນລັບ Masternode. ການດໍາເນີນການ Masternode ທ້ອງຖິ່ນສົ່ງແທ້ 2,000,000 ບ້ານໄປທີ່ທີ່ຢູ່ Masternode ຂອງທ່ານແລະລໍຖ້າສໍາລັບການຢືນຢັນ 15.",
+            "STOPBUTTON": "ຢຸດທ້ອງຖິ່ນ",
+            "STOPALIASBUTTON": "ຢຸດ Alias",
+            "ADDREMOTE": "ເພີ່ມ Remote Masternode",
+            "REMOVEMN": "ເອົາ Masternode",
+            "ADDLOCAL": "Setup Masternode ທ້ອງຖິ່ນ",
+            "DISABLELOCAL": "ປິດການໃຊ້ເວບໄຊທ໌ທ້ອງຖິ່ນ",
+            "LOCALNOTRUNNING": "Masternode ທ້ອງຖິ່ນບໍ່ແລ່ນ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ມີບັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນຈົບລົງ. ມັນແນະນໍາໃຫ້ກວດເບິ່ງໄຟລ໌ debug.log ຂອງທ່ານສໍາລັບບັນຫາ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "ການຕັ້ງຄ່າ Lindaconf ບໍ່ຖືກຕ້ອງ",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້.",
+            "ADDREMOTEMNTITLE": "ເພີ່ມ Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "ປື້ມ​ທີ່​ຢູ່",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "ຂໍ້ມູນທັງຫມົດຕ້ອງການຢ່າງຫນ້ອຍ 1 ໃບຢັ້ງຢືນກ່ອນການໃຊ້ຈ່າຍ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copied to clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "ຫນຶ່ງໃນຄ່າຈ້າງຂອງທ່ານຕໍ່ຈໍານວນເງິນແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
-        "TRANSACTIONCHANGETOOLARGE": "ການປ່ຽນແປງຂອງທ່ານແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992"
+        "TRANSACTIONCHANGETOOLARGE": "ການປ່ຽນແປງຂອງທ່ານແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
+        "STOPPINGMASTERNODE": "ຢຸດ masternode...",
+        "FAILEDTOWRITECONFIG": "ມີບັນຫາໃນການຂຽນຂໍ້ມູນ metrix.conf ຂອງທ່ານ. ກວດເບິ່ງໄຟລ໌ທີ່ມີຢູ່ແລະ Altitude ມີສິດຂຽນ.",
+        "NOPUBLICUP": "ບໍ່ພົບ IP address ສາທາລະນະ. ກວດເບິ່ງການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານແລະ restart Altitude.",
+        "CONFIGURINGLOCALMN": "ການຕັ້ງຄ່າ Masternode ທ້ອງຖິ່ນ..."
     },
     "TIME": {
         "AFEWSECONDS": "ມີສອງສາມວິນາທີ",

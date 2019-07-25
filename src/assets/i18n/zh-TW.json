@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "地址",
             "ENABLED": "啟用",
-            "NOTENABLEDTITLE": "未啟用Masternodes",
-            "NOTENABLEDINSTR": "要運行masternode，您需要通過設置masternode = 1並在metrix.conf文件中配置'masternodeprivkey'和'masternodeaddr'變量來啟用masternode。",
             "STARTBUTTON": "開始本地",
             "STARTALIASBUTTON": "啟動Alias",
-            "STARTALLBUTTON": "全部啟動"
+            "STARTALLBUTTON": "全部啟動",
+            "NOMASTERNODES": "你沒有任何masternodes",
+            "NOMNOUTPUTS": "未找到Masternode輸出。要運行本地Masternode，請向您的Masternode地址發送2,000,000個硬幣並等待15次確認。",
+            "STOPBUTTON": "停止本地",
+            "STOPALIASBUTTON": "停止別名",
+            "ADDREMOTE": "添加遠程Masternode",
+            "REMOVEMN": "刪除Masternode",
+            "ADDLOCAL": "設置本地Masternode",
+            "DISABLELOCAL": "禁用本地Masternode",
+            "LOCALNOTRUNNING": "本地Masternode未運行"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "簽署消息",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出現問題導致它終止。建議檢查debug.log文件以查找問題。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "重啟客戶端",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf配置無效",
-            "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有無效的masternode設置，這將導致Metrix Core立即退出。請檢查此文件。"
+            "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有無效的masternode設置，這將導致Metrix Core立即退出。請檢查此文件。",
+            "ADDREMOTEMNTITLE": "添加遠程Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP：端口",
+            "ADDREMOTEMNKEY": "Masternode私鑰",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx指數"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "所有投入在消費前至少需要1次確認。",
         "TRANSACTIONSCOPIEDCLIPBOARD": "交易複製到剪貼板",
         "TRANSACTIONOUTPUTTOOLARGE": "您支付的金額之一太大而無法安全發送。最大值為90,071,992.54740992。",
-        "TRANSACTIONCHANGETOOLARGE": "您的更改太大，無法安全發送。最大值為90,071,992.54740992。"
+        "TRANSACTIONCHANGETOOLARGE": "您的更改太大，無法安全發送。最大值為90,071,992.54740992。",
+        "STOPPINGMASTERNODE": "停止masternode...",
+        "FAILEDTOWRITECONFIG": "寫入metrix.conf文件時出現問題。檢查文件是否存在以及Altitude是否具有寫入權限。",
+        "NOPUBLICUP": "找不到公共IP地址。檢查您的互聯網連接並重新啟動Altitude。",
+        "CONFIGURINGLOCALMN": "配置本地Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "幾秒鐘",

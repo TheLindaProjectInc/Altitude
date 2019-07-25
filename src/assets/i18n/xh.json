@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Idilesi",
             "ENABLED": "Inikwe amandla",
-            "NOTENABLEDTITLE": "Amasternodes ayenziwa",
-            "NOTENABLEDINSTR": "Ukuqhuba i-masternode kuya kufuneka ubenze ama-masternode ngokubeka i-masternode = 1 kwaye ulungiselele 'masternodeprivkey' kunye ne 'masternodeaddr' eziguqukayo kwifayili yakho yemetrix.conf.",
             "STARTBUTTON": "Qala kwiNgingqi",
             "STARTALIASBUTTON": "Qala iAlias",
-            "STARTALLBUTTON": "Qala konke"
+            "STARTALLBUTTON": "Qala konke",
+            "NOMASTERNODES": "Awunazo naziphi na iimasode",
+            "NOMNOUTPUTS": "Akukho ziphumo zeMasternode ezifunyenweyo. Ukuqhuba i-Masternode yengingqi uthumele ngqo i-2000, 000 yeedola kwiidilesi zakho zeMasternode kwaye ulinde iziqinisekiso ezili-15.",
+            "STOPBUTTON": "Yimisa indawo",
+            "STOPALIASBUTTON": "Misa Alias",
+            "ADDREMOTE": "Yongeza i-Masternode ekude",
+            "REMOVEMN": "Susa iMasternode",
+            "ADDLOCAL": "Cwangcisa iMasternode yaseKhaya",
+            "DISABLELOCAL": "Khubaza iMasternode yaseKhaya",
+            "LOCALNOTRUNNING": "I-Masternode yaseKhaya ayihambi"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Umyalezo Wezandla",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kukho ingxaki ngeMetrix Core eyabangela ukuba iphelise. Kuncoma ukujonga ifayile yakho ye debug.log kwimicimbi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qalisa kwakhona iKlayenti",
             "CLIENTINVALIDCONFIGTITLE": "Ukulungiswa kwemetrix.conf engavumelekanga",
-            "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho ine-setup yamasternode engavumelekanga eya kwenza uMetrix Core ukuba aphume ngokukhawuleza. Nceda khangela le fayile."
+            "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho ine-setup yamasternode engavumelekanga eya kwenza uMetrix Core ukuba aphume ngokukhawuleza. Nceda khangela le fayile.",
+            "ADDREMOTEMNTITLE": "Yongeza i-Masternode ekude",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: IPort",
+            "ADDREMOTEMNKEY": "Isitshixo sabucala seMasternode",
+            "ADDREMOTEMNTXHASH": "I-Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "I-Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Incwadi yedilesi",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Zonke iziphumo zifuna okungenani 1 ukuqinisekiswa ngaphambi kokuchitha.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Iintengiselwano zikopishwe kwi-clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Omnye wakho wokuhlawula ukuya kumaxabiso mkhulu kakhulu ukuthumela ngokukhuselekileyo. Ubuninzi buyi-90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Utshintsho lwakho lukhulu kakhulu ukuthumela ngokuphepha. Ubuninzi buyi-90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Utshintsho lwakho lukhulu kakhulu ukuthumela ngokuphepha. Ubuninzi buyi-90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Imisa imasodeode...",
+        "FAILEDTOWRITECONFIG": "Kwakukho ingxaki yokubhala kwifayile yakho ye-metrix.conf. Jonga ifayile ekhoyo kunye nokuba Altitude ineemvume zokubhala.",
+        "NOPUBLICUP": "Akukho dilesi ye-IP kawonkewonke efunyenweyo. Jonga uqhagamshelo lwakho lweintanethi kwaye uqalise kwakhona Altitude.",
+        "CONFIGURINGLOCALMN": "Iqulunqa iMasternode yendawo..."
     },
     "TIME": {
         "AFEWSECONDS": "Imizuzwana embalwa",

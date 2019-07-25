@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "پته",
             "ENABLED": "فعال شوی",
-            "NOTENABLEDTITLE": "منډویډونه فعال ندی",
-            "NOTENABLEDINSTR": "د یوې موډرنډ چلولو لپاره تاسو باید د Modeode = 1 ترتیبولو او د metrix.conf دوتنې کې 'masternodeprivkey' او 'modeodeaddr' متغیرونو په ذریعه masternodes فعالولو ته اړتیا ولرئ.",
             "STARTBUTTON": "سیمه ایز پیل کړئ",
             "STARTALIASBUTTON": "شروع کول",
-            "STARTALLBUTTON": "ټول شروع کړئ"
+            "STARTALLBUTTON": "ټول شروع کړئ",
+            "NOMASTERNODES": "تاسو میډیورډونه نه لرئ",
+            "NOMNOUTPUTS": "نه د Modeode پایلې وموندل شوې. د سیمه ییز منډوډ چلولو لپاره په ریښتیا 2،000،000 سکین ستاسو د Modeode پته ته او 15 تاییدونه انتظار ته لیږئ.",
+            "STOPBUTTON": "محلي بندول",
+            "STOPALIASBUTTON": "علي علیه وتړئ",
+            "ADDREMOTE": "ریموټ میډډډ زیات کړئ",
+            "REMOVEMN": "مینډوت لرې کړئ",
+            "ADDLOCAL": "ځایی منډول جوړ کړئ",
+            "DISABLELOCAL": "د محلي منډډ نافعال کول",
+            "LOCALNOTRUNNING": "ځایی منډډډ ندی روان دی"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "لاسلیک پیغام",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "د لننډ کور سره یوه ستونزه وه چې دا یې د پای ته رسیدو لامل ګرځیدلی. دا سپارښتنه کیږي چې د خپل د debug.log دوتنه د مسلو لپاره وګورئ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "مراجعه بیا پیل کړئ",
             "CLIENTINVALIDCONFIGTITLE": "ناباوره لنده کانونف تغیرات",
-            "CLIENTINVALIDCONFIGINFO": "ستاسو metrix.conf یو ناباوره میانډوډ جوړ کړی دی کوم چې د لننډ کور المل کیږي د سمدلاسه وتلو لپاره. لطفا دا دوتنه وګوره."
+            "CLIENTINVALIDCONFIGINFO": "ستاسو metrix.conf یو ناباوره میانډوډ جوړ کړی دی کوم چې د لننډ کور المل کیږي د سمدلاسه وتلو لپاره. لطفا دا دوتنه وګوره.",
+            "ADDREMOTEMNTITLE": "ریموټ میډډډ زیات کړئ",
+            "ADDREMOTEMNALIAS": "منینډوډ عليز",
+            "ADDREMOTEMNIP": "Modeode IP: Port",
+            "ADDREMOTEMNKEY": "منډول شخصي کیلي",
+            "ADDREMOTEMNTXHASH": "مینډود ټیکس هاش",
+            "ADDREMOTEMNTXINDEX": "مینډود ټیکسکس انڈیکس"
         },
         "ADDRESSBOOK": {
             "TITLE": "پته کتاب",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "ټول لګښتونه لږ تر لږه 1 تادیه مخکې د مصرف کولو اړتیا لري.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "د کلپ بورډ سره لیږدونه کاپي شوي",
         "TRANSACTIONOUTPUTTOOLARGE": "د پیسو لپاره ستاسو له پیسو څخه یو ډیر ډیر خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی.",
-        "TRANSACTIONCHANGETOOLARGE": "ستاسو بدلون خورا خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی."
+        "TRANSACTIONCHANGETOOLARGE": "ستاسو بدلون خورا خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی.",
+        "STOPPINGMASTERNODE": "مینډوت بندول...",
+        "FAILEDTOWRITECONFIG": "ستاسو د metrix.conf دوتنه کې لیکل کې ستونځه وه. د فایل موجودیت وګورئ او لوړې کچې د لیکلو اجازه لیکونه لري.",
+        "NOPUBLICUP": "هیڅ عامه IP پته نه موندل شوی. خپل انټرنیټ پیوستون وګورئ او لوړې کچې بیا پیل کړئ.",
+        "CONFIGURINGLOCALMN": "د سیمه ایز منینډوډ تنظیم کول..."
     },
     "TIME": {
         "AFEWSECONDS": "یو څو ثانوي",

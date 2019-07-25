@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "adres",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes nie aangeskakel nie",
-            "NOTENABLEDINSTR": "Om 'n masternode uit te voer, moet jy masternodes aktiveer deur masternode = 1 te stel en die 'masternodeprivkey'- en' masternodeaddr'-veranderlikes in jou metrix.conf-lêer op te stel.",
             "STARTBUTTON": "Begin Plaaslik",
             "STARTALIASBUTTON": "Begin alias",
-            "STARTALLBUTTON": "Begin alles"
+            "STARTALLBUTTON": "Begin alles",
+            "NOMASTERNODES": "U het geen masternodes nie",
+            "NOMNOUTPUTS": "Geen Masternode-uitsette gevind nie. Stuur presies 2.000.000 muntstukke na u Masternode-adres om 'n plaaslike Masternode te bedryf en wag vir 15 bevestigings.",
+            "STOPBUTTON": "Stop Plaaslik",
+            "STOPALIASBUTTON": "Stop alias",
+            "ADDREMOTE": "Voeg eksterne masternode by",
+            "REMOVEMN": "Verwyder Masternode",
+            "ADDLOCAL": "Stel plaaslike masternode op",
+            "DISABLELOCAL": "Deaktiveer plaaslike masternode",
+            "LOCALNOTRUNNING": "Plaaslike Masternode loop nie"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Teken boodskap",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Herbegin Kliënt",
             "CLIENTINVALIDCONFIGTITLE": "Ongeldige metrix.conf-konfigurasie",
-            "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na."
+            "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na.",
+            "ADDREMOTEMNTITLE": "Voeg eksterne masternode by",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode-privaat sleutel",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres boek",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Alle insette benodig ten minste 1 bevestiging voor besteding.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksies het na klembord gekopieer",
         "TRANSACTIONOUTPUTTOOLARGE": "Een van u betalings aan bedrae is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jou verandering is te groot om veilig te stuur. Maksimum is 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jou verandering is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Stop masternode...",
+        "FAILEDTOWRITECONFIG": "Kon nie na jou metrix.conf-lêer skryf nie. Kontroleer of die lêer bestaan en dat Altitude skryftoestemmings het.",
+        "NOPUBLICUP": "Geen openbare IP-adres gevind nie. Kontroleer u internetverbinding en herbegin Altitude.",
+        "CONFIGURINGLOCALMN": "Stel plaaslike Masternode op..."
     },
     "TIME": {
         "AFEWSECONDS": "'N Paar sekondes",

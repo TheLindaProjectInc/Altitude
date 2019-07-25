@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "адрас",
             "ENABLED": "уключана",
-            "NOTENABLEDTITLE": "Masternodes не ўключаны",
-            "NOTENABLEDINSTR": "Для запуску masternode вам неабходна ўключыць masternodes, усталяваўшы masternode = 1 і настройка «masternodeprivkey» і зменныя «masternodeaddr» у файле metrix.conf.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Пачатак Аліяс",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "У вас няма масерноду",
+            "NOMNOUTPUTS": "Высновы Masternode не знойдзеныя. Каб запусціць лакальны Masternode, адпраўце роўна 2,000,000 манет на ваш адрас Masternode і пачакайце 15 пацверджанняў.",
+            "STOPBUTTON": "Стоп Лакальны",
+            "STOPALIASBUTTON": "Спыніце псеўданім",
+            "ADDREMOTE": "Дадаць аддалены Masternode",
+            "REMOVEMN": "Выдаліць Masternode",
+            "ADDLOCAL": "Налада лакальнага Masternode",
+            "DISABLELOCAL": "Адключыць лакальны Masternode",
+            "LOCALNOTRUNNING": "Лакальны Masternode не працуе"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Уваход паведамлення",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Існаваў праблема з Ліндай Ядры, якая прымусіла яго спыніць. Гэта рэкамендуецца праверыць файл debug.log для пытанняў.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "перазагрузка кліента",
             "CLIENTINVALIDCONFIGTITLE": "Недапушчальны Канфігурацыя metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл."
+            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл.",
+            "ADDREMOTEMNTITLE": "Дадаць аддалены Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Псеўданім",
+            "ADDREMOTEMNIP": "Masternode IP: порт",
+            "ADDREMOTEMNKEY": "Прыватны ключ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Хэш",
+            "ADDREMOTEMNTXINDEX": "Індэкс Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адрасная кніга",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Усе ўваходы патрабуюць, па меншай меры, 1 пацверджання перад выдаткамі.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Аперацыі капіююцца ў буфер абмену",
         "TRANSACTIONOUTPUTTOOLARGE": "Адзін з вашай заработнай платы сум, занадта вялікі, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Вашы змены занадта вялікая, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Вашы змены занадта вялікая, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Спыненне masternode...",
+        "FAILEDTOWRITECONFIG": "Памылка запісу ў ваш файл metrix.conf. Праверце, ці існуе файл, і што Altitude мае правы на запіс.",
+        "NOPUBLICUP": "Публічны IP-адрас не знойдзены. Праверце падлучэнне да Інтэрнэту і перазапусціце вышыню.",
+        "CONFIGURINGLOCALMN": "Налада лакальнага Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Праз некалькі секунд",

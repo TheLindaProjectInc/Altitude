@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Alamat",
             "ENABLED": "Dihidupkan",
-            "NOTENABLEDTITLE": "Masternodes tidak didayakan",
-            "NOTENABLEDINSTR": "Untuk menjalankan masternode, anda perlu mengaktifkan masternodes dengan menetapkan masternode = 1 dan mengkonfigurasi pembolehubah 'masternodeprivkey' dan 'masternodeaddr' dalam fail metrix.conf anda.",
             "STARTBUTTON": "Mula Tempatan",
             "STARTALIASBUTTON": "Mula Alias",
-            "STARTALLBUTTON": "Mulakan Semua"
+            "STARTALLBUTTON": "Mulakan Semua",
+            "NOMASTERNODES": "Anda tidak mempunyai sebarang gangguan",
+            "NOMNOUTPUTS": "Tiada output Masternode dijumpai. Untuk menjalankan Masternode tempatan, hantar 2,000,000 duit syiling ke alamat Masternode anda dan tunggu 15 pengesahan.",
+            "STOPBUTTON": "Hentikan Tempatan",
+            "STOPALIASBUTTON": "Berhenti Alias",
+            "ADDREMOTE": "Tambah Masternode Jauh",
+            "REMOVEMN": "Buang Masternode",
+            "ADDLOCAL": "Setup Masternode Tempatan",
+            "DISABLELOCAL": "Lumpuhkan Masternode Tempatan",
+            "LOCALNOTRUNNING": "Masternode Tempatan Tidak Berjalan"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Tandatangan Mesej",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Metrix Core yang menyebabkan ia ditamatkan. Ia mengesyorkan untuk menyemak fail debug.log anda untuk masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Pelanggan",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak sah",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Metrix Core keluar segera. Sila semak fail ini."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Metrix Core keluar segera. Sila semak fail ini.",
+            "ADDREMOTEMNTITLE": "Tambah Masternode Jauh",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "IP Masternode: Pelabuhan",
+            "ADDREMOTEMNKEY": "Kunci Peribadi Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indeks Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Semua input memerlukan sekurang-kurangnya 1 pengesahan sebelum perbelanjaan.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan keratan",
         "TRANSACTIONOUTPUTTOOLARGE": "Salah satu bayaran anda kepada amaun terlalu besar untuk dihantar dengan selamat. Maksimum ialah 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Perubahan anda terlalu besar untuk dihantar dengan selamat. Maksimum ialah 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Perubahan anda terlalu besar untuk dihantar dengan selamat. Maksimum ialah 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Menghentikan masternode...",
+        "FAILEDTOWRITECONFIG": "Terdapat masalah menulis ke fail metrix.conf anda. Semak fail wujud dan Altitude itu mempunyai kebenaran menulis.",
+        "NOPUBLICUP": "Tiada alamat IP Awam yang ditemui. Semak sambungan internet anda dan mulakan semula Ketinggian.",
+        "CONFIGURINGLOCALMN": "Mengkonfigurasi Masternode tempatan..."
     },
     "TIME": {
         "AFEWSECONDS": "Beberapa saat",

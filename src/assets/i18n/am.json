@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "አድራሻ",
             "ENABLED": "ነቅቷል",
-            "NOTENABLEDTITLE": "ማሳታቶኖች አልነቁም",
-            "NOTENABLEDINSTR": "ሜታ ፕሮዲዩትን ለማሄድ ሜታይኔት (ማት) = 1 በማቀናበር ሜታ-ሰርቶቹን ማንቃት እና በ metrix.conf ፋይልዎ ውስጥ 'masternodeprivkey' እና 'masternodeaddr' የሚለዋወጡ ተለዋዋጭዎችን ማቃቀር ያስፈልግዎታል.",
             "STARTBUTTON": "አካባቢያዊ ይጀምሩ",
             "STARTALIASBUTTON": "ቅጽል ስም ይጀምሩ",
-            "STARTALLBUTTON": "ሁሉንም ጀምር"
+            "STARTALLBUTTON": "ሁሉንም ጀምር",
+            "NOMASTERNODES": "ምንም ማስተማሪያ ክፍሎች የሉዎትም።",
+            "NOMNOUTPUTS": "ምንም የማሽን ኮድን ውጤቶች አልገኙም ፡፡ አካባቢያዊ ማ Masodeode ን ለማካሄድ በትክክል 2,000,000 ሳንቲሞችን ወደ ማ Masternode አድራሻዎ ይላኩ እና 15 ማረጋገጫዎችን ይጠብቁ ፡፡",
+            "STOPBUTTON": "አካባቢያዊ አቁም።",
+            "STOPALIASBUTTON": "ተለዋጭ ስም አቁም ፡፡",
+            "ADDREMOTE": "የርቀት ማሳጅode ያክሉ።",
+            "REMOVEMN": "Masternode ን ያስወግዱ።",
+            "ADDLOCAL": "አካባቢያዊ ማስተርቦode ያዘጋጁ።",
+            "DISABLELOCAL": "አካባቢያዊ ማስተርቦodeን ያሰናክሉ።",
+            "LOCALNOTRUNNING": "አካባቢያዊ ማስዋቢያ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "መልዕክት ይፈርሙ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ሊንዳ ኮር ችግሩ እንዲቋረጥ ምክንያት የሆነ ችግር ነበር. ለችግሮች የእርማትዎን ስህተት ማረም እንዲመረምሩ ተመክሯል.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ደንበኛውን እንደገና አስጀምር",
             "CLIENTINVALIDCONFIGTITLE": "ልክ ያልሆነ የ metrix.conf ውቅረት",
-            "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ."
+            "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ.",
+            "ADDREMOTEMNTITLE": "የርቀት ማሳጅode ያክሉ።",
+            "ADDREMOTEMNALIAS": "ማሳጅode ተለዋጭ ስም ፡፡",
+            "ADDREMOTEMNIP": "Masternode IP: ወደብ",
+            "ADDREMOTEMNKEY": "ማሳጅode የግል ቁልፍ ፡፡",
+            "ADDREMOTEMNTXHASH": "ማሳጅode ትሪክስ ሃሽ ፡፡",
+            "ADDREMOTEMNTXINDEX": "Masternode ትሪክስ መረጃ ጠቋሚ።"
         },
         "ADDRESSBOOK": {
             "TITLE": "አድራሻ መመዝገቢያ ደብተር",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "ሁሉም ግብዓቶች ከማውጣት በፊት ቢያንስ 1 ማረጋገጫ ይጠይቃሉ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ግብይት ወደ ቅንጥብ ሰሌዳ ተቀድቷል",
         "TRANSACTIONOUTPUTTOOLARGE": "ከሚከፈልዎት ውስጥ አንዱ ክፍያ በደህንነት ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
-        "TRANSACTIONCHANGETOOLARGE": "ለውጦችዎ በደህና ሁኔታ ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው."
+        "TRANSACTIONCHANGETOOLARGE": "ለውጦችዎ በደህና ሁኔታ ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
+        "STOPPINGMASTERNODE": "የማሳደጊያ ቁልፍን በማቆም ላይ...",
+        "FAILEDTOWRITECONFIG": "በ ‹ሜሪክስክስ› ፋይልዎ ላይ መጻፍ ላይ ችግር ነበር ፡፡ ፋይሉ ካለ እና ከፍታው የመፃፍ ፈቃዶች እንዳለው ያረጋግጡ።",
+        "NOPUBLICUP": "ምንም ይፋዊ አይፒ አድራሻ አልተገኘም። የበይነመረብ ግንኙነትዎን ይፈትሹ እና ከፍታ እንደገና ይጀምሩ።",
+        "CONFIGURINGLOCALMN": "አካባቢያዊ ማ Masodeode ን በማዋቀር ላይ..."
     },
     "TIME": {
         "AFEWSECONDS": "ጥቂት ሰከንዶች",

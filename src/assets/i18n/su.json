@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "alamat",
             "ENABLED": "diaktipkeun",
-            "NOTENABLEDTITLE": "Masternodes teu diaktipkeun",
-            "NOTENABLEDINSTR": "Pikeun ngajalankeun masternode a anjeun bakal kedah ngaktipkeun masternodes ku netepkeun masternode = 1 na Konfigurasi 'masternodeprivkey' sarta 'masternodeaddr' variabel dina file metrix.conf Anjeun.",
             "STARTBUTTON": "mimitian Lokal",
             "STARTALIASBUTTON": "mimitian Alias",
-            "STARTALLBUTTON": "mimitian Sadaya"
+            "STARTALLBUTTON": "mimitian Sadaya",
+            "NOMASTERNODES": "Anjeun henteu ngagaduhan masternodes",
+            "NOMNOUTPUTS": "Teu aya kaluaran kana Masternode. Pikeun ngajalankeun Masternode lokal kirimkeun persis 2.000.000 koin kana alamat Masternode anjeun sareng antosan 15 konfirmasi.",
+            "STOPBUTTON": "Lirén Lokal",
+            "STOPALIASBUTTON": "Lirén landian",
+            "ADDREMOTE": "Tambahkeun Masternode Jauh",
+            "REMOVEMN": "Cabut Masternode",
+            "ADDLOCAL": "Setup Lokal Masternode",
+            "DISABLELOCAL": "Nonaktipkeun Masternode Lokal",
+            "LOCALNOTRUNNING": "Masternode Lokal Henteu ngajalankeun"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "tanda pesen",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah jeung Metrix Core nu geus ngabalukarkeun ka nungtungan. Éta nyarankeun mariksa berkas debug.log anjeun isu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "balikan deui klien",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Konfigurasi sah",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Metrix Core ka LN langsung. Mangga parios file ieu."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Metrix Core ka LN langsung. Mangga parios file ieu.",
+            "ADDREMOTEMNTITLE": "Tambahkeun Masternode Jauh",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode wasta Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "alamat Book",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Kabéh inputs merlukeun sahenteuna 1 konfirmasi saméméh belanja.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi ditiron ka clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Salah sahiji bayar anjeun ka jumlahna teuing badag pikeun ngirim aman. Maksimum nyaéta 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "robah anjeun badag teuing pikeun ngirim aman. Maksimum nyaéta 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "robah anjeun badag teuing pikeun ngirim aman. Maksimum nyaéta 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Ngeureunkeun masternode...",
+        "FAILEDTOWRITECONFIG": "Aya masalah nyerat sareng berkas metrix.conf anjeun. Pariksa koropakna aya na Altluhurna boga idin pikeun nulis.",
+        "NOPUBLICUP": "Teu aya alamat IP Public. Pariksa sambungan internét anjeun sareng balikkeun Luhurna.",
+        "CONFIGURINGLOCALMN": "Konfigurasi Masternode lokal..."
     },
     "TIME": {
         "AFEWSECONDS": "A sababaraha detik",

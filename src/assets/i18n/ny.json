@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adilesi",
             "ENABLED": "Yathandiza",
-            "NOTENABLEDTITLE": "Masternodes sichimathandizidwa",
-            "NOTENABLEDINSTR": "Kuti muyambe masternode muyenera kuonetsetsa masternodes poika masternode = 1 ndi kukonza 'masternodeprivkey' ndi 'masternodeaddr' zosiyanasiyana mu file metrix.conf.",
             "STARTBUTTON": "Yambani Mderalo",
             "STARTALIASBUTTON": "Yambani Zamoyo",
-            "STARTALLBUTTON": "Yambani Zonse"
+            "STARTALLBUTTON": "Yambani Zonse",
+            "NOMASTERNODES": "Mulibe masternode",
+            "NOMNOUTPUTS": "Palibe zotuluka za Masternode zomwe zapezeka. Kuti muthamangitse Masternode yakomweko kutumiza ndendende ndalama zokwana 5,000,000 ku adilesi yanu ya Masternode ndikudikirira matsimikiziro 15.",
+            "STOPBUTTON": "Imani Local",
+            "STOPALIASBUTTON": "Lekani Alias",
+            "ADDREMOTE": "Onjezani Masternode Akutali",
+            "REMOVEMN": "Chotsani Masternode",
+            "ADDLOCAL": "Kukhazikitsa Masternode",
+            "DISABLELOCAL": "Lemaza Masternode Yapafupi",
+            "LOCALNOTRUNNING": "Masternode Omwe Sathamanga"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Uthenga Wachizindikiro",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Yambiraninso Wotsatsa",
             "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa metrix.conf kosavomerezeka",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi.",
+            "ADDREMOTEMNTITLE": "Onjezani Masternode Akutali",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Bukhu la Maadiresi",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Zotsatira zonse zimafuna kutsimikizira 1 kusanayambe kugwiritsira ntchito.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Zosinthidwa zimakopera ku bolodipidi",
         "TRANSACTIONOUTPUTTOOLARGE": "Imodzi mwa malipiro anu kuti ndalama ndi zazikulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Kusintha kwanu ndi kwakukulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Kusintha kwanu ndi kwakukulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Kuyimitsa masternode...",
+        "FAILEDTOWRITECONFIG": "Panali vuto polembera fayilo yanu ya metrix.conf. Onani fayilo kuti ilipo ndipo Altitude ili ndi zilolezo zolemba.",
+        "NOPUBLICUP": "Palibe adilesi ya umma pagulu yomwe yapezeka. Onani kulumikizidwa kwanu kwa intaneti ndikuyambiranso Altitude.",
+        "CONFIGURINGLOCALMN": "Kukhazikitsa Masternode yakomweko..."
     },
     "TIME": {
         "AFEWSECONDS": "Masekondi pang'ono",

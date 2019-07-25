@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Διεύθυνση",
             "ENABLED": "Ενεργοποιήθηκε",
-            "NOTENABLEDTITLE": "Δεν είναι ενεργοποιημένες οι μάστορες",
-            "NOTENABLEDINSTR": "Για να εκτελέσετε ένα masternode θα χρειαστεί να ενεργοποιήσετε τους masternodes ρυθμίζοντας το masternode = 1 και διαμορφώνοντας τις μεταβλητές \"masternodeprivkey\" και \"masternodeaddr\" στο αρχείο metrix.conf.",
             "STARTBUTTON": "Ξεκινήστε το τοπικό",
             "STARTALIASBUTTON": "Ξεκινήστε το ψευδώνυμο",
-            "STARTALLBUTTON": "Ξεκινήστε όλες"
+            "STARTALLBUTTON": "Ξεκινήστε όλες",
+            "NOMASTERNODES": "Δεν έχετε καθόλου μαστερώδη",
+            "NOMNOUTPUTS": "Δεν βρέθηκαν εξόδους Masternode. Για να εκτελέσετε ένα τοπικό Masternode στείλετε ακριβώς 2.000.000 κέρματα στη διεύθυνση Masternode σας και περιμένετε 15 επιβεβαιώσεις.",
+            "STOPBUTTON": "Σταματήστε τοπικά",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Προσθέστε το Remote Masternode",
+            "REMOVEMN": "Αφαιρέστε το Masternode",
+            "ADDLOCAL": "Ρύθμιση Τοπικού Masternode",
+            "DISABLELOCAL": "Απενεργοποιήστε το τοπικό Masternode",
+            "LOCALNOTRUNNING": "Τοπικό Masternode δεν λειτουργεί"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Υπογραφή μηνύματος",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Υπήρξε ένα πρόβλημα με την Metrix Core που την έχει προκαλέσει να τερματίσει. Συνιστάται να ελέγξετε το αρχείο debug.log για θέματα.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Επανεκκινήστε τον υπολογιστή",
             "CLIENTINVALIDCONFIGTITLE": "Μη έγκυρη διαμόρφωση του metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Το σύστημά σας metrix.conf έχει μη έγκυρη ρύθμιση masternode που θα προκαλέσει την άμεση έξοδο της Metrix Core. Ελέγξτε αυτό το αρχείο."
+            "CLIENTINVALIDCONFIGINFO": "Το σύστημά σας metrix.conf έχει μη έγκυρη ρύθμιση masternode που θα προκαλέσει την άμεση έξοδο της Metrix Core. Ελέγξτε αυτό το αρχείο.",
+            "ADDREMOTEMNTITLE": "Προσθέστε το Remote Masternode",
+            "ADDREMOTEMNALIAS": "Μάστερντο Άλις",
+            "ADDREMOTEMNIP": "Masternode IP: Θύρα",
+            "ADDREMOTEMNKEY": "Ιδιωτικό κλειδί Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Δείκτης Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Βιβλίο διευθύνσεων",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Όλες οι εισροές απαιτούν τουλάχιστον 1 επιβεβαίωση πριν τη δαπάνη.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Οι συναλλαγές αντιγράφηκαν στο πρόχειρο",
         "TRANSACTIONOUTPUTTOOLARGE": "Μία από τις αμοιβές σας σε ποσά είναι πολύ μεγάλη για να στείλετε με ασφάλεια. Το ανώτατο όριο είναι 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Η αλλαγή σας είναι πολύ μεγάλη για να στείλετε με ασφάλεια. Το ανώτατο όριο είναι 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Η αλλαγή σας είναι πολύ μεγάλη για να στείλετε με ασφάλεια. Το ανώτατο όριο είναι 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Διακοπή της κυριότητας...",
+        "FAILEDTOWRITECONFIG": "Παρουσιάστηκε πρόβλημα κατά την εγγραφή στο αρχείο metrix.conf. Ελέγξτε ότι το αρχείο υπάρχει και ότι το Υψόμετρο έχει δικαιώματα εγγραφής.",
+        "NOPUBLICUP": "Δεν βρέθηκε δημόσια διεύθυνση IP. Ελέγξτε τη σύνδεση στο Internet και ξεκινήστε ξανά το Υψόμετρο.",
+        "CONFIGURINGLOCALMN": "Ρύθμιση τοπικού Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Μερικά δευτερόλεπτα",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Osoite",
             "ENABLED": "käytössä",
-            "NOTENABLEDTITLE": "Masternodes ei ole käytössä",
-            "NOTENABLEDINSTR": "Masternodin suorittaminen edellyttää masternodien ottamista käyttöön asettamalla masternode = 1 ja määrittämällä \"masternodeprivkey\" ja \"masternodeaddr\" muuttujat metrix.conf-tiedostossasi.",
             "STARTBUTTON": "Aloita paikalliset",
             "STARTALIASBUTTON": "Aloita Alias",
-            "STARTALLBUTTON": "Aloita kaikki"
+            "STARTALLBUTTON": "Aloita kaikki",
+            "NOMASTERNODES": "Sinulla ei ole mitään masternodeja",
+            "NOMNOUTPUTS": "Masternode-lähtöjä ei löytynyt. Jos haluat suorittaa paikallisen Masternoden, lähetä Masternode-osoitteeseen täsmälleen 2 000 000 kolikkoa ja odota 15 vahvistusta.",
+            "STOPBUTTON": "Pysäytä paikallinen",
+            "STOPALIASBUTTON": "Lopeta Alias",
+            "ADDREMOTE": "Lisää etä Masternode",
+            "REMOVEMN": "Poista Masternode",
+            "ADDLOCAL": "Aseta paikallinen Masternode",
+            "DISABLELOCAL": "Poista paikallinen Masternode käytöstä",
+            "LOCALNOTRUNNING": "Paikallinen Masternode ei ole käynnissä"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Kirjaa viesti",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Käynnistä asiakas uudelleen",
             "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
-            "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto."
+            "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto.",
+            "ADDREMOTEMNTITLE": "Lisää etä Masternode",
+            "ADDREMOTEMNALIAS": "Masternode-alias",
+            "ADDREMOTEMNIP": "Masternode IP: Portti",
+            "ADDREMOTEMNKEY": "Masternode-yksityinen avain",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx -indeksi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Kaikki tulot vaativat vähintään yhden vahvistuksen ennen käyttöä.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiot, jotka on kopioitu leikepöydälle",
         "TRANSACTIONOUTPUTTOOLARGE": "Yksi palkkasi summista on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Muutos on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Muutos on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
+        "STOPPINGMASTERNODE": "Masternodin pysäyttäminen...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf-tiedostoon kirjoitettaessa oli ongelma. Tarkista, että tiedosto on olemassa ja että korkeudessa on kirjoitusoikeudet.",
+        "NOPUBLICUP": "Ei julkista IP-osoitetta. Tarkista Internet-yhteys ja käynnistä korkeus.",
+        "CONFIGURINGLOCALMN": "Paikallisen Masternoden määrittäminen..."
     },
     "TIME": {
         "AFEWSECONDS": "Muutama sekunti",

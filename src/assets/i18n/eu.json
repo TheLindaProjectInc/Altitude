@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Helbidea",
             "ENABLED": "Gaituta",
-            "NOTENABLEDTITLE": "Masternodes ez dago gaituta",
-            "NOTENABLEDINSTR": "Masternode bat exekutatzeko, masternodes gaitu beharko dituzu masternode = 1 ezarri eta 'masternodeprivkey' eta 'masternodeaddr' aldagaiak konfiguratuz zure metrix.conf fitxategian.",
             "STARTBUTTON": "Hasi tokikoa",
             "STARTALIASBUTTON": "Hasi aliasa",
-            "STARTALLBUTTON": "Hasi dena"
+            "STARTALLBUTTON": "Hasi dena",
+            "NOMASTERNODES": "Ez duzu masternodesik",
+            "NOMNOUTPUTS": "Ez da irteera masternodorik aurkitu. Tokiko Masternode bat exekutatzeko, bidali 2.000.000 txanpon zehatz zure Masternode helbidera eta itxaron 15 baieztapen.",
+            "STOPBUTTON": "Gelditu lokala",
+            "STOPALIASBUTTON": "Gelditu aliasa",
+            "ADDREMOTE": "Gehitu urruneko masternodoa",
+            "REMOVEMN": "Kendu Masternode",
+            "ADDLOCAL": "Konfiguratu lokala Masternode",
+            "DISABLELOCAL": "Desgaitu Local Masternode",
+            "LOCALNOTRUNNING": "Ez da lokala exekutatzen"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sinatu mezua",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Arazo bat izan da Metrix Core-ekin amaitzeko. Gomendagarria da zure debug.log fitxategiaren egiaztatzea gaietarako.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Berrabiarazi bezeroa",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfigurazioa baliogabea da",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ek konfigurazio okerra du, Metrix Core-ek berehala irteteko. Egiaztatu fitxategi hau."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ek konfigurazio okerra du, Metrix Core-ek berehala irteteko. Egiaztatu fitxategi hau.",
+            "ADDREMOTEMNTITLE": "Gehitu urruneko masternodoa",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: ataka",
+            "ADDREMOTEMNKEY": "Masternode gako pribatua",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide liburu",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Sarrera guztiak gutxienez 1 berrespena behar dira gastua baino lehen.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Arbelean kopiatutako transakzioak",
         "TRANSACTIONOUTPUTTOOLARGE": "Ordaindu beharreko zenbatekoetako bat handiegia da segurtasunez bidaltzeko. Gehienez 90.071.992.54740992 da.",
-        "TRANSACTIONCHANGETOOLARGE": "Zure aldaketa handiegia da modu seguruan bidaltzeko. Gehienez 90.071.992.54740992 da."
+        "TRANSACTIONCHANGETOOLARGE": "Zure aldaketa handiegia da modu seguruan bidaltzeko. Gehienez 90.071.992.54740992 da.",
+        "STOPPINGMASTERNODE": "Masternode gelditu...",
+        "FAILEDTOWRITECONFIG": "Arazo bat gertatu da zure metrix.conf fitxategian idaztean. Egiaztatu fitxategia existitzen dela eta Altitudea idazteko baimenak ditu.",
+        "NOPUBLICUP": "Ez da IP helbide publikorik aurkitu. Begiratu zure Interneteko konexioa eta abiarazi Altitude.",
+        "CONFIGURINGLOCALMN": "Tokiko Masternode konfiguratzea..."
     },
     "TIME": {
         "AFEWSECONDS": "Segundo batzuk",

@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Địa chỉ nhà",
             "ENABLED": "Đã bật",
-            "NOTENABLEDTITLE": "Masternodes không được kích hoạt",
-            "NOTENABLEDINSTR": "Để chạy mã chính, bạn sẽ cần bật mã chủ bằng cách đặt masternode = 1 và định cấu hình các biến 'masternodeprivkey' và 'masternodeaddr' trong tệp metrix.conf của bạn.",
             "STARTBUTTON": "Bắt đầu địa phương",
             "STARTALIASBUTTON": "Bắt đầu bí danh",
-            "STARTALLBUTTON": "Bắt đầu tất cả"
+            "STARTALLBUTTON": "Bắt đầu tất cả",
+            "NOMASTERNODES": "Bạn không có bất kỳ bản gốc nào",
+            "NOMNOUTPUTS": "Không tìm thấy đầu ra Masternode. Để chạy Masternode cục bộ, hãy gửi chính xác 2.000.000 xu đến địa chỉ Masternode của bạn và chờ 15 xác nhận.",
+            "STOPBUTTON": "Dừng cục bộ",
+            "STOPALIASBUTTON": "Dừng bí danh",
+            "ADDREMOTE": "Thêm Masternode từ xa",
+            "REMOVEMN": "Xóa Masternode",
+            "ADDLOCAL": "Thiết lập Masternode cục bộ",
+            "DISABLELOCAL": "Vô hiệu hóa mã nguồn cục bộ",
+            "LOCALNOTRUNNING": "Masternode cục bộ không chạy"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Ký tin nhắn",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Có một vấn đề với Metrix Core đã khiến nó chấm dứt. Bạn nên kiểm tra tệp debug.log của mình để biết các vấn đề.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Khởi động lại khách hàng",
             "CLIENTINVALIDCONFIGTITLE": "Cấu hình metrix.conf không hợp lệ",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này.",
+            "ADDREMOTEMNTITLE": "Thêm Masternode từ xa",
+            "ADDREMOTEMNALIAS": "Bí danh Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Cổng",
+            "ADDREMOTEMNKEY": "Khóa riêng Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Chỉ số Masterxode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Sổ địa chỉ",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Tất cả các đầu vào yêu cầu ít nhất 1 xác nhận trước khi chi tiêu.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Giao dịch được sao chép vào clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Một trong số tiền bạn trả cho số tiền quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Thay đổi của bạn quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Thay đổi của bạn quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992.",
+        "STOPPINGMASTERNODE": "Dừng chế độ chính...",
+        "FAILEDTOWRITECONFIG": "Đã xảy ra sự cố khi ghi vào tệp metrix.conf của bạn. Kiểm tra tệp tồn tại và Độ cao có quyền ghi.",
+        "NOPUBLICUP": "Không tìm thấy địa chỉ IP công cộng. Kiểm tra kết nối internet của bạn và khởi động lại Độ cao.",
+        "CONFIGURINGLOCALMN": "Định cấu hình Masternode cục bộ..."
     },
     "TIME": {
         "AFEWSECONDS": "Một vài giây",

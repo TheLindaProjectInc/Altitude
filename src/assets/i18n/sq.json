@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adresë",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes nuk aktivizohen",
-            "NOTENABLEDINSTR": "Për të drejtuar një masternode ju do të duhet të aktivizoni masternodes duke vendosur masternode = 1 dhe konfigurimin e variablave 'masternodeprivkey' dhe 'masternodeaddr' në skedarin tuaj metrix.conf.",
             "STARTBUTTON": "Filloni Lokale",
             "STARTALIASBUTTON": "Filloni Alias",
-            "STARTALLBUTTON": "Filloni të gjitha"
+            "STARTALLBUTTON": "Filloni të gjitha",
+            "NOMASTERNODES": "Ju nuk keni ndonjë masternodes",
+            "NOMNOUTPUTS": "Nuk u gjetën rezultate Masternode. Për të drejtuar një Masternode lokale dërgoni saktësisht 2.000.000 monedha në adresën tuaj Masternode dhe të presin për 15 konfirmime.",
+            "STOPBUTTON": "Stop lokale",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Shto Remote Masternode",
+            "REMOVEMN": "Hiq Masternode",
+            "ADDLOCAL": "Vendosni Masternode lokale",
+            "DISABLELOCAL": "Çaktivizo Masternode lokale",
+            "LOCALNOTRUNNING": "Masternode lokale nuk po vrapon"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Mesazhi i mesazhit",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Metrix Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rinis Klientin",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurimi metrix.conf i pavlefshëm",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar.",
+            "ADDREMOTEMNTITLE": "Shto Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indeksi Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i adresave",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Të gjitha inputet kërkojnë të paktën 1 konfirmim para se të shpenzohen.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksionet kopjohen në clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Një nga pagesat tuaja në shuma është shumë e madhe për t'u dërguar në mënyrë të sigurtë. Maksimumi është 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ndryshimi yt është shumë i madh për t'u dërguar në mënyrë të sigurt. Maksimumi është 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ndryshimi yt është shumë i madh për t'u dërguar në mënyrë të sigurt. Maksimumi është 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Ndalimi i masternode...",
+        "FAILEDTOWRITECONFIG": "Kishte një problem me shkrim në skedarin tuaj metrix.conf. Kontrolloni ekzistojnë skedarët dhe lartësia ka leje për shkrim.",
+        "NOPUBLICUP": "Nuk u gjet asnjë adresë IP publike. Kontrolloni lidhjen tuaj në internet dhe rinisni Lartësinë.",
+        "CONFIGURINGLOCALMN": "Konfigurimi i Masternode lokale..."
     },
     "TIME": {
         "AFEWSECONDS": "Disa sekonda",

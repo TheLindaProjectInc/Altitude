@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Chaw nyob",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Masternodes tsis tau tso cai",
-            "NOTENABLEDINSTR": "Khiav lub nplais pobzeb koj yuav xav kom pab kom tau kev ua haujlwm masternode los ntawm kev teeming masitzode = 1 thiab configure 'masternodeprivkey' thiab 'masternodeaddr' zog rau hauv koj cov ntaub ntawv metrix.conf.",
             "STARTBUTTON": "Pib hauv zos",
             "STARTALIASBUTTON": "Pib Alias",
-            "STARTALLBUTTON": "Pib Txhua"
+            "STARTALLBUTTON": "Pib Txhua",
+            "NOMASTERNODES": "Koj tsis muaj lwm tus masternos",
+            "NOMNOUTPUTS": "Tsis muaj Masternode tawm kev pom. Kom khiav ib lub zos Masternode xa raws nraim 2,000,000 npib rau koj qhov chaw nyob Masternode thiab tos 15 qhov kev pom zoo.",
+            "STOPBUTTON": "Nres Chaw",
+            "STOPALIASBUTTON": "Nres Alias",
+            "ADDREMOTE": "Ntxiv Remote Masternode",
+            "REMOVEMN": "Tshem Cov Ncauj Lus",
+            "ADDLOCAL": "Teeb hauv zos Masternode",
+            "DISABLELOCAL": "Lov tes taw hauv zos Masternode",
+            "LOCALNOTRUNNING": "Hauv zos Masternode tsis khiav"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Tsav Xov Xwm",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj ib qho teeb meem nrog Metrix Core uas tau ua rau nws xaus. Nws yog pom zoo kom xyuas koj cov ntaub ntawv debug.log rau cov teeb meem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rov Qab Client",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Koj tus metrix.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Metrix Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no."
+            "CLIENTINVALIDCONFIGINFO": "Koj tus metrix.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Metrix Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no.",
+            "ADDREMOTEMNTITLE": "Ntxiv Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Cai",
+            "ADDREMOTEMNIP": "Masternode tus IP: chaw nres nkoj",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Chaw Nyob Hauv Phau Ntawv",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Tag nrho cov tswv yim yuav tsum tau tsawg kawg 1 lus cog lus ua ntej siv.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Cov mauj luam mus luam ntawv",
         "TRANSACTIONOUTPUTTOOLARGE": "Ib qho ntawm koj cov nyiaj them rau cov nqi yog loj heev rau kev xyuam xim xa. Tshaj siab tshaj yog 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Koj qhov kev hloov loj dhau los ua kom muaj kev nyab xeeb. Tshaj siab tshaj yog 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Koj qhov kev hloov loj dhau los ua kom muaj kev nyab xeeb. Tshaj siab tshaj yog 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Tsav zais masternode...",
+        "FAILEDTOWRITECONFIG": "Muaj ib qho teeb meem sau ntawv rau koj cov ntaub ntawv metrix.conf. Saib cov ntaub ntawv tshwm sim thiab tias Altitude muaj sau ntawv tso cai.",
+        "NOPUBLICUP": "Tsis pub pej xeem IP chaw nyob. Xyuas koj qhov kev twb kev txuas hauv internet thiab pib dua Altitude.",
+        "CONFIGURINGLOCALMN": "Configuring Masitzode hauv zos..."
     },
     "TIME": {
         "AFEWSECONDS": "Ob peb seconds",

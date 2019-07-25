@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Address",
             "ENABLED": "Pinagana",
-            "NOTENABLEDTITLE": "Hindi pinagana ang Masternodes",
-            "NOTENABLEDINSTR": "Upang magpatakbo ng isang masternode kakailanganin mong paganahin ang masternodes sa pamamagitan ng pagtatakda ng masternode = 1 at pag-configure ng mga 'masternodeprivkey' at 'masternodeaddr' na mga variable sa iyong metrix.conf file.",
             "STARTBUTTON": "Simulan ang Lokal",
             "STARTALIASBUTTON": "Simulan ang Alias",
-            "STARTALLBUTTON": "Simulan ang Lahat"
+            "STARTALLBUTTON": "Simulan ang Lahat",
+            "NOMASTERNODES": "Wala kang anumang masternodes",
+            "NOMNOUTPUTS": "Walang nakita na mga output ng Masternode. Upang magpatakbo ng isang lokal na Masternode magpadala ng eksaktong 2,000,000 mga barya sa iyong address sa Masternode at maghintay para sa 15 mga kumpirmasyon.",
+            "STOPBUTTON": "Itigil ang Lokal",
+            "STOPALIASBUTTON": "Itigil ang Alias",
+            "ADDREMOTE": "Magdagdag ng Remote Masternode",
+            "REMOVEMN": "Alisin ang Masternode",
+            "ADDLOCAL": "I-setup ang Lokal na Masternode",
+            "DISABLELOCAL": "Huwag paganahin ang Lokal na Masternode",
+            "LOCALNOTRUNNING": "Lokal na Masternode Hindi Tumatakbo"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Mag-sign Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Nagkaroon ng problema sa Metrix Core na naging dahilan upang wakasan ito. Inirerekumenda na suriin ang iyong debug.log file para sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "I-restart ang Client",
             "CLIENTINVALIDCONFIGTITLE": "Di-wastong Configuration ng metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ang iyong metrix.conf ay may hindi wastong pag-setup ng masternode na kung saan ay magiging sanhi agad si Metrix Core upang lumabas. Mangyaring suriin ang file na ito."
+            "CLIENTINVALIDCONFIGINFO": "Ang iyong metrix.conf ay may hindi wastong pag-setup ng masternode na kung saan ay magiging sanhi agad si Metrix Core upang lumabas. Mangyaring suriin ang file na ito.",
+            "ADDREMOTEMNTITLE": "Magdagdag ng Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ang lahat ng mga input ay nangangailangan ng hindi bababa sa 1 kumpirmasyon bago ang paggastos.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nakopya ang mga transaksyon sa clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Isa sa iyong bayad sa mga halaga ay masyadong malaki upang maipadala nang ligtas. Ang pinakamataas ay 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Napakalaki ng iyong pagbabago upang maipadala nang ligtas. Ang pinakamataas ay 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Napakalaki ng iyong pagbabago upang maipadala nang ligtas. Ang pinakamataas ay 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Paghinto ng masternode...",
+        "FAILEDTOWRITECONFIG": "Nagkaroon ng problema sa pagsusulat sa iyong metrix.conf file. Tingnan ang umiiral na file at ang Altitude ay may mga pahintulot na magsulat.",
+        "NOPUBLICUP": "Walang nakitang pampublikong IP address. Suriin ang iyong koneksyon sa internet at i-restart ang Altitude.",
+        "CONFIGURINGLOCALMN": "Pag-configure ng lokal na Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Mga ilang segundo",

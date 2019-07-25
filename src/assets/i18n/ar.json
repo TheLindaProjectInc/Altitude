@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "عنوان",
             "ENABLED": "تمكين",
-            "NOTENABLEDTITLE": "Masternodes غير ممكّن",
-            "NOTENABLEDINSTR": "لتشغيل masternode ، ستحتاج إلى تمكين masternodes عن طريق تعيين masternode = 1 وتكوين متغيري masternodeprivkey و masternodeaddr في ملف metrix.conf الخاص بك.",
             "STARTBUTTON": "البدء المحلية",
             "STARTALIASBUTTON": "ابدأ الاسم المستعار",
-            "STARTALLBUTTON": "ابدأ الكل"
+            "STARTALLBUTTON": "ابدأ الكل",
+            "NOMASTERNODES": "ليس لديك أي أعمدة",
+            "NOMNOUTPUTS": "لم يتم العثور على مخرجات Masternode. لتشغيل Masternode محلي ، أرسل بالضبط 2،000،000 قطعة نقدية إلى عنوان Masternode الخاص بك وانتظر 15 تأكيدًا.",
+            "STOPBUTTON": "توقف المحلية",
+            "STOPALIASBUTTON": "وقف الاسم المستعار",
+            "ADDREMOTE": "إضافة Masternode البعيد",
+            "REMOVEMN": "إزالة Masternode",
+            "ADDLOCAL": "إعداد Masternode المحلي",
+            "DISABLELOCAL": "تعطيل Masternode المحلية",
+            "LOCALNOTRUNNING": "Masternode المحلي لا يعمل"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "رسالة التوقيع",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "كانت هناك مشكلة مع ليندا كور التي تسببت في إنهاؤها. من المستحسن التحقق من ملف debug.log الخاص بك للتعرف على المشكلات.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "إعادة تشغيل العميل",
             "CLIENTINVALIDCONFIGTITLE": "تكوين metrix.conf غير صالح",
-            "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج metrix.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Metrix Core على الفور. يرجى التحقق من هذا الملف."
+            "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج metrix.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Metrix Core على الفور. يرجى التحقق من هذا الملف.",
+            "ADDREMOTEMNTITLE": "إضافة Masternode البعيد",
+            "ADDREMOTEMNALIAS": "الاسم المستعار ماستر",
+            "ADDREMOTEMNIP": "IP Masternode: منفذ",
+            "ADDREMOTEMNKEY": "المفتاح الخاص Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "مؤشر Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "دليل العناوين",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "تتطلب جميع المدخلات تأكيدًا واحدًا على الأقل قبل الإنفاق.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "المعاملات المنسوخة إلى الحافظة",
         "TRANSACTIONOUTPUTTOOLARGE": "أحد أموالك المدفوعة للمبالغ كبير جدًا بحيث لا يمكن إرسالها بأمان. الحد الأقصى هو 90،071،992،474740992.",
-        "TRANSACTIONCHANGETOOLARGE": "تغييرك كبير جدًا بحيث لا يمكن إرساله بأمان. الحد الأقصى هو 90،071،992،474740992."
+        "TRANSACTIONCHANGETOOLARGE": "تغييرك كبير جدًا بحيث لا يمكن إرساله بأمان. الحد الأقصى هو 90،071،992،474740992.",
+        "STOPPINGMASTERNODE": "جارٍ إيقاف masternode...",
+        "FAILEDTOWRITECONFIG": "حدثت مشكلة في الكتابة إلى ملف metrix.conf الخاص بك. تحقق من وجود الملف وأن Altitude لديه أذونات الكتابة.",
+        "NOPUBLICUP": "لم يتم العثور على عنوان IP العام. تحقق من اتصالك بالإنترنت وأعد تشغيل Altitude.",
+        "CONFIGURINGLOCALMN": "تكوين Masternode المحلي..."
     },
     "TIME": {
         "AFEWSECONDS": "بضع ثوان",

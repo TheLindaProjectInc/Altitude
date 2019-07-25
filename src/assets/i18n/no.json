@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adresse",
             "ENABLED": "aktivert",
-            "NOTENABLEDTITLE": "Masternoder ikke aktivert",
-            "NOTENABLEDINSTR": "For å kjøre en masternode må du aktivere masternoder ved å sette masternode = 1 og konfigurere 'masternodeprivkey' og 'masternodeaddr' variabler i metrix.conf filen.",
             "STARTBUTTON": "Start Lokal",
             "STARTALIASBUTTON": "Start alias",
-            "STARTALLBUTTON": "Start alle"
+            "STARTALLBUTTON": "Start alle",
+            "NOMASTERNODES": "Du har ingen masternoder",
+            "NOMNOUTPUTS": "Ingen Masternode-utganger funnet. For å kjøre en lokal Masternode, send nøyaktig 2.000.000 mynter til din Masternode-adresse og vent på 15 bekreftelser.",
+            "STOPBUTTON": "Stopp lokalt",
+            "STOPALIASBUTTON": "Stopp Alias",
+            "ADDREMOTE": "Legg til ekstern masternode",
+            "REMOVEMN": "Fjern Masternode",
+            "ADDLOCAL": "Konfigurer lokal masternode",
+            "DISABLELOCAL": "Deaktiver lokal masternode",
+            "LOCALNOTRUNNING": "Lokal masternode kjører ikke"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Signer melding",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Det var et problem med Metrix Core som har forårsaket det å si opp. Det anbefales å sjekke debug.log-filen din for problemer.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Start Klient på nytt",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf Konfigurasjon",
-            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har et ugyldig masternodeoppsett som vil føre til at Metrix Core avsluttes umiddelbart. Vennligst sjekk denne filen."
+            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har et ugyldig masternodeoppsett som vil føre til at Metrix Core avsluttes umiddelbart. Vennligst sjekk denne filen.",
+            "ADDREMOTEMNTITLE": "Legg til ekstern masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode privat nøkkel",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebok",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Alle innganger krever minst 1 bekreftelse før utgifter.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjoner kopiert til utklippstavlen",
         "TRANSACTIONOUTPUTTOOLARGE": "En av betalingen til beløp er for stor til å sende trygt. Maksimum er 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Endringen din er for stor til å sende trygt. Maksimum er 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Endringen din er for stor til å sende trygt. Maksimum er 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Stopper masternode...",
+        "FAILEDTOWRITECONFIG": "Det oppsto et problem med å skrive til metrix.conf-filen. Sjekk at filen eksisterer, og at Altitude har skrivetillatelser.",
+        "NOPUBLICUP": "Ingen offentlig IP-adresse funnet. Sjekk internettforbindelsen din og start Altitude på nytt.",
+        "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Noen få sekunder",

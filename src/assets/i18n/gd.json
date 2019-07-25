@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Seòladh",
             "ENABLED": "Cumhachdan",
-            "NOTENABLEDTITLE": "Didòmhnaich",
-            "NOTENABLEDINSTR": "Gus ruith masternode bidh agad ri comas a thoirt do sheòlagan le bhith a 'suidheachadh masternode = 1 agus a' rèiteachadh atharrachaidhean 'masternodeprivkey' agus 'masternodeaddr' anns a 'bhile agad metrix.conf.",
             "STARTBUTTON": "Tòisich Ionad",
             "STARTALIASBUTTON": "Tòisichidh Alias",
-            "STARTALLBUTTON": "Tòisich a h-uile"
+            "STARTALLBUTTON": "Tòisich a h-uile",
+            "NOMASTERNODES": "Cha bhi masternodes agad",
+            "NOMNOUTPUTS": "Cha deach toraidhean Masternode a lorg. Gus Masternode a ruith cuir fios dìreach 2,000,000 bonn gu do seòladh Masternode agus feitheamh ri 15 daingneachadh.",
+            "STOPBUTTON": "Stad ionadail",
+            "STOPALIASBUTTON": "Stad Alias",
+            "ADDREMOTE": "Cuir Remote Masternode Cuir ris",
+            "REMOVEMN": "Thoir air falbh Masternode",
+            "ADDLOCAL": "Setup Local Masternode",
+            "DISABLELOCAL": "Cuir às do Local Masternode",
+            "LOCALNOTRUNNING": "Local Masternode Chan eil a ’ruith"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Teachdaireachd Clàraidh",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bha duilgheadas ann le Metrix Core a tha air adhbharachadh crìoch a chur air. Tha e air a mholadh airson sùil a thoirt air do fhaidhle debug.log airson cùisean.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ath-thionndaidh Client",
             "CLIENTINVALIDCONFIGTITLE": "Configuration neo-dhligheach metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Tha do shuidheachadh metrix.conf ann an suidheachadh neo-dhligheach a bhios a 'toirt air Metrix Core fàgail sa bhad. Thoir sùil air an fhaidhle seo."
+            "CLIENTINVALIDCONFIGINFO": "Tha do shuidheachadh metrix.conf ann an suidheachadh neo-dhligheach a bhios a 'toirt air Metrix Core fàgail sa bhad. Thoir sùil air an fhaidhle seo.",
+            "ADDREMOTEMNTITLE": "Cuir Remote Masternode Cuir ris",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "IP Masternode: Port",
+            "ADDREMOTEMNKEY": "Iuchair phrìobhaideach Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Clàr-amais Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar-seòlaidh",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Feumaidh a h-uile cur-a-steach co-dhiù 1 dearbhadh mus cosg e.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Gnìomhan air an lethbhreacadh gu clàr-clip",
         "TRANSACTIONOUTPUTTOOLARGE": "Tha aon de do phàigheadh gu sùimeannan ro mhòr airson cuir gu sàbhailte. Is e an àireamh as àirde 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Tha an t-atharrachadh ro mhòr airson a chuir gu sàbhailte. Is e an àireamh as àirde 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Tha an t-atharrachadh ro mhòr airson a chuir gu sàbhailte. Is e an àireamh as àirde 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "A ’stad masternode...",
+        "FAILEDTOWRITECONFIG": "Bha duilgheadas ann a ’sgrìobhadh chun fhaidhle metrix.conf. Dèan cinnteach gu bheil am faidhle ann agus gu bheil cead aig Altitude airson ceadan a sgrìobhadh.",
+        "NOPUBLICUP": "Cha deach seòladh IP poblach a lorg. Thoir sùil air a ’cheangal eadar-lìn agad agus tòisich a-rithist Àirde.",
+        "CONFIGURINGLOCALMN": "A ’rèiteach Masternode ionadail..."
     },
     "TIME": {
         "AFEWSECONDS": "Dà dhiog",

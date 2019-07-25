@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adres",
             "ENABLED": "Włączone",
-            "NOTENABLEDTITLE": "Masternodes nie jest włączony",
-            "NOTENABLEDINSTR": "Aby uruchomić masternodę, musisz włączyć masternody, ustawiając masternode = 1 i konfigurując zmienne \"masternodeprivkey\" i \"masternodeaddr\" w pliku metrix.conf.",
             "STARTBUTTON": "Uruchom lokalnie",
             "STARTALIASBUTTON": "Uruchom Alias",
-            "STARTALLBUTTON": "Rozpocznij wszystko"
+            "STARTALLBUTTON": "Rozpocznij wszystko",
+            "NOMASTERNODES": "Nie masz żadnych masternodes",
+            "NOMNOUTPUTS": "Nie znaleziono wyjść Masternode. Aby uruchomić lokalny Masternode, wyślij dokładnie 2 000 000 monet na swój adres Masternode i poczekaj na 15 potwierdzeń.",
+            "STOPBUTTON": "Zatrzymaj lokalnie",
+            "STOPALIASBUTTON": "Zatrzymaj Alias",
+            "ADDREMOTE": "Dodaj zdalny masternode",
+            "REMOVEMN": "Usuń masternode",
+            "ADDLOCAL": "Ustaw lokalny masternode",
+            "DISABLELOCAL": "Wyłącz lokalny masternode",
+            "LOCALNOTRUNNING": "Lokalny masternode nie działa"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Podpisz wiadomość",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Wystąpił problem z Metrix Core, który spowodował jej zakończenie. Zaleca się sprawdzenie pliku debug.log w poszukiwaniu problemów.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Zrestartuj klienta",
             "CLIENTINVALIDCONFIGTITLE": "Nieprawidłowa konfiguracja metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Twój metrix.conf ma nieprawidłową konfigurację masternodu, która spowoduje natychmiastowe wyjście Lindy Core. Sprawdź ten plik."
+            "CLIENTINVALIDCONFIGINFO": "Twój metrix.conf ma nieprawidłową konfigurację masternodu, która spowoduje natychmiastowe wyjście Lindy Core. Sprawdź ten plik.",
+            "ADDREMOTEMNTITLE": "Dodaj zdalny masternode",
+            "ADDREMOTEMNALIAS": "Alias masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Klucz prywatny trybu głównego",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Książka adresowa",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Wszystkie nakłady wymagają co najmniej 1 potwierdzenia przed wydaniem.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcje skopiowane do schowka",
         "TRANSACTIONOUTPUTTOOLARGE": "Jedna z wypłat do kwot jest zbyt duża, aby można ją było bezpiecznie wysłać. Maksymalna to 90 071,922,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Twoja zmiana jest zbyt duża, aby bezpiecznie wysłać. Maksymalna to 90 071,922,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Twoja zmiana jest zbyt duża, aby bezpiecznie wysłać. Maksymalna to 90 071,922,54740992.",
+        "STOPPINGMASTERNODE": "Zatrzymywanie trybu głównego...",
+        "FAILEDTOWRITECONFIG": "Wystąpił problem podczas zapisywania do pliku metrix.conf. Sprawdź, czy plik istnieje i czy Altitude ma uprawnienia do zapisu.",
+        "NOPUBLICUP": "Nie znaleziono publicznego adresu IP. Sprawdź połączenie internetowe i uruchom ponownie Altitude.",
+        "CONFIGURINGLOCALMN": "Konfigurowanie lokalnego masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Kilka sekund",

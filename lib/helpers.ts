@@ -21,6 +21,15 @@ export async function readFile(file, encoding = 'utf-8') {
     });
 }
 
+export async function writeFile(file, data, encoding = 'utf-8') {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(file, data, { encoding: encoding }, err => {
+            if (err) reject(err);
+            else resolve();
+        });
+    });
+}
+
 export async function setFileExecutable(file: string) {
     exec(`chmod +x "${file}"`);
 }

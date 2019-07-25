@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adrese",
             "ENABLED": "Iespējots",
-            "NOTENABLEDTITLE": "Masternodes nav iespējotas",
-            "NOTENABLEDINSTR": "Lai palaistu masternodu, jums būs jāiespējo masternodes, nosakot masternode = 1 un konfigurējot \"masternodeprivkey\" un \"masternodeaddr\" mainīgos jūsu metrix.conf failā.",
             "STARTBUTTON": "Sāciet lokāli",
             "STARTALIASBUTTON": "Sākt alias",
-            "STARTALLBUTTON": "Sāciet visu"
+            "STARTALLBUTTON": "Sāciet visu",
+            "NOMASTERNODES": "Jums nav nekādu masternodu",
+            "NOMNOUTPUTS": "Netika atrasts Masternode izeja. Lai palaistu vietējo Masternodi, nosūtiet tieši uz 2 000 000 monētu savā Masternode adresē un gaidiet 15 apstiprinājumus.",
+            "STOPBUTTON": "Pārtraukt vietējo",
+            "STOPALIASBUTTON": "Apturiet aizstājvārdu",
+            "ADDREMOTE": "Pievienojiet Remote Masternode",
+            "REMOVEMN": "Noņemiet Masternode",
+            "ADDLOCAL": "Iestatiet vietējo Masternode",
+            "DISABLELOCAL": "Atspējot vietējo masternodu",
+            "LOCALNOTRUNNING": "Vietējais Masternode nedarbojas"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Parakstīt paziņojumu",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartējiet klientu",
             "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu."
+            "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu.",
+            "ADDREMOTEMNTITLE": "Pievienojiet Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: ports",
+            "ADDREMOTEMNKEY": "Masternode privātā atslēga",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indekss"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Visiem ieguldījumiem ir nepieciešams vismaz 1 apstiprinājums pirms tēriņiem.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Darījumi, kas iekopēti starpliktuvē",
         "TRANSACTIONOUTPUTTOOLARGE": "Viens no jūsu algas apmēriem ir pārāk liels, lai droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsu maiņa ir pārāk liela, lai to droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jūsu maiņa ir pārāk liela, lai to droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Apturēt masternode...",
+        "FAILEDTOWRITECONFIG": "Rakstot metrix.conf failu, radās problēma. Pārbaudiet, vai fails pastāv un ka augstumam Altitude ir rakstīšanas atļaujas.",
+        "NOPUBLICUP": "Netika atrasta publiskā IP adrese. Pārbaudiet savu interneta savienojumu un restartējiet augstumu.",
+        "CONFIGURINGLOCALMN": "Vietējā Masternode konfigurēšana..."
     },
     "TIME": {
         "AFEWSECONDS": "Dažas sekundes",

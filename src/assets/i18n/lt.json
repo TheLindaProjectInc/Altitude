@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Adresas",
             "ENABLED": "Įjungtas",
-            "NOTENABLEDTITLE": "Masternodes neįjungtas",
-            "NOTENABLEDINSTR": "Norint paleisti masternodą, turėsite įjungti masternodus, nustatydami masternode = 1 ir konfigūruodami „masternodeprivkey“ ir „masternodeaddr“ kintamuosius savo metrix.conf faile.",
             "STARTBUTTON": "Pradėti vietinį",
             "STARTALIASBUTTON": "Pradėti Alias",
-            "STARTALLBUTTON": "Pradėti viską"
+            "STARTALLBUTTON": "Pradėti viską",
+            "NOMASTERNODES": "Jūs neturite jokių masternodų",
+            "NOMNOUTPUTS": "Nerasta Masternode rezultatų. Jei norite paleisti vietinį Masternodą, siųskite tiksliai 2 000 000 monetų į savo Masternode adresą ir palaukite 15 patvirtinimų.",
+            "STOPBUTTON": "Sustabdyti vietinį",
+            "STOPALIASBUTTON": "Sustabdyti slapyvardį",
+            "ADDREMOTE": "Pridėti nuotolinį masternodą",
+            "REMOVEMN": "Pašalinti Masternode",
+            "ADDLOCAL": "Nustatykite vietinį „Masternode“",
+            "DISABLELOCAL": "Išjungti vietinį masternodą",
+            "LOCALNOTRUNNING": "Vietinis „Masternode“ neveikia"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Pasirašyti pranešimą",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Metrix Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Iš naujo paleiskite klientą",
             "CLIENTINVALIDCONFIGTITLE": "Netinkama „metrix.conf“ konfigūracija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą."
+            "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą.",
+            "ADDREMOTEMNTITLE": "Pridėti nuotolinį masternodą",
+            "ADDREMOTEMNALIAS": "Masternodo alias",
+            "ADDREMOTEMNIP": "Masternode IP: prievadas",
+            "ADDREMOTEMNKEY": "Masternodo privatus raktas",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "„Masternode Trx“ indeksas"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Visoms įvestims reikalingas bent 1 patvirtinimas prieš išlaidas.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Operacijos, nukopijuotos į iškarpinę",
         "TRANSACTIONOUTPUTTOOLARGE": "Vienas iš jūsų mokamų sumų yra per didelis, kad galėtumėte saugiai išsiųsti. Didžiausia yra 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsų pakeitimas yra per didelis, kad galėtumėte saugiai siųsti. Didžiausia yra 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jūsų pakeitimas yra per didelis, kad galėtumėte saugiai siųsti. Didžiausia yra 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Stotelės sustabdymas...",
+        "FAILEDTOWRITECONFIG": "Rašant į savo metrix.conf failą kilo problema. Patikrinkite, ar failas egzistuoja ir kad Altitude turi rašymo teises.",
+        "NOPUBLICUP": "Nerasta viešojo IP adreso. Patikrinkite interneto ryšį ir iš naujo paleiskite aukštį.",
+        "CONFIGURINGLOCALMN": "Vietinio „Masternode“ konfigūravimas..."
     },
     "TIME": {
         "AFEWSECONDS": "Kelias sekundes",

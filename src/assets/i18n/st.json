@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Aterese",
             "ENABLED": "E nolofalitsoe",
-            "NOTENABLEDTITLE": "Masternodes ha ea lumelloa",
-            "NOTENABLEDINSTR": "Ho tsamaisa masternode ho tla hlokahala hore u lumelle masternode ka ho beha masternode = 1 le ho lokisa 'masternodeprivkey' le 'masternodeaddr' mefuta e fapaneng file ea metrix.conf ea hau.",
             "STARTBUTTON": "Qala sebakeng sa heno",
             "STARTALIASBUTTON": "Qala Lintho tse ling",
-            "STARTALLBUTTON": "Qala Bohle"
+            "STARTALLBUTTON": "Qala Bohle",
+            "NOMASTERNODES": "Ha u na masternode",
+            "NOMNOUTPUTS": "Ha ho liphetho tsa Masternode tse fumanoeng. Ho tsamaisa Masternode ea lehae romella lichelete tsa 2 000 000 hantle atereseng ea hau ea Masternode 'me u emetse likhakanyo tse 15.",
+            "STOPBUTTON": "Ema Local",
+            "STOPALIASBUTTON": "Emisa Alias",
+            "ADDREMOTE": "Kenya Masternode e hole",
+            "REMOVEMN": "Tlosa Masternode",
+            "ADDLOCAL": "Seta Local Masternode",
+            "DISABLELOCAL": "Tlosa Masternode ea lehae",
+            "LOCALNOTRUNNING": "Masternode ea Lehae Ha e Mathe"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Molaetsa oa Sontša",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Metrix Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qala hape Mookameli",
             "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena.",
+            "ADDREMOTEMNTITLE": "Kenya Masternode e hole",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Aterese",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Lintho tsohle tse hlokahalang li hloka bonnete ba 1 pele u qeta.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Litšebetso li kopitsoa ho lebokose la lipapali",
         "TRANSACTIONOUTPUTTOOLARGE": "E 'ngoe ea moputso oa hau ho chelete e le kholo haholo hore e se ke ea romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Phetoho ea hau e kholo haholo hore e ka romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Phetoho ea hau e kholo haholo hore e ka romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Ho emisa masternode...",
+        "FAILEDTOWRITECONFIG": "Ho bile le bothata ho ngolla file ea hau ea metrix.conf. Lekola faele e le teng le hore Altitude e na le tumello ea ho ngola.",
+        "NOPUBLICUP": "Ha ho aterese ea IP ea Sechaba e fumanoeng. Sheba khokahano ea hau ea inthanete ebe o qala bocha Altitude.",
+        "CONFIGURINGLOCALMN": "E lokisa Masternode ea lehae..."
     },
     "TIME": {
         "AFEWSECONDS": "Metsotsoana e seng mekae",

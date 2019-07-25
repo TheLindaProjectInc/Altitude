@@ -68,11 +68,18 @@
             "IP": "پي",
             "ADDRESS": "پتو",
             "ENABLED": "فعال",
-            "NOTENABLEDTITLE": "Masternodes قابل ناھي",
-            "NOTENABLEDINSTR": "modeode کي هلائڻ لاء توهان کي Modeode کي ترتيب ڏيڻ جي ضرورت پوندي. = 1 ۽ ترتيب کي 'masternodeprivkey' ۽ 'masternodeaddr' توهان جي metrix.conf فائل ۾ ڪيبل.",
             "STARTBUTTON": "مقامي شروع ڪريو",
             "STARTALIASBUTTON": "شروع علي",
-            "STARTALLBUTTON": "سڀ شروع ڪريو"
+            "STARTALLBUTTON": "سڀ شروع ڪريو",
+            "NOMASTERNODES": "توهان وٽ ڪوبه ايمٽيڪس نه آهي",
+            "NOMNOUTPUTS": "ڪوبه معياري نه مليو. مقامي Modeode کي هلائڻ لاء مٿي 2،000،000 سکين توهان جي Mthernode پتي ڏانھن موڪلي ۽ 15 تصديق جي انتظار ۾.",
+            "STOPBUTTON": "مڪاني کي روڪيو",
+            "STOPALIASBUTTON": "عليز کي روڪيو",
+            "ADDREMOTE": "ريموٽ مينڊيوڊ شامل ڪريو",
+            "REMOVEMN": "ختم ٿيڻ کي ختم ڪريو",
+            "ADDLOCAL": "Local Modeode سيٽ اپ ڪريو",
+            "DISABLELOCAL": "مڪاني معياري بند ڪريو",
+            "LOCALNOTRUNNING": "مقامي معياري نه هلندي"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "پيغام لکو",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "لنڊن ڪور وٽ هڪ مسئلو هئي، انهي کي ختم ڪرڻ جو سبب بنائي ڇڏيو آهي. اهو مشورو لاء توهان جي ڊيگگ.لو فائيل کي چڪاس ڪرڻ جي صلاح ڏني وئي آهي.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "مراجعه شروع ڪريو",
             "CLIENTINVALIDCONFIGTITLE": "غلط لنڊا. ڪنفف ترتيب",
-            "CLIENTINVALIDCONFIGINFO": "توهان جي لنڊن.فف کي هڪ غلط ميٽروڊ سيٽ اپ ڪيو آهي جيڪو لنڊن ڪور کي فوري طور تي نڪرڻ جو سبب ٿيندو. مھرباني ڪري ھن فائل کي ڏسو."
+            "CLIENTINVALIDCONFIGINFO": "توهان جي لنڊن.فف کي هڪ غلط ميٽروڊ سيٽ اپ ڪيو آهي جيڪو لنڊن ڪور کي فوري طور تي نڪرڻ جو سبب ٿيندو. مھرباني ڪري ھن فائل کي ڏسو.",
+            "ADDREMOTEMNTITLE": "ريموٽ مينڊيوڊ شامل ڪريو",
+            "ADDREMOTEMNALIAS": "منڊيڊ علي علي",
+            "ADDREMOTEMNIP": "منڊيڊ پي پي: پگهار",
+            "ADDREMOTEMNKEY": "منڊيڊ شخصي پرائيويٽ",
+            "ADDREMOTEMNTXHASH": "مينڊيڊ ٽريڪس هاشوت",
+            "ADDREMOTEMNTXINDEX": "منڊيڊ ٽريڪس انڊسٽري"
         },
         "ADDRESSBOOK": {
             "TITLE": "ايڊريس بوڪ",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "سڀني ادارن جي گهٽ ۾ گهٽ 1 تصديق جي ضرورت کان تصديق جي ضرورت آهي.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ڪلپوريشن ڪلپ بورڊ ڏانهن نقل ڪئي وئي آهي",
         "TRANSACTIONOUTPUTTOOLARGE": "توهان جي ادائيگي مان هڪ رقم محفوظ طور تي موڪلڻ لاء تمام وڏو آهي. وڌ ۾ وڌ 90،071،992.54740992 آهي.",
-        "TRANSACTIONCHANGETOOLARGE": "محفوظ طور تي موڪلڻ لاء توهان جي تبديلي تمام وڏي آهي. وڌ ۾ وڌ 90،071،992.54740992 آهي."
+        "TRANSACTIONCHANGETOOLARGE": "محفوظ طور تي موڪلڻ لاء توهان جي تبديلي تمام وڏي آهي. وڌ ۾ وڌ 90،071،992.54740992 آهي.",
+        "STOPPINGMASTERNODE": "ختم ٿيڻ واري جڳه...",
+        "FAILEDTOWRITECONFIG": "توھان جي ميٽرڪس.ڪنف فائل ۾ لکڻ ۾ مسئلو ھو. فائل کي چڪاس ڪريو ۽ اوچتو ليکڪ کي اجازت ڏيو.",
+        "NOPUBLICUP": "ڪوبه پبلڪ IP پتو نه مليو. پنھنجي انٽرنيٽ ڪنيڪشن کي چيڪ ڪريو ۽ اوچت وري شروع ڪريو.",
+        "CONFIGURINGLOCALMN": "مقامي ميڊيڪوڊ ترتيب ڏئي رهيو آهي..."
     },
     "TIME": {
         "AFEWSECONDS": "ڪجھ سيڪنڊ",

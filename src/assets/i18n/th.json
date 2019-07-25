@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "ที่อยู่",
             "ENABLED": "เปิดการใช้งาน",
-            "NOTENABLEDTITLE": "Masternodes ไม่ได้เปิดใช้งาน",
-            "NOTENABLEDINSTR": "ในการใช้งาน masternode คุณจะต้องเปิดใช้งาน masternode โดยการตั้งค่า masternode = 1 และกำหนดค่าตัวแปร 'masternodeprivkey' และ 'masternodeaddr' ในไฟล์ metrix.conf ของคุณ",
             "STARTBUTTON": "เริ่มต้น Local",
             "STARTALIASBUTTON": "เริ่มนามแฝง",
-            "STARTALLBUTTON": "เริ่มต้นทั้งหมด"
+            "STARTALLBUTTON": "เริ่มต้นทั้งหมด",
+            "NOMASTERNODES": "คุณไม่มี masternodes ใด ๆ",
+            "NOMNOUTPUTS": "ไม่พบเอาต์พุต Masternode ในการใช้งาน Masternode ในพื้นที่ส่ง 2,000,000 เหรียญไปยังที่อยู่ Masternode ของคุณและรอการยืนยัน 15 ครั้ง",
+            "STOPBUTTON": "หยุดท้องถิ่น",
+            "STOPALIASBUTTON": "หยุดนามแฝง",
+            "ADDREMOTE": "เพิ่ม Masternode ระยะไกล",
+            "REMOVEMN": "ลบ Masternode",
+            "ADDLOCAL": "ตั้งค่า Local Masternode",
+            "DISABLELOCAL": "ปิดใช้งาน Local Masternode",
+            "LOCALNOTRUNNING": "Local Masternode ไม่ทำงาน"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "ลงชื่อเข้าใช้ข้อความ",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับลินดาคอร์ที่ทำให้มันสิ้นสุดลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log สำหรับปัญหา",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "รีสตาร์ทไคลเอ็นต์",
             "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้"
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้",
+            "ADDREMOTEMNTITLE": "เพิ่ม Masternode ระยะไกล",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: พอร์ต",
+            "ADDREMOTEMNKEY": "รหัสส่วนตัวของ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "ดัชนี Trtern ของ Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "อินพุตทั้งหมดต้องมีการยืนยันอย่างน้อย 1 ครั้งก่อนการใช้จ่าย",
         "TRANSACTIONSCOPIEDCLIPBOARD": "คัดลอกธุรกรรมไปยังคลิปบอร์ดแล้ว",
         "TRANSACTIONOUTPUTTOOLARGE": "หนึ่งในจำนวนเงินที่คุณชำระมีขนาดใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
-        "TRANSACTIONCHANGETOOLARGE": "การเปลี่ยนแปลงของคุณใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992"
+        "TRANSACTIONCHANGETOOLARGE": "การเปลี่ยนแปลงของคุณใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
+        "STOPPINGMASTERNODE": "กำลังหยุด masternode...",
+        "FAILEDTOWRITECONFIG": "มีปัญหาในการเขียนไปยังไฟล์ metrix.conf ของคุณ ตรวจสอบไฟล์ที่มีอยู่และระดับความสูงนั้นมีสิทธิ์ในการเขียน",
+        "NOPUBLICUP": "ไม่พบที่อยู่ IP สาธารณะ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วรีสตาร์ท Altitude",
+        "CONFIGURINGLOCALMN": "กำลังกำหนดค่า Masternode ในเครื่อง..."
     },
     "TIME": {
         "AFEWSECONDS": "ไม่กี่วินาที",

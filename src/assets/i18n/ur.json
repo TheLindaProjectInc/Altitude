@@ -68,11 +68,18 @@
             "IP": "آئی پی",
             "ADDRESS": "ایڈریس",
             "ENABLED": "فعال",
-            "NOTENABLEDTITLE": "Masternodes فعال نہیں ہے",
-            "NOTENABLEDINSTR": "mrenchode کو چلانے کے لئے آپ کو mrenchode = 1 ترتیب دینے اور اپنے metrix.conf فائل میں 'masternodeprivkey' اور 'masternodeaddr' متغیر کو ترتیب دینے کے ذریعے masternodes کو فعال کرنے کی ضرورت ہوگی.",
             "STARTBUTTON": "مقامی شروع کریں",
             "STARTALIASBUTTON": "علی علیہ السلام شروع کریں",
-            "STARTALLBUTTON": "شروع کریں"
+            "STARTALLBUTTON": "شروع کریں",
+            "NOMASTERNODES": "آپ کے پاس کوئی masternodes نہیں ہے",
+            "NOMNOUTPUTS": "کوئی منڈڈو آؤٹ پٹ نہیں ملا. ایک مقامی Mrenchode کو چلانے کے لئے بالکل 2،000،000 سکے اپنے Mriotode ایڈریس پر بھیجیں اور 15 تصدیقات کا انتظار کریں.",
+            "STOPBUTTON": "مقامی بند کرو",
+            "STOPALIASBUTTON": "علی علیہ السلام کو روک دو",
+            "ADDREMOTE": "ریموٹ Modeode شامل کریں",
+            "REMOVEMN": "Modeode کو ہٹا دیں",
+            "ADDLOCAL": "سیٹ اپ مقامی Modeode",
+            "DISABLELOCAL": "مقامی Modeode کو غیر فعال کریں",
+            "LOCALNOTRUNNING": "مقامی Modeode نہیں چل رہا ہے"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "سائن پیغام",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "لنڈا کور کے ساتھ ایک مسئلہ تھا جس نے اسے ختم کرنے کی وجہ سے. اس مسئلے کے لئے اپنے debug.log فائل کو چیک کرنے کی سفارش کی جاتی ہے.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "کلائنٹ دوبارہ شروع کریں",
             "CLIENTINVALIDCONFIGTITLE": "غلط لنڈا. کنف ترتیب",
-            "CLIENTINVALIDCONFIGINFO": "آپ لنڈا.کونف میں ایک غلط مینڈوڈڈ سیٹ اپ ہے جس سے لنڈا کور فوری طور پر نکلنے کا سبب بن جائے گا. براہ مہربانی اس فائل کو چیک کریں."
+            "CLIENTINVALIDCONFIGINFO": "آپ لنڈا.کونف میں ایک غلط مینڈوڈڈ سیٹ اپ ہے جس سے لنڈا کور فوری طور پر نکلنے کا سبب بن جائے گا. براہ مہربانی اس فائل کو چیک کریں.",
+            "ADDREMOTEMNTITLE": "ریموٹ Modeode شامل کریں",
+            "ADDREMOTEMNALIAS": "Mrenchode ایلیا",
+            "ADDREMOTEMNIP": "Modeode IP: پورٹ",
+            "ADDREMOTEMNKEY": "Mrenchode نجی کلید",
+            "ADDREMOTEMNTXHASH": "Modeode Trx ہش",
+            "ADDREMOTEMNTXINDEX": "Modeode Trx انڈیکس"
         },
         "ADDRESSBOOK": {
             "TITLE": "ایڈریس بک",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "خرچ کرنے سے پہلے تمام آدانوں کو کم از کم 1 تصدیق کی ضرورت ہوتی ہے.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ٹرانسمیشن کلپ بورڈ پر نقل کی گئی",
         "TRANSACTIONOUTPUTTOOLARGE": "آپ کی ادائیگی میں سے ایک رقم محفوظ طریقے سے بھیجنے کے لئے بہت بڑی ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے.",
-        "TRANSACTIONCHANGETOOLARGE": "محفوظ طریقے سے بھیجنے کیلئے آپ کا تبدیلی بہت بڑا ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے."
+        "TRANSACTIONCHANGETOOLARGE": "محفوظ طریقے سے بھیجنے کیلئے آپ کا تبدیلی بہت بڑا ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے.",
+        "STOPPINGMASTERNODE": "modeode روکنے...",
+        "FAILEDTOWRITECONFIG": "آپ کے میٹرکس.conf فائل میں لکھنے میں ایک مسئلہ تھا. فائل کی موجودگی کی جانچ پڑتال کریں اور اونچائی نے لکھا ہے.",
+        "NOPUBLICUP": "پبلک IP پتہ نہیں ملا. اپنا انٹرنیٹ کنکشن چیک کریں اور اونچائی کو دوبارہ شروع کریں.",
+        "CONFIGURINGLOCALMN": "مقامی Modeode ترتیب..."
     },
     "TIME": {
         "AFEWSECONDS": "چند سیکنڈ",

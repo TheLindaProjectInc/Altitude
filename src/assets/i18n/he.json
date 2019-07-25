@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "כתובת",
             "ENABLED": "מופעל",
-            "NOTENABLEDTITLE": "מסטרנודים לא מופעלים",
-            "NOTENABLEDINSTR": "כדי להפעיל masternode יהיה עליך לאפשר masternodes על ידי הגדרת masternode = 1 והגדרת התצורה של משתני masternodeprivkey ו- masternodeaddr בקובץ metrix.conf.",
             "STARTBUTTON": "התחל מקומי",
             "STARTALIASBUTTON": "התחל כינוי",
-            "STARTALLBUTTON": "התחל הכל"
+            "STARTALLBUTTON": "התחל הכל",
+            "NOMASTERNODES": "אין לך שום מזכרות",
+            "NOMNOUTPUTS": "לא נמצאו פלטים של Masternode. כדי להריץ Masternode מקומי שלחו 2,000,000 מטבעות בדיוק לכתובת Masternode שלכם והמתנו ל 15 אישורים.",
+            "STOPBUTTON": "עצור מקומי",
+            "STOPALIASBUTTON": "עצור את הכינוי",
+            "ADDREMOTE": "הוסף Masternode מרחוק",
+            "REMOVEMN": "הסר את Masternode",
+            "ADDLOCAL": "הגדרת Masternode מקומי",
+            "DISABLELOCAL": "השבת את Masternode המקומי",
+            "LOCALNOTRUNNING": "Masternode מקומי לא פועל"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "הירשם הודעה",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "היתה בעיה עם לינדה Core שגרמה לו לסיים. מומלץ לבדוק את הקובץ debug.log לבעיות.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "הפעל מחדש את הלקוח",
             "CLIENTINVALIDCONFIGTITLE": "תצורה של metrix.conf לא חוקית",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf שלך יש הגדרה masternode לא חוקי אשר יגרום לינדה Core לצאת מיד. בדוק את הקובץ הזה."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf שלך יש הגדרה masternode לא חוקי אשר יגרום לינדה Core לצאת מיד. בדוק את הקובץ הזה.",
+            "ADDREMOTEMNTITLE": "הוסף Masternode מרחוק",
+            "ADDREMOTEMNALIAS": "Altern Masias",
+            "ADDREMOTEMNIP": "IP של Masternode: נמל",
+            "ADDREMOTEMNKEY": "מפתח פרטי של Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "אינדקס Trtern של Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "פנקס הכתובות",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "כל התשומות דורשות אישור אחד לפחות לפני ההוצאות.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "עסקאות שהועתקו ללוח",
         "TRANSACTIONOUTPUTTOOLARGE": "אחד משלמיך לסכומים גדול מדי לבטחה. המקסימום הוא 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "השינוי שלך גדול מדי כדי לשלוח אותו בבטחה. המקסימום הוא 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "השינוי שלך גדול מדי כדי לשלוח אותו בבטחה. המקסימום הוא 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "עוצר את הזיכרון...",
+        "FAILEDTOWRITECONFIG": "הייתה בעיה בכתיבה לקובץ metrix.conf. ודא שהקובץ קיים וכי ל- Altitude יש הרשאות כתיבה.",
+        "NOPUBLICUP": "לא נמצאה כתובת IP ציבורית. בדוק את חיבור האינטרנט שלך והפעל מחדש את Altitude.",
+        "CONFIGURINGLOCALMN": "מגדיר תצורה של Masternode מקומי..."
     },
     "TIME": {
         "AFEWSECONDS": "כמה שניות",

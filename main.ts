@@ -75,7 +75,7 @@ function createWindow() {
 
   // start client
   log.info('Start client');
-  client = new Client(mainWindow)
+  client = new Client(mainWindow);
 
   // open dev tools
   if (!app.isPackaged) mainWindow.webContents.openDevTools();

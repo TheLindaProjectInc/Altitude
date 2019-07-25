@@ -68,11 +68,18 @@
             "IP": "အိုင်ပီ",
             "ADDRESS": "လိပ်စာ",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes ဖွင့်မ",
-            "NOTENABLEDINSTR": "တစ်ဦး masternode ကို run ရန်သင့်အား masternode = 1 setting နဲ့ 'masternodeprivkey' 'နှင့်သင့် metrix.conf ဖိုင်ထဲတွင်' 'masternodeaddr' 'variable တွေကိုပြင်ဆင် သတ်မှတ်. masternodes enable လုပ်ဖို့လိုအပ်ပါလိမ့်မယ်။",
             "STARTBUTTON": "ဒေသခံ Start",
             "STARTALIASBUTTON": "Alias Start",
-            "STARTALLBUTTON": "အားလုံး Start"
+            "STARTALLBUTTON": "အားလုံး Start",
+            "NOMASTERNODES": "သင်သည်မည်သည့် masternodes ရှိသည်မဟုတ်ကြဘူး",
+            "NOMNOUTPUTS": "မျှမတွေ့ Masternode ရလဒ်။ ဒေသခံတစ်ဦး Masternode ကို run ရန်သင့် Masternode လိပ်စာအတိအကျ 2.000.000 ဒင်္ဂါးပြားကိုပေးပို့နှင့် 15 အတည်ပြုချက်အဘို့အစောင့်ပါ။",
+            "STOPBUTTON": "ပြည်တွင်းကိုရပ်တန့်",
+            "STOPALIASBUTTON": "Alias ရပ်တန့်",
+            "ADDREMOTE": "အဝေးမှ Masternode Add",
+            "REMOVEMN": "Masternode Remove",
+            "ADDLOCAL": "Setup ကိုဒေသခံ Masternode",
+            "DISABLELOCAL": "ဒေသခံ Masternode Disable",
+            "LOCALNOTRUNNING": "ဒေသခံ Masternode ကို run မ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "သင်္ကေတပြကို Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ကရပ်ဆိုင်းစေခဲ့သည်လင်ဒါ Core နှင့်အတူပြဿနာတစ်ခုရှိခဲ့သည်။ ဒါဟာကိစ္စရပ်များကိုအဘို့သင့် debug.log file ကိုစစျဆေးဖို့အကြံပြုသည်။",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ပြန်လည်စတင်ပါလိုင်း",
             "CLIENTINVALIDCONFIGTITLE": "မှားနေသော metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ metrix.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။"
+            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ metrix.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။",
+            "ADDREMOTEMNTITLE": "အဝေးမှ Masternode Add",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode အိုင်ပီ: ဆိပ်ကမ်း",
+            "ADDREMOTEMNKEY": "Masternode ပုဂ္ဂလိက Key ကို",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx အညွှန်း"
         },
         "ADDRESSBOOK": {
             "TITLE": "လိပ်စာစာအုပ်",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "အားလုံးသွင်းအားစုအသုံးစရိတ်မတိုင်မီအနည်းဆုံး 1 အတည်ပြုချက်ကိုလိုအပ်သည်။",
         "TRANSACTIONSCOPIEDCLIPBOARD": "clipboard မှကူးယူငွေကြေးလွှဲပြောင်းမှုမှာ",
         "TRANSACTIONOUTPUTTOOLARGE": "ပမာဏရန်သင့်လစာတစ်ခုမှာလုံခြုံစိတ်ချစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။",
-        "TRANSACTIONCHANGETOOLARGE": "သင့်ရဲ့ပြောင်းလဲမှုကိုလုံခြုံစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။"
+        "TRANSACTIONCHANGETOOLARGE": "သင့်ရဲ့ပြောင်းလဲမှုကိုလုံခြုံစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။",
+        "STOPPINGMASTERNODE": "ရပ်တန့် masternode...",
+        "FAILEDTOWRITECONFIG": "သင့်ရဲ့ metrix.conf ဖိုင်ရေးသားခြင်းပြဿနာတစ်ခုရှိခဲ့သည်။ တည်ရှိခြင်းနှင့်ကြောင်းအမြင့်ရေးခွင့်ပြုချက်ရှိပြီးဖိုင်ကိုစစ်ဆေးပါ။",
+        "NOPUBLICUP": "အဘယ်သူမျှမပြည်သူ့ IP address ကိုတွေ့ရှိခဲ့ပါတယ်။ သင့်ရဲ့အင်တာနက်ဆက်သွယ်မှုနှင့်ပြန်ဖွင့မြင့်စစ်ဆေးပါ။",
+        "CONFIGURINGLOCALMN": "ဒေသခံ Masternode Configuring..."
     },
     "TIME": {
         "AFEWSECONDS": "တစ်ဦးကစက္ကန့်အနည်းငယ်",

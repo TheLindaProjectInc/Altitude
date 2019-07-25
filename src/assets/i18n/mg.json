@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "Address",
             "ENABLED": "afaka",
-            "NOTENABLEDTITLE": "Masternodes not allowed",
-            "NOTENABLEDINSTR": "Ny famoahana milina dia mila mametaka mastersodes amin'ny fametrahana masternode = 1 ary mampifanaraka ny 'masternodeprivkey' sy 'variable mastersodeaddr' ao amin'ny file metrix.conf.",
             "STARTBUTTON": "Atombohy eo an-toerana",
             "STARTALIASBUTTON": "Manomboka Alias",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "Tsy manana masters ianao",
+            "NOMNOUTPUTS": "Tsy hita ny vokatra Masternode. Ny fametrahana Masternode eo an-toerana dia mandefa vola 200 tapitrisa eo ho eo ao amin'ny adiresy Masternode ary miandry 15 fanamafisana.",
+            "STOPBUTTON": "Stop Local",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Add Remote Masternode",
+            "REMOVEMN": "Esory ny Masternode",
+            "ADDLOCAL": "Fametrahana eo an-toerana Masternode eo an-toerana",
+            "DISABLELOCAL": "Atsaharo ny Mastern'ny faritra",
+            "LOCALNOTRUNNING": "Local Masternode tsy mandeha"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana teo amin'i Metrix Core izay nahatonga azy hofoanana. Manorata dia alefaso ny rakitra debug.log ho an'ny olana.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Atsaharo ny mpanjifa",
             "CLIENTINVALIDCONFIGTITLE": "Lisitra tsy voafetra an'i metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ny metrix.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Metrix Core. Azafady azafady ity rakitra ity."
+            "CLIENTINVALIDCONFIGINFO": "Ny metrix.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Metrix Core. Azafady azafady ity rakitra ity.",
+            "ADDREMOTEMNTITLE": "Add Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adiresy boky",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Ny fitaovana rehetra dia mila fanamafisana 1 fara fahakeliny alohan'ny fandaniana.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nalefa any anaty bokotra ny fifampiraharahana",
         "TRANSACTIONOUTPUTTOOLARGE": "Ny iray amin'ny karamanao isam-bolana dia tsy maintsy alefa. Ny isam-ponina dia 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ny fiovanao dia lehibe loatra mba handefasana soa aman-tsara. Ny isam-ponina dia 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ny fiovanao dia lehibe loatra mba handefasana soa aman-tsara. Ny isam-ponina dia 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Hijanona masternode...",
+        "FAILEDTOWRITECONFIG": "Nisy olana nanoratra tany amin'ny file metrix.conf. Jereo ny antontan-taratasy ary ny alalana dia manana fahazoan-dalana manoratra.",
+        "NOPUBLICUP": "Tsy misy adiresy IP an'ny Internet. Hamarino ny fifandraisanao amin'ny Internet ary avereno indray ny Altitude.",
+        "CONFIGURINGLOCALMN": "Famaritana ny Masternode ao an-toerana..."
     },
     "TIME": {
         "AFEWSECONDS": "Fotoana vitsy",

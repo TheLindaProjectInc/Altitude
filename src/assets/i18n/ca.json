@@ -68,11 +68,18 @@
             "IP": "IP",
             "ADDRESS": "adreça",
             "ENABLED": "Habilitat",
-            "NOTENABLEDTITLE": "Masternodes no habilitat",
-            "NOTENABLEDINSTR": "Per executar un masternode necessitareu habilitar masternodes ajustant mésternode = 1 i configurant variables 'masternodeprivkey' i 'masternodeaddr' al vostre arxiu metrix.conf.",
             "STARTBUTTON": "Comença local",
             "STARTALIASBUTTON": "Inicia l'àlies",
-            "STARTALLBUTTON": "Comença tot"
+            "STARTALLBUTTON": "Comença tot",
+            "NOMASTERNODES": "No teniu cap tipus de màster",
+            "NOMNOUTPUTS": "No s’ha trobat cap sortida de Masternode. Per executar un Masternode local, envieu exactament 2.000.000 de monedes a la vostra adreça Masternode i espereu fins a 15 confirmacions.",
+            "STOPBUTTON": "Atureu-vos a Local",
+            "STOPALIASBUTTON": "Atura l'àlies",
+            "ADDREMOTE": "Afegiu Masternode remot",
+            "REMOVEMN": "Elimineu Masternode",
+            "ADDLOCAL": "Configuració del local Masternode",
+            "DISABLELOCAL": "Inhabiliteu la funció de localització local",
+            "LOCALNOTRUNNING": "Masternode local no funcionant"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Signar missatge",
@@ -271,7 +278,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Hi ha hagut un problema amb Metrix Core que ha fet que acabi. Es recomana que consulteu el vostre fitxer debug.log per obtenir problemes.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reinicia el client",
             "CLIENTINVALIDCONFIGTITLE": "Configuració metrix.conf no vàlida",
-            "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer."
+            "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer.",
+            "ADDREMOTEMNTITLE": "Afegiu Masternode remot",
+            "ADDREMOTEMNALIAS": "Àlies de Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: port",
+            "ADDREMOTEMNKEY": "Clau privada de Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Índex Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -378,7 +391,11 @@
         "MINIMUMCONFIRMATIONS": "Totes les entrades requereixen com a mínim una confirmació abans de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccions copiades al porta-retalls",
         "TRANSACTIONOUTPUTTOOLARGE": "Un dels vostres pagaments a les quantitats és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "El canvi és massa gran per enviar correctament. El màxim és 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "El canvi és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Aturant el masternode...",
+        "FAILEDTOWRITECONFIG": "S'ha produït un problema en escriure al fitxer metrix.conf. Comproveu que el fitxer existeix i que Altitude té permisos d’escriptura.",
+        "NOPUBLICUP": "No s’ha trobat cap adreça IP pública. Comproveu la vostra connexió a Internet i reinicieu Altitude.",
+        "CONFIGURINGLOCALMN": "Configuració de Masternode local..."
     },
     "TIME": {
         "AFEWSECONDS": "Uns pocs segons",

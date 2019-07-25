@@ -1,12 +1,12 @@
 export class MasternodeStatus {
     setup: boolean = false;
     running: boolean = false;
-    started: boolean = false;
     activeseconds: number = 0;
     address: string = '';
     lastTimeSeen: number = 0;
     pubkey: string = '';
     status: number = 0;
+    outputs: Object = {};
 
     list: Array<masternode> = new Array<masternode>();
     config: Array<masternodeConfig> = new Array<masternodeConfig>();
