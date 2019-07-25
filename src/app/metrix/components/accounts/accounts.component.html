@@ -34,3 +34,15 @@
         </div>
     </div>
 </div>
+
+<!-- Add account modal -->
+<ngx-smart-modal #addAccountModal identifier="addAccountModal" customClass="nsm-centered" [closable]="false">
+    <h1>{{ 'PAGES.DASHBOARD.CREATEACCOUNTTITLE' | translate }}</h1>
+    <text-input [(inputModel)]="newAccountLabel" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
+    <div class="modal-buttons">
+        <button class="btn btn-default" (click)="addAccountModal.close()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
+        <button class="btn btn-default" (click)="createNewAccount()">
+            {{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate }}
+        </button>
+    </div>
+</ngx-smart-modal>

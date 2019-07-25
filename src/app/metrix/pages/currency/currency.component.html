@@ -4,7 +4,7 @@
 
   <div class="form-inline">
     <span>{{ 'MISC.SEARCH' | translate }}</span>
-    <text-input [(inputModel)]="search" (input)="filter()"></text-input>
+    <text-input [(inputModel)]="search"></text-input>
   </div>
 
   <button class="btn btn-default" (click)="setCurrency(currency)" *ngFor="let currency of currenciesToShow()"
