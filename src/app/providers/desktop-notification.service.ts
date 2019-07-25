@@ -18,7 +18,7 @@ export class DesktopNotificationService {
         // get title
         let title = 'Metrix - ';
         if (trx.category === "Received")
-            title += await this.translation.translate('DESKTOPNOTIFICATIONS.NEWTRANSACTION_TITLE_STAKE');
+            title += await this.translation.translate('DESKTOPNOTIFICATIONS.NEWTRANSACTION_TITLE_RECEIVED');
         if (trx.category === "Generated" && trx.subCategory === "Minted")
             title += await this.translation.translate('DESKTOPNOTIFICATIONS.NEWTRANSACTION_TITLE_STAKE');
         if (trx.category === "Generated" && trx.subCategory === "Masternode Reward")
