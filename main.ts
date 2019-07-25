@@ -8,9 +8,10 @@ import * as settings from './lib/settings';
 log.transports.console.level = 'info'
 log.transports.file.level = 'info'
 
-let mainWindow, serve, client;
+let mainWindow, serve, client, multiInstance;
 const args = process.argv.slice(1);
 serve = args.some(val => val === '--serve');
+multiInstance = args.some(val => val === '--multi-instance');
 
 let tray: Tray
 let isHidden = false;
@@ -159,7 +160,7 @@ function closeApp(event) {
 
 try {
   // check single instance
-  if (!app.requestSingleInstanceLock()) {
+  if (!multiInstance && !app.requestSingleInstanceLock()) {
     app.quit()
   } else {
     app.on('second-instance', () => {
