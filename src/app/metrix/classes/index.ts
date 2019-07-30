@@ -7,6 +7,7 @@ import { StakingStatus } from './stakingStatus';
 import { MasternodeStatus } from './masternodeStatus';
 import { Peer } from './peer';
 import { AddressBookItem } from './addressBookItem';
+import { BlockchainStatus } from './blockchainStatus';
 
 export {
     Account,
@@ -18,5 +19,6 @@ export {
     StakingStatus,
     Transaction,
     WalletStatus,
-    EncryptionStatus
+    EncryptionStatus,
+    BlockchainStatus
 }

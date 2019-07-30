@@ -86,4 +86,7 @@ export class SyncStatusComponent {
     }
   }
 
+  get progressTitle() {
+    return Math.round(this.wallet.blockchainStatus.syncProgresss * 100) / 100 + '%';
+  }
 }

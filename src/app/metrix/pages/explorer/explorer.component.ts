@@ -29,8 +29,8 @@ export class ExplorerComponent {
   }
 
   async loadLatest() {
-    if (this.wallet.walletStatus.latestBlockTime) {
-      this.loadBlock(this.wallet.walletStatus.latestBlockHeight);
+    if (this.wallet.blockchainStatus.latestBlockTime) {
+      this.loadBlock(this.wallet.blockchainStatus.latestBlockHeight);
     } else {
       setTimeout(() => this.loadLatest(), 1000);
     }

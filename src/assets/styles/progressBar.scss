@@ -1,0 +1,9 @@
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background: lighten($color: $background-primary, $amount: 10%);
+
+}

@@ -14,7 +14,8 @@ import {
     StakingStatus,
     Transaction,
     WalletStatus,
-    EncryptionStatus
+    EncryptionStatus,
+    BlockchainStatus
 } from '../classes';
 import { DesktopNotificationService } from '../../providers/desktop-notification.service';
 
@@ -35,6 +36,7 @@ export class WalletService {
 
     // wallet state
     walletStatus: WalletStatus;
+    blockchainStatus: BlockchainStatus;
     stakingStatus: StakingStatus;
     masternode: MasternodeStatus;
 
@@ -52,7 +54,7 @@ export class WalletService {
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.WALLET, fn: () => this.syncWallet() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.ACCOUNTS, fn: () => this.syncAccounts() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.STAKING, fn: () => this.syncStaking() },
-        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.LATESTBLOCK, fn: () => this.syncLatestBlock() },
+        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.BLOCKCHAIN, fn: () => this.syncBlockchain() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODE, fn: () => this.getMasternodeInfo() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.TRANSACTIONS, fn: () => this.syncTransactions() },
         { timestamp: 0, interval: 10000, async: false, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODELIST, fn: () => this.getMasternodeList() },
@@ -82,6 +84,7 @@ export class WalletService {
         this._transactions = new Array<Transaction>();
         this._accounts = new Array<Account>();
         this.walletStatus = new WalletStatus();
+        this.blockchainStatus = new BlockchainStatus();
         this.stakingStatus = new StakingStatus();
         this.masternode = new MasternodeStatus();
         this._peers = new Array<Peer>();
@@ -335,12 +338,10 @@ export class WalletService {
         this.getStakingTime(stakingData.expectedtime);
     }
 
-    private async syncLatestBlock() {
-        let blockData: any = await this.rpc.requestData(RPCMethods.GETLATESTBLOCK);
-        this.walletStatus.latestBlockHeight = blockData.height;
-        this.walletStatus.latestBlockTime = blockData.time * 1000;
+    private async syncBlockchain() {
+        this.blockchainStatus = await this.rpc.requestData(RPCMethods.GETBLOCKCHAIN);
         if (!this.walletStatus.startupBlockTime)
-            this.walletStatus.startupBlockTime = this.walletStatus.latestBlockTime;
+            this.walletStatus.startupBlockTime = this.blockchainStatus.latestBlockTime;
     }
 
     private async getMasternodeInfo() {
@@ -681,7 +682,7 @@ export enum DATASYNCTYPES {
     ACCOUNTS,
     TRANSACTIONS,
     STAKING,
-    LATESTBLOCK,
+    BLOCKCHAIN,
     MASTERNODE,
     MASTERNODELIST,
     MASTERNODELISTCONF,

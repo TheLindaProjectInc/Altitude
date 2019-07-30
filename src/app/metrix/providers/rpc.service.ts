@@ -5,6 +5,7 @@ import { PromptService } from '../components/prompt/prompt.service';
 import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
 import * as compareVersions from 'compare-versions';
+import { BlockchainStatus } from '../classes/blockchainStatus';
 
 @Injectable()
 export class RpcService {
@@ -118,8 +119,8 @@ export class RpcService {
             case RPCMethods.BACKUPWALLET:
                 data = await this.callServer("backupwallet", params);
                 break;
-            case RPCMethods.GETLATESTBLOCK:
-                data = await this.getLatestBlock();
+            case RPCMethods.GETBLOCKCHAIN:
+                data = await this.getBlockchain();
                 break;
             case RPCMethods.MASTERNODESTART:
                 data = await this.callServer("masternode", ['start', ...params])
@@ -222,12 +223,19 @@ export class RpcService {
         }
     }
 
-    private async getLatestBlock() {
-        let result = { height: 0, time: 0 };
-        let data: any = await this.callServer('getbestblockhash');
-        data = await this.callServer('getblock', [data.result]);
-        result.height = data.result.height;
-        result.time = data.result.time;
+    private async getBlockchain() {
+        let result = new BlockchainStatus();
+        // get blockchain info
+        let blockchainInfo: any = await this.callServer('getblockchaininfo');
+        result.latestBlockHeight = blockchainInfo.result.blocks;
+        result.headers = blockchainInfo.result.headers;
+        result.syncProgresss = blockchainInfo.result.verificationprogress * 100;
+        result.latestBlockHash = blockchainInfo.result.bestblockhash;
+        result.chain = blockchainInfo.result.chain;
+        // get block time
+        let blockInfo: any = await this.callServer('getblock', [result.latestBlockHash]);
+        result.latestBlockTime = blockInfo.result.time * 1000;
+        // return 
         return { result };
     }
 
@@ -575,7 +583,7 @@ export enum RPCMethods {
     LOCK,
     LOCKUNSPENT,
     CREATETRANSACTION,
-    GETLATESTBLOCK,
+    GETBLOCKCHAIN,
     MASTERNODESTART,
     MASTERNODESTARTMANY,
     MASTERNODESTARTALIAS,
