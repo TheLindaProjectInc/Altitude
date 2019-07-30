@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import Helpers from 'app/helpers';
 import { Chart, ChartPoint } from 'chart.js';
-import { HttpClient } from '@angular/common/http';
 import { TranslationService } from 'app/providers/translation.service';
 import { ErrorService } from 'app/providers/error.service';
 import { CurrencyService } from 'app/providers/currency.service';
@@ -19,7 +18,6 @@ export class MarketPriceComponent {
   chartLoadFailed: boolean = false;
 
   constructor(
-    private http: HttpClient,
     private translation: TranslationService,
     private error: ErrorService,
     private currenyService: CurrencyService
