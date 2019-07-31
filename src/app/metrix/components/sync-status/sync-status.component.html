@@ -28,14 +28,14 @@
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOBLOCKS' | translate }}...
         </span>
         <!--     in sync -->
-        <span *ngIf="wallet.running && wallet.blockchainStatus.syncProgresss >= 99">
+        <span *ngIf="wallet.running && wallet.blockchainStatus.syncProgresss >= 99.99">
             {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
             {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
             {{ 'COMPONENTS.SIDEBAR.SYNC.TIMESINCEBLOCK' | translate }}
         </span>
         <!-- syncing -->
         <progress max="100" [title]="progressTitle"
-            *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight && wallet.blockchainStatus.syncProgresss < 99"
+            *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight && wallet.blockchainStatus.syncProgresss < 99.99"
             [value]="wallet.blockchainStatus.syncProgresss"></progress>
     </span>
 </div>
