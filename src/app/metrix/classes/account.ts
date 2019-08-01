@@ -50,6 +50,13 @@ export class Account {
         return this.addresses[0].address;
     }
 
+    get watchOnly(): boolean {
+        for (let i = 0; i < this.addresses.length; i++) {
+            if (this.addresses[i].watchOnly) return true;
+        }
+        return false;
+    }
+
     syncAddresses(newAddresses: Array<Address>) {
         // add and update addresses from server
         newAddresses.forEach(addr => {
@@ -58,6 +65,7 @@ export class Account {
                 if (this.addresses[i].address === addr.address) {
                     this.addresses[i].removeFromAccount = false;
                     this.addresses[i].confirmations = addr.confirmations;
+                    this.addresses[i].watchOnly = addr.watchOnly;
                     this.addresses[i].syncInputs(addr.allInputs());
                     hasMatch = true;
                 }

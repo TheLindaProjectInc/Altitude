@@ -241,7 +241,13 @@ export class RpcService {
 
     private async getAccounts() {
         // get addresses
-        let addresses: any = await this.callServer("listreceivedbyaddress", [0, true]);
+        let addresses: any;
+        // as of v3.4 listreceivedbyaddress now has a includeWatchonly flag
+        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
+            addresses = await this.callServer("listreceivedbyaddress", [0, true, true]);
+        else
+            addresses = await this.callServer("listreceivedbyaddress", [0, true]);
+
         // get address groupings
         let groups: any = await this.callServer("listaddressgroupings");
         // get all unspent
@@ -256,13 +262,16 @@ export class RpcService {
                     address: grp[j][0],
                     amount: 0,
                     account: grp[j][2],
-                    unspents: []
+                    unspents: [],
+                    watchOnly: false
                 }
                 if (newAddress.account !== undefined && newAccount.length) accounts.push([newAddress]);
                 else newAccount.push(newAddress);
                 // removing matching address in address list
                 for (let k = 0; k < addresses.result.length; k++) {
                     if (addresses.result[k].address === newAddress.address) {
+                        // set watch only
+                        newAddress.watchOnly = addresses.result[k].involvesWatchonly === true
                         addresses.result.splice(k, 1);
                         break;
                     }
@@ -277,7 +286,8 @@ export class RpcService {
                     address: address.address,
                     amount: address.amount,
                     account: address.account,
-                    unspents: []
+                    unspents: [],
+                    watchOnly: address.involvesWatchonly === true
                 }]);
             }
         });
@@ -333,7 +343,7 @@ export class RpcService {
     }
 
     private listUnspent() {
-        // as of v3.4 listunspent now has a watchonlyconfig flag
+        // as of v3.4 listunspent now has a includeWatchonly flag
         if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
             return this.callServer("listunspent", [1, 9999999, [], 1, true]);
         else
@@ -475,7 +485,13 @@ export class RpcService {
         let from = params[1] || 0;
 
         // load all transactions
-        let data: any = await this.callServer('listtransactions', ['*', count, from]);
+        let data: any;
+        // as of v3.4 listtransactions now has a includeWatchonly flag
+        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
+            data = await this.callServer('listtransactions', ['*', count, from, true])
+        else
+            data = await this.callServer('listtransactions', ['*', count, from])
+
         // get address
         data.result.forEach(tx => {
             outputs.push(new Transaction(tx))

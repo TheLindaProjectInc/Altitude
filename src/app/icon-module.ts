@@ -39,7 +39,8 @@ import {
     faExclamationCircle,
     faLink,
     faChevronDown,
-    faChevronRight
+    faChevronRight,
+    faSearch
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -83,6 +84,7 @@ export function setupIcons() {
         faExclamationCircle,
         faLink,
         faChevronDown,
-        faChevronRight
+        faChevronRight,
+        faSearch
     );
 }

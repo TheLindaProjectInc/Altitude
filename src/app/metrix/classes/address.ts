@@ -10,6 +10,7 @@ export class Address implements IAddress {
     amount: number = 0;
     private inputs: Array<Input> = [];
     renaming: boolean = false;
+    watchOnly: boolean = false;
 
     // used to denote if an address should be removed from this account
     removeFromAccount: boolean = false;
@@ -19,6 +20,7 @@ export class Address implements IAddress {
         this.account = addressData.account;
         this.newAccount = this.account;
         this.confirmations = addressData.confirmations;
+        this.watchOnly = addressData.watchOnly;
         if (addressData.unspents) {
             addressData.unspents.forEach(unspent => {
                 this.inputs.push(new Input(unspent, this, matureTime));

@@ -608,7 +608,7 @@ export class WalletService {
                 accList.push(acc);
         })
         if (hideEmpty && !accList.length && accounts.length) accList.push(accounts[0]);
-
+        
         // sort by name then balance
         return accList.sort((a: Account, b: Account) => {
             const s1 = a.name !== 'Unnamed' ? a.name.toLowerCase() : 'z';

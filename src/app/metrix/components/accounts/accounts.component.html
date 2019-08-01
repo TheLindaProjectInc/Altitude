@@ -17,7 +17,8 @@
             <div class="account-inner">
                 <div>
                     <div class="account-name">
-                        <fa-icon icon="wallet"></fa-icon>
+                        <fa-icon *ngIf="account.watchOnly" icon="search"></fa-icon>
+                        <fa-icon *ngIf="!account.watchOnly" icon="wallet"></fa-icon>
                         <h5>{{account.name}}</h5>
                     </div>
                     <h6 class="account-balance">
