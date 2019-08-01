@@ -66,7 +66,6 @@ export class MasternodesComponent {
     this.wallet.masternode.list.forEach(mn => {
       // check if it is in my masternode.conf file
       if (ipList.indexOf(mn.address) > -1) {
-        console.log('MN', mn);
         ipList.splice(ipList.indexOf(mn.address), 1);
         // add alias to masternode for context menu
         for (let i = 0; i < this.wallet.masternode.config.length; i++) {
