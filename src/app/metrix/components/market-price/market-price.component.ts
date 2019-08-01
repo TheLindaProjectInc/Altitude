@@ -87,58 +87,62 @@ export class MarketPriceComponent {
     }
 
     // get chart
-    var ctx = (document.getElementById('priceChart') as any).getContext("2d");
+    try {
+      var ctx = (document.getElementById('priceChart') as any).getContext("2d");
 
-    // set custom x axis
-    let xMin = Math.floor(min - (max - min) / 2);
-    let xMax = Math.ceil(max + (max - min) / 2);
+      // set custom x axis
+      let xMin = Math.floor(min - (max - min) / 2);
+      let xMax = Math.ceil(max + (max - min) / 2);
 
-    // set gradient colour
-    let gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-    gradientStroke.addColorStop(0, "#BA55D3");
-    gradientStroke.addColorStop(1, "#481448");
+      // set gradient colour
+      let gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+      gradientStroke.addColorStop(0, "#BA55D3");
+      gradientStroke.addColorStop(1, "#481448");
 
-    this.priceChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [
-          {
-            backgroundColor: gradientStroke,
-            borderColor: gradientStroke,
-            pointRadius: 0,
-            data: incomeData
-          }
-        ]
-      },
-      options: {
-        legend: {
-          display: false
-        },
-        tooltips: {
-          intersect: false,
-          callbacks: {
-            label: function (tooltipItem, data) {
-              return tooltipItem.yLabel + ' Sats';
+      this.priceChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              backgroundColor: gradientStroke,
+              borderColor: gradientStroke,
+              pointRadius: 0,
+              data: incomeData
             }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
           },
-          displayColors: false
-        },
-        scales: {
-          yAxes: [{
-            display: false,
-            ticks: {
-              suggestedMin: xMin,
-              suggestedMax: xMax,
-              stepSize: 1
-            }
-          }],
-          xAxes: [{
-            display: false,
-          }]
+          tooltips: {
+            intersect: false,
+            callbacks: {
+              label: function (tooltipItem, data) {
+                return tooltipItem.yLabel + ' Sats';
+              }
+            },
+            displayColors: false
+          },
+          scales: {
+            yAxes: [{
+              display: false,
+              ticks: {
+                suggestedMin: xMin,
+                suggestedMax: xMax,
+                stepSize: 1
+              }
+            }],
+            xAxes: [{
+              display: false,
+            }]
+          }
         }
-      }
-    });
+      });
+    } catch (ex) {
+
+    }
     this.loadingChart = false;
   }
 
