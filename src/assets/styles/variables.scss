@@ -8,4 +8,5 @@ $background-accent:rgb(10, 10, 10);
 $content-background:#101010;
 
 $sidebar-width:210px;
-$sidebar-padding:($sidebar-width+60);
+$appbar-width:60px;
+$sidebar-padding:($sidebar-width+$appbar-width);

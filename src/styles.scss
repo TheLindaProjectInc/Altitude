@@ -12,6 +12,7 @@
 @import "./assets/styles/checkbox.scss";
 @import "./assets/styles/appbar.scss";
 @import "./assets/styles/progressBar.scss";
+@import "./assets/styles/layout.scss";
 
 html,
 body {
@@ -50,6 +51,10 @@ a {
     left: 0;
     margin-left: $sidebar-padding;
     flex: 1;
+
+    &.full {
+        margin-left: $appbar-width;
+    }
 }
 
 .block {
@@ -213,6 +218,14 @@ a {
 
     .transaction {
         background: none;
+    }
+
+    &.mt {
+        margin-top: 20px;
+    }
+
+    &.mb {
+        margin-bottom: 20px;
     }
 }
 

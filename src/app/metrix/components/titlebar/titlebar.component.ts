@@ -10,7 +10,7 @@ import { TranslationService } from 'app/providers/translation.service';
 import { EncryptionStatus } from '../../classes';
 
 @Component({
-  selector: 'title-bar',
+  selector: 'metrix-title-bar',
   templateUrl: './titlebar.component.html',
   host: {
     '(document:click)': 'documentClick($event)',
@@ -78,6 +78,7 @@ export class TitlebarComponent {
           'SEPERATOR',
           'MENU.FILE.OPTIONS',
           'MENU.FILE.LOCALE',
+          'MENU.FILE.CURRENCIES',
           'SEPERATOR',
           'MENU.FILE.RESTARTCORE',
           'SEPERATOR',
