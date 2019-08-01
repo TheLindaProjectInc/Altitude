@@ -26,33 +26,29 @@ export class CurrencyService {
     }
 
     private async getMarket() {
-        try {
-            this.marketLoadFailed = false;
-            this.http.get(`https://api.coingecko.com/api/v3/coins/linda`)
-                .subscribe((data: any) => {
-                    this.currencies = ['MRX'];
-                    Object.keys(data.market_data.current_price).forEach(key => {
-                        this.currencies.push(key.toUpperCase());
-                    });
-                    this.market = data;
+        this.marketLoadFailed = false;
+        this.http.get(`https://api.coingecko.com/api/v3/coins/linda`)
+            .subscribe((data: any) => {
+                this.currencies = ['MRX'];
+                Object.keys(data.market_data.current_price).forEach(key => {
+                    this.currencies.push(key.toUpperCase());
                 });
-        } catch (ex) {
-            this.marketLoadFailed = true;
-        }
+                this.market = data;
+            }, error => {
+                this.marketLoadFailed = true;
+            });
         // update market every 12 hours
         setTimeout(() => this.getMarket(), 1000 * 60 * 60 * 12)
     }
 
     public async getMarketChart(period: number) {
         return new Promise((resolve, reject) => {
-            try {
-                this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
-                    .subscribe((data: any) => {
-                        resolve(data.prices);
-                    });
-            } catch (ex) {
-                reject(ex)
-            }
+            this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
+                .subscribe((data: any) => {
+                    resolve(data.prices);
+                }, error => {
+                    reject(error)
+                });
         })
     }
 
