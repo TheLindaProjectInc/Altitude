@@ -29,7 +29,7 @@ export class AddressBookComponent {
     private electron: ElectronService,
     private errorService: ErrorService
   ) {
-    addressBook.getAddress = (showSending) => this.getAddress(showSending);
+    this.addressBook.getAddress = (showSending) => this.getAddress(showSending);
   }
 
   show() {

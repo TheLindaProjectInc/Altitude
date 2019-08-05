@@ -1,6 +1,7 @@
 import { Component, isDevMode } from '@angular/core';
 import { ElectronService } from './providers/electron.service';
 import { AppConfig } from '../environments/environment';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { AppConfig } from '../environments/environment';
 export class AppComponent {
 
   constructor(
-    public electron: ElectronService
+    public electron: ElectronService,
+    private router: Router
   ) {
     if (isDevMode()) {
       console.log('AppConfig', AppConfig);
@@ -21,6 +23,11 @@ export class AppComponent {
       }
     }
 
+  }
+
+  get isFullScreen() {
+    if (this.router.url === '/buy') return true;
+    return false;
   }
 
 }

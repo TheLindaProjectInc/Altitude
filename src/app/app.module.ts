@@ -31,6 +31,7 @@ import { CurrencyService } from './providers/currency.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
+import * as buy from './buy/buy.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -42,14 +43,16 @@ setupIcons();
 // routes
 const routes: Routes = [
   { path: '', redirectTo: '/metrix', pathMatch: 'full' },
-  metrix.route
+  metrix.route,
+  buy.route
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     ...componentDeclarations,
-    ...metrix.declarations
+    ...metrix.declarations,
+    ...buy.declarations
   ],
   imports: [
     BrowserModule,
@@ -82,8 +85,9 @@ const routes: Routes = [
     TranslationService,
     DesktopNotificationService,
     CurrencyService,
+    ...componentProviders,
     ...metrix.providers,
-    ...componentProviders
+    ...buy.providers,
   ],
   bootstrap: [
     AppComponent
