@@ -1,12 +1,11 @@
-<title-bar></title-bar>
 <div class="page">
 
-    <side-bar></side-bar>
-   
+    <app-bar></app-bar>
+
     <!-- Used to hide/show the scroll bar -->
     <div class="cover-bar"></div>
 
-    <div class="wrapper">
+    <div class="wrapper" [ngClass]="{'full':isFullScreen}">
         <router-outlet></router-outlet>
     </div>
 

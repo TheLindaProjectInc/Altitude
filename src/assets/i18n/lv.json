@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adrese",
             "ENABLED": "Iespējots",
-            "NOTENABLEDTITLE": "Masternodes nav iespējotas",
-            "NOTENABLEDINSTR": "Lai palaistu masternodu, jums būs jāiespējo masternodes, nosakot masternode = 1 un konfigurējot \"masternodeprivkey\" un \"masternodeaddr\" mainīgos jūsu metrix.conf failā.",
             "STARTBUTTON": "Sāciet lokāli",
             "STARTALIASBUTTON": "Sākt alias",
-            "STARTALLBUTTON": "Sāciet visu"
+            "STARTALLBUTTON": "Sāciet visu",
+            "NOMASTERNODES": "Jums nav nekādu masternodu",
+            "NOMNOUTPUTS": "Netika atrasts Masternode izeja. Lai palaistu vietējo Masternodi, nosūtiet tieši uz 2 000 000 monētu savā Masternode adresē un gaidiet 15 apstiprinājumus.",
+            "STOPBUTTON": "Pārtraukt vietējo",
+            "STOPALIASBUTTON": "Apturiet aizstājvārdu",
+            "ADDREMOTE": "Pievienojiet Remote Masternode",
+            "REMOVEMN": "Noņemiet Masternode",
+            "ADDLOCAL": "Iestatiet vietējo Masternode",
+            "DISABLELOCAL": "Atspējot vietējo masternodu",
+            "LOCALNOTRUNNING": "Vietējais Masternode nedarbojas",
+            "REMOTENOTRUNNING": "Remote Masternode nav atrasts"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Parakstīt paziņojumu",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Pārskats",
             "TRANSACTIONSTAB": "Darījumi",
             "ADDRESSTABS": "Adreses"
+        },
+        "CURRENCY": {
+            "TITLE": "Izvēlieties Display Currency"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartējiet klientu",
             "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu."
+            "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu.",
+            "ADDREMOTEMNTITLE": "Pievienojiet Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: ports",
+            "ADDREMOTEMNKEY": "Masternode privātā atslēga",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indekss"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -295,7 +312,8 @@
             "LOCALE": "Valoda...",
             "RESTARTCORE": "Restartējiet Metrix Core",
             "EXIT": "Izeja",
-            "OPTIONS": "Iespējas..."
+            "OPTIONS": "Iespējas...",
+            "CURRENCIES": "Displeja valūta..."
         },
         "ENCRYPT": {
             "TITLE": "Šifrēt",
@@ -334,7 +352,9 @@
         "SORTBY": "Kārtot pēc",
         "SEARCH": "Meklēt",
         "FEE": "Maksa",
-        "ACCEPTBUTTON": "Pieņemt"
+        "ACCEPTBUTTON": "Pieņemt",
+        "CONFIRMED": "Apstiprināts",
+        "UNCONFIRMED": "Nav apstiprināts"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core inicializēšana...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Visiem ieguldījumiem ir nepieciešams vismaz 1 apstiprinājums pirms tēriņiem.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Darījumi, kas iekopēti starpliktuvē",
         "TRANSACTIONOUTPUTTOOLARGE": "Viens no jūsu algas apmēriem ir pārāk liels, lai droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsu maiņa ir pārāk liela, lai to droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jūsu maiņa ir pārāk liela, lai to droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Apturēt masternode...",
+        "FAILEDTOWRITECONFIG": "Rakstot metrix.conf failu, radās problēma. Pārbaudiet, vai fails pastāv un ka augstumam Altitude ir rakstīšanas atļaujas.",
+        "NOPUBLICUP": "Netika atrasta publiskā IP adrese. Pārbaudiet savu interneta savienojumu un restartējiet augstumu.",
+        "CONFIGURINGLOCALMN": "Vietējā Masternode konfigurēšana..."
     },
     "TIME": {
         "AFEWSECONDS": "Dažas sekundes",
@@ -386,5 +410,50 @@
         "MONTHS": "mēneši",
         "AYEAR": "Gads",
         "YEARS": "gadiem"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Saņemtas monētas",
+        "NEWTRANSACTION_TITLE_STAKE": "Saņemtā likme",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Saņemta Masternode balva"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "Februāris",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "Maijā",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "AZT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu sūti",
+                "YOUGET": "Tu iegūsti",
+                "MRXADDRESS": "Metrix adrese",
+                "SWAP": "Apmaini",
+                "SWAPADDRESSES": "Apmainīt adreses",
+                "BTCADDRESS": "BTC adrese",
+                "INFOLINE1": "Kad jums būs BTC depozīta adrese, jebkurš uz šo adresi nosūtītais BTC automātiski tiks aizstāts ar MRX uz jūsu norādīto MRX adresi.",
+                "INFOLINE2-1": "Darījumi parasti tiek dzēsti stundas laikā atkarībā no Bitcoin bloķēšanas laikiem. Mēs varam pieņemt fiat for",
+                "INFOLINE2-2": "iesaistītās valstis",
+                "INFOLINE2-3": "Tas vispirms tiks pārveidots par BTC, pēc tam par MRX.",
+                "INFOLINE3": "Kad jūsu BTC depozīts būs iztīrīts, jūs saņemsit MRX norādītajā adresē.",
+                "INFOLINE4": "Lai iegūtu vairāk informācijas, apmeklējiet vietni",
+                "FIATSWAPSELECTED": "Jūs tiksit novirzīts uz vietni Buy.Metrixcoin.com, lai pabeigtu šo darījumu"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Notiek mijmaiņas adreses ģenerēšana...",
+            "ALREADYHAVEADDRESS": "Jums jau ir šīs adreses BTC adrese",
+            "SWAPUSDMIN": "Minimālā USD mijmaiņas summa ir USD 50",
+            "SWAPUSDMAX": "Maksimālā USD maiņas summa ir USD 3000",
+            "NOADDRESS": "Jūs neievadījāt Metrix adresi"
+        }
     }
 }

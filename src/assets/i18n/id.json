@@ -68,11 +68,19 @@
             "IP": "AKU P",
             "ADDRESS": "Alamat",
             "ENABLED": "Diaktifkan",
-            "NOTENABLEDTITLE": "Masternodes tidak diaktifkan",
-            "NOTENABLEDINSTR": "Untuk menjalankan masternode Anda perlu mengaktifkan masternode dengan mengatur masternode = 1 dan mengkonfigurasi variabel 'masternodeprivkey' dan 'masternodeaddr' di file metrix.conf Anda.",
             "STARTBUTTON": "Mulai Lokal",
             "STARTALIASBUTTON": "Mulai Alias",
-            "STARTALLBUTTON": "Mulai Semua"
+            "STARTALLBUTTON": "Mulai Semua",
+            "NOMASTERNODES": "Anda tidak memiliki masternode",
+            "NOMNOUTPUTS": "Tidak ada output Masternode yang ditemukan. Untuk menjalankan Masternode lokal, kirim tepat 2.000.000 koin ke alamat Masternode Anda dan tunggu 15 konfirmasi.",
+            "STOPBUTTON": "Berhenti Lokal",
+            "STOPALIASBUTTON": "Hentikan Alias",
+            "ADDREMOTE": "Tambahkan Remote Masternode",
+            "REMOVEMN": "Hapus Masternode",
+            "ADDLOCAL": "Atur Masternode Lokal",
+            "DISABLELOCAL": "Nonaktifkan Masternode Lokal",
+            "LOCALNOTRUNNING": "Masternode Lokal Tidak Berjalan",
+            "REMOTENOTRUNNING": "Masternode jarak jauh tidak ditemukan"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Ikhtisar",
             "TRANSACTIONSTAB": "Transaksi",
             "ADDRESSTABS": "Alamat"
+        },
+        "CURRENCY": {
+            "TITLE": "Pilih Mata Uang Tampilan"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ada masalah dengan Metrix Core yang menyebabkannya berhenti. Disarankan untuk memeriksa file debug.log Anda untuk masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak valid",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf Anda memiliki pengaturan masternode yang tidak valid yang akan menyebabkan Metrix Core segera keluar. Silakan periksa file ini."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf Anda memiliki pengaturan masternode yang tidak valid yang akan menyebabkan Metrix Core segera keluar. Silakan periksa file ini.",
+            "ADDREMOTEMNTITLE": "Tambahkan Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Kunci Pribadi Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indeks Trx Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -295,7 +312,8 @@
             "LOCALE": "Bahasa...",
             "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "Keluar",
-            "OPTIONS": "Pilihan..."
+            "OPTIONS": "Pilihan...",
+            "CURRENCIES": "Tampilkan Mata Uang..."
         },
         "ENCRYPT": {
             "TITLE": "Enkripsikan",
@@ -334,7 +352,9 @@
         "SORTBY": "Sortir dengan",
         "SEARCH": "Pencarian",
         "FEE": "Biaya",
-        "ACCEPTBUTTON": "Menerima"
+        "ACCEPTBUTTON": "Menerima",
+        "CONFIRMED": "Dikonfirmasi",
+        "UNCONFIRMED": "Belum dikonfirmasi"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Menginisialisasi Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Semua input memerlukan setidaknya 1 konfirmasi sebelum belanja.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan klip",
         "TRANSACTIONOUTPUTTOOLARGE": "Salah satu pembayaran Anda ke jumlah terlalu besar untuk dikirim dengan aman. Maksimal adalah 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Perubahan Anda terlalu besar untuk dikirim dengan aman. Maksimal adalah 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Perubahan Anda terlalu besar untuk dikirim dengan aman. Maksimal adalah 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Menghentikan masternode...",
+        "FAILEDTOWRITECONFIG": "Terjadi masalah saat menulis ke file metrix.conf Anda. Periksa file yang ada dan bahwa Altitude memiliki izin menulis.",
+        "NOPUBLICUP": "Tidak ada alamat IP Publik yang ditemukan. Periksa koneksi internet Anda dan mulai ulang Ketinggian.",
+        "CONFIGURINGLOCALMN": "Mengkonfigurasi Masternode lokal..."
     },
     "TIME": {
         "AFEWSECONDS": "Beberapa detik",
@@ -386,5 +410,50 @@
         "MONTHS": "bulan",
         "AYEAR": "Tahun",
         "YEARS": "tahun"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Menerima Koin",
+        "NEWTRANSACTION_TITLE_STAKE": "Pasak yang diterima",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Menerima Hadiah Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MERUSAK",
+        "APR": "April",
+        "MAY": "MUNGKIN",
+        "JUN": "JUN",
+        "JUL": "JULI",
+        "AUG": "AGUSTUS",
+        "SEP": "SEP",
+        "OCT": "OKT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Anda mengirim",
+                "YOUGET": "Anda mendapatkan",
+                "MRXADDRESS": "Alamat Metrix",
+                "SWAP": "Menukar",
+                "SWAPADDRESSES": "Tukar Alamat",
+                "BTCADDRESS": "Alamat BTC",
+                "INFOLINE1": "Setelah Anda memiliki alamat penyetoran BTC, setiap BTC yang dikirim ke alamat itu akan secara otomatis ditukar dengan MRX ke alamat MRX yang Anda pilih.",
+                "INFOLINE2-1": "Transaksi biasanya dihapus dalam satu jam tergantung pada waktu blok Bitcoin. Kami dapat menerima untuk",
+                "INFOLINE2-2": "negara yang berpartisipasi",
+                "INFOLINE2-3": "Ini akan dikonversi ke BTC terlebih dahulu kemudian MRX.",
+                "INFOLINE3": "Setelah setoran BTC Anda selesai Anda akan menerima MRX Anda ke alamat yang Anda pilih.",
+                "INFOLINE4": "Untuk informasi lebih lanjut, kunjungi",
+                "FIATSWAPSELECTED": "Anda akan diarahkan ke Beli.Metrixcoin.com untuk menyelesaikan transaksi ini"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Membuat Alamat Tukar...",
+            "ALREADYHAVEADDRESS": "Anda sudah memiliki alamat BTC untuk alamat ini",
+            "SWAPUSDMIN": "Jumlah minimum swap USD adalah $ 50",
+            "SWAPUSDMAX": "Jumlah maksimum swap USD adalah $ 3000",
+            "NOADDRESS": "Anda tidak memasukkan alamat Metrix"
+        }
     }
 }

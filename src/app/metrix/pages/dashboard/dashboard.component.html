@@ -1,0 +1,27 @@
+<div class="content">
+
+  <div class="alerts" *ngIf="wallet.walletStatus.errors">
+    <h1>Alert</h1>
+    {{wallet.walletStatus.errors}}
+  </div>
+
+  <div class="layout-outer">
+
+    <div class="layout-lhs">
+
+      <market-price-chart></market-price-chart>
+
+      <div class="content-card" style="margin: 10px 0;">
+        <h1>{{ 'PAGES.DASHBOARD.TRANSACTIONS' | translate }}</h1>
+        <div class="transactions">
+          <transaction-row *ngFor="let trx of displayTransactions()" [trx]="trx"></transaction-row>
+        </div>
+      </div>
+
+    </div>
+
+    <metrix-accounts></metrix-accounts>
+
+  </div>
+
+</div>

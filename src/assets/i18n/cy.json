@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Cyfeiriad",
             "ENABLED": "Wedi'i alluogi",
-            "NOTENABLEDTITLE": "Nid yw Masternodes wedi eu galluogi",
-            "NOTENABLEDINSTR": "I redeg masternode bydd angen i chi alluogi masternodes trwy osod masternode = 1 a ffurfweddu newidynnau 'masternodeprivkey' a 'masternodeaddr' yn eich ffeil metrix.conf.",
             "STARTBUTTON": "Dechrau Lleol",
             "STARTALIASBUTTON": "Dechreuwch Alias",
-            "STARTALLBUTTON": "Dechrau'r cyfan"
+            "STARTALLBUTTON": "Dechrau'r cyfan",
+            "NOMASTERNODES": "Does gennych chi ddim masternodau",
+            "NOMNOUTPUTS": "Ni ddarganfuwyd allbynnau Masternode. I redeg Masternode lleol, anfonwch 2,000,000 o ddarnau arian i'ch cyfeiriad Masternode ac aros am 15 cadarnhad.",
+            "STOPBUTTON": "Stopiwch Lleol",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Ychwanegu Remote Masternode",
+            "REMOVEMN": "Dileu Masternode",
+            "ADDLOCAL": "Setup Local Masternode",
+            "DISABLELOCAL": "Analluogi Local Masternode",
+            "LOCALNOTRUNNING": "Masternode Lleol ddim yn Rhedeg",
+            "REMOTENOTRUNNING": "Masternode o Bell Heb ei ddarganfod"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Neges Arwyddion",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Trosolwg",
             "TRANSACTIONSTAB": "Trafodion",
             "ADDRESSTABS": "Cyfeiriadau"
+        },
+        "CURRENCY": {
+            "TITLE": "Dewiswch Arian Arddangos"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ail-gychwyn Cleient",
             "CLIENTINVALIDCONFIGTITLE": "Cyfluniad metrix.conf annilys",
-            "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon."
+            "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon.",
+            "ADDREMOTEMNTITLE": "Ychwanegu Remote Masternode",
+            "ADDREMOTEMNALIAS": "Alias Masternode",
+            "ADDREMOTEMNIP": "IP Masternode: Porthladd",
+            "ADDREMOTEMNKEY": "Allwedd Preifat Masternode",
+            "ADDREMOTEMNTXHASH": "Triongl Masternode",
+            "ADDREMOTEMNTXINDEX": "Mynegai Triongl Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr cyfeiriadau",
@@ -295,7 +312,8 @@
             "LOCALE": "Iaith...",
             "RESTARTCORE": "Ailgychwyn Metrix Craidd",
             "EXIT": "Ymadael",
-            "OPTIONS": "Opsiynau..."
+            "OPTIONS": "Opsiynau...",
+            "CURRENCIES": "Arian Arddangos..."
         },
         "ENCRYPT": {
             "TITLE": "Amgryptio",
@@ -334,7 +352,9 @@
         "SORTBY": "Trefnu Yn ôl",
         "SEARCH": "Chwilio",
         "FEE": "Ffi",
-        "ACCEPTBUTTON": "Derbyn"
+        "ACCEPTBUTTON": "Derbyn",
+        "CONFIRMED": "Cadarnhawyd",
+        "UNCONFIRMED": "Heb ei gadarnhau"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Cychwyn Metrix Craidd...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Rhaid i bob mewnbyniad o leiaf 1 gadarnhau cyn gwario.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Trosglwyddiadau wedi'u copïo i'r clipfwrdd",
         "TRANSACTIONOUTPUTTOOLARGE": "Mae un o'ch cyflog i symiau yn rhy fawr i'w hanfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mae'ch newid yn rhy fawr i'w anfon yn ddiogel. Uchafswm yw 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Mae'ch newid yn rhy fawr i'w anfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Stopio masternode...",
+        "FAILEDTOWRITECONFIG": "Roedd yna broblem ysgrifennu at eich ffeil metrix.conf. Gwiriwch fod y ffeil yn bodoli a bod Uchder yn ysgrifennu caniatâd.",
+        "NOPUBLICUP": "Ni ddarganfuwyd cyfeiriad IP cyhoeddus. Gwiriwch eich cysylltiad rhyngrwyd ac ailddechrau Uchder.",
+        "CONFIGURINGLOCALMN": "Ffurfweddu Masternode lleol..."
     },
     "TIME": {
         "AFEWSECONDS": "Ychydig eiliadau",
@@ -386,5 +410,50 @@
         "MONTHS": "misoedd",
         "AYEAR": "Flwyddyn",
         "YEARS": "blynyddoedd"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Darnau arian a dderbyniwyd",
+        "NEWTRANSACTION_TITLE_STAKE": "Wedi derbyn Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Derbyniodd Wobr Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MAI",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Rydych chi'n Anfon",
+                "YOUGET": "Rydych chi'n Cael",
+                "MRXADDRESS": "Cyfeiriad Metrix",
+                "SWAP": "Cyfnewid",
+                "SWAPADDRESSES": "Cyfeiriadau Cyfnewid",
+                "BTCADDRESS": "Cyfeiriad BTC",
+                "INFOLINE1": "Unwaith y bydd gennych gyfeiriad blaendal BTC, bydd unrhyw BTC a anfonir i'r cyfeiriad hwnnw yn cael ei gyfnewid yn awtomatig am MRX i'ch cyfeiriad MRX enwebedig.",
+                "INFOLINE2-1": "Mae trafodion fel arfer yn clirio o fewn awr yn dibynnu ar amseroedd bloc Bitcoin. Gallwn dderbyn fiat am",
+                "INFOLINE2-2": "gwledydd sy'n cymryd rhan",
+                "INFOLINE2-3": "Bydd hwn yn cael ei drawsnewid i BTC yn gyntaf ac yna MRX.",
+                "INFOLINE3": "Ar ôl i'ch blaendal BTC glirio byddwch yn derbyn eich MRX i'ch cyfeiriad enwebedig.",
+                "INFOLINE4": "Am fwy o wybodaeth, ewch i",
+                "FIATSWAPSELECTED": "Fe'ch ailgyfeirir i Buy.Metrixcoin.com i gyflawni'r trafodiad hwn"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Cynhyrchu Cyfeiriad Cyfnewid...",
+            "ALREADYHAVEADDRESS": "Mae gennych gyfeiriad BTC eisoes ar gyfer y cyfeiriad hwn",
+            "SWAPUSDMIN": "Yr isafswm swm cyfnewid USD yw $ 50",
+            "SWAPUSDMAX": "Uchafswm cyfnewid USD yw $ 3000",
+            "NOADDRESS": "Ni wnaethoch nodi cyfeiriad Metrix"
+        }
     }
 }

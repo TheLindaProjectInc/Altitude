@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adilesi",
             "ENABLED": "Yathandiza",
-            "NOTENABLEDTITLE": "Masternodes sichimathandizidwa",
-            "NOTENABLEDINSTR": "Kuti muyambe masternode muyenera kuonetsetsa masternodes poika masternode = 1 ndi kukonza 'masternodeprivkey' ndi 'masternodeaddr' zosiyanasiyana mu file metrix.conf.",
             "STARTBUTTON": "Yambani Mderalo",
             "STARTALIASBUTTON": "Yambani Zamoyo",
-            "STARTALLBUTTON": "Yambani Zonse"
+            "STARTALLBUTTON": "Yambani Zonse",
+            "NOMASTERNODES": "Mulibe masternode",
+            "NOMNOUTPUTS": "Palibe zotuluka za Masternode zomwe zapezeka. Kuti muthamangitse Masternode yakomweko kutumiza ndendende ndalama zokwana 5,000,000 ku adilesi yanu ya Masternode ndikudikirira matsimikiziro 15.",
+            "STOPBUTTON": "Imani Local",
+            "STOPALIASBUTTON": "Lekani Alias",
+            "ADDREMOTE": "Onjezani Masternode Akutali",
+            "REMOVEMN": "Chotsani Masternode",
+            "ADDLOCAL": "Kukhazikitsa Masternode",
+            "DISABLELOCAL": "Lemaza Masternode Yapafupi",
+            "LOCALNOTRUNNING": "Masternode Omwe Sathamanga",
+            "REMOTENOTRUNNING": "Masternode Akutali Sanapezeke"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Uthenga Wachizindikiro",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Mwachidule",
             "TRANSACTIONSTAB": "Kutengako",
             "ADDRESSTABS": "Maadiresi"
+        },
+        "CURRENCY": {
+            "TITLE": "Sankhani Ndalama Zowonetsa"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Yambiraninso Wotsatsa",
             "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa metrix.conf kosavomerezeka",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi.",
+            "ADDREMOTEMNTITLE": "Onjezani Masternode Akutali",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Bukhu la Maadiresi",
@@ -295,7 +312,8 @@
             "LOCALE": "Chilankhulo...",
             "RESTARTCORE": "Yambirani Metrix Core",
             "EXIT": "Potulukira",
-            "OPTIONS": "Zosankha..."
+            "OPTIONS": "Zosankha...",
+            "CURRENCIES": "Onetsani Ndalama..."
         },
         "ENCRYPT": {
             "TITLE": "Tsekani",
@@ -334,7 +352,9 @@
         "SORTBY": "Sanjani potengera",
         "SEARCH": "Sakani",
         "FEE": "Malipiro",
-        "ACCEPTBUTTON": "Landirani"
+        "ACCEPTBUTTON": "Landirani",
+        "CONFIRMED": "Chotsimikizika",
+        "UNCONFIRMED": "Osatsimikizika"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Kuyambitsa Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Zotsatira zonse zimafuna kutsimikizira 1 kusanayambe kugwiritsira ntchito.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Zosinthidwa zimakopera ku bolodipidi",
         "TRANSACTIONOUTPUTTOOLARGE": "Imodzi mwa malipiro anu kuti ndalama ndi zazikulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Kusintha kwanu ndi kwakukulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Kusintha kwanu ndi kwakukulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Kuyimitsa masternode...",
+        "FAILEDTOWRITECONFIG": "Panali vuto polembera fayilo yanu ya metrix.conf. Onani fayilo kuti ilipo ndipo Altitude ili ndi zilolezo zolemba.",
+        "NOPUBLICUP": "Palibe adilesi ya umma pagulu yomwe yapezeka. Onani kulumikizidwa kwanu kwa intaneti ndikuyambiranso Altitude.",
+        "CONFIGURINGLOCALMN": "Kukhazikitsa Masternode yakomweko..."
     },
     "TIME": {
         "AFEWSECONDS": "Masekondi pang'ono",
@@ -386,5 +410,50 @@
         "MONTHS": "miyezi",
         "AYEAR": "Chaka",
         "YEARS": "zaka"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ndalama Zoperekedwa",
+        "NEWTRANSACTION_TITLE_STAKE": "Kupeza Mtundu",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Mphoto ya Masternode Yopatsidwa"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MAY",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Mumatumiza",
+                "YOUGET": "Mukumva",
+                "MRXADDRESS": "Adilesi Ya Metrix",
+                "SWAP": "Sinthani",
+                "SWAPADDRESSES": "Sinthani Ma adilesi",
+                "BTCADDRESS": "Adilesi ya BTC",
+                "INFOLINE1": "Mukakhala ndi adilesi yosungitsa ya BTC ku BTC iliyonse yotumizidwa ku adilesi yomweyo isinthidwa ndi MRX ku adilesi yanu ya MRX yosankhidwa.",
+                "INFOLINE2-1": "Zochitika zimamveka mkati mwa ola limodzi kutengera nthawi ya blockcha Bitcoin. Titha kulandira",
+                "INFOLINE2-2": "mayiko otenga nawo mbali",
+                "INFOLINE2-3": "Izi zidzasinthidwa kukhala BTC poyamba ndiye MRX.",
+                "INFOLINE3": "Dipo lanu la BTC litatsimikizira mudzalandira MRX yanu ku adilesi yanu yosankhidwa.",
+                "INFOLINE4": "Kuti mumve zambiri",
+                "FIATSWAPSELECTED": "Mudzatumizidwa ku Buy.Metrixcoin.com kuti mumalize ntchito iyi"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Kupanga Adilesi Yakusintha...",
+            "ALREADYHAVEADDRESS": "Muli ndi adilesi ya BTC iyi",
+            "SWAPUSDMIN": "Kuchuluka kosintha kwa USD ndi $ 50",
+            "SWAPUSDMAX": "Mtengo wosinthika kwambiri wa USD ndi $ 3000",
+            "NOADDRESS": "Simunalowe adilesi ya Metrix"
+        }
     }
 }

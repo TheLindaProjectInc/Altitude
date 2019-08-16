@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Address",
             "ENABLED": "Maagwanta",
-            "NOTENABLEDTITLE": "Ang mga Masternodes wala makahimo",
-            "NOTENABLEDINSTR": "Sa pagpadagan sa masternode gikinahanglan nimo ang paghimo sa masternodes pinaagi sa paghimo sa masternode = 1 ug pag-configure sa mga 'masternodeprivkey' ug 'masternodeaddr' nga mga kapilian sa imong metrix.conf file.",
             "STARTBUTTON": "Pagsugod sa Lokal",
             "STARTALIASBUTTON": "Pagsugod Alias",
-            "STARTALLBUTTON": "Sugdi ang Tanan"
+            "STARTALLBUTTON": "Sugdi ang Tanan",
+            "NOMASTERNODES": "Wala ka'y masternodes",
+            "NOMNOUTPUTS": "Walay masugatan nga Masternode. Ang pagdumala sa usa ka lokal nga Masternode magpadala sa eksaktong 2,000,000 nga mga sensilyo sa imong address sa Masternode ug maghulat alang sa 15 nga pagkumpirma.",
+            "STOPBUTTON": "Hunong sa Lokal",
+            "STOPALIASBUTTON": "Mohunong Alias",
+            "ADDREMOTE": "Pagdugang sa Remote Masternode",
+            "REMOVEMN": "Kuhaa ang Masternode",
+            "ADDLOCAL": "Pagpahimutang sa Lokal nga Masternode",
+            "DISABLELOCAL": "Paglikay sa Lokal nga Masternode",
+            "LOCALNOTRUNNING": "Ang Lokal nga Masternode Dili Pagpadagan",
+            "REMOTENOTRUNNING": "Wala Makit-i ang Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Pagsulat sa Mensahe",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Kasagaran",
             "TRANSACTIONSTAB": "Mga transaksyon",
             "ADDRESSTABS": "Mga pakigpulong"
+        },
+        "CURRENCY": {
+            "TITLE": "Pagpilig Display Currency"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Metrix Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Pagsugod sa Client",
             "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file."
+            "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file.",
+            "ADDREMOTEMNTITLE": "Pagdugang sa Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -295,7 +312,8 @@
             "LOCALE": "Pinulongan...",
             "RESTARTCORE": "I-restart ang Metrix Core",
             "EXIT": "Paggawas",
-            "OPTIONS": "Mga Opsyon..."
+            "OPTIONS": "Mga Opsyon...",
+            "CURRENCIES": "Pagpakita sa..."
         },
         "ENCRYPT": {
             "TITLE": "I-encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Susunod By",
         "SEARCH": "Pagpangita",
         "FEE": "Bayad",
-        "ACCEPTBUTTON": "Dawata"
+        "ACCEPTBUTTON": "Dawata",
+        "CONFIRMED": "Gipakumpirma",
+        "UNCONFIRMED": "Wala pa gipamatud-an"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Pag-uswag sa Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Ang tanan nga mga input nagkinahanglan labing menos usa ka kumpirmasyon sa dili pa mogasto.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Mga transaksyon nga gikopya sa clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Usa sa imong suweldo sa kantidad dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ang imong pagbag-o dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ang imong pagbag-o dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Paghunong sa masternode...",
+        "FAILEDTOWRITECONFIG": "Adunay problema pagsulat sa imong metrix.conf file. Susiha ang file nga anaa ug nga ang Altitude adunay mga permiso sa pagsulat.",
+        "NOPUBLICUP": "Walay IP Address sa IP. Susiha ang imong koneksyon sa internet ug i-restart ang Altitude.",
+        "CONFIGURINGLOCALMN": "Pag-configure sa lokal nga Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Pipila ka segundo",
@@ -386,5 +410,50 @@
         "MONTHS": "bulan",
         "AYEAR": "Usa ka tuig",
         "YEARS": "ka tuig"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Nakadawat og mga Coins",
+        "NEWTRANSACTION_TITLE_STAKE": "Nakadawat sa Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Nakadawat sa Masternode Reward"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MAY",
+        "JUN": "HUNYO",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Nagpadala Ka",
+                "YOUGET": "Nakuha Nimo",
+                "MRXADDRESS": "Alamat sa Metrix",
+                "SWAP": "Pag-undang",
+                "SWAPADDRESSES": "Mga Pakigsulti sa Pagpalit",
+                "BTCADDRESS": "Alamat sa BTC",
+                "INFOLINE1": "Kung ikaw adunay usa ka address sa pagdeposito sa BTC bisan unsang gipadala nga BTC sa kana nga adres awtomatiko nga mapalit alang sa MRX sa imong gipili nga adres sa MRX.",
+                "INFOLINE2-1": "Ang mga pagbalhin nga kasagarang klaro sa sulod sa usa ka oras depende sa oras sa block sa Bitcoin. Makadawat kita alang sa",
+                "INFOLINE2-2": "nag-apil nga mga nasud",
+                "INFOLINE2-3": "Pag-usab kini nga una sa BTC unya ang MRX.",
+                "INFOLINE3": "Kung nakakuha na ang imong deposito sa BTC madawat nimo ang imong MRX sa imong gipili nga adres.",
+                "INFOLINE4": "Alang sa dugang nga pagbisita sa kasayuran",
+                "FIATSWAPSELECTED": "Pag-redirected ka sa Buy.Metrixcoin.com aron makompleto kini nga transaksyon"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Nagpatungha nga Pagpalitan sa Address...",
+            "ALREADYHAVEADDRESS": "Adunay ka usa ka address sa BTC alang sa kini nga adres",
+            "SWAPUSDMIN": "Ang minimum nga kantidad sa swap sa USD mao ang $ 50",
+            "SWAPUSDMAX": "Ang maximum nga kantidad sa swap sa USD mao ang $ 3000",
+            "NOADDRESS": "Wala ka makasulod sa usa ka adres nga Metrix"
+        }
     }
 }

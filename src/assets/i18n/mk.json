@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Адреса",
             "ENABLED": "Овозможено",
-            "NOTENABLEDTITLE": "Мастровените не се дозволени",
-            "NOTENABLEDINSTR": "За да ја стартувате masternode, ќе треба да ги вклучите masternodes со поставување masternode = 1 и конфигурирање на \"masternodeprivkey\" и \"masternodeaddr\" променливи во вашата metrix.conf датотека.",
             "STARTBUTTON": "Стартувај локално",
             "STARTALIASBUTTON": "Започни алијас",
-            "STARTALLBUTTON": "Започни ги сите"
+            "STARTALLBUTTON": "Започни ги сите",
+            "NOMASTERNODES": "Немате мастерноди",
+            "NOMNOUTPUTS": "Не се пронајдени резултати од Masternode. За да ја стартувате локалната Masternode, испратете точно 2 000 000 парички на вашата адреса на Masternode и почекајте 15 потврди.",
+            "STOPBUTTON": "Стоп за локално",
+            "STOPALIASBUTTON": "Стоп за алијас",
+            "ADDREMOTE": "Додај далечинско Masternode",
+            "REMOVEMN": "Отстранете го Masternode",
+            "ADDLOCAL": "Поставување локална Masternode",
+            "DISABLELOCAL": "Оневозможи локална Masternode",
+            "LOCALNOTRUNNING": "Локалната Masternode не работи",
+            "REMOTENOTRUNNING": "Далечинскиот управувач не е пронајден"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Пријавете порака",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Преглед",
             "TRANSACTIONSTAB": "Трансакции",
             "ADDRESSTABS": "Адреси"
+        },
+        "CURRENCY": {
+            "TITLE": "Изберете Прикажана валута"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем со Metrix Core што ја предизвика да прекине. Препорачливо е да ја проверите вашата датотека debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирај го клиентот",
             "CLIENTINVALIDCONFIGTITLE": "Неважечка Конфигурација на metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека."
+            "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека.",
+            "ADDREMOTEMNTITLE": "Додај далечинско Masternode",
+            "ADDREMOTEMNALIAS": "Мастерноде алијас",
+            "ADDREMOTEMNIP": "Masternode IP: порта",
+            "ADDREMOTEMNKEY": "Мастерно приватен клуч",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -295,7 +312,8 @@
             "LOCALE": "Јазик...",
             "RESTARTCORE": "Рестартирајте ја Линда Core",
             "EXIT": "Излез",
-            "OPTIONS": "Опции..."
+            "OPTIONS": "Опции...",
+            "CURRENCIES": "Прикажи валута..."
         },
         "ENCRYPT": {
             "TITLE": "Шифрирај",
@@ -334,7 +352,9 @@
         "SORTBY": "Сортирај по",
         "SEARCH": "Пребарување",
         "FEE": "Провизија",
-        "ACCEPTBUTTON": "Прифати"
+        "ACCEPTBUTTON": "Прифати",
+        "CONFIRMED": "Потврдено",
+        "UNCONFIRMED": "Непотврдени"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Иницијализирање на Линда Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Сите влезови бараат најмалку 1 потврда пред трошење.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Трансакциите се копирани во таблата со исечоци",
         "TRANSACTIONOUTPUTTOOLARGE": "Еден од вашите плати на износи е премногу голем за безбедно да испратите. Максимум е 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Вашата промена е преголема за безбедно испраќање. Максимум е 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Вашата промена е преголема за безбедно испраќање. Максимум е 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Запирање на masternode...",
+        "FAILEDTOWRITECONFIG": "Имаше проблем со пишување на вашата датотека metrix.conf. Проверете дали датотеката постои и дека Височината има дозволи за запишување.",
+        "NOPUBLICUP": "Не се пронајдени јавни IP адреси. Проверете ја вашата интернет конекција и рестартирајте ја височината.",
+        "CONFIGURINGLOCALMN": "Конфигурирање на локална Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Неколку секунди",
@@ -386,5 +410,50 @@
         "MONTHS": "месеци",
         "AYEAR": "Една година",
         "YEARS": "години"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Добиени монети",
+        "NEWTRANSACTION_TITLE_STAKE": "Добиен влог",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Добиена награда од Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "МОЈ",
+        "JUN": "Јуни",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Вие Испраќате",
+                "YOUGET": "Ти добиваш",
+                "MRXADDRESS": "Адреса на Метрикс",
+                "SWAP": "Заменете",
+                "SWAPADDRESSES": "Разменете ги адресите",
+                "BTCADDRESS": "Адреса на БТК",
+                "INFOLINE1": "Штом имате адреса за депозит за БТК, секое БТК испратено на таа адреса автоматски ќе се замени за MRX во вашата номинирана MRX адреса.",
+                "INFOLINE2-1": "Трансакциите обично се чистат во рок од еден час во зависност од времето на блок на Bitcoin. Можеме да прифатиме фиат за",
+                "INFOLINE2-2": "земји учеснички",
+                "INFOLINE2-3": "Ова ќе се претвори во БТК прво, потоа во МРХ.",
+                "INFOLINE3": "Откако вашиот БТК депозит ќе се расчисти, ќе го примите вашиот MRX во номинираната адреса.",
+                "INFOLINE4": "За повеќе информации посетете ја",
+                "FIATSWAPSELECTED": "Beе бидете пренасочени на Buy.Metrixcoin.com за да ја завршите оваа трансакција"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Генерирање адреса за размена...",
+            "ALREADYHAVEADDRESS": "Веќе имате адреса на БТК за оваа адреса",
+            "SWAPUSDMIN": "Минималниот износ за размена на УСД е 50 УСД",
+            "SWAPUSDMAX": "Максималната сума на размена на УСД е 3000 УСД",
+            "NOADDRESS": "Не внесете адреса на Метрикс"
+        }
     }
 }

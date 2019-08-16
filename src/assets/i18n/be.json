@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "адрас",
             "ENABLED": "уключана",
-            "NOTENABLEDTITLE": "Masternodes не ўключаны",
-            "NOTENABLEDINSTR": "Для запуску masternode вам неабходна ўключыць masternodes, усталяваўшы masternode = 1 і настройка «masternodeprivkey» і зменныя «masternodeaddr» у файле metrix.conf.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Пачатак Аліяс",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "У вас няма масерноду",
+            "NOMNOUTPUTS": "Высновы Masternode не знойдзеныя. Каб запусціць лакальны Masternode, адпраўце роўна 2,000,000 манет на ваш адрас Masternode і пачакайце 15 пацверджанняў.",
+            "STOPBUTTON": "Стоп Лакальны",
+            "STOPALIASBUTTON": "Спыніце псеўданім",
+            "ADDREMOTE": "Дадаць аддалены Masternode",
+            "REMOVEMN": "Выдаліць Masternode",
+            "ADDLOCAL": "Налада лакальнага Masternode",
+            "DISABLELOCAL": "Адключыць лакальны Masternode",
+            "LOCALNOTRUNNING": "Лакальны Masternode не працуе",
+            "REMOTENOTRUNNING": "Аддалены Masternode не знойдзены"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Уваход паведамлення",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "агляд",
             "TRANSACTIONSTAB": "аперацыі",
             "ADDRESSTABS": "адрасы"
+        },
+        "CURRENCY": {
+            "TITLE": "Абярыце дысплей валюту"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Існаваў праблема з Ліндай Ядры, якая прымусіла яго спыніць. Гэта рэкамендуецца праверыць файл debug.log для пытанняў.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "перазагрузка кліента",
             "CLIENTINVALIDCONFIGTITLE": "Недапушчальны Канфігурацыя metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл."
+            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл.",
+            "ADDREMOTEMNTITLE": "Дадаць аддалены Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Псеўданім",
+            "ADDREMOTEMNIP": "Masternode IP: порт",
+            "ADDREMOTEMNKEY": "Прыватны ключ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Хэш",
+            "ADDREMOTEMNTXINDEX": "Індэкс Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адрасная кніга",
@@ -295,7 +312,8 @@
             "LOCALE": "Мову...",
             "RESTARTCORE": "Перазапусціце Лінда Стрыжань",
             "EXIT": "выхад",
-            "OPTIONS": "Параметры..."
+            "OPTIONS": "Параметры...",
+            "CURRENCIES": "Паказаць валюту..."
         },
         "ENCRYPT": {
             "TITLE": "шыфраваць",
@@ -334,7 +352,9 @@
         "SORTBY": "Сартаваць па",
         "SEARCH": "пошук",
         "FEE": "плата",
-        "ACCEPTBUTTON": "прымаць"
+        "ACCEPTBUTTON": "прымаць",
+        "CONFIRMED": "Пацверджана",
+        "UNCONFIRMED": "Не пацверджана"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ініцыяванне Лінда Стрыжань...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Усе ўваходы патрабуюць, па меншай меры, 1 пацверджання перад выдаткамі.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Аперацыі капіююцца ў буфер абмену",
         "TRANSACTIONOUTPUTTOOLARGE": "Адзін з вашай заработнай платы сум, занадта вялікі, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Вашы змены занадта вялікая, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Вашы змены занадта вялікая, каб бяспечна адправіць. Максімум гэта 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Спыненне masternode...",
+        "FAILEDTOWRITECONFIG": "Памылка запісу ў ваш файл metrix.conf. Праверце, ці існуе файл, і што Altitude мае правы на запіс.",
+        "NOPUBLICUP": "Публічны IP-адрас не знойдзены. Праверце падлучэнне да Інтэрнэту і перазапусціце вышыню.",
+        "CONFIGURINGLOCALMN": "Налада лакальнага Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Праз некалькі секунд",
@@ -386,5 +410,50 @@
         "MONTHS": "месяцы",
         "AYEAR": "Год",
         "YEARS": "гадоў"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Атрыманыя манеты",
+        "NEWTRANSACTION_TITLE_STAKE": "Атрымаў стаўку",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Атрымаў Узнагароду Masternode"
+    },
+    "MONTH": {
+        "JAN": "ЯН",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "Красавіка",
+        "MAY": "МОЖА",
+        "JUN": "Чэрвень",
+        "JUL": "Ліпень",
+        "AUG": "Жніўня",
+        "SEP": "SEP",
+        "OCT": "Кастрычнік",
+        "NOV": "Лістапад",
+        "DEC": "АВК"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Вы пасылаеце",
+                "YOUGET": "Вы атрымаеце",
+                "MRXADDRESS": "Адрас Metrix",
+                "SWAP": "Абмен",
+                "SWAPADDRESSES": "Адрасы абмену",
+                "BTCADDRESS": "Адрас BTC",
+                "INFOLINE1": "Пасля таго, як у вас з'явіцца дэпазітны адрас BTC, любы BTC, адпраўлены на гэты адрас, будзе аўтаматычна заменены на MRX на ваш прызначаны MRX-адрас.",
+                "INFOLINE2-1": "Здзелкі звычайна ачышчаюцца на працягу гадзіны, у залежнасці ад часу блока Bitcoin. Мы можам прыняць фіят за",
+                "INFOLINE2-2": "Краіны-ўдзельніцы",
+                "INFOLINE2-3": "Гэта будзе пераўтворана спачатку ў BTC, а затым у MRX.",
+                "INFOLINE3": "Пасля таго, як ваш дэпазіт BTC будзе ачышчаны, вы атрымаеце MRX на свой прызначаны адрас.",
+                "INFOLINE4": "Для атрымання дадатковай інфармацыі наведайце",
+                "FIATSWAPSELECTED": "Вы будзеце перанакіраваны на Buy.Metrixcoin.com для завяршэння гэтай транзакцыі"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Стварэнне месца абмену...",
+            "ALREADYHAVEADDRESS": "У вас ужо ёсць BTC адрас для гэтага адраса",
+            "SWAPUSDMIN": "Мінімальная сума свопу ў USD складае 50 долараў",
+            "SWAPUSDMAX": "Максімальная сума свопу ў USD складае 3000 долараў",
+            "NOADDRESS": "Вы не ўвялі адрас Metrix"
+        }
     }
 }

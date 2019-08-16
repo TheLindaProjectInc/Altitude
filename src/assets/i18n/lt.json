@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresas",
             "ENABLED": "Įjungtas",
-            "NOTENABLEDTITLE": "Masternodes neįjungtas",
-            "NOTENABLEDINSTR": "Norint paleisti masternodą, turėsite įjungti masternodus, nustatydami masternode = 1 ir konfigūruodami „masternodeprivkey“ ir „masternodeaddr“ kintamuosius savo metrix.conf faile.",
             "STARTBUTTON": "Pradėti vietinį",
             "STARTALIASBUTTON": "Pradėti Alias",
-            "STARTALLBUTTON": "Pradėti viską"
+            "STARTALLBUTTON": "Pradėti viską",
+            "NOMASTERNODES": "Jūs neturite jokių masternodų",
+            "NOMNOUTPUTS": "Nerasta Masternode rezultatų. Jei norite paleisti vietinį Masternodą, siųskite tiksliai 2 000 000 monetų į savo Masternode adresą ir palaukite 15 patvirtinimų.",
+            "STOPBUTTON": "Sustabdyti vietinį",
+            "STOPALIASBUTTON": "Sustabdyti slapyvardį",
+            "ADDREMOTE": "Pridėti nuotolinį masternodą",
+            "REMOVEMN": "Pašalinti Masternode",
+            "ADDLOCAL": "Nustatykite vietinį „Masternode“",
+            "DISABLELOCAL": "Išjungti vietinį masternodą",
+            "LOCALNOTRUNNING": "Vietinis „Masternode“ neveikia",
+            "REMOTENOTRUNNING": "Nuotolinis masternodas nerastas"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Pasirašyti pranešimą",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Apžvalga",
             "TRANSACTIONSTAB": "Sandoriai",
             "ADDRESSTABS": "Adresai"
+        },
+        "CURRENCY": {
+            "TITLE": "Pasirinkite Display Currency"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Metrix Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Iš naujo paleiskite klientą",
             "CLIENTINVALIDCONFIGTITLE": "Netinkama „metrix.conf“ konfigūracija",
-            "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą."
+            "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą.",
+            "ADDREMOTEMNTITLE": "Pridėti nuotolinį masternodą",
+            "ADDREMOTEMNALIAS": "Masternodo alias",
+            "ADDREMOTEMNIP": "Masternode IP: prievadas",
+            "ADDREMOTEMNKEY": "Masternodo privatus raktas",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "„Masternode Trx“ indeksas"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
@@ -295,7 +312,8 @@
             "LOCALE": "Kalba...",
             "RESTARTCORE": "Paleiskite \"Metrix Core\"",
             "EXIT": "Išeiti",
-            "OPTIONS": "Galimybės..."
+            "OPTIONS": "Galimybės...",
+            "CURRENCIES": "Rodyti valiutą..."
         },
         "ENCRYPT": {
             "TITLE": "Šifruoti",
@@ -334,7 +352,9 @@
         "SORTBY": "Rūšiuoti pagal",
         "SEARCH": "Paieška",
         "FEE": "Rinkliava",
-        "ACCEPTBUTTON": "Priimti"
+        "ACCEPTBUTTON": "Priimti",
+        "CONFIRMED": "Patvirtinta",
+        "UNCONFIRMED": "Nepatvirtintas"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Pradedama Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Visoms įvestims reikalingas bent 1 patvirtinimas prieš išlaidas.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Operacijos, nukopijuotos į iškarpinę",
         "TRANSACTIONOUTPUTTOOLARGE": "Vienas iš jūsų mokamų sumų yra per didelis, kad galėtumėte saugiai išsiųsti. Didžiausia yra 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsų pakeitimas yra per didelis, kad galėtumėte saugiai siųsti. Didžiausia yra 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jūsų pakeitimas yra per didelis, kad galėtumėte saugiai siųsti. Didžiausia yra 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Stotelės sustabdymas...",
+        "FAILEDTOWRITECONFIG": "Rašant į savo metrix.conf failą kilo problema. Patikrinkite, ar failas egzistuoja ir kad Altitude turi rašymo teises.",
+        "NOPUBLICUP": "Nerasta viešojo IP adreso. Patikrinkite interneto ryšį ir iš naujo paleiskite aukštį.",
+        "CONFIGURINGLOCALMN": "Vietinio „Masternode“ konfigūravimas..."
     },
     "TIME": {
         "AFEWSECONDS": "Kelias sekundes",
@@ -386,5 +410,50 @@
         "MONTHS": "mėnesių",
         "AYEAR": "Metai",
         "YEARS": "metai"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Gautos monetos",
+        "NEWTRANSACTION_TITLE_STAKE": "Gautas akcijų paketas",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Gavo Masternode premiją"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "Vasario mėn",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "GEGUŽĖ",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "UŠT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu išsiuntei",
+                "YOUGET": "Jūs gaunate",
+                "MRXADDRESS": "Metrikso adresas",
+                "SWAP": "Keisti",
+                "SWAPADDRESSES": "Keisti adresus",
+                "BTCADDRESS": "BTC adresas",
+                "INFOLINE1": "Kai turėsite BTC įmokos adresą, bet koks tuo adresu išsiųstas BTC automatiškai bus pakeistas MRX į jūsų paskirtą MRX adresą.",
+                "INFOLINE2-1": "Operacijos paprastai išvalomos per valandą, atsižvelgiant į „Bitcoin“ blokavimo laiką. Mes galime sutikti su „fiat“ dėl",
+                "INFOLINE2-2": "dalyvaujančios šalys",
+                "INFOLINE2-3": "Pirmiausia tai bus paversta BTC, tada MRX.",
+                "INFOLINE3": "Kai jūsų BTC indėlis bus išvalytas, gausite MRX nurodytu adresu.",
+                "INFOLINE4": "Norėdami gauti daugiau informacijos, apsilankykite",
+                "FIATSWAPSELECTED": "Būsite nukreipti į Buy.Metrixcoin.com ir atliksite šią operaciją"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generuojamas apsikeitimo adresas...",
+            "ALREADYHAVEADDRESS": "Jūs jau turite šio adreso BTC adresą",
+            "SWAPUSDMIN": "Minimali apsikeitimo USD suma yra 50 USD",
+            "SWAPUSDMAX": "Maksimali USD apsikeitimo suma yra 3000 USD",
+            "NOADDRESS": "Neįvedėte „Metrix“ adreso"
+        }
     }
 }

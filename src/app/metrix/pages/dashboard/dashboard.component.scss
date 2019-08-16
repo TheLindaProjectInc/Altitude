@@ -1,0 +1,31 @@
+.layout-outer {
+    display: flex;
+    flex-direction: row
+}
+
+.layout-lhs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+metrix-accounts {
+    padding-left: 10px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .layout-outer {
+        flex-direction: column-reverse;
+    }
+
+    .layout-lhs {
+        width: 100%;
+    }
+
+    metrix-accounts {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+}

@@ -10,6 +10,9 @@
 @import "./assets/styles/tables.scss";
 @import "./assets/styles/contextMenu.scss";
 @import "./assets/styles/checkbox.scss";
+@import "./assets/styles/appbar.scss";
+@import "./assets/styles/progressBar.scss";
+@import "./assets/styles/layout.scss";
 
 html,
 body {
@@ -46,8 +49,12 @@ a {
     bottom: 9px;
     right: 0;
     left: 0;
-    margin-left: 250px;
+    margin-left: $sidebar-padding;
     flex: 1;
+
+    &.full {
+        margin-left: $appbar-width;
+    }
 }
 
 .block {
@@ -107,8 +114,9 @@ a {
     position: fixed;
     bottom: 0;
     top: 0;
-    width: 250px;
-    min-width: 250px;
+    left: 60px;
+    width: $sidebar-width;
+    min-width: $sidebar-width;
     background: $background-accent;
     display: flex;
     flex-direction: column;
@@ -118,8 +126,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 250px;
-        min-width: 250px;
     }
 
     .logo {
@@ -204,6 +210,25 @@ a {
     }
 }
 
+.content-card {
+    background: $content-background;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    padding: 10px;
+
+    .transaction {
+        background: none;
+    }
+
+    &.mt {
+        margin-top: 20px;
+    }
+
+    &.mb {
+        margin-bottom: 20px;
+    }
+}
+
 // Accounts
 .accounts {
     display: flex;
@@ -212,13 +237,15 @@ a {
 
 .account {
     background-color: $background-accent;
-    min-width: 300px;
+    min-width: 260px;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
     flex-grow: 1;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin-right: 5px;
+    flex: 1;
     cursor: pointer;
 
     .account-inner {
@@ -233,7 +260,7 @@ a {
     }
 
     .account-identicon {
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     .account-name {
@@ -241,6 +268,7 @@ a {
         align-items: center;
         padding: 10px;
         padding-bottom: 0;
+        padding-right: 0;
 
         h5 {
             padding: 0 10px;
@@ -253,6 +281,7 @@ a {
 
     .account-balance {
         padding: 0 10px;
+        padding-right: 0;
         margin: 0px;
         color: $color-primary;
         font-size: 16px;
@@ -266,6 +295,7 @@ a {
     .account-address {
         padding: 10px;
         padding-top: 0;
+        padding-right: 0;
         margin: 0px;
         font-size: 10px;
         font-weight: normal;
@@ -345,17 +375,20 @@ a {
 
         .icon {
             padding: 15px;
+            z-index: 1;
         }
 
         .detail {
             flex: 1;
             padding: 10px 0;
+            z-index: 1;
         }
 
         .value {
             padding: 10px;
             padding-left: 0;
             text-align: right;
+            z-index: 1;
 
             .small {
                 font-size: 12px;
@@ -373,7 +406,6 @@ a {
         right: 0;
         top: 0;
         bottom: 0;
-        z-index: -1;
 
         &.unconfirmed {
             transition: right 2s;
@@ -451,6 +483,7 @@ a {
             color: white;
             margin-left: 10px;
             font-size: 24px;
+            padding: 10px 0 10px 10px;
 
             &:focus {
                 outline: none;
@@ -498,7 +531,7 @@ text-input {
     display: flex;
 
     input:not([type]),
-    input[type="text"i] {
+    input[type="text"] {
         flex: 1;
     }
 }
@@ -514,12 +547,12 @@ text-area {
 
 textarea,
 input:not([type]),
-input[type="email"i],
-input[type="number"i],
-input[type="password"i],
-input[type="tel"i],
-input[type="url"i],
-input[type="text"i] {
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="text"] {
     border: 1px solid white;
     border-radius: 99px;
     padding: 10px 20px;
@@ -546,12 +579,12 @@ input[type="text"i] {
 
     textarea,
     input:not([type]),
-    input[type="email"i],
-    input[type="number"i],
-    input[type="password"i],
-    input[type="tel"i],
-    input[type="url"i],
-    input[type="text"i] {
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="text"] {
         flex: 1;
         margin-left: 5px;
     }
@@ -566,18 +599,18 @@ input[type="text"i] {
 .toolbar-bottom {
     position: fixed;
     bottom: 0;
-    left: 250px;
+    left: $sidebar-padding;
     right: 0;
     padding: 10px;
     background: $background-primary;
 
     input:not([type]),
-    input[type="email"i],
-    input[type="number"i],
-    input[type="password"i],
-    input[type="tel"i],
-    input[type="url"i],
-    input[type="text"i] {
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="text"] {
         flex: 1;
     }
 }
@@ -588,9 +621,6 @@ input[type="text"i] {
 
 .send-recipient {
     position: relative;
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
     margin-bottom: 5px;
     padding-top: 35px;
 
@@ -602,9 +632,6 @@ input[type="text"i] {
 }
 
 .send-source {
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
     margin-bottom: 50px;
 
     h4 {
@@ -662,12 +689,6 @@ input[type="text"i] {
     h5:first-child {
         margin-top: 0;
     }
-}
-
-.notification-box {
-    background: $background-accent;
-    border-radius: 6px;
-    padding: 10px;
 }
 
 .information-table {

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Seoladh",
             "ENABLED": "Cumasaithe",
-            "NOTENABLEDTITLE": "Níor chuir Masternodes ar chumas",
-            "NOTENABLEDINSTR": "Chun masternode a reáchtáil, caithfidh tú a chumasú do masternodes trí masternode = 1 a leagan síos agus athruithe 'masternodeprivkey' agus 'masternodeaddr' a chumrú i do chomhad metrix.conf.",
             "STARTBUTTON": "Tosaigh Áitiúil",
             "STARTALIASBUTTON": "Tosaigh Alias",
-            "STARTALLBUTTON": "Tosaigh Gach"
+            "STARTALLBUTTON": "Tosaigh Gach",
+            "NOMASTERNODES": "Ní bhíonn aon masternodes agat",
+            "NOMNOUTPUTS": "Níor aimsíodh aon aschuir Masternode. Chun Masternode áitiúil a reáchtáil seol 2,000,000 bonn go díreach chuig do sheoladh Masternode agus fan ar feadh 15 dheimhniú.",
+            "STOPBUTTON": "Stop Áitiúil",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Cuir cianda Masternode leis",
+            "REMOVEMN": "Bain Masternode",
+            "ADDLOCAL": "Setup Local Masternode",
+            "DISABLELOCAL": "Díchumasaigh Local Masternode",
+            "LOCALNOTRUNNING": "Níl Masternode Áitiúil Rith",
+            "REMOTENOTRUNNING": "Iargúlta Masternode gan Aimsiú"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Teachtaireacht Comhartha",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Forbhreathnú",
             "TRANSACTIONSTAB": "Idirbhearta",
             "ADDRESSTABS": "Seoltaí"
+        },
+        "CURRENCY": {
+            "TITLE": "Roghnaigh Airgeadra Taispeáin"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a d'fhág go dtiocfadh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh ceisteanna.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Cliaint Atosaigh",
             "CLIENTINVALIDCONFIGTITLE": "Cumraíocht metrix.conf neamhbhailí",
-            "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do metrix.conf a chuirfidh faoi deara go bhfuil Metrix Core scoir láithreach. Seiceáil an comhad seo le do thoil."
+            "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do metrix.conf a chuirfidh faoi deara go bhfuil Metrix Core scoir láithreach. Seiceáil an comhad seo le do thoil.",
+            "ADDREMOTEMNTITLE": "Cuir cianda Masternode leis",
+            "ADDREMOTEMNALIAS": "Ailias Masternode",
+            "ADDREMOTEMNIP": "IP Masternode: Port",
+            "ADDREMOTEMNKEY": "Eochair Phríobháideach Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Innéacs Treibheanna Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar seoltaí",
@@ -295,7 +312,8 @@
             "LOCALE": "Teanga...",
             "RESTARTCORE": "Atosaigh Metrix Core",
             "EXIT": "An slí amach",
-            "OPTIONS": "Roghanna..."
+            "OPTIONS": "Roghanna...",
+            "CURRENCIES": "Airgeadra Taispeántais..."
         },
         "ENCRYPT": {
             "TITLE": "Criptigh",
@@ -334,7 +352,9 @@
         "SORTBY": "Sórtáil de réir",
         "SEARCH": "Cuardaigh",
         "FEE": "Táille",
-        "ACCEPTBUTTON": "Glac leis"
+        "ACCEPTBUTTON": "Glac leis",
+        "CONFIRMED": "Daingnithe",
+        "UNCONFIRMED": "Neamhdhearbhaithe"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ag tosú Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Éilíonn gach ionchur 1 dearbhú ar a laghad sula gcaitear.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Aistríodh idirbhearta chuig gearrthaisce",
         "TRANSACTIONOUTPUTTOOLARGE": "Tá ceann de do phá le méideanna ró-mhór chun seol a sheoladh go sábháilte. Is é an t-uasmhéid ná 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Tá do athrú ró-mhór chun seol a sheoladh go sábháilte. Is é an t-uasmhéid ná 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Tá do athrú ró-mhór chun seol a sheoladh go sábháilte. Is é an t-uasmhéid ná 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Stopadh masternode...",
+        "FAILEDTOWRITECONFIG": "Bhí fadhb ag scríobh chuig do chomhad metrix.conf. Seiceáil go bhfuil an comhad ann agus go bhfuil ceadanna scríofa ag Airde.",
+        "NOPUBLICUP": "Níor aimsíodh aon seoladh IP Poiblí. Seiceáil do nasc idirlín agus atosú Airde.",
+        "CONFIGURINGLOCALMN": "Cumraigh Masternode áitiúil..."
     },
     "TIME": {
         "AFEWSECONDS": "Cúpla soicind",
@@ -386,5 +410,50 @@
         "MONTHS": "míonna",
         "AYEAR": "Bliain",
         "YEARS": "blianta"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Boinn Faighte",
+        "NEWTRANSACTION_TITLE_STAKE": "Faighte Geall",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Fuarthas Luach saothair Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "BEALTAINE",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Leat Seol",
+                "YOUGET": "Faigheann tú",
+                "MRXADDRESS": "Seoladh Metrix",
+                "SWAP": "Babhtáil",
+                "SWAPADDRESSES": "Seoltaí Babhtála",
+                "BTCADDRESS": "Seoladh BTC",
+                "INFOLINE1": "Nuair a bheidh seoladh taisce BTC agat seolfar aon mhalartú BTC chuig an seoladh sin go huathoibríoch le haghaidh MRX a chur isteach i do sheoladh MRX ainmnithe.",
+                "INFOLINE2-1": "Idirbhearta a bhíonn soiléir de ghnáth laistigh de uair an chloig ag brath ar na hamanna bloc Bitcoin. Is féidir linn glacadh le fiat do",
+                "INFOLINE2-2": "tíortha rannpháirteacha",
+                "INFOLINE2-3": "Déanfar é seo a thiontú go BTC ar dtús ansin MRX.",
+                "INFOLINE3": "Nuair a bheidh do thaisce BTC glanta gheobhaidh tú do MRX isteach i do sheoladh ainmnithe.",
+                "INFOLINE4": "Le haghaidh tuilleadh eolais ar cuairt",
+                "FIATSWAPSELECTED": "Déanfar tú a atreorú chuig Buy.Metrixcoin.com chun an t-idirbheart seo a chríochnú"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ag Seoladh Seoladh Babhtála...",
+            "ALREADYHAVEADDRESS": "Tá seoladh BTC agat cheana féin don seoladh seo",
+            "SWAPUSDMIN": "Is é $ 50 an méid babhtála íosta USD",
+            "SWAPUSDMAX": "Is é $ 3,000 an méid babhtála uasta USD",
+            "NOADDRESS": "Níor chuir tú isteach seoladh Metrix"
+        }
     }
 }

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Cinwaanka",
             "ENABLED": "Haboon",
-            "NOTENABLEDTITLE": "Mawduucyada aan awoodin",
-            "NOTENABLEDINSTR": "Si aad u maamusho masaxode waxaad u baahan doontaa inaad awood u yeelatid masawiro adigoo dejinaya masternode = 1 oo isku habaynaya 'masternodeprivkey' iyo 'masternodeaddr' ee ku jira faylkaaga metrix.conf.",
             "STARTBUTTON": "Bilow Degmada",
             "STARTALIASBUTTON": "Bilow Qaadashada",
-            "STARTALLBUTTON": "All Start"
+            "STARTALLBUTTON": "All Start",
+            "NOMASTERNODES": "Ma lihid wax masar ah",
+            "NOMNOUTPUTS": "Wax soo saar Masternode ah lama helin. Si aad u maamusho Masternode maxalliga ah u dir 2,000,000 oo lacagta lacagta ah cinwaankaaga Masternode oo sug illaa 15 xaqiijin.",
+            "STOPBUTTON": "Joogso Deegaanka",
+            "STOPALIASBUTTON": "Jooji Alias",
+            "ADDREMOTE": "Kudar Masternode Remote",
+            "REMOVEMN": "Ka saar Masternode",
+            "ADDLOCAL": "Dejinta Masternode Maxalliga ah",
+            "DISABLELOCAL": "Disable Masternode Maxalliga ah",
+            "LOCALNOTRUNNING": "Masternode maxalliga ahi ma ordayaan",
+            "REMOTENOTRUNNING": "Masterode fog oo aan la helin"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Fariin Fariin",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Guudmarka",
             "TRANSACTIONSTAB": "Wareejinta",
             "ADDRESSTABS": "Cinwaanada"
+        },
+        "CURRENCY": {
+            "TITLE": "Xulo Lacagta Soo-Bandhiga"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Dhibaato ayaa ka dhacday Metrix Core taas oo keentay inay joojiso. Waxaa lagugula talinayaa in aad eegto feylka debug.log ee arimaha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Cusbooneysiinta Macmiilka",
             "CLIENTINVALIDCONFIGTITLE": "Dejinta metrix.conf aan sharci ahayn",
-            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf waxay leedahay qalab aan caqli-gal ahayn oo sababa Metrix Core si aad uga baxdo. Fadlan hubi feylkan."
+            "CLIENTINVALIDCONFIGINFO": "Your metrix.conf waxay leedahay qalab aan caqli-gal ahayn oo sababa Metrix Core si aad uga baxdo. Fadlan hubi feylkan.",
+            "ADDREMOTEMNTITLE": "Kudar Masternode Remote",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Dekadda",
+            "ADDREMOTEMNKEY": "Furaha Gaarka ah ee Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Tusaha Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buugga Cinwaanka",
@@ -295,7 +312,8 @@
             "LOCALE": "Luqadda...",
             "RESTARTCORE": "Sameey Metrix Core",
             "EXIT": "Ka bax",
-            "OPTIONS": "Fursadaha..."
+            "OPTIONS": "Fursadaha...",
+            "CURRENCIES": "Muuji Lacagta..."
         },
         "ENCRYPT": {
             "TITLE": "Fadlan",
@@ -334,7 +352,9 @@
         "SORTBY": "Kala saar",
         "SEARCH": "Raadi",
         "FEE": "Kharashka",
-        "ACCEPTBUTTON": "Ogolow"
+        "ACCEPTBUTTON": "Ogolow",
+        "CONFIRMED": "Xaqiijiyay",
+        "UNCONFIRMED": "Aan la xaqiijin"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Hordhac Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Dhamaan qodobbada waxay u baahan yihiin ugu yaraan 1 cadayn ka hor intaan la bixin.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Wareegyada lagu daabacay qashinka",
         "TRANSACTIONOUTPUTTOOLARGE": "Mid ka mid ah mushaharkaaga miisaankiisu aad buu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Isbedelkaagu aad ayuu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Isbedelkaagu aad ayuu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Joojinta masternode...",
+        "FAILEDTOWRITECONFIG": "Dhibaato ayaa ka jirtay qoritaanka faylkaaga metrix.conf. Hubi faylka jira iyo in Altitude leeyahay rukhsad qoraal ah.",
+        "NOPUBLICUP": "Cinwaanka IP-ga Dadweynaha lama helin. Hubi khadkaaga internetka oo dib u bilaabi Altitude.",
+        "CONFIGURINGLOCALMN": "Aasaasidda Masternode maxalliga ah..."
     },
     "TIME": {
         "AFEWSECONDS": "Dhowr ilbiriqsi",
@@ -386,5 +410,50 @@
         "MONTHS": "bilood",
         "AYEAR": "Sanad",
         "YEARS": "sano"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Qalabka la helay",
+        "NEWTRANSACTION_TITLE_STAKE": "La Helay Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Lasoo helay abaalmarinta Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "LAGA YAABAA",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Waxaad dirtaa",
+                "YOUGET": "Aad Hesho",
+                "MRXADDRESS": "Cinwaanka metrix",
+                "SWAP": "Isdhaafid",
+                "SWAPADDRESSES": "Cinwaano isku beddelasho",
+                "BTCADDRESS": "Cinwaanka BTC",
+                "INFOLINE1": "Markaad haysatid cinwaanka deebaajiga BTC wixii BTC ah oo loo diro cinwaankaas si otomaatig ah ayaa loogu rogayaa MRX cinwaankaaga loo magacaabay MRX.",
+                "INFOLINE2-1": "Xawaaladdu sida caadiga ah way caddaataa saacad gudahood iyada oo ku xidhan waqtiyada xayiraadda Bitcoin. Waan aqbali karnaa",
+                "INFOLINE2-2": "wadamada kaqeyb galaya",
+                "INFOLINE2-3": "Tan waxaa loo rogi doonaa BTC marka hore MRX.",
+                "INFOLINE3": "Mar haddii lacagtaada BTC ay nadiifiso waxaad heli doontaa MRX-gaaga cinwaanka aad magacawday.",
+                "INFOLINE4": "Wixii macluumaad dheeri ah booqo",
+                "FIATSWAPSELECTED": "Waxaa laguu wareejin doonaa Buy.Metrixcoin.com si aad u dhameystirto macaamilkan"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Abuuritaanka Cinwaanka Is Bedelka...",
+            "ALREADYHAVEADDRESS": "Waxaad durba haysataa cinwaan BTC oo cinwaankan ah",
+            "SWAPUSDMIN": "Xaddiga ugu yar ee is beddelka ee USD waa $ 50",
+            "SWAPUSDMAX": "Xaddiga ugu badan ee is beddelka ee USD waa $ 3000",
+            "NOADDRESS": "Ma aadan galin cinwaan metrix ah"
+        }
     }
 }

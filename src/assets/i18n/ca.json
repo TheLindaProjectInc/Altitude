@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "adreça",
             "ENABLED": "Habilitat",
-            "NOTENABLEDTITLE": "Masternodes no habilitat",
-            "NOTENABLEDINSTR": "Per executar un masternode necessitareu habilitar masternodes ajustant mésternode = 1 i configurant variables 'masternodeprivkey' i 'masternodeaddr' al vostre arxiu metrix.conf.",
             "STARTBUTTON": "Comença local",
             "STARTALIASBUTTON": "Inicia l'àlies",
-            "STARTALLBUTTON": "Comença tot"
+            "STARTALLBUTTON": "Comença tot",
+            "NOMASTERNODES": "No teniu cap tipus de màster",
+            "NOMNOUTPUTS": "No s’ha trobat cap sortida de Masternode. Per executar un Masternode local, envieu exactament 2.000.000 de monedes a la vostra adreça Masternode i espereu fins a 15 confirmacions.",
+            "STOPBUTTON": "Atureu-vos a Local",
+            "STOPALIASBUTTON": "Atura l'àlies",
+            "ADDREMOTE": "Afegiu Masternode remot",
+            "REMOVEMN": "Elimineu Masternode",
+            "ADDLOCAL": "Configuració del local Masternode",
+            "DISABLELOCAL": "Inhabiliteu la funció de localització local",
+            "LOCALNOTRUNNING": "Masternode local no funcionant",
+            "REMOTENOTRUNNING": "No es troba el masternode remot"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Signar missatge",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Descripció general",
             "TRANSACTIONSTAB": "Transaccions",
             "ADDRESSTABS": "Adreces"
+        },
+        "CURRENCY": {
+            "TITLE": "Seleccioneu Mostra moneda"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Hi ha hagut un problema amb Metrix Core que ha fet que acabi. Es recomana que consulteu el vostre fitxer debug.log per obtenir problemes.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reinicia el client",
             "CLIENTINVALIDCONFIGTITLE": "Configuració metrix.conf no vàlida",
-            "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer."
+            "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer.",
+            "ADDREMOTEMNTITLE": "Afegiu Masternode remot",
+            "ADDREMOTEMNALIAS": "Àlies de Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: port",
+            "ADDREMOTEMNKEY": "Clau privada de Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Índex Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -295,7 +312,8 @@
             "LOCALE": "Llenguatge...",
             "RESTARTCORE": "Reinicia Metrix Core",
             "EXIT": "Sortir",
-            "OPTIONS": "Opcions..."
+            "OPTIONS": "Opcions...",
+            "CURRENCIES": "Mostra la moneda..."
         },
         "ENCRYPT": {
             "TITLE": "Xifrar",
@@ -334,7 +352,9 @@
         "SORTBY": "Ordenar per",
         "SEARCH": "Cerca",
         "FEE": "Tarifa",
-        "ACCEPTBUTTON": "Accepta"
+        "ACCEPTBUTTON": "Accepta",
+        "CONFIRMED": "Confirmat",
+        "UNCONFIRMED": "Sense confirmar"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "S'està inicialitzant Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Totes les entrades requereixen com a mínim una confirmació abans de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccions copiades al porta-retalls",
         "TRANSACTIONOUTPUTTOOLARGE": "Un dels vostres pagaments a les quantitats és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "El canvi és massa gran per enviar correctament. El màxim és 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "El canvi és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Aturant el masternode...",
+        "FAILEDTOWRITECONFIG": "S'ha produït un problema en escriure al fitxer metrix.conf. Comproveu que el fitxer existeix i que Altitude té permisos d’escriptura.",
+        "NOPUBLICUP": "No s’ha trobat cap adreça IP pública. Comproveu la vostra connexió a Internet i reinicieu Altitude.",
+        "CONFIGURINGLOCALMN": "Configuració de Masternode local..."
     },
     "TIME": {
         "AFEWSECONDS": "Uns pocs segons",
@@ -386,5 +410,50 @@
         "MONTHS": "mesos",
         "AYEAR": "Un any",
         "YEARS": "anys"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monedes rebudes",
+        "NEWTRANSACTION_TITLE_STAKE": "Estata rebuda",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Recompensa Masternode rebuda"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "TAE",
+        "MAY": "MAIG",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Envia",
+                "YOUGET": "Tens",
+                "MRXADDRESS": "Adreça Metrix",
+                "SWAP": "Intercanvi",
+                "SWAPADDRESSES": "Adreces d'intercanvi",
+                "BTCADDRESS": "Adreça BTC",
+                "INFOLINE1": "Un cop tingueu una adreça de dipòsit BTC, qualsevol BTC enviat a aquesta adreça es canviarà automàticament per MRX a la vostra adreça MRX nominada.",
+                "INFOLINE2-1": "Les transaccions se solen efectuar en una hora en funció de les hores de bloqueig de Bitcoin. Podem acceptar fiat per a",
+                "INFOLINE2-2": "països participants",
+                "INFOLINE2-3": "Això es convertirà a BTC primer i a MRX.",
+                "INFOLINE3": "Un cop suprimit el dipòsit de BTC, rebrà el MRX a la vostra adreça nominada.",
+                "INFOLINE4": "Per obtenir més informació, visiteu",
+                "FIATSWAPSELECTED": "Se us redirigirà a Buy.Metrixcoin.com per completar aquesta transacció"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Creació de l'adreça d'intercanvi...",
+            "ALREADYHAVEADDRESS": "Ja teniu una adreça BTC per a aquesta adreça",
+            "SWAPUSDMIN": "La quantitat mínima d'intercanvi de dòlars americans és de 50 dòlars",
+            "SWAPUSDMAX": "La quantitat màxima de swap de USD és de 3000 dòlars",
+            "NOADDRESS": "No heu introduït una adreça de Metrix"
+        }
     }
 }

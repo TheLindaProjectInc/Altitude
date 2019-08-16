@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Адрес",
             "ENABLED": "Включено",
-            "NOTENABLEDTITLE": "Мастерноды не включены",
-            "NOTENABLEDINSTR": "Чтобы запустить мастер-узел, вам нужно включить мастер-узлы, установив masternode = 1 и сконфигурировав переменные «masternodeprivkey» и «masternodeaddr» в файле metrix.conf.",
             "STARTBUTTON": "Начать локально",
             "STARTALIASBUTTON": "Запустить псевдоним",
-            "STARTALLBUTTON": "Начать все"
+            "STARTALLBUTTON": "Начать все",
+            "NOMASTERNODES": "У вас нет мастернод",
+            "NOMNOUTPUTS": "Выходы Masternode не найдены. Чтобы запустить местный Мастерноде, отправьте ровно 2 000 000 монет на свой адрес Мастерноде и дождитесь 15 подтверждений.",
+            "STOPBUTTON": "Stop Local",
+            "STOPALIASBUTTON": "Стоп Псевдоним",
+            "ADDREMOTE": "Добавить удаленный мастер-узел",
+            "REMOVEMN": "Удалить Мастерноде",
+            "ADDLOCAL": "Настройка локального мастернода",
+            "DISABLELOCAL": "Отключить локальный мастер-узел",
+            "LOCALNOTRUNNING": "Местный Мастерноде не работает",
+            "REMOTENOTRUNNING": "Удаленный мастер-узел не найден"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Подписать сообщение",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "обзор",
             "TRANSACTIONSTAB": "операции",
             "ADDRESSTABS": "Адреса"
+        },
+        "CURRENCY": {
+            "TITLE": "Выберите Показать валюту"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Возникла проблема с Metrix Core, которая привела к его завершению. Рекомендуется проверить файл debug.log на наличие проблем.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Перезапустить клиент",
             "CLIENTINVALIDCONFIGTITLE": "Неверная конфигурация metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf имеет недопустимую настройку мастер-узла, что приведет к немедленному завершению работы Metrix Core. Пожалуйста, проверьте этот файл."
+            "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf имеет недопустимую настройку мастер-узла, что приведет к немедленному завершению работы Metrix Core. Пожалуйста, проверьте этот файл.",
+            "ADDREMOTEMNTITLE": "Добавить удаленный мастер-узел",
+            "ADDREMOTEMNALIAS": "Мастернод алиас",
+            "ADDREMOTEMNIP": "Мастернод IP: Порт",
+            "ADDREMOTEMNKEY": "Секретный ключ Мастернода",
+            "ADDREMOTEMNTXHASH": "Мастернод Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресная книга",
@@ -295,7 +312,8 @@
             "LOCALE": "Язык...",
             "RESTARTCORE": "Перезапустите ядро Линды",
             "EXIT": "Выход",
-            "OPTIONS": "Опции..."
+            "OPTIONS": "Опции...",
+            "CURRENCIES": "Показать валюту..."
         },
         "ENCRYPT": {
             "TITLE": "шифровать",
@@ -334,7 +352,9 @@
         "SORTBY": "Сортировать по",
         "SEARCH": "Поиск",
         "FEE": "плата",
-        "ACCEPTBUTTON": "принимать"
+        "ACCEPTBUTTON": "принимать",
+        "CONFIRMED": "подтвердил",
+        "UNCONFIRMED": "неподтвержденный"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Инициализация Линды Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Все входные данные требуют как минимум 1 подтверждение перед расходами.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакции скопированы в буфер обмена",
         "TRANSACTIONOUTPUTTOOLARGE": "Один из ваших платежей слишком велик, чтобы его можно было безопасно отправить. Максимум 90 071 992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ваше изменение слишком велико для безопасной отправки. Максимум 90 071 992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ваше изменение слишком велико для безопасной отправки. Максимум 90 071 992,54740992.",
+        "STOPPINGMASTERNODE": "Остановка мастерноде...",
+        "FAILEDTOWRITECONFIG": "При записи в файл metrix.conf возникла проблема. Убедитесь, что файл существует и что Altitude имеет разрешения на запись.",
+        "NOPUBLICUP": "Общедоступный IP-адрес не найден. Проверьте подключение к интернету и перезапустите Altitude.",
+        "CONFIGURINGLOCALMN": "Настройка локального Мастернода..."
     },
     "TIME": {
         "AFEWSECONDS": "Несколько секунд",
@@ -386,5 +410,50 @@
         "MONTHS": "месяцы",
         "AYEAR": "Год",
         "YEARS": "лет"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Полученные монеты",
+        "NEWTRANSACTION_TITLE_STAKE": "Полученный кол",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Получено вознаграждение Мастерноде"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "февраль",
+        "MAR": "MAR",
+        "APR": "апреле",
+        "MAY": "МОЖЕТ",
+        "JUN": "июне",
+        "JUL": "июле",
+        "AUG": "Августе",
+        "SEP": "сентября",
+        "OCT": "октябре",
+        "NOV": "ноябрю",
+        "DEC": "декабрь"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Вы посылаете",
+                "YOUGET": "Ты получаешь",
+                "MRXADDRESS": "Метрикс Адрес",
+                "SWAP": "Своп",
+                "SWAPADDRESSES": "Поменять адреса",
+                "BTCADDRESS": "BTC Адрес",
+                "INFOLINE1": "Если у вас есть депозитный адрес BTC, любой BTC, отправленный на этот адрес, будет автоматически заменен на MRX на указанный вами адрес MRX.",
+                "INFOLINE2-1": "Транзакции обычно очищаются в течение часа, в зависимости от времени блокировки биткойнов. Мы можем принять указ для",
+                "INFOLINE2-2": "страны-участницы",
+                "INFOLINE2-3": "Сначала он будет конвертирован в BTC, затем в MRX.",
+                "INFOLINE3": "Как только ваш депозит BTC будет очищен, вы получите MRX на указанный вами адрес.",
+                "INFOLINE4": "Для получения дополнительной информации посетите",
+                "FIATSWAPSELECTED": "Вы будете перенаправлены на сайт Buy.Metrixcoin.com для завершения этой транзакции."
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Создание адреса подкачки...",
+            "ALREADYHAVEADDRESS": "У вас уже есть адрес BTC для этого адреса",
+            "SWAPUSDMIN": "Минимальная сумма свопа в долларах США составляет 50 долларов США.",
+            "SWAPUSDMAX": "Максимальная сумма свопа в долларах США составляет 3000 долларов США.",
+            "NOADDRESS": "Вы не ввели адрес Metrix"
+        }
     }
 }

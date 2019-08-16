@@ -43,6 +43,11 @@ function set_locale(locale: string) {
     saveSettings();
 }
 
+function set_currency(locale: string) {
+    settings.currency = locale;
+    saveSettings();
+}
+
 function set_hideTrayIcon(hideTrayIcon: boolean) {
     settings.hideTrayIcon = hideTrayIcon;
     if (onToggleTrayIcon) onToggleTrayIcon(settings.hideTrayIcon);
@@ -107,6 +112,9 @@ function setupIPC() {
             case 'SETLOCALE':
                 set_locale(data);
                 break;
+            case 'SETCURRENCY':
+                set_currency(data);
+                break;
             case 'SETFULLSCREEN':
                 set_fullScreen(data);
                 break;
@@ -144,6 +152,7 @@ export class Settings {
     skipWalletUpdate: string = "";
     hideCoinControlFeatures: boolean = true;
     locale: string = "en";
+    currency: string = "MRX";
     fullScreen: boolean = false;
     hideTrayIcon: boolean = false;
     minimiseToTray: boolean = false;

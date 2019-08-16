@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Aterese",
             "ENABLED": "E nolofalitsoe",
-            "NOTENABLEDTITLE": "Masternodes ha ea lumelloa",
-            "NOTENABLEDINSTR": "Ho tsamaisa masternode ho tla hlokahala hore u lumelle masternode ka ho beha masternode = 1 le ho lokisa 'masternodeprivkey' le 'masternodeaddr' mefuta e fapaneng file ea metrix.conf ea hau.",
             "STARTBUTTON": "Qala sebakeng sa heno",
             "STARTALIASBUTTON": "Qala Lintho tse ling",
-            "STARTALLBUTTON": "Qala Bohle"
+            "STARTALLBUTTON": "Qala Bohle",
+            "NOMASTERNODES": "Ha u na masternode",
+            "NOMNOUTPUTS": "Ha ho liphetho tsa Masternode tse fumanoeng. Ho tsamaisa Masternode ea lehae romella lichelete tsa 2 000 000 hantle atereseng ea hau ea Masternode 'me u emetse likhakanyo tse 15.",
+            "STOPBUTTON": "Ema Local",
+            "STOPALIASBUTTON": "Emisa Alias",
+            "ADDREMOTE": "Kenya Masternode e hole",
+            "REMOVEMN": "Tlosa Masternode",
+            "ADDLOCAL": "Seta Local Masternode",
+            "DISABLELOCAL": "Tlosa Masternode ea lehae",
+            "LOCALNOTRUNNING": "Masternode ea Lehae Ha e Mathe",
+            "REMOTENOTRUNNING": "Masternode e hole ha e fumanoe"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Molaetsa oa Sontša",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Kakaretso",
             "TRANSACTIONSTAB": "Litšebetso",
             "ADDRESSTABS": "Likarabo"
+        },
+        "CURRENCY": {
+            "TITLE": "Khetha Chelete ea Pontšo"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Metrix Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qala hape Mookameli",
             "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena.",
+            "ADDREMOTEMNTITLE": "Kenya Masternode e hole",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Aterese",
@@ -295,7 +312,8 @@
             "LOCALE": "Puo...",
             "RESTARTCORE": "Qala hape Metrix Core",
             "EXIT": "Etsoa",
-            "OPTIONS": "Khetho..."
+            "OPTIONS": "Khetho...",
+            "CURRENCIES": "Phatlalatsa Chelete..."
         },
         "ENCRYPT": {
             "TITLE": "Tlanya",
@@ -334,7 +352,9 @@
         "SORTBY": "Hlophisa ka",
         "SEARCH": "Batla",
         "FEE": "Tefiso",
-        "ACCEPTBUTTON": "Amohela"
+        "ACCEPTBUTTON": "Amohela",
+        "CONFIRMED": "E netefalitsoe",
+        "UNCONFIRMED": "Ha ea netefatsoa"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ho qala Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Lintho tsohle tse hlokahalang li hloka bonnete ba 1 pele u qeta.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Litšebetso li kopitsoa ho lebokose la lipapali",
         "TRANSACTIONOUTPUTTOOLARGE": "E 'ngoe ea moputso oa hau ho chelete e le kholo haholo hore e se ke ea romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Phetoho ea hau e kholo haholo hore e ka romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Phetoho ea hau e kholo haholo hore e ka romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Ho emisa masternode...",
+        "FAILEDTOWRITECONFIG": "Ho bile le bothata ho ngolla file ea hau ea metrix.conf. Lekola faele e le teng le hore Altitude e na le tumello ea ho ngola.",
+        "NOPUBLICUP": "Ha ho aterese ea IP ea Sechaba e fumanoeng. Sheba khokahano ea hau ea inthanete ebe o qala bocha Altitude.",
+        "CONFIGURINGLOCALMN": "E lokisa Masternode ea lehae..."
     },
     "TIME": {
         "AFEWSECONDS": "Metsotsoana e seng mekae",
@@ -386,5 +410,50 @@
         "MONTHS": "likhoeli",
         "AYEAR": "Selemo",
         "YEARS": "lilemo"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Re fumane lichelete tsa tšepe",
+        "NEWTRANSACTION_TITLE_STAKE": "Lekhalo le amohetseng",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Re fumane Moputso oa Masternode"
+    },
+    "MONTH": {
+        "JAN": "JANE",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "TLHOLO",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "U romella",
+                "YOUGET": "Uena",
+                "MRXADDRESS": "Aterese ea Metrix",
+                "SWAP": "Fetolela",
+                "SWAPADDRESSES": "Fetolela Aterese",
+                "BTCADDRESS": "Aterese ea BTC",
+                "INFOLINE1": "Ha u se u na le aterese ea BTC ea depositi BTC efe kapa efe e rometsoeng atereseng eo ka boeona e tla kenelletse MRX atereseng ea hau ea MRX e khethiloeng.",
+                "INFOLINE2-1": "Ts'ebetso hangata e hlakile ka nako ea hora ho latela linako tsa block ea Bitcoin. Re ka amohela fiat bakeng",
+                "INFOLINE2-2": "linaha tse nkang karolo",
+                "INFOLINE2-3": "Sena se tla fetoleloa ho BTC pele ebe MRX.",
+                "INFOLINE3": "Hang ha depositi ea hau ea BTC e hlakisitse u tla amohela MRX ea hau atereseng ea hau e khethiloeng.",
+                "INFOLINE4": "Bakeng sa tlhaiso-leseling e batsi",
+                "FIATSWAPSELECTED": "U tla romelloa ho Buy.Metrixcoin.com ho phethela tšebetso ena"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "E hlahisa Aterese ea Phetoho...",
+            "ALREADYHAVEADDRESS": "U se u ntse u na le aterese ea BTC bakeng sa aterese ena",
+            "SWAPUSDMIN": "Chelete e fetotsoeng bonyane ba USD ke $ 50",
+            "SWAPUSDMAX": "Chelete e fetotsoeng kaholimo ho USD ke $ 3000",
+            "NOADDRESS": "Ha ua kena aterese ea Metrix"
+        }
     }
 }

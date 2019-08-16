@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adirẹsi",
             "ENABLED": "Ti ṣiṣẹ",
-            "NOTENABLEDTITLE": "Masternodes ko ṣiṣẹ",
-            "NOTENABLEDINSTR": "Lati ṣe igbimọ ile-iṣẹ ti o nilo lati ṣe afihan masternodes nipa fifi masternode = 1 ati titobi 'masternodeprivkey' ati awọn 'variables masternodeaddr' ninu faili metrix.conf rẹ.",
             "STARTBUTTON": "Bẹrẹ Agbegbe",
             "STARTALIASBUTTON": "Bẹrẹ Akosile",
-            "STARTALLBUTTON": "Bẹrẹ Gbogbo"
+            "STARTALLBUTTON": "Bẹrẹ Gbogbo",
+            "NOMASTERNODES": "O ko ni awọn awo-pẹlẹbẹ eyikeyi",
+            "NOMNOUTPUTS": "Ko si awọn iṣawari Masternode ti a rii. Lati ṣiṣẹ Masternode agbegbe kan firanṣẹ awọn owo 2,000,000 deede si adirẹsi Masternode rẹ ki o duro fun awọn iṣeduro 15.",
+            "STOPBUTTON": "Duro Agbegbe",
+            "STOPALIASBUTTON": "Da Alias duro",
+            "ADDREMOTE": "Fikun Masternode Latọna jijin",
+            "REMOVEMN": "Yọ Masternode",
+            "ADDLOCAL": "Ṣeto Masternode Agbegbe",
+            "DISABLELOCAL": "Mu Masternode Agbegbe wa",
+            "LOCALNOTRUNNING": "Masternode Agbegbe Ko Nṣiṣẹ",
+            "REMOTENOTRUNNING": "Masternode Latọna jijin Ko Wa"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Wole Ifiranṣẹ",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Akopọ",
             "TRANSACTIONSTAB": "Awọn iṣowo",
             "ADDRESSTABS": "Awọn adirẹsi"
+        },
+        "CURRENCY": {
+            "TITLE": "Yan Iyipada Ifihan"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro wa pẹlu Metrix Core ti o mu ki o pari. O ṣe iṣeduro lati ṣayẹwo faili debug.log rẹ fun awọn oran.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Onibara tuntun bẹrẹ",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf iṣeto ni aiyipada",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii.",
+            "ADDREMOTEMNTITLE": "Fikun Masternode Latọna jijin",
+            "ADDREMOTEMNALIAS": "Aliasode Masternode",
+            "ADDREMOTEMNIP": "IP9 Masternode: Port",
+            "ADDREMOTEMNKEY": "Bọtini Ikọkọ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Atọka Masxodeode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adirẹsi Iwe",
@@ -295,7 +312,8 @@
             "LOCALE": "Ede...",
             "RESTARTCORE": "Tun Metrix Core bẹrẹ",
             "EXIT": "Jade",
-            "OPTIONS": "Awọn aṣayan..."
+            "OPTIONS": "Awọn aṣayan...",
+            "CURRENCIES": "Ifihan Iyipada owo..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Sa pelu",
         "SEARCH": "Ṣawari",
         "FEE": "Awọn owo sisan",
-        "ACCEPTBUTTON": "Gba"
+        "ACCEPTBUTTON": "Gba",
+        "CONFIRMED": "Jẹrisi",
+        "UNCONFIRMED": "Aigbagbọ"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ni ibẹrẹ Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Gbogbo awọn ipinnu nilo ni o kere ju iṣeduro ṣaaju ki o to lilo.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Awọn iṣẹ ti a ṣe apẹrẹ si paadi",
         "TRANSACTIONOUTPUTTOOLARGE": "Ọkan ninu owo-ori rẹ si iye owo tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Iyipada rẹ tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Iyipada rẹ tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Idaduro masternode...",
+        "FAILEDTOWRITECONFIG": "Iṣoro kan wa ninu kikọwe si faili faili metrix.conf rẹ. Ṣayẹwo faili naa wa ati pe Altitude ti kọ awọn igbanilaaye.",
+        "NOPUBLICUP": "Ko si adiresi IP gbangba ti o wa. Ṣayẹwo asopọ intanẹẹti rẹ ati tun bẹrẹ Altitude.",
+        "CONFIGURINGLOCALMN": "Tito leto Masternode agbegbe..."
     },
     "TIME": {
         "AFEWSECONDS": "Aaya meji diẹ",
@@ -386,5 +410,50 @@
         "MONTHS": "osu",
         "AYEAR": "Odun kan",
         "YEARS": "ọdun"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Awọn owó ti a gba",
+        "NEWTRANSACTION_TITLE_STAKE": "Igbimọ ti o gba",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Igbese Ọmọ-inu ti o gba wọle"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MO",
+        "JUN": "JUN",
+        "JUL": "JULỌ",
+        "AUG": "AUG",
+        "SEP": "WO",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "O Firanṣẹ",
+                "YOUGET": "O Gba",
+                "MRXADDRESS": "Adirẹsi Metrix",
+                "SWAP": "Siwopu",
+                "SWAPADDRESSES": "Awọn adirẹsi Swap",
+                "BTCADDRESS": "Adirẹsi BTC",
+                "INFOLINE1": "Ni kete ti o ba ni adirẹsi idogo idogo BTC eyikeyi BTC ti o firanṣẹ si adirẹsi yẹn yoo ṣe ayipada laifọwọyi fun MRX sinu adirẹsi MRX ti o yan.",
+                "INFOLINE2-1": "Awọn iṣowo lẹtọ sọ di mimọ laarin wakati kan da lori awọn akoko bulọki Bitcoin. A le gba fiat fun",
+                "INFOLINE2-2": "kopa awọn orilẹ-ede",
+                "INFOLINE2-3": "Eyi yoo yipada si BTC ni akọkọ lẹhinna MRX.",
+                "INFOLINE3": "Ni kete ti idogo BTC rẹ ba ti fọ kuro iwọ yoo gba MRX rẹ sinu adirẹsi ti yan.",
+                "INFOLINE4": "Fun ibẹwo si alaye siwaju sii",
+                "FIATSWAPSELECTED": "Iwọ yoo darí si Buy.Metrixcoin.com lati pari iṣowo naa"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ti nfa adirẹsi Swap...",
+            "ALREADYHAVEADDRESS": "O ti ni adiresi BTC tẹlẹ fun adirẹsi yii",
+            "SWAPUSDMIN": "Iye iyipada sẹhin ti o kere ju ni $ 50",
+            "SWAPUSDMAX": "Iwọn ipa-ọna USD ti o pọ julọ jẹ $ 3000",
+            "NOADDRESS": "Iwọ ko tẹ adirẹsi Metrix kan sii"
+        }
     }
 }

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adreesị",
             "ENABLED": "Kwadoro",
-            "NOTENABLEDTITLE": "Masternodes enyereghị",
-            "NOTENABLEDINSTR": "Iji na-agba ọsọ maka nnabata ị ga - achọ ka masternodes site na ịmepụta masternode = 1 na configuring 'variables' na 'masternodeaddr' na faịlụ metrix.conf gị.",
             "STARTBUTTON": "Malite mpaghara",
             "STARTALIASBUTTON": "Malite aha",
-            "STARTALLBUTTON": "Malite niile"
+            "STARTALLBUTTON": "Malite niile",
+            "NOMASTERNODES": "I nweghi masternodes",
+            "NOMNOUTPUTS": "Enweghị achọpụtara Masternode. Iji mee ka Masternode nke ime obodo zipu mkpụrụ ego 2,000,000 na adreesị Masternode gị wee chere maka nkwenye 15.",
+            "STOPBUTTON": "Kwụsị Mpaghara",
+            "STOPALIASBUTTON": "Kwụsị Alias",
+            "ADDREMOTE": "Tinye Remote Masternode",
+            "REMOVEMN": "Wepu Masternode",
+            "ADDLOCAL": "Mbido obodo Masternode",
+            "DISABLELOCAL": "Gbanyụọ Masternode Mpaghara",
+            "LOCALNOTRUNNING": "Masternode Mpaghara anaghị agba ọsọ",
+            "REMOTENOTRUNNING": "Ahụbeghị Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Zipu Ozi",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Isi",
             "TRANSACTIONSTAB": "Mmekọrịta",
             "ADDRESSTABS": "Adreesị"
+        },
+        "CURRENCY": {
+            "TITLE": "Họrọ Ego Ngosipụta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Malitegharịa ekwentị",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf nhazi",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a.",
+            "ADDREMOTEMNTITLE": "Tinye Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "IP nke Masternode: Port",
+            "ADDREMOTEMNKEY": "Masternode n'onwe Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Index Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
@@ -295,7 +312,8 @@
             "LOCALE": "Asụsụ...",
             "RESTARTCORE": "Maliteghachi Metrix Core",
             "EXIT": "Ụzọ ọpụpụ",
-            "OPTIONS": "Nhọrọ..."
+            "OPTIONS": "Nhọrọ...",
+            "CURRENCIES": "Gosiputa ego..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Hazie site na",
         "SEARCH": "Chọọ",
         "FEE": "Ụgwọ",
-        "ACCEPTBUTTON": "Nabata"
+        "ACCEPTBUTTON": "Nabata",
+        "CONFIRMED": "Ekwupụtara",
+        "UNCONFIRMED": "Enweghị nkwenye"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ibalite Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Ntinye niile chọrọ ọ dịkarịa ala 1 nkwenye tupu emefu.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ahịa ndị e depụtara gaa na windo",
         "TRANSACTIONOUTPUTTOOLARGE": "Otu n'ime ụgwọ ị na-akwụ na oke ego dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mgbanwe gị dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Mgbanwe gị dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Nkwụsị masternode...",
+        "FAILEDTOWRITECONFIG": "Enwere nsogbu idegara faịlụ metrix.conf gị. Lelee faịlụ dị na Altitude nwere ikike ikike ide.",
+        "NOPUBLICUP": "Onweghi Adreesị IP Ọha. Lelee njikọ ịntanetị gị ma malitegharịa Altitude.",
+        "CONFIGURINGLOCALMN": "Ijikwa mpaghara Masternode…"
     },
     "TIME": {
         "AFEWSECONDS": "Sekọnd ole na ole",
@@ -386,5 +410,50 @@
         "MONTHS": "ọnwa",
         "AYEAR": "Otu afọ",
         "YEARS": "afọ"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ego E Nweta",
+        "NEWTRANSACTION_TITLE_STAKE": "Enwetara Mgbakọ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Enweta ụgwọ ọrụ nke ndị nna ukwu"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "EGO",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "Ozigbo",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Zitere",
+                "YOUGET": "Get Nweta",
+                "MRXADDRESS": "Adreesị Metrix",
+                "SWAP": "Gbanwee",
+                "SWAPADDRESSES": "Adreesị adreesị",
+                "BTCADDRESS": "Adreesị BTC",
+                "INFOLINE1": "Ozugbo i nwere adreesị nkwụnye ego BTC ọ bụla ezigara na adreesị ahụ ga-agbanwe na MRX ozugbo na adreesị MRX ahọpụtara.",
+                "INFOLINE2-1": "Azụmaahịa na-edokarị anya n'ime otu elekere dabere n'oge oge mgbochi Bitcoin. Anyị nwere ike ịnabata ọkụ",
+                "INFOLINE2-2": "mba ndi sonyere",
+                "INFOLINE2-3": "A ga-agbanwe nke a na BTC nke izizi MRX.",
+                "INFOLINE3": "Ozugbo itinye ego BTC gị kpochapụrụ, ị ga-enweta MRX gị n'enye hoputara.",
+                "INFOLINE4": "Maka ozi ndị ọzọ nleta",
+                "FIATSWAPSELECTED": "A ga-edugharị gị gaa Buy.Metrixcoin.com iji mezue azụmahịa a"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ha na-agbanwe Adreesị Swap...",
+            "ALREADYHAVEADDRESS": "Already nweela adreesị BTC maka adres a",
+            "SWAPUSDMIN": "Ego ole na ole na-agbanwe sigịnụ bụ $ 50",
+            "SWAPUSDMAX": "Ọnụ ego mgbanwe USD kacha bụ $ 3000",
+            "NOADDRESS": "I tinyeghi adres Metrix"
+        }
     }
 }

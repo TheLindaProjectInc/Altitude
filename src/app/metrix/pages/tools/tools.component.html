@@ -1,0 +1,186 @@
+<div class="content" #scrollingBlock>
+
+  <div class="tabs">
+    <button (click)="tab=0" [ngClass]="{'active':tab==0}">
+      {{'PAGES.TOOLS.INFORMATIONTAB' | translate}}
+    </button>
+    <button (click)="tab=1" [ngClass]="{'active':tab==1}">
+      {{'PAGES.TOOLS.DEBUGTAB' | translate}}
+    </button>
+    <button (click)="tab=2" [ngClass]="{'active':tab==2}">
+      {{'PAGES.TOOLS.PEERSTAB' | translate}}
+    </button>
+    <button (click)="tab=3" [ngClass]="{'active':tab==3}">
+      {{'PAGES.TOOLS.REPAIRTAB' | translate}}
+    </button>
+  </div>
+
+  <!-- Information -->
+  <div class="tab-content" *ngIf="tab==0">
+    <table class="information-table">
+      <tr>
+        <th colspan="2">
+          <h4>{{ 'PAGES.TOOLS.ABOUT.GENERALTITLE' | translate }}</h4>
+        </th>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.COREVERSION' | translate }}:</td>
+        <td>{{wallet.walletStatus.version}}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}:</td>
+        <td>{{electron.remote.app.getVersion()}}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.PROTOCOLVERSION' | translate }}:</td>
+        <td>{{wallet.walletStatus.protocolversion}}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.WALLETVERSION' | translate }}:</td>
+        <td>{{wallet.walletStatus.walletversion}}</td>
+      </tr>
+
+      <tr>
+        <th colspan="2">
+          <h4>{{ 'PAGES.TOOLS.ABOUT.NETWORKTITLE' | translate }}</h4>
+        </th>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.NUMBERCONNECTIONS' | translate }}:</td>
+        <td>{{wallet.walletStatus.connections}} (In: {{getPeersSpread()[0]}} / Out: {{getPeersSpread()[1]}})</td>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.NUMBERMASTERNODES' | translate }}:</td>
+        <td>{{wallet.masternode.list.length}}</td>
+      </tr>
+
+      <tr>
+        <th colspan="2">
+          <h4>{{ 'PAGES.TOOLS.ABOUT.BLOCKCHAINTITLE' | translate }}</h4>
+        </th>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.NUMBERBLOCKS' | translate }}:</td>
+        <td>{{wallet.blockchainStatus.latestBlockHeight}}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PAGES.TOOLS.ABOUT.BESTBLOCKTTIME' | translate }}:</td>
+        <td>{{wallet.blockchainStatus.latestBlockTime | date:'MMM d, yyyy h:mm:ss a'}}</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <!-- Debug Console -->
+  <div class="tab-content" *ngIf="tab==1">
+
+    <pre style="white-space: inherit;">{{ 'PAGES.TOOLS.DEBUG.CONSOLEINFO' | translate }}</pre>
+
+    <pre style="white-space: inherit;" class='danger'>{{ 'PAGES.TOOLS.DEBUG.CONSOLEWARNING' | translate }}</pre>
+
+    <div class="rpc-commands">
+      <div *ngFor="let cmd of rpcHistory" class="line">
+        <span class="timestamp">{{cmd.ts | date:'h:mm:ss a'}}</span>
+        <fa-icon *ngIf="cmd.send" icon="arrow-left"></fa-icon>
+        <fa-icon *ngIf="!cmd.send" icon="arrow-right"></fa-icon>
+        <pre *ngIf="cmd.json">{{cmd.data | json}}</pre>
+        <pre *ngIf="!cmd.json">{{cmd.data}}</pre>
+      </div>
+    </div>
+
+    <form class="toolbar-bottom flex" (ngSubmit)="sendRPC()">
+      <text-input name="rpcCommand" [(inputModel)]="rpcCommand" (keydownArrowUp)="rpcKeyUp($event)" (keydownArrowDown)="rpcKeyDown($event)"></text-input>
+      <button class="btn btn-default" type="button" (click)="clearRPCHistory()">
+        {{ 'MISC.CLEARALLBUTTON' | translate}}
+      </button>
+    </form>
+  </div>
+
+  <!-- Peers -->
+  <div class="tab-content" *ngIf="tab==2">
+    <virtual-scroller #scroll class="transactions" [items]="peers" [parentScroll]="scrollingBlock">
+      <div class="transaction confirmed" *ngFor="let peer of scroll.viewPortItems" style="min-width:700px;height: 92px;">
+        <div class="icon">
+          <fa-icon class="primary" *ngIf="peer.inbound" icon="arrow-right" title="{{ 'PAGES.TOOLS.PEERS.INBOUND' | translate }}"></fa-icon>
+          <fa-icon class="primary" *ngIf="!peer.inbound" icon="arrow-left" title="{{ 'PAGES.TOOLS.PEERS.OUTBOUND' | translate }}"></fa-icon>
+        </div>
+        <div class="">
+          <h5>{{peer.addr}}</h5>
+          <h6>{{peer.subver}}</h6>
+          <h5>{{ 'PAGES.TOOLS.PEERS.PING' | translate }}: {{prettyPing(peer.pingtime)}}</h5>
+        </div>
+        <div class="">
+          <h5>{{ 'PAGES.TOOLS.PEERS.PROTOCOL' | translate }}: {{peer.version}}</h5>
+          <h6>{{ 'PAGES.TOOLS.PEERS.BANSCORE' | translate }}: {{peer.banscore}}</h6>
+          <h5>{{ 'PAGES.TOOLS.PEERS.HEIGHT' | translate }}: {{peer.startingheight}}</h5>
+        </div>
+        <div class="detail">
+          <h5>{{ 'PAGES.TOOLS.PEERS.SENDREC' | translate }}:
+            {{prettyDataTransfer(peer.bytessent)}}/{{prettyDataTransfer(peer.bytesrecv)}}</h5>
+          <h5>{{ 'PAGES.TOOLS.PEERS.LASTSENDREC' | translate }}:
+            {{helpers.formatTimeEplased(peer.lastsend,dateNow)}}/{{helpers.formatTimeEplased(peer.lastrecv,dateNow)}}</h5>
+          <h5>{{ 'PAGES.TOOLS.PEERS.CONTIME' | translate }}: {{helpers.formatTimeEplased(peer.conntime,dateNow)}}</h5>
+        </div>
+      </div>
+    </virtual-scroller>
+
+
+  </div>
+
+  <!-- Repair Wallet -->
+  <div class="tab-content" *ngIf="tab==3">
+    <p>{{'PAGES.TOOLS.REPAIR.INFO' | translate}}</p>
+    <p class="danger" *ngIf="!canRunRepair()">{{'PAGES.TOOLS.REPAIR.INFOEXTERNAL' | translate}}</p>
+    <table class="table-repair" *ngIf="canRunRepair()">
+      <tr>
+        <td>
+          <button (click)="repairWallet(0)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.SALVAGEBUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.SALVAGEINFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
+          <button (click)="repairWallet(1)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.RESCANBUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.RESCANINFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
+          <button (click)="repairWallet(2)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.RECOVER1BUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.RECOVER1INFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
+          <button (click)="repairWallet(3)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.RECOVER2BUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.RECOVER2INFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
+          <button (click)="repairWallet(4)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.UPGRADEWALLETBUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.UPGRADEWALLETINFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
+          <button (click)="repairWallet(5)" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.REBUILDINDEXBUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.REBUILDINDEXINFO' | translate}}</td>
+      </tr>
+    </table>
+  </div>
+
+</div>

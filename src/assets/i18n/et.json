@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Aadress",
             "ENABLED": "Lubatud",
-            "NOTENABLEDTITLE": "Masternodes pole lubatud",
-            "NOTENABLEDINSTR": "Masternode käivitamiseks peate lubama masternodid, seades masternode = 1 ja konfigureerides \"masternodeprivkey\" ja \"masternodeaddr\" muutujad oma metrix.conf failis.",
             "STARTBUTTON": "Alusta kohalikku",
             "STARTALIASBUTTON": "Alusta nimega",
-            "STARTALLBUTTON": "Alusta kõik"
+            "STARTALLBUTTON": "Alusta kõik",
+            "NOMASTERNODES": "Sul pole masternode",
+            "NOMNOUTPUTS": "Masternode väljundeid ei leitud. Kohaliku Masternode käivitamiseks saatke Masternode aadressile täpselt 2 000 000 münti ja oodake 15 kinnitust.",
+            "STOPBUTTON": "Peatage kohalik",
+            "STOPALIASBUTTON": "Peatage varjunimi",
+            "ADDREMOTE": "Lisage Remote Masternode",
+            "REMOVEMN": "Eemaldage Masternode",
+            "ADDLOCAL": "Kohaliku Masternode seadistamine",
+            "DISABLELOCAL": "Keela kohalik masternode",
+            "LOCALNOTRUNNING": "Kohalik Masternode ei tööta",
+            "REMOTENOTRUNNING": "Remote Masternode ei leitud"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sõnumi signatuur",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Ülevaade",
             "TRANSACTIONSTAB": "Tehingud",
             "ADDRESSTABS": "Aadressid"
+        },
+        "CURRENCY": {
+            "TITLE": "Valige Display Currency"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Taaskäivitage klient",
             "CLIENTINVALIDCONFIGTITLE": "Kehtetu metrix.conf konfiguratsioon",
-            "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili."
+            "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili.",
+            "ADDREMOTEMNTITLE": "Lisage Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode alias",
+            "ADDREMOTEMNIP": "Masternode IP: port",
+            "ADDREMOTEMNKEY": "Masternode privaatvõti",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -295,7 +312,8 @@
             "LOCALE": "Keel...",
             "RESTARTCORE": "Taaskäivita Metrix Core",
             "EXIT": "Välju",
-            "OPTIONS": "Valikud..."
+            "OPTIONS": "Valikud...",
+            "CURRENCIES": "Kuva valuuta..."
         },
         "ENCRYPT": {
             "TITLE": "Krüpteeri",
@@ -334,7 +352,9 @@
         "SORTBY": "Sorteerima",
         "SEARCH": "Otsing",
         "FEE": "Tasu",
-        "ACCEPTBUTTON": "Nõustu"
+        "ACCEPTBUTTON": "Nõustu",
+        "CONFIRMED": "Kinnitatud",
+        "UNCONFIRMED": "Kinnitamata"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core'i initsialiseerimine...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Kõik sisendid nõuavad enne kulutusi vähemalt 1 kinnitust.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tehingud kopeeritakse lõikepuhvrisse",
         "TRANSACTIONOUTPUTTOOLARGE": "Üks teie tasu summasid on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Teie muudatus on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Teie muudatus on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Masternoodi peatamine...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf-faili kirjutamisel ilmnes probleem. Kontrollige, kas fail on olemas ja et kõrgusel on kirjutusõigused.",
+        "NOPUBLICUP": "Ei leitud avalikku IP-aadressi. Kontrollige oma internetiühendust ja taaskäivitage kõrgus.",
+        "CONFIGURINGLOCALMN": "Kohaliku Masternode seadistamine..."
     },
     "TIME": {
         "AFEWSECONDS": "Paar sekundit",
@@ -386,5 +410,50 @@
         "MONTHS": "kuud",
         "AYEAR": "Aasta",
         "YEARS": "aastaid"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Saadud mündid",
+        "NEWTRANSACTION_TITLE_STAKE": "Saadud panus",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Saadud Masternode'i preemia"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "Veebruar",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "VÕIB",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "ÜMT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Saadate",
+                "YOUGET": "Sa saad",
+                "MRXADDRESS": "Metriksi aadress",
+                "SWAP": "Vaheta",
+                "SWAPADDRESSES": "Aadresside vahetamine",
+                "BTCADDRESS": "BTC aadress",
+                "INFOLINE1": "Kui teil on BTC hoiustamisaadress, vahetatakse iga sellele aadressile saadetud BTC automaatselt MRX-i vastu teie määratud MRX-aadressile.",
+                "INFOLINE2-1": "Tehingud tühjendatakse tavaliselt tunni jooksul, sõltuvalt Bitcoini blokeerimise aegadest. Võime fiati heaks kiita",
+                "INFOLINE2-2": "osalevad riigid",
+                "INFOLINE2-3": "See teisendatakse esmalt BTC-ks, seejärel MRX-ks.",
+                "INFOLINE3": "Kui teie BTC tagatisraha on laekunud, saate MRX-i teie määratud aadressile.",
+                "INFOLINE4": "Lisateabe saamiseks külastage veebisaiti",
+                "FIATSWAPSELECTED": "Selle tehingu lõpuleviimiseks suunatakse teid edasi saidile Buy.Metrixcoin.com"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Vahetusaadressi genereerimine...",
+            "ALREADYHAVEADDRESS": "Teil on selle aadressi jaoks juba BTC-aadress",
+            "SWAPUSDMIN": "Minimaalne USD vahetustehingu summa on 50 USD",
+            "SWAPUSDMAX": "Maksimaalne USD vahetustehingusumma on 3000 USD",
+            "NOADDRESS": "Metriksi aadressi ei sisestatud"
+        }
     }
 }

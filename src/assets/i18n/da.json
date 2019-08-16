@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresse",
             "ENABLED": "Aktiveret",
-            "NOTENABLEDTITLE": "Masternodes ikke aktiveret",
-            "NOTENABLEDINSTR": "For at køre en masternode skal du aktivere masternoder ved at indstille masternode = 1 og konfigurere 'masternodeprivkey' og 'masternodeaddr' variabler i din metrix.conf fil.",
             "STARTBUTTON": "Start Lokal",
             "STARTALIASBUTTON": "Start alias",
-            "STARTALLBUTTON": "Start alle"
+            "STARTALLBUTTON": "Start alle",
+            "NOMASTERNODES": "Du har ikke nogen masternoder",
+            "NOMNOUTPUTS": "Ingen Masternode-output fundet. For at køre en lokal Masternode skal du sende nøjagtigt 2.000.000 mønter til din Masternode-adresse og vente på 15 bekræftelser.",
+            "STOPBUTTON": "Stop lokalt",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Tilføj ekstern masternode",
+            "REMOVEMN": "Fjern Masternode",
+            "ADDLOCAL": "Opsætning af lokal masternode",
+            "DISABLELOCAL": "Deaktiver lokal masternode",
+            "LOCALNOTRUNNING": "Lokal masternode kører ikke",
+            "REMOTENOTRUNNING": "Fjernmasternode findes ikke"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Skriv besked",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Oversigt",
             "TRANSACTIONSTAB": "Transaktioner",
             "ADDRESSTABS": "Adresser"
+        },
+        "CURRENCY": {
+            "TITLE": "Vælg Vis valuta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Der var et problem med Metrix Core, der har fået det til at ophøre. Det anbefales at kontrollere din debug.log-fil for problemer.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Genstart klient",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf Konfiguration",
-            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ugyldig masternode opsætning, som vil få Metrix Core til at afslutte med det samme. Tjek venligst denne fil."
+            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ugyldig masternode opsætning, som vil få Metrix Core til at afslutte med det samme. Tjek venligst denne fil.",
+            "ADDREMOTEMNTITLE": "Tilføj ekstern masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode privat nøgle",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebog",
@@ -295,7 +312,8 @@
             "LOCALE": "Sprog...",
             "RESTARTCORE": "Genstart Metrix Core",
             "EXIT": "Afslut",
-            "OPTIONS": "Muligheder..."
+            "OPTIONS": "Muligheder...",
+            "CURRENCIES": "Vis valuta..."
         },
         "ENCRYPT": {
             "TITLE": "Krypter",
@@ -334,7 +352,9 @@
         "SORTBY": "Sorter efter",
         "SEARCH": "Søg",
         "FEE": "Betaling",
-        "ACCEPTBUTTON": "Acceptere"
+        "ACCEPTBUTTON": "Acceptere",
+        "CONFIRMED": "bekræftet",
+        "UNCONFIRMED": "Ikke bekræftet"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialisering af Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Alle indgange kræver mindst 1 bekræftelse inden udgifterne.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktioner kopieret til udklipsholder",
         "TRANSACTIONOUTPUTTOOLARGE": "En af din betaling til beløb er for stor til sikkert at sende. Maksimum er 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Din ændring er for stor til sikker afsendelse. Maksimum er 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Din ændring er for stor til sikker afsendelse. Maksimum er 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Stop med masternode...",
+        "FAILEDTOWRITECONFIG": "Der opstod et problem med at skrive til din metrix.conf-fil. Kontroller, at filen findes, og at Altitude har skrivetilladelser.",
+        "NOPUBLICUP": "Ingen offentlig IP-adresse fundet. Kontroller din internetforbindelse, og genstart Altitude.",
+        "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Et par sekunder",
@@ -386,5 +410,50 @@
         "MONTHS": "måneder",
         "AYEAR": "Et år",
         "YEARS": "flere år"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Modtagne mønter",
+        "NEWTRANSACTION_TITLE_STAKE": "Modtaget indsats",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Modtaget Masternode Belønning"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "februar",
+        "MAR": "MAR",
+        "APR": "april",
+        "MAY": "KAN",
+        "JUN": "juni",
+        "JUL": "juli",
+        "AUG": "august",
+        "SEP": "september",
+        "OCT": "oktober",
+        "NOV": "november",
+        "DEC": "december"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Du sender",
+                "YOUGET": "Du får",
+                "MRXADDRESS": "Metrix-adresse",
+                "SWAP": "Bytte rundt",
+                "SWAPADDRESSES": "Skift adresser",
+                "BTCADDRESS": "BTC-adresse",
+                "INFOLINE1": "Når du har en BTC-indskuddsadresse, vil enhver BTC, der sendes til denne adresse, automatisk blive byttet til MRX til din nominerede MRX-adresse.",
+                "INFOLINE2-1": "Transaktioner ryddes typisk inden for en time afhængigt af Bitcoin-blokeringstiderne. Vi kan acceptere fiat for",
+                "INFOLINE2-2": "deltagende lande",
+                "INFOLINE2-3": "Dette konverteres først til BTC derefter MRX.",
+                "INFOLINE3": "Når din BTC-indbetaling er ryddet, modtager du din MRX til din nominerede adresse.",
+                "INFOLINE4": "For mere information, besøg",
+                "FIATSWAPSELECTED": "Du bliver omdirigeret til Buy.Metrixcoin.com for at gennemføre denne transaktion"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Genererer swap-adresse...",
+            "ALREADYHAVEADDRESS": "Du har allerede en BTC-adresse til denne adresse",
+            "SWAPUSDMIN": "Det mindste USD-swapbeløb er $ 50",
+            "SWAPUSDMAX": "Det maksimale USD-swapbeløb er $ 3000",
+            "NOADDRESS": "Du indtastede ikke en Metrix-adresse"
+        }
     }
 }

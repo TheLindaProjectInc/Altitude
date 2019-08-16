@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "адрес",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Мастерионите не са активирани",
-            "NOTENABLEDINSTR": "За да стартирате masternode, ще трябва да активирате masternodes, като зададете masternode = 1 и конфигурирате променливите 'masternodeprivkey' и 'masternodeaddr' във вашия файл metrix.conf.",
             "STARTBUTTON": "Стартирайте локално",
             "STARTALIASBUTTON": "Стартирайте Псевдоним",
-            "STARTALLBUTTON": "Започнете всички"
+            "STARTALLBUTTON": "Започнете всички",
+            "NOMASTERNODES": "Нямате никакви мастернодези",
+            "NOMNOUTPUTS": "Не са намерени изходи за Masternode. За да стартирате локален Masternode изпратете точно 2,000,000 монети на вашия адрес Masternode и изчакайте 15 потвърждения.",
+            "STOPBUTTON": "Стоп локално",
+            "STOPALIASBUTTON": "Спрете псевдонима",
+            "ADDREMOTE": "Добавете отдалечен Masternode",
+            "REMOVEMN": "Премахване на Masternode",
+            "ADDLOCAL": "Настройка на локален мастернод",
+            "DISABLELOCAL": "Деактивиране на локалния мастернод",
+            "LOCALNOTRUNNING": "Не се изпълнява локален Masternode",
+            "REMOTENOTRUNNING": "Дистанционният Masternode не е намерен"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Подписване на съобщението",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Преглед",
             "TRANSACTIONSTAB": "Сделки",
             "ADDRESSTABS": "адреси"
+        },
+        "CURRENCY": {
+            "TITLE": "Изберете Валута на дисплея"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем с Metrix Core, който го е причинил да прекрати. Препоръчваме да проверите файла debug.log за проблеми.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирайте клиента",
             "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл."
+            "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл.",
+            "ADDREMOTEMNTITLE": "Добавете отдалечен Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Псевдоним",
+            "ADDREMOTEMNIP": "IP адрес: порт",
+            "ADDREMOTEMNKEY": "Личен ключ за Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -295,7 +312,8 @@
             "LOCALE": "Език...",
             "RESTARTCORE": "Рестартирайте Metrix Core",
             "EXIT": "изход",
-            "OPTIONS": "Настроики..."
+            "OPTIONS": "Настроики...",
+            "CURRENCIES": "Показване на валутата..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Сортирай по",
         "SEARCH": "Търсене",
         "FEE": "Такса",
-        "ACCEPTBUTTON": "приемам"
+        "ACCEPTBUTTON": "приемам",
+        "CONFIRMED": "Потвърдено",
+        "UNCONFIRMED": "Непотвърдени"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Инициализиране на Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Всички входящи данни изискват поне 1 потвърждение преди разходването.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциите са копирани в клипборда",
         "TRANSACTIONOUTPUTTOOLARGE": "Едно от сумите, които плащате, е твърде голямо, за да бъде изпратено безопасно. Максимумът е 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Промяната ви е твърде голяма, за да се изпраща безопасно. Максимумът е 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Промяната ви е твърде голяма, за да се изпраща безопасно. Максимумът е 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Спирането на masternode...",
+        "FAILEDTOWRITECONFIG": "Възникна проблем при записването във вашия файл metrix.conf. Проверете дали файлът съществува и че Altitude има разрешения за запис.",
+        "NOPUBLICUP": "Няма намерен публичен IP адрес. Проверете връзката си с интернет и рестартирайте Altitude.",
+        "CONFIGURINGLOCALMN": "Конфигуриране на местния Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Няколко секунди",
@@ -386,5 +410,50 @@
         "MONTHS": "месеца",
         "AYEAR": "Годишно",
         "YEARS": "години"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Получени монети",
+        "NEWTRANSACTION_TITLE_STAKE": "Получен залог",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Получено награда за Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "февруари",
+        "MAR": "MAR",
+        "APR": "април",
+        "MAY": "МОЖЕ",
+        "JUN": "юни",
+        "JUL": "юли",
+        "AUG": "август",
+        "SEP": "Септември",
+        "OCT": "октомври",
+        "NOV": "ноември",
+        "DEC": "декември"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ти изпрати",
+                "YOUGET": "Ти получаваш",
+                "MRXADDRESS": "Метрикс адрес",
+                "SWAP": "Размяна",
+                "SWAPADDRESSES": "Адрес за размяна",
+                "BTCADDRESS": "BTC адрес",
+                "INFOLINE1": "След като получите BTC адрес за депозит, всеки BTC, изпратен до този адрес, автоматично ще бъде заменен за MRX в номинирания от вас MRX адрес.",
+                "INFOLINE2-1": "Обикновено транзакциите се изчистват в рамките на един час, в зависимост от времето за блокиране на Bitcoin. Можем да приемем фиат за",
+                "INFOLINE2-2": "участващи страни",
+                "INFOLINE2-3": "Това ще бъде преобразувано първо в BTC, а след това в MRX.",
+                "INFOLINE3": "След като депозитът ви в BTC се изчисти, ще получите MRX на номинирания си адрес.",
+                "INFOLINE4": "За повече информация посетете",
+                "FIATSWAPSELECTED": "Ще бъдете пренасочени към Buy.Metrixcoin.com, за да завършите тази транзакция"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Генериране на суап адрес...",
+            "ALREADYHAVEADDRESS": "Вече имате BTC адрес за този адрес",
+            "SWAPUSDMIN": "Минималната сума за замяна в щатски долари е 50 долара",
+            "SWAPUSDMAX": "Максималната сума за суап за USD е 3000 долара",
+            "NOADDRESS": "Не сте въвели метричен адрес"
+        }
     }
 }

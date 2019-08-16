@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "כתובת",
             "ENABLED": "מופעל",
-            "NOTENABLEDTITLE": "מסטרנודים לא מופעלים",
-            "NOTENABLEDINSTR": "כדי להפעיל masternode יהיה עליך לאפשר masternodes על ידי הגדרת masternode = 1 והגדרת התצורה של משתני masternodeprivkey ו- masternodeaddr בקובץ metrix.conf.",
             "STARTBUTTON": "התחל מקומי",
             "STARTALIASBUTTON": "התחל כינוי",
-            "STARTALLBUTTON": "התחל הכל"
+            "STARTALLBUTTON": "התחל הכל",
+            "NOMASTERNODES": "אין לך שום מזכרות",
+            "NOMNOUTPUTS": "לא נמצאו פלטים של Masternode. כדי להריץ Masternode מקומי שלחו 2,000,000 מטבעות בדיוק לכתובת Masternode שלכם והמתנו ל 15 אישורים.",
+            "STOPBUTTON": "עצור מקומי",
+            "STOPALIASBUTTON": "עצור את הכינוי",
+            "ADDREMOTE": "הוסף Masternode מרחוק",
+            "REMOVEMN": "הסר את Masternode",
+            "ADDLOCAL": "הגדרת Masternode מקומי",
+            "DISABLELOCAL": "השבת את Masternode המקומי",
+            "LOCALNOTRUNNING": "Masternode מקומי לא פועל",
+            "REMOTENOTRUNNING": "מצב Masternode מרוחק לא נמצא"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "הירשם הודעה",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "סקירה כללית",
             "TRANSACTIONSTAB": "עסקאות",
             "ADDRESSTABS": "כתובות"
+        },
+        "CURRENCY": {
+            "TITLE": "בחר להציג מטבע"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "היתה בעיה עם לינדה Core שגרמה לו לסיים. מומלץ לבדוק את הקובץ debug.log לבעיות.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "הפעל מחדש את הלקוח",
             "CLIENTINVALIDCONFIGTITLE": "תצורה של metrix.conf לא חוקית",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf שלך יש הגדרה masternode לא חוקי אשר יגרום לינדה Core לצאת מיד. בדוק את הקובץ הזה."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf שלך יש הגדרה masternode לא חוקי אשר יגרום לינדה Core לצאת מיד. בדוק את הקובץ הזה.",
+            "ADDREMOTEMNTITLE": "הוסף Masternode מרחוק",
+            "ADDREMOTEMNALIAS": "Altern Masias",
+            "ADDREMOTEMNIP": "IP של Masternode: נמל",
+            "ADDREMOTEMNKEY": "מפתח פרטי של Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "אינדקס Trtern של Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "פנקס הכתובות",
@@ -295,7 +312,8 @@
             "LOCALE": "שפה...",
             "RESTARTCORE": "הפעל לינדה Core",
             "EXIT": "צא",
-            "OPTIONS": "אפשרויות..."
+            "OPTIONS": "אפשרויות...",
+            "CURRENCIES": "הצג מטבע..."
         },
         "ENCRYPT": {
             "TITLE": "הצפן",
@@ -334,7 +352,9 @@
         "SORTBY": "מיין לפי",
         "SEARCH": "לחפש",
         "FEE": "בתשלום",
-        "ACCEPTBUTTON": "קבל"
+        "ACCEPTBUTTON": "קבל",
+        "CONFIRMED": "אושר",
+        "UNCONFIRMED": "לא מאושר"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising לינדה Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "כל התשומות דורשות אישור אחד לפחות לפני ההוצאות.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "עסקאות שהועתקו ללוח",
         "TRANSACTIONOUTPUTTOOLARGE": "אחד משלמיך לסכומים גדול מדי לבטחה. המקסימום הוא 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "השינוי שלך גדול מדי כדי לשלוח אותו בבטחה. המקסימום הוא 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "השינוי שלך גדול מדי כדי לשלוח אותו בבטחה. המקסימום הוא 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "עוצר את הזיכרון...",
+        "FAILEDTOWRITECONFIG": "הייתה בעיה בכתיבה לקובץ metrix.conf. ודא שהקובץ קיים וכי ל- Altitude יש הרשאות כתיבה.",
+        "NOPUBLICUP": "לא נמצאה כתובת IP ציבורית. בדוק את חיבור האינטרנט שלך והפעל מחדש את Altitude.",
+        "CONFIGURINGLOCALMN": "מגדיר תצורה של Masternode מקומי..."
     },
     "TIME": {
         "AFEWSECONDS": "כמה שניות",
@@ -386,5 +410,50 @@
         "MONTHS": "חודשים",
         "AYEAR": "שנה",
         "YEARS": "שנים"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "קיבל מטבעות",
+        "NEWTRANSACTION_TITLE_STAKE": "קיבל סטיק",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "קיבל מאסטרנוד תגמול"
+    },
+    "MONTH": {
+        "JAN": "ג'אן",
+        "FEB": "FEB",
+        "MAR": "מרץ",
+        "APR": "אפריל",
+        "MAY": "מאי",
+        "JUN": "יוני",
+        "JUL": "יולי",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "אוקטובר",
+        "NOV": "NOV",
+        "DEC": "דצמבר"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "אתה שולח",
+                "YOUGET": "אתה מקבל",
+                "MRXADDRESS": "כתובת מטריקס",
+                "SWAP": "החלף",
+                "SWAPADDRESSES": "החלף כתובות",
+                "BTCADDRESS": "כתובת BTC",
+                "INFOLINE1": "ברגע שיש לך כתובת פיקדון BTC, כל BTC שיישלח לכתובת זו יוחלף אוטומטית עבור MRX לכתובת MRX המועמדת שלך.",
+                "INFOLINE2-1": "עסקאות מתרחשות בדרך כלל תוך שעה, תלוי בזמני החסימה של הביטקוין. אנו יכולים לקבל פיאט עבור",
+                "INFOLINE2-2": "מדינות המשתתפות",
+                "INFOLINE2-3": "זה יומר לראשונה ל- BTC ואז ל- MRX.",
+                "INFOLINE3": "לאחר שהפקדת BTC שלך תיפתר תקבל את ה- MRX לכתובת המועמדת שלך.",
+                "INFOLINE4": "למידע נוסף בקרו באתר",
+                "FIATSWAPSELECTED": "תנותב אל Buy.Metrixcoin.com להשלמת עסקה זו"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "יוצר החלפת כתובת...",
+            "ALREADYHAVEADDRESS": "יש לך כבר כתובת BTC עבור כתובת זו",
+            "SWAPUSDMIN": "סכום ההחלפה המינימלי USD הוא 50 $",
+            "SWAPUSDMAX": "הסכום המקסימלי להחלפת דולר הוא 3000 $",
+            "NOADDRESS": "לא הזנת כתובת מטריקס"
+        }
     }
 }

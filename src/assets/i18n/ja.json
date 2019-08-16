@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "住所",
             "ENABLED": "有効",
-            "NOTENABLEDTITLE": "Masternodesは有効になっていません",
-            "NOTENABLEDINSTR": "マスターノードを実行するには、masternode = 1を設定し、metrix.confファイルで 'masternodeprivkey'および 'masternodeaddr'変数を設定して、マスターノードを有効にする必要があります。",
             "STARTBUTTON": "ローカル開始",
             "STARTALIASBUTTON": "エイリアスを開始",
-            "STARTALLBUTTON": "すべて開始"
+            "STARTALLBUTTON": "すべて開始",
+            "NOMASTERNODES": "マスターノードはありません",
+            "NOMNOUTPUTS": "マスターノード出力が見つかりません。地元のマスターノードを運営するには、あなたのマスターノードアドレスに正確に2,000,000コインを送って15回の確認を待ちます。",
+            "STOPBUTTON": "ローカルを停止",
+            "STOPALIASBUTTON": "エイリアスを停止",
+            "ADDREMOTE": "リモートマスターノードを追加",
+            "REMOVEMN": "マスターノードを削除",
+            "ADDLOCAL": "ローカルマスターノードの設定",
+            "DISABLELOCAL": "ローカルマスターノードを無効にする",
+            "LOCALNOTRUNNING": "ローカルマスターノードが動作していない",
+            "REMOTENOTRUNNING": "リモートマスターノードが見つかりません"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "サインメッセージ",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "概要",
             "TRANSACTIONSTAB": "トランザクション",
             "ADDRESSTABS": "アドレス"
+        },
+        "CURRENCY": {
+            "TITLE": "表示通貨を選択"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coreに問題があり、終了させました。 debug.logファイルで問題を確認することをお勧めします。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "クライアントを再起動する",
             "CLIENTINVALIDCONFIGTITLE": "無効なmetrix.conf設定",
-            "CLIENTINVALIDCONFIGINFO": "あなたのmetrix.confは無効なマスターノード設定を持っています。これはMetrix Coreを直ちに終了させます。このファイルを確認してください。"
+            "CLIENTINVALIDCONFIGINFO": "あなたのmetrix.confは無効なマスターノード設定を持っています。これはMetrix Coreを直ちに終了させます。このファイルを確認してください。",
+            "ADDREMOTEMNTITLE": "リモートマスターノードを追加",
+            "ADDREMOTEMNALIAS": "マスターノードエイリアス",
+            "ADDREMOTEMNIP": "マスターノードIP：ポート",
+            "ADDREMOTEMNKEY": "マスターノード秘密鍵",
+            "ADDREMOTEMNTXHASH": "マスターノードTrxハッシュ",
+            "ADDREMOTEMNTXINDEX": "マスターノードTrxインデックス"
         },
         "ADDRESSBOOK": {
             "TITLE": "住所録",
@@ -295,7 +312,8 @@
             "LOCALE": "言語...",
             "RESTARTCORE": "Metrix Coreを再起動する",
             "EXIT": "出口",
-            "OPTIONS": "オプション..."
+            "OPTIONS": "オプション...",
+            "CURRENCIES": "通貨を表示..."
         },
         "ENCRYPT": {
             "TITLE": "暗号化する",
@@ -334,7 +352,9 @@
         "SORTBY": "並び替え",
         "SEARCH": "サーチ",
         "FEE": "費用",
-        "ACCEPTBUTTON": "受け入れる"
+        "ACCEPTBUTTON": "受け入れる",
+        "CONFIRMED": "確認済み",
+        "UNCONFIRMED": "未確認"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Coreを初期化しています...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "すべての入力は、支出の前に少なくとも1回の確認を必要とします。",
         "TRANSACTIONSCOPIEDCLIPBOARD": "トランザクションをクリップボードにコピー",
         "TRANSACTIONOUTPUTTOOLARGE": "金額に対する支払いの1つが大きすぎて安全に送信できません。最大値は90,071,992.54740992です。",
-        "TRANSACTIONCHANGETOOLARGE": "あなたの変更は安全に送信するには大きすぎます。最大値は90,071,992.54740992です。"
+        "TRANSACTIONCHANGETOOLARGE": "あなたの変更は安全に送信するには大きすぎます。最大値は90,071,992.54740992です。",
+        "STOPPINGMASTERNODE": "マスターノードを停止しています...",
+        "FAILEDTOWRITECONFIG": "metrix.confファイルへの書き込み中に問題が発生しました。ファイルが存在し、Altitudeに書き込み権限があることを確認してください。",
+        "NOPUBLICUP": "パブリックIPアドレスが見つかりません。インターネット接続を確認して、Altitudeを再起動してください。",
+        "CONFIGURINGLOCALMN": "ローカルマスターノードを設定しています..."
     },
     "TIME": {
         "AFEWSECONDS": "数秒",
@@ -386,5 +410,50 @@
         "MONTHS": "数ヶ月",
         "AYEAR": "1年",
         "YEARS": "年"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "受け取ったコイン",
+        "NEWTRANSACTION_TITLE_STAKE": "受け取った賭け金",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "マスターノード賞を受賞"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "3月",
+        "APR": "4月",
+        "MAY": "5月",
+        "JUN": "6月",
+        "JUL": "7月",
+        "AUG": "8月",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "12月"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "あなたが送る",
+                "YOUGET": "あなたが得る",
+                "MRXADDRESS": "メトリックス住所",
+                "SWAP": "スワップ",
+                "SWAPADDRESSES": "スワップアドレス",
+                "BTCADDRESS": "BTCアドレス",
+                "INFOLINE1": "BTCデポジットアドレスを取得すると、そのアドレスに送信されたBTCは自動的にMRX用に指定されたMRXアドレスに交換されます。",
+                "INFOLINE2-1": "トランザクションは通常、Bitcoinブロック時間に応じて1時間以内に決済されます。我々はフィアットを受け入れることができます",
+                "INFOLINE2-2": "参加国",
+                "INFOLINE2-3": "これは最初にBTCに変換され、次にMRXに変換されます。",
+                "INFOLINE3": "BTCデポジットが決済されると、MRXが指定された住所に届きます。",
+                "INFOLINE4": "詳細はこちら",
+                "FIATSWAPSELECTED": "この取引を完了するためにBuy.Metrixcoin.comにリダイレクトされます"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "スワップアドレスを生成しています...",
+            "ALREADYHAVEADDRESS": "この住所のBTC住所はすでにあります",
+            "SWAPUSDMIN": "USDの最小スワップ金額は$ 50です",
+            "SWAPUSDMAX": "USDの最大スワップ金額は$ 3000です",
+            "NOADDRESS": "Metrixの住所を入力していません"
+        }
     }
 }

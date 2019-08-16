@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Navnîşan",
             "ENABLED": "Vekirî",
-            "NOTENABLEDTITLE": "Masternodes ne çalak kirin",
-            "NOTENABLEDINSTR": "Ji bo ku hûn modeode bisekinin, hûn ê hewceyê ku mîhengên masternode = 1 û mîhengkirina 'masternodeprivkey' û 'masternodeaddr' guherînên li pelê metrix.conf bikar bîne.",
             "STARTBUTTON": "Niştecîh bikin",
             "STARTALIASBUTTON": "Destûra Alias",
-            "STARTALLBUTTON": "Destpêk Dest"
+            "STARTALLBUTTON": "Destpêk Dest",
+            "NOMASTERNODES": "Hûn ne moryod hene",
+            "NOMNOUTPUTS": "No outputs Mountode found. Ji bo ku Mownode ya herêmî vebikin, bi şikrek 2,000,000 cinsê navnîşana navnîşana Masternode bişînin û paşnavên 15 bisekinin.",
+            "STOPBUTTON": "Niştecîh bikin",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Mountode Remote",
+            "REMOVEMN": "Modeode jêbirin",
+            "ADDLOCAL": "Setup Local Modeode",
+            "DISABLELOCAL": "Modeode Local",
+            "LOCALNOTRUNNING": "Local Modeode Not Running",
+            "REMOTENOTRUNNING": "Masterode Remote nehat dîtin"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Peyama Şîfre",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Têgihiştinî",
             "TRANSACTIONSTAB": "Transactions",
             "ADDRESSTABS": "Navnîşan"
+        },
+        "CURRENCY": {
+            "TITLE": "Hilbijêre Display Choose"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Metrix Korek bû ku ji bo winda kirin. Ew pêşniyaz dike ku pelên debug .logê kontrol bikin.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Vebijêrk Client",
             "CLIENTINVALIDCONFIGTITLE": "Guhertina metrix.conf çewt",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin.",
+            "ADDREMOTEMNTITLE": "Mountode Remote",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Modeode IP: Port",
+            "ADDREMOTEMNKEY": "Key Key",
+            "ADDREMOTEMNTXHASH": "Trx Hash Modeode",
+            "ADDREMOTEMNTXINDEX": "Index Trx Modeode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Navnîşana Navnîşan",
@@ -295,7 +312,8 @@
             "LOCALE": "Ziman...",
             "RESTARTCORE": "Metrix Core Restart",
             "EXIT": "Derî",
-            "OPTIONS": "Options..."
+            "OPTIONS": "Options...",
+            "CURRENCIES": "Dirûra Display Display..."
         },
         "ENCRYPT": {
             "TITLE": "Şîfrekirin",
@@ -334,7 +352,9 @@
         "SORTBY": "Bi Sort By",
         "SEARCH": "Gerr",
         "FEE": "Xerc",
-        "ACCEPTBUTTON": "Baweranîn"
+        "ACCEPTBUTTON": "Baweranîn",
+        "CONFIRMED": "Pejirandin",
+        "UNCONFIRMED": "Nerastkirin"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Destpêka Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Hemû agahiyên ku ji ber mesrefên herî kêm 1 pejirandinê hewce ne.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Veguhastin veguherandin clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Yek ji perê we ji hêla veguhastina pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Guhertina te pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Guhertina te pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Moppingode...",
+        "FAILEDTOWRITECONFIG": "Vê pelê pirsgirêkek metrix.conf heye. Vê pelê binivîse û hebûna Altitude destûrnameyan nivîsî.",
+        "NOPUBLICUP": "Navnîşana IP-ê nehatiye dîtin. Têkiliya înternetê kontrol bikin û Altitude dîsa vekin.",
+        "CONFIGURINGLOCALMN": "Mîhodehekî herêmî damezirandin..."
     },
     "TIME": {
         "AFEWSECONDS": "Hin çend sêl",
@@ -386,5 +410,50 @@
         "MONTHS": "mehan",
         "AYEAR": "Salek",
         "YEARS": "salan"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Coins şandin",
+        "NEWTRANSACTION_TITLE_STAKE": "Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Rewşa Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "GULAN",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Hûn andin",
+                "YOUGET": "Hûn Dikevin",
+                "MRXADDRESS": "Navnîşana Metrix",
+                "SWAP": "Swap kirin",
+                "SWAPADDRESSES": "Navnîşanên Swap",
+                "BTCADDRESS": "Navnîşana BTC",
+                "INFOLINE1": "Gava ku hûn navnîşek depoya BTC-ê hebe, her BTC ji wê navnîşê ve hatî şandin dê bixweber ji bo MRX-ê di navnîşa navnîşa MRX-ê ya xweya navnîşandî de bibihurîne.",
+                "INFOLINE2-1": "Veguhastin bi gelemperî di nav saetekê de li gorî demên bloka Bitcoin ve zelal dibin. Em dikarin ji bo fiat bipejirînin",
+                "INFOLINE2-2": "welatên beşdar",
+                "INFOLINE2-3": "Vê gavê dê BTC paşê paşê MRX veguherîne.",
+                "INFOLINE3": "Piştî ku qaîdeya BTC we paqij kir hûn ê MRX-ê navnîşa navnîşa xwe bistînin.",
+                "INFOLINE4": "Ji bo bêtir agahdarî biçin",
+                "FIATSWAPSELECTED": "Ji bo ku hûn vê danûstandinê temam bikin hûn ê li Buy.Metrixcoin.com werin veguheztin"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Navnîşana Swap-ê Nirxand...",
+            "ALREADYHAVEADDRESS": "Ji bo vê navnîşê we berê navnîşek BTC heye",
+            "SWAPUSDMIN": "Dravê herî kêm ya swap $ 50 e",
+            "SWAPUSDMAX": "Buhayê swapê yê herî zêde USD $ 3000 e",
+            "NOADDRESS": "We navnîşek Metrixek nekir"
+        }
     }
 }

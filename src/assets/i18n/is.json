@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Heimilisfang",
             "ENABLED": "Virkja",
-            "NOTENABLEDTITLE": "Masternodes ekki virkt",
-            "NOTENABLEDINSTR": "Til að keyra masternode þarftu að virkja masternodes með því að setja masternode = 1 og stilla 'masternodeprivkey' og 'masternodeaddr' breytur í metrix.conf skránum þínum.",
             "STARTBUTTON": "Byrjaðu á staðnum",
             "STARTALIASBUTTON": "Byrja Alias",
-            "STARTALLBUTTON": "Byrja Allt"
+            "STARTALLBUTTON": "Byrja Allt",
+            "NOMASTERNODES": "Þú ert ekki með nein masternodes",
+            "NOMNOUTPUTS": "Engin framleiðsla Masternode fannst. Til að keyra staðbundna Masternode skaltu senda nákvæmlega 2.000.000 mynt á netfangið þitt á Masternode og bíða eftir 15 staðfestingum.",
+            "STOPBUTTON": "Hættu Local",
+            "STOPALIASBUTTON": "Hættu Alias",
+            "ADDREMOTE": "Bættu við ytri masternode",
+            "REMOVEMN": "Fjarlægðu Masternode",
+            "ADDLOCAL": "Setja upp Local Masternode",
+            "DISABLELOCAL": "Slökkva á staðbundnum masternode",
+            "LOCALNOTRUNNING": "Local Masternode virkar ekki",
+            "REMOTENOTRUNNING": "Ytri masternode fannst ekki"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Skráðu skilaboð",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Yfirlit",
             "TRANSACTIONSTAB": "Viðskipti",
             "ADDRESSTABS": "Heimilisföng"
+        },
+        "CURRENCY": {
+            "TITLE": "Veldu Skoða mynt"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Metrix Core sem hefur valdið því að það lýkur. Það er mælt með því að athuga debug.log skrána þína fyrir vandamál.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Endurræstu viðskiptavini",
             "CLIENTINVALIDCONFIGTITLE": "Ógildur metrix.conf stillingar",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf þinn hefur ógildan masternode skipulag sem veldur því að Metrix Core hættir strax. Vinsamlegast athugaðu þessa skrá."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf þinn hefur ógildan masternode skipulag sem veldur því að Metrix Core hættir strax. Vinsamlegast athugaðu þessa skrá.",
+            "ADDREMOTEMNTITLE": "Bættu við ytri masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: höfn",
+            "ADDREMOTEMNKEY": "Masternode einkalykill",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx vísitalan"
         },
         "ADDRESSBOOK": {
             "TITLE": "Heimilisfangabók",
@@ -295,7 +312,8 @@
             "LOCALE": "Tungumál...",
             "RESTARTCORE": "Endurræstu Metrix Core",
             "EXIT": "Hætta",
-            "OPTIONS": "Valkostir..."
+            "OPTIONS": "Valkostir...",
+            "CURRENCIES": "Birta gjaldeyri..."
         },
         "ENCRYPT": {
             "TITLE": "Dulrita",
@@ -334,7 +352,9 @@
         "SORTBY": "Raða eftir",
         "SEARCH": "Leita",
         "FEE": "Gjald",
-        "ACCEPTBUTTON": "Samþykkja"
+        "ACCEPTBUTTON": "Samþykkja",
+        "CONFIRMED": "Staðfest",
+        "UNCONFIRMED": "Óstaðfest"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Öll inntak þurfa að minnsta kosti 1 staðfestingu áður en þau eru notuð.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Viðskipti afrituð á klemmuspjald",
         "TRANSACTIONOUTPUTTOOLARGE": "Eitt af því sem þú borgar fyrir upphæð er of stórt til að senda á öruggan hátt. Hámark er 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Breytingin þín er of stór til að senda örugglega. Hámark er 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Breytingin þín er of stór til að senda örugglega. Hámark er 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Stöðvar masternode...",
+        "FAILEDTOWRITECONFIG": "Vandamál kom upp við að skrifa skrána þína til metrix.conf. Athugaðu hvort skráin sé til og að Altitude hafi skrifleyfi.",
+        "NOPUBLICUP": "Engin opinber IP-tala fannst. Athugaðu nettenginguna þína og endurræstu Altitude.",
+        "CONFIGURINGLOCALMN": "Stillir staðbundna Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Nokkrar sekúndur",
@@ -386,5 +410,50 @@
         "MONTHS": "mánuðum",
         "AYEAR": "Ár",
         "YEARS": "ár"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Móttekin mynt",
+        "NEWTRANSACTION_TITLE_STAKE": "Móttekið hlutverk",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Móttekið Masternode Reward"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "Apríl",
+        "MAY": "MÁ",
+        "JUN": "Júní",
+        "JUL": "JÚL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OKT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Þú sendir",
+                "YOUGET": "Þú færð",
+                "MRXADDRESS": "Heimilisfang fylkis",
+                "SWAP": "Skipta um",
+                "SWAPADDRESSES": "Skipta um heimilisfang",
+                "BTCADDRESS": "Heimilisfang BTC",
+                "INFOLINE1": "Þegar þú ert kominn með BTC-vistfang verður einhver BTC sendur á það heimilisfang sjálfkrafa skipt út fyrir MRX yfir á tilnefnda MRX heimilisfangið þitt.",
+                "INFOLINE2-1": "Venjulega eru viðskipti hreinsuð innan klukkustundar eftir Bitcoin tímatökunum. Við getum samþykkt fiat fyrir",
+                "INFOLINE2-2": "þátttökulönd",
+                "INFOLINE2-3": "Þessu verður breytt í BTC fyrst síðan MRX.",
+                "INFOLINE3": "Þegar BTC-innborgunin hefur verið ræst muntu fá MRXinn þinn á tilnefnda netfangið þitt.",
+                "INFOLINE4": "Fyrir frekari upplýsingar heimsækja",
+                "FIATSWAPSELECTED": "Þú verður vísað til Buy.Metrixcoin.com til að ljúka þessum viðskiptum"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Býr til skipti heimilisfang...",
+            "ALREADYHAVEADDRESS": "Þú ert nú þegar með BTC-heimilisfang fyrir þetta heimilisfang",
+            "SWAPUSDMIN": "Lágmarks USD fjárhæð skiptaskipta er $ 50",
+            "SWAPUSDMAX": "Hámarks USD fjárhæð skiptaskipta er $ 3000",
+            "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang"
+        }
     }
 }

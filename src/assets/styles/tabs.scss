@@ -2,17 +2,19 @@
     margin-bottom: 20px;
     position: fixed;
     padding-left: 20px;
-    left: 250px;
+    left: $sidebar-padding;
     right: 0;
     background: $background-primary;
     z-index: 10;
     margin-top: -10px;
+
     button {
         background: none;
         color: darken($color: $font-primary, $amount: 40%);
         border: none;
         padding: 10px;
         cursor: pointer;
+
         &:hover,
         &:active,
         &:focus {
@@ -20,27 +22,31 @@
             border-bottom: 1px solid darken($color: $font-primary, $amount: 20%);
             padding-bottom: 9px;
         }
+
         &.active {
             color: $font-primary;
             border-bottom: 1px solid $font-primary;
             padding-bottom: 9px;
         }
     }
+
     &.not-fixed {
         position: initial;
         margin-top: 0;
         padding: 0;
         border-bottom: 1px solid #999999;
+
         &::after {
             position: initial
         }
     }
+
     &::after {
         position: fixed;
         content: '';
         border-bottom: 1px solid #999999;
         top: 66px;
-        left: 270px;
+        left: $sidebar-padding+20px;
         right: 20px;
     }
 }

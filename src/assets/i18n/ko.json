@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "주소",
             "ENABLED": "사용",
-            "NOTENABLEDTITLE": "Masternodes가 활성화되지 않았습니다.",
-            "NOTENABLEDINSTR": "masternode를 실행하려면 masternode를 1로 설정하고 metrix.conf 파일에서 'masternodeprivkey'및 'masternodeaddr'변수를 구성하여 masternode를 활성화해야합니다.",
             "STARTBUTTON": "로컬 시작",
             "STARTALIASBUTTON": "별칭 시작",
-            "STARTALLBUTTON": "모두 시작"
+            "STARTALLBUTTON": "모두 시작",
+            "NOMASTERNODES": "너는 어떤 masternodes도 가지고 있지 않다.",
+            "NOMNOUTPUTS": "Masternode 출력이 없습니다. 로컬 Masternode를 실행하려면 Masternode 주소로 정확히 2,000,000 개의 동전을 보내고 15 회의 확인을 기다려야합니다.",
+            "STOPBUTTON": "지역 중지",
+            "STOPALIASBUTTON": "별칭 중지",
+            "ADDREMOTE": "원격 마스터 노드 추가",
+            "REMOVEMN": "Masternode를 제거하십시오",
+            "ADDLOCAL": "로컬 마스터 노드 설정",
+            "DISABLELOCAL": "로컬 마스터 노드 해제",
+            "LOCALNOTRUNNING": "로컬 마스 터 노드가 실행되지 않음",
+            "REMOTENOTRUNNING": "원격 마스터 노드를 찾을 수 없음"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "메시지 서명",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "개요",
             "TRANSACTIONSTAB": "업무",
             "ADDRESSTABS": "구애"
+        },
+        "CURRENCY": {
+            "TITLE": "통화 표시 선택"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core가 종료되는 문제가있었습니다. debug.log 파일에서 문제점을 확인하는 것이 좋습니다.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "클라이언트 다시 시작",
             "CLIENTINVALIDCONFIGTITLE": "잘못된 metrix.conf 구성",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오.",
+            "ADDREMOTEMNTITLE": "원격 마스터 노드 추가",
+            "ADDREMOTEMNALIAS": "Masternode 별칭",
+            "ADDREMOTEMNIP": "Masternode IP : 항구",
+            "ADDREMOTEMNKEY": "Masternode 개인 키",
+            "ADDREMOTEMNTXHASH": "Masternode Trx 해시",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx 색인"
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -295,7 +312,8 @@
             "LOCALE": "언어...",
             "RESTARTCORE": "Metrix Core 다시 시작",
             "EXIT": "출구",
-            "OPTIONS": "옵션..."
+            "OPTIONS": "옵션...",
+            "CURRENCIES": "통화 표시..."
         },
         "ENCRYPT": {
             "TITLE": "암호화",
@@ -334,7 +352,9 @@
         "SORTBY": "정렬 기준",
         "SEARCH": "수색",
         "FEE": "보수",
-        "ACCEPTBUTTON": "동의"
+        "ACCEPTBUTTON": "동의",
+        "CONFIRMED": "확인 됨",
+        "UNCONFIRMED": "확인되지 않은"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core 초기화 중...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "모든 입력은 지출하기 전에 최소한 1 번 확인해야합니다.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "클립 보드에 복사 된 트랜잭션",
         "TRANSACTIONOUTPUTTOOLARGE": "금액에 대한 지불 중 하나가 너무 커서 안전하게 보낼 수 없습니다. 최대 값은 90,071,992.54740992입니다.",
-        "TRANSACTIONCHANGETOOLARGE": "변경 사항이 너무 커서 안전하게 보낼 수 없습니다. 최대 값은 90,071,992.54740992입니다."
+        "TRANSACTIONCHANGETOOLARGE": "변경 사항이 너무 커서 안전하게 보낼 수 없습니다. 최대 값은 90,071,992.54740992입니다.",
+        "STOPPINGMASTERNODE": "masternode 중지 중...",
+        "FAILEDTOWRITECONFIG": "metrix.conf 파일에 쓰는 중 문제가 발생했습니다. 파일이 존재하고 고도에 쓰기 권한이 있는지 확인하십시오.",
+        "NOPUBLICUP": "공인 IP 주소를 찾을 수 없습니다. 인터넷 연결을 확인하고 고도를 다시 시작하십시오.",
+        "CONFIGURINGLOCALMN": "로컬 마스터 노드 구성 중..."
     },
     "TIME": {
         "AFEWSECONDS": "몇 초",
@@ -386,5 +410,50 @@
         "MONTHS": "개월",
         "AYEAR": "년",
         "YEARS": "연령"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "동전 수령",
+        "NEWTRANSACTION_TITLE_STAKE": "스테이크를 받았다.",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode Reward를 받았다."
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "3 월",
+        "APR": "4 월",
+        "MAY": "할 수있다",
+        "JUN": "JUN",
+        "JUL": "7 월",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "11 월",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "당신은 보내기",
+                "YOUGET": "당신은 얻는다.",
+                "MRXADDRESS": "메트릭스 주소",
+                "SWAP": "교환",
+                "SWAPADDRESSES": "주소 스왑",
+                "BTCADDRESS": "BTC 주소",
+                "INFOLINE1": "BTC 입금 주소가 있으면 해당 주소로 전송 된 모든 BTC가 자동으로 MRX에 대해 지정된 MRX 주소로 스왑됩니다.",
+                "INFOLINE2-1": "트랜잭션은 일반적으로 Bitcoin 블록 시간에 따라 1 시간 내에 해제됩니다. 우리는",
+                "INFOLINE2-2": "참가국",
+                "INFOLINE2-3": "이것은 BTC로 변환 된 다음 MRX로 변환됩니다.",
+                "INFOLINE3": "BTC 입금이 완료되면 MRX가 귀하의 지명 주소로 전송됩니다.",
+                "INFOLINE4": "자세한 내용은 다음을 방문하십시오.",
+                "FIATSWAPSELECTED": "이 거래를 완료하려면 Buy.Metrixcoin.com으로 리디렉션됩니다."
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "스왑 주소 생성 중...",
+            "ALREADYHAVEADDRESS": "이 주소에 대한 BTC 주소가 이미 있습니다.",
+            "SWAPUSDMIN": "최소 USD 스왑 금액은 $ 50입니다.",
+            "SWAPUSDMAX": "최대 USD 스왑 금액은 $ 3000입니다.",
+            "NOADDRESS": "Metrix 주소를 입력하지 않았습니다."
+        }
     }
 }

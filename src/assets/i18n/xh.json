@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Idilesi",
             "ENABLED": "Inikwe amandla",
-            "NOTENABLEDTITLE": "Amasternodes ayenziwa",
-            "NOTENABLEDINSTR": "Ukuqhuba i-masternode kuya kufuneka ubenze ama-masternode ngokubeka i-masternode = 1 kwaye ulungiselele 'masternodeprivkey' kunye ne 'masternodeaddr' eziguqukayo kwifayili yakho yemetrix.conf.",
             "STARTBUTTON": "Qala kwiNgingqi",
             "STARTALIASBUTTON": "Qala iAlias",
-            "STARTALLBUTTON": "Qala konke"
+            "STARTALLBUTTON": "Qala konke",
+            "NOMASTERNODES": "Awunazo naziphi na iimasode",
+            "NOMNOUTPUTS": "Akukho ziphumo zeMasternode ezifunyenweyo. Ukuqhuba i-Masternode yengingqi uthumele ngqo i-2000, 000 yeedola kwiidilesi zakho zeMasternode kwaye ulinde iziqinisekiso ezili-15.",
+            "STOPBUTTON": "Yimisa indawo",
+            "STOPALIASBUTTON": "Misa Alias",
+            "ADDREMOTE": "Yongeza i-Masternode ekude",
+            "REMOVEMN": "Susa iMasternode",
+            "ADDLOCAL": "Cwangcisa iMasternode yaseKhaya",
+            "DISABLELOCAL": "Khubaza iMasternode yaseKhaya",
+            "LOCALNOTRUNNING": "I-Masternode yaseKhaya ayihambi",
+            "REMOTENOTRUNNING": "Masternode ekude ayifumanekanga"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Umyalezo Wezandla",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Sibanzi",
             "TRANSACTIONSTAB": "Intsebenzo",
             "ADDRESSTABS": "I dilesi"
+        },
+        "CURRENCY": {
+            "TITLE": "Khetha uMboniso weZimali"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kukho ingxaki ngeMetrix Core eyabangela ukuba iphelise. Kuncoma ukujonga ifayile yakho ye debug.log kwimicimbi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qalisa kwakhona iKlayenti",
             "CLIENTINVALIDCONFIGTITLE": "Ukulungiswa kwemetrix.conf engavumelekanga",
-            "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho ine-setup yamasternode engavumelekanga eya kwenza uMetrix Core ukuba aphume ngokukhawuleza. Nceda khangela le fayile."
+            "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho ine-setup yamasternode engavumelekanga eya kwenza uMetrix Core ukuba aphume ngokukhawuleza. Nceda khangela le fayile.",
+            "ADDREMOTEMNTITLE": "Yongeza i-Masternode ekude",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: IPort",
+            "ADDREMOTEMNKEY": "Isitshixo sabucala seMasternode",
+            "ADDREMOTEMNTXHASH": "I-Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "I-Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Incwadi yedilesi",
@@ -295,7 +312,8 @@
             "LOCALE": "Ulwimi...",
             "RESTARTCORE": "Qala kabusha uMetrix Core",
             "EXIT": "Phuma",
-            "OPTIONS": "Khetha..."
+            "OPTIONS": "Khetha...",
+            "CURRENCIES": "Imali esibonisa..."
         },
         "ENCRYPT": {
             "TITLE": "Bhalisa",
@@ -334,7 +352,9 @@
         "SORTBY": "Misa nge",
         "SEARCH": "Usesho",
         "FEE": "Imali",
-        "ACCEPTBUTTON": "Yamkela"
+        "ACCEPTBUTTON": "Yamkela",
+        "CONFIRMED": "Ndiqinisekisiwe",
+        "UNCONFIRMED": "Andiqinisekanga"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Ukuqalisa uMetrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Zonke iziphumo zifuna okungenani 1 ukuqinisekiswa ngaphambi kokuchitha.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Iintengiselwano zikopishwe kwi-clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Omnye wakho wokuhlawula ukuya kumaxabiso mkhulu kakhulu ukuthumela ngokukhuselekileyo. Ubuninzi buyi-90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Utshintsho lwakho lukhulu kakhulu ukuthumela ngokuphepha. Ubuninzi buyi-90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Utshintsho lwakho lukhulu kakhulu ukuthumela ngokuphepha. Ubuninzi buyi-90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Imisa imasodeode...",
+        "FAILEDTOWRITECONFIG": "Kwakukho ingxaki yokubhala kwifayile yakho ye-metrix.conf. Jonga ifayile ekhoyo kunye nokuba Altitude ineemvume zokubhala.",
+        "NOPUBLICUP": "Akukho dilesi ye-IP kawonkewonke efunyenweyo. Jonga uqhagamshelo lwakho lweintanethi kwaye uqalise kwakhona Altitude.",
+        "CONFIGURINGLOCALMN": "Iqulunqa iMasternode yendawo..."
     },
     "TIME": {
         "AFEWSECONDS": "Imizuzwana embalwa",
@@ -386,5 +410,50 @@
         "MONTHS": "iinyanga",
         "AYEAR": "Unyaka",
         "YEARS": "minyaka"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Iingxowa-mali ezifunyenweyo",
+        "NEWTRANSACTION_TITLE_STAKE": "I-Stake efunyenwe",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Umvuzo weMasternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "I-FEB",
+        "MAR": "Matshi",
+        "APR": "APR",
+        "MAY": "UCANZIBE",
+        "JUN": "Jun",
+        "JUL": "JUL",
+        "AUG": "I-AUG",
+        "SEP": "SEP",
+        "OCT": "I-OCT",
+        "NOV": "NOV",
+        "DEC": "I-DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Uyathumela",
+                "YOUGET": "Ufumana",
+                "MRXADDRESS": "Idilesi ye-Metrix",
+                "SWAP": "Ukutshintsha",
+                "SWAPADDRESSES": "Ukutshintsha iidilesi",
+                "BTCADDRESS": "Idilesi ye-BTC",
+                "INFOLINE1": "Nje ukuba ube nedilesi yedipozithi ye-BTC nayiphi na i-BTC ethunyelwe kwidilesi iya kutshintshelwa kwi-MRX kwidilesi yakho ye-MRX.",
+                "INFOLINE2-1": "Iitransekshini zihlala zicacile ngaphakathi iyure kuxhomekeke kumaxesha ebhloko yeBitcoin. Singayamkela i-fiat ye",
+                "INFOLINE2-2": "amazwe athatha inxaxheba",
+                "INFOLINE2-3": "Oku kuyakuguqulwa kube yi-BTC kuqala emva koko i-MRX.",
+                "INFOLINE3": "Nje ukuba idipozithi yakho ye-BTC icace, uyakuyifumana i-MRX kwidilesi yakho.",
+                "INFOLINE4": "Ngolwazi oluninzi undwendwela",
+                "FIATSWAPSELECTED": "Uya kuthunyelwa kwi-Buy.Metrixcoin.com ukugqiba lo msebenzi"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Yenza idilesi yokutshintsha...",
+            "ALREADYHAVEADDRESS": "Sele unedilesi ye-BTC kule dilesi",
+            "SWAPUSDMIN": "Inani elincinci lokutshintsha kwe-USD yi- $ 50",
+            "SWAPUSDMAX": "Elona nani liphezulu lokutshintsha kwe-USD yi- $ 3000",
+            "NOADDRESS": "Khange ufake idilesi yeMetrix"
+        }
     }
 }

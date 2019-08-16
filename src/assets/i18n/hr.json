@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresa",
             "ENABLED": "Omogućeno",
-            "NOTENABLEDTITLE": "Masternodes nije omogućen",
-            "NOTENABLEDINSTR": "Da biste pokrenuli masternode morat ćete omogućiti masternodes postavljanjem masternode = 1 i konfiguriranjem 'masternodeprivkey' i 'masternodeaddr' varijabli u datoteci metrix.conf.",
             "STARTBUTTON": "Pokreni lokalno",
             "STARTALIASBUTTON": "Pokreni Alias",
-            "STARTALLBUTTON": "Pokreni sve"
+            "STARTALLBUTTON": "Pokreni sve",
+            "NOMASTERNODES": "Nemate nikakve masternodes",
+            "NOMNOUTPUTS": "Nema pronađenih Masternode izlaza. Da biste pokrenuli lokalni Masternode poslati točno 2.000.000 novčića na vašu Masternode adresu i pričekajte 15 potvrda.",
+            "STOPBUTTON": "Zaustavite Lokalno",
+            "STOPALIASBUTTON": "Zaustavite Alias",
+            "ADDREMOTE": "Dodavanje udaljene masternode",
+            "REMOVEMN": "Ukloni Masternode",
+            "ADDLOCAL": "Postavite Lokalni Masternode",
+            "DISABLELOCAL": "Onemogući lokalnu masternode",
+            "LOCALNOTRUNNING": "Lokalna masternode se ne izvodi",
+            "REMOTENOTRUNNING": "Udaljeni masternode nije pronađen"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Potpišite poruku",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Pregled",
             "TRANSACTIONSTAB": "Transakcije",
             "ADDRESSTABS": "adrese"
+        },
+        "CURRENCY": {
+            "TITLE": "Odaberite Prikaz valute"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Došlo je do problema s Metrix Core koja je dovela do prekida. Preporučujemo da provjerite datoteku debug.log za probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ponovno pokreni klijenta",
             "CLIENTINVALIDCONFIGTITLE": "Nevažeća konfiguracija metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima nevažeće masternode postavke koje će uzrokovati da Metrix Core odmah izađe. Provjerite ovu datoteku."
+            "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima nevažeće masternode postavke koje će uzrokovati da Metrix Core odmah izađe. Provjerite ovu datoteku.",
+            "ADDREMOTEMNTITLE": "Dodavanje udaljene masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode privatni ključ",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresar",
@@ -295,7 +312,8 @@
             "LOCALE": "Jezik...",
             "RESTARTCORE": "Ponovno pokrenite Metrix Core",
             "EXIT": "Izlaz",
-            "OPTIONS": "Opcije..."
+            "OPTIONS": "Opcije...",
+            "CURRENCIES": "Prikaz valute..."
         },
         "ENCRYPT": {
             "TITLE": "Šifriranje",
@@ -334,7 +352,9 @@
         "SORTBY": "Poredaj po",
         "SEARCH": "traži",
         "FEE": "Pristojba",
-        "ACCEPTBUTTON": "Prihvatiti"
+        "ACCEPTBUTTON": "Prihvatiti",
+        "CONFIRMED": "potvrđen",
+        "UNCONFIRMED": "Nepotvrđen"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicijalizacija Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Svi ulazi zahtijevaju najmanje 1 potvrdu prije potrošnje.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcije kopirane u međuspremnik",
         "TRANSACTIONOUTPUTTOOLARGE": "Jedan od vaših iznosa za plaćanje prevelik je za sigurno slanje. Maksimum je 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Promjena je prevelika za sigurno slanje. Maksimum je 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Promjena je prevelika za sigurno slanje. Maksimum je 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Zaustavljanje masternode...",
+        "FAILEDTOWRITECONFIG": "Došlo je do problema prilikom pisanja u vašu datoteku metrix.conf. Provjerite postoji li datoteka i ima li Nadmorska visina dozvole za pisanje.",
+        "NOPUBLICUP": "Nije pronađena javna IP adresa. Provjerite internetsku vezu i ponovno pokrenite Altitude.",
+        "CONFIGURINGLOCALMN": "Konfiguriranje lokalne Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Nekoliko sekundi",
@@ -386,5 +410,50 @@
         "MONTHS": "mjeseci",
         "AYEAR": "Godina",
         "YEARS": "godine"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Primljeni kovanice",
+        "NEWTRANSACTION_TITLE_STAKE": "Primljeni ulog",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Primljena nagrada za Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "veljače",
+        "MAR": "MAR",
+        "APR": "travnja",
+        "MAY": "SVIBANJ",
+        "JUN": "lipnja",
+        "JUL": "srpnja",
+        "AUG": "kolovoz",
+        "SEP": "rujna",
+        "OCT": "listopada",
+        "NOV": "studeni",
+        "DEC": "prosinca"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Šaljete",
+                "YOUGET": "Dobivate",
+                "MRXADDRESS": "Metrička adresa",
+                "SWAP": "razmjena",
+                "SWAPADDRESSES": "Zamijeni adrese",
+                "BTCADDRESS": "BTC adresa",
+                "INFOLINE1": "Jednom kada dobijete BTC adresu depozita, bilo koji BTC koji se pošalje na tu adresu automatski će se zamijeniti za MRX na vašu nominiranu MRX adresu.",
+                "INFOLINE2-1": "Transakcije su obično jasne unutar jednog sata, ovisno o vremenu blokade Bitcoin. Možemo prihvatiti fiat za",
+                "INFOLINE2-2": "zemlje sudionice",
+                "INFOLINE2-3": "Ovo će se prvo pretvoriti u BTC, a zatim MRX.",
+                "INFOLINE3": "Nakon što očistite vaš BTC depozit, primit ćete MRX na nominiranu adresu.",
+                "INFOLINE4": "Za više informacija posjetite",
+                "FIATSWAPSELECTED": "Bit ćete preusmjereni na Buy.Metrixcoin.com za dovršetak ove transakcije"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generiranje zamjenske adrese...",
+            "ALREADYHAVEADDRESS": "Već imate BTC adresu za tu adresu",
+            "SWAPUSDMIN": "Minimalni iznos swapa u USD je 50 USD",
+            "SWAPUSDMAX": "Maksimalni iznos swapa u USD je 3000 USD",
+            "NOADDRESS": "Niste unijeli Metrix adresu"
+        }
     }
 }

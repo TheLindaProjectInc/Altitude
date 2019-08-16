@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Wāina",
             "ENABLED": "Hoʻonāʻia",
-            "NOTENABLEDTITLE": "ʻAʻole i hoʻokūʻia nā Masternodes",
-            "NOTENABLEDINSTR": "No ka holoʻana i kahi masternode e pono aiʻoe e kōkua i nā masternodes ma ka hoʻonohonohoʻana i ka masternode = 1 a me ka hoʻonohonoho i nā 'masternodeprivkey' a 'masternodeaddr' hoʻololi i kāu waihona metrix.conf.",
             "STARTBUTTON": "E hoʻomaka i ka waena",
             "STARTALIASBUTTON": "E hoʻomaka i kaʻAia",
-            "STARTALLBUTTON": "Hoʻomaka Ka hoʻomaka"
+            "STARTALLBUTTON": "Hoʻomaka Ka hoʻomaka",
+            "NOMASTERNODES": "ʻAʻohe āu mana",
+            "NOMNOUTPUTS": "ʻAʻole loaʻa nā pūnaewele Masternode. No ka holoʻana i kahi Masternode o ka'āina e hoʻouna aku i nā'āpana 2,000,000 i kāu hale pule Masternode ae kali i 15 mau hōʻoia.",
+            "STOPBUTTON": "Kāpae Kele",
+            "STOPALIASBUTTON": "Kāohi i'Alia",
+            "ADDREMOTE": "Hoʻokomo i ka Hale Kūʻai",
+            "REMOVEMN": "Wehe i ka Halepule",
+            "ADDLOCAL": "E hoʻonohonoho i ka Hale Kūkulu Kūloko",
+            "DISABLELOCAL": "Hoʻohemo i ka Masternode Local",
+            "LOCALNOTRUNNING": "Wahi Kū i ka Hale Kūloko",
+            "REMOTENOTRUNNING": "ʻAʻole i loa ʻia ka Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Kākau memo",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Hōʻike Overview",
             "TRANSACTIONSTAB": "Nā hana",
             "ADDRESSTABS": "Helu wahi"
+        },
+        "CURRENCY": {
+            "TITLE": "E koho i ke kālā hōʻike"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ua pilikia ka Metrix Core i hoʻomaha ai. He'ōlelo manaʻo e nānā i kāu file debug.log no nā pilikia.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "E hoʻomaka hou i ka mea kūʻai",
             "CLIENTINVALIDCONFIGTITLE": "ʻO metrix.conf Hōʻokoʻa",
-            "CLIENTINVALIDCONFIGINFO": "ʻO kāu metrix.conf kahi hoʻonohonoho masternode kūponoʻole e hiki ai iā Metrix Core ke hele koke. Eʻoluʻolu e nānā i kēia faila."
+            "CLIENTINVALIDCONFIGINFO": "ʻO kāu metrix.conf kahi hoʻonohonoho masternode kūponoʻole e hiki ai iā Metrix Core ke hele koke. Eʻoluʻolu e nānā i kēia faila.",
+            "ADDREMOTEMNTITLE": "Hoʻokomo i ka Hale Kūʻai",
+            "ADDREMOTEMNALIAS": "ʻO'AliaʻAnakala",
+            "ADDREMOTEMNIP": "Kapiho IP: Kaona",
+            "ADDREMOTEMNKEY": "Kelehua Palekana Masternode",
+            "ADDREMOTEMNTXHASH": "ʻO Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "ʻO ka papa inoa Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Buke Helu",
@@ -295,7 +312,8 @@
             "LOCALE": "'Ōlelo...",
             "RESTARTCORE": "E hoʻohou hou i ka Metrix Core",
             "EXIT": "Hōʻalo",
-            "OPTIONS": "Nā koho..."
+            "OPTIONS": "Nā koho...",
+            "CURRENCIES": "Nā Hōʻike Hōʻikeʻike..."
         },
         "ENCRYPT": {
             "TITLE": "Hoʻopunipuni",
@@ -334,7 +352,9 @@
         "SORTBY": "Hoʻokaʻina Ma",
         "SEARCH": "Huli",
         "FEE": "Kāleʻa",
-        "ACCEPTBUTTON": "Eʻae"
+        "ACCEPTBUTTON": "Eʻae",
+        "CONFIRMED": "Ua hōʻoia",
+        "UNCONFIRMED": "ʻAʻole i hōʻoia"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Hoʻomanaʻoʻana iā Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Pono nā mea e komo ai ma kahi o ka hōʻoia 1 ma mua o ka hoʻolimalimaʻana.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nā kope i kopeʻia i ka papa palani",
         "TRANSACTIONOUTPUTTOOLARGE": "ʻO kekahi o kāu uku i ka nui he nui ka hoʻounaʻana me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ua nui loa kāu loli e hoʻouna aku me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ua nui loa kāu loli e hoʻouna aku me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Ke kū nei masternode...",
+        "FAILEDTOWRITECONFIG": "Ua pilikia ka kākauʻana i kāu kōnae metrix.conf. E hōʻoia i ka waihona o ka waihona a aiaʻo Altitude i nāʻae palapala.",
+        "NOPUBLICUP": "ʻAʻohe IP IP i loaʻa. E hoʻopaʻa i kāu pūnaewele pūnaewele a hoʻihoʻi hou i ka Altitude.",
+        "CONFIGURINGLOCALMN": "Hoʻonohonoho i ka Hale Kūkulu Kūloko..."
     },
     "TIME": {
         "AFEWSECONDS": "Kekona kekona",
@@ -386,5 +410,50 @@
         "MONTHS": "mahina",
         "AYEAR": "He makahiki",
         "YEARS": "makahiki"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Loaʻa i nā Mino",
+        "NEWTRANSACTION_TITLE_STAKE": "Loaʻa iā Moku",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Loaʻa iā ia ka uku o nā mākua"
+    },
+    "MONTH": {
+        "JAN": "ʻO IAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "'Apā",
+        "MAY": "MEI",
+        "JUN": "IUNI",
+        "JUL": "IUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Kau He kii",
+                "YOUGET": "Oukou loaa",
+                "MRXADDRESS": "Pūnaewele Metrix",
+                "SWAP": "Kaue",
+                "SWAPADDRESSES": "Palapala Uku Pūnaewele",
+                "BTCADDRESS": "ʻĀlelo BTC",
+                "INFOLINE1": "Ke loaʻa kahi ʻōlelo hoʻokipa BTC no kēlā me kēia BTC i hoʻouna ʻia i kēlā māka e hele koke aku ia no kahi MRX i loko o kāu leka uila MRX i koho ʻia.",
+                "INFOLINE2-1": "Maʻa mau o nā hoʻololi i loko o ka hola ma kahi o ka manawa poloka Bitcoin. Hiki iā mākou ke hoʻomaopopo i ka fiat no",
+                "INFOLINE2-2": "nā ʻāina hui",
+                "INFOLINE2-3": "Hoʻohuli ʻia kēia ma BTC ma mua o MRX.",
+                "INFOLINE3": "Ke wehe nei kāu palapala kūʻai BTC e loaʻa iā ʻoe ka MRX i loko o kahi helu i koho ʻia.",
+                "INFOLINE4": "No ka ʻike hou aku",
+                "FIATSWAPSELECTED": "E hoʻohuli ʻia ʻoe e kūʻai iā Buy.Metrixcoin.com e hoʻopau i kēia kālepa"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ka Hoʻouku ʻana i kahi Wae Tī...",
+            "ALREADYHAVEADDRESS": "Ua loaʻa iā ʻoe kahi leka uila BTC no kēia henua",
+            "SWAPUSDMIN": "Ka uku $ swap uku he $ 50",
+            "SWAPUSDMAX": "Ka nui $ swap ka nui o ke kālā he $ 3000",
+            "NOADDRESS": "ʻAʻole ʻoe i hoʻokomo i kahi ʻōlelo Metrix"
+        }
     }
 }

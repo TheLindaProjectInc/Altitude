@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "oratio",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes non enabled",
-            "NOTENABLEDINSTR": "Ad currere necesse est ut enable masternode masternodes per Vestibulum et profecta masternode = I, masternodeprivkey 'et' masternodeaddr 'in variables metrix.conf lima.",
             "STARTBUTTON": "Locus initio",
             "STARTALIASBUTTON": "alias initium",
-            "STARTALLBUTTON": "omnes incipere"
+            "STARTALLBUTTON": "omnes incipere",
+            "NOMASTERNODES": "Et non est ulla masternodes",
+            "NOMNOUTPUTS": "Masternode outputs non inveni. Ut run a locus Masternode prorsus 2,000,000 mittere nummos tuum expectabo, et inscriptio Masternode XV confirmat.",
+            "STOPBUTTON": "Locus subsisto",
+            "STOPALIASBUTTON": "Alias subsisto",
+            "ADDREMOTE": "Longinquus addere Masternode",
+            "REMOVEMN": "Remove Masternode",
+            "ADDLOCAL": "Locus setup Masternode",
+            "DISABLELOCAL": "Locus disable Masternode",
+            "LOCALNOTRUNNING": "Locus Masternode Non Cursor",
+            "REMOTENOTRUNNING": "Non Inventum remotis Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Nuntius",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Overview",
             "TRANSACTIONSTAB": "transactions",
             "ADDRESSTABS": "oratio"
+        },
+        "CURRENCY": {
+            "TITLE": "Lego Display Currency"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Difficultas in nomine Maria quae fecit non enim ut secum Core. Is est suadeo reprehendo vestri lima pro debug.log proventus.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Sileo Client",
             "CLIENTINVALIDCONFIGTITLE": "Aliquam metrix.conf configurationis",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf tuus habet irritum masternode setup quod Petrus de causa quispiam egredi statim Core. Placere reprehendo is lima."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf tuus habet irritum masternode setup quod Petrus de causa quispiam egredi statim Core. Placere reprehendo is lima.",
+            "ADDREMOTEMNTITLE": "Longinquus addere Masternode",
+            "ADDREMOTEMNALIAS": "Alias Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Portus",
+            "ADDREMOTEMNKEY": "Secretum Key Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode TRX detrahe Cito",
+            "ADDREMOTEMNTXINDEX": "Index Masternode TRX"
         },
         "ADDRESSBOOK": {
             "TITLE": "Inscriptio libro",
@@ -295,7 +312,8 @@
             "LOCALE": "Lingua...",
             "RESTARTCORE": "Petrus autem Core sileo",
             "EXIT": "exitus",
-            "OPTIONS": "Options..."
+            "OPTIONS": "Options...",
+            "CURRENCIES": "Display Currency..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Sort By",
         "SEARCH": "Quaerere",
         "FEE": "fee",
-        "ACCEPTBUTTON": "suscipe"
+        "ACCEPTBUTTON": "suscipe",
+        "CONFIRMED": "confirmatus",
+        "UNCONFIRMED": "non confirmatum:"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Core... Marcus initialising",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Initibus exitibusque eget ante omnia quidem impendio I confirmationis.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Copied transactions ut clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Unus e vobis persequetur stipendium ad amounts magna est nimis tutum mittere. 90,071,992.54740992 maximum est.",
-        "TRANSACTIONCHANGETOOLARGE": "Tuto tibi magna mutatio mittere. 90,071,992.54740992 maximum est."
+        "TRANSACTIONCHANGETOOLARGE": "Tuto tibi magna mutatio mittere. 90,071,992.54740992 maximum est.",
+        "STOPPINGMASTERNODE": "Restitit masternode...",
+        "FAILEDTOWRITECONFIG": "Difficultas autem scribo vobis metrix.conf lima. Reprehendo tabella est existit et Altitude write permissions.",
+        "NOPUBLICUP": "No Public IP oratio inventus est. Reprehendo Penitus iunctio vestri, et sileo Altitude.",
+        "CONFIGURINGLOCALMN": "Vestibulum Masternode loci..."
     },
     "TIME": {
         "AFEWSECONDS": "A paucis seconds",
@@ -386,5 +410,50 @@
         "MONTHS": "menses",
         "AYEAR": "A anno,",
         "YEARS": "annorum"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "accepistis Coins",
+        "NEWTRANSACTION_TITLE_STAKE": "accepistis Sopor Aeternus",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Receperunt mercedem Masternode"
+    },
+    "MONTH": {
+        "JAN": "AUG",
+        "FEB": "MAR",
+        "MAR": "MAR",
+        "APR": "MAR",
+        "MAY": "LICET",
+        "JUN": "APR",
+        "JUL": "NOV",
+        "AUG": "OCT",
+        "SEP": "AUG",
+        "OCT": "AUG",
+        "NOV": "APR",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Vos mittere",
+                "YOUGET": "Capis",
+                "MRXADDRESS": "Oratio Metrix",
+                "SWAP": "PERMUTO",
+                "SWAPADDRESSES": "Oratio PERMUTO",
+                "BTCADDRESS": "BTC Oratio",
+                "INFOLINE1": "Cum habeas BTC deposit quid inscriptio electronica BTC ad illud adepto mos automatically ad MRX tela morbis nominatum MRX oratio tua.",
+                "INFOLINE2-1": "Nulla potest rerum in hora secundum temporum BitCoin scandalum. Fiat enim possumus accipere",
+                "INFOLINE2-2": "participating terris",
+                "INFOLINE2-3": "Hoc Vobis equidem convertetur in BTC primum ergo MRX.",
+                "INFOLINE3": "Cum BTC tua est et tua te purgavit youll accipere MRX placebat oratio tua.",
+                "INFOLINE4": "Pro magis notitia visita",
+                "FIATSWAPSELECTED": "Vos autem non modo re gesta recentibus redirected ad perficere autem Buy.Metrixcoin.com"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generating PERMUTO Oratio...",
+            "ALREADYHAVEADDRESS": "Iam in BTC inscriptio electronica inscriptio huius",
+            "SWAPUSDMIN": "Quod minimum USD $ L, est moles VERTO",
+            "SWAPUSDMAX": "VERTO maxime USD $ MMM moles est",
+            "NOADDRESS": "Non intrabit in Metrix inscriptio"
+        }
     }
 }

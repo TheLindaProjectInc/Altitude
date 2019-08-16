@@ -68,11 +68,19 @@
             "IP": "آئی پی",
             "ADDRESS": "ایڈریس",
             "ENABLED": "فعال",
-            "NOTENABLEDTITLE": "Masternodes فعال نہیں ہے",
-            "NOTENABLEDINSTR": "mrenchode کو چلانے کے لئے آپ کو mrenchode = 1 ترتیب دینے اور اپنے metrix.conf فائل میں 'masternodeprivkey' اور 'masternodeaddr' متغیر کو ترتیب دینے کے ذریعے masternodes کو فعال کرنے کی ضرورت ہوگی.",
             "STARTBUTTON": "مقامی شروع کریں",
             "STARTALIASBUTTON": "علی علیہ السلام شروع کریں",
-            "STARTALLBUTTON": "شروع کریں"
+            "STARTALLBUTTON": "شروع کریں",
+            "NOMASTERNODES": "آپ کے پاس کوئی masternodes نہیں ہے",
+            "NOMNOUTPUTS": "کوئی منڈڈو آؤٹ پٹ نہیں ملا. ایک مقامی Mrenchode کو چلانے کے لئے بالکل 2،000،000 سکے اپنے Mriotode ایڈریس پر بھیجیں اور 15 تصدیقات کا انتظار کریں.",
+            "STOPBUTTON": "مقامی بند کرو",
+            "STOPALIASBUTTON": "علی علیہ السلام کو روک دو",
+            "ADDREMOTE": "ریموٹ Modeode شامل کریں",
+            "REMOVEMN": "Modeode کو ہٹا دیں",
+            "ADDLOCAL": "سیٹ اپ مقامی Modeode",
+            "DISABLELOCAL": "مقامی Modeode کو غیر فعال کریں",
+            "LOCALNOTRUNNING": "مقامی Modeode نہیں چل رہا ہے",
+            "REMOTENOTRUNNING": "ریموٹ ماسٹرنوڈ نہیں ملا۔"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "سائن پیغام",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "جائزہ",
             "TRANSACTIONSTAB": "ٹرانسمیشن",
             "ADDRESSTABS": "ایڈریس"
+        },
+        "CURRENCY": {
+            "TITLE": "ڈسپلے کرنسی منتخب کریں"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "لنڈا کور کے ساتھ ایک مسئلہ تھا جس نے اسے ختم کرنے کی وجہ سے. اس مسئلے کے لئے اپنے debug.log فائل کو چیک کرنے کی سفارش کی جاتی ہے.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "کلائنٹ دوبارہ شروع کریں",
             "CLIENTINVALIDCONFIGTITLE": "غلط لنڈا. کنف ترتیب",
-            "CLIENTINVALIDCONFIGINFO": "آپ لنڈا.کونف میں ایک غلط مینڈوڈڈ سیٹ اپ ہے جس سے لنڈا کور فوری طور پر نکلنے کا سبب بن جائے گا. براہ مہربانی اس فائل کو چیک کریں."
+            "CLIENTINVALIDCONFIGINFO": "آپ لنڈا.کونف میں ایک غلط مینڈوڈڈ سیٹ اپ ہے جس سے لنڈا کور فوری طور پر نکلنے کا سبب بن جائے گا. براہ مہربانی اس فائل کو چیک کریں.",
+            "ADDREMOTEMNTITLE": "ریموٹ Modeode شامل کریں",
+            "ADDREMOTEMNALIAS": "Mrenchode ایلیا",
+            "ADDREMOTEMNIP": "Modeode IP: پورٹ",
+            "ADDREMOTEMNKEY": "Mrenchode نجی کلید",
+            "ADDREMOTEMNTXHASH": "Modeode Trx ہش",
+            "ADDREMOTEMNTXINDEX": "Modeode Trx انڈیکس"
         },
         "ADDRESSBOOK": {
             "TITLE": "ایڈریس بک",
@@ -295,7 +312,8 @@
             "LOCALE": "زبان...",
             "RESTARTCORE": "لنڈا کور دوبارہ شروع کریں",
             "EXIT": "باہر نکلیں",
-            "OPTIONS": "اختیارات..."
+            "OPTIONS": "اختیارات...",
+            "CURRENCIES": "ڈسپلے کرنسی..."
         },
         "ENCRYPT": {
             "TITLE": "خفیہ",
@@ -334,7 +352,9 @@
         "SORTBY": "کی طرف سے ترتیب دیں",
         "SEARCH": "تلاش کریں",
         "FEE": "فیس",
-        "ACCEPTBUTTON": "قبول کریں"
+        "ACCEPTBUTTON": "قبول کریں",
+        "CONFIRMED": "تصدیق شدہ",
+        "UNCONFIRMED": "ناممکن"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "لنڈا کور کی شروعات...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "خرچ کرنے سے پہلے تمام آدانوں کو کم از کم 1 تصدیق کی ضرورت ہوتی ہے.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ٹرانسمیشن کلپ بورڈ پر نقل کی گئی",
         "TRANSACTIONOUTPUTTOOLARGE": "آپ کی ادائیگی میں سے ایک رقم محفوظ طریقے سے بھیجنے کے لئے بہت بڑی ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے.",
-        "TRANSACTIONCHANGETOOLARGE": "محفوظ طریقے سے بھیجنے کیلئے آپ کا تبدیلی بہت بڑا ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے."
+        "TRANSACTIONCHANGETOOLARGE": "محفوظ طریقے سے بھیجنے کیلئے آپ کا تبدیلی بہت بڑا ہے. زیادہ سے زیادہ 90،071،992.54740992 ہے.",
+        "STOPPINGMASTERNODE": "modeode روکنے...",
+        "FAILEDTOWRITECONFIG": "آپ کے میٹرکس.conf فائل میں لکھنے میں ایک مسئلہ تھا. فائل کی موجودگی کی جانچ پڑتال کریں اور اونچائی نے لکھا ہے.",
+        "NOPUBLICUP": "پبلک IP پتہ نہیں ملا. اپنا انٹرنیٹ کنکشن چیک کریں اور اونچائی کو دوبارہ شروع کریں.",
+        "CONFIGURINGLOCALMN": "مقامی Modeode ترتیب..."
     },
     "TIME": {
         "AFEWSECONDS": "چند سیکنڈ",
@@ -386,5 +410,50 @@
         "MONTHS": "مہینے",
         "AYEAR": "ایک سال",
         "YEARS": "سال"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "سکے وصول",
+        "NEWTRANSACTION_TITLE_STAKE": "حاصل کردہ اسٹیک",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "موہنڈوڈ انعام حاصل کی"
+    },
+    "MONTH": {
+        "JAN": "جان",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "اپریل",
+        "MAY": "مئی",
+        "JUN": "جون",
+        "JUL": "جول",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "این او او",
+        "DEC": "ڈی سی ای"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "آپ بھیجیں۔",
+                "YOUGET": "تم سمجھے",
+                "MRXADDRESS": "میٹرکس ایڈریس۔",
+                "SWAP": "تبادلہ",
+                "SWAPADDRESSES": "ایڈریس ایڈریس",
+                "BTCADDRESS": "بی ٹی سی ایڈریس۔",
+                "INFOLINE1": "ایک بار جب آپ کے پاس بی ٹی سی ڈپازٹ ایڈریس ہوجائے تو اس پتے پر بھیجا گیا کوئی بی ٹی سی خود بخود آپ کے نامزد کردہ ایم آر ایکس پتے میں ایم آر ایکس کے ل for تبدیل ہوجائے گا۔",
+                "INFOLINE2-1": "عام طور پر ویکیپیڈیا بلاک اوقات کے لحاظ سے ایک گھنٹے کے اندر لین دین واضح ہوجاتا ہے۔ ہم کے لئے فتح قبول کر سکتے ہیں",
+                "INFOLINE2-2": "شریک ممالک۔",
+                "INFOLINE2-3": "اس کو پہلے بی ٹی سی میں تبدیل کیا جائے گا پھر ایم آر ایکس۔",
+                "INFOLINE3": "ایک بار جب آپ کا بی ٹی سی ڈپازٹ صاف ہوجائے گا تو آپ اپنے ایم آر ایکس کو اپنے نامزد ایڈریس پر وصول کریں گے۔",
+                "INFOLINE4": "مزید معلومات کے لئے ملاحظہ کریں",
+                "FIATSWAPSELECTED": "اس لین دین کو مکمل کرنے کے ل You آپ کو بی ڈاٹ میٹریکسکوین ڈاٹ کام پر بھیج دیا جائے گا۔"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "ادل بدلنے کا پتہ...",
+            "ALREADYHAVEADDRESS": "آپ کے پاس پہلے ہی اس پتے کا BTC پتہ ہے۔",
+            "SWAPUSDMIN": "کم از کم امریکی تبادلہ رقم $ 50 ہے۔",
+            "SWAPUSDMAX": "زیادہ سے زیادہ امریکی تبادلہ کی رقم 000 3000 ہے۔",
+            "NOADDRESS": "آپ نے میٹرکس کا پتہ درج نہیں کیا۔"
+        }
     }
 }

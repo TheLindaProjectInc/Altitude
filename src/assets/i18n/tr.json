@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adres",
             "ENABLED": "Etkin",
-            "NOTENABLEDTITLE": "Masternodlar etkin değil",
-            "NOTENABLEDINSTR": "Bir masternode çalıştırmak için, masternode = 1 ayarlayarak ve 'masternodeprivkey' ve 'masternodeaddr' değişkenlerini metrix.conf dosyanızda yapılandırarak masternode'ları etkinleştirmeniz gerekir.",
             "STARTBUTTON": "Yerel Başlat",
             "STARTALIASBUTTON": "Diğerleri Başlat",
-            "STARTALLBUTTON": "Tümünü Başlat"
+            "STARTALLBUTTON": "Tümünü Başlat",
+            "NOMASTERNODES": "Senin herhangi bir masternode yok",
+            "NOMNOUTPUTS": "Masternode çıkışı bulunamadı. Yerel bir Masternode çalıştırmak için Masternode adresinize tam olarak 2.000.000 jeton gönderin ve 15 onay bekleyin.",
+            "STOPBUTTON": "Yerel Durdur",
+            "STOPALIASBUTTON": "Takma Adı Durdur",
+            "ADDREMOTE": "Uzak Ana Mod Ekle",
+            "REMOVEMN": "Masternode Kaldır",
+            "ADDLOCAL": "Yerel Masternode Kur",
+            "DISABLELOCAL": "Yerel Masternode’u Devre Dışı Bırak",
+            "LOCALNOTRUNNING": "Yerel Masternode Çalışmıyor",
+            "REMOTENOTRUNNING": "Uzak Masternode Bulunamadı"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "İmza Mesaj",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "genel bakış",
             "TRANSACTIONSTAB": "işlemler",
             "ADDRESSTABS": "Adresler"
+        },
+        "CURRENCY": {
+            "TITLE": "Ekran Para Birimini Seçin"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core’un sonlandırmasına neden olan bir problem vardı. Hatalar için debug.log dosyanızı kontrol etmeniz önerilir.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "İstemciyi Yeniden Başlat",
             "CLIENTINVALIDCONFIGTITLE": "Geçersiz metrix.conf Yapılandırması",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf dosyanızda Metrix Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf dosyanızda Metrix Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin.",
+            "ADDREMOTEMNTITLE": "Uzak Ana Mod Ekle",
+            "ADDREMOTEMNALIAS": "Masternode Takma Adı",
+            "ADDREMOTEMNIP": "Ana Mod IP: Bağlantı Noktası",
+            "ADDREMOTEMNKEY": "Ana Mod Özel Anahtarı",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Ana Mod Trx Dizini"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres defteri",
@@ -295,7 +312,8 @@
             "LOCALE": "Dil...",
             "RESTARTCORE": "Metrix Çekirdeğini Yeniden Başlat",
             "EXIT": "çıkış",
-            "OPTIONS": "Seçenekler..."
+            "OPTIONS": "Seçenekler...",
+            "CURRENCIES": "Para Birimini Göster..."
         },
         "ENCRYPT": {
             "TITLE": "şifrele",
@@ -334,7 +352,9 @@
         "SORTBY": "Göre sırala",
         "SEARCH": "Arama",
         "FEE": "ücret",
-        "ACCEPTBUTTON": "Kabul etmek"
+        "ACCEPTBUTTON": "Kabul etmek",
+        "CONFIRMED": "onaylı",
+        "UNCONFIRMED": "doğrulanmamış"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core'u başlatıyor...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Tüm girişler, harcamadan önce en az 1 onay gerektirir.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "İşlemler panoya kopyalandı",
         "TRANSACTIONOUTPUTTOOLARGE": "Tutarlara yaptığınız ödemelerden biri güvenle gönderilemeyecek kadar büyük. Maksimum 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Değişikliğiniz güvenle gönderilemeyecek kadar büyük. Maksimum 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Değişikliğiniz güvenle gönderilemeyecek kadar büyük. Maksimum 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Ana mod durduruluyor...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf dosyasına yazarken bir sorun oluştu. Dosyanın var olduğunu ve İrtifa'nın yazma izinleri olduğunu kontrol edin.",
+        "NOPUBLICUP": "Genel IP adresi bulunamadı. İnternet bağlantınızı kontrol edin ve İrtifa'yı yeniden başlatın.",
+        "CONFIGURINGLOCALMN": "Yerel Masternode yapılandırılıyor..."
     },
     "TIME": {
         "AFEWSECONDS": "Birkaç saniye",
@@ -386,5 +410,50 @@
         "MONTHS": "ay",
         "AYEAR": "Bir yıl",
         "YEARS": "yıl"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Alınan Paralar",
+        "NEWTRANSACTION_TITLE_STAKE": "Alınan Bahis",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Alınan Masternode Ödülü"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "ŞUBAT",
+        "MAR": "MAR",
+        "APR": "Nisan",
+        "MAY": "MAYIS AYI",
+        "JUN": "Haziran",
+        "JUL": "Temmuz",
+        "AUG": "Ağustos",
+        "SEP": "Eylül",
+        "OCT": "Ekim",
+        "NOV": "Kasım",
+        "DEC": "Aralık"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Siz gönderin",
+                "YOUGET": "Sen almak",
+                "MRXADDRESS": "Metrik Adres",
+                "SWAP": "takas",
+                "SWAPADDRESSES": "Adresleri Değiştir",
+                "BTCADDRESS": "BTC Adresi",
+                "INFOLINE1": "Bir BTC depozito adresiniz olduğunda, bu adrese gönderilen herhangi bir BTC otomatik olarak MRX adresinize atanmış MRX adresinize geçecektir.",
+                "INFOLINE2-1": "İşlemler genellikle Bitcoin blok zamanlarına bağlı olarak bir saat içinde silinir. İçin fiat kabul edebiliriz",
+                "INFOLINE2-2": "katılan ülkeler",
+                "INFOLINE2-3": "Bu, önce MRC'ye, sonra BTC'ye dönüştürülecektir.",
+                "INFOLINE3": "BTC para yatırma işleminiz tamamlandıktan sonra MRX’inizi belirtilen adrese alacaksınız.",
+                "INFOLINE4": "Daha fazla bilgi için ziyaret",
+                "FIATSWAPSELECTED": "Bu işlemi tamamlamak için Buy.Metrixcoin.com adresine yönlendirileceksiniz."
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Swap Adresi üretiliyor...",
+            "ALREADYHAVEADDRESS": "Bu adres için zaten bir BTC adresiniz var",
+            "SWAPUSDMIN": "Minimum USD takas tutarı 50 ABD Dolarıdır",
+            "SWAPUSDMAX": "Maksimum USD swap miktarı 3000 $ 'dır.",
+            "NOADDRESS": "Bir Metrix adresi girmediniz"
+        }
     }
 }

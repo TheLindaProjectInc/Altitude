@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Хаяг",
             "ENABLED": "Идэвхжүүлсэн",
-            "NOTENABLEDTITLE": "Мастерууд нь идэвхжээгүй байна",
-            "NOTENABLEDINSTR": "Masternode-г ажиллуулахын тулд masternode = 1 болон mashod.conf файлын 'masternodeprivkey' болон 'masternodeaddr' хувьсагчуудыг тохируулах замаар masternodes-ийг идэвхжүүлэх хэрэгтэй болно.",
             "STARTBUTTON": "Орон нутгийн эхлэл",
             "STARTALIASBUTTON": "Алдаа үүсгэж эхлэх",
-            "STARTALLBUTTON": "Бүгдийг эхлүүл"
+            "STARTALLBUTTON": "Бүгдийг эхлүүл",
+            "NOMASTERNODES": "Танд ямар ч хэв маяг байхгүй байна",
+            "NOMNOUTPUTS": "Masternode-ийн гарц олдсонгүй. Локал Masternode ажиллуулахын тулд яг 2,000,000 зоосыг өөрийн Masternode хаяг руу илгээгээд 15 баталгаажуулалтыг хүлээх хэрэгтэй.",
+            "STOPBUTTON": "Орон нутгийн зогсоох",
+            "STOPALIASBUTTON": "Богино нэрийг зогсоо",
+            "ADDREMOTE": "Алсын Masternode нэмэх",
+            "REMOVEMN": "Masternode-г устгана уу",
+            "ADDLOCAL": "Орон нутгийн Masternode-г тохируулах",
+            "DISABLELOCAL": "Local Masternode-г идэвхгүй болгох",
+            "LOCALNOTRUNNING": "Орон нутгийн Masternode ажиллахгүй байна",
+            "REMOTENOTRUNNING": "Алсын Masternode олдсонгүй"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Зурвас бичих",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Ерөнхий тойм",
             "TRANSACTIONSTAB": "Ажил гүйлгээ",
             "ADDRESSTABS": "Хаягууд"
+        },
+        "CURRENCY": {
+            "TITLE": "Дэлгэцийн валют сонгоно уу"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Линда Кор-ийн хувьд үүнийг зогсооход хүргэсэн. Асуудлын талаар өөрийн debug.log файлыг шалгаж үзэхийг зөвлөж байна.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентийг дахин эхлүүлэх",
             "CLIENTINVALIDCONFIGTITLE": "Линда.conf тохируулга буруу байна",
-            "CLIENTINVALIDCONFIGINFO": "Таны metrix.conf нь Metrix Core-ийг нэн даруй гарахад хүргэдэг буруу masternode тохируулгатай байна. Энэ файлыг шалгана уу."
+            "CLIENTINVALIDCONFIGINFO": "Таны metrix.conf нь Metrix Core-ийг нэн даруй гарахад хүргэдэг буруу masternode тохируулгатай байна. Энэ файлыг шалгана уу.",
+            "ADDREMOTEMNTITLE": "Алсын Masternode нэмэх",
+            "ADDREMOTEMNALIAS": "Masternode Богино нэр",
+            "ADDREMOTEMNIP": "Masternode IP: Порт",
+            "ADDREMOTEMNKEY": "Masternode хувийн түлхүүр",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Хэш",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс"
         },
         "ADDRESSBOOK": {
             "TITLE": "Хаяг хадгалах ном",
@@ -295,7 +312,8 @@
             "LOCALE": "Хэл...",
             "RESTARTCORE": "Линда Гол дахин эхлүүлэх",
             "EXIT": "гарах",
-            "OPTIONS": "Сонголтууд..."
+            "OPTIONS": "Сонголтууд...",
+            "CURRENCIES": "Мөнгөн тэмдэгт харуулах..."
         },
         "ENCRYPT": {
             "TITLE": "Шифрлэх",
@@ -334,7 +352,9 @@
         "SORTBY": "Sort By",
         "SEARCH": "Хайлт",
         "FEE": "Төлбөр",
-        "ACCEPTBUTTON": "Хүлээн авах"
+        "ACCEPTBUTTON": "Хүлээн авах",
+        "CONFIRMED": "Батлав",
+        "UNCONFIRMED": "Баталгаажаагүй байна"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core-ийг эхлүүлээд...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Бүх орцыг зардлаас өмнө дор хаяж 1 баталгаажуулалт шаарддаг.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Хэлцлийн клип рүү хуулбарлан гүйлгээ хийх",
         "TRANSACTIONOUTPUTTOOLARGE": "Таны төлбөрийн дүн нь аюулгүйгээр илгээхэд хэтэрхий том байна. Хамгийн ихдээ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Таны өөрчлөлт нь аюулгүй илгээхэд хэтэрхий том байна. Хамгийн ихдээ 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Таны өөрчлөлт нь аюулгүй илгээхэд хэтэрхий том байна. Хамгийн ихдээ 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Модон горимыг зогсоож байна...",
+        "FAILEDTOWRITECONFIG": "Таны metrix.conf файл руу бичихэд алдаа гарав. Файл байгаа ба Өндөрлөгт бичих зөвшөөрөл байгаа эсэхийг шалгана уу.",
+        "NOPUBLICUP": "Нийтийн IP хаяг олдсонгүй. Интернэт холболтоо шалгаад Өндөржилтийг дахин эхлүүлнэ үү.",
+        "CONFIGURINGLOCALMN": "Локал Masternode тохиргоог хийж байна..."
     },
     "TIME": {
         "AFEWSECONDS": "Хэдэн секунд байна",
@@ -386,5 +410,50 @@
         "MONTHS": "сар",
         "AYEAR": "Жилд",
         "YEARS": "жил"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Зоос хүлээн авсан",
+        "NEWTRANSACTION_TITLE_STAKE": "Гадас хүлээн авсан",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Мэс засал хүлээн авсан"
+    },
+    "MONTH": {
+        "JAN": "ЖАН",
+        "FEB": "FEB",
+        "MAR": "МАР",
+        "APR": "APR",
+        "MAY": "МААНЬ",
+        "JUN": "ЖИЛ",
+        "JUL": "ЖИЛ",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "ОКТ",
+        "NOV": "NOV",
+        "DEC": "ҮНЭ"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Та илгээнэ үү",
+                "YOUGET": "Та авах",
+                "MRXADDRESS": "Метрийн хаяг",
+                "SWAP": "Солих",
+                "SWAPADDRESSES": "Хаяг солилцох",
+                "BTCADDRESS": "БСТ хаяг",
+                "INFOLINE1": "Хэрэв танд BTC хадгаламжийн хаяг байгаа бол тухайн хаягаар илгээгдсэн BTC автоматаар таны MRX хаяг руу MRX-ийг солино.",
+                "INFOLINE2-1": "Гүйлгээг ихэвчлэн Bitcoin блоклох хугацаанаас хамаарч нэг цагийн дотор арилгадаг. Бид fiat-ийг хүлээн авах боломжтой",
+                "INFOLINE2-2": "оролцогч орнууд",
+                "INFOLINE2-3": "Үүнийг эхлээд BTC, дараа нь MRX болгон хөрвүүлэх болно.",
+                "INFOLINE3": "Таны BTC хадгаламж арилсны дараа таны нэрлэсэн хаяг руу MRX-г хүлээн авах болно.",
+                "INFOLINE4": "Дэлгэрэнгүй мэдээллийг авна уу",
+                "FIATSWAPSELECTED": "Энэ гүйлгээг дуусгахын тулд таныг Buy.Metrixcoin.com руу дахин чиглүүлэх болно"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Своп хаяг үүсгэж байна...",
+            "ALREADYHAVEADDRESS": "Танд энэ хаягтай холбоотой BTC хаяг байна",
+            "SWAPUSDMIN": "Ам.долларын своп хамгийн бага хэмжээ нь $ 50 байна",
+            "SWAPUSDMAX": "Долларын солилцооны дээд хэмжээ 3000 доллар байна",
+            "NOADDRESS": "Та Metrix хаяг оруулаагүй байна"
+        }
     }
 }

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Địa chỉ nhà",
             "ENABLED": "Đã bật",
-            "NOTENABLEDTITLE": "Masternodes không được kích hoạt",
-            "NOTENABLEDINSTR": "Để chạy mã chính, bạn sẽ cần bật mã chủ bằng cách đặt masternode = 1 và định cấu hình các biến 'masternodeprivkey' và 'masternodeaddr' trong tệp metrix.conf của bạn.",
             "STARTBUTTON": "Bắt đầu địa phương",
             "STARTALIASBUTTON": "Bắt đầu bí danh",
-            "STARTALLBUTTON": "Bắt đầu tất cả"
+            "STARTALLBUTTON": "Bắt đầu tất cả",
+            "NOMASTERNODES": "Bạn không có bất kỳ bản gốc nào",
+            "NOMNOUTPUTS": "Không tìm thấy đầu ra Masternode. Để chạy Masternode cục bộ, hãy gửi chính xác 2.000.000 xu đến địa chỉ Masternode của bạn và chờ 15 xác nhận.",
+            "STOPBUTTON": "Dừng cục bộ",
+            "STOPALIASBUTTON": "Dừng bí danh",
+            "ADDREMOTE": "Thêm Masternode từ xa",
+            "REMOVEMN": "Xóa Masternode",
+            "ADDLOCAL": "Thiết lập Masternode cục bộ",
+            "DISABLELOCAL": "Vô hiệu hóa mã nguồn cục bộ",
+            "LOCALNOTRUNNING": "Masternode cục bộ không chạy",
+            "REMOTENOTRUNNING": "Không tìm thấy Masternode từ xa"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Ký tin nhắn",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Tổng quan",
             "TRANSACTIONSTAB": "Giao dịch",
             "ADDRESSTABS": "Địa chỉ"
+        },
+        "CURRENCY": {
+            "TITLE": "Chọn loại tiền tệ hiển thị"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Có một vấn đề với Metrix Core đã khiến nó chấm dứt. Bạn nên kiểm tra tệp debug.log của mình để biết các vấn đề.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Khởi động lại khách hàng",
             "CLIENTINVALIDCONFIGTITLE": "Cấu hình metrix.conf không hợp lệ",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này.",
+            "ADDREMOTEMNTITLE": "Thêm Masternode từ xa",
+            "ADDREMOTEMNALIAS": "Bí danh Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Cổng",
+            "ADDREMOTEMNKEY": "Khóa riêng Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Chỉ số Masterxode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Sổ địa chỉ",
@@ -295,7 +312,8 @@
             "LOCALE": "Ngôn ngữ...",
             "RESTARTCORE": "Khởi động lại Metrix Core",
             "EXIT": "Lối thoát hiểm",
-            "OPTIONS": "Tùy chọn..."
+            "OPTIONS": "Tùy chọn...",
+            "CURRENCIES": "Hiển thị tiền tệ..."
         },
         "ENCRYPT": {
             "TITLE": "Mã hóa",
@@ -334,7 +352,9 @@
         "SORTBY": "Sắp xếp theo",
         "SEARCH": "Tìm kiếm",
         "FEE": "Học phí",
-        "ACCEPTBUTTON": "Chấp nhận"
+        "ACCEPTBUTTON": "Chấp nhận",
+        "CONFIRMED": "Khẳng định",
+        "UNCONFIRMED": "Chưa được xác nhận"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Khởi tạo Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Tất cả các đầu vào yêu cầu ít nhất 1 xác nhận trước khi chi tiêu.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Giao dịch được sao chép vào clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Một trong số tiền bạn trả cho số tiền quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Thay đổi của bạn quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Thay đổi của bạn quá lớn để gửi một cách an toàn. Tối đa là 90.071,992,54740992.",
+        "STOPPINGMASTERNODE": "Dừng chế độ chính...",
+        "FAILEDTOWRITECONFIG": "Đã xảy ra sự cố khi ghi vào tệp metrix.conf của bạn. Kiểm tra tệp tồn tại và Độ cao có quyền ghi.",
+        "NOPUBLICUP": "Không tìm thấy địa chỉ IP công cộng. Kiểm tra kết nối internet của bạn và khởi động lại Độ cao.",
+        "CONFIGURINGLOCALMN": "Định cấu hình Masternode cục bộ..."
     },
     "TIME": {
         "AFEWSECONDS": "Một vài giây",
@@ -386,5 +410,50 @@
         "MONTHS": "tháng",
         "AYEAR": "Một năm",
         "YEARS": "năm"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Tiền đã nhận",
+        "NEWTRANSACTION_TITLE_STAKE": "Cổ phần nhận được",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Nhận phần thưởng Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "THÁNG 3",
+        "APR": "APR",
+        "MAY": "CÓ THỂ",
+        "JUN": "THÁNG 6",
+        "JUL": "THÁNG 7",
+        "AUG": "Tháng giêng",
+        "SEP": "SEP",
+        "OCT": "Tháng 10",
+        "NOV": "Tháng 11",
+        "DEC": "Tháng 12"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Bạn gửi",
+                "YOUGET": "Bạn lấy",
+                "MRXADDRESS": "Địa chỉ Metrix",
+                "SWAP": "Trao đổi",
+                "SWAPADDRESSES": "Địa chỉ hoán đổi",
+                "BTCADDRESS": "Địa chỉ BTC",
+                "INFOLINE1": "Khi bạn có địa chỉ tiền gửi BTC, bất kỳ BTC nào được gửi đến địa chỉ đó sẽ tự động được hoán đổi cho MRX vào địa chỉ MRX được chỉ định của bạn.",
+                "INFOLINE2-1": "Giao dịch thường rõ ràng trong vòng một giờ tùy thuộc vào thời gian khối Bitcoin. Chúng tôi có thể chấp nhận fiat cho",
+                "INFOLINE2-2": "các nước tham gia",
+                "INFOLINE2-3": "Điều này sẽ được chuyển đổi sang BTC trước sau đó là MRX.",
+                "INFOLINE3": "Khi tiền gửi BTC của bạn đã bị xóa, bạn sẽ nhận được MRX của mình vào địa chỉ được chỉ định.",
+                "INFOLINE4": "Để biết thêm thông tin, hãy truy cập",
+                "FIATSWAPSELECTED": "Bạn sẽ được chuyển hướng đến Mua.Metrixcoin.com để hoàn thành giao dịch này"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Tạo địa chỉ hoán đổi...",
+            "ALREADYHAVEADDRESS": "Bạn đã có một địa chỉ BTC cho địa chỉ này",
+            "SWAPUSDMIN": "Số tiền trao đổi USD tối thiểu là $ 50",
+            "SWAPUSDMAX": "Số tiền trao đổi USD tối đa là $ 3000",
+            "NOADDRESS": "Bạn đã không nhập địa chỉ Metrix"
+        }
     }
 }

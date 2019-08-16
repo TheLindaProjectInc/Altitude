@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Indirizzo",
             "ENABLED": "Abilitato",
-            "NOTENABLEDTITLE": "Masternodes non abilitato",
-            "NOTENABLEDINSTR": "Per eseguire un masternode devi abilitare i masternode impostando masternode = 1 e configurando le variabili 'masternodeprivkey' e 'masternodeaddr' nel tuo file metrix.conf.",
             "STARTBUTTON": "Inizia locale",
             "STARTALIASBUTTON": "Avvia alias",
-            "STARTALLBUTTON": "Inizia tutto"
+            "STARTALLBUTTON": "Inizia tutto",
+            "NOMASTERNODES": "Non hai nessun masternode",
+            "NOMNOUTPUTS": "Nessuna uscita Masternode trovata. Per eseguire un Masternode locale invia esattamente 2.000.000 di monete al tuo indirizzo Masternode e attendi 15 conferme.",
+            "STOPBUTTON": "Stop locale",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Aggiungi Masternode remoto",
+            "REMOVEMN": "Rimuovi Masternode",
+            "ADDLOCAL": "Imposta Masternode locale",
+            "DISABLELOCAL": "Disabilita Masternode locale",
+            "LOCALNOTRUNNING": "Masternode locale non in esecuzione",
+            "REMOTENOTRUNNING": "Masternode remoto non trovato"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Firmare un messaggio",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Panoramica",
             "TRANSACTIONSTAB": "Le transazioni",
             "ADDRESSTABS": "indirizzi"
+        },
+        "CURRENCY": {
+            "TITLE": "Seleziona Visualizza valuta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "C'è stato un problema con Metrix Core che ha causato la sua chiusura. Si consiglia di controllare il tuo file debug.log per problemi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Riavvia il client",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf non valida",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ha un'impostazione masternode non valida che farà uscire immediatamente Metrix Core. Si prega di controllare questo file."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ha un'impostazione masternode non valida che farà uscire immediatamente Metrix Core. Si prega di controllare questo file.",
+            "ADDREMOTEMNTITLE": "Aggiungi Masternode remoto",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "IP Masternode: porta",
+            "ADDREMOTEMNKEY": "Chiave privata Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Rubrica",
@@ -295,7 +312,8 @@
             "LOCALE": "Linguaggio...",
             "RESTARTCORE": "Riavvia Metrix Core",
             "EXIT": "Uscita",
-            "OPTIONS": "Opzioni..."
+            "OPTIONS": "Opzioni...",
+            "CURRENCIES": "Visualizza valuta..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Ordina per",
         "SEARCH": "Ricerca",
         "FEE": "tassa",
-        "ACCEPTBUTTON": "Accettare"
+        "ACCEPTBUTTON": "Accettare",
+        "CONFIRMED": "Confermato",
+        "UNCONFIRMED": "Non confermato"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inizializzazione Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Tutti gli input richiedono almeno 1 conferma prima di spendere.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transazioni copiate negli appunti",
         "TRANSACTIONOUTPUTTOOLARGE": "Uno degli importi da pagare per gli importi è troppo grande per essere spedito in sicurezza. Il massimo è 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Il tuo cambiamento è troppo grande per essere spedito in sicurezza. Il massimo è 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Il tuo cambiamento è troppo grande per essere spedito in sicurezza. Il massimo è 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Arresto del nodo principale...",
+        "FAILEDTOWRITECONFIG": "Si è verificato un problema durante la scrittura nel file metrix.conf. Verifica che il file esista e che Altitude disponga delle autorizzazioni di scrittura.",
+        "NOPUBLICUP": "Nessun indirizzo IP pubblico trovato. Controlla la tua connessione Internet e riavvia Altitude.",
+        "CONFIGURINGLOCALMN": "Configurazione di Masternode locale..."
     },
     "TIME": {
         "AFEWSECONDS": "Pochi secondi",
@@ -386,5 +410,50 @@
         "MONTHS": "mesi",
         "AYEAR": "Un anno",
         "YEARS": "anni"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monete ricevute",
+        "NEWTRANSACTION_TITLE_STAKE": "Ricevuta ricevuta",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricevuto ricompensa Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "febbraio",
+        "MAR": "MAR",
+        "APR": "aprile",
+        "MAY": "POTREBBE",
+        "JUN": "giugno",
+        "JUL": "luglio",
+        "AUG": "agosto",
+        "SEP": "settembre",
+        "OCT": "Ottobre",
+        "NOV": "novembre",
+        "DEC": "dicembre"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu invii",
+                "YOUGET": "Ottieni",
+                "MRXADDRESS": "Indirizzo metrica",
+                "SWAP": "Scambiare",
+                "SWAPADDRESSES": "Scambia indirizzi",
+                "BTCADDRESS": "Indirizzo BTC",
+                "INFOLINE1": "Una volta che hai un indirizzo di deposito BTC, qualsiasi BTC inviato a quell'indirizzo verrà automaticamente scambiato con MRX nel tuo indirizzo MRX nominato.",
+                "INFOLINE2-1": "Le transazioni in genere vengono cancellate entro un'ora a seconda dei tempi di blocco Bitcoin. Possiamo accettare Fiat per",
+                "INFOLINE2-2": "paesi partecipanti",
+                "INFOLINE2-3": "Questo verrà prima convertito in BTC e poi in MRX.",
+                "INFOLINE3": "Una volta che il tuo deposito BTC è stato cancellato riceverai il tuo MRX nel tuo indirizzo nominato.",
+                "INFOLINE4": "Per maggiori informazioni visita",
+                "FIATSWAPSELECTED": "Verrai reindirizzato a Buy.Metrixcoin.com per completare questa transazione"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generazione dell'indirizzo di swap...",
+            "ALREADYHAVEADDRESS": "Hai già un indirizzo BTC per questo indirizzo",
+            "SWAPUSDMIN": "L'importo minimo di swap in USD è $ 50",
+            "SWAPUSDMAX": "L'importo massimo di swap in USD è $ 3000",
+            "NOADDRESS": "Non hai inserito un indirizzo Metrix"
+        }
     }
 }

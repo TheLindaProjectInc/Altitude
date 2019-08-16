@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresa",
             "ENABLED": "Povoleno",
-            "NOTENABLEDTITLE": "Masternodes není povoleno",
-            "NOTENABLEDINSTR": "Chcete-li spustit masternode, musíte povolit masternodes nastavením masternode = 1 a konfigurací proměnných masternodeprivkey a masternodeaddr ve vašem souboru metrix.conf.",
             "STARTBUTTON": "Spusťte místní",
             "STARTALIASBUTTON": "Spusťte alias",
-            "STARTALLBUTTON": "Začněte vše"
+            "STARTALLBUTTON": "Začněte vše",
+            "NOMASTERNODES": "Nemáte žádné masternody",
+            "NOMNOUTPUTS": "Nebyly nalezeny žádné výstupy Masternode. Chcete-li spustit místní Masternode, pošlete na vaši adresu Masternode přesně 2 000 000 mincí a vyčkejte 15 potvrzení.",
+            "STOPBUTTON": "Zastavte místní",
+            "STOPALIASBUTTON": "Zastavte Aliase",
+            "ADDREMOTE": "Přidat vzdálený masternode",
+            "REMOVEMN": "Odebrat Masternode",
+            "ADDLOCAL": "Nastavení místního masternodu",
+            "DISABLELOCAL": "Zakázat místní masternode",
+            "LOCALNOTRUNNING": "Místní Masternode není spuštěn",
+            "REMOTENOTRUNNING": "Vzdálený masternode nebyl nalezen"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Podepsat zprávu",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Přehled",
             "TRANSACTIONSTAB": "Transakce",
             "ADDRESSTABS": "Adresy"
+        },
+        "CURRENCY": {
+            "TITLE": "Vyberte Zobrazit měnu"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "U Metrix Core došlo k problému, který způsobil, že skončí. Doporučuje se zkontrolovat v souboru debug.log problémy.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartujte klienta",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurace aplikace metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "Vaše zařízení metrix.conf má neplatné nastavení masternode, které způsobí, že společnost Metrix Core okamžitě opustí. Zkontrolujte prosím tento soubor."
+            "CLIENTINVALIDCONFIGINFO": "Vaše zařízení metrix.conf má neplatné nastavení masternode, které způsobí, že společnost Metrix Core okamžitě opustí. Zkontrolujte prosím tento soubor.",
+            "ADDREMOTEMNTITLE": "Přidat vzdálený masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Soukromý klíč Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Index indexu Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresář",
@@ -295,7 +312,8 @@
             "LOCALE": "Jazyk...",
             "RESTARTCORE": "Restartujte Metrix Core",
             "EXIT": "Výstup",
-            "OPTIONS": "Možnosti..."
+            "OPTIONS": "Možnosti...",
+            "CURRENCIES": "Zobrazit měnu..."
         },
         "ENCRYPT": {
             "TITLE": "Šifrování",
@@ -334,7 +352,9 @@
         "SORTBY": "Seřazeno podle",
         "SEARCH": "Vyhledávání",
         "FEE": "Poplatek",
-        "ACCEPTBUTTON": "Akceptovat"
+        "ACCEPTBUTTON": "Akceptovat",
+        "CONFIRMED": "Potvrzeno",
+        "UNCONFIRMED": "Nepotvrzený"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializace Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Všechny vstupy vyžadují nejméně jedno potvrzení před utracením.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakce byly zkopírovány do schránky",
         "TRANSACTIONOUTPUTTOOLARGE": "Jedna z vašich plateb na částky je příliš velká, aby bylo možné bezpečně odeslat. Maximální hodnota je 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Vaše změna je příliš velká, aby mohla být bezpečně odeslána. Maximální hodnota je 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Vaše změna je příliš velká, aby mohla být bezpečně odeslána. Maximální hodnota je 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Zastavuje se masternode...",
+        "FAILEDTOWRITECONFIG": "Při zápisu do souboru metrix.conf došlo k potížím. Zkontrolujte, zda soubor existuje a zda má Altitude oprávnění k zápisu.",
+        "NOPUBLICUP": "Nebyla nalezena žádná veřejná IP adresa. Zkontrolujte připojení k internetu a restartujte Altitude.",
+        "CONFIGURINGLOCALMN": "Konfigurace místního masternodu..."
     },
     "TIME": {
         "AFEWSECONDS": "Pár sekund",
@@ -386,5 +410,50 @@
         "MONTHS": "měsíců",
         "AYEAR": "Rok",
         "YEARS": "roky"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Přijaté mince",
+        "NEWTRANSACTION_TITLE_STAKE": "Přijatá sázka",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Přijata odměna Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "SMĚT",
+        "JUN": "ČERVEN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "LISTOPAD",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Posíláte",
+                "YOUGET": "Dostaneš",
+                "MRXADDRESS": "Adresa metriky",
+                "SWAP": "Zaměnit",
+                "SWAPADDRESSES": "Zaměnit adresy",
+                "BTCADDRESS": "Adresa BTC",
+                "INFOLINE1": "Jakmile budete mít vkladovou adresu BTC, bude jakýkoli BTC zaslaný na tuto adresu automaticky převeden za MRX na vaši nominovanou adresu MRX.",
+                "INFOLINE2-1": "Transakce obvykle probíhají během jedné hodiny v závislosti na časech blokových bitcoinů. Můžeme přijmout fiat",
+                "INFOLINE2-2": "zúčastněné země",
+                "INFOLINE2-3": "Toto bude nejprve převedeno na BTC a poté na MRX.",
+                "INFOLINE3": "Jakmile bude váš vklad BTC vymazán, obdržíte MRX na svou nominovanou adresu.",
+                "INFOLINE4": "Pro více informací navštivte",
+                "FIATSWAPSELECTED": "Budete přesměrováni na Buy.Metrixcoin.com k dokončení této transakce"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generuje se swapová adresa...",
+            "ALREADYHAVEADDRESS": "Pro tuto adresu již máte adresu BTC",
+            "SWAPUSDMIN": "Minimální částka pro swap v USD je 50 USD",
+            "SWAPUSDMAX": "Maximální částka pro swap v USD je 3000 USD",
+            "NOADDRESS": "Nezadali jste adresu Metrix"
+        }
     }
 }

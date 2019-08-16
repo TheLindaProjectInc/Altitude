@@ -8,9 +8,10 @@ import * as settings from './lib/settings';
 log.transports.console.level = 'info'
 log.transports.file.level = 'info'
 
-let mainWindow, serve, client;
+let mainWindow, serve, client, multiInstance;
 const args = process.argv.slice(1);
 serve = args.some(val => val === '--serve');
+multiInstance = args.some(val => val === '--multi-instance');
 
 let tray: Tray
 let isHidden = false;
@@ -41,7 +42,7 @@ function createWindow() {
     width: width < size.width ? width : size.width,
     height: height < size.height ? height : size.height,
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
-    webPreferences: { webSecurity: false },
+    webPreferences: { webSecurity: false, nodeIntegration: true },
     frame: process.platform !== 'win32',
     titleBarStyle: 'hidden'
   });
@@ -75,7 +76,7 @@ function createWindow() {
 
   // start client
   log.info('Start client');
-  client = new Client(mainWindow)
+  client = new Client(mainWindow);
 
   // open dev tools
   if (!app.isPackaged) mainWindow.webContents.openDevTools();
@@ -159,7 +160,7 @@ function closeApp(event) {
 
 try {
   // check single instance
-  if (!app.requestSingleInstanceLock()) {
+  if (!multiInstance && !app.requestSingleInstanceLock()) {
     app.quit()
   } else {
     app.on('second-instance', () => {

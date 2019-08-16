@@ -12,7 +12,9 @@ export class ErrorService {
 
     public diagnose(ex: any): void {
         if (isDevMode()) console.log('ErrorService', ex);
-
+        // dismiss notifications
+        this.notification.dismissNotifications();
+        
         if (ex.error && ex.error.code === "ECONNREFUSED") {
             // ECONNREFUSED denotes a problem connecting to the
             // client this error is handled and notifed to the user in the rpc service

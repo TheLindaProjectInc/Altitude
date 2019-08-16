@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Indirizzu",
             "ENABLED": "Habilita",
-            "NOTENABLEDTITLE": "Masternodes ùn attivate micca",
-            "NOTENABLEDINSTR": "Per run un masternode avete bisognu di attivà l'espurtazioni di l'usu di l'usu di l'espurtazione di l'espurtazione di l'espurtazione.",
             "STARTBUTTON": "Start Local",
             "STARTALIASBUTTON": "Start Alias",
-            "STARTALLBUTTON": "Start All"
+            "STARTALLBUTTON": "Start All",
+            "NOMASTERNODES": "Ùn avete micca manternodes",
+            "NOMNOUTPUTS": "Ùn truvatu micca uscite Masternode. Per fà un Masternode lucale spedite esattamente 2,000,000 muniti à u vostru indirizzu Masternode è aspettate 15 conferme.",
+            "STOPBUTTON": "Stop Local",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Aghjunghje Masternode Remoto",
+            "REMOVEMN": "Rimuovi Masternode",
+            "ADDLOCAL": "Installazione Locale Masternode",
+            "DISABLELOCAL": "Disattiva u Masternode Locale",
+            "LOCALNOTRUNNING": "Locu Masternode Non Fucili",
+            "REMOTENOTRUNNING": "Masternode Remote Not Found"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Panorama",
             "TRANSACTIONSTAB": "Transacciones",
             "ADDRESSTABS": "Addresses"
+        },
+        "CURRENCY": {
+            "TITLE": "Seleziona Mostra Valuta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè un prublema cù Metrix Core chì hà causatu à finisce. Hè ricumandemu à verificà u vostru file debug.log per issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf invàlida",
-            "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu."
+            "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu.",
+            "ADDREMOTEMNTITLE": "Aghjunghje Masternode Remoto",
+            "ADDREMOTEMNALIAS": "Alterni Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Chiave Privata Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indice Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -295,7 +312,8 @@
             "LOCALE": "Lingua...",
             "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "Exit",
-            "OPTIONS": "Opzioni..."
+            "OPTIONS": "Opzioni...",
+            "CURRENCIES": "Mostra Valuta..."
         },
         "ENCRYPT": {
             "TITLE": "Cryping",
@@ -334,7 +352,9 @@
         "SORTBY": "Ordine per",
         "SEARCH": "Ricerca",
         "FEE": "Fee",
-        "ACCEPTBUTTON": "Accetta"
+        "ACCEPTBUTTON": "Accetta",
+        "CONFIRMED": "Confirmatu",
+        "UNCONFIRMED": "Senza cunfirmà"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicialmenti Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Tutte e inputs necessanu almenu 1 cunferma prima di gastru.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "E transaccii copiati à u portali",
         "TRANSACTIONOUTPUTTOOLARGE": "Unu di a vostra pagari a quantità ùn hè troppu grande per sguassà. Massimi hè 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "U vostru cambiamentu hè troppu grande per sguassà mandà. Massimi hè 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "U vostru cambiamentu hè troppu grande per sguassà mandà. Massimi hè 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Cessendu masternode...",
+        "FAILEDTOWRITECONFIG": "Ci era un problema à scrive in u vostru file metrix.conf. Verificate chì u schedariu esiste è chì Altitudine hà permessi di scrittura.",
+        "NOPUBLICUP": "Ùn hè micca scuppatu u indirizzu IP pubblicu. Verificate a vostra cunnessione internet è ripartite Altitudine.",
+        "CONFIGURINGLOCALMN": "Configurazione di u Masternode locale..."
     },
     "TIME": {
         "AFEWSECONDS": "Qualchì siconda",
@@ -386,5 +410,50 @@
         "MONTHS": "mesi",
         "AYEAR": "Un annu",
         "YEARS": "anni"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Raccoglie Monete",
+        "NEWTRANSACTION_TITLE_STAKE": "Ricevi palusate",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricevuta Raccorsu Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MAGHJU",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Mandà",
+                "YOUGET": "Avete",
+                "MRXADDRESS": "Indirizzu Metrix",
+                "SWAP": "Scambià",
+                "SWAPADDRESSES": "Indirizzi di scambià",
+                "BTCADDRESS": "Indirizzu BTC",
+                "INFOLINE1": "Una volta chì avete un indirizzu di depositu BTC qualsiasi BTC mandatu à questu indirizzu serà automaticamente scambiatu per MRX in u vostru indirizzu MRX nominatu.",
+                "INFOLINE2-1": "E transazzioni tipicamente chjaru in una ora secondu i tempi di u bloccu Bitcoin. Pudemu accettà fiat per",
+                "INFOLINE2-2": "paesi participanti",
+                "INFOLINE2-3": "Questu serà cunvertitu in BTC prima MRX.",
+                "INFOLINE3": "Dopu chì u vostru depositu BTC hà sbulicatu, riciverete a vostra MRX in u vostru indirizzu nominatu.",
+                "INFOLINE4": "Per più infurmazione visitate",
+                "FIATSWAPSELECTED": "Vi sarà ridirizzatu à Buy.Metrixcoin.com per cumpletà sta transazzione"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generazione di l'indirizzu di Swap...",
+            "ALREADYHAVEADDRESS": "Avete digià un indirizzu BTC per questu indirizzu",
+            "SWAPUSDMIN": "A quantità minima di swap di USD hè di $ 50",
+            "SWAPUSDMAX": "L'ammontu massimu di scambiu di USD hè $ 3000",
+            "NOADDRESS": "Ùn hà micca inseritu un indirizzu Metrix"
+        }
     }
 }

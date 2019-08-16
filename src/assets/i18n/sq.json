@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresë",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes nuk aktivizohen",
-            "NOTENABLEDINSTR": "Për të drejtuar një masternode ju do të duhet të aktivizoni masternodes duke vendosur masternode = 1 dhe konfigurimin e variablave 'masternodeprivkey' dhe 'masternodeaddr' në skedarin tuaj metrix.conf.",
             "STARTBUTTON": "Filloni Lokale",
             "STARTALIASBUTTON": "Filloni Alias",
-            "STARTALLBUTTON": "Filloni të gjitha"
+            "STARTALLBUTTON": "Filloni të gjitha",
+            "NOMASTERNODES": "Ju nuk keni ndonjë masternodes",
+            "NOMNOUTPUTS": "Nuk u gjetën rezultate Masternode. Për të drejtuar një Masternode lokale dërgoni saktësisht 2.000.000 monedha në adresën tuaj Masternode dhe të presin për 15 konfirmime.",
+            "STOPBUTTON": "Stop lokale",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Shto Remote Masternode",
+            "REMOVEMN": "Hiq Masternode",
+            "ADDLOCAL": "Vendosni Masternode lokale",
+            "DISABLELOCAL": "Çaktivizo Masternode lokale",
+            "LOCALNOTRUNNING": "Masternode lokale nuk po vrapon",
+            "REMOTENOTRUNNING": "Masterasti i largët nuk u gjet"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Mesazhi i mesazhit",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Përmbledhje",
             "TRANSACTIONSTAB": "transaksionet",
             "ADDRESSTABS": "adresat"
+        },
+        "CURRENCY": {
+            "TITLE": "Zgjidh monedhën e shfaqjes"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Metrix Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rinis Klientin",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurimi metrix.conf i pavlefshëm",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar.",
+            "ADDREMOTEMNTITLE": "Shto Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indeksi Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i adresave",
@@ -295,7 +312,8 @@
             "LOCALE": "Gjuhe...",
             "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "dalje",
-            "OPTIONS": "Opsione..."
+            "OPTIONS": "Opsione...",
+            "CURRENCIES": "Shfaq monedhën..."
         },
         "ENCRYPT": {
             "TITLE": "encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Ndaj sipas",
         "SEARCH": "kërkim",
         "FEE": "tarifë",
-        "ACCEPTBUTTON": "pranoj"
+        "ACCEPTBUTTON": "pranoj",
+        "CONFIRMED": "i konfirmuar",
+        "UNCONFIRMED": "i pavërtetuar"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Fillimi i Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Të gjitha inputet kërkojnë të paktën 1 konfirmim para se të shpenzohen.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksionet kopjohen në clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Një nga pagesat tuaja në shuma është shumë e madhe për t'u dërguar në mënyrë të sigurtë. Maksimumi është 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ndryshimi yt është shumë i madh për t'u dërguar në mënyrë të sigurt. Maksimumi është 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Ndryshimi yt është shumë i madh për t'u dërguar në mënyrë të sigurt. Maksimumi është 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Ndalimi i masternode...",
+        "FAILEDTOWRITECONFIG": "Kishte një problem me shkrim në skedarin tuaj metrix.conf. Kontrolloni ekzistojnë skedarët dhe lartësia ka leje për shkrim.",
+        "NOPUBLICUP": "Nuk u gjet asnjë adresë IP publike. Kontrolloni lidhjen tuaj në internet dhe rinisni Lartësinë.",
+        "CONFIGURINGLOCALMN": "Konfigurimi i Masternode lokale..."
     },
     "TIME": {
         "AFEWSECONDS": "Disa sekonda",
@@ -386,5 +410,50 @@
         "MONTHS": "muaj",
         "AYEAR": "Një vit",
         "YEARS": "vjet"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Marrja e monedhave",
+        "NEWTRANSACTION_TITLE_STAKE": "Pika e marrë",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Fituar Masternode Shpërblim"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "shkurt",
+        "MAR": "MAR",
+        "APR": "prill",
+        "MAY": "MUND",
+        "JUN": "qershor",
+        "JUL": "korrik",
+        "AUG": "gusht",
+        "SEP": "shtator",
+        "OCT": "tetor",
+        "NOV": "nëntor",
+        "DEC": "dhjetor"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ju dërgoni",
+                "YOUGET": "Ti merr",
+                "MRXADDRESS": "Adresa e Metrix",
+                "SWAP": "shkëmbim",
+                "SWAPADDRESSES": "Ndërroni Adresat",
+                "BTCADDRESS": "Adresa BTC",
+                "INFOLINE1": "Pasi të keni një adresë depozite BTC, çdo BTC dërguar në atë adresë automatikisht do të këmbehet për MRX në adresën tuaj të nominuar MRX.",
+                "INFOLINE2-1": "Transaksionet zakonisht janë të qarta brenda një ore në varësi të kohëve të bllokimit të Bitcoin. Ne mund të pranojmë fiat për",
+                "INFOLINE2-2": "vendet pjesëmarrëse",
+                "INFOLINE2-3": "Kjo do të konvertohet në BTC së pari dhe MRX.",
+                "INFOLINE3": "Pasi të keni pastruar depozitën tuaj në BTC, do të merrni MRX tuaj në adresën tuaj të nominuar.",
+                "INFOLINE4": "Për më shumë informacion vizitoni",
+                "FIATSWAPSELECTED": "Do të ridrejtoheni te Buy.Metrixcoin.com për të përfunduar këtë transaksion"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Gjenerimi i adresës së shkëmbimit...",
+            "ALREADYHAVEADDRESS": "Tashmë keni një adresë BTC për këtë adresë",
+            "SWAPUSDMIN": "Shuma minimale e këmbimit në USD është 50 dollarë",
+            "SWAPUSDMAX": "Shuma maksimale e shkëmbimit të dollarit është 3000 dollarë",
+            "NOADDRESS": "Ju nuk shkruani një adresë Metrix"
+        }
     }
 }

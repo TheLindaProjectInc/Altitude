@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "پته",
             "ENABLED": "فعال شوی",
-            "NOTENABLEDTITLE": "منډویډونه فعال ندی",
-            "NOTENABLEDINSTR": "د یوې موډرنډ چلولو لپاره تاسو باید د Modeode = 1 ترتیبولو او د metrix.conf دوتنې کې 'masternodeprivkey' او 'modeodeaddr' متغیرونو په ذریعه masternodes فعالولو ته اړتیا ولرئ.",
             "STARTBUTTON": "سیمه ایز پیل کړئ",
             "STARTALIASBUTTON": "شروع کول",
-            "STARTALLBUTTON": "ټول شروع کړئ"
+            "STARTALLBUTTON": "ټول شروع کړئ",
+            "NOMASTERNODES": "تاسو میډیورډونه نه لرئ",
+            "NOMNOUTPUTS": "نه د Modeode پایلې وموندل شوې. د سیمه ییز منډوډ چلولو لپاره په ریښتیا 2،000،000 سکین ستاسو د Modeode پته ته او 15 تاییدونه انتظار ته لیږئ.",
+            "STOPBUTTON": "محلي بندول",
+            "STOPALIASBUTTON": "علي علیه وتړئ",
+            "ADDREMOTE": "ریموټ میډډډ زیات کړئ",
+            "REMOVEMN": "مینډوت لرې کړئ",
+            "ADDLOCAL": "ځایی منډول جوړ کړئ",
+            "DISABLELOCAL": "د محلي منډډ نافعال کول",
+            "LOCALNOTRUNNING": "ځایی منډډډ ندی روان دی",
+            "REMOTENOTRUNNING": "ریموٹ ماسټرنوډ ونه موندل شو"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "لاسلیک پیغام",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "کتنه",
             "TRANSACTIONSTAB": "راکړې ورکړې",
             "ADDRESSTABS": "پته"
+        },
+        "CURRENCY": {
+            "TITLE": "د نندارې بدلول غوره کړه"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "د لننډ کور سره یوه ستونزه وه چې دا یې د پای ته رسیدو لامل ګرځیدلی. دا سپارښتنه کیږي چې د خپل د debug.log دوتنه د مسلو لپاره وګورئ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "مراجعه بیا پیل کړئ",
             "CLIENTINVALIDCONFIGTITLE": "ناباوره لنده کانونف تغیرات",
-            "CLIENTINVALIDCONFIGINFO": "ستاسو metrix.conf یو ناباوره میانډوډ جوړ کړی دی کوم چې د لننډ کور المل کیږي د سمدلاسه وتلو لپاره. لطفا دا دوتنه وګوره."
+            "CLIENTINVALIDCONFIGINFO": "ستاسو metrix.conf یو ناباوره میانډوډ جوړ کړی دی کوم چې د لننډ کور المل کیږي د سمدلاسه وتلو لپاره. لطفا دا دوتنه وګوره.",
+            "ADDREMOTEMNTITLE": "ریموټ میډډډ زیات کړئ",
+            "ADDREMOTEMNALIAS": "منینډوډ عليز",
+            "ADDREMOTEMNIP": "Modeode IP: Port",
+            "ADDREMOTEMNKEY": "منډول شخصي کیلي",
+            "ADDREMOTEMNTXHASH": "مینډود ټیکس هاش",
+            "ADDREMOTEMNTXINDEX": "مینډود ټیکسکس انڈیکس"
         },
         "ADDRESSBOOK": {
             "TITLE": "پته کتاب",
@@ -295,7 +312,8 @@
             "LOCALE": "ژبه...",
             "RESTARTCORE": "د لننډ کور بیا پیل کړئ",
             "EXIT": "وتون",
-            "OPTIONS": "اختیارونه..."
+            "OPTIONS": "اختیارونه...",
+            "CURRENCIES": "بدلول..."
         },
         "ENCRYPT": {
             "TITLE": "کوډ کول",
@@ -334,7 +352,9 @@
         "SORTBY": "ترتیب یی کړه په",
         "SEARCH": "لټون",
         "FEE": "فیس",
-        "ACCEPTBUTTON": "قبول کړئ"
+        "ACCEPTBUTTON": "قبول کړئ",
+        "CONFIRMED": "تایید شوی",
+        "UNCONFIRMED": "ناپېژندل شوی"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "د لننډ کور پیل کول...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "ټول لګښتونه لږ تر لږه 1 تادیه مخکې د مصرف کولو اړتیا لري.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "د کلپ بورډ سره لیږدونه کاپي شوي",
         "TRANSACTIONOUTPUTTOOLARGE": "د پیسو لپاره ستاسو له پیسو څخه یو ډیر ډیر خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی.",
-        "TRANSACTIONCHANGETOOLARGE": "ستاسو بدلون خورا خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی."
+        "TRANSACTIONCHANGETOOLARGE": "ستاسو بدلون خورا خوندي دی چې خوندي وساته. تر ټولو زیات 90،071،992.54740992 دی.",
+        "STOPPINGMASTERNODE": "مینډوت بندول...",
+        "FAILEDTOWRITECONFIG": "ستاسو د metrix.conf دوتنه کې لیکل کې ستونځه وه. د فایل موجودیت وګورئ او لوړې کچې د لیکلو اجازه لیکونه لري.",
+        "NOPUBLICUP": "هیڅ عامه IP پته نه موندل شوی. خپل انټرنیټ پیوستون وګورئ او لوړې کچې بیا پیل کړئ.",
+        "CONFIGURINGLOCALMN": "د سیمه ایز منینډوډ تنظیم کول..."
     },
     "TIME": {
         "AFEWSECONDS": "یو څو ثانوي",
@@ -386,5 +410,50 @@
         "MONTHS": "میاشتې",
         "AYEAR": "یو کال",
         "YEARS": "کلونه"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ترلاسه شوې سکې",
+        "NEWTRANSACTION_TITLE_STAKE": "ترلاسه شوی ترلاسه شوی",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ترلاسه شوی منډوډ انعام"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "مار",
+        "APR": "اپریل",
+        "MAY": "می",
+        "JUN": "JUN",
+        "JUL": "جول",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "تاسو لیږئ",
+                "YOUGET": "ته اخلی",
+                "MRXADDRESS": "د متریک پته",
+                "SWAP": "بدلول",
+                "SWAPADDRESSES": "ادرس بدلول",
+                "BTCADDRESS": "د BTC پته",
+                "INFOLINE1": "یوځل چې تاسو د BTC زیرمه لرئ پته ولرئ هر هغه BTC چې ورته پته لیږل کیږي په اوتومات ډول ستاسو د نومول شوي MRX پته کې د MRX لپاره بدل شي.",
+                "INFOLINE2-1": "معاملې عموما د یو ساعت دننه د Bitcoin بلاک وختونو پورې اړه لري. موږ کولی شو د دې لپاره فایټ ومنو",
+                "INFOLINE2-2": "برخه اخیستونکي هیوادونه",
+                "INFOLINE2-3": "دا به لومړی BTC کې بیا MRX ته بدل شي.",
+                "INFOLINE3": "یوځل چې ستاسو د BTC زیرمه پاکه شي نو تاسو به خپل MRX ستاسو په نومول شوي پتې کې ترلاسه کړئ.",
+                "INFOLINE4": "د نورو معلوماتو لپاره لیدنه وکړئ",
+                "FIATSWAPSELECTED": "تاسو به د دې معاملې بشپړولو لپاره Buy.Metrixcoin.com ته لارښود کړئ"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "د تبادلې ادرس پیدا کول...",
+            "ALREADYHAVEADDRESS": "تاسو دمخه د دې پتې لپاره د BTC پته لرئ",
+            "SWAPUSDMIN": "د ډالرو لږترلږه د تبادلې مقدار $ 50 دی",
+            "SWAPUSDMAX": "د ډالرو تر حد حد حد اقل 3000 000 دی",
+            "NOADDRESS": "تاسو د میټریکس ادرس ندی داخل کړی"
+        }
     }
 }

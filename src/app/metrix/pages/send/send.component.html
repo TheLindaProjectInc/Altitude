@@ -1,0 +1,223 @@
+<div class="content">
+
+  <div class="content-card send-source" *ngIf="!electron.settings.hideCoinControlFeatures">
+
+    <h4>{{ 'PAGES.SEND.COINCONTROL' | translate }}</h4>
+
+    <div>
+      <button class="btn btn-default" (click)="showSelectInputsModal()">{{ 'PAGES.SEND.INPUTS' | translate }}</button>
+      <span *ngIf="!getSelectedQuantity()" style="margin-left: 1em;">
+        {{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}
+      </span>
+      <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">
+        {{helpers.prettyCoins(getSelectedAmount())}} Metrix
+      </span>
+    </div>
+
+    <div class="form-inline" style="margin-top: 1em;">
+      <input id="chkChangeAddress" [(ngModel)]="enabledChangeAddress" type='checkbox' />
+      <label for="chkChangeAddress">{{ 'PAGES.SEND.CUSTOMCHANGE' | translate }}</label>
+      <text-input (change)="checkSavedChangeAccount()" [disabled]="!enabledChangeAddress" [(inputModel)]="changeAddress"
+        placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
+      <label style="margin-left:5px">{{changeAddressLabel}}</label>
+    </div>
+  </div>
+
+  <div class="content-card send-recipients">
+    <div *ngFor="let rec of recipients;let i=index" class="send-recipient">
+      <button class="btn btn-icon close" (click)="removeRecipient(i)" [disabled]="recipients.length==1">
+        <fa-icon icon="times"></fa-icon>
+      </button>
+      <div class="form-inline">
+        <span>{{ 'PAGES.SEND.PAYTO' | translate }}</span>
+        <text-input [(inputModel)]="rec.address" (change)="checkSavedAccount(rec,true)"
+          placeholder="{{ 'MISC.ENTERADDRESSLABEL' | translate }}"></text-input>
+        <button class="btn btn-default btn-icon" (click)="getFromAddressBook(rec)">
+          <fa-icon icon="address-book"></fa-icon>
+        </button>
+      </div>
+      <div class="form-inline">
+        <span>{{ 'PAGES.SEND.LABEL' | translate }}</span>
+        <text-input [(inputModel)]="rec.label" (change)="checkSavedAccount(rec,false)"
+          placeholder="{{ 'PAGES.SEND.LABELPLACEHOLDER' | translate }}"></text-input>
+      </div>
+      <div class="form-inline">
+        <span>{{ 'PAGES.SEND.AMOUNT' | translate }}</span>
+        <text-input type="number" (input)="calculateOutput()" [(inputModel)]="rec.amount"></text-input>
+        <button class="btn btn-default"
+          (click)="useAvailable(rec)">{{ 'PAGES.SEND.SENDAVAILABLE' | translate }}</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="toolbar-bottom">
+    <div class="send-summary">
+      <h5>{{ 'MISC.FEE' | translate }}: {{UI_fee}}</h5>
+      <h5>
+        {{ 'PAGES.SEND.TOTAL' | translate }}: {{helpers.prettyCoins(UI_total)}}
+        {{currencyService.currency!=='MRX' ? '(' + currencyService.displayLocal(UI_total) + ')' : ''}}
+      </h5>
+      <hr />
+    </div>
+
+    <button class="btn btn-default" (click)="addRecipient()">{{ 'PAGES.SEND.ADDRECIPIENT' | translate }}</button>
+    <button class="btn btn-default" (click)="reset()">{{ 'MISC.CLEARALLBUTTON' | translate }}</button>
+    <button class="btn btn-default" (click)="toggleCoinControlFeatures()">
+      <span *ngIf="!electron.settings.hideCoinControlFeatures">{{ 'PAGES.SEND.HIDECOINCONTROL' | translate }}</span>
+      <span *ngIf="electron.settings.hideCoinControlFeatures">{{ 'PAGES.SEND.SHOWCOINCONTROL' | translate }}</span>
+    </button>
+    <button class="btn btn-default right" (click)="send()">{{ 'PAGES.SEND.SEND' | translate }}</button>
+  </div>
+</div>
+
+<!-- Select Inputs modal -->
+<ngx-smart-modal #selectInputsModal identifier="selectInputsModal" customClass="nsm-centered" [closable]="false">
+  <h1>{{ 'PAGES.SEND.SELECTINPUTSTITLE' | translate }}</h1>
+
+  <div class="inputs-header-wrapper">
+    <div class="inputs-header">
+      <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{helpers.prettyCoins(getSelectedAmount())}} Metrix</p>
+      <p>{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(getSelectedFee())}}</p>
+      <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{helpers.prettyCoins(getSelectedAftFee())}} Metrix</p>
+    </div>
+    <div class="inputs-header">
+      <p>{{ 'PAGES.SEND.QUANTITY' | translate }}: {{getSelectedQuantity()}}</p>
+      <p>{{ 'PAGES.SEND.BYTES' | translate }}: {{helpers.getBytes(getSelectedQuantity(), recipients.length)}}</p>
+    </div>
+  </div>
+
+  <div class="inputs-list">
+
+    <virtual-scroller #scroll [items]="tableInputs" [ngStyle]="tableStyle">
+      <table class="table table-send">
+        <thead #header>
+          <tr>
+            <th colspan="2"></th>
+            <th (click)="sortCoinControl('amount')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_AMOUNT' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='amount' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='amount' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('account')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_LABEL' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='account' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='account' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('address')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_ADDRESS' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='address' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='address' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('blockTime')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_DATE' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='blockTime' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='blockTime' && !sortDesc"></fa-icon>
+            </th>
+            <th (click)="sortCoinControl('confirmations')">
+              {{ 'PAGES.SEND.TABLECOLUMNS_CONFIRMS' | translate }}
+              <fa-icon icon="arrow-down" *ngIf="sortField=='confirmations' && sortDesc"></fa-icon>
+              <fa-icon icon="arrow-up" *ngIf="sortField=='confirmations' && !sortDesc"></fa-icon>
+            </th>
+          </tr>
+        </thead>
+        <!-- tree mode -->
+        <tbody #container *ngIf="coinControlTreeMode">
+          <ng-container *ngFor="let header of scroll.viewPortItems; let i = index">
+            <tr>
+              <td colspan="2" style="text-align: left;">
+                <button class="btn btn-icon" (click)="header.showChildren=!header.showChildren">
+                  <fa-icon *ngIf="header.showChildren" icon='chevron-down'></fa-icon>
+                  <fa-icon *ngIf="!header.showChildren" icon='chevron-right'></fa-icon>
+                </button>
+                <input id="chkHeader{{i}}" [(ngModel)]="header.selected" (change)="toggleHeader(header)"
+                  type='checkbox' />
+                <label for="chkHeader{{i}}">({{header.inputs?header.inputs.length:0}})</label>
+              </td>
+              <td>{{header.amount}}</td>
+              <td>{{header.account}}</td>
+              <td>{{header.address}}</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <ng-container *ngIf="header.showChildren">
+              <tr *ngFor="let inp of header.inputs;let j = index" (contextmenu)="onRightClick($event,inp)">
+                <td style="padding: 5px 0;text-align: right">
+                  <!-- select -->
+                  <input *ngIf="!inp.locked" id="chkInput{{i}}-{{j}}" [(ngModel)]="inp.selected" type='checkbox'
+                    (change)="checkHeaderSelected(header)" />
+                  <label for="chkInput{{i}}-{{j}}"></label>
+                  <!-- locked -->
+                  <fa-icon style="margin-right: 13px;" *ngIf="inp.locked" icon='lock'
+                    title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
+                </td>
+                <td>
+                  <!-- confirmed -->
+                  <fa-icon *ngIf="inp.confirmations>=helpers.params.confirmations" icon='check-circle'
+                    class="fa-lg success" title="{{ 'MISC.CONFIRMED' | translate}}"></fa-icon>
+                  <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
+                    title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
+                </td>
+                <td>{{inp.amount}}</td>
+                <td>{{inp.account}}</td>
+                <td>{{inp.address}}</td>
+                <td>{{inp.blockTime | date:'MMM d, h:mm a'}}</td>
+                <td>{{inp.confirmations}}</td>
+              </tr>
+            </ng-container>
+          </ng-container>
+        </tbody>
+        <!-- list mode -->
+        <tbody #container *ngIf="!coinControlTreeMode">
+          <tr *ngFor="let inp of scroll.viewPortItems; let i = index" style="width: 100%;height: 30px;"
+            (contextmenu)="onRightClick($event,inp)">
+            <td>
+              <!-- select -->
+              <input *ngIf="!inp.locked" id="chkInput{{i}}" [(ngModel)]="inp.selected" type='checkbox' />
+              <label for="chkInput{{i}}"></label>
+              <!-- locked -->
+              <fa-icon *ngIf="inp.locked" icon='lock' title="{{ 'PAGES.SEND.INPUTLOCKED' | translate}}"></fa-icon>
+            </td>
+            <td>
+              <!-- confirmed -->
+              <fa-icon *ngIf="inp.confirmations>=helpers.params.confirmations" icon='check-circle' class="fa-lg success"
+                title="{{ 'MISC.CONFIRMED' | translate}}"></fa-icon>
+              <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
+                title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
+            </td>
+            <td>{{inp.amount}}</td>
+            <td>{{inp.account}}</td>
+            <td>{{inp.address}}</td>
+            <td>{{inp.blockTime | date:'MMM d, h:mm a'}}</td>
+            <td>{{inp.confirmations}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </virtual-scroller>
+
+  </div>
+
+
+  <div class="modal-buttons">
+    <div stlye="flex-direction:row">
+      <button class="btn btn-default"
+        (click)="selectUnselectAll()">{{ 'PAGES.SEND.ALL_SELECTUNSELECT' | translate }}</button>
+      <span style="padding-left:5px">
+        <input id="chkTreeMode" type='checkbox' [checked]="coinControlTreeMode" (change)="changeCoinControlMode()" />
+        <label for="chkTreeMode">{{ 'PAGES.SEND.TREEMODE' | translate}}</label>
+      </span>
+      <span style="padding-left:5px">
+        <input id="chkListMode" type='checkbox' [checked]="!coinControlTreeMode" (change)="changeCoinControlMode()" />
+        <label for="chkListMode">{{ 'PAGES.SEND.LISTMODE' | translate}}</label>
+      </span>
+    </div>
+    <div>
+      <button class="btn btn-default" (click)="cancelSelectInputsModal()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
+      <button class="btn btn-default" (click)="doneSelectInputsModal()">
+        {{ 'PAGES.SEND.SELECTINPUTSBUTTON' | translate }}
+      </button>
+    </div>
+  </div>
+
+</ngx-smart-modal>

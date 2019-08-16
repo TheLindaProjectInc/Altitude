@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Indirizz",
             "ENABLED": "Habilita",
-            "NOTENABLEDTITLE": "Masternodes mhux attivat",
-            "NOTENABLEDINSTR": "Biex tmexxi masternode, ikollok bzonn li tippermetti masternodes billi tissettja masternode = 1 u tikkonfigura l-varjabbli 'masternodeprivkey' u 'masternodeaddr' fil-fajl metrix.conf tiegħek.",
             "STARTBUTTON": "Bidu Lokali",
             "STARTALIASBUTTON": "Ibda Alias",
-            "STARTALLBUTTON": "Bidu Kollox"
+            "STARTALLBUTTON": "Bidu Kollox",
+            "NOMASTERNODES": "M'għandekx masternodes",
+            "NOMNOUTPUTS": "Ma nstab l-ebda prodott ta 'Masternode. Biex tmexxi Masternode lokali ibgħat eżattament 2,000,000 munita fl-indirizz Masternode tiegħek u stenna 15-il konferma.",
+            "STOPBUTTON": "Stop Lokali",
+            "STOPALIASBUTTON": "Waqqaf Alias",
+            "ADDREMOTE": "Żid Remote Masternode",
+            "REMOVEMN": "Neħħi Masternode",
+            "ADDLOCAL": "Setup Lokali Masternode",
+            "DISABLELOCAL": "Itfi Masternode Lokali",
+            "LOCALNOTRUNNING": "Masternode Lokali Mhux Running",
+            "REMOTENOTRUNNING": "Masternode mill-bogħod Ma nstabx"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Messaġġ ta 'Sinjal",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Ħarsa ġenerali",
             "TRANSACTIONSTAB": "Tranżazzjonijiet",
             "ADDRESSTABS": "Indirizzi"
+        },
+        "CURRENCY": {
+            "TITLE": "Agħżel Munita tal-Wiri"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Metrix Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni metrix.conf invalida",
-            "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl."
+            "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl.",
+            "ADDREMOTEMNTITLE": "Żid Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Ċavetta Privata",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Indiċi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-indirizzi",
@@ -295,7 +312,8 @@
             "LOCALE": "Lingwa...",
             "RESTARTCORE": "Erġa 'ibda Metrix Core",
             "EXIT": "Ħruġ",
-            "OPTIONS": "Għażliet..."
+            "OPTIONS": "Għażliet...",
+            "CURRENCIES": "Uri l-Munita..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Irranġa skond",
         "SEARCH": "Fittex",
         "FEE": "Dritt",
-        "ACCEPTBUTTON": "Aċċetta"
+        "ACCEPTBUTTON": "Aċċetta",
+        "CONFIRMED": "Ikkonfermat",
+        "UNCONFIRMED": "Mhux ikkonfermat"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inizjalment Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "L-inputs kollha jeħtieġu mill-inqas konferma waħda qabel l-infiq.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranżazzjonijiet ikkupjati lill-clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Wieħed mill-paga tiegħek għall-ammonti huwa kbir wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Il-bidla tiegħek hija kbira wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Il-bidla tiegħek hija kbira wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Waqqaf il-masternode...",
+        "FAILEDTOWRITECONFIG": "Kien hemm problema biex tikteb fil-fajl metrix.conf tiegħek. Iċċekkja li jeżisti l-fajl u li l-Altitudni għandha permessi għall-kitba.",
+        "NOPUBLICUP": "Ma nstab l-ebda indirizz IP pubbliku. Iċċekkja l-konnessjoni bl-internet tiegħek u erġa ibda l-Altitudni.",
+        "CONFIGURINGLOCALMN": "Konfigurazzjoni ta 'Masternode lokali..."
     },
     "TIME": {
         "AFEWSECONDS": "Xi ftit sekondi",
@@ -386,5 +410,50 @@
         "MONTHS": "xhur",
         "AYEAR": "Sena",
         "YEARS": "snin"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Muniti Rċevuti",
+        "NEWTRANSACTION_TITLE_STAKE": "Stake riċevut",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Reward tal-Masternode riċevut"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MEJJU",
+        "JUN": "Ġunju",
+        "JUL": "JUL",
+        "AUG": "Awissu",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "ĠODDA",
+        "DEC": "Diċembru"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Int tibgħat",
+                "YOUGET": "Ikollok",
+                "MRXADDRESS": "Indirizz Metrix",
+                "SWAP": "Tpartit",
+                "SWAPADDRESSES": "Tindirizza Indirizzi",
+                "BTCADDRESS": "Indirizz BTC",
+                "INFOLINE1": "Ladarba jkollok indirizz ta 'depożitu BTC, kull BTC mibgħuta lil dak l-indirizz awtomatikament tinbidel għal MRX fl-indirizz MRX nominat tiegħek.",
+                "INFOLINE2-1": "Tranżazzjonijiet tipikament ikunu ċari fi żmien siegħa skont il-ħinijiet tal-blokka Bitcoin. Nistgħu naċċettaw fiat għal",
+                "INFOLINE2-2": "pajjiżi parteċipanti",
+                "INFOLINE2-3": "Dan se jiġi kkonvertit għal BTC l-ewwel imbagħad għal MRX.",
+                "INFOLINE3": "Ladarba d-depożitu BTC tiegħek ikun ikklerjat, int tirċievi l-MRX tiegħek fl-indirizz maħtur tiegħek.",
+                "INFOLINE4": "Għal aktar informazzjoni żur",
+                "FIATSWAPSELECTED": "Inti se jiġi dirottat lejn Buy.Metrixcoin.com biex tlesti din it-tranżazzjoni"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ġenerazzjoni ta 'l-Indirizz ta' Swap...",
+            "ALREADYHAVEADDRESS": "Diġà għandek indirizz BTC għal dan l-indirizz",
+            "SWAPUSDMIN": "L-ammont minimu ta 'tpartit ta' USD huwa $ 50",
+            "SWAPUSDMAX": "L-ammont massimu ta 'tpartit ta' USD huwa ta '$ 3000",
+            "NOADDRESS": "Int ma daħħalx indirizz Metrix"
+        }
     }
 }

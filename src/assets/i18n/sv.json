@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adress",
             "ENABLED": "Aktiverad",
-            "NOTENABLEDTITLE": "Masternoder inte aktiverade",
-            "NOTENABLEDINSTR": "För att köra en masternode måste du aktivera masternoder genom att ställa in masternode = 1 och konfigurera masternodeprivkey- och masternodeaddr-variabler i din metrix.conf-fil.",
             "STARTBUTTON": "Starta Lokal",
             "STARTALIASBUTTON": "Starta alias",
-            "STARTALLBUTTON": "Starta alla"
+            "STARTALLBUTTON": "Starta alla",
+            "NOMASTERNODES": "Du har inga masternoder",
+            "NOMNOUTPUTS": "Inga Masternode-utgångar hittades. För att köra en lokal Masternode skicka exakt 2 000 000 mynt till din Masternode-adress och vänta på 15 bekräftelser.",
+            "STOPBUTTON": "Sluta lokalt",
+            "STOPALIASBUTTON": "Stopp Alias",
+            "ADDREMOTE": "Lägg till fjärrmasternod",
+            "REMOVEMN": "Ta bort Masternode",
+            "ADDLOCAL": "Ställ in lokal masternode",
+            "DISABLELOCAL": "Inaktivera lokal masternode",
+            "LOCALNOTRUNNING": "Lokal Masternode körs inte",
+            "REMOTENOTRUNNING": "Remote Masternode hittades inte"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Signera meddelande",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Översikt",
             "TRANSACTIONSTAB": "transaktioner",
             "ADDRESSTABS": "adresser"
+        },
+        "CURRENCY": {
+            "TITLE": "Välj Visa valuta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Det var ett problem med Metrix Core som har orsakat det att säga upp. Det rekommenderas att kontrollera din debug.log-fil för problem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Starta om klienten",
             "CLIENTINVALIDCONFIGTITLE": "Ogiltig metrix.conf Konfiguration",
-            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ogiltig masternode-inställning som gör att Metrix Core slutar omedelbart. Kontrollera den här filen."
+            "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ogiltig masternode-inställning som gör att Metrix Core slutar omedelbart. Kontrollera den här filen.",
+            "ADDREMOTEMNTITLE": "Lägg till fjärrmasternod",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode privat nyckel",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbok",
@@ -295,7 +312,8 @@
             "LOCALE": "Språk...",
             "RESTARTCORE": "Starta om Metrix Core",
             "EXIT": "Utgång",
-            "OPTIONS": "Alternativ..."
+            "OPTIONS": "Alternativ...",
+            "CURRENCIES": "Visa valuta..."
         },
         "ENCRYPT": {
             "TITLE": "Kryptera",
@@ -334,7 +352,9 @@
         "SORTBY": "Sortera efter",
         "SEARCH": "Sök",
         "FEE": "Avgift",
-        "ACCEPTBUTTON": "Acceptera"
+        "ACCEPTBUTTON": "Acceptera",
+        "CONFIRMED": "bekräftat",
+        "UNCONFIRMED": "Obekräftad"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialisering av Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Alla ingångar kräver minst 1 bekräftelse innan de spenderas.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktioner kopieras till Urklipp",
         "TRANSACTIONOUTPUTTOOLARGE": "En av dina betalningar till belopp är för stor för att säkert skicka. Maximalt är 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Din ändring är för stor för att skickas säkert. Maximalt är 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Din ändring är för stor för att skickas säkert. Maximalt är 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Stoppar masternode...",
+        "FAILEDTOWRITECONFIG": "Det gick inte att skriva till din metrix.conf-fil. Kontrollera att filen finns och att Altitude har skrivbehörigheter.",
+        "NOPUBLICUP": "Ingen offentlig IP-adress hittades. Kontrollera din internetanslutning och starta om Altitude.",
+        "CONFIGURINGLOCALMN": "Konfigurerar lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Några sekunder",
@@ -386,5 +410,50 @@
         "MONTHS": "månader",
         "AYEAR": "Ett år",
         "YEARS": "år"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mottagna mynt",
+        "NEWTRANSACTION_TITLE_STAKE": "Mottagna insats",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Mottagen Masternode Belöning"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "februari",
+        "MAR": "FÖRDÄRVA",
+        "APR": "april",
+        "MAY": "MAJ",
+        "JUN": "juni",
+        "JUL": "juli",
+        "AUG": "augusti",
+        "SEP": "september",
+        "OCT": "oktober",
+        "NOV": "november",
+        "DEC": "december"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Du skickar",
+                "YOUGET": "Du får",
+                "MRXADDRESS": "Metrix-adress",
+                "SWAP": "Byta",
+                "SWAPADDRESSES": "Byt adresser",
+                "BTCADDRESS": "BTC-adress",
+                "INFOLINE1": "När du har en BTC-insättningsadress kommer alla BTC som skickas till den adressen automatiskt att bytas ut för MRX till din nominerade MRX-adress.",
+                "INFOLINE2-1": "Transaktioner rensas vanligtvis inom en timme beroende på Bitcoin-blocktiderna. Vi kan acceptera fiat för",
+                "INFOLINE2-2": "deltagande länder",
+                "INFOLINE2-3": "Detta konverteras till BTC först sedan MRX.",
+                "INFOLINE3": "När din BTC-insättning har rensats får du din MRX till din nominerade adress.",
+                "INFOLINE4": "För mer information besök",
+                "FIATSWAPSELECTED": "Du kommer att omdirigeras till Buy.Metrixcoin.com för att slutföra denna transaktion"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Genererar byta adress...",
+            "ALREADYHAVEADDRESS": "Du har redan en BTC-adress för den här adressen",
+            "SWAPUSDMIN": "Det lägsta USD-swapbeloppet är $ 50",
+            "SWAPUSDMAX": "Det maximala USD-swapbeloppet är $ 3000",
+            "NOADDRESS": "Du skrev inte in en Metrix-adress"
+        }
     }
 }

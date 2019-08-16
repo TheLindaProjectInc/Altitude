@@ -8,6 +8,7 @@ import * as helpers from './helpers';
 import * as log from 'electron-log';
 import * as settings from './settings';
 import * as compareVersions from 'compare-versions';
+import * as publicIp from 'public-ip';
 var localClientBinaries = require('../clientBinaries.json');
 
 const sleep = require('util').promisify(setTimeout)
@@ -99,6 +100,12 @@ export default class Client {
                     break;
                 case 'VERSION':
                     this.sendClientVersion();
+                    break;
+                case 'IP':
+                    this.sendPublicIP();
+                    break;
+                case 'MASTERNODE':
+                    this.configureMasternode(data);
                     break;
             }
         });
@@ -377,7 +384,7 @@ export default class Client {
             this.clientConfigFile = new ClientConfigFile();
             if (await helpers.pathExists(this.clientConfigLocation)) {
                 let data = await helpers.readFile(this.clientConfigLocation) as string;
-                let lines = data.split(os.EOL);
+                let lines = data.split('\n');
                 for (let i = 0; i < lines.length; i++) {
                     if (lines[i].indexOf('=') > -1) {
                         lines[i] = lines[i].replace('\r', '').replace('\n', '');
@@ -394,6 +401,29 @@ export default class Client {
             // if we fail to read the config file
         }
         return false;
+    }
+
+    async writeClientConfig() {
+        try {
+            if (await helpers.pathExists(this.clientConfigLocation)) {
+                let data = '';
+                // write keys
+                Object.keys(this.clientConfigFile).forEach(key => {
+                    if (key !== 'nodes' && this.clientConfigFile[key].toString() !== '')
+                        data += `${key}=${this.clientConfigFile[key]}${os.EOL}`;
+                })
+                // write any addnode
+                this.clientConfigFile.nodes.forEach(node => {
+                    data += `addnode=${node}${os.EOL}`;
+                })
+                // write file
+                await helpers.writeFile(this.clientConfigLocation, data);
+                return true;
+            }
+        } catch (ex) {
+            // failed to write file. probably a permission issue
+        }
+        return false
     }
 
     async callClient(method, params = []): Promise<{}> {
@@ -442,6 +472,10 @@ export default class Client {
         if (this.win) this.win.webContents.send('client-node', 'VERSION', this.clientVersion);
     }
 
+    async sendPublicIP() {
+        if (this.win) this.win.webContents.send('client-node', 'IP', await publicIp.v4());
+    }
+
     async checkClientUpdate() {
         try {
             await this.getClientBinaries(false);
@@ -470,6 +504,22 @@ export default class Client {
             }
             this.sendClientVersion();
         }
+    }
+
+    async configureMasternode(options) {
+        if (options.destroy) {
+            // remove
+            this.clientConfigFile.masternode = '';
+            this.clientConfigFile.masternodeprivkey = '';
+            this.clientConfigFile.masternodeaddr = '';
+        } else {
+            // setup
+            this.clientConfigFile.masternode = '1';
+            this.clientConfigFile.masternodeprivkey = options.key;
+            this.clientConfigFile.masternodeaddr = options.ip;
+        }
+        let writeResult = await this.writeClientConfig();
+        if (this.win) this.win.webContents.send('client-node', 'MASTERNODE', writeResult);
     }
 
     destroy() {

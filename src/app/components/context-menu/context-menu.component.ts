@@ -10,7 +10,7 @@ import { ContextMenuService } from './context-menu.service';
 })
 export class ContextMenuComponent {
 
-  @ViewChild('contextMenu') contextMenu: ElementRef;
+  @ViewChild('contextMenu', { static: false }) contextMenu: ElementRef;
 
   menuActive = false;
   position = { left: '0px', top: '0px' };
@@ -21,11 +21,12 @@ export class ContextMenuComponent {
   ) {
     contextMenuService.showContextMenu = (event) => {
       this.menuActive = true;
-      let left = event.x;
+      let left = event.x
       if (left + 200 > window.innerWidth) left = window.innerWidth - 200;
+      left -= 270;
+      let top = event.y - 30;
       this.position.left = left + "px";
-      this.position.top = event.y + "px";
-
+      this.position.top = top + "px";
     }
     contextMenuService.hideContextMenu = () => {
       this.menuActive = false;

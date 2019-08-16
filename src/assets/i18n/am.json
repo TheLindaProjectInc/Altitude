@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "አድራሻ",
             "ENABLED": "ነቅቷል",
-            "NOTENABLEDTITLE": "ማሳታቶኖች አልነቁም",
-            "NOTENABLEDINSTR": "ሜታ ፕሮዲዩትን ለማሄድ ሜታይኔት (ማት) = 1 በማቀናበር ሜታ-ሰርቶቹን ማንቃት እና በ metrix.conf ፋይልዎ ውስጥ 'masternodeprivkey' እና 'masternodeaddr' የሚለዋወጡ ተለዋዋጭዎችን ማቃቀር ያስፈልግዎታል.",
             "STARTBUTTON": "አካባቢያዊ ይጀምሩ",
             "STARTALIASBUTTON": "ቅጽል ስም ይጀምሩ",
-            "STARTALLBUTTON": "ሁሉንም ጀምር"
+            "STARTALLBUTTON": "ሁሉንም ጀምር",
+            "NOMASTERNODES": "ምንም ማስተማሪያ ክፍሎች የሉዎትም።",
+            "NOMNOUTPUTS": "ምንም የማሽን ኮድን ውጤቶች አልገኙም ፡፡ አካባቢያዊ ማ Masodeode ን ለማካሄድ በትክክል 2,000,000 ሳንቲሞችን ወደ ማ Masternode አድራሻዎ ይላኩ እና 15 ማረጋገጫዎችን ይጠብቁ ፡፡",
+            "STOPBUTTON": "አካባቢያዊ አቁም።",
+            "STOPALIASBUTTON": "ተለዋጭ ስም አቁም ፡፡",
+            "ADDREMOTE": "የርቀት ማሳጅode ያክሉ።",
+            "REMOVEMN": "Masternode ን ያስወግዱ።",
+            "ADDLOCAL": "አካባቢያዊ ማስተርቦode ያዘጋጁ።",
+            "DISABLELOCAL": "አካባቢያዊ ማስተርቦodeን ያሰናክሉ።",
+            "LOCALNOTRUNNING": "አካባቢያዊ ማስዋቢያ",
+            "REMOTENOTRUNNING": "የርቀት ማሳጅode አልተገኘም።"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "መልዕክት ይፈርሙ",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "አጠቃላይ እይታ",
             "TRANSACTIONSTAB": "ግብይቶች",
             "ADDRESSTABS": "አድራሻዎች"
+        },
+        "CURRENCY": {
+            "TITLE": "ማሳያ ምንዛሬን ይምረጡ።"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ሊንዳ ኮር ችግሩ እንዲቋረጥ ምክንያት የሆነ ችግር ነበር. ለችግሮች የእርማትዎን ስህተት ማረም እንዲመረምሩ ተመክሯል.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ደንበኛውን እንደገና አስጀምር",
             "CLIENTINVALIDCONFIGTITLE": "ልክ ያልሆነ የ metrix.conf ውቅረት",
-            "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ."
+            "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ.",
+            "ADDREMOTEMNTITLE": "የርቀት ማሳጅode ያክሉ።",
+            "ADDREMOTEMNALIAS": "ማሳጅode ተለዋጭ ስም ፡፡",
+            "ADDREMOTEMNIP": "Masternode IP: ወደብ",
+            "ADDREMOTEMNKEY": "ማሳጅode የግል ቁልፍ ፡፡",
+            "ADDREMOTEMNTXHASH": "ማሳጅode ትሪክስ ሃሽ ፡፡",
+            "ADDREMOTEMNTXINDEX": "Masternode ትሪክስ መረጃ ጠቋሚ።"
         },
         "ADDRESSBOOK": {
             "TITLE": "አድራሻ መመዝገቢያ ደብተር",
@@ -295,7 +312,8 @@
             "LOCALE": "ቋንቋ...",
             "RESTARTCORE": "ሊንዳ ኮርሶን ዳግም ያስጀምሩ",
             "EXIT": "ውጣ",
-            "OPTIONS": "አማራጮች..."
+            "OPTIONS": "አማራጮች...",
+            "CURRENCIES": "ማሳያ ምንዛሬ..."
         },
         "ENCRYPT": {
             "TITLE": "አመስጥር",
@@ -334,7 +352,9 @@
         "SORTBY": "ቅደምተከተሉ የተስተካከለው",
         "SEARCH": "ፍለጋ",
         "FEE": "ክፍያ",
-        "ACCEPTBUTTON": "ተቀበል"
+        "ACCEPTBUTTON": "ተቀበል",
+        "CONFIRMED": "ተረጋግ .ል ፡፡",
+        "UNCONFIRMED": "ያልተረጋገጠ።"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "የሊንዳ ዋና አካል...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "ሁሉም ግብዓቶች ከማውጣት በፊት ቢያንስ 1 ማረጋገጫ ይጠይቃሉ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ግብይት ወደ ቅንጥብ ሰሌዳ ተቀድቷል",
         "TRANSACTIONOUTPUTTOOLARGE": "ከሚከፈልዎት ውስጥ አንዱ ክፍያ በደህንነት ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
-        "TRANSACTIONCHANGETOOLARGE": "ለውጦችዎ በደህና ሁኔታ ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው."
+        "TRANSACTIONCHANGETOOLARGE": "ለውጦችዎ በደህና ሁኔታ ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
+        "STOPPINGMASTERNODE": "የማሳደጊያ ቁልፍን በማቆም ላይ...",
+        "FAILEDTOWRITECONFIG": "በ ‹ሜሪክስክስ› ፋይልዎ ላይ መጻፍ ላይ ችግር ነበር ፡፡ ፋይሉ ካለ እና ከፍታው የመፃፍ ፈቃዶች እንዳለው ያረጋግጡ።",
+        "NOPUBLICUP": "ምንም ይፋዊ አይፒ አድራሻ አልተገኘም። የበይነመረብ ግንኙነትዎን ይፈትሹ እና ከፍታ እንደገና ይጀምሩ።",
+        "CONFIGURINGLOCALMN": "አካባቢያዊ ማ Masodeode ን በማዋቀር ላይ..."
     },
     "TIME": {
         "AFEWSECONDS": "ጥቂት ሰከንዶች",
@@ -386,5 +410,50 @@
         "MONTHS": "ወር",
         "AYEAR": "አንድ ዓመት",
         "YEARS": "ዓመታት"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "የተቀበሉ ሳንቲሞች",
+        "NEWTRANSACTION_TITLE_STAKE": "የተቀበሉት ክፍያ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "የተቀበሉት የመድረክ ማሸነፍ"
+    },
+    "MONTH": {
+        "JAN": "ጃን",
+        "FEB": "FEB",
+        "MAR": "ማር",
+        "APR": "ኤ.ፒ.አር.",
+        "MAY": "ግንቦት",
+        "JUN": "ጁን።",
+        "JUL": "ጁሊ",
+        "AUG": "ኤ.ጂ.ጂ.",
+        "SEP": "SEP",
+        "OCT": "ኦ.ቲ.ኦ.",
+        "NOV": "ኑቭ",
+        "DEC": "ዲ.ሲ."
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "እርስዎ ይላኩ።",
+                "YOUGET": "ያገኛሉ ፡፡",
+                "MRXADDRESS": "ሜታክስ አድራሻ።",
+                "SWAP": "ቀይር",
+                "SWAPADDRESSES": "አድራሻዎችን ቀይር",
+                "BTCADDRESS": "BTC አድራሻ።",
+                "INFOLINE1": "አንዴ የ BTC ተቀማጭ አድራሻ ካለዎት ወደዚያ አድራሻ የሚላክ ማንኛውም BTC በቀጥታ ለ MRX አድራሻዎ በተመረጠው MRX አድራሻ ይቀየራል ፡፡",
+                "INFOLINE2-1": "በ Bitcoin የማገጃ ጊዜዎች መሠረት ግብይቶች በተለምዶ በአንድ ሰዓት ውስጥ ግልፅ ያደርጋሉ ፡፡ ለእሳት መቀበል እንችላለን ፡፡",
+                "INFOLINE2-2": "ተሳታፊ ሀገሮች",
+                "INFOLINE2-3": "ይህ መጀመሪያ ወደ BTC በመጀመሪያ ወደ MRX ይቀየራል።",
+                "INFOLINE3": "የ BTC ሂሳብዎ አንዴ ከፀደቀ MRXዎን በተሰየመ አድራሻዎ ውስጥ ይቀበላሉ።",
+                "INFOLINE4": "ለበለጠ መረጃ ጎብኝ።",
+                "FIATSWAPSELECTED": "ይህንን ግብይት ለማጠናቀቅ ወደ Buy.Metrixcoin.com ይዛወራሉ።"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "የመቀየሪያ አድራሻ በማመንጨት ላይ...",
+            "ALREADYHAVEADDRESS": "ለዚህ አድራሻ የ BTC አድራሻ ቀድሞውኑ አልዎት።",
+            "SWAPUSDMIN": "ዝቅተኛው የአሜሪካን ዶላር መቀየሪያ መጠን 50 ዶላር ነው።",
+            "SWAPUSDMAX": "ከፍተኛው የአሜሪካ ዶላር ማወዛወዝ መጠን 3000 ዶላር ነው።",
+            "NOADDRESS": "ሜታክስ አድራሻ አላስገቡም።"
+        }
     }
 }

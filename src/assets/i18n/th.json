@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "ที่อยู่",
             "ENABLED": "เปิดการใช้งาน",
-            "NOTENABLEDTITLE": "Masternodes ไม่ได้เปิดใช้งาน",
-            "NOTENABLEDINSTR": "ในการใช้งาน masternode คุณจะต้องเปิดใช้งาน masternode โดยการตั้งค่า masternode = 1 และกำหนดค่าตัวแปร 'masternodeprivkey' และ 'masternodeaddr' ในไฟล์ metrix.conf ของคุณ",
             "STARTBUTTON": "เริ่มต้น Local",
             "STARTALIASBUTTON": "เริ่มนามแฝง",
-            "STARTALLBUTTON": "เริ่มต้นทั้งหมด"
+            "STARTALLBUTTON": "เริ่มต้นทั้งหมด",
+            "NOMASTERNODES": "คุณไม่มี masternodes ใด ๆ",
+            "NOMNOUTPUTS": "ไม่พบเอาต์พุต Masternode ในการใช้งาน Masternode ในพื้นที่ส่ง 2,000,000 เหรียญไปยังที่อยู่ Masternode ของคุณและรอการยืนยัน 15 ครั้ง",
+            "STOPBUTTON": "หยุดท้องถิ่น",
+            "STOPALIASBUTTON": "หยุดนามแฝง",
+            "ADDREMOTE": "เพิ่ม Masternode ระยะไกล",
+            "REMOVEMN": "ลบ Masternode",
+            "ADDLOCAL": "ตั้งค่า Local Masternode",
+            "DISABLELOCAL": "ปิดใช้งาน Local Masternode",
+            "LOCALNOTRUNNING": "Local Masternode ไม่ทำงาน",
+            "REMOTENOTRUNNING": "ไม่พบ Masternode ระยะไกล"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "ลงชื่อเข้าใช้ข้อความ",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "ภาพรวม",
             "TRANSACTIONSTAB": "การทำธุรกรรม",
             "ADDRESSTABS": "ที่อยู่"
+        },
+        "CURRENCY": {
+            "TITLE": "เลือกสกุลเงินที่แสดง"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับลินดาคอร์ที่ทำให้มันสิ้นสุดลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log สำหรับปัญหา",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "รีสตาร์ทไคลเอ็นต์",
             "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้"
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้",
+            "ADDREMOTEMNTITLE": "เพิ่ม Masternode ระยะไกล",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: พอร์ต",
+            "ADDREMOTEMNKEY": "รหัสส่วนตัวของ Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "ดัชนี Trtern ของ Masternode"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
@@ -295,7 +312,8 @@
             "LOCALE": "ภาษา...",
             "RESTARTCORE": "เริ่มต้น Metrix Core ใหม่",
             "EXIT": "ทางออก",
-            "OPTIONS": "ตัวเลือก..."
+            "OPTIONS": "ตัวเลือก...",
+            "CURRENCIES": "แสดงสกุลเงิน..."
         },
         "ENCRYPT": {
             "TITLE": "การเข้ารหัสลับ",
@@ -334,7 +352,9 @@
         "SORTBY": "เรียงตาม",
         "SEARCH": "ค้นหา",
         "FEE": "ค่าธรรมเนียม",
-        "ACCEPTBUTTON": "ยอมรับ"
+        "ACCEPTBUTTON": "ยอมรับ",
+        "CONFIRMED": "ได้รับการยืนยัน",
+        "UNCONFIRMED": "ไม่มีการยืนยัน"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "กำลังเริ่มต้นใช้งาน Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "อินพุตทั้งหมดต้องมีการยืนยันอย่างน้อย 1 ครั้งก่อนการใช้จ่าย",
         "TRANSACTIONSCOPIEDCLIPBOARD": "คัดลอกธุรกรรมไปยังคลิปบอร์ดแล้ว",
         "TRANSACTIONOUTPUTTOOLARGE": "หนึ่งในจำนวนเงินที่คุณชำระมีขนาดใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
-        "TRANSACTIONCHANGETOOLARGE": "การเปลี่ยนแปลงของคุณใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992"
+        "TRANSACTIONCHANGETOOLARGE": "การเปลี่ยนแปลงของคุณใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
+        "STOPPINGMASTERNODE": "กำลังหยุด masternode...",
+        "FAILEDTOWRITECONFIG": "มีปัญหาในการเขียนไปยังไฟล์ metrix.conf ของคุณ ตรวจสอบไฟล์ที่มีอยู่และระดับความสูงนั้นมีสิทธิ์ในการเขียน",
+        "NOPUBLICUP": "ไม่พบที่อยู่ IP สาธารณะ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วรีสตาร์ท Altitude",
+        "CONFIGURINGLOCALMN": "กำลังกำหนดค่า Masternode ในเครื่อง..."
     },
     "TIME": {
         "AFEWSECONDS": "ไม่กี่วินาที",
@@ -386,5 +410,50 @@
         "MONTHS": "เดือน",
         "AYEAR": "ปี",
         "YEARS": "ปี"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "รับเหรียญ",
+        "NEWTRANSACTION_TITLE_STAKE": "รับเงินเดิมพัน",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ได้รับรางวัล Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "กุมภาพันธ์",
+        "MAR": "MAR",
+        "APR": "เมษายน",
+        "MAY": "อาจ",
+        "JUN": "มิถุนายน",
+        "JUL": "กรกฎาคม",
+        "AUG": "สิงหาคม",
+        "SEP": "กันยายน",
+        "OCT": "ตุลาคม",
+        "NOV": "พฤศจิกายน",
+        "DEC": "ธันวาคม"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "คุณส่ง",
+                "YOUGET": "คุณได้รับ",
+                "MRXADDRESS": "ที่อยู่ Metrix",
+                "SWAP": "แลกเปลี่ยน",
+                "SWAPADDRESSES": "สลับที่อยู่",
+                "BTCADDRESS": "ที่อยู่ BTC",
+                "INFOLINE1": "เมื่อคุณมีที่อยู่การฝากเงิน BTC ใด ๆ BTC ที่ส่งไปยังที่อยู่นั้นจะถูกเปลี่ยนเป็น MRX โดยอัตโนมัติเป็นที่อยู่ MRX ที่คุณเลือก",
+                "INFOLINE2-1": "การทำธุรกรรมมักจะชัดเจนภายในหนึ่งชั่วโมงขึ้นอยู่กับเวลาของ Bitcoin เราสามารถยอมรับคำสั่งของ",
+                "INFOLINE2-2": "ประเทศที่เข้าร่วม",
+                "INFOLINE2-3": "สิ่งนี้จะถูกแปลงเป็น BTC ก่อนจากนั้น MRX",
+                "INFOLINE3": "เมื่อการฝาก BTC ของคุณได้รับการเคลียร์คุณจะได้รับ MRX ของคุณไปยังที่อยู่ที่ระบุไว้",
+                "INFOLINE4": "สำหรับการเยี่ยมชมข้อมูลเพิ่มเติม",
+                "FIATSWAPSELECTED": "คุณจะถูกนำไปยัง Buy.Metrixcoin.com เพื่อทำธุรกรรมนี้ให้เสร็จสมบูรณ์"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "กำลังสร้างที่อยู่ Swap...",
+            "ALREADYHAVEADDRESS": "คุณมีที่อยู่ BTC สำหรับที่อยู่นี้แล้ว",
+            "SWAPUSDMIN": "จำนวนเงินแลกเปลี่ยนขั้นต่ำ USD คือ $ 50",
+            "SWAPUSDMAX": "จำนวนเงินแลกเปลี่ยน USD สูงสุดคือ $ 3000",
+            "NOADDRESS": "คุณไม่ได้ป้อนที่อยู่ Metrix"
+        }
     }
 }

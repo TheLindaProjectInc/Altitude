@@ -23,6 +23,7 @@ import {
     faDatabase,
     faCheckCircle,
     faTimesCircle,
+    faCircleNotch,
     faLockOpen,
     faAddressBook,
     faArrowLeft,
@@ -38,7 +39,8 @@ import {
     faExclamationCircle,
     faLink,
     faChevronDown,
-    faChevronRight
+    faChevronRight,
+    faSearch
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -66,6 +68,7 @@ export function setupIcons() {
         faDatabase,
         faCheckCircle,
         faTimesCircle,
+        faCircleNotch,
         faLockOpen,
         faAddressBook,
         faArrowLeft,
@@ -81,6 +84,7 @@ export function setupIcons() {
         faExclamationCircle,
         faLink,
         faChevronDown,
-        faChevronRight
+        faChevronRight,
+        faSearch
     );
 }

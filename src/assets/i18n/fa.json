@@ -68,11 +68,19 @@
             "IP": "آی پی",
             "ADDRESS": "نشانی",
             "ENABLED": "فعال شده است",
-            "NOTENABLEDTITLE": "Masternodes فعال نیست",
-            "NOTENABLEDINSTR": "برای اجرای masternode شما باید masternodes را با تنظیم masternode = 1 و تنظیمات masternodeprivkey و masternodeaddr در فایل metrix.conf خود تنظیم کنید.",
             "STARTBUTTON": "شروع محلی",
             "STARTALIASBUTTON": "شروع نام مستعار",
-            "STARTALLBUTTON": "شروع همه"
+            "STARTALLBUTTON": "شروع همه",
+            "NOMASTERNODES": "شما هیچ مزرندی ندارید",
+            "NOMNOUTPUTS": "هیچ خروجی Masternode یافت نشد. برای اجرای Masternode محلی دقیقا 2،000،000 سکه را به آدرس Masternode خود ارسال کنید و منتظر 15 تایید باشید.",
+            "STOPBUTTON": "توقف محلی",
+            "STOPALIASBUTTON": "توقف نام مستعار",
+            "ADDREMOTE": "اضافه کردن Masternode از راه دور",
+            "REMOVEMN": "حذف Masternode",
+            "ADDLOCAL": "راه اندازی Masternode محلی",
+            "DISABLELOCAL": "غیر فعال کردن Masternode محلی",
+            "LOCALNOTRUNNING": "Masternode محلی در حال اجرا نیست",
+            "REMOTENOTRUNNING": "Masterode از راه دور یافت نشد"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "پیام امضا",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "بررسی اجمالی",
             "TRANSACTIONSTAB": "معاملات",
             "ADDRESSTABS": "آدرس"
+        },
+        "CURRENCY": {
+            "TITLE": "انتخاب نمایش ارز"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "لیندا کور مشکل داشت که موجب خفه شدن آن شد. توصیه می شود فایل debug.log خود را برای مسائل بررسی کنید.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "راه اندازی مجدد مشتری",
             "CLIENTINVALIDCONFIGTITLE": "پیکربندی metrix.conf نامعتبر است",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf شما دارای تنظیمات masternode نامعتبر است که باعث می شود لیندا هسته بلافاصله خروج. لطفا این فایل را بررسی کنید"
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf شما دارای تنظیمات masternode نامعتبر است که باعث می شود لیندا هسته بلافاصله خروج. لطفا این فایل را بررسی کنید",
+            "ADDREMOTEMNTITLE": "اضافه کردن Masternode از راه دور",
+            "ADDREMOTEMNALIAS": "نام مستعار Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: بندر",
+            "ADDREMOTEMNKEY": "کلید خصوصی Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx هاش",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "دفترچه آدرس",
@@ -295,7 +312,8 @@
             "LOCALE": "زبان...",
             "RESTARTCORE": "راه اندازی لیندا هسته",
             "EXIT": "خروج",
-            "OPTIONS": "گزینه ها..."
+            "OPTIONS": "گزینه ها...",
+            "CURRENCIES": "ارزشیابی..."
         },
         "ENCRYPT": {
             "TITLE": "رمزگذاری",
@@ -334,7 +352,9 @@
         "SORTBY": "مرتب سازی بر اساس",
         "SEARCH": "جستجو کردن",
         "FEE": "هزینه",
-        "ACCEPTBUTTON": "تایید کنید"
+        "ACCEPTBUTTON": "تایید کنید",
+        "CONFIRMED": "تایید شده",
+        "UNCONFIRMED": "تأیید نشده"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "شروع لیندا هسته...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "همه ورودیها قبل از صرف هزینه حداقل 1 تایید نیاز دارند.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "معاملات به کلیپ بورد کپی شده است",
         "TRANSACTIONOUTPUTTOOLARGE": "یکی از مبلغ پرداختی شما به مبلغ بسیار زیاد است تا به راحتی ارسال شود. حداکثر 90،071،992.54740992 است.",
-        "TRANSACTIONCHANGETOOLARGE": "تغییر شما برای ارسال ایمن بسیار بزرگ است. حداکثر 90،071،992.54740992 است."
+        "TRANSACTIONCHANGETOOLARGE": "تغییر شما برای ارسال ایمن بسیار بزرگ است. حداکثر 90،071،992.54740992 است.",
+        "STOPPINGMASTERNODE": "متوقف کردن ماشین...",
+        "FAILEDTOWRITECONFIG": "یک مشکل در حال نوشتن به فایل metrix.conf شما بود. بررسی فایل موجود است و ارتفاع دارای مجوزهای نوشتن است.",
+        "NOPUBLICUP": "هیچ آدرس IP عمومی یافت نشد. اتصال اینترنت خود را بررسی کنید و ارتفاع را دوباره راه اندازی کنید.",
+        "CONFIGURINGLOCALMN": "پیکربندی Masternode محلی..."
     },
     "TIME": {
         "AFEWSECONDS": "چند ثانیه",
@@ -386,5 +410,50 @@
         "MONTHS": "ماه ها",
         "AYEAR": "یک سال",
         "YEARS": "سال ها"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "سکه های دریافت شده",
+        "NEWTRANSACTION_TITLE_STAKE": "مقیاس دریافت شده",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "دریافت پاداش Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "ممکن است",
+        "JUN": "جون",
+        "JUL": "جولای",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "تو میفرستی",
+                "YOUGET": "شما دریافت می کنید",
+                "MRXADDRESS": "آدرس متریکس",
+                "SWAP": "تعویض",
+                "SWAPADDRESSES": "آدرس ها را عوض کنید",
+                "BTCADDRESS": "آدرس BTC",
+                "INFOLINE1": "هنگامی که یک آدرس سپرده BTC دارید ، هر BTC ارسال شده به آن آدرس به طور خودکار برای MRX به آدرس MRX نامزد شما تعویض می شود.",
+                "INFOLINE2-1": "معاملات بسته به زمان بلوک بیت کوین به طور معمول طی یک ساعت مشخص می شوند. ما می توانیم فیات را بپذیریم",
+                "INFOLINE2-2": "کشورهای شرکت کننده",
+                "INFOLINE2-3": "این ابتدا به BTC و سپس MRX تبدیل می شود.",
+                "INFOLINE3": "هنگامی که سپرده BTC شما پاک شد ، MRX خود را در آدرس نامگذاری شده خود دریافت خواهید کرد.",
+                "INFOLINE4": "برای اطلاعات بیشتر مراجعه کنید",
+                "FIATSWAPSELECTED": "برای تکمیل این معامله به Buy.Metrixcoin.com هدایت می شوید"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "ایجاد آدرس مبادله...",
+            "ALREADYHAVEADDRESS": "شما قبلاً یک آدرس BTC برای این آدرس دارید",
+            "SWAPUSDMIN": "حداقل مبلغ مبلغ USD 50 دلار است",
+            "SWAPUSDMAX": "حداکثر مبلغ USD 3000 دلار است",
+            "NOADDRESS": "شما آدرس Metrix وارد نکردید"
+        }
     }
 }

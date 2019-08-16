@@ -1,0 +1,33 @@
+<!-- remote or has local -->
+<div class="content-card" *ngIf="(!local && mn) || mn.running">
+    <fa-icon [title]="statusText" [ngClass]="{'success':running,'danger':!running}" class="fa-2x" icon="network-wired">
+    </fa-icon>
+    <h5>{{mn.pubkey}}</h5>
+    <h5>{{mn.address}}</h5>
+    <h5 *ngIf="mn.protocolVersion">
+        {{ 'PAGES.MASTERNODES.PROTOCOL' | translate }}: {{mn.protocolVersion}}
+    </h5>
+    <h5 *ngIf="mn.lastTimeSeen">
+        {{ 'PAGES.MASTERNODES.LASTSEEN' | translate }}:
+        {{helpers.formatTimeEplased(mn.lastTimeSeen,dateNow)}}
+        {{'MISC.AGO' |translate }}
+    </h5>
+    <h5 *ngIf="mn.activeseconds">
+        {{ 'PAGES.MASTERNODES.ACTIVETIME' | translate }}: {{helpers.formatTime(mn.activeseconds,dateNow)}}
+    </h5>
+    <button *ngIf="!running && local" class="btn btn-default" (click)="start.emit()">
+        {{'PAGES.MASTERNODES.STARTBUTTON' | translate }}
+    </button>
+    <h5 *ngIf="!running && !local">
+        {{'PAGES.MASTERNODES.REMOTENOTRUNNING' | translate }}
+    </h5>
+</div>
+<!-- local -->
+<div class="content-card" *ngIf="local && (!mn || !mn.running)">
+    <fa-icon class="danger fa-2x" icon="network-wired"></fa-icon>
+    <h5>{{ 'PAGES.MASTERNODES.LOCALNOTRUNNING' | translate }}</h5>
+    <h5 *ngIf="!canStart">{{ 'PAGES.MASTERNODES.NOMNOUTPUTS' | translate }}</h5>
+    <button *ngIf="canStart" class="btn btn-default" (click)="start.emit()">
+        {{'PAGES.MASTERNODES.STARTBUTTON' | translate }}
+    </button>
+</div>

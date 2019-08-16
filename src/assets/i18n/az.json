@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Ünvanı",
             "ENABLED": "Etkin",
-            "NOTENABLEDTITLE": "Masternodes effektiv deyil",
-            "NOTENABLEDINSTR": "Bir masternode çalıştırmak üçün masternode = 1 ayarlayarak ve 'masternodeprivkey' ve 'masternodeaddr' değişkenlerini metrix.conf dosyanızda yapılandırarak masternodes etkinleştirmeniz lazımdır.",
             "STARTBUTTON": "Yerli yerə başla",
             "STARTALIASBUTTON": "Alias başlayın",
-            "STARTALLBUTTON": "Hamısını başla"
+            "STARTALLBUTTON": "Hamısını başla",
+            "NOMASTERNODES": "Heç bir masternodunuz yoxdur",
+            "NOMNOUTPUTS": "Masternode çıxışı tapılmadı. Yerli Masternode'u işlətmək üçün Masternode adresinizə 2,000,000 sikkə göndərin və 15 təsdiq gözləyin.",
+            "STOPBUTTON": "Yerli durun",
+            "STOPALIASBUTTON": "Ləqəbi dayandırın",
+            "ADDREMOTE": "Uzaq Masternode əlavə edin",
+            "REMOVEMN": "Masternode çıxarın",
+            "ADDLOCAL": "Yerli Masternode'u qurun",
+            "DISABLELOCAL": "Yerli Masternode'u deaktiv edin",
+            "LOCALNOTRUNNING": "Yerli Masternode İşləmir",
+            "REMOTENOTRUNNING": "Uzaq Masternode tapılmadı"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "İmza mesajı",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Baxış",
             "TRANSACTIONSTAB": "Əməliyyatlar",
             "ADDRESSTABS": "Ünvanlar"
+        },
+        "CURRENCY": {
+            "TITLE": "Göstərmək Valyuta seçin"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ilə əlaqədar bir problem var idi ki bu da onu sona çatdırdı. Məsələlər üçün debug.log faylını yoxlamaq məsləhətdir.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Müştərini yenidən başladın",
             "CLIENTINVALIDCONFIGTITLE": "Yanlış metrix.conf Konfiqurasiyası",
-            "CLIENTINVALIDCONFIGINFO": "Sizin metrix.conf-nun Metrix Core-nun dərhal çıxışına səbəb olan qeyri-qanuni masternode qurğusu var. Xahiş edirik bu faylları yoxlayın."
+            "CLIENTINVALIDCONFIGINFO": "Sizin metrix.conf-nun Metrix Core-nun dərhal çıxışına səbəb olan qeyri-qanuni masternode qurğusu var. Xahiş edirik bu faylları yoxlayın.",
+            "ADDREMOTEMNTITLE": "Uzaq Masternode əlavə edin",
+            "ADDREMOTEMNALIAS": "Masternode ləqəbi",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Şəxsi Açar",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Ünvan Kitab",
@@ -295,7 +312,8 @@
             "LOCALE": "Dil...",
             "RESTARTCORE": "Metrix Core'u yenidən başladın",
             "EXIT": "Çıxın",
-            "OPTIONS": "Seçimlər..."
+            "OPTIONS": "Seçimlər...",
+            "CURRENCIES": "Valyuta göstər..."
         },
         "ENCRYPT": {
             "TITLE": "Şifrele",
@@ -334,7 +352,9 @@
         "SORTBY": "Sırala",
         "SEARCH": "Axtarış",
         "FEE": "Haqq",
-        "ACCEPTBUTTON": "Qəbul edin"
+        "ACCEPTBUTTON": "Qəbul edin",
+        "CONFIRMED": "Təsdiqləndi",
+        "UNCONFIRMED": "Təsdiqlənməmişdir"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core-nun təşəbbüsü...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Bütün məlumatlar xərcləmə əvvəli ən azı 1 razılaşma tələb edir.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Panoya kopyalanan əməliyyatlar",
         "TRANSACTIONOUTPUTTOOLARGE": "Məbləğlərinizdən birinin təhlükəsiz şəkildə göndərilməsi üçün çox böyükdür. Maksimum 90,071,992.54740992'dir.",
-        "TRANSACTIONCHANGETOOLARGE": "Sizin dəyişiklik təhlükəsiz göndərmək üçün çox böyükdür. Maksimum 90,071,992.54740992'dir."
+        "TRANSACTIONCHANGETOOLARGE": "Sizin dəyişiklik təhlükəsiz göndərmək üçün çox böyükdür. Maksimum 90,071,992.54740992'dir.",
+        "STOPPINGMASTERNODE": "Masternode dayandırılır...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf faylınıza yazmaqda problem oldu. Faylın mövcudluğunu və Altlıqın yazma icazəsi olduğunu yoxlayın.",
+        "NOPUBLICUP": "İctimai IP ünvanı tapılmadı. İnternet bağlantınızı yoxlayın və Altlıq səviyyəsini yenidən başladın.",
+        "CONFIGURINGLOCALMN": "Yerli Masternode tənzimlənir..."
     },
     "TIME": {
         "AFEWSECONDS": "Bir neçə saniyə",
@@ -386,5 +410,50 @@
         "MONTHS": "aylar",
         "AYEAR": "Bir il",
         "YEARS": "illərdir"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Pul aldım",
+        "NEWTRANSACTION_TITLE_STAKE": "Alınan pul",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode mükafatı aldı"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "BİLƏR",
+        "JUN": "İYUN",
+        "JUL": "İYUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Göndərirsən",
+                "YOUGET": "Get",
+                "MRXADDRESS": "Metrix ünvanı",
+                "SWAP": "Mübadilə",
+                "SWAPADDRESSES": "Ünvanları dəyişdirin",
+                "BTCADDRESS": "BTC ünvanı",
+                "INFOLINE1": "Bir BTC depozit adresiniz olduqdan sonra həmin ünvana göndərilən hər bir BTC avtomatik olaraq MRX üçün təyin edilmiş MRX adresinizə daxil olur.",
+                "INFOLINE2-1": "Əməliyyatlar adətən Bitcoin blok vaxtından asılı olaraq bir saat ərzində təmizlənir. Üçün fiat qəbul edə bilərik",
+                "INFOLINE2-2": "iştirak edən ölkələr",
+                "INFOLINE2-3": "Bu əvvəl BTC-yə, sonra MRX-yə çevriləcəkdir.",
+                "INFOLINE3": "BTC depozitiniz təmizləndikdən sonra MRX-ni təyin olunmuş ünvana daxil edəcəksiniz.",
+                "INFOLINE4": "Daha çox məlumat üçün",
+                "FIATSWAPSELECTED": "Bu əməliyyatı başa çatdırmaq üçün Buy.Metrixcoin.com saytına yönləndiriləcəksiniz"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Mübadilə ünvanı yaradılır...",
+            "ALREADYHAVEADDRESS": "Artıq bu ünvan üçün BTC ünvanı var",
+            "SWAPUSDMIN": "USD svopunun minimum məbləği 50 dollardır",
+            "SWAPUSDMAX": "Maksimum USD svop məbləği 3000 dollardır",
+            "NOADDRESS": "Metrix ünvanı daxil etmədiniz"
+        }
     }
 }

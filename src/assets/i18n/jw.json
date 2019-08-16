@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Alamat",
             "ENABLED": "Diaktifake",
-            "NOTENABLEDTITLE": "Masternodes ora aktif",
-            "NOTENABLEDINSTR": "Kanggo mbukak masternode sampeyan kudu ngaktifake masternodes kanthi nyetel masternode = 1 lan ngonfigurasi variabel 'masternodeprivkey' lan 'masternodeaddr' ing file metrix.conf.",
             "STARTBUTTON": "Mulai Lokal",
             "STARTALIASBUTTON": "Mulai Alias",
-            "STARTALLBUTTON": "Mulai Kabeh"
+            "STARTALLBUTTON": "Mulai Kabeh",
+            "NOMASTERNODES": "Sampeyan ora duwe masternodes",
+            "NOMNOUTPUTS": "Ora ana asil Masternode sing ditemokake. Kanggo mbukak lokal Masternode ngirim dhuwit 2.000.000 persis menyang alamat Masternode lan ngenteni 15 konfirmasi.",
+            "STOPBUTTON": "Mungkasi Lokal",
+            "STOPALIASBUTTON": "Stop Alias",
+            "ADDREMOTE": "Nambah Remote Masternode",
+            "REMOVEMN": "Mbusak Masternode",
+            "ADDLOCAL": "Nggawe Lokal Masternode",
+            "DISABLELOCAL": "Nonaktif Lokal Masternode",
+            "LOCALNOTRUNNING": "Local Masternode Not Running",
+            "REMOTENOTRUNNING": "Masternode ora ditemokake"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Mlebu pesen",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Ringkesan",
             "TRANSACTIONSTAB": "Transaksi",
             "ADDRESSTABS": "Alamat"
+        },
+        "CURRENCY": {
+            "TITLE": "Pilih Currency Tampilan"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ana masalah karo Metrix Core sing wis nyebabake masalah kasebut. Disaranake mriksa berkas debug.log kanggo masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Wiwiti maneh Klien",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf sampeyan duwe persiyapan masternode sing bener sing bakal nyebabake Metrix Core metu langsung. Mangga dipriksa berkas iki."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf sampeyan duwe persiyapan masternode sing bener sing bakal nyebabake Metrix Core metu langsung. Mangga dipriksa berkas iki.",
+            "ADDREMOTEMNTITLE": "Nambah Remote Masternode",
+            "ADDREMOTEMNALIAS": "Alias Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masanger Kunci pribadi",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -295,7 +312,8 @@
             "LOCALE": "Basa...",
             "RESTARTCORE": "Wiwiti maneh Metrix Core",
             "EXIT": "Metu",
-            "OPTIONS": "Pilihan..."
+            "OPTIONS": "Pilihan...",
+            "CURRENCIES": "Tampilan Currency..."
         },
         "ENCRYPT": {
             "TITLE": "Enkripsi",
@@ -334,7 +352,9 @@
         "SORTBY": "Ngurutake",
         "SEARCH": "Nggoleki",
         "FEE": "Biaya",
-        "ACCEPTBUTTON": "Nampa"
+        "ACCEPTBUTTON": "Nampa",
+        "CONFIRMED": "Dikonfirmasi",
+        "UNCONFIRMED": "Ora ditemtokake"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Kabeh input kudu minimal 1 konfirmasi sadurunge mbuwang.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin menyang clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Siji bayaran kanggo jumlah gedhe banget kanggo dikirim kanthi aman. Maksimum yaiku 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Owah-owahan sampeyan terlalu gedhe kanggo dikirim kanthi aman. Maksimum yaiku 90.071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Owah-owahan sampeyan terlalu gedhe kanggo dikirim kanthi aman. Maksimum yaiku 90.071.992.54740992.",
+        "STOPPINGMASTERNODE": "Mungkasi masternode...",
+        "FAILEDTOWRITECONFIG": "Ana masalah nulis kanggo file metrix.conf sampeyan. Priksa file sing ana lan sing Altitude wis nulis ijin.",
+        "NOPUBLICUP": "Ora ana alamat IP Public. Priksa sambungan internet lan miwiti maneh Altitude.",
+        "CONFIGURINGLOCALMN": "Ngonfigurasi lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Sawetara detik",
@@ -386,5 +410,50 @@
         "MONTHS": "sasi",
         "AYEAR": "Setahun",
         "YEARS": "taun"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ditampa Koin",
+        "NEWTRANSACTION_TITLE_STAKE": "Ditampa Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Nampa Ganjaran Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "MAY",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Sampeyan Kirim",
+                "YOUGET": "Sampeyan Njaluk",
+                "MRXADDRESS": "Alamat Metrix",
+                "SWAP": "Pertawa",
+                "SWAPADDRESSES": "Alamat Pertukaran",
+                "BTCADDRESS": "Alamat BTC",
+                "INFOLINE1": "Sawise sampeyan duwe alamat simpenan BTC, alamat BTC sing dikirim menyang alamat kasebut, kanthi otomatis bakal diganti MRX menyang alamat MRX sing dipilih.",
+                "INFOLINE2-1": "Transaksi biasane cetha sajrone siji jam gumantung ing blok blok Bitcoin. Kita bisa nampa fiat kanggo",
+                "INFOLINE2-2": "negara sing melu",
+                "INFOLINE2-3": "Iki bakal diowahi dadi BTC dhisik banjur MRX.",
+                "INFOLINE3": "Sawise simpenan BTC wis ngresiki, sampeyan bakal nampa MRX menyang alamat sing dipilih.",
+                "INFOLINE4": "Kanggo riko informasi luwih lengkap",
+                "FIATSWAPSELECTED": "Sampeyan bakal redirected menyang Buy.Metrixcoin.com kanggo ngrampungake transaksi iki"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ngganti Alamat Tukar...",
+            "ALREADYHAVEADDRESS": "Sampeyan wis duwe alamat BTC kanggo alamat iki",
+            "SWAPUSDMIN": "Swap paling minimal USD yaiku $ 50",
+            "SWAPUSDMAX": "Ukuran swap paling maksimum yaiku $ 3000",
+            "NOADDRESS": "Sampeyan ora ngetik alamat Metrix"
+        }
     }
 }

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "adres",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes nie aangeskakel nie",
-            "NOTENABLEDINSTR": "Om 'n masternode uit te voer, moet jy masternodes aktiveer deur masternode = 1 te stel en die 'masternodeprivkey'- en' masternodeaddr'-veranderlikes in jou metrix.conf-lêer op te stel.",
             "STARTBUTTON": "Begin Plaaslik",
             "STARTALIASBUTTON": "Begin alias",
-            "STARTALLBUTTON": "Begin alles"
+            "STARTALLBUTTON": "Begin alles",
+            "NOMASTERNODES": "U het geen masternodes nie",
+            "NOMNOUTPUTS": "Geen Masternode-uitsette gevind nie. Stuur presies 2.000.000 muntstukke na u Masternode-adres om 'n plaaslike Masternode te bedryf en wag vir 15 bevestigings.",
+            "STOPBUTTON": "Stop Plaaslik",
+            "STOPALIASBUTTON": "Stop alias",
+            "ADDREMOTE": "Voeg eksterne masternode by",
+            "REMOVEMN": "Verwyder Masternode",
+            "ADDLOCAL": "Stel plaaslike masternode op",
+            "DISABLELOCAL": "Deaktiveer plaaslike masternode",
+            "LOCALNOTRUNNING": "Plaaslike Masternode loop nie",
+            "REMOTENOTRUNNING": "Afgeleë masternode nie gevind nie"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Teken boodskap",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "oorsig",
             "TRANSACTIONSTAB": "transaksies",
             "ADDRESSTABS": "adresse"
+        },
+        "CURRENCY": {
+            "TITLE": "Kies Vertoongeldeenheid"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Herbegin Kliënt",
             "CLIENTINVALIDCONFIGTITLE": "Ongeldige metrix.conf-konfigurasie",
-            "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na."
+            "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na.",
+            "ADDREMOTEMNTITLE": "Voeg eksterne masternode by",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode-privaat sleutel",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres boek",
@@ -295,7 +312,8 @@
             "LOCALE": "Taal...",
             "RESTARTCORE": "Herbegin Metrix Core",
             "EXIT": "uitgang",
-            "OPTIONS": "Opsies..."
+            "OPTIONS": "Opsies...",
+            "CURRENCIES": "Vertoon geldeenheid..."
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -334,7 +352,9 @@
         "SORTBY": "Sorteer Volgens",
         "SEARCH": "Soek",
         "FEE": "fooi",
-        "ACCEPTBUTTON": "aanvaar"
+        "ACCEPTBUTTON": "aanvaar",
+        "CONFIRMED": "bevestig",
+        "UNCONFIRMED": "onbevestigde"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialisering van Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Alle insette benodig ten minste 1 bevestiging voor besteding.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksies het na klembord gekopieer",
         "TRANSACTIONOUTPUTTOOLARGE": "Een van u betalings aan bedrae is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jou verandering is te groot om veilig te stuur. Maksimum is 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Jou verandering is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Stop masternode...",
+        "FAILEDTOWRITECONFIG": "Kon nie na jou metrix.conf-lêer skryf nie. Kontroleer of die lêer bestaan en dat Altitude skryftoestemmings het.",
+        "NOPUBLICUP": "Geen openbare IP-adres gevind nie. Kontroleer u internetverbinding en herbegin Altitude.",
+        "CONFIGURINGLOCALMN": "Stel plaaslike Masternode op..."
     },
     "TIME": {
         "AFEWSECONDS": "'N Paar sekondes",
@@ -386,5 +410,50 @@
         "MONTHS": "maande",
         "AYEAR": "N jaar",
         "YEARS": "jaar"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ontvang Muntstukke",
+        "NEWTRANSACTION_TITLE_STAKE": "Ontvangste",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ontvang Masternode Beloning"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "Februarie",
+        "MAR": "MAR",
+        "APR": "April",
+        "MAY": "MAY",
+        "JUN": "Junie",
+        "JUL": "Julie",
+        "AUG": "Augustus",
+        "SEP": "September",
+        "OCT": "Oktober",
+        "NOV": "November",
+        "DEC": "Desember"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Jy stuur",
+                "YOUGET": "Jy kry",
+                "MRXADDRESS": "Metrix-adres",
+                "SWAP": "swap",
+                "SWAPADDRESSES": "Ruil adresse",
+                "BTCADDRESS": "BTC-adres",
+                "INFOLINE1": "Sodra u 'n BTC-deposito-adres het, sal enige BTC wat na die adres gestuur word, outomaties vir MRX na u genomineerde MRX-adres omgeruil word.",
+                "INFOLINE2-1": "Afhangend van die Bitcoin-bloktye, word transaksies gewoonlik binne 'n uur skoongemaak. Ons kan fiat aanvaar vir",
+                "INFOLINE2-2": "deelnemende lande",
+                "INFOLINE2-3": "Dit sal eers na BTC omgeskakel word, dan na MRX.",
+                "INFOLINE3": "Sodra u BTC-deposito gewis is, sal u MRX in u genomineerde adres ontvang.",
+                "INFOLINE4": "Besoek gerus vir meer inligting",
+                "FIATSWAPSELECTED": "U sal na Buy.Metrixcoin.com verwys word om hierdie transaksie te voltooi"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Genereer ruiladres...",
+            "ALREADYHAVEADDRESS": "U het reeds 'n BTC-adres vir hierdie adres",
+            "SWAPUSDMIN": "Die minimum ruilbedrag vir USD is $ 50",
+            "SWAPUSDMAX": "Die maksimum USD-omruilbedrag is $ 3000",
+            "NOADDRESS": "U het geen Metrix-adres ingevoer nie"
+        }
     }
 }

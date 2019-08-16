@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "ທີ່ຢູ່",
             "ENABLED": "Enabled",
-            "NOTENABLEDTITLE": "Masternodes ບໍ່ຖືກເປີດໃຊ້",
-            "NOTENABLEDINSTR": "ເພື່ອດໍາເນີນການ masternode ທ່ານຈະຕ້ອງເປີດໃຊ້ masternodes ໂດຍຕັ້ງຄ່າ masternode = 1 ແລະກໍານົດຕົວແປ 'masternodeprivkey' ແລະ 'masternodeaddr' ໃນແຟ້ມ metrix.conf ຂອງທ່ານ.",
             "STARTBUTTON": "ເລີ່ມຕົ້ນທ້ອງຖິ່ນ",
             "STARTALIASBUTTON": "ເລີ່ມ Alias",
-            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງຫມົດ"
+            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງຫມົດ",
+            "NOMASTERNODES": "ທ່ານບໍ່ມີ masternodes ໃດ",
+            "NOMNOUTPUTS": "ບໍ່ພົບຜົນລັບ Masternode. ການດໍາເນີນການ Masternode ທ້ອງຖິ່ນສົ່ງແທ້ 2,000,000 ບ້ານໄປທີ່ທີ່ຢູ່ Masternode ຂອງທ່ານແລະລໍຖ້າສໍາລັບການຢືນຢັນ 15.",
+            "STOPBUTTON": "ຢຸດທ້ອງຖິ່ນ",
+            "STOPALIASBUTTON": "ຢຸດ Alias",
+            "ADDREMOTE": "ເພີ່ມ Remote Masternode",
+            "REMOVEMN": "ເອົາ Masternode",
+            "ADDLOCAL": "Setup Masternode ທ້ອງຖິ່ນ",
+            "DISABLELOCAL": "ປິດການໃຊ້ເວບໄຊທ໌ທ້ອງຖິ່ນ",
+            "LOCALNOTRUNNING": "Masternode ທ້ອງຖິ່ນບໍ່ແລ່ນ",
+            "REMOTENOTRUNNING": "ໄລຍະໄກ Masternode ບໍ່ພົບ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign Message",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "ພາບລວມ",
             "TRANSACTIONSTAB": "Transactions",
             "ADDRESSTABS": "ທີ່ຢູ່"
+        },
+        "CURRENCY": {
+            "TITLE": "ເລືອກສະກຸນເງິນສະແດງໃຫ້ເຫັນ"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ມີບັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນຈົບລົງ. ມັນແນະນໍາໃຫ້ກວດເບິ່ງໄຟລ໌ debug.log ຂອງທ່ານສໍາລັບບັນຫາ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "ການຕັ້ງຄ່າ Lindaconf ບໍ່ຖືກຕ້ອງ",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້.",
+            "ADDREMOTEMNTITLE": "ເພີ່ມ Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Masternode Private Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "ປື້ມ​ທີ່​ຢູ່",
@@ -295,7 +312,8 @@
             "LOCALE": "ພາສາ...",
             "RESTARTCORE": "Restart Metrix Core",
             "EXIT": "ອອກຈາກຫ້ອງ",
-            "OPTIONS": "Options"
+            "OPTIONS": "Options",
+            "CURRENCIES": "ສະແດງສະກຸນເງິນ..."
         },
         "ENCRYPT": {
             "TITLE": "ເຂົ້າລະຫັດ",
@@ -334,7 +352,9 @@
         "SORTBY": "ຄັດໂດຍ",
         "SEARCH": "ຄົ້ນຫາ",
         "FEE": "ຄ່າທໍານຽມ",
-        "ACCEPTBUTTON": "ຍອມ​ຮັບ"
+        "ACCEPTBUTTON": "ຍອມ​ຮັບ",
+        "CONFIRMED": "ຢືນຢັນ",
+        "UNCONFIRMED": "ບໍ່ໄດ້ຢືນຢັນ"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "ຂໍ້ມູນທັງຫມົດຕ້ອງການຢ່າງຫນ້ອຍ 1 ໃບຢັ້ງຢືນກ່ອນການໃຊ້ຈ່າຍ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copied to clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "ຫນຶ່ງໃນຄ່າຈ້າງຂອງທ່ານຕໍ່ຈໍານວນເງິນແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
-        "TRANSACTIONCHANGETOOLARGE": "ການປ່ຽນແປງຂອງທ່ານແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992"
+        "TRANSACTIONCHANGETOOLARGE": "ການປ່ຽນແປງຂອງທ່ານແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
+        "STOPPINGMASTERNODE": "ຢຸດ masternode...",
+        "FAILEDTOWRITECONFIG": "ມີບັນຫາໃນການຂຽນຂໍ້ມູນ metrix.conf ຂອງທ່ານ. ກວດເບິ່ງໄຟລ໌ທີ່ມີຢູ່ແລະ Altitude ມີສິດຂຽນ.",
+        "NOPUBLICUP": "ບໍ່ພົບ IP address ສາທາລະນະ. ກວດເບິ່ງການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານແລະ restart Altitude.",
+        "CONFIGURINGLOCALMN": "ການຕັ້ງຄ່າ Masternode ທ້ອງຖິ່ນ..."
     },
     "TIME": {
         "AFEWSECONDS": "ມີສອງສາມວິນາທີ",
@@ -386,5 +410,50 @@
         "MONTHS": "ເດືອນ",
         "AYEAR": "ປີຫນຶ່ງ",
         "YEARS": "ປີ"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ໄດ້ຮັບຫຼຽນ",
+        "NEWTRANSACTION_TITLE_STAKE": "Received Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Received Masternode Reward"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "ພຶດສະພາ",
+        "JUN": "ມິຖຸນາ",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "ເຈົ້າສົ່ງ",
+                "YOUGET": "ທ່ານໄດ້ຮັບ",
+                "MRXADDRESS": "ທີ່ຢູ່ Metrix",
+                "SWAP": "ແລກປ່ຽນປະສົບ",
+                "SWAPADDRESSES": "ທີ່ຢູ່ແລກປ່ຽນປະສົບ",
+                "BTCADDRESS": "ທີ່ຢູ່ BTC",
+                "INFOLINE1": "ເມື່ອທ່ານມີທີ່ຢູ່ເງິນຝາກ BTC, BTC ໃດ ໜຶ່ງ ທີ່ຖືກສົ່ງໄປຫາທີ່ຢູ່ນັ້ນຈະຖືກປ່ຽນ ສຳ ລັບ MRX ໂດຍອັດຕະໂນມັດເຂົ້າໃນທີ່ຢູ່ຂອງທ່ານທີ່ຖືກແຕ່ງຕັ້ງ.",
+                "INFOLINE2-1": "ການເຮັດທຸລະ ກຳ ປົກກະຕິຈະແຈ້ງພາຍໃນ ໜຶ່ງ ຊົ່ວໂມງຂື້ນຢູ່ກັບເວລາປິດ Bitcoin. ພວກເຮົາສາມາດຍອມຮັບ fiat ສຳ ລັບ",
+                "INFOLINE2-2": "ບັນດາປະເທດທີ່ເຂົ້າຮ່ວມ",
+                "INFOLINE2-3": "ນີ້ຈະຖືກປ່ຽນເປັນ BTC ກ່ອນແລ້ວ MRX.",
+                "INFOLINE3": "ເມື່ອເງິນຝາກ BTC ຂອງທ່ານຖືກລຶບອອກແລ້ວທ່ານຈະໄດ້ຮັບ MRX ຂອງທ່ານເຂົ້າໃນທີ່ຢູ່ທີ່ຖືກແຕ່ງຕັ້ງຂອງທ່ານ.",
+                "INFOLINE4": "ສຳ ລັບຂໍ້ມູນເພີ່ມເຕີມເຂົ້າເບິ່ງ",
+                "FIATSWAPSELECTED": "ທ່ານຈະຖືກໂອນໄປຫາ Buy.Metrixcoin.com ເພື່ອເຮັດ ສຳ ເລັດການເຮັດທຸລະ ກຳ ນີ້"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "ກຳ ລັງຜະລິດທີ່ຢູ່ແລກປ່ຽນປະສົບ...",
+            "ALREADYHAVEADDRESS": "ທ່ານມີທີ່ຢູ່ BTC ສຳ ລັບທີ່ຢູ່ນີ້ແລ້ວ",
+            "SWAPUSDMIN": "ຈຳ ນວນເງິນແລກປ່ຽນ USD ຕ່ ຳ ສຸດແມ່ນ 50 ໂດລາ",
+            "SWAPUSDMAX": "ຈຳ ນວນແລກປ່ຽນສູງສຸດຂອງ USD ແມ່ນ 3000 ໂດລາ",
+            "NOADDRESS": "ທ່ານບໍ່ໄດ້ໃສ່ທີ່ຢູ່ Metrix"
+        }
     }
 }

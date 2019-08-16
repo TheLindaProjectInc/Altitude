@@ -68,11 +68,19 @@
             "IP": "আইপি",
             "ADDRESS": "ঠিকানা",
             "ENABLED": "সক্ষম করা",
-            "NOTENABLEDTITLE": "Masternodes সক্রিয় করা হয় না",
-            "NOTENABLEDINSTR": "একটি mastternode চালানোর জন্য আপনাকে mternternode = 1 সেট করে এবং আপনার metrix.conf ফাইলে 'masternodeprivkey' এবং 'mastternodeaddr' ভেরিয়েবলগুলি কনফিগার করার মাধ্যমে মাস্টনড সক্ষম করতে হবে।",
             "STARTBUTTON": "স্থানীয় শুরু করুন",
             "STARTALIASBUTTON": "উদীয়মান শুরু করুন",
-            "STARTALLBUTTON": "সব শুরু করুন"
+            "STARTALLBUTTON": "সব শুরু করুন",
+            "NOMASTERNODES": "আপনার কোন materternodes নেই",
+            "NOMNOUTPUTS": "কোন Masternode আউটপুট পাওয়া যায় নি। একটি স্থানীয় মাস্ন্টোড চালানোর জন্য আপনার মেসার্নোড ঠিকানায় ঠিক ২,000,000 কয়েন পাঠান এবং 15 টি নিশ্চিতকরণের জন্য অপেক্ষা করুন।",
+            "STOPBUTTON": "স্থানীয় বন্ধ করুন",
+            "STOPALIASBUTTON": "আলিয়া বন্ধ করুন",
+            "ADDREMOTE": "রিমোট Masternode যোগ করুন",
+            "REMOVEMN": "Masternode সরান",
+            "ADDLOCAL": "সেটআপ স্থানীয় Masternode",
+            "DISABLELOCAL": "স্থানীয় Masternode নিষ্ক্রিয় করুন",
+            "LOCALNOTRUNNING": "স্থানীয় Masternode না চলমান",
+            "REMOTENOTRUNNING": "রিমোট মাস্টারনোড পাওয়া যায় নি"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "সাইন ইন বার্তা",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "সংক্ষিপ্ত বিবরণ",
             "TRANSACTIONSTAB": "লেনদেন",
             "ADDRESSTABS": "ঠিকানা"
+        },
+        "CURRENCY": {
+            "TITLE": "প্রদর্শন মুদ্রা নির্বাচন করুন"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "লিন্ডা কোরের সাথে একটি সমস্যা হয়েছিল যা এটি বন্ধ করে দিয়েছে। এটি সমস্যাগুলির জন্য আপনার debug.log ফাইলটি পরীক্ষা করার সুপারিশ করা হয়।",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ক্লায়েন্ট পুনরায় চালু করুন",
             "CLIENTINVALIDCONFIGTITLE": "অবৈধ metrix.conf কনফিগারেশন",
-            "CLIENTINVALIDCONFIGINFO": "আপনার metrix.conf-এর একটি অবৈধ মাস্টারনড সেটআপ রয়েছে যা লিন্ডা কোরকে অবিলম্বে প্রস্থান করতে দেবে। এই ফাইল চেক করুন।"
+            "CLIENTINVALIDCONFIGINFO": "আপনার metrix.conf-এর একটি অবৈধ মাস্টারনড সেটআপ রয়েছে যা লিন্ডা কোরকে অবিলম্বে প্রস্থান করতে দেবে। এই ফাইল চেক করুন।",
+            "ADDREMOTEMNTITLE": "রিমোট Masternode যোগ করুন",
+            "ADDREMOTEMNALIAS": "মাসটার্নোড আলিয়া",
+            "ADDREMOTEMNIP": "Masternode আইপি: পোর্ট",
+            "ADDREMOTEMNKEY": "Masternode প্রাইভেট কী",
+            "ADDREMOTEMNTXHASH": "Masternode Trx হ্যাশ",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx সূচক"
         },
         "ADDRESSBOOK": {
             "TITLE": "ঠিকানা বই",
@@ -295,7 +312,8 @@
             "LOCALE": "ভাষা...",
             "RESTARTCORE": "লিন্ডা কোর পুনরায় আরম্ভ করুন",
             "EXIT": "বাহির",
-            "OPTIONS": "বিকল্পসমূহ..."
+            "OPTIONS": "বিকল্পসমূহ...",
+            "CURRENCIES": "প্রদর্শন মুদ্রা..."
         },
         "ENCRYPT": {
             "TITLE": "এনক্রিপ্ট",
@@ -334,7 +352,9 @@
         "SORTBY": "ক্রমানুসার",
         "SEARCH": "অনুসন্ধান",
         "FEE": "ফী",
-        "ACCEPTBUTTON": "গ্রহণ করা"
+        "ACCEPTBUTTON": "গ্রহণ করা",
+        "CONFIRMED": "নিশ্চিত",
+        "UNCONFIRMED": "অসমর্থিত"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "লিন্ডা কোর শুরু হচ্ছে...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "সমস্ত ইনপুট ব্যয় করার আগে কমপক্ষে 1 নিশ্চিতকরণ প্রয়োজন।",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ক্লিপবোর্ডে কপি করা লেনদেন",
         "TRANSACTIONOUTPUTTOOLARGE": "পরিমাণে আপনার অর্থের একটি নিরাপদে পাঠাতে খুব বড়। সর্বাধিক 90,071,992,54740992।",
-        "TRANSACTIONCHANGETOOLARGE": "আপনার পরিবর্তন নিরাপদে পাঠাতে খুব বড়। সর্বাধিক 90,071,992,54740992।"
+        "TRANSACTIONCHANGETOOLARGE": "আপনার পরিবর্তন নিরাপদে পাঠাতে খুব বড়। সর্বাধিক 90,071,992,54740992।",
+        "STOPPINGMASTERNODE": "Mastternode বন্ধ করা হচ্ছে...",
+        "FAILEDTOWRITECONFIG": "আপনার metrix.conf ফাইলে লেখা সমস্যা হয়েছে। ফাইল বিদ্যমান চেক করুন এবং Altitude লেখার অনুমতি আছে।",
+        "NOPUBLICUP": "কোন পাবলিক আইপি ঠিকানা খুঁজে পাওয়া যায় নি। আপনার ইন্টারনেট সংযোগ চেক করুন এবং উচ্চতা পুনরায় আরম্ভ করুন।",
+        "CONFIGURINGLOCALMN": "স্থানীয় Masternode কনফিগার করা হচ্ছে..."
     },
     "TIME": {
         "AFEWSECONDS": "কয়েক সেকেন্ড",
@@ -386,5 +410,50 @@
         "MONTHS": "মাসের",
         "AYEAR": "একটি বছর",
         "YEARS": "বছর"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "মুদ্রা পেয়েছি",
+        "NEWTRANSACTION_TITLE_STAKE": "উদ্ধার পেয়েছি",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode পুরস্কার পেয়েছি"
+    },
+    "MONTH": {
+        "JAN": "জেএএন",
+        "FEB": "ফেব্রুয়ারি",
+        "MAR": "মার্চ",
+        "APR": "এপিআর",
+        "MAY": "মে",
+        "JUN": "জুন",
+        "JUL": "জুলাই",
+        "AUG": "আগস্ট",
+        "SEP": "সেপ্টেম্বর",
+        "OCT": "অক্টোবর",
+        "NOV": "নভেম্বর",
+        "DEC": "ডিসেম্বর"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "তুমি পাঠাও",
+                "YOUGET": "তুমি পাও",
+                "MRXADDRESS": "মেট্রিক্স ঠিকানা",
+                "SWAP": "বিনিময়",
+                "SWAPADDRESSES": "অ্যাড্রেস অ্যাড্রেস",
+                "BTCADDRESS": "বিটিসি ঠিকানা",
+                "INFOLINE1": "আপনার কোনও বিটিসি ডিপোজিটের ঠিকানা হয়ে গেলে সেই ঠিকানায় প্রেরিত কোনও বিটিসি স্বয়ংক্রিয়ভাবে আপনার মনোনীত এমআরএক্স ঠিকানায় এমআরএক্সের জন্য অদলবদল হয়ে যাবে।",
+                "INFOLINE2-1": "বিটকয়েন ব্লক সময়ের উপর নির্ভর করে লেনদেনগুলি সাধারণত এক ঘন্টার মধ্যে পরিষ্কার হয়। আমরা ফিয়াট গ্রহণ করতে পারি",
+                "INFOLINE2-2": "অংশগ্রহণকারী দেশ",
+                "INFOLINE2-3": "এটি প্রথমে বিটিসিতে রূপান্তরিত হবে তারপরে এমআরএক্স।",
+                "INFOLINE3": "আপনার বিটিসি আমানত সাফ হয়ে গেলে আপনি আপনার এমআরএক্স আপনার মনোনীত ঠিকানায় পাবেন।",
+                "INFOLINE4": "আরো তথ্যের জন্য, যান",
+                "FIATSWAPSELECTED": "এই লেনদেনটি সম্পূর্ণ করার জন্য আপনাকে বায়ার.মেট্রিক্সকয়েন.কম এ পুনর্নির্দেশ করা হবে"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "অদলবদ ঠিকানা তৈরি করা হচ্ছে...",
+            "ALREADYHAVEADDRESS": "এই ঠিকানার জন্য আপনার কাছে ইতিমধ্যে একটি বিটিসি ঠিকানা রয়েছে",
+            "SWAPUSDMIN": "সর্বনিম্ন ইউএসডি স্বাপের পরিমাণ $ 50",
+            "SWAPUSDMAX": "সর্বাধিক ইউএসডি স্বাপের পরিমাণ $ 3000",
+            "NOADDRESS": "আপনি কোনও মেট্রিক্স ঠিকানা প্রবেশ করেন নি"
+        }
     }
 }

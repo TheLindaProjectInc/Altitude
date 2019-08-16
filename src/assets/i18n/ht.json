@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adrès",
             "ENABLED": "Pèmèt",
-            "NOTENABLEDTITLE": "Masternodes pa pèmèt",
-            "NOTENABLEDINSTR": "Kouri yon masternode ou pral bezwen yo ki pèmèt masternodes pa mete masternode = 1 ak konfigirasyon 'masternodeprivkey' ak 'masternodeaddr' varyab nan dosye metrix.conf ou a.",
             "STARTBUTTON": "Kòmanse Lokal",
             "STARTALIASBUTTON": "Kòmanse alyas",
-            "STARTALLBUTTON": "Kòmanse tout"
+            "STARTALLBUTTON": "Kòmanse tout",
+            "NOMASTERNODES": "Ou pa gen okenn masternodes",
+            "NOMNOUTPUTS": "Pa gen rezilta Masternode jwenn. Kouri yon Masternode lokal voye egzakteman 2,000,000 pyès monnen nan adrès Masternode ou epi tann pou 15 konfimasyon.",
+            "STOPBUTTON": "One Stop Lokal",
+            "STOPALIASBUTTON": "Sispann alyas",
+            "ADDREMOTE": "Add Remote Masternode",
+            "REMOVEMN": "Retire Masternode",
+            "ADDLOCAL": "Enstalasyon lokal Masternode",
+            "DISABLELOCAL": "Enfim lokal Masternode",
+            "LOCALNOTRUNNING": "Lokal Masternode Pa Kouri",
+            "REMOTENOTRUNNING": "Remote Masternode Pa Twouve"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Siyen Mesaj",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Apèsi sou lekòl la",
             "TRANSACTIONSTAB": "Tranzaksyon",
             "ADDRESSTABS": "Adrès"
+        },
+        "CURRENCY": {
+            "TITLE": "Chwazi Montre Lajan"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Te gen yon pwoblèm ak Metrix Nwayo ki te lakòz li nan fen. Li rekòmande yo tcheke dosye debug.log ou a pou pwoblèm.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rekòmanse Kliyan",
             "CLIENTINVALIDCONFIGTITLE": "Enskri metrix.conf konte genyen",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Metrix Nwayo sòti imedyatman. Tanpri tcheke dosye sa a."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf ou gen yon konfigirasyon masternode envalid ki pral lakòz Metrix Nwayo sòti imedyatman. Tanpri tcheke dosye sa a.",
+            "ADDREMOTEMNTITLE": "Add Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode alyas",
+            "ADDREMOTEMNIP": "Masternode IP: Pò",
+            "ADDREMOTEMNKEY": "Masternode Prive Key",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Liv adrès",
@@ -295,7 +312,8 @@
             "LOCALE": "Lang...",
             "RESTARTCORE": "Rekòmanse Metrix Nwayo",
             "EXIT": "Sòti",
-            "OPTIONS": "Opsyon..."
+            "OPTIONS": "Opsyon...",
+            "CURRENCIES": "Montre Lajan..."
         },
         "ENCRYPT": {
             "TITLE": "Ankouraje",
@@ -334,7 +352,9 @@
         "SORTBY": "Triye pa",
         "SEARCH": "Search",
         "FEE": "Frè",
-        "ACCEPTBUTTON": "Aksepte"
+        "ACCEPTBUTTON": "Aksepte",
+        "CONFIRMED": "Konfime",
+        "UNCONFIRMED": "Konfime"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inisyalize Metrix Nwayo...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Tout entrain mande pou omwen 1 konfimasyon anvan depans.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksyon kopye nan clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Youn nan peye ou a kantite lajan an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Chanjman ou an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Chanjman ou an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
+        "STOPPINGMASTERNODE": "Sispann masternode...",
+        "FAILEDTOWRITECONFIG": "Te gen yon pwoblèm pou ekri nan dosye metrix.conf ou. Tcheke dosye a egziste e ke Altitid gen pèmisyon ekri.",
+        "NOPUBLICUP": "Pa gen adrès IP Piblik yo te jwenn. Tcheke koneksyon entènèt ou an epi rekòmanse Altitid.",
+        "CONFIGURINGLOCALMN": "Konfigirasyon lokal Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "Yon kèk segond",
@@ -386,5 +410,50 @@
         "MONTHS": "mwa",
         "AYEAR": "Yon ane",
         "YEARS": "ane"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Resevwa monnen",
+        "NEWTRANSACTION_TITLE_STAKE": "Resevwa pye",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Resevwa rekonpans Masternode"
+    },
+    "MONTH": {
+        "JAN": "Jan",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "ME",
+        "JUN": "JEN",
+        "JUL": "Jiyè",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ou voye",
+                "YOUGET": "Ou jwenn",
+                "MRXADDRESS": "Adrès Metrix",
+                "SWAP": "Boukante",
+                "SWAPADDRESSES": "Boukante adrès",
+                "BTCADDRESS": "Adrès BTC",
+                "INFOLINE1": "Yon fwa ou gen yon adrès depo BTC nenpòt BTC voye nan adrès sa pral otomatikman chanje pou MRX nan adrès MRX nominasyon ou.",
+                "INFOLINE2-1": "Tranzaksyon tipikman klè nan yon èdtan depann sou fwa yo blòk Bitcoin. Nou ka aksepte fiat pou",
+                "INFOLINE2-2": "peyi kap patisipe yo",
+                "INFOLINE2-3": "Sa a pral konvèti nan BTC premye Lè sa a, MRX.",
+                "INFOLINE3": "Yon fwa depo BTC ou te klarifye ou pral resevwa MRX ou nan adrès ou nominasyon.",
+                "INFOLINE4": "Pou plis enfòmasyon vizite",
+                "FIATSWAPSELECTED": "Ou pral reyorante resous nan Buy.Metrixcoin.com ranpli tranzaksyon sa a"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Jenere Swap Adrès...",
+            "ALREADYHAVEADDRESS": "Ou deja gen yon adrès BTC pou adrès sa a",
+            "SWAPUSDMIN": "Montan minimòm USD swap la se $ 50",
+            "SWAPUSDMAX": "Kantite lajan maksimòm USD swap la se $ 3000",
+            "NOADDRESS": "Ou pa t 'antre nan yon adrès Metrix"
+        }
     }
 }

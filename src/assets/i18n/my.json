@@ -68,11 +68,19 @@
             "IP": "အိုင်ပီ",
             "ADDRESS": "လိပ်စာ",
             "ENABLED": "enabled",
-            "NOTENABLEDTITLE": "Masternodes ဖွင့်မ",
-            "NOTENABLEDINSTR": "တစ်ဦး masternode ကို run ရန်သင့်အား masternode = 1 setting နဲ့ 'masternodeprivkey' 'နှင့်သင့် metrix.conf ဖိုင်ထဲတွင်' 'masternodeaddr' 'variable တွေကိုပြင်ဆင် သတ်မှတ်. masternodes enable လုပ်ဖို့လိုအပ်ပါလိမ့်မယ်။",
             "STARTBUTTON": "ဒေသခံ Start",
             "STARTALIASBUTTON": "Alias Start",
-            "STARTALLBUTTON": "အားလုံး Start"
+            "STARTALLBUTTON": "အားလုံး Start",
+            "NOMASTERNODES": "သင်သည်မည်သည့် masternodes ရှိသည်မဟုတ်ကြဘူး",
+            "NOMNOUTPUTS": "မျှမတွေ့ Masternode ရလဒ်။ ဒေသခံတစ်ဦး Masternode ကို run ရန်သင့် Masternode လိပ်စာအတိအကျ 2.000.000 ဒင်္ဂါးပြားကိုပေးပို့နှင့် 15 အတည်ပြုချက်အဘို့အစောင့်ပါ။",
+            "STOPBUTTON": "ပြည်တွင်းကိုရပ်တန့်",
+            "STOPALIASBUTTON": "Alias ရပ်တန့်",
+            "ADDREMOTE": "အဝေးမှ Masternode Add",
+            "REMOVEMN": "Masternode Remove",
+            "ADDLOCAL": "Setup ကိုဒေသခံ Masternode",
+            "DISABLELOCAL": "ဒေသခံ Masternode Disable",
+            "LOCALNOTRUNNING": "ဒေသခံ Masternode ကို run မ",
+            "REMOTENOTRUNNING": "ဝေးလံခေါင်သီ Masternode တွေ့မ"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "သင်္ကေတပြကို Message",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "ယေဘုယျအမြင်",
             "TRANSACTIONSTAB": "အရောင်းအ",
             "ADDRESSTABS": "လိပ်စာများ"
+        },
+        "CURRENCY": {
+            "TITLE": "Display ကိုငွေကြေးကို Select လုပ်ပါ"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "ကရပ်ဆိုင်းစေခဲ့သည်လင်ဒါ Core နှင့်အတူပြဿနာတစ်ခုရှိခဲ့သည်။ ဒါဟာကိစ္စရပ်များကိုအဘို့သင့် debug.log file ကိုစစျဆေးဖို့အကြံပြုသည်။",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ပြန်လည်စတင်ပါလိုင်း",
             "CLIENTINVALIDCONFIGTITLE": "မှားနေသော metrix.conf Configuration",
-            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ metrix.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။"
+            "CLIENTINVALIDCONFIGINFO": "သင့်ရဲ့ metrix.conf လင်ဒါ Core ချက်ချင်းထွက်ရန်စေမည်ဖြစ်သောတစ်ဦးမှာမမှန်ကန် masternode setup ကိုရှိပါတယ်။ ဒီ file ကိုစစ်ဆေးပါ။",
+            "ADDREMOTEMNTITLE": "အဝေးမှ Masternode Add",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode အိုင်ပီ: ဆိပ်ကမ်း",
+            "ADDREMOTEMNKEY": "Masternode ပုဂ္ဂလိက Key ကို",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx အညွှန်း"
         },
         "ADDRESSBOOK": {
             "TITLE": "လိပ်စာစာအုပ်",
@@ -295,7 +312,8 @@
             "LOCALE": "ဘာသာစကား...",
             "RESTARTCORE": "ပြန်လည်စတင်ပါလင်ဒါ Core",
             "EXIT": "ထွက်ပေါက်",
-            "OPTIONS": "Options... ကို"
+            "OPTIONS": "Options... ကို",
+            "CURRENCIES": "ငွေကြေးဖော်ပြရန်..."
         },
         "ENCRYPT": {
             "TITLE": "စာဝှက်",
@@ -334,7 +352,9 @@
         "SORTBY": "အလိုက်စဥ်သည်",
         "SEARCH": "ရှာဖှေ",
         "FEE": "ကြေး",
-        "ACCEPTBUTTON": "Accept"
+        "ACCEPTBUTTON": "Accept",
+        "CONFIRMED": "အတည်ပြုပြောကြား",
+        "UNCONFIRMED": "အတည်မပြုနိုင်"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core Initialising...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "အားလုံးသွင်းအားစုအသုံးစရိတ်မတိုင်မီအနည်းဆုံး 1 အတည်ပြုချက်ကိုလိုအပ်သည်။",
         "TRANSACTIONSCOPIEDCLIPBOARD": "clipboard မှကူးယူငွေကြေးလွှဲပြောင်းမှုမှာ",
         "TRANSACTIONOUTPUTTOOLARGE": "ပမာဏရန်သင့်လစာတစ်ခုမှာလုံခြုံစိတ်ချစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။",
-        "TRANSACTIONCHANGETOOLARGE": "သင့်ရဲ့ပြောင်းလဲမှုကိုလုံခြုံစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။"
+        "TRANSACTIONCHANGETOOLARGE": "သင့်ရဲ့ပြောင်းလဲမှုကိုလုံခြုံစွာပေးပို့ဖို့ကြီးလွန်းနေသည်။ အများဆုံး 90,071,992.54740992 ဖြစ်ပါတယ်။",
+        "STOPPINGMASTERNODE": "ရပ်တန့် masternode...",
+        "FAILEDTOWRITECONFIG": "သင့်ရဲ့ metrix.conf ဖိုင်ရေးသားခြင်းပြဿနာတစ်ခုရှိခဲ့သည်။ တည်ရှိခြင်းနှင့်ကြောင်းအမြင့်ရေးခွင့်ပြုချက်ရှိပြီးဖိုင်ကိုစစ်ဆေးပါ။",
+        "NOPUBLICUP": "အဘယ်သူမျှမပြည်သူ့ IP address ကိုတွေ့ရှိခဲ့ပါတယ်။ သင့်ရဲ့အင်တာနက်ဆက်သွယ်မှုနှင့်ပြန်ဖွင့မြင့်စစ်ဆေးပါ။",
+        "CONFIGURINGLOCALMN": "ဒေသခံ Masternode Configuring..."
     },
     "TIME": {
         "AFEWSECONDS": "တစ်ဦးကစက္ကန့်အနည်းငယ်",
@@ -386,5 +410,50 @@
         "MONTHS": "လများ",
         "AYEAR": "တစ်နှစ်",
         "YEARS": "နှစ်ပေါင်း"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ရရှိထားသည့်ဒင်္ဂါးပြား",
+        "NEWTRANSACTION_TITLE_STAKE": "ရရှိထားသည့်လောင်းကြေး",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ရရှိထားသည့် Masternode ဆုကြေး"
+    },
+    "MONTH": {
+        "JAN": "Jan",
+        "FEB": "Feb",
+        "MAR": "Mar",
+        "APR": "APR",
+        "MAY": "MAY",
+        "JUN": "Jun",
+        "JUL": "Jul",
+        "AUG": "Aug",
+        "SEP": "SEP တွေ",
+        "OCT": "Oct",
+        "NOV": "Nov",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "သငျသညျ Send",
+                "YOUGET": "သငျသညျကိုရယူပါ",
+                "MRXADDRESS": "Metrix လိပ်စာ",
+                "SWAP": "လဲလှယ်ရေး",
+                "SWAPADDRESSES": "လဲလှယ်ရေးလိပ်စာ",
+                "BTCADDRESS": "BTC လိပ်စာ",
+                "INFOLINE1": "သင်တစ်ဦး BTC သိုက်လိပ်စာရှိပြီးတာနဲ့ BTC ကြောင်းလိပ်စာသို့ပေးပို့မည်သည့်အလိုအလျှောက်သင့်ရဲ့အမည်စာရင်းတင်သွင်း MRX လိပ်စာသို့ MRX များအတွက်ဖလှယ်မှုရပါလိမ့်မယ်။",
+                "INFOLINE2-1": "အဆိုပါ Bitcoin ပိတ်ပင်တားဆီးမှုကြိမ်ပေါ် မူတည်. တစ်နာရီအတွင်းပုံမှန်အားရှင်းရှင်းလင်းလင်းအရောင်းအ။ ကျနော်တို့အဘို့အ Fiat ကိုလက်ခံနိုင်ပါတယ်",
+                "INFOLINE2-2": "ပါဝင်နိုင်ငံများ",
+                "INFOLINE2-3": "ဤသည် MRX ပထမဦးဆုံးပြီးတော့ BTC မှပြောင်းလဲလိမ့်မည်။",
+                "INFOLINE3": "သင့်ရဲ့ BTC သိုက်ရှင်းလင်းပြီးပါကသင်သည်သင်၏အမည်စာရင်းတင်သွင်းလိပ်စာသို့သင့်ရဲ့ MRX လက်ခံရရှိပါလိမ့်မယ်။",
+                "INFOLINE4": "ပိုမိုသိရှိလိုပါကခရီးစဉ်",
+                "FIATSWAPSELECTED": "သင်သည်ဤငွေပေးငွေယူဖြည့်စွက်ရန် Buy.Metrixcoin.com မှ redirected ပါလိမ့်မည်"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "လဲလှယ်ရေးလိပ်စာထုတ်နေ...",
+            "ALREADYHAVEADDRESS": "သငျသညျပြီးသားဒီလိပ်စာတစ်ခု BTC လိပ်စာရှိ",
+            "SWAPUSDMIN": "နိမ့်ဆုံးအမေရိကန်ဒေါ်လာလဲလှယ်ငွေပမာဏကို $ 50 ဖြစ်ပါတယ်",
+            "SWAPUSDMAX": "အများဆုံးအမေရိကန်ဒေါ်လာလဲလှယ်ငွေပမာဏ $ 3000 ဖြစ်ပြီး",
+            "NOADDRESS": "သင်တစ်ဦး Metrix လိပ်စာရိုက်ထည့်ဘူး"
+        }
     }
 }

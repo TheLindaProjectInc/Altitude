@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Мекенжай",
             "ENABLED": "Қосылған",
-            "NOTENABLEDTITLE": "Шеңберлер қосылмаған",
-            "NOTENABLEDINSTR": "Masternode іске қосу үшін Masternode = 1 параметрін орнатып, metrix.conf файлында 'masternodeprivkey' және 'masternodeaddr' айнымалы мәндерін теңшеу арқылы masternodes қосу керек.",
             "STARTBUTTON": "Жергілікті іске қосу",
             "STARTALIASBUTTON": "Бүркеншік атты бастау",
-            "STARTALLBUTTON": "Барлығын бастаңыз"
+            "STARTALLBUTTON": "Барлығын бастаңыз",
+            "NOMASTERNODES": "Сізде мастронодтар жоқ",
+            "NOMNOUTPUTS": "Masternode шығысы табылған жоқ. Жергілікті Masternode бағдарламасын іске қосу үшін Masternode мекен-жайына 2 000 000 тиын жіберіп, 15 растауды күтіңіз.",
+            "STOPBUTTON": "Жергілікті тоқтату",
+            "STOPALIASBUTTON": "Лақап атты тоқтату",
+            "ADDREMOTE": "Қашықтағы Masternode қосыңыз",
+            "REMOVEMN": "Masternode жойыңыз",
+            "ADDLOCAL": "Жергілікті Masternode орнатыңыз",
+            "DISABLELOCAL": "Жергілікті мастернодты өшіру",
+            "LOCALNOTRUNNING": "Жергілікті Masternode жұмыс істемейді",
+            "REMOTENOTRUNNING": "Қашықтағы Masternode табылмады"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Қол хабарламасы",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Шолу",
             "TRANSACTIONSTAB": "Мәмілелер",
             "ADDRESSTABS": "Мекен-жайы"
+        },
+        "CURRENCY": {
+            "TITLE": "Дисплей валютасын таңдаңыз"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-мен проблема болды, ол оны тоқтатуға мәжбүр болды. Қателерге арналған debug.log файлын тексеру ұсынылады.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентті қайта іске қосыңыз",
             "CLIENTINVALIDCONFIGTITLE": "Конфигурация metrix.conf жарамсыз",
-            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз."
+            "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз.",
+            "ADDREMOTEMNTITLE": "Қашықтағы Masternode қосыңыз",
+            "ADDREMOTEMNALIAS": "Masternode лақап аты",
+            "ADDREMOTEMNIP": "Masternode IP: порт",
+            "ADDREMOTEMNKEY": "Masternode жеке кілті",
+            "ADDREMOTEMNTXHASH": "Masternode Trx хэш",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индексі"
         },
         "ADDRESSBOOK": {
             "TITLE": "Мекенжайлық кітап",
@@ -295,7 +312,8 @@
             "LOCALE": "Тіл...",
             "RESTARTCORE": "Metrix Core-ді қайта іске қосыңыз",
             "EXIT": "Шығу",
-            "OPTIONS": "Опциялар..."
+            "OPTIONS": "Опциялар...",
+            "CURRENCIES": "Көрсету валютасы..."
         },
         "ENCRYPT": {
             "TITLE": "Шифрлау",
@@ -334,7 +352,9 @@
         "SORTBY": "Бойынша сұрыптау",
         "SEARCH": "Іздеу",
         "FEE": "Жалақы",
-        "ACCEPTBUTTON": "Қабылдау"
+        "ACCEPTBUTTON": "Қабылдау",
+        "CONFIRMED": "Расталған",
+        "UNCONFIRMED": "Расталмаған"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core-ні инициализациялау...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Барлық кірістер жұмсамастан бұрын кем дегенде 1 растауды талап етеді.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Алмасу буферіне көшірілген транзакциялар",
         "TRANSACTIONOUTPUTTOOLARGE": "Төлемдеріңіздің біреуі қауіпсіз жіберуге тым үлкен. Максимум - 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Сіздің өзгертуіңіз қауіпсіз жіберілу үшін тым үлкен. Максимум - 90,071,992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Сіздің өзгертуіңіз қауіпсіз жіберілу үшін тым үлкен. Максимум - 90,071,992,54740992.",
+        "STOPPINGMASTERNODE": "Мастеродты тоқтату...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf файлына жазуда қиындық туындады. Файлдың бар екенін және Биіктікте жазуға рұқсат бар екенін тексеріңіз.",
+        "NOPUBLICUP": "Жалпы IP мекенжайы табылған жоқ. Интернет қосылымын тексеріп, Биіктікті қайта қосыңыз.",
+        "CONFIGURINGLOCALMN": "Жергілікті Masternode теңшелуде..."
     },
     "TIME": {
         "AFEWSECONDS": "Бірнеше секунд",
@@ -386,5 +410,50 @@
         "MONTHS": "айлар",
         "AYEAR": "Жыл",
         "YEARS": "жылдар"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ақшалар алынды",
+        "NEWTRANSACTION_TITLE_STAKE": "Қабылданған төлем",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Мастернода марапатталды"
+    },
+    "MONTH": {
+        "JAN": "ЖАН",
+        "FEB": "FEB",
+        "MAR": "МАР",
+        "APR": "Жылдық",
+        "MAY": "МАЙ",
+        "JUN": "МАУС",
+        "JUL": "Шілде",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "ОКТ",
+        "NOV": "NOV",
+        "DEC": "ШЕШ"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Сіз жібересіз",
+                "YOUGET": "Сіз аласыз",
+                "MRXADDRESS": "Метрикалық мекен-жайы",
+                "SWAP": "Ауыстыру",
+                "SWAPADDRESSES": "Мекен-жайларды ауыстыру",
+                "BTCADDRESS": "BTC мекен-жайы",
+                "INFOLINE1": "Егер сізде BTC депозиттік мекен-жайы болса, сол мекен-жайға жіберілген кез келген BTC автоматты түрде MRX-ге сіздің тағайындалған MRX мекен-жайыңызға ауысады.",
+                "INFOLINE2-1": "Әдетте Bitcoin блоктау уақытына байланысты бір сағат ішінде транзакциялар жойылады. Біз фиатты қабылдай аламыз",
+                "INFOLINE2-2": "қатысушы елдер",
+                "INFOLINE2-3": "Бұл алдымен BTC-ке, содан кейін MRX-ке ауыстырылады.",
+                "INFOLINE3": "Сіздің BTC депозитіңіз жойылғаннан кейін сіз MRX-ді көрсетілген мекен-жайға аласыз.",
+                "INFOLINE4": "Қосымша ақпарат алу үшін кіріңіз",
+                "FIATSWAPSELECTED": "Осы транзакцияны аяқтау үшін сіз Buy.Metrixcoin.com сайтына бағытталасыз"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Своп мекен-жайы жасалуда...",
+            "ALREADYHAVEADDRESS": "Сізде бұл мекен-жайға арналған BTC мекен-жайы бар",
+            "SWAPUSDMIN": "Своптың ең төменгі сомасы - 50 доллар",
+            "SWAPUSDMAX": "USD свопының максималды сомасы $ 3000 құрайды",
+            "NOADDRESS": "Сіз Metrix мекенжайын енгізген жоқсыз"
+        }
     }
 }

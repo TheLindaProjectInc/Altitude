@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Osoite",
             "ENABLED": "käytössä",
-            "NOTENABLEDTITLE": "Masternodes ei ole käytössä",
-            "NOTENABLEDINSTR": "Masternodin suorittaminen edellyttää masternodien ottamista käyttöön asettamalla masternode = 1 ja määrittämällä \"masternodeprivkey\" ja \"masternodeaddr\" muuttujat metrix.conf-tiedostossasi.",
             "STARTBUTTON": "Aloita paikalliset",
             "STARTALIASBUTTON": "Aloita Alias",
-            "STARTALLBUTTON": "Aloita kaikki"
+            "STARTALLBUTTON": "Aloita kaikki",
+            "NOMASTERNODES": "Sinulla ei ole mitään masternodeja",
+            "NOMNOUTPUTS": "Masternode-lähtöjä ei löytynyt. Jos haluat suorittaa paikallisen Masternoden, lähetä Masternode-osoitteeseen täsmälleen 2 000 000 kolikkoa ja odota 15 vahvistusta.",
+            "STOPBUTTON": "Pysäytä paikallinen",
+            "STOPALIASBUTTON": "Lopeta Alias",
+            "ADDREMOTE": "Lisää etä Masternode",
+            "REMOVEMN": "Poista Masternode",
+            "ADDLOCAL": "Aseta paikallinen Masternode",
+            "DISABLELOCAL": "Poista paikallinen Masternode käytöstä",
+            "LOCALNOTRUNNING": "Paikallinen Masternode ei ole käynnissä",
+            "REMOTENOTRUNNING": "Kaukosivumoodia ei löydy"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Kirjaa viesti",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Yleiskatsaus",
             "TRANSACTIONSTAB": "liiketoimet",
             "ADDRESSTABS": "osoitteet"
+        },
+        "CURRENCY": {
+            "TITLE": "Valitse Näytä valuutta"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Käynnistä asiakas uudelleen",
             "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
-            "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto."
+            "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto.",
+            "ADDREMOTEMNTITLE": "Lisää etä Masternode",
+            "ADDREMOTEMNALIAS": "Masternode-alias",
+            "ADDREMOTEMNIP": "Masternode IP: Portti",
+            "ADDREMOTEMNKEY": "Masternode-yksityinen avain",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx -indeksi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -295,7 +312,8 @@
             "LOCALE": "Kieli...",
             "RESTARTCORE": "Käynnistä Metrix Core uudelleen",
             "EXIT": "poistuminen",
-            "OPTIONS": "Vaihtoehdot..."
+            "OPTIONS": "Vaihtoehdot...",
+            "CURRENCIES": "Näytön valuutta..."
         },
         "ENCRYPT": {
             "TITLE": "Salaa",
@@ -334,7 +352,9 @@
         "SORTBY": "Järjestä",
         "SEARCH": "Hae",
         "FEE": "Maksu",
-        "ACCEPTBUTTON": "Hyväksyä"
+        "ACCEPTBUTTON": "Hyväksyä",
+        "CONFIRMED": "Vahvistettu",
+        "UNCONFIRMED": "Vahvistamaton"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Corein alustaminen...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Kaikki tulot vaativat vähintään yhden vahvistuksen ennen käyttöä.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiot, jotka on kopioitu leikepöydälle",
         "TRANSACTIONOUTPUTTOOLARGE": "Yksi palkkasi summista on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Muutos on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Muutos on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
+        "STOPPINGMASTERNODE": "Masternodin pysäyttäminen...",
+        "FAILEDTOWRITECONFIG": "Metrix.conf-tiedostoon kirjoitettaessa oli ongelma. Tarkista, että tiedosto on olemassa ja että korkeudessa on kirjoitusoikeudet.",
+        "NOPUBLICUP": "Ei julkista IP-osoitetta. Tarkista Internet-yhteys ja käynnistä korkeus.",
+        "CONFIGURINGLOCALMN": "Paikallisen Masternoden määrittäminen..."
     },
     "TIME": {
         "AFEWSECONDS": "Muutama sekunti",
@@ -386,5 +410,50 @@
         "MONTHS": "kuukaudet",
         "AYEAR": "Vuosi",
         "YEARS": "vuotta"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Vastaanotetut kolikot",
+        "NEWTRANSACTION_TITLE_STAKE": "Vastaanotettu panos",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Vastaanotettu Masternode-palkinto"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "helmikuu",
+        "MAR": "MAR",
+        "APR": "huhtikuu",
+        "MAY": "SAATTAA",
+        "JUN": "kesäkuu",
+        "JUL": "heinäkuu",
+        "AUG": "elokuu",
+        "SEP": "syyskuu",
+        "OCT": "lokakuu",
+        "NOV": "MARRASKUU",
+        "DEC": "joulukuu"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Lähetät",
+                "YOUGET": "Saat",
+                "MRXADDRESS": "Metrix-osoite",
+                "SWAP": "Vaihtaa",
+                "SWAPADDRESSES": "Vaihda osoitteet",
+                "BTCADDRESS": "BTC-osoite",
+                "INFOLINE1": "Kun sinulla on BTC-talletusosoite, kaikki tähän osoitteeseen lähetetyt BTC vaihdetaan automaattisesti MRX: lle nimetyksi MRX-osoitteeseesi.",
+                "INFOLINE2-1": "Tapahtumat poistuvat tyypillisesti tunnin sisällä Bitcoin-estoaikaista riippuen. Voimme hyväksyä fiatin",
+                "INFOLINE2-2": "osallistuvat maat",
+                "INFOLINE2-3": "Tämä muunnetaan ensin BTC: ksi ja sitten MRX: ksi.",
+                "INFOLINE3": "Kun BTC-talletus on tyhjennetty, saat MRX-osoitteen nimeämääsi osoitteeseen.",
+                "INFOLINE4": "Lisätietoja käy osoitteessa",
+                "FIATSWAPSELECTED": "Sinut ohjataan Buy.Metrixcoin.com-sivustoon suorittaaksesi tämän tapahtuman"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Luodaan vaihtoosoitetta...",
+            "ALREADYHAVEADDRESS": "Sinulla on jo BTC-osoite tälle osoitteelle",
+            "SWAPUSDMIN": "Minimi USD-vaihtomäärä on 50 dollaria",
+            "SWAPUSDMAX": "Maksimi USD-vaihtomäärä on 3000 dollaria",
+            "NOADDRESS": "Et kirjoittanut Metrix-osoitetta"
+        }
     }
 }

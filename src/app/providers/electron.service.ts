@@ -5,6 +5,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { ipcRenderer, remote, clipboard, shell } from 'electron';
 import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
+import { CurrencyService } from './currency.service';
+import { NotificationService } from './notification.service';
 var supportedLanguages = require('../pages/locale/languages');
 
 @Injectable()
@@ -17,6 +19,7 @@ export class ElectronService {
 
   settings: any = {};
   clientVersion: string = '0';
+  publicIP: string = '';
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
@@ -27,6 +30,8 @@ export class ElectronService {
   constructor(
     private http: HttpClient,
     private translate: TranslateService,
+    private currencyService: CurrencyService,
+    private notification: NotificationService
   ) {
     // Conditional imports
     if (this.isElectron()) {
@@ -68,6 +73,12 @@ export class ElectronService {
         case 'VERSION':
           this.clientVersion = data;
           break;
+        case 'IP':
+          this.publicIP = data;
+          break;
+        case 'MASTERNODE':
+          if (data === false) this.notification.notify('error', 'NOTIFICATIONS.FAILEDTOWRITECONFIG');
+          break;
       }
     });
     // ask for client status
@@ -76,6 +87,8 @@ export class ElectronService {
     this.ipcRenderer.send('client-node', 'RPC');
     // ask for client version
     this.ipcRenderer.send('client-node', 'VERSION');
+    // ask for ip address
+    this.ipcRenderer.send('client-node', 'IP');
   }
 
   connectSettingsIPC() {
@@ -86,6 +99,7 @@ export class ElectronService {
         case 'GET':
           this.settings = data;
           this.setLanguage();
+          this.setDisplayCurrency();
           break;
       }
     });
@@ -111,6 +125,13 @@ export class ElectronService {
       if (isDevMode()) console.log("Setting language to", this.settings.locale)
       this.translate.setDefaultLang(this.settings.locale);
       this.languageChangedEvent.emit();
+    }
+  }
+
+  setDisplayCurrency() {
+    if (this.settings.currency && this.currencyService.currency !== this.settings.currency) {
+      if (isDevMode()) console.log("Setting display currency to", this.settings.currency)
+      this.currencyService.changeCurrency(this.settings.currency);
     }
   }
 

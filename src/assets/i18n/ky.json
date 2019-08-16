@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "дарек",
             "ENABLED": "Иштетилген",
-            "NOTENABLEDTITLE": "Masternodes иштетилген эмес",
-            "NOTENABLEDINSTR": "бир masternode чуркап коюу masternode = 1 жана \"masternodeprivkey\" жана \"masternodeaddr:\" Сенин metrix.conf делосуна өзгөрмө орнотууга менен masternodes иштетүү үчүн керек болот.",
             "STARTBUTTON": "Start Жергиликтүү",
             "STARTALIASBUTTON": "Start ат",
-            "STARTALLBUTTON": "Башталган Баарын"
+            "STARTALLBUTTON": "Башталган Баарын",
+            "NOMASTERNODES": "Сиз кандай masternodes ээ эмес",
+            "NOMNOUTPUTS": "Эч кандай Masternode натыйжалары табылган жок. Жергиликтүү Masternode сиздин Masternode дарекке так 2,000,000 тыйын жиберүү жана 15 ырасталган күтө топтоду.",
+            "STOPBUTTON": "Stop Жергиликтүү",
+            "STOPALIASBUTTON": "Stop ат",
+            "ADDREMOTE": "Кошуу Remote Masternode",
+            "REMOVEMN": "алып салуу Masternode",
+            "ADDLOCAL": "Орнотуу Жергиликтүү Masternode",
+            "DISABLELOCAL": "Өчүрүү Жергиликтүү Masternode",
+            "LOCALNOTRUNNING": "Жергиликтүү Masternode Иштеген жок",
+            "REMOTENOTRUNNING": "Remote Masternode Табылган жок"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Sign сүйлөшүү",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "жалпы көрүнүш",
             "TRANSACTIONSTAB": "бүтүмдөр",
             "ADDRESSTABS": "Дареги"
+        },
+        "CURRENCY": {
+            "TITLE": "Select Display акчалар"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "аны токтотууга алып келген жок Линда Корак менен көйгөй чыкты. Бул маселелер боюнча debug.log билэни текшерүүгө сунуш болуп саналат.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "кайра Кардар",
             "CLIENTINVALIDCONFIGTITLE": "Жараксыз metrix.conf Тарам орнотуусу",
-            "CLIENTINVALIDCONFIGINFO": "Сиздин metrix.conf дароо чыгып Линда Коракты алып келем жараксыз masternode орнотуп жазыла элек. Бу билэни текшерүү."
+            "CLIENTINVALIDCONFIGINFO": "Сиздин metrix.conf дароо чыгып Линда Коракты алып келем жараксыз masternode орнотуп жазыла элек. Бу билэни текшерүү.",
+            "ADDREMOTEMNTITLE": "Кошуу Remote Masternode",
+            "ADDREMOTEMNALIAS": "Masternode ат",
+            "ADDREMOTEMNIP": "Masternode IP: Порт-",
+            "ADDREMOTEMNKEY": "Masternode купуя ачкыч",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
         },
         "ADDRESSBOOK": {
             "TITLE": "Дарек китеби",
@@ -295,7 +312,8 @@
             "LOCALE": "Тил...",
             "RESTARTCORE": "Өчүрүп Линда Коракты",
             "EXIT": "чыгуу",
-            "OPTIONS": "Жолдор..."
+            "OPTIONS": "Жолдор...",
+            "CURRENCIES": "Display Өлкө..."
         },
         "ENCRYPT": {
             "TITLE": "код",
@@ -334,7 +352,9 @@
         "SORTBY": "Иреттөө",
         "SEARCH": "издөө",
         "FEE": "акы",
-        "ACCEPTBUTTON": "кабыл алуу"
+        "ACCEPTBUTTON": "кабыл алуу",
+        "CONFIRMED": "ырасталды",
+        "UNCONFIRMED": "тастыкталбаган"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Линда Коракты Initialising...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Бардык ресурстар чыгымдоо чейин кеминде 1 ырасталышын талап кылган.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Бүтүмдөр тактасына көчүрүлдү",
         "TRANSACTIONOUTPUTTOOLARGE": "суммаларды үчүн акы бири аман-эсен жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат.",
-        "TRANSACTIONCHANGETOOLARGE": "Сиздин өзгөртүү коопсуз жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат."
+        "TRANSACTIONCHANGETOOLARGE": "Сиздин өзгөртүү коопсуз жөнөтүү үчүн өтө чоң болот. Maximum 90,071,992.54740992 болуп саналат.",
+        "STOPPINGMASTERNODE": "Токтотуу masternode...",
+        "FAILEDTOWRITECONFIG": "Сиздин metrix.conf делосуна жазуу көйгөй келип чыкты. билэни текшерип бар жана тоолуу жаз уруксаттар бар.",
+        "NOPUBLICUP": "Эч кандай коомдук IP дареги табылган. Интернет байланышын жана кайра Сумки Ecco текшерүү.",
+        "CONFIGURINGLOCALMN": "жергиликтүү Masternode Configuring..."
     },
     "TIME": {
         "AFEWSECONDS": "Бир нече секунд",
@@ -386,5 +410,50 @@
         "MONTHS": "ай",
         "AYEAR": "Жыл",
         "YEARS": "жыл"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "алынган монеталар",
+        "NEWTRANSACTION_TITLE_STAKE": "алынган суммасы",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Алынган Masternode сыйлык"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "МАЙ",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "СЭП",
+        "OCT": "ОКТ",
+        "NOV": "НОЯ",
+        "DEC": "ДЕК"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Сиз жөнөтүү",
+                "YOUGET": "Сиз аласыз",
+                "MRXADDRESS": "Metrix дареги",
+                "SWAP": "Алмашуу",
+                "SWAPADDRESSES": "Алмашуу даректер",
+                "BTCADDRESS": "Банктык окутуу борборунун дареги",
+                "INFOLINE1": "Эгер Банктык депозиттик дареги ээ болгондон кийин ар кандай BTC бул даректе жазуусу MRX сиздин талапкер MRX дареги салып алмаштырышат кыла турган киши жиберди.",
+                "INFOLINE2-1": "Bitcoin бөгөттөөлөр убакта жараша бир сааттын ичинде, адатта, так бүтүмдөр. Биз Fiat кабыл алат",
+                "INFOLINE2-2": "катышкан өлкөлөр",
+                "INFOLINE2-3": "Бул MRX биринчи BTC айландырылат.",
+                "INFOLINE3": "Сиздин борбордун аманаты Сиз көрсөткөн дарек салып MRX аласыз тазаланды жолу.",
+                "INFOLINE4": "Көбүрөөк маалымат алуу үчүн",
+                "FIATSWAPSELECTED": "Сиз бул ишти бүтүрө Buy.Metrixcoin.com багытталасыз"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Алмашуу дарек түзүлүүдө...",
+            "ALREADYHAVEADDRESS": "Сиз бул дарекке үчүн борбордун дареги",
+            "SWAPUSDMIN": "минималдуу USD алмашуу суммасы $ 50 болот",
+            "SWAPUSDMAX": "максималдуу USD алмашуу суммасы 3000 $ турат",
+            "NOADDRESS": "Сиз Metrix дарегин эмес,"
+        }
     }
 }

@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "Adresa",
             "ENABLED": "Activat",
-            "NOTENABLEDTITLE": "Masternozele nu sunt activate",
-            "NOTENABLEDINSTR": "Pentru a rula un masternode, va trebui să activați masternodes prin setarea masternode = 1 și configurarea variabilelor \"masternodeprivkey\" și \"masternodeaddr\" în fișierul metrix.conf.",
             "STARTBUTTON": "Porniți Local",
             "STARTALIASBUTTON": "Porneste Alias",
-            "STARTALLBUTTON": "Începeți totul"
+            "STARTALLBUTTON": "Începeți totul",
+            "NOMASTERNODES": "Nu aveți niciun fel de mastere",
+            "NOMNOUTPUTS": "Nu au fost găsite ieșiri Masternode. Pentru a rula un Masternode local trimiteți exact 2 000 000 de monede pe adresa dvs. de la Masternode și așteptați 15 confirmări.",
+            "STOPBUTTON": "Opriți Local",
+            "STOPALIASBUTTON": "Opriți Aliasul",
+            "ADDREMOTE": "Adăugați masina de la distanță",
+            "REMOVEMN": "Scoateți Masternode",
+            "ADDLOCAL": "Setup Masternode local",
+            "DISABLELOCAL": "Dezactivați Masternode locală",
+            "LOCALNOTRUNNING": "Masternodul local nu se execută",
+            "REMOTENOTRUNNING": "Masternode de la distanță nu a fost găsit"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "Semnează mesajul",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "Prezentare generală",
             "TRANSACTIONSTAB": "tranzacţii",
             "ADDRESSTABS": "adrese"
+        },
+        "CURRENCY": {
+            "TITLE": "Selectați Moneda de afișare"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reporniți Clientul",
             "CLIENTINVALIDCONFIGTITLE": "Configurația metrix.conf este nevalidă",
-            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier."
+            "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier.",
+            "ADDREMOTEMNTITLE": "Adăugați masina de la distanță",
+            "ADDREMOTEMNALIAS": "Alienul Masternode",
+            "ADDREMOTEMNIP": "Masternode IP: Port",
+            "ADDREMOTEMNKEY": "Cheia privată Masternode",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Indexul Masternode Trx"
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
@@ -295,7 +312,8 @@
             "LOCALE": "Limba...",
             "RESTARTCORE": "Reporniți Metrix Core",
             "EXIT": "Ieșire",
-            "OPTIONS": "Opțiuni..."
+            "OPTIONS": "Opțiuni...",
+            "CURRENCIES": "Moneda de afișare..."
         },
         "ENCRYPT": {
             "TITLE": "Criptați",
@@ -334,7 +352,9 @@
         "SORTBY": "Filtrează după",
         "SEARCH": "Căutare",
         "FEE": "taxă",
-        "ACCEPTBUTTON": "Accept"
+        "ACCEPTBUTTON": "Accept",
+        "CONFIRMED": "Confirmat",
+        "UNCONFIRMED": "Neconfirmat"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inițierea Metrix Core...",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "Toate intrările necesită cel puțin o confirmare înainte de a cheltui.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzacțiile copiate în clipboard",
         "TRANSACTIONOUTPUTTOOLARGE": "Una dintre plățile dvs. către sume este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Schimbarea dvs. este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992."
+        "TRANSACTIONCHANGETOOLARGE": "Schimbarea dvs. este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
+        "STOPPINGMASTERNODE": "Oprirea masternozei...",
+        "FAILEDTOWRITECONFIG": "A apărut o problemă la scrierea fișierului dvs. metrix.conf. Verificați existența fișierului și că altitudinea are permisiuni de scriere.",
+        "NOPUBLICUP": "Nu a fost găsită nicio adresă IP publică. Verificați conexiunea la internet și reporniți altitudinea.",
+        "CONFIGURINGLOCALMN": "Configurarea Masternode locale..."
     },
     "TIME": {
         "AFEWSECONDS": "Câteva secunde",
@@ -386,5 +410,50 @@
         "MONTHS": "luni",
         "AYEAR": "Un an",
         "YEARS": "ani"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monede primite",
+        "NEWTRANSACTION_TITLE_STAKE": "Miza primită",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "A primit recompensa Masternode"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "februarie",
+        "MAR": "MAR",
+        "APR": "APRILIE",
+        "MAY": "MAI",
+        "JUN": "IUNIE",
+        "JUL": "iul.",
+        "AUG": "august",
+        "SEP": "septembrie",
+        "OCT": "octombrie",
+        "NOV": "noiembrie",
+        "DEC": "decembrie"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu trimiti",
+                "YOUGET": "Primesti",
+                "MRXADDRESS": "Adresa Metrix",
+                "SWAP": "schimb",
+                "SWAPADDRESSES": "Adresa de schimb",
+                "BTCADDRESS": "Adresa BTC",
+                "INFOLINE1": "După ce aveți o adresă de depunere BTC, orice BTC trimis la acea adresă va fi schimbat automat pentru MRX în adresa dvs. MRX nominalizată.",
+                "INFOLINE2-1": "Tranzacțiile se elimină de obicei într-o oră, în funcție de orele blocului Bitcoin. Putem accepta fiat pentru",
+                "INFOLINE2-2": "țări participante",
+                "INFOLINE2-3": "Aceasta va fi convertită în BTC mai întâi, apoi în MRX.",
+                "INFOLINE3": "Odată ce depozitul BTC s-a șters, veți primi MRX-ul dvs. pe adresa nominalizată.",
+                "INFOLINE4": "Pentru mai multe informații vizitați",
+                "FIATSWAPSELECTED": "Vei fi redirecționat către Buy.Metrixcoin.com pentru a finaliza această tranzacție"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generarea unei adrese de swap...",
+            "ALREADYHAVEADDRESS": "Aveți deja o adresă BTC pentru această adresă",
+            "SWAPUSDMIN": "Suma minimă de swap în USD este de 50 USD",
+            "SWAPUSDMAX": "Suma maximă de swap în USD este de 3000 $",
+            "NOADDRESS": "Nu ați introdus o adresă Metrix"
+        }
     }
 }

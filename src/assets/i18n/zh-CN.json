@@ -68,11 +68,19 @@
             "IP": "IP",
             "ADDRESS": "地址",
             "ENABLED": "启用",
-            "NOTENABLEDTITLE": "未启用Masternodes",
-            "NOTENABLEDINSTR": "要运行masternode，您需要通过设置masternode = 1并在metrix.conf文件中配置'masternodeprivkey'和'masternodeaddr'变量来启用masternode。",
             "STARTBUTTON": "开始本地",
             "STARTALIASBUTTON": "启动Alias",
-            "STARTALLBUTTON": "全部启动"
+            "STARTALLBUTTON": "全部启动",
+            "NOMASTERNODES": "你没有任何masternodes",
+            "NOMNOUTPUTS": "未找到Masternode输出。要运行本地Masternode，请向您的Masternode地址发送2,000,000个硬币并等待15次确认。",
+            "STOPBUTTON": "停止本地",
+            "STOPALIASBUTTON": "停止别名",
+            "ADDREMOTE": "添加远程Masternode",
+            "REMOVEMN": "删除Masternode",
+            "ADDLOCAL": "设置本地Masternode",
+            "DISABLELOCAL": "禁用本地Masternode",
+            "LOCALNOTRUNNING": "本地Masternode未运行",
+            "REMOTENOTRUNNING": "找不到远程Masternode"
         },
         "SIGNMESSAGE": {
             "SIGNMESSAGETAB": "签署消息",
@@ -210,6 +218,9 @@
             "OVERVIEWTAB": "概观",
             "TRANSACTIONSTAB": "交易",
             "ADDRESSTABS": "地址"
+        },
+        "CURRENCY": {
+            "TITLE": "选择显示货币"
         }
     },
     "COMPONENTS": {
@@ -268,7 +279,13 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出现问题导致它终止。建议检查debug.log文件以查找问题。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "重启客户端",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf配置无效",
-            "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有无效的masternode设置，这将导致Metrix Core立即退出。请检查此文件。"
+            "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有无效的masternode设置，这将导致Metrix Core立即退出。请检查此文件。",
+            "ADDREMOTEMNTITLE": "添加远程Masternode",
+            "ADDREMOTEMNALIAS": "Masternode Alias",
+            "ADDREMOTEMNIP": "Masternode IP：端口",
+            "ADDREMOTEMNKEY": "Masternode私钥",
+            "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
+            "ADDREMOTEMNTXINDEX": "Masternode Trx指数"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -295,7 +312,8 @@
             "LOCALE": "语言...",
             "RESTARTCORE": "重启Metrix Core",
             "EXIT": "出口",
-            "OPTIONS": "选项..."
+            "OPTIONS": "选项...",
+            "CURRENCIES": "显示货币......"
         },
         "ENCRYPT": {
             "TITLE": "加密",
@@ -334,7 +352,9 @@
         "SORTBY": "排序方式",
         "SEARCH": "搜索",
         "FEE": "费用",
-        "ACCEPTBUTTON": "接受"
+        "ACCEPTBUTTON": "接受",
+        "CONFIRMED": "确认",
+        "UNCONFIRMED": "未经证实"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "初始化Metrix Core......",
@@ -372,7 +392,11 @@
         "MINIMUMCONFIRMATIONS": "所有投入在消费前至少需要1次确认。",
         "TRANSACTIONSCOPIEDCLIPBOARD": "交易复制到剪贴板",
         "TRANSACTIONOUTPUTTOOLARGE": "您支付的金额之一太大而无法安全发送。最大值为90,071,992.54740992。",
-        "TRANSACTIONCHANGETOOLARGE": "您的更改太大，无法安全发送。最大值为90,071,992.54740992。"
+        "TRANSACTIONCHANGETOOLARGE": "您的更改太大，无法安全发送。最大值为90,071,992.54740992。",
+        "STOPPINGMASTERNODE": "停止masternode...",
+        "FAILEDTOWRITECONFIG": "写入metrix.conf文件时出现问题。检查文件是否存在以及Altitude是否具有写入权限。",
+        "NOPUBLICUP": "找不到公共IP地址。检查您的互联网连接并重新启动Altitude。",
+        "CONFIGURINGLOCALMN": "配置本地Masternode..."
     },
     "TIME": {
         "AFEWSECONDS": "几秒钟",
@@ -386,5 +410,50 @@
         "MONTHS": "个月",
         "AYEAR": "一年",
         "YEARS": "年份"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "收到硬币",
+        "NEWTRANSACTION_TITLE_STAKE": "收到了赌注",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "收到Masternode奖励"
+    },
+    "MONTH": {
+        "JAN": "JAN",
+        "FEB": "FEB",
+        "MAR": "MAR",
+        "APR": "APR",
+        "MAY": "可以",
+        "JUN": "JUN",
+        "JUL": "JUL",
+        "AUG": "AUG",
+        "SEP": "SEP",
+        "OCT": "OCT",
+        "NOV": "NOV",
+        "DEC": "DEC"
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "你发送",
+                "YOUGET": "你得到",
+                "MRXADDRESS": "Metrix地址",
+                "SWAP": "交换",
+                "SWAPADDRESSES": "交换地址",
+                "BTCADDRESS": "BTC地址",
+                "INFOLINE1": "一旦您有BTC存款地址，发送到该地址的任何BTC将自动换成MRX进入您指定的MRX地址。",
+                "INFOLINE2-1": "交易通常在一小时内清除，具体取决于比特币的时间段。我们可以接受法令",
+                "INFOLINE2-2": "参与国家",
+                "INFOLINE2-3": "这将首先转换为BTC然后转换为MRX。",
+                "INFOLINE3": "一旦您的BTC存款被清除，您将收到您的MRX到您指定的地址。",
+                "INFOLINE4": "有关更多信息，请访问",
+                "FIATSWAPSELECTED": "您将被重定向到Buy.Metrixcoin.com以完成此交易"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "生成交换地址......",
+            "ALREADYHAVEADDRESS": "您已拥有此地址的BTC地址",
+            "SWAPUSDMIN": "最低美元掉期金额为50美元",
+            "SWAPUSDMAX": "最高美元掉期金额为3000美元",
+            "NOADDRESS": "您没有输入Metrix地址"
+        }
     }
 }

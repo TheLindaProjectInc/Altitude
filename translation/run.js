@@ -5,7 +5,7 @@ const fs = require('fs');
 
 var ggl = google(process.env.APIKEY);  // this is required to use google translate service
 var retranslate = [] // add fields to here to force the translater to re-translate
-var removeTranslation = [] // add fields to here to remove them from all translation files (expect en.json must be remvoed manually)
+var removeTranslation = [] // add fields to here to remove them from all translation files (except en.json must be removed manually)
 
 async function translateLanguageFiles() {
     console.log("Running translation service. This will take some time to complete");
@@ -45,16 +45,16 @@ async function translateLanguageFiles() {
     console.log("Translation finished");
 }
 
-async function walkObject(obj, output, languageCode) {
+async function walkObject(obj, output, languageCode, parentKey) {
     let keys = Object.keys(obj);
     for (let i = 0; i < keys.length; i++) {
         let key = keys[i];
         if (typeof (obj[key]) === "object") {
             if (!output[key])
                 output[key] = {}
-            await walkObject(obj[key], output[key], languageCode);
+            await walkObject(obj[key], output[key], languageCode, key);
         } else {
-            if (removeTranslation.indexOf(key) > -1) {
+            if (removeTranslation.indexOf(key) > -1 || removeTranslation.indexOf(parentKey + '.' + key) > -1) {
                 if (output[key]) delete output[key]
             } else if (!output[key] || retranslate.indexOf(key) > -1)
                 output[key] = await translateString(obj[key], 'en', languageCode)

@@ -1,0 +1,15 @@
+<div class="content">
+
+  <h1>{{ 'PAGES.CURRENCY.TITLE' | translate }}</h1>
+
+  <div class="form-inline">
+    <span>{{ 'MISC.SEARCH' | translate }}</span>
+    <text-input [(inputModel)]="search"></text-input>
+  </div>
+
+  <button class="btn btn-default" (click)="setCurrency(currency)" *ngFor="let currency of currenciesToShow()"
+    [ngClass]="{'btn-success':currency===currencyService.currency}">
+    {{currency}}
+  </button>
+
+</div>
