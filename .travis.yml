@@ -27,11 +27,11 @@ cache:
     - $HOME/.cache/electron-builder
 
 script:
-  - yarn electron:mac
-  - yarn electron:linux
-  - yarn electron:windows
+  - npm run electron:mac
+  - npm run electron:linux
+  - npm run electron:windows
   - mv release/Altitude-win32.exe release/Altitude-win32-x64.exe 
-  - yarn electron:windows32
+  - npm run electron:windows32
   - mv release/Altitude-win32.exe release/Altitude-win32-x86.exe 
 
 before_cache:
