@@ -417,7 +417,7 @@ export class RpcService {
 
             // create raw transaction
             let raw: any;
-            if (!isUnsafeTransaction) {
+            if (!this.canSendUnsafeTransaction) {
                 // convert outputs to number
                 Object.keys(outputs).forEach(key => {
                     outputs[key] = Number(outputs[key]);
