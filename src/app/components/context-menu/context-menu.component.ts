@@ -23,8 +23,8 @@ export class ContextMenuComponent {
       this.menuActive = true;
       let left = event.x
       if (left + 200 > window.innerWidth) left = window.innerWidth - 200;
-      left -= 270;
-      let top = event.y - 30;
+      let top = event.y ;
+      if (top + 200 > window.innerHeight) top = window.innerHeight - 200;
       this.position.left = left + "px";
       this.position.top = top + "px";
     }
