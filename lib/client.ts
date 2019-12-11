@@ -194,8 +194,9 @@ export default class Client {
             try {
                 const res: any = await helpers.getRequest("https://raw.githubusercontent.com/thelindaprojectinc/altitude/master/clientBinaries.json");
                 let remoteClientBinaries = JSON.parse(res.body);
-                if (compareVersions(clientBinaries[this.clientName].version, remoteClientBinaries[this.clientName].version) >= 0) {
-                    clientBinaries = remoteClientBinaries
+                if (compareVersions(remoteClientBinaries[this.clientName].version, clientBinaries[this.clientName].version) >= 0) {
+                    clientBinaries = remoteClientBinaries;
+                    log.info("Client", "Using remote client binaries");
                 }
             } catch (ex) {
                 log.info("Client", "Failed to get remote client binaries, using local");

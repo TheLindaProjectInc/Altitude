@@ -1,6 +1,6 @@
-# Altitude 2.1.0
+# Altitude 2.1.1
 
-This is a minor release.
+This is a patch release.
 
 Please report bugs using the issue tracker at github: https://github.com/thelindaprojectinc/altitude/issues
 
@@ -8,4 +8,4 @@ Please report bugs using the issue tracker at github: https://github.com/thelind
 Shutdown Altitude if it is already running and then run the installer.
 
 ## About this Release
-- This release contains command updates to accomodate changes made by the Metrix 3.4 update
+- Fix Altitude not detecting new core update
