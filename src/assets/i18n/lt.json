@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Atnaujinkite piniginės formą",
                 "UPGRADEWALLETINFO": "-upgradewallet: atnaujinkite piniginę prie naujausio formato paleidžiant. (Pastaba: tai ne pats paties piniginės atnaujinimas!)",
                 "REBUILDINDEXBUTTON": "Atkurti indeksą",
-                "REBUILDINDEXINFO": "-reindex: pertvarkyti blokų indeksą iš dabartinių failų \"blk000\". dat."
+                "REBUILDINDEXINFO": "-reindex: pertvarkyti blokų indeksą iš dabartinių failų \"blk000\". dat.",
+                "BOOTSTRAPBUTTON": "Bagažinė",
+                "BOOTSTRAPINFO": "Atsisiųskite „Metrix“ „blockchain“ failus iš metrixcoin.com ir paleiskite diegimą. Priklausomai nuo jūsų tinklo ryšio, tai gali užtrukti nuo 10 minučių iki kelių valandų"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Bet kokios ankstesnės atsarginės kopijos, kurias padarėte iš savo piniginės failo, turėtų būti pakeistos naujai sukurtu užkoduotu piniginės failu. Saugumo sumetimais ankstesnės neužšifruoto piniginės failo atsarginės kopijos bus netinkamos, kai tik pradėsite naudoti naują užkoduotą piniginę.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core netikėtai sustojo",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Metrix Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Iš naujo paleiskite klientą",
             "CLIENTINVALIDCONFIGTITLE": "Netinkama „metrix.conf“ konfigūracija",
             "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą.",
             "ADDREMOTEMNTITLE": "Pridėti nuotolinį masternodą",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: prievadas",
             "ADDREMOTEMNKEY": "Masternodo privatus raktas",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "„Masternode Trx“ indeksas"
+            "ADDREMOTEMNTXINDEX": "„Masternode Trx“ indeksas",
+            "BOOTSTRAPFAILEDTITLE": "„Metrix Core Bootstrap“ nepavyko",
+            "BOOTSTRAPFAILEDINFO": "Iškilo problema paleidžiant „Metrix Core“. Rekomenduojama patikrinti, ar nėra aukščio žurnalo failo.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkūrimo įrankiai"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "\"Metrix Core\" parsisiuntimas...",
         "UPDATEAVAILABLE": "\"Metrix Core\" atnaujinimas prieinamas",
         "SHUTTINGDOWN": "\"Metrix Core\" išjungimas...",
-        "RESTARTING": "Metrix Core paleidimas iš naujo..."
+        "RESTARTING": "Metrix Core paleidimas iš naujo...",
+        "BOOTSTRAPPING": "Įkraunamas „Metrix Core“..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nauja paskyra sėkmingai sukurta",

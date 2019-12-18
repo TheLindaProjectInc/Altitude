@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Pag-upgrade sa format sa wallet",
                 "UPGRADEWALLETINFO": "-upgradewallet: Pag-upgrade sa pitaka ngadto sa pinakabag-o nga format sa pagsugod. (Hinumdomi: kini usa ka update sa pitaka mismo!)",
                 "REBUILDINDEXBUTTON": "Pagtukod pag-usab sa index",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index gikan sa kasamtangan nga blk000 ??. dat files."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index gikan sa kasamtangan nga blk000 ??. dat files.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Pag-download sa mga file nga Metrix blockchain gikan sa metrixcoin.com ug i-bootstrap ang imong pag-install. Depende sa koneksyon sa imong network mahimo’g makuha kini sa 10 minuto sa us aka oras"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ang bisan unsang nangaging mga pag-backup nga imong nahimo sa imong wallet file kinahanglan nga ilisan uban sa bag-ong namugna, gi-encrypt nga wallet file. Alang sa mga katarungan sa seguridad, ang mga naunang pag-backup sa wala ma-encrypt nga wallet file mahimong walay pulos sa diha nga magsugod ka sa paggamit sa bag-o, na-encrypt nga pitaka.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Si Metrix Core mibiya sa wala damha",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Metrix Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Pagsugod sa Client",
             "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file.",
             "ADDREMOTEMNTITLE": "Pagdugang sa Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Napakyas ang Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Adunay sulud nga bootstrapping nga Metrix Core. Gisugyot nga susihon ang imong file sa log sa Altitude alang sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mga Himan sa Pagbawi"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Pag-download sa Metrix Core...",
         "UPDATEAVAILABLE": "Ang Metrix Core Update Magamit",
         "SHUTTINGDOWN": "Pagsira sa Metrix Core...",
-        "RESTARTING": "Pagsugod sa Metrix Core..."
+        "RESTARTING": "Pagsugod sa Metrix Core...",
+        "BOOTSTRAPPING": "Ang Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ang bag-ong asoy nagmalamposon",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Uwchraddio fformat waled",
                 "UPGRADEWALLETINFO": "-upgradewallet: Uwchraddio waled i'r fformat diweddaraf ar ddechrau. (Noder: NID yw hwn yn ddiweddariad o'r waled ei hun!)",
                 "REBUILDINDEXBUTTON": "Mynegai adnewyddu",
-                "REBUILDINDEXINFO": "-reindex: Ailadeiladu mynegai blockchain o'r blk000 cyfredol.. ffeiliau dat."
+                "REBUILDINDEXINFO": "-reindex: Ailadeiladu mynegai blockchain o'r blk000 cyfredol.. ffeiliau dat.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Dadlwythwch ffeiliau blockchain Metrix o metrixcoin.com a bootstrap eich gosodiad. Yn dibynnu ar eich cysylltiad rhwydwaith, gall hyn gymryd 10 munud i gwpl o oriau"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Dylai'r ffeil waled wedi'i hamgryptio newydd gael ei disodli gan unrhyw wrth gefn blaenorol a wnaethoch o'ch ffeil waled. Am resymau diogelwch, bydd copïau wrth gefn o'r ffeil waled heb ei grybwyll yn dod yn ddiwerth cyn gynted ag y byddwch yn dechrau defnyddio'r waled newydd wedi'i hamgryptio.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Craidd Wedi'i Stopio Yn annisgwyl",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ail-gychwyn Cleient",
             "CLIENTINVALIDCONFIGTITLE": "Cyfluniad metrix.conf annilys",
             "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon.",
             "ADDREMOTEMNTITLE": "Ychwanegu Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: Porthladd",
             "ADDREMOTEMNKEY": "Allwedd Preifat Masternode",
             "ADDREMOTEMNTXHASH": "Triongl Masternode",
-            "ADDREMOTEMNTXINDEX": "Mynegai Triongl Masternode"
+            "ADDREMOTEMNTXINDEX": "Mynegai Triongl Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Methwyd â Bootstrap Craidd Metrix",
+            "BOOTSTRAPFAILEDINFO": "Roedd yna broblem cychwynnu Metrix Craidd. Argymhellir gwirio'ch ffeil log Uchder am faterion.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Offer Adfer"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr cyfeiriadau",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Lawrlwytho Metrix Craidd...",
         "UPDATEAVAILABLE": "Diweddariad Metrix Craidd ar gael",
         "SHUTTINGDOWN": "Cipio Metrix Craidd...",
-        "RESTARTING": "Ailgychwyn Metrix Craidd..."
+        "RESTARTING": "Ailgychwyn Metrix Craidd...",
+        "BOOTSTRAPPING": "Craidd Metrix Bootstrapping..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Crëwyd cyfrif newydd yn llwyddiannus",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "升級錢包格式",
                 "UPGRADEWALLETINFO": "-upgradewallet：在啟動時將錢包升級到最新格式。 （注意：這不是錢包本身的更新！）",
                 "REBUILDINDEXBUTTON": "重建索引",
-                "REBUILDINDEXINFO": "-reindex：從當前的blk000 ??。dat文件重建區塊鏈索引。"
+                "REBUILDINDEXINFO": "-reindex：從當前的blk000 ??。dat文件重建區塊鏈索引。",
+                "BOOTSTRAPBUTTON": "引導程序",
+                "BOOTSTRAPINFO": "從metrixcoin.com下載Metrix區塊鏈文件並引導安裝。根據您的網絡連接，這可能需要10分鐘到幾個小時"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "您對錢包文件進行的所有先前備份應替換為新生成的加密錢包文件。出於安全原因，一旦開始使用新的加密錢包，未加密的錢包文件的先前備份將變得無用。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "琳達核心出乎意料地停了下來",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出現問題導致它終止。建議檢查debug.log文件以查找問題。",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "重啟客戶端",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf配置無效",
             "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有無效的masternode設置，這將導致Metrix Core立即退出。請檢查此文件。",
             "ADDREMOTEMNTITLE": "添加遠程Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP：端口",
             "ADDREMOTEMNKEY": "Masternode私鑰",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx指數"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx指數",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap失敗",
+            "BOOTSTRAPFAILEDINFO": "引導Metrix Core時出現問題。建議檢查您的海拔日誌文件中是否有問題。",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "恢復工具"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "正在下載Metrix Core......",
         "UPDATEAVAILABLE": "Linda核心更新可用",
         "SHUTTINGDOWN": "關閉琳達核心......",
-        "RESTARTING": "重啟Metrix Core......"
+        "RESTARTING": "重啟Metrix Core......",
+        "BOOTSTRAPPING": "引導Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新帳戶已成功創建",

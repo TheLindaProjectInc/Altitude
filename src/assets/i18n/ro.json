@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Actualizați formatul portofelului",
                 "UPGRADEWALLETINFO": "-upgradewallet: Actualizați portofelul la ultimul format la pornire. (Notă: aceasta nu este o actualizare a portofelului în sine!)",
                 "REBUILDINDEXBUTTON": "Rebuild index",
-                "REBUILDINDEXINFO": "-reindex: Refaceți blocchain index din fișierele actuale blk000?. dat."
+                "REBUILDINDEXINFO": "-reindex: Refaceți blocchain index din fișierele actuale blk000?. dat.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Descărcarea fișierelor blockchain Metrix de pe metrixcoin.com și bootstrap-ul instalării. În funcție de conexiunea la rețea, aceasta poate dura 10 minute până la câteva ore"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Toate backup-urile anterioare pe care le-ați realizat din fișierul dvs. de portofel trebuie înlocuite cu fișierul portofel criptat nou generat. Din motive de securitate, backup-urile anterioare ale fișierului portofel necriptat vor deveni inutile imediat ce veți începe să utilizați noul portofel criptat.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core sa oprit în mod neașteptat",
             "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reporniți Clientul",
             "CLIENTINVALIDCONFIGTITLE": "Configurația metrix.conf este nevalidă",
             "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier.",
             "ADDREMOTEMNTITLE": "Adăugați masina de la distanță",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Cheia privată Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indexul Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Indexul Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap a eșuat",
+            "BOOTSTRAPFAILEDINFO": "A apărut o problemă de bootstrapping Metrix Core. Este recomandat să verificați fișierul dvs. jurnal Altitudine pentru probleme.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumente de recuperare"
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Descărcarea Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Închiderea Metrix Core...",
-        "RESTARTING": "Reporniți Metrix Core..."
+        "RESTARTING": "Reporniți Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Contul nou a fost creat cu succes",

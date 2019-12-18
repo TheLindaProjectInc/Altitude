@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Թարմացրեք դրամապանակ ձեւաչափը",
                 "UPGRADEWALLETINFO": "-upgradewallet: Բարձրացրեք դրամապանակը մինչեւ նորագույն ձեւաչափը սկսելու համար: (Նշում. Սա դրամապանակի թարմացում չէ:)",
                 "REBUILDINDEXBUTTON": "Վերականգնել ինդեքսը",
-                "REBUILDINDEXINFO": "-reindex: Վերականգնել blockchain ինդեքսը ընթացիկ blk000 ֆայլի ֆայլերից:"
+                "REBUILDINDEXINFO": "-reindex: Վերականգնել blockchain ինդեքսը ընթացիկ blk000 ֆայլի ֆայլերից:",
+                "BOOTSTRAPBUTTON": "Կոշիկ",
+                "BOOTSTRAPINFO": "Metrixcoin.com- ի բլոկչեյնի ֆայլերը ներբեռնումից և ձեր տեղադրումը bootstrap- ից: Կախված ձեր ցանցային կապից, դա կարող է տևել 10 րոպեից մի քանի ժամ"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ցանկացած նախորդ կրկնօրինակները, որոնք պատրաստել եք դրամապանակի ֆայլը, պետք է փոխարինել նորացված, կոդավորված դրամապանակի ֆայլով: Անվտանգության նկատառումներից ելնելով, unencrypted դրամապանակի ֆայլի նախորդ կրկնօրինակները անօգուտ են դառնում, երբ դուք սկսում եք օգտագործել նոր, կոդավորված դրամապանակ:",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Լինդա Քորն անսպասելիորեն կանգ առավ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Լինդա Քորեի հետ կապված խնդիր առաջացավ, որը դադարեցրեց նրան: Խորհուրդ է տալիս ստուգել ձեր debug.log ֆայլը հարցերի համար:",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Հաճախորդի վերսկսումը",
             "CLIENTINVALIDCONFIGTITLE": "Անվավեր metrix.conf կոնֆիգուրացիան",
             "CLIENTINVALIDCONFIGINFO": "Ձեր metrix.conf- ն ունի անսահմանափակ masternode կարգավորում, որը կհանգեցնի Metrix Core- ին անմիջապես դուրս գալու: Խնդրում ենք ստուգել այս ֆայլը:",
             "ADDREMOTEMNTITLE": "Ավելացնել Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP- պորտ",
             "ADDREMOTEMNKEY": "Masternode Անձնական բանալի",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash- ը",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx ինդեքսը"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx ինդեքսը",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap- ը ձախողվեց",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core- ը բեռնաթափելու խնդիր առաջացավ: Խնդիրների համար խորհուրդ է տրվում ստուգել ձեր բարձրության գրանցման ֆայլը:",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Վերականգնման գործիքներ"
         },
         "ADDRESSBOOK": {
             "TITLE": "Հասցեագիրք",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Ներբեռնումը Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core թարմացումը հասանելի է",
         "SHUTTINGDOWN": "Անջատելով Metrix Core...",
-        "RESTARTING": "Վերսկսել Metrix Core..."
+        "RESTARTING": "Վերսկսել Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Նոր հաշիվը հաջողությամբ է ստեղծվել",

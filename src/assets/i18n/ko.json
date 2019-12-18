@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "지갑 형식 업그레이드",
                 "UPGRADEWALLETINFO": "-upgradewallet : 시작할 때 wallet을 최신 형식으로 업그레이드하십시오. (참고 : 이것은 지갑 자체의 업데이트가 아닙니다!)",
                 "REBUILDINDEXBUTTON": "색인 다시 작성",
-                "REBUILDINDEXINFO": "-reindex : 현재 blk000 ??. dat 파일에서 블록 체인 색인을 다시 작성합니다."
+                "REBUILDINDEXINFO": "-reindex : 현재 blk000 ??. dat 파일에서 블록 체인 색인을 다시 작성합니다.",
+                "BOOTSTRAPBUTTON": "부트 스트랩",
+                "BOOTSTRAPINFO": "metrixcoin.com에서 Metrix 블록 체인 파일을 다운로드하고 설치를 부트 스트랩합니다. 네트워크 연결에 따라 10 분에서 몇 시간이 걸릴 수 있습니다."
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "이전에 Wallet 파일로 작성한 백업은 새로 생성되고 암호화 된 Wallet 파일로 대체되어야합니다. 보안상의 이유로 새 암호화 된 Wallet을 사용하자 마자 암호화되지 않은 Wallet 파일의 이전 백업은 쓸모 없게됩니다.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "예기치 않게 Metrix Core가 중지되었습니다.",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core가 종료되는 문제가있었습니다. debug.log 파일에서 문제점을 확인하는 것이 좋습니다.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "클라이언트 다시 시작",
             "CLIENTINVALIDCONFIGTITLE": "잘못된 metrix.conf 구성",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오.",
             "ADDREMOTEMNTITLE": "원격 마스터 노드 추가",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP : 항구",
             "ADDREMOTEMNKEY": "Masternode 개인 키",
             "ADDREMOTEMNTXHASH": "Masternode Trx 해시",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx 색인"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx 색인",
+            "BOOTSTRAPFAILEDTITLE": "매트릭스 코어 부트 스트랩 실패",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core를 부트 스트랩하는 데 문제가있었습니다. 고도 로그 파일에 문제가 있는지 확인하는 것이 좋습니다.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "복구 도구"
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core 다운로드 중...",
         "UPDATEAVAILABLE": "Metrix 핵심 업데이트 사용 가능",
         "SHUTTINGDOWN": "Metrix Core 종료 중...",
-        "RESTARTING": "Metrix Core 재시동 중..."
+        "RESTARTING": "Metrix Core 재시동 중...",
+        "BOOTSTRAPPING": "부트 스트랩 핑 매트릭스 코어..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "새 계정이 성공적으로 생성되었습니다.",

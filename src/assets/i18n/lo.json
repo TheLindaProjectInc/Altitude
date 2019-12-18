@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "ຍົກລະດັບຮູບແບບກະເປົາເງິນ",
                 "UPGRADEWALLETINFO": "-upgradewallet: ຍົກລະດັບກະເປົາໃສ່ຮູບແບບຫຼ້າສຸດເມື່ອເລີ່ມຕົ້ນ. (ຫມາຍເຫດ: ນີ້ບໍ່ແມ່ນການປັບປຸງຂອງຕົວມັນເອງ!)",
                 "REBUILDINDEXBUTTON": "Rebuild index",
-                "REBUILDINDEXINFO": "-reindex: ສ້າງດັດຊະນີ blockchain ຈາກປັດຈຸບັນ blk000 ?? dat."
+                "REBUILDINDEXINFO": "-reindex: ສ້າງດັດຊະນີ blockchain ຈາກປັດຈຸບັນ blk000 ?? dat.",
+                "BOOTSTRAPBUTTON": "ເກີບໃສ່ເກີບ",
+                "BOOTSTRAPINFO": "ການດາວໂຫລດໄຟລ໌ Metrix blockchain ຈາກ metrixcoin.com ແລະ bootstrap ການຕິດຕັ້ງຂອງທ່ານ. ອີງຕາມການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂອງທ່ານນີ້ສາມາດໃຊ້ເວລາ 10 ນາທີເຖິງສອງສາມຊົ່ວໂມງ"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "ທຸກການສໍາຮອງຂໍ້ມູນກ່ອນຫນ້ານີ້ທີ່ທ່ານໄດ້ເຮັດຈາກໄຟລ໌ wallet ຂອງທ່ານຄວນຖືກແທນທີ່ດ້ວຍໄຟລ໌ກ່ອງທີ່ຖືກເຂົ້າລະຫັດໃຫມ່. ສໍາລັບເຫດຜົນດ້ານຄວາມປອດໄພ, ການສໍາຮອງຂໍ້ມູນກ່ອນຫນ້າຂອງໄຟລ໌ wallet ທີ່ບໍ່ໄດ້ເຂົ້າລະຫັດຈະກາຍເປັນທີ່ບໍ່ມີປະໂຫຍດໄວທີ່ທ່ານຈະເລີ່ມໃຊ້ຖົງກ່ອງທີ່ຖືກເຂົ້າລະຫັດໃຫມ່.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ຢຸດເຊົາຢ່າງບໍ່ຄາດຝັນ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ມີບັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນຈົບລົງ. ມັນແນະນໍາໃຫ້ກວດເບິ່ງໄຟລ໌ debug.log ຂອງທ່ານສໍາລັບບັນຫາ.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "ການຕັ້ງຄ່າ Lindaconf ບໍ່ຖືກຕ້ອງ",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້.",
             "ADDREMOTEMNTITLE": "ເພີ່ມ Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "ລົ້ມເຫລວ Metrix Core Bootstrap ລົ້ມເຫລວ",
+            "BOOTSTRAPFAILEDINFO": "ມີປັນຫາໃນການເລີ່ມຕົ້ນ Metrix Core. ຂໍແນະ ນຳ ໃຫ້ກວດເບິ່ງເອກະສານບັນທຶກ Altitude ຂອງທ່ານ ສຳ ລັບບັນຫາ.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ເຄື່ອງມືການຟື້ນຕົວ"
         },
         "ADDRESSBOOK": {
             "TITLE": "ປື້ມ​ທີ່​ຢູ່",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "ດາວໂຫລດ Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "ການປິດລົງ Metrix Core...",
-        "RESTARTING": "Restarting Metrix Core..."
+        "RESTARTING": "Restarting Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "ບັນຊີໃຫມ່ຖືກສ້າງຂື້ນຢ່າງສໍາເລັດຜົນ",

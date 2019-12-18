@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Sinthani mtundu wamakope",
                 "UPGRADEWALLETINFO": "-kupititsa patsogolo: Kokweza thumba kuti mupangidwe posachedwa. (Zindikirani: izi sizomwe zikuchitika pa chikwama chomwecho!)",
                 "REBUILDINDEXBUTTON": "Yambani chithunzi",
-                "REBUILDINDEXINFO": "-reindex: Bwezerani chizindikiro cha blockchain kuchokera pa mafayilo a sasa a blk000 ??."
+                "REBUILDINDEXINFO": "-reindex: Bwezerani chizindikiro cha blockchain kuchokera pa mafayilo a sasa a blk000 ??.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Kutsitsa mafayilo a Metrix blockchain kuchokera ku metrixcoin.com ndi bootstrap kukhazikitsa kwanu. Kutengera ndi kulumikizidwa kwa netiweki izi zimatha kutenga mphindi 10 kwa maola angapo"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Zomwe mwasunga kale zomwe munapanga pa fayilo yanu ya chikwama ziyenera kusinthidwa ndi fayilo yatsopano yophimbidwa. Chifukwa cha chitetezo, mafayilo akale a fayilo yam'chikwama chosadziwika sangakhale yopanda phindu mutangoyamba kugwiritsa ntchito chikwama chatsopano, chobisika.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Cholowa cha Metrix Chinadutsa Mwadzidzidzi",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Yambiraninso Wotsatsa",
             "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa metrix.conf kosavomerezeka",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi.",
             "ADDREMOTEMNTITLE": "Onjezani Masternode Akutali",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Kulephera",
+            "BOOTSTRAPFAILEDINFO": "Panali vuto botstrapping Metrix Core. Ndikupangira kuyang'ana fayilo yanu ya Altitude kuti mupeze mavuto.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zida Zobwezeretsa"
         },
         "ADDRESSBOOK": {
             "TITLE": "Bukhu la Maadiresi",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Kuyang'anira Metrix Core...",
         "UPDATEAVAILABLE": "Chiyambi Chachikulu cha Metrix Chipezeka",
         "SHUTTINGDOWN": "Kuletsa Metrix Core...",
-        "RESTARTING": "Kuyambanso Metrix Core..."
+        "RESTARTING": "Kuyambanso Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nkhani yatsopano idapangidwa bwino",

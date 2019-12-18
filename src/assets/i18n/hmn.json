@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Hloov tshiab hnab ntawv",
                 "UPGRADEWALLETINFO": "-gradewallet: Upgrade hnab nyiaj kom dhau hom pib ntawm startup. (Ceeb toom: qhov no TSIS tau hloov tshiab ntawm lub hnab nyiaj xwb!)",
                 "REBUILDINDEXBUTTON": "Rebuild index",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain Performance index ntawm blk000 tam sim no. dat ntaub ntawv."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain Performance index ntawm blk000 tam sim no. dat ntaub ntawv.",
+                "BOOTSTRAPBUTTON": "Tshaiv Plawv Plhu",
+                "BOOTSTRAPINFO": "Daus Metrix blockchain cov ntaub ntawv los ntawm metrixcoin.com thiab bootstrap koj lub installation. Nyob ntawm koj lub network sib txuas qhov no tuaj yeem siv sijhawm li 10 feeb txog ob peb teev"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Cov backups yav dhau los koj tau ua los ntawm koj lub hnab nyiaj yuav tsum tau hloov nrog lub tshiab generated, encrypted hnab ntawv. Rau kev ruaj ntseg, yav dhau los backups ntawm lub hnab ntaub ntawv unencrypted yuav ua tsis tau li sai tau thaum koj pib siv cov tshiab, encrypted hnab nyiaj.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nres Tshem Tawm",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj ib qho teeb meem nrog Metrix Core uas tau ua rau nws xaus. Nws yog pom zoo kom xyuas koj cov ntaub ntawv debug.log rau cov teeb meem.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rov Qab Client",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Koj tus metrix.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Metrix Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no.",
             "ADDREMOTEMNTITLE": "Ntxiv Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode tus IP: chaw nres nkoj",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Tub Ntxhais Bootstrap Ua tsis tau tejyam",
+            "BOOTSTRAPFAILEDINFO": "Muaj teeb meem bootstrapping Metrix Tub Ntxhais. Nws raug nquahu kom kuaj xyuas koj cov ntaub ntawv Altitude log rau cov teebmeem.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Cov Cuab Yeej Rov Qab"
         },
         "ADDRESSBOOK": {
             "TITLE": "Chaw Nyob Hauv Phau Ntawv",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Downloading Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Muaj",
         "SHUTTINGDOWN": "Shutting down Metrix Core...",
-        "RESTARTING": "Rov Qab Los Metrix Caw..."
+        "RESTARTING": "Rov Qab Los Metrix Caw...",
+        "BOOTSTRAPPING": "Tub Ntxhais Tub Ntxhais Tub Ntxhais Thoob..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tus account tshiab tau zoo",

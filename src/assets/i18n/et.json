@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Rahakoti vormindamine",
                 "UPGRADEWALLETINFO": "-upgradewallet: käivitamisel värskendage rahakott hiljemalt formaadis. (Märkus: see ei ole rahakoti enda värskendus!)",
                 "REBUILDINDEXBUTTON": "Indeksi taastamine",
-                "REBUILDINDEXINFO": "-reindeks: taastage blokkide indeks praegustest blk000 ??. dat failidest."
+                "REBUILDINDEXINFO": "-reindeks: taastage blokkide indeks praegustest blk000 ??. dat failidest.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Metrixcoin.com-i failide allalaadimine ja installimise alglaadimine. Sõltuvalt võrguühendusest võib see võtta 10 minutit kuni paar tundi"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Kõik varasemad varukoopiad, mille olete oma rahakoti faili teinud, tuleks asendada hiljuti loodud krüpteeritud rahakotiga. Turvakaalutlustel muutub krüptitud rahakoti faili varasemad varukoopiad kohe, kui hakkate kasutama uut krüptitud rahakotti.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix tuum katkestas ootamatult",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Taaskäivitage klient",
             "CLIENTINVALIDCONFIGTITLE": "Kehtetu metrix.conf konfiguratsioon",
             "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili.",
             "ADDREMOTEMNTITLE": "Lisage Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: port",
             "ADDREMOTEMNKEY": "Masternode privaatvõti",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks",
+            "BOOTSTRAPFAILEDTITLE": "Metriksi südamiku alglaadimine nurjus",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes probleem. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Taastevahendid"
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core allalaadimine...",
         "UPDATEAVAILABLE": "Metrix Core'i värskendus saadaval",
         "SHUTTINGDOWN": "Metrix Core'i sulgemine...",
-        "RESTARTING": "Metrix Core taaskäivitamine..."
+        "RESTARTING": "Metrix Core taaskäivitamine...",
+        "BOOTSTRAPPING": "Alglaadimise Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uus konto on edukalt loodud",

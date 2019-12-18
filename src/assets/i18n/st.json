@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Ntlafatsa mokhoa oa sepache",
                 "UPGRADEWALLETINFO": "-upgradewallet: Ntlafatso ea sepache ho ea ho morao-rao mokhoa oa ho qala. (Tlhokomeliso: ena HA HO tlhaloso ea sepache ka boeona!)",
                 "REBUILDINDEXBUTTON": "Hlahla index",
-                "REBUILDINDEXINFO": "-reindex: Hlahloba index ea blockchain ho tloha ho li-files tsa hona joale tsa blk000 ??."
+                "REBUILDINDEXINFO": "-reindex: Hlahloba index ea blockchain ho tloha ho li-files tsa hona joale tsa blk000 ??.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Ho jarolla lifaele tsa Metrix blockchain ho tloha metrixcoin.com le bootstrap ho kenya ha hau. Ho latela khokahano ea hau ea marang-rang sena se ka nka metsotso e 10 ho isa lihora tse 'maloa"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Tlhahiso leha e le efe e fetileng eo u e entseng ea faele ea hau ea sepache e lokela ho nkeloa sebaka ke faele ea sepache e sa tsoa hlahisoa, e ngotsoeng. Bakeng sa mabaka a tšireletso, likopi tse fetileng tsa faele ea sepache tse sa ngolisoeng li tla ba se nang thuso hang ha u qala ho sebelisa sepache se secha, se kentsoeng.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core o ile a ema ka tšohanyetso",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Metrix Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Qala hape Mookameli",
             "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena.",
             "ADDREMOTEMNTITLE": "Kenya Masternode e hole",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap e ile ea hloleha",
+            "BOOTSTRAPFAILEDINFO": "Ho ne ho e-na le bothata bootstrging Metrix Core. Ho khothaletsoa ho lekola faele ea hau ea sebaka sa Altitude bakeng sa litaba.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Lisebelisoa tsa Pholoso"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Aterese",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Ho lata Metrix Core...",
         "UPDATEAVAILABLE": "Lenaneo la Cinda la Metrix le fumaneha",
         "SHUTTINGDOWN": "Ho thibela Metrix Core...",
-        "RESTARTING": "Ho qala hape Metrix Core..."
+        "RESTARTING": "Ho qala hape Metrix Core...",
+        "BOOTSTRAPPING": "Bootstriling Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Konte e ncha e entsoe ka katleho",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "মানিব্যাগ বিন্যাস আপগ্রেড করুন",
                 "UPGRADEWALLETINFO": "--upgradewallet: প্রারম্ভে সর্বশেষ বিন্যাসে মানিব্যাগ আপগ্রেড করুন। (দ্রষ্টব্য: এই ওয়ালেট নিজেই আপডেট নয়!)",
                 "REBUILDINDEXBUTTON": "সূচক পুনর্নির্মাণ",
-                "REBUILDINDEXINFO": "-reindex: বর্তমান Blk000 থেকে ব্লকচেন সূচক পুনঃনির্মাণ ?? ডেট ফাইল।"
+                "REBUILDINDEXINFO": "-reindex: বর্তমান Blk000 থেকে ব্লকচেন সূচক পুনঃনির্মাণ ?? ডেট ফাইল।",
+                "BOOTSTRAPBUTTON": "বুটস্ট্র্যাপ",
+                "BOOTSTRAPINFO": "Metrixcoin.com থেকে মেট্রিক্স ব্লকচেইন ফাইলগুলি ডাউনলোড করা এবং আপনার ইনস্টলেশন বুটস্ট্র্যাপ করুন। আপনার নেটওয়ার্ক সংযোগের উপর নির্ভর করে এটি 10 মিনিট থেকে কয়েক ঘন্টা সময় নিতে পারে"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "আপনার ভ্যালেট ফাইলের যেকোনো পূর্ববর্তী ব্যাকআপগুলি নতুন তৈরি হওয়া, এনক্রিপ্ট করা Wallet ফাইলের সাথে প্রতিস্থাপন করা উচিত। নিরাপত্তার কারণে, এনক্রিপ্ট করা ভ্যালেট ফাইলের পূর্ববর্তী ব্যাকআপগুলি যত তাড়াতাড়ি আপনি নতুন, এনক্রিপ্ট করা Wallet ব্যবহার শুরু করবেন।",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "লিন্ডা কোর অপ্রত্যাশিতভাবে বন্ধ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "লিন্ডা কোরের সাথে একটি সমস্যা হয়েছিল যা এটি বন্ধ করে দিয়েছে। এটি সমস্যাগুলির জন্য আপনার debug.log ফাইলটি পরীক্ষা করার সুপারিশ করা হয়।",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ক্লায়েন্ট পুনরায় চালু করুন",
             "CLIENTINVALIDCONFIGTITLE": "অবৈধ metrix.conf কনফিগারেশন",
             "CLIENTINVALIDCONFIGINFO": "আপনার metrix.conf-এর একটি অবৈধ মাস্টারনড সেটআপ রয়েছে যা লিন্ডা কোরকে অবিলম্বে প্রস্থান করতে দেবে। এই ফাইল চেক করুন।",
             "ADDREMOTEMNTITLE": "রিমোট Masternode যোগ করুন",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode আইপি: পোর্ট",
             "ADDREMOTEMNKEY": "Masternode প্রাইভেট কী",
             "ADDREMOTEMNTXHASH": "Masternode Trx হ্যাশ",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx সূচক"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx সূচক",
+            "BOOTSTRAPFAILEDTITLE": "মেট্রিক্স কোর বুটস্ট্র্যাপ ব্যর্থ",
+            "BOOTSTRAPFAILEDINFO": "মেট্রিক্স কোর বুটস্ট্র্যাপ করার সময় একটি সমস্যা হয়েছিল। সমস্যাগুলির জন্য আপনার উচ্চতা লগ ফাইলটি পরীক্ষা করার পরামর্শ দেওয়া হচ্ছে।",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "পুনরুদ্ধার সরঞ্জাম"
         },
         "ADDRESSBOOK": {
             "TITLE": "ঠিকানা বই",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "লিন্ডা কোর ডাউনলোড হচ্ছে...",
         "UPDATEAVAILABLE": "লিন্ডা কোর আপডেট উপলব্ধ",
         "SHUTTINGDOWN": "লিন্ডা কোর বন্ধ করা হচ্ছে...",
-        "RESTARTING": "লিন্ডা কোর পুনরায় আরম্ভ করা হচ্ছে..."
+        "RESTARTING": "লিন্ডা কোর পুনরায় আরম্ভ করা হচ্ছে...",
+        "BOOTSTRAPPING": "বুটস্ট্র্যাপিং মেট্রিক্স কোর..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "নতুন অ্যাকাউন্ট সফলভাবে তৈরি",

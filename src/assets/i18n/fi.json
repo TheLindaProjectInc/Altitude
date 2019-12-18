@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Päivitä lompakon muoto",
                 "UPGRADEWALLETINFO": "-upgradewallet: Päivitä lompakko uusimpaan muotoon käynnistyksen yhteydessä. (Huomaa: tämä ei ole päivitys itse lompakosta!)",
                 "REBUILDINDEXBUTTON": "Rebuild-indeksi",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain -indeksi nykyisistä blk000 ??. dat-tiedostoista."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain -indeksi nykyisistä blk000 ??. dat-tiedostoista.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Lataa Metrix-blockchain-tiedostot metrixcoin.com-sivustosta ja käynnistä asennus. Verkkoyhteydestään riippuen tämä voi viedä 10 minuutista pariin tuntiin"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Kaikki aiemmat varmuuskopiot, jotka olet tehnyt lompakon tiedostosta, on korvattava äskettäin luodulla, salatulla lompakon tiedostolla. Turvallisuussyistä salaamattomien lompakon tiedostojen aiemmat varmuuskopiot tulevat hyödyttömiksi heti, kun aloitat uuden salatun lompakon käyttämisen.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core pysähtyi yllättäen",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Käynnistä asiakas uudelleen",
             "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
             "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto.",
             "ADDREMOTEMNTITLE": "Lisää etä Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Portti",
             "ADDREMOTEMNKEY": "Masternode-yksityinen avain",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx -indeksi"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx -indeksi",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap epäonnistui",
+            "BOOTSTRAPFAILEDINFO": "Metrix-ytimen käynnistämisessä tapahtui ongelma. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut"
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Ladataan Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core -päivitys saatavilla",
         "SHUTTINGDOWN": "Metrix Corein sulkeminen...",
-        "RESTARTING": "Metrix Corein uudelleen käynnistäminen..."
+        "RESTARTING": "Metrix Corein uudelleen käynnistäminen...",
+        "BOOTSTRAPPING": "Käynnistävä Metrix-ydin..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uusi tili luotu onnistuneesti",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Nâng cấp định dạng ví",
                 "UPGRADEWALLETINFO": "-upgradewallet: Nâng cấp ví lên định dạng mới nhất khi khởi động. (Lưu ý: đây KHÔNG phải là bản cập nhật của ví tiền!)",
                 "REBUILDINDEXBUTTON": "Xây dựng lại chỉ số",
-                "REBUILDINDEXINFO": "-reindex: Xây dựng lại chỉ mục blockchain từ các tập tin dữ liệu blk000 hiện tại."
+                "REBUILDINDEXINFO": "-reindex: Xây dựng lại chỉ mục blockchain từ các tập tin dữ liệu blk000 hiện tại.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Tải xuống các tệp blockchain Metrix từ metrixcoin.com và khởi động cài đặt của bạn. Tùy thuộc vào kết nối mạng của bạn, việc này có thể mất 10 phút đến vài giờ"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Bất kỳ bản sao lưu nào trước đây bạn đã tạo từ tệp ví của mình nên được thay thế bằng tệp ví được mã hóa mới được tạo. Vì lý do bảo mật, các bản sao lưu trước đó của tệp ví không được mã hóa sẽ trở nên vô dụng ngay khi bạn bắt đầu sử dụng ví mới được mã hóa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dừng lại một cách bất ngờ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Có một vấn đề với Metrix Core đã khiến nó chấm dứt. Bạn nên kiểm tra tệp debug.log của mình để biết các vấn đề.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Khởi động lại khách hàng",
             "CLIENTINVALIDCONFIGTITLE": "Cấu hình metrix.conf không hợp lệ",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tập tin này.",
             "ADDREMOTEMNTITLE": "Thêm Masternode từ xa",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Cổng",
             "ADDREMOTEMNKEY": "Khóa riêng Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Chỉ số Masterxode Trx"
+            "ADDREMOTEMNTXINDEX": "Chỉ số Masterxode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap không thành công",
+            "BOOTSTRAPFAILEDINFO": "Đã xảy ra sự cố khi khởi động Metrix Core. Bạn nên kiểm tra tệp nhật ký Độ cao của bạn để biết các vấn đề.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Công cụ khôi phục"
         },
         "ADDRESSBOOK": {
             "TITLE": "Sổ địa chỉ",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Đang tải xuống Metrix Core...",
         "UPDATEAVAILABLE": "Có sẵn cập nhật lõi Metrix",
         "SHUTTINGDOWN": "Tắt Metrix Core...",
-        "RESTARTING": "Khởi động lại Metrix Core..."
+        "RESTARTING": "Khởi động lại Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tài khoản mới được tạo thành công",

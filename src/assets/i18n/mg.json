@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade format ny baraingo",
                 "UPGRADEWALLETINFO": "-upgradewallet: Upgrade ny kitapo mankany amin'ny format farany amin'ny fanombohana. (Fanamarihana: TSY fanavaozana ny kitapo mihitsy!)",
                 "REBUILDINDEXBUTTON": "Manorata ny mari-pamantarana",
-                "REBUILDINDEXINFO": "-reindex: Manangana ny index blockchain avy amin'ny blk000 amin'izao fotoana izao."
+                "REBUILDINDEXINFO": "-reindex: Manangana ny index blockchain avy amin'ny blk000 amin'izao fotoana izao.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Misintona ireo rakitra Metrix blockchain avy amin'ny metrixcoin.com ary bootstrap ny fametrahana anao. Miankina amin'ny fifandraisan'ny tambajotrao dia mety maharitra 10 minitra amin'ny ora roa"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ireo loham-piantsorohana teo aloha izay nataonao tamin'ny rakitra boribory dia tokony hosoloina amin'ny rakitra boribory vaovao noforonina vaovao. Noho ny antony fiarovana, dia tsy misy ilàna azy ny tahirin-tsarimihetsika vita amin'ny rakitry ny birao raha vao manomboka mampiasa ny kitapo vaovao.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dia tampoka tsy nampoizina",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana teo amin'i Metrix Core izay nahatonga azy hofoanana. Manorata dia alefaso ny rakitra debug.log ho an'ny olana.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Atsaharo ny mpanjifa",
             "CLIENTINVALIDCONFIGTITLE": "Lisitra tsy voafetra an'i metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ny metrix.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Metrix Core. Azafady azafady ity rakitra ity.",
             "ADDREMOTEMNTITLE": "Add Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap tsy nahomby",
+            "BOOTSTRAPFAILEDINFO": "Nisy olana bootstrapping Metrix Core. Anisany hanamarina ny peo logitude Altitude ho an'ny olana.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Fitaovana fanarenana"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adiresy boky",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Download Metrix Core...",
         "UPDATEAVAILABLE": "Fandraisana an'i Metrix Core available",
         "SHUTTINGDOWN": "Afaho ny Metrix Core...",
-        "RESTARTING": "Manombohana an'i Metrix Core..."
+        "RESTARTING": "Manombohana an'i Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novaina tsara ny kaonty vaovao",

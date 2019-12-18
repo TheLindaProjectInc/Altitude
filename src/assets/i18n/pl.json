@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Uaktualnij format portfela",
                 "UPGRADEWALLETINFO": "-upgradewallet: uaktualnij portfel do najnowszego formatu podczas uruchamiania. (Uwaga: NIE jest to aktualizacja samego portfela!)",
                 "REBUILDINDEXBUTTON": "Przebuduj indeks",
-                "REBUILDINDEXINFO": "-reindex: Przebuduj indeks blockchain z bieżących plików blk000 ??."
+                "REBUILDINDEXINFO": "-reindex: Przebuduj indeks blockchain z bieżących plików blk000 ??.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Pobieranie plików blockchain Metrix z metrixcoin.com i bootstrap instalacji. W zależności od połączenia sieciowego może to zająć od 10 minut do kilku godzin"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Wszystkie poprzednie kopie zapasowe utworzone w pliku portfela należy zastąpić nowo wygenerowanym, zaszyfrowanym plikiem portfela. Ze względów bezpieczeństwa poprzednie kopie niezaszyfrowanego pliku portfela staną się bezużyteczne, gdy tylko zaczniesz korzystać z nowego, zaszyfrowanego portfela.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core zatrzymała się nieoczekiwanie",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Wystąpił problem z Metrix Core, który spowodował jej zakończenie. Zaleca się sprawdzenie pliku debug.log w poszukiwaniu problemów.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Zrestartuj klienta",
             "CLIENTINVALIDCONFIGTITLE": "Nieprawidłowa konfiguracja metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Twój metrix.conf ma nieprawidłową konfigurację masternodu, która spowoduje natychmiastowe wyjście Lindy Core. Sprawdź ten plik.",
             "ADDREMOTEMNTITLE": "Dodaj zdalny masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Klucz prywatny trybu głównego",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Błąd ładowania początkowego Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Wystąpił problem z ładowaniem Metrix Core. Zaleca się sprawdzenie pliku dziennika wysokości w poszukiwaniu problemów.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Narzędzia do odzyskiwania"
         },
         "ADDRESSBOOK": {
             "TITLE": "Książka adresowa",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Pobieranie Metrix Core...",
         "UPDATEAVAILABLE": "Dostępna aktualizacja Metrix Core",
         "SHUTTINGDOWN": "Zamykanie Metrix Core...",
-        "RESTARTING": "Ponowne uruchamianie Metrix Core..."
+        "RESTARTING": "Ponowne uruchamianie Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nowe konto zostało pomyślnie utworzone",

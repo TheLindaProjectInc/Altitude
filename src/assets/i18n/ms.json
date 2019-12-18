@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Meningkatkan format dompet",
                 "UPGRADEWALLETINFO": "-upgradewallet: Tingkatkan dompet ke format terkini pada permulaan. (Nota: ini TIDAK kemas kini dompet itu sendiri!)",
                 "REBUILDINDEXBUTTON": "Rebuild index",
-                "REBUILDINDEXINFO": "-reindex: Rebuild indeks blockchain dari blk000 ?? fail dat sekarang."
+                "REBUILDINDEXINFO": "-reindex: Rebuild indeks blockchain dari blk000 ?? fail dat sekarang.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Memuat turun fail blockchain Metrix dari metrixcoin.com dan bootstrap pemasangan anda. Bergantung kepada sambungan rangkaian anda, ini boleh mengambil masa 10 minit untuk beberapa jam"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Mana-mana sandaran sebelumnya yang telah anda buat dari fail dompet anda harus diganti dengan fail dompet yang baru dihasilkan dan dienkripsi. Atas sebab keselamatan, backup sebelumnya dari fail dompet yang tidak disenarai akan menjadi tidak berguna sebaik sahaja anda mula menggunakan dompet yang baru dan disulitkan.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Berhenti tanpa diduga",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Metrix Core yang menyebabkan ia ditamatkan. Ia mengesyorkan untuk menyemak fail debug.log anda untuk masalah.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Pelanggan",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak sah",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Metrix Core keluar segera. Sila semak fail ini.",
             "ADDREMOTEMNTITLE": "Tambah Masternode Jauh",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: Pelabuhan",
             "ADDREMOTEMNKEY": "Kunci Peribadi Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indeks Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Indeks Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap Teras Metrix Gagal",
+            "BOOTSTRAPFAILEDINFO": "Terdapat masalah bootstrapping Metrix Core. Ia mengesyorkan untuk menyemak fail log Altitude anda untuk isu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Memuat turun Metrix Core...",
         "UPDATEAVAILABLE": "Kemas kini Teras Metrix Tersedia",
         "SHUTTINGDOWN": "Menutup Metrix Core...",
-        "RESTARTING": "Mulakan semula Core Metrix..."
+        "RESTARTING": "Mulakan semula Core Metrix...",
+        "BOOTSTRAPPING": "Bootstrapping Core Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaun baru berjaya dibuat",

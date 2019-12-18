@@ -2,13 +2,15 @@
 import { app, ipcMain } from 'electron';
 import * as os from 'os';
 import * as path from 'path';
+import * as fs from 'fs';
 import * as request from 'request';
 import { spawn, ChildProcess } from 'child_process';
-import * as helpers from './helpers';
 import * as log from 'electron-log';
-import * as settings from './settings';
+import * as unzipper from 'unzipper'
 import * as compareVersions from 'compare-versions';
 import * as publicIp from 'public-ip';
+import * as settings from './settings';
+import * as helpers from './helpers';
 var localClientBinaries = require('../clientBinaries.json');
 
 const sleep = require('util').promisify(setTimeout)
@@ -18,11 +20,13 @@ export default class Client {
     clientsLocation = path.join(app.getPath('userData'), 'clients');
     clientName = 'metrixd';
     clientConfigLocation = ''
+    clientDataDir = '';
     clientConfig: ClientConfig;
     clientLocalLocation: string;
     clientDownloadLocation: string;
     clientVersion: string;
     clientVersionHistory = {};
+    clientBootstrapUrl: string
     // client config file
     clientConfigFile: ClientConfigFile;
     // rpc status
@@ -50,20 +54,21 @@ export default class Client {
         const confName = 'metrix.conf';
         const dataDir = 'metrix';
         if (os.platform() === 'win32') {
-            this.clientConfigLocation = path.join(app.getPath('userData'), '../', dataDir, confName);
+            this.clientDataDir = path.join(app.getPath('userData'), '../', dataDir);
         } else if (os.platform() === 'linux') {
-            this.clientConfigLocation = path.join(app.getPath('home'), '.' + dataDir, confName);
+            this.clientDataDir = path.join(app.getPath('home'), '.' + dataDir);
         } else if (os.platform() === 'darwin') {
-            this.clientConfigLocation = path.join(app.getPath('home'), 'Library', 'Application Support', dataDir, confName);
+            this.clientDataDir = path.join(app.getPath('home'), 'Library', 'Application Support', dataDir);
         }
         // check if we passed a custom data dir
         for (let i = 0; i < process.argv.length; i++) {
             let arg = process.argv[i];
             if (arg.toLowerCase().indexOf('-datadir=') > -1) {
-                this.clientConfigLocation = path.join(arg.split("=")[1].trim(), confName);
+                this.clientDataDir = arg.split("=")[1].trim();
                 break;
             }
         }
+        this.clientConfigLocation = path.join(this.clientDataDir, confName);
         log.info('Client', 'Config location', this.clientConfigLocation);
     }
 
@@ -106,6 +111,9 @@ export default class Client {
                     break;
                 case 'MASTERNODE':
                     this.configureMasternode(data);
+                    break;
+                case 'BOOTSTRAP':
+                    this.bootstrapClient();
                     break;
             }
         });
@@ -194,7 +202,7 @@ export default class Client {
             try {
                 const res: any = await helpers.getRequest("https://raw.githubusercontent.com/thelindaprojectinc/altitude/master/clientBinaries.json");
                 let remoteClientBinaries = JSON.parse(res.body);
-                if (compareVersions(remoteClientBinaries[this.clientName].version, clientBinaries[this.clientName].version) >= 0) {
+                if (compareVersions(remoteClientBinaries[this.clientName].version, clientBinaries[this.clientName].version) > 0) {
                     clientBinaries = remoteClientBinaries;
                     log.info("Client", "Using remote client binaries");
                 }
@@ -212,6 +220,7 @@ export default class Client {
         this.clientLocalLocation = path.join(this.clientsLocation, this.clientConfig.bin);
         this.clientDownloadLocation = path.join(this.clientsLocation, 'download');
         this.clientVersionHistory = clientBinaries[this.clientName].versions;
+        this.clientBootstrapUrl = clientBinaries[this.clientName].bootstrap;
         // get client version
         await this.getClientVersion();
     }
@@ -372,6 +381,34 @@ export default class Client {
                 resolve();
             }
         })
+    }
+
+    async bootstrapClient() {
+        try {
+            const bootstrapLocation = path.join(this.clientDataDir, 'bootstrap.zip');
+            log.info("Client", "Bootstrap stopping client...");
+            await this.stop();
+            this.setClientStatus(ClientStatus.BOOTSTRAPPING);
+            log.info("Client", "Bootstrap downloading files...", this.clientBootstrapUrl);
+            await helpers.deleteFile(bootstrapLocation);
+            await helpers.downloadFile(this.clientBootstrapUrl, bootstrapLocation);
+            log.info("Client", "Bootstrap removing old files...");
+            helpers.deleteFolderSync(path.join(this.clientDataDir, "blocks"));
+            helpers.deleteFolderSync(path.join(this.clientDataDir, "chainstate"));
+            log.info("Client", "Bootstrap copying bootstrap...");
+            fs.createReadStream(bootstrapLocation)
+                .pipe(unzipper.Extract({ path: this.clientDataDir }))
+                .on('entry', entry => entry.autodrain())
+                .promise()
+                .then(() => {
+                    helpers.deleteFile(bootstrapLocation);
+                    log.info("Client", "Bootstrap starting client...");
+                    this.startClient(true, true);
+                }, err => { throw err });
+        } catch (ex) {
+            log.error("Client", "Bootstrap failed", ex);
+            this.setClientStatus(ClientStatus.BOOTSTRAPFAILED);
+        }
     }
 
     destroyClientProccess() {
@@ -538,6 +575,7 @@ export enum ClientStatus {
     RUNNING,
     RUNNINGEXTERNAL,
     STOPPED,
+    BOOTSTRAPPING,
     NOCREDENTIALS,
     INVALIDHASH,
     INVALIDMASTERNODECONFIG,
@@ -546,6 +584,7 @@ export enum ClientStatus {
     SHUTTINGDOWN,
     RESTARTING,
     CLOSEDUNEXPECTED,
+    BOOTSTRAPFAILED,
 }
 
 class ClientConfig {

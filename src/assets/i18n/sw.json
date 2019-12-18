@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Fanya muundo wa mkobaji",
                 "UPGRADEWALLETINFO": "-upgradewallet: Mboreshaji wa kuboresha hadi muundo wa hivi karibuni wakati wa kuanza. (Kumbuka: hii sio update ya mkoba yenyewe!)",
                 "REBUILDINDEXBUTTON": "Jenga index",
-                "REBUILDINDEXINFO": "-reindex: Unda jarida la blockchain kutoka kwa faili za sasa za blk000 ??."
+                "REBUILDINDEXINFO": "-reindex: Unda jarida la blockchain kutoka kwa faili za sasa za blk000 ??.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Inapakua faili za Metrix blockchain kutoka metrixcoin.com na bootstrap usanidi wako. Kulingana na muunganisho wako wa mtandao hii inaweza kuchukua dakika 10 kwa masaa kadhaa"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Vidokezo vyovyote vilivyotengenezwa kwenye faili yako ya mkoba lazima zibadilishwe na faili iliyotengenezwa iliyochapishwa, iliyochapishwa. Kwa sababu za kiusalama, salama zilizopita za faili ya mkoba isiyojulikana haitakuwa na maana mara tu unapoanza kutumia mkoba mpya, uliofichwa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Chumba cha Metrix kiliacha bila kutarajia",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Metrix Core ambayo imesababisha kukomesha. Inapendekeza kuangalia faili yako ya debug.log kwa masuala.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Anza upya Mteja",
             "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf isiyo sahihi",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Metrix Core kuondoka mara moja. Tafadhali angalia faili hii.",
             "ADDREMOTEMNTITLE": "Ongeza Masternode ya mbali",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Ufunguo wa kibinafsi wa Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Imeshindwa",
+            "BOOTSTRAPFAILEDINFO": "Kulikuwa na shida ya kutengeneza Metrix Core. Inapendekezwa kuangalia faili yako ya logi ya Altitude kwa maswala.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Vyombo vya kupona"
         },
         "ADDRESSBOOK": {
             "TITLE": "Kitabu cha anwani",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Inapakua Metrix Core...",
         "UPDATEAVAILABLE": "Mwisho wa Cinda wa Metrix Unapatikana",
         "SHUTTINGDOWN": "Kuzuia Metrix Core...",
-        "RESTARTING": "Kuanzisha tena Cinda Core..."
+        "RESTARTING": "Kuanzisha tena Cinda Core...",
+        "BOOTSTRAPPING": "Kuongeza kasi ya Metrix..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaunti mpya imeundwa kwa ufanisi",

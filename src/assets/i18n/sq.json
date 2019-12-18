@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Dorëzimi i formatit të portofolit",
                 "UPGRADEWALLETINFO": "-shpejtimi i përmirësuar: Dorëzimi i portofolit në formatin më të fundit në fillimin. (Shënim: kjo NUK është një përditësim i vetë portofolit!)",
                 "REBUILDINDEXBUTTON": "Rindërtimi i indeksit",
-                "REBUILDINDEXINFO": "-reindex: Rindërtimi i indeksit blockchain nga dosjet aktuale të blk000 ??. dat."
+                "REBUILDINDEXINFO": "-reindex: Rindërtimi i indeksit blockchain nga dosjet aktuale të blk000 ??. dat.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Shkarkimi i skedarëve blockchain Metrix nga metrixcoin.com dhe bootstrap instalimin tuaj. Në varësi të lidhjes tuaj të rrjetit, kjo mund të zgjasë 10 minuta deri në disa orë"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Çdo kopje rezervë e mëparshme që keni bërë nga dosja e portofolit tuaj duhet të zëvendësohet me skedarin e portofolit të sapokrijuar, të koduar. Për arsye sigurie, kopjet e mëparshme të skedarit të portofolit të paskrupuar do të bëhen të padobishme sapo të filloni të përdorni portofolin e ri të koduar.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core u ndal papritur",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Metrix Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Rinis Klientin",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurimi metrix.conf i pavlefshëm",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar.",
             "ADDREMOTEMNTITLE": "Shto Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indeksi Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Indeksi Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap i Metrix Core dështoi",
+            "BOOTSTRAPFAILEDINFO": "Pati një problem me bootstrap Metrix Core. Rekomandohet të kontrolloni skedarin tuaj të regjistrit të lartësisë për çështje.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mjetet e rimëkëmbjes"
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i adresave",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Shkarkimi i Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update dispozicion",
         "SHUTTINGDOWN": "Mbyllja Metrix Core...",
-        "RESTARTING": "Rinisni Metrix Core..."
+        "RESTARTING": "Rinisni Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Llogaria e re është krijuar me sukses",

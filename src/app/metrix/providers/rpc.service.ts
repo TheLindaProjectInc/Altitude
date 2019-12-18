@@ -6,6 +6,7 @@ import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
 import * as compareVersions from 'compare-versions';
 import { BlockchainStatus } from '../classes/blockchainStatus';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class RpcService {
@@ -13,6 +14,7 @@ export class RpcService {
     public clientStatus: ClientStatus;
     public RPCReady = false
     public RPCWarmupMessage = '';
+    public recoveryMode = false;
 
     private RPCSubscriptions = {};
 
@@ -24,7 +26,8 @@ export class RpcService {
 
     constructor(
         private electron: ElectronService,
-        private prompt: PromptService
+        private prompt: PromptService,
+        private router: Router,
     ) {
         if (electron.isElectron()) this.setupListeners()
         else console.log("Not running in electron. cannot connect IPC");
@@ -45,6 +48,8 @@ export class RpcService {
                 this.notifyClientInvalidConfig();
             } else if (status === ClientStatus.SHUTTINGDOWN) {
                 this.stopClient();
+            } else if (status === ClientStatus.BOOTSTRAPFAILED) {
+                this.notifyBootstrapFailed();
             }
         });
         // electron for RPC status
@@ -74,6 +79,11 @@ export class RpcService {
     public restartClient(commands = []) {
         this.stopClient();
         this.electron.ipcRenderer.send('client-node', 'RESTART', commands);
+    }
+
+    public bootstrapClient() {
+        this.stopClient();
+        this.electron.ipcRenderer.send('client-node', 'BOOTSTRAP');
     }
 
     public async requestData(method, params = []) {
@@ -562,13 +572,27 @@ export class RpcService {
 
     async notifyClientCloseUnexpected() {
         try {
-            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDTITLE', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
-            // restart internal client
-            this.restartClient();
+            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDTITLE', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            this.enterRecoveryMode();
         } catch (ex) {
             // chose to stop wallet
             this.electron.remote.app.quit()
         }
+    }
+
+    async notifyBootstrapFailed() {
+        try {
+            await this.prompt.alert('COMPONENTS.PROMPT.BOOTSTRAPFAILEDTITLE', 'COMPONENTS.PROMPT.BOOTSTRAPFAILEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            this.enterRecoveryMode();
+        } catch (ex) {
+            // chose to stop wallet
+            this.electron.remote.app.quit()
+        }
+    }
+
+    private enterRecoveryMode() {
+        this.recoveryMode = true;
+        this.router.navigate(['/metrix/tools/3']);
     }
 
     async notifyClientInvalidConfig() {

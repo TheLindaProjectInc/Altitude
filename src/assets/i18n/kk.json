@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Әмиян форматын жаңартыңыз",
                 "UPGRADEWALLETINFO": "-upgradewallet: Әмиянды іске қосу кезінде соңғы форматқа дейін жаңартыңыз. (Ескерту: бұл әмиянның өзі жаңартылмайды!)",
                 "REBUILDINDEXBUTTON": "Индексті қайта құру",
-                "REBUILDINDEXINFO": "-reindex: Ағымдағы блоктардан 2000 файлдардан блохаин индексін қайта жасаңыз."
+                "REBUILDINDEXINFO": "-reindex: Ағымдағы блоктардан 2000 файлдардан блохаин индексін қайта жасаңыз.",
+                "BOOTSTRAPBUTTON": "Аяқ киім",
+                "BOOTSTRAPINFO": "Metrix blockchain файлдарын metrixcoin.com сайтынан жүктеу және орнатуды бастау. Желі қосылымына байланысты бұл 10 минуттан бірнеше сағатқа созылуы мүмкін"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Әмиян файлын жасаған кез келген бұрынғы сақтық көшірмелер жаңадан құрылған шифрланған әмиян файлымен ауыстырылуы тиіс. Қауіпсіздік мақсатында, шифрланбаған әмиян файлының бұрынғы сақтық көшірмесі жаңа, шифрланған әмиянды пайдалануды бастағаннан кейін пайдасыз болады.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линден Коре күтпеген жерден тоқтады",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-мен проблема болды, ол оны тоқтатуға мәжбүр болды. Қателерге арналған debug.log файлын тексеру ұсынылады.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентті қайта іске қосыңыз",
             "CLIENTINVALIDCONFIGTITLE": "Конфигурация metrix.conf жарамсыз",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf-ң Metrix Core-нің бірден шығуына себепші болатын мастер-кодтың дұрыс емес параметрі бар. Бұл файлды тексеріңіз.",
             "ADDREMOTEMNTITLE": "Қашықтағы Masternode қосыңыз",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: порт",
             "ADDREMOTEMNKEY": "Masternode жеке кілті",
             "ADDREMOTEMNTXHASH": "Masternode Trx хэш",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx индексі"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индексі",
+            "BOOTSTRAPFAILEDTITLE": "Metrix негізгі жүктеу сәтсіз аяқталды",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core жүктеу кезінде мәселе болды. Өзіңіздің биіктіктегі журнал файлына мәселелерді тексеру ұсынылады.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Қалпына келтіру құралдары"
         },
         "ADDRESSBOOK": {
             "TITLE": "Мекенжайлық кітап",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core жүктеу...",
         "UPDATEAVAILABLE": "Metrix Core Update қол жетімді",
         "SHUTTINGDOWN": "Metrix Core-ты өшіріп...",
-        "RESTARTING": "Metrix Core-ты қайта..."
+        "RESTARTING": "Metrix Core-ты қайта...",
+        "BOOTSTRAPPING": "Metrix Core жүктеу..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Жаңа есептік жазба сәтті жасалды",

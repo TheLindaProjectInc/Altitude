@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade капчык формат",
                 "UPGRADEWALLETINFO": "-upgradewallet: Башталганда акыркы үлгүдөгү капчыкты жогорулатуу. (Эскертүү: бул капчык өзү бир өзгөртүү эмес!)",
                 "REBUILDINDEXBUTTON": "индекси калыбына келтирүү",
-                "REBUILDINDEXINFO": "-reindex:. учурдагы blk000 ?? жообун көчүрүп алып blockchain индекси кургула."
+                "REBUILDINDEXINFO": "-reindex:. учурдагы blk000 ?? жообун көчүрүп алып blockchain индекси кургула.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "metrixcoin.com тартып Metrix blockchain материалдары жүктөп жана орнотууга баштапкы. Тармак байланыштуу жараша бул бир нече саатка чейин 10 минут талап кылынышы мүмкүн"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Эгер капчык делосуна жасалган ар кандай Мурунку бэкапты кайрадан түзүлгөн, Оско капчык материалдары менен алмаштыруу керек. Коопсуздук себептеринен улам, кадимки капчык Билэ Мурунку бэкапты жакында жараксыз болуп калат, сен жаңы, Оско капчыкты пайдалануу сыяктуу.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда Core күтүүсүздөн токтоп",
             "CLIENTCLOSEDUNEXPECTEDINFO": "аны токтотууга алып келген жок Линда Корак менен көйгөй чыкты. Бул маселелер боюнча debug.log билэни текшерүүгө сунуш болуп саналат.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "кайра Кардар",
             "CLIENTINVALIDCONFIGTITLE": "Жараксыз metrix.conf Тарам орнотуусу",
             "CLIENTINVALIDCONFIGINFO": "Сиздин metrix.conf дароо чыгып Линда Коракты алып келем жараксыз masternode орнотуп жазыла элек. Бу билэни текшерүү.",
             "ADDREMOTEMNTITLE": "Кошуу Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Порт-",
             "ADDREMOTEMNKEY": "Masternode купуя ачкыч",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core жүктөгүч ишке ашкан жок",
+            "BOOTSTRAPFAILEDINFO": "bootstrapping Metrix Коракты көйгөй чыкты. Бул маселелер боюнча тоолуу журналы сааты менен таанышып чыгууну сунуш кылабыз болот.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "калыбына келтирүү Tools"
         },
         "ADDRESSBOOK": {
             "TITLE": "Дарек китеби",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Линда Коракты жүктөлүшү...",
         "UPDATEAVAILABLE": "Линда Core элеси жеткиликтүү",
         "SHUTTINGDOWN": "Линда Коракты жабылат...",
-        "RESTARTING": "Линда Коракты Кайра жүргүзүүдө..."
+        "RESTARTING": "Линда Коракты Кайра жүргүзүүдө...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix негизги..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Жаңы эсеп ийгиликтүү түзүлдү",

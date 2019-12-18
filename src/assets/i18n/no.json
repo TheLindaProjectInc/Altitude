@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Oppgrader lommebokformat",
                 "UPGRADEWALLETINFO": "-upgradewallet: Oppgrader lommebok til siste format ved oppstart. (Merk: dette er IKKE en oppdatering av lommeboken selv!)",
                 "REBUILDINDEXBUTTON": "Oppbygg indeksen",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain-indeks fra nåværende blk000 ??. dat-filer."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain-indeks fra nåværende blk000 ??. dat-filer.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Last ned Metrix blockchain-filer fra metrixcoin.com og startstrap installasjonen. Avhengig av nettverkstilkoblingen din kan dette ta 10 minutter til et par timer"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Eventuelle tidligere sikkerhetskopier du har laget av lommebokfilen din, skal erstattes med den nylig genererte, krypterte lommebokfilen. Av sikkerhetshensyn blir tidligere sikkerhetskopier av den ukrypterte lommebokfilen ubrukelig så snart du begynner å bruke den nye krypterte lommeboken.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppet uventet",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Det var et problem med Metrix Core som har forårsaket det å si opp. Det anbefales å sjekke debug.log-filen din for problemer.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Start Klient på nytt",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf Konfigurasjon",
             "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har et ugyldig masternodeoppsett som vil føre til at Metrix Core avsluttes umiddelbart. Vennligst sjekk denne filen.",
             "ADDREMOTEMNTITLE": "Legg til ekstern masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode privat nøkkel",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislyktes",
+            "BOOTSTRAPFAILEDINFO": "Det oppsto et problem med å starte opp Metrix Core. Det anbefales å sjekke Altitude-loggfilen for problemer.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Gjenopprettingsverktøy"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebok",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Laster ned Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update tilgjengelig",
         "SHUTTINGDOWN": "Stenger ned Metrix Core...",
-        "RESTARTING": "Omstart Metrix Core..."
+        "RESTARTING": "Omstart Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ny konto ble opprettet",

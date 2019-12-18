@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Inovovať formát peňaženky",
                 "UPGRADEWALLETINFO": "-upgradewallet: Aktualizujte peňaženku na najnovší formát pri štarte. (Poznámka: Toto nie je aktualizácia samotnej peňaženky!)",
                 "REBUILDINDEXBUTTON": "Znovu vytvoriť index",
-                "REBUILDINDEXINFO": "-reindex: Znovu vytvoriť blokový index z aktuálnych blk000? datových súborov."
+                "REBUILDINDEXINFO": "-reindex: Znovu vytvoriť blokový index z aktuálnych blk000? datových súborov.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Stiahnutie súborov blockchainu Metrix zo stránky metrixcoin.com a zavedenie vašej inštalácie. V závislosti od vášho sieťového pripojenia to môže trvať 10 minút až niekoľko hodín"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Akékoľvek predchádzajúce zálohy, ktoré ste vytvorili zo súboru peňaženky, by mali byť nahradené novo vytvoreným šifrovaným súborom peňaženky. Z bezpečnostných dôvodov sa predchádzajúce zálohy súboru nešifrovanej peňaženky stanú zbytočnými, akonáhle začnete používať novú zašifrovanú peňaženku.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core sa neočakávane zastavila",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Vyskytol sa problém s Metrix Core, ktorý spôsobil jeho ukončenie. Odporúčame vám skontrolovať problém debug.log.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reštartujte klienta",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurácia služby metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf má neplatné nastavenie masternode, ktoré spôsobí, že Metrix Core okamžite opustí. Skontrolujte tento súbor.",
             "ADDREMOTEMNTITLE": "Pridať vzdialený masternód",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Súkromný kľúč Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Index trxu Masternode"
+            "ADDREMOTEMNTXINDEX": "Index trxu Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap jadra Metrix zlyhal",
+            "BOOTSTRAPFAILEDINFO": "Pri zavádzaní Metrix Core sa vyskytol problém. Odporúča sa skontrolovať problémy v protokolovom súbore Altitude.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nástroje na obnovenie"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresár",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Sťahovanie Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Dostupné",
         "SHUTTINGDOWN": "Vypnutie Metrix Core...",
-        "RESTARTING": "Reštartujte Metrix Core..."
+        "RESTARTING": "Reštartujte Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Core jadra..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nový účet bol úspešne vytvorený",

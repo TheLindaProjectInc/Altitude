@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Hobetu zorroaren formatua",
                 "UPGRADEWALLETINFO": "-upgradewallet: Hobetu zorroa azken bertsioan abioan. (Oharra: hau ez da zorroaren beraren eguneratzea!)",
                 "REBUILDINDEXBUTTON": "Berregin indizea",
-                "REBUILDINDEXINFO": "-reindex: berreskuratu blockchain index indize blk000?. dat fitxategientzako."
+                "REBUILDINDEXINFO": "-reindex: berreskuratu blockchain index indize blk000?. dat fitxategientzako.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Metrix blockchain fitxategiak deskargatu metrixcoin.com-etik eta instalatu abiarazi. Sareko konexioaren arabera, 10 minutu iraun ditzakezu ordu pare bat"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Zure zorroaren fitxategian egindako aurreko babeskopiak berriki sortutako zifratutako zorro fitxategiarekin ordeztu behar dira. Segurtasun arrazoiengatik, aurrez kargatu gabeko zorroaren fitxategien babeskopiak ez dira erabilgarri izango zorro zifratua berria erabiltzen hasten zarenean.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ustekabean gelditu zen",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Arazo bat izan da Metrix Core-ekin amaitzeko. Gomendagarria da zure debug.log fitxategiaren egiaztatzea gaietarako.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Berrabiarazi bezeroa",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfigurazioa baliogabea da",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf-ek konfigurazio okerra du, Metrix Core-ek berehala irteteko. Egiaztatu fitxategi hau.",
             "ADDREMOTEMNTITLE": "Gehitu urruneko masternodoa",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: ataka",
             "ADDREMOTEMNKEY": "Masternode gako pribatua",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ek huts egin du",
+            "BOOTSTRAPFAILEDINFO": "Arazo bat izan da Metrix Core abiaraztean. Gomendagarria da zure Altitude log fitxategia egiaztatzea.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Berreskuratzeko tresnak"
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide liburu",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core deskargatzea...",
         "UPDATEAVAILABLE": "Metrix Core eguneratzea erabilgarri",
         "SHUTTINGDOWN": "Metrix Core itxi...",
-        "RESTARTING": "Metrix Core berrabiarazi..."
+        "RESTARTING": "Metrix Core berrabiarazi...",
+        "BOOTSTRAPPING": "Metriz Core Bootstrapping..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kontu berria sortu da",

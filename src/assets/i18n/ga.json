@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Uasghrádú ar fhormáid sparán",
                 "UPGRADEWALLETINFO": "-upgradewallet: Urchair uasghrádú ar an bhformáid is déanaí ar thosú. (Tabhair faoi deara: NACH é seo an nuashonrú ar an sparán féin!)",
                 "REBUILDINDEXBUTTON": "Innéacs a atógáil",
-                "REBUILDINDEXINFO": "-reindex: Athshlánú innéacs blockchain ó blk000 reatha. comhaid dat."
+                "REBUILDINDEXINFO": "-reindex: Athshlánú innéacs blockchain ó blk000 reatha. comhaid dat.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Íoslódáil comhaid blockchain Metrix ó metrixcoin.com agus cuir isteach do shuiteáil. Ag brath ar do nasc líonra is féidir leis seo 10 nóiméad a ghlacadh go dtí cúpla uair an chloig"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ba cheart go gcuirfí an comhad sparán criptithe nua-ghinte in ionad aon chúltaca roimhe sin a rinne tú ar do chomhad sparán. Ar chúiseanna slándála, beidh cúltacaí roimhe seo den chomhadán sparán gan criptiú gan úsáid chomh luath agus a thosaíonn tú ag baint úsáide as an sparán nua criptithe.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopadh Metrix Core gan choinne",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a d'fhág go dtiocfadh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh ceisteanna.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Cliaint Atosaigh",
             "CLIENTINVALIDCONFIGTITLE": "Cumraíocht metrix.conf neamhbhailí",
             "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do metrix.conf a chuirfidh faoi deara go bhfuil Metrix Core scoir láithreach. Seiceáil an comhad seo le do thoil.",
             "ADDREMOTEMNTITLE": "Cuir cianda Masternode leis",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: Port",
             "ADDREMOTEMNKEY": "Eochair Phríobháideach Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Innéacs Treibheanna Masternode"
+            "ADDREMOTEMNTXINDEX": "Innéacs Treibheanna Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Theip ar Bhunstrap Lárnach Metrix",
+            "BOOTSTRAPFAILEDINFO": "Bhí fadhb ag baint le croílár Metrix. Moltar duit do chomhad logála airde a sheiceáil le haghaidh saincheisteanna.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Uirlisí Téarnaimh"
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar seoltaí",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Íoslódáil Metrix Core...",
         "UPDATEAVAILABLE": "Nuashonrú Metrix Core ar fáil",
         "SHUTTINGDOWN": "Ag cur síos ar Metrix Core...",
-        "RESTARTING": "Athshlánú Metrix Core..."
+        "RESTARTING": "Athshlánú Metrix Core...",
+        "BOOTSTRAPPING": "Croíleacán Meitibileach"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cruthaíodh cuntas nua go rathúil",

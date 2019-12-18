@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Actualizar o formato da billetera",
                 "UPGRADEWALLETINFO": "-upgradewallet: Actualizar billetera ao último formato ao iniciar. (Nota: esta non é unha actualización da billetera en si!)",
                 "REBUILDINDEXBUTTON": "Reconstruír o índice",
-                "REBUILDINDEXINFO": "-reindex: Reconstruír o índice da cadea de bloque desde os ficheiros actuais blk000?. dat."
+                "REBUILDINDEXINFO": "-reindex: Reconstruír o índice da cadea de bloque desde os ficheiros actuais blk000?. dat.",
+                "BOOTSTRAPBUTTON": "Correa de arranque",
+                "BOOTSTRAPINFO": "Descargando ficheiros blockchain de Metrix de metrixcoin.com e arranque a instalación. Dependendo da túa conexión de rede, isto pode levar 10 minutos a un par de horas"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Calquera copia de seguranza previa feita do seu ficheiro de carteira debería ser substituído polo ficheiro de carteira recentemente xerado e cifrado. Por razóns de seguridade, as copias de seguridade anteriores do ficheiro da carteira non encriptado volveranse inútiles logo de comezar a usar a nova carteira cifrada.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core detívose inesperadamente",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Houbo un problema con Metrix Core que o fixo acabar. Recoméndase comprobar o ficheiro debug.log para problemas.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reiniciar o cliente",
             "CLIENTINVALIDCONFIGTITLE": "Configuración metrix.conf non válida",
             "CLIENTINVALIDCONFIGINFO": "O seu metrix.conf ten unha configuración máis pequena non válida que fará que Metrix Core saia inmediatamente. Verifique este ficheiro.",
             "ADDREMOTEMNTITLE": "Engade un remoto remoto",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: porto",
             "ADDREMOTEMNKEY": "Chave privada de Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Índice Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Índice Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Fallou o arranque de Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Houbo un problema ao iniciar o arranque de Metrix Core. É recomendable verificar o seu ficheiro de rexistro de Altitude para ter problemas.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ferramentas de recuperación"
         },
         "ADDRESSBOOK": {
             "TITLE": "Axenda",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Descargando Metrix Core...",
         "UPDATEAVAILABLE": "Actualización Metrix Core dispoñible",
         "SHUTTINGDOWN": "Apagar Metrix Core...",
-        "RESTARTING": "Reiniciando Metrix Core..."
+        "RESTARTING": "Reiniciando Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nova conta creada con éxito",

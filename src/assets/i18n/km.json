@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "ធ្វើបច្ចុប្បន្នភាពទ្រង់ទ្រាយកាបូប",
                 "UPGRADEWALLETINFO": "-upgradewallet: ធ្វើឱ្យប្រសើរឡើងកាបូបទៅទ្រង់ទ្រាយថ្មីបំផុតនៅពេលចាប់ផ្ដើម។ (ចំណាំ: នេះមិនមែនជាការធ្វើឱ្យទាន់សម័យនៃកាបូបខ្លួនវា!)",
                 "REBUILDINDEXBUTTON": "ស្ថាបនាលិបិក្រមឡើងវិញ",
-                "REBUILDINDEXINFO": "-reindex: បង្កើតលិបិក្រម blockchain ឡើងវិញពីឯកសារបច្ចុប្បន្ន blk000 ។ dat ។"
+                "REBUILDINDEXINFO": "-reindex: បង្កើតលិបិក្រម blockchain ឡើងវិញពីឯកសារបច្ចុប្បន្ន blk000 ។ dat ។",
+                "BOOTSTRAPBUTTON": "ស្បែកជើងកវែង",
+                "BOOTSTRAPINFO": "ទាញយកឯកសារ Metrix blockchain ពី metrixcoin.com ហើយចាប់ផ្ដើមដំឡើងរបស់អ្នក។ អាស្រ័យលើការភ្ជាប់បណ្តាញរបស់អ្នកវាអាចចំណាយពេល ១០ នាទីទៅពីរបីម៉ោង"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "រាល់ការបម្រុងទុកពីមុនដែលអ្នកបានធ្វើពីឯកសារកាបូបរបស់អ្នកគួរតែត្រូវបានជំនួសដោយឯកសារកាបូបដែលបានអ៊ិនគ្រីបថ្មី។ ចំពោះហេតុផលសុវត្ថិភាពការបម្រុងទុកមុននៃឯកសារកាបូបដែលមិនបានបម្លែងនឹងក្លាយជាគ្មានប្រយោជន៍នៅពេលអ្នកចាប់ផ្ដើមប្រើកាបូបដែលបានអ៊ិនគ្រីបថ្មី។",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "លីនដាស្នេលបានបញ្ឈប់ដោយមិននឹកស្មានដល់",
             "CLIENTCLOSEDUNEXPECTEDINFO": "មានបញ្ហាជាមួយ Metrix Core ដែលបណ្តាលឱ្យវាបញ្ចប់។ វាត្រូវបានណែនាំឱ្យពិនិត្យមើលឯកសារបំបាត់កំហុសរបស់អ្នកសម្រាប់បញ្ហា។",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ចាប់ផ្ដើមម៉ាស៊ីនភ្ញៀវឡើងវិញ",
             "CLIENTINVALIDCONFIGTITLE": "ការកំណត់រចនាសម្ព័ន្ធ metrix.conf មិនត្រឹមត្រូវ",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf របស់អ្នកមានការរៀបចំម៉ាសាណែតមិនត្រឹមត្រូវដែលនឹងធ្វើអោយ Metrix Core ចាកចេញភ្លាមៗ។ សូមពិនិត្យមើលឯកសារនេះ។",
             "ADDREMOTEMNTITLE": "បន្ថែមលេខកូដសម្ងាត់ពីចម្ងាយ",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: ច្រក",
             "ADDREMOTEMNKEY": "សោឯកជន Masternode",
             "ADDREMOTEMNTXHASH": "ម៉ាសស្ទីសហាស",
-            "ADDREMOTEMNTXINDEX": "សន្ទស្សន៍ Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "សន្ទស្សន៍ Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "បានបរាជ័យ",
+            "BOOTSTRAPFAILEDINFO": "មានបញ្ហាក្នុងការចាប់ផ្តើមដំណើរការម៉ាទ្រិចស្នូល។ វាត្រូវបានផ្ដល់អនុសាសន៍ឱ្យពិនិត្យមើលឯកសារកំណត់ហេតុអាហ្គេតរបស់អ្នកសម្រាប់បញ្ហា។",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ឧបករណ៍ស្តារឡើងវិញ"
         },
         "ADDRESSBOOK": {
             "TITLE": "សៀវភៅ​អាស័យ​ដ្ឋាន",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "ទាញយកលីនដាស្នូល...",
         "UPDATEAVAILABLE": "លីនដាស្នូលទាន់សម័យអាចរកបាន",
         "SHUTTINGDOWN": "បិទ Metrix Core...",
-        "RESTARTING": "ចាប់ផ្តើមលីនុចឡើងវិញ..."
+        "RESTARTING": "ចាប់ផ្តើមលីនុចឡើងវិញ...",
+        "BOOTSTRAPPING": "ការចាប់ផ្តើមផ្នែកទ្រនាប់ម៉ាទ្រីក..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "បានបង្កើតគណនីថ្មីដោយជោគជ័យ",

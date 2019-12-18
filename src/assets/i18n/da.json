@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Opgrader tegnebog format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Opgrader tegnebog til nyeste format ved opstart. (Bemærk: Dette er IKKE en opdatering af tegnebogen selv!)",
                 "REBUILDINDEXBUTTON": "Genopbyg indeks",
-                "REBUILDINDEXINFO": "-reindex: Genopbyg blockchain indeks fra nuværende blk000 ??. dat-filer."
+                "REBUILDINDEXINFO": "-reindex: Genopbyg blockchain indeks fra nuværende blk000 ??. dat-filer.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Download af Metrix blockchain-filer fra metrixcoin.com og bootstrap din installation. Afhængig af din netværksforbindelse kan dette tage 10 minutter til et par timer"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Eventuelle tidligere sikkerhedskopier, du har lavet af din tegnebogsfil, skal erstattes med den nyligt genererede, krypterede tegnebogsfil. Af sikkerhedsmæssige grunde bliver tidligere sikkerhedskopier af den ukrypterede tegnebogsliste ubrugelig, så snart du begynder at bruge den nye krypterede tegnebog.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppede uventet",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Der var et problem med Metrix Core, der har fået det til at ophøre. Det anbefales at kontrollere din debug.log-fil for problemer.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Genstart klient",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf Konfiguration",
             "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ugyldig masternode opsætning, som vil få Metrix Core til at afslutte med det samme. Tjek venligst denne fil.",
             "ADDREMOTEMNTITLE": "Tilføj ekstern masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode privat nøgle",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislykkedes",
+            "BOOTSTRAPFAILEDINFO": "Der opstod et problem med opstart af Metrix Core. Det anbefales at kontrollere din Altitude-logfil for problemer.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Gendannelsesværktøjer"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebog",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Download Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Lukning af Metrix Core...",
-        "RESTARTING": "Genstart Metrix Core..."
+        "RESTARTING": "Genstart Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ny konto blev oprettet med succes",

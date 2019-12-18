@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "รูปแบบ Wallet ที่อัปเกรด",
                 "UPGRADEWALLETINFO": "- อัปเกรด: เปลี่ยนกระเป๋าสตางค์เป็นรูปแบบล่าสุดเมื่อเริ่มต้น (หมายเหตุ: นี่ไม่ใช่การปรับปรุงตัวกระเป๋าสตางค์!)",
                 "REBUILDINDEXBUTTON": "สร้างดัชนีใหม่",
-                "REBUILDINDEXINFO": "-reindex: สร้างดัชนี blockchain ใหม่จากไฟล์ blk000 ?? .dat ปัจจุบัน"
+                "REBUILDINDEXINFO": "-reindex: สร้างดัชนี blockchain ใหม่จากไฟล์ blk000 ?? .dat ปัจจุบัน",
+                "BOOTSTRAPBUTTON": "เงินทุน",
+                "BOOTSTRAPINFO": "การดาวน์โหลดไฟล์ Metrix blockchain จาก metrixcoin.com และ bootstrap การติดตั้งของคุณ ขึ้นอยู่กับการเชื่อมต่อเครือข่ายของคุณซึ่งอาจใช้เวลา 10 นาทีถึงสองสามชั่วโมง"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "การสำรองข้อมูลก่อนหน้าใด ๆ ที่คุณทำจากไฟล์กระเป๋าสตางค์ของคุณควรถูกแทนที่โดยใช้ไฟล์กระเป๋าสตางค์ที่เข้ารหัสลับสร้างขึ้นใหม่ เพื่อความปลอดภัยการสำรองข้อมูลก่อนหน้าของไฟล์กระเป๋าสตางค์ที่ไม่ได้เข้ารหัสจะกลายเป็นสิ่งที่ไม่ได้ผลทันทีที่คุณเริ่มใช้กระเป๋าเงินที่เข้ารหัสใหม่",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ลินดาคอร์ปหยุดกะทันหัน",
             "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับลินดาคอร์ที่ทำให้มันสิ้นสุดลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log สำหรับปัญหา",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "รีสตาร์ทไคลเอ็นต์",
             "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้",
             "ADDREMOTEMNTITLE": "เพิ่ม Masternode ระยะไกล",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: พอร์ต",
             "ADDREMOTEMNKEY": "รหัสส่วนตัวของ Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "ดัชนี Trtern ของ Masternode"
+            "ADDREMOTEMNTXINDEX": "ดัชนี Trtern ของ Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap ของ Metrix Core ล้มเหลว",
+            "BOOTSTRAPFAILEDINFO": "มีปัญหาในการบู๊ต Metrix Core แนะนำให้ตรวจสอบไฟล์บันทึกระดับความสูงเพื่อดูปัญหา",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "เครื่องมือการกู้คืน"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "กำลังดาวน์โหลด Metrix Core...",
         "UPDATEAVAILABLE": "มีการปรับปรุง Core Metrix",
         "SHUTTINGDOWN": "กำลังปิดเครื่อง Metrix Core...",
-        "RESTARTING": "กำลังเริ่มต้นใหม่ Metrix Core..."
+        "RESTARTING": "กำลังเริ่มต้นใหม่ Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "สร้างบัญชีใหม่เรียบร้อยแล้ว",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Aktualisieren Sie das Wallet-Format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Aktualisieren Sie die Wallet beim Start auf das neueste Format. (Hinweis: Dies ist KEIN Update der Brieftasche selbst!)",
                 "REBUILDINDEXBUTTON": "Index neu erstellen",
-                "REBUILDINDEXINFO": "-reindex: Blockchain-Index aus aktuellen blk000 ??. dat-Dateien neu erstellen."
+                "REBUILDINDEXINFO": "-reindex: Blockchain-Index aus aktuellen blk000 ??. dat-Dateien neu erstellen.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Laden Sie Metrix-Blockchain-Dateien von metrixcoin.com herunter und starten Sie Ihre Installation. Abhängig von Ihrer Netzwerkverbindung kann dies 10 Minuten bis einige Stunden dauern"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Alle vorherigen Sicherungen Ihrer Wallet-Datei sollten durch die neu generierte, verschlüsselte Wallet-Datei ersetzt werden. Aus Sicherheitsgründen werden frühere Sicherungen der unverschlüsselten Wallet-Datei unbrauchbar, sobald Sie die neue, verschlüsselte Wallet verwenden.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core blieb unerwartet stehen",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Es gab ein Problem mit Metrix Core, das zur Beendigung geführt hat. Es wird empfohlen, die Datei debug.log auf Probleme zu überprüfen.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Client neu starten",
             "CLIENTINVALIDCONFIGTITLE": "Ungültige metrix.conf-Konfiguration",
             "CLIENTINVALIDCONFIGINFO": "Ihre metrix.conf hat ein ungültiges Masternode-Setup, wodurch Metrix Core sofort beendet wird. Bitte überprüfen Sie diese Datei.",
             "ADDREMOTEMNTITLE": "Remote Masternode hinzufügen",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masterknoten IP: Port",
             "ADDREMOTEMNKEY": "Privater Schlüssel von Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap fehlgeschlagen",
+            "BOOTSTRAPFAILEDINFO": "Beim Booten von Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Probleme zu überprüfen.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Wiederherstellungstools"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core wird heruntergeladen...",
         "UPDATEAVAILABLE": "Metrix Core Update verfügbar",
         "SHUTTINGDOWN": "Metrix Core wird heruntergefahren...",
-        "RESTARTING": "Metrix Core neu starten..."
+        "RESTARTING": "Metrix Core neu starten...",
+        "BOOTSTRAPPING": "Bootstrapping von Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neues Konto wurde erfolgreich erstellt",

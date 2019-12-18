@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Actualització del format de la cartera",
                 "UPGRADEWALLETINFO": "-upgradewallet: Actualitza la cartera al format més recent a l'inici. (Nota: aquesta NO és una actualització de la billeterera!)",
                 "REBUILDINDEXBUTTON": "Reconstrueix l'índex",
-                "REBUILDINDEXINFO": "-reindex: Reconstrueix l'índex de bloc de cadena dels fitxers blk000?. dat actuals."
+                "REBUILDINDEXINFO": "-reindex: Reconstrueix l'índex de bloc de cadena dels fitxers blk000?. dat actuals.",
+                "BOOTSTRAPBUTTON": "Cinturó d’arrencada",
+                "BOOTSTRAPINFO": "Baixant fitxers blockchain de Metrix de metrixcoin.com i arranqueu la instal·lació. Segons la connexió de xarxa, pot trigar 10 minuts a un parell d'hores"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Totes les còpies de seguretat anteriors que hagis fet del vostre fitxer de butxaca s'han de substituir pel fitxer de carteres recentment generat i xifrat. Per raons de seguretat, les còpies de seguretat anteriors del fitxer de butxaca no xifrat esdevindran inútils tan bon punt comenceu a utilitzar la nova cartera xifrada.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core es va aturar inesperadament",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Hi ha hagut un problema amb Metrix Core que ha fet que acabi. Es recomana que consulteu el vostre fitxer debug.log per obtenir problemes.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Reinicia el client",
             "CLIENTINVALIDCONFIGTITLE": "Configuració metrix.conf no vàlida",
             "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer.",
             "ADDREMOTEMNTITLE": "Afegiu Masternode remot",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: port",
             "ADDREMOTEMNKEY": "Clau privada de Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Índex Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Índex Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Ha fallat l'arrencada de arrencada Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "S'ha produït un problema amb arrencar Metrix Core. Es recomana consultar problemes al fitxer de registre d’Altitude.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Eines de recuperació"
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "S'està baixant Metrix Core...",
         "UPDATEAVAILABLE": "Actualització Metrix Core disponible",
         "SHUTTINGDOWN": "S'està tancant Metrix Core...",
-        "RESTARTING": "S'està reiniciant Metrix Core..."
+        "RESTARTING": "S'està reiniciant Metrix Core...",
+        "BOOTSTRAPPING": "Arrencada de Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "El compte nou s'ha creat correctament",

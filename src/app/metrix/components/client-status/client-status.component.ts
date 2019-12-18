@@ -15,7 +15,7 @@ export class ClientStatusComponent {
   }
 
   showStatusIndicator() {
-    return !this.rpc.RPCReady || (this.rpc.clientStatus !== ClientStatus.RUNNING && this.rpc.clientStatus !== ClientStatus.RUNNINGEXTERNAL)
+    return !this.rpc.recoveryMode && (!this.rpc.RPCReady || (this.rpc.clientStatus !== ClientStatus.RUNNING && this.rpc.clientStatus !== ClientStatus.RUNNINGEXTERNAL))
   }
 
   getRPCStatus() {
@@ -32,6 +32,9 @@ export class ClientStatusComponent {
         break;
       case ClientStatus.RESTARTING:
         translation = 'CLIENTSTATUS.RESTARTING';
+        break;
+      case ClientStatus.BOOTSTRAPPING:
+        translation = 'CLIENTSTATUS.BOOTSTRAPPING';
         break;
     }
     return translation

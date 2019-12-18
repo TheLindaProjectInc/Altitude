@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Надстройте формата на портфейла",
                 "UPGRADEWALLETINFO": "-upgradewallet: надстройте портфейла до най-новия формат при стартиране. (Забележка: това не е актуализация на самия портфейл!)",
                 "REBUILDINDEXBUTTON": "Възстановете индекса",
-                "REBUILDINDEXINFO": "-reindex: Възстановяване на блок-индекс от текущите."
+                "REBUILDINDEXINFO": "-reindex: Възстановяване на блок-индекс от текущите.",
+                "BOOTSTRAPBUTTON": "за първоначално зареждане",
+                "BOOTSTRAPINFO": "Изтегляне на Metrix blockchain файлове от metrixcoin.com и заредете вашата инсталация. В зависимост от вашата мрежова връзка това може да отнеме от 10 минути до няколко часа"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Всички предишни архиви, които сте направили от файла на портфейла, трябва да бъдат заменени с новоиздадения, шифрован файл на портфейла. От съображения за сигурност, предишните архиви на нешифрования файл с портфейли ще станат безполезни веднага щом започнете да използвате новия криптиран портфейл.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда ядро спря неочаквано",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем с Metrix Core, който го е причинил да прекрати. Препоръчваме да проверите файла debug.log за проблеми.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирайте клиента",
             "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf има невалидна настройка на masternode, която ще накара Metrix Core да излезе веднага. Моля, проверете този файл.",
             "ADDREMOTEMNTITLE": "Добавете отдалечен Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP адрес: порт",
             "ADDREMOTEMNKEY": "Личен ключ за Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap не бе успешно",
+            "BOOTSTRAPFAILEDINFO": "Възникна проблем при зареждането с Metrix Core. Препоръчва се да проверите вашия журнален файл на височина за проблеми.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Инструменти за възстановяване"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Изтегляне на Линда Core...",
         "UPDATEAVAILABLE": "Налице е актуализация на Metrix Core",
         "SHUTTINGDOWN": "Прекратяване на Линда Core...",
-        "RESTARTING": "Рестартиране на Metrix Core..."
+        "RESTARTING": "Рестартиране на Metrix Core...",
+        "BOOTSTRAPPING": "Metrix Core Bootstrapping..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Създаден е нов профил",

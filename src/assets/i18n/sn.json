@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade wallet format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Upgrade wallet kusvika purogiramu yepamusoro pakutanga. (Cherechedzai: ichi hachizidzo chechikwata chairo!)",
                 "REBUILDINDEXBUTTON": "Ongorora nhaurirano",
-                "REBUILDINDEXINFO": "-reindex: Dzoka blockchain index kubva pane ikozvino blk000 ?? dat dat files."
+                "REBUILDINDEXINFO": "-reindex: Dzoka blockchain index kubva pane ikozvino blk000 ?? dat dat files.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Dhawunirodha Metrix blockchain mafaira kubva kune metrixcoin.com uye bootstrap yako yekuisa. Zvichienderana netiweki yako yekubatanidza izvi zvinogona kutora maminetsi gumi kune maawa mashoma"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Chero zvipi zvekare zvawakachengetedza zvepahomwe yako faira inofanira kuchinjwa neyo ichangobva kugadzirwa, yakavharwa chikwama chikwama. Nezvikonzero zvekuchengeteka, zvipembenene zvekare zveiyo asina kuvharwa faira refurheni zvichange zvisina zvazvinobatsira pakarepo paunotanga kushandisa svondo itsva, yakavharidzirwa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Akadzima Zvisingatarisirwi",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Paiva nechinetso naMetrix Core chakaita kuti chigumise. Iyo inokurudzira kuongorora yako debug.log file yezinyaya.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Dzorerazve Client",
             "CLIENTINVALIDCONFIGTITLE": "Chisina kukodzera metrix.conf Kugadzirisa",
             "CLIENTINVALIDCONFIGINFO": "Wako metrix.conf ane musternode yakashata yakasangana iyo ichaita kuti Metrix Core abve pakarepo. Ndapota chengeta iyi faira.",
             "ADDREMOTEMNTITLE": "Wedzera Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Yakundikana",
+            "BOOTSTRAPFAILEDINFO": "Paive paine dambudziko bootstrapping Metrix Core. Iyo inokurudzirwa kutarisa yako yeAltitude log faira yezvinetso.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kudzoreredza Zvombo"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Kudzingirira Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Kuvhara pasi Metrix Core...",
-        "RESTARTING": "Kudzorera Metrix Core..."
+        "RESTARTING": "Kudzorera Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nhoroondo itsva yakagadzirwa kubudirira",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "format dompét pamutahiran",
                 "UPGRADEWALLETINFO": "-upgradewallet: ningkatkeun dompét ka format panganyarna dina ngamimitian. (Catetan: ieu téh NOT pamutahiran ti dompét sorangan!)",
                 "REBUILDINDEXBUTTON": "nyieun indéks",
-                "REBUILDINDEXINFO": "-reindex: nyieun indéks blockchain ti blk000 ayeuna ?? dat payel.."
+                "REBUILDINDEXINFO": "-reindex: nyieun indéks blockchain ti blk000 ayeuna ?? dat payel..",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Ngundeur file blockchain Metrix tina metrixcoin.com sareng bootstrap pamasangan anjeun. Gumantung kana sambungan jaringan anjeun ieu tiasa nyandak 10 menit ka sababaraha jam"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Sagala cadangan saméméhna geus dijieun tina file dompét anjeun kudu diganti ku karek dihasilkeun, file dompét énkripsi. Sangkan aman, cadangan saméméhna tina file dompét unencrypted baris jadi gunana pas Anjeun ngamimitian ngagunakeun anyar, dompét énkripsi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dieureunkeun Tanpa disangka",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah jeung Metrix Core nu geus ngabalukarkeun ka nungtungan. Éta nyarankeun mariksa berkas debug.log anjeun isu.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "balikan deui klien",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Konfigurasi sah",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Metrix Core ka LN langsung. Mangga parios file ieu.",
             "ADDREMOTEMNTITLE": "Tambahkeun Masternode Jauh",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode wasta Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap inti Metrix Gagal",
+            "BOOTSTRAPFAILEDINFO": "Aya masalah bootstrapping Metrix Core. Disarankeun mariksa file log Altitude anjeun pikeun masalah.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Alat Pamulihan"
         },
         "ADDRESSBOOK": {
             "TITLE": "alamat Book",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Ngundeur Metrix Core...",
         "UPDATEAVAILABLE": "Update Metrix Core Sadia",
         "SHUTTINGDOWN": "Shutting handap Metrix Core...",
-        "RESTARTING": "Dibalikan deui Metrix Core..."
+        "RESTARTING": "Dibalikan deui Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "akun anyar dijieun hasil",

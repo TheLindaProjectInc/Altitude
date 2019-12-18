@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Uppfærðu veskisformið",
                 "UPGRADEWALLETINFO": "-upgradewallet: Uppfærðu veskið í nýjustu sniði við ræsingu. (Athugið: þetta er EKKI uppfærsla veskisins sjálft!)",
                 "REBUILDINDEXBUTTON": "Endurnýja vísitölu",
-                "REBUILDINDEXINFO": "-reindex: Endurnýja blockchain vísitölu frá núverandi blk000."
+                "REBUILDINDEXINFO": "-reindex: Endurnýja blockchain vísitölu frá núverandi blk000.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Sækir Metrix blockchain skrár frá metrixcoin.com og ræsir uppsetninguna. Það getur tekið 10 mínútur í nokkrar klukkustundir, allt eftir nettengingu þinni"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Öllum fyrri afritum sem þú hefur búið til úr veskisskránni þinni ætti að skipta út fyrir nýbúið, dulritað veskisskrá. Af öryggisástæðum verða fyrri afrit af ótryggðu veskisskránni gagnslaus um leið og þú byrjar að nota nýja dulkóðuðu veskið.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppaði óvænt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Metrix Core sem hefur valdið því að það lýkur. Það er mælt með því að athuga debug.log skrána þína fyrir vandamál.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Endurræstu viðskiptavini",
             "CLIENTINVALIDCONFIGTITLE": "Ógildur metrix.conf stillingar",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf þinn hefur ógildan masternode skipulag sem veldur því að Metrix Core hættir strax. Vinsamlegast athugaðu þessa skrá.",
             "ADDREMOTEMNTITLE": "Bættu við ytri masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: höfn",
             "ADDREMOTEMNKEY": "Masternode einkalykill",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx vísitalan"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx vísitalan",
+            "BOOTSTRAPFAILEDTITLE": "Mistök kjarna ræsistopp mistókst",
+            "BOOTSTRAPFAILEDINFO": "Vandamál kom upp við að ræsa Metrix Core. Mælt er með því að skoða Altitude annállinn þinn varðandi vandamál.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Endurheimtartæki"
         },
         "ADDRESSBOOK": {
             "TITLE": "Heimilisfangabók",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Sæki Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Loka niður Metrix Core...",
-        "RESTARTING": "Endurræsa Metrix Core..."
+        "RESTARTING": "Endurræsa Metrix Core...",
+        "BOOTSTRAPPING": "Ræsir Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ný reikningur búin til með góðum árangri",

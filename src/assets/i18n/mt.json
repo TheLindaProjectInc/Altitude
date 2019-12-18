@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Aġġorna l-format tal-kartiera",
                 "UPGRADEWALLETINFO": "-upgradewallet: Aġġorna l-kartiera għall-aħħar format fuq l-istartjar. (Nota: dan MHIJIEX aġġornament tal-kartiera innifsu!)",
                 "REBUILDINDEXBUTTON": "L-indiċi tal-bini mill-ġdid",
-                "REBUILDINDEXINFO": "-reindex: L-indiċi mill-ġdid ta 'blockchain mill-fajls kurrenti blk000?. dat."
+                "REBUILDINDEXINFO": "-reindex: L-indiċi mill-ġdid ta 'blockchain mill-fajls kurrenti blk000?. dat.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Niżżel il-fajls blockchain Metrix minn metrixcoin.com u bootstrap l-installazzjoni tiegħek. Jiddependi fuq il-konnessjoni man-netwerk dan jista 'jieħu 10 minuti sa ftit sigħat"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Kwalunkwe backups preċedenti li għamilt mill-fajl tal-portafoll tiegħek għandhom jiġu sostitwiti bil-fajl tal-kartiera ġġenerat ġdid, kriptat. Għal raġunijiet ta 'sigurtà, backups ta' qabel tal-fajl tal-kartiera mhux enċiklat se jsiru inutli malli tibda tuża l-kartiera ġdida kriptata.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core waqfet bla mistenni",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Metrix Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni metrix.conf invalida",
             "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl.",
             "ADDREMOTEMNTITLE": "Żid Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Ċavetta Privata",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Indiċi"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Indiċi",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Falliet",
+            "BOOTSTRAPFAILEDINFO": "Kien hemm problema fil-bootstrapping tal-Metrix Core. Huwa rrakkomandat li tivverifika l-fajl tal-ġurnal tal-Altitudni tiegħek għal kwistjonijiet.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Għodda ta 'rkupru"
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-indirizzi",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Tniżżil Metrix Core...",
         "UPDATEAVAILABLE": "Aġġornament ta 'Core Metrix",
         "SHUTTINGDOWN": "Inwaqqfu Metrix Core...",
-        "RESTARTING": "Bidu mill-ġdid ta 'Metrix Core..."
+        "RESTARTING": "Bidu mill-ġdid ta 'Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kont ġdid maħluq b'suċċess",

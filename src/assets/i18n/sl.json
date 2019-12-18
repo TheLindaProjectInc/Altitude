@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Nadgradite obliko denarnice",
                 "UPGRADEWALLETINFO": "-upgradewallet: nadgradite denarnico do najnovejšega formata ob zagonu. (Opomba: to NI posodobitev samega denarnice!)",
                 "REBUILDINDEXBUTTON": "Ponovite indeks",
-                "REBUILDINDEXINFO": "-reindex: Ponovno ustvarite blok-indeks iz trenutnih datotek blk000?. dat."
+                "REBUILDINDEXINFO": "-reindex: Ponovno ustvarite blok-indeks iz trenutnih datotek blk000?. dat.",
+                "BOOTSTRAPBUTTON": "Škornji za prtljage",
+                "BOOTSTRAPINFO": "Prenos datotek Metrix blockchain z metrixcoin.com in zaženite namestitev. Glede na vašo omrežno povezavo lahko to traja od 10 minut do nekaj ur"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Vse prejšnje varnostne kopije, ki ste jih naredili iz vaše denarnice, je treba zamenjati z novo generirano, šifrirano datoteko denarnice. Iz varnostnih razlogov bodo prejšnje varnostne kopije nešifrirane datoteke denarnice postale neuporabne, takoj ko začnete uporabljati novo, šifrirano denarnico.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core je nepričakovano prenehal",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pri Metrix Coreju je prišlo do težave, zaradi česar je prenehal. Priporočamo, da preverite datoteko debug.log za težave.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ponovno zaženite odjemalca",
             "CLIENTINVALIDCONFIGTITLE": "Neveljavna konfiguracija metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima neveljavno nastavitev masternode, ki bo povzročila, da bo Metrix Core takoj zapustil. Preverite to datoteko.",
             "ADDREMOTEMNTITLE": "Dodaj oddaljeno masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Vrata",
             "ADDREMOTEMNKEY": "Masternode zasebni ključ",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeks",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap ni uspel",
+            "BOOTSTRAPFAILEDINFO": "Pri zagonu Metrix Core je prišlo do težave. Priporočljivo je, da v težavah preverite svojo datoteko dnevnika nadmorske višine.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Orodja za obnovitev"
         },
         "ADDRESSBOOK": {
             "TITLE": "Imenik",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Prenos Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update je na voljo",
         "SHUTTINGDOWN": "Izklop Metrix Coreja...",
-        "RESTARTING": "Ponovni zagon Metrix Core..."
+        "RESTARTING": "Ponovni zagon Metrix Core...",
+        "BOOTSTRAPPING": "Zagon Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novi račun je bil ustvarjen uspešno",

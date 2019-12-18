@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Cruthaich cruth wallet",
                 "UPGRADEWALLETINFO": "-upgradewallet: Ath-nuadhaich an trannsa gu cruth as ùire air tòiseachadh. (Nòta: Is e seo NOT ùrachadh air a 'bhata fhèin!)",
                 "REBUILDINDEXBUTTON": "Clàr ath-thogalach",
-                "REBUILDINDEXINFO": "-reindex: Ath-thogail clàr-taice nan àireamhan blk000."
+                "REBUILDINDEXINFO": "-reindex: Ath-thogail clàr-taice nan àireamhan blk000.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Luchdaich sìos faidhlichean Metrix blockchain bho metrixcoin.com agus bootstrap an stàladh agad. A rèir do cheangal lìonra faodaidh seo 10 mionaidean a thoirt gu uair no dhà"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Bu chòir lethbhreacan sam bith a rinn thu roimhe den fhaidhle faire agad a chur an àite leis a 'fhaidhle-faire gearaidh ùr-ghintealach. Airson adhbharan tèarainteachd, cha tèid cùl-taice roimhe den fhaidhle-faire gun fhiosta gun fheum cho luath 'sa bhios tu a' tòiseachadh leis a 'bhotal ùr.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core air a stad gun dùil",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bha duilgheadas ann le Metrix Core a tha air adhbharachadh crìoch a chur air. Tha e air a mholadh airson sùil a thoirt air do fhaidhle debug.log airson cùisean.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Ath-thionndaidh Client",
             "CLIENTINVALIDCONFIGTITLE": "Configuration neo-dhligheach metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Tha do shuidheachadh metrix.conf ann an suidheachadh neo-dhligheach a bhios a 'toirt air Metrix Core fàgail sa bhad. Thoir sùil air an fhaidhle seo.",
             "ADDREMOTEMNTITLE": "Cuir Remote Masternode Cuir ris",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: Port",
             "ADDREMOTEMNKEY": "Iuchair phrìobhaideach Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Clàr-amais Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Clàr-amais Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Dh'fhàillig Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Bha duilgheadas ann a ’togail Metrix Core. Thathas a ’moladh sùil a thoirt air am faidhle log Altitude agad airson cùisean.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Innealan ath-bheothachaidh"
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar-seòlaidh",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Luchdaich a-nuas Metrix Core...",
         "UPDATEAVAILABLE": "Ùrachadh Metrix Core ri fhaighinn",
         "SHUTTINGDOWN": "A 'lughdachadh Metrix Core...",
-        "RESTARTING": "Ath-thòiseachadh Metrix Core..."
+        "RESTARTING": "Ath-thòiseachadh Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cunntas ùr air a chruthachadh gu soirbheachail",

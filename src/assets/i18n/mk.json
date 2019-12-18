@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Надградете го паричниот формат",
                 "UPGRADEWALLETINFO": "-upgradewallet: надградба паричник до најновиот формат при стартување. (Забелешка: ова НЕ е ажурирање на самиот паричник!)",
                 "REBUILDINDEXBUTTON": "Повторно индексирање",
-                "REBUILDINDEXINFO": "-reindex: Реконструирај блокчеин индекс од тековните blk000?. dat датотеки."
+                "REBUILDINDEXINFO": "-reindex: Реконструирај блокчеин индекс од тековните blk000?. dat датотеки.",
+                "BOOTSTRAPBUTTON": "Подигање",
+                "BOOTSTRAPINFO": "Даунлоадирање датотеки со блок-лајн Метрикс од metrixcoin.com и да ја подигнете инсталацијата. Во зависност од вашата мрежна врска, ова може да трае 10 минути до неколку часа"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Сите претходни резервни копии што сте ги направиле од вашата датотека за паричник треба да се заменат со ново генерираната, шифрирана датотека на паричник. Поради безбедносни причини, претходните копии од енкриптираната датотека на паричникот ќе станат бескорисни веднаш штом ќе почнете да го користите новиот, шифриран паричник.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда Core неочекувано застана",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Имаше проблем со Metrix Core што ја предизвика да прекине. Препорачливо е да ја проверите вашата датотека debug.log за проблеми.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Рестартирај го клиентот",
             "CLIENTINVALIDCONFIGTITLE": "Неважечка Конфигурација на metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Вашиот metrix.conf има неправилен поставувач на masternode кој ќе предизвика Metrix Core да излезе веднаш. Проверете ја оваа датотека.",
             "ADDREMOTEMNTITLE": "Додај далечинско Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: порта",
             "ADDREMOTEMNKEY": "Мастерно приватен клуч",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Не успеа да се склучи основната главна страница на Метрикс",
+            "BOOTSTRAPFAILEDINFO": "Имаше проблем со подигнувањето на Metrix Core. Препорачливо е да ја проверите датотеката со дневник на надморска височина за проблеми.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Алатки за обновување"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Преземање на Metrix Core...",
         "UPDATEAVAILABLE": "Достапна е верзија на Core Metrix",
         "SHUTTINGDOWN": "Исклучување на Линда Core...",
-        "RESTARTING": "Рестартирање на Metrix Core..."
+        "RESTARTING": "Рестартирање на Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нова сметка креирана успешно",

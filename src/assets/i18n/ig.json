@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Nweta nkwalite obere akpa",
                 "UPGRADEWALLETINFO": "-upgradewallet: Nweta nkwalite obere akpa na nhazi. (Cheta: nke a abụghị Nwelite nke obere akpa ya!)",
                 "REBUILDINDEXBUTTON": "Debe ndigide",
-                "REBUILDINDEXINFO": "-reindex: Gbanwee nchịkọta blockchain site na faịlụ blk000 ugbu a."
+                "REBUILDINDEXINFO": "-reindex: Gbanwee nchịkọta blockchain site na faịlụ blk000 ugbu a.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Nbudata faịlụ Metrix blockchain site na metrixcoin.com ma bufee ihe nrụnye gị. Dabere na njikọ netwọk gị nke a nwere ike iwe nkeji iri rue elekere ole na ole"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Okwesiri nkwado ọ bụla i mere site na obere akpa gị kwesịrị dochie ya site na faịlụ ọhụụ ọhụrụ, nke ezoro ezo. Maka ihe nchedo, nkwado ndabere na mpaghara nke akpa akpa akpaghị akwụkwọ ga-aba uru ozugbo ịmalite iji obere obere akpa ego.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core akwụsịghị na mberede",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Malitegharịa ekwentị",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf nhazi",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a.",
             "ADDREMOTEMNTITLE": "Tinye Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP nke Masternode: Port",
             "ADDREMOTEMNKEY": "Masternode n'onwe Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Index Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Index Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Metux Core Bootstrap Emebisighi",
+            "BOOTSTRAPFAILEDINFO": "Enwere nsogbu bootstrapping Metrix Core. Ọ na-akwado ịlele faịlụ ndekọ Altitude gị maka okwu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngwaọrụ mgbake"
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Nbudata Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Dị",
         "SHUTTINGDOWN": "Na-ehichapụ Metrix Core...",
-        "RESTARTING": "Malitegharia Metrix isi..."
+        "RESTARTING": "Malitegharia Metrix isi...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix isi..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ejiri akaụntụ ọhụrụ rụọ ọrụ nke ọma",

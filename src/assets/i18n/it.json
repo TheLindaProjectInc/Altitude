@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Aggiorna il formato del portafoglio",
                 "UPGRADEWALLETINFO": "-upgradewallet: aggiorna il wallet al formato più recente all'avvio. (Nota: questo NON è un aggiornamento del portafoglio stesso!)",
                 "REBUILDINDEXBUTTON": "Ricostruisci indice",
-                "REBUILDINDEXINFO": "-reindex: ricostruisce l'indice blockchain dai file attuali di blk000 ??. dat."
+                "REBUILDINDEXINFO": "-reindex: ricostruisce l'indice blockchain dai file attuali di blk000 ??. dat.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Scarica i file della blockchain Metrix da metrixcoin.com e avvia l'installazione. A seconda della connessione di rete, questo può richiedere da 10 minuti a un paio d'ore"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Qualsiasi backup precedente che hai fatto del tuo file wallet dovrebbe essere sostituito con il file wallet criptato di nuova generazione. Per motivi di sicurezza, i backup precedenti del file wallet non crittografato diventeranno inutili non appena inizierai a utilizzare il nuovo portafoglio crittografato.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core si è fermato inaspettatamente",
             "CLIENTCLOSEDUNEXPECTEDINFO": "C'è stato un problema con Metrix Core che ha causato la sua chiusura. Si consiglia di controllare il tuo file debug.log per problemi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Riavvia il client",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf non valida",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ha un'impostazione masternode non valida che farà uscire immediatamente Metrix Core. Si prega di controllare questo file.",
             "ADDREMOTEMNTITLE": "Aggiungi Masternode remoto",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: porta",
             "ADDREMOTEMNKEY": "Chiave privata Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap Metrix Core non riuscito",
+            "BOOTSTRAPFAILEDINFO": "Si è verificato un problema durante il bootstrap di Metrix Core. Si consiglia di verificare la presenza di problemi nel file di registro di Altitude.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Strumenti di recupero"
         },
         "ADDRESSBOOK": {
             "TITLE": "Rubrica",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Download di Metrix Core...",
         "UPDATEAVAILABLE": "Aggiornamento Metrix Core disponibile",
         "SHUTTINGDOWN": "Chiusura di Metrix Core...",
-        "RESTARTING": "Riavvio di Metrix Core..."
+        "RESTARTING": "Riavvio di Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nuovo account creato con successo",

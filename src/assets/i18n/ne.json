@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "वालेट ढाँचा अपग्रेड गर्नुहोस्",
                 "UPGRADEWALLETINFO": "-अपग्रेडवालेट: स्टार्टअपमा नवीनतम ढाँचामा वालेट अपग्रेड गर्नुहोस्। (नोट: यो बटुले आफैको अद्यावधिक छैन!)",
                 "REBUILDINDEXBUTTON": "अनुक्रमणिका पुन: निर्माण गर्नुहोस्",
-                "REBUILDINDEXINFO": "-reindex: हाल ब्लक्स 2000। dat फाइलहरूबाट ब्लकचेन सूचकांक पुनर्निर्माण गर्नुहोस्।"
+                "REBUILDINDEXINFO": "-reindex: हाल ब्लक्स 2000। dat फाइलहरूबाट ब्लकचेन सूचकांक पुनर्निर्माण गर्नुहोस्।",
+                "BOOTSTRAPBUTTON": "बुटस्ट्र्याप",
+                "BOOTSTRAPINFO": "Metrixcoin.com बाट मेट्रिक्स ब्लकचेन फाईलहरू डाउनलोड गर्दै र तपाईंको स्थापनालाई बुटस्ट्र्याप गर्दै। तपाईंको नेटवर्क जडानमा निर्भर हुन यसले केहि घण्टा देखि १० मिनेट लिन सक्दछ"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "तपाइँले तपाइँको वालेट फाइलको बनाएको कुनैपनि अघिल्लो जगेडा नविकरण, एन्क्रिप्टेड वालेट फाइलको साथमा बदलिनु पर्छ। सुरक्षा कारणहरूका लागि, एन्क्रिप्टेड वालेलेट फाइलको अघिल्लो जगेडाहरू नयाँ, एन्क्रिप्टेड वालेट प्रयोग गरी सुरू हुने बित्तिकै बेकार हुनेछन्।",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "लिंडा कोर अप्रत्याशित रूपमा रोकियो",
             "CLIENTCLOSEDUNEXPECTEDINFO": "लिंडा कोरसँग एउटा समस्या थियो जसले यसलाई समाप्त गर्न मद्दत गर्यो। यो समस्याहरूको लागि तपाईंको डिबग.लग फाइल जाँच गर्न सिफारिस गरिएको छ।",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ग्राहक पुनः सुरु गर्नुहोस्",
             "CLIENTINVALIDCONFIGTITLE": "अवैध लिंडा.कन्फ कन्फिगरेसन",
             "CLIENTINVALIDCONFIGINFO": "तपाईंको metrix.conf सँग एक अवैध masternode सेटअप छ जसले लिंडा कोरलाई तुरुन्तै निस्कन सक्छ। यो फाईल जाँच गर्नुहोस्।",
             "ADDREMOTEMNTITLE": "रिमोट Masternode थप्नुहोस्",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Modeode IP: पोर्ट",
             "ADDREMOTEMNKEY": "Mrenchode निजी कुञ्जी",
             "ADDREMOTEMNTXHASH": "Modeode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Modeode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Modeode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "मेट्रिक्स कोर बुटस्ट्र्याप असफल भयो",
+            "BOOTSTRAPFAILEDINFO": "मेट्रिक्स कोर बुटस्ट्र्याप गर्दा समस्या भयो। मुद्दाहरूको लागि तपाईको अल्टिट्यूड लग फाइल जाँच गर्न सिफारिस गरिन्छ।",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "पुन: प्राप्ति उपकरणहरू"
         },
         "ADDRESSBOOK": {
             "TITLE": "ठेगाना पुस्तिका",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "लिंडा कोर डाउनलोड गर्दै...",
         "UPDATEAVAILABLE": "लिंडा कोर अपडेट उपलब्ध",
         "SHUTTINGDOWN": "लिंडा कोर बन्द गर्दै...",
-        "RESTARTING": "लिंडा कोर पुनः सुरु गर्दै..."
+        "RESTARTING": "लिंडा कोर पुनः सुरु गर्दै...",
+        "BOOTSTRAPPING": "बुटस्ट्र्यापिंग मेट्रिक्स कोर..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "नयाँ खाता सफलतापूर्वक सिर्जना गरियो",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Түрийвч форматыг шинэчлэх",
                 "UPGRADEWALLETINFO": "-upgradewallet: Түрийвч түрүүвчийг сүүлийн үеийн формат руу шинэчлэх. (Тэмдэглэл: энэ нь хэтэвч шинэчлэлт биш юм!)",
                 "REBUILDINDEXBUTTON": "Дахин индексжүүлэх",
-                "REBUILDINDEXINFO": "-reindex: блок -хургалтын индексийг одоогийн blk000 ?? da файлаас сэргээх."
+                "REBUILDINDEXINFO": "-reindex: блок -хургалтын индексийг одоогийн blk000 ?? da файлаас сэргээх.",
+                "BOOTSTRAPBUTTON": "Ачааны оосор",
+                "BOOTSTRAPINFO": "Metrix blockchain файлыг metrixcoin.com дээрээс татаж аваад суулгалтыг эхлүүлнэ. Таны сүлжээний холболтоос хамааран энэ нь 10 минутаас хэдэн цаг хүртэл үргэлжилж болно"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Таны түрийвч файлд хийсэн өмнөх нөөцүүдийг шинээр үүсгэсэн, шифрлэгдсэн түрийвч файлд оруулна. Аюулгүй байдлын үүднээс, шифрлэгдсэн түрийвч файлыг урьд нь нөөцлөх нь таныг шинэ, шифрлэгдсэн түрийвчийг ашиглаж эхлэхэд ашиггүй болно.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Линда Голд нь гэнэт зогссон",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Линда Кор-ийн хувьд үүнийг зогсооход хүргэсэн. Асуудлын талаар өөрийн debug.log файлыг шалгаж үзэхийг зөвлөж байна.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Клиентийг дахин эхлүүлэх",
             "CLIENTINVALIDCONFIGTITLE": "Линда.conf тохируулга буруу байна",
             "CLIENTINVALIDCONFIGINFO": "Таны metrix.conf нь Metrix Core-ийг нэн даруй гарахад хүргэдэг буруу masternode тохируулгатай байна. Энэ файлыг шалгана уу.",
             "ADDREMOTEMNTITLE": "Алсын Masternode нэмэх",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Порт",
             "ADDREMOTEMNKEY": "Masternode хувийн түлхүүр",
             "ADDREMOTEMNTXHASH": "Masternode Trx Хэш",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx индекс",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap бүтэлгүйтэв",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-г татаж авахад асуудал гарсан. Асуудалтай холбоотой асуудлын талаархи таны Altitude бүртгэлийн файлыг шалгахыг зөвлөж байна.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Сэргээх хэрэгсэл"
         },
         "ADDRESSBOOK": {
             "TITLE": "Хаяг хадгалах ном",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Линда Голыг татаж авах...",
         "UPDATEAVAILABLE": "Линда Гол Сайтын шинэчлэл боломжтой",
         "SHUTTINGDOWN": "Metrix Core-ийг унтраа...",
-        "RESTARTING": "Линда Гол дахин эхлүүлэх..."
+        "RESTARTING": "Линда Гол дахин эхлүүлэх...",
+        "BOOTSTRAPPING": "Метриксийн үндсэн зураг..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Шинэ данс амжилттай үүсгэсэн",

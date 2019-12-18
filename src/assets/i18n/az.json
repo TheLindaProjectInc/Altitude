@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Cüzdanın formatını artırın",
                 "UPGRADEWALLETINFO": "-upgradewallet: Cüzdanı başlanğıcda ən son formata yükseltin. (Qeyd: bu cüzdanın bir yeniləməsi deyil!)",
                 "REBUILDINDEXBUTTON": "İndeksin yenidən qurulması",
-                "REBUILDINDEXINFO": "-reindex: blockchin indeksini mövcud blk000 fayllarından yenidən qurun."
+                "REBUILDINDEXINFO": "-reindex: blockchin indeksini mövcud blk000 fayllarından yenidən qurun.",
+                "BOOTSTRAPBUTTON": "Çəkmə",
+                "BOOTSTRAPINFO": "Metrixcoin.com-dan Metrix blockchain faylları yüklənir və quraşdırmanızı yükləyir. Şəbəkə bağlantınızdan asılı olaraq bu 10 dəqiqədən bir neçə saata qədər davam edə bilər"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Cüzdan dosyanızı hazırladığınız hər hansı əvvəlki backups yeni yaradılmış şifrəli cüzdan faylı ilə əvəz olunmalıdır. Təhlükəsizliyə görə, şifrələnməmiş cüzdan faylının əvvəlki ehtiyatları yeni, şifrəli cüzdanı istifadə etməyə başlamazdan sonra yararsız hala gəlir.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gözlənilmədən dayandı",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ilə əlaqədar bir problem var idi ki bu da onu sona çatdırdı. Məsələlər üçün debug.log faylını yoxlamaq məsləhətdir.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Müştərini yenidən başladın",
             "CLIENTINVALIDCONFIGTITLE": "Yanlış metrix.conf Konfiqurasiyası",
             "CLIENTINVALIDCONFIGINFO": "Sizin metrix.conf-nun Metrix Core-nun dərhal çıxışına səbəb olan qeyri-qanuni masternode qurğusu var. Xahiş edirik bu faylları yoxlayın.",
             "ADDREMOTEMNTITLE": "Uzaq Masternode əlavə edin",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Şəxsi Açar",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap uğursuz oldu",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core'u yükləməkdə problem oldu. Hündürlük giriş sənədinizi problemlər üçün yoxlamaq tövsiyə olunur.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Bərpa vasitələri"
         },
         "ADDRESSBOOK": {
             "TITLE": "Ünvan Kitab",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core yüklənir...",
         "UPDATEAVAILABLE": "Metrix Core Yeniləmə Available",
         "SHUTTINGDOWN": "Metrix Core'u bağlayaraq...",
-        "RESTARTING": "Metrix Core'u yenidən başladın..."
+        "RESTARTING": "Metrix Core'u yenidən başladın...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yeni hesab uğurla yaradılıb",

@@ -156,7 +156,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade wallet format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)",
                 "REBUILDINDEXBUTTON": "Rebuild index",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index from current blk000??.dat files."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index from current blk000??.dat files.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Downloading Metrix blockchain files from metrixcoin.com and bootstrap your installation. Depending on your network connection this can take 10 minutes to a couple of hours"
             }
         },
         "HELP": {
@@ -277,7 +279,9 @@
             "ENCRYPTEDCONTENT": "Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Stopped Unexpectedly",
             "CLIENTCLOSEDUNEXPECTEDINFO": "There was a problem with Metrix Core that has caused it to terminate. It is recommend to check your debug.log file for issues.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Failed",
+            "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommend to check your Altitude log file for issues.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Recovery Tools",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Your metrix.conf has an invalid masternode setup which will cause Metrix Core to exit immediately. Please check this file.",
             "ADDREMOTEMNTITLE": "Add Remote Masternode",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Downloading Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Shutting down Metrix Core...",
-        "RESTARTING": "Restarting Metrix Core..."
+        "RESTARTING": "Restarting Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "New account created successfully",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "ウォレットのフォーマットをアップグレードする",
                 "UPGRADEWALLETINFO": "-upgradewallet：起動時にウォレットを最新の形式にアップグレードします。 （注：これはウォレットそのものの更新ではありません！）",
                 "REBUILDINDEXBUTTON": "インデックスの再構築",
-                "REBUILDINDEXINFO": "-reindex：現在のblk000 ??。datファイルからブロックチェーンインデックスを再構築します。"
+                "REBUILDINDEXINFO": "-reindex：現在のblk000 ??。datファイルからブロックチェーンインデックスを再構築します。",
+                "BOOTSTRAPBUTTON": "ブートストラップ",
+                "BOOTSTRAPINFO": "metrixcoin.comからMetrixブロックチェーンファイルをダウンロードし、インストールをブートストラップします。ネットワーク接続に応じて、これには10分から数時間かかることがあります"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "ウォレット・ファイルの以前のバックアップは、新しく生成され、暗号化されたウォレット・ファイルに置き換えてください。セキュリティ上の理由から、暗号化されていないウォレット・ファイルの以前のバックアップは、新しい暗号化ウォレットの使用を開始するとすぐに無用になります。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Coreが突然停止しました",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coreに問題があり、終了させました。 debug.logファイルで問題を確認することをお勧めします。",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "クライアントを再起動する",
             "CLIENTINVALIDCONFIGTITLE": "無効なmetrix.conf設定",
             "CLIENTINVALIDCONFIGINFO": "あなたのmetrix.confは無効なマスターノード設定を持っています。これはMetrix Coreを直ちに終了させます。このファイルを確認してください。",
             "ADDREMOTEMNTITLE": "リモートマスターノードを追加",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "マスターノードIP：ポート",
             "ADDREMOTEMNKEY": "マスターノード秘密鍵",
             "ADDREMOTEMNTXHASH": "マスターノードTrxハッシュ",
-            "ADDREMOTEMNTXINDEX": "マスターノードTrxインデックス"
+            "ADDREMOTEMNTXINDEX": "マスターノードTrxインデックス",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Coreブートストラップが失敗しました",
+            "BOOTSTRAPFAILEDINFO": "Metrix Coreのブートストラップに問題がありました。 Altitudeログファイルで問題を確認することをお勧めします。",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "回復ツール"
         },
         "ADDRESSBOOK": {
             "TITLE": "住所録",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Coreをダウンロード中...",
         "UPDATEAVAILABLE": "Lindaコアアップデートが利用可能",
         "SHUTTINGDOWN": "Metrix Coreをシャットダウンする",
-        "RESTARTING": "Metrix Coreを再起動します..."
+        "RESTARTING": "Metrix Coreを再起動します...",
+        "BOOTSTRAPPING": "Metrixコアのブートストラップ..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新しいアカウントが正常に作成されました",

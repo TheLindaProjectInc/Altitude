@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Whakapai ake i te hōputu putea",
                 "UPGRADEWALLETINFO": "-upgradewallet: Whakatikahia te putea ki te hōputu hōu i te whakaoho. (Tuhipoka: ehara tenei i te whakahou o te putea ano!)",
                 "REBUILDINDEXBUTTON": "Whakahoutia te taurangi",
-                "REBUILDINDEXINFO": "-reindex: Whakaritehia te taurangi blockchain mai i nga kōnae blk000 o inaianei!"
+                "REBUILDINDEXINFO": "-reindex: Whakaritehia te taurangi blockchain mai i nga kōnae blk000 o inaianei!",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Ko te tango i nga konae Metrix blockchain mai i te metrixcoin.com me te bootstrap i to whakauru. Tei runga i to hononga whatunga ka taea tenei 10 meneti ki te rua haora"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Me whakakapi tetahi taapiri tawhito i mahia e koe mo to peke putea ki te kōnae putea i hangaia hou, i hunahia. Mo nga take haumaru, ka kore noa nga taapiri o mua o te putea kaore i te whakamunahia i te wa ka timata koe ki te whakamahi i te putea hou, whakamatautau.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Kua mutu a Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "He raruraru kei a Metrix Core kua mutu te whakamutu. He tūtohutanga kia tirohia to kōnae debug.log mo nga take.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Tīmatahia te Kiritaki",
             "CLIENTINVALIDCONFIGTITLE": "Motuhake metrix.conf Whirihoranga",
             "CLIENTINVALIDCONFIGINFO": "Kei a metrix.conf tetahi tautuhinga matternode kaore e pai kia puta wawe a Metrix Core. Tirohia koa tenei kōnae.",
             "ADDREMOTEMNTITLE": "Tāpirihia te Motuhake Mamao",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Kaupapa Whaiaro Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Taurangi Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Taurangi Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "I Whakahoutia Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "I puta mai tetahi raru bootstrapping Metrix Core. E tūtohutia ana kia tirohia to momo rakau rangapu Altitude mo nga take.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Utauta Whakahoki"
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Puka Wāhitau",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Te tikiake ana i a Metrix Core...",
         "UPDATEAVAILABLE": "Kei te wātea a Metrix Core Update",
         "SHUTTINGDOWN": "Ko te tarai i te Metrix Core...",
-        "RESTARTING": "Tīmata anō i te Metrix Core..."
+        "RESTARTING": "Tīmata anō i te Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kua pai te hanga o te kaute hou",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Ĝisdatigu biletformon",
                 "UPGRADEWALLETINFO": "-upgradewallet: Ĝisdatigi valizon al plej lasta formato en komenco. (Noto: ĉi tio NE estas ĝisdatigo de la monujo!)",
                 "REBUILDINDEXBUTTON": "Rekonstrua indekso",
-                "REBUILDINDEXINFO": "-reindex: Rekonstruu blockchain-indekso de la aktuala blk000-dataj dosieroj."
+                "REBUILDINDEXINFO": "-reindex: Rekonstruu blockchain-indekso de la aktuala blk000-dataj dosieroj.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Elŝuti dosierojn de Metrix blockchain de metrixcoin.com kaj ekŝati vian instaladon. Depende de via retkonekto tio povas daŭri 10 minutojn ĝis kelkaj horoj"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ajna antaŭaj rezervoj, kiujn vi faris el via monujo-dosiero, devas esti anstataŭigita per la lastatempe generita, ĉifrita baletera dosiero. Por sekurecaj kialoj, antaŭaj kopioj de la neĉifrita monujo-dosiero fariĝos netaŭga tuj kiam vi komencos uzadon de la nova ĉifrita monujo.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Bela Kerna haltis neatendite",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Estis problemo kun Metrix Kerna kiu kaŭzis ĝin fini. Ĝi rekomendas kontroli vian dosieron debug.log por aferoj.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restarti Klienton",
             "CLIENTINVALIDCONFIGTITLE": "Nevalida metrix.conf-Agordo",
             "CLIENTINVALIDCONFIGINFO": "Via bela.conf havas malvalidan maŝinsekvan instalinstrukciojn, kiu kaŭzos ke Metrix Kerna eliru tuj. Bonvolu kontroli ĉi tiun dosieron.",
             "ADDREMOTEMNTITLE": "Aldoni Foran Masternodon",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Haveno",
             "ADDREMOTEMNKEY": "Masternode Privata Ŝlosilo",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indekso de Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Indekso de Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap malsukcesis",
+            "BOOTSTRAPFAILEDINFO": "Estis problemo lanĉante Metrix Core. Rekomendas kontroli vian Altitude-dosieron por problemoj.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Retrovi iloj"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresaron",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Elŝuti Metrix Kerna...",
         "UPDATEAVAILABLE": "Bela Kerna Ĝisdatigu Havebla",
         "SHUTTINGDOWN": "Krablante Bela Kerna...",
-        "RESTARTING": "Rekomenci Metrix Kerna..."
+        "RESTARTING": "Rekomenci Metrix Kerna...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nova konto kreita sukcese",

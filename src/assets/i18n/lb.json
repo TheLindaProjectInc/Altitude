@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade-Format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Upgrade-Portemonnaie op den neiste Format beim Startup. (Note: dëst ass NET e Update vun de Portemonnaie selwer!)",
                 "REBUILDINDEXBUTTON": "Index opbauen",
-                "REBUILDINDEXINFO": "-reindex: Blockechain Index vun aktuellen blk000 ??. Dates Dateien opbauen."
+                "REBUILDINDEXINFO": "-reindex: Blockechain Index vun aktuellen blk000 ??. Dates Dateien opbauen.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Luet Metrix blockchain Dateien vu metrixcoin.com erof a bootstrap Är Installatioun. Ofhängeg vun Ärer Netzverbindung kann dëst 10 Minutten op e puer Stonnen daueren"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "All fréiere Backups déi Dir aus Ärem Portemonnaie hutt gemaach däerf duerch déi nei generéiert verschlësselte Portemonnaie ersat ginn. Aus Sécherheetsgrënn, de virdrun Reservéierunge vun der onverschlësselte Portemonnaie gëtt net nëtzlech, soubal Dir den neie verschlësselte Portemonnaie benotzt.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gestoppt Unexpectedly",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Et war e Problem mam Metrix Core, dat huet et verlooss. Et ass recommandéiert fir Är Debug.log Datei fir Froen ze kontrolléieren.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "De Client klickt weider",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Konfiguratioun",
             "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternoden-Setup, déi d'Metrix Core fir direkt beherrschen. Kuckt dës Datei op.",
             "ADDREMOTEMNTITLE": "Füügt Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode Private Key",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Erfolleg",
+            "BOOTSTRAPFAILEDINFO": "Et gouf e Problem beim Opstarten vu Metrix Core. Et ass recommandéiert fir Är Altitude Logbicher Datei ze kontrolléieren.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Erhuelung Tools"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Korrigéiere vun Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Disponibel",
         "SHUTTINGDOWN": "Schäerfen Metrix Core...",
-        "RESTARTING": "Restart Metrix Core..."
+        "RESTARTING": "Restart Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neit Kont erstellen erstallt",

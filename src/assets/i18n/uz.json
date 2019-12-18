@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Wallet formatini yangilang",
                 "UPGRADEWALLETINFO": "-upgradewallet: Boshlash paytida eng so'nggi formatga hamyonni yangilang. (Eslatma: bu hamyonni o'zini yangilash emas!)",
                 "REBUILDINDEXBUTTON": "Indeksni qayta tiklash",
-                "REBUILDINDEXINFO": "-reindex: Blokkeni indeksini hozirgi blk000 fayllaridan qayta tiklash."
+                "REBUILDINDEXINFO": "-reindex: Blokkeni indeksini hozirgi blk000 fayllaridan qayta tiklash.",
+                "BOOTSTRAPBUTTON": "Barmoq chizig'i",
+                "BOOTSTRAPINFO": "Metrixcoin.com-dan Metrix blockchain fayllarini yuklab olish va o'rnatishni yuklash. Tarmoq ulanishiga qarab, bu 10 daqiqadan bir necha soatgacha davom etishi mumkin"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Sizning hamyoningiz faylini yaratgan oldingi zaxiralashlar yangi yaratilgan, shifrlangan hamyonlar fayllari bilan almashtirilishi kerak. Xavfsizlik uchun, yangi shifrlangan hamyonni ishlatishdan oldin shifrlanmagan hamyon faylining oldingi zahiralari foydasiz bo'ladi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core kutilmaganda to'xtadi",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core bilan muammo yuzaga keldi va bu uning tugatilishiga olib keldi. Muammolar uchun debug.log faylini tekshirish tavsiya etiladi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Mijozni qayta ishga tushiring",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfiguratsiyasi noto'g'ri",
             "CLIENTINVALIDCONFIGINFO": "Sizning metrix.conf-da Metrix Core-ning darhol chiqib ketishiga olib keladigan noto'g'ri masternode moslamasi mavjud. Iltimos, ushbu faylni tekshiring.",
             "ADDREMOTEMNTITLE": "Masternode qo'shing",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode shaxsiy kaliti",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi",
+            "BOOTSTRAPFAILEDTITLE": "Metrik yadroli yuklash chizig'i bajarilmadi",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-ni yuklashda muammo yuz berdi. Balandlik jurnalingiz faylini muammolarni tekshirish tavsiya etiladi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qayta tiklash vositalari"
         },
         "ADDRESSBOOK": {
             "TITLE": "Manzillar kitobi",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core-ni yuklab olish...",
         "UPDATEAVAILABLE": "Metrix Core yangilash mavjud",
         "SHUTTINGDOWN": "Metrix Coreni o'chirish...",
-        "RESTARTING": "Metrix Core-ni qayta ishga tushirish..."
+        "RESTARTING": "Metrix Core-ni qayta ishga tushirish...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yangi hisob muvaffaqiyatli yaratildi",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade wallet formátum",
                 "UPGRADEWALLETINFO": "-upgradewallet: Frissítse a pénztárcát a legfrissebb formátumba az indításkor. (Megjegyzés: ez NEM maga a tárcsa frissítése!)",
                 "REBUILDINDEXBUTTON": "Indítsa újra az indexet",
-                "REBUILDINDEXINFO": "-reindex: Új blokkkapcsolati index újbóli létrehozása a jelenlegi blk000 ??. dat fájlokból."
+                "REBUILDINDEXINFO": "-reindex: Új blokkkapcsolati index újbóli létrehozása a jelenlegi blk000 ??. dat fájlokból.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Töltse le a Metrix blockchain fájlokat a metrixcoin.com webhelyről, és indítsa el a telepítést. A hálózati kapcsolattól függően ez 10 perctől pár óráig tarthat"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "A pénztárcafájlról készített minden korábbi mentést ki kell cserélni az újonnan létrehozott, titkosított tárcakönyvtárral. Biztonsági okokból a titkosítatlan pénztárcakönyv korábbi mentései használhatatlanná válnak, amint elkezdi használni az új, titkosított tárcát.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core váratlanul állt meg",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma volt a Metrix Core-szal, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák miatt.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Indítsa újra az Ügyfelet",
             "CLIENTINVALIDCONFIGTITLE": "Érvénytelen metrix.conf konfiguráció",
             "CLIENTINVALIDCONFIGINFO": "A metrix.conf-nak érvénytelen masternode-beállítása van, ami a Metrix Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt.",
             "ADDREMOTEMNTITLE": "Távoli Masternode hozzáadása",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode magánkulcs",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx index",
+            "BOOTSTRAPFAILEDTITLE": "Nem sikerült a Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájl hibáit.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállítási eszközök"
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core letöltése...",
         "UPDATEAVAILABLE": "Metrix Core frissítés elérhető",
         "SHUTTINGDOWN": "Metrix Core leállítása...",
-        "RESTARTING": "Metrix Core újraindítása..."
+        "RESTARTING": "Metrix Core újraindítása...",
+        "BOOTSTRAPPING": "Rendszerindító Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Új fiók sikeresen létrehozva",

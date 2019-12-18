@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "განახლების საფულე ფორმატში",
                 "UPGRADEWALLETINFO": "-განახლება: განახლების საფულე უახლესი ფორმატის გაშვებისას. (შენიშვნა: ეს არ არის საფულე განახლება თავად!)",
                 "REBUILDINDEXBUTTON": "აღადგინეთ ინდექსი",
-                "REBUILDINDEXINFO": "-რედინექსი: სარეაბილიტაციო blockchain ინდექსი მიმდინარე blk000?"
+                "REBUILDINDEXINFO": "-რედინექსი: სარეაბილიტაციო blockchain ინდექსი მიმდინარე blk000?",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Metrixcoin.com– ის Metrix blockchain ფაილების გადმოწერა და ინსტალაციის ჩატვირთვა. თქვენი ქსელის კავშირიდან გამომდინარე, ამან შეიძლება რამდენიმე წუთი 10 წუთი დასჭირდეს"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "თქვენს საფულე ფაილის ნებისმიერი წინა სარეზერვო უნდა შეიცვალოს ახლად გენერირებული, დაშიფრული საფულე ფაილი. უსაფრთხოების მიზეზების გამო, unencrypted საფულე ფაილის წინა სარეზერვო გამოყენება შეუძლებელია, როგორც კი დაიწყებთ ახალი, დაშიფრული საფულის გამოყენებით.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ლინდა კორი მოულოდნელად შეაჩერა",
             "CLIENTCLOSEDUNEXPECTEDINFO": "იყო პრობლემა ლინდა Core, რომელმაც გამოიწვია ეს შეწყვიტოს. რეკომენდირებულია შეამოწმოთ თქვენი debug.log ფაილის საკითხები.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "გადატვირთვა კლიენტი",
             "CLIENTINVALIDCONFIGTITLE": "არასწორი metrix.conf კონფიგურაცია",
             "CLIENTINVALIDCONFIGINFO": "თქვენი metrix.conf აქვს ბათილი მაჩანოდის კონფიგურაცია, რამაც გამოიწვიოს ლინდა Core გამოდის დაუყოვნებლივ. გთხოვთ, შეამოწმოთ ეს ფაილი.",
             "ADDREMOTEMNTITLE": "დაამატე დისტანციური წიწაკა",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "მენდოდედის IP: პორტი",
             "ADDREMOTEMNKEY": "მენდოდედის პირადი გასაღები",
             "ADDREMOTEMNTXHASH": "მწვერვალი Trx Hash",
-            "ADDREMOTEMNTXINDEX": "მწვერვალი Trx ინდექსი"
+            "ADDREMOTEMNTXINDEX": "მწვერვალი Trx ინდექსი",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap– მა ჩაიშალა",
+            "BOOTSTRAPFAILEDINFO": "წარმოიშვა პრობლემა Metrix Core– ს ჩატვირთვისას. გირჩევთ შეამოწმოთ თქვენი სიმაღლეების ჟურნალის ფაილი პრობლემების შესახებ.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "აღდგენის ინსტრუმენტები"
         },
         "ADDRESSBOOK": {
             "TITLE": "Მისამართების წიგნი",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "ჩამოტვირთვის ლინდა Core...",
         "UPDATEAVAILABLE": "ლინდა Core Update ხელმისაწვდომია",
         "SHUTTINGDOWN": "დახურვა ქვემოთ ლინდა Core...",
-        "RESTARTING": "ლინდა კორის გადატვირთვა..."
+        "RESTARTING": "ლინდა კორის გადატვირთვა...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "ახალი ანგარიში წარმატებით შეიქმნა",

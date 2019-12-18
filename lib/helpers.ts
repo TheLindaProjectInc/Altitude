@@ -2,6 +2,7 @@
 import * as https from 'https';
 import * as fs from 'fs'
 import * as crypto from 'crypto'
+import * as path from 'path';
 import { exec } from 'child_process';
 
 export async function pathExists(path) {
@@ -56,6 +57,20 @@ export async function deleteFile(file: string) {
             }
         })
     });
+}
+
+export function deleteFolderSync(folder: string) {
+    if (fs.existsSync(folder)) {
+        fs.readdirSync(folder).forEach((file, index) => {
+            const curPath = path.join(folder, file);
+            if (fs.lstatSync(curPath).isDirectory()) {
+                deleteFolderSync(curPath);
+            } else {
+                fs.unlinkSync(curPath);
+            }
+        });
+        fs.rmdirSync(folder);
+    }
 }
 
 export async function downloadFile(url, dest) {

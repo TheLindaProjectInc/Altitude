@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "فرمت کیف پول را ارتقا دهید",
                 "UPGRADEWALLETINFO": "-upgradewallet: کیف پول را به آخرین فرمت در هنگام راه اندازی ارتقا دهید. (توجه: این یک به روز رسانی از کیف پول خود نیست!)",
                 "REBUILDINDEXBUTTON": "شاخص بازسازی",
-                "REBUILDINDEXINFO": "-index: بازخوانی index blockchain از فایل های فعلی blk000 ؟؟. dat."
+                "REBUILDINDEXINFO": "-index: بازخوانی index blockchain از فایل های فعلی blk000 ؟؟. dat.",
+                "BOOTSTRAPBUTTON": "بوت استرپ",
+                "BOOTSTRAPINFO": "در حال بارگیری پرونده های blockchain Metrix از metrixcoin.com و نصب خود را راه اندازی کنید. بسته به اتصال شبکه شما ، این کار 10 دقیقه تا چند ساعت طول می کشد"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "هر پشتیبان قبلی که از فایل کیف پول خود ساخته اید باید با فایل کیف پول تازه تولید شده، رمزگذاری شده جایگزین شود. به دلایل امنیتی، پشتیبان قبلی از فایل کیف پول رمزگذاری نشده، به محض اینکه شما شروع به استفاده از کیف پول جدید رمز شده، بی فایده تبدیل می شود.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "لیندا هسته غیرمنتظره متوقف شد",
             "CLIENTCLOSEDUNEXPECTEDINFO": "لیندا کور مشکل داشت که موجب خفه شدن آن شد. توصیه می شود فایل debug.log خود را برای مسائل بررسی کنید.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "راه اندازی مجدد مشتری",
             "CLIENTINVALIDCONFIGTITLE": "پیکربندی metrix.conf نامعتبر است",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf شما دارای تنظیمات masternode نامعتبر است که باعث می شود لیندا هسته بلافاصله خروج. لطفا این فایل را بررسی کنید",
             "ADDREMOTEMNTITLE": "اضافه کردن Masternode از راه دور",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: بندر",
             "ADDREMOTEMNKEY": "کلید خصوصی Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx هاش",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx Index"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
+            "BOOTSTRAPFAILEDTITLE": "بوت استرپ هسته اصلی با شکست مواجه شد",
+            "BOOTSTRAPFAILEDINFO": "مشکلی در راه اندازی مجدد Metrix Core وجود داشت. توصیه می شود پرونده مربوط به مشکلات پرونده ورود به سیستم Altitude خود را بررسی کنید.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ابزارهای بازیابی"
         },
         "ADDRESSBOOK": {
             "TITLE": "دفترچه آدرس",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "دانلود لیندا هسته...",
         "UPDATEAVAILABLE": "لیندا هسته بروز رسانی در دسترس است",
         "SHUTTINGDOWN": "خاموش شدن لیندا هسته...",
-        "RESTARTING": "راه اندازی مجدد Metrix Core..."
+        "RESTARTING": "راه اندازی مجدد Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "حساب جدید با موفقیت ایجاد شد",

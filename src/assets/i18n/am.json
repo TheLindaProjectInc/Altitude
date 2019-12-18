@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "የትርጉም ቅርጸትን ያልቁ",
                 "UPGRADEWALLETINFO": "-upgradewallet: ጅምር ላይ ጅምር ወደ የቅርብ ጊዜ ቅርጸት ያሻሽሉ. (ልብ ይበሉ-ይህ የኪስ ቦርሳ አይደለም!)",
                 "REBUILDINDEXBUTTON": "መረጃን እንደገና ገንባ",
-                "REBUILDINDEXINFO": "-Reindex: የዳግማዊ ቻግኖስንድ መረጃ ጠቋሚን ከአሁኑ የ BLK000 ?? ቀን ሰነዶች ዳግም ገንባ."
+                "REBUILDINDEXINFO": "-Reindex: የዳግማዊ ቻግኖስንድ መረጃ ጠቋሚን ከአሁኑ የ BLK000 ?? ቀን ሰነዶች ዳግም ገንባ.",
+                "BOOTSTRAPBUTTON": "ቡትስቲክ",
+                "BOOTSTRAPINFO": "የሜትሮክስ እገዳን ፋይሎች ከ metrixcoin.com ማውረድ እና ጭነትዎን ያስነሳል። በአውታረ መረብዎ ግንኙነት ላይ በመመርኮዝ ይህ እስከ 10 ደቂቃዎች እስከ ሁለት ሰዓቶች ድረስ ሊወስድ ይችላል"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "ከ wallet ፋይልዎ ያደረጓቸው ማናቸውም ቀደም ያሉ ምትኬዎች በአዲስ በተፈጠረ ፋይል የተሰወረ የኪስ ፋይል ፋይል መተካት አለባቸው. ለደህንነት ሲባል, ቀደም ሲል ያልተመዘገበው የኪሌት ፋይል ቅጂዎች አዲሱን, ኢንክሪፕትድ ኪ ቦል በመጠቀም መጀመር ዋጋ አይኖረውም.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "የሊንዳ ኮርታ ሳይታሰብ አቆመች",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ሊንዳ ኮር ችግሩ እንዲቋረጥ ምክንያት የሆነ ችግር ነበር. ለችግሮች የእርማትዎን ስህተት ማረም እንዲመረምሩ ተመክሯል.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "ደንበኛውን እንደገና አስጀምር",
             "CLIENTINVALIDCONFIGTITLE": "ልክ ያልሆነ የ metrix.conf ውቅረት",
             "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ.",
             "ADDREMOTEMNTITLE": "የርቀት ማሳጅode ያክሉ።",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: ወደብ",
             "ADDREMOTEMNKEY": "ማሳጅode የግል ቁልፍ ፡፡",
             "ADDREMOTEMNTXHASH": "ማሳጅode ትሪክስ ሃሽ ፡፡",
-            "ADDREMOTEMNTXINDEX": "Masternode ትሪክስ መረጃ ጠቋሚ።"
+            "ADDREMOTEMNTXINDEX": "Masternode ትሪክስ መረጃ ጠቋሚ።",
+            "BOOTSTRAPFAILEDTITLE": "ሜትሪክስ ኮር ቡትስትፕተርስ አልተሳካም",
+            "BOOTSTRAPFAILEDINFO": "የብረታ ብረት ማቀነባበሪያ ማትሪክስ ኮር ችግር ነበር ፡፡ ለችግሮች የአልቲዝድ ሎግ ፋይልዎን ለመፈተሽ ይመከራል ፡፡",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "የመልሶ ማግኛ መሳሪያዎች"
         },
         "ADDRESSBOOK": {
             "TITLE": "አድራሻ መመዝገቢያ ደብተር",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "የሊንዳ ኮር...",
         "UPDATEAVAILABLE": "የሊንዳ ኮር ዝማኔ ይገኛል",
         "SHUTTINGDOWN": "የሊንዳ ኮር...",
-        "RESTARTING": "የሊንዳ ኮር..."
+        "RESTARTING": "የሊንዳ ኮር...",
+        "BOOTSTRAPPING": "የማስነሻ ቁልፍ ማቲንግ ኮር..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "አዲስ መለያ በተሳካ ሁኔታ ተፈጥሯል",

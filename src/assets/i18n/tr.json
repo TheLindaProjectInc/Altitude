@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Cüzdan biçimini yükselt",
                 "UPGRADEWALLETINFO": "-Upgradewallet: Başlangıçta cüzdanı en son biçime yükseltin. (Not: Bu, cüzdanın kendisinin bir güncellemesi DEĞİLDİR!)",
                 "REBUILDINDEXBUTTON": "Yeniden indeksi",
-                "REBUILDINDEXINFO": "-reindex: mevcut blk000 dan blok block endeksi yeniden oluşturun."
+                "REBUILDINDEXINFO": "-reindex: mevcut blk000 dan blok block endeksi yeniden oluşturun.",
+                "BOOTSTRAPBUTTON": "çizme atkısı",
+                "BOOTSTRAPINFO": "Metrix blockchain dosyalarını metrixcoin.com adresinden indirmek ve kurulumunuzu başlatmak. Ağ bağlantınıza bağlı olarak bu işlem birkaç dakika ile 10 dakika arasında sürebilir."
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "M-cüzdan dosyanızda yaptığınız önceki yedekler yeni oluşturulan, şifrelenmiş cüzdan dosyası ile değiştirilmelidir. Güvenlik nedenleriyle, şifrelenmemiş cüzdan dosyasının önceki yedeklemeleri, yeni, şifrelenmiş cüzdanı kullanmaya başladığınız anda işe yaramaz.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core beklenmedik bir şekilde durdu",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core’un sonlandırmasına neden olan bir problem vardı. Hatalar için debug.log dosyanızı kontrol etmeniz önerilir.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "İstemciyi Yeniden Başlat",
             "CLIENTINVALIDCONFIGTITLE": "Geçersiz metrix.conf Yapılandırması",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf dosyanızda Metrix Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin.",
             "ADDREMOTEMNTITLE": "Uzak Ana Mod Ekle",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Ana Mod IP: Bağlantı Noktası",
             "ADDREMOTEMNKEY": "Ana Mod Özel Anahtarı",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Ana Mod Trx Dizini"
+            "ADDREMOTEMNTXINDEX": "Ana Mod Trx Dizini",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Başarısız",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core'u önyüklerken bir sorun oluştu. Rakım günlük dosyanızı sorunlar için kontrol etmeniz önerilir.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kurtarma Araçları"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres defteri",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Metrix Core'u indiriyor...",
         "UPDATEAVAILABLE": "Metrix Çekirdek Güncelleme Mevcut",
         "SHUTTINGDOWN": "Metrix Core'u kapatıyor...",
-        "RESTARTING": "Metrix Çekirdeğini Yeniden Başlatıyor..."
+        "RESTARTING": "Metrix Çekirdeğini Yeniden Başlatıyor...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yeni hesap başarıyla oluşturuldu",

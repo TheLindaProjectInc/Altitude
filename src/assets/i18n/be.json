@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Абнаўленне фармату паперніка",
                 "UPGRADEWALLETINFO": "-upgradewallet: Абнаўленне да апошняй папернік фармату пры запуску. (Заўвага: гэта не абнаўленне самага кашалька!)",
                 "REBUILDINDEXBUTTON": "перабудаваць індэкс",
-                "REBUILDINDEXINFO": "-reindex: Перабудаваць blockchain індэкс ад бягучага blk000 ?? DAT файлаў .."
+                "REBUILDINDEXINFO": "-reindex: Перабудаваць blockchain індэкс ад бягучага blk000 ?? DAT файлаў ..",
+                "BOOTSTRAPBUTTON": "Загрузка",
+                "BOOTSTRAPINFO": "Загрузка файлаў Metrix blockchain з metrixcoin.com і загрузіце ўстаноўку. У залежнасці ад сеткавага злучэння гэта можа заняць ад 10 хвілін да пары гадзін"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Усе папярэднія рэзервовыя копіі, якія вы зрабілі з файла кашалька павінны быць замененыя на зноў створаным зашыфраваны файл кашалёк. Па меркаваннях бяспекі, папярэднія рэзервовыя копіі ў неабароненым файл папернік стануць бескарыснай, як толькі вы пачнеце выкарыстоўваць новы, зашыфраваны кашалёк.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Ядро Раптоўная",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Існаваў праблема з Ліндай Ядры, якая прымусіла яго спыніць. Гэта рэкамендуецца праверыць файл debug.log для пытанняў.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "перазагрузка кліента",
             "CLIENTINVALIDCONFIGTITLE": "Недапушчальны Канфігурацыя metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf мае недапушчальнае ўстаноўку masternode, якая прывядзе да Ліндзе Стрыжань выйсці неадкладна. Калі ласка, праверце гэты файл.",
             "ADDREMOTEMNTITLE": "Дадаць аддалены Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: порт",
             "ADDREMOTEMNKEY": "Прыватны ключ Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Хэш",
-            "ADDREMOTEMNTXINDEX": "Індэкс Masternode"
+            "ADDREMOTEMNTXINDEX": "Індэкс Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Памылка загрузкі Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Узнікла праблема загрузкі Metrix Core. Рэкамендуецца праверыць ваш файл часопіса вышыні на наяўнасць праблем.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Інструменты аднаўлення"
         },
         "ADDRESSBOOK": {
             "TITLE": "Адрасная кніга",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Загрузка Metrix Стрыжань...",
         "UPDATEAVAILABLE": "Metrix Ядро Даступныя абнаўлення",
         "SHUTTINGDOWN": "Выключэнне Ліндзе Стрыжань...",
-        "RESTARTING": "Перазапуск Лінда Стрыжань..."
+        "RESTARTING": "Перазапуск Лінда Стрыжань...",
+        "BOOTSTRAPPING": "Загрузка Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Новы ўліковы запіс паспяхова створана",

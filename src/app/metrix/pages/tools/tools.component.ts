@@ -81,7 +81,7 @@ export class ToolsComponent implements OnInit {
       } catch (ex) {
         let err = 'Error';
         if (ex.error) err = ex.error;
-        if (ex.body.error) err = `${ex.body.error.message} (code ${ex.body.error.code})`;
+        if (ex.body && ex.body.error) err = `${ex.body.error.message} (code ${ex.body.error.code})`;
         this.rpcHistory.push({ ts: new Date(), send: false, data: err, json: false });
       }
       this.rpcCommand = "";
@@ -146,7 +146,13 @@ export class ToolsComponent implements OnInit {
   }
 
   repairWallet(cmd) {
+    this.rpc.recoveryMode = false;
     this.rpc.restartClient([this.repairCommands[cmd]]);
+  }
+
+  bootstrap() {
+    this.rpc.recoveryMode = false;
+    this.rpc.bootstrapClient();
   }
 
 }

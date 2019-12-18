@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Αναβαθμίστε τη μορφή πορτοφολιού",
                 "UPGRADEWALLETINFO": "-upgradewallet: Αναβαθμίστε το πορτοφόλι στην πιο πρόσφατη μορφή κατά την εκκίνηση. (Σημείωση: αυτό δεν είναι ενημέρωση του ίδιου του πορτοφολιού!)",
                 "REBUILDINDEXBUTTON": "Αναδημιουργία ευρετηρίου",
-                "REBUILDINDEXINFO": "-reindex: Αναδημιουργήστε το δείκτη blockchain από τα τρέχοντα αρχεία blk000."
+                "REBUILDINDEXINFO": "-reindex: Αναδημιουργήστε το δείκτη blockchain από τα τρέχοντα αρχεία blk000.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Λήψη αρχείων blockchain Metrix από το metrixcoin.com και εκκίνηση της εγκατάστασής σας. Ανάλογα με τη σύνδεση δικτύου, αυτό μπορεί να διαρκέσει 10 λεπτά σε μερικές ώρες"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Οποιαδήποτε προηγούμενα αντίγραφα ασφαλείας που έχετε δημιουργήσει από το αρχείο πορτοφολιού σας θα πρέπει να αντικατασταθούν με το πρόσφατα δημιουργημένο αρχείο κρυπτογραφημένου πορτοφολιού. Για λόγους ασφαλείας, τα προηγούμενα αντίγραφα ασφαλείας του μη κρυπτογραφημένου αρχείου πορτοφολιού θα καταστούν άχρηστα μόλις αρχίσετε να χρησιμοποιείτε το νέο κρυπτογραφημένο πορτοφόλι.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Η Metrix Core σταμάτησε απροσδόκητα",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Υπήρξε ένα πρόβλημα με την Metrix Core που την έχει προκαλέσει να τερματίσει. Συνιστάται να ελέγξετε το αρχείο debug.log για θέματα.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Επανεκκινήστε τον υπολογιστή",
             "CLIENTINVALIDCONFIGTITLE": "Μη έγκυρη διαμόρφωση του metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Το σύστημά σας metrix.conf έχει μη έγκυρη ρύθμιση masternode που θα προκαλέσει την άμεση έξοδο της Metrix Core. Ελέγξτε αυτό το αρχείο.",
             "ADDREMOTEMNTITLE": "Προσθέστε το Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Θύρα",
             "ADDREMOTEMNKEY": "Ιδιωτικό κλειδί Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Δείκτης Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Δείκτης Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Η δοκιμαστική εκκίνηση Metrix Core Failed",
+            "BOOTSTRAPFAILEDINFO": "Παρουσιάστηκε πρόβλημα κατά την εκκίνηση του Metrix Core. Συνιστάται να ελέγξετε το αρχείο καταγραφής ύψους για θέματα.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Εργαλεία αποκατάστασης"
         },
         "ADDRESSBOOK": {
             "TITLE": "Βιβλίο διευθύνσεων",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Λήψη του Metrix Core...",
         "UPDATEAVAILABLE": "Η διαθέσιμη ενημέρωση πυρήνα Metrix",
         "SHUTTINGDOWN": "Κλείνοντας τη Metrix Core...",
-        "RESTARTING": "Επανεκκίνηση του Metrix Core..."
+        "RESTARTING": "Επανεκκίνηση του Metrix Core...",
+        "BOOTSTRAPPING": "Ενσωμάτωση πυρήνα Metrix..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ο νέος λογαριασμός δημιουργήθηκε με επιτυχία",

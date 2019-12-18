@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Tingkatkan format dompet",
                 "UPGRADEWALLETINFO": "-upgradewallet: Tingkatkan dompet ke format terbaru saat startup. (Catatan: ini bukan pembaruan dari dompet itu sendiri!)",
                 "REBUILDINDEXBUTTON": "Buat ulang indeks",
-                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index dari current blk000 ??. dat files."
+                "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index dari current blk000 ??. dat files.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Mengunduh file blockchain Metrix dari metrixcoin.com dan bootstrap instalasi Anda. Tergantung pada koneksi jaringan Anda, ini bisa memakan waktu 10 menit hingga beberapa jam"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Semua cadangan sebelumnya yang Anda buat dari file dompet Anda harus diganti dengan file dompet terenkripsi yang baru dibuat. Untuk alasan keamanan, cadangan sebelumnya dari file dompet yang tidak terenkripsi akan menjadi tidak berguna segera setelah Anda mulai menggunakan dompet terenkripsi yang baru.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Tiba-tiba Berhenti",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ada masalah dengan Metrix Core yang menyebabkannya berhenti. Disarankan untuk memeriksa file debug.log Anda untuk masalah.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak valid",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf Anda memiliki pengaturan masternode yang tidak valid yang akan menyebabkan Metrix Core segera keluar. Silakan periksa file ini.",
             "ADDREMOTEMNTITLE": "Tambahkan Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Kunci Pribadi Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indeks Trx Masternode"
+            "ADDREMOTEMNTXINDEX": "Indeks Trx Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap Inti Metrix Gagal",
+            "BOOTSTRAPFAILEDINFO": "Ada masalah bootstrap Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk masalah.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan"
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Mengunduh Metrix Core...",
         "UPDATEAVAILABLE": "Pembaruan Metrix Core Tersedia",
         "SHUTTINGDOWN": "Mematikan Metrix Core...",
-        "RESTARTING": "Memulai ulang Metrix Core..."
+        "RESTARTING": "Memulai ulang Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrap Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akun baru berhasil dibuat",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Igbesoke apamọwọ igbesoke",
                 "UPGRADEWALLETINFO": "-upgradewallet: apamọwọ igbesoke si kika titun lori ibẹrẹ. (Akiyesi: eyi kii ṣe imudojuiwọn ti apamọwọ funrararẹ!)",
                 "REBUILDINDEXBUTTON": "Ṣe atunto itọka",
-                "REBUILDINDEXINFO": "-reindex: Tun ṣe atunṣe blockchain lati awọn faili faili blk000 bayi."
+                "REBUILDINDEXINFO": "-reindex: Tun ṣe atunṣe blockchain lati awọn faili faili blk000 bayi.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Gbigba awọn faili Metrix blockchain awọn faili lati metrixcoin.com ati bootstrap fifi sori rẹ. O da lori isopọ nẹtiwọọki yii eyi le gba iṣẹju 10 si awọn wakati meji"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Eyikeyi awọn afẹyinti ti o ti ṣe ti iwe apamọwọ rẹ gbọdọ wa ni rọpo pẹlu faili tuntun ti a gbejade, faili apamọwọ ti a papamọ. Fun awọn idi aabo, awọn afẹyinti tẹlẹ ti faili apamọwọ ti a ko gba silẹ yoo di asan ni kete ti o bẹrẹ lilo lilo apamọwọ titun, ti a papamọ.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core duro lairotẹlẹ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro wa pẹlu Metrix Core ti o mu ki o pari. O ṣe iṣeduro lati ṣayẹwo faili debug.log rẹ fun awọn oran.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Onibara tuntun bẹrẹ",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf iṣeto ni aiyipada",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii.",
             "ADDREMOTEMNTITLE": "Fikun Masternode Latọna jijin",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP9 Masternode: Port",
             "ADDREMOTEMNKEY": "Bọtini Ikọkọ Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Atọka Masxodeode"
+            "ADDREMOTEMNTXINDEX": "Atọka Masxodeode",
+            "BOOTSTRAPFAILEDTITLE": "Meji Metetax Bootstrap kuna",
+            "BOOTSTRAPFAILEDINFO": "Iṣoro Iṣeduro irin-iṣẹ Core jẹ iṣoro kan. O ṣe iṣeduro lati ṣayẹwo faili logọti Altitude rẹ fun awọn ọran.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Awọn irinṣẹ Igbapada"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adirẹsi Iwe",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Gbigba Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Wa",
         "SHUTTINGDOWN": "Fifun si isalẹ Metrix Core...",
-        "RESTARTING": "Titun Awọn Metrix Core..."
+        "RESTARTING": "Titun Awọn Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping metrix mojuto..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Iroyin titun ti a ṣẹda daradara",

@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Upgrade u portale di u format",
                 "UPGRADEWALLETINFO": "-upgradewallet: Aghjurnà a billetò per l'ultimu formatu à l'iniziu. (Nota: ùn hè micca una aghjurnamentu di u billetone stessu!)",
                 "REBUILDINDEXBUTTON": "Recuciru l 'indiu",
-                "REBUILDINDEXINFO": "-reindex: Cumplistenu l'indiquatile di blockchain da u schedariu actuale di blk000?. dat."
+                "REBUILDINDEXINFO": "-reindex: Cumplistenu l'indiquatile di blockchain da u schedariu actuale di blk000?. dat.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Scaricendu i file di blockchain Metrix da metrixcoin.com è avviate a vostra installazione. Sicondu a vostra cunnessione di rete pò piglià 10 minuti à un paru d'ore"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Ogni copiazione di salvezza chì avete fattu di u vostru cartulare fucili si deve esse rimpiazzatu da u cartulare chjamatu novu cartellu chjamatu. Per i ragunijiet di sicurezza, i copia di salvezza di u cartulare di cartafilma micca criptu ùn diventeranu inùtu quantu cumencia cù a billetica nova criptografia.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core hà statu imprevedente",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè un prublema cù Metrix Core chì hà causatu à finisce. Hè ricumandemu à verificà u vostru file debug.log per issues.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restart Client",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf invàlida",
             "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu.",
             "ADDREMOTEMNTITLE": "Aghjunghje Masternode Remoto",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Chiave Privata Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Indice Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "Indice Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Fallit",
+            "BOOTSTRAPFAILEDINFO": "Ci hè statu un prublema bootstrapping Metrix Core. Hè cunsigliatu per verificà u vostru file di logu di Altitudine per avè prublemi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Strumenti di Recuperazione"
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Download Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Pujate Metrix Core...",
-        "RESTARTING": "A risturà Metrix Core..."
+        "RESTARTING": "A risturà Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "A nova accaduta creata bè",

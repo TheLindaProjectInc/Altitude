@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Jaunināt seifa formātu",
                 "UPGRADEWALLETINFO": "-upgradewallet: jaunināšanas kasete tiek atjaunināts līdz jaunākajam formātam, kad tas tiek startēts. (Piezīme: šī nav NAPA pašas naudas līdzekļu atjaunošana!)",
                 "REBUILDINDEXBUTTON": "Atjaunot indeksu",
-                "REBUILDINDEXINFO": "-reindeks: atjaunot blokshēmas indeksu no pašreizējiem blk000 ?? dat datumiem."
+                "REBUILDINDEXINFO": "-reindeks: atjaunot blokshēmas indeksu no pašreizējiem blk000 ?? dat datumiem.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Lejupielādējiet Metrix blockchain failus no metrixcoin.com un sāknējiet instalāciju. Atkarībā no tīkla savienojuma tas var ilgt no 10 minūtēm līdz pāris stundām"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Jebkura iepriekšējā dublējumkopija, ko esat veicis no sava seifa faila, ir jāaizstāj ar jaunizveidoto šifrēto seifa failu. Drošības apsvērumu dēļ iepriekšējo nešifrētā seifa faila dublējumi kļūs nederīgi, tiklīdz jūs sākat izmantot jauno šifrētu seifu.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core negaidīti apstājās",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Restartējiet klientu",
             "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
             "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu.",
             "ADDREMOTEMNTITLE": "Pievienojiet Remote Masternode",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: ports",
             "ADDREMOTEMNKEY": "Masternode privātā atslēga",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx indekss"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx indekss",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap neizdevās",
+            "BOOTSTRAPFAILEDINFO": "Bojājot Metrix Core, radās problēma. Ieteicams pārbaudīt augstuma žurnāla failu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkopšanas rīki"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Lindas koda lejupielāde...",
         "UPDATEAVAILABLE": "Pieejama Metrix Core atjauninājums",
         "SHUTTINGDOWN": "Metrix Core izslēgšana...",
-        "RESTARTING": "Lindas Core atjaunošana..."
+        "RESTARTING": "Lindas Core atjaunošana...",
+        "BOOTSTRAPPING": "Sākotnējā Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Jauns konts veiksmīgi izveidots",

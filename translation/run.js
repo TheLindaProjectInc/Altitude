@@ -5,7 +5,7 @@ const fs = require('fs');
 
 var ggl = google(process.env.APIKEY);  // this is required to use google translate service
 var retranslate = [] // add fields to here to force the translater to re-translate
-var removeTranslation = [] // add fields to here to remove them from all translation files (except en.json must be removed manually)
+var removeTranslation = ['CLIENTCLOSEDUNEXPECTEDBUTTONSTART'] // add fields to here to remove them from all translation files (except en.json must be removed manually)
 
 async function translateLanguageFiles() {
     console.log("Running translation service. This will take some time to complete");

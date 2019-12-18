@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Haɓaka takarda walat",
                 "UPGRADEWALLETINFO": "-upgradewallet: Haɓaka walat zuwa sabon tsarin kan farawa. (Lura: wannan ba BABA sabunta wajista kanta ba ne!)",
                 "REBUILDINDEXBUTTON": "Sake gina fasali",
-                "REBUILDINDEXINFO": "-reindex: Sake gina fasali mai launi daga fayilolin blk000 na yanzu."
+                "REBUILDINDEXINFO": "-reindex: Sake gina fasali mai launi daga fayilolin blk000 na yanzu.",
+                "BOOTSTRAPBUTTON": "Bootstrap",
+                "BOOTSTRAPINFO": "Zazzage fayilolin blockchain na Metrix daga metrixcoin.com kuma sanya ƙyallen shigarwa. Dogaro da haɗin cibiyar sadarwarka wannan na iya ɗaukar mintina 10 zuwa awanni kaɗan"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Duk wani bayanan da kuka riga kuka yi daga fayil dinku ya kamata a maye gurbin tare da sabon saiti, ɓoyayyen takarda. Don dalilai na tsaro, bayanan ajiyar baya na ajiyayyen bashin baƙaƙe ba zai zama mara amfani ba da zarar ka fara amfani da sabon walat ɓoyayyen.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ya tsaya ba tare da tsammani ba",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Akwai matsala tare da Metrix Core wanda ya sa shi ya ƙare. Yana da shawarar don duba fayil din debug.log don al'amurra.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Sake kunna Mutumin",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Kanada Kanada",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf naka yana da saiti mara kyau wanda zai sa Metrix Core ya fita nan da nan. Da fatan a duba wannan fayil.",
             "ADDREMOTEMNTITLE": "Sanya Maballin Nesa",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP na Masternode: tashar jiragen ruwa",
             "ADDREMOTEMNKEY": "Maɓallin Keɓaɓɓu na Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Index na Masternode"
+            "ADDREMOTEMNTXINDEX": "Index na Masternode",
+            "BOOTSTRAPFAILEDTITLE": "Ba a yi nasarar Metrix Core Bootstrap ba",
+            "BOOTSTRAPFAILEDINFO": "An sami matsalar bootstrapping Metrix Core. An ba da shawarar a duba fayil ɗin Altitude ɗinku don al'amurran da suka shafi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kayan Aiki"
         },
         "ADDRESSBOOK": {
             "TITLE": "Littafin adireshi",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Ana sauke Metrix Core...",
         "UPDATEAVAILABLE": "Metrix Core Update Akwai",
         "SHUTTINGDOWN": "Shutting down Metrix Core...",
-        "RESTARTING": "Sake kunna Metrix Core..."
+        "RESTARTING": "Sake kunna Metrix Core...",
+        "BOOTSTRAPPING": "Bootstrapping Matrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Sabon asusun da aka samu nasara",

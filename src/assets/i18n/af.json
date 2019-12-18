@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "Opgradeer beursieformaat",
                 "UPGRADEWALLETINFO": "-upgradewallet: Opgradeer beursie na die nuutste formaat by opstart. (Let wel: hierdie is NIE 'n opdatering van die beursie self nie!)",
                 "REBUILDINDEXBUTTON": "Herbou indeks",
-                "REBUILDINDEXINFO": "-reindex: Herbou blockchain indeks van huidige blk000 ??. dat lêers."
+                "REBUILDINDEXINFO": "-reindex: Herbou blockchain indeks van huidige blk000 ??. dat lêers.",
+                "BOOTSTRAPBUTTON": "bootstrap",
+                "BOOTSTRAPINFO": "Laai Metrix blockchain-lêers van metrixcoin.com af en laai u installasie uit. Afhangend van u netwerkverbinding, kan dit tien minute tot 'n paar uur duur"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "Enige vorige rugsteun wat u van u beursie-lêer gemaak het, moet vervang word met die nuut gegenereerde, geïnkripteer beursie-lêer. Om sekuriteitsredes sal vorige back-ups van die ongecodeerde beursie-lêer nutteloos raak sodra u die nuwe, versleutelde beursie begin gebruik.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core het onverwags gestop",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "Herbegin Kliënt",
             "CLIENTINVALIDCONFIGTITLE": "Ongeldige metrix.conf-konfigurasie",
             "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na.",
             "ADDREMOTEMNTITLE": "Voeg eksterne masternode by",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "Masternode IP: Port",
             "ADDREMOTEMNKEY": "Masternode-privaat sleutel",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks"
+            "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core-bootstrap misluk",
+            "BOOTSTRAPFAILEDINFO": "Daar was 'n probleem met die opstart van Metrix Core. Dit word aanbeveel om u Altitude-loglêer te kontroleer vir probleme.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Herstel gereedskap"
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres boek",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "Laai Metrix Core af...",
         "UPDATEAVAILABLE": "Metrix Core Update beskikbaar",
         "SHUTTINGDOWN": "Sluiting van Metrix Core...",
-        "RESTARTING": "Herlaai Metrix Core..."
+        "RESTARTING": "Herlaai Metrix Core...",
+        "BOOTSTRAPPING": "Metrix Core word selflaai..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nuwe rekening geskep suksesvol",

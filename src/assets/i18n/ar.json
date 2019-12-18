@@ -142,7 +142,9 @@
                 "UPGRADEWALLETBUTTON": "ترقية تنسيق المحفظة",
                 "UPGRADEWALLETINFO": "-upgradewallet: ترقية المحفظة إلى أحدث تنسيق عند بدء التشغيل. (ملاحظة: هذا ليس تحديثًا للمحفظة نفسها!)",
                 "REBUILDINDEXBUTTON": "إعادة بناء الفهرس",
-                "REBUILDINDEXINFO": "-reindex: إعادة بناء فهرس blockchain من الملفات الحالية blk000 ؟؟."
+                "REBUILDINDEXINFO": "-reindex: إعادة بناء فهرس blockchain من الملفات الحالية blk000 ؟؟.",
+                "BOOTSTRAPBUTTON": "التمهيد",
+                "BOOTSTRAPINFO": "تنزيل ملفات Metrix blockchain من metrixcoin.com وإقلاع التثبيت. بناءً على اتصال الشبكة لديك ، قد يستغرق الأمر 10 دقائق إلى عدة ساعات"
             }
         },
         "HELP": {
@@ -277,7 +279,6 @@
             "ENCRYPTEDCONTENT": "يجب استبدال أي نسخ احتياطية سابقة قمت بها من ملف المحفظة بملف المحفظة المشفر حديثًا. لأسباب تتعلق بالأمان ، ستصبح النسخ الاحتياطية السابقة من ملف المحفظة غير المشفرة عديمة الفائدة بمجرد بدء استخدام المحفظة الجديدة المشفرة.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ليندا الأساسية توقفت بشكل غير متوقع",
             "CLIENTCLOSEDUNEXPECTEDINFO": "كانت هناك مشكلة مع ليندا كور التي تسببت في إنهاؤها. من المستحسن التحقق من ملف debug.log الخاص بك للتعرف على المشكلات.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONSTART": "إعادة تشغيل العميل",
             "CLIENTINVALIDCONFIGTITLE": "تكوين metrix.conf غير صالح",
             "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج metrix.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Metrix Core على الفور. يرجى التحقق من هذا الملف.",
             "ADDREMOTEMNTITLE": "إضافة Masternode البعيد",
@@ -285,7 +286,10 @@
             "ADDREMOTEMNIP": "IP Masternode: منفذ",
             "ADDREMOTEMNKEY": "المفتاح الخاص Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
-            "ADDREMOTEMNTXINDEX": "مؤشر Masternode Trx"
+            "ADDREMOTEMNTXINDEX": "مؤشر Masternode Trx",
+            "BOOTSTRAPFAILEDTITLE": "فشل Metrix الأساسية Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "حدثت مشكلة أثناء تشغيل Metrix Core. يوصى بالتحقق من ملف سجل Altitude الخاص بك لمعرفة المشكلات.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "أدوات الاسترداد"
         },
         "ADDRESSBOOK": {
             "TITLE": "دليل العناوين",
@@ -361,7 +365,8 @@
         "DOWNLOADCLIENT": "جارٍ تنزيل ليندا كور...",
         "UPDATEAVAILABLE": "تحديث ليندا الأساسية المتاحة",
         "SHUTTINGDOWN": "اغلاق ليندا كور...",
-        "RESTARTING": "إعادة تشغيل ليندا كور..."
+        "RESTARTING": "إعادة تشغيل ليندا كور...",
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "تم إنشاء حساب جديد بنجاح",
