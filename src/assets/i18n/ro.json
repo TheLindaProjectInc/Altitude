@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Rebuild index",
                 "REBUILDINDEXINFO": "-reindex: Refaceți blocchain index din fișierele actuale blk000?. dat.",
                 "BOOTSTRAPBUTTON": "bootstrap",
-                "BOOTSTRAPINFO": "Descărcarea fișierelor blockchain Metrix de pe metrixcoin.com și bootstrap-ul instalării. În funcție de conexiunea la rețea, aceasta poate dura 10 minute până la câteva ore"
+                "BOOTSTRAPINFO": "Descărcarea fișierelor blockchain Metrix de pe metrixcoin.com și bootstrap-ul instalării. În funcție de conexiunea la rețea, aceasta poate dura 10 minute până la câteva ore",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Ștergeți fișierele blockchain locale și resync din blocul de geneză."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "A taia",
             "CONTEXTMENUCOPY": "Copie",
             "CONTEXTMENUPASTE": "Pastă"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Avertizare! Nu sunteți în lanțul principal, potrivit exploratorului Metrix. Este foarte recomandat să rescronizați sau să reinstalați blockchainul pentru a evita pierderea oricăror monede."
         }
     },
     "MENU": {

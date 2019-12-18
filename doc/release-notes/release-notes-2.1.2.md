@@ -12,3 +12,5 @@ Shutdown Altitude if it is already running and then run the installer.
 ### What's New
 - Added ability to bootstrap wallet from Linda Project Inc. servers
 - Option to enter wallet recovery in Altitude if Metrix Core fails to start.
+- Added ability to resync blockchain from scratch
+- Add check if on main chain alert

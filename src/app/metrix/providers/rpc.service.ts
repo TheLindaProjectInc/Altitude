@@ -86,6 +86,11 @@ export class RpcService {
         this.electron.ipcRenderer.send('client-node', 'BOOTSTRAP');
     }
 
+    public resyncClient() {
+        this.stopClient();
+        this.electron.ipcRenderer.send('client-node', 'RESYNC');
+    }
+
     public async requestData(method, params = []) {
         let data: any;
         switch (method) {

@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Rebuild-indeksi",
                 "REBUILDINDEXINFO": "-reindex: Rebuild blockchain -indeksi nykyisistä blk000 ??. dat-tiedostoista.",
                 "BOOTSTRAPBUTTON": "bootstrap",
-                "BOOTSTRAPINFO": "Lataa Metrix-blockchain-tiedostot metrixcoin.com-sivustosta ja käynnistä asennus. Verkkoyhteydestään riippuen tämä voi viedä 10 minuutista pariin tuntiin"
+                "BOOTSTRAPINFO": "Lataa Metrix-blockchain-tiedostot metrixcoin.com-sivustosta ja käynnistä asennus. Verkkoyhteydestään riippuen tämä voi viedä 10 minuutista pariin tuntiin",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Poista paikalliset blockchain-tiedostot ja synkronoi uudelleen geneesilohkosta."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Leikata",
             "CONTEXTMENUCOPY": "Kopio",
             "CONTEXTMENUPASTE": "tahna"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Varoitus! Et ole pääketjussa Metrix-tutkimusmatkailijan mukaan. On erittäin suositeltavaa synkronoida tai käynnistää uudelleen ketju uudelleen, jotta kolikot eivät häviä."
         }
     },
     "MENU": {

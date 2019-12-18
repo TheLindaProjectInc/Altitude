@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "インデックスの再構築",
                 "REBUILDINDEXINFO": "-reindex：現在のblk000 ??。datファイルからブロックチェーンインデックスを再構築します。",
                 "BOOTSTRAPBUTTON": "ブートストラップ",
-                "BOOTSTRAPINFO": "metrixcoin.comからMetrixブロックチェーンファイルをダウンロードし、インストールをブートストラップします。ネットワーク接続に応じて、これには10分から数時間かかることがあります"
+                "BOOTSTRAPINFO": "metrixcoin.comからMetrixブロックチェーンファイルをダウンロードし、インストールをブートストラップします。ネットワーク接続に応じて、これには10分から数時間かかることがあります",
+                "SYNCFROMSTARTBUTTON": "ブロックハインの再同期",
+                "SYNCFROMSTARTINFO": "ローカルブロックチェーンファイルを削除し、ジェネシスブロックから再同期します。"
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "カット",
             "CONTEXTMENUCOPY": "コピーする",
             "CONTEXTMENUPASTE": "ペースト"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "警告！ Metrixエクスプローラーによると、メインチェーン上にはいません。コインの損失を防ぐために、ブロックチェーンを再同期または再ブートストラップすることを強くお勧めします。"
         }
     },
     "MENU": {

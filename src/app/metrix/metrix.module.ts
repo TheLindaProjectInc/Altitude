@@ -14,6 +14,7 @@ import { AccountsComponent } from './components/accounts/accounts.component';
 import { MarketPriceComponent } from './components/market-price/market-price.component';
 import { CurrencyComponent } from './pages/currency/currency.component';
 import { MasternodeComponent } from './components/masternode/masternode.component';
+import { MainChainCheckComponent } from './components/main-chain-check/main-chain-check.component';
 
 // pages
 import { SendComponent } from './pages/send/send.component';
@@ -83,5 +84,6 @@ export const declarations = [
     AccountsComponent,
     MarketPriceComponent,
     CurrencyComponent,
-    MasternodeComponent
+    MasternodeComponent,
+    MainChainCheckComponent
 ]

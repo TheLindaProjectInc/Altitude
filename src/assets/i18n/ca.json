@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Reconstrueix l'índex",
                 "REBUILDINDEXINFO": "-reindex: Reconstrueix l'índex de bloc de cadena dels fitxers blk000?. dat actuals.",
                 "BOOTSTRAPBUTTON": "Cinturó d’arrencada",
-                "BOOTSTRAPINFO": "Baixant fitxers blockchain de Metrix de metrixcoin.com i arranqueu la instal·lació. Segons la connexió de xarxa, pot trigar 10 minuts a un parell d'hores"
+                "BOOTSTRAPINFO": "Baixant fitxers blockchain de Metrix de metrixcoin.com i arranqueu la instal·lació. Segons la connexió de xarxa, pot trigar 10 minuts a un parell d'hores",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Eliminar els fitxers blockchain locals i resincronitzar-los del bloc de gènesi."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Tallar",
             "CONTEXTMENUCOPY": "Copia",
             "CONTEXTMENUPASTE": "Enganxar"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Avís! Segons l'explorador Metrix no es troba a la cadena principal. És molt recomanable tornar a sincronitzar o tornar a arrencar el blocatge per evitar la pèrdua de monedes."
         }
     },
     "MENU": {

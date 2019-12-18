@@ -187,6 +187,14 @@
       </tr>
       <tr>
         <td>
+          <button (click)="resync()" class="btn btn-default">
+            {{'PAGES.TOOLS.REPAIR.SYNCFROMSTARTBUTTON' | translate}}
+          </button>
+        </td>
+        <td>{{'PAGES.TOOLS.REPAIR.SYNCFROMSTARTINFO' | translate}}</td>
+      </tr>
+      <tr>
+        <td>
           <button (click)="bootstrap()" class="btn btn-default">
             {{'PAGES.TOOLS.REPAIR.BOOTSTRAPBUTTON' | translate}}
           </button>

@@ -115,6 +115,10 @@ export default class Client {
                 case 'BOOTSTRAP':
                     this.bootstrapClient();
                     break;
+                case 'RESYNC':
+                    this.resyncClient();
+                    break;
+
             }
         });
     }
@@ -409,6 +413,16 @@ export default class Client {
             log.error("Client", "Bootstrap failed", ex);
             this.setClientStatus(ClientStatus.BOOTSTRAPFAILED);
         }
+    }
+
+    async resyncClient() {
+        log.info("Client", "Resync stopping client...");
+        await this.stop();
+        log.info("Client", "Resync removing local blockchain files...");
+        helpers.deleteFolderSync(path.join(this.clientDataDir, "blocks"));
+        helpers.deleteFolderSync(path.join(this.clientDataDir, "chainstate"));
+        log.info("Client", "Resync starting client...");
+        this.startClient(true, true);
     }
 
     destroyClientProccess() {

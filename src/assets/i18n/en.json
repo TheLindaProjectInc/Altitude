@@ -158,7 +158,9 @@
                 "REBUILDINDEXBUTTON": "Rebuild index",
                 "REBUILDINDEXINFO": "-reindex: Rebuild blockchain index from current blk000??.dat files.",
                 "BOOTSTRAPBUTTON": "Bootstrap",
-                "BOOTSTRAPINFO": "Downloading Metrix blockchain files from metrixcoin.com and bootstrap your installation. Depending on your network connection this can take 10 minutes to a couple of hours"
+                "BOOTSTRAPINFO": "Downloading Metrix blockchain files from metrixcoin.com and bootstrap your installation. Depending on your network connection this can take 10 minutes to a couple of hours",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Delete your local blockchain files and resync from the genesis block."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Cut",
             "CONTEXTMENUCOPY": "Copy",
             "CONTEXTMENUPASTE": "Paste"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Warning! You are not on the main chain according to the Metrix explorer. It is highly recommended to re-sync or re-bootstrap your blockchain to avoid the loss of any coins."
         }
     },
     "MENU": {

@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "重建索引",
                 "REBUILDINDEXINFO": "-reindex：從當前的blk000 ??。dat文件重建區塊鏈索引。",
                 "BOOTSTRAPBUTTON": "引導程序",
-                "BOOTSTRAPINFO": "從metrixcoin.com下載Metrix區塊鏈文件並引導安裝。根據您的網絡連接，這可能需要10分鐘到幾個小時"
+                "BOOTSTRAPINFO": "從metrixcoin.com下載Metrix區塊鏈文件並引導安裝。根據您的網絡連接，這可能需要10分鐘到幾個小時",
+                "SYNCFROMSTARTBUTTON": "重新同步區塊鏈",
+                "SYNCFROMSTARTINFO": "刪除本地區塊鏈文件，然後從創世塊重新同步。"
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "切",
             "CONTEXTMENUCOPY": "複製",
             "CONTEXTMENUPASTE": "糊"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "警告！根據Metrix資源管理器，您不在主鏈上。強烈建議重新同步或重新引導您的區塊鏈，以避免丟失任何硬幣。"
         }
     },
     "MENU": {

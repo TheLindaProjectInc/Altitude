@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Índice de reconstrução",
                 "REBUILDINDEXINFO": "-reindex: reconstrói o índice de blockchain dos arquivos atuais de blk000 ??.",
                 "BOOTSTRAPBUTTON": "Bootstrap",
-                "BOOTSTRAPINFO": "Fazendo download de arquivos blockchain Metrix do metrixcoin.com e inicialize sua instalação. Dependendo da sua conexão de rede, isso pode levar de 10 minutos a algumas horas"
+                "BOOTSTRAPINFO": "Fazendo download de arquivos blockchain Metrix do metrixcoin.com e inicialize sua instalação. Dependendo da sua conexão de rede, isso pode levar de 10 minutos a algumas horas",
+                "SYNCFROMSTARTBUTTON": "Ressincronizar blockhain",
+                "SYNCFROMSTARTINFO": "Exclua seus arquivos blockchain locais e ressincronize do bloco genesis."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Cortar",
             "CONTEXTMENUCOPY": "cópia de",
             "CONTEXTMENUPASTE": "Colar"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Atenção! Você não está na cadeia principal, de acordo com o Metrix Explorer. É altamente recomendável sincronizar novamente ou reinicializar sua blockchain para evitar a perda de moedas."
         }
     },
     "MENU": {

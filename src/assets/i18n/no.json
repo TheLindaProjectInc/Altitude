@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Oppbygg indeksen",
                 "REBUILDINDEXINFO": "-reindex: Rebuild blockchain-indeks fra nåværende blk000 ??. dat-filer.",
                 "BOOTSTRAPBUTTON": "Bootstrap",
-                "BOOTSTRAPINFO": "Last ned Metrix blockchain-filer fra metrixcoin.com og startstrap installasjonen. Avhengig av nettverkstilkoblingen din kan dette ta 10 minutter til et par timer"
+                "BOOTSTRAPINFO": "Last ned Metrix blockchain-filer fra metrixcoin.com og startstrap installasjonen. Avhengig av nettverkstilkoblingen din kan dette ta 10 minutter til et par timer",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Slett de lokale blockchain-filene og synkroniser fra genesisblokken."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Kutte opp",
             "CONTEXTMENUCOPY": "Kopiere",
             "CONTEXTMENUPASTE": "Lim inn"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Advarsel! Du er ikke på hovedkjeden i følge Metrix explorer. Det anbefales på det sterkeste å synkronisere eller starte opp igjen-omstrømming av blockchain for å unngå tap av mynter."
         }
     },
     "MENU": {

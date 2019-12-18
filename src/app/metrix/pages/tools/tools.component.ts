@@ -155,4 +155,9 @@ export class ToolsComponent implements OnInit {
     this.rpc.bootstrapClient();
   }
 
+  resync() {
+    this.rpc.recoveryMode = false;
+    this.rpc.resyncClient();
+  }
+
 }

@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Reconstruire l'index",
                 "REBUILDINDEXINFO": "-reindex: reconstruit l'index de la chaîne de blocs à partir des fichiers blk000 ??. dat actuels.",
                 "BOOTSTRAPBUTTON": "Bootstrap",
-                "BOOTSTRAPINFO": "Téléchargez les fichiers de la chaîne de blocs Metrix depuis metrixcoin.com et démarrez votre installation. En fonction de votre connexion réseau, cela peut prendre de 10 minutes à quelques heures"
+                "BOOTSTRAPINFO": "Téléchargez les fichiers de la chaîne de blocs Metrix depuis metrixcoin.com et démarrez votre installation. En fonction de votre connexion réseau, cela peut prendre de 10 minutes à quelques heures",
+                "SYNCFROMSTARTBUTTON": "Resync blockhain",
+                "SYNCFROMSTARTINFO": "Supprimez vos fichiers de blockchain locaux et resynchronisez du bloc genesis."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Couper",
             "CONTEXTMENUCOPY": "Copie",
             "CONTEXTMENUPASTE": "Coller"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Attention! Vous n'êtes pas sur la chaîne principale selon l'explorateur Metrix. Il est fortement recommandé de resynchroniser ou de redémarrer votre blockchain pour éviter la perte de pièces."
         }
     },
     "MENU": {

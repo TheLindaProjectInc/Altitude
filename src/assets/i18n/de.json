@@ -144,7 +144,9 @@
                 "REBUILDINDEXBUTTON": "Index neu erstellen",
                 "REBUILDINDEXINFO": "-reindex: Blockchain-Index aus aktuellen blk000 ??. dat-Dateien neu erstellen.",
                 "BOOTSTRAPBUTTON": "Bootstrap",
-                "BOOTSTRAPINFO": "Laden Sie Metrix-Blockchain-Dateien von metrixcoin.com herunter und starten Sie Ihre Installation. Abhängig von Ihrer Netzwerkverbindung kann dies 10 Minuten bis einige Stunden dauern"
+                "BOOTSTRAPINFO": "Laden Sie Metrix-Blockchain-Dateien von metrixcoin.com herunter und starten Sie Ihre Installation. Abhängig von Ihrer Netzwerkverbindung kann dies 10 Minuten bis einige Stunden dauern",
+                "SYNCFROMSTARTBUTTON": "Blockhain erneut synchronisieren",
+                "SYNCFROMSTARTINFO": "Löschen Sie Ihre lokalen Blockchain-Dateien und synchronisieren Sie sie erneut vom Genesis-Block."
             }
         },
         "HELP": {
@@ -305,6 +307,9 @@
             "CONTEXTMENUCUT": "Schnitt",
             "CONTEXTMENUCOPY": "Kopieren",
             "CONTEXTMENUPASTE": "Einfügen"
+        },
+        "MAINCHAINCHECK": {
+            "ALERT": "Warnung! Sie befinden sich laut Metrix Explorer nicht in der Hauptkette. Es wird dringend empfohlen, die Blockchain neu zu synchronisieren oder neu zu starten, um den Verlust von Münzen zu vermeiden."
         }
     },
     "MENU": {
