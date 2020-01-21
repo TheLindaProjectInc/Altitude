@@ -3,7 +3,6 @@ import Big from 'big.js';
 export default class Helpers {
 
   public static readonly params: CoinParams = {
-    masternodeCollateral: 2000000,
     fee: 0.001,
     masternodeConfirms: 10,
     matureTime: 24,
@@ -142,7 +141,6 @@ export default class Helpers {
 
 
 interface CoinParams {
-  masternodeCollateral: number,
   fee: number,
   masternodeConfirms: number,
   matureTime: number,
