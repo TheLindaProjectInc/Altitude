@@ -95,7 +95,7 @@ export default class Client {
                     if (this.updateResponse) this.updateResponse(true);
                     break;
                 case 'NOUPDATE':
-                    if (data === true) settings.set_skipCoreUpdate(this.clientConfig.download.sha256); // skip this update
+                    if (data === true) settings.set_skipCoreUpdate(this.clientConfig.download.sha256.toUpperCase()); // skip this update
                     if (this.updateResponse) this.updateResponse(false);
                     break;
                 case 'CALLCLIENT':
@@ -164,10 +164,10 @@ export default class Client {
                 // if we have a client check for an update
                 log.info("Client", "Client exists. Checking for update");
                 const localHash = await helpers.getFileHash(this.clientLocalLocation);
-                if (localHash !== this.clientConfig.download.sha256) {
+                if (localHash !== this.clientConfig.download.sha256.toUpperCase()) {
                     log.info("Client", "Update available");
                     // check if we should skip this update
-                    if (update || settings.getSettings().skipCoreUpdate !== this.clientConfig.download.sha256) {
+                    if (update || settings.getSettings().skipCoreUpdate.toUpperCase() !== this.clientConfig.download.sha256.toUpperCase()) {
                         if (update) {
                             if (!await this.downloadClient()) return
                         } else {
@@ -242,7 +242,7 @@ export default class Client {
             await helpers.deleteFile(this.clientDownloadLocation);
             log.info("Client", "Downloading client");
             const fileHash = await helpers.downloadFile(this.clientConfig.download.url, this.clientDownloadLocation);
-            if (fileHash != this.clientConfig.download.sha256) {
+            if (fileHash != this.clientConfig.download.sha256.toUpperCase()) {
                 log.info("Client", "Invalid SHA256");
                 this.setClientStatus(ClientStatus.INVALIDHASH);
                 return false;
@@ -532,7 +532,7 @@ export default class Client {
         try {
             await this.getClientBinaries(false);
             const localHash = await helpers.getFileHash(this.clientLocalLocation);
-            const hasUpdate = localHash !== this.clientConfig.download.sha256;
+            const hasUpdate = localHash !== this.clientConfig.download.sha256.toUpperCase();
             if (this.win) this.win.webContents.send('client-node', 'CHECKUPDATE', hasUpdate);
         } catch (ex) {
         }
