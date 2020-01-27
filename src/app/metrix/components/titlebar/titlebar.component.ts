@@ -213,18 +213,20 @@ export class TitlebarComponent {
         { name: 'Wallet Data', extensions: ['dat'] }
       ]
     }
-    this.electron.remote.dialog.showSaveDialog(options, async (filename, bookmark) => {
-      if (filename) {
-        this.notification.loading('NOTIFICATIONS.WALLETBACKINGUP');
-        try {
-          await this.wallet.backupWallet(filename);
-          this.notification.notify('success', 'NOTIFICATIONS.WALLETBACKEDUP');
-        } catch (ex) {
-          this.notification.dismissNotifications();
-          this.errorService.diagnose(ex);
-        }
+
+    let save: Electron.SaveDialogReturnValue = await this.electron.remote.dialog.showSaveDialog(options);
+
+    if (save.filePath) {
+      this.notification.loading('NOTIFICATIONS.WALLETBACKINGUP');
+      try {
+        await this.wallet.backupWallet(save.filePath);
+        this.notification.notify('success', 'NOTIFICATIONS.WALLETBACKEDUP');
+      } catch (ex) {
+        this.notification.dismissNotifications();
+        this.errorService.diagnose(ex);
       }
-    });
+    }
+
   }
 
   goToSignMessage() {
