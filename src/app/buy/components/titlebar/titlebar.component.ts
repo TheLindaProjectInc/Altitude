@@ -86,7 +86,7 @@ export class TitlebarComponent {
           { role: 'copy' },
           { role: 'paste' },
           { role: 'delete' },
-          { role: 'selectall' }
+          { role: 'selectAll' }
         ]
       })
       appMenu.insert(1, menuItem);
