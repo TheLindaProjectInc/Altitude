@@ -146,7 +146,10 @@
                 "BOOTSTRAPBUTTON": "bootstrap",
                 "BOOTSTRAPINFO": "Ladda ner Metrix blockchain-filer från metrixcoin.com och starta om installationen. Beroende på din nätverksanslutning kan det ta 10 minuter till ett par timmar",
                 "SYNCFROMSTARTBUTTON": "Resync blockhain",
-                "SYNCFROMSTARTINFO": "Radera dina lokala blockchain-filer och synkronisera från genesis-blocket."
+                "SYNCFROMSTARTINFO": "Radera dina lokala blockchain-filer och synkronisera från genesis-blocket.",
+                "RESTARTCOREINFO": "Starta om Metrix Core om den redan körs eller starta Metrix Core om den inte körs.",
+                "REINSTALLCOREBUTTON": "Installera om Metrix Core",
+                "REINSTALLCOREINFO": "Ta bort din lokala Metrix Core och installera om den från Metrix-servrar."
             }
         },
         "HELP": {
@@ -291,7 +294,9 @@
             "ADDREMOTEMNTXINDEX": "Masternode Trx-index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap misslyckades",
             "BOOTSTRAPFAILEDINFO": "Det gick inte att starta om Metrix Core. Det rekommenderas att du kontrollerar din Altitude-loggfil för problem.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Återställningsverktyg"
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Återställningsverktyg",
+            "STARTUPFAILEDTITLE": "Metrix Core-start misslyckades",
+            "STARTUPFAILEDINFO": "Det var en startande Metrix Core. Det rekommenderas att du kontrollerar din Altitude-loggfil för problem."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbok",

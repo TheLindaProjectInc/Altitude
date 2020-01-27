@@ -146,7 +146,10 @@
                 "BOOTSTRAPBUTTON": "bootstrap",
                 "BOOTSTRAPINFO": "Lataa Metrix-blockchain-tiedostot metrixcoin.com-sivustosta ja käynnistä asennus. Verkkoyhteydestään riippuen tämä voi viedä 10 minuutista pariin tuntiin",
                 "SYNCFROMSTARTBUTTON": "Resync blockhain",
-                "SYNCFROMSTARTINFO": "Poista paikalliset blockchain-tiedostot ja synkronoi uudelleen geneesilohkosta."
+                "SYNCFROMSTARTINFO": "Poista paikalliset blockchain-tiedostot ja synkronoi uudelleen geneesilohkosta.",
+                "RESTARTCOREINFO": "Käynnistä Metrix Core uudelleen, jos se on jo käynnissä, tai käynnistä Metrix Core, jos se ei ole käynnissä.",
+                "REINSTALLCOREBUTTON": "Asenna Metrix Core uudelleen",
+                "REINSTALLCOREINFO": "Poista paikallinen Metrix-ydin ja asenna se uudelleen Metrix-palvelimista."
             }
         },
         "HELP": {
@@ -291,7 +294,9 @@
             "ADDREMOTEMNTXINDEX": "Masternode Trx -indeksi",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap epäonnistui",
             "BOOTSTRAPFAILEDINFO": "Metrix-ytimen käynnistämisessä tapahtui ongelma. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut"
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut",
+            "STARTUPFAILEDTITLE": "Metrix-ytimen käynnistys epäonnistui",
+            "STARTUPFAILEDINFO": "Siellä oli alkava Metrix-ydin. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta."
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",

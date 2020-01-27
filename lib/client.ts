@@ -118,6 +118,9 @@ export default class Client {
                 case 'RESYNC':
                     this.resyncClient();
                     break;
+                case 'REINSTALL':
+                    this.reinstallClient();
+                    break;
 
             }
         });
@@ -253,6 +256,7 @@ export default class Client {
             }
             return true;
         } catch (ex) {
+            log.error("Client", "Download error", ex);
             this.setClientStatus(ClientStatus.DOWNLOADFAILED);
             return false;
         }
@@ -412,6 +416,15 @@ export default class Client {
         } catch (ex) {
             log.error("Client", "Bootstrap failed", ex);
             this.setClientStatus(ClientStatus.BOOTSTRAPFAILED);
+        }
+    }
+
+    async reinstallClient() {
+        log.info("Client", "Reinstall stopping client...");
+        await this.stop();
+        if (await this.downloadClient()) {
+            log.info("Client", "Reinstall starting client...");
+            this.startClient(true, true);
         }
     }
 

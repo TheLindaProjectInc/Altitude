@@ -50,6 +50,9 @@ export class RpcService {
                 this.stopClient();
             } else if (status === ClientStatus.BOOTSTRAPFAILED) {
                 this.notifyBootstrapFailed();
+            } else if (status === ClientStatus.INVALIDHASH || status === ClientStatus.DOWNLOADFAILED || status === ClientStatus.UNSUPPORTEDPLATFORM) {
+                this.stopClient();
+                this.notifyStartupFailed();
             }
         });
         // electron for RPC status
@@ -89,6 +92,11 @@ export class RpcService {
     public resyncClient() {
         this.stopClient();
         this.electron.ipcRenderer.send('client-node', 'RESYNC');
+    }
+
+    public reinstallClient() {
+        this.stopClient();
+        this.electron.ipcRenderer.send('client-node', 'REINSTALL');
     }
 
     public async requestData(method, params = []) {
@@ -588,6 +596,16 @@ export class RpcService {
     async notifyBootstrapFailed() {
         try {
             await this.prompt.alert('COMPONENTS.PROMPT.BOOTSTRAPFAILEDTITLE', 'COMPONENTS.PROMPT.BOOTSTRAPFAILEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            this.enterRecoveryMode();
+        } catch (ex) {
+            // chose to stop wallet
+            this.electron.remote.app.quit()
+        }
+    }
+
+    async notifyStartupFailed() {
+        try {
+            await this.prompt.alert('COMPONENTS.PROMPT.STARTUPFAILEDTITLE', 'COMPONENTS.PROMPT.STARTUPFAILEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
             this.enterRecoveryMode();
         } catch (ex) {
             // chose to stop wallet

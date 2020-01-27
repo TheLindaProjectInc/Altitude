@@ -160,4 +160,14 @@ export class ToolsComponent implements OnInit {
     this.rpc.resyncClient();
   }
 
+  restartCore() {
+    this.wallet.stopSyncService();
+    this.rpc.restartClient();
+  }
+
+  reinstallCore() {
+    this.wallet.stopSyncService();
+    this.rpc.reinstallClient();
+  }
+
 }

@@ -160,7 +160,10 @@
                 "BOOTSTRAPBUTTON": "Bootstrap",
                 "BOOTSTRAPINFO": "Downloading Metrix blockchain files from metrixcoin.com and bootstrap your installation. Depending on your network connection this can take 10 minutes to a couple of hours",
                 "SYNCFROMSTARTBUTTON": "Resync blockhain",
-                "SYNCFROMSTARTINFO": "Delete your local blockchain files and resync from the genesis block."
+                "SYNCFROMSTARTINFO": "Delete your local blockchain files and resync from the genesis block.",
+                "RESTARTCOREINFO": "Restart Metrix Core if it's already running or start Metrix Core if it isn't running.",
+                "REINSTALLCOREBUTTON": "Reinstall Metrix Core",
+                "REINSTALLCOREINFO": "Delete your local Metrix Core and reinstall it from Metrix servers."
             }
         },
         "HELP": {
@@ -283,6 +286,8 @@
             "CLIENTCLOSEDUNEXPECTEDINFO": "There was a problem with Metrix Core that has caused it to terminate. It is recommend to check your debug.log file for issues.",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Failed",
             "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommend to check your Altitude log file for issues.",
+            "STARTUPFAILEDTITLE": "Metrix Core Startup Failed",
+            "STARTUPFAILEDINFO": "There was a starting Metrix Core. It is recommend to check your Altitude log file for issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Recovery Tools",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Your metrix.conf has an invalid masternode setup which will cause Metrix Core to exit immediately. Please check this file.",

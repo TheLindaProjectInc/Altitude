@@ -146,7 +146,10 @@
                 "BOOTSTRAPBUTTON": "bootstrap",
                 "BOOTSTRAPINFO": "Töltse le a Metrix blockchain fájlokat a metrixcoin.com webhelyről, és indítsa el a telepítést. A hálózati kapcsolattól függően ez 10 perctől pár óráig tarthat",
                 "SYNCFROMSTARTBUTTON": "Resync blockhain",
-                "SYNCFROMSTARTINFO": "Törölje a helyi blokklánc-fájlokat, és szinkronizálja újra a létrehozási blokkból."
+                "SYNCFROMSTARTINFO": "Törölje a helyi blokklánc-fájlokat, és szinkronizálja újra a létrehozási blokkból.",
+                "RESTARTCOREINFO": "Indítsa újra a Metrix Core-t, ha már fut, vagy indítsa el a Metrix Core-t, ha nem fut.",
+                "REINSTALLCOREBUTTON": "Telepítse újra a Metrix Core-t",
+                "REINSTALLCOREINFO": "Törölje a helyi Metrix Core-t, és telepítse újra a Metrix-kiszolgálókról."
             }
         },
         "HELP": {
@@ -291,7 +294,9 @@
             "ADDREMOTEMNTXINDEX": "Masternode Trx index",
             "BOOTSTRAPFAILEDTITLE": "Nem sikerült a Metrix Core Bootstrap",
             "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájl hibáit.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállítási eszközök"
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállítási eszközök",
+            "STARTUPFAILEDTITLE": "A Metrix Core indítása sikertelen",
+            "STARTUPFAILEDINFO": "Volt egy kezdő Metrix-mag. Javasoljuk, hogy ellenőrizze a magassági naplófájl hibáit."
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
