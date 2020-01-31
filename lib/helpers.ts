@@ -44,6 +44,12 @@ export async function renameFile(original: string, rename: string) {
     });
 }
 
+export async function ensureDirectoryExists(dir: string) {
+    if (!await pathExists(dir))
+        await makeFolder(dir);
+}
+
+
 export async function deleteFile(file: string) {
     return new Promise((resolve, reject) => {
         pathExists(file).then((exits) => {
@@ -78,10 +84,8 @@ export async function downloadFile(url, dest) {
         https.get(url, response => {
             if (response.statusCode >= 200 && response.statusCode < 300) {
                 var fileStream = fs.createWriteStream(dest);
-                fileStream.on('error', err =>
-                    reject(err));
-                fileStream.on('close', () =>
-                    resolve(getFileHash(dest)));
+                fileStream.on('error', err => reject(err));
+                fileStream.on('close', () => resolve(getFileHash(dest)));
                 response.pipe(fileStream);
             } else if (response.headers.location) {
                 const location = response.headers.location

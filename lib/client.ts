@@ -158,10 +158,6 @@ export default class Client {
             // if we don't already have a local client download it
             log.info("Client", "Check client exists", this.clientLocalLocation);
             if (!await helpers.pathExists(this.clientLocalLocation)) {
-                // check if we need to make the directory
-                if (!await helpers.pathExists(this.clientsLocation))
-                    await helpers.makeFolder(this.clientsLocation);
-
                 if (!await this.downloadClient()) return
             } else {
                 // if we have a client check for an update
@@ -241,10 +237,14 @@ export default class Client {
     async downloadClient() {
         try {
             this.setClientStatus(ClientStatus.DOWNLOADCLIENT);
+            // check if we need to make the directories
+            await helpers.ensureDirectoryExists(this.clientsLocation);
             log.info("Client", "Deleting old client");
             await helpers.deleteFile(this.clientDownloadLocation);
-            log.info("Client", "Downloading client");
+            await helpers.deleteFile(this.clientLocalLocation);
+            log.info("Client", "Downloading client", this.clientConfig.download.url);
             const fileHash = await helpers.downloadFile(this.clientConfig.download.url, this.clientDownloadLocation);
+            log.info("Client", "Downloaded client hash", fileHash);
             if (fileHash != this.clientConfig.download.sha256.toUpperCase()) {
                 log.info("Client", "Invalid SHA256");
                 this.setClientStatus(ClientStatus.INVALIDHASH);
@@ -422,6 +422,8 @@ export default class Client {
     async reinstallClient() {
         log.info("Client", "Reinstall stopping client...");
         await this.stop();
+        log.info("Client", "Reinstall get client binaries...");
+        await this.getClientBinaries(false);
         if (await this.downloadClient()) {
             log.info("Client", "Reinstall starting client...");
             this.startClient(true, true);
