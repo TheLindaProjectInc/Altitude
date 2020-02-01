@@ -340,7 +340,13 @@ export class TitlebarComponent {
   }
 
   openIssues() {
-    this.electron.shell.openExternal('https://github.com/TheLindaProjectInc/Altitude/issues');
+    let data = {
+      core: this.wallet.walletStatus.version,
+      connections: this.wallet.walletStatus.connections,
+      blocks: this.wallet.blockchainStatus.latestBlockHeight
+    }
+    this.notification.notify('default', 'NOTIFICATIONS.REPORTINGISSUE');
+    this.electron.ipcRenderer.send('client-node', 'REPORTISSUE', data);
   }
 
   checkUpdateCore() {

@@ -1,5 +1,5 @@
 
-import { app, ipcMain } from 'electron';
+import { app, ipcMain, shell, clipboard } from 'electron';
 import * as os from 'os';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -120,6 +120,9 @@ export default class Client {
                     break;
                 case 'REINSTALL':
                     this.reinstallClient();
+                    break;
+                case 'REPORTISSUE':
+                    this.reportIssue(data);
                     break;
 
             }
@@ -587,6 +590,55 @@ export default class Client {
         }
         let writeResult = await this.writeClientConfig();
         if (this.win) this.win.webContents.send('client-node', 'MASTERNODE', writeResult);
+    }
+
+    async reportIssue(data) {
+        let logLink = '';
+        try {
+            let mainLogLocation = path.join(app.getPath('userData'), 'logs', 'main.log');
+            let rendererLogLocation = path.join(app.getPath('userData'), 'logs', 'renderer.log');
+            let logData = '';
+            // read in main log
+            if (await helpers.pathExists(mainLogLocation)) {
+                logData += "----- MAIN -----\n\n" + await helpers.readFile(mainLogLocation)
+            }
+            // read in main log
+            if (await helpers.pathExists(rendererLogLocation)) {
+                logData += "----- RENDERER -----\n\n" + await helpers.readFile(rendererLogLocation)
+            }
+            // upload log
+            const options = {
+                method: 'POST',
+                url: `https://file.io/`,
+                form: { text: logData }
+            };
+
+            logLink = await new Promise((resolve, reject) => {
+                request(options, (error, response, body) => {
+                    if (error) {
+                        reject(error)
+                    } else {
+                        let json = JSON.parse(body)
+                        if (json.success) resolve(json.link)
+                        else reject(json)
+                    }
+                });
+            })
+        } catch (ex) {
+            logLink = ex;
+            log.error("Client", "Report issue failed", ex);
+        }
+
+        const baseUrl = 'https://github.com/TheLindaProjectInc/Altitude/issues/new?body=';
+        let body = 'Description of issue: Please describe the issue with as much information as possible\n\n' +
+            'Machine: ' + os.arch() + ' ' + os.platform() + '\n' +
+            'Altitude: ' + app.getVersion() + '\n' +
+            'Metrix Core: ' + data.core + '\n' +
+            'Connections: ' + data.connections + '\n' +
+            'Blocks: ' + data.blocks + '\n' +
+            'Log: ' + logLink
+        clipboard.writeText(body);
+        shell.openExternal(baseUrl + encodeURI(body))
     }
 
     destroy() {
