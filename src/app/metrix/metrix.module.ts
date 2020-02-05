@@ -34,6 +34,7 @@ import { MasterComponent } from './pages/master/master.component';
 // services
 import { RpcService } from './providers/rpc.service';
 import { WalletService } from './providers/wallet.service';
+import { MainChainService } from './providers/mainchain.service';
 
 const routes: Routes = [
     { path: '', component: DashboardComponent },
@@ -56,6 +57,7 @@ export const route = { path: 'metrix', component: MasterComponent, children: rou
 export const providers = [
     RpcService,
     WalletService,
+    MainChainService,
     PromptService,
     AddressBookService,
 ]
