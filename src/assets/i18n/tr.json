@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Karma kanıt",
             "TABLE_SIGNATURE": "İmza",
             "TABLE_DIFFICULTY": "zorluk",
-            "TABLE_ENTROPYBIT": "Entropi Bit",
             "TABLE_BLOCKHASH": "Karma Blok",
             "TABLE_CONFIRMATIONS": "Onaylar",
             "TABLE_INPUTOUTPUT": "Girdiler ve çıktılar",
@@ -251,7 +250,6 @@
                 "LOCKED": "Cüzdan kilitlendi",
                 "UNLOCKED": "Cüzdanın kilidi açıldı",
                 "UNLOCKEDSTAKING": "Yalnızca kilitleme için cüzdan kilidi açıldı",
-                "UNLOCKEDANON": "Cüzdan yalnızca anonimleştirme için kilitlendi",
                 "STAKING": "Cüzdan şu anda lekeleniyor",
                 "NOTSTAKING": "Cüzdan şu an dolmuyor",
                 "MASTERNODEON": "Masternode şu anda çalışıyor",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Cüzdan Şifreli",
             "ENCRYPTEDCONTENT": "M-cüzdan dosyanızda yaptığınız önceki yedekler yeni oluşturulan, şifrelenmiş cüzdan dosyası ile değiştirilmelidir. Güvenlik nedenleriyle, şifrelenmemiş cüzdan dosyasının önceki yedeklemeleri, yeni, şifrelenmiş cüzdanı kullanmaya başladığınız anda işe yaramaz.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core beklenmedik bir şekilde durdu",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core’un sonlandırmasına neden olan bir problem vardı. Hatalar için debug.log dosyanızı kontrol etmeniz önerilir.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ile sonlanmasına neden olan bir sorun vardı. Sorunlar için debug.log dosyanızı kontrol etmeniz önerilir.",
             "CLIENTINVALIDCONFIGTITLE": "Geçersiz metrix.conf Yapılandırması",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf dosyanızda Metrix Core'un hemen çıkmasına neden olacak geçersiz bir masternode kurulumu var. Lütfen bu dosyayı kontrol edin.",
             "ADDREMOTEMNTITLE": "Uzak Ana Mod Ekle",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Ana Mod Trx Dizini",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Başarısız",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core'u önyüklerken bir sorun oluştu. Rakım günlük dosyanızı sorunlar için kontrol etmeniz önerilir.",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core önyükleme sırasında bir sorun oluştu. Rakım günlük dosyanızı sorunlar için kontrol etmeniz önerilir.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kurtarma Araçları",
             "STARTUPFAILEDTITLE": "Metrix Core Başlangıç Başarısız",
-            "STARTUPFAILEDINFO": "Başlangıçta bir Metrix Core vardı. Rakım günlük dosyanızı sorunlar için kontrol etmeniz önerilir."
+            "STARTUPFAILEDINFO": "Başlangıçta bir Metrix Core vardı. Rakım günlük dosyanızı sorunlar için kontrol etmeniz önerilir.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core İletişim Hatası",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core ile iletişimde bir sorun oluştu. Sorunlar için debug.log dosyanızı kontrol etmeniz önerilir."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres defteri",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "İşlem hatası Lütfen tekrar deneyin.",
         "MINIMUMCONFIRMATIONS": "Tüm girişler, harcamadan önce en az 1 onay gerektirir.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "İşlemler panoya kopyalandı",
-        "TRANSACTIONOUTPUTTOOLARGE": "Tutarlara yaptığınız ödemelerden biri güvenle gönderilemeyecek kadar büyük. Maksimum 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Değişikliğiniz güvenle gönderilemeyecek kadar büyük. Maksimum 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Ana mod durduruluyor...",
         "FAILEDTOWRITECONFIG": "Metrix.conf dosyasına yazarken bir sorun oluştu. Dosyanın var olduğunu ve İrtifa'nın yazma izinleri olduğunu kontrol edin.",
         "NOPUBLICUP": "Genel IP adresi bulunamadı. İnternet bağlantınızı kontrol edin ve İrtifa'yı yeniden başlatın.",
@@ -446,29 +444,65 @@
         "NOV": "Kasım",
         "DEC": "Aralık"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Siz gönderin",
-                "YOUGET": "Sen almak",
-                "MRXADDRESS": "Metrik Adres",
-                "SWAP": "takas",
-                "SWAPADDRESSES": "Adresleri Değiştir",
-                "BTCADDRESS": "BTC Adresi",
-                "INFOLINE1": "Bir BTC depozito adresiniz olduğunda, bu adrese gönderilen herhangi bir BTC otomatik olarak MRX adresinize atanmış MRX adresinize geçecektir.",
-                "INFOLINE2-1": "İşlemler genellikle Bitcoin blok zamanlarına bağlı olarak bir saat içinde silinir. İçin fiat kabul edebiliriz",
-                "INFOLINE2-2": "katılan ülkeler",
-                "INFOLINE2-3": "Bu, önce MRC'ye, sonra BTC'ye dönüştürülecektir.",
-                "INFOLINE3": "BTC para yatırma işleminiz tamamlandıktan sonra MRX’inizi belirtilen adrese alacaksınız.",
-                "INFOLINE4": "Daha fazla bilgi için ziyaret",
-                "FIATSWAPSELECTED": "Bu işlemi tamamlamak için Buy.Metrixcoin.com adresine yönlendirileceksiniz."
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Vali değilsin",
+                "NOTGOVERNORDETAIL": "Valiler aylık bütçeler ve blockchain değişikliklerine oy vermekle yükümlüdür. Yönetişim sözleşmesinde doğru teminatı kilitleyerek Vali olabilirsiniz.",
+                "COLLATERAL": "Gerekli teminat",
+                "ENROLL": "Kaydetme",
+                "CONFIRMENROLL": "Vali olarak kaydolmak üzeresiniz. Bu, gerekli teminatı içeren bir işlemi yönetim sözleşmesine gönderecektir. Kaydı istediğiniz zaman kaldırabilirsiniz.",
+                "ISGOVERNORTITLE": "Sen aktif bir valisin!",
+                "ISGOVERNORDETAIL1": "Valiler aylık bütçeler ve blockchain değişikliklerine oy vermekle yükümlüdür.",
+                "ISGOVERNORDETAIL2": "Bir Vali olarak kalmak için her 30 günde bir en az 1 oy almanız gerekir.",
+                "ISGOVERNORDETAIL3": "Oylanacak bir şey yoksa, etkin bir ping göndererek kaydınıza manuel olarak devam edebilirsiniz.",
+                "UNENROLL": "Unenroll",
+                "PING": "Aktif Ping Gönder"
+            },
+            "BUDGET": {
+                "TITLE": "Bütçe Teklifleri",
+                "ADDPROPOSAL": "Teklif Oluştur",
+                "REQUESTEDPERMONTH": "her ay",
+                "REQUESTEDREMAINING": "kalan",
+                "VOTEYES": "Oy Evet",
+                "VOTEABSTAIN": "Çekimser Ol",
+                "VOTENO": "Oy yok",
+                "VOTESTOPASS": "geçecek oylar",
+                "VOTEPASSING": "oy kullanmak"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Teklif Oluşturma",
+                "DESCRIPTION": "Aşağıda bir bütçe teklifi oluşturabilir ve bir sonraki bütçe uzlaştırma bloğundan önce oy vermek üzere ağa gönderebilirsiniz.",
+                "BUDGETFEE": "Mevcut bütçe ücreti",
+                "BUDGETBLOCK": "Bir sonraki yerleşim bloğu",
+                "PROPOSALTITLE": "Teklif Adı",
+                "PROPOSALDESC": "Teklif Tanımı",
+                "PROPOSALURL": "Teklif URL'si",
+                "PROPOSALAMOUNT": "Talep edilen miktar",
+                "PROPOSALDURATION": "Talep Edilen Ödemeler",
+                "PROPOSALADDRESS": "fatura adresi",
+                "PROPOSALCREATE": "Teklif Oluştur"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Yönetim",
+                "BUDGET": "Bütçe"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Swap Adresi üretiliyor...",
-            "ALREADYHAVEADDRESS": "Bu Metrix adresiyle ilişkilendirilmiş bir BTC adresiniz zaten var.",
-            "SWAPUSDMIN": "Minimum USD takas tutarı 50 ABD Dolarıdır",
-            "SWAPUSDMAX": "Maksimum USD swap miktarı 3000 $ 'dır.",
+            "GETTINGSWAPADDRESS": "Takas Adresi oluşturuluyor...",
+            "ALREADYHAVEADDRESS": "Bu Metrix adresiyle ilişkilendirilmiş bir BTC adresiniz zaten var",
+            "SWAPUSDMIN": "Minimum USD takas tutarı 50 ABD dolarıdır",
+            "SWAPUSDMAX": "Maksimum USD takas tutarı 3000 $",
+            "INCOMPLETEFORM": "Gerekli tüm alanları doğru doldurmadınız",
+            "INVALIDPROPOSALDURATION": "Teklif süreleri 1 ila 12 ay arasında olmalıdır",
+            "CREATINGPROPOSAL": "Teklif ağa gönderiliyor...",
+            "CREATEDPROPOSAL": "Teklifiniz başarıyla oluşturuldu",
+            "ENROLLINGGOVERNOR": "Vali olarak kayıt yaptırmak...",
+            "ENROLLEDGOVERNOR": "İşleminiz onaylandıktan sonra kaydınız tamamlanacaktır",
+            "VOTINGONPROPOSAL": "Teklif oyu gönderme",
+            "VOTEDONPROPOSAL": "İşlem onaylandıktan sonra oyunuz sayılır.",
             "NOADDRESS": "Bir Metrix adresi girmediniz"
         }
     }

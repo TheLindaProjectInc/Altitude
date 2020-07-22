@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Sinadura",
             "TABLE_DIFFICULTY": "zailtasun",
-            "TABLE_ENTROPYBIT": "Entropia Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "confirmations",
             "TABLE_INPUTOUTPUT": "Sarrera eta irteerak",
@@ -251,7 +250,6 @@
                 "LOCKED": "Kartoi blokeatua",
                 "UNLOCKED": "Karrerako desblokeatua",
                 "UNLOCKEDSTAKING": "Wallet bakarra desblokeatu da",
-                "UNLOCKEDANON": "Karrerako desblokeatua soilik anonimizatzeko",
                 "STAKING": "Gaur egun, zorroa dago",
                 "NOTSTAKING": "Une honetan ez da kartoia eskeintzen",
                 "MASTERNODEON": "Gaur egun, Masternode exekutatzen ari da",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Txartel enkriptatua",
             "ENCRYPTEDCONTENT": "Zure zorroaren fitxategian egindako aurreko babeskopiak berriki sortutako zifratutako zorro fitxategiarekin ordeztu behar dira. Segurtasun arrazoiengatik, aurrez kargatu gabeko zorroaren fitxategien babeskopiak ez dira erabilgarri izango zorro zifratua berria erabiltzen hasten zarenean.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ustekabean gelditu zen",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Arazo bat izan da Metrix Core-ekin amaitzeko. Gomendagarria da zure debug.log fitxategiaren egiaztatzea gaietarako.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-rekin arazo bat egon da, eta hori amaitu da. Gomendagarria da zure debug.log fitxategia egiaztatzea arazoetarako.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfigurazioa baliogabea da",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf-ek konfigurazio okerra du, Metrix Core-ek berehala irteteko. Egiaztatu fitxategi hau.",
             "ADDREMOTEMNTITLE": "Gehitu urruneko masternodoa",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ek huts egin du",
-            "BOOTSTRAPFAILEDINFO": "Arazo bat izan da Metrix Core abiaraztean. Gomendagarria da zure Altitude log fitxategia egiaztatzea.",
+            "BOOTSTRAPFAILEDINFO": "Arazo bat izan da Metrix Core abiaraztean. Gomendagarria da zure Altitude egunkariaren fitxategia egiaztatzea.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Berreskuratzeko tresnak",
             "STARTUPFAILEDTITLE": "Metrix Core abiaraztea huts egin du",
-            "STARTUPFAILEDINFO": "Metrix Core abiapuntua zegoen. Gomendagarria da zure Altitude log fitxategia egiaztatzea."
+            "STARTUPFAILEDINFO": "Metrix Core abiapuntua zegoen. Gomendagarria da zure Altitude egunkariaren fitxategia egiaztatzea.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Komunikazio Errorea",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core-rekin komunikatzeko arazo bat egon da. Gomendagarria da zure debug.log fitxategia egiaztatzea arazoetarako."
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide liburu",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transakzio errorea. Saiatu berriro mesedez.",
         "MINIMUMCONFIRMATIONS": "Sarrera guztiak gutxienez 1 berrespena behar dira gastua baino lehen.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Arbelean kopiatutako transakzioak",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ordaindu beharreko zenbatekoetako bat handiegia da segurtasunez bidaltzeko. Gehienez 90.071.992.54740992 da.",
-        "TRANSACTIONCHANGETOOLARGE": "Zure aldaketa handiegia da modu seguruan bidaltzeko. Gehienez 90.071.992.54740992 da.",
         "STOPPINGMASTERNODE": "Masternode gelditu...",
         "FAILEDTOWRITECONFIG": "Arazo bat gertatu da zure metrix.conf fitxategian idaztean. Egiaztatu fitxategia existitzen dela eta Altitudea idazteko baimenak ditu.",
         "NOPUBLICUP": "Ez da IP helbide publikorik aurkitu. Begiratu zure Interneteko konexioa eta abiarazi Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Bidaltzen duzu",
-                "YOUGET": "Lortzen duzu",
-                "MRXADDRESS": "Metrix Helbidea",
-                "SWAP": "swap",
-                "SWAPADDRESSES": "Swap helbideak",
-                "BTCADDRESS": "BTC helbidea",
-                "INFOLINE1": "BTC gordailuaren helbidea duzunean, helbide horretara bidalitako BTC edozein gauza automatikoki aldatuko da MRX-ri zure nominatutako MRX helbidera.",
-                "INFOLINE2-1": "Transakzioak normalean ordubete barru argitzen dira Bitcoin blokeen denboraren arabera. Fiat onartzen dugu",
-                "INFOLINE2-2": "parte hartzen duten herrialdeak",
-                "INFOLINE2-3": "Hau BTC bihurtuko da lehenengo eta MRX.",
-                "INFOLINE3": "Zure BTC gordailua garbitu ondoren, zure MRX zure izendatutako helbidera jasoko duzu.",
-                "INFOLINE4": "Informazio gehiago nahi izanez gero, bisitatu",
-                "FIATSWAPSELECTED": "Erosketa hau burutzeko Buy.Metrixcoin.com gunera itzuliko zara"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ez zara gobernadorea",
+                "NOTGOVERNORDETAIL": "Gobernadoreei dagokie hileko aurrekontuak eta blockchain aldaketak bozkatzeaz. Gobernadore bihur zaitezke Gobernantza kontratuan berme zuzenak blokeatuz.",
+                "COLLATERAL": "Beharrezko bermeak",
+                "ENROLL": "Inskribatu",
+                "CONFIRMENROLL": "Gobernadore gisa izena emateko zorian zaude. Horrek beharrezko bermeekin eragiketa bat bidaliko dio gobernu kontratura. Edozein momentutan matrikula dezakezu.",
+                "ISGOVERNORTITLE": "Gobernadore aktiboa zara!",
+                "ISGOVERNORDETAIL1": "Gobernadoreei dagokie hileko aurrekontuak eta blockchain aldaketak bozkatzeaz.",
+                "ISGOVERNORDETAIL2": "Gobernadore izateko, gutxienez bozketan 1 egunean parte hartu beharko duzu 30 egunean behin.",
+                "ISGOVERNORDETAIL3": "Botoa emateko ezer ez badago, eskuliburua jarraitu dezakezu ping aktiboa bidaliz.",
+                "UNENROLL": "Desinskribatu",
+                "PING": "Bidali aktiboko Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Aurrekontu Proposamenak",
+                "ADDPROPOSAL": "Sortu Proposamena",
+                "REQUESTEDPERMONTH": "hilean",
+                "REQUESTEDREMAINING": "gainerako",
+                "VOTEYES": "Bozkatu Bai",
+                "VOTEABSTAIN": "Bozkatu Abstain",
+                "VOTENO": "Bozkatu Ez",
+                "VOTESTOPASS": "botoak gainditzeko",
+                "VOTEPASSING": "botoak gaindituz"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Sortu Proposamena",
+                "DESCRIPTION": "Jarraian, aurrekontu proposamena sor dezakezu eta sarera bidali bozkatzeko, hurrengo aurrekontuaren likidazio blokea baino lehen.",
+                "BUDGETFEE": "Egungo aurrekontu kuota da",
+                "BUDGETBLOCK": "Hurrengo likidazio blokea da",
+                "PROPOSALTITLE": "Proposamenaren izena",
+                "PROPOSALDESC": "Proposamenaren deskribapena",
+                "PROPOSALURL": "Proposamenaren URLa",
+                "PROPOSALAMOUNT": "Eskatutako zenbatekoa",
+                "PROPOSALDURATION": "Eskatutako ordainketak",
+                "PROPOSALADDRESS": "Ordainketa helbidea",
+                "PROPOSALCREATE": "Sortu Proposamena"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Gobernantza",
+                "BUDGET": "Aurrekontua"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Metrix helbide honi lotuta dagoeneko BTC helbidea duzu",
             "SWAPUSDMIN": "USD swap gutxieneko zenbatekoa 50 $ da",
             "SWAPUSDMAX": "USDko swap gehieneko zenbatekoa 3000 $ da",
+            "INCOMPLETEFORM": "Ez dituzu beharrezko eremu guztiak behar bezala bete",
+            "INVALIDPROPOSALDURATION": "Proposamenen iraupena 1 eta 12 hilabete bitartekoa izan behar da",
+            "CREATINGPROPOSAL": "Proposamena sarean bidaltzea...",
+            "CREATEDPROPOSAL": "Zure proposamena ondo sortu da",
+            "ENROLLINGGOVERNOR": "Gobernadore gisa izena emanda...",
+            "ENROLLEDGOVERNOR": "Zure matrikula amaitu egingo da zure transakzioa baieztatuta",
+            "VOTINGONPROPOSAL": "Proposamenari botoa bidaltzen",
+            "VOTEDONPROPOSAL": "Zure botoa transakzioa baieztatu ondoren zenbatuko da.",
             "NOADDRESS": "Ez duzu Metrix helbide bat idatzi"
         }
     }

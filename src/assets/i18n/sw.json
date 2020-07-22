@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash ushahidi",
             "TABLE_SIGNATURE": "Sahihi",
             "TABLE_DIFFICULTY": "Ugumu",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Zima Hash",
             "TABLE_CONFIRMATIONS": "Uthibitisho",
             "TABLE_INPUTOUTPUT": "Pembejeo na Matokeo",
@@ -251,7 +250,6 @@
                 "LOCKED": "Mkoba umefungwa",
                 "UNLOCKED": "Mkoba umefunuliwa",
                 "UNLOCKEDSTAKING": "Mkoba ulifunguliwa kwa kuunganisha tu",
-                "UNLOCKEDANON": "Mkoba ulifunguliwa kwa uonyesho tu",
                 "STAKING": "Mkoba kwa sasa hupiga",
                 "NOTSTAKING": "Mkoba si sasa unaojenga",
                 "MASTERNODEON": "Masternode sasa inaendesha",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Mkoba umefunikwa",
             "ENCRYPTEDCONTENT": "Vidokezo vyovyote vilivyotengenezwa kwenye faili yako ya mkoba lazima zibadilishwe na faili iliyotengenezwa iliyochapishwa, iliyochapishwa. Kwa sababu za kiusalama, salama zilizopita za faili ya mkoba isiyojulikana haitakuwa na maana mara tu unapoanza kutumia mkoba mpya, uliofichwa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Chumba cha Metrix kiliacha bila kutarajia",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Metrix Core ambayo imesababisha kukomesha. Inapendekeza kuangalia faili yako ya debug.log kwa masuala.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na shida na Metrix Core ambayo imesababisha kumaliza. Inashauriwa kuangalia faili yako ya debug.log kwa maswala.",
             "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf isiyo sahihi",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf yako ina mpangilio usio sahihi wa masternode ambayo itasababisha Metrix Core kuondoka mara moja. Tafadhali angalia faili hii.",
             "ADDREMOTEMNTITLE": "Ongeza Masternode ya mbali",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Imeshindwa",
-            "BOOTSTRAPFAILEDINFO": "Kulikuwa na shida ya kutengeneza Metrix Core. Inapendekezwa kuangalia faili yako ya logi ya Altitude kwa maswala.",
+            "BOOTSTRAPFAILEDINFO": "Kulikuwa na shida ya kutengeneza Metrix Core. Inashauriwa kuangalia faili yako ya logi ya urefu kwa maswala.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Vyombo vya kupona",
             "STARTUPFAILEDTITLE": "Kuanza kwa Metrix Imeshindwa",
-            "STARTUPFAILEDINFO": "Kulikuwa na kuanzia Metrix Core. Inapendekezwa kuangalia faili ya logi ya Altitude kwa maswala."
+            "STARTUPFAILEDINFO": "Kulikuwa na kuanzia Metrix Core. Inashauriwa kuangalia faili yako ya logi ya urefu kwa maswala.",
+            "CLIENTUNKNOWNERRORTITLE": "Kosa la Mawasiliano ya Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Kulikuwa na shida ya kuwasiliana na Metrix Core. Inashauriwa kuangalia faili yako ya debug.log kwa maswala."
         },
         "ADDRESSBOOK": {
             "TITLE": "Kitabu cha anwani",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Hitilafu ya ushirikiano. Tafadhali jaribu tena.",
         "MINIMUMCONFIRMATIONS": "Pembejeo zote zinahitaji uthibitisho angalau 1 kabla ya kutumia.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Shughuli zilizokopiwa kwenye ubaoboaji",
-        "TRANSACTIONOUTPUTTOOLARGE": "Moja ya kulipa kwako kwa kiasi ni kubwa sana kutuma salama. Upeo ni 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mabadiliko yako ni makubwa sana kutuma kwa salama. Upeo ni 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Inasimamisha masternode...",
         "FAILEDTOWRITECONFIG": "Kulikuwa na shida kuandika kwa faili yako ya metrix.conf. Angalia faili iko na kwamba Urefu una idhini ya kuandika.",
         "NOPUBLICUP": "Hakuna anwani ya IP ya Umma iliyopatikana. Angalia muunganisho wako wa mtandao na uanze tena Urefu.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Unatuma",
-                "YOUGET": "Umepata",
-                "MRXADDRESS": "Anwani ya Metrix",
-                "SWAP": "Badilika",
-                "SWAPADDRESSES": "Badili Anwani",
-                "BTCADDRESS": "Anwani ya BTC",
-                "INFOLINE1": "Mara tu ukiwa na anwani ya amana ya BTC BTC yoyote iliyotumwa kwa anwani hiyo itabadilishwa moja kwa moja kwa MRX katika anwani yako ya MRX iliyoteuliwa.",
-                "INFOLINE2-1": "Usafirishaji kawaida wazi ndani ya saa kulingana na nyakati za block ya Bitcoin. Tunaweza kukubali fiat kwa",
-                "INFOLINE2-2": "nchi zinazoshiriki",
-                "INFOLINE2-3": "Hii itabadilishwa kuwa BTC kwanza kisha MRX.",
-                "INFOLINE3": "Mara tu amana yako ya BTC ikiwa imeweka wazi utapokea MRX yako katika anwani yako iliyoteuliwa.",
-                "INFOLINE4": "Kwa habari zaidi tembelea",
-                "FIATSWAPSELECTED": "Utaelekezwa kwa Buy.Metrixcoin.com kukamilisha ununuzi huu"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Wewe si Gavana",
+                "NOTGOVERNORDETAIL": "Magavana huwajibika kupiga kura kwenye bajeti za kila mwezi na mabadiliko ya blockchain. Unaweza kuwa Gavana kwa kufunga dhamana sahihi katika mkataba wa Utawala.",
+                "COLLATERAL": "Dhamana inayohitajika",
+                "ENROLL": "Jiandikishe",
+                "CONFIRMENROLL": "Uko karibu kujiandikisha kama Gavana. Hii itatuma shughuli na dhamana inayohitajika kwa mkataba wa utawala. Unaweza kujiandikisha wakati wowote.",
+                "ISGOVERNORTITLE": "Wewe ni Gavana anayefanya kazi!",
+                "ISGOVERNORDETAIL1": "Magavana huwajibika kupiga kura kwenye bajeti za kila mwezi na mabadiliko ya blockchain.",
+                "ISGOVERNORDETAIL2": "Ili kukaa Gavana utahitaji kushiriki katika angalau kura 1 kila baada ya siku 30.",
+                "ISGOVERNORDETAIL3": "Ikiwa hakuna kitu cha kupiga kura unaweza kuendelea kwa uandikishaji wako kwa kutuma ping hai.",
+                "UNENROLL": "Kujisajili",
+                "PING": "Tuma Ping Inayotumika"
+            },
+            "BUDGET": {
+                "TITLE": "Mapendekezo ya Bajeti",
+                "ADDPROPOSAL": "Unda Pendekezo",
+                "REQUESTEDPERMONTH": "kwa mwezi",
+                "REQUESTEDREMAINING": "iliyobaki",
+                "VOTEYES": "Piga Ndio",
+                "VOTEABSTAIN": "Piga Kondoa",
+                "VOTENO": "Kura Hapana",
+                "VOTESTOPASS": "kura kupita",
+                "VOTEPASSING": "kura zinazopita"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Unda Pendekezo",
+                "DESCRIPTION": "Hapo chini unaweza kuunda pendekezo la bajeti na kuipeleka kwa mtandao kwa kupiga kura kabla ya kizuizi cha bajeti ijayo.",
+                "BUDGETFEE": "Ada ya sasa ya bajeti ni",
+                "BUDGETBLOCK": "Kizuizi kinachofuata cha makazi ni",
+                "PROPOSALTITLE": "Jina la Pendekezo",
+                "PROPOSALDESC": "Maelezo ya Pendekezo",
+                "PROPOSALURL": "URL ya Pendekezo",
+                "PROPOSALAMOUNT": "Kiasi kilichoombwa",
+                "PROPOSALDURATION": "Malipo Iliyoulizwa",
+                "PROPOSALADDRESS": "Anwani ya Malipo",
+                "PROPOSALCREATE": "Unda Pendekezo"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Utawala",
+                "BUDGET": "Bajeti"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Inaleta Anwani ya Kubadilisha...",
-            "ALREADYHAVEADDRESS": "Tayari unayo anwani ya BTC inayohusishwa na anwani hii ya Metrix",
+            "ALREADYHAVEADDRESS": "Tayari unayo anwani ya BTC inayohusiana na anwani hii ya Metrix",
             "SWAPUSDMIN": "Kiwango cha chini cha ubadilishaji wa dola ni $ 50",
             "SWAPUSDMAX": "Kiwango cha juu cha ubadilishaji wa dola ni $ 3000",
+            "INCOMPLETEFORM": "Haujajaza katika huduma zote zinazohitajika kwa usahihi",
+            "INVALIDPROPOSALDURATION": "Utaratibu wa pendekezo unapaswa kuwa kati ya miezi 1 na 12",
+            "CREATINGPROPOSAL": "Inawasilisha pendekezo kwa mtandao...",
+            "CREATEDPROPOSAL": "Pendekezo lako limeundwa kwa mafanikio",
+            "ENROLLINGGOVERNOR": "Kujiandikisha kama Gavana...",
+            "ENROLLEDGOVERNOR": "Uandikishaji wako utakamilika mara ununuzi wako utakapothibitishwa",
+            "VOTINGONPROPOSAL": "Inatuma kura ya pendekezo",
+            "VOTEDONPROPOSAL": "Kura yako itahesabiwa mara ununuzi utakapothibitishwa.",
             "NOADDRESS": "Haukuingia anwani ya Metrix"
         }
     }

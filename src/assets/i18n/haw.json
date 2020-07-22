@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hōʻoia Hash",
             "TABLE_SIGNATURE": "Ka pūlima",
             "TABLE_DIFFICULTY": "Pākeʻi",
-            "TABLE_ENTROPYBIT": "Nā Pō'ā komo",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Hōʻoia",
             "TABLE_INPUTOUTPUT": "Nā Hoʻomohohua a me nā Hana",
@@ -251,7 +250,6 @@
                 "LOCKED": "Ua hoʻopaʻaʻia ka wallet",
                 "UNLOCKED": "Hoʻokuʻuʻia ka wallet",
                 "UNLOCKEDSTAKING": "Hoʻokuʻuʻia ka wallet no kahi pale wale nō",
-                "UNLOCKEDANON": "Ua weheʻia ka wallet no ke kākau inoa waleʻana",
                 "STAKING": "Ke waihoʻia nei ka wallet",
                 "NOTSTAKING": "ʻAʻole i hoʻokomoʻia ke ekemo",
                 "MASTERNODEON": "Ke kele neiʻo Masternode",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Hoʻopunipuniʻia ka Wallet",
             "ENCRYPTEDCONTENT": "Pono e hoʻololi i nā pūnaewele mua āu i hana ai i kāu pēpena me ka pūnaewele pēpē i hoʻopili houʻia. No nā kumu palekana, e lilo nā pūnaewele mua o ke kōpena putele hoʻopunipuniʻole i meaʻole i ka manawa e hoʻomaka aiʻoe e hoʻohana i ke pēpena hou.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Ua paniʻo Metrix Core me ka manaʻoʻole",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ua pilikia ka Metrix Core i hoʻomaha ai. He'ōlelo manaʻo e nānā i kāu file debug.log no nā pilikia.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Aia kahi pilikia me ka Metrix Core nāna i hoʻopau iā ia e pau. A manaʻo ʻia e nānā i kāu file debug.log no nā pilikia.",
             "CLIENTINVALIDCONFIGTITLE": "ʻO metrix.conf Hōʻokoʻa",
             "CLIENTINVALIDCONFIGINFO": "ʻO kāu metrix.conf kahi hoʻonohonoho masternode kūponoʻole e hiki ai iā Metrix Core ke hele koke. Eʻoluʻolu e nānā i kēia faila.",
             "ADDREMOTEMNTITLE": "Hoʻokomo i ka Hale Kūʻai",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "ʻO Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "ʻO ka papa inoa Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "Ua hōʻole ka Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Ua pilikia kahi bootstrapping Metrix Core. Hoʻomaopopo ʻia e nānā i kāu file log Altitude no nā pilikia.",
+            "BOOTSTRAPFAILEDINFO": "Ua pilikia kahi bootstrapping Metrix Core. Manaʻo ʻia e nānā i kāu file log Altitude no nā pilikia.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Hoʻomaopopo Mea Hana",
             "STARTUPFAILEDTITLE": "Hoʻopau ʻole ka hoʻomaka ʻana ʻo Metrix",
-            "STARTUPFAILEDINFO": "Aia ka hoʻomaka i ka Metrix Core. Hoʻomaopopo ʻia e nānā i kāu file log Altitude no nā pilikia."
+            "STARTUPFAILEDINFO": "Aia ka hoʻomaka i ka Metrix Core. Manaʻo ʻia e nānā i kāu file log Altitude no nā pilikia.",
+            "CLIENTUNKNOWNERRORTITLE": "ʻO ka Hōʻea ʻo Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "He pilikia ma ka kamaʻilio ʻana me Metrix Core. A manaʻo ʻia e nānā i kāu file debug.log no nā pilikia."
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Buke Helu",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Pākuhi hana. E ho'āʻo hou.",
         "MINIMUMCONFIRMATIONS": "Pono nā mea e komo ai ma kahi o ka hōʻoia 1 ma mua o ka hoʻolimalimaʻana.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nā kope i kopeʻia i ka papa palani",
-        "TRANSACTIONOUTPUTTOOLARGE": "ʻO kekahi o kāu uku i ka nui he nui ka hoʻounaʻana me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ua nui loa kāu loli e hoʻouna aku me ka maluhia. ʻO ka palena kiʻekiʻe he 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Ke kū nei masternode...",
         "FAILEDTOWRITECONFIG": "Ua pilikia ka kākauʻana i kāu kōnae metrix.conf. E hōʻoia i ka waihona o ka waihona a aiaʻo Altitude i nāʻae palapala.",
         "NOPUBLICUP": "ʻAʻohe IP IP i loaʻa. E hoʻopaʻa i kāu pūnaewele pūnaewele a hoʻihoʻi hou i ka Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Kau He kii",
-                "YOUGET": "Oukou loaa",
-                "MRXADDRESS": "Pūnaewele Metrix",
-                "SWAP": "Kaue",
-                "SWAPADDRESSES": "Palapala Uku Pūnaewele",
-                "BTCADDRESS": "ʻĀlelo BTC",
-                "INFOLINE1": "Ke loaʻa kahi ʻōlelo hoʻokipa BTC no kēlā me kēia BTC i hoʻouna ʻia i kēlā māka e hele koke aku ia no kahi MRX i loko o kāu leka uila MRX i koho ʻia.",
-                "INFOLINE2-1": "Maʻa mau o nā hoʻololi i loko o ka hola ma kahi o ka manawa poloka Bitcoin. Hiki iā mākou ke hoʻomaopopo i ka fiat no",
-                "INFOLINE2-2": "nā ʻāina hui",
-                "INFOLINE2-3": "Hoʻohuli ʻia kēia ma BTC ma mua o MRX.",
-                "INFOLINE3": "Ke wehe nei kāu palapala kūʻai BTC e loaʻa iā ʻoe ka MRX i loko o kahi helu i koho ʻia.",
-                "INFOLINE4": "No ka ʻike hou aku",
-                "FIATSWAPSELECTED": "E hoʻohuli ʻia ʻoe e kūʻai iā Buy.Metrixcoin.com e hoʻopau i kēia kālepa"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "ʻAʻole ʻoe he Kiaʻāina",
+                "NOTGOVERNORDETAIL": "Aia ke kuleana o nā kiaʻāina no ke koho ʻana i nā kālā koina a me nā hoʻololi ʻo blockchain. Hiki iā ʻoe ke lilo i kiaʻāina ma ka laka ʻana i ka collateral kūpono i ke kuʻina Aupuni.",
+                "COLLATERAL": "Nā ʻatikala e pono ai",
+                "ENROLL": "Hoʻopono",
+                "CONFIRMENROLL": "Oe ke kokoke mai nei i mea kakau no ke Kiaaina. Hoʻouna kēia i kahi mea kūʻai aku me ka mea i koi ʻia i ka ʻekena hoʻokele. ʻAʻole hiki iā ʻoe ke wehe i kēlā me kēia manawa.",
+                "ISGOVERNORTITLE": "He kia'āina ikaika ʻoe!",
+                "ISGOVERNORDETAIL1": "Aia ke kuleana o nā kiaʻāina no ke koho ʻana i nā kālā koina a me nā hoʻololi ʻo blockchain.",
+                "ISGOVERNORDETAIL2": "No ka noho ʻana he Kiaʻāina e pono ʻoe e komo i ka liʻiliʻi ma ka papa koho 1 ma kēlā me kēia 30 lā.",
+                "ISGOVERNORDETAIL3": "Inā ʻaʻohe mea e koho ai i ia a hiki iā ʻoe ke hoʻomau mau i kāu helu kau ʻana ma ka hoʻouna ʻana i kahi ping ikaika.",
+                "UNENROLL": "ʻAʻohe lawehala",
+                "PING": "Hoʻouna iā Ping aktif"
+            },
+            "BUDGET": {
+                "TITLE": "Nā Palapala Hoʻolālā",
+                "ADDPROPOSAL": "Hana i nā Kānāwai",
+                "REQUESTEDPERMONTH": "kēlā me kēia mahina",
+                "REQUESTEDREMAINING": "ke koe",
+                "VOTEYES": "Palapala Ae",
+                "VOTEABSTAIN": "Vst Abstain",
+                "VOTENO": "Palota Aole",
+                "VOTESTOPASS": "nā koho e hoʻolilo",
+                "VOTEPASSING": "ke hoʻolilo ʻana i nā balota"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "E hana i kahi palapala",
+                "DESCRIPTION": "Ma lalo e hiki ia ʻoe ke hana i kahi manaʻo hoʻolālā a hāʻawi iā ia i ka pūnaewele no ka koho ʻana ma mua o ka manawa e hoʻolilo ʻia ai kahi papa koʻi e hiki mai ana.",
+                "BUDGETFEE": "ʻO ka kumukūʻai kālā o kēia manawa",
+                "BUDGETBLOCK": "ʻO ka papa e noho nei no kēia",
+                "PROPOSALTITLE": "ʻAoa Kūleka",
+                "PROPOSALDESC": "Nā Wehe Hoʻolaha",
+                "PROPOSALURL": "Kūlana URL",
+                "PROPOSALAMOUNT": "Ka noi i noi",
+                "PROPOSALDURATION": "Uku i ka Uku",
+                "PROPOSALADDRESS": "Hoʻomaopopo helu",
+                "PROPOSALCREATE": "Hana i nā Kānāwai"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Aupuni",
+                "BUDGET": "Loaʻa"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Ka Hoʻouku ʻana i kahi Wae Tī...",
+            "GETTINGSWAPADDRESS": "Ka Hoʻouku ʻana i kahi Palapala...",
             "ALREADYHAVEADDRESS": "Ua loaʻa iā ʻoe kahi ʻōlelo BTC e pili ana i kēia kaʻina Metrix",
             "SWAPUSDMIN": "Ka uku $ swap uku he $ 50",
             "SWAPUSDMAX": "Ka nui $ swap ka nui o ke kālā he $ 3000",
+            "INCOMPLETEFORM": "ʻAʻole ʻoe i hoʻopiha pono i nā kīlapa pono āpau",
+            "INVALIDPROPOSALDURATION": "Pono nā lōʻihi o nā ʻōmole ma waena o 1 a 12 mau mahina",
+            "CREATINGPROPOSAL": "Ke waiho ʻana i ka manaʻo i ka pūnaewele...",
+            "CREATEDPROPOSAL": "Ua kūleʻa kāu manaʻo",
+            "ENROLLINGGOVERNOR": "Ua hoʻokuʻi ʻia ma ke Kia'āina...",
+            "ENROLLEDGOVERNOR": "Hoʻopiha kāu kau inoa ma ke hōʻoia ʻana",
+            "VOTINGONPROPOSAL": "Hoʻouna i ke koho koho",
+            "VOTEDONPROPOSAL": "E helu ʻia kāu koho inā hōʻoia ʻia ka hoʻoili ʻana.",
             "NOADDRESS": "ʻAʻole ʻoe i hoʻokomo i kahi ʻōlelo Metrix"
         }
     }

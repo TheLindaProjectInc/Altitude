@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "የአደጋ ደረሰኝ",
             "TABLE_SIGNATURE": "ፊርማ",
             "TABLE_DIFFICULTY": "ችግር",
-            "TABLE_ENTROPYBIT": "ኤቲስትፒ ቢት",
             "TABLE_BLOCKHASH": "Hash አግድ",
             "TABLE_CONFIRMATIONS": "ማረጋገጫዎች",
             "TABLE_INPUTOUTPUT": "ግቤቶች እና ውጤቶች",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet ተቆልፏል",
                 "UNLOCKED": "Wallet ተከፍቷል",
                 "UNLOCKEDSTAKING": "ለሽት ብቻ ብቻ ተከፍቷል",
-                "UNLOCKEDANON": "Wallet ለመለየትለመቻል ብቻ ተከፍቷል",
                 "STAKING": "Wallet በአሁኑ ሰዓት በመጠባበቂያ ላይ ነው",
                 "NOTSTAKING": "Wallet በአሁኑ ሰዓት በመጠባበቅ ላይ አይደለም",
                 "MASTERNODEON": "Masternode በአሁኑ ጊዜ እየሄደ ነው",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet ምስጠራ ተቀናብሯል",
             "ENCRYPTEDCONTENT": "ከ wallet ፋይልዎ ያደረጓቸው ማናቸውም ቀደም ያሉ ምትኬዎች በአዲስ በተፈጠረ ፋይል የተሰወረ የኪስ ፋይል ፋይል መተካት አለባቸው. ለደህንነት ሲባል, ቀደም ሲል ያልተመዘገበው የኪሌት ፋይል ቅጂዎች አዲሱን, ኢንክሪፕትድ ኪ ቦል በመጠቀም መጀመር ዋጋ አይኖረውም.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "የሊንዳ ኮርታ ሳይታሰብ አቆመች",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "ሊንዳ ኮር ችግሩ እንዲቋረጥ ምክንያት የሆነ ችግር ነበር. ለችግሮች የእርማትዎን ስህተት ማረም እንዲመረምሩ ተመክሯል.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "ከሜቲክስ ኮር ጋር እንዲቋረጥ ያደረገው ችግር ነበር ፡፡ ለችግሮች የአርም ፋይልዎን ለማጣራት ይመከራል።",
             "CLIENTINVALIDCONFIGTITLE": "ልክ ያልሆነ የ metrix.conf ውቅረት",
             "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf Metrix Core ወዲያውኑ እንዲወጣ ሊያደርግ የሚችል ትክክለኛ ያልሆነ ሜስታዴሲ ማዋቀር አለው. እባክዎ ይህን ፋይል ይመልከቱ.",
             "ADDREMOTEMNTITLE": "የርቀት ማሳጅode ያክሉ።",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "የብረታ ብረት ማቀነባበሪያ ማትሪክስ ኮር ችግር ነበር ፡፡ ለችግሮች የአልቲዝድ ሎግ ፋይልዎን ለመፈተሽ ይመከራል ፡፡",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "የመልሶ ማግኛ መሳሪያዎች",
             "STARTUPFAILEDTITLE": "ሜታክስ ኮር ጅምር አልተሳካም",
-            "STARTUPFAILEDINFO": "የመነሻ ሜታክስ ኮር ነበር ፡፡ ለችግሮች የአልቲዝድ ሎግ ፋይልዎን ለመፈተሽ ይመከራል ፡፡"
+            "STARTUPFAILEDINFO": "የመነሻ ሜታክስ ኮር ነበር ፡፡ ለችግሮች የአልቲዝድ ሎግ ፋይልዎን ለመፈተሽ ይመከራል ፡፡",
+            "CLIENTUNKNOWNERRORTITLE": "የሜትሮክስ ኮሙኒኬሽን ስህተት",
+            "CLIENTUNKNOWNERRORINFO": "ከሜቴክ ኮር ጋር መገናኘት ላይ ችግር ነበር ፡፡ ለችግሮች የአርም ፋይልዎን ለማጣራት ይመከራል።"
         },
         "ADDRESSBOOK": {
             "TITLE": "አድራሻ መመዝገቢያ ደብተር",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "የግብይት ስህተት. እባክዎ ዳግም ይሞክሩ.",
         "MINIMUMCONFIRMATIONS": "ሁሉም ግብዓቶች ከማውጣት በፊት ቢያንስ 1 ማረጋገጫ ይጠይቃሉ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "ግብይት ወደ ቅንጥብ ሰሌዳ ተቀድቷል",
-        "TRANSACTIONOUTPUTTOOLARGE": "ከሚከፈልዎት ውስጥ አንዱ ክፍያ በደህንነት ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
-        "TRANSACTIONCHANGETOOLARGE": "ለውጦችዎ በደህና ሁኔታ ለመላክ በጣም ትልቅ ነው. ከፍተኛው 90,071,992,54740992 ነው.",
         "STOPPINGMASTERNODE": "የማሳደጊያ ቁልፍን በማቆም ላይ...",
         "FAILEDTOWRITECONFIG": "በ ‹ሜሪክስክስ› ፋይልዎ ላይ መጻፍ ላይ ችግር ነበር ፡፡ ፋይሉ ካለ እና ከፍታው የመፃፍ ፈቃዶች እንዳለው ያረጋግጡ።",
         "NOPUBLICUP": "ምንም ይፋዊ አይፒ አድራሻ አልተገኘም። የበይነመረብ ግንኙነትዎን ይፈትሹ እና ከፍታ እንደገና ይጀምሩ።",
@@ -446,30 +444,66 @@
         "NOV": "ኑቭ",
         "DEC": "ዲ.ሲ."
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "እርስዎ ይላኩ።",
-                "YOUGET": "ያገኛሉ ፡፡",
-                "MRXADDRESS": "ሜታክስ አድራሻ።",
-                "SWAP": "ቀይር",
-                "SWAPADDRESSES": "አድራሻዎችን ቀይር",
-                "BTCADDRESS": "BTC አድራሻ።",
-                "INFOLINE1": "አንዴ የ BTC ተቀማጭ አድራሻ ካለዎት ወደዚያ አድራሻ የሚላክ ማንኛውም BTC በቀጥታ ለ MRX አድራሻዎ በተመረጠው MRX አድራሻ ይቀየራል ፡፡",
-                "INFOLINE2-1": "በ Bitcoin የማገጃ ጊዜዎች መሠረት ግብይቶች በተለምዶ በአንድ ሰዓት ውስጥ ግልፅ ያደርጋሉ ፡፡ ለእሳት መቀበል እንችላለን ፡፡",
-                "INFOLINE2-2": "ተሳታፊ ሀገሮች",
-                "INFOLINE2-3": "ይህ መጀመሪያ ወደ BTC በመጀመሪያ ወደ MRX ይቀየራል።",
-                "INFOLINE3": "የ BTC ሂሳብዎ አንዴ ከፀደቀ MRXዎን በተሰየመ አድራሻዎ ውስጥ ይቀበላሉ።",
-                "INFOLINE4": "ለበለጠ መረጃ ጎብኝ።",
-                "FIATSWAPSELECTED": "ይህንን ግብይት ለማጠናቀቅ ወደ Buy.Metrixcoin.com ይዛወራሉ።"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "አንተ ገዥ አይደለህም",
+                "NOTGOVERNORDETAIL": "ገዥዎች በወርሃዊ በጀቶች እና በቻንቻይን ለውጦች ላይ የመምረጥ ሃላፊነት አለባቸው ፡፡ በመንግሥት ኮንትራቱ ውስጥ ትክክለኛውን ውለታ በመቆለፍ ገዥ መሆን ይችላሉ ፡፡",
+                "COLLATERAL": "የሚፈለግ ብድር",
+                "ENROLL": "ይመዝገቡ",
+                "CONFIRMENROLL": "እንደ ገ. ሆነው ሊመዘገቡ ነው ፡፡ ይህ ከሚያስፈልገው ብድር ወደ አስተዳደር ኮንትራት ይልካል ፡፡ በማንኛውም ጊዜ መመዝገብ ይችላሉ ፡፡",
+                "ISGOVERNORTITLE": "እርስዎ ንቁ ገዥ ነዎት!",
+                "ISGOVERNORDETAIL1": "ገዥዎች በወርሃዊ በጀቶች እና በቻንቻይን ለውጦች ላይ የመምረጥ ሃላፊነት አለባቸው ፡፡",
+                "ISGOVERNORDETAIL2": "ገዥን ለማቆየት በየ 30 ቀኑ ቢያንስ በ 1 ድምጽ መሳተፍ ያስፈልግዎታል ፡፡",
+                "ISGOVERNORDETAIL3": "ድምጽ ለመስጠት ምንም ነገር ከሌለ ንቁ ፒንግ በመላክ ምዝገባዎን እራስዎ መቀጠል ይችላሉ።",
+                "UNENROLL": "ምዝገባ",
+                "PING": "ንቁ ፒንግን ይላኩ"
+            },
+            "BUDGET": {
+                "TITLE": "የበጀት ፕሮፖዛል",
+                "ADDPROPOSAL": "ሀሳብ ይፍጠሩ",
+                "REQUESTEDPERMONTH": "በ ወር",
+                "REQUESTEDREMAINING": "ቀሪ",
+                "VOTEYES": "አዎ ድምጽ ይስጡ",
+                "VOTEABSTAIN": "ድምጽን አብጅ",
+                "VOTENO": "ድምጽ ይስጡ",
+                "VOTESTOPASS": "ለማለፍ ድምጾች",
+                "VOTEPASSING": "ድምጾች ማለፍ"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "ሀሳብ ይፍጠሩ",
+                "DESCRIPTION": "ከዚህ በታች የበጀት ጥያቄን መፍጠር እና የሚቀጥለው የበጀት አደረጃጀት በፊት ድምጽ እንዲሰጥ ለአውታረ መረቡ ማቅረብ ይችላሉ።",
+                "BUDGETFEE": "የወቅቱ የበጀት ክፍያ ነው",
+                "BUDGETBLOCK": "ቀጣዩ የሰልፍ ማገጃ ነው",
+                "PROPOSALTITLE": "የውል ስም",
+                "PROPOSALDESC": "የፕሮፖዛል መግለጫ",
+                "PROPOSALURL": "ፕሮፖዛል ዩ.አር.ኤል.",
+                "PROPOSALAMOUNT": "የተጠየቀ መጠን",
+                "PROPOSALDURATION": "የተጠየቁ ክፍያዎች",
+                "PROPOSALADDRESS": "የክፍያ አድራሻ",
+                "PROPOSALCREATE": "ሀሳብ ይፍጠሩ"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "አስተዳደር",
+                "BUDGET": "በጀት"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "የመቀየሪያ አድራሻ በማመንጨት ላይ...",
-            "ALREADYHAVEADDRESS": "ከዚህ Metrix አድራሻ ጋር የተቆራኘ የ BTC አድራሻ አለዎት።",
-            "SWAPUSDMIN": "ዝቅተኛው የአሜሪካን ዶላር መቀየሪያ መጠን 50 ዶላር ነው።",
-            "SWAPUSDMAX": "ከፍተኛው የአሜሪካ ዶላር ማወዛወዝ መጠን 3000 ዶላር ነው።",
-            "NOADDRESS": "ሜታክስ አድራሻ አላስገቡም።"
+            "ALREADYHAVEADDRESS": "ከዚህ Metrix አድራሻ ጋር የተቆራኘ የ BTC አድራሻ አለዎት",
+            "SWAPUSDMIN": "ዝቅተኛው የአሜሪካን ዶላር መቀየሪያ መጠን 50 ዶላር ነው",
+            "SWAPUSDMAX": "ከፍተኛው የአሜሪካ ዶላር ማወዛወዝ መጠን 3000 ዶላር ነው",
+            "INCOMPLETEFORM": "በሁሉም የሚፈለጉ መስኮች በትክክል አልሞሉም",
+            "INVALIDPROPOSALDURATION": "ፕሮፖዛል የጊዜ ቆይታ ከ 1 እስከ 12 ወራት መሆን አለበት",
+            "CREATINGPROPOSAL": "ወደ አውታረ መረብ ጥያቄን በማስገባት ላይ...",
+            "CREATEDPROPOSAL": "የእርስዎ ሃሳብ በተሳካ ሁኔታ ተፈጥሯል",
+            "ENROLLINGGOVERNOR": "እንደ ገ Governor ሆነው በመመዝገብ ላይ...",
+            "ENROLLEDGOVERNOR": "ግብይትዎ አንዴ ከተረጋገጠ ምዝገባዎ ይጠናቀቃል",
+            "VOTINGONPROPOSAL": "የቀረበለትን ድምጽ በመላክ ላይ",
+            "VOTEDONPROPOSAL": "ግብይቱ ከተረጋገጠ በኋላ ድምጽዎ ይቆጠራል።",
+            "NOADDRESS": "ሜታክስ አድራሻ አላስገቡም"
         }
     }
 }

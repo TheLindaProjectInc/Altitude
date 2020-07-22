@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Tandatangan",
             "TABLE_DIFFICULTY": "Kesukaran",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Blok hash",
             "TABLE_CONFIRMATIONS": "Pengesahan",
             "TABLE_INPUTOUTPUT": "Input dan Output",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet dikunci",
                 "UNLOCKED": "Dompet dibuka kunci",
                 "UNLOCKEDSTAKING": "Dompet dibuka kunci untuk menyekat sahaja",
-                "UNLOCKEDANON": "Dompet dibuka kunci untuk penyeragaman sahaja",
                 "STAKING": "Dompet sedang staking",
                 "NOTSTAKING": "Dompet tidak sedang staking",
                 "MASTERNODEON": "Masternode sedang berjalan",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Disulitkan",
             "ENCRYPTEDCONTENT": "Mana-mana sandaran sebelumnya yang telah anda buat dari fail dompet anda harus diganti dengan fail dompet yang baru dihasilkan dan dienkripsi. Atas sebab keselamatan, backup sebelumnya dari fail dompet yang tidak disenarai akan menjadi tidak berguna sebaik sahaja anda mula menggunakan dompet yang baru dan disulitkan.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Berhenti tanpa diduga",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Metrix Core yang menyebabkan ia ditamatkan. Ia mengesyorkan untuk menyemak fail debug.log anda untuk masalah.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah dengan Metrix Core yang menyebabkannya berhenti. Sebaiknya periksa fail debug.log anda untuk masalah.",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf tidak sah",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf anda mempunyai persediaan masternode yang tidak sah yang akan menyebabkan Metrix Core keluar segera. Sila semak fail ini.",
             "ADDREMOTEMNTITLE": "Tambah Masternode Jauh",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indeks Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "Bootstrap Teras Metrix Gagal",
-            "BOOTSTRAPFAILEDINFO": "Terdapat masalah bootstrapping Metrix Core. Ia mengesyorkan untuk menyemak fail log Altitude anda untuk isu.",
+            "BOOTSTRAPFAILEDINFO": "Terdapat masalah bootstrapping Metrix Core. Sebaiknya periksa fail log Ketinggian anda untuk masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan",
             "STARTUPFAILEDTITLE": "Permulaan Teras Metrix Gagal",
-            "STARTUPFAILEDINFO": "Terdapat Metrik Teras bermula. Ia mengesyorkan untuk menyemak fail log Altitude anda untuk isu."
+            "STARTUPFAILEDINFO": "Terdapat Metrix Core permulaan. Sebaiknya periksa fail log Ketinggian anda untuk masalah.",
+            "CLIENTUNKNOWNERRORTITLE": "Ralat Komunikasi Teras Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Terdapat masalah berkomunikasi dengan Metrix Core. Sebaiknya periksa fail debug.log anda untuk masalah."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Kesalahan transaksi. Sila cuba lagi.",
         "MINIMUMCONFIRMATIONS": "Semua input memerlukan sekurang-kurangnya 1 pengesahan sebelum perbelanjaan.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan keratan",
-        "TRANSACTIONOUTPUTTOOLARGE": "Salah satu bayaran anda kepada amaun terlalu besar untuk dihantar dengan selamat. Maksimum ialah 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Perubahan anda terlalu besar untuk dihantar dengan selamat. Maksimum ialah 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Menghentikan masternode...",
         "FAILEDTOWRITECONFIG": "Terdapat masalah menulis ke fail metrix.conf anda. Semak fail wujud dan Altitude itu mempunyai kebenaran menulis.",
         "NOPUBLICUP": "Tiada alamat IP Awam yang ditemui. Semak sambungan internet anda dan mulakan semula Ketinggian.",
@@ -446,30 +444,66 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Awak hantar",
-                "YOUGET": "Anda mendapatkan",
-                "MRXADDRESS": "Alamat Metrix",
-                "SWAP": "Pertukaran",
-                "SWAPADDRESSES": "Alamat Swap",
-                "BTCADDRESS": "Alamat BTC",
-                "INFOLINE1": "Sebaik sahaja anda mempunyai alamat deposit BTC mana-mana BTC yang dihantar ke alamat itu secara automatik akan ditukar untuk MRX ke alamat MRX yang dinamakan anda.",
-                "INFOLINE2-1": "Urusniaga biasanya jelas dalam masa satu jam bergantung pada masa blok Bitcoin. Kita boleh menerima fiat",
-                "INFOLINE2-2": "negara yang mengambil bahagian",
-                "INFOLINE2-3": "Ini akan ditukarkan kepada BTC pertama kemudian MRX.",
-                "INFOLINE3": "Apabila deposit BTC anda telah dibersihkan, anda akan menerima MRX anda ke alamat yang dinamakan anda.",
-                "INFOLINE4": "Untuk maklumat lanjut, lawati",
-                "FIATSWAPSELECTED": "Anda akan diarahkan ke Buy.Metrixcoin.com untuk menyelesaikan transaksi ini"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Anda bukan Gabenor",
+                "NOTGOVERNORDETAIL": "Gabenor bertanggungjawab untuk memilih anggaran bulanan dan perubahan blockchain. Anda boleh menjadi Gabenor dengan mengunci cagaran yang betul dalam kontrak Tadbir Urus.",
+                "COLLATERAL": "Cagaran yang diperlukan",
+                "ENROLL": "Mendaftar",
+                "CONFIRMENROLL": "Anda akan mendaftar sebagai Gabenor. Ini akan menghantar transaksi dengan jaminan yang diperlukan untuk kontrak tadbir urus. Anda boleh membatalkan pendaftaran pada bila-bila masa.",
+                "ISGOVERNORTITLE": "Anda adalah Gabenor yang aktif!",
+                "ISGOVERNORDETAIL1": "Gabenor bertanggungjawab untuk memilih anggaran bulanan dan perubahan blockchain.",
+                "ISGOVERNORDETAIL2": "Untuk kekal sebagai Gabenor, anda perlu mengambil bahagian dalam sekurang-kurangnya 1 suara setiap 30 hari.",
+                "ISGOVERNORDETAIL3": "Sekiranya tidak ada yang boleh diundi, anda boleh meneruskan pendaftaran secara manual dengan menghantar ping aktif.",
+                "UNENROLL": "Nyah daftar",
+                "PING": "Hantar Ping Aktif"
+            },
+            "BUDGET": {
+                "TITLE": "Cadangan Belanjawan",
+                "ADDPROPOSAL": "Buat Cadangan",
+                "REQUESTEDPERMONTH": "sebulan",
+                "REQUESTEDREMAINING": "baki",
+                "VOTEYES": "Undi Ya",
+                "VOTEABSTAIN": "Undi Abstain",
+                "VOTENO": "Undi Tidak",
+                "VOTESTOPASS": "undi untuk lulus",
+                "VOTEPASSING": "lulus undi"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Buat Cadangan",
+                "DESCRIPTION": "Di bawah ini anda boleh membuat cadangan anggaran dan menyerahkannya ke jaringan untuk diundi sebelum blok penyelesaian anggaran berikutnya.",
+                "BUDGETFEE": "Bayaran belanjawan semasa adalah",
+                "BUDGETBLOCK": "Blok penyelesaian seterusnya adalah",
+                "PROPOSALTITLE": "Nama Cadangan",
+                "PROPOSALDESC": "Huraian Cadangan",
+                "PROPOSALURL": "URL cadangan",
+                "PROPOSALAMOUNT": "Amaun yang Diminta",
+                "PROPOSALDURATION": "Pembayaran yang Diminta",
+                "PROPOSALADDRESS": "Alamat Pembayaran",
+                "PROPOSALCREATE": "Buat Cadangan"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pemerintahan",
+                "BUDGET": "Belanjawan"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Menjana Alamat Swap...",
+            "GETTINGSWAPADDRESS": "Menjana Alamat Pertukaran...",
             "ALREADYHAVEADDRESS": "Anda sudah mempunyai alamat BTC yang dikaitkan dengan alamat Metrix ini",
-            "SWAPUSDMIN": "Jumlah minimum swap USD ialah $ 50",
-            "SWAPUSDMAX": "Jumlah maksimum swap USD ialah $ 3000",
-            "NOADDRESS": "Anda tidak memasukkan alamat Metrik"
+            "SWAPUSDMIN": "Jumlah minimum pertukaran USD adalah $ 50",
+            "SWAPUSDMAX": "Amaun pertukaran USD maksimum adalah $ 3000",
+            "INCOMPLETEFORM": "Anda belum mengisi semua bidang yang diperlukan dengan betul",
+            "INVALIDPROPOSALDURATION": "Tempoh cadangan hendaklah antara 1 dan 12 bulan",
+            "CREATINGPROPOSAL": "Mengemukakan cadangan ke rangkaian...",
+            "CREATEDPROPOSAL": "Cadangan anda berjaya dibuat",
+            "ENROLLINGGOVERNOR": "Mendaftar sebagai Gabenor...",
+            "ENROLLEDGOVERNOR": "Pendaftaran anda akan lengkap setelah transaksi anda disahkan",
+            "VOTINGONPROPOSAL": "Menghantar undian cadangan",
+            "VOTEDONPROPOSAL": "Undian anda akan dihitung setelah transaksi disahkan.",
+            "NOADDRESS": "Anda tidak memasukkan alamat Metrix"
         }
     }
 }

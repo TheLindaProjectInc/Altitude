@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Pruvo",
             "TABLE_SIGNATURE": "Subskribo",
             "TABLE_DIFFICULTY": "Malfacilaĵo",
-            "TABLE_ENTROPYBIT": "Entropio Bito",
             "TABLE_BLOCKHASH": "Bloko Hash",
             "TABLE_CONFIRMATIONS": "Konfirmoj",
             "TABLE_INPUTOUTPUT": "Inpuzoj kaj Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "Monujo ŝlosita",
                 "UNLOCKED": "Monujo malŝlosita",
                 "UNLOCKEDSTAKING": "Monujo senŝlosita nur por streĉado",
-                "UNLOCKEDANON": "Monujo senŝlosita nur por anonimigo",
                 "STAKING": "Valejo nuntempe agas",
                 "NOTSTAKING": "Monujo ne nuntempe agas",
                 "MASTERNODEON": "Masternode nun funkcias",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Monujo Kifrita",
             "ENCRYPTEDCONTENT": "Ajna antaŭaj rezervoj, kiujn vi faris el via monujo-dosiero, devas esti anstataŭigita per la lastatempe generita, ĉifrita baletera dosiero. Por sekurecaj kialoj, antaŭaj kopioj de la neĉifrita monujo-dosiero fariĝos netaŭga tuj kiam vi komencos uzadon de la nova ĉifrita monujo.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Bela Kerna haltis neatendite",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Estis problemo kun Metrix Kerna kiu kaŭzis ĝin fini. Ĝi rekomendas kontroli vian dosieron debug.log por aferoj.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Estis problemo kun Metrix Core, kiu kaŭzis ĝin fini. Oni rekomendas kontroli vian debug.log-dosieron por problemoj.",
             "CLIENTINVALIDCONFIGTITLE": "Nevalida metrix.conf-Agordo",
             "CLIENTINVALIDCONFIGINFO": "Via bela.conf havas malvalidan maŝinsekvan instalinstrukciojn, kiu kaŭzos ke Metrix Kerna eliru tuj. Bonvolu kontroli ĉi tiun dosieron.",
             "ADDREMOTEMNTITLE": "Aldoni Foran Masternodon",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indekso de Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap malsukcesis",
-            "BOOTSTRAPFAILEDINFO": "Estis problemo lanĉante Metrix Core. Rekomendas kontroli vian Altitude-dosieron por problemoj.",
+            "BOOTSTRAPFAILEDINFO": "Estis problemo lanĉante Metrix Core. Oni rekomendas kontroli vian Altitude-dosieron por problemoj.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Retrovi iloj",
             "STARTUPFAILEDTITLE": "Komenca Komenco de Metriko Fiaskis",
-            "STARTUPFAILEDINFO": "Estis komencanta Metrix Core. Rekomendas kontroli vian Altitude-dosieron por problemoj."
+            "STARTUPFAILEDINFO": "Estis komencanta Metrix Core. Oni rekomendas kontroli vian Altitude-dosieron por problemoj.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrica Kerna Eraro pri Komunikado",
+            "CLIENTUNKNOWNERRORINFO": "Estis problemo pri komunikado kun Metrix Core. Oni rekomendas kontroli vian debug.log-dosieron por problemoj."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresaron",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transakcio eraro. Bonvolu reprovi.",
         "MINIMUMCONFIRMATIONS": "Ĉiuj enigoj bezonas almenaŭ 1 konfirmo antaŭ pasigo.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcioj kopiitaj al poŝo",
-        "TRANSACTIONOUTPUTTOOLARGE": "Unu el via salajro al kvantoj estas tro granda por sekure sendi. Maksimumo estas 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Via ŝanĝo estas tro granda por sekure sendi. Maksimumo estas 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Ĉesigante masternodon...",
         "FAILEDTOWRITECONFIG": "Okazis problemo skribi al via metrix.conf-dosiero. Kontrolu ke la dosiero ekzistas kaj ke Alteco havas skribajn permesojn.",
         "NOPUBLICUP": "Neniu Publika IP-adreso troviĝis. Kontrolu vian interretan konekton kaj rekomencu Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Vi sendas",
-                "YOUGET": "Vi ricevas",
-                "MRXADDRESS": "Metrica Adreso",
-                "SWAP": "Interŝanĝu",
-                "SWAPADDRESSES": "Ŝanĝu Adresojn",
-                "BTCADDRESS": "BTC-Adreso",
-                "INFOLINE1": "Post kiam vi havas BTC-deponejan adreson, iu ajn BTC sendita al tiu adreso aŭtomate ŝanĝiĝos por MRX en vian nomumitan MRX-adreson.",
-                "INFOLINE2-1": "Transakcioj tipe klaras ene de horo depende de la Bitcoin-blokaj tempoj. Ni povas akcepti fiat por",
-                "INFOLINE2-2": "partoprenantaj landoj",
-                "INFOLINE2-3": "Ĉi tio konvertiĝos al BTC unue kaj MRX.",
-                "INFOLINE3": "Post kiam via deponejo BTC malplenigis, vi ricevos vian MRX en vian nomumitan adreson.",
-                "INFOLINE4": "Por pliaj informoj vizitu",
-                "FIATSWAPSELECTED": "Vi estos redirektita al Buy.Metrixcoin.com por plenumi ĉi tiun transakcion"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Vi ne estas Reganto",
+                "NOTGOVERNORDETAIL": "Regantoj respondecas pri voĉdonado pri monataj buĝetoj kaj blockchain-ŝanĝoj. Vi povas fariĝi Reganto enŝlosante la ĝustan garantion en la kontrakto pri Regado.",
+                "COLLATERAL": "Postulata garantio",
+                "ENROLL": "Aliĝu",
+                "CONFIRMENROLL": "Vi estas enskribonta kiel Reganto. Ĉi tio sendos transakcion kun la bezonata garantio al la registara kontrakto. Vi povas malregistri en ajna momento.",
+                "ISGOVERNORTITLE": "Vi estas aktiva Reganto!",
+                "ISGOVERNORDETAIL1": "Regantoj respondecas pri voĉdonado pri monataj buĝetoj kaj blockchain-ŝanĝoj.",
+                "ISGOVERNORDETAIL2": "Por resti guberniestro, vi bezonos partopreni almenaŭ 1 voĉdonon ĉiujn 30 tagojn.",
+                "ISGOVERNORDETAIL3": "Se estas nenio por voĉdoni, vi povas permane daŭrigi vian enskribon sendante aktivan ping-on.",
+                "UNENROLL": "Malreguligi",
+                "PING": "Sendu Aktivan Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Buĝetaj Proponoj",
+                "ADDPROPOSAL": "Krei Proponon",
+                "REQUESTEDPERMONTH": "por monato",
+                "REQUESTEDREMAINING": "restante",
+                "VOTEYES": "Voĉdoni Jes",
+                "VOTEABSTAIN": "Voĉdonu Abstain",
+                "VOTENO": "Voĉdono Ne",
+                "VOTESTOPASS": "voĉdonoj por pasi",
+                "VOTEPASSING": "pasantaj voĉdonoj"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Krei Proponon",
+                "DESCRIPTION": "Sube vi povas krei buĝetan proponon kaj sendi ĝin al la reto por voĉdoni antaŭ la sekva buĝeta kompromisa bloko.",
+                "BUDGETFEE": "La nuna buĝeta kotizo estas",
+                "BUDGETBLOCK": "La sekva kompromiso estas",
+                "PROPOSALTITLE": "Propono Nomo",
+                "PROPOSALDESC": "Propono Priskribo",
+                "PROPOSALURL": "Propono URL",
+                "PROPOSALAMOUNT": "Petita Kvanto",
+                "PROPOSALDURATION": "Petitaj Pagoj",
+                "PROPOSALADDRESS": "Paga Adreso",
+                "PROPOSALCREATE": "Krei Proponon"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Regado",
+                "BUDGET": "Buĝeto"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Vi jam havas BTC-adreson ligitan al ĉi tiu Metrix-adreso",
             "SWAPUSDMIN": "La minimuma USD-interŝanĝa sumo estas 50 $",
             "SWAPUSDMAX": "La maksimuma interŝanĝa sumo de USD estas $ 3000",
+            "INCOMPLETEFORM": "Vi ne plenigis ĉiujn postulatajn kampojn ĝuste",
+            "INVALIDPROPOSALDURATION": "Propono daŭras esti inter 1 kaj 12 monatoj",
+            "CREATINGPROPOSAL": "Sendo de propono al reto...",
+            "CREATEDPROPOSAL": "Via propono estis kreita sukcese",
+            "ENROLLINGGOVERNOR": "Enskribante kiel Reganto...",
+            "ENROLLEDGOVERNOR": "Via enskribado finiĝos post kiam via transakcio estos konfirmita",
+            "VOTINGONPROPOSAL": "Sendante proponon voĉdoni",
+            "VOTEDONPROPOSAL": "Via voĉdono estos kalkulita post kiam la transakcio estas konfirmita.",
             "NOADDRESS": "Vi ne enigis Metrix-adreson"
         }
     }

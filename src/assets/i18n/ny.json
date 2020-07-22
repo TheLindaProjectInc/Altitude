@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Umboni",
             "TABLE_SIGNATURE": "Chizindikiro",
             "TABLE_DIFFICULTY": "Zovuta",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Dulani Hash",
             "TABLE_CONFIRMATIONS": "Umboni",
             "TABLE_INPUTOUTPUT": "Zotsatira ndi Zotsatira",
@@ -251,7 +250,6 @@
                 "LOCKED": "Chikwama chatsekedwa",
                 "UNLOCKED": "Chikwama chatsegulidwa",
                 "UNLOCKEDSTAKING": "Chikwama chatsegulidwa chifukwa chogwedeza",
-                "UNLOCKEDANON": "Chikwama chatsegulidwa kuti chidziwitse kokha",
                 "STAKING": "Pulogalamu yamakono ikugwedeza",
                 "NOTSTAKING": "Kalendala siyikugwedezeka pakalipano",
                 "MASTERNODEON": "Masternode ikugwira ntchito",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Chikwama Chimafufuzidwa",
             "ENCRYPTEDCONTENT": "Zomwe mwasunga kale zomwe munapanga pa fayilo yanu ya chikwama ziyenera kusinthidwa ndi fayilo yatsopano yophimbidwa. Chifukwa cha chitetezo, mafayilo akale a fayilo yam'chikwama chosadziwika sangakhale yopanda phindu mutangoyamba kugwiritsa ntchito chikwama chatsopano, chobisika.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Cholowa cha Metrix Chinadutsa Mwadzidzidzi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core zomwe zachititsa kuti zitha. Ndikopempha kuti muwone fayilo yanu ya debug.log yokhudza nkhani.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core yomwe yapangitsa kuti ithe. Ndikulimbikitsidwa kuti mupeze fayilo yanu ya debug.log pazinthu.",
             "CLIENTINVALIDCONFIGTITLE": "Kusintha kwa metrix.conf kosavomerezeka",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf yanu ili ndi dongosolo losavomerezeka la masternode lomwe lingayambitse Metrix Core mwamsanga. Chonde onani fayilo iyi.",
             "ADDREMOTEMNTITLE": "Onjezani Masternode Akutali",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Kulephera",
-            "BOOTSTRAPFAILEDINFO": "Panali vuto botstrapping Metrix Core. Ndikupangira kuyang'ana fayilo yanu ya Altitude kuti mupeze mavuto.",
+            "BOOTSTRAPFAILEDINFO": "Panali vuto botstrapping Metrix Core. Ndikulimbikitsidwa kuti muyang'ane fayilo yanu ya Altitude kuti mupeze mavuto.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zida Zobwezeretsa",
             "STARTUPFAILEDTITLE": "Kuyamba Kwa Metrix Kulephera",
-            "STARTUPFAILEDINFO": "Panali poyambira Metrix Core. Ndikupangira kuyang'ana fayilo yanu ya Altitude kuti mupeze mavuto."
+            "STARTUPFAILEDINFO": "Panali poyambira Metrix Core. Ndikulimbikitsidwa kuti muyang'ane fayilo yanu ya Altitude kuti mupeze mavuto.",
+            "CLIENTUNKNOWNERRORTITLE": "Kulakwitsa kwa Metrix Core Communication",
+            "CLIENTUNKNOWNERRORINFO": "Panali vuto kulankhulana ndi Metrix Core. Ndikulimbikitsidwa kuti mupeze fayilo yanu ya debug.log pazinthu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Bukhu la Maadiresi",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Kulakwitsa kwachinthu. Chonde yesaninso.",
         "MINIMUMCONFIRMATIONS": "Zotsatira zonse zimafuna kutsimikizira 1 kusanayambe kugwiritsira ntchito.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Zosinthidwa zimakopera ku bolodipidi",
-        "TRANSACTIONOUTPUTTOOLARGE": "Imodzi mwa malipiro anu kuti ndalama ndi zazikulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Kusintha kwanu ndi kwakukulu kwambiri kuti musatumize bwinobwino. Chiwerengero cha 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Kuyimitsa masternode...",
         "FAILEDTOWRITECONFIG": "Panali vuto polembera fayilo yanu ya metrix.conf. Onani fayilo kuti ilipo ndipo Altitude ili ndi zilolezo zolemba.",
         "NOPUBLICUP": "Palibe adilesi ya umma pagulu yomwe yapezeka. Onani kulumikizidwa kwanu kwa intaneti ndikuyambiranso Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Mumatumiza",
-                "YOUGET": "Mukumva",
-                "MRXADDRESS": "Adilesi Ya Metrix",
-                "SWAP": "Sinthani",
-                "SWAPADDRESSES": "Sinthani Ma adilesi",
-                "BTCADDRESS": "Adilesi ya BTC",
-                "INFOLINE1": "Mukakhala ndi adilesi yosungitsa ya BTC ku BTC iliyonse yotumizidwa ku adilesi yomweyo isinthidwa ndi MRX ku adilesi yanu ya MRX yosankhidwa.",
-                "INFOLINE2-1": "Zochitika zimamveka mkati mwa ola limodzi kutengera nthawi ya blockcha Bitcoin. Titha kulandira",
-                "INFOLINE2-2": "mayiko otenga nawo mbali",
-                "INFOLINE2-3": "Izi zidzasinthidwa kukhala BTC poyamba ndiye MRX.",
-                "INFOLINE3": "Dipo lanu la BTC litatsimikizira mudzalandira MRX yanu ku adilesi yanu yosankhidwa.",
-                "INFOLINE4": "Kuti mumve zambiri",
-                "FIATSWAPSELECTED": "Mudzatumizidwa ku Buy.Metrixcoin.com kuti mumalize ntchito iyi"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Simuli Wolamulira",
+                "NOTGOVERNORDETAIL": "Olamulira ali ndi udindo wovota pa bajeti za pamwezi komanso kusintha kwa blockchain. Mutha kukhala Bwanamkubwa mwa kutseka zolowa mu mgwirizano wa Governance.",
+                "COLLATERAL": "Chofunika mgwirizano",
+                "ENROLL": "Kulembetsa",
+                "CONFIRMENROLL": "Mukuyamba kulembetsa monga Bwanamkubwa. Izi zitumiza kugulitsa ndi mgwirizano wofunikira ku mgwirizano wamalamulo. Mutha kuletsa nthawi iliyonse.",
+                "ISGOVERNORTITLE": "Ndiwe Kazembe wachangu!",
+                "ISGOVERNORDETAIL1": "Olamulira ali ndi udindo wovota pa bajeti za pamwezi komanso kusintha kwa blockchain.",
+                "ISGOVERNORDETAIL2": "Kuti mukhalebe a Governor muyenera kutenga nawo gawo osachepera 30 masiku onse.",
+                "ISGOVERNORDETAIL3": "Ngati palibe chochita kuvota ndiye kuti mutha kupitiriza kulembetsa kwanu potumiza ma ping omwe akugwira.",
+                "UNENROLL": "Osalembetsa",
+                "PING": "Tumizani Ping Yogwira"
+            },
+            "BUDGET": {
+                "TITLE": "Zofunafuna Bajeti",
+                "ADDPROPOSAL": "Pangani Chidziwitso",
+                "REQUESTEDPERMONTH": "pamwezi",
+                "REQUESTEDREMAINING": "kutsalira",
+                "VOTEYES": "Voterani Inde",
+                "VOTEABSTAIN": "Voterani",
+                "VOTENO": "Vote Ayi",
+                "VOTESTOPASS": "mavoti oti adutse",
+                "VOTEPASSING": "odutsa"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Pangani Cholinga",
+                "DESCRIPTION": "Pansipa mutha kupanga lingaliro la bajeti ndikugonjera ku netiweki kuti ivotere isanakwane ndalama zotsalira.",
+                "BUDGETFEE": "Ndalama zomwe zilipo",
+                "BUDGETBLOCK": "Njira yotsatira ndiyo",
+                "PROPOSALTITLE": "Dzina Laluso",
+                "PROPOSALDESC": "Kufotokozera",
+                "PROPOSALURL": "Ulalo Waloza",
+                "PROPOSALAMOUNT": "Mtengo Wofunsidwa",
+                "PROPOSALDURATION": "Malipiro Opemphedwa",
+                "PROPOSALADDRESS": "Adilesi Yamalipiro",
+                "PROPOSALCREATE": "Pangani Chidziwitso"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Ulamuliro",
+                "BUDGET": "Bajeti"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Kupanga Adilesi Yakusintha...",
             "ALREADYHAVEADDRESS": "Muli ndi adilesi ya BTC yomwe idalumikizidwa ndi adilesi iyi ya Metrix",
             "SWAPUSDMIN": "Kuchuluka kosintha kwa USD ndi $ 50",
-            "SWAPUSDMAX": "Mtengo wosinthika kwambiri wa USD ndi $ 3000",
+            "SWAPUSDMAX": "Kuchuluka kwa ndalama zosinthika kwa USD ndi $ 3000",
+            "INCOMPLETEFORM": "Simunadzaze malo onse ofunikira",
+            "INVALIDPROPOSALDURATION": "Kukonzekera kuyenera kukhala pakati pa mwezi umodzi ndi 12",
+            "CREATINGPROPOSAL": "Kutumiza malingaliro pamaneti...",
+            "CREATEDPROPOSAL": "Malingaliro anu adapangidwa bwino",
+            "ENROLLINGGOVERNOR": "Kulembetsa Monga Kazembe...",
+            "ENROLLEDGOVERNOR": "Kulembetsa kwanu kudzatsirizika mukamaliza kutsimikiza",
+            "VOTINGONPROPOSAL": "Kutumiza voti yavoti",
+            "VOTEDONPROPOSAL": "Voti yanu iwwerengedwa mukamaliza kutsimikizira.",
             "NOADDRESS": "Simunalowe adilesi ya Metrix"
         }
     }

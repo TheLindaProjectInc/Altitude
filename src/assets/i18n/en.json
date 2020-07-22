@@ -204,7 +204,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signature",
             "TABLE_DIFFICULTY": "Difficulty",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Confirmations",
             "TABLE_INPUTOUTPUT": "Inputs and Outputs",
@@ -252,7 +251,6 @@
                 "LOCKED": "Wallet locked",
                 "UNLOCKED": "Wallet unlocked",
                 "UNLOCKEDSTAKING": "Wallet unlocked for staking only",
-                "UNLOCKEDANON": "Wallet unlocked for anonymization only",
                 "STAKING": "Wallet is currently staking",
                 "NOTSTAKING": "Wallet is not currently staking",
                 "MASTERNODEON": "Masternode is currently running",
@@ -283,11 +281,13 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Stopped Unexpectedly",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "There was a problem with Metrix Core that has caused it to terminate. It is recommend to check your debug.log file for issues.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "There was a problem with Metrix Core that has caused it to terminate. It is recommended to check your debug.log file for issues.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Communication Error",
+            "CLIENTUNKNOWNERRORINFO": "There was a problem communicating with Metrix Core. It is recommended to check your debug.log file for issues.",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Failed",
-            "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommend to check your Altitude log file for issues.",
+            "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommended to check your Altitude log file for issues.",
             "STARTUPFAILEDTITLE": "Metrix Core Startup Failed",
-            "STARTUPFAILEDINFO": "There was a starting Metrix Core. It is recommend to check your Altitude log file for issues.",
+            "STARTUPFAILEDINFO": "There was a starting Metrix Core. It is recommended to check your Altitude log file for issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Recovery Tools",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Your metrix.conf has an invalid masternode setup which will cause Metrix Core to exit immediately. Please check this file.",
@@ -406,8 +406,6 @@
         "VERIFYINGMESSAGE": "Verifying message...",
         "WALLETUNLOCKING": "Unlocking wallet...",
         "TRANSACTIONMISMATCH": "Transaction error. Please try again.",
-        "TRANSACTIONOUTPUTTOOLARGE": "One of your pay to amounts is too large to safely send. Maximum is 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Your change is too large to safely send. Maximum is 90,071,992.54740992.",
         "MINIMUMCONFIRMATIONS": "All inputs require at least 1 confirmation before spending.",
         "FAILEDTOWRITECONFIG": "There was a problem writing to your metrix.conf file. Check the file exists and that Altitude has write permissions.",
         "NOPUBLICUP": "No Public IP address found. Check your internet connection and restart Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "You Send",
-                "YOUGET": "You Get",
-                "MRXADDRESS": "Metrix Address",
-                "SWAP": "Swap",
-                "SWAPADDRESSES": "Swap Addresses",
-                "BTCADDRESS": "BTC Address",
-                "INFOLINE1": "Once you have a BTC deposit address any BTC sent to that address will automatically get swapped for MRX into your nominated MRX address.",
-                "INFOLINE2-1": "Transactions typically clear within an hour depending on the Bitcoin block times. We can accept fiat for",
-                "INFOLINE2-2": "participating countries",
-                "INFOLINE2-3": "This will be converted to BTC first then MRX.",
-                "INFOLINE3": "Once your BTC deposit has cleared you'll receive your MRX into your nominated address.",
-                "INFOLINE4": "For more information visit",
-                "FIATSWAPSELECTED": "You will be redirected to Buy.Metrixcoin.com to complete this transaction"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "You are not a Governor",
+                "NOTGOVERNORDETAIL": "Governors are responsible for voting on monthly budgets and blockchain changes. You can become a Governor by locking the correct collateral in the Governance contract.",
+                "COLLATERAL": "Required collateral",
+                "ENROLL": "Enroll",
+                "CONFIRMENROLL": "You are about to enroll as a Governor. This will send a transaction with the required collateral to the governance contract. You can unenroll at any time.",
+                "ISGOVERNORTITLE": "You are an active Governor!",
+                "ISGOVERNORDETAIL1": "Governors are responsible for voting on monthly budgets and blockchain changes.",
+                "ISGOVERNORDETAIL2": "To stay a Governor you will need to participate in at least 1 vote every 30 days.",
+                "ISGOVERNORDETAIL3": "If there is nothing to vote on then you can manually continue your enrollment by sending an active ping.",
+                "UNENROLL": "Unenroll",
+                "PING": "Send Active Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Budget Proposals",
+                "ADDPROPOSAL": "Create Proposal",
+                "REQUESTEDPERMONTH": "per month",
+                "REQUESTEDREMAINING": "remaining",
+                "VOTEYES": "Vote Yes",
+                "VOTEABSTAIN": "Vote Abstain",
+                "VOTENO": "Vote No",
+                "VOTESTOPASS": "votes to pass",
+                "VOTEPASSING": "passing votes"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Create a Proposal",
+                "DESCRIPTION": "Below you can create a budget proposal and submit it to the network for voting before the next budget settlement block.",
+                "BUDGETFEE": "The current budget fee is",
+                "BUDGETBLOCK": "The next settlement block is",
+                "PROPOSALTITLE": "Proposal Name",
+                "PROPOSALDESC": "Proposal Description",
+                "PROPOSALURL": "Proposal URL",
+                "PROPOSALAMOUNT": "Requested Amount",
+                "PROPOSALDURATION": "Requested Payments",
+                "PROPOSALADDRESS": "Payment Address",
+                "PROPOSALCREATE": "Create Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Governance",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +495,15 @@
             "ALREADYHAVEADDRESS": "You already have a BTC address associated with this Metrix address",
             "SWAPUSDMIN": "The minimum USD swap amount is $50",
             "SWAPUSDMAX": "The maximum USD swap amount is $3000",
-            "NOADDRESS": "You didn't enter a Metrix address"
+            "NOADDRESS": "You didn't enter a Metrix address",
+            "INCOMPLETEFORM": "You have not filled in all required fields correctly",
+            "INVALIDPROPOSALDURATION": "Proposal durations should be between 1 and 12 months",
+            "CREATINGPROPOSAL": "Submitting proposal to network...",
+            "CREATEDPROPOSAL": "Your proposal has been created successfully",
+            "ENROLLINGGOVERNOR": "Enrolling as Governor...",
+            "ENROLLEDGOVERNOR": "Your enrollment will be complete once your transaction is confirmed",
+            "VOTINGONPROPOSAL": "Sending proposal vote",
+            "VOTEDONPROPOSAL": "Your vote will be counted once the transaction is confirmed."
         }
     }
 }

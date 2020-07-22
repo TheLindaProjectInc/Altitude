@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Uchapupu",
             "TABLE_SIGNATURE": "Chiratidzo",
             "TABLE_DIFFICULTY": "Dambudziko",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Bvisa Hash",
             "TABLE_CONFIRMATIONS": "Vimbiso",
             "TABLE_INPUTOUTPUT": "Mitsva uye Zvabuda",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet yakavharwa",
                 "UNLOCKED": "Chikwereti chakavharwa",
                 "UNLOCKEDSTAKING": "Chikwama chechikwata chakavharwa kuti chigadzike chete",
-                "UNLOCKEDANON": "Chikwama chechikwata chakavharwa nokuda kwekunyora chete",
                 "STAKING": "Chikwata chechikwata iye zvino chiri kupinza",
                 "NOTSTAKING": "Wallet haisi ikozvino staking",
                 "MASTERNODEON": "Masternode ikozvino inoshanda",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Machechi Akafuridzirwa",
             "ENCRYPTEDCONTENT": "Chero zvipi zvekare zvawakachengetedza zvepahomwe yako faira inofanira kuchinjwa neyo ichangobva kugadzirwa, yakavharwa chikwama chikwama. Nezvikonzero zvekuchengeteka, zvipembenene zvekare zveiyo asina kuvharwa faira refurheni zvichange zvisina zvazvinobatsira pakarepo paunotanga kushandisa svondo itsva, yakavharidzirwa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Akadzima Zvisingatarisirwi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Paiva nechinetso naMetrix Core chakaita kuti chigumise. Iyo inokurudzira kuongorora yako debug.log file yezinyaya.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Paive paine dambudziko neMetrix Core iyo yaakaita kuti ipere. Inokurudzirwa kutarisa yako debug.log faira yezvinyorwa.",
             "CLIENTINVALIDCONFIGTITLE": "Chisina kukodzera metrix.conf Kugadzirisa",
             "CLIENTINVALIDCONFIGINFO": "Wako metrix.conf ane musternode yakashata yakasangana iyo ichaita kuti Metrix Core abve pakarepo. Ndapota chengeta iyi faira.",
             "ADDREMOTEMNTITLE": "Wedzera Remote Masternode",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Yakundikana",
-            "BOOTSTRAPFAILEDINFO": "Paive paine dambudziko bootstrapping Metrix Core. Iyo inokurudzirwa kutarisa yako yeAltitude log faira yezvinetso.",
+            "BOOTSTRAPFAILEDINFO": "Paive paine dambudziko bootstrging Metrix Core. Inokurudzirwa kutarisa yako yeAltitude log faira yezvinetso.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kudzoreredza Zvombo",
             "STARTUPFAILEDTITLE": "Kutanga kweMetrix yakakundikana",
-            "STARTUPFAILEDINFO": "Paive nekutanga Metrix Core. Iyo inokurudzirwa kutarisa yako yeAltitude log faira yezvinetso."
+            "STARTUPFAILEDINFO": "Paive nekutanga Metrix Core. Inokurudzirwa kutarisa yako yeAltitude log faira yezvinetso.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Kutaurirana Kukanganisa",
+            "CLIENTUNKNOWNERRORINFO": "Paive nedambudziko rekutaurirana neMetrix Core. Inokurudzirwa kutarisa yako debug.log faira yezvinyorwa."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transaction error. Ndapota edza zvakare.",
         "MINIMUMCONFIRMATIONS": "Zvose zvinodiwa zvinoda zvishoma 1 kuvimbiswa vasati vashandisa.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Zvinyorwa zvinopihwa ku clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Chimwe chekubhadhara kwako kune mari yakakura kwazvo kuti usatumire zvakachengeteka. Maximum 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Kushandura kwako kwakakura kwazvo kuti usatumire zvakanaka. Maximum 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Kumira masternode...",
         "FAILEDTOWRITECONFIG": "Paive paine dambudziko rekunyorera kune yako metrix.conf faira. Tarisa iyo faira iripo uye kuti Altitude ine kunyorera mvumo.",
         "NOPUBLICUP": "Hapana IP IP kero yakawanikwa. Tarisa yako internet yekubatanidza uye tanga zvakare Altitude.",
@@ -446,30 +444,66 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Iwe Unotumira",
-                "YOUGET": "Unowana",
-                "MRXADDRESS": "Metrix Kero",
-                "SWAP": "Chinjana",
-                "SWAPADDRESSES": "Chinjana Kero",
-                "BTCADDRESS": "BTC Kero",
-                "INFOLINE1": "Paunenge uchinge uine BTC dhipoziti kero chero BTC inotumirwa kune iyo kero inozongoerekana yabatirwa MRX kukero yako yakasarudzwa yeMRX.",
-                "INFOLINE2-1": "Shanduko kazhinji yakajeka mukati meawa zvichienderana neBitro block times. Tinogona kugamuchira fiat ye",
-                "INFOLINE2-2": "nyika dzinotora chikamu",
-                "INFOLINE2-3": "Izvi zvichashandurwazve kuBB kutanga uye MRX.",
-                "INFOLINE3": "Kamwe dhisiti yako yeBTC yajekesa uchagamuchira MRX yako kero yako yakasarudzwa.",
-                "INFOLINE4": "Kuti uwane rumwe ruzivo shanya",
-                "FIATSWAPSELECTED": "Iwe unozoendeswa kune Buy.Metrixcoin.com kuti upedze kutengeserana uku"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Iwe hausi Gavhuna",
+                "NOTGOVERNORDETAIL": "Magavhuna ane basa revavhoti pamwedzi mabhajeti uye blockchain shanduko. Unogona kuve Gavhuna nekuvhara chibvumirano chakakodzera muchibvumirano cheKutonga.",
+                "COLLATERAL": "Zvinodiwa chibvumirano",
+                "ENROLL": "Nyoresa",
+                "CONFIRMENROLL": "Iwe wave kuda kunyoresa seGavhuna. Izvi zvinotumira kutengeserana nechinodikanwa chakabvumirana muchibvumirano chekutonga. Iwe unogona kusunungura chero nguva.",
+                "ISGOVERNORTITLE": "Iwe uri Gavhuna anoshanda!",
+                "ISGOVERNORDETAIL1": "Magavhuna ane basa revavhoti pamwedzi mabhajeti uye blockchain shanduko.",
+                "ISGOVERNORDETAIL2": "Kuti ugare Gavhuna iwe unofanirwa kutora chikamu mukuvhota kamwe chete pamazuva makumi matatu.",
+                "ISGOVERNORDETAIL3": "Kana pasina chinhu chekuvhota pane ipapo iwe unogona kuenda pamurume kunyoresa kwako nekutumira anoshanda ping.",
+                "UNENROLL": "Unnroll",
+                "PING": "Tumira Anoshanda Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Zvirongwa zveBhajeti",
+                "ADDPROPOSAL": "Gadzira Chirevo",
+                "REQUESTEDPERMONTH": "pamwedzi",
+                "REQUESTEDREMAINING": "vakasara",
+                "VOTEYES": "Vote Hongu",
+                "VOTEABSTAIN": "Vote Abitain",
+                "VOTENO": "Vote Kwete",
+                "VOTESTOPASS": "mavhoti kuti apfuure",
+                "VOTEPASSING": "vachipfuura mavhoti"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Gadzira Chirevo",
+                "DESCRIPTION": "Pazasi unogona kugadzira bhajeti chikumbiro uye kuendesa kune network kune yekuvhota pamberi inotevera bhajeti kugadzirisa.",
+                "BUDGETFEE": "Mari iripo bhajeti iri",
+                "BUDGETBLOCK": "Iyo inotevera yekugadzirisa block ndeye",
+                "PROPOSALTITLE": "Proposal Zita",
+                "PROPOSALDESC": "Tsanangudzo Tsananguro",
+                "PROPOSALURL": "Proposal URL",
+                "PROPOSALAMOUNT": "Yakakumbirwa Mari",
+                "PROPOSALDURATION": "Kubvunza Kwakabhadharwa",
+                "PROPOSALADDRESS": "Kubhadhara Kero",
+                "PROPOSALCREATE": "Gadzira Chirevo"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Kutonga",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Kugadzira Sapita Kero...",
-            "ALREADYHAVEADDRESS": "Iwe unotova nekero yeBBT yakabatana nekero ino yeMetrix",
+            "ALREADYHAVEADDRESS": "Iwe unotova nekero yeBBT yakabatana neiyi Metrix kero",
             "SWAPUSDMIN": "Iyo yakaderera USD switch inosvika madhora makumi mashanu",
             "SWAPUSDMAX": "Iyo yepamusoro yeUS dollar switch inosvika zviuru zvitatu zvemadhora",
-            "NOADDRESS": "Iwe hauna kuisa kero yeMetrix"
+            "INCOMPLETEFORM": "Hausati wazadza mumunda wese unodiwa nenzira kwayo",
+            "INVALIDPROPOSALDURATION": "Kurudziro durations inofanira kunge iri pakati pegumi nemwedzi gumi nemaviri",
+            "CREATINGPROPOSAL": "Kuendesa chirevo kunetiweki...",
+            "CREATEDPROPOSAL": "Chikumbiro chako chakagadzirwa nenzira inobudirira",
+            "ENROLLINGGOVERNOR": "Kunyoresa seGavhuna...",
+            "ENROLLEDGOVERNOR": "Kunyoresa kwako kunenge kwapera kana chiitiko chako chasimbiswa",
+            "VOTINGONPROPOSAL": "Kutumira vhoti yevoti",
+            "VOTEDONPROPOSAL": "Vhoti yako ichaverengerwa kana iko kusimbiswa kusimbiswa.",
+            "NOADDRESS": "Iwe hauna kupinda kero yeMetrix"
         }
     }
 }

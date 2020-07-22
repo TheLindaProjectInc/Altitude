@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash důkaz",
             "TABLE_SIGNATURE": "Podpis",
             "TABLE_DIFFICULTY": "Obtížnost",
-            "TABLE_ENTROPYBIT": "Entropický bit",
             "TABLE_BLOCKHASH": "Hash blokování",
             "TABLE_CONFIRMATIONS": "Potvrzení",
             "TABLE_INPUTOUTPUT": "Vstupy a výstupy",
@@ -251,7 +250,6 @@
                 "LOCKED": "Peněženka zamčená",
                 "UNLOCKED": "Peněženka odemčená",
                 "UNLOCKEDSTAKING": "Peněženka odemčena pouze pro staking",
-                "UNLOCKEDANON": "Peněženka byla odemčena pouze pro anonymizaci",
                 "STAKING": "Peněženka aktuálně stahuje",
                 "NOTSTAKING": "Peněženka momentálně nezahrnuje",
                 "MASTERNODEON": "Masternode momentálně běží",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Šifrována peněženka",
             "ENCRYPTEDCONTENT": "Jakékoli předchozí zálohy, které jste vytvořili v souboru peněľenky, by měly být nahrazeny nově vytvořeným šifrovaným souborem peněženky. Z bezpečnostních důvodů se předchozí zálohování souboru neukódované peněženky stane zbytečným, jakmile začnete používat novou šifrovanou peněženku.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core se nečekaně zastavila",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "U Metrix Core došlo k problému, který způsobil, že skončí. Doporučuje se zkontrolovat v souboru debug.log problémy.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Došlo k problému s Metrix Core, který způsobil jeho ukončení. Doporučujeme zkontrolovat problémy v souboru debug.log.",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurace aplikace metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaše zařízení metrix.conf má neplatné nastavení masternode, které způsobí, že společnost Metrix Core okamžitě opustí. Zkontrolujte prosím tento soubor.",
             "ADDREMOTEMNTITLE": "Přidat vzdálený masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Při zavádění systému Metrix Core došlo k potížím. Doporučujeme zkontrolovat problémy v souboru protokolu Altitude.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nástroje pro obnovení",
             "STARTUPFAILEDTITLE": "Spuštění jádra jádra se nezdařilo",
-            "STARTUPFAILEDINFO": "Tam byl počáteční Metrix Core. Doporučujeme zkontrolovat problémy v souboru protokolu Altitude."
+            "STARTUPFAILEDINFO": "Tam byl počáteční Metrix Core. Doporučujeme zkontrolovat problémy v souboru protokolu Altitude.",
+            "CLIENTUNKNOWNERRORTITLE": "Chyba základní komunikace Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Při komunikaci s Metrix Core došlo k potížím. Doporučujeme zkontrolovat problémy v souboru debug.log."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresář",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Chyba transakce. Prosím zkuste to znovu.",
         "MINIMUMCONFIRMATIONS": "Všechny vstupy vyžadují nejméně jedno potvrzení před utracením.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakce byly zkopírovány do schránky",
-        "TRANSACTIONOUTPUTTOOLARGE": "Jedna z vašich plateb na částky je příliš velká, aby bylo možné bezpečně odeslat. Maximální hodnota je 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Vaše změna je příliš velká, aby mohla být bezpečně odeslána. Maximální hodnota je 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Zastavuje se masternode...",
         "FAILEDTOWRITECONFIG": "Při zápisu do souboru metrix.conf došlo k potížím. Zkontrolujte, zda soubor existuje a zda má Altitude oprávnění k zápisu.",
         "NOPUBLICUP": "Nebyla nalezena žádná veřejná IP adresa. Zkontrolujte připojení k internetu a restartujte Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "LISTOPAD",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Posíláte",
-                "YOUGET": "Dostaneš",
-                "MRXADDRESS": "Adresa metriky",
-                "SWAP": "Zaměnit",
-                "SWAPADDRESSES": "Zaměnit adresy",
-                "BTCADDRESS": "Adresa BTC",
-                "INFOLINE1": "Jakmile budete mít vkladovou adresu BTC, bude jakýkoli BTC zaslaný na tuto adresu automaticky převeden za MRX na vaši nominovanou adresu MRX.",
-                "INFOLINE2-1": "Transakce obvykle probíhají během jedné hodiny v závislosti na časech blokových bitcoinů. Můžeme přijmout fiat",
-                "INFOLINE2-2": "zúčastněné země",
-                "INFOLINE2-3": "Toto bude nejprve převedeno na BTC a poté na MRX.",
-                "INFOLINE3": "Jakmile bude váš vklad BTC vymazán, obdržíte MRX na svou nominovanou adresu.",
-                "INFOLINE4": "Pro více informací navštivte",
-                "FIATSWAPSELECTED": "Budete přesměrováni na Buy.Metrixcoin.com k dokončení této transakce"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Nejste guvernér",
+                "NOTGOVERNORDETAIL": "Guvernéři odpovídají za hlasování o měsíčních rozpočtech a změnách blockchainu. Guvernérem se můžete stát uzamčením správného zajištění ve smlouvě o správě.",
+                "COLLATERAL": "Požadované zajištění",
+                "ENROLL": "Zapsat",
+                "CONFIRMENROLL": "Chystáte se zaregistrovat jako guvernér. Tímto se odešle transakce s požadovaným zajištěním do smlouvy o správě. Odhlásit se můžete kdykoli.",
+                "ISGOVERNORTITLE": "Jste aktivní guvernér!",
+                "ISGOVERNORDETAIL1": "Guvernéři odpovídají za hlasování o měsíčních rozpočtech a změnách blockchainu.",
+                "ISGOVERNORDETAIL2": "Abyste zůstali guvernérem, musíte se každých 30 dní účastnit alespoň 1 hlasu.",
+                "ISGOVERNORDETAIL3": "Pokud nemáte co hlasovat, můžete pokračovat v zápisu ručně aktivním pingem.",
+                "UNENROLL": "Odhlásit se",
+                "PING": "Odeslat aktivní ping"
+            },
+            "BUDGET": {
+                "TITLE": "Návrhy rozpočtu",
+                "ADDPROPOSAL": "Vytvořit nabídku",
+                "REQUESTEDPERMONTH": "za měsíc",
+                "REQUESTEDREMAINING": "zbývající",
+                "VOTEYES": "Hlasujte Ano",
+                "VOTEABSTAIN": "Hlasujte proti",
+                "VOTENO": "Hlasujte č",
+                "VOTESTOPASS": "hlasy projít",
+                "VOTEPASSING": "předávání hlasů"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Vytvořte nabídku",
+                "DESCRIPTION": "Níže můžete vytvořit návrh rozpočtu a odeslat jej do sítě k hlasování před dalším blokem vyrovnání rozpočtu.",
+                "BUDGETFEE": "Aktuální poplatek za rozpočet je",
+                "BUDGETBLOCK": "Další blok osídlení je",
+                "PROPOSALTITLE": "Název nabídky",
+                "PROPOSALDESC": "Popis nabídky",
+                "PROPOSALURL": "Adresa URL nabídky",
+                "PROPOSALAMOUNT": "Požadovaná částka",
+                "PROPOSALDURATION": "Požadované platby",
+                "PROPOSALADDRESS": "Platební adresa",
+                "PROPOSALCREATE": "Vytvořit nabídku"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Správa věcí veřejných",
+                "BUDGET": "Rozpočet"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "K této adrese Metrix již máte přiřazenou adresu BTC",
             "SWAPUSDMIN": "Minimální částka pro swap v USD je 50 USD",
             "SWAPUSDMAX": "Maximální částka pro swap v USD je 3000 USD",
+            "INCOMPLETEFORM": "Vyplnili jste všechna povinná pole správně",
+            "INVALIDPROPOSALDURATION": "Doba trvání návrhu by měla být mezi 1 a 12 měsíci",
+            "CREATINGPROPOSAL": "Odesílání návrhu do sítě...",
+            "CREATEDPROPOSAL": "Váš návrh byl úspěšně vytvořen",
+            "ENROLLINGGOVERNOR": "Zapisuje se jako guvernér...",
+            "ENROLLEDGOVERNOR": "Vaše registrace bude dokončena, jakmile bude transakce potvrzena",
+            "VOTINGONPROPOSAL": "Odeslání hlasování o návrhu",
+            "VOTEDONPROPOSAL": "Váš hlas bude započítán, jakmile bude transakce potvrzena.",
             "NOADDRESS": "Nezadali jste adresu Metrix"
         }
     }

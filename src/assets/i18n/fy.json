@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Hantekening",
             "TABLE_DIFFICULTY": "Swierrichheid",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Befestigings",
             "TABLE_INPUTOUTPUT": "Ynputs en útfieringen",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet sletten",
                 "UNLOCKED": "Wallet ûntslein",
                 "UNLOCKEDSTAKING": "Wallet ûntsluten foar allinich staking",
-                "UNLOCKEDANON": "Wallet ûntsluten allinich foar anonymisaasje",
                 "STAKING": "Wallet is op it stuit stakke",
                 "NOTSTAKING": "Wallet is no op it stuit net",
                 "MASTERNODEON": "Masternode is op it stuit rûn",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet fersifere",
             "ENCRYPTEDCONTENT": "Alle foarige backups dy't jo fan jo wallet bestân makke binne moatte ferfangen wurde troch de nij generearre, fersifere wallet bestân. Foar feiligens redenen, foarige reservekopy fan 'e ûnbeskriuwde triemtafel sil nutteloos wurde as jo begjinne mei it brûken fan de nije, fersifere wallet.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppet ûnferwachts",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Der wie in probleem mei Metrix Core dy't it feroarsake hat. It is oan te rieden om jo debug.log triem te kontrolearjen foar saken.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "D'r wie in probleem mei Metrix Core dy't har beëinige hat. It is oan te rieden om jo debug.log-bestân te kontrolearjen op problemen.",
             "CLIENTINVALIDCONFIGTITLE": "Unjildige metrix.conf konfiguraasje",
             "CLIENTINVALIDCONFIGINFO": "Jo metrix.conf hat in ûnjildige masternode opset dy't Metrix Core feroaret om fuortendaliks fuort te gean. Kontrolearje dizze triem.",
             "ADDREMOTEMNTITLE": "Masternode op ôfstân tafoegje",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Der wie in probleem by it opstarten fan Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Weromsette ark",
             "STARTUPFAILEDTITLE": "Metrix Core opstarten mislearre",
-            "STARTUPFAILEDINFO": "D'r wie in startende Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen."
+            "STARTUPFAILEDINFO": "D'r wie in startende Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikaasjeflater",
+            "CLIENTUNKNOWNERRORINFO": "D'r wie problemen mei de kommunikaasje mei Metrix Core. It is oan te rieden om jo debug.log-bestân te kontrolearjen op problemen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Ferkearingsflater. Besykje it nochris.",
         "MINIMUMCONFIRMATIONS": "Alle ynputs freegje op syn minst 1 befestiging foar de útjeften.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjes kopieare nei klamboerd",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ien fan jo beteljen foar bedraggen is te grut om safier te stjoeren. Maksimum is 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jo feroaring is te grut om safier te stjoeren. Maksimum is 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Masternode stopje...",
         "FAILEDTOWRITECONFIG": "Der wie in probleem by it skriuwen nei jo metrix.conf-bestân. Kontrolearje of it bestân bestiet en dat Altitude skriuwrjochten hat.",
         "NOPUBLICUP": "Gjin iepenbier IP-adres fûn. Kontrolearje jo ynternetferbining en starte Altitude opnij.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Do stjoerst",
-                "YOUGET": "Do krigest",
-                "MRXADDRESS": "Metrix-adres",
-                "SWAP": "Ruilje",
-                "SWAPADDRESSES": "Ruilje adressen",
-                "BTCADDRESS": "BTC-adres",
-                "INFOLINE1": "As jo ienris in BTC-adres hawwe, wurdt elke BTC nei dat adres ferstjoerd automatysk foar MRX yn jo nomineare MRX-adres.",
-                "INFOLINE2-1": "Transaksjes ferdwine typysk binnen in oere ôfhinklik fan 'e Bitcoin-bloktiden. Wy kinne fiat akseptearje foar",
-                "INFOLINE2-2": "dielnimmende lannen",
-                "INFOLINE2-3": "Dit sil earst konverteare wurde nei BTC dan MRX.",
-                "INFOLINE3": "Sadree't jo BTC-boarch is ferdwûn, ûntfange jo MRX yn jo nomineare adres.",
-                "INFOLINE4": "Foar mear ynformaasje besykje",
-                "FIATSWAPSELECTED": "Jo sille wurde omlieden nei Buy.Metrixcoin.com om dizze transaksje te foltôgjen"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Jo binne gjin gûverneur",
+                "NOTGOVERNORDETAIL": "Bestjoerders binne ferantwurdelik foar stimmen oer moanlikse budzjetten en feroaringen fan blockchain. Jo kinne in gûverneur wurde troch de juste ûnderpân yn it regearkontrakt te beskoatteljen.",
+                "COLLATERAL": "Boarchsom nedich",
+                "ENROLL": "Ynskriuwe",
+                "CONFIRMENROLL": "Jo steane op it punt om yn te registrearjen as gûverneur. Dit sil in transaksje mei de fereaske ûnderpân stjoere nei it bestjoerskontrakt. Jo kinne op elk momint ôfmelde.",
+                "ISGOVERNORTITLE": "Jo binne in aktive gûverneur!",
+                "ISGOVERNORDETAIL1": "Bestjoerders binne ferantwurdelik foar stimmen oer moanlikse budzjetten en feroaringen fan blockchain.",
+                "ISGOVERNORDETAIL2": "Om in gûverneur te bliuwen, moatte jo elke 30 dagen meidwaan oan minstens 1 stim.",
+                "ISGOVERNORDETAIL3": "As d'r neat is om oer te stimmen, dan kinne jo jo ynskriuwing manuell trochgean troch in aktive ping te stjoeren.",
+                "UNENROLL": "Unregistrearje",
+                "PING": "Aktyf ping ferstjoere"
+            },
+            "BUDGET": {
+                "TITLE": "Budgetútstellen",
+                "ADDPROPOSAL": "Foarstel oanmeitsje",
+                "REQUESTEDPERMONTH": "per moanne",
+                "REQUESTEDREMAINING": "oerbleaun",
+                "VOTEYES": "Stim Ja",
+                "VOTEABSTAIN": "Stim Abstain",
+                "VOTENO": "Stim nr",
+                "VOTESTOPASS": "stimmen om te passearjen",
+                "VOTEPASSING": "foarby geande stimmen"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Meitsje in foarstel",
+                "DESCRIPTION": "Hjirûnder kinne jo in budzjetútstel oanmeitsje en yntsjinje foar it netwurk foar stimmen foardat it folgjende budzjetregelingblok is.",
+                "BUDGETFEE": "De hjoeddeistige begruttingskosten binne",
+                "BUDGETBLOCK": "It folgjende delsettingsblok is",
+                "PROPOSALTITLE": "Foarstel Namme",
+                "PROPOSALDESC": "Foarstelbeskriuwing",
+                "PROPOSALURL": "Foarstel URL",
+                "PROPOSALAMOUNT": "Bedrach frege",
+                "PROPOSALDURATION": "Oanfrege betellingen",
+                "PROPOSALADDRESS": "Betellingsadres",
+                "PROPOSALCREATE": "Foarstel oanmeitsje"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Bestjoer",
+                "BUDGET": "Begrutting"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Adres wikselje generearje...",
             "ALREADYHAVEADDRESS": "Jo hawwe al in BTC-adres ferbûn mei dit Metrix-adres",
-            "SWAPUSDMIN": "It minimale USD-ruilbedrach is $ 50",
-            "SWAPUSDMAX": "It maksimale USD-ruilbedrach is $ 3000",
+            "SWAPUSDMIN": "It minimale swapbedrach fan USD is 50 $",
+            "SWAPUSDMAX": "It maksimale swapbedrach fan USD is $ 3000",
+            "INCOMPLETEFORM": "Jo hawwe alle fereaske fjilden net korrekt ynfold",
+            "INVALIDPROPOSALDURATION": "Duraasje fan foarstel moat tusken 1 en 12 moannen wêze",
+            "CREATINGPROPOSAL": "Foarstel yntsjinje foar netwurk...",
+            "CREATEDPROPOSAL": "Jo foarstel is mei sukses oanmakke",
+            "ENROLLINGGOVERNOR": "Ynskriuwe as gûverneur...",
+            "ENROLLEDGOVERNOR": "Jo ynskriuwing sil folslein wêze as jo transaksje is befêstige",
+            "VOTINGONPROPOSAL": "Stjoeren fan útstel foarstel",
+            "VOTEDONPROPOSAL": "Jo stim sil wurde teld as de transaksje is befêstige.",
             "NOADDRESS": "Jo hawwe gjin Metrix-adres ynfierd"
         }
     }

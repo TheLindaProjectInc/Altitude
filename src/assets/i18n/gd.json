@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Sgaoileadh",
             "TABLE_SIGNATURE": "Ainm sgrìobhte",
             "TABLE_DIFFICULTY": "Duilgheadas",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Bloc Hash",
             "TABLE_CONFIRMATIONS": "Dearbhaidhean",
             "TABLE_INPUTOUTPUT": "Inputs agus Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "Balla-luirg glaiste",
                 "UNLOCKED": "Ballain air fhosgladh",
                 "UNLOCKEDSTAKING": "Balla-luirg air a ghlasadh airson staking a-mhàin",
-                "UNLOCKEDANON": "Balla-luirg air fhosgladh airson gun urra ach a-mhàin",
                 "STAKING": "Tha balla-bìdh an-dràsda",
                 "NOTSTAKING": "Chan eil am balla-bìdh an-dràsda",
                 "MASTERNODEON": "Tha Masternode an-dràsta a 'ruith",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Ballain air a chrioptachadh",
             "ENCRYPTEDCONTENT": "Bu chòir lethbhreacan sam bith a rinn thu roimhe den fhaidhle faire agad a chur an àite leis a 'fhaidhle-faire gearaidh ùr-ghintealach. Airson adhbharan tèarainteachd, cha tèid cùl-taice roimhe den fhaidhle-faire gun fhiosta gun fheum cho luath 'sa bhios tu a' tòiseachadh leis a 'bhotal ùr.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core air a stad gun dùil",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Bha duilgheadas ann le Metrix Core a tha air adhbharachadh crìoch a chur air. Tha e air a mholadh airson sùil a thoirt air do fhaidhle debug.log airson cùisean.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Bha duilgheadas ann le Metrix Core a thug air crìochnachadh. Thathas a ’moladh sùil a thoirt air an fhaidhle debug.log agad airson cùisean.",
             "CLIENTINVALIDCONFIGTITLE": "Configuration neo-dhligheach metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Tha do shuidheachadh metrix.conf ann an suidheachadh neo-dhligheach a bhios a 'toirt air Metrix Core fàgail sa bhad. Thoir sùil air an fhaidhle seo.",
             "ADDREMOTEMNTITLE": "Cuir Remote Masternode Cuir ris",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Bha duilgheadas ann a ’togail Metrix Core. Thathas a ’moladh sùil a thoirt air am faidhle log Altitude agad airson cùisean.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Innealan ath-bheothachaidh",
             "STARTUPFAILEDTITLE": "Dh'fhàillig tòiseachadh tòiseachaidh Metrix",
-            "STARTUPFAILEDINFO": "Bha Metrix Core tòiseachaidh ann. Thathas a ’moladh sùil a thoirt air am faidhle log Altitude agad airson cùisean."
+            "STARTUPFAILEDINFO": "Bha Metrix Core tòiseachaidh ann. Thathas a ’moladh sùil a thoirt air am faidhle log Altitude agad airson cùisean.",
+            "CLIENTUNKNOWNERRORTITLE": "Mearachd conaltraidh bunaiteach Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Bha duilgheadas ann a bhith a ’conaltradh le Metrix Core. Thathas a ’moladh sùil a thoirt air an fhaidhle debug.log agad airson cùisean."
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar-seòlaidh",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Mearachd gnìomhachd. Feuch ris a-rithist.",
         "MINIMUMCONFIRMATIONS": "Feumaidh a h-uile cur-a-steach co-dhiù 1 dearbhadh mus cosg e.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Gnìomhan air an lethbhreacadh gu clàr-clip",
-        "TRANSACTIONOUTPUTTOOLARGE": "Tha aon de do phàigheadh gu sùimeannan ro mhòr airson cuir gu sàbhailte. Is e an àireamh as àirde 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Tha an t-atharrachadh ro mhòr airson a chuir gu sàbhailte. Is e an àireamh as àirde 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "A ’stad masternode...",
         "FAILEDTOWRITECONFIG": "Bha duilgheadas ann a ’sgrìobhadh chun fhaidhle metrix.conf. Dèan cinnteach gu bheil am faidhle ann agus gu bheil cead aig Altitude airson ceadan a sgrìobhadh.",
         "NOPUBLICUP": "Cha deach seòladh IP poblach a lorg. Thoir sùil air a ’cheangal eadar-lìn agad agus tòisich a-rithist Àirde.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Tha thu a ’cur",
-                "YOUGET": "Gheibh thu",
-                "MRXADDRESS": "Seòladh Metrix",
-                "SWAP": "Suaip",
-                "SWAPADDRESSES": "Seòlaidhean suaip",
-                "BTCADDRESS": "Seòladh BTC",
-                "INFOLINE1": "Aon uair ‘s gu bheil seòladh tasgaidh BTC agad thèid BTC sam bith a thèid a chuir chun t-seòladh sin atharrachadh gu fèin-ghluasadach airson MRX a-steach don t-seòladh MRX ainmichte agad.",
-                "INFOLINE2-1": "Mar as trice bidh gnothaichean a ’glanadh taobh a-staigh uair a-thìde a rèir amannan bloc Bitcoin. Faodaidh sinn gabhail ri fiat airson",
-                "INFOLINE2-2": "dùthchannan a tha a ’gabhail pàirt",
-                "INFOLINE2-3": "Thèid seo atharrachadh gu BTC an toiseach agus an uairsin MRX.",
-                "INFOLINE3": "Aon uair ‘s gu bheil do thasgadh BTC air glanadh gheibh thu do MRX a-steach don t-seòladh ainmichte agad.",
-                "INFOLINE4": "Airson tuilleadh fiosrachaidh, tadhal air",
-                "FIATSWAPSELECTED": "Thèid do ath-stiùireadh gu Buy.Metrixcoin.com gus crìoch a chur air a ’ghnothach seo"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Chan eil thu nad Riaghladair",
+                "NOTGOVERNORDETAIL": "Tha uallach air riaghladairean bhòtadh air buidseatan mìosail agus atharrachaidhean blockchain. Faodaidh tu a bhith nad Riaghladair le bhith a ’glasadh a’ cho-thaobhadh ceart anns a ’chùmhnant Riaghlaidh.",
+                "COLLATERAL": "Co-thaobhadh riatanach",
+                "ENROLL": "Clàraich",
+                "CONFIRMENROLL": "Tha thu gu bhith a ’clàradh mar Riaghladair. Cuiridh seo malairt leis a ’cho-thaobhadh riatanach chun chùmhnant riaghlaidh. Faodaidh tu dì-chlàradh aig àm sam bith.",
+                "ISGOVERNORTITLE": "Tha thu nad Riaghladair gnìomhach!",
+                "ISGOVERNORDETAIL1": "Tha uallach air riaghladairean bhòtadh air buidseatan mìosail agus atharrachaidhean blockchain.",
+                "ISGOVERNORDETAIL2": "Gus fuireach mar Riaghladair feumaidh tu pàirt a ghabhail ann an co-dhiù 1 bhòt gach 30 latha.",
+                "ISGOVERNORDETAIL3": "Mura h-eil dad ann airson bhòtadh faodaidh tu leantainn air adhart le do chlàradh le bhith a ’cur ping gnìomhach.",
+                "UNENROLL": "Unenroll",
+                "PING": "Cuir Ping Gnìomhach"
+            },
+            "BUDGET": {
+                "TITLE": "Molaidhean buidseit",
+                "ADDPROPOSAL": "Cruthaich Moladh",
+                "REQUESTEDPERMONTH": "gach mìos",
+                "REQUESTEDREMAINING": "air fhàgail",
+                "VOTEYES": "Bhòt Tha",
+                "VOTEABSTAIN": "Bhòt Abstain",
+                "VOTENO": "Bhòt Àir",
+                "VOTESTOPASS": "bhòtaichean ri dhol seachad",
+                "VOTEPASSING": "a ’dol seachad air bhòtaichean"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Cruthaich Moladh",
+                "DESCRIPTION": "Gu h-ìosal faodaidh tu moladh buidseit a chruthachadh agus a chuir a-steach don lìonra airson bhòtadh ron ath bhloc rèiteachaidh buidseit.",
+                "BUDGETFEE": "Tha a ’chìs buidseit an-dràsta",
+                "BUDGETBLOCK": "Is e an ath bhloc tuineachaidh",
+                "PROPOSALTITLE": "Ainm a ’Mholaidh",
+                "PROPOSALDESC": "Tuairisgeul a ’Mholaidh",
+                "PROPOSALURL": "URL a ’mholaidh",
+                "PROPOSALAMOUNT": "Suim a chaidh iarraidh",
+                "PROPOSALDURATION": "Pàighidhean a chaidh iarraidh",
+                "PROPOSALADDRESS": "Seòladh pàighidh",
+                "PROPOSALCREATE": "Cruthaich Moladh"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Riaghladh",
+                "BUDGET": "Buidseat"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +495,15 @@
             "ALREADYHAVEADDRESS": "Tha seòladh BTC agad mu thràth co-cheangailte ris an t-seòladh Metrix seo",
             "SWAPUSDMIN": "Is e $ 50 an ìre iomlaid USD as ìsle",
             "SWAPUSDMAX": "Is e $ 3000 an t-suim iomlaid USD as àirde",
-            "NOADDRESS": "Cha do chuir thu a-steach seòladh Metrix"
+            "INCOMPLETEFORM": "Cha do lìon thu a h-uile raon a tha a dhìth gu ceart",
+            "INVALIDPROPOSALDURATION": "Bu chòir gum biodh ùine an tagraidh eadar 1 agus 12 mìosan",
+            "CREATINGPROPOSAL": "A ’cur a-steach moladh gu lìonra...",
+            "CREATEDPROPOSAL": "Chaidh do mholadh a chruthachadh gu soirbheachail",
+            "ENROLLINGGOVERNOR": "A ’clàradh mar Riaghladair...",
+            "ENROLLEDGOVERNOR": "Bidh an clàradh agad deiseil aon uair ‘s gu bheil do ghnothach air a dhearbhadh",
+            "VOTINGONPROPOSAL": "A ’cur bhòt tagraidh",
+            "VOTEDONPROPOSAL": "Thèid do bhòt a chunntadh aon uair ‘s gu bheil an gnothach air a dhearbhadh.",
+            "NOADDRESS": "Cha deach thu a-steach do sheòladh Metrix"
         }
     }
 }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signatur",
             "TABLE_DIFFICULTY": "Vanskelighet",
-            "TABLE_ENTROPYBIT": "Entropi Bit",
             "TABLE_BLOCKHASH": "Blokker Hash",
             "TABLE_CONFIRMATIONS": "bekreftelser",
             "TABLE_INPUTOUTPUT": "Innganger og utganger",
@@ -251,7 +250,6 @@
                 "LOCKED": "Lommeboken låst",
                 "UNLOCKED": "Lommebok ulåst",
                 "UNLOCKEDSTAKING": "Lommebok låst opp for staking bare",
-                "UNLOCKEDANON": "Lommebok låst opp for kun anonymisering",
                 "STAKING": "Wallet er for tiden staking",
                 "NOTSTAKING": "Lommeboken er for tiden ikke staking",
                 "MASTERNODEON": "Masternode kjører for tiden",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Lommebok Kryptert",
             "ENCRYPTEDCONTENT": "Eventuelle tidligere sikkerhetskopier du har laget av lommebokfilen din, skal erstattes med den nylig genererte, krypterte lommebokfilen. Av sikkerhetshensyn blir tidligere sikkerhetskopier av den ukrypterte lommebokfilen ubrukelig så snart du begynner å bruke den nye krypterte lommeboken.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppet uventet",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var et problem med Metrix Core som har forårsaket det å si opp. Det anbefales å sjekke debug.log-filen din for problemer.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var et problem med Metrix Core som har fått den til å avslutte. Det anbefales å sjekke debug.log-filen for problemer.",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf Konfigurasjon",
             "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har et ugyldig masternodeoppsett som vil føre til at Metrix Core avsluttes umiddelbart. Vennligst sjekk denne filen.",
             "ADDREMOTEMNTITLE": "Legg til ekstern masternode",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislyktes",
-            "BOOTSTRAPFAILEDINFO": "Det oppsto et problem med å starte opp Metrix Core. Det anbefales å sjekke Altitude-loggfilen for problemer.",
+            "BOOTSTRAPFAILEDINFO": "Det var et problem med å starte opp Metrix Core. Det anbefales å sjekke Altitude-loggfilen for problemer.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Gjenopprettingsverktøy",
             "STARTUPFAILEDTITLE": "Oppstart av Metrix Core mislyktes",
-            "STARTUPFAILEDINFO": "Det var en startende Metrix Core. Det anbefales å sjekke Altitude-loggfilen for problemer."
+            "STARTUPFAILEDINFO": "Det var en startende Metrix Core. Det anbefales å sjekke Altitude-loggfilen for problemer.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikasjonsfeil",
+            "CLIENTUNKNOWNERRORINFO": "Det var et problem med å kommunisere med Metrix Core. Det anbefales å sjekke debug.log-filen for problemer."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebok",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transaksjonsfeil. Vær så snill, prøv på nytt.",
         "MINIMUMCONFIRMATIONS": "Alle innganger krever minst 1 bekreftelse før utgifter.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjoner kopiert til utklippstavlen",
-        "TRANSACTIONOUTPUTTOOLARGE": "En av betalingen til beløp er for stor til å sende trygt. Maksimum er 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Endringen din er for stor til å sende trygt. Maksimum er 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Stopper masternode...",
         "FAILEDTOWRITECONFIG": "Det oppsto et problem med å skrive til metrix.conf-filen. Sjekk at filen eksisterer, og at Altitude har skrivetillatelser.",
         "NOPUBLICUP": "Ingen offentlig IP-adresse funnet. Sjekk internettforbindelsen din og start Altitude på nytt.",
@@ -446,22 +444,50 @@
         "NOV": "november",
         "DEC": "desember"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Du sender",
-                "YOUGET": "Du får",
-                "MRXADDRESS": "Metrix-adresse",
-                "SWAP": "Bytte",
-                "SWAPADDRESSES": "Bytt adresser",
-                "BTCADDRESS": "BTC-adresse",
-                "INFOLINE1": "Når du har en BTC-innskuddsadresse, vil alle BTC som sendes til den adressen automatisk byttes ut for MRX til din nominerte MRX-adresse.",
-                "INFOLINE2-1": "Transaksjoner ryddes vanligvis i løpet av en time, avhengig av Bitcoin-blokkeringstidene. Vi kan godta fiat for",
-                "INFOLINE2-2": "deltakende land",
-                "INFOLINE2-3": "Dette blir konvertert til BTC først deretter MRX.",
-                "INFOLINE3": "Når BTC-innskuddet ditt er opphevet, mottar du MRX-en din til den nominerte adressen.",
-                "INFOLINE4": "For mer informasjon besøk",
-                "FIATSWAPSELECTED": "Du blir omdirigert til Buy.Metrixcoin.com for å fullføre denne transaksjonen"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Du er ikke en guvernør",
+                "NOTGOVERNORDETAIL": "Guvernører er ansvarlige for å stemme over månedlige budsjetter og endringer i blockchain. Du kan bli guvernør ved å låse riktig sikkerhet i styringsavtalen.",
+                "COLLATERAL": "Nødvendig sikkerhet",
+                "ENROLL": "Registrere",
+                "CONFIRMENROLL": "Du er i ferd med å melde deg inn som guvernør. Dette vil sende en transaksjon med nødvendig sikkerhet til styringsavtalen. Du kan når som helst avmelde deg.",
+                "ISGOVERNORTITLE": "Du er en aktiv guvernør!",
+                "ISGOVERNORDETAIL1": "Guvernører er ansvarlige for å stemme over månedlige budsjetter og endringer i blockchain.",
+                "ISGOVERNORDETAIL2": "For å være guvernør må du delta i minst 1 stemme hver 30. dag.",
+                "ISGOVERNORDETAIL3": "Hvis det ikke er noe å stemme på, kan du manuelt fortsette påmeldingen ved å sende en aktiv ping.",
+                "UNENROLL": "Forlat",
+                "PING": "Send Active Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Budsjettforslag",
+                "ADDPROPOSAL": "Lag forslag",
+                "REQUESTEDPERMONTH": "per måned",
+                "REQUESTEDREMAINING": "gjenstående",
+                "VOTEYES": "Stem ja",
+                "VOTEABSTAIN": "Stem avhold",
+                "VOTENO": "Stem nr",
+                "VOTESTOPASS": "stemmer for å bestå",
+                "VOTEPASSING": "passerende stemmer"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Lag et forslag",
+                "DESCRIPTION": "Nedenfor kan du lage et budsjettforslag og sende det til nettverket for avstemning før neste budsjettforlikningsblokk.",
+                "BUDGETFEE": "Gjeldende budsjettgebyr er",
+                "BUDGETBLOCK": "Neste bosettingsblokk er",
+                "PROPOSALTITLE": "Forslagets navn",
+                "PROPOSALDESC": "Forslag Beskrivelse",
+                "PROPOSALURL": "Forslags URL",
+                "PROPOSALAMOUNT": "Ønsket beløp",
+                "PROPOSALDURATION": "Forespurte betalinger",
+                "PROPOSALADDRESS": "betalingsadresse",
+                "PROPOSALCREATE": "Lag forslag"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "styresett",
+                "BUDGET": "Budsjett"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Du har allerede en BTC-adresse tilknyttet denne Metrix-adressen",
             "SWAPUSDMIN": "Minste USD-byttebeløp er $ 50",
             "SWAPUSDMAX": "Det maksimale USD-byttebeløpet er $ 3000",
+            "INCOMPLETEFORM": "Du har ikke fylt ut alle nødvendige felt riktig",
+            "INVALIDPROPOSALDURATION": "Forslagets varighet bør være mellom 1 og 12 måneder",
+            "CREATINGPROPOSAL": "Sender forslag til nettverk...",
+            "CREATEDPROPOSAL": "Forslaget ditt er opprettet",
+            "ENROLLINGGOVERNOR": "Melde deg på som guvernør...",
+            "ENROLLEDGOVERNOR": "Registreringen din vil være fullført når transaksjonen er bekreftet",
+            "VOTINGONPROPOSAL": "Sender forslagstemme",
+            "VOTEDONPROPOSAL": "Din stemme blir talt når transaksjonen er bekreftet.",
             "NOADDRESS": "Du oppga ikke en Metrix-adresse"
         }
     }

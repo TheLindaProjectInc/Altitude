@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "הוכחה",
             "TABLE_SIGNATURE": "חתימה",
             "TABLE_DIFFICULTY": "קושי",
-            "TABLE_ENTROPYBIT": "אנטרופיה ביט",
             "TABLE_BLOCKHASH": "חסום חשיש",
             "TABLE_CONFIRMATIONS": "אישורים",
             "TABLE_INPUTOUTPUT": "תשומות ותפוקות",
@@ -251,7 +250,6 @@
                 "LOCKED": "הארנק נעול",
                 "UNLOCKED": "ארנק נעול",
                 "UNLOCKEDSTAKING": "ארנק נעול עבור staking בלבד",
-                "UNLOCKEDANON": "הארנק בוטל עבור אנונימיזציה בלבד",
                 "STAKING": "הארנק נמצא כעת בעיצומו",
                 "NOTSTAKING": "הארנק אינו מתבצע כרגע",
                 "MASTERNODEON": "מאסטרנודה פועל כרגע",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "ארנק מוצפן",
             "ENCRYPTEDCONTENT": "כל גיבויים קודמים שעשיתם של תיק הארנק שלך צריך להיות מוחלף עם קובץ הארנק החדש שנוצר, מוצפן. מטעמי אבטחה, גיבויים קודמים של קובץ הארנק לא מוצפן יהפוך חסר תועלת ברגע שתתחיל להשתמש בארנק החדש, מוצפן.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "לינדה הליבה הפסיק באופן בלתי צפוי",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "היתה בעיה עם לינדה Core שגרמה לו לסיים. מומלץ לבדוק את הקובץ debug.log לבעיות.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "הייתה בעיה ב- Metrix Core שגרמה לה להפסיק. מומלץ לבדוק בעיות בקובץ debug.log שלך.",
             "CLIENTINVALIDCONFIGTITLE": "תצורה של metrix.conf לא חוקית",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf שלך יש הגדרה masternode לא חוקי אשר יגרום לינדה Core לצאת מיד. בדוק את הקובץ הזה.",
             "ADDREMOTEMNTITLE": "הוסף Masternode מרחוק",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "הייתה בעיה באתחול של Metrix Core. מומלץ לבדוק בעיות בקובץ יומן ה- Altitude שלך.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "כלי התאוששות",
             "STARTUPFAILEDTITLE": "הפעלת Metrix Core נכשלה",
-            "STARTUPFAILEDINFO": "היה מטריקס ליבה מתחיל. מומלץ לבדוק בעיות בקובץ יומן ה- Altitude שלך."
+            "STARTUPFAILEDINFO": "היה מטריקס ליבה מתחיל. מומלץ לבדוק בעיות בקובץ יומן ה- Altitude שלך.",
+            "CLIENTUNKNOWNERRORTITLE": "שגיאת תקשורת Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "הייתה בעיה בתקשורת עם Metrix Core. מומלץ לבדוק בעיות בקובץ debug.log שלך."
         },
         "ADDRESSBOOK": {
             "TITLE": "פנקס הכתובות",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "שגיאת עסקה. בבקשה נסה שוב.",
         "MINIMUMCONFIRMATIONS": "כל התשומות דורשות אישור אחד לפחות לפני ההוצאות.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "עסקאות שהועתקו ללוח",
-        "TRANSACTIONOUTPUTTOOLARGE": "אחד משלמיך לסכומים גדול מדי לבטחה. המקסימום הוא 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "השינוי שלך גדול מדי כדי לשלוח אותו בבטחה. המקסימום הוא 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "עוצר את הזיכרון...",
         "FAILEDTOWRITECONFIG": "הייתה בעיה בכתיבה לקובץ metrix.conf. ודא שהקובץ קיים וכי ל- Altitude יש הרשאות כתיבה.",
         "NOPUBLICUP": "לא נמצאה כתובת IP ציבורית. בדוק את חיבור האינטרנט שלך והפעל מחדש את Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "דצמבר"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "אתה שולח",
-                "YOUGET": "אתה מקבל",
-                "MRXADDRESS": "כתובת מטריקס",
-                "SWAP": "החלף",
-                "SWAPADDRESSES": "החלף כתובות",
-                "BTCADDRESS": "כתובת BTC",
-                "INFOLINE1": "ברגע שיש לך כתובת פיקדון BTC, כל BTC שיישלח לכתובת זו יוחלף אוטומטית עבור MRX לכתובת MRX המועמדת שלך.",
-                "INFOLINE2-1": "עסקאות מתרחשות בדרך כלל תוך שעה, תלוי בזמני החסימה של הביטקוין. אנו יכולים לקבל פיאט עבור",
-                "INFOLINE2-2": "מדינות המשתתפות",
-                "INFOLINE2-3": "זה יומר לראשונה ל- BTC ואז ל- MRX.",
-                "INFOLINE3": "לאחר שהפקדת BTC שלך תיפתר תקבל את ה- MRX לכתובת המועמדת שלך.",
-                "INFOLINE4": "למידע נוסף בקרו באתר",
-                "FIATSWAPSELECTED": "תנותב אל Buy.Metrixcoin.com להשלמת עסקה זו"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "אתה לא מושל",
+                "NOTGOVERNORDETAIL": "נגידים אחראים להצביע על תקציבים חודשיים ושינויים ב- blockchain. אתה יכול להפוך לנגיד על ידי נעילת הביטחונות הנכונים בחוזה הממשל.",
+                "COLLATERAL": "בטחונות נדרשים",
+                "ENROLL": "לְהִרָשֵׁם",
+                "CONFIRMENROLL": "אתה עומד להירשם כמושל. זה ישלח עסקה עם הבטחונות הנדרשים לחוזה הממשל. ניתן לבטל את ההרשמה בכל עת.",
+                "ISGOVERNORTITLE": "אתה מושל פעיל!",
+                "ISGOVERNORDETAIL1": "נגידים אחראים להצביע על תקציבים חודשיים ושינויים ב- blockchain.",
+                "ISGOVERNORDETAIL2": "כדי להישאר מושל תצטרך להשתתף בהצבעה אחת לפחות כל 30 יום.",
+                "ISGOVERNORDETAIL3": "אם אין על מה להצביע, תוכלו להמשיך ידנית בהרשמה על ידי שליחת פינג פעיל.",
+                "UNENROLL": "בטל הרשמה",
+                "PING": "שלח פינג פעיל"
+            },
+            "BUDGET": {
+                "TITLE": "הצעות תקציב",
+                "ADDPROPOSAL": "צור הצעה",
+                "REQUESTEDPERMONTH": "לחודש",
+                "REQUESTEDREMAINING": "נוֹתָר",
+                "VOTEYES": "הצבעו כן",
+                "VOTEABSTAIN": "הצבעו להימנע",
+                "VOTENO": "הצבע לא",
+                "VOTESTOPASS": "הצבעות לעבור",
+                "VOTEPASSING": "הצבעות חולפות"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "צור הצעה",
+                "DESCRIPTION": "להלן תוכלו ליצור הצעת תקציב ולהגיש אותה לרשת להצבעה לפני הגוש הסדר התקציב הבא.",
+                "BUDGETFEE": "עמלת התקציב הנוכחית היא",
+                "BUDGETBLOCK": "גוש ההתנחלות הבא הוא",
+                "PROPOSALTITLE": "שם ההצעה",
+                "PROPOSALDESC": "תיאור ההצעה",
+                "PROPOSALURL": "כתובת אתר להצעה",
+                "PROPOSALAMOUNT": "סכום מבוקש",
+                "PROPOSALDURATION": "תשלומים מבוקשים",
+                "PROPOSALADDRESS": "כתובת לתשלום",
+                "PROPOSALCREATE": "צור הצעה"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "ממשל",
+                "BUDGET": "תַקצִיב"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "יוצר החלפת כתובת...",
             "ALREADYHAVEADDRESS": "יש לך כבר כתובת BTC המשויכת לכתובת מטריקס זו",
-            "SWAPUSDMIN": "סכום ההחלפה המינימלי USD הוא 50 $",
-            "SWAPUSDMAX": "הסכום המקסימלי להחלפת דולר הוא 3000 $",
+            "SWAPUSDMIN": "הסכום המינימלי להחלפה בסך USD הוא 50 $",
+            "SWAPUSDMAX": "הסכום המקסימלי להחלפת דולר הוא 3000 דולר",
+            "INCOMPLETEFORM": "לא מילאת נכון את כל השדות הנדרשים",
+            "INVALIDPROPOSALDURATION": "משך ההצעה צריך להיות בין חודש ל 12 חודשים",
+            "CREATINGPROPOSAL": "מגיש הצעה לרשת...",
+            "CREATEDPROPOSAL": "ההצעה שלך נוצרה בהצלחה",
+            "ENROLLINGGOVERNOR": "נרשם לנגיד...",
+            "ENROLLEDGOVERNOR": "ההרשמה שלך תושלם לאחר אישור העסקה שלך",
+            "VOTINGONPROPOSAL": "שולח הצבעה להצעה",
+            "VOTEDONPROPOSAL": "ההצבעה שלך תיספר לאחר אישור העסקה.",
             "NOADDRESS": "לא הזנת כתובת מטריקס"
         }
     }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Destnîşan",
             "TABLE_DIFFICULTY": "Astengî",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Pejirandin",
             "TABLE_INPUTOUTPUT": "Agahdarî û Derheqê",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet locked",
                 "UNLOCKED": "Wallet vekirî ye",
                 "UNLOCKEDSTAKING": "Wallet ji bo stêda tenê vekirî ye",
-                "UNLOCKEDANON": "Wallet tenê ji bo anonymouskirinê vekirî ye",
                 "STAKING": "Wallet niha hêdî ye",
                 "NOTSTAKING": "Wallet niha hêdî ye",
                 "MASTERNODEON": "Mîhode niha niha bimeşîne",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Encrypted Wallet",
             "ENCRYPTEDCONTENT": "Pêdiviyên paşîn ên ku hûn ji pelê wallet ve hatine çêkirin divê bi pelê nû ve hatî çêkirin, pelê wesayît kirin. Ji ber sedemên ewlehiyê, pelê berê ya paşê ya pelê unencrypted dê zû bê bêbawer bibe wekî ku hûn bikar bi karanîna nû, şîfreyek şîfre bikin.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nayê rawestandin",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Metrix Korek bû ku ji bo winda kirin. Ew pêşniyaz dike ku pelên debug .logê kontrol bikin.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêka Metrix Core-ê heye ku ev bûye sedema bidawîbûnê. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê debug.log xwe kontrol bikin.",
             "CLIENTINVALIDCONFIGTITLE": "Guhertina metrix.conf çewt",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf sazkirina mîhengek mîhengek çewt e ku dê bibe sedema Metrix Core ku bi lez derketin. Ji kerema xwe ev pelê bibînin.",
             "ADDREMOTEMNTITLE": "Mountode Remote",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Trx Hash Modeode",
             "ADDREMOTEMNTXINDEX": "Index Trx Modeode",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Fail",
-            "BOOTSTRAPFAILEDINFO": "Pirsgirêka bootstrapping Metrix Core hebû. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê loga xwe ya Altitude-ê vegerin.",
+            "BOOTSTRAPFAILEDINFO": "Pirsgirêka bootstrapping Metrix Core hebû. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê loga xwe ya Altitude vegerin.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amûrên overyêkirinê",
             "STARTUPFAILEDTITLE": "Destpêka Metrix Core Bi ser neket",
-            "STARTUPFAILEDINFO": "Metrix Core destpêkek hebû. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê loga xwe ya Altitude-ê vegerin."
+            "STARTUPFAILEDINFO": "Metrix Core destpêkek hebû. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê loga xwe ya Altitude vegerin.",
+            "CLIENTUNKNOWNERRORTITLE": "Erewtiya ragihandinê ya bingehîn a Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Di ragihandina Metrix Core de pirsgirêkek çêbû. Tête pêşniyar kirin ku ji bo pirsgirêkên bi pelê debug.log xwe kontrol bikin."
         },
         "ADDRESSBOOK": {
             "TITLE": "Navnîşana Navnîşan",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Çewtiyek veguherînê. Ji kerema xwe dîsa biceribîne.",
         "MINIMUMCONFIRMATIONS": "Hemû agahiyên ku ji ber mesrefên herî kêm 1 pejirandinê hewce ne.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Veguhastin veguherandin clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Yek ji perê we ji hêla veguhastina pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Guhertina te pir mezin e ku bi ewlehî bişîne. Ya herî zêde 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Moppingode...",
         "FAILEDTOWRITECONFIG": "Vê pelê pirsgirêkek metrix.conf heye. Vê pelê binivîse û hebûna Altitude destûrnameyan nivîsî.",
         "NOPUBLICUP": "Navnîşana IP-ê nehatiye dîtin. Têkiliya înternetê kontrol bikin û Altitude dîsa vekin.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Hûn andin",
-                "YOUGET": "Hûn Dikevin",
-                "MRXADDRESS": "Navnîşana Metrix",
-                "SWAP": "Swap kirin",
-                "SWAPADDRESSES": "Navnîşanên Swap",
-                "BTCADDRESS": "Navnîşana BTC",
-                "INFOLINE1": "Gava ku hûn navnîşek depoya BTC-ê hebe, her BTC ji wê navnîşê ve hatî şandin dê bixweber ji bo MRX-ê di navnîşa navnîşa MRX-ê ya xweya navnîşandî de bibihurîne.",
-                "INFOLINE2-1": "Veguhastin bi gelemperî di nav saetekê de li gorî demên bloka Bitcoin ve zelal dibin. Em dikarin ji bo fiat bipejirînin",
-                "INFOLINE2-2": "welatên beşdar",
-                "INFOLINE2-3": "Vê gavê dê BTC paşê paşê MRX veguherîne.",
-                "INFOLINE3": "Piştî ku qaîdeya BTC we paqij kir hûn ê MRX-ê navnîşa navnîşa xwe bistînin.",
-                "INFOLINE4": "Ji bo bêtir agahdarî biçin",
-                "FIATSWAPSELECTED": "Ji bo ku hûn vê danûstandinê temam bikin hûn ê li Buy.Metrixcoin.com werin veguheztin"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Hûn ne Hikûmetek in",
+                "NOTGOVERNORDETAIL": "Walî berpirs in ku li ser budceyên mehane û guhertinên blockchain deng bidin. Hûn dikarin bibin Peymankarê Hikûmetek bi girtina koletiyê rastîn di peymana Hikûmetê de.",
+                "COLLATERAL": "Kolera pêwîst e",
+                "ENROLL": "Nivîsîn",
+                "CONFIRMENROLL": "Hûn li ser qeydkirina wekî Walî ne. Ew ê danûstendinek bi kolera pêwist re ji peymana rêveberiyê re bişîne. Hûn dikarin di her demê de unenroll bikin.",
+                "ISGOVERNORTITLE": "Hûn Hikûmetek çalak e!",
+                "ISGOVERNORDETAIL1": "Walî berpirs in ku li ser budceyên mehane û guhertinên blockchain deng bidin.",
+                "ISGOVERNORDETAIL2": "Ji bo Kargêr bimînin hûn hewce ne ku di her 30 rojan de herî kêm 1 deng bidin.",
+                "ISGOVERNORDETAIL3": "Heke tiştek li ser dengdanê nebe wê hingê hûn dikarin bi şandina pingek çalak çalakiya xwe qeyd bikin.",
+                "UNENROLL": "Unenroll",
+                "PING": "Pinga çalak bişînin"
+            },
+            "BUDGET": {
+                "TITLE": "Pêşniyarên budceyê",
+                "ADDPROPOSAL": "Pêşniyarek çêbikin",
+                "REQUESTEDPERMONTH": "per mehê",
+                "REQUESTEDREMAINING": "jiberma",
+                "VOTEYES": "Deng Erê",
+                "VOTEABSTAIN": "Dengdan Abstain",
+                "VOTENO": "Deng na",
+                "VOTESTOPASS": "deng derbas kirin",
+                "VOTEPASSING": "derbaskirina dengan"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Pêşniyarek çêbikin",
+                "DESCRIPTION": "Li jêr hûn dikarin pêşniyara budceyê biafirînin û wê radestî torê bikin da ku ji bo dengdanê berî ku bloka çareserkirina budceya pêşîn bidin.",
+                "BUDGETFEE": "Baca budceya heyî ye",
+                "BUDGETBLOCK": "Bloka çareseriyê ya din e",
+                "PROPOSALTITLE": "Navê pêşniyaz",
+                "PROPOSALDESC": "Danasîna pêşniyarê",
+                "PROPOSALURL": "URL pêşniyar",
+                "PROPOSALAMOUNT": "Amaje xwest",
+                "PROPOSALDURATION": "Daxwazên Tê xwestin",
+                "PROPOSALADDRESS": "Navnîşa Dravê",
+                "PROPOSALCREATE": "Pêşniyarek çêbikin"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Hukûmet",
+                "BUDGET": "Sermîyan"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Navnîşana Swap-ê Nirxand...",
             "ALREADYHAVEADDRESS": "Hûn berê navnîşek BTC-yê ye ku bi vê navnîşa Metrix re têkildar e",
             "SWAPUSDMIN": "Dravê herî kêm ya swap $ 50 e",
-            "SWAPUSDMAX": "Buhayê swapê yê herî zêde USD $ 3000 e",
+            "SWAPUSDMAX": "Dravê swapiya herî zêde ya USD 3000 $ ye",
+            "INCOMPLETEFORM": "We li hemî qadên pêwîst bi awayek rast tije nekiriye",
+            "INVALIDPROPOSALDURATION": "Divê demên pêşniyazê di navbera 1 û 12 mehan de be",
+            "CREATINGPROPOSAL": "Proposalandina pêşniyarê torê...",
+            "CREATEDPROPOSAL": "Pêşniyara we bi serfirazî hate afirandin",
+            "ENROLLINGGOVERNOR": "Qeydkirina wekî Walî...",
+            "ENROLLEDGOVERNOR": "Gava ku danûstendina we piştrastkirin, qeydkirina we dê temam bibe",
+            "VOTINGONPROPOSAL": "Proposalandina pêşniyara dengdanê",
+            "VOTEDONPROPOSAL": "Dema ku danûstandin piştrast kirin dê denga we were hejmartin.",
             "NOADDRESS": "We navnîşek Metrixek nekir"
         }
     }

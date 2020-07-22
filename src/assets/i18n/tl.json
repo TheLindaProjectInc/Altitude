@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Lagda",
             "TABLE_DIFFICULTY": "Mahirap",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "I-block ang Hash",
             "TABLE_CONFIRMATIONS": "Mga Kumpirmasyon",
             "TABLE_INPUTOUTPUT": "Mga Input at Output",
@@ -251,7 +250,6 @@
                 "LOCKED": "Naka-lock ang Wallet",
                 "UNLOCKED": "Unlock ng Wallet",
                 "UNLOCKEDSTAKING": "Unlocked Wallet para sa staking lamang",
-                "UNLOCKEDANON": "Unlock ng Wallet para sa anonymization lamang",
                 "STAKING": "Ang Wallet ay kasalukuyang staking",
                 "NOTSTAKING": "Kasalukuyang hindi nagtatagal ang Wallet",
                 "MASTERNODEON": "Ang kasalukuyang Masternode ay tumatakbo",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Naka-encrypt ang Wallet",
             "ENCRYPTEDCONTENT": "Anumang mga naunang backup na iyong ginawa sa iyong wallet file ay dapat mapalitan ng bagong nabuong, naka-encrypt na file ng wallet. Para sa mga kadahilanang pang-seguridad, ang mga nakaraang pag-backup ng hindi naka-encrypt na wallet file ay magiging walang silbi sa lalong madaling simulan mo ang paggamit ng bagong, naka-encrypt na wallet.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Tumigil si Metrix Core nang hindi inaasahan",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Nagkaroon ng problema sa Metrix Core na naging dahilan upang wakasan ito. Inirerekumenda na suriin ang iyong debug.log file para sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Mayroong problema sa Metrix Core na naging dahilan upang matapos ito. Inirerekomenda na suriin ang iyong debug.log file para sa mga isyu.",
             "CLIENTINVALIDCONFIGTITLE": "Di-wastong Configuration ng metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ang iyong metrix.conf ay may hindi wastong pag-setup ng masternode na kung saan ay magiging sanhi agad si Metrix Core upang lumabas. Mangyaring suriin ang file na ito.",
             "ADDREMOTEMNTITLE": "Magdagdag ng Remote Masternode",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Nabigo ang Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Nagkaroon ng isang problema sa bootstrapping Metrix Core. Inirerekumenda na suriin ang iyong file ng log ng Altitude para sa mga isyu.",
+            "BOOTSTRAPFAILEDINFO": "Nagkaroon ng isang problema sa bootstrapping Metrix Core. Inirerekomenda na suriin ang iyong file ng log ng Altitude para sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mga tool sa Pagbawi",
             "STARTUPFAILEDTITLE": "Nabigo ang Startrix Core Startup",
-            "STARTUPFAILEDINFO": "Mayroong isang panimulang Metrix Core. Inirerekumenda na suriin ang iyong file ng log ng Altitude para sa mga isyu."
+            "STARTUPFAILEDINFO": "Mayroong isang panimulang Metrix Core. Inirerekomenda na suriin ang iyong file ng log ng Altitude para sa mga isyu.",
+            "CLIENTUNKNOWNERRORTITLE": "Error sa Komunikasyon ng Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Mayroong isang problema sa pakikipag-usap sa Metrix Core. Inirerekomenda na suriin ang iyong debug.log file para sa mga isyu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Error sa transaksyon. Ulitin mo ulit.",
         "MINIMUMCONFIRMATIONS": "Ang lahat ng mga input ay nangangailangan ng hindi bababa sa 1 kumpirmasyon bago ang paggastos.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nakopya ang mga transaksyon sa clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Isa sa iyong bayad sa mga halaga ay masyadong malaki upang maipadala nang ligtas. Ang pinakamataas ay 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Napakalaki ng iyong pagbabago upang maipadala nang ligtas. Ang pinakamataas ay 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Paghinto ng masternode...",
         "FAILEDTOWRITECONFIG": "Nagkaroon ng problema sa pagsusulat sa iyong metrix.conf file. Tingnan ang umiiral na file at ang Altitude ay may mga pahintulot na magsulat.",
         "NOPUBLICUP": "Walang nakitang pampublikong IP address. Suriin ang iyong koneksyon sa internet at i-restart ang Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Ipadala mo",
-                "YOUGET": "Nakuha mo",
-                "MRXADDRESS": "Address ng Metrix",
-                "SWAP": "Pagpalit",
-                "SWAPADDRESSES": "Mga Pagpapalit ng Mga Pagpapalit",
-                "BTCADDRESS": "Address ng BTC",
-                "INFOLINE1": "Kapag mayroon kang isang address ng deposito ng BTC na anumang ipinadala sa BTC sa address na iyon ay awtomatikong mapapalitan para sa MRX sa iyong hinirang na MRX address.",
-                "INFOLINE2-1": "Ang mga transaksyon ay karaniwang malinaw sa loob ng isang oras depende sa oras ng block ng Bitcoin. Maaari naming tanggapin ang fiat para sa",
-                "INFOLINE2-2": "mga kalahok na bansa",
-                "INFOLINE2-3": "Ito ay ma-convert sa BTC muna pagkatapos ng MRX.",
-                "INFOLINE3": "Kapag na-clear ang iyong deposito ng BTC makakatanggap ka ng iyong MRX sa iyong hinirang na address.",
-                "INFOLINE4": "Para sa karagdagang impormasyon sa pagbisita",
-                "FIATSWAPSELECTED": "Ikaw ay nai-redirect sa Buy.Metrixcoin.com upang makumpleto ang transaksyon na ito"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Hindi ka isang Gobernador",
+                "NOTGOVERNORDETAIL": "Ang mga gobernador ay responsable para sa pagboto sa buwanang mga badyet at mga pagbabago sa blockchain. Maaari kang maging isang Gobernador sa pamamagitan ng pag-lock ng tamang collateral sa kontrata ng Pamamahala.",
+                "COLLATERAL": "Kinakailangang collateral",
+                "ENROLL": "Pag-enrol",
+                "CONFIRMENROLL": "Malapit kang magpalista bilang isang Gobernador. Ito ay magpapadala ng isang transaksyon kasama ang kinakailangang collateral sa kontrata sa pamamahala. Maaari kang hindi makontrol sa anumang oras.",
+                "ISGOVERNORTITLE": "Isa kang aktibong Gobernador!",
+                "ISGOVERNORDETAIL1": "Ang mga gobernador ay responsable para sa pagboto sa buwanang mga badyet at mga pagbabago sa blockchain.",
+                "ISGOVERNORDETAIL2": "Upang manatili isang Gobernador kailangan mong lumahok ng hindi bababa sa 1 boto tuwing 30 araw.",
+                "ISGOVERNORDETAIL3": "Kung walang makakaboto pagkatapos maaari mong manu-manong magpatuloy sa iyong pagpapatala sa pamamagitan ng pagpapadala ng isang aktibong ping.",
+                "UNENROLL": "Hindi nakakontrol",
+                "PING": "Magpadala ng Aktibong Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Mga Mungkahi sa Budget",
+                "ADDPROPOSAL": "Lumikha ng Proposal",
+                "REQUESTEDPERMONTH": "kada buwan",
+                "REQUESTEDREMAINING": "natitira",
+                "VOTEYES": "Bumoto Oo",
+                "VOTEABSTAIN": "Bumoto Abstain",
+                "VOTENO": "Bumoto Hindi",
+                "VOTESTOPASS": "mga boto upang ipasa",
+                "VOTEPASSING": "pagpasa ng mga boto"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Lumikha ng isang Panukala",
+                "DESCRIPTION": "Sa ibaba maaari kang lumikha ng isang panukalang badyet at isumite ito sa network para sa pagboto bago ang susunod na bloke ng pag-areglo ng badyet.",
+                "BUDGETFEE": "Ang kasalukuyang bayad sa badyet ay",
+                "BUDGETBLOCK": "Ang susunod na block block ay",
+                "PROPOSALTITLE": "Panukalang Pangalan",
+                "PROPOSALDESC": "Panukalang Deskripsyon",
+                "PROPOSALURL": "Panukalang URL",
+                "PROPOSALAMOUNT": "Hiniling na Halaga",
+                "PROPOSALDURATION": "Mga Hiniling na Bayad",
+                "PROPOSALADDRESS": "Address ng Pagbabayad",
+                "PROPOSALCREATE": "Lumikha ng Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pamamahala",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Bumubuo ng Alamat ng Pagpalit",
-            "ALREADYHAVEADDRESS": "Mayroon kang isang address ng BTC na nauugnay sa address na Metrix na ito",
+            "GETTINGSWAPADDRESS": "Pagbuo ng Alamat ng Pagpalit",
+            "ALREADYHAVEADDRESS": "Mayroon ka nang isang address ng BTC na nauugnay sa address na Metrix na ito",
             "SWAPUSDMIN": "Ang minimum na halaga ng swap ng USD ay $ 50",
             "SWAPUSDMAX": "Ang maximum na halaga ng swap ng USD ay $ 3000",
+            "INCOMPLETEFORM": "Hindi mo napunan nang tama ang lahat ng kinakailangang mga patlang",
+            "INVALIDPROPOSALDURATION": "Ang mga panukalang pagtatagal ay dapat na nasa pagitan ng 1 hanggang 12 buwan",
+            "CREATINGPROPOSAL": "Pagsumite ng mungkahi sa network...",
+            "CREATEDPROPOSAL": "Matagumpay na nilikha ang iyong panukala",
+            "ENROLLINGGOVERNOR": "Pagpatala bilang Gobernador...",
+            "ENROLLEDGOVERNOR": "Ang iyong pagpapatala ay kumpleto sa sandaling nakumpirma ang iyong transaksyon",
+            "VOTINGONPROPOSAL": "Ang pagpapadala ng boto ng panukala",
+            "VOTEDONPROPOSAL": "Ang iyong boto ay mabibilang kapag nakumpirma ang transaksyon.",
             "NOADDRESS": "Hindi ka nagpasok ng isang address ng Metrix"
         }
     }

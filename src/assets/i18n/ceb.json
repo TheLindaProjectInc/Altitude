@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Pamatuod",
             "TABLE_SIGNATURE": "Pirma",
             "TABLE_DIFFICULTY": "Kasagaran",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Mga kompirmasyon",
             "TABLE_INPUTOUTPUT": "Mga Input ug mga Output",
@@ -251,7 +250,6 @@
                 "LOCKED": "Gitrangkahan ang dominyo",
                 "UNLOCKED": "Unlocked",
                 "UNLOCKEDSTAKING": "Ang unlock sa wallet alang sa staking lamang",
-                "UNLOCKEDANON": "Ang unlock sa wallet alang lamang sa anonymization",
                 "STAKING": "Ang panudlanan sa kasing-kasing karon",
                 "NOTSTAKING": "Ang panudlanan sa kasamtangan dili karon",
                 "MASTERNODEON": "Ang Masternode karon nagdagan",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Na-encrypt ang Wallet",
             "ENCRYPTEDCONTENT": "Ang bisan unsang nangaging mga pag-backup nga imong nahimo sa imong wallet file kinahanglan nga ilisan uban sa bag-ong namugna, gi-encrypt nga wallet file. Alang sa mga katarungan sa seguridad, ang mga naunang pag-backup sa wala ma-encrypt nga wallet file mahimong walay pulos sa diha nga magsugod ka sa paggamit sa bag-o, na-encrypt nga pitaka.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Si Metrix Core mibiya sa wala damha",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka suliran sa Metrix Core nga maoy hinungdan nga kini natapos. Ginarekomendar nga susihon ang imong debug.log file alang sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Adunay usa ka problema sa Metrix Core nga nagpahinabo kini sa pagtapos. Gisugyot nga susihon ang imong debug.log file alang sa mga isyu.",
             "CLIENTINVALIDCONFIGTITLE": "Dili kasaligan nga metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Ang imong metrix.conf adunay walay balido nga masternode setup nga maoy hinungdan sa Metrix Core nga mogawas dayon. Palihug check kini nga file.",
             "ADDREMOTEMNTITLE": "Pagdugang sa Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Adunay sulud nga bootstrapping nga Metrix Core. Gisugyot nga susihon ang imong file sa log sa Altitude alang sa mga isyu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mga Himan sa Pagbawi",
             "STARTUPFAILEDTITLE": "Napakyas ang Pagsugod sa Metrix",
-            "STARTUPFAILEDINFO": "Adunay usa ka pagsugod sa Metrix Core. Gisugyot nga susihon ang imong file sa log sa Altitude alang sa mga isyu."
+            "STARTUPFAILEDINFO": "Adunay usa ka pagsugod sa Metrix Core. Gisugyot nga susihon ang imong file sa log sa Altitude alang sa mga isyu.",
+            "CLIENTUNKNOWNERRORTITLE": "Sayup ang Metrix Core sa Pagkasayup",
+            "CLIENTUNKNOWNERRORINFO": "Adunay problema sa pagpakigsulti sa Metrix Core. Gisugyot nga susihon ang imong debug.log file alang sa mga isyu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Sayop nga transaksyon. Palihug sulayi pag-usab.",
         "MINIMUMCONFIRMATIONS": "Ang tanan nga mga input nagkinahanglan labing menos usa ka kumpirmasyon sa dili pa mogasto.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Mga transaksyon nga gikopya sa clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Usa sa imong suweldo sa kantidad dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ang imong pagbag-o dako kaayo aron luwas nga ipadala. Ang kinatas-an mao ang 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Paghunong sa masternode...",
         "FAILEDTOWRITECONFIG": "Adunay problema pagsulat sa imong metrix.conf file. Susiha ang file nga anaa ug nga ang Altitude adunay mga permiso sa pagsulat.",
         "NOPUBLICUP": "Walay IP Address sa IP. Susiha ang imong koneksyon sa internet ug i-restart ang Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Nagpadala Ka",
-                "YOUGET": "Nakuha Nimo",
-                "MRXADDRESS": "Alamat sa Metrix",
-                "SWAP": "Pag-undang",
-                "SWAPADDRESSES": "Mga Pakigsulti sa Pagpalit",
-                "BTCADDRESS": "Alamat sa BTC",
-                "INFOLINE1": "Kung ikaw adunay usa ka address sa pagdeposito sa BTC bisan unsang gipadala nga BTC sa kana nga adres awtomatiko nga mapalit alang sa MRX sa imong gipili nga adres sa MRX.",
-                "INFOLINE2-1": "Ang mga pagbalhin nga kasagarang klaro sa sulod sa usa ka oras depende sa oras sa block sa Bitcoin. Makadawat kita alang sa",
-                "INFOLINE2-2": "nag-apil nga mga nasud",
-                "INFOLINE2-3": "Pag-usab kini nga una sa BTC unya ang MRX.",
-                "INFOLINE3": "Kung nakakuha na ang imong deposito sa BTC madawat nimo ang imong MRX sa imong gipili nga adres.",
-                "INFOLINE4": "Alang sa dugang nga pagbisita sa kasayuran",
-                "FIATSWAPSELECTED": "Pag-redirected ka sa Buy.Metrixcoin.com aron makompleto kini nga transaksyon"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Dili ka usa ka Gobernador",
+                "NOTGOVERNORDETAIL": "Ang mga gobernador mao ang responsable sa pagboto sa binulan nga badyet ug mga pagbag-o sa blockchain. Mahimo ka nga usa ka Gobernador pinaagi sa pag-lock sa husto nga kolateral sa kontrata sa Pamamahala.",
+                "COLLATERAL": "Gikinahanglan collateral",
+                "ENROLL": "Pag-enrol",
+                "CONFIRMENROLL": "Hapit ka magpalista ingon usa ka Gobernador. Kini magpadala usa ka transaksyon kauban ang gikinahanglan nga kolateral sa kontrata sa pagdumala. Mahimo ka nga dili makontrol sa bisan unsang oras.",
+                "ISGOVERNORTITLE": "Ikaw usa ka aktibo nga Gobernador!",
+                "ISGOVERNORDETAIL1": "Ang mga gobernador mao ang responsable sa pagboto sa binulan nga badyet ug mga pagbag-o sa blockchain.",
+                "ISGOVERNORDETAIL2": "Aron magpabilin ang usa ka Gobernador kinahanglan ka nga moapil sa labing menos 1 nga boto matag 30 ka adlaw.",
+                "ISGOVERNORDETAIL3": "Kung wala’y pagboto unya mahimo nimo nga manu-man nga ipadayon ang imong pag-enrol pinaagi sa pagpadala sa usa ka aktibo nga ping.",
+                "UNENROLL": "Dili Makontrol",
+                "PING": "Pagpadala Aktibo nga Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Mga Mungkahi sa Budget",
+                "ADDPROPOSAL": "Paghimo Proposal",
+                "REQUESTEDPERMONTH": "matag bulan",
+                "REQUESTEDREMAINING": "nahabilin",
+                "VOTEYES": "Iboto Oo",
+                "VOTEABSTAIN": "Pagpili og Abstain",
+                "VOTENO": "Bumoto Dili",
+                "VOTESTOPASS": "boto nga ipaagi",
+                "VOTEPASSING": "pagpasa sa mga boto"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Paghimo us aka Proposal",
+                "DESCRIPTION": "Sa ubos mahimo ka maghimo us aka us aka us aka budget proposal ug isumite kini sa network alang sa pagboto sa wala pa ang sunod nga bloke sa paghusay sa badyet.",
+                "BUDGETFEE": "Ang kasamtangan nga bayad sa badyet mao ang",
+                "BUDGETBLOCK": "Ang sunod nga pag-areglo block mao ang",
+                "PROPOSALTITLE": "Proposal nga Ngalan",
+                "PROPOSALDESC": "Gisugyot nga Propeta",
+                "PROPOSALURL": "Gisugyot nga URL",
+                "PROPOSALAMOUNT": "Gihangyo nga Hatagan",
+                "PROPOSALDURATION": "Gihangyo nga Bayad",
+                "PROPOSALADDRESS": "Address sa Bayad",
+                "PROPOSALCREATE": "Paghimo Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pangagamhanan",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Nagpatungha nga Pagpalitan sa Address...",
+            "GETTINGSWAPADDRESS": "Nagpatungha nga Pagpalitan sa Alamat...",
             "ALREADYHAVEADDRESS": "Naa ka na sa usa ka adres sa BTC nga may kalabotan sa kini nga adres sa Metrix",
-            "SWAPUSDMIN": "Ang minimum nga kantidad sa swap sa USD mao ang $ 50",
+            "SWAPUSDMIN": "Ang minimum nga kantidad sa swap sa USD $ 50",
             "SWAPUSDMAX": "Ang maximum nga kantidad sa swap sa USD mao ang $ 3000",
+            "INCOMPLETEFORM": "Wala nimo pun-a ang tanan nga gikinahanglan nga mga uma sa husto",
+            "INVALIDPROPOSALDURATION": "Ang mga panukiduki nga tagal kinahanglan nga sa taliwala sa 1 ug 12 nga bulan",
+            "CREATINGPROPOSAL": "Pagsumite us aka sugyot sa network...",
+            "CREATEDPROPOSAL": "Malampuson nga nahimo ang imong sugyot",
+            "ENROLLINGGOVERNOR": "Pagpalista ingon Gobernador...",
+            "ENROLLEDGOVERNOR": "Mahuman ang imong pag-enrol kung makumpirma ang imong transaksyon",
+            "VOTINGONPROPOSAL": "Pagpadala proposal boto",
+            "VOTEDONPROPOSAL": "Ang imong boto maihap kung ang transaksyon napamatud-an",
             "NOADDRESS": "Wala ka makasulod sa usa ka adres nga Metrix"
         }
     }

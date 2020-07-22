@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "ລາຍເຊັນ",
             "TABLE_DIFFICULTY": "ຄວາມຫຍຸ້ງຍາກ",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "ການຢືນຢັນ",
             "TABLE_INPUTOUTPUT": "Inputs and Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "ຖົງເງິນຖືກລັອກ",
                 "UNLOCKED": "Wallet unlocked",
                 "UNLOCKEDSTAKING": "Wallet unlocked ສໍາລັບ staking ເທົ່ານັ້ນ",
-                "UNLOCKEDANON": "Wallet ຖຶກ unlocked ສໍາລັບການລະງັບຂໍ້ມູນເທົ່ານັ້ນ",
                 "STAKING": "ປັດຈຸບັນຖົງເງິນແມ່ນ staking",
                 "NOTSTAKING": "ປັດຈຸບັນບໍ່ມີເງິນຝາກປະຢັດ",
                 "MASTERNODEON": "Masternode ກໍາລັງເຮັດວຽກຢູ່",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "ທຸກການສໍາຮອງຂໍ້ມູນກ່ອນຫນ້ານີ້ທີ່ທ່ານໄດ້ເຮັດຈາກໄຟລ໌ wallet ຂອງທ່ານຄວນຖືກແທນທີ່ດ້ວຍໄຟລ໌ກ່ອງທີ່ຖືກເຂົ້າລະຫັດໃຫມ່. ສໍາລັບເຫດຜົນດ້ານຄວາມປອດໄພ, ການສໍາຮອງຂໍ້ມູນກ່ອນຫນ້າຂອງໄຟລ໌ wallet ທີ່ບໍ່ໄດ້ເຂົ້າລະຫັດຈະກາຍເປັນທີ່ບໍ່ມີປະໂຫຍດໄວທີ່ທ່ານຈະເລີ່ມໃຊ້ຖົງກ່ອງທີ່ຖືກເຂົ້າລະຫັດໃຫມ່.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ຢຸດເຊົາຢ່າງບໍ່ຄາດຝັນ",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "ມີບັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນຈົບລົງ. ມັນແນະນໍາໃຫ້ກວດເບິ່ງໄຟລ໌ debug.log ຂອງທ່ານສໍາລັບບັນຫາ.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "ມີປັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນສິ້ນສຸດລົງ. ມັນໄດ້ຖືກແນະນໍາໃຫ້ກວດເບິ່ງເອກະສານ debug.log ຂອງທ່ານສໍາລັບບັນຫາຕ່າງໆ.",
             "CLIENTINVALIDCONFIGTITLE": "ການຕັ້ງຄ່າ Lindaconf ບໍ່ຖືກຕ້ອງ",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າທີ່ບໍ່ຖືກຕ້ອງທີ່ຈະເຮັດໃຫ້ Metrix Core ອອກຈາກທັນທີ. ກະລຸນາກວດເບິ່ງໄຟລ໌ນີ້.",
             "ADDREMOTEMNTITLE": "ເພີ່ມ Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "ມີປັນຫາໃນການເລີ່ມຕົ້ນ Metrix Core. ຂໍແນະ ນຳ ໃຫ້ກວດເບິ່ງເອກະສານບັນທຶກ Altitude ຂອງທ່ານ ສຳ ລັບບັນຫາ.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ເຄື່ອງມືການຟື້ນຕົວ",
             "STARTUPFAILEDTITLE": "ການເລີ່ມຕົ້ນຂອງ Metrix Core ລົ້ມເຫລວ",
-            "STARTUPFAILEDINFO": "ມີ Metrix Core ເລີ່ມແລ້ວ. ຂໍແນະ ນຳ ໃຫ້ກວດເບິ່ງເອກະສານບັນທຶກ Altitude ຂອງທ່ານ ສຳ ລັບບັນຫາ."
+            "STARTUPFAILEDINFO": "ມີ Metrix Core ເລີ່ມແລ້ວ. ຂໍແນະ ນຳ ໃຫ້ກວດເບິ່ງເອກະສານບັນທຶກ Altitude ຂອງທ່ານ ສຳ ລັບບັນຫາ.",
+            "CLIENTUNKNOWNERRORTITLE": "ຂໍ້ຜິດພາດຂອງການສື່ສານຫຼັກຂອງ Metrix",
+            "CLIENTUNKNOWNERRORINFO": "ມີປັນຫາໃນການສື່ສານກັບ Metrix Core. ມັນໄດ້ຖືກແນະນໍາໃຫ້ກວດເບິ່ງເອກະສານ debug.log ຂອງທ່ານສໍາລັບບັນຫາຕ່າງໆ."
         },
         "ADDRESSBOOK": {
             "TITLE": "ປື້ມ​ທີ່​ຢູ່",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "ການຜິດພາດການເຮັດທຸລະກໍາ. ກະລຸນາລອງອີກຄັ້ງ.",
         "MINIMUMCONFIRMATIONS": "ຂໍ້ມູນທັງຫມົດຕ້ອງການຢ່າງຫນ້ອຍ 1 ໃບຢັ້ງຢືນກ່ອນການໃຊ້ຈ່າຍ.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copied to clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "ຫນຶ່ງໃນຄ່າຈ້າງຂອງທ່ານຕໍ່ຈໍານວນເງິນແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
-        "TRANSACTIONCHANGETOOLARGE": "ການປ່ຽນແປງຂອງທ່ານແມ່ນໃຫຍ່ເກີນໄປທີ່ຈະສົ່ງໄປຢ່າງປອດໄພ. ສູງສຸດ 90,071,99254740992",
         "STOPPINGMASTERNODE": "ຢຸດ masternode...",
         "FAILEDTOWRITECONFIG": "ມີບັນຫາໃນການຂຽນຂໍ້ມູນ metrix.conf ຂອງທ່ານ. ກວດເບິ່ງໄຟລ໌ທີ່ມີຢູ່ແລະ Altitude ມີສິດຂຽນ.",
         "NOPUBLICUP": "ບໍ່ພົບ IP address ສາທາລະນະ. ກວດເບິ່ງການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານແລະ restart Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "ເຈົ້າສົ່ງ",
-                "YOUGET": "ທ່ານໄດ້ຮັບ",
-                "MRXADDRESS": "ທີ່ຢູ່ Metrix",
-                "SWAP": "ແລກປ່ຽນປະສົບ",
-                "SWAPADDRESSES": "ທີ່ຢູ່ແລກປ່ຽນປະສົບ",
-                "BTCADDRESS": "ທີ່ຢູ່ BTC",
-                "INFOLINE1": "ເມື່ອທ່ານມີທີ່ຢູ່ເງິນຝາກ BTC, BTC ໃດ ໜຶ່ງ ທີ່ຖືກສົ່ງໄປຫາທີ່ຢູ່ນັ້ນຈະຖືກປ່ຽນ ສຳ ລັບ MRX ໂດຍອັດຕະໂນມັດເຂົ້າໃນທີ່ຢູ່ຂອງທ່ານທີ່ຖືກແຕ່ງຕັ້ງ.",
-                "INFOLINE2-1": "ການເຮັດທຸລະ ກຳ ປົກກະຕິຈະແຈ້ງພາຍໃນ ໜຶ່ງ ຊົ່ວໂມງຂື້ນຢູ່ກັບເວລາປິດ Bitcoin. ພວກເຮົາສາມາດຍອມຮັບ fiat ສຳ ລັບ",
-                "INFOLINE2-2": "ບັນດາປະເທດທີ່ເຂົ້າຮ່ວມ",
-                "INFOLINE2-3": "ນີ້ຈະຖືກປ່ຽນເປັນ BTC ກ່ອນແລ້ວ MRX.",
-                "INFOLINE3": "ເມື່ອເງິນຝາກ BTC ຂອງທ່ານຖືກລຶບອອກແລ້ວທ່ານຈະໄດ້ຮັບ MRX ຂອງທ່ານເຂົ້າໃນທີ່ຢູ່ທີ່ຖືກແຕ່ງຕັ້ງຂອງທ່ານ.",
-                "INFOLINE4": "ສຳ ລັບຂໍ້ມູນເພີ່ມເຕີມເຂົ້າເບິ່ງ",
-                "FIATSWAPSELECTED": "ທ່ານຈະຖືກໂອນໄປຫາ Buy.Metrixcoin.com ເພື່ອເຮັດ ສຳ ເລັດການເຮັດທຸລະ ກຳ ນີ້"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "ເຈົ້າບໍ່ແມ່ນເຈົ້າ",
+                "NOTGOVERNORDETAIL": "ຜູ້ປົກຄອງມີຄວາມຮັບຜິດຊອບໃນການລົງຄະແນນສຽງກ່ຽວກັບງົບປະມານລາຍເດືອນແລະການປ່ຽນແປງ blockchain. ທ່ານສາມາດກາຍເປັນເຈົ້າແຂວງໂດຍການລັອກຊັບສິນຄ້ ຳ ປະກັນທີ່ຖືກຕ້ອງໃນສັນຍາວ່າດ້ວຍການປົກຄອງ.",
+                "COLLATERAL": "ຕ້ອງການຫລັກປະກັນ",
+                "ENROLL": "ລົງທະບຽນ",
+                "CONFIRMENROLL": "ທ່ານ ກຳ ລັງຈະລົງທະບຽນເປັນເຈົ້າແຂວງ. ນີ້ຈະສົ່ງທຸລະ ກຳ ທີ່ມີຊັບສິນຄ້ ຳ ປະກັນທີ່ ຈຳ ເປັນເຂົ້າໃນສັນຍາການປົກຄອງ. ທ່ານສາມາດລົງທະບຽນໄດ້ທຸກເວລາ.",
+                "ISGOVERNORTITLE": "ທ່ານເປັນເຈົ້າຄອງນະຄອນຢ່າງຫ້າວຫັນ!",
+                "ISGOVERNORDETAIL1": "ຜູ້ປົກຄອງມີຄວາມຮັບຜິດຊອບໃນການລົງຄະແນນສຽງກ່ຽວກັບງົບປະມານລາຍເດືອນແລະການປ່ຽນແປງ blockchain.",
+                "ISGOVERNORDETAIL2": "ເພື່ອຈະຢູ່ເປັນເຈົ້າທ່ານຈະຕ້ອງມີສ່ວນຮ່ວມຢ່າງ ໜ້ອຍ 1 ສຽງທຸກໆ 30 ວັນ.",
+                "ISGOVERNORDETAIL3": "ຖ້າວ່າບໍ່ມີຫຍັງທີ່ຈະລົງຄະແນນສຽງຈາກນັ້ນທ່ານສາມາດສືບຕໍ່ການລົງທະບຽນຂອງທ່ານດ້ວຍຕົນເອງໂດຍການສົ່ງ ping ທີ່ໃຊ້ວຽກ.",
+                "UNENROLL": "ລົງທະບຽນ",
+                "PING": "ສົ່ງ Active Ping"
+            },
+            "BUDGET": {
+                "TITLE": "ບົດສະ ເໜີ ງົບປະມານ",
+                "ADDPROPOSAL": "ສ້າງບົດສະ ເໜີ",
+                "REQUESTEDPERMONTH": "ຕໍ່​ເດືອນ",
+                "REQUESTEDREMAINING": "ຍັງເຫຼືອ",
+                "VOTEYES": "ແມ່ນແລ້ວ",
+                "VOTEABSTAIN": "ລົງຄະແນນສຽງ Abstain",
+                "VOTENO": "ລົງຄະແນນສຽງບໍ່",
+                "VOTESTOPASS": "ຄະແນນສຽງທີ່ຈະຜ່ານ",
+                "VOTEPASSING": "ຜ່ານຄະແນນສຽງ"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "ສ້າງບົດສະ ເໜີ",
+                "DESCRIPTION": "ຂ້າງລຸ່ມນີ້ທ່ານສາມາດສ້າງຂໍ້ສະ ເໜີ ງົບປະມານແລະສົ່ງໄປທີ່ເຄືອຂ່າຍເພື່ອການລົງຄະແນນສຽງກ່ອນການຕັ້ງຖິ່ນຖານງົບປະມານຕໍ່ໄປ.",
+                "BUDGETFEE": "ຄ່າໃຊ້ຈ່າຍງົບປະມານໃນປະຈຸບັນແມ່ນ",
+                "BUDGETBLOCK": "ຕັນການຕັ້ງຖິ່ນຖານຕໍ່ໄປແມ່ນ",
+                "PROPOSALTITLE": "ຊື່ການສະ ເໜີ",
+                "PROPOSALDESC": "ລາຍລະອຽດຂອງການສະ ເໜີ",
+                "PROPOSALURL": "URL ຂໍ້ສະ ເໜີ",
+                "PROPOSALAMOUNT": "ຈຳ ນວນເງິນທີ່ຮ້ອງຂໍ",
+                "PROPOSALDURATION": "ການຈ່າຍເງິນທີ່ຕ້ອງການ",
+                "PROPOSALADDRESS": "ທີ່ຢູ່ການ ຊຳ ລະເງິນ",
+                "PROPOSALCREATE": "ສ້າງບົດສະ ເໜີ"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "ການປົກຄອງ",
+                "BUDGET": "ງົບປະມານ"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "ທ່ານມີທີ່ຢູ່ BTC ທີ່ກ່ຽວຂ້ອງກັບທີ່ຢູ່ Metrix ນີ້ແລ້ວ",
             "SWAPUSDMIN": "ຈຳ ນວນເງິນແລກປ່ຽນ USD ຕ່ ຳ ສຸດແມ່ນ 50 ໂດລາ",
             "SWAPUSDMAX": "ຈຳ ນວນແລກປ່ຽນສູງສຸດຂອງ USD ແມ່ນ 3000 ໂດລາ",
+            "INCOMPLETEFORM": "ທ່ານຍັງບໍ່ໄດ້ຕື່ມຂໍ້ມູນໃສ່ໃນທຸກໆຂໍ້ມູນທີ່ ກຳ ນົດໃຫ້ຖືກຕ້ອງ",
+            "INVALIDPROPOSALDURATION": "ໄລຍະເວລາຂອງການສະ ເໜີ ຄວນຈະຢູ່ລະຫວ່າງ 1 ຫາ 12 ເດືອນ",
+            "CREATINGPROPOSAL": "ກຳ ລັງສະ ເໜີ ຂໍ້ສະ ເໜີ ຕໍ່ເຄືອຂ່າຍ...",
+            "CREATEDPROPOSAL": "ຄຳ ສະ ເໜີ ຂອງທ່ານຖືກສ້າງຂື້ນຢ່າງ ສຳ ເລັດຜົນ",
+            "ENROLLINGGOVERNOR": "ລົງທະບຽນເປັນເຈົ້າແຂວງ…",
+            "ENROLLEDGOVERNOR": "ການລົງທະບຽນຂອງທ່ານຈະສໍາເລັດເມື່ອການໂອນເງິນຂອງທ່ານຖືກຢືນຢັນ",
+            "VOTINGONPROPOSAL": "ສົ່ງ ຄຳ ສະ ເໜີ ລົງຄະແນນສຽງ",
+            "VOTEDONPROPOSAL": "ການລົງຄະແນນສຽງຂອງທ່ານຈະຖືກນັບເມື່ອການໂອນເງິນໄດ້ຖືກຢືນຢັນ.",
             "NOADDRESS": "ທ່ານບໍ່ໄດ້ໃສ່ທີ່ຢູ່ Metrix"
         }
     }

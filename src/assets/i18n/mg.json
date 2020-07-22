@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signature",
             "TABLE_DIFFICULTY": "fahasarotana",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Block",
             "TABLE_CONFIRMATIONS": "fandraisana ho mpikambana",
             "TABLE_INPUTOUTPUT": "Inputs and Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet mihidy",
                 "UNLOCKED": "Wallet nakatona",
                 "UNLOCKEDSTAKING": "Ny kitapo voasokajy ho an'ny moka",
-                "UNLOCKEDANON": "Ny fonosana dia navela ho amin'ny fanononan-teny fotsiny",
                 "STAKING": "Ny Wallet izao dia mihazakazaka",
                 "NOTSTAKING": "Ny Wallet dia tsy mihetsika amin'izao fotoana izao",
                 "MASTERNODEON": "Masternode dia mihazakazaka",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Ireo loham-piantsorohana teo aloha izay nataonao tamin'ny rakitra boribory dia tokony hosoloina amin'ny rakitra boribory vaovao noforonina vaovao. Noho ny antony fiarovana, dia tsy misy ilàna azy ny tahirin-tsarimihetsika vita amin'ny rakitry ny birao raha vao manomboka mampiasa ny kitapo vaovao.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dia tampoka tsy nampoizina",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana teo amin'i Metrix Core izay nahatonga azy hofoanana. Manorata dia alefaso ny rakitra debug.log ho an'ny olana.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana niaraka tamin'i Metrix Core izay nahatonga an'io dia tapitra. Nasaina hanamarina ny antontan-taratasinao debug.log momba ireo olana.",
             "CLIENTINVALIDCONFIGTITLE": "Lisitra tsy voafetra an'i metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ny metrix.conf anao dia manana fametrahana mastersode tsy manadino izay hampiakatra avy hatrany an'i Metrix Core. Azafady azafady ity rakitra ity.",
             "ADDREMOTEMNTITLE": "Add Remote Masternode",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap tsy nahomby",
-            "BOOTSTRAPFAILEDINFO": "Nisy olana bootstrapping Metrix Core. Anisany hanamarina ny peo logitude Altitude ho an'ny olana.",
+            "BOOTSTRAPFAILEDINFO": "Nisy olana bootstrapping Metrix Core. Entina manamarina ny rakitra logitude Altitude ho anao ny olana.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Fitaovana fanarenana",
             "STARTUPFAILEDTITLE": "Metrix inti Startup tsy nahomby",
-            "STARTUPFAILEDINFO": "Nisy nanomboka ny Metrix Core. Anisany hanamarina ny peo logitude Altitude ho an'ny olana."
+            "STARTUPFAILEDINFO": "Nisy nanomboka ny Metrix Core. Entina manamarina ny rakitra logitude Altitude ho anao ny olana.",
+            "CLIENTUNKNOWNERRORTITLE": "Hadisoan'ny fifandraisana Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Nisy olana nifandray tamin'ny Metrix Core. Nasaina hanamarina ny antontan-taratasinao debug.log momba ireo olana."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adiresy boky",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Fahadisoan-trosa. Manandrama indray.",
         "MINIMUMCONFIRMATIONS": "Ny fitaovana rehetra dia mila fanamafisana 1 fara fahakeliny alohan'ny fandaniana.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Nalefa any anaty bokotra ny fifampiraharahana",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ny iray amin'ny karamanao isam-bolana dia tsy maintsy alefa. Ny isam-ponina dia 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ny fiovanao dia lehibe loatra mba handefasana soa aman-tsara. Ny isam-ponina dia 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Hijanona masternode...",
         "FAILEDTOWRITECONFIG": "Nisy olana nanoratra tany amin'ny file metrix.conf. Jereo ny antontan-taratasy ary ny alalana dia manana fahazoan-dalana manoratra.",
         "NOPUBLICUP": "Tsy misy adiresy IP an'ny Internet. Hamarino ny fifandraisanao amin'ny Internet ary avereno indray ny Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "Nov",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Ianao no mandefa",
-                "YOUGET": "Dia mahazo",
-                "MRXADDRESS": "Adiresy metrix",
-                "SWAP": "Swap",
-                "SWAPADDRESSES": "Adiresy Swap",
-                "BTCADDRESS": "Adiresy BTC",
-                "INFOLINE1": "Vantany vao manana adiresy BTC ianao dia misy BTC alefa any amin'io adiresy io dia hikapoka avy hatrany amin'ny MRX ho any amin'ny adiresinao MRX voatendry.",
-                "INFOLINE2-1": "Matetika mivoaka ny adiny ao anatin'ny adiny iray dia miankina amin'ny vanim-potoana fanakanana an'i Bitcoin. Azontsika ekena ny fiatrehana",
-                "INFOLINE2-2": "firenena mandray anjara",
-                "INFOLINE2-3": "Hivadika ho BTC izy io aloha avy eo MRX.",
-                "INFOLINE3": "Vantany vao voadio ny tahirim-bolanao BTC dia ho voarainao ny adiresy MRX ho anao amin'ny adiresy voafidy.",
-                "INFOLINE4": "Raha mila fanazavana fanampiny",
-                "FIATSWAPSELECTED": "Hamerina anao amin'ny Buy.Metrixcoin.com hamita ity fifanakalozana ity"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Tsy governora ianao",
+                "NOTGOVERNORDETAIL": "Ny governora dia tompon'andraikitra amin'ny fifidianana amin'ny teti-bola isam-bolana sy ny fanovana blockchain. Afaka tonga Governora ianao amin'ny alàlan'ny fanidiana ny zanabola marina amin'ny fifanarahana Fitantanana.",
+                "COLLATERAL": "Ilaina antoka",
+                "ENROLL": "hosoratana",
+                "CONFIRMENROLL": "Vao saika misoratra anarana ho governora ianao. Handefa fifanakalozana miaraka amin'ny antoka ilaina amin'ny fifanarahana fitantanana izy io. Azonao atao ny tsy voafehy amin'ny fotoana rehetra.",
+                "ISGOVERNORTITLE": "Mpanentana mavitrika ianao!",
+                "ISGOVERNORDETAIL1": "Ny governora dia tompon'andraikitra amin'ny fifidianana amin'ny teti-bola isam-bolana sy ny fanovana blockchain.",
+                "ISGOVERNORDETAIL2": "Mba hijanonana ho Governemanta dia mila mandray anjara farafahakeliny 1 isaky ny 30 andro ianao.",
+                "ISGOVERNORDETAIL3": "Raha tsy misy zavatra hifidy dia azonao atao ny manohy manoratra ny fisoratana anarana amin'ny alàlan'ny fandefasana Ping mavitrika.",
+                "UNENROLL": "Unenroll",
+                "PING": "Alefaso Ping mazoto"
+            },
+            "BUDGET": {
+                "TITLE": "Soso-kevitra amin'ny Tetibola",
+                "ADDPROPOSAL": "Mamorona tolo-kevitra",
+                "REQUESTEDPERMONTH": "isam-bolana",
+                "REQUESTEDREMAINING": "sisa tavela",
+                "VOTEYES": "Mifidy eny",
+                "VOTEABSTAIN": "Mifidy ny fady",
+                "VOTENO": "Mifidy tsia",
+                "VOTESTOPASS": "latsa-bato tokony handalo",
+                "VOTEPASSING": "nifidy vato"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Mamorona tolo-kevitra",
+                "DESCRIPTION": "Eto ambany dia afaka mamorona volavolan-tetibola ianao ary alao amin'ny tambajotram-pifidianana alohan'ny hidin-bolam-panjakana manaraka.",
+                "BUDGETFEE": "Ny saram-bola ankehitriny",
+                "BUDGETBLOCK": "Ny trano fanorenana manaraka dia",
+                "PROPOSALTITLE": "Anaran-tsehatra",
+                "PROPOSALDESC": "Famaritana volavolan-kevitra",
+                "PROPOSALURL": "URL volavolan-kevitra",
+                "PROPOSALAMOUNT": "Vola nangatahana",
+                "PROPOSALDURATION": "Ny fangatahana fandoavana",
+                "PROPOSALADDRESS": "Adiresy fandoavam-bola",
+                "PROPOSALCREATE": "Mamorona tolo-kevitra"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Fitantanam-pitondrana",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Miteraka adiresy swap...",
             "ALREADYHAVEADDRESS": "Efa manana adiresy BTC misy an'io adiresy Metrix io ianao",
-            "SWAPUSDMIN": "$ 50 dolara farafahakeliny vola $ 50",
+            "SWAPUSDMIN": "$ 50 dolara farafaharatsiny indrindra isam-bola",
             "SWAPUSDMAX": "Ny vola faratampony indrindra amin'ny vola USD dia $ 3000",
+            "INCOMPLETEFORM": "Tsy mbola nofenoinao tsara ny sahaza notakina",
+            "INVALIDPROPOSALDURATION": "Tokony haharitra eo anelanelan'ny 1 ka hatramin'ny 12 volana",
+            "CREATINGPROPOSAL": "Mametraka tolo-kevitra amin'ny tambajotra...",
+            "CREATEDPROPOSAL": "Nahomby tamim-pahombiazana ny soso-kevitrao",
+            "ENROLLINGGOVERNOR": "Misoratra anarana ho Governemanta...",
+            "ENROLLEDGOVERNOR": "Ho feno ny fisoratanao anarana rehefa voamarina ny fifanakalozana anao",
+            "VOTINGONPROPOSAL": "Mifidy ny tolo-kevitra",
+            "VOTEDONPROPOSAL": "Ny vatonao dia raisina raha vao voamarina ny fifanakalozana.",
             "NOADDRESS": "Tsy niditra adiresy Metrix ianao"
         }
     }

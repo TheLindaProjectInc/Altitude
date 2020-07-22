@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Allkiri",
             "TABLE_DIFFICULTY": "Raskused",
-            "TABLE_ENTROPYBIT": "Entropia bitti",
             "TABLE_BLOCKHASH": "Blokeeri Hash",
             "TABLE_CONFIRMATIONS": "Kinnitused",
             "TABLE_INPUTOUTPUT": "Sisendid ja väljundid",
@@ -251,7 +250,6 @@
                 "LOCKED": "Rahakott on lukustatud",
                 "UNLOCKED": "Rahakott lukustamata",
                 "UNLOCKEDSTAKING": "Rahakott lukustatakse ainult postitamiseks",
-                "UNLOCKEDANON": "Rahakott on avatud ainult anonüümseks muutmiseks",
                 "STAKING": "Rahakott on praeguses seisus",
                 "NOTSTAKING": "Rahakott ei ole praeguses seisus",
                 "MASTERNODEON": "Masternode töötab praegu",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Rahakott krüpteeritud",
             "ENCRYPTEDCONTENT": "Kõik varasemad varukoopiad, mille olete oma rahakoti faili teinud, tuleks asendada hiljuti loodud krüpteeritud rahakotiga. Turvakaalutlustel muutub krüptitud rahakoti faili varasemad varukoopiad kohe, kui hakkate kasutama uut krüptitud rahakotti.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix tuum katkestas ootamatult",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'i probleemi tõttu oli see probleem lõpetatud. Soovitatav on kontrollida probleemi lahendamisel teie debug.log-faili.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'iga oli probleem, mille tõttu see lõpetati. Soovitatav on kontrollida debug.log faili probleemide osas.",
             "CLIENTINVALIDCONFIGTITLE": "Kehtetu metrix.conf konfiguratsioon",
             "CLIENTINVALIDCONFIGINFO": "Teie metrix.confil on kehtetu masternode seadistus, mis põhjustab Metrix Core'i väljumise kohe. Palun kontrollige seda faili.",
             "ADDREMOTEMNTITLE": "Lisage Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes probleem. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Taastevahendid",
             "STARTUPFAILEDTITLE": "Metrix Core käivitamine nurjus",
-            "STARTUPFAILEDINFO": "Seal oli algus Metrix Core. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas."
+            "STARTUPFAILEDINFO": "Seal oli algus Metrix Core. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
+            "CLIENTUNKNOWNERRORTITLE": "Metriksi südamiku kommunikatsiooni viga",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core'iga suheldes ilmnes probleem. Soovitatav on kontrollida debug.log faili probleemide osas."
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Tehingu viga. Palun proovi uuesti.",
         "MINIMUMCONFIRMATIONS": "Kõik sisendid nõuavad enne kulutusi vähemalt 1 kinnitust.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tehingud kopeeritakse lõikepuhvrisse",
-        "TRANSACTIONOUTPUTTOOLARGE": "Üks teie tasu summasid on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Teie muudatus on liiga suur, et seda turvaliselt saata. Maksimaalne on 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Masternoodi peatamine...",
         "FAILEDTOWRITECONFIG": "Metrix.conf-faili kirjutamisel ilmnes probleem. Kontrollige, kas fail on olemas ja et kõrgusel on kirjutusõigused.",
         "NOPUBLICUP": "Ei leitud avalikku IP-aadressi. Kontrollige oma internetiühendust ja taaskäivitage kõrgus.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Saadate",
-                "YOUGET": "Sa saad",
-                "MRXADDRESS": "Metriksi aadress",
-                "SWAP": "Vaheta",
-                "SWAPADDRESSES": "Aadresside vahetamine",
-                "BTCADDRESS": "BTC aadress",
-                "INFOLINE1": "Kui teil on BTC hoiustamisaadress, vahetatakse iga sellele aadressile saadetud BTC automaatselt MRX-i vastu teie määratud MRX-aadressile.",
-                "INFOLINE2-1": "Tehingud tühjendatakse tavaliselt tunni jooksul, sõltuvalt Bitcoini blokeerimise aegadest. Võime fiati heaks kiita",
-                "INFOLINE2-2": "osalevad riigid",
-                "INFOLINE2-3": "See teisendatakse esmalt BTC-ks, seejärel MRX-ks.",
-                "INFOLINE3": "Kui teie BTC tagatisraha on laekunud, saate MRX-i teie määratud aadressile.",
-                "INFOLINE4": "Lisateabe saamiseks külastage veebisaiti",
-                "FIATSWAPSELECTED": "Selle tehingu lõpuleviimiseks suunatakse teid edasi saidile Buy.Metrixcoin.com"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Sa ei ole kuberner",
+                "NOTGOVERNORDETAIL": "Juhid vastutavad kuueelarvete ja blockchain-muudatuste hääletamise eest. Võite saada presidendiks, lukustades valitsemislepingus õige tagatise.",
+                "COLLATERAL": "Nõutav tagatis",
+                "ENROLL": "Registreeru",
+                "CONFIRMENROLL": "Olete registreerumas kuberneriks. See saadab halduslepingu vajaliku tagatisega tehingu. Saate registreerimise igal ajal tühistada.",
+                "ISGOVERNORTITLE": "Olete aktiivne kuberner!",
+                "ISGOVERNORDETAIL1": "Juhid vastutavad kuueelarvete ja blockchain-muudatuste hääletamise eest.",
+                "ISGOVERNORDETAIL2": "Kuberneriks jäämiseks peate osalema vähemalt ühel häälel iga 30 päeva tagant.",
+                "ISGOVERNORDETAIL3": "Kui midagi hääletada pole, saate registreerumist käsitsi jätkata, saates aktiivse pingi.",
+                "UNENROLL": "Tühista registreerimine",
+                "PING": "Saada aktiivne ping"
+            },
+            "BUDGET": {
+                "TITLE": "Eelarveettepanekud",
+                "ADDPROPOSAL": "Loo ettepanek",
+                "REQUESTEDPERMONTH": "kuus",
+                "REQUESTEDREMAINING": "järelejäänud",
+                "VOTEYES": "Hääletage jah",
+                "VOTEABSTAIN": "Hääletus hoidub",
+                "VOTENO": "Hääletus nr",
+                "VOTESTOPASS": "hääled läbida",
+                "VOTEPASSING": "läbivad hääled"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Loo ettepanek",
+                "DESCRIPTION": "Altpoolt saate luua eelarveettepaneku ja esitada see võrgule hääletamiseks enne järgmist eelarve lahendamise blokki.",
+                "BUDGETFEE": "Praegune eelarvetasu on",
+                "BUDGETBLOCK": "Järgmine asustusplokk on",
+                "PROPOSALTITLE": "Ettepaneku nimi",
+                "PROPOSALDESC": "Ettepaneku kirjeldus",
+                "PROPOSALURL": "Ettepaneku URL",
+                "PROPOSALAMOUNT": "Taotletud summa",
+                "PROPOSALDURATION": "Taotletud maksed",
+                "PROPOSALADDRESS": "Makse aadress",
+                "PROPOSALCREATE": "Loo ettepanek"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Juhtimine",
+                "BUDGET": "Eelarve"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Vahetusaadressi genereerimine...",
             "ALREADYHAVEADDRESS": "Selle Metrix-aadressiga on teil juba seotud BTC-aadress",
-            "SWAPUSDMIN": "Minimaalne USD vahetustehingu summa on 50 USD",
+            "SWAPUSDMIN": "Minimaalne USD vahetustasu on 50 USD",
             "SWAPUSDMAX": "Maksimaalne USD vahetustehingusumma on 3000 USD",
+            "INCOMPLETEFORM": "Te pole kõiki nõutud välju õigesti täitnud",
+            "INVALIDPROPOSALDURATION": "Pakkumise kestus peaks olema 1–12 kuud",
+            "CREATINGPROPOSAL": "Esitatakse ettepanek võrku...",
+            "CREATEDPROPOSAL": "Teie ettepanek on edukalt loodud",
+            "ENROLLINGGOVERNOR": "Kandideerimine presidendiks...",
+            "ENROLLEDGOVERNOR": "Kui tehing on kinnitatud, on registreerumine lõppenud",
+            "VOTINGONPROPOSAL": "Ettepanekuhääletuse saatmine",
+            "VOTEDONPROPOSAL": "Kui tehing on kinnitatud, arvestatakse teie häält.",
             "NOADDRESS": "Metriksi aadressi ei sisestatud"
         }
     }

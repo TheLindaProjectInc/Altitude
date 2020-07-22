@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "หลักฐานการแฮช",
             "TABLE_SIGNATURE": "ลายเซ็น",
             "TABLE_DIFFICULTY": "ความยาก",
-            "TABLE_ENTROPYBIT": "บิตเอนโทรปี",
             "TABLE_BLOCKHASH": "บล็อกแฮช",
             "TABLE_CONFIRMATIONS": "การยืนยัน",
             "TABLE_INPUTOUTPUT": "อินพุตและเอาต์พุต",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet ถูกล็อค",
                 "UNLOCKED": "เปิด Wallet แล้ว",
                 "UNLOCKEDSTAKING": "กระเป๋าสตางค์ปลดล็อกสำหรับปักหลักเท่านั้น",
-                "UNLOCKEDANON": "Wallet ได้รับการปลดล็อกเพื่อไม่ระบุชื่อเท่านั้น",
                 "STAKING": "Wallet กำลังปักหลักอยู่",
                 "NOTSTAKING": "Wallet ไม่อยู่ในขณะนี้",
                 "MASTERNODEON": "Masternode กำลังทำงานอยู่",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "การสำรองข้อมูลก่อนหน้าใด ๆ ที่คุณทำจากไฟล์กระเป๋าสตางค์ของคุณควรถูกแทนที่โดยใช้ไฟล์กระเป๋าสตางค์ที่เข้ารหัสลับสร้างขึ้นใหม่ เพื่อความปลอดภัยการสำรองข้อมูลก่อนหน้าของไฟล์กระเป๋าสตางค์ที่ไม่ได้เข้ารหัสจะกลายเป็นสิ่งที่ไม่ได้ผลทันทีที่คุณเริ่มใช้กระเป๋าเงินที่เข้ารหัสใหม่",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ลินดาคอร์ปหยุดกะทันหัน",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับลินดาคอร์ที่ทำให้มันสิ้นสุดลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log สำหรับปัญหา",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "มีปัญหากับ Metrix Core ที่ทำให้มันยุติลง ขอแนะนำให้ตรวจสอบไฟล์ debug.log ของคุณเพื่อดูปัญหา",
             "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ของคุณมีการตั้งค่า masternode ไม่ถูกต้องซึ่งจะทำให้ Metrix Core ออกจากทันที กรุณาตรวจสอบไฟล์นี้",
             "ADDREMOTEMNTITLE": "เพิ่ม Masternode ระยะไกล",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "ดัชนี Trtern ของ Masternode",
             "BOOTSTRAPFAILEDTITLE": "Bootstrap ของ Metrix Core ล้มเหลว",
-            "BOOTSTRAPFAILEDINFO": "มีปัญหาในการบู๊ต Metrix Core แนะนำให้ตรวจสอบไฟล์บันทึกระดับความสูงเพื่อดูปัญหา",
+            "BOOTSTRAPFAILEDINFO": "มีปัญหาในการบู๊ต Metrix Core ขอแนะนำให้ตรวจสอบไฟล์บันทึกระดับความสูงของคุณเพื่อดูปัญหา",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "เครื่องมือการกู้คืน",
             "STARTUPFAILEDTITLE": "การเริ่มต้น Metrix Core ล้มเหลว",
-            "STARTUPFAILEDINFO": "มีจุดเริ่มต้นของ Metrix Core อยู่ แนะนำให้ตรวจสอบไฟล์บันทึกระดับความสูงเพื่อดูปัญหา"
+            "STARTUPFAILEDINFO": "มีจุดเริ่มต้นของ Metrix Core อยู่ ขอแนะนำให้ตรวจสอบไฟล์บันทึกระดับความสูงของคุณเพื่อดูปัญหา",
+            "CLIENTUNKNOWNERRORTITLE": "ข้อผิดพลาดในการสื่อสาร Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "มีปัญหาในการสื่อสารกับ Metrix Core ขอแนะนำให้ตรวจสอบไฟล์ debug.log ของคุณเพื่อดูปัญหา"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "ข้อผิดพลาดการทำธุรกรรม กรุณาลองอีกครั้ง.",
         "MINIMUMCONFIRMATIONS": "อินพุตทั้งหมดต้องมีการยืนยันอย่างน้อย 1 ครั้งก่อนการใช้จ่าย",
         "TRANSACTIONSCOPIEDCLIPBOARD": "คัดลอกธุรกรรมไปยังคลิปบอร์ดแล้ว",
-        "TRANSACTIONOUTPUTTOOLARGE": "หนึ่งในจำนวนเงินที่คุณชำระมีขนาดใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
-        "TRANSACTIONCHANGETOOLARGE": "การเปลี่ยนแปลงของคุณใหญ่เกินไปที่จะส่งได้อย่างปลอดภัย สูงสุดคือ 90,071,992.54740992",
         "STOPPINGMASTERNODE": "กำลังหยุด masternode...",
         "FAILEDTOWRITECONFIG": "มีปัญหาในการเขียนไปยังไฟล์ metrix.conf ของคุณ ตรวจสอบไฟล์ที่มีอยู่และระดับความสูงนั้นมีสิทธิ์ในการเขียน",
         "NOPUBLICUP": "ไม่พบที่อยู่ IP สาธารณะ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วรีสตาร์ท Altitude",
@@ -446,29 +444,65 @@
         "NOV": "พฤศจิกายน",
         "DEC": "ธันวาคม"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "คุณส่ง",
-                "YOUGET": "คุณได้รับ",
-                "MRXADDRESS": "ที่อยู่ Metrix",
-                "SWAP": "แลกเปลี่ยน",
-                "SWAPADDRESSES": "สลับที่อยู่",
-                "BTCADDRESS": "ที่อยู่ BTC",
-                "INFOLINE1": "เมื่อคุณมีที่อยู่การฝากเงิน BTC ใด ๆ BTC ที่ส่งไปยังที่อยู่นั้นจะถูกเปลี่ยนเป็น MRX โดยอัตโนมัติเป็นที่อยู่ MRX ที่คุณเลือก",
-                "INFOLINE2-1": "การทำธุรกรรมมักจะชัดเจนภายในหนึ่งชั่วโมงขึ้นอยู่กับเวลาของ Bitcoin เราสามารถยอมรับคำสั่งของ",
-                "INFOLINE2-2": "ประเทศที่เข้าร่วม",
-                "INFOLINE2-3": "สิ่งนี้จะถูกแปลงเป็น BTC ก่อนจากนั้น MRX",
-                "INFOLINE3": "เมื่อการฝาก BTC ของคุณได้รับการเคลียร์คุณจะได้รับ MRX ของคุณไปยังที่อยู่ที่ระบุไว้",
-                "INFOLINE4": "สำหรับการเยี่ยมชมข้อมูลเพิ่มเติม",
-                "FIATSWAPSELECTED": "คุณจะถูกนำไปยัง Buy.Metrixcoin.com เพื่อทำธุรกรรมนี้ให้เสร็จสมบูรณ์"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "คุณไม่ใช่ผู้ว่าการ",
+                "NOTGOVERNORDETAIL": "ผู้ว่าการมีหน้าที่รับผิดชอบในการลงคะแนนในงบประมาณรายเดือนและการเปลี่ยนแปลง blockchain คุณสามารถเป็นผู้ปกครองได้โดยการล็อคหลักประกันที่ถูกต้องในสัญญาการกำกับดูแล",
+                "COLLATERAL": "หลักประกันที่จำเป็น",
+                "ENROLL": "สมัครเรียน",
+                "CONFIRMENROLL": "คุณกำลังจะลงทะเบียนเป็นผู้ว่าการ สิ่งนี้จะส่งธุรกรรมที่มีหลักประกันที่จำเป็นไปยังสัญญาการกำกับดูแล คุณสามารถยกเลิกการลงทะเบียนได้ตลอดเวลา",
+                "ISGOVERNORTITLE": "คุณเป็นผู้ว่าราชการจังหวัด!",
+                "ISGOVERNORDETAIL1": "ผู้ว่าการมีหน้าที่รับผิดชอบในการลงคะแนนในงบประมาณรายเดือนและการเปลี่ยนแปลง blockchain",
+                "ISGOVERNORDETAIL2": "ในการพักผู้ว่าการรัฐคุณจะต้องเข้าร่วมอย่างน้อย 1 คะแนนทุก ๆ 30 วัน",
+                "ISGOVERNORDETAIL3": "หากไม่มีอะไรให้ลงคะแนนคุณสามารถทำการลงทะเบียนต่อได้ด้วยตนเองโดยส่ง ping ที่ใช้งานอยู่",
+                "UNENROLL": "ยกเลิกการลงทะเบียน",
+                "PING": "ส่ง Ping ที่ใช้งานอยู่"
+            },
+            "BUDGET": {
+                "TITLE": "ข้อเสนองบประมาณ",
+                "ADDPROPOSAL": "สร้างข้อเสนอ",
+                "REQUESTEDPERMONTH": "ต่อเดือน",
+                "REQUESTEDREMAINING": "ที่เหลืออยู่",
+                "VOTEYES": "โหวตใช่",
+                "VOTEABSTAIN": "โหวตงดออกเสียง",
+                "VOTENO": "โหวตไม่",
+                "VOTESTOPASS": "คะแนนที่จะผ่าน",
+                "VOTEPASSING": "ผ่านการลงคะแนน"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "สร้างข้อเสนอ",
+                "DESCRIPTION": "ด้านล่างนี้คุณสามารถสร้างข้อเสนองบประมาณและส่งไปยังเครือข่ายเพื่อลงคะแนนก่อนที่การระงับการชำระงบประมาณถัดไป",
+                "BUDGETFEE": "ค่าธรรมเนียมงบประมาณปัจจุบันคือ",
+                "BUDGETBLOCK": "บล็อกการชำระบัญชีถัดไปคือ",
+                "PROPOSALTITLE": "ชื่อข้อเสนอ",
+                "PROPOSALDESC": "คำอธิบายข้อเสนอ",
+                "PROPOSALURL": "URL ข้อเสนอ",
+                "PROPOSALAMOUNT": "จำนวนเงินที่ร้องขอ",
+                "PROPOSALDURATION": "การชำระเงินที่ร้องขอ",
+                "PROPOSALADDRESS": "ที่อยู่การชำระเงิน",
+                "PROPOSALCREATE": "สร้างข้อเสนอ"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "การกำกับดูแลกิจการ",
+                "BUDGET": "งบ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "กำลังสร้างที่อยู่ Swap...",
             "ALREADYHAVEADDRESS": "คุณมีที่อยู่ BTC ที่เชื่อมโยงกับที่อยู่ Metrix นี้แล้ว",
             "SWAPUSDMIN": "จำนวนเงินแลกเปลี่ยนขั้นต่ำ USD คือ $ 50",
-            "SWAPUSDMAX": "จำนวนเงินแลกเปลี่ยน USD สูงสุดคือ $ 3000",
+            "SWAPUSDMAX": "จำนวนการแลกเปลี่ยน USD สูงสุดคือ $ 3000",
+            "INCOMPLETEFORM": "คุณกรอกข้อมูลในฟิลด์ที่จำเป็นทั้งหมดไม่ถูกต้อง",
+            "INVALIDPROPOSALDURATION": "ระยะเวลาของข้อเสนอควรอยู่ระหว่าง 1 ถึง 12 เดือน",
+            "CREATINGPROPOSAL": "กำลังส่งข้อเสนอไปยังเครือข่าย...",
+            "CREATEDPROPOSAL": "สร้างข้อเสนอของคุณสำเร็จแล้ว",
+            "ENROLLINGGOVERNOR": "ลงทะเบียนเป็นผู้ว่าการ...",
+            "ENROLLEDGOVERNOR": "การลงทะเบียนของคุณจะเสร็จสมบูรณ์เมื่อการทำธุรกรรมของคุณได้รับการยืนยัน",
+            "VOTINGONPROPOSAL": "กำลังส่งข้อเสนอการลงคะแนน",
+            "VOTEDONPROPOSAL": "คะแนนของคุณจะถูกนับเมื่อทำธุรกรรมได้รับการยืนยัน",
             "NOADDRESS": "คุณไม่ได้ป้อนที่อยู่ Metrix"
         }
     }

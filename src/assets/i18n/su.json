@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Buktina Hash",
             "TABLE_SIGNATURE": "tekenan",
             "TABLE_DIFFICULTY": "kasulitan",
-            "TABLE_ENTROPYBIT": "éntropi Bit",
             "TABLE_BLOCKHASH": "blok Hash",
             "TABLE_CONFIRMATIONS": "Confirmations",
             "TABLE_INPUTOUTPUT": "Inputs na outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "dompét dikonci",
                 "UNLOCKED": "dompét Henteu dikonci",
                 "UNLOCKEDSTAKING": "Dompét teu dikonci pikeun staking wungkul",
-                "UNLOCKEDANON": "Dompét teu dikonci pikeun anonymization wungkul",
                 "STAKING": "Dompét geus ayeuna staking",
                 "NOTSTAKING": "Dompét teu ayeuna staking",
                 "MASTERNODEON": "Masternode ayeuna ngajalankeun",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "dompét énkripsi",
             "ENCRYPTEDCONTENT": "Sagala cadangan saméméhna geus dijieun tina file dompét anjeun kudu diganti ku karek dihasilkeun, file dompét énkripsi. Sangkan aman, cadangan saméméhna tina file dompét unencrypted baris jadi gunana pas Anjeun ngamimitian ngagunakeun anyar, dompét énkripsi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core dieureunkeun Tanpa disangka",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah jeung Metrix Core nu geus ngabalukarkeun ka nungtungan. Éta nyarankeun mariksa berkas debug.log anjeun isu.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah sareng Metrix Core anu parantos ngabalukarkeun éta. Disarankeun parios file debug.log anjeun pikeun masalah.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Konfigurasi sah",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf anjeun boga hiji setelan masternode sah nu bakal ngabalukarkeun Metrix Core ka LN langsung. Mangga parios file ieu.",
             "ADDREMOTEMNTITLE": "Tambahkeun Masternode Jauh",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Bootstrap inti Metrix Gagal",
-            "BOOTSTRAPFAILEDINFO": "Aya masalah bootstrapping Metrix Core. Disarankeun mariksa file log Altitude anjeun pikeun masalah.",
+            "BOOTSTRAPFAILEDINFO": "Aya masalah bootstrapping Metrix Core. Disarankeun parios log log Altitude anjeun pikeun masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Alat Pamulihan",
             "STARTUPFAILEDTITLE": "Metrix Intisari Gagal Gagal",
-            "STARTUPFAILEDINFO": "Aya ngamimitian Metrix Core. Disarankeun mariksa file log Altitude anjeun pikeun masalah."
+            "STARTUPFAILEDINFO": "Aya ngamimitian Metrix Core. Disarankeun parios log log Altitude anjeun pikeun masalah.",
+            "CLIENTUNKNOWNERRORTITLE": "Kasalahan Komunikasi Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Aya masalah ngahubungan sareng Metrix Core. Disarankeun parios file debug.log anjeun pikeun masalah."
         },
         "ADDRESSBOOK": {
             "TITLE": "alamat Book",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "kasalahan urus. Mangga cobian deui.",
         "MINIMUMCONFIRMATIONS": "Kabéh inputs merlukeun sahenteuna 1 konfirmasi saméméh belanja.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi ditiron ka clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Salah sahiji bayar anjeun ka jumlahna teuing badag pikeun ngirim aman. Maksimum nyaéta 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "robah anjeun badag teuing pikeun ngirim aman. Maksimum nyaéta 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Ngeureunkeun masternode...",
         "FAILEDTOWRITECONFIG": "Aya masalah nyerat sareng berkas metrix.conf anjeun. Pariksa koropakna aya na Altluhurna boga idin pikeun nulis.",
         "NOPUBLICUP": "Teu aya alamat IP Public. Pariksa sambungan internét anjeun sareng balikkeun Luhurna.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Anjeun Kirim",
-                "YOUGET": "Anjeun Kéngingkeun",
-                "MRXADDRESS": "Alamat Metrix",
-                "SWAP": "Pertampok",
-                "SWAPADDRESSES": "Alamat Pertukaran",
-                "BTCADDRESS": "Alamat BTC",
-                "INFOLINE1": "Sakali anjeun ngagaduhan alamat deposit BTC naon waé BTC anu dikirim kana alamat éta bakal otomatis janten swapped pikeun MRX kana alamat MRX anu dicalonkeun.",
-                "INFOLINE2-1": "Transaksi biasana jelas dina sajam gumantung kana blok blok Bitcoin. Kami tiasa nampi fiat pikeun",
-                "INFOLINE2-2": "nagara milu",
-                "INFOLINE2-3": "Ieu bakal dirobih kana BTC heula ku MRX.",
-                "INFOLINE3": "Sakali deposit BTC anjeun parantos diberesihan anjeun nampi MRX anjeun kana alamat anu dicalonkeun.",
-                "INFOLINE4": "Kanggo inpo langkung lengkep",
-                "FIATSWAPSELECTED": "Anjeun bakal dialihkeun ka Buy.Metrixcoin.com pikeun ngarengsekeun urus ieu"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Anjeun sanés Gubernur",
+                "NOTGOVERNORDETAIL": "Pamaréntah gaduh tanggung jawab pikeun pamilih dina anggaran bulanan sareng robahan blockchain. Anjeun tiasa janten Gubernur ku ngonci jaminan anu leres dina kontrak Pamaréntah.",
+                "COLLATERAL": "Anu diperyogikeun jaminan",
+                "ENROLL": "Enroll",
+                "CONFIRMENROLL": "Anjeun badé ngadaptar janten Gubernur. Ieu bakal ngirim transaksi sareng jaminan anu diperyogikeun ka kontrak pamaréntahan. Anjeun teu tiasa didaptarkeun iraha waé.",
+                "ISGOVERNORTITLE": "Anjeun Gubernur aktip!",
+                "ISGOVERNORDETAIL1": "Pamaréntah gaduh tanggung jawab pikeun pamilih dina anggaran bulanan sareng robahan blockchain.",
+                "ISGOVERNORDETAIL2": "Pikeun tetep Gubernur anjeun kedah ilubiung sahenteuna 1 sora unggal 30 dinten.",
+                "ISGOVERNORDETAIL3": "Upami henteu aya anu ngajawab pikeun anjeun teras tiasa ngalanjikeun pendaptaran sacara manual ku ngirim ping aktip.",
+                "UNENROLL": "Henteu Katingal",
+                "PING": "Kirim Ping Aktip"
+            },
+            "BUDGET": {
+                "TITLE": "Usul APBD",
+                "ADDPROPOSAL": "Nyiptakeun Proposal",
+                "REQUESTEDPERMONTH": "sabulan",
+                "REQUESTEDREMAINING": "sésana",
+                "VOTEYES": "Pentas Sumuhun",
+                "VOTEABSTAIN": "Ngajawab Unduh",
+                "VOTENO": "Undian No",
+                "VOTESTOPASS": "sora pikeun lulus",
+                "VOTEPASSING": "lulus sora"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Nyiptakeun Proposal",
+                "DESCRIPTION": "Di handap ieu anjeun tiasa nyiptakeun anggaran anggaran sareng ngirimkeun ka jaringan kanggo pamilihan blok saatos blok patokan anggaran salajengna.",
+                "BUDGETFEE": "Biaya anggaran ayeuna nyaéta",
+                "BUDGETBLOCK": "Blok padumukan salajengna nyaéta",
+                "PROPOSALTITLE": "Ngaran Proposal",
+                "PROPOSALDESC": "Keterangan Proposal",
+                "PROPOSALURL": "URL usulan",
+                "PROPOSALAMOUNT": "Jumlah Dipénta",
+                "PROPOSALDURATION": "Dipénta Ukuran",
+                "PROPOSALADDRESS": "Alamat pamayaran",
+                "PROPOSALCREATE": "Nyiptakeun Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pamaréntah",
+                "BUDGET": "Anggaran"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +495,15 @@
             "ALREADYHAVEADDRESS": "Anjeun parantos ngagaduhan alamat BTC anu aya hubunganana sareng alamat Metrix ieu",
             "SWAPUSDMIN": "Jumlah swap USD minimum $ 50",
             "SWAPUSDMAX": "Jumlah swap USD maksimum nyaéta $ 3000",
-            "NOADDRESS": "Anjeun teu ngasupkeun alamat Metrix"
+            "INCOMPLETEFORM": "Anjeun henteu acan leres ngeusi dina sagala widang anu leres",
+            "INVALIDPROPOSALDURATION": "Durasi usulan kudu antara 1 sareng 12 bulan",
+            "CREATINGPROPOSAL": "Kirimkeun usul ka jaringan...",
+            "CREATEDPROPOSAL": "Usul anjeun parantos diciptakeun suksés",
+            "ENROLLINGGOVERNOR": "Ngadaptar salaku Gubernur...",
+            "ENROLLEDGOVERNOR": "Pendaptaran anjeun bakal parantos réngsé nalika transaksi anjeun dikonfirmasi",
+            "VOTINGONPROPOSAL": "Ngirim usul sora",
+            "VOTEDONPROPOSAL": "Undian anjeun bakal diitung nalika transaksi parantos dikonfirmasi.",
+            "NOADDRESS": "Anjeun henteu ngalebetkeun alamat Metrix"
         }
     }
 }

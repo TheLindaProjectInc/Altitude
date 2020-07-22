@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Tanda tangan",
             "TABLE_DIFFICULTY": "Kesulitan",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Konfirmasi",
             "TABLE_INPUTOUTPUT": "Masukan dan keluaran",
@@ -251,7 +250,6 @@
                 "LOCKED": "Dompet terkunci",
                 "UNLOCKED": "Dompet tidak terkunci",
                 "UNLOCKEDSTAKING": "Dompet dibuka kuncinya untuk mengintai saja",
-                "UNLOCKEDANON": "Wallet terbuka untuk anonimisasi saja",
                 "STAKING": "Dompet saat ini sedang dipasang",
                 "NOTSTAKING": "Wallet saat ini tidak di-staking",
                 "MASTERNODEON": "Masternode saat ini sedang berjalan",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indeks Trx Masternode",
             "BOOTSTRAPFAILEDTITLE": "Bootstrap Inti Metrix Gagal",
-            "BOOTSTRAPFAILEDINFO": "Ada masalah bootstrap Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk masalah.",
+            "BOOTSTRAPFAILEDINFO": "Ada masalah bootstrap Metrix Core. Disarankan untuk memeriksa file log Ketinggian Anda untuk masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan",
             "STARTUPFAILEDTITLE": "Startup Inti Metrix Gagal",
-            "STARTUPFAILEDINFO": "Ada Metrix Core awal. Disarankan untuk memeriksa file log Altitude Anda untuk masalah."
+            "STARTUPFAILEDINFO": "Ada Metrix Core awal. Disarankan untuk memeriksa file log Ketinggian Anda untuk masalah.",
+            "CLIENTUNKNOWNERRORTITLE": "Kesalahan Komunikasi Inti Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Ada masalah saat berkomunikasi dengan Metrix Core. Disarankan untuk memeriksa file debug.log Anda untuk masalah."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Kesalahan transaksi. Silakan coba lagi.",
         "MINIMUMCONFIRMATIONS": "Semua input memerlukan setidaknya 1 konfirmasi sebelum belanja.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan klip",
-        "TRANSACTIONOUTPUTTOOLARGE": "Salah satu pembayaran Anda ke jumlah terlalu besar untuk dikirim dengan aman. Maksimal adalah 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Perubahan Anda terlalu besar untuk dikirim dengan aman. Maksimal adalah 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Menghentikan masternode...",
         "FAILEDTOWRITECONFIG": "Terjadi masalah saat menulis ke file metrix.conf Anda. Periksa file yang ada dan bahwa Altitude memiliki izin menulis.",
         "NOPUBLICUP": "Tidak ada alamat IP Publik yang ditemukan. Periksa koneksi internet Anda dan mulai ulang Ketinggian.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Anda mengirim",
-                "YOUGET": "Anda mendapatkan",
-                "MRXADDRESS": "Alamat Metrix",
-                "SWAP": "Menukar",
-                "SWAPADDRESSES": "Tukar Alamat",
-                "BTCADDRESS": "Alamat BTC",
-                "INFOLINE1": "Setelah Anda memiliki alamat penyetoran BTC, setiap BTC yang dikirim ke alamat itu akan secara otomatis ditukar dengan MRX ke alamat MRX yang Anda pilih.",
-                "INFOLINE2-1": "Transaksi biasanya dihapus dalam satu jam tergantung pada waktu blok Bitcoin. Kami dapat menerima untuk",
-                "INFOLINE2-2": "negara yang berpartisipasi",
-                "INFOLINE2-3": "Ini akan dikonversi ke BTC terlebih dahulu kemudian MRX.",
-                "INFOLINE3": "Setelah setoran BTC Anda selesai Anda akan menerima MRX Anda ke alamat yang Anda pilih.",
-                "INFOLINE4": "Untuk informasi lebih lanjut, kunjungi",
-                "FIATSWAPSELECTED": "Anda akan diarahkan ke Beli.Metrixcoin.com untuk menyelesaikan transaksi ini"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Anda bukan seorang Gubernur",
+                "NOTGOVERNORDETAIL": "Gubernur bertanggung jawab untuk memilih anggaran bulanan dan perubahan blockchain. Anda dapat menjadi Gubernur dengan mengunci agunan yang benar dalam kontrak Tata Kelola.",
+                "COLLATERAL": "Jaminan yang dibutuhkan",
+                "ENROLL": "Mendaftar",
+                "CONFIRMENROLL": "Anda akan mendaftar sebagai Gubernur. Ini akan mengirim transaksi dengan jaminan yang diperlukan untuk kontrak tata kelola. Anda dapat membatalkan pendaftaran kapan saja.",
+                "ISGOVERNORTITLE": "Anda seorang Gubernur aktif!",
+                "ISGOVERNORDETAIL1": "Gubernur bertanggung jawab untuk memilih anggaran bulanan dan perubahan blockchain.",
+                "ISGOVERNORDETAIL2": "Untuk tetap menjadi Gubernur, Anda harus berpartisipasi dalam setidaknya 1 suara setiap 30 hari.",
+                "ISGOVERNORDETAIL3": "Jika tidak ada yang memilih maka Anda dapat melanjutkan pendaftaran secara manual dengan mengirimkan ping aktif.",
+                "UNENROLL": "Batalkan pendaftaran",
+                "PING": "Kirim Ping Aktif"
+            },
+            "BUDGET": {
+                "TITLE": "Proposal Anggaran",
+                "ADDPROPOSAL": "Buat Proposal",
+                "REQUESTEDPERMONTH": "per bulan",
+                "REQUESTEDREMAINING": "tersisa",
+                "VOTEYES": "Pilih Ya",
+                "VOTEABSTAIN": "Pilih Abstain",
+                "VOTENO": "Vote No",
+                "VOTESTOPASS": "suara untuk lulus",
+                "VOTEPASSING": "memberikan suara"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Buat Proposal",
+                "DESCRIPTION": "Di bawah ini Anda dapat membuat proposal anggaran dan mengirimkannya ke jaringan untuk pemungutan suara sebelum blok penyelesaian anggaran berikutnya.",
+                "BUDGETFEE": "Biaya anggaran saat ini adalah",
+                "BUDGETBLOCK": "Blok penyelesaian berikutnya adalah",
+                "PROPOSALTITLE": "Nama Proposal",
+                "PROPOSALDESC": "Deskripsi Proposal",
+                "PROPOSALURL": "URL proposal",
+                "PROPOSALAMOUNT": "Jumlah yang diminta",
+                "PROPOSALDURATION": "Pembayaran yang Diminta",
+                "PROPOSALADDRESS": "Alamat Pembayaran",
+                "PROPOSALCREATE": "Buat Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pemerintahan",
+                "BUDGET": "Anggaran"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Anda sudah memiliki alamat BTC yang terkait dengan alamat Metrix ini",
             "SWAPUSDMIN": "Jumlah minimum swap USD adalah $ 50",
             "SWAPUSDMAX": "Jumlah maksimum swap USD adalah $ 3000",
+            "INCOMPLETEFORM": "Anda belum mengisi semua bidang yang diperlukan dengan benar",
+            "INVALIDPROPOSALDURATION": "Durasi proposal harus antara 1 dan 12 bulan",
+            "CREATINGPROPOSAL": "Mengirim proposal ke jaringan...",
+            "CREATEDPROPOSAL": "Proposal Anda telah berhasil dibuat",
+            "ENROLLINGGOVERNOR": "Mendaftar sebagai Gubernur...",
+            "ENROLLEDGOVERNOR": "Pendaftaran Anda akan selesai setelah transaksi Anda dikonfirmasi",
+            "VOTINGONPROPOSAL": "Mengirim suara proposal",
+            "VOTEDONPROPOSAL": "Pilihan Anda akan dihitung setelah transaksi dikonfirmasi.",
             "NOADDRESS": "Anda tidak memasukkan alamat Metrix"
         }
     }

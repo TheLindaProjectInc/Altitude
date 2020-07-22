@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Prova de Hash",
             "TABLE_SIGNATURE": "Assinatura",
             "TABLE_DIFFICULTY": "Dificuldade",
-            "TABLE_ENTROPYBIT": "Bocado de Entropia",
             "TABLE_BLOCKHASH": "Bloquear hash",
             "TABLE_CONFIRMATIONS": "Confirmações",
             "TABLE_INPUTOUTPUT": "Entradas e saídas",
@@ -251,7 +250,6 @@
                 "LOCKED": "Carteira bloqueada",
                 "UNLOCKED": "Carteira desbloqueada",
                 "UNLOCKEDSTAKING": "Carteira desbloqueada apenas para staking",
-                "UNLOCKEDANON": "Carteira desbloqueada apenas para anonimização",
                 "STAKING": "Wallet está atualmente apostando",
                 "NOTSTAKING": "A carteira não está atualmente apostando",
                 "MASTERNODEON": "Masternode está atualmente em execução",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Carteira criptografada",
             "ENCRYPTEDCONTENT": "Quaisquer backups anteriores feitos no seu arquivo de carteira devem ser substituídos pelo arquivo de carteira criptografado recém-gerado. Por motivos de segurança, os backups anteriores do arquivo de carteira não criptografada se tornarão inúteis assim que você começar a usar a nova carteira criptografada.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Parou Inesperadamente",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Houve um problema com a Metrix Core que causou a sua finalização. É recomendável verificar se há problemas no arquivo debug.log.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Houve um problema com o Metrix Core que fez com que ele terminasse. É recomendável verificar se há problemas no seu arquivo debug.log.",
             "CLIENTINVALIDCONFIGTITLE": "Configuração inválida de metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Seu metrix.conf tem uma configuração de masternode inválida que fará com que Metrix Core saia imediatamente. Por favor, verifique este arquivo.",
             "ADDREMOTEMNTITLE": "Adicionar o Masternode Remoto",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Ocorreu um problema ao inicializar o Metrix Core. É recomendável verificar se há problemas no arquivo de log do Altitude.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ferramentas de Recuperação",
             "STARTUPFAILEDTITLE": "Falha na inicialização do Metrix Core",
-            "STARTUPFAILEDINFO": "Houve um Metrix Core inicial. É recomendável verificar se há problemas no arquivo de log do Altitude."
+            "STARTUPFAILEDINFO": "Houve um Metrix Core inicial. É recomendável verificar se há problemas no arquivo de log do Altitude.",
+            "CLIENTUNKNOWNERRORTITLE": "Erro de comunicação do Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Ocorreu um problema na comunicação com o Metrix Core. É recomendável verificar se há problemas no seu arquivo debug.log."
         },
         "ADDRESSBOOK": {
             "TITLE": "Livro de endereços",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Erro de transação Por favor, tente novamente.",
         "MINIMUMCONFIRMATIONS": "Todas as entradas exigem pelo menos 1 confirmação antes de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transações copiadas para a área de transferência",
-        "TRANSACTIONOUTPUTTOOLARGE": "Um dos seus pagamentos para valores é muito grande para ser enviado com segurança. O máximo é 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Sua alteração é muito grande para ser enviada com segurança. O máximo é 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Parando o masternode...",
         "FAILEDTOWRITECONFIG": "Houve um problema ao gravar no seu arquivo metrix.conf. Verifique se o arquivo existe e se Altitude tem permissões de gravação.",
         "NOPUBLICUP": "Nenhum endereço IP público encontrado. Verifique sua conexão com a Internet e reinicie o Altitude.",
@@ -446,30 +444,66 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Você envia",
-                "YOUGET": "Você obtém",
-                "MRXADDRESS": "Endereço Metrix",
-                "SWAP": "Troca",
-                "SWAPADDRESSES": "Trocar endereços",
-                "BTCADDRESS": "Endereço BTC",
-                "INFOLINE1": "Depois de ter um endereço de depósito BTC, qualquer BTC enviado para esse endereço será automaticamente trocado por MRX para o endereço MRX indicado.",
-                "INFOLINE2-1": "As transações normalmente são apagadas em uma hora, dependendo dos tempos de bloqueio do Bitcoin. Nós podemos aceitar fiat para",
-                "INFOLINE2-2": "países participantes",
-                "INFOLINE2-3": "Isso será convertido em BTC primeiro e depois em MRX.",
-                "INFOLINE3": "Depois que seu depósito BTC for liberado, você receberá seu MRX no seu endereço indicado.",
-                "INFOLINE4": "Para mais informações visite",
-                "FIATSWAPSELECTED": "Você será redirecionado para Buy.Metrixcoin.com para concluir esta transação"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Você não é um governador",
+                "NOTGOVERNORDETAIL": "Os governadores são responsáveis por votar nos orçamentos mensais e nas mudanças de blockchain. Você pode se tornar um governador bloqueando as garantias corretas no contrato de governança.",
+                "COLLATERAL": "Garantia exigida",
+                "ENROLL": "Inscreva-se",
+                "CONFIRMENROLL": "Você está prestes a se inscrever como governador. Isso enviará uma transação com as garantias necessárias ao contrato de governança. Você pode cancelar a inscrição a qualquer momento.",
+                "ISGOVERNORTITLE": "Você é um governador ativo!",
+                "ISGOVERNORDETAIL1": "Os governadores são responsáveis por votar nos orçamentos mensais e nas mudanças de blockchain.",
+                "ISGOVERNORDETAIL2": "Para permanecer governador, você precisará participar de pelo menos 1 voto a cada 30 dias.",
+                "ISGOVERNORDETAIL3": "Se não houver nada para votar, você poderá continuar manualmente sua inscrição enviando um ping ativo.",
+                "UNENROLL": "Cancelar inscrição",
+                "PING": "Enviar Ping ativo"
+            },
+            "BUDGET": {
+                "TITLE": "Propostas de orçamento",
+                "ADDPROPOSAL": "Criar proposta",
+                "REQUESTEDPERMONTH": "por mês",
+                "REQUESTEDREMAINING": "remanescente",
+                "VOTEYES": "Vote Sim",
+                "VOTEABSTAIN": "Abstenção de votação",
+                "VOTENO": "Vote No",
+                "VOTESTOPASS": "votos para passar",
+                "VOTEPASSING": "votos de aprovação"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Criar uma proposta",
+                "DESCRIPTION": "Abaixo, você pode criar uma proposta de orçamento e enviá-la à rede para votação antes do próximo bloco de liquidação do orçamento.",
+                "BUDGETFEE": "A taxa do orçamento atual é",
+                "BUDGETBLOCK": "O próximo bloco de liquidação é",
+                "PROPOSALTITLE": "Nome da proposta",
+                "PROPOSALDESC": "Descrição da proposta",
+                "PROPOSALURL": "URL da proposta",
+                "PROPOSALAMOUNT": "Montante solicitado",
+                "PROPOSALDURATION": "Pagamentos solicitados",
+                "PROPOSALADDRESS": "Endereço de Pagamento",
+                "PROPOSALCREATE": "Criar proposta"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Governança",
+                "BUDGET": "Despesas"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Gerando Endereço de Troca...",
-            "ALREADYHAVEADDRESS": "Você já tem um endereço BTC associado a esse endereço do Metrix",
-            "SWAPUSDMIN": "O montante mínimo de swap em USD é de $ 50",
-            "SWAPUSDMAX": "O valor máximo de swap em USD é de $ 3000",
-            "NOADDRESS": "Você não digitou um endereço Metrix"
+            "GETTINGSWAPADDRESS": "Gerando endereço de troca...",
+            "ALREADYHAVEADDRESS": "Você já tem um endereço BTC associado a este endereço Metrix",
+            "SWAPUSDMIN": "O valor mínimo do swap em USD é $ 50",
+            "SWAPUSDMAX": "O valor máximo do swap em USD é $ 3000",
+            "INCOMPLETEFORM": "Você não preencheu todos os campos obrigatórios corretamente",
+            "INVALIDPROPOSALDURATION": "A duração da proposta deve estar entre 1 e 12 meses",
+            "CREATINGPROPOSAL": "Enviando proposta para a rede...",
+            "CREATEDPROPOSAL": "Sua proposta foi criada com sucesso",
+            "ENROLLINGGOVERNOR": "Inscrevendo-se como governador...",
+            "ENROLLEDGOVERNOR": "Sua inscrição será concluída assim que sua transação for confirmada",
+            "VOTINGONPROPOSAL": "Enviando votação da proposta",
+            "VOTEDONPROPOSAL": "Seu voto será contado assim que a transação for confirmada.",
+            "NOADDRESS": "Você não inseriu um endereço Metrix"
         }
     }
 }

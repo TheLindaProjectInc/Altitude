@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Semnătură",
             "TABLE_DIFFICULTY": "Dificultate",
-            "TABLE_ENTROPYBIT": "Entropia Bit",
             "TABLE_BLOCKHASH": "Blocarea hashului",
             "TABLE_CONFIRMATIONS": "Confirmări",
             "TABLE_INPUTOUTPUT": "Intrări și ieșiri",
@@ -251,7 +250,6 @@
                 "LOCKED": "Portofelul este blocat",
                 "UNLOCKED": "Portofelul deblocat",
                 "UNLOCKEDSTAKING": "Portofelul este deblocat numai pentru pariere",
-                "UNLOCKEDANON": "Portofelul deblocat numai pentru anonimizare",
                 "STAKING": "Portofelul este în prezent o miză",
                 "NOTSTAKING": "În prezent, portofelul nu este activ",
                 "MASTERNODEON": "Masternode rulează în prezent",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Portofel criptat",
             "ENCRYPTEDCONTENT": "Toate backup-urile anterioare pe care le-ați realizat din fișierul dvs. de portofel trebuie înlocuite cu fișierul portofel criptat nou generat. Din motive de securitate, backup-urile anterioare ale fișierului portofel necriptat vor deveni inutile imediat ce veți începe să utilizați noul portofel criptat.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core sa oprit în mod neașteptat",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care ia determinat să se termine. Este recomandat să verificați fișierul debug.log pentru probleme.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "A fost o problemă cu Metrix Core care a determinat-o să se termine. Se recomandă verificarea fișierului dvs. debug.log pentru probleme.",
             "CLIENTINVALIDCONFIGTITLE": "Configurația metrix.conf este nevalidă",
             "CLIENTINVALIDCONFIGINFO": "Versiunea dvs. metrix.conf are o setare invalidă de tip masternode care va determina Metrix Core să iasă imediat. Verificați acest fișier.",
             "ADDREMOTEMNTITLE": "Adăugați masina de la distanță",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "A apărut o problemă de bootstrapping Metrix Core. Este recomandat să verificați fișierul dvs. jurnal Altitudine pentru probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumente de recuperare",
             "STARTUPFAILEDTITLE": "Pornirea Metrix Core a eșuat",
-            "STARTUPFAILEDINFO": "A apărut Metrix Core. Se recomandă să verificați fișierul dvs. jurnal Altitudine pentru probleme."
+            "STARTUPFAILEDINFO": "A apărut Metrix Core. Este recomandat să verificați fișierul dvs. jurnal Altitudine pentru probleme.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core eroare de comunicare",
+            "CLIENTUNKNOWNERRORINFO": "A existat o problemă în comunicarea cu Metrix Core. Se recomandă verificarea fișierului dvs. debug.log pentru probleme."
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Eroare de tranzacție. Vă rugăm să încercați din nou.",
         "MINIMUMCONFIRMATIONS": "Toate intrările necesită cel puțin o confirmare înainte de a cheltui.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzacțiile copiate în clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Una dintre plățile dvs. către sume este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Schimbarea dvs. este prea mare pentru a trimite în siguranță. Maximum este 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Oprirea masternozei...",
         "FAILEDTOWRITECONFIG": "A apărut o problemă la scrierea fișierului dvs. metrix.conf. Verificați existența fișierului și că altitudinea are permisiuni de scriere.",
         "NOPUBLICUP": "Nu a fost găsită nicio adresă IP publică. Verificați conexiunea la internet și reporniți altitudinea.",
@@ -446,29 +444,65 @@
         "NOV": "noiembrie",
         "DEC": "decembrie"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Tu trimiti",
-                "YOUGET": "Primesti",
-                "MRXADDRESS": "Adresa Metrix",
-                "SWAP": "schimb",
-                "SWAPADDRESSES": "Adresa de schimb",
-                "BTCADDRESS": "Adresa BTC",
-                "INFOLINE1": "După ce aveți o adresă de depunere BTC, orice BTC trimis la acea adresă va fi schimbat automat pentru MRX în adresa dvs. MRX nominalizată.",
-                "INFOLINE2-1": "Tranzacțiile se elimină de obicei într-o oră, în funcție de orele blocului Bitcoin. Putem accepta fiat pentru",
-                "INFOLINE2-2": "țări participante",
-                "INFOLINE2-3": "Aceasta va fi convertită în BTC mai întâi, apoi în MRX.",
-                "INFOLINE3": "Odată ce depozitul BTC s-a șters, veți primi MRX-ul dvs. pe adresa nominalizată.",
-                "INFOLINE4": "Pentru mai multe informații vizitați",
-                "FIATSWAPSELECTED": "Vei fi redirecționat către Buy.Metrixcoin.com pentru a finaliza această tranzacție"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Nu ești guvernator",
+                "NOTGOVERNORDETAIL": "Guvernatorii sunt responsabili pentru votarea bugetelor lunare și a modificărilor blockchain. Puteți deveni guvernator blocând garanțiile corecte din contractul de guvernare.",
+                "COLLATERAL": "Garanție obligatorie",
+                "ENROLL": "INSCRIETI",
+                "CONFIRMENROLL": "Ești pe cale să te înscrii ca guvernator. Aceasta va trimite o tranzacție cu garanția necesară contractului de guvernare. Vă puteți dezabona în orice moment.",
+                "ISGOVERNORTITLE": "Sunteți un guvernator activ!",
+                "ISGOVERNORDETAIL1": "Guvernatorii sunt responsabili pentru votarea bugetelor lunare și a modificărilor blockchain.",
+                "ISGOVERNORDETAIL2": "Pentru a rămâne guvernator va trebui să participați la cel puțin 1 vot la fiecare 30 de zile.",
+                "ISGOVERNORDETAIL3": "Dacă nu există nimic de votat, atunci puteți continua înscrierea manuală trimițând un ping activ.",
+                "UNENROLL": "Anulați înscrierea",
+                "PING": "Trimite Ping-ul activ"
+            },
+            "BUDGET": {
+                "TITLE": "Propuneri bugetare",
+                "ADDPROPOSAL": "Creați propunere",
+                "REQUESTEDPERMONTH": "pe luna",
+                "REQUESTEDREMAINING": "rămas",
+                "VOTEYES": "Votează Da",
+                "VOTEABSTAIN": "Votează Abtește-te",
+                "VOTENO": "Vot nr",
+                "VOTESTOPASS": "voturi de trecut",
+                "VOTEPASSING": "votarea voturilor"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Creați o propunere",
+                "DESCRIPTION": "Mai jos puteți crea o propunere bugetară și o puteți trimite la rețea pentru vot înainte de următorul bloc de decontare a bugetului.",
+                "BUDGETFEE": "Taxa bugetară curentă este",
+                "BUDGETBLOCK": "Următorul bloc de decontare este",
+                "PROPOSALTITLE": "Denumirea propunerii",
+                "PROPOSALDESC": "Descrierea propunerii",
+                "PROPOSALURL": "Adresa URL a propunerii",
+                "PROPOSALAMOUNT": "Suma solicitată",
+                "PROPOSALDURATION": "Plăți solicitate",
+                "PROPOSALADDRESS": "adresa de plata",
+                "PROPOSALCREATE": "Creați propunere"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "guvernare",
+                "BUDGET": "Buget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generarea unei adrese de swap...",
             "ALREADYHAVEADDRESS": "Aveți deja o adresă BTC asociată cu această adresă Metrix",
             "SWAPUSDMIN": "Suma minimă de swap în USD este de 50 USD",
-            "SWAPUSDMAX": "Suma maximă de swap în USD este de 3000 $",
+            "SWAPUSDMAX": "Suma maximă de swap în USD este de 3000 USD",
+            "INCOMPLETEFORM": "Nu ați completat corect toate câmpurile obligatorii",
+            "INVALIDPROPOSALDURATION": "Durata propunerii ar trebui să fie cuprinsă între 1 și 12 luni",
+            "CREATINGPROPOSAL": "Trimiterea propunerii la rețea...",
+            "CREATEDPROPOSAL": "Propunerea dvs. a fost creată cu succes",
+            "ENROLLINGGOVERNOR": "Înscrierea ca guvernator...",
+            "ENROLLEDGOVERNOR": "Înscrierea dvs. va fi completă după ce tranzacția dvs. va fi confirmată",
+            "VOTINGONPROPOSAL": "Se trimite votul propunerii",
+            "VOTEDONPROPOSAL": "Votul dvs. va fi contorizat odată confirmată tranzacția.",
             "NOADDRESS": "Nu ați introdus o adresă Metrix"
         }
     }

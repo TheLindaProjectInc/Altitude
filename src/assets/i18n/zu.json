@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Ubufakazi",
             "TABLE_SIGNATURE": "Isiginesha",
             "TABLE_DIFFICULTY": "Kunzima",
-            "TABLE_ENTROPYBIT": "I-Entropy Bit",
             "TABLE_BLOCKHASH": "Vimba iHash",
             "TABLE_CONFIRMATIONS": "Iziqinisekiso",
             "TABLE_INPUTOUTPUT": "Amaphesenti nemiphumela",
@@ -251,7 +250,6 @@
                 "LOCKED": "I-Wallet ivaliwe",
                 "UNLOCKED": "I-Wallet ivuliwe",
                 "UNLOCKEDSTAKING": "I-Wallet ivuliwe ukuze igwetshwe kuphela",
-                "UNLOCKEDANON": "I-Wallet ivuliwe ngenhloso yokwazisa kuphela",
                 "STAKING": "I-Wallet okwamanje iyagcina",
                 "NOTSTAKING": "I-Wallet ayifaki okwamanje",
                 "MASTERNODEON": "I-Masternode okwamanje iyasebenza",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "I-Wallet ibhalisiwe",
             "ENCRYPTEDCONTENT": "Noma yikuphi ukusekela okudlule okwenzile kwefayili yakho ye-wallet kufanele kuthathwe indawo yefayela elifakwe esikhwameni esisha, elibethelwe. Ngezizathu zokuphepha, i-backups yangaphambilini yefayela le-wallet elingabhalisiwe ngeke libe usizo uma usuqala ukusebenzisa isikhwama esisha, esibhalwe phansi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "I-Metrix Core igxume ngokungalindelekile",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Kube khona inkinga nge-Metrix Core ebangele ukuthi iqede. Kutusa ukuhlola ifayela lakho le-debug.log ngezinkinga.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kube nenkinga ngeMetrix Core eyenze ukuthi inqanyulwe. Kunconywa ukuthi uhlole ifayela lakho le-debug.log ngezinkinga.",
             "CLIENTINVALIDCONFIGTITLE": "Ukulungiswa okungavumelekile kwe-metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho inesethaphu esingalungile se-masternode esizokwenza ukuthi uMetrix Core aphume ngokushesha. Sicela uhlole leli fayela.",
             "ADDREMOTEMNTITLE": "Ngeza Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Kube nenkinga ekubolekeni kwe-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho lokungena le-Altitude ngezinkinga.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amathuluzi Okubuyisela",
             "STARTUPFAILEDTITLE": "Ukuqala kweMetrix kwehlulekile",
-            "STARTUPFAILEDINFO": "Kwakukhona ukuqala kweMetrix Core. Kunconywa ukuthi uhlole ifayela lakho lokungena le-Altitude ngezinkinga."
+            "STARTUPFAILEDINFO": "Kwakukhona ukuqala kweMetrix Core. Kunconywa ukuthi uhlole ifayela lakho lokungena le-Altitude ngezinkinga.",
+            "CLIENTUNKNOWNERRORTITLE": "Iphutha Lokuxhumana KweMetrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Kube nenkinga yokuxhumana neMetrix Core. Kunconywa ukuthi uhlole ifayela lakho le-debug.log ngezinkinga."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ibhuku lekheli",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Iphutha lokuthutha. Ngicela uzame futhi.",
         "MINIMUMCONFIRMATIONS": "Zonke izimpendulo zidinga okungenani ukuqinisekiswa okungu-1 ngaphambi kokuchitha.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ukuthengiselana kukopishwe kubhodi lokunamathisela",
-        "TRANSACTIONOUTPUTTOOLARGE": "Enye yekhokhelo yakho kuya kumanani inkulu kakhulu ukuze ithumele ngokuphepha. Ubukhulu bungu-90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ukushintsha kwakho kukhulu kakhulu ukuze uthumele ngokuphepha. Ubukhulu bungu-90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Imisa i-masternode...",
         "FAILEDTOWRITECONFIG": "Kube nenkinga yokubhalela ifayela lakho le-metrix.conf. Bheka ifayela ukuthi likhona nokuthi i-Altitude inezimvume zokubhala.",
         "NOPUBLICUP": "Alikho ikheli le-IP lomphakathi elitholakele. Hlola ukuxhumana kwakho kwe-inthanethi bese uqala kabusha i-Altitude.",
@@ -446,22 +444,50 @@
         "NOV": "I-NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Uyathumela",
-                "YOUGET": "Uthola",
-                "MRXADDRESS": "Ikheli leMetrix",
-                "SWAP": "Shintsha",
-                "SWAPADDRESSES": "Shintsha Amakheli",
-                "BTCADDRESS": "Ikheli le-BTC",
-                "INFOLINE1": "Lapho usunekheli lediphozithi le-BTC noma iyiphi i-BTC ethunyelwe kulelo kheli ngokuzenzakalelayo izoshintshelwa kwi-MRX kukheli lakho le-MRX eliphakanyisiwe.",
-                "INFOLINE2-1": "Ukukhokhelwa kuvame ukusula kungakapheli ihora kuye ngezikhathi ze-Bitcoin block. Singayemukela i-fiat ye",
-                "INFOLINE2-2": "amazwe abamba iqhaza",
-                "INFOLINE2-3": "Lokhu kuzoguqulwa ku-BTC kuqala bese kuba yi-MRX.",
-                "INFOLINE3": "Lapho idiphozi yakho ye-BTC isiqedile, uzokwamukela i-MRX yakho ekhelini lakho eliqokiwe.",
-                "INFOLINE4": "Ukuthola eminye imininingwane vakashela",
-                "FIATSWAPSELECTED": "Uzoqondiswa kabusha ku-Put.Metrixcoin.com ukuze uqedele lokhu kuthengiselana"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Awusiyena uMbusi",
+                "NOTGOVERNORDETAIL": "Ababusi banesibopho sokuvota kwisabelomali sanyanga zonke kanye noshintsho lwe-blockchain. Ungaba uMbusi ngokuvala isivumelwano esifanele kwinkontileka Kahulumeni.",
+                "COLLATERAL": "Kudingeka isivumelwano",
+                "ENROLL": "Bhalisa",
+                "CONFIRMENROLL": "Ususondele ukubhalisa njengoMbusi. Lokhu kuzothumela ukuthengiselana ngesivumelwano esidingekayo kwinkontileka yokubusa. Ungavula noma kunini.",
+                "ISGOVERNORTITLE": "Ungumbusi osebenzayo!",
+                "ISGOVERNORDETAIL1": "Ababusi banesibopho sokuvota kwisabelomali sanyanga zonke kanye noshintsho lwe-blockchain.",
+                "ISGOVERNORDETAIL2": "Ukuze uhlale ungumbusi kuzodingeka uhlanganyele okungenani kuvoti eli-1 njalo ezinsukwini ezingama-30.",
+                "ISGOVERNORDETAIL3": "Uma kungabikho lutho ongavota ngalo, ungaqhubeka nokubhalisa kwakho ngokuthumela i-ping esebenzayo.",
+                "UNENROLL": "Ukususa ukubhaliswa",
+                "PING": "Thumela i-Ping esebenzayo"
+            },
+            "BUDGET": {
+                "TITLE": "Iziphakamiso zeBhajethi",
+                "ADDPROPOSAL": "Dala Isiphakamiso",
+                "REQUESTEDPERMONTH": "ngenyanga",
+                "REQUESTEDREMAINING": "okusele",
+                "VOTEYES": "Vota Yebo",
+                "VOTEABSTAIN": "Votela",
+                "VOTENO": "Vota Cha",
+                "VOTESTOPASS": "amavoti okumele adlule",
+                "VOTEPASSING": "odlulayo amavoti"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Dala Isiphakamiso",
+                "DESCRIPTION": "Ngezansi ungakha isiphakamiso sesabelomali futhi usithumele kunethiwekhi yokuvota ngaphambi kwebhulali yokulungiswa kwesabelomali esilandelayo.",
+                "BUDGETFEE": "Imali yesabelomali yamanje",
+                "BUDGETBLOCK": "Ibhulokhi yokuhlala elandelayo",
+                "PROPOSALTITLE": "Igama Lesincazelo",
+                "PROPOSALDESC": "Isincazelo",
+                "PROPOSALURL": "I-URL yesiphakamiso",
+                "PROPOSALAMOUNT": "Inani Eliceliwe",
+                "PROPOSALDURATION": "Izicelo ezikhokhwayo",
+                "PROPOSALADDRESS": "Ikheli Lenkokhelo",
+                "PROPOSALCREATE": "Dala Isiphakamiso"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Ukubusa",
+                "BUDGET": "Isabelomali"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Usunekheli le-BTC elihambisana naleli kheli leMetrix",
             "SWAPUSDMIN": "Inani eliphansi lokushintshwa kwe-USD ngu- $ 50",
             "SWAPUSDMAX": "Inani eliphakeme lokushintshwa kwe-USD yi- $ 3000",
+            "INCOMPLETEFORM": "Awuzange ugcwalise zonke izinkambu ezidingekayo kahle",
+            "INVALIDPROPOSALDURATION": "Isikhathi sokuphakanyiswa kufanele sibe phakathi kwezinyanga ezi-1 nezingu-12",
+            "CREATINGPROPOSAL": "Ihambisa isiphakamiso kwinethiwekhi...",
+            "CREATEDPROPOSAL": "Isiphakamiso sakho senziwe ngempumelelo",
+            "ENROLLINGGOVERNOR": "Kubhaliswa njengoMbusi...",
+            "ENROLLEDGOVERNOR": "Ukubhalisa kwakho kuzoqedwa lapho ukuthengiselana kwakho sekuqinisekisiwe",
+            "VOTINGONPROPOSAL": "Kuthunyelwa ivoti lesicelo",
+            "VOTEDONPROPOSAL": "Ukuvota kwakho kuzobalwa uma umsebenzi uqinisekisiwe.",
             "NOADDRESS": "Awungenanga ikheli leMetrix"
         }
     }

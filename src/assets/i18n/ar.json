@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "إثبات تجزئة",
             "TABLE_SIGNATURE": "التوقيع",
             "TABLE_DIFFICULTY": "صعوبة",
-            "TABLE_ENTROPYBIT": "انتوبيا بت",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "تأكيدات",
             "TABLE_INPUTOUTPUT": "مدخلات ومخرجات",
@@ -251,7 +250,6 @@
                 "LOCKED": "المحفظة مؤمنة",
                 "UNLOCKED": "المحفظة غير مقفلة",
                 "UNLOCKEDSTAKING": "تم إلغاء قفل المحفظة للتأشير",
-                "UNLOCKEDANON": "تم إلغاء قفل المحفظة لإخفاء الهوية فقط",
                 "STAKING": "المحفظة مسجلة حاليًا",
                 "NOTSTAKING": "المحفظة غير مسجلة حاليًا",
                 "MASTERNODEON": "Masternode قيد التشغيل حاليًا",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "محفظة مشفرة",
             "ENCRYPTEDCONTENT": "يجب استبدال أي نسخ احتياطية سابقة قمت بها من ملف المحفظة بملف المحفظة المشفر حديثًا. لأسباب تتعلق بالأمان ، ستصبح النسخ الاحتياطية السابقة من ملف المحفظة غير المشفرة عديمة الفائدة بمجرد بدء استخدام المحفظة الجديدة المشفرة.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ليندا الأساسية توقفت بشكل غير متوقع",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "كانت هناك مشكلة مع ليندا كور التي تسببت في إنهاؤها. من المستحسن التحقق من ملف debug.log الخاص بك للتعرف على المشكلات.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "حدثت مشكلة في Metrix Core تسببت في إنهائها. يوصى بالتحقق من ملف debug.log لمعرفة المشاكل.",
             "CLIENTINVALIDCONFIGTITLE": "تكوين metrix.conf غير صالح",
             "CLIENTINVALIDCONFIGINFO": "يحتوي برنامج metrix.conf على إعداد masternode غير صالح والذي سيؤدي إلى خروج Metrix Core على الفور. يرجى التحقق من هذا الملف.",
             "ADDREMOTEMNTITLE": "إضافة Masternode البعيد",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "مؤشر Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "فشل Metrix الأساسية Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "حدثت مشكلة أثناء تشغيل Metrix Core. يوصى بالتحقق من ملف سجل Altitude الخاص بك لمعرفة المشكلات.",
+            "BOOTSTRAPFAILEDINFO": "حدثت مشكلة في تشغيل Metrix Core. يوصى بالتحقق من ملف سجل الارتفاع الخاص بك بحثًا عن المشكلات.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "أدوات الاسترداد",
             "STARTUPFAILEDTITLE": "فشل بدء تشغيل Metrix Core",
-            "STARTUPFAILEDINFO": "كان هناك بداية Metrix الأساسية. يوصى بالتحقق من ملف سجل Altitude الخاص بك لمعرفة المشكلات."
+            "STARTUPFAILEDINFO": "كان هناك بداية Metrix Core. يوصى بالتحقق من ملف سجل الارتفاع الخاص بك بحثًا عن المشكلات.",
+            "CLIENTUNKNOWNERRORTITLE": "خطأ في اتصال Metrix الأساسي",
+            "CLIENTUNKNOWNERRORINFO": "حدثت مشكلة في الاتصال بـ Metrix Core. يوصى بالتحقق من ملف debug.log لمعرفة المشاكل."
         },
         "ADDRESSBOOK": {
             "TITLE": "دليل العناوين",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "خطأ المعاملات. حاول مرة اخرى.",
         "MINIMUMCONFIRMATIONS": "تتطلب جميع المدخلات تأكيدًا واحدًا على الأقل قبل الإنفاق.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "المعاملات المنسوخة إلى الحافظة",
-        "TRANSACTIONOUTPUTTOOLARGE": "أحد أموالك المدفوعة للمبالغ كبير جدًا بحيث لا يمكن إرسالها بأمان. الحد الأقصى هو 90،071،992،474740992.",
-        "TRANSACTIONCHANGETOOLARGE": "تغييرك كبير جدًا بحيث لا يمكن إرساله بأمان. الحد الأقصى هو 90،071،992،474740992.",
         "STOPPINGMASTERNODE": "جارٍ إيقاف masternode...",
         "FAILEDTOWRITECONFIG": "حدثت مشكلة في الكتابة إلى ملف metrix.conf الخاص بك. تحقق من وجود الملف وأن Altitude لديه أذونات الكتابة.",
         "NOPUBLICUP": "لم يتم العثور على عنوان IP العام. تحقق من اتصالك بالإنترنت وأعد تشغيل Altitude.",
@@ -446,30 +444,66 @@
         "NOV": "نوفمبر",
         "DEC": "ديسمبر"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "انت ارسل",
-                "YOUGET": "لقد حصلت",
-                "MRXADDRESS": "عنوان الميتريكس",
-                "SWAP": "مبادلة",
-                "SWAPADDRESSES": "عناوين المبادلة",
-                "BTCADDRESS": "عنوان BTC",
-                "INFOLINE1": "بمجرد الحصول على عنوان إيداع BTC ، سيتم تبديل أي BTC يتم إرساله إلى هذا العنوان تلقائيًا لـ MRX في عنوان MRX الذي رشحته.",
-                "INFOLINE2-1": "المعاملات عادة ما تكون واضحة في غضون ساعة اعتمادا على أوقات كتلة بيتكوين. يمكننا ان نقبل فيات ل",
-                "INFOLINE2-2": "الدول المشاركة",
-                "INFOLINE2-3": "سيتم تحويل هذا إلى BTC أولاً ثم MRX.",
-                "INFOLINE3": "بمجرد مسح إيداعك في BTC ، ستتلقى MRX في عنوانك المرشح.",
-                "INFOLINE4": "للمزيد من المعلومات قم بزيارة",
-                "FIATSWAPSELECTED": "ستتم إعادة توجيهك إلى Buy.Metrixcoin.com لإكمال هذه المعاملة"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "انت لست محافظ",
+                "NOTGOVERNORDETAIL": "المحافظون مسؤولون عن التصويت على الميزانيات الشهرية وتغييرات blockchain. يمكنك أن تصبح محافظًا من خلال تأمين الضمانات الصحيحة في عقد الحوكمة.",
+                "COLLATERAL": "الضمانات المطلوبة",
+                "ENROLL": "يتسجل، يلتحق",
+                "CONFIRMENROLL": "أنت على وشك التسجيل كمحافظ. سيؤدي هذا إلى إرسال معاملة مع الضمان المطلوب لعقد الحوكمة. يمكنك إلغاء التسجيل في أي وقت.",
+                "ISGOVERNORTITLE": "أنت محافظ نشط!",
+                "ISGOVERNORDETAIL1": "المحافظون مسؤولون عن التصويت على الميزانيات الشهرية وتغييرات blockchain.",
+                "ISGOVERNORDETAIL2": "للبقاء في منصب المحافظ ، ستحتاج إلى المشاركة في تصويت واحد على الأقل كل 30 يومًا.",
+                "ISGOVERNORDETAIL3": "إذا لم يكن هناك شيء للتصويت عليه ، فيمكنك متابعة التسجيل يدويًا عن طريق إرسال اختبار ping نشط.",
+                "UNENROLL": "إلغاء التسجيل",
+                "PING": "إرسال بينغ نشط"
+            },
+            "BUDGET": {
+                "TITLE": "مقترحات الميزانية",
+                "ADDPROPOSAL": "إنشاء اقتراح",
+                "REQUESTEDPERMONTH": "كل شهر",
+                "REQUESTEDREMAINING": "المتبقي",
+                "VOTEYES": "صوت نعم",
+                "VOTEABSTAIN": "التصويت الامتناع عن التصويت",
+                "VOTENO": "التصويت لا",
+                "VOTESTOPASS": "الأصوات لتمريرها",
+                "VOTEPASSING": "تمرير الأصوات"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "قم بإنشاء اقتراح",
+                "DESCRIPTION": "فيما يلي يمكنك إنشاء مقترح ميزانية وإرساله إلى الشبكة للتصويت قبل كتلة تسوية الميزانية التالية.",
+                "BUDGETFEE": "رسوم الميزانية الحالية",
+                "BUDGETBLOCK": "كتلة التسوية التالية هي",
+                "PROPOSALTITLE": "اسم المقترح",
+                "PROPOSALDESC": "وصف الاقتراح",
+                "PROPOSALURL": "عنوان URL الخاص بالاقتراح",
+                "PROPOSALAMOUNT": "الكمية المطلوبة",
+                "PROPOSALDURATION": "المدفوعات المطلوبة",
+                "PROPOSALADDRESS": "عنوان الدفع",
+                "PROPOSALCREATE": "إنشاء اقتراح"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "الحكم",
+                "BUDGET": "ميزانية"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "جارٍ إنشاء عنوان المبادلة...",
             "ALREADYHAVEADDRESS": "لديك بالفعل عنوان BTC مرتبط بعنوان Metrix هذا",
-            "SWAPUSDMIN": "الحد الأدنى لمبلغ المبادلة هو 50 دولارًا",
+            "SWAPUSDMIN": "الحد الأدنى لمبادلة الدولار الأمريكي هو 50 دولارًا",
             "SWAPUSDMAX": "الحد الأقصى لمبلغ المبادلة بالدولار الأمريكي هو 3000 دولار",
-            "NOADDRESS": "لم تدخل عنوان Metrix"
+            "INCOMPLETEFORM": "لم تقم بملء جميع الحقول المطلوبة بشكل صحيح",
+            "INVALIDPROPOSALDURATION": "يجب أن تكون مدة الاقتراح بين شهر و 12 شهرًا",
+            "CREATINGPROPOSAL": "إرسال اقتراح إلى الشبكة...",
+            "CREATEDPROPOSAL": "تم إنشاء اقتراحك بنجاح",
+            "ENROLLINGGOVERNOR": "التسجيل كمحافظ...",
+            "ENROLLEDGOVERNOR": "سيكتمل تسجيلك بمجرد تأكيد معاملتك",
+            "VOTINGONPROPOSAL": "إرسال التصويت المقترح",
+            "VOTEDONPROPOSAL": "سيتم احتساب تصويتك بمجرد تأكيد المعاملة.",
+            "NOADDRESS": "لم تقم بإدخال عنوان Metrix"
         }
     }
 }

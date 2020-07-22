@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Prawf Hash",
             "TABLE_SIGNATURE": "Llofnod",
             "TABLE_DIFFICULTY": "Anhawster",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Bloc Hash",
             "TABLE_CONFIRMATIONS": "Cadarnhau",
             "TABLE_INPUTOUTPUT": "Mewnbynnau ac Allbwn",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet wedi'i gloi",
                 "UNLOCKED": "Gwaredwyd y wallet",
                 "UNLOCKEDSTAKING": "Gwaredwyd y wallet ar gyfer stacio yn unig",
-                "UNLOCKEDANON": "Gwaredwyd y waled am ddienw yn unig",
                 "STAKING": "Mae Wallet ar hyn o bryd yn taro",
                 "NOTSTAKING": "Nid yw Wallet yn stacio ar hyn o bryd",
                 "MASTERNODEON": "Mae Masternode ar hyn o bryd yn rhedeg",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Waled wedi'i amgryptio",
             "ENCRYPTEDCONTENT": "Dylai'r ffeil waled wedi'i hamgryptio newydd gael ei disodli gan unrhyw wrth gefn blaenorol a wnaethoch o'ch ffeil waled. Am resymau diogelwch, bydd copïau wrth gefn o'r ffeil waled heb ei grybwyll yn dod yn ddiwerth cyn gynted ag y byddwch yn dechrau defnyddio'r waled newydd wedi'i hamgryptio.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Craidd Wedi'i Stopio Yn annisgwyl",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo orffen. Mae'n argymell i wirio'ch ffeil debug.log am faterion.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo ddod i ben. Argymhellir gwirio'ch ffeil debug.log am faterion.",
             "CLIENTINVALIDCONFIGTITLE": "Cyfluniad metrix.conf annilys",
             "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi Metrix Core i adael ar unwaith. Gwiriwch y ffeil hon.",
             "ADDREMOTEMNTITLE": "Ychwanegu Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Roedd yna broblem cychwynnu Metrix Craidd. Argymhellir gwirio'ch ffeil log Uchder am faterion.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Offer Adfer",
             "STARTUPFAILEDTITLE": "Methwyd Cychwyn Craidd Metrix",
-            "STARTUPFAILEDINFO": "Roedd Craidd Metrix cychwynnol. Argymhellir gwirio'ch ffeil log Uchder am faterion."
+            "STARTUPFAILEDINFO": "Roedd Craidd Metrix cychwynnol. Argymhellir gwirio'ch ffeil log Uchder am faterion.",
+            "CLIENTUNKNOWNERRORTITLE": "Gwall Cyfathrebu Craidd Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Roedd problem cyfathrebu â Metrix Core. Argymhellir gwirio'ch ffeil debug.log am faterion."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr cyfeiriadau",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Gwall trafodion. Trio eto os gwelwch yn dda.",
         "MINIMUMCONFIRMATIONS": "Rhaid i bob mewnbyniad o leiaf 1 gadarnhau cyn gwario.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Trosglwyddiadau wedi'u copïo i'r clipfwrdd",
-        "TRANSACTIONOUTPUTTOOLARGE": "Mae un o'ch cyflog i symiau yn rhy fawr i'w hanfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mae'ch newid yn rhy fawr i'w anfon yn ddiogel. Uchafswm yw 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Stopio masternode...",
         "FAILEDTOWRITECONFIG": "Roedd yna broblem ysgrifennu at eich ffeil metrix.conf. Gwiriwch fod y ffeil yn bodoli a bod Uchder yn ysgrifennu caniatâd.",
         "NOPUBLICUP": "Ni ddarganfuwyd cyfeiriad IP cyhoeddus. Gwiriwch eich cysylltiad rhyngrwyd ac ailddechrau Uchder.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Rydych chi'n Anfon",
-                "YOUGET": "Rydych chi'n Cael",
-                "MRXADDRESS": "Cyfeiriad Metrix",
-                "SWAP": "Cyfnewid",
-                "SWAPADDRESSES": "Cyfeiriadau Cyfnewid",
-                "BTCADDRESS": "Cyfeiriad BTC",
-                "INFOLINE1": "Unwaith y bydd gennych gyfeiriad blaendal BTC, bydd unrhyw BTC a anfonir i'r cyfeiriad hwnnw yn cael ei gyfnewid yn awtomatig am MRX i'ch cyfeiriad MRX enwebedig.",
-                "INFOLINE2-1": "Mae trafodion fel arfer yn clirio o fewn awr yn dibynnu ar amseroedd bloc Bitcoin. Gallwn dderbyn fiat am",
-                "INFOLINE2-2": "gwledydd sy'n cymryd rhan",
-                "INFOLINE2-3": "Bydd hwn yn cael ei drawsnewid i BTC yn gyntaf ac yna MRX.",
-                "INFOLINE3": "Ar ôl i'ch blaendal BTC glirio byddwch yn derbyn eich MRX i'ch cyfeiriad enwebedig.",
-                "INFOLINE4": "Am fwy o wybodaeth, ewch i",
-                "FIATSWAPSELECTED": "Fe'ch ailgyfeirir i Buy.Metrixcoin.com i gyflawni'r trafodiad hwn"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Nid ydych chi'n Llywodraethwr",
+                "NOTGOVERNORDETAIL": "Mae llywodraethwyr yn gyfrifol am bleidleisio ar gyllidebau misol a newidiadau blockchain. Gallwch ddod yn Llywodraethwr trwy gloi'r cyfochrog cywir yn y contract Llywodraethu.",
+                "COLLATERAL": "Cyfochrog gofynnol",
+                "ENROLL": "Cofrestrwch",
+                "CONFIRMENROLL": "Rydych chi ar fin cofrestru fel Llywodraethwr. Bydd hyn yn anfon trafodiad gyda'r cyfochrog gofynnol i'r contract llywodraethu. Gallwch ddadgofrestru ar unrhyw adeg.",
+                "ISGOVERNORTITLE": "Rydych chi'n Llywodraethwr gweithredol!",
+                "ISGOVERNORDETAIL1": "Mae llywodraethwyr yn gyfrifol am bleidleisio ar gyllidebau misol a newidiadau blockchain.",
+                "ISGOVERNORDETAIL2": "Er mwyn aros yn Llywodraethwr bydd angen i chi gymryd rhan mewn o leiaf 1 bleidlais bob 30 diwrnod.",
+                "ISGOVERNORDETAIL3": "Os nad oes unrhyw beth i bleidleisio arno, gallwch barhau â'ch cofrestriad â llaw trwy anfon ping gweithredol.",
+                "UNENROLL": "Dad-gofrestru",
+                "PING": "Anfon Ping Gweithredol"
+            },
+            "BUDGET": {
+                "TITLE": "Cynigion Cyllideb",
+                "ADDPROPOSAL": "Creu Cynnig",
+                "REQUESTEDPERMONTH": "y mis",
+                "REQUESTEDREMAINING": "ar ôl",
+                "VOTEYES": "Pleidleisiwch Ydw",
+                "VOTEABSTAIN": "Pleidleisiwch Abstain",
+                "VOTENO": "Pleidlais Na",
+                "VOTESTOPASS": "pleidleisiau i basio",
+                "VOTEPASSING": "pasio pleidleisiau"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Creu Cynnig",
+                "DESCRIPTION": "Isod gallwch greu cynnig cyllidebol a'i gyflwyno i'r rhwydwaith ar gyfer pleidleisio cyn y bloc setliad cyllideb nesaf.",
+                "BUDGETFEE": "Ffi gyfredol y gyllideb yw",
+                "BUDGETBLOCK": "Y bloc aneddiadau nesaf yw",
+                "PROPOSALTITLE": "Enw'r Cynnig",
+                "PROPOSALDESC": "Disgrifiad o'r Cynnig",
+                "PROPOSALURL": "URL y cynnig",
+                "PROPOSALAMOUNT": "Swm y Gofynnwyd amdano",
+                "PROPOSALDURATION": "Taliadau y Gofynnwyd amdanynt",
+                "PROPOSALADDRESS": "Cyfeiriad Taliad",
+                "PROPOSALCREATE": "Creu Cynnig"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Llywodraethu",
+                "BUDGET": "Cyllideb"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Mae gennych gyfeiriad BTC eisoes yn gysylltiedig â'r cyfeiriad Metrix hwn",
             "SWAPUSDMIN": "Yr isafswm swm cyfnewid USD yw $ 50",
             "SWAPUSDMAX": "Uchafswm cyfnewid USD yw $ 3000",
+            "INCOMPLETEFORM": "Nid ydych wedi llenwi'r holl feysydd gofynnol yn gywir",
+            "INVALIDPROPOSALDURATION": "Dylai hyd y cynnig fod rhwng 1 a 12 mis",
+            "CREATINGPROPOSAL": "Cyflwyno cynnig i rwydweithio...",
+            "CREATEDPROPOSAL": "Mae eich cynnig wedi'i greu yn llwyddiannus",
+            "ENROLLINGGOVERNOR": "Cofrestru fel Llywodraethwr...",
+            "ENROLLEDGOVERNOR": "Bydd eich cofrestriad wedi'i gwblhau unwaith y bydd eich trafodiad wedi'i gadarnhau",
+            "VOTINGONPROPOSAL": "Pleidlais cynnig anfon",
+            "VOTEDONPROPOSAL": "Bydd eich pleidlais yn cael ei chyfrif unwaith y bydd y trafodiad wedi'i gadarnhau.",
             "NOADDRESS": "Ni wnaethoch nodi cyfeiriad Metrix"
         }
     }

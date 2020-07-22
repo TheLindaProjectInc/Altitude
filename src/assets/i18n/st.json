@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Bopaki",
             "TABLE_SIGNATURE": "Pontšo",
             "TABLE_DIFFICULTY": "Bothata",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Thibela Hash",
             "TABLE_CONFIRMATIONS": "Litšepiso",
             "TABLE_INPUTOUTPUT": "Lipuo le Liphello",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet e koetsoe",
                 "UNLOCKED": "Wallet e koetsoe",
                 "UNLOCKEDSTAKING": "Wallet e koetsoe bakeng sa staking feela",
-                "UNLOCKEDANON": "Wallet e koetsoe bakeng sa ho tsebahala feela",
                 "STAKING": "Hona joale li-Wallet li ntse li tsitsa",
                 "NOTSTAKING": "Hona ha hona joale bolleteng ha bo ts'oane",
                 "MASTERNODEON": "Masternode e ntse e sebetsa hona joale",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet e ngotsoe",
             "ENCRYPTEDCONTENT": "Tlhahiso leha e le efe e fetileng eo u e entseng ea faele ea hau ea sepache e lokela ho nkeloa sebaka ke faele ea sepache e sa tsoa hlahisoa, e ngotsoeng. Bakeng sa mabaka a tšireletso, likopi tse fetileng tsa faele ea sepache tse sa ngolisoeng li tla ba se nang thuso hang ha u qala ho sebelisa sepache se secha, se kentsoeng.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core o ile a ema ka tšohanyetso",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata le Metrix Core e entseng hore e felisoe. E khothaletsa ho hlahloba faele ea hau ea debug.log bakeng sa lintlha.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Ho ne ho na le bothata ka Metrix Core e e entseng hore e felise. Ho khothalletsoa ho hlahloba file ea hau ea debug.log bakeng sa litaba.",
             "CLIENTINVALIDCONFIGTITLE": "Tlhokomelo e sa nepahaleng ea metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ea hau e na le setupane sa masternode se sa nepahalang se tla etsa hore Metrix Core a tsoe hang-hang. Ka kopo, sheba faele ena.",
             "ADDREMOTEMNTITLE": "Kenya Masternode e hole",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap e ile ea hloleha",
-            "BOOTSTRAPFAILEDINFO": "Ho ne ho e-na le bothata bootstrging Metrix Core. Ho khothaletsoa ho lekola faele ea hau ea sebaka sa Altitude bakeng sa litaba.",
+            "BOOTSTRAPFAILEDINFO": "Ho ne ho e-na le bothata bootstrging Metrix Core. Ho khothalletsoa hore u hlahlobe file ea hau ea Altitude ea log bakeng sa litaba.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Lisebelisoa tsa Pholoso",
             "STARTUPFAILEDTITLE": "Qalo ea Metrix Core e ile ea hloleha",
-            "STARTUPFAILEDINFO": "Ho na le ho ne ho qala Metrix Core. Ho khothalletsoa hore u hlahlobe faele ea hau ea sebaka sa Altitude bakeng sa litaba."
+            "STARTUPFAILEDINFO": "Ho ne ho na le Metrix Core e qalang. Ho khothalletsoa hore u hlahlobe file ea hau ea Altitude ea log bakeng sa litaba.",
+            "CLIENTUNKNOWNERRORTITLE": "Phoso ea Puisano ea Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Ho ne ho e-na le bothata ba ho buisana le Metrix Core. Ho khothalletsoa ho hlahloba file ea hau ea debug.log bakeng sa litaba."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Aterese",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Phoso ea transaction. Ka kopo leka hape.",
         "MINIMUMCONFIRMATIONS": "Lintho tsohle tse hlokahalang li hloka bonnete ba 1 pele u qeta.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Litšebetso li kopitsoa ho lebokose la lipapali",
-        "TRANSACTIONOUTPUTTOOLARGE": "E 'ngoe ea moputso oa hau ho chelete e le kholo haholo hore e se ke ea romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Phetoho ea hau e kholo haholo hore e ka romeloa ka mokhoa o sireletsehileng. Boholo ke 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Ho emisa masternode...",
         "FAILEDTOWRITECONFIG": "Ho bile le bothata ho ngolla file ea hau ea metrix.conf. Lekola faele e le teng le hore Altitude e na le tumello ea ho ngola.",
         "NOPUBLICUP": "Ha ho aterese ea IP ea Sechaba e fumanoeng. Sheba khokahano ea hau ea inthanete ebe o qala bocha Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "U romella",
-                "YOUGET": "Uena",
-                "MRXADDRESS": "Aterese ea Metrix",
-                "SWAP": "Fetolela",
-                "SWAPADDRESSES": "Fetolela Aterese",
-                "BTCADDRESS": "Aterese ea BTC",
-                "INFOLINE1": "Ha u se u na le aterese ea BTC ea depositi BTC efe kapa efe e rometsoeng atereseng eo ka boeona e tla kenelletse MRX atereseng ea hau ea MRX e khethiloeng.",
-                "INFOLINE2-1": "Ts'ebetso hangata e hlakile ka nako ea hora ho latela linako tsa block ea Bitcoin. Re ka amohela fiat bakeng",
-                "INFOLINE2-2": "linaha tse nkang karolo",
-                "INFOLINE2-3": "Sena se tla fetoleloa ho BTC pele ebe MRX.",
-                "INFOLINE3": "Hang ha depositi ea hau ea BTC e hlakisitse u tla amohela MRX ea hau atereseng ea hau e khethiloeng.",
-                "INFOLINE4": "Bakeng sa tlhaiso-leseling e batsi",
-                "FIATSWAPSELECTED": "U tla romelloa ho Buy.Metrixcoin.com ho phethela tšebetso ena"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ha u 'Musisi",
+                "NOTGOVERNORDETAIL": "Babusi ba na le boikarabello ba ho vouta ho litekanyetso tsa khoeli le khoeli le liphetoho tsa blockchain. U ka ba 'Musisi ka ho koala konteraka e nepahetseng ho konteraka ea Mmuso.",
+                "COLLATERAL": "Ho hlokahala mokoloto",
+                "ENROLL": "Ingolise",
+                "CONFIRMENROLL": "U se u tla ngolisa u le 'Musisi. Sena se tla romella khoebo le konteraka e hlokahalang konterakeng ea puso. O ka ngolisa ka nako efe kapa efe.",
+                "ISGOVERNORTITLE": "U 'Musisi ea mafolofolo!",
+                "ISGOVERNORDETAIL1": "Babusi ba na le boikarabello ba ho vouta ho litekanyetso tsa khoeli le khoeli le liphetoho tsa blockchain.",
+                "ISGOVERNORDETAIL2": "Ho lula u le 'Musisi ho tla hloka hore u kenye letsoho bonyane voutu e ngoe le e ngoe ka matsatsi a 30.",
+                "ISGOVERNORDETAIL3": "Haeba ho se letho leo u ka le voutang, o ka tsoela pele ho ingolisa ka letsoho ka ho romella ping e sebetsang.",
+                "UNENROLL": "E sa ngolisoe",
+                "PING": "Romella Ping e sebetsang"
+            },
+            "BUDGET": {
+                "TITLE": "Litlhahiso tsa Budget",
+                "ADDPROPOSAL": "Theha Tlhahiso",
+                "REQUESTEDPERMONTH": "ka khoeli",
+                "REQUESTEDREMAINING": "setseng",
+                "VOTEYES": "Vote Ee",
+                "VOTEABSTAIN": "Votela",
+                "VOTENO": "Vote Che",
+                "VOTESTOPASS": "likhetho tse fetang",
+                "VOTEPASSING": "ho fumana likhetho"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Theha Tlhahiso",
+                "DESCRIPTION": "Ka tlase o ka etsa tlhahiso ea tekanyetso mme o e ise ho marang-rang bakeng sa ho vouta pele ho lithibelo tse latelang tsa tekanyetso.",
+                "BUDGETFEE": "Chelete ea hajoale ea lichelete ke",
+                "BUDGETBLOCK": "Sebaka se latelang sa bolulo ke",
+                "PROPOSALTITLE": "Lebitso la Tlhahiso",
+                "PROPOSALDESC": "Tlhaloso",
+                "PROPOSALURL": "URL ea tlhahiso",
+                "PROPOSALAMOUNT": "Chelete e Kopo",
+                "PROPOSALDURATION": "Litefo tse Kopo",
+                "PROPOSALADDRESS": "Aterese ea Tefo",
+                "PROPOSALCREATE": "Theha Tlhahiso"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Puso",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "E hlahisa Aterese ea Phetoho...",
             "ALREADYHAVEADDRESS": "U se u ntse u na le aterese ea BTC e amanang le aterese ena ea Metrix",
-            "SWAPUSDMIN": "Chelete e fetotsoeng bonyane ba USD ke $ 50",
-            "SWAPUSDMAX": "Chelete e fetotsoeng kaholimo ho USD ke $ 3000",
+            "SWAPUSDMIN": "Chelete e fetohang bonyane ba USD ke $ 50",
+            "SWAPUSDMAX": "Sekhahla se fetohang sa li-USD ke $ 3000",
+            "INCOMPLETEFORM": "Ha u tlatse ka botlalo libakeng tsohle tse hlokahalang",
+            "INVALIDPROPOSALDURATION": "Nako ea tlhahiso e lokela ho ba pakeng tsa likhoeli tse 1 le 12",
+            "CREATINGPROPOSAL": "E fana ka tlhahiso ho netweke...",
+            "CREATEDPROPOSAL": "Tlhahiso ea hau e entsoe ka katleho",
+            "ENROLLINGGOVERNOR": "Ho ingolisa e le 'Musisi...",
+            "ENROLLEDGOVERNOR": "Ngoliso ea hau e tla phetheha hang ha khoebo ea hau e tiisitsoe",
+            "VOTINGONPROPOSAL": "Ho romelloa voutu ea tlhahiso",
+            "VOTEDONPROPOSAL": "Khetho ea hau e tla baloa hang ha khoebo e netefalitsoe.",
             "NOADDRESS": "Ha ua kena aterese ea Metrix"
         }
     }

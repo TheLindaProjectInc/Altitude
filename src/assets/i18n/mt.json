@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Prova ta 'Hash",
             "TABLE_SIGNATURE": "Firma",
             "TABLE_DIFFICULTY": "Diffikultà",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Blokk Hash",
             "TABLE_CONFIRMATIONS": "Konfermi",
             "TABLE_INPUTOUTPUT": "Inputs u Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet msakkra",
                 "UNLOCKED": "Wallet jinfetaħ",
                 "UNLOCKEDSTAKING": "Wallet jinfetaħ għall-staking biss",
-                "UNLOCKEDANON": "Wallet jinfetaħ għall-anonimizzazzjoni biss",
                 "STAKING": "Kartiera bħalissa qed timxi",
                 "NOTSTAKING": "Il-kartiera bħalissa mhix staking",
                 "MASTERNODEON": "Masternode bħalissa qed taħdem",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Kartiera kriptata",
             "ENCRYPTEDCONTENT": "Kwalunkwe backups preċedenti li għamilt mill-fajl tal-portafoll tiegħek għandhom jiġu sostitwiti bil-fajl tal-kartiera ġġenerat ġdid, kriptat. Għal raġunijiet ta 'sigurtà, backups ta' qabel tal-fajl tal-kartiera mhux enċiklat se jsiru inutli malli tibda tuża l-kartiera ġdida kriptata.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core waqfet bla mistenni",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema ma 'Metrix Core li kkawżalha li tterminat. Huwa jirrakkomanda li tiċċekkja l-fajl debug.log tiegħek għal kwistjonijiet.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema bil-Metrix Core li kkawżatha tittermina. Huwa rrakkomandat li tivverifika l-fajl debug.log tiegħek għal kwistjonijiet.",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni metrix.conf invalida",
             "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup tal-masternode invalidu li jwassal għal Metrix Core mill-ewwel. Jekk jogħġbok iċċekkja dan il-fajl.",
             "ADDREMOTEMNTITLE": "Żid Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Kien hemm problema fil-bootstrapping tal-Metrix Core. Huwa rrakkomandat li tivverifika l-fajl tal-ġurnal tal-Altitudni tiegħek għal kwistjonijiet.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Għodda ta 'rkupru",
             "STARTUPFAILEDTITLE": "Falliment tal-Metrix Core Fallut",
-            "STARTUPFAILEDINFO": "Kien hemm Metrix Core tal-bidu. Huwa rrakkomandat li tivverifika l-fajl tal-ġurnal tal-Altitudni tiegħek għal kwistjonijiet."
+            "STARTUPFAILEDINFO": "Kien hemm Metrix Core tal-bidu. Huwa rrakkomandat li tivverifika l-fajl tal-ġurnal tal-Altitudni tiegħek għal kwistjonijiet.",
+            "CLIENTUNKNOWNERRORTITLE": "Żball fil-Komunikazzjoni Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Kien hemm problema fil-komunikazzjoni ma 'Metrix Core. Huwa rrakkomandat li tivverifika l-fajl debug.log tiegħek għal kwistjonijiet."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-indirizzi",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Żball ta 'transazzjoni. Jekk jogħġbok erġa pprova.",
         "MINIMUMCONFIRMATIONS": "L-inputs kollha jeħtieġu mill-inqas konferma waħda qabel l-infiq.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranżazzjonijiet ikkupjati lill-clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Wieħed mill-paga tiegħek għall-ammonti huwa kbir wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Il-bidla tiegħek hija kbira wisq biex tibgħat bla periklu. Massimu huwa 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Waqqaf il-masternode...",
         "FAILEDTOWRITECONFIG": "Kien hemm problema biex tikteb fil-fajl metrix.conf tiegħek. Iċċekkja li jeżisti l-fajl u li l-Altitudni għandha permessi għall-kitba.",
         "NOPUBLICUP": "Ma nstab l-ebda indirizz IP pubbliku. Iċċekkja l-konnessjoni bl-internet tiegħek u erġa ibda l-Altitudni.",
@@ -446,29 +444,65 @@
         "NOV": "ĠODDA",
         "DEC": "Diċembru"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Int tibgħat",
-                "YOUGET": "Ikollok",
-                "MRXADDRESS": "Indirizz Metrix",
-                "SWAP": "Tpartit",
-                "SWAPADDRESSES": "Tindirizza Indirizzi",
-                "BTCADDRESS": "Indirizz BTC",
-                "INFOLINE1": "Ladarba jkollok indirizz ta 'depożitu BTC, kull BTC mibgħuta lil dak l-indirizz awtomatikament tinbidel għal MRX fl-indirizz MRX nominat tiegħek.",
-                "INFOLINE2-1": "Tranżazzjonijiet tipikament ikunu ċari fi żmien siegħa skont il-ħinijiet tal-blokka Bitcoin. Nistgħu naċċettaw fiat għal",
-                "INFOLINE2-2": "pajjiżi parteċipanti",
-                "INFOLINE2-3": "Dan se jiġi kkonvertit għal BTC l-ewwel imbagħad għal MRX.",
-                "INFOLINE3": "Ladarba d-depożitu BTC tiegħek ikun ikklerjat, int tirċievi l-MRX tiegħek fl-indirizz maħtur tiegħek.",
-                "INFOLINE4": "Għal aktar informazzjoni żur",
-                "FIATSWAPSELECTED": "Inti se jiġi dirottat lejn Buy.Metrixcoin.com biex tlesti din it-tranżazzjoni"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Int m'intix Gvernatur",
+                "NOTGOVERNORDETAIL": "Il-Gvernaturi huma responsabbli għall-vot fuq il-baġits ta 'kull xahar u l-bidliet fil-blockchain. Tista 'ssir Gvernatur billi ssakkar il-kollateral korrett fil-kuntratt ta' Governanza.",
+                "COLLATERAL": "Garanzija meħtieġa",
+                "ENROLL": "Iskrizzjoni",
+                "CONFIRMENROLL": "Inti se tirreġistra bħala Gvernatur. Din tibgħat tranżazzjoni bil-kollateral meħtieġ għall-kuntratt ta 'governanza. Tista 'tikkanċella f'kull ħin.",
+                "ISGOVERNORTITLE": "Int Gvernatur attiv!",
+                "ISGOVERNORDETAIL1": "Il-Gvernaturi huma responsabbli għall-vot fuq il-baġits ta 'kull xahar u l-bidliet fil-blockchain.",
+                "ISGOVERNORDETAIL2": "Biex tibqa 'Gvernatur ser ikollok bżonn tieħu sehem f'mill-inqas vot kull 30 jum.",
+                "ISGOVERNORDETAIL3": "Jekk m'hemm xejn li tivvota allura tista 'tkompli manwalment l-iskrizzjoni tiegħek billi tibgħat ping attiv.",
+                "UNENROLL": "Unenroll",
+                "PING": "Ibgħat Active Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Proposti baġitarji",
+                "ADDPROPOSAL": "Oħloq Proposta",
+                "REQUESTEDPERMONTH": "kull xahar",
+                "REQUESTEDREMAINING": "fadal",
+                "VOTEYES": "Votazzjoni Iva",
+                "VOTEABSTAIN": "Vota Abstain",
+                "VOTENO": "Votazzjoni Nru",
+                "VOTESTOPASS": "voti biex jghaddu",
+                "VOTEPASSING": "tgħaddi l-voti"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Oħloq Proposta",
+                "DESCRIPTION": "Hawn taħt tista 'toħloq proposta tal-baġit u tissottomettiha għan-netwerk għall-votazzjoni qabel il-blokk ta' saldu tal-baġit li jmiss.",
+                "BUDGETFEE": "Il-ħlas attwali tal-baġit huwa",
+                "BUDGETBLOCK": "Il-blokka tas-saldu li jmiss hija",
+                "PROPOSALTITLE": "Isem tal-Proposta",
+                "PROPOSALDESC": "Deskrizzjoni tal-Proposta",
+                "PROPOSALURL": "URL tal-proposta",
+                "PROPOSALAMOUNT": "Ammont mitlub",
+                "PROPOSALDURATION": "Ħlasijiet mitluba",
+                "PROPOSALADDRESS": "Indirizz tal-Ħlas",
+                "PROPOSALCREATE": "Oħloq Proposta"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Il-Governanza",
+                "BUDGET": "Baġit"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ġenerazzjoni ta 'l-Indirizz ta' Swap...",
             "ALREADYHAVEADDRESS": "Diġà għandek indirizz BTC assoċjat ma 'dan l-indirizz Metrix",
-            "SWAPUSDMIN": "L-ammont minimu ta 'tpartit ta' USD huwa $ 50",
+            "SWAPUSDMIN": "L-ammont minimu ta ’tpartit ta’ USD huwa ta ’$ 50",
             "SWAPUSDMAX": "L-ammont massimu ta 'tpartit ta' USD huwa ta '$ 3000",
+            "INCOMPLETEFORM": "Int ma mlejtx l-oqsma kollha meħtieġa b'mod korrett",
+            "INVALIDPROPOSALDURATION": "Id-dewmien tal-proposta għandu jkun bejn 1 u 12-il xahar",
+            "CREATINGPROPOSAL": "Issottometti proposta għan-netwerk...",
+            "CREATEDPROPOSAL": "Il-proposta tiegħek inħolqot b'suċċess",
+            "ENROLLINGGOVERNOR": "Taħdem bħala Gvernatur...",
+            "ENROLLEDGOVERNOR": "L-iskrizzjoni tiegħek se tkun kompluta ladarba t-tranżazzjoni tiegħek tkun ikkonfermata",
+            "VOTINGONPROPOSAL": "Proposta li qed tibgħat vot",
+            "VOTEDONPROPOSAL": "Il-vot tiegħek jingħadd ladarba t-tranżazzjoni tkun ikkonfermata.",
             "NOADDRESS": "Int ma daħħalx indirizz Metrix"
         }
     }

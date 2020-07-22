@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Paraksts",
             "TABLE_DIFFICULTY": "Grūtības",
-            "TABLE_ENTROPYBIT": "Entropija bit",
             "TABLE_BLOCKHASH": "Bloķēt nūju",
             "TABLE_CONFIRMATIONS": "Apstiprinājumi",
             "TABLE_INPUTOUTPUT": "Ieejas un izejas",
@@ -251,7 +250,6 @@
                 "LOCKED": "Maka ir bloķēta",
                 "UNLOCKED": "Seifs ir atbloķēts",
                 "UNLOCKEDSTAKING": "Seifs ir atbloķēts tikai staking",
-                "UNLOCKEDANON": "Seifs ir atbloķēts tikai anonimizācijai",
                 "STAKING": "Seifs pašlaik tiek sakārtots",
                 "NOTSTAKING": "Segvārds pašlaik nav sakārtots",
                 "MASTERNODEON": "Masternode pašlaik darbojas",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Maka šifrēts",
             "ENCRYPTEDCONTENT": "Jebkura iepriekšējā dublējumkopija, ko esat veicis no sava seifa faila, ir jāaizstāj ar jaunizveidoto šifrēto seifa failu. Drošības apsvērumu dēļ iepriekšējo nešifrētā seifa faila dublējumi kļūs nederīgi, tiklīdz jūs sākat izmantot jauno šifrētu seifu.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core negaidīti apstājās",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kas izraisīja tā izbeigšanos. Ieteicams pārbaudīt jūsu debug.log failu problēmām.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core radās problēma, kuras dēļ tā tika pārtraukta. Ieteicams pārbaudīt debug.log failu.",
             "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
             "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf ir nederīgs masternode iestatījums, kas izraisīs Metrix Core tūlītēju iziešanu. Lūdzu, pārbaudiet šo failu.",
             "ADDREMOTEMNTITLE": "Pievienojiet Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Bojājot Metrix Core, radās problēma. Ieteicams pārbaudīt augstuma žurnāla failu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkopšanas rīki",
             "STARTUPFAILEDTITLE": "Metrix Core startēšana neizdevās",
-            "STARTUPFAILEDINFO": "Tur bija sākuma Metrix Core. Ieteicams pārbaudīt augstuma žurnāla failu."
+            "STARTUPFAILEDINFO": "Tur bija sākuma Metrix Core. Ieteicams pārbaudīt augstuma žurnāla failu.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix pamata komunikācijas kļūda",
+            "CLIENTUNKNOWNERRORINFO": "Sazinoties ar Metrix Core, radās problēma. Ieteicams pārbaudīt debug.log failu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Darījuma kļūda. Lūdzu mēģiniet vēlreiz.",
         "MINIMUMCONFIRMATIONS": "Visiem ieguldījumiem ir nepieciešams vismaz 1 apstiprinājums pirms tēriņiem.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Darījumi, kas iekopēti starpliktuvē",
-        "TRANSACTIONOUTPUTTOOLARGE": "Viens no jūsu algas apmēriem ir pārāk liels, lai droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsu maiņa ir pārāk liela, lai to droši nosūtītu. Maksimālā vērtība ir 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Apturēt masternode...",
         "FAILEDTOWRITECONFIG": "Rakstot metrix.conf failu, radās problēma. Pārbaudiet, vai fails pastāv un ka augstumam Altitude ir rakstīšanas atļaujas.",
         "NOPUBLICUP": "Netika atrasta publiskā IP adrese. Pārbaudiet savu interneta savienojumu un restartējiet augstumu.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Tu sūti",
-                "YOUGET": "Tu iegūsti",
-                "MRXADDRESS": "Metrix adrese",
-                "SWAP": "Apmaini",
-                "SWAPADDRESSES": "Apmainīt adreses",
-                "BTCADDRESS": "BTC adrese",
-                "INFOLINE1": "Kad jums būs BTC depozīta adrese, jebkurš uz šo adresi nosūtītais BTC automātiski tiks aizstāts ar MRX uz jūsu norādīto MRX adresi.",
-                "INFOLINE2-1": "Darījumi parasti tiek dzēsti stundas laikā atkarībā no Bitcoin bloķēšanas laikiem. Mēs varam pieņemt fiat for",
-                "INFOLINE2-2": "iesaistītās valstis",
-                "INFOLINE2-3": "Tas vispirms tiks pārveidots par BTC, pēc tam par MRX.",
-                "INFOLINE3": "Kad jūsu BTC depozīts būs iztīrīts, jūs saņemsit MRX norādītajā adresē.",
-                "INFOLINE4": "Lai iegūtu vairāk informācijas, apmeklējiet vietni",
-                "FIATSWAPSELECTED": "Jūs tiksit novirzīts uz vietni Buy.Metrixcoin.com, lai pabeigtu šo darījumu"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Jūs neesat pārvaldnieks",
+                "NOTGOVERNORDETAIL": "Pārvaldnieki ir atbildīgi par balsošanu par mēneša budžetiem un “ķēdes maiņu”. Jūs varat kļūt par pārvaldnieku, bloķējot pareizu nodrošinājumu pārvaldības līgumā.",
+                "COLLATERAL": "Nepieciešamais nodrošinājums",
+                "ENROLL": "Reģistrējieties",
+                "CONFIRMENROLL": "Jūs gatavojaties reģistrēties kā gubernators. Tādējādi pārvaldības līgumam tiks nosūtīts darījums ar nepieciešamo nodrošinājumu. Jebkurā laikā varat reģistrēties.",
+                "ISGOVERNORTITLE": "Jūs esat aktīvs pārvaldnieks!",
+                "ISGOVERNORDETAIL1": "Pārvaldnieki ir atbildīgi par balsošanu par mēneša budžetiem un “ķēdes maiņu”.",
+                "ISGOVERNORDETAIL2": "Lai paliktu par gubernatoru, jums būs jāpiedalās vismaz 1 balsošanā ik pēc 30 dienām.",
+                "ISGOVERNORDETAIL3": "Ja nav par ko balsot, varat manuāli turpināt reģistrēšanos, nosūtot aktīvu ping.",
+                "UNENROLL": "Reģistrēties",
+                "PING": "Sūtīt aktīvo ping"
+            },
+            "BUDGET": {
+                "TITLE": "Budžeta priekšlikumi",
+                "ADDPROPOSAL": "Izveidot priekšlikumu",
+                "REQUESTEDPERMONTH": "mēnesī",
+                "REQUESTEDREMAINING": "paliek",
+                "VOTEYES": "Balsot Jā",
+                "VOTEABSTAIN": "Balsojiet atturieties",
+                "VOTENO": "Balsojums Nr",
+                "VOTESTOPASS": "nodotās balsis",
+                "VOTEPASSING": "balsu nodošana"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Izveidojiet priekšlikumu",
+                "DESCRIPTION": "Zemāk varat izveidot budžeta priekšlikumu un iesniegt to balsošanai tīklā pirms nākamā budžeta norēķinu bloka.",
+                "BUDGETFEE": "Pašreizējā budžeta maksa ir",
+                "BUDGETBLOCK": "Nākamais norēķinu bloks ir",
+                "PROPOSALTITLE": "Piedāvājuma nosaukums",
+                "PROPOSALDESC": "Piedāvājuma apraksts",
+                "PROPOSALURL": "Piedāvājuma URL",
+                "PROPOSALAMOUNT": "Pieprasītā summa",
+                "PROPOSALDURATION": "Pieprasītie maksājumi",
+                "PROPOSALADDRESS": "Maksājuma adrese",
+                "PROPOSALCREATE": "Izveidot priekšlikumu"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Valdīšana",
+                "BUDGET": "Budžets"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Jums jau ir BTC adrese, kas saistīta ar šo Metrix adresi",
             "SWAPUSDMIN": "Minimālā USD mijmaiņas summa ir USD 50",
             "SWAPUSDMAX": "Maksimālā USD maiņas summa ir USD 3000",
+            "INCOMPLETEFORM": "Jūs neesat pareizi aizpildījis visus prasītos laukus",
+            "INVALIDPROPOSALDURATION": "Piedāvājuma ilgumam jābūt no 1 līdz 12 mēnešiem",
+            "CREATINGPROPOSAL": "Notiek priekšlikuma iesniegšana tīklā...",
+            "CREATEDPROPOSAL": "Jūsu priekšlikums ir veiksmīgi izveidots",
+            "ENROLLINGGOVERNOR": "Reģistrēšanās par gubernatoru...",
+            "ENROLLEDGOVERNOR": "Reģistrācija būs pabeigta, kad darījums tiks apstiprināts",
+            "VOTINGONPROPOSAL": "Tiek nosūtīts priekšlikuma balsojums",
+            "VOTEDONPROPOSAL": "Tiklīdz darījums tiks apstiprināts, jūsu balsis tiks ieskaitīta.",
             "NOADDRESS": "Jūs neievadījāt Metrix adresi"
         }
     }

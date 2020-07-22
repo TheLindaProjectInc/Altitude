@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Imzo",
             "TABLE_DIFFICULTY": "Qiyinchilik",
-            "TABLE_ENTROPYBIT": "Entropiya biti",
             "TABLE_BLOCKHASH": "Blokni to'sish",
             "TABLE_CONFIRMATIONS": "Tasdiqlashlar",
             "TABLE_INPUTOUTPUT": "Kirish va chiqimlar",
@@ -251,7 +250,6 @@
                 "LOCKED": "Hamyon qulflangan",
                 "UNLOCKED": "Hamyon qulfdan chiqarildi",
                 "UNLOCKEDSTAKING": "Wallet faqat staking uchun qulfdan chiqarildi",
-                "UNLOCKEDANON": "Wallet faqat anonimlashtirish uchun qulfdan chiqarilgan",
                 "STAKING": "Hozirgi paytda hamyon ishlamoqda",
                 "NOTSTAKING": "Wallet hozirda ishlamayapti",
                 "MASTERNODEON": "Masternode ishlayapti",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Hamyon shifrlangan",
             "ENCRYPTEDCONTENT": "Sizning hamyoningiz faylini yaratgan oldingi zaxiralashlar yangi yaratilgan, shifrlangan hamyonlar fayllari bilan almashtirilishi kerak. Xavfsizlik uchun, yangi shifrlangan hamyonni ishlatishdan oldin shifrlanmagan hamyon faylining oldingi zahiralari foydasiz bo'ladi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core kutilmaganda to'xtadi",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core bilan muammo yuzaga keldi va bu uning tugatilishiga olib keldi. Muammolar uchun debug.log faylini tekshirish tavsiya etiladi.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core bilan bog'liq muammo uning tugatilishiga olib keldi. Muammolarni hal qilish uchun debug.log faylingizni tekshirish tavsiya etiladi.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfiguratsiyasi noto'g'ri",
             "CLIENTINVALIDCONFIGINFO": "Sizning metrix.conf-da Metrix Core-ning darhol chiqib ketishiga olib keladigan noto'g'ri masternode moslamasi mavjud. Iltimos, ushbu faylni tekshiring.",
             "ADDREMOTEMNTITLE": "Masternode qo'shing",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi",
             "BOOTSTRAPFAILEDTITLE": "Metrik yadroli yuklash chizig'i bajarilmadi",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core-ni yuklashda muammo yuz berdi. Balandlik jurnalingiz faylini muammolarni tekshirish tavsiya etiladi.",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-ni yuklashda muammo yuz berdi. Balandlik jurnalingiz faylini muammolar uchun tekshirish tavsiya etiladi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qayta tiklash vositalari",
             "STARTUPFAILEDTITLE": "Metrix Core ishga tushmadi",
-            "STARTUPFAILEDINFO": "Metrix Core boshlandi. Balandlik jurnalingiz faylini muammolarni tekshirish tavsiya etiladi."
+            "STARTUPFAILEDINFO": "Metrix Core boshlandi. Balandlik jurnalingiz faylini muammolar uchun tekshirish tavsiya etiladi.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix yadrosi bilan bog'liq xato",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core bilan bog'lanishda muammo yuz berdi. Muammolarni hal qilish uchun debug.log faylingizni tekshirish tavsiya etiladi."
         },
         "ADDRESSBOOK": {
             "TITLE": "Manzillar kitobi",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Jurnal xatosi. Iltimos, yana bir bor urinib ko'ring.",
         "MINIMUMCONFIRMATIONS": "Barcha kirishlar sarflashdan oldin kamida bitta tasdiqni talab qiladi.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Jurnallar clipboardga ko'chirilgan",
-        "TRANSACTIONOUTPUTTOOLARGE": "Sizning to'lovlaringizdan biri ishonchli jo'natish uchun juda katta. Maksimal qiymati - 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "O'zgartirishingiz xavfsiz yuborish uchun juda katta. Maksimal qiymati - 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Masternode to‘xtatilmoqda...",
         "FAILEDTOWRITECONFIG": "Metrix.conf faylingizga yozishda muammo yuz berdi. Fayl mavjudligini va Balandlikdan yozishga ruxsat borligini tekshiring.",
         "NOPUBLICUP": "Hech qanday umumiy IP-manzil topilmadi. Internetga ulanishni tekshiring va balandlikni qaytadan yoqing.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Siz yuborasiz",
-                "YOUGET": "Olasiz",
-                "MRXADDRESS": "Metrikaning manzili",
-                "SWAP": "Almashtirish",
-                "SWAPADDRESSES": "Manzillarni almashtirish",
-                "BTCADDRESS": "BTC manzili",
-                "INFOLINE1": "Agar sizda BTC depozit manzili bo'lsa, o'sha manzilga yuborilgan har qanday BTC avtomatik ravishda MRX uchun siz taklif qilgan MRX manzilingizga o'tkaziladi.",
-                "INFOLINE2-1": "Bitimlar Bitcoin blokirovka vaqtiga qarab, odatda bir soat ichida tranzaktsiyalar amalga oshiriladi. Biz fiatni qabul qilishimiz mumkin",
-                "INFOLINE2-2": "ishtirok etuvchi davlatlar",
-                "INFOLINE2-3": "Bu avval BTCga, so'ngra MRX-ga aylantiriladi.",
-                "INFOLINE3": "BTC depozitingiz tozalanganidan keyin siz MRX-ni ko'rsatilgan manzilga yuborasiz.",
-                "INFOLINE4": "Qo'shimcha ma'lumot uchun tashrif buyuring",
-                "FIATSWAPSELECTED": "Ushbu operatsiyani bajarish uchun Siz Buy.Metrixcoin.com saytiga yo'naltirilasiz"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Siz hokim emassiz",
+                "NOTGOVERNORDETAIL": "Hokimlar oylik byudjetlar va blockchain-ning o‘zgarishlari bo‘yicha ovoz berish uchun javobgardirlar. Siz Boshqarish shartnomasida to'g'ri garovni berkitib, gubernator bo'lishingiz mumkin.",
+                "COLLATERAL": "Kerakli ta'minot",
+                "ENROLL": "Yozilish",
+                "CONFIRMENROLL": "Hokim sifatida ro'yxatdan o'tmoqchisiz. Bu boshqaruv shartnomasiga zarur garov bilan bitimni yuboradi. Istalgan vaqtda ro'yxatdan o'chirishingiz mumkin.",
+                "ISGOVERNORTITLE": "Siz faol gubernatorsiz!",
+                "ISGOVERNORDETAIL1": "Hokimlar oylik byudjetlar va blockchain-ning o‘zgarishlari bo‘yicha ovoz berish uchun javobgardirlar.",
+                "ISGOVERNORDETAIL2": "Gubernator bo'lish uchun har 30 kunda kamida 1 ta ovozda qatnashishingiz kerak.",
+                "ISGOVERNORDETAIL3": "Agar ovoz berish uchun hech narsa bo'lmasa, siz faol ping yuborib ro'yxatdan o'tishni davom ettirishingiz mumkin.",
+                "UNENROLL": "Bekor qilish",
+                "PING": "Active Ping-ni yuboring"
+            },
+            "BUDGET": {
+                "TITLE": "Byudjet takliflari",
+                "ADDPROPOSAL": "Taklif yarating",
+                "REQUESTEDPERMONTH": "oyiga",
+                "REQUESTEDREMAINING": "qolgan",
+                "VOTEYES": "Ovoz bering Ha",
+                "VOTEABSTAIN": "Ovoz berishdan voz keching",
+                "VOTENO": "Ovoz berish",
+                "VOTESTOPASS": "ovoz berish",
+                "VOTEPASSING": "berilgan ovozlar"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Taklif yarating",
+                "DESCRIPTION": "Quyida siz byudjet taklifini yaratishingiz va uni kelgusi byudjetni qoplash bloki oldida ovoz berish uchun tarmoqqa yuborishingiz mumkin.",
+                "BUDGETFEE": "Joriy byudjet to'lovi",
+                "BUDGETBLOCK": "Keyingi turar-joy bloki",
+                "PROPOSALTITLE": "Taklif nomi",
+                "PROPOSALDESC": "Taklif tavsifi",
+                "PROPOSALURL": "Taklif URL manzili",
+                "PROPOSALAMOUNT": "Talab qilingan miqdor",
+                "PROPOSALDURATION": "Talab qilingan to'lovlar",
+                "PROPOSALADDRESS": "To'lov manzili",
+                "PROPOSALCREATE": "Taklif yarating"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Boshqaruv",
+                "BUDGET": "Byudjet"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Sizda allaqachon ushbu Metrix manzili bilan bog'langan BTC manzili mavjud",
             "SWAPUSDMIN": "SVPning minimal miqdori - $ 50",
             "SWAPUSDMAX": "Maksimal AQSh dollari almashtirish summasi 3000 dollarni tashkil etadi",
+            "INCOMPLETEFORM": "Siz barcha kerakli maydonlarni to'g'ri to'ldirmadingiz",
+            "INVALIDPROPOSALDURATION": "Taklif muddati 1 oydan 12 oygacha bo'lishi kerak",
+            "CREATINGPROPOSAL": "Taklif tarmoqqa yuborilmoqda...",
+            "CREATEDPROPOSAL": "Sizning taklifingiz muvaffaqiyatli yaratildi",
+            "ENROLLINGGOVERNOR": "Hokim sifatida ro'yxatga olinmoqda...",
+            "ENROLLEDGOVERNOR": "Sizning bitimingiz tasdiqlanganidan keyin ro'yxatdan o'tish tugallanadi",
+            "VOTINGONPROPOSAL": "Ovoz berish",
+            "VOTEDONPROPOSAL": "Bitim tasdiqlanganidan keyin sizning ovozingiz hisobga olinadi.",
             "NOADDRESS": "Siz Metrix manzilini kiritmadingiz"
         }
     }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Saxiixa",
             "TABLE_DIFFICULTY": "Dhibaato",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Xaqiijinta",
             "TABLE_INPUTOUTPUT": "Gelinta iyo soo-saarka",
@@ -251,7 +250,6 @@
                 "LOCKED": "Gashiga la xidho",
                 "UNLOCKED": "Gacanta furan",
                 "UNLOCKEDSTAKING": "Gaariga ayaa laga furay oo kaliya marka la rogrogayo",
-                "UNLOCKEDANON": "Gaariga ayaa laga furay oo keliya anonymization",
                 "STAKING": "Qashin-qaadku hadda wuu kacsan yahay",
                 "NOTSTAKING": "Qashin-qubka hadda maaha mid soo jiidanaya",
                 "MASTERNODEON": "Masternode hadda wuu socdaa",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Gashiga lagu qaxayo",
             "ENCRYPTEDCONTENT": "Dhamaan kormeerkii hore ee aad ka sameysey faylka boorsadaada waa in lagu bedelaa faylka cusub ee la abuuray, oo la buuxiyey. Sababaha nabadgelyada awgood, nuquladii hore ee feylka aan la isticmaalin ayaa faa'iido u noqon doonta sida ugu dhakhsaha badan ee aad u bilowdo isticmaalka kumbuyuutarka cusub, oo loo yaqaan 'encrypted'.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core oo la joojiyey lama filaan",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Dhibaato ayaa ka dhacday Metrix Core taas oo keentay inay joojiso. Waxaa lagugula talinayaa in aad eegto feylka debug.log ee arimaha.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Dhibaato ayaa ka jirtay Metrix Core taas oo keentay inay joojiso. Waxaa lagugula talinayaa in aad fiiriso faylkaaga debug.log ee arrimaha.",
             "CLIENTINVALIDCONFIGTITLE": "Dejinta metrix.conf aan sharci ahayn",
             "CLIENTINVALIDCONFIGINFO": "Your metrix.conf waxay leedahay qalab aan caqli-gal ahayn oo sababa Metrix Core si aad uga baxdo. Fadlan hubi feylkan.",
             "ADDREMOTEMNTITLE": "Kudar Masternode Remote",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Tusaha Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Qalabka Bootstrap-ka Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Waxaa jiray cilad xirashada Metrix Core. Waxaa lagugula talinayaa inaad fiiriso faylkaaga Altitude log ee arrimaha.",
+            "BOOTSTRAPFAILEDINFO": "Waxaa jiray cilad xirashada Metrix Core. Waxaa lagu talinayaa in aad fiiriso faylkaaga Altitude log ee arrimaha.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qalabka Soo-kabashada",
             "STARTUPFAILEDTITLE": "Bilowga Metrix Core Bilaabmay",
-            "STARTUPFAILEDINFO": "Waxaa jiray bilaw Metrix Core. Waxaa lagu talinayaa in aad fiiriso faylkaaga Altitude log ee arrimaha."
+            "STARTUPFAILEDINFO": "Waxaa jiray bilaw Metrix Core. Waxaa lagu talinayaa in aad fiiriso faylkaaga Altitude log ee arrimaha.",
+            "CLIENTUNKNOWNERRORTITLE": "Qalad Isgaarsiinta Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Cillad baa ka jirtay la xidhiidhka Metrix Core. Waxaa lagugula talinayaa in aad fiiriso faylkaaga debug.log ee arrimaha."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buugga Cinwaanka",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Qalabka wax-gadashada. Fadlan isku day mar kale.",
         "MINIMUMCONFIRMATIONS": "Dhamaan qodobbada waxay u baahan yihiin ugu yaraan 1 cadayn ka hor intaan la bixin.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Wareegyada lagu daabacay qashinka",
-        "TRANSACTIONOUTPUTTOOLARGE": "Mid ka mid ah mushaharkaaga miisaankiisu aad buu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Isbedelkaagu aad ayuu u weyn yahay si ammaan ah loo diro. Ugu badnaan waa 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Joojinta masternode...",
         "FAILEDTOWRITECONFIG": "Dhibaato ayaa ka jirtay qoritaanka faylkaaga metrix.conf. Hubi faylka jira iyo in Altitude leeyahay rukhsad qoraal ah.",
         "NOPUBLICUP": "Cinwaanka IP-ga Dadweynaha lama helin. Hubi khadkaaga internetka oo dib u bilaabi Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Waxaad dirtaa",
-                "YOUGET": "Aad Hesho",
-                "MRXADDRESS": "Cinwaanka metrix",
-                "SWAP": "Isdhaafid",
-                "SWAPADDRESSES": "Cinwaano isku beddelasho",
-                "BTCADDRESS": "Cinwaanka BTC",
-                "INFOLINE1": "Markaad haysatid cinwaanka deebaajiga BTC wixii BTC ah oo loo diro cinwaankaas si otomaatig ah ayaa loogu rogayaa MRX cinwaankaaga loo magacaabay MRX.",
-                "INFOLINE2-1": "Xawaaladdu sida caadiga ah way caddaataa saacad gudahood iyada oo ku xidhan waqtiyada xayiraadda Bitcoin. Waan aqbali karnaa",
-                "INFOLINE2-2": "wadamada kaqeyb galaya",
-                "INFOLINE2-3": "Tan waxaa loo rogi doonaa BTC marka hore MRX.",
-                "INFOLINE3": "Mar haddii lacagtaada BTC ay nadiifiso waxaad heli doontaa MRX-gaaga cinwaanka aad magacawday.",
-                "INFOLINE4": "Wixii macluumaad dheeri ah booqo",
-                "FIATSWAPSELECTED": "Waxaa laguu wareejin doonaa Buy.Metrixcoin.com si aad u dhameystirto macaamilkan"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ma tihid Gudoomiyaha",
+                "NOTGOVERNORDETAIL": "Gudoomiyaasha ayaa mas'uul ka ah codbixinta miisaaniyada billaha ah iyo isbedelada blockchain. Waad noqon kartaa Guddoomiye adiga oo qufulka isku xidhka saxda ah ku jira heshiiska Maamulka.",
+                "COLLATERAL": "Wadaaga loo baahan yahay",
+                "ENROLL": "Isku qor",
+                "CONFIRMENROLL": "Waxaad u dhowdahay inaad iska diiwaangeliso Gole ahaan. Tani waxay u direyso macaamil ganacsi lacageed oo loo baahan yahay heshiiskii maamulka. Waad iska qori kartaa wakhti kasta.",
+                "ISGOVERNORTITLE": "Waxaad tahay gudoomiye firfircoon!",
+                "ISGOVERNORDETAIL1": "Gudoomiyaasha ayaa mas'uul ka ah codbixinta miisaaniyada billaha ah iyo isbedelada blockchain.",
+                "ISGOVERNORDETAIL2": "Si aad u sii joogtid gudoomiye waxaad ubaahantahay inaad kaqeybqaadato ugu yaraan 1 cod 30-kii maalmoodba.",
+                "ISGOVERNORDETAIL3": "Haddii aysan jirin wax lagu codeeyo ka dib waad gacanta ku sii wadi kartaa diiwaangelintaada adoo u diraya ping firfircoon.",
+                "UNENROLL": "Diiwaangelinta",
+                "PING": "Udir Firfircoon"
+            },
+            "BUDGET": {
+                "TITLE": "Soojeedinta Miisaaniyadda",
+                "ADDPROPOSAL": "Abuur Soo jeedin",
+                "REQUESTEDPERMONTH": "bishiiba",
+                "REQUESTEDREMAINING": "haray",
+                "VOTEYES": "U codee Haa",
+                "VOTEABSTAIN": "U codee Abstain",
+                "VOTENO": "Codbixinta Maya",
+                "VOTESTOPASS": "codayn si loo dhaafo",
+                "VOTEPASSING": "codbixinta"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Abuur Soojeedin",
+                "DESCRIPTION": "Hoos waxaad ku abuuri kartaa soo jeedin miisaaniyadeed oo aad u diri kartaa shabakadda si aad ugu codbixiso ka hor xannibaadda dejinta miisaaniyadda ee soo socota.",
+                "BUDGETFEE": "Khidmada miisaaniyaddu hadda waa",
+                "BUDGETBLOCK": "Qaybta labaad ee dejinta ayaa ah",
+                "PROPOSALTITLE": "Magaca Soojeedinta",
+                "PROPOSALDESC": "Sharraxaadda Soo-jeedinta",
+                "PROPOSALURL": "URLka soo jeedinta",
+                "PROPOSALAMOUNT": "Tirada la Dalbaday",
+                "PROPOSALDURATION": "Lacag Bixin La Dalbaday",
+                "PROPOSALADDRESS": "Cinwaanka Bixinta",
+                "PROPOSALCREATE": "Abuur Soo jeedin"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Maamulka",
+                "BUDGET": "Miisaaniyadda"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Abuuritaanka Cinwaanka Is Bedelka...",
-            "ALREADYHAVEADDRESS": "Waxaad horay u haysatay cinwaan BTC oo la xariira cinwaanka Metrix",
+            "ALREADYHAVEADDRESS": "Waxaad durba haysataa cinwaan BTC oo la xidhiidha cinwaanka 'Metrix address'",
             "SWAPUSDMIN": "Xaddiga ugu yar ee is beddelka ee USD waa $ 50",
             "SWAPUSDMAX": "Xaddiga ugu badan ee is beddelka ee USD waa $ 3000",
+            "INCOMPLETEFORM": "Kama buuxin dhamaan meelaha lagaa rabay si sax ah",
+            "INVALIDPROPOSALDURATION": "Muddo-kordhinta soo-jeedinta waa inay noqotaa inta u dhexeysa 1 iyo 12 bilood",
+            "CREATINGPROPOSAL": "U gudbinta soojeedinta shabakad...",
+            "CREATEDPROPOSAL": "Soojeedintaada ayaa loo sameeyay si guul leh",
+            "ENROLLINGGOVERNOR": "Isu diiwaangelinta sidii...",
+            "ENROLLEDGOVERNOR": "Diiwaangelintaada ayaa dhameystiri doonta marka macaamil xareyntaada la xaqiijiyo",
+            "VOTINGONPROPOSAL": "Diritaanka codbixinta",
+            "VOTEDONPROPOSAL": "Codbixintaada ayaa la tirin doonaa marka macaamilka la xaqiijiyo.",
             "NOADDRESS": "Ma aadan galin cinwaan metrix ah"
         }
     }

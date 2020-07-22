@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signature",
             "TABLE_DIFFICULTY": "Difficultu",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "U bloque Hash",
             "TABLE_CONFIRMATIONS": "Confirmations",
             "TABLE_INPUTOUTPUT": "Inputu è Outputs",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet locked",
                 "UNLOCKED": "Wallet sbulicatu",
                 "UNLOCKEDSTAKING": "Wallet sbulicatu per staking only",
-                "UNLOCKEDANON": "Wallet sbulicatu per l'anonimatu solu",
                 "STAKING": "U Wallet hè staging",
                 "NOTSTAKING": "U Wallet ùn hè micca staging",
                 "MASTERNODEON": "Masternode hè in corruzzione ora",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Crypted",
             "ENCRYPTEDCONTENT": "Ogni copiazione di salvezza chì avete fattu di u vostru cartulare fucili si deve esse rimpiazzatu da u cartulare chjamatu novu cartellu chjamatu. Per i ragunijiet di sicurezza, i copia di salvezza di u cartulare di cartafilma micca criptu ùn diventeranu inùtu quantu cumencia cù a billetica nova criptografia.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core hà statu imprevedente",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè un prublema cù Metrix Core chì hà causatu à finisce. Hè ricumandemu à verificà u vostru file debug.log per issues.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè statu un prublema di Metrix Core chì hà causatu a so terminazione. Hè cunsigliatu per verificà u vostru file debug.log per avè prublemi.",
             "CLIENTINVALIDCONFIGTITLE": "Configurazione metrix.conf invàlida",
             "CLIENTINVALIDCONFIGINFO": "A vostra metrix.conf hà una distribuzione più grande di e invàlida chì prumove Metrix Core per sluvà immediatamente. Verificate stu schedariu.",
             "ADDREMOTEMNTITLE": "Aghjunghje Masternode Remoto",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Ci hè statu un prublema bootstrapping Metrix Core. Hè cunsigliatu per verificà u vostru file di logu di Altitudine per avè prublemi.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Strumenti di Recuperazione",
             "STARTUPFAILEDTITLE": "Avviamento Metrix Core Fallatu",
-            "STARTUPFAILEDINFO": "Ci era un Metrix Core iniziale. Hè cunsigliatu per verificà u vostru file di logu di Altitudine per avè prublemi."
+            "STARTUPFAILEDINFO": "Ci era un Metrix Core iniziale. Hè cunsigliatu per verificà u vostru file di logu di Altitudine per avè prublemi.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Errore di cumunicazione",
+            "CLIENTUNKNOWNERRORINFO": "Ci hè statu un prublema in cumunicazione cù Metrix Core. Hè cunsigliatu per verificà u vostru file debug.log per avè prublemi."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Errore di transaczione. Pruvate di novu.",
         "MINIMUMCONFIRMATIONS": "Tutte e inputs necessanu almenu 1 cunferma prima di gastru.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "E transaccii copiati à u portali",
-        "TRANSACTIONOUTPUTTOOLARGE": "Unu di a vostra pagari a quantità ùn hè troppu grande per sguassà. Massimi hè 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "U vostru cambiamentu hè troppu grande per sguassà mandà. Massimi hè 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Cessendu masternode...",
         "FAILEDTOWRITECONFIG": "Ci era un problema à scrive in u vostru file metrix.conf. Verificate chì u schedariu esiste è chì Altitudine hà permessi di scrittura.",
         "NOPUBLICUP": "Ùn hè micca scuppatu u indirizzu IP pubblicu. Verificate a vostra cunnessione internet è ripartite Altitudine.",
@@ -446,22 +444,50 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Mandà",
-                "YOUGET": "Avete",
-                "MRXADDRESS": "Indirizzu Metrix",
-                "SWAP": "Scambià",
-                "SWAPADDRESSES": "Indirizzi di scambià",
-                "BTCADDRESS": "Indirizzu BTC",
-                "INFOLINE1": "Una volta chì avete un indirizzu di depositu BTC qualsiasi BTC mandatu à questu indirizzu serà automaticamente scambiatu per MRX in u vostru indirizzu MRX nominatu.",
-                "INFOLINE2-1": "E transazzioni tipicamente chjaru in una ora secondu i tempi di u bloccu Bitcoin. Pudemu accettà fiat per",
-                "INFOLINE2-2": "paesi participanti",
-                "INFOLINE2-3": "Questu serà cunvertitu in BTC prima MRX.",
-                "INFOLINE3": "Dopu chì u vostru depositu BTC hà sbulicatu, riciverete a vostra MRX in u vostru indirizzu nominatu.",
-                "INFOLINE4": "Per più infurmazione visitate",
-                "FIATSWAPSELECTED": "Vi sarà ridirizzatu à Buy.Metrixcoin.com per cumpletà sta transazzione"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ùn sì micca un guvernatore",
+                "NOTGOVERNORDETAIL": "I guvernatori sò rispunsevuli di u votu nantu à i bilanci mensuali è i cambiamenti di blockchain. Pudete diventà un Guvernatore sbloccendu a garanzia curretta in u cuntrattu di Governanza.",
+                "COLLATERAL": "Garanzia necessaria",
+                "ENROLL": "Scrive",
+                "CONFIRMENROLL": "Stai per arrugà cum'è Guvernatore. Questu mandarà una transazzione cù a garanzia necessaria à u cuntrattu di governanza. Pudete scunnisciare in ogni mumentu.",
+                "ISGOVERNORTITLE": "Sì un guvernatore attivu!",
+                "ISGOVERNORDETAIL1": "I guvernatori sò rispunsevuli di u votu nantu à i bilanci mensuali è i cambiamenti di blockchain.",
+                "ISGOVERNORDETAIL2": "Per stà un guvernatore, duverete participà à almenu 1 votu ogni 30 ghjorni.",
+                "ISGOVERNORDETAIL3": "Se ùn ci hè nunda per vutà allora pudete continuà manualmente a vostra scrizzione mandendu un ping attivu.",
+                "UNENROLL": "Unenroll",
+                "PING": "Mandate Ping Attivu"
+            },
+            "BUDGET": {
+                "TITLE": "Proposti di bilanciu",
+                "ADDPROPOSAL": "Crea una Proposta",
+                "REQUESTEDPERMONTH": "per mese",
+                "REQUESTEDREMAINING": "restante",
+                "VOTEYES": "Vota Iè",
+                "VOTEABSTAIN": "Vota Abstain",
+                "VOTENO": "Vote No",
+                "VOTESTOPASS": "voti à passà",
+                "VOTEPASSING": "voti voti"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Crea una pruposta",
+                "DESCRIPTION": "Quì sottu pudete creà una pruposta di budget è sottumettela à a reta per u votu prima di u prossimu bloccu di salvezza di bilanciu.",
+                "BUDGETFEE": "A tarifa attuale di u budget hè",
+                "BUDGETBLOCK": "U prossimu bloccu di liquidazione hè",
+                "PROPOSALTITLE": "Nome di pruposta",
+                "PROPOSALDESC": "Proposta Descrizzione",
+                "PROPOSALURL": "URL di a pruposta",
+                "PROPOSALAMOUNT": "Ammontu dumandatu",
+                "PROPOSALDURATION": "Pagamenti dumandati",
+                "PROPOSALADDRESS": "Indirizzu di Pagamentu",
+                "PROPOSALCREATE": "Crea una Proposta"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Guvernanza",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Avete digià un indirizzu BTC assuciatu cù questu indirizzu Metrix",
             "SWAPUSDMIN": "A quantità minima di swap di USD hè di $ 50",
             "SWAPUSDMAX": "L'ammontu massimu di scambiu di USD hè $ 3000",
+            "INCOMPLETEFORM": "Ùn avete micca rializatu tutti i campi necessarii currettamente",
+            "INVALIDPROPOSALDURATION": "A durazione di a pruposta duverà esse trà 1 è 12 mesi",
+            "CREATINGPROPOSAL": "Inviazione di pruposte à a rete...",
+            "CREATEDPROPOSAL": "A vostra pruposta hè stata creata cun successu",
+            "ENROLLINGGOVERNOR": "Scrivendu cum'è Guvernatore...",
+            "ENROLLEDGOVERNOR": "A vostra scrive sarà cumpletu una volta a vostra transazzione serà cunfirmata",
+            "VOTINGONPROPOSAL": "Mandendu u votu à e pruposte",
+            "VOTEDONPROPOSAL": "U vostru votu serà cuntu una volta chì a transazzione hè cunfirmata.",
             "NOADDRESS": "Ùn hà micca inseritu un indirizzu Metrix"
         }
     }

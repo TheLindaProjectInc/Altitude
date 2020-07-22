@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Ënnerschriwwe ginn",
             "TABLE_DIFFICULTY": "Schwieregkeet",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Bestätegungen",
             "TABLE_INPUTOUTPUT": "Inputen an Ausgänge",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet ass gespaart",
                 "UNLOCKED": "Wallet opgerockt",
                 "UNLOCKEDSTAKING": "Wallet opgeléist fir eng Nokucke",
-                "UNLOCKEDANON": "Wallet entlooss elo just fir Anonymiséierung",
                 "STAKING": "De Portemonnaie ass momentan geschloen",
                 "NOTSTAKING": "De Portemonnaie ass net momentan geschloen",
                 "MASTERNODEON": "Masternode gëtt momentan",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Portemonnaie Verschlësselt",
             "ENCRYPTEDCONTENT": "All fréiere Backups déi Dir aus Ärem Portemonnaie hutt gemaach däerf duerch déi nei generéiert verschlësselte Portemonnaie ersat ginn. Aus Sécherheetsgrënn, de virdrun Reservéierunge vun der onverschlësselte Portemonnaie gëtt net nëtzlech, soubal Dir den neie verschlësselte Portemonnaie benotzt.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gestoppt Unexpectedly",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Et war e Problem mam Metrix Core, dat huet et verlooss. Et ass recommandéiert fir Är Debug.log Datei fir Froen ze kontrolléieren.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Et gouf e Problem mam Metrix Core deen et ofgeleent huet. Et ass recommandéiert fir Äert Debug.log Datei fir Problemer ze kontrolléieren.",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Konfiguratioun",
             "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternoden-Setup, déi d'Metrix Core fir direkt beherrschen. Kuckt dës Datei op.",
             "ADDREMOTEMNTITLE": "Füügt Remote Masternode",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Et gouf e Problem beim Opstarten vu Metrix Core. Et ass recommandéiert fir Är Altitude Logbicher Datei ze kontrolléieren.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Erhuelung Tools",
             "STARTUPFAILEDTITLE": "Metrix Core Startup Erfolleg",
-            "STARTUPFAILEDINFO": "Do gouf et e Start Metrix Core. Et ass recommandéiert fir Äert Altitude Log Datei fir Problemer z'iwwerpréiwen."
+            "STARTUPFAILEDINFO": "Do gouf et e Start Metrix Core. Et ass recommandéiert fir Är Altitude Logbicher Datei ze kontrolléieren.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Kommunikatiouns Feeler",
+            "CLIENTUNKNOWNERRORINFO": "Et gouf e Problem mam Metrix Core ze kommunizéieren. Et ass recommandéiert fir Äert Debug.log Datei fir Problemer ze kontrolléieren."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transaktiounsfehler. Probéiert nach eng Kéier.",
         "MINIMUMCONFIRMATIONS": "All Inputen brauchen op d'mannst 1 Bestätigung virum Budget.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiounen déi an de Klemmte kopéiert sinn",
-        "TRANSACTIONOUTPUTTOOLARGE": "Eent vun Ärem Bezuelnis fir Quantitéiten ass ze grouss, fir séch ze schécken. Maximum ass 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Är Ännerung ass ze grouss, fir séch ze schécken. Maximum ass 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Stoppen Masternode...",
         "FAILEDTOWRITECONFIG": "Et gouf e Problem fir Är Metrix.conf Datei ze schreiwen. Préift de Fichier existéiert an datt Altitude Schreiwe Permisiounen huet.",
         "NOPUBLICUP": "Keng Ëffentlech IP Adress fonnt. Préift Är Internetverbindung a restart Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "NEE",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Dir schéckt",
-                "YOUGET": "Dir kritt",
-                "MRXADDRESS": "Metrix Adress",
-                "SWAP": "Tauschen",
-                "SWAPADDRESSES": "Tauscht Adressen",
-                "BTCADDRESS": "BTC Adress",
-                "INFOLINE1": "Wann Dir eng BTC Depotadress hutt, kritt all BTC déi op déi Adress geschéckt gëtt automatesch fir MRX an Är nominéiert MRX Adress gerappt.",
-                "INFOLINE2-1": "Transaktioune ginn normalerweis bannent enger Stonn geléist ofhängeg vun de Bitcoin Blockzäiten. Mir kënnen Fiat fir akzeptéieren",
-                "INFOLINE2-2": "deelhuelende Länner",
-                "INFOLINE2-3": "Dëst gëtt als BTC als éischt dann MRX ëmgewandelt.",
-                "INFOLINE3": "Wann Är BTC Depot geläscht ass, kritt Dir Är MRX an Är nominéiert Adress.",
-                "INFOLINE4": "Fir méi Informatioun besicht",
-                "FIATSWAPSELECTED": "Dir wäert nei Buy.Metrixcoin.com weidergeleet ginn fir dës Transaktioun ofzeschléissen"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Dir sidd kee Gouverneur",
+                "NOTGOVERNORDETAIL": "Gouverneure sinn verantwortlech fir d'Méintbudgeten a blockchain Ännerungen ze stëmmen. Dir kënnt e Gouverneur ginn andeems Dir d'korrekt Secherheet am Gouverneurskontrakt gespaart.",
+                "COLLATERAL": "Noutwendeg Secherheet",
+                "ENROLL": "Aschreiwen",
+                "CONFIRMENROLL": "Dir sidd amgaang Iech als Gouverneur anzeschreiwen. Dëst schéckt eng Transaktioun mat der erfuerderter Sécherheet op de Gouverneurskontrakt. Dir kënnt zu all Moment umellen.",
+                "ISGOVERNORTITLE": "Dir sidd en aktiven Gouverneur!",
+                "ISGOVERNORDETAIL1": "Gouverneure sinn verantwortlech fir d'Méintbudgeten a blockchain Ännerungen ze stëmmen.",
+                "ISGOVERNORDETAIL2": "Fir e Gouverneur ze bleiwen, musst Dir op d'mannst 1 Stëmm all 30 Deeg matmaachen.",
+                "ISGOVERNORDETAIL3": "Wann et näischt gëtt fir iwwer ze wielen da kënnt Dir Är Umeldung manuell weiderféieren andeems Dir en aktiven Ping schéckt.",
+                "UNENROLL": "Unsroll",
+                "PING": "Schéckt Aktiv Ping"
+            },
+            "BUDGET": {
+                "TITLE": "Budget Propositioune",
+                "ADDPROPOSAL": "Schafe Propositioun",
+                "REQUESTEDPERMONTH": "pro Mount",
+                "REQUESTEDREMAINING": "déi bleiwen",
+                "VOTEYES": "Stëmmen Jo",
+                "VOTEABSTAIN": "Stëmmen Abstain",
+                "VOTENO": "Stëmmen Nee",
+                "VOTESTOPASS": "ofstëmmen ze passéieren",
+                "VOTEPASSING": "laanschtgoungen Stëmmen"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Schafft eng Propose",
+                "DESCRIPTION": "Ënnert Dir kënnt e Budgetsprojet erstellen an et am Netz ofginn fir ze stëmmen ier de nächste Budgetsreglement Block.",
+                "BUDGETFEE": "Déi aktuell Budgetsgeld ass",
+                "BUDGETBLOCK": "Den nächste Siidlungsblock ass",
+                "PROPOSALTITLE": "Propositioun Numm",
+                "PROPOSALDESC": "Propositioun Beschreiwung",
+                "PROPOSALURL": "Propositioun URL",
+                "PROPOSALAMOUNT": "Betrag Betrag",
+                "PROPOSALDURATION": "Ufro Bezuelen",
+                "PROPOSALADDRESS": "Bezuelen Adress",
+                "PROPOSALCREATE": "Schafe Propositioun"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Gouvernance",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generéiert Tauschadress…",
             "ALREADYHAVEADDRESS": "Dir hutt schonn eng BTC Adress mat dëser Metrix Adress assoziéiert",
             "SWAPUSDMIN": "De Minimum USD Tauschbetrag ass $ 50",
-            "SWAPUSDMAX": "De maximale USD Swap Betrag ass $ 3000",
+            "SWAPUSDMAX": "De maximalen USD Tauschbetrag ass $ 3000",
+            "INCOMPLETEFORM": "Dir hutt net all erfuerderlech Felder richteg ausgefëllt",
+            "INVALIDPROPOSALDURATION": "Propositiouns Dauer soll tëscht 1 an 12 Méint daueren",
+            "CREATINGPROPOSAL": "Propositioun ofginn fir Netzwierk...",
+            "CREATEDPROPOSAL": "Är Propose gouf erfollegräich erstallt",
+            "ENROLLINGGOVERNOR": "Aschreiwen als Gouverneur...",
+            "ENROLLEDGOVERNOR": "Är Aschreiwung ass komplett wann Är Transaktioun bestätegt ass",
+            "VOTINGONPROPOSAL": "Schéckt Propositioun Vote",
+            "VOTEDONPROPOSAL": "Äre Vote gëtt gezielt wann d'Transaktioun bestätegt ass.",
             "NOADDRESS": "Dir hutt keng Metrix Adress aginn"
         }
     }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Aláírás",
             "TABLE_DIFFICULTY": "Nehézség",
-            "TABLE_ENTROPYBIT": "Entrópia Bit",
             "TABLE_BLOCKHASH": "Hash blokkolása",
             "TABLE_CONFIRMATIONS": "visszaigazolások",
             "TABLE_INPUTOUTPUT": "Bemenetek és kimenetek",
@@ -251,7 +250,6 @@
                 "LOCKED": "A pénztárca zárolva van",
                 "UNLOCKED": "A mobiltárca feloldva",
                 "UNLOCKEDSTAKING": "A pénztárca csak zárolásra lett kinyitva",
-                "UNLOCKEDANON": "A pénztárca csak anonimizálásra van nyitva",
                 "STAKING": "A pénztárca jelenleg üres",
                 "NOTSTAKING": "A pénztárca jelenleg nem veszi figyelembe",
                 "MASTERNODEON": "A Masternode jelenleg fut",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Titkosított pénztárca",
             "ENCRYPTEDCONTENT": "A pénztárcafájlról készített minden korábbi mentést ki kell cserélni az újonnan létrehozott, titkosított tárcakönyvtárral. Biztonsági okokból a titkosítatlan pénztárcakönyv korábbi mentései használhatatlanná válnak, amint elkezdi használni az új, titkosított tárcát.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core váratlanul állt meg",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma volt a Metrix Core-szal, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák miatt.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Volt egy probléma a Metrix Core-vel, ami miatt megszűnt. Javasoljuk, hogy ellenőrizze a debug.log fájlt.",
             "CLIENTINVALIDCONFIGTITLE": "Érvénytelen metrix.conf konfiguráció",
             "CLIENTINVALIDCONFIGINFO": "A metrix.conf-nak érvénytelen masternode-beállítása van, ami a Metrix Core-t azonnal kilép. Kérjük, ellenőrizze ezt a fájlt.",
             "ADDREMOTEMNTITLE": "Távoli Masternode hozzáadása",
@@ -293,10 +291,12 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx index",
             "BOOTSTRAPFAILEDTITLE": "Nem sikerült a Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájl hibáit.",
+            "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájlt, hogy nincs-e probléma.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállítási eszközök",
             "STARTUPFAILEDTITLE": "A Metrix Core indítása sikertelen",
-            "STARTUPFAILEDINFO": "Volt egy kezdő Metrix-mag. Javasoljuk, hogy ellenőrizze a magassági naplófájl hibáit."
+            "STARTUPFAILEDINFO": "Volt egy kezdő Metrix-mag. Javasoljuk, hogy ellenőrizze a magassági naplófájlt, hogy nincs-e probléma.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix-alapú kommunikációs hiba",
+            "CLIENTUNKNOWNERRORINFO": "Probléma merült fel a Metrix Core-vel való kommunikáció során. Javasoljuk, hogy ellenőrizze a debug.log fájlt."
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Tranzakciós hiba. Kérlek próbáld újra.",
         "MINIMUMCONFIRMATIONS": "Minden bemenet legalább 1 megerősítést igényel a kiadások előtt.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "A vágólapra másolt tranzakciók",
-        "TRANSACTIONOUTPUTTOOLARGE": "Az Ön által fizetett összegek egyike túl nagy ahhoz, hogy biztonságosan küldje el. Maximum 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "A változtatás túl nagy ahhoz, hogy biztonságosan elküldhesse. Maximum 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "A masternode leállítása...",
         "FAILEDTOWRITECONFIG": "Problémát jelentett a metrix.conf fájljában. Ellenőrizze, hogy létezik-e a fájl, és hogy az Altitude írási jogosultságokkal rendelkezik.",
         "NOPUBLICUP": "Nem található nyilvános IP-cím. Ellenőrizze az internetkapcsolatot és indítsa újra a Magasságot.",
@@ -446,22 +444,50 @@
         "NOV": "NOVEMBER",
         "DEC": "DECEMBER"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Küldesz",
-                "YOUGET": "Kapsz",
-                "MRXADDRESS": "Metrix cím",
-                "SWAP": "Csere",
-                "SWAPADDRESSES": "Csere címek",
-                "BTCADDRESS": "BTC cím",
-                "INFOLINE1": "Miután megkapta a BTC letéti címet, az erre a címre küldött BTC automatikusan az MRX-re cseréli az Ön által kijelölt MRX-címet.",
-                "INFOLINE2-1": "A tranzakciók általában egy órán belül megtörténnek, a Bitcoin blokkolásának időtartamától függően. Elfogadhatjuk a fiatot",
-                "INFOLINE2-2": "részt vevő országok",
-                "INFOLINE2-3": "Ezt először BTC-re, majd MRX-re konvertálják.",
-                "INFOLINE3": "Amint a BTC befizetése megtörtént, megkapja az MRX-t a megjelölt címre.",
-                "INFOLINE4": "További információkért látogasson el",
-                "FIATSWAPSELECTED": "A tranzakció befejezéséhez átirányítja Önt a Buy.Metrixcoin.com webhelyre"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Nem vagy kormányzó",
+                "NOTGOVERNORDETAIL": "Az elnökök felelősek a havi költségvetésről és a lánckezelő változásokról történő szavazásért. Kormányzóvá válhat, ha a megfelelő biztosítékot rögzíti az irányítási szerződésben.",
+                "COLLATERAL": "Szükséges biztosíték",
+                "ENROLL": "Beiktathat",
+                "CONFIRMENROLL": "Arra készül, hogy kormányzóként jelentkezzen be. Ez eljuttat egy tranzakciót a szükséges biztosítékkal az irányítási szerződéshez. Bármikor feliratkozhat.",
+                "ISGOVERNORTITLE": "Ön aktív kormányzó!",
+                "ISGOVERNORDETAIL1": "Az elnökök felelősek a havi költségvetésről és a lánckezelő változásokról történő szavazásért.",
+                "ISGOVERNORDETAIL2": "Kormányzóvá váláshoz legalább 1 szavazaton kell részt vennie 30 naponta.",
+                "ISGOVERNORDETAIL3": "Ha nincs miről szavazni, akkor manuálisan folytathatja a regisztrációt egy aktív ping elküldésével.",
+                "UNENROLL": "Jelentkezés törlése",
+                "PING": "Küldje az aktív pingot"
+            },
+            "BUDGET": {
+                "TITLE": "Költségvetési javaslatok",
+                "ADDPROPOSAL": "Hozzon létre javaslatot",
+                "REQUESTEDPERMONTH": "havonta",
+                "REQUESTEDREMAINING": "többi",
+                "VOTEYES": "Szavazz Igen",
+                "VOTEABSTAIN": "Szavazzon tartózkodás",
+                "VOTENO": "Szavazás Nem",
+                "VOTESTOPASS": "átadott szavazatok",
+                "VOTEPASSING": "átadott szavazatok"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Hozzon létre egy javaslatot",
+                "DESCRIPTION": "Az alábbiakban létrehozhat egy költségvetési javaslatot, és benyújthatja azt a hálózathoz szavazásra a következő költségvetési rendezési blokk előtt.",
+                "BUDGETFEE": "A jelenlegi költségvetési díj:",
+                "BUDGETBLOCK": "A következő települési blokk az",
+                "PROPOSALTITLE": "A javaslat neve",
+                "PROPOSALDESC": "A javaslat leírása",
+                "PROPOSALURL": "A javaslat URL-je",
+                "PROPOSALAMOUNT": "Kért összeg",
+                "PROPOSALDURATION": "Kért kifizetések",
+                "PROPOSALADDRESS": "Fizetési cím",
+                "PROPOSALCREATE": "Hozzon létre javaslatot"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Kormányzás",
+                "BUDGET": "Költségvetés"
             }
         },
         "NOTIFICATIONS": {
@@ -469,6 +495,14 @@
             "ALREADYHAVEADDRESS": "Ehhez a Metrix-címhez már van társítva BTC-cím",
             "SWAPUSDMIN": "A minimális USD csereösszeg 50 USD",
             "SWAPUSDMAX": "A maximális USD csereösszeg 3000 USD",
+            "INCOMPLETEFORM": "Nem töltötte be megfelelően az összes kötelező mezőt",
+            "INVALIDPROPOSALDURATION": "A pályázat időtartamának 1 és 12 hónap között kell lennie",
+            "CREATINGPROPOSAL": "Javaslatot nyújt be a hálózathoz...",
+            "CREATEDPROPOSAL": "A javaslat sikeresen létrejött",
+            "ENROLLINGGOVERNOR": "Kormányzóként való belépés...",
+            "ENROLLEDGOVERNOR": "A regisztráció befejeződik, amint a tranzakciót megerősítik",
+            "VOTINGONPROPOSAL": "A javaslat szavazatának elküldése",
+            "VOTEDONPROPOSAL": "A szavazatát a tranzakció megerősítését követően számítják.",
             "NOADDRESS": "Nem adta meg a Metrix címet"
         }
     }

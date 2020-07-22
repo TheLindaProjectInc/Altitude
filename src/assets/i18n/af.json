@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Handtekening",
             "TABLE_DIFFICULTY": "moeite",
-            "TABLE_ENTROPYBIT": "Entropie Bit",
             "TABLE_BLOCKHASH": "Blok Hash",
             "TABLE_CONFIRMATIONS": "bevestigings",
             "TABLE_INPUTOUTPUT": "Insette en Uitsette",
@@ -251,7 +250,6 @@
                 "LOCKED": "Wallet gesluit",
                 "UNLOCKED": "Wallet ontsluit",
                 "UNLOCKEDSTAKING": "Wallet ontsluit slegs vir staking",
-                "UNLOCKEDANON": "Wallet ontsluit slegs vir anonymisering",
                 "STAKING": "Wallet staak tans",
                 "NOTSTAKING": "Wallet staak tans nie",
                 "MASTERNODEON": "Masternode loop tans",
@@ -283,7 +281,7 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Enige vorige rugsteun wat u van u beursie-lêer gemaak het, moet vervang word met die nuut gegenereerde, geïnkripteer beursie-lêer. Om sekuriteitsredes sal vorige back-ups van die ongecodeerde beursie-lêer nutteloos raak sodra u die nuwe, versleutelde beursie begin gebruik.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core het onverwags gestop",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat dit veroorsaak het om te beëindig. Dit word aanbeveel om jou debug.log-lêer vir kwessies na te gaan.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Daar was 'n probleem met Metrix Core wat veroorsaak het dat dit beëindig is. Dit word aanbeveel om u debug.log-lêer te kontroleer vir probleme.",
             "CLIENTINVALIDCONFIGTITLE": "Ongeldige metrix.conf-konfigurasie",
             "CLIENTINVALIDCONFIGINFO": "U metrix.conf het 'n ongeldige masternode-opstelling wat sal veroorsaak dat Metrix Core onmiddellik uittree. Gaan asseblief hierdie lêer na.",
             "ADDREMOTEMNTITLE": "Voeg eksterne masternode by",
@@ -296,7 +294,9 @@
             "BOOTSTRAPFAILEDINFO": "Daar was 'n probleem met die opstart van Metrix Core. Dit word aanbeveel om u Altitude-loglêer te kontroleer vir probleme.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Herstel gereedskap",
             "STARTUPFAILEDTITLE": "Metrix Core-opstart misluk",
-            "STARTUPFAILEDINFO": "Daar was 'n beginmetrix Core. Dit word aanbeveel om u Altitude-loglêer te kontroleer vir probleme."
+            "STARTUPFAILEDINFO": "Daar was 'n beginmetrix Core. Dit word aanbeveel om u Altitude-loglêer te kontroleer vir probleme.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikasiefout",
+            "CLIENTUNKNOWNERRORINFO": "Kon nie met Metrix Core kommunikeer nie. Dit word aanbeveel om u debug.log-lêer te kontroleer vir probleme."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres boek",
@@ -406,8 +406,6 @@
         "TRANSACTIONMISMATCH": "Transaksie fout. Probeer asseblief weer.",
         "MINIMUMCONFIRMATIONS": "Alle insette benodig ten minste 1 bevestiging voor besteding.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksies het na klembord gekopieer",
-        "TRANSACTIONOUTPUTTOOLARGE": "Een van u betalings aan bedrae is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jou verandering is te groot om veilig te stuur. Maksimum is 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Stop masternode...",
         "FAILEDTOWRITECONFIG": "Kon nie na jou metrix.conf-lêer skryf nie. Kontroleer of die lêer bestaan en dat Altitude skryftoestemmings het.",
         "NOPUBLICUP": "Geen openbare IP-adres gevind nie. Kontroleer u internetverbinding en herbegin Altitude.",
@@ -446,29 +444,65 @@
         "NOV": "November",
         "DEC": "Desember"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Jy stuur",
-                "YOUGET": "Jy kry",
-                "MRXADDRESS": "Metrix-adres",
-                "SWAP": "swap",
-                "SWAPADDRESSES": "Ruil adresse",
-                "BTCADDRESS": "BTC-adres",
-                "INFOLINE1": "Sodra u 'n BTC-deposito-adres het, sal enige BTC wat na die adres gestuur word, outomaties vir MRX na u genomineerde MRX-adres omgeruil word.",
-                "INFOLINE2-1": "Afhangend van die Bitcoin-bloktye, word transaksies gewoonlik binne 'n uur skoongemaak. Ons kan fiat aanvaar vir",
-                "INFOLINE2-2": "deelnemende lande",
-                "INFOLINE2-3": "Dit sal eers na BTC omgeskakel word, dan na MRX.",
-                "INFOLINE3": "Sodra u BTC-deposito gewis is, sal u MRX in u genomineerde adres ontvang.",
-                "INFOLINE4": "Besoek gerus vir meer inligting",
-                "FIATSWAPSELECTED": "U sal na Buy.Metrixcoin.com verwys word om hierdie transaksie te voltooi"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "U is nie 'n goewerneur nie",
+                "NOTGOVERNORDETAIL": "Goewerneurs is verantwoordelik vir die stemming oor maandelikse begrotings en die verandering van blockchain. U kan 'n goewerneur word deur die regte kollaterale in die bestuurskontrak te sluit.",
+                "COLLATERAL": "Vereiste kollaterale",
+                "ENROLL": "Inskryf",
+                "CONFIRMENROLL": "U is op die punt om in te skryf as 'n goewerneur. Dit sal 'n transaksie met die nodige sekerheid na die bestuurskontrak stuur. U kan te eniger tyd uitteken.",
+                "ISGOVERNORTITLE": "U is 'n aktiewe goewerneur!",
+                "ISGOVERNORDETAIL1": "Goewerneurs is verantwoordelik vir die stemming oor maandelikse begrotings en die verandering van blockchain.",
+                "ISGOVERNORDETAIL2": "Om 'n goewerneur te bly, moet u elke 30 dae aan ten minste 1 stem deelneem.",
+                "ISGOVERNORDETAIL3": "As daar niks is om oor te stem nie, kan u u inskrywing handmatig voortsit deur 'n aktiewe ping te stuur.",
+                "UNENROLL": "Onttrek",
+                "PING": "Stuur aktiewe ping"
+            },
+            "BUDGET": {
+                "TITLE": "Begrotingsvoorstelle",
+                "ADDPROPOSAL": "Stel 'n voorstel op",
+                "REQUESTEDPERMONTH": "per maand",
+                "REQUESTEDREMAINING": "oorblywende",
+                "VOTEYES": "Stem Ja",
+                "VOTEABSTAIN": "Stem Onthou",
+                "VOTENO": "Stem nr",
+                "VOTESTOPASS": "stemme om te slaag",
+                "VOTEPASSING": "stemme wat slaag"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Stel 'n voorstel op",
+                "DESCRIPTION": "Hieronder kan u 'n begrotingsvoorstel maak en dit voor die volgende begrotingsreëlingsblok aan die netwerk voorlê vir stemming.",
+                "BUDGETFEE": "Die huidige begrotingsfooi is",
+                "BUDGETBLOCK": "Die volgende nedersettingsblok is",
+                "PROPOSALTITLE": "Naam van voorstel",
+                "PROPOSALDESC": "Voorstel beskrywing",
+                "PROPOSALURL": "Voorstel-URL",
+                "PROPOSALAMOUNT": "Gevraagde bedrag",
+                "PROPOSALDURATION": "Gevra betalings",
+                "PROPOSALADDRESS": "Betaaladres",
+                "PROPOSALCREATE": "Stel 'n voorstel op"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "bestuur",
+                "BUDGET": "begroting"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Genereer ruiladres...",
             "ALREADYHAVEADDRESS": "U het reeds 'n BTC-adres gekoppel aan hierdie Metrix-adres",
-            "SWAPUSDMIN": "Die minimum ruilbedrag vir USD is $ 50",
+            "SWAPUSDMIN": "Die minimum USD-omruilbedrag is $ 50",
             "SWAPUSDMAX": "Die maksimum USD-omruilbedrag is $ 3000",
+            "INCOMPLETEFORM": "U het nie al die vereiste velde korrek ingevul nie",
+            "INVALIDPROPOSALDURATION": "Die voorgestelde duur moet tussen 1 en 12 maande duur",
+            "CREATINGPROPOSAL": "Dien voorstel in om te netwerk...",
+            "CREATEDPROPOSAL": "U voorstel is suksesvol geskep",
+            "ENROLLINGGOVERNOR": "Inskryf as goewerneur...",
+            "ENROLLEDGOVERNOR": "U inskrywing sal voltooi wees sodra u transaksie bevestig is",
+            "VOTINGONPROPOSAL": "Stemming van die voorstel gestuur",
+            "VOTEDONPROPOSAL": "U stem sal getel word sodra die transaksie bevestig is.",
             "NOADDRESS": "U het geen Metrix-adres ingevoer nie"
         }
     }
