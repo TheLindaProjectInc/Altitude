@@ -10,6 +10,7 @@ export class CurrencyService {
     public market;
     public currencies = [];
     private selectedCurrency = 'MRX';
+    private charts = {};
 
 
     @Output() currencyChange: EventEmitter<any> = new EventEmitter();
@@ -43,12 +44,20 @@ export class CurrencyService {
 
     public async getMarketChart(period: number) {
         return new Promise((resolve, reject) => {
-            this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
-                .subscribe((data: any) => {
-                    resolve(data.prices);
-                }, error => {
-                    reject(error)
-                });
+            if (this.charts[period] && this.charts[period].expires < new Date().getTime()) {
+                resolve(this.charts[period].prices);
+            } else {
+                this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
+                    .subscribe((data: any) => {
+                        this.charts[period] = {
+                            prices: data.prices,
+                            expires: new Date().getTime() + 1000 * 60 * 60
+                        };
+                        resolve(data.prices);
+                    }, error => {
+                        reject(error)
+                    });
+            }
         })
     }
 

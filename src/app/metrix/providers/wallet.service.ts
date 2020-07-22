@@ -1,4 +1,5 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
+import { ReplaySubject } from 'rxjs';
 import Big from 'big.js';
 import { RPCMethods, RpcService } from './rpc.service';
 import Helpers from 'app/helpers';
@@ -9,13 +10,13 @@ import {
     Address,
     AddressBookItem,
     Input,
-    MasternodeStatus,
     Peer,
     StakingStatus,
     Transaction,
-    WalletStatus,
+    WalletInfo,
     EncryptionStatus,
-    BlockchainStatus
+    BlockchainStatus,
+    NetworkInfo
 } from '../classes';
 import { DesktopNotificationService } from '../../providers/desktop-notification.service';
 
@@ -35,10 +36,10 @@ export class WalletService {
     syncServiceTimer;
 
     // wallet state
-    walletStatus: WalletStatus;
+    walletInfo: WalletInfo;
+    networkInfo: NetworkInfo;
     blockchainStatus: BlockchainStatus;
     stakingStatus: StakingStatus;
-    masternode: MasternodeStatus;
 
     // transactions
     private _transactions: Array<Transaction>;
@@ -52,21 +53,20 @@ export class WalletService {
     // data syncs
     dataSyncs = [
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.WALLET, fn: () => this.syncWallet() },
+        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.NETWORK, fn: () => this.syncNetwork() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.ACCOUNTS, fn: () => this.syncAccounts() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.STAKING, fn: () => this.syncStaking() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.BLOCKCHAIN, fn: () => this.syncBlockchain() },
-        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODE, fn: () => this.getMasternodeInfo() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.TRANSACTIONS, fn: () => this.syncTransactions() },
-        { timestamp: 0, interval: 10000, async: false, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODELIST, fn: () => this.getMasternodeList() },
         { timestamp: 0, interval: 10000, async: false, showLoading: false, running: false, name: DATASYNCTYPES.PEERSLIST, fn: () => this.getPeersList() },
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.ADDRESSBOOK, fn: () => this.getAddressBook() },
-        { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.MASTERNODELISTCONF, fn: (dataSync) => this.getMasternodeListConf(dataSync) },
     ];
 
-    @Output() accountsUpdated: EventEmitter<boolean> = new EventEmitter();
+    @Output() accountsUpdated: ReplaySubject<boolean> = new ReplaySubject();
     @Output() masternodeListUpdated: EventEmitter<any> = new EventEmitter();
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
-    @Output() transactionsUpdated: EventEmitter<any> = new EventEmitter();
+    @Output() transactionsUpdated: ReplaySubject<any> = new ReplaySubject();
+    @Output() newBlockReceived: ReplaySubject<any> = new ReplaySubject();
     @Output() peersUpdated: EventEmitter<any> = new EventEmitter();
 
     constructor(
@@ -83,10 +83,10 @@ export class WalletService {
         this.running = false;
         this._transactions = new Array<Transaction>();
         this._accounts = new Array<Account>();
-        this.walletStatus = new WalletStatus();
+        this.walletInfo = new WalletInfo();
+        this.networkInfo = new NetworkInfo();
         this.blockchainStatus = new BlockchainStatus();
         this.stakingStatus = new StakingStatus();
-        this.masternode = new MasternodeStatus();
         this._peers = new Array<Peer>();
         this._addressBook = new Array<AddressBookItem>();
     }
@@ -100,14 +100,24 @@ export class WalletService {
     }
 
     public get balance(): Big {
-        let balance = Big(0);
-        this._accounts.forEach(acc => balance = balance.add(acc.balance));
-        balance = balance.add(this.walletStatus.stake);
-        return balance;
+        return this.walletInfo.totalBalance;
     }
 
     public get accounts(): Array<Account> {
         return this._accounts.slice();
+    }
+
+    public get addressList(): Array<String> {
+        let accounts = this.accounts;
+        let addressList = [];
+        for (let i = 0; i < accounts.length; i++) {
+            let account = accounts[i];
+            for (let j = 0; j < account.addresses.length; j++) {
+                if (addressList.indexOf(account.addresses[j].address) === -1)
+                    addressList.push(account.addresses[j].address);
+            }
+        }
+        return addressList
     }
 
     public get transactions(): Array<Transaction> {
@@ -148,8 +158,6 @@ export class WalletService {
             // reset all timestamps so they will re-sync when the core is available
             this.dataSyncs.forEach(ds => {
                 ds.timestamp = 0;
-                if (ds.name === DATASYNCTYPES.MASTERNODELISTCONF) ds.interval = 10000;
-                if (ds.name === DATASYNCTYPES.MASTERNODE) ds.interval = 10000;
             });
         }
     }
@@ -217,19 +225,15 @@ export class WalletService {
         if (!data.error) {
             // on linux and osx we need to notify the title bar this has
             // changed so it can redraw it
-            let encryptionChanged = this.walletStatus.encryption_status !== data.encryption_status
-
-            this.walletStatus.version = data.version;
-            this.walletStatus.unlocked_until = data.unlocked_until;
-            this.walletStatus.protocolversion = data.protocolversion;
-            this.walletStatus.walletversion = data.walletversion;
-            this.walletStatus.connections = data.connections;
-            this.walletStatus.encryption_status = data.encryption_status;
-            this.walletStatus.errors = data.errors;
-            this.walletStatus.stake = Big(data.stake);
-
+            let encryptionChanged = this.walletInfo.encryption_status !== data.encryption_status
+            this.walletInfo.sync(data);
             if (encryptionChanged) this.encryptionStatusChanges.emit()
         }
+    }
+
+    private async syncNetwork() {
+        let data: any = await this.rpc.requestData(RPCMethods.GETNETWORK);
+        if (!data.error) this.networkInfo.sync(data);
     }
 
     private async syncAccounts() {
@@ -271,7 +275,7 @@ export class WalletService {
             if (!hasMatch) this._accounts.splice(i--, 1);
             else this._accounts[i].removeRenamedAddresses(); // remove any addresses that have been renamed
         }
-        this.accountsUpdated.emit();
+        this.accountsUpdated.next();
     }
 
     private async syncTransactions() {
@@ -308,7 +312,7 @@ export class WalletService {
                 return 1;
             });
             // notify UI of change
-            this.transactionsUpdated.emit();
+            this.transactionsUpdated.next();
         }
     }
 
@@ -316,9 +320,9 @@ export class WalletService {
         // only notify new coins received
         if (serverTrx.category === "Generated" || serverTrx.category === 'Received') {
             // check we have a block height so we don't notify already known transactions
-            if (this.walletStatus.startupBlockTime) {
+            if (this.walletInfo.startupBlockTime) {
                 // check we recieved this after the last time we synced
-                if (serverTrx.timestamp.getTime() > this.walletStatus.startupBlockTime) {
+                if (serverTrx.timestamp.getTime() > this.walletInfo.startupBlockTime) {
                     //  check we aren't notifying a super old one (only notify a week old)
                     let diff = new Date().getTime() - serverTrx.timestamp.getTime();
                     if (diff <= 1000 * 60 * 60 * 24 * 7) {
@@ -339,34 +343,12 @@ export class WalletService {
     }
 
     private async syncBlockchain() {
+        let currentBlock = this.blockchainStatus.latestBlockHeight;
         this.blockchainStatus = await this.rpc.requestData(RPCMethods.GETBLOCKCHAIN);
-        if (!this.walletStatus.startupBlockTime)
-            this.walletStatus.startupBlockTime = this.blockchainStatus.latestBlockTime;
-    }
-
-    private async getMasternodeInfo() {
-        let data: any = await this.rpc.requestData(RPCMethods.MASTERNODESTATUS);
-        this.masternode.setup = !data.initRequired;
-        this.masternode.outputs = data.outputs;
-        if (data.status[0]) {
-            this.masternode.running = data.status[0].activeseconds > 0;
-            this.masternode.activeseconds = data.status[0].activeseconds;
-            this.masternode.address = data.status[0].address;
-            this.masternode.lastTimeSeen = data.status[0].lastTimeSeen;
-            this.masternode.pubkey = data.status[0].pubkey;
-            this.masternode.status = data.status[0].status;
-        }
-    }
-
-    private async getMasternodeList() {
-        this.masternode.list = await this.rpc.requestData(RPCMethods.MASTERNODESTATUSALL);
-        this.masternodeListUpdated.emit();
-    }
-
-    private async getMasternodeListConf(dataSync) {
-        this.masternode.config = await this.rpc.requestData(RPCMethods.MASTERNODELISTCONF);
-        dataSync.interval = -1;
-        this.masternodeListUpdated.emit();
+        if (!this.walletInfo.startupBlockTime)
+            this.walletInfo.startupBlockTime = this.blockchainStatus.latestBlockTime;
+        if (this.blockchainStatus.latestBlockHeight > currentBlock)
+            this.newBlockReceived.next()
     }
 
     private async getPeersList() {
@@ -389,7 +371,7 @@ export class WalletService {
                 }
                 await this.rpc.requestData(RPCMethods.ADDRESSBOOKADD, [address, label]);
                 // add address to addressbook
-                this._addressBook.push({ address: address, account: label });
+                this._addressBook.push({ address: address, label: label });
                 resolve();
             } catch (ex) {
                 reject(ex);
@@ -431,12 +413,13 @@ export class WalletService {
         return this.rpc.requestData(RPCMethods.GETBLOCK, [hash]);
     }
 
-    public getBlockByNumber(height: number): Promise<any> {
-        return this.rpc.requestData(RPCMethods.GETBLOCKBYNUMBER, [height]);
+    public async getBlockByNumber(height: number): Promise<any> {
+        let blockHash = await this.rpc.requestData(RPCMethods.GETBLOCKHASH, [height]);
+        return this.rpc.requestData(RPCMethods.GETBLOCK, [blockHash]);
     }
 
     public getTransaction(hash: string): Promise<any> {
-        return this.rpc.requestData(RPCMethods.GETTRANSACTION, [hash]);
+        return this.rpc.requestData(RPCMethods.GETTRANSACTION, [hash, true]);
     }
 
     public signMessage(address: string, message: string, passphrase: string): Promise<any> {
@@ -459,7 +442,7 @@ export class WalletService {
         return new Promise(async (resolve, reject) => {
             try {
                 await this.rpc.requestData(RPCMethods.ENCRYPT, [passphrase]);
-                this.walletStatus.encryption_status = EncryptionStatus.ENCRYPTING;
+                this.walletInfo.encryption_status = EncryptionStatus.ENCRYPTING;
                 this.encryptionStatusChanges.emit()
                 resolve()
             } catch (ex) {
@@ -488,7 +471,7 @@ export class WalletService {
         // we'll handle the lock wallet error here so it's cleaner
         // the UI will never need to handle these errors
         try {
-            this.walletStatus.encryption_status = EncryptionStatus.LOCKED;
+            this.walletInfo.encryption_status = EncryptionStatus.LOCKED;
             this.stakingStatus.staking = false;
             this.encryptionStatusChanges.emit()
             this.rpc.requestData(RPCMethods.LOCK);
@@ -510,39 +493,13 @@ export class WalletService {
         })
     }
 
-    public masternodeCMD(type: string, params?: Array<any>): Promise<any> {
-        switch (type) {
-            case 'start':
-                return this.rpc.requestData(RPCMethods.MASTERNODESTART, params);
-            case 'start-alias':
-                return this.rpc.requestData(RPCMethods.MASTERNODESTARTALIAS, params);
-            case 'start-many':
-                return this.rpc.requestData(RPCMethods.MASTERNODESTARTMANY, params);
-            case 'addremote':
-                return this.rpc.requestData(RPCMethods.MASTERNODEADDREMOTE, params);
-            case 'removeremote':
-                return this.rpc.requestData(RPCMethods.MASTERNODEREMOVEREMOTE, params);
-            case 'init':
-                return this.rpc.requestData(RPCMethods.MASTERNODEINIT, params);
-            case 'genkey':
-                return this.rpc.requestData(RPCMethods.MASTERNODEGENKEY);
-            case 'kill':
-                return this.rpc.requestData(RPCMethods.MASTERNODEKILL);
-            case 'stop':
-                return this.rpc.requestData(RPCMethods.MASTERNODESTOP, params);
-            case 'stop-alias':
-                return this.rpc.requestData(RPCMethods.MASTERNODESTOPALIAS, params);
-        }
-    }
-
     // end tunnel methods
 
     // public methods
     public requireUnlock() {
-        switch (this.walletStatus.encryption_status) {
+        switch (this.walletInfo.encryption_status) {
             case EncryptionStatus.LOCKED:
             case EncryptionStatus.LOCKEDFORSTAKING:
-            case EncryptionStatus.UNLOCKEDANONYMONLY:
                 return true;
             case EncryptionStatus.UNLOCKED:
             case EncryptionStatus.UNENCRYPTED:
@@ -551,37 +508,34 @@ export class WalletService {
     }
 
     public canLock() {
-        switch (this.walletStatus.encryption_status) {
+        switch (this.walletInfo.encryption_status) {
             case EncryptionStatus.LOCKED:
             case EncryptionStatus.UNENCRYPTED:
                 return false;
             case EncryptionStatus.LOCKEDFORSTAKING:
-            case EncryptionStatus.UNLOCKEDANONYMONLY:
             case EncryptionStatus.UNLOCKED:
                 return true;
         }
     }
 
     public canUnlock() {
-        switch (this.walletStatus.encryption_status) {
+        switch (this.walletInfo.encryption_status) {
             case EncryptionStatus.UNLOCKED:
             case EncryptionStatus.UNENCRYPTED:
                 return false;
             case EncryptionStatus.LOCKED:
             case EncryptionStatus.LOCKEDFORSTAKING:
-            case EncryptionStatus.UNLOCKEDANONYMONLY:
                 return true;
         }
     }
 
     public get staking() {
-        switch (this.walletStatus.encryption_status) {
+        switch (this.walletInfo.encryption_status) {
             case EncryptionStatus.UNLOCKED:
             case EncryptionStatus.UNENCRYPTED:
             case EncryptionStatus.LOCKEDFORSTAKING:
                 return true;
             case EncryptionStatus.LOCKED:
-            case EncryptionStatus.UNLOCKEDANONYMONLY:
                 return false;
         }
     }
@@ -589,12 +543,10 @@ export class WalletService {
     public getTrxProgress(trx) {
         let progress = Math.round(trx.confirmations / Helpers.params.confirmations * 100);
         let indicator = {
-            "right": "0",
+            "left": "0"
         }
-        if (progress === 0) {
-            indicator["background"] = "none";
-        } else if (progress < 100) {
-            indicator["right"] = 100 - progress + "%";
+        if (progress > 0 && progress < 100) {
+            indicator["left"] = progress + "%";
         }
         return indicator;
     }
@@ -679,13 +631,11 @@ export class WalletService {
 
 export enum DATASYNCTYPES {
     WALLET,
+    NETWORK,
     ACCOUNTS,
     TRANSACTIONS,
     STAKING,
     BLOCKCHAIN,
-    MASTERNODE,
-    MASTERNODELIST,
-    MASTERNODELISTCONF,
     PEERSLIST,
     ADDRESSBOOK
 }

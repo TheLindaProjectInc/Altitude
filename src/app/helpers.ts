@@ -3,7 +3,7 @@ import Big from 'big.js';
 export default class Helpers {
 
   public static readonly params: CoinParams = {
-    fee: 0.001,
+    fee: 10,
     masternodeConfirms: 10,
     matureTime: 24,
     confirmations: 10,
@@ -49,18 +49,18 @@ export default class Helpers {
     return 0;
   }
 
-
   public static getFee(numInputs: number, numOutputs: number): number {
     const totalBytes = this.getBytes(numInputs, numOutputs);
-    const feeMultiplier = Math.ceil(totalBytes / 1000);
-    return Math.round(this.params.fee * feeMultiplier * 1000) / 1000;
+    const totalKb = totalBytes / 1000;
+    const fee = Big(this.params.fee).mul(totalKb);
+    return this.roundCoins(fee);
   }
 
   public static getBytes(numInputs: number, numOutputs: number): number {
-    const baseSize = 28;
-    const outputSize = 68;
+    const baseSize = 10;
+    const outputSize = 34;
     const changeSize = outputSize;
-    const inputSize = 82;
+    const inputSize = 147;
     const inputBytes = inputSize * numInputs;
     const outputBytes = numOutputs * outputSize;
     return baseSize + inputBytes + outputBytes + changeSize;
@@ -135,6 +135,16 @@ export default class Helpers {
         .substring(1);
     }
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+  }
+
+  public static validateURL(url: string): boolean {
+    var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
+      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
+      '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+      '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+      '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
+    return pattern.test(url);
   }
 
 }

@@ -1,9 +1,26 @@
 progress {
+    overflow: hidden;
     -webkit-appearance: none;
     appearance: none;
+    border: 0;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-bar {
+    border: 0;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    border: 0;
+    border-radius: 20px;
+}
+
+progress::-moz-progress-bar {
+    border: 0;
+    border-radius: 20px;
 }
 
 progress[value]::-webkit-progress-value {
     background: lighten($color: $background-primary, $amount: 10%);
-
 }

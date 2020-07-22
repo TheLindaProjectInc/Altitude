@@ -2,23 +2,23 @@ import { Account } from "./account";
 import { Address } from "./address";
 import { Input } from "./input";
 import { Transaction } from "./transaction";
-import { WalletStatus, EncryptionStatus } from './walletStatus';
+import { WalletInfo, EncryptionStatus } from './walletInfo';
 import { StakingStatus } from './stakingStatus';
-import { MasternodeStatus } from './masternodeStatus';
 import { Peer } from './peer';
 import { AddressBookItem } from './addressBookItem';
 import { BlockchainStatus } from './blockchainStatus';
+import { NetworkInfo } from "./networkInfo";
 
 export {
     Account,
     Address,
     AddressBookItem,
     Input,
-    MasternodeStatus,
     Peer,
     StakingStatus,
     Transaction,
-    WalletStatus,
+    WalletInfo,
+    NetworkInfo,
     EncryptionStatus,
     BlockchainStatus
 }

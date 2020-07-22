@@ -12,7 +12,7 @@
         <label for="chkShowEmpty">{{ 'PAGES.DASHBOARD.HIDEEMPTYACCOUNTS' | translate }}</label>
     </div>
 
-    <div class="accounts">
+    <div class="flex-wrap">
         <div class="account" *ngFor="let account of wallet.getAccounts()" (click)="manageAccount(account)">
             <div class="account-inner">
                 <div>

@@ -40,7 +40,9 @@ import {
     faLink,
     faChevronDown,
     faChevronRight,
-    faSearch
+    faSearch,
+    faUsers,
+    faMoneyCheckAlt
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -85,6 +87,8 @@ export function setupIcons() {
         faLink,
         faChevronDown,
         faChevronRight,
-        faSearch
+        faSearch,
+        faUsers,
+        faMoneyCheckAlt
     );
 }

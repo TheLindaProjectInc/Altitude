@@ -1,0 +1,50 @@
+<div class="content" #scrollingBlock>
+
+    <div class="governance-container">
+        <!-- can enroll -->
+        <div class="content-card" *ngIf="!isGovernor && canEnroll">
+            <fa-icon class="danger fa-2x" icon="users"></fa-icon>
+            <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
+            <div>
+                <p *ngIf="isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.CONFIRMENROLL' | translate }}</p>
+                <p *ngIf="!isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORDETAIL' | translate }}</p>
+                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}: {{governanceCollateral}} MRX</p>
+            </div>
+            <button class="btn btn-default" (click)="isEnrolling=true" *ngIf="!isEnrolling">
+                {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
+            </button>
+            <div *ngIf="isEnrolling">
+                <button class="btn btn-danger" (click)="isEnrolling=false">
+                    {{'MISC.CANCELBUTTON' | translate }}
+                </button>
+                <button class="btn btn-success" (click)="enroll()">
+                    {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
+                </button>
+            </div>
+        </div>
+        <!-- enrollment pending -->
+        <div class="content-card" *ngIf="!isGovernor && enrollmentTxid">
+            <fa-icon class="fa-2x" icon="users"></fa-icon>
+            <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
+        </div>
+        <!-- enrolled -->
+        <div class="content-card" *ngIf="isGovernor">
+            <fa-icon class="success fa-2x" icon="users"></fa-icon>
+            <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
+            <div>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL1' | translate }}</p>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL2' | translate }}</p>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL3' | translate }}</p>
+            </div>
+            <div class="toolbar">
+                <button class="btn btn-danger" (click)="unenroll()">
+                    {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
+                </button>
+                <button class="btn btn-default" (click)="ping()">
+                    {{ 'DGP.PAGES.GOVERNANCE.PING' | translate }}
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

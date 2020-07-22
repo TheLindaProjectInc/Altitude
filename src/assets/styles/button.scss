@@ -37,7 +37,7 @@ button {
     &.btn-default {
         color: $font-primary;
         border: 2px solid $font-primary;
-        &:hover {
+        &:hover:not([disabled]) {
             animation: glow-default 2s ease-in infinite;
             color: $background-primary;
             background-color: $font-primary;
@@ -46,7 +46,7 @@ button {
     &.btn-primary {
         color: $color-primary;
         border: 2px solid $color-primary;
-        &:hover {
+        &:hover:not([disabled]) {
             animation: glow-primary 2s ease-in infinite;
             color: $font-primary;
             background-color: $color-primary;
@@ -55,7 +55,7 @@ button {
     &.btn-success {
         color: $color-success;
         border: 2px solid $color-success;
-        &:hover {
+        &:hover:not([disabled]) {
             animation: glow-success 2s ease-in infinite;
             color: $font-primary;
             background-color: $color-success;
@@ -64,10 +64,19 @@ button {
     &.btn-danger {
         color: $color-danger;
         border: 2px solid $color-danger;
-        &:hover {
+        &:hover:not([disabled]) {
             animation: glow-danger 2s ease-in infinite;
             color: $font-primary;
             background-color: $color-danger;
+        }
+    }
+    &.btn-warning {
+        color: $color-warning;
+        border: 2px solid $color-warning;
+        &:hover:not([disabled]) {
+            animation: glow-warning 2s ease-in infinite;
+            color: $font-dark;
+            background-color: $color-warning;
         }
     }
     &.btn-icon {
@@ -102,6 +111,15 @@ button {
         box-shadow: 0 0 20px lighten($color: rgba($color-danger, .4), $amount: 5%);
     }
 }
+
+@keyframes glow-warning {
+    35% {
+        border-color: lighten($color: $color-warning, $amount: 5%);
+        background: lighten($color: $color-warning, $amount: 5%);
+        box-shadow: 0 0 20px lighten($color: rgba($color-warning, .4), $amount: 5%);
+    }
+}
+
 
 @keyframes glow-default {
     35% {

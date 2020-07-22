@@ -1,18 +1,18 @@
 {
     "metrixd": {
-        "version": "3.4.7.0",
+        "version": "3.4.8.0",
         "win32": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.4.7.0-76e2476/metrixd-win32-x64.exe",
-                    "sha256": "BC4FFFA09E4660AC1B6AB7E15DE66240C53029BCD48D1C0294209AAE7A3BAEC1"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/testnet-rc-1/metrixd-win32-x64.exe",
+                    "sha256": "6B9002262CD404E8D8FF6854C6925504B754EEEEB02903EBBE8266AC7E9CA634"
                 },
                 "bin": "metrixd.exe"
             },
             "ia32": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.4.7.0-76e2476/metrixd-win32-x86.exe",
-                    "sha256": "793B59E43F2898FDA9F676A84D81486CC35949AB7CA7E4CD8E6C3BF449D9F7EA"
+                    "url": "",
+                    "sha256": ""
                 },
                 "bin": "metrixd.exe"
             }
@@ -20,8 +20,8 @@
         "linux": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.4.7.0-76e2476/metrixd-linux-x64",
-                    "sha256": "197C9F2635277C6ED099D938F9A7C27B36CE4A4A3858CFD749311CE07713CC4E"
+                    "url": "",
+                    "sha256": ""
                 },
                 "bin": "metrixd"
             }
@@ -29,131 +29,17 @@
         "darwin": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/3.4.7.0-76e2476/metrixd-darwin-x64",
-                    "sha256": "B0E115634F86ECC44B175F54AA57612CD4DEAE1F7D216725193C258DECB5F28E"
+                    "url": "",
+                    "sha256": ""
                 },
                 "bin": "metrixd"
             }
         },
         "versions": {
-            "3.4.7.0": [
-                "BC4FFFA09E4660AC1B6AB7E15DE66240C53029BCD48D1C0294209AAE7A3BAEC1",
-                "793B59E43F2898FDA9F676A84D81486CC35949AB7CA7E4CD8E6C3BF449D9F7EA",
-                "197C9F2635277C6ED099D938F9A7C27B36CE4A4A3858CFD749311CE07713CC4E",
-                "B0E115634F86ECC44B175F54AA57612CD4DEAE1F7D216725193C258DECB5F28E"
-            ],
-            "3.4.6.0": [
-                "1747A263FF952BB0159B05DA8E78CD4E6812EFF5659F75E11E141402018F8A5E",
-                "C742A8D1B4D48A4153FFA8A46B8ECF80997D639878380EE048824DC46FC2717C",
-                "457C8D05C8B172E5A4AF00D126AEF25F1AE06D27C6B0B909F797A7D9D105443F",
-                "AD771FF12C8DD8060AB9F220858507D6D431A645E22D532CE2C4950FFE861737"
-            ],
-            "3.4.5.0": [
-                "6137817D2B02715C5E6809B19A74C5348F45C354683F2F1346BA66D29BE5CD06",
-                "063C31D2B0766770B13E05DD3D3E0DF48C55B2FB13ADC85C6C26EF80694804E3",
-                "38436739CF7D1B90CBD230807567CB37A968B73BE782D78411FAFE488C150BA4",
-                "B876DE1712A719679D5131E26F6E877B159402F7C84904ED002E50410081359D"
-            ],
-            "3.4.4.0": [
-                "F4154222A0CDC89928D94E68C3F3F8EC870E0243F020E74FF2041D62B1611CC5",
-                "9D8C738B9C1D56FBEC538676C7A4A418D90BC3EE74C6CFC0B15BCDE68C49609E",
-                "DADB90261B6FD2A1DEB7F457087909A14D416EDD31F2DC41E47C14B9EEB7A869",
-                "2504B33A4B0A46EA90D438DA3A20CC4BC0B50A5EF1FBECC19000157661329D15"
-            ],
-            "3.4.3.0": [
-                "71A5F6275061B7137B69F3146F94EDEF18877088FC15CD343CE14B2A33983525",
-                "72B9224B5C429E355ADCCEFE0C1AE3D054FF444EB1975EF978102D44567511F8",
-                "52DF188C87C92B7872C64711C59A83AC55FB266F282E4D0ADC94FCBCF77B7ACE",
-                "D0DAA9A8B7CC622B003A4C1C239984FD5D41CB9E89019000596365397DF57CF8"
-            ],
-            "3.4.2.0": [
-                "6D5C46B3E21E09B08BFE1109C98440040853FB57C61C24E2119DA995CD0809F4",
-                "F079D7846585F108F19A6B0FE24F2B874990B606FE03F6CCA4D4B4CF93BF3304",
-                "3050EC2C768D815BC897FFACB5F76907ABE3A9AF47D65A64604822C8C0A086EC",
-                "39BE36691A20B2609EC8F29F24ECCDD5BFE834790FAC505CC154D110BBAB89F1"
-            ],
-            "3.4.1.0": [
-                "455801F43FB9F62007AFA8DC7C6938F2D640FA89BCCE74983A13E34E128C0CFD",
-                "61FA6327EFB27B35BAA13FE18F0E0BE4619C13B36EE7577950ABF2CC62DF0FC0",
-                "8449504B89AE3E4833D81D57A50691056542ABB99AA56F24A8EE01F33E136B21",
-                "125C632FB2B152D456F05367607E8A24C130FD45121E4EC33535B79078F4F7C6"
-            ],
-            "3.4.0.0": [
-                "6A44C2EB1C22C7204BF4AA31913D833C551445C19573B70A5BEB3DDE3F9D1D94",
-                "429ADBB6E16CFF27F5C234B3BD431248A2F18C128C27AB570BE34CC6D12A2FA9",
-                "4E903747ACED4CBC65C325A5545A34A09FB3A5B6C5A4B1255E08D96D2E2065BB",
-                "9C60BA4249E6C7EC4A40C9414903237590021C65C57FD71B1638ACBA78882ACF"
-            ],
             "3.3.3.0": [
-                "D6D9B51A808540F503AA7B5CF4CF1AFCB5E8D5F3AF6BEA85FFB3433CC26C8F70",
-                "6F3EA9B5CBEDA8EFB945ABA828C91910EE1B40963CA99DB2BBF2F2E5D2B7D2F5",
-                "DC71790B7DEF0097455CE4EFAC698DAC9A432D8FC7F4162630A2CD4D025456BA",
-                "BA5873940F863D9720B3C9769A960EF6AD92D29EA102CD7A0849A1EB27DA1CB2"
+                "D6D9B51A808540F503AA7B5CF4CF1AFCB5E8D5F3AF6BEA85FFB3433CC26C8F70"
             ]
         },
         "bootstrap": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/bootstrap/metrix.zip"
-    },
-    "Lindad": {
-        "version": "3.3.2.0",
-        "win32": {
-            "x64": {
-                "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-win32-x64.exe",
-                    "sha256": "79351C69AABD74ADD7BBB577049B62570CAFEC6D01C838340049C4B559C6B081"
-                },
-                "bin": "Lindad.exe"
-            },
-            "ia32": {
-                "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-win32-x86.exe",
-                    "sha256": "CA9B76E89E10B248338DDA2E012B0E63A31D1B217F6C2E6D4F92A5F47DCB6F4D"
-                },
-                "bin": "Lindad.exe"
-            }
-        },
-        "linux": {
-            "x64": {
-                "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-linux-x64",
-                    "sha256": "A20AC32D0289E9E84042F6ED8F0F50079CE15710AEFE855DF77C36798419E611"
-                },
-                "bin": "Lindad"
-            }
-        },
-        "darwin": {
-            "x64": {
-                "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/linda/lindad/3.3.2.0-c4628f2/Lindad-darwin-x64",
-                    "sha256": "0568113EC3E00B8C4A110B703A56EFB901FC5A93EB5939BBBA506465AFC52CB8"
-                },
-                "bin": "Lindad"
-            }
-        },
-        "versions": {
-            "3.3.2.0": [
-                "79351C69AABD74ADD7BBB577049B62570CAFEC6D01C838340049C4B559C6B081",
-                "CA9B76E89E10B248338DDA2E012B0E63A31D1B217F6C2E6D4F92A5F47DCB6F4D",
-                "A20AC32D0289E9E84042F6ED8F0F50079CE15710AEFE855DF77C36798419E611",
-                "0568113EC3E00B8C4A110B703A56EFB901FC5A93EB5939BBBA506465AFC52CB8"
-            ],
-            "3.3.1.0": [
-                "A9524D872FD942E1EC108FF61D1292951A2279F5A6E127CCE96EC3213AF1A7B2",
-                "7CEDA5478533F4300DE25E58E5E506C9D1309A8E6727601BA6701B603B082E56",
-                "DBD61F0649317335D89E609EE52D49CC2932F588A90C8F3016CEDC7B538E4DB2",
-                "765361DE2984DA6FF3DE0683CEDF9A770735DAF38052B958891BBDA2ACA5B0AF"
-            ],
-            "3.3.0.0": [
-                "7D6714B14A5FC9E3E74C6C48A9ED5A2B2C460D2217205B7AF0AD1DCA0A04D115",
-                "BF484DB73BBBE43383F3A880C9457166F2DEF63CEE1E2608AA2BBEAB54ADEE1A",
-                "E58E6662ED01885F83525B2A346BFCF69DB9816636843A2F02A7E3736DC1950E",
-                "267C3BA390CAB80F8E0797D3F1D7FACB9A54CD0833187AF6A8EEEBA76C0A81E6"
-            ],
-            "3.2.1.0": [
-                "63D0CAEC780E1A90F1015165B92B7648184B5E00621E7248E7F6A8B7E461C733",
-                "65CDA5A1DF463E7788F9372E5EBD76F14F6390D7AFFDE6906B4D20C9742D05C6",
-                "46AB510FCB321E4DE99151CA90C737D42C9FDB8B6048583C4CF1BDB6FC795D5E",
-                "F2F88F5ED0BD9F473CEA25EC504819C6E9E9F6106DCD2ECBDEE7BDBBAE311FAE"
-            ]
-        }
     }
 }

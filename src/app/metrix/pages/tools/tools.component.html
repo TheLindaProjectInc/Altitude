@@ -25,7 +25,7 @@
       </tr>
       <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.COREVERSION' | translate }}:</td>
-        <td>{{wallet.walletStatus.version}}</td>
+        <td>{{wallet.networkInfo.version}}</td>
       </tr>
       <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}:</td>
@@ -33,11 +33,11 @@
       </tr>
       <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.PROTOCOLVERSION' | translate }}:</td>
-        <td>{{wallet.walletStatus.protocolversion}}</td>
+        <td>{{wallet.networkInfo.protocolversion}}</td>
       </tr>
       <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.WALLETVERSION' | translate }}:</td>
-        <td>{{wallet.walletStatus.walletversion}}</td>
+        <td>{{wallet.walletInfo.walletversion}}</td>
       </tr>
 
       <tr>
@@ -47,11 +47,7 @@
       </tr>
       <tr>
         <td>{{ 'PAGES.TOOLS.ABOUT.NUMBERCONNECTIONS' | translate }}:</td>
-        <td>{{wallet.walletStatus.connections}} (In: {{getPeersSpread()[0]}} / Out: {{getPeersSpread()[1]}})</td>
-      </tr>
-      <tr>
-        <td>{{ 'PAGES.TOOLS.ABOUT.NUMBERMASTERNODES' | translate }}:</td>
-        <td>{{wallet.masternode.list.length}}</td>
+        <td>{{wallet.networkInfo.connections}} (In: {{getPeersSpread()[0]}} / Out: {{getPeersSpread()[1]}})</td>
       </tr>
 
       <tr>

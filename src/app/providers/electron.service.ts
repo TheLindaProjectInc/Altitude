@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
 import { CurrencyService } from './currency.service';
 import { NotificationService } from './notification.service';
+import { ChainType, ClientStatus } from 'app/enum';
 var supportedLanguages = require('../pages/locale/languages');
 
 @Injectable()
@@ -19,6 +20,7 @@ export class ElectronService {
 
   settings: any = {};
   clientVersion: string = '0';
+  chain: ChainType = ChainType.MAINNET;
   publicIP: string = '';
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
@@ -56,7 +58,7 @@ export class ElectronService {
   connectClientNodeIPC() {
     // listen for client
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
-      if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
+      // if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
       switch (cmd) {
         case 'STATUS':
           this.clientStatusEvent.emit(data);
@@ -73,6 +75,9 @@ export class ElectronService {
         case 'VERSION':
           this.clientVersion = data;
           break;
+        case 'CHAIN':
+          this.chain = data;
+          break;
         case 'IP':
           this.publicIP = data;
           break;
@@ -87,6 +92,8 @@ export class ElectronService {
     this.ipcRenderer.send('client-node', 'RPC');
     // ask for client version
     this.ipcRenderer.send('client-node', 'VERSION');
+    // ask for client chain
+    this.ipcRenderer.send('client-node', 'CHAIN');
     // ask for ip address
     this.ipcRenderer.send('client-node', 'IP');
   }
@@ -151,25 +158,4 @@ export class ElectronService {
       });
     })
   }
-}
-
-export enum ClientStatus {
-  INITIALISING,
-  CHECKEXISTS,
-  DOWNLOADCLIENT,
-  UPDATEAVAILABLE,
-  STARTING,
-  RUNNING,
-  RUNNINGEXTERNAL,
-  STOPPED,
-  BOOTSTRAPPING,
-  NOCREDENTIALS,
-  INVALIDHASH,
-  INVALIDMASTERNODECONFIG,
-  DOWNLOADFAILED,
-  UNSUPPORTEDPLATFORM,
-  SHUTTINGDOWN,
-  RESTARTING,
-  CLOSEDUNEXPECTED,
-  BOOTSTRAPFAILED,
 }

@@ -1,12 +1,12 @@
 import { Injectable, isDevMode } from '@angular/core';
 import Big from 'big.js';
-import { ElectronService, ClientStatus } from 'app/providers/electron.service';
+import { ElectronService } from 'app/providers/electron.service';
 import { PromptService } from '../components/prompt/prompt.service';
 import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
-import * as compareVersions from 'compare-versions';
 import { BlockchainStatus } from '../classes/blockchainStatus';
 import { Router } from '@angular/router';
+import { ClientStatus } from 'app/enum';
 
 @Injectable()
 export class RpcService {
@@ -23,6 +23,38 @@ export class RpcService {
     private isUsingEncryption = false;
 
     private readonly unlockTimeout = 31000000;
+
+    private rpcMethods = [
+        { name: RPCMethods.ADDRESSBOOKADD, fn: (params) => this.callServer("addressbookadd", params) },
+        { name: RPCMethods.ADDRESSBOOKLIST, fn: (params) => this.callServer("listaddressbook") },
+        { name: RPCMethods.ADDRESSBOOKREMOVE, fn: (params) => this.callServer("addressbookremove", params) },
+        { name: RPCMethods.BACKUPWALLET, fn: (params) => this.callServer("backupwallet", params) },
+        { name: RPCMethods.CALLCONTRACT, fn: (params) => this.callServer("callcontract", params) },
+        { name: RPCMethods.CHANGEPASSPHRASE, fn: (params) => this.callServer("walletpassphrasechange", params) },
+        { name: RPCMethods.CREATETRANSACTION, fn: (params) => this.createTransaction(params) },
+        { name: RPCMethods.ENCRYPT, fn: (params) => this.callServer("encryptwallet", params) },
+        { name: RPCMethods.GETACCOUNTS, fn: (params) => this.getAccounts() },
+        { name: RPCMethods.GETBLOCK, fn: (params) => this.callServer("getblock", params) },
+        { name: RPCMethods.GETBLOCKCHAIN, fn: (params) => this.getBlockchain() },
+        { name: RPCMethods.GETBLOCKHASH, fn: (params) => this.callServer("getblockhash", params) },
+        { name: RPCMethods.GETDGPINFO, fn: (params) => this.callServer("getdgpinfo") },
+        { name: RPCMethods.TOHEXADDRESS, fn: (params) => this.callServer("gethexaddress", params) },
+        { name: RPCMethods.FROMHEXADDRESS, fn: (params) => this.callServer("fromhexaddress", params) },
+        { name: RPCMethods.GETNETWORK, fn: (params) => this.callServer("getnetworkinfo") },
+        { name: RPCMethods.GETSTAKING, fn: (params) => this.callServer("getstakinginfo") },
+        { name: RPCMethods.GETTRANSACTION, fn: (params) => this.callServer("getrawtransaction", params) },
+        { name: RPCMethods.GETTRANSACTIONS, fn: (params) => this.getTransactions(params) },
+        { name: RPCMethods.GETWALLET, fn: (params) => this.getWalletInfo() },
+        { name: RPCMethods.LOCK, fn: (params) => this.lockWallet() },
+        { name: RPCMethods.LOCKUNSPENT, fn: (params) => this.callServer("lockunspent", params) },
+        { name: RPCMethods.NEWADDRESS, fn: (params) => this.callServer("getnewaddress", params) },
+        { name: RPCMethods.PEERS, fn: (params) => this.callServer("getpeerinfo") },
+        { name: RPCMethods.SENDTOCONTRACT, fn: (params) => this.callServer('sendtocontract', params) },
+        { name: RPCMethods.SIGNMESSAGE, fn: (params) => this.signMessage(params) },
+        { name: RPCMethods.UNLOCK, fn: (params) => this.unlockWallet(params[0], this.unlockTimeout, params[1]) },
+        { name: RPCMethods.UPDATELABEL, fn: (params) => this.callServer("setlabel", params) },
+        { name: RPCMethods.VERIFYMESSAGE, fn: (params) => this.callServer("verifymessage", params) },
+    ];
 
     constructor(
         private electron: ElectronService,
@@ -43,9 +75,10 @@ export class RpcService {
             } else if (status === ClientStatus.STOPPED && this.RPCReady) {
                 this.stopClient();
                 this.notifyClientStopped();
-            } else if (status === ClientStatus.INVALIDMASTERNODECONFIG) {
+            } else if (status === ClientStatus.UNKNOWNERROR) {
+                console.log('rec UNKNOWNERROR')
                 this.stopClient();
-                this.notifyClientInvalidConfig();
+                this.notifyClientUnknownError();
             } else if (status === ClientStatus.SHUTTINGDOWN) {
                 this.stopClient();
             } else if (status === ClientStatus.BOOTSTRAPFAILED) {
@@ -66,7 +99,7 @@ export class RpcService {
             if (sub) {
                 let result = data.result;
                 let time = new Date().getTime() - sub.ts + 'ms';
-                if (isDevMode()) console.log('CallServer Response', time, data.method, result);
+                // if (isDevMode()) console.log('CallServer Response', time, data.method, result);
                 if (result.success) sub.resolve(result.body);
                 else sub.reject(result);
                 delete this.RPCSubscriptions[data.callId]
@@ -100,118 +133,11 @@ export class RpcService {
     }
 
     public async requestData(method, params = []) {
-        let data: any;
-        switch (method) {
-            case RPCMethods.ENCRYPT:
-                data = await this.callServer("encryptwallet", params);
-                break;
-            case RPCMethods.CHANGEPASSPHRASE:
-                data = await this.callServer("walletpassphrasechange", params);
-                break;
-            case RPCMethods.GETWALLET:
-                data = await this.getWalletInfo();
-                break;
-            case RPCMethods.GETACCOUNTS:
-                data = await this.getAccounts();
-                break;
-            case RPCMethods.GETTRANSACTIONS:
-                data = await this.getTransactions(params);
-                break;
-            case RPCMethods.GETSTAKING:
-                data = await this.callServer("getstakinginfo");
-                break;
-            case RPCMethods.UPDATELABEL:
-                data = await this.callServer("setaccount", params);
-                break;
-            case RPCMethods.NEWADDRESS:
-                data = await this.callServer("getaccountaddress", params);
-                break;
-            case RPCMethods.UNLOCK:
-                data = await this.unlockWallet(params[0], this.unlockTimeout, params[1]);
-                break;
-            case RPCMethods.LOCK:
-                await this.callServer("walletlock");
-                data = { result: { success: true } };
-                break;
-            case RPCMethods.LOCKUNSPENT:
-                data = await this.callServer("lockunspent", params);
-                break;
-            case RPCMethods.CREATETRANSACTION:
-                data = await this.createTransaction(params);
-                break;
-            case RPCMethods.BACKUPWALLET:
-                data = await this.callServer("backupwallet", params);
-                break;
-            case RPCMethods.GETBLOCKCHAIN:
-                data = await this.getBlockchain();
-                break;
-            case RPCMethods.MASTERNODESTART:
-                data = await this.callServer("masternode", ['start', ...params])
-                break;
-            case RPCMethods.MASTERNODESTARTALIAS:
-                data = await this.callServer("masternode", ['start-alias', ...params])
-                break;
-            case RPCMethods.MASTERNODESTARTMANY:
-                data = await this.callServer("masternode", ['start-many', ...params])
-                break;
-            case RPCMethods.MASTERNODESTATUS:
-                data = await this.masternodeStatus();
-                break;
-            case RPCMethods.MASTERNODESTATUSALL:
-                data = await this.callServer("masternode", ['status-all']);
-                break;
-            case RPCMethods.MASTERNODELISTCONF:
-                data = await this.callServer("masternode", ['list-conf']);
-                break;
-            case RPCMethods.MASTERNODEADDREMOTE:
-                data = await this.callServer("masternode", ['addremote', ...params]);
-                break;
-            case RPCMethods.MASTERNODEREMOVEREMOTE:
-                data = await this.callServer("masternode", ['removeremote', ...params]);
-                break;
-            case RPCMethods.MASTERNODEINIT:
-                data = await this.callServer("masternode", ['init', ...params]);
-                break;
-            case RPCMethods.MASTERNODEGENKEY:
-                data = await this.callServer("masternode", ['genkey']);
-                break;
-            case RPCMethods.MASTERNODEKILL:
-                data = await this.callServer("masternode", ['kill']);
-                break;
-            case RPCMethods.MASTERNODESTOP:
-                data = await this.callServer("masternode", ['stop', ...params])
-                break;
-            case RPCMethods.MASTERNODESTOPALIAS:
-                data = await this.callServer("masternode", ['stop-alias', ...params])
-                break;
-            case RPCMethods.SIGNMESSAGE:
-                data = await this.signMessage(params);
-                break;
-            case RPCMethods.VERIFYMESSAGE:
-                data = await this.callServer("verifymessage", params);
-                break;
-            case RPCMethods.PEERS:
-                data = await this.callServer("getpeerinfo");
-                break;
-            case RPCMethods.ADDRESSBOOKLIST:
-                data = await this.callServer("listaddressbook");
-                break;
-            case RPCMethods.ADDRESSBOOKADD:
-                data = await this.callServer("addressbookadd", params);
-                break;
-            case RPCMethods.ADDRESSBOOKREMOVE:
-                data = await this.callServer("addressbookremove", params);
-                break;
-            case RPCMethods.GETBLOCK:
-                data = await this.callServer("getblock", params);
-                break;
-            case RPCMethods.GETBLOCKBYNUMBER:
-                data = await this.callServer("getblockbynumber", params);
-                break;
-            case RPCMethods.GETTRANSACTION:
-                data = await this.callServer("gettransaction", params);
-                break;
-        }
+        let call = this.rpcMethods.find((rpcMethod) => {
+            return rpcMethod.name === method;
+        })
+        if (!call) throw "Unknown RPC call"
+        let data: any = await call.fn(params);
         return data.result ? data.result : {};
     }
 
@@ -229,19 +155,27 @@ export class RpcService {
         }
     }
 
+    public async unlockWalletForCommand(passphrase: string) {
+        if (passphrase) {
+            await this.unlockWallet(passphrase, 5);
+            this.isUsingEncryption = true;
+        }
+    }
+
+    private async lockWallet() {
+        await this.callServer("walletlock");
+        return { result: { success: true } };
+    }
+
     private async signMessage(params) {
         const [address, message, passphrase] = params;
         try {
-            // unlock wallet
-            if (passphrase) {
-                await this.unlockWallet(passphrase, 5);
-                this.isUsingEncryption = true;
-            }
+            await this.unlockWalletForCommand(passphrase);
             const signdata: any = await this.callServer("signmessage", [address, message]);
-            this.checkUnlock(passphrase);
+            this.lockWalletAfterCommand(passphrase);
             return signdata;
         } catch (ex) {
-            this.checkUnlock(passphrase);
+            this.lockWalletAfterCommand(passphrase);
             throw ex;
         }
     }
@@ -264,13 +198,7 @@ export class RpcService {
 
     private async getAccounts() {
         // get addresses
-        let addresses: any;
-        // as of v3.4 listreceivedbyaddress now has a includeWatchonly flag
-        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
-            addresses = await this.callServer("listreceivedbyaddress", [0, true, true]);
-        else
-            addresses = await this.callServer("listreceivedbyaddress", [0, true]);
-
+        let addresses: any = await this.callServer("listreceivedbyaddress", [0, true, true]);
         // get address groupings
         let groups: any = await this.callServer("listaddressgroupings");
         // get all unspent
@@ -304,11 +232,11 @@ export class RpcService {
         }
         // add remaining addresses from address list
         addresses.result.forEach(address => {
-            if (address.account !== "(change)" || (address.account === "(change)" && address.amount !== "0")) {
+            if (address.label !== "(change)" || (address.label === "(change)" && address.amount !== "0")) {
                 accounts.push([{
                     address: address.address,
                     amount: address.amount,
-                    account: address.account,
+                    account: address.label,
                     unspents: [],
                     watchOnly: address.involvesWatchonly === true
                 }]);
@@ -357,7 +285,7 @@ export class RpcService {
     }
 
     private async getWalletInfo() {
-        let data: any = await this.callServer("getinfo");
+        let data: any = await this.callServer("getwalletinfo");
 
         if (!this.isUsingEncryption)
             this.encryptionStatus = data.result.encryption_status
@@ -366,11 +294,7 @@ export class RpcService {
     }
 
     private listUnspent() {
-        // as of v3.4 listunspent now has a includeWatchonly flag
-        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
-            return this.callServer("listunspent", [1, 9999999, [], 1, true]);
-        else
-            return this.callServer("listunspent", [1, 9999999, [], true]);
+        return this.callServer("listunspent");
     }
 
     private async createTransaction(params) {
@@ -398,16 +322,11 @@ export class RpcService {
                 }
                 if (!foundMatch) return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONMISMATCH" } };
             }
-            let isUnsafeTransaction = false;
             // get total receiving
             let recevingBalance = Big(fee);
             Object.keys(outputs).forEach(address => {
                 recevingBalance = recevingBalance.add(outputs[address]);
-                if (this.isUnsafeAmount(outputs[address])) isUnsafeTransaction = true;
             })
-            // Core V3.3.0 and older cannot create transactions that would produce a number overflow
-            if (isUnsafeTransaction && !this.canSendUnsafeTransaction)
-                return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONOUTPUTTOOLARGE" } };
 
             // safety check
             if (sendingBalance.lt(recevingBalance)) {
@@ -416,79 +335,46 @@ export class RpcService {
             // calculate change
             let change = sendingBalance.minus(recevingBalance);
             // unlock wallet
-            if (passphrase) {
-                await this.unlockWallet(passphrase, 5);
-                this.isUsingEncryption = true;
-            }
+            await this.unlockWalletForCommand(passphrase);
             // create change address
             if (change.gt(0)) {
                 if (!changeAddress) {
-                    let changeRequest: any = await this.callServer("getnewaddress", ['(change)']);
+                    let changeRequest: any = await this.callServer("getrawchangeaddress");
                     changeAddress = changeRequest.result;
                 }
                 if (outputs[changeAddress])
                     outputs[changeAddress] = outputs[changeAddress].add(change);
                 else
                     outputs[changeAddress] = change;
-
-                if (this.isUnsafeAmount(outputs[changeAddress])) {
-                    isUnsafeTransaction = true;
-                    if (!this.canSendUnsafeTransaction)
-                        return { result: { success: false, error: "NOTIFICATIONS.TRANSACTIONCHANGETOOLARGE" } };
-                }
             }
 
             // create raw transaction
-            let raw: any;
-            if (!this.canSendUnsafeTransaction) {
-                // convert outputs to number
-                Object.keys(outputs).forEach(key => {
-                    outputs[key] = Number(outputs[key]);
-                })
-                raw = await this.callServer("createrawtransaction", [inputs, outputs]);
-                raw = raw.result;
-            } else {
-                // starting Core 3.3.1 we can send transactions as string and in satoshi
-                // to avoid overflow issues from javascipt
-                Object.keys(outputs).forEach(key => {
-                    outputs[key] = Helpers.toSatoshi(outputs[key]).toString();
-                })
-                raw = await this.callServer("createpreciserawtransaction", [inputs, outputs]);
-                raw = raw.result;
-            }
+            // convert outputs to string to prevent overflow
+            Object.keys(outputs).forEach(key => {
+                outputs[key] = outputs[key].toString();
+            })
+            let raw: any = await this.callServer("createrawtransaction", [inputs, outputs]);
+            raw = raw.result;
+            // sign raw transaction
+            let signed: any = await this.callServer("signrawtransactionwithwallet", [raw]);
+            this.lockWalletAfterCommand(passphrase);
+            signed = signed.result.hex;
             // confirm the fee
-            let actualFee = Math.ceil(raw.length / 1000) * Helpers.params.fee;
-            if (actualFee > Number(fee)) {
-                return { result: { success: false, newFee: actualFee } };
+            let actualFee = Big(signed.length).div(2).div(1000).mul(Helpers.params.fee);
+            if (actualFee.gt(fee)) {
+                return { result: { success: false, newFee: Number(actualFee) } };
             } else {
-                // sign raw transaction
-                let signed: any = await this.callServer("signrawtransaction", [raw]);
-                this.checkUnlock(passphrase);
-                signed = signed.result.hex;
                 // send raw transaction
                 await this.callServer("sendrawtransaction", [signed]);
                 return { result: { success: true } };
             }
         } catch (ex) {
-            this.checkUnlock(passphrase);
+            this.lockWalletAfterCommand(passphrase);
             throw ex;
         }
     }
 
-    private get canSendUnsafeTransaction() {
-        return compareVersions(this.electron.clientVersion, '3.3.1.0') >= 0
-    }
-
-    private isUnsafeAmount(amount: number | Big) {
-        // js must convert to a number to send it to the daemon
-        // this limits the maximum we can send as 90,071,992.54740992
-        // otherwise there are overflow errors
-        if (Big(amount).times(100000000).gt(9007199254740992))
-            return true;
-        return false;
-    }
-
-    private checkUnlock(passphrase) {
+    public lockWalletAfterCommand(passphrase) {
         try {
             this.isUsingEncryption = false;
             if (passphrase) {
@@ -508,12 +394,7 @@ export class RpcService {
         let from = params[1] || 0;
 
         // load all transactions
-        let data: any;
-        // as of v3.4 listtransactions now has a includeWatchonly flag
-        if (compareVersions(this.electron.clientVersion, '3.4.0.0') >= 0)
-            data = await this.callServer('listtransactions', ['*', count, from, true])
-        else
-            data = await this.callServer('listtransactions', ['*', count, from])
+        let data: any = await this.callServer('listtransactions', ['*', count, from, true])
 
         // get address
         data.result.forEach(tx => {
@@ -539,20 +420,6 @@ export class RpcService {
         })
 
         return { result: outputs };
-    }
-
-    private async masternodeStatus() {
-        // check initialised and get outputs
-        let outputs = {};
-        let status = [];
-        let init: any = await this.callServer("masternode", ['isInit']);
-        if (init.result) {
-            // get outputs
-            outputs = (await this.callServer("masternode", ['outputs']) as any).result;
-            // get status
-            status = (await this.callServer("masternode", ['status']) as any).result;
-        }
-        return { result: { initRequired: !init.result, outputs, status } };
     }
 
     public callServer(method, params = []) {
@@ -584,6 +451,17 @@ export class RpcService {
     }
 
     async notifyClientCloseUnexpected() {
+        // client responsed with unexpected error
+        try {
+            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTUNKNOWNERRORTITLE', 'COMPONENTS.PROMPT.CLIENTUNKNOWNERRORINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
+            this.enterRecoveryMode();
+        } catch (ex) {
+            // chose to stop wallet
+            this.electron.remote.app.quit()
+        }
+    }
+
+    async notifyClientUnknownError() {
         try {
             await this.prompt.alert('COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDTITLE', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
             this.enterRecoveryMode();
@@ -618,56 +496,36 @@ export class RpcService {
         this.router.navigate(['/metrix/tools/3']);
     }
 
-    async notifyClientInvalidConfig() {
-        // if we tried starting the client but the config has a bad masternode setup
-        // that will just cause the client to exit
-        try {
-            await this.prompt.alert('COMPONENTS.PROMPT.CLIENTINVALIDCONFIGTITLE', 'COMPONENTS.PROMPT.CLIENTINVALIDCONFIGINFO', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONSTART', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
-            // start internal client
-            this.restartClient();
-        } catch (ex) {
-            // chose to stop wallet
-            this.electron.remote.app.quit()
-        }
-    }
 }
 
 export enum RPCMethods {
-    ENCRYPT,
+    ADDRESSBOOKADD,
+    ADDRESSBOOKLIST,
+    ADDRESSBOOKREMOVE,
+    BACKUPWALLET,
+    CALLCONTRACT,
     CHANGEPASSPHRASE,
-    GETWALLET,
+    CREATETRANSACTION,
+    ENCRYPT,
     GETACCOUNTS,
-    GETTRANSACTIONS,
-    GETTOTALS,
+    GETBLOCK,
+    GETBLOCKCHAIN,
+    GETBLOCKHASH,
+    GETDGPINFO,
+    TOHEXADDRESS,
+    FROMHEXADDRESS,
+    GETNETWORK,
     GETSTAKING,
-    UPDATELABEL,
-    NEWADDRESS,
-    UNLOCK,
+    GETTRANSACTION,
+    GETTRANSACTIONS,
+    GETWALLET,
     LOCK,
     LOCKUNSPENT,
-    CREATETRANSACTION,
-    GETBLOCKCHAIN,
-    MASTERNODESTART,
-    MASTERNODESTARTMANY,
-    MASTERNODESTARTALIAS,
-    MASTERNODESTATUS,
-    MASTERNODESTATUSALL,
-    MASTERNODELISTCONF,
-    MASTERNODEADDREMOTE,
-    MASTERNODEREMOVEREMOTE,
-    MASTERNODEINIT,
-    MASTERNODEGENKEY,
-    MASTERNODEKILL,
-    MASTERNODESTOP,
-    MASTERNODESTOPALIAS,
-    BACKUPWALLET,
-    SIGNMESSAGE,
-    VERIFYMESSAGE,
+    NEWADDRESS,
     PEERS,
-    ADDRESSBOOKLIST,
-    ADDRESSBOOKADD,
-    ADDRESSBOOKREMOVE,
-    GETBLOCK,
-    GETBLOCKBYNUMBER,
-    GETTRANSACTION
+    SENDTOCONTRACT,
+    SIGNMESSAGE,
+    UNLOCK,
+    UPDATELABEL,
+    VERIFYMESSAGE
 }

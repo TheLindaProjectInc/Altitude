@@ -178,8 +178,8 @@ export class SendComponent implements OnInit, OnDestroy {
     for (let i = 0; i < this.wallet.addressBook.length; i++) {
       let addr = this.wallet.addressBook[i];
       if (address && addr.address.toLowerCase().trim() === address.toLowerCase().trim())
-        return addr.account;
-      else if (label && addr.account.toLowerCase().trim() === label.toLowerCase().trim())
+        return addr.label;
+      else if (label && addr.label.toLowerCase().trim() === label.toLowerCase().trim())
         return addr.address;
     }
     // check my accounts

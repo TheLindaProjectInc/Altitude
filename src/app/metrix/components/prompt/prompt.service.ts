@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ElectronService, ClientStatus } from 'app/providers/electron.service';
+import { ElectronService } from 'app/providers/electron.service';
 import { NotificationService } from 'app/providers/notification.service';
+import { ClientStatus } from 'app/enum';
 
 @Injectable()
 export class PromptService {

@@ -3,7 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { WalletService } from '../../providers/wallet.service';
 import Helpers from 'app/helpers';
 import { RpcService } from '../../providers/rpc.service';
-import { ElectronService, ClientStatus } from 'app/providers/electron.service';
+import { ElectronService } from 'app/providers/electron.service';
+import { ClientStatus } from 'app/enum';
 
 @Component({
   selector: 'app-tools',
@@ -71,9 +72,11 @@ export class ToolsComponent implements OnInit {
       try {
         this.rpcHistory.push({ ts: new Date(), send: true, data: this.rpcCommand, json: false });
         this.myCommands.splice(0, 0, this.rpcCommand);
+        this.myCommandIndex = -1;
         let params = this.rpcCommand.split(" ");
         const method = params.shift();
         params = this.parseRPCParams(params);
+        this.rpcCommand = "";        
         const res: any = await this.rpc.callServer(method, params);
         let isJson = false;
         if (res.result) isJson = typeof (res.result) === 'object';

@@ -5,7 +5,7 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
 
 @Component({
   selector: 'text-input',
-  template: `<input type="text" 
+  template: `<input 
   placeholder="{{placeholder}}" 
   [(ngModel)]="inputModel" 
   (ngModelChange)="inputModelChange.emit(inputModel)"
@@ -15,6 +15,9 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
   (keydown.ArrowDown)="keydownArrowDown.emit($event)"
   (keydown.ArrowUp)="keydownArrowUp.emit($event)"
   [disabled]="disabled"
+  maxlength="{{maxlength}}"
+  min="{{min}}"
+  max="{{max}}"
   type="{{type || 'text'}}"
   />`,
 })
@@ -24,7 +27,10 @@ export class TextinputComponent {
   @Input() placeholder: string;
   @Input() inputModel: string;
   @Input() disabled: boolean;
-  @Input() type: boolean;
+  @Input() type: string;
+  @Input() maxlength: number;
+  @Input() min: number;
+  @Input() max: number;
 
   @Output() inputModelChange = new EventEmitter<string>();
   @Output() change = new EventEmitter<Function>();

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RpcService } from '../../providers/rpc.service';
-import { ClientStatus } from 'app/providers/electron.service';
+import { ClientStatus } from 'app/enum';
 
 @Component({
   selector: 'client-status',

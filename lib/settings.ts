@@ -86,8 +86,7 @@ function set_onlynet(net: string) {
 
 function loadSettings() {
     storage.get('settings', (error, data) => {
-        if (!error && data) settings = data;
-        else settings = new Settings();
+        settings = new Settings(data)
     });
 }
 
@@ -148,8 +147,8 @@ function IPC_sendSettings() {
 }
 
 export class Settings {
-    skipCoreUpdate: string = "";
-    skipWalletUpdate: string = "";
+    _skipCoreUpdate: string = "";
+    _skipWalletUpdate: string = "";
     hideCoinControlFeatures: boolean = true;
     locale: string = "en";
     currency: string = "MRX";
@@ -161,6 +160,29 @@ export class Settings {
     proxy: string = '';
     tor: string = '';
     onlynet: string = '';
+
+    constructor(data) {
+        if (data) {
+            for (const key in data) {
+                if (data[key]) this[key] = data[key]
+            }
+        }
+    }
+
+    get skipCoreUpdate(): string {
+        return this._skipCoreUpdate ? this._skipCoreUpdate.toUpperCase() : ""
+    }
+    set skipCoreUpdate(value: string) {
+        this._skipCoreUpdate = value.toUpperCase();
+    }
+
+    get skipWalletUpdate(): string {
+        return this._skipWalletUpdate ? this._skipWalletUpdate.toUpperCase() : ""
+    }
+    set skipWalletUpdate(value: string) {
+        this._skipWalletUpdate = value.toUpperCase();
+    }
+
 }
 
 // load settings from storage straight away

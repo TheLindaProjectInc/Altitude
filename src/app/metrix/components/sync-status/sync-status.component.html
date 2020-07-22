@@ -2,10 +2,10 @@
     <span>
         <fa-icon icon="wifi"></fa-icon>
         <span *ngIf="!wallet.running">{{ 'COMPONENTS.SIDEBAR.SYNC.CONNECTING' | translate }}...</span>
-        <span *ngIf="wallet.running && !wallet.walletStatus.connections">
+        <span *ngIf="wallet.running && !wallet.networkInfo.connections">
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOPEERS' | translate }}...
         </span>
-        <span *ngIf="wallet.running && wallet.walletStatus.connections">{{wallet.walletStatus.connections}}
+        <span *ngIf="wallet.running && wallet.networkInfo.connections">{{wallet.networkInfo.connections}}
             {{'COMPONENTS.SIDEBAR.SYNC.PEERS' | translate }}
         </span>
     </span>
@@ -43,6 +43,4 @@
     <fa-icon icon='{{lockStatus.icon}}' class='{{lockStatus.class}}' title='{{lockStatus.title | translate}}'></fa-icon>
     <fa-icon *ngIf="wallet.stakingStatus.enabled" icon='{{stakingStatus.icon}}' class='{{stakingStatus.class}}'
         title='{{stakingStatus.title | translate}}'></fa-icon>
-    <fa-icon *ngIf="wallet.masternode.setup" icon='{{masternodeStatus.icon}}' class='{{masternodeStatus.class}}'
-        title='{{masternodeStatus.title | translate}}'></fa-icon>
 </div>
