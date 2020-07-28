@@ -340,6 +340,7 @@ export default class Client {
         // set network
         if (this.chain === ChainType.TESTNET) startupCommands.push('-testnet');
         if (this.chain === ChainType.REGTEST) startupCommands.push('-regtest');
+        startupCommands.push('-printtoconsole=0')
         log.info("Client", "Running with commands", startupCommands);
 
         // start client
