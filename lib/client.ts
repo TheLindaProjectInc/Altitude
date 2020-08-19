@@ -695,11 +695,11 @@ class ClientConfigFile {
 
     public setRPCPort(chain: ChainType) {
         if (chain === ChainType.MAINNET) {
-            this.rpcport = '33821';
-        } else if (chain === ChainType.TESTNET) {
             this.rpcport = '33831';
-        } else if (chain === ChainType.REGTEST) {
+        } else if (chain === ChainType.TESTNET) {
             this.rpcport = '33841';
+        } else if (chain === ChainType.REGTEST) {
+            this.rpcport = '33851';
         }
     }
 
