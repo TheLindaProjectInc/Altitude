@@ -22,30 +22,33 @@
       <h1>{{ 'PAGES.STAKING.STAKINGTITLE' | translate }}</h1>
       <p>{{ 'PAGES.STAKING.EXPECTEDRETURN' | translate }}: {{wallet.stakingStatus.expectedTime}}
         {{wallet.stakingStatus.expectedType}}</p>
-      <p>{{ 'PAGES.STAKING.YOURWEIGHT' | translate }}: {{helpers.prettyCoins(wallet.getWeight())}}</p>
-      <p>{{ 'PAGES.STAKING.NETWORKWEIGHT' | translate }}: {{helpers.prettyCoins(wallet.getNetWeight())}}</p>
+      <p>{{ 'PAGES.STAKING.YOURWEIGHT' | translate }}: {{ wallet.getWeight() | prettyCoins }}</p>
+      <p>{{ 'PAGES.STAKING.NETWORKWEIGHT' | translate }}: {{ wallet.getNetWeight() | prettyCoins }}</p>
       <button class="btn btn-danger" (click)="wallet.lockWallet()">{{ 'PAGES.STAKING.LOCK' | translate }}</button>
     </div>
 
-      <h1>{{ 'PAGES.STAKING.INPUTSTITLE' | translate }}</h1>
+    <h1>{{ 'PAGES.STAKING.INPUTSTITLE' | translate }}</h1>
 
-      <virtual-scroller #scroll class="transactions" [items]="stakingInputs" [parentScroll]="scrollingBlock">
-        <div class="transaction confirmed" *ngFor="let input of scroll.viewPortItems" style="width: 100%;height: 92px;">
-          <div class="icon">
-            <fa-icon class="success" *ngIf="isMature(input)" icon="check-circle"></fa-icon>
-            <fa-icon class="danger" *ngIf="!isMature(input)" icon="times-circle"></fa-icon>
-          </div>
-          <div class="detail">
-            <h5>{{input.account || input.address}}</h5>
-            <h6>{{ 'PAGES.STAKING.MATURE' | translate }}: {{input.matureTime | date:'MMM d, y, h:mm a'}}</h6>
-          </div>
-          <div class="value">
-            <div class="amount">
-              {{helpers.prettyCoins(input.amount)}} Metrix
-            </div>
+    <virtual-scroller #scroll class="transactions" [items]="stakingInputs" [parentScroll]="scrollingBlock">
+      <div class="transaction confirmed" *ngFor="let input of scroll.viewPortItems" style="width: 100%;height: 92px;">
+        <div class="icon">
+          <fa-icon class="success" *ngIf="input.isMature" icon="check-circle"></fa-icon>
+          <fa-icon class="danger" *ngIf="!input.isMature" icon="times-circle"></fa-icon>
+        </div>
+        <div class="detail">
+          <h5>{{input.account || input.address}}</h5>
+          <h6 *ngIf="!input.isMature">
+            {{ 'PAGES.STAKING.MATURE' | translate }}: {{input.mature}}
+            {{ 'PAGES.EXPLORER.TABLE_CONFIRMATIONS' | translate }}
+          </h6>
+        </div>
+        <div class="value">
+          <div class="amount">
+            {{input.amount | prettyCoins }} Metrix
           </div>
         </div>
-      </virtual-scroller>
+      </div>
+    </virtual-scroller>
 
   </div>
 

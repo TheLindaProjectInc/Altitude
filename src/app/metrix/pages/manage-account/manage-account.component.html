@@ -28,7 +28,7 @@
             placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
         </div>
         <h2>
-          {{currencyService.convert(account.balance)}}
+          {{currencyService.convert(account.balance) | prettyCoins: 4 }}
           <span>{{currencyService.currency}}</span>
         </h2>
         <h4>

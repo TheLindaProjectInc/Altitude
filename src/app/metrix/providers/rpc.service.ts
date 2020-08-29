@@ -1,7 +1,7 @@
 import { Injectable, isDevMode } from '@angular/core';
 import Big from 'big.js';
 import { ElectronService } from 'app/providers/electron.service';
-import { PromptService } from '../components/prompt/prompt.service';
+import { PromptService } from '../../components/prompt/prompt.service';
 import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
 import { BlockchainStatus } from '../classes/blockchainStatus';
@@ -99,7 +99,7 @@ export class RpcService {
             if (sub) {
                 let result = data.result;
                 let time = new Date().getTime() - sub.ts + 'ms';
-                // if (isDevMode()) console.log('CallServer Response', time, data.method, result);
+                if (isDevMode()) console.log('CallServer Response', time, data.method, result);
                 if (result.success) sub.resolve(result.body);
                 else sub.reject(result);
                 delete this.RPCSubscriptions[data.callId]

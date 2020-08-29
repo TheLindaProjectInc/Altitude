@@ -229,7 +229,6 @@ export class PromptComponent {
     prompt.changePassphrase = this.changePassphraseModal.show;
     prompt.encrypt = this.encryptModal.show;
     prompt.alert = this.alertModal.show;
-    prompt.addRemoteMasternode = this.addRemoteMNModal.show;
   }
 
 

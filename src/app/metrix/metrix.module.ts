@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
 
 // components
-import { PromptComponent } from './components/prompt/prompt.component';
-import { PromptService } from './components/prompt/prompt.service';
 import { ClientStatusComponent } from './components/client-status/client-status.component';
 import { AddressBookComponent } from './components/address-book/address-book.component';
 import { AddressBookService } from './components/address-book/address-book.service';
@@ -54,7 +52,6 @@ export const providers = [
     RpcService,
     WalletService,
     MainChainService,
-    PromptService,
     AddressBookService,
 ]
 
@@ -71,7 +68,6 @@ export const declarations = [
     LocaleComponent,
     ExplorerComponent,
     OptionsComponent,
-    PromptComponent,
     ClientStatusComponent,
     AddressBookComponent,
     SyncStatusComponent,

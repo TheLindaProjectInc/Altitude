@@ -118,9 +118,9 @@
           <h5>{{ 'PAGES.TOOLS.PEERS.SENDREC' | translate }}:
             {{prettyDataTransfer(peer.bytessent)}}/{{prettyDataTransfer(peer.bytesrecv)}}</h5>
           <h5>{{ 'PAGES.TOOLS.PEERS.LASTSENDREC' | translate }}:
-            {{helpers.formatTimeEplased(peer.lastsend,dateNow)}}/{{helpers.formatTimeEplased(peer.lastrecv,dateNow)}}
+            {{helpers.formatTimeElapsed(peer.lastsend,dateNow)}}/{{helpers.formatTimeElapsed(peer.lastrecv,dateNow)}}
           </h5>
-          <h5>{{ 'PAGES.TOOLS.PEERS.CONTIME' | translate }}: {{helpers.formatTimeEplased(peer.conntime,dateNow)}}</h5>
+          <h5>{{ 'PAGES.TOOLS.PEERS.CONTIME' | translate }}: {{helpers.formatTimeElapsed(peer.conntime,dateNow)}}</h5>
         </div>
       </div>
     </virtual-scroller>

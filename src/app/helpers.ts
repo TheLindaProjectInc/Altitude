@@ -4,12 +4,11 @@ export default class Helpers {
 
   public static readonly params: CoinParams = {
     fee: 10,
-    masternodeConfirms: 10,
-    matureTime: 24,
+    matureConfirms: 960,
     confirmations: 10,
   }
 
-  public static toSatoshi(amount: number | Big) {
+  public static toSatoshi(amount: number | Big): Big | number {
     try {
       return (amount as Big).times(100000000);
     } catch (ex) {
@@ -17,7 +16,7 @@ export default class Helpers {
     }
   }
 
-  public static fromSatoshi(amount: number | Big) {
+  public static fromSatoshi(amount: number | Big): Big | number {
     try {
       return (amount as Big).div(100000000);
     } catch (ex) {
@@ -38,7 +37,7 @@ export default class Helpers {
     return coins;
   }
 
-  public static prettyCoins(coins: Big, decimals?: number) {
+  public static prettyCoins(coins: Big, decimals?: number): string {
     if (coins) {
       coins = this.roundCoins(coins, decimals);
       let parts = coins.toString().split(".");
@@ -46,7 +45,7 @@ export default class Helpers {
       if (parts.length > 1) return parts.join(".");
       return parts[0];
     }
-    return 0;
+    return '0';
   }
 
   public static getFee(numInputs: number, numOutputs: number): number {
@@ -66,7 +65,7 @@ export default class Helpers {
     return baseSize + inputBytes + outputBytes + changeSize;
   }
 
-  public static formatTimeEplased(amount, now = new Date()) {
+  public static formatTimeElapsed(amount, now = new Date()): string {
     let s = Math.round(now.getTime() / 1000) - amount;
     // check seconds
     if (s < 60) return s + 's';
@@ -80,7 +79,7 @@ export default class Helpers {
     return h + 'h ' + m + 'm ' + s + 's';
   }
 
-  public static formatTime(s) {
+  public static formatTime(s): string {
     // check seconds
     if (s < 60) return s + 's';
     // check minutes
@@ -96,7 +95,7 @@ export default class Helpers {
     return d + 'd ' + h + 'h ' + m + 'm ' + s + 's';
   }
 
-  public static friendlyTimeEplased(amount, now = new Date()) {
+  public static friendlyTimeElapsed(amount, now = new Date()): Array<any> {
     const seconds = Math.round(now.getTime() / 1000) - Math.round(amount / 1000);
     const minutes = seconds / 60;
     const hours = minutes / 60;
@@ -128,7 +127,7 @@ export default class Helpers {
       return [Math.round(years), 'TIME.YEARS'];
   }
 
-  public static guid() {
+  public static guid(): string {
     let s4 = () => {
       return Math.floor((1 + Math.random()) * 0x10000)
         .toString(16)
@@ -152,7 +151,6 @@ export default class Helpers {
 
 interface CoinParams {
   fee: number,
-  masternodeConfirms: number,
-  matureTime: number,
+  matureConfirms: number,
   confirmations: number,
 }

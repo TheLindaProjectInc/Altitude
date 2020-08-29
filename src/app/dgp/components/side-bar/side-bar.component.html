@@ -5,7 +5,7 @@
         <!-- Balance -->
         <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
         <span>
-            {{currencyService.convert(wallet.balance)}}
+            {{currencyService.convert(wallet.balance) | prettyCoins: 4 }}
             <span class="balance-currency">{{currencyService.currency}}</span>
         </span>
         <!-- Menu -->

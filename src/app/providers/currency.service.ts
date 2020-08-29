@@ -73,7 +73,7 @@ export class CurrencyService {
             let value = parseSatoshi ? Helpers.fromSatoshi(amount) : amount;
             amount = price.mul(value);
         }
-        return Helpers.prettyCoins(amount, 4);
+        return amount
     }
 
     public displayLocal(amount, parseSatoshi = false) {

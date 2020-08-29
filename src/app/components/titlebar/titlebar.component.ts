@@ -5,7 +5,7 @@ import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { TranslationService } from 'app/providers/translation.service';
 import { EncryptionStatus } from 'app/metrix/classes';
-import { PromptService } from 'app/metrix/components/prompt/prompt.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
 import { RpcService } from 'app/metrix/providers/rpc.service';
 import { WalletService, DATASYNCTYPES } from 'app/metrix/providers/wallet.service';
 
@@ -59,6 +59,7 @@ export class TitlebarComponent {
 
   getMenus() {
     let encryptionItems = [];
+    console.log(this.wallet.walletInfo)
     if (this.wallet.walletInfo.encryption_status === EncryptionStatus.UNENCRYPTED)
       encryptionItems.push('MENU.ENCRYPT.ENCRYPT')
     if (this.wallet.walletInfo.encryption_status !== EncryptionStatus.UNENCRYPTED)

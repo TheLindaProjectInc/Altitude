@@ -8,7 +8,7 @@
             <div>
                 <p *ngIf="isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.CONFIRMENROLL' | translate }}</p>
                 <p *ngIf="!isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORDETAIL' | translate }}</p>
-                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}: {{governanceCollateral}} MRX</p>
+                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}: {{governanceCollateral | prettyCoins}} MRX</p>
             </div>
             <button class="btn btn-default" (click)="isEnrolling=true" *ngIf="!isEnrolling">
                 {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}

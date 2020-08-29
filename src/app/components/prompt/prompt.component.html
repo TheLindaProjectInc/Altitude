@@ -123,30 +123,3 @@
     </button>
   </div>
 </ngx-smart-modal>
-
-<!-- Add Remote Masternode modal -->
-<ngx-smart-modal identifier="addRemoteMNModal" customClass="nsm-centered" [closable]="false">
-  <form (submit)="addRemoteMNModal.buttonDone()">
-    <h1>{{ 'COMPONENTS.PROMPT.ADDREMOTEMNTITLE' | translate }}</h1>
-
-    <input type="text" name="alias" [(ngModel)]="addRemoteMNModal.alias"
-      [placeholder]="'COMPONENTS.PROMPT.ADDREMOTEMNALIAS' | translate">
-    <input type="text" name="ip" [(ngModel)]="addRemoteMNModal.ip"
-      [placeholder]="'COMPONENTS.PROMPT.ADDREMOTEMNIP' | translate">
-    <input type="text" name="key" [(ngModel)]="addRemoteMNModal.key"
-      [placeholder]="'COMPONENTS.PROMPT.ADDREMOTEMNKEY' | translate">
-    <input type="text" name="txHash" [(ngModel)]="addRemoteMNModal.txHash"
-      [placeholder]="'COMPONENTS.PROMPT.ADDREMOTEMNTXHASH' | translate">
-    <input type="text" name="txIndex" [(ngModel)]="addRemoteMNModal.txIndex"
-      [placeholder]="'COMPONENTS.PROMPT.ADDREMOTEMNTXINDEX' | translate">
-
-    <div class="modal-buttons">
-      <button type="button" class="btn btn-default" (click)="addRemoteMNModal.buttonCancel()">
-        {{ 'MISC.CANCELBUTTON' | translate }}
-      </button>
-      <button type="submit" class="btn btn-default">
-        {{ 'MISC.DONEBUTTON' | translate}}
-      </button>
-    </div>
-  </form>
-</ngx-smart-modal>

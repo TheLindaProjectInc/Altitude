@@ -63,7 +63,6 @@ export class WalletService {
     ];
 
     @Output() accountsUpdated: ReplaySubject<boolean> = new ReplaySubject();
-    @Output() masternodeListUpdated: EventEmitter<any> = new EventEmitter();
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
     @Output() transactionsUpdated: ReplaySubject<any> = new ReplaySubject();
     @Output() newBlockReceived: ReplaySubject<any> = new ReplaySubject();
@@ -247,7 +246,7 @@ export class WalletService {
         accountList.forEach(acc => {
             let account = new Account();
             acc.forEach(addr => {
-                account.addresses.push(new Address(addr, Helpers.params.matureTime));
+                account.addresses.push(new Address(addr));
             })
             newAccountList.push(account);
             // check if have match

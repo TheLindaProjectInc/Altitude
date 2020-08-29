@@ -4,7 +4,7 @@ import { BudgetProposal } from 'app/dgp/classes/budgetProposal';
 import { ElectronService } from 'app/providers/electron.service';
 import { DGPService } from 'app/dgp/providers/dgp.service';
 import { WalletService } from 'app/metrix/providers/wallet.service';
-import { PromptService } from 'app/metrix/components/prompt/prompt.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { ErrorService } from 'app/providers/error.service';
 import { BudgetVote } from 'app/enum';
@@ -18,8 +18,6 @@ export class BudgetCardComponent {
 
   @Input() proposal: BudgetProposal;
   @Output() start = new EventEmitter();
-
-  public helpers = Helpers;
 
   constructor(
     private electron: ElectronService,
@@ -37,7 +35,7 @@ export class BudgetCardComponent {
   }
 
   get requested() {
-    return this.helpers.prettyCoins(this.helpers.fromSatoshi(this.proposal.requested));
+    return Helpers.prettyCoins(Helpers.fromSatoshi(this.proposal.requested));
   }
 
   get remaining() {

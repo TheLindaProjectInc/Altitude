@@ -15,7 +15,7 @@ export class Address implements IAddress {
     // used to denote if an address should be removed from this account
     removeFromAccount: boolean = false;
 
-    constructor(addressData, matureTime: number) {
+    constructor(addressData) {
         this.address = addressData.address;
         this.account = addressData.account;
         this.newAccount = this.account;
@@ -23,7 +23,7 @@ export class Address implements IAddress {
         this.watchOnly = addressData.watchOnly;
         if (addressData.unspents) {
             addressData.unspents.forEach(unspent => {
-                this.inputs.push(new Input(unspent, this, matureTime));
+                this.inputs.push(new Input(unspent, this));
             })
         }
     }

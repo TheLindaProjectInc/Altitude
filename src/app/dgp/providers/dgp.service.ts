@@ -127,6 +127,22 @@ export class DGPService {
         }
     }
 
+    public async unenrollGovernor(passphrase: string) {
+        try {
+            await this.rpc.unlockWalletForCommand(passphrase);
+
+            let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
+
+            const args = [GovernanceContract.ADDRESS, GovernanceContract.UNENROLL, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]
+            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
+            this.rpc.lockWalletAfterCommand(passphrase);
+            if (!data.error) return data;
+        } catch (ex) {
+            this.rpc.lockWalletAfterCommand(passphrase);
+            throw ex;
+        }
+    }
+
     public async checkGovernanceEnrollmentStatus(txid: string): Promise<number> {
         try {
             const data = await this.rpc.requestData(RPCMethods.GETTRANSACTION, [txid]);
@@ -232,6 +248,21 @@ export class DGPService {
             let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
 
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, [BudgetContract.ADDRESS, callData, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]);
+            this.rpc.lockWalletAfterCommand(passphrase);
+            if (!data.error) return data;
+        } catch (ex) {
+            this.rpc.lockWalletAfterCommand(passphrase);
+            throw ex;
+        }
+    }
+
+    public async ping(passphrase: string) {
+        try {
+            await this.rpc.unlockWalletForCommand(passphrase);
+
+            let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
+
+            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, [GovernanceContract.ADDRESS, GovernanceContract.PING, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
         } catch (ex) {

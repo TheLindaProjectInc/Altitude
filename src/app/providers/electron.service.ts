@@ -81,9 +81,6 @@ export class ElectronService {
         case 'IP':
           this.publicIP = data;
           break;
-        case 'MASTERNODE':
-          if (data === false) this.notification.notify('error', 'NOTIFICATIONS.FAILEDTOWRITECONFIG');
-          break;
       }
     });
     // ask for client status

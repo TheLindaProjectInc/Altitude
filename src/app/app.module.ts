@@ -32,6 +32,8 @@ import { CurrencyService } from './providers/currency.service';
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
 import * as dgp from './dgp/dgp.module';
+// pipes
+import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -50,6 +52,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    PrettyCoinsPipe,
     ...componentDeclarations,
     ...metrix.declarations,
     ...dgp.declarations

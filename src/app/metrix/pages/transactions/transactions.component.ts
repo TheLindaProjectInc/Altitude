@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { WalletService } from '../../providers/wallet.service';
-import Helpers from 'app/helpers';
 import { ChangeEvent } from 'ngx-virtual-scroller';
 import { ErrorService } from 'app/providers/error.service';
 import { ElectronService } from 'app/providers/electron.service';
@@ -15,7 +14,6 @@ import { NotificationService } from 'app/providers/notification.service';
 export class TransactionsComponent {
   sub;
 
-  public helpers = Helpers;
   transactions = [];
   skip = 10;
   loading = false;

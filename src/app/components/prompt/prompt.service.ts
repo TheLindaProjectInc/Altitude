@@ -12,7 +12,6 @@ export class PromptService {
     public changePassphrase;
     public encrypt;
     public alert;
-    public addRemoteMasternode;
 
     constructor(
         private electron: ElectronService,

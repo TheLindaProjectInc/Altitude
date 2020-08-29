@@ -4,8 +4,7 @@ import { NotificationService } from 'app/providers/notification.service';
 import Helpers from 'app/helpers';
 import { DGPService } from 'app/dgp/providers/dgp.service';
 import { WalletService } from 'app/metrix/providers/wallet.service';
-import { PromptService } from 'app/metrix/components/prompt/prompt.service';
-import { RPCMethods } from 'app/metrix/providers/rpc.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
 
 @Component({
   templateUrl: './governance.component.html',
@@ -68,7 +67,7 @@ export class GovernanceComponent {
 
   public get governanceCollateral(): number {
     if (!this.dgpService.dgpInfo) return 0;
-    return Helpers.prettyCoins(Helpers.fromSatoshi(this.dgpService.dgpInfo.governancecollateral));
+    return Helpers.fromSatoshi(this.dgpService.dgpInfo.governancecollateral);
   }
 
   public get canEnroll(): boolean {
@@ -98,7 +97,51 @@ export class GovernanceComponent {
     }
   }
 
+  public async ping() {
+    let passphrase;
+    try {
+      if (this.wallet.requireUnlock()) [passphrase,] = await this.prompt.getPassphrase();
+    } catch (ex) {
+      // passphrase prompt closed
+      return;
+    }
 
+    this.notification.loading('DGP.NOTIFICATIONS.PINGINGGOVERNOR');
 
+    try {
+      await this.dgpService.ping(passphrase);
+      this.notification.notify('success', 'DGP.NOTIFICATIONS.PINGEDGOVERNOR');
+    } catch (ex) {
+      if (isDevMode()) console.log(ex);
+      this.errorService.diagnose(ex);
+    }
+  }
+
+  public async unenroll() {
+    try {
+      await this.prompt.alert('COMPONENTS.PROMPT.UNENROLLGOVERNORTITLE', 'COMPONENTS.PROMPT.UNENROLLGOVERNORCONTENT', 'DGP.PAGES.GOVERNANCE.UNENROLL', 'MISC.CANCELBUTTON');
+    } catch (ex) {
+      return;
+    }
+
+    let passphrase;
+    try {
+      if (this.wallet.requireUnlock()) [passphrase,] = await this.prompt.getPassphrase();
+    } catch (ex) {
+      // passphrase prompt closed
+      return;
+    }
+
+    this.notification.loading('DGP.NOTIFICATIONS.UNENROLLINGGOVERNOR');
+
+    try {
+      await this.dgpService.unenrollGovernor(passphrase);
+      this.notification.notify('success', 'DGP.NOTIFICATIONS.UNENROLLEDGOVERNOR');
+    } catch (ex) {
+      if (isDevMode()) console.log(ex);
+      this.errorService.diagnose(ex);
+    }
+
+  }
 
 }

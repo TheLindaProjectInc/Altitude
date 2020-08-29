@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
-import Helpers from 'app/helpers';
-import { PromptService } from '../../components/prompt/prompt.service';
+import { PromptService } from '../../../components/prompt/prompt.service';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { Input } from '../../classes';
@@ -11,7 +10,6 @@ import { Input } from '../../classes';
   templateUrl: './staking.component.html',
 })
 export class StakingComponent {
-  public helpers = Helpers;
   stakingInputs = [];
 
   sub;
@@ -63,8 +61,8 @@ export class StakingComponent {
       }
     })
     this.stakingInputs = inputList.sort((a: Input, b: Input) => {
-      var m1 = this.isMature(a);
-      var m2 = this.isMature(b);
+      var m1 = a.isMature;
+      var m2 = b.isMature;
       var a1 = Number(a.amount);
       var a2 = Number(b.amount);
       if (m1 < m2) return 1;
@@ -73,12 +71,6 @@ export class StakingComponent {
       if (a1 > a2) return 1;
       return 0;
     });
-  }
-
-
-  isMature(input: Input): boolean {
-    if (input.matureTime < new Date()) return true;
-    else return false;
   }
 
 }

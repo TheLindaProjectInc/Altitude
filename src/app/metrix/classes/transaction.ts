@@ -38,7 +38,6 @@ export class Transaction {
             // santise subcategory
             if (this.subCategory === "mined") this.subCategory = "Mined"
             if (this.subCategory === "minted") this.subCategory = "Minted"
-            if (this.subCategory === "masternode reward") this.subCategory = "Masternode Reward"
             // santise category
             if (this.category === "send") this.category = "Payment"
             if (this.category === "generate") this.category = "Generated"

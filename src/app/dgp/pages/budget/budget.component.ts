@@ -4,7 +4,7 @@ import { NotificationService } from 'app/providers/notification.service';
 import Helpers from 'app/helpers';
 import { DGPService } from 'app/dgp/providers/dgp.service';
 import { WalletService } from 'app/metrix/providers/wallet.service';
-import { PromptService } from 'app/metrix/components/prompt/prompt.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
 import { RPCMethods } from 'app/metrix/providers/rpc.service';
 
 @Component({

@@ -3,7 +3,7 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 import Big from 'big.js';
 import { WalletService, DATASYNCTYPES } from '../../providers/wallet.service';
 import Helpers from 'app/helpers';
-import { PromptService } from '../../components/prompt/prompt.service';
+import { PromptService } from '../../../components/prompt/prompt.service';
 import { AddressBookService } from '../../components/address-book/address-book.service';
 import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
 import { ElectronService } from 'app/providers/electron.service';

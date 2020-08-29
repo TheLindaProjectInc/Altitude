@@ -16,7 +16,7 @@
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOBLOCKS' | translate }}...
         </span>
         <span *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight">
-            {{helpers.prettyCoins(wallet.blockchainStatus.latestBlockHeight)}} {{ 'COMPONENTS.SIDEBAR.SYNC.BLOCKS' |
+            {{ wallet.blockchainStatus.latestBlockHeight | prettyCoins }} {{ 'COMPONENTS.SIDEBAR.SYNC.BLOCKS' |
             translate }}
         </span>
     </span>
@@ -29,8 +29,8 @@
         </span>
         <!--     in sync -->
         <span *ngIf="wallet.running && wallet.blockchainStatus.syncProgresss >= 99.99">
-            {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
-            {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
+            {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
+            {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
             {{ 'COMPONENTS.SIDEBAR.SYNC.TIMESINCEBLOCK' | translate }}
         </span>
         <!-- syncing -->

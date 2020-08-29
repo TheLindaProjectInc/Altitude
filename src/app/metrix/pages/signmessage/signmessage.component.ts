@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NotifierService } from 'angular-notifier';
 import { WalletService } from '../../providers/wallet.service';
-import { PromptService } from '../../components/prompt/prompt.service';
+import { PromptService } from '../../../components/prompt/prompt.service';
 import { ErrorService } from 'app/providers/error.service';
 import { AddressBookService } from '../../components/address-book/address-book.service';
 import { NotificationService } from 'app/providers/notification.service';
