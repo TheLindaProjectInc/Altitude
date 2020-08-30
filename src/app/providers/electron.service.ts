@@ -6,7 +6,6 @@ import { ipcRenderer, remote, clipboard, shell } from 'electron';
 import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
 import { CurrencyService } from './currency.service';
-import { NotificationService } from './notification.service';
 import { ChainType, ClientStatus } from 'app/enum';
 import Languages from 'app/languages';
 
@@ -34,7 +33,6 @@ export class ElectronService {
     private http: HttpClient,
     private translate: TranslateService,
     private currencyService: CurrencyService,
-    private notification: NotificationService
   ) {
     // Conditional imports
     if (this.isElectron()) {

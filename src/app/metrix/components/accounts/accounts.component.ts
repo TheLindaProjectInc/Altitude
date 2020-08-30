@@ -21,7 +21,7 @@ export class AccountsComponent {
     public ngxModal: NgxSmartModalService,
     private notification: NotificationService,
     private errorService: ErrorService,
-    private currencyService: CurrencyService
+    public currencyService: CurrencyService
   ) {
 
   }

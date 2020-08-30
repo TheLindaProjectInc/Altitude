@@ -20,7 +20,7 @@ export class TitlebarComponent {
 
   menuActive = false;
   menuHoverIndex = -1
-  appWindow = this.electron.remote.getCurrentWindow();
+  appWindow;
   showWindowsMenu: boolean = false;
   subEncryption;
   subLanguage;
@@ -41,6 +41,7 @@ export class TitlebarComponent {
 
   ngOnInit() {
     if (this.electron.isElectron()) {
+      this.appWindow = this.electron.remote.getCurrentWindow();
       // if we are on windows use our angular menu
       // otherwise build the menu natively and link
       // actions through IPC
@@ -118,7 +119,7 @@ export class TitlebarComponent {
   }
 
   get isMaximized() {
-    if (this.appWindow.isMaximized()) return false;
+    if (this.appWindow && this.appWindow.isMaximized()) return false;
     return true;
   }
 

@@ -14,7 +14,7 @@ export class OptionsComponent implements OnInit {
   onlyNet = { IPv4: false, IPv6: false, Tor: false }
 
   constructor(
-    private electron: ElectronService,
+    public electron: ElectronService,
   ) { }
 
   ngOnInit() {
