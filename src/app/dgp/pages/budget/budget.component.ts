@@ -1,11 +1,5 @@
-import { Component, isDevMode } from '@angular/core';
-import { ErrorService } from 'app/providers/error.service';
-import { NotificationService } from 'app/providers/notification.service';
-import Helpers from 'app/helpers';
+import { Component } from '@angular/core';
 import { DGPService } from 'app/dgp/providers/dgp.service';
-import { WalletService } from 'app/metrix/providers/wallet.service';
-import { PromptService } from 'app/components/prompt/prompt.service';
-import { RPCMethods } from 'app/metrix/providers/rpc.service';
 
 @Component({
   templateUrl: './budget.component.html',
@@ -14,13 +8,8 @@ import { RPCMethods } from 'app/metrix/providers/rpc.service';
 export class BudgetComponent {
 
   constructor(
-    private prompt: PromptService,
-    private dgpService: DGPService,
-    private errorService: ErrorService,
-    private notification: NotificationService,
-    private wallet: WalletService,
+    public dgpService: DGPService,
   ) {
-
   }
 
   public get proposals() {
@@ -30,5 +19,7 @@ export class BudgetComponent {
     });
     return budgets;
   }
+
+
 
 }

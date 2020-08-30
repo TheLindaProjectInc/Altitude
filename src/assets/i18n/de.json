@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Um ein Gouverneur zu bleiben, müssen Sie alle 30 Tage an mindestens einer Stimme teilnehmen.",
                 "ISGOVERNORDETAIL3": "Wenn Sie nicht abstimmen können, können Sie Ihre Registrierung manuell fortsetzen, indem Sie einen aktiven Ping senden.",
                 "UNENROLL": "Abmelden",
-                "PING": "Aktiven Ping senden"
+                "PING": "Aktiven Ping senden",
+                "LASTPINGTITLE": "Letzter Ping",
+                "LASTPINGSUFFIX": "vor Blöcken"
             },
             "BUDGET": {
                 "TITLE": "Budgetvorschläge",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Abstimmung Enthaltung",
                 "VOTENO": "Wähle Nein",
                 "VOTESTOPASS": "Stimmen zu verabschieden",
-                "VOTEPASSING": "Stimmen geben"
+                "VOTEPASSING": "Stimmen geben",
+                "MINIMUMGOVERNORS": "Bugets können erst weitergegeben werden, wenn die Mindestanzahl von Gouverneuren in der Kette vorhanden ist.",
+                "CURRENTLY": "Zur Zeit",
+                "REQUIRED": "Erforderlich"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Erstellen Sie einen Vorschlag",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Ihre Stimme wird gezählt, sobald die Transaktion bestätigt wurde.",
             "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben",
             "PINGINGGOVERNOR": "Ping senden...",
-            "PINGEDGOVERNOR": "Ping erfolgreich gesendet",
+            "PINGEDGOVERNOR": "Ping erfolgreich gesendet. Ihr Gouverneur wird aktualisiert, sobald die Transaktion bestätigt wurde",
             "UNENROLLINGGOVERNOR": "Abmeldender Gouverneur...",
-            "UNENROLLEDGOVERNOR": "Transaktion gesendet. Ihr Gouverneur wird abgemeldet, sobald die Transaktion bestätigt wurde"
+            "UNENROLLEDGOVERNOR": "Transaktion gesendet. Ihr Gouverneur wird abgemeldet, sobald die Transaktion bestätigt wurde",
+            "GOVERNORNOTMATURE": "Ihr Gouverneur ist noch nicht reif genug, um diese Aktion durchzuführen"
         }
     }
 }

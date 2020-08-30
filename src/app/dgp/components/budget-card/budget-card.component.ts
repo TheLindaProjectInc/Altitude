@@ -42,6 +42,10 @@ export class BudgetCardComponent {
     return this.proposal.duration - this.proposal.durationsPaid;
   }
 
+  public get isGovernor(): boolean {
+    return !!this.dgpService.governor
+  }
+
   get requiredVote(): number {
     if (this.dgpService.governorCount < this.dgpService.minimumGovernors)
       return this.dgpService.minimumGovernors
@@ -66,6 +70,11 @@ export class BudgetCardComponent {
   }
 
   public async vote(vote: BudgetVote): Promise<void> {
+    const maturity = this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.blockHeight
+    if (maturity < this.dgpService.voteMaturity) {
+      return this.notification.notify('default', 'DGP.NOTIFICATIONS.GOVERNORNOTMATURE');
+    }
+
     let passphrase;
     try {
       if (this.wallet.requireUnlock()) [passphrase,] = await this.prompt.getPassphrase();

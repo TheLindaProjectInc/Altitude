@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Da biste ostali guverner, morate sudjelovati u najmanje 1 glasu svakih 30 dana.",
                 "ISGOVERNORDETAIL3": "Ako nema o čemu glasati, ručno možete nastaviti s upisom slanjem aktivnog ping-a.",
                 "UNENROLL": "Odjavi",
-                "PING": "Pošalji aktivni Ping"
+                "PING": "Pošalji aktivni Ping",
+                "LASTPINGTITLE": "Posljednji ping",
+                "LASTPINGSUFFIX": "blokova prije"
             },
             "BUDGET": {
                 "TITLE": "Prijedlozi proračuna",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Glasanje suzdržati",
                 "VOTENO": "Glasanje br",
                 "VOTESTOPASS": "glasova za prolazak",
-                "VOTEPASSING": "donošenje glasova"
+                "VOTEPASSING": "donošenje glasova",
+                "MINIMUMGOVERNORS": "Bugeti se ne mogu donijeti dok na lancu ne postoji minimalni broj guvernera.",
+                "CURRENTLY": "trenutno",
+                "REQUIRED": "Potreban"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Izradite prijedlog",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Vaš će se glas računati nakon što se transakcija potvrdi.",
             "NOADDRESS": "Niste unijeli Metrix adresu",
             "PINGINGGOVERNOR": "Slanje ping-a...",
-            "PINGEDGOVERNOR": "Ping je uspješno poslan",
+            "PINGEDGOVERNOR": "Ping je uspješno poslan. Vaš će se guverner ažurirati nakon potvrde transakcije",
             "UNENROLLINGGOVERNOR": "Poništavanje prijave guvernera...",
-            "UNENROLLEDGOVERNOR": "Transakcija je poslana. Vaš će se guverner poništiti nakon potvrde transakcije"
+            "UNENROLLEDGOVERNOR": "Transakcija je poslana. Vaš će se guverner poništiti nakon potvrde transakcije",
+            "GOVERNORNOTMATURE": "Vaš guverner još nije dovoljno zreo za izvođenje ove akcije"
         }
     }
 }

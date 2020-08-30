@@ -6,6 +6,9 @@ export default class Helpers {
     fee: 10,
     matureConfirms: 960,
     confirmations: 10,
+    governance: {
+      maturity: 15
+    }
   }
 
   public static toSatoshi(amount: number | Big): Big | number {
@@ -153,4 +156,7 @@ interface CoinParams {
   fee: number,
   matureConfirms: number,
   confirmations: number,
+  governance: {
+    maturity: number
+  }
 }

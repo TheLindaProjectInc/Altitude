@@ -1,5 +1,5 @@
 import { Injectable, isDevMode } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Subscription, ReplaySubject } from 'rxjs';
 import Big from 'big.js';
 import { RpcService, RPCMethods } from 'app/metrix/providers/rpc.service';
 import { Governor } from '../classes/governor';
@@ -17,6 +17,8 @@ export class DGPService {
     onTransactionsUpdatedSub: Subscription;
     onAccountsUpdatedSub: Subscription;
     newBlockReceivedSub: Subscription;
+
+    onDGPInfo = new ReplaySubject()
 
     governor: Governor;
     dgpInfo: IDGPInfo;
@@ -50,6 +52,11 @@ export class DGPService {
     public get minimumGovernors(): number {
         if (this.electron.chain === ChainType.MAINNET) return 100
         return 10;
+    }
+
+    public get voteMaturity(): number {
+        if (this.electron.chain === ChainType.MAINNET) return 28 * 960
+        return 40;
     }
 
     public get budgetSettlementPeriod(): number {
@@ -94,6 +101,7 @@ export class DGPService {
     private async getDGPInfo() {
         let data: any = await this.rpc.requestData(RPCMethods.GETDGPINFO);
         if (!data.error) this.dgpInfo = data;
+        this.onDGPInfo.next()
     }
 
     private async getMyGovernor() {
@@ -102,11 +110,13 @@ export class DGPService {
         for (let i = 0; i < hexAddrs.length; i++) {
             let govAddr = this.governorList[hexAddrs[i]];
             if (addressList.indexOf(govAddr) > -1) {
-                if (!this.governor) {
-                    let callData: string = GovernanceContract.GOVERNORS.padEnd(32, '0') + hexAddrs[i];
-                    let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [GovernanceContract.ADDRESS, callData]);
-                    if (data.executionResult.output.replace(/0/g, '') !== '')
+                let callData: string = GovernanceContract.GOVERNORS.padEnd(32, '0') + hexAddrs[i];
+                let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [GovernanceContract.ADDRESS, callData]);
+                if (data.executionResult.output.replace(/0/g, '') !== '') {
+                    if (!this.governor)
                         this.governor = new Governor(addressList[i], data);
+                    else
+                        this.governor.update(data)
                 }
                 return;
             }
@@ -118,7 +128,9 @@ export class DGPService {
     public async enrollGovernor(passphrase: string) {
         try {
             await this.rpc.unlockWalletForCommand(passphrase);
-            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, [GovernanceContract.ADDRESS, GovernanceContract.ENROLL, Helpers.fromSatoshi(this.dgpInfo.governancecollateral)]);
+
+            const args = [GovernanceContract.ADDRESS, GovernanceContract.ENROLL, Helpers.fromSatoshi(this.dgpInfo.governancecollateral)]
+            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
         } catch (ex) {
@@ -133,7 +145,8 @@ export class DGPService {
 
             let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
 
-            const args = [GovernanceContract.ADDRESS, GovernanceContract.UNENROLL, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]
+            const args = [GovernanceContract.ADDRESS, this.encodeContractString(GovernanceContract.UNENROLL), 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]
+            console.log(args)
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
@@ -143,18 +156,16 @@ export class DGPService {
         }
     }
 
-    public async checkGovernanceEnrollmentStatus(txid: string): Promise<number> {
+    public async checkGovernanceEnrollmentStatus(txid: string): Promise<EnrollmentStatus> {
         try {
             const data = await this.rpc.requestData(RPCMethods.GETTRANSACTION, [txid]);
-            if (!data.error) {
-                if (data.hex && data.hex.indexOf(GovernanceContract.ADDRESS) > -1) {
-                    if (data.confirmations > 0) return 1;
-                    return 0;
-                }
+            if (!data.error && data.indexOf(GovernanceContract.ADDRESS) > -1) {
+                if (data.confirmations > 0) return EnrollmentStatus.CONFIRMED;
+                return EnrollmentStatus.PENDING;
             }
         } catch (ex) {
         }
-        return -1;
+        return EnrollmentStatus.NONE;
     }
 
     private async getBudgetCount(): Promise<number> {
@@ -285,6 +296,12 @@ export class DGPService {
 
         return result;
     }
+}
+
+export enum EnrollmentStatus {
+    CONFIRMED,
+    PENDING,
+    NONE
 }
 
 enum GovernanceContract {

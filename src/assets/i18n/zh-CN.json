@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "要成为州长，您将需要每30天至少参加1票表决。",
                 "ISGOVERNORDETAIL3": "如果没有什么可投票的，则可以通过发送活动的ping手动继续注册。",
                 "UNENROLL": "取消注册",
-                "PING": "发送活动Ping"
+                "PING": "发送活动Ping",
+                "LASTPINGTITLE": "最后一次ping",
+                "LASTPINGSUFFIX": "块前"
             },
             "BUDGET": {
                 "TITLE": "预算提案",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "弃权票",
                 "VOTENO": "投票否",
                 "VOTESTOPASS": "投票通过",
-                "VOTEPASSING": "通过票"
+                "VOTEPASSING": "通过票",
+                "MINIMUMGOVERNORS": "在链上存在最少数量的州长之前，无法通过Buget。",
+                "CURRENTLY": "目前",
+                "REQUIRED": "需要"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "创建提案",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "交易确认后，您的票数就会计算在内。",
             "NOADDRESS": "您没有输入Metrix地址",
             "PINGINGGOVERNOR": "正在发送ping...",
-            "PINGEDGOVERNOR": "平安发送成功",
+            "PINGEDGOVERNOR": "Ping发送成功。交易确认后，您的总督将被更新",
             "UNENROLLINGGOVERNOR": "正在取消注册州长...",
-            "UNENROLLEDGOVERNOR": "交易已发送。交易确认后，您的总督将被取消注册"
+            "UNENROLLEDGOVERNOR": "交易已发送。交易确认后，您的总督将被取消注册",
+            "GOVERNORNOTMATURE": "您的州长还不够成熟，无法执行此操作"
         }
     }
 }

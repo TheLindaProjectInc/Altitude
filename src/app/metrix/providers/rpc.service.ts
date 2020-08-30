@@ -99,7 +99,7 @@ export class RpcService {
             if (sub) {
                 let result = data.result;
                 let time = new Date().getTime() - sub.ts + 'ms';
-                if (isDevMode()) console.log('CallServer Response', time, data.method, result);
+                // if (isDevMode()) console.log('CallServer Response', time, data.method, result);
                 if (result.success) sub.resolve(result.body);
                 else sub.reject(result);
                 delete this.RPCSubscriptions[data.callId]

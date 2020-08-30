@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Kormányzóvá váláshoz legalább 1 szavazaton kell részt vennie 30 naponta.",
                 "ISGOVERNORDETAIL3": "Ha nincs miről szavazni, akkor manuálisan folytathatja a regisztrációt egy aktív ping elküldésével.",
                 "UNENROLL": "Jelentkezés törlése",
-                "PING": "Küldje az aktív pingot"
+                "PING": "Küldje az aktív pingot",
+                "LASTPINGTITLE": "Utolsó ping",
+                "LASTPINGSUFFIX": "blokkokkal ezelőtt"
             },
             "BUDGET": {
                 "TITLE": "Költségvetési javaslatok",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Szavazzon tartózkodás",
                 "VOTENO": "Szavazás Nem",
                 "VOTESTOPASS": "átadott szavazatok",
-                "VOTEPASSING": "átadott szavazatok"
+                "VOTEPASSING": "átadott szavazatok",
+                "MINIMUMGOVERNORS": "A hibajelzéseket csak akkor lehet átadni, ha a láncban a minimális számú kormányzó létezik.",
+                "CURRENTLY": "Jelenleg",
+                "REQUIRED": "Kívánt"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Hozzon létre egy javaslatot",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "A szavazatát a tranzakció megerősítését követően számítják.",
             "NOADDRESS": "Nem adta meg a Metrix címet",
             "PINGINGGOVERNOR": "Ping küldése...",
-            "PINGEDGOVERNOR": "Ping küldése sikeres volt",
+            "PINGEDGOVERNOR": "Ping küldése sikeres volt. A kormányzót a tranzakció megerősítése után frissítjük",
             "UNENROLLINGGOVERNOR": "Kormányzó leiratkozása...",
-            "UNENROLLEDGOVERNOR": "Tranzakció elküldve. A kormányzót a tranzakció megerősítését követően visszavonják"
+            "UNENROLLEDGOVERNOR": "Tranzakció elküldve. A kormányzót a tranzakció megerősítését követően visszavonják",
+            "GOVERNORNOTMATURE": "Kormányzója még nem elég érett a művelet végrehajtására"
         }
     }
 }

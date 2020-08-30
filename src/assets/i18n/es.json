@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Para seguir siendo gobernador, deberá participar en al menos 1 voto cada 30 días.",
                 "ISGOVERNORDETAIL3": "Si no hay nada para votar, puede continuar manualmente su inscripción enviando un ping activo.",
                 "UNENROLL": "Anular inscripción",
-                "PING": "Enviar ping activo"
+                "PING": "Enviar ping activo",
+                "LASTPINGTITLE": "Último ping",
+                "LASTPINGSUFFIX": "hace bloques"
             },
             "BUDGET": {
                 "TITLE": "Propuestas de presupuesto",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Voto Abstenerse",
                 "VOTENO": "Vote no",
                 "VOTESTOPASS": "votos para aprobar",
-                "VOTEPASSING": "votos aprobados"
+                "VOTEPASSING": "votos aprobados",
+                "MINIMUMGOVERNORS": "Los bugets no se pueden pasar hasta que exista el número mínimo de gobernadores en la cadena.",
+                "CURRENTLY": "Actualmente",
+                "REQUIRED": "Necesario"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Crea una propuesta",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Su voto se contará una vez que se confirme la transacción.",
             "NOADDRESS": "No ingresaste una dirección de Metrix",
             "PINGINGGOVERNOR": "Enviando ping...",
-            "PINGEDGOVERNOR": "Ping enviado con éxito",
+            "PINGEDGOVERNOR": "Ping enviado con éxito. Su gobernador se actualizará una vez que se confirme la transacción",
             "UNENROLLINGGOVERNOR": "Cancelación de la inscripción del gobernador...",
-            "UNENROLLEDGOVERNOR": "Transacción enviada. Su gobernador se cancelará una vez que se confirme la transacción"
+            "UNENROLLEDGOVERNOR": "Transacción enviada. Su gobernador se cancelará una vez que se confirme la transacción",
+            "GOVERNORNOTMATURE": "Su gobernador aún no tiene la madurez suficiente para realizar esta acción"
         }
     }
 }

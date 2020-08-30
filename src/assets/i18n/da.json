@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "For at forblive guvernør skal du deltage i mindst 1 stemme hver 30. dag.",
                 "ISGOVERNORDETAIL3": "Hvis der ikke er noget at stemme på, kan du manuelt fortsætte din tilmelding ved at sende en aktiv ping.",
                 "UNENROLL": "Frameld",
-                "PING": "Send aktiv ping"
+                "PING": "Send aktiv ping",
+                "LASTPINGTITLE": "Sidste ping",
+                "LASTPINGSUFFIX": "blokke siden"
             },
             "BUDGET": {
                 "TITLE": "Budgetforslag",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Stem afstå",
                 "VOTENO": "Stem nr",
                 "VOTESTOPASS": "stemmer for at bestå",
-                "VOTEPASSING": "vedtagne stemmer"
+                "VOTEPASSING": "vedtagne stemmer",
+                "MINIMUMGOVERNORS": "Bugets kan ikke overføres, før der findes et minimum antal guvernører i kæden.",
+                "CURRENTLY": "I øjeblikket",
+                "REQUIRED": "Nødvendig"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Opret et forslag",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Din afstemning tælles, når transaktionen er bekræftet.",
             "NOADDRESS": "Du indtastede ikke en Metrix-adresse",
             "PINGINGGOVERNOR": "Sender ping...",
-            "PINGEDGOVERNOR": "Ping blev sendt",
+            "PINGEDGOVERNOR": "Ping blev sendt. Din guvernør vil blive opdateret, når transaktionen er bekræftet",
             "UNENROLLINGGOVERNOR": "Afmelding af guvernør...",
-            "UNENROLLEDGOVERNOR": "Transaktion sendt. Din guvernør vil blive tilmeldt, når transaktionen er bekræftet"
+            "UNENROLLEDGOVERNOR": "Transaktion sendt. Din guvernør vil blive tilmeldt, når transaktionen er bekræftet",
+            "GOVERNORNOTMATURE": "Din guvernør er ikke moden nok til at udføre denne handling endnu"
         }
     }
 }

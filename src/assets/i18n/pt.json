@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Para permanecer governador, você precisará participar de pelo menos 1 voto a cada 30 dias.",
                 "ISGOVERNORDETAIL3": "Se não houver nada para votar, você poderá continuar manualmente sua inscrição enviando um ping ativo.",
                 "UNENROLL": "Cancelar inscrição",
-                "PING": "Enviar Ping ativo"
+                "PING": "Enviar Ping ativo",
+                "LASTPINGTITLE": "Ultimo ping",
+                "LASTPINGSUFFIX": "blocos atrás"
             },
             "BUDGET": {
                 "TITLE": "Propostas de orçamento",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Abstenção de votação",
                 "VOTENO": "Vote No",
                 "VOTESTOPASS": "votos para passar",
-                "VOTEPASSING": "votos de aprovação"
+                "VOTEPASSING": "votos de aprovação",
+                "MINIMUMGOVERNORS": "Bugets não podem ser passados até que exista um número mínimo de Governadores na cadeia.",
+                "CURRENTLY": "Atualmente",
+                "REQUIRED": "Requeridos"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Criar uma proposta",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Seu voto será contado assim que a transação for confirmada.",
             "NOADDRESS": "Você não inseriu um endereço Metrix",
             "PINGINGGOVERNOR": "Enviando ping...",
-            "PINGEDGOVERNOR": "Ping enviado com sucesso",
+            "PINGEDGOVERNOR": "Ping enviado com sucesso. Seu governador será atualizado assim que a transação for confirmada",
             "UNENROLLINGGOVERNOR": "Cancelando a inscrição do governador...",
-            "UNENROLLEDGOVERNOR": "Transação enviada. Seu governador será cancelado assim que a transação for confirmada"
+            "UNENROLLEDGOVERNOR": "Transação enviada. Seu governador será cancelado assim que a transação for confirmada",
+            "GOVERNORNOTMATURE": "Seu governador ainda não tem maturidade suficiente para realizar esta ação"
         }
     }
 }

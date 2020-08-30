@@ -11,6 +11,10 @@ export class Governor {
     constructor(address: String, contractData: any) {
         this.address = address;
 
+        this.update(contractData)
+    }
+
+    update(contractData: any) {
         let chunks = contractData.executionResult.output.match(new RegExp('.{1,64}', 'g'));
         this.blockHeight = Number(U256(chunks[0], 16));
         this.lastPing = Number(U256(chunks[1], 16));

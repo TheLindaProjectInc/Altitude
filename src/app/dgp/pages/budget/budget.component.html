@@ -9,6 +9,13 @@
         </button>
     </div>
 
+    <div class="alerts" *ngIf="dgpService.minimumGovernors > dgpService.governorCount">
+        {{ 'DGP.PAGES.BUDGET.MINIMUMGOVERNORS' | translate }}
+        <br />
+        {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}}
+        <br/>
+        {{ 'DGP.PAGES.BUDGET.REQUIRED' | translate }}: {{dgpService.minimumGovernors}}
+    </div>
 
     <div class="flex-row-center flex-wrap">
 

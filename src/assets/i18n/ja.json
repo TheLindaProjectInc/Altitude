@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "知事にとどまるには、30日ごとに少なくとも1票に参加する必要があります。",
                 "ISGOVERNORDETAIL3": "投票するものがない場合は、アクティブなpingを送信して登録を手動で続行できます。",
                 "UNENROLL": "登録解除",
-                "PING": "アクティブなpingを送信"
+                "PING": "アクティブなpingを送信",
+                "LASTPINGTITLE": "最後のping",
+                "LASTPINGSUFFIX": "ブロック前"
             },
             "BUDGET": {
                 "TITLE": "予算案",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "投票しない",
                 "VOTENO": "投票しない",
                 "VOTESTOPASS": "合格票",
-                "VOTEPASSING": "賛成票"
+                "VOTEPASSING": "賛成票",
+                "MINIMUMGOVERNORS": "チェーンに最小数のガバナーが存在するまで、バゲットを渡すことはできません。",
+                "CURRENTLY": "現在",
+                "REQUIRED": "必須"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "プロポーザルを作成する",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "取引が確認されると、投票がカウントされます。",
             "NOADDRESS": "Metrixアドレスを入力しませんでした",
             "PINGINGGOVERNOR": "pingを送信しています...",
-            "PINGEDGOVERNOR": "pingが正常に送信されました",
+            "PINGEDGOVERNOR": "pingが正常に送信されました。取引が確認されるとガバナーが更新されます",
             "UNENROLLINGGOVERNOR": "ガバナーの登録を解除しています...",
-            "UNENROLLEDGOVERNOR": "トランザクションが送信されました。取引が確認されると、ガバナーの登録が解除されます"
+            "UNENROLLEDGOVERNOR": "トランザクションが送信されました。取引が確認されると、ガバナーの登録が解除されます",
+            "GOVERNORNOTMATURE": "あなたの知事はまだこの行動を実行するのに十分成熟していない"
         }
     }
 }

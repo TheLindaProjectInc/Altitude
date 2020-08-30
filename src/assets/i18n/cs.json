@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Abyste zůstali guvernérem, musíte se každých 30 dní účastnit alespoň 1 hlasu.",
                 "ISGOVERNORDETAIL3": "Pokud nemáte co hlasovat, můžete pokračovat v zápisu ručně aktivním pingem.",
                 "UNENROLL": "Odhlásit se",
-                "PING": "Odeslat aktivní ping"
+                "PING": "Odeslat aktivní ping",
+                "LASTPINGTITLE": "Poslední ping",
+                "LASTPINGSUFFIX": "bloky před"
             },
             "BUDGET": {
                 "TITLE": "Návrhy rozpočtu",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Hlasujte proti",
                 "VOTENO": "Hlasujte č",
                 "VOTESTOPASS": "hlasy projít",
-                "VOTEPASSING": "předávání hlasů"
+                "VOTEPASSING": "předávání hlasů",
+                "MINIMUMGOVERNORS": "Bugety nelze předat, dokud v řetězci nebude existovat minimální počet guvernérů.",
+                "CURRENTLY": "V současné době",
+                "REQUIRED": "Požadované"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Vytvořte nabídku",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Váš hlas bude započítán, jakmile bude transakce potvrzena.",
             "NOADDRESS": "Nezadali jste adresu Metrix",
             "PINGINGGOVERNOR": "Odesílání ping...",
-            "PINGEDGOVERNOR": "Ping byl úspěšně odeslán",
+            "PINGEDGOVERNOR": "Ping byl úspěšně odeslán. Jakmile bude transakce potvrzena, bude váš guvernér aktualizován",
             "UNENROLLINGGOVERNOR": "Rušení registrace guvernéra...",
-            "UNENROLLEDGOVERNOR": "Transakce odeslána. Jakmile bude transakce potvrzena, váš guvernér bude zrušen"
+            "UNENROLLEDGOVERNOR": "Transakce odeslána. Jakmile bude transakce potvrzena, váš guvernér bude zrušen",
+            "GOVERNORNOTMATURE": "Váš guvernér ještě není dostatečně zralý na to, aby tuto akci provedl"
         }
     }
 }

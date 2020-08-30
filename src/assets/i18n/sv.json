@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "För att vara en guvernör måste du delta i minst 1 röst var 30: e dag.",
                 "ISGOVERNORDETAIL3": "Om det inte finns något att rösta på så kan du manuellt fortsätta registreringen genom att skicka en aktiv ping.",
                 "UNENROLL": "avregistrera",
-                "PING": "Skicka Active Ping"
+                "PING": "Skicka Active Ping",
+                "LASTPINGTITLE": "Senaste ping",
+                "LASTPINGSUFFIX": "block sedan"
             },
             "BUDGET": {
                 "TITLE": "Budgetförslag",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Rösta avstå",
                 "VOTENO": "Rösta nr",
                 "VOTESTOPASS": "röster att passera",
-                "VOTEPASSING": "godkända röster"
+                "VOTEPASSING": "godkända röster",
+                "MINIMUMGOVERNORS": "Bugets kan inte skickas förrän det minsta antalet guvernörer finns i kedjan.",
+                "CURRENTLY": "För närvarande",
+                "REQUIRED": "Nödvändig"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Skapa ett förslag",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Din röst kommer att räknas när transaktionen har bekräftats.",
             "NOADDRESS": "Du angav inte en Metrix-adress",
             "PINGINGGOVERNOR": "Skickar ping...",
-            "PINGEDGOVERNOR": "Ping skickades",
+            "PINGEDGOVERNOR": "Ping skickades. Din guvernör kommer att uppdateras när transaktionen har bekräftats",
             "UNENROLLINGGOVERNOR": "Avregistrerar guvernören...",
-            "UNENROLLEDGOVERNOR": "Transaktion skickad. Din guvernör kommer att avregistreras när transaktionen har bekräftats"
+            "UNENROLLEDGOVERNOR": "Transaktion skickad. Din guvernör kommer att avregistreras när transaktionen har bekräftats",
+            "GOVERNORNOTMATURE": "Din guvernör är inte mogen för att utföra den här åtgärden än"
         }
     }
 }

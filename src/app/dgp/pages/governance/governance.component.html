@@ -8,7 +8,8 @@
             <div>
                 <p *ngIf="isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.CONFIRMENROLL' | translate }}</p>
                 <p *ngIf="!isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORDETAIL' | translate }}</p>
-                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}: {{governanceCollateral | prettyCoins}} MRX</p>
+                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}:
+                    {{governanceCollateral | prettyCoins}} MRX</p>
             </div>
             <button class="btn btn-default" (click)="isEnrolling=true" *ngIf="!isEnrolling">
                 {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
@@ -35,6 +36,10 @@
                 <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL1' | translate }}</p>
                 <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL2' | translate }}</p>
                 <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL3' | translate }}</p>
+                <p>
+                    {{ 'DGP.PAGES.GOVERNANCE.LASTPINGTITLE' | translate }}:
+                    {{lastPing}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGSUFFIX' | translate }}
+                </p>
             </div>
             <div class="toolbar">
                 <button class="btn btn-danger" (click)="unenroll()">

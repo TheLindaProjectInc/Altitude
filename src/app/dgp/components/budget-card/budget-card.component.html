@@ -23,7 +23,7 @@
                 </span>
             </div>
 
-            <div class="flex-row-center">
+            <div class="flex-row-center" *ngIf="isGovernor">
                 <button class="btn btn-sm btn-success" (click)="vote(3)" [disabled]="proposal.myVote===3">
                     {{ 'DGP.PAGES.BUDGET.VOTEYES' | translate }}
                 </button>

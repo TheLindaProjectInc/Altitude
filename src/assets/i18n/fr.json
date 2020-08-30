@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "Pour rester gouverneur, vous devrez participer à au moins 1 vote tous les 30 jours.",
                 "ISGOVERNORDETAIL3": "S'il n'y a rien sur lequel voter, vous pouvez continuer manuellement votre inscription en envoyant un ping actif.",
                 "UNENROLL": "Se désinscrire",
-                "PING": "Envoyer un ping actif"
+                "PING": "Envoyer un ping actif",
+                "LASTPINGTITLE": "Dernier ping",
+                "LASTPINGSUFFIX": "il y a des blocs"
             },
             "BUDGET": {
                 "TITLE": "Propositions de budget",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Voter pour s'abstenir",
                 "VOTENO": "Voter non",
                 "VOTESTOPASS": "votes pour passer",
-                "VOTEPASSING": "votes passés"
+                "VOTEPASSING": "votes passés",
+                "MINIMUMGOVERNORS": "Les bogues ne peuvent pas être adoptés tant que le nombre minimum de gouverneurs n’existe pas dans la chaîne.",
+                "CURRENTLY": "Actuellement",
+                "REQUIRED": "Obligatoire"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Créer une proposition",
@@ -507,9 +512,10 @@
             "VOTEDONPROPOSAL": "Votre vote sera compté une fois la transaction confirmée.",
             "NOADDRESS": "Vous n'avez pas entré d'adresse Metrix",
             "PINGINGGOVERNOR": "Envoi du ping...",
-            "PINGEDGOVERNOR": "Ping envoyé avec succès",
+            "PINGEDGOVERNOR": "Ping envoyé avec succès. Votre gouverneur sera mis à jour une fois la transaction confirmée",
             "UNENROLLINGGOVERNOR": "Désinscription du gouverneur...",
-            "UNENROLLEDGOVERNOR": "Transaction envoyée. Votre gouverneur sera désinscrit une fois la transaction confirmée"
+            "UNENROLLEDGOVERNOR": "Transaction envoyée. Votre gouverneur sera désinscrit une fois la transaction confirmée",
+            "GOVERNORNOTMATURE": "Votre gouverneur n'est pas encore assez mature pour effectuer cette action"
         }
     }
 }

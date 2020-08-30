@@ -459,7 +459,9 @@
                 "ISGOVERNORDETAIL2": "To stay a Governor you will need to participate in at least 1 vote every 30 days.",
                 "ISGOVERNORDETAIL3": "If there is nothing to vote on then you can manually continue your enrollment by sending an active ping.",
                 "UNENROLL": "Unenroll",
-                "PING": "Send Active Ping"
+                "PING": "Send Active Ping",
+                "LASTPINGTITLE": "Last ping",
+                "LASTPINGSUFFIX": "blocks ago"
             },
             "BUDGET": {
                 "TITLE": "Budget Proposals",
@@ -470,7 +472,10 @@
                 "VOTEABSTAIN": "Vote Abstain",
                 "VOTENO": "Vote No",
                 "VOTESTOPASS": "votes to pass",
-                "VOTEPASSING": "passing votes"
+                "VOTEPASSING": "passing votes",
+                "MINIMUMGOVERNORS": "Bugets cannot be passed until the minimum number of Governors exist on the chain.",
+                "CURRENTLY": "Currently",
+                "REQUIRED": "Required"
             },
             "CREATEPROPOSAL": {
                 "TITLE": "Create a Proposal",
@@ -505,11 +510,12 @@
             "ENROLLINGGOVERNOR": "Enrolling as Governor...",
             "ENROLLEDGOVERNOR": "Your enrollment will be complete once your transaction is confirmed",
             "PINGINGGOVERNOR": "Sending ping...",
-            "PINGEDGOVERNOR": "Ping sent successfully",
+            "PINGEDGOVERNOR": "Ping sent successfully. Your Governor will be updated once the transaction is confirmed",
             "VOTINGONPROPOSAL": "Sending proposal vote",
             "VOTEDONPROPOSAL": "Your vote will be counted once the transaction is confirmed.",
             "UNENROLLINGGOVERNOR": "Unenrolling Governor...",
-            "UNENROLLEDGOVERNOR": "Transaction sent. Your Governor will be unenrolled once the transaction is confirmed"
+            "UNENROLLEDGOVERNOR": "Transaction sent. Your Governor will be unenrolled once the transaction is confirmed",
+            "GOVERNORNOTMATURE": "Your Governor is not mature enough to perform this action yet"
         }
     }
 }
