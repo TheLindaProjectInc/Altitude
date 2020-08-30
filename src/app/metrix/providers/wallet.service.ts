@@ -1,4 +1,4 @@
-import { Injectable, Output, EventEmitter } from '@angular/core';
+import { Injectable, Output, EventEmitter, Directive } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
 import Big from 'big.js';
 import { RPCMethods, RpcService } from './rpc.service';
@@ -20,6 +20,7 @@ import {
 } from '../classes';
 import { DesktopNotificationService } from '../../providers/desktop-notification.service';
 
+@Directive()
 @Injectable()
 export class WalletService {
     // account filters

@@ -8,7 +8,7 @@ import { PromptService } from './prompt.service';
 })
 export class PromptComponent {
 
-  @ViewChild("passphrase", { static: false }) passphraseField: ElementRef;
+  @ViewChild("passphrase") passphraseField: ElementRef;
 
   passphraseModal = {
     passphrase: "",

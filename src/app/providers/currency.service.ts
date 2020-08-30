@@ -1,8 +1,9 @@
-import { Injectable, EventEmitter, Output } from '@angular/core';
+import { Injectable, EventEmitter, Output, Directive } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import Helpers from 'app/helpers';
 import Big from 'big.js';
 
+@Directive()
 @Injectable()
 export class CurrencyService {
 

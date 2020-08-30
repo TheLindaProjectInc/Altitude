@@ -12,7 +12,7 @@ import { ClientStatus } from 'app/enum';
 })
 export class ToolsComponent implements OnInit {
 
-  @ViewChild('scrollingBlock', { static: false }) private myScrollContainer: ElementRef;
+  @ViewChild('scrollingBlock') private myScrollContainer: ElementRef;
   helpers = Helpers
   sub;
   tab = 0;

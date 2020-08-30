@@ -1,6 +1,6 @@
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
 import {
     faReceipt,
     faWallet,
@@ -46,9 +46,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-export function setupIcons() {
+export function setupIcons(library: FaIconLibrary) {
     // only add used icons to avoid bloat
-    library.add(
+    /* library.addIconPacks(fas) */
+    library.addIcons(
         faWallet,
         faReceipt,
         faNetworkWired,

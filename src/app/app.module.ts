@@ -14,7 +14,7 @@ import { VirtualScrollerModule } from 'ngx-virtual-scroller';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 // icons 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { setupIcons } from './icon-module';
 // alerts
 import { NotifierModule } from 'angular-notifier';
@@ -39,8 +39,6 @@ import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-// AoT requires the files to be explicitly imported
-setupIcons();
 
 // routes
 const routes: Routes = [
@@ -96,4 +94,9 @@ const routes: Routes = [
     AppComponent
   ]
 })
-export class AppModule { }
+
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    setupIcons(library);
+  }
+}

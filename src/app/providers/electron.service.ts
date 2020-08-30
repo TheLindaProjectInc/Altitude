@@ -1,4 +1,4 @@
-import { Injectable, isDevMode, EventEmitter, Output } from '@angular/core';
+import { Injectable, isDevMode, EventEmitter, Output, Directive } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
@@ -8,8 +8,9 @@ import * as compareVersions from 'compare-versions';
 import { CurrencyService } from './currency.service';
 import { NotificationService } from './notification.service';
 import { ChainType, ClientStatus } from 'app/enum';
-var supportedLanguages = require('../pages/locale/languages');
+import Languages from 'app/languages';
 
+@Directive()
 @Injectable()
 export class ElectronService {
 
@@ -115,11 +116,11 @@ export class ElectronService {
     this.translate.setDefaultLang('en');
     const localLanguage = navigator.language.toLowerCase();
     const localLangaugeSplit = localLanguage.split("-")[0];
-    Object.keys(supportedLanguages).forEach(key => {
-      const supportedLanguage = supportedLanguages[key].code.toLowerCase();
+    Languages.supported.forEach(language => {
+      const supportedLanguage = Languages.getCode(language).toLowerCase();
       if (supportedLanguage === localLanguage || supportedLanguage === localLangaugeSplit) {
-        if (isDevMode()) console.log("Detected local langauge", key);
-        this.translate.setDefaultLang(supportedLanguages[key].code);
+        if (isDevMode()) console.log("Detected local language", language);
+        this.translate.setDefaultLang(Languages.getCode(language));
       }
     });
   }
