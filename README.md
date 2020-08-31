@@ -17,7 +17,7 @@ You can also help by [responding to issues](https://github.com/TheLindaProjectIn
 
 
 ## Development
-Altitude is built using the Angular7 and Electron frameworks for maximum cross-platform compatibility.
+Altitude is built using the Angular and Electron frameworks for maximum cross-platform compatibility.
 
 ### Getting Started
 
