@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from 'app/providers/electron.service';
+import { ChainType } from 'app/enum';
+import { WalletService } from 'app/metrix/providers/wallet.service';
+import { RpcService } from 'app/metrix/providers/rpc.service';
+import { DGPService } from 'app/dgp/providers/dgp.service';
 
 @Component({
   selector: 'app-options',
@@ -12,9 +16,13 @@ export class OptionsComponent implements OnInit {
   proxy = { allow: false, ip: '', port: '' }
   tor = { allow: false, ip: '', port: '' }
   onlyNet = { IPv4: false, IPv6: false, Tor: false }
+  network: ChainType
 
   constructor(
     public electron: ElectronService,
+    private wallet: WalletService,
+    private dgp: DGPService,
+    private rpc: RpcService
   ) { }
 
   ngOnInit() {
@@ -34,6 +42,7 @@ export class OptionsComponent implements OnInit {
       if (onlyNet.indexOf('ipv6') > -1) this.onlyNet.IPv6 = true;
       if (onlyNet.indexOf('tor') > -1) this.onlyNet.Tor = true;
     }
+    this.network = this.electron.chain
   }
 
   setHideTray() {
@@ -76,6 +85,17 @@ export class OptionsComponent implements OnInit {
       net += 'tor'
     }
     this.electron.ipcRenderer.send('settings', 'SETONLYNET', net);
+  }
+
+  restart() {
+    this.wallet.stopSyncService();
+    if (this.network !== this.electron.chain) {
+      this.wallet.resetState();
+      this.dgp.resetState()
+      this.electron.ipcRenderer.send('client-node', 'SETCHAIN', this.network);
+    } else {
+      this.rpc.restartClient();
+    }
   }
 
 }

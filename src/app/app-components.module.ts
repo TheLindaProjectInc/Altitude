@@ -8,6 +8,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { TitlebarComponent } from './components/titlebar/titlebar.component';
 import { PromptComponent } from './components/prompt/prompt.component';
 import { PromptService } from './components/prompt/prompt.service';
+import { NetworkTypeComponent } from './components/network-type/network-type.component';
 
 export const componentDeclarations = [
     LoaderComponent,
@@ -16,7 +17,8 @@ export const componentDeclarations = [
     TextinputComponent,
     TextareaComponent,
     TitlebarComponent,
-    PromptComponent
+    PromptComponent,
+    NetworkTypeComponent
 ]
 
 export const componentProviders = [

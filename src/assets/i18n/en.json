@@ -220,7 +220,8 @@
                 "PROXYTOR": "Use seperate SOCKS5 proxy to reach peers via Tor hidden services",
                 "ONLYNET": "Only connect to nodes in network",
                 "BLOCKINCOMING": "Don't allow incoming connections",
-                "RESTARTREQUIRED": "A Client restart is required to activate any changes to these settings."
+                "RESTARTREQUIRED": "A Client restart is required to activate any changes to these settings.",
+                "CHAINTYPE": "Network"
             },
             "WINDOW": {
                 "HIDETRAY": "Hide tray icon",
@@ -317,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warning! You are not on the main chain according to the Metrix explorer. It is highly recommended to re-sync or re-bootstrap your blockchain to avoid the loss of any coins."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Current network"
         }
     },
     "MENU": {

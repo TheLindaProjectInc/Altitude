@@ -539,8 +539,12 @@ export default class Client {
         }
     }
 
-    setChainType(chain: ChainType) {
-
+    async setChainType(chain: ChainType) {
+        if (chain !== this.chain) {
+            this.chain = chain
+            await this.stop(false)
+            this.startClient(true)
+        }
     }
 
     sendRPCStatus() {

@@ -44,6 +44,13 @@ export class DGPService {
         });
     }
 
+    public resetState() {
+        this.governor = null;
+        this.dgpInfo = null;
+        this.budgetProposals = [];
+        this.governorList = {};
+    }
+
     ngOnDestroy() {
         if (this.onAccountsUpdatedSub) this.onAccountsUpdatedSub.unsubscribe();
         if (this.newBlockReceivedSub) this.newBlockReceivedSub.unsubscribe();
