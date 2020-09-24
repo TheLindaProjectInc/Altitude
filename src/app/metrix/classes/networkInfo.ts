@@ -18,14 +18,11 @@ export class NetworkInfo {
     }
 
     private parseVersion(version: number): string {
-        let parts = version.toString().match(/.{1,2}/g);
-        let parsedVersion = "";
-        while (parts.length < 4) parts.splice(0, 0, '00');
-        parts.forEach(p => {
-            if (parsedVersion !== '') parsedVersion += '.';
-            if (p[0] === '0') parsedVersion += p[1];
-            else parsedVersion += p;
-        })
-        return parsedVersion;
+        const versionString = version.toString()
+        const major = Number(versionString.substring(0, versionString.length - 6))
+        const minor = Number(versionString.substring(1, versionString.length - 4))
+        const rev = Number(versionString.substring(3, versionString.length - 2))
+        const build = Number(versionString.substring(5, versionString.length))
+        return `${major}.${minor}.${rev}.${build}`
     }
 }
