@@ -73,4 +73,9 @@ export class SyncStatusComponent {
   get progressTitle() {
     return Math.round(this.wallet.blockchainStatus.syncProgresss * 100) / 100 + '%';
   }
+
+  get showProgressBar() {
+    return this.wallet.running &&
+      (Date.now() - this.wallet.blockchainStatus.latestBlockTime > 5 * 60 * 1000 && this.wallet.blockchainStatus.syncProgresss < 99.99)
+  }
 }

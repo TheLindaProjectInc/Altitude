@@ -23,19 +23,18 @@
     <span>
         <fa-icon icon="clock"></fa-icon>
         <span *ngIf="!wallet.running">{{ 'COMPONENTS.SIDEBAR.SYNC.CONNECTING' | translate }}...</span>
-        <!--   no blocks -->
+        <!-- no blocks -->
         <span *ngIf="wallet.running && !wallet.blockchainStatus.latestBlockHeight">
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOBLOCKS' | translate }}...
         </span>
-        <!--     in sync -->
-        <span *ngIf="wallet.running && wallet.blockchainStatus.syncProgresss >= 99.99">
+        <!-- in sync -->
+        <span *ngIf="!showProgressBar">
             {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
             {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
             {{ 'COMPONENTS.SIDEBAR.SYNC.TIMESINCEBLOCK' | translate }}
         </span>
         <!-- syncing -->
-        <progress max="100" [title]="progressTitle"
-            *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight && wallet.blockchainStatus.syncProgresss < 99.99"
+        <progress max="100" [title]="progressTitle" *ngIf="showProgressBar"
             [value]="wallet.blockchainStatus.syncProgresss"></progress>
     </span>
 </div>
