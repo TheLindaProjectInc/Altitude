@@ -18,7 +18,7 @@ const sleep = require('util').promisify(setTimeout)
 export default class Client {
     // client details
     clientsLocation = path.join(app.getPath('userData'), 'clients');
-    clientName = 'metrixd';
+    clientName = 'metrixcoind';
     clientConfigLocation = ''
     clientDataDir = '';
     clientConfig: ClientConfig;
