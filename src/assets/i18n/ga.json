@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Cruthúnas Hash",
             "TABLE_SIGNATURE": "Síniú",
             "TABLE_DIFFICULTY": "Deacracht",
-            "TABLE_ENTROPYBIT": "Giotán Entropy",
             "TABLE_BLOCKHASH": "Bloc Hash",
             "TABLE_CONFIRMATIONS": "Dearbhuithe",
             "TABLE_INPUTOUTPUT": "Ionchuir agus Aschuir",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Bain úsáid as seachfhreastalaí SOCKS5 chun comhghleacaithe a bhaint amach trí sheirbhísí i bhfolach Tor",
                 "ONLYNET": "Ní nascadh ach le nóid sa líonra",
                 "BLOCKINCOMING": "Ná lig naisc atá ag teacht isteach",
-                "RESTARTREQUIRED": "Éilítear ar atosú Cliant aon athruithe ar na suíomhanna seo a ghníomhachtú."
+                "RESTARTREQUIRED": "Éilítear ar atosú Cliant aon athruithe ar na suíomhanna seo a ghníomhachtú.",
+                "CHAINTYPE": "Líonra"
             },
             "WINDOW": {
                 "HIDETRAY": "Folaigh deilbhín an tráidire",
@@ -251,7 +251,6 @@
                 "LOCKED": "Glasán faoi ghlas",
                 "UNLOCKED": "Nótaíodh an sparán",
                 "UNLOCKEDSTAKING": "Díollaíodh an sparán le haghaidh stánaithe amháin",
-                "UNLOCKEDANON": "Díghlasáil sparán le haghaidh anaithnid amháin",
                 "STAKING": "Tá sparán á stiúradh faoi láthair",
                 "NOTSTAKING": "Níl sparán faoi láthair ag siúl",
                 "MASTERNODEON": "Tá Masternode ag rith faoi láthair",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Sparán Criptithe",
             "ENCRYPTEDCONTENT": "Ba cheart go gcuirfí an comhad sparán criptithe nua-ghinte in ionad aon chúltaca roimhe sin a rinne tú ar do chomhad sparán. Ar chúiseanna slándála, beidh cúltacaí roimhe seo den chomhadán sparán gan criptiú gan úsáid chomh luath agus a thosaíonn tú ag baint úsáide as an sparán nua criptithe.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopadh Metrix Core gan choinne",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a d'fhág go dtiocfadh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh ceisteanna.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a d’fhág go raibh deireadh leis. Moltar do chomhad debug.log a sheiceáil le haghaidh eagráin.",
             "CLIENTINVALIDCONFIGTITLE": "Cumraíocht metrix.conf neamhbhailí",
             "CLIENTINVALIDCONFIGINFO": "Tá eagraíocht neamhbhailí ar do metrix.conf a chuirfidh faoi deara go bhfuil Metrix Core scoir láithreach. Seiceáil an comhad seo le do thoil.",
             "ADDREMOTEMNTITLE": "Cuir cianda Masternode leis",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Innéacs Treibheanna Masternode",
             "BOOTSTRAPFAILEDTITLE": "Theip ar Bhunstrap Lárnach Metrix",
-            "BOOTSTRAPFAILEDINFO": "Bhí fadhb ag baint le croílár Metrix. Moltar duit do chomhad logála airde a sheiceáil le haghaidh saincheisteanna.",
+            "BOOTSTRAPFAILEDINFO": "Bhí fadhb ann bootstrapping Metrix Core. Moltar do chomhad logála Airde a sheiceáil le haghaidh saincheisteanna.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Uirlisí Téarnaimh",
             "STARTUPFAILEDTITLE": "Theip ar Tosaithe Lárnach Metrix",
-            "STARTUPFAILEDINFO": "Bhí Core Metrix ag tosú. Moltar duit do chomhad logála airde a sheiceáil le haghaidh saincheisteanna."
+            "STARTUPFAILEDINFO": "Bhí Metrix Core tosaigh ann. Moltar do chomhad logála Airde a sheiceáil le haghaidh saincheisteanna.",
+            "CLIENTUNKNOWNERRORTITLE": "Earráid Chumarsáide Lárnach Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Bhí fadhb ann cumarsáid a dhéanamh le Metrix Core. Moltar do chomhad debug.log a sheiceáil le haghaidh eagráin.",
+            "UNENROLLGOVERNORTITLE": "Deimhnigh Neamhchlárú Gobharnóirí",
+            "UNENROLLGOVERNORCONTENT": "An bhfuil tú cinnte gur mhaith leat do Ghobharnóir a dhíchlárú? Ní bheidh tú in ann vótáil a thuilleadh ar rialachas slabhra."
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar seoltaí",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Rabhadh! Níl tú ar an bpríomhshlabhra de réir an taiscéalaí Metrix. Moltar go mór duit do bhrislíní a ath-sync nó a athbhunú chun aon bhoinn a chailleadh."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Líonra reatha"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Earráid idirbhearta. Arís, le d'thoil.",
         "MINIMUMCONFIRMATIONS": "Éilíonn gach ionchur 1 dearbhú ar a laghad sula gcaitear.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Aistríodh idirbhearta chuig gearrthaisce",
-        "TRANSACTIONOUTPUTTOOLARGE": "Tá ceann de do phá le méideanna ró-mhór chun seol a sheoladh go sábháilte. Is é an t-uasmhéid ná 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Tá do athrú ró-mhór chun seol a sheoladh go sábháilte. Is é an t-uasmhéid ná 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Stopadh masternode...",
         "FAILEDTOWRITECONFIG": "Bhí fadhb ag scríobh chuig do chomhad metrix.conf. Seiceáil go bhfuil an comhad ann agus go bhfuil ceadanna scríofa ag Airde.",
         "NOPUBLICUP": "Níor aimsíodh aon seoladh IP Poiblí. Seiceáil do nasc idirlín agus atosú Airde.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Leat Seol",
-                "YOUGET": "Faigheann tú",
-                "MRXADDRESS": "Seoladh Metrix",
-                "SWAP": "Babhtáil",
-                "SWAPADDRESSES": "Seoltaí Babhtála",
-                "BTCADDRESS": "Seoladh BTC",
-                "INFOLINE1": "Nuair a bheidh seoladh taisce BTC agat seolfar aon mhalartú BTC chuig an seoladh sin go huathoibríoch le haghaidh MRX a chur isteach i do sheoladh MRX ainmnithe.",
-                "INFOLINE2-1": "Idirbhearta a bhíonn soiléir de ghnáth laistigh de uair an chloig ag brath ar na hamanna bloc Bitcoin. Is féidir linn glacadh le fiat do",
-                "INFOLINE2-2": "tíortha rannpháirteacha",
-                "INFOLINE2-3": "Déanfar é seo a thiontú go BTC ar dtús ansin MRX.",
-                "INFOLINE3": "Nuair a bheidh do thaisce BTC glanta gheobhaidh tú do MRX isteach i do sheoladh ainmnithe.",
-                "INFOLINE4": "Le haghaidh tuilleadh eolais ar cuairt",
-                "FIATSWAPSELECTED": "Déanfar tú a atreorú chuig Buy.Metrixcoin.com chun an t-idirbheart seo a chríochnú"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ní Gobharnóir tú",
+                "NOTGOVERNORDETAIL": "Tá gobharnóirí freagrach as vótáil ar bhuiséid mhíosúla agus ar athruithe blockchain. Féadfaidh tú a bheith i do Ghobharnóir tríd an gcomhthaobhacht cheart a ghlasáil sa chonradh Rialachais.",
+                "COLLATERAL": "Comhthaobhacht riachtanach",
+                "ENROLL": "Cláraigh",
+                "CONFIRMENROLL": "Tá tú ar tí clárú mar Ghobharnóir. Seolfaidh sé seo idirbheart leis an gcomhthaobhacht riachtanach chuig an gconradh rialachais. Is féidir leat díchlárú ag am ar bith.",
+                "ISGOVERNORTITLE": "Is Gobharnóir gníomhach tú!",
+                "ISGOVERNORDETAIL1": "Tá gobharnóirí freagrach as vótáil ar bhuiséid mhíosúla agus ar athruithe blockchain.",
+                "ISGOVERNORDETAIL2": "Chun fanacht mar Ghobharnóir beidh ort páirt a ghlacadh i vóta amháin ar a laghad gach 30 lá.",
+                "ISGOVERNORDETAIL3": "Mura bhfuil aon rud le vótáil air is féidir leat leanúint de do rollú de láimh trí phing ghníomhach a sheoladh.",
+                "UNENROLL": "Díchlárú",
+                "PING": "Seol Ping Gníomhach",
+                "LASTPINGTITLE": "Ping deireanach",
+                "LASTPINGSUFFIX": "bloic ó shin"
+            },
+            "BUDGET": {
+                "TITLE": "Tograí Buiséid",
+                "ADDPROPOSAL": "Cruthaigh Togra",
+                "REQUESTEDPERMONTH": "in aghaidh na míosa",
+                "REQUESTEDREMAINING": "fágtha",
+                "VOTEYES": "Vóta Sea",
+                "VOTEABSTAIN": "Vóta Abstain",
+                "VOTENO": "Vóta Uimh",
+                "VOTESTOPASS": "vótaí le pas a fháil",
+                "VOTEPASSING": "vótaí a rith",
+                "MINIMUMGOVERNORS": "Ní féidir buicéid a rith go dtí go mbeidh an líon íosta Gobharnóirí ar an slabhra.",
+                "CURRENTLY": "Faoi láthair",
+                "REQUIRED": "Riachtanach"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Cruthaigh Togra",
+                "DESCRIPTION": "Thíos is féidir leat togra buiséid a chruthú agus é a chur faoi bhráid an líonra le haghaidh vótála roimh an gcéad bhloc socraíochta buiséid eile.",
+                "BUDGETFEE": "Is é an táille buiséid reatha",
+                "BUDGETBLOCK": "Is é an chéad bhloc socraíochta eile",
+                "PROPOSALTITLE": "Ainm an Togra",
+                "PROPOSALDESC": "Cur síos ar an Togra",
+                "PROPOSALURL": "URL an togra",
+                "PROPOSALAMOUNT": "Méid Iarrtha",
+                "PROPOSALDURATION": "Íocaíochtaí Iarrtha",
+                "PROPOSALADDRESS": "Seoladh Íocaíochta",
+                "PROPOSALCREATE": "Cruthaigh Togra"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Rialachas",
+                "BUDGET": "Buiséad"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Ag Seoladh Seoladh Babhtála...",
+            "GETTINGSWAPADDRESS": "Seoladh Babhtála a Ghiniúint...",
             "ALREADYHAVEADDRESS": "Tá seoladh BTC agat cheana a bhaineann leis an seoladh Metrix seo",
-            "SWAPUSDMIN": "Is é $ 50 an méid babhtála íosta USD",
-            "SWAPUSDMAX": "Is é $ 3,000 an méid babhtála uasta USD",
-            "NOADDRESS": "Níor chuir tú isteach seoladh Metrix"
+            "SWAPUSDMIN": "Is é $ 50 an íosmhéid babhtála USD",
+            "SWAPUSDMAX": "Is é $ 3000 uasmhéid babhtála USD",
+            "INCOMPLETEFORM": "Níor líon tú gach réimse riachtanach i gceart",
+            "INVALIDPROPOSALDURATION": "Ba cheart go mbeadh tréimhsí an togra idir 1 agus 12 mhí",
+            "CREATINGPROPOSAL": "Togra a chur isteach chun líonra...",
+            "CREATEDPROPOSAL": "Cruthaíodh do thogra go rathúil",
+            "ENROLLINGGOVERNOR": "Ag clárú mar Ghobharnóir...",
+            "ENROLLEDGOVERNOR": "Beidh do rollú críochnaithe nuair a bheidh d’idirbheart deimhnithe",
+            "VOTINGONPROPOSAL": "Vóta togra a sheoladh",
+            "VOTEDONPROPOSAL": "Déanfar do vóta a chomhaireamh a luaithe a dheimhnítear an t-idirbheart.",
+            "NOADDRESS": "Níor iontráil tú seoladh Metrix",
+            "PINGINGGOVERNOR": "Ag seoladh ping...",
+            "PINGEDGOVERNOR": "Seoladh Ping go rathúil. Tabharfar do Ghobharnóir cothrom le dáta a luaithe a dheimhneofar an t-idirbheart",
+            "UNENROLLINGGOVERNOR": "Gobharnóir Neamhrialaithe...",
+            "UNENROLLEDGOVERNOR": "Idirbheart seolta. Beidh do Ghobharnóir neamhrialaithe a luaithe a dheimhnítear an t-idirbheart",
+            "GOVERNORNOTMATURE": "Níl do Ghobharnóir aibí go leor chun an gníomh seo a dhéanamh fós"
         }
     }
 }

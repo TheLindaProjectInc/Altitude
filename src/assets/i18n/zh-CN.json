@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "哈希证明",
             "TABLE_SIGNATURE": "签名",
             "TABLE_DIFFICULTY": "困难",
-            "TABLE_ENTROPYBIT": "熵位",
             "TABLE_BLOCKHASH": "阻止哈希",
             "TABLE_CONFIRMATIONS": "确认",
             "TABLE_INPUTOUTPUT": "输入和输出",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "使用单独的SOCKS5代理通过Tor隐藏服务到达同行",
                 "ONLYNET": "仅连接到网络中的节点",
                 "BLOCKINCOMING": "不允许传入连接",
-                "RESTARTREQUIRED": "需要重新启动客户端才能激活对这些设置的任何更改。"
+                "RESTARTREQUIRED": "需要重新启动客户端才能激活对这些设置的任何更改。",
+                "CHAINTYPE": "网络"
             },
             "WINDOW": {
                 "HIDETRAY": "隐藏托盘图标",
@@ -251,7 +251,6 @@
                 "LOCKED": "钱包锁定",
                 "UNLOCKED": "钱包解锁了",
                 "UNLOCKEDSTAKING": "钱包只能锁定",
-                "UNLOCKEDANON": "钱包仅针对匿名进行解锁",
                 "STAKING": "钱包目前正在赌注",
                 "NOTSTAKING": "钱包目前没有赌注",
                 "MASTERNODEON": "Masternode目前正在运行",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "钱包加密",
             "ENCRYPTEDCONTENT": "您对钱包文件进行的所有先前备份应替换为新生成的加密钱包文件。出于安全原因，一旦开始使用新的加密钱包，未加密的钱包文件的先前备份将变得无用。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "琳达核心出乎意料地停了下来",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出现问题导致它终止。建议检查debug.log文件以查找问题。",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core出现问题，导致其终止。建议检查您的debug.log文件是否存在问题。",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf配置无效",
             "CLIENTINVALIDCONFIGINFO": "您的metrix.conf具有无效的masternode设置，这将导致Metrix Core立即退出。请检查此文件。",
             "ADDREMOTEMNTITLE": "添加远程Masternode",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "引导Metrix Core时出现问题。建议检查您的海拔日志文件中是否有问题。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "恢复工具",
             "STARTUPFAILEDTITLE": "Metrix Core启动失败",
-            "STARTUPFAILEDINFO": "有一个起始的Metrix Core。建议检查您的海拔日志文件中是否有问题。"
+            "STARTUPFAILEDINFO": "有一个起始的Metrix Core。建议检查您的海拔日志文件中是否有问题。",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix核心通讯错误",
+            "CLIENTUNKNOWNERRORINFO": "与Metrix Core通讯时出现问题。建议检查您的debug.log文件是否存在问题。",
+            "UNENROLLGOVERNORTITLE": "确认州长取消注册",
+            "UNENROLLGOVERNORCONTENT": "您确定要取消注册州长吗？您将不再能够对链治理进行投票。"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "警告！根据Metrix资源管理器，您不在主链上。强烈建议重新同步或重新引导您的区块链，以避免丢失任何硬币。"
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "当前网络"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "交易错误。请再试一次。",
         "MINIMUMCONFIRMATIONS": "所有投入在消费前至少需要1次确认。",
         "TRANSACTIONSCOPIEDCLIPBOARD": "交易复制到剪贴板",
-        "TRANSACTIONOUTPUTTOOLARGE": "您支付的金额之一太大而无法安全发送。最大值为90,071,992.54740992。",
-        "TRANSACTIONCHANGETOOLARGE": "您的更改太大，无法安全发送。最大值为90,071,992.54740992。",
         "STOPPINGMASTERNODE": "停止masternode...",
         "FAILEDTOWRITECONFIG": "写入metrix.conf文件时出现问题。检查文件是否存在以及Altitude是否具有写入权限。",
         "NOPUBLICUP": "找不到公共IP地址。检查您的互联网连接并重新启动Altitude。",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "你发送",
-                "YOUGET": "你得到",
-                "MRXADDRESS": "Metrix地址",
-                "SWAP": "交换",
-                "SWAPADDRESSES": "交换地址",
-                "BTCADDRESS": "BTC地址",
-                "INFOLINE1": "一旦您有BTC存款地址，发送到该地址的任何BTC将自动换成MRX进入您指定的MRX地址。",
-                "INFOLINE2-1": "交易通常在一小时内清除，具体取决于比特币的时间段。我们可以接受法令",
-                "INFOLINE2-2": "参与国家",
-                "INFOLINE2-3": "这将首先转换为BTC然后转换为MRX。",
-                "INFOLINE3": "一旦您的BTC存款被清除，您将收到您的MRX到您指定的地址。",
-                "INFOLINE4": "有关更多信息，请访问",
-                "FIATSWAPSELECTED": "您将被重定向到Buy.Metrixcoin.com以完成此交易"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "你不是州长",
+                "NOTGOVERNORDETAIL": "州长负责对每月预算和区块链变更进行投票。您可以通过在治理合同中锁定正确的抵押品来成为总督。",
+                "COLLATERAL": "所需抵押",
+                "ENROLL": "注册",
+                "CONFIRMENROLL": "您即将注册为州长。这将向治理合同发送具有所需抵押品的交易。您可以随时取消注册。",
+                "ISGOVERNORTITLE": "您是一位活跃的州长！",
+                "ISGOVERNORDETAIL1": "州长负责对每月预算和区块链变更进行投票。",
+                "ISGOVERNORDETAIL2": "要成为州长，您将需要每30天至少参加1票表决。",
+                "ISGOVERNORDETAIL3": "如果没有什么可投票的，则可以通过发送活动的ping手动继续注册。",
+                "UNENROLL": "取消注册",
+                "PING": "发送活动Ping",
+                "LASTPINGTITLE": "最后一次ping",
+                "LASTPINGSUFFIX": "块前"
+            },
+            "BUDGET": {
+                "TITLE": "预算提案",
+                "ADDPROPOSAL": "创建提案",
+                "REQUESTEDPERMONTH": "每月",
+                "REQUESTEDREMAINING": "剩余的",
+                "VOTEYES": "投票是",
+                "VOTEABSTAIN": "弃权票",
+                "VOTENO": "投票否",
+                "VOTESTOPASS": "投票通过",
+                "VOTEPASSING": "通过票",
+                "MINIMUMGOVERNORS": "在链上存在最少数量的州长之前，无法通过Buget。",
+                "CURRENTLY": "目前",
+                "REQUIRED": "需要"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "创建提案",
+                "DESCRIPTION": "您可以在下面创建一个预算提案，然后在下一个预算结算块之前将其提交给网络进行投票。",
+                "BUDGETFEE": "当前的预算费用为",
+                "BUDGETBLOCK": "下一个结算块是",
+                "PROPOSALTITLE": "提案名称",
+                "PROPOSALDESC": "提案说明",
+                "PROPOSALURL": "提案网址",
+                "PROPOSALAMOUNT": "要求金额",
+                "PROPOSALDURATION": "要求的付款",
+                "PROPOSALADDRESS": "付款地址",
+                "PROPOSALCREATE": "创建提案"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "管治",
+                "BUDGET": "预算"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "生成交换地址......",
-            "ALREADYHAVEADDRESS": "您已经拥有与此Metrix地址关联的BTC地址",
+            "GETTINGSWAPADDRESS": "正在产生交换地址...",
+            "ALREADYHAVEADDRESS": "您已经有与此Metrix地址相关联的BTC地址",
             "SWAPUSDMIN": "最低美元掉期金额为50美元",
-            "SWAPUSDMAX": "最高美元掉期金额为3000美元",
-            "NOADDRESS": "您没有输入Metrix地址"
+            "SWAPUSDMAX": "最大美元掉期金额为$ 3000",
+            "INCOMPLETEFORM": "您尚未正确填写所有必填字段",
+            "INVALIDPROPOSALDURATION": "投标期限应在1到12个月之间",
+            "CREATINGPROPOSAL": "正在向网络提交提案...",
+            "CREATEDPROPOSAL": "您的提案已成功创建",
+            "ENROLLINGGOVERNOR": "正在注册为州长...",
+            "ENROLLEDGOVERNOR": "交易确认后，您的注册即告完成",
+            "VOTINGONPROPOSAL": "发送提案投票",
+            "VOTEDONPROPOSAL": "交易确认后，您的票数就会计算在内。",
+            "NOADDRESS": "您没有输入Metrix地址",
+            "PINGINGGOVERNOR": "正在发送ping...",
+            "PINGEDGOVERNOR": "Ping发送成功。交易确认后，您的总督将被更新",
+            "UNENROLLINGGOVERNOR": "正在取消注册州长...",
+            "UNENROLLEDGOVERNOR": "交易已发送。交易确认后，您的总督将被取消注册",
+            "GOVERNORNOTMATURE": "您的州长还不够成熟，无法执行此操作"
         }
     }
 }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash-Beweis",
             "TABLE_SIGNATURE": "Unterschrift",
             "TABLE_DIFFICULTY": "Schwierigkeit",
-            "TABLE_ENTROPYBIT": "Entropie-Bit",
             "TABLE_BLOCKHASH": "Blockhash",
             "TABLE_CONFIRMATIONS": "Bestätigungen",
             "TABLE_INPUTOUTPUT": "Eingänge und Ausgänge",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Verwenden Sie einen separaten SOCKS5-Proxy, um Peers über versteckte Dienste von Tor zu erreichen",
                 "ONLYNET": "Verbinden Sie sich nur mit Knoten im Netzwerk",
                 "BLOCKINCOMING": "Keine eingehenden Verbindungen zulassen",
-                "RESTARTREQUIRED": "Ein Client-Neustart ist erforderlich, um Änderungen an diesen Einstellungen zu aktivieren."
+                "RESTARTREQUIRED": "Ein Client-Neustart ist erforderlich, um Änderungen an diesen Einstellungen zu aktivieren.",
+                "CHAINTYPE": "Netzwerk"
             },
             "WINDOW": {
                 "HIDETRAY": "Taskleistensymbol ausblenden",
@@ -251,7 +251,6 @@
                 "LOCKED": "Brieftasche gesperrt",
                 "UNLOCKED": "Brieftasche freigeschaltet",
                 "UNLOCKEDSTAKING": "Brieftasche nur für Staking entsperrt",
-                "UNLOCKEDANON": "Wallet zur Anonymisierung freigeschaltet",
                 "STAKING": "Staking ist aktiviert",
                 "NOTSTAKING": "Staking ist nicht aktiviert",
                 "MASTERNODEON": "Masternode läuft derzeit",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Wallet verschlüsselt",
             "ENCRYPTEDCONTENT": "Alle vorherigen Sicherungen Ihrer Wallet-Datei sollten durch die neu generierte, verschlüsselte Wallet-Datei ersetzt werden. Aus Sicherheitsgründen werden frühere Sicherungen der unverschlüsselten Wallet-Datei unbrauchbar, sobald Sie die neue, verschlüsselte Wallet verwenden.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core blieb unerwartet stehen",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Es gab ein Problem mit Metrix Core, das zur Beendigung geführt hat. Es wird empfohlen, die Datei debug.log auf Probleme zu überprüfen.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Es gab ein Problem mit Metrix Core, das dazu führte, dass es beendet wurde. Es wird empfohlen, Ihre debug.log-Datei auf Probleme zu überprüfen.",
             "CLIENTINVALIDCONFIGTITLE": "Ungültige metrix.conf-Konfiguration",
             "CLIENTINVALIDCONFIGINFO": "Ihre metrix.conf hat ein ungültiges Masternode-Setup, wodurch Metrix Core sofort beendet wird. Bitte überprüfen Sie diese Datei.",
             "ADDREMOTEMNTITLE": "Remote Masternode hinzufügen",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap fehlgeschlagen",
-            "BOOTSTRAPFAILEDINFO": "Beim Booten von Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Probleme zu überprüfen.",
+            "BOOTSTRAPFAILEDINFO": "Beim Bootstrapping von Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, Ihre Höhenprotokolldatei auf Probleme zu überprüfen.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Wiederherstellungstools",
             "STARTUPFAILEDTITLE": "Metrix Core-Start fehlgeschlagen",
-            "STARTUPFAILEDINFO": "Es gab einen startenden Metrix Core. Es wird empfohlen, die Altitude-Protokolldatei auf Probleme zu überprüfen."
+            "STARTUPFAILEDINFO": "Es gab einen Start-Metrix-Core. Es wird empfohlen, Ihre Höhenprotokolldatei auf Probleme zu überprüfen.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-Kommunikationsfehler",
+            "CLIENTUNKNOWNERRORINFO": "Bei der Kommunikation mit Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, Ihre debug.log-Datei auf Probleme zu überprüfen.",
+            "UNENROLLGOVERNORTITLE": "Bestätigen Sie die Nichtregistrierung des Gouverneurs",
+            "UNENROLLGOVERNORCONTENT": "Sind Sie sicher, dass Sie Ihren Gouverneur abmelden möchten? Sie können nicht mehr über Chain Governance abstimmen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warnung! Sie befinden sich laut Metrix Explorer nicht in der Hauptkette. Es wird dringend empfohlen, die Blockchain neu zu synchronisieren oder neu zu starten, um den Verlust von Münzen zu vermeiden."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Aktuelles Netzwerk"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Transaktionsfehler Bitte versuche es erneut.",
         "MINIMUMCONFIRMATIONS": "Alle Eingaben erfordern vor dem Ausgeben mindestens eine Bestätigung.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "In die Zwischenablage kopierte Transaktionen",
-        "TRANSACTIONOUTPUTTOOLARGE": "Einer Ihrer Beträge ist zu groß, um ihn sicher zu versenden. Das Maximum beträgt 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ihre Änderung ist zu groß, um sie sicher zu senden. Das Maximum beträgt 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Masterknoten wird gestoppt...",
         "FAILEDTOWRITECONFIG": "Beim Schreiben in Ihre metrix.conf-Datei ist ein Fehler aufgetreten. Überprüfen Sie, ob die Datei vorhanden ist und Altitude über Schreibberechtigungen verfügt.",
         "NOPUBLICUP": "Keine öffentliche IP-Adresse gefunden. Überprüfen Sie Ihre Internetverbindung und starten Sie Altitude neu.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Du sendest",
-                "YOUGET": "Du kriegst",
-                "MRXADDRESS": "Metrix-Adresse",
-                "SWAP": "Wechsel",
-                "SWAPADDRESSES": "Adressen tauschen",
-                "BTCADDRESS": "BTC-Adresse",
-                "INFOLINE1": "Sobald Sie eine BTC-Einzahlungsadresse haben, wird jede an diese Adresse gesendete BTC automatisch für MRX in Ihre angegebene MRX-Adresse umgetauscht.",
-                "INFOLINE2-1": "Transaktionen werden in der Regel innerhalb einer Stunde gelöscht, abhängig von den Bitcoin-Blockierzeiten. Wir können Fiat für akzeptieren",
-                "INFOLINE2-2": "teilnehmende Länder",
-                "INFOLINE2-3": "Dies wird zuerst in BTC und dann in MRX konvertiert.",
-                "INFOLINE3": "Sobald Ihre BTC-Einzahlung eingegangen ist, erhalten Sie Ihre MRX an Ihre angegebene Adresse.",
-                "INFOLINE4": "Für weitere Informationen besuchen Sie",
-                "FIATSWAPSELECTED": "Sie werden zu Buy.Metrixcoin.com weitergeleitet, um diese Transaktion abzuschließen"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Sie sind kein Gouverneur",
+                "NOTGOVERNORDETAIL": "Die Gouverneure sind für die Abstimmung über monatliche Budgets und Blockchain-Änderungen verantwortlich. Sie können Gouverneur werden, indem Sie die richtigen Sicherheiten im Governance-Vertrag sperren.",
+                "COLLATERAL": "Erforderliche Sicherheiten",
+                "ENROLL": "Einschreiben",
+                "CONFIRMENROLL": "Sie sind dabei, sich als Gouverneur einzuschreiben. Dadurch wird eine Transaktion mit den erforderlichen Sicherheiten an den Governance-Vertrag gesendet. Sie können sich jederzeit abmelden.",
+                "ISGOVERNORTITLE": "Sie sind ein aktiver Gouverneur!",
+                "ISGOVERNORDETAIL1": "Die Gouverneure sind für die Abstimmung über monatliche Budgets und Blockchain-Änderungen verantwortlich.",
+                "ISGOVERNORDETAIL2": "Um ein Gouverneur zu bleiben, müssen Sie alle 30 Tage an mindestens einer Stimme teilnehmen.",
+                "ISGOVERNORDETAIL3": "Wenn Sie nicht abstimmen können, können Sie Ihre Registrierung manuell fortsetzen, indem Sie einen aktiven Ping senden.",
+                "UNENROLL": "Abmelden",
+                "PING": "Aktiven Ping senden",
+                "LASTPINGTITLE": "Letzter Ping",
+                "LASTPINGSUFFIX": "vor Blöcken"
+            },
+            "BUDGET": {
+                "TITLE": "Budgetvorschläge",
+                "ADDPROPOSAL": "Angebot erstellen",
+                "REQUESTEDPERMONTH": "pro Monat",
+                "REQUESTEDREMAINING": "verbleibend",
+                "VOTEYES": "Stimmen Sie ab Ja",
+                "VOTEABSTAIN": "Abstimmung Enthaltung",
+                "VOTENO": "Wähle Nein",
+                "VOTESTOPASS": "Stimmen zu verabschieden",
+                "VOTEPASSING": "Stimmen geben",
+                "MINIMUMGOVERNORS": "Bugets können erst weitergegeben werden, wenn die Mindestanzahl von Gouverneuren in der Kette vorhanden ist.",
+                "CURRENTLY": "Zur Zeit",
+                "REQUIRED": "Erforderlich"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Erstellen Sie einen Vorschlag",
+                "DESCRIPTION": "Im Folgenden können Sie einen Budgetvorschlag erstellen und ihn vor dem nächsten Budgetabrechnungsblock zur Abstimmung an das Netzwerk senden.",
+                "BUDGETFEE": "Die aktuelle Budgetgebühr beträgt",
+                "BUDGETBLOCK": "Der nächste Siedlungsblock ist",
+                "PROPOSALTITLE": "Vorschlagsname",
+                "PROPOSALDESC": "Angebotsbeschreibung",
+                "PROPOSALURL": "Angebots-URL",
+                "PROPOSALAMOUNT": "Angeforderter Betrag",
+                "PROPOSALDURATION": "Angeforderte Zahlungen",
+                "PROPOSALADDRESS": "Zahlungsadresse",
+                "PROPOSALCREATE": "Angebot erstellen"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Führung",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Swap-Adresse wird generiert...",
-            "ALREADYHAVEADDRESS": "Sie haben bereits eine BTC-Adresse mit dieser Metrix-Adresse verknüpft",
-            "SWAPUSDMIN": "Der Mindestbetrag für einen USD-Swap beträgt 50 USD",
+            "GETTINGSWAPADDRESS": "Swap-Adresse generieren...",
+            "ALREADYHAVEADDRESS": "Mit dieser Metrix-Adresse ist bereits eine BTC-Adresse verknüpft",
+            "SWAPUSDMIN": "Der Mindest-USD-Swap-Betrag beträgt 50 USD",
             "SWAPUSDMAX": "Der maximale USD-Swap-Betrag beträgt 3000 USD",
-            "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben"
+            "INCOMPLETEFORM": "Sie haben nicht alle erforderlichen Felder korrekt ausgefüllt",
+            "INVALIDPROPOSALDURATION": "Die Angebotsdauer sollte zwischen 1 und 12 Monaten liegen",
+            "CREATINGPROPOSAL": "Vorschlag an das Netzwerk senden...",
+            "CREATEDPROPOSAL": "Ihr Vorschlag wurde erfolgreich erstellt",
+            "ENROLLINGGOVERNOR": "Einschreibung als Gouverneur...",
+            "ENROLLEDGOVERNOR": "Ihre Registrierung ist abgeschlossen, sobald Ihre Transaktion bestätigt wurde",
+            "VOTINGONPROPOSAL": "Abstimmung des Vorschlags senden",
+            "VOTEDONPROPOSAL": "Ihre Stimme wird gezählt, sobald die Transaktion bestätigt wurde.",
+            "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben",
+            "PINGINGGOVERNOR": "Ping senden...",
+            "PINGEDGOVERNOR": "Ping erfolgreich gesendet. Ihr Gouverneur wird aktualisiert, sobald die Transaktion bestätigt wurde",
+            "UNENROLLINGGOVERNOR": "Abmeldender Gouverneur...",
+            "UNENROLLEDGOVERNOR": "Transaktion gesendet. Ihr Gouverneur wird abgemeldet, sobald die Transaktion bestätigt wurde",
+            "GOVERNORNOTMATURE": "Ihr Gouverneur ist noch nicht reif genug, um diese Aktion durchzuführen"
         }
     }
 }

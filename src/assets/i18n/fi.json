@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Allekirjoitus",
             "TABLE_DIFFICULTY": "vaikeus",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Estä Hash",
             "TABLE_CONFIRMATIONS": "vahvistukset",
             "TABLE_INPUTOUTPUT": "Tulot ja lähdöt",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Käytä erillistä SOCKS5-välityspalvelinta päästäksesi peers-palveluihin Tor-piilotettujen palvelujen kautta",
                 "ONLYNET": "Yhdistä vain verkon solmuihin",
                 "BLOCKINCOMING": "Älä salli saapuvia yhteyksiä",
-                "RESTARTREQUIRED": "Asiakkaan uudelleenkäynnistäminen edellyttää näiden asetusten muutosten aktivoimista."
+                "RESTARTREQUIRED": "Asiakkaan uudelleenkäynnistäminen edellyttää näiden asetusten muutosten aktivoimista.",
+                "CHAINTYPE": "Verkko"
             },
             "WINDOW": {
                 "HIDETRAY": "Piilota lokeron kuvake",
@@ -251,7 +251,6 @@
                 "LOCKED": "Lompakko lukittu",
                 "UNLOCKED": "Lompakko avattu",
                 "UNLOCKEDSTAKING": "Lompakko avattu vain stakingille",
-                "UNLOCKEDANON": "Lompakko avattu vain anonymisointiin",
                 "STAKING": "Lompakko on parhaillaan piilossa",
                 "NOTSTAKING": "Lompakko ei tällä hetkellä poista",
                 "MASTERNODEON": "Masternode on tällä hetkellä käynnissä",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Lompakko salattu",
             "ENCRYPTEDCONTENT": "Kaikki aiemmat varmuuskopiot, jotka olet tehnyt lompakon tiedostosta, on korvattava äskettäin luodulla, salatulla lompakon tiedostolla. Turvallisuussyistä salaamattomien lompakon tiedostojen aiemmat varmuuskopiot tulevat hyödyttömiksi heti, kun aloitat uuden salatun lompakon käyttämisen.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core pysähtyi yllättäen",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Corein ongelma oli aiheuttanut sen lopettamisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmista.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coressa oli ongelma, jonka vuoksi se päättyi. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmien varalta.",
             "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
             "CLIENTINVALIDCONFIGINFO": "metrix.confilla on virheellinen masternode-asetus, joka aiheuttaa Metrix Core -toiminnon poistumisen välittömästi. Tarkista tämä tiedosto.",
             "ADDREMOTEMNTITLE": "Lisää etä Masternode",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Metrix-ytimen käynnistämisessä tapahtui ongelma. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut",
             "STARTUPFAILEDTITLE": "Metrix-ytimen käynnistys epäonnistui",
-            "STARTUPFAILEDINFO": "Siellä oli alkava Metrix-ydin. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta."
+            "STARTUPFAILEDINFO": "Siellä oli alkava Metrix-ydin. On suositeltavaa tarkistaa korkeuslokitiedostosi ongelmien varalta.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix-ydinviestintävirhe",
+            "CLIENTUNKNOWNERRORINFO": "Yhteydessä Metrix Coreen oli ongelma. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmien varalta.",
+            "UNENROLLGOVERNORTITLE": "Vahvista kuvernöörin ilmoittautuminen",
+            "UNENROLLGOVERNORCONTENT": "Haluatko varmasti poistaa kuvernöörisi ilmoituksen? Et voi enää äänestää ketjun hallinnasta."
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Varoitus! Et ole pääketjussa Metrix-tutkimusmatkailijan mukaan. On erittäin suositeltavaa synkronoida tai käynnistää uudelleen ketju uudelleen, jotta kolikot eivät häviä."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Nykyinen verkko"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Transaktiovirhe. Yritä uudelleen.",
         "MINIMUMCONFIRMATIONS": "Kaikki tulot vaativat vähintään yhden vahvistuksen ennen käyttöä.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiot, jotka on kopioitu leikepöydälle",
-        "TRANSACTIONOUTPUTTOOLARGE": "Yksi palkkasi summista on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Muutos on liian suuri, jotta se voidaan lähettää turvallisesti. Maksimi on 90 071 992,54740992.",
         "STOPPINGMASTERNODE": "Masternodin pysäyttäminen...",
         "FAILEDTOWRITECONFIG": "Metrix.conf-tiedostoon kirjoitettaessa oli ongelma. Tarkista, että tiedosto on olemassa ja että korkeudessa on kirjoitusoikeudet.",
         "NOPUBLICUP": "Ei julkista IP-osoitetta. Tarkista Internet-yhteys ja käynnistä korkeus.",
@@ -446,22 +450,55 @@
         "NOV": "MARRASKUU",
         "DEC": "joulukuu"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Lähetät",
-                "YOUGET": "Saat",
-                "MRXADDRESS": "Metrix-osoite",
-                "SWAP": "Vaihtaa",
-                "SWAPADDRESSES": "Vaihda osoitteet",
-                "BTCADDRESS": "BTC-osoite",
-                "INFOLINE1": "Kun sinulla on BTC-talletusosoite, kaikki tähän osoitteeseen lähetetyt BTC vaihdetaan automaattisesti MRX: lle nimetyksi MRX-osoitteeseesi.",
-                "INFOLINE2-1": "Tapahtumat poistuvat tyypillisesti tunnin sisällä Bitcoin-estoaikaista riippuen. Voimme hyväksyä fiatin",
-                "INFOLINE2-2": "osallistuvat maat",
-                "INFOLINE2-3": "Tämä muunnetaan ensin BTC: ksi ja sitten MRX: ksi.",
-                "INFOLINE3": "Kun BTC-talletus on tyhjennetty, saat MRX-osoitteen nimeämääsi osoitteeseen.",
-                "INFOLINE4": "Lisätietoja käy osoitteessa",
-                "FIATSWAPSELECTED": "Sinut ohjataan Buy.Metrixcoin.com-sivustoon suorittaaksesi tämän tapahtuman"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Et ole kuvernööri",
+                "NOTGOVERNORDETAIL": "Pääjohtajat ovat vastuussa kuukausibudjettien ja blockchain-muutosten äänestämisestä. Voit tulla johtajaksi lukitsemalla oikean vakuuden hallintasopimukseen.",
+                "COLLATERAL": "Vaadittava vakuus",
+                "ENROLL": "Ilmoittaudu",
+                "CONFIRMENROLL": "Olet ilmoittautumassa kuvernööriksi. Tämä lähettää vaadittavien vakuuksien kanssa tapahtuman hallintasopimukseen. Voit perua ilmoittautumisen milloin tahansa.",
+                "ISGOVERNORTITLE": "Olet aktiivinen kuvernööri!",
+                "ISGOVERNORDETAIL1": "Pääjohtajat ovat vastuussa kuukausibudjettien ja blockchain-muutosten äänestämisestä.",
+                "ISGOVERNORDETAIL2": "Pysyäksesi kuvernöörinä joudut osallistumaan vähintään yhteen äänestykseen 30 päivän välein.",
+                "ISGOVERNORDETAIL3": "Jos äänestämisestä ei ole mitään, voit jatkaa ilmoittautumista manuaalisesti lähettämällä aktiivisen pingin.",
+                "UNENROLL": "Peruuta osallistuminen",
+                "PING": "Lähetä aktiivinen ping",
+                "LASTPINGTITLE": "Viimeinen ping",
+                "LASTPINGSUFFIX": "lohkoja sitten"
+            },
+            "BUDGET": {
+                "TITLE": "Budjetti-ehdotukset",
+                "ADDPROPOSAL": "Luo ehdotus",
+                "REQUESTEDPERMONTH": "kuukaudessa",
+                "REQUESTEDREMAINING": "jäljelle jäänyt",
+                "VOTEYES": "Äänestä Kyllä",
+                "VOTEABSTAIN": "Äänestä tyhjää",
+                "VOTENO": "Äänestys Ei",
+                "VOTESTOPASS": "ääniä",
+                "VOTEPASSING": "läpäisevät äänet",
+                "MINIMUMGOVERNORS": "Bugetteja ei voida siirtää ennen kuin ketjussa on vähimmäismäärä kuvernöörejä.",
+                "CURRENTLY": "Tällä hetkellä",
+                "REQUIRED": "Vaaditaan"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Luo ehdotus",
+                "DESCRIPTION": "Alla voit luoda talousarvioesityksen ja lähettää sen verkkoon äänestämistä varten ennen seuraavaa budjetin selvityslohkoa.",
+                "BUDGETFEE": "Nykyinen budjettimaksu on",
+                "BUDGETBLOCK": "Seuraava ratkaisukortti on",
+                "PROPOSALTITLE": "Ehdotuksen nimi",
+                "PROPOSALDESC": "Ehdotuksen kuvaus",
+                "PROPOSALURL": "Ehdotuksen URL-osoite",
+                "PROPOSALAMOUNT": "Pyydetty määrä",
+                "PROPOSALDURATION": "Pyydetyt maksut",
+                "PROPOSALADDRESS": "Maksuosoite",
+                "PROPOSALCREATE": "Luo ehdotus"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "hallintotavan",
+                "BUDGET": "talousarvio"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Sinulla on jo BTC-osoite liitetty tähän Metrix-osoitteeseen",
             "SWAPUSDMIN": "Minimi USD-vaihtomäärä on 50 dollaria",
             "SWAPUSDMAX": "Maksimi USD-vaihtomäärä on 3000 dollaria",
-            "NOADDRESS": "Et kirjoittanut Metrix-osoitetta"
+            "INCOMPLETEFORM": "Et ole täyttänyt kaikkia vaadittavia kenttiä oikein",
+            "INVALIDPROPOSALDURATION": "Ehdotuksen keston tulisi olla 1–12 kuukautta",
+            "CREATINGPROPOSAL": "Lähetetään ehdotus verkkoon...",
+            "CREATEDPROPOSAL": "Ehdotuksesi on luotu onnistuneesti",
+            "ENROLLINGGOVERNOR": "Ilmoittautuminen kuvernööriksi...",
+            "ENROLLEDGOVERNOR": "Ilmoittautuminen on valmis, kun tapahtuma on vahvistettu",
+            "VOTINGONPROPOSAL": "Lähetetään ehdotusäänestys",
+            "VOTEDONPROPOSAL": "Äänesi lasketaan, kun tapahtuma on vahvistettu.",
+            "NOADDRESS": "Et kirjoittanut Metrix-osoitetta",
+            "PINGINGGOVERNOR": "Lähetetään pingiä...",
+            "PINGEDGOVERNOR": "Ping lähetetty onnistuneesti. Kuvernöörisi päivitetään, kun tapahtuma on vahvistettu",
+            "UNENROLLINGGOVERNOR": "Kuvernöörin ilmoittautumisen peruuttaminen...",
+            "UNENROLLEDGOVERNOR": "Tapahtuma lähetetty. Kuvernöörisi rekisteröinti poistetaan, kun tapahtuma on vahvistettu",
+            "GOVERNORNOTMATURE": "Kuvernöörisi ei ole vielä tarpeeksi kypsä suorittamaan tätä toimintoa"
         }
     }
 }

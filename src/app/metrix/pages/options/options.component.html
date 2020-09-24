@@ -27,9 +27,11 @@
     </div>
     <div class="form-inline">
       <span>{{ 'PAGES.OPTIONS.NETWORK.PROXYIP' | translate }}:</span>
-      <text-input [disabled]="!proxy.allow" [(inputModel)]="proxy.ip" (change)="setProxy()" placeholder="127.0.0.1"></text-input>
+      <text-input [disabled]="!proxy.allow" [(inputModel)]="proxy.ip" (change)="setProxy()" placeholder="127.0.0.1">
+      </text-input>
       <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
-      <text-input type="number" [disabled]="!proxy.allow" [(inputModel)]="proxy.port" (change)="setProxy()" placeholder="33820"></text-input>
+      <text-input type="number" [disabled]="!proxy.allow" [(inputModel)]="proxy.port" (change)="setProxy()"
+        placeholder="33820"></text-input>
     </div>
     <!-- only net -->
     <div class="form-inline" style="padding-top: 20px;">
@@ -54,9 +56,31 @@
     </div>
     <div class="form-inline">
       <span>{{ 'PAGES.OPTIONS.NETWORK.PROXYIP' | translate }}:</span>
-      <text-input [disabled]="!tor.allow" [(inputModel)]="tor.ip" (change)="setTor()" placeholder="127.0.0.1"></text-input>
+      <text-input [disabled]="!tor.allow" [(inputModel)]="tor.ip" (change)="setTor()" placeholder="127.0.0.1">
+      </text-input>
       <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
-      <text-input type="number" [disabled]="!tor.allow" [(inputModel)]="tor.port" (change)="setTor()" placeholder="33820"></text-input>
+      <text-input type="number" [disabled]="!tor.allow" [(inputModel)]="tor.port" (change)="setTor()"
+        placeholder="33820"></text-input>
+    </div>
+    <!-- only net -->
+    <div class="form-inline" style="padding-top: 20px;">
+      <span>{{ 'PAGES.OPTIONS.NETWORK.CHAINTYPE' | translate }}:</span>
+      <div style="padding-left: 10px;">
+        <input id="chkMainnet" [(ngModel)]="network" [value]="0" type='radio' />
+        <label for="chkMainnet">Mainnet</label>
+      </div>
+      <div style="padding-left: 10px;">
+        <input id="chkTestnet" [(ngModel)]="network" [value]="1" type='radio' />
+        <label for="chkTestnet">Testnet</label>
+      </div>
+      <div style="padding-left: 10px;">
+        <input id="chkRegtest" [(ngModel)]="network" [value]="2" type='radio' />
+        <label for="chkRegtest">Regtest</label>
+      </div>
+    </div>
+
+    <div class="toolbar-bottom">
+      <button class="btn btn-default right" (click)="restart()"> {{'MENU.FILE.RESTARTCORE' | translate}}</button>
     </div>
 
   </div>
@@ -68,11 +92,13 @@
       <label for="chkHideTray">{{ 'PAGES.OPTIONS.WINDOW.HIDETRAY' | translate }}</label>
     </div>
     <div style="padding-top: 10px;">
-      <input id="chkMinTray" (change)="setMinimiseToTray()" [(ngModel)]="electron.settings.minimiseToTray" type='checkbox' />
+      <input id="chkMinTray" (change)="setMinimiseToTray()" [(ngModel)]="electron.settings.minimiseToTray"
+        type='checkbox' />
       <label for="chkMinTray">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZETOTRAY' | translate }}</label>
     </div>
     <div style="padding-top: 10px;">
-      <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose" type='checkbox' />
+      <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose"
+        type='checkbox' />
       <label for="chkMinClose">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZEONCLOSE' | translate }}</label>
     </div>
   </div>

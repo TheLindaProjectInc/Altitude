@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Faʻamaonia le Faamaoniga",
             "TABLE_SIGNATURE": "Saini",
             "TABLE_DIFFICULTY": "Faigata",
-            "TABLE_ENTROPYBIT": "Faʻasalaga Entropy",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Faamaoniga",
             "TABLE_INPUTOUTPUT": "Faʻatinoga ma Galuega Faatino",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Faʻaaoga le SOCKS5 vavalalata vavalalata e oʻo atu ai i paaga e ala i le faʻamalologaina o auaunaga",
                 "ONLYNET": "Naʻo le faʻafesoʻotaʻi i laina i totonu o fesoʻotaʻiga",
                 "BLOCKINCOMING": "Aua nei faatagaina fesootaiga e sau",
-                "RESTARTREQUIRED": "E manaʻomia le toe amataina o tagata e faʻafesoʻotaʻi soʻo se suiga i nei faatulagaga."
+                "RESTARTREQUIRED": "E manaʻomia le toe amataina o tagata e faʻafesoʻotaʻi soʻo se suiga i nei faatulagaga.",
+                "CHAINTYPE": "Fesoʻotaʻiga"
             },
             "WINDOW": {
                 "HIDETRAY": "Faʻaali le faʻailoga pusa",
@@ -251,7 +251,6 @@
                 "LOCKED": "Ua tapuni le faila",
                 "UNLOCKED": "Ua tatala le atotupe",
                 "UNLOCKEDSTAKING": "Ua tatala le atotupe mo naʻo le na o le taʻavale lava",
-                "UNLOCKEDANON": "Faʻasaʻo le faila mo le faʻasalaga",
                 "STAKING": "Ua fai nei le ato tupe",
                 "NOTSTAKING": "E le o taofiofi le atotupe",
                 "MASTERNODEON": "O loʻo taʻavale le masternode",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Paʻu Papuni",
             "ENCRYPTEDCONTENT": "Soo se faʻamaumauga muamua na e faia mai lau faila faila e tatau ona suia i le faila fou faila, faʻailoga faila. Mo faʻamatalaga saogalemu, o faʻamaumauga muamua o le faila pusa e le faʻapipiʻi o le a faʻaaogaina pe a amata ona e faʻaaoga le atotupe fou, faʻailoga.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Na le mautonu",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Sa i ai se faafitauli ia Metrix Core na mafua ai ona faamutaina. O le fautuaga e siaki lau debug.log file mo mataupu.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Na iai le faʻafitauli ile Metrix Core na mafua ai ona muta. E fautuaina e siaki lau faila debug.log mo mataupu.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "O lou metrix.conf o loʻo i ai se faʻatonuina o le masternode setup lea o le a mafua ai ona alu vave Metrix Core. Faamolemole siaki lenei faila.",
             "ADDREMOTEMNTITLE": "Faʻaopoopo le Masofo mamao",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metotia Core Bootstrap Faiva",
-            "BOOTSTRAPFAILEDINFO": "Sa i ai se faʻafitauli o le amataina o le Metrix Core. O le pepa faataga e siaki ai lau faila o le Altitude log mo faafitauli.",
+            "BOOTSTRAPFAILEDINFO": "Sa iai le faʻafitauli i le bootstrapping Metrix Core. E fautuaina e siaki lau Altitude faila faila mo mataupu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Meafaigaluega Faʻasao",
             "STARTUPFAILEDTITLE": "Faʻasalalau le Metrix Core Startup",
-            "STARTUPFAILEDINFO": "Sa i ai se amataga o le Metrix Core. O le pepa faataga e siaki ai lau faila o le Altitude log mo faafitauli."
+            "STARTUPFAILEDINFO": "Sa i ai le amataga Metrix Core. E fautuaina e siaki lau Altitude faila faila mo mataupu.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Fesootaiga Sese",
+            "CLIENTUNKNOWNERRORINFO": "Na iai se faʻafitauli i le fesoʻotaʻiga ma le Metrix Core. E fautuaina e siaki lau faila debug.log mo mataupu.",
+            "UNENROLLGOVERNORTITLE": "Faamaonia le Kovana le faamauina",
+            "UNENROLLGOVERNORCONTENT": "O e mautinoa e te manaʻo e tatala le lesitala o lau Kovana? E le toe mafai ona e palota ile pulega malo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Tusi Resitala",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Lapataiga! E te le oi luga ole filifili autu e tusa ai ma le tagata suʻesuʻe Metrix. E sili atu le fautuaina e toe faʻatasia pe toe faʻafouina lau poloka poloka e aloese mai le leiloa o soʻo se tupe siliva."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Fesoʻotaʻiga nei"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Faʻasalaga o fefaʻatauaiga. Faamolemole toe taumafai.",
         "MINIMUMCONFIRMATIONS": "O mea uma e manaʻomia e le itiiti ifo i le 1 faʻamaoniga ao leʻi faʻaaluina.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Faʻasalaga gaosi i luga o le laupapa",
-        "TRANSACTIONOUTPUTTOOLARGE": "O se tasi o lau totogi ile aofaiga e telē tele e auina atu ma le saogalemu. Ole maualuga ole 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "O lau suiga e telē tele e auina atu saogalemu. Ole maualuga ole 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Taofi le mastern...",
         "FAILEDTOWRITECONFIG": "Sa i ai se faʻafitauli e tusi i lau faila file metrix.conf. Siaki le faila ma o Altitude o tusi tusitusi.",
         "NOPUBLICUP": "Leai se tuatusi IP a le malo na maua. Siaki lau fesoʻotaiga i luga ole initaneti ma toe amata Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Oe Auina atu",
-                "YOUGET": "Oe Maua",
-                "MRXADDRESS": "Metrix Tuatusi",
-                "SWAP": "Swap",
-                "SWAPADDRESSES": "Swap Addresses",
-                "BTCADDRESS": "BTC Address",
-                "INFOLINE1": "O le taimi lava e te maua ai se tuatusi a le BTC soʻo se BTC auina atu i lena tuatusi o le a otometi lava ona vavaeina mo le MRX i totonu o lau tuatusi MRX.",
-                "INFOLINE2-1": "Gaoioiga e masani ona manino i totonu o le itula e faalagolago i taimi Bitcoin poloka. E mafai ona tatou talia le tele o mea",
-                "INFOLINE2-2": "atunuu o loʻo auai",
-                "INFOLINE2-3": "O lenei mea o le a faaliliuina i le BTC muamua ona MRX.",
-                "INFOLINE3": "A maeʻa loa ona faʻamaonia lau BTC, e te maua lau MRX i lau tuatusi filifilia.",
-                "INFOLINE4": "Mo nisi faʻamatalaga asiasi",
-                "FIATSWAPSELECTED": "O le a tuʻuina atu oe i le Buy.Metrixcoin.com e faʻauma ai lenei fefaʻatauaiga"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "E le o oe Kovana",
+                "NOTGOVERNORDETAIL": "O kovana e nafa ma le palota i masina taitasi ma suiga blockchain. E mafai ona avea oe ma Kovana e ala i le lokaina o le faʻavaʻa saʻo i le Pulega feagaiga.",
+                "COLLATERAL": "Manaʻomia faamalosi",
+                "ENROLL": "Lesitala",
+                "CONFIRMENROLL": "Toeitiiti lava e lesitala e avea ma Kovana. Lenei o le a lafoina se feuiaiga ma se faamalumaluga manaomia i le pulega konekarate. E le mafai ona lesitala i soo se taimi.",
+                "ISGOVERNORTITLE": "O oe o le toaga Kovana!",
+                "ISGOVERNORDETAIL1": "O kovana e nafa ma le palota i masina taitasi ma suiga blockchain.",
+                "ISGOVERNORDETAIL2": "Ina ia nofo se Kovana o le ae manaʻomia le auai i le itiiti ifo 1 palota i aso 30 uma.",
+                "ISGOVERNORDETAIL3": "Afai e leai se mea e palota ai ona mafai loa lea ona faʻauau lau lesitala i le lafoina o se ping malosi.",
+                "UNENROLL": "Tatala",
+                "PING": "Auina Atu le Ping",
+                "LASTPINGTITLE": "Ping mulimuli",
+                "LASTPINGSUFFIX": "poloka talu ai"
+            },
+            "BUDGET": {
+                "TITLE": "Tala Faatatau o le Tupe",
+                "ADDPROPOSAL": "Fatu le talosaga",
+                "REQUESTEDPERMONTH": "i le masina",
+                "REQUESTEDREMAINING": "totoe",
+                "VOTEYES": "Palota Ioe",
+                "VOTEABSTAIN": "Palota Aloese",
+                "VOTENO": "Vote leai",
+                "VOTESTOPASS": "palota e pasi",
+                "VOTEPASSING": "pasi atu o palota",
+                "MINIMUMGOVERNORS": "Bugets le mafai ona pasia seʻi vagana o le aofaʻi maualalo o Kovana i luga o le filifili.",
+                "CURRENTLY": "Taimi nei",
+                "REQUIRED": "Manaʻomia"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Fausia se Talosaga",
+                "DESCRIPTION": "Lalo oe mafai ona fausiaina se paketi faʻatupe ma tuʻuina i le fesoʻotaʻiga mo le palota ao leʻi oʻo atu i le isi paketi paketi paketi.",
+                "BUDGETFEE": "O le tupe totogi o le taimi nei o",
+                "BUDGETBLOCK": "O le isi mea e nonofo ai o le poloka",
+                "PROPOSALTITLE": "Igoa ole talosaga",
+                "PROPOSALDESC": "Talosaga Fautuaga",
+                "PROPOSALURL": "Talosaga URL",
+                "PROPOSALAMOUNT": "Talosaga Aofaiga",
+                "PROPOSALDURATION": "Talosagaina Tupe Totogi",
+                "PROPOSALADDRESS": "Totogi Tuatusi",
+                "PROPOSALCREATE": "Fatu le talosaga"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Muliaga Pulemalo",
+                "BUDGET": "Tala o le tupe"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Faʻasologa o le Swap Address...",
-            "ALREADYHAVEADDRESS": "Ua i ai sau tuatusi BTC e fesootaʻi ma lenei tuatusi Metrix",
-            "SWAPUSDMIN": "O le aofaʻi ile aofaʻi o le $ swap USD",
-            "SWAPUSDMAX": "O le maualuga o le $ swap USD e $ 3000",
-            "NOADDRESS": "E te leʻi ulufale i se tuatusi Metrix"
+            "GETTINGSWAPADDRESS": "Fausia le Suiga Tuatusi...",
+            "ALREADYHAVEADDRESS": "O loʻo iai sau tuatusi BTC e fesoʻotaʻi ma lenei tuatusi Metrix",
+            "SWAPUSDMIN": "Le maualalo ole USD swap aofaiga e $ 50",
+            "SWAPUSDMAX": "Ole maualuga ole USD e fesuiaʻi ai le aofaʻi e $ 3000",
+            "INCOMPLETEFORM": "E te leʻi faʻatumuina uma fanua manaomia i le saʻo",
+            "INVALIDPROPOSALDURATION": "Talosaga vaitaimi e tatau ona i ai ile 1 ma 12 masina",
+            "CREATINGPROPOSAL": "Tuuina atu o talosaga i fesoʻotaʻiga...",
+            "CREATEDPROPOSAL": "Ua maeʻa ona fausia lau talosaga",
+            "ENROLLINGGOVERNOR": "Resitala o se Kovana...",
+            "ENROLLEDGOVERNOR": "O lou lesitala o le a maeʻa pe a faʻamaonia lau feuiaiga",
+            "VOTINGONPROPOSAL": "Auina atu le talosaga palota",
+            "VOTEDONPROPOSAL": "O le a maitauina lau palota pe a faʻamaonia le feuiuiaiga.",
+            "NOADDRESS": "E te leʻi tusia se tuatusi Metrix",
+            "PINGINGGOVERNOR": "Lafoina ping...",
+            "PINGEDGOVERNOR": "Ping auina manuia. O le a toe faʻafouina lau Kovana pe a faʻamaonia le feuiaiga",
+            "UNENROLLINGGOVERNOR": "Lesitalaina le Kovana...",
+            "UNENROLLEDGOVERNOR": "G lafoina lafoina. O le a le lesitalaina lau Kovana pe a faʻamaonia le feuiaiga",
+            "GOVERNORNOTMATURE": "O lau Kovana e leʻo lava lona matua e faia ai lenei gaioiga"
         }
     }
 }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hatu Whakaatu",
             "TABLE_SIGNATURE": "Waitohu",
             "TABLE_DIFFICULTY": "He uaua",
-            "TABLE_ENTROPYBIT": "Puku Entropy",
             "TABLE_BLOCKHASH": "Poraka Poraka",
             "TABLE_CONFIRMATIONS": "Whakaaturanga",
             "TABLE_INPUTOUTPUT": "Nga Putanga me nga Hua",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Whakamahia te takawaenga SOCKS5 motuhake ki te tae atu ki nga hoa na roto i nga ratonga huna Tor",
                 "ONLYNET": "Whakahonoa anake ki nga wharangi i te whatunga",
                 "BLOCKINCOMING": "Kaua e tukua nga hononga taumai",
-                "RESTARTREQUIRED": "Me tīmata te tīmatanga o te Kiritaki ki te whakahohe i tetahi huringa ki enei tautuhinga."
+                "RESTARTREQUIRED": "Me tīmata te tīmatanga o te Kiritaki ki te whakahohe i tetahi huringa ki enei tautuhinga.",
+                "CHAINTYPE": "Whatunga"
             },
             "WINDOW": {
                 "HIDETRAY": "Hunaia te tohu pereki",
@@ -251,7 +251,6 @@
                 "LOCKED": "Kua tutakina te putea",
                 "UNLOCKED": "Kua wewete te putea",
                 "UNLOCKEDSTAKING": "Kua wehehia te putea mo te waahi anake",
-                "UNLOCKEDANON": "Kua wehehia te putea mo te hainatanga anake",
                 "STAKING": "Kei te mau tonu te putea",
                 "NOTSTAKING": "Kaore e waahi ana te peera",
                 "MASTERNODEON": "Kei te rere a Masternode",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Kua Paunatia te Paera",
             "ENCRYPTEDCONTENT": "Me whakakapi tetahi taapiri tawhito i mahia e koe mo to peke putea ki te kōnae putea i hangaia hou, i hunahia. Mo nga take haumaru, ka kore noa nga taapiri o mua o te putea kaore i te whakamunahia i te wa ka timata koe ki te whakamahi i te putea hou, whakamatautau.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Kua mutu a Metrix Core",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "He raruraru kei a Metrix Core kua mutu te whakamutu. He tūtohutanga kia tirohia to kōnae debug.log mo nga take.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "I puta tetahi raru ki te Metrix Core nana i aukati i te mutunga. E taunaki ana kia tirohia to kōnae debug.log mo nga take.",
             "CLIENTINVALIDCONFIGTITLE": "Motuhake metrix.conf Whirihoranga",
             "CLIENTINVALIDCONFIGINFO": "Kei a metrix.conf tetahi tautuhinga matternode kaore e pai kia puta wawe a Metrix Core. Tirohia koa tenei kōnae.",
             "ADDREMOTEMNTITLE": "Tāpirihia te Motuhake Mamao",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Taurangi Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "I Whakahoutia Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "I puta mai tetahi raru bootstrapping Metrix Core. E tūtohutia ana kia tirohia to momo rakau rangapu Altitude mo nga take.",
+            "BOOTSTRAPFAILEDINFO": "I puta mai tetahi raru bootstrapping Metrix Core. E taunakitia ana kia tirohia to momo rarangi kaiwaiata Altitude mo nga take",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Utauta Whakahoki",
             "STARTUPFAILEDTITLE": "I Whakakore te Whakaoho Matatini Metrix",
-            "STARTUPFAILEDINFO": "I timata te Metrix Core. E tūtohutia ana kia tirohia to wharangi rango Altitude mo nga take."
+            "STARTUPFAILEDINFO": "I timata te Metrix Core. E taunakitia ana kia tirohia to momo rarangi kaiwaiata Altitude mo nga take",
+            "CLIENTUNKNOWNERRORTITLE": "Te Hapa Whakawhitiwhiti Metrix",
+            "CLIENTUNKNOWNERRORINFO": "I puta tetahi raru ki te korero ki te Metrix Core. E taunaki ana kia tirohia to kōnae debug.log mo nga take.",
+            "UNENROLLGOVERNORTITLE": "Whakaū Kawana Kore whakauru",
+            "UNENROLLGOVERNORCONTENT": "Kei te tino hiahia koe ki te whakauru rehita i to Kawana? Kaore e taea e koe te pooti i te mana whakahaere mekameka."
         },
         "ADDRESSBOOK": {
             "TITLE": "Puka Puka Wāhitau",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Whakatūpato! Kaore koe i runga i te mekameka matua kia rite ki te kaihautu Metrix. Ka tino haangai kia whakahoahoa, ka kukuti ano ranei ki to blockchain kia kore ai e ngaro nga moni."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Whatunga onāianei"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Hapa mahi. Tena ngana ano.",
         "MINIMUMCONFIRMATIONS": "Ko nga waahanga katoa e hiahia ana kia neke atu i te 1 te tiwhikete i mua i te whakapaunga",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ko nga mahi i tuhia ki te papapātuhi",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ko tetahi o to utu ki te nui he nui rawa atu ki te tuku atu ma te hauora. Ko te morahi ko 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "He nui rawa to huringa ki te tuku maanatia. Ko te morahi ko 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Kati ana i te matternode...",
         "FAILEDTOWRITECONFIG": "He raruraru te tuhi ki to kōnae metrix.conf. Tirohia te ahua o te kōnae, me nga whakaaetanga tuhituhi a Altitude.",
         "NOPUBLICUP": "Kaore i kitea tetahi IP IP. Tirohia to hononga ipurangi me te tīmata anō i te Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Tukuna mai e koe",
-                "YOUGET": "Tono koe",
-                "MRXADDRESS": "Wāhitau Metrix",
-                "SWAP": "Kaerapi",
-                "SWAPADDRESSES": "Whakawhitinga Whakawhiti",
-                "BTCADDRESS": "Wāhitau a BTC",
-                "INFOLINE1": "Ina whiwhi ana koe i tetahi tuunga tahua BTC ka tukuna e tetahi BTC ki taua wahitau, ka tere te whakawhiti ki a MRX ki to tuunga MRX kua tohua.",
-                "INFOLINE2-1": "Ko nga whakawhitiwhiti e tino maamaa ana i roto i te haora kotahi te taatai i nga waa poraka a Bitcoin. Ka taea e tatou te whakaae fiat",
-                "INFOLINE2-2": "nga whenua whai waahi",
-                "INFOLINE2-3": "Ka hurihia tenei ki BTC i te tuatahi ka hikoi MRX.",
-                "INFOLINE3": "Ina mutu te penapena BTC, ka riro i a koe to MRX ki to wāhitau kua whakaingoatia.",
-                "INFOLINE4": "Mo te roanga atu o nga korero",
-                "FIATSWAPSELECTED": "Ka tukuna koe ano ki Buy.Metrixcoin.com hei whakaoti i tenei mahi"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ehara koe i te Kawana",
+                "NOTGOVERNORDETAIL": "Ko nga kawana te kawenga mo te pooti i nga tahua marama me nga huringa blockchain. Ka taea e koe te tu hei Kawana ma te aukati i nga tohu tika i roto i te kirimana Kawana.",
+                "COLLATERAL": "Tiwhikete hiahiatia",
+                "ENROLL": "Whakauru",
+                "CONFIRMENROLL": "E tata ana koe ki te rēhita hei Kawana. Ka tukuna atu e tenei he tauhokohoko me te taurangi e hiahiatia ana ki te kirimana kawanatanga. Ka taea e koe te arai i nga wa katoa.",
+                "ISGOVERNORTITLE": "He Kawana kaha koe!",
+                "ISGOVERNORDETAIL1": "Ko nga kawana te kawenga mo te pooti i nga tahua marama me nga huringa blockchain.",
+                "ISGOVERNORDETAIL2": "Ki te noho hei Kawana me uru koe ki te 1 pooti mo te 30 ra.",
+                "ISGOVERNORDETAIL3": "Mena kaore he mea hei pooti mo te waa ka taea e koe te haere tonu i to whakauru ma te tuku i tetahi papa mahi.",
+                "UNENROLL": "Te Whakakore",
+                "PING": "Tukuna he Taihoa Hohe",
+                "LASTPINGTITLE": "Te ping whakamutunga",
+                "LASTPINGSUFFIX": "poraka i mua"
+            },
+            "BUDGET": {
+                "TITLE": "Nga Tono Moni",
+                "ADDPROPOSAL": "Waihangahia te Tono",
+                "REQUESTEDPERMONTH": "ia marama",
+                "REQUESTEDREMAINING": "toenga",
+                "VOTEYES": "Pooti Ae",
+                "VOTEABSTAIN": "Whakawhiria Te Taha",
+                "VOTENO": "Pōti Kore",
+                "VOTESTOPASS": "nga pooti kia tukuna",
+                "VOTEPASSING": "pōti pōti",
+                "MINIMUMGOVERNORS": "Kaore e taea te tuku i nga Buget kia tae ra ano ki te iti rawa te maha o nga Kawana kei runga i te mekameka.",
+                "CURRENTLY": "I tenei wa",
+                "REQUIRED": "E hiahiatia ana"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Hangaia he Tono",
+                "DESCRIPTION": "I raro ake nei ka taea e koe te hanga tahua tahua me te tuku mai ki te whatunga mo te pooti i mua i te poraka whakataunga o te tahua.",
+                "BUDGETFEE": "Ko te utu tahua inaianei",
+                "BUDGETBLOCK": "Ko te rohe whakataunga e whai ake nei",
+                "PROPOSALTITLE": "Ingoa Tohu",
+                "PROPOSALDESC": "Whakaahuatanga Kaupapa",
+                "PROPOSALURL": "URL tohu",
+                "PROPOSALAMOUNT": "Nga utu kua hiahiatia",
+                "PROPOSALDURATION": "Nga Ka utua kua utuhia",
+                "PROPOSALADDRESS": "Wāhitau Utu",
+                "PROPOSALCREATE": "Waihangahia te Tono"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Te rangatiratanga",
+                "BUDGET": "Tahua"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Hangaia te Wāhitau Whakawhiti...",
-            "ALREADYHAVEADDRESS": "Kei a koe tetahi wāhitau BTC e pā ana ki tenei wāhitau Metrix",
-            "SWAPUSDMIN": "Ko te $ huringa iti rawa te $ 50",
-            "SWAPUSDMAX": "Ko te nui o te utu o te putunga USD he $ 3000",
-            "NOADDRESS": "Kaore koe i uru ki tetahi wahitau Metrix"
+            "ALREADYHAVEADDRESS": "Kei a koe tetahi tauranga BTC e pa ana ki tenei wahitau Metrix",
+            "SWAPUSDMIN": "Ko te iti o te moni mo te utu whakawhiti USD he $ 50",
+            "SWAPUSDMAX": "Ko te nui o te utu mo te putunga USD he $ 3000",
+            "INCOMPLETEFORM": "Kaore koe i whakakiia ki nga mara e hiahiatia ana",
+            "INVALIDPROPOSALDURATION": "Kia roa te 1 ki te 12 marama te whakaaro",
+            "CREATINGPROPOSAL": "Te tuku tono ki te whatunga...",
+            "CREATEDPROPOSAL": "Kua angitu to tono",
+            "ENROLLINGGOVERNOR": "Whakauru hei Kawana...",
+            "ENROLLEDGOVERNOR": "Ka oti to whakauru whakauru ka whakatutukihia to whakawhitinga",
+            "VOTINGONPROPOSAL": "Te tuku pooti tono",
+            "VOTEDONPROPOSAL": "Ko to pooti ka kiia ina oti te tauwhitiwhiti.",
+            "NOADDRESS": "Kaore koe i uru ki tetahi wahitau Metrix",
+            "PINGINGGOVERNOR": "Kei te tuku ping...",
+            "PINGEDGOVERNOR": "I tukuna angitu a Ping. Ka whakahoutia to Kawana ka whakapumautia te whakawhitiwhitinga",
+            "UNENROLLINGGOVERNOR": "Te Whakauru i te Kawana...",
+            "UNENROLLEDGOVERNOR": "I tukuna te whakawhitinga. Ka kore e rehitatia to Kawana ka whakamanahia nga whakawhitiwhitinga",
+            "GOVERNORNOTMATURE": "Kaore ano to Kawana kia pakeke ki te mahi i tenei mahi"
         }
     }
 }

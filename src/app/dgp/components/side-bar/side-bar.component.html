@@ -1,0 +1,39 @@
+<div class="sidebar">
+    <div class="sidebar-top">
+        <!-- Balance -->
+        <img src="assets/img/dgp-logo.png" alt="DGP" class="logo" />
+        <!-- Balance -->
+        <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
+        <span>
+            {{currencyService.convert(wallet.balance) | prettyCoins: 4 }}
+            <span class="balance-currency">{{currencyService.currency}}</span>
+        </span>
+        <network-type></network-type>
+        <!-- Menu -->
+        <ul routerLinkActive="active">
+            <li>
+                <a routerLink="/dgp" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <fa-icon icon="users"></fa-icon> {{ 'DGP.COMPONENTS.SIDEBAR.GOVERNANCE' | translate }}
+                </a>
+            </li>
+            <!--  <li>
+                <a routerLink="/dgp/governors" routerLinkActive="active">
+                    <fa-icon icon="wallet"></fa-icon> {{ 'COMPONENTS.SIDEBAR.SEND' | translate }}
+                </a>
+            </li> -->
+            <li>
+                <a routerLink="/dgp/budget" routerLinkActive="active">
+                    <fa-icon icon="money-check-alt"></fa-icon> {{ 'DGP.COMPONENTS.SIDEBAR.BUDGET' | translate }}
+                </a>
+            </li>
+            <!--   <li>
+                <a routerLink="/dgp/voting" routerLinkActive="active">
+                    <fa-icon icon="coins"></fa-icon> {{ 'COMPONENTS.SIDEBAR.STAKING' | translate }}
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+    <sync-status></sync-status>
+
+</div>

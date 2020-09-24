@@ -4,7 +4,7 @@ import { Chart, ChartPoint } from 'chart.js';
 import { TranslationService } from 'app/providers/translation.service';
 import { ErrorService } from 'app/providers/error.service';
 import { CurrencyService } from 'app/providers/currency.service';
-
+import Big from 'big.js';
 @Component({
   selector: 'market-price-chart',
   templateUrl: './market-price.component.html',
@@ -42,8 +42,8 @@ export class MarketPriceComponent {
       this.drawIncomeChart(prices);
     } catch (ex) {
       this.chartLoadFailed = true;
-      this.error.diagnose(ex);
     }
+    this.loadingChart = false;
   }
 
   async drawIncomeChart(priceData: Array<any>) {
@@ -58,7 +58,7 @@ export class MarketPriceComponent {
     for (let i = 0; i < priceData.length; i++) {
       let pricePoint = priceData[i];
       let date = new Date(pricePoint[0]);
-      let value = Helpers.toSatoshi(pricePoint[1])
+      let value = Number(Helpers.roundCoins(Helpers.toSatoshi(Big(pricePoint[1])), 2))
       let key = await this.monthIndexToName(date.getMonth()) + '-' + date.getDate() + '-' + date.getHours();
       if (!prices[key]) prices[key] = 0;
       if (prices[key] < value) prices[key] = value
@@ -143,7 +143,6 @@ export class MarketPriceComponent {
     } catch (ex) {
 
     }
-    this.loadingChart = false;
   }
 
   async monthIndexToName(index: number) {

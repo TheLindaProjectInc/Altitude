@@ -14,7 +14,7 @@ import { VirtualScrollerModule } from 'ngx-virtual-scroller';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 // icons 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { setupIcons } from './icon-module';
 // alerts
 import { NotifierModule } from 'angular-notifier';
@@ -31,28 +31,29 @@ import { CurrencyService } from './providers/currency.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
-import * as buy from './buy/buy.module';
+import * as dgp from './dgp/dgp.module';
+// pipes
+import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-// AoT requires the files to be explicitly imported
-setupIcons();
 
 // routes
 const routes: Routes = [
   { path: '', redirectTo: '/metrix', pathMatch: 'full' },
   metrix.route,
-  buy.route
+  dgp.route
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    PrettyCoinsPipe,
     ...componentDeclarations,
     ...metrix.declarations,
-    ...buy.declarations
+    ...dgp.declarations
   ],
   imports: [
     BrowserModule,
@@ -87,10 +88,15 @@ const routes: Routes = [
     CurrencyService,
     ...componentProviders,
     ...metrix.providers,
-    ...buy.providers,
+    ...dgp.providers,
   ],
   bootstrap: [
     AppComponent
   ]
 })
-export class AppModule { }
+
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    setupIcons(library);
+  }
+}

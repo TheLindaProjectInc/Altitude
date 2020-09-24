@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Dôkaz",
             "TABLE_SIGNATURE": "podpis",
             "TABLE_DIFFICULTY": "Obtiažnosť",
-            "TABLE_ENTROPYBIT": "Entropický bit",
             "TABLE_BLOCKHASH": "Zablokujte Hash",
             "TABLE_CONFIRMATIONS": "potvrdenie",
             "TABLE_INPUTOUTPUT": "Vstupy a výstupy",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Použite samostatný proxy servera SOCKS5, aby ste sa dostali k kolegom prostredníctvom skrytých služieb Tor",
                 "ONLYNET": "Pripojte sa iba na uzly v sieti",
                 "BLOCKINCOMING": "Nedovoľte prichádzajúce pripojenia",
-                "RESTARTREQUIRED": "Na aktiváciu akýchkoľvek zmien týchto nastavení je potrebné reštartovanie klienta."
+                "RESTARTREQUIRED": "Na aktiváciu akýchkoľvek zmien týchto nastavení je potrebné reštartovanie klienta.",
+                "CHAINTYPE": "sieť"
             },
             "WINDOW": {
                 "HIDETRAY": "Skryť ikonu zásobníka",
@@ -251,7 +251,6 @@
                 "LOCKED": "Peňaženka je uzamknutá",
                 "UNLOCKED": "Peňaženka bola odomknutá",
                 "UNLOCKEDSTAKING": "Peňaženka bola odomknutá len na stávkovanie",
-                "UNLOCKEDANON": "Peňaženka bola odomknutá iba na anonymizáciu",
                 "STAKING": "Peňaženka momentálne zaťažuje",
                 "NOTSTAKING": "Peňaženka momentálne nezostáva",
                 "MASTERNODEON": "Masternode momentálne beží",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Šifrovaná peňaženka",
             "ENCRYPTEDCONTENT": "Akékoľvek predchádzajúce zálohy, ktoré ste vytvorili zo súboru peňaženky, by mali byť nahradené novo vytvoreným šifrovaným súborom peňaženky. Z bezpečnostných dôvodov sa predchádzajúce zálohy súboru nešifrovanej peňaženky stanú zbytočnými, akonáhle začnete používať novú zašifrovanú peňaženku.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core sa neočakávane zastavila",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Vyskytol sa problém s Metrix Core, ktorý spôsobil jeho ukončenie. Odporúčame vám skontrolovať problém debug.log.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Vyskytol sa problém s produktom Metrix Core, ktorý spôsobil jeho ukončenie. Odporúča sa skontrolovať problémy so súborom debug.log.",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurácia služby metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf má neplatné nastavenie masternode, ktoré spôsobí, že Metrix Core okamžite opustí. Skontrolujte tento súbor.",
             "ADDREMOTEMNTITLE": "Pridať vzdialený masternód",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Pri zavádzaní Metrix Core sa vyskytol problém. Odporúča sa skontrolovať problémy v protokolovom súbore Altitude.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nástroje na obnovenie",
             "STARTUPFAILEDTITLE": "Spúšťanie jadra Metrix zlyhalo",
-            "STARTUPFAILEDINFO": "Tam bolo počiatočné Metrix Core. Odporúča sa skontrolovať problémy v protokolovom súbore Altitude."
+            "STARTUPFAILEDINFO": "Tam bolo počiatočné Metrix Core. Odporúča sa skontrolovať problémy v protokolovom súbore Altitude.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Communication Error",
+            "CLIENTUNKNOWNERRORINFO": "Pri komunikácii s produktom Metrix Core sa vyskytol problém. Odporúča sa skontrolovať problémy so súborom debug.log.",
+            "UNENROLLGOVERNORTITLE": "Potvrďte odhlásenie guvernéra",
+            "UNENROLLGOVERNORCONTENT": "Naozaj chcete zrušiť registráciu svojho guvernéra? Už nebudete môcť hlasovať o správe reťazcov."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresár",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Výstraha! Podľa prieskumníka Metrix nie ste na hlavnej reťazci. Dôrazne sa odporúča znova synchronizovať alebo znovu zaviesť váš blockchain, aby nedošlo k strate akýchkoľvek mincí."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Aktuálna sieť"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Chyba transakcie. Prosím skúste znova.",
         "MINIMUMCONFIRMATIONS": "Všetky vstupy vyžadujú minimálne 1 potvrdenie pred tým, než sa utratí.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcie boli skopírované do schránky",
-        "TRANSACTIONOUTPUTTOOLARGE": "Jedna z vašich platieb na sumy je príliš veľká, aby ste mohli bezpečne odoslať. Maximálna hodnota je 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Vaša zmena je príliš veľká na bezpečné odoslanie. Maximálna hodnota je 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Zastavuje sa masternode...",
         "FAILEDTOWRITECONFIG": "Pri zápise do súboru metrix.conf sa vyskytol problém. Skontrolujte, či súbor existuje a či má Altitude oprávnenie na zápis.",
         "NOPUBLICUP": "Nenašla sa žiadna verejná adresa IP. Skontrolujte svoje pripojenie k internetu a reštartujte výšku.",
@@ -446,22 +450,55 @@
         "NOV": "novembra",
         "DEC": "decembra"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Ty posielaš",
-                "YOUGET": "Dostanete",
-                "MRXADDRESS": "Adresa metriky",
-                "SWAP": "výmena",
-                "SWAPADDRESSES": "Vymeniť adresy",
-                "BTCADDRESS": "Adresa BTC",
-                "INFOLINE1": "Akonáhle budete mať vkladovú adresu BTC, akékoľvek BTC odoslané na túto adresu sa automaticky vymení za MRX za nominovanú adresu MRX.",
-                "INFOLINE2-1": "Transakcie sa zvyčajne zúčtujú do jednej hodiny v závislosti od blokových časov bitcoínov. Môžeme prijať fiat za",
-                "INFOLINE2-2": "zúčastnené krajiny",
-                "INFOLINE2-3": "Ten sa najskôr prevedie na BTC a potom na MRX.",
-                "INFOLINE3": "Po zúčtovaní vkladu BTC dostanete MRX na svoju nominovanú adresu.",
-                "INFOLINE4": "Pre viac informácií navštívte",
-                "FIATSWAPSELECTED": "Na dokončenie tejto transakcie budete presmerovaný na adresu Buy.Metrixcoin.com"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Nie ste guvernér",
+                "NOTGOVERNORDETAIL": "Guvernéri zodpovedajú za hlasovanie o mesačných rozpočtoch a zmenách blockchainu. Guvernérom sa môžete stať uzamknutím správneho kolaterálu v zmluve o správe a riadení.",
+                "COLLATERAL": "Požadovaný kolaterál",
+                "ENROLL": "zápis",
+                "CONFIRMENROLL": "Chystáte sa zaregistrovať ako guvernér. Týmto sa odošle transakcia s požadovaným kolaterálom do zmluvy o riadení. Zrušiť registráciu môžete kedykoľvek.",
+                "ISGOVERNORTITLE": "Ste aktívnym guvernérom!",
+                "ISGOVERNORDETAIL1": "Guvernéri zodpovedajú za hlasovanie o mesačných rozpočtoch a zmenách blockchainu.",
+                "ISGOVERNORDETAIL2": "Ak chcete zostať guvernérom, musíte sa každých 30 dní zúčastňovať najmenej 1 hlas.",
+                "ISGOVERNORDETAIL3": "Ak nemáte čo hlasovať, môžete v registrácii pokračovať ručne odoslaním aktívneho príkazu ping.",
+                "UNENROLL": "odhlásiť",
+                "PING": "Poslať aktívny príkaz ping",
+                "LASTPINGTITLE": "Posledný ping",
+                "LASTPINGSUFFIX": "bloky"
+            },
+            "BUDGET": {
+                "TITLE": "Návrhy rozpočtu",
+                "ADDPROPOSAL": "Vytvoriť ponuku",
+                "REQUESTEDPERMONTH": "za mesiac",
+                "REQUESTEDREMAINING": "zostávajúce",
+                "VOTEYES": "Hlasujte Áno",
+                "VOTEABSTAIN": "Hlasovanie sa zdržalo",
+                "VOTENO": "Hlasovanie č",
+                "VOTESTOPASS": "hlasy odovzdané",
+                "VOTEPASSING": "odovzdávanie hlasov",
+                "MINIMUMGOVERNORS": "Bugety nie je možné odovzdať, kým v reťazci nebude minimálny počet guvernérov.",
+                "CURRENTLY": "v súčasnosti",
+                "REQUIRED": "Požadovaný"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Vytvorte ponuku",
+                "DESCRIPTION": "Nižšie môžete vytvoriť návrh rozpočtu a odoslať ho do siete na hlasovanie pred ďalším blokom vyrovnania rozpočtu.",
+                "BUDGETFEE": "Aktuálny poplatok za rozpočet je",
+                "BUDGETBLOCK": "Ďalší blok osídlenia je",
+                "PROPOSALTITLE": "Názov ponuky",
+                "PROPOSALDESC": "Popis ponuky",
+                "PROPOSALURL": "Webová adresa ponuky",
+                "PROPOSALAMOUNT": "Požadovaná suma",
+                "PROPOSALDURATION": "Požadované platby",
+                "PROPOSALADDRESS": "Platobná adresa",
+                "PROPOSALCREATE": "Vytvoriť ponuku"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "vláda",
+                "BUDGET": "rozpočet"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "S touto adresou Metrix už máte priradenú adresu BTC",
             "SWAPUSDMIN": "Minimálna swapová suma v USD je 50 USD",
             "SWAPUSDMAX": "Maximálna swapová suma v USD je 3000 USD",
-            "NOADDRESS": "Nezadali ste adresu Metrix"
+            "INCOMPLETEFORM": "Nevyplnili ste správne všetky požadované polia",
+            "INVALIDPROPOSALDURATION": "Trvanie návrhov by malo byť medzi 1 a 12 mesiacmi",
+            "CREATINGPROPOSAL": "Odosiela sa návrh do siete...",
+            "CREATEDPROPOSAL": "Váš návrh bol úspešne vytvorený",
+            "ENROLLINGGOVERNOR": "Zapisuje sa ako guvernér...",
+            "ENROLLEDGOVERNOR": "Vaša registrácia bude dokončená po potvrdení transakcie",
+            "VOTINGONPROPOSAL": "Posiela sa hlasovanie o návrhu",
+            "VOTEDONPROPOSAL": "Váš hlas sa započítava po potvrdení transakcie.",
+            "NOADDRESS": "Nezadali ste adresu Metrix",
+            "PINGINGGOVERNOR": "Posiela sa ping...",
+            "PINGEDGOVERNOR": "Ping bol úspešne odoslaný. Po potvrdení transakcie bude váš guvernér aktualizovaný",
+            "UNENROLLINGGOVERNOR": "Ruší sa odhlásenie guvernéra...",
+            "UNENROLLEDGOVERNOR": "Transakcia bola odoslaná. Po potvrdení transakcie bude váš guvernér odhlásený",
+            "GOVERNORNOTMATURE": "Váš guvernér ešte nie je dostatočne zrelý na to, aby vykonal túto akciu"
         }
     }
 }

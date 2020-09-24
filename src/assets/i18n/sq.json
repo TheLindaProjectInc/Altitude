@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Dëshmi Hash",
             "TABLE_SIGNATURE": "nënshkrim",
             "TABLE_DIFFICULTY": "vështirësi",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Blloko Hash",
             "TABLE_CONFIRMATIONS": "konfirmimet",
             "TABLE_INPUTOUTPUT": "Inputet dhe rezultatet",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Përdorni proxy të veçantë SOCKS5 për të arritur kolegët nëpërmjet shërbimeve të fshehura Tor",
                 "ONLYNET": "Lidhni vetëm me nyjet në rrjet",
                 "BLOCKINCOMING": "Mos lejoni lidhjet hyrëse",
-                "RESTARTREQUIRED": "Nevojitet rinisja e Klientit për të aktivizuar çdo ndryshim në këto cilësime."
+                "RESTARTREQUIRED": "Nevojitet rinisja e Klientit për të aktivizuar çdo ndryshim në këto cilësime.",
+                "CHAINTYPE": "Rrjeti"
             },
             "WINDOW": {
                 "HIDETRAY": "Fshih ikonën e tabelës",
@@ -251,7 +251,6 @@
                 "LOCKED": "Portofoli i kyçur",
                 "UNLOCKED": "Portofoli u hap",
                 "UNLOCKEDSTAKING": "Portofoli nuk është i hapur vetëm për sasi",
-                "UNLOCKEDANON": "Portofoli është i hapur vetëm për anonimizim",
                 "STAKING": "Portofoli aktualisht është duke u hedhur",
                 "NOTSTAKING": "Portofoli nuk është duke u hedhur",
                 "MASTERNODEON": "Masternode aktualisht po kandidon",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Wallet Encrypted",
             "ENCRYPTEDCONTENT": "Çdo kopje rezervë e mëparshme që keni bërë nga dosja e portofolit tuaj duhet të zëvendësohet me skedarin e portofolit të sapokrijuar, të koduar. Për arsye sigurie, kopjet e mëparshme të skedarit të portofolit të paskrupuar do të bëhen të padobishme sapo të filloni të përdorni portofolin e ri të koduar.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core u ndal papritur",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ka pasur një problem me Metrix Core që ka shkaktuar që ajo të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështjet.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Kishte një problem me Metrix Core që ka bërë që ai të përfundojë. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështje.",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurimi metrix.conf i pavlefshëm",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një instalim të pavlefshëm masternode i cili do të shkaktojë që Metrix Core të dalë menjëherë. Ju lutemi kontrolloni këtë skedar.",
             "ADDREMOTEMNTITLE": "Shto Remote Masternode",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Pati një problem me bootstrap Metrix Core. Rekomandohet të kontrolloni skedarin tuaj të regjistrit të lartësisë për çështje.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mjetet e rimëkëmbjes",
             "STARTUPFAILEDTITLE": "Fillimi i Metrix Core dështoi",
-            "STARTUPFAILEDINFO": "Kishte një Metrix Core fillestare. Rekomandohet të kontrolloni skedarin tuaj të regjistrit të lartësisë për çështje."
+            "STARTUPFAILEDINFO": "Kishte një Metrix Core fillestare. Rekomandohet të kontrolloni skedarin tuaj të regjistrit të lartësisë për çështje.",
+            "CLIENTUNKNOWNERRORTITLE": "Gabim në komunikimin bazë Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Pati një problem në komunikimin me Metrix Core. Rekomandohet të kontrolloni skedarin tuaj debug.log për çështje.",
+            "UNENROLLGOVERNORTITLE": "Konfirmo regjistrimin e guvernatorit",
+            "UNENROLLGOVERNORCONTENT": "Je i sigurt që dëshiron të heqësh regjistrimin e Guvernatorit tënd? Ju nuk do të jeni më në gjendje të votoni për qeverisjen zinxhir."
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i adresave",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warning! Ju nuk jeni në zinxhirin kryesor sipas eksploruesit Metrix. Rekomandohet shumë të sinkronizoni ose rihapni skedarët tuaj për të shmangur humbjen e ndonjë monedhe."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Rrjeti aktual"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Gabim në transaksion. Ju lutemi provoni përsëri.",
         "MINIMUMCONFIRMATIONS": "Të gjitha inputet kërkojnë të paktën 1 konfirmim para se të shpenzohen.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksionet kopjohen në clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Një nga pagesat tuaja në shuma është shumë e madhe për t'u dërguar në mënyrë të sigurtë. Maksimumi është 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Ndryshimi yt është shumë i madh për t'u dërguar në mënyrë të sigurt. Maksimumi është 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Ndalimi i masternode...",
         "FAILEDTOWRITECONFIG": "Kishte një problem me shkrim në skedarin tuaj metrix.conf. Kontrolloni ekzistojnë skedarët dhe lartësia ka leje për shkrim.",
         "NOPUBLICUP": "Nuk u gjet asnjë adresë IP publike. Kontrolloni lidhjen tuaj në internet dhe rinisni Lartësinë.",
@@ -446,22 +450,55 @@
         "NOV": "nëntor",
         "DEC": "dhjetor"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Ju dërgoni",
-                "YOUGET": "Ti merr",
-                "MRXADDRESS": "Adresa e Metrix",
-                "SWAP": "shkëmbim",
-                "SWAPADDRESSES": "Ndërroni Adresat",
-                "BTCADDRESS": "Adresa BTC",
-                "INFOLINE1": "Pasi të keni një adresë depozite BTC, çdo BTC dërguar në atë adresë automatikisht do të këmbehet për MRX në adresën tuaj të nominuar MRX.",
-                "INFOLINE2-1": "Transaksionet zakonisht janë të qarta brenda një ore në varësi të kohëve të bllokimit të Bitcoin. Ne mund të pranojmë fiat për",
-                "INFOLINE2-2": "vendet pjesëmarrëse",
-                "INFOLINE2-3": "Kjo do të konvertohet në BTC së pari dhe MRX.",
-                "INFOLINE3": "Pasi të keni pastruar depozitën tuaj në BTC, do të merrni MRX tuaj në adresën tuaj të nominuar.",
-                "INFOLINE4": "Për më shumë informacion vizitoni",
-                "FIATSWAPSELECTED": "Do të ridrejtoheni te Buy.Metrixcoin.com për të përfunduar këtë transaksion"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ju nuk jeni guvernator",
+                "NOTGOVERNORDETAIL": "Guvernatorët janë përgjegjës për të votuar në buxhetet mujore dhe ndryshimet në zinxhir. Ju mund të bëheni Guvernator duke mbyllur kolateralin e saktë në kontratën e Qeverisjes.",
+                "COLLATERAL": "Kolateral i kërkuar",
+                "ENROLL": "Regjistroj",
+                "CONFIRMENROLL": "Ju jeni gati të regjistroheni si Guvernator. Kjo do të dërgojë një transaksion me kolateralin e kërkuar në kontratën e qeverisjes. Ju mund të regjistroheni në çdo kohë.",
+                "ISGOVERNORTITLE": "Ju jeni një Guvernator aktiv!",
+                "ISGOVERNORDETAIL1": "Guvernatorët janë përgjegjës për të votuar në buxhetet mujore dhe ndryshimet në zinxhir.",
+                "ISGOVERNORDETAIL2": "Për të qëndruar një Guvernator ju do të duhet të merrni pjesë në të paktën 1 votë çdo 30 ditë.",
+                "ISGOVERNORDETAIL3": "Nëse nuk ka asgjë për të votuar, atëherë mund të vazhdoni regjistrimin me dorë duke dërguar një ping aktiv.",
+                "UNENROLL": "Çregjistroje",
+                "PING": "Dërgoni aktivitetin Ping",
+                "LASTPINGTITLE": "Ping i fundit",
+                "LASTPINGSUFFIX": "blloqe më parë"
+            },
+            "BUDGET": {
+                "TITLE": "Propozimet e buxhetit",
+                "ADDPROPOSAL": "Krijoni propozim",
+                "REQUESTEDPERMONTH": "në muaj",
+                "REQUESTEDREMAINING": "mbetur",
+                "VOTEYES": "Votoni Po",
+                "VOTEABSTAIN": "Voto Abstain",
+                "VOTENO": "Votoni Nr",
+                "VOTESTOPASS": "votat për të kaluar",
+                "VOTEPASSING": "kalimi i votave",
+                "MINIMUMGOVERNORS": "Blerjet nuk mund të kalohen derisa të ekzistojë numri minimal i Guvernatorëve në zinxhir.",
+                "CURRENTLY": "Aktualisht",
+                "REQUIRED": "Kërkohet"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Krijoni një Propozim",
+                "DESCRIPTION": "Më poshtë mund të krijoni një propozim buxheti dhe ta paraqisni atë në rrjet për votim përpara bllokut tjetër të zgjidhjes së buxhetit.",
+                "BUDGETFEE": "Pagesa aktuale e buxhetit është",
+                "BUDGETBLOCK": "Blloku tjetër i zgjidhjes është",
+                "PROPOSALTITLE": "Emri i propozimit",
+                "PROPOSALDESC": "Përshkrimi i propozimit",
+                "PROPOSALURL": "URL e propozimit",
+                "PROPOSALAMOUNT": "Shuma e kërkuar",
+                "PROPOSALDURATION": "Pagesat e kërkuara",
+                "PROPOSALADDRESS": "Adresa e Pagesave",
+                "PROPOSALCREATE": "Krijoni propozim"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "qeverisje",
+                "BUDGET": "buxhet"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Tashmë keni një adresë BTC të lidhur me këtë adresë Metrix",
             "SWAPUSDMIN": "Shuma minimale e këmbimit në USD është 50 dollarë",
             "SWAPUSDMAX": "Shuma maksimale e shkëmbimit të dollarit është 3000 dollarë",
-            "NOADDRESS": "Ju nuk shkruani një adresë Metrix"
+            "INCOMPLETEFORM": "Ju nuk i keni mbushur të gjitha fushat e kërkuara saktë",
+            "INVALIDPROPOSALDURATION": "Kohëzgjatja e propozimit duhet të jetë midis 1 dhe 12 muaj",
+            "CREATINGPROPOSAL": "Dorëzimi i propozimit në rrjet...",
+            "CREATEDPROPOSAL": "Propozimi juaj është krijuar me sukses",
+            "ENROLLINGGOVERNOR": "Regjistrimi si Guvernator...",
+            "ENROLLEDGOVERNOR": "Regjistrimi juaj do të jetë i plotë pasi të konfirmohet transaksioni juaj",
+            "VOTINGONPROPOSAL": "Dërgimi i votimit të propozimit",
+            "VOTEDONPROPOSAL": "Vota juaj do të llogaritet pasi të konfirmohet transaksioni.",
+            "NOADDRESS": "Ju nuk shkruani një adresë Metrix",
+            "PINGINGGOVERNOR": "Po dërgohet ping...",
+            "PINGEDGOVERNOR": "Ping u dërgua me sukses. Guvernatori juaj do të azhurnohet pasi të konfirmohet transaksioni",
+            "UNENROLLINGGOVERNOR": "Po çregjistrohet Guvernatori...",
+            "UNENROLLEDGOVERNOR": "Transaksioni u dërgua. Guvernatori juaj do të çregjistrohet pasi të konfirmohet transaksioni",
+            "GOVERNORNOTMATURE": "Guvernatori juaj nuk është ende mjaft i pjekur për të kryer këtë veprim"
         }
     }
 }

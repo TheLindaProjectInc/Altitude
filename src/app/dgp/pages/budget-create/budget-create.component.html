@@ -1,0 +1,62 @@
+<div class="content" #scrollingBlock>
+    <div class="content-card ">
+        <h3>{{'DGP.PAGES.CREATEPROPOSAL.TITLE' | translate }}</h3>
+        <p>{{'DGP.PAGES.CREATEPROPOSAL.DESCRIPTION' | translate }}</p>
+        <p>{{'DGP.PAGES.CREATEPROPOSAL.BUDGETFEE' | translate }}: {{ budgetFee | prettyCoins }} MRX</p>
+        <p>{{'DGP.PAGES.CREATEPROPOSAL.BUDGETBLOCK' | translate }}: {{budgetBlock | number }}</p>
+
+
+        <div class="form-stacked">
+            <span style="margin-top: 100px;">{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALTITLE' | translate }}</span>
+            <text-input [(inputModel)]="proposal.title" maxlength="100">
+            </text-input>
+        </div>
+
+        <div class="form-stacked">
+            <span>{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALDESC' | translate }}</span>
+            <text-input [(inputModel)]="proposal.desc" maxlength="255">
+            </text-input>
+        </div>
+
+        <div class="form-stacked">
+            <span>{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALURL' | translate }}</span>
+            <text-input [(inputModel)]="proposal.url" maxlength="255">
+            </text-input>
+        </div>
+
+        <div style="display: flex;">
+            <div class="form-stacked">
+                <span>{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALAMOUNT' | translate }}</span>
+                <text-input [(inputModel)]="proposal.requested" type="number">
+                </text-input>
+            </div>
+
+            <div class="form-stacked">
+                <span>{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALDURATION' | translate }}</span>
+                <text-input [(inputModel)]="proposal.duration" type="number" min="1" max="12">
+                </text-input>
+            </div>
+        </div>
+
+        <div class="form-stacked">
+            <span>{{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALADDRESS' | translate }}</span>
+            <div class="form-inline no-padding">
+                <text-input [(inputModel)]="proposal.owner">
+                </text-input>
+                <button class="btn btn-default btn-icon" (click)="getFromAddressBook()">
+                    <fa-icon icon="address-book"></fa-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-row-right" style="padding-top: 20px;">
+            <button class="btn btn-default" routerLink="/dgp/budget">
+                {{ 'MISC.CANCELBUTTON' | translate }}
+            </button>
+            <button class="btn btn-success" (click)="createProposal()">
+                {{ 'DGP.PAGES.CREATEPROPOSAL.PROPOSALCREATE' | translate }}
+            </button>
+        </div>
+    </div>
+
+</div>

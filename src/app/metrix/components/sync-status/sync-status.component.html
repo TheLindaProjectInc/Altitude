@@ -2,10 +2,10 @@
     <span>
         <fa-icon icon="wifi"></fa-icon>
         <span *ngIf="!wallet.running">{{ 'COMPONENTS.SIDEBAR.SYNC.CONNECTING' | translate }}...</span>
-        <span *ngIf="wallet.running && !wallet.walletStatus.connections">
+        <span *ngIf="wallet.running && !wallet.networkInfo.connections">
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOPEERS' | translate }}...
         </span>
-        <span *ngIf="wallet.running && wallet.walletStatus.connections">{{wallet.walletStatus.connections}}
+        <span *ngIf="wallet.running && wallet.networkInfo.connections">{{wallet.networkInfo.connections}}
             {{'COMPONENTS.SIDEBAR.SYNC.PEERS' | translate }}
         </span>
     </span>
@@ -16,26 +16,25 @@
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOBLOCKS' | translate }}...
         </span>
         <span *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight">
-            {{helpers.prettyCoins(wallet.blockchainStatus.latestBlockHeight)}} {{ 'COMPONENTS.SIDEBAR.SYNC.BLOCKS' |
+            {{ wallet.blockchainStatus.latestBlockHeight | prettyCoins }} {{ 'COMPONENTS.SIDEBAR.SYNC.BLOCKS' |
             translate }}
         </span>
     </span>
     <span>
         <fa-icon icon="clock"></fa-icon>
         <span *ngIf="!wallet.running">{{ 'COMPONENTS.SIDEBAR.SYNC.CONNECTING' | translate }}...</span>
-        <!--   no blocks -->
+        <!-- no blocks -->
         <span *ngIf="wallet.running && !wallet.blockchainStatus.latestBlockHeight">
             {{ 'COMPONENTS.SIDEBAR.SYNC.NOBLOCKS' | translate }}...
         </span>
-        <!--     in sync -->
-        <span *ngIf="wallet.running && wallet.blockchainStatus.syncProgresss >= 99.99">
-            {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
-            {{ helpers.friendlyTimeEplased(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
+        <!-- in sync -->
+        <span *ngIf="!showProgressBar">
+            {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[0] }}
+            {{ helpers.friendlyTimeElapsed(wallet.blockchainStatus.latestBlockTime,dateNow)[1] | translate }}
             {{ 'COMPONENTS.SIDEBAR.SYNC.TIMESINCEBLOCK' | translate }}
         </span>
         <!-- syncing -->
-        <progress max="100" [title]="progressTitle"
-            *ngIf="wallet.running && wallet.blockchainStatus.latestBlockHeight && wallet.blockchainStatus.syncProgresss < 99.99"
+        <progress max="100" [title]="progressTitle" *ngIf="showProgressBar"
             [value]="wallet.blockchainStatus.syncProgresss"></progress>
     </span>
 </div>
@@ -43,6 +42,4 @@
     <fa-icon icon='{{lockStatus.icon}}' class='{{lockStatus.class}}' title='{{lockStatus.title | translate}}'></fa-icon>
     <fa-icon *ngIf="wallet.stakingStatus.enabled" icon='{{stakingStatus.icon}}' class='{{stakingStatus.class}}'
         title='{{stakingStatus.title | translate}}'></fa-icon>
-    <fa-icon *ngIf="wallet.masternode.setup" icon='{{masternodeStatus.icon}}' class='{{masternodeStatus.class}}'
-        title='{{masternodeStatus.title | translate}}'></fa-icon>
 </div>

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signatura",
             "TABLE_DIFFICULTY": "Dificultat",
-            "TABLE_ENTROPYBIT": "Bit d'entropia",
             "TABLE_BLOCKHASH": "Bloqueja Hash",
             "TABLE_CONFIRMATIONS": "Confirmacions",
             "TABLE_INPUTOUTPUT": "Entrades i sortides",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Utilitzeu el proxy SOCKS5 separat per arribar a companys mitjançant serveis ocults de Tor",
                 "ONLYNET": "Només es connecta als nodes de la xarxa",
                 "BLOCKINCOMING": "No permetis connexions entrants",
-                "RESTARTREQUIRED": "Cal reiniciar un client per activar qualsevol canvi en aquesta configuració."
+                "RESTARTREQUIRED": "Cal reiniciar un client per activar qualsevol canvi en aquesta configuració.",
+                "CHAINTYPE": "Xarxa"
             },
             "WINDOW": {
                 "HIDETRAY": "Amaga la icona de la safata",
@@ -251,7 +251,6 @@
                 "LOCKED": "Cartera bloquejada",
                 "UNLOCKED": "Desbloquejat la cartera",
                 "UNLOCKEDSTAKING": "Wallet desbloquejat només per jugar",
-                "UNLOCKEDANON": "Wallet només s'ha desbloquejat per a l'anonimització",
                 "STAKING": "Actualment, la cartera està apostant",
                 "NOTSTAKING": "Actualment, la cartera no està en joc",
                 "MASTERNODEON": "Masternode s'està executant actualment",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Cartera encriptada",
             "ENCRYPTEDCONTENT": "Totes les còpies de seguretat anteriors que hagis fet del vostre fitxer de butxaca s'han de substituir pel fitxer de carteres recentment generat i xifrat. Per raons de seguretat, les còpies de seguretat anteriors del fitxer de butxaca no xifrat esdevindran inútils tan bon punt comenceu a utilitzar la nova cartera xifrada.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core es va aturar inesperadament",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Hi ha hagut un problema amb Metrix Core que ha fet que acabi. Es recomana que consulteu el vostre fitxer debug.log per obtenir problemes.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "S'ha produït un problema amb Metrix Core que ha provocat que s'acabés. Es recomana comprovar si hi ha problemes al fitxer debug.log.",
             "CLIENTINVALIDCONFIGTITLE": "Configuració metrix.conf no vàlida",
             "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració més gran no vàlida que farà que Metrix Core surti immediatament. Comproveu aquest fitxer.",
             "ADDREMOTEMNTITLE": "Afegiu Masternode remot",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Índex Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "Ha fallat l'arrencada de arrencada Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "S'ha produït un problema amb arrencar Metrix Core. Es recomana consultar problemes al fitxer de registre d’Altitude.",
+            "BOOTSTRAPFAILEDINFO": "S'ha produït un problema amb arrencar Metrix Core. Es recomana consultar problemes al fitxer de registre d’Altitud.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Eines de recuperació",
             "STARTUPFAILEDTITLE": "Ha fallat l'engegada de Metrix Core",
-            "STARTUPFAILEDINFO": "Hi havia un mètode Core inicial. Es recomana revisar problemes al fitxer de registre d’Altitude."
+            "STARTUPFAILEDINFO": "Hi havia un mètode Core inicial. Es recomana consultar problemes al fitxer de registre d’Altitud.",
+            "CLIENTUNKNOWNERRORTITLE": "Error de comunicació Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "S'ha produït un problema en comunicar amb Metrix Core. Es recomana comprovar si hi ha problemes al fitxer debug.log.",
+            "UNENROLLGOVERNORTITLE": "Confirmeu la baixa del governador",
+            "UNENROLLGOVERNORCONTENT": "Esteu segur que voleu donar de baixa el vostre governador? Ja no podreu votar sobre la governança en cadena."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Avís! Segons l'explorador Metrix no es troba a la cadena principal. És molt recomanable tornar a sincronitzar o tornar a arrencar el blocatge per evitar la pèrdua de monedes."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Xarxa actual"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Error de transacció. Siusplau torna-ho a provar.",
         "MINIMUMCONFIRMATIONS": "Totes les entrades requereixen com a mínim una confirmació abans de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccions copiades al porta-retalls",
-        "TRANSACTIONOUTPUTTOOLARGE": "Un dels vostres pagaments a les quantitats és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "El canvi és massa gran per enviar correctament. El màxim és 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Aturant el masternode...",
         "FAILEDTOWRITECONFIG": "S'ha produït un problema en escriure al fitxer metrix.conf. Comproveu que el fitxer existeix i que Altitude té permisos d’escriptura.",
         "NOPUBLICUP": "No s’ha trobat cap adreça IP pública. Comproveu la vostra connexió a Internet i reinicieu Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Envia",
-                "YOUGET": "Tens",
-                "MRXADDRESS": "Adreça Metrix",
-                "SWAP": "Intercanvi",
-                "SWAPADDRESSES": "Adreces d'intercanvi",
-                "BTCADDRESS": "Adreça BTC",
-                "INFOLINE1": "Un cop tingueu una adreça de dipòsit BTC, qualsevol BTC enviat a aquesta adreça es canviarà automàticament per MRX a la vostra adreça MRX nominada.",
-                "INFOLINE2-1": "Les transaccions se solen efectuar en una hora en funció de les hores de bloqueig de Bitcoin. Podem acceptar fiat per a",
-                "INFOLINE2-2": "països participants",
-                "INFOLINE2-3": "Això es convertirà a BTC primer i a MRX.",
-                "INFOLINE3": "Un cop suprimit el dipòsit de BTC, rebrà el MRX a la vostra adreça nominada.",
-                "INFOLINE4": "Per obtenir més informació, visiteu",
-                "FIATSWAPSELECTED": "Se us redirigirà a Buy.Metrixcoin.com per completar aquesta transacció"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "No ets un governador",
+                "NOTGOVERNORDETAIL": "Els governadors són els responsables de votar els pressupostos mensuals i els canvis de blockchain. Podeu convertir-vos en governador si cerqueu la garantia correcta en el contracte de govern.",
+                "COLLATERAL": "Garantia obligatòria",
+                "ENROLL": "Matricula't",
+                "CONFIRMENROLL": "Esteu a punt d’inscriure’s com a governador. Això enviarà una transacció amb la garantia necessària al contracte de govern. Podeu donar-vos de baixa en qualsevol moment.",
+                "ISGOVERNORTITLE": "Sou un governador actiu!",
+                "ISGOVERNORDETAIL1": "Els governadors són els responsables de votar els pressupostos mensuals i els canvis de blockchain.",
+                "ISGOVERNORDETAIL2": "Per mantenir-se com a governador, haureu de participar com a mínim 1 votació cada 30 dies.",
+                "ISGOVERNORDETAIL3": "Si no hi ha res a votar, podeu continuar manualment la vostra inscripció enviant un ping actiu.",
+                "UNENROLL": "Cancel·lar-se",
+                "PING": "Envia un ping actiu",
+                "LASTPINGTITLE": "Darrer ping",
+                "LASTPINGSUFFIX": "fa blocs"
+            },
+            "BUDGET": {
+                "TITLE": "Propostes pressupostàries",
+                "ADDPROPOSAL": "Crea una proposta",
+                "REQUESTEDPERMONTH": "per mes",
+                "REQUESTEDREMAINING": "restant",
+                "VOTEYES": "Vota Sí",
+                "VOTEABSTAIN": "Voteu aturar",
+                "VOTENO": "Votació núm",
+                "VOTESTOPASS": "vots per aprovar",
+                "VOTEPASSING": "passant vots",
+                "MINIMUMGOVERNORS": "No es poden passar bugets fins que no existeixi el nombre mínim de governadors a la cadena.",
+                "CURRENTLY": "Actualment",
+                "REQUIRED": "Obligatori"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Crea una proposta",
+                "DESCRIPTION": "A continuació, podeu crear una proposta de pressupost i enviar-la a la xarxa per votar abans del següent bloc de liquidació del pressupost.",
+                "BUDGETFEE": "El preu actual del pressupost és",
+                "BUDGETBLOCK": "El següent bloc de liquidació és",
+                "PROPOSALTITLE": "Nom de la proposta",
+                "PROPOSALDESC": "Descripció de la proposta",
+                "PROPOSALURL": "URL de la proposta",
+                "PROPOSALAMOUNT": "Import sol·licitat",
+                "PROPOSALDURATION": "Pagaments sol·licitats",
+                "PROPOSALADDRESS": "Adreça de pagament",
+                "PROPOSALCREATE": "Crea una proposta"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Governança",
+                "BUDGET": "Pressupost"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Creació de l'adreça d'intercanvi...",
+            "GETTINGSWAPADDRESS": "Generar l'adreça de l'intercanvi...",
             "ALREADYHAVEADDRESS": "Ja teniu una adreça BTC associada a aquesta adreça de Metrix",
-            "SWAPUSDMIN": "La quantitat mínima d'intercanvi de dòlars americans és de 50 dòlars",
+            "SWAPUSDMIN": "La quantitat mínima de swap de USD és de 50 dòlars",
             "SWAPUSDMAX": "La quantitat màxima de swap de USD és de 3000 dòlars",
-            "NOADDRESS": "No heu introduït una adreça de Metrix"
+            "INCOMPLETEFORM": "No heu emplenat correctament tots els camps obligatoris",
+            "INVALIDPROPOSALDURATION": "La durada de la proposta hauria d’estar entre 1 i 12 mesos",
+            "CREATINGPROPOSAL": "S'està enviant la proposta a la xarxa...",
+            "CREATEDPROPOSAL": "La vostra proposta s'ha creat correctament",
+            "ENROLLINGGOVERNOR": "Matrícula com a governador...",
+            "ENROLLEDGOVERNOR": "La vostra inscripció es completarà una vegada confirmada la vostra transacció",
+            "VOTINGONPROPOSAL": "S'està enviant la votació a la proposta",
+            "VOTEDONPROPOSAL": "El vostre vot es comptarà un cop confirmada la transacció.",
+            "NOADDRESS": "No heu introduït una adreça de Metrix",
+            "PINGINGGOVERNOR": "S'està enviant el ping...",
+            "PINGEDGOVERNOR": "S'ha enviat el ping correctament. El vostre governador s'actualitzarà un cop s'hagi confirmat la transacció",
+            "UNENROLLINGGOVERNOR": "S'està donant de baixa el governador...",
+            "UNENROLLEDGOVERNOR": "Transacció enviada. El vostre governador es donarà de baixa un cop confirmada la transacció",
+            "GOVERNORNOTMATURE": "El vostre governador encara no té la maduresa necessària per dur a terme aquesta acció"
         }
     }
 }

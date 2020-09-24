@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Nullam Probatur",
             "TABLE_SIGNATURE": "subscriptio",
             "TABLE_DIFFICULTY": "difficultas",
-            "TABLE_ENTROPYBIT": "Frenum entropy",
             "TABLE_BLOCKHASH": "detrahe Cito obstructionum",
             "TABLE_CONFIRMATIONS": "confirmationes",
             "TABLE_INPUTOUTPUT": "Initibus exitibusque Outputs",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Sed creverunt SOCKS5 uti procuratorem per pares suos perveniant officia occultatum Tor",
                 "ONLYNET": "Tantum coniungere ad network Nodi sunt in",
                 "BLOCKINCOMING": "Ne dederis venientibus hospitibus",
-                "RESTARTREQUIRED": "Requiritur ut quis sit sileo a client strenuus mutationes hae occasus."
+                "RESTARTREQUIRED": "Requiritur ut quis sit sileo a client strenuus mutationes hae occasus.",
+                "CHAINTYPE": "Network"
             },
             "WINDOW": {
                 "HIDETRAY": "Celare tray icon",
@@ -251,7 +251,6 @@
                 "LOCKED": "vidulum clausa",
                 "UNLOCKED": "vidulum reserata",
                 "UNLOCKEDSTAKING": "Manticae quod in aleam tanti solum reclusit",
-                "UNLOCKEDANON": "Nimirum quia non peram anonymization",
                 "STAKING": "Sacculus est currently aleam tanti",
                 "NOTSTAKING": "Non peram aleam tanti currently",
                 "MASTERNODEON": "Masternode currens est currently",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "vidulum Encrypted",
             "ENCRYPTEDCONTENT": "Si prior te tergum lima est in vestri peram tamen semper remanebit saltem de novo generata, encrypted sacculus lima. Propter rationes securitatis, prior unencrypted peram tergum lima in mos satus usura vestri novus simul inutiles facti sunt: encrypted peram suam.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Caput Marcus constitit Improviso",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Difficultas in nomine Maria quae fecit non enim ut secum Core. Is est suadeo reprehendo vestri lima pro debug.log proventus.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Difficultas est Metrix Core rei quae causa fuit ut secum. Is est suadeo reprehendo vestri lima pro debug.log proventus.",
             "CLIENTINVALIDCONFIGTITLE": "Aliquam metrix.conf configurationis",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf tuus habet irritum masternode setup quod Petrus de causa quispiam egredi statim Core. Placere reprehendo is lima.",
             "ADDREMOTEMNTITLE": "Longinquus addere Masternode",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Difficultas Bootstrapping Metrix Quad. Is est suadeo reprehendo vestri lima pro rebus Altitude iniuriarum.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "recuperatio Tools",
             "STARTUPFAILEDTITLE": "Caput Metrix Satus Deficio",
-            "STARTUPFAILEDINFO": "Ibi erat incipiens Metrix Quad. Is est suadeo reprehendo vestri lima pro rebus Altitude iniuriarum."
+            "STARTUPFAILEDINFO": "Ibi erat incipiens Metrix Quad. Is est suadeo reprehendo vestri lima pro rebus Altitude iniuriarum.",
+            "CLIENTUNKNOWNERRORTITLE": "Caput error Metrix Communication",
+            "CLIENTUNKNOWNERRORINFO": "Difficultas in communicando cum Metrix Quad. Is est suadeo reprehendo vestri lima pro debug.log proventus.",
+            "UNENROLLGOVERNORTITLE": "Praefectus confirmare Unenrollment",
+            "UNENROLLGOVERNORCONTENT": "Visne vero unenroll Tu es dux vester? Vos mos non fieri potest ad suffragium torquem impendat."
         },
         "ADDRESSBOOK": {
             "TITLE": "Inscriptio libro",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Monitum! Non est pelagus torquem secundum Metrix rimor. Et valde commendatur sync iterum re- vitare amissione bootstrap blockchain tibi nummos."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "current network"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Transaction errore. Quaero, iterum conare.",
         "MINIMUMCONFIRMATIONS": "Initibus exitibusque eget ante omnia quidem impendio I confirmationis.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Copied transactions ut clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Unus e vobis persequetur stipendium ad amounts magna est nimis tutum mittere. 90,071,992.54740992 maximum est.",
-        "TRANSACTIONCHANGETOOLARGE": "Tuto tibi magna mutatio mittere. 90,071,992.54740992 maximum est.",
         "STOPPINGMASTERNODE": "Restitit masternode...",
         "FAILEDTOWRITECONFIG": "Difficultas autem scribo vobis metrix.conf lima. Reprehendo tabella est existit et Altitude write permissions.",
         "NOPUBLICUP": "No Public IP oratio inventus est. Reprehendo Penitus iunctio vestri, et sileo Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "APR",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Vos mittere",
-                "YOUGET": "Capis",
-                "MRXADDRESS": "Oratio Metrix",
-                "SWAP": "PERMUTO",
-                "SWAPADDRESSES": "Oratio PERMUTO",
-                "BTCADDRESS": "BTC Oratio",
-                "INFOLINE1": "Cum habeas BTC deposit quid inscriptio electronica BTC ad illud adepto mos automatically ad MRX tela morbis nominatum MRX oratio tua.",
-                "INFOLINE2-1": "Nulla potest rerum in hora secundum temporum BitCoin scandalum. Fiat enim possumus accipere",
-                "INFOLINE2-2": "participating terris",
-                "INFOLINE2-3": "Hoc Vobis equidem convertetur in BTC primum ergo MRX.",
-                "INFOLINE3": "Cum BTC tua est et tua te purgavit youll accipere MRX placebat oratio tua.",
-                "INFOLINE4": "Pro magis notitia visita",
-                "FIATSWAPSELECTED": "Vos autem non modo re gesta recentibus redirected ad perficere autem Buy.Metrixcoin.com"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Non iet dux",
+                "NOTGOVERNORDETAIL": "Sunt author ius suffragii ferendi ad praesides et ad sanguinis menstrualis budgets blockchain mutationes. Vos can facti obfirmatis sera per quam praesides provinciarum regimine per rectam collateralis contractus.",
+                "COLLATERAL": "requiritur collateralis",
+                "ENROLL": "Connumerare",
+                "CONFIRMENROLL": "Tu dux ad adscribi. Hic mittet in commercio cum collateralis requiritur ad regimen contractus. Unenroll quando potes.",
+                "ISGOVERNORTITLE": "Tu dux ad active!",
+                "ISGOVERNORDETAIL1": "Sunt author ius suffragii ferendi ad praesides et ad sanguinis menstrualis budgets blockchain mutationes.",
+                "ISGOVERNORDETAIL2": "Ut maneat necesse est, quam praesides provinciarum participare I voto singulis saltem XXX diebus.",
+                "ISGOVERNORDETAIL3": "Nihilque tum suffragium mitteret tincidunt dilectum agens adhuc ping.",
+                "UNENROLL": "Unenroll",
+                "PING": "Active mitte Ping",
+                "LASTPINGTITLE": "Last ping",
+                "LASTPINGSUFFIX": "caudices ante"
+            },
+            "BUDGET": {
+                "TITLE": "budget proponerentur",
+                "ADDPROPOSAL": "Create CONSILIUM",
+                "REQUESTEDPERMONTH": "per mensis",
+                "REQUESTEDREMAINING": "reliqua",
+                "VOTEYES": "Ita votum",
+                "VOTEABSTAIN": "suffragium abstinete vos",
+                "VOTENO": "Non suffragium",
+                "VOTESTOPASS": "ad suffragia",
+                "VOTEPASSING": "transeuntes votes",
+                "MINIMUMGOVERNORS": "Transierunt usque ad minimum Bugets non est numerus Praefecti super torquem.",
+                "CURRENTLY": "currently",
+                "REQUIRED": "requiratur"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Partum a proponitis",
+                "DESCRIPTION": "Infra vos can partum a budget rogationem antequam ius suffragii ferendi ad network et submittere ea ad res postero obstructionum budget.",
+                "BUDGETFEE": "In current feodo budget est",
+                "BUDGETBLOCK": "Postero obstructionum res est,",
+                "PROPOSALTITLE": "rogationem nomine",
+                "PROPOSALDESC": "rogationem Description",
+                "PROPOSALURL": "rogationem URL",
+                "PROPOSALAMOUNT": "Aliquam rogatum",
+                "PROPOSALDURATION": "postulavit liberate",
+                "PROPOSALADDRESS": "Payment Oratio",
+                "PROPOSALCREATE": "Create CONSILIUM"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "governance",
+                "BUDGET": "budget"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Iam in BTC inscriptio electronica consociata cum hoc Metrix",
             "SWAPUSDMIN": "Quod minimum USD $ L, est moles VERTO",
             "SWAPUSDMAX": "VERTO maxime USD $ MMM moles est",
-            "NOADDRESS": "Non intrabit in Metrix inscriptio"
+            "INCOMPLETEFORM": "Repleti vos non bene requiritur agris",
+            "INVALIDPROPOSALDURATION": "Rogationem tempora I et sit inter XII mensibus",
+            "CREATINGPROPOSAL": "Bene pati rogationem ad network...",
+            "CREATEDPROPOSAL": "Tua bene rogationem creata est",
+            "ENROLLINGGOVERNOR": "Commilitium ascitis, quasi gubernator...",
+            "ENROLLEDGOVERNOR": "Dilectus tuus erit cum completum est confirmata re gesta tua",
+            "VOTINGONPROPOSAL": "Mittens rogationem Suffragium",
+            "VOTEDONPROPOSAL": "Rebus gerendis confirmata est, simul erimus votum tuum.",
+            "NOADDRESS": "Non intrabit in Metrix inscriptio",
+            "PINGINGGOVERNOR": "Mittens ping...",
+            "PINGEDGOVERNOR": "Ping misit tincidunt. Gubernator tibi non debet updated semel rebus gerendis confirmata est",
+            "UNENROLLINGGOVERNOR": "Unenrolling praefecti...",
+            "UNENROLLEDGOVERNOR": "Transaction misit. Gubernator tibi non erit in rebus gerendis confirmata olim domi",
+            "GOVERNORNOTMATURE": "Gubernator tibi non mature satis, haec actio tamen praestare"
         }
     }
 }

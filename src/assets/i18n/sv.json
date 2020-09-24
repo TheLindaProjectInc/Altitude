@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Signatur",
             "TABLE_DIFFICULTY": "Svårighet",
-            "TABLE_ENTROPYBIT": "Entropi Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "bekräftelser",
             "TABLE_INPUTOUTPUT": "Ingångar och utgångar",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Använd separata SOCKS5 proxy för att nå kamrater via Tor dolda tjänster",
                 "ONLYNET": "Anslut bara till noder i nätverket",
                 "BLOCKINCOMING": "Tillåt inte inkommande anslutningar",
-                "RESTARTREQUIRED": "En omstart av klienten krävs för att aktivera ändringar i dessa inställningar."
+                "RESTARTREQUIRED": "En omstart av klienten krävs för att aktivera ändringar i dessa inställningar.",
+                "CHAINTYPE": "Nätverk"
             },
             "WINDOW": {
                 "HIDETRAY": "Dölj fackikon",
@@ -251,7 +251,6 @@
                 "LOCKED": "Plånboken låst",
                 "UNLOCKED": "Plånboken olåst",
                 "UNLOCKEDSTAKING": "Plånboken låses upp för staking bara",
-                "UNLOCKEDANON": "Plånboken låses upp endast för anonymisering",
                 "STAKING": "Plånboken stannar för närvarande",
                 "NOTSTAKING": "Plånboken stannar inte för närvarande",
                 "MASTERNODEON": "Masternode körs för närvarande",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Plånbok Krypterad",
             "ENCRYPTEDCONTENT": "Alla tidigare säkerhetskopior du har gjort av din plånboksfil ska ersättas med den nybildade, krypterade plånbokfilen. Av säkerhetsskäl kommer tidigare säkerhetskopior av den okrypterade plånbokfilen att bli värdelös så snart du börjar använda den nya krypterade plånboken.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stannade oväntat",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var ett problem med Metrix Core som har orsakat det att säga upp. Det rekommenderas att kontrollera din debug.log-fil för problem.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Det var ett problem med Metrix Core som har orsakat att den avslutades. Det rekommenderas att du kontrollerar din debug.log-fil för problem.",
             "CLIENTINVALIDCONFIGTITLE": "Ogiltig metrix.conf Konfiguration",
             "CLIENTINVALIDCONFIGINFO": "Din metrix.conf har en ogiltig masternode-inställning som gör att Metrix Core slutar omedelbart. Kontrollera den här filen.",
             "ADDREMOTEMNTITLE": "Lägg till fjärrmasternod",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Det gick inte att starta om Metrix Core. Det rekommenderas att du kontrollerar din Altitude-loggfil för problem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Återställningsverktyg",
             "STARTUPFAILEDTITLE": "Metrix Core-start misslyckades",
-            "STARTUPFAILEDINFO": "Det var en startande Metrix Core. Det rekommenderas att du kontrollerar din Altitude-loggfil för problem."
+            "STARTUPFAILEDINFO": "Det var en startande Metrix Core. Det rekommenderas att du kontrollerar din Altitude-loggfil för problem.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikationsfel",
+            "CLIENTUNKNOWNERRORINFO": "Det uppstod ett problem med att kommunicera med Metrix Core. Det rekommenderas att du kontrollerar din debug.log-fil för problem.",
+            "UNENROLLGOVERNORTITLE": "Bekräfta avregistrering av guvernören",
+            "UNENROLLGOVERNORCONTENT": "Är du säker på att du vill avregistrera din guvernör? Du kommer inte längre att kunna rösta om kedjestyrning."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbok",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Varning! Du är inte i huvudkedjan enligt Metrix explorer. Det rekommenderas starkt att synkronisera eller starta om blockchainen igen för att undvika förlust av mynt."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Nuvarande nätverk"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Transaktionsfel. Var god försök igen.",
         "MINIMUMCONFIRMATIONS": "Alla ingångar kräver minst 1 bekräftelse innan de spenderas.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktioner kopieras till Urklipp",
-        "TRANSACTIONOUTPUTTOOLARGE": "En av dina betalningar till belopp är för stor för att säkert skicka. Maximalt är 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Din ändring är för stor för att skickas säkert. Maximalt är 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Stoppar masternode...",
         "FAILEDTOWRITECONFIG": "Det gick inte att skriva till din metrix.conf-fil. Kontrollera att filen finns och att Altitude har skrivbehörigheter.",
         "NOPUBLICUP": "Ingen offentlig IP-adress hittades. Kontrollera din internetanslutning och starta om Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "november",
         "DEC": "december"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Du skickar",
-                "YOUGET": "Du får",
-                "MRXADDRESS": "Metrix-adress",
-                "SWAP": "Byta",
-                "SWAPADDRESSES": "Byt adresser",
-                "BTCADDRESS": "BTC-adress",
-                "INFOLINE1": "När du har en BTC-insättningsadress kommer alla BTC som skickas till den adressen automatiskt att bytas ut för MRX till din nominerade MRX-adress.",
-                "INFOLINE2-1": "Transaktioner rensas vanligtvis inom en timme beroende på Bitcoin-blocktiderna. Vi kan acceptera fiat för",
-                "INFOLINE2-2": "deltagande länder",
-                "INFOLINE2-3": "Detta konverteras till BTC först sedan MRX.",
-                "INFOLINE3": "När din BTC-insättning har rensats får du din MRX till din nominerade adress.",
-                "INFOLINE4": "För mer information besök",
-                "FIATSWAPSELECTED": "Du kommer att omdirigeras till Buy.Metrixcoin.com för att slutföra denna transaktion"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Du är inte en guvernör",
+                "NOTGOVERNORDETAIL": "Guvernörer ansvarar för att rösta om månatliga budgetar och blockchain-förändringar. Du kan bli guvernör genom att låsa rätt säkerhet i styrelseavtalet.",
+                "COLLATERAL": "Krav på säkerhet",
+                "ENROLL": "Skriva in",
+                "CONFIRMENROLL": "Du håller på att anmäla dig som guvernör. Detta kommer att skicka en transaktion med nödvändig säkerhet till styrelseavtalet. Du kan avregistrera dig när som helst.",
+                "ISGOVERNORTITLE": "Du är en aktiv guvernör!",
+                "ISGOVERNORDETAIL1": "Guvernörer ansvarar för att rösta om månatliga budgetar och blockchain-förändringar.",
+                "ISGOVERNORDETAIL2": "För att vara en guvernör måste du delta i minst 1 röst var 30: e dag.",
+                "ISGOVERNORDETAIL3": "Om det inte finns något att rösta på så kan du manuellt fortsätta registreringen genom att skicka en aktiv ping.",
+                "UNENROLL": "avregistrera",
+                "PING": "Skicka Active Ping",
+                "LASTPINGTITLE": "Senaste ping",
+                "LASTPINGSUFFIX": "block sedan"
+            },
+            "BUDGET": {
+                "TITLE": "Budgetförslag",
+                "ADDPROPOSAL": "Skapa förslag",
+                "REQUESTEDPERMONTH": "per månad",
+                "REQUESTEDREMAINING": "återstående",
+                "VOTEYES": "Rösta Ja",
+                "VOTEABSTAIN": "Rösta avstå",
+                "VOTENO": "Rösta nr",
+                "VOTESTOPASS": "röster att passera",
+                "VOTEPASSING": "godkända röster",
+                "MINIMUMGOVERNORS": "Bugets kan inte skickas förrän det minsta antalet guvernörer finns i kedjan.",
+                "CURRENTLY": "För närvarande",
+                "REQUIRED": "Nödvändig"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Skapa ett förslag",
+                "DESCRIPTION": "Nedan kan du skapa ett budgetförslag och skicka det till nätverket för omröstning innan nästa budgetavvecklingsblock.",
+                "BUDGETFEE": "Den aktuella budgetavgiften är",
+                "BUDGETBLOCK": "Nästa bosättningsblock är",
+                "PROPOSALTITLE": "Förslagets namn",
+                "PROPOSALDESC": "Förslag Beskrivning",
+                "PROPOSALURL": "Förslagets URL",
+                "PROPOSALAMOUNT": "Begärt belopp",
+                "PROPOSALDURATION": "Begärda betalningar",
+                "PROPOSALADDRESS": "betalningsadress",
+                "PROPOSALCREATE": "Skapa förslag"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "styrning",
+                "BUDGET": "Budget"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Genererar byta adress...",
-            "ALREADYHAVEADDRESS": "Du har redan en BTC-adress kopplad till den här Metrix-adressen",
+            "ALREADYHAVEADDRESS": "Du har redan en BTC-adress kopplad till denna Metrix-adress",
             "SWAPUSDMIN": "Det lägsta USD-swapbeloppet är $ 50",
             "SWAPUSDMAX": "Det maximala USD-swapbeloppet är $ 3000",
-            "NOADDRESS": "Du skrev inte in en Metrix-adress"
+            "INCOMPLETEFORM": "Du har inte fyllt i alla obligatoriska fält korrekt",
+            "INVALIDPROPOSALDURATION": "Förslagets varaktighet bör vara mellan 1 och 12 månader",
+            "CREATINGPROPOSAL": "Skickar förslag till nätverk...",
+            "CREATEDPROPOSAL": "Ditt förslag har skapats",
+            "ENROLLINGGOVERNOR": "Anmäler sig som guvernör...",
+            "ENROLLEDGOVERNOR": "Din registrering kommer att vara klar när din transaktion har bekräftats",
+            "VOTINGONPROPOSAL": "Skicka förslagets omröstning",
+            "VOTEDONPROPOSAL": "Din röst kommer att räknas när transaktionen har bekräftats.",
+            "NOADDRESS": "Du angav inte en Metrix-adress",
+            "PINGINGGOVERNOR": "Skickar ping...",
+            "PINGEDGOVERNOR": "Ping skickades. Din guvernör kommer att uppdateras när transaktionen har bekräftats",
+            "UNENROLLINGGOVERNOR": "Avregistrerar guvernören...",
+            "UNENROLLEDGOVERNOR": "Transaktion skickad. Din guvernör kommer att avregistreras när transaktionen har bekräftats",
+            "GOVERNORNOTMATURE": "Din guvernör är inte mogen för att utföra den här åtgärden än"
         }
     }
 }

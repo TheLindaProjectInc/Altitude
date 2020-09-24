@@ -1,4 +1,4 @@
-import { Injectable, isDevMode, EventEmitter, Output } from '@angular/core';
+import { Injectable, isDevMode, EventEmitter, Output, Directive } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
@@ -6,9 +6,10 @@ import { ipcRenderer, remote, clipboard, shell } from 'electron';
 import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
 import { CurrencyService } from './currency.service';
-import { NotificationService } from './notification.service';
-var supportedLanguages = require('../pages/locale/languages');
+import { ChainType, ClientStatus } from 'app/enum';
+import Languages from 'app/languages';
 
+@Directive()
 @Injectable()
 export class ElectronService {
 
@@ -19,6 +20,7 @@ export class ElectronService {
 
   settings: any = {};
   clientVersion: string = '0';
+  chain: ChainType = ChainType.MAINNET;
   publicIP: string = '';
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
@@ -31,7 +33,6 @@ export class ElectronService {
     private http: HttpClient,
     private translate: TranslateService,
     private currencyService: CurrencyService,
-    private notification: NotificationService
   ) {
     // Conditional imports
     if (this.isElectron()) {
@@ -56,7 +57,7 @@ export class ElectronService {
   connectClientNodeIPC() {
     // listen for client
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
-      if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
+      // if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
       switch (cmd) {
         case 'STATUS':
           this.clientStatusEvent.emit(data);
@@ -73,11 +74,11 @@ export class ElectronService {
         case 'VERSION':
           this.clientVersion = data;
           break;
+        case 'CHAIN':
+          this.chain = data;
+          break;
         case 'IP':
           this.publicIP = data;
-          break;
-        case 'MASTERNODE':
-          if (data === false) this.notification.notify('error', 'NOTIFICATIONS.FAILEDTOWRITECONFIG');
           break;
       }
     });
@@ -87,6 +88,8 @@ export class ElectronService {
     this.ipcRenderer.send('client-node', 'RPC');
     // ask for client version
     this.ipcRenderer.send('client-node', 'VERSION');
+    // ask for client chain
+    this.ipcRenderer.send('client-node', 'CHAIN');
     // ask for ip address
     this.ipcRenderer.send('client-node', 'IP');
   }
@@ -111,11 +114,11 @@ export class ElectronService {
     this.translate.setDefaultLang('en');
     const localLanguage = navigator.language.toLowerCase();
     const localLangaugeSplit = localLanguage.split("-")[0];
-    Object.keys(supportedLanguages).forEach(key => {
-      const supportedLanguage = supportedLanguages[key].code.toLowerCase();
+    Languages.supported.forEach(language => {
+      const supportedLanguage = Languages.getCode(language).toLowerCase();
       if (supportedLanguage === localLanguage || supportedLanguage === localLangaugeSplit) {
-        if (isDevMode()) console.log("Detected local langauge", key);
-        this.translate.setDefaultLang(supportedLanguages[key].code);
+        if (isDevMode()) console.log("Detected local language", language);
+        this.translate.setDefaultLang(Languages.getCode(language));
       }
     });
   }
@@ -151,25 +154,4 @@ export class ElectronService {
       });
     })
   }
-}
-
-export enum ClientStatus {
-  INITIALISING,
-  CHECKEXISTS,
-  DOWNLOADCLIENT,
-  UPDATEAVAILABLE,
-  STARTING,
-  RUNNING,
-  RUNNINGEXTERNAL,
-  STOPPED,
-  BOOTSTRAPPING,
-  NOCREDENTIALS,
-  INVALIDHASH,
-  INVALIDMASTERNODECONFIG,
-  DOWNLOADFAILED,
-  UNSUPPORTEDPLATFORM,
-  SHUTTINGDOWN,
-  RESTARTING,
-  CLOSEDUNEXPECTED,
-  BOOTSTRAPFAILED,
 }

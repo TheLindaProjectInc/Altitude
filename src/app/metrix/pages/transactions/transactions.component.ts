@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { WalletService } from '../../providers/wallet.service';
-import Helpers from 'app/helpers';
-import { ChangeEvent } from 'ngx-virtual-scroller';
+import { IPageInfo } from 'ngx-virtual-scroller';
 import { ErrorService } from 'app/providers/error.service';
 import { ElectronService } from 'app/providers/electron.service';
 import { Transaction } from '../../classes';
@@ -13,12 +12,13 @@ import { NotificationService } from 'app/providers/notification.service';
 })
 
 export class TransactionsComponent {
-  sub;
+  transactionsUpdatedSub;
+  newBlockSub;
 
-  public helpers = Helpers;
   transactions = [];
   skip = 10;
   loading = false;
+  hasMoreTransaction = true;
 
   constructor(
     public wallet: WalletService,
@@ -30,22 +30,30 @@ export class TransactionsComponent {
 
   ngOnInit(): void {
     this.transactions = this.wallet.transactions;
-    this.sub = this.wallet.transactionsUpdated.subscribe(() => {
+    this.transactionsUpdatedSub = this.wallet.transactionsUpdated.subscribe(() => {
       this.transactions = this.wallet.transactions;
     });
+    this.newBlockSub = this.wallet.newBlockReceived.subscribe(() => {
+      this.hasMoreTransaction = true
+    })
   }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.transactionsUpdatedSub.unsubscribe();
+    this.newBlockSub.unsubscribe();
     this.wallet.cleanupTransactions();
   }
 
-  async fetchMore(event: ChangeEvent) {
-    if (this.loading || event.end !== this.wallet.transactions.length - 1) return;
+  async fetchMore(event: IPageInfo) {
+    const transactionCount = this.wallet.transactions.length;
+    if (this.loading || event.endIndex !== transactionCount - 1 || !this.hasMoreTransaction) return;
     this.loading = true;
     try {
       await this.wallet.getTransactions(10, this.skip);
       this.transactions = this.wallet.transactions;
+      if (transactionCount === this.transactions.length) {
+        this.hasMoreTransaction = false
+      }
       this.skip += 10;
     } catch (ex) {
       this.errorService.diagnose(ex);

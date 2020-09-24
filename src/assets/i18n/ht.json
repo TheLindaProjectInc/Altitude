@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Prèv Hash",
             "TABLE_SIGNATURE": "Siyati",
             "TABLE_DIFFICULTY": "Difikilte pou",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Sik blòk",
             "TABLE_CONFIRMATIONS": "Konfimasyon",
             "TABLE_INPUTOUTPUT": "Antre ak Outputs",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Itilize separe SOCKS5 prokurasyon pou rive nan kamarad atravè Tor sèvis kache",
                 "ONLYNET": "Sèlman konekte nan nœuds nan rezo",
                 "BLOCKINCOMING": "Pa kite koneksyon ki fèk ap rantre",
-                "RESTARTREQUIRED": "Yon rekòmandasyon kliyan oblije aktive nenpòt chanjman nan anviwònman sa yo."
+                "RESTARTREQUIRED": "Yon rekòmandasyon kliyan oblije aktive nenpòt chanjman nan anviwònman sa yo.",
+                "CHAINTYPE": "Rezo"
             },
             "WINDOW": {
                 "HIDETRAY": "Kache ikon plato",
@@ -251,7 +251,6 @@
                 "LOCKED": "Bous fèmen",
                 "UNLOCKED": "Bous klavye",
                 "UNLOCKEDSTAKING": "Bous klavye pou pran sèlman",
-                "UNLOCKEDANON": "Bous klavye pou anonimasyon sèlman",
                 "STAKING": "Bous se kounye a k ap pran",
                 "NOTSTAKING": "Bous pa aktyèlman ap monte",
                 "MASTERNODEON": "Masternode se kounye a kouri",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap echwe",
-            "BOOTSTRAPFAILEDINFO": "Te gen yon pwoblèm demaraj Metrix Nwayo. Li rekòmande pou tcheke dosye Altitid rejis ou pou pwoblèm.",
+            "BOOTSTRAPFAILEDINFO": "Te gen yon pwoblèm demaraj Metrix Nwayo. Li rekòmande yo tcheke dosye log altitid ou a pou pwoblèm.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zouti Recovery",
             "STARTUPFAILEDTITLE": "Metrix Nwayo demaraj echwe",
-            "STARTUPFAILEDINFO": "Te gen yon Metrix Nwayo kòmanse. Li rekòmande pou tcheke dosye Altitid rejis ou pou pwoblèm."
+            "STARTUPFAILEDINFO": "Te gen yon Metrix Nwayo kòmanse. Li rekòmande yo tcheke dosye log altitid ou a pou pwoblèm.",
+            "CLIENTUNKNOWNERRORTITLE": "Erè Kominikasyon Metris Nwayo",
+            "CLIENTUNKNOWNERRORINFO": "Te gen yon pwoblèm pou kominike ak Metrix Core. Li rekòmande yo tcheke dosye debug.log ou a pou pwoblèm.",
+            "UNENROLLGOVERNORTITLE": "Konfime Anilasyon Enskripsyon Gouvènè a",
+            "UNENROLLGOVERNORCONTENT": "Èske ou sèten ou vle anile Gouvènè ou a? Ou pap kapab vote sou gouvènans chèn ankò."
         },
         "ADDRESSBOOK": {
             "TITLE": "Liv adrès",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Avètisman! Ou pa sou chèn prensipal la dapre eksploratè Metrix lan. Li trè rekòmande pou re-senk oswa re-bootstrap blockchain ou pou fè pou evite pèt la nan nenpòt ki pyès monnen."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Rezo aktyèl la"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Tranzaksyon erè. Tanpri eseye ankò.",
         "MINIMUMCONFIRMATIONS": "Tout entrain mande pou omwen 1 konfimasyon anvan depans.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksyon kopye nan clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Youn nan peye ou a kantite lajan an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Chanjman ou an twò gwo pou voye san danje. Maksimòm se 90,071.992.54740992.",
         "STOPPINGMASTERNODE": "Sispann masternode...",
         "FAILEDTOWRITECONFIG": "Te gen yon pwoblèm pou ekri nan dosye metrix.conf ou. Tcheke dosye a egziste e ke Altitid gen pèmisyon ekri.",
         "NOPUBLICUP": "Pa gen adrès IP Piblik yo te jwenn. Tcheke koneksyon entènèt ou an epi rekòmanse Altitid.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Ou voye",
-                "YOUGET": "Ou jwenn",
-                "MRXADDRESS": "Adrès Metrix",
-                "SWAP": "Boukante",
-                "SWAPADDRESSES": "Boukante adrès",
-                "BTCADDRESS": "Adrès BTC",
-                "INFOLINE1": "Yon fwa ou gen yon adrès depo BTC nenpòt BTC voye nan adrès sa pral otomatikman chanje pou MRX nan adrès MRX nominasyon ou.",
-                "INFOLINE2-1": "Tranzaksyon tipikman klè nan yon èdtan depann sou fwa yo blòk Bitcoin. Nou ka aksepte fiat pou",
-                "INFOLINE2-2": "peyi kap patisipe yo",
-                "INFOLINE2-3": "Sa a pral konvèti nan BTC premye Lè sa a, MRX.",
-                "INFOLINE3": "Yon fwa depo BTC ou te klarifye ou pral resevwa MRX ou nan adrès ou nominasyon.",
-                "INFOLINE4": "Pou plis enfòmasyon vizite",
-                "FIATSWAPSELECTED": "Ou pral reyorante resous nan Buy.Metrixcoin.com ranpli tranzaksyon sa a"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Ou pa yon Gouvènè",
+                "NOTGOVERNORDETAIL": "Gouvènè yo responsab pou vote sou bidjè chak mwa ak chanjman blockchain yo. Ou ka vin yon Gouvènè pa bloke kolateral ki kòrèk la nan kontra a Gouvènans.",
+                "COLLATERAL": "Kolateral obligatwa",
+                "ENROLL": "Enskri",
+                "CONFIRMENROLL": "Ou pral enskri kòm Gouvènè. Sa a pral voye yon tranzaksyon ak kolateral ki obligatwa nan kontra gouvènans lan. Ou ka inenroll nan nenpòt ki lè.",
+                "ISGOVERNORTITLE": "Ou se yon Gouvènè aktif!",
+                "ISGOVERNORDETAIL1": "Gouvènè yo responsab pou vote sou bidjè chak mwa ak chanjman blockchain yo.",
+                "ISGOVERNORDETAIL2": "Pou rete yon Gouvènè w ap bezwen patisipe nan omwen 1 vòt chak 30 jou.",
+                "ISGOVERNORDETAIL3": "Si pa gen anyen pou vote lè sa a, ou ka manuelman kontinye enskripsyon ou pa voye yon ping aktif.",
+                "UNENROLL": "Anile enskripsyon an",
+                "PING": "Voye Ping aktif",
+                "LASTPINGTITLE": "Dènye ping",
+                "LASTPINGSUFFIX": "blòk de sa"
+            },
+            "BUDGET": {
+                "TITLE": "Pwopozisyon bidjè",
+                "ADDPROPOSAL": "Kreye Pwopozisyon",
+                "REQUESTEDPERMONTH": "pamwa",
+                "REQUESTEDREMAINING": "rete",
+                "VOTEYES": "Vote Wi",
+                "VOTEABSTAIN": "Vote absan",
+                "VOTENO": "Vote Non",
+                "VOTESTOPASS": "vote pou pase",
+                "VOTEPASSING": "pase vòt yo",
+                "MINIMUMGOVERNORS": "Pinè pa ka pase jiskaske kantite minimòm Gouvènè egziste sou chèn lan.",
+                "CURRENTLY": "Kounye a",
+                "REQUIRED": "Obligatwa"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Kreye yon pwopozisyon",
+                "DESCRIPTION": "Anba a ou ka kreye yon pwopozisyon bidjè epi soumèt li nan rezo a pou vote anvan pwochen blòk la règleman bidjè.",
+                "BUDGETFEE": "Frè bidjè aktyèl la se",
+                "BUDGETBLOCK": "Pwochen blòk règleman an se",
+                "PROPOSALTITLE": "Non Pwopozisyon an",
+                "PROPOSALDESC": "Deskripsyon Pwopozisyon an",
+                "PROPOSALURL": "URL pwopozisyon",
+                "PROPOSALAMOUNT": "Kesyon yo mande a",
+                "PROPOSALDURATION": "Peman mande a",
+                "PROPOSALADDRESS": "Adrès Peman",
+                "PROPOSALCREATE": "Kreye Pwopozisyon"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Gouvènans",
+                "BUDGET": "Bidjè"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Jenere Swap Adrès...",
-            "ALREADYHAVEADDRESS": "Ou deja gen yon adrès BTC ki asosye avèk adrès Metrix sa a",
+            "ALREADYHAVEADDRESS": "Ou deja gen yon adrès BTC ki asosye ak adrès Metrix sa a",
             "SWAPUSDMIN": "Montan minimòm USD swap la se $ 50",
-            "SWAPUSDMAX": "Kantite lajan maksimòm USD swap la se $ 3000",
-            "NOADDRESS": "Ou pa t 'antre nan yon adrès Metrix"
+            "SWAPUSDMAX": "Maksimòm kantite lajan USD swap la se $ 3000",
+            "INCOMPLETEFORM": "Ou pa ranpli nan tout jaden obligatwa yo kòrèkteman",
+            "INVALIDPROPOSALDURATION": "Dire Pwopozisyon an ta dwe ant 1 ak 12 mwa",
+            "CREATINGPROPOSAL": "Soumèt pwopozisyon nan rezo...",
+            "CREATEDPROPOSAL": "Pwopozisyon ou te kreye avèk siksè",
+            "ENROLLINGGOVERNOR": "Enskri kòm Gouvènè...",
+            "ENROLLEDGOVERNOR": "Anwolman ou pral konplete yon fwa se tranzaksyon ou konfime",
+            "VOTINGONPROPOSAL": "Voye pwopozisyon vòt la",
+            "VOTEDONPROPOSAL": "Vòt ou a ap konte yon fwa tranzaksyon an konfime.",
+            "NOADDRESS": "Ou pa t 'antre nan yon adrès Metrix",
+            "PINGINGGOVERNOR": "Voye ping...",
+            "PINGEDGOVERNOR": "Ping voye avèk siksè. Gouvènè ou pral mete ajou yon fwa tranzaksyon an konfime",
+            "UNENROLLINGGOVERNOR": "Anile enskripsyon Gouvènè...",
+            "UNENROLLEDGOVERNOR": "Tranzaksyon voye. Gouvènè ou a ap anile yon fwa ke tranzaksyon an konfime",
+            "GOVERNORNOTMATURE": "Gouvènè ou a pa ase matirite pou fè aksyon sa a ankò"
         }
     }
 }

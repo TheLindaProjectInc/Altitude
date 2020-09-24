@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Tabbatarwa",
             "TABLE_SIGNATURE": "Sa hannu",
             "TABLE_DIFFICULTY": "Difficulty",
-            "TABLE_ENTROPYBIT": "Bit Entropy",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Tabbatarwa",
             "TABLE_INPUTOUTPUT": "Bayanai da Fassarori",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Yi amfani da wakili na SOCKS5 da za a iya isa abokan hulɗa ta hanyar hidimar da aka ɓoye",
                 "ONLYNET": "Kawai haɗi zuwa nodes a cikin cibiyar sadarwa",
                 "BLOCKINCOMING": "Kada ka ƙyale haɗin shiga",
-                "RESTARTREQUIRED": "Ana buƙatar farawa na Abune don kunna kowane canje-canje a waɗannan saitunan."
+                "RESTARTREQUIRED": "Ana buƙatar farawa na Abune don kunna kowane canje-canje a waɗannan saitunan.",
+                "CHAINTYPE": "Hanyar sadarwa"
             },
             "WINDOW": {
                 "HIDETRAY": "Ɓoye allo",
@@ -251,7 +251,6 @@
                 "LOCKED": "An kulle walat",
                 "UNLOCKED": "An kulle walat",
                 "UNLOCKEDSTAKING": "Ba a kulle walat don yin kawai ba",
-                "UNLOCKEDANON": "An kulle walat don yin sanarwa kawai",
                 "STAKING": "Walat yana halin yanzu",
                 "NOTSTAKING": "Walat ba a halin yanzu ba",
                 "MASTERNODEON": "Masternode yana gudana a halin yanzu",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Wane An Ɗoye",
             "ENCRYPTEDCONTENT": "Duk wani bayanan da kuka riga kuka yi daga fayil dinku ya kamata a maye gurbin tare da sabon saiti, ɓoyayyen takarda. Don dalilai na tsaro, bayanan ajiyar baya na ajiyayyen bashin baƙaƙe ba zai zama mara amfani ba da zarar ka fara amfani da sabon walat ɓoyayyen.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ya tsaya ba tare da tsammani ba",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Akwai matsala tare da Metrix Core wanda ya sa shi ya ƙare. Yana da shawarar don duba fayil din debug.log don al'amurra.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Akwai matsala tare da Metrix Core wanda ya sa ya ƙare. Ana bada shawara don bincika fayil ɗin debug.log ɗinku don al'amurran da suka shafi.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf Kanada Kanada",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf naka yana da saiti mara kyau wanda zai sa Metrix Core ya fita nan da nan. Da fatan a duba wannan fayil.",
             "ADDREMOTEMNTITLE": "Sanya Maballin Nesa",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Index na Masternode",
             "BOOTSTRAPFAILEDTITLE": "Ba a yi nasarar Metrix Core Bootstrap ba",
-            "BOOTSTRAPFAILEDINFO": "An sami matsalar bootstrapping Metrix Core. An ba da shawarar a duba fayil ɗin Altitude ɗinku don al'amurran da suka shafi.",
+            "BOOTSTRAPFAILEDINFO": "An sami matsala bootstrapping Metrix Core. Ana bada shawara don bincika fayil ɗin Altitude ɗinku don maganganu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kayan Aiki",
             "STARTUPFAILEDTITLE": "Ba a yi nasarar Matrix Core Startre ba",
-            "STARTUPFAILEDINFO": "Akwai fara Metrix Core. An ba da shawarar a duba fayil ɗin Altitude ɗinku don al'amurran da suka shafi."
+            "STARTUPFAILEDINFO": "Akwai fara Metrix Core. Ana bada shawara don bincika fayil ɗin Altitude ɗinku don maganganu.",
+            "CLIENTUNKNOWNERRORTITLE": "Kuskuren Sadarwa na Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "An sami matsala sadarwa tare da Metrix Core. Ana bada shawara don bincika fayil ɗin debug.log ɗinku don al'amurran da suka shafi.",
+            "UNENROLLGOVERNORTITLE": "Tabbatar da Rashin shigar da Gwamna",
+            "UNENROLLGOVERNORCONTENT": "Shin kun tabbata kuna son cire rajistar Gwamnan ku? Ba za ku ƙara samun damar yin zaɓe a kan tsarin mulki ba."
         },
         "ADDRESSBOOK": {
             "TITLE": "Littafin adireshi",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Gargadi! Ba ku cikin babban sarkar bisa ga binciken Metrix. An ba da shawarar sosai don sake sake daidaitawa ko sake haɗawa da blockchain ku don hana asarar kowane tsabar kuɗi."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Hanyar sadarwar yanzu"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Kuskuren kasuwanci. Da fatan a sake gwadawa.",
         "MINIMUMCONFIRMATIONS": "Dukkan bayanai suna buƙatar akalla 1 tabbaci kafin jawabin.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ayyukan da aka kwafe zuwa takarda",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ɗaya daga cikin kuɗin kuɗin zuwa yawa yana da yawa don aika sako lafiya. Yawanci shine 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Yawan canji ya yi girma da yawa don aika sako lafiya. Yawanci shine 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Dakatar da",
         "FAILEDTOWRITECONFIG": "An sami matsala wajen rubuta fayil ɗin metrix.conf ɗinku. Duba fayil ɗin yana wanzu kuma Altitude yana da izini na izini.",
         "NOPUBLICUP": "Ba a sami adireshin IP na Jama'a ba. Duba haɗin intanet ɗin ka kuma sake kunna Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Kun Aika",
-                "YOUGET": "Ka Samu",
-                "MRXADDRESS": "Adireshin Metrix",
-                "SWAP": "Musayar",
-                "SWAPADDRESSES": "Canza adireshin",
-                "BTCADDRESS": "Adireshin BTC",
-                "INFOLINE1": "Da zarar kana da adireshin ajiya na BTC duk wani BTC da aka aika wa wannan adireshin zai canza ta atomatik don MRX cikin adireshin MRX da aka zaba.",
-                "INFOLINE2-1": "Ma'amaloli a bayyane suke a cikin awa daya dangane da lokutan toshewar Bitcoin. Za mu iya karɓa na fiat",
-                "INFOLINE2-2": "Kasashe masu halarta",
-                "INFOLINE2-3": "Za'a canza wannan zuwa BTC farko sannan MRX.",
-                "INFOLINE3": "Da zarar ajiyar kuɗin ku na BTC ɗin ku ya ɓace za ku karɓi MRX ɗinku cikin adireshin da aka zaɓa.",
-                "INFOLINE4": "Don ƙarin bayani ziyarar",
-                "FIATSWAPSELECTED": "Za'a tura ku zuwa Buy.Metrixcoin.com don kammala wannan ma'amala"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Kai ba Gwamna bane",
+                "NOTGOVERNORDETAIL": "Gwamnonin suna da alhakin jefa ƙuri'a kan kasafin kuɗi na wata-wata da canje-canje na blockchain. Kuna iya zama gwamna ta hanyar kulle madaidaiciyar yarjejeniyar a kwangilar Gwamnatin.",
+                "COLLATERAL": "Yarda da ake buqata",
+                "ENROLL": "Rijista",
+                "CONFIRMENROLL": "Kun kusa yin rajista a matsayin Gwamna. Wannan zai aika da ma'amala tare da yarjejeniyar da ake buƙata zuwa kwangilar gudanar da mulki. Kuna iya rajista a kowane lokaci.",
+                "ISGOVERNORTITLE": "Kai Gwamna ne mai aiki!",
+                "ISGOVERNORDETAIL1": "Gwamnonin suna da alhakin jefa ƙuri'a kan kasafin kuɗi na wata-wata da canje-canje na blockchain.",
+                "ISGOVERNORDETAIL2": "Don tsayar da gwamna kana buƙatar shiga cikin aƙalla 1 zaɓin kowace rana kwana 30.",
+                "ISGOVERNORDETAIL3": "Idan babu abun yin jefa kuri'a sannan zaka iya ci gaba da yiwa rajista hannu ta hanyar aika ping mai aiki.",
+                "UNENROLL": "Rakaitawa",
+                "PING": "Aika Ping ɗin aiki",
+                "LASTPINGTITLE": "Ping na ƙarshe",
+                "LASTPINGSUFFIX": "tubalan da suka wuce"
+            },
+            "BUDGET": {
+                "TITLE": "Kasafin Kudi",
+                "ADDPROPOSAL": "Proirƙiri shawara",
+                "REQUESTEDPERMONTH": "da wata",
+                "REQUESTEDREMAINING": "m",
+                "VOTEYES": "Kuri'a E",
+                "VOTEABSTAIN": "Bude Abstain",
+                "VOTENO": "Kuri'a Ba",
+                "VOTESTOPASS": "kuri'un su wuce",
+                "VOTEPASSING": "wucewa kuri'un",
+                "MINIMUMGOVERNORS": "Ba za a iya zartar da ugan bindiga ba har sai mafi karancin Gwamnoni sun wanzu a kan sarkar.",
+                "CURRENTLY": "A halin yanzu",
+                "REQUIRED": "Da ake bukata"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Airƙiri shawara",
+                "DESCRIPTION": "A ƙasa zaku iya ƙirƙirar ƙaddamar da kasafin kuɗi kuma ku gabatar da shi zuwa cibiyar sadarwa don jefa ƙuri'a kafin toshewar ƙaddamar da kasafin kuɗi na gaba.",
+                "BUDGETFEE": "Kudin kasafin kudin bana",
+                "BUDGETBLOCK": "Lokaci na gaba na sulhu shine",
+                "PROPOSALTITLE": "Suna na ba da shawara",
+                "PROPOSALDESC": "Bayanin Shawara",
+                "PROPOSALURL": "Samarwa URL",
+                "PROPOSALAMOUNT": "Adadin da Aka Nemi",
+                "PROPOSALDURATION": "Biyan Bukatar",
+                "PROPOSALADDRESS": "Adireshin Biyan Kuɗi",
+                "PROPOSALCREATE": "Proirƙiri shawara"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Shugabanci",
+                "BUDGET": "Kasafin kudi"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Kuna da adireshin BTC da ke hade da wannan adireshin Metrix",
             "SWAPUSDMIN": "Mafi karancin musanyawa $ 50",
             "SWAPUSDMAX": "Matsakaicin adadin canji na USD shine $ 3000",
-            "NOADDRESS": "Ba ku shigar da adireshin Metrix ba"
+            "INCOMPLETEFORM": "Ba ku cika dukkan filayen da ake buƙata ba",
+            "INVALIDPROPOSALDURATION": "Dokokin bada shawara ya kamata ya kasance tsakanin wata 1 zuwa 12",
+            "CREATINGPROPOSAL": "Submitaddamar da gabatarwa zuwa hanyar sadarwa...",
+            "CREATEDPROPOSAL": "An kirkiro shawarwarin ku cikin nasara",
+            "ENROLLINGGOVERNOR": "Rijista a matsayin Gwamna...",
+            "ENROLLEDGOVERNOR": "Rijistar ku zata cika lokacin da aka tabbatar da ma'amalar ku",
+            "VOTINGONPROPOSAL": "Aika da shawara zabe",
+            "VOTEDONPROPOSAL": "Za'a kirga kuri'arku da zarar kasuwancin ya tabbatar.",
+            "NOADDRESS": "Ba ku shigar da adireshin Metrix ba",
+            "PINGINGGOVERNOR": "Ana aika ping...",
+            "PINGEDGOVERNOR": "An aika Ping cikin nasara. Za a sabunta Gwamnan ku da zarar an tabbatar da ma'amala",
+            "UNENROLLINGGOVERNOR": "Ba shi da iko Gwamna...",
+            "UNENROLLEDGOVERNOR": "An aika ma'amala Za a yi rajistar Gwamnan ku da zarar an tabbatar da ma'amala",
+            "GOVERNORNOTMATURE": "Gwamnan ku bai isa ya aiwatar da wannan aikin ba tukunna"
         }
     }
 }

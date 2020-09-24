@@ -1,0 +1,26 @@
+<div class="content" #scrollingBlock>
+
+    <div class="title">
+        <h1>{{'DGP.PAGES.BUDGET.TITLE' | translate}}</h1>
+
+        <button class="btn btn-default" routerLink="/dgp/budget/create">
+            <fa-icon icon="plus"></fa-icon>
+            {{ 'DGP.PAGES.BUDGET.ADDPROPOSAL' | translate }}
+        </button>
+    </div>
+
+    <div class="alerts" *ngIf="dgpService.minimumGovernors > dgpService.governorCount">
+        {{ 'DGP.PAGES.BUDGET.MINIMUMGOVERNORS' | translate }}
+        <br />
+        {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}}
+        <br/>
+        {{ 'DGP.PAGES.BUDGET.REQUIRED' | translate }}: {{dgpService.minimumGovernors}}
+    </div>
+
+    <div class="flex-row-center flex-wrap">
+
+        <budget-card *ngFor="let proposal of proposals" [proposal]="proposal"></budget-card>
+
+    </div>
+
+</div>

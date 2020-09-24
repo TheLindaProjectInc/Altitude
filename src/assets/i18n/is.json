@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Undirskrift",
             "TABLE_DIFFICULTY": "Erfiðleikar",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Staðfestingar",
             "TABLE_INPUTOUTPUT": "Inntak og útflutningur",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Notaðu sérstaka SOCKS5 umboð til að ná sambandi við Tor falinn þjónustu",
                 "ONLYNET": "Tengdu aðeins við hnúta í neti",
                 "BLOCKINCOMING": "Ekki leyfa komandi tengingar",
-                "RESTARTREQUIRED": "Endurheimt viðskiptavinar er nauðsynlegt til að virkja allar breytingar á þessum stillingum."
+                "RESTARTREQUIRED": "Endurheimt viðskiptavinar er nauðsynlegt til að virkja allar breytingar á þessum stillingum.",
+                "CHAINTYPE": "Net"
             },
             "WINDOW": {
                 "HIDETRAY": "Fela bakki helgimynd",
@@ -251,7 +251,6 @@
                 "LOCKED": "Veski læst",
                 "UNLOCKED": "Veski opið",
                 "UNLOCKEDSTAKING": "Veski opið fyrir einangrun",
-                "UNLOCKEDANON": "Veski opið aðeins fyrir nafnlausingu",
                 "STAKING": "Veski er nú að stinga",
                 "NOTSTAKING": "Veski er ekki í gangi",
                 "MASTERNODEON": "Masternode er í gangi",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Veski dulkóðuð",
             "ENCRYPTEDCONTENT": "Öllum fyrri afritum sem þú hefur búið til úr veskisskránni þinni ætti að skipta út fyrir nýbúið, dulritað veskisskrá. Af öryggisástæðum verða fyrri afrit af ótryggðu veskisskránni gagnslaus um leið og þú byrjar að nota nýja dulkóðuðu veskið.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppaði óvænt",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Metrix Core sem hefur valdið því að það lýkur. Það er mælt með því að athuga debug.log skrána þína fyrir vandamál.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Vandamál kom upp við Metrix Core sem hefur valdið því að henni lauk. Mælt er með því að athuga debug.log skrána þína varðandi vandamál.",
             "CLIENTINVALIDCONFIGTITLE": "Ógildur metrix.conf stillingar",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf þinn hefur ógildan masternode skipulag sem veldur því að Metrix Core hættir strax. Vinsamlegast athugaðu þessa skrá.",
             "ADDREMOTEMNTITLE": "Bættu við ytri masternode",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx vísitalan",
             "BOOTSTRAPFAILEDTITLE": "Mistök kjarna ræsistopp mistókst",
-            "BOOTSTRAPFAILEDINFO": "Vandamál kom upp við að ræsa Metrix Core. Mælt er með því að skoða Altitude annállinn þinn varðandi vandamál.",
+            "BOOTSTRAPFAILEDINFO": "Vandamál kom upp við að ræsa Metrix Core. Mælt er með því að athuga vandamál í Altitude log.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Endurheimtartæki",
             "STARTUPFAILEDTITLE": "Ræsing Metrix Core mistókst",
-            "STARTUPFAILEDINFO": "Það var upphaf Metrix Core. Mælt er með því að skoða Altitude annállinn þinn varðandi vandamál."
+            "STARTUPFAILEDINFO": "Það var upphaf Metrix Core. Mælt er með því að athuga vandamál í Altitude log.",
+            "CLIENTUNKNOWNERRORTITLE": "Villa í samskiptamiðstöð algerlega",
+            "CLIENTUNKNOWNERRORINFO": "Vandamál kom upp í samskiptum við Metrix Core. Mælt er með því að athuga debug.log skrána þína varðandi vandamál.",
+            "UNENROLLGOVERNORTITLE": "Staðfestu skráningu seðlabankastjóra",
+            "UNENROLLGOVERNORCONTENT": "Ertu viss um að þú viljir afskrá héraðsstjórann þinn? Þú munt ekki lengur geta kosið um keðjustjórnun."
         },
         "ADDRESSBOOK": {
             "TITLE": "Heimilisfangabók",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Viðvörun! Þú ert ekki í aðalkeðjunni samkvæmt Metrix landkönnuður. Það er mjög mælt með því að samstilla eða endurræsa blockchain til að forðast tap á myntum."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Núverandi net"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Viðskipti villa. Vinsamlegast reyndu aftur.",
         "MINIMUMCONFIRMATIONS": "Öll inntak þurfa að minnsta kosti 1 staðfestingu áður en þau eru notuð.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Viðskipti afrituð á klemmuspjald",
-        "TRANSACTIONOUTPUTTOOLARGE": "Eitt af því sem þú borgar fyrir upphæð er of stórt til að senda á öruggan hátt. Hámark er 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Breytingin þín er of stór til að senda örugglega. Hámark er 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Stöðvar masternode...",
         "FAILEDTOWRITECONFIG": "Vandamál kom upp við að skrifa skrána þína til metrix.conf. Athugaðu hvort skráin sé til og að Altitude hafi skrifleyfi.",
         "NOPUBLICUP": "Engin opinber IP-tala fannst. Athugaðu nettenginguna þína og endurræstu Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Þú sendir",
-                "YOUGET": "Þú færð",
-                "MRXADDRESS": "Heimilisfang fylkis",
-                "SWAP": "Skipta um",
-                "SWAPADDRESSES": "Skipta um heimilisfang",
-                "BTCADDRESS": "Heimilisfang BTC",
-                "INFOLINE1": "Þegar þú ert kominn með BTC-vistfang verður einhver BTC sendur á það heimilisfang sjálfkrafa skipt út fyrir MRX yfir á tilnefnda MRX heimilisfangið þitt.",
-                "INFOLINE2-1": "Venjulega eru viðskipti hreinsuð innan klukkustundar eftir Bitcoin tímatökunum. Við getum samþykkt fiat fyrir",
-                "INFOLINE2-2": "þátttökulönd",
-                "INFOLINE2-3": "Þessu verður breytt í BTC fyrst síðan MRX.",
-                "INFOLINE3": "Þegar BTC-innborgunin hefur verið ræst muntu fá MRXinn þinn á tilnefnda netfangið þitt.",
-                "INFOLINE4": "Fyrir frekari upplýsingar heimsækja",
-                "FIATSWAPSELECTED": "Þú verður vísað til Buy.Metrixcoin.com til að ljúka þessum viðskiptum"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Þú ert ekki seðlabankastjóri",
+                "NOTGOVERNORDETAIL": "Bankastjórar bera ábyrgð á atkvæðagreiðslu um mánaðarlegar fjárveitingar og breytingar á blockchain. Þú getur orðið seðlabankastjóri með því að læsa réttum tryggingum í stjórnarsamningi.",
+                "COLLATERAL": "Nauðsynlegar tryggingar",
+                "ENROLL": "Skráðu þig",
+                "CONFIRMENROLL": "Þú ert að fara að skrá þig sem seðlabankastjóri. Þetta mun senda viðskipti með nauðsynlegar tryggingar til stjórnarsamningsins. Þú getur afskrá þig hvenær sem er.",
+                "ISGOVERNORTITLE": "Þú ert virkur seðlabankastjóri!",
+                "ISGOVERNORDETAIL1": "Bankastjórar bera ábyrgð á atkvæðagreiðslu um mánaðarlegar fjárveitingar og breytingar á blockchain.",
+                "ISGOVERNORDETAIL2": "Til að vera bankastjóri verður þú að taka þátt í að minnsta kosti 1 atkvæði á 30 daga fresti.",
+                "ISGOVERNORDETAIL3": "Ef það er ekkert að kjósa um geturðu haldið áfram skráningu með því að senda virkan smell.",
+                "UNENROLL": "Afskráðu",
+                "PING": "Senda virkan smell",
+                "LASTPINGTITLE": "Síðasti smellur",
+                "LASTPINGSUFFIX": "blokkir síðan"
+            },
+            "BUDGET": {
+                "TITLE": "Tillögur fjárlaga",
+                "ADDPROPOSAL": "Búðu til tillögu",
+                "REQUESTEDPERMONTH": "á mánuði",
+                "REQUESTEDREMAINING": "sem eftir eru",
+                "VOTEYES": "Kjósið já",
+                "VOTEABSTAIN": "Kjóstu hjá",
+                "VOTENO": "Atkvæði nr",
+                "VOTESTOPASS": "atkvæði til að líða",
+                "VOTEPASSING": "atkvæðagreiðsla",
+                "MINIMUMGOVERNORS": "Ekki er hægt að fara með vélar fyrr en lágmarksfjöldi ríkisstjóra er í keðjunni.",
+                "CURRENTLY": "Eins og er",
+                "REQUIRED": "Nauðsynlegt"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Búðu til tillögu",
+                "DESCRIPTION": "Hér að neðan er hægt að búa til fjárhagsáætlunartillögu og skila henni til netsins til atkvæðagreiðslu áður en næsti fjárhagsuppgjörsblokkur.",
+                "BUDGETFEE": "Núverandi fjárlagagjald er",
+                "BUDGETBLOCK": "Næsti byggðarlokk er",
+                "PROPOSALTITLE": "Nafn tillögu",
+                "PROPOSALDESC": "Tillaga lýsing",
+                "PROPOSALURL": "Vefslóð tillögu",
+                "PROPOSALAMOUNT": "Umbeðin fjárhæð",
+                "PROPOSALDURATION": "Umbeðnar greiðslur",
+                "PROPOSALADDRESS": "Greiðslu heimilisfang",
+                "PROPOSALCREATE": "Búðu til tillögu"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Stjórnarhættir",
+                "BUDGET": "Fjárhagsáætlun"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Þú ert nú þegar með BTC-heimilisfang tengt þessu Metrix heimilisfangi",
             "SWAPUSDMIN": "Lágmarks USD fjárhæð skiptaskipta er $ 50",
             "SWAPUSDMAX": "Hámarks USD fjárhæð skiptaskipta er $ 3000",
-            "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang"
+            "INCOMPLETEFORM": "Þú hefur ekki fyllt út alla nauðsynlega reiti rétt",
+            "INVALIDPROPOSALDURATION": "Tímalengd tillögunnar ætti að vera á milli 1 og 12 mánaða",
+            "CREATINGPROPOSAL": "Sendir tillögu í netkerfið...",
+            "CREATEDPROPOSAL": "Tillaga þín hefur verið búin til",
+            "ENROLLINGGOVERNOR": "Innritast sem seðlabankastjóri...",
+            "ENROLLEDGOVERNOR": "Innritun þinni verður lokið þegar viðskipti þín hafa verið staðfest",
+            "VOTINGONPROPOSAL": "Sendir tillögu atkvæði",
+            "VOTEDONPROPOSAL": "Atkvæði þitt verður talið þegar viðskiptin eru staðfest.",
+            "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang",
+            "PINGINGGOVERNOR": "Sendir ping...",
+            "PINGEDGOVERNOR": "Ping sent með góðum árangri. Seðlabankastjóri þinn verður uppfærður þegar viðskiptin eru staðfest",
+            "UNENROLLINGGOVERNOR": "Afskráir ríkisstjóra...",
+            "UNENROLLEDGOVERNOR": "Viðskipti send. Seðlabankastjóri þinn verður skráður þegar viðskiptin eru staðfest",
+            "GOVERNORNOTMATURE": "Seðlabankastjóri þinn er ekki nógu þroskaður til að framkvæma þessa aðgerð ennþá"
         }
     }
 }

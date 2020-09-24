@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "해시 증명",
             "TABLE_SIGNATURE": "서명",
             "TABLE_DIFFICULTY": "어려움",
-            "TABLE_ENTROPYBIT": "엔트로피 비트",
             "TABLE_BLOCKHASH": "해시 차단",
             "TABLE_CONFIRMATIONS": "확인",
             "TABLE_INPUTOUTPUT": "입력 및 출력",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "별도의 SOCKS5 프록시를 사용하여 Tor 숨겨진 서비스를 통해 피어에 도달",
                 "ONLYNET": "네트워크의 노드에만 연결",
                 "BLOCKINCOMING": "들어오는 연결을 허용하지 않음",
-                "RESTARTREQUIRED": "이 설정을 변경하려면 클라이언트를 다시 시작해야합니다."
+                "RESTARTREQUIRED": "이 설정을 변경하려면 클라이언트를 다시 시작해야합니다.",
+                "CHAINTYPE": "회로망"
             },
             "WINDOW": {
                 "HIDETRAY": "트레이 아이콘 숨기기",
@@ -251,7 +251,6 @@
                 "LOCKED": "월렛 잠금 됨",
                 "UNLOCKED": "월렛 잠금 해제 됨",
                 "UNLOCKEDSTAKING": "전용 스테이 킹 용 잠금 해제 된 지갑",
-                "UNLOCKEDANON": "익명 처리를 위해 지갑을 잠금 해제했습니다.",
                 "STAKING": "월렛이 현재 측근 중입니다.",
                 "NOTSTAKING": "월렛이 현재 스테이징 중입니다.",
                 "MASTERNODEON": "Masternode가 현재 실행 중입니다.",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "월렛 암호화 됨",
             "ENCRYPTEDCONTENT": "이전에 Wallet 파일로 작성한 백업은 새로 생성되고 암호화 된 Wallet 파일로 대체되어야합니다. 보안상의 이유로 새 암호화 된 Wallet을 사용하자 마자 암호화되지 않은 Wallet 파일의 이전 백업은 쓸모 없게됩니다.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "예기치 않게 Metrix Core가 중지되었습니다.",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core가 종료되는 문제가있었습니다. debug.log 파일에서 문제점을 확인하는 것이 좋습니다.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core에 문제가 발생하여 종료되었습니다. debug.log 파일에 문제가 있는지 확인하는 것이 좋습니다.",
             "CLIENTINVALIDCONFIGTITLE": "잘못된 metrix.conf 구성",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf에 잘못된 마스터 노드 설정이있어 린다 코어가 즉시 종료됩니다. 이 파일을 확인하십시오.",
             "ADDREMOTEMNTITLE": "원격 마스터 노드 추가",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Metrix Core를 부트 스트랩하는 데 문제가있었습니다. 고도 로그 파일에 문제가 있는지 확인하는 것이 좋습니다.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "복구 도구",
             "STARTUPFAILEDTITLE": "매트릭스 코어 시작 실패",
-            "STARTUPFAILEDINFO": "Metrix Core가 시작되었습니다. 고도 로그 파일에 문제가 있는지 확인하는 것이 좋습니다."
+            "STARTUPFAILEDINFO": "Metrix Core가 시작되었습니다. 고도 로그 파일에 문제가 있는지 확인하는 것이 좋습니다.",
+            "CLIENTUNKNOWNERRORTITLE": "매트릭스 핵심 통신 오류",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core와 통신하는 중에 문제가 발생했습니다. debug.log 파일에 문제가 있는지 확인하는 것이 좋습니다.",
+            "UNENROLLGOVERNORTITLE": "주지사 등록 취소 확인",
+            "UNENROLLGOVERNORCONTENT": "주지사 등록을 취소 하시겠습니까? 더 이상 체인 거버넌스에 투표 할 수 없습니다."
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "경고! Metrix Explorer에 따르면 메인 체인에 없습니다. 코인 손실을 피하기 위해 블록 체인을 재 동기화 또는 재부트하는 것이 좋습니다."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "현재 네트워크"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "거래 오류. 다시 시도하십시오.",
         "MINIMUMCONFIRMATIONS": "모든 입력은 지출하기 전에 최소한 1 번 확인해야합니다.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "클립 보드에 복사 된 트랜잭션",
-        "TRANSACTIONOUTPUTTOOLARGE": "금액에 대한 지불 중 하나가 너무 커서 안전하게 보낼 수 없습니다. 최대 값은 90,071,992.54740992입니다.",
-        "TRANSACTIONCHANGETOOLARGE": "변경 사항이 너무 커서 안전하게 보낼 수 없습니다. 최대 값은 90,071,992.54740992입니다.",
         "STOPPINGMASTERNODE": "masternode 중지 중...",
         "FAILEDTOWRITECONFIG": "metrix.conf 파일에 쓰는 중 문제가 발생했습니다. 파일이 존재하고 고도에 쓰기 권한이 있는지 확인하십시오.",
         "NOPUBLICUP": "공인 IP 주소를 찾을 수 없습니다. 인터넷 연결을 확인하고 고도를 다시 시작하십시오.",
@@ -446,22 +450,55 @@
         "NOV": "11 월",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "당신은 보내기",
-                "YOUGET": "당신은 얻는다.",
-                "MRXADDRESS": "메트릭스 주소",
-                "SWAP": "교환",
-                "SWAPADDRESSES": "주소 스왑",
-                "BTCADDRESS": "BTC 주소",
-                "INFOLINE1": "BTC 입금 주소가 있으면 해당 주소로 전송 된 모든 BTC가 자동으로 MRX에 대해 지정된 MRX 주소로 스왑됩니다.",
-                "INFOLINE2-1": "트랜잭션은 일반적으로 Bitcoin 블록 시간에 따라 1 시간 내에 해제됩니다. 우리는",
-                "INFOLINE2-2": "참가국",
-                "INFOLINE2-3": "이것은 BTC로 변환 된 다음 MRX로 변환됩니다.",
-                "INFOLINE3": "BTC 입금이 완료되면 MRX가 귀하의 지명 주소로 전송됩니다.",
-                "INFOLINE4": "자세한 내용은 다음을 방문하십시오.",
-                "FIATSWAPSELECTED": "이 거래를 완료하려면 Buy.Metrixcoin.com으로 리디렉션됩니다."
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "당신은 주지사가 아닙니다",
+                "NOTGOVERNORDETAIL": "총재는 월 예산 및 블록 체인 변경에 대한 투표를 담당합니다. 거버넌스 계약에서 올바른 담보물을 잠그면 주지사가 될 수 있습니다.",
+                "COLLATERAL": "필요한 담보",
+                "ENROLL": "싸다",
+                "CONFIRMENROLL": "주지사로 등록하려고합니다. 필요한 담보가있는 거래를 거버넌스 계약에 보냅니다. 언제든지 등록을 취소 할 수 있습니다.",
+                "ISGOVERNORTITLE": "당신은 현역 총재입니다!",
+                "ISGOVERNORDETAIL1": "총재는 월 예산 및 블록 체인 변경에 대한 투표를 담당합니다.",
+                "ISGOVERNORDETAIL2": "주지사를 유지하려면 30 일마다 최소 1 표의 투표에 참여해야합니다.",
+                "ISGOVERNORDETAIL3": "투표 할 내용이 없으면 활성 핑을 보내서 등록을 수동으로 계속할 수 있습니다.",
+                "UNENROLL": "등록 해제",
+                "PING": "활성 핑 보내기",
+                "LASTPINGTITLE": "마지막 핑",
+                "LASTPINGSUFFIX": "블록 전"
+            },
+            "BUDGET": {
+                "TITLE": "예산 제안",
+                "ADDPROPOSAL": "제안서 작성",
+                "REQUESTEDPERMONTH": "달마다",
+                "REQUESTEDREMAINING": "남은",
+                "VOTEYES": "예 투표",
+                "VOTEABSTAIN": "투표하지 않음",
+                "VOTENO": "투표 안함",
+                "VOTESTOPASS": "통과 투표",
+                "VOTEPASSING": "투표 통과",
+                "MINIMUMGOVERNORS": "체인에 최소 관리자 수가 존재할 때까지 Bugets를 전달할 수 없습니다.",
+                "CURRENTLY": "현재",
+                "REQUIRED": "필수"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "제안서 작성",
+                "DESCRIPTION": "아래에서 예산 제안서를 작성하여 다음 예산 정산 블록 전에 투표를 위해 네트워크에 제출할 수 있습니다.",
+                "BUDGETFEE": "현재 예산 수수료는",
+                "BUDGETBLOCK": "다음 결제 블록은",
+                "PROPOSALTITLE": "제안서 이름",
+                "PROPOSALDESC": "제안서 설명",
+                "PROPOSALURL": "제안서 URL",
+                "PROPOSALAMOUNT": "요청 금액",
+                "PROPOSALDURATION": "요청 된 지불",
+                "PROPOSALADDRESS": "지불 주소",
+                "PROPOSALCREATE": "제안서 작성"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "통치",
+                "BUDGET": "예산"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "이 Metrix 주소와 연결된 BTC 주소가 이미 있습니다",
             "SWAPUSDMIN": "최소 USD 스왑 금액은 $ 50입니다.",
             "SWAPUSDMAX": "최대 USD 스왑 금액은 $ 3000입니다.",
-            "NOADDRESS": "Metrix 주소를 입력하지 않았습니다."
+            "INCOMPLETEFORM": "모든 필수 필드를 올바르게 입력하지 않았습니다",
+            "INVALIDPROPOSALDURATION": "제안 기간은 1 개월에서 12 개월 사이 여야합니다.",
+            "CREATINGPROPOSAL": "네트워크에 제안서를 제출하는 중...",
+            "CREATEDPROPOSAL": "제안이 성공적으로 생성되었습니다",
+            "ENROLLINGGOVERNOR": "주지사 등록...",
+            "ENROLLEDGOVERNOR": "거래가 확인되면 등록이 완료됩니다",
+            "VOTINGONPROPOSAL": "제안 투표를 보내는 중",
+            "VOTEDONPROPOSAL": "거래가 확인되면 투표가 집계됩니다.",
+            "NOADDRESS": "Metrix 주소를 입력하지 않았습니다",
+            "PINGINGGOVERNOR": "핑 전송 중...",
+            "PINGEDGOVERNOR": "Ping이 성공적으로 전송되었습니다. 거래가 확인되면 주지사가 업데이트됩니다.",
+            "UNENROLLINGGOVERNOR": "주지사 등록 취소 중...",
+            "UNENROLLEDGOVERNOR": "거래가 전송되었습니다. 귀하의 주지사는 거래가 확인되면 등록이 취소됩니다.",
+            "GOVERNORNOTMATURE": "주지사는 아직이 작업을 수행 할 수있을만큼 성숙하지 않았습니다."
         }
     }
 }

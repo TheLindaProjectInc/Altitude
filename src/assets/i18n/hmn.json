@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash pov thawj",
             "TABLE_SIGNATURE": "Kos npe",
             "TABLE_DIFFICULTY": "Teeb meem",
-            "TABLE_ENTROPYBIT": "Entropy ntsis",
             "TABLE_BLOCKHASH": "Thaiv Hash",
             "TABLE_CONFIRMATIONS": "Kev pom zoo",
             "TABLE_INPUTOUTPUT": "Inputs thiab Outputs",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Siv cais SOCKS5 npe kom ncav cov phooj ywg ntawm Tor cov kev pabcuam",
                 "ONLYNET": "Tsuas yog txuas rau ntshav hauv lub network",
                 "BLOCKINCOMING": "Tsis txhob cia khoom sib txuas",
-                "RESTARTREQUIRED": "Ib tug neeg pib rov qab pib dua yuav tsum tau qhib cov kev hloov rau cov chaw no."
+                "RESTARTREQUIRED": "Ib tug neeg pib rov qab pib dua yuav tsum tau qhib cov kev hloov rau cov chaw no.",
+                "CHAINTYPE": "Kev Sib Txuas Lus"
             },
             "WINDOW": {
                 "HIDETRAY": "Nkaum tais icon",
@@ -251,7 +251,6 @@
                 "LOCKED": "Hnab ntim xauv",
                 "UNLOCKED": "Hnab ntim xauv khoom",
                 "UNLOCKEDSTAKING": "Hnab ntim xauv cia rau tsuas yog khawb xwb",
-                "UNLOCKEDANON": "Hnab ntim xauv rau lub npe ntawm tus kheej xwb",
                 "STAKING": "Hnab tsho tam sim no yog khaus",
                 "NOTSTAKING": "Hnab tsho tsis yog tam sim no staking",
                 "MASTERNODEON": "Masternode tab tom khiav haujlwm",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Hnab ntim Encrypted",
             "ENCRYPTEDCONTENT": "Cov backups yav dhau los koj tau ua los ntawm koj lub hnab nyiaj yuav tsum tau hloov nrog lub tshiab generated, encrypted hnab ntawv. Rau kev ruaj ntseg, yav dhau los backups ntawm lub hnab ntaub ntawv unencrypted yuav ua tsis tau li sai tau thaum koj pib siv cov tshiab, encrypted hnab nyiaj.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nres Tshem Tawm",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj ib qho teeb meem nrog Metrix Core uas tau ua rau nws xaus. Nws yog pom zoo kom xyuas koj cov ntaub ntawv debug.log rau cov teeb meem.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj teeb meem nrog Metrix Core uas tau ua rau nws tsum. Nws raug nquahu kom kuaj xyuas koj cov debug.log cov ntaub ntawv rau teeb meem.",
             "CLIENTINVALIDCONFIGTITLE": "Invalid metrix.conf Configuration",
             "CLIENTINVALIDCONFIGINFO": "Koj tus metrix.conf muaj ib qho tsis muaj tus txheej txheem uas yuav ua rau Metrix Core yuav tawm tam sim ntawd. Thov kos cov ntaub ntawv no.",
             "ADDREMOTEMNTITLE": "Ntxiv Remote Masternode",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Metrix Tub Ntxhais Bootstrap Ua tsis tau tejyam",
-            "BOOTSTRAPFAILEDINFO": "Muaj teeb meem bootstrapping Metrix Tub Ntxhais. Nws raug nquahu kom kuaj xyuas koj cov ntaub ntawv Altitude log rau cov teebmeem.",
+            "BOOTSTRAPFAILEDINFO": "Muaj teeb meem bootstrapping Metrix Tub Ntxhais. Nws raug nquahu kom kuaj koj cov ntaub ntawv Altitude log rau cov teebmeem.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Cov Cuab Yeej Rov Qab",
             "STARTUPFAILEDTITLE": "Metrix Cov Qauv Pib Ua Tsis Tau",
-            "STARTUPFAILEDINFO": "Muaj pib Metrix Cov Tub Ntxhais. Nws raug nquahu kom kuaj xyuas koj cov ntaub ntawv Altitude log rau cov teebmeem."
+            "STARTUPFAILEDINFO": "Muaj pib Metrix Cov Tub Ntxhais. Nws raug nquahu kom kuaj koj cov ntaub ntawv Altitude log rau cov teebmeem.",
+            "CLIENTUNKNOWNERRORTITLE": "Kev Sib Txuas Lus Sib Piv",
+            "CLIENTUNKNOWNERRORINFO": "Muaj teeb meem sib txuas lus nrog Metrix Core. Nws raug nquahu kom kuaj xyuas koj cov debug.log cov ntaub ntawv rau teeb meem.",
+            "UNENROLLGOVERNORTITLE": "Tshawb Fawb Tus Thawj Coj Tsis Sau Npe",
+            "UNENROLLGOVERNORCONTENT": "Koj puas paub tseeb tias koj xav tshem tawm koj tus Tswv Xeev? Koj yuav tsis pov ntawv xaiv tsa rau txoj saw kev tswj hwm tau."
         },
         "ADDRESSBOOK": {
             "TITLE": "Chaw Nyob Hauv Phau Ntawv",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Ceeb Toom! Koj tsis yog ntawm txoj saw tseem ceeb raws li Metrix tus neeg tshawb xyuas. Nws raug nquahu kom rov sync los yog rov ua dua koj lub blockchain kom tsis txhob poob lub npib."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Tam sim no network"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Hloov ua yuam kev. Thov rov sim dua.",
         "MINIMUMCONFIRMATIONS": "Tag nrho cov tswv yim yuav tsum tau tsawg kawg 1 lus cog lus ua ntej siv.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Cov mauj luam mus luam ntawv",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ib qho ntawm koj cov nyiaj them rau cov nqi yog loj heev rau kev xyuam xim xa. Tshaj siab tshaj yog 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Koj qhov kev hloov loj dhau los ua kom muaj kev nyab xeeb. Tshaj siab tshaj yog 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Tsav zais masternode...",
         "FAILEDTOWRITECONFIG": "Muaj ib qho teeb meem sau ntawv rau koj cov ntaub ntawv metrix.conf. Saib cov ntaub ntawv tshwm sim thiab tias Altitude muaj sau ntawv tso cai.",
         "NOPUBLICUP": "Tsis pub pej xeem IP chaw nyob. Xyuas koj qhov kev twb kev txuas hauv internet thiab pib dua Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Koj Xa",
-                "YOUGET": "Koj Tau Txais",
-                "MRXADDRESS": "Chaw Nyob Metrix",
-                "SWAP": "Sib puav",
-                "SWAPADDRESSES": "Sib Chaw Nyob",
-                "BTCADDRESS": "Chaw Nyob BTC",
-                "INFOLINE1": "Thaum koj muaj BTC qhov chaw tso nyiaj ib qho BTC xa mus rau qhov chaw nyob ntawd yuav hloov dawb rau MRX rau hauv koj qhov chaw xaiv tsa MRX.",
-                "INFOLINE2-1": "Kev sib pauv hloov tau meej meej li ntawm ib teev nyob ntawm Bitcoin block lub sijhawm. Peb tuaj yeem txais fiat rau",
-                "INFOLINE2-2": "koom nrog cov teb chaws",
-                "INFOLINE2-3": "Qhov no yuav pauv mus rau BTC ua ntej ces MRX.",
-                "INFOLINE3": "Thaum koj cov nyiaj BTC them tas koj yuav tau txais koj qhov MRX rau hauv koj qhov chaw nyob.",
-                "INFOLINE4": "Yog xav paub ntxiv mus ntsib",
-                "FIATSWAPSELECTED": "Koj yuav raug xa mus rau Buy.Metrixcoin.com kom tiav qhov kev sib pauv no"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Koj tsis yog tus tswv xeev",
+                "NOTGOVERNORDETAIL": "Cov tswv xeev yog lub luag haujlwm rau kev pov npav rau pob nyiaj siv txhua hli thiab kev hloov blockchain. Koj tuaj yeem dhau los ua Tus Tswv Kav Hauv Tsev los ntawm txhawm rau muab cov khoom sib txuam kom yog hauv Daim Ntawv Cog Lus Qhia Ntawv.",
+                "COLLATERAL": "Xav tau cov khoom sib txuam",
+                "ENROLL": "Sau npe",
+                "CONFIRMENROLL": "Koj tab tom yuav sau npe ua tus tswv xeev. Qhov no yuav xa cov ntawv sib pauv nrog cov khoom sib txuam uas tsim nyog rau daim ntawv cog lus tswj hwm. Koj tuaj yeem sau npe tsis tau txhua lub sijhawm.",
+                "ISGOVERNORTITLE": "Koj yog ib tus tswv xeev nquag!",
+                "ISGOVERNORDETAIL1": "Cov tswv xeev yog lub luag haujlwm rau kev pov npav rau pob nyiaj siv txhua hli thiab kev hloov blockchain.",
+                "ISGOVERNORDETAIL2": "Yuav kom nyob hauv Xeev koj yuav tsum tau koom nrog tsawg kawg 1 pov npav txhua 30 hnub.",
+                "ISGOVERNORDETAIL3": "Yog tias tsis muaj dab tsi los pov npav rau tom qab ntawd koj tuaj yeem mus txuas ntxiv koj qhov kev tso npe los ntawm xa ping nquag.",
+                "UNENROLL": "Tsis nkag npe",
+                "PING": "Xa Nqa Yuam Kev",
+                "LASTPINGTITLE": "Kawg ping",
+                "LASTPINGSUFFIX": "thaiv tau yav dhau los"
+            },
+            "BUDGET": {
+                "TITLE": "Cov Kev Siv Nyiaj Txiag",
+                "ADDPROPOSAL": "Tsim Kev Tawm Tsam",
+                "REQUESTEDPERMONTH": "hauv ib hlis",
+                "REQUESTEDREMAINING": "tshuav",
+                "VOTEYES": "Kev Xaiv Tsa Yog",
+                "VOTEABSTAIN": "Pov npav Abstain",
+                "VOTENO": "Pov Ntawv Tsis Muaj",
+                "VOTESTOPASS": "cov npav kom dhau",
+                "VOTEPASSING": "dhau mus pov npav",
+                "MINIMUMGOVERNORS": "Cov kab no tsis tuaj yeem hla dhau kom txog thaum tsawg tus Thawj Kav Tebchaws nyob rau ntawm txoj saw hlau.",
+                "CURRENTLY": "Tam sim no",
+                "REQUIRED": "Yuav tsum tau"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Tsim Kev Tshaj Tawm",
+                "DESCRIPTION": "Hauv qab no koj tuaj yeem tsim daim ntawv thov peev nyiaj thiab xa mus rau hauv lub network rau kev pov npav ua ntej tom ntej kev txiav txim siab peev nyiaj siv.",
+                "BUDGETFEE": "Tus nqi peev nyiaj tam sim no yog",
+                "BUDGETBLOCK": "Lub tsev hais sib haum tom ntej no yog",
+                "PROPOSALTITLE": "Kev Tawm Npe Lub Npe",
+                "PROPOSALDESC": "Cov Lus Qhia Tshaj Tawm",
+                "PROPOSALURL": "Kev tawm tswv yim URL",
+                "PROPOSALAMOUNT": "Thov Cov Nqi",
+                "PROPOSALDURATION": "Thov kom them nyiaj",
+                "PROPOSALADDRESS": "Them Chaw Nyob",
+                "PROPOSALCREATE": "Tsim Kev Tawm Tsam"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Kev tswj hwm",
+                "BUDGET": "Pob nyiaj siv"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Koj twb muaj BTC chaw nyob cuam tshuam nrog Metrix chaw nyob no",
             "SWAPUSDMIN": "Qhov tsawg kawg tus USD sib puav yog $ 50",
             "SWAPUSDMAX": "Qhov ntau hauv USD sib pauv yog $ 3000",
-            "NOADDRESS": "Koj tsis sau Metrix chaw nyob"
+            "INCOMPLETEFORM": "Koj tsis tau sau txhua qhov uas xav tau kom raug",
+            "INVALIDPROPOSALDURATION": "Qhov hais txog yuav tsum nyob ntev li ntawm 1 txog 12 hlis",
+            "CREATINGPROPOSAL": "Xa cov lus thov mus rau network...",
+            "CREATEDPROPOSAL": "Koj cov tswv yim tau tsim tiav zoo",
+            "ENROLLINGGOVERNOR": "Cuv npe ua tus tswv xeev...",
+            "ENROLLEDGOVERNOR": "Koj qhov rau npe yuav ua kom tiav thaum koj qhov kev hloov khoom noj tau paub meej",
+            "VOTINGONPROPOSAL": "Xa daim ntawv xaiv tsa",
+            "VOTEDONPROPOSAL": "Koj yuav xaiv tsa thaum suav tau kev txheeb xyuas qhov tseeb.",
+            "NOADDRESS": "Koj tsis sau Metrix chaw nyob",
+            "PINGINGGOVERNOR": "Xa ping...",
+            "PINGEDGOVERNOR": "Ping xa tau zoo. Koj tus tswv xeev yuav raug kho dua tshiab tom qab paub meej txog cov kev sib pauv",
+            "UNENROLLINGGOVERNOR": "Sau npe tswv xeev...",
+            "UNENROLLEDGOVERNOR": "Kev xa khoom xa tuaj. Koj tus tswv xeev yuav raug tshem tawm thaum qhov kev txheeb xyuas qhov tseeb tiav",
+            "GOVERNORNOTMATURE": "Koj tus Governor tseem tsis tau paub tab txaus ua qhov haujlwm no tseem tsis tau paub"
         }
     }
 }

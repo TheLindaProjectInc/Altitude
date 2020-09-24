@@ -18,7 +18,7 @@ const sleep = require('util').promisify(setTimeout)
 export default class Client {
     // client details
     clientsLocation = path.join(app.getPath('userData'), 'clients');
-    clientName = 'metrixd';
+    clientName = 'metrixcoind';
     clientConfigLocation = ''
     clientDataDir = '';
     clientConfig: ClientConfig;
@@ -40,8 +40,10 @@ export default class Client {
     updateResponse;
     // client status
     status: ClientStatus = ClientStatus.INITIALISING;
+    // chain we are running on
+    chain: ChainType = ChainType.MAINNET;
     // when using hash of unknown daemon assume version
-    readonly assumeClientVersion = '3.4.0.0';
+    readonly assumeClientVersion = '4.0.0.0';
 
     constructor(win) {
         this.win = win;
@@ -52,7 +54,7 @@ export default class Client {
 
     getClientConfigLocation() {
         const confName = 'metrix.conf';
-        const dataDir = 'metrix';
+        const dataDir = 'metrixcoin';
         if (os.platform() === 'win32') {
             this.clientDataDir = path.join(app.getPath('userData'), '../', dataDir);
         } else if (os.platform() === 'linux') {
@@ -69,6 +71,14 @@ export default class Client {
             }
         }
         this.clientConfigLocation = path.join(this.clientDataDir, confName);
+        // check if we passed a custom conf file
+        for (let i = 0; i < process.argv.length; i++) {
+            let arg = process.argv[i];
+            if (arg.toLowerCase().indexOf('-conf=') > -1) {
+                this.clientConfigLocation = arg.split("=")[1].trim();
+                break;
+            }
+        }
         log.info('Client', 'Config location', this.clientConfigLocation);
     }
 
@@ -95,7 +105,7 @@ export default class Client {
                     if (this.updateResponse) this.updateResponse(true);
                     break;
                 case 'NOUPDATE':
-                    if (data === true) settings.set_skipCoreUpdate(this.clientConfig.download.sha256.toUpperCase()); // skip this update
+                    if (data === true) settings.set_skipCoreUpdate(this.clientConfig.download.sha256); // skip this update
                     if (this.updateResponse) this.updateResponse(false);
                     break;
                 case 'CALLCLIENT':
@@ -106,11 +116,14 @@ export default class Client {
                 case 'VERSION':
                     this.sendClientVersion();
                     break;
+                case 'CHAIN':
+                    this.sendChainType();
+                    break;
+                case 'SETCHAIN':
+                    this.setChainType(data);
+                    break;
                 case 'IP':
                     this.sendPublicIP();
-                    break;
-                case 'MASTERNODE':
-                    this.configureMasternode(data);
                     break;
                 case 'BOOTSTRAP':
                     this.bootstrapClient();
@@ -140,23 +153,21 @@ export default class Client {
             await this.getClientBinaries(restart);
             // load config
             this.setClientStatus(ClientStatus.CHECKEXISTS);
-            if (await this.getClientConfig()) {
-                log.info("Client", "Config exists");
-                // check we got credentials
-                if (!this.clientConfigFile.hasRPCDetails) {
-                    log.info("Client", "Couldn't get credentials from config");
-                    this.setClientStatus(ClientStatus.NOCREDENTIALS);
-                    return;
-                }
-                // if already running exit here
-                log.info("Client", "Check if already running");
-                if ((await this.callClient('help') as any).success) {
-                    log.info("Client", "Client is already running");
-                    if (this.proc) this.setClientStatus(ClientStatus.RUNNING);
-                    else this.setClientStatus(ClientStatus.RUNNINGEXTERNAL);
-                    await this.waitForClientReady();
-                    return;
-                }
+            await this.getClientConfig()
+            // check we got credentials
+            if (!this.clientConfigFile.hasRPCDetails) {
+                log.info("Client", "Couldn't get credentials from config");
+                this.setClientStatus(ClientStatus.NOCREDENTIALS);
+                return;
+            }
+            // if already running exit here
+            log.info("Client", "Check if already running");
+            if ((await this.callClient('help') as any).success) {
+                log.info("Client", "Client is already running");
+                if (this.proc) this.setClientStatus(ClientStatus.RUNNING);
+                else this.setClientStatus(ClientStatus.RUNNINGEXTERNAL);
+                await this.waitForClientReady();
+                return;
             }
             // if we don't already have a local client download it
             log.info("Client", "Check client exists", this.clientLocalLocation);
@@ -169,7 +180,7 @@ export default class Client {
                 if (localHash !== this.clientConfig.download.sha256.toUpperCase()) {
                     log.info("Client", "Update available");
                     // check if we should skip this update
-                    if (update || settings.getSettings().skipCoreUpdate.toUpperCase() !== this.clientConfig.download.sha256.toUpperCase()) {
+                    if (update || settings.getSettings().skipCoreUpdate !== this.clientConfig.download.sha256.toUpperCase()) {
                         if (update) {
                             if (!await this.downloadClient()) return
                         } else {
@@ -177,18 +188,20 @@ export default class Client {
                             this.setClientStatus(ClientStatus.UPDATEAVAILABLE);
                             if (await this.waitForUpdateResponse()) {
                                 if (!await this.downloadClient()) return
+                            } else {
+                                log.info("Client", "Skipping Update");
                             }
-                            else log.info("Client", "Skipping Update");
                         }
+                    } else {
+                        log.info("Client", "Skipping Update");
                     }
-                    else log.info("Client", "Skipping Update");
                 }
             }
             // run the client
             this.setClientStatus(ClientStatus.STARTING);
             log.info("Client", "Running client");
             this.runClient(this.clientConfig.bin, commands);
-            await this.waitForCredentials();
+            this.setClientStatus(ClientStatus.RUNNING);
             await this.waitForClientReady();
         } catch (ex) {
             log.error("Client", "Start error", ex);
@@ -265,26 +278,6 @@ export default class Client {
         }
     }
 
-    async waitForCredentials() {
-        if (this.status === ClientStatus.SHUTTINGDOWN || this.status === ClientStatus.RESTARTING || this.status === ClientStatus.CLOSEDUNEXPECTED)
-            return;
-        if (await this.getClientConfig()) {
-            log.info("Client", "Config exists");
-            // check we got credentials
-            if (!this.clientConfigFile.rpcuser || !this.clientConfigFile.rpcpassword || !this.clientConfigFile.rpcport) {
-                log.info("Client", "Couldn't get credentials from config");
-                this.setClientStatus(ClientStatus.NOCREDENTIALS);
-            } else {
-                // set status as running
-                this.setClientStatus(ClientStatus.RUNNING);
-            }
-        } else {
-            log.info("Client", "Config doesn't exist. Checking in 1000ms");
-            await sleep(1000);
-            return this.waitForCredentials();
-        }
-    }
-
     async waitForClientReady(): Promise<void> {
         // check if we interrupted the startup
         if (this.status === ClientStatus.SHUTTINGDOWN || this.status === ClientStatus.RESTARTING || this.status === ClientStatus.CLOSEDUNEXPECTED) {
@@ -294,7 +287,7 @@ export default class Client {
             return;
         }
 
-        const res: any = await this.callClient('getinfo');
+        const res: any = await this.callClient('getnetworkinfo');
         this.rpcMessage = "";
 
         if (!res.success) {
@@ -305,25 +298,31 @@ export default class Client {
             }
             this.rpcRunning = false;
             this.sendRPCStatus();
-            log.info("Client", "RPC not ready. retrying in 1000ms", this.rpcMessage);
-            await sleep(1000);
-            return this.waitForClientReady();
+            if (res.code !== 401) {
+                log.info("Client", "RPC not ready. retrying in 1000ms", this.rpcMessage);
+                await sleep(1000);
+                return this.waitForClientReady();
+            }
         } else {
-            this.clientVersion = res.body.result.version.replace("-g", "").replace("v", "");
+            this.clientVersion = this.parseVersion(res.body.result.version);
             this.sendClientVersion();
+            this.sendChainType();
             this.rpcRunning = true;
             this.sendRPCStatus();
             log.info("Client", "RPC Ready");
         }
     }
 
+    parseVersion(version: number): string {
+        const versionString = version.toString()
+        const major = Number(versionString.substring(0, versionString.length - 6))
+        const minor = Number(versionString.substring(1, versionString.length - 4))
+        const rev = Number(versionString.substring(3, versionString.length - 2))
+        const build = Number(versionString.substring(5, versionString.length))
+        return `${major}.${minor}.${rev}.${build}`
+    }
+
     runClient(bin, startupCommands = []) {
-        // check for invalid masternode setup
-        if (!this.clientConfigFile.hasValidMasternodeSetup) {
-            log.error("Client", "Invalid masternode configuration. Please check your metrix.conf file");
-            this.setClientStatus(ClientStatus.INVALIDMASTERNODECONFIG);
-            return;
-        }
         // check for startup commands
         if (app.isPackaged && process.argv.length > 1)
             startupCommands = startupCommands.concat(process.argv.slice(1, process.argv.length));
@@ -334,14 +333,13 @@ export default class Client {
             nets.forEach(net => startupCommands.push('-onlynet=' + net))
         }
         if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
-        if (appSettings.tor) {
-            // Metrix Core 3.3 renames tor startup command to onion
-            if (compareVersions(this.clientVersion, '3.3.0.0') >= 0)
-                startupCommands.push('-tor=' + appSettings.tor)
-            else
-                startupCommands.push('-onion=' + appSettings.tor)
-        }
+        if (appSettings.tor) startupCommands.push('-tor=' + appSettings.tor)
+        // set network
+        if (this.chain === ChainType.TESTNET) startupCommands.push('-testnet');
+        if (this.chain === ChainType.REGTEST) startupCommands.push('-regtest');
+        startupCommands.push('-printtoconsole=0')
         log.info("Client", "Running with commands", startupCommands);
+
         // start client
         this.proc = spawn(path.join(this.clientsLocation, bin), startupCommands);
         // listen for unexpected close
@@ -450,8 +448,8 @@ export default class Client {
     }
 
     async getClientConfig() {
+        this.clientConfigFile = new ClientConfigFile(this.chain);
         try {
-            this.clientConfigFile = new ClientConfigFile();
             if (await helpers.pathExists(this.clientConfigLocation)) {
                 let data = await helpers.readFile(this.clientConfigLocation) as string;
                 let lines = data.split('\n');
@@ -465,31 +463,30 @@ export default class Client {
                         else this.clientConfigFile[key] = val
                     }
                 }
-                return true;
+                return;
             }
         } catch (ex) {
             // if we fail to read the config file
         }
-        return false;
+        // write a new one if none exists
+        await this.writeClientConfig()
     }
 
     async writeClientConfig() {
         try {
-            if (await helpers.pathExists(this.clientConfigLocation)) {
-                let data = '';
-                // write keys
-                Object.keys(this.clientConfigFile).forEach(key => {
-                    if (key !== 'nodes' && this.clientConfigFile[key].toString() !== '')
-                        data += `${key}=${this.clientConfigFile[key]}${os.EOL}`;
-                })
-                // write any addnode
-                this.clientConfigFile.nodes.forEach(node => {
-                    data += `addnode=${node}${os.EOL}`;
-                })
-                // write file
-                await helpers.writeFile(this.clientConfigLocation, data);
-                return true;
-            }
+            let data = '';
+            // write keys
+            Object.keys(this.clientConfigFile).forEach(key => {
+                if (key !== 'nodes' && key !== 'rpcport' && this.clientConfigFile[key].toString() !== '')
+                    data += `${key}=${this.clientConfigFile[key]}${os.EOL}`;
+            })
+            // write any addnode
+            this.clientConfigFile.nodes.forEach(node => {
+                data += `addnode=${node}${os.EOL}`;
+            })
+            // write file
+            await helpers.writeFile(this.clientConfigLocation, data);
+            return true;
         } catch (ex) {
             // failed to write file. probably a permission issue
         }
@@ -508,14 +505,18 @@ export default class Client {
             };
 
             request(options, (error, response, body) => {
-                if (error || body.error) {
+                const result = { success: false, code: response ? response.statusCode : null, body, error }
+                if (error || (body && body.error)) {
                     // check if client has stopped
                     if (this.status === ClientStatus.RUNNINGEXTERNAL && error && error.code === "ECONNREFUSED") {
                         this.setClientStatus(ClientStatus.STOPPED)
                     }
-                    resolve({ success: false, body, error });
+                } else if (result.code !== 401) {
+                    result.success = true
+                } else {
+                    this.setClientStatus(ClientStatus.UNKNOWNERROR)
                 }
-                else resolve({ success: true, body });
+                resolve(result)
             });
         })
     }
@@ -528,9 +529,18 @@ export default class Client {
         if (status === ClientStatus.STOPPED ||
             status === ClientStatus.SHUTTINGDOWN ||
             status === ClientStatus.RESTARTING ||
-            status === ClientStatus.CLOSEDUNEXPECTED) {
+            status === ClientStatus.CLOSEDUNEXPECTED ||
+            status === ClientStatus.UNKNOWNERROR) {
             this.rpcRunning = false;
             this.sendRPCStatus();
+        }
+    }
+
+    async setChainType(chain: ChainType) {
+        if (chain !== this.chain) {
+            this.chain = chain
+            await this.stop(false)
+            this.startClient(true)
         }
     }
 
@@ -540,6 +550,10 @@ export default class Client {
 
     sendClientVersion() {
         if (this.win) this.win.webContents.send('client-node', 'VERSION', this.clientVersion);
+    }
+
+    sendChainType() {
+        if (this.win) this.win.webContents.send('client-node', 'CHAIN', this.chain);
     }
 
     async sendPublicIP() {
@@ -573,23 +587,8 @@ export default class Client {
                 log.info('Client', 'Client Version', this.clientVersion);
             }
             this.sendClientVersion();
+            this.sendChainType();
         }
-    }
-
-    async configureMasternode(options) {
-        if (options.destroy) {
-            // remove
-            this.clientConfigFile.masternode = '';
-            this.clientConfigFile.masternodeprivkey = '';
-            this.clientConfigFile.masternodeaddr = '';
-        } else {
-            // setup
-            this.clientConfigFile.masternode = '1';
-            this.clientConfigFile.masternodeprivkey = options.key;
-            this.clientConfigFile.masternodeaddr = options.ip;
-        }
-        let writeResult = await this.writeClientConfig();
-        if (this.win) this.win.webContents.send('client-node', 'MASTERNODE', writeResult);
     }
 
     async reportIssue(data) {
@@ -659,13 +658,19 @@ export enum ClientStatus {
     BOOTSTRAPPING,
     NOCREDENTIALS,
     INVALIDHASH,
-    INVALIDMASTERNODECONFIG,
     DOWNLOADFAILED,
     UNSUPPORTEDPLATFORM,
     SHUTTINGDOWN,
     RESTARTING,
     CLOSEDUNEXPECTED,
     BOOTSTRAPFAILED,
+    UNKNOWNERROR
+}
+
+export enum ChainType {
+    MAINNET,
+    TESTNET,
+    REGTEST
 }
 
 class ClientConfig {
@@ -677,26 +682,46 @@ class ClientConfig {
 }
 
 class ClientConfigFile {
-    daemon: string;
-    server: string;
+    server: string = '1'
     rpcallowip: string = '127.0.0.1';
     rpcport: string;
     rpcuser: string;
     rpcpassword: string;
-    masternode: string;
-    masternodeprivkey: string;
-    masternodeaddr: string;
     nodes: Array<string> = [];
 
+    constructor(chain: ChainType) {
+        this.setRPCPort(chain)
+        this.generateCredentials()
+    }
+
+    public setRPCPort(chain: ChainType) {
+        if (chain === ChainType.MAINNET) {
+            this.rpcport = '33831';
+        } else if (chain === ChainType.TESTNET) {
+            this.rpcport = '33841';
+        } else if (chain === ChainType.REGTEST) {
+            this.rpcport = '33851';
+        }
+    }
+
+    public generateCredentials() {
+        this.rpcuser = this.generateString(10)
+        this.rpcpassword = this.generateString(20)
+    }
 
     get hasRPCDetails(): boolean {
-        if (!this.rpcuser || !this.rpcpassword || !this.rpcport) return false;
+        if (!this.rpcuser || !this.rpcpassword) return false;
         return true;
     }
 
-    get hasValidMasternodeSetup(): boolean {
-        if (!this.masternode) return true;
-        if (this.masternode === '1' && (this.masternodeprivkey || this.masternodeaddr)) return true;
-        return false;
+    private generateString(length) {
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
     }
+
 }

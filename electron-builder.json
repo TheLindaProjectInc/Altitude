@@ -1,5 +1,5 @@
 {
-  "productName": "Altitude",
+  "productName": "Altitude - Metrix Wallet",
   "directories": {
     "output": "release/"
   },
@@ -21,12 +21,12 @@
   ],
   "win": {
     "icon": "assets/icons/win/icon.ico",
-    "artifactName": "${productName}-win32.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-win32.${ext}",
     "target": [
       "nsis"
     ],
-    "legalTrademarks": "Copyright © 2019 Linda Project Inc.",
-    "publisherName": "Linda Project Inc."
+    "legalTrademarks": "Copyright © 2020 Metrix",
+    "publisherName": "Metrix"
   },
   "nsis": {
     "runAfterFinish": true,
@@ -35,7 +35,7 @@
   },
   "mac": {
     "icon": "assets/icons/mac/icon.icns",
-    "artifactName": "${productName}-mac-x64.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-mac-x64.${ext}",
     "target": [
       "dmg"
     ],
@@ -43,7 +43,7 @@
   },
   "linux": {
     "icon": "assets/icons/png",
-    "artifactName": "${productName}-linux-x64.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-linux-x64.${ext}",
     "target": [
       "AppImage"
     ],

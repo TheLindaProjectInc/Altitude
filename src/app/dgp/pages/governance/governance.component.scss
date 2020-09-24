@@ -1,0 +1,32 @@
+.governance-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+
+    h5 {
+        margin: 5px;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    .toolbar {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+fa-icon {
+    margin-bottom: 10px
+}

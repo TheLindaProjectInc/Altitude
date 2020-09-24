@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Tandha",
             "TABLE_DIFFICULTY": "Kesulitan",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Blok Hash",
             "TABLE_CONFIRMATIONS": "Konfirmasi",
             "TABLE_INPUTOUTPUT": "Input lan Output",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Gunakake proxy SOCKS5 sing bedo kanggo nggayuh rekan-rekan liwat layanan tersembunyi Tor",
                 "ONLYNET": "Mung nyambung menyang simpul ing jaringan",
                 "BLOCKINCOMING": "Aja ngidini sambungan mlebu",
-                "RESTARTREQUIRED": "Wiwiti maneh Klien kudu ngaktifake owah-owahan ing setelan kasebut."
+                "RESTARTREQUIRED": "Wiwiti maneh Klien kudu ngaktifake owah-owahan ing setelan kasebut.",
+                "CHAINTYPE": "Jaringan"
             },
             "WINDOW": {
                 "HIDETRAY": "Singidaken lambang tray",
@@ -251,7 +251,6 @@
                 "LOCKED": "Dompet dikunci",
                 "UNLOCKED": "Dompet dikunci",
                 "UNLOCKEDSTAKING": "Dompet dikunci kanggo staking wae",
-                "UNLOCKEDANON": "Dompet dikunci kanggo anonimisasi mung",
                 "STAKING": "Dompet saiki staking",
                 "NOTSTAKING": "Dompet ora saiki staking",
                 "MASTERNODEON": "Masternode saiki lagi mlaku",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Dompet Enkripsi",
             "ENCRYPTEDCONTENT": "Sembarang serep sadurunge sampeyan wis digawe saka file dompet sampeyan kudu diganti karo file wallet sing didandani lan didisekake. Kanggo alasan keamanan, serep sadurunge file wallet sing ora dienkripsi bakal dadi ora ono gunakne sampeyan nggunakake wiwitan, dompet sing terenkripsi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core mungkasi kanthi ora sengaja",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Ana masalah karo Metrix Core sing wis nyebabake masalah kasebut. Disaranake mriksa berkas debug.log kanggo masalah.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Ana masalah karo Metrix Core sing nyebabake dheweke mungkasi. Apike kanggo mriksa file debug.log sampeyan babagan masalah.",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf sampeyan duwe persiyapan masternode sing bener sing bakal nyebabake Metrix Core metu langsung. Mangga dipriksa berkas iki.",
             "ADDREMOTEMNTITLE": "Nambah Remote Masternode",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "BOOTSTRAPFAILEDTITLE": "Bootstrap inti Metrix Gagal",
-            "BOOTSTRAPFAILEDINFO": "Ana masalah bootstrapping Metrix Core. Disaranake mriksa file log Altitude sampeyan babagan masalah.",
+            "BOOTSTRAPFAILEDINFO": "Ana masalah bootstrapping Metrix Core. Apike kanggo mriksa file log Altitude sampeyan kanggo masalah.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Recovery",
             "STARTUPFAILEDTITLE": "Miwiti inti Metrix Gagal",
-            "STARTUPFAILEDINFO": "Ana inti Metrix wiwitan. Disaranake mriksa file log Altitude sampeyan babagan masalah."
+            "STARTUPFAILEDINFO": "Ana inti Metrix wiwitan. Apike kanggo mriksa file log Altitude sampeyan kanggo masalah.",
+            "CLIENTUNKNOWNERRORTITLE": "Kesalahan Komunikasi Metrix inti",
+            "CLIENTUNKNOWNERRORINFO": "Ana masalah komunikasi karo Metrix Core. Apike kanggo mriksa file debug.log sampeyan babagan masalah.",
+            "UNENROLLGOVERNORTITLE": "Konfirmasi Pendaptaran Gubernur",
+            "UNENROLLGOVERNORCONTENT": "Apa sampeyan yakin pengin mbatalake dhaptar Gubernur? Sampeyan ora bakal bisa milih pamrentahan rantai maneh."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Pènget! Sampeyan ora mlebu chain utama miturut panjelajah Metrix. Apike banget kanggo nyinkronake maneh utawa maneh bootstrap blokchain sampeyan supaya ora ilang dhuwit recehan."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Jaringan saiki"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Kesalahan transaksi. Mangga nyoba maneh.",
         "MINIMUMCONFIRMATIONS": "Kabeh input kudu minimal 1 konfirmasi sadurunge mbuwang.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin menyang clipboard",
-        "TRANSACTIONOUTPUTTOOLARGE": "Siji bayaran kanggo jumlah gedhe banget kanggo dikirim kanthi aman. Maksimum yaiku 90.071.992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Owah-owahan sampeyan terlalu gedhe kanggo dikirim kanthi aman. Maksimum yaiku 90.071.992.54740992.",
         "STOPPINGMASTERNODE": "Mungkasi masternode...",
         "FAILEDTOWRITECONFIG": "Ana masalah nulis kanggo file metrix.conf sampeyan. Priksa file sing ana lan sing Altitude wis nulis ijin.",
         "NOPUBLICUP": "Ora ana alamat IP Public. Priksa sambungan internet lan miwiti maneh Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Sampeyan Kirim",
-                "YOUGET": "Sampeyan Njaluk",
-                "MRXADDRESS": "Alamat Metrix",
-                "SWAP": "Pertawa",
-                "SWAPADDRESSES": "Alamat Pertukaran",
-                "BTCADDRESS": "Alamat BTC",
-                "INFOLINE1": "Sawise sampeyan duwe alamat simpenan BTC, alamat BTC sing dikirim menyang alamat kasebut, kanthi otomatis bakal diganti MRX menyang alamat MRX sing dipilih.",
-                "INFOLINE2-1": "Transaksi biasane cetha sajrone siji jam gumantung ing blok blok Bitcoin. Kita bisa nampa fiat kanggo",
-                "INFOLINE2-2": "negara sing melu",
-                "INFOLINE2-3": "Iki bakal diowahi dadi BTC dhisik banjur MRX.",
-                "INFOLINE3": "Sawise simpenan BTC wis ngresiki, sampeyan bakal nampa MRX menyang alamat sing dipilih.",
-                "INFOLINE4": "Kanggo riko informasi luwih lengkap",
-                "FIATSWAPSELECTED": "Sampeyan bakal redirected menyang Buy.Metrixcoin.com kanggo ngrampungake transaksi iki"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Sampeyan dudu Gubernur",
+                "NOTGOVERNORDETAIL": "Pamrentah tanggung jawab kanggo milih anggaran saben wulan lan owah-owahan blockchain. Sampeyan bisa dadi Gubernur kanthi ngunci cagaran sing bener ing kontrak Pemerintah.",
+                "COLLATERAL": "Piranti tambahan sing dibutuhake",
+                "ENROLL": "Enroll",
+                "CONFIRMENROLL": "Sampeyan arep ndhaptar dadi Gubernur. Iki bakal ngirim transaksi karo jaminan tambahan sing dibutuhake kanggo kontrak governance. Sampeyan ora bisa dideleng nalika sembarang.",
+                "ISGOVERNORTITLE": "Sampeyan minangka Gubernur sing aktif!",
+                "ISGOVERNORDETAIL1": "Pamrentah tanggung jawab kanggo milih anggaran saben wulan lan owah-owahan blockchain.",
+                "ISGOVERNORDETAIL2": "Kanggo tetep Gubernur sampeyan kudu melu paling ora 1 swara saben 30 dina.",
+                "ISGOVERNORDETAIL3": "Yen ora ana apa-apa sing milih, sampeyan bisa nerusake pendaptaran kanthi manual kanthi ngirim ping aktif.",
+                "UNENROLL": "Ora dingerteni",
+                "PING": "Kirimake Ping sing Aktif",
+                "LASTPINGTITLE": "Pungkasan",
+                "LASTPINGSUFFIX": "pamblokiran kepungkur"
+            },
+            "BUDGET": {
+                "TITLE": "Usul Anggaran",
+                "ADDPROPOSAL": "Nggawe Proposal",
+                "REQUESTEDPERMONTH": "saben wulan",
+                "REQUESTEDREMAINING": "isih",
+                "VOTEYES": "Pilih Ya",
+                "VOTEABSTAIN": "Pilih Abstain",
+                "VOTENO": "Pilih Ora",
+                "VOTESTOPASS": "swara kanggo pass",
+                "VOTEPASSING": "maringaken swara",
+                "MINIMUMGOVERNORS": "Buget ora bisa dilewati nganti jumlah minimal Gubernur ana ing rantai kasebut.",
+                "CURRENTLY": "Saiki",
+                "REQUIRED": "Dibutuhake"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Nggawe Proposal",
+                "DESCRIPTION": "Ing ngisor iki, sampeyan bisa nggawe proposal anggaran lan ngirim menyang jaringan kanggo milih sadurunge pamblokiran pambatesan anggaran sabanjure.",
+                "BUDGETFEE": "Ragad anggaran saiki yaiku",
+                "BUDGETBLOCK": "Blok pemukiman sabanjure yaiku",
+                "PROPOSALTITLE": "Jeneng Proposal",
+                "PROPOSALDESC": "Keterangan Proposal",
+                "PROPOSALURL": "URL usulan",
+                "PROPOSALAMOUNT": "Jumlah sing njaluk",
+                "PROPOSALDURATION": "Pembayaran sing Disuwun",
+                "PROPOSALADDRESS": "Alamat Pembayaran",
+                "PROPOSALCREATE": "Nggawe Proposal"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Pamrentah",
+                "BUDGET": "Anggaran"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Sampeyan wis duwe alamat BTC sing ana gandhengane karo alamat Metrix iki",
             "SWAPUSDMIN": "Swap paling minimal USD yaiku $ 50",
             "SWAPUSDMAX": "Ukuran swap paling maksimum yaiku $ 3000",
-            "NOADDRESS": "Sampeyan ora ngetik alamat Metrix"
+            "INCOMPLETEFORM": "Sampeyan durung ngisi kabeh lapangan sing dibutuhake kanthi bener",
+            "INVALIDPROPOSALDURATION": "Durasi usul kudu antara 1 nganti 12 wulan",
+            "CREATINGPROPOSAL": "Kirim proposal kanggo jaringan...",
+            "CREATEDPROPOSAL": "Usul sampeyan wis digawe kanthi sukses",
+            "ENROLLINGGOVERNOR": "Ndhaptar minangka Gubernur...",
+            "ENROLLEDGOVERNOR": "Pendaptaran sampeyan bakal rampung sawise transaksi wis dikonfirmasi",
+            "VOTINGONPROPOSAL": "Ngirim usul swara",
+            "VOTEDONPROPOSAL": "Pamilih sampeyan bakal dietung sawise transaksi dikonfirmasi.",
+            "NOADDRESS": "Sampeyan ora ngetik alamat Metrix",
+            "PINGINGGOVERNOR": "Ngirim ping...",
+            "PINGEDGOVERNOR": "Ping dikirim kanthi sukses. Gubernur sampeyan bakal dianyari sawise transaksi dikonfirmasi",
+            "UNENROLLINGGOVERNOR": "Gubernur sing ora nyathet...",
+            "UNENROLLEDGOVERNOR": "Transaksi dikirim Gubernur sampeyan bakal dibukak pendaftaran sawise transaksi dikonfirmasi",
+            "GOVERNORNOTMATURE": "Gubernur sampeyan durung cukup diwasa kanggo nindakake tumindak iki"
         }
     }
 }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Ikwenye Ikwenye",
             "TABLE_SIGNATURE": "Ntinye aka",
             "TABLE_DIFFICULTY": "Nsogbu",
-            "TABLE_ENTROPYBIT": "Bit Entropy",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Nkwenye",
             "TABLE_INPUTOUTPUT": "Ntinye na Ntinye",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Jiri ndị nnọchiteanya SOCKS5 dị iche iche ruo ndị ọgbọ gị site na ọrụ nzuzo zoro ezo",
                 "ONLYNET": "Naanị jikọọ na ọnụ na netwọk",
                 "BLOCKINCOMING": "Ekwela ka njikọ abata",
-                "RESTARTREQUIRED": "A chọrọ ịmalitegharịa ndị ọrụ iji rụọ ọrụ mgbanwe ọ bụla na ntọala ndị a."
+                "RESTARTREQUIRED": "A chọrọ ịmalitegharịa ndị ọrụ iji rụọ ọrụ mgbanwe ọ bụla na ntọala ndị a.",
+                "CHAINTYPE": "Netwọk"
             },
             "WINDOW": {
                 "HIDETRAY": "Zoo akara ngosi",
@@ -251,7 +251,6 @@
                 "LOCKED": "Akpọrọ akpa akwa",
                 "UNLOCKED": "Akwụsịghị akpacha",
                 "UNLOCKEDSTAKING": "A na-ekpuchi obere akpa maka ịnagide naanị",
-                "UNLOCKEDANON": "Enweghi akpachapu akpa maka aha aha",
                 "STAKING": "Akpa na-arụ ọrụ ugbu a",
                 "NOTSTAKING": "Obere akpaghi ugbua",
                 "MASTERNODEON": "Masternode na-agba ọsọ ugbu a",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Ezochiri akpa akpa",
             "ENCRYPTEDCONTENT": "Okwesiri nkwado ọ bụla i mere site na obere akpa gị kwesịrị dochie ya site na faịlụ ọhụụ ọhụrụ, nke ezoro ezo. Maka ihe nchedo, nkwado ndabere na mpaghara nke akpa akpa akpaghị akwụkwọ ga-aba uru ozugbo ịmalite iji obere obere akpa ego.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core akwụsịghị na mberede",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. Ọ bụ nkwado ka ịlele faịlụ debug.log maka nsogbu.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Enwere nsogbu na Metrix Core nke mere ka ọ kwụsị. A na-atụ aro ịlele faịlụ debug.log gị maka okwu.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf nhazi",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf nwere ihe nchịkwa na-adịghị mma nke ga - eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a.",
             "ADDREMOTEMNTITLE": "Tinye Remote Masternode",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Index Masternode Trx",
             "BOOTSTRAPFAILEDTITLE": "Metux Core Bootstrap Emebisighi",
-            "BOOTSTRAPFAILEDINFO": "Enwere nsogbu bootstrapping Metrix Core. Ọ na-akwado ịlele faịlụ ndekọ Altitude gị maka okwu.",
+            "BOOTSTRAPFAILEDINFO": "Enwere nsogbu bootstrapping Metrix Core. A na-atụ aro ka ị nyochaa faịlụ ndekọ Altitude gị maka okwu.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngwaọrụ mgbake",
             "STARTUPFAILEDTITLE": "Metrix Core Bido",
-            "STARTUPFAILEDINFO": "Enwere mmalite Metrix Core. Ọ na-akwado ịlele faịlụ ndekọ Altitude gị maka okwu."
+            "STARTUPFAILEDINFO": "Enwere mmalite Metrix Core. A na-atụ aro ka ị nyochaa faịlụ ndekọ Altitude gị maka okwu.",
+            "CLIENTUNKNOWNERRORTITLE": "Njehie Nkwukọrịta Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Enwere nsogbu isoro Metrix Core na-akparịta ụka. A na-atụ aro ịlele faịlụ debug.log gị maka okwu.",
+            "UNENROLLGOVERNORTITLE": "Kwenye Gbanye aha Gọọmenti",
+            "UNENROLLGOVERNORCONTENT": "O doro gị anya na ị ga-ewepụ aha gọvanọ gị n’ọrụ? Gaghịzi enwe ike ịme ntuli aka na nchịkwa ọchịchị."
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Ingdọ aka na ntị! Are nọghị n'ụba dị ka onye na-egwu Metrix si chọọ. A na-atụkarị aro ka ịmegharị ma ọ bụ jigharịa ọnyachi ibe gị ka ị ghara imefu mkpụrụ ego ọ bụla."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Netiwọ dị ugbu a"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Njehie azụmahịa. Biko gbalịa ọzọ.",
         "MINIMUMCONFIRMATIONS": "Ntinye niile chọrọ ọ dịkarịa ala 1 nkwenye tupu emefu.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Ahịa ndị e depụtara gaa na windo",
-        "TRANSACTIONOUTPUTTOOLARGE": "Otu n'ime ụgwọ ị na-akwụ na oke ego dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Mgbanwe gị dị oke ibu iji zipu ozi n'enweghị nsogbu. Oke kachasị bụ 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Nkwụsị masternode...",
         "FAILEDTOWRITECONFIG": "Enwere nsogbu idegara faịlụ metrix.conf gị. Lelee faịlụ dị na Altitude nwere ikike ikike ide.",
         "NOPUBLICUP": "Onweghi Adreesị IP Ọha. Lelee njikọ ịntanetị gị ma malitegharịa Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Zitere",
-                "YOUGET": "Get Nweta",
-                "MRXADDRESS": "Adreesị Metrix",
-                "SWAP": "Gbanwee",
-                "SWAPADDRESSES": "Adreesị adreesị",
-                "BTCADDRESS": "Adreesị BTC",
-                "INFOLINE1": "Ozugbo i nwere adreesị nkwụnye ego BTC ọ bụla ezigara na adreesị ahụ ga-agbanwe na MRX ozugbo na adreesị MRX ahọpụtara.",
-                "INFOLINE2-1": "Azụmaahịa na-edokarị anya n'ime otu elekere dabere n'oge oge mgbochi Bitcoin. Anyị nwere ike ịnabata ọkụ",
-                "INFOLINE2-2": "mba ndi sonyere",
-                "INFOLINE2-3": "A ga-agbanwe nke a na BTC nke izizi MRX.",
-                "INFOLINE3": "Ozugbo itinye ego BTC gị kpochapụrụ, ị ga-enweta MRX gị n'enye hoputara.",
-                "INFOLINE4": "Maka ozi ndị ọzọ nleta",
-                "FIATSWAPSELECTED": "A ga-edugharị gị gaa Buy.Metrixcoin.com iji mezue azụmahịa a"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Not bụghị Gọvanọ",
+                "NOTGOVERNORDETAIL": "Ndị isi na-ahụ maka ịtụ vootu na mmefu ego kwa ọnwa na mgbanwe blockchain. Nwere ike ịghọ Gọvanọ site na igbachi nkwekọrịta ziri ezi na nkwekọrịta ọchịchị.",
+                "COLLATERAL": "Ihe achọrọ",
+                "ENROLL": "Debanye aha",
+                "CONFIRMENROLL": "Are na-achọ idebanye aha gị dịka Gọvanọ. Nke a ga-ezitere azụmahịa na nkwekọrịta achọrọ na nkwekọrịta ọchịchị. Nwere ike ịdebanye aha n'oge ọ bụla.",
+                "ISGOVERNORTITLE": "Are bụ Gọvanọ nọ n'ọrụ!",
+                "ISGOVERNORDETAIL1": "Ndị isi na-ahụ maka ịtụ vootu na mmefu ego kwa ọnwa na mgbanwe blockchain.",
+                "ISGOVERNORDETAIL2": "Iji nọrọ bụrụ Gọvanọ ịkwesịrị isonye na opekata mpe otu votu kwa ụbọchị iri atọ.",
+                "ISGOVERNORDETAIL3": "Ọ bụrụ na onweghị ntuli aka na ntanetị ị nwere ike iji aka gị gaa n’ihu.",
+                "UNENROLL": "Debanye aha",
+                "PING": "Zipu Pingi nọ n'ọrụ",
+                "LASTPINGTITLE": "Ikpeazụ ping",
+                "LASTPINGSUFFIX": "nkanka gara aga"
+            },
+            "BUDGET": {
+                "TITLE": "Usoro mmefu mmefu ego",
+                "ADDPROPOSAL": "Mepụta ntuziaka",
+                "REQUESTEDPERMONTH": "kwa ọnwa",
+                "REQUESTEDREMAINING": "foduru",
+                "VOTEYES": "Zaa Ee",
+                "VOTEABSTAIN": "Vee Abstain",
+                "VOTENO": "Voo No",
+                "VOTESTOPASS": "ntuli aka gafere",
+                "VOTEPASSING": "ịtụfe votu",
+                "MINIMUMGOVERNORS": "Enweghi ike ịgafe bupeti ruo mgbe ọnụọgụ ndị gọọmentị pere mpe na agbụ.",
+                "CURRENTLY": "Ugbu a",
+                "REQUIRED": "Chọrọ"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Mepụta echiche",
+                "DESCRIPTION": "N'okpuru, ị nwere ike ịmepụta atụmatụ mmefu ego ma nyefee ya na ntanetị maka ịme ntuli aka tupu mgbochi mmezi mmefu ego na-esote.",
+                "BUDGETFEE": "Ego a na-eme ugbu a bụ",
+                "BUDGETBLOCK": "Ihe mgbochi ọzọ ga - esochi bụ",
+                "PROPOSALTITLE": "Aha okwu",
+                "PROPOSALDESC": "Nkọwapụta nkọwapụta",
+                "PROPOSALURL": "URL chọrọ",
+                "PROPOSALAMOUNT": "Onu a choro",
+                "PROPOSALDURATION": "Paykwụ .gwọ Achọrọ",
+                "PROPOSALADDRESS": "Adres Paymentkwụ .gwọ",
+                "PROPOSALCREATE": "Mepụta ntuziaka"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Ndi ochichi",
+                "BUDGET": "Mmefu ego"
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Ha na-agbanwe Adreesị Swap...",
-            "ALREADYHAVEADDRESS": "Already nwee adres BTC metụtara adres Metrix a",
-            "SWAPUSDMIN": "Ego ole na ole na-agbanwe sigịnụ bụ $ 50",
+            "GETTINGSWAPADDRESS": "Ha na Adreesị Swap...",
+            "ALREADYHAVEADDRESS": "Already nwee adres BTC metụtara adreesị metrix a",
+            "SWAPUSDMIN": "Ego opekata mpe ga-agbanwe na $ 50",
             "SWAPUSDMAX": "Ọnụ ego mgbanwe USD kacha bụ $ 3000",
-            "NOADDRESS": "I tinyeghi adres Metrix"
+            "INCOMPLETEFORM": "Ibebeghi ihe niile a choro n ’ezi",
+            "INVALIDPROPOSALDURATION": "A ga-amata ihe dị iche n'etiti ọnwa 1 ruo ọnwa iri na abụọ",
+            "CREATINGPROPOSAL": "Nyefee atụmatụ na netwọala...",
+            "CREATEDPROPOSAL": "Ekerela atụmatụ gị nke ọma",
+            "ENROLLINGGOVERNOR": "Rollingdenye aha dịka Gọvanọ…",
+            "ENROLLEDGOVERNOR": "Enrolldenye aha gị ga-ezu ezu ozugbo egosiri na azụmahịa gị",
+            "VOTINGONPROPOSAL": "Na-ezipụ amaghị votu",
+            "VOTEDONPROPOSAL": "A ga-agụta votu gị ozugbo egosiputara azụmahịa ahụ.",
+            "NOADDRESS": "I tinyeghi adres Metrix",
+            "PINGINGGOVERNOR": "Na-ezipu ping...",
+            "PINGEDGOVERNOR": "Ping zigara nke ọma. A ga-emelite Gọvanọ gị mgbe azụmahịa ahụ gosipụtara",
+            "UNENROLLINGGOVERNOR": "Na-adịghị agbanwe agbanwe Gọvanọ...",
+            "UNENROLLEDGOVERNOR": "A zigara azụmahịa. A ga-edebanye aha Gọvanọ gị ozugbo azụmaahịa ahụ gosipụtara",
+            "GOVERNORNOTMATURE": "Gọvanọ gị etozubeghị ime ihe a"
         }
     }
 }

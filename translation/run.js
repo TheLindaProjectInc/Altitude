@@ -4,7 +4,7 @@ let languages = require('./languages.json')
 const fs = require('fs');
 
 var ggl = google(process.env.APIKEY);  // this is required to use google translate service
-var retranslate = [] // add fields to here to force the translater to re-translate
+var retranslate = [] // add fields to here to force the translator to re-translate
 var removeTranslation = [] // add fields to here to remove them from all translation files (except en.json must be removed manually)
 
 async function translateLanguageFiles() {
@@ -15,7 +15,7 @@ async function translateLanguageFiles() {
         let languageName = keys[i];
         const languageData = languages[languageName];
         console.log("Translating", languageName, "...");
-        let transaltionFile = `./src/assets/i18n/${languageData.code}.json`;
+        let translationFile = `./src/assets/i18n/${languageData.code}.json`;
 
         let start = new Date().getTime();
 
@@ -24,9 +24,9 @@ async function translateLanguageFiles() {
         // attempt to read exiting file so we only update
         // missing translations
         let output = {};
-        if (fs.existsSync(transaltionFile)) {
+        if (fs.existsSync(translationFile)) {
             try {
-                let data = fs.readFileSync(transaltionFile, 'utf8');
+                let data = fs.readFileSync(translationFile, 'utf8');
                 output = JSON.parse(data);
             } catch (ex) {
                 // failed to parse file
@@ -37,8 +37,9 @@ async function translateLanguageFiles() {
         // recursively run through the objects in the english source
         // translating when we hit a string
         await walkObject(englishSource, output, languageData.code)
-        // write output to langauge file
-        fs.writeFileSync(transaltionFile, JSON.stringify(output, null, 4));
+        delete output.BUY
+        // write output to language file
+        fs.writeFileSync(translationFile, JSON.stringify(output, null, 4));
         console.log("Translating", languageName, "completed in", (new Date().getTime() - start) / 1000, 'seconds');
     }
 

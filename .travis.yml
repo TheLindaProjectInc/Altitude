@@ -3,7 +3,7 @@ matrix:
     - os: osx
       osx_image: xcode10.2
       language: node_js
-      node_js: "11"
+      node_js: "12"
       env:
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
@@ -11,10 +11,10 @@ matrix:
         provider: releases
         api_key: $GITHUB_OAUTH_TOKEN
         file:
-          - "release/Altitude-win32-x64.exe"
-          - "release/Altitude-win32-x86.exe"
-          - "release/Altitude-linux-x64.AppImage"
-          - "release/Altitude-mac-x64.dmg"
+          - "release/Altitude-Metrix-Wallet-win32-x64.exe"
+          - "release/Altitude-Metrix-Wallet-win32-x86.exe"
+          - "release/Altitude-Metrix-Wallet-linux-x64.AppImage"
+          - "release/Altitude-Metrix-Wallet-mac-x64.dmg"
         skip_cleanup: true
         draft: true
         on:
@@ -30,9 +30,9 @@ script:
   - npm run electron:mac
   - npm run electron:linux
   - npm run electron:windows
-  - mv release/Altitude-win32.exe release/Altitude-win32-x64.exe 
+  - mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
   - npm run electron:windows32
-  - mv release/Altitude-win32.exe release/Altitude-win32-x86.exe 
+  - mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe 
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine

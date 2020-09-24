@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Ifihan imudaniloju",
             "TABLE_SIGNATURE": "Ibuwọlu",
             "TABLE_DIFFICULTY": "Roro",
-            "TABLE_ENTROPYBIT": "Bit entropy",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Awọn iṣeduro",
             "TABLE_INPUTOUTPUT": "Awọn igbewọle ati Awọn ifunjade",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Lo aṣoju SOCKS5 ti o yatọ lati de ọdọ awọn ẹlẹgbẹ nipasẹ awọn iṣẹ ti a fi pamọ si",
                 "ONLYNET": "Nikan sopọ si awọn apa ni nẹtiwọki",
                 "BLOCKINCOMING": "Maṣe jẹ ki awọn isopọ ti nwọle",
-                "RESTARTREQUIRED": "A tun bẹrẹ iṣẹ bẹrẹ lati mu awọn ayipada eyikeyi ṣiṣẹ si awọn eto wọnyi."
+                "RESTARTREQUIRED": "A tun bẹrẹ iṣẹ bẹrẹ lati mu awọn ayipada eyikeyi ṣiṣẹ si awọn eto wọnyi.",
+                "CHAINTYPE": "Nẹtiwọọki"
             },
             "WINDOW": {
                 "HIDETRAY": "Tọju aami apamọ",
@@ -251,7 +251,6 @@
                 "LOCKED": "Apamọwọ pa",
                 "UNLOCKED": "Apamọwọ ṣiṣi silẹ",
                 "UNLOCKEDSTAKING": "Apamọwọ ṣiṣi silẹ fun titẹ nikan",
-                "UNLOCKEDANON": "Apamọwọ ṣiṣi silẹ fun ifitonileti nikan",
                 "STAKING": "Apamọwọ ti wa ni bayi",
                 "NOTSTAKING": "Apamọwọ ko wa ni akoko yii",
                 "MASTERNODEON": "Masternode n ṣiṣẹ lọwọlọwọ",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Iwe apamọwọ apamọwọ",
             "ENCRYPTEDCONTENT": "Eyikeyi awọn afẹyinti ti o ti ṣe ti iwe apamọwọ rẹ gbọdọ wa ni rọpo pẹlu faili tuntun ti a gbejade, faili apamọwọ ti a papamọ. Fun awọn idi aabo, awọn afẹyinti tẹlẹ ti faili apamọwọ ti a ko gba silẹ yoo di asan ni kete ti o bẹrẹ lilo lilo apamọwọ titun, ti a papamọ.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core duro lairotẹlẹ",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro wa pẹlu Metrix Core ti o mu ki o pari. O ṣe iṣeduro lati ṣayẹwo faili debug.log rẹ fun awọn oran.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro kan wa pẹlu Metrix Core ti o jẹ ki o fopin si. O ti wa ni niyanju lati ṣayẹwo faili debug.log rẹ fun awọn ọran.",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf iṣeto ni aiyipada",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf rẹ ni eto ipilẹṣẹ abuda ti ko tọ ti yoo mu Metrix Core jade lẹsẹkẹsẹ. Jọwọ ṣayẹwo faili yii.",
             "ADDREMOTEMNTITLE": "Fikun Masternode Latọna jijin",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Atọka Masxodeode",
             "BOOTSTRAPFAILEDTITLE": "Meji Metetax Bootstrap kuna",
-            "BOOTSTRAPFAILEDINFO": "Iṣoro Iṣeduro irin-iṣẹ Core jẹ iṣoro kan. O ṣe iṣeduro lati ṣayẹwo faili logọti Altitude rẹ fun awọn ọran.",
+            "BOOTSTRAPFAILEDINFO": "Iṣoro Iṣeduro irin-iṣẹ Core jẹ iṣoro kan. O ti wa ni niyanju lati ṣayẹwo faili giga Altitude rẹ fun awọn ọran.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Awọn irinṣẹ Igbapada",
             "STARTUPFAILEDTITLE": "Ibẹrẹ Metrix Core Bibẹrẹ",
-            "STARTUPFAILEDINFO": "Nibẹ a Bibẹrẹ metrix mojuto. O ṣe iṣeduro lati ṣayẹwo faili logọti Altitude rẹ fun awọn ọran."
+            "STARTUPFAILEDINFO": "Nibẹ a ti bẹrẹ Metrix mojuto. O ti wa ni niyanju lati ṣayẹwo faili giga Altitude rẹ fun awọn ọran.",
+            "CLIENTUNKNOWNERRORTITLE": "Aṣiṣe Ibaraẹnisọrọ Metax Core",
+            "CLIENTUNKNOWNERRORINFO": "Iṣoro kan ni iṣoro sọrọ pẹlu Metrix Core. O ti wa ni niyanju lati ṣayẹwo faili debug.log rẹ fun awọn ọran.",
+            "UNENROLLGOVERNORTITLE": "Jẹrisi Iforukọsilẹ ti Gomina",
+            "UNENROLLGOVERNORCONTENT": "Ṣe o da ọ loju pe o fẹ lati forukọsilẹ Gomina rẹ? Iwọ kii yoo ni anfani lati dibo lori iṣakoso pq."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adirẹsi Iwe",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Ikilo! Iwọ ko si lori pq akọkọ ni ibamu si oluwadi Metrix. O ti wa ni gíga niyanju lati tun-mušišẹpọ tabi tun-bootstrap rẹ blockchain lati yago fun isonu ti eyikeyi awọn owó."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Nẹtiwọọki lọwọlọwọ"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Iṣiṣe iṣowo. Jọwọ gbiyanju lẹẹkansi.",
         "MINIMUMCONFIRMATIONS": "Gbogbo awọn ipinnu nilo ni o kere ju iṣeduro ṣaaju ki o to lilo.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Awọn iṣẹ ti a ṣe apẹrẹ si paadi",
-        "TRANSACTIONOUTPUTTOOLARGE": "Ọkan ninu owo-ori rẹ si iye owo tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Iyipada rẹ tobi ju lọ lati firanṣẹ lailewu. Iwọn julọ jẹ 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Idaduro masternode...",
         "FAILEDTOWRITECONFIG": "Iṣoro kan wa ninu kikọwe si faili faili metrix.conf rẹ. Ṣayẹwo faili naa wa ati pe Altitude ti kọ awọn igbanilaaye.",
         "NOPUBLICUP": "Ko si adiresi IP gbangba ti o wa. Ṣayẹwo asopọ intanẹẹti rẹ ati tun bẹrẹ Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "O Firanṣẹ",
-                "YOUGET": "O Gba",
-                "MRXADDRESS": "Adirẹsi Metrix",
-                "SWAP": "Siwopu",
-                "SWAPADDRESSES": "Awọn adirẹsi Swap",
-                "BTCADDRESS": "Adirẹsi BTC",
-                "INFOLINE1": "Ni kete ti o ba ni adirẹsi idogo idogo BTC eyikeyi BTC ti o firanṣẹ si adirẹsi yẹn yoo ṣe ayipada laifọwọyi fun MRX sinu adirẹsi MRX ti o yan.",
-                "INFOLINE2-1": "Awọn iṣowo lẹtọ sọ di mimọ laarin wakati kan da lori awọn akoko bulọki Bitcoin. A le gba fiat fun",
-                "INFOLINE2-2": "kopa awọn orilẹ-ede",
-                "INFOLINE2-3": "Eyi yoo yipada si BTC ni akọkọ lẹhinna MRX.",
-                "INFOLINE3": "Ni kete ti idogo BTC rẹ ba ti fọ kuro iwọ yoo gba MRX rẹ sinu adirẹsi ti yan.",
-                "INFOLINE4": "Fun ibẹwo si alaye siwaju sii",
-                "FIATSWAPSELECTED": "Iwọ yoo darí si Buy.Metrixcoin.com lati pari iṣowo naa"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Iwọ kii ṣe gomina",
+                "NOTGOVERNORDETAIL": "Awọn gomina jẹ lodidi fun idibo lori awọn isuna oṣu ati awọn ayipada blockchain. O le di Gomina nipasẹ titiipa iwe adehun ti o peye ninu adehun Ijọba.",
+                "COLLATERAL": "Isẹ adehun beere fun",
+                "ENROLL": "Iforukọsilẹ",
+                "CONFIRMENROLL": "O ti fẹrẹ forukọsilẹ bi Gomina. Eyi yoo firanṣẹ idunadura kan pẹlu adehun ti o nilo si adehun ijọba. O le forukọsilẹ ni eyikeyi akoko.",
+                "ISGOVERNORTITLE": "O jẹ Gomina ti n ṣiṣẹ!",
+                "ISGOVERNORDETAIL1": "Awọn gomina jẹ lodidi fun idibo lori awọn isuna oṣu ati awọn ayipada blockchain.",
+                "ISGOVERNORDETAIL2": "Lati duro si Alakoso iwọ yoo nilo lati kopa ninu o kere ju 1 dibo ni gbogbo ọjọ 30.",
+                "ISGOVERNORDETAIL3": "Ti ko ba si nkankan lati dibo lori lẹhinna o le ọwọ tẹsiwaju iforukọsilẹ rẹ nipasẹ fifiranṣẹ Pingi ti nṣiṣe lọwọ.",
+                "UNENROLL": "Igbasilẹ",
+                "PING": "Firanṣẹ Ṣiṣẹ Pingi",
+                "LASTPINGTITLE": "Pingi ti o kẹhin",
+                "LASTPINGSUFFIX": "awọn bulọọki sẹyin"
+            },
+            "BUDGET": {
+                "TITLE": "Awọn igbero Isuna",
+                "ADDPROPOSAL": "Ṣẹda imọran",
+                "REQUESTEDPERMONTH": "ni oṣu kan",
+                "REQUESTEDREMAINING": "ku",
+                "VOTEYES": "Dibo Bẹẹni",
+                "VOTEABSTAIN": "Dibo Abstain",
+                "VOTENO": "Dibo Bẹẹkọ",
+                "VOTESTOPASS": "ibo lati kọja",
+                "VOTEPASSING": "awọn ibo didi",
+                "MINIMUMGOVERNORS": "A ko le kọja awọn akọọlẹ titi nọmba to kere julọ ti Awọn Gomina wa lori pq naa.",
+                "CURRENTLY": "Lọwọlọwọ",
+                "REQUIRED": "Beere"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Ṣẹda imọran kan",
+                "DESCRIPTION": "Ni isalẹ o le ṣẹda igbero isuna kan ki o fi si netiwọki fun dibo ṣaaju ki irubo ipinnu isuna ti atẹle.",
+                "BUDGETFEE": "Owo isuna lọwọlọwọ jẹ",
+                "BUDGETBLOCK": "Ọna pinpin ipinnu ti o nbo ni",
+                "PROPOSALTITLE": "Orukọ igbero",
+                "PROPOSALDESC": "Apejuwe Ifihan",
+                "PROPOSALURL": "URL imọran",
+                "PROPOSALAMOUNT": "Ibere iye",
+                "PROPOSALDURATION": "Awọn isanwo ti a beere",
+                "PROPOSALADDRESS": "Adirẹsi isanwo",
+                "PROPOSALCREATE": "Ṣẹda imọran"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Ijoba",
+                "BUDGET": "Isuna"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ti nfa adirẹsi Swap...",
             "ALREADYHAVEADDRESS": "O ti ni adiresi BTC tẹlẹ ti o ni nkan ṣe pẹlu adirẹsi Metrix yii",
             "SWAPUSDMIN": "Iye iyipada sẹhin ti o kere ju ni $ 50",
-            "SWAPUSDMAX": "Iwọn ipa-ọna USD ti o pọ julọ jẹ $ 3000",
-            "NOADDRESS": "Iwọ ko tẹ adirẹsi Metrix kan sii"
+            "SWAPUSDMAX": "Iye iyipada ti o pọ julọ ti USD jẹ $ 3000",
+            "INCOMPLETEFORM": "O ko ni kikun ni gbogbo awọn aaye ti a beere daradara",
+            "INVALIDPROPOSALDURATION": "Awọn ilana imudaniloju yẹ ki o wa laarin oṣu 1 ati 12",
+            "CREATINGPROPOSAL": "Fifunni silẹ si nẹtiwọọki...",
+            "CREATEDPROPOSAL": "A ti ṣẹda imọran rẹ ni aṣeyọri",
+            "ENROLLINGGOVERNOR": "Iforukọsilẹ bi gomina...",
+            "ENROLLEDGOVERNOR": "Iforukọsilẹ rẹ yoo pari ni kete ti o ti fọwọsi idunadura rẹ",
+            "VOTINGONPROPOSAL": "Fifiranṣẹ si imọran Idibo",
+            "VOTEDONPROPOSAL": "Idibo rẹ yoo ni kete ti o ti fọwọsi idunadura naa.",
+            "NOADDRESS": "Iwọ ko tẹ adirẹsi Metrix kan sii",
+            "PINGINGGOVERNOR": "Fifiranṣẹ pingi...",
+            "PINGEDGOVERNOR": "Ping ti firanṣẹ ni aṣeyọri. Gomina rẹ yoo ni imudojuiwọn ni kete ti a ti fi idi idunadura mulẹ",
+            "UNENROLLINGGOVERNOR": "Ṣiṣakoso Gomina...",
+            "UNENROLLEDGOVERNOR": "Ti firanṣẹ iṣowo. Gomina rẹ yoo wa ni iforukọsilẹ ni kete ti iṣeduro naa ti fidi rẹ mulẹ",
+            "GOVERNORNOTMATURE": "Gomina rẹ ko dagba to lati ṣe iṣẹ yii sibẹsibẹ"
         }
     }
 }

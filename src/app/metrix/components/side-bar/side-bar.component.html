@@ -5,9 +5,10 @@
         <!-- Balance -->
         <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
         <span>
-            {{currencyService.convert(wallet.balance)}}
+            {{currencyService.convert(wallet.balance) | prettyCoins: 4 }}
             <span class="balance-currency">{{currencyService.currency}}</span>
         </span>
+        <network-type></network-type>
         <!-- Menu -->
         <ul routerLinkActive="active">
             <li>
@@ -28,11 +29,6 @@
             <li>
                 <a routerLink="/metrix/staking" routerLinkActive="active">
                     <fa-icon icon="coins"></fa-icon> {{ 'COMPONENTS.SIDEBAR.STAKING' | translate }}
-                </a>
-            </li>
-            <li>
-                <a routerLink="/metrix/masternodes" routerLinkActive="active">
-                    <fa-icon icon="network-wired"></fa-icon> {{ 'COMPONENTS.SIDEBAR.MASTERNODES' | translate }}
                 </a>
             </li>
             <li>

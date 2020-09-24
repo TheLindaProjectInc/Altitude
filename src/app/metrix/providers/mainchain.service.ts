@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { WalletService } from './wallet.service';
 import { HttpClient } from '@angular/common/http';
-import { ElectronService, ClientStatus } from 'app/providers/electron.service';
+import { ElectronService } from 'app/providers/electron.service';
+import { ClientStatus } from 'app/enum';
 
 @Injectable()
 export class MainChainService {

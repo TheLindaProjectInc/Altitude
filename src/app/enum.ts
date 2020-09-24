@@ -1,0 +1,33 @@
+export enum ClientStatus {
+    INITIALISING,
+    CHECKEXISTS,
+    DOWNLOADCLIENT,
+    UPDATEAVAILABLE,
+    STARTING,
+    RUNNING,
+    RUNNINGEXTERNAL,
+    STOPPED,
+    BOOTSTRAPPING,
+    NOCREDENTIALS,
+    INVALIDHASH,
+    DOWNLOADFAILED,
+    UNSUPPORTEDPLATFORM,
+    SHUTTINGDOWN,
+    RESTARTING,
+    CLOSEDUNEXPECTED,
+    BOOTSTRAPFAILED,
+    UNKNOWNERROR
+}
+
+export enum ChainType {
+    MAINNET,
+    TESTNET,
+    REGTEST
+}
+
+export enum BudgetVote {
+    NONE = 0,
+    ABSTAIN = 1,
+    NO = 2,
+    YES = 3,
+}

@@ -1,9 +1,6 @@
 import { Routes } from '@angular/router';
 
 // components
-import { PromptComponent } from './components/prompt/prompt.component';
-import { PromptService } from './components/prompt/prompt.service';
-import { TitlebarComponent } from './components/titlebar/titlebar.component';
 import { ClientStatusComponent } from './components/client-status/client-status.component';
 import { AddressBookComponent } from './components/address-book/address-book.component';
 import { AddressBookService } from './components/address-book/address-book.service';
@@ -13,7 +10,6 @@ import { TransactionRowComponent } from './components/transaction-row/transactio
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { MarketPriceComponent } from './components/market-price/market-price.component';
 import { CurrencyComponent } from './pages/currency/currency.component';
-import { MasternodeComponent } from './components/masternode/masternode.component';
 import { MainChainCheckComponent } from './components/main-chain-check/main-chain-check.component';
 
 // pages
@@ -24,7 +20,6 @@ import { ManageAccountComponent } from './pages/manage-account/manage-account.co
 import { ToolsComponent } from './pages/tools/tools.component';
 import { StakingComponent } from './pages/staking/staking.component';
 import { SignMessageComponent } from './pages/signmessage/signmessage.component';
-import { MasternodesComponent } from './pages/masternodes/masternodes.component';
 import { AboutComponent } from '../pages/about/about.component';
 import { LocaleComponent } from '../pages/locale/locale.component';
 import { ExplorerComponent } from './pages/explorer/explorer.component';
@@ -42,7 +37,6 @@ const routes: Routes = [
     { path: 'send', component: SendComponent },
     { path: 'staking', component: StakingComponent },
     { path: 'transactions', component: TransactionsComponent },
-    { path: 'masternodes', component: MasternodesComponent },
     { path: 'signmessage/:tab', component: SignMessageComponent },
     { path: 'tools/:tab', component: ToolsComponent },
     { path: 'options', component: OptionsComponent },
@@ -58,7 +52,6 @@ export const providers = [
     RpcService,
     WalletService,
     MainChainService,
-    PromptService,
     AddressBookService,
 ]
 
@@ -71,13 +64,10 @@ export const declarations = [
     StakingComponent,
     SignMessageComponent,
     MasterComponent,
-    MasternodesComponent,
     AboutComponent,
     LocaleComponent,
     ExplorerComponent,
     OptionsComponent,
-    PromptComponent,
-    TitlebarComponent,
     ClientStatusComponent,
     AddressBookComponent,
     SyncStatusComponent,
@@ -86,6 +76,5 @@ export const declarations = [
     AccountsComponent,
     MarketPriceComponent,
     CurrencyComponent,
-    MasternodeComponent,
     MainChainCheckComponent
 ]

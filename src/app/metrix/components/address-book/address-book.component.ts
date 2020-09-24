@@ -22,7 +22,7 @@ export class AddressBookComponent {
   newLabel = ""
 
   constructor(
-    private wallet: WalletService,
+    public wallet: WalletService,
     private notification: NotificationService,
     private ngxModal: NgxSmartModalService,
     private addressBook: AddressBookService,

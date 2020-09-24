@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "İmza",
             "TABLE_DIFFICULTY": "Çətinlik",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Təsdiqlər",
             "TABLE_INPUTOUTPUT": "Giriş və çıxışlar",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Tor gizli xidmətlərindən yoldaşlarına çatmaq üçün ayrı SOCKS5 proxy istifadə edin",
                 "ONLYNET": "Yalnız şəbəkədəki qovşaqlara qoşulun",
                 "BLOCKINCOMING": "Daxil olan əlaqələrə icazə verməyin",
-                "RESTARTREQUIRED": "Bu ayarlardakı dəyişiklikləri aktivləşdirmək üçün Müştəri yenidən başladın tələb olunur."
+                "RESTARTREQUIRED": "Bu ayarlardakı dəyişiklikləri aktivləşdirmək üçün Müştəri yenidən başladın tələb olunur.",
+                "CHAINTYPE": "Şəbəkə"
             },
             "WINDOW": {
                 "HIDETRAY": "Tepsi simgesini gizlədin",
@@ -251,7 +251,6 @@
                 "LOCKED": "Pul kisəsi kilidləndi",
                 "UNLOCKED": "Wallet kilidləndi",
                 "UNLOCKEDSTAKING": "Pul kisəsi yalnız staking üçün kilidləndi",
-                "UNLOCKEDANON": "Wallet yalnız anonimləşdirmə üçün kilidləndi",
                 "STAKING": "Cüzdan hazırda staking edir",
                 "NOTSTAKING": "Cüzdan hələ hazırda staking deyil",
                 "MASTERNODEON": "Masternode hazırda çalışır",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Wallet Şifreli",
             "ENCRYPTEDCONTENT": "Cüzdan dosyanızı hazırladığınız hər hansı əvvəlki backups yeni yaradılmış şifrəli cüzdan faylı ilə əvəz olunmalıdır. Təhlükəsizliyə görə, şifrələnməmiş cüzdan faylının əvvəlki ehtiyatları yeni, şifrəli cüzdanı istifadə etməyə başlamazdan sonra yararsız hala gəlir.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gözlənilmədən dayandı",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ilə əlaqədar bir problem var idi ki bu da onu sona çatdırdı. Məsələlər üçün debug.log faylını yoxlamaq məsləhətdir.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ilə əlaqəli bir problemin yaranmasına səbəb oldu. Problemlər üçün debug.log faylınızı yoxlamaq tövsiyə olunur.",
             "CLIENTINVALIDCONFIGTITLE": "Yanlış metrix.conf Konfiqurasiyası",
             "CLIENTINVALIDCONFIGINFO": "Sizin metrix.conf-nun Metrix Core-nun dərhal çıxışına səbəb olan qeyri-qanuni masternode qurğusu var. Xahiş edirik bu faylları yoxlayın.",
             "ADDREMOTEMNTITLE": "Uzaq Masternode əlavə edin",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Metrix Core'u yükləməkdə problem oldu. Hündürlük giriş sənədinizi problemlər üçün yoxlamaq tövsiyə olunur.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Bərpa vasitələri",
             "STARTUPFAILEDTITLE": "Metrix əsas işə salınmadı",
-            "STARTUPFAILEDINFO": "Bir başlanğıc Metrix Core var idi. Hündürlük giriş sənədinizi problemlər üçün yoxlamaq tövsiyə olunur."
+            "STARTUPFAILEDINFO": "Bir başlanğıc Metrix Core var idi. Hündürlük giriş sənədinizi problemlər üçün yoxlamaq tövsiyə olunur.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix əsas əlaqə xətası",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core ilə əlaqə qurmaqda problem oldu. Problemlər üçün debug.log faylınızı yoxlamaq tövsiyə olunur.",
+            "UNENROLLGOVERNORTITLE": "Vali qeydiyyatdan keçməsini təsdiqləyin",
+            "UNENROLLGOVERNORCONTENT": "Qubernatorunuzu qeydiyyatdan keçirmək istədiyinizə əminsiniz? Artıq zəncirvari idarəetməyə səs verə bilməyəcəksiniz."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ünvan Kitab",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Xəbərdarlıq! Metrix tədqiqatçısına görə əsas zəncirdə deyilsiniz. Hər hansı bir pul itirməməsi üçün blockchain-in yenidən sinxronlaşdırılması və ya yenidən yüklənməsi tövsiyə olunur."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Mövcud şəbəkə"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Əməliyyat səhvi. Zəhmət olmasa bir daha cəhd edin.",
         "MINIMUMCONFIRMATIONS": "Bütün məlumatlar xərcləmə əvvəli ən azı 1 razılaşma tələb edir.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Panoya kopyalanan əməliyyatlar",
-        "TRANSACTIONOUTPUTTOOLARGE": "Məbləğlərinizdən birinin təhlükəsiz şəkildə göndərilməsi üçün çox böyükdür. Maksimum 90,071,992.54740992'dir.",
-        "TRANSACTIONCHANGETOOLARGE": "Sizin dəyişiklik təhlükəsiz göndərmək üçün çox böyükdür. Maksimum 90,071,992.54740992'dir.",
         "STOPPINGMASTERNODE": "Masternode dayandırılır...",
         "FAILEDTOWRITECONFIG": "Metrix.conf faylınıza yazmaqda problem oldu. Faylın mövcudluğunu və Altlıqın yazma icazəsi olduğunu yoxlayın.",
         "NOPUBLICUP": "İctimai IP ünvanı tapılmadı. İnternet bağlantınızı yoxlayın və Altlıq səviyyəsini yenidən başladın.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Göndərirsən",
-                "YOUGET": "Get",
-                "MRXADDRESS": "Metrix ünvanı",
-                "SWAP": "Mübadilə",
-                "SWAPADDRESSES": "Ünvanları dəyişdirin",
-                "BTCADDRESS": "BTC ünvanı",
-                "INFOLINE1": "Bir BTC depozit adresiniz olduqdan sonra həmin ünvana göndərilən hər bir BTC avtomatik olaraq MRX üçün təyin edilmiş MRX adresinizə daxil olur.",
-                "INFOLINE2-1": "Əməliyyatlar adətən Bitcoin blok vaxtından asılı olaraq bir saat ərzində təmizlənir. Üçün fiat qəbul edə bilərik",
-                "INFOLINE2-2": "iştirak edən ölkələr",
-                "INFOLINE2-3": "Bu əvvəl BTC-yə, sonra MRX-yə çevriləcəkdir.",
-                "INFOLINE3": "BTC depozitiniz təmizləndikdən sonra MRX-ni təyin olunmuş ünvana daxil edəcəksiniz.",
-                "INFOLINE4": "Daha çox məlumat üçün",
-                "FIATSWAPSELECTED": "Bu əməliyyatı başa çatdırmaq üçün Buy.Metrixcoin.com saytına yönləndiriləcəksiniz"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Vali deyilsən",
+                "NOTGOVERNORDETAIL": "Qubernatorlar aylıq büdcələr və blockchain dəyişiklikləri barədə səsverməyə cavabdehdirlər. İdarəetmə müqaviləsindəki düzgün girovu kilidləməklə Qubernator ola bilərsiniz.",
+                "COLLATERAL": "Tələb olunan girov",
+                "ENROLL": "Qeydiyyatdan keçin",
+                "CONFIRMENROLL": "Qubernator kimi qeydiyyatdan keçməyə hazırlaşırsınız. Bu idarəetmə müqaviləsinə tələb olunan girov ilə bir əməliyyat göndərəcəkdir. İstənilən vaxt qeydiyyatdan çıxara bilərsiniz.",
+                "ISGOVERNORTITLE": "Siz fəal Qubernator!",
+                "ISGOVERNORDETAIL1": "Qubernatorlar aylıq büdcələr və blockchain dəyişiklikləri barədə səsverməyə cavabdehdirlər.",
+                "ISGOVERNORDETAIL2": "Qubernator qalmaq üçün hər 30 gündə ən azı 1 səsvermədə iştirak etməlisiniz.",
+                "ISGOVERNORDETAIL3": "Səs verəcək bir şey yoxdursa, aktiv bir ping göndərərək qeydiyyatınızı əl ilə davam etdirə bilərsiniz.",
+                "UNENROLL": "Qeyri-qeydiyyat",
+                "PING": "Aktiv Ping göndər",
+                "LASTPINGTITLE": "Son ping",
+                "LASTPINGSUFFIX": "bloklar əvvəl"
+            },
+            "BUDGET": {
+                "TITLE": "Büdcə təklifləri",
+                "ADDPROPOSAL": "Təklif yaradın",
+                "REQUESTEDPERMONTH": "aylıq",
+                "REQUESTEDREMAINING": "qalan",
+                "VOTEYES": "Səs Bəli",
+                "VOTEABSTAIN": "Səs verin",
+                "VOTENO": "Səs Xeyr",
+                "VOTESTOPASS": "səslər keçəcək",
+                "VOTEPASSING": "keçən səslər",
+                "MINIMUMGOVERNORS": "Bugets, zəncirdə minimum Qubernator sayı mövcud olana qədər ötürülə bilməz.",
+                "CURRENTLY": "Hal hazırda",
+                "REQUIRED": "Tələb olunur"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Bir təklif yaradın",
+                "DESCRIPTION": "Aşağıda bir büdcə təklifi yarada və növbəti büdcə həll blokundan əvvəl səsvermə üçün şəbəkəyə təqdim edə bilərsiniz.",
+                "BUDGETFEE": "Cari büdcə haqqı",
+                "BUDGETBLOCK": "Növbəti yaşayış məhəlləsidir",
+                "PROPOSALTITLE": "Təklif Adı",
+                "PROPOSALDESC": "Təklifin təsviri",
+                "PROPOSALURL": "Təklif URL",
+                "PROPOSALAMOUNT": "Tələb olunan Miqdarı",
+                "PROPOSALDURATION": "Tələb olunan ödənişlər",
+                "PROPOSALADDRESS": "Ödəniş ünvanı",
+                "PROPOSALCREATE": "Təklif yaradın"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "İdarəetmə",
+                "BUDGET": "Büdcə"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Artıq bu Metrix ünvanı ilə əlaqəli BTC ünvanınız var",
             "SWAPUSDMIN": "USD svopunun minimum məbləği 50 dollardır",
             "SWAPUSDMAX": "Maksimum USD svop məbləği 3000 dollardır",
-            "NOADDRESS": "Metrix ünvanı daxil etmədiniz"
+            "INCOMPLETEFORM": "Bütün tələb olunan sahələri düzgün doldurmadın",
+            "INVALIDPROPOSALDURATION": "Təklif müddəti 1 ilə 12 ay arasında olmalıdır",
+            "CREATINGPROPOSAL": "Təklif şəbəkəyə təqdim olunur...",
+            "CREATEDPROPOSAL": "Təklifiniz uğurla yaradıldı",
+            "ENROLLINGGOVERNOR": "Vali olaraq qeydiyyata alınır...",
+            "ENROLLEDGOVERNOR": "Əməliyyat təsdiqləndikdən sonra qeydiyyat başa çatacaq",
+            "VOTINGONPROPOSAL": "Təklif səsverməsi göndərilir",
+            "VOTEDONPROPOSAL": "Əməliyyat təsdiqləndikdən sonra səsiniz sayılacaqdır.",
+            "NOADDRESS": "Metrix ünvanı daxil etmədiniz",
+            "PINGINGGOVERNOR": "Ping göndərilir...",
+            "PINGEDGOVERNOR": "Ping uğurla göndərildi. Əməliyyat təsdiqləndikdən sonra Valiniz güncellenecek",
+            "UNENROLLINGGOVERNOR": "Vali qeydiyyatdan çıxır...",
+            "UNENROLLEDGOVERNOR": "Əməliyyat göndərildi. Əməliyyat təsdiqləndikdən sonra valiniz qeydiyyatdan çıxarılacaq",
+            "GOVERNORNOTMATURE": "Qubernatorunuz bu hərəkəti həyata keçirəcək qədər yetkin deyil"
         }
     }
 }

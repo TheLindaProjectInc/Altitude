@@ -10,7 +10,7 @@
         {{ 'PAGES.SEND.INPUTSAUTOMATIC' | translate }}
       </span>
       <span *ngIf="getSelectedQuantity()" style="margin-left: 1em;">
-        {{helpers.prettyCoins(getSelectedAmount())}} Metrix
+        {{ getSelectedAmount() | prettyCoins }} Metrix
       </span>
     </div>
 
@@ -56,7 +56,7 @@
     <div class="send-summary">
       <h5>{{ 'MISC.FEE' | translate }}: {{UI_fee}}</h5>
       <h5>
-        {{ 'PAGES.SEND.TOTAL' | translate }}: {{helpers.prettyCoins(UI_total)}}
+        {{ 'PAGES.SEND.TOTAL' | translate }}: {{ UI_total | prettyCoins }}
         {{currencyService.currency!=='MRX' ? '(' + currencyService.displayLocal(UI_total) + ')' : ''}}
       </h5>
       <hr />
@@ -78,9 +78,9 @@
 
   <div class="inputs-header-wrapper">
     <div class="inputs-header">
-      <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{helpers.prettyCoins(getSelectedAmount())}} Metrix</p>
-      <p>{{ 'MISC.FEE' | translate }}: {{helpers.prettyCoins(getSelectedFee())}}</p>
-      <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{helpers.prettyCoins(getSelectedAftFee())}} Metrix</p>
+      <p>{{ 'PAGES.SEND.SELECTED' | translate }}: {{ getSelectedAmount() | prettyCoins }} Metrix</p>
+      <p>{{ 'MISC.FEE' | translate }}: {{ getSelectedFee() | prettyCoins }}</p>
+      <p>{{ 'PAGES.SEND.AFTERFEE' | translate }}: {{ getSelectedAftFee() | prettyCoins }} Metrix</p>
     </div>
     <div class="inputs-header">
       <p>{{ 'PAGES.SEND.QUANTITY' | translate }}: {{getSelectedQuantity()}}</p>

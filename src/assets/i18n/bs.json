@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Potpis",
             "TABLE_DIFFICULTY": "Teškoće",
-            "TABLE_ENTROPYBIT": "Entropy Bit",
             "TABLE_BLOCKHASH": "Blokiraj Hash",
             "TABLE_CONFIRMATIONS": "Potvrde",
             "TABLE_INPUTOUTPUT": "Ulazi i izlazi",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Koristite odvojeni SOCKS5 proxy da biste došli do vršnjaka preko Tor skrivenih servisa",
                 "ONLYNET": "Povežite se samo sa čvorovima u mreži",
                 "BLOCKINCOMING": "Ne dozvolite dolazne veze",
-                "RESTARTREQUIRED": "Za ponovno pokretanje ovih postavki potrebno je ponovno pokretanje klijenta."
+                "RESTARTREQUIRED": "Za ponovno pokretanje ovih postavki potrebno je ponovno pokretanje klijenta.",
+                "CHAINTYPE": "Mreža"
             },
             "WINDOW": {
                 "HIDETRAY": "Sakrijte ikonicu ladice",
@@ -251,7 +251,6 @@
                 "LOCKED": "Novčanik zaključan",
                 "UNLOCKED": "Novčanik je otključan",
                 "UNLOCKEDSTAKING": "Novčanik je otključan samo za staklanje",
-                "UNLOCKEDANON": "Novčanik otključan samo za anonimizaciju",
                 "STAKING": "Novčanik trenutno drži",
                 "NOTSTAKING": "Novčanik trenutno ne stoji",
                 "MASTERNODEON": "Masternode trenutno radi",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Šifrovano novčanik",
             "ENCRYPTEDCONTENT": "Bilo koje prethodne sigurnosne kopije koje ste napravili iz vašeg novčanik trebali biste zamijeniti novoformiranom, šifrovanom novčanikom. Zbog sigurnosnih razloga, prethodna rezervna kopija nešifrirane datoteke novčanika će postati beskorisna čim počnete da koristite novi, šifrovan novčanik.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core je neočekivano zaustavljena",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Postojao je problem sa Metrix Core-om koji je izazvao prekid. Preporučuje se da proverite vašu datoteku debug.log za probleme.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Došlo je do problema s Metrix Coreom zbog kojeg se on ugasio. Preporučuje se provjeriti datoteku debug.log zbog problema.",
             "CLIENTINVALIDCONFIGTITLE": "Nevažeća konfiguracija metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaša metrix.conf ima nevažeću masternode postavku koja će uzrokovati da Metrix Core odmah izađe. Provjerite ovu datoteku.",
             "ADDREMOTEMNTITLE": "Dodajte Remote Masternode",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx indeks",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap nije uspio",
-            "BOOTSTRAPFAILEDINFO": "Došlo je do problema prilikom pokretanja Metrix Core-a. Za probleme je preporučljivo provjeriti datoteku dnevnika visine.",
+            "BOOTSTRAPFAILEDINFO": "Došlo je do problema prilikom pokretanja Metrix Core-a. Za probleme je preporučeno provjeriti datoteku dnevnika visine.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alati za oporavak",
             "STARTUPFAILEDTITLE": "Puštanje u pogon Metrix Core nije uspjelo",
-            "STARTUPFAILEDINFO": "Postojala je početna Metrix Core. Za probleme je preporučljivo provjeriti datoteku dnevnika visine."
+            "STARTUPFAILEDINFO": "Postojala je početna Metrix Core. Za probleme je preporučeno provjeriti datoteku dnevnika visine.",
+            "CLIENTUNKNOWNERRORTITLE": "Greška komunikacije u Metrix jezgri",
+            "CLIENTUNKNOWNERRORINFO": "Došlo je do problema u komunikaciji s Metrix Coreom. Preporučuje se provjeriti datoteku debug.log zbog problema.",
+            "UNENROLLGOVERNORTITLE": "Potvrdite odjavu guvernera",
+            "UNENROLLGOVERNORCONTENT": "Jeste li sigurni da želite poništiti registraciju svog guvernera? Više nećete moći glasati o upravljanju lancima."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresar",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Upozorenje! Prema istraživaču Metrix, niste u glavnom lancu. Preporučuje se ponovna sinkronizacija ili ponovno pokretanje blok-bloka kako biste izbjegli gubitak kovanica."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Trenutna mreža"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Greška transakcije. Molimo pokušajte ponovo.",
         "MINIMUMCONFIRMATIONS": "Svi inputi zahtijevaju najmanje 1 potvrdu prije potrošnje.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcije kopirane u međuspremnik",
-        "TRANSACTIONOUTPUTTOOLARGE": "Jedan od vaših iznosa za isplatu je prevelik za sigurno slanje. Maksimum je 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Promjena je prevelika za sigurno slanje. Maksimum je 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Zaustavljanje masternode...",
         "FAILEDTOWRITECONFIG": "Došlo je do problema prilikom pisanja u vašu datoteku metrix.conf. Provjerite da li datoteka postoji i da Altitude ima dozvole za pisanje.",
         "NOPUBLICUP": "Nije pronađena javna IP adresa. Proverite svoju internet vezu i ponovo pokrenite Altitude.",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Šaljete",
-                "YOUGET": "Dobiješ",
-                "MRXADDRESS": "Metrix adresa",
-                "SWAP": "Zamjena",
-                "SWAPADDRESSES": "Zamjenske adrese",
-                "BTCADDRESS": "BTC adresa",
-                "INFOLINE1": "Jednom kada dobijete BTC adresu depozita, svaki BTC koji se pošalje na tu adresu automatski će se zamijeniti za MRX na vašu nominiranu MRX adresu.",
-                "INFOLINE2-1": "Transakcije su obično jasne u roku od jednog sata, ovisno o vremenu blokade Bitcoin. Možemo prihvatiti fiat za",
-                "INFOLINE2-2": "zemlje učesnice",
-                "INFOLINE2-3": "Ovo će se prvo pretvoriti u BTC, a zatim MRX.",
-                "INFOLINE3": "Jednom kada se vaš BTC depozit očisti, primit ćete svoj MRX na nominiranu adresu.",
-                "INFOLINE4": "Za više informacija posetite",
-                "FIATSWAPSELECTED": "Bićete preusmjereni na Buy.Metrixcoin.com da biste dovršili ovu transakciju"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Vi niste guverner",
+                "NOTGOVERNORDETAIL": "Guverneri su odgovorni za glasanje o mjesečnim proračunima i promjenama blockchaina. Možete postati guverner zaključavanjem ispravnog osiguranja u ugovoru o upravljanju.",
+                "COLLATERAL": "Traženi kolateral",
+                "ENROLL": "Upis",
+                "CONFIRMENROLL": "Upisaćete se kao guverner. Ovo će poslati transakciju sa potrebnim kolateralom ugovoru o upravljanju. Možete se odjaviti u bilo kojem trenutku.",
+                "ISGOVERNORTITLE": "Vi ste aktivni guverner!",
+                "ISGOVERNORDETAIL1": "Guverneri su odgovorni za glasanje o mjesečnim proračunima i promjenama blockchaina.",
+                "ISGOVERNORDETAIL2": "Da biste ostali guverner, trebate učestvovati najmanje 1 glas svakih 30 dana.",
+                "ISGOVERNORDETAIL3": "Ako nema o čemu glasati, ručno možete nastaviti s upisom slanjem aktivnog ping-a.",
+                "UNENROLL": "Unenroll",
+                "PING": "Pošaljite Active Ping",
+                "LASTPINGTITLE": "Zadnji ping",
+                "LASTPINGSUFFIX": "pre nekoliko blokova"
+            },
+            "BUDGET": {
+                "TITLE": "Prijedlozi budžeta",
+                "ADDPROPOSAL": "Kreirajte predlog",
+                "REQUESTEDPERMONTH": "Mjesečno",
+                "REQUESTEDREMAINING": "preostali",
+                "VOTEYES": "Glasanje Da",
+                "VOTEABSTAIN": "Glasanje suzdržano",
+                "VOTENO": "Glasanje br",
+                "VOTESTOPASS": "glasova za prolazak",
+                "VOTEPASSING": "donošenje glasova",
+                "MINIMUMGOVERNORS": "Paketi se ne mogu prenositi dok na lancu ne postoji minimalni broj guvernera.",
+                "CURRENTLY": "Trenutno",
+                "REQUIRED": "Obavezno"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Kreirajte predlog",
+                "DESCRIPTION": "Ispod možete kreirati prijedlog budžeta i poslati ga na glasanje prije sljedećeg bloka izmirenja proračuna.",
+                "BUDGETFEE": "Trenutna naknada za budžet je",
+                "BUDGETBLOCK": "Sljedeći blok naselja je",
+                "PROPOSALTITLE": "Naziv predloga",
+                "PROPOSALDESC": "Opis prijedloga",
+                "PROPOSALURL": "URL predloga",
+                "PROPOSALAMOUNT": "Traženi iznos",
+                "PROPOSALDURATION": "Zatražena plaćanja",
+                "PROPOSALADDRESS": "Adresa plaćanja",
+                "PROPOSALCREATE": "Kreirajte predlog"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Upravljanje",
+                "BUDGET": "Budžet"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generiranje swap adrese...",
             "ALREADYHAVEADDRESS": "Već imate BTC adresu povezanu s ovom Metrix adresom",
-            "SWAPUSDMIN": "Minimalni iznos za zamjenu u USD je 50 USD",
-            "SWAPUSDMAX": "Maksimalni iznos za zamjenu u USD je 3000 USD",
-            "NOADDRESS": "Niste uneli metričku adresu"
+            "SWAPUSDMIN": "Minimalni iznos za swap USD je 50 USD",
+            "SWAPUSDMAX": "Maksimalni iznos za swap u USD je 3000 USD",
+            "INCOMPLETEFORM": "Niste ispravno ispunili sva potrebna polja",
+            "INVALIDPROPOSALDURATION": "Trajanje predloga treba biti između 1 i 12 mjeseci",
+            "CREATINGPROPOSAL": "Slanje prijedloga mreži...",
+            "CREATEDPROPOSAL": "Vaš prijedlog je uspješno stvoren",
+            "ENROLLINGGOVERNOR": "Upis na mjesto guvernera...",
+            "ENROLLEDGOVERNOR": "Upis će biti dovršen nakon što se potvrdi vaša transakcija",
+            "VOTINGONPROPOSAL": "Slanje prijedloga glasovanja",
+            "VOTEDONPROPOSAL": "Vaš će se glas računati nakon što se transakcija potvrdi.",
+            "NOADDRESS": "Niste uneli metričku adresu",
+            "PINGINGGOVERNOR": "Slanje ping-a...",
+            "PINGEDGOVERNOR": "Ping je uspješno poslan. Vaš guverner će biti ažuriran nakon potvrde transakcije",
+            "UNENROLLINGGOVERNOR": "Poništavanje guvernera...",
+            "UNENROLLEDGOVERNOR": "Transakcija je poslana. Vaš guverner će biti opozvan nakon potvrde transakcije",
+            "GOVERNORNOTMATURE": "Vaš guverner još nije dovoljno zreo za izvođenje ove akcije"
         }
     }
 }

@@ -2,6 +2,7 @@
 import Big from 'big.js';
 import IInput from '../interfaces/IInput';
 import IAddress from '../interfaces/IAddress';
+import Helpers from 'app/helpers';
 
 export class Input implements IInput {
     account: string;
@@ -12,12 +13,11 @@ export class Input implements IInput {
     txid: string;
     vout: number;
     blockTime: Date;
-    matureTime: Date;
     locked: boolean;
 
     selected: boolean = false;
 
-    constructor(rawData: any, address: IAddress, matureTime: number) {
+    constructor(rawData: any, address: IAddress) {
         this.account = address.account;
         this.address = address.address;
         this.amount = Big(rawData.amount);
@@ -29,12 +29,19 @@ export class Input implements IInput {
         if (rawData.blockTime) {
             let time = Number(rawData.blockTime);
             this.blockTime = new Date(time * 1000);
-            this.matureTime = new Date((time + matureTime * 60 * 60) * 1000);
         }
     }
 
     sync(newInput: Input) {
         this.confirmations = newInput.confirmations;
         this.locked = newInput.locked;
+    }
+
+    get isMature(): boolean {
+        return this.confirmations >= Helpers.params.matureConfirms;
+    }
+    
+    get mature() {
+        return Math.abs(Helpers.params.matureConfirms - this.confirmations);
     }
 }

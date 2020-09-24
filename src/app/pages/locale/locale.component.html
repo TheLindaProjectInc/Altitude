@@ -7,7 +7,7 @@
     <text-input [(inputModel)]="search" (input)="filter()"></text-input>
   </div>
 
-  <button class="btn btn-default" (click)="setLangauge(language)" *ngFor="let language of languages" [ngClass]="{'btn-success':language.code==currentLanguage}">
+  <button class="btn btn-default" (click)="setLanguage(language)" *ngFor="let language of languages" [ngClass]="{'btn-success':language.code==currentLanguage}">
     {{language.local}}
   </button>
 

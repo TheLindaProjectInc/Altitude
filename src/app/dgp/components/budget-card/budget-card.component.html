@@ -1,0 +1,39 @@
+<div class="content-card align-items-start no-padding">
+    <div class="card-body">
+        <div class="card-img flex-row-center">
+            <img class="card-image" [src]="proposal.imgUrl" alt="Card image cap">
+        </div>
+        <div class="card-inner">
+            <h4 class="card-title">{{proposal.title}}</h4>
+            <p class="card-text">{{proposal.desc}}</p>
+            <p class="card-text">
+                {{requested}} MRX {{ 'DGP.PAGES.BUDGET.REQUESTEDPERMONTH' | translate }}
+                ({{remaining}} {{ 'DGP.PAGES.BUDGET.REQUESTEDREMAINING' | translate }})
+            </p>
+            <a class="card-text card-link" (click)="openUrl()">{{proposal.url}}</a>
+
+            <div class="flex-column-center" style="margin-bottom: 1rem;">
+                <progress max="100" [value]="passPercent" style="margin-bottom:0;"
+                    title="{{proposal.yesVote}}/{{proposal.noVote}}"></progress>
+                <span *ngIf="!isPassing" style="font-size: 0.7rem;">
+                    {{votesToPass}} {{ 'DGP.PAGES.BUDGET.VOTESTOPASS' | translate }}
+                </span>
+                <span *ngIf="isPassing" style="font-size: 0.7rem;">
+                    {{votesToPass}} {{ 'DGP.PAGES.BUDGET.VOTEPASSING' | translate }}
+                </span>
+            </div>
+
+            <div class="flex-row-center" *ngIf="isGovernor">
+                <button class="btn btn-sm btn-success" (click)="vote(3)" [disabled]="proposal.myVote===3">
+                    {{ 'DGP.PAGES.BUDGET.VOTEYES' | translate }}
+                </button>
+                <button class="btn btn-sm btn-warning" (click)="vote(1)" [disabled]="proposal.myVote===1">
+                    {{ 'DGP.PAGES.BUDGET.VOTEABSTAIN' | translate }}
+                </button>
+                <button class="btn btn-sm btn-danger" (click)="vote(2)" [disabled]="proposal.myVote===2">
+                    {{ 'DGP.PAGES.BUDGET.VOTENO' | translate }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

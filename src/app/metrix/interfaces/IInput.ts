@@ -10,7 +10,6 @@ export default class IInput {
     txid: string;
     vout: number;
     blockTime: Date;
-    matureTime: Date;
     locked: boolean;
     selected: boolean;
 }

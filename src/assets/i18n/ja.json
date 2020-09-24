@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "ハッシュプルーフ",
             "TABLE_SIGNATURE": "署名",
             "TABLE_DIFFICULTY": "困難",
-            "TABLE_ENTROPYBIT": "エントロピービット",
             "TABLE_BLOCKHASH": "ブロックハッシュ",
             "TABLE_CONFIRMATIONS": "確認",
             "TABLE_INPUTOUTPUT": "入力と出力",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Torの隠しサービスを介してピアに到達するために別のSOCKS 5プロキシを使用する",
                 "ONLYNET": "ネットワーク内のノードにのみ接続する",
                 "BLOCKINCOMING": "着信接続を許可しない",
-                "RESTARTREQUIRED": "これらの設定に対する変更を有効にするには、クライアントの再起動が必要です。"
+                "RESTARTREQUIRED": "これらの設定に対する変更を有効にするには、クライアントの再起動が必要です。",
+                "CHAINTYPE": "通信網"
             },
             "WINDOW": {
                 "HIDETRAY": "トレイアイコンを隠す",
@@ -251,7 +251,6 @@
                 "LOCKED": "ウォレットロック",
                 "UNLOCKED": "ウォレットはロックされていません",
                 "UNLOCKEDSTAKING": "ステーキング専用のウォレットロックが解除されています",
-                "UNLOCKEDANON": "ウォレットは匿名化のみのためにロック解除されています",
                 "STAKING": "ウォレットは現在懸架しています",
                 "NOTSTAKING": "ウォレットは現在、ステイキングしていません",
                 "MASTERNODEON": "Masternodeは現在実行中です",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "ウォレットの暗号化",
             "ENCRYPTEDCONTENT": "ウォレット・ファイルの以前のバックアップは、新しく生成され、暗号化されたウォレット・ファイルに置き換えてください。セキュリティ上の理由から、暗号化されていないウォレット・ファイルの以前のバックアップは、新しい暗号化ウォレットの使用を開始するとすぐに無用になります。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Coreが突然停止しました",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coreに問題があり、終了させました。 debug.logファイルで問題を確認することをお勧めします。",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Metrixコアに問題があり、終了しました。 debug.logファイルで問題を確認することをお勧めします。",
             "CLIENTINVALIDCONFIGTITLE": "無効なmetrix.conf設定",
             "CLIENTINVALIDCONFIGINFO": "あなたのmetrix.confは無効なマスターノード設定を持っています。これはMetrix Coreを直ちに終了させます。このファイルを確認してください。",
             "ADDREMOTEMNTITLE": "リモートマスターノードを追加",
@@ -293,10 +292,14 @@
             "ADDREMOTEMNTXHASH": "マスターノードTrxハッシュ",
             "ADDREMOTEMNTXINDEX": "マスターノードTrxインデックス",
             "BOOTSTRAPFAILEDTITLE": "Metrix Coreブートストラップが失敗しました",
-            "BOOTSTRAPFAILEDINFO": "Metrix Coreのブートストラップに問題がありました。 Altitudeログファイルで問題を確認することをお勧めします。",
+            "BOOTSTRAPFAILEDINFO": "Metrixコアのブートストラップ中に問題が発生しました。 Altitudeログファイルで問題を確認することをお勧めします。",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "回復ツール",
             "STARTUPFAILEDTITLE": "Metrix Coreの起動に失敗しました",
-            "STARTUPFAILEDINFO": "開始Metrixコアがありました。 Altitudeログファイルで問題を確認することをお勧めします。"
+            "STARTUPFAILEDINFO": "最初のMetrixコアがありました。 Altitudeログファイルで問題を確認することをお勧めします。",
+            "CLIENTUNKNOWNERRORTITLE": "Metrixコア通信エラー",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Coreとの通信に問題が発生しました。 debug.logファイルで問題を確認することをお勧めします。",
+            "UNENROLLGOVERNORTITLE": "ガバナー登録解除の確認",
+            "UNENROLLGOVERNORCONTENT": "ガバナーの登録を解除してもよろしいですか？チェーンガバナンスに投票することはできなくなります。"
         },
         "ADDRESSBOOK": {
             "TITLE": "住所録",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "警告！ Metrixエクスプローラーによると、メインチェーン上にはいません。コインの損失を防ぐために、ブロックチェーンを再同期または再ブートストラップすることを強くお勧めします。"
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "現在のネットワーク"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "トランザクションエラーもう一度やり直してください。",
         "MINIMUMCONFIRMATIONS": "すべての入力は、支出の前に少なくとも1回の確認を必要とします。",
         "TRANSACTIONSCOPIEDCLIPBOARD": "トランザクションをクリップボードにコピー",
-        "TRANSACTIONOUTPUTTOOLARGE": "金額に対する支払いの1つが大きすぎて安全に送信できません。最大値は90,071,992.54740992です。",
-        "TRANSACTIONCHANGETOOLARGE": "あなたの変更は安全に送信するには大きすぎます。最大値は90,071,992.54740992です。",
         "STOPPINGMASTERNODE": "マスターノードを停止しています...",
         "FAILEDTOWRITECONFIG": "metrix.confファイルへの書き込み中に問題が発生しました。ファイルが存在し、Altitudeに書き込み権限があることを確認してください。",
         "NOPUBLICUP": "パブリックIPアドレスが見つかりません。インターネット接続を確認して、Altitudeを再起動してください。",
@@ -446,30 +450,76 @@
         "NOV": "NOV",
         "DEC": "12月"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "あなたが送る",
-                "YOUGET": "あなたが得る",
-                "MRXADDRESS": "メトリックス住所",
-                "SWAP": "スワップ",
-                "SWAPADDRESSES": "スワップアドレス",
-                "BTCADDRESS": "BTCアドレス",
-                "INFOLINE1": "BTCデポジットアドレスを取得すると、そのアドレスに送信されたBTCは自動的にMRX用に指定されたMRXアドレスに交換されます。",
-                "INFOLINE2-1": "トランザクションは通常、Bitcoinブロック時間に応じて1時間以内に決済されます。我々はフィアットを受け入れることができます",
-                "INFOLINE2-2": "参加国",
-                "INFOLINE2-3": "これは最初にBTCに変換され、次にMRXに変換されます。",
-                "INFOLINE3": "BTCデポジットが決済されると、MRXが指定された住所に届きます。",
-                "INFOLINE4": "詳細はこちら",
-                "FIATSWAPSELECTED": "この取引を完了するためにBuy.Metrixcoin.comにリダイレクトされます"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "あなたは知事ではありません",
+                "NOTGOVERNORDETAIL": "ガバナーは、毎月の予算とブロックチェーンの変更に投票する責任があります。ガバナンス契約で正しい担保をロックすることにより、ガバナーになることができます。",
+                "COLLATERAL": "必要な担保",
+                "ENROLL": "入学",
+                "CONFIRMENROLL": "ガバナーとして登録しようとしています。これにより、必要な担保を伴うトランザクションがガバナンス契約に送信されます。いつでも登録解除できます。",
+                "ISGOVERNORTITLE": "あなたは現役の知事です！",
+                "ISGOVERNORDETAIL1": "ガバナーは、毎月の予算とブロックチェーンの変更に投票する責任があります。",
+                "ISGOVERNORDETAIL2": "知事にとどまるには、30日ごとに少なくとも1票に参加する必要があります。",
+                "ISGOVERNORDETAIL3": "投票するものがない場合は、アクティブなpingを送信して登録を手動で続行できます。",
+                "UNENROLL": "登録解除",
+                "PING": "アクティブなpingを送信",
+                "LASTPINGTITLE": "最後のping",
+                "LASTPINGSUFFIX": "ブロック前"
+            },
+            "BUDGET": {
+                "TITLE": "予算案",
+                "ADDPROPOSAL": "プロポーザルを作成",
+                "REQUESTEDPERMONTH": "月額",
+                "REQUESTEDREMAINING": "残り",
+                "VOTEYES": "投票する",
+                "VOTEABSTAIN": "投票しない",
+                "VOTENO": "投票しない",
+                "VOTESTOPASS": "合格票",
+                "VOTEPASSING": "賛成票",
+                "MINIMUMGOVERNORS": "チェーンに最小数のガバナーが存在するまで、バゲットを渡すことはできません。",
+                "CURRENTLY": "現在",
+                "REQUIRED": "必須"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "プロポーザルを作成する",
+                "DESCRIPTION": "以下では、予算案を作成し、次の予算決済ブロックの前に投票するためにネットワークに送信できます。",
+                "BUDGETFEE": "現在の予算手数料は",
+                "BUDGETBLOCK": "次の決済ブロックは",
+                "PROPOSALTITLE": "プロポーザル名",
+                "PROPOSALDESC": "提案の説明",
+                "PROPOSALURL": "提案URL",
+                "PROPOSALAMOUNT": "リクエストされた金額",
+                "PROPOSALDURATION": "リクエストされた支払い",
+                "PROPOSALADDRESS": "お支払い住所",
+                "PROPOSALCREATE": "プロポーザルを作成"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "ガバナンス",
+                "BUDGET": "予算"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "スワップアドレスを生成しています...",
-            "ALREADYHAVEADDRESS": "このMetrixアドレスに関連付けられているBTCアドレスはすでにあります",
-            "SWAPUSDMIN": "USDの最小スワップ金額は$ 50です",
-            "SWAPUSDMAX": "USDの最大スワップ金額は$ 3000です",
-            "NOADDRESS": "Metrixの住所を入力していません"
+            "ALREADYHAVEADDRESS": "このMetrixアドレスに関連付けられたBTCアドレスがすでにあります",
+            "SWAPUSDMIN": "最低米ドル交換額は$ 50です。",
+            "SWAPUSDMAX": "米ドルの最大スワップ金額は$ 3000です。",
+            "INCOMPLETEFORM": "すべての必須フィールドに正しく入力していません",
+            "INVALIDPROPOSALDURATION": "プロポーザルの期間は1〜12か月である必要があります",
+            "CREATINGPROPOSAL": "ネットワークに提案を送信しています...",
+            "CREATEDPROPOSAL": "提案が正常に作成されました",
+            "ENROLLINGGOVERNOR": "ガバナーとして登録しています...",
+            "ENROLLEDGOVERNOR": "取引が確認されると、登録が完了します",
+            "VOTINGONPROPOSAL": "提案投票を送信しています",
+            "VOTEDONPROPOSAL": "取引が確認されると、投票がカウントされます。",
+            "NOADDRESS": "Metrixアドレスを入力しませんでした",
+            "PINGINGGOVERNOR": "pingを送信しています...",
+            "PINGEDGOVERNOR": "pingが正常に送信されました。取引が確認されるとガバナーが更新されます",
+            "UNENROLLINGGOVERNOR": "ガバナーの登録を解除しています...",
+            "UNENROLLEDGOVERNOR": "トランザクションが送信されました。取引が確認されると、ガバナーの登録が解除されます",
+            "GOVERNORNOTMATURE": "あなたの知事はまだこの行動を実行するのに十分成熟していない"
         }
     }
 }

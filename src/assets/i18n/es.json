@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Prueba de hash",
             "TABLE_SIGNATURE": "Firma",
             "TABLE_DIFFICULTY": "Dificultad",
-            "TABLE_ENTROPYBIT": "Bit de Entropía",
             "TABLE_BLOCKHASH": "Block Hash",
             "TABLE_CONFIRMATIONS": "Confirmaciones",
             "TABLE_INPUTOUTPUT": "Entradas y salidas",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Use el proxy SOCKS5 separado para llegar a sus compañeros a través de los servicios ocultos de Tor",
                 "ONLYNET": "Solo conectarse a nodos en red.",
                 "BLOCKINCOMING": "No permitir conexiones entrantes",
-                "RESTARTREQUIRED": "Se requiere un reinicio del Cliente para activar cualquier cambio en estas configuraciones."
+                "RESTARTREQUIRED": "Se requiere un reinicio del Cliente para activar cualquier cambio en estas configuraciones.",
+                "CHAINTYPE": "Red"
             },
             "WINDOW": {
                 "HIDETRAY": "Ocultar icono de bandeja",
@@ -251,7 +251,6 @@
                 "LOCKED": "Billetera bloqueada",
                 "UNLOCKED": "Billetera desbloqueada",
                 "UNLOCKEDSTAKING": "Billetera desbloqueada para apostar solo",
-                "UNLOCKEDANON": "Billetera desbloqueada solo por anonimización",
                 "STAKING": "La billetera está apostando actualmente.",
                 "NOTSTAKING": "La billetera no está apostando actualmente.",
                 "MASTERNODEON": "Masternode se está ejecutando actualmente",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Billetera Encriptada",
             "ENCRYPTEDCONTENT": "Cualquier copia de seguridad anterior que haya hecho de su archivo de billetera debe reemplazarse con el archivo de billetera encriptado y recién generado. Por razones de seguridad, las copias de seguridad anteriores del archivo de billetera sin cifrar serán inútiles tan pronto como empieces a usar la nueva billetera encriptada.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core se detuvo inesperadamente",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Hubo un problema con Metrix Core que ha provocado su finalización. Se recomienda revisar su archivo debug.log para problemas.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Hubo un problema con Metrix Core que hizo que terminara. Se recomienda verificar su archivo debug.log para ver si hay problemas.",
             "CLIENTINVALIDCONFIGTITLE": "Configuración de metrix.conf no válida",
             "CLIENTINVALIDCONFIGINFO": "Su metrix.conf tiene una configuración inválida de masternode que hará que Metrix Core se cierre de inmediato. Por favor revise este archivo.",
             "ADDREMOTEMNTITLE": "Añadir Remote Masternode",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Se produjo un problema al iniciar Metrix Core. Se recomienda verificar el archivo de registro de Altitude para ver si hay problemas.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Herramientas de recuperación",
             "STARTUPFAILEDTITLE": "Error de inicio de Metrix Core",
-            "STARTUPFAILEDINFO": "Hubo un Metrix Core inicial. Se recomienda verificar el archivo de registro de Altitude para ver si hay problemas."
+            "STARTUPFAILEDINFO": "Hubo un Metrix Core inicial. Se recomienda verificar el archivo de registro de Altitude para ver si hay problemas.",
+            "CLIENTUNKNOWNERRORTITLE": "Error de comunicación de Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Hubo un problema al comunicarse con Metrix Core. Se recomienda verificar su archivo debug.log para ver si hay problemas.",
+            "UNENROLLGOVERNORTITLE": "Confirmar la cancelación de la inscripción del gobernador",
+            "UNENROLLGOVERNORCONTENT": "¿Está seguro de que desea cancelar la inscripción de su gobernador? Ya no podrá votar sobre la gobernanza en cadena."
         },
         "ADDRESSBOOK": {
             "TITLE": "Directorio",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "¡Advertencia! No estás en la cadena principal según el explorador Metrix. Se recomienda volver a sincronizar o reiniciar su blockchain para evitar la pérdida de monedas."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Red actual"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Error de transacción. Inténtalo de nuevo.",
         "MINIMUMCONFIRMATIONS": "Todas las entradas requieren al menos 1 confirmación antes de gastar.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transacciones copiadas al portapapeles",
-        "TRANSACTIONOUTPUTTOOLARGE": "Una de sus cantidades a pagar es demasiado grande para enviarla de manera segura. El máximo es 90,071,992.54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Su cambio es demasiado grande para enviarlo con seguridad. El máximo es 90,071,992.54740992.",
         "STOPPINGMASTERNODE": "Deteniendo masternode...",
         "FAILEDTOWRITECONFIG": "Hubo un problema al escribir en su archivo metrix.conf. Compruebe que el archivo existe y que Altitude tiene permisos de escritura.",
         "NOPUBLICUP": "No se encontró una dirección IP pública. Comprueba tu conexión a internet y reinicia Altitude.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DIC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Usted envía",
-                "YOUGET": "Usted obtiene",
-                "MRXADDRESS": "Dirección de Metrix",
-                "SWAP": "Intercambiar",
-                "SWAPADDRESSES": "Intercambiar direcciones",
-                "BTCADDRESS": "Dirección BTC",
-                "INFOLINE1": "Una vez que tenga una dirección de depósito de BTC, cualquier BTC enviado a esa dirección se cambiará automáticamente por MRX a su dirección de MRX designada.",
-                "INFOLINE2-1": "Las transacciones generalmente se borran dentro de una hora, dependiendo de los tiempos de bloqueo de Bitcoin. Podemos aceptar fiat por",
-                "INFOLINE2-2": "países participantes",
-                "INFOLINE2-3": "Esto se convertirá a BTC primero y luego MRX.",
-                "INFOLINE3": "Una vez que se haya liquidado su depósito de BTC, recibirá su MRX en su dirección designada.",
-                "INFOLINE4": "Para más información visite",
-                "FIATSWAPSELECTED": "Será redirigido a Buy.Metrixcoin.com para completar esta transacción"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "No eres un gobernador",
+                "NOTGOVERNORDETAIL": "Los gobernadores son responsables de votar los presupuestos mensuales y los cambios de blockchain. Puede convertirse en gobernador bloqueando la garantía correcta en el contrato de gobierno.",
+                "COLLATERAL": "Colateral requerido",
+                "ENROLL": "Inscribirse",
+                "CONFIRMENROLL": "Está a punto de inscribirse como gobernador. Esto enviará una transacción con la garantía requerida al contrato de gobierno. Puede darse de baja en cualquier momento.",
+                "ISGOVERNORTITLE": "¡Eres un gobernador activo!",
+                "ISGOVERNORDETAIL1": "Los gobernadores son responsables de votar los presupuestos mensuales y los cambios de blockchain.",
+                "ISGOVERNORDETAIL2": "Para seguir siendo gobernador, deberá participar en al menos 1 voto cada 30 días.",
+                "ISGOVERNORDETAIL3": "Si no hay nada para votar, puede continuar manualmente su inscripción enviando un ping activo.",
+                "UNENROLL": "Anular inscripción",
+                "PING": "Enviar ping activo",
+                "LASTPINGTITLE": "Último ping",
+                "LASTPINGSUFFIX": "hace bloques"
+            },
+            "BUDGET": {
+                "TITLE": "Propuestas de presupuesto",
+                "ADDPROPOSAL": "Crear propuesta",
+                "REQUESTEDPERMONTH": "por mes",
+                "REQUESTEDREMAINING": "restante",
+                "VOTEYES": "Votar si",
+                "VOTEABSTAIN": "Voto Abstenerse",
+                "VOTENO": "Vote no",
+                "VOTESTOPASS": "votos para aprobar",
+                "VOTEPASSING": "votos aprobados",
+                "MINIMUMGOVERNORS": "Los bugets no se pueden pasar hasta que exista el número mínimo de gobernadores en la cadena.",
+                "CURRENTLY": "Actualmente",
+                "REQUIRED": "Necesario"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Crea una propuesta",
+                "DESCRIPTION": "A continuación, puede crear una propuesta de presupuesto y enviarla a la red para votar antes del próximo bloque de liquidación de presupuesto.",
+                "BUDGETFEE": "La tarifa actual del presupuesto es",
+                "BUDGETBLOCK": "El siguiente bloque de liquidación es",
+                "PROPOSALTITLE": "Nombre de propuesta",
+                "PROPOSALDESC": "Descripción de la propuesta",
+                "PROPOSALURL": "URL de propuesta",
+                "PROPOSALAMOUNT": "Monto requerido",
+                "PROPOSALDURATION": "Pagos solicitados",
+                "PROPOSALADDRESS": "Dirección de Pago",
+                "PROPOSALCREATE": "Crear propuesta"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Gobernancia",
+                "BUDGET": "Presupuesto"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Ya tiene una dirección BTC asociada a esta dirección Metrix",
             "SWAPUSDMIN": "El monto mínimo de intercambio de USD es $ 50",
             "SWAPUSDMAX": "El monto máximo de intercambio de USD es $ 3000",
-            "NOADDRESS": "No ingresaste una dirección de Metrix"
+            "INCOMPLETEFORM": "No ha completado todos los campos obligatorios correctamente.",
+            "INVALIDPROPOSALDURATION": "La duración de la propuesta debe ser entre 1 y 12 meses.",
+            "CREATINGPROPOSAL": "Enviando propuesta a la red...",
+            "CREATEDPROPOSAL": "Su propuesta ha sido creada exitosamente",
+            "ENROLLINGGOVERNOR": "Inscribirse como gobernador...",
+            "ENROLLEDGOVERNOR": "Su inscripción se completará una vez que se confirme su transacción",
+            "VOTINGONPROPOSAL": "Enviar propuesta de voto",
+            "VOTEDONPROPOSAL": "Su voto se contará una vez que se confirme la transacción.",
+            "NOADDRESS": "No ingresaste una dirección de Metrix",
+            "PINGINGGOVERNOR": "Enviando ping...",
+            "PINGEDGOVERNOR": "Ping enviado con éxito. Su gobernador se actualizará una vez que se confirme la transacción",
+            "UNENROLLINGGOVERNOR": "Cancelación de la inscripción del gobernador...",
+            "UNENROLLEDGOVERNOR": "Transacción enviada. Su gobernador se cancelará una vez que se confirme la transacción",
+            "GOVERNORNOTMATURE": "Su gobernador aún no tiene la madurez suficiente para realizar esta acción"
         }
     }
 }

@@ -196,7 +196,6 @@
             "TABLE_PROOFHASH": "Hash Proof",
             "TABLE_SIGNATURE": "Parašas",
             "TABLE_DIFFICULTY": "Sunkumas",
-            "TABLE_ENTROPYBIT": "Entropinė Bit",
             "TABLE_BLOCKHASH": "\"Block Hash\"",
             "TABLE_CONFIRMATIONS": "Patvirtinimai",
             "TABLE_INPUTOUTPUT": "Įėjimai ir išėjimai",
@@ -213,7 +212,8 @@
                 "PROXYTOR": "Naudokite atskirą „SOCKS5“ tarpinį serverį, kad pasiektumėte bendraamžius per „Tor“ paslėptąsias paslaugas",
                 "ONLYNET": "Prijunkite tik prie tinklo mazgų",
                 "BLOCKINCOMING": "Neleiskite gaunamų ryšių",
-                "RESTARTREQUIRED": "Norint įjungti bet kokius šių nustatymų pakeitimus, reikia iš naujo paleisti klientą."
+                "RESTARTREQUIRED": "Norint įjungti bet kokius šių nustatymų pakeitimus, reikia iš naujo paleisti klientą.",
+                "CHAINTYPE": "Tinklas"
             },
             "WINDOW": {
                 "HIDETRAY": "Slėpti piktogramą",
@@ -251,7 +251,6 @@
                 "LOCKED": "Piniginė užrakinta",
                 "UNLOCKED": "Piniginė atrakinta",
                 "UNLOCKEDSTAKING": "Piniginė atrakinta tik staking",
-                "UNLOCKEDANON": "Piniginė atrakinta tik anonimizavimui",
                 "STAKING": "\"Piniginė\" šiuo metu yra įkelta",
                 "NOTSTAKING": "Piniginė šiuo metu neveikia",
                 "MASTERNODEON": "Masternode šiuo metu veikia",
@@ -283,7 +282,7 @@
             "ENCRYPTEDTITLE": "Piniginė užšifruojama",
             "ENCRYPTEDCONTENT": "Bet kokios ankstesnės atsarginės kopijos, kurias padarėte iš savo piniginės failo, turėtų būti pakeistos naujai sukurtu užkoduotu piniginės failu. Saugumo sumetimais ankstesnės neužšifruoto piniginės failo atsarginės kopijos bus netinkamos, kai tik pradėsite naudoti naują užkoduotą piniginę.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core netikėtai sustojo",
-            "CLIENTCLOSEDUNEXPECTEDINFO": "Susidūrė su \"Metrix Core\" problema, dėl kurios ji baigėsi. Rekomenduojame patikrinti failą debug.log problemoms.",
+            "CLIENTCLOSEDUNEXPECTEDINFO": "Iškilo „Metrix Core“ problema, dėl kurios ji buvo nutraukta. Rekomenduojama patikrinti, ar nėra debug.log failo.",
             "CLIENTINVALIDCONFIGTITLE": "Netinkama „metrix.conf“ konfigūracija",
             "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ turi netinkamą masternodą, dėl kurio „Metrix Core“ išeis iš karto. Patikrinkite šį failą.",
             "ADDREMOTEMNTITLE": "Pridėti nuotolinį masternodą",
@@ -296,7 +295,11 @@
             "BOOTSTRAPFAILEDINFO": "Iškilo problema paleidžiant „Metrix Core“. Rekomenduojama patikrinti, ar nėra aukščio žurnalo failo.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkūrimo įrankiai",
             "STARTUPFAILEDTITLE": "Nepavyko paleisti „Metrix Core“",
-            "STARTUPFAILEDINFO": "Buvo pradžios Metrix Core. Rekomenduojama patikrinti, ar nėra aukščio žurnalo failo."
+            "STARTUPFAILEDINFO": "Buvo pradžios Metrix Core. Rekomenduojama patikrinti, ar nėra aukščio žurnalo failo.",
+            "CLIENTUNKNOWNERRORTITLE": "„Metrix“ pagrindinio ryšio klaida",
+            "CLIENTUNKNOWNERRORINFO": "Iškilo problemų bendraujant su „Metrix Core“. Rekomenduojama patikrinti, ar nėra debug.log failo.",
+            "UNENROLLGOVERNORTITLE": "Patvirtinkite gubernatoriaus išregistravimą",
+            "UNENROLLGOVERNORCONTENT": "Ar tikrai norite išregistruoti savo valdytoją? Nebegalėsite balsuoti dėl grandinės valdymo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
@@ -315,6 +318,9 @@
         },
         "MAINCHAINCHECK": {
             "ALERT": "Įspėjimas! Pasak „Metrix“ tyrinėtojo, jūs nesate pagrindinėje grandinėje. Norint išvengti monetų praradimo, labai rekomenduojama iš naujo sinchronizuoti arba vėl įkrauti savo „grandinę“."
+        },
+        "NETWORKTYPE": {
+            "CURRENT": "Dabartinis tinklas"
         }
     },
     "MENU": {
@@ -406,8 +412,6 @@
         "TRANSACTIONMISMATCH": "Sandorio klaida. Prašau, pabandykite dar kartą.",
         "MINIMUMCONFIRMATIONS": "Visoms įvestims reikalingas bent 1 patvirtinimas prieš išlaidas.",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Operacijos, nukopijuotos į iškarpinę",
-        "TRANSACTIONOUTPUTTOOLARGE": "Vienas iš jūsų mokamų sumų yra per didelis, kad galėtumėte saugiai išsiųsti. Didžiausia yra 90,071,992,54740992.",
-        "TRANSACTIONCHANGETOOLARGE": "Jūsų pakeitimas yra per didelis, kad galėtumėte saugiai siųsti. Didžiausia yra 90,071,992,54740992.",
         "STOPPINGMASTERNODE": "Stotelės sustabdymas...",
         "FAILEDTOWRITECONFIG": "Rašant į savo metrix.conf failą kilo problema. Patikrinkite, ar failas egzistuoja ir kad Altitude turi rašymo teises.",
         "NOPUBLICUP": "Nerasta viešojo IP adreso. Patikrinkite interneto ryšį ir iš naujo paleiskite aukštį.",
@@ -446,22 +450,55 @@
         "NOV": "NOV",
         "DEC": "DEC"
     },
-    "BUY": {
+    "DGP": {
         "PAGES": {
-            "HOME": {
-                "YOUSEND": "Tu išsiuntei",
-                "YOUGET": "Jūs gaunate",
-                "MRXADDRESS": "Metrikso adresas",
-                "SWAP": "Keisti",
-                "SWAPADDRESSES": "Keisti adresus",
-                "BTCADDRESS": "BTC adresas",
-                "INFOLINE1": "Kai turėsite BTC įmokos adresą, bet koks tuo adresu išsiųstas BTC automatiškai bus pakeistas MRX į jūsų paskirtą MRX adresą.",
-                "INFOLINE2-1": "Operacijos paprastai išvalomos per valandą, atsižvelgiant į „Bitcoin“ blokavimo laiką. Mes galime sutikti su „fiat“ dėl",
-                "INFOLINE2-2": "dalyvaujančios šalys",
-                "INFOLINE2-3": "Pirmiausia tai bus paversta BTC, tada MRX.",
-                "INFOLINE3": "Kai jūsų BTC indėlis bus išvalytas, gausite MRX nurodytu adresu.",
-                "INFOLINE4": "Norėdami gauti daugiau informacijos, apsilankykite",
-                "FIATSWAPSELECTED": "Būsite nukreipti į Buy.Metrixcoin.com ir atliksite šią operaciją"
+            "GOVERNANCE": {
+                "NOTGOVERNORTITLE": "Jūs nesate gubernatorius",
+                "NOTGOVERNORDETAIL": "Valdytojai yra atsakingi už balsavimą dėl mėnesio biudžeto ir „blockchain“ pakeitimus. Valdytoju galite tapti užrakindami teisingą įkaitą valdymo sutartyje.",
+                "COLLATERAL": "Reikalingas užstatas",
+                "ENROLL": "Užsiregistruok",
+                "CONFIRMENROLL": "Ketinate įstoti į gubernatorių. Tai išsiųs sandorį su reikiamu įkeitimu į valdymo sutartį. Galite bet kada atsisakyti registracijos.",
+                "ISGOVERNORTITLE": "Jūs esate aktyvus valdytojas!",
+                "ISGOVERNORDETAIL1": "Valdytojai yra atsakingi už balsavimą dėl mėnesio biudžeto ir „blockchain“ pakeitimus.",
+                "ISGOVERNORDETAIL2": "Norėdami likti gubernatoriumi, turėsite dalyvauti bent 1 balsavime kas 30 dienų.",
+                "ISGOVERNORDETAIL3": "Jei nėra už ką balsuoti, galite rankiniu būdu tęsti registraciją siuntę aktyvųjį ping.",
+                "UNENROLL": "Išregistruoti",
+                "PING": "Siųsti aktyvųjį „Ping“",
+                "LASTPINGTITLE": "Paskutinis pingas",
+                "LASTPINGSUFFIX": "prieš blokus"
+            },
+            "BUDGET": {
+                "TITLE": "Biudžeto pasiūlymai",
+                "ADDPROPOSAL": "Sukurti pasiūlymą",
+                "REQUESTEDPERMONTH": "per mėnesį",
+                "REQUESTEDREMAINING": "likę",
+                "VOTEYES": "Balsuokite taip",
+                "VOTEABSTAIN": "Balsavimas susilaikė",
+                "VOTENO": "Balsavimas Nr",
+                "VOTESTOPASS": "balsų perduoti",
+                "VOTEPASSING": "artimųjų balsai",
+                "MINIMUMGOVERNORS": "Bugetų negalima perduoti tol, kol grandinėje nėra minimalaus valdytojų skaičiaus.",
+                "CURRENTLY": "Šiuo metu",
+                "REQUIRED": "Būtina"
+            },
+            "CREATEPROPOSAL": {
+                "TITLE": "Sukurkite pasiūlymą",
+                "DESCRIPTION": "Žemiau galite sukurti biudžeto pasiūlymą ir pateikti jį tinklui balsuoti prieš kitą biudžeto sudarymo bloką.",
+                "BUDGETFEE": "Dabartinis biudžeto mokestis yra",
+                "BUDGETBLOCK": "Kitas atsiskaitymų blokas yra",
+                "PROPOSALTITLE": "Pasiūlymo pavadinimas",
+                "PROPOSALDESC": "Pasiūlymo aprašymas",
+                "PROPOSALURL": "Pasiūlymo URL",
+                "PROPOSALAMOUNT": "Prašoma suma",
+                "PROPOSALDURATION": "Prašomi mokėjimai",
+                "PROPOSALADDRESS": "Mokėjimo adresas",
+                "PROPOSALCREATE": "Sukurti pasiūlymą"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "GOVERNANCE": "Valdymas",
+                "BUDGET": "Biudžetas"
             }
         },
         "NOTIFICATIONS": {
@@ -469,7 +506,20 @@
             "ALREADYHAVEADDRESS": "Jūs jau turite su šiuo „Metrix“ adresu susietą BTC adresą",
             "SWAPUSDMIN": "Minimali apsikeitimo USD suma yra 50 USD",
             "SWAPUSDMAX": "Maksimali USD apsikeitimo suma yra 3000 USD",
-            "NOADDRESS": "Neįvedėte „Metrix“ adreso"
+            "INCOMPLETEFORM": "Neteisingai užpildėte visus būtinus laukus",
+            "INVALIDPROPOSALDURATION": "Pasiūlymo trukmė turėtų būti nuo 1 iki 12 mėnesių",
+            "CREATINGPROPOSAL": "Pateikiamas pasiūlymas tinkle...",
+            "CREATEDPROPOSAL": "Jūsų pasiūlymas buvo sėkmingai sukurtas",
+            "ENROLLINGGOVERNOR": "Registruokis kaip valdytojas...",
+            "ENROLLEDGOVERNOR": "Jūsų registracija bus baigta, kai jūsų operacija bus patvirtinta",
+            "VOTINGONPROPOSAL": "Siunčiamas pasiūlymo balsas",
+            "VOTEDONPROPOSAL": "Jūsų balsas bus skaičiuojamas patvirtinus operaciją.",
+            "NOADDRESS": "Neįvedėte „Metrix“ adreso",
+            "PINGINGGOVERNOR": "Siunčiamas ping...",
+            "PINGEDGOVERNOR": "Pingas sėkmingai išsiųstas. Jūsų valdytojas bus atnaujintas, kai bus patvirtinta operacija",
+            "UNENROLLINGGOVERNOR": "Išregistruojamas gubernatorius...",
+            "UNENROLLEDGOVERNOR": "Operacija išsiųsta. Patvirtinus operaciją, jūsų gubernatorius bus išregistruotas",
+            "GOVERNORNOTMATURE": "Jūsų gubernatorius dar nėra pakankamai subrendęs atlikti šį veiksmą"
         }
     }
 }
