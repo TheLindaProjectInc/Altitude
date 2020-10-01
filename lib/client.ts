@@ -338,7 +338,7 @@ export default class Client {
         if (this.chain === ChainType.TESTNET) startupCommands.push('-testnet');
         if (this.chain === ChainType.REGTEST) startupCommands.push('-regtest');
         startupCommands.push('-printtoconsole=0')
-        startupCommands.filter(e => e[1] !== '-') // don't send electron specific flags to daemon
+        startupCommands = startupCommands.filter(e => e[1] !== '-') // don't send electron specific flags to daemon
         log.info("Client", "Running with commands", startupCommands);
 
         // start client
