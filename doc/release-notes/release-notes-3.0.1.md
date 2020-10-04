@@ -15,4 +15,4 @@ Shutdown Altitude if it is already running and then run the installer.
 ### Bug Fixes
 - Fixed 'Sending transaction' notification appearing twice.
 - Fixed formatting of coins on transactions page.
-- Updating transaction categorising.
+- Updated transaction categorising.
