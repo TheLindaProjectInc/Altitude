@@ -408,7 +408,6 @@ export class SendComponent implements OnInit, OnDestroy {
     try {
       let passphrase, stakingOnly;
       if (this.wallet.requireUnlock()) [passphrase, stakingOnly] = await this.prompt.getPassphrase();
-      this.notification.loading('NOTIFICATIONS.SENDINGTRANSACTION');
       this.createTransaction(inputs, outputs, fee, passphrase, change)
     } catch (ex) {
       // passphrase prompt closed
