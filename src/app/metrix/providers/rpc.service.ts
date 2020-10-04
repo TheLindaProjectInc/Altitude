@@ -400,7 +400,7 @@ export class RpcService {
         for (const tx of data.result) {
             const trx = new Transaction(tx)
             if (trx.blockIndex === 1) {
-                if (trx.category !== 'Payment') {
+                if (trx.category !== 'Payment' && trx.vout < 4) {
                     let stake: any = await this.callServer('gettransaction', [trx.txId])
                     const totalReward = stake.result.details.find(e => e.vout === 1).fee
                     const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))

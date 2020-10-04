@@ -13,6 +13,7 @@ export class Transaction {
     timestamp: Date;
     fee: number;
     vout: number;
+    isReward: boolean;
 
     constructor(transactionData?) {
         if (transactionData) {
@@ -32,6 +33,10 @@ export class Transaction {
             // convert dates
             if (transactionData.blocktime) this.blockTime = new Date(transactionData.blocktime * 1000);
             this.timestamp = new Date(transactionData.time * 1000);
+
+            // set type
+            if (this.category === "generate" || this.category === "immature")
+                this.isReward = true
 
             // santise category
             if (this.category === "send") this.category = "Payment"

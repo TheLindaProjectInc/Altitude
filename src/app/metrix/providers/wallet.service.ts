@@ -318,7 +318,7 @@ export class WalletService {
 
     private notifyUserNewTransaction(serverTrx: Transaction) {
         // only notify new coins received
-        if (serverTrx.category.includes('Stake') || serverTrx.category === 'Received') {
+        if (serverTrx.isReward || serverTrx.category === 'Received') {
             // check we have a block height so we don't notify already known transactions
             if (this.walletInfo.startupBlockTime) {
                 // check we recieved this after the last time we synced
