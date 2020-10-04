@@ -77,8 +77,9 @@ export class CurrencyService {
         return amount
     }
 
-    public displayLocal(amount, parseSatoshi = false) {
-        return this.convert(amount, parseSatoshi) + ' ' + this.currency;
+    public displayLocal(amount, format = true, parseSatoshi = false) {
+        const converted = this.convert(amount, parseSatoshi)
+        return format ? Helpers.prettyCoins(converted) : converted + ' ' + this.currency;
     }
 
 

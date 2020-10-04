@@ -135,7 +135,7 @@
                   type='checkbox' />
                 <label for="chkHeader{{i}}">({{header.inputs?header.inputs.length:0}})</label>
               </td>
-              <td>{{header.amount}}</td>
+              <td>{{header.amount | prettyCoins}}</td>
               <td>{{header.account}}</td>
               <td>{{header.address}}</td>
               <td></td>
@@ -159,7 +159,7 @@
                   <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
                     title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
                 </td>
-                <td>{{inp.amount}}</td>
+                <td>{{inp.amount | prettyCoins}}</td>
                 <td>{{inp.account}}</td>
                 <td>{{inp.address}}</td>
                 <td>{{inp.blockTime | date:'MMM d, h:mm a'}}</td>
@@ -186,7 +186,7 @@
               <fa-icon *ngIf="inp.confirmations<helpers.params.confirmations" icon='circle-notch' class="fa-lg"
                 title="{{ 'MISC.UNCONFIRMED' | translate}}"></fa-icon>
             </td>
-            <td>{{inp.amount}}</td>
+            <td>{{inp.amount | prettyCoins}}</td>
             <td>{{inp.account}}</td>
             <td>{{inp.address}}</td>
             <td>{{inp.blockTime | date:'MMM d, h:mm a'}}</td>
