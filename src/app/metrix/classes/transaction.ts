@@ -4,7 +4,6 @@ export class Transaction {
     account: string;
     address: string;
     category: string;
-    subCategory: string;
     amount: Big;
     confirmations: number;
     blockHash: string;
@@ -20,7 +19,6 @@ export class Transaction {
             this.account = transactionData.account;
             this.address = transactionData.address;
             this.category = transactionData.category;
-            this.subCategory = transactionData.subcategory;
             this.confirmations = transactionData.confirmations;
             this.blockHash = transactionData.blockhash;
             this.blockIndex = transactionData.blockindex;
@@ -35,14 +33,11 @@ export class Transaction {
             if (transactionData.blocktime) this.blockTime = new Date(transactionData.blocktime * 1000);
             this.timestamp = new Date(transactionData.time * 1000);
 
-            // santise subcategory
-            if (this.subCategory === "mined") this.subCategory = "Mined"
-            if (this.subCategory === "minted") this.subCategory = "Minted"
             // santise category
             if (this.category === "send") this.category = "Payment"
-            if (this.category === "generate") this.category = "Generated"
+            if (this.category === "generate") this.category = "Stake"
             if (this.category === "receive") this.category = "Received"
-            if (this.category === "immature") this.category = "Immature"
+            if (this.category === "immature") this.category = "Stake (Immature)"
             if (this.category === "orphan") this.category = "Orphan"
         }
     }

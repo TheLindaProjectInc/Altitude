@@ -397,9 +397,21 @@ export class RpcService {
         let data: any = await this.callServer('listtransactions', ['*', count, from, true])
 
         // get address
-        data.result.forEach(tx => {
-            outputs.push(new Transaction(tx))
-        })
+        for (const tx of data.result) {
+            const trx = new Transaction(tx)
+            if (trx.blockIndex === 1) {
+                if (trx.category !== 'Payment') {
+                    let stake: any = await this.callServer('gettransaction', [trx.txId])
+                    const totalReward = stake.result.details.find(e => e.vout === 1).fee
+                    const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))
+                    const myReward = Big(totalReward).add(dgpPayments)
+                    trx.amount = myReward
+                    outputs.push(trx)
+                }
+            } else {
+                outputs.push(trx)
+            }
+        }
 
         // group payments to self
         outputs.forEach((output, index) => {
