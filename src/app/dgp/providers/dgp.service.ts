@@ -121,7 +121,7 @@ export class DGPService {
                 let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [GovernanceContract.ADDRESS, callData]);
                 if (data.executionResult.output.replace(/0/g, '') !== '') {
                     if (!this.governor)
-                        this.governor = new Governor(addressList[i], data);
+                        this.governor = new Governor(govAddr, data);
                     else
                         this.governor.update(data)
                 }
