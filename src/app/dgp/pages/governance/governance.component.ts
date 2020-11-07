@@ -146,7 +146,7 @@ export class GovernanceComponent {
     this.notification.loading('DGP.NOTIFICATIONS.UNENROLLINGGOVERNOR');
 
     try {
-      await this.dgpService.enrollGovernor(passphrase);
+      await this.dgpService.unenrollGovernor(passphrase);
       this.notification.notify('success', 'DGP.NOTIFICATIONS.UNENROLLEDGOVERNOR');
     } catch (ex) {
       if (isDevMode()) console.log(ex);
