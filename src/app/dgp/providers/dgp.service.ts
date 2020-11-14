@@ -152,8 +152,7 @@ export class DGPService {
 
             let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
 
-            const args = [GovernanceContract.ADDRESS, this.encodeContractString(GovernanceContract.UNENROLL), 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address]
-            console.log(args)
+            const args = [GovernanceContract.ADDRESS, GovernanceContract.UNENROLL, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address];
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
