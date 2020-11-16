@@ -151,8 +151,10 @@ export class DGPService {
             await this.rpc.unlockWalletForCommand(passphrase);
 
             let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
-
-            const args = [GovernanceContract.ADDRESS, GovernanceContract.UNENROLL, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address];
+            let force: number = 0;
+            let callData: string = GovernanceContract.UNENROLL +
+                force.toString().padStart(64, '0');
+            const args = [GovernanceContract.ADDRESS, callData, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address];
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
