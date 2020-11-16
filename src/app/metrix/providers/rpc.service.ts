@@ -404,12 +404,22 @@ export class RpcService {
                     let stake: any = await this.callServer('gettransaction', [trx.txId])
                     const totalReward = stake.result.details.find(e => e.vout === 1).fee
                     const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))
-                    const myReward = Big(totalReward).add(dgpPayments)
-                    trx.amount = myReward
-                    outputs.push(trx)
+                    const myReward = Big(totalReward).add(dgpPayments);
+                    trx.amount = myReward;
+                    outputs.push(trx);
+                } else {
+                    if (trx.category === 'Stake (Immature)' || trx.category === 'Stake' && trx.vout > 3) {
+                        trx.category = 'Contract Fee Refund';
+                        outputs.push(trx);
+                    }
                 }
             } else {
-                outputs.push(trx)
+                if (trx.category === 'Payment' && Big(trx.amount).eq(0) && trx.vout < 2) {
+                    trx.category = 'Contract Call';
+                    outputs.push(trx);
+                } else {
+                    outputs.push(trx);
+                }
             }
         }
 
