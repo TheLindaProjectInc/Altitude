@@ -1,5 +1,5 @@
 export interface AddressBookItem {
-    address: string
+    address: string;
     label: string;
 }
 
