@@ -27,6 +27,10 @@ export class WalletInfo {
     public get totalBalance(): Big {
         return this.balance.add(this.immature_balance).add(this.unconfirmed_balance).add(this.stake);
     }
+
+    public get pendingBalance(): Big {
+        return this.immature_balance.add(this.unconfirmed_balance).add(this.stake);
+    }
 }
 
 export enum EncryptionStatus {

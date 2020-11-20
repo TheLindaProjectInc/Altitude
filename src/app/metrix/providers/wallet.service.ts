@@ -103,6 +103,15 @@ export class WalletService {
         return this.walletInfo.totalBalance;
     }
 
+    public get spendableBalance(): Big {
+        return this.walletInfo.balance;
+    }
+
+
+    public get pendingBalance(): Big {
+        return this.walletInfo.pendingBalance;
+    }
+
     public get accounts(): Array<Account> {
         return this._accounts.slice();
     }
