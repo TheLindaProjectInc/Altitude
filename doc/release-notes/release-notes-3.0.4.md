@@ -14,3 +14,4 @@ Shutdown Altitude if it is already running and then run the installer.
 - Improved the classification of stake transactions.
 - Improved the classification of DGP transactions.
 - Split the total balance display to show spendable and pending(immature and unconfirmed) transactions.
+- Add governor last ping in days.
