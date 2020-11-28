@@ -404,12 +404,22 @@ export class RpcService {
                     let stake: any = await this.callServer('gettransaction', [trx.txId])
                     const totalReward = stake.result.details.find(e => e.vout === 1).fee
                     const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))
-                    const myReward = Big(totalReward).add(dgpPayments)
-                    trx.amount = myReward
-                    outputs.push(trx)
+                    const myReward = Big(totalReward).add(dgpPayments);
+                    trx.amount = myReward;
+                    outputs.push(trx);
+                } else {
+                    if (trx.category === 'Stake (Immature)' || trx.category === 'Stake' && trx.vout > 3) {
+                        trx.category = 'Contract Fee Refund';
+                        outputs.push(trx);
+                    }
                 }
             } else {
-                outputs.push(trx)
+                if (trx.category === 'Payment' && Big(trx.amount).eq(0) && trx.vout < 2) {
+                    trx.category = 'Contract Call';
+                    outputs.push(trx);
+                } else {
+                    outputs.push(trx);
+                }
             }
         }
 
@@ -417,6 +427,19 @@ export class RpcService {
         outputs.forEach((output, index) => {
             for (let i = index + 1; i < outputs.length; i++) {
                 // check if payment to self
+                if (
+                    output.txId === outputs[i].txId &&
+                    output.address === outputs[i].address &&
+                    output.amount.abs().cmp(outputs[i].amount.abs()) == 0 &&
+                    ((output.category === 'Stake' && outputs[i].category === 'Stake') ||
+                    (output.category === 'Stake (Immature)' && outputs[i].category === 'Stake (Immature)'))
+                ) {
+                    output.amount = output.amount.abs()
+                    output.category = output.category;
+                    output.fee = output.fee || outputs[i].fee;
+                    outputs.splice(i, 1);
+                    break;
+                }
                 if (
                     output.txId === outputs[i].txId &&
                     output.address === outputs[i].address &&

@@ -103,6 +103,15 @@ export class WalletService {
         return this.walletInfo.totalBalance;
     }
 
+    public get spendableBalance(): Big {
+        return this.walletInfo.balance;
+    }
+
+
+    public get pendingBalance(): Big {
+        return this.walletInfo.pendingBalance;
+    }
+
     public get accounts(): Array<Account> {
         return this._accounts.slice();
     }
@@ -455,8 +464,12 @@ export class WalletService {
         return this.rpc.requestData(RPCMethods.CREATETRANSACTION, [inputs, outputs, fee, passphrase, changeAddress]);
     }
 
-    public updateAddressAccount(address: Address): Promise<any> {
-        return this.rpc.requestData(RPCMethods.UPDATELABEL, [address.address, address.newAccount]);
+    public updateAddressAccount(address: Address, label?: string): Promise<any> {
+        if (label) {
+            return this.rpc.requestData(RPCMethods.UPDATELABEL, [address, label]);
+        } else {
+            return this.rpc.requestData(RPCMethods.UPDATELABEL, [address.address, address.newAccount]);
+        }
     }
 
     public getNewAddress(account: string): Promise<any> {

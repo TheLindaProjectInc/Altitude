@@ -82,6 +82,10 @@ export class GovernanceComponent {
     return this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing
   }
 
+  public get lastPingDays(): number {
+    return (this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing) / 960;
+  }
+
   public async enroll() {
     let passphrase;
     try {

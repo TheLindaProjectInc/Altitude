@@ -12,6 +12,8 @@
         <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Received'"
             icon="sign-in-alt"></fa-icon>
         <fa-icon class="primary" *ngIf="trx.category=='Payment To Self'" icon="exchange-alt"></fa-icon>
+        <fa-icon class="success" *ngIf="trx.category=='Contract Fee Refund'" icon="sign-in-alt"></fa-icon>
+        <fa-icon class="success" *ngIf="trx.category=='Contract Call'" icon="file-contract"></fa-icon>
         <fa-icon class="success" *ngIf="trx.category=='Stake'" icon="piggy-bank"></fa-icon>
         <fa-icon class="danger" *ngIf="trx.category=='Orphan'" icon="exclamation-circle"></fa-icon>
         <fa-icon *ngIf="trx.category=='Stake (Immature)'" icon="spinner"></fa-icon>

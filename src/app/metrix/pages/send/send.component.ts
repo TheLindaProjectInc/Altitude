@@ -421,7 +421,7 @@ export class SendComponent implements OnInit, OnDestroy {
       const res = await this.wallet.sendTransaction(inputs, outputs, fee, passphrase, change);
       if (res.success) {
         this.notification.notify('success', 'NOTIFICATIONS.TRANSACTIONSENT');
-        // add and labeled addressed to address book
+        // add and label addresses in address book
         this.addRecipientsToAddressBook();
         // reset page
         this.reset();
@@ -452,16 +452,28 @@ export class SendComponent implements OnInit, OnDestroy {
       if (recp.label) {
         // check we don't already have it
         let alreadyHave = false;
+        let labelOnly = false;
         for (let i = 0; i < this.wallet.accounts.length; i++) {
           const acc = this.wallet.accounts[i];
           if (acc.address === recp.address && acc.name === recp.label) {
             alreadyHave = true;
             break;
+          } else {
+            if (acc.address === recp.address && acc.name !== recp.label) {
+              labelOnly = true;
+            }
           }
         }
-        if (!alreadyHave) {
+        if (!alreadyHave && !labelOnly) {
           try {
             await this.wallet.addressBookAdd(recp.address, recp.label)
+          } catch (ex) {
+            // we don't care if this fails here
+          }
+        }
+        if (!alreadyHave && labelOnly) {
+          try {
+            await this.wallet.updateAddressAccount(recp.address, recp.label)
           } catch (ex) {
             // we don't care if this fails here
           }
