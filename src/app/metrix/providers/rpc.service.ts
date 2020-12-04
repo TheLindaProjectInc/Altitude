@@ -401,12 +401,16 @@ export class RpcService {
             const trx = new Transaction(tx)
             if (trx.blockIndex === 1) {
                 if (trx.category !== 'Payment' && trx.vout < 4) {
-                    let stake: any = await this.callServer('gettransaction', [trx.txId])
-                    const totalReward = stake.result.details.find(e => e.vout === 1).fee
-                    const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))
-                    const myReward = Big(totalReward).add(dgpPayments);
-                    trx.amount = myReward;
-                    outputs.push(trx);
+                    try {
+                        let stake: any = await this.callServer('gettransaction', [trx.txId])
+                        const totalReward = stake.result.details.find(e => e.vout === 1).fee
+                        const dgpPayments = stake.result.details.reduce((a, b) => a.add(b.amount), Big(0))
+                        const myReward = Big(totalReward).add(dgpPayments);
+                        trx.amount = myReward;
+                        outputs.push(trx);
+                    } catch (ex) {
+                        //console.log(ex);
+                    }
                 } else {
                     if (trx.category === 'Stake (Immature)' || trx.category === 'Stake' && trx.vout > 3) {
                         trx.category = 'Contract Fee Refund';

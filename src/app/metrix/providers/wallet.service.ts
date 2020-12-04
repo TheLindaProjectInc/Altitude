@@ -288,7 +288,7 @@ export class WalletService {
     }
 
     private async syncTransactions() {
-        let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [20]);
+        let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [10]);
         this.updateTransactions(transactionData);
     }
 
