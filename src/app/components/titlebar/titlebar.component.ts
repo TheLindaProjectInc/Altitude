@@ -83,6 +83,7 @@ export class TitlebarComponent {
           'MENU.FILE.CURRENCIES',
           'SEPERATOR',
           'MENU.FILE.RESTARTCORE',
+          'MENU.FILE.ALTITUDEREFRESH',
           'SEPERATOR',
           'MENU.FILE.EXIT',
         ]
@@ -184,6 +185,7 @@ export class TitlebarComponent {
     this.electron.ipcRenderer.on('MENU.FILE.LOCALE', () => this.goToLocale());
     this.electron.ipcRenderer.on('MENU.FILE.CURRENCIES', () => this.goToCurrency());
     this.electron.ipcRenderer.on('MENU.FILE.RESTARTCORE', () => this.restartCore());
+    this.electron.ipcRenderer.on('MENU.FILE.ALTITUDEREFRESH', () => this.altitudeRefresh());
     this.electron.ipcRenderer.on('MENU.FILE.EXIT', () => this.close());
 
     this.electron.ipcRenderer.on('MENU.ENCRYPT.ENCRYPT', () => this.encryptWallet());
@@ -370,6 +372,12 @@ export class TitlebarComponent {
   restartCore() {
     this.wallet.stopSyncService();
     this.rpc.restartClient();
+  }
+
+  altitudeRefresh() {
+    this.wallet.stopSyncService();
+    this.wallet.resetState();
+    this.wallet.startSyncService();
   }
 
   minimize() {
