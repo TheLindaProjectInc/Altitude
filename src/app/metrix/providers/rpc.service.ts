@@ -427,10 +427,9 @@ export class RpcService {
             }
         }
 
-        // group payments to self
+        // group stakes
         outputs.forEach((output, index) => {
             for (let i = index + 1; i < outputs.length; i++) {
-                // check if payment to self
                 if (
                     output.txId === outputs[i].txId &&
                     output.address === outputs[i].address &&
@@ -438,25 +437,68 @@ export class RpcService {
                     ((output.category === 'Stake' && outputs[i].category === 'Stake') ||
                     (output.category === 'Stake (Immature)' && outputs[i].category === 'Stake (Immature)'))
                 ) {
-                    output.amount = output.amount.abs()
+                    output.amount = output.amount.abs();
                     output.category = output.category;
                     output.fee = output.fee || outputs[i].fee;
                     outputs.splice(i, 1);
                     break;
                 }
+            }
+
+            for (let i = index + 1; i < outputs.length; i++) {
+                // check if payment to self
                 if (
                     output.txId === outputs[i].txId &&
                     output.address === outputs[i].address &&
-                    output.amount.abs().cmp(outputs[i].amount.abs()) == 0
+                    output.amount.abs().cmp(outputs[i].amount.abs()) == 0 &&
+                    output.category !== 'Orphan'
                 ) {
                     output.amount = output.amount.abs()
-                    output.category = "Payment To Self";
+                    output.category = 'Payment To Self';
                     output.fee = output.fee || outputs[i].fee;
                     outputs.splice(i, 1);
                     break;
                 }
             }
-        })
+        });
+
+        // group orphans
+        outputs.forEach((output, index) => {
+            if (outputs.length > 1) {
+                for (let i = index + 1; i < outputs.length; i++) {
+                    if (
+                        output.txId === outputs[i].txId &&
+                        output.confirmations === outputs[i].confirmations &&
+                        outputs[i].walletconflicts.length > 0 &&
+                        output.walletconflicts[0] === outputs[i].walletconflicts[0]
+                    ) {
+                        output.amount = 0;
+                        output.category = 'Orphan';
+                        output.fee = 0;
+                        outputs.splice(i, 1);
+                        break;
+                    }
+                }
+            }
+        });
+
+        // group orphans - 2nd pass to catch rogue contract calls
+        outputs.forEach((output, index) => {
+            if (outputs.length > 1) {
+                for (let i = index + 1; i < outputs.length; i++) {
+                    if (
+                        output.txId === outputs[i].txId &&
+                        output.confirmations === outputs[i].confirmations &&
+                        (output.category === 'Orphan' && outputs[i].category === 'Contract Call') &&
+                        output.walletconflicts[0] === outputs[i].walletconflicts[0]
+                    ) {
+                        output.fee = 0;
+                        outputs.splice(i, 1);
+                        break;
+                    }
+                }
+            }
+        });
 
         return { result: outputs };
     }

@@ -10,6 +10,7 @@ export class Transaction {
     blockIndex: number;
     blockTime: Date;
     txId: string;
+    walletconflicts: Array<string>;
     timestamp: Date;
     fee: number;
     vout: number;
@@ -24,6 +25,7 @@ export class Transaction {
             this.blockHash = transactionData.blockhash;
             this.blockIndex = transactionData.blockindex;
             this.txId = transactionData.txid;
+            this.walletconflicts = transactionData.walletconflicts;
             this.fee = transactionData.fee;
             this.vout = transactionData.vout;
 

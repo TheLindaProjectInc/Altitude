@@ -24,10 +24,12 @@ export class ErrorService {
         } else if (ex.rpcCancelled) {
             // ex.rpcCancelled is returned when the RPC calls are cancelled
             // this is usually during a expected or unexpected shutdown of the client
-        } else if (ex.body.error) {
+        } else if (ex.body) {
+            if (ex.body.error) {
             // an error from the daemon
             const msg = `(${ex.body.error.code}) ${ex.body.error.message.replace('Error:', '').trim()}`;
             this.notification.notify('error', msg, false);
+            }
         } else {
             log.error('ErrorService', 'New error', ex);
             this.notification.notify('error', 'NOTIFICATIONS.GENERICERROR');
