@@ -27,6 +27,7 @@ export default class Client {
     clientVersion: string;
     clientVersionHistory = {};
     clientBootstrapUrl: string
+    clientLocalFilehash: string;
     // client config file
     clientConfigFile: ClientConfigFile;
     // rpc status
@@ -176,8 +177,8 @@ export default class Client {
             } else {
                 // if we have a client check for an update
                 log.info("Client", "Client exists. Checking for update");
-                const localHash = await helpers.getFileHash(this.clientLocalLocation);
-                if (localHash !== this.clientConfig.download.sha256.toUpperCase()) {
+                const filehash: string = await helpers.getFileHash(this.clientLocalLocation) as string;
+                if (filehash !== this.clientConfig.download.sha256) {
                     log.info("Client", "Update available");
                     // check if we should skip this update
                     if (update || settings.getSettings().skipCoreUpdate !== this.clientConfig.download.sha256.toUpperCase()) {
@@ -261,7 +262,7 @@ export default class Client {
             log.info("Client", "Downloading client", this.clientConfig.download.url);
             const fileHash = await helpers.downloadFile(this.clientConfig.download.url, this.clientDownloadLocation);
             log.info("Client", "Downloaded client hash", fileHash);
-            if (fileHash != this.clientConfig.download.sha256.toUpperCase()) {
+            if (fileHash != this.clientConfig.download.sha256) {
                 log.info("Client", "Invalid SHA256");
                 this.setClientStatus(ClientStatus.INVALIDHASH);
                 return false;
@@ -566,7 +567,7 @@ export default class Client {
         try {
             await this.getClientBinaries(false);
             const localHash = await helpers.getFileHash(this.clientLocalLocation);
-            const hasUpdate = localHash !== this.clientConfig.download.sha256.toUpperCase();
+            const hasUpdate = localHash !== this.clientConfig.download.sha256;
             if (this.win) this.win.webContents.send('client-node', 'CHECKUPDATE', hasUpdate);
         } catch (ex) {
         }
@@ -575,10 +576,11 @@ export default class Client {
 
     async getClientVersion() {
         if (await helpers.pathExists(this.clientLocalLocation)) {
-            const fileHash = await helpers.getFileHash(this.clientLocalLocation) as string;
+            this.clientVersion = "";
+            this.clientLocalFilehash = await helpers.getFileHash(this.clientLocalLocation) as string;
             if (this.clientVersionHistory) {
                 Object.keys(this.clientVersionHistory).forEach(key => {
-                    if (!this.clientVersion && this.clientVersionHistory[key].indexOf(fileHash) > -1)
+                    if (this.clientVersionHistory[key].indexOf(this.clientLocalFilehash) > -1)
                         this.clientVersion = key;
                 })
             }
