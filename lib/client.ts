@@ -407,6 +407,9 @@ export default class Client {
             log.info("Client", "Bootstrap removing old files...");
             helpers.deleteFolderSync(path.join(this.clientDataDir, "blocks"));
             helpers.deleteFolderSync(path.join(this.clientDataDir, "chainstate"));
+            helpers.deleteFolderSync(path.join(this.clientDataDir, "qtumState"));
+            helpers.deleteFile(path.join(this.clientDataDir, "peers.dat"));
+            helpers.deleteFile(path.join(this.clientDataDir, "banlist.dat"));
             log.info("Client", "Bootstrap copying bootstrap...");
             fs.createReadStream(bootstrapLocation)
                 .pipe(unzipper.Extract({ path: this.clientDataDir }))
