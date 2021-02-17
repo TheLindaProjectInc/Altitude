@@ -100,7 +100,7 @@ export default class Client {
                     this.checkClientUpdate();
                     break;
                 case 'APPLYUPDATE':
-                    this.stop(false).then(() => this.startClient(true, true, data));
+                    this.stop(false).then(() => this.startClient(false, true, data));
                     break;
                 case 'UPDATE':
                     if (this.updateResponse) this.updateResponse(true);

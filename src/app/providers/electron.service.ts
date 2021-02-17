@@ -57,7 +57,7 @@ export class ElectronService {
   connectClientNodeIPC() {
     // listen for client
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
-      // if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
+      //if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
       switch (cmd) {
         case 'STATUS':
           this.clientStatusEvent.emit(data);

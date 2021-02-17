@@ -17,6 +17,12 @@
         {{ 'DGP.PAGES.BUDGET.REQUIRED' | translate }}: {{dgpService.minimumGovernors}}
     </div>
 
+    <div class="info" *ngIf="dgpService.governorCount > dgpService.minimumGovernors">
+        {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}} {{ 'DGP.PAGES.BUDGET.COUNTSUFFIX' | translate }}
+        <br />
+        {{'DGP.PAGES.CREATEPROPOSAL.BUDGETBLOCK' | translate }}: {{budgetBlock | number }}
+    </div>
+
     <div class="flex-row-center flex-wrap">
 
         <budget-card *ngFor="let proposal of proposals" [proposal]="proposal"></budget-card>

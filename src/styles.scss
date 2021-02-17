@@ -91,6 +91,10 @@ a {
     color: $color-success;
 }
 
+.warning {
+    color: $color-warning;
+}
+
 .danger {
     color: $color-danger;
 }
@@ -814,6 +818,16 @@ input[type="text"] {
     padding: 10px;
     border-radius: 5px;
     background: $color-danger;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.info {
+    padding: 10px;
+    border-radius: 5px;
+    background: $color-accent;
 
     h1 {
         margin: 0;

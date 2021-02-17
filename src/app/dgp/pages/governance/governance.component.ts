@@ -78,12 +78,38 @@ export class GovernanceComponent {
     return true;
   }
 
+  public get getGovernorVoteMaturity(): {Days: number, Hours: number} {
+    let value = {
+      Days: 0, 
+      Hours: 0
+    };
+    let res: number;
+    if (this.wallet.blockchainStatus.latestBlockHeight < this.dgpService.governor.blockHeight + 26880) {
+       res = (this.dgpService.governor.blockHeight + 26880 - this.wallet.blockchainStatus.latestBlockHeight) / 960
+    }
+    value = this.splittime(res);
+    return value;
+  }
+
+  splittime(decimalDays) {
+    var Days=Math.floor(decimalDays);
+    var Remainder=decimalDays % 24;
+    var Hours=Math.floor(Remainder);
+    return({"Days":Days,"Hours":Hours})
+  }
+
   public get lastPing(): number {
     return this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing
   }
 
-  public get lastPingDays(): number {
-    return (this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing) / 960;
+  public get lastPingDays(): {Days: number, Hours: number} {
+    let value = {
+      Days: 0, 
+      Hours: 0
+    };
+    let res: number = (this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing) / 960;
+    value = this.splittime(res);
+    return value;
   }
 
   public async enroll() {

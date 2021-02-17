@@ -39,8 +39,13 @@
                 <p>
                     {{ 'DGP.PAGES.GOVERNANCE.LASTPINGTITLE' | translate }}:
                     {{lastPing}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGSUFFIX' | translate }}
-                    ({{lastPingDays | number:'1.0-2' }} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGDAYS' | translate }})
+                    ({{lastPingDays.Days | number:'1.0-0' }} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGDAYS' | translate }} <span *ngIf="lastPingDays.Hours > 0">{{lastPingDays.Hours | number:'1.0-0'}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGHOURS' | translate }}</span>)
                 </p>
+                <p *ngIf="getGovernorVoteMaturity.Days === 0 && getGovernorVoteMaturity.Hours === 0" >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}:
+                    <span class="success">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYMATURE' | translate}}</span>
+                </p>
+                <p *ngIf="getGovernorVoteMaturity.Days !== 0 || getGovernorVoteMaturity.Hours !== 0" >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}: <span class="warning">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYIMMATURE' | translate}}</span> 
+                    ({{getGovernorVoteMaturity.Days | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYDAYS' | translate}} <span *ngIf="getGovernorVoteMaturity.Hours > 0" > {{getGovernorVoteMaturity.Hours | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYHOURS' | translate}}</span> {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYSUFFIX' | translate}})</p>
             </div>
             <div class="toolbar">
                 <button class="btn btn-danger" (click)="unenroll()">
