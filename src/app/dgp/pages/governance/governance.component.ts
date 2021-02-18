@@ -87,7 +87,9 @@ export class GovernanceComponent {
     if (this.wallet.blockchainStatus.latestBlockHeight < this.dgpService.governor.blockHeight + 26880) {
        res = (this.dgpService.governor.blockHeight + 26880 - this.wallet.blockchainStatus.latestBlockHeight) / 960
     }
-    value = this.splittime(res);
+    if(value.Days !== 0 || value.Hours !== 0) {
+      value = this.splittime(res);
+    }
     return value;
   }
 
