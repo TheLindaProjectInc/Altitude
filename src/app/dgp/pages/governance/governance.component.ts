@@ -87,16 +87,16 @@ export class GovernanceComponent {
     if (this.wallet.blockchainStatus.latestBlockHeight < this.dgpService.governor.blockHeight + 26880) {
        res = (this.dgpService.governor.blockHeight + 26880 - this.wallet.blockchainStatus.latestBlockHeight) / 960
     }
-    if(value.Days !== 0 || value.Hours !== 0) {
+    if(res > 0) {
       value = this.splittime(res);
     }
     return value;
   }
 
   splittime(decimalDays) {
-    var Days=Math.floor(decimalDays);
-    var Remainder=decimalDays % 24;
-    var Hours=Math.floor(Remainder);
+    let Days=Math.floor(decimalDays);
+    let Remainder = (decimalDays % 24) * 24;
+    let Hours=Math.floor(Remainder);
     return({"Days":Days,"Hours":Hours})
   }
 
