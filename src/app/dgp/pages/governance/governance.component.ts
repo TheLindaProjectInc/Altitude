@@ -95,7 +95,8 @@ export class GovernanceComponent {
 
   splittime(decimalDays) {
     let Days=Math.floor(decimalDays);
-    let Remainder = (decimalDays % 24) * 24;
+    let Remainder = (decimalDays % 1) * 24;
+    console.log(Remainder);
     let Hours=Math.floor(Remainder);
     return({"Days":Days,"Hours":Hours})
   }
@@ -110,7 +111,9 @@ export class GovernanceComponent {
       Hours: 0
     };
     let res: number = (this.wallet.blockchainStatus.latestBlockHeight - this.dgpService.governor.lastPing) / 960;
-    value = this.splittime(res);
+    if(res > 0) {
+      value = this.splittime(res);
+    }
     return value;
   }
 
