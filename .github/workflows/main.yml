@@ -1,0 +1,56 @@
+name: Build Release
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on tag push
+  push:
+    tags: "*"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: macos-10.15
+    strategy:
+      matrix:
+        node: [12]
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '10.3'
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn --frozen-lockfile
+      - name: Build Binaries
+        env: 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            npm run electron:mac
+            npm run electron:linux
+            npm run electron:windows
+            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
+            npm run electron:windows32
+            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
+      - name: Upload Assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run : |
+          set -x
+          ls -l ./release/
+          assets=() 
+          assets+=("-a" "./release/Altitude-Metrix-Wallet-mac-x64.dmg")
+          assets+=("-a" "./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
+          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x86.exe")
+          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x64.exe")
+          tag_name="${GITHUB_REF#refs/*/}"
+          hub release create "${assets[@]}" --draft=true -m "v$tag_name" "$tag_name"
