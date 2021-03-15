@@ -616,7 +616,8 @@ export default class Client {
             const options = {
                 method: 'POST',
                 url: `https://file.io/`,
-                form: { text: logData }
+                headers: {"Content-Type": "multipart/form-data"},
+                formData: { text: logData }
             };
 
             logLink = await new Promise((resolve, reject) => {
@@ -624,9 +625,13 @@ export default class Client {
                     if (error) {
                         reject(error)
                     } else {
-                        let json = JSON.parse(body)
-                        if (json.success) resolve(json.link)
-                        else reject(json)
+                        if (response.statusCode != 200) {
+                            reject(response.statusCode + ":" + response.statusMessage)
+                        } else {
+                            let json = JSON.parse(body)
+                            if (json.success) resolve(json.link)
+                            else reject(json)
+                        }
                     }
                 });
             })
