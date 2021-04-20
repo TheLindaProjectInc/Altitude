@@ -133,14 +133,14 @@
     <p>{{'PAGES.TOOLS.REPAIR.INFO' | translate}}</p>
     <p class="danger" *ngIf="!canRunRepair()">{{'PAGES.TOOLS.REPAIR.INFOEXTERNAL' | translate}}</p>
     <table class="table-repair" *ngIf="canRunRepair()">
-      <tr>
+      <!-- <tr>
         <td>
           <button (click)="repairWallet(0)" class="btn btn-default">
             {{'PAGES.TOOLS.REPAIR.SALVAGEBUTTON' | translate}}
           </button>
         </td>
         <td>{{'PAGES.TOOLS.REPAIR.SALVAGEINFO' | translate}}</td>
-      </tr>
+      </tr> -->
       <tr>
         <td>
           <button (click)="repairWallet(1)" class="btn btn-default">
