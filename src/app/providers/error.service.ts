@@ -18,7 +18,7 @@ export class ErrorService {
         if (ex.error && ex.error.code === "ECONNREFUSED") {
             // ECONNREFUSED denotes a problem connecting to the
             // client this error is handled and notifed to the user in the rpc service
-        } else if (ex.error && ex.error.code === "ESOCKETTIMEDOUT" || ex.error.message === "ESOCKETTIMEDOUT") {
+        } else if (ex.error && ex.error.code === "ESOCKETTIMEDOUT") {
             // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
             // this is usually during sync and heavy loads so we can ignore this error
         } else if (ex.rpcCancelled) {

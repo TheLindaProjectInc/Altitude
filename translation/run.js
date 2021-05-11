@@ -4,7 +4,7 @@ let languages = require('./languages.json')
 const fs = require('fs');
 
 var ggl = google(process.env.APIKEY);  // this is required to use google translate service
-var retranslate = ['REPAIRTAB'] // add fields to here to force the translator to re-translate
+var retranslate = ['PROPOSALADDRESS'] // add fields to here to force the translator to re-translate
 var removeTranslation = [] // add fields to here to remove them from all translation files (except en.json must be removed manually)
 
 async function translateLanguageFiles() {

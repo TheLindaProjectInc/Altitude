@@ -96,7 +96,6 @@ export class GovernanceComponent {
   splittime(decimalDays) {
     let Days=Math.floor(decimalDays);
     let Remainder = (decimalDays % 1) * 24;
-    console.log(Remainder);
     let Hours=Math.floor(Remainder);
     return({"Days":Days,"Hours":Hours})
   }
