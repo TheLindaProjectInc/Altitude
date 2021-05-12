@@ -21,11 +21,12 @@ export class ErrorService {
         } else if (ex.error && ex.error.code === "ESOCKETTIMEDOUT") {
             // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
             // this is usually during sync and heavy loads so we can ignore this error
-        } else if (typeof ex.error.code === "undefined" && typeof ex.error.message !== "undefined") {
+        } else if (ex.code === null && typeof ex.error.message !== "undefined") {
             if (ex.error.message === "ESOCKETTIMEDOUT") {
                 // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
                 // this is usually during sync and heavy loads so we can ignore this error
             }
+        } else if (typeof ex.error.code === "undefined" && typeof ex.error.message !== "undefined") {
             if (ex.name === "HttpErrorResponse" && ex.status == 400) {
                 this.notification.notify('error', ex.error.message, false)    
             }
