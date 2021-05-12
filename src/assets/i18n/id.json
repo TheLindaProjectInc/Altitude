@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Membuat Alamat Tukar...",
-            "ALREADYHAVEADDRESS": "Anda sudah memiliki alamat BTC yang terkait dengan alamat Metrix ini",
-            "SWAPUSDMIN": "Jumlah minimum swap USD adalah $ 50",
-            "SWAPUSDMAX": "Jumlah maksimum swap USD adalah $ 3000",
             "INCOMPLETEFORM": "Anda belum mengisi semua bidang yang diperlukan dengan benar",
             "INVALIDPROPOSALDURATION": "Durasi proposal harus antara 1 dan 12 bulan",
             "CREATINGPROPOSAL": "Mengirim proposal ke jaringan...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Pendaftaran Anda akan selesai setelah transaksi Anda dikonfirmasi",
             "VOTINGONPROPOSAL": "Mengirim suara proposal",
             "VOTEDONPROPOSAL": "Pilihan Anda akan dihitung setelah transaksi dikonfirmasi.",
-            "NOADDRESS": "Anda tidak memasukkan alamat Metrix",
             "PINGINGGOVERNOR": "Mengirim ping...",
             "PINGEDGOVERNOR": "Ping berhasil dikirim. Gubernur Anda akan diperbarui setelah transaksi dikonfirmasi",
             "UNENROLLINGGOVERNOR": "Membatalkan Pendaftaran Gubernur...",
             "UNENROLLEDGOVERNOR": "Transaksi dikirim. Gubernur Anda akan dibatalkan pendaftarannya setelah transaksi dikonfirmasi",
             "GOVERNORNOTMATURE": "Gubernur Anda belum cukup dewasa untuk melakukan tindakan ini"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Anda mengirim",
+                "YOUGET": "Anda mendapatkan",
+                "MRXADDRESS": "Alamat Metrix",
+                "SWAP": "Menukar",
+                "SWAPADDRESSES": "Tukar Alamat",
+                "BTCADDRESS": "Alamat BTC",
+                "INFOLINE1": "Setelah Anda memiliki alamat setoran BTC, setiap BTC yang dikirim ke alamat itu akan secara otomatis ditukar dengan MRX ke alamat MRX yang Anda tunjuk.",
+                "INFOLINE2-1": "Transaksi biasanya selesai dalam satu jam tergantung pada waktu blok Bitcoin.",
+                "INFOLINE2-2": "Dengan menggunakan layanan ini, Anda setuju bahwa Anda TIDAK tinggal di negara yang terdaftar",
+                "INFOLINE2-3": "sini",
+                "INFOLINE3": "Setelah setoran BTC Anda dihapus, Anda akan menerima MRX ke alamat yang Anda pilih.",
+                "INFOLINE4": "Untuk informasi lebih lanjut kunjungi"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Menghasilkan Alamat Swap...",
+            "ALREADYHAVEADDRESS": "Anda sudah memiliki alamat BTC yang terkait dengan alamat Metrix ini",
+            "NOADDRESS": "Anda tidak memasukkan alamat Metrix"
         }
     }
 }

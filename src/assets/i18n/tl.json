@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Pagbuo ng Alamat ng Pagpalit",
-            "ALREADYHAVEADDRESS": "Mayroon ka nang isang address ng BTC na nauugnay sa address na Metrix na ito",
-            "SWAPUSDMIN": "Ang minimum na halaga ng swap ng USD ay $ 50",
-            "SWAPUSDMAX": "Ang maximum na halaga ng swap ng USD ay $ 3000",
             "INCOMPLETEFORM": "Hindi mo napunan nang tama ang lahat ng kinakailangang mga patlang",
             "INVALIDPROPOSALDURATION": "Ang mga panukalang pagtatagal ay dapat na nasa pagitan ng 1 hanggang 12 buwan",
             "CREATINGPROPOSAL": "Pagsumite ng mungkahi sa network...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Ang iyong pagpapatala ay kumpleto sa sandaling nakumpirma ang iyong transaksyon",
             "VOTINGONPROPOSAL": "Ang pagpapadala ng boto ng panukala",
             "VOTEDONPROPOSAL": "Ang iyong boto ay mabibilang kapag nakumpirma ang transaksyon.",
-            "NOADDRESS": "Hindi ka nagpasok ng isang address ng Metrix",
             "PINGINGGOVERNOR": "Nagpapadala ng ping...",
             "PINGEDGOVERNOR": "Matagumpay na naipadala si Ping. Maa-update ang iyong Gobernador kapag nakumpirma ang transaksyon",
             "UNENROLLINGGOVERNOR": "Unenrolling Gobernador...",
             "UNENROLLEDGOVERNOR": "Ipinadala ang transaksyon. Ang iyong Gobernador ay ma-aenrol sa sandaling makumpirma ang transaksyon",
             "GOVERNORNOTMATURE": "Ang iyong Gobernador ay hindi pa sapat sa gulang upang maisagawa ang aksyon na ito"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ipadala mo",
+                "YOUGET": "Nakuha mo",
+                "MRXADDRESS": "Address ng Metrix",
+                "SWAP": "Ipagpalit",
+                "SWAPADDRESSES": "Ipagpalit ang Mga Address",
+                "BTCADDRESS": "BTC Address",
+                "INFOLINE1": "Kapag mayroon kang isang address ng deposito ng BTC, ang anumang BTC na ipinadala sa address na iyon ay awtomatikong maipapalit para sa MRX sa iyong hinirang na address ng MRX.",
+                "INFOLINE2-1": "Karaniwang malinaw ang mga transaksyon sa loob ng isang oras depende sa mga oras ng pag-block ng Bitcoin.",
+                "INFOLINE2-2": "Sa pamamagitan ng paggamit ng serbisyong ito, sumasang-ayon ka na HINDI ka naninirahan sa mga nakalistang bansa",
+                "INFOLINE2-3": "dito",
+                "INFOLINE3": "Kapag na-clear ang iyong deposito ng BTC matatanggap mo ang iyong MRX sa iyong hinirang na address.",
+                "INFOLINE4": "Para sa karagdagang impormasyon pagbisita"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Bumubuo ng Swap Address...",
+            "ALREADYHAVEADDRESS": "Mayroon ka nang isang address ng BTC na naiugnay sa address ng Metrix na ito",
+            "NOADDRESS": "Hindi ka nagpasok ng isang address ng Metrix"
         }
     }
 }

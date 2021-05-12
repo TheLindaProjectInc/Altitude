@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Génération de l'adresse de swap...",
-            "ALREADYHAVEADDRESS": "Vous avez déjà une adresse BTC associée à cette adresse Metrix",
-            "SWAPUSDMIN": "Le montant minimum du swap en USD est de 50 $",
-            "SWAPUSDMAX": "Le montant maximum du swap en USD est de 3000 $",
             "INCOMPLETEFORM": "Vous n'avez pas rempli correctement tous les champs obligatoires",
             "INVALIDPROPOSALDURATION": "La durée des propositions doit être comprise entre 1 et 12 mois",
             "CREATINGPROPOSAL": "Soumission de la proposition au réseau...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Votre inscription sera terminée une fois votre transaction confirmée",
             "VOTINGONPROPOSAL": "Envoi du vote de proposition",
             "VOTEDONPROPOSAL": "Votre vote sera compté une fois la transaction confirmée.",
-            "NOADDRESS": "Vous n'avez pas entré d'adresse Metrix",
             "PINGINGGOVERNOR": "Envoi du ping...",
             "PINGEDGOVERNOR": "Ping envoyé avec succès. Votre gouverneur sera mis à jour une fois la transaction confirmée",
             "UNENROLLINGGOVERNOR": "Désinscription du gouverneur...",
             "UNENROLLEDGOVERNOR": "Transaction envoyée. Votre gouverneur sera désinscrit une fois la transaction confirmée",
             "GOVERNORNOTMATURE": "Votre gouverneur n'est pas encore assez mature pour effectuer cette action"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Vous envoyez",
+                "YOUGET": "Vous obtenez",
+                "MRXADDRESS": "Adresse Metrix",
+                "SWAP": "Échanger",
+                "SWAPADDRESSES": "Permuter les adresses",
+                "BTCADDRESS": "Adresse BTC",
+                "INFOLINE1": "Une fois que vous avez une adresse de dépôt BTC, tout BTC envoyé à cette adresse sera automatiquement échangé contre MRX dans votre adresse MRX désignée.",
+                "INFOLINE2-1": "Les transactions sont généralement compensées en une heure en fonction des heures de blocage Bitcoin.",
+                "INFOLINE2-2": "En utilisant ce service, vous acceptez que vous ne résidez PAS dans les pays répertoriés",
+                "INFOLINE2-3": "ici",
+                "INFOLINE3": "Une fois votre dépôt BTC effacé, vous recevrez votre MRX à votre adresse désignée.",
+                "INFOLINE4": "Pour plus d'informations, visitez"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Génération de l'adresse de swap...",
+            "ALREADYHAVEADDRESS": "Vous avez déjà une adresse BTC associée à cette adresse Metrix",
+            "NOADDRESS": "Vous n'avez pas entré d'adresse Metrix"
         }
     }
 }

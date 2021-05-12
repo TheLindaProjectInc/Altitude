@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Takas Adresi oluşturuluyor...",
-            "ALREADYHAVEADDRESS": "Bu Metrix adresiyle ilişkilendirilmiş bir BTC adresiniz zaten var",
-            "SWAPUSDMIN": "Minimum USD takas tutarı 50 ABD dolarıdır",
-            "SWAPUSDMAX": "Maksimum USD takas tutarı 3000 $",
             "INCOMPLETEFORM": "Gerekli tüm alanları doğru doldurmadınız",
             "INVALIDPROPOSALDURATION": "Teklif süreleri 1 ila 12 ay arasında olmalıdır",
             "CREATINGPROPOSAL": "Teklif ağa gönderiliyor...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "İşleminiz onaylandıktan sonra kaydınız tamamlanacaktır",
             "VOTINGONPROPOSAL": "Teklif oyu gönderme",
             "VOTEDONPROPOSAL": "İşlem onaylandıktan sonra oyunuz sayılır.",
-            "NOADDRESS": "Bir Metrix adresi girmediniz",
             "PINGINGGOVERNOR": "Ping gönderiliyor...",
             "PINGEDGOVERNOR": "Ping başarıyla gönderildi. İşlem onaylandıktan sonra Valiniz güncellenecek",
             "UNENROLLINGGOVERNOR": "Vali Kaydı Siliniyor...",
             "UNENROLLEDGOVERNOR": "İşlem gönderildi. İşlem onaylandıktan sonra Valinizin kaydı silinecek",
             "GOVERNORNOTMATURE": "Valiniz henüz bu eylemi gerçekleştirecek kadar olgun değil"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Siz gönderin",
+                "YOUGET": "Sen al",
+                "MRXADDRESS": "Metrix Adresi",
+                "SWAP": "Takas",
+                "SWAPADDRESSES": "Takas Adresleri",
+                "BTCADDRESS": "BTC Adresi",
+                "INFOLINE1": "Bir BTC para yatırma adresiniz olduğunda, bu adrese gönderilen herhangi bir BTC otomatik olarak MRX için belirttiğiniz MRX adresinize değiştirilecektir.",
+                "INFOLINE2-1": "İşlemler, Bitcoin blok sürelerine bağlı olarak genellikle bir saat içinde temizlenir.",
+                "INFOLINE2-2": "Bu hizmeti kullanarak, listelenen ülkelerde ikamet etmediğinizi kabul edersiniz.",
+                "INFOLINE2-3": "İşte",
+                "INFOLINE3": "BTC para yatırma işleminiz tamamlandıktan sonra, MRX'inizi belirttiğiniz adrese alacaksınız.",
+                "INFOLINE4": "Daha fazla bilgi için ziyaret edin"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Takas Adresi Oluşturuluyor...",
+            "ALREADYHAVEADDRESS": "Bu Metrix adresiyle ilişkilendirilmiş bir BTC adresiniz zaten var",
+            "NOADDRESS": "Metrix adresi girmediniz"
         }
     }
 }

@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Notiek mijmaiņas adreses ģenerēšana...",
-            "ALREADYHAVEADDRESS": "Jums jau ir BTC adrese, kas saistīta ar šo Metrix adresi",
-            "SWAPUSDMIN": "Minimālā USD mijmaiņas summa ir USD 50",
-            "SWAPUSDMAX": "Maksimālā USD maiņas summa ir USD 3000",
             "INCOMPLETEFORM": "Jūs neesat pareizi aizpildījis visus prasītos laukus",
             "INVALIDPROPOSALDURATION": "Piedāvājuma ilgumam jābūt no 1 līdz 12 mēnešiem",
             "CREATINGPROPOSAL": "Notiek priekšlikuma iesniegšana tīklā...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Reģistrācija būs pabeigta, kad darījums tiks apstiprināts",
             "VOTINGONPROPOSAL": "Tiek nosūtīts priekšlikuma balsojums",
             "VOTEDONPROPOSAL": "Tiklīdz darījums tiks apstiprināts, jūsu balsis tiks ieskaitīta.",
-            "NOADDRESS": "Jūs neievadījāt Metrix adresi",
             "PINGINGGOVERNOR": "Notiek pinga sūtīšana...",
             "PINGEDGOVERNOR": "Pings veiksmīgi nosūtīts. Tiklīdz darījums būs apstiprināts, jūsu gubernators tiks atjaunināts",
             "UNENROLLINGGOVERNOR": "Notiek gubernatora reģistrācijas atcelšana...",
             "UNENROLLEDGOVERNOR": "Darījums nosūtīts. Pēc darījuma apstiprināšanas jūsu gubernators tiks reģistrēts",
             "GOVERNORNOTMATURE": "Jūsu gubernators vēl nav pietiekami nobriedis, lai veiktu šo darbību"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu sūti",
+                "YOUGET": "Tu iegūsti",
+                "MRXADDRESS": "Metrix adrese",
+                "SWAP": "Apmaini",
+                "SWAPADDRESSES": "Apmainiet adreses",
+                "BTCADDRESS": "BTC adrese",
+                "INFOLINE1": "Kad jums būs BTC depozīta adrese, jebkura uz šo adresi nosūtītā BTC automātiski tiks nomainīta pret MRX jūsu norādītajā MRX adresē.",
+                "INFOLINE2-1": "Darījumi parasti tiek dzēsti stundas laikā atkarībā no Bitcoin bloķēšanas laikiem.",
+                "INFOLINE2-2": "Izmantojot šo pakalpojumu, jūs piekrītat, ka jūs NEDZĪVOT uzskaitītajās valstīs",
+                "INFOLINE2-3": "šeit",
+                "INFOLINE3": "Kad jūsu BTC depozīts būs notīrīts, jūs saņemsit MRX uz jūsu norādīto adresi.",
+                "INFOLINE4": "Lai iegūtu vairāk informācijas, apmeklējiet vietni"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Notiek maiņas adreses ģenerēšana...",
+            "ALREADYHAVEADDRESS": "Jums jau ir BTC adrese, kas saistīta ar šo Metrix adresi",
+            "NOADDRESS": "Jūs neievadījāt Metrix adresi"
         }
     }
 }

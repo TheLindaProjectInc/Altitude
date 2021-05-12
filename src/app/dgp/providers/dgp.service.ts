@@ -187,8 +187,10 @@ export class DGPService {
             for (let i = 0; i < 8; i++) {
                 let callData: string = BudgetContract.GETPROPOSAL + i.toString(16).padStart(64, '0');
                 let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [BudgetContract.ADDRESS, callData]);
-                if (data.executionResult.output.replace(/0/g, '') !== '') {
-                    this.upsertBudget(new BudgetProposal(data), i);
+                if (!data.error && data.executionResult.excepted == 'None') {
+                    if (data.executionResult.output.replace(/0/g, '') !== '') {
+                        this.upsertBudget(new BudgetProposal(data), i);
+                    }
                 }
             }
             this.getMyBudgetVotes();

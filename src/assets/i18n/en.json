@@ -514,11 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Generating Swap Address...",
-            "ALREADYHAVEADDRESS": "You already have a BTC address associated with this Metrix address",
-            "SWAPUSDMIN": "The minimum USD swap amount is $50",
-            "SWAPUSDMAX": "The maximum USD swap amount is $3000",
-            "NOADDRESS": "You didn't enter a Metrix address",
             "INCOMPLETEFORM": "You have not filled in all required fields correctly",
             "INVALIDPROPOSALDURATION": "Proposal durations should be between 1 and 12 months",
             "CREATINGPROPOSAL": "Submitting proposal to network...",
@@ -532,6 +527,29 @@
             "UNENROLLINGGOVERNOR": "Unenrolling Governor...",
             "UNENROLLEDGOVERNOR": "Transaction sent. Your Governor will be unenrolled once the transaction is confirmed",
             "GOVERNORNOTMATURE": "Your Governor is not mature enough to perform this action yet"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "You Send",
+                "YOUGET": "You Get",
+                "MRXADDRESS": "Metrix Address",
+                "SWAP": "Swap",
+                "SWAPADDRESSES": "Swap Addresses",
+                "BTCADDRESS": "BTC Address",
+                "INFOLINE1": "Once you have a BTC deposit address, any BTC sent to that address will automatically get swapped for MRX into your nominated MRX address.",
+                "INFOLINE2-1": "Transactions typically clear within an hour depending on the Bitcoin block times.",
+                "INFOLINE2-2": "By using this service, you agree you do NOT reside in the countries listed",
+                "INFOLINE2-3": "here",
+                "INFOLINE3": "Once your BTC deposit has cleared you'll receive your MRX into your nominated address.",
+                "INFOLINE4": "For more information visit"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generating Swap Address...",
+            "ALREADYHAVEADDRESS": "You already have a BTC address associated with this Metrix address",
+            "NOADDRESS": "You didn't enter a Metrix address"
         }
     }
 }

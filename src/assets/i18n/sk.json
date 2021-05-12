@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Generuje sa swapová adresa...",
-            "ALREADYHAVEADDRESS": "S touto adresou Metrix už máte priradenú adresu BTC",
-            "SWAPUSDMIN": "Minimálna swapová suma v USD je 50 USD",
-            "SWAPUSDMAX": "Maximálna swapová suma v USD je 3000 USD",
             "INCOMPLETEFORM": "Nevyplnili ste správne všetky požadované polia",
             "INVALIDPROPOSALDURATION": "Trvanie návrhov by malo byť medzi 1 a 12 mesiacmi",
             "CREATINGPROPOSAL": "Odosiela sa návrh do siete...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Vaša registrácia bude dokončená po potvrdení transakcie",
             "VOTINGONPROPOSAL": "Posiela sa hlasovanie o návrhu",
             "VOTEDONPROPOSAL": "Váš hlas sa započítava po potvrdení transakcie.",
-            "NOADDRESS": "Nezadali ste adresu Metrix",
             "PINGINGGOVERNOR": "Posiela sa ping...",
             "PINGEDGOVERNOR": "Ping bol úspešne odoslaný. Po potvrdení transakcie bude váš guvernér aktualizovaný",
             "UNENROLLINGGOVERNOR": "Ruší sa odhlásenie guvernéra...",
             "UNENROLLEDGOVERNOR": "Transakcia bola odoslaná. Po potvrdení transakcie bude váš guvernér odhlásený",
             "GOVERNORNOTMATURE": "Váš guvernér ešte nie je dostatočne zrelý na to, aby vykonal túto akciu"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ty posielaš",
+                "YOUGET": "Dostanete",
+                "MRXADDRESS": "Adresa Metrix",
+                "SWAP": "Zameniť",
+                "SWAPADDRESSES": "Zameniť adresy",
+                "BTCADDRESS": "BTC adresa",
+                "INFOLINE1": "Akonáhle budete mať BTC vkladovú adresu, všetky BTC zaslané na túto adresu budú automaticky vymenené za MRX na vašu nominovanú MRX adresu.",
+                "INFOLINE2-1": "Transakcie sa zvyčajne uskutočnia do hodiny v závislosti od časov blokovania bitcoinu.",
+                "INFOLINE2-2": "Používaním tejto služby súhlasíte, že NEMÁTE bydlisko v uvedených krajinách",
+                "INFOLINE2-3": "tu",
+                "INFOLINE3": "Hneď ako sa váš vklad BTC vyrovná, dostanete MRX na vašu nominovanú adresu.",
+                "INFOLINE4": "Pre viac informácií navštívte"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generuje sa výmenná adresa...",
+            "ALREADYHAVEADDRESS": "S touto adresou Metrix už máte priradenú adresu BTC",
+            "NOADDRESS": "Nezadali ste adresu Metrix"
         }
     }
 }

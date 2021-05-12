@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Genererer swap-adresse...",
-            "ALREADYHAVEADDRESS": "Du har allerede en BTC-adresse tilknyttet denne Metrix-adresse",
-            "SWAPUSDMIN": "Det mindste USD-swapbeløb er $ 50",
-            "SWAPUSDMAX": "Det maksimale USD-swapbeløb er $ 3000",
             "INCOMPLETEFORM": "Du har ikke udfyldt alle krævede felter korrekt",
             "INVALIDPROPOSALDURATION": "Forslagets varighed skal være mellem 1 og 12 måneder",
             "CREATINGPROPOSAL": "Indsender forslag til netværk...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Din tilmelding vil være afsluttet, når din transaktion er bekræftet",
             "VOTINGONPROPOSAL": "Afstemning af forslag",
             "VOTEDONPROPOSAL": "Din afstemning tælles, når transaktionen er bekræftet.",
-            "NOADDRESS": "Du indtastede ikke en Metrix-adresse",
             "PINGINGGOVERNOR": "Sender ping...",
             "PINGEDGOVERNOR": "Ping blev sendt. Din guvernør vil blive opdateret, når transaktionen er bekræftet",
             "UNENROLLINGGOVERNOR": "Afmelding af guvernør...",
             "UNENROLLEDGOVERNOR": "Transaktion sendt. Din guvernør vil blive tilmeldt, når transaktionen er bekræftet",
             "GOVERNORNOTMATURE": "Din guvernør er ikke moden nok til at udføre denne handling endnu"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Du sender",
+                "YOUGET": "Du får",
+                "MRXADDRESS": "Metrix-adresse",
+                "SWAP": "Bytte rundt",
+                "SWAPADDRESSES": "Byt adresser",
+                "BTCADDRESS": "BTC-adresse",
+                "INFOLINE1": "Når du har en BTC-indbetalingsadresse, byttes enhver BTC, der sendes til denne adresse, automatisk til MRX i din nominerede MRX-adresse.",
+                "INFOLINE2-1": "Transaktioner ryddes typisk inden for en time afhængigt af Bitcoin-blokeringstiderne.",
+                "INFOLINE2-2": "Ved at bruge denne service accepterer du, at du IKKE bor i de nævnte lande",
+                "INFOLINE2-3": "her",
+                "INFOLINE3": "Når din BTC-indbetaling er ryddet, modtager du din MRX til din nominerede adresse.",
+                "INFOLINE4": "For mere information besøg"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Genererer bytteadresse...",
+            "ALREADYHAVEADDRESS": "Du har allerede en BTC-adresse tilknyttet denne Metrix-adresse",
+            "NOADDRESS": "Du indtastede ikke en Metrix-adresse"
         }
     }
 }

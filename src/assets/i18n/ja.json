@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "スワップアドレスを生成しています...",
-            "ALREADYHAVEADDRESS": "このMetrixアドレスに関連付けられたBTCアドレスがすでにあります",
-            "SWAPUSDMIN": "最低米ドル交換額は$ 50です。",
-            "SWAPUSDMAX": "米ドルの最大スワップ金額は$ 3000です。",
             "INCOMPLETEFORM": "すべての必須フィールドに正しく入力していません",
             "INVALIDPROPOSALDURATION": "プロポーザルの期間は1〜12か月である必要があります",
             "CREATINGPROPOSAL": "ネットワークに提案を送信しています...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "取引が確認されると、登録が完了します",
             "VOTINGONPROPOSAL": "提案投票を送信しています",
             "VOTEDONPROPOSAL": "取引が確認されると、投票がカウントされます。",
-            "NOADDRESS": "Metrixアドレスを入力しませんでした",
             "PINGINGGOVERNOR": "pingを送信しています...",
             "PINGEDGOVERNOR": "pingが正常に送信されました。取引が確認されるとガバナーが更新されます",
             "UNENROLLINGGOVERNOR": "ガバナーの登録を解除しています...",
             "UNENROLLEDGOVERNOR": "トランザクションが送信されました。取引が確認されると、ガバナーの登録が解除されます",
             "GOVERNORNOTMATURE": "あなたの知事はまだこの行動を実行するのに十分成熟していない"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "あなたが送る",
+                "YOUGET": "あなたが得る",
+                "MRXADDRESS": "メトリックスアドレス",
+                "SWAP": "スワップ",
+                "SWAPADDRESSES": "スワップアドレス",
+                "BTCADDRESS": "BTCアドレス",
+                "INFOLINE1": "BTCデポジットアドレスを取得すると、そのアドレスに送信されたBTCは、指定されたMRXアドレスに自動的にMRXと交換されます。",
+                "INFOLINE2-1": "トランザクションは通常、ビットコインのブロック時間に応じて1時間以内にクリアされます。",
+                "INFOLINE2-2": "このサービスを使用することにより、記載されている国に居住していないことに同意したことになります",
+                "INFOLINE2-3": "ここに",
+                "INFOLINE3": "BTCデポジットがクリアされると、指定されたアドレスにMRXが届きます。",
+                "INFOLINE4": "詳細については、次のWebサイトをご覧ください。"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "スワップアドレスを生成しています...",
+            "ALREADYHAVEADDRESS": "このMetrixアドレスに関連付けられたBTCアドレスがすでにあります",
+            "NOADDRESS": "Metrixアドレスを入力していません"
         }
     }
 }

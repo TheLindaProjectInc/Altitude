@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Wisseladres genereren...",
-            "ALREADYHAVEADDRESS": "U heeft al een BTC-adres dat aan dit Metrix-adres is gekoppeld",
-            "SWAPUSDMIN": "Het minimale swapbedrag in USD is $ 50",
-            "SWAPUSDMAX": "Het maximale swapbedrag in USD is $ 3000",
             "INCOMPLETEFORM": "U heeft niet alle verplichte velden correct ingevuld",
             "INVALIDPROPOSALDURATION": "De duur van het voorstel moet tussen 1 en 12 maanden zijn",
             "CREATINGPROPOSAL": "Voorstel indienen bij netwerk...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Uw inschrijving is voltooid zodra uw transactie is bevestigd",
             "VOTINGONPROPOSAL": "Voorstelstem verzenden",
             "VOTEDONPROPOSAL": "Uw stem wordt geteld zodra de transactie is bevestigd.",
-            "NOADDRESS": "U heeft geen Metrix-adres ingevoerd",
             "PINGINGGOVERNOR": "Ping verzenden...",
             "PINGEDGOVERNOR": "Ping succesvol verzonden. Uw gouverneur wordt op de hoogte gehouden zodra de transactie is bevestigd",
             "UNENROLLINGGOVERNOR": "Gouverneur uitschrijven...",
             "UNENROLLEDGOVERNOR": "Transactie verzonden. Uw gouverneur wordt uitgeschreven zodra de transactie is bevestigd",
             "GOVERNORNOTMATURE": "Je gouverneur is nog niet volwassen genoeg om deze actie uit te voeren"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Jij stuurt",
+                "YOUGET": "Jij krijgt",
+                "MRXADDRESS": "Metrix-adres",
+                "SWAP": "Wissel",
+                "SWAPADDRESSES": "Wissel adressen uit",
+                "BTCADDRESS": "BTC-adres",
+                "INFOLINE1": "Zodra u een BTC-stortingsadres heeft, wordt elke BTC die naar dat adres wordt verzonden, automatisch omgewisseld voor MRX naar uw genomineerde MRX-adres.",
+                "INFOLINE2-1": "Transacties worden doorgaans binnen een uur gewist, afhankelijk van de bloktijden van Bitcoin.",
+                "INFOLINE2-2": "Door gebruik te maken van deze service, gaat u ermee akkoord dat u NIET in de vermelde landen woont",
+                "INFOLINE2-3": "hier",
+                "INFOLINE3": "Zodra uw BTC-storting is vereffend, ontvangt u uw MRX op het door u opgegeven adres.",
+                "INFOLINE4": "Voor meer informatie bezoek"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Wisseladres genereren...",
+            "ALREADYHAVEADDRESS": "U heeft al een BTC-adres dat aan dit Metrix-adres is gekoppeld",
+            "NOADDRESS": "U heeft geen Metrix-adres ingevoerd"
         }
     }
 }

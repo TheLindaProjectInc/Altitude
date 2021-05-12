@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Cserecím generálása...",
-            "ALREADYHAVEADDRESS": "Ehhez a Metrix-címhez már van társítva BTC-cím",
-            "SWAPUSDMIN": "A minimális USD csereösszeg 50 USD",
-            "SWAPUSDMAX": "A maximális USD csereösszeg 3000 USD",
             "INCOMPLETEFORM": "Nem töltötte be megfelelően az összes kötelező mezőt",
             "INVALIDPROPOSALDURATION": "A pályázat időtartamának 1 és 12 hónap között kell lennie",
             "CREATINGPROPOSAL": "Javaslatot nyújt be a hálózathoz...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "A regisztráció befejeződik, amint a tranzakciót megerősítik",
             "VOTINGONPROPOSAL": "A javaslat szavazatának elküldése",
             "VOTEDONPROPOSAL": "A szavazatát a tranzakció megerősítését követően számítják.",
-            "NOADDRESS": "Nem adta meg a Metrix címet",
             "PINGINGGOVERNOR": "Ping küldése...",
             "PINGEDGOVERNOR": "Ping küldése sikeres volt. A kormányzót a tranzakció megerősítése után frissítjük",
             "UNENROLLINGGOVERNOR": "Kormányzó leiratkozása...",
             "UNENROLLEDGOVERNOR": "Tranzakció elküldve. A kormányzót a tranzakció megerősítését követően visszavonják",
             "GOVERNORNOTMATURE": "Kormányzója még nem elég érett a művelet végrehajtására"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Küldesz",
+                "YOUGET": "Kapsz",
+                "MRXADDRESS": "Metrix cím",
+                "SWAP": "Csere",
+                "SWAPADDRESSES": "Címek cseréje",
+                "BTCADDRESS": "BTC cím",
+                "INFOLINE1": "Ha rendelkezik BTC betéti címmel, az erre a címre küldött BTC automatikusan kicserélődik az MRX-re az Ön által kijelölt MRX-címre.",
+                "INFOLINE2-1": "A tranzakciók általában egy órán belül törlődnek, a Bitcoin blokkolási idejétől függően.",
+                "INFOLINE2-2": "A szolgáltatás használatával elfogadja, hogy NEM lakik a felsorolt országokban",
+                "INFOLINE2-3": "itt",
+                "INFOLINE3": "Amint a BTC betéted megtisztul, megkapod az MRX-t a megadott címre.",
+                "INFOLINE4": "További információért látogasson el"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Csere cím generálása...",
+            "ALREADYHAVEADDRESS": "Már van BTC-címe ehhez a Metrix-címhez társítva",
+            "NOADDRESS": "Nem adott meg Metrix-címet"
         }
     }
 }

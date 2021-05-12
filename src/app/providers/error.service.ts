@@ -21,6 +21,14 @@ export class ErrorService {
         } else if (ex.error && ex.error.code === "ESOCKETTIMEDOUT") {
             // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
             // this is usually during sync and heavy loads so we can ignore this error
+        } else if (typeof ex.error.code === "undefined" && typeof ex.error.message !== "undefined") {
+            if (ex.error.message === "ESOCKETTIMEDOUT") {
+                // ESOCKETTIMEDOUT denotes the RPC fails to respond in time
+                // this is usually during sync and heavy loads so we can ignore this error
+            }
+            if (ex.name === "HttpErrorResponse" && ex.status == 400) {
+                this.notification.notify('error', ex.error.message, false)    
+            }
         } else if (ex.rpcCancelled) {
             // ex.rpcCancelled is returned when the RPC calls are cancelled
             // this is usually during a expected or unexpected shutdown of the client

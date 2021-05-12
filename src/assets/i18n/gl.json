@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Xerando un enderezo de intercambio...",
-            "ALREADYHAVEADDRESS": "Xa tes un enderezo BTC asociado a este enderezo Metrix",
-            "SWAPUSDMIN": "O importe mínimo de intercambio en USD é de 50 dólares",
-            "SWAPUSDMAX": "O importe máximo de intercambio en USD é de 3000 dólares",
             "INCOMPLETEFORM": "Non encheu correctamente todos os campos obrigatorios",
             "INVALIDPROPOSALDURATION": "A duración das propostas debería estar entre 1 e 12 meses",
             "CREATINGPROPOSAL": "Envía a proposta á rede...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "A túa inscrición completarase unha vez que se confirme a súa transacción",
             "VOTINGONPROPOSAL": "Enviando a votación da proposta",
             "VOTEDONPROPOSAL": "O teu voto será contado unha vez confirmada a transacción.",
-            "NOADDRESS": "Non introduciu un enderezo Metrix",
             "PINGINGGOVERNOR": "Enviando ping...",
             "PINGEDGOVERNOR": "O ping enviouse correctamente. O seu gobernador actualizarase unha vez que se confirme a transacción",
             "UNENROLLINGGOVERNOR": "Gobernador sen inscrición...",
             "UNENROLLEDGOVERNOR": "Transacción enviada. O seu gobernador darase de baixa cando se confirme a transacción",
             "GOVERNORNOTMATURE": "O seu gobernador aínda non ten a madurez para realizar esta acción"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Envía",
+                "YOUGET": "Ti obtés",
+                "MRXADDRESS": "Enderezo Metrix",
+                "SWAP": "Intercambiar",
+                "SWAPADDRESSES": "Intercambiar enderezos",
+                "BTCADDRESS": "Enderezo BTC",
+                "INFOLINE1": "Unha vez que teña un enderezo de depósito BTC, calquera BTC enviado a ese enderezo cambiarase automaticamente por MRX polo seu enderezo MRX designado.",
+                "INFOLINE2-1": "As transaccións normalmente despexan nunha hora dependendo dos tempos de bloqueo de Bitcoin.",
+                "INFOLINE2-2": "Ao usar este servizo, acepta que NON reside nos países mencionados",
+                "INFOLINE2-3": "aquí",
+                "INFOLINE3": "Unha vez que se borre o seu depósito de BTC, recibirá o seu MRX no seu enderezo designado.",
+                "INFOLINE4": "Para máis información visite"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Xerando enderezo de intercambio...",
+            "ALREADYHAVEADDRESS": "Xa tes un enderezo BTC asociado a este enderezo Metrix",
+            "NOADDRESS": "Non introduciu un enderezo Metrix"
         }
     }
 }

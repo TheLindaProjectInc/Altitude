@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Generuojamas apsikeitimo adresas...",
-            "ALREADYHAVEADDRESS": "Jūs jau turite su šiuo „Metrix“ adresu susietą BTC adresą",
-            "SWAPUSDMIN": "Minimali apsikeitimo USD suma yra 50 USD",
-            "SWAPUSDMAX": "Maksimali USD apsikeitimo suma yra 3000 USD",
             "INCOMPLETEFORM": "Neteisingai užpildėte visus būtinus laukus",
             "INVALIDPROPOSALDURATION": "Pasiūlymo trukmė turėtų būti nuo 1 iki 12 mėnesių",
             "CREATINGPROPOSAL": "Pateikiamas pasiūlymas tinkle...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Jūsų registracija bus baigta, kai jūsų operacija bus patvirtinta",
             "VOTINGONPROPOSAL": "Siunčiamas pasiūlymo balsas",
             "VOTEDONPROPOSAL": "Jūsų balsas bus skaičiuojamas patvirtinus operaciją.",
-            "NOADDRESS": "Neįvedėte „Metrix“ adreso",
             "PINGINGGOVERNOR": "Siunčiamas ping...",
             "PINGEDGOVERNOR": "Pingas sėkmingai išsiųstas. Jūsų valdytojas bus atnaujintas, kai bus patvirtinta operacija",
             "UNENROLLINGGOVERNOR": "Išregistruojamas gubernatorius...",
             "UNENROLLEDGOVERNOR": "Operacija išsiųsta. Patvirtinus operaciją, jūsų gubernatorius bus išregistruotas",
             "GOVERNORNOTMATURE": "Jūsų gubernatorius dar nėra pakankamai subrendęs atlikti šį veiksmą"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu išsiuntei",
+                "YOUGET": "Jūs gaunate",
+                "MRXADDRESS": "„Metrix“ adresas",
+                "SWAP": "Keisti",
+                "SWAPADDRESSES": "Keisti adresus",
+                "BTCADDRESS": "BTC adresas",
+                "INFOLINE1": "Kai turėsite BTC indėlio adresą, bet kuris tuo adresu siunčiamas BTC bus automatiškai pakeistas į MRX į jūsų paskirtą MRX adresą.",
+                "INFOLINE2-1": "Operacijos paprastai išvalomos per valandą, priklausomai nuo „Bitcoin“ blokavimo laiko.",
+                "INFOLINE2-2": "Naudodamiesi šia paslauga, sutinkate, kad negyvenate išvardytose šalyse",
+                "INFOLINE2-3": "čia",
+                "INFOLINE3": "Kai jūsų BTC indėlis bus išvalytas, gausite MRX į nurodytą adresą.",
+                "INFOLINE4": "Norėdami gauti daugiau informacijos apsilankykite"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Generuojamas apsikeitimo adresas...",
+            "ALREADYHAVEADDRESS": "Jūs jau turite BTC adresą, susietą su šiuo „Metrix“ adresu",
+            "NOADDRESS": "Jūs neįvedėte „Metrix“ adreso"
         }
     }
 }

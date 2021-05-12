@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Býr til skipti heimilisfang...",
-            "ALREADYHAVEADDRESS": "Þú ert nú þegar með BTC-heimilisfang tengt þessu Metrix heimilisfangi",
-            "SWAPUSDMIN": "Lágmarks USD fjárhæð skiptaskipta er $ 50",
-            "SWAPUSDMAX": "Hámarks USD fjárhæð skiptaskipta er $ 3000",
             "INCOMPLETEFORM": "Þú hefur ekki fyllt út alla nauðsynlega reiti rétt",
             "INVALIDPROPOSALDURATION": "Tímalengd tillögunnar ætti að vera á milli 1 og 12 mánaða",
             "CREATINGPROPOSAL": "Sendir tillögu í netkerfið...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Innritun þinni verður lokið þegar viðskipti þín hafa verið staðfest",
             "VOTINGONPROPOSAL": "Sendir tillögu atkvæði",
             "VOTEDONPROPOSAL": "Atkvæði þitt verður talið þegar viðskiptin eru staðfest.",
-            "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang",
             "PINGINGGOVERNOR": "Sendir ping...",
             "PINGEDGOVERNOR": "Ping sent með góðum árangri. Seðlabankastjóri þinn verður uppfærður þegar viðskiptin eru staðfest",
             "UNENROLLINGGOVERNOR": "Afskráir ríkisstjóra...",
             "UNENROLLEDGOVERNOR": "Viðskipti send. Seðlabankastjóri þinn verður skráður þegar viðskiptin eru staðfest",
             "GOVERNORNOTMATURE": "Seðlabankastjóri þinn er ekki nógu þroskaður til að framkvæma þessa aðgerð ennþá"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Þú sendir",
+                "YOUGET": "Þú færð",
+                "MRXADDRESS": "Heimilisfang Metrix",
+                "SWAP": "Skiptu um",
+                "SWAPADDRESSES": "Skiptu um heimilisfang",
+                "BTCADDRESS": "BTC heimilisfang",
+                "INFOLINE1": "Þegar þú ert með BTC innlánsföng, þá breytist hvaða BTC sem er sent á það heimilisfang sjálfkrafa fyrir MRX á MRX netfangið þitt.",
+                "INFOLINE2-1": "Viðskipti hreinsast venjulega innan klukkustundar, háð Bitcoin lokatímanum.",
+                "INFOLINE2-2": "Með því að nota þessa þjónustu samþykkir þú að þú búir EKKI í þeim löndum sem skráð eru",
+                "INFOLINE2-3": "hér",
+                "INFOLINE3": "Þegar BTC innborgun þín hefur verið hreinsuð færðu MRX þinn inn á tilnefnt heimilisfang þitt.",
+                "INFOLINE4": "Fyrir frekari upplýsingar heimsókn"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Býr til veffang...",
+            "ALREADYHAVEADDRESS": "Þú ert nú þegar með BTC heimilisfang sem tengist þessu Metrix netfangi",
+            "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang"
         }
     }
 }

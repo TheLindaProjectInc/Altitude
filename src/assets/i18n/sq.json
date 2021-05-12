@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Gjenerimi i adresës së shkëmbimit...",
-            "ALREADYHAVEADDRESS": "Tashmë keni një adresë BTC të lidhur me këtë adresë Metrix",
-            "SWAPUSDMIN": "Shuma minimale e këmbimit në USD është 50 dollarë",
-            "SWAPUSDMAX": "Shuma maksimale e shkëmbimit të dollarit është 3000 dollarë",
             "INCOMPLETEFORM": "Ju nuk i keni mbushur të gjitha fushat e kërkuara saktë",
             "INVALIDPROPOSALDURATION": "Kohëzgjatja e propozimit duhet të jetë midis 1 dhe 12 muaj",
             "CREATINGPROPOSAL": "Dorëzimi i propozimit në rrjet...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Regjistrimi juaj do të jetë i plotë pasi të konfirmohet transaksioni juaj",
             "VOTINGONPROPOSAL": "Dërgimi i votimit të propozimit",
             "VOTEDONPROPOSAL": "Vota juaj do të llogaritet pasi të konfirmohet transaksioni.",
-            "NOADDRESS": "Ju nuk shkruani një adresë Metrix",
             "PINGINGGOVERNOR": "Po dërgohet ping...",
             "PINGEDGOVERNOR": "Ping u dërgua me sukses. Guvernatori juaj do të azhurnohet pasi të konfirmohet transaksioni",
             "UNENROLLINGGOVERNOR": "Po çregjistrohet Guvernatori...",
             "UNENROLLEDGOVERNOR": "Transaksioni u dërgua. Guvernatori juaj do të çregjistrohet pasi të konfirmohet transaksioni",
             "GOVERNORNOTMATURE": "Guvernatori juaj nuk është ende mjaft i pjekur për të kryer këtë veprim"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ju dërgoni",
+                "YOUGET": "Ju merrni",
+                "MRXADDRESS": "Adresa e Metrix",
+                "SWAP": "Shkëmbim",
+                "SWAPADDRESSES": "Ndërroni Adresat",
+                "BTCADDRESS": "Adresa BTC",
+                "INFOLINE1": "Pasi të keni një adresë depozite BTC, çdo BTC i dërguar në atë adresë do të ndërrohet automatikisht me MRX në adresën tuaj të nominuar MRX.",
+                "INFOLINE2-1": "Transaksionet zakonisht pastrohen brenda një ore në varësi të kohës së bllokimit të Bitcoin.",
+                "INFOLINE2-2": "Duke përdorur këtë shërbim, ju pranoni që NUK banoni në vendet e listuara",
+                "INFOLINE2-3": "ketu",
+                "INFOLINE3": "Pasi të jetë pastruar depozita juaj BTC, ju do të merrni MRX tuaj në adresën tuaj të emëruar.",
+                "INFOLINE4": "Për më shumë informacion vizitoni"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Po gjeneron adresën e ndërrimit...",
+            "ALREADYHAVEADDRESS": "Ju tashmë keni një adresë BTC të shoqëruar me këtë adresë Metrix",
+            "NOADDRESS": "Ju nuk keni futur një adresë të Metrix"
         }
     }
 }

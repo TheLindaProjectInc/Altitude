@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "正在产生交换地址...",
-            "ALREADYHAVEADDRESS": "您已经有与此Metrix地址相关联的BTC地址",
-            "SWAPUSDMIN": "最低美元掉期金额为50美元",
-            "SWAPUSDMAX": "最大美元掉期金额为$ 3000",
             "INCOMPLETEFORM": "您尚未正确填写所有必填字段",
             "INVALIDPROPOSALDURATION": "投标期限应在1到12个月之间",
             "CREATINGPROPOSAL": "正在向网络提交提案...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "交易确认后，您的注册即告完成",
             "VOTINGONPROPOSAL": "发送提案投票",
             "VOTEDONPROPOSAL": "交易确认后，您的票数就会计算在内。",
-            "NOADDRESS": "您没有输入Metrix地址",
             "PINGINGGOVERNOR": "正在发送ping...",
             "PINGEDGOVERNOR": "Ping发送成功。交易确认后，您的总督将被更新",
             "UNENROLLINGGOVERNOR": "正在取消注册州长...",
             "UNENROLLEDGOVERNOR": "交易已发送。交易确认后，您的总督将被取消注册",
             "GOVERNORNOTMATURE": "您的州长还不够成熟，无法执行此操作"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "您发送",
+                "YOUGET": "你得到",
+                "MRXADDRESS": "Metrix地址",
+                "SWAP": "交换",
+                "SWAPADDRESSES": "交换地址",
+                "BTCADDRESS": "BTC地址",
+                "INFOLINE1": "一旦有了BTC存款地址，发送到该地址的所有BTC都会自动被MRX交换为您指定的MRX地址。",
+                "INFOLINE2-1": "交易通常会在一小时内清算，具体取决于比特币的冻结时间。",
+                "INFOLINE2-2": "使用此服务，即表示您同意您不在所列出的国家/地区居住",
+                "INFOLINE2-3": "这里",
+                "INFOLINE3": "清除BTC存款后，您会在指定地址收到MRX。",
+                "INFOLINE4": "欲了解更多信息，请访问"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "产生交换地址...",
+            "ALREADYHAVEADDRESS": "您已经有一个与此Metrix地址相关联的BTC地址",
+            "NOADDRESS": "您没有输入Metrix地址"
         }
     }
 }

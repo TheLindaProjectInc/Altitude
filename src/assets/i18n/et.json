@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Vahetusaadressi genereerimine...",
-            "ALREADYHAVEADDRESS": "Selle Metrix-aadressiga on teil juba seotud BTC-aadress",
-            "SWAPUSDMIN": "Minimaalne USD vahetustasu on 50 USD",
-            "SWAPUSDMAX": "Maksimaalne USD vahetustehingusumma on 3000 USD",
             "INCOMPLETEFORM": "Te pole kõiki nõutud välju õigesti täitnud",
             "INVALIDPROPOSALDURATION": "Pakkumise kestus peaks olema 1–12 kuud",
             "CREATINGPROPOSAL": "Esitatakse ettepanek võrku...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Kui tehing on kinnitatud, on registreerumine lõppenud",
             "VOTINGONPROPOSAL": "Ettepanekuhääletuse saatmine",
             "VOTEDONPROPOSAL": "Kui tehing on kinnitatud, arvestatakse teie häält.",
-            "NOADDRESS": "Metriksi aadressi ei sisestatud",
             "PINGINGGOVERNOR": "Pingi saatmine...",
             "PINGEDGOVERNOR": "Ping saatis edukalt. Teie kuberneri värskendatakse pärast tehingu kinnitamist",
             "UNENROLLINGGOVERNOR": "Kuberneri eemaldamine...",
             "UNENROLLEDGOVERNOR": "Tehing saadetud. Teie tehing kinnitatakse pärast tehingu kinnitamist",
             "GOVERNORNOTMATURE": "Teie kuberner pole selle toimingu sooritamiseks veel piisavalt küps"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Saadate",
+                "YOUGET": "Sa saad",
+                "MRXADDRESS": "Metrixi aadress",
+                "SWAP": "Vaheta",
+                "SWAPADDRESSES": "Aadresside vahetamine",
+                "BTCADDRESS": "BTC aadress",
+                "INFOLINE1": "Kui teil on BTC sissemakse aadress, vahetatakse kõik sellele aadressile saadetud BTC automaatselt teie määratud MRX aadressile MRX vastu.",
+                "INFOLINE2-1": "Tehingud kliiritakse tavaliselt tunni jooksul, sõltuvalt Bitcoini blokeerimisajast.",
+                "INFOLINE2-2": "Selle teenuse kasutamisega nõustute, et EI ela loetletud riikides",
+                "INFOLINE2-3": "siin",
+                "INFOLINE3": "Kui teie BTC sissemakse on kustutatud, saate oma MRX teie määratud aadressile.",
+                "INFOLINE4": "Lisateabe saamiseks külastage"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Vahetatava aadressi loomine...",
+            "ALREADYHAVEADDRESS": "Selle Metrixi aadressiga on teil juba seotud BTC-aadress",
+            "NOADDRESS": "Te ei sisestanud Metrixi aadressi"
         }
     }
 }

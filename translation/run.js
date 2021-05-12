@@ -4,7 +4,7 @@ let languages = require('./languages.json')
 const fs = require('fs');
 
 var ggl = google(process.env.APIKEY);  // this is required to use google translate service
-var retranslate = ['PROPOSALADDRESS'] // add fields to here to force the translator to re-translate
+var retranslate = [] // add fields to here to force the translator to re-translate
 var removeTranslation = [] // add fields to here to remove them from all translation files (except en.json must be removed manually)
 
 async function translateLanguageFiles() {
@@ -37,7 +37,7 @@ async function translateLanguageFiles() {
         // recursively run through the objects in the english source
         // translating when we hit a string
         await walkObject(englishSource, output, languageData.code)
-        delete output.BUY
+        //delete output.BUY
         // write output to language file
         fs.writeFileSync(translationFile, JSON.stringify(output, null, 4));
         console.log("Translating", languageName, "completed in", (new Date().getTime() - start) / 1000, 'seconds');

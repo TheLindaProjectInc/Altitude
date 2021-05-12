@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "스왑 주소 생성 중...",
-            "ALREADYHAVEADDRESS": "이 Metrix 주소와 연결된 BTC 주소가 이미 있습니다",
-            "SWAPUSDMIN": "최소 USD 스왑 금액은 $ 50입니다.",
-            "SWAPUSDMAX": "최대 USD 스왑 금액은 $ 3000입니다.",
             "INCOMPLETEFORM": "모든 필수 필드를 올바르게 입력하지 않았습니다",
             "INVALIDPROPOSALDURATION": "제안 기간은 1 개월에서 12 개월 사이 여야합니다.",
             "CREATINGPROPOSAL": "네트워크에 제안서를 제출하는 중...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "거래가 확인되면 등록이 완료됩니다",
             "VOTINGONPROPOSAL": "제안 투표를 보내는 중",
             "VOTEDONPROPOSAL": "거래가 확인되면 투표가 집계됩니다.",
-            "NOADDRESS": "Metrix 주소를 입력하지 않았습니다",
             "PINGINGGOVERNOR": "핑 전송 중...",
             "PINGEDGOVERNOR": "Ping이 성공적으로 전송되었습니다. 거래가 확인되면 주지사가 업데이트됩니다.",
             "UNENROLLINGGOVERNOR": "주지사 등록 취소 중...",
             "UNENROLLEDGOVERNOR": "거래가 전송되었습니다. 귀하의 주지사는 거래가 확인되면 등록이 취소됩니다.",
             "GOVERNORNOTMATURE": "주지사는 아직이 작업을 수행 할 수있을만큼 성숙하지 않았습니다."
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "당신은",
+                "YOUGET": "당신은 얻을",
+                "MRXADDRESS": "Metrix 주소",
+                "SWAP": "교환",
+                "SWAPADDRESSES": "주소 스왑",
+                "BTCADDRESS": "BTC 주소",
+                "INFOLINE1": "BTC 입금 주소가 있으면 해당 주소로 전송 된 모든 BTC가 자동으로 MRX로 교체되어 지정된 MRX 주소로 전환됩니다.",
+                "INFOLINE2-1": "거래는 일반적으로 비트 코인 블록 시간에 따라 1 시간 이내에 삭제됩니다.",
+                "INFOLINE2-2": "이 서비스를 사용하면 나열된 국가에 거주하지 않는다는 데 동의하는 것입니다.",
+                "INFOLINE2-3": "여기",
+                "INFOLINE3": "BTC 입금이 완료되면 지정된 주소로 MRX를 받게됩니다.",
+                "INFOLINE4": "자세한 내용은"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "스왑 주소 생성 중...",
+            "ALREADYHAVEADDRESS": "이 Metrix 주소와 연결된 BTC 주소가 이미 있습니다.",
+            "NOADDRESS": "Metrix 주소를 입력하지 않았습니다."
         }
     }
 }

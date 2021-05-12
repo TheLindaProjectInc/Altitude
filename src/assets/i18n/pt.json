@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Gerando endereço de troca...",
-            "ALREADYHAVEADDRESS": "Você já tem um endereço BTC associado a este endereço Metrix",
-            "SWAPUSDMIN": "O valor mínimo do swap em USD é $ 50",
-            "SWAPUSDMAX": "O valor máximo do swap em USD é $ 3000",
             "INCOMPLETEFORM": "Você não preencheu todos os campos obrigatórios corretamente",
             "INVALIDPROPOSALDURATION": "A duração da proposta deve estar entre 1 e 12 meses",
             "CREATINGPROPOSAL": "Enviando proposta para a rede...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Sua inscrição será concluída assim que sua transação for confirmada",
             "VOTINGONPROPOSAL": "Enviando votação da proposta",
             "VOTEDONPROPOSAL": "Seu voto será contado assim que a transação for confirmada.",
-            "NOADDRESS": "Você não inseriu um endereço Metrix",
             "PINGINGGOVERNOR": "Enviando ping...",
             "PINGEDGOVERNOR": "Ping enviado com sucesso. Seu governador será atualizado assim que a transação for confirmada",
             "UNENROLLINGGOVERNOR": "Cancelando a inscrição do governador...",
             "UNENROLLEDGOVERNOR": "Transação enviada. Seu governador será cancelado assim que a transação for confirmada",
             "GOVERNORNOTMATURE": "Seu governador ainda não tem maturidade suficiente para realizar esta ação"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Você envia",
+                "YOUGET": "You Get",
+                "MRXADDRESS": "Endereço Metrix",
+                "SWAP": "Trocar",
+                "SWAPADDRESSES": "Trocar endereços",
+                "BTCADDRESS": "Endereço BTC",
+                "INFOLINE1": "Assim que você tiver um endereço de depósito BTC, qualquer BTC enviado para esse endereço será automaticamente trocado por MRX em seu endereço MRX nomeado.",
+                "INFOLINE2-1": "As transações normalmente são liberadas em uma hora, dependendo dos tempos de bloqueio do Bitcoin.",
+                "INFOLINE2-2": "Ao usar este serviço, você concorda que NÃO reside nos países listados",
+                "INFOLINE2-3": "aqui",
+                "INFOLINE3": "Assim que seu depósito BTC for liberado, você receberá seu MRX no endereço indicado.",
+                "INFOLINE4": "Para mais informações visite"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Gerando endereço de troca...",
+            "ALREADYHAVEADDRESS": "Você já tem um endereço BTC associado a este endereço Metrix",
+            "NOADDRESS": "Você não inseriu um endereço Metrix"
         }
     }
 }

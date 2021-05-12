@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Ustvarjanje zamenjave naslova...",
-            "ALREADYHAVEADDRESS": "S tem naslovom Metrix že imate naslov BTC",
-            "SWAPUSDMIN": "Najmanjši znesek zamenjave v USD je 50 USD",
-            "SWAPUSDMAX": "Najvišji znesek zamenjave v USD je 3000 USD",
             "INCOMPLETEFORM": "Niste pravilno izpolnili vseh zahtevanih polj",
             "INVALIDPROPOSALDURATION": "Trajanje predlogov mora biti od 1 do 12 mesecev",
             "CREATINGPROPOSAL": "Oddaja predloga v omrežje...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Po potrditvi transakcije bo vaš vpis končan",
             "VOTINGONPROPOSAL": "Pošiljanje predloga glasovanja",
             "VOTEDONPROPOSAL": "Vaš glas bo štet, ko bo transakcija potrjena.",
-            "NOADDRESS": "Niste vnesli naslova Metrix",
             "PINGINGGOVERNOR": "Pošiljanje pinga...",
             "PINGEDGOVERNOR": "Ping je bil uspešno poslan. Po potrditvi transakcije bo vaš guverner posodobljen",
             "UNENROLLINGGOVERNOR": "Odjava guvernerja...",
             "UNENROLLEDGOVERNOR": "Transakcija je poslana. Ko bo transakcija potrjena, bo vaš guverner odjavljen",
             "GOVERNORNOTMATURE": "Vaš guverner še ni dovolj zrel za izvajanje tega dejanja"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Ti Pošlji",
+                "YOUGET": "Dobiš",
+                "MRXADDRESS": "Naslov Metrix",
+                "SWAP": "Zamenjaj",
+                "SWAPADDRESSES": "Zamenjaj naslove",
+                "BTCADDRESS": "Naslov BTC",
+                "INFOLINE1": "Ko imate naslov za polog BTC, se vsak BTC, poslan na ta naslov, samodejno zamenja za MRX v vaš imenovani naslov MRX.",
+                "INFOLINE2-1": "Transakcije se običajno izvedejo v eni uri, odvisno od časa blokov Bitcoinov.",
+                "INFOLINE2-2": "Z uporabo te storitve se strinjate, da NE prebivate v navedenih državah",
+                "INFOLINE2-3": "tukaj",
+                "INFOLINE3": "Ko bo vaš BTC polog potrjen, boste prejeli MRX na svoj nominirani naslov.",
+                "INFOLINE4": "Za več informacij obiščite"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ustvarjanje naslova za zamenjavo...",
+            "ALREADYHAVEADDRESS": "S tem naslovom Metrix že imate povezan naslov BTC",
+            "NOADDRESS": "Niste vnesli naslova Metrix"
         }
     }
 }

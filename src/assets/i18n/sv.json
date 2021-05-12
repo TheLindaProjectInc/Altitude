@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Genererar byta adress...",
-            "ALREADYHAVEADDRESS": "Du har redan en BTC-adress kopplad till denna Metrix-adress",
-            "SWAPUSDMIN": "Det lägsta USD-swapbeloppet är $ 50",
-            "SWAPUSDMAX": "Det maximala USD-swapbeloppet är $ 3000",
             "INCOMPLETEFORM": "Du har inte fyllt i alla obligatoriska fält korrekt",
             "INVALIDPROPOSALDURATION": "Förslagets varaktighet bör vara mellan 1 och 12 månader",
             "CREATINGPROPOSAL": "Skickar förslag till nätverk...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Din registrering kommer att vara klar när din transaktion har bekräftats",
             "VOTINGONPROPOSAL": "Skicka förslagets omröstning",
             "VOTEDONPROPOSAL": "Din röst kommer att räknas när transaktionen har bekräftats.",
-            "NOADDRESS": "Du angav inte en Metrix-adress",
             "PINGINGGOVERNOR": "Skickar ping...",
             "PINGEDGOVERNOR": "Ping skickades. Din guvernör kommer att uppdateras när transaktionen har bekräftats",
             "UNENROLLINGGOVERNOR": "Avregistrerar guvernören...",
             "UNENROLLEDGOVERNOR": "Transaktion skickad. Din guvernör kommer att avregistreras när transaktionen har bekräftats",
             "GOVERNORNOTMATURE": "Din guvernör är inte mogen för att utföra den här åtgärden än"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Du skickar",
+                "YOUGET": "Du får",
+                "MRXADDRESS": "Metrix-adress",
+                "SWAP": "Byta",
+                "SWAPADDRESSES": "Byt adresser",
+                "BTCADDRESS": "BTC-adress",
+                "INFOLINE1": "När du har en BTC-insättningsadress byts alla BTC som skickas till den adressen automatiskt mot MRX till din nominerade MRX-adress.",
+                "INFOLINE2-1": "Transaktioner rensas vanligtvis inom en timme beroende på Bitcoin-blocktiderna.",
+                "INFOLINE2-2": "Genom att använda den här tjänsten godkänner du att du INTE bor i de listade länderna",
+                "INFOLINE2-3": "här",
+                "INFOLINE3": "När din BTC-insättning har godkänts får du din MRX till din nominerade adress.",
+                "INFOLINE4": "För mer information besök"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Skapar bytesadress...",
+            "ALREADYHAVEADDRESS": "Du har redan en BTC-adress kopplad till denna Metrix-adress",
+            "NOADDRESS": "Du angav inte en Metrix-adress"
         }
     }
 }

@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Generar l'adreça de l'intercanvi...",
-            "ALREADYHAVEADDRESS": "Ja teniu una adreça BTC associada a aquesta adreça de Metrix",
-            "SWAPUSDMIN": "La quantitat mínima de swap de USD és de 50 dòlars",
-            "SWAPUSDMAX": "La quantitat màxima de swap de USD és de 3000 dòlars",
             "INCOMPLETEFORM": "No heu emplenat correctament tots els camps obligatoris",
             "INVALIDPROPOSALDURATION": "La durada de la proposta hauria d’estar entre 1 i 12 mesos",
             "CREATINGPROPOSAL": "S'està enviant la proposta a la xarxa...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "La vostra inscripció es completarà una vegada confirmada la vostra transacció",
             "VOTINGONPROPOSAL": "S'està enviant la votació a la proposta",
             "VOTEDONPROPOSAL": "El vostre vot es comptarà un cop confirmada la transacció.",
-            "NOADDRESS": "No heu introduït una adreça de Metrix",
             "PINGINGGOVERNOR": "S'està enviant el ping...",
             "PINGEDGOVERNOR": "S'ha enviat el ping correctament. El vostre governador s'actualitzarà un cop s'hagi confirmat la transacció",
             "UNENROLLINGGOVERNOR": "S'està donant de baixa el governador...",
             "UNENROLLEDGOVERNOR": "Transacció enviada. El vostre governador es donarà de baixa un cop confirmada la transacció",
             "GOVERNORNOTMATURE": "El vostre governador encara no té la maduresa necessària per dur a terme aquesta acció"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu envies",
+                "YOUGET": "Ho aconsegueixes",
+                "MRXADDRESS": "Adreça Metrix",
+                "SWAP": "Intercanvi",
+                "SWAPADDRESSES": "Intercanviar adreces",
+                "BTCADDRESS": "Adreça BTC",
+                "INFOLINE1": "Un cop tingueu una adreça de dipòsit BTC, qualsevol BTC enviat a aquesta adreça es canviarà automàticament per MRX a la vostra adreça MRX designada.",
+                "INFOLINE2-1": "Normalment, les transaccions s’esborren en una hora en funció dels temps de bloqueig de Bitcoin.",
+                "INFOLINE2-2": "En utilitzar aquest servei, accepteu que NO residiu als països indicats",
+                "INFOLINE2-3": "aquí",
+                "INFOLINE3": "Un cop s'hagi esborrat el vostre dipòsit de BTC, rebreu el vostre MRX a la vostra adreça designada.",
+                "INFOLINE4": "Per obtenir més informació, visiteu"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "S'està generant l'adreça d'intercanvi...",
+            "ALREADYHAVEADDRESS": "Ja teniu una adreça BTC associada a aquesta adreça Metrix",
+            "NOADDRESS": "No heu introduït cap adreça de Metrix"
         }
     }
 }

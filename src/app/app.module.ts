@@ -31,6 +31,7 @@ import { CurrencyService } from './providers/currency.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
+import * as buy from './buy/buy.module';
 import * as dgp from './dgp/dgp.module';
 // pipes
 import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
@@ -44,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 const routes: Routes = [
   { path: '', redirectTo: '/metrix', pathMatch: 'full' },
   metrix.route,
+  buy.route,
   dgp.route
 ];
 
@@ -53,6 +55,7 @@ const routes: Routes = [
     PrettyCoinsPipe,
     ...componentDeclarations,
     ...metrix.declarations,
+    ...buy.declarations,
     ...dgp.declarations
   ],
   imports: [
@@ -88,6 +91,7 @@ const routes: Routes = [
     CurrencyService,
     ...componentProviders,
     ...metrix.providers,
+    ...buy.providers,
     ...dgp.providers,
   ],
   bootstrap: [

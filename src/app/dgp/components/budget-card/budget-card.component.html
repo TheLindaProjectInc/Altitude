@@ -14,7 +14,7 @@
 
             <div class="flex-column-center" style="margin-bottom: 1rem;">
                 <progress max="100" [value]="passPercent" style="margin-bottom:0;"
-                    title="{{proposal.yesVote}}/{{proposal.noVote}}"></progress>
+                    title="Yes: {{proposal.yesVote}} No: {{proposal.noVote}}"></progress>
                 <span *ngIf="!isPassing" style="font-size: 0.7rem;">
                     {{votesToPass}} {{ 'DGP.PAGES.BUDGET.VOTESTOPASS' | translate }}
                 </span>

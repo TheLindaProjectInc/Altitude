@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Mübadilə ünvanı yaradılır...",
-            "ALREADYHAVEADDRESS": "Artıq bu Metrix ünvanı ilə əlaqəli BTC ünvanınız var",
-            "SWAPUSDMIN": "USD svopunun minimum məbləği 50 dollardır",
-            "SWAPUSDMAX": "Maksimum USD svop məbləği 3000 dollardır",
             "INCOMPLETEFORM": "Bütün tələb olunan sahələri düzgün doldurmadın",
             "INVALIDPROPOSALDURATION": "Təklif müddəti 1 ilə 12 ay arasında olmalıdır",
             "CREATINGPROPOSAL": "Təklif şəbəkəyə təqdim olunur...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Əməliyyat təsdiqləndikdən sonra qeydiyyat başa çatacaq",
             "VOTINGONPROPOSAL": "Təklif səsverməsi göndərilir",
             "VOTEDONPROPOSAL": "Əməliyyat təsdiqləndikdən sonra səsiniz sayılacaqdır.",
-            "NOADDRESS": "Metrix ünvanı daxil etmədiniz",
             "PINGINGGOVERNOR": "Ping göndərilir...",
             "PINGEDGOVERNOR": "Ping uğurla göndərildi. Əməliyyat təsdiqləndikdən sonra Valiniz güncellenecek",
             "UNENROLLINGGOVERNOR": "Vali qeydiyyatdan çıxır...",
             "UNENROLLEDGOVERNOR": "Əməliyyat göndərildi. Əməliyyat təsdiqləndikdən sonra valiniz qeydiyyatdan çıxarılacaq",
             "GOVERNORNOTMATURE": "Qubernatorunuz bu hərəkəti həyata keçirəcək qədər yetkin deyil"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Siz göndərin",
+                "YOUGET": "Siz əldə edin",
+                "MRXADDRESS": "Metrix Ünvan",
+                "SWAP": "Dəyişdirin",
+                "SWAPADDRESSES": "Ünvanları dəyişdirin",
+                "BTCADDRESS": "BTC ünvanı",
+                "INFOLINE1": "Bir BTC depozit ünvanına sahib olduqdan sonra, həmin ünvana göndərilən hər hansı bir BTC avtomatik olaraq MRX üçün təyin olunmuş MRX adresinizə dəyişdiriləcəkdir.",
+                "INFOLINE2-1": "Əməliyyatlar ümumiyyətlə Bitcoin bloklama müddətlərindən asılı olaraq bir saat ərzində silinir.",
+                "INFOLINE2-2": "Bu xidmətdən istifadə edərək, sadalanan ölkələrdə yaşamadığınızla razılaşırsınız",
+                "INFOLINE2-3": "burada",
+                "INFOLINE3": "BTC depozitiniz təmizləndikdən sonra MRX-nizi namizəd göstərilən ünvanınıza göndərəcəksiniz.",
+                "INFOLINE4": "Daha çox məlumat üçün müraciət edin"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Mübadilə ünvanı yaradılır...",
+            "ALREADYHAVEADDRESS": "Artıq bu Metrix ünvanı ilə əlaqəli bir BTC ünvanınız var",
+            "NOADDRESS": "Metrix ünvanı daxil etməmisiniz"
         }
     }
 }

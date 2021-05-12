@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Swap-Adresse generieren...",
-            "ALREADYHAVEADDRESS": "Mit dieser Metrix-Adresse ist bereits eine BTC-Adresse verknüpft",
-            "SWAPUSDMIN": "Der Mindest-USD-Swap-Betrag beträgt 50 USD",
-            "SWAPUSDMAX": "Der maximale USD-Swap-Betrag beträgt 3000 USD",
             "INCOMPLETEFORM": "Sie haben nicht alle erforderlichen Felder korrekt ausgefüllt",
             "INVALIDPROPOSALDURATION": "Die Angebotsdauer sollte zwischen 1 und 12 Monaten liegen",
             "CREATINGPROPOSAL": "Vorschlag an das Netzwerk senden...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Ihre Registrierung ist abgeschlossen, sobald Ihre Transaktion bestätigt wurde",
             "VOTINGONPROPOSAL": "Abstimmung des Vorschlags senden",
             "VOTEDONPROPOSAL": "Ihre Stimme wird gezählt, sobald die Transaktion bestätigt wurde.",
-            "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben",
             "PINGINGGOVERNOR": "Ping senden...",
             "PINGEDGOVERNOR": "Ping erfolgreich gesendet. Ihr Gouverneur wird aktualisiert, sobald die Transaktion bestätigt wurde",
             "UNENROLLINGGOVERNOR": "Abmeldender Gouverneur...",
             "UNENROLLEDGOVERNOR": "Transaktion gesendet. Ihr Gouverneur wird abgemeldet, sobald die Transaktion bestätigt wurde",
             "GOVERNORNOTMATURE": "Ihr Gouverneur ist noch nicht reif genug, um diese Aktion durchzuführen"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Du sendest",
+                "YOUGET": "Du erhältst",
+                "MRXADDRESS": "Metrix-Adresse",
+                "SWAP": "Tauschen",
+                "SWAPADDRESSES": "Adressen tauschen",
+                "BTCADDRESS": "BTC-Adresse",
+                "INFOLINE1": "Sobald Sie eine BTC-Einzahlungsadresse haben, wird jede an diese Adresse gesendete BTC automatisch gegen MRX in Ihre angegebene MRX-Adresse ausgetauscht.",
+                "INFOLINE2-1": "Transaktionen werden in der Regel innerhalb einer Stunde abgeschlossen, abhängig von den Bitcoin-Blockierungszeiten.",
+                "INFOLINE2-2": "Durch die Nutzung dieses Dienstes erklären Sie sich damit einverstanden, dass Sie NICHT in den aufgeführten Ländern wohnen",
+                "INFOLINE2-3": "Hier",
+                "INFOLINE3": "Sobald Ihre BTC-Einzahlung eingegangen ist, erhalten Sie Ihren MRX an Ihre angegebene Adresse.",
+                "INFOLINE4": "Für weitere Informationen besuchen Sie"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Swap-Adresse generieren...",
+            "ALREADYHAVEADDRESS": "Mit dieser Metrix-Adresse ist bereits eine BTC-Adresse verknüpft",
+            "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben"
         }
     }
 }

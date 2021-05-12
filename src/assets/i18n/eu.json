@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Swap helbidea sortzea...",
-            "ALREADYHAVEADDRESS": "Metrix helbide honi lotuta dagoeneko BTC helbidea duzu",
-            "SWAPUSDMIN": "USD swap gutxieneko zenbatekoa 50 $ da",
-            "SWAPUSDMAX": "USDko swap gehieneko zenbatekoa 3000 $ da",
             "INCOMPLETEFORM": "Ez dituzu beharrezko eremu guztiak behar bezala bete",
             "INVALIDPROPOSALDURATION": "Proposamenen iraupena 1 eta 12 hilabete bitartekoa izan behar da",
             "CREATINGPROPOSAL": "Proposamena sarean bidaltzea...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Zure matrikula amaitu egingo da zure transakzioa baieztatuta",
             "VOTINGONPROPOSAL": "Proposamenari botoa bidaltzen",
             "VOTEDONPROPOSAL": "Zure botoa transakzioa baieztatu ondoren zenbatuko da.",
-            "NOADDRESS": "Ez duzu Metrix helbide bat idatzi",
             "PINGINGGOVERNOR": "Ping-a bidaltzen...",
             "PINGEDGOVERNOR": "Ping behar bezala bidali da. Zure gobernadorea eguneratuko da transakzioa baieztatu ondoren",
             "UNENROLLINGGOVERNOR": "Izena ematen ez duen gobernadorea...",
             "UNENROLLEDGOVERNOR": "Transakzioa bidali da. Zure gobernadorea inskribatuko da transakzioa baieztatu ondoren",
             "GOVERNORNOTMATURE": "Zure gobernadorea oraindik ez dago ekintza hau burutzeko adina"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Bidaltzen duzu",
+                "YOUGET": "Lortzen duzu",
+                "MRXADDRESS": "Metrix Helbidea",
+                "SWAP": "Trukatu",
+                "SWAPADDRESSES": "Trukatu helbideak",
+                "BTCADDRESS": "BTC helbidea",
+                "INFOLINE1": "BTC gordailuaren helbidea izan ondoren, helbide horretara bidalitako edozein BTC automatikoki trukatuko da MRX zure izendatutako MRX helbidera.",
+                "INFOLINE2-1": "Transakzioak normalean ordubete barru garbitzen dira Bitcoin blokearen denboren arabera.",
+                "INFOLINE2-2": "Zerbitzu hau erabiliz gero, onartzen duzu EZ zarela zerrendatutako herrialdeetan bizi",
+                "INFOLINE2-3": "hemen",
+                "INFOLINE3": "Zure BTC gordailua garbitu ondoren, zure MRX jasoko duzu izendatutako helbidera.",
+                "INFOLINE4": "Informazio gehiagorako bisitatu"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Trukatzeko helbidea sortzen...",
+            "ALREADYHAVEADDRESS": "Metrix helbide honekin lotuta dagoeneko BTC helbidea duzu",
+            "NOADDRESS": "Ez duzu Metrix helbiderik idatzi"
         }
     }
 }

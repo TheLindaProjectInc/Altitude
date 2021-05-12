@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Luodaan vaihtoosoitetta...",
-            "ALREADYHAVEADDRESS": "Sinulla on jo BTC-osoite liitetty tähän Metrix-osoitteeseen",
-            "SWAPUSDMIN": "Minimi USD-vaihtomäärä on 50 dollaria",
-            "SWAPUSDMAX": "Maksimi USD-vaihtomäärä on 3000 dollaria",
             "INCOMPLETEFORM": "Et ole täyttänyt kaikkia vaadittavia kenttiä oikein",
             "INVALIDPROPOSALDURATION": "Ehdotuksen keston tulisi olla 1–12 kuukautta",
             "CREATINGPROPOSAL": "Lähetetään ehdotus verkkoon...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Ilmoittautuminen on valmis, kun tapahtuma on vahvistettu",
             "VOTINGONPROPOSAL": "Lähetetään ehdotusäänestys",
             "VOTEDONPROPOSAL": "Äänesi lasketaan, kun tapahtuma on vahvistettu.",
-            "NOADDRESS": "Et kirjoittanut Metrix-osoitetta",
             "PINGINGGOVERNOR": "Lähetetään pingiä...",
             "PINGEDGOVERNOR": "Ping lähetetty onnistuneesti. Kuvernöörisi päivitetään, kun tapahtuma on vahvistettu",
             "UNENROLLINGGOVERNOR": "Kuvernöörin ilmoittautumisen peruuttaminen...",
             "UNENROLLEDGOVERNOR": "Tapahtuma lähetetty. Kuvernöörisi rekisteröinti poistetaan, kun tapahtuma on vahvistettu",
             "GOVERNORNOTMATURE": "Kuvernöörisi ei ole vielä tarpeeksi kypsä suorittamaan tätä toimintoa"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Lähetät",
+                "YOUGET": "Saat",
+                "MRXADDRESS": "Metrix-osoite",
+                "SWAP": "Vaihtaa",
+                "SWAPADDRESSES": "Vaihda osoitteet",
+                "BTCADDRESS": "BTC-osoite",
+                "INFOLINE1": "Kun sinulla on BTC-talletusosoite, kaikki tähän osoitteeseen lähetetyt BTC vaihdetaan automaattisesti MRX: lle nimettyyn MRX-osoitteeseesi.",
+                "INFOLINE2-1": "Tapahtumat selvittyvät yleensä tunnin sisällä Bitcoin-estoajoista riippuen.",
+                "INFOLINE2-2": "Käyttämällä tätä palvelua hyväksyt, ettet asu luetelluissa maissa",
+                "INFOLINE2-3": "tässä",
+                "INFOLINE3": "Kun BTC-talletuksesi on selvitetty, saat MRX: n nimettyyn osoitteeseesi.",
+                "INFOLINE4": "Lisätietoja osoitteessa"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Luodaan vaihto-osoite...",
+            "ALREADYHAVEADDRESS": "Sinulla on jo BTC-osoite tähän Metrix-osoitteeseen",
+            "NOADDRESS": "Et antanut Metrix-osoitetta"
         }
     }
 }

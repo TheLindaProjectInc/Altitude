@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Generarea unei adrese de swap...",
-            "ALREADYHAVEADDRESS": "Aveți deja o adresă BTC asociată cu această adresă Metrix",
-            "SWAPUSDMIN": "Suma minimă de swap în USD este de 50 USD",
-            "SWAPUSDMAX": "Suma maximă de swap în USD este de 3000 USD",
             "INCOMPLETEFORM": "Nu ați completat corect toate câmpurile obligatorii",
             "INVALIDPROPOSALDURATION": "Durata propunerii ar trebui să fie cuprinsă între 1 și 12 luni",
             "CREATINGPROPOSAL": "Trimiterea propunerii la rețea...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "Înscrierea dvs. va fi completă după ce tranzacția dvs. va fi confirmată",
             "VOTINGONPROPOSAL": "Se trimite votul propunerii",
             "VOTEDONPROPOSAL": "Votul dvs. va fi contorizat odată confirmată tranzacția.",
-            "NOADDRESS": "Nu ați introdus o adresă Metrix",
             "PINGINGGOVERNOR": "Se trimite ping...",
             "PINGEDGOVERNOR": "Ping a fost trimis cu succes. Guvernatorul dvs. va fi actualizat după confirmarea tranzacției",
             "UNENROLLINGGOVERNOR": "Anularea guvernatorului...",
             "UNENROLLEDGOVERNOR": "Tranzacție trimisă. Guvernatorul dvs. va fi anulat după înregistrarea tranzacției",
             "GOVERNORNOTMATURE": "Guvernatorul dvs. nu este încă suficient de matur pentru a efectua această acțiune"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Tu trimiti",
+                "YOUGET": "Primesti",
+                "MRXADDRESS": "Adresa Metrix",
+                "SWAP": "Swap",
+                "SWAPADDRESSES": "Schimbați adresele",
+                "BTCADDRESS": "Adresa BTC",
+                "INFOLINE1": "După ce aveți o adresă de depozit BTC, orice BTC trimis la adresa respectivă va fi automat schimbat pentru MRX pe adresa dvs. MRX nominalizată.",
+                "INFOLINE2-1": "Tranzacțiile se anulează de obicei în decurs de o oră, în funcție de timpii blocării Bitcoin.",
+                "INFOLINE2-2": "Prin utilizarea acestui serviciu, sunteți de acord să NU locuiți în țările enumerate",
+                "INFOLINE2-3": "Aici",
+                "INFOLINE3": "Odată ce depozitul dvs. BTC a fost eliminat, veți primi MRX-ul dvs. la adresa nominalizată.",
+                "INFOLINE4": "Pentru mai multe informații vizitați"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Se generează adresa swap...",
+            "ALREADYHAVEADDRESS": "Aveți deja o adresă BTC asociată cu această adresă Metrix",
+            "NOADDRESS": "Nu ați introdus o adresă Metrix"
         }
     }
 }

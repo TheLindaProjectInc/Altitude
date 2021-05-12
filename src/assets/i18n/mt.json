@@ -514,10 +514,6 @@
             }
         },
         "NOTIFICATIONS": {
-            "GETTINGSWAPADDRESS": "Ġenerazzjoni ta 'l-Indirizz ta' Swap...",
-            "ALREADYHAVEADDRESS": "Diġà għandek indirizz BTC assoċjat ma 'dan l-indirizz Metrix",
-            "SWAPUSDMIN": "L-ammont minimu ta ’tpartit ta’ USD huwa ta ’$ 50",
-            "SWAPUSDMAX": "L-ammont massimu ta 'tpartit ta' USD huwa ta '$ 3000",
             "INCOMPLETEFORM": "Int ma mlejtx l-oqsma kollha meħtieġa b'mod korrett",
             "INVALIDPROPOSALDURATION": "Id-dewmien tal-proposta għandu jkun bejn 1 u 12-il xahar",
             "CREATINGPROPOSAL": "Issottometti proposta għan-netwerk...",
@@ -526,12 +522,34 @@
             "ENROLLEDGOVERNOR": "L-iskrizzjoni tiegħek se tkun kompluta ladarba t-tranżazzjoni tiegħek tkun ikkonfermata",
             "VOTINGONPROPOSAL": "Proposta li qed tibgħat vot",
             "VOTEDONPROPOSAL": "Il-vot tiegħek jingħadd ladarba t-tranżazzjoni tkun ikkonfermata.",
-            "NOADDRESS": "Int ma daħħalx indirizz Metrix",
             "PINGINGGOVERNOR": "Mittenti ping...",
             "PINGEDGOVERNOR": "Ping mibgħut b'suċċess. Il-Gvernatur tiegħek jiġi aġġornat ladarba t-tranżazzjoni tkun ikkonfermata",
             "UNENROLLINGGOVERNOR": "Il-Gvernatur li ma jirreġistrax...",
             "UNENROLLEDGOVERNOR": "Tranżazzjoni mibgħuta. Il-Gvernatur tiegħek ma jkunx irreġistrat ladarba t-tranżazzjoni tkun ikkonfermata",
             "GOVERNORNOTMATURE": "Il-Gvernatur tiegħek għadu mhux matur biex iwettaq din l-azzjoni"
+        }
+    },
+    "BUY": {
+        "PAGES": {
+            "HOME": {
+                "YOUSEND": "Int tibgħat",
+                "YOUGET": "Ikollok",
+                "MRXADDRESS": "Indirizz Metrix",
+                "SWAP": "Tpartit",
+                "SWAPADDRESSES": "Swap Indirizzi",
+                "BTCADDRESS": "Indirizz BTC",
+                "INFOLINE1": "Ladarba jkollok indirizz tad-depożitu BTC, kwalunkwe BTC mibgħut f'dak l-indirizz jiġi awtomatikament mibdul għal MRX fl-indirizz MRX nominat tiegħek.",
+                "INFOLINE2-1": "It-tranżazzjonijiet tipikament ikunu ċari fi żmien siegħa skont il-ħinijiet tal-blokka Bitcoin.",
+                "INFOLINE2-2": "Meta tuża dan is-servizz, taqbel li MHUX residenti fil-pajjiżi elenkati",
+                "INFOLINE2-3": "hawn",
+                "INFOLINE3": "Ladarba d-depożitu BTC tiegħek ikun ikklerjat int tirċievi l-MRX tiegħek fl-indirizz nominat tiegħek.",
+                "INFOLINE4": "Għal aktar informazzjoni żur"
+            }
+        },
+        "NOTIFICATIONS": {
+            "GETTINGSWAPADDRESS": "Ġenerazzjoni ta 'Indirizz tat-Tpartit...",
+            "ALREADYHAVEADDRESS": "Int diġà għandek indirizz BTC assoċjat ma 'dan l-indirizz Metrix",
+            "NOADDRESS": "Ma dħaltx indirizz Metrix"
         }
     }
 }
