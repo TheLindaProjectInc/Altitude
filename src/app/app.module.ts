@@ -55,8 +55,8 @@ const routes: Routes = [
     PrettyCoinsPipe,
     ...componentDeclarations,
     ...metrix.declarations,
-    ...buy.declarations,
-    ...dgp.declarations
+    ...dgp.declarations,
+    ...buy.declarations
   ],
   imports: [
     BrowserModule,
@@ -91,8 +91,8 @@ const routes: Routes = [
     CurrencyService,
     ...componentProviders,
     ...metrix.providers,
-    ...buy.providers,
     ...dgp.providers,
+    ...buy.providers
   ],
   bootstrap: [
     AppComponent

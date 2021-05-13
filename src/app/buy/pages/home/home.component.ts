@@ -24,7 +24,7 @@ export class HomeComponent {
     private buyService: BuyService,
     private errorService: ErrorService,
     private notification: NotificationService,
-    private electron: ElectronService,
+    private electron: ElectronService
   ) {
   }
 

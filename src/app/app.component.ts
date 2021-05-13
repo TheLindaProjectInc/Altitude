@@ -26,7 +26,7 @@ export class AppComponent {
   }
 
   get isFullScreen() {
-    if (this.router.url === '/buy') return true;
+    //if (this.router.url === '/buy') return true;
     return false;
   }
 

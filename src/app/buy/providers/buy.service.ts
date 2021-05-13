@@ -14,6 +14,11 @@ export class BuyService {
         return this.httpGetRequest(url);
     }
 
+    public async getHistory(address: string) {
+        let url = `${this.endpoint}/swap/getTransactionHistory/${address}`;
+        return this.httpGetRequest(url);
+    }
+
     public async getSwapAddress(MRXAddress: string) {
         let url = `${this.endpoint}/swap/getAddress/${MRXAddress}`;
         return this.httpGetRequest(url);

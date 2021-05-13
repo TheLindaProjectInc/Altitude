@@ -1,80 +1,81 @@
-<buy-title-bar></buy-title-bar>
+<div class="content" #scrollingBlock>
 
-<div class="content">
+    <div class="buy-container">
+        <div class="content-card">
+            <div>
+                <h1>Buy Metrix</h1>
+                <p>{{ 'BUY.PAGES.HOME.INFOLINE1' | translate }}</p>
+                <p>
+                    {{ 'BUY.PAGES.HOME.INFOLINE2-1' | translate }}
+                    {{ 'BUY.PAGES.HOME.INFOLINE2-2' | translate }}
+                    <button class="btn btn-link primary" (click)="participatingCountries()">
+                        {{ 'BUY.PAGES.HOME.INFOLINE2-3' | translate }}
+                    </button>.
+                </p>
+                <p>
+                    {{ 'BUY.PAGES.HOME.INFOLINE3' | translate }}
+                </p>
+                <h4>
+                    {{ 'BUY.PAGES.HOME.INFOLINE4' | translate }}
+                    <button class="btn btn-link primary" (click)="moreInformation()">buy.metrixcoin.com</button>
+                </h4>
+            </div>
+        </div>
 
-    <div class="content-card">
-        <h1>Buy Metrix</h1>
-        <p>{{ 'BUY.PAGES.HOME.INFOLINE1' | translate }}</p>
-        <p>
-            {{ 'BUY.PAGES.HOME.INFOLINE2-1' | translate }}
-            {{ 'BUY.PAGES.HOME.INFOLINE2-2' | translate }}
-            <button class="btn btn-link primary" (click)="participatingCountries()">
-                {{ 'BUY.PAGES.HOME.INFOLINE2-3' | translate }}
-            </button>.
-        </p>
-        <p>
-            {{ 'BUY.PAGES.HOME.INFOLINE3' | translate }}
-        </p>
-        <h4>
-            {{ 'BUY.PAGES.HOME.INFOLINE4' | translate }}
-            <button class="btn btn-link primary" (click)="moreInformation()">buy.metrixcoin.com</button>
-        </h4>
+        <div class="content-card mt">
+            <h1>{{ 'BUY.PAGES.HOME.SWAP' | translate }}</h1>
+            <div class="form-inline">
+                <span>{{ 'BUY.PAGES.HOME.YOUSEND' | translate }}</span>
+                <text-input [(inputModel)]="sendAmount" (keyup)="getEstimate(false)" [placeholder]="swapCurrency">
+                </text-input>
+                <!-- <button class="btn btn-default" [ngClass]="{'btn-success':swapCurrency==='BTC'}"
+                    (click)="setSwapCurrency(true)">BTC</button> -->
+                <!-- <button class="btn btn-default" [ngClass]="{'btn-success':swapCurrency==='USD'}"
+                    (click)="setSwapCurrency(false)">USD</button> -->
+            </div>
+            <div class="form-inline">
+                <span>{{ 'BUY.PAGES.HOME.YOUGET' | translate }}</span>
+                <text-input [(inputModel)]="receiveAmount" (keyup)="getEstimate(true)" placeholder="MRX">
+                </text-input>
+            </div>
+            <div class="form-inline">
+                <span>{{ 'BUY.PAGES.HOME.MRXADDRESS' | translate }}</span>
+                <text-input [(inputModel)]="MRXAddress"></text-input>
+                <button class="btn btn-default btn-icon" (click)="openAddressBook()">
+                    <fa-icon icon="address-book"></fa-icon>
+                </button>
+            </div>
+
+            <!-- <div class="align-center">
+                <span *ngIf="swapCurrency==='USD'">{{ 'BUY.PAGES.HOME.FIATSWAPSELECTED' | translate }}</span>
+            </div> -->
+
+            <div class="align-right">
+                <button class="btn btn-default" (click)="submitSwap()">{{ 'BUY.PAGES.HOME.SWAP' | translate }}</button>
+            </div>
+        </div>
+
+        <div class="content-card mt mb">
+            <h1>{{ 'BUY.PAGES.HOME.SWAPADDRESSES' | translate }}</h1>
+            <table class="table table-explorer">
+                <thead>
+                    <tr>
+                        <th>{{ 'BUY.PAGES.HOME.MRXADDRESS' | translate }}</th>
+                        <th>{{ 'BUY.PAGES.HOME.BTCADDRESS' | translate }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let swpAddr of swapAddresses">
+                        <td>{{swpAddr.MRX}}</td>
+                        <td>
+                            {{swpAddr.BTC}}
+                            <button class="btn btn-icon btn-default" (click)="copyAddress(swpAddr.BTC)">
+                                <fa-icon icon="copy"></fa-icon>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="content-card mt">
-        <h1>{{ 'BUY.PAGES.HOME.SWAP' | translate }}</h1>
-        <div class="form-inline">
-            <span>{{ 'BUY.PAGES.HOME.YOUSEND' | translate }}</span>
-            <text-input [(inputModel)]="sendAmount" (keyup)="getEstimate(false)" [placeholder]="swapCurrency">
-            </text-input>
-            <!-- <button class="btn btn-default" [ngClass]="{'btn-success':swapCurrency==='BTC'}"
-                (click)="setSwapCurrency(true)">BTC</button> -->
-            <!-- <button class="btn btn-default" [ngClass]="{'btn-success':swapCurrency==='USD'}"
-                (click)="setSwapCurrency(false)">USD</button> -->
-        </div>
-        <div class="form-inline">
-            <span>{{ 'BUY.PAGES.HOME.YOUGET' | translate }}</span>
-            <text-input [(inputModel)]="receiveAmount" (keyup)="getEstimate(true)" placeholder="MRX">
-            </text-input>
-        </div>
-        <div class="form-inline">
-            <span>{{ 'BUY.PAGES.HOME.MRXADDRESS' | translate }}</span>
-            <text-input [(inputModel)]="MRXAddress"></text-input>
-            <button class="btn btn-default btn-icon" (click)="openAddressBook()">
-                <fa-icon icon="address-book"></fa-icon>
-            </button>
-        </div>
-
-        <!-- <div class="align-center">
-            <span *ngIf="swapCurrency==='USD'">{{ 'BUY.PAGES.HOME.FIATSWAPSELECTED' | translate }}</span>
-        </div> -->
-
-        <div class="align-right">
-            <button class="btn btn-default" (click)="submitSwap()">{{ 'BUY.PAGES.HOME.SWAP' | translate }}</button>
-        </div>
-    </div>
-
-    <div class="content-card mt mb">
-        <h1>{{ 'BUY.PAGES.HOME.SWAPADDRESSES' | translate }}</h1>
-        <table class="table table-explorer">
-            <thead>
-                <tr>
-                    <th>{{ 'BUY.PAGES.HOME.MRXADDRESS' | translate }}</th>
-                    <th>{{ 'BUY.PAGES.HOME.BTCADDRESS' | translate }}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let swpAddr of swapAddresses">
-                    <td>{{swpAddr.MRX}}</td>
-                    <td>
-                        {{swpAddr.BTC}}
-                        <button class="btn btn-icon btn-default" (click)="copyAddress(swpAddr.BTC)">
-                            <fa-icon icon="copy"></fa-icon>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
 </div>

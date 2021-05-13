@@ -530,6 +530,12 @@
         }
     },
     "BUY": {
+        "COMPONENTS":{
+            "SIDEBAR": {
+                "SWAP": "Buy Metrix",
+                "SEARCH": "History"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "You Send",
@@ -544,6 +550,22 @@
                 "INFOLINE2-3": "here",
                 "INFOLINE3": "Once your BTC deposit has cleared you'll receive your MRX into your nominated address.",
                 "INFOLINE4": "For more information visit"
+            },
+            "HISTORY" :{
+                "TITLE": "Transaction History",
+                "SEARCHBUTTON": "SEARCH",
+                "SEARCHPLACEHOLDER": "Enter MRX or BTC address",
+                "TRANSACTIONDATE":"Date",
+                "TRANSACTIONTYPE": "TX Type",
+                "TRANSACTIONAMOUNT": "Amount",
+                "TRANSACTIONID": "Transaction ID",
+                "TRANSACTIONSTATUS": "Status",
+                "TRANSACTIONSWAP": "Swap",
+                "TRANSACTIONDEPOSIT": "Deposit",
+                "TRANSACTIONCONFIRMED": "Confirmed",
+                "TRANSACTIONNOTCONFIRMED": "Not Confirmed",
+                "TRANSACTIONREFUNDED": "Refunded - Below minimum",
+                "AVGSWAPPRICE": "Avg Swap Price"
             }
         },
         "NOTIFICATIONS": {
