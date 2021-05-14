@@ -1,0 +1,26 @@
+
+<div class="transaction" style="width: 100%;height: 92px;" title="{{trx.type}} confirmations">
+    <div class="progress confirmed">
+    </div>
+    <div class="icon">
+        <fa-icon class="success" *ngIf="trx.type=='Deposit'"
+            icon="sign-in-alt"></fa-icon>
+        <fa-icon class="primary" *ngIf="trx.type=='Swap'" icon="exchange-alt"></fa-icon>
+    </div>
+    <div class="detail">
+        <h5>{{trx.type}}</h5>
+        <h6>{{trx.date | date:'MMM d, h:mm a'}}</h6>
+        <h5><button class="btn btn-link primary" (click)="openLink(trx.link)">{{trx.txid}}</button></h5>
+    </div>
+    <div class="value">
+        <div class="amount success" *ngIf="trx.price" >
+            {{trx.amount}} MRX 
+        </div>
+        <div class="amount success" *ngIf="trx.price" >
+            {{'BUY.PAGES.HISTORY.AVGSWAPPRICE' | translate }}: {{trx.price.toFixed(12)}} BTC
+        </div>
+        <div class="amount success" *ngIf="!trx.price" >
+            {{trx.amount}} BTC
+        </div>
+    </div>
+</div>

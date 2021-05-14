@@ -4,33 +4,14 @@
             <h1>{{ 'BUY.PAGES.HISTORY.TITLE' | translate }}</h1>
             <div class="form-inline">
                 <text-input [(inputModel)]="searchAddress" placeholder="{{'BUY.PAGES.HISTORY.SEARCHPLACEHOLDER'| translate}}"></text-input>
+                <button class="btn btn-default btn-icon" (click)="openAddressBook()">
+                    <fa-icon icon="address-book"></fa-icon>
+                </button>
                 <button class="btn btn-default" (click)="onSearch()">{{ 'BUY.PAGES.HISTORY.SEARCHBUTTON' | translate }}</button>
             </div>
-            <table class="table table-explorer">
-                <thead>
-                    <tr>
-                        <th>{{ 'BUY.PAGES.HISTORY.TRANSACTIONDATE' | translate }}</th>
-                        <th style="min-width: 60px;">{{ 'BUY.PAGES.HISTORY.TRANSACTIONTYPE' | translate }}</th>
-                        <th>{{ 'BUY.PAGES.HISTORY.TRANSACTIONAMOUNT' | translate }}</th>
-                        <th>{{ 'BUY.PAGES.HISTORY.TRANSACTIONID' | translate }}</th>
-                        <th style="min-width: 75px;">{{ 'BUY.PAGES.HISTORY.TRANSACTIONSTATUS' | translate }}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let trx of transactions">
-                        <td>{{trx.date | date:'MMM d, h:mm a'}}</td>
-                        <td>{{trx.type}}</td>
-                        <td *ngIf="trx.price">
-                            {{trx.amount}} ({{'BUY.PAGES.HISTORY.AVGSWAPPRICE' | translate }}: {{trx.price.toFixed(12)}})
-                        </td>
-                        <td *ngIf="!trx.price">
-                            {{trx.amount}}
-                        </td>
-                        <td><button class="btn btn-link primary" (click)="openLink(trx.link)">{{trx.txid}}</button></td>
-                        <td>{{trx.status}}</td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+        <div class="transactions">
+            <history-transaction-row *ngFor="let trx of transactions" [trx]="trx"></history-transaction-row>
         </div>
     </div>
 </div>

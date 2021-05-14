@@ -62,6 +62,11 @@ export class HistoryComponent {
     }
   }
 
+  async openAddressBook(): Promise<void> {
+    const addr = await this.addressBook.getAddress(false);
+    if (addr) this.searchAddress = addr.address;
+  }
+
   openLink(link) {
     this.electron.shell.openExternal(link);
   }

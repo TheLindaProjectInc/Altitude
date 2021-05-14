@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 // components
 import { TitlebarComponent } from './components/titlebar/titlebar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { HistoryTransactionRowComponent } from './components/transaction-row/transaction-row.component';
 
 // pages
 import { MasterComponent } from './pages/master/master.component';
@@ -26,6 +27,7 @@ export const providers = [
 export const declarations = [
     HomeComponent,
     HistoryComponent,
+    HistoryTransactionRowComponent,
     SideBarComponent,
     MasterComponent,
     TitlebarComponent
