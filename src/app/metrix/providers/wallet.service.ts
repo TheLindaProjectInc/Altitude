@@ -31,6 +31,7 @@ export class WalletService {
 
     // syncing flag
     running: boolean;
+    interval; number;
 
     // timers
     conversionSyncTimer;
@@ -214,6 +215,7 @@ export class WalletService {
 
     private doRunDataSync(dataSync): boolean {
         let diff = new Date().getTime() - dataSync.timestamp;
+        if (dataSync.interval !== this.electron.settings.syncInterval) dataSync.interval = this.electron.settings.syncInterval;
         if (!dataSync.timestamp || (dataSync.interval > 0 && diff > dataSync.interval)) {
             if (diff > 30 * 60 * 1000) dataSync.showLoading = true;
             else dataSync.showLoading = false;

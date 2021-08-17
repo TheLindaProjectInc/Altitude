@@ -17,7 +17,7 @@ export class OptionsComponent implements OnInit {
   tor = { allow: false, ip: '', port: '' }
   onlyNet = { IPv4: false, IPv6: false, Tor: false }
   network: ChainType
-
+  
   constructor(
     public electron: ElectronService,
     private wallet: WalletService,
@@ -47,6 +47,10 @@ export class OptionsComponent implements OnInit {
 
   setHideTray() {
     this.electron.ipcRenderer.send('settings', 'SETHIDETRAY', this.electron.settings.hideTrayIcon);
+  }
+
+  setSyncInterval() {
+    this.electron.ipcRenderer.send('settings', 'SETSYNCINTERVAL', this.electron.settings.syncInterval);
   }
 
   setMinimiseToTray() {

@@ -54,6 +54,11 @@ function set_hideTrayIcon(hideTrayIcon: boolean) {
     saveSettings();
 }
 
+function set_syncinterval(syncInterval: number) {
+    settings.syncInterval = syncInterval;
+    saveSettings();
+}
+
 function set_minimiseToTray(minimiseToTray: boolean) {
     settings.minimiseToTray = minimiseToTray;
     saveSettings();
@@ -123,6 +128,9 @@ function setupIPC() {
             case 'SETMINIMISETRAY':
                 set_minimiseToTray(data);
                 break;
+            case 'SETSYNCINTERVAL':
+                set_syncinterval(data);
+                break;
             case 'SETMINIMISECLOSE':
                 set_minimiseOnClose(data);
                 break;
@@ -155,6 +163,7 @@ export class Settings {
     fullScreen: boolean = false;
     hideTrayIcon: boolean = false;
     minimiseToTray: boolean = false;
+    syncInterval: number = 10000;
     minimiseOnClose: boolean = false;
     blockIncomingConnections: boolean = false;
     proxy: string = '';
