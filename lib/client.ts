@@ -323,6 +323,10 @@ export default class Client {
         return `${major}.${minor}.${rev}.${build}`
     }
 
+    async pathStartupSwitches() {
+        await this.getClientConfig();
+    }
+
     runClient(bin, startupCommands = []) {
         // check for startup commands
         if (app.isPackaged && process.argv.length > 1)
@@ -336,13 +340,22 @@ export default class Client {
         if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
         if (appSettings.tor) startupCommands.push('-tor=' + appSettings.tor)
         // set network
+        startupCommands.filter(e => { 
+            if(e === '-testnet') {
+                this.chain = ChainType.TESTNET
+                this.pathStartupSwitches();
+            }
+            if(e === '-regtest') {
+                this.chain = ChainType.REGTEST
+                this.pathStartupSwitches();
+            }
+        });
         if (this.chain === ChainType.TESTNET) startupCommands.push('-testnet');
         if (this.chain === ChainType.REGTEST) startupCommands.push('-regtest');
         startupCommands.push('-printtoconsole=0');
         startupCommands.push('-fallbackfee=10');
         startupCommands = startupCommands.filter(e => e[1] !== '-') // don't send electron specific flags to daemon
         log.info("Client", "Running with commands", startupCommands);
-
         // start client
         this.proc = spawn(path.join(this.clientsLocation, bin), startupCommands);
         // listen for unexpected close
