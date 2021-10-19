@@ -27,6 +27,10 @@ export class TransactionRowComponent {
   onRightClick(e, trx: Transaction) {
     const items = [
       {
+        name: 'PAGES.TRANSACTIONS.EXPLORER',
+        func: () => this.electron.ipcRenderer.send('client-node', 'EXPLORERTX', {txid: trx.txId})
+      },
+      {
         name: 'PAGES.TRANSACTIONS.COPYACCOUNT',
         func: () => this.electron.clipboard.writeText(trx.account)
       },

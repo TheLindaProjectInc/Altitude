@@ -138,7 +138,9 @@ export default class Client {
                 case 'REPORTISSUE':
                     this.reportIssue(data);
                     break;
-
+                case 'EXPLORERTX':
+                    this.openTX(data);
+                    break;
             }
         });
     }
@@ -609,6 +611,11 @@ export default class Client {
             this.sendClientVersion();
             this.sendChainType();
         }
+    }
+
+    async openTX(data) {
+        const baseUrl = `https://explorer.metrixcoin.com/tx/${data.txid}`;
+        shell.openExternal(baseUrl)
     }
 
     async reportIssue(data) {
