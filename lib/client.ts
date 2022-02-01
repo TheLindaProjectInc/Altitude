@@ -380,7 +380,7 @@ export default class Client {
         if (shuttingDown) this.setClientStatus(ClientStatus.SHUTTINGDOWN);
         else this.setClientStatus(ClientStatus.RESTARTING);
 
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
             if (this.proc) {
                 log.info("Client", "Kill client");
                 // setup force kill function

@@ -23,7 +23,7 @@ export async function readFile(file, encoding = 'utf-8') {
 }
 
 export async function writeFile(file, data, encoding = 'utf-8') {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         fs.writeFile(file, data, { encoding: encoding }, err => {
             if (err) reject(err);
             else resolve();
@@ -36,7 +36,7 @@ export async function setFileExecutable(file: string) {
 }
 
 export async function renameFile(original: string, rename: string) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         fs.rename(original, rename, (err) => {
             if (err) reject(err);
             else resolve();
@@ -51,7 +51,7 @@ export async function ensureDirectoryExists(dir: string) {
 
 
 export async function deleteFile(file: string) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         pathExists(file).then((exits) => {
             if (exits) {
                 fs.unlink(file, (err) => {
@@ -131,7 +131,7 @@ export async function getRequest(url) {
 
 
 export async function makeFolder(path) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         fs.mkdir(path, (err) => {
             if (err) reject(err);
             else resolve();
