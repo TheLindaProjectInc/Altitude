@@ -1,4 +1,4 @@
-import { U256 } from 'uint256';
+import { U256 } from '../../../../node_modules/uint256/dist/UInt256';
 import Helpers from 'app/helpers';
 import Big from 'big.js';
 import * as  urlMetadata from 'url-metadata';

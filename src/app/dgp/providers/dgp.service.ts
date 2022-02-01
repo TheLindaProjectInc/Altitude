@@ -3,7 +3,7 @@ import { Subscription, ReplaySubject } from 'rxjs';
 import Big from 'big.js';
 import { RpcService, RPCMethods } from 'app/metrix/providers/rpc.service';
 import { Governor } from '../classes/governor';
-import { U256 } from 'uint256';
+import { U256 } from '../../../../node_modules/uint256/dist/UInt256';
 import IDGPInfo from '../interfaces/IDGPInfo';
 import Helpers from 'app/helpers';
 import { WalletService } from 'app/metrix/providers/wallet.service';
