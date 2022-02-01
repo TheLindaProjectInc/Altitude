@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NetworkTypeComponent } from './network-type.component';
 
@@ -6,7 +6,7 @@ describe('NetworkTypeComponent', () => {
   let component: NetworkTypeComponent;
   let fixture: ComponentFixture<NetworkTypeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [NetworkTypeComponent]
     })
