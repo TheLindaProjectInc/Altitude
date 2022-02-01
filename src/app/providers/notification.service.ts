@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NotifierService } from 'angular-notifier';
+import { NotifierService } from 'angular-notifier2';
 import { TranslationService } from './translation.service';
 
 @Injectable()

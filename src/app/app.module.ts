@@ -17,7 +17,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { setupIcons } from './icon-module';
 // alerts
-import { NotifierModule } from 'angular-notifier';
+import { NotifierModule } from 'angular-notifier2';
 
 // components
 import { componentDeclarations, componentProviders } from './app-components.module';
