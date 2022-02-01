@@ -375,7 +375,7 @@ export class WalletService {
 
     // tunnel methods
     public addressBookAdd(address: string, label: string): Promise<any> {
-        return new Promise(async (resolve, reject) => {
+        return new Promise<void>(async (resolve, reject) => {
             try {
                 for (let i = 0; i < this._addressBook.length; i++) {
                     if (this._addressBook[i].address === address) return true;
@@ -391,7 +391,7 @@ export class WalletService {
     }
 
     public addressBookRemove(address: string): Promise<any> {
-        return new Promise(async (resolve, reject) => {
+        return new Promise<void>(async (resolve, reject) => {
             try {
                 await this.rpc.requestData(RPCMethods.ADDRESSBOOKREMOVE, [address]);
                 // remove address to addressbook
@@ -409,7 +409,7 @@ export class WalletService {
     }
 
     public getTransactions(count, skip): Promise<any> {
-        return new Promise(async (resolve, reject) => {
+        return new Promise<void>(async (resolve, reject) => {
             try {
                 let transactionData: any = await this.rpc.requestData(RPCMethods.GETTRANSACTIONS, [count, skip]);
                 this.updateTransactions(transactionData);
@@ -450,7 +450,7 @@ export class WalletService {
     }
 
     public encryptWallet(passphrase: string): Promise<any> {
-        return new Promise(async (resolve, reject) => {
+        return new Promise<void>(async (resolve, reject) => {
             try {
                 await this.rpc.requestData(RPCMethods.ENCRYPT, [passphrase]);
                 this.walletInfo.encryption_status = EncryptionStatus.ENCRYPTING;
@@ -496,7 +496,7 @@ export class WalletService {
     }
 
     public lockUnspent(unlock: boolean, input: Input): Promise<any> {
-        return new Promise(async (resolve, reject) => {
+        return new Promise<void>(async (resolve, reject) => {
             try {
                 let res = await this.rpc.requestData(RPCMethods.LOCKUNSPENT, [unlock, [{ txid: input.txid, vout: input.vout }]]);
                 if (res === true) input.locked = !unlock;
