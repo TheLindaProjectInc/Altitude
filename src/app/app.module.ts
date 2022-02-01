@@ -62,7 +62,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes, { useHash: true }),
+    RouterModule.forRoot(routes, { useHash: true, relativeLinkResolution: 'legacy' }),
     FontAwesomeModule,
     VirtualScrollerModule,
     NgxSmartModalModule.forRoot(),

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TextinputComponent } from './textinput.component';
 
@@ -6,7 +6,7 @@ describe('TextinputComponent', () => {
   let component: TextinputComponent;
   let fixture: ComponentFixture<TextinputComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ TextinputComponent ]
     })
