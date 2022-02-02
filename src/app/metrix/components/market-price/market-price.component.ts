@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import Helpers from 'app/helpers';
-import { Chart, ChartPoint } from 'chart.js';
+import { Chart, registerables, Point } from 'chart.js';
 import { TranslationService } from 'app/providers/translation.service';
 import { ErrorService } from 'app/providers/error.service';
 import { CurrencyService } from 'app/providers/currency.service';
 import Big from 'big.js';
+Chart.register(...registerables);
 @Component({
   selector: 'market-price-chart',
   templateUrl: './market-price.component.html',
@@ -47,7 +48,7 @@ export class MarketPriceComponent {
   }
 
   async drawIncomeChart(priceData: Array<any>) {
-    let incomeData: Array<ChartPoint> = [];
+    let incomeData: Array<Point> = [];
     let labels = [];
 
     let min = Infinity;
@@ -113,30 +114,40 @@ export class MarketPriceComponent {
           ]
         },
         options: {
-          legend: {
-            display: false
-          },
-          tooltips: {
-            intersect: false,
-            callbacks: {
-              label: function (tooltipItem, data) {
-                return tooltipItem.yLabel + ' Sats';
-              }
+          plugins: {
+            legend: {
+              display: false
             },
-            displayColors: false
+            tooltip: {
+              intersect: false,
+              callbacks: {
+                label: function (context) {
+                  var label = context.dataset.label || '';
+                  if(label){
+                    label +=': ';
+                  }
+
+                  if(context.parsed.y !== null){
+                    label += context.parsed.y + ' Sats'
+                  }
+                  return label;
+                }
+              },
+              displayColors: false
+            },
           },
           scales: {
-            yAxes: [{
+            y: {
               display: false,
+              suggestedMin: xMin,
+              suggestedMax: xMax,
               ticks: {
-                suggestedMin: xMin,
-                suggestedMax: xMax,
                 stepSize: 1
               }
-            }],
-            xAxes: [{
+            },
+            x: {
               display: false,
-            }]
+            }
           }
         }
       });
