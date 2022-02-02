@@ -109,7 +109,8 @@ export class MarketPriceComponent {
               backgroundColor: gradientStroke,
               borderColor: gradientStroke,
               pointRadius: 0,
-              data: incomeData
+              data: incomeData,
+              fill: 'origin'
             }
           ]
         },
