@@ -18,7 +18,7 @@ export class DGPService {
     onAccountsUpdatedSub: Subscription;
     newBlockReceivedSub: Subscription;
 
-    onDGPInfo = new ReplaySubject()
+    onDGPInfo = new ReplaySubject<void>()
 
     governor: Governor;
     dgpInfo: IDGPInfo;

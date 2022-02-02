@@ -286,7 +286,7 @@ export class WalletService {
             if (!hasMatch) this._accounts.splice(i--, 1);
             else this._accounts[i].removeRenamedAddresses(); // remove any addresses that have been renamed
         }
-        this.accountsUpdated.next();
+        this.accountsUpdated.next(true);
     }
 
     private async syncTransactions() {
@@ -323,7 +323,7 @@ export class WalletService {
                 return 1;
             });
             // notify UI of change
-            this.transactionsUpdated.next();
+            this.transactionsUpdated.next(true);
         }
     }
 
@@ -359,7 +359,7 @@ export class WalletService {
         if (!this.walletInfo.startupBlockTime)
             this.walletInfo.startupBlockTime = this.blockchainStatus.latestBlockTime;
         if (this.blockchainStatus.latestBlockHeight > currentBlock)
-            this.newBlockReceived.next()
+            this.newBlockReceived.next(true)
     }
 
     private async getPeersList() {
