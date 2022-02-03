@@ -75,6 +75,12 @@ export class DGPService {
         return Object.keys(this.governorList).length;
     }
 
+
+    public get isMainChain(): boolean {
+        if (this.electron.chain === ChainType.MAINNET) return true;
+        return false;
+    }
+
     private async loadData() {
         await this.getDGPInfo();
         await this.getGovernors();

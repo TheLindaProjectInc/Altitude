@@ -1,7 +1,4 @@
-import { ChainType } from './../../lib/client';
 import Big from 'big.js';
-import * as crypto from 'crypto';
-import * as bs58 from 'bs58';
 
 export default class Helpers {
 
@@ -151,41 +148,6 @@ export default class Helpers {
       '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
     return pattern.test(url);
   }
-
-  static toMetrixAddress(hexAddress, isMainnet = false) {
-
-    const MainnetNetworkByte = '32';
-    const TestnetNetworkByte = '6E';
-
-    // if (hexAddress === undefined || isEmpty(hexAddress)) {
-    //   throw new Error('hexAddress should not be undefined or empty');
-    // }
-    // if (!Web3Utils.isHex(hexAddress)) {
-    //   throw new Error('Invalid hex address');
-    // }
-    // reference: https://gobittest.appspot.com/Address
-    let mAddress = hexAddress;
-    // Add network byte
-    if (isMainnet) {
-      mAddress = MainnetNetworkByte + mAddress;
-    } else {
-      mAddress = TestnetNetworkByte + mAddress;
-    }
-
-    const mAddressBuffer = Buffer.from(mAddress, 'hex');
-    // Double SHA256 hash
-    const hash1 = crypto.createHash('sha256').update(mAddressBuffer).digest('hex');
-    const hash1Buffer = Buffer.from(hash1, 'hex');
-    const hash2 = crypto.createHash('sha256').update(hash1Buffer).digest('hex');
-
-    // get first 4 bytes
-    mAddress += hash2.slice(0, 8);
-
-    // base58 encode
-    const address = bs58.encode(Buffer.from(mAddress, 'hex'));
-    return address;
-  }
-
 }
 
 
