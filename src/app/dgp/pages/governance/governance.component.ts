@@ -1,3 +1,5 @@
+import { ElectronService } from './../../../providers/electron.service';
+import { ChainType } from './../../../../../lib/client';
 import { Component, isDevMode } from '@angular/core';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
@@ -23,6 +25,7 @@ export class GovernanceComponent {
     private errorService: ErrorService,
     private notification: NotificationService,
     private wallet: WalletService,
+    private electron: ElectronService
   ) {
     this.newBlockReceivedSub = this.wallet.newBlockReceived.subscribe(() => {
       this.checkPendingEnrollment();
@@ -66,6 +69,18 @@ export class GovernanceComponent {
 
   public get isGovernor(): boolean {
     return !!this.dgpService.governor
+  }
+
+  public get myGovAddress() {
+    let address: string = '';
+    let chain: boolean = this.electron.chain === ChainType.MAINNET ? true : false;
+    if(this.isGovernor) {
+      let hexaddress = this.dgpService.governor.address;
+      console.log(hexaddress);
+      address = Helpers.toMetrixAddress(hexaddress, chain);
+      console.log(hexaddress);
+    }
+    return address;
   }
 
   public get governanceCollateral(): number {
