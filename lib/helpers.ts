@@ -13,7 +13,7 @@ export async function pathExists(path) {
     })
 }
 
-export async function readFile(file, encoding = 'utf-8') {
+export async function readFile(file, encoding = 'utf-8' as BufferEncoding) {
     return new Promise((resolve, reject) => {
         fs.readFile(file, { encoding: encoding }, (err, data) => {
             if (err) reject(err);
@@ -22,7 +22,7 @@ export async function readFile(file, encoding = 'utf-8') {
     });
 }
 
-export async function writeFile(file, data, encoding = 'utf-8') {
+export async function writeFile(file, data, encoding = 'utf-8' as BufferEncoding) {
     return new Promise<void>((resolve, reject) => {
         fs.writeFile(file, data, { encoding: encoding }, err => {
             if (err) reject(err);
