@@ -24,8 +24,7 @@ export class GovernanceComponent {
     private dgpService: DGPService,
     private errorService: ErrorService,
     private notification: NotificationService,
-    private wallet: WalletService,
-    private electron: ElectronService
+    private wallet: WalletService
   ) {
     this.newBlockReceivedSub = this.wallet.newBlockReceived.subscribe(() => {
       this.checkPendingEnrollment();
@@ -72,15 +71,7 @@ export class GovernanceComponent {
   }
 
   public get myGovAddress() {
-    let address: string = '';
-    let chain: boolean = this.electron.chain === ChainType.MAINNET ? true : false;
-    if(this.isGovernor) {
-      let hexaddress = this.dgpService.governor.address;
-      console.log(hexaddress);
-      address = Helpers.toMetrixAddress(hexaddress, chain);
-      console.log(hexaddress);
-    }
-    return address;
+    return this.dgpService.governor.address;
   }
 
   public get governanceCollateral(): number {
