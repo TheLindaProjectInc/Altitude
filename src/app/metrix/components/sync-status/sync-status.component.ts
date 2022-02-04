@@ -15,12 +15,24 @@ export class SyncStatusComponent {
   public helpers = Helpers;
   public dateNow;
 
+  changeTimer;
+
   constructor(
     public rpc: RpcService,
     public wallet: WalletService,
     private cdRef: ChangeDetectorRef
   ) {
 
+  }
+
+  ngOnInit() {
+    this.changeTimer = setInterval(() => {
+      this.cdRef.detectChanges();
+    },10000)
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.changeTimer);
   }
 
   ngAfterViewChecked() {

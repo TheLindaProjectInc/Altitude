@@ -1,5 +1,3 @@
-import { ElectronService } from './../../../providers/electron.service';
-import { ChainType } from './../../../../../lib/client';
 import { Component, isDevMode } from '@angular/core';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';

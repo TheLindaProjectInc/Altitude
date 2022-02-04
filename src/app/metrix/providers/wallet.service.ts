@@ -64,10 +64,10 @@ export class WalletService {
         { timestamp: 0, interval: 10000, async: true, showLoading: false, running: false, name: DATASYNCTYPES.ADDRESSBOOK, fn: () => this.getAddressBook() },
     ];
 
-    @Output() accountsUpdated: ReplaySubject<boolean> = new ReplaySubject();
+    @Output() accountsUpdated: EventEmitter<boolean> = new EventEmitter();
     @Output() encryptionStatusChanges: EventEmitter<any> = new EventEmitter();
-    @Output() transactionsUpdated: ReplaySubject<any> = new ReplaySubject();
-    @Output() newBlockReceived: ReplaySubject<any> = new ReplaySubject();
+    @Output() transactionsUpdated: EventEmitter<any> = new EventEmitter();
+    @Output() newBlockReceived: EventEmitter<any> = new EventEmitter();
     @Output() peersUpdated: EventEmitter<any> = new EventEmitter();
 
     constructor(
@@ -323,7 +323,8 @@ export class WalletService {
                 return 1;
             });
             // notify UI of change
-            this.transactionsUpdated.next(true);
+            //this.transactionsUpdated.next(true);
+            this.transactionsUpdated.emit(true);
         }
     }
 
@@ -359,7 +360,8 @@ export class WalletService {
         if (!this.walletInfo.startupBlockTime)
             this.walletInfo.startupBlockTime = this.blockchainStatus.latestBlockTime;
         if (this.blockchainStatus.latestBlockHeight > currentBlock)
-            this.newBlockReceived.next(true)
+            this.newBlockReceived.emit(true);
+            //this.newBlockReceived.next(true)
     }
 
     private async getPeersList() {
