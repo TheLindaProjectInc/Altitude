@@ -2,13 +2,13 @@ import { Injectable, isDevMode, EventEmitter, Output, Directive } from '@angular
 import { TranslateService } from '@ngx-translate/core';
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
-import { ipcRenderer, remote, clipboard, shell } from 'electron';
+import { ipcRenderer, clipboard, shell } from 'electron';
+import * as remote from '@electron/remote'
 import { HttpClient } from '@angular/common/http';
 import * as compareVersions from 'compare-versions';
 import { CurrencyService } from './currency.service';
 import { ChainType, ClientStatus } from 'app/enum';
 import Languages from 'app/languages';
-
 @Directive()
 @Injectable()
 export class ElectronService {
@@ -36,15 +36,17 @@ export class ElectronService {
   ) {
     // Conditional imports
     if (this.isElectron()) {
+
       this.ipcRenderer = window.require('electron').ipcRenderer;
-      this.remote = window.require('electron').remote;
       this.clipboard = window.require('electron').clipboard;
       this.shell = window.require('electron').shell;
-
+      
+      this.remote = window.require('@electron/remote');
+      
       this.getDeviceLangauge();
       this.connectClientNodeIPC();
       this.connectSettingsIPC();
-
+      
       if (!isDevMode())
         this.checkForWalletUpdate().then(() => { }, err => { });
     }

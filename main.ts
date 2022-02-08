@@ -4,6 +4,8 @@ import * as url from 'url';
 import Client from './lib/client';
 import * as log from 'electron-log';
 import * as settings from './lib/settings';
+import * as remoteMain from '@electron/remote/main';
+remoteMain.initialize();
 
 log.transports.console.level = 'info'
 log.transports.file.level = 'info'
@@ -42,10 +44,11 @@ function createWindow() {
     width: width < size.width ? width : size.width,
     height: height < size.height ? height : size.height,
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
-    webPreferences: { webSecurity: false, nodeIntegration: true, enableRemoteModule: true },
+    webPreferences: { webSecurity: false, nodeIntegration: true, contextIsolation: false },
     frame: process.platform !== 'win32',
     titleBarStyle: 'hidden'
   });
+
 
   if (serve) {
     require('electron-reload')(__dirname, {
@@ -62,6 +65,8 @@ function createWindow() {
 
   // setup settings
   log.info('Initiate settings');
+  
+  remoteMain.enable(mainWindow.webContents);
   settings.setWindow(mainWindow);
   // make any adjustments when settings are ready
   const handler = () => {
