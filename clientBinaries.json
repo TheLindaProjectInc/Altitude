@@ -1,18 +1,18 @@
 {
     "metrixcoind": {
-        "version": "4.0.7.0",
+        "version": "4.0.8.0",
         "win32": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.7.0-8c5b2aa/metrixd-win32-x64.exe",
-                    "sha256": "84e27549678d7a0e8459a01f52d04a32ab8b2b4a81bbb4d9acef609c8250dedf"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.8.0-ea6ba7f/metrixd-win32-x64.exe",
+                    "sha256": "602cf344cf339ea33c0c189f7c7e7b074cfc35cc70cf567d99916597eefbf7be"
                 },
                 "bin": "metrixd.exe"
             },
             "x86": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.7.0-8c5b2aa/metrixd-win32-x86.exe",
-                    "sha256": "f3cf4890d008ad1a5792892cd01fa6fc2e1945f4bdf58674fe2d925db98bfb13"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.8.0-ea6ba7f/metrixd-win32-x86.exe",
+                    "sha256": "bb50bc7c8c4613f63be0394c710d7246652026f841cb738112540f4a118b5d54"
                 },
                 "bin": "metrixd.exe"
             }
@@ -20,8 +20,8 @@
         "linux": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.7.0-8c5b2aa/metrixd-linux-x64",
-                    "sha256": "c6999faca676e20f776d6169993707dc2e99b65c46eed5280718808b57ab7568"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.8.0-ea6ba7f/metrixd-linux-x64",
+                    "sha256": "6d19436ed10d7494208929cfbaf3d7e4d0578eeeb7e2ea9332ede57a17a24837"
                 },
                 "bin": "metrixd"
             }
@@ -29,13 +29,19 @@
         "darwin": {
             "x64": {
                 "download": {
-                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.7.0-8c5b2aa/metrixd-darwin-x64",
-                    "sha256": "66b37e7a4ee9c8cf0993e5976ebe405388d45db766812b2bdf67e58f71accb62"
+                    "url": "https://lindaproject.nyc3.digitaloceanspaces.com/metrix/metrixd/4.0.8.0-ea6ba7f/metrixd-darwin-x64",
+                    "sha256": "f7c641224b8eea6e2b0f24f1eaa2e0339692b2700ee690e02f4dbbba488289cc"
                 },
                 "bin": "metrixd"
             }
         },
         "versions": {
+            "4.0.8.0": [
+                "602cf344cf339ea33c0c189f7c7e7b074cfc35cc70cf567d99916597eefbf7be",
+                "bb50bc7c8c4613f63be0394c710d7246652026f841cb738112540f4a118b5d54",
+                "6d19436ed10d7494208929cfbaf3d7e4d0578eeeb7e2ea9332ede57a17a24837",
+                "f7c641224b8eea6e2b0f24f1eaa2e0339692b2700ee690e02f4dbbba488289cc"
+            ],
             "4.0.7.0": [
                 "84e27549678d7a0e8459a01f52d04a32ab8b2b4a81bbb4d9acef609c8250dedf",
                 "f3cf4890d008ad1a5792892cd01fa6fc2e1945f4bdf58674fe2d925db98bfb13",
