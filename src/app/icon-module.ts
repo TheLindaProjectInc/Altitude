@@ -51,8 +51,8 @@ export function setupIcons(library: FaIconLibrary) {
     // only add used icons to avoid bloat
     /* library.addIconPacks(fas) */
     library.addIcons(
-        faWallet,
         faReceipt,
+        faWallet,
         faNetworkWired,
         faColumns,
         faWifi,
