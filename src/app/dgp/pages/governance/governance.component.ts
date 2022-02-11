@@ -1,3 +1,4 @@
+import { Big } from 'big.js';
 import { Component, isDevMode } from '@angular/core';
 import { ErrorService } from 'app/providers/error.service';
 import { NotificationService } from 'app/providers/notification.service';
@@ -17,6 +18,9 @@ export class GovernanceComponent {
   enrollmentTxid: string;
   newBlockReceivedSub;
 
+  selectedSenderAddress = null;
+  addresslist = [];
+
   constructor(
     private prompt: PromptService,
     private dgpService: DGPService,
@@ -24,8 +28,10 @@ export class GovernanceComponent {
     private notification: NotificationService,
     private wallet: WalletService
   ) {
+    this.showAddresses();
     this.newBlockReceivedSub = this.wallet.newBlockReceived.subscribe(() => {
       this.checkPendingEnrollment();
+      this.showAddresses();
     });
   }
 
@@ -120,6 +126,20 @@ export class GovernanceComponent {
     return value;
   }
 
+  public get addresses() {
+    return this.addresslist;
+  }
+
+  public async showAddresses() {
+    this.addresslist = [];
+    let accounts = await this.wallet.getAccounts(true);
+    for (let i = 0; i < accounts.length; i++) {
+      let addr = accounts[i];
+      if (addr.balance.gt(Big(this.governanceCollateral)))
+        this.addresslist.push(addr);
+    }
+  }
+
   public async enroll() {
     let passphrase;
     try {
@@ -129,10 +149,12 @@ export class GovernanceComponent {
       return;
     }
 
+
+
     this.notification.loading('DGP.NOTIFICATIONS.ENROLLINGGOVERNOR');
 
     try {
-      const res = await this.dgpService.enrollGovernor(passphrase);
+      const res = await this.dgpService.enrollGovernor(passphrase, this.selectedSenderAddress);
       this.enrollmentTxid = res.txid;
       this.notification.notify('success', 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR');
       this.isEnrolling = false;

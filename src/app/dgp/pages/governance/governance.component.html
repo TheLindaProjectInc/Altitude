@@ -2,7 +2,7 @@
 
     <div class="governance-container">
         <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll">
+        <div class="content-card" *ngIf="isGovernor && canEnroll">
             <fa-icon class="danger fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -11,6 +11,9 @@
                 <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}:
                     {{governanceCollateral | prettyCoins}} MRX</p>
             </div>
+            <select class="form-control" [(ngModel)]="selectedSenderAddress">
+                <option *ngFor="let address of addresslist">{{address.address}}</option>
+            </select>
             <button class="btn btn-default" (click)="isEnrolling=true" *ngIf="!isEnrolling">
                 {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
             </button>

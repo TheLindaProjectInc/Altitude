@@ -24,7 +24,8 @@ export class DGPService {
     dgpInfo: IDGPInfo;
     budgetProposals: Array<BudgetProposal> = [];
     governorList = {};
-    readonly defaultGasLimit = 250000;
+    readonly defaultGasLimit = 500000;
+    readonly defaultGasPrice = 20000;
     readonly gasLimit_createProposal = 500000;
 
     constructor(
@@ -138,11 +139,11 @@ export class DGPService {
         if (this.governor) this.governor = null;
     }
 
-    public async enrollGovernor(passphrase: string) {
+    public async enrollGovernor(passphrase: string, senderAddress: string) {
         try {
             await this.rpc.unlockWalletForCommand(passphrase);
 
-            const args = [GovernanceContract.ADDRESS, GovernanceContract.ENROLL, Helpers.fromSatoshi(this.dgpInfo.governancecollateral)]
+            const args = [GovernanceContract.ADDRESS, GovernanceContract.ENROLL, Helpers.fromSatoshi(this.dgpInfo.governancecollateral), this.defaultGasLimit, this.defaultGasPrice, senderAddress]
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
