@@ -44,7 +44,7 @@ export default class Client {
     // chain we are running on
     chain: ChainType = ChainType.MAINNET;
     // when using hash of unknown daemon assume version
-    readonly assumeClientVersion = '4.0.0.0';
+    readonly assumeClientVersion = '4.0.7.0';
 
     constructor(win) {
         this.win = win;
@@ -356,6 +356,7 @@ export default class Client {
         if (this.chain === ChainType.REGTEST) startupCommands.push('-regtest');
         startupCommands.push('-printtoconsole=0');
         startupCommands.push('-fallbackfee=10');
+        startupCommands.push('-rpcthreads=11');
         startupCommands = startupCommands.filter(e => e[1] !== '-') // don't send electron specific flags to daemon
         log.info("Client", "Running with commands", startupCommands);
         // start client
