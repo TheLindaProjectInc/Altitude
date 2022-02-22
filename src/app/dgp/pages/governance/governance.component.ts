@@ -149,6 +149,14 @@ export class GovernanceComponent {
       return;
     }
 
+    try {
+      if(!this.selectedSenderAddress || this.selectedSenderAddress === 'null') {
+        this.notification.notify('error', 'DGP.PAGES.GOVERNANCE.GOVERNORNOTSELECTED');
+        return;
+      }
+    } catch (ex) {
+      return;
+    }
 
 
     this.notification.loading('DGP.NOTIFICATIONS.ENROLLINGGOVERNOR');

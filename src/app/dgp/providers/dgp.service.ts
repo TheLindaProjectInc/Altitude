@@ -25,7 +25,7 @@ export class DGPService {
     budgetProposals: Array<BudgetProposal> = [];
     governorList = {};
     readonly defaultGasLimit = 500000;
-    readonly defaultGasPrice = 20000;
+    readonly defaultGasPrice = 0.00010000;
     readonly gasLimit_createProposal = 500000;
 
     constructor(

@@ -342,7 +342,7 @@ export default class Client {
         if (appSettings.proxy) startupCommands.push('-proxy=' + appSettings.proxy)
         if (appSettings.tor) startupCommands.push('-tor=' + appSettings.tor)
         // set network
-        startupCommands.filter(e => { 
+        startupCommands.filter(e => {
             if(e === '-testnet') {
                 this.chain = ChainType.TESTNET
                 this.pathStartupSwitches();
