@@ -1,8 +1,14 @@
 <div class="content" #scrollingBlock>
 
     <div class="governance-container">
+        <!-- Not fully in sync -->
+        <div class="content-card" *ngIf="isChainSynced">
+            <fa-icon class="danger fa-2x fa-solid" icon="triangle-exclamation"></fa-icon>
+            <h4>{{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDTITLE' | translate }}</h4>
+            <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
+        </div>
         <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll">
+        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced">
             <fa-icon class="danger fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -40,7 +46,7 @@
             <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
         </div>
         <!-- enrolled -->
-        <div class="content-card" *ngIf="isGovernor">
+        <div class="content-card" *ngIf="isGovernor && !isChainSynced">
             <fa-icon class="success fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
             <div>

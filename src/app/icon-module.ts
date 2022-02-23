@@ -42,6 +42,7 @@ import {
     faChevronRight,
     faSearch,
     faUsers,
+    faTriangleExclamation,
     faMoneyCheckAlt,
     faFileContract
 } from '@fortawesome/free-solid-svg-icons';
@@ -91,6 +92,7 @@ export function setupIcons(library: FaIconLibrary) {
         faChevronRight,
         faSearch,
         faUsers,
+        faTriangleExclamation,
         faMoneyCheckAlt,
         faFileContract
     );

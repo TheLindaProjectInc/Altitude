@@ -39,6 +39,11 @@ export class GovernanceComponent {
     this.newBlockReceivedSub.unsubscribe();
   }
 
+  get isChainSynced() {
+    return this.wallet.running &&
+      (Date.now() - this.wallet.blockchainStatus.latestBlockTime > 5 * 60 * 1000 && this.wallet.blockchainStatus.syncProgresss < 99.99)
+  }
+
   private async checkPendingEnrollment() {
     if (this.isGovernor) return;
 
