@@ -1,8 +1,14 @@
 <div class="content" #scrollingBlock>
 
     <div class="governance-container">
+        <!-- Not fully in sync -->
+        <div class="content-card" *ngIf="isChainSynced">
+            <fa-icon class="danger fa-2x fa-solid" icon="triangle-exclamation"></fa-icon>
+            <h4>{{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDTITLE' | translate }}</h4>
+            <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
+        </div>
         <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll">
+        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced">
             <fa-icon class="danger fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -11,14 +17,25 @@
                 <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}:
                     {{governanceCollateral | prettyCoins}} MRX</p>
             </div>
-            <button class="btn btn-default" (click)="isEnrolling=true" *ngIf="!isEnrolling">
+            <div *ngIf="!isEnrolling" class="alt-select">
+                <select class="select" [(ngModel)]="selectedSenderAddress">
+                    <option class="option" selected value="null">{{ 'DGP.PAGES.GOVERNANCE.SELECTAGOVERNOR' | translate }}</option>
+                    <option class="option" *ngFor="let address of addresslist">{{address.address}}</option>
+                </select>
+            </div>
+            <button class="btn btn-default" 
+                (click)="isEnrolling=true" 
+                *ngIf="!isEnrolling" 
+                [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
                 {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
             </button>
             <div *ngIf="isEnrolling">
+                <p>{{ selectedSenderAddress }}</p>
                 <button class="btn btn-danger" (click)="isEnrolling=false">
                     {{'MISC.CANCELBUTTON' | translate }}
                 </button>
-                <button class="btn btn-success" (click)="enroll()">
+                <button class="btn btn-success" (click)="enroll()" 
+                    [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
                     {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
                 </button>
             </div>
@@ -29,7 +46,7 @@
             <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
         </div>
         <!-- enrolled -->
-        <div class="content-card" *ngIf="isGovernor">
+        <div class="content-card" *ngIf="isGovernor && !isChainSynced">
             <fa-icon class="success fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
             <div>
