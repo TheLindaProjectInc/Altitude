@@ -33,6 +33,7 @@ export class DGPService {
         private wallet: WalletService,
         private electron: ElectronService
     ) {
+        this.loadData();
         this.newBlockReceivedSub = this.wallet.newBlockReceived.subscribe(() => {
             if (wallet.accounts.length) {
                 if (this.onAccountsUpdatedSub) this.onAccountsUpdatedSub.unsubscribe();
