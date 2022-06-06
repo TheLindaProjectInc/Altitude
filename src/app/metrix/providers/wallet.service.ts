@@ -476,6 +476,12 @@ export class WalletService {
         }
     }
 
+    public getMNSAddress(sender: string, mnsName: string): Promise<any> {
+        if(mnsName.length > 0 && (mnsName.length !== 34 && !/^[Mm]\w+/.test(mnsName))) {
+            return this.rpc.requestData(RPCMethods.GETMNSADDRESS, [sender, mnsName]);
+        }
+    }
+
     public getNewAddress(account: string): Promise<any> {
         return this.rpc.requestData(RPCMethods.NEWADDRESS, [account]);
     }
