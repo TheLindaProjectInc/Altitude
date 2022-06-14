@@ -251,13 +251,15 @@ export class SendComponent implements OnInit, OnDestroy {
       }
     }
     return this.wallet.getMNSAddress(sender, mnsName).then((result) => {
-      const mnsaddress = result;
-      if (!mnsaddress) {
-        this.notification.notify("error", "Short address not resolved.");
-        return;
-      }
-      if (mnsaddress && mnsaddress.substr(0, 2) === "0x") {
-        this.notification.notify("error", "Invalid MRX address returned.");
+      const mnsaddress = result.result;
+      if (result.error) {
+        if (result.code === 401) {
+          this.notification.notify("error", "MNS.NOTIFICATIONS.MNSRPCUNAVAILABLE");
+        } else if (result.code === 402){
+          this.notification.notify("error", "MNS.NOTIFICATIONS.MNSRESOLUTIONUNAVAILABLE");
+        } else {
+          this.notification.notify("error", "MNS.NOTIFICATIONS.MNSUNKNOWNERROR");
+        }
         return;
       }
       if (mnsaddress.length === 34 && /^[Mm]\w+/.test(mnsaddress)) {

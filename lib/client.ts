@@ -599,12 +599,21 @@ export default class Client {
             body: null,
             error: null,
           };
-          if (res !== "") {
-            result.body = { result: res };
+          if (res.error && res.code !== 200){
             result.success = true;
+            result.body = {result: {error: true, code: res.code, result: res.result}};
+          }
+          if (!res.error && res.code === 200 && res.result && res.result !== "" && /^[Mm]\w+/.test(res.result)) {
+            result.success = true;
+            result.body = {result: {error: null, code: null, result: res.result}};
+
           }
           resolve(result);
-        });
+        }).catch(e =>
+          {
+            console.log(e);
+          }
+        );
       });
     } else {
       return new Promise((resolve, reject) => {
@@ -653,17 +662,25 @@ export default class Client {
     let network: NetworkType = "MainNet";
     if (this.chain === ChainType.TESTNET) network = "TestNet";
 
-    const mrpc = new MetrixRPCNode(
-      null,
-      `http://127.0.0.1:${this.clientConfigFile.rpcport}`,
-      this.clientConfigFile.rpcuser,
-      this.clientConfigFile.rpcpassword
-    );
-    const provider = new RPCProvider(network, mrpc, sender);
-    const mns = new MNS(network, provider, getMNSAddress(network));
-    const name: Name = mns.name(mnsName);
-    const address = await name.getAddress("MRX");
-    return address;
+    try {
+      const mrpc = new MetrixRPCNode(
+        null,
+        `http://127.0.0.1:${this.clientConfigFile.rpcport}`,
+        this.clientConfigFile.rpcuser,
+        this.clientConfigFile.rpcpassword
+      );
+      const provider = new RPCProvider(network, mrpc, sender);
+      const mns = new MNS(network, provider, getMNSAddress(network));
+      const name: Name = mns.name(mnsName);
+      const address = await name.getAddress("MRX");
+      if(address.startsWith("0x")){
+        return {error: true, code: 402, result: null}; //MNS Resolution currently unavailable
+      }
+      return {error: false, code: 200, result: address};
+    } catch (ex) {
+      console.log("Error: " + ex);
+      return {error: true, code: 401, result: null}; //RPC fault or unavailable
+    }
   }
 
   setClientStatus(status: ClientStatus) {
