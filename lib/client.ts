@@ -53,7 +53,7 @@ export default class Client {
   // chain we are running on
   chain: ChainType = ChainType.MAINNET;
   // when using hash of unknown daemon assume version
-  readonly assumeClientVersion = "4.0.8.0";
+  readonly assumeClientVersion = "4.0.9.1";
 
   constructor(win) {
     this.win = win;
