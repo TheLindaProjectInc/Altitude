@@ -10,6 +10,7 @@ export class LoaderComponent {
   @Input() size: number;
   @Input() paddingTop: number;
   @Input() paddingBottom: number;
+  @Input() rotation: boolean;
 
   constructor(
   ) { }

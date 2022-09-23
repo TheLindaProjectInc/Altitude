@@ -1,4 +1,4 @@
 <div class="outer" [ngStyle]="position">
-    <div class="inner" [ngStyle]="dimensions">
+    <div [ngClass]="!rotation ? 'inner' : 'innerspin'" [ngStyle]="dimensions">
     </div>
 </div>

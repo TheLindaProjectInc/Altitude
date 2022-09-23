@@ -14,6 +14,15 @@
     animation: fade 2s infinite;
 }
 
+.innerspin {
+    background: url('../../../assets/img/altitude-logo-greyscale.png');
+    background-size: contain;
+    position: relative;
+    transition: all 0.8s;
+    overflow: hidden;
+    animation: spin 2s infinite;
+}
+
 @keyframes fade {
     0% {
         opacity: 1;
@@ -25,5 +34,14 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
     }
 }
