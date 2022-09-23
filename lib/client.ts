@@ -496,7 +496,7 @@ export default class Client {
           () => {
             helpers.deleteFile(bootstrapLocation);
             log.info("Client", "Bootstrap starting client...");
-            this.startClient(true, true);
+            this.startClient(true, false);
           },
           (err) => {
             throw err;
