@@ -6,7 +6,7 @@ import * as request from "request";
 import { spawn, ChildProcess } from "child_process";
 import * as log from "electron-log";
 import * as unzipper from "unzipper";
-import * as compareVersions from "compare-versions";
+import { compareVersions } from 'compare-versions';
 import * as publicIp from "public-ip";
 import * as settings from "./settings";
 import * as helpers from "./helpers";

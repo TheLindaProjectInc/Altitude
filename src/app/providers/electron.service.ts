@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { ipcRenderer, clipboard, shell } from 'electron';
 import * as remote from '@electron/remote'
 import { HttpClient } from '@angular/common/http';
-import * as compareVersions from 'compare-versions';
+import { compareVersions } from 'compare-versions';
 import { CurrencyService } from './currency.service';
 import { ChainType, ClientStatus } from 'app/enum';
 import Languages from 'app/languages';
