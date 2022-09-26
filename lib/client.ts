@@ -13,12 +13,10 @@ import * as helpers from "./helpers";
 import {
   MNS,
   getMNSAddress,
-  RPCProvider,
-  NetworkType,
   Name,
 } from "@metrixnames/mnslib";
-import { MetrixRPCNode } from "@metrixnames/mnslib/lib/lib/MetrixRPC/MetrixRPC";
-import { async } from "@angular/core/testing";
+import { RPCProvider, NetworkType} from '@metrixcoin/metrilib';
+import { MetrixRPCNode } from "@metrixcoin/metrilib/lib/lib/MetrixRPC/MetrixRPC";
 
 var localClientBinaries = require("../clientBinaries.json");
 
