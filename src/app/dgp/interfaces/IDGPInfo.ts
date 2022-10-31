@@ -4,4 +4,10 @@ export default class IDGPInfo {
     governancecollateral: number;
     maxblocksize: number;
     mingasprice: number;
+    contracts: {
+        version: number;
+        dgp: string;
+        governance: string;
+        budget: string;
+    }
 }
