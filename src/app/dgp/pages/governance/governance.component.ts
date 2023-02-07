@@ -49,7 +49,7 @@ export class GovernanceComponent {
   }
 
   get v1GovExists() {
-    return this.dgpService.v1Governor !==  null ? true : false;
+    return this.dgpService.v1Governor !==  undefined ? true : false;
   }
 
   get myV1GovAddress() {

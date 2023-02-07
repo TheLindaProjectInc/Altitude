@@ -34,7 +34,13 @@ export class BudgetCreateComponent {
 
   public get budgetBlock(): number {
     if (!this.wallet.blockchainStatus) return 0;
-    let nextBudgetBlock = Math.ceil(this.wallet.blockchainStatus.latestBlockHeight / this.dgpService.budgetSettlementPeriod) * this.dgpService.budgetSettlementPeriod;
+    let nextBudgetBlock;
+    if(this.wallet.blockchainStatus.latestBlockHeight < 766080) {
+      nextBudgetBlock = Math.ceil(this.wallet.blockchainStatus.latestBlockHeight / this.dgpService.budgetSettlementPeriod) * this.dgpService.budgetSettlementPeriod;
+    } else {
+      let delta = 6360; //this is the block skew between the DGPv1 and v2 settlement blocks.
+      nextBudgetBlock = (Math.ceil(this.wallet.blockchainStatus.latestBlockHeight / this.dgpService.budgetSettlementPeriod) * this.dgpService.budgetSettlementPeriod) + delta;
+    }
     return nextBudgetBlock;
   }
 

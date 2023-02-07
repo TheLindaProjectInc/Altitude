@@ -152,6 +152,8 @@ export class DGPService {
             let govAddr = this.governorListV1[hexAddrs[i]];
             if (addressList.indexOf(govAddr) > -1) {
                 this.v1Governor = govAddr;
+            } else {
+                this.v1Governor = undefined;
             }
         }
     }
