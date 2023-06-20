@@ -29,7 +29,8 @@ export class CurrencyService {
 
     private async getMarket() {
         this.marketLoadFailed = false;
-        this.http.get(`https://api.coingecko.com/api/v3/coins/linda`)
+        //this.http.get(`https://api.coingecko.com/api/v3/coins/linda`)
+        this.http.get(`https://api.coingecko.com/api/v3/coins/wrapped-metrix`)
             .subscribe((data: any) => {
                 this.currencies = ['MRX'];
                 Object.keys(data.market_data.current_price).forEach(key => {
@@ -48,7 +49,8 @@ export class CurrencyService {
             if (this.charts[period] && this.charts[period].expires < new Date().getTime()) {
                 resolve(this.charts[period].prices);
             } else {
-                this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
+                this.http.get(`https://api.coingecko.com/api/v3/coins/wrapped-metrix/market_chart?vs_currency=BTC&days=${period}`)
+                //this.http.get(`https://api.coingecko.com/api/v3/coins/linda/market_chart?vs_currency=BTC&days=${period}`)
                     .subscribe((data: any) => {
                         this.charts[period] = {
                             prices: data.prices,
