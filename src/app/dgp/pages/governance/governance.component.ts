@@ -44,17 +44,6 @@ export class GovernanceComponent {
       (Date.now() - this.wallet.blockchainStatus.latestBlockTime > 5 * 60 * 1000 && this.wallet.blockchainStatus.syncProgresss < 99.99)
   }
 
-  get IsDGPv2() {
-    return this.dgpService.dgpInfo.contracts.version === 2 ? true : false;
-  }
-
-  get v1GovExists() {
-    return this.dgpService.v1Governor !==  undefined ? true : false;
-  }
-
-  get myV1GovAddress() {
-    return this.dgpService.v1Governor;
-  }
 
   private async checkPendingEnrollment() {
     if (this.isGovernor) return;
@@ -95,36 +84,6 @@ export class GovernanceComponent {
     return this.dgpService.governor.address;
   }
 
-  public async unenrollv1() {
-    if (this.lastPing < Helpers.params.governance.maturity) {
-      return this.notification.notify('default', 'DGP.NOTIFICATIONS.GOVERNORNOTMATURE');
-    }
-
-    try {
-      await this.prompt.alert('COMPONENTS.PROMPT.UNENROLLGOVERNORTITLE', 'COMPONENTS.PROMPT.UNENROLLGOVERNORCONTENT', 'DGP.PAGES.GOVERNANCE.UNENROLL', 'MISC.CANCELBUTTON');
-    } catch (ex) {
-      return;
-    }
-
-    let passphrase;
-    try {
-      if (this.wallet.requireUnlock()) [passphrase,] = await this.prompt.getPassphrase();
-    } catch (ex) {
-      // passphrase prompt closed
-      return;
-    }
-
-    this.notification.loading('DGP.NOTIFICATIONS.UNENROLLINGGOVERNOR');
-
-    try {
-      await this.dgpService.unenrollV1Governor(passphrase);
-      this.notification.notify('success', 'DGP.NOTIFICATIONS.UNENROLLEDGOVERNOR');
-    } catch (ex) {
-      if (isDevMode()) console.log(ex);
-      this.errorService.diagnose(ex);
-    }
-
-  }
 
   public get governanceCollateral(): number {
     if (!this.dgpService.dgpInfo) return 0;

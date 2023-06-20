@@ -1,9 +1,4 @@
 <div class="content" #scrollingBlock>
-    <div class="alerts">
-        <h4>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONTITLE' | translate }}</h4>
-        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO' | translate }}</p>
-        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO2' | translate }}</p>
-    </div>
     <div class="governance-container" style="flex-direction: column;">
         <!-- Not fully in sync -->
         <div class="content-card" *ngIf="isChainSynced">
@@ -12,7 +7,7 @@
             <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
         </div>
         <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced && IsDGPv2">
+        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced">
             <fa-icon class="danger fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -45,12 +40,12 @@
             </div>
         </div>
         <!-- enrollment pending -->
-        <div class="content-card" *ngIf="!isGovernor && enrollmentTxid && IsDGPv2">
+        <div class="content-card" *ngIf="!isGovernor && enrollmentTxid">
             <fa-icon class="fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
         </div>
         <!-- enrolled -->
-        <div class="content-card" *ngIf="isGovernor && !isChainSynced && IsDGPv2">
+        <div class="content-card" *ngIf="isGovernor && !isChainSynced">
             <fa-icon class="success fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -78,15 +73,6 @@
                     {{ 'DGP.PAGES.GOVERNANCE.PING' | translate }}
                 </button>
             </div>
-        </div>
-        <div class="content-card" *ngIf="!isChainSynced && v1GovExists">
-            <h4>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1TITLE' | translate }}</h4>
-            <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO1' | translate }}</p>
-            <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO2' | translate }}</p>
-            <span class="success" style="margin-bottom: 10px;">{{myV1GovAddress}}</span>
-            <button class="btn btn-danger" (click)="unenrollv1()">
-                {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
-            </button>
         </div>
     </div>
 </div>
