@@ -31,7 +31,8 @@ import { CurrencyService } from './providers/currency.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
-import * as buy from './buy/buy.module';
+// Disable Buy Metrix
+// import * as buy from './buy/buy.module';
 import * as dgp from './dgp/dgp.module';
 // pipes
 import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
@@ -45,7 +46,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 const routes: Routes = [
   { path: '', redirectTo: '/metrix', pathMatch: 'full' },
   metrix.route,
-  buy.route,
+  // Disable Buy Metrix
+  // buy.route,
   dgp.route
 ];
 
@@ -55,8 +57,9 @@ const routes: Routes = [
     PrettyCoinsPipe,
     ...componentDeclarations,
     ...metrix.declarations,
-    ...dgp.declarations,
-    ...buy.declarations
+    ...dgp.declarations
+    // Disable Buy Metrix
+    //...buy.declarations
   ],
   imports: [
     BrowserModule,
@@ -91,8 +94,9 @@ const routes: Routes = [
     CurrencyService,
     ...componentProviders,
     ...metrix.providers,
-    ...dgp.providers,
-    ...buy.providers
+    ...dgp.providers
+    // Disable Buy Metrix
+    //...buy.providers
   ],
   bootstrap: [
     AppComponent
