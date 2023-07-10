@@ -171,6 +171,8 @@ export class DGPService {
                 let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [oldDGPInfo.contracts.governance, callData]);
                 if (data.executionResult.output.replace(/0/g, '') !== '') {
                     this.oldGovernor = govAddr;
+                } else {
+                    this.oldGovernor = undefined;
                 }
                 return;
             }
