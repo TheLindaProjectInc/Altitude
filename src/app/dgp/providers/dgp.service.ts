@@ -21,11 +21,11 @@ export class DGPService {
     onDGPInfo = new ReplaySubject<void>()
 
     governor: Governor;
+    oldGovernor: String;
     dgpInfo: IDGPInfo;
     budgetProposals: Array<BudgetProposal> = [];
     governorList = {};
-    governorListV1 = {};
-    v1Governor: string;
+    oldGovernorList = {};
     readonly defaultGasLimit = 500000;
     readonly defaultGasPrice = 0.00010000;
     readonly gasLimit_createProposal = 500000;
@@ -53,7 +53,7 @@ export class DGPService {
         this.dgpInfo = null;
         this.budgetProposals = [];
         this.governorList = {};
-        this.governorListV1 = {};
+        this.oldGovernorList = {};
     }
 
     ngOnDestroy() {
@@ -90,8 +90,8 @@ export class DGPService {
         await this.getDGPInfo();
         await this.getGovernors();
         await this.getMyGovernor();
-        await this.getGovernorsV1();
-        await this.existsInV1();
+        await this.getOldGovernors();
+        await this.getMyOldGovernor();
         await this.loadBudgetProposals();
     }
 
@@ -118,12 +118,16 @@ export class DGPService {
         }
     }
 
-// TODO
-// This section is temporary and will be removed in future updates when the old v1 contract is empty of governors.
-// ####
 
-    private async getGovernorsV1() {
-        let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [GovernanceContract.ADDRESS, GovernanceContract.GETADDRESSLIST]);
+    private async getDGPInfo() {
+        let data: any = await this.rpc.requestData(RPCMethods.GETDGPINFO);
+        if (!data.error) this.dgpInfo = data;
+        this.onDGPInfo.next()
+    }
+
+    private async getOldGovernors() {
+        let oldDGPInfo: any = await this.getOldDGPInfo();
+        let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [oldDGPInfo.contracts.governance, GovernanceContract.GETADDRESSLIST]);
         if (!data.error && data.executionResult.excepted == 'None') {
             let chunks = data.executionResult.output.match(new RegExp('.{1,64}', 'g'));
             // add new governors
@@ -131,57 +135,50 @@ export class DGPService {
             for (let i = 2; i < chunks.length; i++) {
                 let hexAddr = chunks[i].substring(24, 64);
                 hexAddressList.push(hexAddr)
-                if (!this.governorListV1[hexAddr]) {
+                if (!this.oldGovernorList[hexAddr]) {
                     let addr = await this.rpc.requestData(RPCMethods.FROMHEXADDRESS, [hexAddr]);
-                    this.governorListV1[hexAddr] = addr
+                    this.oldGovernorList[hexAddr] = addr
                 }
             }
             // remove old governors
-            Object.keys(this.governorListV1).forEach(hexAddr => {
+            Object.keys(this.oldGovernorList).forEach(hexAddr => {
                 if (hexAddressList.indexOf(hexAddr) === -1) {
-                    delete this.governorListV1[hexAddr]
+                    delete this.oldGovernorList[hexAddr]
                 }
             })
         }
     }
 
-    private async existsInV1() {
-        let addressList = this.wallet.addressList;
-        let hexAddrs = Object.keys(this.governorListV1);
-        for (let i = 0; i < hexAddrs.length; i++) {
-            let govAddr = this.governorListV1[hexAddrs[i]];
-            if (addressList.indexOf(govAddr) > -1) {
-                this.v1Governor = govAddr;
-            } else {
-                this.v1Governor = undefined;
-            }
-        }
-    }
-
-    public async unenrollV1Governor(passphrase: string) {
+    private async getOldDGPInfo() {
         try {
-            await this.rpc.unlockWalletForCommand(passphrase);
-
-            let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
-            let force: number = 0;
-            let callData: string = GovernanceContract.UNENROLL +
-                force.toString().padStart(64, '0');
-            const args = [GovernanceContract.ADDRESS, callData, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.v1Governor];
-            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
-            this.rpc.lockWalletAfterCommand(passphrase);
-            if (!data.error) return data;
+            let data: any = await this.rpc.requestData(RPCMethods.GETDGPINFO, ["900000"]);
+            if (!data.error) {
+                return data;
+            };
         } catch (ex) {
-            this.rpc.lockWalletAfterCommand(passphrase);
             throw ex;
         }
     }
 
-// ##############
+    private async getMyOldGovernor() {
+        let oldDGPInfo: any = await this.getOldDGPInfo();
+        let addressList = this.wallet.addressList;
+        let hexAddrs = Object.keys(this.oldGovernorList);
+        for (let i = 0; i < hexAddrs.length; i++) {
+            let govAddr = this.oldGovernorList[hexAddrs[i]];
+            if (addressList.indexOf(govAddr) > -1) {
+                let callData: string = GovernanceContract.GOVERNORS.padEnd(32, '0') + hexAddrs[i];
+                let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [oldDGPInfo.contracts.governance, callData]);
+                if (data.executionResult.output.replace(/0/g, '') !== '') {
+                    this.oldGovernor = govAddr;
+                } else {
+                    this.oldGovernor = undefined;
+                }
+                return;
+            }
+        }
 
-    private async getDGPInfo() {
-        let data: any = await this.rpc.requestData(RPCMethods.GETDGPINFO);
-        if (!data.error) this.dgpInfo = data;
-        this.onDGPInfo.next()
+        if (this.oldGovernor) this.oldGovernor = null;
     }
 
     private async getMyGovernor() {
@@ -228,6 +225,25 @@ export class DGPService {
             let callData: string = GovernanceContract.UNENROLL +
                 force.toString().padStart(64, '0');
             const args = [this.dgpInfo.contracts.governance, callData, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.governor.address];
+            let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
+            this.rpc.lockWalletAfterCommand(passphrase);
+            if (!data.error) return data;
+        } catch (ex) {
+            this.rpc.lockWalletAfterCommand(passphrase);
+            throw ex;
+        }
+    }
+
+    public async unenrollOldGovernor(passphrase: string) {
+        try {
+            let oldDGPInfo: any = await this.getOldDGPInfo();
+            await this.rpc.unlockWalletForCommand(passphrase);
+
+            let gasPrice: Big = Helpers.fromSatoshi(Big(this.dgpInfo.mingasprice));
+            let force: number = 0;
+            let callData: string = GovernanceContract.UNENROLL +
+                force.toString().padStart(64, '0');
+            const args = [oldDGPInfo.contracts.governance, callData, 0, this.defaultGasLimit, gasPrice.toFixed(8), this.oldGovernor];
             let data: any = await this.rpc.requestData(RPCMethods.SENDTOCONTRACT, args);
             this.rpc.lockWalletAfterCommand(passphrase);
             if (!data.error) return data;
