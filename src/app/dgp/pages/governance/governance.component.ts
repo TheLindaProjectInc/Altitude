@@ -76,14 +76,25 @@ export class GovernanceComponent {
     return true;
   }
 
+  public get isDGPv3() {
+    return this.dgpService.dgpInfo.contracts.version === 3;
+  }
+
   public get isGovernor(): boolean {
-    return !!this.dgpService.governor
+    return !!this.dgpService.governor;
+  }
+
+  public get isOldGovernor(): boolean {
+    return !!this.dgpService.oldGovernor;
   }
 
   public get myGovAddress() {
     return this.dgpService.governor.address;
   }
 
+  public get myOldGovAddress() {
+    return this.dgpService.oldGovernor;
+  }
 
   public get governanceCollateral(): number {
     if (!this.dgpService.dgpInfo) return 0;
@@ -222,6 +233,37 @@ export class GovernanceComponent {
 
     try {
       await this.dgpService.unenrollGovernor(passphrase);
+      this.notification.notify('success', 'DGP.NOTIFICATIONS.UNENROLLEDGOVERNOR');
+    } catch (ex) {
+      if (isDevMode()) console.log(ex);
+      this.errorService.diagnose(ex);
+    }
+
+  }
+
+  public async unenrollOldGov() {
+    if (this.lastPing < Helpers.params.governance.maturity) {
+      return this.notification.notify('default', 'DGP.NOTIFICATIONS.GOVERNORNOTMATURE');
+    }
+
+    try {
+      await this.prompt.alert('COMPONENTS.PROMPT.UNENROLLGOVERNORTITLE', 'COMPONENTS.PROMPT.UNENROLLGOVERNORCONTENT', 'DGP.PAGES.GOVERNANCE.UNENROLL', 'MISC.CANCELBUTTON');
+    } catch (ex) {
+      return;
+    }
+
+    let passphrase;
+    try {
+      if (this.wallet.requireUnlock()) [passphrase,] = await this.prompt.getPassphrase();
+    } catch (ex) {
+      // passphrase prompt closed
+      return;
+    }
+
+    this.notification.loading('DGP.NOTIFICATIONS.UNENROLLINGGOVERNOR');
+
+    try {
+      await this.dgpService.unenrollOldGovernor(passphrase);
       this.notification.notify('success', 'DGP.NOTIFICATIONS.UNENROLLEDGOVERNOR');
     } catch (ex) {
       if (isDevMode()) console.log(ex);

@@ -1,4 +1,9 @@
 <div class="content" #scrollingBlock>
+    <div class="alerts" *ngIf="!isDGPv3">
+        <h4>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONTITLE' | translate }}</h4>
+        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO' | translate }}</p>
+        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO2' | translate }}</p>
+    </div>
     <div class="governance-container" style="flex-direction: column;">
         <!-- Not fully in sync -->
         <div class="content-card" *ngIf="isChainSynced">
@@ -7,7 +12,7 @@
             <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
         </div>
         <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced">
+        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced && isDGPv3">
             <fa-icon class="danger fa-2x" icon="users"></fa-icon>
             <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
             <div>
@@ -71,6 +76,23 @@
                 </button>
                 <button class="btn btn-default" (click)="ping()">
                     {{ 'DGP.PAGES.GOVERNANCE.PING' | translate }}
+                </button>
+            </div>
+        </div>
+        <div class="content-card" *ngIf="isOldGovernor && !isChainSynced">
+            <fa-icon class="success fa-2x" icon="users"></fa-icon>
+            <h5>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1TITLE' | translate }}</h5>
+            <div>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO1' | translate }}</p>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO2' | translate }}</p>
+                <p>{{ 'DGP.PAGES.GOVERNANCE.MYGOVERNORADDRESS' | translate }}: 
+                    
+                    <span class="success">{{myGovAddress}}</span></p>
+                <p>
+            </div>
+            <div class="toolbar">
+                <button class="btn btn-danger" (click)="unenrollOldGov()">
+                    {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
                 </button>
             </div>
         </div>
