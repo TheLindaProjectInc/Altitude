@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/github/license/TheLindaProjectInc/Altitude)](https://github.com/TheLindaProjectInc/Altitude/blob/master/LICENSE.md) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/TheLindaProjectInc/Altitude/develop) [![Node.js Build Test](https://github.com/TheLindaProjectInc/Altitude/actions/workflows/node.js.yml/badge.svg)](https://github.com/TheLindaProjectInc/Altitude/actions/workflows/node.js.yml)
+
 # Altitude
 The Altitude wallet is the wallet of choice for Metrix.
 
