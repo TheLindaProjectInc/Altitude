@@ -9,7 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 // modal
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 // virtual scroll
-import { VirtualScrollerModule } from 'ngx-virtual-scroller';
+import { VirtualScrollerModule } from '@iharbeck/ngx-virtual-scroller';
 // NG Translate
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
