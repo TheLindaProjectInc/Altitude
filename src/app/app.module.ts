@@ -28,6 +28,7 @@ import { NotificationService } from './providers/notification.service';
 import { TranslationService } from './providers/translation.service';
 import { DesktopNotificationService } from './providers/desktop-notification.service';
 import { CurrencyService } from './providers/currency.service';
+import { PriceOracle } from './providers/priceoracle.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
@@ -92,6 +93,7 @@ const routes: Routes = [
     TranslationService,
     DesktopNotificationService,
     CurrencyService,
+    PriceOracle,
     ...componentProviders,
     ...metrix.providers,
     ...dgp.providers
