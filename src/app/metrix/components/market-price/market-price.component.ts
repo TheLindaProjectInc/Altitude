@@ -1,10 +1,11 @@
+import { ChainType } from 'app/enum';
 import { Component } from '@angular/core';
-import Helpers from 'app/helpers';
-import { Chart, registerables, Point } from 'chart.js';
+import { Chart, registerables, ChartConfiguration } from 'chart.js';
 import { TranslationService } from 'app/providers/translation.service';
 import { ErrorService } from 'app/providers/error.service';
 import { CurrencyService } from 'app/providers/currency.service';
-import Big from 'big.js';
+import { PriceOracle } from 'app/providers/priceoracle.service';
+
 Chart.register(...registerables);
 @Component({
   selector: 'market-price-chart',
@@ -13,20 +14,23 @@ Chart.register(...registerables);
 })
 
 export class MarketPriceComponent {
+
   priceChart: Chart;
   marketPeriod = 1;
   loadingChart: boolean = true;
   chartLoadFailed: boolean = false;
+  labels: string[] = [];
+  pricesMRX: number[] = [];
+  pricesUSD: number[] = [];
 
   constructor(
-    private translation: TranslationService,
-    private error: ErrorService,
-    private currenyService: CurrencyService
+    private priceOracle: PriceOracle
   ) {
   }
 
   ngOnInit() {
     this.loadMarketData();
+    setTimeout(() => this.loadMarketData() ,(1000 * 60) * 15);
   }
 
   updateChart(days) {
@@ -35,131 +39,143 @@ export class MarketPriceComponent {
   }
 
   async loadMarketData() {
-    this.chartLoadFailed = false;
-    this.loadingChart = true;
-    if (this.priceChart) this.priceChart.destroy();
-    try {
-      let prices: any = await this.currenyService.getMarketChart(this.marketPeriod);
-      this.drawIncomeChart(prices);
-    } catch (ex) {
-      this.chartLoadFailed = true;
-    }
-    this.loadingChart = false;
-  }
-
-  async drawIncomeChart(priceData: Array<any>) {
-    let incomeData: Array<Point> = [];
-    let labels = [];
-
-    let min = Infinity;
-    let max = 0;
-
-    let prices = [];
-    priceData.sort((a, b) => { return a[0] - b[0] });
-    for (let i = 0; i < priceData.length; i++) {
-      let pricePoint = priceData[i];
-      let date = new Date(pricePoint[0]);
-      let value = Number(Helpers.roundCoins(Helpers.toSatoshi(Big(pricePoint[1])), 2))
-      let key = await this.monthIndexToName(date.getMonth()) + '-' + date.getDate() + '-' + date.getHours();
-      if (!prices[key]) prices[key] = 0;
-      if (prices[key] < value) prices[key] = value
-    }
-
-    let timestamps = Object.keys(prices);
-    for (let i = 0; i < timestamps.length; i++) {
-      let ts = timestamps[i];
-      let value = prices[ts];
-      let dateString = '';
-      // 24 hours
-      if (this.marketPeriod === 1) {
-        let hour = Number(ts.split('-')[2]);
-        if (hour === 0) dateString = `12:00am`;
-        else if (hour < 12) dateString = `${hour}:00am`;
-        else dateString = `${hour - 12}:00pm`;
-      } else {
-        let month = ts.split('-')[0];
-        let date = ts.split('-')[1];
-        dateString = month + ' ' + date;
-      }
-      labels.push(dateString);
-      incomeData.push({ x: i, y: value })
-      if (value < min) min = value;
-      if (value > max) max = value;
-    }
-
-    // get chart
-    try {
-      var ctx = (document.getElementById('priceChart') as any).getContext("2d");
-
-      // set custom x axis
-      let xMin = Math.floor(min - (max - min) / 2);
-      let xMax = Math.ceil(max + (max - min) / 2);
-
-      // set gradient colour
-      let gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-      gradientStroke.addColorStop(0, "#BA55D3");
-      gradientStroke.addColorStop(1, "#481448");
-
-      this.priceChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              backgroundColor: gradientStroke,
-              borderColor: gradientStroke,
-              pointRadius: 0,
-              data: incomeData,
-              fill: 'origin'
-            }
-          ]
+    const data = {
+      labels: [],
+      datasets: [
+        {
+          label: 'MRX/USD',
+          backgroundColor: 'rgb(128, 0, 128, 0.35)',
+          borderColor: 'purple',
+          data: [],
+          fill: true,
+          yAxisID: 'mrx'
         },
-        options: {
-          plugins: {
-            legend: {
-              display: false
-            },
-            tooltip: {
-              intersect: false,
-              callbacks: {
-                label: function (context) {
-                  var label = context.dataset.label || '';
-                  if(label){
-                    label +=': ';
-                  }
+        {
+          label: 'USD/MRX',
+          backgroundColor: 'rgba(245, 245, 245, 0.35)',
+          borderColor: 'whitesmoke',
+          data: [],
+          fill: true,
+          yAxisID: 'usd'
+        }
+      ]
+    }
 
-                  if(context.parsed.y !== null){
-                    label += context.parsed.y + ' Sats'
-                  }
-                  return label;
-                }
-              },
-              displayColors: false
-            },
-          },
-          scales: {
-            y: {
-              display: false,
-              suggestedMin: xMin,
-              suggestedMax: xMax,
-              ticks: {
-                stepSize: 1
+    const config: ChartConfiguration = {
+      type: 'line',
+      data: data,
+      options: {
+        layout: {
+          padding: {
+            left: 5,
+            right: 5
+          }
+        },
+        plugins: {
+          tooltip: {
+            enabled: true,
+            usePointStyle: true,
+            callbacks: {
+              label: (data) => {
+                return data.parsed.y < 1
+                  ? data.parsed.y.toFixed(7)
+                  : `${data.parsed.y}`;
               }
-            },
-            x: {
-              display: false,
+            }
+          },
+          legend: {
+            display: true,
+            labels: {
+              color: 'rgba(245, 245, 245, 0.55)'
+            }
+          }
+        },
+        maintainAspectRatio: false,
+        scales: {
+          mrx: {
+            type: 'linear',
+            position: 'right',
+            ticks: {
+              precision: 0,
+              color: 'purple',
+              font: {
+                weight: 'bold'
+              }
+            }
+          },
+          usd: {
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              callback: (val) =>
+                typeof val === 'number' ? val.toFixed(7) : Number(val).toFixed(7),
+              precision: 7,
+              color: 'whitesmoke',
+              font: {
+                weight: 'bold'
+              }
             }
           }
         }
-      });
-    } catch (ex) {
+      }
+    };
 
+    this.chartLoadFailed = false;
+    this.loadingChart = true;
+
+    if (this.priceChart != undefined) {
+      this.priceChart.destroy();
     }
-  }
 
-  async monthIndexToName(index: number) {
-    const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
-    return await this.translation.translate('MONTH.' + months[index])
-  }
+    this.priceChart = new Chart((document.getElementById('priceChart') as any).getContext("2d"), config);
 
+    try {
+      let oraclePrices;
+      if (this.marketPeriod === 1) {
+        oraclePrices = await this.priceOracle.oracle.recentPriceHistory();
+      } else if (this.marketPeriod === 7) {
+        const index = await this.priceOracle.oracle.priceIndex();
+        if (index >= 7 * 24) {
+          oraclePrices = await this.priceOracle.oracle.priceHistory(
+            index - BigInt(7 * 24),
+            BigInt(7 * 24)
+          );
+        } else {
+          oraclePrices = await this.priceOracle.oracle.priceHistory(BigInt(0), index + BigInt(1));
+        }
+      }
+      
+      let lastDate = undefined;
+    
+      for (const data of oraclePrices) {
+        let date = new Date(Number(data[2].toString()) * 1000);
+  
+        this.priceChart.data.labels.push(
+          `${
+            date.toLocaleDateString() == lastDate 
+            ? '' 
+            : `${date.toLocaleDateString()} `
+          }${date.toLocaleTimeString()}`
+        );
+        lastDate = date.toLocaleDateString();
+        this.priceChart.data.datasets.forEach((dataset) => {
+          if (dataset.label === 'MRX/USD') {
+            dataset.data.push(
+              Number((Number(data[0]) * 1e-8).toFixed(8))  // MRX/USD
+            );
+          } else if (dataset.label === 'USD/MRX') {
+            dataset.data.push(
+              Number((1 / (Number(data[0]) * 1e-8)).toFixed(7)) // USD/MRX
+            );
+          }
+        });
+      }
+      this.priceChart.update();
+    } catch(ex) {
+      this.chartLoadFailed = true;
+      console.log(ex);
+    }
+
+    this.loadingChart = false;
+  }
 }
