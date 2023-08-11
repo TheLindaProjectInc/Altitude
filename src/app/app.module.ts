@@ -9,7 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 // modal
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 // virtual scroll
-import { VirtualScrollerModule } from 'ngx-virtual-scroller';
+import { VirtualScrollerModule } from '@iharbeck/ngx-virtual-scroller';
 // NG Translate
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -28,6 +28,7 @@ import { NotificationService } from './providers/notification.service';
 import { TranslationService } from './providers/translation.service';
 import { DesktopNotificationService } from './providers/desktop-notification.service';
 import { CurrencyService } from './providers/currency.service';
+import { PriceOracle } from './providers/priceoracle.service';
 // app
 import { AppComponent } from './app.component';
 import * as metrix from './metrix/metrix.module';
@@ -65,7 +66,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes, { useHash: true, relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(routes, { useHash: true }),
     FontAwesomeModule,
     VirtualScrollerModule,
     NgxSmartModalModule.forRoot(),
@@ -92,6 +93,7 @@ const routes: Routes = [
     TranslationService,
     DesktopNotificationService,
     CurrencyService,
+    PriceOracle,
     ...componentProviders,
     ...metrix.providers,
     ...dgp.providers

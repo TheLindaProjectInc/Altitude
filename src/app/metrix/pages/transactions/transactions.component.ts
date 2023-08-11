@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WalletService } from '../../providers/wallet.service';
-import { IPageInfo } from 'ngx-virtual-scroller';
+import { IPageInfo } from '@iharbeck/ngx-virtual-scroller';
 import { ErrorService } from 'app/providers/error.service';
 import { ElectronService } from 'app/providers/electron.service';
 import { Transaction } from '../../classes';

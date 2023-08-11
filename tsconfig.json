@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "module": "es2020",
+    "module": "CommonJS",
     "outDir": "./dist/out-tsc",
     "baseUrl": "src",
     "sourceMap": true,
@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "target": "es6",
+    "target": "ES2022",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -29,6 +29,7 @@
       "net": ["../node_modules/net-browserify"],
       "os": ["../node_modules/os-browserify"],
       "path": ["../node_modules/path-browserify"],
+      "querystring": ["../node_modules/querystring-es3"],
       "timers": ["../node_modules/timers-browserify"],
       "request": ["../node_modules/browser-request"],
       "util": ["../node_modules/util"],
