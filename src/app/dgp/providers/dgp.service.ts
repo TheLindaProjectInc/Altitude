@@ -151,7 +151,7 @@ export class DGPService {
 
     private async getOldDGPInfo() {
         try {
-            let data: any = await this.rpc.requestData(RPCMethods.GETDGPINFO, ["900000"]);
+            let data: any = await this.rpc.requestData(RPCMethods.GETOLDDGPINFO, ["900000"]);
             if (!data.error) {
                 return data;
             };
