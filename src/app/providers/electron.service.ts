@@ -22,6 +22,7 @@ export class ElectronService {
   clientVersion: string = '0';
   chain: ChainType = ChainType.MAINNET;
   publicIP: string = '';
+  downloadProgress: any = {};
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
@@ -61,6 +62,9 @@ export class ElectronService {
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
       //if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
       switch (cmd) {
+        case 'DOWNLOADPROGRESS':
+          this.downloadProgress = data;
+          break;
         case 'STATUS':
           this.clientStatusEvent.emit(data);
           break;

@@ -79,26 +79,6 @@ export function deleteFolderSync(folder: string) {
     }
 }
 
-export async function downloadFile(url, dest) {
-    return new Promise((resolve, reject) => {
-        https.get(url, response => {
-            if (response.statusCode >= 200 && response.statusCode < 300) {
-                var fileStream = fs.createWriteStream(dest);
-                fileStream.on('error', err => reject(err));
-                fileStream.on('close', () => resolve(getFileHash(dest)));
-                response.pipe(fileStream);
-            } else if (response.headers.location) {
-                const location = response.headers.location
-                resolve(downloadFile(location, dest));
-            } else {
-                reject(new Error(response.statusCode + ' ' + response.statusMessage));
-            }
-        }).on('error', err => {
-            reject(err);
-        });
-    })
-}
-
 export async function getFileHash(path) {
     return new Promise((resolve, reject) => {
         const hash = crypto.createHash('sha256');

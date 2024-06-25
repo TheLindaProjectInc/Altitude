@@ -2,6 +2,7 @@ import { app, ipcMain, shell, clipboard } from "electron";
 import * as os from "os";
 import * as path from "path";
 import * as fs from "fs";
+import * as https from 'https';
 import * as request from "request";
 import { spawn, ChildProcess } from "child_process";
 import * as log from "electron-log";
@@ -299,7 +300,7 @@ export default class Client {
       await helpers.deleteFile(this.clientDownloadLocation);
       await helpers.deleteFile(this.clientLocalLocation);
       log.info("Client", "Downloading client", this.clientConfig.download.url);
-      const fileHash = await helpers.downloadFile(
+      const fileHash = await this.downloadFile(
         this.clientConfig.download.url,
         this.clientDownloadLocation
       );
@@ -367,6 +368,38 @@ export default class Client {
       this.sendRPCStatus();
       log.info("Client", "RPC Ready");
     }
+  }
+
+  async downloadFile(url, dest, progress = false) {
+        return new Promise((resolve, reject) => {
+        let downloaded = 0;
+        let percent = 0;
+        let size = 0;
+        https.get(url, response => {
+            if (response.statusCode >= 200 && response.statusCode < 300) {
+                var fileStream = fs.createWriteStream(dest);
+                if(progress) {
+                  size = parseInt(response.headers['content-length']);
+                  response.on('data', (chunk) => {
+                      downloaded += chunk.length;
+                      percent = ( downloaded / size ) * 100;
+                      let progress = {percent: percent, downloaded: downloaded, size: size };
+                      this.win.webContents.send("client-node", "DOWNLOADPROGRESS", progress);
+                  });
+                }
+                fileStream.on('error', err => reject(err));
+                fileStream.on('close', () => resolve(helpers.getFileHash(dest)));
+                response.pipe(fileStream);
+            } else if (response.headers.location) {
+                const location = response.headers.location
+                resolve(this.downloadFile(location, dest, progress));
+            } else {
+                reject(new Error(response.statusCode + ' ' + response.statusMessage));
+            }
+        }).on('error', err => {
+            reject(err);
+        });
+    });
   }
 
   parseVersion(version: number): string {
@@ -478,7 +511,7 @@ export default class Client {
         this.clientBootstrapUrl
       );
       await helpers.deleteFile(bootstrapLocation);
-      await helpers.downloadFile(this.clientBootstrapUrl, bootstrapLocation);
+      await this.downloadFile(this.clientBootstrapUrl, bootstrapLocation, true);
       log.info("Client", "Bootstrap removing old files...");
       helpers.deleteFolderSync(path.join(this.clientDataDir, "blocks"));
       helpers.deleteFolderSync(path.join(this.clientDataDir, "chainstate"));
