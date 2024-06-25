@@ -3,6 +3,14 @@
     <h3 *ngIf="!rpc.RPCWarmupMessage">
         {{ getRPCStatus() | translate }}
     </h3>
+    <div class="progress-border light-grey rounded-bar" *ngIf="rpc.clientStatus === 8">
+        <div class="progress-bar rounded-bar center" [ngStyle]="
+            {'width': downloadProgress(electron.downloadProgress.percent) + '%'}">
+        <span class="vertical-align">
+            {{downloadProgress(electron.downloadProgress.percent)}}%
+        </span>
+        </div>
+    </div>
     <h3 *ngIf="rpc.RPCWarmupMessage">
         {{ rpc.RPCWarmupMessage }}
     </h3>

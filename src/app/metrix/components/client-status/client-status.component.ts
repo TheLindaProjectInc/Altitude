@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { RpcService } from '../../providers/rpc.service';
+import { ElectronService } from 'app/providers/electron.service';
 import { ClientStatus } from 'app/enum';
 
 @Component({
   selector: 'client-status',
-  templateUrl: './client-status.component.html'
+  templateUrl: './client-status.component.html',
+  styleUrls: ['./client-status.component.scss']
 })
 export class ClientStatusComponent {
 
   constructor(
     public rpc: RpcService,
+    public electron: ElectronService,
   ) {
 
   }
@@ -38,6 +41,11 @@ export class ClientStatusComponent {
         break;
     }
     return translation
+  }
+
+
+  downloadProgress(downloadProgress){
+    return parseFloat(downloadProgress).toFixed(2);
   }
 
 

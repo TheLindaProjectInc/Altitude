@@ -1,0 +1,41 @@
+.progress-border {
+    content: "";
+    display: table;
+    clear: both;
+    float:left;
+    width:25%;
+    position: relative;
+}
+
+.progress-border span {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    color: #fff;
+}
+
+.progress-bar {
+    height: 24px;
+    background-color:#BA55D3!important
+}
+
+.center {
+    text-align: center!important
+}
+
+.light-grey {
+    color:#000!important;
+    background-color:#CDCDCD!important
+}
+
+.rounded-bar { 
+    border-radius:8px
+}
+
+.vertical-align {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
