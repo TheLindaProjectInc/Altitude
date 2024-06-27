@@ -14,7 +14,7 @@
 
     <div class="flex-wrap">
         <div class="account" *ngFor="let account of wallet.getAccounts()" (click)="manageAccount(account)">
-            <div class="account-inner">
+            <div class="account-inner" title="{{accountType(account.address)}}">
                 <div>
                     <div class="account-name">
                         <fa-icon *ngIf="account.watchOnly" icon="search"></fa-icon>

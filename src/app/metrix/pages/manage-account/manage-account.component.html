@@ -31,7 +31,7 @@
           {{currencyService.convert(account.balance) | prettyCoins: 4 }}
           <span>{{currencyService.currency}}</span>
         </h2>
-        <h4>
+        <h4 title="{{accountType(account.address)}}">
           {{account.address}}
           <button class="btn btn-icon" (click)="copyAddress()">
             <fa-icon icon="copy"></fa-icon>
@@ -63,7 +63,7 @@
         <div class="icon">
           <fa-icon class="success" icon="wallet"></fa-icon>
         </div>
-        <div class="detail">
+        <div class="detail" title="{{accountType(account.address)}}">
           <h5>{{addr.address}} {{addr.account?'(' + addr.account + ')':''}}</h5>
           <h5>{{addr.confirmations}}</h5>
         </div>

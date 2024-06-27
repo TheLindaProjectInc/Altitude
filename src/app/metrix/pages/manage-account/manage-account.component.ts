@@ -70,6 +70,23 @@ export class ManageAccountComponent {
     }
   }
 
+  accountType(address) {
+    let type = 'Unknown'
+    switch(address.substring(0,1)) {
+      case 'M':
+        type = "P2PKH (Legacy)";
+        break;
+      case 'm':
+        type = "P2SH (SegWit)";
+        break;
+      case 'b':
+        type = "Bech32 (Native SegWit)";
+        break
+      default:
+    }
+    return type;
+  }
+
   renameAccount() {
     if (this.account) {
       try {
