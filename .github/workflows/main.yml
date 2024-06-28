@@ -44,9 +44,9 @@ jobs:
           set -x
           ls -l ./release/
           assets=() 
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-mac-x64.dmg")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x86.exe")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x64.exe")
+          assets+=("./release/Altitude-Metrix-Wallet-mac-x64.dmg")
+          assets+=("./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
+          assets+=("./release/Altitude-Metrix-Wallet-win32-x86.exe")
+          assets+=("./release/Altitude-Metrix-Wallet-win32-x64.exe")
           tag_name="${GITHUB_REF#refs/*/}"
-          hub release create "${assets[@]}" --draft=true -m "v$tag_name" "$tag_name"
+          gh release create "$tag_name"   --draft=true --title "v$tag_name" "${assets[@]}"
