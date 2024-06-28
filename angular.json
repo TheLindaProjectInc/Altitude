@@ -78,21 +78,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "altitude:build"
+            "buildTarget": "altitude:build"
           },
           "configurations": {
             "dev": {
-              "browserTarget": "altitude:build:dev"
+              "buildTarget": "altitude:build:dev"
             },
             "production": {
-              "browserTarget": "altitude:build:production"
+              "buildTarget": "altitude:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "altitude:build"
+            "buildTarget": "altitude:build"
           }
         },
         "test": {

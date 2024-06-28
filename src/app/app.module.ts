@@ -4,7 +4,7 @@ import '../polyfills';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 // modal
 import { NgxSmartModalModule } from 'ngx-smart-modal';
@@ -52,58 +52,53 @@ const routes: Routes = [
   dgp.route
 ];
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    PrettyCoinsPipe,
-    ...componentDeclarations,
-    ...metrix.declarations,
-    ...dgp.declarations
-    // Disable Buy Metrix
-    //...buy.declarations
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes, { useHash: true }),
-    FontAwesomeModule,
-    VirtualScrollerModule,
-    NgxSmartModalModule.forRoot(),
-    NotifierModule.withConfig({
-      position: {
-        horizontal: { position: 'right' }
-      },
-      behaviour: {
-        autoHide: 3000,
-      }
-    }),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (HttpLoaderFactory),
-        deps: [HttpClient]
-      }
-    })
-  ],
-  providers: [
-    ElectronService,
-    ErrorService,
-    NotificationService,
-    TranslationService,
-    DesktopNotificationService,
-    CurrencyService,
-    PriceOracle,
-    ...componentProviders,
-    ...metrix.providers,
-    ...dgp.providers
-    // Disable Buy Metrix
-    //...buy.providers
-  ],
-  bootstrap: [
-    AppComponent
-  ]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        PrettyCoinsPipe,
+        ...componentDeclarations,
+        ...metrix.declarations,
+        ...dgp.declarations
+        // Disable Buy Metrix
+        //...buy.declarations
+    ],
+    bootstrap: [
+        AppComponent
+    ], imports: [BrowserModule,
+        FormsModule,
+        RouterModule.forRoot(routes, { useHash: true }),
+        FontAwesomeModule,
+        VirtualScrollerModule,
+        NgxSmartModalModule.forRoot(),
+        NotifierModule.withConfig({
+            position: {
+                horizontal: { position: 'right' }
+            },
+            behaviour: {
+                autoHide: 3000,
+            }
+        }),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (HttpLoaderFactory),
+                deps: [HttpClient]
+            }
+        })], providers: [
+        ElectronService,
+        ErrorService,
+        NotificationService,
+        TranslationService,
+        DesktopNotificationService,
+        CurrencyService,
+        PriceOracle,
+        ...componentProviders,
+        ...metrix.providers,
+        ...dgp.providers
+        // Disable Buy Metrix
+        //...buy.providers
+        ,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 
 export class AppModule {
   constructor(library: FaIconLibrary) {
