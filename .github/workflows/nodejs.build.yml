@@ -35,6 +35,8 @@ jobs:
       - name: Build Binaries
         env: 
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSC_LINK: ${{ vars.CSC_LINK }}
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         run: |
             npm run electron:mac
             npm run electron:linux
