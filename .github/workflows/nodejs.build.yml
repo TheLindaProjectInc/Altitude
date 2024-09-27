@@ -32,13 +32,17 @@ jobs:
         with:
           node-version: '20.x'
       - run: npm install
-      - name: Build Binaries
+      - name: Build MacOS
         env: 
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CSC_LINK: ${{ vars.CSC_LINK }}
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         run: |
             npm run electron:mac
+      - name: Build Win & Linux
+        env: 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
             npm run electron:linux
             npm run electron:windows
             mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
