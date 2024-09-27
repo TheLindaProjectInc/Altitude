@@ -1,14 +1,19 @@
-name: Build Release
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-# Controls when the action will run. 
+name: Electron Package Test
+
 on:
-  # Triggers the workflow on tag push
   push:
-    tags: "*"
+    branches:
+      - "master"
+      - "develop"
+  pull_request:
+    branches: 
+      - "master"
+      - "develop"
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: macos-13
@@ -37,16 +42,3 @@ jobs:
             mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
             npm run electron:windows32
             mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
-      - name: Upload Assets
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run : |
-          set -x
-          ls -l ./release/
-          assets=() 
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-mac-x64.dmg")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x86.exe")
-          assets+=("-a" "./release/Altitude-Metrix-Wallet-win32-x64.exe")
-          tag_name="${GITHUB_REF#refs/*/}"
-          hub release create "${assets[@]}" --draft=true -m "v$tag_name" "$tag_name"
