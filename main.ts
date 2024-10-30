@@ -46,7 +46,7 @@ function createWindow() {
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
     webPreferences: { webSecurity: false, nodeIntegration: true, contextIsolation: false },
     frame: process.platform !== 'win32',
-    titleBarStyle: 'hidden'
+    titleBarStyle: process.platform === 'linux' ? 'default' : 'hidden'
   });
 
 
@@ -182,7 +182,7 @@ try {
     app.on('before-quit', closeApp);
 
     // Quit when all windows are closed.
-    app.on('window-all-closed', (event) => {
+    app.on('window-all-closed', () => {
       // On OS X it is common for applications and their menu bar
       // to stay active until the user quits explicitly with Cmd + Q
       if (process.platform !== 'darwin') {
