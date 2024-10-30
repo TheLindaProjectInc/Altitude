@@ -14,3 +14,5 @@ Fix a issue where the titlebar and menu does not show on Linux systems.
 
 ## Dependency/Build updates
 
+Update Angular to 18.2.9
+Upgrade Typescript to 5.5.4
