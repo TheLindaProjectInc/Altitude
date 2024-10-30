@@ -46,7 +46,7 @@ function createWindow() {
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
     webPreferences: { webSecurity: false, nodeIntegration: true, contextIsolation: false },
     frame: process.platform !== 'win32',
-    titleBarStyle: 'hidden'
+    titleBarStyle: process.platform === 'linux' ? 'hidden' : 'default'
   });
 
 
