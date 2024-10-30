@@ -24,3 +24,4 @@ Bump crypto-browserify from 3.12.0 to 3.12.1
 Bump chart.js from 4.4.4 to 4.4.6
 Bump jasmine-core from 5.3.0 to 5.4.0
 Bump @types/node from 22.7.2 to 22.8.4
+Bump electron from 32.1.2 to 33.0.2
