@@ -91,6 +91,27 @@ export class PromptComponent {
     }
   }
 
+  walletUpdateReadyModal = {
+    resolve: null,
+    reject: null,
+    hide: () => this.ngxModal.getModal('walletUpdateReadyModal').close(),
+    show: () => {
+      this.ngxModal.getModal('walletUpdateReadyModal').open();
+      return new Promise((resolve, reject) => {
+        this.walletUpdateReadyModal.resolve = resolve;
+        this.walletUpdateReadyModal.reject = reject;
+      })
+    },
+    buttonDone: () => {
+      this.walletUpdateReadyModal.hide();
+      this.walletUpdateReadyModal.resolve();
+    },
+    buttonCancel: () => {
+      this.walletUpdateReadyModal.hide();
+      this.walletUpdateReadyModal.reject();
+    }
+  }
+
   changePassphraseModal = {
     currentPassphrase: "",
     newPassphrase: "",
@@ -227,6 +248,7 @@ export class PromptComponent {
     prompt.getPassphrase = this.passphraseModal.show;
     prompt.promptUpdateClient = this.clientUpdateModal.show;
     prompt.promptUpdateWallet = this.walletUpdateModal.show;
+    prompt.promptInstallWallet = this.walletUpdateReadyModal.show;
     prompt.changePassphrase = this.changePassphraseModal.show;
     prompt.encrypt = this.encryptModal.show;
     prompt.alert = this.alertModal.show;

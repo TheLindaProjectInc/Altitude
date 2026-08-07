@@ -4,8 +4,6 @@ import { TranslateService } from '@ngx-translate/core';
 // the resulting javascript file will look as if you never imported the module at all.
 import { ipcRenderer, clipboard, shell } from 'electron';
 import * as remote from '@electron/remote'
-import { HttpClient } from '@angular/common/http';
-import { compareVersions } from 'compare-versions';
 import { CurrencyService } from './currency.service';
 import { ChainType, ClientStatus } from 'app/enum';
 import Languages from 'app/languages';
@@ -31,7 +29,6 @@ export class ElectronService {
   @Output() RPCResponseEvent: EventEmitter<any> = new EventEmitter();
 
   constructor(
-    private http: HttpClient,
     private translate: TranslateService,
     private currencyService: CurrencyService,
   ) {
@@ -41,13 +38,14 @@ export class ElectronService {
       this.ipcRenderer = window.require('electron').ipcRenderer;
       this.clipboard = window.require('electron').clipboard;
       this.shell = window.require('electron').shell;
-      
+
       this.remote = window.require('@electron/remote');
-      
+
       this.getDeviceLangauge();
       this.connectClientNodeIPC();
       this.connectSettingsIPC();
-      
+      this.connectAppUpdateIPC();
+
       if (!isDevMode())
         this.checkForWalletUpdate().then(() => { }, err => { });
     }
@@ -144,20 +142,48 @@ export class ElectronService {
     }
   }
 
+  connectAppUpdateIPC() {
+    // listen for updater events that aren't tied to a specific check request
+    this.ipcRenderer.on('app-update', (event, cmd, data) => {
+      switch (cmd) {
+        case 'PROGRESS':
+          this.checkUpdateEvent.emit({ type: 'wallet-progress', progress: data });
+          break;
+        case 'DOWNLOADED':
+          this.checkUpdateEvent.emit({ type: 'wallet-downloaded', version: data.version });
+          break;
+        case 'DOWNLOADERROR':
+          this.checkUpdateEvent.emit({ type: 'wallet-error' });
+          break;
+      }
+    });
+  }
+
   public checkForWalletUpdate(showSkip = true) {
     return new Promise((resolve, reject) => {
-      const walletUpdateUrl = 'https://api.github.com/repos/thelindaprojectinc/altitude/releases/latest';
-      this.http.get<any>(walletUpdateUrl).subscribe(remoteData => {
-        const appVersion = this.remote.app.getVersion();
-        if ((!showSkip || this.settings.skipWalletUpdate !== remoteData.tag_name) && compareVersions(remoteData.tag_name, appVersion) > 0) {
-          this.checkUpdateEvent.emit({ type: 'wallet', version: remoteData.tag_name, showSkip: showSkip });
+      const handler = (event, cmd, data) => {
+        if (cmd === 'AVAILABLE') {
+          this.ipcRenderer.removeListener('app-update', handler);
+          this.checkUpdateEvent.emit({ type: 'wallet', version: data.version, showSkip: data.showSkip });
           resolve(true);
-        } else {
+        } else if (cmd === 'NOTAVAILABLE') {
+          this.ipcRenderer.removeListener('app-update', handler);
           resolve(false);
+        } else if (cmd === 'ERROR') {
+          this.ipcRenderer.removeListener('app-update', handler);
+          reject(new Error('Failed to check for update'));
         }
-      }, err => {
-        reject(err);
-      });
+      };
+      this.ipcRenderer.on('app-update', handler);
+      this.ipcRenderer.send('app-update', 'CHECK', showSkip);
     })
+  }
+
+  public downloadWalletUpdate() {
+    this.ipcRenderer.send('app-update', 'DOWNLOAD');
+  }
+
+  public installWalletUpdate() {
+    this.ipcRenderer.send('app-update', 'INSTALL');
   }
 }

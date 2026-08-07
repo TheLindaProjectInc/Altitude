@@ -363,11 +363,12 @@ export class TitlebarComponent {
     this.notification.loading('NOTIFICATIONS.CHECKINGUPDATE');
     try {
       let hasUpdate = await this.electron.checkForWalletUpdate(false);
-      if (!hasUpdate) return this.notification.notify('default', 'NOTIFICATIONS.NOUPDATE');
+      this.notification.dismissNotifications();
+      if (!hasUpdate) this.notification.notify('default', 'NOTIFICATIONS.NOUPDATE');
     } catch (ex) {
+      this.notification.dismissNotifications();
       this.notification.notify('error', 'NOTIFICATIONS.CHECKINGUPDATEFAILED');
     }
-    this.notification.dismissNotifications()
   }
 
   restartCore() {

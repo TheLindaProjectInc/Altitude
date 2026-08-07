@@ -44,10 +44,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
             npm run electron:linux
-            npm run electron:windows
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
             npm run electron:windows32
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
+            npm run electron:windows
 
   # Some users still need an Intel mac-x64 build. macos-15-intel is GitHub's
   # last x64 macOS runner image and is scheduled to retire in Fall 2027 - once

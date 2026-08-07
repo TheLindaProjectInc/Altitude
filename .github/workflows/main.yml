@@ -33,24 +33,34 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         run: |
             npm run electron:mac
+            mv release/latest-mac.yml release/latest-mac-arm64.yml
       - name: Build Win & Linux
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
             npm run electron:linux
-            npm run electron:windows
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
             npm run electron:windows32
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
+            mv release/latest.yml release/latest-ia32.yml
+            npm run electron:windows
+            mv release/latest.yml release/latest-x64.yml
+            # electron-builder writes one latest.yml per invocation, so the ia32 and
+            # x64 runs above each only describe their own installer. Merge them into
+            # a single feed so electron-updater can find the right one for each arch.
+            (cd .github/scripts && npm install --no-audit --no-fund)
+            node .github/scripts/merge-update-yml.js release/latest.yml release/latest-x64.yml release/latest-ia32.yml
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7
         with:
           name: release-primary
           path: |
             release/Altitude-Metrix-Wallet-mac-arm64.dmg
+            release/Altitude-Metrix-Wallet-mac-arm64.zip
+            release/latest-mac-arm64.yml
             release/Altitude-Metrix-Wallet-linux-x64.AppImage
-            release/Altitude-Metrix-Wallet-win32-x86.exe
+            release/latest-linux.yml
             release/Altitude-Metrix-Wallet-win32-x64.exe
+            release/Altitude-Metrix-Wallet-win32-ia32.exe
+            release/latest.yml
           retention-days: 1
 
   # Some users still need an Intel mac-x64 build. macos-15-intel is GitHub's
@@ -76,21 +86,37 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         run: |
             npm run electron:mac-x64
+            mv release/latest-mac.yml release/latest-mac-x64.yml
       - name: Upload build artifact
         uses: actions/upload-artifact@v7
         with:
           name: release-mac-x64
-          path: release/Altitude-Metrix-Wallet-mac-x64.dmg
+          path: |
+            release/Altitude-Metrix-Wallet-mac-x64.dmg
+            release/Altitude-Metrix-Wallet-mac-x64.zip
+            release/latest-mac-x64.yml
           retention-days: 1
 
   release:
     needs: [build, build-mac-x64]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5
       - uses: actions/download-artifact@v8
         with:
           path: release
           merge-multiple: true
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.x'
+      - name: Merge macOS update metadata
+        run: |
+          # the arm64 and x64 mac builds run on separate runners and each only
+          # know about their own artifact - combine their feeds into one so
+          # electron-updater can find the right build for either Mac.
+          (cd .github/scripts && npm install --no-audit --no-fund)
+          node .github/scripts/merge-update-yml.js release/latest-mac.yml release/latest-mac-arm64.yml release/latest-mac-x64.yml
       - name: Upload Assets
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -99,9 +125,14 @@ jobs:
           ls -l ./release/
           assets=()
           assets+=("./release/Altitude-Metrix-Wallet-mac-arm64.dmg")
+          assets+=("./release/Altitude-Metrix-Wallet-mac-arm64.zip")
           assets+=("./release/Altitude-Metrix-Wallet-mac-x64.dmg")
+          assets+=("./release/Altitude-Metrix-Wallet-mac-x64.zip")
           assets+=("./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
-          assets+=("./release/Altitude-Metrix-Wallet-win32-x86.exe")
+          assets+=("./release/Altitude-Metrix-Wallet-win32-ia32.exe")
           assets+=("./release/Altitude-Metrix-Wallet-win32-x64.exe")
+          assets+=("./release/latest.yml")
+          assets+=("./release/latest-mac.yml")
+          assets+=("./release/latest-linux.yml")
           tag_name="${GITHUB_REF#refs/*/}"
           gh release create "$tag_name"   --draft=true --title "v$tag_name" "${assets[@]}"

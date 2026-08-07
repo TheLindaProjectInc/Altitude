@@ -66,6 +66,21 @@
   </div>
 </ngx-smart-modal>
 
+<!-- Wallet update downloaded, ready to install modal -->
+<ngx-smart-modal identifier="walletUpdateReadyModal" customClass="nsm-centered" [closable]="false" [escapable]="false"
+  [dismissable]="false">
+  <h1>{{ 'COMPONENTS.PROMPT.WALLETUPDATEREADYTITLE' | translate }}</h1>
+  <span>{{ 'COMPONENTS.PROMPT.WALLETUPDATEREADYINFO' | translate }}</span>
+  <div class="modal-buttons">
+    <button class="btn btn-default" (click)="walletUpdateReadyModal.buttonCancel()">
+      {{ 'COMPONENTS.PROMPT.WALLETUPDATELATERBUTTON' | translate }}
+    </button>
+    <button class="btn btn-default" (click)="walletUpdateReadyModal.buttonDone()">
+      {{ 'COMPONENTS.PROMPT.WALLETUPDATERESTARTBUTTON' | translate}}
+    </button>
+  </div>
+</ngx-smart-modal>
+
 <!-- Change passphrase modal -->
 <ngx-smart-modal identifier="changePassphraseModal" customClass="nsm-centered" [closable]="false">
   <form (submit)="changePassphraseModal.buttonDone()">

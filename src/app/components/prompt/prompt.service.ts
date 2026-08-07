@@ -9,9 +9,12 @@ export class PromptService {
     public getPassphrase;
     public promptUpdateClient;
     public promptUpdateWallet;
+    public promptInstallWallet;
     public changePassphrase;
     public encrypt;
     public alert;
+
+    private walletUpdateDownloading = false;
 
     constructor(
         private electron: ElectronService,
@@ -27,6 +30,9 @@ export class PromptService {
         this.electron.checkUpdateEvent.subscribe((data: any) => {
             if (data.type === 'core') this.notifyCheckCoreUpdateAvailable(data.hasUpdate);
             if (data.type === 'wallet') this.notifyCheckWalletAvailable(data.version, data.showSkip);
+            if (data.type === 'wallet-progress') this.notifyWalletUpdateDownloading();
+            if (data.type === 'wallet-downloaded') this.notifyWalletUpdateDownloaded(data.version);
+            if (data.type === 'wallet-error') this.notification.notify('error', 'NOTIFICATIONS.CHECKINGUPDATEFAILED');
         });
     }
 
@@ -50,9 +56,26 @@ export class PromptService {
     async notifyCheckWalletAvailable(version: string, showSkip: boolean) {
         try {
             await this.promptUpdateWallet(showSkip);
-            this.electron.shell.openExternal('https://github.com/TheLindaProjectInc/Altitude/releases/latest');
+            this.electron.downloadWalletUpdate();
         } catch (skip) {
             if (skip) this.electron.ipcRenderer.send('settings', 'SETSKIPWALLETUPDATE', version);
+        }
+    }
+
+    notifyWalletUpdateDownloading() {
+        if (this.walletUpdateDownloading) return;
+        this.walletUpdateDownloading = true;
+        this.notification.loading('NOTIFICATIONS.WALLETUPDATEDOWNLOADING');
+    }
+
+    async notifyWalletUpdateDownloaded(version: string) {
+        this.walletUpdateDownloading = false;
+        this.notification.dismissNotifications();
+        try {
+            await this.promptInstallWallet();
+            this.electron.installWalletUpdate();
+        } catch (later) {
+            // user chose to install later, they'll be prompted again next launch
         }
     }
 
