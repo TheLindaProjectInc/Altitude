@@ -3,8 +3,9 @@ import { DGPService } from 'app/dgp/providers/dgp.service';
 import { WalletService } from 'app/metrix/providers/wallet.service';
 
 @Component({
-  templateUrl: './budget.component.html',
-  styleUrls: ['./budget.component.scss']
+    templateUrl: './budget.component.html',
+    styleUrls: ['./budget.component.scss'],
+    standalone: false
 })
 export class BudgetComponent {
 

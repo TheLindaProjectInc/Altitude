@@ -4,14 +4,15 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
 
 
 @Component({
-  selector: 'text-area',
-  template: `<textarea 
+    selector: 'text-area',
+    template: `<textarea 
   placeholder="{{placeholder}}" 
   (contextmenu)="onRightClick($event)"
   [(ngModel)]="inputModel"
   (ngModelChange)="inputModelChange.emit(inputModel)"
   [disabled]="disabled"
   ></textarea>`,
+    standalone: false
 })
 export class TextareaComponent {
 

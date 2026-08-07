@@ -10,11 +10,12 @@ import { RpcService } from 'app/metrix/providers/rpc.service';
 import { WalletService, DATASYNCTYPES } from 'app/metrix/providers/wallet.service';
 
 @Component({
-  selector: 'title-bar',
-  templateUrl: './titlebar.component.html',
-  host: {
-    '(document:click)': 'documentClick($event)',
-  },
+    selector: 'title-bar',
+    templateUrl: './titlebar.component.html',
+    host: {
+        '(document:click)': 'documentClick($event)',
+    },
+    standalone: false
 })
 export class TitlebarComponent {
 

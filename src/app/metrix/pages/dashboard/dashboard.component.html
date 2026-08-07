@@ -1,9 +1,11 @@
 <div class="content">
 
-  <div class="alerts" *ngIf="wallet.walletInfo.errors">
-    <h1>Alert</h1>
-    {{wallet.walletInfo.errors}}
-  </div>
+  @if (wallet.walletInfo.errors) {
+    <div class="alerts">
+      <h1>Alert</h1>
+      {{wallet.walletInfo.errors}}
+    </div>
+  }
 
   <div class="layout-outer">
 
@@ -14,7 +16,9 @@
       <div class="content-card" style="margin: 10px 0;">
         <h1>{{ 'PAGES.DASHBOARD.TRANSACTIONS' | translate }}</h1>
         <div class="transactions">
-          <transaction-row *ngFor="let trx of displayTransactions()" [trx]="trx"></transaction-row>
+          @for (trx of displayTransactions(); track trx) {
+            <transaction-row [trx]="trx"></transaction-row>
+          }
         </div>
       </div>
 

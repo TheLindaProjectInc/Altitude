@@ -7,9 +7,10 @@ import { NotificationService } from 'app/providers/notification.service';
 import { CurrencyService } from '../../../providers/currency.service';
 
 @Component({
-  selector: 'metrix-accounts',
-  templateUrl: './accounts.component.html',
-  styleUrls: ['./accounts.component.scss']
+    selector: 'metrix-accounts',
+    templateUrl: './accounts.component.html',
+    styleUrls: ['./accounts.component.scss'],
+    standalone: false
 })
 
 export class AccountsComponent {

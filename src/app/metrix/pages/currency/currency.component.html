@@ -7,9 +7,11 @@
     <text-input [(inputModel)]="search"></text-input>
   </div>
 
-  <button class="btn btn-default" (click)="setCurrency(currency)" *ngFor="let currency of currenciesToShow()"
-    [ngClass]="{'btn-success':currency===currencyService.currency}">
-    {{currency}}
-  </button>
+  @for (currency of currenciesToShow(); track currency) {
+    <button class="btn btn-default" (click)="setCurrency(currency)"
+      [ngClass]="{'btn-success':currency===currencyService.currency}">
+      {{currency}}
+    </button>
+  }
 
 </div>

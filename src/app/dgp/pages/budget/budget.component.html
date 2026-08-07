@@ -1,32 +1,38 @@
 <div class="content" #scrollingBlock>
 
-    <div class="title">
-        <h1>{{'DGP.PAGES.BUDGET.TITLE' | translate}}</h1>
+  <div class="title">
+    <h1>{{'DGP.PAGES.BUDGET.TITLE' | translate}}</h1>
 
-        <button class="btn btn-default" routerLink="/dgp/budget/create">
-            <fa-icon icon="plus"></fa-icon>
-            {{ 'DGP.PAGES.BUDGET.ADDPROPOSAL' | translate }}
-        </button>
+    <button class="btn btn-default" routerLink="/dgp/budget/create">
+      <fa-icon icon="plus"></fa-icon>
+      {{ 'DGP.PAGES.BUDGET.ADDPROPOSAL' | translate }}
+    </button>
+  </div>
+
+  @if (dgpService.minimumGovernors > dgpService.governorCount) {
+    <div class="alerts">
+      {{ 'DGP.PAGES.BUDGET.MINIMUMGOVERNORS' | translate }}
+      <br />
+      {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}}
+      <br/>
+      {{ 'DGP.PAGES.BUDGET.REQUIRED' | translate }}: {{dgpService.minimumGovernors}}
     </div>
+  }
 
-    <div class="alerts" *ngIf="dgpService.minimumGovernors > dgpService.governorCount">
-        {{ 'DGP.PAGES.BUDGET.MINIMUMGOVERNORS' | translate }}
-        <br />
-        {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}}
-        <br/>
-        {{ 'DGP.PAGES.BUDGET.REQUIRED' | translate }}: {{dgpService.minimumGovernors}}
+  @if (dgpService.governorCount > dgpService.minimumGovernors) {
+    <div class="info">
+      {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}} {{ 'DGP.PAGES.BUDGET.COUNTSUFFIX' | translate }}
+      <br />
+      {{'DGP.PAGES.CREATEPROPOSAL.BUDGETBLOCK' | translate }}: {{budgetBlock | number }}
     </div>
+  }
 
-    <div class="info" *ngIf="dgpService.governorCount > dgpService.minimumGovernors">
-        {{ 'DGP.PAGES.BUDGET.CURRENTLY' | translate }}: {{dgpService.governorCount}} {{ 'DGP.PAGES.BUDGET.COUNTSUFFIX' | translate }}
-        <br />
-        {{'DGP.PAGES.CREATEPROPOSAL.BUDGETBLOCK' | translate }}: {{budgetBlock | number }}
-    </div>
+  <div class="flex-row-center flex-wrap">
 
-    <div class="flex-row-center flex-wrap">
+    @for (proposal of proposals; track proposal) {
+      <budget-card [proposal]="proposal"></budget-card>
+    }
 
-        <budget-card *ngFor="let proposal of proposals" [proposal]="proposal"></budget-card>
-
-    </div>
+  </div>
 
 </div>

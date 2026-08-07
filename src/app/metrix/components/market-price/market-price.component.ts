@@ -8,9 +8,10 @@ import { PriceOracle } from 'app/providers/priceoracle.service';
 
 Chart.register(...registerables);
 @Component({
-  selector: 'market-price-chart',
-  templateUrl: './market-price.component.html',
-  styleUrls: ['./market-price.component.scss']
+    selector: 'market-price-chart',
+    templateUrl: './market-price.component.html',
+    styleUrls: ['./market-price.component.scss'],
+    standalone: false
 })
 
 export class MarketPriceComponent {

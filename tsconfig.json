@@ -6,35 +6,59 @@
     "baseUrl": "src",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "target": "ES2022",
     "typeRoots": [
       "node_modules/@types"
     ],
-    "lib": [
-      "es2017",
-      "es2016",
-      "es2015",
-      "dom"
-    ],
     "paths": {
-      "crypto": ["../node_modules/crypto-browserify"],
-      "stream": ["../node_modules/stream-browserify"],
-      "assert": ["../node_modules/assert"],
-      "fs": ["../node_modules/browserify-fs"],
-      "http": ["../node_modules/stream-http"],
-      "https": ["../node_modules/https-browserify"],
-      "net": ["../node_modules/net-browserify"],
-      "os": ["../node_modules/os-browserify"],
-      "path": ["../node_modules/path-browserify"],
-      "querystring": ["../node_modules/querystring-es3"],
-      "timers": ["../node_modules/timers-browserify"],
-      "request": ["../node_modules/browser-request"],
-      "util": ["../node_modules/util"],
-      "url": ["../node_modules/url"],
-      "zlib": ["../node_modules/browserify-zlib"]
+      "crypto": [
+        "../node_modules/crypto-browserify"
+      ],
+      "stream": [
+        "../node_modules/stream-browserify"
+      ],
+      "assert": [
+        "../node_modules/assert"
+      ],
+      "fs": [
+        "../node_modules/browserify-fs"
+      ],
+      "http": [
+        "../node_modules/stream-http"
+      ],
+      "https": [
+        "../node_modules/https-browserify"
+      ],
+      "net": [
+        "../node_modules/net-browserify"
+      ],
+      "os": [
+        "../node_modules/os-browserify"
+      ],
+      "path": [
+        "../node_modules/path-browserify"
+      ],
+      "querystring": [
+        "../node_modules/querystring-es3"
+      ],
+      "timers": [
+        "../node_modules/timers-browserify"
+      ],
+      "request": [
+        "../node_modules/browser-request"
+      ],
+      "util": [
+        "../node_modules/util"
+      ],
+      "url": [
+        "../node_modules/url"
+      ],
+      "zlib": [
+        "../node_modules/browserify-zlib"
+      ]
     }
   },
   "include": [

@@ -5,8 +5,9 @@ import { CurrencyService } from 'app/providers/currency.service';
 import Helpers from 'app/helpers';
 
 @Component({
-  selector: 'history-transaction-row',
-  templateUrl: './transaction-row.component.html',
+    selector: 'history-transaction-row',
+    templateUrl: './transaction-row.component.html',
+    standalone: false
 })
 export class HistoryTransactionRowComponent {
 

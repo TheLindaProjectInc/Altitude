@@ -1,8 +1,10 @@
-<div class="alerts" *ngIf="!mainchain.isOnMainChain">
+@if (!mainchain.isOnMainChain) {
+  <div class="alerts">
     <h1>Alert</h1>
     {{ 'COMPONENTS.MAINCHAINCHECK.ALERT' | translate }}
     <br />
     <button class="btn btn-default" (click)="goToRecovery()">
-        {{ 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY' | translate }}
+      {{ 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY' | translate }}
     </button>
-</div>
+  </div>
+}

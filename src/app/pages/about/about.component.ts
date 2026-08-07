@@ -4,8 +4,9 @@ import { WalletService } from 'app/metrix/providers/wallet.service';
 import { ElectronService } from 'app/providers/electron.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html'
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    standalone: false
 })
 export class AboutComponent {
   sub;

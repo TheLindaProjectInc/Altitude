@@ -9,8 +9,9 @@ import { BudgetProposal } from 'app/dgp/classes/budgetProposal';
 import { AddressBookService } from 'app/metrix/components/address-book/address-book.service';
 
 @Component({
-  templateUrl: './budget-create.component.html',
-  styleUrls: ['./budget-create.component.scss']
+    templateUrl: './budget-create.component.html',
+    styleUrls: ['./budget-create.component.scss'],
+    standalone: false
 })
 export class BudgetCreateComponent {
 

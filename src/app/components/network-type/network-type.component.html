@@ -1,3 +1,5 @@
-<div class="alerts" *ngIf="showNetwork" title="{{ 'COMPONENTS.NETWORKTYPE.CURRENT' | translate }}">
+@if (showNetwork) {
+  <div class="alerts" title="{{ 'COMPONENTS.NETWORKTYPE.CURRENT' | translate }}">
     {{chainFriendlyName}}
-</div>
+  </div>
+}

@@ -1,7 +1,9 @@
 <div #contextMenu class="context-menu titlebar-menu" [ngClass]="{'visible':menuActive}" [ngStyle]="position">
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <button *ngFor="let item of contextMenuService.menuItems" (click)="item.func()">{{ item.name | translate }}</button>
-        </div>
+  <div class="dropdown">
+    <div class="dropdown-content">
+      @for (item of contextMenuService.menuItems; track item) {
+        <button (click)="item.func()">{{ item.name | translate }}</button>
+      }
     </div>
+  </div>
 </div>

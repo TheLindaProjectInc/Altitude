@@ -5,8 +5,9 @@ import { NotificationService } from 'app/providers/notification.service';
 import { CurrencyService } from 'app/providers/currency.service';
 
 @Component({
-  selector: 'app-explorer',
-  templateUrl: './explorer.component.html'
+    selector: 'app-explorer',
+    templateUrl: './explorer.component.html',
+    standalone: false
 })
 export class ExplorerComponent {
 

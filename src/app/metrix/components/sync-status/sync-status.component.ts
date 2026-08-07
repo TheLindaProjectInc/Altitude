@@ -6,8 +6,9 @@ import Helpers from 'app/helpers';
 import { EncryptionStatus } from '../../classes';
 
 @Component({
-  selector: 'sync-status',
-  templateUrl: './sync-status.component.html',
+    selector: 'sync-status',
+    templateUrl: './sync-status.component.html',
+    standalone: false
 })
 
 export class SyncStatusComponent {

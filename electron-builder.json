@@ -1,5 +1,6 @@
 {
   "productName": "Altitude - Metrix Wallet",
+  "npmRebuild": false,
   "directories": {
     "output": "release/"
   },
@@ -25,8 +26,7 @@
     "target": [
       "nsis"
     ],
-    "legalTrademarks": "Copyright © 2024 Metrix",
-    "publisherName": "Metrix"
+    "legalTrademarks": "Copyright © 2024 Metrix"
   },
   "nsis": {
     "runAfterFinish": true,
@@ -35,9 +35,9 @@
   },
   "mac": {
     "icon": "assets/icons/mac/icon.icns",
-    "artifactName": "Altitude-Metrix-Wallet-mac-x64.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-mac-${arch}.${ext}",
     "target": [
-      "dmg"
+      { "target": "dmg", "arch": ["arm64", "x64"] }
     ],
     "category": "public.app-category.utilities"
   },

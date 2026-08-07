@@ -8,8 +8,9 @@ import { AddressBookService } from '../../components/address-book/address-book.s
 import { NotificationService } from 'app/providers/notification.service';
 
 @Component({
-  selector: 'app-signmessage',
-  templateUrl: './signmessage.component.html',
+    selector: 'app-signmessage',
+    templateUrl: './signmessage.component.html',
+    standalone: false
 })
 
 export class SignMessageComponent {

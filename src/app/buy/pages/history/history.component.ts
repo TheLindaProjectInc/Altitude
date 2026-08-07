@@ -9,8 +9,9 @@ import { AddressBookService } from 'app/metrix/components/address-book/address-b
 import { TranslationService } from 'app/providers/translation.service';
 
 @Component({
-  templateUrl: './history.component.html',
-  styleUrls: ['./history.component.scss']
+    templateUrl: './history.component.html',
+    styleUrls: ['./history.component.scss'],
+    standalone: false
 })
 export class HistoryComponent {
 

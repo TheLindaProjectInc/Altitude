@@ -3,7 +3,8 @@ import { ElectronService } from 'app/providers/electron.service';
 import { CurrencyService } from '../../../providers/currency.service';
 
 @Component({
-  templateUrl: './currency.component.html'
+    templateUrl: './currency.component.html',
+    standalone: false
 })
 export class CurrencyComponent {
 

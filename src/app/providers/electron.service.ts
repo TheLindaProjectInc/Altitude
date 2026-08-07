@@ -117,22 +117,22 @@ export class ElectronService {
   }
 
   getDeviceLangauge() {
-    this.translate.setDefaultLang('en');
+    this.translate.use('en');
     const localLanguage = navigator.language.toLowerCase();
     const localLangaugeSplit = localLanguage.split("-")[0];
     Languages.supported.forEach(language => {
       const supportedLanguage = Languages.getCode(language).toLowerCase();
       if (supportedLanguage === localLanguage || supportedLanguage === localLangaugeSplit) {
         if (isDevMode()) console.log("Detected local language", language);
-        this.translate.setDefaultLang(Languages.getCode(language));
+        this.translate.use(Languages.getCode(language));
       }
     });
   }
 
   setLanguage() {
-    if (this.settings.locale && this.translate.getDefaultLang() !== this.settings.locale) {
+    if (this.settings.locale && this.translate.getCurrentLang() !== this.settings.locale) {
       if (isDevMode()) console.log("Setting language to", this.settings.locale)
-      this.translate.setDefaultLang(this.settings.locale);
+      this.translate.use(this.settings.locale);
       this.languageChangedEvent.emit();
     }
   }

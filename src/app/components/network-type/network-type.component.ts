@@ -3,9 +3,10 @@ import { ElectronService } from 'app/providers/electron.service';
 import { ChainType } from 'app/enum';
 
 @Component({
-  selector: 'network-type',
-  templateUrl: './network-type.component.html',
-  styleUrls: ['./network-type.component.scss']
+    selector: 'network-type',
+    templateUrl: './network-type.component.html',
+    styleUrls: ['./network-type.component.scss'],
+    standalone: false
 })
 
 export class NetworkTypeComponent {

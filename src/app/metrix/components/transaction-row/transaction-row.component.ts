@@ -7,8 +7,9 @@ import { CurrencyService } from 'app/providers/currency.service';
 import Helpers from 'app/helpers';
 
 @Component({
-  selector: 'transaction-row',
-  templateUrl: './transaction-row.component.html',
+    selector: 'transaction-row',
+    templateUrl: './transaction-row.component.html',
+    standalone: false
 })
 export class TransactionRowComponent {
 

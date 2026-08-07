@@ -13,8 +13,9 @@ import { Input } from "../../classes";
 import { CurrencyService } from "app/providers/currency.service";
 
 @Component({
-  selector: "app-send",
-  templateUrl: "./send.component.html",
+    selector: "app-send",
+    templateUrl: "./send.component.html",
+    standalone: false
 })
 export class SendComponent implements OnInit, OnDestroy {
   recipients = [];
