@@ -37,7 +37,7 @@ export class LocaleComponent {
   }
 
   get currentLanguage() {
-    return this.translate.getDefaultLang();
+    return this.translate.getCurrentLang();
   }
 
   setLanguage(language) {

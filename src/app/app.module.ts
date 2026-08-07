@@ -4,15 +4,15 @@ import '../polyfills';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 // modal
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 // virtual scroll
 import { VirtualScrollerModule } from '@iharbeck/ngx-virtual-scroller';
 // NG Translate
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslatePipe, provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 // icons 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { setupIcons } from './icon-module';
@@ -37,11 +37,6 @@ import * as metrix from './metrix/metrix.module';
 import * as dgp from './dgp/dgp.module';
 // pipes
 import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
-
-// AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
 
 // routes
 const routes: Routes = [
@@ -77,13 +72,7 @@ const routes: Routes = [
                 autoHide: 3000,
             }
         }),
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: (HttpLoaderFactory),
-                deps: [HttpClient]
-            }
-        })], providers: [
+        TranslatePipe], providers: [
         ElectronService,
         ErrorService,
         NotificationService,
@@ -97,7 +86,10 @@ const routes: Routes = [
         // Disable Buy Metrix
         //...buy.providers
         ,
-        provideHttpClient(withInterceptorsFromDi())
+        provideHttpClient(withInterceptorsFromDi()),
+        provideTranslateService({
+            loader: provideTranslateHttpLoader({ prefix: './assets/i18n/', suffix: '.json' })
+        })
     ] })
 
 export class AppModule {
