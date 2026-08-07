@@ -52,7 +52,9 @@ By default Altitude will download the latest metrixd binary and run it internall
 |`npm run build:prod`| Build the app with Angular aot. The built files are in the /dist folder. |
 |`npm run electron:local`| Builds the application and start electron
 |`npm run electron:linux`| Builds the application and creates an app consumable on linux system |
+|`npm run electron:linux-snap`| Builds the application and creates an snap consumable on linux system |
 |`npm run electron:linux32`| Builds the application and creates an app consumable on linux 32 bit system |
 |`npm run electron:windows`| On a Windows OS, builds the application and creates an app consumable in windows 64 bit systems |
 |`npm run electron:windows32`| On a Windows OS, builds the application and creates an app consumable in windows 32 bit systems |
 |`npm run electron:mac`|  On a MAC OS, builds the application and generates a `.dmg` file of the application that can be run on Mac |
+|`npm run electron:mac-x64`|  On a Intel based MAC OS, builds the application and generates a `.dmg` file of the application that can be run on Mac |
