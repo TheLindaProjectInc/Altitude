@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { MainChainService } from '../../providers/mainchain.service';
 
 @Component({
-  selector: 'metrix-main-chain-check',
-  templateUrl: './main-chain-check.component.html',
-  styleUrls: ['./main-chain-check.component.scss']
+    selector: 'metrix-main-chain-check',
+    templateUrl: './main-chain-check.component.html',
+    styleUrls: ['./main-chain-check.component.scss'],
+    standalone: false
 })
 
 export class MainChainCheckComponent {

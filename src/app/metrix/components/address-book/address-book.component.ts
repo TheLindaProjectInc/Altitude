@@ -7,8 +7,9 @@ import { AddressBookService } from './address-book.service';
 import { ErrorService } from 'app/providers/error.service';
 
 @Component({
-  selector: 'address-book',
-  templateUrl: './address-book.component.html',
+    selector: 'address-book',
+    templateUrl: './address-book.component.html',
+    standalone: false
 })
 export class AddressBookComponent {
 

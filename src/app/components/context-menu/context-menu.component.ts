@@ -2,11 +2,12 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ContextMenuService } from './context-menu.service';
 
 @Component({
-  selector: 'context-menu',
-  templateUrl: './context-menu.component.html',
-  host: {
-    '(document:click)': 'documentClick($event)',
-  },
+    selector: 'context-menu',
+    templateUrl: './context-menu.component.html',
+    host: {
+        '(document:click)': 'documentClick($event)',
+    },
+    standalone: false
 })
 export class ContextMenuComponent {
 

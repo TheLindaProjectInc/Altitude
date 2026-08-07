@@ -3,8 +3,9 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 import { PromptService } from './prompt.service';
 
 @Component({
-  selector: 'prompt-container',
-  templateUrl: './prompt.component.html'
+    selector: 'prompt-container',
+    templateUrl: './prompt.component.html',
+    standalone: false
 })
 export class PromptComponent {
 

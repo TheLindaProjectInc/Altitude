@@ -6,8 +6,9 @@ import { NotificationService } from 'app/providers/notification.service';
 import { Input } from '../../classes';
 
 @Component({
-  selector: 'app-staking',
-  templateUrl: './staking.component.html',
+    selector: 'app-staking',
+    templateUrl: './staking.component.html',
+    standalone: false
 })
 export class StakingComponent {
   stakingInputs = [];

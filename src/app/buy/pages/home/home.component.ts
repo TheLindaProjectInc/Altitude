@@ -8,8 +8,9 @@ import { ElectronService } from 'app/providers/electron.service';
 import { AddressBookService } from 'app/metrix/components/address-book/address-book.service';
 
 @Component({
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: false
 })
 export class HomeComponent {
   sendAmount;

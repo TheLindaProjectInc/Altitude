@@ -10,9 +10,10 @@ import { ErrorService } from 'app/providers/error.service';
 import { BudgetVote } from 'app/enum';
 
 @Component({
-  selector: 'budget-card',
-  templateUrl: './budget-card.component.html',
-  styleUrls: ['./budget-card.component.scss']
+    selector: 'budget-card',
+    templateUrl: './budget-card.component.html',
+    styleUrls: ['./budget-card.component.scss'],
+    standalone: false
 })
 export class BudgetCardComponent {
 

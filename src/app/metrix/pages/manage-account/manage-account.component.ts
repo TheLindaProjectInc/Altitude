@@ -10,8 +10,9 @@ import { CurrencyService } from 'app/providers/currency.service';
 declare let QRCode: any;
 
 @Component({
-  selector: 'app-manage-account',
-  templateUrl: './manage-account.component.html',
+    selector: 'app-manage-account',
+    templateUrl: './manage-account.component.html',
+    standalone: false
 })
 
 export class ManageAccountComponent {

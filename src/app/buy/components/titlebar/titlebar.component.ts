@@ -5,11 +5,12 @@ import { RpcService } from 'app/metrix/providers/rpc.service';
 import { TranslationService } from 'app/providers/translation.service';
 
 @Component({
-  selector: 'buy-title-bar',
-  templateUrl: './titlebar.component.html',
-  host: {
-    '(document:click)': 'documentClick($event)',
-  },
+    selector: 'buy-title-bar',
+    templateUrl: './titlebar.component.html',
+    host: {
+        '(document:click)': 'documentClick($event)',
+    },
+    standalone: false
 })
 export class TitlebarComponent {
 

@@ -4,9 +4,10 @@ import { ElectronService } from 'app/providers/electron.service';
 import { ClientStatus } from 'app/enum';
 
 @Component({
-  selector: 'client-status',
-  templateUrl: './client-status.component.html',
-  styleUrls: ['./client-status.component.scss']
+    selector: 'client-status',
+    templateUrl: './client-status.component.html',
+    styleUrls: ['./client-status.component.scss'],
+    standalone: false
 })
 export class ClientStatusComponent {
 

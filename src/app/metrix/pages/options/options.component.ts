@@ -6,8 +6,9 @@ import { RpcService } from 'app/metrix/providers/rpc.service';
 import { DGPService } from 'app/dgp/providers/dgp.service';
 
 @Component({
-  selector: 'app-options',
-  templateUrl: './options.component.html'
+    selector: 'app-options',
+    templateUrl: './options.component.html',
+    standalone: false
 })
 export class OptionsComponent implements OnInit {
 

@@ -4,8 +4,8 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
 
 
 @Component({
-  selector: 'text-input',
-  template: `<input 
+    selector: 'text-input',
+    template: `<input 
   placeholder="{{placeholder}}" 
   [(ngModel)]="inputModel" 
   (ngModelChange)="inputModelChange.emit(inputModel)"
@@ -20,6 +20,7 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
   max="{{max}}"
   type="{{type || 'text'}}"
   />`,
+    standalone: false
 })
 export class TextinputComponent {
 

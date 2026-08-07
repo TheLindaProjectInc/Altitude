@@ -3,8 +3,9 @@ import { TranslateService } from '@ngx-translate/core';
 import { ElectronService } from 'app/providers/electron.service';
 import Languages from 'app/languages';
 @Component({
-  selector: 'app-locale',
-  templateUrl: './locale.component.html'
+    selector: 'app-locale',
+    templateUrl: './locale.component.html',
+    standalone: false
 })
 export class LocaleComponent {
 

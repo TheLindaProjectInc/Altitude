@@ -9,8 +9,9 @@ import { WalletService } from 'app/metrix/providers/wallet.service';
 import { PromptService } from 'app/components/prompt/prompt.service';
 
 @Component({
-  templateUrl: './governance.component.html',
-  styleUrls: ['./governance.component.scss']
+    templateUrl: './governance.component.html',
+    styleUrls: ['./governance.component.scss'],
+    standalone: false
 })
 export class GovernanceComponent {
 

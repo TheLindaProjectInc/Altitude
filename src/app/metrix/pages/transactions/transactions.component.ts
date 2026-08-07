@@ -7,8 +7,9 @@ import { Transaction } from '../../classes';
 import { NotificationService } from 'app/providers/notification.service';
 
 @Component({
-  selector: 'app-transactions',
-  templateUrl: './transactions.component.html',
+    selector: 'app-transactions',
+    templateUrl: './transactions.component.html',
+    standalone: false
 })
 
 export class TransactionsComponent {

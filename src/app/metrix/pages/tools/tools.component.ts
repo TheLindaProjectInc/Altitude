@@ -7,8 +7,9 @@ import { ElectronService } from 'app/providers/electron.service';
 import { ClientStatus } from 'app/enum';
 
 @Component({
-  selector: 'app-tools',
-  templateUrl: './tools.component.html'
+    selector: 'app-tools',
+    templateUrl: './tools.component.html',
+    standalone: false
 })
 export class ToolsComponent implements OnInit {
 
