@@ -31,7 +31,8 @@
     "electron:linux-snap": "npm run build:prod && electron-builder --linux snap",
     "electron:windows": "npm run build:prod && electron-builder build --windows",
     "electron:windows32": "npm run build:prod && electron-builder build --windows --ia32",
-    "electron:mac": "npm run build:prod && electron-builder build --mac",
+    "electron:mac": "npm run build:prod && electron-builder build --mac --arm64",
+    "electron:mac-x64": "npm run build:prod && electron-builder build --mac --x64",
     "test": "npm run postinstall:web && ng test",
     "e2e": "npm run postinstall:web && ng e2e"
   },

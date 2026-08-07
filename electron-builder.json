@@ -35,9 +35,9 @@
   },
   "mac": {
     "icon": "assets/icons/mac/icon.icns",
-    "artifactName": "Altitude-Metrix-Wallet-mac-arm64.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-mac-${arch}.${ext}",
     "target": [
-      { "target": "dmg", "arch": ["arm64"] }
+      { "target": "dmg", "arch": ["arm64", "x64"] }
     ],
     "category": "public.app-category.utilities"
   },
