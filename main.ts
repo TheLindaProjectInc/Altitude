@@ -4,6 +4,7 @@ import * as url from 'url';
 import Client from './lib/client';
 import * as log from 'electron-log';
 import * as settings from './lib/settings';
+import * as updater from './lib/updater';
 import * as remoteMain from '@electron/remote/main';
 remoteMain.initialize();
 
@@ -68,6 +69,7 @@ function createWindow() {
   
   remoteMain.enable(mainWindow.webContents);
   settings.setWindow(mainWindow);
+  updater.setWindow(mainWindow);
   // make any adjustments when settings are ready
   const handler = () => {
     const appSettings = settings.getSettings();

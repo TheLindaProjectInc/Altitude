@@ -4,6 +4,11 @@
   "directories": {
     "output": "release/"
   },
+  "publish": {
+    "provider": "github",
+    "owner": "thelindaprojectinc",
+    "repo": "altitude"
+  },
   "files": [
     "**/*",
     "!**/*.ts",
@@ -22,7 +27,7 @@
   ],
   "win": {
     "icon": "assets/icons/win/icon.ico",
-    "artifactName": "Altitude-Metrix-Wallet-win32.${ext}",
+    "artifactName": "Altitude-Metrix-Wallet-win32-${arch}.${ext}",
     "target": [
       "nsis"
     ],
@@ -37,7 +42,8 @@
     "icon": "assets/icons/mac/icon.icns",
     "artifactName": "Altitude-Metrix-Wallet-mac-${arch}.${ext}",
     "target": [
-      { "target": "dmg", "arch": ["arm64", "x64"] }
+      { "target": "dmg", "arch": ["arm64", "x64"] },
+      { "target": "zip", "arch": ["arm64", "x64"] }
     ],
     "category": "public.app-category.utilities"
   },
