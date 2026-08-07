@@ -1,49 +1,55 @@
 <div class="content-card">
-    <div class="account-header">
-        <h1>{{ 'PAGES.DASHBOARD.ACCOUNTS' | translate }}</h1>
-        <button class="btn btn-default" (click)="showNewAccountModal()">
-            <fa-icon icon="plus"></fa-icon>
-            {{ 'PAGES.DASHBOARD.ADDACCOUNT' | translate }}
-        </button>
-    </div>
+  <div class="account-header">
+    <h1>{{ 'PAGES.DASHBOARD.ACCOUNTS' | translate }}</h1>
+    <button class="btn btn-default" (click)="showNewAccountModal()">
+      <fa-icon icon="plus"></fa-icon>
+      {{ 'PAGES.DASHBOARD.ADDACCOUNT' | translate }}
+    </button>
+  </div>
 
-    <div>
-        <input id="chkShowEmpty" [(ngModel)]="wallet.accountFilters.hideEmptyAccounts" type='checkbox' />
-        <label for="chkShowEmpty">{{ 'PAGES.DASHBOARD.HIDEEMPTYACCOUNTS' | translate }}</label>
-    </div>
+  <div>
+    <input id="chkShowEmpty" [(ngModel)]="wallet.accountFilters.hideEmptyAccounts" type='checkbox' />
+    <label for="chkShowEmpty">{{ 'PAGES.DASHBOARD.HIDEEMPTYACCOUNTS' | translate }}</label>
+  </div>
 
-    <div class="flex-wrap">
-        <div class="account" *ngFor="let account of wallet.getAccounts()" (click)="manageAccount(account)">
-            <div class="account-inner" title="{{accountType(account.address)}}">
-                <div>
-                    <div class="account-name">
-                        <fa-icon *ngIf="account.watchOnly" icon="search"></fa-icon>
-                        <fa-icon *ngIf="!account.watchOnly" icon="wallet"></fa-icon>
-                        <h5>{{account.name}}</h5>
-                    </div>
-                    <h6 class="account-balance">
-                        {{currencyService.convert(account.balance) | prettyCoins: 4 }}
-                        <span>{{currencyService.currency}}</span>
-                    </h6>
-                    <h6 class="account-address">{{account.address}}</h6>
-                </div>
-                <div class="account-identicon">
-                    <canvas identicon-canvas width="50" height="50" title='{{account.identicon}}'></canvas>
-                </div>
+  <div class="flex-wrap">
+    @for (account of wallet.getAccounts(); track account) {
+      <div class="account" (click)="manageAccount(account)">
+        <div class="account-inner" title="{{accountType(account.address)}}">
+          <div>
+            <div class="account-name">
+              @if (account.watchOnly) {
+                <fa-icon icon="search"></fa-icon>
+              }
+              @if (!account.watchOnly) {
+                <fa-icon icon="wallet"></fa-icon>
+              }
+              <h5>{{account.name}}</h5>
             </div>
-            <div class="wave"></div>
+            <h6 class="account-balance">
+              {{currencyService.convert(account.balance) | prettyCoins: 4 }}
+              <span>{{currencyService.currency}}</span>
+            </h6>
+            <h6 class="account-address">{{account.address}}</h6>
+          </div>
+          <div class="account-identicon">
+            <canvas identicon-canvas width="50" height="50" title='{{account.identicon}}'></canvas>
+          </div>
         </div>
-    </div>
+        <div class="wave"></div>
+      </div>
+    }
+  </div>
 </div>
 
 <!-- Add account modal -->
 <ngx-smart-modal #addAccountModal identifier="addAccountModal" customClass="nsm-centered" [closable]="false">
-    <h1>{{ 'PAGES.DASHBOARD.CREATEACCOUNTTITLE' | translate }}</h1>
-    <text-input [(inputModel)]="newAccountLabel" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
-    <div class="modal-buttons">
-        <button class="btn btn-default" (click)="addAccountModal.close()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
-        <button class="btn btn-default" (click)="createNewAccount()">
-            {{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate }}
-        </button>
-    </div>
+  <h1>{{ 'PAGES.DASHBOARD.CREATEACCOUNTTITLE' | translate }}</h1>
+  <text-input [(inputModel)]="newAccountLabel" placeholder="{{ 'MISC.ENTERACCOUNTLABEL' | translate }}"></text-input>
+  <div class="modal-buttons">
+    <button class="btn btn-default" (click)="addAccountModal.close()">{{ 'MISC.CANCELBUTTON' | translate }}</button>
+    <button class="btn btn-default" (click)="createNewAccount()">
+      {{ 'PAGES.DASHBOARD.CREATEACCOUNTBUTTON' | translate }}
+    </button>
+  </div>
 </ngx-smart-modal>

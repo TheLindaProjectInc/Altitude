@@ -1,17 +1,19 @@
 <div class="content" #scrollingBlock>
-    <div class="buy-container">
-        <div class="content-card">
-            <h1>{{ 'BUY.PAGES.HISTORY.TITLE' | translate }}</h1>
-            <div class="form-inline">
-                <text-input [(inputModel)]="searchAddress" placeholder="{{'BUY.PAGES.HISTORY.SEARCHPLACEHOLDER'| translate}}"></text-input>
-                <button class="btn btn-default btn-icon" (click)="openAddressBook()">
-                    <fa-icon icon="address-book"></fa-icon>
-                </button>
-                <button class="btn btn-default" (click)="onSearch()">{{ 'BUY.PAGES.HISTORY.SEARCHBUTTON' | translate }}</button>
-            </div>
-        </div>
-        <div class="transactions">
-            <history-transaction-row *ngFor="let trx of transactions" [trx]="trx"></history-transaction-row>
-        </div>
+  <div class="buy-container">
+    <div class="content-card">
+      <h1>{{ 'BUY.PAGES.HISTORY.TITLE' | translate }}</h1>
+      <div class="form-inline">
+        <text-input [(inputModel)]="searchAddress" placeholder="{{'BUY.PAGES.HISTORY.SEARCHPLACEHOLDER'| translate}}"></text-input>
+        <button class="btn btn-default btn-icon" (click)="openAddressBook()">
+          <fa-icon icon="address-book"></fa-icon>
+        </button>
+        <button class="btn btn-default" (click)="onSearch()">{{ 'BUY.PAGES.HISTORY.SEARCHBUTTON' | translate }}</button>
+      </div>
     </div>
+    <div class="transactions">
+      @for (trx of transactions; track trx) {
+        <history-transaction-row [trx]="trx"></history-transaction-row>
+      }
+    </div>
+  </div>
 </div>

@@ -1,100 +1,132 @@
 <div class="content" #scrollingBlock>
-    <div class="alerts" *ngIf="!isDGPv3">
-        <h4>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONTITLE' | translate }}</h4>
-        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO' | translate }}</p>
-        <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO2' | translate }}</p>
+  @if (!isDGPv3) {
+    <div class="alerts">
+      <h4>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONTITLE' | translate }}</h4>
+      <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO' | translate }}</p>
+      <p>{{ 'DGP.PAGES.GOVERNANCE.DGPMIGRATIONINFO2' | translate }}</p>
     </div>
-    <div class="governance-container" style="flex-direction: column;">
-        <!-- Not fully in sync -->
-        <div class="content-card" *ngIf="isChainSynced">
-            <fa-icon class="danger fa-2x fa-solid" icon="triangle-exclamation"></fa-icon>
-            <h4>{{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDTITLE' | translate }}</h4>
-            <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
+  }
+  <div class="governance-container" style="flex-direction: column;">
+    <!-- Not fully in sync -->
+    @if (isChainSynced) {
+      <div class="content-card">
+        <fa-icon class="danger fa-2x fa-solid" icon="triangle-exclamation"></fa-icon>
+        <h4>{{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDTITLE' | translate }}</h4>
+        <p> {{ 'DGP.PAGES.GOVERNANCE.NOTFULLYSYNCEDDETAIL' | translate }} </p>
+      </div>
+    }
+    <!-- can enroll -->
+    @if (!isGovernor && canEnroll && !isChainSynced && isDGPv3) {
+      <div class="content-card">
+        <fa-icon class="danger fa-2x" icon="users"></fa-icon>
+        <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
+        <div>
+          @if (isEnrolling) {
+            <p>{{ 'DGP.PAGES.GOVERNANCE.CONFIRMENROLL' | translate }}</p>
+          }
+          @if (!isEnrolling) {
+            <p>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORDETAIL' | translate }}</p>
+          }
+          @if (governanceCollateral) {
+            <p>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}:
+            {{governanceCollateral | prettyCoins}} MRX</p>
+          }
         </div>
-        <!-- can enroll -->
-        <div class="content-card" *ngIf="!isGovernor && canEnroll && !isChainSynced && isDGPv3">
-            <fa-icon class="danger fa-2x" icon="users"></fa-icon>
-            <h5>{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORTITLE' | translate }}</h5>
-            <div>
-                <p *ngIf="isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.CONFIRMENROLL' | translate }}</p>
-                <p *ngIf="!isEnrolling">{{ 'DGP.PAGES.GOVERNANCE.NOTGOVERNORDETAIL' | translate }}</p>
-                <p *ngIf='governanceCollateral'>{{ 'DGP.PAGES.GOVERNANCE.COLLATERAL' | translate }}:
-                    {{governanceCollateral | prettyCoins}} MRX</p>
-            </div>
-            <div *ngIf="!isEnrolling" class="alt-select">
-                <select class="select" [(ngModel)]="selectedSenderAddress">
-                    <option class="option" selected value="null">{{ 'DGP.PAGES.GOVERNANCE.SELECTAGOVERNOR' | translate }}</option>
-                    <option class="option" *ngFor="let address of addresslist">{{address.address}}</option>
-                </select>
-            </div>
-            <button class="btn btn-default" 
-                (click)="isEnrolling=true" 
-                *ngIf="!isEnrolling" 
-                [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
-                {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
+        @if (!isEnrolling) {
+          <div class="alt-select">
+            <select class="select" [(ngModel)]="selectedSenderAddress">
+              <option class="option" selected value="null">{{ 'DGP.PAGES.GOVERNANCE.SELECTAGOVERNOR' | translate }}</option>
+              @for (address of addresslist; track address) {
+                <option class="option">{{address.address}}</option>
+              }
+            </select>
+          </div>
+        }
+        @if (!isEnrolling) {
+          <button class="btn btn-default"
+            (click)="isEnrolling=true"
+            [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
+            {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
+          </button>
+        }
+        @if (isEnrolling) {
+          <div>
+            <p>{{ selectedSenderAddress }}</p>
+            <button class="btn btn-danger" (click)="isEnrolling=false">
+              {{'MISC.CANCELBUTTON' | translate }}
             </button>
-            <div *ngIf="isEnrolling">
-                <p>{{ selectedSenderAddress }}</p>
-                <button class="btn btn-danger" (click)="isEnrolling=false">
-                    {{'MISC.CANCELBUTTON' | translate }}
-                </button>
-                <button class="btn btn-success" (click)="enroll()" 
-                    [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
-                    {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
-                </button>
-            </div>
+            <button class="btn btn-success" (click)="enroll()"
+              [disabled]="!selectedSenderAddress || selectedSenderAddress === 'null'">
+              {{'DGP.PAGES.GOVERNANCE.ENROLL' | translate }}
+            </button>
+          </div>
+        }
+      </div>
+    }
+    <!-- enrollment pending -->
+    @if (!isGovernor && enrollmentTxid) {
+      <div class="content-card">
+        <fa-icon class="fa-2x" icon="users"></fa-icon>
+        <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
+      </div>
+    }
+    <!-- enrolled -->
+    @if (isGovernor && !isChainSynced) {
+      <div class="content-card">
+        <fa-icon class="success fa-2x" icon="users"></fa-icon>
+        <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
+        <div>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL1' | translate }}</p>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL2' | translate }}</p>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL3' | translate }}</p>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.MYGOVERNORADDRESS' | translate }}:
+            <span class="success">{{myGovAddress}}</span></p>
+            <p>
+              {{ 'DGP.PAGES.GOVERNANCE.LASTPINGTITLE' | translate }}:
+              {{lastPing}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGSUFFIX' | translate }}
+              ({{lastPingDays.Days | number:'1.0-0' }} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGDAYS' | translate }} @if (lastPingDays.Hours > 0) {
+              <span>{{lastPingDays.Hours | number:'1.0-0'}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGHOURS' | translate }}</span>
+              })
+            </p>
+            @if (getGovernorVoteMaturity.Days === 0 && getGovernorVoteMaturity.Hours === 0) {
+              <p >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}:
+                <span class="success">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYMATURE' | translate}}</span>
+              </p>
+            }
+            @if (getGovernorVoteMaturity.Days !== 0 || getGovernorVoteMaturity.Hours !== 0) {
+              <p >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}: <span class="warning">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYIMMATURE' | translate}}</span>
+              ({{getGovernorVoteMaturity.Days | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYDAYS' | translate}} @if (getGovernorVoteMaturity.Hours > 0) {
+              <span > {{getGovernorVoteMaturity.Hours | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYHOURS' | translate}}</span>
+            } {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYSUFFIX' | translate}})</p>
+          }
         </div>
-        <!-- enrollment pending -->
-        <div class="content-card" *ngIf="!isGovernor && enrollmentTxid">
-            <fa-icon class="fa-2x" icon="users"></fa-icon>
-            <h5>{{ 'DGP.NOTIFICATIONS.ENROLLEDGOVERNOR' | translate }}</h5>
+        <div class="toolbar">
+          <button class="btn btn-danger" (click)="unenroll()">
+            {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
+          </button>
+          <button class="btn btn-default" (click)="ping()">
+            {{ 'DGP.PAGES.GOVERNANCE.PING' | translate }}
+          </button>
         </div>
-        <!-- enrolled -->
-        <div class="content-card" *ngIf="isGovernor && !isChainSynced">
-            <fa-icon class="success fa-2x" icon="users"></fa-icon>
-            <h5>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORTITLE' | translate }}</h5>
-            <div>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL1' | translate }}</p>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL2' | translate }}</p>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.ISGOVERNORDETAIL3' | translate }}</p>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.MYGOVERNORADDRESS' | translate }}: 
-                    <span class="success">{{myGovAddress}}</span></p>
-                <p>
-                    {{ 'DGP.PAGES.GOVERNANCE.LASTPINGTITLE' | translate }}:
-                    {{lastPing}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGSUFFIX' | translate }}
-                    ({{lastPingDays.Days | number:'1.0-0' }} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGDAYS' | translate }} <span *ngIf="lastPingDays.Hours > 0">{{lastPingDays.Hours | number:'1.0-0'}} {{ 'DGP.PAGES.GOVERNANCE.LASTPINGHOURS' | translate }}</span>)
-                </p>
-                <p *ngIf="getGovernorVoteMaturity.Days === 0 && getGovernorVoteMaturity.Hours === 0" >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}:
-                    <span class="success">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYMATURE' | translate}}</span>
-                </p>
-                <p *ngIf="getGovernorVoteMaturity.Days !== 0 || getGovernorVoteMaturity.Hours !== 0" >{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYPREFIX' | translate}}: <span class="warning">{{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYIMMATURE' | translate}}</span> 
-                    ({{getGovernorVoteMaturity.Days | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYDAYS' | translate}} <span *ngIf="getGovernorVoteMaturity.Hours > 0" > {{getGovernorVoteMaturity.Hours | number:'1.0-0'}} {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYHOURS' | translate}}</span> {{'DGP.PAGES.GOVERNANCE.GOVERNORVOTEMATURITYSUFFIX' | translate}})</p>
+      </div>
+    }
+    @if (isOldGovernor && !isChainSynced) {
+      <div class="content-card">
+        <fa-icon class="success fa-2x" icon="users"></fa-icon>
+        <h5>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1TITLE' | translate }}</h5>
+        <div>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO1' | translate }}</p>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO2' | translate }}</p>
+          <p>{{ 'DGP.PAGES.GOVERNANCE.MYGOVERNORADDRESS' | translate }}:
+            <span class="success">{{myGovAddress}}</span></p>
+            <p>
             </div>
             <div class="toolbar">
-                <button class="btn btn-danger" (click)="unenroll()">
-                    {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
-                </button>
-                <button class="btn btn-default" (click)="ping()">
-                    {{ 'DGP.PAGES.GOVERNANCE.PING' | translate }}
-                </button>
+              <button class="btn btn-danger" (click)="unenrollOldGov()">
+                {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
+              </button>
             </div>
-        </div>
-        <div class="content-card" *ngIf="isOldGovernor && !isChainSynced">
-            <fa-icon class="success fa-2x" icon="users"></fa-icon>
-            <h5>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1TITLE' | translate }}</h5>
-            <div>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO1' | translate }}</p>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.UNENROLLV1INFO2' | translate }}</p>
-                <p>{{ 'DGP.PAGES.GOVERNANCE.MYGOVERNORADDRESS' | translate }}: 
-                    
-                    <span class="success">{{myGovAddress}}</span></p>
-                <p>
-            </div>
-            <div class="toolbar">
-                <button class="btn btn-danger" (click)="unenrollOldGov()">
-                    {{ 'DGP.PAGES.GOVERNANCE.UNENROLL' | translate }}
-                </button>
-            </div>
-        </div>
+          </div>
+        }
+      </div>
     </div>
-</div>

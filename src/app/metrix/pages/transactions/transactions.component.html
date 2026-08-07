@@ -10,7 +10,9 @@
 
   <virtual-scroller #scroll class="transactions" [items]="transactions" [parentScroll]="scrollingBlock"
     (vsEnd)="fetchMore($event)">
-    <transaction-row *ngFor="let trx of scroll.viewPortItems" [trx]="trx"></transaction-row>
+    @for (trx of scroll.viewPortItems; track trx) {
+      <transaction-row [trx]="trx"></transaction-row>
+    }
   </virtual-scroller>
 
 </div>

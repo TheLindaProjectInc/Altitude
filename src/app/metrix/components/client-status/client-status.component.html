@@ -1,17 +1,25 @@
-<div *ngIf="showStatusIndicator()" class="clienstatus-backdrop">
+@if (showStatusIndicator()) {
+  <div class="clienstatus-backdrop">
     <loader rotation="true"></loader>
-    <h3 *ngIf="!rpc.RPCWarmupMessage">
+    @if (!rpc.RPCWarmupMessage) {
+      <h3>
         {{ getRPCStatus() | translate }}
-    </h3>
-    <div class="progress-border light-grey rounded-bar" *ngIf="rpc.clientStatus === 8">
+      </h3>
+    }
+    @if (rpc.clientStatus === 8) {
+      <div class="progress-border light-grey rounded-bar">
         <div class="progress-bar rounded-bar center" [ngStyle]="
             {'width': downloadProgress(electron.downloadProgress.percent) + '%'}">
-        <span class="vertical-align">
+          <span class="vertical-align">
             {{downloadProgress(electron.downloadProgress.percent)}}%
-        </span>
+          </span>
         </div>
-    </div>
-    <h3 *ngIf="rpc.RPCWarmupMessage">
+      </div>
+    }
+    @if (rpc.RPCWarmupMessage) {
+      <h3>
         {{ rpc.RPCWarmupMessage }}
-    </h3>
-</div>
+      </h3>
+    }
+  </div>
+}

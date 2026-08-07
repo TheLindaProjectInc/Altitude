@@ -1,35 +1,53 @@
 <div class="transaction" style="width: 100%;height: 92px;" title="{{trx.confirmations}} confirmations"
-    (contextmenu)="onRightClick($event,trx)">
-    <div class="progress"
-        [ngClass]="{'unconfirmed':trx.confirmations<helpers.params.confirmations,'confirmed':trx.confirmations>=helpers.params.confirmations}">
+  (contextmenu)="onRightClick($event,trx)">
+  <div class="progress"
+    [ngClass]="{'unconfirmed':trx.confirmations<helpers.params.confirmations,'confirmed':trx.confirmations>=helpers.params.confirmations}">
+  </div>
+  <div class="progress-overlay" [ngStyle]="wallet.getTrxProgress(trx)"
+    [ngClass]="{'confirmed':trx.confirmations>=helpers.params.confirmations}">
+  </div>
+  <div class="icon">
+    @if (trx.category=='Payment') {
+      <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}"
+      icon="sign-out-alt"></fa-icon>
+    }
+    @if (trx.category=='Received') {
+      <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}"
+      icon="sign-in-alt"></fa-icon>
+    }
+    @if (trx.category=='Payment To Self') {
+      <fa-icon class="primary" icon="exchange-alt"></fa-icon>
+    }
+    @if (trx.category=='Contract Fee Refund') {
+      <fa-icon class="success" icon="sign-in-alt"></fa-icon>
+    }
+    @if (trx.category=='Contract Call') {
+      <fa-icon class="success" icon="file-contract"></fa-icon>
+    }
+    @if (trx.category=='Stake') {
+      <fa-icon class="success" icon="piggy-bank"></fa-icon>
+    }
+    @if (trx.category=='Orphan') {
+      <fa-icon class="danger" icon="exclamation-circle"></fa-icon>
+    }
+    @if (trx.category=='Stake (Immature)') {
+      <fa-icon icon="spinner"></fa-icon>
+    }
+  </div>
+  <div class="detail">
+    <h5>{{trx.category}}</h5>
+    <h6>{{trx.time | date:'MMM d, h:mm a'}}</h6>
+    <h5>{{trx.account || trx.address}}</h5>
+  </div>
+  <div class="value">
+    <div class="amount"
+      [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
+      {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{currencyService.displayLocal(trx.amount)}}
     </div>
-    <div class="progress-overlay" [ngStyle]="wallet.getTrxProgress(trx)"
-        [ngClass]="{'confirmed':trx.confirmations>=helpers.params.confirmations}">
-    </div>
-    <div class="icon">
-        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Payment'"
-            icon="sign-out-alt"></fa-icon>
-        <fa-icon [ngClass]="{'success': trx.amount>=0, 'danger': trx.amount<0}" *ngIf="trx.category=='Received'"
-            icon="sign-in-alt"></fa-icon>
-        <fa-icon class="primary" *ngIf="trx.category=='Payment To Self'" icon="exchange-alt"></fa-icon>
-        <fa-icon class="success" *ngIf="trx.category=='Contract Fee Refund'" icon="sign-in-alt"></fa-icon>
-        <fa-icon class="success" *ngIf="trx.category=='Contract Call'" icon="file-contract"></fa-icon>
-        <fa-icon class="success" *ngIf="trx.category=='Stake'" icon="piggy-bank"></fa-icon>
-        <fa-icon class="danger" *ngIf="trx.category=='Orphan'" icon="exclamation-circle"></fa-icon>
-        <fa-icon *ngIf="trx.category=='Stake (Immature)'" icon="spinner"></fa-icon>
-    </div>
-    <div class="detail">
-        <h5>{{trx.category}}</h5>
-        <h6>{{trx.time | date:'MMM d, h:mm a'}}</h6>
-        <h5>{{trx.account || trx.address}}</h5>
-    </div>
-    <div class="value">
-        <div class="amount"
-            [ngClass]="{ 'success': trx.category!='Payment To Self'&&trx.amount>=0, 'danger': trx.category!='Payment To Self'&&trx.amount<0}">
-            {{trx.category!='Payment To Self'&&trx.amount>0?'+':''}}{{currencyService.displayLocal(trx.amount)}}
-        </div>
-        <div *ngIf="trx.fee" class="small danger">
-            {{ 'MISC.FEE' | translate }}: {{currencyService.displayLocal(trx.fee)}}
-        </div>
-    </div>
+    @if (trx.fee) {
+      <div class="small danger">
+        {{ 'MISC.FEE' | translate }}: {{currencyService.displayLocal(trx.fee)}}
+      </div>
+    }
+  </div>
 </div>

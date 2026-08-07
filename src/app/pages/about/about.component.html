@@ -9,14 +9,18 @@
     </button>
   </div>
 
-  <div class="tab-content" *ngIf="tab==0">
-    <h4>{{ 'PAGES.TOOLS.ABOUT.COREVERSION' | translate }}: {{wallet.networkInfo.version}}</h4>
-    <p innerHTML="{{'PAGES.HELP.ABOUTCORE' | translate}}"> </p>
-  </div>
+  @if (tab==0) {
+    <div class="tab-content">
+      <h4>{{ 'PAGES.TOOLS.ABOUT.COREVERSION' | translate }}: {{wallet.networkInfo.version}}</h4>
+      <p innerHTML="{{'PAGES.HELP.ABOUTCORE' | translate}}"> </p>
+    </div>
+  }
 
-  <div class="tab-content" *ngIf="tab==1">
-    <h4>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}: {{electron.remote.app.getVersion()}}</h4>
-    <p innerHTML="{{'PAGES.HELP.ABOUTALTITUDE' | translate}}"> </p>
-  </div>
+  @if (tab==1) {
+    <div class="tab-content">
+      <h4>{{ 'PAGES.TOOLS.ABOUT.ALTITUDEVERSION' | translate }}: {{electron.remote.app.getVersion()}}</h4>
+      <p innerHTML="{{'PAGES.HELP.ABOUTALTITUDE' | translate}}"> </p>
+    </div>
+  }
 
 </div>
