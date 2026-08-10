@@ -1,0 +1,25 @@
+<div class="sidebar">
+    <div class="sidebar-top">
+        <!-- Balance -->
+        <img src="assets/img/metrix-logo.png" alt="Metrix" class="logo" />
+        <!-- Balance -->
+        <div style="text-align: left;">
+            <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
+            <span>
+                {{currencyService.convert(wallet.balance) | prettyCoins: 4 }}
+                <span class="balance-currency">{{currencyService.currency}}</span>
+            </span>
+            <div class="balance-currency" style="padding-top: 1em;">
+                <span>{{ 'MISC.SPENDABLEBALANCE' | translate | uppercase }}</span><br>
+                <span>
+                    {{currencyService.convert(wallet.spendableBalance) | prettyCoins: 4 }}
+                    <span class="balance-currency">{{currencyService.currency}}</span>
+                </span>
+            </div>
+        </div>
+        <network-type></network-type>
+    </div>
+
+    <sync-status></sync-status>
+
+</div>

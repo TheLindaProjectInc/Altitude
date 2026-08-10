@@ -1,0 +1,58 @@
+<div class="browser-page">
+    <div class="browser-toolbar">
+        <button class="btn btn-default btn-icon btn-sm" (click)="goBack()" [disabled]="!canGoBack">
+            <fa-icon icon="arrow-left"></fa-icon>
+        </button>
+        <button class="btn btn-default btn-icon btn-sm" (click)="goForward()" [disabled]="!canGoForward">
+            <fa-icon icon="arrow-right"></fa-icon>
+        </button>
+        <button class="btn btn-default btn-icon btn-sm" (click)="reload()" [disabled]="showHome">
+            <fa-icon icon="sync-alt"></fa-icon>
+        </button>
+        <button class="btn btn-default btn-icon btn-sm" (click)="goHome()">
+            <fa-icon icon="home"></fa-icon>
+        </button>
+        <input
+            type="text"
+            [(ngModel)]="addressInput"
+            (keyup.enter)="navigate(addressInput)"
+            placeholder="{{ 'COMPONENTS.BROWSER.ADDRESSPLACEHOLDER' | translate }}"
+        />
+        <button class="btn btn-default btn-sm" (click)="navigate(addressInput)">
+            {{ 'COMPONENTS.BROWSER.GOBUTTON' | translate }}
+        </button>
+        <button class="btn btn-default btn-icon btn-sm" (click)="openDevTools()" [disabled]="showHome" title="{{ 'COMPONENTS.BROWSER.DEVTOOLS' | translate }}">
+            <fa-icon icon="code"></fa-icon>
+        </button>
+    </div>
+
+    @if (showHome) {
+        <div class="browser-home">
+            <h2>{{ 'COMPONENTS.BROWSER.QUICKLAUNCH' | translate }}</h2>
+            <div class="browser-tiles">
+                <button class="browser-tile" (click)="navigate('https://metrixlgp.finance')">
+                    <fa-icon icon="globe"></fa-icon>
+                    <span>Metrix LGP</span>
+                </button>
+                <button class="browser-tile" (click)="navigate('https://metriverse.exchange')">
+                    <fa-icon icon="globe"></fa-icon>
+                    <span>Metriverse Exchange</span>
+                </button>
+                <button class="browser-tile" (click)="navigate('https://metrix.domains/app')">
+                    <fa-icon icon="globe"></fa-icon>
+                    <span>Metrix Domains</span>
+                </button>
+                <button class="browser-tile" (click)="navigate('https://pyropets.org/')">
+                    <fa-icon icon="globe"></fa-icon>
+                    <span>PyroPets</span>
+                </button>
+                <button class="browser-tile" (click)="navigate('https://metrix.place')">
+                    <fa-icon icon="globe"></fa-icon>
+                    <span>Metrix.Place</span>
+                </button>
+            </div>
+        </div>
+    }
+
+    <div #webviewContainer class="browser-webview" [style.display]="showHome ? 'none' : 'flex'"></div>
+</div>

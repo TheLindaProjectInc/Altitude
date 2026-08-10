@@ -264,6 +264,12 @@
                 "MASTERNODEOFF": "Masternode is not currently running"
             }
         },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Enter a web3 site address",
+            "GOBUTTON": "Go",
+            "QUICKLAUNCH": "Quick Launch",
+            "DEVTOOLS": "Open Developer Tools"
+        },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Enter Your Wallet Passphrase",
             "UNLOCKSTAKINGONLY": "Unlock for staking only",
@@ -309,7 +315,28 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "UNENROLLGOVERNORTITLE": "Confirm Governor Unenrollment",
-            "UNENROLLGOVERNORCONTENT": "Are you sure you want to unenroll your Governor? You will no longer be able to vote on chain governance."
+            "UNENROLLGOVERNORCONTENT": "Are you sure you want to unenroll your Governor? You will no longer be able to vote on chain governance.",
+            "DAPPCONNECTTITLE": "Connect to Site",
+            "DAPPCONNECTINFO": "This site wants to connect to your wallet and view your address and balance.",
+            "DAPPCONNECTBUTTON": "Connect",
+            "DAPPCONNECTADDRESSLABEL": "Address",
+            "DAPPAPPROVEBUTTON": "Approve",
+            "DAPPREJECTBUTTON": "Reject",
+            "DAPPSENDTITLE": "Contract Transaction Request",
+            "DAPPSENDINFO": "This site is requesting to send a contract transaction from your wallet.",
+            "DAPPSENDSITELABEL": "Site",
+            "DAPPSENDCONTRACTLABEL": "Contract Address",
+            "DAPPSENDAMOUNTLABEL": "Amount",
+            "DAPPSENDGASLIMITLABEL": "Gas Limit",
+            "DAPPSENDGASPRICELABEL": "Gas Price (satoshi/gas)",
+            "DAPPSENDMAXFEELABEL": "Max Network Fee",
+            "DAPPSENDMAXTOTALLABEL": "Max Total",
+            "DAPPSENDDATALABEL": "Contract Data",
+            "DAPPSIGNTITLE": "Sign Message Request",
+            "DAPPSIGNINFO": "This site is requesting to sign a message with your wallet address.",
+            "DAPPSIGNMESSAGELABEL": "Message",
+            "DAPPNOTREADY": "Cannot connect to the site yet - Metrix Core is still starting up.",
+            "DAPPNOWALLET": "Cannot connect to the site - no wallet address is available."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",

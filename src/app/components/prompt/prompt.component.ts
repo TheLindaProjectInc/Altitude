@@ -241,6 +241,92 @@ export class PromptComponent {
     }
   }
 
+  dappSendModal = {
+    origin: '',
+    contractAddress: '',
+    amount: 0,
+    data: '',
+    gasLimit: 250000,
+    gasPrice: 5000,
+    resolve: null,
+    reject: null,
+    hide: () => this.ngxModal.getModal('dappSendModal').close(),
+    show: (origin: string, contractAddress: string, amount: number, data: string, gasLimit: number, gasPrice: number) => {
+      this.dappSendModal.origin = origin;
+      this.dappSendModal.contractAddress = contractAddress;
+      this.dappSendModal.amount = amount;
+      this.dappSendModal.data = data;
+      this.dappSendModal.gasLimit = gasLimit;
+      this.dappSendModal.gasPrice = gasPrice;
+      this.ngxModal.getModal('dappSendModal').open();
+      return new Promise((resolve, reject) => {
+        this.dappSendModal.resolve = resolve;
+        this.dappSendModal.reject = reject;
+      })
+    },
+    buttonDone: () => {
+      this.dappSendModal.hide();
+      this.dappSendModal.resolve({ gasLimit: this.dappSendModal.gasLimit, gasPrice: this.dappSendModal.gasPrice });
+    },
+    buttonCancel: () => {
+      this.dappSendModal.hide();
+      this.dappSendModal.reject();
+    },
+    // gasPrice is satoshi/gas (MetriMask convention); converted here purely for display
+    maxFee: () => (Number(this.dappSendModal.gasLimit) || 0) * (Number(this.dappSendModal.gasPrice) || 0) * 1e-8,
+    maxTotal: () => (Number(this.dappSendModal.amount) || 0) + this.dappSendModal.maxFee(),
+  }
+
+  dappSignModal = {
+    origin: '',
+    message: '',
+    resolve: null,
+    reject: null,
+    hide: () => this.ngxModal.getModal('dappSignModal').close(),
+    show: (origin: string, message: string) => {
+      this.dappSignModal.origin = origin;
+      this.dappSignModal.message = message;
+      this.ngxModal.getModal('dappSignModal').open();
+      return new Promise((resolve, reject) => {
+        this.dappSignModal.resolve = resolve;
+        this.dappSignModal.reject = reject;
+      })
+    },
+    buttonDone: () => {
+      this.dappSignModal.hide();
+      this.dappSignModal.resolve();
+    },
+    buttonCancel: () => {
+      this.dappSignModal.hide();
+      this.dappSignModal.reject();
+    },
+  }
+
+  dappConnectModal = {
+    origin: '',
+    address: '',
+    resolve: null,
+    reject: null,
+    hide: () => this.ngxModal.getModal('dappConnectModal').close(),
+    show: (origin: string, address: string) => {
+      this.dappConnectModal.origin = origin;
+      this.dappConnectModal.address = address;
+      this.ngxModal.getModal('dappConnectModal').open();
+      return new Promise((resolve, reject) => {
+        this.dappConnectModal.resolve = resolve;
+        this.dappConnectModal.reject = reject;
+      })
+    },
+    buttonDone: () => {
+      this.dappConnectModal.hide();
+      this.dappConnectModal.resolve();
+    },
+    buttonCancel: () => {
+      this.dappConnectModal.hide();
+      this.dappConnectModal.reject();
+    },
+  }
+
   constructor(
     private prompt: PromptService,
     private ngxModal: NgxSmartModalService
@@ -252,6 +338,9 @@ export class PromptComponent {
     prompt.changePassphrase = this.changePassphraseModal.show;
     prompt.encrypt = this.encryptModal.show;
     prompt.alert = this.alertModal.show;
+    prompt.sendContractApproval = this.dappSendModal.show;
+    prompt.signMessageApproval = this.dappSignModal.show;
+    prompt.connectApproval = this.dappConnectModal.show;
   }
 
 

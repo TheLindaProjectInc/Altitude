@@ -5,8 +5,10 @@ import Client from './lib/client';
 import * as log from 'electron-log';
 import * as settings from './lib/settings';
 import * as updater from './lib/updater';
+import * as dappBridge from './lib/dappBridge';
 import * as remoteMain from '@electron/remote/main';
 remoteMain.initialize();
+dappBridge.setupExternalLinks();
 
 log.transports.console.level = 'info'
 log.transports.file.level = 'info'
@@ -45,7 +47,7 @@ function createWindow() {
     width: width < size.width ? width : size.width,
     height: height < size.height ? height : size.height,
     icon: path.join(__dirname, 'assets/icons/png/512x512.png'),
-    webPreferences: { webSecurity: false, nodeIntegration: true, contextIsolation: false },
+    webPreferences: { webSecurity: false, nodeIntegration: true, contextIsolation: false, webviewTag: true },
     frame: process.platform !== 'win32',
     titleBarStyle: process.platform === 'linux' ? 'default' : 'hidden'
   });
@@ -214,4 +216,5 @@ function setupIPC() {
         break;
     }
   });
+  dappBridge.setupIPC();
 }

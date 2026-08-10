@@ -1,0 +1,64 @@
+.browser-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .browser-toolbar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        flex: 0 0 auto;
+
+        input[type="text"] {
+            flex: 1;
+            margin: 0 5px;
+        }
+    }
+
+    .browser-home {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .browser-tiles {
+            display: flex;
+            gap: 15px;
+        }
+
+        .browser-tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background: $background-accent;
+            border: 2px solid $font-primary;
+            border-radius: 10px;
+            color: $font-primary;
+            cursor: pointer;
+            padding: 20px 30px;
+
+            fa-icon {
+                font-size: 28px;
+            }
+
+            &:hover {
+                border-color: $color-accent;
+                color: $color-accent;
+            }
+        }
+    }
+
+    .browser-webview {
+        flex: 1;
+        width: 100%;
+
+        .browser-webview-el {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}

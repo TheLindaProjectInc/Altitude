@@ -44,7 +44,10 @@ import {
     faUsers,
     faTriangleExclamation,
     faMoneyCheckAlt,
-    faFileContract
+    faFileContract,
+    faGlobe,
+    faSyncAlt,
+    faHome
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -94,6 +97,9 @@ export function setupIcons(library: FaIconLibrary) {
         faUsers,
         faTriangleExclamation,
         faMoneyCheckAlt,
-        faFileContract
+        faFileContract,
+        faGlobe,
+        faSyncAlt,
+        faHome
     );
 }

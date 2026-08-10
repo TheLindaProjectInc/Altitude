@@ -45,6 +45,84 @@ ngx-smart-modal {
         .nsm-content {
             width: 400px;
         }
+        p span {
+            white-space: pre-line;
+        }
+    }
+    .dapp-send-modal {
+        .nsm-content {
+            width: 480px;
+        }
+        .dapp-send-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+
+            label {
+                color: $font-primary;
+                opacity: 0.7;
+                white-space: nowrap;
+            }
+        }
+        .dapp-send-value {
+            text-align: right;
+            word-break: break-all;
+        }
+        .dapp-send-mono {
+            font-family: monospace;
+            font-size: 0.85em;
+        }
+        .dapp-send-editable input[type="number"] {
+            width: 140px;
+            text-align: right;
+            margin-bottom: 0;
+        }
+        .dapp-send-summary {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        .dapp-send-total {
+            color: $color-accent;
+            font-weight: bold;
+        }
+        .dapp-send-data {
+            margin-top: 10px;
+
+            summary {
+                cursor: pointer;
+                color: $color-accent;
+            }
+            textarea {
+                width: 100%;
+                font-family: monospace;
+                font-size: 0.75em;
+                margin-top: 5px;
+                resize: vertical;
+            }
+        }
+        .dapp-sign-message-label {
+            display: block;
+            color: $font-primary;
+            opacity: 0.7;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .dapp-sign-message {
+            white-space: pre-line;
+            word-break: break-word;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-size: 0.9em;
+        }
     }
 }
 
