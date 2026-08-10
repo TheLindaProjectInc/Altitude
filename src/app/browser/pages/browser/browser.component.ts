@@ -1,20 +1,40 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { ElectronService } from 'app/providers/electron.service';
 import { DappBridgeService } from '../../providers/dapp-bridge.service';
+
+interface QuickLink {
+    name: string;
+    url: string;
+    ogTitle?: string;
+    ogImage?: string;
+}
 
 @Component({
     selector: 'app-browser',
     templateUrl: './browser.component.html',
     standalone: false
 })
-export class BrowserComponent implements AfterViewInit, OnDestroy {
+export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
 
     @ViewChild('webviewContainer') webviewContainer: ElementRef;
+
+    // shared across component instances so revisiting /browser doesn't re-fetch every time
+    private static readonly ogCache = new Map<string, { ogTitle?: string, ogImage?: string }>();
 
     public addressInput = '';
     public showHome = true;
     public canGoBack = false;
     public canGoForward = false;
+
+    public quickLinks: QuickLink[] = [
+        { name: 'Metrix LGP', url: 'https://metrixlgp.finance' },
+        { name: 'Metriverse Exchange', url: 'https://metriverse.exchange' },
+        { name: 'Metrix Domains', url: 'https://metrix.domains' },
+        { name: 'PyroPets', url: 'https://pyropets.org' },
+        { name: 'Arcana', url: 'https://arcana78.dev' },
+        { name: 'Metrix DGP', url: 'https://thelindaprojectinc.github.io/Budget-Proposals' },
+        { name: 'Metrix.Place', url: 'https://metrix.place' },
+    ];
 
     private webviewEl: any;
     private readonly preloadPath: string;
@@ -26,6 +46,43 @@ export class BrowserComponent implements AfterViewInit, OnDestroy {
         const path = window.require('path');
         const { pathToFileURL } = window.require('url');
         this.preloadPath = pathToFileURL(path.join(this.electron.remote.app.getAppPath(), 'dapp-preload.js')).href;
+    }
+
+    ngOnInit() {
+        this.quickLinks.forEach(link => this.loadPreview(link));
+    }
+
+    // og:title/og:image previews for the quick-launch tiles. Fetches from the main
+    // renderer (not the sandboxed webview), which already runs with webSecurity: false,
+    // so cross-origin reads of these public pages aren't blocked by CORS
+    private async loadPreview(link: QuickLink) {
+        const cached = BrowserComponent.ogCache.get(link.url);
+        if (cached) {
+            link.ogTitle = cached.ogTitle;
+            link.ogImage = cached.ogImage;
+            return;
+        }
+        const result: { ogTitle?: string, ogImage?: string } = {};
+        try {
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 8000);
+            const response = await fetch(link.url, { signal: controller.signal });
+            clearTimeout(timeout);
+            const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+            result.ogTitle = doc.querySelector('meta[property="og:title"]')?.getAttribute('content')
+                || doc.querySelector('title')?.textContent
+                || undefined;
+            const ogImage = doc.querySelector('meta[property="og:image"]')?.getAttribute('content');
+            // og:image is often a relative path - resolve it against the site's own URL
+            if (ogImage) {
+                try { result.ogImage = new URL(ogImage, link.url).href; } catch (ex) { }
+            }
+        } catch (ex) {
+            // leave result empty - the tile falls back to its icon + name
+        }
+        BrowserComponent.ogCache.set(link.url, result);
+        link.ogTitle = result.ogTitle;
+        link.ogImage = result.ogImage;
     }
 
     ngAfterViewInit() {
@@ -43,11 +100,6 @@ export class BrowserComponent implements AfterViewInit, OnDestroy {
         // setupExternalLinks) never even gets a chance to run, since the click never
         // makes it past the webview's own default block
         this.webviewEl.setAttribute('allowpopups', 'true');
-        // Electron's default User-Agent includes an "Electron/x.y.z" token that some
-        // CDNs/WAFs (Cloudflare especially) specifically detect and block or misroute -
-        // often as an unexplained 404 rather than an obvious 403 - so present as a
-        // normal Chrome browser instead. Built from this app's own real UA (rather than
-        // hardcoded) so the Chrome/OS version stays accurate as Electron is upgraded
         this.webviewEl.setAttribute('useragent', this.browserUserAgent());
         this.webviewEl.addEventListener('did-navigate', () => this.updateNavState());
         this.webviewEl.addEventListener('did-navigate-in-page', () => this.updateNavState());

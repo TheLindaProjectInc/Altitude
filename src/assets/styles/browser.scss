@@ -25,28 +25,71 @@
 
         .browser-tiles {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 15px;
+            max-width: 800px;
         }
 
         .browser-tile {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 10px;
+            width: 160px;
+            height: 110px;
             background: $background-accent;
             border: 2px solid $font-primary;
             border-radius: 10px;
             color: $font-primary;
             cursor: pointer;
-            padding: 20px 30px;
+            padding: 15px;
+            overflow: hidden;
 
             fa-icon {
                 font-size: 28px;
             }
 
+            span {
+                font-size: 0.9em;
+                text-align: center;
+            }
+
             &:hover {
                 border-color: $color-accent;
                 color: $color-accent;
+            }
+
+            &.has-image {
+                padding: 0;
+                color: #fff;
+
+                &:hover {
+                    border-color: $color-accent;
+                }
+            }
+
+            .browser-tile-image {
+                position: absolute;
+                inset: 0;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .browser-tile-label {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                margin-top: auto;
+                padding: 6px 8px;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+                font-size: 0.85em;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }

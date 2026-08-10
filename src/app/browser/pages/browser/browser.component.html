@@ -30,26 +30,17 @@
         <div class="browser-home">
             <h2>{{ 'COMPONENTS.BROWSER.QUICKLAUNCH' | translate }}</h2>
             <div class="browser-tiles">
-                <button class="browser-tile" (click)="navigate('https://metrixlgp.finance')">
-                    <fa-icon icon="globe"></fa-icon>
-                    <span>Metrix LGP</span>
-                </button>
-                <button class="browser-tile" (click)="navigate('https://metriverse.exchange')">
-                    <fa-icon icon="globe"></fa-icon>
-                    <span>Metriverse Exchange</span>
-                </button>
-                <button class="browser-tile" (click)="navigate('https://metrix.domains/app')">
-                    <fa-icon icon="globe"></fa-icon>
-                    <span>Metrix Domains</span>
-                </button>
-                <button class="browser-tile" (click)="navigate('https://pyropets.org/')">
-                    <fa-icon icon="globe"></fa-icon>
-                    <span>PyroPets</span>
-                </button>
-                <button class="browser-tile" (click)="navigate('https://metrix.place')">
-                    <fa-icon icon="globe"></fa-icon>
-                    <span>Metrix.Place</span>
-                </button>
+                @for (link of quickLinks; track link.url) {
+                    <button class="browser-tile" [class.has-image]="link.ogImage" (click)="navigate(link.url)">
+                        @if (link.ogImage) {
+                            <div class="browser-tile-image" [style.background-image]="'url(' + link.ogImage + ')'"></div>
+                            <span class="browser-tile-label">{{ link.ogTitle || link.name }}</span>
+                        } @else {
+                            <fa-icon icon="globe"></fa-icon>
+                            <span>{{ link.name }}</span>
+                        }
+                    </button>
+                }
             </div>
         </div>
     }
