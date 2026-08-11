@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maks. netværksgebyr",
             "DAPPSENDMAXTOTALLABEL": "Maks. i alt",
             "DAPPSENDDATALABEL": "Kontraktdata",
-            "DAPPSIGNMESSAGELABEL": "Besked"
+            "DAPPSIGNMESSAGELABEL": "Besked",
+            "BOOTSTRAPOFFERTITLE": "Wallet er væsentligt forældet",
+            "BOOTSTRAPOFFERINFO": "En nyere bootstrap er tilgængelig, som hurtigt kan opdatere Metrix Core. Det kan tage flere dage at fortsætte med en normal synkronisering i stedet, da din wallet skal downloade og verificere hver blok, den har overset.",
+            "BOOTSTRAPOFFERBUTTON": "Download Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Fortsæt normal synkronisering",
+            "BOOTSTRAPSPACEINFO": "Ikke nok ledig diskplads til at downloade og udpakke bootstrap'en. Krævet: {required}, Tilgængelig: {free}. Frigør noget plads, og prøv igen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebog",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Det link er allerede på din hurtigstartliste",
             "LINKINVALID": "Indtast en gyldig webstedsadresse",
             "LINKNETWORKLABEL": "Netværk",
-            "LOADFAILED": "Kunne ikke indlæse webstedet"
+            "LOADFAILED": "Kunne ikke indlæse webstedet",
+            "SECURESITE": "Forbindelsen er sikker - gyldigt SSL-certifikat",
+            "INSECURESITE": "Forbindelsen er ikke sikker",
+            "INVALIDCERTSITE": "Forbindelsen er ikke privat - ugyldigt eller ikke-tillidsfuldt SSL-certifikat"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Lukning af Metrix Core...",
         "RESTARTING": "Genstart Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Udpakker bootstrap...",
+        "TIMEREMAINING": "resterende:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ny konto blev oprettet med succes",

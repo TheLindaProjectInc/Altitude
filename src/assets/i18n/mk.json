@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Максимална мрежна такса",
             "DAPPSENDMAXTOTALLABEL": "Максимален вкупен износ",
             "DAPPSENDDATALABEL": "Податоци за договорот",
-            "DAPPSIGNMESSAGELABEL": "Порака"
+            "DAPPSIGNMESSAGELABEL": "Порака",
+            "BOOTSTRAPOFFERTITLE": "Паричникот е значително застарен",
+            "BOOTSTRAPOFFERINFO": "Достапен е неодамнешен bootstrap кој може брзо да го ажурира Metrix Core. Продолжувањето со нормална синхронизација може да потрае неколку дена за да се заврши, бидејќи вашиот паричник треба да го преземе и потврди секој блок што го пропуштил.",
+            "BOOTSTRAPOFFERBUTTON": "Преземи Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Продолжи со нормална синхронизација",
+            "BOOTSTRAPSPACEINFO": "Нема доволно слободен простор на дискот за преземање и отпакување на bootstrap-от. Задолжително: {задолжително}, Достапно: {free}. Ослободете малку простор и обидете се повторно."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Таа врска е веќе во вашата листа за брзо стартување",
             "LINKINVALID": "Внесете важечка адреса на страницата",
             "LINKNETWORKLABEL": "Мрежа",
-            "LOADFAILED": "Неуспешно вчитување на страницата"
+            "LOADFAILED": "Неуспешно вчитување на страницата",
+            "SECURESITE": "Врската е безбедна - важечки SSL сертификат",
+            "INSECURESITE": "Врската не е безбедна",
+            "INVALIDCERTSITE": "Врската не е приватна - неважечки или недоверлив SSL сертификат"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Достапна е верзија на Core Metrix",
         "SHUTTINGDOWN": "Исклучување на Линда Core...",
         "RESTARTING": "Рестартирање на Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Се извлекува bootstrap...",
+        "TIMEREMAINING": "преостанати:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нова сметка креирана успешно",

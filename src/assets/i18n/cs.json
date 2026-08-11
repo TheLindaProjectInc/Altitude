@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maximální síťový poplatek",
             "DAPPSENDMAXTOTALLABEL": "Maximální součet",
             "DAPPSENDDATALABEL": "Smluvní údaje",
-            "DAPPSIGNMESSAGELABEL": "Zpráva"
+            "DAPPSIGNMESSAGELABEL": "Zpráva",
+            "BOOTSTRAPOFFERTITLE": "Peněženka výrazně zastaralá",
+            "BOOTSTRAPOFFERINFO": "K dispozici je nejnovější bootstrap, který dokáže rychle aktualizovat Metrix Core. Pokračování v normální synchronizaci může trvat několik dní, protože vaše peněženka si musí stáhnout a ověřit každý blok, který zmeškala.",
+            "BOOTSTRAPOFFERBUTTON": "Stáhnout Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Pokračovat v normální synchronizaci",
+            "BOOTSTRAPSPACEINFO": "Není dostatek volného místa na disku ke stažení a rozbalení bootstrapu. Požadováno: {required}, Dostupné: {free}. Uvolněte místo a zkuste to znovu."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresář",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Tento odkaz už máte ve vašem seznamu pro rychlé spuštění",
             "LINKINVALID": "Zadejte platnou adresu webu",
             "LINKNETWORKLABEL": "Síť",
-            "LOADFAILED": "Načtení webu se nezdařilo"
+            "LOADFAILED": "Načtení webu se nezdařilo",
+            "SECURESITE": "Připojení je zabezpečené - platný SSL certifikát",
+            "INSECURESITE": "Připojení není zabezpečené",
+            "INVALIDCERTSITE": "Připojení není soukromé – neplatný nebo nedůvěryhodný SSL certifikát"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "K dispozici je aktualizace Metrix Core Core",
         "SHUTTINGDOWN": "Vypnutí Lindy Core...",
         "RESTARTING": "Restartování Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Core jádra..."
+        "BOOTSTRAPPING": "Bootstrapping Core jádra...",
+        "BOOTSTRAPEXTRACTING": "Extrahování bootstrapu...",
+        "TIMEREMAINING": "zbývající:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nový účet byl úspěšně vytvořen",

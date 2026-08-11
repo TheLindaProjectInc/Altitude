@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maximálny sieťový poplatok",
             "DAPPSENDMAXTOTALLABEL": "Maximálny súčet",
             "DAPPSENDDATALABEL": "Údaje o zmluve",
-            "DAPPSIGNMESSAGELABEL": "Správa"
+            "DAPPSIGNMESSAGELABEL": "Správa",
+            "BOOTSTRAPOFFERTITLE": "Peňaženka je výrazne zastaralá",
+            "BOOTSTRAPOFFERINFO": "K dispozícii je najnovší bootstrap, ktorý dokáže rýchlo aktualizovať Metrix Core. Pokračovanie v bežnej synchronizácii môže trvať niekoľko dní, pretože vaša peňaženka si musí stiahnuť a overiť každý blok, ktorý vynechala.",
+            "BOOTSTRAPOFFERBUTTON": "Stiahnuť Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Pokračovať v normálnej synchronizácii",
+            "BOOTSTRAPSPACEINFO": "Na stiahnutie a rozbalenie bootstrapu nie je dostatok voľného miesta na disku. Požadované: {required}, Dostupné: {free}. Uvoľnite miesto a skúste to znova."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresár",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Tento odkaz sa už nachádza vo vašom zozname rýchleho spustenia",
             "LINKINVALID": "Zadajte platnú adresu stránky",
             "LINKNETWORKLABEL": "Sieť",
-            "LOADFAILED": "Nepodarilo sa načítať stránku"
+            "LOADFAILED": "Nepodarilo sa načítať stránku",
+            "SECURESITE": "Pripojenie je zabezpečené - platný SSL certifikát",
+            "INSECURESITE": "Pripojenie nie je zabezpečené",
+            "INVALIDCERTSITE": "Pripojenie nie je súkromné – neplatný alebo nedôveryhodný SSL certifikát"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Dostupné",
         "SHUTTINGDOWN": "Vypnutie Metrix Core...",
         "RESTARTING": "Reštartujte Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Core jadra..."
+        "BOOTSTRAPPING": "Bootstrapping Core jadra...",
+        "BOOTSTRAPEXTRACTING": "Extrahovanie bootstrapu...",
+        "TIMEREMAINING": "zostávajúce:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nový účet bol úspešne vytvorený",

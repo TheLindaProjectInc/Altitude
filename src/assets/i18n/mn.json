@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Сүлжээний дээд хураамж",
             "DAPPSENDMAXTOTALLABEL": "Дээд нийт дүн",
             "DAPPSENDDATALABEL": "Гэрээний өгөгдөл",
-            "DAPPSIGNMESSAGELABEL": "Мессеж"
+            "DAPPSIGNMESSAGELABEL": "Мессеж",
+            "BOOTSTRAPOFFERTITLE": "Түрийвч мэдэгдэхүйц хуучирсан",
+            "BOOTSTRAPOFFERINFO": "Metrix Core-г хурдан шинэчлэх боломжтой хамгийн сүүлийн үеийн bootstrap хувилбар гарсан байна. Таны түрийвч алгассан блок бүрийг татаж аваад баталгаажуулах шаардлагатай тул ердийн синкийг үргэлжлүүлэхэд хэдэн өдөр шаардагдаж магадгүй.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap-г татаж авах",
+            "BOOTSTRAPOFFERCANCEL": "Хэвийн синкийг үргэлжлүүлэх",
+            "BOOTSTRAPSPACEINFO": "Bootstrap-г татаж аваад задлахад хангалттай дискний зай алга. Шаардлагатай: {required}, Боломжтой: {free}. Зай гаргаад дахин оролдоно уу."
         },
         "ADDRESSBOOK": {
             "TITLE": "Хаяг хадгалах ном",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Энэ холбоос таны хурдан эхлүүлэх жагсаалтад аль хэдийн байна",
             "LINKINVALID": "Хүчинтэй сайтын хаяг оруулна уу",
             "LINKNETWORKLABEL": "Сүлжээ",
-            "LOADFAILED": "Сайтыг ачаалж чадсангүй"
+            "LOADFAILED": "Сайтыг ачаалж чадсангүй",
+            "SECURESITE": "Холболт аюулгүй - хүчинтэй SSL сертификат",
+            "INSECURESITE": "Холболт аюулгүй биш байна",
+            "INVALIDCERTSITE": "Холболт хувийн биш байна - хүчингүй эсвэл найдваргүй SSL гэрчилгээ"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Линда Гол Сайтын шинэчлэл боломжтой",
         "SHUTTINGDOWN": "Metrix Core-ийг унтраа...",
         "RESTARTING": "Линда Гол дахин эхлүүлэх...",
-        "BOOTSTRAPPING": "Метриксийн үндсэн зураг..."
+        "BOOTSTRAPPING": "Метриксийн үндсэн зураг...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap-г гаргаж авч байна...",
+        "TIMEREMAINING": "үлдсэн:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Шинэ данс амжилттай үүсгэсэн",

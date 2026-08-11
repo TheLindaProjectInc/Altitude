@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Максимальна мережева плата",
             "DAPPSENDMAXTOTALLABEL": "Максимальна сума",
             "DAPPSENDDATALABEL": "Дані договору",
-            "DAPPSIGNMESSAGELABEL": "Повідомлення"
+            "DAPPSIGNMESSAGELABEL": "Повідомлення",
+            "BOOTSTRAPOFFERTITLE": "Гаманець значно застарів",
+            "BOOTSTRAPOFFERINFO": "Доступна нещодавня завантажувальна версія, яка може швидко оновити Metrix Core. Продовження звичайної синхронізації може зайняти кілька днів, оскільки вашому гаманцю потрібно завантажити та перевірити кожен пропущений блок.",
+            "BOOTSTRAPOFFERBUTTON": "Завантажити Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Продовжити звичайну синхронізацію",
+            "BOOTSTRAPSPACEINFO": "Недостатньо вільного місця на диску для завантаження та розпакування bootstrap. Потрібно: {required}, Доступно: {free}. Звільніть місце та спробуйте ще раз."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Це посилання вже є у вашому списку швидкого запуску",
             "LINKINVALID": "Введіть дійсну адресу сайту",
             "LINKNETWORKLABEL": "Мережа",
-            "LOADFAILED": "Не вдалося завантажити сайт"
+            "LOADFAILED": "Не вдалося завантажити сайт",
+            "SECURESITE": "З’єднання безпечне – дійсний SSL-сертифікат",
+            "INSECURESITE": "З'єднання не захищене",
+            "INVALIDCERTSITE": "З’єднання не є конфіденційним – недійсний або ненадійний SSL-сертифікат"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Доступна оновлення Metrix Core",
         "SHUTTINGDOWN": "Виключення Metrix Core...",
         "RESTARTING": "Перезапустіть Лінду Корне...",
-        "BOOTSTRAPPING": "Завантаження Metrix Core..."
+        "BOOTSTRAPPING": "Завантаження Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Видобування початкового завантаження...",
+        "TIMEREMAINING": "залишилося:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Новий обліковий запис створено успішно",

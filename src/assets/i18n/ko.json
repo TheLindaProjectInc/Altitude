@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "최대 네트워크 수수료",
             "DAPPSENDMAXTOTALLABEL": "최대 합계",
             "DAPPSENDDATALABEL": "계약 데이터",
-            "DAPPSIGNMESSAGELABEL": "메시지"
+            "DAPPSIGNMESSAGELABEL": "메시지",
+            "BOOTSTRAPOFFERTITLE": "지갑이 상당히 구식입니다",
+            "BOOTSTRAPOFFERINFO": "최근 부트스트랩 기능이 제공되어 Metrix Core를 빠르게 최신 상태로 업데이트할 수 있습니다. 일반 동기화를 진행할 경우, 지갑이 누락된 모든 블록을 다운로드하고 검증해야 하므로 완료하는 데 며칠이 걸릴 수 있습니다.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap 다운로드",
+            "BOOTSTRAPOFFERCANCEL": "정상 동기화 계속",
+            "BOOTSTRAPSPACEINFO": "부트스트랩을 다운로드하고 압축을 풀기에 디스크 공간이 부족합니다. 필요 공간: {required}, 사용 가능 공간: {free}. 공간을 확보하고 다시 시도하세요."
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "해당 링크는 이미 빠른 실행 목록에 있습니다.",
             "LINKINVALID": "유효한 사이트 주소를 입력하세요",
             "LINKNETWORKLABEL": "회로망",
-            "LOADFAILED": "사이트를 불러오는 데 실패했습니다."
+            "LOADFAILED": "사이트를 불러오는 데 실패했습니다.",
+            "SECURESITE": "연결이 안전합니다 - 유효한 SSL 인증서가 있습니다",
+            "INSECURESITE": "연결이 안전하지 않습니다.",
+            "INVALIDCERTSITE": "연결이 비공개 상태가 아닙니다. SSL 인증서가 유효하지 않거나 신뢰할 수 없습니다."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix 핵심 업데이트 사용 가능",
         "SHUTTINGDOWN": "Metrix Core 종료 중...",
         "RESTARTING": "Metrix Core 재시동 중...",
-        "BOOTSTRAPPING": "부트 스트랩 핑 매트릭스 코어..."
+        "BOOTSTRAPPING": "부트 스트랩 핑 매트릭스 코어...",
+        "BOOTSTRAPEXTRACTING": "부트스트랩 추출 중...",
+        "TIMEREMAINING": "남은 것:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "새 계정이 성공적으로 생성되었습니다.",

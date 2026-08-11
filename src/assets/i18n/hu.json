@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maximális hálózati díj",
             "DAPPSENDMAXTOTALLABEL": "Max. összeg",
             "DAPPSENDDATALABEL": "Szerződéses adatok",
-            "DAPPSIGNMESSAGELABEL": "Üzenet"
+            "DAPPSIGNMESSAGELABEL": "Üzenet",
+            "BOOTSTRAPOFFERTITLE": "A pénztárca jelentősen elavult",
+            "BOOTSTRAPOFFERINFO": "Egy újabb bootstrap verzió érhető el, amellyel gyorsan frissíthető a Metrix Core. A normál szinkronizálás folytatása több napot is igénybe vehet, mivel a tárcának le kell töltenie és ellenőriznie kell minden kihagyott blokkot.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap letöltése",
+            "BOOTSTRAPOFFERCANCEL": "Normál szinkronizálás folytatása",
+            "BOOTSTRAPSPACEINFO": "Nincs elég szabad lemezterület a bootstrap letöltéséhez és kicsomagolásához. Szükséges: {required}, Elérhető: {free}. Szabadítson fel helyet, és próbálja újra."
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Ez a hivatkozás már szerepel a gyorsindító listában",
             "LINKINVALID": "Adjon meg egy érvényes webhelycímet",
             "LINKNETWORKLABEL": "Hálózat",
-            "LOADFAILED": "Nem sikerült betölteni az oldalt"
+            "LOADFAILED": "Nem sikerült betölteni az oldalt",
+            "SECURESITE": "A kapcsolat biztonságos - érvényes SSL-tanúsítvány",
+            "INSECURESITE": "A kapcsolat nem biztonságos",
+            "INVALIDCERTSITE": "A kapcsolat nem privát - érvénytelen vagy nem megbízható SSL-tanúsítvány"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core frissítés elérhető",
         "SHUTTINGDOWN": "Metrix Core leállítása...",
         "RESTARTING": "Metrix Core újraindítása...",
-        "BOOTSTRAPPING": "Rendszerindító Metrix Core..."
+        "BOOTSTRAPPING": "Rendszerindító Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap kinyerése...",
+        "TIMEREMAINING": "többi:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Új fiók sikeresen létrehozva",

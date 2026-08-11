@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maksimālā tīkla maksa",
             "DAPPSENDMAXTOTALLABEL": "Maksimālā summa",
             "DAPPSENDDATALABEL": "Līguma dati",
-            "DAPPSIGNMESSAGELABEL": "Ziņojums"
+            "DAPPSIGNMESSAGELABEL": "Ziņojums",
+            "BOOTSTRAPOFFERTITLE": "Maka derīguma termiņš ir ievērojami novecojis.",
+            "BOOTSTRAPOFFERINFO": "Ir pieejama jaunākā sāknēšanas versija, kas var ātri atjaunināt Metrix Core. Turpinot parasto sinhronizāciju, var paiet vairākas dienas, jo jūsu makam ir jālejupielādē un jāpārbauda katrs bloks, ko tas ir palaidis garām.",
+            "BOOTSTRAPOFFERBUTTON": "Lejupielādēt Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Turpināt parasto sinhronizāciju",
+            "BOOTSTRAPSPACEINFO": "Nav pietiekami daudz brīvas vietas diskā, lai lejupielādētu un izvilktu sāknēšanas failu. Nepieciešams: {required}, pieejams: {free}. Atbrīvojiet vietu un mēģiniet vēlreiz."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Šī saite jau ir jūsu ātrās palaišanas sarakstā",
             "LINKINVALID": "Ievadiet derīgu vietnes adresi",
             "LINKNETWORKLABEL": "Tīkls",
-            "LOADFAILED": "Neizdevās ielādēt vietni"
+            "LOADFAILED": "Neizdevās ielādēt vietni",
+            "SECURESITE": "Savienojums ir drošs — derīgs SSL sertifikāts",
+            "INSECURESITE": "Savienojums nav drošs",
+            "INVALIDCERTSITE": "Savienojums nav privāts — nederīgs vai neuzticams SSL sertifikāts"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Pieejama Metrix Core atjauninājums",
         "SHUTTINGDOWN": "Metrix Core izslēgšana...",
         "RESTARTING": "Lindas Core atjaunošana...",
-        "BOOTSTRAPPING": "Sākotnējā Metrix Core..."
+        "BOOTSTRAPPING": "Sākotnējā Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Notiek sāknēšanas datu izgūšana...",
+        "TIMEREMAINING": "atlikušie:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Jauns konts veiksmīgi izveidots",

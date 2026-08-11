@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Najvišja omrežna pristojbina",
             "DAPPSENDMAXTOTALLABEL": "Največji skupni znesek",
             "DAPPSENDDATALABEL": "Podatki o pogodbi",
-            "DAPPSIGNMESSAGELABEL": "Sporočilo"
+            "DAPPSIGNMESSAGELABEL": "Sporočilo",
+            "BOOTSTRAPOFFERTITLE": "Denarnica je precej zastarela",
+            "BOOTSTRAPOFFERINFO": "Na voljo je novejši bootstrap, ki lahko hitro posodobi Metrix Core. Nadaljevanje z običajno sinhronizacijo lahko traja več dni, saj mora vaša denarnica prenesti in preveriti vsak blok, ki ga je zamudila.",
+            "BOOTSTRAPOFFERBUTTON": "Prenesi Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Nadaljuj z običajno sinhronizacijo",
+            "BOOTSTRAPSPACEINFO": "Ni dovolj prostega prostora na disku za prenos in razpakiranje datoteke bootstrap. Zahtevano: {required}, Na voljo: {free}. Sprostite nekaj prostora in poskusite znova."
         },
         "ADDRESSBOOK": {
             "TITLE": "Imenik",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Ta povezava je že na vašem seznamu za hitri zagon",
             "LINKINVALID": "Vnesite veljaven naslov spletnega mesta",
             "LINKNETWORKLABEL": "Omrežje",
-            "LOADFAILED": "Nalaganje spletnega mesta ni uspelo"
+            "LOADFAILED": "Nalaganje spletnega mesta ni uspelo",
+            "SECURESITE": "Povezava je varna - veljaven SSL certifikat",
+            "INSECURESITE": "Povezava ni varna",
+            "INVALIDCERTSITE": "Povezava ni zasebna – neveljavno ali nezaupanja vredno potrdilo SSL"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update je na voljo",
         "SHUTTINGDOWN": "Izklop Metrix Coreja...",
         "RESTARTING": "Ponovni zagon Metrix Core...",
-        "BOOTSTRAPPING": "Zagon Metrix Core..."
+        "BOOTSTRAPPING": "Zagon Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Razširjanje zagonskega programa...",
+        "TIMEREMAINING": "preostalo:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novi račun je bil ustvarjen uspešno",

@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Максимална мрежна накнада",
             "DAPPSENDMAXTOTALLABEL": "Макс. укупно",
             "DAPPSENDDATALABEL": "Подаци о уговору",
-            "DAPPSIGNMESSAGELABEL": "Порука"
+            "DAPPSIGNMESSAGELABEL": "Порука",
+            "BOOTSTRAPOFFERTITLE": "Новчаник је знатно застарео",
+            "BOOTSTRAPOFFERINFO": "Доступна је најновија верзија за покретање система (bootstrap) која може брзо ажурирати Metrix Core. Наставак са нормалном синхронизацијом може потрајати неколико дана, јер ваш новчаник мора да преузме и верификује сваки блок који је пропустио.",
+            "BOOTSTRAPOFFERBUTTON": "Преузми Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Настави нормалну синхронизацију",
+            "BOOTSTRAPSPACEINFO": "Нема довољно слободног простора на диску за преузимање и распакивање bootstrap датотеке. Потребно: {required}, Доступно: {free}. Ослободите простор и покушајте поново."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Тај линк је већ на вашој листи за брзо покретање",
             "LINKINVALID": "Унесите важећу адресу сајта",
             "LINKNETWORKLABEL": "Мрежа",
-            "LOADFAILED": "Учитавање сајта није успело"
+            "LOADFAILED": "Учитавање сајта није успело",
+            "SECURESITE": "Веза је безбедна - важећи SSL сертификат",
+            "INSECURESITE": "Веза није безбедна",
+            "INVALIDCERTSITE": "Веза није приватна - неважећи или непоуздан SSL сертификат"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Линда Цоре Упдате доступна",
         "SHUTTINGDOWN": "Искључи Линда Цоре...",
         "RESTARTING": "Поново покрените Линда Цоре...",
-        "BOOTSTRAPPING": "Боотстраппинг Метрик Цоре..."
+        "BOOTSTRAPPING": "Боотстраппинг Метрик Цоре...",
+        "BOOTSTRAPEXTRACTING": "Издвајање bootstrap-а...",
+        "TIMEREMAINING": "преостало:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нови налог је успешно креиран",

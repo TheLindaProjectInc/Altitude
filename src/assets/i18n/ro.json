@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Taxă maximă de rețea",
             "DAPPSENDMAXTOTALLABEL": "Total maxim",
             "DAPPSENDDATALABEL": "Date contractuale",
-            "DAPPSIGNMESSAGELABEL": "Mesaj"
+            "DAPPSIGNMESSAGELABEL": "Mesaj",
+            "BOOTSTRAPOFFERTITLE": "Portofel semnificativ învechit",
+            "BOOTSTRAPOFFERINFO": "Este disponibilă o versiune recentă de bootstrap care poate actualiza rapid Metrix Core. Continuarea unei sincronizări normale poate dura câteva zile, deoarece portofelul dvs. trebuie să descarce și să verifice fiecare bloc pe care l-a ratat.",
+            "BOOTSTRAPOFFERBUTTON": "Descărcați Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continuă sincronizarea normală",
+            "BOOTSTRAPSPACEINFO": "Nu este suficient spațiu liber pe disc pentru a descărca și extrage fișierul bootstrap. Necesar: {required}, Disponibil: {free}. Eliberați spațiu și încercați din nou."
         },
         "ADDRESSBOOK": {
             "TITLE": "Carte de adrese",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Linkul respectiv se află deja în lista ta de lansare rapidă",
             "LINKINVALID": "Introduceți o adresă validă a site-ului",
             "LINKNETWORKLABEL": "Reţea",
-            "LOADFAILED": "Nu s-a putut încărca site-ul"
+            "LOADFAILED": "Nu s-a putut încărca site-ul",
+            "SECURESITE": "Conexiunea este securizată - certificat SSL valid",
+            "INSECURESITE": "Conexiunea nu este sigură",
+            "INVALIDCERTSITE": "Conexiunea nu este privată - certificat SSL nevalid sau nesigur"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Închiderea Metrix Core...",
         "RESTARTING": "Reporniți Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extragerea bootstrap-ului...",
+        "TIMEREMAINING": "rămase:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Contul nou a fost creat cu succes",

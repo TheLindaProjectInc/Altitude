@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Verkkomaksun enimmäismäärä",
             "DAPPSENDMAXTOTALLABEL": "Kokonaissumma",
             "DAPPSENDDATALABEL": "Sopimustiedot",
-            "DAPPSIGNMESSAGELABEL": "Viesti"
+            "DAPPSIGNMESSAGELABEL": "Viesti",
+            "BOOTSTRAPOFFERTITLE": "Lompakko huomattavasti vanhentunut",
+            "BOOTSTRAPOFFERINFO": "Saatavilla on uusi käynnistystyökalu, jolla Metrix Coren voi päivittää nopeasti. Normaalin synkronoinnin jatkaminen voi kestää useita päiviä, koska lompakkosi on ladattava ja vahvistettava jokainen lohko, jonka se on unohtanut.",
+            "BOOTSTRAPOFFERBUTTON": "Lataa Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jatka normaalia synkronointia",
+            "BOOTSTRAPSPACEINFO": "Levytilaa ei ole riittävästi käynnistystiedoston lataamiseen ja purkamiseen. Vaaditaan: {required}, Käytettävissä: {free}. Vapauta tilaa ja yritä uudelleen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Tuo linkki on jo pikakäynnistysluettelossasi",
             "LINKINVALID": "Anna kelvollinen sivuston osoite",
             "LINKNETWORKLABEL": "Verkko",
-            "LOADFAILED": "Sivuston lataaminen epäonnistui"
+            "LOADFAILED": "Sivuston lataaminen epäonnistui",
+            "SECURESITE": "Yhteys on suojattu - voimassa oleva SSL-varmenne",
+            "INSECURESITE": "Yhteys ei ole suojattu",
+            "INVALIDCERTSITE": "Yhteys ei ole yksityinen - virheellinen tai epäluotettava SSL-varmenne"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core -päivitys saatavilla",
         "SHUTTINGDOWN": "Metrix Corein sulkeminen...",
         "RESTARTING": "Metrix Corein uudelleen käynnistäminen...",
-        "BOOTSTRAPPING": "Käynnistävä Metrix-ydin..."
+        "BOOTSTRAPPING": "Käynnistävä Metrix-ydin...",
+        "BOOTSTRAPEXTRACTING": "Puretaan bootstrapia...",
+        "TIMEREMAINING": "jäljellä:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uusi tili luotu onnistuneesti",

@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Tariffa massima di rete",
             "DAPPSENDMAXTOTALLABEL": "Totale massimo",
             "DAPPSENDDATALABEL": "Dati contrattuali",
-            "DAPPSIGNMESSAGELABEL": "Messaggio"
+            "DAPPSIGNMESSAGELABEL": "Messaggio",
+            "BOOTSTRAPOFFERTITLE": "Portafoglio decisamente obsoleto",
+            "BOOTSTRAPOFFERINFO": "È disponibile una versione di bootstrap recente che può aggiornare rapidamente Metrix Core. Procedere con una sincronizzazione normale potrebbe invece richiedere diversi giorni, poiché il portafoglio deve scaricare e verificare ogni blocco mancante.",
+            "BOOTSTRAPOFFERBUTTON": "Scarica Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continua la sincronizzazione normale",
+            "BOOTSTRAPSPACEINFO": "Spazio su disco insufficiente per scaricare ed estrarre il bootstrap. Richiesto: {required}, Disponibile: {free}. Libera spazio e riprova."
         },
         "ADDRESSBOOK": {
             "TITLE": "Rubrica",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Quel collegamento è già presente nel tuo elenco di avvio rapido",
             "LINKINVALID": "Inserisci un indirizzo di sito valido",
             "LINKNETWORKLABEL": "Rete",
-            "LOADFAILED": "Impossibile caricare il sito"
+            "LOADFAILED": "Impossibile caricare il sito",
+            "SECURESITE": "La connessione è sicura: certificato SSL valido.",
+            "INSECURESITE": "La connessione non è sicura",
+            "INVALIDCERTSITE": "La connessione non è privata: certificato SSL non valido o non attendibile."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Aggiornamento Metrix Core disponibile",
         "SHUTTINGDOWN": "Chiusura di Metrix Core...",
         "RESTARTING": "Riavvio di Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Estrazione del bootstrap...",
+        "TIMEREMAINING": "rimanente:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nuovo account creato con successo",

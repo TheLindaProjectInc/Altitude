@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maksimaalne võrgutasu",
             "DAPPSENDMAXTOTALLABEL": "Maksimaalne summa",
             "DAPPSENDDATALABEL": "Lepingu andmed",
-            "DAPPSIGNMESSAGELABEL": "Sõnum"
+            "DAPPSIGNMESSAGELABEL": "Sõnum",
+            "BOOTSTRAPOFFERTITLE": "Rahakott on oluliselt aegunud",
+            "BOOTSTRAPOFFERINFO": "Saadaval on uusim alglaadimisprogramm, mis aitab Metrix Core'i kiiresti ajakohastada. Tavalise sünkroonimisega jätkamine võib võtta mitu päeva, kuna teie rahakott peab alla laadima ja kontrollima iga vahelejäänud plokki.",
+            "BOOTSTRAPOFFERBUTTON": "Laadige alla Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jätka tavalist sünkroonimist",
+            "BOOTSTRAPSPACEINFO": "Bootstrapi allalaadimiseks ja lahtipakkimiseks pole piisavalt vaba kettaruumi. Nõutav: {required}, Saadaval: {free}. Vabastage ruumi ja proovige uuesti."
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "See link on juba teie kiirkäivitusloendis",
             "LINKINVALID": "Sisestage kehtiv saidi aadress",
             "LINKNETWORKLABEL": "Võrk",
-            "LOADFAILED": "Saidi laadimine ebaõnnestus"
+            "LOADFAILED": "Saidi laadimine ebaõnnestus",
+            "SECURESITE": "Ühendus on turvaline – kehtiv SSL-sertifikaat",
+            "INSECURESITE": "Ühendus pole turvaline",
+            "INVALIDCERTSITE": "Ühendus pole privaatne – kehtetu või ebausaldusväärne SSL-sertifikaat"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core'i värskendus saadaval",
         "SHUTTINGDOWN": "Metrix Core'i sulgemine...",
         "RESTARTING": "Metrix Core taaskäivitamine...",
-        "BOOTSTRAPPING": "Alglaadimise Metrix Core..."
+        "BOOTSTRAPPING": "Alglaadimise Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Bootstrapi lahtipakkimine...",
+        "TIMEREMAINING": "järelejäänud:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uus konto on edukalt loodud",

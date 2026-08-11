@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Frais de réseau maximum",
             "DAPPSENDMAXTOTALLABEL": "Total maximum",
             "DAPPSENDDATALABEL": "Données contractuelles",
-            "DAPPSIGNMESSAGELABEL": "Message"
+            "DAPPSIGNMESSAGELABEL": "Message",
+            "BOOTSTRAPOFFERTITLE": "Portefeuille obsolète",
+            "BOOTSTRAPOFFERINFO": "Une version récente de mise à jour est disponible et permet de mettre rapidement Metrix Core à jour. Une synchronisation classique peut prendre plusieurs jours, car votre portefeuille doit télécharger et vérifier tous les blocs manquants.",
+            "BOOTSTRAPOFFERBUTTON": "Télécharger Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Poursuivre la synchronisation normale",
+            "BOOTSTRAPSPACEINFO": "Espace disque insuffisant pour télécharger et extraire le programme d'installation. Requis : {requis}, Disponible : {free}. Libérez de l'espace et réessayez."
         },
         "ADDRESSBOOK": {
             "TITLE": "Carnet d'adresses",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Ce lien figure déjà dans votre liste de lancement rapide.",
             "LINKINVALID": "Saisissez une adresse de site valide",
             "LINKNETWORKLABEL": "Réseau",
-            "LOADFAILED": "Impossible de charger le site"
+            "LOADFAILED": "Impossible de charger le site",
+            "SECURESITE": "La connexion est sécurisée - certificat SSL valide",
+            "INSECURESITE": "La connexion n'est pas sécurisée.",
+            "INVALIDCERTSITE": "La connexion n'est pas privée - certificat SSL invalide ou non approuvé"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update disponible",
         "SHUTTINGDOWN": "Fermeture de Metrix Core...",
         "RESTARTING": "Redémarrage de Metrix Core...",
-        "BOOTSTRAPPING": "Démarrage de Metrix Core..."
+        "BOOTSTRAPPING": "Démarrage de Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extraction du bootstrap...",
+        "TIMEREMAINING": "restant:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nouveau compte créé avec succès",

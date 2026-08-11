@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Biaya Jaringan Maksimum",
             "DAPPSENDMAXTOTALLABEL": "Total Maksimum",
             "DAPPSENDDATALABEL": "Data Kontrak",
-            "DAPPSIGNMESSAGELABEL": "Pesan"
+            "DAPPSIGNMESSAGELABEL": "Pesan",
+            "BOOTSTRAPOFFERTITLE": "Dompet Sudah Sangat Ketinggalan Zaman",
+            "BOOTSTRAPOFFERINFO": "Tersedia bootstrap terbaru yang dapat dengan cepat memperbarui Metrix Core. Melanjutkan dengan sinkronisasi normal mungkin membutuhkan waktu beberapa hari untuk diselesaikan, karena dompet Anda perlu mengunduh dan memverifikasi setiap blok yang terlewat.",
+            "BOOTSTRAPOFFERBUTTON": "Unduh Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Lanjutkan Sinkronisasi Normal",
+            "BOOTSTRAPSPACEINFO": "Ruang disk kosong tidak cukup untuk mengunduh dan mengekstrak bootstrap. Diperlukan: {diperlukan}, Tersedia: {gratis}. Kosongkan ruang dan coba lagi."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku alamat",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Tautan tersebut sudah ada di daftar peluncuran cepat Anda.",
             "LINKINVALID": "Masukkan alamat situs yang valid",
             "LINKNETWORKLABEL": "Jaringan",
-            "LOADFAILED": "Situs gagal dimuat."
+            "LOADFAILED": "Situs gagal dimuat.",
+            "SECURESITE": "Koneksi aman - sertifikat SSL valid",
+            "INSECURESITE": "Koneksi tidak aman",
+            "INVALIDCERTSITE": "Koneksi tidak aman - sertifikat SSL tidak valid atau tidak tepercaya"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Pembaruan Metrix Core Tersedia",
         "SHUTTINGDOWN": "Mematikan Metrix Core...",
         "RESTARTING": "Memulai ulang Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrap Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrap Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Mengekstraksi bootstrap...",
+        "TIMEREMAINING": "tersisa:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akun baru berhasil dibuat",

@@ -10,9 +10,43 @@
         padding: 10px;
         flex: 0 0 auto;
 
-        input[type="text"] {
+        .browser-address {
+            position: relative;
+            display: flex;
             flex: 1;
             margin: 0 5px;
+
+            input[type="text"] {
+                flex: 1;
+                width: 100%;
+
+                &.has-lock {
+                    padding-left: 34px;
+                }
+            }
+
+            .browser-address-lock {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 0.9em;
+                cursor: default;
+                z-index: 1;
+
+                &.secure {
+                    color: $color-success;
+                }
+
+                &.insecure {
+                    color: $font-primary;
+                    opacity: 0.6;
+                }
+
+                &.invalid {
+                    color: $color-danger;
+                }
+            }
         }
     }
 

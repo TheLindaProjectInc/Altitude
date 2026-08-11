@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maksymalna opłata sieciowa",
             "DAPPSENDMAXTOTALLABEL": "Maksymalna suma",
             "DAPPSENDDATALABEL": "Dane kontraktowe",
-            "DAPPSIGNMESSAGELABEL": "Wiadomość"
+            "DAPPSIGNMESSAGELABEL": "Wiadomość",
+            "BOOTSTRAPOFFERTITLE": "Portfel jest znacznie przestarzały",
+            "BOOTSTRAPOFFERINFO": "Dostępny jest najnowszy bootstrap, który pozwala szybko zaktualizować Metrix Core. Kontynuacja standardowej synchronizacji może zająć kilka dni, ponieważ portfel musi pobrać i zweryfikować każdy pominięty blok.",
+            "BOOTSTRAPOFFERBUTTON": "Pobierz Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Kontynuuj normalną synchronizację",
+            "BOOTSTRAPSPACEINFO": "Za mało miejsca na dysku, aby pobrać i rozpakować Bootstrapa. Wymagane: {required}, Dostępne: {free}. Zwolnij trochę miejsca i spróbuj ponownie."
         },
         "ADDRESSBOOK": {
             "TITLE": "Książka adresowa",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Ten link znajduje się już na liście szybkiego uruchamiania",
             "LINKINVALID": "Wprowadź prawidłowy adres witryny",
             "LINKNETWORKLABEL": "Sieć",
-            "LOADFAILED": "Nie udało się załadować witryny"
+            "LOADFAILED": "Nie udało się załadować witryny",
+            "SECURESITE": "Połączenie jest bezpieczne - ważny certyfikat SSL",
+            "INSECURESITE": "Połączenie nie jest bezpieczne",
+            "INVALIDCERTSITE": "Połączenie nie jest prywatne – nieprawidłowy lub niezaufany certyfikat SSL"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Dostępna aktualizacja Metrix Core",
         "SHUTTINGDOWN": "Zamykanie Metrix Core...",
         "RESTARTING": "Ponowne uruchamianie Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Wyodrębnianie bootstrapa...",
+        "TIMEREMAINING": "pozostały:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nowe konto zostało pomyślnie utworzone",

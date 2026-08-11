@@ -12,12 +12,24 @@
         <button class="btn btn-default btn-icon btn-sm" (click)="goHome()">
             <fa-icon icon="home"></fa-icon>
         </button>
-        <input
-            type="text"
-            [(ngModel)]="addressInput"
-            (keyup.enter)="navigate(addressInput)"
-            placeholder="{{ 'COMPONENTS.BROWSER.ADDRESSPLACEHOLDER' | translate }}"
-        />
+        <div class="browser-address">
+            @if (!showHome) {
+                <fa-icon
+                    class="browser-address-lock"
+                    [ngClass]="secureState"
+                    [icon]="secureStateIcon()"
+                    title="{{ secureStateTitleKey() | translate }}"
+                ></fa-icon>
+            }
+            <input
+                type="text"
+                [class.has-lock]="!showHome"
+                [(ngModel)]="addressInput"
+                (keyup.enter)="navigate(addressInput)"
+                (contextmenu)="onAddressRightClick($event)"
+                placeholder="{{ 'COMPONENTS.BROWSER.ADDRESSPLACEHOLDER' | translate }}"
+            />
+        </div>
         <button class="btn btn-default btn-sm" (click)="navigate(addressInput)">
             {{ 'COMPONENTS.BROWSER.GOBUTTON' | translate }}
         </button>

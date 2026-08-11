@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maksimalna mrežna naknada",
             "DAPPSENDMAXTOTALLABEL": "Maksimalni ukupni iznos",
             "DAPPSENDDATALABEL": "Podaci o ugovoru",
-            "DAPPSIGNMESSAGELABEL": "Poruka"
+            "DAPPSIGNMESSAGELABEL": "Poruka",
+            "BOOTSTRAPOFFERTITLE": "Novčanik je znatno zastario",
+            "BOOTSTRAPOFFERINFO": "Dostupan je nedavni bootstrap koji može brzo ažurirati Metrix Core. Nastavak normalne sinhronizacije može potrajati nekoliko dana, jer vaš novčanik treba preuzeti i provjeriti svaki blok koji je propustio.",
+            "BOOTSTRAPOFFERBUTTON": "Preuzmite Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Nastavi normalnu sinhronizaciju",
+            "BOOTSTRAPSPACEINFO": "Nema dovoljno slobodnog prostora na disku za preuzimanje i raspakivanje bootstrap datoteke. Potrebno: {required}, Dostupno: {free}. Oslobodite prostor i pokušajte ponovo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresar",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Taj link se već nalazi na vašoj listi za brzo pokretanje",
             "LINKINVALID": "Unesite važeću adresu web-lokacije",
             "LINKNETWORKLABEL": "Mreža",
-            "LOADFAILED": "Nije uspjelo učitavanje stranice"
+            "LOADFAILED": "Nije uspjelo učitavanje stranice",
+            "SECURESITE": "Veza je sigurna - važeći SSL certifikat",
+            "INSECURESITE": "Veza nije sigurna",
+            "INVALIDCERTSITE": "Veza nije privatna - nevažeći ili nepouzdani SSL certifikat"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Dostupna Metrix Core Update",
         "SHUTTINGDOWN": "Isključi Metrix Core...",
         "RESTARTING": "Ponovo pokrenite Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Izdvajanje bootstrapa...",
+        "TIMEREMAINING": "preostalo:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novi nalog je uspješno kreiran",

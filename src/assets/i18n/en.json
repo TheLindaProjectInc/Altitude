@@ -286,7 +286,10 @@
             "LINKEXISTS": "That link is already in your quick launch list",
             "LINKINVALID": "Enter a valid site address",
             "LINKNETWORKLABEL": "Network",
-            "LOADFAILED": "Failed to load site"
+            "LOADFAILED": "Failed to load site",
+            "SECURESITE": "Connection is secure - valid SSL certificate",
+            "INSECURESITE": "Connection is not secure",
+            "INVALIDCERTSITE": "Connection is not private - invalid or untrusted SSL certificate"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Enter Your Wallet Passphrase",
@@ -374,7 +377,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cut",
             "CONTEXTMENUCOPY": "Copy",
-            "CONTEXTMENUPASTE": "Paste"
+            "CONTEXTMENUPASTE": "Paste",
+            "CONTEXTMENUSELECTALL": "Select All"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warning! You are not on the main chain according to the Metrix explorer. It is highly recommended to re-sync or re-bootstrap your blockchain to avoid the loss of any coins."

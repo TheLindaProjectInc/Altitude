@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Tarifa máxima de red",
             "DAPPSENDMAXTOTALLABEL": "Total máximo",
             "DAPPSENDDATALABEL": "Datos del contrato",
-            "DAPPSIGNMESSAGELABEL": "Mensaje"
+            "DAPPSIGNMESSAGELABEL": "Mensaje",
+            "BOOTSTRAPOFFERTITLE": "La billetera está significativamente desactualizada.",
+            "BOOTSTRAPOFFERINFO": "Existe una actualización reciente que permite actualizar rápidamente Metrix Core. Si se opta por una sincronización normal, esta podría tardar varios días en completarse, ya que la billetera necesita descargar y verificar todos los bloques que se haya perdido.",
+            "BOOTSTRAPOFFERBUTTON": "Descargar Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continuar la sincronización normal",
+            "BOOTSTRAPSPACEINFO": "No hay suficiente espacio libre en disco para descargar y extraer el archivo de arranque. Requerido: {required}, Disponible: {free}. Libere espacio e inténtelo de nuevo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Directorio",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Ese enlace ya está en tu lista de lanzamiento rápido.",
             "LINKINVALID": "Introduzca una dirección de sitio válida",
             "LINKNETWORKLABEL": "Red",
-            "LOADFAILED": "No se pudo cargar el sitio."
+            "LOADFAILED": "No se pudo cargar el sitio.",
+            "SECURESITE": "La conexión es segura: certificado SSL válido.",
+            "INSECURESITE": "La conexión no es segura.",
+            "INVALIDCERTSITE": "La conexión no es privada: certificado SSL no válido o no confiable."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update disponible",
         "SHUTTINGDOWN": "Apagando a Metrix Core...",
         "RESTARTING": "Reiniciando Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extrayendo bootstrap...",
+        "TIMEREMAINING": "restante:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nueva cuenta creada exitosamente",

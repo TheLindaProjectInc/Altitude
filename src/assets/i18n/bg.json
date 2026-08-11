@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Максимална мрежова такса",
             "DAPPSENDMAXTOTALLABEL": "Максимален общ сбор",
             "DAPPSENDDATALABEL": "Данни за договора",
-            "DAPPSIGNMESSAGELABEL": "Съобщение"
+            "DAPPSIGNMESSAGELABEL": "Съобщение",
+            "BOOTSTRAPOFFERTITLE": "Портфейлът е значително остарял",
+            "BOOTSTRAPOFFERINFO": "Налична е скорошна bootstrap версия, която може бързо да актуализира Metrix Core. Продължаването с нормална синхронизация може да отнеме няколко дни, тъй като портфейлът ви трябва да изтегли и провери всеки пропуснат блок.",
+            "BOOTSTRAPOFFERBUTTON": "Изтегляне на Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Продължи нормалната синхронизация",
+            "BOOTSTRAPSPACEINFO": "Няма достатъчно свободно дисково пространство за изтегляне и разархивиране на bootstrap файла. Необходимо: {required}, Налично: {free}. Освободете място и опитайте отново."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Тази връзка вече е в списъка ви за бързо стартиране",
             "LINKINVALID": "Въведете валиден адрес на сайта",
             "LINKNETWORKLABEL": "Мрежа",
-            "LOADFAILED": "Зареждането на сайта не бе успешно"
+            "LOADFAILED": "Зареждането на сайта не бе успешно",
+            "SECURESITE": "Връзката е защитена - валиден SSL сертификат",
+            "INSECURESITE": "Връзката не е защитена",
+            "INVALIDCERTSITE": "Връзката не е поверителна - невалиден или ненадежден SSL сертификат"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Налице е актуализация на Metrix Core",
         "SHUTTINGDOWN": "Прекратяване на Линда Core...",
         "RESTARTING": "Рестартиране на Metrix Core...",
-        "BOOTSTRAPPING": "Metrix Core Bootstrapping..."
+        "BOOTSTRAPPING": "Metrix Core Bootstrapping...",
+        "BOOTSTRAPEXTRACTING": "Извличане на bootstrap...",
+        "TIMEREMAINING": "оставащи:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Създаден е нов профил",

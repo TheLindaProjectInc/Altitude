@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maximale Netzwerkgebühr",
             "DAPPSENDMAXTOTALLABEL": "Maximales Gesamt",
             "DAPPSENDDATALABEL": "Vertragsdaten",
-            "DAPPSIGNMESSAGELABEL": "Nachricht"
+            "DAPPSIGNMESSAGELABEL": "Nachricht",
+            "BOOTSTRAPOFFERTITLE": "Geldbörse deutlich veraltet",
+            "BOOTSTRAPOFFERINFO": "Ein aktuelles Bootstrap-Update ist verfügbar, mit dem Metrix Core schnell auf den neuesten Stand gebracht werden kann. Eine normale Synchronisierung kann hingegen mehrere Tage dauern, da Ihre Wallet jeden verpassten Block herunterladen und verifizieren muss.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap herunterladen",
+            "BOOTSTRAPOFFERCANCEL": "Normale Synchronisierung fortsetzen",
+            "BOOTSTRAPSPACEINFO": "Nicht genügend freier Speicherplatz zum Herunterladen und Entpacken des Bootstraps. Erforderlich: {erforderlich}, Verfügbar: {frei}. Geben Sie Speicherplatz frei und versuchen Sie es erneut."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Dieser Link befindet sich bereits in Ihrer Schnellstartliste.",
             "LINKINVALID": "Geben Sie eine gültige Website-Adresse ein.",
             "LINKNETWORKLABEL": "Netzwerk",
-            "LOADFAILED": "Website konnte nicht geladen werden"
+            "LOADFAILED": "Website konnte nicht geladen werden",
+            "SECURESITE": "Die Verbindung ist sicher – gültiges SSL-Zertifikat",
+            "INSECURESITE": "Die Verbindung ist nicht sicher.",
+            "INVALIDCERTSITE": "Die Verbindung ist nicht privat – ungültiges oder nicht vertrauenswürdiges SSL-Zertifikat."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update verfügbar",
         "SHUTTINGDOWN": "Metrix Core wird heruntergefahren...",
         "RESTARTING": "Metrix Core neu starten...",
-        "BOOTSTRAPPING": "Bootstrapping von Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping von Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap wird extrahiert...",
+        "TIMEREMAINING": "übrig:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neues Konto wurde erfolgreich erstellt",

@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Max nätverksavgift",
             "DAPPSENDMAXTOTALLABEL": "Maxsumma",
             "DAPPSENDDATALABEL": "Avtalsdata",
-            "DAPPSIGNMESSAGELABEL": "Meddelande"
+            "DAPPSIGNMESSAGELABEL": "Meddelande",
+            "BOOTSTRAPOFFERTITLE": "Plånboken är betydligt föråldrad",
+            "BOOTSTRAPOFFERINFO": "En nyligen uppdaterad bootstrap finns tillgänglig som snabbt kan uppdatera Metrix Core. Att fortsätta med en vanlig synkronisering kan ta flera dagar att slutföra, eftersom din plånbok behöver ladda ner och verifiera varje block den har missat.",
+            "BOOTSTRAPOFFERBUTTON": "Ladda ner Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Fortsätt normal synkronisering",
+            "BOOTSTRAPSPACEINFO": "Inte tillräckligt med ledigt diskutrymme för att ladda ner och extrahera bootstrap. Krävs: {required}, Tillgängligt: {free}. Frigör lite utrymme och försök igen."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbok",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Den länken finns redan i din snabbstartslista",
             "LINKINVALID": "Ange en giltig webbplatsadress",
             "LINKNETWORKLABEL": "Nätverk",
-            "LOADFAILED": "Misslyckades med att ladda webbplatsen"
+            "LOADFAILED": "Misslyckades med att ladda webbplatsen",
+            "SECURESITE": "Anslutningen är säker - giltigt SSL-certifikat",
+            "INSECURESITE": "Anslutningen är inte säker",
+            "INVALIDCERTSITE": "Anslutningen är inte privat - ogiltigt eller opålitligt SSL-certifikat"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Stänger ner Metrix Core...",
         "RESTARTING": "Starta om Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extraherar bootstrap...",
+        "TIMEREMAINING": "återstående:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nytt konto skapades framgångsrikt",

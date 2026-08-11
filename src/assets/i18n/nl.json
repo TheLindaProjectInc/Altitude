@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maximale netwerkkosten",
             "DAPPSENDMAXTOTALLABEL": "Max Totaal",
             "DAPPSENDDATALABEL": "Contractgegevens",
-            "DAPPSIGNMESSAGELABEL": "Bericht"
+            "DAPPSIGNMESSAGELABEL": "Bericht",
+            "BOOTSTRAPOFFERTITLE": "De portemonnee is aanzienlijk verouderd.",
+            "BOOTSTRAPOFFERINFO": "Er is een recente bootstrap beschikbaar waarmee Metrix Core snel kan worden bijgewerkt. Het voortzetten van een normale synchronisatie kan echter enkele dagen duren, omdat uw wallet alle gemiste blokken moet downloaden en verifiëren.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap downloaden",
+            "BOOTSTRAPOFFERCANCEL": "Normale synchronisatie voortzetten",
+            "BOOTSTRAPSPACEINFO": "Er is onvoldoende vrije schijfruimte om de bootstrap te downloaden en uit te pakken. Vereist: {required}, Beschikbaar: {free}. Maak wat ruimte vrij en probeer het opnieuw."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Die link staat al in je lijst met snelstartopties.",
             "LINKINVALID": "Voer een geldig websiteadres in.",
             "LINKNETWORKLABEL": "Netwerk",
-            "LOADFAILED": "Site laden mislukt"
+            "LOADFAILED": "Site laden mislukt",
+            "SECURESITE": "De verbinding is beveiligd - geldig SSL-certificaat",
+            "INSECURESITE": "De verbinding is niet beveiligd.",
+            "INVALIDCERTSITE": "De verbinding is niet beveiligd - ongeldig of onbetrouwbaar SSL-certificaat."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update beschikbaar",
         "SHUTTINGDOWN": "Metrix Core afsluiten...",
         "RESTARTING": "Metrix Core herstarten...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap extraheren...",
+        "TIMEREMAINING": "overig:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nieuw account succesvol aangemaakt",

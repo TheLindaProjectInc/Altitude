@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Taxa máxima de rede",
             "DAPPSENDMAXTOTALLABEL": "Total máximo",
             "DAPPSENDDATALABEL": "Dados do contrato",
-            "DAPPSIGNMESSAGELABEL": "Mensagem"
+            "DAPPSIGNMESSAGELABEL": "Mensagem",
+            "BOOTSTRAPOFFERTITLE": "Carteira significativamente desatualizada",
+            "BOOTSTRAPOFFERINFO": "Uma versão inicial recente (bootstrap) está disponível e pode atualizar rapidamente o Metrix Core. Continuar com uma sincronização normal pode levar vários dias, pois sua carteira precisa baixar e verificar todos os blocos que perdeu.",
+            "BOOTSTRAPOFFERBUTTON": "Baixe o Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continuar a sincronização normal",
+            "BOOTSTRAPSPACEINFO": "Não há espaço livre suficiente em disco para baixar e extrair o bootstrap. Requerido: {required}, Disponível: {free}. Libere espaço e tente novamente."
         },
         "ADDRESSBOOK": {
             "TITLE": "Livro de endereços",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Esse link já está na sua lista de acesso rápido.",
             "LINKINVALID": "Insira um endereço de site válido.",
             "LINKNETWORKLABEL": "Rede",
-            "LOADFAILED": "Não foi possível carregar o site."
+            "LOADFAILED": "Não foi possível carregar o site.",
+            "SECURESITE": "A conexão é segura - certificado SSL válido",
+            "INSECURESITE": "A conexão não é segura.",
+            "INVALIDCERTSITE": "A conexão não é privada - certificado SSL inválido ou não confiável"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Disponível",
         "SHUTTINGDOWN": "Desligando Metrix Core...",
         "RESTARTING": "Reiniciando Metrix Core...",
-        "BOOTSTRAPPING": "Inicializando o Metrix Core..."
+        "BOOTSTRAPPING": "Inicializando o Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extraindo o bootstrap...",
+        "TIMEREMAINING": "restante:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nova conta criada com sucesso",

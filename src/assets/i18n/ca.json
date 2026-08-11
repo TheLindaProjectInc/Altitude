@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Tarifa màxima de xarxa",
             "DAPPSENDMAXTOTALLABEL": "Total màxim",
             "DAPPSENDDATALABEL": "Dades del contracte",
-            "DAPPSIGNMESSAGELABEL": "Missatge"
+            "DAPPSIGNMESSAGELABEL": "Missatge",
+            "BOOTSTRAPOFFERTITLE": "Cartera significativament desactualitzada",
+            "BOOTSTRAPOFFERINFO": "Hi ha disponible una versió d'arrencada recent que pot actualitzar ràpidament Metrix Core. Continuar amb una sincronització normal pot trigar diversos dies a completar-se, ja que el moneder ha de descarregar i verificar tots els blocs que ha perdut.",
+            "BOOTSTRAPOFFERBUTTON": "Descarrega Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continua la sincronització normal",
+            "BOOTSTRAPSPACEINFO": "No hi ha prou espai lliure al disc per descarregar i extreure el fitxer d'arrencada. Obligatori: {required}, Disponible: {free}. Allibereu espai i torneu-ho a provar."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Aquest enllaç ja és a la teva llista d'inici ràpid.",
             "LINKINVALID": "Introduïu una adreça de lloc vàlida",
             "LINKNETWORKLABEL": "Xarxa",
-            "LOADFAILED": "No s'ha pogut carregar el lloc web"
+            "LOADFAILED": "No s'ha pogut carregar el lloc web",
+            "SECURESITE": "La connexió és segura: certificat SSL vàlid",
+            "INSECURESITE": "La connexió no és segura",
+            "INVALIDCERTSITE": "La connexió no és privada: el certificat SSL no és vàlid o no és de confiança."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Actualització Metrix Core disponible",
         "SHUTTINGDOWN": "S'està tancant Metrix Core...",
         "RESTARTING": "S'està reiniciant Metrix Core...",
-        "BOOTSTRAPPING": "Arrencada de Metrix Core..."
+        "BOOTSTRAPPING": "Arrencada de Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Extraient el bootstrap...",
+        "TIMEREMAINING": "restant:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "El compte nou s'ha creat correctament",

@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Sarearen gehienezko kuota",
             "DAPPSENDMAXTOTALLABEL": "Gehienezko Guztira",
             "DAPPSENDDATALABEL": "Kontratu Datuak",
-            "DAPPSIGNMESSAGELABEL": "Mezua"
+            "DAPPSIGNMESSAGELABEL": "Mezua",
+            "BOOTSTRAPOFFERTITLE": "Diru-zorroa nabarmen zaharkituta dago",
+            "BOOTSTRAPOFFERINFO": "Metrix Core azkar eguneratu dezakeen bootstrap berri bat eskuragarri dago. Sinkronizazio normal batekin jarraitzeak hainbat egun iraun ditzake osatzeko, zure zorroak galdu dituen bloke guztiak deskargatu eta egiaztatu behar baititu.",
+            "BOOTSTRAPOFFERBUTTON": "Deskargatu Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jarraitu ohiko sinkronizazioarekin",
+            "BOOTSTRAPSPACEINFO": "Ez dago diskoan leku nahikorik bootstrap-a deskargatu eta ateratzeko. Beharrezkoa: {required}, Eskuragarri: {free}. Askatu leku pixka bat eta saiatu berriro."
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide liburu",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Esteka hori dagoeneko zure abiarazte azkarreko zerrendan dago",
             "LINKINVALID": "Sartu gunearen helbide baliodun bat",
             "LINKNETWORKLABEL": "Sarea",
-            "LOADFAILED": "Ezin izan da gunea kargatu"
+            "LOADFAILED": "Ezin izan da gunea kargatu",
+            "SECURESITE": "Konexioa segurua da - SSL ziurtagiri baliozkoa",
+            "INSECURESITE": "Konexioa ez da segurua",
+            "INVALIDCERTSITE": "Konexioa ez da pribatua - SSL ziurtagiri baliogabea edo fidagarria ez dena"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core eguneratzea erabilgarri",
         "SHUTTINGDOWN": "Metrix Core itxi...",
         "RESTARTING": "Metrix Core berrabiarazi...",
-        "BOOTSTRAPPING": "Metriz Core Bootstrapping..."
+        "BOOTSTRAPPING": "Metriz Core Bootstrapping...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap-a ateratzen...",
+        "TIMEREMAINING": "geratzen dena:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kontu berria sortu da",

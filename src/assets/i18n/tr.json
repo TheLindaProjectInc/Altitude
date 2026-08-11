@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maksimum Ağ Ücreti",
             "DAPPSENDMAXTOTALLABEL": "Maksimum Toplam",
             "DAPPSENDDATALABEL": "Sözleşme Verileri",
-            "DAPPSIGNMESSAGELABEL": "Mesaj"
+            "DAPPSIGNMESSAGELABEL": "Mesaj",
+            "BOOTSTRAPOFFERTITLE": "Cüzdanın Güncelliği Önemli Ölçüde Azalamış",
+            "BOOTSTRAPOFFERINFO": "Metrix Core'u hızlıca güncelleyebilecek yeni bir bootstrap sürümü mevcuttur. Bunun yerine normal bir senkronizasyonla devam etmek, cüzdanınızın kaçırdığı her bloğu indirip doğrulaması gerektiğinden, tamamlanması birkaç gün sürebilir.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap'i İndir",
+            "BOOTSTRAPOFFERCANCEL": "Normal Senkronizasyona Devam Et",
+            "BOOTSTRAPSPACEINFO": "Bootstrap'ı indirmek ve çıkarmak için yeterli boş disk alanı yok. Gerekli: {required}, Mevcut: {free}. Biraz yer açın ve tekrar deneyin."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adres defteri",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Bu bağlantı zaten hızlı erişim listenizde mevcut.",
             "LINKINVALID": "Geçerli bir site adresi girin.",
             "LINKNETWORKLABEL": "Ağ",
-            "LOADFAILED": "Site yüklenemedi."
+            "LOADFAILED": "Site yüklenemedi.",
+            "SECURESITE": "Bağlantı güvenli - geçerli SSL sertifikası.",
+            "INSECURESITE": "Bağlantı güvenli değil.",
+            "INVALIDCERTSITE": "Bağlantı gizli değil - geçersiz veya güvenilmeyen SSL sertifikası."
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Çekirdek Güncelleme Mevcut",
         "SHUTTINGDOWN": "Metrix Core'u kapatıyor...",
         "RESTARTING": "Metrix Çekirdeğini Yeniden Başlatıyor...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Bootstrap verileri çıkarılıyor...",
+        "TIMEREMAINING": "geriye kalan:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yeni hesap başarıyla oluşturuldu",

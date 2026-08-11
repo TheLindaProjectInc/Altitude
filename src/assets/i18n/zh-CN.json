@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "最高网络费用",
             "DAPPSENDMAXTOTALLABEL": "总计",
             "DAPPSENDDATALABEL": "合同数据",
-            "DAPPSIGNMESSAGELABEL": "信息"
+            "DAPPSIGNMESSAGELABEL": "信息",
+            "BOOTSTRAPOFFERTITLE": "钱包严重过时",
+            "BOOTSTRAPOFFERINFO": "目前有一个最新的引导程序，可以快速将 Metrix Core 更新到最新版本。如果继续使用常规同步方式，则可能需要几天时间才能完成，因为您的钱包需要下载并验证所有错过的区块。",
+            "BOOTSTRAPOFFERBUTTON": "下载 Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "继续正常同步",
+            "BOOTSTRAPSPACEINFO": "磁盘空间不足，无法下载和解压引导程序。必需：{required}，可用：{free}。请释放一些空间，然后重试。"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "该链接已在您的快速启动列表中。",
             "LINKINVALID": "请输入有效的网站地址",
             "LINKNETWORKLABEL": "网络",
-            "LOADFAILED": "网站加载失败"
+            "LOADFAILED": "网站加载失败",
+            "SECURESITE": "连接安全 - 有效的 SSL 证书",
+            "INSECURESITE": "连接不安全",
+            "INVALIDCERTSITE": "连接不私密 - SSL 证书无效或不受信任"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Linda核心更新可用",
         "SHUTTINGDOWN": "关闭琳达核心......",
         "RESTARTING": "重启Metrix Core......",
-        "BOOTSTRAPPING": "引导Metrix Core..."
+        "BOOTSTRAPPING": "引导Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "正在提取引导程序...",
+        "TIMEREMAINING": "其余的："
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新帐户已成功创建",

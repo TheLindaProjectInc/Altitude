@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "最大ネットワーク料金",
             "DAPPSENDMAXTOTALLABEL": "最大合計",
             "DAPPSENDDATALABEL": "契約データ",
-            "DAPPSIGNMESSAGELABEL": "メッセージ"
+            "DAPPSIGNMESSAGELABEL": "メッセージ",
+            "BOOTSTRAPOFFERTITLE": "財布がかなり時代遅れ",
+            "BOOTSTRAPOFFERINFO": "最新のブートストラップが利用可能になり、Metrix Coreを迅速に最新の状態に更新できます。通常の同期を続行する場合は、ウォレットが見逃したすべてのブロックをダウンロードして検証する必要があるため、完了までに数日かかる場合があります。",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrapをダウンロード",
+            "BOOTSTRAPOFFERCANCEL": "通常同期を続行",
+            "BOOTSTRAPSPACEINFO": "ブートストラップをダウンロードして展開するためのディスク空き容量が不足しています。必要容量：{required}、利用可能容量：{free}。空き容量を確保してからもう一度お試しください。"
         },
         "ADDRESSBOOK": {
             "TITLE": "住所録",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "そのリンクは既にクイック起動リストに登録されています",
             "LINKINVALID": "有効なサイトアドレスを入力してください",
             "LINKNETWORKLABEL": "ネットワーク",
-            "LOADFAILED": "サイトの読み込みに失敗しました"
+            "LOADFAILED": "サイトの読み込みに失敗しました",
+            "SECURESITE": "接続は安全です - 有効なSSL証明書",
+            "INSECURESITE": "接続が安全ではありません",
+            "INVALIDCERTSITE": "接続がプライベートではありません - SSL証明書が無効または信頼できません"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Lindaコアアップデートが利用可能",
         "SHUTTINGDOWN": "Metrix Coreをシャットダウンする",
         "RESTARTING": "Metrix Coreを再起動します...",
-        "BOOTSTRAPPING": "Metrixコアのブートストラップ..."
+        "BOOTSTRAPPING": "Metrixコアのブートストラップ...",
+        "BOOTSTRAPEXTRACTING": "Bootstrapを抽出中...",
+        "TIMEREMAINING": "残り："
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新しいアカウントが正常に作成されました",

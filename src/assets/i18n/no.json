@@ -337,7 +337,12 @@
             "DAPPSENDMAXFEELABEL": "Maks. nettverksavgift",
             "DAPPSENDMAXTOTALLABEL": "Maks totalsum",
             "DAPPSENDDATALABEL": "Kontraktsdata",
-            "DAPPSIGNMESSAGELABEL": "Beskjed"
+            "DAPPSIGNMESSAGELABEL": "Beskjed",
+            "BOOTSTRAPOFFERTITLE": "Lommeboken er betydelig utdatert",
+            "BOOTSTRAPOFFERINFO": "En nylig oppstartsprosess er tilgjengelig som raskt kan oppdatere Metrix Core. Å fortsette med en vanlig synkronisering i stedet kan ta flere dager, siden lommeboken din må laste ned og verifisere hver blokk den har gått glipp av.",
+            "BOOTSTRAPOFFERBUTTON": "Last ned Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Fortsett normal synkronisering",
+            "BOOTSTRAPSPACEINFO": "Ikke nok ledig diskplass til å laste ned og pakke ut bootstrap-filen. Nødvendig: {required}, Tilgjengelig: {free}. Frigjør litt plass og prøv på nytt."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebok",
@@ -375,7 +380,10 @@
             "LINKEXISTS": "Den lenken er allerede i hurtigstartlisten din",
             "LINKINVALID": "Skriv inn en gyldig nettstedadresse",
             "LINKNETWORKLABEL": "Nettverk",
-            "LOADFAILED": "Kunne ikke laste inn nettstedet"
+            "LOADFAILED": "Kunne ikke laste inn nettstedet",
+            "SECURESITE": "Tilkoblingen er sikker – gyldig SSL-sertifikat",
+            "INSECURESITE": "Tilkoblingen er ikke sikker",
+            "INVALIDCERTSITE": "Tilkoblingen er ikke privat – ugyldig eller ikke-klarert SSL-sertifikat"
         }
     },
     "MENU": {
@@ -440,7 +448,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update tilgjengelig",
         "SHUTTINGDOWN": "Stenger ned Metrix Core...",
         "RESTARTING": "Omstart Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Bootstrapping Metrix Core...",
+        "BOOTSTRAPEXTRACTING": "Pakker ut bootstrap...",
+        "TIMEREMAINING": "gjenværende:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ny konto ble opprettet",

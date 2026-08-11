@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef, OnInit, AfterViewInit, OnDestroy } fr
 import { ElectronService } from 'app/providers/electron.service';
 import { NotificationService } from 'app/providers/notification.service';
 import { TranslationService } from 'app/providers/translation.service';
+import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
 import { ChainType } from 'app/enum';
 import { DappBridgeService } from '../../providers/dapp-bridge.service';
 
@@ -37,6 +38,13 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
     public showHome = true;
     public canGoBack = false;
     public canGoForward = false;
+    // 'secure' = https with a certificate Chromium accepted, 'insecure' = plain http,
+    // 'invalid' = https but the certificate was rejected (expired/self-signed/mismatched
+    // hostname/etc.) - detected via the did-fail-load error code, since without a
+    // 'certificate-error' handler in the main process (there isn't one) Electron applies
+    // Chromium's normal default validation and simply fails the navigation.
+    // Note: this can only ever reflect what Chromium itself hard-fails on.
+    public secureState: 'secure' | 'insecure' | 'invalid' = 'insecure';
 
     // mandatory Metrix ecosystem links - always present, never user-removable
     private readonly mandatoryLinks: QuickLink[] = [
@@ -72,6 +80,7 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
         private dappBridge: DappBridgeService,
         private notification: NotificationService,
         private translation: TranslationService,
+        private contextMenu: ContextMenuService,
     ) {
         const path = window.require('path');
         const { pathToFileURL } = window.require('url');
@@ -85,6 +94,69 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
             case ChainType.REGTEST: return 'regtest';
             default: return 'mainnet';
         }
+    }
+
+    // mirrors <text-input>'s own context menu (app/components/textinput) since the
+    // address bar is a plain input, not that component (it needs a keyup.enter handler,
+    // which text-input doesn't expose)
+    onAddressRightClick(event: MouseEvent) {
+        const target = event.target as HTMLInputElement;
+        target.select();
+        const items = [
+            {
+                name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUCUT',
+                func: () => {
+                    this.electron.clipboard.writeText(this.addressInput);
+                    this.addressInput = '';
+                    target.focus();
+                }
+            },
+            {
+                name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUCOPY',
+                func: () => {
+                    this.electron.clipboard.writeText(this.addressInput);
+                    target.focus();
+                }
+            },
+            {
+                name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUPASTE',
+                func: () => {
+                    this.addressInput = this.electron.clipboard.readText();
+                    target.focus();
+                }
+            }
+        ];
+        this.contextMenu.show(event, items);
+    }
+
+    // params.x/y turn out to already be relative to the whole BrowserWindow's content
+    // view (not the guest page's own viewport) - adding the <webview> element's own
+    // getBoundingClientRect() offset on top of that double-counted the sidebar/toolbar
+    // position, which is why the menu was rendering well down-and-right of the actual
+    // click point (confirmed: the observed offset matched the sidebar width/toolbar
+    // height almost exactly)
+    private onWebviewContextMenu(event: any) {
+        const params = event.params;
+        if (!params || !params.editFlags) return;
+        // clicking our host-side menu can leave the webview no longer "focused" from
+        // Electron's perspective by the time an item's editing command runs - restore
+        // focus first so cut/copy/paste/selectAll reliably target the right frame
+        const focusWebview = () => this.webviewEl.focus();
+        const items = [];
+        if (params.editFlags.canCut) {
+            items.push({ name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUCUT', func: () => { focusWebview(); this.webviewEl.cut(); } });
+        }
+        if (params.editFlags.canCopy) {
+            items.push({ name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUCOPY', func: () => { focusWebview(); this.webviewEl.copy(); } });
+        }
+        if (params.editFlags.canPaste) {
+            items.push({ name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUPASTE', func: () => { focusWebview(); this.webviewEl.paste(); } });
+        }
+        if (params.editFlags.canSelectAll) {
+            items.push({ name: 'COMPONENTS.TEXTINPUT.CONTEXTMENUSELECTALL', func: () => { focusWebview(); this.webviewEl.selectAll(); } });
+        }
+        if (!items.length) return;
+        this.contextMenu.show({ x: params.x, y: params.y }, items);
     }
 
     public networkLabel(network: LinkNetwork): string {
@@ -230,6 +302,11 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
         this.webviewEl.addEventListener('did-navigate', () => this.updateNavState());
         this.webviewEl.addEventListener('did-navigate-in-page', () => this.updateNavState());
         this.webviewEl.addEventListener('did-fail-load', (event: any) => this.handleLoadFailure(event));
+        // regular DOM 'contextmenu' events fired inside the guest page's content never
+        // reach the host (the guest runs in its own process/frame) - 'context-menu' is
+        // the dedicated webview-tag event Electron forwards instead, carrying the same
+        // params (incl. editFlags) as the equivalent webContents event
+        this.webviewEl.addEventListener('context-menu', (event: any) => this.onWebviewContextMenu(event));
         this.webviewContainer.nativeElement.appendChild(this.webviewEl);
         this.dappBridge.registerWebview(this.webviewEl);
     }
@@ -243,6 +320,10 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
         if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
         this.addressInput = url;
         this.showHome = false;
+        // reset until the navigation actually resolves (success -> updateNavState,
+        // certificate failure -> handleLoadFailure) so the old page's padlock doesn't
+        // linger while a new one is loading
+        this.secureState = 'insecure';
         this.webviewEl.src = url;
     }
 
@@ -274,6 +355,9 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
         // ERR_ABORTED (-3) fires for routine cancellations (e.g. a redirect, or the
         // user navigating elsewhere before a subresource finishes) - not a real failure
         if (!event.isMainFrame || event.errorCode === -3) return;
+        // Chromium's net error codes for certificate problems (expired, self-signed,
+        // hostname mismatch, revoked, etc.) all fall in the -200 to -299 range
+        if (event.errorCode <= -200 && event.errorCode >= -299) this.secureState = 'invalid';
         const prefix = await this.translation.translate('COMPONENTS.BROWSER.LOADFAILED');
         this.notification.notify('error', `${prefix}: ${event.errorDescription || event.errorCode}`, false);
     }
@@ -285,10 +369,33 @@ export class BrowserComponent implements OnInit, AfterViewInit, OnDestroy {
             .join(' ');
     }
 
+    public secureStateIcon(): string {
+        switch (this.secureState) {
+            case 'secure': return 'lock';
+            case 'invalid': return 'triangle-exclamation';
+            default: return 'lock-open';
+        }
+    }
+
+    public secureStateTitleKey(): string {
+        switch (this.secureState) {
+            case 'secure': return 'COMPONENTS.BROWSER.SECURESITE';
+            case 'invalid': return 'COMPONENTS.BROWSER.INVALIDCERTSITE';
+            default: return 'COMPONENTS.BROWSER.INSECURESITE';
+        }
+    }
+
     private updateNavState() {
         if (!this.webviewEl) return;
         this.canGoBack = this.webviewEl.canGoBack();
         this.canGoForward = this.webviewEl.canGoForward();
         this.addressInput = this.webviewEl.getURL();
+        // a page only ever reaches did-navigate if Chromium's own certificate validation
+        // already accepted it (or it's plain http, which was never validated at all)
+        try {
+            this.secureState = new URL(this.addressInput).protocol === 'https:' ? 'secure' : 'insecure';
+        } catch (ex) {
+            this.secureState = 'insecure';
+        }
     }
 }
