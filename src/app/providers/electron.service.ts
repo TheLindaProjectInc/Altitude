@@ -1,4 +1,4 @@
-import { Injectable, isDevMode, EventEmitter, Output, Directive, Injector } from '@angular/core';
+import { Injectable, isDevMode, EventEmitter, Output, Directive, Injector, NgZone } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
@@ -21,6 +21,8 @@ export class ElectronService {
   chain: ChainType = ChainType.MAINNET;
   publicIP: string = '';
   downloadProgress: any = {};
+  extractProgress: any = {};
+  bootstrapSpace: { required: number, free: number } = { required: 0, free: 0 };
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
@@ -36,6 +38,7 @@ export class ElectronService {
     // setDisplayCurrency() actually runs (well after bootstrap, from an IPC callback)
     // sidesteps that entirely.
     private injector: Injector,
+    private zone: NgZone,
   ) {
     // Conditional imports
     if (this.isElectron()) {
@@ -62,34 +65,48 @@ export class ElectronService {
 
   connectClientNodeIPC() {
     // listen for client
+    // ipcRenderer callbacks run outside Angular's zone (zone.js doesn't patch Electron's
+    // native IPC), so state changes made directly inside them (rather than via a Promise,
+    // which zone.js does reschedule onto the correct zone) don't trigger change detection
+    // on their own - the view would only catch up whenever something else unrelated
+    // happened to trigger a check. This was very visible on the bootstrap progress bar,
+    // whose updates otherwise only appeared once every ~10s (or on click) instead of live.
     this.ipcRenderer.on('client-node', (event, cmd, data) => {
-      //if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
-      switch (cmd) {
-        case 'DOWNLOADPROGRESS':
-          this.downloadProgress = data;
-          break;
-        case 'STATUS':
-          this.clientStatusEvent.emit(data);
-          break;
-        case 'RPC':
-          this.RCPStatusEvent.emit(data);
-          break;
-        case 'CHECKUPDATE':
-          this.checkUpdateEvent.emit({ type: 'core', hasUpdate: data });
-          break;
-        case 'CALLCLIENT':
-          this.RPCResponseEvent.emit(data);
-          break;
-        case 'VERSION':
-          this.clientVersion = data;
-          break;
-        case 'CHAIN':
-          this.chain = data;
-          break;
-        case 'IP':
-          this.publicIP = data;
-          break;
-      }
+      this.zone.run(() => {
+        //if (isDevMode()) console.log('Received IPC:client-node', cmd, data);
+        switch (cmd) {
+          case 'DOWNLOADPROGRESS':
+            this.downloadProgress = data;
+            break;
+          case 'EXTRACTPROGRESS':
+            this.extractProgress = data;
+            break;
+          case 'BOOTSTRAPSPACE':
+            this.bootstrapSpace = data;
+            break;
+          case 'STATUS':
+            this.clientStatusEvent.emit(data);
+            break;
+          case 'RPC':
+            this.RCPStatusEvent.emit(data);
+            break;
+          case 'CHECKUPDATE':
+            this.checkUpdateEvent.emit({ type: 'core', hasUpdate: data });
+            break;
+          case 'CALLCLIENT':
+            this.RPCResponseEvent.emit(data);
+            break;
+          case 'VERSION':
+            this.clientVersion = data;
+            break;
+          case 'CHAIN':
+            this.chain = data;
+            break;
+          case 'IP':
+            this.publicIP = data;
+            break;
+        }
+      });
     });
     // ask for client status
     this.ipcRenderer.send('client-node', 'STATUS');
@@ -106,14 +123,16 @@ export class ElectronService {
   connectSettingsIPC() {
     // listen for client
     this.ipcRenderer.on('settings', (event, cmd, data) => {
-      if (isDevMode()) console.log('Received IPC:settings', cmd, data);
-      switch (cmd) {
-        case 'GET':
-          this.settings = data;
-          this.setLanguage();
-          this.setDisplayCurrency();
-          break;
-      }
+      this.zone.run(() => {
+        if (isDevMode()) console.log('Received IPC:settings', cmd, data);
+        switch (cmd) {
+          case 'GET':
+            this.settings = data;
+            this.setLanguage();
+            this.setDisplayCurrency();
+            break;
+        }
+      });
     });
     // ask for settings
     this.ipcRenderer.send('settings', 'GET');
@@ -162,6 +181,21 @@ export class ElectronService {
           this.checkUpdateEvent.emit({ type: 'wallet-error' });
           break;
       }
+    });
+  }
+
+  // one-shot request/response over the same broadcast 'client-node' channel - the
+  // temporary listener ignores every message except the BOOTSTRAPINFO reply to our request
+  public checkBootstrap(): Promise<{ available: boolean, lastModified: number, size: number }> {
+    return new Promise((resolve) => {
+      const handler = (event, cmd, data) => {
+        if (cmd === 'BOOTSTRAPINFO') {
+          this.ipcRenderer.removeListener('client-node', handler);
+          this.zone.run(() => resolve(data));
+        }
+      };
+      this.ipcRenderer.on('client-node', handler);
+      this.ipcRenderer.send('client-node', 'CHECKBOOTSTRAP');
     });
   }
 

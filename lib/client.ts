@@ -143,6 +143,9 @@ export default class Client {
         case "BOOTSTRAP":
           this.bootstrapClient();
           break;
+        case "CHECKBOOTSTRAP":
+          this.checkBootstrap();
+          break;
         case "RESYNC":
           this.resyncClient();
           break;
@@ -373,8 +376,31 @@ export default class Client {
   async downloadFile(url, dest, progress = false) {
         return new Promise((resolve, reject) => {
         let downloaded = 0;
-        let percent = 0;
         let size = 0;
+        // rolling ~5s window of {time, downloaded} samples, used to smooth out the
+        // speed/ETA estimate rather than have it jump around between individual chunks
+        const speedSamples: { time: number, downloaded: number }[] = [];
+        let lastEmit = 0;
+        const sendProgress = (force = false) => {
+            const now = Date.now();
+            // throttle to ~4 updates/sec so we don't flood the renderer with IPC messages
+            if (!force && now - lastEmit < 250) return;
+            lastEmit = now;
+            speedSamples.push({ time: now, downloaded });
+            while (speedSamples.length > 1 && now - speedSamples[0].time > 5000) speedSamples.shift();
+            const oldest = speedSamples[0];
+            const elapsedSecs = (now - oldest.time) / 1000;
+            const speed = elapsedSecs > 0 ? (downloaded - oldest.downloaded) / elapsedSecs : 0;
+            const remaining = Math.max(size - downloaded, 0);
+            const eta = speed > 0 ? remaining / speed : 0;
+            this.win.webContents.send("client-node", "DOWNLOADPROGRESS", {
+                percent: size ? (downloaded / size) * 100 : 0,
+                downloaded,
+                size,
+                speed,
+                eta,
+            });
+        };
         https.get(url, response => {
             if (response.statusCode >= 200 && response.statusCode < 300) {
                 var fileStream = fs.createWriteStream(dest);
@@ -382,13 +408,14 @@ export default class Client {
                   size = parseInt(response.headers['content-length']);
                   response.on('data', (chunk) => {
                       downloaded += chunk.length;
-                      percent = ( downloaded / size ) * 100;
-                      let progress = {percent: percent, downloaded: downloaded, size: size };
-                      this.win.webContents.send("client-node", "DOWNLOADPROGRESS", progress);
+                      sendProgress();
                   });
                 }
                 fileStream.on('error', err => reject(err));
-                fileStream.on('close', () => resolve(helpers.getFileHash(dest)));
+                fileStream.on('close', () => {
+                    if (progress) sendProgress(true);
+                    resolve(helpers.getFileHash(dest));
+                });
                 response.pipe(fileStream);
             } else if (response.headers.location) {
                 const location = response.headers.location
@@ -500,8 +527,10 @@ export default class Client {
   }
 
   async bootstrapClient() {
+    const bootstrapLocation = path.join(this.clientDataDir, "bootstrap.zip");
     try {
-      const bootstrapLocation = path.join(this.clientDataDir, "bootstrap.zip");
+      log.info("Client", "Bootstrap checking free disk space...");
+      await this.checkBootstrapSpace();
       log.info("Client", "Bootstrap stopping client...");
       await this.stop();
       this.setClientStatus(ClientStatus.BOOTSTRAPPING);
@@ -518,25 +547,115 @@ export default class Client {
       helpers.deleteFolderSync(path.join(this.clientDataDir, "qtumState"));
       helpers.deleteFile(path.join(this.clientDataDir, "peers.dat"));
       helpers.deleteFile(path.join(this.clientDataDir, "banlist.dat"));
-      log.info("Client", "Bootstrap copying bootstrap...");
-      fs.createReadStream(bootstrapLocation)
-        .pipe(unzipper.Extract({ path: this.clientDataDir }))
-        .on("entry", (entry) => entry.autodrain())
-        .promise()
-        .then(
-          () => {
-            helpers.deleteFile(bootstrapLocation);
-            log.info("Client", "Bootstrap starting client...");
-            this.startClient(true, false);
-          },
-          (err) => {
-            throw err;
-          }
-        );
+      log.info("Client", "Bootstrap extracting...");
+      this.setClientStatus(ClientStatus.BOOTSTRAPEXTRACTING);
+      await this.extractBootstrap(bootstrapLocation, this.clientDataDir);
+      log.info("Client", "Bootstrap starting client...");
+      this.startClient(true, false);
     } catch (ex) {
       log.error("Client", "Bootstrap failed", ex);
-      this.setClientStatus(ClientStatus.BOOTSTRAPFAILED);
+      if (ex instanceof InsufficientSpaceError) {
+        if (this.win)
+          this.win.webContents.send("client-node", "BOOTSTRAPSPACE", {
+            required: ex.required,
+            free: ex.free,
+          });
+        this.setClientStatus(ClientStatus.BOOTSTRAPINSUFFICIENTSPACE);
+      } else {
+        this.setClientStatus(ClientStatus.BOOTSTRAPFAILED);
+      }
+    } finally {
+      // always clean up the downloaded zip - whether extraction succeeded, failed, or
+      // never got that far - rather than only doing so on the success path
+      await helpers.deleteFile(bootstrapLocation);
     }
+  }
+
+  // checks there's enough free space on the data directory's volume to both download
+  // the bootstrap zip and fully extract it. Reads the zip's exact uncompressed size via
+  // HTTP range requests against its central directory (unzipper.Open.url) rather than
+  // downloading the whole file first - falls back to a conservative estimate off the
+  // compressed (download) size if that isn't possible for any reason (e.g. the host
+  // doesn't support range requests)
+  async checkBootstrapSpace() {
+    const headers = await helpers.getHeaders(this.clientBootstrapUrl);
+    const zipSize = headers["content-length"] ? parseInt(headers["content-length"]) : 0;
+    let extractedSize = zipSize * 2;
+    try {
+      const directory = await unzipper.Open.url(request, this.clientBootstrapUrl);
+      extractedSize = directory.files.reduce((sum, entry) => sum + (entry.uncompressedSize || 0), 0);
+    } catch (ex) {
+      log.info("Client", "Failed to read exact bootstrap size, using estimate", ex);
+    }
+    // the zip and its extracted contents both land in clientDataDir, and the zip isn't
+    // removed until extraction finishes - so at peak we need room for both at once, plus
+    // a 5% safety margin. This doesn't credit the space freed by deleting the old
+    // blocks/chainstate/qtumState folders before extraction, so it's deliberately conservative
+    const required = Math.ceil((zipSize + extractedSize) * 1.05);
+    const free = await helpers.getFreeSpace(this.clientDataDir);
+    log.info("Client", "Bootstrap space check", { required, free });
+    if (free < required) throw new InsufficientSpaceError(required, free);
+  }
+
+  // reads the zip's central directory first (cheap - no need to decompress anything)
+  // so we know the total uncompressed size up-front, then extracts each entry manually
+  // so we can report real progress as it goes. This replaces an earlier implementation
+  // that combined unzipper's Extract() (which writes entries to disk internally) with an
+  // external .on('entry', entry => entry.autodrain()) handler - that autodrain() pattern
+  // is meant for unzipper.Parse(), not Extract(), and was racing the same entry streams
+  // against Extract's own internal writer.
+  async extractBootstrap(zipLocation: string, destination: string) {
+    const directory = await unzipper.Open.file(zipLocation);
+    const files = directory.files.filter((entry) => entry.type !== "Directory");
+    const totalBytes = files.reduce((sum, entry) => sum + (entry.uncompressedSize || 0), 0);
+    let extractedBytes = 0;
+    this.sendExtractProgress(extractedBytes, totalBytes, "");
+    for (const entry of files) {
+      // guard against zip slip (an entry path escaping the destination directory)
+      const extractPath = path.join(destination, entry.path.replace(/\\/g, "/"));
+      const rel = path.relative(destination, extractPath);
+      if (rel === "" || rel.startsWith("..") || path.isAbsolute(rel)) continue;
+      await helpers.ensureDirectoryExists(path.dirname(extractPath));
+      await new Promise<void>((resolve, reject) => {
+        entry
+          .stream()
+          .on("error", reject)
+          .pipe(fs.createWriteStream(extractPath))
+          .on("error", reject)
+          .on("close", () => resolve());
+      });
+      extractedBytes += entry.uncompressedSize || 0;
+      this.sendExtractProgress(extractedBytes, totalBytes, entry.path);
+    }
+  }
+
+  sendExtractProgress(extracted: number, total: number, currentFile: string) {
+    if (this.win)
+      this.win.webContents.send("client-node", "EXTRACTPROGRESS", {
+        percent: total ? (extracted / total) * 100 : 0,
+        extracted,
+        total,
+        currentFile,
+      });
+  }
+
+  // used on wallet startup to decide whether to offer the user a bootstrap instead of a
+  // normal (potentially day-long) sync - only meaningful info if it's actually fresh
+  async checkBootstrap() {
+    let result = { available: false, lastModified: 0, size: 0 };
+    try {
+      if (this.clientBootstrapUrl) {
+        const headers = await helpers.getHeaders(this.clientBootstrapUrl);
+        result = {
+          available: true,
+          lastModified: headers["last-modified"] ? new Date(headers["last-modified"]).getTime() : 0,
+          size: headers["content-length"] ? parseInt(headers["content-length"]) : 0,
+        };
+      }
+    } catch (ex) {
+      log.info("Client", "Failed to check bootstrap availability", ex);
+    }
+    if (this.win) this.win.webContents.send("client-node", "BOOTSTRAPINFO", result);
   }
 
   async reinstallClient() {
@@ -899,6 +1018,7 @@ export enum ClientStatus {
   RUNNINGEXTERNAL,
   STOPPED,
   BOOTSTRAPPING,
+  BOOTSTRAPEXTRACTING,
   NOCREDENTIALS,
   INVALIDHASH,
   DOWNLOADFAILED,
@@ -907,6 +1027,7 @@ export enum ClientStatus {
   RESTARTING,
   CLOSEDUNEXPECTED,
   BOOTSTRAPFAILED,
+  BOOTSTRAPINSUFFICIENTSPACE,
   UNKNOWNERROR,
 }
 
@@ -914,6 +1035,12 @@ export enum ChainType {
   MAINNET,
   TESTNET,
   REGTEST,
+}
+
+class InsufficientSpaceError extends Error {
+  constructor(public required: number, public free: number) {
+    super("Insufficient free space");
+  }
 }
 
 class ClientConfig {

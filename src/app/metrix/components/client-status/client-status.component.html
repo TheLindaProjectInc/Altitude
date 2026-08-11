@@ -6,7 +6,7 @@
         {{ getRPCStatus() | translate }}
       </h3>
     }
-    @if (rpc.clientStatus === 8) {
+    @if (rpc.clientStatus === ClientStatus.BOOTSTRAPPING) {
       <div class="progress-border light-grey rounded-bar">
         <div class="progress-bar rounded-bar center" [ngStyle]="
             {'width': downloadProgress(electron.downloadProgress.percent) + '%'}">
@@ -14,6 +14,31 @@
             {{downloadProgress(electron.downloadProgress.percent)}}%
           </span>
         </div>
+      </div>
+      <div class="progress-detail">
+        <span>{{ helpers.formatBytes(electron.downloadProgress.downloaded) }} / {{ helpers.formatBytes(electron.downloadProgress.size) }}</span>
+        @if (electron.downloadProgress.speed) {
+          <span>{{ helpers.formatBytes(electron.downloadProgress.speed) }}/s</span>
+        }
+        @if (electron.downloadProgress.eta) {
+          <span>{{ 'CLIENTSTATUS.TIMEREMAINING' | translate }} {{ helpers.formatTime(round(electron.downloadProgress.eta)) }}</span>
+        }
+      </div>
+    }
+    @if (rpc.clientStatus === ClientStatus.BOOTSTRAPEXTRACTING) {
+      <div class="progress-border light-grey rounded-bar">
+        <div class="progress-bar rounded-bar center" [ngStyle]="
+            {'width': extractProgress(electron.extractProgress.percent) + '%'}">
+          <span class="vertical-align">
+            {{extractProgress(electron.extractProgress.percent)}}%
+          </span>
+        </div>
+      </div>
+      <div class="progress-detail">
+        <span>{{ helpers.formatBytes(electron.extractProgress.extracted) }} / {{ helpers.formatBytes(electron.extractProgress.total) }}</span>
+        @if (electron.extractProgress.currentFile) {
+          <span class="progress-detail-file">{{ electron.extractProgress.currentFile }}</span>
+        }
       </div>
     }
     @if (rpc.RPCWarmupMessage) {

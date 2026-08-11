@@ -321,6 +321,11 @@
             "CLIENTUNKNOWNERRORINFO": "There was a problem communicating with Metrix Core. It is recommended to check your debug.log file for issues.",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Failed",
             "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommended to check your Altitude log file for issues.",
+            "BOOTSTRAPOFFERTITLE": "Wallet Significantly Out Of Date",
+            "BOOTSTRAPOFFERINFO": "A recent bootstrap is available that can quickly bring Metrix Core up to date. Continuing with a normal sync instead may take several days to complete, since your wallet needs to download and verify every block it has missed.",
+            "BOOTSTRAPOFFERBUTTON": "Download Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continue Normal Sync",
+            "BOOTSTRAPSPACEINFO": "Not enough free disk space to download and extract the bootstrap. Required: {required}, Available: {free}. Free up some space and try again.",
             "STARTUPFAILEDTITLE": "Metrix Core Startup Failed",
             "STARTUPFAILEDINFO": "There was an error starting Metrix Core. It is recommended to check your Altitude log file for issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Recovery Tools",
@@ -440,7 +445,9 @@
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Shutting down Metrix Core...",
         "RESTARTING": "Restarting Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Downloading bootstrap...",
+        "BOOTSTRAPEXTRACTING": "Extracting bootstrap...",
+        "TIMEREMAINING": "remaining:"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "New account created successfully",

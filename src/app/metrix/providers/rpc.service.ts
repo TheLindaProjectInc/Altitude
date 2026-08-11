@@ -2,6 +2,8 @@ import { Injectable, isDevMode } from '@angular/core';
 import Big from 'big.js';
 import { ElectronService } from 'app/providers/electron.service';
 import { PromptService } from '../../components/prompt/prompt.service';
+import { NotificationService } from 'app/providers/notification.service';
+import { TranslationService } from 'app/providers/translation.service';
 import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
 import { BlockchainStatus } from '../classes/blockchainStatus';
@@ -61,6 +63,8 @@ export class RpcService {
     constructor(
         private electron: ElectronService,
         private prompt: PromptService,
+        private notification: NotificationService,
+        private translation: TranslationService,
         private router: Router,
     ) {
         if (electron.isElectron()) this.setupListeners()
@@ -85,6 +89,8 @@ export class RpcService {
                 this.stopClient();
             } else if (status === ClientStatus.BOOTSTRAPFAILED) {
                 this.notifyBootstrapFailed();
+            } else if (status === ClientStatus.BOOTSTRAPINSUFFICIENTSPACE) {
+                this.notifyBootstrapInsufficientSpace();
             } else if (status === ClientStatus.INVALIDHASH || status === ClientStatus.DOWNLOADFAILED || status === ClientStatus.UNSUPPORTEDPLATFORM) {
                 this.stopClient();
                 this.notifyStartupFailed();
@@ -552,6 +558,17 @@ export class RpcService {
             // chose to stop wallet
             this.electron.remote.app.quit()
         }
+    }
+
+    // unlike a genuine bootstrap failure, this check runs before the client is even
+    // stopped - nothing is broken, so just tell the user rather than forcing them into
+    // recovery mode or a restart
+    async notifyBootstrapInsufficientSpace() {
+        const template = await this.translation.translate('COMPONENTS.PROMPT.BOOTSTRAPSPACEINFO');
+        const message = template
+            .replace('{required}', Helpers.formatBytes(this.electron.bootstrapSpace.required))
+            .replace('{free}', Helpers.formatBytes(this.electron.bootstrapSpace.free));
+        this.notification.notify('error', message, false);
     }
 
     async notifyBootstrapFailed() {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RpcService } from '../../providers/rpc.service';
 import { ElectronService } from 'app/providers/electron.service';
 import { ClientStatus } from 'app/enum';
+import Helpers from 'app/helpers';
 
 @Component({
     selector: 'client-status',
@@ -10,6 +11,9 @@ import { ClientStatus } from 'app/enum';
     standalone: false
 })
 export class ClientStatusComponent {
+
+  public helpers = Helpers;
+  public ClientStatus = ClientStatus;
 
   constructor(
     public rpc: RpcService,
@@ -40,6 +44,9 @@ export class ClientStatusComponent {
       case ClientStatus.BOOTSTRAPPING:
         translation = 'CLIENTSTATUS.BOOTSTRAPPING';
         break;
+      case ClientStatus.BOOTSTRAPEXTRACTING:
+        translation = 'CLIENTSTATUS.BOOTSTRAPEXTRACTING';
+        break;
     }
     return translation
   }
@@ -49,5 +56,12 @@ export class ClientStatusComponent {
     return parseFloat(downloadProgress).toFixed(2);
   }
 
+  extractProgress(extractProgress) {
+    return parseFloat(extractProgress).toFixed(2);
+  }
+
+  round(n) {
+    return Math.round(n || 0);
+  }
 
 }
