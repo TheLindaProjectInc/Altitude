@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "מזעור למגש במקום בשורת המשימות",
                 "MINIMIZEONCLOSE": "מזעור על קרוב",
                 "BEHAVIOURTITLE": "התנהגות מגש המערכת וחלון"
+            },
+            "BACKUPTAB": "גיבוי",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "גיבוי אוטומטי",
+                "ENABLED": "גיבוי אוטומטי של wallet.dat כל 14 יום",
+                "ENABLEDINFO": "יוצר גיבוי חדש של קובץ הארנק שלך לפי לוח זמנים, כך שעותק עדכני תמיד זמין אם משהו משתבש.",
+                "LASTBACKUP": "גיבוי אחרון:",
+                "NEVERBACKEDUP": "עדיין לא בוצע גיבוי אוטומטי.",
+                "BACKUPNOWBUTTON": "גיבוי עכשיו",
+                "LOCATIONTITLE": "מיקום גיבוי",
+                "LOCATIONINFO": "היכן נשמרים גיבויים אוטומטיים. ברירת מחדל היא תיקיית גיבוי בתוך ספריית הנתונים של הארנק שלך.",
+                "BROWSEBUTTON": "לְדַפדֵף...",
+                "RESETBUTTON": "איפוס לברירת מחדל",
+                "PRUNETITLE": "היסטוריית גיבויים",
+                "PRUNEINFO": "גיבויים אוטומטיים ישנים יותר נמחקים כך שתיקייה זו לא תגדל לנצח - רק הגיבויים האחרונים שלהלן נשמרים.",
+                "KEEPCOUNTLABEL": "שמור אחרון",
+                "INTERVALLABEL": "גיבוי כל (ימים)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "גזירה",
             "CONTEXTMENUCOPY": "עותק",
-            "CONTEXTMENUPASTE": "הדבק"
+            "CONTEXTMENUPASTE": "הדבק",
+            "CONTEXTMENUSELECTALL": "בחר הכל"
         },
         "MAINCHAINCHECK": {
             "ALERT": "אזהרה! אתה לא נמצא בשרשרת הראשית על פי חוקר מטריקס. מומלץ מאוד לסנכרן מחדש או לבצע אתחול מחדש של ה- blockchain כדי למנוע אובדן של מטבעות כלשהם."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "לא נמצאה כתובת IP ציבורית. בדוק את חיבור האינטרנט שלך והפעל מחדש את Altitude.",
         "CONFIGURINGLOCALMN": "מגדיר תצורה של Masternode מקומי...",
         "REPORTINGISSUE": "קבלת מידע אבחון... מידע זה יועתק ללוח שלך.",
-        "WALLETUPDATEDOWNLOADING": "מוריד עדכון..."
+        "WALLETUPDATEDOWNLOADING": "מוריד עדכון...",
+        "WALLETBACKUPFAILED": "גיבוי אוטומטי של הארנק נכשל - בדוק את מיקום הגיבוי ואת שטח הדיסק הפנוי"
     },
     "TIME": {
         "AFEWSECONDS": "כמה שניות",

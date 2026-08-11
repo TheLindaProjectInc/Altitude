@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimoi lokero tehtäväpalkin sijasta",
                 "MINIMIZEONCLOSE": "Pienennä läheltä",
                 "BEHAVIOURTITLE": "Järjestelmäpalkin ja ikkunan toiminta"
+            },
+            "BACKUPTAB": "Varmuuskopio",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automaattinen varmuuskopiointi",
+                "ENABLED": "Varmuuskopioi wallet.dat automaattisesti 14 päivän välein",
+                "ENABLEDINFO": "Luo lompakkotiedostostasi uuden varmuuskopion aikataulun mukaisesti, joten uusin kopio on aina saatavilla, jos jokin menee pieleen.",
+                "LASTBACKUP": "Viimeisin varmuuskopio:",
+                "NEVERBACKEDUP": "Automaattista varmuuskopiointia ei ole vielä tehty.",
+                "BACKUPNOWBUTTON": "Varmuuskopioi nyt",
+                "LOCATIONTITLE": "Varmuuskopiointipaikka",
+                "LOCATIONINFO": "Minne automaattiset varmuuskopiot tallennetaan. Oletusarvoisesti tämä on varmuuskopiokansio lompakkosi datahakemistossa.",
+                "BROWSEBUTTON": "Selaa...",
+                "RESETBUTTON": "Palauta oletusarvoihin",
+                "PRUNETITLE": "Varmuuskopiohistoria",
+                "PRUNEINFO": "Vanhemmat automaattiset varmuuskopiot poistetaan, jotta tämä kansio ei kasva loputtomiin – vain uusimmat alla olevat varmuuskopiot säilytetään.",
+                "KEEPCOUNTLABEL": "Pidä viimeinen",
+                "INTERVALLABEL": "Varmuuskopioi joka (päivä)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Leikata",
             "CONTEXTMENUCOPY": "Kopio",
-            "CONTEXTMENUPASTE": "tahna"
+            "CONTEXTMENUPASTE": "tahna",
+            "CONTEXTMENUSELECTALL": "Valitse kaikki"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Varoitus! Et ole pääketjussa Metrix-tutkimusmatkailijan mukaan. On erittäin suositeltavaa synkronoida tai käynnistää uudelleen ketju uudelleen, jotta kolikot eivät häviä."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ei julkista IP-osoitetta. Tarkista Internet-yhteys ja käynnistä korkeus.",
         "CONFIGURINGLOCALMN": "Paikallisen Masternoden määrittäminen...",
         "REPORTINGISSUE": "Haetaan diagnoositietoja... Nämä tiedot kopioidaan leikepöydälle.",
-        "WALLETUPDATEDOWNLOADING": "Päivitystä ladataan..."
+        "WALLETUPDATEDOWNLOADING": "Päivitystä ladataan...",
+        "WALLETBACKUPFAILED": "Automaattinen lompakon varmuuskopiointi epäonnistui – tarkista varmuuskopiointisijainti ja käytettävissä oleva levytila"
     },
     "TIME": {
         "AFEWSECONDS": "Muutama sekunti",

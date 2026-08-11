@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimice á bandexa en lugar da barra de tarefas",
                 "MINIMIZEONCLOSE": "Minimizar ao peche",
                 "BEHAVIOURTITLE": "Comportamento da bandexa do sistema e da xanela"
+            },
+            "BACKUPTAB": "Copia de seguridade",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Copia de seguridade automática",
+                "ENABLED": "Facer unha copia de seguridade automática de wallet.dat cada 14 días",
+                "ENABLEDINFO": "Crea unha copia de seguridade recente do ficheiro da túa carteira segundo unha programación, polo que sempre hai dispoñible unha copia recente se algo sae mal.",
+                "LASTBACKUP": "Última copia de seguridade:",
+                "NEVERBACKEDUP": "Aínda non se fixo ningunha copia de seguridade automática.",
+                "BACKUPNOWBUTTON": "Facer unha copia de seguridade agora",
+                "LOCATIONTITLE": "Localización de copia de seguridade",
+                "LOCATIONINFO": "Onde se gardan as copias de seguridade automáticas. Por defecto, atópase nun cartafol de copias de seguridade dentro do directorio de datos da carteira.",
+                "BROWSEBUTTON": "Explorar...",
+                "RESETBUTTON": "Restablecer aos valores predeterminados",
+                "PRUNETITLE": "Historial de copias de seguridade",
+                "PRUNEINFO": "As copias de seguridade automáticas máis antigas elimínanse para que este cartafol non medre para sempre; só se conservan as máis recentes que aparecen a continuación.",
+                "KEEPCOUNTLABEL": "Manter o último",
+                "INTERVALLABEL": "Facer unha copia de seguridade cada (días)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Corte",
             "CONTEXTMENUCOPY": "Copiar",
-            "CONTEXTMENUPASTE": "Pegar"
+            "CONTEXTMENUPASTE": "Pegar",
+            "CONTEXTMENUSELECTALL": "Seleccionar todo"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Aviso! Non estás na cadea principal segundo o explorador Metrix. É moi recomendable volver a sincronizar ou volver a iniciar o bloqueo para evitar a perda de moedas."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Non se atopou ningún enderezo IP público. Verifique a súa conexión a Internet e reinicie Altitude.",
         "CONFIGURINGLOCALMN": "Configuración de Masternode local...",
         "REPORTINGISSUE": "Obtendo información de diagnóstico... Esta información copiarase no portapapeis.",
-        "WALLETUPDATEDOWNLOADING": "Descargando a actualización..."
+        "WALLETUPDATEDOWNLOADING": "Descargando a actualización...",
+        "WALLETBACKUPFAILED": "Fallou a copia de seguridade automática da carteira. Comprobe a localización da copia de seguridade e o espazo dispoñible no disco."
     },
     "TIME": {
         "AFEWSECONDS": "Algúns segundos",

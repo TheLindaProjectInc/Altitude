@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimer til bakken i stedet for proceslinjen",
                 "MINIMIZEONCLOSE": "Minimer på tæt",
                 "BEHAVIOURTITLE": "Systembakke og vinduesadfærd"
+            },
+            "BACKUPTAB": "Sikkerhedskopiering",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatisk sikkerhedskopiering",
+                "ENABLED": "Automatisk sikkerhedskopiering af wallet.dat hver 14. dag",
+                "ENABLEDINFO": "Opretter en ny sikkerhedskopi af din wallet-fil efter en tidsplan, så en nylig kopi altid er tilgængelig, hvis noget går galt.",
+                "LASTBACKUP": "Sidste sikkerhedskopi:",
+                "NEVERBACKEDUP": "Der er endnu ikke foretaget nogen automatisk sikkerhedskopiering.",
+                "BACKUPNOWBUTTON": "Sikkerhedskopier nu",
+                "LOCATIONTITLE": "Backupplacering",
+                "LOCATIONINFO": "Hvor automatiske sikkerhedskopier gemmes. Standardindstillingen er en sikkerhedskopieringsmappe i din tegnebogs datamappe.",
+                "BROWSEBUTTON": "Gennemse...",
+                "RESETBUTTON": "Nulstil til standard",
+                "PRUNETITLE": "Backuphistorik",
+                "PRUNEINFO": "Ældre automatiske sikkerhedskopier slettes, så denne mappe ikke vokser for evigt - kun de nyeste nedenfor gemmes.",
+                "KEEPCOUNTLABEL": "Behold sidst",
+                "INTERVALLABEL": "Sikkerhedskopier hver (dag)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Skære",
             "CONTEXTMENUCOPY": "Kopi",
-            "CONTEXTMENUPASTE": "sæt ind"
+            "CONTEXTMENUPASTE": "sæt ind",
+            "CONTEXTMENUSELECTALL": "Vælg alle"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Advarsel! Du er ikke i hovedkæden ifølge Metrix explorer. Det anbefales stærkt at synkronisere eller genstarte din blockchain igen for at undgå tab af mønter."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ingen offentlig IP-adresse fundet. Kontroller din internetforbindelse, og genstart Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode...",
         "REPORTINGISSUE": "Få diagnostiske oplysninger... Disse oplysninger kopieres til dit udklipsholder.",
-        "WALLETUPDATEDOWNLOADING": "Downloader opdatering..."
+        "WALLETUPDATEDOWNLOADING": "Downloader opdatering...",
+        "WALLETBACKUPFAILED": "Automatisk backup af tegnebogen mislykkedes - tjek din backupplacering og den tilgængelige diskplads"
     },
     "TIME": {
         "AFEWSECONDS": "Et par sekunder",

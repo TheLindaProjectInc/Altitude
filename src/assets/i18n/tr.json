@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Görev çubuğu yerine tepsiye küçült",
                 "MINIMIZEONCLOSE": "Kapatıldığında küçült",
                 "BEHAVIOURTITLE": "Sistem Tepsisi ve Pencere Davranışı"
+            },
+            "BACKUPTAB": "Yedekleme",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Otomatik Yedekleme",
+                "ENABLED": "wallet.dat dosyasının yedeğini her 14 günde bir otomatik olarak al.",
+                "ENABLEDINFO": "Cüzdan dosyanızın yeni bir yedeğini belirli bir programa göre oluşturur, böylece bir sorun oluşması durumunda her zaman güncel bir kopyası elinizin altında olur.",
+                "LASTBACKUP": "Son yedekleme:",
+                "NEVERBACKEDUP": "Henüz otomatik yedekleme yapılmadı.",
+                "BACKUPNOWBUTTON": "Şimdi geri dön",
+                "LOCATIONTITLE": "Yedekleme Konumu",
+                "LOCATIONINFO": "Otomatik yedeklemelerin kaydedildiği yer. Varsayılan olarak cüzdanınızın veri dizini içindeki bir yedekleme klasörüne kaydedilir.",
+                "BROWSEBUTTON": "Gözat...",
+                "RESETBUTTON": "Varsayılan ayarlara sıfırla",
+                "PRUNETITLE": "Yedekleme Geçmişi",
+                "PRUNEINFO": "Eski otomatik yedeklemeler silinir, böylece bu klasör sonsuza kadar büyümez; yalnızca aşağıdaki en yeni yedeklemeler saklanır.",
+                "KEEPCOUNTLABEL": "En sonuncuyu saklayın",
+                "INTERVALLABEL": "Her (gün) yedekleme yapın"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Kesmek",
             "CONTEXTMENUCOPY": "kopya",
-            "CONTEXTMENUPASTE": "Yapıştırmak"
+            "CONTEXTMENUPASTE": "Yapıştırmak",
+            "CONTEXTMENUSELECTALL": "Tümünü Seç"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Uyarı! Metrix kaşifine göre ana zincirde değilsin. Madeni para kaybını önlemek için blok zincirinizi yeniden senkronize etmeniz veya yeniden başlatmanız önemle tavsiye edilir."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Genel IP adresi bulunamadı. İnternet bağlantınızı kontrol edin ve İrtifa'yı yeniden başlatın.",
         "CONFIGURINGLOCALMN": "Yerel Masternode yapılandırılıyor...",
         "REPORTINGISSUE": "Tanılama bilgileri alınıyor... Bu bilgiler panonuza kopyalanacaktır.",
-        "WALLETUPDATEDOWNLOADING": "Güncelleme indiriliyor..."
+        "WALLETUPDATEDOWNLOADING": "Güncelleme indiriliyor...",
+        "WALLETBACKUPFAILED": "Otomatik cüzdan yedeklemesi başarısız oldu - yedekleme konumunuzu ve kullanılabilir disk alanını kontrol edin."
     },
     "TIME": {
         "AFEWSECONDS": "Birkaç saniye",

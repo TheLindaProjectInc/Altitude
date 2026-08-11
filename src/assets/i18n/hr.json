@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizirajte u ladicu umjesto na programsku traku",
                 "MINIMIZEONCLOSE": "Smanjite na kraju",
                 "BEHAVIOURTITLE": "Ponašanje sistemske trake i prozora"
+            },
+            "BACKUPTAB": "Sigurnosna kopija",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatska sigurnosna kopija",
+                "ENABLED": "Automatski napravi sigurnosnu kopiju wallet.dat svakih 14 dana",
+                "ENABLEDINFO": "Izrađuje novu sigurnosnu kopiju vaše datoteke novčanika prema rasporedu, tako da je nedavna kopija uvijek dostupna ako nešto pođe po zlu.",
+                "LASTBACKUP": "Posljednja sigurnosna kopija:",
+                "NEVERBACKEDUP": "Još nije napravljena automatska sigurnosna kopija.",
+                "BACKUPNOWBUTTON": "Sigurnosno kopiraj sada",
+                "LOCATIONTITLE": "Rezervna lokacija",
+                "LOCATIONINFO": "Gdje se spremaju automatske sigurnosne kopije. Zadano je to mapa sigurnosnih kopija unutar podatkovnog direktorija vašeg novčanika.",
+                "BROWSEBUTTON": "Pregledaj...",
+                "RESETBUTTON": "Vrati na zadano",
+                "PRUNETITLE": "Povijest sigurnosnih kopija",
+                "PRUNEINFO": "Starije automatske sigurnosne kopije brišu se kako ova mapa ne bi trajno rasla - čuvaju se samo najnovije u nastavku.",
+                "KEEPCOUNTLABEL": "Ostavi zadnje",
+                "INTERVALLABEL": "Sigurnosno kopiraj svakih (dana)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Izrezati",
             "CONTEXTMENUCOPY": "Kopirati",
-            "CONTEXTMENUPASTE": "Zalijepiti"
+            "CONTEXTMENUPASTE": "Zalijepiti",
+            "CONTEXTMENUSELECTALL": "Odaberi sve"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Upozorenje! Prema istraživaču Metrix, niste u glavnom lancu. Preporučuje se ponovno sinkroniziranje ili ponovno pokretanje blok-bloka kako biste izbjegli gubitak kovanica."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nije pronađena javna IP adresa. Provjerite internetsku vezu i ponovno pokrenite Altitude.",
         "CONFIGURINGLOCALMN": "Konfiguriranje lokalne Masternode...",
         "REPORTINGISSUE": "Dobivanje dijagnostičkih informacija... Ove će se informacije kopirati u međuspremnik.",
-        "WALLETUPDATEDOWNLOADING": "Preuzimanje ažuriranja..."
+        "WALLETUPDATEDOWNLOADING": "Preuzimanje ažuriranja...",
+        "WALLETBACKUPFAILED": "Automatska sigurnosna kopija novčanika nije uspjela - provjerite lokaciju sigurnosne kopije i dostupan prostor na disku"
     },
     "TIME": {
         "AFEWSECONDS": "Nekoliko sekundi",

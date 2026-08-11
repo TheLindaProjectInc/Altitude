@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimalizujte na zásobník namiesto panela úloh",
                 "MINIMIZEONCLOSE": "Minimalizujte pri zavretí",
                 "BEHAVIOURTITLE": "Správanie systémovej lišty a okna"
+            },
+            "BACKUPTAB": "Záloha",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatické zálohovanie",
+                "ENABLED": "Automaticky zálohovať súbor wallet.dat každých 14 dní",
+                "ENABLEDINFO": "Vytvára novú zálohu súboru vašej peňaženky podľa plánu, takže v prípade problémov máte vždy k dispozícii najnovšiu kópiu.",
+                "LASTBACKUP": "Posledná záloha:",
+                "NEVERBACKEDUP": "Zatiaľ nebola vykonaná žiadna automatická záloha.",
+                "BACKUPNOWBUTTON": "Zálohovať teraz",
+                "LOCATIONTITLE": "Záložné umiestnenie",
+                "LOCATIONINFO": "Miesto, kde sa ukladajú automatické zálohy. Predvolene je to priečinok so zálohami v dátovom adresári vašej peňaženky.",
+                "BROWSEBUTTON": "Prehliadať...",
+                "RESETBUTTON": "Obnoviť na predvolené",
+                "PRUNETITLE": "História záloh",
+                "PRUNEINFO": "Staršie automatické zálohy sa odstránia, aby sa tento priečinok nerozrastal donekonečna – zachovajú sa iba tie najnovšie, ktoré sú uvedené nižšie.",
+                "KEEPCOUNTLABEL": "Nechať posledný",
+                "INTERVALLABEL": "Zálohovať každých (dní)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "rez",
             "CONTEXTMENUCOPY": "kópie",
-            "CONTEXTMENUPASTE": "pasta"
+            "CONTEXTMENUPASTE": "pasta",
+            "CONTEXTMENUSELECTALL": "Vybrať všetko"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Výstraha! Podľa prieskumníka Metrix nie ste na hlavnej reťazci. Dôrazne sa odporúča znova synchronizovať alebo znovu zaviesť váš blockchain, aby nedošlo k strate akýchkoľvek mincí."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nenašla sa žiadna verejná adresa IP. Skontrolujte svoje pripojenie k internetu a reštartujte výšku.",
         "CONFIGURINGLOCALMN": "Konfigurácia miestnej masternódy...",
         "REPORTINGISSUE": "Získavanie diagnostických informácií... Tieto informácie sa skopírujú do vašej schránky.",
-        "WALLETUPDATEDOWNLOADING": "Sťahovanie aktualizácie..."
+        "WALLETUPDATEDOWNLOADING": "Sťahovanie aktualizácie...",
+        "WALLETBACKUPFAILED": "Automatické zálohovanie peňaženky zlyhalo – skontrolujte umiestnenie zálohy a dostupné miesto na disku."
     },
     "TIME": {
         "AFEWSECONDS": "Niekoľko sekúnd",

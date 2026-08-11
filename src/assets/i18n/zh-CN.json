@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "最小化到托盘而不是任务栏",
                 "MINIMIZEONCLOSE": "最小化关闭",
                 "BEHAVIOURTITLE": "系统托盘和窗口行为"
+            },
+            "BACKUPTAB": "备份",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "自动备份",
+                "ENABLED": "每 14 天自动备份 wallet.dat 文件",
+                "ENABLEDINFO": "按计划创建钱包文件的最新备份，以便在出现问题时始终可以使用最新副本。",
+                "LASTBACKUP": "上次备份：",
+                "NEVERBACKEDUP": "尚未进行自动备份。",
+                "BACKUPNOWBUTTON": "立即备份",
+                "LOCATIONTITLE": "备份位置",
+                "LOCATIONINFO": "自动备份文件的保存位置。默认保存在钱包数据目录下的备份文件夹中。",
+                "BROWSEBUTTON": "浏览...",
+                "RESETBUTTON": "重置为默认值",
+                "PRUNETITLE": "备份历史记录",
+                "PRUNEINFO": "较旧的自动备份将被删除，因此该文件夹不会无限增长——仅保留以下最新的备份。",
+                "KEEPCOUNTLABEL": "保留最后",
+                "INTERVALLABEL": "每隔（天）备份一次"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "切",
             "CONTEXTMENUCOPY": "复制",
-            "CONTEXTMENUPASTE": "糊"
+            "CONTEXTMENUPASTE": "糊",
+            "CONTEXTMENUSELECTALL": "全选"
         },
         "MAINCHAINCHECK": {
             "ALERT": "警告！根据Metrix资源管理器，您不在主链上。强烈建议重新同步或重新引导您的区块链，以避免丢失任何硬币。"
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "找不到公共IP地址。检查您的互联网连接并重新启动Altitude。",
         "CONFIGURINGLOCALMN": "配置本地Masternode...",
         "REPORTINGISSUE": "获取诊断信息...此信息将被复制到剪贴板。",
-        "WALLETUPDATEDOWNLOADING": "正在下载更新……"
+        "WALLETUPDATEDOWNLOADING": "正在下载更新……",
+        "WALLETBACKUPFAILED": "自动钱包备份失败 - 请检查备份位置和可用磁盘空间"
     },
     "TIME": {
         "AFEWSECONDS": "几秒钟",

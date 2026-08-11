@@ -89,6 +89,33 @@ function set_onlynet(net: string) {
     saveSettings();
 }
 
+function set_walletBackupEnabled(enabled: boolean) {
+    settings.walletBackupEnabled = enabled;
+    saveSettings();
+}
+
+function set_walletBackupLocation(location: string) {
+    settings.walletBackupLocation = location;
+    saveSettings();
+}
+
+function set_walletBackupKeepCount(count: number) {
+    settings.walletBackupKeepCount = count;
+    saveSettings();
+}
+
+function set_walletBackupIntervalDays(days: number) {
+    settings.walletBackupIntervalDays = days;
+    saveSettings();
+}
+
+// set internally by Client once a scheduled backup completes - not user-facing, so no
+// IPC case for it, just a plain export the main process can call directly
+export function set_lastWalletBackup(timestamp: number) {
+    settings.lastWalletBackup = timestamp;
+    saveSettings();
+}
+
 function loadSettings() {
     storage.get('settings', (error, data) => {
         settings = new Settings(data)
@@ -146,6 +173,18 @@ function setupIPC() {
             case 'SETONLYNET':
                 set_onlynet(data);
                 break;
+            case 'SETWALLETBACKUPENABLED':
+                set_walletBackupEnabled(data);
+                break;
+            case 'SETWALLETBACKUPLOCATION':
+                set_walletBackupLocation(data);
+                break;
+            case 'SETWALLETBACKUPKEEPCOUNT':
+                set_walletBackupKeepCount(data);
+                break;
+            case 'SETWALLETBACKUPINTERVALDAYS':
+                set_walletBackupIntervalDays(data);
+                break;
         }
     });
 }
@@ -169,11 +208,24 @@ export class Settings {
     proxy: string = '';
     tor: string = '';
     onlynet: string = '';
+    walletBackupEnabled: boolean = true;
+    // empty = use the default (<wallet data directory>/backup), computed by Client since
+    // only it knows the data directory location
+    walletBackupLocation: string = '';
+    walletBackupKeepCount: number = 5;
+    walletBackupIntervalDays: number = 14;
+    lastWalletBackup: number = 0;
 
     constructor(data) {
         if (data) {
             for (const key in data) {
-                if (data[key]) this[key] = data[key]
+                // previously skipped any falsy value (0, '', false), not just
+                // missing/undefined ones - meaning a saved "false"/""/"0" would be
+                // silently discarded in favour of the class default on next load. Most
+                // existing booleans here default to false so it went unnoticed, but it
+                // would have broken persisting walletBackupEnabled=false, since that
+                // one defaults to true
+                if (data[key] !== undefined && data[key] !== null) this[key] = data[key]
             }
         }
     }

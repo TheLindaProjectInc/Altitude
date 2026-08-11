@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimera till facket istället för aktivitetsfältet",
                 "MINIMIZEONCLOSE": "Minimera på nära håll",
                 "BEHAVIOURTITLE": "Systemfält och fönsterbeteende"
+            },
+            "BACKUPTAB": "Säkerhetskopiering",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatisk säkerhetskopiering",
+                "ENABLED": "Säkerhetskopiera wallet.dat automatiskt var 14:e dag",
+                "ENABLEDINFO": "Skapar en ny säkerhetskopia av din plånboksfil enligt ett schema, så att en aktuell kopia alltid finns tillgänglig om något går fel.",
+                "LASTBACKUP": "Senaste säkerhetskopia:",
+                "NEVERBACKEDUP": "Ingen automatisk säkerhetskopiering har gjorts ännu.",
+                "BACKUPNOWBUTTON": "Säkerhetskopiera nu",
+                "LOCATIONTITLE": "Säkerhetskopieringsplats",
+                "LOCATIONINFO": "Där automatiska säkerhetskopior sparas. Standardinställningen är en säkerhetskopiamapp i din plånboks datakatalog.",
+                "BROWSEBUTTON": "Bläddra...",
+                "RESETBUTTON": "Återställ till standard",
+                "PRUNETITLE": "Säkerhetskopieringshistorik",
+                "PRUNEINFO": "Äldre automatiska säkerhetskopior raderas så att den här mappen inte växer för alltid – endast de senaste nedan behålls.",
+                "KEEPCOUNTLABEL": "Behåll sist",
+                "INTERVALLABEL": "Säkerhetskopiera varje (dag)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Skära",
             "CONTEXTMENUCOPY": "Kopia",
-            "CONTEXTMENUPASTE": "Klistra"
+            "CONTEXTMENUPASTE": "Klistra",
+            "CONTEXTMENUSELECTALL": "Markera alla"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Varning! Du är inte i huvudkedjan enligt Metrix explorer. Det rekommenderas starkt att synkronisera eller starta om blockchainen igen för att undvika förlust av mynt."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ingen offentlig IP-adress hittades. Kontrollera din internetanslutning och starta om Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurerar lokal Masternode...",
         "REPORTINGISSUE": "Få diagnostisk information... Den här informationen kommer att kopieras till din urklipp.",
-        "WALLETUPDATEDOWNLOADING": "Laddar ner uppdatering..."
+        "WALLETUPDATEDOWNLOADING": "Laddar ner uppdatering...",
+        "WALLETBACKUPFAILED": "Automatisk säkerhetskopiering av plånboken misslyckades – kontrollera din säkerhetskopieringsplats och tillgängligt diskutrymme"
     },
     "TIME": {
         "AFEWSECONDS": "Några sekunder",

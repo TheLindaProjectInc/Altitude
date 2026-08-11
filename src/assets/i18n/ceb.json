@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Pagmenos sa tray sa baylo sa taskbar",
                 "MINIMIZEONCLOSE": "Pagminos sa suod",
                 "BEHAVIOURTITLE": "Kinaiya sa System Tray ug Window"
+            },
+            "BACKUPTAB": "Pag-backup",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Awtomatikong Pag-backup",
+                "ENABLED": "Awtomatikong i-backup ang wallet.dat matag 14 ka adlaw",
+                "ENABLEDINFO": "Naghimo og bag-ong backup sa imong wallet file sa usa ka iskedyul, aron ang bag-ong kopya kanunay nga magamit kung adunay sayup nga mahitabo.",
+                "LASTBACKUP": "Katapusang backup:",
+                "NEVERBACKEDUP": "Wala pa'y gihimo nga awtomatikong backup.",
+                "BACKUPNOWBUTTON": "Pag-backup Karon",
+                "LOCATIONTITLE": "Lokasyon sa Pag-backup",
+                "LOCATIONINFO": "Kung asa gitipigan ang mga awtomatikong backup. Mo-default kini sa usa ka backup folder sulod sa data directory sa imong wallet.",
+                "BROWSEBUTTON": "Pag-browse...",
+                "RESETBUTTON": "I-reset sa Default",
+                "PRUNETITLE": "Kasaysayan sa Pag-backup",
+                "PRUNEINFO": "Ang mga daang awtomatikong pag-backup gipapas aron kini nga folder dili motubo hangtod sa hangtod - ang pinakabag-o lang sa ubos ang gitipigan.",
+                "KEEPCOUNTLABEL": "Ipabilin sa katapusan",
+                "INTERVALLABEL": "I-backup kada (mga adlaw)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Guntinga",
             "CONTEXTMENUCOPY": "Kopya",
-            "CONTEXTMENUPASTE": "I-paste"
+            "CONTEXTMENUPASTE": "I-paste",
+            "CONTEXTMENUSELECTALL": "Pilia ang Tanan"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Pasidaan! Wala ka sa nag-unang kadena sumala sa tigpaniid sa Metrix. Gisugyot nga girekomenda pag-usab nga pag-sync o pag-boot usab sa imong blockchain aron malikayan ang pagkawala sa bisan unsang mga sensilyo."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Walay IP Address sa IP. Susiha ang imong koneksyon sa internet ug i-restart ang Altitude.",
         "CONFIGURINGLOCALMN": "Pag-configure sa lokal nga Masternode...",
         "REPORTINGISSUE": "Pagkuha sa kasayuran sa diagnostic... Kini nga kasayuran makopya sa imong clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Nag-download sa update..."
+        "WALLETUPDATEDOWNLOADING": "Nag-download sa update...",
+        "WALLETBACKUPFAILED": "Napakyas ang awtomatikong pag-backup sa wallet - susiha ang lokasyon sa imong backup ug ang magamit nga espasyo sa disk"
     },
     "TIME": {
         "AFEWSECONDS": "Pipila ka segundo",

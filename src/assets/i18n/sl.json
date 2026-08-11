@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Zmanjšajte na pladenj namesto v opravilni vrstici",
                 "MINIMIZEONCLOSE": "Zmanjšajte na blizu",
                 "BEHAVIOURTITLE": "Obnašanje sistemske vrstice in okna"
+            },
+            "BACKUPTAB": "Varnostno kopiranje",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Samodejno varnostno kopiranje",
+                "ENABLED": "Samodejno varnostno kopiraj datoteko wallet.dat vsakih 14 dni",
+                "ENABLEDINFO": "Ustvari novo varnostno kopijo datoteke vaše denarnice po urniku, tako da je vedno na voljo nedavna kopija, če gre kaj narobe.",
+                "LASTBACKUP": "Zadnja varnostna kopija:",
+                "NEVERBACKEDUP": "Samodejno varnostno kopiranje še ni bilo narejeno.",
+                "BACKUPNOWBUTTON": "Varnostno kopiraj zdaj",
+                "LOCATIONTITLE": "Rezervna lokacija",
+                "LOCATIONINFO": "Kam se shranjujejo samodejne varnostne kopije. Privzeto je to mapa z varnostnimi kopijami v podatkovnem imeniku vaše denarnice.",
+                "BROWSEBUTTON": "Brskaj...",
+                "RESETBUTTON": "Ponastavi na privzeto",
+                "PRUNETITLE": "Zgodovina varnostnih kopij",
+                "PRUNEINFO": "Starejše samodejne varnostne kopije se izbrišejo, da se ta mapa ne bo večno povečevala – ohranijo se le najnovejše spodaj.",
+                "KEEPCOUNTLABEL": "Naj bo zadnji",
+                "INTERVALLABEL": "Varnostno kopiraj vsakih (dni)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cut",
             "CONTEXTMENUCOPY": "Kopirati",
-            "CONTEXTMENUPASTE": "Prilepi"
+            "CONTEXTMENUPASTE": "Prilepi",
+            "CONTEXTMENUSELECTALL": "Izberi vse"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Opozorilo! Po raziskovalcu Metrix niste v glavni verigi. Zelo priporočljivo je, da ponovno sinhronizirate ali ponovno zaženete svoj blockchain, da se izognete izgubi kovancev."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ni najdenega javnega naslova IP. Preverite internetno povezavo in znova zaženite Altitude.",
         "CONFIGURINGLOCALMN": "Konfiguriranje lokalne Masternode...",
         "REPORTINGISSUE": "Pridobivanje diagnostičnih informacij... Ti podatki bodo kopirani v odložišče.",
-        "WALLETUPDATEDOWNLOADING": "Prenašanje posodobitve..."
+        "WALLETUPDATEDOWNLOADING": "Prenašanje posodobitve...",
+        "WALLETBACKUPFAILED": "Samodejno varnostno kopiranje denarnice ni uspelo – preverite lokacijo varnostne kopije in razpoložljiv prostor na disku."
     },
     "TIME": {
         "AFEWSECONDS": "Nekaj sekund",

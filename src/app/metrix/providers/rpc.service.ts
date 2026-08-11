@@ -101,6 +101,10 @@ export class RpcService {
             this.RPCReady = status.ready;
             this.RPCWarmupMessage = status.message
         });
+        // scheduled (or manually triggered) wallet.dat backup completed
+        this.electron.walletBackupResultEvent.subscribe((result: { success: boolean }) => {
+            this.notification.notify(result.success ? 'success' : 'error', result.success ? 'NOTIFICATIONS.WALLETBACKEDUP' : 'NOTIFICATIONS.WALLETBACKUPFAILED');
+        });
         // listen for RPC responses
         this.electron.RPCResponseEvent.subscribe(data => {
             let sub = this.RPCSubscriptions[data.callId];

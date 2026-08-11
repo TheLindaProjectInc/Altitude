@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Thu nhỏ vào khay thay vì thanh tác vụ",
                 "MINIMIZEONCLOSE": "Giảm thiểu khi đóng",
                 "BEHAVIOURTITLE": "Hành vi của khay hệ thống và cửa sổ"
+            },
+            "BACKUPTAB": "Hỗ trợ",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Sao lưu tự động",
+                "ENABLED": "Tự động sao lưu tệp wallet.dat mỗi 14 ngày.",
+                "ENABLEDINFO": "Tự động tạo bản sao lưu mới nhất của tập tin ví điện tử theo lịch trình, đảm bảo luôn có bản sao gần nhất nếu xảy ra sự cố.",
+                "LASTBACKUP": "Lần sao lưu cuối cùng:",
+                "NEVERBACKEDUP": "Chưa có bản sao lưu tự động nào được thực hiện.",
+                "BACKUPNOWBUTTON": "Sao lưu ngay",
+                "LOCATIONTITLE": "Vị trí sao lưu",
+                "LOCATIONINFO": "Nơi lưu trữ các bản sao lưu tự động. Mặc định là thư mục sao lưu bên trong thư mục dữ liệu của ví điện tử.",
+                "BROWSEBUTTON": "Duyệt...",
+                "RESETBUTTON": "Khôi phục về mặc định",
+                "PRUNETITLE": "Lịch sử sao lưu",
+                "PRUNEINFO": "Các bản sao lưu tự động cũ hơn sẽ bị xóa để thư mục này không bị phình to vô hạn - chỉ những bản sao lưu gần đây nhất bên dưới mới được giữ lại.",
+                "KEEPCOUNTLABEL": "Giữ lại cuối cùng",
+                "INTERVALLABEL": "Sao lưu mỗi (ngày)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cắt tỉa",
             "CONTEXTMENUCOPY": "Sao chép",
-            "CONTEXTMENUPASTE": "Dán"
+            "CONTEXTMENUPASTE": "Dán",
+            "CONTEXTMENUSELECTALL": "Chọn tất cả"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Cảnh báo! Bạn không ở trong chuỗi chính theo nhà thám hiểm Metrix. Rất khuyến khích đồng bộ hóa lại hoặc khởi động lại blockchain của bạn để tránh mất bất kỳ đồng tiền nào."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Không tìm thấy địa chỉ IP công cộng. Kiểm tra kết nối internet của bạn và khởi động lại Độ cao.",
         "CONFIGURINGLOCALMN": "Định cấu hình Masternode cục bộ...",
         "REPORTINGISSUE": "Nhận thông tin chẩn đoán... Thông tin này sẽ được sao chép vào bảng tạm của bạn.",
-        "WALLETUPDATEDOWNLOADING": "Đang tải xuống bản cập nhật..."
+        "WALLETUPDATEDOWNLOADING": "Đang tải xuống bản cập nhật...",
+        "WALLETBACKUPFAILED": "Sao lưu ví tự động thất bại - hãy kiểm tra vị trí sao lưu và dung lượng ổ đĩa trống."
     },
     "TIME": {
         "AFEWSECONDS": "Một vài giây",

@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Lágmarkaðu í bakkann í stað verkefnisins",
                 "MINIMIZEONCLOSE": "Lágmarkið á loka",
                 "BEHAVIOURTITLE": "Hegðun kerfisbakka og glugga"
+            },
+            "BACKUPTAB": "Afritun",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Sjálfvirk afritun",
+                "ENABLED": "Taka sjálfvirkt öryggisafrit af wallet.dat á 14 daga fresti",
+                "ENABLEDINFO": "Býr til nýtt afrit af veskisskránni þinni samkvæmt áætlun, þannig að nýlegt eintak er alltaf tiltækt ef eitthvað fer úrskeiðis.",
+                "LASTBACKUP": "Síðasta afrit:",
+                "NEVERBACKEDUP": "Engin sjálfvirk afritun hefur verið gerð ennþá.",
+                "BACKUPNOWBUTTON": "Taka afrit núna",
+                "LOCATIONTITLE": "Staðsetning afritunar",
+                "LOCATIONINFO": "Þar sem sjálfvirk afrit eru vistuð. Sjálfgefið er að það sé afritunarmöppa í gagnasafni veskisins.",
+                "BROWSEBUTTON": "Skoða...",
+                "RESETBUTTON": "Endurstilla í sjálfgefið ástand",
+                "PRUNETITLE": "Afritunarsaga",
+                "PRUNEINFO": "Eldri sjálfvirkum afritum er eytt svo þessi mappa stækki ekki að eilífu - aðeins þau nýjustu hér að neðan eru geymd.",
+                "KEEPCOUNTLABEL": "Halda síðasta",
+                "INTERVALLABEL": "Taka afrit á hverjum (dögum)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Skera",
             "CONTEXTMENUCOPY": "Afrita",
-            "CONTEXTMENUPASTE": "Límdu"
+            "CONTEXTMENUPASTE": "Límdu",
+            "CONTEXTMENUSELECTALL": "Velja allt"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Viðvörun! Þú ert ekki í aðalkeðjunni samkvæmt Metrix landkönnuður. Það er mjög mælt með því að samstilla eða endurræsa blockchain til að forðast tap á myntum."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Engin opinber IP-tala fannst. Athugaðu nettenginguna þína og endurræstu Altitude.",
         "CONFIGURINGLOCALMN": "Stillir staðbundna Masternode...",
         "REPORTINGISSUE": "Að fá greiningarupplýsingar... Þessar upplýsingar verða afritaðar á klemmuspjaldið þitt.",
-        "WALLETUPDATEDOWNLOADING": "Sæki uppfærslu..."
+        "WALLETUPDATEDOWNLOADING": "Sæki uppfærslu...",
+        "WALLETBACKUPFAILED": "Sjálfvirk afritun veskis mistókst - athugaðu staðsetningu afritunar og laust pláss á diskinum"
     },
     "TIME": {
         "AFEWSECONDS": "Nokkrar sekúndur",

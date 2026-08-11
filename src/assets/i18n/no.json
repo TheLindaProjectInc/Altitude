@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimer til skuffen i stedet for oppgavelinjen",
                 "MINIMIZEONCLOSE": "Minimer på nært hold",
                 "BEHAVIOURTITLE": "Systemstatus og vinduoppførsel"
+            },
+            "BACKUPTAB": "Sikkerhetskopiering",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatisk sikkerhetskopiering",
+                "ENABLED": "Ta automatisk sikkerhetskopi av wallet.dat hver 14. dag",
+                "ENABLEDINFO": "Oppretter en ny sikkerhetskopi av lommebokfilen din etter en tidsplan, slik at en nylig kopi alltid er tilgjengelig hvis noe går galt.",
+                "LASTBACKUP": "Siste sikkerhetskopi:",
+                "NEVERBACKEDUP": "Ingen automatisk sikkerhetskopiering er gjort ennå.",
+                "BACKUPNOWBUTTON": "Sikkerhetskopier nå",
+                "LOCATIONTITLE": "Sikkerhetskopieringsplassering",
+                "LOCATIONINFO": "Der automatiske sikkerhetskopier lagres. Standard er en sikkerhetskopieringsmappe i lommebokens datakatalog.",
+                "BROWSEBUTTON": "Bla gjennom...",
+                "RESETBUTTON": "Tilbakestill til standard",
+                "PRUNETITLE": "Sikkerhetskopieringshistorikk",
+                "PRUNEINFO": "Eldre automatiske sikkerhetskopier slettes, slik at denne mappen ikke vokser for alltid – bare de nyeste nedenfor beholdes.",
+                "KEEPCOUNTLABEL": "Behold sist",
+                "INTERVALLABEL": "Sikkerhetskopier hver (dag)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Kutte opp",
             "CONTEXTMENUCOPY": "Kopiere",
-            "CONTEXTMENUPASTE": "Lim inn"
+            "CONTEXTMENUPASTE": "Lim inn",
+            "CONTEXTMENUSELECTALL": "Velg alle"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Advarsel! Du er ikke på hovedkjeden i følge Metrix explorer. Det anbefales på det sterkeste å synkronisere eller starte opp igjen-omstrømming av blockchain for å unngå tap av mynter."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ingen offentlig IP-adresse funnet. Sjekk internettforbindelsen din og start Altitude på nytt.",
         "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode...",
         "REPORTINGISSUE": "Få diagnostisk informasjon... Denne informasjonen vil bli kopiert til utklippstavlen.",
-        "WALLETUPDATEDOWNLOADING": "Laster ned oppdateringen..."
+        "WALLETUPDATEDOWNLOADING": "Laster ned oppdateringen...",
+        "WALLETBACKUPFAILED": "Automatisk sikkerhetskopiering av lommeboken mislyktes – sjekk plasseringen av sikkerhetskopien og tilgjengelig diskplass"
     },
     "TIME": {
         "AFEWSECONDS": "Noen få sekunder",

@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizējiet uz paplātes uzdevumjoslas vietā",
                 "MINIMIZEONCLOSE": "Samaziniet to tuvu",
                 "BEHAVIOURTITLE": "Sistēmas teknes un loga darbība"
+            },
+            "BACKUPTAB": "Rezerves kopija",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automātiska dublēšana",
+                "ENABLED": "Automātiski dublēt wallet.dat ik pēc 14 dienām",
+                "ENABLEDINFO": "Pēc grafika izveido jaunu maka faila dublējumu, lai vienmēr būtu pieejama jaunākā kopija, ja kaut kas noiet greizi.",
+                "LASTBACKUP": "Pēdējā dublēšana:",
+                "NEVERBACKEDUP": "Automātiska dublēšana vēl nav veikta.",
+                "BACKUPNOWBUTTON": "Dublēt tūlīt",
+                "LOCATIONTITLE": "Rezerves atrašanās vieta",
+                "LOCATIONINFO": "Kur tiek saglabātas automātiskās dublējumkopijas. Noklusējuma iestatījums ir dublējuma mape jūsu maka datu direktorijā.",
+                "BROWSEBUTTON": "Pārlūkot...",
+                "RESETBUTTON": "Atiestatīt uz noklusējuma iestatījumiem",
+                "PRUNETITLE": "Dublēšanas vēsture",
+                "PRUNEINFO": "Vecākās automātiskās dublējumkopijas tiek dzēstas, lai šī mape neaugtu mūžīgi — tiek saglabātas tikai jaunākās, kas atrodas zemāk.",
+                "KEEPCOUNTLABEL": "Paturēt pēdējo",
+                "INTERVALLABEL": "Dublēt ik pēc (dienām)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Griezt",
             "CONTEXTMENUCOPY": "Kopēt",
-            "CONTEXTMENUPASTE": "Ielīmēt"
+            "CONTEXTMENUPASTE": "Ielīmēt",
+            "CONTEXTMENUSELECTALL": "Atlasīt visu"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Brīdinājums! Pēc Metrix pētnieka teiktā, jūs neatrodaties galvenajā ķēdē. Lai izvairītos no monētu pazaudēšanas, ir ļoti ieteicams atkārtoti sinhronizēt vai atkārtoti iestrādāt bloķēšanas ķēdi."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Netika atrasta publiskā IP adrese. Pārbaudiet savu interneta savienojumu un restartējiet augstumu.",
         "CONFIGURINGLOCALMN": "Vietējā Masternode konfigurēšana...",
         "REPORTINGISSUE": "Notiek diagnostikas informācijas iegūšana... Šī informācija tiks kopēta jūsu starpliktuvē.",
-        "WALLETUPDATEDOWNLOADING": "Notiek atjauninājuma lejupielāde..."
+        "WALLETUPDATEDOWNLOADING": "Notiek atjauninājuma lejupielāde...",
+        "WALLETBACKUPFAILED": "Automātiska maka dublēšana neizdevās. Pārbaudiet dublējuma atrašanās vietu un pieejamo vietu diskā."
     },
     "TIME": {
         "AFEWSECONDS": "Dažas sekundes",

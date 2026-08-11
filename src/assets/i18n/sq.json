@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizo në tabaka në vend të shiritit të programit",
                 "MINIMIZEONCLOSE": "Minimizo me afër",
                 "BEHAVIOURTITLE": "Sjellja e tabakasë së sistemit dhe dritares"
+            },
+            "BACKUPTAB": "Rezervë",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Rezervim Automatik",
+                "ENABLED": "Krijo automatikisht kopje rezervë të wallet.dat çdo 14 ditë",
+                "ENABLEDINFO": "Krijon një kopje rezervë të skedarit të portofolit tuaj sipas një orari, kështu që një kopje e fundit është gjithmonë e disponueshme nëse diçka shkon keq.",
+                "LASTBACKUP": "Rezervimi i fundit:",
+                "NEVERBACKEDUP": "Ende nuk është bërë asnjë kopje rezervë automatike.",
+                "BACKUPNOWBUTTON": "Krijo kopje rezervë tani",
+                "LOCATIONTITLE": "Vendndodhja e Rezervës",
+                "LOCATIONINFO": "Ku ruhen kopjet rezervë automatike. Parazgjedhja është një dosje kopjesh rezervë brenda direktorisë së të dhënave të portofolit tuaj.",
+                "BROWSEBUTTON": "Shfleto...",
+                "RESETBUTTON": "Rivendos në gjendjen fillestare",
+                "PRUNETITLE": "Historiku i Rezervimit",
+                "PRUNEINFO": "Kopjet rezervë automatike më të vjetra fshihen në mënyrë që kjo dosje të mos rritet përgjithmonë - ruhen vetëm ato më të fundit më poshtë.",
+                "KEEPCOUNTLABEL": "Mbajeni të fundit",
+                "INTERVALLABEL": "Krijo kopje rezervë çdo (ditë)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Prerje",
             "CONTEXTMENUCOPY": "kopje",
-            "CONTEXTMENUPASTE": "Ngjit"
+            "CONTEXTMENUPASTE": "Ngjit",
+            "CONTEXTMENUSELECTALL": "Zgjidh të gjitha"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warning! Ju nuk jeni në zinxhirin kryesor sipas eksploruesit Metrix. Rekomandohet shumë të sinkronizoni ose rihapni skedarët tuaj për të shmangur humbjen e ndonjë monedhe."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nuk u gjet asnjë adresë IP publike. Kontrolloni lidhjen tuaj në internet dhe rinisni Lartësinë.",
         "CONFIGURINGLOCALMN": "Konfigurimi i Masternode lokale...",
         "REPORTINGISSUE": "Marrja e informacionit diagnostikues... Ky informacion do të kopjohet në dërrasën tuaj.",
-        "WALLETUPDATEDOWNLOADING": "Duke shkarkuar përditësimin..."
+        "WALLETUPDATEDOWNLOADING": "Duke shkarkuar përditësimin...",
+        "WALLETBACKUPFAILED": "Rezervimi automatik i portofolit dështoi - kontrolloni vendndodhjen e rezervimit dhe hapësirën e disponueshme në disk"
     },
     "TIME": {
         "AFEWSECONDS": "Disa sekonda",

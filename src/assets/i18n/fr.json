@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Réduire dans la barre d'état au lieu de la barre des tâches",
                 "MINIMIZEONCLOSE": "Minimiser à la fermeture",
                 "BEHAVIOURTITLE": "Comportement de la barre d'état système et de la fenêtre"
+            },
+            "BACKUPTAB": "Sauvegarde",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Sauvegarde automatique",
+                "ENABLED": "Sauvegarde automatique du fichier wallet.dat tous les 14 jours",
+                "ENABLEDINFO": "Crée une nouvelle sauvegarde de votre fichier de portefeuille à intervalles réguliers, afin qu'une copie récente soit toujours disponible en cas de problème.",
+                "LASTBACKUP": "Dernière sauvegarde :",
+                "NEVERBACKEDUP": "Aucune sauvegarde automatique n'a encore été effectuée.",
+                "BACKUPNOWBUTTON": "Sauvegarder maintenant",
+                "LOCATIONTITLE": "Emplacement de sauvegarde",
+                "LOCATIONINFO": "Emplacement des sauvegardes automatiques. Par défaut, un dossier de sauvegarde situé dans le répertoire de données de votre portefeuille.",
+                "BROWSEBUTTON": "Parcourir...",
+                "RESETBUTTON": "Réinitialiser par défaut",
+                "PRUNETITLE": "Historique des sauvegardes",
+                "PRUNEINFO": "Les sauvegardes automatiques les plus anciennes sont supprimées afin que ce dossier ne s'allonge pas indéfiniment ; seules les plus récentes, ci-dessous, sont conservées.",
+                "KEEPCOUNTLABEL": "Conservez le dernier",
+                "INTERVALLABEL": "Sauvegarder tous les (jours)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Couper",
             "CONTEXTMENUCOPY": "Copie",
-            "CONTEXTMENUPASTE": "Coller"
+            "CONTEXTMENUPASTE": "Coller",
+            "CONTEXTMENUSELECTALL": "Tout sélectionner"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Attention! Vous n'êtes pas sur la chaîne principale selon l'explorateur Metrix. Il est fortement recommandé de resynchroniser ou de redémarrer votre blockchain pour éviter la perte de pièces."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Aucune adresse IP publique trouvée. Vérifiez votre connexion Internet et redémarrez Altitude.",
         "CONFIGURINGLOCALMN": "Configuration du masternode local...",
         "REPORTINGISSUE": "Obtenir des informations de diagnostic... Ces informations seront copiées dans votre presse-papiers.",
-        "WALLETUPDATEDOWNLOADING": "Téléchargement de la mise à jour..."
+        "WALLETUPDATEDOWNLOADING": "Téléchargement de la mise à jour...",
+        "WALLETBACKUPFAILED": "La sauvegarde automatique du portefeuille a échoué : vérifiez l’emplacement de votre sauvegarde et l’espace disque disponible."
     },
     "TIME": {
         "AFEWSECONDS": "Quelques secondes",

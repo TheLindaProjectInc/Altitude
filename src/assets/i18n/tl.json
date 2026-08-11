@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "I-minimize ang tray sa halip na ang taskbar",
                 "MINIMIZEONCLOSE": "I-minimize sa malapit",
                 "BEHAVIOURTITLE": "Pag-uugali ng System Tray at Window"
+            },
+            "BACKUPTAB": "Pag-backup",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Awtomatikong Pag-backup",
+                "ENABLED": "Awtomatikong i-backup ang wallet.dat kada 14 na araw",
+                "ENABLEDINFO": "Gumagawa ng panibagong backup ng iyong wallet file sa isang iskedyul, para laging may available na bagong kopya kung sakaling may magkamali.",
+                "LASTBACKUP": "Huling backup:",
+                "NEVERBACKEDUP": "Wala pang awtomatikong backup na nagawa.",
+                "BACKUPNOWBUTTON": "Mag-backup Ngayon",
+                "LOCATIONTITLE": "Lokasyon ng Pag-backup",
+                "LOCATIONINFO": "Kung saan sine-save ang mga awtomatikong backup. Naka-default sa isang backup folder sa loob ng data directory ng iyong wallet.",
+                "BROWSEBUTTON": "Mag-browse...",
+                "RESETBUTTON": "I-reset sa Default",
+                "PRUNETITLE": "Kasaysayan ng Pag-backup",
+                "PRUNEINFO": "Ang mga lumang awtomatikong pag-backup ay binubura kaya hindi lalago nang tuluyan ang folder na ito - tanging ang mga pinakabago lamang sa ibaba ang itinatago.",
+                "KEEPCOUNTLABEL": "Panatilihing huli",
+                "INTERVALLABEL": "Mag-backup kada (araw)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Kunin",
             "CONTEXTMENUCOPY": "Kopya",
-            "CONTEXTMENUPASTE": "I-paste"
+            "CONTEXTMENUPASTE": "I-paste",
+            "CONTEXTMENUSELECTALL": "Piliin Lahat"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Babala! Wala ka sa pangunahing kadena ayon sa explorer ng Metrix. Lubhang inirerekumenda na muling i-sync o muling bootstrap ang iyong blockchain upang maiwasan ang pagkawala ng anumang mga barya."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Walang nakitang pampublikong IP address. Suriin ang iyong koneksyon sa internet at i-restart ang Altitude.",
         "CONFIGURINGLOCALMN": "Pag-configure ng lokal na Masternode...",
         "REPORTINGISSUE": "Pagkuha ng impormasyon ng diagnostic... Ang impormasyong ito ay makopya sa iyong clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Dina-download ang update..."
+        "WALLETUPDATEDOWNLOADING": "Dina-download ang update...",
+        "WALLETBACKUPFAILED": "Nabigo ang awtomatikong pag-backup ng wallet - suriin ang lokasyon ng iyong backup at magagamit na espasyo sa disk"
     },
     "TIME": {
         "AFEWSECONDS": "Mga ilang segundo",

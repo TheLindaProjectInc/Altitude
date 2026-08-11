@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimieren Sie das Tablett anstelle der Taskleiste",
                 "MINIMIZEONCLOSE": "Beim Schließen minimieren",
                 "BEHAVIOURTITLE": "Systemleiste & Fensterverhalten"
+            },
+            "BACKUPTAB": "Backup",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatische Datensicherung",
+                "ENABLED": "Die Datei wallet.dat wird automatisch alle 14 Tage gesichert.",
+                "ENABLEDINFO": "Erstellt regelmäßig eine neue Sicherungskopie Ihrer Wallet-Datei, sodass im Fehlerfall immer eine aktuelle Kopie verfügbar ist.",
+                "LASTBACKUP": "Letzte Sicherung:",
+                "NEVERBACKEDUP": "Es wurde noch keine automatische Datensicherung erstellt.",
+                "BACKUPNOWBUTTON": "Jetzt sichern",
+                "LOCATIONTITLE": "Sicherungsort",
+                "LOCATIONINFO": "Hier werden automatische Backups gespeichert. Standardmäßig in einem Backup-Ordner innerhalb des Datenverzeichnisses Ihrer Wallet.",
+                "BROWSEBUTTON": "Durchsuchen...",
+                "RESETBUTTON": "Auf Standardwerte zurücksetzen",
+                "PRUNETITLE": "Sicherungsverlauf",
+                "PRUNEINFO": "Ältere automatische Backups werden gelöscht, damit dieser Ordner nicht unendlich wächst – es werden nur die neuesten Backups unten aufbewahrt.",
+                "KEEPCOUNTLABEL": "Letzten Tag behalten",
+                "INTERVALLABEL": "Sichern Sie alle (Tage)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Schnitt",
             "CONTEXTMENUCOPY": "Kopieren",
-            "CONTEXTMENUPASTE": "Einfügen"
+            "CONTEXTMENUPASTE": "Einfügen",
+            "CONTEXTMENUSELECTALL": "Alle auswählen"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warnung! Sie befinden sich laut Metrix Explorer nicht in der Hauptkette. Es wird dringend empfohlen, die Blockchain neu zu synchronisieren oder neu zu starten, um den Verlust von Münzen zu vermeiden."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Keine öffentliche IP-Adresse gefunden. Überprüfen Sie Ihre Internetverbindung und starten Sie Altitude neu.",
         "CONFIGURINGLOCALMN": "Konfigurieren des lokalen Masterknotens...",
         "REPORTINGISSUE": "Diagnoseinformationen abrufen... Diese Informationen werden in Ihre Zwischenablage kopiert.",
-        "WALLETUPDATEDOWNLOADING": "Update wird heruntergeladen..."
+        "WALLETUPDATEDOWNLOADING": "Update wird heruntergeladen...",
+        "WALLETBACKUPFAILED": "Automatische Wallet-Sicherung fehlgeschlagen – überprüfen Sie den Speicherort Ihrer Sicherung und den verfügbaren Speicherplatz."
     },
     "TIME": {
         "AFEWSECONDS": "Ein paar Sekunden",

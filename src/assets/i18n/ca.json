@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimitza a la safata en comptes de la barra de tasques",
                 "MINIMIZEONCLOSE": "Minimitza al tancament",
                 "BEHAVIOURTITLE": "Comportament de la safata del sistema i de la finestra"
+            },
+            "BACKUPTAB": "Còpia de seguretat",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Còpia de seguretat automàtica",
+                "ENABLED": "Fes una còpia de seguretat automàtica de wallet.dat cada 14 dies",
+                "ENABLEDINFO": "Crea una còpia de seguretat recent del fitxer del moneder de forma programada, de manera que sempre hi ha una còpia recent disponible si alguna cosa va malament.",
+                "LASTBACKUP": "Última còpia de seguretat:",
+                "NEVERBACKEDUP": "Encara no s'ha fet cap còpia de seguretat automàtica.",
+                "BACKUPNOWBUTTON": "Fes una còpia de seguretat ara",
+                "LOCATIONTITLE": "Ubicació de còpia de seguretat",
+                "LOCATIONINFO": "On es desen les còpies de seguretat automàtiques. Per defecte, es troba en una carpeta de còpies de seguretat dins del directori de dades del moneder.",
+                "BROWSEBUTTON": "Navega...",
+                "RESETBUTTON": "Restableix els valors predeterminats",
+                "PRUNETITLE": "Historial de còpies de seguretat",
+                "PRUNEINFO": "Les còpies de seguretat automàtiques més antigues s'eliminen perquè aquesta carpeta no creixi per sempre; només es conserven les més recents que hi ha a continuació.",
+                "KEEPCOUNTLABEL": "Mantenir l'últim",
+                "INTERVALLABEL": "Còpia de seguretat cada (dies)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Tallar",
             "CONTEXTMENUCOPY": "Copia",
-            "CONTEXTMENUPASTE": "Enganxar"
+            "CONTEXTMENUPASTE": "Enganxar",
+            "CONTEXTMENUSELECTALL": "Selecciona-ho tot"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Avís! Segons l'explorador Metrix no es troba a la cadena principal. És molt recomanable tornar a sincronitzar o tornar a arrencar el blocatge per evitar la pèrdua de monedes."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "No s’ha trobat cap adreça IP pública. Comproveu la vostra connexió a Internet i reinicieu Altitude.",
         "CONFIGURINGLOCALMN": "Configuració de Masternode local...",
         "REPORTINGISSUE": "Obtenció d'informació de diagnòstic... Aquesta informació es copiarà al porta-retalls.",
-        "WALLETUPDATEDOWNLOADING": "S'està descarregant l'actualització..."
+        "WALLETUPDATEDOWNLOADING": "S'està descarregant l'actualització...",
+        "WALLETBACKUPFAILED": "La còpia de seguretat automàtica del moneder ha fallat: comproveu la ubicació de la còpia de seguretat i l'espai de disc disponible."
     },
     "TIME": {
         "AFEWSECONDS": "Uns pocs segons",

@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "タスクバーではなくトレイに最小化する",
                 "MINIMIZEONCLOSE": "終了時に最小化",
                 "BEHAVIOURTITLE": "システムトレイとウィンドウの動作"
+            },
+            "BACKUPTAB": "バックアップ",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "自動バックアップ",
+                "ENABLED": "wallet.datを14日ごとに自動的にバックアップします。",
+                "ENABLEDINFO": "ウォレットファイルの最新バックアップを定期的に作成するため、万が一問題が発生した場合でも、常に最新のコピーを利用できます。",
+                "LASTBACKUP": "最終バックアップ:",
+                "NEVERBACKEDUP": "自動バックアップはまだ実行されていません。",
+                "BACKUPNOWBUTTON": "今すぐバックアップ",
+                "LOCATIONTITLE": "バックアップ場所",
+                "LOCATIONINFO": "自動バックアップの保存場所。デフォルトでは、ウォレットのデータディレクトリ内のバックアップフォルダに保存されます。",
+                "BROWSEBUTTON": "ブラウズ...",
+                "RESETBUTTON": "初期設定に戻す",
+                "PRUNETITLE": "バックアップ履歴",
+                "PRUNEINFO": "古い自動バックアップは削除されるため、このフォルダは際限なく肥大化せず、最新のものだけが保持されます。",
+                "KEEPCOUNTLABEL": "最後",
+                "INTERVALLABEL": "（日）ごとにバックアップしてください"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "カット",
             "CONTEXTMENUCOPY": "コピーする",
-            "CONTEXTMENUPASTE": "ペースト"
+            "CONTEXTMENUPASTE": "ペースト",
+            "CONTEXTMENUSELECTALL": "すべて選択"
         },
         "MAINCHAINCHECK": {
             "ALERT": "警告！ Metrixエクスプローラーによると、メインチェーン上にはいません。コインの損失を防ぐために、ブロックチェーンを再同期または再ブートストラップすることを強くお勧めします。"
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "パブリックIPアドレスが見つかりません。インターネット接続を確認して、Altitudeを再起動してください。",
         "CONFIGURINGLOCALMN": "ローカルマスターノードを設定しています...",
         "REPORTINGISSUE": "診断情報を取得しています...この情報はクリップボードにコピーされます。",
-        "WALLETUPDATEDOWNLOADING": "アップデートをダウンロードしています..."
+        "WALLETUPDATEDOWNLOADING": "アップデートをダウンロードしています...",
+        "WALLETBACKUPFAILED": "ウォレットの自動バックアップに失敗しました - バックアップ場所と利用可能なディスク容量を確認してください"
     },
     "TIME": {
         "AFEWSECONDS": "数秒",

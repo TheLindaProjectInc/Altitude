@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimalizujte na zásobník místo na hlavním panelu",
                 "MINIMIZEONCLOSE": "Minimalizujte při zavření",
                 "BEHAVIOURTITLE": "Chování systémové lišty a okna"
+            },
+            "BACKUPTAB": "Zálohování",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatické zálohování",
+                "ENABLED": "Automaticky zálohovat soubor wallet.dat každých 14 dní",
+                "ENABLEDINFO": "Vytvoří novou zálohu souboru vaší peněženky podle plánu, takže v případě problémů máte vždy k dispozici aktuální kopii.",
+                "LASTBACKUP": "Poslední záloha:",
+                "NEVERBACKEDUP": "Zatím nebylo provedeno žádné automatické zálohování.",
+                "BACKUPNOWBUTTON": "Zálohovat nyní",
+                "LOCATIONTITLE": "Záložní umístění",
+                "LOCATIONINFO": "Kam se ukládají automatické zálohy. Výchozí nastavení je složka záloh v datovém adresáři vaší peněženky.",
+                "BROWSEBUTTON": "Prohlížet...",
+                "RESETBUTTON": "Obnovit výchozí nastavení",
+                "PRUNETITLE": "Historie záloh",
+                "PRUNEINFO": "Starší automatické zálohy se smažou, aby se tato složka nerozrůstala donekonečna – zachovají se pouze ty nejnovější níže.",
+                "KEEPCOUNTLABEL": "Nechte poslední",
+                "INTERVALLABEL": "Zálohovat každých (dnů)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Střih",
             "CONTEXTMENUCOPY": "kopírovat",
-            "CONTEXTMENUPASTE": "Vložit"
+            "CONTEXTMENUPASTE": "Vložit",
+            "CONTEXTMENUSELECTALL": "Vybrat vše"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Varování! Podle průzkumníka Metrix nejste na hlavním řetězci. Důrazně doporučujeme znovu synchronizovat nebo znovu zavést vaši blockchain, aby nedošlo ke ztrátě jakýchkoli mincí."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nebyla nalezena žádná veřejná IP adresa. Zkontrolujte připojení k internetu a restartujte Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurace místního masternodu...",
         "REPORTINGISSUE": "Získání diagnostických informací... Tyto informace budou zkopírovány do vaší schránky.",
-        "WALLETUPDATEDOWNLOADING": "Stahování aktualizace..."
+        "WALLETUPDATEDOWNLOADING": "Stahování aktualizace...",
+        "WALLETBACKUPFAILED": "Automatické zálohování peněženky selhalo – zkontrolujte umístění zálohy a dostupné místo na disku."
     },
     "TIME": {
         "AFEWSECONDS": "Pár sekund",

@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Zminimalizuj do zasobnika zamiast paska zadań",
                 "MINIMIZEONCLOSE": "Zminimalizuj przy zamknięciu",
                 "BEHAVIOURTITLE": "Zachowanie zasobnika systemowego i okien"
+            },
+            "BACKUPTAB": "Kopia zapasowa",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatyczne tworzenie kopii zapasowych",
+                "ENABLED": "Automatycznie twórz kopię zapasową pliku wallet.dat co 14 dni",
+                "ENABLEDINFO": "Tworzy nową kopię zapasową pliku portfela zgodnie z harmonogramem, dzięki czemu zawsze masz dostęp do najnowszej kopii, jeśli coś pójdzie nie tak.",
+                "LASTBACKUP": "Ostatnia kopia zapasowa:",
+                "NEVERBACKEDUP": "Automatyczna kopia zapasowa nie została jeszcze utworzona.",
+                "BACKUPNOWBUTTON": "Utwórz kopię zapasową teraz",
+                "LOCATIONTITLE": "Lokalizacja kopii zapasowej",
+                "LOCATIONINFO": "Miejsce zapisywania automatycznych kopii zapasowych. Domyślnie jest to folder kopii zapasowych w katalogu danych portfela.",
+                "BROWSEBUTTON": "Przeglądać...",
+                "RESETBUTTON": "Przywróć ustawienia domyślne",
+                "PRUNETITLE": "Historia kopii zapasowych",
+                "PRUNEINFO": "Starsze automatyczne kopie zapasowe są usuwane, więc ten folder nie rozrasta się w nieskończoność — przechowywane są tylko najnowsze kopie poniżej.",
+                "KEEPCOUNTLABEL": "Zachowaj na końcu",
+                "INTERVALLABEL": "Kopia zapasowa co (dni)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Ciąć",
             "CONTEXTMENUCOPY": "Kopiuj",
-            "CONTEXTMENUPASTE": "Pasta"
+            "CONTEXTMENUPASTE": "Pasta",
+            "CONTEXTMENUSELECTALL": "Zaznacz wszystko"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Ostrzeżenie! Według eksploratora Metrix nie jesteś w głównym łańcuchu. Zdecydowanie zaleca się ponowną synchronizację lub ponowne ładowanie łańcucha bloków, aby uniknąć utraty jakichkolwiek monet."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nie znaleziono publicznego adresu IP. Sprawdź połączenie internetowe i uruchom ponownie Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurowanie lokalnego masternode...",
         "REPORTINGISSUE": "Uzyskiwanie informacji diagnostycznych... Informacje te zostaną skopiowane do schowka.",
-        "WALLETUPDATEDOWNLOADING": "Pobieranie aktualizacji..."
+        "WALLETUPDATEDOWNLOADING": "Pobieranie aktualizacji...",
+        "WALLETBACKUPFAILED": "Nie udało się utworzyć automatycznej kopii zapasowej portfela – sprawdź lokalizację kopii zapasowej i dostępną przestrzeń na dysku"
     },
     "TIME": {
         "AFEWSECONDS": "Kilka sekund",

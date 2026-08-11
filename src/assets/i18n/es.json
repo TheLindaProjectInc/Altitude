@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizar a la bandeja en lugar de la barra de tareas",
                 "MINIMIZEONCLOSE": "Minimizar al cerrar",
                 "BEHAVIOURTITLE": "Comportamiento de la bandeja del sistema y de la ventana"
+            },
+            "BACKUPTAB": "Respaldo",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Copia de seguridad automática",
+                "ENABLED": "Realizar una copia de seguridad automática de wallet.dat cada 14 días.",
+                "ENABLEDINFO": "Crea una copia de seguridad actualizada de tu archivo de billetera periódicamente, de modo que siempre tengas una copia reciente disponible si algo sale mal.",
+                "LASTBACKUP": "Última copia de seguridad:",
+                "NEVERBACKEDUP": "Aún no se ha realizado ninguna copia de seguridad automática.",
+                "BACKUPNOWBUTTON": "Retrocede ahora",
+                "LOCATIONTITLE": "Ubicación de respaldo",
+                "LOCATIONINFO": "Dónde se guardan las copias de seguridad automáticas. Por defecto, se guarda en una carpeta de copias de seguridad dentro del directorio de datos de su billetera.",
+                "BROWSEBUTTON": "Navegar...",
+                "RESETBUTTON": "Restablecer a valores predeterminados",
+                "PRUNETITLE": "Historial de copias de seguridad",
+                "PRUNEINFO": "Las copias de seguridad automáticas más antiguas se eliminan para que esta carpeta no crezca indefinidamente; solo se conservan las más recientes que aparecen a continuación.",
+                "KEEPCOUNTLABEL": "Mantener al último",
+                "INTERVALLABEL": "Realizar una copia de seguridad cada (días)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cortar",
             "CONTEXTMENUCOPY": "Dupdo",
-            "CONTEXTMENUPASTE": "Pegar"
+            "CONTEXTMENUPASTE": "Pegar",
+            "CONTEXTMENUSELECTALL": "Seleccionar todo"
         },
         "MAINCHAINCHECK": {
             "ALERT": "¡Advertencia! No estás en la cadena principal según el explorador Metrix. Se recomienda volver a sincronizar o reiniciar su blockchain para evitar la pérdida de monedas."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "No se encontró una dirección IP pública. Comprueba tu conexión a internet y reinicia Altitude.",
         "CONFIGURINGLOCALMN": "Configurando Masternode local...",
         "REPORTINGISSUE": "Obteniendo información de diagnóstico... Esta información se copiará en su portapapeles.",
-        "WALLETUPDATEDOWNLOADING": "Descargando actualización..."
+        "WALLETUPDATEDOWNLOADING": "Descargando actualización...",
+        "WALLETBACKUPFAILED": "Falló la copia de seguridad automática de la cartera: compruebe la ubicación de la copia de seguridad y el espacio disponible en el disco."
     },
     "TIME": {
         "AFEWSECONDS": "Unos pocos segundos",

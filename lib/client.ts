@@ -53,6 +53,8 @@ export default class Client {
   chain: ChainType = ChainType.MAINNET;
   // when using hash of unknown daemon assume version
   readonly assumeClientVersion = "4.1.0.0";
+  // periodic wallet.dat backup
+  walletBackupCheckTimer: NodeJS.Timeout;
 
   constructor(win) {
     this.win = win;
@@ -145,6 +147,12 @@ export default class Client {
           break;
         case "CHECKBOOTSTRAP":
           this.checkBootstrap();
+          break;
+        case "DEFAULTBACKUPLOCATION":
+          this.sendDefaultBackupLocation();
+          break;
+        case "BACKUPWALLETNOW":
+          this.checkWalletBackup(true);
           break;
         case "RESYNC":
           this.resyncClient();
@@ -370,6 +378,85 @@ export default class Client {
       this.rpcRunning = true;
       this.sendRPCStatus();
       log.info("Client", "RPC Ready");
+      this.checkWalletBackup();
+      this.scheduleWalletBackupCheck();
+    }
+  }
+
+  // rechecks periodically in case the app is left running for a long time - the actual
+  // "is a backup due" decision lives in checkWalletBackup() and is safe to call as often
+  // as we like, so this interval is just how promptly an overdue backup gets noticed
+  scheduleWalletBackupCheck() {
+    if (this.walletBackupCheckTimer) clearTimeout(this.walletBackupCheckTimer);
+    this.walletBackupCheckTimer = setTimeout(() => {
+      this.checkWalletBackup();
+      this.scheduleWalletBackupCheck();
+    }, 12 * 60 * 60 * 1000);
+  }
+
+  // force=true (from the options page's "Back up now" action) skips both the
+  // enabled and interval checks - an explicit user action always runs regardless
+  async checkWalletBackup(force = false) {
+    try {
+      const appSettings = settings.getSettings();
+      if (!force) {
+        if (!appSettings.walletBackupEnabled) return;
+        const intervalMs = (appSettings.walletBackupIntervalDays || 14) * 24 * 60 * 60 * 1000;
+        if (appSettings.lastWalletBackup && Date.now() - appSettings.lastWalletBackup < intervalMs) return;
+      }
+
+      const folder = appSettings.walletBackupLocation || this.defaultWalletBackupLocation();
+      await helpers.ensureDirectoryExists(folder);
+      const filename = `wallet-${this.backupTimestamp()}.dat`;
+      const destination = path.join(folder, filename);
+      log.info("Client", "Backing up wallet to", destination);
+      const res: any = await this.callClient("backupwallet", [destination]);
+      if (!res.success) {
+        log.error("Client", "Wallet backup failed", res.body || res.error);
+        this.sendWalletBackupResult(false);
+        return;
+      }
+      settings.set_lastWalletBackup(Date.now());
+      log.info("Client", "Wallet backup complete");
+      await this.pruneWalletBackups(folder, appSettings.walletBackupKeepCount);
+      this.sendWalletBackupResult(true);
+    } catch (ex) {
+      log.error("Client", "Wallet backup failed", ex);
+      this.sendWalletBackupResult(false);
+    }
+  }
+
+  sendWalletBackupResult(success: boolean) {
+    if (this.win) this.win.webContents.send("client-node", "WALLETBACKUPRESULT", { success });
+  }
+
+  defaultWalletBackupLocation(): string {
+    return path.join(this.clientDataDir, "backup");
+  }
+
+  sendDefaultBackupLocation() {
+    if (this.win) this.win.webContents.send("client-node", "DEFAULTBACKUPLOCATION", this.defaultWalletBackupLocation());
+  }
+
+  private backupTimestamp(): string {
+    // filesystem-safe (no colons) and sorts chronologically as a plain string
+    return new Date().toISOString().replace(/:/g, "-").replace(/\..+/, "");
+  }
+
+  // only ever removes files matching our own "wallet-<timestamp>.dat" naming pattern,
+  // so anything else the user has placed in the backup folder is left alone
+  async pruneWalletBackups(folder: string, keepCount: number) {
+    if (!keepCount || keepCount < 1) return;
+    try {
+      const entries = await fs.promises.readdir(folder);
+      const backups = entries.filter((name) => /^wallet-.+\.dat$/.test(name)).sort();
+      const excess = backups.length - keepCount;
+      for (let i = 0; i < excess; i++) {
+        await helpers.deleteFile(path.join(folder, backups[i]));
+        log.info("Client", "Pruned old wallet backup", backups[i]);
+      }
+    } catch (ex) {
+      log.error("Client", "Failed to prune wallet backups", ex);
     }
   }
 

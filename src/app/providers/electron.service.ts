@@ -23,12 +23,14 @@ export class ElectronService {
   downloadProgress: any = {};
   extractProgress: any = {};
   bootstrapSpace: { required: number, free: number } = { required: 0, free: 0 };
+  defaultBackupLocation: string = '';
 
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
   @Output() checkUpdateEvent: EventEmitter<any> = new EventEmitter();
   @Output() languageChangedEvent: EventEmitter<any> = new EventEmitter();
   @Output() RPCResponseEvent: EventEmitter<any> = new EventEmitter();
+  @Output() walletBackupResultEvent: EventEmitter<{ success: boolean }> = new EventEmitter();
 
   constructor(
     private translate: TranslateService,
@@ -84,6 +86,12 @@ export class ElectronService {
           case 'BOOTSTRAPSPACE':
             this.bootstrapSpace = data;
             break;
+          case 'DEFAULTBACKUPLOCATION':
+            this.defaultBackupLocation = data;
+            break;
+          case 'WALLETBACKUPRESULT':
+            this.walletBackupResultEvent.emit(data);
+            break;
           case 'STATUS':
             this.clientStatusEvent.emit(data);
             break;
@@ -118,6 +126,12 @@ export class ElectronService {
     this.ipcRenderer.send('client-node', 'CHAIN');
     // ask for ip address
     this.ipcRenderer.send('client-node', 'IP');
+    // ask for the default wallet backup location
+    this.ipcRenderer.send('client-node', 'DEFAULTBACKUPLOCATION');
+  }
+
+  public backupWalletNow() {
+    this.ipcRenderer.send('client-node', 'BACKUPWALLETNOW');
   }
 
   connectSettingsIPC() {

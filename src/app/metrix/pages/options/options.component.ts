@@ -92,6 +92,38 @@ export class OptionsComponent implements OnInit {
     this.electron.ipcRenderer.send('settings', 'SETONLYNET', net);
   }
 
+  setWalletBackupEnabled() {
+    this.electron.ipcRenderer.send('settings', 'SETWALLETBACKUPENABLED', this.electron.settings.walletBackupEnabled);
+  }
+
+  setWalletBackupLocation() {
+    this.electron.ipcRenderer.send('settings', 'SETWALLETBACKUPLOCATION', this.electron.settings.walletBackupLocation);
+  }
+
+  async browseWalletBackupLocation() {
+    const result = await this.electron.remote.dialog.showOpenDialog({ properties: ['openDirectory', 'createDirectory'] });
+    if (result.canceled || !result.filePaths.length) return;
+    this.electron.settings.walletBackupLocation = result.filePaths[0];
+    this.setWalletBackupLocation();
+  }
+
+  resetWalletBackupLocation() {
+    this.electron.settings.walletBackupLocation = '';
+    this.setWalletBackupLocation();
+  }
+
+  setWalletBackupKeepCount() {
+    this.electron.ipcRenderer.send('settings', 'SETWALLETBACKUPKEEPCOUNT', Number(this.electron.settings.walletBackupKeepCount));
+  }
+
+  setWalletBackupIntervalDays() {
+    this.electron.ipcRenderer.send('settings', 'SETWALLETBACKUPINTERVALDAYS', Number(this.electron.settings.walletBackupIntervalDays));
+  }
+
+  backupWalletNow() {
+    this.electron.backupWalletNow();
+  }
+
   restart() {
     this.wallet.stopSyncService();
     if (this.network !== this.electron.chain) {

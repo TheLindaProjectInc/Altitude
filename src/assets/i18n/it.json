@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Riduci al minimo il vassoio anziché la barra delle applicazioni",
                 "MINIMIZEONCLOSE": "Riduci al minimo sulla chiusura",
                 "BEHAVIOURTITLE": "Comportamento del vassoio e della finestra di sistema"
+            },
+            "BACKUPTAB": "Backup",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Backup automatico",
+                "ENABLED": "Esegui automaticamente il backup del file wallet.dat ogni 14 giorni.",
+                "ENABLEDINFO": "Crea una copia di backup aggiornata del file del tuo portafoglio a intervalli regolari, in modo da avere sempre una copia recente disponibile in caso di problemi.",
+                "LASTBACKUP": "Ultimo backup:",
+                "NEVERBACKEDUP": "Non è stato ancora effettuato alcun backup automatico.",
+                "BACKUPNOWBUTTON": "Esegui il backup ora",
+                "LOCATIONTITLE": "Posizione di backup",
+                "LOCATIONINFO": "Dove vengono salvati i backup automatici. Di default, viene salvata una cartella di backup all'interno della directory dei dati del tuo portafoglio.",
+                "BROWSEBUTTON": "Sfoglia...",
+                "RESETBUTTON": "Ripristina le impostazioni predefinite",
+                "PRUNETITLE": "Cronologia dei backup",
+                "PRUNEINFO": "I backup automatici più vecchi vengono eliminati per evitare che questa cartella cresca all'infinito; vengono conservati solo quelli più recenti elencati di seguito.",
+                "KEEPCOUNTLABEL": "Tieni l'ultimo",
+                "INTERVALLABEL": "Eseguire il backup ogni (giorni)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Taglio",
             "CONTEXTMENUCOPY": "copia",
-            "CONTEXTMENUPASTE": "Incolla"
+            "CONTEXTMENUPASTE": "Incolla",
+            "CONTEXTMENUSELECTALL": "Seleziona tutto"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Avvertimento! Non sei sulla catena principale secondo Metrix Explorer. Si consiglia vivamente di risincronizzare o riavviare la blockchain per evitare la perdita di monete."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nessun indirizzo IP pubblico trovato. Controlla la tua connessione Internet e riavvia Altitude.",
         "CONFIGURINGLOCALMN": "Configurazione di Masternode locale...",
         "REPORTINGISSUE": "Ottenere informazioni diagnostiche... Queste informazioni verranno copiate negli Appunti.",
-        "WALLETUPDATEDOWNLOADING": "Download dell'aggiornamento in corso..."
+        "WALLETUPDATEDOWNLOADING": "Download dell'aggiornamento in corso...",
+        "WALLETBACKUPFAILED": "Il backup automatico del portafoglio non è riuscito: verifica la posizione del backup e lo spazio su disco disponibile."
     },
     "TIME": {
         "AFEWSECONDS": "Pochi secondi",

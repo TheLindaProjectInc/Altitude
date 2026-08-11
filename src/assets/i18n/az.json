@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Görev çubuğunun yerinə trayə minimuma endir",
                 "MINIMIZEONCLOSE": "Yaxınlaşdırın",
                 "BEHAVIOURTITLE": "Sistem Tepsisi və Pəncərə Davranışı"
+            },
+            "BACKUPTAB": "Yedəkləmə",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Avtomatik Yedəkləmə",
+                "ENABLED": "Hər 14 gündən bir wallet.dat-ı avtomatik olaraq ehtiyat nüsxələyin",
+                "ENABLEDINFO": "Cüzdan faylınızın yeni bir ehtiyat nüsxəsini cədvəl üzrə yaradır, beləliklə, bir şey səhv gedərsə, həmişə son bir nüsxə əlçatan olur.",
+                "LASTBACKUP": "Son yedəkləmə:",
+                "NEVERBACKEDUP": "Hələ ki, avtomatik ehtiyat nüsxəsi yaradılmayıb.",
+                "BACKUPNOWBUTTON": "İndi Yedəkləyin",
+                "LOCATIONTITLE": "Yedəkləmə Yeri",
+                "LOCATIONINFO": "Avtomatik ehtiyat nüsxələrinin saxlanıldığı yer. Cüzdanınızın məlumat qovluğundakı ehtiyat nüsxə qovluğuna standart olaraq təyin olunur.",
+                "BROWSEBUTTON": "Baxın...",
+                "RESETBUTTON": "Varsayılan vəziyyətə sıfırlayın",
+                "PRUNETITLE": "Yedəkləmə Tarixçəsi",
+                "PRUNEINFO": "Köhnə avtomatik ehtiyat nüsxələri silinir, ona görə də bu qovluq əbədi olaraq böyümür - yalnız aşağıdakı ən son ehtiyat nüsxələr saxlanılır.",
+                "KEEPCOUNTLABEL": "Sonuncu saxlayın",
+                "INTERVALLABEL": "Hər (gün) yedəkləyin"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Kes",
             "CONTEXTMENUCOPY": "Kopyala",
-            "CONTEXTMENUPASTE": "Yapışdır"
+            "CONTEXTMENUPASTE": "Yapışdır",
+            "CONTEXTMENUSELECTALL": "Hamısını Seçin"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Xəbərdarlıq! Metrix tədqiqatçısına görə əsas zəncirdə deyilsiniz. Hər hansı bir pul itirməməsi üçün blockchain-in yenidən sinxronlaşdırılması və ya yenidən yüklənməsi tövsiyə olunur."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "İctimai IP ünvanı tapılmadı. İnternet bağlantınızı yoxlayın və Altlıq səviyyəsini yenidən başladın.",
         "CONFIGURINGLOCALMN": "Yerli Masternode tənzimlənir...",
         "REPORTINGISSUE": "Diaqnostik məlumat almaq... Bu məlumat panoya kopyalanacaq.",
-        "WALLETUPDATEDOWNLOADING": "Yeniləmə yüklənir..."
+        "WALLETUPDATEDOWNLOADING": "Yeniləmə yüklənir...",
+        "WALLETBACKUPFAILED": "Avtomatik cüzdan ehtiyat nüsxəsi uğursuz oldu - ehtiyat nüsxənizin yerini və mövcud disk yerini yoxlayın"
     },
     "TIME": {
         "AFEWSECONDS": "Bir neçə saniyə",

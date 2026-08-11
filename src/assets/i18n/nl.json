@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimaliseer naar de lade in plaats van de taakbalk",
                 "MINIMIZEONCLOSE": "Minimaliseren bij sluiten",
                 "BEHAVIOURTITLE": "Gedrag van het systeemvak en het venster"
+            },
+            "BACKUPTAB": "Back-up",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatische back-up",
+                "ENABLED": "Maak elke 14 dagen automatisch een back-up van wallet.dat.",
+                "ENABLEDINFO": "Maakt volgens een vast schema een nieuwe back-up van uw portemonneebestand, zodat er altijd een recente kopie beschikbaar is voor het geval er iets misgaat.",
+                "LASTBACKUP": "Laatste back-up:",
+                "NEVERBACKEDUP": "Er is nog geen automatische back-up gemaakt.",
+                "BACKUPNOWBUTTON": "Maak nu een back-up",
+                "LOCATIONTITLE": "Back-uplocatie",
+                "LOCATIONINFO": "Waar automatische back-ups worden opgeslagen. Standaard is dit een back-upmap in de gegevensmap van uw wallet.",
+                "BROWSEBUTTON": "Bladeren...",
+                "RESETBUTTON": "Terugzetten naar standaardinstellingen",
+                "PRUNETITLE": "Back-upgeschiedenis",
+                "PRUNEINFO": "Oudere automatische back-ups worden verwijderd, zodat deze map niet oneindig blijft groeien - alleen de meest recente back-ups hieronder worden bewaard.",
+                "KEEPCOUNTLABEL": "Bewaar als laatste",
+                "INTERVALLABEL": "Maak elke (dagen) een back-up."
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Besnoeiing",
             "CONTEXTMENUCOPY": "Kopiëren",
-            "CONTEXTMENUPASTE": "Pasta"
+            "CONTEXTMENUPASTE": "Pasta",
+            "CONTEXTMENUSELECTALL": "Alles selecteren"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Waarschuwing! Volgens de Metrix-verkenner zit je niet in de hoofdketen. Het wordt ten zeerste aanbevolen om uw blockchain opnieuw te synchroniseren of opnieuw op te starten om verlies van munten te voorkomen."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Geen openbaar IP-adres gevonden. Controleer uw internetverbinding en start Altitude opnieuw.",
         "CONFIGURINGLOCALMN": "Lokale Masternode configureren...",
         "REPORTINGISSUE": "Diagnostische informatie verkrijgen... Deze informatie wordt naar uw klembord gekopieerd.",
-        "WALLETUPDATEDOWNLOADING": "Update downloaden..."
+        "WALLETUPDATEDOWNLOADING": "Update downloaden...",
+        "WALLETBACKUPFAILED": "Automatische back-up van uw portemonnee is mislukt - controleer uw back-uplocatie en beschikbare schijfruimte."
     },
     "TIME": {
         "AFEWSECONDS": "Een paar seconden",

@@ -17,9 +17,15 @@
         }
 
         .option-card-subtitle {
-            margin: -4px 0 12px;
+            margin: 4px 0 12px;
             font-size: 0.85em;
             opacity: 0.7;
+        }
+
+        // pull tight against a heading directly above it, but not against anything else
+        // (e.g. a form-inline row), which otherwise made the two look cramped/overlapping
+        h5 + .option-card-subtitle {
+            margin-top: -4px;
         }
 
         .option-row {
@@ -42,7 +48,26 @@
 
         .form-inline {
             margin-top: 10px;
+            margin-bottom: 10px;
             padding: 0;
+
+            text-input.number-field {
+                flex: 0 0 90px;
+                max-width: 90px;
+
+                input[type="number"] {
+                    width: 100%;
+                    // the shared pill-shaped input style's default 10px/20px padding
+                    // left almost no room for digits at this width - "14" was rendering
+                    // as a clipped "1"
+                    padding: 8px 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .backup-location-actions {
+            margin-top: 10px;
         }
     }
 

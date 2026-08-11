@@ -214,6 +214,7 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Window",
+            "BACKUPTAB": "Backup",
             "NETWORK": {
                 "PROXY": "Connect through SOCKS5 proxy",
                 "PROXYIP": "Proxy IP",
@@ -240,6 +241,22 @@
                 "MINIMIZETOTRAY": "Minimize to the tray instead of the taskbar",
                 "MINIMIZEONCLOSE": "Minimize on close",
                 "BEHAVIOURTITLE": "System Tray & Window Behaviour"
+            },
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatic Backup",
+                "ENABLED": "Automatically back up wallet.dat on a schedule",
+                "ENABLEDINFO": "Creates a fresh backup of your wallet file on a schedule, so a recent copy is always available if something goes wrong.",
+                "INTERVALLABEL": "Back up every (days)",
+                "LASTBACKUP": "Last backup:",
+                "NEVERBACKEDUP": "No automatic backup has been made yet.",
+                "BACKUPNOWBUTTON": "Back Up Now",
+                "LOCATIONTITLE": "Backup Location",
+                "LOCATIONINFO": "Where automatic backups are saved. Defaults to a backup folder inside your wallet's data directory.",
+                "BROWSEBUTTON": "Browse...",
+                "RESETBUTTON": "Reset to Default",
+                "PRUNETITLE": "Backup History",
+                "PRUNEINFO": "Older automatic backups are deleted so this folder doesn't grow forever - only the most recent ones below are kept.",
+                "KEEPCOUNTLABEL": "Keep last"
             }
         }
     },
@@ -460,6 +477,7 @@
         "EMPTYFIELDS": "Please fill in all fields",
         "NOUPDATE": "No update available",
         "WALLETBACKEDUP": "Wallet backup successful",
+        "WALLETBACKUPFAILED": "Automatic wallet backup failed - check your backup location and available disk space",
         "PASSPHRASEMISMATCH": "The passphrases you entered do not match",
         "CHECKINGUPDATE": "Checking for update...",
         "CHECKINGUPDATEFAILED": "Unable to check for update. Check your network.",

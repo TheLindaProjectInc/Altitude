@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "最小化到托盤而不是任務欄",
                 "MINIMIZEONCLOSE": "最小化關閉",
                 "BEHAVIOURTITLE": "系統托盤和視窗行為"
+            },
+            "BACKUPTAB": "備份",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "自動備份",
+                "ENABLED": "每 14 天自動備份 wallet.dat 文件",
+                "ENABLEDINFO": "按計畫建立錢包檔案的最新備份，以便在出現問題時始終可以使用最新副本。",
+                "LASTBACKUP": "上次備份：",
+                "NEVERBACKEDUP": "尚未進行自動備份。",
+                "BACKUPNOWBUTTON": "立即備份",
+                "LOCATIONTITLE": "備份位置",
+                "LOCATIONINFO": "自動備份檔案的儲存位置。預設保存在錢包資料目錄下的備份資料夾中。",
+                "BROWSEBUTTON": "瀏覽...",
+                "RESETBUTTON": "重設為預設值",
+                "PRUNETITLE": "備份歷史記錄",
+                "PRUNEINFO": "較舊的自動備份將被刪除，因此該資料夾不會無限增長——僅保留以下最新的備份。",
+                "KEEPCOUNTLABEL": "保留最後",
+                "INTERVALLABEL": "每隔（天）備份一次"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "切",
             "CONTEXTMENUCOPY": "複製",
-            "CONTEXTMENUPASTE": "糊"
+            "CONTEXTMENUPASTE": "糊",
+            "CONTEXTMENUSELECTALL": "全選"
         },
         "MAINCHAINCHECK": {
             "ALERT": "警告！根據Metrix資源管理器，您不在主鏈上。強烈建議重新同步或重新引導您的區塊鏈，以避免丟失任何硬幣。"
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "找不到公共IP地址。檢查您的互聯網連接並重新啟動Altitude。",
         "CONFIGURINGLOCALMN": "配置本地Masternode...",
         "REPORTINGISSUE": "獲取診斷信息...此信息將被複製到剪貼板。",
-        "WALLETUPDATEDOWNLOADING": "正在下載更新…"
+        "WALLETUPDATEDOWNLOADING": "正在下載更新…",
+        "WALLETBACKUPFAILED": "自動錢包備份失敗 - 請檢查備份位置和可用磁碟空間"
     },
     "TIME": {
         "AFEWSECONDS": "幾秒鐘",

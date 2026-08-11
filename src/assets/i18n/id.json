@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimalkan ke baki alih-alih bilah tugas",
                 "MINIMIZEONCLOSE": "Minimalkan saat tutup",
                 "BEHAVIOURTITLE": "Perilaku System Tray & Window"
+            },
+            "BACKUPTAB": "Cadangan",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Pencadangan Otomatis",
+                "ENABLED": "Secara otomatis mencadangkan wallet.dat setiap 14 hari",
+                "ENABLEDINFO": "Membuat cadangan baru file dompet Anda secara terjadwal, sehingga salinan terbaru selalu tersedia jika terjadi kesalahan.",
+                "LASTBACKUP": "Cadangan terakhir:",
+                "NEVERBACKEDUP": "Belum ada pencadangan otomatis yang dilakukan.",
+                "BACKUPNOWBUTTON": "Cadangkan Sekarang",
+                "LOCATIONTITLE": "Lokasi Cadangan",
+                "LOCATIONINFO": "Lokasi penyimpanan cadangan otomatis. Secara default, folder cadangan berada di dalam direktori data dompet Anda.",
+                "BROWSEBUTTON": "Telusuri...",
+                "RESETBUTTON": "Atur Ulang ke Pengaturan Default",
+                "PRUNETITLE": "Riwayat Pencadangan",
+                "PRUNEINFO": "Cadangan otomatis yang lebih lama akan dihapus agar folder ini tidak terus bertambah ukurannya - hanya cadangan terbaru di bawah ini yang disimpan.",
+                "KEEPCOUNTLABEL": "Simpan terakhir",
+                "INTERVALLABEL": "Cadangkan setiap (hari)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Memotong",
             "CONTEXTMENUCOPY": "Salinan",
-            "CONTEXTMENUPASTE": "Pasta"
+            "CONTEXTMENUPASTE": "Pasta",
+            "CONTEXTMENUSELECTALL": "Pilih Semua"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Peringatan! Anda tidak berada di rantai utama menurut penjelajah Metrix. Sangat disarankan untuk menyinkronkan ulang atau mem-bootstrap ulang blockchain Anda untuk menghindari hilangnya koin."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Tidak ada alamat IP Publik yang ditemukan. Periksa koneksi internet Anda dan mulai ulang Ketinggian.",
         "CONFIGURINGLOCALMN": "Mengkonfigurasi Masternode lokal...",
         "REPORTINGISSUE": "Mendapatkan informasi diagnostik... Informasi ini akan disalin ke clipboard Anda.",
-        "WALLETUPDATEDOWNLOADING": "Mengunduh pembaruan..."
+        "WALLETUPDATEDOWNLOADING": "Mengunduh pembaruan...",
+        "WALLETBACKUPFAILED": "Pencadangan dompet otomatis gagal - periksa lokasi pencadangan dan ruang disk yang tersedia."
     },
     "TIME": {
         "AFEWSECONDS": "Beberapa detik",

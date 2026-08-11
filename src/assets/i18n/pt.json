@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizar para a bandeja em vez da barra de tarefas",
                 "MINIMIZEONCLOSE": "Minimizar no próximo",
                 "BEHAVIOURTITLE": "Comportamento da bandeja do sistema e das janelas"
+            },
+            "BACKUPTAB": "Backup",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Backup automático",
+                "ENABLED": "Faça backup automático do arquivo wallet.dat a cada 14 dias.",
+                "ENABLEDINFO": "Cria um novo backup do seu arquivo de carteira de acordo com um cronograma, para que uma cópia recente esteja sempre disponível caso algo dê errado.",
+                "LASTBACKUP": "Último backup:",
+                "NEVERBACKEDUP": "Nenhum backup automático foi realizado ainda.",
+                "BACKUPNOWBUTTON": "Voltar ao início",
+                "LOCATIONTITLE": "Local de backup",
+                "LOCATIONINFO": "Local onde os backups automáticos são salvos. Por padrão, é uma pasta de backup dentro do diretório de dados da sua carteira.",
+                "BROWSEBUTTON": "Navegar...",
+                "RESETBUTTON": "Restaurar padrões de fábrica",
+                "PRUNETITLE": "Histórico de backups",
+                "PRUNEINFO": "Os backups automáticos mais antigos são excluídos para que esta pasta não cresça indefinidamente - apenas os mais recentes, listados abaixo, são mantidos.",
+                "KEEPCOUNTLABEL": "Guarde por último",
+                "INTERVALLABEL": "Faça backup a cada (dias)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cortar",
             "CONTEXTMENUCOPY": "cópia de",
-            "CONTEXTMENUPASTE": "Colar"
+            "CONTEXTMENUPASTE": "Colar",
+            "CONTEXTMENUSELECTALL": "Selecionar tudo"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Atenção! Você não está na cadeia principal, de acordo com o Metrix Explorer. É altamente recomendável sincronizar novamente ou reinicializar sua blockchain para evitar a perda de moedas."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nenhum endereço IP público encontrado. Verifique sua conexão com a Internet e reinicie o Altitude.",
         "CONFIGURINGLOCALMN": "Configurando o Masternode local...",
         "REPORTINGISSUE": "Obtendo informações de diagnóstico... Essas informações serão copiadas para a área de transferência.",
-        "WALLETUPDATEDOWNLOADING": "Baixando atualização..."
+        "WALLETUPDATEDOWNLOADING": "Baixando atualização...",
+        "WALLETBACKUPFAILED": "O backup automático da carteira falhou - verifique o local do seu backup e o espaço disponível em disco."
     },
     "TIME": {
         "AFEWSECONDS": "Alguns segundos",

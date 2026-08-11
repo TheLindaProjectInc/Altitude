@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimeerige tegumiriba asemel salve",
                 "MINIMIZEONCLOSE": "Minimeeri lähedal",
                 "BEHAVIOURTITLE": "Süsteemisalve ja akna käitumine"
+            },
+            "BACKUPTAB": "Varundamine",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automaatne varundamine",
+                "ENABLED": "Varunda wallet.dat automaatselt iga 14 päeva tagant",
+                "ENABLEDINFO": "Loob teie rahakotifailist ajakava järgi värske varukoopia, nii et kui midagi peaks valesti minema, on alati olemas uusim koopia.",
+                "LASTBACKUP": "Viimane varukoopia:",
+                "NEVERBACKEDUP": "Automaatset varundamist pole veel tehtud.",
+                "BACKUPNOWBUTTON": "Varunda kohe",
+                "LOCATIONTITLE": "Varunduskoht",
+                "LOCATIONINFO": "Kuhu automaatsed varukoopiad salvestatakse. Vaikimisi on selleks teie rahakoti andmekataloogis asuv varukoopiate kaust.",
+                "BROWSEBUTTON": "Sirvi...",
+                "RESETBUTTON": "Lähtesta vaikesätetele",
+                "PRUNETITLE": "Varundamise ajalugu",
+                "PRUNEINFO": "Vanemad automaatsed varukoopiad kustutatakse, et see kaust ei kasvaks igavesti – alles jäävad ainult kõige uuemad allpool olevad varukoopiad.",
+                "KEEPCOUNTLABEL": "Hoia viimane",
+                "INTERVALLABEL": "Varundamine iga (päeva) järel"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Lõika",
             "CONTEXTMENUCOPY": "Kopeeri",
-            "CONTEXTMENUPASTE": "Kleebi"
+            "CONTEXTMENUPASTE": "Kleebi",
+            "CONTEXTMENUSELECTALL": "Vali kõik"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Hoiatus! Metriksi maadeavastaja sõnul ei asu te põhiahelas. Müntide kaotsimineku vältimiseks on tungivalt soovitatav oma sünkroniseerida sünkroonimine või taaskäivitamine."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Ei leitud avalikku IP-aadressi. Kontrollige oma internetiühendust ja taaskäivitage kõrgus.",
         "CONFIGURINGLOCALMN": "Kohaliku Masternode seadistamine...",
         "REPORTINGISSUE": "Diagnostikainfo hankimine... See teave kopeeritakse lõikelauale.",
-        "WALLETUPDATEDOWNLOADING": "Värskenduse allalaadimine..."
+        "WALLETUPDATEDOWNLOADING": "Värskenduse allalaadimine...",
+        "WALLETBACKUPFAILED": "Automaatne rahakoti varundamine ebaõnnestus – kontrollige oma varundamise asukohta ja saadaolevat kettaruumi"
     },
     "TIME": {
         "AFEWSECONDS": "Paar sekundit",

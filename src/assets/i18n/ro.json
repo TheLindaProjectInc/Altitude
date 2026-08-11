@@ -232,6 +232,23 @@
                 "MINIMIZETOTRAY": "Minimizați la tavă în locul bara de activități",
                 "MINIMIZEONCLOSE": "Minimizați la aproape",
                 "BEHAVIOURTITLE": "Comportamentul barei de sistem și al ferestrei"
+            },
+            "BACKUPTAB": "Copie de rezervă",
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Copiere de rezervă automată",
+                "ENABLED": "Copiere automată de rezervă a fișierului wallet.dat la fiecare 14 zile",
+                "ENABLEDINFO": "Creează o copie de rezervă nouă a fișierului portofelului tău conform unui program, astfel încât o copie recentă să fie întotdeauna disponibilă în cazul în care ceva nu merge bine.",
+                "LASTBACKUP": "Ultima copie de rezervă:",
+                "NEVERBACKEDUP": "Încă nu s-a făcut nicio copie de rezervă automată.",
+                "BACKUPNOWBUTTON": "Copiere de rezervă acum",
+                "LOCATIONTITLE": "Locație de rezervă",
+                "LOCATIONINFO": "Unde sunt salvate copiile de rezervă automate. Implicit, se află un folder de copii de rezervă din directorul de date al portofelului.",
+                "BROWSEBUTTON": "Răsfoiți...",
+                "RESETBUTTON": "Resetare la valorile implicite",
+                "PRUNETITLE": "Istoric copii de rezervă",
+                "PRUNEINFO": "Copiile de rezervă automate mai vechi sunt șterse, astfel încât acest folder să nu crească la nesfârșit - se păstrează doar cele mai recente de mai jos.",
+                "KEEPCOUNTLABEL": "Păstrează ultimul",
+                "INTERVALLABEL": "Copiere de rezervă la fiecare (zile)"
             }
         },
         "MANAGEACCOUNT": {
@@ -357,7 +374,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "A taia",
             "CONTEXTMENUCOPY": "Copie",
-            "CONTEXTMENUPASTE": "Pastă"
+            "CONTEXTMENUPASTE": "Pastă",
+            "CONTEXTMENUSELECTALL": "Selectați tot"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Avertizare! Nu sunteți în lanțul principal, potrivit exploratorului Metrix. Este foarte recomandat să rescronizați sau să reinstalați blockchainul pentru a evita pierderea oricăror monede."
@@ -485,7 +503,8 @@
         "NOPUBLICUP": "Nu a fost găsită nicio adresă IP publică. Verificați conexiunea la internet și reporniți altitudinea.",
         "CONFIGURINGLOCALMN": "Configurarea Masternode locale...",
         "REPORTINGISSUE": "Obținerea informațiilor de diagnostic... Aceste informații vor fi copiate în clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Se descarcă actualizarea..."
+        "WALLETUPDATEDOWNLOADING": "Se descarcă actualizarea...",
+        "WALLETBACKUPFAILED": "Copia de rezervă automată a portofelului a eșuat - verificați locația copiei de rezervă și spațiul disponibil pe disc"
     },
     "TIME": {
         "AFEWSECONDS": "Câteva secunde",

@@ -7,6 +7,9 @@
     <button (click)="tab=1" [ngClass]="{'active':tab==1}">
       {{'PAGES.OPTIONS.WINDOTAB' | translate}}
     </button>
+    <button (click)="tab=2" [ngClass]="{'active':tab==2}">
+      {{'PAGES.OPTIONS.BACKUPTAB' | translate}}
+    </button>
   </div>
 
   <!-- Network -->
@@ -141,6 +144,55 @@
         <div class="option-row">
           <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose" type='checkbox' />
           <label for="chkMinClose">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZEONCLOSE' | translate }}</label>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Backup -->
+  @if (tab==2) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.AUTOBACKUPTITLE' | translate }}</h5>
+        <div class="option-row">
+          <input id="chkWalletBackup" (change)="setWalletBackupEnabled()" [(ngModel)]="electron.settings.walletBackupEnabled" type='checkbox' />
+          <label for="chkWalletBackup">{{ 'PAGES.OPTIONS.BACKUP.ENABLED' | translate }}</label>
+        </div>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.ENABLEDINFO' | translate }}</p>
+        <div class="form-inline">
+          <span>{{ 'PAGES.OPTIONS.BACKUP.INTERVALLABEL' | translate }}:</span>
+          <text-input class="number-field" type="number" [min]="1" [(inputModel)]="electron.settings.walletBackupIntervalDays" (change)="setWalletBackupIntervalDays()"></text-input>
+        </div>
+        @if (electron.settings.lastWalletBackup) {
+          <p class="option-card-subtitle">
+            {{ 'PAGES.OPTIONS.BACKUP.LASTBACKUP' | translate }} {{ electron.settings.lastWalletBackup | date:'MMM d, yyyy h:mm a' }}
+          </p>
+        } @else {
+          <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.NEVERBACKEDUP' | translate }}</p>
+        }
+        <button class="btn btn-default btn-sm" (click)="backupWalletNow()">{{ 'PAGES.OPTIONS.BACKUP.BACKUPNOWBUTTON' | translate }}</button>
+      </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.LOCATIONTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.LOCATIONINFO' | translate }}</p>
+        <div class="form-inline">
+          <text-input [inputModel]="electron.settings.walletBackupLocation || electron.defaultBackupLocation" [disabled]="true"></text-input>
+        </div>
+        <div class="option-row-group backup-location-actions">
+          <button class="btn btn-default btn-sm" (click)="browseWalletBackupLocation()">{{ 'PAGES.OPTIONS.BACKUP.BROWSEBUTTON' | translate }}</button>
+          @if (electron.settings.walletBackupLocation) {
+            <button class="btn btn-default btn-sm" (click)="resetWalletBackupLocation()">{{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}</button>
+          }
+        </div>
+      </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.PRUNETITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.PRUNEINFO' | translate }}</p>
+        <div class="form-inline">
+          <span>{{ 'PAGES.OPTIONS.BACKUP.KEEPCOUNTLABEL' | translate }}:</span>
+          <text-input class="number-field" type="number" [min]="1" [(inputModel)]="electron.settings.walletBackupKeepCount" (change)="setWalletBackupKeepCount()"></text-input>
         </div>
       </div>
     </div>
