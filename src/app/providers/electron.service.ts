@@ -1,4 +1,4 @@
-import { Injectable, isDevMode, EventEmitter, Output, Directive } from '@angular/core';
+import { Injectable, isDevMode, EventEmitter, Output, Directive, Injector } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
@@ -30,7 +30,12 @@ export class ElectronService {
 
   constructor(
     private translate: TranslateService,
-    private currencyService: CurrencyService,
+    // resolved lazily via Injector rather than a constructor param - CurrencyService
+    // (transitively, via PriceOracle) depends back on ElectronService, so injecting it
+    // directly here would be a circular dependency. Resolving it only when
+    // setDisplayCurrency() actually runs (well after bootstrap, from an IPC callback)
+    // sidesteps that entirely.
+    private injector: Injector,
   ) {
     // Conditional imports
     if (this.isElectron()) {
@@ -136,9 +141,10 @@ export class ElectronService {
   }
 
   setDisplayCurrency() {
-    if (this.settings.currency && this.currencyService.currency !== this.settings.currency) {
+    const currencyService = this.injector.get(CurrencyService);
+    if (this.settings.currency && currencyService.currency !== this.settings.currency) {
       if (isDevMode()) console.log("Setting display currency to", this.settings.currency)
-      this.currencyService.changeCurrency(this.settings.currency);
+      currencyService.changeCurrency(this.settings.currency);
     }
   }
 

@@ -28,16 +28,7 @@ export default class Helpers {
   }
 
   public static roundCoins(coins: Big, decimals: number = 8): Big {
-    const parts = coins.toFixed(8).toString().split(".");
-    if (parts.length === 2) {
-      const dec = Number("0." + parts[1]);
-      const len = parts[1].length;
-      if (len > decimals) {
-        const decString = dec.toFixed(decimals).toString().split(".")[1];
-        return Big(parts[0] + '.' + decString);
-      }
-    }
-    return coins;
+    return Big(coins.toFixed(decimals));
   }
 
   public static prettyCoins(coins: Big, decimals?: number): string {
