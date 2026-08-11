@@ -1,0 +1,54 @@
+.options-page {
+
+    .restart-notice {
+        margin: 10px 0 20px;
+    }
+
+    .option-card {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+
+        h5 {
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85em;
+            color: darken($color: $font-primary, $amount: 30%);
+        }
+
+        .option-card-subtitle {
+            margin: -4px 0 12px;
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+
+        .option-row {
+            padding: 4px 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2px;
+            }
+        }
+
+        .option-row-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 25px;
+
+            .option-row {
+                padding: 0;
+            }
+        }
+
+        .form-inline {
+            margin-top: 10px;
+            padding: 0;
+        }
+    }
+
+    // leave room for the network tab's fixed restart-core bar so it doesn't cover
+    // the last card - harmless on the window tab, which has nothing fixed at the bottom
+    .tab-content {
+        padding-bottom: 50px;
+    }
+}
