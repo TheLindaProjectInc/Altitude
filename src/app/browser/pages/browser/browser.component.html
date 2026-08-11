@@ -31,16 +31,89 @@
             <h2>{{ 'COMPONENTS.BROWSER.QUICKLAUNCH' | translate }}</h2>
             <div class="browser-tiles">
                 @for (link of quickLinks; track link.url) {
-                    <button class="browser-tile" [class.has-image]="link.ogImage" (click)="navigate(link.url)">
-                        @if (link.ogImage) {
-                            <div class="browser-tile-image" [style.background-image]="'url(' + link.ogImage + ')'"></div>
-                            <span class="browser-tile-label">{{ link.ogTitle || link.name }}</span>
-                        } @else {
-                            <fa-icon icon="globe"></fa-icon>
-                            <span>{{ link.name }}</span>
-                        }
-                    </button>
+                    <div class="browser-tile" [class.flipped]="link.confirmRemove">
+                        <div class="browser-tile-inner">
+                            <div
+                                class="browser-tile-face browser-tile-front"
+                                [class.has-image]="link.ogImage"
+                                (click)="navigate(link.url)"
+                            >
+                                @if (link.custom) {
+                                    <button
+                                        class="browser-tile-remove"
+                                        title="{{ 'COMPONENTS.BROWSER.REMOVE' | translate }}"
+                                        (click)="startRemove($event, link)"
+                                    >
+                                        <fa-icon icon="times"></fa-icon>
+                                    </button>
+                                    @if (link.network) {
+                                        <span class="browser-tile-network browser-tile-network-{{ link.network }}">
+                                            {{ networkLabel(link.network) }}
+                                        </span>
+                                    }
+                                }
+                                @if (link.ogImage) {
+                                    <div class="browser-tile-image" [style.background-image]="'url(' + link.ogImage + ')'"></div>
+                                    <span class="browser-tile-label">{{ link.ogTitle || link.name }}</span>
+                                } @else {
+                                    <fa-icon icon="globe"></fa-icon>
+                                    <span>{{ link.name }}</span>
+                                }
+                            </div>
+                            <div class="browser-tile-face browser-tile-back">
+                                <span class="browser-tile-confirm-text">{{ 'COMPONENTS.BROWSER.REMOVECONFIRM' | translate }}</span>
+                                <div class="browser-tile-back-actions">
+                                    <button class="btn btn-danger btn-sm" (click)="confirmRemove($event, link)">
+                                        {{ 'COMPONENTS.BROWSER.REMOVE' | translate }}
+                                    </button>
+                                    <button class="btn btn-default btn-sm" (click)="cancelRemove($event, link)">
+                                        {{ 'COMPONENTS.BROWSER.CANCEL' | translate }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 }
+                <div class="browser-tile browser-tile-add" [class.flipped]="showAddForm">
+                    <div class="browser-tile-inner">
+                        <div class="browser-tile-face browser-tile-front" (click)="openAddForm()">
+                            <fa-icon icon="plus"></fa-icon>
+                            <span>{{ 'COMPONENTS.BROWSER.ADDLINK' | translate }}</span>
+                        </div>
+                        <div class="browser-tile-face browser-tile-back browser-tile-add-back">
+                            <input
+                                type="text"
+                                [(ngModel)]="newLinkName"
+                                placeholder="{{ 'COMPONENTS.BROWSER.LINKNAMEPLACEHOLDER' | translate }}"
+                                (click)="$event.stopPropagation()"
+                            />
+                            <input
+                                type="text"
+                                [(ngModel)]="newLinkUrl"
+                                placeholder="{{ 'COMPONENTS.BROWSER.LINKURLPLACEHOLDER' | translate }}"
+                                (click)="$event.stopPropagation()"
+                                (keyup.enter)="saveNewLink($event)"
+                            />
+                            <select
+                                [(ngModel)]="newLinkNetwork"
+                                (click)="$event.stopPropagation()"
+                                title="{{ 'COMPONENTS.BROWSER.LINKNETWORKLABEL' | translate }}"
+                            >
+                                @for (option of networkOptions; track option.value) {
+                                    <option [value]="option.value">{{ option.label }}</option>
+                                }
+                            </select>
+                            <div class="browser-tile-back-actions">
+                                <button class="btn btn-primary btn-sm" (click)="saveNewLink($event)">
+                                    {{ 'COMPONENTS.BROWSER.SAVE' | translate }}
+                                </button>
+                                <button class="btn btn-default btn-sm" (click)="cancelAddLink($event)">
+                                    {{ 'COMPONENTS.BROWSER.CANCEL' | translate }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     }

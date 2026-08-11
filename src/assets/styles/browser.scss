@@ -33,41 +33,155 @@
 
         .browser-tile {
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
             width: 160px;
             height: 110px;
-            background: $background-accent;
-            border: 2px solid $font-primary;
-            border-radius: 10px;
-            color: $font-primary;
-            cursor: pointer;
-            padding: 15px;
-            overflow: hidden;
+            perspective: 800px;
+            transition: width 0.3s, height 0.3s;
 
-            fa-icon {
-                font-size: 28px;
+            .browser-tile-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.4s;
+                transform-style: preserve-3d;
             }
 
-            span {
-                font-size: 0.9em;
-                text-align: center;
+            // the add-tile's back face packs in a name/url field, a network
+            // dropdown and two buttons - too much for the standard tile size
+            &.browser-tile-add.flipped {
+                width: 190px;
+                height: 195px;
             }
 
-            &:hover {
-                border-color: $color-accent;
-                color: $color-accent;
+            &.flipped .browser-tile-inner {
+                transform: rotateY(180deg);
             }
 
-            &.has-image {
-                padding: 0;
-                color: #fff;
+            .browser-tile-face {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                background: $background-accent;
+                border: 2px solid $font-primary;
+                border-radius: 10px;
+                color: $font-primary;
+                cursor: pointer;
+                padding: 15px;
+                overflow: hidden;
+                backface-visibility: hidden;
+                box-sizing: border-box;
+            }
+
+            .browser-tile-front {
+                fa-icon {
+                    font-size: 28px;
+                }
+
+                span {
+                    font-size: 0.9em;
+                    text-align: center;
+                }
 
                 &:hover {
                     border-color: $color-accent;
+                    color: $color-accent;
+                }
+
+                &.has-image {
+                    padding: 0;
+                    color: #fff;
+
+                    &:hover {
+                        border-color: $color-accent;
+                    }
+                }
+            }
+
+            .browser-tile-back {
+                transform: rotateY(180deg);
+                cursor: default;
+                justify-content: center;
+                gap: 6px;
+                padding: 10px;
+
+                .browser-tile-confirm-text {
+                    font-size: 0.85em;
+                    text-align: center;
+                }
+
+                .browser-tile-back-actions {
+                    display: flex;
+                    gap: 5px;
+                    flex: 0 0 auto;
+
+                    .btn {
+                        padding: 2px 8px;
+                        font-size: 0.75em;
+                    }
+                }
+
+                input[type="text"],
+                select {
+                    width: 100%;
+                    flex: 0 0 auto;
+                    font-size: 0.72em;
+                    line-height: 1.2;
+                    padding: 3px 5px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .browser-tile-network {
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                z-index: 2;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 0.65em;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.55);
+
+                &.browser-tile-network-testnet {
+                    background: rgba(230, 126, 34, 0.85);
+                }
+
+                &.browser-tile-network-regtest {
+                    background: rgba(52, 152, 219, 0.85);
+                }
+
+                &.browser-tile-network-mainnet {
+                    background: rgba(39, 174, 96, 0.85);
+                }
+            }
+
+            .browser-tile-remove {
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                z-index: 2;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.55);
+                border: none;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 0.7em;
+                cursor: pointer;
+                padding: 0;
+
+                &:hover {
+                    background: $color-accent;
                 }
             }
 
@@ -90,6 +204,18 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+            }
+
+            &.browser-tile-add .browser-tile-front {
+                border-style: dashed;
+                color: $font-primary;
+                opacity: 0.75;
+
+                &:hover {
+                    opacity: 1;
+                    border-color: $color-accent;
+                    color: $color-accent;
+                }
             }
         }
     }
