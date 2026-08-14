@@ -278,7 +278,13 @@ export class DGPService {
                 let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [this.dgpInfo.contracts.budget, callData]);
                 if (!data.error && data.executionResult.excepted == 'None') {
                     if (data.executionResult.output.replace(/0/g, '') !== '') {
-                        this.upsertBudget(new BudgetProposal(data), i);
+                        const budget = this.upsertBudget(new BudgetProposal(data), i);
+                        // loadImageIfNeeded() is a no-op if this proposal's image was
+                        // already loaded (or already attempted) on a previous refresh
+                        // pass - and staggered here (rather than all firing at once)
+                        // since several proposals typically link to github.com, and
+                        // bursting requests there trips their anonymous rate limit (429)
+                        budget.loadImageIfNeeded(i * 500);
                     }
                 }
             }
@@ -288,17 +294,20 @@ export class DGPService {
         }
     }
 
-    private upsertBudget(newBudget: BudgetProposal, index: number) {
+    private upsertBudget(newBudget: BudgetProposal, index: number): BudgetProposal {
         let currBudget = this.budgetProposals[index];
         if (!currBudget) {
             this.budgetProposals.push(newBudget);
-            return;
+            return newBudget;
         }
         // update or overwrite
-        if (currBudget.id === newBudget.id)
+        if (currBudget.id === newBudget.id) {
             currBudget.update(newBudget)
-        else
+            return currBudget;
+        } else {
             this.budgetProposals[index] = newBudget
+            return newBudget;
+        }
     }
 
     private async getMyBudgetVotes() {
