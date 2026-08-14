@@ -142,8 +142,30 @@ a {
     }
 
     .logo {
-        height: 125px;
+        height: 130px;
         padding-top: 38px;
+    }
+
+    // fa-icon-based sidebar logos (e.g. the token/browser modules) have no baked-in
+    // circular badge the way the DGP/Metrix PNGs do - this reproduces the same look.
+    // The badge is a dedicated wrapper (not sized via the fa-icon element itself)
+    // because fa-icon's inner SVG follows the icon's own intrinsic aspect ratio rather
+    // than the host's width/height, which made an explicit width/height on fa-icon
+    // itself render as an oval instead of a circle
+    .logo-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        width: 125px;
+        margin-top: 38px;
+        border-radius: 50%;
+        background-color: #540254;
+        color: #fff;
+
+        fa-icon {
+            font-size: 65px;
+        }
     }
 
     h3 {
