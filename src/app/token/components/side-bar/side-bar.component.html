@@ -1,0 +1,43 @@
+<div class="sidebar">
+    <div class="sidebar-top">
+        <fa-icon icon="coins" class="logo"></fa-icon>
+        <!-- Balance -->
+        <div style="text-align: left;">
+            <h3>{{ 'MISC.BALANCE' | translate | uppercase }}</h3>
+            <span>
+                {{currencyService.convert(wallet.balance) | prettyCoins: 4 }}
+                <span class="balance-currency">{{currencyService.currency}}</span>
+            </span>
+        </div>
+        <network-type></network-type>
+        <!-- Menu -->
+        <ul routerLinkActive="active">
+            <li>
+                <a routerLink="/token" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <fa-icon icon="coins"></fa-icon> {{ 'TOKEN.COMPONENTS.SIDEBAR.TOKENS' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/token/add" routerLinkActive="active">
+                    <fa-icon icon="plus"></fa-icon> {{ 'TOKEN.COMPONENTS.SIDEBAR.ADDTOKEN' | translate }}
+                </a>
+            </li>
+        </ul>
+
+        @if (token.busy) {
+            <div style="padding: 10px 20px; opacity: 0.7; font-size: 0.85em;">
+                <fa-icon icon="spinner" animation="spin"></fa-icon>
+                @if (token.scanning && token.scanProgress) {
+                    <span> {{ 'TOKEN.COMPONENTS.SIDEBAR.SCANNING' | translate }} {{ token.scanProgress.current | number }} / {{ token.scanProgress.target | number }}</span>
+                } @else if (token.scanning) {
+                    <span> {{ 'TOKEN.COMPONENTS.SIDEBAR.SCANNING' | translate }}</span>
+                } @else {
+                    <span> {{ 'TOKEN.COMPONENTS.SIDEBAR.UPDATING' | translate }}</span>
+                }
+            </div>
+        }
+    </div>
+
+    <sync-status></sync-status>
+
+</div>

@@ -4,6 +4,7 @@ import { ChainType } from 'app/enum';
 import { WalletService } from 'app/metrix/providers/wallet.service';
 import { RpcService } from 'app/metrix/providers/rpc.service';
 import { DGPService } from 'app/dgp/providers/dgp.service';
+import { TokenService } from 'app/token/providers/token.service';
 
 @Component({
     selector: 'app-options',
@@ -23,7 +24,8 @@ export class OptionsComponent implements OnInit {
     public electron: ElectronService,
     private wallet: WalletService,
     private dgp: DGPService,
-    private rpc: RpcService
+    private rpc: RpcService,
+    private token: TokenService
   ) { }
 
   ngOnInit() {
@@ -129,6 +131,7 @@ export class OptionsComponent implements OnInit {
     if (this.network !== this.electron.chain) {
       this.wallet.resetState();
       this.dgp.resetState()
+      this.token.resetState();
       this.electron.ipcRenderer.send('client-node', 'SETCHAIN', this.network);
     } else {
       this.rpc.restartClient();

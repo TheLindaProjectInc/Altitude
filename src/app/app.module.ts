@@ -36,6 +36,7 @@ import * as metrix from './metrix/metrix.module';
 // import * as buy from './buy/buy.module';
 import * as dgp from './dgp/dgp.module';
 import * as browser from './browser/browser.module';
+import * as token from './token/token.module';
 // pipes
 import { PrettyCoinsPipe } from './pipes/pretty-coins.pipe';
 
@@ -46,7 +47,8 @@ const routes: Routes = [
   // Disable Buy Metrix
   // buy.route,
   dgp.route,
-  browser.route
+  browser.route,
+  token.route
 ];
 
 @NgModule({ declarations: [
@@ -55,7 +57,8 @@ const routes: Routes = [
         ...componentDeclarations,
         ...metrix.declarations,
         ...dgp.declarations,
-        ...browser.declarations
+        ...browser.declarations,
+        ...token.declarations
         // Disable Buy Metrix
         //...buy.declarations
     ],
@@ -86,7 +89,8 @@ const routes: Routes = [
         ...componentProviders,
         ...metrix.providers,
         ...dgp.providers,
-        ...browser.providers
+        ...browser.providers,
+        ...token.providers
         // Disable Buy Metrix
         //...buy.providers
         ,

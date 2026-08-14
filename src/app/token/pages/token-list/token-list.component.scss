@@ -1,0 +1,180 @@
+@import "../../../../assets/styles/variables.scss";
+
+.token-list-page {
+
+    .toolbar-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        h3 {
+            margin: 0;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    .busy-banner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        opacity: 0.85;
+        font-size: 0.9em;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 40px 20px;
+        opacity: 0.7;
+
+        fa-icon {
+            margin-bottom: 10px;
+        }
+    }
+
+    .address-card {
+        margin-bottom: 15px;
+
+        .address-card-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .address-label {
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-size: 0.85em;
+                color: darken($color: $font-primary, $amount: 30%);
+            }
+
+            .address-value {
+                font-family: monospace;
+                font-size: 0.9em;
+                word-break: break-all;
+            }
+        }
+
+        .token-chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .token-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: $background-accent;
+            border-radius: 20px;
+            padding: 6px 8px 6px 14px;
+
+            .token-symbol {
+                font-weight: 700;
+            }
+
+            .token-balance {
+                opacity: 0.85;
+            }
+
+            .btn-icon {
+                background: none;
+                border: none;
+                color: $color-primary;
+                cursor: pointer;
+                padding: 4px 6px;
+
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+
+        .nft-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .nft-tile {
+            background: $background-accent;
+            border-radius: 8px;
+            padding: 10px;
+            width: 110px;
+            min-height: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            transition: box-shadow 0.15s ease;
+            // some collections (e.g. MNS domain NFTs) use namehash-style tokenIds -
+            // 60+ digit numbers with no natural break points, which would otherwise
+            // overflow straight out of the tile's fixed width
+            overflow: hidden;
+
+            &:hover {
+                box-shadow: 0 0 0 2px $color-accent;
+            }
+
+            &.expanded {
+                width: 160px;
+                cursor: default;
+            }
+
+            .nft-placeholder {
+                font-size: 1.8em;
+                opacity: 0.4;
+                margin-bottom: 8px;
+            }
+
+            .nft-id {
+                font-size: 0.8em;
+                opacity: 0.8;
+                max-width: 100%;
+                overflow-wrap: anywhere;
+            }
+
+            .nft-detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                width: 100%;
+
+                .nft-image {
+                    max-width: 100%;
+                    max-height: 120px;
+                    border-radius: 6px;
+                }
+
+                .nft-name {
+                    font-weight: 700;
+                    font-size: 0.85em;
+                }
+
+                .btn {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    .hidden-tokens-card {
+        opacity: 0.75;
+
+        h5 {
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85em;
+        }
+    }
+}

@@ -47,7 +47,10 @@ import {
     faFileContract,
     faGlobe,
     faSyncAlt,
-    faHome
+    faHome,
+    faPaperPlane,
+    faImage,
+    faEye
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -100,6 +103,9 @@ export function setupIcons(library: FaIconLibrary) {
         faFileContract,
         faGlobe,
         faSyncAlt,
-        faHome
+        faHome,
+        faPaperPlane,
+        faImage,
+        faEye
     );
 }

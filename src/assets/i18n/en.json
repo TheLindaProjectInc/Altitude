@@ -626,7 +626,7 @@
         }
     },
     "BUY": {
-        "COMPONENTS":{
+        "COMPONENTS": {
             "SIDEBAR": {
                 "SWAP": "Buy Metrix",
                 "SEARCH": "History"
@@ -647,11 +647,11 @@
                 "INFOLINE3": "Once your BTC deposit has cleared you'll receive your MRX into your nominated address.",
                 "INFOLINE4": "For more information visit"
             },
-            "HISTORY" :{
+            "HISTORY": {
                 "TITLE": "Transaction History",
                 "SEARCHBUTTON": "SEARCH",
                 "SEARCHPLACEHOLDER": "Enter MRX or BTC address",
-                "TRANSACTIONDATE":"Date",
+                "TRANSACTIONDATE": "Date",
                 "TRANSACTIONTYPE": "TX Type",
                 "TRANSACTIONAMOUNT": "Amount",
                 "TRANSACTIONID": "Transaction ID",
@@ -672,9 +672,65 @@
     },
     "MNS": {
         "NOTIFICATIONS": {
-            "MNSUNKNOWNERROR":"Name resolution failed, Unknown error ocurred.",
-            "MNSRPCUNAVAILABLE":"Name resolution failed, RPC unavailable.",
-            "MNSRESOLUTIONUNAVAILABLE":"MNS: Unable to resolve name, Check that the name is correct and the blockchain is in sync."
+            "MNSUNKNOWNERROR": "Name resolution failed, Unknown error ocurred.",
+            "MNSRPCUNAVAILABLE": "Name resolution failed, RPC unavailable.",
+            "MNSRESOLUTIONUNAVAILABLE": "MNS: Unable to resolve name, Check that the name is correct and the blockchain is in sync."
+        }
+    },
+    "TOKEN": {
+        "PAGES": {
+            "LIST": {
+                "TITLE": "Tokens",
+                "SHOWEMPTY": "Show Empty Addresses",
+                "HIDEEMPTY": "Hide Empty Addresses",
+                "REFRESH": "Refresh",
+                "ADDTOKEN": "Add Token",
+                "SEND": "Send",
+                "UNHIDE": "Unhide",
+                "EMPTYTITLE": "No Tokens Found Yet",
+                "EMPTYDETAIL": "Altitude automatically checks a block explorer for MRC20 and MRC721 tokens sent to your addresses, then verifies everything live against your own node. You can also add a token manually if you know its contract address.",
+                "HIDDENTITLE": "Hidden Tokens",
+                "CONTEXTMENUHIDE": "Hide Token",
+                "ITEMSSUFFIX": "item(s)",
+                "NONENUMERABLETOOLTIP": "This collection doesn't support listing individual items - showing how many you hold instead."
+            },
+            "ADDTOKEN": {
+                "TITLE": "Add Token",
+                "DESCRIPTION": "Enter the contract address of an MRC20 or MRC721 token to add it to your token list.",
+                "CONTRACTADDRESS": "Contract Address",
+                "LOOKUPBUTTON": "Lookup",
+                "PROBING": "Looking up contract...",
+                "NOTFOUND": "This address does not appear to be a supported MRC20 or MRC721 token contract.",
+                "DECIMALS": "decimals",
+                "ADDBUTTON": "Add Token",
+                "ADDING": "Adding..."
+            },
+            "SEND": {
+                "TITLE": "Send Token",
+                "TOKEN": "Token",
+                "FROM": "From",
+                "AVAILABLE": "Available",
+                "TOKENID": "Token ID",
+                "RECIPIENT": "Recipient",
+                "AMOUNT": "Amount",
+                "MAXBUTTON": "Max",
+                "GASLIMIT": "Gas Limit",
+                "GASPRICE": "Gas Price",
+                "SENDBUTTON": "Send"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "TOKENS": "Tokens",
+                "ADDTOKEN": "Add Token",
+                "SCANNING": "Checking for tokens...",
+                "UPDATING": "Updating token balances..."
+            }
+        },
+        "NOTIFICATIONS": {
+            "TOKENADDED": "Token added successfully",
+            "TOKENSENT": "Token sent successfully",
+            "INCOMPLETEFORM": "Please fill in all required fields"
         }
     }
 }
