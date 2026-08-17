@@ -104,6 +104,21 @@ ngx-smart-modal {
                 resize: vertical;
             }
         }
+        .dapp-connect-account-select {
+            margin-top: 5px;
+            width: 100%;
+
+            .select {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+                font-size: 0.85em;
+                font-weight: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
         .dapp-sign-message-label {
             display: block;
             color: $font-primary;

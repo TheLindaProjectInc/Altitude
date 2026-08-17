@@ -239,9 +239,13 @@
               <label>{{ 'COMPONENTS.PROMPT.DAPPSENDSITELABEL' | translate }}</label>
               <span class="dapp-send-value">{{ dappConnectModal.origin }}</span>
             </div>
-            <div class="dapp-send-row">
-              <label>{{ 'COMPONENTS.PROMPT.DAPPCONNECTADDRESSLABEL' | translate }}</label>
-              <span class="dapp-send-value dapp-send-mono">{{ dappConnectModal.address }}</span>
+            <label class="dapp-sign-message-label">{{ 'COMPONENTS.PROMPT.DAPPCONNECTADDRESSLABEL' | translate }}</label>
+            <div class="alt-select dapp-connect-account-select">
+              <select class="select" [(ngModel)]="dappConnectModal.selectedAddress">
+                @for (account of dappConnectModal.accounts; track account.address) {
+                  <option [value]="account.address">{{ account.name }} ({{ account.address }})</option>
+                }
+              </select>
             </div>
 
             <div class="modal-buttons">

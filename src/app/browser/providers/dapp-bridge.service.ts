@@ -102,11 +102,6 @@ export class DappBridgeService {
         };
     }
 
-    private defaultAddress(): string {
-        const accounts = this.wallet.getAccounts(true);
-        return accounts.length ? accounts[0].address : '';
-    }
-
     public async handleMessage(webviewEl: any, message: BridgeMessage) {
         const { id, type, method, params } = message;
         const origin = this.originFor(webviewEl);
@@ -159,8 +154,8 @@ export class DappBridgeService {
     }
 
     private async requestApproval(origin: string): Promise<string> {
-        const candidate = this.defaultAddress();
-        if (!candidate) {
+        const accounts = this.wallet.getAccounts(true);
+        if (!accounts.length) {
             // otherwise this fails invisibly: the dApp just never gets an account and
             // there is no way for the user to tell "not ready yet" from "broken"
             this.notification.notify('error', this.rpc.RPCReady
@@ -168,9 +163,11 @@ export class DappBridgeService {
                 : 'COMPONENTS.PROMPT.DAPPNOTREADY');
             throw new Error('No wallet address available');
         }
-        await this.prompt.connectApproval(origin, candidate);
-        this.approvedOrigins.set(origin, candidate);
-        return candidate;
+        // lets the user pick which of the wallet's (possibly many) addresses to expose to
+        // this dApp, rather than always silently connecting the first one
+        const address = await this.prompt.connectApproval(origin, accounts);
+        this.approvedOrigins.set(origin, address);
+        return address;
     }
 
     private async handleRawCall(webviewEl: any, id: string, origin: string, method: string, params: any[]) {

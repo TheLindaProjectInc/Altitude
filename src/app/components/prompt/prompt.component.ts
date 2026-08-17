@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import { PromptService } from './prompt.service';
+import { Account } from 'app/metrix/classes/account';
 
 @Component({
     selector: 'prompt-container',
@@ -304,13 +305,15 @@ export class PromptComponent {
 
   dappConnectModal = {
     origin: '',
-    address: '',
+    accounts: [] as Account[],
+    selectedAddress: '',
     resolve: null,
     reject: null,
     hide: () => this.ngxModal.getModal('dappConnectModal').close(),
-    show: (origin: string, address: string) => {
+    show: (origin: string, accounts: Account[]) => {
       this.dappConnectModal.origin = origin;
-      this.dappConnectModal.address = address;
+      this.dappConnectModal.accounts = accounts;
+      this.dappConnectModal.selectedAddress = accounts.length ? accounts[0].address : '';
       this.ngxModal.getModal('dappConnectModal').open();
       return new Promise((resolve, reject) => {
         this.dappConnectModal.resolve = resolve;
@@ -319,7 +322,7 @@ export class PromptComponent {
     },
     buttonDone: () => {
       this.dappConnectModal.hide();
-      this.dappConnectModal.resolve();
+      this.dappConnectModal.resolve(this.dappConnectModal.selectedAddress);
     },
     buttonCancel: () => {
       this.dappConnectModal.hide();
