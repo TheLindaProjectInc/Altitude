@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Vanhemmat automaattiset varmuuskopiot poistetaan, jotta tämä kansio ei kasva loputtomiin – vain uusimmat alla olevat varmuuskopiot säilytetään.",
                 "KEEPCOUNTLABEL": "Pidä viimeinen",
                 "INTERVALLABEL": "Varmuuskopioi joka (päivä)"
+            },
+            "EXPLORERTAB": "Tutkimusmatkailija",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Lohkojen selaus",
+                "BLOCKEXPLORERINFO": "Sivusto avautui, kun katseli tapahtumaa lohkoselaimessa (esim. napsauta tapahtumaa hiiren kakkospainikkeella > Näytä lohkoselaimessa).",
+                "TOKENDISCOVERYTITLE": "Tokenin löytäminen",
+                "TOKENDISCOVERYINFO": "Vain luku -tilassa oleva palvelu, jota käytetään löytämään MRC20/MRC721-tokenit, joiden kanssa lompakon osoite on ollut vuorovaikutuksessa. Saldot ja omistajuus tarkistetaan aina uudelleen omaa daemonia vasten ennen niiden näyttämistä tai käyttöä – tätä käytetään vain tarkistettavien tokeneiden löytämiseen.",
+                "MAINNET": "Pääverkko",
+                "TESTNET": "Testiverkko",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Vahvistettu",
         "UNCONFIRMED": "Vahvistamaton",
         "PENDINGBALANCE": "Odottava saldo",
-        "SPENDABLEBALANCE": "Käytettävä saldo"
+        "SPENDABLEBALANCE": "Käytettävä saldo",
+        "SAVEBUTTON": "Tallentaa"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Coren alustus...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Paikallisen Masternoden määrittäminen...",
         "REPORTINGISSUE": "Haetaan diagnostiikkatietoja... Nämä tiedot kopioidaan leikepöydälle.",
         "WALLETUPDATEDOWNLOADING": "Päivitystä ladataan...",
-        "WALLETBACKUPFAILED": "Lompakon automaattinen varmuuskopiointi epäonnistui – tarkista varmuuskopiointisijainti ja käytettävissä oleva levytila"
+        "WALLETBACKUPFAILED": "Lompakon automaattinen varmuuskopiointi epäonnistui – tarkista varmuuskopiointisijainti ja käytettävissä oleva levytila",
+        "EXPLORERURLSAVED": "Tutkimusalueen URL-osoite tallennettu",
+        "EXPLORERURLRESET": "Tutkimusalueen URL-osoite palautettu oletusarvoiseksi",
+        "EXPLORERURLINVALID": "Tuo ei ole kelvollinen http(s)-URL-osoite",
+        "EXPLORERURLUNREACHABLE": "URL-osoitteeseen ei saatu yhteyttä – tarkista se ja yritä uudelleen"
     },
     "TIME": {
         "AFEWSECONDS": "Muutaman sekunnin",

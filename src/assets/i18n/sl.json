@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Starejše samodejne varnostne kopije se izbrišejo, da se ta mapa ne bo večno povečevala – ohranijo se le najnovejše spodaj.",
                 "KEEPCOUNTLABEL": "Naj bo zadnji",
                 "INTERVALLABEL": "Varnostno kopiraj vsakih (dni)"
+            },
+            "EXPLORERTAB": "Raziskovalec",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Raziskovalec blokov",
+                "BLOCKEXPLORERINFO": "Spletno mesto se je odprlo med ogledom transakcije v raziskovalcu blokov (npr. klik z desno tipko miške na transakcijo > Ogled v raziskovalcu).",
+                "TOKENDISCOVERYTITLE": "Odkrivanje žetonov",
+                "TOKENDISCOVERYINFO": "Storitev samo za branje, ki se uporablja za odkrivanje žetonov MRC20/MRC721, s katerimi je komuniciral naslov denarnice. Stanja in lastništvo se pred prikazom ali uporabo vedno ponovno preverijo z vašim lastnim demonom – to se uporablja samo za iskanje žetonov za preverjanje.",
+                "MAINNET": "Glavno omrežje",
+                "TESTNET": "Testno omrežje",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Potrjeno",
         "UNCONFIRMED": "Nepotrjeno",
         "PENDINGBALANCE": "Stanje v teku",
-        "SPENDABLEBALANCE": "Stanje, ki ga je mogoče porabiti"
+        "SPENDABLEBALANCE": "Stanje, ki ga je mogoče porabiti",
+        "SAVEBUTTON": "Shrani"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializacija jedra Metrix...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfiguriranje lokalnega glavnega vozlišča...",
         "REPORTINGISSUE": "Pridobivanje diagnostičnih podatkov... Ti podatki bodo kopirani v odložišče.",
         "WALLETUPDATEDOWNLOADING": "Prenašanje posodobitve...",
-        "WALLETBACKUPFAILED": "Samodejno varnostno kopiranje denarnice ni uspelo – preverite lokacijo varnostne kopije in razpoložljiv prostor na disku."
+        "WALLETBACKUPFAILED": "Samodejno varnostno kopiranje denarnice ni uspelo – preverite lokacijo varnostne kopije in razpoložljiv prostor na disku.",
+        "EXPLORERURLSAVED": "URL raziskovalca shranjen",
+        "EXPLORERURLRESET": "URL raziskovalca je bil ponastavljen na privzeto vrednost",
+        "EXPLORERURLINVALID": "To ni veljaven URL http(s)",
+        "EXPLORERURLUNREACHABLE": "Tega URL-ja ni bilo mogoče doseči – preverite ga in poskusite znova."
     },
     "TIME": {
         "AFEWSECONDS": "Nekaj sekund",

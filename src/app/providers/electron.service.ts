@@ -25,6 +25,17 @@ export class ElectronService {
   bootstrapSpace: { required: number, free: number } = { required: 0, free: 0 };
   defaultBackupLocation: string = '';
 
+  readonly defaultBlockExplorerUrls: { [key: number]: string } = {
+    [ChainType.MAINNET]: 'https://explorer.metrixcoin.com',
+    [ChainType.TESTNET]: 'https://testnet-explorer.metrixcoin.com',
+    [ChainType.REGTEST]: '', // no public explorer for regtest
+  };
+  readonly defaultTokenDiscoveryUrls: { [key: number]: string } = {
+    [ChainType.MAINNET]: 'https://explorer.metrixcoin.com',
+    [ChainType.TESTNET]: 'https://testnet-explorer.metrixcoin.com',
+    [ChainType.REGTEST]: '',
+  };
+
   @Output() clientStatusEvent: EventEmitter<ClientStatus> = new EventEmitter();
   @Output() RCPStatusEvent: EventEmitter<any> = new EventEmitter();
   @Output() checkUpdateEvent: EventEmitter<any> = new EventEmitter();
@@ -132,6 +143,37 @@ export class ElectronService {
 
   public backupWalletNow() {
     this.ipcRenderer.send('client-node', 'BACKUPWALLETNOW');
+  }
+
+  private blockExplorerSettingKey(chain: ChainType): string {
+    switch (chain) {
+      case ChainType.MAINNET: return 'blockExplorerUrlMainnet';
+      case ChainType.TESTNET: return 'blockExplorerUrlTestnet';
+      default: return 'blockExplorerUrlRegtest';
+    }
+  }
+
+  private tokenDiscoverySettingKey(chain: ChainType): string {
+    switch (chain) {
+      case ChainType.MAINNET: return 'tokenDiscoveryUrlMainnet';
+      case ChainType.TESTNET: return 'tokenDiscoveryUrlTestnet';
+      default: return 'tokenDiscoveryUrlRegtest';
+    }
+  }
+
+  // effective (user override, falling back to the built-in default) block explorer base
+  // URL for a given network - defaults to the currently active chain
+  public blockExplorerUrl(chain: ChainType = this.chain): string {
+    const url = this.settings[this.blockExplorerSettingKey(chain)] || this.defaultBlockExplorerUrls[chain] || '';
+    return url.replace(/\/+$/, '');
+  }
+
+  // same as blockExplorerUrl() but for the read-only token discovery API endpoint - these
+  // happen to share the same default hosts today, but are tracked as separate settings so
+  // they can be pointed at different services independently
+  public tokenDiscoveryUrl(chain: ChainType = this.chain): string {
+    const url = this.settings[this.tokenDiscoverySettingKey(chain)] || this.defaultTokenDiscoveryUrls[chain] || '';
+    return url.replace(/\/+$/, '');
   }
 
   connectSettingsIPC() {

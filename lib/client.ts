@@ -1006,8 +1006,9 @@ export default class Client {
   }
 
   async openTX(data) {
-    const baseUrl = `https://explorer.metrixcoin.com/tx/${data.txid}`;
-    shell.openExternal(baseUrl);
+    const base = blockExplorerUrlForChain(this.chain);
+    if (!base) return; // no explorer configured/available for this network
+    shell.openExternal(`${base}/tx/${data.txid}`);
   }
 
   async reportIssue(data) {
@@ -1122,6 +1123,26 @@ export enum ChainType {
   MAINNET,
   TESTNET,
   REGTEST,
+}
+
+// mirrors ElectronService's blockExplorerUrl()/defaultBlockExplorerUrls in the renderer -
+// kept as a separate copy here since main-process and renderer code aren't bundled together
+// (same reason ChainType itself is duplicated in src/app/enum.ts)
+function blockExplorerUrlForChain(chain: ChainType): string {
+  const appSettings = settings.getSettings();
+  let url: string;
+  switch (chain) {
+    case ChainType.MAINNET:
+      url = appSettings.blockExplorerUrlMainnet || "https://explorer.metrixcoin.com";
+      break;
+    case ChainType.TESTNET:
+      url = appSettings.blockExplorerUrlTestnet || "https://testnet-explorer.metrixcoin.com";
+      break;
+    default:
+      url = appSettings.blockExplorerUrlRegtest || ""; // no public explorer for regtest
+      break;
+  }
+  return url ? url.replace(/\/+$/, "") : "";
 }
 
 class InsufficientSpaceError extends Error {

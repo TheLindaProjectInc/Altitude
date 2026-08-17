@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Os backups automáticos mais antigos são excluídos para que esta pasta não cresça indefinidamente - apenas os mais recentes, listados abaixo, são mantidos.",
                 "KEEPCOUNTLABEL": "Guarde por último",
                 "INTERVALLABEL": "Faça backup a cada (dias)"
+            },
+            "EXPLORERTAB": "Explorador",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorador de Blocos",
+                "BLOCKEXPLORERINFO": "O site foi aberto ao visualizar uma transação no explorador de blocos (por exemplo, clicando com o botão direito do mouse em uma transação > Exibir no Explorador).",
+                "TOKENDISCOVERYTITLE": "Descoberta de Tokens",
+                "TOKENDISCOVERYINFO": "Serviço somente leitura usado para descobrir tokens MRC20/MRC721 com os quais um endereço de carteira interagiu. Saldos e titularidade são sempre verificados novamente em relação ao seu próprio daemon antes de serem exibidos ou usados — isso serve apenas para encontrar tokens para verificação.",
+                "MAINNET": "Rede principal",
+                "TESTNET": "Rede de testes",
+                "REGTEST": "Teste Registrado"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmado",
         "UNCONFIRMED": "Não confirmado",
         "PENDINGBALANCE": "Saldo pendente",
-        "SPENDABLEBALANCE": "Saldo disponível"
+        "SPENDABLEBALANCE": "Saldo disponível",
+        "SAVEBUTTON": "Salvar"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializando o Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurando o Masternode local...",
         "REPORTINGISSUE": "Obtendo informações de diagnóstico... Essas informações serão copiadas para a sua área de transferência.",
         "WALLETUPDATEDOWNLOADING": "Baixando atualização...",
-        "WALLETBACKUPFAILED": "O backup automático da carteira falhou - verifique o local do seu backup e o espaço disponível em disco."
+        "WALLETBACKUPFAILED": "O backup automático da carteira falhou - verifique o local do seu backup e o espaço disponível em disco.",
+        "EXPLORERURLSAVED": "URL do Explorer salva",
+        "EXPLORERURLRESET": "O URL do Explorer voltou ao padrão.",
+        "EXPLORERURLINVALID": "Essa não é uma URL http(s) válida.",
+        "EXPLORERURLUNREACHABLE": "Não foi possível acessar esse URL. Verifique-o e tente novamente."
     },
     "TIME": {
         "AFEWSECONDS": "Alguns segundos",

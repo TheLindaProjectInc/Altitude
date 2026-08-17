@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Vecākās automātiskās dublējumkopijas tiek dzēstas, lai šī mape neaugtu mūžīgi — tiek saglabātas tikai jaunākās, kas atrodas zemāk.",
                 "KEEPCOUNTLABEL": "Paturēt pēdējo",
                 "INTERVALLABEL": "Dublēt ik pēc (dienām)"
+            },
+            "EXPLORERTAB": "Pētnieks",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Bloku pārlūks",
+                "BLOCKEXPLORERINFO": "Vietne tika atvērta, skatot darījumu bloku pārlūkā (piemēram, ar peles labo pogu noklikšķiniet uz darījuma > Skatīt pārlūkā).",
+                "TOKENDISCOVERYTITLE": "Žetonu atklāšana",
+                "TOKENDISCOVERYINFO": "Tikai lasāms pakalpojums, ko izmanto, lai atklātu MRC20/MRC721 žetonus, ar kuriem maka adrese ir mijiedarbojusies. Pirms parādīšanas vai izmantošanas atlikumi un īpašumtiesības vienmēr tiek atkārtoti pārbaudītas, izmantojot jūsu pašu dēmonu — tas tiek izmantots tikai, lai atrastu pārbaudāmos žetonus.",
+                "MAINNET": "Galvenais tīkls",
+                "TESTNET": "Testa tīkls",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Apstiprināts",
         "UNCONFIRMED": "Neapstiprināts",
         "PENDINGBALANCE": "Neapmaksātais atlikums",
-        "SPENDABLEBALANCE": "Iztērējamais atlikums"
+        "SPENDABLEBALANCE": "Iztērējamais atlikums",
+        "SAVEBUTTON": "Saglabāt"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Notiek Metrix Core inicializācija...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Notiek lokālā Masternode konfigurēšana...",
         "REPORTINGISSUE": "Notiek diagnostikas informācijas iegūšana... Šī informācija tiks kopēta jūsu starpliktuvē.",
         "WALLETUPDATEDOWNLOADING": "Notiek atjauninājuma lejupielāde...",
-        "WALLETBACKUPFAILED": "Automātiska maka dublēšana neizdevās. Pārbaudiet dublējuma atrašanās vietu un pieejamo vietu diskā."
+        "WALLETBACKUPFAILED": "Automātiska maka dublēšana neizdevās. Pārbaudiet dublējuma atrašanās vietu un pieejamo vietu diskā.",
+        "EXPLORERURLSAVED": "Pārlūka URL saglabāts",
+        "EXPLORERURLRESET": "Pārlūka URL atjaunots uz noklusējuma vērtību",
+        "EXPLORERURLINVALID": "Tas nav derīgs http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Nevarēja sasniegt šo URL — pārbaudiet to un mēģiniet vēlreiz."
     },
     "TIME": {
         "AFEWSECONDS": "Dažas sekundes",

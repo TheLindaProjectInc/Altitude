@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Các bản sao lưu tự động cũ hơn sẽ bị xóa để thư mục này không bị phình to vô hạn - chỉ những bản sao lưu gần đây nhất bên dưới mới được giữ lại.",
                 "KEEPCOUNTLABEL": "Giữ lại cuối cùng",
                 "INTERVALLABEL": "Sao lưu mỗi (ngày)"
+            },
+            "EXPLORERTAB": "Nhà thám hiểm",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Trình khám phá khối",
+                "BLOCKEXPLORERINFO": "Trang web này được mở ra khi xem một giao dịch trên trình khám phá khối (ví dụ: nhấp chuột phải vào một giao dịch > Xem trên Trình khám phá).",
+                "TOKENDISCOVERYTITLE": "Khám phá Token",
+                "TOKENDISCOVERYINFO": "Dịch vụ chỉ đọc này được sử dụng để phát hiện các token MRC20/MRC721 mà địa chỉ ví đã tương tác. Số dư và quyền sở hữu luôn được xác minh lại với daemon của riêng bạn trước khi hiển thị hoặc sử dụng - chức năng này chỉ được dùng để tìm các token cần kiểm tra.",
+                "MAINNET": "Mạng chính",
+                "TESTNET": "Mạng thử nghiệm",
+                "REGTEST": "Đăng ký"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Đã xác nhận",
         "UNCONFIRMED": "Chưa được xác nhận",
         "PENDINGBALANCE": "Số dư chờ xử lý",
-        "SPENDABLEBALANCE": "Số dư có thể chi tiêu"
+        "SPENDABLEBALANCE": "Số dư có thể chi tiêu",
+        "SAVEBUTTON": "Cứu"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Khởi tạo lõi ma trận...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Đang cấu hình Masternode cục bộ...",
         "REPORTINGISSUE": "Đang lấy thông tin chẩn đoán... Thông tin này sẽ được sao chép vào clipboard của bạn.",
         "WALLETUPDATEDOWNLOADING": "Đang tải xuống bản cập nhật...",
-        "WALLETBACKUPFAILED": "Sao lưu ví tự động thất bại - hãy kiểm tra vị trí sao lưu và dung lượng ổ đĩa trống."
+        "WALLETBACKUPFAILED": "Sao lưu ví tự động thất bại - hãy kiểm tra vị trí sao lưu và dung lượng ổ đĩa trống.",
+        "EXPLORERURLSAVED": "URL của trình duyệt đã được lưu",
+        "EXPLORERURLRESET": "URL của trình duyệt đã được khôi phục về mặc định.",
+        "EXPLORERURLINVALID": "Đó không phải là URL http(s) hợp lệ.",
+        "EXPLORERURLUNREACHABLE": "Không thể truy cập URL đó - vui lòng kiểm tra lại và thử lại."
     },
     "TIME": {
         "AFEWSECONDS": "Vài giây",

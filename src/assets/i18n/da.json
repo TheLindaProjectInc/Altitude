@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Ældre automatiske sikkerhedskopier slettes, så denne mappe ikke vokser for evigt - kun de nyeste nedenfor gemmes.",
                 "KEEPCOUNTLABEL": "Behold sidst",
                 "INTERVALLABEL": "Sikkerhedskopier hver (dag)"
+            },
+            "EXPLORERTAB": "Udforsker",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blok Explorer",
+                "BLOCKEXPLORERINFO": "Siden åbnede, når en transaktion blev vist i blokstifinderen (f.eks. højreklik på en transaktion > Vis i stifinder).",
+                "TOKENDISCOVERYTITLE": "Token-opdagelse",
+                "TOKENDISCOVERYINFO": "Den skrivebeskyttede tjeneste, der bruges til at finde MRC20/MRC721-tokens, som en wallet-adresse har interageret med. Saldi og ejerskab verificeres altid mod din egen daemon, før de vises eller bruges - dette bruges kun til at finde tokens, der skal kontrolleres.",
+                "MAINNET": "Hovednet",
+                "TESTNET": "Testnet",
+                "REGTEST": "Registreringstest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Bekræftet",
         "UNCONFIRMED": "Ubekræftet",
         "PENDINGBALANCE": "Afventende saldo",
-        "SPENDABLEBALANCE": "Brugbar saldo"
+        "SPENDABLEBALANCE": "Brugbar saldo",
+        "SAVEBUTTON": "Spare"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialiserer Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode...",
         "REPORTINGISSUE": "Henter diagnostiske oplysninger... Disse oplysninger kopieres til din udklipsholder.",
         "WALLETUPDATEDOWNLOADING": "Downloader opdatering...",
-        "WALLETBACKUPFAILED": "Automatisk backup af tegnebogen mislykkedes - tjek din backupplacering og den tilgængelige diskplads"
+        "WALLETBACKUPFAILED": "Automatisk backup af tegnebogen mislykkedes - tjek din backupplacering og den tilgængelige diskplads",
+        "EXPLORERURLSAVED": "Explorer-URL gemt",
+        "EXPLORERURLRESET": "Explorer-URL er nulstillet til standard",
+        "EXPLORERURLINVALID": "Det er ikke en gyldig http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Kunne ikke nå den URL - tjek den og prøv igen"
     },
     "TIME": {
         "AFEWSECONDS": "Et par sekunder",

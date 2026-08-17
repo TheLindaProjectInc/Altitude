@@ -10,6 +10,9 @@
     <button (click)="tab=2" [ngClass]="{'active':tab==2}">
       {{'PAGES.OPTIONS.BACKUPTAB' | translate}}
     </button>
+    <button (click)="tab=3" [ngClass]="{'active':tab==3}">
+      {{'PAGES.OPTIONS.EXPLORERTAB' | translate}}
+    </button>
   </div>
 
   <!-- Network -->
@@ -194,6 +197,67 @@
           <span>{{ 'PAGES.OPTIONS.BACKUP.KEEPCOUNTLABEL' | translate }}:</span>
           <text-input class="number-field" type="number" [min]="1" [(inputModel)]="electron.settings.walletBackupKeepCount" (change)="setWalletBackupKeepCount()"></text-input>
         </div>
+      </div>
+    </div>
+  }
+
+  <!-- Explorer -->
+  @if (tab==3) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERINFO' | translate }}</p>
+        @for (network of explorerNetworks; track network) {
+          <div class="form-inline explorer-url-row">
+            <span>{{ ('PAGES.OPTIONS.EXPLORER.' + network.toUpperCase()) | translate }}</span>
+            <text-input type="url"
+              [(inputModel)]="explorerUrls.blockExplorer[network]"
+              [disabled]="explorerUrlTesting['blockExplorer.' + network]"
+              [placeholder]="defaultExplorerUrl('blockExplorer', network)">
+            </text-input>
+            <button class="btn btn-default btn-sm" [disabled]="explorerUrlTesting['blockExplorer.' + network]"
+              (click)="saveExplorerUrl('blockExplorer', network)">
+              @if (explorerUrlTesting['blockExplorer.' + network]) {
+                <fa-icon icon="spinner" animation="spin"></fa-icon>
+              } @else {
+                {{ 'MISC.SAVEBUTTON' | translate }}
+              }
+            </button>
+            @if (isExplorerUrlOverridden('blockExplorer', network)) {
+              <button class="btn btn-default btn-sm" (click)="resetExplorerUrl('blockExplorer', network)">
+                {{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}
+              </button>
+            }
+          </div>
+        }
+      </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.EXPLORER.TOKENDISCOVERYTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.TOKENDISCOVERYINFO' | translate }}</p>
+        @for (network of explorerNetworks; track network) {
+          <div class="form-inline explorer-url-row">
+            <span>{{ ('PAGES.OPTIONS.EXPLORER.' + network.toUpperCase()) | translate }}</span>
+            <text-input type="url"
+              [(inputModel)]="explorerUrls.tokenDiscovery[network]"
+              [disabled]="explorerUrlTesting['tokenDiscovery.' + network]"
+              [placeholder]="defaultExplorerUrl('tokenDiscovery', network)">
+            </text-input>
+            <button class="btn btn-default btn-sm" [disabled]="explorerUrlTesting['tokenDiscovery.' + network]"
+              (click)="saveExplorerUrl('tokenDiscovery', network)">
+              @if (explorerUrlTesting['tokenDiscovery.' + network]) {
+                <fa-icon icon="spinner" animation="spin"></fa-icon>
+              } @else {
+                {{ 'MISC.SAVEBUTTON' | translate }}
+              }
+            </button>
+            @if (isExplorerUrlOverridden('tokenDiscovery', network)) {
+              <button class="btn btn-default btn-sm" (click)="resetExplorerUrl('tokenDiscovery', network)">
+                {{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}
+              </button>
+            }
+          </div>
+        }
       </div>
     </div>
   }

@@ -249,6 +249,16 @@
                 "PRUNEINFO": "古い自動バックアップは削除されるため、このフォルダは際限なく肥大化せず、最新のものだけが保持されます。",
                 "KEEPCOUNTLABEL": "最後",
                 "INTERVALLABEL": "（日）ごとにバックアップしてください"
+            },
+            "EXPLORERTAB": "エクスプローラ",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "ブロックエクスプローラー",
+                "BLOCKEXPLORERINFO": "ブロックエクスプローラーでトランザクションを表示したとき（例：トランザクションを右クリックして「エクスプローラーで表示」を選択）に、サイトが開きました。",
+                "TOKENDISCOVERYTITLE": "トークン発見",
+                "TOKENDISCOVERYINFO": "ウォレットアドレスが操作したMRC20/MRC721トークンを検出するために使用される読み取り専用サービスです。残高と所有権は、表示または使用される前に必ず独自のデーモンに対して再検証されます。これは、チェック対象のトークンを見つけるためだけに使用されます。",
+                "MAINNET": "メインネット",
+                "TESTNET": "テストネット",
+                "REGTEST": "再テスト"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "確認済み",
         "UNCONFIRMED": "未確認",
         "PENDINGBALANCE": "未払い残高",
-        "SPENDABLEBALANCE": "使用可能な残高"
+        "SPENDABLEBALANCE": "使用可能な残高",
+        "SAVEBUTTON": "保存"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Coreを初期化しています...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "ローカルマスターノードを設定中...",
         "REPORTINGISSUE": "診断情報を取得しています… この情報はクリップボードにコピーされます。",
         "WALLETUPDATEDOWNLOADING": "アップデートをダウンロードしています...",
-        "WALLETBACKUPFAILED": "ウォレットの自動バックアップに失敗しました - バックアップ場所と利用可能なディスク容量を確認してください"
+        "WALLETBACKUPFAILED": "ウォレットの自動バックアップに失敗しました - バックアップ場所と利用可能なディスク容量を確認してください",
+        "EXPLORERURLSAVED": "エクスプローラーのURLが保存されました",
+        "EXPLORERURLRESET": "エクスプローラーのURLがデフォルトに戻りました",
+        "EXPLORERURLINVALID": "これは有効なhttp(s) URLではありません",
+        "EXPLORERURLUNREACHABLE": "そのURLにアクセスできませんでした - 確認してもう一度お試しください。"
     },
     "TIME": {
         "AFEWSECONDS": "数秒",

@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Les còpies de seguretat automàtiques més antigues s'eliminen perquè aquesta carpeta no creixi per sempre; només es conserven les més recents que hi ha a continuació.",
                 "KEEPCOUNTLABEL": "Mantenir l'últim",
                 "INTERVALLABEL": "Còpia de seguretat cada (dies)"
+            },
+            "EXPLORERTAB": "Explorador",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorador de blocs",
+                "BLOCKEXPLORERINFO": "El lloc s'obria en visualitzar una transacció a l'explorador de blocs (per exemple, feu clic amb el botó dret en una transacció > Visualitza a l'explorador).",
+                "TOKENDISCOVERYTITLE": "Descobriment de tokens",
+                "TOKENDISCOVERYINFO": "El servei de només lectura que s'utilitza per descobrir els tokens MRC20/MRC721 amb els quals ha interactuat una adreça de cartera. Els saldos i la propietat sempre es tornen a verificar amb el vostre propi daemon abans de mostrar-los o utilitzar-los; això només s'utilitza per trobar tokens per comprovar-los.",
+                "MAINNET": "Xarxa principal",
+                "TESTNET": "Xarxa de proves",
+                "REGTEST": "Prova de registre"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmat",
         "UNCONFIRMED": "Sense confirmar",
         "PENDINGBALANCE": "Saldo pendent",
-        "SPENDABLEBALANCE": "Saldo disponible"
+        "SPENDABLEBALANCE": "Saldo disponible",
+        "SAVEBUTTON": "Desa"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicialització del nucli de Metrix...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurant el Masternode local...",
         "REPORTINGISSUE": "S'està obtenint informació de diagnòstic... Aquesta informació es copiarà al porta-retalls.",
         "WALLETUPDATEDOWNLOADING": "S'està descarregant l'actualització...",
-        "WALLETBACKUPFAILED": "La còpia de seguretat automàtica del moneder ha fallat: comproveu la ubicació de la còpia de seguretat i l'espai de disc disponible."
+        "WALLETBACKUPFAILED": "La còpia de seguretat automàtica del moneder ha fallat: comproveu la ubicació de la còpia de seguretat i l'espai de disc disponible.",
+        "EXPLORERURLSAVED": "URL de l'explorador desada",
+        "EXPLORERURLRESET": "L'URL de l'explorador s'ha revertit a l'estat predeterminat",
+        "EXPLORERURLINVALID": "Aquesta no és una URL http vàlida.",
+        "EXPLORERURLUNREACHABLE": "No s'ha pogut accedir a aquesta URL; comproveu-la i torneu-ho a intentar."
     },
     "TIME": {
         "AFEWSECONDS": "Uns segons",

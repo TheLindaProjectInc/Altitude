@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Eldre automatiske sikkerhetskopier slettes, slik at denne mappen ikke vokser for alltid – bare de nyeste nedenfor beholdes.",
                 "KEEPCOUNTLABEL": "Behold sist",
                 "INTERVALLABEL": "Sikkerhetskopier hver (dag)"
+            },
+            "EXPLORERTAB": "Utforsker",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blokkutforsker",
+                "BLOCKEXPLORERINFO": "Nettstedet åpnet seg da jeg så en transaksjon i blokkutforskeren (f.eks. høyreklikk på en transaksjon > Vis i Utforsker).",
+                "TOKENDISCOVERYTITLE": "Tokenoppdagelse",
+                "TOKENDISCOVERYINFO": "Skrivebeskyttet tjeneste som brukes til å oppdage MRC20/MRC721-tokens som en lommebokadresse har samhandlet med. Saldoer og eierskap verifiseres alltid på nytt mot din egen daemon før de vises eller brukes – dette brukes kun til å finne tokens som skal sjekkes.",
+                "MAINNET": "Hovednett",
+                "TESTNET": "Testnett",
+                "REGTEST": "Registreringstest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Bekreftet",
         "UNCONFIRMED": "Ubekreftet",
         "PENDINGBALANCE": "Ventende saldo",
-        "SPENDABLEBALANCE": "Brukbar saldo"
+        "SPENDABLEBALANCE": "Brukbar saldo",
+        "SAVEBUTTON": "Spare"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialiserer Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode...",
         "REPORTINGISSUE": "Henter diagnostisk informasjon... Denne informasjonen kopieres til utklippstavlen.",
         "WALLETUPDATEDOWNLOADING": "Laster ned oppdateringen...",
-        "WALLETBACKUPFAILED": "Automatisk sikkerhetskopiering av lommeboken mislyktes – sjekk plasseringen av sikkerhetskopien og tilgjengelig diskplass"
+        "WALLETBACKUPFAILED": "Automatisk sikkerhetskopiering av lommeboken mislyktes – sjekk plasseringen av sikkerhetskopien og tilgjengelig diskplass",
+        "EXPLORERURLSAVED": "Utforsker-URL lagret",
+        "EXPLORERURLRESET": "Utforsker-URLen er tilbakestilt til standard",
+        "EXPLORERURLINVALID": "Det er ikke en gyldig http(er) URL",
+        "EXPLORERURLUNREACHABLE": "Kunne ikke nå den nettadressen – sjekk den og prøv på nytt"
     },
     "TIME": {
         "AFEWSECONDS": "Noen få sekunder",

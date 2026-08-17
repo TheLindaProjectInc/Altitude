@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Ältere automatische Backups werden gelöscht, damit dieser Ordner nicht unendlich wächst – es werden nur die neuesten Backups unten aufbewahrt.",
                 "KEEPCOUNTLABEL": "Letzten Tag behalten",
                 "INTERVALLABEL": "Sichern Sie alle (Tage)"
+            },
+            "EXPLORERTAB": "Forscher",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Block-Explorer",
+                "BLOCKEXPLORERINFO": "Die Website öffnete sich, als eine Transaktion im Block-Explorer angezeigt wurde (z. B. Rechtsklick auf eine Transaktion > Im Explorer anzeigen).",
+                "TOKENDISCOVERYTITLE": "Token-Erkennung",
+                "TOKENDISCOVERYINFO": "Der Lesedienst dient dazu, MRC20/MRC721-Token zu ermitteln, mit denen eine Wallet-Adresse interagiert hat. Guthaben und Besitzverhältnisse werden vor der Anzeige oder Verwendung stets mit Ihrem eigenen Daemon abgeglichen – dieser Dienst dient ausschließlich der Suche nach zu prüfenden Token.",
+                "MAINNET": "Mainnet",
+                "TESTNET": "Testnetz",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Bestätigt",
         "UNCONFIRMED": "Unbestätigt",
         "PENDINGBALANCE": "Ausstehender Saldo",
-        "SPENDABLEBALANCE": "Verfügbares Guthaben"
+        "SPENDABLEBALANCE": "Verfügbares Guthaben",
+        "SAVEBUTTON": "Speichern"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core wird initialisiert...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Lokalen Masternode konfigurieren...",
         "REPORTINGISSUE": "Diagnoseinformationen werden abgerufen... Diese Informationen werden in Ihre Zwischenablage kopiert.",
         "WALLETUPDATEDOWNLOADING": "Update wird heruntergeladen...",
-        "WALLETBACKUPFAILED": "Automatische Wallet-Sicherung fehlgeschlagen – überprüfen Sie den Speicherort Ihrer Sicherung und den verfügbaren Speicherplatz."
+        "WALLETBACKUPFAILED": "Automatische Wallet-Sicherung fehlgeschlagen – überprüfen Sie den Speicherort Ihrer Sicherung und den verfügbaren Speicherplatz.",
+        "EXPLORERURLSAVED": "Explorer-URL gespeichert",
+        "EXPLORERURLRESET": "Die Explorer-URL wurde auf den Standardwert zurückgesetzt.",
+        "EXPLORERURLINVALID": "Das ist keine gültige http(s)-URL.",
+        "EXPLORERURLUNREACHABLE": "Die URL konnte nicht erreicht werden – überprüfen Sie sie und versuchen Sie es erneut."
     },
     "TIME": {
         "AFEWSECONDS": "ein paar Sekunden",

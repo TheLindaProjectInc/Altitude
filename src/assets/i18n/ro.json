@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Copiile de rezervă automate mai vechi sunt șterse, astfel încât acest folder să nu crească la nesfârșit - se păstrează doar cele mai recente de mai jos.",
                 "KEEPCOUNTLABEL": "Păstrează ultimul",
                 "INTERVALLABEL": "Copiere de rezervă la fiecare (zile)"
+            },
+            "EXPLORERTAB": "Explorator",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorator de blocuri",
+                "BLOCKEXPLORERINFO": "Site-ul s-a deschis la vizualizarea unei tranzacții în exploratorul de blocuri (de exemplu, faceți clic dreapta pe o tranzacție > Vizualizare în Explorer).",
+                "TOKENDISCOVERYTITLE": "Descoperirea jetoanelor",
+                "TOKENDISCOVERYINFO": "Serviciul de tip „doar citire” folosit pentru a descoperi token-urile MRC20/MRC721 cu care a interacționat o adresă de portofel. Soldurile și proprietatea sunt întotdeauna reverificate în raport cu propriul daemon înainte de a fi afișate sau utilizate - acesta este folosit doar pentru a găsi token-uri de verificat.",
+                "MAINNET": "Rețea principală",
+                "TESTNET": "Rețea de testare",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmat",
         "UNCONFIRMED": "Neconfirmat",
         "PENDINGBALANCE": "Sold în așteptare",
-        "SPENDABLEBALANCE": "Sold cheltuibil"
+        "SPENDABLEBALANCE": "Sold cheltuibil",
+        "SAVEBUTTON": "Salva"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Se inițializează Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurarea Masternode-ului local...",
         "REPORTINGISSUE": "Se obțin informații de diagnosticare... Aceste informații vor fi copiate în clipboard.",
         "WALLETUPDATEDOWNLOADING": "Se descarcă actualizarea...",
-        "WALLETBACKUPFAILED": "Copia de rezervă automată a portofelului a eșuat - verificați locația copiei de rezervă și spațiul disponibil pe disc"
+        "WALLETBACKUPFAILED": "Copia de rezervă automată a portofelului a eșuat - verificați locația copiei de rezervă și spațiul disponibil pe disc",
+        "EXPLORERURLSAVED": "Adresa URL a Explorerului a fost salvată",
+        "EXPLORERURLRESET": "URL-ul Explorer a fost revenit la valoarea implicită",
+        "EXPLORERURLINVALID": "Aceasta nu este o adresă URL http validă.",
+        "EXPLORERURLUNREACHABLE": "Nu s-a putut accesa adresa URL respectivă - verificați-o și încercați din nou"
     },
     "TIME": {
         "AFEWSECONDS": "Câteva secunde",

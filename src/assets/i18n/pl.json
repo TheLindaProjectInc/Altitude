@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Starsze automatyczne kopie zapasowe są usuwane, więc ten folder nie rozrasta się w nieskończoność — przechowywane są tylko najnowsze kopie poniżej.",
                 "KEEPCOUNTLABEL": "Zachowaj na końcu",
                 "INTERVALLABEL": "Kopia zapasowa co (dni)"
+            },
+            "EXPLORERTAB": "Odkrywca",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Eksplorator bloków",
+                "BLOCKEXPLORERINFO": "Witryna otwierała się podczas przeglądania transakcji w eksploratorze bloków (np. po kliknięciu transakcji prawym przyciskiem myszy > wybraniu opcji Wyświetl w eksploratorze).",
+                "TOKENDISCOVERYTITLE": "Odkrywanie tokenów",
+                "TOKENDISCOVERYINFO": "Usługa tylko do odczytu służąca do wyszukiwania tokenów MRC20/MRC721, z którymi adres portfela wszedł w interakcję. Saldo i własność są zawsze ponownie weryfikowane w oparciu o Twój własny demon przed wyświetleniem lub użyciem – usługa ta służy wyłącznie do wyszukiwania tokenów do sprawdzenia.",
+                "MAINNET": "Sieć główna",
+                "TESTNET": "Sieć testowa",
+                "REGTEST": "Test kontrolny"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Potwierdzony",
         "UNCONFIRMED": "Niepotwierdzone",
         "PENDINGBALANCE": "Saldo oczekujące",
-        "SPENDABLEBALANCE": "Saldo do wydania"
+        "SPENDABLEBALANCE": "Saldo do wydania",
+        "SAVEBUTTON": "Ratować"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicjalizacja Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurowanie lokalnego Masternoda...",
         "REPORTINGISSUE": "Pobieranie informacji diagnostycznych... Informacje te zostaną skopiowane do schowka.",
         "WALLETUPDATEDOWNLOADING": "Pobieranie aktualizacji...",
-        "WALLETBACKUPFAILED": "Nie udało się utworzyć automatycznej kopii zapasowej portfela – sprawdź lokalizację kopii zapasowej i dostępną przestrzeń na dysku"
+        "WALLETBACKUPFAILED": "Nie udało się utworzyć automatycznej kopii zapasowej portfela – sprawdź lokalizację kopii zapasowej i dostępną przestrzeń na dysku",
+        "EXPLORERURLSAVED": "Zapisano adres URL Eksploratora",
+        "EXPLORERURLRESET": "Przywrócono domyślny adres URL Eksploratora",
+        "EXPLORERURLINVALID": "To nie jest prawidłowy adres URL http(s)",
+        "EXPLORERURLUNREACHABLE": "Nie udało się dotrzeć do tego adresu URL — sprawdź go i spróbuj ponownie"
     },
     "TIME": {
         "AFEWSECONDS": "Kilka sekund",

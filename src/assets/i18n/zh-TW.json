@@ -249,6 +249,16 @@
                 "PRUNEINFO": "較舊的自動備份將被刪除，因此該資料夾不會無限增長——僅保留以下最新的備份。",
                 "KEEPCOUNTLABEL": "保留最後",
                 "INTERVALLABEL": "每隔（天）備份一次"
+            },
+            "EXPLORERTAB": "探索者",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "區塊瀏覽器",
+                "BLOCKEXPLORERINFO": "在區塊瀏覽器中查看交易時（例如，右鍵單擊交易 > 在瀏覽器中查看），網站會開啟。",
+                "TOKENDISCOVERYTITLE": "代幣發現",
+                "TOKENDISCOVERYINFO": "此唯讀服務用於發現錢包地址已互動的 MRC20/MRC721 代幣。餘額和所有權資訊在顯示或使用前始終會與您的守護程序進行重新驗證—此服務僅用於查找待檢查的代幣。",
+                "MAINNET": "主網",
+                "TESTNET": "測試網",
+                "REGTEST": "回歸測試"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "確認的",
         "UNCONFIRMED": "未經證實",
         "PENDINGBALANCE": "待處理餘額",
-        "SPENDABLEBALANCE": "可用餘額"
+        "SPENDABLEBALANCE": "可用餘額",
+        "SAVEBUTTON": "節省"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "正在初始化 Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "正在設定本地主節點...",
         "REPORTINGISSUE": "正在獲取診斷資訊…此資訊將複製到您的剪貼簿。",
         "WALLETUPDATEDOWNLOADING": "正在下載更新…",
-        "WALLETBACKUPFAILED": "自動錢包備份失敗 - 請檢查備份位置和可用磁碟空間"
+        "WALLETBACKUPFAILED": "自動錢包備份失敗 - 請檢查備份位置和可用磁碟空間",
+        "EXPLORERURLSAVED": "已儲存的 Explorer URL",
+        "EXPLORERURLRESET": "瀏覽器 URL 已恢復為預設值",
+        "EXPLORERURLINVALID": "那不是一個有效的 http(s) URL",
+        "EXPLORERURLUNREACHABLE": "無法存取該網址 - 請檢查並重試。"
     },
     "TIME": {
         "AFEWSECONDS": "幾秒鐘",

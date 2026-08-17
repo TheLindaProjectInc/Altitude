@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Les sauvegardes automatiques les plus anciennes sont supprimées afin que ce dossier ne s'allonge pas indéfiniment ; seules les plus récentes, ci-dessous, sont conservées.",
                 "KEEPCOUNTLABEL": "Conservez le dernier",
                 "INTERVALLABEL": "Sauvegarder tous les (jours)"
+            },
+            "EXPLORERTAB": "Explorateur",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorateur de blocs",
+                "BLOCKEXPLORERINFO": "Le site s'ouvrait lors de la consultation d'une transaction dans l'explorateur de blocs (par exemple, clic droit sur une transaction > Afficher dans l'explorateur).",
+                "TOKENDISCOVERYTITLE": "Découverte de jetons",
+                "TOKENDISCOVERYINFO": "Ce service en lecture seule permet de découvrir les jetons MRC20/MRC721 avec lesquels une adresse de portefeuille a interagi. Les soldes et la propriété sont systématiquement revérifiés auprès de votre propre démon avant d'être affichés ou utilisés ; ce service sert uniquement à identifier les jetons à vérifier.",
+                "MAINNET": "Réseau principal",
+                "TESTNET": "Réseau de test",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmé",
         "UNCONFIRMED": "Non confirmé",
         "PENDINGBALANCE": "Solde en attente",
-        "SPENDABLEBALANCE": "Solde disponible"
+        "SPENDABLEBALANCE": "Solde disponible",
+        "SAVEBUTTON": "Sauvegarder"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialisation du noyau Metrix...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configuration du nœud maître local...",
         "REPORTINGISSUE": "Obtention des informations de diagnostic... Ces informations seront copiées dans votre presse-papiers.",
         "WALLETUPDATEDOWNLOADING": "Téléchargement de la mise à jour...",
-        "WALLETBACKUPFAILED": "La sauvegarde automatique du portefeuille a échoué : vérifiez l’emplacement de votre sauvegarde et l’espace disque disponible."
+        "WALLETBACKUPFAILED": "La sauvegarde automatique du portefeuille a échoué : vérifiez l’emplacement de votre sauvegarde et l’espace disque disponible.",
+        "EXPLORERURLSAVED": "URL de l'explorateur enregistrée",
+        "EXPLORERURLRESET": "L'URL de l'explorateur a été rétablie par défaut.",
+        "EXPLORERURLINVALID": "Il ne s'agit pas d'une URL http(s) valide",
+        "EXPLORERURLUNREACHABLE": "URL inaccessible - veuillez vérifier et réessayer."
     },
     "TIME": {
         "AFEWSECONDS": "Quelques secondes",

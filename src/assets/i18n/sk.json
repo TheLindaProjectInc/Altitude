@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Staršie automatické zálohy sa odstránia, aby sa tento priečinok nerozrastal donekonečna – zachovajú sa iba tie najnovšie, ktoré sú uvedené nižšie.",
                 "KEEPCOUNTLABEL": "Nechať posledný",
                 "INTERVALLABEL": "Zálohovať každých (dní)"
+            },
+            "EXPLORERTAB": "Prieskumník",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Prieskumník blokov",
+                "BLOCKEXPLORERINFO": "Stránka sa otvorila pri zobrazení transakcie v Prieskumníkovi blokov (napr. kliknutie pravým tlačidlom myši na transakciu > Zobraziť v Prieskumníkovi).",
+                "TOKENDISCOVERYTITLE": "Objav tokenov",
+                "TOKENDISCOVERYINFO": "Služba iba na čítanie, ktorá sa používa na vyhľadávanie tokenov MRC20/MRC721, s ktorými interagovala adresa peňaženky. Zostatky a vlastníctvo sa pred zobrazením alebo použitím vždy opätovne overujú oproti vášmu vlastnému démonovi – toto sa používa iba na vyhľadanie tokenov na kontrolu.",
+                "MAINNET": "Hlavná sieť",
+                "TESTNET": "Testovacia sieť",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Potvrdené",
         "UNCONFIRMED": "Nepotvrdené",
         "PENDINGBALANCE": "Čakajúci zostatok",
-        "SPENDABLEBALANCE": "Minuteľný zostatok"
+        "SPENDABLEBALANCE": "Minuteľný zostatok",
+        "SAVEBUTTON": "Uložiť"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializácia jadra Metrix...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurácia lokálneho masternodu...",
         "REPORTINGISSUE": "Získavajú sa diagnostické informácie... Tieto informácie budú skopírované do schránky.",
         "WALLETUPDATEDOWNLOADING": "Sťahovanie aktualizácie...",
-        "WALLETBACKUPFAILED": "Automatické zálohovanie peňaženky zlyhalo – skontrolujte umiestnenie zálohy a dostupné miesto na disku."
+        "WALLETBACKUPFAILED": "Automatické zálohovanie peňaženky zlyhalo – skontrolujte umiestnenie zálohy a dostupné miesto na disku.",
+        "EXPLORERURLSAVED": "URL adresa prieskumníka bola uložená",
+        "EXPLORERURLRESET": "URL adresa prieskumníka bola vrátená na predvolenú hodnotu",
+        "EXPLORERURLINVALID": "Toto nie je platná URL adresa http(s)",
+        "EXPLORERURLUNREACHABLE": "Nepodarilo sa získať prístup k tejto URL adrese – skontrolujte ju a skúste to znova."
     },
     "TIME": {
         "AFEWSECONDS": "Niekoľko sekúnd",

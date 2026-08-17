@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ElectronService } from 'app/providers/electron.service';
-import { ChainType } from 'app/enum';
 
 export interface ExplorerMRC20Balance {
     address: string;
@@ -32,9 +31,9 @@ export class TokenExplorerService {
     constructor(private http: HttpClient, private electron: ElectronService) { }
 
     private get baseUrl(): string | null {
-        if (this.electron.chain === ChainType.MAINNET) return 'https://explorer.metrixcoin.com';
-        if (this.electron.chain === ChainType.TESTNET) return 'https://testnet-explorer.metrixcoin.com';
-        return null; // no public explorer for regtest - manual add still works, just no auto-discovery
+        // customisable via Options > Explorer; empty (regtest has no default) means
+        // auto-discovery is unavailable but manual add still works
+        return this.electron.tokenDiscoveryUrl() || null;
     }
 
     get available(): boolean {

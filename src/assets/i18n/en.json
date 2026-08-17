@@ -215,6 +215,7 @@
             "NETWORKTAB": "Network",
             "WINDOTAB": "Window",
             "BACKUPTAB": "Backup",
+            "EXPLORERTAB": "Explorer",
             "NETWORK": {
                 "PROXY": "Connect through SOCKS5 proxy",
                 "PROXYIP": "Proxy IP",
@@ -257,6 +258,15 @@
                 "PRUNETITLE": "Backup History",
                 "PRUNEINFO": "Older automatic backups are deleted so this folder doesn't grow forever - only the most recent ones below are kept.",
                 "KEEPCOUNTLABEL": "Keep last"
+            },
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Block Explorer",
+                "BLOCKEXPLORERINFO": "The site opened when viewing a transaction on the block explorer (e.g. right-click a transaction > View on Explorer).",
+                "TOKENDISCOVERYTITLE": "Token Discovery",
+                "TOKENDISCOVERYINFO": "The read-only service used to discover MRC20/MRC721 tokens a wallet address has interacted with. Balances and ownership are always re-verified against your own daemon before being shown or used - this is only used to find tokens to check.",
+                "MAINNET": "Mainnet",
+                "TESTNET": "Testnet",
+                "REGTEST": "Regtest"
             }
         }
     },
@@ -458,7 +468,8 @@
         "SEARCH": "Search",
         "FEE": "Fee",
         "CONFIRMED": "Confirmed",
-        "UNCONFIRMED": "Unconfirmed"
+        "UNCONFIRMED": "Unconfirmed",
+        "SAVEBUTTON": "Save"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising Metrix Core...",
@@ -504,7 +515,11 @@
         "FAILEDTOWRITECONFIG": "There was a problem writing to your metrix.conf file. Check the file exists and that Altitude has write permissions.",
         "NOPUBLICUP": "No Public IP address found. Check your internet connection and restart Altitude.",
         "CONFIGURINGLOCALMN": "Configuring local Masternode...",
-        "REPORTINGISSUE": "Getting diagnostic information... This information will be copied to your clipboard."
+        "REPORTINGISSUE": "Getting diagnostic information... This information will be copied to your clipboard.",
+        "EXPLORERURLSAVED": "Explorer URL saved",
+        "EXPLORERURLRESET": "Explorer URL reverted to default",
+        "EXPLORERURLINVALID": "That is not a valid http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Could not reach that URL - check it and try again"
     },
     "DESKTOPNOTIFICATIONS": {
         "NEWTRANSACTION_TITLE_RECEIVED": "Received Coins",

@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Oudere automatische back-ups worden verwijderd, zodat deze map niet oneindig blijft groeien - alleen de meest recente back-ups hieronder worden bewaard.",
                 "KEEPCOUNTLABEL": "Bewaar als laatste",
                 "INTERVALLABEL": "Maak elke (dagen) een back-up."
+            },
+            "EXPLORERTAB": "Ontdekkingsreiziger",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blokkenverkenner",
+                "BLOCKEXPLORERINFO": "De site werd geopend bij het bekijken van een transactie in de block explorer (bijvoorbeeld door met de rechtermuisknop op een transactie te klikken > 'Bekijken in Explorer').",
+                "TOKENDISCOVERYTITLE": "Token Discovery",
+                "TOKENDISCOVERYINFO": "De alleen-lezen service wordt gebruikt om te ontdekken met welke MRC20/MRC721-tokens een walletadres interactie heeft gehad. Saldo's en eigendom worden altijd opnieuw geverifieerd aan de hand van uw eigen daemon voordat ze worden weergegeven of gebruikt - dit wordt alleen gebruikt om tokens te vinden die gecontroleerd moeten worden.",
+                "MAINNET": "Mainnet",
+                "TESTNET": "Testnet",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Bevestigd",
         "UNCONFIRMED": "Niet bevestigd",
         "PENDINGBALANCE": "In afwachting zijnde saldo",
-        "SPENDABLEBALANCE": "Besteedbaar saldo"
+        "SPENDABLEBALANCE": "Besteedbaar saldo",
+        "SAVEBUTTON": "Redden"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core wordt geïnitialiseerd...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "De lokale masternode configureren...",
         "REPORTINGISSUE": "Diagnostische informatie opvragen... Deze informatie wordt naar uw klembord gekopieerd.",
         "WALLETUPDATEDOWNLOADING": "Update downloaden...",
-        "WALLETBACKUPFAILED": "Automatische back-up van uw portemonnee is mislukt - controleer uw back-uplocatie en beschikbare schijfruimte."
+        "WALLETBACKUPFAILED": "Automatische back-up van uw portemonnee is mislukt - controleer uw back-uplocatie en beschikbare schijfruimte.",
+        "EXPLORERURLSAVED": "Explorer-URL opgeslagen",
+        "EXPLORERURLRESET": "Explorer-URL teruggezet naar standaardinstelling",
+        "EXPLORERURLINVALID": "Dat is geen geldige http(s)-URL.",
+        "EXPLORERURLUNREACHABLE": "Die URL kon niet worden bereikt - controleer deze en probeer het opnieuw."
     },
     "TIME": {
         "AFEWSECONDS": "een paar seconden",

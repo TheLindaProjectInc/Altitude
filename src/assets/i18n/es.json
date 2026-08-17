@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Las copias de seguridad automáticas más antiguas se eliminan para que esta carpeta no crezca indefinidamente; solo se conservan las más recientes que aparecen a continuación.",
                 "KEEPCOUNTLABEL": "Mantener al último",
                 "INTERVALLABEL": "Realizar una copia de seguridad cada (días)"
+            },
+            "EXPLORERTAB": "Explorador",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorador de bloques",
+                "BLOCKEXPLORERINFO": "El sitio se abrió al visualizar una transacción en el explorador de bloques (por ejemplo, haciendo clic con el botón derecho en una transacción > Ver en el explorador).",
+                "TOKENDISCOVERYTITLE": "Descubrimiento de tokens",
+                "TOKENDISCOVERYINFO": "El servicio de solo lectura se utiliza para descubrir los tokens MRC20/MRC721 con los que ha interactuado una dirección de billetera. Los saldos y la propiedad siempre se verifican con su propio demonio antes de mostrarse o utilizarse; esto solo se usa para encontrar tokens que se deban comprobar.",
+                "MAINNET": "Red principal",
+                "TESTNET": "Red de prueba",
+                "REGTEST": "Prueba de registro"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmado",
         "UNCONFIRMED": "Inconfirmado",
         "PENDINGBALANCE": "Saldo pendiente",
-        "SPENDABLEBALANCE": "Saldo disponible"
+        "SPENDABLEBALANCE": "Saldo disponible",
+        "SAVEBUTTON": "Ahorrar"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializando Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurando el Masternode local...",
         "REPORTINGISSUE": "Obteniendo información de diagnóstico... Esta información se copiará al portapapeles.",
         "WALLETUPDATEDOWNLOADING": "Descargando actualización...",
-        "WALLETBACKUPFAILED": "Falló la copia de seguridad automática de la cartera: compruebe la ubicación de la copia de seguridad y el espacio disponible en el disco."
+        "WALLETBACKUPFAILED": "Falló la copia de seguridad automática de la cartera: compruebe la ubicación de la copia de seguridad y el espacio disponible en el disco.",
+        "EXPLORERURLSAVED": "URL del explorador guardada",
+        "EXPLORERURLRESET": "La URL del explorador volvió a su valor predeterminado.",
+        "EXPLORERURLINVALID": "Esa no es una URL http(s) válida.",
+        "EXPLORERURLUNREACHABLE": "No se pudo acceder a esa URL; compruébela e inténtelo de nuevo."
     },
     "TIME": {
         "AFEWSECONDS": "Unos segundos",

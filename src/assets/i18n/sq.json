@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Kopjet rezervë automatike më të vjetra fshihen në mënyrë që kjo dosje të mos rritet përgjithmonë - ruhen vetëm ato më të fundit më poshtë.",
                 "KEEPCOUNTLABEL": "Mbajeni të fundit",
                 "INTERVALLABEL": "Krijo kopje rezervë çdo (ditë)"
+            },
+            "EXPLORERTAB": "Eksplorues",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Eksploruesi i Blloqeve",
+                "BLOCKEXPLORERINFO": "Faqja u hap kur shikonte një transaksion në eksploruesin e blloqeve (p.sh. kliko me të djathtën mbi një transaksion > Shiko në Eksplorues).",
+                "TOKENDISCOVERYTITLE": "Zbulimi i Tokenit",
+                "TOKENDISCOVERYINFO": "Shërbimi vetëm për lexim përdoret për të zbuluar tokenët MRC20/MRC721 me të cilët ka ndërvepruar një adresë portofoli. Bilancet dhe pronësia gjithmonë verifikohen përsëri kundrejt demonit tuaj përpara se të shfaqen ose përdoren - kjo përdoret vetëm për të gjetur tokenët për t'u kontrolluar.",
+                "MAINNET": "Rrjeti kryesor",
+                "TESTNET": "Testnet",
+                "REGTEST": "Testi i Regjistrimit"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Konfirmuar",
         "UNCONFIRMED": "I pakonfirmuar",
         "PENDINGBALANCE": "Bilanci në pritje",
-        "SPENDABLEBALANCE": "Bilanci i Shpenzueshëm"
+        "SPENDABLEBALANCE": "Bilanci i Shpenzueshëm",
+        "SAVEBUTTON": "Ruaj"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Duke inicializuar Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Duke konfiguruar Masternodin lokal...",
         "REPORTINGISSUE": "Duke marrë informacion diagnostikues... Ky informacion do të kopjohet në kujtesën tuaj të përkohshme.",
         "WALLETUPDATEDOWNLOADING": "Duke shkarkuar përditësimin...",
-        "WALLETBACKUPFAILED": "Rezervimi automatik i portofolit dështoi - kontrolloni vendndodhjen e rezervimit dhe hapësirën e disponueshme në disk"
+        "WALLETBACKUPFAILED": "Rezervimi automatik i portofolit dështoi - kontrolloni vendndodhjen e rezervimit dhe hapësirën e disponueshme në disk",
+        "EXPLORERURLSAVED": "URL-ja e eksploruesit u ruajt",
+        "EXPLORERURLRESET": "URL-ja e eksploruesit u rikthye në të parazgjedhurën",
+        "EXPLORERURLINVALID": "Kjo nuk është një URL http(s) e vlefshme",
+        "EXPLORERURLUNREACHABLE": "Nuk munda ta arrija atë URL - kontrolloje dhe provo përsëri"
     },
     "TIME": {
         "AFEWSECONDS": "Disa sekonda",

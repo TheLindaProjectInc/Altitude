@@ -249,6 +249,16 @@
                 "PRUNEINFO": "As copias de seguridade automáticas máis antigas elimínanse para que este cartafol non medre para sempre; só se conservan as máis recentes que aparecen a continuación.",
                 "KEEPCOUNTLABEL": "Manter o último",
                 "INTERVALLABEL": "Facer unha copia de seguridade cada (días)"
+            },
+            "EXPLORERTAB": "Explorador",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Explorador de bloques",
+                "BLOCKEXPLORERINFO": "O sitio abriuse ao visualizar unha transacción no explorador de bloques (por exemplo, premer co botón dereito nunha transacción > Ver no explorador).",
+                "TOKENDISCOVERYTITLE": "Descubrimento de tokens",
+                "TOKENDISCOVERYINFO": "O servizo de só lectura empregado para descubrir os tokens MRC20/MRC721 cos que interactuou un enderezo de carteira. Os saldos e a propiedade sempre se volven verificar co teu propio daemon antes de mostralos ou usalos; isto só se emprega para atopar tokens que comprobar.",
+                "MAINNET": "Rede principal",
+                "TESTNET": "Rede de probas",
+                "REGTEST": "Rexistro"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confirmado",
         "UNCONFIRMED": "Sen confirmar",
         "PENDINGBALANCE": "Saldo pendente",
-        "SPENDABLEBALANCE": "Saldo dispoñible"
+        "SPENDABLEBALANCE": "Saldo dispoñible",
+        "SAVEBUTTON": "Gardar"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializando Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurando o Masternode local...",
         "REPORTINGISSUE": "Obtendo información de diagnóstico... Esta información copiarase no portapapeis.",
         "WALLETUPDATEDOWNLOADING": "Descargando a actualización...",
-        "WALLETBACKUPFAILED": "Fallou a copia de seguridade automática da carteira. Comprobe a localización da copia de seguridade e o espazo dispoñible no disco."
+        "WALLETBACKUPFAILED": "Fallou a copia de seguridade automática da carteira. Comprobe a localización da copia de seguridade e o espazo dispoñible no disco.",
+        "EXPLORERURLSAVED": "URL do explorador gardada",
+        "EXPLORERURLRESET": "URL do explorador restaurada á predeterminada",
+        "EXPLORERURLINVALID": "Ese non é un URL http válido",
+        "EXPLORERURLUNREACHABLE": "Non se puido acceder a ese URL. Compróbao e téntao de novo."
     },
     "TIME": {
         "AFEWSECONDS": "Uns poucos segundos",

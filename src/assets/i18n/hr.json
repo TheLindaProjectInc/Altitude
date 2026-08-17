@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Starije automatske sigurnosne kopije brišu se kako ova mapa ne bi trajno rasla - čuvaju se samo najnovije u nastavku.",
                 "KEEPCOUNTLABEL": "Ostavi zadnje",
                 "INTERVALLABEL": "Sigurnosno kopiraj svakih (dana)"
+            },
+            "EXPLORERTAB": "Istraživač",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Istraživač blokova",
+                "BLOCKEXPLORERINFO": "Stranica se otvorila prilikom pregleda transakcije u pregledniku blokova (npr. desni klik na transakciju > Prikaži u pregledniku).",
+                "TOKENDISCOVERYTITLE": "Otkrivanje tokena",
+                "TOKENDISCOVERYINFO": "Usluga samo za čitanje koja se koristi za otkrivanje MRC20/MRC721 tokena s kojima je adresa novčanika komunicirala. Stanja i vlasništvo uvijek se ponovno provjeravaju u odnosu na vaš vlastiti daemon prije prikaza ili korištenja - ovo se koristi samo za pronalaženje tokena za provjeru.",
+                "MAINNET": "Glavna mreža",
+                "TESTNET": "Testna mreža",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Potvrđeno",
         "UNCONFIRMED": "Nepotvrđeno",
         "PENDINGBALANCE": "Neplaćeni saldo",
-        "SPENDABLEBALANCE": "Stanje za potrošnju"
+        "SPENDABLEBALANCE": "Stanje za potrošnju",
+        "SAVEBUTTON": "Uštedjeti"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicijalizacija Metrix Core-a...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfiguriranje lokalnog Masternodea...",
         "REPORTINGISSUE": "Dohvaćanje dijagnostičkih informacija... Ove će se informacije kopirati u vaš međuspremnik.",
         "WALLETUPDATEDOWNLOADING": "Preuzimanje ažuriranja...",
-        "WALLETBACKUPFAILED": "Automatska sigurnosna kopija novčanika nije uspjela - provjerite lokaciju sigurnosne kopije i dostupan prostor na disku"
+        "WALLETBACKUPFAILED": "Automatska sigurnosna kopija novčanika nije uspjela - provjerite lokaciju sigurnosne kopije i dostupan prostor na disku",
+        "EXPLORERURLSAVED": "URL istraživača spremljen",
+        "EXPLORERURLRESET": "URL istraživača vraćen je na zadane vrijednosti",
+        "EXPLORERURLINVALID": "To nije valjani http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Nije moguće pristupiti tom URL-u - provjerite ga i pokušajte ponovno"
     },
     "TIME": {
         "AFEWSECONDS": "Nekoliko sekundi",

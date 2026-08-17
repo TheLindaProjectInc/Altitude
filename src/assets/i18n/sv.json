@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Äldre automatiska säkerhetskopior raderas så att den här mappen inte växer för alltid – endast de senaste nedan behålls.",
                 "KEEPCOUNTLABEL": "Behåll sist",
                 "INTERVALLABEL": "Säkerhetskopiera varje (dag)"
+            },
+            "EXPLORERTAB": "Utforskare",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blockutforskaren",
+                "BLOCKEXPLORERINFO": "Webbplatsen öppnades när en transaktion visades i blockutforskaren (t.ex. högerklicka på en transaktion > Visa i Utforskaren).",
+                "TOKENDISCOVERYTITLE": "Tokenupptäckt",
+                "TOKENDISCOVERYINFO": "Den skrivskyddade tjänsten som används för att upptäcka MRC20/MRC721-tokens som en plånboksadress har interagerat med. Saldon och ägarskap verifieras alltid mot din egen daemon innan de visas eller används - detta används endast för att hitta tokens att kontrollera.",
+                "MAINNET": "Huvudnät",
+                "TESTNET": "Testnät",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Bekräftad",
         "UNCONFIRMED": "Obekräftad",
         "PENDINGBALANCE": "Väntande saldo",
-        "SPENDABLEBALANCE": "Spendeerbart saldo"
+        "SPENDABLEBALANCE": "Spendeerbart saldo",
+        "SAVEBUTTON": "Spara"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initierar Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurerar lokal masternode...",
         "REPORTINGISSUE": "Hämtar diagnostisk information... Den här informationen kopieras till urklipp.",
         "WALLETUPDATEDOWNLOADING": "Laddar ner uppdatering...",
-        "WALLETBACKUPFAILED": "Automatisk säkerhetskopiering av plånboken misslyckades – kontrollera din säkerhetskopieringsplats och tillgängligt diskutrymme"
+        "WALLETBACKUPFAILED": "Automatisk säkerhetskopiering av plånboken misslyckades – kontrollera din säkerhetskopieringsplats och tillgängligt diskutrymme",
+        "EXPLORERURLSAVED": "Utforskarens URL sparad",
+        "EXPLORERURLRESET": "Utforskarens URL har återställts till standardinställningen",
+        "EXPLORERURLINVALID": "Det är inte en giltig http(s)-URL",
+        "EXPLORERURLUNREACHABLE": "Kunde inte nå den URL:en - kontrollera den och försök igen"
     },
     "TIME": {
         "AFEWSECONDS": "Några sekunder",

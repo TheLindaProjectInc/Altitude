@@ -69,6 +69,17 @@
         .backup-location-actions {
             margin-top: 10px;
         }
+
+        .explorer-url-row {
+            span {
+                min-width: 70px;
+            }
+
+            button {
+                margin-left: 8px;
+                white-space: nowrap;
+            }
+        }
     }
 
     // leave room for the network tab's fixed restart-core bar so it doesn't cover

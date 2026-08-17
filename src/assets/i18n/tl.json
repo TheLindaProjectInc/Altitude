@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Ang mga lumang awtomatikong pag-backup ay binubura kaya hindi lalago nang tuluyan ang folder na ito - tanging ang mga pinakabago lamang sa ibaba ang itinatago.",
                 "KEEPCOUNTLABEL": "Panatilihing huli",
                 "INTERVALLABEL": "Mag-backup kada (araw)"
+            },
+            "EXPLORERTAB": "Manggagalugad",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Block Explorer",
+                "BLOCKEXPLORERINFO": "Bumukas ang site nang tingnan ang isang transaksyon sa block explorer (hal. i-right-click ang isang transaksyon > Tingnan sa Explorer).",
+                "TOKENDISCOVERYTITLE": "Pagtuklas ng Token",
+                "TOKENDISCOVERYINFO": "Ang read-only na serbisyong ginagamit upang matuklasan ang mga MRC20/MRC721 token na nakipag-ugnayan sa isang wallet address. Ang mga balanse at pagmamay-ari ay palaging muling bineberipika laban sa iyong sariling daemon bago ipakita o gamitin - ginagamit lamang ito upang maghanap ng mga token na susuriin.",
+                "MAINNET": "Mainnet",
+                "TESTNET": "Testnet",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Nakumpirma",
         "UNCONFIRMED": "Hindi nakumpirma",
         "PENDINGBALANCE": "Nakabinbing Balanse",
-        "SPENDABLEBALANCE": "Balanseng Magastos"
+        "SPENDABLEBALANCE": "Balanseng Magastos",
+        "SAVEBUTTON": "I-save"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Sinisimulan ang Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Pag-configure ng lokal na Masternode...",
         "REPORTINGISSUE": "Kinukuha ang impormasyong diagnostic... Kokopyahin ang impormasyong ito sa iyong clipboard.",
         "WALLETUPDATEDOWNLOADING": "Dina-download ang update...",
-        "WALLETBACKUPFAILED": "Nabigo ang awtomatikong pag-backup ng wallet - suriin ang lokasyon ng iyong backup at magagamit na espasyo sa disk"
+        "WALLETBACKUPFAILED": "Nabigo ang awtomatikong pag-backup ng wallet - suriin ang lokasyon ng iyong backup at magagamit na espasyo sa disk",
+        "EXPLORERURLSAVED": "Na-save na ang URL ng Explorer",
+        "EXPLORERURLRESET": "Ibinalik sa default ang URL ng Explorer",
+        "EXPLORERURLINVALID": "Hindi iyon isang wastong http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Hindi maabot ang URL na iyon - tingnan ito at subukang muli"
     },
     "TIME": {
         "AFEWSECONDS": "Ilang segundo",

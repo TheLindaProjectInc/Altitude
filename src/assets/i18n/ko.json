@@ -249,6 +249,16 @@
                 "PRUNEINFO": "이 폴더가 무한정 커지지 않도록 오래된 자동 백업 파일은 삭제됩니다. 가장 최근의 백업 파일만 아래에 유지됩니다.",
                 "KEEPCOUNTLABEL": "마지막을 유지하세요",
                 "INTERVALLABEL": "(며칠마다) 백업하세요"
+            },
+            "EXPLORERTAB": "탐침",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "블록 탐색기",
+                "BLOCKEXPLORERINFO": "해당 사이트는 블록 탐색기에서 거래를 볼 때 열립니다(예: 거래를 마우스 오른쪽 버튼으로 클릭 > 탐색기에서 보기).",
+                "TOKENDISCOVERYTITLE": "토큰 발견",
+                "TOKENDISCOVERYINFO": "이 서비스는 읽기 전용으로, 지갑 주소가 사용한 MRC20/MRC721 토큰을 검색하는 데 사용됩니다. 잔액과 소유권은 표시되거나 사용되기 전에 항상 사용자의 데몬을 통해 재검증됩니다. 이 서비스는 확인이 필요한 토큰을 찾는 용도로만 사용됩니다.",
+                "MAINNET": "메인넷",
+                "TESTNET": "테스트넷",
+                "REGTEST": "레그테스트"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "확인됨",
         "UNCONFIRMED": "미확인",
         "PENDINGBALANCE": "미결제 잔액",
-        "SPENDABLEBALANCE": "사용 가능 잔액"
+        "SPENDABLEBALANCE": "사용 가능 잔액",
+        "SAVEBUTTON": "구하다"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core 초기화 중...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "로컬 마스터노드를 구성 중...",
         "REPORTINGISSUE": "진단 정보를 가져오는 중... 이 정보는 클립보드에 복사됩니다.",
         "WALLETUPDATEDOWNLOADING": "업데이트 다운로드 중...",
-        "WALLETBACKUPFAILED": "지갑 자동 백업에 실패했습니다. 백업 위치와 사용 가능한 디스크 공간을 확인하세요."
+        "WALLETBACKUPFAILED": "지갑 자동 백업에 실패했습니다. 백업 위치와 사용 가능한 디스크 공간을 확인하세요.",
+        "EXPLORERURLSAVED": "탐색기 URL이 저장되었습니다.",
+        "EXPLORERURLRESET": "탐색기 URL이 기본값으로 되돌아갔습니다.",
+        "EXPLORERURLINVALID": "그것은 유효한 http(s) URL이 아닙니다.",
+        "EXPLORERURLUNREACHABLE": "해당 URL에 연결할 수 없습니다. 확인 후 다시 시도해 주세요."
     },
     "TIME": {
         "AFEWSECONDS": "몇 초",

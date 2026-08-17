@@ -109,6 +109,36 @@ function set_walletBackupIntervalDays(days: number) {
     saveSettings();
 }
 
+function set_blockExplorerUrlMainnet(url: string) {
+    settings.blockExplorerUrlMainnet = url;
+    saveSettings();
+}
+
+function set_blockExplorerUrlTestnet(url: string) {
+    settings.blockExplorerUrlTestnet = url;
+    saveSettings();
+}
+
+function set_blockExplorerUrlRegtest(url: string) {
+    settings.blockExplorerUrlRegtest = url;
+    saveSettings();
+}
+
+function set_tokenDiscoveryUrlMainnet(url: string) {
+    settings.tokenDiscoveryUrlMainnet = url;
+    saveSettings();
+}
+
+function set_tokenDiscoveryUrlTestnet(url: string) {
+    settings.tokenDiscoveryUrlTestnet = url;
+    saveSettings();
+}
+
+function set_tokenDiscoveryUrlRegtest(url: string) {
+    settings.tokenDiscoveryUrlRegtest = url;
+    saveSettings();
+}
+
 // set internally by Client once a scheduled backup completes - not user-facing, so no
 // IPC case for it, just a plain export the main process can call directly
 export function set_lastWalletBackup(timestamp: number) {
@@ -185,6 +215,24 @@ function setupIPC() {
             case 'SETWALLETBACKUPINTERVALDAYS':
                 set_walletBackupIntervalDays(data);
                 break;
+            case 'SETBLOCKEXPLORERURLMAINNET':
+                set_blockExplorerUrlMainnet(data);
+                break;
+            case 'SETBLOCKEXPLORERURLTESTNET':
+                set_blockExplorerUrlTestnet(data);
+                break;
+            case 'SETBLOCKEXPLORERURLREGTEST':
+                set_blockExplorerUrlRegtest(data);
+                break;
+            case 'SETTOKENDISCOVERYURLMAINNET':
+                set_tokenDiscoveryUrlMainnet(data);
+                break;
+            case 'SETTOKENDISCOVERYURLTESTNET':
+                set_tokenDiscoveryUrlTestnet(data);
+                break;
+            case 'SETTOKENDISCOVERYURLREGTEST':
+                set_tokenDiscoveryUrlRegtest(data);
+                break;
         }
     });
 }
@@ -215,6 +263,14 @@ export class Settings {
     walletBackupKeepCount: number = 5;
     walletBackupIntervalDays: number = 14;
     lastWalletBackup: number = 0;
+    // empty = use the built-in default for that network (see ElectronService/lib/client.ts) -
+    // same "empty means default" convention as walletBackupLocation above
+    blockExplorerUrlMainnet: string = '';
+    blockExplorerUrlTestnet: string = '';
+    blockExplorerUrlRegtest: string = '';
+    tokenDiscoveryUrlMainnet: string = '';
+    tokenDiscoveryUrlTestnet: string = '';
+    tokenDiscoveryUrlRegtest: string = '';
 
     constructor(data) {
         if (data) {

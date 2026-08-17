@@ -249,6 +249,16 @@
                 "PRUNEINFO": "I backup automatici più vecchi vengono eliminati per evitare che questa cartella cresca all'infinito; vengono conservati solo quelli più recenti elencati di seguito.",
                 "KEEPCOUNTLABEL": "Tieni l'ultimo",
                 "INTERVALLABEL": "Eseguire il backup ogni (giorni)"
+            },
+            "EXPLORERTAB": "Esploratore",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Supporta Explorer",
+                "BLOCKEXPLORERINFO": "Il sito si è aperto visualizzando una transazione nell'explorer dei blocchi (ad esempio, facendo clic con il pulsante destro del mouse su una transazione > Visualizza nell'explorer).",
+                "TOKENDISCOVERYTITLE": "Scoperta del token",
+                "TOKENDISCOVERYINFO": "Questo servizio di sola lettura viene utilizzato per individuare i token MRC20/MRC721 con cui un indirizzo di portafoglio ha interagito. I saldi e la proprietà vengono sempre verificati nuovamente con il proprio daemon prima di essere visualizzati o utilizzati; questo servizio viene utilizzato esclusivamente per trovare i token da controllare.",
+                "MAINNET": "Rete principale",
+                "TESTNET": "Rete di prova",
+                "REGTEST": "Registrazione"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Confermato",
         "UNCONFIRMED": "Non confermato",
         "PENDINGBALANCE": "Saldo in sospeso",
-        "SPENDABLEBALANCE": "Saldo spendibile"
+        "SPENDABLEBALANCE": "Saldo spendibile",
+        "SAVEBUTTON": "Salva"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inizializzazione di Metrix Core in corso...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Configurazione del Masternode locale...",
         "REPORTINGISSUE": "Acquisizione delle informazioni diagnostiche... Queste informazioni verranno copiate negli appunti.",
         "WALLETUPDATEDOWNLOADING": "Download dell'aggiornamento in corso...",
-        "WALLETBACKUPFAILED": "Il backup automatico del portafoglio non è riuscito: verifica la posizione del backup e lo spazio su disco disponibile."
+        "WALLETBACKUPFAILED": "Il backup automatico del portafoglio non è riuscito: verifica la posizione del backup e lo spazio su disco disponibile.",
+        "EXPLORERURLSAVED": "URL di Esplora risorse salvato",
+        "EXPLORERURLRESET": "L'URL di Esplora risorse è stato ripristinato al valore predefinito.",
+        "EXPLORERURLINVALID": "Questo non è un URL http(s) valido",
+        "EXPLORERURLUNREACHABLE": "Impossibile raggiungere l'URL: controlla e riprova."
     },
     "TIME": {
         "AFEWSECONDS": "pochi secondi",

@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Starší automatické zálohy se smažou, aby se tato složka nerozrůstala donekonečna – zachovají se pouze ty nejnovější níže.",
                 "KEEPCOUNTLABEL": "Nechte poslední",
                 "INTERVALLABEL": "Zálohovat každých (dnů)"
+            },
+            "EXPLORERTAB": "Badatel",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Průzkumník bloků",
+                "BLOCKEXPLORERINFO": "Stránka se otevřela při zobrazení transakce v Průzkumníku bloků (např. kliknutí pravým tlačítkem myši na transakci > Zobrazit v Průzkumníku).",
+                "TOKENDISCOVERYTITLE": "Objevování tokenů",
+                "TOKENDISCOVERYINFO": "Služba pouze pro čtení, která se používá k vyhledávání tokenů MRC20/MRC721, se kterými interagovala adresa peněženky. Zůstatky a vlastnictví jsou před zobrazením nebo použitím vždy znovu ověřeny u vašeho vlastního démona – toto se používá pouze k nalezení tokenů ke kontrole.",
+                "MAINNET": "Hlavní síť",
+                "TESTNET": "Testovací síť",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Potvrzeno",
         "UNCONFIRMED": "Nepotvrzeno",
         "PENDINGBALANCE": "Nevyřízený zůstatek",
-        "SPENDABLEBALANCE": "Utratitelný zůstatek"
+        "SPENDABLEBALANCE": "Utratitelný zůstatek",
+        "SAVEBUTTON": "Uložit"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Inicializace jádra Metrixu...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Konfigurace lokálního masternodu...",
         "REPORTINGISSUE": "Získávání diagnostických informací... Tyto informace budou zkopírovány do schránky.",
         "WALLETUPDATEDOWNLOADING": "Stahování aktualizace...",
-        "WALLETBACKUPFAILED": "Automatické zálohování peněženky selhalo – zkontrolujte umístění zálohy a dostupné místo na disku."
+        "WALLETBACKUPFAILED": "Automatické zálohování peněženky selhalo – zkontrolujte umístění zálohy a dostupné místo na disku.",
+        "EXPLORERURLSAVED": "URL Průzkumníka uložena",
+        "EXPLORERURLRESET": "URL Průzkumníka vrácena na výchozí nastavení",
+        "EXPLORERURLINVALID": "Toto není platná URL adresa http(s)",
+        "EXPLORERURLUNREACHABLE": "Nepodařilo se dosáhnout této adresy URL – zkontrolujte ji a zkuste to znovu."
     },
     "TIME": {
         "AFEWSECONDS": "Pár sekund",

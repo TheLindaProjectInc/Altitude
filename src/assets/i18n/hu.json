@@ -249,6 +249,16 @@
                 "PRUNEINFO": "A régebbi automatikus biztonsági mentések törlődnek, így ez a mappa nem növekszik örökké – csak a legújabbak maradnak meg.",
                 "KEEPCOUNTLABEL": "Tartsa az utolsót",
                 "INTERVALLABEL": "Biztonsági mentés minden (nap)"
+            },
+            "EXPLORERTAB": "Felfedező",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blokkböngésző",
+                "BLOCKEXPLORERINFO": "Az oldal egy tranzakció blokkböngészőben történő megtekintésekor nyílt meg (pl. jobb egérgombbal kattintson egy tranzakcióra > Megtekintés az Intézőben).",
+                "TOKENDISCOVERYTITLE": "Token felfedezés",
+                "TOKENDISCOVERYINFO": "Az írásvédett szolgáltatás, amely az MRC20/MRC721 tokenek felderítésére szolgál, amelyekkel egy tárcacím interakcióba lépett. Az egyenlegeket és a tulajdonjogot mindig újra ellenőrzi a saját démonoddal szemben, mielőtt megjelenítenéd vagy felhasználnád – ezt csak az ellenőrizendő tokenek megtalálására használod.",
+                "MAINNET": "Főhálózat",
+                "TESTNET": "Teszthálózat",
+                "REGTEST": "Regteszt"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Megerősített",
         "UNCONFIRMED": "Megerősítetlen",
         "PENDINGBALANCE": "Függőben lévő egyenleg",
-        "SPENDABLEBALANCE": "Elkölthető egyenleg"
+        "SPENDABLEBALANCE": "Elkölthető egyenleg",
+        "SAVEBUTTON": "Megtakarítás"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core inicializálása...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Helyi Masternode konfigurálása...",
         "REPORTINGISSUE": "Diagnosztikai információk beszerzése... Ezek az információk a vágólapra lesznek másolva.",
         "WALLETUPDATEDOWNLOADING": "Frissítés letöltése...",
-        "WALLETBACKUPFAILED": "Az automatikus tárca biztonsági mentése sikertelen volt – ellenőrizze a biztonsági mentés helyét és a rendelkezésre álló lemezterületet."
+        "WALLETBACKUPFAILED": "Az automatikus tárca biztonsági mentése sikertelen volt – ellenőrizze a biztonsági mentés helyét és a rendelkezésre álló lemezterületet.",
+        "EXPLORERURLSAVED": "Böngésző URL-címe mentve",
+        "EXPLORERURLRESET": "A böngésző URL-címe visszaállt az alapértelmezettre",
+        "EXPLORERURLINVALID": "Ez nem érvényes http URL",
+        "EXPLORERURLUNREACHABLE": "Nem sikerült elérni az URL-t - ellenőrizze, és próbálja újra."
     },
     "TIME": {
         "AFEWSECONDS": "Néhány másodperc",

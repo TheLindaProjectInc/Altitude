@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Vanemad automaatsed varukoopiad kustutatakse, et see kaust ei kasvaks igavesti – alles jäävad ainult kõige uuemad allpool olevad varukoopiad.",
                 "KEEPCOUNTLABEL": "Hoia viimane",
                 "INTERVALLABEL": "Varundamine iga (päeva) järel"
+            },
+            "EXPLORERTAB": "Avastaja",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Blokeeri uurija",
+                "BLOCKEXPLORERINFO": "Sait avanes tehingu vaatamisel plokkide uurijas (nt paremklõpsake tehingul > Kuva uurijas).",
+                "TOKENDISCOVERYTITLE": "Tokeni avastamine",
+                "TOKENDISCOVERYINFO": "Kirjutuskaitstud teenus, mida kasutatakse MRC20/MRC721 tokenite avastamiseks, millega rahakoti aadress on suhelnud. Saldo ja omandiõigust kontrollitakse alati enne kuvamist või kasutamist teie enda deemoni suhtes – seda kasutatakse ainult kontrollitavate tokenite leidmiseks.",
+                "MAINNET": "Peavõrk",
+                "TESTNET": "Testvõrk",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Kinnitatud",
         "UNCONFIRMED": "Kinnitamata",
         "PENDINGBALANCE": "Ootel olev saldo",
-        "SPENDABLEBALANCE": "Kulutatav saldo"
+        "SPENDABLEBALANCE": "Kulutatav saldo",
+        "SAVEBUTTON": "Salvesta"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Metrix Core'i initsialiseerimine...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Kohaliku Masternode'i seadistamine...",
         "REPORTINGISSUE": "Diagnostilise teabe hankimine... See teave kopeeritakse teie lõikelauale.",
         "WALLETUPDATEDOWNLOADING": "Värskenduse allalaadimine...",
-        "WALLETBACKUPFAILED": "Automaatne rahakoti varundamine ebaõnnestus – kontrollige oma varundamise asukohta ja saadaolevat kettaruumi"
+        "WALLETBACKUPFAILED": "Automaatne rahakoti varundamine ebaõnnestus – kontrollige oma varundamise asukohta ja saadaolevat kettaruumi",
+        "EXPLORERURLSAVED": "Exploreri URL salvestatud",
+        "EXPLORERURLRESET": "Exploreri URL taastati vaikeseadele",
+        "EXPLORERURLINVALID": "See ei ole kehtiv http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Sellele URL-ile ei õnnestunud ligi pääseda – kontrollige seda ja proovige uuesti"
     },
     "TIME": {
         "AFEWSECONDS": "Mõni sekund",

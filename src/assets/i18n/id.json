@@ -249,6 +249,16 @@
                 "PRUNEINFO": "Cadangan otomatis yang lebih lama akan dihapus agar folder ini tidak terus bertambah ukurannya - hanya cadangan terbaru di bawah ini yang disimpan.",
                 "KEEPCOUNTLABEL": "Simpan terakhir",
                 "INTERVALLABEL": "Cadangkan setiap (hari)"
+            },
+            "EXPLORERTAB": "Penjelajah",
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Penjelajah Blok",
+                "BLOCKEXPLORERINFO": "Situs tersebut terbuka saat melihat transaksi di penjelajah blok (misalnya, klik kanan transaksi > Lihat di Penjelajah).",
+                "TOKENDISCOVERYTITLE": "Penemuan Token",
+                "TOKENDISCOVERYINFO": "Layanan baca-saja yang digunakan untuk menemukan token MRC20/MRC721 yang telah berinteraksi dengan alamat dompet. Saldo dan kepemilikan selalu diverifikasi ulang terhadap daemon Anda sendiri sebelum ditampilkan atau digunakan - ini hanya digunakan untuk menemukan token yang perlu diperiksa.",
+                "MAINNET": "Jaringan Utama",
+                "TESTNET": "Jaringan uji",
+                "REGTEST": "Regtest"
             }
         },
         "MANAGEACCOUNT": {
@@ -458,7 +468,8 @@
         "CONFIRMED": "Dikonfirmasi",
         "UNCONFIRMED": "Belum dikonfirmasi",
         "PENDINGBALANCE": "Saldo Tertunda",
-        "SPENDABLEBALANCE": "Saldo yang Dapat Dibelanjakan"
+        "SPENDABLEBALANCE": "Saldo yang Dapat Dibelanjakan",
+        "SAVEBUTTON": "Menyimpan"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Menginisialisasi Metrix Core...",
@@ -504,7 +515,11 @@
         "CONFIGURINGLOCALMN": "Mengonfigurasi Masternode lokal...",
         "REPORTINGISSUE": "Mengambil informasi diagnostik... Informasi ini akan disalin ke clipboard Anda.",
         "WALLETUPDATEDOWNLOADING": "Mengunduh pembaruan...",
-        "WALLETBACKUPFAILED": "Pencadangan dompet otomatis gagal - periksa lokasi pencadangan dan ruang disk yang tersedia."
+        "WALLETBACKUPFAILED": "Pencadangan dompet otomatis gagal - periksa lokasi pencadangan dan ruang disk yang tersedia.",
+        "EXPLORERURLSAVED": "URL penjelajah tersimpan",
+        "EXPLORERURLRESET": "URL Explorer dikembalikan ke pengaturan default.",
+        "EXPLORERURLINVALID": "Itu bukan URL http(s) yang valid",
+        "EXPLORERURLUNREACHABLE": "URL tersebut tidak dapat diakses - periksa kembali dan coba lagi."
     },
     "TIME": {
         "AFEWSECONDS": "Beberapa detik",
