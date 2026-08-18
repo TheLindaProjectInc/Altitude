@@ -44,8 +44,22 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
             npm run electron:linux
-            npm run electron:windows32
             npm run electron:windows
+            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
+            npm run electron:windows32
+            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-primary
+          path: |
+            release/Altitude-Metrix-Wallet-mac-arm64.dmg
+            release/Altitude-Metrix-Wallet-mac-arm64.zip
+            release/Altitude-Metrix-Wallet-linux-x64.AppImage
+            release/Altitude-Metrix-Wallet-win32-x64.exe
+            release/Altitude-Metrix-Wallet-win32-x86.exe
+          retention-days: 14
+          if-no-files-found: warn
 
   # Some users still need an Intel mac-x64 build. macos-15-intel is GitHub's
   # last x64 macOS runner image and is scheduled to retire in Fall 2027 - once
@@ -69,3 +83,12 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         run: |
             npm run electron:mac-x64
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-mac-x64
+          path: |
+            release/Altitude-Metrix-Wallet-mac-x64.dmg
+            release/Altitude-Metrix-Wallet-mac-x64.zip
+          retention-days: 14
+          if-no-files-found: warn
