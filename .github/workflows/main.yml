@@ -38,10 +38,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-            npm run electron:linux
+            # electron-builder defaults to the host arch when none is given, which on
+            # this arm64 runner means an unpinned build silently produces an arm64
+            # installer instead of x64 (mislabeled linux-x64.AppImage, or a
+            # win32-arm64.exe that the Upload/Release steps below never find) - pin
+            # --x64 explicitly on both unpinned invocations
+            npm run electron:linux -- --x64
             npm run electron:windows32
             mv release/latest.yml release/latest-ia32.yml
-            npm run electron:windows
+            npm run electron:windows -- --x64
             mv release/latest.yml release/latest-x64.yml
             # electron-builder writes one latest.yml per invocation, so the ia32 and
             # x64 runs above each only describe their own installer. Merge them into

@@ -43,11 +43,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-            npm run electron:linux
-            npm run electron:windows
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x64.exe
+            # electron-builder defaults to the host arch when none is given, which on
+            # this arm64 runner means an unpinned build silently produces an arm64
+            # installer instead of x64 - pin --x64 explicitly here rather than in
+            # package.json.
+            npm run electron:linux -- --x64
+            npm run electron:windows -- --x64
             npm run electron:windows32
-            mv release/Altitude-Metrix-Wallet-win32.exe release/Altitude-Metrix-Wallet-win32-x86.exe
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7
         with:
@@ -57,7 +59,7 @@ jobs:
             release/Altitude-Metrix-Wallet-mac-arm64.zip
             release/Altitude-Metrix-Wallet-linux-x64.AppImage
             release/Altitude-Metrix-Wallet-win32-x64.exe
-            release/Altitude-Metrix-Wallet-win32-x86.exe
+            release/Altitude-Metrix-Wallet-win32-ia32.exe
           retention-days: 14
           if-no-files-found: warn
 
