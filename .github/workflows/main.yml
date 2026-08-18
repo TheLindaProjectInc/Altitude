@@ -58,13 +58,13 @@ jobs:
         with:
           name: release-primary
           path: |
-            release/Altitude-Metrix-Wallet-mac-arm64.dmg
-            release/Altitude-Metrix-Wallet-mac-arm64.zip
+            release/Altitude-Metrix-Wallet-macOS-arm64.dmg
+            release/Altitude-Metrix-Wallet-macOS-arm64.zip
             release/latest-mac-arm64.yml
-            release/Altitude-Metrix-Wallet-linux-x64.AppImage
+            release/Altitude-Metrix-Wallet-Linux-x64.AppImage
             release/latest-linux.yml
-            release/Altitude-Metrix-Wallet-win32-x64.exe
-            release/Altitude-Metrix-Wallet-win32-ia32.exe
+            release/Altitude-Metrix-Wallet-Windows-x64.exe
+            release/Altitude-Metrix-Wallet-Windows-ia32.exe
             release/latest.yml
           retention-days: 1
 
@@ -97,8 +97,8 @@ jobs:
         with:
           name: release-mac-x64
           path: |
-            release/Altitude-Metrix-Wallet-mac-x64.dmg
-            release/Altitude-Metrix-Wallet-mac-x64.zip
+            release/Altitude-Metrix-Wallet-macOS-x64.dmg
+            release/Altitude-Metrix-Wallet-macOS-x64.zip
             release/latest-mac-x64.yml
           retention-days: 1
 
@@ -129,13 +129,13 @@ jobs:
           set -x
           ls -l ./release/
           assets=()
-          assets+=("./release/Altitude-Metrix-Wallet-mac-arm64.dmg")
-          assets+=("./release/Altitude-Metrix-Wallet-mac-arm64.zip")
-          assets+=("./release/Altitude-Metrix-Wallet-mac-x64.dmg")
-          assets+=("./release/Altitude-Metrix-Wallet-mac-x64.zip")
-          assets+=("./release/Altitude-Metrix-Wallet-linux-x64.AppImage")
-          assets+=("./release/Altitude-Metrix-Wallet-win32-ia32.exe")
-          assets+=("./release/Altitude-Metrix-Wallet-win32-x64.exe")
+          assets+=("./release/Altitude-Metrix-Wallet-macOS-arm64.dmg")
+          assets+=("./release/Altitude-Metrix-Wallet-macOS-arm64.zip")
+          assets+=("./release/Altitude-Metrix-Wallet-macOS-x64.dmg")
+          assets+=("./release/Altitude-Metrix-Wallet-macOS-x64.zip")
+          assets+=("./release/Altitude-Metrix-Wallet-Linux-x64.AppImage")
+          assets+=("./release/Altitude-Metrix-Wallet-Windows-ia32.exe")
+          assets+=("./release/Altitude-Metrix-Wallet-Windows-x64.exe")
           assets+=("./release/latest.yml")
           assets+=("./release/latest-mac.yml")
           assets+=("./release/latest-linux.yml")
