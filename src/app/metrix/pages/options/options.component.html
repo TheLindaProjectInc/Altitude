@@ -13,6 +13,9 @@
     <button (click)="tab=3" [ngClass]="{'active':tab==3}">
       {{'PAGES.OPTIONS.EXPLORERTAB' | translate}}
     </button>
+    <button (click)="tab=4" [ngClass]="{'active':tab==4}">
+      {{'PAGES.OPTIONS.DEVELOPERTAB' | translate}}
+    </button>
   </div>
 
   <!-- Network -->
@@ -259,6 +262,48 @@
           </div>
         }
       </div>
+    </div>
+  }
+
+  <!-- Developer -->
+  @if (tab==4) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODETITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODEINFO' | translate }}</p>
+        <div class="option-row">
+          <input id="chkDevMode" (change)="setDevMode()" [(ngModel)]="electron.settings.devMode" type='checkbox' />
+          <label for="chkDevMode">{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODELABEL' | translate }}</label>
+        </div>
+      </div>
+
+      @if (electron.settings.devMode) {
+        <h4 class="warning restart-notice">{{ 'PAGES.OPTIONS.DEVELOPER.WARNING' | translate }}</h4>
+
+        <div class="content-card option-card">
+          <h5>{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTTITLE' | translate }}</h5>
+          <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTINFO' | translate }}</p>
+          <div class="form-inline">
+            <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTLABEL' | translate }}:</span>
+            <text-input [(inputModel)]="devRpc.host" (change)="setDevRpc()" placeholder="127.0.0.1"></text-input>
+          </div>
+          <div class="form-inline">
+            <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCPORTLABEL' | translate }}:</span>
+            <text-input type="number" [(inputModel)]="devRpc.port" (change)="setDevRpc()" placeholder="33851"></text-input>
+          </div>
+          <div class="form-inline">
+            <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCUSERLABEL' | translate }}:</span>
+            <text-input [(inputModel)]="devRpc.user" (change)="setDevRpc()"></text-input>
+          </div>
+          <div class="form-inline">
+            <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCPASSWORDLABEL' | translate }}:</span>
+            <text-input type="password" [(inputModel)]="devRpc.password" (change)="setDevRpc()"></text-input>
+          </div>
+          @if (devRpcOverridden) {
+            <button class="btn btn-default btn-sm" (click)="resetDevRpc()">{{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}</button>
+          }
+        </div>
+      }
     </div>
   }
 

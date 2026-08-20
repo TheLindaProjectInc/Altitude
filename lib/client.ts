@@ -824,6 +824,19 @@ export default class Client {
     return false;
   }
 
+  // dev-only overrides so Altitude can be pointed at a daemon it isn't managing itself
+  // (e.g. a remote regtest instance) - each falls back to the normal locally-managed
+  // daemon's own connection details when not set
+  private get effectiveRpcConnection() {
+    const appSettings = settings.getSettings();
+    return {
+      host: appSettings.devRpcHost || "127.0.0.1",
+      port: appSettings.devRpcPort || this.clientConfigFile.rpcport,
+      user: appSettings.devRpcUser || this.clientConfigFile.rpcuser,
+      password: appSettings.devRpcPassword || this.clientConfigFile.rpcpassword,
+    };
+  }
+
   async callClient(method, params = []): Promise<{}> {
     if (method === "getmnsaddress") {
       return new Promise((resolve, reject) => {
@@ -855,9 +868,10 @@ export default class Client {
     } else {
       return new Promise((resolve, reject) => {
         let timeout = method === "importprivkey" ? 60000 : 10000;
+        const conn = this.effectiveRpcConnection;
         const options = {
           method: "POST",
-          url: `http://${this.clientConfigFile.rpcuser}:${this.clientConfigFile.rpcpassword}@127.0.0.1:${this.clientConfigFile.rpcport}/`,
+          url: `http://${conn.user}:${conn.password}@${conn.host}:${conn.port}/`,
           body: {
             jsonrpc: "1.0",
             id: "Tunnel",
@@ -900,11 +914,12 @@ export default class Client {
     if (this.chain === ChainType.TESTNET) network = "TestNet";
 
     try {
+      const conn = this.effectiveRpcConnection;
       const mrpc = new MetrixRPCNode(
         null,
-        `http://127.0.0.1:${this.clientConfigFile.rpcport}`,
-        this.clientConfigFile.rpcuser,
-        this.clientConfigFile.rpcpassword
+        `http://${conn.host}:${conn.port}`,
+        conn.user,
+        conn.password
       );
       const provider = new RPCProvider(network, mrpc, sender);
       const mns = new MNS(network, provider, getMNSAddress(network));

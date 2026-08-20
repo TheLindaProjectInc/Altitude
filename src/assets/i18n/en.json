@@ -216,6 +216,7 @@
             "WINDOTAB": "Window",
             "BACKUPTAB": "Backup",
             "EXPLORERTAB": "Explorer",
+            "DEVELOPERTAB": "Developer",
             "NETWORK": {
                 "PROXY": "Connect through SOCKS5 proxy",
                 "PROXYIP": "Proxy IP",
@@ -267,6 +268,18 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Developer Mode",
+                "DEVMODEINFO": "Off by default and intended for developers only. Enabling this reveals options to override the RPC connection - standard users should leave this off.",
+                "DEVMODELABEL": "Enable Developer Mode",
+                "WARNING": "These settings are for development purposes only. Changing them can prevent the wallet from connecting to a daemon at all - only use this if you know what you're doing.",
+                "RPCHOSTTITLE": "RPC Connection",
+                "RPCHOSTINFO": "By default Altitude connects to the daemon it manages itself, on this machine (127.0.0.1). Overriding these lets it connect to a different daemon instead - for example a remote regtest instance, without needing to run one locally. If the connection succeeds, Altitude will not download or start its own local daemon. The target daemon's rpcallowip must permit this connection, and rpcuser/rpcpassword below must match its configuration. Takes effect immediately, no restart required.",
+                "RPCHOSTLABEL": "RPC Host",
+                "RPCPORTLABEL": "RPC Port",
+                "RPCUSERLABEL": "RPC Username",
+                "RPCPASSWORDLABEL": "RPC Password"
             }
         }
     },
@@ -479,7 +492,9 @@
         "RESTARTING": "Restarting Metrix Core...",
         "BOOTSTRAPPING": "Downloading bootstrap...",
         "BOOTSTRAPEXTRACTING": "Extracting bootstrap...",
-        "TIMEREMAINING": "remaining:"
+        "TIMEREMAINING": "remaining:",
+        "DEVRPCOVERRIDEACTIVE": "A developer RPC connection override is set (Options > Developer) and isn't responding. Clear it to reconnect to the local daemon normally.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Clear RPC Override & Reconnect"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "New account created successfully",
@@ -519,7 +534,9 @@
         "EXPLORERURLSAVED": "Explorer URL saved",
         "EXPLORERURLRESET": "Explorer URL reverted to default",
         "EXPLORERURLINVALID": "That is not a valid http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Could not reach that URL - check it and try again"
+        "EXPLORERURLUNREACHABLE": "Could not reach that URL - check it and try again",
+        "DEVRPCHOSTSAVED": "RPC host saved",
+        "DEVRPCHOSTRESET": "RPC host reverted to default (127.0.0.1)"
     },
     "DESKTOPNOTIFICATIONS": {
         "NEWTRANSACTION_TITLE_RECEIVED": "Received Coins",

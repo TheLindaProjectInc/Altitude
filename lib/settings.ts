@@ -139,6 +139,41 @@ function set_tokenDiscoveryUrlRegtest(url: string) {
     saveSettings();
 }
 
+// gates whether Options > Developer shows the RPC override fields at all - standard
+// users should never see or accidentally set these. Purely a UI-visibility gate; it does
+// NOT gate whether an already-set override actually applies (see effectiveRpcConnection
+// in lib/client.ts) or whether the stuck-connection recovery notice can appear, since
+// someone with a leftover override from before this toggle existed still needs a way out
+// regardless of the toggle's current value.
+function set_devMode(enabled: boolean) {
+    settings.devMode = enabled;
+    saveSettings();
+}
+
+// dev-only escape hatch to point the RPC tunnel at a daemon other than the one Altitude
+// itself spawns locally (e.g. another wallet instance) - empty means the normal 127.0.0.1
+// behaviour. The target daemon still needs rpcallowip/rpcuser/rpcpassword configured to
+// accept this connection; this setting only changes where Altitude sends the request.
+function set_devRpcHost(host: string) {
+    settings.devRpcHost = host;
+    saveSettings();
+}
+
+function set_devRpcPort(port: string) {
+    settings.devRpcPort = port;
+    saveSettings();
+}
+
+function set_devRpcUser(user: string) {
+    settings.devRpcUser = user;
+    saveSettings();
+}
+
+function set_devRpcPassword(password: string) {
+    settings.devRpcPassword = password;
+    saveSettings();
+}
+
 // set internally by Client once a scheduled backup completes - not user-facing, so no
 // IPC case for it, just a plain export the main process can call directly
 export function set_lastWalletBackup(timestamp: number) {
@@ -233,6 +268,21 @@ function setupIPC() {
             case 'SETTOKENDISCOVERYURLREGTEST':
                 set_tokenDiscoveryUrlRegtest(data);
                 break;
+            case 'SETDEVMODE':
+                set_devMode(data);
+                break;
+            case 'SETDEVRPCHOST':
+                set_devRpcHost(data);
+                break;
+            case 'SETDEVRPCPORT':
+                set_devRpcPort(data);
+                break;
+            case 'SETDEVRPCUSER':
+                set_devRpcUser(data);
+                break;
+            case 'SETDEVRPCPASSWORD':
+                set_devRpcPassword(data);
+                break;
         }
     });
 }
@@ -271,6 +321,17 @@ export class Settings {
     tokenDiscoveryUrlMainnet: string = '';
     tokenDiscoveryUrlTestnet: string = '';
     tokenDiscoveryUrlRegtest: string = '';
+    // gates visibility of the RPC override fields in Options > Developer - see
+    // set_devMode() above
+    devMode: boolean = false;
+    // dev-only: empty means the normal 127.0.0.1 connection to Altitude's own locally
+    // spawned daemon; overriding these points the RPC tunnel at a different daemon
+    // entirely (e.g. a remote regtest instance) - if it's reachable, Client.startClient()
+    // detects it as already running and never downloads/spawns a local one at all
+    devRpcHost: string = '';
+    devRpcPort: string = '';
+    devRpcUser: string = '';
+    devRpcPassword: string = '';
 
     constructor(data) {
         if (data) {

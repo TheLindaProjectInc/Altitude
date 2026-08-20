@@ -46,5 +46,13 @@
         {{ rpc.RPCWarmupMessage }}
       </h3>
     }
+    @if (showDevRpcOverrideNotice()) {
+      <div class="dev-rpc-override-notice">
+        <p>{{ 'CLIENTSTATUS.DEVRPCOVERRIDEACTIVE' | translate }}</p>
+        <button class="btn btn-default btn-sm" (click)="clearDevRpcOverride()">
+          {{ 'CLIENTSTATUS.DEVRPCOVERRIDECLEARBUTTON' | translate }}
+        </button>
+      </div>
+    }
   </div>
 }

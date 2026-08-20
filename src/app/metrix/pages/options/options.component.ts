@@ -47,6 +47,8 @@ export class OptionsComponent implements OnInit {
   };
   explorerUrlTesting: { [key: string]: boolean } = {};
 
+  devRpc = { host: '', port: '', user: '', password: '' };
+
   constructor(
     public electron: ElectronService,
     private wallet: WalletService,
@@ -80,6 +82,11 @@ export class OptionsComponent implements OnInit {
       this.explorerUrls.blockExplorer[network] = this.electron.settings[EXPLORER_URL_FIELDS.blockExplorer[network].settingKey] || '';
       this.explorerUrls.tokenDiscovery[network] = this.electron.settings[EXPLORER_URL_FIELDS.tokenDiscovery[network].settingKey] || '';
     });
+
+    this.devRpc.host = this.electron.settings.devRpcHost || '';
+    this.devRpc.port = this.electron.settings.devRpcPort || '';
+    this.devRpc.user = this.electron.settings.devRpcUser || '';
+    this.devRpc.password = this.electron.settings.devRpcPassword || '';
   }
 
   setHideTray() {
@@ -240,6 +247,52 @@ export class OptionsComponent implements OnInit {
       return true;
     } catch (ex) {
       return ex instanceof HttpErrorResponse && !!ex.status;
+    }
+  }
+
+  // dev-only: points the RPC tunnel at a daemon other than the one Altitude spawns
+  // locally (e.g. a remote regtest instance already running elsewhere). Read fresh on
+  // every RPC call in the main process, so this takes effect on the next poll - no
+  // client restart needed, unlike the proxy/tor/onlynet settings above. If the target
+  // is reachable, Client.startClient() detects it as already running and never
+  // downloads/spawns a local daemon at all.
+  setDevRpc() {
+    this.devRpc.host = (this.devRpc.host || '').trim();
+    this.devRpc.port = (this.devRpc.port || '').trim();
+    this.devRpc.user = (this.devRpc.user || '').trim();
+    this.devRpc.password = (this.devRpc.password || '').trim();
+
+    this.electron.settings.devRpcHost = this.devRpc.host;
+    this.electron.settings.devRpcPort = this.devRpc.port;
+    this.electron.settings.devRpcUser = this.devRpc.user;
+    this.electron.settings.devRpcPassword = this.devRpc.password;
+
+    this.electron.ipcRenderer.send('settings', 'SETDEVRPCHOST', this.devRpc.host);
+    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPORT', this.devRpc.port);
+    this.electron.ipcRenderer.send('settings', 'SETDEVRPCUSER', this.devRpc.user);
+    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPASSWORD', this.devRpc.password);
+
+    const isOverridden = !!(this.devRpc.host || this.devRpc.port || this.devRpc.user || this.devRpc.password);
+    this.notification.notify('success', isOverridden ? 'NOTIFICATIONS.DEVRPCHOSTSAVED' : 'NOTIFICATIONS.DEVRPCHOSTRESET');
+  }
+
+  resetDevRpc() {
+    this.devRpc = { host: '', port: '', user: '', password: '' };
+    this.setDevRpc();
+  }
+
+  get devRpcOverridden(): boolean {
+    return !!(this.electron.settings.devRpcHost || this.electron.settings.devRpcPort || this.electron.settings.devRpcUser || this.electron.settings.devRpcPassword);
+  }
+
+  // gates visibility of the RPC override fields - standard users should never see or set
+  // these. Turning the toggle off also clears any override already set, rather than just
+  // hiding the fields with a live override still silently applying underneath - a hidden,
+  // uneditable landmine would be worse than the field never having existed.
+  setDevMode() {
+    this.electron.ipcRenderer.send('settings', 'SETDEVMODE', this.electron.settings.devMode);
+    if (!this.electron.settings.devMode && this.devRpcOverridden) {
+      this.resetDevRpc();
     }
   }
 
