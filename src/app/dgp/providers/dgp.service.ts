@@ -86,6 +86,23 @@ export class DGPService {
         return false;
     }
 
+    // the DGPv2->v3 migration (and the historical block-900000 "old" contract lookup
+    // below) is a one-time mainnet event - a regtest chain always deploys v3 contracts
+    // fresh from genesis, so there's nothing to migrate from and the warning is never
+    // applicable there
+    public get isRegtest(): boolean {
+        return this.electron.chain === ChainType.REGTEST;
+    }
+
+    public get isDGPv3(): boolean {
+        if (this.isRegtest) return true;
+        // dgpInfo loads asynchronously - default to true (no migration banner) until it
+        // arrives, rather than treating the brief window before the first fetch resolves
+        // as "needs migration"
+        if (!this.dgpInfo) return true;
+        return this.dgpInfo.contracts.version === 3;
+    }
+
     private async loadData() {
         await this.getDGPInfo();
         await this.getGovernors();
@@ -126,6 +143,10 @@ export class DGPService {
     }
 
     private async getOldGovernors() {
+        // avoids calling GETOLDDGPINFO (hardcoded to a specific mainnet historical block
+        // - see getOldDGPInfo()) against a regtest chain, which doesn't have that block
+        // and has no "old" contract to look up in the first place
+        if (this.isRegtest) return;
         let oldDGPInfo: any = await this.getOldDGPInfo();
         let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [oldDGPInfo.contracts.governance, GovernanceContract.GETADDRESSLIST]);
         if (!data.error && data.executionResult.excepted == 'None') {
@@ -161,6 +182,7 @@ export class DGPService {
     }
 
     private async getMyOldGovernor() {
+        if (this.isRegtest) return;
         let oldDGPInfo: any = await this.getOldDGPInfo();
         let addressList = this.wallet.addressList;
         let hexAddrs = Object.keys(this.oldGovernorList);

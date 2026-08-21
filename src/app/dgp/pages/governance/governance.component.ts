@@ -78,10 +78,7 @@ export class GovernanceComponent {
   }
 
   public get isDGPv3() {
-    // dgpInfo loads asynchronously - default to true (no migration banner) until it
-    // arrives, rather than throwing on the brief window before the first fetch resolves
-    if (!this.dgpService.dgpInfo) return true;
-    return this.dgpService.dgpInfo.contracts.version === 3;
+    return this.dgpService.isDGPv3;
   }
 
   public get isGovernor(): boolean {
