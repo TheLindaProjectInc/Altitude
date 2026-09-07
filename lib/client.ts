@@ -182,6 +182,14 @@ export default class Client {
   async startClient(restart = false, update = false, commands = []) {
     try {
       this.setClientStatus(ClientStatus.INITIALISING);
+      // detect -testnet/-regtest from the launch shortcut before building the local
+      // config (rpcport) or checking for an already-running daemon, so both correctly
+      // reflect the requested network from the very first RPC call. Previously this only
+      // happened deep inside runClient(), by which point getClientConfig() and the
+      // "already running" pre-check below may already have run against the wrong
+      // (stale/default) chain - notably including which per-chain dev RPC override
+      // (see effectiveRpcConnection) gets applied.
+      this.detectChainFromLaunchArgs();
       // get the client info
       await this.getClientBinaries(restart);
       // load config
@@ -529,6 +537,13 @@ export default class Client {
     await this.getClientConfig();
   }
 
+  detectChainFromLaunchArgs() {
+    if (!(app.isPackaged && process.argv.length > 1)) return;
+    const launchArgs = process.argv.slice(1, process.argv.length);
+    if (launchArgs.indexOf("-testnet") > -1) this.chain = ChainType.TESTNET;
+    if (launchArgs.indexOf("-regtest") > -1) this.chain = ChainType.REGTEST;
+  }
+
   runClient(bin, startupCommands = []) {
     // check for startup commands
     if (app.isPackaged && process.argv.length > 1)
@@ -826,14 +841,17 @@ export default class Client {
 
   // dev-only overrides so Altitude can be pointed at a daemon it isn't managing itself
   // (e.g. a remote regtest instance) - each falls back to the normal locally-managed
-  // daemon's own connection details when not set
+  // daemon's own connection details when not set. Scoped to whichever chain is currently
+  // detected (this.chain, set by detectChainFromLaunchArgs() before this is ever read) so
+  // an override set while running one network never bleeds into another.
   private get effectiveRpcConnection() {
     const appSettings = settings.getSettings();
+    const chainSuffix = this.chain === ChainType.TESTNET ? "Testnet" : this.chain === ChainType.REGTEST ? "Regtest" : "Mainnet";
     return {
-      host: appSettings.devRpcHost || "127.0.0.1",
-      port: appSettings.devRpcPort || this.clientConfigFile.rpcport,
-      user: appSettings.devRpcUser || this.clientConfigFile.rpcuser,
-      password: appSettings.devRpcPassword || this.clientConfigFile.rpcpassword,
+      host: appSettings[`devRpcHost${chainSuffix}`] || "127.0.0.1",
+      port: appSettings[`devRpcPort${chainSuffix}`] || this.clientConfigFile.rpcport,
+      user: appSettings[`devRpcUser${chainSuffix}`] || this.clientConfigFile.rpcuser,
+      password: appSettings[`devRpcPassword${chainSuffix}`] || this.clientConfigFile.rpcpassword,
     };
   }
 

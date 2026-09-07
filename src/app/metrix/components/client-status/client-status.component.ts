@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RpcService } from '../../providers/rpc.service';
 import { ElectronService } from 'app/providers/electron.service';
-import { ClientStatus } from 'app/enum';
+import { ClientStatus, ChainType } from 'app/enum';
 import Helpers from 'app/helpers';
 
 @Component({
@@ -35,22 +35,31 @@ export class ClientStatusComponent {
   // someone stuck with a leftover override (e.g. from before that toggle existed, or set
   // while dev mode was on and never cleared) must always have a way back in regardless of
   // whatever the toggle is currently set to.
+  //
+  // Scoped to whichever chain is actually active (electron.chain), matching the same
+  // per-chain override lib/client.ts's effectiveRpcConnection applies - an override left
+  // on a different, currently-inactive chain is not what's causing this and shouldn't be
+  // offered (or silently cleared) here.
+  private get chainSuffix(): 'Mainnet' | 'Testnet' | 'Regtest' {
+    if (this.electron.chain === ChainType.TESTNET) return 'Testnet';
+    if (this.electron.chain === ChainType.REGTEST) return 'Regtest';
+    return 'Mainnet';
+  }
+
   showDevRpcOverrideNotice(): boolean {
     const s = this.electron.settings;
-    const hasOverride = !!(s.devRpcHost || s.devRpcPort || s.devRpcUser || s.devRpcPassword);
+    const suffix = this.chainSuffix;
+    const hasOverride = !!(s[`devRpcHost${suffix}`] || s[`devRpcPort${suffix}`] || s[`devRpcUser${suffix}`] || s[`devRpcPassword${suffix}`]);
     const plausiblyStuck = this.rpc.clientStatus === ClientStatus.RUNNING || this.rpc.clientStatus === ClientStatus.RUNNINGEXTERNAL;
     return hasOverride && plausiblyStuck;
   }
 
   clearDevRpcOverride() {
-    this.electron.settings.devRpcHost = '';
-    this.electron.settings.devRpcPort = '';
-    this.electron.settings.devRpcUser = '';
-    this.electron.settings.devRpcPassword = '';
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCHOST', '');
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPORT', '');
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCUSER', '');
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPASSWORD', '');
+    const suffix = this.chainSuffix;
+    ['devRpcHost', 'devRpcPort', 'devRpcUser', 'devRpcPassword'].forEach(field => {
+      this.electron.settings[`${field}${suffix}`] = '';
+      this.electron.ipcRenderer.send('settings', `SET${field.toUpperCase()}${suffix.toUpperCase()}`, '');
+    });
     this.rpc.restartClient();
   }
 

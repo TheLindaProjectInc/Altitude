@@ -26,6 +26,35 @@ const EXPLORER_URL_FIELDS: Record<ExplorerUrlCategory, Record<ExplorerUrlNetwork
   },
 };
 
+type DevRpcField = 'host' | 'port' | 'user' | 'password';
+type DevRpcNetwork = 'mainnet' | 'testnet' | 'regtest';
+
+// dev RPC override, scoped per network - a value set while running regtest must never
+// silently keep applying after switching to testnet/mainnet (see lib/client.ts's
+// effectiveRpcConnection, which reads whichever of these matches the active chain)
+const DEV_RPC_FIELDS: Record<DevRpcField, Record<DevRpcNetwork, { settingKey: string; ipcCmd: string }>> = {
+  host: {
+    mainnet: { settingKey: 'devRpcHostMainnet', ipcCmd: 'SETDEVRPCHOSTMAINNET' },
+    testnet: { settingKey: 'devRpcHostTestnet', ipcCmd: 'SETDEVRPCHOSTTESTNET' },
+    regtest: { settingKey: 'devRpcHostRegtest', ipcCmd: 'SETDEVRPCHOSTREGTEST' },
+  },
+  port: {
+    mainnet: { settingKey: 'devRpcPortMainnet', ipcCmd: 'SETDEVRPCPORTMAINNET' },
+    testnet: { settingKey: 'devRpcPortTestnet', ipcCmd: 'SETDEVRPCPORTTESTNET' },
+    regtest: { settingKey: 'devRpcPortRegtest', ipcCmd: 'SETDEVRPCPORTREGTEST' },
+  },
+  user: {
+    mainnet: { settingKey: 'devRpcUserMainnet', ipcCmd: 'SETDEVRPCUSERMAINNET' },
+    testnet: { settingKey: 'devRpcUserTestnet', ipcCmd: 'SETDEVRPCUSERTESTNET' },
+    regtest: { settingKey: 'devRpcUserRegtest', ipcCmd: 'SETDEVRPCUSERREGTEST' },
+  },
+  password: {
+    mainnet: { settingKey: 'devRpcPasswordMainnet', ipcCmd: 'SETDEVRPCPASSWORDMAINNET' },
+    testnet: { settingKey: 'devRpcPasswordTestnet', ipcCmd: 'SETDEVRPCPASSWORDTESTNET' },
+    regtest: { settingKey: 'devRpcPasswordRegtest', ipcCmd: 'SETDEVRPCPASSWORDREGTEST' },
+  },
+};
+
 @Component({
     selector: 'app-options',
     templateUrl: './options.component.html',
@@ -47,7 +76,12 @@ export class OptionsComponent implements OnInit {
   };
   explorerUrlTesting: { [key: string]: boolean } = {};
 
-  devRpc = { host: '', port: '', user: '', password: '' };
+  readonly devRpcNetworks: DevRpcNetwork[] = ['mainnet', 'testnet', 'regtest'];
+  devRpc: Record<DevRpcNetwork, { host: string; port: string; user: string; password: string }> = {
+    mainnet: { host: '', port: '', user: '', password: '' },
+    testnet: { host: '', port: '', user: '', password: '' },
+    regtest: { host: '', port: '', user: '', password: '' },
+  };
 
   constructor(
     public electron: ElectronService,
@@ -83,10 +117,12 @@ export class OptionsComponent implements OnInit {
       this.explorerUrls.tokenDiscovery[network] = this.electron.settings[EXPLORER_URL_FIELDS.tokenDiscovery[network].settingKey] || '';
     });
 
-    this.devRpc.host = this.electron.settings.devRpcHost || '';
-    this.devRpc.port = this.electron.settings.devRpcPort || '';
-    this.devRpc.user = this.electron.settings.devRpcUser || '';
-    this.devRpc.password = this.electron.settings.devRpcPassword || '';
+    this.devRpcNetworks.forEach(network => {
+      this.devRpc[network].host = this.electron.settings[DEV_RPC_FIELDS.host[network].settingKey] || '';
+      this.devRpc[network].port = this.electron.settings[DEV_RPC_FIELDS.port[network].settingKey] || '';
+      this.devRpc[network].user = this.electron.settings[DEV_RPC_FIELDS.user[network].settingKey] || '';
+      this.devRpc[network].password = this.electron.settings[DEV_RPC_FIELDS.password[network].settingKey] || '';
+    });
   }
 
   setHideTray() {
@@ -184,6 +220,14 @@ export class OptionsComponent implements OnInit {
     return category === 'blockExplorer' ? this.electron.defaultBlockExplorerUrls[chain] : this.electron.defaultTokenDiscoveryUrls[chain];
   }
 
+  // matches ClientConfigFile.setRPCPort() in lib/settings.ts - shown only as a
+  // placeholder hint for what the locally-managed daemon would use on that network
+  defaultRpcPort(network: DevRpcNetwork): string {
+    if (network === 'mainnet') return '33831';
+    if (network === 'testnet') return '33841';
+    return '33851';
+  }
+
   isExplorerUrlOverridden(category: ExplorerUrlCategory, network: ExplorerUrlNetwork): boolean {
     return !!this.electron.settings[EXPLORER_URL_FIELDS[category][network].settingKey];
   }
@@ -251,48 +295,53 @@ export class OptionsComponent implements OnInit {
   }
 
   // dev-only: points the RPC tunnel at a daemon other than the one Altitude spawns
-  // locally (e.g. a remote regtest instance already running elsewhere). Read fresh on
-  // every RPC call in the main process, so this takes effect on the next poll - no
-  // client restart needed, unlike the proxy/tor/onlynet settings above. If the target
-  // is reachable, Client.startClient() detects it as already running and never
-  // downloads/spawns a local daemon at all.
-  setDevRpc() {
-    this.devRpc.host = (this.devRpc.host || '').trim();
-    this.devRpc.port = (this.devRpc.port || '').trim();
-    this.devRpc.user = (this.devRpc.user || '').trim();
-    this.devRpc.password = (this.devRpc.password || '').trim();
+  // locally (e.g. a remote regtest instance already running elsewhere). Scoped per
+  // network - an override entered while on regtest must never bleed into testnet/mainnet
+  // after switching (e.g. via a different launch shortcut). Read fresh on every RPC call
+  // in the main process, so this takes effect on the next poll - no client restart
+  // needed, unlike the proxy/tor/onlynet settings above. If the target is reachable,
+  // Client.startClient() detects it as already running and never downloads/spawns a
+  // local daemon at all.
+  setDevRpc(network: DevRpcNetwork) {
+    const entry = this.devRpc[network];
+    entry.host = (entry.host || '').trim();
+    entry.port = (entry.port || '').trim();
+    entry.user = (entry.user || '').trim();
+    entry.password = (entry.password || '').trim();
 
-    this.electron.settings.devRpcHost = this.devRpc.host;
-    this.electron.settings.devRpcPort = this.devRpc.port;
-    this.electron.settings.devRpcUser = this.devRpc.user;
-    this.electron.settings.devRpcPassword = this.devRpc.password;
+    (['host', 'port', 'user', 'password'] as DevRpcField[]).forEach(field => {
+      const { settingKey, ipcCmd } = DEV_RPC_FIELDS[field][network];
+      this.electron.settings[settingKey] = entry[field];
+      this.electron.ipcRenderer.send('settings', ipcCmd, entry[field]);
+    });
 
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCHOST', this.devRpc.host);
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPORT', this.devRpc.port);
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCUSER', this.devRpc.user);
-    this.electron.ipcRenderer.send('settings', 'SETDEVRPCPASSWORD', this.devRpc.password);
-
-    const isOverridden = !!(this.devRpc.host || this.devRpc.port || this.devRpc.user || this.devRpc.password);
+    const isOverridden = !!(entry.host || entry.port || entry.user || entry.password);
     this.notification.notify('success', isOverridden ? 'NOTIFICATIONS.DEVRPCHOSTSAVED' : 'NOTIFICATIONS.DEVRPCHOSTRESET');
   }
 
-  resetDevRpc() {
-    this.devRpc = { host: '', port: '', user: '', password: '' };
-    this.setDevRpc();
+  resetDevRpc(network: DevRpcNetwork) {
+    this.devRpc[network] = { host: '', port: '', user: '', password: '' };
+    this.setDevRpc(network);
   }
 
-  get devRpcOverridden(): boolean {
-    return !!(this.electron.settings.devRpcHost || this.electron.settings.devRpcPort || this.electron.settings.devRpcUser || this.electron.settings.devRpcPassword);
+  isDevRpcOverridden(network: DevRpcNetwork): boolean {
+    const s = this.electron.settings;
+    return !!(s[DEV_RPC_FIELDS.host[network].settingKey] || s[DEV_RPC_FIELDS.port[network].settingKey] || s[DEV_RPC_FIELDS.user[network].settingKey] || s[DEV_RPC_FIELDS.password[network].settingKey]);
+  }
+
+  get devRpcOverriddenAnyNetwork(): boolean {
+    return this.devRpcNetworks.some(network => this.isDevRpcOverridden(network));
   }
 
   // gates visibility of the RPC override fields - standard users should never see or set
-  // these. Turning the toggle off also clears any override already set, rather than just
-  // hiding the fields with a live override still silently applying underneath - a hidden,
-  // uneditable landmine would be worse than the field never having existed.
+  // these. Turning the toggle off also clears any override already set on every network,
+  // rather than just hiding the fields with a live override still silently applying
+  // underneath - a hidden, uneditable landmine would be worse than the field never
+  // having existed.
   setDevMode() {
     this.electron.ipcRenderer.send('settings', 'SETDEVMODE', this.electron.settings.devMode);
-    if (!this.electron.settings.devMode && this.devRpcOverridden) {
-      this.resetDevRpc();
+    if (!this.electron.settings.devMode && this.devRpcOverriddenAnyNetwork) {
+      this.devRpcNetworks.forEach(network => this.resetDevRpc(network));
     }
   }
 

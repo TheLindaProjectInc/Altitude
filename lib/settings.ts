@@ -154,23 +154,14 @@ function set_devMode(enabled: boolean) {
 // itself spawns locally (e.g. another wallet instance) - empty means the normal 127.0.0.1
 // behaviour. The target daemon still needs rpcallowip/rpcuser/rpcpassword configured to
 // accept this connection; this setting only changes where Altitude sends the request.
-function set_devRpcHost(host: string) {
-    settings.devRpcHost = host;
-    saveSettings();
-}
-
-function set_devRpcPort(port: string) {
-    settings.devRpcPort = port;
-    saveSettings();
-}
-
-function set_devRpcUser(user: string) {
-    settings.devRpcUser = user;
-    saveSettings();
-}
-
-function set_devRpcPassword(password: string) {
-    settings.devRpcPassword = password;
+//
+// Scoped per chain (Mainnet/Testnet/Regtest) rather than one global value - a launch
+// shortcut can pick any of the three networks via -testnet/-regtest, and an override set
+// while running one network must never silently keep applying after switching to another
+// (see Client.effectiveRpcConnection in lib/client.ts, which reads whichever chain-suffixed
+// field matches the currently detected chain).
+function set_devRpc(field: 'devRpcHost' | 'devRpcPort' | 'devRpcUser' | 'devRpcPassword', chainSuffix: 'Mainnet' | 'Testnet' | 'Regtest', value: string) {
+    settings[`${field}${chainSuffix}`] = value;
     saveSettings();
 }
 
@@ -271,17 +262,41 @@ function setupIPC() {
             case 'SETDEVMODE':
                 set_devMode(data);
                 break;
-            case 'SETDEVRPCHOST':
-                set_devRpcHost(data);
+            case 'SETDEVRPCHOSTMAINNET':
+                set_devRpc('devRpcHost', 'Mainnet', data);
                 break;
-            case 'SETDEVRPCPORT':
-                set_devRpcPort(data);
+            case 'SETDEVRPCHOSTTESTNET':
+                set_devRpc('devRpcHost', 'Testnet', data);
                 break;
-            case 'SETDEVRPCUSER':
-                set_devRpcUser(data);
+            case 'SETDEVRPCHOSTREGTEST':
+                set_devRpc('devRpcHost', 'Regtest', data);
                 break;
-            case 'SETDEVRPCPASSWORD':
-                set_devRpcPassword(data);
+            case 'SETDEVRPCPORTMAINNET':
+                set_devRpc('devRpcPort', 'Mainnet', data);
+                break;
+            case 'SETDEVRPCPORTTESTNET':
+                set_devRpc('devRpcPort', 'Testnet', data);
+                break;
+            case 'SETDEVRPCPORTREGTEST':
+                set_devRpc('devRpcPort', 'Regtest', data);
+                break;
+            case 'SETDEVRPCUSERMAINNET':
+                set_devRpc('devRpcUser', 'Mainnet', data);
+                break;
+            case 'SETDEVRPCUSERTESTNET':
+                set_devRpc('devRpcUser', 'Testnet', data);
+                break;
+            case 'SETDEVRPCUSERREGTEST':
+                set_devRpc('devRpcUser', 'Regtest', data);
+                break;
+            case 'SETDEVRPCPASSWORDMAINNET':
+                set_devRpc('devRpcPassword', 'Mainnet', data);
+                break;
+            case 'SETDEVRPCPASSWORDTESTNET':
+                set_devRpc('devRpcPassword', 'Testnet', data);
+                break;
+            case 'SETDEVRPCPASSWORDREGTEST':
+                set_devRpc('devRpcPassword', 'Regtest', data);
                 break;
         }
     });
@@ -327,11 +342,20 @@ export class Settings {
     // dev-only: empty means the normal 127.0.0.1 connection to Altitude's own locally
     // spawned daemon; overriding these points the RPC tunnel at a different daemon
     // entirely (e.g. a remote regtest instance) - if it's reachable, Client.startClient()
-    // detects it as already running and never downloads/spawns a local one at all
-    devRpcHost: string = '';
-    devRpcPort: string = '';
-    devRpcUser: string = '';
-    devRpcPassword: string = '';
+    // detects it as already running and never downloads/spawns a local one at all.
+    // Scoped per chain - see set_devRpc() above for why.
+    devRpcHostMainnet: string = '';
+    devRpcHostTestnet: string = '';
+    devRpcHostRegtest: string = '';
+    devRpcPortMainnet: string = '';
+    devRpcPortTestnet: string = '';
+    devRpcPortRegtest: string = '';
+    devRpcUserMainnet: string = '';
+    devRpcUserTestnet: string = '';
+    devRpcUserRegtest: string = '';
+    devRpcPasswordMainnet: string = '';
+    devRpcPasswordTestnet: string = '';
+    devRpcPasswordRegtest: string = '';
 
     constructor(data) {
         if (data) {
