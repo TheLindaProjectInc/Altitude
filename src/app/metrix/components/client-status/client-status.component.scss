@@ -39,3 +39,24 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.progress-detail {
+    clear: both;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 15px;
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #cdcdcd;
+
+    .progress-detail-file {
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        opacity: 0.7;
+    }
+}

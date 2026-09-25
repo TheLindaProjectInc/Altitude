@@ -48,6 +48,36 @@
             "ALERTFEECHANGETITLE": "Fee Change",
             "ALERTFEECHANGECONTENT": "The actual transaction fee is higher than expected. Please confirm new fee:"
         },
+        "CREATECONTRACT": {
+            "TITLE": "Create Contract",
+            "INFO": "Deploy a smart contract to the network by submitting its compiled bytecode. This is a core chain function - double check your bytecode and gas settings before deploying, deployment cannot be undone.",
+            "FROM": "From",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Paste the compiled contract bytecode (hex)",
+            "INVALIDBYTECODE": "Bytecode must be a valid hex string (0-9, a-f) with an even number of characters",
+            "GASLIMIT": "Gas Limit",
+            "GASLIMITRANGE": "Range",
+            "GASPRICE": "Gas Price (MRX per gas unit)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Estimated max cost",
+            "DEPLOYBUTTON": "Deploy Contract",
+            "INCOMPLETEFORM": "Please select a sender address, enter valid bytecode, and set a valid gas limit/price",
+            "HIGHGASPRICETITLE": "High Gas Price",
+            "HIGHGASPRICEINFO": "The gas price you've set is unusually high. This deployment could cost up to:",
+            "DEPLOYING": "Deploying contract...",
+            "DEPLOYED": "Contract deployment submitted",
+            "RESULTTITLE": "Deployment Result",
+            "STATUS": "Status",
+            "STATUSPENDING": "Pending confirmation...",
+            "STATUSCONFIRMED": "Deployed successfully",
+            "STATUSFAILED": "Deployment failed",
+            "TXID": "Transaction ID",
+            "SENDER": "Sender",
+            "CONTRACTADDRESS": "Contract Address",
+            "GASUSED": "Gas Used",
+            "DONEBUTTON": "Done",
+            "DEPLOYANOTHERBUTTON": "Deploy Another"
+        },
         "TRANSACTIONS": {
             "TITLE": "Transactions",
             "COPYBLOCKHASH": "Copy Block Hash",
@@ -214,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Window",
+            "BACKUPTAB": "Backup",
+            "EXPLORERTAB": "Explorer",
+            "DEVELOPERTAB": "Developer",
             "NETWORK": {
                 "PROXY": "Connect through SOCKS5 proxy",
                 "PROXYIP": "Proxy IP",
@@ -227,12 +260,56 @@
                 "INTERVAL10SECONDS": "10 Seconds",
                 "INTERVAL30SECONDS": "30 Seconds",
                 "INTERVAL60SECONDS": "60 Seconds",
-                "INTERVAL180SECONDS": "180 Seconds"
+                "INTERVAL180SECONDS": "180 Seconds",
+                "CONNECTIONSTITLE": "Connections",
+                "PROXYTITLE": "Proxy",
+                "TORTITLE": "Tor",
+                "ONLYNETTITLE": "Only Connect To",
+                "SYNCINTERVALTITLE": "Sync Interval",
+                "CHAINTYPETITLE": "Network Type"
             },
             "WINDOW": {
                 "HIDETRAY": "Hide tray icon",
                 "MINIMIZETOTRAY": "Minimize to the tray instead of the taskbar",
-                "MINIMIZEONCLOSE": "Minimize on close"
+                "MINIMIZEONCLOSE": "Minimize on close",
+                "BEHAVIOURTITLE": "System Tray & Window Behaviour"
+            },
+            "BACKUP": {
+                "AUTOBACKUPTITLE": "Automatic Backup",
+                "ENABLED": "Automatically back up wallet.dat on a schedule",
+                "ENABLEDINFO": "Creates a fresh backup of your wallet file on a schedule, so a recent copy is always available if something goes wrong.",
+                "INTERVALLABEL": "Back up every (days)",
+                "LASTBACKUP": "Last backup:",
+                "NEVERBACKEDUP": "No automatic backup has been made yet.",
+                "BACKUPNOWBUTTON": "Back Up Now",
+                "LOCATIONTITLE": "Backup Location",
+                "LOCATIONINFO": "Where automatic backups are saved. Defaults to a backup folder inside your wallet's data directory.",
+                "BROWSEBUTTON": "Browse...",
+                "RESETBUTTON": "Reset to Default",
+                "PRUNETITLE": "Backup History",
+                "PRUNEINFO": "Older automatic backups are deleted so this folder doesn't grow forever - only the most recent ones below are kept.",
+                "KEEPCOUNTLABEL": "Keep last"
+            },
+            "EXPLORER": {
+                "BLOCKEXPLORERTITLE": "Block Explorer",
+                "BLOCKEXPLORERINFO": "The site opened when viewing a transaction on the block explorer (e.g. right-click a transaction > View on Explorer).",
+                "TOKENDISCOVERYTITLE": "Token Discovery",
+                "TOKENDISCOVERYINFO": "The read-only service used to discover MRC20/MRC721 tokens a wallet address has interacted with. Balances and ownership are always re-verified against your own daemon before being shown or used - this is only used to find tokens to check.",
+                "MAINNET": "Mainnet",
+                "TESTNET": "Testnet",
+                "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Developer Mode",
+                "DEVMODEINFO": "Off by default and intended for developers only. Enabling this reveals options to override the RPC connection - standard users should leave this off.",
+                "DEVMODELABEL": "Enable Developer Mode",
+                "WARNING": "These settings are for development purposes only. Changing them can prevent the wallet from connecting to a daemon at all - only use this if you know what you're doing.",
+                "RPCHOSTTITLE": "RPC Connection",
+                "RPCHOSTINFO": "By default Altitude connects to the daemon it manages itself, on this machine (127.0.0.1). Overriding these lets it connect to a different daemon instead - for example a remote regtest instance, without needing to run one locally. If the connection succeeds, Altitude will not download or start its own local daemon. The target daemon's rpcallowip must permit this connection, and rpcuser/rpcpassword below must match its configuration. Takes effect immediately, no restart required.",
+                "RPCHOSTLABEL": "RPC Host",
+                "RPCPORTLABEL": "RPC Port",
+                "RPCUSERLABEL": "RPC Username",
+                "RPCPASSWORDLABEL": "RPC Password"
             }
         }
     },
@@ -240,6 +317,7 @@
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Send",
+            "CREATECONTRACT": "Create Contract",
             "RECEIVE": "Receive",
             "TRANSACTIONS": "Transactions",
             "STAKING": "Staking",
@@ -263,6 +341,26 @@
                 "MASTERNODEON": "Masternode is currently running",
                 "MASTERNODEOFF": "Masternode is not currently running"
             }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Enter a web3 site address",
+            "GOBUTTON": "Go",
+            "QUICKLAUNCH": "Quick Launch",
+            "DEVTOOLS": "Open Developer Tools",
+            "ADDLINK": "Add Link",
+            "LINKNAMEPLACEHOLDER": "Name",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Save",
+            "CANCEL": "Cancel",
+            "REMOVE": "Remove",
+            "REMOVECONFIRM": "Remove this quick link?",
+            "LINKEXISTS": "That link is already in your quick launch list",
+            "LINKINVALID": "Enter a valid site address",
+            "LINKNETWORKLABEL": "Network",
+            "LOADFAILED": "Failed to load site",
+            "SECURESITE": "Connection is secure - valid SSL certificate",
+            "INSECURESITE": "Connection is not secure",
+            "INVALIDCERTSITE": "Connection is not private - invalid or untrusted SSL certificate"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Enter Your Wallet Passphrase",
@@ -297,6 +395,11 @@
             "CLIENTUNKNOWNERRORINFO": "There was a problem communicating with Metrix Core. It is recommended to check your debug.log file for issues.",
             "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Failed",
             "BOOTSTRAPFAILEDINFO": "There was a problem bootstrapping Metrix Core. It is recommended to check your Altitude log file for issues.",
+            "BOOTSTRAPOFFERTITLE": "Wallet Significantly Out Of Date",
+            "BOOTSTRAPOFFERINFO": "A recent bootstrap is available that can quickly bring Metrix Core up to date. Continuing with a normal sync instead may take several days to complete, since your wallet needs to download and verify every block it has missed.",
+            "BOOTSTRAPOFFERBUTTON": "Download Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continue Normal Sync",
+            "BOOTSTRAPSPACEINFO": "Not enough free disk space to download and extract the bootstrap. Required: {required}, Available: {free}. Free up some space and try again.",
             "STARTUPFAILEDTITLE": "Metrix Core Startup Failed",
             "STARTUPFAILEDINFO": "There was an error starting Metrix Core. It is recommended to check your Altitude log file for issues.",
             "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Recovery Tools",
@@ -309,7 +412,28 @@
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
             "UNENROLLGOVERNORTITLE": "Confirm Governor Unenrollment",
-            "UNENROLLGOVERNORCONTENT": "Are you sure you want to unenroll your Governor? You will no longer be able to vote on chain governance."
+            "UNENROLLGOVERNORCONTENT": "Are you sure you want to unenroll your Governor? You will no longer be able to vote on chain governance.",
+            "DAPPCONNECTTITLE": "Connect to Site",
+            "DAPPCONNECTINFO": "This site wants to connect to your wallet and view your address and balance.",
+            "DAPPCONNECTBUTTON": "Connect",
+            "DAPPCONNECTADDRESSLABEL": "Address",
+            "DAPPAPPROVEBUTTON": "Approve",
+            "DAPPREJECTBUTTON": "Reject",
+            "DAPPSENDTITLE": "Contract Transaction Request",
+            "DAPPSENDINFO": "This site is requesting to send a contract transaction from your wallet.",
+            "DAPPSENDSITELABEL": "Site",
+            "DAPPSENDCONTRACTLABEL": "Contract Address",
+            "DAPPSENDAMOUNTLABEL": "Amount",
+            "DAPPSENDGASLIMITLABEL": "Gas Limit",
+            "DAPPSENDGASPRICELABEL": "Gas Price (satoshi/gas)",
+            "DAPPSENDMAXFEELABEL": "Max Network Fee",
+            "DAPPSENDMAXTOTALLABEL": "Max Total",
+            "DAPPSENDDATALABEL": "Contract Data",
+            "DAPPSIGNTITLE": "Sign Message Request",
+            "DAPPSIGNINFO": "This site is requesting to sign a message with your wallet address.",
+            "DAPPSIGNMESSAGELABEL": "Message",
+            "DAPPNOTREADY": "Cannot connect to the site yet - Metrix Core is still starting up.",
+            "DAPPNOWALLET": "Cannot connect to the site - no wallet address is available."
         },
         "ADDRESSBOOK": {
             "TITLE": "Address Book",
@@ -324,7 +448,8 @@
         "TEXTINPUT": {
             "CONTEXTMENUCUT": "Cut",
             "CONTEXTMENUCOPY": "Copy",
-            "CONTEXTMENUPASTE": "Paste"
+            "CONTEXTMENUPASTE": "Paste",
+            "CONTEXTMENUSELECTALL": "Select All"
         },
         "MAINCHAINCHECK": {
             "ALERT": "Warning! You are not on the main chain according to the Metrix explorer. It is highly recommended to re-sync or re-bootstrap your blockchain to avoid the loss of any coins."
@@ -387,7 +512,8 @@
         "SEARCH": "Search",
         "FEE": "Fee",
         "CONFIRMED": "Confirmed",
-        "UNCONFIRMED": "Unconfirmed"
+        "UNCONFIRMED": "Unconfirmed",
+        "SAVEBUTTON": "Save"
     },
     "CLIENTSTATUS": {
         "INITIALISING": "Initialising Metrix Core...",
@@ -395,15 +521,21 @@
         "UPDATEAVAILABLE": "Metrix Core Update Available",
         "SHUTTINGDOWN": "Shutting down Metrix Core...",
         "RESTARTING": "Restarting Metrix Core...",
-        "BOOTSTRAPPING": "Bootstrapping Metrix Core..."
+        "BOOTSTRAPPING": "Downloading bootstrap...",
+        "BOOTSTRAPEXTRACTING": "Extracting bootstrap...",
+        "TIMEREMAINING": "remaining:",
+        "DEVRPCOVERRIDEACTIVE": "A developer RPC connection override is set (Options > Developer) and isn't responding. Clear it to reconnect to the local daemon normally.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Clear RPC Override & Reconnect"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "New account created successfully",
         "ADDRESSCOPIEDCLIPBOARD": "Address copied to clipboard",
+        "COPIEDCLIPBOARD": "Copied to clipboard",
         "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copied to clipboard",
         "EMPTYFIELDS": "Please fill in all fields",
         "NOUPDATE": "No update available",
         "WALLETBACKEDUP": "Wallet backup successful",
+        "WALLETBACKUPFAILED": "Automatic wallet backup failed - check your backup location and available disk space",
         "PASSPHRASEMISMATCH": "The passphrases you entered do not match",
         "CHECKINGUPDATE": "Checking for update...",
         "CHECKINGUPDATEFAILED": "Unable to check for update. Check your network.",
@@ -430,7 +562,13 @@
         "FAILEDTOWRITECONFIG": "There was a problem writing to your metrix.conf file. Check the file exists and that Altitude has write permissions.",
         "NOPUBLICUP": "No Public IP address found. Check your internet connection and restart Altitude.",
         "CONFIGURINGLOCALMN": "Configuring local Masternode...",
-        "REPORTINGISSUE": "Getting diagnostic information... This information will be copied to your clipboard."
+        "REPORTINGISSUE": "Getting diagnostic information... This information will be copied to your clipboard.",
+        "EXPLORERURLSAVED": "Explorer URL saved",
+        "EXPLORERURLRESET": "Explorer URL reverted to default",
+        "EXPLORERURLINVALID": "That is not a valid http(s) URL",
+        "EXPLORERURLUNREACHABLE": "Could not reach that URL - check it and try again",
+        "DEVRPCHOSTSAVED": "RPC host saved",
+        "DEVRPCHOSTRESET": "RPC host reverted to default (127.0.0.1)"
     },
     "DESKTOPNOTIFICATIONS": {
         "NEWTRANSACTION_TITLE_RECEIVED": "Received Coins",
@@ -552,7 +690,7 @@
         }
     },
     "BUY": {
-        "COMPONENTS":{
+        "COMPONENTS": {
             "SIDEBAR": {
                 "SWAP": "Buy Metrix",
                 "SEARCH": "History"
@@ -573,11 +711,11 @@
                 "INFOLINE3": "Once your BTC deposit has cleared you'll receive your MRX into your nominated address.",
                 "INFOLINE4": "For more information visit"
             },
-            "HISTORY" :{
+            "HISTORY": {
                 "TITLE": "Transaction History",
                 "SEARCHBUTTON": "SEARCH",
                 "SEARCHPLACEHOLDER": "Enter MRX or BTC address",
-                "TRANSACTIONDATE":"Date",
+                "TRANSACTIONDATE": "Date",
                 "TRANSACTIONTYPE": "TX Type",
                 "TRANSACTIONAMOUNT": "Amount",
                 "TRANSACTIONID": "Transaction ID",
@@ -598,9 +736,65 @@
     },
     "MNS": {
         "NOTIFICATIONS": {
-            "MNSUNKNOWNERROR":"Name resolution failed, Unknown error ocurred.",
-            "MNSRPCUNAVAILABLE":"Name resolution failed, RPC unavailable.",
-            "MNSRESOLUTIONUNAVAILABLE":"MNS: Unable to resolve name, Check that the name is correct and the blockchain is in sync."
+            "MNSUNKNOWNERROR": "Name resolution failed, Unknown error ocurred.",
+            "MNSRPCUNAVAILABLE": "Name resolution failed, RPC unavailable.",
+            "MNSRESOLUTIONUNAVAILABLE": "MNS: Unable to resolve name, Check that the name is correct and the blockchain is in sync."
+        }
+    },
+    "TOKEN": {
+        "PAGES": {
+            "LIST": {
+                "TITLE": "Tokens",
+                "SHOWEMPTY": "Show Empty Addresses",
+                "HIDEEMPTY": "Hide Empty Addresses",
+                "REFRESH": "Refresh",
+                "ADDTOKEN": "Add Token",
+                "SEND": "Send",
+                "UNHIDE": "Unhide",
+                "EMPTYTITLE": "No Tokens Found Yet",
+                "EMPTYDETAIL": "Altitude automatically checks a block explorer for MRC20 and MRC721 tokens sent to your addresses, then verifies everything live against your own node. You can also add a token manually if you know its contract address.",
+                "HIDDENTITLE": "Hidden Tokens",
+                "CONTEXTMENUHIDE": "Hide Token",
+                "ITEMSSUFFIX": "item(s)",
+                "NONENUMERABLETOOLTIP": "This collection doesn't support listing individual items - showing how many you hold instead."
+            },
+            "ADDTOKEN": {
+                "TITLE": "Add Token",
+                "DESCRIPTION": "Enter the contract address of an MRC20 or MRC721 token to add it to your token list.",
+                "CONTRACTADDRESS": "Contract Address",
+                "LOOKUPBUTTON": "Lookup",
+                "PROBING": "Looking up contract...",
+                "NOTFOUND": "This address does not appear to be a supported MRC20 or MRC721 token contract.",
+                "DECIMALS": "decimals",
+                "ADDBUTTON": "Add Token",
+                "ADDING": "Adding..."
+            },
+            "SEND": {
+                "TITLE": "Send Token",
+                "TOKEN": "Token",
+                "FROM": "From",
+                "AVAILABLE": "Available",
+                "TOKENID": "Token ID",
+                "RECIPIENT": "Recipient",
+                "AMOUNT": "Amount",
+                "MAXBUTTON": "Max",
+                "GASLIMIT": "Gas Limit",
+                "GASPRICE": "Gas Price",
+                "SENDBUTTON": "Send"
+            }
+        },
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "TOKENS": "Tokens",
+                "ADDTOKEN": "Add Token",
+                "SCANNING": "Checking for tokens...",
+                "UPDATING": "Updating token balances..."
+            }
+        },
+        "NOTIFICATIONS": {
+            "TOKENADDED": "Token added successfully",
+            "TOKENSENT": "Token sent successfully",
+            "INCOMPLETEFORM": "Please fill in all required fields"
         }
     }
 }

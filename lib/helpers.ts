@@ -109,12 +109,37 @@ export async function getRequest(url) {
     })
 }
 
+// HEAD request - used to check a remote file's size/last-modified date without
+// downloading it (e.g. checking how fresh a bootstrap file is before offering it)
+export async function getHeaders(url): Promise<{ [header: string]: string }> {
+    return new Promise((resolve, reject) => {
+        https.request(url, { method: 'HEAD' }, response => {
+            if (response.statusCode >= 200 && response.statusCode < 300) {
+                resolve(response.headers as { [header: string]: string });
+            } else if (response.headers.location) {
+                resolve(getHeaders(response.headers.location));
+            } else {
+                reject(new Error(response.statusCode + ' ' + response.statusMessage));
+            }
+        }).on('error', err => {
+            reject(err);
+        }).end();
+    })
+}
+
 
 export async function makeFolder(path) {
     return new Promise<void>((resolve, reject) => {
-        fs.mkdir(path, (err) => {
+        fs.mkdir(path, { recursive: true }, (err) => {
             if (err) reject(err);
             else resolve();
         });
     });
+}
+
+// bytes free on the volume containing dir, available to the current user (not just
+// total free - matters on Linux where some space can be reserved for root)
+export async function getFreeSpace(dir: string): Promise<number> {
+    const stats = await fs.promises.statfs(dir);
+    return stats.bavail * stats.bsize;
 }

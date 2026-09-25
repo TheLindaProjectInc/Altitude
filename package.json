@@ -1,6 +1,6 @@
 {
   "name": "altitude-metrix-wallet",
-  "version": "3.4.2",
+  "version": "4.0.0",
   "description": "The Altitude wallet",
   "homepage": "https://github.com/thelindaprojectinc/altitude",
   "author": {
@@ -34,7 +34,8 @@
     "electron:mac": "npm run build:prod && electron-builder build --mac --arm64",
     "electron:mac-x64": "npm run build:prod && electron-builder build --mac --x64",
     "test": "npm run postinstall:web && ng test",
-    "e2e": "npm run postinstall:web && ng e2e"
+    "e2e": "npm run postinstall:web && ng e2e",
+    "translate": "node translation/run.js"
   },
   "dependencies": {
     "@angular/localize": "^21.2.19",
@@ -65,6 +66,7 @@
     "electron-json-storage": "^4.6.0",
     "electron-log": "5.4.4",
     "electron-updater": "^6.8.9",
+    "ethers": "^6.13.3",
     "express": "^4.21.1",
     "follow-redirects": "^1.16.0",
     "https-browserify": "^1.0.0",
@@ -95,6 +97,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^21.2.20",
+    "@google-cloud/translate": "^10.0.1",
     "@angular/cli": "21.2.20",
     "@angular/common": "^21.2.19",
     "@angular/compiler": "^21.2.19",
@@ -114,7 +117,6 @@
     "electron": "^43.3.0",
     "electron-builder": "^26.15.3",
     "electron-reload": "^1.5.0",
-    "google-translate": "^3.0.0",
     "jasmine-core": "^6.3.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "~6.4.4",

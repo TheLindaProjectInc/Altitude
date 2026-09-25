@@ -2,6 +2,8 @@ import { Injectable, isDevMode } from '@angular/core';
 import Big from 'big.js';
 import { ElectronService } from 'app/providers/electron.service';
 import { PromptService } from '../../components/prompt/prompt.service';
+import { NotificationService } from 'app/providers/notification.service';
+import { TranslationService } from 'app/providers/translation.service';
 import Helpers from 'app/helpers';
 import { Transaction } from '../classes';
 import { BlockchainStatus } from '../classes/blockchainStatus';
@@ -31,6 +33,7 @@ export class RpcService {
         { name: RPCMethods.BACKUPWALLET, fn: (params) => this.callServer("backupwallet", params) },
         { name: RPCMethods.CALLCONTRACT, fn: (params) => this.callServer("callcontract", params) },
         { name: RPCMethods.CHANGEPASSPHRASE, fn: (params) => this.callServer("walletpassphrasechange", params) },
+        { name: RPCMethods.CREATECONTRACT, fn: (params) => this.callServer("createcontract", params) },
         { name: RPCMethods.CREATETRANSACTION, fn: (params) => this.createTransaction(params) },
         { name: RPCMethods.ENCRYPT, fn: (params) => this.callServer("encryptwallet", params) },
         { name: RPCMethods.GETACCOUNTS, fn: (params) => this.getAccounts() },
@@ -45,6 +48,7 @@ export class RpcService {
         { name: RPCMethods.GETNETWORK, fn: (params) => this.callServer("getnetworkinfo") },
         { name: RPCMethods.GETSTAKING, fn: (params) => this.callServer("getstakinginfo") },
         { name: RPCMethods.GETTRANSACTION, fn: (params) => this.callServer("getrawtransaction", params) },
+        { name: RPCMethods.GETTRANSACTIONRECEIPT, fn: (params) => this.callServer("gettransactionreceipt", params) },
         { name: RPCMethods.GETTRANSACTIONS, fn: (params) => this.getTransactions(params) },
         { name: RPCMethods.GETWALLET, fn: (params) => this.getWalletInfo() },
         { name: RPCMethods.LOCK, fn: (params) => this.lockWallet() },
@@ -61,6 +65,8 @@ export class RpcService {
     constructor(
         private electron: ElectronService,
         private prompt: PromptService,
+        private notification: NotificationService,
+        private translation: TranslationService,
         private router: Router,
     ) {
         if (electron.isElectron()) this.setupListeners()
@@ -85,6 +91,8 @@ export class RpcService {
                 this.stopClient();
             } else if (status === ClientStatus.BOOTSTRAPFAILED) {
                 this.notifyBootstrapFailed();
+            } else if (status === ClientStatus.BOOTSTRAPINSUFFICIENTSPACE) {
+                this.notifyBootstrapInsufficientSpace();
             } else if (status === ClientStatus.INVALIDHASH || status === ClientStatus.DOWNLOADFAILED || status === ClientStatus.UNSUPPORTEDPLATFORM) {
                 this.stopClient();
                 this.notifyStartupFailed();
@@ -94,6 +102,10 @@ export class RpcService {
         this.electron.RCPStatusEvent.subscribe((status: { ready: boolean, message: string }) => {
             this.RPCReady = status.ready;
             this.RPCWarmupMessage = status.message
+        });
+        // scheduled (or manually triggered) wallet.dat backup completed
+        this.electron.walletBackupResultEvent.subscribe((result: { success: boolean }) => {
+            this.notification.notify(result.success ? 'success' : 'error', result.success ? 'NOTIFICATIONS.WALLETBACKEDUP' : 'NOTIFICATIONS.WALLETBACKUPFAILED');
         });
         // listen for RPC responses
         this.electron.RPCResponseEvent.subscribe(data => {
@@ -554,6 +566,17 @@ export class RpcService {
         }
     }
 
+    // unlike a genuine bootstrap failure, this check runs before the client is even
+    // stopped - nothing is broken, so just tell the user rather than forcing them into
+    // recovery mode or a restart
+    async notifyBootstrapInsufficientSpace() {
+        const template = await this.translation.translate('COMPONENTS.PROMPT.BOOTSTRAPSPACEINFO');
+        const message = template
+            .replace('{required}', Helpers.formatBytes(this.electron.bootstrapSpace.required))
+            .replace('{free}', Helpers.formatBytes(this.electron.bootstrapSpace.free));
+        this.notification.notify('error', message, false);
+    }
+
     async notifyBootstrapFailed() {
         try {
             await this.prompt.alert('COMPONENTS.PROMPT.BOOTSTRAPFAILEDTITLE', 'COMPONENTS.PROMPT.BOOTSTRAPFAILEDINFO', 'COMPONENTS.PROMPT.CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY', 'COMPONENTS.PROMPT.CLIENTSTOPPEDBUTTONEXIT');
@@ -588,6 +611,7 @@ export enum RPCMethods {
     BACKUPWALLET,
     CALLCONTRACT,
     CHANGEPASSPHRASE,
+    CREATECONTRACT,
     CREATETRANSACTION,
     ENCRYPT,
     GETACCOUNTS,
@@ -602,6 +626,7 @@ export enum RPCMethods {
     GETNETWORK,
     GETSTAKING,
     GETTRANSACTION,
+    GETTRANSACTIONRECEIPT,
     GETTRANSACTIONS,
     GETWALLET,
     LOCK,

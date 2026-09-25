@@ -150,3 +150,110 @@
               }
             </div>
           </ngx-smart-modal>
+
+          <!-- dApp contract transaction approval modal -->
+          <ngx-smart-modal identifier="dappSendModal" customClass="nsm-centered dapp-send-modal" [closable]="false"
+            [escapable]="false" [dismissable]="false">
+            <h1>{{ 'COMPONENTS.PROMPT.DAPPSENDTITLE' | translate }}</h1>
+            <p>{{ 'COMPONENTS.PROMPT.DAPPSENDINFO' | translate }}</p>
+
+            <div class="dapp-send-row">
+              <label>{{ 'COMPONENTS.PROMPT.DAPPSENDSITELABEL' | translate }}</label>
+              <span class="dapp-send-value">{{ dappSendModal.origin }}</span>
+            </div>
+            <div class="dapp-send-row">
+              <label>{{ 'COMPONENTS.PROMPT.DAPPSENDCONTRACTLABEL' | translate }}</label>
+              <span class="dapp-send-value dapp-send-mono">{{ dappSendModal.contractAddress }}</span>
+            </div>
+            <div class="dapp-send-row">
+              <label>{{ 'COMPONENTS.PROMPT.DAPPSENDAMOUNTLABEL' | translate }}</label>
+              <span class="dapp-send-value">{{ dappSendModal.amount }} MRX</span>
+            </div>
+
+            <div class="dapp-send-row dapp-send-editable">
+              <label for="dappGasLimit">{{ 'COMPONENTS.PROMPT.DAPPSENDGASLIMITLABEL' | translate }}</label>
+              <input id="dappGasLimit" type="number" min="1" [(ngModel)]="dappSendModal.gasLimit" />
+            </div>
+            <div class="dapp-send-row dapp-send-editable">
+              <label for="dappGasPrice">{{ 'COMPONENTS.PROMPT.DAPPSENDGASPRICELABEL' | translate }}</label>
+              <input id="dappGasPrice" type="number" min="1" [(ngModel)]="dappSendModal.gasPrice" />
+            </div>
+
+            <div class="dapp-send-summary">
+              <div class="dapp-send-row">
+                <label>{{ 'COMPONENTS.PROMPT.DAPPSENDMAXFEELABEL' | translate }}</label>
+                <span class="dapp-send-value">~{{ dappSendModal.maxFee() | number: '1.0-8' }} MRX</span>
+              </div>
+              <div class="dapp-send-row">
+                <label>{{ 'COMPONENTS.PROMPT.DAPPSENDMAXTOTALLABEL' | translate }}</label>
+                <span class="dapp-send-value dapp-send-total">~{{ dappSendModal.maxTotal() | number: '1.0-8' }} MRX</span>
+              </div>
+            </div>
+
+            <details class="dapp-send-data">
+              <summary>{{ 'COMPONENTS.PROMPT.DAPPSENDDATALABEL' | translate }}</summary>
+              <textarea readonly rows="4">{{ dappSendModal.data }}</textarea>
+            </details>
+
+            <div class="modal-buttons">
+              <button class="btn btn-default" (click)="dappSendModal.buttonCancel()">
+                {{ 'COMPONENTS.PROMPT.DAPPREJECTBUTTON' | translate }}
+              </button>
+              <button class="btn btn-default right" (click)="dappSendModal.buttonDone()">
+                {{ 'COMPONENTS.PROMPT.DAPPAPPROVEBUTTON' | translate }}
+              </button>
+            </div>
+          </ngx-smart-modal>
+
+          <!-- dApp sign message approval modal -->
+          <ngx-smart-modal identifier="dappSignModal" customClass="nsm-centered dapp-send-modal" [closable]="false"
+            [escapable]="false" [dismissable]="false">
+            <h1>{{ 'COMPONENTS.PROMPT.DAPPSIGNTITLE' | translate }}</h1>
+            <p>{{ 'COMPONENTS.PROMPT.DAPPSIGNINFO' | translate }}</p>
+
+            <div class="dapp-send-row">
+              <label>{{ 'COMPONENTS.PROMPT.DAPPSENDSITELABEL' | translate }}</label>
+              <span class="dapp-send-value">{{ dappSignModal.origin }}</span>
+            </div>
+
+            <label class="dapp-sign-message-label">{{ 'COMPONENTS.PROMPT.DAPPSIGNMESSAGELABEL' | translate }}</label>
+            <div class="dapp-sign-message">{{ dappSignModal.message }}</div>
+
+            <div class="modal-buttons">
+              <button class="btn btn-default" (click)="dappSignModal.buttonCancel()">
+                {{ 'COMPONENTS.PROMPT.DAPPREJECTBUTTON' | translate }}
+              </button>
+              <button class="btn btn-default right" (click)="dappSignModal.buttonDone()">
+                {{ 'COMPONENTS.PROMPT.DAPPAPPROVEBUTTON' | translate }}
+              </button>
+            </div>
+          </ngx-smart-modal>
+
+          <!-- dApp connect approval modal -->
+          <ngx-smart-modal identifier="dappConnectModal" customClass="nsm-centered dapp-send-modal" [closable]="false"
+            [escapable]="false" [dismissable]="false">
+            <h1>{{ 'COMPONENTS.PROMPT.DAPPCONNECTTITLE' | translate }}</h1>
+            <p>{{ 'COMPONENTS.PROMPT.DAPPCONNECTINFO' | translate }}</p>
+
+            <div class="dapp-send-row">
+              <label>{{ 'COMPONENTS.PROMPT.DAPPSENDSITELABEL' | translate }}</label>
+              <span class="dapp-send-value">{{ dappConnectModal.origin }}</span>
+            </div>
+            <label class="dapp-sign-message-label">{{ 'COMPONENTS.PROMPT.DAPPCONNECTADDRESSLABEL' | translate }}</label>
+            <div class="alt-select dapp-connect-account-select">
+              <select class="select" [(ngModel)]="dappConnectModal.selectedAddress">
+                @for (account of dappConnectModal.accounts; track account.address) {
+                  <option [value]="account.address">{{ account.name }} ({{ account.address }})</option>
+                }
+              </select>
+            </div>
+
+            <div class="modal-buttons">
+              <button class="btn btn-default" (click)="dappConnectModal.buttonCancel()">
+                {{ 'COMPONENTS.PROMPT.DAPPREJECTBUTTON' | translate }}
+              </button>
+              <button class="btn btn-default right" (click)="dappConnectModal.buttonDone()">
+                {{ 'COMPONENTS.PROMPT.DAPPCONNECTBUTTON' | translate }}
+              </button>
+            </div>
+          </ngx-smart-modal>

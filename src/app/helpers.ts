@@ -28,16 +28,7 @@ export default class Helpers {
   }
 
   public static roundCoins(coins: Big, decimals: number = 8): Big {
-    const parts = coins.toFixed(8).toString().split(".");
-    if (parts.length === 2) {
-      const dec = Number("0." + parts[1]);
-      const len = parts[1].length;
-      if (len > decimals) {
-        const decString = dec.toFixed(decimals).toString().split(".")[1];
-        return Big(parts[0] + '.' + decString);
-      }
-    }
-    return coins;
+    return Big(coins.toFixed(decimals));
   }
 
   public static prettyCoins(coins: Big, decimals?: number): string {
@@ -49,6 +40,14 @@ export default class Helpers {
       return parts[0];
     }
     return '0';
+  }
+
+  public static formatBytes(bytes: number, decimals = 1): string {
+    if (!bytes) return '0 B';
+    const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+    const exponent = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+    const value = bytes / Math.pow(1024, exponent);
+    return `${exponent === 0 ? value : value.toFixed(decimals)} ${units[exponent]}`;
   }
 
   public static getFee(numInputs: number, numOutputs: number): number {

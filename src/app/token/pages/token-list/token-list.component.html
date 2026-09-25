@@ -1,0 +1,124 @@
+<div class="content token-list-page" #scrollingBlock>
+
+  <div class="toolbar-top">
+    <h3>{{ 'TOKEN.PAGES.LIST.TITLE' | translate }}</h3>
+    <div class="toolbar-actions">
+      <button class="btn btn-default btn-sm" (click)="toggleShowEmpty()">
+        {{ (showEmptyAddresses ? 'TOKEN.PAGES.LIST.HIDEEMPTY' : 'TOKEN.PAGES.LIST.SHOWEMPTY') | translate }}
+      </button>
+      <button class="btn btn-default btn-sm" [disabled]="token.busy" (click)="refresh()">
+        @if (token.busy) {
+          <fa-icon icon="spinner" animation="spin"></fa-icon>
+        } @else {
+          <fa-icon icon="search"></fa-icon>
+        }
+        {{ 'TOKEN.PAGES.LIST.REFRESH' | translate }}
+      </button>
+      <button class="btn btn-success btn-sm" routerLink="/token/add">
+        <fa-icon icon="plus"></fa-icon> {{ 'TOKEN.PAGES.LIST.ADDTOKEN' | translate }}
+      </button>
+    </div>
+  </div>
+
+  @if (token.busy) {
+    <div class="content-card busy-banner">
+      <fa-icon icon="spinner" animation="spin"></fa-icon>
+      @if (token.scanning && token.scanProgress) {
+        <span>{{ 'TOKEN.COMPONENTS.SIDEBAR.SCANNING' | translate }} {{ token.scanProgress.current | number }} / {{ token.scanProgress.target | number }}</span>
+      } @else if (token.scanning) {
+        <span>{{ 'TOKEN.COMPONENTS.SIDEBAR.SCANNING' | translate }}</span>
+      } @else {
+        <span>{{ 'TOKEN.COMPONENTS.SIDEBAR.UPDATING' | translate }}</span>
+      }
+    </div>
+  }
+
+  @if (!addressCards.length) {
+    <div class="content-card empty-state">
+      <fa-icon icon="coins" class="fa-2x"></fa-icon>
+      <h5>{{ 'TOKEN.PAGES.LIST.EMPTYTITLE' | translate }}</h5>
+      <p>{{ 'TOKEN.PAGES.LIST.EMPTYDETAIL' | translate }}</p>
+    </div>
+  }
+
+  @for (card of addressCards; track card.address) {
+    <div class="content-card address-card">
+      <div class="address-card-header">
+        <span class="address-label">{{ card.label }}</span>
+        <span class="address-value">{{ card.address }}</span>
+      </div>
+
+      @if (card.mrc20.length) {
+        <div class="token-chip-row">
+          @for (entry of card.mrc20; track entry.token.address) {
+            <div class="token-chip" (contextmenu)="onTokenRightClick($event, entry.token)">
+              <span class="token-symbol">{{ entry.token.symbol || (entry.token.address | slice:0:8) }}</span>
+              <span class="token-balance">{{ entry.balance | prettyCoins: (entry.token.decimals > 8 ? 8 : entry.token.decimals) }}</span>
+              <button class="btn-icon" (click)="sendToken(entry.token, card.address)" title="{{ 'TOKEN.PAGES.LIST.SEND' | translate }}">
+                <fa-icon icon="paper-plane"></fa-icon>
+              </button>
+            </div>
+          }
+        </div>
+      }
+
+      @if (card.nfts.length) {
+        <div class="nft-grid">
+          @for (entry of card.nfts; track nftKey(entry.token, entry.tokenId)) {
+            <div class="nft-tile" [class.expanded]="isExpanded(entry.token, entry.tokenId)" (click)="toggleNFT(entry.token, entry.tokenId, card.address)">
+              @if (!isExpanded(entry.token, entry.tokenId)) {
+                <fa-icon icon="image" class="nft-placeholder"></fa-icon>
+                <span class="nft-id" title="{{ entry.tokenId }}">{{ entry.token.symbol }} #{{ formatTokenId(entry.tokenId) }}</span>
+              } @else {
+                <div class="nft-detail">
+                  @if (getNFT(entry.token, entry.tokenId, card.address).metadataLoading) {
+                    <fa-icon icon="spinner" animation="spin"></fa-icon>
+                  } @else if (getNFT(entry.token, entry.tokenId, card.address).image) {
+                    <img [src]="getNFT(entry.token, entry.tokenId, card.address).image" class="nft-image" />
+                  } @else {
+                    <fa-icon icon="image" class="nft-placeholder"></fa-icon>
+                  }
+                  <span class="nft-id" title="{{ entry.tokenId }}">{{ entry.token.symbol }} #{{ formatTokenId(entry.tokenId) }}</span>
+                  @if (getNFT(entry.token, entry.tokenId, card.address).name) {
+                    <span class="nft-name">{{ getNFT(entry.token, entry.tokenId, card.address).name }}</span>
+                  }
+                  <button class="btn btn-default btn-sm" (click)="$event.stopPropagation(); sendToken(entry.token, card.address, entry.tokenId)">
+                    {{ 'TOKEN.PAGES.LIST.SEND' | translate }}
+                  </button>
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+
+      @if (card.nonEnumerable.length) {
+        <div class="token-chip-row">
+          @for (entry of card.nonEnumerable; track entry.token.address) {
+            <div class="token-chip" title="{{ 'TOKEN.PAGES.LIST.NONENUMERABLETOOLTIP' | translate }}">
+              <span class="token-symbol">{{ entry.token.symbol || (entry.token.address | slice:0:8) }}</span>
+              <span class="token-balance">{{ entry.count }} {{ 'TOKEN.PAGES.LIST.ITEMSSUFFIX' | translate }}</span>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+
+  @if (hiddenTokens.length) {
+    <div class="content-card hidden-tokens-card">
+      <h5>{{ 'TOKEN.PAGES.LIST.HIDDENTITLE' | translate }}</h5>
+      <div class="token-chip-row">
+        @for (t of hiddenTokens; track t.address) {
+          <div class="token-chip">
+            <span class="token-symbol">{{ t.symbol || (t.address | slice:0:8) }}</span>
+            <button class="btn-icon" (click)="unhideToken(t)" title="{{ 'TOKEN.PAGES.LIST.UNHIDE' | translate }}">
+              <fa-icon icon="eye"></fa-icon>
+            </button>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+</div>

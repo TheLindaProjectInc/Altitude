@@ -18,6 +18,7 @@ import { ContextMenuService } from 'app/components/context-menu/context-menu.ser
   maxlength="{{maxlength}}"
   min="{{min}}"
   max="{{max}}"
+  step="{{step}}"
   type="{{type || 'text'}}"
   />`,
     standalone: false
@@ -30,8 +31,9 @@ export class TextinputComponent {
   @Input() disabled: boolean;
   @Input() type: string;
   @Input() maxlength: number;
-  @Input() min: number;
-  @Input() max: number;
+  @Input() min: number | string;
+  @Input() max: number | string;
+  @Input() step: number | string;
 
   @Output() inputModelChange = new EventEmitter<string>();
   @Output() change = new EventEmitter<Function>();

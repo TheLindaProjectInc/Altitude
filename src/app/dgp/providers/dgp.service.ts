@@ -86,6 +86,23 @@ export class DGPService {
         return false;
     }
 
+    // the DGPv2->v3 migration (and the historical block-900000 "old" contract lookup
+    // below) is a one-time mainnet event - a regtest chain always deploys v3 contracts
+    // fresh from genesis, so there's nothing to migrate from and the warning is never
+    // applicable there
+    public get isRegtest(): boolean {
+        return this.electron.chain === ChainType.REGTEST;
+    }
+
+    public get isDGPv3(): boolean {
+        if (this.isRegtest) return true;
+        // dgpInfo loads asynchronously - default to true (no migration banner) until it
+        // arrives, rather than treating the brief window before the first fetch resolves
+        // as "needs migration"
+        if (!this.dgpInfo) return true;
+        return this.dgpInfo.contracts.version === 3;
+    }
+
     private async loadData() {
         await this.getDGPInfo();
         await this.getGovernors();
@@ -126,6 +143,10 @@ export class DGPService {
     }
 
     private async getOldGovernors() {
+        // avoids calling GETOLDDGPINFO (hardcoded to a specific mainnet historical block
+        // - see getOldDGPInfo()) against a regtest chain, which doesn't have that block
+        // and has no "old" contract to look up in the first place
+        if (this.isRegtest) return;
         let oldDGPInfo: any = await this.getOldDGPInfo();
         let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [oldDGPInfo.contracts.governance, GovernanceContract.GETADDRESSLIST]);
         if (!data.error && data.executionResult.excepted == 'None') {
@@ -161,6 +182,7 @@ export class DGPService {
     }
 
     private async getMyOldGovernor() {
+        if (this.isRegtest) return;
         let oldDGPInfo: any = await this.getOldDGPInfo();
         let addressList = this.wallet.addressList;
         let hexAddrs = Object.keys(this.oldGovernorList);
@@ -278,7 +300,13 @@ export class DGPService {
                 let data: any = await this.rpc.requestData(RPCMethods.CALLCONTRACT, [this.dgpInfo.contracts.budget, callData]);
                 if (!data.error && data.executionResult.excepted == 'None') {
                     if (data.executionResult.output.replace(/0/g, '') !== '') {
-                        this.upsertBudget(new BudgetProposal(data), i);
+                        const budget = this.upsertBudget(new BudgetProposal(data), i);
+                        // loadImageIfNeeded() is a no-op if this proposal's image was
+                        // already loaded (or already attempted) on a previous refresh
+                        // pass - and staggered here (rather than all firing at once)
+                        // since several proposals typically link to github.com, and
+                        // bursting requests there trips their anonymous rate limit (429)
+                        budget.loadImageIfNeeded(i * 500);
                     }
                 }
             }
@@ -288,17 +316,20 @@ export class DGPService {
         }
     }
 
-    private upsertBudget(newBudget: BudgetProposal, index: number) {
+    private upsertBudget(newBudget: BudgetProposal, index: number): BudgetProposal {
         let currBudget = this.budgetProposals[index];
         if (!currBudget) {
             this.budgetProposals.push(newBudget);
-            return;
+            return newBudget;
         }
         // update or overwrite
-        if (currBudget.id === newBudget.id)
+        if (currBudget.id === newBudget.id) {
             currBudget.update(newBudget)
-        else
+            return currBudget;
+        } else {
             this.budgetProposals[index] = newBudget
+            return newBudget;
+        }
     }
 
     private async getMyBudgetVotes() {
