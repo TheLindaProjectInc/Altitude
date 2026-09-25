@@ -618,6 +618,14 @@ input[type="text"] {
     }
 }
 
+// a 99px pill radius (fine for a single-line input) turns into a huge, text-covering
+// quarter-circle cutout once a textarea grows tall (e.g. a multi-line bytecode/message
+// box) - textareas get their own, size-appropriate radius instead, matching
+// .content-card's 6px rounding rather than the pill shape
+textarea {
+    border-radius: 10px;
+}
+
 // checkbox
 // forms
 .form-inline {

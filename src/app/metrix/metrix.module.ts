@@ -14,6 +14,7 @@ import { MainChainCheckComponent } from './components/main-chain-check/main-chai
 
 // pages
 import { SendComponent } from './pages/send/send.component';
+import { CreateContractComponent } from './pages/create-contract/create-contract.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ManageAccountComponent } from './pages/manage-account/manage-account.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
     { path: '', component: DashboardComponent },
     { path: 'manage-account/:address', component: ManageAccountComponent },
     { path: 'send', component: SendComponent },
+    { path: 'create-contract', component: CreateContractComponent },
     { path: 'staking', component: StakingComponent },
     { path: 'transactions', component: TransactionsComponent },
     { path: 'signmessage/:tab', component: SignMessageComponent },
@@ -57,6 +59,7 @@ export const providers = [
 
 export const declarations = [
     SendComponent,
+    CreateContractComponent,
     TransactionsComponent,
     DashboardComponent,
     ManageAccountComponent,
