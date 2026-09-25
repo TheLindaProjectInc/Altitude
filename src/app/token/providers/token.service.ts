@@ -35,6 +35,7 @@ export class TokenService {
     private onAccountsUpdatedSub: Subscription;
     private lastScanTs = 0;
     private readonly scanThrottleMs = 30000;
+    private refreshing = false;
 
     private log(...args: any[]) {
         if (isDevMode()) console.log('[Token]', ...args);
@@ -72,6 +73,12 @@ export class TokenService {
         this.initialized = false;
         this.scanning = false;
         this.scanProgress = null;
+        // an in-flight scan for the previous chain isn't aborted (no cancellation token),
+        // it'll just keep running against now-stale data and reset these same flags itself
+        // once it finishes - but without resetting refreshing here too, refresh() would
+        // keep skipping the new chain's own scans as "already in progress" until that
+        // orphaned old-chain scan eventually completes
+        this.refreshing = false;
         this.chainData = { tokens: [] };
         this.init();
     }
@@ -148,20 +155,27 @@ export class TokenService {
     async refresh(force = false) {
         if (!this.initialized) { this.log('refresh: skipped, not initialized yet'); return; }
         if (!this.wallet.accounts.length) { this.log('refresh: skipped, no wallet accounts loaded yet'); return; }
+        if (this.refreshing) { this.log('refresh: skipped, a refresh is already in progress'); return; }
         if (!force && Date.now() - this.lastScanTs < this.scanThrottleMs) { this.log('refresh: skipped, throttled'); return; }
+
+        this.refreshing = true;
         this.lastScanTs = Date.now();
         this.log('refresh: starting (force =', force, ')');
         try {
-            await this.discoverTokens();
-        } catch (ex) {
-            console.warn('[Token] discovery failed', ex);
+            try {
+                await this.discoverTokens();
+            } catch (ex) {
+                console.warn('[Token] discovery failed', ex);
+            }
+            try {
+                await this.refreshBalances();
+            } catch (ex) {
+                console.warn('[Token] balance refresh failed', ex);
+            }
+            this.log('refresh: complete');
+        } finally {
+            this.refreshing = false;
         }
-        try {
-            await this.refreshBalances();
-        } catch (ex) {
-            console.warn('[Token] balance refresh failed', ex);
-        }
-        this.log('refresh: complete');
     }
 
     // manual re-trigger for the "Refresh" button - same as a normal forced refresh, kept
