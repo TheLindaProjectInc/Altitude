@@ -408,16 +408,16 @@ export class SendComponent implements OnInit, OnDestroy {
     return Helpers.roundCoins(total);
   }
 
-  getActualTotal(): Big {
-    let total = Big(this.calculateFee());
+  getActualTotal(fee?: Big): Big {
+    let total = Big(fee !== undefined ? fee : this.calculateFee());
     this.recipients.forEach((recipient) => {
       if (recipient.amount) total = total.add(recipient.amount);
     });
     return Helpers.roundCoins(total);
   }
 
-  checkTransactionValid(): boolean {
-    if (this.getActualTotal().gt(this.getSelectedBalance())) {
+  checkTransactionValid(fee?: Big): boolean {
+    if (this.getActualTotal(fee).gt(this.getSelectedBalance())) {
       this.notification.notify("error", "NOTIFICATIONS.SENDINGEXCEEDSBALANCE");
       return false;
     }
@@ -445,37 +445,42 @@ export class SendComponent implements OnInit, OnDestroy {
     return Helpers.getFee(1, this.recipients.length);
   }
 
-  calculateFee(): Big {
+  // pass the inputs already chosen for this send (e.g. from send()) rather than letting
+  // this pick its own - selectInputs() is randomised for automatic (non-coin-control)
+  // selection, so calling it again here would risk computing the fee for a different
+  // input count than the one actually being submitted
+  calculateFee(inputs?: Array<{ txid: string; vout: number }>): Big {
     let total = Big(0);
     this.recipients.forEach((recipient) => {
       if (recipient.amount) total = total.add(recipient.amount);
     });
     if (total.gt(0)) {
-      const inputs = this.selectInputs();
-      if (inputs.length)
-        return Helpers.getFee(inputs.length, this.recipients.length);
+      const selected = inputs || this.selectInputs();
+      if (selected.length)
+        return Helpers.getFee(selected.length, this.recipients.length);
     }
     return this.getBaseFee();
   }
 
   async send(): Promise<void> {
-    if (!this.checkTransactionValid()) return;
-    let outputs = {};
-    // get inputs
+    // selectInputs() is randomised for automatic (non-coin-control) selection - pick it
+    // once here and thread the same inputs through validation, fee, and submission so
+    // they can never end up computed against different (differently-sized) selections
     let inputs = this.selectInputs();
 
-    if (!inputs.length)
-      return this.notification.notify(
-        "error",
-        "NOTIFICATIONS.INSUFFICIENTBALANCE"
-      );
+    if (!inputs.length) {
+      this.notification.notify("error", "NOTIFICATIONS.INSUFFICIENTBALANCE");
+      return;
+    }
 
+    let fee = this.calculateFee(inputs);
+    if (!this.checkTransactionValid(fee)) return;
+
+    let outputs = {};
     // get outputs
     for (let i = 0; i < this.recipients.length; i++) {
       outputs[this.recipients[i].address] = Big(this.recipients[i].amount);
     }
-    // get fee
-    let fee = this.calculateFee();
     // get change address is any
     let change = this.enabledChangeAddress ? this.changeAddress : null;
     try {
@@ -595,9 +600,18 @@ export class SendComponent implements OnInit, OnDestroy {
   }
 
   selectInputs(): Array<{ txid: string; vout: number }> {
-    const required = this.getExpectedTotal();
     const utxos = this.getInputOptions();
 
+    // coin control: the user explicitly chose these inputs (getInputOptions() already
+    // narrows to just the selected ones when any are selected) - spend all of them
+    // exactly as chosen, rather than running the automatic subset-selection below on
+    // top, which would silently ignore some of what they deliberately picked and defeat
+    // the point of coin control entirely
+    if (this.getSelectedQuantity() > 0) {
+      return utxos.map((input) => ({ txid: input.txid, vout: input.vout }));
+    }
+
+    const required = this.getExpectedTotal();
     let selectedInputs = [];
 
     // check for exact match

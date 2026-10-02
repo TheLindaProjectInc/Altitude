@@ -1,0 +1,113 @@
+<div class="content" #scrollingBlock>
+  <div class="content-card">
+    <h3>{{ 'PAGES.CREATECONTRACT.TITLE' | translate }}</h3>
+    <p class="option-card-subtitle">{{ 'PAGES.CREATECONTRACT.INFO' | translate }}</p>
+
+    @if (!result) {
+      <div class="form-stacked">
+        <span>{{ 'PAGES.CREATECONTRACT.FROM' | translate }}</span>
+        <div class="alt-select">
+          <select class="select" [(ngModel)]="fromAddress">
+            @for (account of addresslist; track account.address) {
+              <option [value]="account.address">{{ account.name }} ({{ account.address }})</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div class="form-stacked">
+        <span>{{ 'PAGES.CREATECONTRACT.BYTECODE' | translate }}</span>
+        <text-area [(inputModel)]="bytecode" [placeholder]="'PAGES.CREATECONTRACT.BYTECODEPLACEHOLDER' | translate" class="bytecode-area"></text-area>
+        @if (bytecode && !isValidBytecode) {
+          <p class="option-card-subtitle danger">{{ 'PAGES.CREATECONTRACT.INVALIDBYTECODE' | translate }}</p>
+        }
+      </div>
+
+      <div class="gas-fields">
+        <div class="form-stacked">
+          <span>{{ 'PAGES.CREATECONTRACT.GASLIMIT' | translate }}</span>
+          <div class="slider-row">
+            <text-input type="range" [(inputModel)]="gasLimit" [min]="minGasLimit" [max]="maxGasLimit" step="1000"></text-input>
+            <text-input type="number" [(inputModel)]="gasLimit" [min]="minGasLimit" [max]="maxGasLimit"></text-input>
+          </div>
+          <p class="option-card-subtitle">{{ 'PAGES.CREATECONTRACT.GASLIMITRANGE' | translate }}: {{ minGasLimit | number }} - {{ maxGasLimit | number }}</p>
+        </div>
+
+        <div class="form-stacked">
+          <span>{{ 'PAGES.CREATECONTRACT.GASPRICE' | translate }}</span>
+          <div class="slider-row">
+            <text-input type="range" [(inputModel)]="gasPrice" [min]="minGasPrice" max="0.00500000" [step]="gasPriceStep"></text-input>
+            <text-input type="number" [(inputModel)]="gasPrice" [min]="minGasPrice" [step]="gasPriceStep"></text-input>
+          </div>
+          <p class="option-card-subtitle">{{ 'PAGES.CREATECONTRACT.GASPRICEMIN' | translate }}: {{ minGasPrice }} MRX</p>
+        </div>
+      </div>
+
+      <p class="option-card-subtitle">{{ 'PAGES.CREATECONTRACT.ESTIMATEDMAXCOST' | translate }}: {{ estimatedMaxCost }} MRX</p>
+
+      <div class="flex-row-right" style="padding-top: 20px;">
+        <button class="btn btn-default" routerLink="/metrix">
+          {{ 'MISC.CANCELBUTTON' | translate }}
+        </button>
+        <button class="btn btn-success" [disabled]="deploying || !checkFormValid()" (click)="deploy()">
+          @if (deploying) {
+            <fa-icon icon="spinner" animation="spin"></fa-icon>
+          } @else {
+            {{ 'PAGES.CREATECONTRACT.DEPLOYBUTTON' | translate }}
+          }
+        </button>
+      </div>
+    }
+
+    @if (result) {
+      <div class="deployment-result">
+        <h5>{{ 'PAGES.CREATECONTRACT.RESULTTITLE' | translate }}</h5>
+
+        <div class="result-row">
+          <span class="result-label">{{ 'PAGES.CREATECONTRACT.STATUS' | translate }}</span>
+          @if (!receipt) {
+            <span class="result-value"><fa-icon icon="spinner" animation="spin"></fa-icon> {{ 'PAGES.CREATECONTRACT.STATUSPENDING' | translate }}</span>
+          } @else if (deploymentSucceeded) {
+            <span class="result-value success"><fa-icon icon="check-circle"></fa-icon> {{ 'PAGES.CREATECONTRACT.STATUSCONFIRMED' | translate }}</span>
+          } @else if (deploymentFailed) {
+            <span class="result-value danger"><fa-icon icon="times-circle"></fa-icon> {{ 'PAGES.CREATECONTRACT.STATUSFAILED' | translate }}: {{ receipt.exceptedMessage || receipt.excepted }}</span>
+          }
+        </div>
+
+        <div class="result-row">
+          <span class="result-label">{{ 'PAGES.CREATECONTRACT.TXID' | translate }}</span>
+          <span class="result-value mono">{{ result.txid }}</span>
+          <button class="btn btn-default btn-icon" (click)="copy(result.txid)"><fa-icon icon="copy"></fa-icon></button>
+          <button class="btn btn-default btn-icon" (click)="viewTxOnExplorer()"><fa-icon icon="link"></fa-icon></button>
+        </div>
+
+        <div class="result-row">
+          <span class="result-label">{{ 'PAGES.CREATECONTRACT.SENDER' | translate }}</span>
+          <span class="result-value mono">{{ result.sender }}</span>
+        </div>
+
+        <div class="result-row">
+          <span class="result-label">{{ 'PAGES.CREATECONTRACT.CONTRACTADDRESS' | translate }}</span>
+          <span class="result-value mono">{{ (receipt && receipt.contractAddress) || result.address }}</span>
+          <button class="btn btn-default btn-icon" (click)="copy((receipt && receipt.contractAddress) || result.address)"><fa-icon icon="copy"></fa-icon></button>
+        </div>
+
+        @if (receipt) {
+          <div class="result-row">
+            <span class="result-label">{{ 'PAGES.CREATECONTRACT.GASUSED' | translate }}</span>
+            <span class="result-value">{{ receipt.gasUsed | number }}</span>
+          </div>
+        }
+
+        <div class="flex-row-right" style="padding-top: 20px;">
+          <button class="btn btn-default" routerLink="/metrix">
+            {{ 'PAGES.CREATECONTRACT.DONEBUTTON' | translate }}
+          </button>
+          <button class="btn btn-success" (click)="reset()">
+            {{ 'PAGES.CREATECONTRACT.DEPLOYANOTHERBUTTON' | translate }}
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

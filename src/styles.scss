@@ -12,6 +12,8 @@
 @import "./assets/styles/appbar.scss";
 @import "./assets/styles/progressBar.scss";
 @import "./assets/styles/layout.scss";
+@import "./assets/styles/browser.scss";
+@import "./assets/styles/options.scss";
 
 html,
 body {
@@ -140,8 +142,30 @@ a {
     }
 
     .logo {
-        height: 125px;
+        height: 130px;
         padding-top: 38px;
+    }
+
+    // fa-icon-based sidebar logos (e.g. the token/browser modules) have no baked-in
+    // circular badge the way the DGP/Metrix PNGs do - this reproduces the same look.
+    // The badge is a dedicated wrapper (not sized via the fa-icon element itself)
+    // because fa-icon's inner SVG follows the icon's own intrinsic aspect ratio rather
+    // than the host's width/height, which made an explicit width/height on fa-icon
+    // itself render as an oval instead of a circle
+    .logo-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        width: 125px;
+        margin-top: 38px;
+        border-radius: 50%;
+        background-color: #540254;
+        color: #fff;
+
+        fa-icon {
+            font-size: 65px;
+        }
     }
 
     h3 {
@@ -592,6 +616,14 @@ input[type="text"] {
         background: rgba(0, 0, 0, 0.3);
         color: rgba(255, 255, 255, 0.3);
     }
+}
+
+// a 99px pill radius (fine for a single-line input) turns into a huge, text-covering
+// quarter-circle cutout once a textarea grows tall (e.g. a multi-line bytecode/message
+// box) - textareas get their own, size-appropriate radius instead, matching
+// .content-card's 6px rounding rather than the pill shape
+textarea {
+    border-radius: 10px;
 }
 
 // checkbox

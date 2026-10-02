@@ -78,7 +78,7 @@ export class GovernanceComponent {
   }
 
   public get isDGPv3() {
-    return this.dgpService.dgpInfo.contracts.version === 3;
+    return this.dgpService.isDGPv3;
   }
 
   public get isGovernor(): boolean {

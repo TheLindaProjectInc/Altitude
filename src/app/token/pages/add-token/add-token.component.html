@@ -1,0 +1,49 @@
+<div class="content" #scrollingBlock>
+    <div class="content-card">
+        <h3>{{ 'TOKEN.PAGES.ADDTOKEN.TITLE' | translate }}</h3>
+        <p>{{ 'TOKEN.PAGES.ADDTOKEN.DESCRIPTION' | translate }}</p>
+
+        <div class="form-stacked">
+            <span>{{ 'TOKEN.PAGES.ADDTOKEN.CONTRACTADDRESS' | translate }}</span>
+            <div class="form-inline no-padding">
+                <text-input [(inputModel)]="contractAddress" (input)="onAddressInput()" (change)="probe()" placeholder="0x...">
+                </text-input>
+                <button class="btn btn-default" [disabled]="probing" (click)="probe()">
+                    {{ 'TOKEN.PAGES.ADDTOKEN.LOOKUPBUTTON' | translate }}
+                </button>
+            </div>
+        </div>
+
+        @if (probing) {
+            <p><fa-icon icon="spinner" animation="spin"></fa-icon> {{ 'TOKEN.PAGES.ADDTOKEN.PROBING' | translate }}</p>
+        }
+
+        @if (probed && !probing && !preview) {
+            <p class="danger">{{ 'TOKEN.PAGES.ADDTOKEN.NOTFOUND' | translate }}</p>
+        }
+
+        @if (preview) {
+            <div class="content-card token-preview">
+                <p>
+                    <span class="token-preview-name">{{ preview.name }} ({{ preview.symbol }})</span> -
+                    <span>{{ preview.type }}</span>
+                    @if (preview.type === 'MRC20') {
+                        <span> - {{ preview.decimals }} {{ 'TOKEN.PAGES.ADDTOKEN.DECIMALS' | translate }}</span>
+                    }
+                </p>
+            </div>
+        }
+
+        <div class="flex-row-right" style="padding-top: 20px;">
+            <button class="btn btn-default" routerLink="/token">
+                {{ 'MISC.CANCELBUTTON' | translate }}
+            </button>
+            <button class="btn btn-success" [disabled]="!preview || adding" (click)="confirmAdd()">
+                @if (adding) {
+                    <fa-icon icon="spinner" animation="spin"></fa-icon>
+                }
+                {{ (adding ? 'TOKEN.PAGES.ADDTOKEN.ADDING' : 'TOKEN.PAGES.ADDTOKEN.ADDBUTTON') | translate }}
+            </button>
+        </div>
+    </div>
+</div>

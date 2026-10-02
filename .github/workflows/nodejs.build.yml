@@ -9,48 +9,47 @@ on:
       - "master"
       - "develop"
   pull_request:
-    branches: 
+    branches:
       - "master"
       - "develop"
 
 jobs:
-  build:
-    # The type of runner that the job will run on
+  # Each OS/arch builds in its own job so a failure on one platform doesn't block
+  # or hide the result of the others, and each produces its own clearly-named,
+  # individually downloadable artifact instead of one bundled zip.
+
+  build-macos-arm64:
     runs-on: macos-26
-    strategy:
-      matrix:
-        node: [22]
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: 'latest-stable'
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v5
       - name: Use Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '22.x'
       - run: npm install
-      - name: Build MacOS
-        env: 
+      - name: Build macOS (arm64)
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CSC_LINK: ${{ vars.CSC_LINK }}
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
-        run: |
-            npm run electron:mac
-      - name: Build Win & Linux
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-            npm run electron:linux
-            npm run electron:windows32
-            npm run electron:windows
+        run: npm run electron:mac
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: macOS-arm64-installer
+          path: |
+            release/Altitude-Metrix-Wallet-macOS-arm64.dmg
+            release/Altitude-Metrix-Wallet-macOS-arm64.zip
+          retention-days: 14
+          if-no-files-found: warn
 
   # Some users still need an Intel mac-x64 build. macos-15-intel is GitHub's
   # last x64 macOS runner image and is scheduled to retire in Fall 2027 - once
   # that happens (or a replacement x64 image ships) this job needs revisiting.
-  build-mac-x64:
+  build-macos-x64:
     runs-on: macos-15-intel
     steps:
       - uses: maxim-lobanov/setup-xcode@v1
@@ -62,10 +61,107 @@ jobs:
         with:
           node-version: '22.x'
       - run: npm install
-      - name: Build MacOS (x64)
+      - name: Build macOS (x64)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CSC_LINK: ${{ vars.CSC_LINK }}
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+        run: npm run electron:mac-x64
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: macOS-x64-installer
+          path: |
+            release/Altitude-Metrix-Wallet-macOS-x64.dmg
+            release/Altitude-Metrix-Wallet-macOS-x64.zip
+          retention-days: 14
+          if-no-files-found: warn
+
+  build-linux-x64:
+    runs-on: macos-26
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 'latest-stable'
+      - uses: actions/checkout@v5
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.x'
+      - run: npm install
+      - name: Build Linux (x64)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-            npm run electron:mac-x64
+            # electron-builder defaults to the host arch when none is given, which on
+            # this arm64 runner means an unpinned build silently produces an arm64
+            # AppImage mislabeled with the (hardcoded, non-arch-templated) x64 filename
+            npm run electron:linux -- --x64
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Linux-x64-installer
+          path: release/Altitude-Metrix-Wallet-Linux-x64.AppImage
+          retention-days: 14
+          if-no-files-found: warn
+
+  build-windows-x64:
+    runs-on: macos-26
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 'latest-stable'
+      - uses: actions/checkout@v5
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.x'
+      - run: npm install
+      - name: Build Windows (x64)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            # electron-builder defaults to the host arch when none is given, which on
+            # this arm64 runner means an unpinned build silently produces a Windows
+            # arm64 installer instead of x64 - pin the arch explicitly
+            npm run electron:windows -- --x64
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Windows-x64-installer
+          path: release/Altitude-Metrix-Wallet-Windows-x64.exe
+          retention-days: 14
+          if-no-files-found: warn
+
+  build-windows-x86:
+    runs-on: macos-26
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 'latest-stable'
+      - uses: actions/checkout@v5
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.x'
+      - run: npm install
+      - name: Build Windows (x86)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            npm run electron:windows32
+            # electron-builder's ${arch} artifactName macro can only emit its own
+            # internal arch name ("ia32"), which is a less recognisable label to most
+            # end users than "x86" - rename to the clearer form here rather than in
+            # electron-builder.json's shared config, since this test build has no
+            # auto-update feed whose file references would need to stay in sync
+            # (unlike the real release build, which keeps the "ia32" name for exactly
+            # that reason)
+            mv release/Altitude-Metrix-Wallet-Windows-ia32.exe release/Altitude-Metrix-Wallet-Windows-x86.exe
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Windows-x86-installer
+          path: release/Altitude-Metrix-Wallet-Windows-x86.exe
+          retention-days: 14
+          if-no-files-found: warn

@@ -13,6 +13,9 @@ export class PromptService {
     public changePassphrase;
     public encrypt;
     public alert;
+    public sendContractApproval;
+    public signMessageApproval;
+    public connectApproval;
 
     private walletUpdateDownloading = false;
 

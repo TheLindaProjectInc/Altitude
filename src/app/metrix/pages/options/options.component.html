@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content options-page">
 
   <div class="tabs">
     <button (click)="tab=0" [ngClass]="{'active':tab==0}">
@@ -7,20 +7,35 @@
     <button (click)="tab=1" [ngClass]="{'active':tab==1}">
       {{'PAGES.OPTIONS.WINDOTAB' | translate}}
     </button>
+    <button (click)="tab=2" [ngClass]="{'active':tab==2}">
+      {{'PAGES.OPTIONS.BACKUPTAB' | translate}}
+    </button>
+    <button (click)="tab=3" [ngClass]="{'active':tab==3}">
+      {{'PAGES.OPTIONS.EXPLORERTAB' | translate}}
+    </button>
+    <button (click)="tab=4" [ngClass]="{'active':tab==4}">
+      {{'PAGES.OPTIONS.DEVELOPERTAB' | translate}}
+    </button>
   </div>
 
   <!-- Network -->
   @if (tab==0) {
     <div class="tab-content">
-      <div>
-        <h4 class="danger">{{ 'PAGES.OPTIONS.NETWORK.RESTARTREQUIRED' | translate }}</h4>
-        <!--  incoming connections -->
-        <input id="chkBlockInc" (change)="setBlockIncoming()" [(ngModel)]="electron.settings.blockIncomingConnections"
-          type='checkbox' />
+      <h4 class="danger restart-notice">{{ 'PAGES.OPTIONS.NETWORK.RESTARTREQUIRED' | translate }}</h4>
+
+      <!-- incoming connections -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.CONNECTIONSTITLE' | translate }}</h5>
+        <div class="option-row">
+          <input id="chkBlockInc" (change)="setBlockIncoming()" [(ngModel)]="electron.settings.blockIncomingConnections" type='checkbox' />
           <label for="chkBlockInc">{{ 'PAGES.OPTIONS.NETWORK.BLOCKINCOMING' | translate }}</label>
         </div>
-        <!-- Proxy -->
-        <div style="padding-top: 10px;">
+      </div>
+
+      <!-- Proxy -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.PROXYTITLE' | translate }}</h5>
+        <div class="option-row">
           <input id="chkProxy" (change)="setProxy()" [(ngModel)]="proxy.allow" type='checkbox' />
           <label for="chkProxy">{{ 'PAGES.OPTIONS.NETWORK.PROXY' | translate }}</label>
         </div>
@@ -30,26 +45,14 @@
           </text-input>
           <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
           <text-input type="number" [disabled]="!proxy.allow" [(inputModel)]="proxy.port" (change)="setProxy()"
-          placeholder="33820"></text-input>
+            placeholder="33820"></text-input>
         </div>
-        <!-- only net -->
-        <div class="form-inline" style="padding-top: 20px;">
-          <span>{{ 'PAGES.OPTIONS.NETWORK.ONLYNET' | translate }}:</span>
-          <div style="padding-left: 10px;">
-            <input id="chkIPv4" [(ngModel)]="onlyNet.IPv4" type='checkbox' (change)="setOnlyNet()" />
-            <label for="chkIPv4">IPv4</label>
-          </div>
-          <div style="padding-left: 10px;">
-            <input id="chkIPv6" [(ngModel)]="onlyNet.IPv6" type='checkbox' (change)="setOnlyNet()" />
-            <label for="chkIPv6">IPv6</label>
-          </div>
-          <div style="padding-left: 10px;">
-            <input id="chkOnlyNetTor" [(ngModel)]="onlyNet.Tor" type='checkbox' (change)="setOnlyNet()" />
-            <label for="chkOnlyNetTor">Tor</label>
-          </div>
-        </div>
-        <!-- tor -->
-        <div style="padding-top: 20px;">
+      </div>
+
+      <!-- tor -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.TORTITLE' | translate }}</h5>
+        <div class="option-row">
           <input id="chkTor" (change)="setTor()" [(ngModel)]="tor.allow" type='checkbox' />
           <label for="chkTor">{{ 'PAGES.OPTIONS.NETWORK.PROXYTOR' | translate }}</label>
         </div>
@@ -59,70 +62,251 @@
           </text-input>
           <label style="margin: 0 10px">{{ 'PAGES.OPTIONS.NETWORK.PROXYPORT' | translate }}:</label>
           <text-input type="number" [disabled]="!tor.allow" [(inputModel)]="tor.port" (change)="setTor()"
-          placeholder="33820"></text-input>
+            placeholder="33820"></text-input>
         </div>
-        <!-- sync interval -->
-        <div style="padding-top: 20px;">
-          <span>{{ 'PAGES.OPTIONS.NETWORK.SYNCINTERVAL' | translate }}:</span>
+      </div>
+
+      <!-- only net -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.ONLYNETTITLE' | translate }}</h5>
+        <div class="option-row-group">
+          <div class="option-row">
+            <input id="chkIPv4" [(ngModel)]="onlyNet.IPv4" type='checkbox' (change)="setOnlyNet()" />
+            <label for="chkIPv4">IPv4</label>
+          </div>
+          <div class="option-row">
+            <input id="chkIPv6" [(ngModel)]="onlyNet.IPv6" type='checkbox' (change)="setOnlyNet()" />
+            <label for="chkIPv6">IPv6</label>
+          </div>
+          <div class="option-row">
+            <input id="chkOnlyNetTor" [(ngModel)]="onlyNet.Tor" type='checkbox' (change)="setOnlyNet()" />
+            <label for="chkOnlyNetTor">Tor</label>
+          </div>
         </div>
-        <div class="form-inline" style="padding-top: 20px;">
-          <div>
+      </div>
+
+      <!-- sync interval -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.SYNCINTERVALTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.NETWORK.SYNCINTERVAL' | translate }}</p>
+        <div class="option-row-group">
+          <div class="option-row">
             <input name="interval" id="chkInterval10" (change)="setSyncInterval()" [(ngModel)]="electron.settings.syncInterval" [value]="10000" type='radio' />
             <label for="chkInterval10">{{'PAGES.OPTIONS.NETWORK.INTERVAL10SECONDS' | translate}}</label>
           </div>
-          <div style="padding-left: 10px;">
+          <div class="option-row">
             <input name="interval" id="chkInterval30" (change)="setSyncInterval()" [(ngModel)]="electron.settings.syncInterval" [value]="30000" type='radio' />
             <label for="chkInterval30">{{'PAGES.OPTIONS.NETWORK.INTERVAL30SECONDS' | translate}}</label>
           </div>
-          <div style="padding-left: 10px;">
+          <div class="option-row">
             <input name="interval" id="chkInterval60" (change)="setSyncInterval()" [(ngModel)]="electron.settings.syncInterval" [value]="60000" type='radio' />
             <label for="chkInterval60">{{'PAGES.OPTIONS.NETWORK.INTERVAL60SECONDS' | translate}}</label>
           </div>
-          <div style="padding-left: 10px;">
+          <div class="option-row">
             <input name="interval" id="chkInterval180" (change)="setSyncInterval()" [(ngModel)]="electron.settings.syncInterval" [value]="180000" type='radio' />
             <label for="chkInterval180">{{'PAGES.OPTIONS.NETWORK.INTERVAL180SECONDS' | translate}}</label>
           </div>
         </div>
-        <!-- only net -->
-        <div class="form-inline" style="padding-top: 20px;">
-          <span>{{ 'PAGES.OPTIONS.NETWORK.CHAINTYPE' | translate }}:</span>
-          <div style="padding-left: 10px;">
+      </div>
+
+      <!-- chain type -->
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.NETWORK.CHAINTYPETITLE' | translate }}</h5>
+        <div class="option-row-group">
+          <div class="option-row">
             <input id="chkMainnet" [(ngModel)]="network" [value]="0" type='radio' />
             <label for="chkMainnet">Mainnet</label>
           </div>
-          <div style="padding-left: 10px;">
+          <div class="option-row">
             <input id="chkTestnet" [(ngModel)]="network" [value]="1" type='radio' />
             <label for="chkTestnet">Testnet</label>
           </div>
-          <div style="padding-left: 10px;">
+          <div class="option-row">
             <input id="chkRegtest" [(ngModel)]="network" [value]="2" type='radio' />
             <label for="chkRegtest">Regtest</label>
           </div>
         </div>
-        <div class="toolbar-bottom">
-          <button class="btn btn-default right" (click)="restart()"> {{'MENU.FILE.RESTARTCORE' | translate}}</button>
-        </div>
       </div>
-    }
 
-    <!-- Window -->
-    @if (tab==1) {
-      <div class="tab-content">
-        <div style="padding-top: 10px;">
+      <div class="toolbar-bottom">
+        <button class="btn btn-default right" (click)="restart()"> {{'MENU.FILE.RESTARTCORE' | translate}}</button>
+      </div>
+    </div>
+  }
+
+  <!-- Window -->
+  @if (tab==1) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.WINDOW.BEHAVIOURTITLE' | translate }}</h5>
+        <div class="option-row">
           <input id="chkHideTray" (change)="setHideTray()" [(ngModel)]="electron.settings.hideTrayIcon" type='checkbox' />
           <label for="chkHideTray">{{ 'PAGES.OPTIONS.WINDOW.HIDETRAY' | translate }}</label>
         </div>
-        <div style="padding-top: 10px;">
-          <input id="chkMinTray" (change)="setMinimiseToTray()" [(ngModel)]="electron.settings.minimiseToTray"
-            type='checkbox' />
-            <label for="chkMinTray">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZETOTRAY' | translate }}</label>
-          </div>
-          <div style="padding-top: 10px;">
-            <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose"
-              type='checkbox' />
-              <label for="chkMinClose">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZEONCLOSE' | translate }}</label>
-            </div>
+        <div class="option-row">
+          <input id="chkMinTray" (change)="setMinimiseToTray()" [(ngModel)]="electron.settings.minimiseToTray" type='checkbox' />
+          <label for="chkMinTray">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZETOTRAY' | translate }}</label>
+        </div>
+        <div class="option-row">
+          <input id="chkMinClose" (change)="setMinimiseOnClose()" [(ngModel)]="electron.settings.minimiseOnClose" type='checkbox' />
+          <label for="chkMinClose">{{ 'PAGES.OPTIONS.WINDOW.MINIMIZEONCLOSE' | translate }}</label>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Backup -->
+  @if (tab==2) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.AUTOBACKUPTITLE' | translate }}</h5>
+        <div class="option-row">
+          <input id="chkWalletBackup" (change)="setWalletBackupEnabled()" [(ngModel)]="electron.settings.walletBackupEnabled" type='checkbox' />
+          <label for="chkWalletBackup">{{ 'PAGES.OPTIONS.BACKUP.ENABLED' | translate }}</label>
+        </div>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.ENABLEDINFO' | translate }}</p>
+        <div class="form-inline">
+          <span>{{ 'PAGES.OPTIONS.BACKUP.INTERVALLABEL' | translate }}:</span>
+          <text-input class="number-field" type="number" [min]="1" [(inputModel)]="electron.settings.walletBackupIntervalDays" (change)="setWalletBackupIntervalDays()"></text-input>
+        </div>
+        @if (electron.settings.lastWalletBackup) {
+          <p class="option-card-subtitle">
+            {{ 'PAGES.OPTIONS.BACKUP.LASTBACKUP' | translate }} {{ electron.settings.lastWalletBackup | date:'MMM d, yyyy h:mm a' }}
+          </p>
+        } @else {
+          <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.NEVERBACKEDUP' | translate }}</p>
+        }
+        <button class="btn btn-default btn-sm" (click)="backupWalletNow()">{{ 'PAGES.OPTIONS.BACKUP.BACKUPNOWBUTTON' | translate }}</button>
+      </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.LOCATIONTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.LOCATIONINFO' | translate }}</p>
+        <div class="form-inline">
+          <text-input [inputModel]="electron.settings.walletBackupLocation || electron.defaultBackupLocation" [disabled]="true"></text-input>
+        </div>
+        <div class="option-row-group backup-location-actions">
+          <button class="btn btn-default btn-sm" (click)="browseWalletBackupLocation()">{{ 'PAGES.OPTIONS.BACKUP.BROWSEBUTTON' | translate }}</button>
+          @if (electron.settings.walletBackupLocation) {
+            <button class="btn btn-default btn-sm" (click)="resetWalletBackupLocation()">{{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}</button>
+          }
+        </div>
+      </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.BACKUP.PRUNETITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.BACKUP.PRUNEINFO' | translate }}</p>
+        <div class="form-inline">
+          <span>{{ 'PAGES.OPTIONS.BACKUP.KEEPCOUNTLABEL' | translate }}:</span>
+          <text-input class="number-field" type="number" [min]="1" [(inputModel)]="electron.settings.walletBackupKeepCount" (change)="setWalletBackupKeepCount()"></text-input>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Explorer -->
+  @if (tab==3) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERINFO' | translate }}</p>
+        @for (network of explorerNetworks; track network) {
+          <div class="form-inline explorer-url-row">
+            <span>{{ ('PAGES.OPTIONS.EXPLORER.' + network.toUpperCase()) | translate }}</span>
+            <text-input type="url"
+              [(inputModel)]="explorerUrls.blockExplorer[network]"
+              [disabled]="explorerUrlTesting['blockExplorer.' + network]"
+              [placeholder]="defaultExplorerUrl('blockExplorer', network)">
+            </text-input>
+            <button class="btn btn-default btn-sm" [disabled]="explorerUrlTesting['blockExplorer.' + network]"
+              (click)="saveExplorerUrl('blockExplorer', network)">
+              @if (explorerUrlTesting['blockExplorer.' + network]) {
+                <fa-icon icon="spinner" animation="spin"></fa-icon>
+              } @else {
+                {{ 'MISC.SAVEBUTTON' | translate }}
+              }
+            </button>
+            @if (isExplorerUrlOverridden('blockExplorer', network)) {
+              <button class="btn btn-default btn-sm" (click)="resetExplorerUrl('blockExplorer', network)">
+                {{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}
+              </button>
+            }
           </div>
         }
-
       </div>
+
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.EXPLORER.TOKENDISCOVERYTITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.TOKENDISCOVERYINFO' | translate }}</p>
+        @for (network of explorerNetworks; track network) {
+          <div class="form-inline explorer-url-row">
+            <span>{{ ('PAGES.OPTIONS.EXPLORER.' + network.toUpperCase()) | translate }}</span>
+            <text-input type="url"
+              [(inputModel)]="explorerUrls.tokenDiscovery[network]"
+              [disabled]="explorerUrlTesting['tokenDiscovery.' + network]"
+              [placeholder]="defaultExplorerUrl('tokenDiscovery', network)">
+            </text-input>
+            <button class="btn btn-default btn-sm" [disabled]="explorerUrlTesting['tokenDiscovery.' + network]"
+              (click)="saveExplorerUrl('tokenDiscovery', network)">
+              @if (explorerUrlTesting['tokenDiscovery.' + network]) {
+                <fa-icon icon="spinner" animation="spin"></fa-icon>
+              } @else {
+                {{ 'MISC.SAVEBUTTON' | translate }}
+              }
+            </button>
+            @if (isExplorerUrlOverridden('tokenDiscovery', network)) {
+              <button class="btn btn-default btn-sm" (click)="resetExplorerUrl('tokenDiscovery', network)">
+                {{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}
+              </button>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+  <!-- Developer -->
+  @if (tab==4) {
+    <div class="tab-content">
+      <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODETITLE' | translate }}</h5>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODEINFO' | translate }}</p>
+        <div class="option-row">
+          <input id="chkDevMode" (change)="setDevMode()" [(ngModel)]="electron.settings.devMode" type='checkbox' />
+          <label for="chkDevMode">{{ 'PAGES.OPTIONS.DEVELOPER.DEVMODELABEL' | translate }}</label>
+        </div>
+      </div>
+
+      @if (electron.settings.devMode) {
+        <h4 class="warning restart-notice">{{ 'PAGES.OPTIONS.DEVELOPER.WARNING' | translate }}</h4>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTINFO' | translate }}</p>
+
+        @for (network of devRpcNetworks; track network) {
+          <div class="content-card option-card">
+            <h5>{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTTITLE' | translate }} - {{ ('PAGES.OPTIONS.EXPLORER.' + network.toUpperCase()) | translate }}</h5>
+            <div class="form-inline">
+              <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCHOSTLABEL' | translate }}:</span>
+              <text-input [(inputModel)]="devRpc[network].host" (change)="setDevRpc(network)" placeholder="127.0.0.1"></text-input>
+            </div>
+            <div class="form-inline">
+              <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCPORTLABEL' | translate }}:</span>
+              <text-input type="number" [(inputModel)]="devRpc[network].port" (change)="setDevRpc(network)" [placeholder]="defaultRpcPort(network)"></text-input>
+            </div>
+            <div class="form-inline">
+              <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCUSERLABEL' | translate }}:</span>
+              <text-input [(inputModel)]="devRpc[network].user" (change)="setDevRpc(network)"></text-input>
+            </div>
+            <div class="form-inline">
+              <span>{{ 'PAGES.OPTIONS.DEVELOPER.RPCPASSWORDLABEL' | translate }}:</span>
+              <text-input type="password" [(inputModel)]="devRpc[network].password" (change)="setDevRpc(network)"></text-input>
+            </div>
+            @if (isDevRpcOverridden(network)) {
+              <button class="btn btn-default btn-sm" (click)="resetDevRpc(network)">{{ 'PAGES.OPTIONS.BACKUP.RESETBUTTON' | translate }}</button>
+            }
+          </div>
+        }
+      }
+    </div>
+  }
+
+</div>
