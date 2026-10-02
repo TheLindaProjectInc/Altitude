@@ -753,10 +753,16 @@
                 "UNHIDE": "Unhide",
                 "EMPTYTITLE": "No Tokens Found Yet",
                 "EMPTYDETAIL": "Altitude automatically checks a block explorer for MRC20 and MRC721 tokens sent to your addresses, then verifies everything live against your own node. You can also add a token manually if you know its contract address.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatic token checking is turned off, so your addresses aren't being checked for tokens. Turn it back on above, or add a token manually if you know its contract address.",
                 "HIDDENTITLE": "Hidden Tokens",
                 "CONTEXTMENUHIDE": "Hide Token",
                 "ITEMSSUFFIX": "item(s)",
-                "NONENUMERABLETOOLTIP": "This collection doesn't support listing individual items - showing how many you hold instead."
+                "NONENUMERABLETOOLTIP": "This collection doesn't support listing individual items - showing how many you hold instead.",
+                "CHECKINGENABLED": "Checking On",
+                "CHECKINGDISABLED": "Checking Off",
+                "CHECKINGENABLEDTOOLTIP": "Token checking is on - Altitude periodically checks your addresses for tokens and refreshes balances. Click to turn off.",
+                "CHECKINGDISABLEDTOOLTIP": "Token checking is off - click to turn back on.",
+                "CHECKINGDISABLEDNOTICE": "Automatic token checking is turned off. Your addresses are not being scanned for tokens and balances will not update. You can still add a token manually."
             },
             "ADDTOKEN": {
                 "TITLE": "Add Token",

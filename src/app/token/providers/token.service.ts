@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import Big from 'big.js';
 import { RpcService, RPCMethods } from 'app/metrix/providers/rpc.service';
 import { WalletService } from 'app/metrix/providers/wallet.service';
+import { ElectronService } from 'app/providers/electron.service';
 import Helpers from 'app/helpers';
 import { TokenContractService } from './token-contract.service';
 import { TokenStoreService, ChainTokenData, WatchedToken } from './token-store.service';
@@ -28,6 +29,21 @@ export class TokenService {
         return this.scanning || this.refreshingBalances;
     }
 
+    // lets a user who doesn't hold tokens turn off all automatic contract
+    // discovery/balance polling (see refresh() below, which this gates centrally) -
+    // "!== false" so a settings object that hasn't loaded this key yet (or predates the
+    // setting entirely) defaults to enabled, matching the Settings class default
+    get checkingEnabled(): boolean {
+        return this.electron.settings.tokenCheckingEnabled !== false;
+    }
+
+    setCheckingEnabled(enabled: boolean) {
+        this.electron.settings.tokenCheckingEnabled = enabled;
+        this.electron.ipcRenderer.send('settings', 'SETTOKENCHECKINGENABLED', enabled);
+        // re-enabling shouldn't make the user wait for the next block to see anything
+        if (enabled) this.refresh(true);
+    }
+
     readonly defaultGasLimit = 250000;
 
     private chainData: ChainTokenData = { tokens: [] };
@@ -47,6 +63,7 @@ export class TokenService {
         private tokenContract: TokenContractService,
         private tokenStore: TokenStoreService,
         private tokenExplorer: TokenExplorerService,
+        private electron: ElectronService,
         private http: HttpClient,
     ) {
         this.init();
@@ -154,6 +171,11 @@ export class TokenService {
 
     async refresh(force = false) {
         if (!this.initialized) { this.log('refresh: skipped, not initialized yet'); return; }
+        // gated here rather than at each call site (newBlockReceived, init(), the Token
+        // screen's manual Refresh button) so every path is covered by one check - manually
+        // adding a specific contract (add-token.component.ts) doesn't go through refresh()
+        // at all, so it's unaffected by this toggle, same as viewing NFT metadata
+        if (!this.checkingEnabled) { this.log('refresh: skipped, token checking disabled'); return; }
         if (!this.wallet.accounts.length) { this.log('refresh: skipped, no wallet accounts loaded yet'); return; }
         if (this.refreshing) { this.log('refresh: skipped, a refresh is already in progress'); return; }
         if (!force && Date.now() - this.lastScanTs < this.scanThrottleMs) { this.log('refresh: skipped, throttled'); return; }

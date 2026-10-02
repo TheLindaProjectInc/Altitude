@@ -165,6 +165,15 @@ function set_devRpc(field: 'devRpcHost' | 'devRpcPort' | 'devRpcUser' | 'devRpcP
     saveSettings();
 }
 
+// lets a user who doesn't hold any tokens turn off the Token screen's automatic contract
+// discovery/balance polling entirely, to avoid the explorer/daemon requests it otherwise
+// makes on every new block. Global rather than per-chain - this is a "I don't use tokens"
+// preference, not something that plausibly differs per network.
+function set_tokenCheckingEnabled(enabled: boolean) {
+    settings.tokenCheckingEnabled = enabled;
+    saveSettings();
+}
+
 // set internally by Client once a scheduled backup completes - not user-facing, so no
 // IPC case for it, just a plain export the main process can call directly
 export function set_lastWalletBackup(timestamp: number) {
@@ -298,6 +307,9 @@ function setupIPC() {
             case 'SETDEVRPCPASSWORDREGTEST':
                 set_devRpc('devRpcPassword', 'Regtest', data);
                 break;
+            case 'SETTOKENCHECKINGENABLED':
+                set_tokenCheckingEnabled(data);
+                break;
         }
     });
 }
@@ -356,6 +368,9 @@ export class Settings {
     devRpcPasswordMainnet: string = '';
     devRpcPasswordTestnet: string = '';
     devRpcPasswordRegtest: string = '';
+    // on by default so existing behaviour is unchanged until a user explicitly opts out
+    // from the Token screen
+    tokenCheckingEnabled: boolean = true;
 
     constructor(data) {
         if (data) {
