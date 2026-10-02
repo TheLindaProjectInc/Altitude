@@ -225,6 +225,12 @@ export class TokenService {
         this.log('discoverTokens: checking', addresses.length, 'address(es) via explorer');
         try {
             for (let i = 0; i < addresses.length; i++) {
+                // cooperative cancellation - checked every iteration so toggling checking
+                // off mid-scan stops further explorer requests within one request, rather
+                // than letting an already-running scan quietly run to completion (which
+                // left the sidebar showing "Checking..." for a while after the toggle was
+                // switched off, looking like the toggle hadn't done anything)
+                if (!this.checkingEnabled) { this.log('discoverTokens: stopping early, checking disabled mid-scan'); break; }
                 this.scanProgress = { current: i + 1, target: addresses.length };
                 let result;
                 try {
@@ -302,6 +308,9 @@ export class TokenService {
         this.refreshingBalances = true;
         try {
             for (const token of this.tokens) {
+                // see the matching check in discoverTokens() - stops the sweep promptly
+                // if checking gets disabled partway through, instead of finishing it anyway
+                if (!this.checkingEnabled) { this.log('refreshBalances: stopping early, checking disabled mid-sweep'); break; }
                 if (token.type === 'MRC20') {
                     await this.refreshMRC20Balance(token, addresses, hexAddrs);
                 } else {
