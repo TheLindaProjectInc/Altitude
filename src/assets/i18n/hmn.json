@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Tsim Tus Account",
             "HIDEEMPTYACCOUNTS": "Nkaum Cov Nyiaj Tsis Muaj Npe"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Txheej txheem cej luam",
+            "TRANSACTIONSTAB": "Kev Them Nyiaj",
+            "ADDRESSTABS": "Chaw Nyob"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ntxiv Tus Neeg Txais",
             "SEND": "Xa",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Hnub Tim",
             "TABLECOLUMNS_CONFIRMS": "Cov Lus Pom Zoo",
             "ALL_SELECTUNSELECT": "Qhib/Kaw Txhua Yam",
+            "TREEMODE": "Hom Tsob Ntoo",
+            "LISTMODE": "Hom teev npe",
             "SENDAVAILABLE": "Siv cov nyiaj seem uas muaj",
             "INPUTLOCKED": "Cov ntaub ntawv nkag raug xauv lawm. Koj yuav tsum qhib cov ntaub ntawv nkag no kom siv tau.",
             "CONTEXTMENULOCKINPUT": "Xauv cov ntaub ntawv nkag",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Tom qab them nqi",
             "QUANTITY": "Qhov ntau",
             "BYTES": "Cov Bytes",
-            "TREEMODE": "Hom Tsob Ntoo",
-            "LISTMODE": "Hom teev npe",
             "ALERTFEECHANGETITLE": "Kev Hloov Nqi",
             "ALERTFEECHANGECONTENT": "Tus nqi them rau kev lag luam tiag tiag siab dua li qhov xav tau. Thov paub meej tus nqi tshiab:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Tsim Daim Ntawv Cog Lus",
+            "INFO": "Xa daim ntawv cog lus ntse mus rau hauv lub network los ntawm kev xa nws cov bytecode uas tau muab tso ua ke. Qhov no yog ib qho core chain function - xyuas ob zaug koj cov bytecode thiab cov chaw teeb tsa ua ntej xa tawm, kev xa tawm tsis tuaj yeem rov ua dua.",
+            "FROM": "Los ntawm",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Muab cov ntawv cog lus bytecode (hex) uas tau muab tso ua ke",
+            "INVALIDBYTECODE": "Bytecode yuav tsum yog ib txoj hlua hex uas siv tau (0-9, a-f) nrog tus lej cim sib npaug.",
+            "GASLIMIT": "Kev Txwv Roj Av",
+            "GASLIMITRANGE": "Ntau yam",
+            "GASPRICE": "Tus nqi roj (MRX ib chav roj)",
+            "GASPRICEMIN": "Yam tsawg kawg nkaus",
+            "ESTIMATEDMAXCOST": "Tus nqi kwv yees siab tshaj plaws",
+            "DEPLOYBUTTON": "Daim Ntawv Cog Lus Tso Tawm",
+            "INCOMPLETEFORM": "Thov xaiv tus neeg xa ntawv chaw nyob, sau tus lej bytecode uas siv tau, thiab teem tus nqi/txwv roj uas siv tau",
+            "HIGHGASPRICETITLE": "Tus nqi roj siab",
+            "HIGHGASPRICEINFO": "Tus nqi roj uas koj tau teem tseg siab heev. Qhov kev xa tawm no yuav raug nqi txog li:",
+            "DEPLOYING": "Kev xa daim ntawv cog lus...",
+            "DEPLOYED": "Daim ntawv cog lus xa mus lawm",
+            "RESULTTITLE": "Cov Txiaj Ntsig ntawm Kev Xa Mus",
+            "STATUS": "Xwm txheej",
+            "STATUSPENDING": "Tseem tos kev lees paub...",
+            "STATUSCONFIRMED": "Xa mus rau qhov chaw ua tiav lawm",
+            "STATUSFAILED": "Kev xa tawm tsis ua tiav",
+            "TXID": "Tus lej cim kev lag luam",
+            "SENDER": "Tus xa ntawv",
+            "CONTRACTADDRESS": "Chaw Nyob ntawm Daim Ntawv Cog Lus",
+            "GASUSED": "Cov roj siv",
+            "DONEBUTTON": "Ua tiav lawm",
+            "DEPLOYANOTHERBUTTON": "Tso Lwm Tus"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Kev Them Nyiaj",
+            "COPYBLOCKHASH": "Luam Block Hash",
+            "COPYTXID": "Luam daim ID Kev Ua Lag Luam",
+            "COPYACCOUNT": "Luam Lub Npe Account",
+            "COPYADDRESS": "Luam Qhov Chaw Nyob",
+            "COPYAMOUNT": "Tus Nqi Luam",
+            "COPTBLOCKINDEX": "Cov Ntawv Qhia Txog Kev Luam Tawm",
+            "EXPLORER": "Qhib rau hauv Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Qhib rau Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Chaw Nyob",
             "ENABLED": "Qhib tau",
-            "STARTBUTTON": "Pib Hauv Zos",
-            "STARTALIASBUTTON": "Pib Lub Npe Alias",
-            "STARTALLBUTTON": "Pib Txhua Yam",
             "NOMASTERNODES": "Koj tsis muaj masternodes",
             "NOMNOUTPUTS": "Tsis pom muaj cov zis Masternode. Yuav kom khiav ib lub Masternode hauv zos, xa raws nraim 2,5,25,50 lossis 100 lab npib rau koj qhov chaw nyob Masternode thiab tos 15 qhov kev lees paub.",
+            "STARTBUTTON": "Pib Hauv Zos",
             "STOPBUTTON": "Nres Hauv Zos",
+            "STARTALIASBUTTON": "Pib Lub Npe Alias",
             "STOPALIASBUTTON": "Nres Alias",
+            "STARTALLBUTTON": "Pib Txhua Yam",
             "ADDREMOTE": "Ntxiv Chaw Taws Teeb Masternode",
             "REMOVEMN": "Tshem tawm Masternode",
             "ADDLOCAL": "Teeb tsa Local Masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Dav Dav",
                 "COREVERSION": "Cov Qauv Tseem Ceeb",
+                "ALTITUDEVERSION": "Qhov Siab Tshaj",
                 "PROTOCOLVERSION": "Cov Qauv Txheej Txheem",
                 "WALLETVERSION": "Cov Qauv Wallet.dat",
                 "NETWORKTITLE": "Kev Sib Txuas Lus",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Tus naj npawb ntawm Masternodes",
                 "BLOCKCHAINTITLE": "Cov saw hlau thaiv",
                 "NUMBERBLOCKS": "Tus naj npawb ntawm cov blocks tam sim no",
-                "BESTBLOCKTTIME": "Lub sijhawm thaiv kawg",
-                "ALTITUDEVERSION": "Qhov Siab Tshaj"
+                "BESTBLOCKTTIME": "Lub sijhawm thaiv kawg"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Txais tos rau Metrix Core RPC console. Ntaus help kom pom cov lus txib uas muaj.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Xaiv Hom Lus"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Kev Them Nyiaj",
-            "COPYBLOCKHASH": "Luam Block Hash",
-            "COPYTXID": "Luam daim ID Kev Ua Lag Luam",
-            "COPYACCOUNT": "Luam Lub Npe Account",
-            "COPYADDRESS": "Luam Qhov Chaw Nyob",
-            "COPYAMOUNT": "Tus Nqi Luam",
-            "COPTBLOCKINDEX": "Cov Ntawv Qhia Txog Kev Luam Tawm",
-            "EXPLORER": "Qhib rau hauv Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Xaiv Cov Nyiaj Txiag Qhia"
         },
         "EXPLORER": {
             "TITLE": "Tus Tshawb Nrhiav Thaiv",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Kev Sib Txuas Lus",
             "WINDOTAB": "Qhov rai",
+            "BACKUPTAB": "Kev thaub qab",
+            "EXPLORERTAB": "Tus Neeg Tshawb Fawb",
+            "DEVELOPERTAB": "Tus Tsim Tawm",
             "NETWORK": {
                 "PROXY": "Txuas los ntawm SOCKS5 proxy",
                 "PROXYIP": "Tus IP ntawm tus neeg sawv cev",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Txo qhov tsawg kawg nkaus thaum kaw",
                 "BEHAVIOURTITLE": "Kev coj cwj pwm ntawm System Tray & Qhov Rai"
             },
-            "BACKUPTAB": "Kev thaub qab",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Tsis Siv Neeg Thaub Qab",
                 "ENABLED": "Khaws cia wallet.dat raws sijhawm",
                 "ENABLEDINFO": "Tsim ib qho thaub qab tshiab ntawm koj cov ntaub ntawv hnab nyiaj raws sijhawm, yog li ib daim qauv tshiab yeej ib txwm muaj yog tias muaj qee yam tsis raug.",
+                "INTERVALLABEL": "Rov qab txhua (hnub)",
                 "LASTBACKUP": "Qhov thaub qab kawg:",
                 "NEVERBACKEDUP": "Tsis tau muaj kev thaub qab tsis siv neeg.",
                 "BACKUPNOWBUTTON": "Rov Qab Tam Sim No",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Rov pib dua rau qhov qub",
                 "PRUNETITLE": "Keeb Kwm Thaub Qab",
                 "PRUNEINFO": "Cov thaub qab tsis siv neeg qub dua raug rho tawm yog li daim nplaub tshev no yuav tsis loj hlob mus ib txhis - tsuas yog cov tshiab tshaj plaws hauv qab no thiaj li khaws cia.",
-                "KEEPCOUNTLABEL": "Khaws qhov kawg",
-                "INTERVALLABEL": "Rov qab txhua (hnub)"
+                "KEEPCOUNTLABEL": "Khaws qhov kawg"
             },
-            "EXPLORERTAB": "Tus Neeg Tshawb Fawb",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Tus Tshawb Nrhiav Thaiv",
                 "BLOCKEXPLORERINFO": "Lub xaib tau qhib thaum saib ib qho kev lag luam ntawm lub block explorer (piv txwv li nias sab xis rau ib qho kev lag luam> Saib ntawm Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Kev Sau Npe"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Hom Tsim Tawm",
+                "DEVMODEINFO": "Tua los ntawm lub neej ntawd thiab tsuas yog rau cov neeg tsim khoom xwb. Kev qhib qhov no qhia txog cov kev xaiv los hloov qhov kev sib txuas RPC - cov neeg siv tus qauv yuav tsum tso qhov no tawm.",
+                "DEVMODELABEL": "Qhib Hom Tsim Tawm",
+                "WARNING": "Cov chaw no tsuas yog rau kev tsim kho xwb. Kev hloov lawv tuaj yeem tiv thaiv lub hnab nyiaj los ntawm kev txuas mus rau daemon txhua - tsuas yog siv qhov no yog tias koj paub tias koj ua dab tsi.",
+                "RPCHOSTTITLE": "Kev Sib Txuas RPC",
+                "RPCHOSTINFO": "Los ntawm lub neej ntawd, Altitude txuas rau daemon uas nws tswj hwm nws tus kheej, ntawm lub tshuab no (127.0.0.1). Kev hloov pauv cov no cia nws txuas rau lwm daemon hloov chaw - piv txwv li ib qho chaw taws teeb regtest, tsis tas yuav khiav ib qho hauv zos. Yog tias kev sib txuas ua tiav, Altitude yuav tsis rub tawm lossis pib nws tus kheej daemon hauv zos. Lub hom phiaj daemon rpcallowip yuav tsum tso cai rau qhov kev sib txuas no, thiab rpcuser/rpcpassword hauv qab no yuav tsum phim nws qhov kev teeb tsa. Yuav siv tau tam sim ntawd, tsis tas yuav rov pib dua.",
+                "RPCHOSTLABEL": "Tus Tswv Cuab RPC",
+                "RPCPORTLABEL": "Chaw nres nkoj RPC",
+                "RPCUSERLABEL": "Lub Npe Siv RPC",
+                "RPCPASSWORDLABEL": "Lo lus zais RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Txheej txheem cej luam",
-            "TRANSACTIONSTAB": "Kev Them Nyiaj",
-            "ADDRESSTABS": "Chaw Nyob"
-        },
-        "CURRENCY": {
-            "TITLE": "Xaiv Cov Nyiaj Txiag Qhia"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Lub Rooj Tswjhwm Saib Xyuas",
             "SEND": "Xa",
+            "CREATECONTRACT": "Tsim Daim Ntawv Cog Lus",
             "RECEIVE": "Txais",
             "TRANSACTIONS": "Kev Them Nyiaj",
             "STAKING": "Kev teeb tsa",
             "MASTERNODES": "Cov Masternodes",
+            "EXPLORER": "Tus Tshawb Nrhiav Thaiv",
             "SYNC": {
                 "CONNECTING": "Txuas",
                 "NOBLOCKS": "Tos cov blocks",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Tam sim no tsis tau muab nyiaj tso rau hauv hnab nyiaj",
                 "MASTERNODEON": "Masternode tam sim no khiav",
                 "MASTERNODEOFF": "Masternode tsis khiav tam sim no"
-            },
-            "EXPLORER": "Tus Tshawb Nrhiav Thaiv"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Sau ib qho chaw nyob hauv lub vev xaib 3",
+            "GOBUTTON": "Mus",
+            "QUICKLAUNCH": "Tua Tawm Sai",
+            "DEVTOOLS": "Qhib Cov Cuab Yeej Tsim Khoom",
+            "ADDLINK": "Ntxiv qhov txuas",
+            "LINKNAMEPLACEHOLDER": "Lub Npe",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Txuag",
+            "CANCEL": "Tshem tawm",
+            "REMOVE": "Tshem tawm",
+            "REMOVECONFIRM": "Tshem qhov txuas sai no?",
+            "LINKEXISTS": "Qhov txuas ntawd twb nyob hauv koj daim ntawv teev npe qhib sai lawm",
+            "LINKINVALID": "Sau ib qho chaw nyob ntawm qhov chaw uas siv tau",
+            "LINKNETWORKLABEL": "Kev Sib Txuas Lus",
+            "LOADFAILED": "Tsis tau thauj khoom lub xaib",
+            "SECURESITE": "Kev sib txuas ruaj ntseg - daim ntawv pov thawj SSL siv tau",
+            "INSECURESITE": "Kev sib txuas tsis ruaj ntseg",
+            "INVALIDCERTSITE": "Kev sib txuas tsis yog ntiag tug - daim ntawv pov thawj SSL tsis raug lossis tsis ntseeg siab"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sau Koj Lub Hnab Nyiaj Lo Lus zais",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Muaj kev hloov tshiab rau Metrix Core. Koj puas xav nruab nws tam sim no?",
             "WALLETUPDATETITLE": "Muaj Kev Hloov Kho Qhov Siab",
             "WALLETUPDATEINFO": "Muaj kev hloov tshiab rau Altitude. Koj puas xav rub tawm tam sim no?",
+            "WALLETUPDATEREADYTITLE": "Npaj Hloov Kho Qhov Siab",
+            "WALLETUPDATEREADYINFO": "Qhov hloov tshiab tau rub tawm lawm. Rov pib dua Altitude tam sim no kom nruab nws?",
+            "WALLETUPDATERESTARTBUTTON": "Rov Pib Dua & Nruab",
+            "WALLETUPDATELATERBUTTON": "Tom qab",
             "CLIENTUPDATEBUTTON": "Hloov tshiab",
             "CLIENTUPDATECANCELBUTTON": "Tsis txhob hloov tshiab",
             "CLIENTUPDATESKIPBUTTON": "Dhia qhov Hloov Tshiab no",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Cov ntaub ntawv thaub qab uas koj tau ua ntawm koj cov ntaub ntawv hnab nyiaj yav dhau los yuav tsum tau hloov nrog cov ntaub ntawv hnab nyiaj tshiab uas tau tsim, encrypted. Vim yog kev ruaj ntseg, cov ntaub ntawv thaub qab yav dhau los ntawm cov ntaub ntawv hnab nyiaj tsis tau encrypted yuav tsis muaj txiaj ntsig thaum koj pib siv lub hnab nyiaj tshiab, encrypted.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Nres Tsis Tau Xav Txog",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Muaj teeb meem nrog Metrix Core uas ua rau nws tsis ua haujlwm. Nws raug nquahu kom kuaj xyuas koj cov ntaub ntawv debug.log kom paub seb puas muaj teeb meem.",
+            "CLIENTUNKNOWNERRORTITLE": "Kev Sib Txuas Lus Metrix Core Yuam Kev",
+            "CLIENTUNKNOWNERRORINFO": "Muaj teeb meem sib txuas lus nrog Metrix Core. Nws raug pom zoo kom kuaj xyuas koj cov ntaub ntawv debug.log kom paub seb puas muaj teeb meem.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Ua Tsis Tau Zoo",
+            "BOOTSTRAPFAILEDINFO": "Muaj teeb meem thaum pib siv Metrix Core. Peb xav kom koj mus saib koj cov ntaub ntawv teev cia Altitude seb puas muaj teeb meem.",
+            "BOOTSTRAPOFFERTITLE": "Lub hnab nyiaj qub dhau lawm ntau heev",
+            "BOOTSTRAPOFFERINFO": "Muaj ib qho bootstrap tshiab uas tuaj yeem ua rau Metrix Core hloov tshiab sai sai. Kev txuas ntxiv nrog kev sib dhos ib txwm yuav siv sijhawm ob peb hnub kom ua tiav, vim tias koj lub hnab nyiaj yuav tsum rub tawm thiab txheeb xyuas txhua lub block uas nws tsis tau pom.",
+            "BOOTSTRAPOFFERBUTTON": "Rub tawm Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Txuas Ntxiv Kev Sib Txuas Lus Li Qub",
+            "BOOTSTRAPSPACEINFO": "Tsis muaj chaw seem txaus rau rub tawm thiab rho tawm cov bootstrap. Yuav tsum muaj: {yuav tsum muaj}, Muaj: {dawb}. Ua kom muaj chaw seem thiab sim dua.",
+            "STARTUPFAILEDTITLE": "Kev pib ua haujlwm Metrix Core tsis ua tiav",
+            "STARTUPFAILEDINFO": "Muaj qhov yuam kev thaum pib Metrix Core. Nws raug pom zoo kom kuaj xyuas koj cov ntaub ntawv teev cia Altitude kom paub txog teeb meem.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Cov Cuab Yeej Rov Qab Zoo",
             "CLIENTINVALIDCONFIGTITLE": "Kev Teeb tsa metrix.conf tsis raug",
             "CLIENTINVALIDCONFIGINFO": "Koj lub metrix.conf muaj qhov teeb tsa masternode tsis raug uas yuav ua rau Metrix Core tawm tam sim ntawd. Thov mus saib cov ntaub ntawv no.",
             "ADDREMOTEMNTITLE": "Ntxiv Chaw Taws Teeb Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Tus yuam sij ntiag tug Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Ua Tsis Tau Zoo",
-            "BOOTSTRAPFAILEDINFO": "Muaj teeb meem thaum pib siv Metrix Core. Peb xav kom koj mus saib koj cov ntaub ntawv teev cia Altitude seb puas muaj teeb meem.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Cov Cuab Yeej Rov Qab Zoo",
-            "STARTUPFAILEDTITLE": "Kev pib ua haujlwm Metrix Core tsis ua tiav",
-            "STARTUPFAILEDINFO": "Muaj qhov yuam kev thaum pib Metrix Core. Nws raug pom zoo kom kuaj xyuas koj cov ntaub ntawv teev cia Altitude kom paub txog teeb meem.",
-            "CLIENTUNKNOWNERRORTITLE": "Kev Sib Txuas Lus Metrix Core Yuam Kev",
-            "CLIENTUNKNOWNERRORINFO": "Muaj teeb meem sib txuas lus nrog Metrix Core. Nws raug pom zoo kom kuaj xyuas koj cov ntaub ntawv debug.log kom paub seb puas muaj teeb meem.",
             "UNENROLLGOVERNORTITLE": "Paub meej tias Tus Thawj Kav Xeev Tsis Sau Npe",
             "UNENROLLGOVERNORCONTENT": "Koj puas paub tseeb tias koj xav rho koj tus Thawj Kav Xeev tawm ntawm kev sau npe? Koj yuav tsis muaj peev xwm pov npav rau kev tswj hwm saw hlau lawm.",
-            "WALLETUPDATEREADYTITLE": "Npaj Hloov Kho Qhov Siab",
-            "WALLETUPDATEREADYINFO": "Qhov hloov tshiab tau rub tawm lawm. Rov pib dua Altitude tam sim no kom nruab nws?",
-            "WALLETUPDATERESTARTBUTTON": "Rov Pib Dua & Nruab",
-            "WALLETUPDATELATERBUTTON": "Tom qab",
             "DAPPCONNECTTITLE": "Txuas rau Lub Vev Xaib",
             "DAPPCONNECTINFO": "Lub xaib no xav txuas rau koj lub hnab nyiaj thiab saib koj qhov chaw nyob thiab qhov nyiaj tshuav.",
             "DAPPCONNECTBUTTON": "Txuas",
+            "DAPPCONNECTADDRESSLABEL": "Chaw Nyob",
+            "DAPPAPPROVEBUTTON": "Pom zoo",
             "DAPPREJECTBUTTON": "Tsis lees txais",
             "DAPPSENDTITLE": "Daim Ntawv Thov Kev Ua Lag Luam Daim Ntawv Cog Lus",
             "DAPPSENDINFO": "Lub xaib no thov kom xa daim ntawv cog lus los ntawm koj lub hnab nyiaj.",
-            "DAPPSIGNTITLE": "Kos Npe Rau Cov Lus Thov",
-            "DAPPSIGNINFO": "Lub xaib no thov kom kos npe rau ib tsab ntawv nrog koj qhov chaw nyob hauv hnab nyiaj.",
-            "DAPPNOTREADY": "Tsis tau txuas rau lub xaib no - Metrix Core tseem tab tom pib ua haujlwm.",
-            "DAPPNOWALLET": "Tsis tuaj yeem txuas rau lub xaib - tsis muaj chaw nyob hauv hnab nyiaj.",
-            "DAPPAPPROVEBUTTON": "Pom zoo",
-            "DAPPCONNECTADDRESSLABEL": "Chaw Nyob",
             "DAPPSENDSITELABEL": "Qhov chaw",
             "DAPPSENDCONTRACTLABEL": "Chaw Nyob ntawm Daim Ntawv Cog Lus",
             "DAPPSENDAMOUNTLABEL": "Tus nqi",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tus nqi them siab tshaj plaws ntawm Network",
             "DAPPSENDMAXTOTALLABEL": "Tag Nrho Max",
             "DAPPSENDDATALABEL": "Cov Ntaub Ntawv Cog Lus",
+            "DAPPSIGNTITLE": "Kos Npe Rau Cov Lus Thov",
+            "DAPPSIGNINFO": "Lub xaib no thov kom kos npe rau ib tsab ntawv nrog koj qhov chaw nyob hauv hnab nyiaj.",
             "DAPPSIGNMESSAGELABEL": "Cov Lus",
-            "BOOTSTRAPOFFERTITLE": "Lub hnab nyiaj qub dhau lawm ntau heev",
-            "BOOTSTRAPOFFERINFO": "Muaj ib qho bootstrap tshiab uas tuaj yeem ua rau Metrix Core hloov tshiab sai sai. Kev txuas ntxiv nrog kev sib dhos ib txwm yuav siv sijhawm ob peb hnub kom ua tiav, vim tias koj lub hnab nyiaj yuav tsum rub tawm thiab txheeb xyuas txhua lub block uas nws tsis tau pom.",
-            "BOOTSTRAPOFFERBUTTON": "Rub tawm Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Txuas Ntxiv Kev Sib Txuas Lus Li Qub",
-            "BOOTSTRAPSPACEINFO": "Tsis muaj chaw seem txaus rau rub tawm thiab rho tawm cov bootstrap. Yuav tsum muaj: {yuav tsum muaj}, Muaj: {dawb}. Ua kom muaj chaw seem thiab sim dua."
+            "DAPPNOTREADY": "Tsis tau txuas rau lub xaib no - Metrix Core tseem tab tom pib ua haujlwm.",
+            "DAPPNOWALLET": "Tsis tuaj yeem txuas rau lub xaib - tsis muaj chaw nyob hauv hnab nyiaj."
         },
         "ADDRESSBOOK": {
             "TITLE": "Phau Ntawv Chaw Nyob",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Lub network tam sim no"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Sau ib qho chaw nyob hauv lub vev xaib 3",
-            "GOBUTTON": "Mus",
-            "QUICKLAUNCH": "Tua Tawm Sai",
-            "DEVTOOLS": "Qhib Cov Cuab Yeej Tsim Khoom",
-            "ADDLINK": "Ntxiv qhov txuas",
-            "LINKNAMEPLACEHOLDER": "Lub Npe",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Txuag",
-            "CANCEL": "Tshem tawm",
-            "REMOVE": "Tshem tawm",
-            "REMOVECONFIRM": "Tshem qhov txuas sai no?",
-            "LINKEXISTS": "Qhov txuas ntawd twb nyob hauv koj daim ntawv teev npe qhib sai lawm",
-            "LINKINVALID": "Sau ib qho chaw nyob ntawm qhov chaw uas siv tau",
-            "LINKNETWORKLABEL": "Kev Sib Txuas Lus",
-            "LOADFAILED": "Tsis tau thauj khoom lub xaib",
-            "SECURESITE": "Kev sib txuas ruaj ntseg - daim ntawv pov thawj SSL siv tau",
-            "INSECURESITE": "Kev sib txuas tsis ruaj ntseg",
-            "INVALIDCERTSITE": "Kev sib txuas tsis yog ntiag tug - daim ntawv pov thawj SSL tsis raug lossis tsis ntseeg siab"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Lub hnab nyiaj thaub qab...",
             "SIGNMESSAGE": "Kos Npe Cov Lus...",
             "VERIFYMESSAGE": "Txheeb xyuas cov lus...",
-            "LOCALE": "Lus...",
-            "RESTARTCORE": "Rov pib dua Metrix Core",
-            "EXIT": "Tawm Mus",
             "OPTIONS": "Cov kev xaiv...",
+            "LOCALE": "Lus...",
             "CURRENCIES": "Tso Saib Cov Nyiaj...",
-            "ALTITUDEREFRESH": "Hloov kho cov ntaub ntawv qhov siab"
+            "RESTARTCORE": "Rov pib dua Metrix Core",
+            "ALTITUDEREFRESH": "Hloov kho cov ntaub ntawv qhov siab",
+            "EXIT": "Tawm Mus"
         },
         "ENCRYPT": {
             "TITLE": "Encrypt",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Tag Nrho Cov Nyiaj Tshuav",
+        "SPENDABLEBALANCE": "Nyiaj Tshuav Siv Tau",
+        "PENDINGBALANCE": "Nyiaj Tshuav Tos",
         "CANCELBUTTON": "Tshem tawm",
         "DONEBUTTON": "Ua tiav lawm",
         "OKBUTTON": "Zoo",
+        "ACCEPTBUTTON": "Txais",
         "CLEARALLBUTTON": "Tshem Tawm Tag Nrho",
         "ENTERACCOUNTLABEL": "Sau ib daim ntawv lo rau qhov chaw nyob no",
         "ENTERADDRESSLABEL": "Sau ib qho chaw nyob Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Txheeb Raws Li",
         "SEARCH": "Tshawb Nrhiav",
         "FEE": "Tus nqi",
-        "ACCEPTBUTTON": "Txais",
         "CONFIRMED": "Tau lees paub lawm",
         "UNCONFIRMED": "Tsis tau lees paub",
-        "PENDINGBALANCE": "Nyiaj Tshuav Tos",
-        "SPENDABLEBALANCE": "Nyiaj Tshuav Siv Tau",
         "SAVEBUTTON": "Txuag"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Rov pib dua Metrix Core...",
         "BOOTSTRAPPING": "Tab tom rub tawm bootstrap...",
         "BOOTSTRAPEXTRACTING": "Extracting bootstrap...",
-        "TIMEREMAINING": "seem:"
+        "TIMEREMAINING": "seem:",
+        "DEVRPCOVERRIDEACTIVE": "Ib qho kev hloov pauv kev sib txuas RPC ntawm tus tsim tawm tau teeb tsa (Xaiv > Tus Tsim Tawm) thiab tsis teb. Tshem nws kom rov txuas nrog lub daemon hauv zos li qub.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Tshem tawm RPC Override & Rov txuas dua"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tsim tus account tshiab tau zoo lawm",
         "ADDRESSCOPIEDCLIPBOARD": "Tau theej qhov chaw nyob rau hauv clipboard",
+        "COPIEDCLIPBOARD": "Luam theej rau hauv clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Cov kev lag luam tau theej mus rau clipboard",
         "EMPTYFIELDS": "Thov sau txhua qhov chaw",
         "NOUPDATE": "Tsis muaj kev hloov tshiab",
         "WALLETBACKEDUP": "Kev thaub qab nyiaj hauv hnab nyiaj tau ua tiav lawm",
+        "WALLETBACKUPFAILED": "Kev thaub qab hnab nyiaj tsis ua haujlwm - xyuas koj qhov chaw thaub qab thiab qhov chaw disk muaj",
         "PASSPHRASEMISMATCH": "Cov kab lus zais uas koj sau tsis sib xws",
         "CHECKINGUPDATE": "Tshawb xyuas qhov hloov tshiab...",
         "CHECKINGUPDATEFAILED": "Tsis tuaj yeem tshawb xyuas seb puas muaj qhov hloov tshiab. Tshawb xyuas koj lub network.",
+        "WALLETUPDATEDOWNLOADING": "Rub tawm qhov hloov tshiab...",
         "SENDINGEXCEEDSBALANCE": "Tus nqi koj xa ntau dua li koj qhov nyiaj tshuav uas koj xaiv",
         "MISSINGCHANGEADDRESS": "Koj yuav tsum teev qhov chaw nyob hloov pauv",
         "MISSINGDESTINATIONADDRESS": "Koj yuav tsum qhia qhov chaw nyob uas koj xav mus",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Kev encrypt lub hnab nyiaj...",
         "CHANGINGPASSPHARASE": "Hloov kab lus zais...",
         "STARTINGMASTERNODE": "Pib lub masternode...",
+        "STOPPINGMASTERNODE": "Tab tom nres masternode...",
         "SENDINGTRANSACTION": "Xa kev them nyiaj...",
         "SIGNINGMESSAGE": "Kos npe rau cov lus...",
         "SIGNEDMESSAGE": "Cov lus tau kos npe",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Qhib lub hnab nyiaj...",
         "TRANSACTIONMISMATCH": "Kev ua lag luam yuam kev. Thov sim dua.",
         "MINIMUMCONFIRMATIONS": "Txhua cov ntaub ntawv xav tau tsawg kawg 1 zaug kev pom zoo ua ntej siv nyiaj.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Cov kev lag luam tau theej mus rau clipboard",
-        "STOPPINGMASTERNODE": "Tab tom nres masternode...",
         "FAILEDTOWRITECONFIG": "Muaj teeb meem sau ntawv rau koj cov ntaub ntawv metrix.conf. Xyuas kom tseeb tias cov ntaub ntawv muaj nyob thiab Altitude muaj cai sau ntawv.",
         "NOPUBLICUP": "Tsis pom qhov chaw nyob IP rau pej xeem. Xyuas koj qhov kev sib txuas hauv internet thiab rov pib dua Altitude.",
         "CONFIGURINGLOCALMN": "Kev teeb tsa Masternode hauv zos...",
         "REPORTINGISSUE": "Tau txais cov ntaub ntawv kuaj mob... Cov ntaub ntawv no yuav raug theej rau koj daim clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Rub tawm qhov hloov tshiab...",
-        "WALLETBACKUPFAILED": "Kev thaub qab hnab nyiaj tsis ua haujlwm - xyuas koj qhov chaw thaub qab thiab qhov chaw disk muaj",
         "EXPLORERURLSAVED": "Txuag tau qhov URL ntawm Explorer",
         "EXPLORERURLRESET": "Explorer URL rov qab mus rau qhov qub",
         "EXPLORERURLINVALID": "Qhov ntawd tsis yog ib qho URL http(s) uas siv tau",
-        "EXPLORERURLUNREACHABLE": "Tsis tuaj yeem ncav cuag qhov URL ntawd - xyuas nws thiab sim dua"
+        "EXPLORERURLUNREACHABLE": "Tsis tuaj yeem ncav cuag qhov URL ntawd - xyuas nws thiab sim dua",
+        "DEVRPCHOSTSAVED": "RPC tus tswv tsev tau txais kev cawmdim",
+        "DEVRPCHOSTRESET": "RPC tus tswv tsev rov qab mus rau qhov qub (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Cov Nyiaj Tau Txais",
+        "NEWTRANSACTION_TITLE_STAKE": "Tau Txais Cov Nyiaj Txiag",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Tau Txais Khoom Plig Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Ob peb feeb xwb",
@@ -533,11 +587,6 @@
         "MONTHS": "lub hlis",
         "AYEAR": "Ib xyoos",
         "YEARS": "xyoo"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Cov Nyiaj Tau Txais",
-        "NEWTRANSACTION_TITLE_STAKE": "Tau Txais Cov Nyiaj Txiag",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Tau Txais Khoom Plig Masternode"
     },
     "MONTH": {
         "JAN": "IB HLIS",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Cov Thawj Kav Tebchaws muaj lub luag haujlwm pov npav rau cov peev nyiaj txhua hli thiab kev hloov pauv blockchain. Koj tuaj yeem dhau los ua Thawj Kav Tebchaws los ntawm kev xauv cov khoom pov thawj raug cai hauv daim ntawv cog lus Tswjfwm.",
                 "COLLATERAL": "Cov khoom pov thawj uas yuav tsum tau muaj",
                 "ENROLL": "Sau npe",
+                "SELECTAGOVERNOR": "Xaiv qhov chaw nyob ntawm tus tswv xeev uas tsim nyog",
+                "GOVERNORNOTSELECTED": "Tsis tau xaiv qhov chaw nyob tsim nyog",
                 "CONFIRMENROLL": "Koj tab tom yuav sau npe ua Tus Thawj Kav Tebchaws. Qhov no yuav xa ib qho kev lag luam nrog cov khoom pov thawj uas yuav tsum tau ua rau daim ntawv cog lus tswj hwm. Koj tuaj yeem rho npe tawm txhua lub sijhawm.",
                 "ISGOVERNORTITLE": "Koj yog ib tug Thawj Kav Tebchaws uas ua haujlwm tas li!",
                 "ISGOVERNORDETAIL1": "Cov tswv xeev muaj lub luag haujlwm pov npav rau cov peev nyiaj txhua hli thiab cov kev hloov pauv blockchain.",
                 "ISGOVERNORDETAIL2": "Yuav kom koj tseem yog tus Thawj Kav Tebchaws, koj yuav tsum tau pov npav tsawg kawg yog 1 zaug txhua 30 hnub.",
                 "ISGOVERNORDETAIL3": "Yog tias tsis muaj dab tsi los pov npav rau ces koj tuaj yeem txuas ntxiv koj qhov kev sau npe los ntawm kev xa ib qho ping uas nquag siv.",
+                "MYGOVERNORADDRESS": "Kuv Tus Thawj Kav Xeev Chaw Nyob",
                 "UNENROLL": "Tsis txhob sau npe",
                 "PING": "Xa Active Ping",
                 "LASTPINGTITLE": "Qhov kawg ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "hnub",
                 "GOVERNORVOTEMATURITYHOURS": "teev",
                 "GOVERNORVOTEMATURITYSUFFIX": "mus txog thaum loj hlob",
-                "MYGOVERNORADDRESS": "Kuv Tus Thawj Kav Xeev Chaw Nyob",
-                "SELECTAGOVERNOR": "Xaiv qhov chaw nyob ntawm tus tswv xeev uas tsim nyog",
-                "GOVERNORNOTSELECTED": "Tsis tau xaiv qhov chaw nyob tsim nyog",
                 "NOTFULLYSYNCEDTITLE": "Tsis muaj tus tswv xeev txoj cai",
                 "NOTFULLYSYNCEDDETAIL": "Koj qhov xwm txheej sau npe rau Tus Thawj Kav Tebchaws yuav pom tseeb thaum koj lub blockchain sib dhos tag nrho.",
                 "DGPMIGRATIONTITLE": "Kev Hloov Chaw DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Koj daim ntawv thov tau tsim tiav lawm",
             "ENROLLINGGOVERNOR": "Kev rau npe ua tus Thawj Kav Xeev...",
             "ENROLLEDGOVERNOR": "Koj qhov kev sau npe yuav ua tiav thaum koj qhov kev lag luam tau lees paub lawm",
-            "VOTINGONPROPOSAL": "Xa daim ntawv pov npav tawm tswv yim",
-            "VOTEDONPROPOSAL": "Koj daim ntawv pov npav yuav raug suav thaum qhov kev lag luam tau lees paub lawm.",
             "PINGINGGOVERNOR": "Xa ping...",
             "PINGEDGOVERNOR": "Xa Ping tiav lawm. Koj tus Thawj Kav Tebchaws yuav raug hloov kho thaum qhov kev lag luam tau lees paub lawm",
+            "VOTINGONPROPOSAL": "Xa daim ntawv pov npav tawm tswv yim",
+            "VOTEDONPROPOSAL": "Koj daim ntawv pov npav yuav raug suav thaum qhov kev lag luam tau lees paub lawm.",
             "UNENROLLINGGOVERNOR": "Tshem Tawm Tus Thawj Kav Tebchaws...",
             "UNENROLLEDGOVERNOR": "Kev them nyiaj tau xa lawm. Koj tus Thawj Kav Tebchaws yuav raug rho tawm ntawm koj lub npe thaum qhov kev them nyiaj tau lees paub lawm.",
             "GOVERNORNOTMATURE": "Koj tus Thawj Kav Xeev tseem tsis tau loj hlob txaus los ua qhov kev nqis tes ua no"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Yuav Metrix",
+                "SEARCH": "Keeb kwm"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Koj Xa",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Keeb Kwm Kev Ua Lag Luam",
                 "SEARCHBUTTON": "NRHIAV",
+                "SEARCHPLACEHOLDER": "Sau MRX lossis BTC chaw nyob",
                 "TRANSACTIONDATE": "Hnub Tim",
                 "TRANSACTIONTYPE": "TX Hom",
                 "TRANSACTIONAMOUNT": "Tus nqi",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Tau lees paub lawm",
                 "TRANSACTIONNOTCONFIRMED": "Tsis tau lees paub",
                 "TRANSACTIONREFUNDED": "Tau nyiaj rov qab - Qis dua qhov tsawg kawg nkaus",
-                "AVGSWAPPRICE": "Tus nqi pauv nruab nrab",
-                "SEARCHPLACEHOLDER": "Sau MRX lossis BTC chaw nyob"
+                "AVGSWAPPRICE": "Tus nqi pauv nruab nrab"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Tsim Chaw Nyob Sib Hloov...",
             "ALREADYHAVEADDRESS": "Koj twb muaj chaw nyob BTC cuam tshuam nrog chaw nyob Metrix no lawm",
             "NOADDRESS": "Koj tsis tau sau qhov chaw nyob Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Yuav Metrix",
-                "SEARCH": "Keeb kwm"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Tshem Tawm Qhov Ntxub",
                 "EMPTYTITLE": "Tsis tau pom cov cim qhia tseem",
                 "EMPTYDETAIL": "Altitude yuav xyuas tus block explorer seb puas muaj MRC20 thiab MRC721 tokens xa mus rau koj qhov chaw nyob, ces mam li xyuas txhua yam uas nyob rau hauv koj tus node. Koj kuj tseem tuaj yeem ntxiv ib lub token manually yog tias koj paub nws qhov chaw nyob.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kev kuaj xyuas cov token tsis siv neeg raug kaw, yog li koj cov chaw nyob tsis raug kuaj xyuas cov tokens. Tig rov qab rau saum toj no, lossis ntxiv ib lub token manually yog tias koj paub nws qhov chaw nyob hauv daim ntawv cog lus.",
                 "HIDDENTITLE": "Cov Cim Qhia Zais Cia",
                 "CONTEXTMENUHIDE": "Nkaum Daim Ntawv Cim",
                 "ITEMSSUFFIX": "yam khoom",
-                "NONENUMERABLETOOLTIP": "Cov khoom no tsis txhawb nqa kev teev cov khoom ib leeg - qhia tias koj tuav pes tsawg xwb."
+                "NONENUMERABLETOOLTIP": "Cov khoom no tsis txhawb nqa kev teev cov khoom ib leeg - qhia tias koj tuav pes tsawg xwb.",
+                "CHECKINGENABLED": "Tshawb xyuas",
+                "CHECKINGDISABLED": "Kev Tshawb Xyuas Tawm",
+                "CHECKINGENABLEDTOOLTIP": "Kev kuaj xyuas Token qhib lawm - Altitude kuaj xyuas koj cov chaw nyob rau cov tokens thiab hloov kho cov nyiaj tshuav. Nyem kom kaw.",
+                "CHECKINGDISABLEDTOOLTIP": "Kev kuaj xyuas daim ntawv cim raug kaw - nyem kom rov qhib dua.",
+                "CHECKINGDISABLEDNOTICE": "Kev kuaj xyuas cov token tsis siv neeg raug kaw. Koj cov chaw nyob tsis raug luam theej rau cov tokens thiab cov nyiaj tshuav yuav tsis hloov kho tshiab. Koj tseem tuaj yeem ntxiv ib lub token ntawm tes."
             },
             "ADDTOKEN": {
                 "TITLE": "Ntxiv Daim Ntawv Cim",

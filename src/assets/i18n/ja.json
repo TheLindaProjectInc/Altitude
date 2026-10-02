@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "アカウントを作成する",
             "HIDEEMPTYACCOUNTS": "名前のない空のアカウントを非表示にする"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "概要",
+            "TRANSACTIONSTAB": "取引",
+            "ADDRESSTABS": "住所"
+        },
         "SEND": {
             "ADDRECIPIENT": "受信者を追加",
             "SEND": "送信",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "日付",
             "TABLECOLUMNS_CONFIRMS": "確認",
             "ALL_SELECTUNSELECT": "すべて切り替える",
+            "TREEMODE": "ツリーモード",
+            "LISTMODE": "リストモード",
             "SENDAVAILABLE": "利用可能な残高を使用する",
             "INPUTLOCKED": "入力欄はロックされています。使用するにはロックを解除する必要があります。",
             "CONTEXTMENULOCKINPUT": "ロック入力",
@@ -38,10 +45,48 @@
             "AFTERFEE": "追加料金",
             "QUANTITY": "量",
             "BYTES": "バイト",
-            "TREEMODE": "ツリーモード",
-            "LISTMODE": "リストモード",
             "ALERTFEECHANGETITLE": "料金変更",
             "ALERTFEECHANGECONTENT": "実際の取引手数料は予想よりも高くなっています。新しい手数料をご確認ください。"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "契約書を作成する",
+            "INFO": "コンパイル済みのバイトコードを送信することで、スマートコントラクトをネットワークにデプロイします。これはコアチェーン機能です。デプロイ前にバイトコードとガス設定を必ず確認してください。デプロイは取り消せません。",
+            "FROM": "から",
+            "BYTECODE": "バイトコード",
+            "BYTECODEPLACEHOLDER": "コンパイル済みの契約バイトコード（16進数）を貼り付けてください。",
+            "INVALIDBYTECODE": "バイトコードは、偶数文字の有効な16進数文字列（0～9、a～f）である必要があります。",
+            "GASLIMIT": "ガス制限",
+            "GASLIMITRANGE": "範囲",
+            "GASPRICE": "ガス価格（ガス1単位あたりのMRX）",
+            "GASPRICEMIN": "最小",
+            "ESTIMATEDMAXCOST": "推定最大費用",
+            "DEPLOYBUTTON": "契約の展開",
+            "INCOMPLETEFORM": "送信元アドレスを選択し、有効なバイトコードを入力し、有効なガス制限/価格を設定してください。",
+            "HIGHGASPRICETITLE": "ガソリン価格高騰",
+            "HIGHGASPRICEINFO": "設定されたガス料金が異常に高いです。この展開には最大で以下の費用がかかる可能性があります。",
+            "DEPLOYING": "契約をデプロイしています...",
+            "DEPLOYED": "契約展開が提出されました",
+            "RESULTTITLE": "展開結果",
+            "STATUS": "状態",
+            "STATUSPENDING": "確認待ちです…",
+            "STATUSCONFIRMED": "正常にデプロイされました",
+            "STATUSFAILED": "デプロイに失敗しました",
+            "TXID": "取引ID",
+            "SENDER": "送信者",
+            "CONTRACTADDRESS": "連絡先住所",
+            "GASUSED": "ガス使用量",
+            "DONEBUTTON": "終わり",
+            "DEPLOYANOTHERBUTTON": "別のものをデプロイする"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "取引",
+            "COPYBLOCKHASH": "ブロックハッシュをコピー",
+            "COPYTXID": "トランザクションIDをコピー",
+            "COPYACCOUNT": "アカウント名をコピー",
+            "COPYADDRESS": "住所をコピーする",
+            "COPYAMOUNT": "コピー金額",
+            "COPTBLOCKINDEX": "ブロックインデックスをコピー",
+            "EXPLORER": "ブロックエクスプローラーで開く"
         },
         "STAKING": {
             "UNLOCK": "ステーキングのロックを解除する",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "住所",
             "ENABLED": "有効",
-            "STARTBUTTON": "地元から始めよう",
-            "STARTALIASBUTTON": "エイリアスを開始",
-            "STARTALLBUTTON": "すべて開始",
             "NOMASTERNODES": "マスターノードがありません",
             "NOMNOUTPUTS": "マスターノードの出力が見つかりませんでした。ローカルマスターノードを実行するには、マスターノードアドレスに正確に250万、2500万、5000万、または1億コインを送信し、15回の承認をお待ちください。",
+            "STARTBUTTON": "地元から始めよう",
             "STOPBUTTON": "ストップローカル",
+            "STARTALIASBUTTON": "エイリアスを開始",
             "STOPALIASBUTTON": "エイリアスを停止",
+            "STARTALLBUTTON": "すべて開始",
             "ADDREMOTE": "リモートマスターノードを追加する",
             "REMOVEMN": "マスターノードを削除する",
             "ADDLOCAL": "ローカルマスターノードの設定",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "一般的な",
                 "COREVERSION": "コアバージョン",
+                "ALTITUDEVERSION": "高度バージョン",
                 "PROTOCOLVERSION": "プロトコルバージョン",
                 "WALLETVERSION": "Wallet.dat バージョン",
                 "NETWORKTITLE": "ネットワーク",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "マスターノードの数",
                 "BLOCKCHAINTITLE": "ブロックチェーン",
                 "NUMBERBLOCKS": "現在のブロック数",
-                "BESTBLOCKTTIME": "最終ブロック時間",
-                "ALTITUDEVERSION": "高度バージョン"
+                "BESTBLOCKTTIME": "最終ブロック時間"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPCコンソールへようこそ。利用可能なコマンドの概要については、「help」と入力してください。",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "言語を選択"
         },
-        "TRANSACTIONS": {
-            "TITLE": "取引",
-            "COPYBLOCKHASH": "ブロックハッシュをコピー",
-            "COPYTXID": "トランザクションIDをコピー",
-            "COPYACCOUNT": "アカウント名をコピー",
-            "COPYADDRESS": "住所をコピーする",
-            "COPYAMOUNT": "コピー金額",
-            "COPTBLOCKINDEX": "ブロックインデックスをコピー",
-            "EXPLORER": "ブロックエクスプローラーで開く"
+        "CURRENCY": {
+            "TITLE": "表示通貨を選択してください"
         },
         "EXPLORER": {
             "TITLE": "ブロックエクスプローラー",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "ネットワーク",
             "WINDOTAB": "ウィンドウ",
+            "BACKUPTAB": "バックアップ",
+            "EXPLORERTAB": "エクスプローラ",
+            "DEVELOPERTAB": "開発者",
             "NETWORK": {
                 "PROXY": "SOCKS5プロキシ経由で接続します",
                 "PROXYIP": "プロキシIP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "閉じるときに最小化",
                 "BEHAVIOURTITLE": "システムトレイとウィンドウの動作"
             },
-            "BACKUPTAB": "バックアップ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "自動バックアップ",
                 "ENABLED": "wallet.datをスケジュールに基づいて自動的にバックアップする",
                 "ENABLEDINFO": "ウォレットファイルの最新バックアップを定期的に作成するため、万が一問題が発生した場合でも、常に最新のコピーを利用できます。",
+                "INTERVALLABEL": "（日）ごとにバックアップしてください",
                 "LASTBACKUP": "最終バックアップ:",
                 "NEVERBACKEDUP": "自動バックアップはまだ実行されていません。",
                 "BACKUPNOWBUTTON": "今すぐバックアップ",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "初期設定に戻す",
                 "PRUNETITLE": "バックアップ履歴",
                 "PRUNEINFO": "古い自動バックアップは削除されるため、このフォルダは際限なく肥大化せず、最新のものだけが保持されます。",
-                "KEEPCOUNTLABEL": "最後",
-                "INTERVALLABEL": "（日）ごとにバックアップしてください"
+                "KEEPCOUNTLABEL": "最後"
             },
-            "EXPLORERTAB": "エクスプローラ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ブロックエクスプローラー",
                 "BLOCKEXPLORERINFO": "ブロックエクスプローラーでトランザクションを表示したとき（例：トランザクションを右クリックして「エクスプローラーで表示」を選択）に、サイトが開きました。",
@@ -259,25 +298,31 @@
                 "MAINNET": "メインネット",
                 "TESTNET": "テストネット",
                 "REGTEST": "再テスト"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "開発者モード",
+                "DEVMODEINFO": "デフォルトでは無効になっており、開発者専用です。これを有効にすると、RPC接続をオーバーライドするオプションが表示されます。一般ユーザーは無効のままにしておくことをお勧めします。",
+                "DEVMODELABEL": "開発者モードを有効にする",
+                "WARNING": "これらの設定は開発目的のみに使用してください。変更するとウォレットがデーモンに接続できなくなる可能性があります。変更内容を理解している場合のみ使用してください。",
+                "RPCHOSTTITLE": "RPC接続",
+                "RPCHOSTINFO": "デフォルトでは、Altitude はこのマシン (127.0.0.1) 上で自身が管理するデーモンに接続します。これらの設定を上書きすることで、別のデーモン (例えば、ローカルで regtest インスタンスを実行することなく、リモートの regtest インスタンス) に接続できます。接続が成功した場合、Altitude は自身のローカル デーモンをダウンロードしたり起動したりしません。接続先のデーモンの rpcallowip がこの接続を許可している必要があり、以下の rpcuser/rpcpassword がその設定と一致している必要があります。設定は即座に有効になり、再起動は不要です。",
+                "RPCHOSTLABEL": "RPCホスト",
+                "RPCPORTLABEL": "RPCポート",
+                "RPCUSERLABEL": "RPCユーザー名",
+                "RPCPASSWORDLABEL": "RPCパスワード"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "概要",
-            "TRANSACTIONSTAB": "取引",
-            "ADDRESSTABS": "住所"
-        },
-        "CURRENCY": {
-            "TITLE": "表示通貨を選択してください"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ダッシュボード",
             "SEND": "送信",
+            "CREATECONTRACT": "契約書を作成する",
             "RECEIVE": "受け取る",
             "TRANSACTIONS": "取引",
             "STAKING": "ステーキング",
             "MASTERNODES": "マスターノード",
+            "EXPLORER": "ブロックエクスプローラー",
             "SYNC": {
                 "CONNECTING": "接続中",
                 "NOBLOCKS": "ブロックを待機中",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ウォレットは現在ステーキングに対応していません",
                 "MASTERNODEON": "マスターノードは現在稼働中です",
                 "MASTERNODEOFF": "マスターノードは現在実行されていません"
-            },
-            "EXPLORER": "ブロックエクスプローラー"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "web3サイトのアドレスを入力してください",
+            "GOBUTTON": "行く",
+            "QUICKLAUNCH": "クイック起動",
+            "DEVTOOLS": "開発者ツールを開く",
+            "ADDLINK": "リンクを追加",
+            "LINKNAMEPLACEHOLDER": "名前",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "保存",
+            "CANCEL": "キャンセル",
+            "REMOVE": "取り除く",
+            "REMOVECONFIRM": "このクイックリンクを削除しますか？",
+            "LINKEXISTS": "そのリンクは既にクイック起動リストに登録されています",
+            "LINKINVALID": "有効なサイトアドレスを入力してください",
+            "LINKNETWORKLABEL": "ネットワーク",
+            "LOADFAILED": "サイトの読み込みに失敗しました",
+            "SECURESITE": "接続は安全です - 有効なSSL証明書",
+            "INSECURESITE": "接続が安全ではありません",
+            "INVALIDCERTSITE": "接続がプライベートではありません - SSL証明書が無効または信頼できません"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ウォレットのパスフレーズを入力してください",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Coreのアップデートが利用可能です。今すぐインストールしますか？",
             "WALLETUPDATETITLE": "高度情報更新が利用可能です",
             "WALLETUPDATEINFO": "Altitudeのアップデートが利用可能です。今すぐダウンロードしますか？",
+            "WALLETUPDATEREADYTITLE": "高度更新準備完了",
+            "WALLETUPDATEREADYINFO": "アップデートのダウンロードが完了しました。インストールするには、Altitudeを再起動してください。",
+            "WALLETUPDATERESTARTBUTTON": "再起動してインストール",
+            "WALLETUPDATELATERBUTTON": "後で",
             "CLIENTUPDATEBUTTON": "アップデート",
             "CLIENTUPDATECANCELBUTTON": "アップデートしないでください",
             "CLIENTUPDATESKIPBUTTON": "このアップデートをスキップする",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "以前に作成したウォレットファイルのバックアップは、新しく生成された暗号化ウォレットファイルに置き換えてください。セキュリティ上の理由から、暗号化されていないウォレットファイルの以前のバックアップは、新しい暗号化ウォレットの使用を開始するとすぐに無効になります。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Coreが予期せず停止しました",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coreに問題が発生し、プロセスが終了しました。debug.logファイルを確認して、問題がないか調べることをお勧めします。",
+            "CLIENTUNKNOWNERRORTITLE": "マトリックスコア通信エラー",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Coreとの通信に問題が発生しました。debug.logファイルを確認して、問題がないか調べることをお勧めします。",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Coreのブートストラップに失敗しました",
+            "BOOTSTRAPFAILEDINFO": "Metrix Coreのブートストラップ中に問題が発生しました。Altitudeのログファイルを確認して、問題がないか調べることをお勧めします。",
+            "BOOTSTRAPOFFERTITLE": "財布がかなり時代遅れ",
+            "BOOTSTRAPOFFERINFO": "最新のブートストラップが利用可能になり、Metrix Coreを迅速に最新の状態にすることができます。通常の同期を続行する場合は、ウォレットが見逃したすべてのブロックをダウンロードして検証する必要があるため、完了までに数日かかる場合があります。",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrapをダウンロード",
+            "BOOTSTRAPOFFERCANCEL": "通常同期を続行",
+            "BOOTSTRAPSPACEINFO": "ブートストラップをダウンロードして展開するためのディスク空き容量が不足しています。必要容量：{required}、利用可能容量：{free}。空き容量を確保してからもう一度お試しください。",
+            "STARTUPFAILEDTITLE": "Metrix Coreの起動に失敗しました",
+            "STARTUPFAILEDINFO": "Metrix Coreの起動中にエラーが発生しました。Altitudeのログファイルを確認して、問題がないか調べることをお勧めします。",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "復旧ツール",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf の設定が無効です",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ファイルに無効なマスターノード設定が含まれているため、Metrix Core が即座に終了します。このファイルを確認してください。",
             "ADDREMOTEMNTITLE": "リモートマスターノードを追加する",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "マスターノードの秘密鍵",
             "ADDREMOTEMNTXHASH": "マスターノード Trx ハッシュ",
             "ADDREMOTEMNTXINDEX": "マスターノード Trx インデックス",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Coreのブートストラップに失敗しました",
-            "BOOTSTRAPFAILEDINFO": "Metrix Coreのブートストラップ中に問題が発生しました。Altitudeのログファイルを確認して、問題がないか調べることをお勧めします。",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "復旧ツール",
-            "STARTUPFAILEDTITLE": "Metrix Coreの起動に失敗しました",
-            "STARTUPFAILEDINFO": "Metrix Coreの起動中にエラーが発生しました。Altitudeのログファイルを確認して、問題がないか調べることをお勧めします。",
-            "CLIENTUNKNOWNERRORTITLE": "マトリックスコア通信エラー",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Coreとの通信に問題が発生しました。debug.logファイルを確認して、問題がないか調べることをお勧めします。",
             "UNENROLLGOVERNORTITLE": "知事の登録解除を確認する",
             "UNENROLLGOVERNORCONTENT": "本当にガバナーの登録を解除しますか？登録を解除すると、チェーンガバナンスに関する投票に参加できなくなります。",
-            "WALLETUPDATEREADYTITLE": "高度更新準備完了",
-            "WALLETUPDATEREADYINFO": "アップデートのダウンロードが完了しました。インストールするには、Altitudeを再起動してください。",
-            "WALLETUPDATERESTARTBUTTON": "再起動してインストール",
-            "WALLETUPDATELATERBUTTON": "後で",
             "DAPPCONNECTTITLE": "サイトに接続",
             "DAPPCONNECTINFO": "このサイトは、あなたのウォレットに接続して、アドレスと残高を確認しようとしています。",
             "DAPPCONNECTBUTTON": "接続する",
+            "DAPPCONNECTADDRESSLABEL": "住所",
+            "DAPPAPPROVEBUTTON": "承認する",
             "DAPPREJECTBUTTON": "拒否する",
             "DAPPSENDTITLE": "契約取引リクエスト",
             "DAPPSENDINFO": "このサイトは、あなたのウォレットから契約取引を送信することを要求しています。",
-            "DAPPSIGNTITLE": "署名メッセージリクエスト",
-            "DAPPSIGNINFO": "このサイトは、ウォレットアドレスを使用してメッセージに署名することを求めています。",
-            "DAPPNOTREADY": "まだサイトに接続できません - Metrix Coreが起動中です。",
-            "DAPPNOWALLET": "サイトに接続できません - ウォレットアドレスが利用できません。",
-            "DAPPAPPROVEBUTTON": "承認する",
-            "DAPPCONNECTADDRESSLABEL": "住所",
             "DAPPSENDSITELABEL": "サイト",
             "DAPPSENDCONTRACTLABEL": "連絡先住所",
             "DAPPSENDAMOUNTLABEL": "額",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "最大ネットワーク料金",
             "DAPPSENDMAXTOTALLABEL": "最大合計",
             "DAPPSENDDATALABEL": "契約データ",
+            "DAPPSIGNTITLE": "署名メッセージリクエスト",
+            "DAPPSIGNINFO": "このサイトは、ウォレットアドレスを使用してメッセージに署名することを求めています。",
             "DAPPSIGNMESSAGELABEL": "メッセージ",
-            "BOOTSTRAPOFFERTITLE": "財布がかなり時代遅れ",
-            "BOOTSTRAPOFFERINFO": "最新のブートストラップが利用可能になり、Metrix Coreを迅速に最新の状態にすることができます。通常の同期を続行する場合は、ウォレットが見逃したすべてのブロックをダウンロードして検証する必要があるため、完了までに数日かかる場合があります。",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrapをダウンロード",
-            "BOOTSTRAPOFFERCANCEL": "通常同期を続行",
-            "BOOTSTRAPSPACEINFO": "ブートストラップをダウンロードして展開するためのディスク空き容量が不足しています。必要容量：{required}、利用可能容量：{free}。空き容量を確保してからもう一度お試しください。"
+            "DAPPNOTREADY": "まだサイトに接続できません - Metrix Coreが起動中です。",
+            "DAPPNOWALLET": "サイトに接続できません - ウォレットアドレスが利用できません。"
         },
         "ADDRESSBOOK": {
             "TITLE": "アドレス帳",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "現在のネットワーク"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "web3サイトのアドレスを入力してください",
-            "GOBUTTON": "行く",
-            "QUICKLAUNCH": "クイック起動",
-            "DEVTOOLS": "開発者ツールを開く",
-            "ADDLINK": "リンクを追加",
-            "LINKNAMEPLACEHOLDER": "名前",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "保存",
-            "CANCEL": "キャンセル",
-            "REMOVE": "取り除く",
-            "REMOVECONFIRM": "このクイックリンクを削除しますか？",
-            "LINKEXISTS": "そのリンクは既にクイック起動リストに登録されています",
-            "LINKINVALID": "有効なサイトアドレスを入力してください",
-            "LINKNETWORKLABEL": "ネットワーク",
-            "LOADFAILED": "サイトの読み込みに失敗しました",
-            "SECURESITE": "接続は安全です - 有効なSSL証明書",
-            "INSECURESITE": "接続が安全ではありません",
-            "INVALIDCERTSITE": "接続がプライベートではありません - SSL証明書が無効または信頼できません"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "バックアップウォレット...",
             "SIGNMESSAGE": "メッセージに署名する...",
             "VERIFYMESSAGE": "メッセージを確認中...",
-            "LOCALE": "言語...",
-            "RESTARTCORE": "Metrix Coreを再起動してください。",
-            "EXIT": "出口",
             "OPTIONS": "オプション...",
+            "LOCALE": "言語...",
             "CURRENCIES": "通貨を表示...",
-            "ALTITUDEREFRESH": "高度データを更新する"
+            "RESTARTCORE": "Metrix Coreを再起動してください。",
+            "ALTITUDEREFRESH": "高度データを更新する",
+            "EXIT": "出口"
         },
         "ENCRYPT": {
             "TITLE": "暗号化",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "合計残高",
+        "SPENDABLEBALANCE": "使用可能な残高",
+        "PENDINGBALANCE": "未払い残高",
         "CANCELBUTTON": "キャンセル",
         "DONEBUTTON": "終わり",
         "OKBUTTON": "わかりました",
+        "ACCEPTBUTTON": "受け入れる",
         "CLEARALLBUTTON": "すべてクリア",
         "ENTERACCOUNTLABEL": "この住所のラベルを入力してください",
         "ENTERADDRESSLABEL": "Metrixアドレスを入力してください",
@@ -464,11 +511,8 @@
         "SORTBY": "並べ替え",
         "SEARCH": "検索",
         "FEE": "手数料",
-        "ACCEPTBUTTON": "受け入れる",
         "CONFIRMED": "確認済み",
         "UNCONFIRMED": "未確認",
-        "PENDINGBALANCE": "未払い残高",
-        "SPENDABLEBALANCE": "使用可能な残高",
         "SAVEBUTTON": "保存"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Coreを再起動しています...",
         "BOOTSTRAPPING": "Bootstrapをダウンロードしています...",
         "BOOTSTRAPEXTRACTING": "Bootstrapを抽出中...",
-        "TIMEREMAINING": "残り："
+        "TIMEREMAINING": "残り：",
+        "DEVRPCOVERRIDEACTIVE": "開発者向けRPC接続オーバーライドが設定されており（オプション > 開発者）、応答していません。これを解除して、ローカルデーモンに正常に再接続してください。",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPCオーバーライドをクリアして再接続"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新規アカウントが正常に作成されました",
         "ADDRESSCOPIEDCLIPBOARD": "アドレスがクリップボードにコピーされました",
+        "COPIEDCLIPBOARD": "クリップボードにコピーされました",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "取引がクリップボードにコピーされました",
         "EMPTYFIELDS": "すべての項目にご記入ください",
         "NOUPDATE": "更新情報はありません",
         "WALLETBACKEDUP": "ウォレットのバックアップに成功しました",
+        "WALLETBACKUPFAILED": "ウォレットの自動バックアップに失敗しました - バックアップ場所と利用可能なディスク容量を確認してください",
         "PASSPHRASEMISMATCH": "入力されたパスフレーズが一致しません",
         "CHECKINGUPDATE": "アップデートを確認中...",
         "CHECKINGUPDATEFAILED": "アップデートを確認できません。ネットワーク接続を確認してください。",
+        "WALLETUPDATEDOWNLOADING": "アップデートをダウンロードしています...",
         "SENDINGEXCEEDSBALANCE": "送金金額が選択した残高を超えています。",
         "MISSINGCHANGEADDRESS": "変更先住所を指定する必要があります",
         "MISSINGDESTINATIONADDRESS": "宛先住所を指定する必要があります",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "ウォレットを暗号化しています...",
         "CHANGINGPASSPHARASE": "パスフレーズを変更しています...",
         "STARTINGMASTERNODE": "マスターノードを起動しています...",
+        "STOPPINGMASTERNODE": "マスターノードを停止しています...",
         "SENDINGTRANSACTION": "トランザクションを送信しています...",
         "SIGNINGMESSAGE": "署名メッセージ...",
         "SIGNEDMESSAGE": "署名入りメッセージ",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "ウォレットのロックを解除しています...",
         "TRANSACTIONMISMATCH": "取引エラーが発生しました。もう一度お試しください。",
         "MINIMUMCONFIRMATIONS": "すべての入力内容は、支出前に少なくとも1回の確認が必要です。",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "取引がクリップボードにコピーされました",
-        "STOPPINGMASTERNODE": "マスターノードを停止しています...",
         "FAILEDTOWRITECONFIG": "metrix.conf ファイルへの書き込み中に問題が発生しました。ファイルが存在すること、および Altitude に書き込み権限があることを確認してください。",
         "NOPUBLICUP": "パブリックIPアドレスが見つかりませんでした。インターネット接続を確認し、Altitudeを再起動してください。",
         "CONFIGURINGLOCALMN": "ローカルマスターノードを設定中...",
         "REPORTINGISSUE": "診断情報を取得しています… この情報はクリップボードにコピーされます。",
-        "WALLETUPDATEDOWNLOADING": "アップデートをダウンロードしています...",
-        "WALLETBACKUPFAILED": "ウォレットの自動バックアップに失敗しました - バックアップ場所と利用可能なディスク容量を確認してください",
         "EXPLORERURLSAVED": "エクスプローラーのURLが保存されました",
         "EXPLORERURLRESET": "エクスプローラーのURLがデフォルトに戻りました",
         "EXPLORERURLINVALID": "これは有効なhttp(s) URLではありません",
-        "EXPLORERURLUNREACHABLE": "そのURLにアクセスできませんでした - 確認してもう一度お試しください。"
+        "EXPLORERURLUNREACHABLE": "そのURLにアクセスできませんでした - 確認してもう一度お試しください。",
+        "DEVRPCHOSTSAVED": "RPCホストが保存されました",
+        "DEVRPCHOSTRESET": "RPCホストがデフォルト（127.0.0.1）に戻りました"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "受け取ったコイン",
+        "NEWTRANSACTION_TITLE_STAKE": "株式を受領",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "マスターノード報酬を受け取りました"
     },
     "TIME": {
         "AFEWSECONDS": "数秒",
@@ -533,11 +587,6 @@
         "MONTHS": "数ヶ月",
         "AYEAR": "1年",
         "YEARS": "年"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "受け取ったコイン",
-        "NEWTRANSACTION_TITLE_STAKE": "株式を受領",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "マスターノード報酬を受け取りました"
     },
     "MONTH": {
         "JAN": "1月",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "ガバナーは、月次予算とブロックチェーンの変更に関する投票を行う責任を負います。ガバナーになるには、ガバナンス契約に適切な担保をロックする必要があります。",
                 "COLLATERAL": "必要な担保",
                 "ENROLL": "登録する",
+                "SELECTAGOVERNOR": "対象となる知事の住所を選択してください",
+                "GOVERNORNOTSELECTED": "対象となる住所は選択されませんでした。",
                 "CONFIRMENROLL": "あなたはこれからガバナーとして登録されます。これにより、必要な担保を含むトランザクションがガバナンスコントラクトに送信されます。登録はいつでも解除できます。",
                 "ISGOVERNORTITLE": "あなたは活動的な知事ですね！",
                 "ISGOVERNORDETAIL1": "知事は、月次予算案とブロックチェーンの変更案について投票する責任を負っている。",
                 "ISGOVERNORDETAIL2": "知事の地位を維持するには、30日ごとに少なくとも1回の投票に参加する必要があります。",
                 "ISGOVERNORDETAIL3": "投票対象がない場合は、アクティブなpingを送信することで手動で登録手続きを続行できます。",
+                "MYGOVERNORADDRESS": "知事演説",
                 "UNENROLL": "登録解除",
                 "PING": "アクティブピングを送信",
                 "LASTPINGTITLE": "最後のピング",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "日",
                 "GOVERNORVOTEMATURITYHOURS": "営業時間",
                 "GOVERNORVOTEMATURITYSUFFIX": "成熟するまで",
-                "MYGOVERNORADDRESS": "知事演説",
-                "SELECTAGOVERNOR": "対象となる知事の住所を選択してください",
-                "GOVERNORNOTSELECTED": "対象となる住所は選択されませんでした。",
                 "NOTFULLYSYNCEDTITLE": "知事のステータスは不明です",
                 "NOTFULLYSYNCEDDETAIL": "ブロックチェーンが完全に同期されると、ガバナー登録状況が表示されるようになります。",
                 "DGPMIGRATIONTITLE": "DGP移行",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "提案書が正常に作成されました",
             "ENROLLINGGOVERNOR": "知事として登録する…",
             "ENROLLEDGOVERNOR": "お取引が確認され次第、登録手続きは完了となります。",
-            "VOTINGONPROPOSAL": "提案投票を送信",
-            "VOTEDONPROPOSAL": "取引が確認され次第、あなたの投票は集計されます。",
             "PINGINGGOVERNOR": "pingを送信しています...",
             "PINGEDGOVERNOR": "Pingが正常に送信されました。取引が確認され次第、ガバナーが更新されます。",
+            "VOTINGONPROPOSAL": "提案投票を送信",
+            "VOTEDONPROPOSAL": "取引が確認され次第、あなたの投票は集計されます。",
             "UNENROLLINGGOVERNOR": "知事の登録解除…",
             "UNENROLLEDGOVERNOR": "取引が送信されました。取引が確認され次第、ガバナーの登録は解除されます。",
             "GOVERNORNOTMATURE": "あなたの知事はまだこの行動を実行するのに十分な成熟度を備えていません"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrixを購入する",
+                "SEARCH": "歴史"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "送信",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "取引履歴",
                 "SEARCHBUTTON": "検索",
+                "SEARCHPLACEHOLDER": "MRXまたはBTCアドレスを入力してください",
                 "TRANSACTIONDATE": "日付",
                 "TRANSACTIONTYPE": "TXタイプ",
                 "TRANSACTIONAMOUNT": "額",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "確認済み",
                 "TRANSACTIONNOTCONFIRMED": "未確認",
                 "TRANSACTIONREFUNDED": "返金済み - 最低金額を下回る",
-                "AVGSWAPPRICE": "平均スワップ価格",
-                "SEARCHPLACEHOLDER": "MRXまたはBTCアドレスを入力してください"
+                "AVGSWAPPRICE": "平均スワップ価格"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "スワップアドレスを生成しています...",
             "ALREADYHAVEADDRESS": "このMetrixアドレスには既にBTCアドレスが関連付けられています。",
             "NOADDRESS": "Metrixアドレスを入力しませんでした"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrixを購入する",
-                "SEARCH": "歴史"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "非表示を解除",
                 "EMPTYTITLE": "トークンはまだ見つかりません",
                 "EMPTYDETAIL": "Altitudeは、ブロックエクスプローラーを使用して、あなたのアドレスに送信されたMRC20およびMRC721トークンを自動的にチェックし、その後、あなたのノードに対してリアルタイムで検証を行います。コントラクトアドレスがわかっている場合は、トークンを手動で追加することもできます。",
+                "EMPTYDETAILCHECKINGDISABLED": "トークンの自動チェックが無効になっているため、アドレスにトークンが存在するかどうかはチェックされません。上記で有効にするか、コントラクトアドレスがわかっている場合はトークンを手動で追加してください。",
                 "HIDDENTITLE": "隠しトークン",
                 "CONTEXTMENUHIDE": "トークンを非表示にする",
                 "ITEMSSUFFIX": "商品",
-                "NONENUMERABLETOOLTIP": "このコレクションでは個々のアイテムを一覧表示することはできません。代わりに、所持しているアイテムの数を表示します。"
+                "NONENUMERABLETOOLTIP": "このコレクションでは個々のアイテムを一覧表示することはできません。代わりに、所持しているアイテムの数を表示します。",
+                "CHECKINGENABLED": "確認中",
+                "CHECKINGDISABLED": "チェックオフ",
+                "CHECKINGENABLEDTOOLTIP": "トークンチェックが有効になっています。Altitudeは定期的にアドレスをチェックしてトークンを確認し、残高を更新します。クリックして無効にしてください。",
+                "CHECKINGDISABLEDTOOLTIP": "トークンチェックは無効になっています。クリックして有効に戻してください。",
+                "CHECKINGDISABLEDNOTICE": "トークンの自動チェックは無効になっています。お客様のアドレスはトークンのスキャン対象ではなく、残高も更新されません。トークンは手動で追加できます。"
             },
             "ADDTOKEN": {
                 "TITLE": "トークンを追加",

@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Creà un contu",
             "HIDEEMPTYACCOUNTS": "Ammuccià i conti vioti senza nome"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Panoramica",
+            "TRANSACTIONSTAB": "Transazzioni",
+            "ADDRESSTABS": "Indirizzi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Aghjunghje un destinatariu",
             "SEND": "Mandà",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Cunferme",
             "ALL_SELECTUNSELECT": "Attivà/Disattivà Tuttu",
+            "TREEMODE": "Modu Arburu",
+            "LISTMODE": "Modu Lista",
             "SENDAVAILABLE": "Aduprà u saldo dispunibule",
             "INPUTLOCKED": "L'input hè bluccatu. Duverete sbloccallu per spendelu.",
             "CONTEXTMENULOCKINPUT": "Input di bloccu",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Dopu à a tarifa",
             "QUANTITY": "Quantità",
             "BYTES": "Byte",
-            "TREEMODE": "Modu Arburu",
-            "LISTMODE": "Modu Lista",
             "ALERTFEECHANGETITLE": "Cambiamentu di Tariffa",
             "ALERTFEECHANGECONTENT": "A tarifa di transazzione attuale hè più alta di quella prevista. Per piacè cunfirmate a nova tarifa:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Creà un cuntrattu",
+            "INFO": "Implementà un cuntrattu intelligente à a rete inviendu u so bytecode compilatu. Questa hè una funzione di catena principale - verificate duie volte u vostru bytecode è i paràmetri di gas prima di implementà, u implementazione ùn pò esse annullata.",
+            "FROM": "Da",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Incolla u bytecode di u cuntrattu compilatu (hex)",
+            "INVALIDBYTECODE": "U bytecode deve esse una stringa esadecimale valida (0-9, a-f) cù un numeru paru di caratteri",
+            "GASLIMIT": "Limite di gasu",
+            "GASLIMITRANGE": "Gamma",
+            "GASPRICE": "Prezzu di u gasu (MRX per unità di gasu)",
+            "GASPRICEMIN": "Minimu",
+            "ESTIMATEDMAXCOST": "Costu massimu stimatu",
+            "DEPLOYBUTTON": "Implementà u cuntrattu",
+            "INCOMPLETEFORM": "Per piacè selezziunate un indirizzu di mittente, inserite un bytecode validu è impostate un limite / prezzu di benzina validu.",
+            "HIGHGASPRICETITLE": "Prezzu altu di u gasu",
+            "HIGHGASPRICEINFO": "U prezzu di a benzina chì avete stabilitu hè insolitamente altu. Questa implementazione puderia custà finu à:",
+            "DEPLOYING": "Implementazione di u cuntrattu...",
+            "DEPLOYED": "Implementazione di u cuntrattu sottumessa",
+            "RESULTTITLE": "Risultatu di u spiegamentu",
+            "STATUS": "Statutu",
+            "STATUSPENDING": "Aspettendu cunferma...",
+            "STATUSCONFIRMED": "Implementatu cù successu",
+            "STATUSFAILED": "U dispiegamentu hà fiascatu",
+            "TXID": "ID di transazzione",
+            "SENDER": "Mittente",
+            "CONTRACTADDRESS": "Indirizzu di u cuntrattu",
+            "GASUSED": "Gasu adupratu",
+            "DONEBUTTON": "Fattu",
+            "DEPLOYANOTHERBUTTON": "Implementà un altru"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transazzioni",
+            "COPYBLOCKHASH": "Copia u Hash di Bloccu",
+            "COPYTXID": "Cupià l'ID di a transazzione",
+            "COPYACCOUNT": "Cupià u nome di u contu",
+            "COPYADDRESS": "Cupià l'indirizzu",
+            "COPYAMOUNT": "Quantità di copia",
+            "COPTBLOCKINDEX": "Copia l'indice di u bloccu",
+            "EXPLORER": "Apri in l'Esploratore di Blocchi"
         },
         "STAKING": {
             "UNLOCK": "Sblocca per u Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Indirizzu",
             "ENABLED": "Attivatu",
-            "STARTBUTTON": "Principià lucale",
-            "STARTALIASBUTTON": "Principià l'alias",
-            "STARTALLBUTTON": "Principià tuttu",
             "NOMASTERNODES": "Ùn avete micca masternode",
             "NOMNOUTPUTS": "Nisuna surtita di Masternode hè stata trovata. Per eseguisce un Masternode lucale, mandate esattamente 2, 5, 25, 50 o 100 milioni di muniti à u vostru indirizzu Masternode è aspettate 15 cunferme.",
+            "STARTBUTTON": "Principià lucale",
             "STOPBUTTON": "Ferma lucale",
+            "STARTALIASBUTTON": "Principià l'alias",
             "STOPALIASBUTTON": "Ferma Alias",
+            "STARTALLBUTTON": "Principià tuttu",
             "ADDREMOTE": "Aghjunghje un Masternode Remotu",
             "REMOVEMN": "Eliminà u Masternode",
             "ADDLOCAL": "Cunfigurà u Masternode Locale",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Generale",
                 "COREVERSION": "Versione Core",
+                "ALTITUDEVERSION": "Versione d'altitudine",
                 "PROTOCOLVERSION": "Versione di u Protocolu",
                 "WALLETVERSION": "Versione Wallet.dat",
                 "NETWORKTITLE": "Rete",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numeru di Masternodes",
                 "BLOCKCHAINTITLE": "Catena di blocchi",
                 "NUMBERBLOCKS": "Numeru attuale di blocchi",
-                "BESTBLOCKTTIME": "Ultimu tempu di bloccu",
-                "ALTITUDEVERSION": "Versione d'altitudine"
+                "BESTBLOCKTTIME": "Ultimu tempu di bloccu"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Benvenuti à a cunsola RPC di Metrix Core. Scrivite aiutu per una panoramica di i cumandamenti dispunibili.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Selezziunate a lingua"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transazzioni",
-            "COPYBLOCKHASH": "Copia u Hash di Bloccu",
-            "COPYTXID": "Cupià l'ID di a transazzione",
-            "COPYACCOUNT": "Cupià u nome di u contu",
-            "COPYADDRESS": "Cupià l'indirizzu",
-            "COPYAMOUNT": "Quantità di copia",
-            "COPTBLOCKINDEX": "Copia l'indice di u bloccu",
-            "EXPLORER": "Apri in l'Esploratore di Blocchi"
+        "CURRENCY": {
+            "TITLE": "Selezziunate a valuta di visualizazione"
         },
         "EXPLORER": {
             "TITLE": "Esploratore di Blocchi",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Rete",
             "WINDOTAB": "Finestra",
+            "BACKUPTAB": "Copia di salvezza",
+            "EXPLORERTAB": "Esploratore",
+            "DEVELOPERTAB": "Sviluppatore",
             "NETWORK": {
                 "PROXY": "Cunnette vi per mezu di u proxy SOCKS5",
                 "PROXYIP": "IP di proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimizà à a chjusura",
                 "BEHAVIOURTITLE": "Cumportamentu di a Barra di Sistema è di a Finestra"
             },
-            "BACKUPTAB": "Copia di salvezza",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Copia di salvezza automatica",
                 "ENABLED": "Fate automaticamente una copia di salvezza di wallet.dat secondu un calendariu",
                 "ENABLEDINFO": "Crea una copia di salvezza fresca di u vostru schedariu di portafogliu secondu un calendariu, cusì una copia recente hè sempre dispunibile se qualcosa va male.",
+                "INTERVALLABEL": "Fate una copia di salvezza ogni (ghjorni)",
                 "LASTBACKUP": "Ultima copia di salvezza:",
                 "NEVERBACKEDUP": "Nisuna copia di salvezza automatica hè stata fatta ancu.",
                 "BACKUPNOWBUTTON": "Fate una copia di salvezza avà",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ripristinà à i valori predefiniti",
                 "PRUNETITLE": "Storia di salvezza",
                 "PRUNEINFO": "I backup automatichi più vechji sò sguassati per chì sta cartella ùn cresce micca per sempre - solu i più recenti quì sottu sò cunservati.",
-                "KEEPCOUNTLABEL": "Mantene l'ultimu",
-                "INTERVALLABEL": "Fate una copia di salvezza ogni (ghjorni)"
+                "KEEPCOUNTLABEL": "Mantene l'ultimu"
             },
-            "EXPLORERTAB": "Esploratore",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Esploratore di Blocchi",
                 "BLOCKEXPLORERINFO": "U situ s'hè apertu quandu si visualizzava una transazzione nantu à l'esploratore di blocchi (per esempiu, cliccate cù u dirittu nantu à una transazzione> Vede nantu à l'Esploratore).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Rete di prova",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modu Sviluppatore",
+                "DEVMODEINFO": "Disattivatu per difettu è destinatu solu à i sviluppatori. Attivallu rivela opzioni per sovrascrivere a cunnessione RPC - l'utilizatori standard devenu lascià questu disattivatu.",
+                "DEVMODELABEL": "Attivà a Modalità Sviluppatore",
+                "WARNING": "Queste impostazioni sò solu per scopi di sviluppu. Cambiarle pò impedisce à u portafogliu di cunnette si à un daemon - aduprate questu solu s'è sapete ciò chì state fà.",
+                "RPCHOSTTITLE": "Cunnessione RPC",
+                "RPCHOSTINFO": "Per difettu, Altitude si cunnetta à u daemon ch'ellu gestisce ellu stessu, nant'à sta macchina (127.0.0.1). A sovrascrizione di questi permette di cunnette si à un daemon differente - per esempiu una istanza di regtest remota, senza bisognu di eseguisce ne una lucalmente. Sè a cunnessione riesce, Altitude ùn scaricherà nè avvierà u so propiu daemon lucale. U rpcallowip di u daemon di destinazione deve permette sta cunnessione, è rpcuser/rpcpassword quì sottu deve currisponde à a so cunfigurazione. Hà effettu subitu, ùn hè necessariu alcun riavviu.",
+                "RPCHOSTLABEL": "Ospite RPC",
+                "RPCPORTLABEL": "Portu RPC",
+                "RPCUSERLABEL": "Nome d'utilizatore RPC",
+                "RPCPASSWORDLABEL": "Parolla d'accessu RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Panoramica",
-            "TRANSACTIONSTAB": "Transazzioni",
-            "ADDRESSTABS": "Indirizzi"
-        },
-        "CURRENCY": {
-            "TITLE": "Selezziunate a valuta di visualizazione"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Cruscottu",
             "SEND": "Mandà",
+            "CREATECONTRACT": "Creà un cuntrattu",
             "RECEIVE": "Riceve",
             "TRANSACTIONS": "Transazzioni",
             "STAKING": "Staking",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Esploratore di Blocchi",
             "SYNC": {
                 "CONNECTING": "Cunnessione",
                 "NOBLOCKS": "Aspittendu blocchi",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "U portafogliu ùn hè micca attualmente in staking",
                 "MASTERNODEON": "Masternode hè attualmente in esecuzione",
                 "MASTERNODEOFF": "U Masternode ùn hè micca attualmente in esecuzione"
-            },
-            "EXPLORER": "Esploratore di Blocchi"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Inserite un indirizzu di situ web3",
+            "GOBUTTON": "Andà",
+            "QUICKLAUNCH": "Lanciu rapidu",
+            "DEVTOOLS": "Apri Strumenti di Sviluppu",
+            "ADDLINK": "Aghjunghje un ligame",
+            "LINKNAMEPLACEHOLDER": "Nome",
+            "LINKURLPLACEHOLDER": "https://esempiu.com",
+            "SAVE": "Salvà",
+            "CANCEL": "Annulà",
+            "REMOVE": "Eliminà",
+            "REMOVECONFIRM": "Eliminate stu ligame rapidu?",
+            "LINKEXISTS": "Quellu ligame hè digià in a vostra lista di lanciu rapidu",
+            "LINKINVALID": "Inserite un indirizzu di situ validu",
+            "LINKNETWORKLABEL": "Rete",
+            "LOADFAILED": "Impossibile caricà u situ",
+            "SECURESITE": "A cunnessione hè sicura - certificatu SSL validu",
+            "INSECURESITE": "A cunnessione ùn hè micca sicura",
+            "INVALIDCERTSITE": "A cunnessione ùn hè micca privata - certificatu SSL invalidu o micca affidabile"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Inserite a vostra frase d'accessu per u portafogliu",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Un aghjurnamentu hè dispunibule per Metrix Core. Vulete installallu avà ?",
             "WALLETUPDATETITLE": "Aghjurnamentu di l'altitudine dispunibule",
             "WALLETUPDATEINFO": "Un aghjurnamentu hè dispunibule per Altitude. Vulete scaricallu avà?",
+            "WALLETUPDATEREADYTITLE": "Aghjurnamentu di l'altitudine prontu",
+            "WALLETUPDATEREADYINFO": "L'aghjurnamentu hè statu telecaricatu. Riavviate Altitude avà per installallu ?",
+            "WALLETUPDATERESTARTBUTTON": "Riavviate è installate",
+            "WALLETUPDATELATERBUTTON": "Più tardi",
             "CLIENTUPDATEBUTTON": "Aghjurnamentu",
             "CLIENTUPDATECANCELBUTTON": "Ùn aghjurnà micca",
             "CLIENTUPDATESKIPBUTTON": "Saltà questu aghjurnamentu",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ogni copia di salvezza precedente chì avete fattu di u vostru schedariu di portafogliu deve esse rimpiazzata cù u schedariu di portafogliu criptatu appena generatu. Per ragioni di sicurezza, e copie di salvezza precedenti di u schedariu di portafogliu micca criptatu diventeranu inutili appena cuminciate à aduprà u novu portafogliu criptatu.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core s'hè firmatu inaspettatamente",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ci hè statu un prublema cù Metrix Core chì hà causatu a so terminazione. Hè cunsigliatu di verificà u vostru schedariu debug.log per i prublemi.",
+            "CLIENTUNKNOWNERRORTITLE": "Errore di cumunicazione di u core di Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Ci hè statu un prublema di cumunicazione cù Metrix Core. Hè cunsigliatu di verificà u vostru schedariu debug.log per i prublemi.",
+            "BOOTSTRAPFAILEDTITLE": "Fallitu l'avviu di u core di Metrix",
+            "BOOTSTRAPFAILEDINFO": "Ci hè statu un prublema à l'avviu di Metrix Core. Hè cunsigliatu di verificà u vostru schedariu di log Altitude per i prublemi.",
+            "BOOTSTRAPOFFERTITLE": "Portafogliu significativamente obsoletu",
+            "BOOTSTRAPOFFERINFO": "Un bootstrap recente hè dispunibule chì pò aghjurnà rapidamente Metrix Core. Cuntinuà cù una sincronizazione nurmale pò piglià parechji ghjorni per compie, postu chì u vostru portafogliu hà bisognu di scaricà è verificà ogni bloccu chì hà mancatu.",
+            "BOOTSTRAPOFFERBUTTON": "Scaricà Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Cuntinuà a sincronizazione nurmale",
+            "BOOTSTRAPSPACEINFO": "Ùn ci hè abbastanza spaziu nant'à u discu per scaricà è estrarre u bootstrap. Obbligatoriu: {required}, Disponibile: {free}. Liberate un pocu di spaziu è pruvate torna.",
+            "STARTUPFAILEDTITLE": "L'avviu di Metrix Core hà fiascatu",
+            "STARTUPFAILEDINFO": "Ci hè statu un errore à l'iniziu di Metrix Core. Hè cunsigliatu di verificà u vostru schedariu di log Altitude per i prublemi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Strumenti di Recuperazione",
             "CLIENTINVALIDCONFIGTITLE": "Cunfigurazione metrix.conf invalida",
             "CLIENTINVALIDCONFIGINFO": "U vostru metrix.conf hà una cunfigurazione di masternode invalida chì farà chì Metrix Core si chjuda subitu. Per piacè verificate stu schedariu.",
             "ADDREMOTEMNTITLE": "Aghjunghje un Masternode Remotu",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Chjave Privata di u Masternode",
             "ADDREMOTEMNTXHASH": "Hash di Transazione di Masternode",
             "ADDREMOTEMNTXINDEX": "Indice di Transazione di Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Fallitu l'avviu di u core di Metrix",
-            "BOOTSTRAPFAILEDINFO": "Ci hè statu un prublema à l'avviu di Metrix Core. Hè cunsigliatu di verificà u vostru schedariu di log Altitude per i prublemi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Strumenti di Recuperazione",
-            "STARTUPFAILEDTITLE": "L'avviu di Metrix Core hà fiascatu",
-            "STARTUPFAILEDINFO": "Ci hè statu un errore à l'iniziu di Metrix Core. Hè cunsigliatu di verificà u vostru schedariu di log Altitude per i prublemi.",
-            "CLIENTUNKNOWNERRORTITLE": "Errore di cumunicazione di u core di Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Ci hè statu un prublema di cumunicazione cù Metrix Core. Hè cunsigliatu di verificà u vostru schedariu debug.log per i prublemi.",
             "UNENROLLGOVERNORTITLE": "Cunfirmà a disiscrizione di u guvernatore",
             "UNENROLLGOVERNORCONTENT": "Site sicuru di vulè annullà l'iscrizzione di u vostru Guvernatore ? Ùn puderete più vutà nantu à a guvernanza di a catena.",
-            "WALLETUPDATEREADYTITLE": "Aghjurnamentu di l'altitudine prontu",
-            "WALLETUPDATEREADYINFO": "L'aghjurnamentu hè statu telecaricatu. Riavviate Altitude avà per installallu ?",
-            "WALLETUPDATERESTARTBUTTON": "Riavviate è installate",
-            "WALLETUPDATELATERBUTTON": "Più tardi",
             "DAPPCONNECTTITLE": "Cunnette vi à u situ",
             "DAPPCONNECTINFO": "Stu situ vole cunnette si à u vostru portafogliu è vede u vostru indirizzu è u vostru saldo.",
             "DAPPCONNECTBUTTON": "Cunnette",
+            "DAPPCONNECTADDRESSLABEL": "Indirizzu",
+            "DAPPAPPROVEBUTTON": "Appruvà",
             "DAPPREJECTBUTTON": "Rifiutà",
             "DAPPSENDTITLE": "Richiesta di Transazione di Cuntrattu",
             "DAPPSENDINFO": "Stu situ dumanda di mandà una transazzione di cuntrattu da u vostru portafogliu.",
-            "DAPPSIGNTITLE": "Dumanda di Firma di Missaghju",
-            "DAPPSIGNINFO": "Stu situ dumanda di firmà un missaghju cù l'indirizzu di u vostru portafogliu.",
-            "DAPPNOTREADY": "Ùn possu ancu cunnette mi à u situ - Metrix Core hè sempre in corsu d'avviu.",
-            "DAPPNOWALLET": "Ùn si pò cunnette à u situ - ùn ci hè micca indirizzu di portafogliu dispunibule.",
-            "DAPPAPPROVEBUTTON": "Appruvà",
-            "DAPPCONNECTADDRESSLABEL": "Indirizzu",
             "DAPPSENDSITELABEL": "Situ",
             "DAPPSENDCONTRACTLABEL": "Indirizzu di u cuntrattu",
             "DAPPSENDAMOUNTLABEL": "Quantità",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tariffa di rete massima",
             "DAPPSENDMAXTOTALLABEL": "Tutale Massimu",
             "DAPPSENDDATALABEL": "Dati di u cuntrattu",
+            "DAPPSIGNTITLE": "Dumanda di Firma di Missaghju",
+            "DAPPSIGNINFO": "Stu situ dumanda di firmà un missaghju cù l'indirizzu di u vostru portafogliu.",
             "DAPPSIGNMESSAGELABEL": "Missaghju",
-            "BOOTSTRAPOFFERTITLE": "Portafogliu significativamente obsoletu",
-            "BOOTSTRAPOFFERINFO": "Un bootstrap recente hè dispunibule chì pò aghjurnà rapidamente Metrix Core. Cuntinuà cù una sincronizazione nurmale pò piglià parechji ghjorni per compie, postu chì u vostru portafogliu hà bisognu di scaricà è verificà ogni bloccu chì hà mancatu.",
-            "BOOTSTRAPOFFERBUTTON": "Scaricà Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Cuntinuà a sincronizazione nurmale",
-            "BOOTSTRAPSPACEINFO": "Ùn ci hè abbastanza spaziu nant'à u discu per scaricà è estrarre u bootstrap. Obbligatoriu: {required}, Disponibile: {free}. Liberate un pocu di spaziu è pruvate torna."
+            "DAPPNOTREADY": "Ùn possu ancu cunnette mi à u situ - Metrix Core hè sempre in corsu d'avviu.",
+            "DAPPNOWALLET": "Ùn si pò cunnette à u situ - ùn ci hè micca indirizzu di portafogliu dispunibule."
         },
         "ADDRESSBOOK": {
             "TITLE": "Libru d'indirizzi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rete attuale"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Inserite un indirizzu di situ web3",
-            "GOBUTTON": "Andà",
-            "QUICKLAUNCH": "Lanciu rapidu",
-            "DEVTOOLS": "Apri Strumenti di Sviluppu",
-            "ADDLINK": "Aghjunghje un ligame",
-            "LINKNAMEPLACEHOLDER": "Nome",
-            "LINKURLPLACEHOLDER": "https://esempiu.com",
-            "SAVE": "Salvà",
-            "CANCEL": "Annulà",
-            "REMOVE": "Eliminà",
-            "REMOVECONFIRM": "Eliminate stu ligame rapidu?",
-            "LINKEXISTS": "Quellu ligame hè digià in a vostra lista di lanciu rapidu",
-            "LINKINVALID": "Inserite un indirizzu di situ validu",
-            "LINKNETWORKLABEL": "Rete",
-            "LOADFAILED": "Impossibile caricà u situ",
-            "SECURESITE": "A cunnessione hè sicura - certificatu SSL validu",
-            "INSECURESITE": "A cunnessione ùn hè micca sicura",
-            "INVALIDCERTSITE": "A cunnessione ùn hè micca privata - certificatu SSL invalidu o micca affidabile"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Portafogliu di salvezza...",
             "SIGNMESSAGE": "Firmà u missaghju...",
             "VERIFYMESSAGE": "Verificà u missaghju...",
-            "LOCALE": "Lingua...",
-            "RESTARTCORE": "Riavviate Metrix Core",
-            "EXIT": "Surtita",
             "OPTIONS": "Opzioni...",
+            "LOCALE": "Lingua...",
             "CURRENCIES": "Mustrà a valuta...",
-            "ALTITUDEREFRESH": "Aggiorna i dati di l'altitudine"
+            "RESTARTCORE": "Riavviate Metrix Core",
+            "ALTITUDEREFRESH": "Aggiorna i dati di l'altitudine",
+            "EXIT": "Surtita"
         },
         "ENCRYPT": {
             "TITLE": "Crittografia",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Saldo tutale",
+        "SPENDABLEBALANCE": "Saldo spendibile",
+        "PENDINGBALANCE": "Saldo pendente",
         "CANCELBUTTON": "Annulà",
         "DONEBUTTON": "Fattu",
         "OKBUTTON": "Va bè",
+        "ACCEPTBUTTON": "Accetta",
         "CLEARALLBUTTON": "Sguassà tuttu",
         "ENTERACCOUNTLABEL": "Inserite un'etichetta per questu indirizzu",
         "ENTERADDRESSLABEL": "Inserite un indirizzu Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Ordinà per",
         "SEARCH": "Ricerca",
         "FEE": "Tariffa",
-        "ACCEPTBUTTON": "Accetta",
         "CONFIRMED": "Cunfirmatu",
         "UNCONFIRMED": "Micca cunfirmatu",
-        "PENDINGBALANCE": "Saldo pendente",
-        "SPENDABLEBALANCE": "Saldo spendibile",
         "SAVEBUTTON": "Salvà"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Riavviu di Metrix Core...",
         "BOOTSTRAPPING": "Scaricamentu di bootstrap...",
         "BOOTSTRAPEXTRACTING": "Estrazione di bootstrap...",
-        "TIMEREMAINING": "restante:"
+        "TIMEREMAINING": "restante:",
+        "DEVRPCOVERRIDEACTIVE": "Una override di cunnessione RPC di sviluppatore hè stata impostata (Opzioni > Sviluppatore) è ùn risponde micca. Sguassate la per ricunnettevi nurmalmente à u daemon lucale.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Sguassà a Sostituzione RPC è a Riconnessione"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Novu contu creatu cù successu",
         "ADDRESSCOPIEDCLIPBOARD": "Indirizzu copiatu in u clipboard",
+        "COPIEDCLIPBOARD": "Copiatu in u clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transazzioni copiate in u clipboard",
         "EMPTYFIELDS": "Per piacè, cumpletate tutti i campi",
         "NOUPDATE": "Nisuna aghjurnazione dispunibile",
         "WALLETBACKEDUP": "Copia di salvezza di u portafogliu riesciuta",
+        "WALLETBACKUPFAILED": "A copia di salvezza automatica di u portafogliu hà fiascatu - verificate a locu di a copia di salvezza è u spaziu di discu dispunibule",
         "PASSPHRASEMISMATCH": "E frasi d'accessu chì avete inseritu ùn currispondenu micca",
         "CHECKINGUPDATE": "Verificazione di l'aghjurnamentu...",
         "CHECKINGUPDATEFAILED": "Impussibile di verificà l'aghjurnamentu. Verificate a vostra rete.",
+        "WALLETUPDATEDOWNLOADING": "Scaricamentu di l'aghjurnamentu...",
         "SENDINGEXCEEDSBALANCE": "L'importo chì mandate supera u vostru saldo sceltu",
         "MISSINGCHANGEADDRESS": "Duvete specificà un indirizzu di cambiamentu",
         "MISSINGDESTINATIONADDRESS": "Duvete specificà un indirizzu di destinazione",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Crittografia di u portafogliu...",
         "CHANGINGPASSPHARASE": "Cambiendu a frase secreta...",
         "STARTINGMASTERNODE": "Avvio di u masternode...",
+        "STOPPINGMASTERNODE": "Fermendu u masternode...",
         "SENDINGTRANSACTION": "Mandà a transazzione...",
         "SIGNINGMESSAGE": "Firma di u missaghju...",
         "SIGNEDMESSAGE": "Missaghju firmatu",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Sblocca u portafogliu...",
         "TRANSACTIONMISMATCH": "Errore di transazzione. Per piacè pruvate torna.",
         "MINIMUMCONFIRMATIONS": "Tutti l'input richiedenu almenu 1 cunferma prima di spende.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transazzioni copiate in u clipboard",
-        "STOPPINGMASTERNODE": "Fermendu u masternode...",
         "FAILEDTOWRITECONFIG": "Ci hè statu un prublema di scrittura in u vostru schedariu metrix.conf. Verificate chì u schedariu esiste è chì Altitude hà permessi di scrittura.",
         "NOPUBLICUP": "Nisun indirizzu IP publicu hè statu trovu. Verificate a vostra cunnessione internet è riavviate Altitude.",
         "CONFIGURINGLOCALMN": "Cunfigurazione di u Masternode lucale...",
         "REPORTINGISSUE": "Ottene infurmazioni diagnostiche... Queste informazioni saranu copiate in u vostru appunti.",
-        "WALLETUPDATEDOWNLOADING": "Scaricamentu di l'aghjurnamentu...",
-        "WALLETBACKUPFAILED": "A copia di salvezza automatica di u portafogliu hà fiascatu - verificate a locu di a copia di salvezza è u spaziu di discu dispunibule",
         "EXPLORERURLSAVED": "URL di l'esploratore salvatu",
         "EXPLORERURLRESET": "L'URL di l'esploratore hè stata ripristinata à u predefinitu",
         "EXPLORERURLINVALID": "Quella ùn hè micca un URL http validu",
-        "EXPLORERURLUNREACHABLE": "Ùn hè micca statu pussibule ghjunghje à quell'URL - verificate è pruvate torna"
+        "EXPLORERURLUNREACHABLE": "Ùn hè micca statu pussibule ghjunghje à quell'URL - verificate è pruvate torna",
+        "DEVRPCHOSTSAVED": "L'ospite RPC hè statu salvatu",
+        "DEVRPCHOSTRESET": "L'ospite RPC hè statu riturnatu à u predefinitu (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monete ricevute",
+        "NEWTRANSACTION_TITLE_STAKE": "Partecipazione ricevuta",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricumpensa di Masternode ricevuta"
     },
     "TIME": {
         "AFEWSECONDS": "Pochi secondi",
@@ -533,11 +587,6 @@
         "MONTHS": "mesi",
         "AYEAR": "Un annu",
         "YEARS": "anni"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Monete ricevute",
-        "NEWTRANSACTION_TITLE_STAKE": "Partecipazione ricevuta",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricumpensa di Masternode ricevuta"
     },
     "MONTH": {
         "JAN": "GEN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "I guvernatori sò rispunsevuli di votà i bilanci mensili è i cambiamenti di a blockchain. Pudete diventà guvernatore bluccendu a garanzia curretta in u cuntrattu di guvernanza.",
                 "COLLATERAL": "Garanzia necessaria",
                 "ENROLL": "Iscriviti",
+                "SELECTAGOVERNOR": "Sceglite un indirizzu di guvernatore eligibile",
+                "GOVERNORNOTSELECTED": "Nisun indirizzu eligibile hè statu sceltu",
                 "CONFIRMENROLL": "Site in traccia di iscrivevi cum'è Guvernatore. Questu manderà una transazzione cù a garanzia necessaria per u cuntrattu di guvernanza. Pudete disiscrivvi in ogni mumentu.",
                 "ISGOVERNORTITLE": "Sì un guvernatore attivu!",
                 "ISGOVERNORDETAIL1": "I guvernatori sò rispunsevuli di votà i bilanci mensili è i cambiamenti di blockchain.",
                 "ISGOVERNORDETAIL2": "Per stà guvernatore, duverete participà à almenu 1 votu ogni 30 ghjorni.",
                 "ISGOVERNORDETAIL3": "S'ellu ùn ci hè nunda da vutà, pudete cuntinuà manualmente a vostra iscrizzione mandendu un ping attivu.",
+                "MYGOVERNORADDRESS": "U mo indirizzu di guvernatore",
                 "UNENROLL": "Disiscrizzione",
                 "PING": "Mandà Ping Attivu",
                 "LASTPINGTITLE": "Ultimu ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ghjorni",
                 "GOVERNORVOTEMATURITYHOURS": "ore",
                 "GOVERNORVOTEMATURITYSUFFIX": "finu à maturità",
-                "MYGOVERNORADDRESS": "U mo indirizzu di guvernatore",
-                "SELECTAGOVERNOR": "Sceglite un indirizzu di guvernatore eligibile",
-                "GOVERNORNOTSELECTED": "Nisun indirizzu eligibile hè statu sceltu",
                 "NOTFULLYSYNCEDTITLE": "Statutu di guvernatore indisponibile",
                 "NOTFULLYSYNCEDDETAIL": "U vostru statutu di registrazione di Guvernatore diventerà visibile quandu a vostra blockchain serà cumpletamente sincronizata.",
                 "DGPMIGRATIONTITLE": "Migrazione DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "A vostra pruposta hè stata creata cù successu",
             "ENROLLINGGOVERNOR": "Iscrizzione cum'è Guvernatore...",
             "ENROLLEDGOVERNOR": "A vostra iscrizzione serà cumpleta una volta chì a vostra transazzione serà cunfirmata",
-            "VOTINGONPROPOSAL": "Mandà u votu di a pruposta",
-            "VOTEDONPROPOSAL": "U vostru votu serà cunsideratu una volta chì a transazzione serà cunfirmata.",
             "PINGINGGOVERNOR": "Mandendu ping...",
             "PINGEDGOVERNOR": "Ping mandatu cù successu. U vostru Guvernatore serà aggiornatu una volta chì a transazzione hè cunfirmata.",
+            "VOTINGONPROPOSAL": "Mandà u votu di a pruposta",
+            "VOTEDONPROPOSAL": "U vostru votu serà cunsideratu una volta chì a transazzione serà cunfirmata.",
             "UNENROLLINGGOVERNOR": "Disiscrizzione di u guvernatore...",
             "UNENROLLEDGOVERNOR": "Transazzione mandata. U vostru Guvernatore serà disiscrittu una volta chì a transazzione hè cunfirmata.",
             "GOVERNORNOTMATURE": "U vostru guvernatore ùn hè ancu abbastanza maturu per fà sta azzione"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Cumprà Metrix",
+                "SEARCH": "Storia"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Mandate",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Storia di e transazzioni",
                 "SEARCHBUTTON": "RICERCA",
+                "SEARCHPLACEHOLDER": "Inserite l'indirizzu MRX o BTC",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Tipu TX",
                 "TRANSACTIONAMOUNT": "Quantità",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Cunfirmatu",
                 "TRANSACTIONNOTCONFIRMED": "Micca cunfirmatu",
                 "TRANSACTIONREFUNDED": "Rimborsatu - Sottu à u minimu",
-                "AVGSWAPPRICE": "Prezzu mediu di scambiu",
-                "SEARCHPLACEHOLDER": "Inserite l'indirizzu MRX o BTC"
+                "AVGSWAPPRICE": "Prezzu mediu di scambiu"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generazione di l'indirizzu di scambiu...",
             "ALREADYHAVEADDRESS": "Avete digià un indirizzu BTC assuciatu à questu indirizzu Metrix.",
             "NOADDRESS": "Ùn avete micca inseritu un indirizzu Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Cumprà Metrix",
-                "SEARCH": "Storia"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Mustrà",
                 "EMPTYTITLE": "Nisun gettu trovu ancu",
                 "EMPTYDETAIL": "Altitude verifica automaticamente un esploratore di blocchi per i gettoni MRC20 è MRC721 mandati à i vostri indirizzi, dopu verifica tuttu in diretta contr'à u vostru propiu nodu. Pudete ancu aghjunghje un gettoni manualmente se cunniscite u so indirizzu di cuntrattu.",
+                "EMPTYDETAILCHECKINGDISABLED": "A verificazione automatica di i gettoni hè disattivata, dunque i vostri indirizzi ùn sò micca verificati per i gettoni. Riattivatela sopra, o aghjunghjite un gettone manualmente se cunniscite u so indirizzu di cuntrattu.",
                 "HIDDENTITLE": "Gettoni nascosti",
                 "CONTEXTMENUHIDE": "Ammuccià u gettone",
                 "ITEMSSUFFIX": "articulu(i)",
-                "NONENUMERABLETOOLTIP": "Sta cullezzione ùn permette micca di listà l'articuli individuali - mustrà invece quanti ne tenete."
+                "NONENUMERABLETOOLTIP": "Sta cullezzione ùn permette micca di listà l'articuli individuali - mustrà invece quanti ne tenete.",
+                "CHECKINGENABLED": "Verificazione in corso",
+                "CHECKINGDISABLED": "Verificazione",
+                "CHECKINGENABLEDTOOLTIP": "A verificazione di i gettoni hè attivata - Altitude verifica periodicamente i vostri indirizzi per i gettoni è aghjurnà i saldi. Cliccate per disattivà.",
+                "CHECKINGDISABLEDTOOLTIP": "A verificazione di i gettoni hè disattivata - cliccate per riattivalla.",
+                "CHECKINGDISABLEDNOTICE": "A verificazione automatica di i gettoni hè disattivata. I vostri indirizzi ùn sò micca scansionati per i gettoni è i saldi ùn saranu micca aghjurnati. Pudete sempre aghjunghje un gettone manualmente."
             },
             "ADDTOKEN": {
                 "TITLE": "Aghjunghje un gettone",

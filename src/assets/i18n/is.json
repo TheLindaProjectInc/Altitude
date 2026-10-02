@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Stofna reikning",
             "HIDEEMPTYACCOUNTS": "Fela nafnlausa tóma reikninga"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Yfirlit",
+            "TRANSACTIONSTAB": "Færslur",
+            "ADDRESSTABS": "Heimilisföng"
+        },
         "SEND": {
             "ADDRECIPIENT": "Bæta við viðtakanda",
             "SEND": "Senda",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dagsetning",
             "TABLECOLUMNS_CONFIRMS": "Staðfestingar",
             "ALL_SELECTUNSELECT": "Opna/loka allt",
+            "TREEMODE": "Tréhamur",
+            "LISTMODE": "Listastilling",
             "SENDAVAILABLE": "Nota tiltæka inneign",
             "INPUTLOCKED": "Inntakið er læst. Þú þarft að opna þetta inntak til að eyða því.",
             "CONTEXTMENULOCKINPUT": "Læsa inntak",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Eftir gjald",
             "QUANTITY": "Magn",
             "BYTES": "Bæti",
-            "TREEMODE": "Tréhamur",
-            "LISTMODE": "Listastilling",
             "ALERTFEECHANGETITLE": "Gjaldbreyting",
             "ALERTFEECHANGECONTENT": "Raunverulegt færslugjald er hærra en búist var við. Vinsamlegast staðfestu nýtt gjald:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Stofna samning",
+            "INFO": "Settu snjallsamning inn á netið með því að senda inn þýðaðan kóða hans. Þetta er kjarnastarfsemi keðjunnar - athugaðu kóðann og gasstillingarnar vandlega áður en þú setur upp, ekki er hægt að afturkalla uppsetninguna.",
+            "FROM": "Frá",
+            "BYTECODE": "Bætikóði",
+            "BYTECODEPLACEHOLDER": "Líma inn þýðaðan samningsbætikóða (hex)",
+            "INVALIDBYTECODE": "Bætikóðinn verður að vera gildur sexhyrningsstrengur (0-9, a-f) með jöfnum fjölda stafa.",
+            "GASLIMIT": "Gasmörk",
+            "GASLIMITRANGE": "Svið",
+            "GASPRICE": "Bensínverð (MRX á bensíneiningu)",
+            "GASPRICEMIN": "Lágmark",
+            "ESTIMATEDMAXCOST": "Áætlaður hámarkskostnaður",
+            "DEPLOYBUTTON": "Dreifa samningi",
+            "INCOMPLETEFORM": "Veldu sendandafang, sláðu inn gilt bætikóða og stilltu gilt bensínmörk/verð.",
+            "HIGHGASPRICETITLE": "Hátt bensínverð",
+            "HIGHGASPRICEINFO": "Bensínverðið sem þú hefur sett er óvenju hátt. Þessi uppsetning gæti kostað allt að:",
+            "DEPLOYING": "Setja samning inn...",
+            "DEPLOYED": "Samningsúthlutun lögð fram",
+            "RESULTTITLE": "Niðurstaða dreifingar",
+            "STATUS": "Staða",
+            "STATUSPENDING": "Bíður staðfestingar...",
+            "STATUSCONFIRMED": "Sett upp með góðum árangri",
+            "STATUSFAILED": "Innleiðing mistókst",
+            "TXID": "Færsluauðkenni",
+            "SENDER": "Sendandi",
+            "CONTRACTADDRESS": "Samningsfang",
+            "GASUSED": "Notað gas",
+            "DONEBUTTON": "Lokið",
+            "DEPLOYANOTHERBUTTON": "Dreifa öðru"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Færslur",
+            "COPYBLOCKHASH": "Afrita blokkarkassi",
+            "COPYTXID": "Afrita færsluauðkenni",
+            "COPYACCOUNT": "Afrita reikningsnafn",
+            "COPYADDRESS": "Afrita heimilisfang",
+            "COPYAMOUNT": "Afritsupphæð",
+            "COPTBLOCKINDEX": "Afrita blokkarvísitölu",
+            "EXPLORER": "Opna í blokkavafra"
         },
         "STAKING": {
             "UNLOCK": "Opna fyrir veðsetningu",
@@ -68,13 +113,13 @@
             "IP": "IP-númer",
             "ADDRESS": "Heimilisfang",
             "ENABLED": "Virkt",
-            "STARTBUTTON": "Byrja staðbundið",
-            "STARTALIASBUTTON": "Byrja dulnefni",
-            "STARTALLBUTTON": "Byrja allt",
             "NOMASTERNODES": "Þú ert ekki með neina aðalhnúta",
             "NOMNOUTPUTS": "Engin úttak frá Masternode fundust. Til að keyra staðbundinn Masternode skaltu senda nákvæmlega 2, 5, 25, 50 eða 100 milljónir mynta á Masternode-vistfangið þitt og bíða eftir 15 staðfestingum.",
+            "STARTBUTTON": "Byrja staðbundið",
             "STOPBUTTON": "Stöðva staðbundið",
+            "STARTALIASBUTTON": "Byrja dulnefni",
             "STOPALIASBUTTON": "Stöðva dulnefni",
+            "STARTALLBUTTON": "Byrja allt",
             "ADDREMOTE": "Bæta við fjarstýrðum aðalhnút",
             "REMOVEMN": "Fjarlægja Masternode",
             "ADDLOCAL": "Setja upp staðbundinn aðalhnút",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Almennt",
                 "COREVERSION": "Kjarnaútgáfa",
+                "ALTITUDEVERSION": "Hæð útgáfa",
                 "PROTOCOLVERSION": "Útgáfa samskiptareglunnar",
                 "WALLETVERSION": "Útgáfa Wallet.dat",
                 "NETWORKTITLE": "Net",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Fjöldi aðalhnúta",
                 "BLOCKCHAINTITLE": "Block keðja",
                 "NUMBERBLOCKS": "Núverandi fjöldi blokka",
-                "BESTBLOCKTTIME": "Síðasti blokkartími",
-                "ALTITUDEVERSION": "Hæð útgáfa"
+                "BESTBLOCKTTIME": "Síðasti blokkartími"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Velkomin(n) í Metrix Core RPC stjórnborðið. Sláðu inn hjálp til að fá yfirlit yfir tiltækar skipanir.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Veldu tungumál"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Færslur",
-            "COPYBLOCKHASH": "Afrita blokkarkassi",
-            "COPYTXID": "Afrita færsluauðkenni",
-            "COPYACCOUNT": "Afrita reikningsnafn",
-            "COPYADDRESS": "Afrita heimilisfang",
-            "COPYAMOUNT": "Afritsupphæð",
-            "COPTBLOCKINDEX": "Afrita blokkarvísitölu",
-            "EXPLORER": "Opna í blokkavafra"
+        "CURRENCY": {
+            "TITLE": "Veldu birtingargjaldmiðil"
         },
         "EXPLORER": {
             "TITLE": "Blokkakönnuður",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Net",
             "WINDOTAB": "Gluggi",
+            "BACKUPTAB": "Afritun",
+            "EXPLORERTAB": "Landkönnuður",
+            "DEVELOPERTAB": "Forritari",
             "NETWORK": {
                 "PROXY": "Tengstu í gegnum SOCKS5 milliþjón",
                 "PROXYIP": "Proxy IP-númer",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minnka við lokun",
                 "BEHAVIOURTITLE": "Hegðun kerfisbakka og glugga"
             },
-            "BACKUPTAB": "Afritun",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Sjálfvirk afritun",
                 "ENABLED": "Taka sjálfvirkt öryggisafrit af wallet.dat samkvæmt áætlun",
                 "ENABLEDINFO": "Býr til nýtt afrit af veskisskránni þinni samkvæmt áætlun, þannig að nýlegt eintak er alltaf tiltækt ef eitthvað fer úrskeiðis.",
+                "INTERVALLABEL": "Taka afrit á hverjum (dögum)",
                 "LASTBACKUP": "Síðasta afrit:",
                 "NEVERBACKEDUP": "Engin sjálfvirk afritun hefur verið gerð ennþá.",
                 "BACKUPNOWBUTTON": "Taka afrit núna",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Endurstilla í sjálfgefið ástand",
                 "PRUNETITLE": "Afritunarsaga",
                 "PRUNEINFO": "Eldri sjálfvirkum afritum er eytt svo þessi mappa stækki ekki að eilífu - aðeins þau nýjustu hér að neðan eru geymd.",
-                "KEEPCOUNTLABEL": "Halda síðasta",
-                "INTERVALLABEL": "Taka afrit á hverjum (dögum)"
+                "KEEPCOUNTLABEL": "Halda síðasta"
             },
-            "EXPLORERTAB": "Landkönnuður",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokkakönnuður",
                 "BLOCKEXPLORERINFO": "Síðan opnaðist þegar færsla var skoðuð í blokkavafranum (t.d. hægrismellt á færslu > Skoða í vafra).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Aðalnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Skráningarpróf"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Forritarastilling",
+                "DEVMODEINFO": "Slökkt sjálfgefið og eingöngu ætlað forriturum. Ef þetta er virkjað birtast möguleikar til að hnekkja RPC-tengingunni - venjulegir notendur ættu að slökkva á þessu.",
+                "DEVMODELABEL": "Virkja forritarastillingu",
+                "WARNING": "Þessar stillingar eru eingöngu ætlaðar til þróunar. Að breyta þeim getur komið í veg fyrir að veskið tengist þjónustunni - notaðu þetta aðeins ef þú veist hvað þú ert að gera.",
+                "RPCHOSTTITLE": "RPC-tenging",
+                "RPCHOSTINFO": "Sjálfgefið er að Altitude tengist þjónustunni sem hún stýrir sjálf á þessari vél (127.0.0.1). Með því að yfirskrifa þetta tengist hún annarri þjónustu í staðinn - til dæmis fjarstýrðri regtest-tilviki, án þess að þurfa að keyra eina staðbundið. Ef tengingin tekst mun Altitude ekki hlaða niður eða ræsa sinn eigin staðbundna þjónustu. rpcallowip markþjónustunnar verður að leyfa þessa tengingu og rpcuser/rpcpassword hér að neðan verður að passa við stillingar hennar. Tekur gildi strax, endurræsing er ekki nauðsynleg.",
+                "RPCHOSTLABEL": "RPC-gestgjafi",
+                "RPCPORTLABEL": "RPC tengi",
+                "RPCUSERLABEL": "RPC notandanafn",
+                "RPCPASSWORDLABEL": "RPC lykilorð"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Yfirlit",
-            "TRANSACTIONSTAB": "Færslur",
-            "ADDRESSTABS": "Heimilisföng"
-        },
-        "CURRENCY": {
-            "TITLE": "Veldu birtingargjaldmiðil"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Mælaborð",
             "SEND": "Senda",
+            "CREATECONTRACT": "Stofna samning",
             "RECEIVE": "Móttaka",
             "TRANSACTIONS": "Færslur",
             "STAKING": "Staða",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Blokkakönnuður",
             "SYNC": {
                 "CONNECTING": "Tenging",
                 "NOBLOCKS": "Að bíða eftir blokkum",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Veskið er ekki í notkun eins og er",
                 "MASTERNODEON": "Masternode er í gangi núna",
                 "MASTERNODEOFF": "Masternode er ekki í gangi núna"
-            },
-            "EXPLORER": "Blokkakönnuður"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Sláðu inn vefslóð",
+            "GOBUTTON": "Fara",
+            "QUICKLAUNCH": "Flýtiræsing",
+            "DEVTOOLS": "Opna verkfæri forritara",
+            "ADDLINK": "Bæta við tengli",
+            "LINKNAMEPLACEHOLDER": "Nafn",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Vista",
+            "CANCEL": "Hætta við",
+            "REMOVE": "Fjarlægja",
+            "REMOVECONFIRM": "Fjarlægja þennan flýtileið?",
+            "LINKEXISTS": "Þessi tengill er nú þegar í flýtileiðréttingarlistanum þínum",
+            "LINKINVALID": "Sláðu inn gilt vefslóð",
+            "LINKNETWORKLABEL": "Net",
+            "LOADFAILED": "Mistókst að hlaða síðuna",
+            "SECURESITE": "Tengingin er örugg - gilt SSL vottorð",
+            "INSECURESITE": "Tengingin er ekki örugg",
+            "INVALIDCERTSITE": "Tengingin er ekki einkamál - ógilt eða ótreyst SSL vottorð"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sláðu inn lykilorðið þitt fyrir veskið",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Uppfærsla er tiltæk fyrir Metrix Core. Viltu setja hana upp núna?",
             "WALLETUPDATETITLE": "Uppfærsla á hæð í boði",
             "WALLETUPDATEINFO": "Uppfærsla er í boði fyrir Altitude. Viltu sækja hana núna?",
+            "WALLETUPDATEREADYTITLE": "Hæðaruppfærsla tilbúin",
+            "WALLETUPDATEREADYINFO": "Uppfærslan hefur verið sótt. Endurræsa Altitude núna til að setja hana upp?",
+            "WALLETUPDATERESTARTBUTTON": "Endurræsa og setja upp",
+            "WALLETUPDATELATERBUTTON": "Seinna",
             "CLIENTUPDATEBUTTON": "Uppfæra",
             "CLIENTUPDATECANCELBUTTON": "Ekki uppfæra",
             "CLIENTUPDATESKIPBUTTON": "Sleppa þessari uppfærslu",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Öll fyrri afrit sem þú hefur gert af veskisskránni þinni ætti að skipta út fyrir nýlega myndaða, dulkóðaða veskisskrána. Af öryggisástæðum verða fyrri afrit af ódulkóðuðu veskisskránni gagnslaus um leið og þú byrjar að nota nýja, dulkóðaða veskið.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stöðvaðist óvænt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Það kom upp vandamál með Metrix Core sem olli því að það hætti starfsemi. Mælt er með að athuga hvort debug.log skráin þín sé í vandræðum.",
+            "CLIENTUNKNOWNERRORTITLE": "Samskiptavilla í Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Það kom upp vandamál í samskiptum við Metrix Core. Það er mælt með því að athuga hvort debug.log skráin þín sé í vandræðum.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core ræsing mistókst",
+            "BOOTSTRAPFAILEDINFO": "Það kom upp vandamál við ræsingu Metrix Core. Það er mælt með því að athuga hvort vandamál séu í Altitude skránni þinni.",
+            "BOOTSTRAPOFFERTITLE": "Veskið er verulega úrelt",
+            "BOOTSTRAPOFFERINFO": "Nýleg ræsiforrit eru í boði sem getur fljótt uppfært Metrix Core. Að halda áfram með venjulega samstillingu í staðinn getur tekið nokkra daga þar sem veskið þitt þarf að hlaða niður og staðfesta hverja einustu blokk sem það hefur misst af.",
+            "BOOTSTRAPOFFERBUTTON": "Sækja Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Halda áfram venjulegri samstillingu",
+            "BOOTSTRAPSPACEINFO": "Ekki nægt laust pláss á harða diskinum til að hlaða niður og taka út ræsiforritið. Nauðsynlegt: {required}, Tiltækt: {free}. Losaðu um pláss og reyndu aftur.",
+            "STARTUPFAILEDTITLE": "Ræsing Metrix Core mistókst",
+            "STARTUPFAILEDINFO": "Villa kom upp við ræsingu Metrix Core. Mælt er með að athuga hvort vandamál séu í Altitude skránni þinni.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Endurheimtartól",
             "CLIENTINVALIDCONFIGTITLE": "Ógild metrix.conf stilling",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf skráin þín inniheldur ógilda masternode uppsetningu sem veldur því að Metrix Core lokast samstundis. Vinsamlegast athugaðu þessa skrá.",
             "ADDREMOTEMNTITLE": "Bæta við fjarstýrðum aðalhnút",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Einkalykill Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx vísitala",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core ræsing mistókst",
-            "BOOTSTRAPFAILEDINFO": "Það kom upp vandamál við ræsingu Metrix Core. Það er mælt með því að athuga hvort vandamál séu í Altitude skránni þinni.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Endurheimtartól",
-            "STARTUPFAILEDTITLE": "Ræsing Metrix Core mistókst",
-            "STARTUPFAILEDINFO": "Villa kom upp við ræsingu Metrix Core. Mælt er með að athuga hvort vandamál séu í Altitude skránni þinni.",
-            "CLIENTUNKNOWNERRORTITLE": "Samskiptavilla í Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Það kom upp vandamál í samskiptum við Metrix Core. Það er mælt með því að athuga hvort debug.log skráin þín sé í vandræðum.",
             "UNENROLLGOVERNORTITLE": "Staðfesta afskráningu landstjóra",
             "UNENROLLGOVERNORCONTENT": "Ertu viss um að þú viljir afskrá fylkisstjórann þinn? Þú munt ekki lengur geta kosið um keðjustjórnun.",
-            "WALLETUPDATEREADYTITLE": "Hæðaruppfærsla tilbúin",
-            "WALLETUPDATEREADYINFO": "Uppfærslan hefur verið sótt. Endurræsa Altitude núna til að setja hana upp?",
-            "WALLETUPDATERESTARTBUTTON": "Endurræsa og setja upp",
-            "WALLETUPDATELATERBUTTON": "Seinna",
             "DAPPCONNECTTITLE": "Tengjast við síðu",
             "DAPPCONNECTINFO": "Þessi síða vill tengjast veskinu þínu og skoða heimilisfangið þitt og stöðu.",
             "DAPPCONNECTBUTTON": "Tengjast",
+            "DAPPCONNECTADDRESSLABEL": "Heimilisfang",
+            "DAPPAPPROVEBUTTON": "Samþykkja",
             "DAPPREJECTBUTTON": "Hafna",
             "DAPPSENDTITLE": "Beiðni um samningsviðskipti",
             "DAPPSENDINFO": "Þessi síða er að biðja um að senda samningsfærslu úr veskinu þínu.",
-            "DAPPSIGNTITLE": "Beiðni um undirritun skilaboða",
-            "DAPPSIGNINFO": "Þessi síða er að biðja um að undirrita skilaboð með veskisfanginu þínu.",
-            "DAPPNOTREADY": "Get ekki tengst síðunni ennþá - Metrix Core er enn að ræsast.",
-            "DAPPNOWALLET": "Ekki er hægt að tengjast síðunni - ekkert veskisfang er tiltækt.",
-            "DAPPAPPROVEBUTTON": "Samþykkja",
-            "DAPPCONNECTADDRESSLABEL": "Heimilisfang",
             "DAPPSENDSITELABEL": "Vefsíða",
             "DAPPSENDCONTRACTLABEL": "Samningsfang",
             "DAPPSENDAMOUNTLABEL": "Upphæð",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Hámarks netgjald",
             "DAPPSENDMAXTOTALLABEL": "Hámarks samtals",
             "DAPPSENDDATALABEL": "Samningsgögn",
+            "DAPPSIGNTITLE": "Beiðni um undirritun skilaboða",
+            "DAPPSIGNINFO": "Þessi síða er að biðja um að undirrita skilaboð með veskisfanginu þínu.",
             "DAPPSIGNMESSAGELABEL": "Skilaboð",
-            "BOOTSTRAPOFFERTITLE": "Veskið er verulega úrelt",
-            "BOOTSTRAPOFFERINFO": "Nýleg ræsiforrit eru í boði sem getur fljótt uppfært Metrix Core. Að halda áfram með venjulega samstillingu í staðinn getur tekið nokkra daga þar sem veskið þitt þarf að hlaða niður og staðfesta hverja einustu blokk sem það hefur misst af.",
-            "BOOTSTRAPOFFERBUTTON": "Sækja Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Halda áfram venjulegri samstillingu",
-            "BOOTSTRAPSPACEINFO": "Ekki nægt laust pláss á harða diskinum til að hlaða niður og taka út ræsiforritið. Nauðsynlegt: {required}, Tiltækt: {free}. Losaðu um pláss og reyndu aftur."
+            "DAPPNOTREADY": "Get ekki tengst síðunni ennþá - Metrix Core er enn að ræsast.",
+            "DAPPNOWALLET": "Ekki er hægt að tengjast síðunni - ekkert veskisfang er tiltækt."
         },
         "ADDRESSBOOK": {
             "TITLE": "Heimilisfangabók",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Núverandi net"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Sláðu inn vefslóð",
-            "GOBUTTON": "Fara",
-            "QUICKLAUNCH": "Flýtiræsing",
-            "DEVTOOLS": "Opna verkfæri forritara",
-            "ADDLINK": "Bæta við tengli",
-            "LINKNAMEPLACEHOLDER": "Nafn",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Vista",
-            "CANCEL": "Hætta við",
-            "REMOVE": "Fjarlægja",
-            "REMOVECONFIRM": "Fjarlægja þennan flýtileið?",
-            "LINKEXISTS": "Þessi tengill er nú þegar í flýtileiðréttingarlistanum þínum",
-            "LINKINVALID": "Sláðu inn gilt vefslóð",
-            "LINKNETWORKLABEL": "Net",
-            "LOADFAILED": "Mistókst að hlaða síðuna",
-            "SECURESITE": "Tengingin er örugg - gilt SSL vottorð",
-            "INSECURESITE": "Tengingin er ekki örugg",
-            "INVALIDCERTSITE": "Tengingin er ekki einkamál - ógilt eða ótreyst SSL vottorð"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Afritunarveski...",
             "SIGNMESSAGE": "Undirrita skilaboð...",
             "VERIFYMESSAGE": "Staðfesta skilaboð...",
-            "LOCALE": "Tungumál...",
-            "RESTARTCORE": "Endurræsa Metrix Core",
-            "EXIT": "Útgönguleið",
             "OPTIONS": "Valkostir...",
+            "LOCALE": "Tungumál...",
             "CURRENCIES": "Sýna gjaldmiðil...",
-            "ALTITUDEREFRESH": "Endurnýja hæðargögn"
+            "RESTARTCORE": "Endurræsa Metrix Core",
+            "ALTITUDEREFRESH": "Endurnýja hæðargögn",
+            "EXIT": "Útgönguleið"
         },
         "ENCRYPT": {
             "TITLE": "Dulkóða",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Heildarstaða",
+        "SPENDABLEBALANCE": "Ráðstöfunarhæf inneign",
+        "PENDINGBALANCE": "Óbeiðandi staða",
         "CANCELBUTTON": "Hætta við",
         "DONEBUTTON": "Lokið",
         "OKBUTTON": "Í lagi",
+        "ACCEPTBUTTON": "Samþykkja",
         "CLEARALLBUTTON": "Hreinsa allt",
         "ENTERACCOUNTLABEL": "Sláðu inn merki fyrir þetta heimilisfang",
         "ENTERADDRESSLABEL": "Sláðu inn Metrix-vistfang",
@@ -464,11 +511,8 @@
         "SORTBY": "Raða eftir",
         "SEARCH": "Leita",
         "FEE": "Gjald",
-        "ACCEPTBUTTON": "Samþykkja",
         "CONFIRMED": "Staðfest",
         "UNCONFIRMED": "Óstaðfest",
-        "PENDINGBALANCE": "Óbeiðandi staða",
-        "SPENDABLEBALANCE": "Ráðstöfunarhæf inneign",
         "SAVEBUTTON": "Vista"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Endurræsa Metrix Core...",
         "BOOTSTRAPPING": "Sæki bootstrap...",
         "BOOTSTRAPEXTRACTING": "Útdráttur ræsibands...",
-        "TIMEREMAINING": "eftir:"
+        "TIMEREMAINING": "eftir:",
+        "DEVRPCOVERRIDEACTIVE": "Tenging fyrir RPC forritara er stillt (Valkostir > Forritari) og svarar ekki. Hreinsið þetta til að tengjast aftur við staðbundna þjónustuna á eðlilegan hátt.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Hreinsa RPC yfirskrift og tengjast aftur"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nýr reikningur var búinn til",
         "ADDRESSCOPIEDCLIPBOARD": "Heimilisfang afritað á klippiborð",
+        "COPIEDCLIPBOARD": "Afritað á klippiborð",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Færslur afritaðar á klippiborð",
         "EMPTYFIELDS": "Vinsamlegast fylltu út alla reiti",
         "NOUPDATE": "Engin uppfærsla tiltæk",
         "WALLETBACKEDUP": "Afritun veskisins tókst",
+        "WALLETBACKUPFAILED": "Sjálfvirk afritun veskis mistókst - athugaðu staðsetningu afritunar og laust pláss á diskinum",
         "PASSPHRASEMISMATCH": "Lykilorðin sem þú slóst inn stemma ekki",
         "CHECKINGUPDATE": "Athuga hvort uppfærsla sé í boði...",
         "CHECKINGUPDATEFAILED": "Ekki tókst að athuga hvort uppfærsla sé til staðar. Athugaðu netið þitt.",
+        "WALLETUPDATEDOWNLOADING": "Sæki uppfærslu...",
         "SENDINGEXCEEDSBALANCE": "Upphæðin sem þú ert að senda fer yfir valda innistæðu þína",
         "MISSINGCHANGEADDRESS": "Þú verður að tilgreina breytingar á heimilisfangi",
         "MISSINGDESTINATIONADDRESS": "Þú verður að tilgreina áfangastað",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Dulkóðar veski...",
         "CHANGINGPASSPHARASE": "Að breyta lykilorði...",
         "STARTINGMASTERNODE": "Ræsir masternode...",
+        "STOPPINGMASTERNODE": "Stöðva masternode...",
         "SENDINGTRANSACTION": "Sendi færslu...",
         "SIGNINGMESSAGE": "Undirrita skilaboð...",
         "SIGNEDMESSAGE": "Skilaboð undirrituð",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Opna veskið...",
         "TRANSACTIONMISMATCH": "Færsluvilla. Vinsamlegast reyndu aftur.",
         "MINIMUMCONFIRMATIONS": "Allar innsláttarupplýsingar þurfa að minnsta kosti eina staðfestingu áður en greitt er.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Færslur afritaðar á klippiborð",
-        "STOPPINGMASTERNODE": "Stöðva masternode...",
         "FAILEDTOWRITECONFIG": "Það kom upp vandamál við að skrifa í metrix.conf skrána þína. Gakktu úr skugga um að skráin sé til og að Altitude hafi skrifréttindi.",
         "NOPUBLICUP": "Engin opinber IP-tala fannst. Athugaðu nettenginguna þína og endurræstu Altitude.",
         "CONFIGURINGLOCALMN": "Stillir upp staðbundinn Masternode...",
         "REPORTINGISSUE": "Sækir greiningarupplýsingar... Þessar upplýsingar verða afritaðar á klippiborðið þitt.",
-        "WALLETUPDATEDOWNLOADING": "Sæki uppfærslu...",
-        "WALLETBACKUPFAILED": "Sjálfvirk afritun veskis mistókst - athugaðu staðsetningu afritunar og laust pláss á diskinum",
         "EXPLORERURLSAVED": "Vefslóð landkönnuðar vistuð",
         "EXPLORERURLRESET": "Vefslóð Explorer breytt í sjálfgefið gildi",
         "EXPLORERURLINVALID": "Þetta er ekki gild http(s) vefslóð",
-        "EXPLORERURLUNREACHABLE": "Ekki tókst að ná í þessa slóð - athugaðu hana og reyndu aftur"
+        "EXPLORERURLUNREACHABLE": "Ekki tókst að ná í þessa slóð - athugaðu hana og reyndu aftur",
+        "DEVRPCHOSTSAVED": "RPC-gestgjafi vistaður",
+        "DEVRPCHOSTRESET": "RPC-hýsill stilltur aftur á sjálfgefið gildi (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mótteknar mynt",
+        "NEWTRANSACTION_TITLE_STAKE": "Móttekinn hlutur",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Fékk Masternode verðlaun"
     },
     "TIME": {
         "AFEWSECONDS": "Nokkrar sekúndur",
@@ -533,11 +587,6 @@
         "MONTHS": "mánuðir",
         "AYEAR": "Ár",
         "YEARS": "ár"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Mótteknar mynt",
-        "NEWTRANSACTION_TITLE_STAKE": "Móttekinn hlutur",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Fékk Masternode verðlaun"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Ríkisstjórar bera ábyrgð á að greiða atkvæði um mánaðarlegar fjárhagsáætlanir og breytingar á blockchain-kerfinu. Þú getur orðið ríkisstjóri með því að festa réttar tryggingar í stjórnarsamningnum.",
                 "COLLATERAL": "Nauðsynleg trygging",
                 "ENROLL": "Skráning",
+                "SELECTAGOVERNOR": "Veldu heimilisfang gjaldgengs ríkisstjóra",
+                "GOVERNORNOTSELECTED": "Ekkert gjaldgengt heimilisfang var valið",
                 "CONFIRMENROLL": "Þú ert að fara að skrá þig sem stjórnanda. Þetta mun senda viðskipti með nauðsynlegum tryggingum til stjórnunarsamningsins. Þú getur afskráð þig hvenær sem er.",
                 "ISGOVERNORTITLE": "Þú ert virkur fylkisstjóri!",
                 "ISGOVERNORDETAIL1": "Ríkisstjórar bera ábyrgð á að kjósa um mánaðarlegar fjárhagsáætlanir og breytingar á blockchain-kerfum.",
                 "ISGOVERNORDETAIL2": "Til að halda embætti ríkisstjóra þarftu að taka þátt í að minnsta kosti einni atkvæðagreiðslu á 30 daga fresti.",
                 "ISGOVERNORDETAIL3": "Ef ekkert er til að kjósa um geturðu haldið skráningunni áfram handvirkt með því að senda virkt ping.",
+                "MYGOVERNORADDRESS": "Ávarp landstjórans míns",
                 "UNENROLL": "Afskrá",
                 "PING": "Senda virkt Ping",
                 "LASTPINGTITLE": "Síðasta ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dagar",
                 "GOVERNORVOTEMATURITYHOURS": "klukkustundir",
                 "GOVERNORVOTEMATURITYSUFFIX": "þar til þroskaður",
-                "MYGOVERNORADDRESS": "Ávarp landstjórans míns",
-                "SELECTAGOVERNOR": "Veldu heimilisfang gjaldgengs ríkisstjóra",
-                "GOVERNORNOTSELECTED": "Ekkert gjaldgengt heimilisfang var valið",
                 "NOTFULLYSYNCEDTITLE": "Staða landstjóra ekki tiltæk",
                 "NOTFULLYSYNCEDDETAIL": "Skráningarstaða þín sem landstjóra verður sýnileg þegar blockchain-ið þitt er að fullu samstillt.",
                 "DGPMIGRATIONTITLE": "DGP-flutningur",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Tillaga þín hefur verið búin til",
             "ENROLLINGGOVERNOR": "Að skrá sig sem fylkisstjóri...",
             "ENROLLEDGOVERNOR": "Skráning þín verður lokið þegar færslan hefur verið staðfest",
-            "VOTINGONPROPOSAL": "Senda atkvæði um tillögu",
-            "VOTEDONPROPOSAL": "Atkvæði þitt verður talið með þegar færslan hefur verið staðfest.",
             "PINGINGGOVERNOR": "Sendi ping...",
             "PINGEDGOVERNOR": "Ping-skilaboð send. Landstjórinn þinn verður uppfærður um leið og færslan hefur verið staðfest.",
+            "VOTINGONPROPOSAL": "Senda atkvæði um tillögu",
+            "VOTEDONPROPOSAL": "Atkvæði þitt verður talið með þegar færslan hefur verið staðfest.",
             "UNENROLLINGGOVERNOR": "Afskráning landstjóra...",
             "UNENROLLEDGOVERNOR": "Færsla send. Landstjórinn þinn verður afskráður þegar færslan hefur verið staðfest.",
             "GOVERNORNOTMATURE": "Landstjórinn þinn er ekki nógu þroskaður til að framkvæma þessa aðgerð ennþá"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Kaupa Metrix",
+                "SEARCH": "Saga"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Þú sendir",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Færslusaga",
                 "SEARCHBUTTON": "LEITA",
+                "SEARCHPLACEHOLDER": "Sláðu inn MRX eða BTC heimilisfang",
                 "TRANSACTIONDATE": "Dagsetning",
                 "TRANSACTIONTYPE": "Tegund sendingar",
                 "TRANSACTIONAMOUNT": "Upphæð",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Staðfest",
                 "TRANSACTIONNOTCONFIRMED": "Ekki staðfest",
                 "TRANSACTIONREFUNDED": "Endurgreitt - Undir lágmarki",
-                "AVGSWAPPRICE": "Meðalverð skiptis",
-                "SEARCHPLACEHOLDER": "Sláðu inn MRX eða BTC heimilisfang"
+                "AVGSWAPPRICE": "Meðalverð skiptis"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Búa til skiptifang...",
             "ALREADYHAVEADDRESS": "Þú ert nú þegar með BTC-vistfang tengt þessu Metrix-vistfangi",
             "NOADDRESS": "Þú slóst ekki inn Metrix heimilisfang"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Kaupa Metrix",
-                "SEARCH": "Saga"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Sýna",
                 "EMPTYTITLE": "Engin tákn fundust ennþá",
                 "EMPTYDETAIL": "Altitude kannar sjálfkrafa blokkakönnunarforrit fyrir MRC20 og MRC721 tákn sem send eru á netföngin þín og staðfestir síðan allt beint á móti þínum eigin hnút. Þú getur líka bætt við tákni handvirkt ef þú veist samningsfang þess.",
+                "EMPTYDETAILCHECKINGDISABLED": "Sjálfvirk auðkennisathugun er slökkt, þannig að heimilisföngin þín eru ekki könnuð fyrir auðkenni. Kveiktu aftur á þessu hér að ofan eða bættu auðkenni við handvirkt ef þú veist samningsbundið heimilisfang þess.",
                 "HIDDENTITLE": "Falin tákn",
                 "CONTEXTMENUHIDE": "Fela tákn",
                 "ITEMSSUFFIX": "hlutur/hlutir",
-                "NONENUMERABLETOOLTIP": "Þetta safn styður ekki lista yfir einstök atriði - í staðinn er sýnt hversu marga þú átt."
+                "NONENUMERABLETOOLTIP": "Þetta safn styður ekki lista yfir einstök atriði - í staðinn er sýnt hversu marga þú átt.",
+                "CHECKINGENABLED": "Athuga á",
+                "CHECKINGDISABLED": "Að haka við",
+                "CHECKINGENABLEDTOOLTIP": "Táknaathugun er virk - Altitude athugar reglulega hvort tákn séu til staðar á heimilisföngum þínum og uppfærir stöðu. Smelltu til að slökkva á þessu.",
+                "CHECKINGDISABLEDTOOLTIP": "Táknaathugun er slökkt - smelltu til að kveikja aftur á henni.",
+                "CHECKINGDISABLEDNOTICE": "Sjálfvirk auðkennisathugun er slökkt. Heimilisföngin þín eru ekki skönnuð í leit að auðkennum og stöður munu ekki uppfærast. Þú getur samt bætt við auðkenni handvirkt."
             },
             "ADDTOKEN": {
                 "TITLE": "Bæta við tákni",

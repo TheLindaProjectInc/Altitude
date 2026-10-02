@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Tạo tài khoản",
             "HIDEEMPTYACCOUNTS": "Ẩn các tài khoản trống không tên"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Tổng quan",
+            "TRANSACTIONSTAB": "Giao dịch",
+            "ADDRESSTABS": "Địa chỉ"
+        },
         "SEND": {
             "ADDRECIPIENT": "Thêm người nhận",
             "SEND": "Gửi",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Ngày",
             "TABLECOLUMNS_CONFIRMS": "Xác nhận",
             "ALL_SELECTUNSELECT": "Bật/tắt tất cả",
+            "TREEMODE": "Chế độ cây",
+            "LISTMODE": "Chế độ danh sách",
             "SENDAVAILABLE": "Sử dụng số dư hiện có",
             "INPUTLOCKED": "Ô nhập liệu đã bị khóa. Bạn cần mở khóa ô nhập liệu này để sử dụng.",
             "CONTEXTMENULOCKINPUT": "Đầu vào khóa",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Sau khi trừ phí",
             "QUANTITY": "Số lượng",
             "BYTES": "Byte",
-            "TREEMODE": "Chế độ cây",
-            "LISTMODE": "Chế độ danh sách",
             "ALERTFEECHANGETITLE": "Thay đổi phí",
             "ALERTFEECHANGECONTENT": "Phí giao dịch thực tế cao hơn dự kiến. Vui lòng xác nhận lại phí mới:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Tạo hợp đồng",
+            "INFO": "Triển khai hợp đồng thông minh lên mạng bằng cách gửi mã bytecode đã biên dịch của nó. Đây là một chức năng cốt lõi của chuỗi - hãy kiểm tra kỹ mã bytecode và cài đặt gas của bạn trước khi triển khai, việc triển khai không thể hoàn tác.",
+            "FROM": "Từ",
+            "BYTECODE": "Mã byte",
+            "BYTECODEPLACEHOLDER": "Dán mã bytecode (hex) của hợp đồng đã biên dịch vào đây.",
+            "INVALIDBYTECODE": "Mã bytecode phải là một chuỗi thập lục phân hợp lệ (0-9, a-f) với số ký tự chẵn.",
+            "GASLIMIT": "Giới hạn khí",
+            "GASLIMITRANGE": "Phạm vi",
+            "GASPRICE": "Giá xăng (MRX/đơn vị xăng)",
+            "GASPRICEMIN": "Tối thiểu",
+            "ESTIMATEDMAXCOST": "Chi phí tối đa ước tính",
+            "DEPLOYBUTTON": "Hợp đồng triển khai",
+            "INCOMPLETEFORM": "Vui lòng chọn địa chỉ người gửi, nhập mã bytecode hợp lệ và thiết lập giới hạn/giá gas hợp lệ.",
+            "HIGHGASPRICETITLE": "Giá xăng cao",
+            "HIGHGASPRICEINFO": "Giá gas bạn đã thiết lập cao bất thường. Việc triển khai này có thể tốn đến:",
+            "DEPLOYING": "Đang triển khai hợp đồng...",
+            "DEPLOYED": "Đã nộp đơn triển khai hợp đồng",
+            "RESULTTITLE": "Kết quả triển khai",
+            "STATUS": "Trạng thái",
+            "STATUSPENDING": "Đang chờ xác nhận...",
+            "STATUSCONFIRMED": "Đã triển khai thành công",
+            "STATUSFAILED": "Quá trình triển khai thất bại",
+            "TXID": "Mã giao dịch",
+            "SENDER": "Người gửi",
+            "CONTRACTADDRESS": "Địa chỉ liên hệ",
+            "GASUSED": "Lượng khí đốt đã sử dụng",
+            "DONEBUTTON": "Xong",
+            "DEPLOYANOTHERBUTTON": "Triển khai thêm một cái nữa"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Giao dịch",
+            "COPYBLOCKHASH": "Sao chép mã băm khối",
+            "COPYTXID": "Sao chép mã giao dịch",
+            "COPYACCOUNT": "Sao chép tên tài khoản",
+            "COPYADDRESS": "Sao chép địa chỉ",
+            "COPYAMOUNT": "Số lượng bản sao",
+            "COPTBLOCKINDEX": "Sao chép mục lục khối",
+            "EXPLORER": "Mở trong Trình khám phá khối"
         },
         "STAKING": {
             "UNLOCK": "Mở khóa để đặt cược",
@@ -68,13 +113,13 @@
             "IP": "Địa chỉ IP",
             "ADDRESS": "Địa chỉ",
             "ENABLED": "Đã bật",
-            "STARTBUTTON": "Bắt đầu cục bộ",
-            "STARTALIASBUTTON": "Bắt đầu bí danh",
-            "STARTALLBUTTON": "Bắt đầu tất cả",
             "NOMASTERNODES": "Bạn không có bất kỳ masternode nào.",
             "NOMNOUTPUTS": "Không tìm thấy đầu ra Masternode nào. Để chạy Masternode cục bộ, hãy gửi chính xác 2, 5, 25, 50 hoặc 100 triệu coin đến địa chỉ Masternode của bạn và chờ 15 xác nhận.",
+            "STARTBUTTON": "Bắt đầu cục bộ",
             "STOPBUTTON": "Dừng chân tại địa phương",
+            "STARTALIASBUTTON": "Bắt đầu bí danh",
             "STOPALIASBUTTON": "Dừng bí danh",
+            "STARTALLBUTTON": "Bắt đầu tất cả",
             "ADDREMOTE": "Thêm Masternode từ xa",
             "REMOVEMN": "Xóa Masternode",
             "ADDLOCAL": "Thiết lập Masternode cục bộ",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Tổng quan",
                 "COREVERSION": "Phiên bản cốt lõi",
+                "ALTITUDEVERSION": "Phiên bản độ cao",
                 "PROTOCOLVERSION": "Phiên bản giao thức",
                 "WALLETVERSION": "Phiên bản Wallet.dat",
                 "NETWORKTITLE": "Mạng",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Số lượng Masternode",
                 "BLOCKCHAINTITLE": "Chuỗi khối",
                 "NUMBERBLOCKS": "Số lượng khối hiện tại",
-                "BESTBLOCKTTIME": "Thời gian khối cuối cùng",
-                "ALTITUDEVERSION": "Phiên bản độ cao"
+                "BESTBLOCKTTIME": "Thời gian khối cuối cùng"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Chào mừng bạn đến với giao diện điều khiển RPC của Metrix Core. Gõ help để xem tổng quan về các lệnh có sẵn.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Chọn ngôn ngữ"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Giao dịch",
-            "COPYBLOCKHASH": "Sao chép mã băm khối",
-            "COPYTXID": "Sao chép mã giao dịch",
-            "COPYACCOUNT": "Sao chép tên tài khoản",
-            "COPYADDRESS": "Sao chép địa chỉ",
-            "COPYAMOUNT": "Số lượng bản sao",
-            "COPTBLOCKINDEX": "Sao chép mục lục khối",
-            "EXPLORER": "Mở trong Trình khám phá khối"
+        "CURRENCY": {
+            "TITLE": "Chọn đơn vị tiền tệ hiển thị"
         },
         "EXPLORER": {
             "TITLE": "Trình khám phá khối",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Mạng",
             "WINDOTAB": "Cửa sổ",
+            "BACKUPTAB": "Hỗ trợ",
+            "EXPLORERTAB": "Nhà thám hiểm",
+            "DEVELOPERTAB": "Nhà phát triển",
             "NETWORK": {
                 "PROXY": "Kết nối thông qua máy chủ proxy SOCKS5",
                 "PROXYIP": "Địa chỉ IP proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Thu nhỏ khi đóng",
                 "BEHAVIOURTITLE": "Hành vi của khay hệ thống và cửa sổ"
             },
-            "BACKUPTAB": "Hỗ trợ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Sao lưu tự động",
                 "ENABLED": "Tự động sao lưu tệp wallet.das theo lịch trình định kỳ.",
                 "ENABLEDINFO": "Tự động tạo bản sao lưu mới nhất của tập tin ví điện tử theo lịch trình, đảm bảo luôn có bản sao gần nhất nếu xảy ra sự cố.",
+                "INTERVALLABEL": "Sao lưu mỗi (ngày)",
                 "LASTBACKUP": "Lần sao lưu cuối cùng:",
                 "NEVERBACKEDUP": "Chưa có bản sao lưu tự động nào được thực hiện.",
                 "BACKUPNOWBUTTON": "Sao lưu ngay",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Khôi phục về mặc định",
                 "PRUNETITLE": "Lịch sử sao lưu",
                 "PRUNEINFO": "Các bản sao lưu tự động cũ hơn sẽ bị xóa để thư mục này không bị phình to vô hạn - chỉ những bản sao lưu gần đây nhất bên dưới mới được giữ lại.",
-                "KEEPCOUNTLABEL": "Giữ lại cuối cùng",
-                "INTERVALLABEL": "Sao lưu mỗi (ngày)"
+                "KEEPCOUNTLABEL": "Giữ lại cuối cùng"
             },
-            "EXPLORERTAB": "Nhà thám hiểm",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Trình khám phá khối",
                 "BLOCKEXPLORERINFO": "Trang web này được mở ra khi xem một giao dịch trên trình khám phá khối (ví dụ: nhấp chuột phải vào một giao dịch > Xem trên Trình khám phá).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mạng chính",
                 "TESTNET": "Mạng thử nghiệm",
                 "REGTEST": "Đăng ký"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Chế độ nhà phát triển",
+                "DEVMODEINFO": "Mặc định là tắt và chỉ dành cho nhà phát triển. Kích hoạt tùy chọn này sẽ hiển thị các tùy chọn để ghi đè kết nối RPC - người dùng thông thường nên để tùy chọn này tắt.",
+                "DEVMODELABEL": "Bật Chế độ nhà phát triển",
+                "WARNING": "Các thiết lập này chỉ dành cho mục đích phát triển. Việc thay đổi chúng có thể khiến ví không thể kết nối với tiến trình nền - chỉ sử dụng nếu bạn biết mình đang làm gì.",
+                "RPCHOSTTITLE": "Kết nối RPC",
+                "RPCHOSTINFO": "Theo mặc định, Altitude kết nối với daemon mà nó tự quản lý trên máy này (127.0.0.1). Việc ghi đè các thiết lập này cho phép nó kết nối với một daemon khác - ví dụ: một phiên bản regtest từ xa, mà không cần phải chạy một phiên bản cục bộ. Nếu kết nối thành công, Altitude sẽ không tải xuống hoặc khởi động daemon cục bộ của riêng nó. rpcallowip của daemon mục tiêu phải cho phép kết nối này, và rpcuser/rpcpassword bên dưới phải khớp với cấu hình của nó. Có hiệu lực ngay lập tức, không cần khởi động lại.",
+                "RPCHOSTLABEL": "Máy chủ RPC",
+                "RPCPORTLABEL": "Cổng RPC",
+                "RPCUSERLABEL": "Tên người dùng RPC",
+                "RPCPASSWORDLABEL": "Mật khẩu RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Tổng quan",
-            "TRANSACTIONSTAB": "Giao dịch",
-            "ADDRESSTABS": "Địa chỉ"
-        },
-        "CURRENCY": {
-            "TITLE": "Chọn đơn vị tiền tệ hiển thị"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Bảng điều khiển",
             "SEND": "Gửi",
+            "CREATECONTRACT": "Tạo hợp đồng",
             "RECEIVE": "Nhận được",
             "TRANSACTIONS": "Giao dịch",
             "STAKING": "Đặt cược",
             "MASTERNODES": "Các nút chính",
+            "EXPLORER": "Trình khám phá khối",
             "SYNC": {
                 "CONNECTING": "Kết nối",
                 "NOBLOCKS": "Đang chờ đợi các khối",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Ví hiện không thực hiện staking.",
                 "MASTERNODEON": "Masternode hiện đang hoạt động.",
                 "MASTERNODEOFF": "Masternode hiện không hoạt động."
-            },
-            "EXPLORER": "Trình khám phá khối"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Nhập địa chỉ trang web3",
+            "GOBUTTON": "Đi",
+            "QUICKLAUNCH": "Khởi động nhanh",
+            "DEVTOOLS": "Công cụ dành cho nhà phát triển mở",
+            "ADDLINK": "Thêm liên kết",
+            "LINKNAMEPLACEHOLDER": "Tên",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Cứu",
+            "CANCEL": "Hủy bỏ",
+            "REMOVE": "Di dời",
+            "REMOVECONFIRM": "Xóa liên kết nhanh này?",
+            "LINKEXISTS": "Liên kết đó đã có trong danh sách khởi chạy nhanh của bạn.",
+            "LINKINVALID": "Nhập địa chỉ trang web hợp lệ",
+            "LINKNETWORKLABEL": "Mạng",
+            "LOADFAILED": "Không thể tải trang web",
+            "SECURESITE": "Kết nối an toàn - chứng chỉ SSL hợp lệ",
+            "INSECURESITE": "Kết nối không an toàn",
+            "INVALIDCERTSITE": "Kết nối không an toàn - chứng chỉ SSL không hợp lệ hoặc không đáng tin cậy."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Nhập mật khẩu ví của bạn",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Đã có bản cập nhật cho Metrix Core. Bạn có muốn cài đặt ngay bây giờ không?",
             "WALLETUPDATETITLE": "Thông tin cập nhật độ cao đã có sẵn.",
             "WALLETUPDATEINFO": "Đã có bản cập nhật cho Altitude. Bạn có muốn tải xuống ngay bây giờ không?",
+            "WALLETUPDATEREADYTITLE": "Bản cập nhật độ cao đã sẵn sàng.",
+            "WALLETUPDATEREADYINFO": "Bản cập nhật đã được tải xuống. Vui lòng khởi động lại Altitude để cài đặt.",
+            "WALLETUPDATERESTARTBUTTON": "Khởi động lại và cài đặt",
+            "WALLETUPDATELATERBUTTON": "Sau đó",
             "CLIENTUPDATEBUTTON": "Cập nhật",
             "CLIENTUPDATECANCELBUTTON": "Đừng cập nhật",
             "CLIENTUPDATESKIPBUTTON": "Bỏ qua bản cập nhật này",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Mọi bản sao lưu trước đây bạn đã tạo cho tập tin ví của mình cần được thay thế bằng tập tin ví được mã hóa mới được tạo. Vì lý do bảo mật, các bản sao lưu trước đây của tập tin ví chưa được mã hóa sẽ trở nên vô dụng ngay khi bạn bắt đầu sử dụng ví được mã hóa mới.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core đã dừng hoạt động đột ngột.",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Đã xảy ra sự cố với Metrix Core khiến nó bị chấm dứt hoạt động. Bạn nên kiểm tra tệp debug.log để tìm lỗi.",
+            "CLIENTUNKNOWNERRORTITLE": "Lỗi giao tiếp Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Đã xảy ra sự cố khi giao tiếp với Metrix Core. Bạn nên kiểm tra tệp debug.log để tìm lỗi.",
+            "BOOTSTRAPFAILEDTITLE": "Quá trình khởi động lõi Metrix thất bại.",
+            "BOOTSTRAPFAILEDINFO": "Đã xảy ra sự cố khi khởi tạo Metrix Core. Bạn nên kiểm tra tệp nhật ký Altitude để tìm lỗi.",
+            "BOOTSTRAPOFFERTITLE": "Ví điện tử đã lỗi thời nghiêm trọng.",
+            "BOOTSTRAPOFFERINFO": "Phiên bản bootstrap mới nhất hiện có thể nhanh chóng cập nhật Metrix Core. Việc tiếp tục đồng bộ hóa thông thường có thể mất vài ngày để hoàn tất, vì ví của bạn cần tải xuống và xác minh mọi khối mà nó đã bỏ sót.",
+            "BOOTSTRAPOFFERBUTTON": "Tải xuống Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Tiếp tục đồng bộ hóa bình thường",
+            "BOOTSTRAPSPACEINFO": "Không đủ dung lượng ổ đĩa trống để tải xuống và giải nén bootstrap. Yêu cầu: {bắt buộc}, Khả dụng: {miễn phí}. Hãy giải phóng dung lượng và thử lại.",
+            "STARTUPFAILEDTITLE": "Khởi động Metrix Core thất bại",
+            "STARTUPFAILEDINFO": "Đã xảy ra lỗi khi khởi động Metrix Core. Bạn nên kiểm tra tệp nhật ký Altitude để tìm lỗi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Công cụ phục hồi",
             "CLIENTINVALIDCONFIGTITLE": "Cấu hình metrix.conf không hợp lệ",
             "CLIENTINVALIDCONFIGINFO": "Tệp metrix.conf của bạn có thiết lập masternode không hợp lệ, điều này sẽ khiến Metrix Core thoát ngay lập tức. Vui lòng kiểm tra tệp này.",
             "ADDREMOTEMNTITLE": "Thêm Masternode từ xa",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Khóa riêng tư của Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Chỉ mục Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Quá trình khởi động lõi Metrix thất bại.",
-            "BOOTSTRAPFAILEDINFO": "Đã xảy ra sự cố khi khởi tạo Metrix Core. Bạn nên kiểm tra tệp nhật ký Altitude để tìm lỗi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Công cụ phục hồi",
-            "STARTUPFAILEDTITLE": "Khởi động Metrix Core thất bại",
-            "STARTUPFAILEDINFO": "Đã xảy ra lỗi khi khởi động Metrix Core. Bạn nên kiểm tra tệp nhật ký Altitude để tìm lỗi.",
-            "CLIENTUNKNOWNERRORTITLE": "Lỗi giao tiếp Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Đã xảy ra sự cố khi giao tiếp với Metrix Core. Bạn nên kiểm tra tệp debug.log để tìm lỗi.",
             "UNENROLLGOVERNORTITLE": "Xác nhận việc hủy đăng ký của Thống đốc",
             "UNENROLLGOVERNORCONTENT": "Bạn có chắc chắn muốn hủy đăng ký Thống đốc của mình không? Bạn sẽ không còn có thể bỏ phiếu về quản trị chuỗi nữa.",
-            "WALLETUPDATEREADYTITLE": "Bản cập nhật độ cao đã sẵn sàng.",
-            "WALLETUPDATEREADYINFO": "Bản cập nhật đã được tải xuống. Vui lòng khởi động lại Altitude để cài đặt.",
-            "WALLETUPDATERESTARTBUTTON": "Khởi động lại và cài đặt",
-            "WALLETUPDATELATERBUTTON": "Sau đó",
             "DAPPCONNECTTITLE": "Kết nối với trang web",
             "DAPPCONNECTINFO": "Trang web này muốn kết nối với ví điện tử của bạn và xem địa chỉ cũng như số dư tài khoản.",
             "DAPPCONNECTBUTTON": "Kết nối",
+            "DAPPCONNECTADDRESSLABEL": "Địa chỉ",
+            "DAPPAPPROVEBUTTON": "Chấp thuận",
             "DAPPREJECTBUTTON": "Từ chối",
             "DAPPSENDTITLE": "Yêu cầu giao dịch hợp đồng",
             "DAPPSENDINFO": "Trang web này yêu cầu gửi giao dịch hợp đồng từ ví của bạn.",
-            "DAPPSIGNTITLE": "Yêu cầu tin nhắn ký tên",
-            "DAPPSIGNINFO": "Trang web này yêu cầu bạn ký tin nhắn bằng địa chỉ ví của mình.",
-            "DAPPNOTREADY": "Chưa thể kết nối với trang web - Metrix Core vẫn đang khởi động.",
-            "DAPPNOWALLET": "Không thể kết nối với trang web - không có địa chỉ ví nào khả dụng.",
-            "DAPPAPPROVEBUTTON": "Chấp thuận",
-            "DAPPCONNECTADDRESSLABEL": "Địa chỉ",
             "DAPPSENDSITELABEL": "Địa điểm",
             "DAPPSENDCONTRACTLABEL": "Địa chỉ liên hệ",
             "DAPPSENDAMOUNTLABEL": "Số lượng",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Phí mạng tối đa",
             "DAPPSENDMAXTOTALLABEL": "Tổng tối đa",
             "DAPPSENDDATALABEL": "Dữ liệu hợp đồng",
+            "DAPPSIGNTITLE": "Yêu cầu tin nhắn ký tên",
+            "DAPPSIGNINFO": "Trang web này yêu cầu bạn ký tin nhắn bằng địa chỉ ví của mình.",
             "DAPPSIGNMESSAGELABEL": "Tin nhắn",
-            "BOOTSTRAPOFFERTITLE": "Ví điện tử đã lỗi thời nghiêm trọng.",
-            "BOOTSTRAPOFFERINFO": "Phiên bản bootstrap mới nhất hiện có thể nhanh chóng cập nhật Metrix Core. Việc tiếp tục đồng bộ hóa thông thường có thể mất vài ngày để hoàn tất, vì ví của bạn cần tải xuống và xác minh mọi khối mà nó đã bỏ sót.",
-            "BOOTSTRAPOFFERBUTTON": "Tải xuống Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Tiếp tục đồng bộ hóa bình thường",
-            "BOOTSTRAPSPACEINFO": "Không đủ dung lượng ổ đĩa trống để tải xuống và giải nén bootstrap. Yêu cầu: {bắt buộc}, Khả dụng: {miễn phí}. Hãy giải phóng dung lượng và thử lại."
+            "DAPPNOTREADY": "Chưa thể kết nối với trang web - Metrix Core vẫn đang khởi động.",
+            "DAPPNOWALLET": "Không thể kết nối với trang web - không có địa chỉ ví nào khả dụng."
         },
         "ADDRESSBOOK": {
             "TITLE": "Sổ địa chỉ",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Mạng lưới hiện tại"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Nhập địa chỉ trang web3",
-            "GOBUTTON": "Đi",
-            "QUICKLAUNCH": "Khởi động nhanh",
-            "DEVTOOLS": "Công cụ dành cho nhà phát triển mở",
-            "ADDLINK": "Thêm liên kết",
-            "LINKNAMEPLACEHOLDER": "Tên",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Cứu",
-            "CANCEL": "Hủy bỏ",
-            "REMOVE": "Di dời",
-            "REMOVECONFIRM": "Xóa liên kết nhanh này?",
-            "LINKEXISTS": "Liên kết đó đã có trong danh sách khởi chạy nhanh của bạn.",
-            "LINKINVALID": "Nhập địa chỉ trang web hợp lệ",
-            "LINKNETWORKLABEL": "Mạng",
-            "LOADFAILED": "Không thể tải trang web",
-            "SECURESITE": "Kết nối an toàn - chứng chỉ SSL hợp lệ",
-            "INSECURESITE": "Kết nối không an toàn",
-            "INVALIDCERTSITE": "Kết nối không an toàn - chứng chỉ SSL không hợp lệ hoặc không đáng tin cậy."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Ví dự phòng...",
             "SIGNMESSAGE": "Thông điệp trên biển báo...",
             "VERIFYMESSAGE": "Xác minh tin nhắn...",
-            "LOCALE": "Ngôn ngữ...",
-            "RESTARTCORE": "Khởi động lại Metrix Core",
-            "EXIT": "Ra",
             "OPTIONS": "Tùy chọn...",
+            "LOCALE": "Ngôn ngữ...",
             "CURRENCIES": "Hiển thị đơn vị tiền tệ...",
-            "ALTITUDEREFRESH": "Làm mới dữ liệu độ cao"
+            "RESTARTCORE": "Khởi động lại Metrix Core",
+            "ALTITUDEREFRESH": "Làm mới dữ liệu độ cao",
+            "EXIT": "Ra"
         },
         "ENCRYPT": {
             "TITLE": "Mã hóa",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Tổng số dư",
+        "SPENDABLEBALANCE": "Số dư có thể chi tiêu",
+        "PENDINGBALANCE": "Số dư chờ xử lý",
         "CANCELBUTTON": "Hủy bỏ",
         "DONEBUTTON": "Xong",
         "OKBUTTON": "ĐƯỢC RỒI",
+        "ACCEPTBUTTON": "Chấp nhận",
         "CLEARALLBUTTON": "Xóa tất cả",
         "ENTERACCOUNTLABEL": "Nhập nhãn cho địa chỉ này",
         "ENTERADDRESSLABEL": "Nhập địa chỉ Ma trận",
@@ -464,11 +511,8 @@
         "SORTBY": "Sắp xếp theo",
         "SEARCH": "Tìm kiếm",
         "FEE": "Phí",
-        "ACCEPTBUTTON": "Chấp nhận",
         "CONFIRMED": "Đã xác nhận",
         "UNCONFIRMED": "Chưa được xác nhận",
-        "PENDINGBALANCE": "Số dư chờ xử lý",
-        "SPENDABLEBALANCE": "Số dư có thể chi tiêu",
         "SAVEBUTTON": "Cứu"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Khởi động lại Metrix Core...",
         "BOOTSTRAPPING": "Đang tải xuống bootstrap...",
         "BOOTSTRAPEXTRACTING": "Đang trích xuất bootstrap...",
-        "TIMEREMAINING": "còn lại:"
+        "TIMEREMAINING": "còn lại:",
+        "DEVRPCOVERRIDEACTIVE": "Một thiết lập ghi đè kết nối RPC dành cho nhà phát triển đã được thiết lập (Tùy chọn > Nhà phát triển) nhưng không phản hồi. Hãy bỏ thiết lập này để kết nối lại với daemon cục bộ một cách bình thường.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Xóa ghi đè RPC và kết nối lại"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Tài khoản mới được tạo thành công",
         "ADDRESSCOPIEDCLIPBOARD": "Địa chỉ đã được sao chép vào clipboard",
+        "COPIEDCLIPBOARD": "Đã sao chép vào clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Các giao dịch đã được sao chép vào clipboard",
         "EMPTYFIELDS": "Vui lòng điền đầy đủ thông tin vào tất cả các trường.",
         "NOUPDATE": "Không có bản cập nhật nào.",
         "WALLETBACKEDUP": "Sao lưu ví thành công",
+        "WALLETBACKUPFAILED": "Sao lưu ví tự động thất bại - hãy kiểm tra vị trí sao lưu và dung lượng ổ đĩa trống.",
         "PASSPHRASEMISMATCH": "Mật khẩu bạn đã nhập không khớp.",
         "CHECKINGUPDATE": "Đang kiểm tra cập nhật...",
         "CHECKINGUPDATEFAILED": "Không thể kiểm tra cập nhật. Vui lòng kiểm tra mạng của bạn.",
+        "WALLETUPDATEDOWNLOADING": "Đang tải xuống bản cập nhật...",
         "SENDINGEXCEEDSBALANCE": "Số tiền bạn đang gửi vượt quá số dư bạn đã chọn.",
         "MISSINGCHANGEADDRESS": "Bạn phải chỉ định địa chỉ thay đổi.",
         "MISSINGDESTINATIONADDRESS": "Bạn phải chỉ định địa chỉ đích.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Mã hóa ví...",
         "CHANGINGPASSPHARASE": "Đang thay đổi mật khẩu...",
         "STARTINGMASTERNODE": "Khởi động masternode...",
+        "STOPPINGMASTERNODE": "Đang dừng masternode...",
         "SENDINGTRANSACTION": "Đang gửi giao dịch...",
         "SIGNINGMESSAGE": "Lời nhắn ký tên...",
         "SIGNEDMESSAGE": "Tin nhắn đã ký",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Đang mở khóa ví...",
         "TRANSACTIONMISMATCH": "Giao dịch không thành công. Vui lòng thử lại.",
         "MINIMUMCONFIRMATIONS": "Tất cả các giao dịch nhập liệu đều yêu cầu ít nhất 1 xác nhận trước khi chi tiêu.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Các giao dịch đã được sao chép vào clipboard",
-        "STOPPINGMASTERNODE": "Đang dừng masternode...",
         "FAILEDTOWRITECONFIG": "Đã xảy ra lỗi khi ghi vào tệp metrix.conf của bạn. Hãy kiểm tra xem tệp có tồn tại và Altitude có quyền ghi hay không.",
         "NOPUBLICUP": "Không tìm thấy địa chỉ IP công cộng. Vui lòng kiểm tra kết nối internet và khởi động lại Altitude.",
         "CONFIGURINGLOCALMN": "Đang cấu hình Masternode cục bộ...",
         "REPORTINGISSUE": "Đang lấy thông tin chẩn đoán... Thông tin này sẽ được sao chép vào clipboard của bạn.",
-        "WALLETUPDATEDOWNLOADING": "Đang tải xuống bản cập nhật...",
-        "WALLETBACKUPFAILED": "Sao lưu ví tự động thất bại - hãy kiểm tra vị trí sao lưu và dung lượng ổ đĩa trống.",
         "EXPLORERURLSAVED": "URL của trình duyệt đã được lưu",
         "EXPLORERURLRESET": "URL của trình duyệt đã được khôi phục về mặc định.",
         "EXPLORERURLINVALID": "Đó không phải là URL http(s) hợp lệ.",
-        "EXPLORERURLUNREACHABLE": "Không thể truy cập URL đó - vui lòng kiểm tra lại và thử lại."
+        "EXPLORERURLUNREACHABLE": "Không thể truy cập URL đó - vui lòng kiểm tra lại và thử lại.",
+        "DEVRPCHOSTSAVED": "Máy chủ RPC đã được lưu",
+        "DEVRPCHOSTRESET": "Máy chủ RPC đã được khôi phục về mặc định (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Số xu đã nhận",
+        "NEWTRANSACTION_TITLE_STAKE": "Cổ phần đã nhận",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Đã nhận phần thưởng Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Vài giây",
@@ -533,11 +587,6 @@
         "MONTHS": "tháng",
         "AYEAR": "Một năm",
         "YEARS": "năm"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Số xu đã nhận",
-        "NEWTRANSACTION_TITLE_STAKE": "Cổ phần đã nhận",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Đã nhận phần thưởng Masternode"
     },
     "MONTH": {
         "JAN": "THÁNG MỘT",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Các Thống đốc chịu trách nhiệm bỏ phiếu về ngân sách hàng tháng và các thay đổi trên blockchain. Bạn có thể trở thành Thống đốc bằng cách khóa tài sản thế chấp phù hợp trong hợp đồng Quản trị.",
                 "COLLATERAL": "Tài sản thế chấp cần thiết",
                 "ENROLL": "Tham gia",
+                "SELECTAGOVERNOR": "Chọn địa chỉ của thống đốc đủ điều kiện",
+                "GOVERNORNOTSELECTED": "Không có địa chỉ hợp lệ nào được chọn.",
                 "CONFIRMENROLL": "Bạn sắp đăng ký làm Thống đốc. Thao tác này sẽ gửi một giao dịch kèm theo tài sản thế chấp cần thiết đến hợp đồng quản trị. Bạn có thể hủy đăng ký bất cứ lúc nào.",
                 "ISGOVERNORTITLE": "Ngài là một Thống đốc năng động!",
                 "ISGOVERNORDETAIL1": "Các thống đốc chịu trách nhiệm bỏ phiếu về ngân sách hàng tháng và các thay đổi trên công nghệ blockchain.",
                 "ISGOVERNORDETAIL2": "Để tiếp tục giữ chức Thống đốc, bạn cần tham gia ít nhất 1 cuộc bỏ phiếu mỗi 30 ngày.",
                 "ISGOVERNORDETAIL3": "Nếu không có gì để bỏ phiếu, bạn có thể tiếp tục quá trình đăng ký thủ công bằng cách gửi tín hiệu ping chủ động.",
+                "MYGOVERNORADDRESS": "Bài phát biểu của tôi với tư cách Thống đốc",
                 "UNENROLL": "Hủy đăng ký",
                 "PING": "Gửi ping chủ động",
                 "LASTPINGTITLE": "Lần ping cuối cùng",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ngày",
                 "GOVERNORVOTEMATURITYHOURS": "giờ",
                 "GOVERNORVOTEMATURITYSUFFIX": "cho đến khi trưởng thành",
-                "MYGOVERNORADDRESS": "Bài phát biểu của tôi với tư cách Thống đốc",
-                "SELECTAGOVERNOR": "Chọn địa chỉ của thống đốc đủ điều kiện",
-                "GOVERNORNOTSELECTED": "Không có địa chỉ hợp lệ nào được chọn.",
                 "NOTFULLYSYNCEDTITLE": "Tình trạng thống đốc hiện không khả dụng",
                 "NOTFULLYSYNCEDDETAIL": "Trạng thái đăng ký Thống đốc của bạn sẽ hiển thị khi chuỗi khối của bạn được đồng bộ hóa hoàn toàn.",
                 "DGPMIGRATIONTITLE": "Di cư DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Đề xuất của bạn đã được tạo thành công.",
             "ENROLLINGGOVERNOR": "Đăng ký làm Thống đốc...",
             "ENROLLEDGOVERNOR": "Quá trình đăng ký của bạn sẽ hoàn tất sau khi giao dịch được xác nhận.",
-            "VOTINGONPROPOSAL": "Gửi đề xuất bỏ phiếu",
-            "VOTEDONPROPOSAL": "Phiếu bầu của bạn sẽ được tính sau khi giao dịch được xác nhận.",
             "PINGINGGOVERNOR": "Đang gửi tín hiệu ping...",
             "PINGEDGOVERNOR": "Đã gửi ping thành công. Thống đốc của bạn sẽ được cập nhật sau khi giao dịch được xác nhận.",
+            "VOTINGONPROPOSAL": "Gửi đề xuất bỏ phiếu",
+            "VOTEDONPROPOSAL": "Phiếu bầu của bạn sẽ được tính sau khi giao dịch được xác nhận.",
             "UNENROLLINGGOVERNOR": "Thống đốc rút tên khỏi danh sách...",
             "UNENROLLEDGOVERNOR": "Giao dịch đã được gửi. Thống đốc của bạn sẽ bị hủy đăng ký sau khi giao dịch được xác nhận.",
             "GOVERNORNOTMATURE": "Thống đốc của bạn chưa đủ chín chắn để thực hiện hành động này."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Mua Metrix",
+                "SEARCH": "Lịch sử"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Bạn gửi",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Lịch sử giao dịch",
                 "SEARCHBUTTON": "TÌM KIẾM",
+                "SEARCHPLACEHOLDER": "Nhập địa chỉ MRX hoặc BTC",
                 "TRANSACTIONDATE": "Ngày",
                 "TRANSACTIONTYPE": "Loại TX",
                 "TRANSACTIONAMOUNT": "Số lượng",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Đã xác nhận",
                 "TRANSACTIONNOTCONFIRMED": "Chưa được xác nhận",
                 "TRANSACTIONREFUNDED": "Đã hoàn tiền - Dưới mức tối thiểu",
-                "AVGSWAPPRICE": "Giá hoán đổi trung bình",
-                "SEARCHPLACEHOLDER": "Nhập địa chỉ MRX hoặc BTC"
+                "AVGSWAPPRICE": "Giá hoán đổi trung bình"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Đang tạo địa chỉ hoán đổi...",
             "ALREADYHAVEADDRESS": "Bạn đã có một địa chỉ BTC được liên kết với địa chỉ Metrix này.",
             "NOADDRESS": "Bạn chưa nhập địa chỉ Metrix."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Mua Metrix",
-                "SEARCH": "Lịch sử"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Bỏ ẩn",
                 "EMPTYTITLE": "Chưa tìm thấy mã thông báo nào",
                 "EMPTYDETAIL": "Altitude tự động kiểm tra trình khám phá khối để tìm các token MRC20 và MRC721 được gửi đến địa chỉ của bạn, sau đó xác minh mọi thứ trực tiếp với node của riêng bạn. Bạn cũng có thể thêm token theo cách thủ công nếu bạn biết địa chỉ hợp đồng của nó.",
+                "EMPTYDETAILCHECKINGDISABLED": "Chức năng kiểm tra token tự động đã bị tắt, vì vậy địa chỉ của bạn không được kiểm tra xem có token hay không. Hãy bật lại chức năng này ở trên, hoặc thêm token thủ công nếu bạn biết địa chỉ hợp đồng của nó.",
                 "HIDDENTITLE": "Mã thông báo ẩn",
                 "CONTEXTMENUHIDE": "Ẩn mã thông báo",
                 "ITEMSSUFFIX": "mặt hàng)",
-                "NONENUMERABLETOOLTIP": "Bộ sưu tập này không hỗ trợ liệt kê từng mặt hàng riêng lẻ - thay vào đó chỉ hiển thị số lượng bạn đang sở hữu."
+                "NONENUMERABLETOOLTIP": "Bộ sưu tập này không hỗ trợ liệt kê từng mặt hàng riêng lẻ - thay vào đó chỉ hiển thị số lượng bạn đang sở hữu.",
+                "CHECKINGENABLED": "Kiểm tra",
+                "CHECKINGDISABLED": "Đánh dấu hoàn thành",
+                "CHECKINGENABLEDTOOLTIP": "Chức năng kiểm tra token đang được bật - Altitude định kỳ kiểm tra địa chỉ của bạn để tìm token và cập nhật số dư. Nhấp vào đây để tắt.",
+                "CHECKINGDISABLEDTOOLTIP": "Chức năng kiểm tra mã thông báo đã tắt - hãy nhấp vào đây để bật lại.",
+                "CHECKINGDISABLEDNOTICE": "Tính năng kiểm tra token tự động đã bị tắt. Địa chỉ của bạn sẽ không được quét token và số dư sẽ không được cập nhật. Bạn vẫn có thể thêm token thủ công."
             },
             "ADDTOKEN": {
                 "TITLE": "Thêm mã thông báo",

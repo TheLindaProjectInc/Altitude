@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Account aanmaken",
             "HIDEEMPTYACCOUNTS": "Naamloze lege accounts verbergen"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Overzicht",
+            "TRANSACTIONSTAB": "Transacties",
+            "ADDRESSTABS": "Adressen"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ontvanger toevoegen",
             "SEND": "Versturen",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datum",
             "TABLECOLUMNS_CONFIRMS": "Bevestigingen",
             "ALL_SELECTUNSELECT": "Alles weergeven/verbergen",
+            "TREEMODE": "Boommodus",
+            "LISTMODE": "Lijstmodus",
             "SENDAVAILABLE": "Gebruik beschikbaar saldo",
             "INPUTLOCKED": "De invoer is vergrendeld. U moet deze invoer ontgrendelen om deze te kunnen gebruiken.",
             "CONTEXTMENULOCKINPUT": "Invoer vergrendelen",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Na aftrek van kosten",
             "QUANTITY": "Hoeveelheid",
             "BYTES": "Bytes",
-            "TREEMODE": "Boommodus",
-            "LISTMODE": "Lijstmodus",
             "ALERTFEECHANGETITLE": "Tariefwijziging",
             "ALERTFEECHANGECONTENT": "De daadwerkelijke transactiekosten zijn hoger dan verwacht. Graag de nieuwe kosten bevestigen:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Contract opstellen",
+            "INFO": "Implementeer een smart contract op het netwerk door de gecompileerde bytecode in te dienen. Dit is een essentiële blockchainfunctie - controleer uw bytecode en gasinstellingen zorgvuldig voordat u implementeert, implementatie kan niet ongedaan worden gemaakt.",
+            "FROM": "Van",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Plak hier de gecompileerde contractbytecode (hex).",
+            "INVALIDBYTECODE": "De bytecode moet een geldige hexadecimale tekenreeks (0-9, a-f) zijn met een even aantal tekens.",
+            "GASLIMIT": "Gaslimiet",
+            "GASLIMITRANGE": "Bereik",
+            "GASPRICE": "Benzineprijs (MRX per gaseenheid)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Geschatte maximale kosten",
+            "DEPLOYBUTTON": "Implementatiecontract",
+            "INCOMPLETEFORM": "Selecteer een afzenderadres, voer een geldige bytecode in en stel een geldige gaslimiet/prijs in.",
+            "HIGHGASPRICETITLE": "Hoge gasprijs",
+            "HIGHGASPRICEINFO": "De gasprijs die u hebt ingesteld is ongebruikelijk hoog. Deze implementatie kan tot wel het volgende kosten:",
+            "DEPLOYING": "Het contract wordt geïmplementeerd...",
+            "DEPLOYED": "Contractuele implementatie ingediend",
+            "RESULTTITLE": "Implementatieresultaat",
+            "STATUS": "Status",
+            "STATUSPENDING": "Bevestiging in afwachting...",
+            "STATUSCONFIRMED": "Succesvol geïmplementeerd",
+            "STATUSFAILED": "Implementatie mislukt",
+            "TXID": "Transactie-ID",
+            "SENDER": "Afzender",
+            "CONTRACTADDRESS": "Contractadres",
+            "GASUSED": "Gebruikt gas",
+            "DONEBUTTON": "Klaar",
+            "DEPLOYANOTHERBUTTON": "Een andere inzetten"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transacties",
+            "COPYBLOCKHASH": "Kopieer blokhash",
+            "COPYTXID": "Transactie-ID kopiëren",
+            "COPYACCOUNT": "Accountnaam kopiëren",
+            "COPYADDRESS": "Kopieer adres",
+            "COPYAMOUNT": "Kopieerbedrag",
+            "COPTBLOCKINDEX": "Kopieerblokindex",
+            "EXPLORER": "Openen in Blokverkenner"
         },
         "STAKING": {
             "UNLOCK": "Ontgrendelen voor staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adres",
             "ENABLED": "Ingeschakeld",
-            "STARTBUTTON": "Start Local",
-            "STARTALIASBUTTON": "Startalias",
-            "STARTALLBUTTON": "Start alles",
             "NOMASTERNODES": "Je hebt geen masternodes.",
             "NOMNOUTPUTS": "Geen Masternode-uitgangen gevonden. Om een lokale Masternode te starten, stuur je precies 2, 5, 25, 50 of 100 miljoen munten naar je Masternode-adres en wacht je op 15 bevestigingen.",
+            "STARTBUTTON": "Start Local",
             "STOPBUTTON": "Stop Local",
+            "STARTALIASBUTTON": "Startalias",
             "STOPALIASBUTTON": "Stop Alias",
+            "STARTALLBUTTON": "Start alles",
             "ADDREMOTE": "Externe masternode toevoegen",
             "REMOVEMN": "Masternode verwijderen",
             "ADDLOCAL": "Lokale masternode instellen",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Algemeen",
                 "COREVERSION": "Kernversie",
+                "ALTITUDEVERSION": "Hoogteversie",
                 "PROTOCOLVERSION": "Protocolversie",
                 "WALLETVERSION": "Wallet.dat-versie",
                 "NETWORKTITLE": "Netwerk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Aantal masternodes",
                 "BLOCKCHAINTITLE": "Blockchain",
                 "NUMBERBLOCKS": "Huidig aantal blokken",
-                "BESTBLOCKTTIME": "Laatste bloktijd",
-                "ALTITUDEVERSION": "Hoogteversie"
+                "BESTBLOCKTTIME": "Laatste bloktijd"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Welkom bij de Metrix Core RPC-console. Typ 'help' voor een overzicht van de beschikbare opdrachten.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Taal selecteren"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transacties",
-            "COPYBLOCKHASH": "Kopieer blokhash",
-            "COPYTXID": "Transactie-ID kopiëren",
-            "COPYACCOUNT": "Accountnaam kopiëren",
-            "COPYADDRESS": "Kopieer adres",
-            "COPYAMOUNT": "Kopieerbedrag",
-            "COPTBLOCKINDEX": "Kopieerblokindex",
-            "EXPLORER": "Openen in Blokverkenner"
+        "CURRENCY": {
+            "TITLE": "Selecteer de weergavevaluta"
         },
         "EXPLORER": {
             "TITLE": "Blokkenverkenner",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netwerk",
             "WINDOTAB": "Raam",
+            "BACKUPTAB": "Back-up",
+            "EXPLORERTAB": "Ontdekkingsreiziger",
+            "DEVELOPERTAB": "Ontwikkelaar",
             "NETWORK": {
                 "PROXY": "Verbinden via een SOCKS5-proxy",
                 "PROXYIP": "Proxy-IP-adres",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimaliseer bij het sluiten",
                 "BEHAVIOURTITLE": "Gedrag van het systeemvak en het venster"
             },
-            "BACKUPTAB": "Back-up",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatische back-up",
                 "ENABLED": "Maak automatisch een back-up van wallet.dat volgens een vast schema.",
                 "ENABLEDINFO": "Maakt volgens een vast schema een nieuwe back-up van uw portemonneebestand, zodat er altijd een recente kopie beschikbaar is voor het geval er iets misgaat.",
+                "INTERVALLABEL": "Maak elke (dagen) een back-up.",
                 "LASTBACKUP": "Laatste back-up:",
                 "NEVERBACKEDUP": "Er is nog geen automatische back-up gemaakt.",
                 "BACKUPNOWBUTTON": "Maak nu een back-up",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Terugzetten naar standaardinstellingen",
                 "PRUNETITLE": "Back-upgeschiedenis",
                 "PRUNEINFO": "Oudere automatische back-ups worden verwijderd, zodat deze map niet oneindig blijft groeien - alleen de meest recente back-ups hieronder worden bewaard.",
-                "KEEPCOUNTLABEL": "Bewaar als laatste",
-                "INTERVALLABEL": "Maak elke (dagen) een back-up."
+                "KEEPCOUNTLABEL": "Bewaar als laatste"
             },
-            "EXPLORERTAB": "Ontdekkingsreiziger",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokkenverkenner",
                 "BLOCKEXPLORERINFO": "De site werd geopend bij het bekijken van een transactie in de block explorer (bijvoorbeeld door met de rechtermuisknop op een transactie te klikken > 'Bekijken in Explorer').",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Ontwikkelaarsmodus",
+                "DEVMODEINFO": "Standaard uitgeschakeld en alleen bedoeld voor ontwikkelaars. Door dit in te schakelen worden opties weergegeven om de RPC-verbinding te overschrijven - standaardgebruikers moeten dit uitgeschakeld laten.",
+                "DEVMODELABEL": "Ontwikkelaarsmodus inschakelen",
+                "WARNING": "Deze instellingen zijn alleen bedoeld voor ontwikkelingsdoeleinden. Het wijzigen ervan kan ertoe leiden dat de wallet helemaal geen verbinding meer kan maken met een daemon. Gebruik dit dus alleen als u weet wat u doet.",
+                "RPCHOSTTITLE": "RPC-verbinding",
+                "RPCHOSTINFO": "Standaard maakt Altitude verbinding met de daemon die het zelf beheert, op deze machine (127.0.0.1). Door dit te overschrijven, kan het verbinding maken met een andere daemon, bijvoorbeeld een externe regtest-instantie, zonder dat er lokaal een daemon hoeft te worden uitgevoerd. Als de verbinding tot stand komt, zal Altitude geen eigen lokale daemon downloaden of starten. Het rpcallowip van de doeldaemon moet deze verbinding toestaan en rpcuser/rpcpassword hieronder moet overeenkomen met de configuratie. De wijzigingen worden direct van kracht, herstarten is niet nodig.",
+                "RPCHOSTLABEL": "RPC-host",
+                "RPCPORTLABEL": "RPC-poort",
+                "RPCUSERLABEL": "RPC-gebruikersnaam",
+                "RPCPASSWORDLABEL": "RPC-wachtwoord"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Overzicht",
-            "TRANSACTIONSTAB": "Transacties",
-            "ADDRESSTABS": "Adressen"
-        },
-        "CURRENCY": {
-            "TITLE": "Selecteer de weergavevaluta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Versturen",
+            "CREATECONTRACT": "Contract opstellen",
             "RECEIVE": "Ontvangen",
             "TRANSACTIONS": "Transacties",
             "STAKING": "Inzetten",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Blokkenverkenner",
             "SYNC": {
                 "CONNECTING": "Verbinden",
                 "NOBLOCKS": "Wachten op blokken",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Wallet is momenteel niet aan het staken.",
                 "MASTERNODEON": "De masternode draait momenteel.",
                 "MASTERNODEOFF": "De masternode is momenteel niet actief."
-            },
-            "EXPLORER": "Blokkenverkenner"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Voer een web3-siteadres in",
+            "GOBUTTON": "Gaan",
+            "QUICKLAUNCH": "Snelstart",
+            "DEVTOOLS": "Open ontwikkelaarstools",
+            "ADDLINK": "Link toevoegen",
+            "LINKNAMEPLACEHOLDER": "Naam",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Redden",
+            "CANCEL": "Annuleren",
+            "REMOVE": "Verwijderen",
+            "REMOVECONFIRM": "Verwijder deze snelkoppeling?",
+            "LINKEXISTS": "Die link staat al in je lijst met snelstartopties.",
+            "LINKINVALID": "Voer een geldig websiteadres in.",
+            "LINKNETWORKLABEL": "Netwerk",
+            "LOADFAILED": "Site laden mislukt",
+            "SECURESITE": "De verbinding is beveiligd - geldig SSL-certificaat",
+            "INSECURESITE": "De verbinding is niet beveiligd.",
+            "INVALIDCERTSITE": "De verbinding is niet beveiligd - ongeldig of onbetrouwbaar SSL-certificaat."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Voer uw portemonneewachtwoord in",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Er is een update beschikbaar voor Metrix Core. Wilt u deze nu installeren?",
             "WALLETUPDATETITLE": "Hoogte-update beschikbaar",
             "WALLETUPDATEINFO": "Er is een update beschikbaar voor Altitude. Wilt u deze nu downloaden?",
+            "WALLETUPDATEREADYTITLE": "Hoogte-update gereed",
+            "WALLETUPDATEREADYINFO": "De update is gedownload. Start Altitude nu opnieuw op om de update te installeren.",
+            "WALLETUPDATERESTARTBUTTON": "Opnieuw opstarten en installeren",
+            "WALLETUPDATELATERBUTTON": "Later",
             "CLIENTUPDATEBUTTON": "Update",
             "CLIENTUPDATECANCELBUTTON": "Niet bijwerken",
             "CLIENTUPDATESKIPBUTTON": "Sla deze update over.",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Alle eerdere back-ups die u van uw walletbestand hebt gemaakt, moeten worden vervangen door het nieuw gegenereerde, versleutelde walletbestand. Om veiligheidsredenen worden eerdere back-ups van het onversleutelde walletbestand onbruikbaar zodra u de nieuwe, versleutelde wallet in gebruik neemt.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core is onverwacht gestopt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Er is een probleem opgetreden met Metrix Core waardoor het programma is afgesloten. Het wordt aanbevolen om uw debug.log-bestand te controleren op problemen.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Communicatiefout",
+            "CLIENTUNKNOWNERRORINFO": "Er is een probleem opgetreden bij de communicatie met Metrix Core. Het wordt aanbevolen om uw debug.log-bestand te controleren op problemen.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislukt",
+            "BOOTSTRAPFAILEDINFO": "Er is een probleem opgetreden bij het opstarten van Metrix Core. Het wordt aanbevolen om uw Altitude-logbestand te controleren op problemen.",
+            "BOOTSTRAPOFFERTITLE": "De portemonnee is aanzienlijk verouderd.",
+            "BOOTSTRAPOFFERINFO": "Er is een recente bootstrap beschikbaar waarmee Metrix Core snel kan worden bijgewerkt. Het voortzetten van een normale synchronisatie kan echter enkele dagen duren, omdat uw wallet alle gemiste blokken moet downloaden en verifiëren.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap downloaden",
+            "BOOTSTRAPOFFERCANCEL": "Normale synchronisatie voortzetten",
+            "BOOTSTRAPSPACEINFO": "Er is onvoldoende vrije schijfruimte om de bootstrap te downloaden en uit te pakken. Vereist: {required}, Beschikbaar: {free}. Maak wat ruimte vrij en probeer het opnieuw.",
+            "STARTUPFAILEDTITLE": "Metrix Core-opstart mislukt",
+            "STARTUPFAILEDINFO": "Er is een fout opgetreden bij het opstarten van Metrix Core. Het wordt aanbevolen om uw Altitude-logbestand te controleren op problemen.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Hersteltools",
             "CLIENTINVALIDCONFIGTITLE": "Ongeldige configuratie in metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Uw metrix.conf-bestand bevat een ongeldige masternode-configuratie, waardoor Metrix Core direct afsluit. Controleer dit bestand.",
             "ADDREMOTEMNTITLE": "Externe masternode toevoegen",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Privésleutel van de masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislukt",
-            "BOOTSTRAPFAILEDINFO": "Er is een probleem opgetreden bij het opstarten van Metrix Core. Het wordt aanbevolen om uw Altitude-logbestand te controleren op problemen.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Hersteltools",
-            "STARTUPFAILEDTITLE": "Metrix Core-opstart mislukt",
-            "STARTUPFAILEDINFO": "Er is een fout opgetreden bij het opstarten van Metrix Core. Het wordt aanbevolen om uw Altitude-logbestand te controleren op problemen.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Communicatiefout",
-            "CLIENTUNKNOWNERRORINFO": "Er is een probleem opgetreden bij de communicatie met Metrix Core. Het wordt aanbevolen om uw debug.log-bestand te controleren op problemen.",
             "UNENROLLGOVERNORTITLE": "Bevestig de uitschrijving van de gouverneur",
             "UNENROLLGOVERNORCONTENT": "Weet u zeker dat u uw gouverneur wilt uitschrijven? U kunt dan niet langer stemmen over ketenbestuur.",
-            "WALLETUPDATEREADYTITLE": "Hoogte-update gereed",
-            "WALLETUPDATEREADYINFO": "De update is gedownload. Start Altitude nu opnieuw op om de update te installeren.",
-            "WALLETUPDATERESTARTBUTTON": "Opnieuw opstarten en installeren",
-            "WALLETUPDATELATERBUTTON": "Later",
             "DAPPCONNECTTITLE": "Verbinden met de site",
             "DAPPCONNECTINFO": "Deze site wil verbinding maken met uw portemonnee om uw adres en saldo te bekijken.",
             "DAPPCONNECTBUTTON": "Verbinden",
+            "DAPPCONNECTADDRESSLABEL": "Adres",
+            "DAPPAPPROVEBUTTON": "Goedkeuren",
             "DAPPREJECTBUTTON": "Afwijzen",
             "DAPPSENDTITLE": "Verzoek om contracttransactie",
             "DAPPSENDINFO": "Deze site verzoekt om een contracttransactie vanuit uw portemonnee te verzenden.",
-            "DAPPSIGNTITLE": "Verzoek om een ondertekeningsbericht",
-            "DAPPSIGNINFO": "Deze site vraagt u om een bericht te ondertekenen met uw walletadres.",
-            "DAPPNOTREADY": "Er kan nog geen verbinding met de site worden gemaakt - Metrix Core is nog aan het opstarten.",
-            "DAPPNOWALLET": "Kan geen verbinding maken met de site - er is geen walletadres beschikbaar.",
-            "DAPPAPPROVEBUTTON": "Goedkeuren",
-            "DAPPCONNECTADDRESSLABEL": "Adres",
             "DAPPSENDSITELABEL": "Site",
             "DAPPSENDCONTRACTLABEL": "Contractadres",
             "DAPPSENDAMOUNTLABEL": "Hoeveelheid",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximale netwerkkosten",
             "DAPPSENDMAXTOTALLABEL": "Max Totaal",
             "DAPPSENDDATALABEL": "Contractgegevens",
+            "DAPPSIGNTITLE": "Verzoek om een ondertekeningsbericht",
+            "DAPPSIGNINFO": "Deze site vraagt u om een bericht te ondertekenen met uw walletadres.",
             "DAPPSIGNMESSAGELABEL": "Bericht",
-            "BOOTSTRAPOFFERTITLE": "De portemonnee is aanzienlijk verouderd.",
-            "BOOTSTRAPOFFERINFO": "Er is een recente bootstrap beschikbaar waarmee Metrix Core snel kan worden bijgewerkt. Het voortzetten van een normale synchronisatie kan echter enkele dagen duren, omdat uw wallet alle gemiste blokken moet downloaden en verifiëren.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap downloaden",
-            "BOOTSTRAPOFFERCANCEL": "Normale synchronisatie voortzetten",
-            "BOOTSTRAPSPACEINFO": "Er is onvoldoende vrije schijfruimte om de bootstrap te downloaden en uit te pakken. Vereist: {required}, Beschikbaar: {free}. Maak wat ruimte vrij en probeer het opnieuw."
+            "DAPPNOTREADY": "Er kan nog geen verbinding met de site worden gemaakt - Metrix Core is nog aan het opstarten.",
+            "DAPPNOWALLET": "Kan geen verbinding maken met de site - er is geen walletadres beschikbaar."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Huidig netwerk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Voer een web3-siteadres in",
-            "GOBUTTON": "Gaan",
-            "QUICKLAUNCH": "Snelstart",
-            "DEVTOOLS": "Open ontwikkelaarstools",
-            "ADDLINK": "Link toevoegen",
-            "LINKNAMEPLACEHOLDER": "Naam",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Redden",
-            "CANCEL": "Annuleren",
-            "REMOVE": "Verwijderen",
-            "REMOVECONFIRM": "Verwijder deze snelkoppeling?",
-            "LINKEXISTS": "Die link staat al in je lijst met snelstartopties.",
-            "LINKINVALID": "Voer een geldig websiteadres in.",
-            "LINKNETWORKLABEL": "Netwerk",
-            "LOADFAILED": "Site laden mislukt",
-            "SECURESITE": "De verbinding is beveiligd - geldig SSL-certificaat",
-            "INSECURESITE": "De verbinding is niet beveiligd.",
-            "INVALIDCERTSITE": "De verbinding is niet beveiligd - ongeldig of onbetrouwbaar SSL-certificaat."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Reserveportemonnee...",
             "SIGNMESSAGE": "Bordbericht...",
             "VERIFYMESSAGE": "Bericht verifiëren...",
-            "LOCALE": "Taal...",
-            "RESTARTCORE": "Metrix Core opnieuw opstarten",
-            "EXIT": "Uitgang",
             "OPTIONS": "Opties...",
+            "LOCALE": "Taal...",
             "CURRENCIES": "Valuta weergeven...",
-            "ALTITUDEREFRESH": "Hoogtegegevens bijwerken"
+            "RESTARTCORE": "Metrix Core opnieuw opstarten",
+            "ALTITUDEREFRESH": "Hoogtegegevens bijwerken",
+            "EXIT": "Uitgang"
         },
         "ENCRYPT": {
             "TITLE": "Versleutelen",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Totaalsaldo",
+        "SPENDABLEBALANCE": "Besteedbaar saldo",
+        "PENDINGBALANCE": "In afwachting zijnde saldo",
         "CANCELBUTTON": "Annuleren",
         "DONEBUTTON": "Klaar",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Accepteren",
         "CLEARALLBUTTON": "Alles wissen",
         "ENTERACCOUNTLABEL": "Voer een label in voor dit adres.",
         "ENTERADDRESSLABEL": "Voer een Metrix-adres in.",
@@ -464,11 +511,8 @@
         "SORTBY": "Sorteren op",
         "SEARCH": "Zoekopdracht",
         "FEE": "Tarief",
-        "ACCEPTBUTTON": "Accepteren",
         "CONFIRMED": "Bevestigd",
         "UNCONFIRMED": "Niet bevestigd",
-        "PENDINGBALANCE": "In afwachting zijnde saldo",
-        "SPENDABLEBALANCE": "Besteedbaar saldo",
         "SAVEBUTTON": "Redden"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core opnieuw opstarten...",
         "BOOTSTRAPPING": "Bootstrap downloaden...",
         "BOOTSTRAPEXTRACTING": "Bootstrap extraheren...",
-        "TIMEREMAINING": "overig:"
+        "TIMEREMAINING": "overig:",
+        "DEVRPCOVERRIDEACTIVE": "Er is een RPC-verbindingsoverride voor ontwikkelaars ingesteld (Opties > Ontwikkelaar) die niet reageert. Schakel deze uit om normaal opnieuw verbinding te maken met de lokale daemon.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Wis de RPC-override en maak opnieuw verbinding."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nieuw account succesvol aangemaakt",
         "ADDRESSCOPIEDCLIPBOARD": "Adres gekopieerd naar het klembord",
+        "COPIEDCLIPBOARD": "Gekopieerd naar het klembord",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transacties gekopieerd naar het klembord",
         "EMPTYFIELDS": "Vul alle velden in.",
         "NOUPDATE": "Geen update beschikbaar",
         "WALLETBACKEDUP": "Back-up van de portemonnee is succesvol.",
+        "WALLETBACKUPFAILED": "Automatische back-up van uw portemonnee is mislukt - controleer uw back-uplocatie en beschikbare schijfruimte.",
         "PASSPHRASEMISMATCH": "De wachtwoorden die u hebt ingevoerd, komen niet overeen.",
         "CHECKINGUPDATE": "Controleren op updates...",
         "CHECKINGUPDATEFAILED": "Kan niet controleren op updates. Controleer uw netwerk.",
+        "WALLETUPDATEDOWNLOADING": "Update downloaden...",
         "SENDINGEXCEEDSBALANCE": "Het bedrag dat u verzendt, overschrijdt uw geselecteerde saldo.",
         "MISSINGCHANGEADDRESS": "U dient een adres voor het wijzigen van de gegevens op te geven.",
         "MISSINGDESTINATIONADDRESS": "U moet een bestemmingsadres opgeven.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Portemonnee versleutelen...",
         "CHANGINGPASSPHARASE": "Wachtwoord wijzigen...",
         "STARTINGMASTERNODE": "Masternode wordt gestart...",
+        "STOPPINGMASTERNODE": "Masternode wordt gestopt...",
         "SENDINGTRANSACTION": "Transactie verzenden...",
         "SIGNINGMESSAGE": "Ondertekeningsbericht...",
         "SIGNEDMESSAGE": "Bericht ondertekend",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Portemonnee ontgrendelen...",
         "TRANSACTIONMISMATCH": "Transactiefout. Probeer het opnieuw.",
         "MINIMUMCONFIRMATIONS": "Alle stortingen vereisen minimaal één bevestiging voordat ze kunnen worden uitgegeven.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transacties gekopieerd naar het klembord",
-        "STOPPINGMASTERNODE": "Masternode wordt gestopt...",
         "FAILEDTOWRITECONFIG": "Er is een probleem opgetreden bij het schrijven naar uw metrix.conf-bestand. Controleer of het bestand bestaat en of Altitude schrijfrechten heeft.",
         "NOPUBLICUP": "Geen openbaar IP-adres gevonden. Controleer uw internetverbinding en herstart Altitude.",
         "CONFIGURINGLOCALMN": "De lokale masternode configureren...",
         "REPORTINGISSUE": "Diagnostische informatie opvragen... Deze informatie wordt naar uw klembord gekopieerd.",
-        "WALLETUPDATEDOWNLOADING": "Update downloaden...",
-        "WALLETBACKUPFAILED": "Automatische back-up van uw portemonnee is mislukt - controleer uw back-uplocatie en beschikbare schijfruimte.",
         "EXPLORERURLSAVED": "Explorer-URL opgeslagen",
         "EXPLORERURLRESET": "Explorer-URL teruggezet naar standaardinstelling",
         "EXPLORERURLINVALID": "Dat is geen geldige http(s)-URL.",
-        "EXPLORERURLUNREACHABLE": "Die URL kon niet worden bereikt - controleer deze en probeer het opnieuw."
+        "EXPLORERURLUNREACHABLE": "Die URL kon niet worden bereikt - controleer deze en probeer het opnieuw.",
+        "DEVRPCHOSTSAVED": "RPC-host opgeslagen",
+        "DEVRPCHOSTRESET": "RPC-host teruggezet naar standaard (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ontvangen munten",
+        "NEWTRANSACTION_TITLE_STAKE": "Ontvangen aandeel",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-beloning ontvangen"
     },
     "TIME": {
         "AFEWSECONDS": "een paar seconden",
@@ -533,11 +587,6 @@
         "MONTHS": "maanden",
         "AYEAR": "Een jaar",
         "YEARS": "jaren"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Ontvangen munten",
-        "NEWTRANSACTION_TITLE_STAKE": "Ontvangen aandeel",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-beloning ontvangen"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gouverneurs zijn verantwoordelijk voor het stemmen over de maandelijkse budgetten en blockchain-wijzigingen. Je kunt gouverneur worden door de juiste onderpand in het governancecontract vast te zetten.",
                 "COLLATERAL": "Vereiste zekerheid",
                 "ENROLL": "Inschrijven",
+                "SELECTAGOVERNOR": "Kies een adres van een in aanmerking komende gouverneur",
+                "GOVERNORNOTSELECTED": "Er is geen geschikt adres geselecteerd.",
                 "CONFIRMENROLL": "U staat op het punt zich aan te melden als gouverneur. Hiermee wordt een transactie met de vereiste zekerheid naar het bestuurscontract verzonden. U kunt zich op elk moment weer afmelden.",
                 "ISGOVERNORTITLE": "U bent een actieve gouverneur!",
                 "ISGOVERNORDETAIL1": "Gouverneurs zijn verantwoordelijk voor het stemmen over de maandelijkse begrotingen en wijzigingen in de blockchain.",
                 "ISGOVERNORDETAIL2": "Om gouverneur te blijven, moet je minstens één keer per 30 dagen aan een stemming deelnemen.",
                 "ISGOVERNORDETAIL3": "Als er niets is om over te stemmen, kunt u uw inschrijving handmatig voortzetten door een actieve ping te verzenden.",
+                "MYGOVERNORADDRESS": "Mijn toespraak als gouverneur",
                 "UNENROLL": "Uitschrijven",
                 "PING": "Actieve ping verzenden",
                 "LASTPINGTITLE": "Laatste ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dagen",
                 "GOVERNORVOTEMATURITYHOURS": "uren",
                 "GOVERNORVOTEMATURITYSUFFIX": "tot rijp",
-                "MYGOVERNORADDRESS": "Mijn toespraak als gouverneur",
-                "SELECTAGOVERNOR": "Kies een adres van een in aanmerking komende gouverneur",
-                "GOVERNORNOTSELECTED": "Er is geen geschikt adres geselecteerd.",
                 "NOTFULLYSYNCEDTITLE": "Status van gouverneur niet beschikbaar",
                 "NOTFULLYSYNCEDDETAIL": "Uw registratiestatus als gouverneur wordt zichtbaar zodra uw blockchain volledig gesynchroniseerd is.",
                 "DGPMIGRATIONTITLE": "DGP-migratie",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Uw voorstel is succesvol aangemaakt.",
             "ENROLLINGGOVERNOR": "Inschrijving als gouverneur...",
             "ENROLLEDGOVERNOR": "Je inschrijving is voltooid zodra je transactie is bevestigd.",
-            "VOTINGONPROPOSAL": "Voorstel voor stemming verzenden",
-            "VOTEDONPROPOSAL": "Je stem wordt geteld zodra de transactie is bevestigd.",
             "PINGINGGOVERNOR": "Ping verzenden...",
             "PINGEDGOVERNOR": "Ping succesvol verzonden. Uw governor wordt op de hoogte gebracht zodra de transactie is bevestigd.",
+            "VOTINGONPROPOSAL": "Voorstel voor stemming verzenden",
+            "VOTEDONPROPOSAL": "Je stem wordt geteld zodra de transactie is bevestigd.",
             "UNENROLLINGGOVERNOR": "Gouverneur uitschrijven...",
             "UNENROLLEDGOVERNOR": "Transactie verzonden. Uw gouverneur wordt uitgeschreven zodra de transactie is bevestigd.",
             "GOVERNORNOTMATURE": "Uw gouverneur is nog niet oud genoeg om deze actie uit te voeren."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Koop Metrix",
+                "SEARCH": "Geschiedenis"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Jij verzendt",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transactiegeschiedenis",
                 "SEARCHBUTTON": "ZOEKOPDRACHT",
+                "SEARCHPLACEHOLDER": "Voer een MRX- of BTC-adres in.",
                 "TRANSACTIONDATE": "Datum",
                 "TRANSACTIONTYPE": "TX-type",
                 "TRANSACTIONAMOUNT": "Hoeveelheid",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Bevestigd",
                 "TRANSACTIONNOTCONFIRMED": "Niet bevestigd",
                 "TRANSACTIONREFUNDED": "Terugbetaald - Onder het minimum",
-                "AVGSWAPPRICE": "Gemiddelde ruilprijs",
-                "SEARCHPLACEHOLDER": "Voer een MRX- of BTC-adres in."
+                "AVGSWAPPRICE": "Gemiddelde ruilprijs"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Swapadres genereren...",
             "ALREADYHAVEADDRESS": "Je hebt al een BTC-adres gekoppeld aan dit Metrix-adres.",
             "NOADDRESS": "Je hebt geen Metrix-adres ingevoerd."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Koop Metrix",
-                "SEARCH": "Geschiedenis"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Weergeven",
                 "EMPTYTITLE": "Nog geen tokens gevonden",
                 "EMPTYDETAIL": "Altitude controleert automatisch een block explorer op MRC20- en MRC721-tokens die naar uw adressen zijn verzonden en verifieert vervolgens alles live met uw eigen node. U kunt ook handmatig een token toevoegen als u het contractadres ervan weet.",
+                "EMPTYDETAILCHECKINGDISABLED": "De automatische tokencontrole is uitgeschakeld, waardoor uw adressen niet worden gecontroleerd op tokens. Schakel deze functie hierboven weer in, of voeg handmatig een token toe als u het contractadres kent.",
                 "HIDDENTITLE": "Verborgen tokens",
                 "CONTEXTMENUHIDE": "Token verbergen",
                 "ITEMSSUFFIX": "artikel(en)",
-                "NONENUMERABLETOOLTIP": "Deze collectie ondersteunt geen weergave van individuele items, maar toont in plaats daarvan het aantal items dat u bezit."
+                "NONENUMERABLETOOLTIP": "Deze collectie ondersteunt geen weergave van individuele items, maar toont in plaats daarvan het aantal items dat u bezit.",
+                "CHECKINGENABLED": "Controleren",
+                "CHECKINGDISABLED": "Afvinken",
+                "CHECKINGENABLEDTOOLTIP": "Tokencontrole is ingeschakeld - Altitude controleert periodiek uw adressen op tokens en vernieuwt uw saldo. Klik om dit uit te schakelen.",
+                "CHECKINGDISABLEDTOOLTIP": "Tokencontrole is uitgeschakeld - klik om deze weer in te schakelen.",
+                "CHECKINGDISABLEDNOTICE": "De automatische tokencontrole is uitgeschakeld. Uw adressen worden niet meer gescand op tokens en uw saldo wordt niet bijgewerkt. U kunt nog steeds handmatig een token toevoegen."
             },
             "ADDTOKEN": {
                 "TITLE": "Token toevoegen",

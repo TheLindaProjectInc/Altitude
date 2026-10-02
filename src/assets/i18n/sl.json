@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Ustvari račun",
             "HIDEEMPTYACCOUNTS": "Skrij neimenovane prazne račune"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Pregled",
+            "TRANSACTIONSTAB": "Transakcije",
+            "ADDRESSTABS": "Naslovi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Dodaj prejemnika",
             "SEND": "Pošlji",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datum",
             "TABLECOLUMNS_CONFIRMS": "Potrditve",
             "ALL_SELECTUNSELECT": "Preklopi vse",
+            "TREEMODE": "Drevesni način",
+            "LISTMODE": "Način seznama",
             "SENDAVAILABLE": "Uporabite razpoložljivo stanje",
             "INPUTLOCKED": "Vnos je zaklenjen. Za porabo ga boste morali odkleniti.",
             "CONTEXTMENULOCKINPUT": "Zaklepanje vnosa",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Po plačilu",
             "QUANTITY": "Količina",
             "BYTES": "Bajti",
-            "TREEMODE": "Drevesni način",
-            "LISTMODE": "Način seznama",
             "ALERTFEECHANGETITLE": "Sprememba pristojbin",
             "ALERTFEECHANGECONTENT": "Dejanska provizija za transakcijo je višja od pričakovane. Prosimo, potrdite novo provizijo:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Ustvari pogodbo",
+            "INFO": "Pametno pogodbo namestite v omrežje tako, da pošljete njeno prevedeno bajtno kodo. To je funkcija osnovne verige – pred namestitvijo dvakrat preverite bajtno kodo in nastavitve plina, namestitve ni mogoče razveljaviti.",
+            "FROM": "Od",
+            "BYTECODE": "Bajtna koda",
+            "BYTECODEPLACEHOLDER": "Prilepite prevedeno bajtno kodo pogodbe (hex)",
+            "INVALIDBYTECODE": "Bajtna koda mora biti veljaven šestnajstiški niz (0–9, a–f) s sodim številom znakov.",
+            "GASLIMIT": "Omejitev plina",
+            "GASLIMITRANGE": "Razpon",
+            "GASPRICE": "Cena plina (MRX na enoto plina)",
+            "GASPRICEMIN": "Minimalno",
+            "ESTIMATEDMAXCOST": "Ocenjeni najvišji stroški",
+            "DEPLOYBUTTON": "Pogodba o uvedbi",
+            "INCOMPLETEFORM": "Izberite naslov pošiljatelja, vnesite veljavno bajtno kodo in nastavite veljavno omejitev/ceno plina.",
+            "HIGHGASPRICETITLE": "Visoka cena plina",
+            "HIGHGASPRICEINFO": "Cena plina, ki ste jo nastavili, je nenavadno visoka. Ta uvedba bi lahko stala do:",
+            "DEPLOYING": "Uvajanje pogodbe...",
+            "DEPLOYED": "Uvedba pogodbe je bila oddana",
+            "RESULTTITLE": "Rezultat uvajanja",
+            "STATUS": "Stanje",
+            "STATUSPENDING": "Čaka se na potrditev...",
+            "STATUSCONFIRMED": "Uspešno nameščeno",
+            "STATUSFAILED": "Uvajanje ni uspelo",
+            "TXID": "ID transakcije",
+            "SENDER": "Pošiljatelj",
+            "CONTRACTADDRESS": "Naslov pogodbe",
+            "GASUSED": "Uporabljeni plin",
+            "DONEBUTTON": "Končano",
+            "DEPLOYANOTHERBUTTON": "Razporedi še enega"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transakcije",
+            "COPYBLOCKHASH": "Kopiraj blokovno zgoščeno vrednost",
+            "COPYTXID": "Kopiraj ID transakcije",
+            "COPYACCOUNT": "Kopiraj ime računa",
+            "COPYADDRESS": "Kopiraj naslov",
+            "COPYAMOUNT": "Kopiraj znesek",
+            "COPTBLOCKINDEX": "Kopiraj indeks blokov",
+            "EXPLORER": "Odpri v Raziskovalcu blokov"
         },
         "STAKING": {
             "UNLOCK": "Odkleni za stavljenje",
@@ -68,13 +113,13 @@
             "IP": "IP-naslov",
             "ADDRESS": "Naslov",
             "ENABLED": "Omogočeno",
-            "STARTBUTTON": "Začni lokalno",
-            "STARTALIASBUTTON": "Začni vzdevek",
-            "STARTALLBUTTON": "Začni vse",
             "NOMASTERNODES": "Nimate nobenih masternodov",
             "NOMNOUTPUTS": "Ni najdenih izhodov Masternode. Za zagon lokalne Masternode pošljite natanko 2, 5, 25, 50 ali 100 milijonov kovancev na naslov Masternode in počakajte na 15 potrditev.",
+            "STARTBUTTON": "Začni lokalno",
             "STOPBUTTON": "Ustavi lokalno",
+            "STARTALIASBUTTON": "Začni vzdevek",
             "STOPALIASBUTTON": "Ustavi vzdevek",
+            "STARTALLBUTTON": "Začni vse",
             "ADDREMOTE": "Dodaj oddaljeno glavno vozlišče",
             "REMOVEMN": "Odstrani glavno vozlišče",
             "ADDLOCAL": "Nastavitev lokalnega glavnega vozlišča",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Splošno",
                 "COREVERSION": "Osnovna različica",
+                "ALTITUDEVERSION": "Različica za nadmorsko višino",
                 "PROTOCOLVERSION": "Različica protokola",
                 "WALLETVERSION": "Različica datoteke Wallet.dat",
                 "NETWORKTITLE": "Omrežje",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Število glavnih vozlišč",
                 "BLOCKCHAINTITLE": "Blokovna veriga",
                 "NUMBERBLOCKS": "Trenutno število blokov",
-                "BESTBLOCKTTIME": "Zadnji čas blokade",
-                "ALTITUDEVERSION": "Različica za nadmorsko višino"
+                "BESTBLOCKTTIME": "Zadnji čas blokade"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Dobrodošli v konzoli Metrix Core RPC. Za pregled razpoložljivih ukazov vnesite pomoč.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Izberite jezik"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transakcije",
-            "COPYBLOCKHASH": "Kopiraj blokovno zgoščeno vrednost",
-            "COPYTXID": "Kopiraj ID transakcije",
-            "COPYACCOUNT": "Kopiraj ime računa",
-            "COPYADDRESS": "Kopiraj naslov",
-            "COPYAMOUNT": "Kopiraj znesek",
-            "COPTBLOCKINDEX": "Kopiraj indeks blokov",
-            "EXPLORER": "Odpri v Raziskovalcu blokov"
+        "CURRENCY": {
+            "TITLE": "Izberite valuto prikaza"
         },
         "EXPLORER": {
             "TITLE": "Raziskovalec blokov",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Omrežje",
             "WINDOTAB": "Okno",
+            "BACKUPTAB": "Varnostno kopiranje",
+            "EXPLORERTAB": "Raziskovalec",
+            "DEVELOPERTAB": "Razvijalec",
             "NETWORK": {
                 "PROXY": "Povežite se prek proxyja SOCKS5",
                 "PROXYIP": "IP-naslov posrednika",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimiziraj ob zaprtju",
                 "BEHAVIOURTITLE": "Obnašanje sistemske vrstice in okna"
             },
-            "BACKUPTAB": "Varnostno kopiranje",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Samodejno varnostno kopiranje",
                 "ENABLED": "Samodejno varnostno kopiranje datoteke wallet.dat po urniku",
                 "ENABLEDINFO": "Ustvari novo varnostno kopijo datoteke vaše denarnice po urniku, tako da je vedno na voljo nedavna kopija, če gre kaj narobe.",
+                "INTERVALLABEL": "Varnostno kopiraj vsakih (dni)",
                 "LASTBACKUP": "Zadnja varnostna kopija:",
                 "NEVERBACKEDUP": "Samodejno varnostno kopiranje še ni bilo narejeno.",
                 "BACKUPNOWBUTTON": "Varnostno kopiraj zdaj",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ponastavi na privzeto",
                 "PRUNETITLE": "Zgodovina varnostnih kopij",
                 "PRUNEINFO": "Starejše samodejne varnostne kopije se izbrišejo, da se ta mapa ne bo večno povečevala – ohranijo se le najnovejše spodaj.",
-                "KEEPCOUNTLABEL": "Naj bo zadnji",
-                "INTERVALLABEL": "Varnostno kopiraj vsakih (dni)"
+                "KEEPCOUNTLABEL": "Naj bo zadnji"
             },
-            "EXPLORERTAB": "Raziskovalec",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Raziskovalec blokov",
                 "BLOCKEXPLORERINFO": "Spletno mesto se je odprlo med ogledom transakcije v raziskovalcu blokov (npr. klik z desno tipko miške na transakcijo > Ogled v raziskovalcu).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Glavno omrežje",
                 "TESTNET": "Testno omrežje",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Način za razvijalce",
+                "DEVMODEINFO": "Privzeto izklopljeno in namenjeno samo razvijalcem. Če to omogočite, se prikažejo možnosti za preglasitev povezave RPC – standardni uporabniki naj to pustijo izklopljeno.",
+                "DEVMODELABEL": "Omogoči način za razvijalce",
+                "WARNING": "Te nastavitve so namenjene samo razvoju. Če jih spremenite, lahko denarnici preprečite povezavo z demonom – to uporabite le, če veste, kaj počnete.",
+                "RPCHOSTTITLE": "RPC povezava",
+                "RPCHOSTINFO": "Privzeto se Altitude poveže z demonom, ki ga upravlja sam, na tem računalniku (127.0.0.1). Če te nastavitve preglasite, se lahko poveže z drugim demonom – na primer z oddaljenim primerkom regtest, ne da bi ga bilo treba zagnati lokalno. Če je povezava uspešna, Altitude ne bo prenesel ali zagnal svojega lokalnega demona. Ciljni demon rpcallowip mora dovoljevati to povezavo, spodnje rpcuser/rpcpassword pa se mora ujemati z njegovo konfiguracijo. Učinkuje takoj, ponovni zagon ni potreben.",
+                "RPCHOSTLABEL": "Gostitelj RPC",
+                "RPCPORTLABEL": "RPC vrata",
+                "RPCUSERLABEL": "Uporabniško ime RPC",
+                "RPCPASSWORDLABEL": "Geslo RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Pregled",
-            "TRANSACTIONSTAB": "Transakcije",
-            "ADDRESSTABS": "Naslovi"
-        },
-        "CURRENCY": {
-            "TITLE": "Izberite valuto prikaza"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Nadzorna plošča",
             "SEND": "Pošlji",
+            "CREATECONTRACT": "Ustvari pogodbo",
             "RECEIVE": "Prejmi",
             "TRANSACTIONS": "Transakcije",
             "STAKING": "Stavljanje",
             "MASTERNODES": "Masternode",
+            "EXPLORER": "Raziskovalec blokov",
             "SYNC": {
                 "CONNECTING": "Povezovanje",
                 "NOBLOCKS": "Čakanje na bloke",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Denarnica trenutno ne stavni",
                 "MASTERNODEON": "Masternode trenutno deluje",
                 "MASTERNODEOFF": "Masternode trenutno ne deluje"
-            },
-            "EXPLORER": "Raziskovalec blokov"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Vnesite naslov spletnega mesta web3",
+            "GOBUTTON": "Pojdi",
+            "QUICKLAUNCH": "Hitri zagon",
+            "DEVTOOLS": "Odpri orodja za razvijalce",
+            "ADDLINK": "Dodaj povezavo",
+            "LINKNAMEPLACEHOLDER": "Ime",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Shrani",
+            "CANCEL": "Prekliči",
+            "REMOVE": "Odstrani",
+            "REMOVECONFIRM": "Odstraniti to hitro povezavo?",
+            "LINKEXISTS": "Ta povezava je že na vašem seznamu za hitri zagon",
+            "LINKINVALID": "Vnesite veljaven naslov spletnega mesta",
+            "LINKNETWORKLABEL": "Omrežje",
+            "LOADFAILED": "Nalaganje spletnega mesta ni uspelo",
+            "SECURESITE": "Povezava je varna - veljaven SSL certifikat",
+            "INSECURESITE": "Povezava ni varna",
+            "INVALIDCERTSITE": "Povezava ni zasebna – neveljavno ali nezaupanja vredno potrdilo SSL"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Vnesite geslo za svojo denarnico",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Za Metrix Core je na voljo posodobitev. Ali jo želite namestiti zdaj?",
             "WALLETUPDATETITLE": "Posodobitev nadmorske višine je na voljo",
             "WALLETUPDATEINFO": "Na voljo je posodobitev za Altitude. Ali jo želite prenesti zdaj?",
+            "WALLETUPDATEREADYTITLE": "Posodobitev nadmorske višine je pripravljena",
+            "WALLETUPDATEREADYINFO": "Posodobitev je bila prenesena. Želite znova zagnati program Altitude, da jo namestite?",
+            "WALLETUPDATERESTARTBUTTON": "Znova zaženi in namesti",
+            "WALLETUPDATELATERBUTTON": "Kasneje",
             "CLIENTUPDATEBUTTON": "Posodobitev",
             "CLIENTUPDATECANCELBUTTON": "Ne posodabljaj",
             "CLIENTUPDATESKIPBUTTON": "Preskoči to posodobitev",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Vse prejšnje varnostne kopije datoteke denarnice, ki ste jih naredili, je treba zamenjati z novo ustvarjeno, šifrirano datoteko denarnice. Zaradi varnostnih razlogov bodo prejšnje varnostne kopije nešifrirane datoteke denarnice postale neuporabne takoj, ko boste začeli uporabljati novo, šifrirano denarnico.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core se je nepričakovano ustavil",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Prišlo je do težave z Metrix Core, zaradi katere se je program prekinil. Priporočljivo je, da preverite datoteko debug.log za morebitne težave.",
+            "CLIENTUNKNOWNERRORTITLE": "Napaka v komunikaciji z jedrom Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Pri komunikaciji z Metrix Core je prišlo do težave. Priporočljivo je, da preverite datoteko debug.log za morebitne težave.",
+            "BOOTSTRAPFAILEDTITLE": "Zagon Metrix Core ni uspel",
+            "BOOTSTRAPFAILEDINFO": "Pri zagonu Metrix Core je prišlo do težave. Priporočljivo je, da preverite dnevniško datoteko Altitude za morebitne težave.",
+            "BOOTSTRAPOFFERTITLE": "Denarnica je precej zastarela",
+            "BOOTSTRAPOFFERINFO": "Na voljo je novejši bootstrap, ki lahko hitro posodobi Metrix Core. Nadaljevanje z običajno sinhronizacijo lahko traja več dni, saj mora vaša denarnica prenesti in preveriti vsak blok, ki ga je zamudila.",
+            "BOOTSTRAPOFFERBUTTON": "Prenesi Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Nadaljuj z običajno sinhronizacijo",
+            "BOOTSTRAPSPACEINFO": "Ni dovolj prostega prostora na disku za prenos in razpakiranje datoteke bootstrap. Zahtevano: {required}, Na voljo: {free}. Sprostite nekaj prostora in poskusite znova.",
+            "STARTUPFAILEDTITLE": "Zagon jedra Metrix ni uspel",
+            "STARTUPFAILEDINFO": "Pri zagonu programa Metrix Core je prišlo do napake. Priporočljivo je, da preverite dnevniško datoteko Altitude za morebitne težave.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Orodja za obnovitev",
             "CLIENTINVALIDCONFIGTITLE": "Neveljavna konfiguracija datoteke metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Vaša datoteka metrix.conf ima neveljavno nastavitev glavnega vozlišča, zaradi česar se bo Metrix Core takoj zaprl. Preverite to datoteko.",
             "ADDREMOTEMNTITLE": "Dodaj oddaljeno glavno vozlišče",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Zasebni ključ glavne vozlišča",
             "ADDREMOTEMNTXHASH": "Zgoščena vrednost trženja glavne vozlišča (masternode)",
             "ADDREMOTEMNTXINDEX": "Indeks Masternode Transakcij",
-            "BOOTSTRAPFAILEDTITLE": "Zagon Metrix Core ni uspel",
-            "BOOTSTRAPFAILEDINFO": "Pri zagonu Metrix Core je prišlo do težave. Priporočljivo je, da preverite dnevniško datoteko Altitude za morebitne težave.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Orodja za obnovitev",
-            "STARTUPFAILEDTITLE": "Zagon jedra Metrix ni uspel",
-            "STARTUPFAILEDINFO": "Pri zagonu programa Metrix Core je prišlo do napake. Priporočljivo je, da preverite dnevniško datoteko Altitude za morebitne težave.",
-            "CLIENTUNKNOWNERRORTITLE": "Napaka v komunikaciji z jedrom Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Pri komunikaciji z Metrix Core je prišlo do težave. Priporočljivo je, da preverite datoteko debug.log za morebitne težave.",
             "UNENROLLGOVERNORTITLE": "Potrdite odjavo guvernerja",
             "UNENROLLGOVERNORCONTENT": "Ali ste prepričani, da želite odjaviti svojega guvernerja? Ne boste več mogli glasovati o upravljanju verige.",
-            "WALLETUPDATEREADYTITLE": "Posodobitev nadmorske višine je pripravljena",
-            "WALLETUPDATEREADYINFO": "Posodobitev je bila prenesena. Želite znova zagnati program Altitude, da jo namestite?",
-            "WALLETUPDATERESTARTBUTTON": "Znova zaženi in namesti",
-            "WALLETUPDATELATERBUTTON": "Kasneje",
             "DAPPCONNECTTITLE": "Poveži se s spletnim mestom",
             "DAPPCONNECTINFO": "To spletno mesto se želi povezati z vašo denarnico in si ogledati vaš naslov in stanje.",
             "DAPPCONNECTBUTTON": "Poveži se",
+            "DAPPCONNECTADDRESSLABEL": "Naslov",
+            "DAPPAPPROVEBUTTON": "Odobritev",
             "DAPPREJECTBUTTON": "Zavrni",
             "DAPPSENDTITLE": "Zahteva za transakcijo pogodbe",
             "DAPPSENDINFO": "To spletno mesto zahteva pošiljanje pogodbene transakcije iz vaše denarnice.",
-            "DAPPSIGNTITLE": "Zahteva za podpis sporočila",
-            "DAPPSIGNINFO": "To spletno mesto zahteva podpis sporočila z vašim naslovom denarnice.",
-            "DAPPNOTREADY": "Povezave s spletnim mestom še ni mogoče vzpostaviti – Metrix Core se še vedno zaganja.",
-            "DAPPNOWALLET": "Povezave s spletnim mestom ni mogoče doseči - naslov denarnice ni na voljo.",
-            "DAPPAPPROVEBUTTON": "Odobritev",
-            "DAPPCONNECTADDRESSLABEL": "Naslov",
             "DAPPSENDSITELABEL": "Spletno mesto",
             "DAPPSENDCONTRACTLABEL": "Naslov pogodbe",
             "DAPPSENDAMOUNTLABEL": "Znesek",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Najvišja omrežna pristojbina",
             "DAPPSENDMAXTOTALLABEL": "Največji skupni znesek",
             "DAPPSENDDATALABEL": "Podatki o pogodbi",
+            "DAPPSIGNTITLE": "Zahteva za podpis sporočila",
+            "DAPPSIGNINFO": "To spletno mesto zahteva podpis sporočila z vašim naslovom denarnice.",
             "DAPPSIGNMESSAGELABEL": "Sporočilo",
-            "BOOTSTRAPOFFERTITLE": "Denarnica je precej zastarela",
-            "BOOTSTRAPOFFERINFO": "Na voljo je novejši bootstrap, ki lahko hitro posodobi Metrix Core. Nadaljevanje z običajno sinhronizacijo lahko traja več dni, saj mora vaša denarnica prenesti in preveriti vsak blok, ki ga je zamudila.",
-            "BOOTSTRAPOFFERBUTTON": "Prenesi Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Nadaljuj z običajno sinhronizacijo",
-            "BOOTSTRAPSPACEINFO": "Ni dovolj prostega prostora na disku za prenos in razpakiranje datoteke bootstrap. Zahtevano: {required}, Na voljo: {free}. Sprostite nekaj prostora in poskusite znova."
+            "DAPPNOTREADY": "Povezave s spletnim mestom še ni mogoče vzpostaviti – Metrix Core se še vedno zaganja.",
+            "DAPPNOWALLET": "Povezave s spletnim mestom ni mogoče doseči - naslov denarnice ni na voljo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresar",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Trenutno omrežje"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Vnesite naslov spletnega mesta web3",
-            "GOBUTTON": "Pojdi",
-            "QUICKLAUNCH": "Hitri zagon",
-            "DEVTOOLS": "Odpri orodja za razvijalce",
-            "ADDLINK": "Dodaj povezavo",
-            "LINKNAMEPLACEHOLDER": "Ime",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Shrani",
-            "CANCEL": "Prekliči",
-            "REMOVE": "Odstrani",
-            "REMOVECONFIRM": "Odstraniti to hitro povezavo?",
-            "LINKEXISTS": "Ta povezava je že na vašem seznamu za hitri zagon",
-            "LINKINVALID": "Vnesite veljaven naslov spletnega mesta",
-            "LINKNETWORKLABEL": "Omrežje",
-            "LOADFAILED": "Nalaganje spletnega mesta ni uspelo",
-            "SECURESITE": "Povezava je varna - veljaven SSL certifikat",
-            "INSECURESITE": "Povezava ni varna",
-            "INVALIDCERTSITE": "Povezava ni zasebna – neveljavno ali nezaupanja vredno potrdilo SSL"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Varnostna kopija denarnice...",
             "SIGNMESSAGE": "Podpiši sporočilo...",
             "VERIFYMESSAGE": "Potrdi sporočilo...",
-            "LOCALE": "Jezik...",
-            "RESTARTCORE": "Znova zaženite Metrix Core",
-            "EXIT": "Izhod",
             "OPTIONS": "Možnosti...",
+            "LOCALE": "Jezik...",
             "CURRENCIES": "Prikaži valuto...",
-            "ALTITUDEREFRESH": "Osveži podatke o nadmorski višini"
+            "RESTARTCORE": "Znova zaženite Metrix Core",
+            "ALTITUDEREFRESH": "Osveži podatke o nadmorski višini",
+            "EXIT": "Izhod"
         },
         "ENCRYPT": {
             "TITLE": "Šifriraj",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Skupno stanje",
+        "SPENDABLEBALANCE": "Stanje, ki ga je mogoče porabiti",
+        "PENDINGBALANCE": "Stanje v teku",
         "CANCELBUTTON": "Prekliči",
         "DONEBUTTON": "Končano",
         "OKBUTTON": "V redu",
+        "ACCEPTBUTTON": "Sprejmi",
         "CLEARALLBUTTON": "Počisti vse",
         "ENTERACCOUNTLABEL": "Vnesite oznako za ta naslov",
         "ENTERADDRESSLABEL": "Vnesite naslov Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Razvrsti po",
         "SEARCH": "Iskanje",
         "FEE": "Pristojbina",
-        "ACCEPTBUTTON": "Sprejmi",
         "CONFIRMED": "Potrjeno",
         "UNCONFIRMED": "Nepotrjeno",
-        "PENDINGBALANCE": "Stanje v teku",
-        "SPENDABLEBALANCE": "Stanje, ki ga je mogoče porabiti",
         "SAVEBUTTON": "Shrani"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ponovni zagon Metrix Core...",
         "BOOTSTRAPPING": "Prenašanje zagonskega programa...",
         "BOOTSTRAPEXTRACTING": "Razširjanje zagonskega programa...",
-        "TIMEREMAINING": "preostalo:"
+        "TIMEREMAINING": "preostalo:",
+        "DEVRPCOVERRIDEACTIVE": "Nastavljena je preglasitev povezave RPC za razvijalce (Možnosti > Razvijalec) in se ne odziva. Počistite jo, da se boste normalno ponovno povezali z lokalnim daemonom.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Počisti preglasitev RPC in ponovno vzpostavi povezavo"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nov račun je bil uspešno ustvarjen",
         "ADDRESSCOPIEDCLIPBOARD": "Naslov kopiran v odložišče",
+        "COPIEDCLIPBOARD": "Kopirano v odložišče",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcije kopirane v odložišče",
         "EMPTYFIELDS": "Prosimo, izpolnite vsa polja",
         "NOUPDATE": "Posodobitev ni na voljo",
         "WALLETBACKEDUP": "Varnostno kopiranje denarnice je bilo uspešno",
+        "WALLETBACKUPFAILED": "Samodejno varnostno kopiranje denarnice ni uspelo – preverite lokacijo varnostne kopije in razpoložljiv prostor na disku.",
         "PASSPHRASEMISMATCH": "Gesla, ki ste jih vnesli, se ne ujemajo",
         "CHECKINGUPDATE": "Preverjanje posodobitev...",
         "CHECKINGUPDATEFAILED": "Ni mogoče preveriti posodobitve. Preverite omrežje.",
+        "WALLETUPDATEDOWNLOADING": "Prenašanje posodobitve...",
         "SENDINGEXCEEDSBALANCE": "Znesek, ki ga pošiljate, presega izbrano stanje",
         "MISSINGCHANGEADDRESS": "Navesti morate naslov za spremembo",
         "MISSINGDESTINATIONADDRESS": "Določiti morate ciljni naslov",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Šifriranje denarnice...",
         "CHANGINGPASSPHARASE": "Spreminjanje gesla...",
         "STARTINGMASTERNODE": "Zagon glavne vozlišča...",
+        "STOPPINGMASTERNODE": "Zaustavljanje glavnega vozlišča...",
         "SENDINGTRANSACTION": "Pošiljanje transakcije...",
         "SIGNINGMESSAGE": "Podpisovanje sporočila...",
         "SIGNEDMESSAGE": "Sporočilo podpisano",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Odklepanje denarnice...",
         "TRANSACTIONMISMATCH": "Napaka pri transakciji. Poskusite znova.",
         "MINIMUMCONFIRMATIONS": "Vsi vnosi zahtevajo vsaj eno potrditev pred porabo.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcije kopirane v odložišče",
-        "STOPPINGMASTERNODE": "Zaustavljanje glavnega vozlišča...",
         "FAILEDTOWRITECONFIG": "Pri pisanju v datoteko metrix.conf je prišlo do težave. Preverite, ali datoteka obstaja in ali ima Altitude dovoljenja za pisanje.",
         "NOPUBLICUP": "Javnega IP-naslova ni bilo mogoče najti. Preverite internetno povezavo in znova zaženite Altitude.",
         "CONFIGURINGLOCALMN": "Konfiguriranje lokalnega glavnega vozlišča...",
         "REPORTINGISSUE": "Pridobivanje diagnostičnih podatkov... Ti podatki bodo kopirani v odložišče.",
-        "WALLETUPDATEDOWNLOADING": "Prenašanje posodobitve...",
-        "WALLETBACKUPFAILED": "Samodejno varnostno kopiranje denarnice ni uspelo – preverite lokacijo varnostne kopije in razpoložljiv prostor na disku.",
         "EXPLORERURLSAVED": "URL raziskovalca shranjen",
         "EXPLORERURLRESET": "URL raziskovalca je bil ponastavljen na privzeto vrednost",
         "EXPLORERURLINVALID": "To ni veljaven URL http(s)",
-        "EXPLORERURLUNREACHABLE": "Tega URL-ja ni bilo mogoče doseči – preverite ga in poskusite znova."
+        "EXPLORERURLUNREACHABLE": "Tega URL-ja ni bilo mogoče doseči – preverite ga in poskusite znova.",
+        "DEVRPCHOSTSAVED": "Gostitelj RPC shranjen",
+        "DEVRPCHOSTRESET": "Gostitelj RPC je ponastavljen na privzeto nastavitev (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Prejeti kovanci",
+        "NEWTRANSACTION_TITLE_STAKE": "Prejeti delež",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Prejeta nagrada Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Nekaj sekund",
@@ -533,11 +587,6 @@
         "MONTHS": "mesecev",
         "AYEAR": "Leto",
         "YEARS": "leta"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Prejeti kovanci",
-        "NEWTRANSACTION_TITLE_STAKE": "Prejeti delež",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Prejeta nagrada Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guvernerji so odgovorni za glasovanje o mesečnih proračunih in spremembah tehnologije veriženja blokov. Guverner lahko postanete tako, da v pogodbi o upravljanju zaklenete ustrezno zavarovanje.",
                 "COLLATERAL": "Zahtevano zavarovanje",
                 "ENROLL": "Vpis",
+                "SELECTAGOVERNOR": "Izberite ustrezen naslov guvernerja",
+                "GOVERNORNOTSELECTED": "Izbran ni bil noben primeren naslov",
                 "CONFIRMENROLL": "Vpisali se boste kot guverner. S tem boste poslali transakcijo z zahtevanim zavarovanjem v pogodbo o upravljanju. Odjavite se lahko kadar koli.",
                 "ISGOVERNORTITLE": "Ste aktivni guverner!",
                 "ISGOVERNORDETAIL1": "Guvernerji so odgovorni za glasovanje o mesečnih proračunih in spremembah tehnologije veriženja blokov.",
                 "ISGOVERNORDETAIL2": "Če želite ostati guverner, se boste morali udeležiti vsaj enega glasovanja vsakih 30 dni.",
                 "ISGOVERNORDETAIL3": "Če ni o čemer glasovati, lahko ročno nadaljujete z vpisom tako, da pošljete aktivni ping.",
+                "MYGOVERNORADDRESS": "Moj guvernerjev nagovor",
                 "UNENROLL": "Odjava",
                 "PING": "Pošlji aktivni ping",
                 "LASTPINGTITLE": "Zadnji ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dni",
                 "GOVERNORVOTEMATURITYHOURS": "ure",
                 "GOVERNORVOTEMATURITYSUFFIX": "dokler ne dozori",
-                "MYGOVERNORADDRESS": "Moj guvernerjev nagovor",
-                "SELECTAGOVERNOR": "Izberite ustrezen naslov guvernerja",
-                "GOVERNORNOTSELECTED": "Izbran ni bil noben primeren naslov",
                 "NOTFULLYSYNCEDTITLE": "Status guvernerja ni na voljo",
                 "NOTFULLYSYNCEDDETAIL": "Status vaše registracije guvernerja bo viden, ko bo vaša veriga blokov popolnoma sinhronizirana.",
                 "DGPMIGRATIONTITLE": "Migracija DGP-ja",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Vaš predlog je bil uspešno ustvarjen",
             "ENROLLINGGOVERNOR": "Vpis za guvernerja...",
             "ENROLLEDGOVERNOR": "Vaša registracija bo končana, ko bo vaša transakcija potrjena.",
-            "VOTINGONPROPOSAL": "Pošiljanje predloga glasovanja",
-            "VOTEDONPROPOSAL": "Vaš glas bo upoštevan, ko bo transakcija potrjena.",
             "PINGINGGOVERNOR": "Pošiljanje pinga...",
             "PINGEDGOVERNOR": "Ping je bil uspešno poslan. Vaš guverner bo posodobljen, ko bo transakcija potrjena.",
+            "VOTINGONPROPOSAL": "Pošiljanje predloga glasovanja",
+            "VOTEDONPROPOSAL": "Vaš glas bo upoštevan, ko bo transakcija potrjena.",
             "UNENROLLINGGOVERNOR": "Odpis guvernerja...",
             "UNENROLLEDGOVERNOR": "Transakcija poslana. Vaš guverner bo odjavljen, ko bo transakcija potrjena.",
             "GOVERNORNOTMATURE": "Vaš guverner še ni dovolj zrel za izvedbo tega dejanja."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Kupite Metrix",
+                "SEARCH": "Zgodovina"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Pošljete",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Zgodovina transakcij",
                 "SEARCHBUTTON": "ISKANJE",
+                "SEARCHPLACEHOLDER": "Vnesite naslov MRX ali BTC",
                 "TRANSACTIONDATE": "Datum",
                 "TRANSACTIONTYPE": "Vrsta oddajnika",
                 "TRANSACTIONAMOUNT": "Znesek",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Potrjeno",
                 "TRANSACTIONNOTCONFIRMED": "Ni potrjeno",
                 "TRANSACTIONREFUNDED": "Vrnjeno - Pod minimalnim zneskom",
-                "AVGSWAPPRICE": "Povprečna cena zamenjave",
-                "SEARCHPLACEHOLDER": "Vnesite naslov MRX ali BTC"
+                "AVGSWAPPRICE": "Povprečna cena zamenjave"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ustvarjanje naslova za zamenjavo...",
             "ALREADYHAVEADDRESS": "S tem naslovom Metrix že imate povezan naslov BTC",
             "NOADDRESS": "Niste vnesli naslova Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Kupite Metrix",
-                "SEARCH": "Zgodovina"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Razkrij",
                 "EMPTYTITLE": "Žetonov še ni bilo najdenih",
                 "EMPTYDETAIL": "Altitude samodejno preveri raziskovalec blokov za žetone MRC20 in MRC721, poslane na vaše naslove, nato pa vse v živo preveri glede na vaše vozlišče. Žeton lahko dodate tudi ročno, če poznate njegov pogodbeni naslov.",
+                "EMPTYDETAILCHECKINGDISABLED": "Samodejno preverjanje žetonov je izklopljeno, zato se vaši naslovi ne preverjajo glede žetonov. Zgoraj ga znova vklopite ali pa žeton dodajte ročno, če poznate njegov pogodbeni naslov.",
                 "HIDDENTITLE": "Skriti žetoni",
                 "CONTEXTMENUHIDE": "Skrij žeton",
                 "ITEMSSUFFIX": "element(-i)",
-                "NONENUMERABLETOOLTIP": "Ta zbirka ne podpira naštevanja posameznih predmetov – namesto tega prikazuje, koliko jih imate."
+                "NONENUMERABLETOOLTIP": "Ta zbirka ne podpira naštevanja posameznih predmetov – namesto tega prikazuje, koliko jih imate.",
+                "CHECKINGENABLED": "Preverjanje",
+                "CHECKINGDISABLED": "Odkljukanje",
+                "CHECKINGENABLEDTOOLTIP": "Preverjanje žetonov je vklopljeno – Altitude občasno preverja vaše naslove za žetone in osvežuje stanje. Kliknite za izklop.",
+                "CHECKINGDISABLEDTOOLTIP": "Preverjanje žetonov je izklopljeno – kliknite za ponovni vklop.",
+                "CHECKINGDISABLEDNOTICE": "Samodejno preverjanje žetonov je izklopljeno. Vaši naslovi se ne pregledujejo za žetone in stanje se ne bo posodobilo. Žeton lahko še vedno dodate ročno."
             },
             "ADDTOKEN": {
                 "TITLE": "Dodaj žeton",

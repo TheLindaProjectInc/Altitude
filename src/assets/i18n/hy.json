@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Ստեղծել հաշիվ",
             "HIDEEMPTYACCOUNTS": "Թաքցնել անանուն դատարկ հաշիվները"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Ընդհանուր տեսք",
+            "TRANSACTIONSTAB": "Գործարքներ",
+            "ADDRESSTABS": "Հասցեներ"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ավելացնել ստացող",
             "SEND": "Ուղարկել",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Ամսաթիվ",
             "TABLECOLUMNS_CONFIRMS": "Հաստատումներ",
             "ALL_SELECTUNSELECT": "Բոլորը միացնել/անջատել",
+            "TREEMODE": "Ծառի ռեժիմ",
+            "LISTMODE": "Ցանկի ռեժիմ",
             "SENDAVAILABLE": "Օգտագործեք առկա մնացորդը",
             "INPUTLOCKED": "Մուտքագրված գումարը կողպված է։ Դուք պետք է ապակողպեք այս մուտքագրված գումարը՝ այն ծախսելու համար։",
             "CONTEXTMENULOCKINPUT": "Մուտքագրման կողպեք",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Վճարից հետո",
             "QUANTITY": "Քանակ",
             "BYTES": "Բայթեր",
-            "TREEMODE": "Ծառի ռեժիմ",
-            "LISTMODE": "Ցանկի ռեժիմ",
             "ALERTFEECHANGETITLE": "Վճարի փոփոխություն",
             "ALERTFEECHANGECONTENT": "Գործարքի իրական վճարը սպասվածից բարձր է։ Խնդրում ենք հաստատել նոր վճարը։"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Ստեղծել պայմանագիր",
+            "INFO": "Տեղակայեք խելացի պայմանագիր ցանցում՝ ներկայացնելով դրա կազմված բայթկոդը։ Սա հիմնական շղթայի ֆունկցիա է. տեղակայումից առաջ կրկնակի ստուգեք ձեր բայթկոդը և գազի կարգավորումները, տեղակայումը չի կարող չեղարկվել։",
+            "FROM": "Սկսած",
+            "BYTECODE": "Բայթկոդ",
+            "BYTECODEPLACEHOLDER": "Տեղադրեք կազմված պայմանագրի բայթկոդը (տասնվեցական)",
+            "INVALIDBYTECODE": "Բայթկոդը պետք է լինի վավեր տասնվեցական տող (0-9, a-f)՝ զույգ թվով նիշերով։",
+            "GASLIMIT": "Գազի սահմանաչափ",
+            "GASLIMITRANGE": "Դիապազոն",
+            "GASPRICE": "Բենզինի գինը (MRX մեկ գազի միավորի համար)",
+            "GASPRICEMIN": "Նվազագույն",
+            "ESTIMATEDMAXCOST": "Մոտավոր առավելագույն արժեքը",
+            "DEPLOYBUTTON": "Տեղակայել պայմանագիրը",
+            "INCOMPLETEFORM": "Խնդրում ենք ընտրել ուղարկողի հասցե, մուտքագրել վավեր բայթկոդ և սահմանել վավեր բենզինի սահմանաչափ/գին",
+            "HIGHGASPRICETITLE": "Բարձր բենզինի գին",
+            "HIGHGASPRICEINFO": "Ձեր սահմանած բենզինի գինը անսովոր բարձր է։ Այս տեղակայումը կարող է արժենալ մինչև՝",
+            "DEPLOYING": "Պայմանագրի տեղակայում...",
+            "DEPLOYED": "Պայմանագրի տեղակայումը ներկայացվել է",
+            "RESULTTITLE": "Տեղակայման արդյունք",
+            "STATUS": "Կարգավիճակ",
+            "STATUSPENDING": "Սպասում է հաստատման...",
+            "STATUSCONFIRMED": "Հաջողությամբ տեղակայվեց",
+            "STATUSFAILED": "Տեղակայումը ձախողվեց",
+            "TXID": "Գործարքի ID",
+            "SENDER": "Ուղարկող",
+            "CONTRACTADDRESS": "Պայմանագրի հասցե",
+            "GASUSED": "Օգտագործված բենզին",
+            "DONEBUTTON": "Կատարված է",
+            "DEPLOYANOTHERBUTTON": "Տեղակայել մեկ այլ"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Գործարքներ",
+            "COPYBLOCKHASH": "Պատճենել բլոկի հեշը",
+            "COPYTXID": "Պատճենել գործարքի ID-ն",
+            "COPYACCOUNT": "Հաշվի անվան պատճենում",
+            "COPYADDRESS": "Պատճենել հասցեն",
+            "COPYAMOUNT": "Պատճենների քանակը",
+            "COPTBLOCKINDEX": "Պատճենել բլոկի ինդեքսը",
+            "EXPLORER": "Բացել Block Explorer-ում"
         },
         "STAKING": {
             "UNLOCK": "Բացել խաղադրույքի համար",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Հասցե",
             "ENABLED": "Միացված է",
-            "STARTBUTTON": "Սկսել տեղական",
-            "STARTALIASBUTTON": "Սկսել կեղծանունը",
-            "STARTALLBUTTON": "Սկսել բոլորը",
             "NOMASTERNODES": "Դուք չունեք որևէ մաստերնոդ",
             "NOMNOUTPUTS": "Masternode-ի ելքեր չեն գտնվել: Տեղական Masternode-ը գործարկելու համար ձեր Masternode հասցեին ուղարկեք ճիշտ 2, 5, 25, 50 կամ 100 միլիոն մետաղադրամ և սպասեք 15 հաստատման:",
+            "STARTBUTTON": "Սկսել տեղական",
             "STOPBUTTON": "Կանգ առեք տեղական",
+            "STARTALIASBUTTON": "Սկսել կեղծանունը",
             "STOPALIASBUTTON": "Դադարեցնել կեղծանունը",
+            "STARTALLBUTTON": "Սկսել բոլորը",
             "ADDREMOTE": "Ավելացնել հեռակա գլխավոր հանգույց",
             "REMOVEMN": "Հեռացնել Masternode-ը",
             "ADDLOCAL": "Տեղական գլխավոր հանգույցի կարգավորում",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Ընդհանուր",
                 "COREVERSION": "Հիմնական տարբերակ",
+                "ALTITUDEVERSION": "Բարձրության տարբերակ",
                 "PROTOCOLVERSION": "Արձանագրության տարբերակ",
                 "WALLETVERSION": "Wallet.dat տարբերակը",
                 "NETWORKTITLE": "Ցանց",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Մաստերնոդների քանակը",
                 "BLOCKCHAINTITLE": "Բլոկ-շղթա",
                 "NUMBERBLOCKS": "Բլոկների ընթացիկ քանակը",
-                "BESTBLOCKTTIME": "Վերջին բլոկի ժամանակը",
-                "ALTITUDEVERSION": "Բարձրության տարբերակ"
+                "BESTBLOCKTTIME": "Վերջին բլոկի ժամանակը"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Բարի գալուստ Metrix Core RPC կոնսոլ: Մուտքագրեք օգնություն՝ հասանելի հրամանների ընդհանուր տեսքը տեսնելու համար:",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Ընտրեք լեզուն"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Գործարքներ",
-            "COPYBLOCKHASH": "Պատճենել բլոկի հեշը",
-            "COPYTXID": "Պատճենել գործարքի ID-ն",
-            "COPYACCOUNT": "Հաշվի անվան պատճենում",
-            "COPYADDRESS": "Պատճենել հասցեն",
-            "COPYAMOUNT": "Պատճենների քանակը",
-            "COPTBLOCKINDEX": "Պատճենել բլոկի ինդեքսը",
-            "EXPLORER": "Բացել Block Explorer-ում"
+        "CURRENCY": {
+            "TITLE": "Ընտրեք ցուցադրման արժույթը"
         },
         "EXPLORER": {
             "TITLE": "Բլոկների ուսումնասիրող",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Ցանց",
             "WINDOTAB": "Պատուհան",
+            "BACKUPTAB": "Պահուստավորում",
+            "EXPLORERTAB": "Հետազոտող",
+            "DEVELOPERTAB": "Մշակող",
             "NETWORK": {
                 "PROXY": "Միացեք SOCKS5 պրոքսիի միջոցով",
                 "PROXYIP": "Պրոքսի IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Փոքրացնել փակելիս",
                 "BEHAVIOURTITLE": "Համակարգի սկուտեղի և պատուհանի վարքագիծ"
             },
-            "BACKUPTAB": "Պահուստավորում",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Ավտոմատ պահուստավորում",
                 "ENABLED": "Ավտոմատ կերպով պահուստավորեք wallet.dat-ը ժամանակացույցով",
                 "ENABLEDINFO": "Ստեղծում է ձեր դրամապանակի ֆայլի նոր պահուստային պատճենը ժամանակացույցով, որպեսզի վերջին պատճենը միշտ հասանելի լինի, եթե ինչ-որ բան այն չընթանա։",
+                "INTERVALLABEL": "Պահուստավորել ամեն (օր)",
                 "LASTBACKUP": "Վերջին պահուստավորումը՝",
                 "NEVERBACKEDUP": "Ավտոմատ պահուստավորում դեռևս չի արվել։",
                 "BACKUPNOWBUTTON": "Պահուստավորել հիմա",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Վերականգնել լռելյայնին",
                 "PRUNETITLE": "Պահուստավորման պատմություն",
                 "PRUNEINFO": "Հին ավտոմատ պահուստավորումները ջնջվում են, որպեսզի այս պանակը հավերժ չմեծանա՝ պահվում են միայն ստորև նշված ամենավերջինները։",
-                "KEEPCOUNTLABEL": "Պահել վերջինը",
-                "INTERVALLABEL": "Պահուստավորել ամեն (օր)"
+                "KEEPCOUNTLABEL": "Պահել վերջինը"
             },
-            "EXPLORERTAB": "Հետազոտող",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Բլոկների ուսումնասիրող",
                 "BLOCKEXPLORERINFO": "Կայքը բացվեց բլոկների հետազոտիչում գործարքը դիտելիս (օրինակ՝ գործարքի վրա աջ սեղմում > Դիտել հետազոտիչում):",
@@ -259,25 +298,31 @@
                 "MAINNET": "Գլխավոր ցանց",
                 "TESTNET": "Թեստային ցանց",
                 "REGTEST": "Գրանցման թեստ"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Մշակողի ռեժիմ",
+                "DEVMODEINFO": "Անջատված է ըստ լռելյայնի և նախատեսված է միայն մշակողների համար: Սա միացնելիս կբացվեն RPC կապը չեղարկելու տարբերակները. սովորական օգտատերերը պետք է այն անջատած թողնեն:",
+                "DEVMODELABEL": "Միացնել մշակողի ռեժիմը",
+                "WARNING": "Այս կարգավորումները միայն մշակման նպատակների համար են: Դրանց փոփոխությունը կարող է ընդհանրապես խանգարել դրամապանակի կապը դեմոնի հետ. օգտագործեք դրանք միայն այն դեպքում, եթե գիտեք, թե ինչ եք անում:",
+                "RPCHOSTTITLE": "RPC միացում",
+                "RPCHOSTINFO": "Ըստ լռելյայնի՝ Altitude-ը միանում է այս մեքենայի վրա կառավարվող դեմոնին (127.0.0.1): Այս կարգավորումները անտեսելը թույլ է տալիս միանալ այլ դեմոնի՝ օրինակ՝ հեռակա regtest օրինակի, առանց այն տեղական մակարդակով գործարկելու անհրաժեշտության: Եթե կապը հաջողվի, Altitude-ը չի ներբեռնի կամ գործարկի իր սեփական տեղական դեմոնը: Նպատակային դեմոնի rpcallowip-ը պետք է թույլատրի այս կապը, և ստորև նշված rpcuser/rpcpassword-ը պետք է համապատասխանի դրա կարգավորմանը: Անմիջապես ուժի մեջ է մտնում, վերագործարկման կարիք չկա:",
+                "RPCHOSTLABEL": "RPC հոսթինգ",
+                "RPCPORTLABEL": "RPC միացք",
+                "RPCUSERLABEL": "RPC օգտատիրոջ անուն",
+                "RPCPASSWORDLABEL": "RPC գաղտնաբառ"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Ընդհանուր տեսք",
-            "TRANSACTIONSTAB": "Գործարքներ",
-            "ADDRESSTABS": "Հասցեներ"
-        },
-        "CURRENCY": {
-            "TITLE": "Ընտրեք ցուցադրման արժույթը"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Կառավարման վահանակ",
             "SEND": "Ուղարկել",
+            "CREATECONTRACT": "Ստեղծել պայմանագիր",
             "RECEIVE": "Ստանալ",
             "TRANSACTIONS": "Գործարքներ",
             "STAKING": "Ստեյքինգ",
             "MASTERNODES": "Մաստերնոդներ",
+            "EXPLORER": "Բլոկների ուսումնասիրող",
             "SYNC": {
                 "CONNECTING": "Միանում է",
                 "NOBLOCKS": "Սպասում եմ բլոկների",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Դրամապանակը ներկայումս չի կատարում խաղադրույքներ",
                 "MASTERNODEON": "Masternode-ը ներկայումս աշխատում է",
                 "MASTERNODEOFF": "Masternode-ը ներկայումս չի աշխատում"
-            },
-            "EXPLORER": "Բլոկների ուսումնասիրող"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Մուտքագրեք web3 կայքի հասցեն",
+            "GOBUTTON": "Գնալ",
+            "QUICKLAUNCH": "Արագ մեկնարկ",
+            "DEVTOOLS": "Բացեք մշակողի գործիքները",
+            "ADDLINK": "Ավելացնել հղում",
+            "LINKNAMEPLACEHOLDER": "Անուն",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Պահպանել",
+            "CANCEL": "Չեղարկել",
+            "REMOVE": "Հեռացնել",
+            "REMOVECONFIRM": "Հեռացնե՞լ այս արագ հղումը։",
+            "LINKEXISTS": "Այդ հղումն արդեն ձեր արագ գործարկման ցանկում է",
+            "LINKINVALID": "Մուտքագրեք կայքի վավեր հասցե",
+            "LINKNETWORKLABEL": "Ցանց",
+            "LOADFAILED": "Կայքը չհաջողվեց բեռնել",
+            "SECURESITE": "Կապը անվտանգ է՝ վավեր SSL վկայագիր",
+            "INSECURESITE": "Կապը անվտանգ չէ",
+            "INVALIDCERTSITE": "Կապը գաղտնի չէ՝ անվավեր կամ անվստահելի SSL վկայագիր"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Մուտքագրեք ձեր դրամապանակի գաղտնաբառը",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core-ի համար հասանելի է թարմացում։ Ցանկանո՞ւմ եք այն հիմա տեղադրել։",
             "WALLETUPDATETITLE": "Բարձրության թարմացում հասանելի է",
             "WALLETUPDATEINFO": "Altitude-ի համար հասանելի է թարմացում։ Կցանկանայի՞ք այն ներբեռնել հիմա։",
+            "WALLETUPDATEREADYTITLE": "Բարձրության թարմացումը պատրաստ է",
+            "WALLETUPDATEREADYINFO": "Թարմացումը ներբեռնվել է: Վերագործարկե՞լ Altitude-ը՝ այն տեղադրելու համար:",
+            "WALLETUPDATERESTARTBUTTON": "Վերագործարկեք և տեղադրեք",
+            "WALLETUPDATELATERBUTTON": "Ավելի ուշ",
             "CLIENTUPDATEBUTTON": "Թարմացում",
             "CLIENTUPDATECANCELBUTTON": "Չթարմացնել",
             "CLIENTUPDATESKIPBUTTON": "Բաց թողնել այս թարմացումը",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ձեր դրամապանակի ֆայլի նախկին պահուստային պատճենները պետք է փոխարինվեն նոր ստեղծված, կոդավորված դրամապանակի ֆայլով: Անվտանգության նկատառումներից ելնելով, չկոդավորված դրամապանակի ֆայլի նախկին պահուստային պատճենները կդառնան անօգուտ, հենց որ սկսեք օգտագործել նոր, կոդավորված դրամապանակը:",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core-ը անսպասելիորեն կանգ առավ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-ի հետ կապված խնդիր առաջացավ, որը հանգեցրեց դրա անջատմանը: Խորհուրդ է տրվում ստուգել ձեր debug.log ֆայլը՝ խնդիրների առկայության համար:",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-ի կապի սխալ",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core-ի հետ կապ հաստատելու խնդիր առաջացավ։ Խորհուրդ է տրվում ստուգել ձեր debug.log ֆայլը՝ խնդիրների առկայության համար։",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ը ձախողվեց",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-ի բեռնավորման հետ կապված խնդիր առաջացավ։ Խորհուրդ է տրվում ստուգել ձեր Altitude գրանցամատյանի ֆայլը՝ խնդիրների առկայության համար։",
+            "BOOTSTRAPOFFERTITLE": "Դրամապանակը զգալիորեն հնացած է",
+            "BOOTSTRAPOFFERINFO": "Հասանելի է վերջերս գործարկվող bootstrap, որը կարող է արագորեն թարմացնել Metrix Core-ը: Նորմալ համաժամեցմամբ շարունակելը կարող է մի քանի օր տևել, քանի որ ձեր դրամապանակը պետք է ներբեռնի և ստուգի բաց թողնված յուրաքանչյուր բլոկ:",
+            "BOOTSTRAPOFFERBUTTON": "Ներբեռնեք Bootstrap-ը",
+            "BOOTSTRAPOFFERCANCEL": "Շարունակել սովորական համաժամեցումը",
+            "BOOTSTRAPSPACEINFO": "Բուտսթրեփը ներբեռնելու և ապամոնտաժելու համար բավարար ազատ սկավառակի տարածք չկա։ Պահանջվում է՝ {պահանջվում}, Հասանելի է՝ {անվճար}։ Ազատեք մի փոքր տարածք և փորձեք կրկին։",
+            "STARTUPFAILEDTITLE": "Metrix Core-ի գործարկումը ձախողվեց",
+            "STARTUPFAILEDINFO": "Metrix Core-ը գործարկելիս սխալ է տեղի ունեցել: Խորհուրդ է տրվում ստուգել ձեր Altitude գրանցամատյանի ֆայլը՝ խնդիրների առկայության համար:",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Վերականգնման գործիքներ",
             "CLIENTINVALIDCONFIGTITLE": "Անվավեր metrix.conf կարգավորում",
             "CLIENTINVALIDCONFIGINFO": "Ձեր metrix.conf ֆայլը ունի անվավեր masternode կարգավորում, որը կհանգեցնի Metrix Core-ի անհապաղ փակմանը: Խնդրում ենք ստուգել այս ֆայլը:",
             "ADDREMOTEMNTITLE": "Ավելացնել հեռակա գլխավոր հանգույց",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode-ի մասնավոր բանալի",
             "ADDREMOTEMNTXHASH": "Masternode Trx հեշ",
             "ADDREMOTEMNTXINDEX": "Masternode Trx ինդեքս",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ը ձախողվեց",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core-ի բեռնավորման հետ կապված խնդիր առաջացավ։ Խորհուրդ է տրվում ստուգել ձեր Altitude գրանցամատյանի ֆայլը՝ խնդիրների առկայության համար։",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Վերականգնման գործիքներ",
-            "STARTUPFAILEDTITLE": "Metrix Core-ի գործարկումը ձախողվեց",
-            "STARTUPFAILEDINFO": "Metrix Core-ը գործարկելիս սխալ է տեղի ունեցել: Խորհուրդ է տրվում ստուգել ձեր Altitude գրանցամատյանի ֆայլը՝ խնդիրների առկայության համար:",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-ի կապի սխալ",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core-ի հետ կապ հաստատելու խնդիր առաջացավ։ Խորհուրդ է տրվում ստուգել ձեր debug.log ֆայլը՝ խնդիրների առկայության համար։",
             "UNENROLLGOVERNORTITLE": "Հաստատեք նահանգապետի չգրանցումը",
             "UNENROLLGOVERNORCONTENT": "Վստա՞հ եք, որ ուզում եք չեղարկել ձեր նահանգապետի գրանցումը: Դուք այլևս չեք կարողանա քվեարկել շղթայական կառավարման օգտին:",
-            "WALLETUPDATEREADYTITLE": "Բարձրության թարմացումը պատրաստ է",
-            "WALLETUPDATEREADYINFO": "Թարմացումը ներբեռնվել է: Վերագործարկե՞լ Altitude-ը՝ այն տեղադրելու համար:",
-            "WALLETUPDATERESTARTBUTTON": "Վերագործարկեք և տեղադրեք",
-            "WALLETUPDATELATERBUTTON": "Ավելի ուշ",
             "DAPPCONNECTTITLE": "Միանալ կայքին",
             "DAPPCONNECTINFO": "Այս կայքը ցանկանում է միանալ ձեր դրամապանակին և դիտել ձեր հասցեն ու մնացորդը։",
             "DAPPCONNECTBUTTON": "Միանալ",
+            "DAPPCONNECTADDRESSLABEL": "Հասցե",
+            "DAPPAPPROVEBUTTON": "Հաստատել",
             "DAPPREJECTBUTTON": "Մերժել",
             "DAPPSENDTITLE": "Պայմանագրային գործարքի հարցում",
             "DAPPSENDINFO": "Այս կայքը խնդրում է ձեր դրամապանակից պայմանագրային գործարք ուղարկել։",
-            "DAPPSIGNTITLE": "Ստորագրել հաղորդագրության հարցումը",
-            "DAPPSIGNINFO": "Այս կայքը խնդրում է ստորագրել հաղորդագրություն ձեր դրամապանակի հասցեով։",
-            "DAPPNOTREADY": "Կայքին միանալը դեռ հնարավոր չէ. Metrix Core-ը դեռ գործարկվում է։",
-            "DAPPNOWALLET": "Հնարավոր չէ միանալ կայքին. դրամապանակի հասցեն հասանելի չէ։",
-            "DAPPAPPROVEBUTTON": "Հաստատել",
-            "DAPPCONNECTADDRESSLABEL": "Հասցե",
             "DAPPSENDSITELABEL": "Կայք",
             "DAPPSENDCONTRACTLABEL": "Պայմանագրի հասցե",
             "DAPPSENDAMOUNTLABEL": "Գումար",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Առավելագույն ցանցային վճար",
             "DAPPSENDMAXTOTALLABEL": "Առավելագույն ընդհանուր",
             "DAPPSENDDATALABEL": "Պայմանագրի տվյալներ",
+            "DAPPSIGNTITLE": "Ստորագրել հաղորդագրության հարցումը",
+            "DAPPSIGNINFO": "Այս կայքը խնդրում է ստորագրել հաղորդագրություն ձեր դրամապանակի հասցեով։",
             "DAPPSIGNMESSAGELABEL": "Հաղորդագրություն",
-            "BOOTSTRAPOFFERTITLE": "Դրամապանակը զգալիորեն հնացած է",
-            "BOOTSTRAPOFFERINFO": "Հասանելի է վերջերս գործարկվող bootstrap, որը կարող է արագորեն թարմացնել Metrix Core-ը: Նորմալ համաժամեցմամբ շարունակելը կարող է մի քանի օր տևել, քանի որ ձեր դրամապանակը պետք է ներբեռնի և ստուգի բաց թողնված յուրաքանչյուր բլոկ:",
-            "BOOTSTRAPOFFERBUTTON": "Ներբեռնեք Bootstrap-ը",
-            "BOOTSTRAPOFFERCANCEL": "Շարունակել սովորական համաժամեցումը",
-            "BOOTSTRAPSPACEINFO": "Բուտսթրեփը ներբեռնելու և ապամոնտաժելու համար բավարար ազատ սկավառակի տարածք չկա։ Պահանջվում է՝ {պահանջվում}, Հասանելի է՝ {անվճար}։ Ազատեք մի փոքր տարածք և փորձեք կրկին։"
+            "DAPPNOTREADY": "Կայքին միանալը դեռ հնարավոր չէ. Metrix Core-ը դեռ գործարկվում է։",
+            "DAPPNOWALLET": "Հնարավոր չէ միանալ կայքին. դրամապանակի հասցեն հասանելի չէ։"
         },
         "ADDRESSBOOK": {
             "TITLE": "Հասցեների գիրք",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Ընթացիկ ցանց"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Մուտքագրեք web3 կայքի հասցեն",
-            "GOBUTTON": "Գնալ",
-            "QUICKLAUNCH": "Արագ մեկնարկ",
-            "DEVTOOLS": "Բացեք մշակողի գործիքները",
-            "ADDLINK": "Ավելացնել հղում",
-            "LINKNAMEPLACEHOLDER": "Անուն",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Պահպանել",
-            "CANCEL": "Չեղարկել",
-            "REMOVE": "Հեռացնել",
-            "REMOVECONFIRM": "Հեռացնե՞լ այս արագ հղումը։",
-            "LINKEXISTS": "Այդ հղումն արդեն ձեր արագ գործարկման ցանկում է",
-            "LINKINVALID": "Մուտքագրեք կայքի վավեր հասցե",
-            "LINKNETWORKLABEL": "Ցանց",
-            "LOADFAILED": "Կայքը չհաջողվեց բեռնել",
-            "SECURESITE": "Կապը անվտանգ է՝ վավեր SSL վկայագիր",
-            "INSECURESITE": "Կապը անվտանգ չէ",
-            "INVALIDCERTSITE": "Կապը գաղտնի չէ՝ անվավեր կամ անվստահելի SSL վկայագիր"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Պահուստային դրամապանակ...",
             "SIGNMESSAGE": "Ստորագրել հաղորդագրությունը...",
             "VERIFYMESSAGE": "Հաստատել հաղորդագրությունը...",
-            "LOCALE": "Լեզու...",
-            "RESTARTCORE": "Վերագործարկեք Metrix Core-ը",
-            "EXIT": "Ելք",
             "OPTIONS": "Ընտրանքներ...",
+            "LOCALE": "Լեզու...",
             "CURRENCIES": "Ցուցադրել արժույթը...",
-            "ALTITUDEREFRESH": "Թարմացնել բարձրության տվյալները"
+            "RESTARTCORE": "Վերագործարկեք Metrix Core-ը",
+            "ALTITUDEREFRESH": "Թարմացնել բարձրության տվյալները",
+            "EXIT": "Ելք"
         },
         "ENCRYPT": {
             "TITLE": "Գաղտնագրել",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Ընդհանուր մնացորդ",
+        "SPENDABLEBALANCE": "Ծախսելի մնացորդ",
+        "PENDINGBALANCE": "Սպասող մնացորդ",
         "CANCELBUTTON": "Չեղարկել",
         "DONEBUTTON": "Կատարված է",
         "OKBUTTON": "Լավ",
+        "ACCEPTBUTTON": "Ընդունել",
         "CLEARALLBUTTON": "Մաքրել բոլորը",
         "ENTERACCOUNTLABEL": "Մուտքագրեք այս հասցեի պիտակը",
         "ENTERADDRESSLABEL": "Մուտքագրեք Metrix հասցե",
@@ -464,11 +511,8 @@
         "SORTBY": "Դասավորել ըստ",
         "SEARCH": "Որոնում",
         "FEE": "Վճար",
-        "ACCEPTBUTTON": "Ընդունել",
         "CONFIRMED": "Հաստատված է",
         "UNCONFIRMED": "Չհաստատված",
-        "PENDINGBALANCE": "Սպասող մնացորդ",
-        "SPENDABLEBALANCE": "Ծախսելի մնացորդ",
         "SAVEBUTTON": "Պահպանել"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core-ի վերագործարկում...",
         "BOOTSTRAPPING": "Բութսթրեփը ներբեռնվում է...",
         "BOOTSTRAPEXTRACTING": "Բութսթրեփի արդյունահանում...",
-        "TIMEREMAINING": "մնացածը՝"
+        "TIMEREMAINING": "մնացածը՝",
+        "DEVRPCOVERRIDEACTIVE": "Մշակողի RPC կապի փոխարինումը սահմանված է (Ընտրանքներ > Մշակող) և չի արձագանքում: Մաքրեք այն՝ տեղական դեմոնին նորմալ կերպով վերամիանալու համար:",
+        "DEVRPCOVERRIDECLEARBUTTON": "Մաքրել RPC-ի անտեսումը և վերամիացումը"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Նոր հաշիվը հաջողությամբ ստեղծվեց",
         "ADDRESSCOPIEDCLIPBOARD": "Հասցեն պատճենվեց սեղմատախտակին",
+        "COPIEDCLIPBOARD": "Պատճենվել է սեղմատախտակին",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Գործարքները պատճենվեցին սեղմատախտակին",
         "EMPTYFIELDS": "Խնդրում ենք լրացնել բոլոր դաշտերը",
         "NOUPDATE": "Թարմացում հասանելի չէ",
         "WALLETBACKEDUP": "Դրամապանակի պահուստավորումը հաջողվեց։",
+        "WALLETBACKUPFAILED": "Դրամապանակի ավտոմատ պահուստավորումը ձախողվեց. ստուգեք ձեր պահուստավորման տեղը և սկավառակի ազատ տարածքը",
         "PASSPHRASEMISMATCH": "Ձեր մուտքագրած գաղտնաբառերը չեն համընկնում",
         "CHECKINGUPDATE": "Թարմացման ստուգում...",
         "CHECKINGUPDATEFAILED": "Հնարավոր չէ ստուգել թարմացման առկայությունը։ Ստուգեք ձեր ցանցը։",
+        "WALLETUPDATEDOWNLOADING": "Թարմացումը ներբեռնվում է...",
         "SENDINGEXCEEDSBALANCE": "Ձեր ուղարկած գումարը գերազանցում է ձեր ընտրած մնացորդը",
         "MISSINGCHANGEADDRESS": "Դուք պետք է նշեք փոփոխության հասցեն",
         "MISSINGDESTINATIONADDRESS": "Դուք պետք է նշեք նպատակակետի հասցեն",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Դրամապանակի կոդավորում...",
         "CHANGINGPASSPHARASE": "Գաղտնաբառի փոփոխություն...",
         "STARTINGMASTERNODE": "Մաստերնոդի մեկնարկ...",
+        "STOPPINGMASTERNODE": "Մաստերնոդի կանգնեցում...",
         "SENDINGTRANSACTION": "Գործարքն ուղարկվում է...",
         "SIGNINGMESSAGE": "Հաղորդագրությունը ստորագրվում է...",
         "SIGNEDMESSAGE": "Հաղորդագրությունը ստորագրված է",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Դրամապանակի բացում...",
         "TRANSACTIONMISMATCH": "Գործարքի սխալ։ Խնդրում ենք կրկին փորձել։",
         "MINIMUMCONFIRMATIONS": "Բոլոր մուտքագրված տվյալները պահանջում են առնվազն 1 հաստատում ծախսելուց առաջ։",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Գործարքները պատճենվեցին սեղմատախտակին",
-        "STOPPINGMASTERNODE": "Մաստերնոդի կանգնեցում...",
         "FAILEDTOWRITECONFIG": "Ձեր metrix.conf ֆայլում գրելու խնդիր առաջացավ: Ստուգեք, որ ֆայլը գոյություն ունի և որ Altitude-ն ունի գրելու թույլտվություններ:",
         "NOPUBLICUP": "Հանրային IP հասցե չի գտնվել: Ստուգեք ձեր ինտերնետային կապը և վերագործարկեք Altitude-ը:",
         "CONFIGURINGLOCALMN": "Տեղական Masternode-ի կարգավորում...",
         "REPORTINGISSUE": "Ախտորոշիչ տեղեկատվության ստացում... Այս տեղեկատվությունը կպատճենվի ձեր սեղմատախտակին։",
-        "WALLETUPDATEDOWNLOADING": "Թարմացումը ներբեռնվում է...",
-        "WALLETBACKUPFAILED": "Դրամապանակի ավտոմատ պահուստավորումը ձախողվեց. ստուգեք ձեր պահուստավորման տեղը և սկավառակի ազատ տարածքը",
         "EXPLORERURLSAVED": "Հետազոտողի URL-ը պահվեց",
         "EXPLORERURLRESET": "Ուսումնասիրողի URL-ը վերականգնվեց լռելյայնին",
         "EXPLORERURLINVALID": "Սա վավեր http(s) URL չէ",
-        "EXPLORERURLUNREACHABLE": "Այդ URL-ին չհաջողվեց հասնել՝ ստուգեք այն և կրկին փորձեք։"
+        "EXPLORERURLUNREACHABLE": "Այդ URL-ին չհաջողվեց հասնել՝ ստուգեք այն և կրկին փորձեք։",
+        "DEVRPCHOSTSAVED": "RPC հոսթը պահպանվեց",
+        "DEVRPCHOSTRESET": "RPC հոսթը վերադարձվել է լռելյայն վիճակին (127.0.0.1):"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ստացված մետաղադրամներ",
+        "NEWTRANSACTION_TITLE_STAKE": "Ստացված խաղադրույք",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ստացել է Masternode Reward"
     },
     "TIME": {
         "AFEWSECONDS": "Մի քանի վայրկյան",
@@ -533,11 +587,6 @@
         "MONTHS": "ամիսներ",
         "AYEAR": "Մեկ տարի",
         "YEARS": "տարիներ"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Ստացված մետաղադրամներ",
-        "NEWTRANSACTION_TITLE_STAKE": "Ստացված խաղադրույք",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ստացել է Masternode Reward"
     },
     "MONTH": {
         "JAN": "Հունվար",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Կառավարիչները պատասխանատու են ամսական բյուջեների և բլոկչեյնի փոփոխությունների քվեարկության համար: Դուք կարող եք դառնալ կառավարիչ՝ Կառավարման պայմանագրում ամրագրելով ճիշտ գրավը:",
                 "COLLATERAL": "Պահանջվող գրավ",
                 "ENROLL": "Գրանցվել",
+                "SELECTAGOVERNOR": "Ընտրեք համապատասխան նահանգապետի հասցե",
+                "GOVERNORNOTSELECTED": "Համապատասխան հասցե չի ընտրվել",
                 "CONFIRMENROLL": "Դուք պատրաստվում եք գրանցվել որպես կառավարիչ։ Սա կառավարման պայմանագրին կուղարկի գործարք՝ պահանջվող գրավով։ Դուք կարող եք հրաժարվել գրանցումից ցանկացած պահի։",
                 "ISGOVERNORTITLE": "Դուք ակտիվ նահանգապետ եք։",
                 "ISGOVERNORDETAIL1": "Կառավարիչները պատասխանատու են ամսական բյուջեների և բլոկչեյն փոփոխությունների քվեարկության համար։",
                 "ISGOVERNORDETAIL2": "Նահանգապետի պաշտոնում մնալու համար դուք պետք է մասնակցեք առնվազն 1 քվեարկության յուրաքանչյուր 30 օրը մեկ։",
                 "ISGOVERNORDETAIL3": "Եթե քվեարկելու բան չկա, ապա կարող եք ձեռքով շարունակել ձեր գրանցումը՝ ուղարկելով ակտիվ ping։",
+                "MYGOVERNORADDRESS": "Իմ նահանգապետի հասցեն",
                 "UNENROLL": "Անջատել գրանցումը",
                 "PING": "Ուղարկել ակտիվ Ping",
                 "LASTPINGTITLE": "Վերջին պինգը",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "օրեր",
                 "GOVERNORVOTEMATURITYHOURS": "ժամեր",
                 "GOVERNORVOTEMATURITYSUFFIX": "մինչև հասունանալը",
-                "MYGOVERNORADDRESS": "Իմ նահանգապետի հասցեն",
-                "SELECTAGOVERNOR": "Ընտրեք համապատասխան նահանգապետի հասցե",
-                "GOVERNORNOTSELECTED": "Համապատասխան հասցե չի ընտրվել",
                 "NOTFULLYSYNCEDTITLE": "Կառավարչի կարգավիճակը հասանելի չէ",
                 "NOTFULLYSYNCEDDETAIL": "Ձեր նահանգապետի գրանցման կարգավիճակը տեսանելի կդառնա, երբ ձեր բլոկչեյնը լիովին համաժամեցված լինի։",
                 "DGPMIGRATIONTITLE": "DGP միգրացիա",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ձեր առաջարկը հաջողությամբ ստեղծվել է",
             "ENROLLINGGOVERNOR": "Գրանցվելով որպես նահանգապետ...",
             "ENROLLEDGOVERNOR": "Ձեր գրանցումը կավարտվի գործարքը հաստատվելուց հետո",
-            "VOTINGONPROPOSAL": "Առաջարկի քվեարկության ուղարկում",
-            "VOTEDONPROPOSAL": "Ձեր քվեն կհաշվվի գործարքը հաստատվելուց հետո։",
             "PINGINGGOVERNOR": "Փինգ է ուղարկվում...",
             "PINGEDGOVERNOR": "Ping-ը հաջողությամբ ուղարկվեց։ Ձեր կառավարիչը կթարմացվի գործարքը հաստատվելուց հետո։",
+            "VOTINGONPROPOSAL": "Առաջարկի քվեարկության ուղարկում",
+            "VOTEDONPROPOSAL": "Ձեր քվեն կհաշվվի գործարքը հաստատվելուց հետո։",
             "UNENROLLINGGOVERNOR": "Մարզպետի գրանցումից հանում...",
             "UNENROLLEDGOVERNOR": "Գործարքն ուղարկված է: Ձեր կառավարիչը կհեռացվի գրանցումից, երբ գործարքը հաստատվի:",
             "GOVERNORNOTMATURE": "Ձեր նահանգապետը դեռ բավականաչափ հասուն չէ այս գործողությունը կատարելու համար"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Գնել Metrix-ը",
+                "SEARCH": "Պատմություն"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Դուք ուղարկում եք",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Գործարքների պատմություն",
                 "SEARCHBUTTON": "Որոնում",
+                "SEARCHPLACEHOLDER": "Մուտքագրեք MRX կամ BTC հասցեն",
                 "TRANSACTIONDATE": "Ամսաթիվ",
                 "TRANSACTIONTYPE": "Տեխասի տեսակը",
                 "TRANSACTIONAMOUNT": "Գումար",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Հաստատված է",
                 "TRANSACTIONNOTCONFIRMED": "Հաստատված չէ",
                 "TRANSACTIONREFUNDED": "Վերադարձված - Նվազագույնից ցածր",
-                "AVGSWAPPRICE": "Միջին փոխանակման գինը",
-                "SEARCHPLACEHOLDER": "Մուտքագրեք MRX կամ BTC հասցեն"
+                "AVGSWAPPRICE": "Միջին փոխանակման գինը"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Փոխանակման հասցեի ստեղծում...",
             "ALREADYHAVEADDRESS": "Դուք արդեն ունեք BTC հասցե, որը կապված է այս Metrix հասցեի հետ։",
             "NOADDRESS": "Դուք չեք մուտքագրել Metrix հասցե"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Գնել Metrix-ը",
-                "SEARCH": "Պատմություն"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Բացահայտել",
                 "EMPTYTITLE": "Տոկեններ դեռ չեն գտնվել",
                 "EMPTYDETAIL": "Altitude-ը ավտոմատ կերպով ստուգում է բլոկների հետազոտիչը ձեր հասցեներին ուղարկված MRC20 և MRC721 տոկենների համար, այնուհետև ստուգում է ամեն ինչ ձեր սեփական հանգույցի հետ համատեղելիության մեջ։ Կարող եք նաև ձեռքով ավելացնել տոկեն, եթե գիտեք դրա պայմանագրի հասցեն։",
+                "EMPTYDETAILCHECKINGDISABLED": "Թոքենների ավտոմատ ստուգումն անջատված է, ուստի ձեր հասցեները չեն ստուգվում թոքենների առկայության համար: Վերևում կրկին միացրեք այն կամ ձեռքով ավելացրեք թոքեն, եթե գիտեք դրա պայմանագրային հասցեն:",
                 "HIDDENTITLE": "Թաքնված տոկեններ",
                 "CONTEXTMENUHIDE": "Թաքցնել թոքենը",
                 "ITEMSSUFFIX": "ապրանք(ներ)",
-                "NONENUMERABLETOOLTIP": "Այս հավաքածուն չի աջակցում առանձին իրերի ցուցակագրումը՝ փոխարենը ցույց տալով, թե քանիսն եք պահում։"
+                "NONENUMERABLETOOLTIP": "Այս հավաքածուն չի աջակցում առանձին իրերի ցուցակագրումը՝ փոխարենը ցույց տալով, թե քանիսն եք պահում։",
+                "CHECKINGENABLED": "Ստուգում է",
+                "CHECKINGDISABLED": "Ստուգում",
+                "CHECKINGENABLEDTOOLTIP": "Թոքենների ստուգումը միացված է. Altitude-ը պարբերաբար ստուգում է ձեր հասցեները թոքենների առկայության համար և թարմացնում է մնացորդները: Սեղմեք՝ անջատելու համար:",
+                "CHECKINGDISABLEDTOOLTIP": "Թոքենների ստուգումն անջատված է. սեղմեք՝ կրկին միացնելու համար։",
+                "CHECKINGDISABLEDNOTICE": "Թոքենների ավտոմատ ստուգումն անջատված է: Ձեր հասցեները չեն սկանավորվում թոքենների համար, և մնացորդները չեն թարմացվի: Դուք դեռ կարող եք թոքեն ավելացնել ձեռքով:"
             },
             "ADDTOKEN": {
                 "TITLE": "Ավելացնել թոքեն",

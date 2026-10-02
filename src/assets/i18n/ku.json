@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Hesabê Biafirîne",
             "HIDEEMPTYACCOUNTS": "Hesabên Vala yên Bênav Veşêre"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Têgihiştinî",
+            "TRANSACTIONSTAB": "Muameleyên",
+            "ADDRESSTABS": "Navnîşan"
+        },
         "SEND": {
             "ADDRECIPIENT": "Wergir lê zêde bike",
             "SEND": "Şandin",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Rojek",
             "TABLECOLUMNS_CONFIRMS": "Tesdîqkirin",
             "ALL_SELECTUNSELECT": "Hemûyan Veşêre/Veşêre",
+            "TREEMODE": "Moda Darê",
+            "LISTMODE": "Moda Lîsteyê",
             "SENDAVAILABLE": "Mîqdara berdest bikar bîne",
             "INPUTLOCKED": "Têketin qefilandî ye. Ji bo xerckirina wê, divê hûn vê têketinê vekin.",
             "CONTEXTMENULOCKINPUT": "Têketinê kilît bike",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Piştî Xercê",
             "QUANTITY": "Jimarî",
             "BYTES": "Bayt",
-            "TREEMODE": "Moda Darê",
-            "LISTMODE": "Moda Lîsteyê",
             "ALERTFEECHANGETITLE": "Guhertina Xercê",
             "ALERTFEECHANGECONTENT": "Xerca rastîn a danûstandinê ji ya ku tê hêvîkirin bilindtir e. Ji kerema xwe xerca nû piştrast bikin:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Peymanê Biafirîne",
+            "INFO": "Peymanek jîr bi şandina bytecode-a wê ya berhevkirî li ser torê bicîh bike. Ev fonksiyonek zincîra bingehîn e - berî bicîhkirinê mîhengên bytecode û gaza xwe du caran kontrol bike, bicîhkirin nayê betalkirin.",
+            "FROM": "Ji",
+            "BYTECODE": "Bîtekod",
+            "BYTECODEPLACEHOLDER": "Koda peymanê ya berhevkirî (hex) bipêçe",
+            "INVALIDBYTECODE": "Divê bytecode rêzek heksadehî ya derbasdar (0-9, a-f) bi hejmareke cot ji tîpan be.",
+            "GASLIMIT": "Sînorê Gazê",
+            "GASLIMITRANGE": "Dirêjahî",
+            "GASPRICE": "Bihayê Gazê (MRX ji bo her yekîneya gazê)",
+            "GASPRICEMIN": "Kêmtirîn",
+            "ESTIMATEDMAXCOST": "Mesrefa herî zêde ya texmînkirî",
+            "DEPLOYBUTTON": "Peymana Bicîhkirinê",
+            "INCOMPLETEFORM": "Ji kerema xwe navnîşana şander hilbijêre, bytecode derbasdar binivîse, û sînor/bihayek benzînê ya derbasdar destnîşan bike",
+            "HIGHGASPRICETITLE": "Bihayê Bilind ê Benzînê",
+            "HIGHGASPRICEINFO": "Bihayê benzînê yê ku we destnîşan kiriye bi awayekî neasayî bilind e. Ev bicihkirin dikare heta:",
+            "DEPLOYING": "Bicîhkirina peymanê...",
+            "DEPLOYED": "Belavkirina peymanê hate pêşkêşkirin",
+            "RESULTTITLE": "Encama Bicîhkirinê",
+            "STATUS": "Cî",
+            "STATUSPENDING": "Li benda piştrastkirinê ye...",
+            "STATUSCONFIRMED": "Bi serkeftî hate bicihkirin",
+            "STATUSFAILED": "Bicîhkirin bi ser neket",
+            "TXID": "Nasnameya Danûstandinê",
+            "SENDER": "Şandiner",
+            "CONTRACTADDRESS": "Navnîşana Peymanê",
+            "GASUSED": "Gaza Bikarhatî",
+            "DONEBUTTON": "Qediya",
+            "DEPLOYANOTHERBUTTON": "Yekî din bicîh bike"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Muameleyên",
+            "COPYBLOCKHASH": "Kopîkirina Bloka Hashê",
+            "COPYTXID": "Nasnameya Muameleyê Kopî Bike",
+            "COPYACCOUNT": "Navê Hesabê Kopî Bike",
+            "COPYADDRESS": "Navnîşanê Kopî Bike",
+            "COPYAMOUNT": "Mîqdara Kopîkirinê",
+            "COPTBLOCKINDEX": "Indeksa Blokê Kopî Bike",
+            "EXPLORER": "Di Bloka Gerokê de Veke"
         },
         "STAKING": {
             "UNLOCK": "Vekin Ji Bo Stakingê",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Navnîşan",
             "ENABLED": "Çalakkirî",
-            "STARTBUTTON": "Destpêkirina Herêmî",
-            "STARTALIASBUTTON": "Destpêkirina Alias",
-            "STARTALLBUTTON": "Hemûyan Dest Pê Bike",
             "NOMASTERNODES": "Tu masternode tune ne",
             "NOMNOUTPUTS": "Derketinên Masternodê nehatin dîtin. Ji bo xebitandina Masternodê herêmî, tam 2, 5, 25, 50 an 100 milyon zîv ji navnîşana xwe ya Masternodê re bişînin û li benda 15 piştrastkirinan bisekinin.",
+            "STARTBUTTON": "Destpêkirina Herêmî",
             "STOPBUTTON": "Rawestandina Herêmî",
+            "STARTALIASBUTTON": "Destpêkirina Alias",
             "STOPALIASBUTTON": "Rawestandina Alias",
+            "STARTALLBUTTON": "Hemûyan Dest Pê Bike",
             "ADDREMOTE": "Masternoda Dûr Zêde Bike",
             "REMOVEMN": "Masternodê Rake",
             "ADDLOCAL": "Masternoda Herêmî Saz Bike",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Giştî",
                 "COREVERSION": "Guhertoya bingehîn",
+                "ALTITUDEVERSION": "Versiyona Bilindahiyê",
                 "PROTOCOLVERSION": "Guhertoya Protokolê",
                 "WALLETVERSION": "Guhertoya Wallet.dat",
                 "NETWORKTITLE": "Tor",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Hejmara Masternodan",
                 "BLOCKCHAINTITLE": "Zincîra Blokê",
                 "NUMBERBLOCKS": "Hejmara niha ya blokan",
-                "BESTBLOCKTTIME": "Dema bloka dawî",
-                "ALTITUDEVERSION": "Versiyona Bilindahiyê"
+                "BESTBLOCKTTIME": "Dema bloka dawî"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Bi xêr hatin konsola RPC ya Metrix Core. Ji bo nihêrînek giştî li ser fermanên berdest, alîkariyê binivîse.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Ziman Hilbijêre"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Muameleyên",
-            "COPYBLOCKHASH": "Kopîkirina Bloka Hashê",
-            "COPYTXID": "Nasnameya Muameleyê Kopî Bike",
-            "COPYACCOUNT": "Navê Hesabê Kopî Bike",
-            "COPYADDRESS": "Navnîşanê Kopî Bike",
-            "COPYAMOUNT": "Mîqdara Kopîkirinê",
-            "COPTBLOCKINDEX": "Indeksa Blokê Kopî Bike",
-            "EXPLORER": "Di Bloka Gerokê de Veke"
+        "CURRENCY": {
+            "TITLE": "Pereyê Nîşandanê Hilbijêre"
         },
         "EXPLORER": {
             "TITLE": "Bloka Gerokê",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Tor",
             "WINDOTAB": "Pace",
+            "BACKUPTAB": "Piştgirî",
+            "EXPLORERTAB": "Lêkolînvan",
+            "DEVELOPERTAB": "Pêşdebir",
             "NETWORK": {
                 "PROXY": "Bi rêya proxy ya SOCKS5 ve girêdayî bibe",
                 "PROXYIP": "IP-ya Proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Kêmkirina nêzîkbûnê",
                 "BEHAVIOURTITLE": "Reftara Tepsiya Sîstemê û Pencereyê"
             },
-            "BACKUPTAB": "Piştgirî",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Piştgiriyek Otomatîk",
                 "ENABLED": "Bi awayekî otomatîkî wallet.dat li gorî bernameyekê kopî bike",
                 "ENABLEDINFO": "Li gorî bernameyekê kopiyek nû ya pelê berîka we diafirîne, ji ber vê yekê heke tiştek xelet biçe her gav kopiyek nû heye.",
+                "INTERVALLABEL": "Her (rojan) paşvekişandin",
                 "LASTBACKUP": "Kopiya hilanînê ya dawî:",
                 "NEVERBACKEDUP": "Hîn jî kopîkirineke otomatîk nehatiye çêkirin.",
                 "BACKUPNOWBUTTON": "Niha Paşve Bike",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Vegerîne rewşa xwerû",
                 "PRUNETITLE": "Dîroka Hilanînê",
                 "PRUNEINFO": "Ji ber vê yekê, hilanînên otomatîkî yên kevin têne jêbirin da ku ev peldank her û her mezin nebe - tenê yên herî dawî yên li jêr têne hilanîn.",
-                "KEEPCOUNTLABEL": "Dawî bihêle",
-                "INTERVALLABEL": "Her (rojan) paşvekişandin"
+                "KEEPCOUNTLABEL": "Dawî bihêle"
             },
-            "EXPLORERTAB": "Lêkolînvan",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Bloka Gerokê",
                 "BLOCKEXPLORERINFO": "Malper dema ku danûstandinek li ser geroka blokê dihat dîtin vebû (mînak, li ser danûstandinek rast-klîk bike > Li ser Gerokê Bibîne).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Tora sereke",
                 "TESTNET": "Testnet",
                 "REGTEST": "Testa qeydkirinê"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Moda Pêşdebir",
+                "DEVMODEINFO": "Bi xwerû veqetandî ye û tenê ji bo pêşdebiran e. Çalakkirina vê yekê vebijarkên ji bo guhertina girêdana RPC nîşan dide - bikarhênerên standard divê vê yekê veneqetînin.",
+                "DEVMODELABEL": "Moda Pêşdebiran Çalak Bike",
+                "WARNING": "Ev mîheng tenê ji bo mebestên pêşvebirinê ne. Guhertina wan dikare pêşî li girêdana berîka bi daemonekê bigire - tenê vê yekê bikar bînin ger hûn dizanin hûn çi dikin.",
+                "RPCHOSTTITLE": "Girêdana RPC",
+                "RPCHOSTINFO": "Bi xwerû, Altitude bi daemona ku ew bi xwe birêve dibe, li ser vê makîneyê (127.0.0.1) ve girêdide. Sererastkirina van dihêle ku ew li şûna wê bi daemona cûda ve girêbide - mînakî mînakek regtest-a dûr, bêyî ku hewce bike ku yek li herêmê bixebitîne. Ger girêdan bi ser bikeve, Altitude dê daemona xwe ya herêmî dakêşîne an jî dest pê neke. Divê rpcallowip-a daemona hedef destûrê bide vê girêdanê, û rpcuser/rpcpassword-a li jêr divê li gorî mîhengê wê be. Tavilê bandorê dike, ji nû ve destpêkirin ne hewce ye.",
+                "RPCHOSTLABEL": "Mêvandarê RPC",
+                "RPCPORTLABEL": "Porta RPC",
+                "RPCUSERLABEL": "Navê bikarhênerê RPC",
+                "RPCPASSWORDLABEL": "Şîfreya RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Têgihiştinî",
-            "TRANSACTIONSTAB": "Muameleyên",
-            "ADDRESSTABS": "Navnîşan"
-        },
-        "CURRENCY": {
-            "TITLE": "Pereyê Nîşandanê Hilbijêre"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Panela kontrolê",
             "SEND": "Şandin",
+            "CREATECONTRACT": "Peymanê Biafirîne",
             "RECEIVE": "Wergirtin",
             "TRANSACTIONS": "Muameleyên",
             "STAKING": "Staking",
             "MASTERNODES": "Masternode",
+            "EXPLORER": "Bloka Gerokê",
             "SYNC": {
                 "CONNECTING": "Girêdan",
                 "NOBLOCKS": "Li benda blokan e",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Wallet niha stok nake",
                 "MASTERNODEON": "Masternode niha dixebite",
                 "MASTERNODEOFF": "Masternode niha naxebite"
-            },
-            "EXPLORER": "Bloka Gerokê"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Navnîşana malperek web3 binivîse",
+            "GOBUTTON": "Ajotin",
+            "QUICKLAUNCH": "Destpêkirina Bilez",
+            "DEVTOOLS": "Amûrên Pêşdebiran Vekin",
+            "ADDLINK": "Girêdanê lê zêde bike",
+            "LINKNAMEPLACEHOLDER": "Nav",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Rizgarkirin",
+            "CANCEL": "Bişûndekirin",
+            "REMOVE": "Dûrxistin",
+            "REMOVECONFIRM": "Vê girêdana bilez jê bibe? Gelo were rakirin?",
+            "LINKEXISTS": "Ew girêdan jixwe di lîsteya destpêkirina we ya bilez de ye",
+            "LINKINVALID": "Navnîşaneke malperê ya derbasdar binivîse",
+            "LINKNETWORKLABEL": "Tor",
+            "LOADFAILED": "Barkirina malperê neserket",
+            "SECURESITE": "Girêdan ewle ye - sertîfîkaya SSL ya derbasdar",
+            "INSECURESITE": "Girêdan ne ewle ye",
+            "INVALIDCERTSITE": "Girêdan ne taybet e - sertîfîkaya SSL nederbasdar an ne pêbawer e"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Şîfreya Berîka xwe Binivîse",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Nûvekirinek ji bo Metrix Core heye. Hûn dixwazin niha wê saz bikin?",
             "WALLETUPDATETITLE": "Nûvekirina Bilindahiyê Berdest e",
             "WALLETUPDATEINFO": "Nûvekirinek ji bo Altitude heye. Hûn dixwazin niha dakêşin?",
+            "WALLETUPDATEREADYTITLE": "Nûvekirina Bilindahiyê Amade ye",
+            "WALLETUPDATEREADYINFO": "Nûvekirin hat daxistin. Ji bo sazkirinê, Altitude niha ji nû ve bidin destpêkirin?",
+            "WALLETUPDATERESTARTBUTTON": "Ji Nû Ve Bide Destpêkirin & Saz Bike",
+            "WALLETUPDATELATERBUTTON": "Paşan",
             "CLIENTUPDATEBUTTON": "Nûvekirin",
             "CLIENTUPDATECANCELBUTTON": "Nûve Neke",
             "CLIENTUPDATESKIPBUTTON": "Vê Nûvekirinê Biqedîne",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Divê hemû kopiyên ewlehiyê yên berê yên pelê berîka xwe bi pelê berîka şîfrekirî ya nû werin guhertin. Ji ber sedemên ewlehiyê, kopiyên ewlehiyê yên berê yên pelê berîka neşîfrekirî dê bêkêr bibin gava ku hûn dest bi karanîna berîka nû ya şîfrekirî bikin.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Ji Neçaverêkirî Rawestiya",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pirsgirêkek bi Metrix Core re hebû ku bû sedema rawestandina wê. Pêşniyar tê kirin ku hûn pelê debug.log-a xwe ji bo pirsgirêkan kontrol bikin.",
+            "CLIENTUNKNOWNERRORTITLE": "Çewtiya Ragihandinê ya Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Di têkiliyê de bi Metrix Core re pirsgirêkek çêbû. Pêşniyar tê kirin ku hûn pelê debug.log-a xwe ji bo pirsgirêkan kontrol bikin.",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap-a Metrix Core bi ser neket",
+            "BOOTSTRAPFAILEDINFO": "Di bootstrapkirina Metrix Core de pirsgirêkek çêbû. Pêşniyar tê kirin ku hûn pelê têketina Altitude-a xwe ji bo pirsgirêkan kontrol bikin.",
+            "BOOTSTRAPOFFERTITLE": "Berîk Bi Girîngî Kevin e",
+            "BOOTSTRAPOFFERINFO": "Bootstrapek nû heye ku dikare Metrix Core zû nûjen bike. Berdewamiya bi senkronîzasyonek normal dibe ku çend rojan bidome, ji ber ku berîka we hewce dike ku her blokek ku ji dest daye dakêşîne û verast bike.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap Dakêşin",
+            "BOOTSTRAPOFFERCANCEL": "Senkronîzasyona Asayî Berdewam Bike",
+            "BOOTSTRAPSPACEINFO": "Ji bo daxistin û derxistina bootstrapê cîhê vala yê dîskê têrê nake. Pêdivî ye: {pêwîst}, Berdest e: {free}. Hinek cîh azad bike û dîsa biceribîne.",
+            "STARTUPFAILEDTITLE": "Destpêkirina Metrix Core bi ser neket",
+            "STARTUPFAILEDINFO": "Di destpêkirina Metrix Core de çewtiyek çêbû. Pêşniyar tê kirin ku hûn pelê tomarê Altitude-a xwe ji bo pirsgirêkan kontrol bikin.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amûrên Vegerandinê",
             "CLIENTINVALIDCONFIGTITLE": "Mîhengkirina metrix.conf nederbasdar e",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf-a te xwedî sazkirineke masternode ya nederbasdar e ku dê bibe sedema girtina tavilê ya Metrix Core. Ji kerema xwe vê pelê kontrol bike.",
             "ADDREMOTEMNTITLE": "Masternoda Dûr Zêde Bike",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Mifteya Taybet a Masternodê",
             "ADDREMOTEMNTXHASH": "Haşhaşa Masternode Trx",
             "ADDREMOTEMNTXINDEX": "Indeksa Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Bootstrap-a Metrix Core bi ser neket",
-            "BOOTSTRAPFAILEDINFO": "Di bootstrapkirina Metrix Core de pirsgirêkek çêbû. Pêşniyar tê kirin ku hûn pelê têketina Altitude-a xwe ji bo pirsgirêkan kontrol bikin.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amûrên Vegerandinê",
-            "STARTUPFAILEDTITLE": "Destpêkirina Metrix Core bi ser neket",
-            "STARTUPFAILEDINFO": "Di destpêkirina Metrix Core de çewtiyek çêbû. Pêşniyar tê kirin ku hûn pelê tomarê Altitude-a xwe ji bo pirsgirêkan kontrol bikin.",
-            "CLIENTUNKNOWNERRORTITLE": "Çewtiya Ragihandinê ya Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Di têkiliyê de bi Metrix Core re pirsgirêkek çêbû. Pêşniyar tê kirin ku hûn pelê debug.log-a xwe ji bo pirsgirêkan kontrol bikin.",
             "UNENROLLGOVERNORTITLE": "Neqeydkirina Parêzgar piştrast bike",
             "UNENROLLGOVERNORCONTENT": "Ma hûn piştrast in ku hûn dixwazin Parêzgarê xwe ji qeydkirinê derxînin? Hûn êdî nikaribin li ser rêveberiya zincîrî deng bidin.",
-            "WALLETUPDATEREADYTITLE": "Nûvekirina Bilindahiyê Amade ye",
-            "WALLETUPDATEREADYINFO": "Nûvekirin hat daxistin. Ji bo sazkirinê, Altitude niha ji nû ve bidin destpêkirin?",
-            "WALLETUPDATERESTARTBUTTON": "Ji Nû Ve Bide Destpêkirin & Saz Bike",
-            "WALLETUPDATELATERBUTTON": "Paşan",
             "DAPPCONNECTTITLE": "Girêdana bi Malperê re",
             "DAPPCONNECTINFO": "Ev malper dixwaze bi berîka te ve girêbide û navnîşan û mîqdara te bibîne.",
             "DAPPCONNECTBUTTON": "Bihevgirêdan",
+            "DAPPCONNECTADDRESSLABEL": "Navnîşan",
+            "DAPPAPPROVEBUTTON": "Destûrdan",
             "DAPPREJECTBUTTON": "Refzkirin",
             "DAPPSENDTITLE": "Daxwaza Muameleya Peymanê",
             "DAPPSENDINFO": "Ev malper daxwaz dike ku ji berîka we danûstandinek peymanek bişîne.",
-            "DAPPSIGNTITLE": "Daxwaza Peyamê Îmze Bike",
-            "DAPPSIGNINFO": "Ev malper daxwaz dike ku bi navnîşana berîka we peyamek îmze bike.",
-            "DAPPNOTREADY": "Hêj nikarim bi malperê ve girêdayî bim - Metrix Core hîn jî dest pê dike.",
-            "DAPPNOWALLET": "Girêdana bi malperê re nayê kirin - navnîşana berîka tune ye.",
-            "DAPPAPPROVEBUTTON": "Destûrdan",
-            "DAPPCONNECTADDRESSLABEL": "Navnîşan",
             "DAPPSENDSITELABEL": "Malper",
             "DAPPSENDCONTRACTLABEL": "Navnîşana Peymanê",
             "DAPPSENDAMOUNTLABEL": "Biha",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Xerca Herî Zêde ya Torê",
             "DAPPSENDMAXTOTALLABEL": "Hemûya Herî Zêde",
             "DAPPSENDDATALABEL": "Daneyên Peymanê",
+            "DAPPSIGNTITLE": "Daxwaza Peyamê Îmze Bike",
+            "DAPPSIGNINFO": "Ev malper daxwaz dike ku bi navnîşana berîka we peyamek îmze bike.",
             "DAPPSIGNMESSAGELABEL": "Agah",
-            "BOOTSTRAPOFFERTITLE": "Berîk Bi Girîngî Kevin e",
-            "BOOTSTRAPOFFERINFO": "Bootstrapek nû heye ku dikare Metrix Core zû nûjen bike. Berdewamiya bi senkronîzasyonek normal dibe ku çend rojan bidome, ji ber ku berîka we hewce dike ku her blokek ku ji dest daye dakêşîne û verast bike.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap Dakêşin",
-            "BOOTSTRAPOFFERCANCEL": "Senkronîzasyona Asayî Berdewam Bike",
-            "BOOTSTRAPSPACEINFO": "Ji bo daxistin û derxistina bootstrapê cîhê vala yê dîskê têrê nake. Pêdivî ye: {pêwîst}, Berdest e: {free}. Hinek cîh azad bike û dîsa biceribîne."
+            "DAPPNOTREADY": "Hêj nikarim bi malperê ve girêdayî bim - Metrix Core hîn jî dest pê dike.",
+            "DAPPNOWALLET": "Girêdana bi malperê re nayê kirin - navnîşana berîka tune ye."
         },
         "ADDRESSBOOK": {
             "TITLE": "Pirtûka navnîşanan",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Tora niha"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Navnîşana malperek web3 binivîse",
-            "GOBUTTON": "Ajotin",
-            "QUICKLAUNCH": "Destpêkirina Bilez",
-            "DEVTOOLS": "Amûrên Pêşdebiran Vekin",
-            "ADDLINK": "Girêdanê lê zêde bike",
-            "LINKNAMEPLACEHOLDER": "Nav",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Rizgarkirin",
-            "CANCEL": "Bişûndekirin",
-            "REMOVE": "Dûrxistin",
-            "REMOVECONFIRM": "Vê girêdana bilez jê bibe? Gelo were rakirin?",
-            "LINKEXISTS": "Ew girêdan jixwe di lîsteya destpêkirina we ya bilez de ye",
-            "LINKINVALID": "Navnîşaneke malperê ya derbasdar binivîse",
-            "LINKNETWORKLABEL": "Tor",
-            "LOADFAILED": "Barkirina malperê neserket",
-            "SECURESITE": "Girêdan ewle ye - sertîfîkaya SSL ya derbasdar",
-            "INSECURESITE": "Girêdan ne ewle ye",
-            "INVALIDCERTSITE": "Girêdan ne taybet e - sertîfîkaya SSL nederbasdar an ne pêbawer e"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Berîka Yedek...",
             "SIGNMESSAGE": "Peyama Îmzekirinê...",
             "VERIFYMESSAGE": "Peyamê piştrast bike...",
-            "LOCALE": "Ziman...",
-            "RESTARTCORE": "Metrix Core ji nû ve bidin destpêkirin",
-            "EXIT": "Derî",
             "OPTIONS": "Vebijêrk...",
+            "LOCALE": "Ziman...",
             "CURRENCIES": "Pereyê Nîşandanê...",
-            "ALTITUDEREFRESH": "Daneyên Bilindahiyê Nûve Bike"
+            "RESTARTCORE": "Metrix Core ji nû ve bidin destpêkirin",
+            "ALTITUDEREFRESH": "Daneyên Bilindahiyê Nûve Bike",
+            "EXIT": "Derî"
         },
         "ENCRYPT": {
             "TITLE": "Şîfrekirin",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Tevahiya Bakiyeyê",
+        "SPENDABLEBALANCE": "Bîlançoya Xerckirinê",
+        "PENDINGBALANCE": "Bîlançoya Li Ber Çavan",
         "CANCELBUTTON": "Bişûndekirin",
         "DONEBUTTON": "Qediya",
         "OKBUTTON": "Başe",
+        "ACCEPTBUTTON": "Baweranîn",
         "CLEARALLBUTTON": "Hemûyan Paqij Bike",
         "ENTERACCOUNTLABEL": "Ji bo vê navnîşanê etîketekê binivîse",
         "ENTERADDRESSLABEL": "Navnîşanek Metrix binivîse",
@@ -464,11 +511,8 @@
         "SORTBY": "Rêzkirin Li gorî",
         "SEARCH": "Gerr",
         "FEE": "Xerc",
-        "ACCEPTBUTTON": "Baweranîn",
         "CONFIRMED": "Piştrastkirî",
         "UNCONFIRMED": "Nepejirandî",
-        "PENDINGBALANCE": "Bîlançoya Li Ber Çavan",
-        "SPENDABLEBALANCE": "Bîlançoya Xerckirinê",
         "SAVEBUTTON": "Rizgarkirin"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core ji nû ve tê destpêkirin...",
         "BOOTSTRAPPING": "Daxistina bootstrap...",
         "BOOTSTRAPEXTRACTING": "Bootstrap tê derxistin...",
-        "TIMEREMAINING": "jiberma:"
+        "TIMEREMAINING": "jiberma:",
+        "DEVRPCOVERRIDEACTIVE": "Guhertineke girêdana RPC ya pêşdebiran hatiye danîn (Vebijark > Pêşdebir) û bersivê nade. Ji bo ku bi awayekî normal bi daemona herêmî ve girêdayî bibin, wê paqij bikin.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Paqijkirina Sererastkirina RPC û Ji Nû Ve Girêdan"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Hesabê nû bi serkeftî hat afirandin",
         "ADDRESSCOPIEDCLIPBOARD": "Navnîşan li panoyê hat kopîkirin",
+        "COPIEDCLIPBOARD": "Li panoyê hat kopîkirin",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Muamele li ser clipboardê hatin kopîkirin",
         "EMPTYFIELDS": "Ji kerema xwe hemû qadan tijî bikin",
         "NOUPDATE": "Nûvekirin tune ye",
         "WALLETBACKEDUP": "Piştrastkirina berîkê serkeftî bû",
+        "WALLETBACKUPFAILED": "Piştgirîya otomatîkî ya berîka xwe bi ser neket - cîhê hilanîna xwe û cîhê dîska berdest kontrol bike",
         "PASSPHRASEMISMATCH": "Şîfreyên ku te nivîsandine li hev nayên",
         "CHECKINGUPDATE": "Ji bo nûvekirinê kontrol dike...",
         "CHECKINGUPDATEFAILED": "Nikare nûvekirinê kontrol bike. Tora xwe kontrol bike.",
+        "WALLETUPDATEDOWNLOADING": "Daxistina nûvekirinê...",
         "SENDINGEXCEEDSBALANCE": "Mîqdara ku hûn dişînin ji mîqdara we ya bijartî zêdetir e",
         "MISSINGCHANGEADDRESS": "Divê hûn navnîşana guhertinê diyar bikin",
         "MISSINGDESTINATIONADDRESS": "Divê hûn navnîşana armancê diyar bikin",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Şîfrekirina berîka...",
         "CHANGINGPASSPHARASE": "Guhertina şîfreyê...",
         "STARTINGMASTERNODE": "Masternodê dest pê dike...",
+        "STOPPINGMASTERNODE": "Masternodê radiwestîne...",
         "SENDINGTRANSACTION": "Danûstandin tê şandin...",
         "SIGNINGMESSAGE": "Peyama îmzekirinê...",
         "SIGNEDMESSAGE": "Peyam îmzekirî ye",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Vekirina berîka...",
         "TRANSACTIONMISMATCH": "Çewtiya danûstandinê. Ji kerema xwe dîsa biceribînin.",
         "MINIMUMCONFIRMATIONS": "Hemû têketin berî xerckirinê herî kêm 1 piştrastkirinê hewce dikin.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Muamele li ser clipboardê hatin kopîkirin",
-        "STOPPINGMASTERNODE": "Masternodê radiwestîne...",
         "FAILEDTOWRITECONFIG": "Di nivîsandina pelê te yê metrix.conf de pirsgirêkek çêbû. Kontrol bike ka pel heye û Altitude destûrên nivîsandinê hene.",
         "NOPUBLICUP": "Navnîşana IP-ya Giştî nehat dîtin. Girêdana înternetê kontrol bike û Altitude ji nû ve bide destpêkirin.",
         "CONFIGURINGLOCALMN": "Mîhengkirina Masternoda herêmî...",
         "REPORTINGISSUE": "Agahiyên teşhîsê tên wergirtin... Ev agahî dê li ser panoya we were kopî kirin.",
-        "WALLETUPDATEDOWNLOADING": "Daxistina nûvekirinê...",
-        "WALLETBACKUPFAILED": "Piştgirîya otomatîkî ya berîka xwe bi ser neket - cîhê hilanîna xwe û cîhê dîska berdest kontrol bike",
         "EXPLORERURLSAVED": "URL-ya gerokê hat tomarkirin",
         "EXPLORERURLRESET": "URL-ya gerokê vegeriya rewşa xwerû",
         "EXPLORERURLINVALID": "Ew URL-yeke http(s) ya derbasdar nîne",
-        "EXPLORERURLUNREACHABLE": "Nikarim bigihîjim wê URL-ê - kontrol bike û dîsa biceribîne"
+        "EXPLORERURLUNREACHABLE": "Nikarim bigihîjim wê URL-ê - kontrol bike û dîsa biceribîne",
+        "DEVRPCHOSTSAVED": "Mêvandarê RPC hat tomarkirin",
+        "DEVRPCHOSTRESET": "Mêvandarê RPC vegeriya rewşa xwerû (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Pereyên wergirtî",
+        "NEWTRANSACTION_TITLE_STAKE": "Beşdariya Wergirtî",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Xelata Masternode wergirt"
     },
     "TIME": {
         "AFEWSECONDS": "Çend saniye",
@@ -533,11 +587,6 @@
         "MONTHS": "meh",
         "AYEAR": "Salek",
         "YEARS": "salan"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Pereyên wergirtî",
-        "NEWTRANSACTION_TITLE_STAKE": "Beşdariya Wergirtî",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Xelata Masternode wergirt"
     },
     "MONTH": {
         "JAN": "ÇILE",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Parêzgar berpirsiyarê dengdana li ser budçeyên mehane û guhertinên zincîra blokê ne. Hûn dikarin bi kilîtkirina temînata rast di peymana Rêveberiyê de bibin Parêzgar.",
                 "COLLATERAL": "Temînata pêwîst",
                 "ENROLL": "Nivîsîn",
+                "SELECTAGOVERNOR": "Navnîşanek parêzgarê mafdar hilbijêre",
+                "GOVERNORNOTSELECTED": "Tu navnîşaneke guncaw nehat hilbijartin",
                 "CONFIRMENROLL": "Tu li ber qeydkirina wekî Walî yî. Ev ê danûstandinek bi temînata pêwîst re bişîne peymana rêveberiyê. Tu dikarî her dem ji qeydkirinê vekişî.",
                 "ISGOVERNORTITLE": "Tu Parêzgarekî çalak î!",
                 "ISGOVERNORDETAIL1": "Parêzgar berpirsiyarê dengdana li ser budçeyên mehane û guhertinên zincîra blokê ne.",
                 "ISGOVERNORDETAIL2": "Ji bo ku hûn wekî Walî bimînin, hûn hewce ne ku her 30 rojan carekê herî kêm beşdarî dengdanê bibin.",
                 "ISGOVERNORDETAIL3": "Heke tiştek tune be ku deng bidin, hûn dikarin bi şandina pingek çalak qeydkirina xwe bi destan bidomînin.",
+                "MYGOVERNORADDRESS": "Navnîşana Parêzgarê Min",
                 "UNENROLL": "Bêqeydkirin",
                 "PING": "Pinga Çalak Bişîne",
                 "LASTPINGTITLE": "Pinga dawî",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "rojan",
                 "GOVERNORVOTEMATURITYHOURS": "demjimêr",
                 "GOVERNORVOTEMATURITYSUFFIX": "heta gihîştinê",
-                "MYGOVERNORADDRESS": "Navnîşana Parêzgarê Min",
-                "SELECTAGOVERNOR": "Navnîşanek parêzgarê mafdar hilbijêre",
-                "GOVERNORNOTSELECTED": "Tu navnîşaneke guncaw nehat hilbijartin",
                 "NOTFULLYSYNCEDTITLE": "Rewşa parêzgar ne berdest e",
                 "NOTFULLYSYNCEDDETAIL": "Rewşa qeydkirina Waliyê we dê xuya bibe dema ku zincîra bloka we bi tevahî senkronîze bibe.",
                 "DGPMIGRATIONTITLE": "Koçberiya DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Pêşniyara te bi serkeftî hat afirandin",
             "ENROLLINGGOVERNOR": "Qeydkirina wekî Waliyê...",
             "ENROLLEDGOVERNOR": "Qeydkirina we dê piştî piştrastkirina danûstandina we temam bibe",
-            "VOTINGONPROPOSAL": "Şandina pêşniyara dengdanê",
-            "VOTEDONPROPOSAL": "Dengê te dê were jimartin piştî ku danûstandin were piştrastkirin.",
             "PINGINGGOVERNOR": "Ping tê şandin...",
             "PINGEDGOVERNOR": "Ping bi serkeftî hat şandin. Dema ku danûstandin were piştrastkirin, Parêzgarê we dê were nûvekirin.",
+            "VOTINGONPROPOSAL": "Şandina pêşniyara dengdanê",
+            "VOTEDONPROPOSAL": "Dengê te dê were jimartin piştî ku danûstandin were piştrastkirin.",
             "UNENROLLINGGOVERNOR": "Rakirina qeydkirina Waliyê...",
             "UNENROLLEDGOVERNOR": "Muamele hat şandin. Dema ku muameleya were piştrastkirin, Parêzgarê we dê ji qeydê were derxistin.",
             "GOVERNORNOTMATURE": "Parêzgarê we hîn têra xwe negihîştiye ku vê çalakiyê pêk bîne."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix bikirin",
+                "SEARCH": "Dîrok"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Tu dişînî",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Dîroka Danûstandinan",
                 "SEARCHBUTTON": "GERR",
+                "SEARCHPLACEHOLDER": "Navnîşana MRX an BTC binivîse",
                 "TRANSACTIONDATE": "Rojek",
                 "TRANSACTIONTYPE": "Cureyê TX",
                 "TRANSACTIONAMOUNT": "Biha",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Piştrastkirî",
                 "TRANSACTIONNOTCONFIRMED": "Nehatiye piştrastkirin",
                 "TRANSACTIONREFUNDED": "Vegerandin - Li jêr kêmtirîn",
-                "AVGSWAPPRICE": "Bihayê Navînî yê Guhertinê",
-                "SEARCHPLACEHOLDER": "Navnîşana MRX an BTC binivîse"
+                "AVGSWAPPRICE": "Bihayê Navînî yê Guhertinê"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Çêkirina navnîşana guhertinê...",
             "ALREADYHAVEADDRESS": "Jixwe navnîşana BTC-ya we bi vê navnîşana Metrix ve girêdayî ye.",
             "NOADDRESS": "Te navnîşana Metrix nenivîsand"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix bikirin",
-                "SEARCH": "Dîrok"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Veşartinê nîşan bide",
                 "EMPTYTITLE": "Hêj Nîşanekan Nehatine Dîtin",
                 "EMPTYDETAIL": "Altitude bixweber lêgerînerek blokê ji bo nîşanekanên MRC20 û MRC721 ên ku ji navnîşanên we re têne şandin kontrol dike, dûv re her tiştî li hember girêka weya xwe rast dike. Her weha hûn dikarin nîşanek bi destan zêde bikin heke hûn navnîşana peymana wê dizanin.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kontrolkirina otomatîkî ya nîşanekan hatiye girtin, ji ber vê yekê navnîşanên we ji bo nîşanekan nayên kontrol kirin. Li jor dîsa vekin, an jî heke hûn navnîşana peymana wê dizanin nîşanek bi destan lê zêde bikin.",
                 "HIDDENTITLE": "Tokenên Veşartî",
                 "CONTEXTMENUHIDE": "Nîşaneya Veşêre",
                 "ITEMSSUFFIX": "tişt(an)",
-                "NONENUMERABLETOOLTIP": "Ev koleksiyon lîstekirina tiştên takekesî piştgirî nake - li şûna wê nîşan dide ka hûn çend tiştan digirin."
+                "NONENUMERABLETOOLTIP": "Ev koleksiyon lîstekirina tiştên takekesî piştgirî nake - li şûna wê nîşan dide ka hûn çend tiştan digirin.",
+                "CHECKINGENABLED": "Kontrolkirin",
+                "CHECKINGDISABLED": "Kontrolkirin",
+                "CHECKINGENABLEDTOOLTIP": "Kontrolkirina nîşanekan vekirî ye - Altitude bi periyodîk navnîşanên we ji bo nîşanekan kontrol dike û hevsengiyê nû dike. Ji bo vemirandinê bikirtînin.",
+                "CHECKINGDISABLEDTOOLTIP": "Kontrolkirina nîşaneyan girtî ye - ji bo dîsa çalakkirinê bikirtînin.",
+                "CHECKINGDISABLEDNOTICE": "Kontrolkirina otomatîkî ya nîşanekan hatiye girtin. Navnîşanên we ji bo nîşanekan nayên şopandin û hevsengiyên we nayên nûvekirin. Hûn hîn jî dikarin nîşanek bi destan zêde bikin."
             },
             "ADDTOKEN": {
                 "TITLE": "Tokenê Zêde Bike",

@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "खाता बनाएं",
             "HIDEEMPTYACCOUNTS": "अनाम खाली खातों को छुपाएँ"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "अवलोकन",
+            "TRANSACTIONSTAB": "लेनदेन",
+            "ADDRESSTABS": "पतों"
+        },
         "SEND": {
             "ADDRECIPIENT": "प्राप्तकर्ता को जोड़ें",
             "SEND": "भेजना",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "तारीख",
             "TABLECOLUMNS_CONFIRMS": "पुष्टिकरण",
             "ALL_SELECTUNSELECT": "सारे टॉगल",
+            "TREEMODE": "ट्री मोड",
+            "LISTMODE": "सूची मोड",
             "SENDAVAILABLE": "उपलब्ध शेष राशि का उपयोग करें",
             "INPUTLOCKED": "यह इनपुट लॉक है। इसका उपयोग करने के लिए आपको इसे अनलॉक करना होगा।",
             "CONTEXTMENULOCKINPUT": "लॉक इनपुट",
@@ -38,10 +45,48 @@
             "AFTERFEE": "शुल्क के बाद",
             "QUANTITY": "मात्रा",
             "BYTES": "बाइट्स",
-            "TREEMODE": "ट्री मोड",
-            "LISTMODE": "सूची मोड",
             "ALERTFEECHANGETITLE": "शुल्क परिवर्तन",
             "ALERTFEECHANGECONTENT": "वास्तविक लेनदेन शुल्क अपेक्षा से अधिक है। कृपया नया शुल्क सत्यापित करें:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "अनुबंध बनाएं",
+            "INFO": "संकलित बाइटकोड सबमिट करके स्मार्ट कॉन्ट्रैक्ट को नेटवर्क पर तैनात करें। यह एक कोर चेन फ़ंक्शन है - तैनाती से पहले अपने बाइटकोड और गैस सेटिंग्स की दोबारा जांच कर लें, तैनाती को पूर्ववत नहीं किया जा सकता है।",
+            "FROM": "से",
+            "BYTECODE": "बाईटकोड",
+            "BYTECODEPLACEHOLDER": "संकलित अनुबंध बाइटकोड (हेक्स) पेस्ट करें",
+            "INVALIDBYTECODE": "बाइटकोड एक मान्य हेक्स स्ट्रिंग (0-9, a-f) होना चाहिए जिसमें वर्णों की संख्या सम हो।",
+            "GASLIMIT": "गैस सीमा",
+            "GASLIMITRANGE": "श्रेणी",
+            "GASPRICE": "गैस की कीमत (MRX प्रति गैस यूनिट)",
+            "GASPRICEMIN": "न्यूनतम",
+            "ESTIMATEDMAXCOST": "अनुमानित अधिकतम लागत",
+            "DEPLOYBUTTON": "परिनियोजन अनुबंध",
+            "INCOMPLETEFORM": "कृपया प्रेषक का पता चुनें, मान्य बाइटकोड दर्ज करें और मान्य गैस सीमा/मूल्य निर्धारित करें।",
+            "HIGHGASPRICETITLE": "गैस की ऊंची कीमतें",
+            "HIGHGASPRICEINFO": "आपने जो गैस की कीमत तय की है वह असामान्य रूप से अधिक है। इस तैनाती में अधिकतम इतना खर्च आ सकता है:",
+            "DEPLOYING": "अनुबंध तैनात करना...",
+            "DEPLOYED": "अनुबंध तैनाती प्रस्तुत की गई",
+            "RESULTTITLE": "तैनाती परिणाम",
+            "STATUS": "स्थिति",
+            "STATUSPENDING": "पुष्टि लंबित है...",
+            "STATUSCONFIRMED": "सफलतापूर्वक तैनात किया गया",
+            "STATUSFAILED": "तैनाती विफल रही",
+            "TXID": "लेनदेन आईडी",
+            "SENDER": "प्रेषक",
+            "CONTRACTADDRESS": "अनुबंध पता",
+            "GASUSED": "प्रयुक्त गैस",
+            "DONEBUTTON": "हो गया",
+            "DEPLOYANOTHERBUTTON": "एक और तैनात करें"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "लेनदेन",
+            "COPYBLOCKHASH": "ब्लॉक हैश की प्रतिलिपि बनाएँ",
+            "COPYTXID": "लेनदेन आईडी कॉपी करें",
+            "COPYACCOUNT": "खाता नाम की प्रतिलिपि बनाएँ",
+            "COPYADDRESS": "पता कॉपी करें",
+            "COPYAMOUNT": "राशि की प्रतिलिपि बनाएँ",
+            "COPTBLOCKINDEX": "ब्लॉक इंडेक्स कॉपी करें",
+            "EXPLORER": "ब्लॉक एक्सप्लोरर में खोलें"
         },
         "STAKING": {
             "UNLOCK": "स्टेकिंग के लिए अनलॉक करें",
@@ -68,13 +113,13 @@
             "IP": "आई पी",
             "ADDRESS": "पता",
             "ENABLED": "सक्रिय",
-            "STARTBUTTON": "स्थानीय स्तर पर शुरुआत करें",
-            "STARTALIASBUTTON": "प्रारंभ उपनाम",
-            "STARTALLBUTTON": "सभी शुरू करें",
             "NOMASTERNODES": "आपके पास कोई मास्टर्नोड नहीं है",
             "NOMNOUTPUTS": "कोई मास्टर्नोड आउटपुट नहीं मिला। स्थानीय मास्टर्नोड चलाने के लिए, अपने मास्टर्नोड पते पर ठीक 2, 5, 25, 50 या 100 मिलियन सिक्के भेजें और 15 पुष्टिकरणों की प्रतीक्षा करें।",
+            "STARTBUTTON": "स्थानीय स्तर पर शुरुआत करें",
             "STOPBUTTON": "स्टॉप लोकल",
+            "STARTALIASBUTTON": "प्रारंभ उपनाम",
             "STOPALIASBUTTON": "उपनाम रोकें",
+            "STARTALLBUTTON": "सभी शुरू करें",
             "ADDREMOTE": "रिमोट मास्टर्नोड जोड़ें",
             "REMOVEMN": "मास्टरनोड हटाएँ",
             "ADDLOCAL": "स्थानीय मास्टर्नोड सेटअप करें",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "सामान्य",
                 "COREVERSION": "कोर संस्करण",
+                "ALTITUDEVERSION": "ऊंचाई संस्करण",
                 "PROTOCOLVERSION": "प्रोटोकॉल संस्करण",
                 "WALLETVERSION": "Wallet.dat संस्करण",
                 "NETWORKTITLE": "नेटवर्क",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "मास्टर्नोड्स की संख्या",
                 "BLOCKCHAINTITLE": "ब्लॉक चेन",
                 "NUMBERBLOCKS": "ब्लॉकों की वर्तमान संख्या",
-                "BESTBLOCKTTIME": "अंतिम ब्लॉक समय",
-                "ALTITUDEVERSION": "ऊंचाई संस्करण"
+                "BESTBLOCKTTIME": "अंतिम ब्लॉक समय"
             },
             "DEBUG": {
                 "CONSOLEINFO": "मैट्रिक्स कोर आरपीसी कंसोल में आपका स्वागत है। उपलब्ध कमांडों का अवलोकन करने के लिए help टाइप करें।",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "भाषा चुने"
         },
-        "TRANSACTIONS": {
-            "TITLE": "लेनदेन",
-            "COPYBLOCKHASH": "ब्लॉक हैश की प्रतिलिपि बनाएँ",
-            "COPYTXID": "लेनदेन आईडी कॉपी करें",
-            "COPYACCOUNT": "खाता नाम की प्रतिलिपि बनाएँ",
-            "COPYADDRESS": "पता कॉपी करें",
-            "COPYAMOUNT": "राशि की प्रतिलिपि बनाएँ",
-            "COPTBLOCKINDEX": "ब्लॉक इंडेक्स कॉपी करें",
-            "EXPLORER": "ब्लॉक एक्सप्लोरर में खोलें"
+        "CURRENCY": {
+            "TITLE": "मुद्रा प्रदर्शित करने का चयन करें"
         },
         "EXPLORER": {
             "TITLE": "ब्लॉक एक्सप्लोरर",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "नेटवर्क",
             "WINDOTAB": "खिड़की",
+            "BACKUPTAB": "बैकअप",
+            "EXPLORERTAB": "एक्सप्लोरर",
+            "DEVELOPERTAB": "डेवलपर",
             "NETWORK": {
                 "PROXY": "SOCKS5 प्रॉक्सी के माध्यम से कनेक्ट करें",
                 "PROXYIP": "प्रोक्षय आईपी",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "बंद करने पर छोटा करें",
                 "BEHAVIOURTITLE": "सिस्टम ट्रे और विंडो व्यवहार"
             },
-            "BACKUPTAB": "बैकअप",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "स्वचालित बैकअप",
                 "ENABLED": "एक निर्धारित समय पर wallet.dat का स्वचालित बैकअप लें",
                 "ENABLEDINFO": "यह आपके वॉलेट फ़ाइल का एक नया बैकअप निर्धारित समय पर बनाता है, ताकि कुछ गड़बड़ होने पर हमेशा एक हालिया कॉपी उपलब्ध रहे।",
+                "INTERVALLABEL": "हर (दिनों) में बैकअप लें",
                 "LASTBACKUP": "अंतिम बैकअप:",
                 "NEVERBACKEDUP": "अभी तक कोई स्वचालित बैकअप नहीं बनाया गया है।",
                 "BACKUPNOWBUTTON": "अब समर्थन देना",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "वितथ पर ले जाएं",
                 "PRUNETITLE": "बैकअप इतिहास",
                 "PRUNEINFO": "पुराने स्वचालित बैकअप हटा दिए जाते हैं ताकि यह फ़ोल्डर हमेशा के लिए बढ़ता न रहे - केवल नीचे दिए गए सबसे हाल के बैकअप ही रखे जाते हैं।",
-                "KEEPCOUNTLABEL": "आखिरी रखें",
-                "INTERVALLABEL": "हर (दिनों) में बैकअप लें"
+                "KEEPCOUNTLABEL": "आखिरी रखें"
             },
-            "EXPLORERTAB": "एक्सप्लोरर",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ब्लॉक एक्सप्लोरर",
                 "BLOCKEXPLORERINFO": "ब्लॉक एक्सप्लोरर पर किसी लेनदेन को देखते समय यह साइट खुलती है (उदाहरण के लिए, किसी लेनदेन पर राइट-क्लिक करें > एक्सप्लोरर पर देखें)।",
@@ -259,25 +298,31 @@
                 "MAINNET": "मेननेट",
                 "TESTNET": "टेस्टनेट",
                 "REGTEST": "रेगटेस्ट"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "डेवलपर मोड",
+                "DEVMODEINFO": "यह डिफ़ॉल्ट रूप से बंद है और केवल डेवलपर्स के लिए है। इसे चालू करने पर RPC कनेक्शन को ओवरराइड करने के विकल्प दिखाई देते हैं - सामान्य उपयोगकर्ताओं को इसे बंद ही रखना चाहिए।",
+                "DEVMODELABEL": "डेवलपर मोड सक्षम करें",
+                "WARNING": "ये सेटिंग्स केवल विकास उद्देश्यों के लिए हैं। इन्हें बदलने से वॉलेट का डेमॉन से कनेक्शन पूरी तरह से बाधित हो सकता है - इसका उपयोग तभी करें जब आपको इसके बारे में पूरी जानकारी हो।",
+                "RPCHOSTTITLE": "आरपीसी कनेक्शन",
+                "RPCHOSTINFO": "डिफ़ॉल्ट रूप से, Altitude इस मशीन (127.0.0.1) पर अपने द्वारा प्रबंधित डेमॉन से कनेक्ट होता है। इन सेटिंग्स को ओवरराइड करने से यह किसी अन्य डेमॉन से कनेक्ट हो सकता है - उदाहरण के लिए, एक रिमोट regtest इंस्टेंस से, बिना इसे स्थानीय रूप से चलाने की आवश्यकता के। यदि कनेक्शन सफल होता है, तो Altitude अपना स्थानीय डेमॉन डाउनलोड या शुरू नहीं करेगा। लक्षित डेमॉन का rpcallowip इस कनेक्शन की अनुमति देना चाहिए, और नीचे दिए गए rpcuser/rpcpassword इसके कॉन्फ़िगरेशन से मेल खाने चाहिए। यह तुरंत प्रभावी होता है, रीस्टार्ट की आवश्यकता नहीं है।",
+                "RPCHOSTLABEL": "आरपीसी होस्ट",
+                "RPCPORTLABEL": "आरपीसी पोर्ट",
+                "RPCUSERLABEL": "आरपीसी उपयोगकर्ता नाम",
+                "RPCPASSWORDLABEL": "आरपीसी पासवर्ड"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "अवलोकन",
-            "TRANSACTIONSTAB": "लेनदेन",
-            "ADDRESSTABS": "पतों"
-        },
-        "CURRENCY": {
-            "TITLE": "मुद्रा प्रदर्शित करने का चयन करें"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "डैशबोर्ड",
             "SEND": "भेजना",
+            "CREATECONTRACT": "अनुबंध बनाएं",
             "RECEIVE": "प्राप्त करें",
             "TRANSACTIONS": "लेनदेन",
             "STAKING": "जताया",
             "MASTERNODES": "मास्टर्नोड्स",
+            "EXPLORER": "ब्लॉक एक्सप्लोरर",
             "SYNC": {
                 "CONNECTING": "कनेक्ट",
                 "NOBLOCKS": "ब्लॉकों की प्रतीक्षा",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "वॉलेट फिलहाल स्टेकिंग नहीं कर रहा है।",
                 "MASTERNODEON": "मास्टरनोड वर्तमान में चल रहा है",
                 "MASTERNODEOFF": "मास्टरनोड वर्तमान में नहीं चल रहा है"
-            },
-            "EXPLORER": "ब्लॉक एक्सप्लोरर"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "वेब3 साइट का पता दर्ज करें",
+            "GOBUTTON": "जाना",
+            "QUICKLAUNCH": "जल्दी लॉन्च करें",
+            "DEVTOOLS": "ओपन डेवलपर टूल्स",
+            "ADDLINK": "लिंक जोड़ें",
+            "LINKNAMEPLACEHOLDER": "नाम",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "बचाना",
+            "CANCEL": "रद्द करना",
+            "REMOVE": "निकालना",
+            "REMOVECONFIRM": "क्या इस क्विक लिंक को हटा दें?",
+            "LINKEXISTS": "वह लिंक पहले से ही आपकी त्वरित लॉन्च सूची में मौजूद है।",
+            "LINKINVALID": "वैध साइट पता दर्ज करें",
+            "LINKNETWORKLABEL": "नेटवर्क",
+            "LOADFAILED": "साइट लोड करने में विफल",
+            "SECURESITE": "कनेक्शन सुरक्षित है - वैध एसएसएल प्रमाणपत्र",
+            "INSECURESITE": "कनेक्शन सुरक्षित नहीं है",
+            "INVALIDCERTSITE": "कनेक्शन सुरक्षित नहीं है - अमान्य या अविश्वसनीय एसएसएल प्रमाणपत्र"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "अपने वॉलेट का पासफ़्रेज़ दर्ज करें",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core के लिए एक अपडेट उपलब्ध है। क्या आप इसे अभी इंस्टॉल करना चाहेंगे?",
             "WALLETUPDATETITLE": "ऊंचाई का अपडेट उपलब्ध है",
             "WALLETUPDATEINFO": "Altitude के लिए एक अपडेट उपलब्ध है। क्या आप इसे अभी डाउनलोड करना चाहेंगे?",
+            "WALLETUPDATEREADYTITLE": "ऊंचाई अपडेट तैयार है",
+            "WALLETUPDATEREADYINFO": "अपडेट डाउनलोड हो गया है। इसे इंस्टॉल करने के लिए अब एल्टीट्यूड को रीस्टार्ट करें।",
+            "WALLETUPDATERESTARTBUTTON": "पुनः आरंभ करें और स्थापित करें",
+            "WALLETUPDATELATERBUTTON": "बाद में",
             "CLIENTUPDATEBUTTON": "अद्यतन",
             "CLIENTUPDATECANCELBUTTON": "अपडेट न करें",
             "CLIENTUPDATESKIPBUTTON": "इस अपडेट को छोड़ें",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "आपने अपनी वॉलेट फ़ाइल के जो भी पुराने बैकअप बनाए हैं, उन्हें नई जेनरेट की गई एन्क्रिप्टेड वॉलेट फ़ाइल से बदल दें। सुरक्षा कारणों से, एन्क्रिप्टेड वॉलेट फ़ाइल के पुराने बैकअप नए एन्क्रिप्टेड वॉलेट का उपयोग शुरू करते ही बेकार हो जाएंगे।",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "मैट्रिक्स कोर अप्रत्याशित रूप से बंद हो गया",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core में कुछ समस्या आ गई थी जिसके कारण यह बंद हो गया। कृपया debug.log फ़ाइल में समस्याओं की जाँच करें।",
+            "CLIENTUNKNOWNERRORTITLE": "मैट्रिक्स कोर संचार त्रुटि",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core के साथ संचार में समस्या आ रही है। कृपया अपनी debug.log फ़ाइल में समस्याओं की जाँच करें।",
+            "BOOTSTRAPFAILEDTITLE": "मैट्रिक्स कोर बूटस्ट्रैप विफल हो गया",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core को बूटस्ट्रैप करने में समस्या आ रही है। कृपया समस्याओं के लिए अपनी Altitude लॉग फ़ाइल की जाँच करें।",
+            "BOOTSTRAPOFFERTITLE": "वॉलेट काफी पुराना हो चुका है",
+            "BOOTSTRAPOFFERINFO": "एक नया बूटस्ट्रैप उपलब्ध है जो मेट्रिक्स कोर को तुरंत अपडेट कर सकता है। सामान्य सिंक करने में कई दिन लग सकते हैं, क्योंकि आपके वॉलेट को छूटे हुए सभी ब्लॉक डाउनलोड और वेरिफाई करने होंगे।",
+            "BOOTSTRAPOFFERBUTTON": "बूटस्ट्रैप डाउनलोड करें",
+            "BOOTSTRAPOFFERCANCEL": "सामान्य सिंक जारी रखें",
+            "BOOTSTRAPSPACEINFO": "बूटस्ट्रैप डाउनलोड और एक्सट्रैक्ट करने के लिए पर्याप्त डिस्क स्थान उपलब्ध नहीं है। आवश्यक: {required}, उपलब्ध: {free}. कृपया कुछ स्थान खाली करें और पुनः प्रयास करें।",
+            "STARTUPFAILEDTITLE": "मैट्रिक्स कोर स्टार्टअप विफल रहा",
+            "STARTUPFAILEDINFO": "Metrix Core को शुरू करने में त्रुटि आई है। कृपया समस्याओं के लिए अपनी Altitude लॉग फ़ाइल की जाँच करें।",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "रिकवरी उपकरण",
             "CLIENTINVALIDCONFIGTITLE": "अमान्य metrix.conf कॉन्फ़िगरेशन",
             "CLIENTINVALIDCONFIGINFO": "आपकी metrix.conf फ़ाइल में मास्टर्नोड का सेटअप गलत है, जिसके कारण Metrix Core तुरंत बंद हो जाएगा। कृपया इस फ़ाइल की जाँच करें।",
             "ADDREMOTEMNTITLE": "रिमोट मास्टर्नोड जोड़ें",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "मास्टरनोड निजी कुंजी",
             "ADDREMOTEMNTXHASH": "मास्टरनोड टीआरएक्स हैश",
             "ADDREMOTEMNTXINDEX": "मास्टर्नोड टीआरएक्स इंडेक्स",
-            "BOOTSTRAPFAILEDTITLE": "मैट्रिक्स कोर बूटस्ट्रैप विफल हो गया",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core को बूटस्ट्रैप करने में समस्या आ रही है। कृपया समस्याओं के लिए अपनी Altitude लॉग फ़ाइल की जाँच करें।",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "रिकवरी उपकरण",
-            "STARTUPFAILEDTITLE": "मैट्रिक्स कोर स्टार्टअप विफल रहा",
-            "STARTUPFAILEDINFO": "Metrix Core को शुरू करने में त्रुटि आई है। कृपया समस्याओं के लिए अपनी Altitude लॉग फ़ाइल की जाँच करें।",
-            "CLIENTUNKNOWNERRORTITLE": "मैट्रिक्स कोर संचार त्रुटि",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core के साथ संचार में समस्या आ रही है। कृपया अपनी debug.log फ़ाइल में समस्याओं की जाँच करें।",
             "UNENROLLGOVERNORTITLE": "राज्यपाल के नामांकन रद्द करने की पुष्टि करें",
             "UNENROLLGOVERNORCONTENT": "क्या आप वाकई अपने गवर्नर को पद से हटाना चाहते हैं? आप अब चेन गवर्नेंस पर वोट नहीं दे पाएंगे।",
-            "WALLETUPDATEREADYTITLE": "ऊंचाई अपडेट तैयार है",
-            "WALLETUPDATEREADYINFO": "अपडेट डाउनलोड हो गया है। इसे इंस्टॉल करने के लिए अब एल्टीट्यूड को रीस्टार्ट करें।",
-            "WALLETUPDATERESTARTBUTTON": "पुनः आरंभ करें और स्थापित करें",
-            "WALLETUPDATELATERBUTTON": "बाद में",
             "DAPPCONNECTTITLE": "साइट से जुड़ें",
             "DAPPCONNECTINFO": "यह साइट आपके वॉलेट से जुड़ना चाहती है और आपका पता और बैलेंस देखना चाहती है।",
             "DAPPCONNECTBUTTON": "जोड़ना",
+            "DAPPCONNECTADDRESSLABEL": "पता",
+            "DAPPAPPROVEBUTTON": "मंज़ूरी देना",
             "DAPPREJECTBUTTON": "अस्वीकार करना",
             "DAPPSENDTITLE": "अनुबंध लेनदेन अनुरोध",
             "DAPPSENDINFO": "यह साइट आपके वॉलेट से अनुबंध लेनदेन भेजने का अनुरोध कर रही है।",
-            "DAPPSIGNTITLE": "हस्ताक्षर संदेश अनुरोध",
-            "DAPPSIGNINFO": "यह साइट आपसे आपके वॉलेट पते के साथ एक संदेश पर हस्ताक्षर करने का अनुरोध कर रही है।",
-            "DAPPNOTREADY": "अभी साइट से कनेक्ट नहीं हो पा रहा है - मेट्रिक्स कोर अभी भी स्टार्ट हो रहा है।",
-            "DAPPNOWALLET": "साइट से कनेक्ट नहीं हो पा रहा है - कोई वॉलेट पता उपलब्ध नहीं है।",
-            "DAPPAPPROVEBUTTON": "मंज़ूरी देना",
-            "DAPPCONNECTADDRESSLABEL": "पता",
             "DAPPSENDSITELABEL": "साइट",
             "DAPPSENDCONTRACTLABEL": "अनुबंध पता",
             "DAPPSENDAMOUNTLABEL": "मात्रा",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "अधिकतम नेटवर्क शुल्क",
             "DAPPSENDMAXTOTALLABEL": "अधिकतम कुल",
             "DAPPSENDDATALABEL": "अनुबंध डेटा",
+            "DAPPSIGNTITLE": "हस्ताक्षर संदेश अनुरोध",
+            "DAPPSIGNINFO": "यह साइट आपसे आपके वॉलेट पते के साथ एक संदेश पर हस्ताक्षर करने का अनुरोध कर रही है।",
             "DAPPSIGNMESSAGELABEL": "संदेश",
-            "BOOTSTRAPOFFERTITLE": "वॉलेट काफी पुराना हो चुका है",
-            "BOOTSTRAPOFFERINFO": "एक नया बूटस्ट्रैप उपलब्ध है जो मेट्रिक्स कोर को तुरंत अपडेट कर सकता है। सामान्य सिंक करने में कई दिन लग सकते हैं, क्योंकि आपके वॉलेट को छूटे हुए सभी ब्लॉक डाउनलोड और वेरिफाई करने होंगे।",
-            "BOOTSTRAPOFFERBUTTON": "बूटस्ट्रैप डाउनलोड करें",
-            "BOOTSTRAPOFFERCANCEL": "सामान्य सिंक जारी रखें",
-            "BOOTSTRAPSPACEINFO": "बूटस्ट्रैप डाउनलोड और एक्सट्रैक्ट करने के लिए पर्याप्त डिस्क स्थान उपलब्ध नहीं है। आवश्यक: {required}, उपलब्ध: {free}. कृपया कुछ स्थान खाली करें और पुनः प्रयास करें।"
+            "DAPPNOTREADY": "अभी साइट से कनेक्ट नहीं हो पा रहा है - मेट्रिक्स कोर अभी भी स्टार्ट हो रहा है।",
+            "DAPPNOWALLET": "साइट से कनेक्ट नहीं हो पा रहा है - कोई वॉलेट पता उपलब्ध नहीं है।"
         },
         "ADDRESSBOOK": {
             "TITLE": "पता पुस्तिका",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "वर्तमान नेटवर्क"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "वेब3 साइट का पता दर्ज करें",
-            "GOBUTTON": "जाना",
-            "QUICKLAUNCH": "जल्दी लॉन्च करें",
-            "DEVTOOLS": "ओपन डेवलपर टूल्स",
-            "ADDLINK": "लिंक जोड़ें",
-            "LINKNAMEPLACEHOLDER": "नाम",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "बचाना",
-            "CANCEL": "रद्द करना",
-            "REMOVE": "निकालना",
-            "REMOVECONFIRM": "क्या इस क्विक लिंक को हटा दें?",
-            "LINKEXISTS": "वह लिंक पहले से ही आपकी त्वरित लॉन्च सूची में मौजूद है।",
-            "LINKINVALID": "वैध साइट पता दर्ज करें",
-            "LINKNETWORKLABEL": "नेटवर्क",
-            "LOADFAILED": "साइट लोड करने में विफल",
-            "SECURESITE": "कनेक्शन सुरक्षित है - वैध एसएसएल प्रमाणपत्र",
-            "INSECURESITE": "कनेक्शन सुरक्षित नहीं है",
-            "INVALIDCERTSITE": "कनेक्शन सुरक्षित नहीं है - अमान्य या अविश्वसनीय एसएसएल प्रमाणपत्र"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "बैकअप वॉलेट...",
             "SIGNMESSAGE": "संदेश पर हस्ताक्षर करें...",
             "VERIFYMESSAGE": "संदेश की पुष्टि करें...",
-            "LOCALE": "भाषा...",
-            "RESTARTCORE": "मैट्रिक्स कोर को पुनः आरंभ करें",
-            "EXIT": "बाहर निकलना",
             "OPTIONS": "विकल्प...",
+            "LOCALE": "भाषा...",
             "CURRENCIES": "मुद्रा प्रदर्शित करें...",
-            "ALTITUDEREFRESH": "ऊंचाई डेटा रीफ़्रेश करें"
+            "RESTARTCORE": "मैट्रिक्स कोर को पुनः आरंभ करें",
+            "ALTITUDEREFRESH": "ऊंचाई डेटा रीफ़्रेश करें",
+            "EXIT": "बाहर निकलना"
         },
         "ENCRYPT": {
             "TITLE": "एन्क्रिप्ट",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "कुल शेष राशि",
+        "SPENDABLEBALANCE": "खर्च करने योग्य शेष राशि",
+        "PENDINGBALANCE": "लंबित राशि",
         "CANCELBUTTON": "रद्द करना",
         "DONEBUTTON": "हो गया",
         "OKBUTTON": "ठीक है",
+        "ACCEPTBUTTON": "स्वीकार करना",
         "CLEARALLBUTTON": "सभी साफ करें",
         "ENTERACCOUNTLABEL": "इस पते के लिए एक लेबल दर्ज करें",
         "ENTERADDRESSLABEL": "एक मैट्रिक्स पता दर्ज करें",
@@ -464,11 +511,8 @@
         "SORTBY": "इसके अनुसार क्रमबद्ध करें",
         "SEARCH": "खोज",
         "FEE": "शुल्क",
-        "ACCEPTBUTTON": "स्वीकार करना",
         "CONFIRMED": "की पुष्टि",
         "UNCONFIRMED": "अपुष्ट",
-        "PENDINGBALANCE": "लंबित राशि",
-        "SPENDABLEBALANCE": "खर्च करने योग्य शेष राशि",
         "SAVEBUTTON": "बचाना"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "मैट्रिक्स कोर को पुनः आरंभ किया जा रहा है...",
         "BOOTSTRAPPING": "बूटस्ट्रैप डाउनलोड हो रहा है...",
         "BOOTSTRAPEXTRACTING": "बूटस्ट्रैप निकाला जा रहा है...",
-        "TIMEREMAINING": "शेष:"
+        "TIMEREMAINING": "शेष:",
+        "DEVRPCOVERRIDEACTIVE": "डेवलपर आरपीसी कनेक्शन ओवरराइड सेट है (विकल्प > डेवलपर) और यह प्रतिक्रिया नहीं दे रहा है। स्थानीय डेमॉन से सामान्य रूप से पुनः कनेक्ट करने के लिए इसे साफ़ करें।",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC ओवरराइड साफ़ करें और पुनः कनेक्ट करें"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "नया खाता सफलतापूर्वक बनाया गया",
         "ADDRESSCOPIEDCLIPBOARD": "पता क्लिपबोर्ड पर कॉपी हो गया",
+        "COPIEDCLIPBOARD": "क्लिपबोर्ड पर कॉपी हो गया",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "लेन-देन क्लिपबोर्ड पर कॉपी हो गए हैं",
         "EMPTYFIELDS": "कृपया सभी स्थानों को भरें",
         "NOUPDATE": "कोई अपडेट उपलब्ध नहीं है",
         "WALLETBACKEDUP": "वॉलेट का बैकअप सफलतापूर्वक हो गया है।",
+        "WALLETBACKUPFAILED": "वॉलेट का स्वचालित बैकअप विफल हो गया - कृपया अपने बैकअप स्थान और उपलब्ध डिस्क स्थान की जाँच करें।",
         "PASSPHRASEMISMATCH": "आपके द्वारा दर्ज किए गए पासफ़्रेज़ मेल नहीं खाते।",
         "CHECKINGUPDATE": "अपडेट की जाँच की जा रही है...",
         "CHECKINGUPDATEFAILED": "अपडेट की जाँच नहीं हो पा रही है। कृपया अपना नेटवर्क जाँचें।",
+        "WALLETUPDATEDOWNLOADING": "अद्यतन स्थिति डाउनलोड हो रही है...",
         "SENDINGEXCEEDSBALANCE": "आप जो राशि भेज रहे हैं वह आपके चुने हुए बैलेंस से अधिक है।",
         "MISSINGCHANGEADDRESS": "आपको परिवर्तन पता निर्दिष्ट करना होगा",
         "MISSINGDESTINATIONADDRESS": "आपको गंतव्य पता निर्दिष्ट करना होगा।",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "वॉलेट को एन्क्रिप्ट किया जा रहा है...",
         "CHANGINGPASSPHARASE": "पासवर्ड बदला जा रहा है...",
         "STARTINGMASTERNODE": "मास्टरनोड शुरू हो रहा है...",
+        "STOPPINGMASTERNODE": "मास्टरनोड को रोका जा रहा है...",
         "SENDINGTRANSACTION": "लेनदेन भेजा जा रहा है...",
         "SIGNINGMESSAGE": "हस्ताक्षर संदेश...",
         "SIGNEDMESSAGE": "संदेश पर हस्ताक्षर किए गए",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "वॉलेट अनलॉक हो रहा है...",
         "TRANSACTIONMISMATCH": "लेनदेन में त्रुटि हुई। कृपया पुनः प्रयास करें।",
         "MINIMUMCONFIRMATIONS": "खर्च करने से पहले सभी इनपुट के लिए कम से कम 1 पुष्टि की आवश्यकता होती है।",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "लेन-देन क्लिपबोर्ड पर कॉपी हो गए हैं",
-        "STOPPINGMASTERNODE": "मास्टरनोड को रोका जा रहा है...",
         "FAILEDTOWRITECONFIG": "आपकी metrix.conf फ़ाइल में लिखने में समस्या आ रही है। कृपया जांच लें कि फ़ाइल मौजूद है और Altitude के पास लिखने की अनुमति है।",
         "NOPUBLICUP": "कोई सार्वजनिक आईपी पता नहीं मिला। कृपया अपना इंटरनेट कनेक्शन जांचें और एल्टीट्यूड को पुनः आरंभ करें।",
         "CONFIGURINGLOCALMN": "स्थानीय मास्टर्नोड को कॉन्फ़िगर किया जा रहा है...",
         "REPORTINGISSUE": "निदान संबंधी जानकारी प्राप्त की जा रही है... यह जानकारी आपके क्लिपबोर्ड पर कॉपी कर दी जाएगी।",
-        "WALLETUPDATEDOWNLOADING": "अद्यतन स्थिति डाउनलोड हो रही है...",
-        "WALLETBACKUPFAILED": "वॉलेट का स्वचालित बैकअप विफल हो गया - कृपया अपने बैकअप स्थान और उपलब्ध डिस्क स्थान की जाँच करें।",
         "EXPLORERURLSAVED": "एक्सप्लोरर यूआरएल सहेजा गया",
         "EXPLORERURLRESET": "एक्सप्लोरर यूआरएल डिफ़ॉल्ट पर वापस आ गया",
         "EXPLORERURLINVALID": "यह एक वैध HTTP URL नहीं है।",
-        "EXPLORERURLUNREACHABLE": "उस यूआरएल तक नहीं पहुंचा जा सका - कृपया इसे जांचें और पुनः प्रयास करें"
+        "EXPLORERURLUNREACHABLE": "उस यूआरएल तक नहीं पहुंचा जा सका - कृपया इसे जांचें और पुनः प्रयास करें",
+        "DEVRPCHOSTSAVED": "आरपीसी होस्ट सहेजा गया",
+        "DEVRPCHOSTRESET": "RPC होस्ट डिफ़ॉल्ट (127.0.0.1) पर वापस आ गया"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "प्राप्त सिक्के",
+        "NEWTRANSACTION_TITLE_STAKE": "हिस्सेदारी प्राप्त हुई",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "मास्टर्नोड रिवॉर्ड प्राप्त हुआ"
     },
     "TIME": {
         "AFEWSECONDS": "कुछ सेकंड",
@@ -533,11 +587,6 @@
         "MONTHS": "महीने",
         "AYEAR": "एक वर्ष",
         "YEARS": "साल"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "प्राप्त सिक्के",
-        "NEWTRANSACTION_TITLE_STAKE": "हिस्सेदारी प्राप्त हुई",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "मास्टर्नोड रिवॉर्ड प्राप्त हुआ"
     },
     "MONTH": {
         "JAN": "जनवरी",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "गवर्नर मासिक बजट और ब्लॉकचेन परिवर्तनों पर मतदान करने के लिए जिम्मेदार होते हैं। आप गवर्नेंस कॉन्ट्रैक्ट में सही कोलैटरल लॉक करके गवर्नर बन सकते हैं।",
                 "COLLATERAL": "आवश्यक संपार्श्विक",
                 "ENROLL": "नामांकन",
+                "SELECTAGOVERNOR": "एक योग्य राज्यपाल का भाषण चुनें",
+                "GOVERNORNOTSELECTED": "कोई भी योग्य पता नहीं चुना गया",
                 "CONFIRMENROLL": "आप गवर्नर के रूप में पंजीकरण करने वाले हैं। इससे आवश्यक संपार्श्विक सहित एक लेनदेन गवर्नेंस अनुबंध को भेजा जाएगा। आप किसी भी समय पंजीकरण रद्द कर सकते हैं।",
                 "ISGOVERNORTITLE": "आप एक सक्रिय राज्यपाल हैं!",
                 "ISGOVERNORDETAIL1": "राज्यपाल मासिक बजट और ब्लॉकचेन में बदलाव पर मतदान करने के लिए जिम्मेदार होते हैं।",
                 "ISGOVERNORDETAIL2": "राज्यपाल बने रहने के लिए आपको हर 30 दिनों में कम से कम 1 बार मतदान में भाग लेना होगा।",
                 "ISGOVERNORDETAIL3": "यदि मतदान करने के लिए कुछ भी नहीं है, तो आप सक्रिय पिंग भेजकर मैन्युअल रूप से अपना नामांकन जारी रख सकते हैं।",
+                "MYGOVERNORADDRESS": "मेरे राज्यपाल का संबोधन",
                 "UNENROLL": "नामांकन रद्द करें",
                 "PING": "सक्रिय पिंग भेजें",
                 "LASTPINGTITLE": "अंतिम पिंग",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "दिन",
                 "GOVERNORVOTEMATURITYHOURS": "घंटे",
                 "GOVERNORVOTEMATURITYSUFFIX": "परिपक्व होने तक",
-                "MYGOVERNORADDRESS": "मेरे राज्यपाल का संबोधन",
-                "SELECTAGOVERNOR": "एक योग्य राज्यपाल का भाषण चुनें",
-                "GOVERNORNOTSELECTED": "कोई भी योग्य पता नहीं चुना गया",
                 "NOTFULLYSYNCEDTITLE": "राज्यपाल का दर्जा उपलब्ध नहीं है",
                 "NOTFULLYSYNCEDDETAIL": "जब आपका ब्लॉकचेन पूरी तरह से सिंक्रनाइज़ हो जाएगा, तब आपकी गवर्नर पंजीकरण स्थिति दिखाई देगी।",
                 "DGPMIGRATIONTITLE": "डीजीपी प्रवासन",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "आपका प्रस्ताव सफलतापूर्वक तैयार हो गया है।",
             "ENROLLINGGOVERNOR": "राज्यपाल के रूप में नामांकन करना...",
             "ENROLLEDGOVERNOR": "आपके लेनदेन की पुष्टि होते ही आपका नामांकन पूरा हो जाएगा।",
-            "VOTINGONPROPOSAL": "प्रस्ताव पर मतदान भेजना",
-            "VOTEDONPROPOSAL": "लेन-देन की पुष्टि हो जाने के बाद आपके वोट की गिनती की जाएगी।",
             "PINGINGGOVERNOR": "पिंग भेजा जा रहा है...",
             "PINGEDGOVERNOR": "पिंग सफलतापूर्वक भेज दिया गया है। लेन-देन की पुष्टि होते ही आपके गवर्नर को सूचित कर दिया जाएगा।",
+            "VOTINGONPROPOSAL": "प्रस्ताव पर मतदान भेजना",
+            "VOTEDONPROPOSAL": "लेन-देन की पुष्टि हो जाने के बाद आपके वोट की गिनती की जाएगी।",
             "UNENROLLINGGOVERNOR": "राज्यपाल का नामांकन रद्द करना...",
             "UNENROLLEDGOVERNOR": "लेनदेन भेज दिया गया है। लेनदेन की पुष्टि होते ही आपके गवर्नर का नाम हटा दिया जाएगा।",
             "GOVERNORNOTMATURE": "आपके राज्यपाल अभी इस कार्रवाई को करने के लिए पर्याप्त परिपक्व नहीं हैं।"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "मेट्रिक्स खरीदें",
+                "SEARCH": "इतिहास"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "आप भेजो",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ट्रांजेक्शन इतिहास",
                 "SEARCHBUTTON": "खोज",
+                "SEARCHPLACEHOLDER": "MRX या BTC पता दर्ज करें",
                 "TRANSACTIONDATE": "तारीख",
                 "TRANSACTIONTYPE": "TX प्रकार",
                 "TRANSACTIONAMOUNT": "मात्रा",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "की पुष्टि",
                 "TRANSACTIONNOTCONFIRMED": "पुष्टि नहीं",
                 "TRANSACTIONREFUNDED": "न्यूनतम राशि से कम होने पर धन वापसी की जाएगी।",
-                "AVGSWAPPRICE": "औसत स्वैप मूल्य",
-                "SEARCHPLACEHOLDER": "MRX या BTC पता दर्ज करें"
+                "AVGSWAPPRICE": "औसत स्वैप मूल्य"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "स्वैप एड्रेस जनरेट किया जा रहा है...",
             "ALREADYHAVEADDRESS": "इस Metrix पते के साथ पहले से ही एक BTC पता जुड़ा हुआ है।",
             "NOADDRESS": "आपने मेट्रिक्स पता दर्ज नहीं किया है।"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "मेट्रिक्स खरीदें",
-                "SEARCH": "इतिहास"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "सामने लाएँ",
                 "EMPTYTITLE": "अभी तक कोई टोकन नहीं मिला",
                 "EMPTYDETAIL": "Altitude स्वचालित रूप से आपके पतों पर भेजे गए MRC20 और MRC721 टोकन के लिए ब्लॉक एक्सप्लोरर की जाँच करता है, और फिर आपके अपने नोड के विरुद्ध लाइव सत्यापन करता है। यदि आपको टोकन का अनुबंध पता पता है, तो आप उसे मैन्युअल रूप से भी जोड़ सकते हैं।",
+                "EMPTYDETAILCHECKINGDISABLED": "स्वचालित टोकन जाँच बंद है, इसलिए आपके पतों की टोकन के लिए जाँच नहीं की जा रही है। इसे ऊपर दिए गए विकल्प से पुनः चालू करें, या यदि आपको अनुबंध पता पता है तो मैन्युअल रूप से एक टोकन जोड़ें।",
                 "HIDDENTITLE": "छिपे हुए टोकन",
                 "CONTEXTMENUHIDE": "टोकन छुपाएँ",
                 "ITEMSSUFFIX": "सामान)",
-                "NONENUMERABLETOOLTIP": "यह संग्रह व्यक्तिगत वस्तुओं को सूचीबद्ध करने का समर्थन नहीं करता है - इसके बजाय यह दिखाता है कि आपके पास कितनी वस्तुएं हैं।"
+                "NONENUMERABLETOOLTIP": "यह संग्रह व्यक्तिगत वस्तुओं को सूचीबद्ध करने का समर्थन नहीं करता है - इसके बजाय यह दिखाता है कि आपके पास कितनी वस्तुएं हैं।",
+                "CHECKINGENABLED": "जाँच करना",
+                "CHECKINGDISABLED": "जाँच करना",
+                "CHECKINGENABLEDTOOLTIP": "टोकन चेकिंग चालू है - एल्टीट्यूड समय-समय पर आपके पतों में टोकन की जांच करता है और बैलेंस को रीफ़्रेश करता है। इसे बंद करने के लिए क्लिक करें।",
+                "CHECKINGDISABLEDTOOLTIP": "टोकन चेकिंग बंद है - इसे फिर से चालू करने के लिए क्लिक करें।",
+                "CHECKINGDISABLEDNOTICE": "टोकन की स्वचालित जाँच बंद कर दी गई है। आपके पतों को टोकन के लिए स्कैन नहीं किया जा रहा है और बैलेंस अपडेट नहीं होगा। आप चाहें तो टोकन मैन्युअल रूप से जोड़ सकते हैं।"
             },
             "ADDTOKEN": {
                 "TITLE": "टोकन जोड़ें",

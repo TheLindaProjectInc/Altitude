@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "اڪائونٽ ٺاهيو",
             "HIDEEMPTYACCOUNTS": "بي نام خالي اڪائونٽس لڪايو"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "جائزو",
+            "TRANSACTIONSTAB": "معاملا",
+            "ADDRESSTABS": "پتا"
+        },
         "SEND": {
             "ADDRECIPIENT": "وصول ڪندڙ شامل ڪريو",
             "SEND": "موڪليو",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "تاريخ",
             "TABLECOLUMNS_CONFIRMS": "تصديقون",
             "ALL_SELECTUNSELECT": "سڀ ٽوگل ڪريو",
+            "TREEMODE": "وڻ موڊ",
+            "LISTMODE": "لسٽ موڊ",
             "SENDAVAILABLE": "موجود بيلنس استعمال ڪريو",
             "INPUTLOCKED": "ان پٽ بند ٿيل آهي. ان کي خرچ ڪرڻ لاءِ توهان کي هن ان پٽ کي ان لاڪ ڪرڻو پوندو.",
             "CONTEXTMENULOCKINPUT": "لاڪ ان پٽ",
@@ -38,10 +45,48 @@
             "AFTERFEE": "فيس کان پوءِ",
             "QUANTITY": "مقدار",
             "BYTES": "بائيٽس",
-            "TREEMODE": "وڻ موڊ",
-            "LISTMODE": "لسٽ موڊ",
             "ALERTFEECHANGETITLE": "فيس ۾ تبديلي",
             "ALERTFEECHANGECONTENT": "اصل ٽرانزيڪشن فيس توقع کان وڌيڪ آهي. مھرباني ڪري نئين فيس جي تصديق ڪريو:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "معاهدو ٺاهيو",
+            "INFO": "نيٽ ورڪ تي ان جو مرتب ڪيل بائيٽ ڪوڊ جمع ڪرائي هڪ سمارٽ ڪانٽريڪٽ ڊيپلائي ڪريو. هي هڪ ڪور چين فنڪشن آهي - ڊيپلائي ڪرڻ کان اڳ پنهنجي بائيٽ ڪوڊ ۽ گيس سيٽنگز کي ٻه ڀيرا چيڪ ڪريو، ڊيپلائيمينٽ کي رد نه ٿو ڪري سگهجي.",
+            "FROM": "کان",
+            "BYTECODE": "بائيٽ ڪوڊ",
+            "BYTECODEPLACEHOLDER": "مرتب ڪيل ڪانٽريڪٽ بائيٽ ڪوڊ (هيڪس) پيسٽ ڪريو.",
+            "INVALIDBYTECODE": "بائيٽ ڪوڊ هڪ صحيح هيڪس اسٽرنگ (0-9، a-f) هجڻ گهرجي جنهن ۾ اکرن جي هڪجهڙي تعداد هجي.",
+            "GASLIMIT": "گئس جي حد",
+            "GASLIMITRANGE": "حد",
+            "GASPRICE": "گئس جي قيمت (في گئس يونٽ MRX)",
+            "GASPRICEMIN": "گھٽ ۾ گھٽ",
+            "ESTIMATEDMAXCOST": "اندازي مطابق وڌ ۾ وڌ قيمت",
+            "DEPLOYBUTTON": "معاهدو مقرر ڪريو",
+            "INCOMPLETEFORM": "مھرباني ڪري موڪليندڙ جو پتو چونڊيو، صحيح بائيٽ ڪوڊ داخل ڪريو، ۽ صحيح گئس جي حد/قيمت مقرر ڪريو.",
+            "HIGHGASPRICETITLE": "گئس جي وڏي قيمت",
+            "HIGHGASPRICEINFO": "توهان جي مقرر ڪيل گئس جي قيمت غير معمولي طور تي وڌيڪ آهي. هن تعیناتي جي قيمت ٿي سگهي ٿي:",
+            "DEPLOYING": "ٺيڪو جاري ڪري رهيو آهي...",
+            "DEPLOYED": "ڪانٽريڪٽ ڊيپلائيمينٽ جمع ڪرايو ويو",
+            "RESULTTITLE": "تعیناتي جو نتيجو",
+            "STATUS": "اسٽيٽس",
+            "STATUSPENDING": "تصديق جي انتظار ۾...",
+            "STATUSCONFIRMED": "ڪاميابي سان لاڳو ڪيو ويو",
+            "STATUSFAILED": "تعیناتي ناڪام ٿي",
+            "TXID": "ٽرانزيڪشن ID",
+            "SENDER": "موڪليندڙ",
+            "CONTRACTADDRESS": "معاهدي جو پتو",
+            "GASUSED": "استعمال ٿيل گئس",
+            "DONEBUTTON": "ٿي ويو",
+            "DEPLOYANOTHERBUTTON": "ٻيو لڳايو"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "معاملا",
+            "COPYBLOCKHASH": "بلاڪ هيش ڪاپي ڪريو",
+            "COPYTXID": "ٽرانزيڪشن ID ڪاپي ڪريو",
+            "COPYACCOUNT": "اڪائونٽ جو نالو نقل ڪريو",
+            "COPYADDRESS": "پتو ڪاپي ڪريو",
+            "COPYAMOUNT": "ڪاپي جي رقم",
+            "COPTBLOCKINDEX": "ڪاپي بلاڪ انڊيڪس",
+            "EXPLORER": "بلاڪ ايڪسپلورر ۾ کوليو"
         },
         "STAKING": {
             "UNLOCK": "اسٽيڪنگ لاءِ ان لاڪ ڪريو",
@@ -68,13 +113,13 @@
             "IP": "آءِ پي",
             "ADDRESS": "پتو",
             "ENABLED": "فعال ٿيل",
-            "STARTBUTTON": "مقامي شروع ڪريو",
-            "STARTALIASBUTTON": "عرف شروع ڪريو",
-            "STARTALLBUTTON": "سڀ شروع ڪريو",
             "NOMASTERNODES": "توهان وٽ ڪو به ماسٽر نوڊ ناهي.",
             "NOMNOUTPUTS": "ڪو به ماسٽر نوڊ آئوٽ پُٽ نه مليو. مقامي ماسٽر نوڊ هلائڻ لاءِ پنهنجي ماسٽر نوڊ ايڊريس تي بلڪل 2,5,25,50 يا 100 ملين سڪا موڪليو ۽ 15 تصديقن جو انتظار ڪريو.",
+            "STARTBUTTON": "مقامي شروع ڪريو",
             "STOPBUTTON": "مقامي بند ڪريو",
+            "STARTALIASBUTTON": "عرف شروع ڪريو",
             "STOPALIASBUTTON": "عرف بند ڪريو",
+            "STARTALLBUTTON": "سڀ شروع ڪريو",
             "ADDREMOTE": "ريموٽ ماسٽر نوڊ شامل ڪريو",
             "REMOVEMN": "ماسٽر نوڊ هٽايو",
             "ADDLOCAL": "مقامي ماسٽر نوڊ سيٽ اپ ڪريو",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "جنرل",
                 "COREVERSION": "بنيادي نسخو",
+                "ALTITUDEVERSION": "اوچائي وارو نسخو",
                 "PROTOCOLVERSION": "پروٽوڪول ورزن",
                 "WALLETVERSION": "Wallet.dat ورجن",
                 "NETWORKTITLE": "نيٽ ورڪ",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "ماسٽر نوڊس جو تعداد",
                 "BLOCKCHAINTITLE": "بلاڪ چين",
                 "NUMBERBLOCKS": "بلاڪن جو موجوده تعداد",
-                "BESTBLOCKTTIME": "آخري بلاڪ جو وقت",
-                "ALTITUDEVERSION": "اوچائي وارو نسخو"
+                "BESTBLOCKTTIME": "آخري بلاڪ جو وقت"
             },
             "DEBUG": {
                 "CONSOLEINFO": "ميٽرڪس ڪور آر پي سي ڪنسول ۾ ڀليڪار. دستياب ڪمانڊن جي جائزي لاءِ مدد ٽائيپ ڪريو.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "ٻولي چونڊيو"
         },
-        "TRANSACTIONS": {
-            "TITLE": "معاملا",
-            "COPYBLOCKHASH": "بلاڪ هيش ڪاپي ڪريو",
-            "COPYTXID": "ٽرانزيڪشن ID ڪاپي ڪريو",
-            "COPYACCOUNT": "اڪائونٽ جو نالو نقل ڪريو",
-            "COPYADDRESS": "پتو ڪاپي ڪريو",
-            "COPYAMOUNT": "ڪاپي جي رقم",
-            "COPTBLOCKINDEX": "ڪاپي بلاڪ انڊيڪس",
-            "EXPLORER": "بلاڪ ايڪسپلورر ۾ کوليو"
+        "CURRENCY": {
+            "TITLE": "ڊسپلي ڪرنسي چونڊيو"
         },
         "EXPLORER": {
             "TITLE": "بلاڪ ايڪسپلورر",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "نيٽ ورڪ",
             "WINDOTAB": "دري",
+            "BACKUPTAB": "بيڪ اپ",
+            "EXPLORERTAB": "ڳولا ڪندڙ",
+            "DEVELOPERTAB": "ڊولپر",
             "NETWORK": {
                 "PROXY": "SOCKS5 پراڪسي ذريعي ڳنڍيو",
                 "PROXYIP": "پراڪسي IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "بند ڪرڻ تي گھٽ ڪريو",
                 "BEHAVIOURTITLE": "سسٽم ٽري ۽ ونڊو رويي"
             },
-            "BACKUPTAB": "بيڪ اپ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "خودڪار بيڪ اپ",
                 "ENABLED": "شيڊول تي wallet.dat جو خودڪار طريقي سان بيڪ اپ وٺو.",
                 "ENABLEDINFO": "شيڊول تي توهان جي والٽ فائل جو هڪ تازو بيڪ اپ ٺاهي ٿو، تنهنڪري جيڪڏهن ڪجهه غلط ٿئي ٿو ته هڪ تازي ڪاپي هميشه موجود هوندي آهي.",
+                "INTERVALLABEL": "هر (ڏينهن) بيڪ اپ وٺو",
                 "LASTBACKUP": "آخري بيڪ اپ:",
                 "NEVERBACKEDUP": "اڃا تائين ڪو به خودڪار بيڪ اپ نه ٺاهيو ويو آهي.",
                 "BACKUPNOWBUTTON": "هاڻي بيڪ اپ ڪريو",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ڊفالٽ تي ري سيٽ ڪريو",
                 "PRUNETITLE": "بيڪ اپ جي تاريخ",
                 "PRUNEINFO": "پراڻا خودڪار بيڪ اپ ڊهي ويندا آهن تنهنڪري هي فولڊر هميشه لاءِ نه وڌندو آهي - صرف هيٺ ڏنل سڀ کان تازا بيڪ اپ رکيا ويندا آهن.",
-                "KEEPCOUNTLABEL": "آخري رکو",
-                "INTERVALLABEL": "هر (ڏينهن) بيڪ اپ وٺو"
+                "KEEPCOUNTLABEL": "آخري رکو"
             },
-            "EXPLORERTAB": "ڳولا ڪندڙ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "بلاڪ ايڪسپلورر",
                 "BLOCKEXPLORERINFO": "بلاڪ ايڪسپلورر تي ٽرانزيڪشن ڏسڻ وقت سائيٽ کلي وئي (مثال طور، ٽرانزيڪشن تي ساڄي ڪلڪ ڪريو > ايڪسپلورر تي ڏسو).",
@@ -259,25 +298,31 @@
                 "MAINNET": "مين نيٽ",
                 "TESTNET": "ٽيسٽ نيٽ",
                 "REGTEST": "ٻيهر ٽيسٽ ڪريو"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "ڊولپر موڊ",
+                "DEVMODEINFO": "ڊفالٽ طور بند ۽ صرف ڊولپرز لاءِ ارادو ڪيو ويو آهي. هن کي فعال ڪرڻ سان آر پي سي ڪنيڪشن کي اوور رائڊ ڪرڻ جا آپشن ظاهر ٿين ٿا - معياري استعمال ڪندڙن کي هن کي بند ڪرڻ گهرجي.",
+                "DEVMODELABEL": "ڊولپر موڊ کي فعال ڪريو",
+                "WARNING": "اهي سيٽنگون صرف ترقي جي مقصدن لاءِ آهن. انهن کي تبديل ڪرڻ سان والٽ کي ڊيمون سان ڳنڍڻ کان روڪي سگهجي ٿو - صرف ان صورت ۾ استعمال ڪريو جيڪڏهن توهان کي خبر هجي ته توهان ڇا ڪري رهيا آهيو.",
+                "RPCHOSTTITLE": "آر پي سي ڪنيڪشن",
+                "RPCHOSTINFO": "ڊفالٽ طور تي Altitude ڊيمون سان ڳنڍجي ٿو جيڪو اهو پاڻ کي منظم ڪري ٿو، هن مشين تي (127.0.0.1). انهن کي اوور رائڊ ڪرڻ سان اهو هڪ مختلف ڊيمون سان ڳنڍجي ٿو - مثال طور هڪ ريموٽ ريگ ٽيسٽ مثال، مقامي طور تي هلائڻ جي ضرورت کان سواءِ. جيڪڏهن ڪنيڪشن ڪامياب ٿئي ٿو، ته Altitude پنهنجو مقامي ڊيمون ڊائون لوڊ يا شروع نه ڪندو. ٽارگيٽ ڊيمون جي rpcallowip کي هن ڪنيڪشن جي اجازت ڏيڻ گهرجي، ۽ هيٺ ڏنل rpcuser/rpcpassword کي ان جي ترتيب سان ملائڻ گهرجي. فوري طور تي اثر انداز ٿئي ٿو، ٻيهر شروع ڪرڻ جي ضرورت ناهي.",
+                "RPCHOSTLABEL": "آر پي سي هوسٽ",
+                "RPCPORTLABEL": "آر پي سي پورٽ",
+                "RPCUSERLABEL": "آر پي سي يوزر نالو",
+                "RPCPASSWORDLABEL": "آر پي سي پاسورڊ"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "جائزو",
-            "TRANSACTIONSTAB": "معاملا",
-            "ADDRESSTABS": "پتا"
-        },
-        "CURRENCY": {
-            "TITLE": "ڊسپلي ڪرنسي چونڊيو"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ڊيش بورڊ",
             "SEND": "موڪليو",
+            "CREATECONTRACT": "معاهدو ٺاهيو",
             "RECEIVE": "حاصل ڪريو",
             "TRANSACTIONS": "معاملا",
             "STAKING": "اسٽيڪنگ",
             "MASTERNODES": "ماسٽر نوڊس",
+            "EXPLORER": "بلاڪ ايڪسپلورر",
             "SYNC": {
                 "CONNECTING": "ڳنڍڻ",
                 "NOBLOCKS": "بلاڪن جي انتظار ۾",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "والٽ هن وقت اسٽيڪ نه ٿي رهيو آهي",
                 "MASTERNODEON": "ماسٽر نوڊ هن وقت هلي رهيو آهي",
                 "MASTERNODEOFF": "ماسٽر نوڊ هن وقت هلندڙ نه آهي."
-            },
-            "EXPLORER": "بلاڪ ايڪسپلورر"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "ويب 3 سائيٽ جو پتو داخل ڪريو",
+            "GOBUTTON": "وڃ",
+            "QUICKLAUNCH": "جلدي لانچ",
+            "DEVTOOLS": "ڊولپر ٽولز کوليو",
+            "ADDLINK": "لنڪ شامل ڪريو",
+            "LINKNAMEPLACEHOLDER": "نالو",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "محفوظ ڪريو",
+            "CANCEL": "منسوخ ڪريو",
+            "REMOVE": "هٽايو",
+            "REMOVECONFIRM": "هي جلدي لنڪ هٽايو؟",
+            "LINKEXISTS": "اهو لنڪ اڳ ۾ ئي توهان جي تڪڙي لانچ لسٽ ۾ آهي.",
+            "LINKINVALID": "هڪ صحيح سائيٽ پتو داخل ڪريو.",
+            "LINKNETWORKLABEL": "نيٽ ورڪ",
+            "LOADFAILED": "سائيٽ لوڊ ڪرڻ ۾ ناڪام ٿيو.",
+            "SECURESITE": "ڪنيڪشن محفوظ آهي - صحيح SSL سرٽيفڪيٽ",
+            "INSECURESITE": "ڪنيڪشن محفوظ نه آهي.",
+            "INVALIDCERTSITE": "ڪنيڪشن خانگي نه آهي - غلط يا غير اعتباري SSL سرٽيفڪيٽ"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "پنھنجو والٽ پاسورڊ داخل ڪريو",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "ميٽرڪس ڪور لاءِ هڪ اپڊيٽ موجود آهي. ڇا توهان ان کي هاڻي انسٽال ڪرڻ چاهيندا؟",
             "WALLETUPDATETITLE": "اوچائي اپڊيٽ موجود آهي",
             "WALLETUPDATEINFO": "Altitude لاءِ هڪ اپڊيٽ موجود آهي. ڇا توهان ان کي هاڻي ڊائون لوڊ ڪرڻ چاهيندا؟",
+            "WALLETUPDATEREADYTITLE": "اوچائي اپڊيٽ تيار",
+            "WALLETUPDATEREADYINFO": "اپڊيٽ ڊائون لوڊ ٿي چڪي آهي. ان کي انسٽال ڪرڻ لاءِ هاڻي Altitude ٻيهر شروع ڪريو؟",
+            "WALLETUPDATERESTARTBUTTON": "ٻيهر شروع ڪريو ۽ انسٽال ڪريو",
+            "WALLETUPDATELATERBUTTON": "بعد ۾",
             "CLIENTUPDATEBUTTON": "تازه ڪاري",
             "CLIENTUPDATECANCELBUTTON": "اپڊيٽ نه ڪريو",
             "CLIENTUPDATESKIPBUTTON": "هن اپڊيٽ کي ڇڏي ڏيو",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "توهان جي والٽ فائل جا جيڪي به اڳوڻا بيڪ اپ ٺاهيا آهن، انهن کي نئين ٺاهيل، انڪرپٽ ٿيل والٽ فائل سان تبديل ڪيو وڃي. سيڪيورٽي سببن جي ڪري، غير انڪرپٽ ٿيل والٽ فائل جا پوئين بيڪ اپ بيڪار ٿي ويندا جيئن ئي توهان نئين، انڪرپٽ ٿيل والٽ کي استعمال ڪرڻ شروع ڪندا.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ميٽرڪس ڪور اوچتو بند ٿي ويو",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ميٽرڪس ڪور ۾ هڪ مسئلو هو جنهن جي ڪري اهو ختم ٿي ويو آهي. مسئلن لاءِ پنهنجي debug.log فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
+            "CLIENTUNKNOWNERRORTITLE": "ميٽرڪس ڪور ڪميونيڪيشن غلطي",
+            "CLIENTUNKNOWNERRORINFO": "ميٽرڪس ڪور سان رابطو ڪرڻ ۾ مسئلو هو. مسئلن لاءِ پنهنجي debug.log فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
+            "BOOTSTRAPFAILEDTITLE": "ميٽرڪس ڪور بوٽ اسٽريپ ناڪام ٿيو",
+            "BOOTSTRAPFAILEDINFO": "ميٽرڪس ڪور کي بوٽ اسٽريپ ڪرڻ ۾ مسئلو هو. مسئلن لاءِ پنهنجي Altitude لاگ فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
+            "BOOTSTRAPOFFERTITLE": "پرس تمام گهڻو پراڻو آهي",
+            "BOOTSTRAPOFFERINFO": "هڪ تازو بوٽ اسٽريپ موجود آهي جيڪو ميٽرڪس ڪور کي جلدي اپڊيٽ ڪري سگهي ٿو. ان جي بدران هڪ عام هم وقت سازي سان جاري رکڻ ۾ ڪيترائي ڏينهن لڳي سگهن ٿا، ڇاڪاڻ ته توهان جي والٽ کي هر بلاڪ کي ڊائون لوڊ ڪرڻ ۽ تصديق ڪرڻ جي ضرورت آهي جيڪو اهو مس ڪيو آهي.",
+            "BOOTSTRAPOFFERBUTTON": "بوٽ اسٽريپ ڊائون لوڊ ڪريو",
+            "BOOTSTRAPOFFERCANCEL": "عام هم وقت سازي جاري رکو",
+            "BOOTSTRAPSPACEINFO": "بوٽ اسٽريپ ڊائون لوڊ ڪرڻ ۽ ڪڍڻ لاءِ ڪافي خالي ڊسڪ جاءِ نه آهي. گهربل: {لازمي}، دستياب: {مفت}. ڪجهه جاءِ خالي ڪريو ۽ ٻيهر ڪوشش ڪريو.",
+            "STARTUPFAILEDTITLE": "ميٽرڪس ڪور اسٽارٽ اپ ناڪام ٿيو",
+            "STARTUPFAILEDINFO": "ميٽرڪس ڪور شروع ڪرڻ ۾ ڪا غلطي ٿي وئي. مسئلن لاءِ پنهنجي Altitude لاگ فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "بحالي جا اوزار",
             "CLIENTINVALIDCONFIGTITLE": "غلط metrix.conf ترتيب",
             "CLIENTINVALIDCONFIGINFO": "توهان جي metrix.conf ۾ هڪ غلط ماسٽر نوڊ سيٽ اپ آهي جيڪو ميٽرڪس ڪور کي فوري طور تي ٻاهر نڪرڻ جو سبب بڻجندو. مهرباني ڪري هن فائل کي چيڪ ڪريو.",
             "ADDREMOTEMNTITLE": "ريموٽ ماسٽر نوڊ شامل ڪريو",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "ماسٽر نوڊ پرائيويٽ ڪي",
             "ADDREMOTEMNTXHASH": "ماسٽر نوڊ ٽرڪس هيش",
             "ADDREMOTEMNTXINDEX": "ماسٽر نوڊ ٽرڪس انڊيڪس",
-            "BOOTSTRAPFAILEDTITLE": "ميٽرڪس ڪور بوٽ اسٽريپ ناڪام ٿيو",
-            "BOOTSTRAPFAILEDINFO": "ميٽرڪس ڪور کي بوٽ اسٽريپ ڪرڻ ۾ مسئلو هو. مسئلن لاءِ پنهنجي Altitude لاگ فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "بحالي جا اوزار",
-            "STARTUPFAILEDTITLE": "ميٽرڪس ڪور اسٽارٽ اپ ناڪام ٿيو",
-            "STARTUPFAILEDINFO": "ميٽرڪس ڪور شروع ڪرڻ ۾ ڪا غلطي ٿي وئي. مسئلن لاءِ پنهنجي Altitude لاگ فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
-            "CLIENTUNKNOWNERRORTITLE": "ميٽرڪس ڪور ڪميونيڪيشن غلطي",
-            "CLIENTUNKNOWNERRORINFO": "ميٽرڪس ڪور سان رابطو ڪرڻ ۾ مسئلو هو. مسئلن لاءِ پنهنجي debug.log فائل کي چيڪ ڪرڻ جي صلاح ڏني وئي آهي.",
             "UNENROLLGOVERNORTITLE": "گورنر جي داخلا ختم ڪرڻ جي تصديق ڪريو",
             "UNENROLLGOVERNORCONTENT": "ڇا توهان کي پڪ آهي ته توهان پنهنجي گورنر کي ختم ڪرڻ چاهيو ٿا؟ توهان هاڻي چين گورننس تي ووٽ نه ڏئي سگهندا.",
-            "WALLETUPDATEREADYTITLE": "اوچائي اپڊيٽ تيار",
-            "WALLETUPDATEREADYINFO": "اپڊيٽ ڊائون لوڊ ٿي چڪي آهي. ان کي انسٽال ڪرڻ لاءِ هاڻي Altitude ٻيهر شروع ڪريو؟",
-            "WALLETUPDATERESTARTBUTTON": "ٻيهر شروع ڪريو ۽ انسٽال ڪريو",
-            "WALLETUPDATELATERBUTTON": "بعد ۾",
             "DAPPCONNECTTITLE": "سائيٽ سان ڳنڍيو",
             "DAPPCONNECTINFO": "هي سائيٽ توهان جي والٽ سان ڳنڍڻ ۽ توهان جو پتو ۽ بيلنس ڏسڻ چاهي ٿي.",
             "DAPPCONNECTBUTTON": "ڳنڍڻ",
+            "DAPPCONNECTADDRESSLABEL": "پتو",
+            "DAPPAPPROVEBUTTON": "منظور ڪريو",
             "DAPPREJECTBUTTON": "رد ڪريو",
             "DAPPSENDTITLE": "معاهدي جي ٽرانزيڪشن جي درخواست",
             "DAPPSENDINFO": "هي سائيٽ توهان جي والٽ مان هڪ ڪانٽريڪٽ ٽرانزيڪشن موڪلڻ جي درخواست ڪري رهي آهي.",
-            "DAPPSIGNTITLE": "پيغام جي درخواست تي دستخط ڪريو",
-            "DAPPSIGNINFO": "هي سائيٽ توهان جي والٽ ايڊريس سان هڪ پيغام تي دستخط ڪرڻ جي درخواست ڪري رهي آهي.",
-            "DAPPNOTREADY": "سائيٽ سان اڃا تائين ڳنڍي نه ٿو سگهجي - ميٽرڪس ڪور اڃا تائين شروع ٿي رهيو آهي.",
-            "DAPPNOWALLET": "سائيٽ سان ڳنڍجي نه ٿو سگهي - والٽ جو ڪو به پتو موجود ناهي.",
-            "DAPPAPPROVEBUTTON": "منظور ڪريو",
-            "DAPPCONNECTADDRESSLABEL": "پتو",
             "DAPPSENDSITELABEL": "سائيٽ",
             "DAPPSENDCONTRACTLABEL": "معاهدي جو پتو",
             "DAPPSENDAMOUNTLABEL": "رقم",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "وڌ ۾ وڌ نيٽ ورڪ فيس",
             "DAPPSENDMAXTOTALLABEL": "وڌ ۾ وڌ ڪل",
             "DAPPSENDDATALABEL": "معاهدي جو ڊيٽا",
+            "DAPPSIGNTITLE": "پيغام جي درخواست تي دستخط ڪريو",
+            "DAPPSIGNINFO": "هي سائيٽ توهان جي والٽ ايڊريس سان هڪ پيغام تي دستخط ڪرڻ جي درخواست ڪري رهي آهي.",
             "DAPPSIGNMESSAGELABEL": "پيغام",
-            "BOOTSTRAPOFFERTITLE": "پرس تمام گهڻو پراڻو آهي",
-            "BOOTSTRAPOFFERINFO": "هڪ تازو بوٽ اسٽريپ موجود آهي جيڪو ميٽرڪس ڪور کي جلدي اپڊيٽ ڪري سگهي ٿو. ان جي بدران هڪ عام هم وقت سازي سان جاري رکڻ ۾ ڪيترائي ڏينهن لڳي سگهن ٿا، ڇاڪاڻ ته توهان جي والٽ کي هر بلاڪ کي ڊائون لوڊ ڪرڻ ۽ تصديق ڪرڻ جي ضرورت آهي جيڪو اهو مس ڪيو آهي.",
-            "BOOTSTRAPOFFERBUTTON": "بوٽ اسٽريپ ڊائون لوڊ ڪريو",
-            "BOOTSTRAPOFFERCANCEL": "عام هم وقت سازي جاري رکو",
-            "BOOTSTRAPSPACEINFO": "بوٽ اسٽريپ ڊائون لوڊ ڪرڻ ۽ ڪڍڻ لاءِ ڪافي خالي ڊسڪ جاءِ نه آهي. گهربل: {لازمي}، دستياب: {مفت}. ڪجهه جاءِ خالي ڪريو ۽ ٻيهر ڪوشش ڪريو."
+            "DAPPNOTREADY": "سائيٽ سان اڃا تائين ڳنڍي نه ٿو سگهجي - ميٽرڪس ڪور اڃا تائين شروع ٿي رهيو آهي.",
+            "DAPPNOWALLET": "سائيٽ سان ڳنڍجي نه ٿو سگهي - والٽ جو ڪو به پتو موجود ناهي."
         },
         "ADDRESSBOOK": {
             "TITLE": "ايڊريس بڪ",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "موجوده نيٽ ورڪ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "ويب 3 سائيٽ جو پتو داخل ڪريو",
-            "GOBUTTON": "وڃ",
-            "QUICKLAUNCH": "جلدي لانچ",
-            "DEVTOOLS": "ڊولپر ٽولز کوليو",
-            "ADDLINK": "لنڪ شامل ڪريو",
-            "LINKNAMEPLACEHOLDER": "نالو",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "محفوظ ڪريو",
-            "CANCEL": "منسوخ ڪريو",
-            "REMOVE": "هٽايو",
-            "REMOVECONFIRM": "هي جلدي لنڪ هٽايو؟",
-            "LINKEXISTS": "اهو لنڪ اڳ ۾ ئي توهان جي تڪڙي لانچ لسٽ ۾ آهي.",
-            "LINKINVALID": "هڪ صحيح سائيٽ پتو داخل ڪريو.",
-            "LINKNETWORKLABEL": "نيٽ ورڪ",
-            "LOADFAILED": "سائيٽ لوڊ ڪرڻ ۾ ناڪام ٿيو.",
-            "SECURESITE": "ڪنيڪشن محفوظ آهي - صحيح SSL سرٽيفڪيٽ",
-            "INSECURESITE": "ڪنيڪشن محفوظ نه آهي.",
-            "INVALIDCERTSITE": "ڪنيڪشن خانگي نه آهي - غلط يا غير اعتباري SSL سرٽيفڪيٽ"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "بيڪ اپ والٽ...",
             "SIGNMESSAGE": "پيغام تي دستخط ڪريو...",
             "VERIFYMESSAGE": "پيغام جي تصديق ڪريو...",
-            "LOCALE": "ٻولي...",
-            "RESTARTCORE": "ميٽرڪس ڪور ٻيهر شروع ڪريو",
-            "EXIT": "نڪرڻ",
             "OPTIONS": "آپشن...",
+            "LOCALE": "ٻولي...",
             "CURRENCIES": "ڪرنسي ڏيکاريو...",
-            "ALTITUDEREFRESH": "اوچائي ڊيٽا کي تازو ڪريو"
+            "RESTARTCORE": "ميٽرڪس ڪور ٻيهر شروع ڪريو",
+            "ALTITUDEREFRESH": "اوچائي ڊيٽا کي تازو ڪريو",
+            "EXIT": "نڪرڻ"
         },
         "ENCRYPT": {
             "TITLE": "انڪرپٽ ڪريو",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ڪُل بيلنس",
+        "SPENDABLEBALANCE": "خرچ لائق بيلنس",
+        "PENDINGBALANCE": "باقي رقم",
         "CANCELBUTTON": "منسوخ ڪريو",
         "DONEBUTTON": "ٿي ويو",
         "OKBUTTON": "ٺيڪ آهي",
+        "ACCEPTBUTTON": "قبول ڪريو",
         "CLEARALLBUTTON": "سڀ صاف ڪريو",
         "ENTERACCOUNTLABEL": "هن پتي لاءِ هڪ ليبل داخل ڪريو.",
         "ENTERADDRESSLABEL": "ميٽرڪس ايڊريس داخل ڪريو",
@@ -464,11 +511,8 @@
         "SORTBY": "ترتيب ڏيو",
         "SEARCH": "ڳولا",
         "FEE": "فيس",
-        "ACCEPTBUTTON": "قبول ڪريو",
         "CONFIRMED": "تصديق ٿيل",
         "UNCONFIRMED": "غير تصديق ٿيل",
-        "PENDINGBALANCE": "باقي رقم",
-        "SPENDABLEBALANCE": "خرچ لائق بيلنس",
         "SAVEBUTTON": "محفوظ ڪريو"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "ميٽرڪس ڪور کي ٻيهر شروع ڪيو پيو وڃي...",
         "BOOTSTRAPPING": "بوٽ اسٽريپ ڊائون لوڊ ٿي رهيو آهي...",
         "BOOTSTRAPEXTRACTING": "بوٽ اسٽريپ ڪڍي رهيو آهي...",
-        "TIMEREMAINING": "باقي:"
+        "TIMEREMAINING": "باقي:",
+        "DEVRPCOVERRIDEACTIVE": "هڪ ڊولپر آر پي سي ڪنيڪشن اوور رائڊ سيٽ ٿيل آهي (آپشنز > ڊولپر) ۽ جواب نه ڏئي رهيو آهي. عام طور تي مقامي ڊيمون سان ٻيهر ڳنڍڻ لاءِ ان کي صاف ڪريو.",
+        "DEVRPCOVERRIDECLEARBUTTON": "آر پي سي اوور رائڊ صاف ڪريو ۽ ٻيهر ڳنڍيو"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "نئون اڪائونٽ ڪاميابي سان ٺهيو.",
         "ADDRESSCOPIEDCLIPBOARD": "پتو ڪلپ بورڊ ڏانهن نقل ڪيو ويو.",
+        "COPIEDCLIPBOARD": "ڪلپ بورڊ ڏانهن نقل ڪيو ويو",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ٽرانزيڪشن ڪلپ بورڊ تي ڪاپي ڪيا ويا",
         "EMPTYFIELDS": "مھرباني ڪري سڀ خانا ڀريو.",
         "NOUPDATE": "ڪابه تازه ڪاري موجود ناهي",
         "WALLETBACKEDUP": "والٽ بيڪ اپ ڪامياب ٿيو",
+        "WALLETBACKUPFAILED": "خودڪار والٽ بيڪ اپ ناڪام ٿيو - پنهنجي بيڪ اپ جي جڳهه ۽ دستياب ڊسڪ اسپيس چيڪ ڪريو.",
         "PASSPHRASEMISMATCH": "توهان جي داخل ڪيل پاسفريز ميچ نه ٿا ڪن.",
         "CHECKINGUPDATE": "اپڊيٽ جي جانچ ڪري رهيو آهي...",
         "CHECKINGUPDATEFAILED": "اپڊيٽ جي جانچ ڪرڻ جي قابل نه آهيان. پنهنجو نيٽ ورڪ چيڪ ڪريو.",
+        "WALLETUPDATEDOWNLOADING": "اپڊيٽ ڊائون لوڊ ٿي رهي آهي...",
         "SENDINGEXCEEDSBALANCE": "توهان جي موڪليل رقم توهان جي چونڊيل بيلنس کان وڌيڪ آهي.",
         "MISSINGCHANGEADDRESS": "توهان کي تبديلي جو پتو ضرور بيان ڪرڻ گهرجي.",
         "MISSINGDESTINATIONADDRESS": "توهان کي منزل جو پتو ضرور ٻڌائڻ گهرجي.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "والٽ کي انڪرپٽ ڪيو پيو وڃي...",
         "CHANGINGPASSPHARASE": "پاسورڊ تبديل ڪندي...",
         "STARTINGMASTERNODE": "ماسٽر نوڊ شروع ٿي رهيو آهي...",
+        "STOPPINGMASTERNODE": "ماسٽر نوڊ کي روڪي رهيو آهي...",
         "SENDINGTRANSACTION": "ٽرانزيڪشن موڪلي رهيو آهي...",
         "SIGNINGMESSAGE": "پيغام تي دستخط ڪري رهيو آهي...",
         "SIGNEDMESSAGE": "پيغام تي دستخط ٿيل",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "پرس کوليو پيو وڃي...",
         "TRANSACTIONMISMATCH": "ٽرانزيڪشن ۾ غلطي. مھرباني ڪري ٻيهر ڪوشش ڪريو.",
         "MINIMUMCONFIRMATIONS": "سڀني ان پٽن کي خرچ ڪرڻ کان اڳ گهٽ ۾ گهٽ 1 تصديق جي ضرورت آهي.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ٽرانزيڪشن ڪلپ بورڊ تي ڪاپي ڪيا ويا",
-        "STOPPINGMASTERNODE": "ماسٽر نوڊ کي روڪي رهيو آهي...",
         "FAILEDTOWRITECONFIG": "توهان جي metrix.conf فائل ۾ لکڻ ۾ مسئلو هو. چيڪ ڪريو ته فائل موجود آهي ۽ Altitude کي لکڻ جي اجازت آهي.",
         "NOPUBLICUP": "ڪو به عوامي IP پتو نه مليو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو ۽ Altitude ٻيهر شروع ڪريو.",
         "CONFIGURINGLOCALMN": "مقامي ماسٽر نوڊ کي ترتيب ڏئي رهيو آهي...",
         "REPORTINGISSUE": "تشخيصي معلومات حاصل ڪري رهيو آهي... هي معلومات توهان جي ڪلپ بورڊ تي ڪاپي ڪئي ويندي.",
-        "WALLETUPDATEDOWNLOADING": "اپڊيٽ ڊائون لوڊ ٿي رهي آهي...",
-        "WALLETBACKUPFAILED": "خودڪار والٽ بيڪ اپ ناڪام ٿيو - پنهنجي بيڪ اپ جي جڳهه ۽ دستياب ڊسڪ اسپيس چيڪ ڪريو.",
         "EXPLORERURLSAVED": "ايڪسپلورر URL محفوظ ڪيو ويو",
         "EXPLORERURLRESET": "ايڪسپلورر URL کي ڊفالٽ تي واپس ڪيو ويو",
         "EXPLORERURLINVALID": "اهو هڪ صحيح http(s) URL نه آهي.",
-        "EXPLORERURLUNREACHABLE": "انهي URL تائين پهچي نه سگهيو - ان کي چيڪ ڪريو ۽ ٻيهر ڪوشش ڪريو."
+        "EXPLORERURLUNREACHABLE": "انهي URL تائين پهچي نه سگهيو - ان کي چيڪ ڪريو ۽ ٻيهر ڪوشش ڪريو.",
+        "DEVRPCHOSTSAVED": "آر پي سي هوسٽ محفوظ ڪيو ويو",
+        "DEVRPCHOSTRESET": "آر پي سي هوسٽ ڊفالٽ تي واپس ڪيو ويو (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "وصول ٿيل سڪا",
+        "NEWTRANSACTION_TITLE_STAKE": "حاصل ڪيل داغ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ماسٽر نوڊ انعام حاصل ڪيو"
     },
     "TIME": {
         "AFEWSECONDS": "ڪجھ سيڪنڊ",
@@ -533,11 +587,6 @@
         "MONTHS": "مهينا",
         "AYEAR": "هڪ سال",
         "YEARS": "سال"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "وصول ٿيل سڪا",
-        "NEWTRANSACTION_TITLE_STAKE": "حاصل ڪيل داغ",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "ماسٽر نوڊ انعام حاصل ڪيو"
     },
     "MONTH": {
         "JAN": "جان",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "گورنرز مهيني جي بجيٽ ۽ بلاڪچين تبديلين تي ووٽ ڏيڻ جا ذميوار آهن. توهان گورننس ڪانٽريڪٽ ۾ صحيح ضمانت کي لاڪ ڪندي گورنر بڻجي سگهو ٿا.",
                 "COLLATERAL": "گهربل ضمانت",
                 "ENROLL": "داخلا",
+                "SELECTAGOVERNOR": "هڪ قابل گورنر ايڊريس چونڊيو",
+                "GOVERNORNOTSELECTED": "ڪو به اهل پتو نه چونڊيو ويو هو.",
                 "CONFIRMENROLL": "توهان گورنر طور داخلا وٺڻ وارا آهيو. اهو گورننس ڪانٽريڪٽ ۾ گهربل ضمانت سان هڪ ٽرانزيڪشن موڪليندو. توهان ڪنهن به وقت داخلا ختم ڪري سگهو ٿا.",
                 "ISGOVERNORTITLE": "توهان هڪ سرگرم گورنر آهيو!",
                 "ISGOVERNORDETAIL1": "گورنرن تي مهيني جي بجيٽ ۽ بلاڪچين تبديلين تي ووٽ ڏيڻ جا ذميوار آهن.",
                 "ISGOVERNORDETAIL2": "گورنر رهڻ لاءِ توهان کي هر 30 ڏينهن ۾ گهٽ ۾ گهٽ 1 ووٽ ۾ حصو وٺڻو پوندو.",
                 "ISGOVERNORDETAIL3": "جيڪڏهن ووٽ ڏيڻ لاءِ ڪجهه به ناهي ته پوءِ توهان دستي طور تي هڪ فعال پنگ موڪلي پنهنجي داخلا جاري رکي سگهو ٿا.",
+                "MYGOVERNORADDRESS": "منهنجو گورنر جو خطاب",
                 "UNENROLL": "داخلا ختم ڪريو",
                 "PING": "فعال پنگ موڪليو",
                 "LASTPINGTITLE": "آخري پنگ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ڏينهن",
                 "GOVERNORVOTEMATURITYHOURS": "ڪلاڪ",
                 "GOVERNORVOTEMATURITYSUFFIX": "بالغ ٿيڻ تائين",
-                "MYGOVERNORADDRESS": "منهنجو گورنر جو خطاب",
-                "SELECTAGOVERNOR": "هڪ قابل گورنر ايڊريس چونڊيو",
-                "GOVERNORNOTSELECTED": "ڪو به اهل پتو نه چونڊيو ويو هو.",
                 "NOTFULLYSYNCEDTITLE": "گورنر جي حيثيت دستياب ناهي.",
                 "NOTFULLYSYNCEDDETAIL": "جڏهن توهان جو بلاڪچين مڪمل طور تي هم وقت ساز هوندو ته توهان جي گورنر رجسٽريشن جي حيثيت نظر ايندي.",
                 "DGPMIGRATIONTITLE": "ڊي جي پي مائيگريشن",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "توهان جي تجويز ڪاميابي سان ٺاهي وئي آهي.",
             "ENROLLINGGOVERNOR": "گورنر طور داخلا...",
             "ENROLLEDGOVERNOR": "توهان جي ٽرانزيڪشن جي تصديق ٿيڻ کان پوءِ توهان جي داخلا مڪمل ٿي ويندي.",
-            "VOTINGONPROPOSAL": "تجويز ووٽ موڪلڻ",
-            "VOTEDONPROPOSAL": "ٽرانزيڪشن جي تصديق ٿيڻ کان پوءِ توهان جو ووٽ ڳڻيو ويندو.",
             "PINGINGGOVERNOR": "پنگ موڪلي رهيو آهي...",
             "PINGEDGOVERNOR": "پنگ ڪاميابي سان موڪلي وئي. ٽرانزيڪشن جي تصديق ٿيڻ کان پوءِ توهان جي گورنر کي اپڊيٽ ڪيو ويندو.",
+            "VOTINGONPROPOSAL": "تجويز ووٽ موڪلڻ",
+            "VOTEDONPROPOSAL": "ٽرانزيڪشن جي تصديق ٿيڻ کان پوءِ توهان جو ووٽ ڳڻيو ويندو.",
             "UNENROLLINGGOVERNOR": "گورنر جي داخلا ختم ڪرڻ...",
             "UNENROLLEDGOVERNOR": "ٽرانزيڪشن موڪلي وئي. ٽرانزيڪشن جي تصديق ٿيڻ کان پوءِ توهان جو گورنر انرول ٿي ويندو.",
             "GOVERNORNOTMATURE": "توهان جو گورنر اڃا تائين ايترو بالغ نه ٿيو آهي جو هي ڪم ڪري سگهي."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "ميٽرڪس خريد ڪريو",
+                "SEARCH": "تاريخ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "توهان موڪليو",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ٽرانزيڪشن جي تاريخ",
                 "SEARCHBUTTON": "ڳولا ڪريو",
+                "SEARCHPLACEHOLDER": "MRX يا BTC ايڊريس داخل ڪريو",
                 "TRANSACTIONDATE": "تاريخ",
                 "TRANSACTIONTYPE": "TX قسم",
                 "TRANSACTIONAMOUNT": "رقم",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "تصديق ٿيل",
                 "TRANSACTIONNOTCONFIRMED": "تصديق ٿيل نه آهي",
                 "TRANSACTIONREFUNDED": "واپس ڪيل - گھٽ ۾ گھٽ کان گھٽ",
-                "AVGSWAPPRICE": "سراسري مٽا سٽا جي قيمت",
-                "SEARCHPLACEHOLDER": "MRX يا BTC ايڊريس داخل ڪريو"
+                "AVGSWAPPRICE": "سراسري مٽا سٽا جي قيمت"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "سوپ ايڊريس تيار ڪري رهيو آهي...",
             "ALREADYHAVEADDRESS": "توهان وٽ اڳ ۾ ئي هن ميٽرڪس ايڊريس سان لاڳاپيل هڪ BTC پتو آهي.",
             "NOADDRESS": "توهان ميٽرڪس ايڊريس داخل نه ڪيو آهي."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "ميٽرڪس خريد ڪريو",
-                "SEARCH": "تاريخ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "ظاهر ڪريو",
                 "EMPTYTITLE": "اڃا تائين ڪو به ٽوڪن نه مليو آهي.",
                 "EMPTYDETAIL": "Altitude خودڪار طريقي سان توهان جي پتي تي موڪليل MRC20 ۽ MRC721 ٽوڪن لاءِ بلاڪ ايڪسپلورر کي چيڪ ڪري ٿو، پوءِ توهان جي پنهنجي نوڊ جي خلاف هر شيءِ جي لائيو تصديق ڪري ٿو. جيڪڏهن توهان کي ان جو ڪانٽريڪٽ ايڊريس خبر آهي ته توهان دستي طور تي هڪ ٽوڪن پڻ شامل ڪري سگهو ٿا.",
+                "EMPTYDETAILCHECKINGDISABLED": "خودڪار ٽوڪن چيڪنگ بند ڪئي وئي آهي، تنهنڪري توهان جا پتا ٽوڪن لاءِ چيڪ نه ٿي رهيا آهن. ان کي مٿي واپس آن ڪريو، يا جيڪڏهن توهان کي ان جو ڪانٽريڪٽ ايڊريس خبر آهي ته دستي طور تي ٽوڪن شامل ڪريو.",
                 "HIDDENTITLE": "لڪيل ٽوڪن",
                 "CONTEXTMENUHIDE": "ٽوڪن لڪايو",
                 "ITEMSSUFFIX": "شيون",
-                "NONENUMERABLETOOLTIP": "هي مجموعو انفرادي شين جي فهرست ڏيڻ جي سپورٽ نٿو ڪري - ان جي بدران ڏيکاري ٿو ته توهان وٽ ڪيترا آهن."
+                "NONENUMERABLETOOLTIP": "هي مجموعو انفرادي شين جي فهرست ڏيڻ جي سپورٽ نٿو ڪري - ان جي بدران ڏيکاري ٿو ته توهان وٽ ڪيترا آهن.",
+                "CHECKINGENABLED": "چيڪنگ آن",
+                "CHECKINGDISABLED": "چيڪنگ آف",
+                "CHECKINGENABLEDTOOLTIP": "ٽوڪن چيڪنگ آن آهي - Altitude وقت بوقت ٽوڪن لاءِ توهان جي پتي جي جانچ ڪندو آهي ۽ بيلنس کي تازو ڪندو آهي. بند ڪرڻ لاءِ ڪلڪ ڪريو.",
+                "CHECKINGDISABLEDTOOLTIP": "ٽوڪن چيڪنگ بند آهي - واپس آن ڪرڻ لاءِ ڪلڪ ڪريو.",
+                "CHECKINGDISABLEDNOTICE": "خودڪار ٽوڪن چيڪنگ بند ڪئي وئي آهي. توهان جا پتا ٽوڪن لاءِ اسڪين نه ٿي رهيا آهن ۽ بيلنس اپڊيٽ نه ٿيندا. توهان اڃا تائين دستي طور تي ٽوڪن شامل ڪري سگهو ٿا."
             },
             "ADDTOKEN": {
                 "TITLE": "ٽوڪن شامل ڪريو",

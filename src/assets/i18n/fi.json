@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Luo tili",
             "HIDEEMPTYACCOUNTS": "Piilota nimeämättömät tyhjät tilit"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Yleiskatsaus",
+            "TRANSACTIONSTAB": "Transaktiot",
+            "ADDRESSTABS": "Osoitteet"
+        },
         "SEND": {
             "ADDRECIPIENT": "Lisää vastaanottaja",
             "SEND": "Lähetä",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Päivämäärä",
             "TABLECOLUMNS_CONFIRMS": "Vahvistukset",
             "ALL_SELECTUNSELECT": "Näytä kaikki",
+            "TREEMODE": "Puutila",
+            "LISTMODE": "Listatila",
             "SENDAVAILABLE": "Käytä käytettävissä olevaa saldoa",
             "INPUTLOCKED": "Syöttö on lukittu. Sinun on avattava lukitus käyttääksesi syötteen.",
             "CONTEXTMENULOCKINPUT": "Lukitse syöttö",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Jälkimaksu",
             "QUANTITY": "Määrä",
             "BYTES": "Tavut",
-            "TREEMODE": "Puutila",
-            "LISTMODE": "Listatila",
             "ALERTFEECHANGETITLE": "Maksun muutos",
             "ALERTFEECHANGECONTENT": "Todellinen tapahtumamaksu on odotettua korkeampi. Vahvista uusi maksu:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Luo sopimus",
+            "INFO": "Ota älysopimus käyttöön verkossa lähettämällä sen käännetty tavukoodi. Tämä on ketjun ydinfunktio – tarkista tavukoodisi ja kaasuasetukset ennen käyttöönottoa, käyttöönottoa ei voi perua.",
+            "FROM": "Alkaen",
+            "BYTECODE": "Tavukoodi",
+            "BYTECODEPLACEHOLDER": "Liitä käännetyn sopimuksen tavukoodi (heksadesimaali)",
+            "INVALIDBYTECODE": "Tavukoodin on oltava kelvollinen heksamerkkijono (0–9, a–f), jossa on parillinen määrä merkkejä.",
+            "GASLIMIT": "Kaasuraja",
+            "GASLIMITRANGE": "Alue",
+            "GASPRICE": "Bensiinin hinta (MRX per kaasuyksikkö)",
+            "GASPRICEMIN": "Minimi",
+            "ESTIMATEDMAXCOST": "Arvioitu enimmäiskustannus",
+            "DEPLOYBUTTON": "Käyttöönottosopimus",
+            "INCOMPLETEFORM": "Valitse lähettäjän osoite, anna kelvollinen tavukoodi ja aseta kelvollinen kaasun hinta/raja.",
+            "HIGHGASPRICETITLE": "Korkea bensiinin hinta",
+            "HIGHGASPRICEINFO": "Asettamasi bensiinin hinta on epätavallisen korkea. Tämä käyttöönotto voi maksaa jopa:",
+            "DEPLOYING": "Sopimuksen käyttöönotto...",
+            "DEPLOYED": "Sopimuksen käyttöönotto lähetetty",
+            "RESULTTITLE": "Käyttöönoton tulos",
+            "STATUS": "Status",
+            "STATUSPENDING": "Vahvistusta odotetaan...",
+            "STATUSCONFIRMED": "Käyttöönotto onnistui",
+            "STATUSFAILED": "Käyttöönotto epäonnistui",
+            "TXID": "Tapahtumatunnus",
+            "SENDER": "Lähettäjä",
+            "CONTRACTADDRESS": "Sopimusosoite",
+            "GASUSED": "Käytetty kaasu",
+            "DONEBUTTON": "Tehty",
+            "DEPLOYANOTHERBUTTON": "Ota käyttöön toinen"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaktiot",
+            "COPYBLOCKHASH": "Kopioi lohkon hajautus",
+            "COPYTXID": "Kopioi tapahtumatunnus",
+            "COPYACCOUNT": "Kopioi tilin nimi",
+            "COPYADDRESS": "Kopioi osoite",
+            "COPYAMOUNT": "Kopiomäärä",
+            "COPTBLOCKINDEX": "Kopioi lohkoindeksi",
+            "EXPLORER": "Avaa lohkoselaimessa"
         },
         "STAKING": {
             "UNLOCK": "Avaa panostamista varten",
@@ -68,13 +113,13 @@
             "IP": "IP-osoite",
             "ADDRESS": "Osoite",
             "ENABLED": "Käytössä",
-            "STARTBUTTON": "Käynnistä paikallisesti",
-            "STARTALIASBUTTON": "Aloita alias",
-            "STARTALLBUTTON": "Aloita kaikki",
             "NOMASTERNODES": "Sinulla ei ole yhtään masternodea",
             "NOMNOUTPUTS": "Masternode-tuloksia ei löytynyt. Suorittaaksesi paikallisen Masternoden, lähetä täsmälleen 2, 5, 25, 50 tai 100 miljoonaa kolikkoa Masternode-osoitteeseesi ja odota 15 vahvistusta.",
+            "STARTBUTTON": "Käynnistä paikallisesti",
             "STOPBUTTON": "Lopeta paikallinen",
+            "STARTALIASBUTTON": "Aloita alias",
             "STOPALIASBUTTON": "Pysäytä alias",
+            "STARTALLBUTTON": "Aloita kaikki",
             "ADDREMOTE": "Lisää etämasternode",
             "REMOVEMN": "Poista Masternode",
             "ADDLOCAL": "Asenna paikallinen Masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Yleistä",
                 "COREVERSION": "Ydinversio",
+                "ALTITUDEVERSION": "Korkeusversio",
                 "PROTOCOLVERSION": "Protokollan versio",
                 "WALLETVERSION": "Wallet.dat-versio",
                 "NETWORKTITLE": "Verkko",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternodien lukumäärä",
                 "BLOCKCHAINTITLE": "Lohkoketju",
                 "NUMBERBLOCKS": "Nykyinen lohkojen määrä",
-                "BESTBLOCKTTIME": "Viimeisen lohkon aika",
-                "ALTITUDEVERSION": "Korkeusversio"
+                "BESTBLOCKTTIME": "Viimeisen lohkon aika"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Tervetuloa Metrix Core RPC -konsoliin. Kirjoita help saadaksesi yleiskatsauksen käytettävissä olevista komennoista.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Valitse kieli"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaktiot",
-            "COPYBLOCKHASH": "Kopioi lohkon hajautus",
-            "COPYTXID": "Kopioi tapahtumatunnus",
-            "COPYACCOUNT": "Kopioi tilin nimi",
-            "COPYADDRESS": "Kopioi osoite",
-            "COPYAMOUNT": "Kopiomäärä",
-            "COPTBLOCKINDEX": "Kopioi lohkoindeksi",
-            "EXPLORER": "Avaa lohkoselaimessa"
+        "CURRENCY": {
+            "TITLE": "Valitse näyttövaluutta"
         },
         "EXPLORER": {
             "TITLE": "Lohkojen selaus",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Verkko",
             "WINDOTAB": "Ikkuna",
+            "BACKUPTAB": "Varmuuskopio",
+            "EXPLORERTAB": "Tutkimusmatkailija",
+            "DEVELOPERTAB": "Kehittäjä",
             "NETWORK": {
                 "PROXY": "Yhdistä SOCKS5-välityspalvelimen kautta",
                 "PROXYIP": "Välityspalvelimen IP-osoite",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Pienennä suljettaessa",
                 "BEHAVIOURTITLE": "Järjestelmäpalkin ja ikkunan toiminta"
             },
-            "BACKUPTAB": "Varmuuskopio",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automaattinen varmuuskopiointi",
                 "ENABLED": "Varmuuskopioi wallet.dat automaattisesti aikataulun mukaisesti",
                 "ENABLEDINFO": "Luo lompakkotiedostostasi uuden varmuuskopion aikataulun mukaisesti, joten uusin kopio on aina saatavilla, jos jokin menee pieleen.",
+                "INTERVALLABEL": "Varmuuskopioi joka (päivä)",
                 "LASTBACKUP": "Viimeisin varmuuskopio:",
                 "NEVERBACKEDUP": "Automaattista varmuuskopiointia ei ole vielä tehty.",
                 "BACKUPNOWBUTTON": "Varmuuskopioi nyt",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Palauta oletusarvoihin",
                 "PRUNETITLE": "Varmuuskopiohistoria",
                 "PRUNEINFO": "Vanhemmat automaattiset varmuuskopiot poistetaan, jotta tämä kansio ei kasva loputtomiin – vain uusimmat alla olevat varmuuskopiot säilytetään.",
-                "KEEPCOUNTLABEL": "Pidä viimeinen",
-                "INTERVALLABEL": "Varmuuskopioi joka (päivä)"
+                "KEEPCOUNTLABEL": "Pidä viimeinen"
             },
-            "EXPLORERTAB": "Tutkimusmatkailija",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Lohkojen selaus",
                 "BLOCKEXPLORERINFO": "Sivusto avautui, kun katseli tapahtumaa lohkoselaimessa (esim. napsauta tapahtumaa hiiren kakkospainikkeella > Näytä lohkoselaimessa).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Pääverkko",
                 "TESTNET": "Testiverkko",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Kehittäjätila",
+                "DEVMODEINFO": "Oletusarvoisesti pois päältä ja tarkoitettu vain kehittäjille. Tämän käyttöönotto tuo näkyviin vaihtoehtoja RPC-yhteyden ohittamiseen – tavallisten käyttäjien tulisi jättää tämä pois päältä.",
+                "DEVMODELABEL": "Ota kehittäjätila käyttöön",
+                "WARNING": "Nämä asetukset ovat vain kehitystarkoituksiin. Niiden muuttaminen voi estää lompakkoa muodostamasta yhteyttä daemoniin kokonaan – käytä tätä vain, jos tiedät mitä olet tekemässä.",
+                "RPCHOSTTITLE": "RPC-yhteys",
+                "RPCHOSTINFO": "Oletusarvoisesti Altitude muodostaa yhteyden itse hallinnoimaansa daemoniin tällä koneella (127.0.0.1). Näiden ohittaminen sallii sen muodostaa yhteyden toiseen daemoniin, esimerkiksi etä-regtest-instanssiin, ilman, että paikallista daemonia tarvitsee suorittaa. Jos yhteyden muodostaminen onnistuu, Altitude ei lataa tai käynnistä omaa paikallista daemonia. Kohdedaemonin rpcallowip-tiedoston on sallittava tämä yhteys, ja alla olevan rpcuser/rpcpassword-asetuksen on vastattava sen asetuksia. Muutos tulee voimaan välittömästi, eikä uudelleenkäynnistystä tarvita.",
+                "RPCHOSTLABEL": "RPC-isäntä",
+                "RPCPORTLABEL": "RPC-portti",
+                "RPCUSERLABEL": "RPC-käyttäjätunnus",
+                "RPCPASSWORDLABEL": "RPC-salasana"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Yleiskatsaus",
-            "TRANSACTIONSTAB": "Transaktiot",
-            "ADDRESSTABS": "Osoitteet"
-        },
-        "CURRENCY": {
-            "TITLE": "Valitse näyttövaluutta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Kojelauta",
             "SEND": "Lähetä",
+            "CREATECONTRACT": "Luo sopimus",
             "RECEIVE": "Vastaanota",
             "TRANSACTIONS": "Transaktiot",
             "STAKING": "Panostaminen",
             "MASTERNODES": "Masternodeja",
+            "EXPLORER": "Lohkojen selaus",
             "SYNC": {
                 "CONNECTING": "Yhdistäminen",
                 "NOBLOCKS": "Odotetaan lohkoja",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Lompakko ei ole tällä hetkellä stakkaamassa",
                 "MASTERNODEON": "Masternode on tällä hetkellä käynnissä",
                 "MASTERNODEOFF": "Masternode ei ole tällä hetkellä käynnissä"
-            },
-            "EXPLORER": "Lohkojen selaus"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Anna web3-sivuston osoite",
+            "GOBUTTON": "Mennä",
+            "QUICKLAUNCH": "Pikakäynnistys",
+            "DEVTOOLS": "Avaa kehittäjätyökalut",
+            "ADDLINK": "Lisää linkki",
+            "LINKNAMEPLACEHOLDER": "Nimi",
+            "LINKURLPLACEHOLDER": "https://esimerkki.com",
+            "SAVE": "Tallentaa",
+            "CANCEL": "Peruuttaa",
+            "REMOVE": "Poistaa",
+            "REMOVECONFIRM": "Poistetaanko tämä pikalinkki?",
+            "LINKEXISTS": "Tuo linkki on jo pikakäynnistysluettelossasi",
+            "LINKINVALID": "Anna kelvollinen sivuston osoite",
+            "LINKNETWORKLABEL": "Verkko",
+            "LOADFAILED": "Sivuston lataaminen epäonnistui",
+            "SECURESITE": "Yhteys on suojattu - voimassa oleva SSL-varmenne",
+            "INSECURESITE": "Yhteys ei ole suojattu",
+            "INVALIDCERTSITE": "Yhteys ei ole yksityinen - virheellinen tai epäluotettava SSL-varmenne"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Anna lompakkosi salasana",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Corelle on saatavilla päivitys. Haluatko asentaa sen nyt?",
             "WALLETUPDATETITLE": "Korkeuspäivitys saatavilla",
             "WALLETUPDATEINFO": "Altitudelle on saatavilla päivitys. Haluatko ladata sen nyt?",
+            "WALLETUPDATEREADYTITLE": "Korkeuspäivitys valmis",
+            "WALLETUPDATEREADYINFO": "Päivitys on ladattu. Käynnistääkö Altitude uudelleen asentaaksesi sen?",
+            "WALLETUPDATERESTARTBUTTON": "Käynnistä uudelleen ja asenna",
+            "WALLETUPDATELATERBUTTON": "Myöhemmin",
             "CLIENTUPDATEBUTTON": "Päivittää",
             "CLIENTUPDATECANCELBUTTON": "Älä päivitä",
             "CLIENTUPDATESKIPBUTTON": "Ohita tämä päivitys",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Kaikki aiemmat lompakkotiedostostasi tekemäsi varmuuskopiot tulee korvata uudella, salatulla lompakkotiedostolla. Turvallisuussyistä aiemmat salaamattoman lompakkotiedoston varmuuskopiot muuttuvat käyttökelvottomiksi heti, kun alat käyttää uutta, salattua lompakkoa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core pysähtyi odottamatta",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Coren kanssa ilmeni ongelma, joka on aiheuttanut sen sulkeutumisen. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmien varalta.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Coren tietoliikennevirhe",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Coren kanssa kommunikoinnissa oli ongelma. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmien varalta.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Coren käynnistys epäonnistui",
+            "BOOTSTRAPFAILEDINFO": "Metrix Coren käynnistyksessä oli ongelma. On suositeltavaa tarkistaa Altitude-lokitiedostosta mahdolliset ongelmat.",
+            "BOOTSTRAPOFFERTITLE": "Lompakko huomattavasti vanhentunut",
+            "BOOTSTRAPOFFERINFO": "Saatavilla on uusi käynnistystyökalu, jolla Metrix Coren voi päivittää nopeasti. Normaalin synkronoinnin jatkaminen voi kestää useita päiviä, koska lompakkosi on ladattava ja vahvistettava jokainen lohko, jonka se on unohtanut.",
+            "BOOTSTRAPOFFERBUTTON": "Lataa Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jatka normaalia synkronointia",
+            "BOOTSTRAPSPACEINFO": "Levytilaa ei ole riittävästi käynnistystiedoston lataamiseen ja purkamiseen. Vaaditaan: {required}, Käytettävissä: {free}. Vapauta tilaa ja yritä uudelleen.",
+            "STARTUPFAILEDTITLE": "Metrix Coren käynnistys epäonnistui",
+            "STARTUPFAILEDINFO": "Metrix Coren käynnistyksessä tapahtui virhe. On suositeltavaa tarkistaa korkeuslokitiedostosta mahdolliset ongelmat.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut",
             "CLIENTINVALIDCONFIGTITLE": "Virheellinen metrix.conf-määritys",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf-tiedostossasi on virheellinen masternode-asetus, joka aiheuttaa Metrix Coren välittömän sulkeutumisen. Tarkista tämä tiedosto.",
             "ADDREMOTEMNTITLE": "Lisää etämasternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternoden yksityinen avain",
             "ADDREMOTEMNTXHASH": "Masternode-tapahtuman hajautus",
             "ADDREMOTEMNTXINDEX": "Masternode-tapahtumaindeksi",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Coren käynnistys epäonnistui",
-            "BOOTSTRAPFAILEDINFO": "Metrix Coren käynnistyksessä oli ongelma. On suositeltavaa tarkistaa Altitude-lokitiedostosta mahdolliset ongelmat.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Palautustyökalut",
-            "STARTUPFAILEDTITLE": "Metrix Coren käynnistys epäonnistui",
-            "STARTUPFAILEDINFO": "Metrix Coren käynnistyksessä tapahtui virhe. On suositeltavaa tarkistaa korkeuslokitiedostosta mahdolliset ongelmat.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Coren tietoliikennevirhe",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Coren kanssa kommunikoinnissa oli ongelma. On suositeltavaa tarkistaa debug.log-tiedostosi ongelmien varalta.",
             "UNENROLLGOVERNORTITLE": "Vahvista kuvernöörin erottaminen",
             "UNENROLLGOVERNORCONTENT": "Oletko varma, että haluat poistaa kuvernöörisi rekisteristä? Et voi enää äänestää ketjun hallinnasta.",
-            "WALLETUPDATEREADYTITLE": "Korkeuspäivitys valmis",
-            "WALLETUPDATEREADYINFO": "Päivitys on ladattu. Käynnistääkö Altitude uudelleen asentaaksesi sen?",
-            "WALLETUPDATERESTARTBUTTON": "Käynnistä uudelleen ja asenna",
-            "WALLETUPDATELATERBUTTON": "Myöhemmin",
             "DAPPCONNECTTITLE": "Yhdistä sivustoon",
             "DAPPCONNECTINFO": "Tämä sivusto haluaa muodostaa yhteyden lompakkoosi ja tarkastella osoitteesi ja saldosi.",
             "DAPPCONNECTBUTTON": "Yhdistä",
+            "DAPPCONNECTADDRESSLABEL": "Osoite",
+            "DAPPAPPROVEBUTTON": "Hyväksyä",
             "DAPPREJECTBUTTON": "Hylätä",
             "DAPPSENDTITLE": "Sopimustapahtumapyyntö",
             "DAPPSENDINFO": "Tämä sivusto pyytää lupaa lähettää sopimustapahtuma lompakostasi.",
-            "DAPPSIGNTITLE": "Allekirjoitusviestin pyyntö",
-            "DAPPSIGNINFO": "Tämä sivusto pyytää allekirjoittamaan viestin lompakkosi osoitteella.",
-            "DAPPNOTREADY": "Sivustoon ei vielä voida muodostaa yhteyttä - Metrix Core käynnistyy vielä.",
-            "DAPPNOWALLET": "Sivustoon ei voida muodostaa yhteyttä – lompakon osoitetta ei ole saatavilla.",
-            "DAPPAPPROVEBUTTON": "Hyväksyä",
-            "DAPPCONNECTADDRESSLABEL": "Osoite",
             "DAPPSENDSITELABEL": "Sivusto",
             "DAPPSENDCONTRACTLABEL": "Sopimusosoite",
             "DAPPSENDAMOUNTLABEL": "Määrä",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Verkkomaksun enimmäismäärä",
             "DAPPSENDMAXTOTALLABEL": "Kokonaissumma",
             "DAPPSENDDATALABEL": "Sopimustiedot",
+            "DAPPSIGNTITLE": "Allekirjoitusviestin pyyntö",
+            "DAPPSIGNINFO": "Tämä sivusto pyytää allekirjoittamaan viestin lompakkosi osoitteella.",
             "DAPPSIGNMESSAGELABEL": "Viesti",
-            "BOOTSTRAPOFFERTITLE": "Lompakko huomattavasti vanhentunut",
-            "BOOTSTRAPOFFERINFO": "Saatavilla on uusi käynnistystyökalu, jolla Metrix Coren voi päivittää nopeasti. Normaalin synkronoinnin jatkaminen voi kestää useita päiviä, koska lompakkosi on ladattava ja vahvistettava jokainen lohko, jonka se on unohtanut.",
-            "BOOTSTRAPOFFERBUTTON": "Lataa Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Jatka normaalia synkronointia",
-            "BOOTSTRAPSPACEINFO": "Levytilaa ei ole riittävästi käynnistystiedoston lataamiseen ja purkamiseen. Vaaditaan: {required}, Käytettävissä: {free}. Vapauta tilaa ja yritä uudelleen."
+            "DAPPNOTREADY": "Sivustoon ei vielä voida muodostaa yhteyttä - Metrix Core käynnistyy vielä.",
+            "DAPPNOWALLET": "Sivustoon ei voida muodostaa yhteyttä – lompakon osoitetta ei ole saatavilla."
         },
         "ADDRESSBOOK": {
             "TITLE": "Osoitekirja",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Nykyinen verkko"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Anna web3-sivuston osoite",
-            "GOBUTTON": "Mennä",
-            "QUICKLAUNCH": "Pikakäynnistys",
-            "DEVTOOLS": "Avaa kehittäjätyökalut",
-            "ADDLINK": "Lisää linkki",
-            "LINKNAMEPLACEHOLDER": "Nimi",
-            "LINKURLPLACEHOLDER": "https://esimerkki.com",
-            "SAVE": "Tallentaa",
-            "CANCEL": "Peruuttaa",
-            "REMOVE": "Poistaa",
-            "REMOVECONFIRM": "Poistetaanko tämä pikalinkki?",
-            "LINKEXISTS": "Tuo linkki on jo pikakäynnistysluettelossasi",
-            "LINKINVALID": "Anna kelvollinen sivuston osoite",
-            "LINKNETWORKLABEL": "Verkko",
-            "LOADFAILED": "Sivuston lataaminen epäonnistui",
-            "SECURESITE": "Yhteys on suojattu - voimassa oleva SSL-varmenne",
-            "INSECURESITE": "Yhteys ei ole suojattu",
-            "INVALIDCERTSITE": "Yhteys ei ole yksityinen - virheellinen tai epäluotettava SSL-varmenne"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Varmuuskopiolompakko...",
             "SIGNMESSAGE": "Allekirjoita viesti...",
             "VERIFYMESSAGE": "Vahvista viesti...",
-            "LOCALE": "Kieli...",
-            "RESTARTCORE": "Käynnistä Metrix Core uudelleen",
-            "EXIT": "Uloskäynti",
             "OPTIONS": "Vaihtoehdot...",
+            "LOCALE": "Kieli...",
             "CURRENCIES": "Näytä valuutta...",
-            "ALTITUDEREFRESH": "Päivitä korkeustiedot"
+            "RESTARTCORE": "Käynnistä Metrix Core uudelleen",
+            "ALTITUDEREFRESH": "Päivitä korkeustiedot",
+            "EXIT": "Uloskäynti"
         },
         "ENCRYPT": {
             "TITLE": "Salaa",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Kokonaissaldo",
+        "SPENDABLEBALANCE": "Käytettävä saldo",
+        "PENDINGBALANCE": "Odottava saldo",
         "CANCELBUTTON": "Peruuttaa",
         "DONEBUTTON": "Tehty",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Hyväksyä",
         "CLEARALLBUTTON": "Tyhjennä kaikki",
         "ENTERACCOUNTLABEL": "Anna tälle osoitteelle tunniste",
         "ENTERADDRESSLABEL": "Anna Metrix-osoite",
@@ -464,11 +511,8 @@
         "SORTBY": "Lajittele",
         "SEARCH": "Haku",
         "FEE": "Maksu",
-        "ACCEPTBUTTON": "Hyväksyä",
         "CONFIRMED": "Vahvistettu",
         "UNCONFIRMED": "Vahvistamaton",
-        "PENDINGBALANCE": "Odottava saldo",
-        "SPENDABLEBALANCE": "Käytettävä saldo",
         "SAVEBUTTON": "Tallentaa"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Coren uudelleenkäynnistys...",
         "BOOTSTRAPPING": "Ladataan bootstrapia...",
         "BOOTSTRAPEXTRACTING": "Puretaan bootstrapia...",
-        "TIMEREMAINING": "jäljellä:"
+        "TIMEREMAINING": "jäljellä:",
+        "DEVRPCOVERRIDEACTIVE": "Kehittäjän RPC-yhteyden ohitus on asetettu (Asetukset > Kehittäjä), eikä se vastaa. Poista se, jos haluat muodostaa yhteyden paikalliseen daemoniin normaalisti.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Tyhjennä RPC-ohitus ja yhdistä uudelleen"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uusi tili luotu onnistuneesti",
         "ADDRESSCOPIEDCLIPBOARD": "Osoite kopioitu leikepöydälle",
+        "COPIEDCLIPBOARD": "Kopioitu leikepöydälle",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tapahtumat kopioitu leikepöydälle",
         "EMPTYFIELDS": "Täytä kaikki kentät",
         "NOUPDATE": "Ei päivitystä saatavilla",
         "WALLETBACKEDUP": "Lompakon varmuuskopiointi onnistui",
+        "WALLETBACKUPFAILED": "Lompakon automaattinen varmuuskopiointi epäonnistui – tarkista varmuuskopiointisijainti ja käytettävissä oleva levytila",
         "PASSPHRASEMISMATCH": "Antamasi salasanat eivät täsmää",
         "CHECKINGUPDATE": "Tarkistetaan päivityksiä...",
         "CHECKINGUPDATEFAILED": "Päivitysten tarkistaminen epäonnistui. Tarkista verkkoyhteys.",
+        "WALLETUPDATEDOWNLOADING": "Päivitystä ladataan...",
         "SENDINGEXCEEDSBALANCE": "Lähettämäsi summa ylittää valitsemasi saldon",
         "MISSINGCHANGEADDRESS": "Sinun on määritettävä muutososoite",
         "MISSINGDESTINATIONADDRESS": "Sinun on määritettävä kohdeosoite",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Lompakon salaaminen...",
         "CHANGINGPASSPHARASE": "Salasanan vaihtaminen...",
         "STARTINGMASTERNODE": "Käynnistetään masternodea...",
+        "STOPPINGMASTERNODE": "Pysäytetään masternodea...",
         "SENDINGTRANSACTION": "Lähetetään tapahtumaa...",
         "SIGNINGMESSAGE": "Viestiä allekirjoitetaan...",
         "SIGNEDMESSAGE": "Viesti allekirjoitettu",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Lompakon lukituksen avaaminen...",
         "TRANSACTIONMISMATCH": "Maksuvirhe. Yritä uudelleen.",
         "MINIMUMCONFIRMATIONS": "Kaikki syötteet vaativat vähintään yhden vahvistuksen ennen kulutusta.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tapahtumat kopioitu leikepöydälle",
-        "STOPPINGMASTERNODE": "Pysäytetään masternodea...",
         "FAILEDTOWRITECONFIG": "Metrix.conf-tiedostoosi kirjoitettaessa tapahtui virhe. Tarkista, että tiedosto on olemassa ja että Altitudella on kirjoitusoikeudet.",
         "NOPUBLICUP": "Julkista IP-osoitetta ei löytynyt. Tarkista internetyhteytesi ja käynnistä Altitude uudelleen.",
         "CONFIGURINGLOCALMN": "Paikallisen Masternoden määrittäminen...",
         "REPORTINGISSUE": "Haetaan diagnostiikkatietoja... Nämä tiedot kopioidaan leikepöydälle.",
-        "WALLETUPDATEDOWNLOADING": "Päivitystä ladataan...",
-        "WALLETBACKUPFAILED": "Lompakon automaattinen varmuuskopiointi epäonnistui – tarkista varmuuskopiointisijainti ja käytettävissä oleva levytila",
         "EXPLORERURLSAVED": "Tutkimusalueen URL-osoite tallennettu",
         "EXPLORERURLRESET": "Tutkimusalueen URL-osoite palautettu oletusarvoiseksi",
         "EXPLORERURLINVALID": "Tuo ei ole kelvollinen http(s)-URL-osoite",
-        "EXPLORERURLUNREACHABLE": "URL-osoitteeseen ei saatu yhteyttä – tarkista se ja yritä uudelleen"
+        "EXPLORERURLUNREACHABLE": "URL-osoitteeseen ei saatu yhteyttä – tarkista se ja yritä uudelleen",
+        "DEVRPCHOSTSAVED": "RPC-isäntä tallennettu",
+        "DEVRPCHOSTRESET": "RPC-isäntä palautettu oletusarvoon (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Vastaanotetut kolikot",
+        "NEWTRANSACTION_TITLE_STAKE": "Vastaanotettu panos",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Sain Masternode-palkinnon"
     },
     "TIME": {
         "AFEWSECONDS": "Muutaman sekunnin",
@@ -533,11 +587,6 @@
         "MONTHS": "kuukautta",
         "AYEAR": "Vuosi",
         "YEARS": "vuotta"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Vastaanotetut kolikot",
-        "NEWTRANSACTION_TITLE_STAKE": "Vastaanotettu panos",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Sain Masternode-palkinnon"
     },
     "MONTH": {
         "JAN": "TAMMIKUU",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Hallintoneuvoston jäsenet ovat vastuussa kuukausittaisista budjeteista ja lohkoketjumuutoksista äänestämisestä. Sinusta voi tulla hallintoneuvoston jäsen lukitsemalla oikean vakuuden hallintosopimukseen.",
                 "COLLATERAL": "Vaadittu vakuus",
                 "ENROLL": "Ilmoittaudu",
+                "SELECTAGOVERNOR": "Valitse kelvollinen kuvernöörin osoite",
+                "GOVERNORNOTSELECTED": "Yhtäkään kelvollista osoitetta ei valittu",
                 "CONFIRMENROLL": "Olet rekisteröitymässä hallintoneuvoston jäseneksi. Tämä lähettää vaaditun vakuuden sisältävän tapahtuman hallintosopimukseen. Voit peruuttaa rekisteröitymisen milloin tahansa.",
                 "ISGOVERNORTITLE": "Olet aktiivinen kuvernööri!",
                 "ISGOVERNORDETAIL1": "Kuvernöörit ovat vastuussa kuukausittaisista budjeteista ja lohkoketjumuutoksista äänestämisestä.",
                 "ISGOVERNORDETAIL2": "Pysyäksesi kuvernöörinä sinun on osallistuttava vähintään yhteen äänestykseen 30 päivän välein.",
                 "ISGOVERNORDETAIL3": "Jos äänestettävää ei ole, voit jatkaa ilmoittautumistasi manuaalisesti lähettämällä aktiivisen ping-komennon.",
+                "MYGOVERNORADDRESS": "Kuvernöörini puhe",
                 "UNENROLL": "Peruuta ilmoittautuminen",
                 "PING": "Lähetä aktiivinen ping",
                 "LASTPINGTITLE": "Viimeisin ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "päivää",
                 "GOVERNORVOTEMATURITYHOURS": "tuntia",
                 "GOVERNORVOTEMATURITYSUFFIX": "kypsään asti",
-                "MYGOVERNORADDRESS": "Kuvernöörini puhe",
-                "SELECTAGOVERNOR": "Valitse kelvollinen kuvernöörin osoite",
-                "GOVERNORNOTSELECTED": "Yhtäkään kelvollista osoitetta ei valittu",
                 "NOTFULLYSYNCEDTITLE": "Kuvernöörin tila ei saatavilla",
                 "NOTFULLYSYNCEDDETAIL": "Kuvernöörirekisteröintisi tila tulee näkyviin, kun lohkoketjusi on täysin synkronoitu.",
                 "DGPMIGRATIONTITLE": "DGP-siirtymä",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ehdotuksesi on luotu onnistuneesti",
             "ENROLLINGGOVERNOR": "Ilmoittautuminen kuvernööriksi...",
             "ENROLLEDGOVERNOR": "Rekisteröitymisesi on valmis, kun maksutapahtumasi on vahvistettu",
-            "VOTINGONPROPOSAL": "Ehdotuksen äänestys lähetetään",
-            "VOTEDONPROPOSAL": "Äänesi lasketaan, kun maksutapahtuma on vahvistettu.",
             "PINGINGGOVERNOR": "Lähetetään ping-kutsua...",
             "PINGEDGOVERNOR": "Ping lähetetty onnistuneesti. Kuvernöörisi saa tiedon, kun maksu on vahvistettu.",
+            "VOTINGONPROPOSAL": "Ehdotuksen äänestys lähetetään",
+            "VOTEDONPROPOSAL": "Äänesi lasketaan, kun maksutapahtuma on vahvistettu.",
             "UNENROLLINGGOVERNOR": "Poistetaan kuvernöörin rekisteröintejä...",
             "UNENROLLEDGOVERNOR": "Maksutapahtuma lähetetty. Kuvernöörisi rekisteröinti poistetaan, kun maksutapahtuma on vahvistettu.",
             "GOVERNORNOTMATURE": "Kuvernöörinne ei ole vielä tarpeeksi kypsä suorittamaan tätä toimenpidettä"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Osta Metrix",
+                "SEARCH": "Historia"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Lähetät",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tapahtumahistoria",
                 "SEARCHBUTTON": "HAKU",
+                "SEARCHPLACEHOLDER": "Syötä MRX- tai BTC-osoite",
                 "TRANSACTIONDATE": "Päivämäärä",
                 "TRANSACTIONTYPE": "Lähetystyyppi",
                 "TRANSACTIONAMOUNT": "Määrä",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Vahvistettu",
                 "TRANSACTIONNOTCONFIRMED": "Ei vahvistettu",
                 "TRANSACTIONREFUNDED": "Hyvitetty - Alle minimisumman",
-                "AVGSWAPPRICE": "Keskimääräinen swap-hinta",
-                "SEARCHPLACEHOLDER": "Syötä MRX- tai BTC-osoite"
+                "AVGSWAPPRICE": "Keskimääräinen swap-hinta"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Luodaan vaihto-osoitetta...",
             "ALREADYHAVEADDRESS": "Sinulla on jo BTC-osoite liitettynä tähän Metrix-osoitteeseen",
             "NOADDRESS": "Et antanut Metrix-osoitetta"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Osta Metrix",
-                "SEARCH": "Historia"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Näytä",
                 "EMPTYTITLE": "Ei tokeneita vielä löytynyt",
                 "EMPTYDETAIL": "Altitude tarkistaa automaattisesti lohkoselaimesta osoitteisiisi lähetetyt MRC20- ja MRC721-tokenit ja varmistaa sitten kaiken reaaliajassa omaa solmuasi vasten. Voit myös lisätä tokenin manuaalisesti, jos tiedät sen sopimusosoitteen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automaattinen token-tarkistus on pois päältä, joten osoitteitasi ei tarkisteta tokenien varalta. Ota se takaisin käyttöön yllä tai lisää token manuaalisesti, jos tiedät sen sopimusosoitteen.",
                 "HIDDENTITLE": "Piilotetut merkit",
                 "CONTEXTMENUHIDE": "Piilota tunnus",
                 "ITEMSSUFFIX": "tuote(et)",
-                "NONENUMERABLETOOLTIP": "Tämä kokoelma ei tue yksittäisten esineiden listaamista – sen sijaan näytetään, kuinka monta esinettä sinulla on."
+                "NONENUMERABLETOOLTIP": "Tämä kokoelma ei tue yksittäisten esineiden listaamista – sen sijaan näytetään, kuinka monta esinettä sinulla on.",
+                "CHECKINGENABLED": "Tarkistetaan",
+                "CHECKINGDISABLED": "Tarkastus pois päältä",
+                "CHECKINGENABLEDTOOLTIP": "Token-tarkistus on käytössä – Altitude tarkistaa säännöllisesti osoitteidesi tokenien varalta ja päivittää saldot. Poista käytöstä napsauttamalla.",
+                "CHECKINGDISABLEDTOOLTIP": "Tunnuksen tarkistus on pois päältä - napsauta ottaaksesi sen takaisin käyttöön.",
+                "CHECKINGDISABLEDNOTICE": "Automaattinen token-tarkistus on poistettu käytöstä. Osoitteitasi ei skannata tokenien varalta, eivätkä saldot päivity. Voit silti lisätä tokenin manuaalisesti."
             },
             "ADDTOKEN": {
                 "TITLE": "Lisää tunnus",

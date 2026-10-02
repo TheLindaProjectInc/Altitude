@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Crea un compte",
             "HIDEEMPTYACCOUNTS": "Amaga els comptes buits sense nom"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Visió general",
+            "TRANSACTIONSTAB": "Transaccions",
+            "ADDRESSTABS": "Adreces"
+        },
         "SEND": {
             "ADDRECIPIENT": "Afegeix un destinatari",
             "SEND": "Enviar",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Confirmacions",
             "ALL_SELECTUNSELECT": "Activa/desactiva tot",
+            "TREEMODE": "Mode arbre",
+            "LISTMODE": "Mode de llista",
             "SENDAVAILABLE": "Utilitza el saldo disponible",
             "INPUTLOCKED": "L'entrada està bloquejada. Haureu de desbloquejar aquesta entrada per gastar-la.",
             "CONTEXTMENULOCKINPUT": "Entrada de bloqueig",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Després de la tarifa",
             "QUANTITY": "Quantitat",
             "BYTES": "Bytes",
-            "TREEMODE": "Mode arbre",
-            "LISTMODE": "Mode de llista",
             "ALERTFEECHANGETITLE": "Canvi de tarifa",
             "ALERTFEECHANGECONTENT": "La comissió de transacció real és més alta del que s'esperava. Si us plau, confirmeu la nova comissió:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Crear contracte",
+            "INFO": "Implementa un contracte intel·ligent a la xarxa enviant el seu bytecode compilat. Aquesta és una funció de la cadena principal: comprova dues vegades el bytecode i la configuració del gas abans de implementar-lo, ja que no es pot desfer.",
+            "FROM": "De",
+            "BYTECODE": "Codi de bytes",
+            "BYTECODEPLACEHOLDER": "Enganxa el bytecode del contracte compilat (hexadecimal)",
+            "INVALIDBYTECODE": "El bytecode ha de ser una cadena hexadecimal vàlida (0-9, a-f) amb un nombre parell de caràcters.",
+            "GASLIMIT": "Límit de gas",
+            "GASLIMITRANGE": "Rang",
+            "GASPRICE": "Preu de la gasolina (MRX per unitat de gas)",
+            "GASPRICEMIN": "Mínim",
+            "ESTIMATEDMAXCOST": "Cost màxim estimat",
+            "DEPLOYBUTTON": "Contracte de desplegament",
+            "INCOMPLETEFORM": "Seleccioneu una adreça de remitent, introduïu un bytecode vàlid i definiu un límit/preu de gasolina vàlid.",
+            "HIGHGASPRICETITLE": "Preu alt de la gasolina",
+            "HIGHGASPRICEINFO": "El preu de la gasolina que has establert és inusualment alt. Aquesta implementació podria costar fins a:",
+            "DEPLOYING": "Desplegant el contracte...",
+            "DEPLOYED": "Desplegament del contracte enviat",
+            "RESULTTITLE": "Resultat del desplegament",
+            "STATUS": "Estat",
+            "STATUSPENDING": "Pendent de confirmació...",
+            "STATUSCONFIRMED": "S'ha implementat correctament",
+            "STATUSFAILED": "El desplegament ha fallat",
+            "TXID": "ID de transacció",
+            "SENDER": "Remitent",
+            "CONTRACTADDRESS": "Adreça del contracte",
+            "GASUSED": "Gas utilitzat",
+            "DONEBUTTON": "Fet",
+            "DEPLOYANOTHERBUTTON": "Desplega un altre"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaccions",
+            "COPYBLOCKHASH": "Copiar bloc hash",
+            "COPYTXID": "Copia l'ID de la transacció",
+            "COPYACCOUNT": "Copiar el nom del compte",
+            "COPYADDRESS": "Copiar adreça",
+            "COPYAMOUNT": "Quantitat de còpia",
+            "COPTBLOCKINDEX": "Copiar índex de blocs",
+            "EXPLORER": "Obre a l'Explorador de blocs"
         },
         "STAKING": {
             "UNLOCK": "Desbloqueja per apostar",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adreça",
             "ENABLED": "Activat",
-            "STARTBUTTON": "Inicia localment",
-            "STARTALIASBUTTON": "Inicia l'àlies",
-            "STARTALLBUTTON": "Comença tot",
             "NOMASTERNODES": "No tens cap masternode",
             "NOMNOUTPUTS": "No s'han trobat sortides de Masternode. Per executar un Masternode local, envieu exactament 2, 5, 25, 50 o 100 milions de monedes a l'adreça del vostre Masternode i espereu 15 confirmacions.",
+            "STARTBUTTON": "Inicia localment",
             "STOPBUTTON": "Atura local",
+            "STARTALIASBUTTON": "Inicia l'àlies",
             "STOPALIASBUTTON": "Atura l'àlies",
+            "STARTALLBUTTON": "Comença tot",
             "ADDREMOTE": "Afegeix un Masternode remot",
             "REMOVEMN": "Elimina el Masternode",
             "ADDLOCAL": "Configura el Masternode Local",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "General",
                 "COREVERSION": "Versió bàsica",
+                "ALTITUDEVERSION": "Versió d'altitud",
                 "PROTOCOLVERSION": "Versió del protocol",
                 "WALLETVERSION": "Versió de Wallet.dat",
                 "NETWORKTITLE": "Xarxa",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Nombre de Masternodes",
                 "BLOCKCHAINTITLE": "Cadena de blocs",
                 "NUMBERBLOCKS": "Nombre actual de blocs",
-                "BESTBLOCKTTIME": "Hora de l'últim bloc",
-                "ALTITUDEVERSION": "Versió d'altitud"
+                "BESTBLOCKTTIME": "Hora de l'últim bloc"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Benvingut a la consola RPC de Metrix Core. Escriviu ajuda per obtenir una visió general de les ordres disponibles.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Selecciona l'idioma"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaccions",
-            "COPYBLOCKHASH": "Copiar bloc hash",
-            "COPYTXID": "Copia l'ID de la transacció",
-            "COPYACCOUNT": "Copiar el nom del compte",
-            "COPYADDRESS": "Copiar adreça",
-            "COPYAMOUNT": "Quantitat de còpia",
-            "COPTBLOCKINDEX": "Copiar índex de blocs",
-            "EXPLORER": "Obre a l'Explorador de blocs"
+        "CURRENCY": {
+            "TITLE": "Selecciona la moneda de visualització"
         },
         "EXPLORER": {
             "TITLE": "Explorador de blocs",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Xarxa",
             "WINDOTAB": "Finestra",
+            "BACKUPTAB": "Còpia de seguretat",
+            "EXPLORERTAB": "Explorador",
+            "DEVELOPERTAB": "Desenvolupador",
             "NETWORK": {
                 "PROXY": "Connecta't a través del proxy SOCKS5",
                 "PROXYIP": "IP del proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimitzar en tancar",
                 "BEHAVIOURTITLE": "Comportament de la safata del sistema i de la finestra"
             },
-            "BACKUPTAB": "Còpia de seguretat",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Còpia de seguretat automàtica",
                 "ENABLED": "Fes una còpia de seguretat automàtica de wallet.dat segons una programació",
                 "ENABLEDINFO": "Crea una còpia de seguretat recent del fitxer del moneder de forma programada, de manera que sempre hi ha una còpia recent disponible si alguna cosa va malament.",
+                "INTERVALLABEL": "Còpia de seguretat cada (dies)",
                 "LASTBACKUP": "Última còpia de seguretat:",
                 "NEVERBACKEDUP": "Encara no s'ha fet cap còpia de seguretat automàtica.",
                 "BACKUPNOWBUTTON": "Fes una còpia de seguretat ara",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Restableix els valors predeterminats",
                 "PRUNETITLE": "Historial de còpies de seguretat",
                 "PRUNEINFO": "Les còpies de seguretat automàtiques més antigues s'eliminen perquè aquesta carpeta no creixi per sempre; només es conserven les més recents que hi ha a continuació.",
-                "KEEPCOUNTLABEL": "Mantenir l'últim",
-                "INTERVALLABEL": "Còpia de seguretat cada (dies)"
+                "KEEPCOUNTLABEL": "Mantenir l'últim"
             },
-            "EXPLORERTAB": "Explorador",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Explorador de blocs",
                 "BLOCKEXPLORERINFO": "El lloc s'obria en visualitzar una transacció a l'explorador de blocs (per exemple, feu clic amb el botó dret en una transacció > Visualitza a l'explorador).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Xarxa principal",
                 "TESTNET": "Xarxa de proves",
                 "REGTEST": "Prova de registre"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mode de desenvolupador",
+                "DEVMODEINFO": "Desactivat per defecte i pensat només per a desenvolupadors. Si activeu aquesta opció, es mostren opcions per anul·lar la connexió RPC; els usuaris estàndard haurien de deixar-la desactivada.",
+                "DEVMODELABEL": "Activa el mode de desenvolupador",
+                "WARNING": "Aquests paràmetres són només per a fins de desenvolupament. Canviar-los pot impedir que el moneder es connecti a un daemon; només feu servir això si sabeu què esteu fent.",
+                "RPCHOSTTITLE": "Connexió RPC",
+                "RPCHOSTINFO": "Per defecte, Altitude es connecta al daemon que gestiona ell mateix, en aquesta màquina (127.0.0.1). Si es substitueixen, es connecta a un daemon diferent, per exemple, a una instància remota de regtest, sense necessitat d'executar-ne una localment. Si la connexió té èxit, Altitude no descarregarà ni iniciarà el seu propi daemon local. L'opció rpcallowip del daemon de destinació ha de permetre aquesta connexió i la contrasenya rpcuser/rpcpassword que hi ha a continuació ha de coincidir amb la seva configuració. Té efecte immediatament, no cal reiniciar.",
+                "RPCHOSTLABEL": "Amfitrió RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Nom d'usuari de RPC",
+                "RPCPASSWORDLABEL": "Contrasenya RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Visió general",
-            "TRANSACTIONSTAB": "Transaccions",
-            "ADDRESSTABS": "Adreces"
-        },
-        "CURRENCY": {
-            "TITLE": "Selecciona la moneda de visualització"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Tauler de control",
             "SEND": "Enviar",
+            "CREATECONTRACT": "Crear contracte",
             "RECEIVE": "Rebre",
             "TRANSACTIONS": "Transaccions",
             "STAKING": "Apostar",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Explorador de blocs",
             "SYNC": {
                 "CONNECTING": "Connectant",
                 "NOBLOCKS": "Esperant blocs",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "El moneder no està fent apostes actualment",
                 "MASTERNODEON": "El Masternode està actualment en funcionament",
                 "MASTERNODEOFF": "El Masternode no està en funcionament actualment"
-            },
-            "EXPLORER": "Explorador de blocs"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Introduïu una adreça de lloc web3",
+            "GOBUTTON": "Anar",
+            "QUICKLAUNCH": "Inici ràpid",
+            "DEVTOOLS": "Obre les eines de desenvolupador",
+            "ADDLINK": "Afegeix un enllaç",
+            "LINKNAMEPLACEHOLDER": "Nom",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Desa",
+            "CANCEL": "Cancel·la",
+            "REMOVE": "Elimina",
+            "REMOVECONFIRM": "Voleu eliminar aquest enllaç ràpid?",
+            "LINKEXISTS": "Aquest enllaç ja és a la teva llista d'inici ràpid.",
+            "LINKINVALID": "Introduïu una adreça de lloc vàlida",
+            "LINKNETWORKLABEL": "Xarxa",
+            "LOADFAILED": "No s'ha pogut carregar el lloc web",
+            "SECURESITE": "La connexió és segura: certificat SSL vàlid",
+            "INSECURESITE": "La connexió no és segura",
+            "INVALIDCERTSITE": "La connexió no és privada: el certificat SSL no és vàlid o no és de confiança."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Introdueix la contrasenya del teu moneder",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Hi ha una actualització disponible per a Metrix Core. Voleu instal·lar-la ara?",
             "WALLETUPDATETITLE": "Actualització d'altitud disponible",
             "WALLETUPDATEINFO": "Hi ha una actualització disponible per a Altitude. Voleu descarregar-la ara?",
+            "WALLETUPDATEREADYTITLE": "Actualització d'altitud a punt",
+            "WALLETUPDATEREADYINFO": "L'actualització s'ha descarregat. Voleu reiniciar Altitude ara per instal·lar-la?",
+            "WALLETUPDATERESTARTBUTTON": "Reinicia i instal·la",
+            "WALLETUPDATELATERBUTTON": "Més tard",
             "CLIENTUPDATEBUTTON": "Actualització",
             "CLIENTUPDATECANCELBUTTON": "No actualitzeu",
             "CLIENTUPDATESKIPBUTTON": "Omet aquesta actualització",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Qualsevol còpia de seguretat anterior que hàgiu fet del fitxer del moneder s'ha de substituir pel fitxer de moneder xifrat recentment generat. Per motius de seguretat, les còpies de seguretat anteriors del fitxer de moneder no xifrat esdevindran inútils tan bon punt comenceu a utilitzar el nou moneder xifrat.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core s'ha aturat inesperadament",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Hi ha hagut un problema amb Metrix Core que ha provocat que s'hagi tancat. Es recomana comprovar el fitxer debug.log per detectar problemes.",
+            "CLIENTUNKNOWNERRORTITLE": "Error de comunicació principal de Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Hi ha hagut un problema de comunicació amb Metrix Core. Es recomana comprovar el fitxer debug.log per detectar problemes.",
+            "BOOTSTRAPFAILEDTITLE": "Error d'arrencada principal de Metrix",
+            "BOOTSTRAPFAILEDINFO": "Hi ha hagut un problema en arrencar Metrix Core. Es recomana comprovar el fitxer de registre d'Altitude per detectar problemes.",
+            "BOOTSTRAPOFFERTITLE": "Cartera significativament desactualitzada",
+            "BOOTSTRAPOFFERINFO": "Hi ha disponible una versió d'arrencada recent que pot actualitzar ràpidament Metrix Core. Continuar amb una sincronització normal pot trigar diversos dies a completar-se, ja que el moneder ha de descarregar i verificar tots els blocs que ha perdut.",
+            "BOOTSTRAPOFFERBUTTON": "Descarrega Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continua la sincronització normal",
+            "BOOTSTRAPSPACEINFO": "No hi ha prou espai lliure al disc per descarregar i extreure el fitxer d'arrencada. Obligatori: {required}, Disponible: {free}. Allibereu espai i torneu-ho a provar.",
+            "STARTUPFAILEDTITLE": "Error d'inici de Metrix Core",
+            "STARTUPFAILEDINFO": "S'ha produït un error en iniciar Metrix Core. Es recomana comprovar el fitxer de registre d'Altitude per detectar problemes.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Eines de recuperació",
             "CLIENTINVALIDCONFIGTITLE": "Configuració de metrix.conf no vàlida",
             "CLIENTINVALIDCONFIGINFO": "El vostre metrix.conf té una configuració de masternode no vàlida que farà que Metrix Core es tanqui immediatament. Si us plau, comproveu aquest fitxer.",
             "ADDREMOTEMNTITLE": "Afegeix un Masternode remot",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Clau privada del Masternode",
             "ADDREMOTEMNTXHASH": "Hash de transacció de Masternode",
             "ADDREMOTEMNTXINDEX": "Índex de transaccions de Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Error d'arrencada principal de Metrix",
-            "BOOTSTRAPFAILEDINFO": "Hi ha hagut un problema en arrencar Metrix Core. Es recomana comprovar el fitxer de registre d'Altitude per detectar problemes.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Eines de recuperació",
-            "STARTUPFAILEDTITLE": "Error d'inici de Metrix Core",
-            "STARTUPFAILEDINFO": "S'ha produït un error en iniciar Metrix Core. Es recomana comprovar el fitxer de registre d'Altitude per detectar problemes.",
-            "CLIENTUNKNOWNERRORTITLE": "Error de comunicació principal de Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Hi ha hagut un problema de comunicació amb Metrix Core. Es recomana comprovar el fitxer debug.log per detectar problemes.",
             "UNENROLLGOVERNORTITLE": "Confirmar la baixa del governador",
             "UNENROLLGOVERNORCONTENT": "Esteu segur que voleu donar de baixa el vostre governador? Ja no podreu votar sobre la governança en cadena.",
-            "WALLETUPDATEREADYTITLE": "Actualització d'altitud a punt",
-            "WALLETUPDATEREADYINFO": "L'actualització s'ha descarregat. Voleu reiniciar Altitude ara per instal·lar-la?",
-            "WALLETUPDATERESTARTBUTTON": "Reinicia i instal·la",
-            "WALLETUPDATELATERBUTTON": "Més tard",
             "DAPPCONNECTTITLE": "Connecta't al lloc web",
             "DAPPCONNECTINFO": "Aquest lloc web vol connectar-se al vostre moneder i veure la vostra adreça i el vostre saldo.",
             "DAPPCONNECTBUTTON": "Connecta",
+            "DAPPCONNECTADDRESSLABEL": "Adreça",
+            "DAPPAPPROVEBUTTON": "Aprova",
             "DAPPREJECTBUTTON": "Rebutja",
             "DAPPSENDTITLE": "Sol·licitud de transacció de contracte",
             "DAPPSENDINFO": "Aquest lloc web sol·licita enviar una transacció de contracte des del vostre moneder.",
-            "DAPPSIGNTITLE": "Sol·licitud de signatura de missatge",
-            "DAPPSIGNINFO": "Aquest lloc web sol·licita signar un missatge amb l'adreça del vostre moneder.",
-            "DAPPNOTREADY": "Encara no em puc connectar al lloc web; el Metrix Core encara s'està iniciant.",
-            "DAPPNOWALLET": "No es pot connectar al lloc web; no hi ha cap adreça de moneder disponible.",
-            "DAPPAPPROVEBUTTON": "Aprova",
-            "DAPPCONNECTADDRESSLABEL": "Adreça",
             "DAPPSENDSITELABEL": "Lloc web",
             "DAPPSENDCONTRACTLABEL": "Adreça del contracte",
             "DAPPSENDAMOUNTLABEL": "Import",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tarifa màxima de xarxa",
             "DAPPSENDMAXTOTALLABEL": "Total màxim",
             "DAPPSENDDATALABEL": "Dades del contracte",
+            "DAPPSIGNTITLE": "Sol·licitud de signatura de missatge",
+            "DAPPSIGNINFO": "Aquest lloc web sol·licita signar un missatge amb l'adreça del vostre moneder.",
             "DAPPSIGNMESSAGELABEL": "Missatge",
-            "BOOTSTRAPOFFERTITLE": "Cartera significativament desactualitzada",
-            "BOOTSTRAPOFFERINFO": "Hi ha disponible una versió d'arrencada recent que pot actualitzar ràpidament Metrix Core. Continuar amb una sincronització normal pot trigar diversos dies a completar-se, ja que el moneder ha de descarregar i verificar tots els blocs que ha perdut.",
-            "BOOTSTRAPOFFERBUTTON": "Descarrega Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Continua la sincronització normal",
-            "BOOTSTRAPSPACEINFO": "No hi ha prou espai lliure al disc per descarregar i extreure el fitxer d'arrencada. Obligatori: {required}, Disponible: {free}. Allibereu espai i torneu-ho a provar."
+            "DAPPNOTREADY": "Encara no em puc connectar al lloc web; el Metrix Core encara s'està iniciant.",
+            "DAPPNOWALLET": "No es pot connectar al lloc web; no hi ha cap adreça de moneder disponible."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llibreta d'adreces",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Xarxa actual"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Introduïu una adreça de lloc web3",
-            "GOBUTTON": "Anar",
-            "QUICKLAUNCH": "Inici ràpid",
-            "DEVTOOLS": "Obre les eines de desenvolupador",
-            "ADDLINK": "Afegeix un enllaç",
-            "LINKNAMEPLACEHOLDER": "Nom",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Desa",
-            "CANCEL": "Cancel·la",
-            "REMOVE": "Elimina",
-            "REMOVECONFIRM": "Voleu eliminar aquest enllaç ràpid?",
-            "LINKEXISTS": "Aquest enllaç ja és a la teva llista d'inici ràpid.",
-            "LINKINVALID": "Introduïu una adreça de lloc vàlida",
-            "LINKNETWORKLABEL": "Xarxa",
-            "LOADFAILED": "No s'ha pogut carregar el lloc web",
-            "SECURESITE": "La connexió és segura: certificat SSL vàlid",
-            "INSECURESITE": "La connexió no és segura",
-            "INVALIDCERTSITE": "La connexió no és privada: el certificat SSL no és vàlid o no és de confiança."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Cartera de reserva...",
             "SIGNMESSAGE": "Signa el missatge...",
             "VERIFYMESSAGE": "Verifica el missatge...",
-            "LOCALE": "Llenguatge...",
-            "RESTARTCORE": "Reinicieu Metrix Core",
-            "EXIT": "Sortida",
             "OPTIONS": "Opcions...",
+            "LOCALE": "Llenguatge...",
             "CURRENCIES": "Mostra la moneda...",
-            "ALTITUDEREFRESH": "Actualitza les dades d'altitud"
+            "RESTARTCORE": "Reinicieu Metrix Core",
+            "ALTITUDEREFRESH": "Actualitza les dades d'altitud",
+            "EXIT": "Sortida"
         },
         "ENCRYPT": {
             "TITLE": "Xifra",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Saldo total",
+        "SPENDABLEBALANCE": "Saldo disponible",
+        "PENDINGBALANCE": "Saldo pendent",
         "CANCELBUTTON": "Cancel·la",
         "DONEBUTTON": "Fet",
         "OKBUTTON": "D'acord",
+        "ACCEPTBUTTON": "Accepta",
         "CLEARALLBUTTON": "Esborra-ho tot",
         "ENTERACCOUNTLABEL": "Introduïu una etiqueta per a aquesta adreça",
         "ENTERADDRESSLABEL": "Introduïu una adreça de Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Ordena per",
         "SEARCH": "Cerca",
         "FEE": "Tarifa",
-        "ACCEPTBUTTON": "Accepta",
         "CONFIRMED": "Confirmat",
         "UNCONFIRMED": "Sense confirmar",
-        "PENDINGBALANCE": "Saldo pendent",
-        "SPENDABLEBALANCE": "Saldo disponible",
         "SAVEBUTTON": "Desa"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Reiniciant Metrix Core...",
         "BOOTSTRAPPING": "Descarregant bootstrap...",
         "BOOTSTRAPEXTRACTING": "Extraient el bootstrap...",
-        "TIMEREMAINING": "restant:"
+        "TIMEREMAINING": "restant:",
+        "DEVRPCOVERRIDEACTIVE": "Hi ha una substitució de connexió RPC de desenvolupador definida (Opcions > Desenvolupador) i no respon. Esborreu-la per tornar a connectar-vos al daemon local normalment.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Esborra la substitució i la reconnexió de RPC"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nou compte creat correctament",
         "ADDRESSCOPIEDCLIPBOARD": "L'adreça s'ha copiat al porta-retalls",
+        "COPIEDCLIPBOARD": "Copiat al porta-retalls",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccions copiades al porta-retalls",
         "EMPTYFIELDS": "Si us plau, ompliu tots els camps",
         "NOUPDATE": "No hi ha cap actualització disponible",
         "WALLETBACKEDUP": "Còpia de seguretat del moneder correctament",
+        "WALLETBACKUPFAILED": "La còpia de seguretat automàtica del moneder ha fallat: comproveu la ubicació de la còpia de seguretat i l'espai de disc disponible.",
         "PASSPHRASEMISMATCH": "Les contrasenyes que has introduït no coincideixen",
         "CHECKINGUPDATE": "S'està buscant actualitzacions...",
         "CHECKINGUPDATEFAILED": "No es pot comprovar si hi ha actualitzacions. Comprova la xarxa.",
+        "WALLETUPDATEDOWNLOADING": "S'està descarregant l'actualització...",
         "SENDINGEXCEEDSBALANCE": "L'import que envieu supera el saldo seleccionat",
         "MISSINGCHANGEADDRESS": "Heu d'especificar una adreça de canvi",
         "MISSINGDESTINATIONADDRESS": "Heu d'especificar una adreça de destinació",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Xifrant la cartera...",
         "CHANGINGPASSPHARASE": "Canviant la contrasenya...",
         "STARTINGMASTERNODE": "Iniciant el masternode...",
+        "STOPPINGMASTERNODE": "Aturant el masternode...",
         "SENDINGTRANSACTION": "Enviant la transacció...",
         "SIGNINGMESSAGE": "Missatge de signatura...",
         "SIGNEDMESSAGE": "Missatge signat",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Desbloquejant la cartera...",
         "TRANSACTIONMISMATCH": "Error de transacció. Si us plau, torneu-ho a intentar.",
         "MINIMUMCONFIRMATIONS": "Totes les entrades requereixen com a mínim una confirmació abans de gastar.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaccions copiades al porta-retalls",
-        "STOPPINGMASTERNODE": "Aturant el masternode...",
         "FAILEDTOWRITECONFIG": "Hi ha hagut un problema en escriure al fitxer metrix.conf. Comproveu que el fitxer existeixi i que Altitude tingui permisos d'escriptura.",
         "NOPUBLICUP": "No s'ha trobat cap adreça IP pública. Comproveu la connexió a Internet i reinicieu Altitude.",
         "CONFIGURINGLOCALMN": "Configurant el Masternode local...",
         "REPORTINGISSUE": "S'està obtenint informació de diagnòstic... Aquesta informació es copiarà al porta-retalls.",
-        "WALLETUPDATEDOWNLOADING": "S'està descarregant l'actualització...",
-        "WALLETBACKUPFAILED": "La còpia de seguretat automàtica del moneder ha fallat: comproveu la ubicació de la còpia de seguretat i l'espai de disc disponible.",
         "EXPLORERURLSAVED": "URL de l'explorador desada",
         "EXPLORERURLRESET": "L'URL de l'explorador s'ha revertit a l'estat predeterminat",
         "EXPLORERURLINVALID": "Aquesta no és una URL http vàlida.",
-        "EXPLORERURLUNREACHABLE": "No s'ha pogut accedir a aquesta URL; comproveu-la i torneu-ho a intentar."
+        "EXPLORERURLUNREACHABLE": "No s'ha pogut accedir a aquesta URL; comproveu-la i torneu-ho a intentar.",
+        "DEVRPCHOSTSAVED": "S'ha desat l'amfitrió RPC",
+        "DEVRPCHOSTRESET": "L'amfitrió RPC ha tornat a l'estat predeterminat (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monedes rebudes",
+        "NEWTRANSACTION_TITLE_STAKE": "Participació rebuda",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Has rebut la recompensa del Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Uns segons",
@@ -533,11 +587,6 @@
         "MONTHS": "mesos",
         "AYEAR": "Un any",
         "YEARS": "anys"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Monedes rebudes",
-        "NEWTRANSACTION_TITLE_STAKE": "Participació rebuda",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Has rebut la recompensa del Masternode"
     },
     "MONTH": {
         "JAN": "GENER",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Els governadors són responsables de votar els pressupostos mensuals i els canvis a la cadena de blocs. Podeu convertir-vos en governador bloquejant la garantia correcta al contracte de governança.",
                 "COLLATERAL": "garantia requerida",
                 "ENROLL": "Inscriure's",
+                "SELECTAGOVERNOR": "Trieu una adreça de governador elegible",
+                "GOVERNORNOTSELECTED": "No s'ha seleccionat cap adreça vàlida",
                 "CONFIRMENROLL": "Esteu a punt d'inscriure-us com a governador. Això enviarà una transacció amb la garantia necessària per al contracte de governança. Podeu cancel·lar la inscripció en qualsevol moment.",
                 "ISGOVERNORTITLE": "Ets un governador actiu!",
                 "ISGOVERNORDETAIL1": "Els governadors són responsables de votar els pressupostos mensuals i els canvis a la cadena de blocs.",
                 "ISGOVERNORDETAIL2": "Per seguir sent governador, hauràs de participar en almenys una votació cada 30 dies.",
                 "ISGOVERNORDETAIL3": "Si no hi ha res per votar, podeu continuar manualment la vostra inscripció enviant un ping actiu.",
+                "MYGOVERNORADDRESS": "El meu discurs de governador",
                 "UNENROLL": "Desinscriure's",
                 "PING": "Enviar ping actiu",
                 "LASTPINGTITLE": "Últim ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dies",
                 "GOVERNORVOTEMATURITYHOURS": "hores",
                 "GOVERNORVOTEMATURITYSUFFIX": "fins a la maduresa",
-                "MYGOVERNORADDRESS": "El meu discurs de governador",
-                "SELECTAGOVERNOR": "Trieu una adreça de governador elegible",
-                "GOVERNORNOTSELECTED": "No s'ha seleccionat cap adreça vàlida",
                 "NOTFULLYSYNCEDTITLE": "L'estatus de governador no està disponible",
                 "NOTFULLYSYNCEDDETAIL": "El vostre estat de registre de Governor serà visible quan la vostra cadena de blocs estigui completament sincronitzada.",
                 "DGPMIGRATIONTITLE": "Migració DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "La teva proposta s'ha creat correctament",
             "ENROLLINGGOVERNOR": "Inscrivint-se com a governador...",
             "ENROLLEDGOVERNOR": "La teva inscripció estarà completa un cop confirmada la transacció.",
-            "VOTINGONPROPOSAL": "Enviant el vot de la proposta",
-            "VOTEDONPROPOSAL": "El vostre vot es comptarà un cop confirmada la transacció.",
             "PINGINGGOVERNOR": "Enviant ping...",
             "PINGEDGOVERNOR": "Ping enviat correctament. El vostre Governor s'actualitzarà un cop confirmada la transacció.",
+            "VOTINGONPROPOSAL": "Enviant el vot de la proposta",
+            "VOTEDONPROPOSAL": "El vostre vot es comptarà un cop confirmada la transacció.",
             "UNENROLLINGGOVERNOR": "S'està cancel·lant la inscripció del governador...",
             "UNENROLLEDGOVERNOR": "Transacció enviada. El vostre Governor es cancel·larà un cop confirmada la transacció.",
             "GOVERNORNOTMATURE": "El vostre governador encara no és prou madur per dur a terme aquesta acció."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Compra Metrix",
+                "SEARCH": "Història"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Envieu",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Historial de transaccions",
                 "SEARCHBUTTON": "CERCA",
+                "SEARCHPLACEHOLDER": "Introduïu l'adreça MRX o BTC",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Tipus de TX",
                 "TRANSACTIONAMOUNT": "Import",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Confirmat",
                 "TRANSACTIONNOTCONFIRMED": "No confirmat",
                 "TRANSACTIONREFUNDED": "Reemborsat - Per sota del mínim",
-                "AVGSWAPPRICE": "Preu mitjà de l'intercanvi",
-                "SEARCHPLACEHOLDER": "Introduïu l'adreça MRX o BTC"
+                "AVGSWAPPRICE": "Preu mitjà de l'intercanvi"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generant l'adreça d'intercanvi...",
             "ALREADYHAVEADDRESS": "Ja tens una adreça BTC associada amb aquesta adreça de Metrix.",
             "NOADDRESS": "No has introduït una adreça de Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Compra Metrix",
-                "SEARCH": "Història"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Mostra",
                 "EMPTYTITLE": "Encara no s'han trobat fitxes",
                 "EMPTYDETAIL": "Altitude comprova automàticament en un explorador de blocs els tokens MRC20 i MRC721 enviats a les vostres adreces i, a continuació, verifica que tot està en directe amb el vostre propi node. També podeu afegir un token manualment si coneixeu la seva adreça de contracte.",
+                "EMPTYDETAILCHECKINGDISABLED": "La comprovació automàtica de tokens està desactivada, de manera que no es comproven els tokens a les vostres adreces. Torneu-la a activar més amunt o afegiu un token manualment si en sabeu l'adreça del contracte.",
                 "HIDDENTITLE": "Fitxes ocultes",
                 "CONTEXTMENUHIDE": "Amaga el testimoni",
                 "ITEMSSUFFIX": "article(s)",
-                "NONENUMERABLETOOLTIP": "Aquesta col·lecció no permet llistar elements individuals; en comptes d'això, es mostren quants en tens."
+                "NONENUMERABLETOOLTIP": "Aquesta col·lecció no permet llistar elements individuals; en comptes d'això, es mostren quants en tens.",
+                "CHECKINGENABLED": "Comprovació d'activació",
+                "CHECKINGDISABLED": "Marcant",
+                "CHECKINGENABLEDTOOLTIP": "La comprovació de tokens està activada: Altitude comprova periòdicament les vostres adreces per detectar tokens i actualitza els saldos. Feu clic per desactivar-la.",
+                "CHECKINGDISABLEDTOOLTIP": "La comprovació de testimonis està desactivada; feu clic per tornar-la a activar.",
+                "CHECKINGDISABLEDNOTICE": "La comprovació automàtica de tokens està desactivada. No s'estan escanejant les vostres adreces per detectar tokens i els saldos no s'actualitzaran. Tot i així, podeu afegir un token manualment."
             },
             "ADDTOKEN": {
                 "TITLE": "Afegeix un testimoni",

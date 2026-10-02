@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Cruthaich Cunntas",
             "HIDEEMPTYACCOUNTS": "Falaich Cunntasan Falamh Ainmichte"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Sealladh farsaing",
+            "TRANSACTIONSTAB": "Gnìomhan",
+            "ADDRESSTABS": "Seòlaidhean"
+        },
         "SEND": {
             "ADDRECIPIENT": "Cuir Neach-faighinn ris",
             "SEND": "Cuir",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Ceann-latha",
             "TABLECOLUMNS_CONFIRMS": "Dearbhaidhean",
             "ALL_SELECTUNSELECT": "Toglaich a h-uile",
+            "TREEMODE": "Modh Craobh",
+            "LISTMODE": "Modh Liosta",
             "SENDAVAILABLE": "Cleachd an cothromachadh a tha ri fhaotainn",
             "INPUTLOCKED": "Tha an t-ionchur glaiste. Feumaidh tu an t-ionchur seo fhuasgladh gus a chosg.",
             "CONTEXTMENULOCKINPUT": "Cuir a-steach glasaidh",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Às dèidh Cìs",
             "QUANTITY": "Meud",
             "BYTES": "Baidean",
-            "TREEMODE": "Modh Craobh",
-            "LISTMODE": "Modh Liosta",
             "ALERTFEECHANGETITLE": "Atharrachadh Cìse",
             "ALERTFEECHANGECONTENT": "Tha a’ chìs malairt fhèin nas àirde na bha dùil. Dearbhaich a’ chìs ùr:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Cruthaich Cùmhnant",
+            "INFO": "Cuir cùmhnant snasail an sàs air an lìonra le bhith a’ cur a-steach a chòd-byte co-chruinnichte. Is e seo prìomh ghnìomh slabhraidh - thoir sùil dhùbailte air na roghainnean còd-byte agus gas agad mus cuir thu an gnìomh e, chan urrainnear an cleachdadh a thoirt air ais.",
+            "FROM": "Bho",
+            "BYTECODE": "Còd-bhàta",
+            "BYTECODEPLACEHOLDER": "Cuir a-steach còd-baidhte a’ chùmhnant co-chruinnichte (hex)",
+            "INVALIDBYTECODE": "Feumaidh còd-baidhte a bhith na sreang heicsidheach dligheach (0-9, a-f) le àireamh chothromach de charactaran",
+            "GASLIMIT": "Crìoch Gas",
+            "GASLIMITRANGE": "Raon",
+            "GASPRICE": "Prìs Gas (MRX gach aonad gas)",
+            "GASPRICEMIN": "As ìsle",
+            "ESTIMATEDMAXCOST": "Cosgais as àirde tuairmseach",
+            "DEPLOYBUTTON": "Cùmhnant a chur an gnìomh",
+            "INCOMPLETEFORM": "Tagh seòladh an neach-cuiridh, cuir a-steach còd-baidhte dligheach, agus suidhich crìoch/prìs gas dligheach.",
+            "HIGHGASPRICETITLE": "Prìs Àrd Gas",
+            "HIGHGASPRICEINFO": "Tha prìs a’ ghas a shuidhich thu gu math àrd. Dh’ fhaodadh an cleachdadh seo cosg suas ri:",
+            "DEPLOYING": "A’ cur cùmhnant an gnìomh…",
+            "DEPLOYED": "Cùmhnant a chur a-steach",
+            "RESULTTITLE": "Toradh an Leasachaidh",
+            "STATUS": "Inbhe",
+            "STATUSPENDING": "Ri dhearbhadh...",
+            "STATUSCONFIRMED": "Air a chur an sàs gu soirbheachail",
+            "STATUSFAILED": "Dh’fhàillig an cur an gnìomh",
+            "TXID": "ID Gnìomh",
+            "SENDER": "an neach-cuiridh",
+            "CONTRACTADDRESS": "Seòladh a’ Chùmhnant",
+            "GASUSED": "Gas air a chleachdadh",
+            "DONEBUTTON": "Deiseil",
+            "DEPLOYANOTHERBUTTON": "Cuir Fear Eile an sàs"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Gnìomhan",
+            "COPYBLOCKHASH": "Dèan lethbhreac de Hash Bloc",
+            "COPYTXID": "Dèan lethbhreac de ID a’ ghnothaich",
+            "COPYACCOUNT": "Dèan lethbhreac de dh'ainm a' chunntais",
+            "COPYADDRESS": "Dèan lethbhreac den t-Seòladh",
+            "COPYAMOUNT": "Meud lethbhreac",
+            "COPTBLOCKINDEX": "Clàr-amais a’ bhloca lethbhreac",
+            "EXPLORER": "Fosgail ann am Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Fuasgail airson Gealladh",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Seòladh",
             "ENABLED": "Air a chomasachadh",
-            "STARTBUTTON": "Tòisich gu h-ionadail",
-            "STARTALIASBUTTON": "Tòisich Far-ainm",
-            "STARTALLBUTTON": "Tòisich a h-uile càil",
             "NOMASTERNODES": "Chan eil prìomh-nòdan agad",
             "NOMNOUTPUTS": "Cha deach toraidhean Masternode a lorg. Gus Masternode ionadail a ruith, cuir dìreach 2, 5, 25, 50 no 100 millean bonn chun t-seòladh Masternode agad agus feith airson 15 dearbhaidhean.",
+            "STARTBUTTON": "Tòisich gu h-ionadail",
             "STOPBUTTON": "Stad Ionadail",
+            "STARTALIASBUTTON": "Tòisich Far-ainm",
             "STOPALIASBUTTON": "Stad Far-ainm",
+            "STARTALLBUTTON": "Tòisich a h-uile càil",
             "ADDREMOTE": "Cuir Masternode Iomallach ris",
             "REMOVEMN": "Thoir air falbh Masternode",
             "ADDLOCAL": "Suidhich Maighstir-node Ionadail",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Coitcheann",
                 "COREVERSION": "Tionndadh Bunaiteach",
+                "ALTITUDEVERSION": "Tionndadh Àirde",
                 "PROTOCOLVERSION": "Tionndadh Pròtacal",
                 "WALLETVERSION": "Tionndadh Wallet.dat",
                 "NETWORKTITLE": "Lìonra",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Àireamh de Mhaighstir-nòdan",
                 "BLOCKCHAINTITLE": "Slabhraidh Blocaichean",
                 "NUMBERBLOCKS": "Àireamh bhlocaichean làithreach",
-                "BESTBLOCKTTIME": "An ùine bloc mu dheireadh",
-                "ALTITUDEVERSION": "Tionndadh Àirde"
+                "BESTBLOCKTTIME": "An ùine bloc mu dheireadh"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Fàilte gu consol Metrix Core RPC. Sgrìobh cobhair airson sealladh farsaing air na h-òrdughan a tha rim faighinn.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Tagh Cànan"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Gnìomhan",
-            "COPYBLOCKHASH": "Dèan lethbhreac de Hash Bloc",
-            "COPYTXID": "Dèan lethbhreac de ID a’ ghnothaich",
-            "COPYACCOUNT": "Dèan lethbhreac de dh'ainm a' chunntais",
-            "COPYADDRESS": "Dèan lethbhreac den t-Seòladh",
-            "COPYAMOUNT": "Meud lethbhreac",
-            "COPTBLOCKINDEX": "Clàr-amais a’ bhloca lethbhreac",
-            "EXPLORER": "Fosgail ann am Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Tagh Airgead Taisbeanaidh"
         },
         "EXPLORER": {
             "TITLE": "Rannsachair Blocaichean",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Lìonra",
             "WINDOTAB": "Uinneag",
+            "BACKUPTAB": "Cùl-taic",
+            "EXPLORERTAB": "Rannsachair",
+            "DEVELOPERTAB": "Leasaiche",
             "NETWORK": {
                 "PROXY": "Ceangail tro phrogsaidh SOCKS5",
                 "PROXYIP": "IP Proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Lùghdaich nuair a dhùineas tu",
                 "BEHAVIOURTITLE": "Giùlan Treidhe an t-Siostaim & Uinneag"
             },
-            "BACKUPTAB": "Cùl-taic",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Cùl-taic fèin-ghluasadach",
                 "ENABLED": "Dèan cùl-taic fèin-ghluasadach de wallet.dat air clàr-ama",
                 "ENABLEDINFO": "Cruthaichidh e cùl-taic ùr den fhaidhle wallet agad air clàr-ama, agus mar sin bidh leth-bhreac o chionn ghoirid ri fhaighinn an-còmhnaidh ma thèid rudeigin ceàrr.",
+                "INTERVALLABEL": "Cùl-taic a dhèanamh gach (làithean)",
                 "LASTBACKUP": "Cùl-taic mu dheireadh:",
                 "NEVERBACKEDUP": "Cha deach cùl-taic fèin-ghluasadach a dhèanamh fhathast.",
                 "BACKUPNOWBUTTON": "Cùl-taic a-nis",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ath-shuidhich gu bunaiteach",
                 "PRUNETITLE": "Eachdraidh cùl-taice",
                 "PRUNEINFO": "Thèid seann lethbhric-glèidhidh fèin-ghluasadach a dhubhadh às agus mar sin cha fhàs am pasgan seo gu bràth - chan eil ach an fheadhainn as ùire gu h-ìosal air an cumail.",
-                "KEEPCOUNTLABEL": "Cùm mu dheireadh",
-                "INTERVALLABEL": "Cùl-taic a dhèanamh gach (làithean)"
+                "KEEPCOUNTLABEL": "Cùm mu dheireadh"
             },
-            "EXPLORERTAB": "Rannsachair",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Rannsachair Blocaichean",
                 "BLOCKEXPLORERINFO": "Dh’fhosgail an làrach nuair a bha malairt ga fhaicinn air an rannsachair blocaichean (m.e. briog deas air malairt > Seall air an rannsachair).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Prìomh-lìonra",
                 "TESTNET": "Deuchainn-lìon",
                 "REGTEST": "Deuchainn Clàraidh"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modh Leasaiche",
+                "DEVMODEINFO": "Dheth gu bunaiteach agus chan eil e freagarrach do luchd-leasachaidh a-mhàin. Ma chuireas tu seo an comas, nochdaidh roghainnean ann airson a’ cheangal RPC a shàrachadh - bu chòir do luchd-cleachdaidh àbhaisteach seo fhàgail dheth.",
+                "DEVMODELABEL": "Cuir Modh Leasaiche an gnìomh",
+                "WARNING": "Chan eil na roghainnean seo ach airson adhbharan leasachaidh. Faodaidh an atharrachadh casg a chuir air a’ wallet ceangal ri daemon idir - cleachd seo ach ma tha fios agad dè tha thu a’ dèanamh.",
+                "RPCHOSTTITLE": "Ceangal RPC",
+                "RPCHOSTINFO": "Gu gnàthach, bidh Altitude a’ ceangal ris an daemon a bhios e fhèin a’ riaghladh, air a’ choimpiutair seo (127.0.0.1). Le bhith a’ cur thairis air na rudan sin, leigidh sin leis ceangal ri daemon eadar-dhealaichte na àite - mar eisimpleir eisimpleir deuchainn clàraichte iomallach, gun fheum air fear a ruith gu h-ionadail. Ma shoirbhicheas leis a’ cheangal, cha luchdaich Altitude sìos no cha tòisich e an daemon ionadail aige fhèin. Feumaidh rpcallowip an daemon targaid an ceangal seo a cheadachadh, agus feumaidh rpcuser/rpcpassword gu h-ìosal a bhith a rèir a rèiteachadh. Bidh e a’ tighinn gu buil sa bhad, chan eil feum air ath-thòiseachadh.",
+                "RPCHOSTLABEL": "Aoigh RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Ainm-cleachdaiche RPC",
+                "RPCPASSWORDLABEL": "Facal-faire RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Sealladh farsaing",
-            "TRANSACTIONSTAB": "Gnìomhan",
-            "ADDRESSTABS": "Seòlaidhean"
-        },
-        "CURRENCY": {
-            "TITLE": "Tagh Airgead Taisbeanaidh"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Deas-bhòrd",
             "SEND": "Cuir",
+            "CREATECONTRACT": "Cruthaich Cùmhnant",
             "RECEIVE": "Faighinn",
             "TRANSACTIONS": "Gnìomhan",
             "STAKING": "Gealladh",
             "MASTERNODES": "Prìomh-nòdan",
+            "EXPLORER": "Rannsachair Blocaichean",
             "SYNC": {
                 "CONNECTING": "A’ ceangal",
                 "NOBLOCKS": "A’ feitheamh ri blocaichean",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Chan eil an wallet a’ gealltainn an-dràsta",
                 "MASTERNODEON": "Tha Masternode a’ ruith an-dràsta",
                 "MASTERNODEOFF": "Chan eil Masternode ag obair an-dràsta"
-            },
-            "EXPLORER": "Rannsachair Blocaichean"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Cuir a-steach seòladh làrach-lìn3",
+            "GOBUTTON": "Rach",
+            "QUICKLAUNCH": "Cur air bhog gu luath",
+            "DEVTOOLS": "Innealan Luchd-leasachaidh Fosgailte",
+            "ADDLINK": "Cuir Ceangal ris",
+            "LINKNAMEPLACEHOLDER": "Ainm",
+            "LINKURLPLACEHOLDER": "https://eisimpleir.com",
+            "SAVE": "Sàbhail",
+            "CANCEL": "Sguir dheth",
+            "REMOVE": "Thoir air falbh",
+            "REMOVECONFIRM": "A bheil thu airson an ceangal luath seo a thoirt air falbh?",
+            "LINKEXISTS": "Tha an ceangal sin mu thràth anns an liosta cur air bhog luath agad",
+            "LINKINVALID": "Cuir a-steach seòladh làraich dligheach",
+            "LINKNETWORKLABEL": "Lìonra",
+            "LOADFAILED": "Dh’fhàillig luchdachadh na làraich",
+            "SECURESITE": "Tha an ceangal tèarainte - teisteanas SSL dligheach",
+            "INSECURESITE": "Chan eil an ceangal tèarainte",
+            "INVALIDCERTSITE": "Chan eil an ceangal prìobhaideach - teisteanas SSL neo-dhligheach no neo-earbsach"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Cuir a-steach facal-faire do wallet",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Tha ùrachadh ri fhaighinn airson Metrix Core. A bheil thu airson a stàladh an-dràsta?",
             "WALLETUPDATETITLE": "Ùrachadh Àirde ri fhaighinn",
             "WALLETUPDATEINFO": "Tha ùrachadh ri fhaighinn airson Altitude. Am bu toil leat a luchdachadh a-nuas an-dràsta?",
+            "WALLETUPDATEREADYTITLE": "Ùrachadh Àirde Deiseil",
+            "WALLETUPDATEREADYINFO": "Chaidh an ùrachadh a luchdachadh a-nuas. Ath-thòisich Altitude a-nis gus a stàladh?",
+            "WALLETUPDATERESTARTBUTTON": "Ath-thòisich & Stàlaich",
+            "WALLETUPDATELATERBUTTON": "Nas fhaide air adhart",
             "CLIENTUPDATEBUTTON": "Ùrachadh",
             "CLIENTUPDATECANCELBUTTON": "Na dèan ùrachadh",
             "CLIENTUPDATESKIPBUTTON": "Leum thairis air an ùrachadh seo",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Bu chòir lethbhreacan-glèidhidh sam bith a rinn thu roimhe den fhaidhle wallet agad a chur an àite am faidhle wallet crioptaichte a chaidh a chruthachadh às ùr. Airson adhbharan tèarainteachd, bidh lethbhreacan-glèidhidh roimhe den fhaidhle wallet neo-chrioptaichte gun fheum cho luath ‘s a thòisicheas tu a’ cleachdadh an wallet ùr, crioptaichte.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Stad Metrix Core gun dùil",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bha duilgheadas ann le Metrix Core a thug air crìochnachadh. Thathar a’ moladh gun dèan thu sgrùdadh air an fhaidhle debug.log agad airson duilgheadasan.",
+            "CLIENTUNKNOWNERRORTITLE": "Mearachd Conaltraidh Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Bha duilgheadas ann a’ conaltradh ri Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air an fhaidhle debug.log agad airson duilgheadasan.",
+            "BOOTSTRAPFAILEDTITLE": "Dh’fhàillig Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Bha duilgheadas ann nuair a thòisicheas tu Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air faidhle loga Altitude airson duilgheadasan.",
+            "BOOTSTRAPOFFERTITLE": "Tha am Wallet gu math seann-fhasanta",
+            "BOOTSTRAPOFFERINFO": "Tha bootstrap ùr ri fhaighinn a dh’ fhaodas Metrix Core a thoirt suas gu sgiobalta. Dh’ fhaodadh e grunn làithean a thoirt mus tèid sioncronachadh àbhaisteach a dhèanamh, leis gu bheil feum aig do wallet air gach bloc a chaidh a chall a luchdachadh sìos agus a dhearbhadh.",
+            "BOOTSTRAPOFFERBUTTON": "Luchdaich a-nuas Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Lean air adhart le sioncronachadh àbhaisteach",
+            "BOOTSTRAPSPACEINFO": "Chan eil àite diosg saor gu leòr ann airson am bootstrap a luchdachadh sìos agus a thoirt a-mach. Riatanach: {required}, Ri fhaighinn: {free}. Saor beagan àite agus feuch ris a-rithist.",
+            "STARTUPFAILEDTITLE": "Dh’fhàillig tòiseachadh Metrix Core",
+            "STARTUPFAILEDINFO": "Bha mearachd ann nuair a thòisicheadh Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air faidhle loga na h-Àirde agad airson chùisean.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Innealan Ath-bheothachaidh",
             "CLIENTINVALIDCONFIGTITLE": "Rèiteachadh metrix.conf neo-dhligheach",
             "CLIENTINVALIDCONFIGINFO": "Tha rèiteachadh masternode neo-dhligheach aig an metrix.conf agad a bheir air Metrix Core dùnadh sa bhad. Thoir sùil air an fhaidhle seo.",
             "ADDREMOTEMNTITLE": "Cuir Masternode Iomallach ris",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Iuchair Phrìobhaideach Masternode",
             "ADDREMOTEMNTXHASH": "Hash Trx Masternode",
             "ADDREMOTEMNTXINDEX": "Clàr-amais Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Dh’fhàillig Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Bha duilgheadas ann nuair a thòisicheas tu Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air faidhle loga Altitude airson duilgheadasan.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Innealan Ath-bheothachaidh",
-            "STARTUPFAILEDTITLE": "Dh’fhàillig tòiseachadh Metrix Core",
-            "STARTUPFAILEDINFO": "Bha mearachd ann nuair a thòisicheadh Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air faidhle loga na h-Àirde agad airson chùisean.",
-            "CLIENTUNKNOWNERRORTITLE": "Mearachd Conaltraidh Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Bha duilgheadas ann a’ conaltradh ri Metrix Core. Thathar a’ moladh gun dèan thu sgrùdadh air an fhaidhle debug.log agad airson duilgheadasan.",
             "UNENROLLGOVERNORTITLE": "Dearbhaich dì-chlàradh an Riaghladair",
             "UNENROLLGOVERNORCONTENT": "A bheil thu cinnteach gu bheil thu airson do Riaghladair a dhì-chlàradh? Cha bhith e comasach dhut bhòtadh air riaghladh slabhraidh tuilleadh.",
-            "WALLETUPDATEREADYTITLE": "Ùrachadh Àirde Deiseil",
-            "WALLETUPDATEREADYINFO": "Chaidh an ùrachadh a luchdachadh a-nuas. Ath-thòisich Altitude a-nis gus a stàladh?",
-            "WALLETUPDATERESTARTBUTTON": "Ath-thòisich & Stàlaich",
-            "WALLETUPDATELATERBUTTON": "Nas fhaide air adhart",
             "DAPPCONNECTTITLE": "Ceangail ris an Làrach",
             "DAPPCONNECTINFO": "Tha an làrach seo airson ceangal ris a’ wallet agad agus an seòladh agus an cothromachadh agad fhaicinn.",
             "DAPPCONNECTBUTTON": "Ceangail",
+            "DAPPCONNECTADDRESSLABEL": "Seòladh",
+            "DAPPAPPROVEBUTTON": "Ceadaich",
             "DAPPREJECTBUTTON": "Diùltadh",
             "DAPPSENDTITLE": "Iarrtas airson Gnìomh Cùmhnant",
             "DAPPSENDINFO": "Tha an làrach seo ag iarraidh malairt cùmhnantail a chur bhon wallet agad.",
-            "DAPPSIGNTITLE": "Iarrtas airson Teachdaireachd a shoidhnigeadh",
-            "DAPPSIGNINFO": "Tha an làrach seo ag iarraidh teachdaireachd a shoidhnigeadh leis an t-seòladh wallet agad.",
-            "DAPPNOTREADY": "Chan urrainn dhomh ceangal ris an làrach fhathast - tha Metrix Core fhathast a’ tòiseachadh.",
-            "DAPPNOWALLET": "Chan urrainn dhomh ceangal ris an làrach - chan eil seòladh wallet ri fhaighinn.",
-            "DAPPAPPROVEBUTTON": "Ceadaich",
-            "DAPPCONNECTADDRESSLABEL": "Seòladh",
             "DAPPSENDSITELABEL": "Làrach",
             "DAPPSENDCONTRACTLABEL": "Seòladh a’ Chùmhnant",
             "DAPPSENDAMOUNTLABEL": "Suim",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Cìs Lìonra as àirde",
             "DAPPSENDMAXTOTALLABEL": "Iomlan as motha",
             "DAPPSENDDATALABEL": "Dàta Cùmhnant",
+            "DAPPSIGNTITLE": "Iarrtas airson Teachdaireachd a shoidhnigeadh",
+            "DAPPSIGNINFO": "Tha an làrach seo ag iarraidh teachdaireachd a shoidhnigeadh leis an t-seòladh wallet agad.",
             "DAPPSIGNMESSAGELABEL": "Teachdaireachd",
-            "BOOTSTRAPOFFERTITLE": "Tha am Wallet gu math seann-fhasanta",
-            "BOOTSTRAPOFFERINFO": "Tha bootstrap ùr ri fhaighinn a dh’ fhaodas Metrix Core a thoirt suas gu sgiobalta. Dh’ fhaodadh e grunn làithean a thoirt mus tèid sioncronachadh àbhaisteach a dhèanamh, leis gu bheil feum aig do wallet air gach bloc a chaidh a chall a luchdachadh sìos agus a dhearbhadh.",
-            "BOOTSTRAPOFFERBUTTON": "Luchdaich a-nuas Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Lean air adhart le sioncronachadh àbhaisteach",
-            "BOOTSTRAPSPACEINFO": "Chan eil àite diosg saor gu leòr ann airson am bootstrap a luchdachadh sìos agus a thoirt a-mach. Riatanach: {required}, Ri fhaighinn: {free}. Saor beagan àite agus feuch ris a-rithist."
+            "DAPPNOTREADY": "Chan urrainn dhomh ceangal ris an làrach fhathast - tha Metrix Core fhathast a’ tòiseachadh.",
+            "DAPPNOWALLET": "Chan urrainn dhomh ceangal ris an làrach - chan eil seòladh wallet ri fhaighinn."
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar Seòlaidhean",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Lìonra làithreach"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Cuir a-steach seòladh làrach-lìn3",
-            "GOBUTTON": "Rach",
-            "QUICKLAUNCH": "Cur air bhog gu luath",
-            "DEVTOOLS": "Innealan Luchd-leasachaidh Fosgailte",
-            "ADDLINK": "Cuir Ceangal ris",
-            "LINKNAMEPLACEHOLDER": "Ainm",
-            "LINKURLPLACEHOLDER": "https://eisimpleir.com",
-            "SAVE": "Sàbhail",
-            "CANCEL": "Sguir dheth",
-            "REMOVE": "Thoir air falbh",
-            "REMOVECONFIRM": "A bheil thu airson an ceangal luath seo a thoirt air falbh?",
-            "LINKEXISTS": "Tha an ceangal sin mu thràth anns an liosta cur air bhog luath agad",
-            "LINKINVALID": "Cuir a-steach seòladh làraich dligheach",
-            "LINKNETWORKLABEL": "Lìonra",
-            "LOADFAILED": "Dh’fhàillig luchdachadh na làraich",
-            "SECURESITE": "Tha an ceangal tèarainte - teisteanas SSL dligheach",
-            "INSECURESITE": "Chan eil an ceangal tèarainte",
-            "INVALIDCERTSITE": "Chan eil an ceangal prìobhaideach - teisteanas SSL neo-dhligheach no neo-earbsach"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Spòrs cùl-taice...",
             "SIGNMESSAGE": "Cuir d’ ainm ris a’ teachdaireachd…",
             "VERIFYMESSAGE": "Dearbhaich Teachdaireachd...",
-            "LOCALE": "Cànan...",
-            "RESTARTCORE": "Ath-thòisich Metrix Core",
-            "EXIT": "A-mach",
             "OPTIONS": "Roghainnean...",
+            "LOCALE": "Cànan...",
             "CURRENCIES": "Taisbean Airgead...",
-            "ALTITUDEREFRESH": "Ùraich Dàta Àirde"
+            "RESTARTCORE": "Ath-thòisich Metrix Core",
+            "ALTITUDEREFRESH": "Ùraich Dàta Àirde",
+            "EXIT": "A-mach"
         },
         "ENCRYPT": {
             "TITLE": "Crioptaich",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Cothromachadh Iomlan",
+        "SPENDABLEBALANCE": "Cothromachadh a ghabhas a chosg",
+        "PENDINGBALANCE": "Cothromachadh ri feitheamh",
         "CANCELBUTTON": "Sguir dheth",
         "DONEBUTTON": "Deiseil",
         "OKBUTTON": "Ceart gu leòr",
+        "ACCEPTBUTTON": "Gabh ris",
         "CLEARALLBUTTON": "Glan a h-uile càil",
         "ENTERACCOUNTLABEL": "Cuir a-steach leubail airson an t-seòlaidh seo",
         "ENTERADDRESSLABEL": "Cuir a-steach seòladh Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Seòrsachadh a rèir",
         "SEARCH": "Lorg",
         "FEE": "Cìs",
-        "ACCEPTBUTTON": "Gabh ris",
         "CONFIRMED": "Dearbhaichte",
         "UNCONFIRMED": "Gun dearbhadh",
-        "PENDINGBALANCE": "Cothromachadh ri feitheamh",
-        "SPENDABLEBALANCE": "Cothromachadh a ghabhas a chosg",
         "SAVEBUTTON": "Sàbhail"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ath-thòiseachadh Metrix Core...",
         "BOOTSTRAPPING": "A’ luchdachadh a-nuas bootstrap…",
         "BOOTSTRAPEXTRACTING": "A’ toirt a-mach bootstrap…",
-        "TIMEREMAINING": "air fhàgail:"
+        "TIMEREMAINING": "air fhàgail:",
+        "DEVRPCOVERRIDEACTIVE": "Tha ceangal RPC leasaiche air a shuidheachadh (Roghainnean > Leasaiche) agus chan eil e a’ freagairt. Glan e gus ath-cheangal ris an daemon ionadail mar as àbhaist.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Glan Sgaradh RPC & Ath-cheangail"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cunntas ùr air a chruthachadh gu soirbheachail",
         "ADDRESSCOPIEDCLIPBOARD": "Seòladh air a chopaigeadh chun bhòrd-sgriobhaidh",
+        "COPIEDCLIPBOARD": "Air a chopaigeadh chun bhòrd-sgriobhaidh",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Gnìomhan air an lethbhreacadh chun bhòrd-sgriobhaidh",
         "EMPTYFIELDS": "Lìon a h-uile raon",
         "NOUPDATE": "Chan eil ùrachadh ri fhaighinn",
         "WALLETBACKEDUP": "Cùl-taic wallet soirbheachail",
+        "WALLETBACKUPFAILED": "Dh’fhàillig cùl-taic fèin-ghluasadach a’ wallet - thoir sùil air àite an cùl-taic agad agus an àite diosc a tha ri fhaighinn",
         "PASSPHRASEMISMATCH": "Chan eil na faclan-faire a chuir thu a-steach a’ freagairt",
         "CHECKINGUPDATE": "A’ sgrùdadh airson ùrachaidh…",
         "CHECKINGUPDATEFAILED": "Chan urrainnear sgrùdadh a dhèanamh airson ùrachaidhean. Thoir sùil air an lìonra agad.",
+        "WALLETUPDATEDOWNLOADING": "A’ luchdachadh a-nuas an ùrachaidh...",
         "SENDINGEXCEEDSBALANCE": "Tha an t-suim a tha thu a’ cur thairis air an cothromachadh a thagh thu",
         "MISSINGCHANGEADDRESS": "Feumaidh tu seòladh atharrachaidh a shònrachadh",
         "MISSINGDESTINATIONADDRESS": "Feumaidh tu seòladh ceann-uidhe a shònrachadh",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "A’ crioptachadh sporan...",
         "CHANGINGPASSPHARASE": "Ag atharrachadh facal-faire...",
         "STARTINGMASTERNODE": "A’ tòiseachadh masternode…",
+        "STOPPINGMASTERNODE": "A’ cur stad air masternode…",
         "SENDINGTRANSACTION": "A’ cur malairt…",
         "SIGNINGMESSAGE": "A’ soidhnigeadh teachdaireachd...",
         "SIGNEDMESSAGE": "Teachdaireachd air a shoidhnigeadh",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "A’ fosgladh sporan...",
         "TRANSACTIONMISMATCH": "Mearachd malairt. Feuch ris a-rithist.",
         "MINIMUMCONFIRMATIONS": "Feumaidh a h-uile cuir-a-steach co-dhiù aon dearbhadh mus tèid a chosg.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Gnìomhan air an lethbhreacadh chun bhòrd-sgriobhaidh",
-        "STOPPINGMASTERNODE": "A’ cur stad air masternode…",
         "FAILEDTOWRITECONFIG": "Bha duilgheadas ann a’ sgrìobhadh chun fhaidhle metrix.conf agad. Dèan cinnteach gu bheil am faidhle ann agus gu bheil cead sgrìobhaidh aig Altitude.",
         "NOPUBLICUP": "Cha deach seòladh IP poblach a lorg. Thoir sùil air a’ cheangal eadar-lìn agad agus ath-thòisich Altitude.",
         "CONFIGURINGLOCALMN": "A’ rèiteachadh Masternode ionadail…",
         "REPORTINGISSUE": "A’ faighinn fiosrachadh breithneachaidh... Thèid an fhiosrachadh seo a chopaigeadh chun bhòrd-sgriobhaidh agad.",
-        "WALLETUPDATEDOWNLOADING": "A’ luchdachadh a-nuas an ùrachaidh...",
-        "WALLETBACKUPFAILED": "Dh’fhàillig cùl-taic fèin-ghluasadach a’ wallet - thoir sùil air àite an cùl-taic agad agus an àite diosc a tha ri fhaighinn",
         "EXPLORERURLSAVED": "URL an Rannsachair air a shàbhaladh",
         "EXPLORERURLRESET": "Chaidh URL an Rannsachair a thilleadh chun an t-suidheachadh àbhaisteach",
         "EXPLORERURLINVALID": "Chan e URL http(ean) dligheach a tha sin",
-        "EXPLORERURLUNREACHABLE": "Cha b’ urrainn dhuinn an URL sin a ruighinn - thoir sùil air agus feuch ris a-rithist"
+        "EXPLORERURLUNREACHABLE": "Cha b’ urrainn dhuinn an URL sin a ruighinn - thoir sùil air agus feuch ris a-rithist",
+        "DEVRPCHOSTSAVED": "Aoigh RPC air a shàbhaladh",
+        "DEVRPCHOSTRESET": "Chaidh an aoigh RPC a thilleadh chun an àbhaist (127.0.0.1)."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Buinn a fhuaireadh",
+        "NEWTRANSACTION_TITLE_STAKE": "Geall a fhuaireadh",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Fhuair mi Duais Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Beagan dhiog",
@@ -533,11 +587,6 @@
         "MONTHS": "mìosan",
         "AYEAR": "Bliadhna",
         "YEARS": "bliadhnaichean"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Buinn a fhuaireadh",
-        "NEWTRANSACTION_TITLE_STAKE": "Geall a fhuaireadh",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Fhuair mi Duais Masternode"
     },
     "MONTH": {
         "JAN": "Faoilleach",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Tha Riaghladairean an urra ri bhòtadh air buidseatan mìosail agus atharrachaidhean blockchain. Faodaidh tu a bhith nad Riaghladair le bhith a’ glasadh an tèarainteachd cheart sa chùmhnant Riaghlaidh.",
                 "COLLATERAL": "Co-thaobhadh riatanach",
                 "ENROLL": "Clàraich",
+                "SELECTAGOVERNOR": "Tagh seòladh riaghladair iomchaidh",
+                "GOVERNORNOTSELECTED": "Cha deach seòladh iomchaidh a thaghadh",
                 "CONFIRMENROLL": "Tha thu gu bhith a’ clàradh mar Riaghladair. Cuiridh seo malairt leis an tèarainteachd riatanach chun chùmhnant riaghlaidh. Faodaidh tu dì-chlàradh aig àm sam bith.",
                 "ISGOVERNORTITLE": "Tha thu nad Riaghladair gnìomhach!",
                 "ISGOVERNORDETAIL1": "Tha uallach air riaghladairean bhòtadh air buidseatan mìosail agus atharrachaidhean blockchain.",
                 "ISGOVERNORDETAIL2": "Gus fuireach nad Riaghladair feumaidh tu pàirt a ghabhail ann an co-dhiù aon bhòt gach 30 latha.",
                 "ISGOVERNORDETAIL3": "Mura h-eil dad ann airson bhòtadh air, faodaidh tu leantainn air adhart le do chlàradh le bhith a’ cur ping gnìomhach.",
+                "MYGOVERNORADDRESS": "Seòladh mo Riaghladair",
                 "UNENROLL": "Dì-chlàraich",
                 "PING": "Cuir Ping Gnìomhach",
                 "LASTPINGTITLE": "Ping mu dheireadh",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "làithean",
                 "GOVERNORVOTEMATURITYHOURS": "uairean",
                 "GOVERNORVOTEMATURITYSUFFIX": "gus am bi iad aibidh",
-                "MYGOVERNORADDRESS": "Seòladh mo Riaghladair",
-                "SELECTAGOVERNOR": "Tagh seòladh riaghladair iomchaidh",
-                "GOVERNORNOTSELECTED": "Cha deach seòladh iomchaidh a thaghadh",
                 "NOTFULLYSYNCEDTITLE": "Chan eil inbhe riaghladair ri fhaighinn",
                 "NOTFULLYSYNCEDDETAIL": "Bidh inbhe clàraidh an Riaghladair agad ri fhaicinn nuair a bhios do blockchain làn sioncronaichte.",
                 "DGPMIGRATIONTITLE": "Imrich DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Chaidh do mholadh a chruthachadh gu soirbheachail",
             "ENROLLINGGOVERNOR": "A’ clàradh mar Riaghladair…",
             "ENROLLEDGOVERNOR": "Bidh do chlàradh deiseil aon uair ‘s gu bheil do ghnothach air a dhearbhadh",
-            "VOTINGONPROPOSAL": "A’ cur bhòt molaidh",
-            "VOTEDONPROPOSAL": "Thèid do bhòt a chunntadh aon uair ‘s gu bheil an gnothach air a dhearbhadh.",
             "PINGINGGOVERNOR": "A’ cur ping…",
             "PINGEDGOVERNOR": "Chaidh am Ping a chur gu soirbheachail. Thèid ùrachadh a thoirt don Riaghladair agad aon uair ‘s gu bheil an gnothach air a dhearbhadh.",
+            "VOTINGONPROPOSAL": "A’ cur bhòt molaidh",
+            "VOTEDONPROPOSAL": "Thèid do bhòt a chunntadh aon uair ‘s gu bheil an gnothach air a dhearbhadh.",
             "UNENROLLINGGOVERNOR": "A’ dì-chlàradh an Riaghladair...",
             "UNENROLLEDGOVERNOR": "Gnìomh air a chur. Thèid do Riaghladair a dhì-chlàradh aon uair ‘s gu bheil an gnothach air a dhearbhadh.",
             "GOVERNORNOTMATURE": "Chan eil an Riaghladair agad aibidh gu leòr airson an gnìomh seo a dhèanamh fhathast"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Ceannaich Metrix",
+                "SEARCH": "Eachdraidh"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Cuiridh tu",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Eachdraidh nan Gnìomhan",
                 "SEARCHBUTTON": "LORG",
+                "SEARCHPLACEHOLDER": "Cuir a-steach seòladh MRX no BTC",
                 "TRANSACTIONDATE": "Ceann-latha",
                 "TRANSACTIONTYPE": "Seòrsa TX",
                 "TRANSACTIONAMOUNT": "Suim",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Dearbhaichte",
                 "TRANSACTIONNOTCONFIRMED": "Gun dearbhadh",
                 "TRANSACTIONREFUNDED": "Air a phàigheadh air ais - Fo ìre as ìsle",
-                "AVGSWAPPRICE": "Prìs Iomlaid Chuibheasach",
-                "SEARCHPLACEHOLDER": "Cuir a-steach seòladh MRX no BTC"
+                "AVGSWAPPRICE": "Prìs Iomlaid Chuibheasach"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "A’ gineadh seòladh iomlaid…",
             "ALREADYHAVEADDRESS": "Tha seòladh BTC agad mu thràth co-cheangailte ris an t-seòladh Metrix seo",
             "NOADDRESS": "Cha do chuir thu a-steach seòladh Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Ceannaich Metrix",
-                "SEARCH": "Eachdraidh"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Nochdaich",
                 "EMPTYTITLE": "Cha deach comharran a lorg fhathast",
                 "EMPTYDETAIL": "Bidh Altitude gu fèin-ghluasadach a’ sgrùdadh rannsachair blocaichean airson comharran MRC20 agus MRC721 a chaidh a chur chun na seòlaidhean agad, agus an uairsin a’ dearbhadh a h-uile càil beò an aghaidh an nód agad fhèin. Faodaidh tu cuideachd comharra a chur ris le làimh ma tha fios agad air an t-seòladh cùmhnantail aige.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tha sgrùdadh fèin-ghluasadach chomharran dheth, agus mar sin chan eilear a’ sgrùdadh nan seòlaidhean agad airson chomharran. Cuir air ais e gu h-àrd, no cuir comharra ris le làimh ma tha fios agad air an t-seòladh cùmhnantail aige.",
                 "HIDDENTITLE": "Comharran falaichte",
                 "CONTEXTMENUHIDE": "Falaich Comharra",
                 "ITEMSSUFFIX": "nì(tean)",
-                "NONENUMERABLETOOLTIP": "Chan eil an cruinneachadh seo a’ toirt taic do liostadh nithean fa leth - a’ sealltainn cia mheud a tha agad na àite."
+                "NONENUMERABLETOOLTIP": "Chan eil an cruinneachadh seo a’ toirt taic do liostadh nithean fa leth - a’ sealltainn cia mheud a tha agad na àite.",
+                "CHECKINGENABLED": "A’ sgrùdadh",
+                "CHECKINGDISABLED": "A’ sgrùdadh dheth",
+                "CHECKINGENABLEDTOOLTIP": "Tha sgrùdadh chomharran air - Bidh Altitude a’ sgrùdadh do sheòlaidhean bho àm gu àm airson chomharran agus ag ùrachadh cothromachadh. Cliog gus a chuir dheth.",
+                "CHECKINGDISABLEDTOOLTIP": "Tha sgrùdadh chomharran dheth - cliog gus a thionndadh air a-rithist.",
+                "CHECKINGDISABLEDNOTICE": "Tha sgrùdadh fèin-ghluasadach chomharran dheth. Chan eil na seòlaidhean agad gan sganadh airson chomharran agus cha tèid cothromachadh ùrachadh. Faodaidh tu comharra a chur ris le làimh fhathast."
             },
             "ADDTOKEN": {
                 "TITLE": "Cuir Comharra ris",

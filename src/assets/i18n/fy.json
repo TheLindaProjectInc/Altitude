@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Akkoant oanmeitsje",
             "HIDEEMPTYACCOUNTS": "Ferbergje ûnbeneamde lege akkounts"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Oersicht",
+            "TRANSACTIONSTAB": "Transaksjes",
+            "ADDRESSTABS": "Adressen"
+        },
         "SEND": {
             "ADDRECIPIENT": "Untfanger tafoegje",
             "SEND": "Stjoere",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datum",
             "TABLECOLUMNS_CONFIRMS": "Befêstigingen",
             "ALL_SELECTUNSELECT": "Alles yn-/útskeakelje",
+            "TREEMODE": "Beammodus",
+            "LISTMODE": "Listmodus",
             "SENDAVAILABLE": "Brûk beskikber saldo",
             "INPUTLOCKED": "Ynfier is beskoattele. Jo moatte dizze ynfier ûntskoattelje om it te besteegjen.",
             "CONTEXTMENULOCKINPUT": "Ynfier beskoattelje",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Nei fergoeding",
             "QUANTITY": "Kwantiteit",
             "BYTES": "Bytes",
-            "TREEMODE": "Beammodus",
-            "LISTMODE": "Listmodus",
             "ALERTFEECHANGETITLE": "Feroaring fan fergoeding",
             "ALERTFEECHANGECONTENT": "De werklike transaksjekosten binne heger as ferwachte. Befêstigje asjebleaft de nije kosten:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Kontrakt oanmeitsje",
+            "INFO": "Implementearje in smart kontrakt op it netwurk troch de kompilearre bytecode yn te stjoeren. Dit is in kearnfunksje fan 'e keten - kontrolearje jo bytecode- en gasynstellingen dûbel foardat jo it ynsette, de ynset kin net ûngedien makke wurde.",
+            "FROM": "Fan",
+            "BYTECODE": "Bytekoade",
+            "BYTECODEPLACEHOLDER": "Plak de kompilearre kontrakt bytecode (hex)",
+            "INVALIDBYTECODE": "Bytekoade moat in jildige heksadesimale string wêze (0-9, a-f) mei in even oantal tekens",
+            "GASLIMIT": "Gaslimyt",
+            "GASLIMITRANGE": "Berik",
+            "GASPRICE": "Gaspriis (MRX per gas-ienheid)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Rûsde maksimale kosten",
+            "DEPLOYBUTTON": "Kontrakt ynsette",
+            "INCOMPLETEFORM": "Selektearje in stjoerderadres, fier in jildige bytekoade yn en stel in jildige gaslimyt/priis yn",
+            "HIGHGASPRICETITLE": "Hege gaspriis",
+            "HIGHGASPRICEINFO": "De gaspriis dy't jo ynsteld hawwe is ûngewoan heech. Dizze ynset kin oant it folgjende kostje:",
+            "DEPLOYING": "Kontrakt ynsette...",
+            "DEPLOYED": "Kontraktynset yntsjinne",
+            "RESULTTITLE": "Ynsetresultaat",
+            "STATUS": "Status",
+            "STATUSPENDING": "Wachtsjend op befêstiging...",
+            "STATUSCONFIRMED": "Mei súkses ynset",
+            "STATUSFAILED": "Ynset mislearre",
+            "TXID": "Transaksje-ID",
+            "SENDER": "Ofstjoerder",
+            "CONTRACTADDRESS": "Kontraktadres",
+            "GASUSED": "Gas brûkt",
+            "DONEBUTTON": "Klear",
+            "DEPLOYANOTHERBUTTON": "In oare ynsette"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaksjes",
+            "COPYBLOCKHASH": "Blokhash kopiearje",
+            "COPYTXID": "Transaksje-ID kopiearje",
+            "COPYACCOUNT": "Akkountnamme kopiearje",
+            "COPYADDRESS": "Adres kopiearje",
+            "COPYAMOUNT": "Kopiearje bedrach",
+            "COPTBLOCKINDEX": "Blokyndeks kopiearje",
+            "EXPLORER": "Iepenje yn Blokferkenner"
         },
         "STAKING": {
             "UNLOCK": "Untskoattelje foar staking",
@@ -68,13 +113,13 @@
             "IP": "IP-adres",
             "ADDRESS": "Adres",
             "ENABLED": "Ynskeakele",
-            "STARTBUTTON": "Begjin lokaal",
-            "STARTALIASBUTTON": "Begjin Alias",
-            "STARTALLBUTTON": "Begjin alles",
             "NOMASTERNODES": "Jo hawwe gjin masternodes",
             "NOMNOUTPUTS": "Gjin Masternode-útfier fûn. Om in lokale Masternode út te fieren, stjoer presys 2, 5, 25, 50 of 100 miljoen munten nei jo Masternode-adres en wachtsje op 15 befêstigingen.",
+            "STARTBUTTON": "Begjin lokaal",
             "STOPBUTTON": "Stopje lokaal",
+            "STARTALIASBUTTON": "Begjin Alias",
             "STOPALIASBUTTON": "Stopje Alias",
+            "STARTALLBUTTON": "Begjin alles",
             "ADDREMOTE": "Foegje in eksterne masternode ta",
             "REMOVEMN": "Masternode fuortsmite",
             "ADDLOCAL": "Ynstelle lokale masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Algemien",
                 "COREVERSION": "Kearnferzje",
+                "ALTITUDEVERSION": "Hichteferzje",
                 "PROTOCOLVERSION": "Protokolferzje",
                 "WALLETVERSION": "Wallet.dat Ferzje",
                 "NETWORKTITLE": "Netwurk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Oantal masterknooppunten",
                 "BLOCKCHAINTITLE": "Blokkeatling",
                 "NUMBERBLOCKS": "Hjoeddeistich oantal blokken",
-                "BESTBLOCKTTIME": "Lêste bloktiid",
-                "ALTITUDEVERSION": "Hichteferzje"
+                "BESTBLOCKTTIME": "Lêste bloktiid"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Wolkom by de Metrix Core RPC-konsole. Typ help foar in oersjoch fan beskikbere kommando's.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Selektearje taal"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaksjes",
-            "COPYBLOCKHASH": "Blokhash kopiearje",
-            "COPYTXID": "Transaksje-ID kopiearje",
-            "COPYACCOUNT": "Akkountnamme kopiearje",
-            "COPYADDRESS": "Adres kopiearje",
-            "COPYAMOUNT": "Kopiearje bedrach",
-            "COPTBLOCKINDEX": "Blokyndeks kopiearje",
-            "EXPLORER": "Iepenje yn Blokferkenner"
+        "CURRENCY": {
+            "TITLE": "Selektearje werjaanfaluta"
         },
         "EXPLORER": {
             "TITLE": "Blokûntdekker",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netwurk",
             "WINDOTAB": "Finster",
+            "BACKUPTAB": "Reservekopy",
+            "EXPLORERTAB": "Ûntdekkingsreizger",
+            "DEVELOPERTAB": "Untwikkelder",
             "NETWORK": {
                 "PROXY": "Ferbine fia SOCKS5 proxy",
                 "PROXYIP": "Proxy-IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimalisearje by sluten",
                 "BEHAVIOURTITLE": "Systeemfak en finstergedrach"
             },
-            "BACKUPTAB": "Reservekopy",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatyske reservekopy",
                 "ENABLED": "Meitsje automatysk in reservekopy fan wallet.dat neffens in skema",
                 "ENABLEDINFO": "Maakt in nije reservekopy fan jo wallet-bestân op in skema, sadat in resinte kopy altyd beskikber is as der wat mis giet.",
+                "INTERVALLABEL": "Meitsje in reservekopy elke (dagen)",
                 "LASTBACKUP": "Lêste reservekopy:",
                 "NEVERBACKEDUP": "Der is noch gjin automatyske reservekopy makke.",
                 "BACKUPNOWBUTTON": "Meitsje no in reservekopy",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Weromsette nei standert",
                 "PRUNETITLE": "Reservekopyhistoarje",
                 "PRUNEINFO": "Aldere automatyske reservekopyen wurde wiske, sadat dizze map net foar altyd groeit - allinich de meast resinte hjirûnder wurde bewarre.",
-                "KEEPCOUNTLABEL": "Hâld lêst",
-                "INTERVALLABEL": "Meitsje in reservekopy elke (dagen)"
+                "KEEPCOUNTLABEL": "Hâld lêst"
             },
-            "EXPLORERTAB": "Ûntdekkingsreizger",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokûntdekker",
                 "BLOCKEXPLORERINFO": "De side iepene by it besjen fan in transaksje op 'e blokferkenner (bygelyks rjochtsklikke op in transaksje > Besjoch op ferkenner).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Registraasjetest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Untwikkeldermodus",
+                "DEVMODEINFO": "Standert útskeakele en allinich bedoeld foar ûntwikkelders. As jo dit ynskeakelje, wurde opsjes ûntbleate om de RPC-ferbining te oerskriuwen - standertbrûkers moatte dit útskeakelje.",
+                "DEVMODELABEL": "Untwikkeldersmodus ynskeakelje",
+                "WARNING": "Dizze ynstellings binne allinich foar ûntwikkelingsdoelen. Se feroarje kin foarkomme dat de wallet hielendal ferbining makket mei in daemon - brûk dit allinich as jo witte wat jo dogge.",
+                "RPCHOSTTITLE": "RPC-ferbining",
+                "RPCHOSTINFO": "Standert ferbynt Altitude mei de daemon dy't it sels beheart, op dizze masine (127.0.0.1). As jo dizze oerskriuwe, kin it ferbine mei in oare daemon - bygelyks in eksterne regtest-eksimplaar, sûnder dat der lokaal ien útfierd hoecht te wurden. As de ferbining slagget, sil Altitude syn eigen lokale daemon net downloade of starte. De rpcallowip fan 'e doeldaemon moat dizze ferbining tastean, en rpcuser/rpcpassword hjirûnder moat oerienkomme mei syn konfiguraasje. Dit wurdt direkt fan krêft, gjin opnij starte nedich.",
+                "RPCHOSTLABEL": "RPC-host",
+                "RPCPORTLABEL": "RPC-poarte",
+                "RPCUSERLABEL": "RPC-brûkersnamme",
+                "RPCPASSWORDLABEL": "RPC-wachtwurd"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Oersicht",
-            "TRANSACTIONSTAB": "Transaksjes",
-            "ADDRESSTABS": "Adressen"
-        },
-        "CURRENCY": {
-            "TITLE": "Selektearje werjaanfaluta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Stjoere",
+            "CREATECONTRACT": "Kontrakt oanmeitsje",
             "RECEIVE": "Ûntfange",
             "TRANSACTIONS": "Transaksjes",
             "STAKING": "Staking",
             "MASTERNODES": "Masterknodes",
+            "EXPLORER": "Blokûntdekker",
             "SYNC": {
                 "CONNECTING": "Ferbine",
                 "NOBLOCKS": "Wachtsje op blokken",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Wallet is op it stuit net oan it staken",
                 "MASTERNODEON": "Masternode rint op it stuit",
                 "MASTERNODEOFF": "Masternode rint op it stuit net"
-            },
-            "EXPLORER": "Blokûntdekker"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Fier in web3-sideadres yn",
+            "GOBUTTON": "Gean",
+            "QUICKLAUNCH": "Fluch starte",
+            "DEVTOOLS": "Iepen Untwikkeldersark",
+            "ADDLINK": "Keppeling tafoegje",
+            "LINKNAMEPLACEHOLDER": "Namme",
+            "LINKURLPLACEHOLDER": "https://foarbyld.com",
+            "SAVE": "Rêde",
+            "CANCEL": "Annulearje",
+            "REMOVE": "Ferwiderje",
+            "REMOVECONFIRM": "Dizze snelle keppeling fuortsmite?",
+            "LINKEXISTS": "Dy keppeling stiet al yn jo list mei flugge starts",
+            "LINKINVALID": "Fier in jildich side-adres yn",
+            "LINKNETWORKLABEL": "Netwurk",
+            "LOADFAILED": "Koe side net laden",
+            "SECURESITE": "Ferbining is feilich - jildich SSL-sertifikaat",
+            "INSECURESITE": "Ferbining is net feilich",
+            "INVALIDCERTSITE": "Ferbining is net privee - ûnjildich of net fertroud SSL-sertifikaat"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Fier jo Wallet-wachtwurd yn",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Der is in update beskikber foar Metrix Core. Wolle jo it no ynstallearje?",
             "WALLETUPDATETITLE": "Hichte-update beskikber",
             "WALLETUPDATEINFO": "In update is beskikber foar Altitude. Wolle jo it no downloade?",
+            "WALLETUPDATEREADYTITLE": "Hichte-update klear",
+            "WALLETUPDATEREADYINFO": "De update is ynladen. Start Altitude no opnij om it te ynstallearjen?",
+            "WALLETUPDATERESTARTBUTTON": "Op 'e nij starte en ynstallearje",
+            "WALLETUPDATELATERBUTTON": "Letter",
             "CLIENTUPDATEBUTTON": "Bywurkje",
             "CLIENTUPDATECANCELBUTTON": "Net bywurkje",
             "CLIENTUPDATESKIPBUTTON": "Dizze update oerslaan",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Alle eardere reservekopyen dy't jo makke hawwe fan jo wallet-bestân moatte ferfongen wurde troch it nij generearre, fersifere wallet-bestân. Om feiligensredenen sille eardere reservekopyen fan it net-fersifere wallet-bestân nutteloos wurde sa gau as jo de nije, fersifere wallet begjinne te brûken.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppe ûnferwachts",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Der wie in probleem mei Metrix Core dat derfoar soarge hat dat it beëinige is. It is oan te rieden om jo debug.log-bestân te kontrolearjen op problemen.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Kommunikaasjefout",
+            "CLIENTUNKNOWNERRORINFO": "Der wie in probleem mei de kommunikaasje mei Metrix Core. It is oan te rieden om jo debug.log-bestân te kontrolearjen op problemen.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislearre",
+            "BOOTSTRAPFAILEDINFO": "Der wie in probleem mei it opstarten fan Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
+            "BOOTSTRAPOFFERTITLE": "Portemonnee flink ferâldere",
+            "BOOTSTRAPOFFERINFO": "In resinte bootstrap is beskikber dy't Metrix Core fluch by de tiid bringe kin. Trochgean mei in normale syngronisaasje kin ferskate dagen duorje, om't jo wallet elk blok dat it mist hat downloade en ferifiearje moat.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap downloade",
+            "BOOTSTRAPOFFERCANCEL": "Trochgean mei normale syngronisaasje",
+            "BOOTSTRAPSPACEINFO": "Net genôch frije skiifromte om de bootstrap te downloaden en út te pakken. Ferplicht: {required}, Beskikber: {free}. Meitsje wat romte frij en besykje it opnij.",
+            "STARTUPFAILEDTITLE": "Metrix Core opstarten mislearre",
+            "STARTUPFAILEDINFO": "Der wie in flater by it starten fan Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Herstelark",
             "CLIENTINVALIDCONFIGTITLE": "Unjildige metrix.conf-konfiguraasje",
             "CLIENTINVALIDCONFIGINFO": "Dyn metrix.conf hat in ûnjildige masternode-ynstelling, wêrtroch't Metrix Core fuortendaliks ôfsluten wurdt. Kontrolearje dit bestân asjebleaft.",
             "ADDREMOTEMNTITLE": "Foegje in eksterne masternode ta",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode Privee Kaai",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Yndeks",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislearre",
-            "BOOTSTRAPFAILEDINFO": "Der wie in probleem mei it opstarten fan Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Herstelark",
-            "STARTUPFAILEDTITLE": "Metrix Core opstarten mislearre",
-            "STARTUPFAILEDINFO": "Der wie in flater by it starten fan Metrix Core. It is oan te rieden om jo Altitude-logbestân te kontrolearjen op problemen.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Kommunikaasjefout",
-            "CLIENTUNKNOWNERRORINFO": "Der wie in probleem mei de kommunikaasje mei Metrix Core. It is oan te rieden om jo debug.log-bestân te kontrolearjen op problemen.",
             "UNENROLLGOVERNORTITLE": "Befêstigje útskriuwing fan gûverneur",
             "UNENROLLGOVERNORCONTENT": "Binne jo wis dat jo jo gûverneur ôfmelde wolle? Jo sille net mear kinne stimme oer ketenbestjoer.",
-            "WALLETUPDATEREADYTITLE": "Hichte-update klear",
-            "WALLETUPDATEREADYINFO": "De update is ynladen. Start Altitude no opnij om it te ynstallearjen?",
-            "WALLETUPDATERESTARTBUTTON": "Op 'e nij starte en ynstallearje",
-            "WALLETUPDATELATERBUTTON": "Letter",
             "DAPPCONNECTTITLE": "Ferbine mei side",
             "DAPPCONNECTINFO": "Dizze side wol ferbine mei jo wallet en jo adres en saldo besjen.",
             "DAPPCONNECTBUTTON": "Ferbine",
+            "DAPPCONNECTADDRESSLABEL": "Adres",
+            "DAPPAPPROVEBUTTON": "Goedkarre",
             "DAPPREJECTBUTTON": "Ofwize",
             "DAPPSENDTITLE": "Fersyk foar kontrakttransaksje",
             "DAPPSENDINFO": "Dizze side freget om in kontrakttransaksje fan jo wallet te ferstjoeren.",
-            "DAPPSIGNTITLE": "Fersyk om berjocht te ûndertekenjen",
-            "DAPPSIGNINFO": "Dizze side freget om in berjocht te ûndertekenjen mei jo wallet-adres.",
-            "DAPPNOTREADY": "Kin noch gjin ferbining meitsje mei de side - Metrix Core is noch oan it opstarten.",
-            "DAPPNOWALLET": "Kin gjin ferbining meitsje mei de side - der is gjin wallet-adres beskikber.",
-            "DAPPAPPROVEBUTTON": "Goedkarre",
-            "DAPPCONNECTADDRESSLABEL": "Adres",
             "DAPPSENDSITELABEL": "Side",
             "DAPPSENDCONTRACTLABEL": "Kontraktadres",
             "DAPPSENDAMOUNTLABEL": "Tal",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maks. Netwurkkosten",
             "DAPPSENDMAXTOTALLABEL": "Maks. Totaal",
             "DAPPSENDDATALABEL": "Kontraktgegevens",
+            "DAPPSIGNTITLE": "Fersyk om berjocht te ûndertekenjen",
+            "DAPPSIGNINFO": "Dizze side freget om in berjocht te ûndertekenjen mei jo wallet-adres.",
             "DAPPSIGNMESSAGELABEL": "Berjocht",
-            "BOOTSTRAPOFFERTITLE": "Portemonnee flink ferâldere",
-            "BOOTSTRAPOFFERINFO": "In resinte bootstrap is beskikber dy't Metrix Core fluch by de tiid bringe kin. Trochgean mei in normale syngronisaasje kin ferskate dagen duorje, om't jo wallet elk blok dat it mist hat downloade en ferifiearje moat.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap downloade",
-            "BOOTSTRAPOFFERCANCEL": "Trochgean mei normale syngronisaasje",
-            "BOOTSTRAPSPACEINFO": "Net genôch frije skiifromte om de bootstrap te downloaden en út te pakken. Ferplicht: {required}, Beskikber: {free}. Meitsje wat romte frij en besykje it opnij."
+            "DAPPNOTREADY": "Kin noch gjin ferbining meitsje mei de side - Metrix Core is noch oan it opstarten.",
+            "DAPPNOWALLET": "Kin gjin ferbining meitsje mei de side - der is gjin wallet-adres beskikber."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresboek",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Hjoeddeistich netwurk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Fier in web3-sideadres yn",
-            "GOBUTTON": "Gean",
-            "QUICKLAUNCH": "Fluch starte",
-            "DEVTOOLS": "Iepen Untwikkeldersark",
-            "ADDLINK": "Keppeling tafoegje",
-            "LINKNAMEPLACEHOLDER": "Namme",
-            "LINKURLPLACEHOLDER": "https://foarbyld.com",
-            "SAVE": "Rêde",
-            "CANCEL": "Annulearje",
-            "REMOVE": "Ferwiderje",
-            "REMOVECONFIRM": "Dizze snelle keppeling fuortsmite?",
-            "LINKEXISTS": "Dy keppeling stiet al yn jo list mei flugge starts",
-            "LINKINVALID": "Fier in jildich side-adres yn",
-            "LINKNETWORKLABEL": "Netwurk",
-            "LOADFAILED": "Koe side net laden",
-            "SECURESITE": "Ferbining is feilich - jildich SSL-sertifikaat",
-            "INSECURESITE": "Ferbining is net feilich",
-            "INVALIDCERTSITE": "Ferbining is net privee - ûnjildich of net fertroud SSL-sertifikaat"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Reserveportefeuille...",
             "SIGNMESSAGE": "Berjocht ûndertekenje...",
             "VERIFYMESSAGE": "Berjocht ferifiearje...",
-            "LOCALE": "Taal...",
-            "RESTARTCORE": "Metrix Core opnij starte",
-            "EXIT": "Útgong",
             "OPTIONS": "Opsjes...",
+            "LOCALE": "Taal...",
             "CURRENCIES": "Faluta werjaan...",
-            "ALTITUDEREFRESH": "Hichtegegevens ferfarskje"
+            "RESTARTCORE": "Metrix Core opnij starte",
+            "ALTITUDEREFRESH": "Hichtegegevens ferfarskje",
+            "EXIT": "Útgong"
         },
         "ENCRYPT": {
             "TITLE": "Fersiferje",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Totaal saldo",
+        "SPENDABLEBALANCE": "Besteedber saldo",
+        "PENDINGBALANCE": "Útstekend saldo",
         "CANCELBUTTON": "Annulearje",
         "DONEBUTTON": "Klear",
         "OKBUTTON": "Okee",
+        "ACCEPTBUTTON": "Oannimme",
         "CLEARALLBUTTON": "Alles wiskje",
         "ENTERACCOUNTLABEL": "Fier in label yn foar dit adres",
         "ENTERADDRESSLABEL": "Fier in Metrix-adres yn",
@@ -464,11 +511,8 @@
         "SORTBY": "Sortearje op",
         "SEARCH": "Sykje",
         "FEE": "Kosten",
-        "ACCEPTBUTTON": "Oannimme",
         "CONFIRMED": "Befêstige",
         "UNCONFIRMED": "Net befêstige",
-        "PENDINGBALANCE": "Útstekend saldo",
-        "SPENDABLEBALANCE": "Besteedber saldo",
         "SAVEBUTTON": "Rêde"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core opnij starte...",
         "BOOTSTRAPPING": "Bootstrap oan it downloaden...",
         "BOOTSTRAPEXTRACTING": "Bootstrap útpakke...",
-        "TIMEREMAINING": "oerbleaune:"
+        "TIMEREMAINING": "oerbleaune:",
+        "DEVRPCOVERRIDEACTIVE": "In RPC-ferbiningsoverride foar ûntwikkelders is ynsteld (Opsjes > Untwikkelder) en reagearret net. Wiskje dit om normaal opnij te ferbinen mei de lokale daemon.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC-oerskriuwing wiskje en opnij ferbine"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nij akkount mei súkses oanmakke",
         "ADDRESSCOPIEDCLIPBOARD": "Adres kopiearre nei klamboerd",
+        "COPIEDCLIPBOARD": "Kopiearre nei klamboerd",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjes kopiearre nei klamboerd",
         "EMPTYFIELDS": "Folje asjebleaft alle fjilden yn",
         "NOUPDATE": "Gjin update beskikber",
         "WALLETBACKEDUP": "Backup fan 'e wallet slagge",
+        "WALLETBACKUPFAILED": "Automatyske reservekopy fan 'e wallet mislearre - kontrolearje jo reservekopylokaasje en beskikbere skiifromte",
         "PASSPHRASEMISMATCH": "De wachtwurden dy't jo ynfierd hawwe komme net oerien",
         "CHECKINGUPDATE": "Kontrolearje op update...",
         "CHECKINGUPDATEFAILED": "Kin net kontrolearje op updates. Kontrolearje jo netwurk.",
+        "WALLETUPDATEDOWNLOADING": "Update oan it downloaden...",
         "SENDINGEXCEEDSBALANCE": "It bedrach dat jo ferstjoere is grutter as jo selektearre saldo",
         "MISSINGCHANGEADDRESS": "Jo moatte in wizigingsadres opjaan",
         "MISSINGDESTINATIONADDRESS": "Jo moatte in bestimmingsadres opjaan",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Portemonnee fersiferje...",
         "CHANGINGPASSPHARASE": "Wachtwurd feroarje...",
         "STARTINGMASTERNODE": "Masternode starte...",
+        "STOPPINGMASTERNODE": "Masternode stopje...",
         "SENDINGTRANSACTION": "Transaksje ferstjoere...",
         "SIGNINGMESSAGE": "Berjocht ûndertekenje...",
         "SIGNEDMESSAGE": "Berjocht ûndertekene",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Portemonnee ûntsluten...",
         "TRANSACTIONMISMATCH": "Transaksjefout. Besykje it nochris.",
         "MINIMUMCONFIRMATIONS": "Alle ynfier fereasket teminsten 1 befêstiging foardat jo útjaan kinne.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjes kopiearre nei klamboerd",
-        "STOPPINGMASTERNODE": "Masternode stopje...",
         "FAILEDTOWRITECONFIG": "Der wie in probleem mei it skriuwen nei jo metrix.conf-bestân. Kontrolearje oft it bestân bestiet en dat Altitude skriuwrjochten hat.",
         "NOPUBLICUP": "Gjin iepenbier IP-adres fûn. Kontrolearje jo ynternetferbining en start Altitude opnij op.",
         "CONFIGURINGLOCALMN": "Lokale Masternode konfigurearje...",
         "REPORTINGISSUE": "Diagnostyske ynformaasje krije... Dizze ynformaasje wurdt nei jo klamboerd kopiearre.",
-        "WALLETUPDATEDOWNLOADING": "Update oan it downloaden...",
-        "WALLETBACKUPFAILED": "Automatyske reservekopy fan 'e wallet mislearre - kontrolearje jo reservekopylokaasje en beskikbere skiifromte",
         "EXPLORERURLSAVED": "Explorer-URL bewarre",
         "EXPLORERURLRESET": "Explorer URL weromset nei standert",
         "EXPLORERURLINVALID": "Dat is gjin jildige http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Koe dy URL net berikke - kontrolearje it en besykje it opnij"
+        "EXPLORERURLUNREACHABLE": "Koe dy URL net berikke - kontrolearje it en besykje it opnij",
+        "DEVRPCHOSTSAVED": "RPC-host bewarre",
+        "DEVRPCHOSTRESET": "RPC-host weromset nei standert (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Untfongen munten",
+        "NEWTRANSACTION_TITLE_STAKE": "Untfongen ynset",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-beleanning ûntfongen"
     },
     "TIME": {
         "AFEWSECONDS": "In pear sekonden",
@@ -533,11 +587,6 @@
         "MONTHS": "moannen",
         "AYEAR": "In jier",
         "YEARS": "jierren"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Untfongen munten",
-        "NEWTRANSACTION_TITLE_STAKE": "Untfongen ynset",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-beleanning ûntfongen"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gûverneurs binne ferantwurdlik foar it stimmen oer moanlikse budzjetten en blockchain-feroarings. Jo kinne in gûverneur wurde troch it juste ûnderpân yn it bestjoerskontrakt te befeiligjen.",
                 "COLLATERAL": "Ferplichte ûnderpân",
                 "ENROLL": "Ynskriuwe",
+                "SELECTAGOVERNOR": "Kies in geskikt adres foar gûverneur",
+                "GOVERNORNOTSELECTED": "Der is gjin geskikt adres selektearre",
                 "CONFIRMENROLL": "Jo steane op it punt om jo yn te skriuwen as gûverneur. Dit sil in transaksje mei de fereaske ûnderpân nei it gûverneurskontrakt stjoere. Jo kinne jo op elk momint ôfmelde.",
                 "ISGOVERNORTITLE": "Jo binne in aktive gûverneur!",
                 "ISGOVERNORDETAIL1": "Gûverneurs binne ferantwurdlik foar it stimmen oer moanlikse budzjetten en blockchain-feroarings.",
                 "ISGOVERNORDETAIL2": "Om gûverneur te bliuwen, moatte jo elke 30 dagen oan teminsten 1 stimming meidwaan.",
                 "ISGOVERNORDETAIL3": "As der neat is om oer te stimmen, kinne jo jo ynskriuwing manuell trochgean troch in aktive ping te stjoeren.",
+                "MYGOVERNORADDRESS": "Myn adres fan 'e gûverneur",
                 "UNENROLL": "Útskriuwe",
                 "PING": "Stjoer aktive ping",
                 "LASTPINGTITLE": "Lêste ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dagen",
                 "GOVERNORVOTEMATURITYHOURS": "oeren",
                 "GOVERNORVOTEMATURITYSUFFIX": "oant folwoeksen",
-                "MYGOVERNORADDRESS": "Myn adres fan 'e gûverneur",
-                "SELECTAGOVERNOR": "Kies in geskikt adres foar gûverneur",
-                "GOVERNORNOTSELECTED": "Der is gjin geskikt adres selektearre",
                 "NOTFULLYSYNCEDTITLE": "Gûverneurstatus net beskikber",
                 "NOTFULLYSYNCEDDETAIL": "Dyn registraasjestatus as gûverneur sil sichtber wurde as dyn blockchain folslein syngronisearre is.",
                 "DGPMIGRATIONTITLE": "DGP-migraasje",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Dyn foarstel is mei súkses oanmakke",
             "ENROLLINGGOVERNOR": "Ynskriuwe as gûverneur...",
             "ENROLLEDGOVERNOR": "Dyn ynskriuwing sil foltôge wêze as dyn transaksje befêstige is",
-            "VOTINGONPROPOSAL": "Stjoere fan foarstelstimming",
-            "VOTEDONPROPOSAL": "Dyn stim wurdt teld as de transaksje befêstige is.",
             "PINGINGGOVERNOR": "Ping ferstjoere...",
             "PINGEDGOVERNOR": "Ping mei súkses ferstjoerd. Jo gûverneur wurdt op 'e hichte brocht as de transaksje befêstige is.",
+            "VOTINGONPROPOSAL": "Stjoere fan foarstelstimming",
+            "VOTEDONPROPOSAL": "Dyn stim wurdt teld as de transaksje befêstige is.",
             "UNENROLLINGGOVERNOR": "Gûverneur ôfmelde...",
             "UNENROLLEDGOVERNOR": "Transaksje ferstjoerd. Dyn gûverneur wurdt útskreaun as de transaksje befêstige is.",
             "GOVERNORNOTMATURE": "Dyn gûverneur is noch net folwoeksen genôch om dizze aksje út te fieren"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Keapje Metrix",
+                "SEARCH": "Skiednis"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Jo ferstjoere",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transaksjehistoarje",
                 "SEARCHBUTTON": "SYKJE",
+                "SEARCHPLACEHOLDER": "Fier it MRX- of BTC-adres yn",
                 "TRANSACTIONDATE": "Datum",
                 "TRANSACTIONTYPE": "TX-type",
                 "TRANSACTIONAMOUNT": "Tal",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Befêstige",
                 "TRANSACTIONNOTCONFIRMED": "Net befêstige",
                 "TRANSACTIONREFUNDED": "Werombetelle - Under minimum",
-                "AVGSWAPPRICE": "Gemiddelde ruilpriis",
-                "SEARCHPLACEHOLDER": "Fier it MRX- of BTC-adres yn"
+                "AVGSWAPPRICE": "Gemiddelde ruilpriis"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Wikseladres generearje...",
             "ALREADYHAVEADDRESS": "Jo hawwe al in BTC-adres keppele oan dit Metrix-adres",
             "NOADDRESS": "Jo hawwe gjin Metrix-adres ynfierd"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Keapje Metrix",
-                "SEARCH": "Skiednis"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Unthâlde",
                 "EMPTYTITLE": "Noch gjin tokens fûn",
                 "EMPTYDETAIL": "Altitude kontrolearret automatysk in blokferkenner op MRC20- en MRC721-tokens dy't nei jo adressen stjoerd binne, en ferifiearret dan alles live tsjin jo eigen node. Jo kinne ek in token manuell tafoegje as jo it kontraktadres witte.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatyske tokenkontrôle is útskeakele, dus jo adressen wurde net kontrolearre op tokens. Skeakelje it hjirboppe wer yn, of foegje in token manuell ta as jo it kontraktadres witte.",
                 "HIDDENTITLE": "Ferburgen tokens",
                 "CONTEXTMENUHIDE": "Token ferbergje",
                 "ITEMSSUFFIX": "item(s)",
-                "NONENUMERABLETOOLTIP": "Dizze kolleksje stipet gjin list mei yndividuele items - ynstee dêrfan wurdt werjûn hoefolle jo hawwe."
+                "NONENUMERABLETOOLTIP": "Dizze kolleksje stipet gjin list mei yndividuele items - ynstee dêrfan wurdt werjûn hoefolle jo hawwe.",
+                "CHECKINGENABLED": "Kontrolearje op",
+                "CHECKINGDISABLED": "Ofkontrôle",
+                "CHECKINGENABLEDTOOLTIP": "Tokenkontrôle is oan - Altitude kontrolearret jo adressen periodyk op tokens en ferfarsket it saldo. Klik om út te skeakeljen.",
+                "CHECKINGDISABLEDTOOLTIP": "Tokenkontrôle is út - klik om wer yn te skeakeljen.",
+                "CHECKINGDISABLEDNOTICE": "Automatyske tokenkontrôle is útskeakele. Jo adressen wurde net scannen op tokens en saldo's sille net bywurke wurde. Jo kinne noch altyd in token manuell tafoegje."
             },
             "ADDTOKEN": {
                 "TITLE": "Token tafoegje",

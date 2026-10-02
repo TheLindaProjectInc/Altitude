@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Loo konto",
             "HIDEEMPTYACCOUNTS": "Peida nimetud tühjad kontod"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Ülevaade",
+            "TRANSACTIONSTAB": "Tehingud",
+            "ADDRESSTABS": "Aadressid"
+        },
         "SEND": {
             "ADDRECIPIENT": "Lisa saaja",
             "SEND": "Saada",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Kuupäev",
             "TABLECOLUMNS_CONFIRMS": "Kinnitused",
             "ALL_SELECTUNSELECT": "Lülita kõik sisse/välja",
+            "TREEMODE": "Puu režiim",
+            "LISTMODE": "Loendirežiim",
             "SENDAVAILABLE": "Kasuta saadaolevat saldot",
             "INPUTLOCKED": "Sisend on lukus. Selle kasutamiseks peate selle avama.",
             "CONTEXTMENULOCKINPUT": "Lukusta sisend",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Pärast tasu",
             "QUANTITY": "Kogus",
             "BYTES": "Baidid",
-            "TREEMODE": "Puu režiim",
-            "LISTMODE": "Loendirežiim",
             "ALERTFEECHANGETITLE": "Tasu muutus",
             "ALERTFEECHANGECONTENT": "Tegelik tehingutasu on oodatust kõrgem. Palun kinnitage uus tasu:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Loo leping",
+            "INFO": "Rakenda nutileping võrku, esitades selle kompileeritud baitkoodi. See on põhiline ahelafunktsioon – enne rakendamist kontrolli oma baitkoodi ja gaasiseadeid, rakendamist ei saa tagasi võtta.",
+            "FROM": "Alates",
+            "BYTECODE": "Baitkood",
+            "BYTECODEPLACEHOLDER": "Kleebi kompileeritud lepingu baitkood (heksadetsimaal)",
+            "INVALIDBYTECODE": "Baitkood peab olema kehtiv kuueteistkümnendsüsteemis jada (0–9, a–f) paarisarvu tähemärke",
+            "GASLIMIT": "Gaasi piirang",
+            "GASLIMITRANGE": "Vahemik",
+            "GASPRICE": "Bensiini hind (MRX gaasiühiku kohta)",
+            "GASPRICEMIN": "Miinimum",
+            "ESTIMATEDMAXCOST": "Hinnanguline maksimaalne maksumus",
+            "DEPLOYBUTTON": "Lepingu juurutamine",
+            "INCOMPLETEFORM": "Palun valige saatja aadress, sisestage kehtiv baitkood ja määrake kehtiv gaasi limiit/hind",
+            "HIGHGASPRICETITLE": "Kõrge bensiinihind",
+            "HIGHGASPRICEINFO": "Teie määratud bensiinihind on ebatavaliselt kõrge. See juurutus võib maksta kuni:",
+            "DEPLOYING": "Lepingu juurutamine...",
+            "DEPLOYED": "Lepingu juurutamine esitatud",
+            "RESULTTITLE": "Juurutamise tulemus",
+            "STATUS": "Staatus",
+            "STATUSPENDING": "Kinnitust ootab...",
+            "STATUSCONFIRMED": "Edukalt juurutatud",
+            "STATUSFAILED": "Juurutamine ebaõnnestus",
+            "TXID": "Tehingu ID",
+            "SENDER": "Saatja",
+            "CONTRACTADDRESS": "Lepingu aadress",
+            "GASUSED": "Kasutatud gaas",
+            "DONEBUTTON": "Valmis",
+            "DEPLOYANOTHERBUTTON": "Juurutage teine"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tehingud",
+            "COPYBLOCKHASH": "Kopeeri ploki räsi",
+            "COPYTXID": "Kopeeri tehingu ID",
+            "COPYACCOUNT": "Kopeeri konto nimi",
+            "COPYADDRESS": "Kopeeri aadress",
+            "COPYAMOUNT": "Kopeeri summa",
+            "COPTBLOCKINDEX": "Kopeeri plokiindeks",
+            "EXPLORER": "Ava plokkide uurijas"
         },
         "STAKING": {
             "UNLOCK": "Ava panustamiseks",
@@ -68,13 +113,13 @@
             "IP": "IP-aadress",
             "ADDRESS": "Aadress",
             "ENABLED": "Lubatud",
-            "STARTBUTTON": "Käivita kohalik",
-            "STARTALIASBUTTON": "Alusta aliast",
-            "STARTALLBUTTON": "Alusta kõiki",
             "NOMASTERNODES": "Sul pole ühtegi masternode'i",
             "NOMNOUTPUTS": "Masternode'i väljundeid ei leitud. Kohaliku Masternode'i käivitamiseks saatke oma Masternode'i aadressile täpselt 2, 5, 25, 50 või 100 miljonit münti ja oodake 15 kinnitust.",
+            "STARTBUTTON": "Käivita kohalik",
             "STOPBUTTON": "Peata kohalik",
+            "STARTALIASBUTTON": "Alusta aliast",
             "STOPALIASBUTTON": "Peata Alias",
+            "STARTALLBUTTON": "Alusta kõiki",
             "ADDREMOTE": "Lisa kaug-masternode",
             "REMOVEMN": "Eemalda Masternode",
             "ADDLOCAL": "Kohaliku Masternode'i seadistamine",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Üldine",
                 "COREVERSION": "Põhiversioon",
+                "ALTITUDEVERSION": "Kõrguse versioon",
                 "PROTOCOLVERSION": "Protokolli versioon",
                 "WALLETVERSION": "Wallet.dat versioon",
                 "NETWORKTITLE": "Võrk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternode'ide arv",
                 "BLOCKCHAINTITLE": "Plokikett",
                 "NUMBERBLOCKS": "Praegune plokkide arv",
-                "BESTBLOCKTTIME": "Viimase ploki aeg",
-                "ALTITUDEVERSION": "Kõrguse versioon"
+                "BESTBLOCKTTIME": "Viimase ploki aeg"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Tere tulemast Metrix Core RPC konsooli. Saadaval olevate käskude ülevaate saamiseks tippige \"help\".",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Valige keel"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tehingud",
-            "COPYBLOCKHASH": "Kopeeri ploki räsi",
-            "COPYTXID": "Kopeeri tehingu ID",
-            "COPYACCOUNT": "Kopeeri konto nimi",
-            "COPYADDRESS": "Kopeeri aadress",
-            "COPYAMOUNT": "Kopeeri summa",
-            "COPTBLOCKINDEX": "Kopeeri plokiindeks",
-            "EXPLORER": "Ava plokkide uurijas"
+        "CURRENCY": {
+            "TITLE": "Valige kuvatav valuuta"
         },
         "EXPLORER": {
             "TITLE": "Blokeeri uurija",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Võrk",
             "WINDOTAB": "Aken",
+            "BACKUPTAB": "Varundamine",
+            "EXPLORERTAB": "Avastaja",
+            "DEVELOPERTAB": "Arendaja",
             "NETWORK": {
                 "PROXY": "Ühenduse loomine SOCKS5 puhverserveri kaudu",
                 "PROXYIP": "Puhverserveri IP-aadress",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimeeri sulgemisel",
                 "BEHAVIOURTITLE": "Süsteemisalve ja akna käitumine"
             },
-            "BACKUPTAB": "Varundamine",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automaatne varundamine",
                 "ENABLED": "Varunda wallet.dat automaatselt ajakava alusel",
                 "ENABLEDINFO": "Loob teie rahakotifailist ajakava järgi värske varukoopia, nii et kui midagi peaks valesti minema, on alati olemas uusim koopia.",
+                "INTERVALLABEL": "Varundamine iga (päeva) järel",
                 "LASTBACKUP": "Viimane varukoopia:",
                 "NEVERBACKEDUP": "Automaatset varundamist pole veel tehtud.",
                 "BACKUPNOWBUTTON": "Varunda kohe",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Lähtesta vaikesätetele",
                 "PRUNETITLE": "Varundamise ajalugu",
                 "PRUNEINFO": "Vanemad automaatsed varukoopiad kustutatakse, et see kaust ei kasvaks igavesti – alles jäävad ainult kõige uuemad allpool olevad varukoopiad.",
-                "KEEPCOUNTLABEL": "Hoia viimane",
-                "INTERVALLABEL": "Varundamine iga (päeva) järel"
+                "KEEPCOUNTLABEL": "Hoia viimane"
             },
-            "EXPLORERTAB": "Avastaja",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokeeri uurija",
                 "BLOCKEXPLORERINFO": "Sait avanes tehingu vaatamisel plokkide uurijas (nt paremklõpsake tehingul > Kuva uurijas).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Peavõrk",
                 "TESTNET": "Testvõrk",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Arendaja režiim",
+                "DEVMODEINFO": "Vaikimisi välja lülitatud ja mõeldud ainult arendajatele. Selle lubamisel kuvatakse valikud RPC-ühenduse tühistamiseks – tavakasutajad peaksid selle välja lülitatud jätma.",
+                "DEVMODELABEL": "Luba arendaja režiim",
+                "WARNING": "Need seaded on mõeldud ainult arendusotstarbeks. Nende muutmine võib takistada rahakotil deemoniga ühenduse loomist – kasuta seda ainult siis, kui tead, mida teed.",
+                "RPCHOSTTITLE": "RPC-ühendus",
+                "RPCHOSTINFO": "Vaikimisi loob Altitude ühenduse deemoniga, mida ta ise haldab, sellel masinal (127.0.0.1). Nende alistamine võimaldab tal luua ühenduse mõne teise deemoniga - näiteks kaugühendusega regtesti eksemplariga, ilma et oleks vaja lokaalselt deemonit käivitada. Kui ühendus õnnestub, ei laadi Altitude alla ega käivita oma kohalikku deemonit. Sihtdeemoni rpcallowip peab seda ühendust lubama ja allpool olev rpcuser/rpcpassword peab vastama selle konfiguratsioonile. Rakendub kohe, taaskäivitamist pole vaja.",
+                "RPCHOSTLABEL": "RPC-host",
+                "RPCPORTLABEL": "RPC-port",
+                "RPCUSERLABEL": "RPC kasutajanimi",
+                "RPCPASSWORDLABEL": "RPC parool"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Ülevaade",
-            "TRANSACTIONSTAB": "Tehingud",
-            "ADDRESSTABS": "Aadressid"
-        },
-        "CURRENCY": {
-            "TITLE": "Valige kuvatav valuuta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Armatuurlaud",
             "SEND": "Saada",
+            "CREATECONTRACT": "Loo leping",
             "RECEIVE": "Vastuvõtt",
             "TRANSACTIONS": "Tehingud",
             "STAKING": "Panustamine",
             "MASTERNODES": "Masternode'id",
+            "EXPLORER": "Blokeeri uurija",
             "SYNC": {
                 "CONNECTING": "Ühendamine",
                 "NOBLOCKS": "Ootan plokke",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Rahakotti hetkel ei panustata",
                 "MASTERNODEON": "Masternode töötab praegu",
                 "MASTERNODEOFF": "Masternode ei tööta hetkel"
-            },
-            "EXPLORER": "Blokeeri uurija"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Sisestage web3 saidi aadress",
+            "GOBUTTON": "Mine",
+            "QUICKLAUNCH": "Kiirkäivitus",
+            "DEVTOOLS": "Ava arendaja tööriistad",
+            "ADDLINK": "Lisa link",
+            "LINKNAMEPLACEHOLDER": "Nimi",
+            "LINKURLPLACEHOLDER": "https://näide.com",
+            "SAVE": "Salvesta",
+            "CANCEL": "Tühista",
+            "REMOVE": "Eemalda",
+            "REMOVECONFIRM": "Kas eemaldada see kiirlink?",
+            "LINKEXISTS": "See link on juba teie kiirkäivitusloendis",
+            "LINKINVALID": "Sisestage kehtiv saidi aadress",
+            "LINKNETWORKLABEL": "Võrk",
+            "LOADFAILED": "Saidi laadimine ebaõnnestus",
+            "SECURESITE": "Ühendus on turvaline – kehtiv SSL-sertifikaat",
+            "INSECURESITE": "Ühendus pole turvaline",
+            "INVALIDCERTSITE": "Ühendus pole privaatne – kehtetu või ebausaldusväärne SSL-sertifikaat"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sisestage oma rahakoti parool",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core'ile on saadaval värskendus. Kas soovite selle kohe installida?",
             "WALLETUPDATETITLE": "Kõrguse värskendus on saadaval",
             "WALLETUPDATEINFO": "Altitude jaoks on saadaval värskendus. Kas soovite selle kohe alla laadida?",
+            "WALLETUPDATEREADYTITLE": "Kõrguse värskendus on valmis",
+            "WALLETUPDATEREADYINFO": "Värskendus on alla laaditud. Kas taaskäivitada Altitude kohe selle installimiseks?",
+            "WALLETUPDATERESTARTBUTTON": "Taaskäivita ja installi",
+            "WALLETUPDATELATERBUTTON": "Hiljem",
             "CLIENTUPDATEBUTTON": "Värskendus",
             "CLIENTUPDATECANCELBUTTON": "Ära uuenda",
             "CLIENTUPDATESKIPBUTTON": "Jäta see värskendus vahele",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Kõik varasemad rahakotifaili varukoopiad tuleks asendada äsja loodud krüpteeritud rahakotifailiga. Turvakaalutlustel muutuvad krüpteerimata rahakotifaili varasemad varukoopiad kasutuks kohe, kui hakkate uut krüpteeritud rahakotti kasutama.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core lakkas ootamatult töötamast",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core'iga tekkis probleem, mis põhjustas selle töö lõpetamise. Soovitatav on kontrollida oma debug.log-faili probleemide suhtes.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core'i sideviga",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core'iga suhtlemisel ilmnes probleem. Soovitatav on kontrollida oma debug.log-faili probleemide suhtes.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core'i alglaadimine ebaõnnestus",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes probleem. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
+            "BOOTSTRAPOFFERTITLE": "Rahakott on oluliselt aegunud",
+            "BOOTSTRAPOFFERINFO": "Saadaval on uusim alglaadimisprogramm, mis aitab Metrix Core'i kiiresti ajakohastada. Tavalise sünkroonimisega jätkamine võib võtta mitu päeva, kuna teie rahakott peab alla laadima ja kontrollima iga vahelejäänud plokki.",
+            "BOOTSTRAPOFFERBUTTON": "Laadige alla Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jätka tavalist sünkroonimist",
+            "BOOTSTRAPSPACEINFO": "Bootstrapi allalaadimiseks ja lahtipakkimiseks pole piisavalt vaba kettaruumi. Nõutav: {required}, Saadaval: {free}. Vabastage ruumi ja proovige uuesti.",
+            "STARTUPFAILEDTITLE": "Metrix Core'i käivitamine ebaõnnestus",
+            "STARTUPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes viga. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Taastamisvahendid",
             "CLIENTINVALIDCONFIGTITLE": "Vigane metrix.conf konfiguratsioon",
             "CLIENTINVALIDCONFIGINFO": "Teie metrix.conf failil on sobimatu masternode seadistus, mis põhjustab Metrix Core'i kohese sulgemise. Palun kontrollige seda faili.",
             "ADDREMOTEMNTITLE": "Lisa kaug-masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode'i privaatvõti",
             "ADDREMOTEMNTXHASH": "Masternode tehingu räsi",
             "ADDREMOTEMNTXINDEX": "Masternode tehingute indeks",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core'i alglaadimine ebaõnnestus",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes probleem. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Taastamisvahendid",
-            "STARTUPFAILEDTITLE": "Metrix Core'i käivitamine ebaõnnestus",
-            "STARTUPFAILEDINFO": "Metrix Core'i käivitamisel ilmnes viga. Soovitatav on kontrollida oma kõrguse logifaili probleemide osas.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core'i sideviga",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core'iga suhtlemisel ilmnes probleem. Soovitatav on kontrollida oma debug.log-faili probleemide suhtes.",
             "UNENROLLGOVERNORTITLE": "Kinnitage kuberneri nimekirjast eemaldamine",
             "UNENROLLGOVERNORCONTENT": "Kas oled kindel, et soovid oma kuberneri registreeringu tühistada? Sa ei saa enam ketihalduse üle hääletada.",
-            "WALLETUPDATEREADYTITLE": "Kõrguse värskendus on valmis",
-            "WALLETUPDATEREADYINFO": "Värskendus on alla laaditud. Kas taaskäivitada Altitude kohe selle installimiseks?",
-            "WALLETUPDATERESTARTBUTTON": "Taaskäivita ja installi",
-            "WALLETUPDATELATERBUTTON": "Hiljem",
             "DAPPCONNECTTITLE": "Ühendu saidiga",
             "DAPPCONNECTINFO": "See sait soovib teie rahakotiga ühendust luua ja teie aadressi ning kontojääki vaadata.",
             "DAPPCONNECTBUTTON": "Ühenda",
+            "DAPPCONNECTADDRESSLABEL": "Aadress",
+            "DAPPAPPROVEBUTTON": "Kinnita",
             "DAPPREJECTBUTTON": "Keeldu",
             "DAPPSENDTITLE": "Lepingu tehingu taotlus",
             "DAPPSENDINFO": "See sait taotleb teie rahakotist lepingulise tehingu saatmist.",
-            "DAPPSIGNTITLE": "Allkirjasõnumi taotlus",
-            "DAPPSIGNINFO": "See sait palub teil sõnumile alla kirjutada teie rahakoti aadressiga.",
-            "DAPPNOTREADY": "Saidiga ei saa veel ühendust luua – Metrix Core käivitub alles.",
-            "DAPPNOWALLET": "Saidiga ei saa ühendust luua – rahakoti aadressi pole saadaval.",
-            "DAPPAPPROVEBUTTON": "Kinnita",
-            "DAPPCONNECTADDRESSLABEL": "Aadress",
             "DAPPSENDSITELABEL": "Sait",
             "DAPPSENDCONTRACTLABEL": "Lepingu aadress",
             "DAPPSENDAMOUNTLABEL": "Summa",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimaalne võrgutasu",
             "DAPPSENDMAXTOTALLABEL": "Maksimaalne summa",
             "DAPPSENDDATALABEL": "Lepingu andmed",
+            "DAPPSIGNTITLE": "Allkirjasõnumi taotlus",
+            "DAPPSIGNINFO": "See sait palub teil sõnumile alla kirjutada teie rahakoti aadressiga.",
             "DAPPSIGNMESSAGELABEL": "Sõnum",
-            "BOOTSTRAPOFFERTITLE": "Rahakott on oluliselt aegunud",
-            "BOOTSTRAPOFFERINFO": "Saadaval on uusim alglaadimisprogramm, mis aitab Metrix Core'i kiiresti ajakohastada. Tavalise sünkroonimisega jätkamine võib võtta mitu päeva, kuna teie rahakott peab alla laadima ja kontrollima iga vahelejäänud plokki.",
-            "BOOTSTRAPOFFERBUTTON": "Laadige alla Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Jätka tavalist sünkroonimist",
-            "BOOTSTRAPSPACEINFO": "Bootstrapi allalaadimiseks ja lahtipakkimiseks pole piisavalt vaba kettaruumi. Nõutav: {required}, Saadaval: {free}. Vabastage ruumi ja proovige uuesti."
+            "DAPPNOTREADY": "Saidiga ei saa veel ühendust luua – Metrix Core käivitub alles.",
+            "DAPPNOWALLET": "Saidiga ei saa ühendust luua – rahakoti aadressi pole saadaval."
         },
         "ADDRESSBOOK": {
             "TITLE": "Aadressiraamat",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Praegune võrk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Sisestage web3 saidi aadress",
-            "GOBUTTON": "Mine",
-            "QUICKLAUNCH": "Kiirkäivitus",
-            "DEVTOOLS": "Ava arendaja tööriistad",
-            "ADDLINK": "Lisa link",
-            "LINKNAMEPLACEHOLDER": "Nimi",
-            "LINKURLPLACEHOLDER": "https://näide.com",
-            "SAVE": "Salvesta",
-            "CANCEL": "Tühista",
-            "REMOVE": "Eemalda",
-            "REMOVECONFIRM": "Kas eemaldada see kiirlink?",
-            "LINKEXISTS": "See link on juba teie kiirkäivitusloendis",
-            "LINKINVALID": "Sisestage kehtiv saidi aadress",
-            "LINKNETWORKLABEL": "Võrk",
-            "LOADFAILED": "Saidi laadimine ebaõnnestus",
-            "SECURESITE": "Ühendus on turvaline – kehtiv SSL-sertifikaat",
-            "INSECURESITE": "Ühendus pole turvaline",
-            "INVALIDCERTSITE": "Ühendus pole privaatne – kehtetu või ebausaldusväärne SSL-sertifikaat"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Varurahakott...",
             "SIGNMESSAGE": "Allkirjasta sõnum...",
             "VERIFYMESSAGE": "Kinnita sõnum...",
-            "LOCALE": "Keel...",
-            "RESTARTCORE": "Taaskäivita Metrix Core",
-            "EXIT": "Väljapääs",
             "OPTIONS": "Valikud...",
+            "LOCALE": "Keel...",
             "CURRENCIES": "Kuvatav valuuta...",
-            "ALTITUDEREFRESH": "Värskenda kõrguse andmeid"
+            "RESTARTCORE": "Taaskäivita Metrix Core",
+            "ALTITUDEREFRESH": "Värskenda kõrguse andmeid",
+            "EXIT": "Väljapääs"
         },
         "ENCRYPT": {
             "TITLE": "Krüpti",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Kogusaldo",
+        "SPENDABLEBALANCE": "Kulutatav saldo",
+        "PENDINGBALANCE": "Ootel olev saldo",
         "CANCELBUTTON": "Tühista",
         "DONEBUTTON": "Valmis",
         "OKBUTTON": "Olgu",
+        "ACCEPTBUTTON": "Nõustu",
         "CLEARALLBUTTON": "Tühjenda kõik",
         "ENTERACCOUNTLABEL": "Sisestage selle aadressi silt",
         "ENTERADDRESSLABEL": "Sisestage Metrixi aadress",
@@ -464,11 +511,8 @@
         "SORTBY": "Sorteeri",
         "SEARCH": "Otsi",
         "FEE": "Tasu",
-        "ACCEPTBUTTON": "Nõustu",
         "CONFIRMED": "Kinnitatud",
         "UNCONFIRMED": "Kinnitamata",
-        "PENDINGBALANCE": "Ootel olev saldo",
-        "SPENDABLEBALANCE": "Kulutatav saldo",
         "SAVEBUTTON": "Salvesta"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core'i taaskäivitamine...",
         "BOOTSTRAPPING": "Bootstrapi allalaadimine...",
         "BOOTSTRAPEXTRACTING": "Bootstrapi lahtipakkimine...",
-        "TIMEREMAINING": "järelejäänud:"
+        "TIMEREMAINING": "järelejäänud:",
+        "DEVRPCOVERRIDEACTIVE": "Arendaja RPC-ühenduse tühistamine on seatud (Valikud > Arendaja) ja see ei reageeri. Tühjendage see, et kohaliku deemoniga tavapäraselt uuesti ühenduda.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Tühjenda RPC alistamine ja loo uuesti ühendus"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Uus konto loodud edukalt",
         "ADDRESSCOPIEDCLIPBOARD": "Aadress kopeeriti lõikelauale",
+        "COPIEDCLIPBOARD": "Lõikelauale kopeeritud",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tehingud kopeeriti lõikelauale",
         "EMPTYFIELDS": "Palun täitke kõik väljad",
         "NOUPDATE": "Värskendusi pole saadaval",
         "WALLETBACKEDUP": "Rahakoti varundamine õnnestus",
+        "WALLETBACKUPFAILED": "Automaatne rahakoti varundamine ebaõnnestus – kontrollige oma varundamise asukohta ja saadaolevat kettaruumi",
         "PASSPHRASEMISMATCH": "Sisestatud paroolid ei ühti",
         "CHECKINGUPDATE": "Värskenduste otsimine...",
         "CHECKINGUPDATEFAILED": "Värskenduste kontrollimine ebaõnnestus. Kontrollige oma võrku.",
+        "WALLETUPDATEDOWNLOADING": "Värskenduse allalaadimine...",
         "SENDINGEXCEEDSBALANCE": "Saadetav summa ületab teie valitud saldo",
         "MISSINGCHANGEADDRESS": "Peate määrama muutmisaadressi",
         "MISSINGDESTINATIONADDRESS": "Peate määrama sihtkoha aadressi",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Rahakoti krüpteerimine...",
         "CHANGINGPASSPHARASE": "Paroolifraasi muutmine...",
         "STARTINGMASTERNODE": "Masternode'i käivitamine...",
+        "STOPPINGMASTERNODE": "Masternode'i peatamine...",
         "SENDINGTRANSACTION": "Tehingu saatmine...",
         "SIGNINGMESSAGE": "Sõnumi allkirjastamine...",
         "SIGNEDMESSAGE": "Sõnum allkirjastatud",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Rahakoti avamine...",
         "TRANSACTIONMISMATCH": "Tehingu viga. Palun proovige uuesti.",
         "MINIMUMCONFIRMATIONS": "Kõik sisendid vajavad enne kulutamist vähemalt ühte kinnitust.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tehingud kopeeriti lõikelauale",
-        "STOPPINGMASTERNODE": "Masternode'i peatamine...",
         "FAILEDTOWRITECONFIG": "Teie metrix.conf faili kirjutamisel tekkis probleem. Kontrollige, et fail on olemas ja et Altitudel on kirjutamisõigused.",
         "NOPUBLICUP": "Avalikku IP-aadressi ei leitud. Kontrollige oma internetiühendust ja taaskäivitage Altitude.",
         "CONFIGURINGLOCALMN": "Kohaliku Masternode'i seadistamine...",
         "REPORTINGISSUE": "Diagnostilise teabe hankimine... See teave kopeeritakse teie lõikelauale.",
-        "WALLETUPDATEDOWNLOADING": "Värskenduse allalaadimine...",
-        "WALLETBACKUPFAILED": "Automaatne rahakoti varundamine ebaõnnestus – kontrollige oma varundamise asukohta ja saadaolevat kettaruumi",
         "EXPLORERURLSAVED": "Exploreri URL salvestatud",
         "EXPLORERURLRESET": "Exploreri URL taastati vaikeseadele",
         "EXPLORERURLINVALID": "See ei ole kehtiv http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Sellele URL-ile ei õnnestunud ligi pääseda – kontrollige seda ja proovige uuesti"
+        "EXPLORERURLUNREACHABLE": "Sellele URL-ile ei õnnestunud ligi pääseda – kontrollige seda ja proovige uuesti",
+        "DEVRPCHOSTSAVED": "RPC-host salvestatud",
+        "DEVRPCHOSTRESET": "RPC-host taastati vaikeseadetele (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Saadud mündid",
+        "NEWTRANSACTION_TITLE_STAKE": "Saadud panus",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Sain Masternode'i preemia"
     },
     "TIME": {
         "AFEWSECONDS": "Mõni sekund",
@@ -533,11 +587,6 @@
         "MONTHS": "kuud",
         "AYEAR": "Aasta",
         "YEARS": "aastat"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Saadud mündid",
-        "NEWTRANSACTION_TITLE_STAKE": "Saadud panus",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Sain Masternode'i preemia"
     },
     "MONTH": {
         "JAN": "JAAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Juhatajad vastutavad igakuiste eelarvete ja plokiahela muudatuste hääletamise eest. Juhatajaks saamiseks lukustage juhtimislepingus õige tagatis.",
                 "COLLATERAL": "Nõutav tagatis",
                 "ENROLL": "Registreeru",
+                "SELECTAGOVERNOR": "Valige sobiv kuberneri aadress",
+                "GOVERNORNOTSELECTED": "Ühtegi sobivat aadressi ei valitud",
                 "CONFIRMENROLL": "Te registreerute peagi kuberneriks. See saadab tehingu koos vajaliku tagatisega halduslepingusse. Te saate igal ajal registreerumisest loobuda.",
                 "ISGOVERNORTITLE": "Sa oled aktiivne maavanem!",
                 "ISGOVERNORDETAIL1": "Juhatajad vastutavad igakuiste eelarvete ja plokiahela muudatuste hääletamise eest.",
                 "ISGOVERNORDETAIL2": "Kuberneriks jäämiseks peate osalema vähemalt ühel hääletusel iga 30 päeva tagant.",
                 "ISGOVERNORDETAIL3": "Kui hääletada pole millegi poolt, saate registreerumist käsitsi jätkata, saates aktiivse pingi.",
+                "MYGOVERNORADDRESS": "Minu kuberneri pöördumine",
                 "UNENROLL": "Registreerimise tühistamine",
                 "PING": "Saada aktiivne ping",
                 "LASTPINGTITLE": "Viimane ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "päevad",
                 "GOVERNORVOTEMATURITYHOURS": "tundi",
                 "GOVERNORVOTEMATURITYSUFFIX": "kuni küpseni",
-                "MYGOVERNORADDRESS": "Minu kuberneri pöördumine",
-                "SELECTAGOVERNOR": "Valige sobiv kuberneri aadress",
-                "GOVERNORNOTSELECTED": "Ühtegi sobivat aadressi ei valitud",
                 "NOTFULLYSYNCEDTITLE": "Kuberneri staatus pole saadaval",
                 "NOTFULLYSYNCEDDETAIL": "Teie kuberneri registreerimise staatus muutub nähtavaks, kui teie plokiahel on täielikult sünkroonis.",
                 "DGPMIGRATIONTITLE": "DGP migratsioon",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Teie ettepanek on edukalt loodud",
             "ENROLLINGGOVERNOR": "Kuberneriks registreerimine...",
             "ENROLLEDGOVERNOR": "Teie registreerimine on lõppenud pärast tehingu kinnitamist",
-            "VOTINGONPROPOSAL": "Ettepaneku hääletuse saatmine",
-            "VOTEDONPROPOSAL": "Teie hääl loetakse arvesse pärast tehingu kinnitamist.",
             "PINGINGGOVERNOR": "Pingi saatmine...",
             "PINGEDGOVERNOR": "Ping saadeti edukalt. Teie kubernerile antakse teada, kui tehing on kinnitatud.",
+            "VOTINGONPROPOSAL": "Ettepaneku hääletuse saatmine",
+            "VOTEDONPROPOSAL": "Teie hääl loetakse arvesse pärast tehingu kinnitamist.",
             "UNENROLLINGGOVERNOR": "Kuberneri registreeringu tühistamine...",
             "UNENROLLEDGOVERNOR": "Tehing saadetud. Teie kuberneri registreering tühistatakse pärast tehingu kinnitamist.",
             "GOVERNORNOTMATURE": "Teie kuberner pole selle toimingu sooritamiseks veel piisavalt küps"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Osta Metrix",
+                "SEARCH": "Ajalugu"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Sa saadad",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tehingute ajalugu",
                 "SEARCHBUTTON": "OTSING",
+                "SEARCHPLACEHOLDER": "Sisestage MRX või BTC aadress",
                 "TRANSACTIONDATE": "Kuupäev",
                 "TRANSACTIONTYPE": "Saatja tüüp",
                 "TRANSACTIONAMOUNT": "Summa",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Kinnitatud",
                 "TRANSACTIONNOTCONFIRMED": "Pole kinnitatud",
                 "TRANSACTIONREFUNDED": "Tagastatud - alla miinimumsumma",
-                "AVGSWAPPRICE": "Keskmine vahetushind",
-                "SEARCHPLACEHOLDER": "Sisestage MRX või BTC aadress"
+                "AVGSWAPPRICE": "Keskmine vahetushind"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Vahetusaadressi genereerimine...",
             "ALREADYHAVEADDRESS": "Selle Metrixi aadressiga on teil juba seotud BTC-aadress.",
             "NOADDRESS": "Te ei sisestanud Metrixi aadressi"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Osta Metrix",
-                "SEARCH": "Ajalugu"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Näita uuesti",
                 "EMPTYTITLE": "Tokeneid pole veel leitud",
                 "EMPTYDETAIL": "Altitude kontrollib automaatselt plokkide uurijat teie aadressidele saadetud MRC20 ja MRC721 tokenite suhtes ning seejärel võrdleb kõike reaalajas teie enda sõlmega. Kui teate tokeni lepingu aadressi, saate selle ka käsitsi lisada.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automaatne tokenite kontrollimine on välja lülitatud, seega teie aadresse tokenite suhtes ei kontrollita. Lülitage see ülalpool uuesti sisse või lisage token käsitsi, kui teate selle lepingu aadressi.",
                 "HIDDENTITLE": "Varjatud märgid",
                 "CONTEXTMENUHIDE": "Peida märk",
                 "ITEMSSUFFIX": "ese(med)",
-                "NONENUMERABLETOOLTIP": "See kollektsioon ei toeta üksikute esemete loetlemist – selle asemel kuvatakse teil olevate esemete arv."
+                "NONENUMERABLETOOLTIP": "See kollektsioon ei toeta üksikute esemete loetlemist – selle asemel kuvatakse teil olevate esemete arv.",
+                "CHECKINGENABLED": "Kontrollimine",
+                "CHECKINGDISABLED": "Kontrollimine maha",
+                "CHECKINGENABLEDTOOLTIP": "Žetoonide kontrollimine on sisse lülitatud – Altitude kontrollib perioodiliselt teie aadresse žetoonide suhtes ja värskendab saldosid. Väljalülitamiseks klõpsake.",
+                "CHECKINGDISABLEDTOOLTIP": "Žetoonide kontrollimine on välja lülitatud – klõpsake uuesti sisselülitamiseks.",
+                "CHECKINGDISABLEDNOTICE": "Automaatne žetoonide kontrollimine on välja lülitatud. Teie aadresse ei skannita žetoonide suhtes ja saldosid ei uuendata. Saate žetooni siiski käsitsi lisada."
             },
             "ADDTOKEN": {
                 "TITLE": "Lisa token",

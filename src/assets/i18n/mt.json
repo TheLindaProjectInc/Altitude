@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Oħloq Kont",
             "HIDEEMPTYACCOUNTS": "Aħbi Kontijiet Vojta Mingħajr Isem"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Ħarsa ġenerali",
+            "TRANSACTIONSTAB": "Tranżazzjonijiet",
+            "ADDRESSTABS": "Indirizzi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Żid Riċevitur",
             "SEND": "Ibgħat",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Konfermi",
             "ALL_SELECTUNSELECT": "Aqleb Kollox",
+            "TREEMODE": "Modalità tas-Siġra",
+            "LISTMODE": "Modalità tal-Lista",
             "SENDAVAILABLE": "Uża l-bilanċ disponibbli",
             "INPUTLOCKED": "L-input huwa msakkar. Ikollok bżonn tiftaħ dan l-input biex tonfoqh.",
             "CONTEXTMENULOCKINPUT": "Dħul tas-serratura",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Wara l-Ħlas",
             "QUANTITY": "Kwantità",
             "BYTES": "Bytes",
-            "TREEMODE": "Modalità tas-Siġra",
-            "LISTMODE": "Modalità tal-Lista",
             "ALERTFEECHANGETITLE": "Bidla fit-Tariffa",
             "ALERTFEECHANGECONTENT": "It-tariffa tat-tranżazzjoni attwali hija ogħla milli mistenni. Jekk jogħġbok ikkonferma t-tariffa l-ġdida:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Oħloq Kuntratt",
+            "INFO": "Implimenta kuntratt intelliġenti man-netwerk billi tissottometti l-bytecode kkumpilat tiegħu. Din hija funzjoni ewlenija tal-katina - iċċekkja darbtejn il-bytecode u s-settings tal-gass tiegħek qabel ma tiskjerjah, l-iskjerament ma jistax jitħassar.",
+            "FROM": "Minn",
+            "BYTECODE": "Kodiċi tal-Bytecode",
+            "BYTECODEPLACEHOLDER": "Ippejstja l-bytecode tal-kuntratt ikkumpilat (hex)",
+            "INVALIDBYTECODE": "Il-bytecode għandu jkun string hex valida (0-9, a-f) b'numru par ta' karattri",
+            "GASLIMIT": "Limitu tal-Gass",
+            "GASLIMITRANGE": "Firxa",
+            "GASPRICE": "Prezz tal-Gass (MRX għal kull unità tal-gass)",
+            "GASPRICEMIN": "Minimu",
+            "ESTIMATEDMAXCOST": "Spiża massima stmata",
+            "DEPLOYBUTTON": "Kuntratt ta' Skjerament",
+            "INCOMPLETEFORM": "Jekk jogħġbok agħżel indirizz tal-mittent, daħħal bytecode validu, u ssettja limitu/prezz validu tal-petrol",
+            "HIGHGASPRICETITLE": "Prezz Għoli tal-Gass",
+            "HIGHGASPRICEINFO": "Il-prezz tal-petrol li waqqaft huwa għoli b'mod mhux tas-soltu. Dan l-iskjerament jista' jiswa sa:",
+            "DEPLOYING": "Qed jiġi skjerat kuntratt...",
+            "DEPLOYED": "Skjerament tal-kuntratt sottomess",
+            "RESULTTITLE": "Riżultat tal-Implimentazzjoni",
+            "STATUS": "Status",
+            "STATUSPENDING": "Konferma pendenti...",
+            "STATUSCONFIRMED": "Skjerat b'suċċess",
+            "STATUSFAILED": "L-iskjerament falla",
+            "TXID": "ID tat-Tranżazzjoni",
+            "SENDER": "Mittent",
+            "CONTRACTADDRESS": "Indirizz tal-Kuntratt",
+            "GASUSED": "Gass Użat",
+            "DONEBUTTON": "Magħmul",
+            "DEPLOYANOTHERBUTTON": "Skjerja Ieħor"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tranżazzjonijiet",
+            "COPYBLOCKHASH": "Kopja l-Hash tal-Blokk",
+            "COPYTXID": "Kopja l-ID tat-Tranżazzjoni",
+            "COPYACCOUNT": "Ikkopja l-Isem tal-Kont",
+            "COPYADDRESS": "Kopja l-Indirizz",
+            "COPYAMOUNT": "Ammont tal-Kopja",
+            "COPTBLOCKINDEX": "Indiċi tal-Blokk tal-Kopja",
+            "EXPLORER": "Iftaħ fil-Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Niftaħ għall-Istaking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Indirizz",
             "ENABLED": "Attivat",
-            "STARTBUTTON": "Ibda Lokali",
-            "STARTALIASBUTTON": "Ibda l-Alias",
-            "STARTALLBUTTON": "Ibda Kollox",
             "NOMASTERNODES": "M'għandekx masternodes.",
             "NOMNOUTPUTS": "Ma nstab l-ebda output tal-Masternode. Biex tħaddem Masternode lokali ibgħat eżattament 2, 5, 25, 50 jew 100 miljun munita lill-indirizz tal-Masternode tiegħek u stenna għal 15-il konferma.",
+            "STARTBUTTON": "Ibda Lokali",
             "STOPBUTTON": "Waqqaf Lokali",
+            "STARTALIASBUTTON": "Ibda l-Alias",
             "STOPALIASBUTTON": "Waqqaf l-Alias",
+            "STARTALLBUTTON": "Ibda Kollox",
             "ADDREMOTE": "Żid Masternode Remot",
             "REMOVEMN": "Neħħi l-Masternode",
             "ADDLOCAL": "Issettja l-Masternode Lokali",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Ġenerali",
                 "COREVERSION": "Verżjoni Ewlenija",
+                "ALTITUDEVERSION": "Verżjoni tal-Altitudni",
                 "PROTOCOLVERSION": "Verżjoni tal-Protokoll",
                 "WALLETVERSION": "Verżjoni ta' Wallet.dat",
                 "NETWORKTITLE": "Netwerk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numru ta' Masternodes",
                 "BLOCKCHAINTITLE": "Katina tal-Blokk",
                 "NUMBERBLOCKS": "Numru attwali ta' blokki",
-                "BESTBLOCKTTIME": "Ħin tal-aħħar blokk",
-                "ALTITUDEVERSION": "Verżjoni tal-Altitudni"
+                "BESTBLOCKTTIME": "Ħin tal-aħħar blokk"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Merħba fil-console tal-Metrix Core RPC. Ittajpja għajnuna għal ħarsa ġenerali tal-kmandi disponibbli.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Agħżel Lingwa"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tranżazzjonijiet",
-            "COPYBLOCKHASH": "Kopja l-Hash tal-Blokk",
-            "COPYTXID": "Kopja l-ID tat-Tranżazzjoni",
-            "COPYACCOUNT": "Ikkopja l-Isem tal-Kont",
-            "COPYADDRESS": "Kopja l-Indirizz",
-            "COPYAMOUNT": "Ammont tal-Kopja",
-            "COPTBLOCKINDEX": "Indiċi tal-Blokk tal-Kopja",
-            "EXPLORER": "Iftaħ fil-Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Agħżel il-Munita tal-Wiri"
         },
         "EXPLORER": {
             "TITLE": "Esploratur tal-Blokkijiet",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netwerk",
             "WINDOTAB": "Tieqa",
+            "BACKUPTAB": "Backup",
+            "EXPLORERTAB": "Esploratur",
+            "DEVELOPERTAB": "Żviluppatur",
             "NETWORK": {
                 "PROXY": "Qabbad permezz tal-proxy SOCKS5",
                 "PROXYIP": "IP tal-prokura",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Imminimizza mal-għeluq",
                 "BEHAVIOURTITLE": "Imġieba tat-Trej tas-Sistema u t-Tieqa"
             },
-            "BACKUPTAB": "Backup",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Backup Awtomatiku",
                 "ENABLED": "Agħmel backup awtomatiku ta' wallet.dat skont skeda",
                 "ENABLEDINFO": "Joħloq backup ġdid tal-fajl tal-kartiera tiegħek skont skeda, sabiex kopja reċenti tkun dejjem disponibbli jekk xi ħaġa tmur ħażin.",
+                "INTERVALLABEL": "Agħmel backup kull (jiem)",
                 "LASTBACKUP": "L-aħħar backup:",
                 "NEVERBACKEDUP": "Għadu ma sar l-ebda backup awtomatiku.",
                 "BACKUPNOWBUTTON": "Agħmel Backup Issa",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Irrisettja għad-Default",
                 "PRUNETITLE": "Storja tal-Backup",
                 "PRUNEINFO": "Il-backups awtomatiċi l-aktar qodma jitħassru sabiex dan il-folder ma jikberx għal dejjem - jinżammu biss dawk l-aktar reċenti hawn taħt.",
-                "KEEPCOUNTLABEL": "Żomm l-aħħar",
-                "INTERVALLABEL": "Agħmel backup kull (jiem)"
+                "KEEPCOUNTLABEL": "Żomm l-aħħar"
             },
-            "EXPLORERTAB": "Esploratur",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Esploratur tal-Blokkijiet",
                 "BLOCKEXPLORERINFO": "Is-sit infetaħ meta kont qed tara transazzjoni fuq il-blokk explorer (eż. ikklikkja bil-lemin fuq transazzjoni > View on Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Netwerk tat-Test",
                 "REGTEST": "Test tar-Reġistrazzjoni"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modalità tal-Iżviluppatur",
+                "DEVMODEINFO": "Mitfi awtomatikament u maħsub għall-iżviluppaturi biss. Jekk tattiva dan, tiżvela għażliet biex tegħleb il-konnessjoni RPC - l-utenti standard għandhom iħallu dan mitfi.",
+                "DEVMODELABEL": "Ippermetti l-Modalità tal-Iżviluppatur",
+                "WARNING": "Dawn is-settings huma għal skopijiet ta' żvilupp biss. Jekk tibdelhom, il-kartiera tista' ma tħallihiex tikkonnettja ma' daemon - uża dan biss jekk taf x'qed tagħmel.",
+                "RPCHOSTTITLE": "Konnessjoni RPC",
+                "RPCHOSTINFO": "B'mod awtomatiku, Altitude tikkonnettja mad-daemon li timmaniġġja hi stess, fuq din il-magna (127.0.0.1). Jekk dawn jiġu megħluba, din tikkonnettja ma' daemon differenti minflok - pereżempju istanza remota ta' regtest, mingħajr ma jkollha bżonn tħaddem waħda lokalment. Jekk il-konnessjoni tirnexxi, Altitude mhux se tniżżel jew tibda d-daemon lokali tagħha stess. L-rpcallowip tad-daemon fil-mira jrid jippermetti din il-konnessjoni, u rpcuser/rpcpassword hawn taħt trid taqbel mal-konfigurazzjoni tagħha. Tieħu effett immedjatament, l-ebda ħtieġa ta' restart.",
+                "RPCHOSTLABEL": "Ospitanti tal-RPC",
+                "RPCPORTLABEL": "Port tal-RPC",
+                "RPCUSERLABEL": "Isem tal-Utent tal-RPC",
+                "RPCPASSWORDLABEL": "Password tal-RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Ħarsa ġenerali",
-            "TRANSACTIONSTAB": "Tranżazzjonijiet",
-            "ADDRESSTABS": "Indirizzi"
-        },
-        "CURRENCY": {
-            "TITLE": "Agħżel il-Munita tal-Wiri"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Ibgħat",
+            "CREATECONTRACT": "Oħloq Kuntratt",
             "RECEIVE": "Irċievi",
             "TRANSACTIONS": "Tranżazzjonijiet",
             "STAKING": "Imħatri",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Esploratur tal-Blokkijiet",
             "SYNC": {
                 "CONNECTING": "Konnessjoni",
                 "NOBLOCKS": "Nistennew blokki",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Il-kartiera bħalissa mhix qed tagħmel staking",
                 "MASTERNODEON": "Masternode bħalissa qed jaħdem",
                 "MASTERNODEOFF": "Masternode bħalissa mhux qed jaħdem"
-            },
-            "EXPLORER": "Esploratur tal-Blokkijiet"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Daħħal l-indirizz ta' sit web3",
+            "GOBUTTON": "Mur",
+            "QUICKLAUNCH": "Tnedija Mgħaġġla",
+            "DEVTOOLS": "Iftaħ l-Għodda tal-Iżviluppatur",
+            "ADDLINK": "Żid Link",
+            "LINKNAMEPLACEHOLDER": "Isem",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Issejvja",
+            "CANCEL": "Ikkanċella",
+            "REMOVE": "Neħħi",
+            "REMOVECONFIRM": "Tneħħi din il-link rapida?",
+            "LINKEXISTS": "Dak il-link diġà jinsab fil-lista ta' tnedija rapida tiegħek",
+            "LINKINVALID": "Daħħal indirizz tas-sit validu",
+            "LINKNETWORKLABEL": "Netwerk",
+            "LOADFAILED": "Ma rnexxiex jitgħabba s-sit",
+            "SECURESITE": "Il-konnessjoni hija sigura - ċertifikat SSL validu",
+            "INSECURESITE": "Il-konnessjoni mhix sigura",
+            "INVALIDCERTSITE": "Il-konnessjoni mhijiex privata - ċertifikat SSL invalidu jew mhux affidabbli"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Daħħal il-Passphrase tal-Kartiera Tiegħek",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Hemm aġġornament disponibbli għal Metrix Core. Tixtieq tinstallah issa?",
             "WALLETUPDATETITLE": "Aġġornament tal-Altitudni Disponibbli",
             "WALLETUPDATEINFO": "Hemm aġġornament disponibbli għal Altitude. Tixtieq tniżżlu issa?",
+            "WALLETUPDATEREADYTITLE": "Aġġornament tal-Altitudni Lest",
+            "WALLETUPDATEREADYINFO": "L-aġġornament ġie mniżżel. Erġa' ibda Altitude issa biex tinstallah?",
+            "WALLETUPDATERESTARTBUTTON": "Erġa' ibda u Installa",
+            "WALLETUPDATELATERBUTTON": "Aktar tard",
             "CLIENTUPDATEBUTTON": "Aġġornament",
             "CLIENTUPDATECANCELBUTTON": "Taġġornax",
             "CLIENTUPDATESKIPBUTTON": "Aqbeż dan l-Aġġornament",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Kwalunkwe backups preċedenti li għamilt tal-fajl tal-kartiera tiegħek għandhom jiġu sostitwiti bil-fajl tal-kartiera kriptat li għadu kif ġie ġġenerat. Għal raġunijiet ta' sigurtà, backups preċedenti tal-fajl tal-kartiera mhux kriptat ma jibqgħux jintużaw hekk kif tibda tuża l-kartiera kriptata l-ġdida.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Waqaf Mhux Mistenni",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kien hemm problema bil-Metrix Core li wasslitu biex jittermina. Huwa rakkomandat li tiċċekkja l-fajl debug.log tiegħek għal problemi.",
+            "CLIENTUNKNOWNERRORTITLE": "Żball fil-Komunikazzjoni tal-Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Kien hemm problema fil-komunikazzjoni ma' Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl debug.log tiegħek għal problemi.",
+            "BOOTSTRAPFAILEDTITLE": "Falla l-Bootstrap tal-Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Kien hemm problema fil-bootstrapping ta' Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl tal-log tal-Altitude tiegħek għal problemi.",
+            "BOOTSTRAPOFFERTITLE": "Kartiera Sinifikament Skaduta",
+            "BOOTSTRAPOFFERINFO": "Bootstrap reċenti huwa disponibbli li jista' jaġġorna malajr lil Metrix Core. Li tkompli b'sinkronizzazzjoni normali minflok jista' jieħu diversi jiem biex titlesta, peress li l-kartiera tiegħek teħtieġ li tniżżel u tivverifika kull blokk li tkun tilfet.",
+            "BOOTSTRAPOFFERBUTTON": "Niżżel Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Kompli s-Sinkronizzazzjoni Normali",
+            "BOOTSTRAPSPACEINFO": "M'hemmx biżżejjed spazju liberu fuq id-diska biex tniżżel u tiġi estratta l-bootstrap. Meħtieġ: {required}, Disponibbli: {free}. Ħeles ftit spazju u erġa' pprova.",
+            "STARTUPFAILEDTITLE": "Il-Bidu tal-Metrix Core Falla",
+            "STARTUPFAILEDINFO": "Kien hemm żball fil-bidu tal-Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl tal-log tal-Altitude tiegħek għal problemi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Għodod ta' Rkupru",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurazzjoni invalida ta' metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Il-metrix.conf tiegħek għandu setup ta' masternode invalidu li se jikkawża li Metrix Core jagħlaq immedjatament. Jekk jogħġbok iċċekkja dan il-fajl.",
             "ADDREMOTEMNTITLE": "Żid Masternode Remot",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Ċavetta Privata tal-Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indċi tat-Tranżazzjoni tal-Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Falla l-Bootstrap tal-Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Kien hemm problema fil-bootstrapping ta' Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl tal-log tal-Altitude tiegħek għal problemi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Għodod ta' Rkupru",
-            "STARTUPFAILEDTITLE": "Il-Bidu tal-Metrix Core Falla",
-            "STARTUPFAILEDINFO": "Kien hemm żball fil-bidu tal-Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl tal-log tal-Altitude tiegħek għal problemi.",
-            "CLIENTUNKNOWNERRORTITLE": "Żball fil-Komunikazzjoni tal-Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Kien hemm problema fil-komunikazzjoni ma' Metrix Core. Huwa rrakkomandat li tiċċekkja l-fajl debug.log tiegħek għal problemi.",
             "UNENROLLGOVERNORTITLE": "Ikkonferma t-Tneħħija mir-Reġistrazzjoni tal-Gvernatur",
             "UNENROLLGOVERNORCONTENT": "Żgur li trid tneħħi r-reġistrazzjoni tal-Gvernatur tiegħek? Mhux se tkun tista' tibqa' tivvota fuq il-governanza tal-katina.",
-            "WALLETUPDATEREADYTITLE": "Aġġornament tal-Altitudni Lest",
-            "WALLETUPDATEREADYINFO": "L-aġġornament ġie mniżżel. Erġa' ibda Altitude issa biex tinstallah?",
-            "WALLETUPDATERESTARTBUTTON": "Erġa' ibda u Installa",
-            "WALLETUPDATELATERBUTTON": "Aktar tard",
             "DAPPCONNECTTITLE": "Qabbad mas-Sit",
             "DAPPCONNECTINFO": "Dan is-sit irid jikkonnettja mal-kartiera tiegħek u jara l-indirizz u l-bilanċ tiegħek.",
             "DAPPCONNECTBUTTON": "Qabbad",
+            "DAPPCONNECTADDRESSLABEL": "Indirizz",
+            "DAPPAPPROVEBUTTON": "Approva",
             "DAPPREJECTBUTTON": "Irrifjuta",
             "DAPPSENDTITLE": "Talba għal Tranżazzjoni ta' Kuntratt",
             "DAPPSENDINFO": "Dan is-sit qed jitlob li jibgħat transazzjoni ta' kuntratt mill-kartiera tiegħek.",
-            "DAPPSIGNTITLE": "Talba għal Messaġġ ta' Firma",
-            "DAPPSIGNINFO": "Dan is-sit qed jitlob li jiffirma messaġġ bl-indirizz tal-kartiera tiegħek.",
-            "DAPPNOTREADY": "Għadni ma nistax nikkonnettja mas-sit - Metrix Core għadu qed jibda.",
-            "DAPPNOWALLET": "Ma nistax nikkonnettja mas-sit - l-ebda indirizz tal-kartiera mhu disponibbli.",
-            "DAPPAPPROVEBUTTON": "Approva",
-            "DAPPCONNECTADDRESSLABEL": "Indirizz",
             "DAPPSENDSITELABEL": "Sit",
             "DAPPSENDCONTRACTLABEL": "Indirizz tal-Kuntratt",
             "DAPPSENDAMOUNTLABEL": "Ammont",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tariffa Massima tan-Netwerk",
             "DAPPSENDMAXTOTALLABEL": "Total Massimu",
             "DAPPSENDDATALABEL": "Dejta tal-Kuntratt",
+            "DAPPSIGNTITLE": "Talba għal Messaġġ ta' Firma",
+            "DAPPSIGNINFO": "Dan is-sit qed jitlob li jiffirma messaġġ bl-indirizz tal-kartiera tiegħek.",
             "DAPPSIGNMESSAGELABEL": "Messaġġ",
-            "BOOTSTRAPOFFERTITLE": "Kartiera Sinifikament Skaduta",
-            "BOOTSTRAPOFFERINFO": "Bootstrap reċenti huwa disponibbli li jista' jaġġorna malajr lil Metrix Core. Li tkompli b'sinkronizzazzjoni normali minflok jista' jieħu diversi jiem biex titlesta, peress li l-kartiera tiegħek teħtieġ li tniżżel u tivverifika kull blokk li tkun tilfet.",
-            "BOOTSTRAPOFFERBUTTON": "Niżżel Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Kompli s-Sinkronizzazzjoni Normali",
-            "BOOTSTRAPSPACEINFO": "M'hemmx biżżejjed spazju liberu fuq id-diska biex tniżżel u tiġi estratta l-bootstrap. Meħtieġ: {required}, Disponibbli: {free}. Ħeles ftit spazju u erġa' pprova."
+            "DAPPNOTREADY": "Għadni ma nistax nikkonnettja mas-sit - Metrix Core għadu qed jibda.",
+            "DAPPNOWALLET": "Ma nistax nikkonnettja mas-sit - l-ebda indirizz tal-kartiera mhu disponibbli."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ktieb tal-Indirizzi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Netwerk attwali"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Daħħal l-indirizz ta' sit web3",
-            "GOBUTTON": "Mur",
-            "QUICKLAUNCH": "Tnedija Mgħaġġla",
-            "DEVTOOLS": "Iftaħ l-Għodda tal-Iżviluppatur",
-            "ADDLINK": "Żid Link",
-            "LINKNAMEPLACEHOLDER": "Isem",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Issejvja",
-            "CANCEL": "Ikkanċella",
-            "REMOVE": "Neħħi",
-            "REMOVECONFIRM": "Tneħħi din il-link rapida?",
-            "LINKEXISTS": "Dak il-link diġà jinsab fil-lista ta' tnedija rapida tiegħek",
-            "LINKINVALID": "Daħħal indirizz tas-sit validu",
-            "LINKNETWORKLABEL": "Netwerk",
-            "LOADFAILED": "Ma rnexxiex jitgħabba s-sit",
-            "SECURESITE": "Il-konnessjoni hija sigura - ċertifikat SSL validu",
-            "INSECURESITE": "Il-konnessjoni mhix sigura",
-            "INVALIDCERTSITE": "Il-konnessjoni mhijiex privata - ċertifikat SSL invalidu jew mhux affidabbli"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Kartiera ta' Riżerva...",
             "SIGNMESSAGE": "Iffirma l-Messaġġ...",
             "VERIFYMESSAGE": "Ivverifika l-Messaġġ...",
-            "LOCALE": "Lingwa...",
-            "RESTARTCORE": "Erġa' ibda l-Metrix Core",
-            "EXIT": "Ħruġ",
             "OPTIONS": "Għażliet...",
+            "LOCALE": "Lingwa...",
             "CURRENCIES": "Uri l-Munita...",
-            "ALTITUDEREFRESH": "Aġġorna d-Dejta tal-Altitudni"
+            "RESTARTCORE": "Erġa' ibda l-Metrix Core",
+            "ALTITUDEREFRESH": "Aġġorna d-Dejta tal-Altitudni",
+            "EXIT": "Ħruġ"
         },
         "ENCRYPT": {
             "TITLE": "Ikkripta",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Bilanċ Totali",
+        "SPENDABLEBALANCE": "Bilanċ li Jista' Jinfaqa'",
+        "PENDINGBALANCE": "Bilanċ Pendenti",
         "CANCELBUTTON": "Ikkanċella",
         "DONEBUTTON": "Magħmul",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Aċċetta",
         "CLEARALLBUTTON": "Neħħi Kollox",
         "ENTERACCOUNTLABEL": "Daħħal tikketta għal dan l-indirizz",
         "ENTERADDRESSLABEL": "Daħħal indirizz Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Issortja Skont",
         "SEARCH": "Fittex",
         "FEE": "Ħlas",
-        "ACCEPTBUTTON": "Aċċetta",
         "CONFIRMED": "Ikkonfermat",
         "UNCONFIRMED": "Mhux ikkonfermat",
-        "PENDINGBALANCE": "Bilanċ Pendenti",
-        "SPENDABLEBALANCE": "Bilanċ li Jista' Jinfaqa'",
         "SAVEBUTTON": "Issejvja"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Qed terġa' tibda Metrix Core...",
         "BOOTSTRAPPING": "Qed niżżel il-bootstrap...",
         "BOOTSTRAPEXTRACTING": "Estrazzjoni tal-bootstrap...",
-        "TIMEREMAINING": "li fadal:"
+        "TIMEREMAINING": "li fadal:",
+        "DEVRPCOVERRIDEACTIVE": "Override ta' konnessjoni RPC tal-iżviluppatur huwa ssettjat (Għażliet > Żviluppatur) u mhux qed jirrispondi. Neħħih biex terġa' tikkonnettja mad-daemon lokali normalment.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Neħħi l-Override tal-RPC u Erġa' Qabbad"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kont ġdid maħluq b'suċċess",
         "ADDRESSCOPIEDCLIPBOARD": "L-indirizz ġie kkupjat fil-clipboard",
+        "COPIEDCLIPBOARD": "Ikkupjat fil-clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranżazzjonijiet ikkupjati fil-clipboard",
         "EMPTYFIELDS": "Jekk jogħġbok imla l-oqsma kollha",
         "NOUPDATE": "L-ebda aġġornament disponibbli",
         "WALLETBACKEDUP": "Il-backup tal-kartiera b'suċċess",
+        "WALLETBACKUPFAILED": "Il-backup awtomatiku tal-kartiera falla - iċċekkja l-post tal-backup tiegħek u l-ispazju disponibbli fuq id-diska",
         "PASSPHRASEMISMATCH": "Il-frażijiet tal-password li daħħalt ma jaqblux",
         "CHECKINGUPDATE": "Qed niċċekkja għal aġġornamenti...",
         "CHECKINGUPDATEFAILED": "Ma tistax tiċċekkja għal aġġornament. Iċċekkja n-netwerk tiegħek.",
+        "WALLETUPDATEDOWNLOADING": "Qed niżżel l-aġġornament...",
         "SENDINGEXCEEDSBALANCE": "L-ammont li qed tibgħat jaqbeż il-bilanċ magħżul tiegħek",
         "MISSINGCHANGEADDRESS": "Trid tispeċifika indirizz tal-bidla",
         "MISSINGDESTINATIONADDRESS": "Trid tispeċifika indirizz tad-destinazzjoni",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Qed tikkripta l-kartiera...",
         "CHANGINGPASSPHARASE": "Nibdlu l-passphrase...",
         "STARTINGMASTERNODE": "Nibdew il-masternode...",
+        "STOPPINGMASTERNODE": "Qed inwaqqfu l-masternode...",
         "SENDINGTRANSACTION": "Qed tintbagħat it-tranżazzjoni...",
         "SIGNINGMESSAGE": "Messaġġ tal-iffirmar...",
         "SIGNEDMESSAGE": "Messaġġ iffirmat",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Qed niftaħ il-kartiera...",
         "TRANSACTIONMISMATCH": "Żball fit-tranżazzjoni. Jekk jogħġbok erġa' pprova.",
         "MINIMUMCONFIRMATIONS": "L-inputs kollha jeħtieġu mill-inqas konferma waħda qabel ma jintefqu.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranżazzjonijiet ikkupjati fil-clipboard",
-        "STOPPINGMASTERNODE": "Qed inwaqqfu l-masternode...",
         "FAILEDTOWRITECONFIG": "Kien hemm problema biex tikteb fil-fajl metrix.conf tiegħek. Iċċekkja li l-fajl jeżisti u li Altitude għandu permessi tal-kitba.",
         "NOPUBLICUP": "Ma nstab l-ebda indirizz IP pubbliku. Iċċekkja l-konnessjoni tal-internet tiegħek u erġa' ibda Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurazzjoni tal-Masternode lokali...",
         "REPORTINGISSUE": "Qed niksbu informazzjoni dijanjostika... Din l-informazzjoni se tiġi kkupjata fil-clipboard tiegħek.",
-        "WALLETUPDATEDOWNLOADING": "Qed niżżel l-aġġornament...",
-        "WALLETBACKUPFAILED": "Il-backup awtomatiku tal-kartiera falla - iċċekkja l-post tal-backup tiegħek u l-ispazju disponibbli fuq id-diska",
         "EXPLORERURLSAVED": "Il-URL tal-Esploratur ġie ssejvjat",
         "EXPLORERURLRESET": "Il-URL tal-Esploratur reġa' lura għall-modalità awtomatika",
         "EXPLORERURLINVALID": "Dik mhix URL http(s) valida",
-        "EXPLORERURLUNREACHABLE": "Ma stajtx nilħaq dak il-URL - iċċekkjah u erġa' pprova"
+        "EXPLORERURLUNREACHABLE": "Ma stajtx nilħaq dak il-URL - iċċekkjah u erġa' pprova",
+        "DEVRPCHOSTSAVED": "Il-host RPC ġie ssejvjat",
+        "DEVRPCHOSTRESET": "Il-host RPC reġa' lura għall-inadempjenza (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Muniti Riċevuti",
+        "NEWTRANSACTION_TITLE_STAKE": "Ishma Riċevuti",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Irċevejt Premju tal-Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Ftit sekondi",
@@ -533,11 +587,6 @@
         "MONTHS": "xhur",
         "AYEAR": "Sena",
         "YEARS": "snin"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Muniti Riċevuti",
-        "NEWTRANSACTION_TITLE_STAKE": "Ishma Riċevuti",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Irċevejt Premju tal-Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Il-Gvernaturi huma responsabbli għall-votazzjoni fuq il-baġits ta' kull xahar u l-bidliet fil-blockchain. Tista' ssir Gvernatur billi tissakkar il-kollateral korrett fil-kuntratt tal-Governanza.",
                 "COLLATERAL": "Kollateral meħtieġ",
                 "ENROLL": "Irreġistra",
+                "SELECTAGOVERNOR": "Agħżel indirizz ta' gvernatur eliġibbli",
+                "GOVERNORNOTSELECTED": "Ma ntgħażel l-ebda indirizz eliġibbli",
                 "CONFIRMENROLL": "Int se tirreġistra bħala Gvernatur. Dan se jibgħat tranżazzjoni bil-kollateral meħtieġ għall-kuntratt ta' governanza. Tista' tneħħi r-reġistrazzjoni tiegħek f'kull ħin.",
                 "ISGOVERNORTITLE": "Inti Gvernatur attiv!",
                 "ISGOVERNORDETAIL1": "Il-gvernaturi huma responsabbli għall-votazzjoni dwar il-baġits ta' kull xahar u l-bidliet fil-blockchain.",
                 "ISGOVERNORDETAIL2": "Biex tibqa' Gvernatur ikollok bżonn tipparteċipa f'mill-inqas vot wieħed kull 30 jum.",
                 "ISGOVERNORDETAIL3": "Jekk m'hemm xejn x'tivvota fuqu allura tista' tkompli r-reġistrazzjoni tiegħek manwalment billi tibgħat ping attiv.",
+                "MYGOVERNORADDRESS": "L-Indirizz tal-Gvernatur Tiegħi",
                 "UNENROLL": "Neħħi r-reġistrazzjoni",
                 "PING": "Ibgħat Ping Attiv",
                 "LASTPINGTITLE": "L-aħħar ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "jiem",
                 "GOVERNORVOTEMATURITYHOURS": "sigħat",
                 "GOVERNORVOTEMATURITYSUFFIX": "sakemm jimmatura",
-                "MYGOVERNORADDRESS": "L-Indirizz tal-Gvernatur Tiegħi",
-                "SELECTAGOVERNOR": "Agħżel indirizz ta' gvernatur eliġibbli",
-                "GOVERNORNOTSELECTED": "Ma ntgħażel l-ebda indirizz eliġibbli",
                 "NOTFULLYSYNCEDTITLE": "L-istatus ta' Gvernatur mhux disponibbli",
                 "NOTFULLYSYNCEDDETAIL": "L-istatus tar-reġistrazzjoni tal-Gvernatur tiegħek se jsir viżibbli meta l-blockchain tiegħek ikun kompletament sinkronizzat.",
                 "DGPMIGRATIONTITLE": "Migrazzjoni tad-DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Il-proposta tiegħek inħolqot b'suċċess",
             "ENROLLINGGOVERNOR": "Reġistrazzjoni bħala Gvernatur...",
             "ENROLLEDGOVERNOR": "Ir-reġistrazzjoni tiegħek tkun kompluta ladarba t-tranżazzjoni tiegħek tiġi kkonfermata",
-            "VOTINGONPROPOSAL": "Nibgħat vot dwar il-proposta",
-            "VOTEDONPROPOSAL": "Il-vot tiegħek se jingħadd ladarba t-tranżazzjoni tiġi kkonfermata.",
             "PINGINGGOVERNOR": "Qed nibgħat il-ping...",
             "PINGEDGOVERNOR": "Il-ping intbagħat b'suċċess. Il-Gvernatur tiegħek se jiġi aġġornat ladarba t-tranżazzjoni tiġi kkonfermata.",
+            "VOTINGONPROPOSAL": "Nibgħat vot dwar il-proposta",
+            "VOTEDONPROPOSAL": "Il-vot tiegħek se jingħadd ladarba t-tranżazzjoni tiġi kkonfermata.",
             "UNENROLLINGGOVERNOR": "Qed inneħħi r-reġistrazzjoni tal-Gvernatur...",
             "UNENROLLEDGOVERNOR": "Tranżazzjoni mibgħuta. Il-Gvernatur tiegħek se jitneħħa mir-reġistrazzjoni ladarba t-tranżazzjoni tiġi kkonfermata.",
             "GOVERNORNOTMATURE": "Il-Gvernatur tiegħek għadu mhux matur biżżejjed biex iwettaq din l-azzjoni."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Ixtri Metrix",
+                "SEARCH": "Storja"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Inti tibgħat",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Storja tat-Tranżazzjonijiet",
                 "SEARCHBUTTON": "FITTXA",
+                "SEARCHPLACEHOLDER": "Daħħal l-indirizz MRX jew BTC",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Tip ta' TX",
                 "TRANSACTIONAMOUNT": "Ammont",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Ikkonfermat",
                 "TRANSACTIONNOTCONFIRMED": "Mhux Ikkonfermat",
                 "TRANSACTIONREFUNDED": "Rimborżat - Taħt il-minimu",
-                "AVGSWAPPRICE": "Prezz Medju tal-Iskambju",
-                "SEARCHPLACEHOLDER": "Daħħal l-indirizz MRX jew BTC"
+                "AVGSWAPPRICE": "Prezz Medju tal-Iskambju"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Qed tiġġenera l-Indirizz tal-Iskambju...",
             "ALREADYHAVEADDRESS": "Diġà għandek indirizz BTC assoċjat ma' dan l-indirizz Metrix",
             "NOADDRESS": "Ma daħħaltx indirizz Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Ixtri Metrix",
-                "SEARCH": "Storja"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Uri",
                 "EMPTYTITLE": "Għadhom ma nstabu l-ebda tokens",
                 "EMPTYDETAIL": "Altitude awtomatikament jiċċekkja block explorer għal tokens MRC20 u MRC721 mibgħuta lill-indirizzi tiegħek, imbagħad jivverifika kollox live man-node tiegħek stess. Tista' wkoll iżżid token manwalment jekk taf l-indirizz tal-kuntratt tiegħu.",
+                "EMPTYDETAILCHECKINGDISABLED": "L-iċċekkjar awtomatiku tat-tokens huwa mitfi, għalhekk l-indirizzi tiegħek mhux qed jiġu ċċekkjati għat-tokens. Erġa' ixgħelha hawn fuq, jew żid token manwalment jekk taf l-indirizz tal-kuntratt tiegħu.",
                 "HIDDENTITLE": "Tokens Moħbija",
                 "CONTEXTMENUHIDE": "Aħbi t-Token",
                 "ITEMSSUFFIX": "oġġett(i)",
-                "NONENUMERABLETOOLTIP": "Din il-kollezzjoni ma tappoġġjax il-lista ta' oġġetti individwali - minflok turi kemm għandek."
+                "NONENUMERABLETOOLTIP": "Din il-kollezzjoni ma tappoġġjax il-lista ta' oġġetti individwali - minflok turi kemm għandek.",
+                "CHECKINGENABLED": "Iċċekkjar Fuq",
+                "CHECKINGDISABLED": "Immarkar Mitfi",
+                "CHECKINGENABLEDTOOLTIP": "L-iċċekkjar tat-tokens huwa mixgħul - Altitude tiċċekkja l-indirizzi tiegħek perjodikament għal tokens u tirrifreska l-bilanċi. Ikklikkja biex titfi.",
+                "CHECKINGDISABLEDTOOLTIP": "Il-verifika tat-tokens hija mitfija - ikklikkja biex terġa' tixgħelha.",
+                "CHECKINGDISABLEDNOTICE": "L-iċċekkjar awtomatiku tat-tokens huwa mitfi. L-indirizzi tiegħek mhumiex qed jiġu skennjati għat-tokens u l-bilanċi mhux se jiġu aġġornati. Xorta tista' żżid token manwalment."
             },
             "ADDTOKEN": {
                 "TITLE": "Żid it-Token",

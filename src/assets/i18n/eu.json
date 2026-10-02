@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Sortu kontua",
             "HIDEEMPTYACCOUNTS": "Ezkutatu izenik gabeko kontu hutsak"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Orokorra",
+            "TRANSACTIONSTAB": "Transakzioak",
+            "ADDRESSTABS": "Helbideak"
+        },
         "SEND": {
             "ADDRECIPIENT": "Gehitu hartzailea",
             "SEND": "Bidali",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Baieztapenak",
             "ALL_SELECTUNSELECT": "Guztiak aktibatu/desaktibatu",
+            "TREEMODE": "Zuhaitz modua",
+            "LISTMODE": "Zerrenda modua",
             "SENDAVAILABLE": "Erabili eskuragarri dagoen saldoa",
             "INPUTLOCKED": "Sarrera blokeatuta dago. Sarrera hau desblokeatu beharko duzu gastatzeko.",
             "CONTEXTMENULOCKINPUT": "Blokeatu sarrera",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Kuotaren ondoren",
             "QUANTITY": "Kantitatea",
             "BYTES": "Byteak",
-            "TREEMODE": "Zuhaitz modua",
-            "LISTMODE": "Zerrenda modua",
             "ALERTFEECHANGETITLE": "Tasa Aldaketa",
             "ALERTFEECHANGECONTENT": "Benetako transakzio-kuota espero baino handiagoa da. Mesedez, baieztatu kuota berria:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Sortu kontratua",
+            "INFO": "Zabaldu kontratu adimendun bat sarean bere bytecode konpilatua bidaliz. Hau kate-funtzio nagusi bat da - egiaztatu berriro zure bytecode eta gas ezarpenak zabaldu aurretik, zabalkundea ezin da desegin.",
+            "FROM": "-tik",
+            "BYTECODE": "Bytekode",
+            "BYTECODEPLACEHOLDER": "Itsatsi konpilatutako kontratuaren bytecodea (hex)",
+            "INVALIDBYTECODE": "Bytecodeak karaktere kopuru bikoitia duen baliozko kate hexadezimal bat izan behar du (0-9, a-f).",
+            "GASLIMIT": "Gasaren muga",
+            "GASLIMITRANGE": "Barrutia",
+            "GASPRICE": "Gasaren prezioa (MRX gas unitateko)",
+            "GASPRICEMIN": "Gutxienekoa",
+            "ESTIMATEDMAXCOST": "Gehienezko kostu estimatua",
+            "DEPLOYBUTTON": "Kontratua zabaldu",
+            "INCOMPLETEFORM": "Hautatu bidaltzailearen helbidea, idatzi byte-kode baliozkoa eta ezarri gasolina-muga/prezio baliozkoa.",
+            "HIGHGASPRICETITLE": "Gasolina Prezio Altua",
+            "HIGHGASPRICEINFO": "Ezarri duzun gasolinaren prezioa ezohiko altua da. Hedapen honek honako kostua izan dezake:",
+            "DEPLOYING": "Kontratua zabaltzen...",
+            "DEPLOYED": "Kontratuaren hedapena aurkeztu da",
+            "RESULTTITLE": "Hedapenaren emaitza",
+            "STATUS": "Egoera",
+            "STATUSPENDING": "Baieztapenaren zain...",
+            "STATUSCONFIRMED": "Arrakastaz zabaldu da",
+            "STATUSFAILED": "Hedapenak huts egin du",
+            "TXID": "Transakzioaren IDa",
+            "SENDER": "Bidaltzailea",
+            "CONTRACTADDRESS": "Kontratuaren Helbidea",
+            "GASUSED": "Erabilitako gasa",
+            "DONEBUTTON": "Eginda",
+            "DEPLOYANOTHERBUTTON": "Beste bat zabaldu"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transakzioak",
+            "COPYBLOCKHASH": "Kopiatu bloke-hash-a",
+            "COPYTXID": "Kopiatu transakzioaren IDa",
+            "COPYACCOUNT": "Kopiatu kontuaren izena",
+            "COPYADDRESS": "Kopiatu helbidea",
+            "COPYAMOUNT": "Kopiatu zenbatekoa",
+            "COPTBLOCKINDEX": "Kopiatu bloke-indizea",
+            "EXPLORER": "Ireki bloke-arakatzailean"
         },
         "STAKING": {
             "UNLOCK": "Desblokeatu apustua egiteko",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Helbidea",
             "ENABLED": "Gaituta",
-            "STARTBUTTON": "Hasi lokalki",
-            "STARTALIASBUTTON": "Hasierako aliasa",
-            "STARTALLBUTTON": "Hasi guztiak",
             "NOMASTERNODES": "Ez duzu masternoderik",
             "NOMNOUTPUTS": "Ez da Masternode irteerarik aurkitu. Tokiko Masternode bat exekutatzeko, bidali zehazki 2, 5, 25, 50 edo 100 milioi txanpon zure Masternode helbidera eta itxaron 15 baieztapen.",
+            "STARTBUTTON": "Hasi lokalki",
             "STOPBUTTON": "Gelditu lokala",
+            "STARTALIASBUTTON": "Hasierako aliasa",
             "STOPALIASBUTTON": "Gelditu Alias",
+            "STARTALLBUTTON": "Hasi guztiak",
             "ADDREMOTE": "Gehitu urruneko Masternode bat",
             "REMOVEMN": "Kendu Masternode",
             "ADDLOCAL": "Konfiguratu tokiko masternode-a",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Orokorra",
                 "COREVERSION": "Oinarrizko bertsioa",
+                "ALTITUDEVERSION": "Altitude Bertsioa",
                 "PROTOCOLVERSION": "Protokoloaren bertsioa",
                 "WALLETVERSION": "Wallet.dat bertsioa",
                 "NETWORKTITLE": "Sarea",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternode kopurua",
                 "BLOCKCHAINTITLE": "Bloke-katea",
                 "NUMBERBLOCKS": "Bloke kopurua une honetan",
-                "BESTBLOCKTTIME": "Azken blokeko ordua",
-                "ALTITUDEVERSION": "Altitude Bertsioa"
+                "BESTBLOCKTTIME": "Azken blokeko ordua"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Ongi etorri Metrix Core RPC kontsolara. Idatzi laguntza eskuragarri dauden komandoen ikuspegi orokorra lortzeko.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Hautatu hizkuntza"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transakzioak",
-            "COPYBLOCKHASH": "Kopiatu bloke-hash-a",
-            "COPYTXID": "Kopiatu transakzioaren IDa",
-            "COPYACCOUNT": "Kopiatu kontuaren izena",
-            "COPYADDRESS": "Kopiatu helbidea",
-            "COPYAMOUNT": "Kopiatu zenbatekoa",
-            "COPTBLOCKINDEX": "Kopiatu bloke-indizea",
-            "EXPLORER": "Ireki bloke-arakatzailean"
+        "CURRENCY": {
+            "TITLE": "Hautatu bistaratzeko moneta"
         },
         "EXPLORER": {
             "TITLE": "Bloke-arakatzailea",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Sarea",
             "WINDOTAB": "Leihoa",
+            "BACKUPTAB": "Babeskopia",
+            "EXPLORERTAB": "Esploratzailea",
+            "DEVELOPERTAB": "Garatzailea",
             "NETWORK": {
                 "PROXY": "Konektatu SOCKS5 proxyaren bidez",
                 "PROXYIP": "Proxy IPa",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Txikitu ixtean",
                 "BEHAVIOURTITLE": "Sistemaren erretilua eta leihoaren portaera"
             },
-            "BACKUPTAB": "Babeskopia",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Babeskopia automatikoa",
                 "ENABLED": "Egin automatikoki wallet.dat fitxategiaren babeskopia programatu baten arabera",
                 "ENABLEDINFO": "Zure zorro fitxategiaren babeskopia berri bat sortzen du programatuta, beraz, kopia berri bat beti eskuragarri dago zerbait gaizki ateratzen bada.",
+                "INTERVALLABEL": "Egin babeskopia (egunetan)",
                 "LASTBACKUP": "Azken babeskopia:",
                 "NEVERBACKEDUP": "Ez da babeskopia automatikorik egin oraindik.",
                 "BACKUPNOWBUTTON": "Egin babeskopia orain",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Berrezarri lehenetsietara",
                 "PRUNETITLE": "Babeskopien historia",
                 "PRUNEINFO": "Babeskopia automatiko zaharragoak ezabatzen dira karpeta hau betiko hazi ez dadin; behean dauden berrienak bakarrik gordetzen dira.",
-                "KEEPCOUNTLABEL": "Azkena mantendu",
-                "INTERVALLABEL": "Egin babeskopia (egunetan)"
+                "KEEPCOUNTLABEL": "Azkena mantendu"
             },
-            "EXPLORERTAB": "Esploratzailea",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Bloke-arakatzailea",
                 "BLOCKEXPLORERINFO": "Gunea bloke-arakatzailean transakzio bat ikustean ireki zen (adibidez, transakzio batean eskuineko botoiarekin klik eginez > Arakatzailean ikusi).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Sare nagusia",
                 "TESTNET": "Proba-sarea",
                 "REGTEST": "Erregproba"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Garatzaile modua",
+                "DEVMODEINFO": "Berez desaktibatuta eta garatzaileentzat bakarrik. Hau gaitzeak RPC konexioa gainidazteko aukerak erakusten ditu; erabiltzaile estandarrek hau desaktibatuta utzi beharko lukete.",
+                "DEVMODELABEL": "Gaitu garatzaile modua",
+                "WARNING": "Ezarpen hauek garapen helburuetarako soilik dira. Aldatzeak zorroa deabru batera konektatzea eragotzi dezake; erabili hau zer egiten ari zaren badakizu bakarrik.",
+                "RPCHOSTTITLE": "RPC konexioa",
+                "RPCHOSTINFO": "Berez, Altitude-k berak kudeatzen duen daemonera konektatzen da, makina honetan (127.0.0.1). Hauek gainidazteak beste daemon batera konektatzeko aukera ematen dio - adibidez, urruneko regtest instantzia batera, lokalki bat exekutatu beharrik gabe. Konexioa arrakastatsua bada, Altitude-k ez du bere tokiko daemon-a deskargatuko edo abiaraziko. Helburuko daemon-aren rpcallowip-ak konexio hau baimendu behar du, eta beheko rpcuser/rpcpassword-ak bere konfigurazioan bat etorri behar du. Berehala hartzen du eragina, ez da berrabiarazi beharrik.",
+                "RPCHOSTLABEL": "RPC ostalaria",
+                "RPCPORTLABEL": "RPC ataka",
+                "RPCUSERLABEL": "RPC erabiltzaile-izena",
+                "RPCPASSWORDLABEL": "RPC pasahitza"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Orokorra",
-            "TRANSACTIONSTAB": "Transakzioak",
-            "ADDRESSTABS": "Helbideak"
-        },
-        "CURRENCY": {
-            "TITLE": "Hautatu bistaratzeko moneta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Aginte-panela",
             "SEND": "Bidali",
+            "CREATECONTRACT": "Sortu kontratua",
             "RECEIVE": "Jaso",
             "TRANSACTIONS": "Transakzioak",
             "STAKING": "Apustua egitea",
             "MASTERNODES": "Masternodeak",
+            "EXPLORER": "Bloke-arakatzailea",
             "SYNC": {
                 "CONNECTING": "Konektatzen",
                 "NOBLOCKS": "Blokeen zain",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Diru-zorroak ez du une honetan apusturik egiten",
                 "MASTERNODEON": "Masternode martxan dago une honetan",
                 "MASTERNODEOFF": "Masternode-a ez dago martxan une honetan"
-            },
-            "EXPLORER": "Bloke-arakatzailea"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Sartu web3 gune baten helbidea",
+            "GOBUTTON": "Joan",
+            "QUICKLAUNCH": "Abiarazte azkarra",
+            "DEVTOOLS": "Ireki garatzaileentzako tresnak",
+            "ADDLINK": "Gehitu esteka",
+            "LINKNAMEPLACEHOLDER": "Izena",
+            "LINKURLPLACEHOLDER": "https://adibidea.com",
+            "SAVE": "Gorde",
+            "CANCEL": "Utzi",
+            "REMOVE": "Kendu",
+            "REMOVECONFIRM": "Esteka azkar hau kendu nahi duzu?",
+            "LINKEXISTS": "Esteka hori dagoeneko zure abiarazte azkarreko zerrendan dago",
+            "LINKINVALID": "Sartu gunearen helbide baliodun bat",
+            "LINKNETWORKLABEL": "Sarea",
+            "LOADFAILED": "Ezin izan da gunea kargatu",
+            "SECURESITE": "Konexioa segurua da - SSL ziurtagiri baliozkoa",
+            "INSECURESITE": "Konexioa ez da segurua",
+            "INVALIDCERTSITE": "Konexioa ez da pribatua - SSL ziurtagiri baliogabea edo fidagarria ez dena"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Sartu zure zorroaren pasahitza",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core-rako eguneratze bat eskuragarri dago. Orain instalatu nahi duzu?",
             "WALLETUPDATETITLE": "Altitudearen eguneratzea eskuragarri",
             "WALLETUPDATEINFO": "Altitude-rako eguneratze bat eskuragarri dago. Orain deskargatu nahi al duzu?",
+            "WALLETUPDATEREADYTITLE": "Altitudearen eguneratzea prest",
+            "WALLETUPDATEREADYINFO": "Eguneratzea deskargatu da. Berrabiarazi Altitude orain instalatzeko?",
+            "WALLETUPDATERESTARTBUTTON": "Berrabiarazi eta instalatu",
+            "WALLETUPDATELATERBUTTON": "Geroago",
             "CLIENTUPDATEBUTTON": "Eguneratu",
             "CLIENTUPDATECANCELBUTTON": "Ez eguneratu",
             "CLIENTUPDATESKIPBUTTON": "Saltatu eguneratze hau",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Zure zorro fitxategiaren aurreko babeskopiak zorro fitxategi enkriptatu berriarekin ordezkatu beharko lirateke. Segurtasun arrazoiengatik, zorro fitxategi enkriptatu gabearen aurreko babeskopiak alferrikakoak izango dira zorro enkriptatu berria erabiltzen hasten zarenean.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ustekabean gelditu da",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-rekin arazo bat egon da, eta horren ondorioz amaitu egin da. Gomendagarria da debug.log fitxategia egiaztatzea arazoak dauden ikusteko.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core komunikazio errorea",
+            "CLIENTUNKNOWNERRORINFO": "Arazo bat egon da Metrix Core-rekin komunikatzeko. Gomendagarria da debug.log fitxategia egiaztatzea arazoak dauden ikusteko.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ak huts egin du",
+            "BOOTSTRAPFAILEDINFO": "Arazo bat egon da Metrix Core abiaraztean. Gomendagarria da zure Altitude erregistro fitxategia egiaztatzea arazoak dauden ikusteko.",
+            "BOOTSTRAPOFFERTITLE": "Diru-zorroa nabarmen zaharkituta dago",
+            "BOOTSTRAPOFFERINFO": "Metrix Core azkar eguneratu dezakeen bootstrap berri bat eskuragarri dago. Sinkronizazio normal batekin jarraitzeak hainbat egun iraun ditzake osatzeko, zure zorroak galdu dituen bloke guztiak deskargatu eta egiaztatu behar baititu.",
+            "BOOTSTRAPOFFERBUTTON": "Deskargatu Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Jarraitu ohiko sinkronizazioarekin",
+            "BOOTSTRAPSPACEINFO": "Ez dago diskoan leku nahikorik bootstrap-a deskargatu eta ateratzeko. Beharrezkoa: {required}, Eskuragarri: {free}. Askatu leku pixka bat eta saiatu berriro.",
+            "STARTUPFAILEDTITLE": "Metrix Core abiaraztea huts egin du",
+            "STARTUPFAILEDINFO": "Errore bat gertatu da Metrix Core abiaraztean. Gomendagarria da zure Altitude erregistro fitxategia egiaztatzea arazoak dauden ikusteko.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Berreskuratze tresnak",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfigurazio baliogabea",
             "CLIENTINVALIDCONFIGINFO": "Zure metrix.conf fitxategiaren konfigurazio baliogabea masternode bat da, eta horrek Metrix Core berehala itxiko du. Mesedez, egiaztatu fitxategi hau.",
             "ADDREMOTEMNTITLE": "Gehitu urruneko Masternode bat",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternodearen gako pribatua",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Indizea",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap-ak huts egin du",
-            "BOOTSTRAPFAILEDINFO": "Arazo bat egon da Metrix Core abiaraztean. Gomendagarria da zure Altitude erregistro fitxategia egiaztatzea arazoak dauden ikusteko.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Berreskuratze tresnak",
-            "STARTUPFAILEDTITLE": "Metrix Core abiaraztea huts egin du",
-            "STARTUPFAILEDINFO": "Errore bat gertatu da Metrix Core abiaraztean. Gomendagarria da zure Altitude erregistro fitxategia egiaztatzea arazoak dauden ikusteko.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core komunikazio errorea",
-            "CLIENTUNKNOWNERRORINFO": "Arazo bat egon da Metrix Core-rekin komunikatzeko. Gomendagarria da debug.log fitxategia egiaztatzea arazoak dauden ikusteko.",
             "UNENROLLGOVERNORTITLE": "Gobernadorearen izen-ematearen baja berretsi",
             "UNENROLLGOVERNORCONTENT": "Ziur zaude zure gobernadorea ezeztatu nahi duzula? Ezingo duzu gehiago kate-gobernantzan bozkatu.",
-            "WALLETUPDATEREADYTITLE": "Altitudearen eguneratzea prest",
-            "WALLETUPDATEREADYINFO": "Eguneratzea deskargatu da. Berrabiarazi Altitude orain instalatzeko?",
-            "WALLETUPDATERESTARTBUTTON": "Berrabiarazi eta instalatu",
-            "WALLETUPDATELATERBUTTON": "Geroago",
             "DAPPCONNECTTITLE": "Konektatu gunera",
             "DAPPCONNECTINFO": "Gune honek zure zorroarekin konektatu eta zure helbidea eta saldoa ikusi nahi ditu.",
             "DAPPCONNECTBUTTON": "Konektatu",
+            "DAPPCONNECTADDRESSLABEL": "Helbidea",
+            "DAPPAPPROVEBUTTON": "Onartu",
             "DAPPREJECTBUTTON": "Baztertu",
             "DAPPSENDTITLE": "Kontratu Transakzio Eskaera",
             "DAPPSENDINFO": "Gune honek zure zorrotik kontratu-transakzio bat bidaltzea eskatzen ari da.",
-            "DAPPSIGNTITLE": "Sinadura Mezu Eskaera",
-            "DAPPSIGNINFO": "Gune honek zure zorroaren helbidearekin mezu bat sinatzea eskatzen ari da.",
-            "DAPPNOTREADY": "Ezin da gunera konektatu oraindik - Metrix Core abiarazten ari da oraindik.",
-            "DAPPNOWALLET": "Ezin da gunera konektatu - ez dago zorro helbiderik eskuragarri.",
-            "DAPPAPPROVEBUTTON": "Onartu",
-            "DAPPCONNECTADDRESSLABEL": "Helbidea",
             "DAPPSENDSITELABEL": "Gunea",
             "DAPPSENDCONTRACTLABEL": "Kontratuaren Helbidea",
             "DAPPSENDAMOUNTLABEL": "Zenbatekoa",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Sarearen gehienezko kuota",
             "DAPPSENDMAXTOTALLABEL": "Gehienezko Guztira",
             "DAPPSENDDATALABEL": "Kontratu Datuak",
+            "DAPPSIGNTITLE": "Sinadura Mezu Eskaera",
+            "DAPPSIGNINFO": "Gune honek zure zorroaren helbidearekin mezu bat sinatzea eskatzen ari da.",
             "DAPPSIGNMESSAGELABEL": "Mezua",
-            "BOOTSTRAPOFFERTITLE": "Diru-zorroa nabarmen zaharkituta dago",
-            "BOOTSTRAPOFFERINFO": "Metrix Core azkar eguneratu dezakeen bootstrap berri bat eskuragarri dago. Sinkronizazio normal batekin jarraitzeak hainbat egun iraun ditzake osatzeko, zure zorroak galdu dituen bloke guztiak deskargatu eta egiaztatu behar baititu.",
-            "BOOTSTRAPOFFERBUTTON": "Deskargatu Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Jarraitu ohiko sinkronizazioarekin",
-            "BOOTSTRAPSPACEINFO": "Ez dago diskoan leku nahikorik bootstrap-a deskargatu eta ateratzeko. Beharrezkoa: {required}, Eskuragarri: {free}. Askatu leku pixka bat eta saiatu berriro."
+            "DAPPNOTREADY": "Ezin da gunera konektatu oraindik - Metrix Core abiarazten ari da oraindik.",
+            "DAPPNOWALLET": "Ezin da gunera konektatu - ez dago zorro helbiderik eskuragarri."
         },
         "ADDRESSBOOK": {
             "TITLE": "Helbide-liburua",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Uneko sarea"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Sartu web3 gune baten helbidea",
-            "GOBUTTON": "Joan",
-            "QUICKLAUNCH": "Abiarazte azkarra",
-            "DEVTOOLS": "Ireki garatzaileentzako tresnak",
-            "ADDLINK": "Gehitu esteka",
-            "LINKNAMEPLACEHOLDER": "Izena",
-            "LINKURLPLACEHOLDER": "https://adibidea.com",
-            "SAVE": "Gorde",
-            "CANCEL": "Utzi",
-            "REMOVE": "Kendu",
-            "REMOVECONFIRM": "Esteka azkar hau kendu nahi duzu?",
-            "LINKEXISTS": "Esteka hori dagoeneko zure abiarazte azkarreko zerrendan dago",
-            "LINKINVALID": "Sartu gunearen helbide baliodun bat",
-            "LINKNETWORKLABEL": "Sarea",
-            "LOADFAILED": "Ezin izan da gunea kargatu",
-            "SECURESITE": "Konexioa segurua da - SSL ziurtagiri baliozkoa",
-            "INSECURESITE": "Konexioa ez da segurua",
-            "INVALIDCERTSITE": "Konexioa ez da pribatua - SSL ziurtagiri baliogabea edo fidagarria ez dena"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Babeskopia-zorroa...",
             "SIGNMESSAGE": "Sinatu mezua...",
             "VERIFYMESSAGE": "Mezua egiaztatu...",
-            "LOCALE": "Hizkuntza...",
-            "RESTARTCORE": "Berrabiarazi Metrix Core",
-            "EXIT": "Irten",
             "OPTIONS": "Aukerak...",
+            "LOCALE": "Hizkuntza...",
             "CURRENCIES": "Erakutsi moneta...",
-            "ALTITUDEREFRESH": "Altitudearen datuak freskatu"
+            "RESTARTCORE": "Berrabiarazi Metrix Core",
+            "ALTITUDEREFRESH": "Altitudearen datuak freskatu",
+            "EXIT": "Irten"
         },
         "ENCRYPT": {
             "TITLE": "Enkriptatu",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Saldo osoa",
+        "SPENDABLEBALANCE": "Gastatzeko Saldoa",
+        "PENDINGBALANCE": "Zain dagoen saldoa",
         "CANCELBUTTON": "Utzi",
         "DONEBUTTON": "Eginda",
         "OKBUTTON": "Ados",
+        "ACCEPTBUTTON": "Onartu",
         "CLEARALLBUTTON": "Garbitu dena",
         "ENTERACCOUNTLABEL": "Sartu helbide honetarako etiketa bat",
         "ENTERADDRESSLABEL": "Sartu Metrix helbide bat",
@@ -464,11 +511,8 @@
         "SORTBY": "Ordenatu honen arabera",
         "SEARCH": "Bilatu",
         "FEE": "Kuota",
-        "ACCEPTBUTTON": "Onartu",
         "CONFIRMED": "Baieztatuta",
         "UNCONFIRMED": "Berretsi gabe",
-        "PENDINGBALANCE": "Zain dagoen saldoa",
-        "SPENDABLEBALANCE": "Gastatzeko Saldoa",
         "SAVEBUTTON": "Gorde"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core berrabiarazten...",
         "BOOTSTRAPPING": "Bootstrap deskargatzen...",
         "BOOTSTRAPEXTRACTING": "Bootstrap-a ateratzen...",
-        "TIMEREMAINING": "geratzen dena:"
+        "TIMEREMAINING": "geratzen dena:",
+        "DEVRPCOVERRIDEACTIVE": "Garatzaile baten RPC konexioaren gainidazketa ezarrita dago (Aukerak > Garatzailea) eta ez du erantzuten. Garbitu daemon lokalera berriro konektatzeko.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Garbitu RPC gainidazketa eta berriro konektatu"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kontu berria arrakastaz sortu da",
         "ADDRESSCOPIEDCLIPBOARD": "Helbidea arbelean kopiatu da",
+        "COPIEDCLIPBOARD": "Arbelean kopiatu da",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakzioak arbelean kopiatu dira",
         "EMPTYFIELDS": "Mesedez, bete eremu guztiak",
         "NOUPDATE": "Ez dago eguneratzerik eskuragarri",
         "WALLETBACKEDUP": "Zorroaren babeskopia arrakastatsua izan da",
+        "WALLETBACKUPFAILED": "Zorroaren babeskopia automatikoak huts egin du - egiaztatu babeskopiaren kokapena eta diskoan dagoen espazio librea",
         "PASSPHRASEMISMATCH": "Sartu dituzun pasahitz-esaldiak ez datoz bat",
         "CHECKINGUPDATE": "Eguneraketak bilatzen...",
         "CHECKINGUPDATEFAILED": "Ezin da eguneratzerik bilatu. Egiaztatu zure sarea.",
+        "WALLETUPDATEDOWNLOADING": "Eguneratzea deskargatzen...",
         "SENDINGEXCEEDSBALANCE": "Bidaltzen ari zaren zenbatekoa hautatutako saldoa baino handiagoa da",
         "MISSINGCHANGEADDRESS": "Aldaketa helbidea zehaztu behar duzu",
         "MISSINGDESTINATIONADDRESS": "Helmugako helbidea zehaztu behar duzu",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Diru-zorroa enkriptatzen...",
         "CHANGINGPASSPHARASE": "Pasahitza aldatzen...",
         "STARTINGMASTERNODE": "Masternodoa abiarazten...",
+        "STOPPINGMASTERNODE": "Masternode-a gelditzen...",
         "SENDINGTRANSACTION": "Transakzioa bidaltzen...",
         "SIGNINGMESSAGE": "Mezua sinatzen...",
         "SIGNEDMESSAGE": "Mezua sinatuta",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Diru-zorroa desblokeatzen...",
         "TRANSACTIONMISMATCH": "Transakzio-errorea. Saiatu berriro.",
         "MINIMUMCONFIRMATIONS": "Sarrera guztiek gutxienez baieztapen bat behar dute gastatu aurretik.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakzioak arbelean kopiatu dira",
-        "STOPPINGMASTERNODE": "Masternode-a gelditzen...",
         "FAILEDTOWRITECONFIG": "Arazo bat egon da zure metrix.conf fitxategian idaztean. Egiaztatu fitxategia existitzen dela eta Altitude-k idazketa baimenak dituela.",
         "NOPUBLICUP": "Ez da IP helbide publikorik aurkitu. Egiaztatu zure Interneteko konexioa eta berrabiarazi Altitude.",
         "CONFIGURINGLOCALMN": "Tokiko Masternode konfiguratzen...",
         "REPORTINGISSUE": "Diagnostiko-informazioa lortzen... Informazio hau arbelean kopiatuko da.",
-        "WALLETUPDATEDOWNLOADING": "Eguneratzea deskargatzen...",
-        "WALLETBACKUPFAILED": "Zorroaren babeskopia automatikoak huts egin du - egiaztatu babeskopiaren kokapena eta diskoan dagoen espazio librea",
         "EXPLORERURLSAVED": "Esploratzailearen URLa gorde da",
         "EXPLORERURLRESET": "Explorer URLa lehenetsitako egoerara itzuli da",
         "EXPLORERURLINVALID": "Hori ez da baliozko http(s) URL bat",
-        "EXPLORERURLUNREACHABLE": "Ezin izan da URL horretara iritsi - egiaztatu eta saiatu berriro"
+        "EXPLORERURLUNREACHABLE": "Ezin izan da URL horretara iritsi - egiaztatu eta saiatu berriro",
+        "DEVRPCHOSTSAVED": "RPC ostalaria gordeta",
+        "DEVRPCHOSTRESET": "RPC ostalaria lehenetsitako egoerara itzuli da (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Jasotako txanponak",
+        "NEWTRANSACTION_TITLE_STAKE": "Jasotako partaidetza",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode saria jaso duzu"
     },
     "TIME": {
         "AFEWSECONDS": "Segundo batzuk",
@@ -533,11 +587,6 @@
         "MONTHS": "hilabeteak",
         "AYEAR": "Urtebete",
         "YEARS": "urteak"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Jasotako txanponak",
-        "NEWTRANSACTION_TITLE_STAKE": "Jasotako partaidetza",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode saria jaso duzu"
     },
     "MONTH": {
         "JAN": "URT",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gobernadoreak hileroko aurrekontuak eta blockchain-aren aldaketak bozkatzeaz arduratzen dira. Gobernadore bihur zaitezke Gobernantza-kontratuan berme egokia blokeatuz.",
                 "COLLATERAL": "Beharrezko bermea",
                 "ENROLL": "Izena eman",
+                "SELECTAGOVERNOR": "Aukeratu gobernadorearen helbide egoki bat",
+                "GOVERNORNOTSELECTED": "Ez da helbide egokirik hautatu",
                 "CONFIRMENROLL": "Gobernadore gisa izena ematear zaude. Honek gobernantza-kontraturako beharrezko bermearekin transakzio bat bidaliko du. Edozein unetan baja eman dezakezu.",
                 "ISGOVERNORTITLE": "Gobernadore aktiboa zara!",
                 "ISGOVERNORDETAIL1": "Gobernadoreek hileroko aurrekontuak eta blockchain-aren aldaketak bozkatzeaz arduratzen dira.",
                 "ISGOVERNORDETAIL2": "Gobernadore izaten jarraitzeko, 30 egunetik behin gutxienez bozketa batean parte hartu beharko duzu.",
                 "ISGOVERNORDETAIL3": "Bozkatzeko ezer ez badago, eskuz jarrai dezakezu izen-ematearekin ping aktibo bat bidaliz.",
+                "MYGOVERNORADDRESS": "Nire Gobernadorearen Hitzaldia",
                 "UNENROLL": "Deserregistratu",
                 "PING": "Bidali Ping aktiboa",
                 "LASTPINGTITLE": "Azken ping-a",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "egunak",
                 "GOVERNORVOTEMATURITYHOURS": "orduak",
                 "GOVERNORVOTEMATURITYSUFFIX": "heldu arte.",
-                "MYGOVERNORADDRESS": "Nire Gobernadorearen Hitzaldia",
-                "SELECTAGOVERNOR": "Aukeratu gobernadorearen helbide egoki bat",
-                "GOVERNORNOTSELECTED": "Ez da helbide egokirik hautatu",
                 "NOTFULLYSYNCEDTITLE": "Gobernadorearen egoera ez dago erabilgarri",
                 "NOTFULLYSYNCEDDETAIL": "Zure Gobernadorearen erregistro-egoera ikusgai egongo da zure blockchain-a guztiz sinkronizatuta dagoenean.",
                 "DGPMIGRATIONTITLE": "DGP Migrazioa",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Zure proposamena behar bezala sortu da",
             "ENROLLINGGOVERNOR": "Gobernadore gisa izena ematen...",
             "ENROLLEDGOVERNOR": "Zure transakzioa baieztatu ondoren osatuko da zure izen-ematea",
-            "VOTINGONPROPOSAL": "Proposamenaren botoa bidaltzen",
-            "VOTEDONPROPOSAL": "Zure botoa transakzioa baieztatu ondoren zenbatuko da.",
             "PINGINGGOVERNOR": "Ping-a bidaltzen...",
             "PINGEDGOVERNOR": "Ping-a behar bezala bidali da. Zure gobernadorea eguneratuko da transakzioa baieztatu ondoren.",
+            "VOTINGONPROPOSAL": "Proposamenaren botoa bidaltzen",
+            "VOTEDONPROPOSAL": "Zure botoa transakzioa baieztatu ondoren zenbatuko da.",
             "UNENROLLINGGOVERNOR": "Gobernadorearen izen-ematea kentzen...",
             "UNENROLLEDGOVERNOR": "Transakzioa bidali da. Zure Gobernadorea erregistrotik kenduko da transakzioa baieztatu ondoren.",
             "GOVERNORNOTMATURE": "Zure gobernadorea ez da oraindik nahikoa heldua ekintza hau burutzeko"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Erosi Metrix",
+                "SEARCH": "Historia"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Zuk bidaltzen duzu",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transakzioen historia",
                 "SEARCHBUTTON": "BILATU",
+                "SEARCHPLACEHOLDER": "Sartu MRX edo BTC helbidea",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "TX mota",
                 "TRANSACTIONAMOUNT": "Zenbatekoa",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Baieztatuta",
                 "TRANSACTIONNOTCONFIRMED": "Ez da baieztatu",
                 "TRANSACTIONREFUNDED": "Itzulitako dirua - Gutxienekoaren azpitik",
-                "AVGSWAPPRICE": "Batez besteko Truke Prezioa",
-                "SEARCHPLACEHOLDER": "Sartu MRX edo BTC helbidea"
+                "AVGSWAPPRICE": "Batez besteko Truke Prezioa"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Truke-helbidea sortzen...",
             "ALREADYHAVEADDRESS": "Metrix helbide honekin lotutako BTC helbide bat baduzu dagoeneko.",
             "NOADDRESS": "Ez duzu Metrix helbiderik sartu"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Erosi Metrix",
-                "SEARCH": "Historia"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Erakutsi",
                 "EMPTYTITLE": "Ez da tokenik aurkitu oraindik",
                 "EMPTYDETAIL": "Altitude-k automatikoki bloke-esploratzaile batean egiaztatzen ditu zure helbideetara bidalitako MRC20 eta MRC721 tokenak, eta gero dena zure nodoarekin egiaztatzen du. Token bat eskuz ere gehi dezakezu, bere kontratu-helbidea badakizu.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tokenen egiaztapen automatikoa desaktibatuta dago, beraz, zure helbideak ez dira tokenak egiaztatzen. Aktibatu berriro goian, edo gehitu token bat eskuz bere kontratu helbidea badakizu.",
                 "HIDDENTITLE": "Ezkutuko tokenak",
                 "CONTEXTMENUHIDE": "Ezkutatu tokena",
                 "ITEMSSUFFIX": "elementu(ak)",
-                "NONENUMERABLETOOLTIP": "Bilduma honek ez du onartzen banakako elementuak zerrendatzea - horren ordez, zenbat dituzun erakustea."
+                "NONENUMERABLETOOLTIP": "Bilduma honek ez du onartzen banakako elementuak zerrendatzea - horren ordez, zenbat dituzun erakustea.",
+                "CHECKINGENABLED": "Egiaztatzen",
+                "CHECKINGDISABLED": "Markatzen",
+                "CHECKINGENABLEDTOOLTIP": "Token egiaztapena aktibatuta dago - Altitude-k aldian-aldian egiaztatzen ditu zure helbideak tokenak bilatzeko eta saldoak freskatzen ditu. Sakatu desaktibatzeko.",
+                "CHECKINGDISABLEDTOOLTIP": "Token egiaztapena desaktibatuta dago - egin klik berriro aktibatzeko.",
+                "CHECKINGDISABLEDNOTICE": "Tokenen egiaztapen automatikoa desaktibatuta dago. Zure helbideak ez dira eskaneatzen tokenen bila eta saldoak ez dira eguneratuko. Eskuz gehi dezakezu token bat oraindik."
             },
             "ADDTOKEN": {
                 "TITLE": "Gehitu tokena",

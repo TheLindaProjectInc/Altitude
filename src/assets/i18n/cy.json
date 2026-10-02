@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Creu Cyfrif",
             "HIDEEMPTYACCOUNTS": "Cuddio Cyfrifon Gwag Enwog"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Trosolwg",
+            "TRANSACTIONSTAB": "Trafodion",
+            "ADDRESSTABS": "Cyfeiriadau"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ychwanegu Derbynnydd",
             "SEND": "Anfon",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dyddiad",
             "TABLECOLUMNS_CONFIRMS": "Cadarnhadau",
             "ALL_SELECTUNSELECT": "Togglo Popeth",
+            "TREEMODE": "Modd Coeden",
+            "LISTMODE": "Modd Rhestr",
             "SENDAVAILABLE": "Defnyddiwch y balans sydd ar gael",
             "INPUTLOCKED": "Mae'r mewnbwn wedi'i gloi. Bydd angen i chi ddatgloi'r mewnbwn hwn i'w wario.",
             "CONTEXTMENULOCKINPUT": "Cloi mewnbwn",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Ar ôl y Ffi",
             "QUANTITY": "Nifer",
             "BYTES": "Beitiau",
-            "TREEMODE": "Modd Coeden",
-            "LISTMODE": "Modd Rhestr",
             "ALERTFEECHANGETITLE": "Newid Ffi",
             "ALERTFEECHANGECONTENT": "Mae'r ffi trafodiad wirioneddol yn uwch na'r disgwyl. Cadarnhewch y ffi newydd:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Creu Contract",
+            "INFO": "Defnyddio contract clyfar i'r rhwydwaith drwy gyflwyno ei god beit wedi'i lunio. Mae hwn yn swyddogaeth graidd i'r gadwyn - gwiriwch eich gosodiadau cod beit a nwy ddwywaith cyn ei ddefnyddio, ni ellir dadwneud y defnydd.",
+            "FROM": "O",
+            "BYTECODE": "Cod Beit",
+            "BYTECODEPLACEHOLDER": "Gludwch y cod beit contract wedi'i lunio (hecs)",
+            "INVALIDBYTECODE": "Rhaid i'r cod beit fod yn llinyn hecsagonol dilys (0-9, a-f) gyda nifer eilrif o nodau",
+            "GASLIMIT": "Terfyn Nwy",
+            "GASLIMITRANGE": "Ystod",
+            "GASPRICE": "Pris Nwy (MRX fesul uned nwy)",
+            "GASPRICEMIN": "Isafswm",
+            "ESTIMATEDMAXCOST": "Cost uchaf amcangyfrifedig",
+            "DEPLOYBUTTON": "Defnyddio Contract",
+            "INCOMPLETEFORM": "Dewiswch gyfeiriad anfonwr, nodwch god beit dilys, a gosodwch derfyn/pris nwy dilys.",
+            "HIGHGASPRICETITLE": "Pris Nwy Uchel",
+            "HIGHGASPRICEINFO": "Mae pris y nwy rydych chi wedi'i osod yn anarferol o uchel. Gallai'r defnydd hwn gostio hyd at:",
+            "DEPLOYING": "Yn defnyddio contract...",
+            "DEPLOYED": "Cyflwynwyd y contract a ddefnyddir",
+            "RESULTTITLE": "Canlyniad y Defnydd",
+            "STATUS": "Statws",
+            "STATUSPENDING": "Yn aros am gadarnhad...",
+            "STATUSCONFIRMED": "Wedi'i ddefnyddio'n llwyddiannus",
+            "STATUSFAILED": "Methodd y defnydd",
+            "TXID": "ID Trafodiad",
+            "SENDER": "Anfonwr",
+            "CONTRACTADDRESS": "Cyfeiriad y Contract",
+            "GASUSED": "Nwy a Ddefnyddiwyd",
+            "DONEBUTTON": "Wedi'i wneud",
+            "DEPLOYANOTHERBUTTON": "Defnyddio Arall"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Trafodion",
+            "COPYBLOCKHASH": "Copïo Hash Bloc",
+            "COPYTXID": "Copïo ID Trafodiad",
+            "COPYACCOUNT": "Copïo Enw'r Cyfrif",
+            "COPYADDRESS": "Copïo Cyfeiriad",
+            "COPYAMOUNT": "Swm y Copïo",
+            "COPTBLOCKINDEX": "Copïo Mynegai Bloc",
+            "EXPLORER": "Agor yn y Bloc Explorer"
         },
         "STAKING": {
             "UNLOCK": "Datgloi Ar Gyfer Stacio",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Cyfeiriad",
             "ENABLED": "Wedi'i alluogi",
-            "STARTBUTTON": "Dechrau'n Lleol",
-            "STARTALIASBUTTON": "Dechrau Enw Ffug",
-            "STARTALLBUTTON": "Dechrau Popeth",
             "NOMASTERNODES": "Nid oes gennych unrhyw nodau meistr",
             "NOMNOUTPUTS": "Ni chanfuwyd unrhyw allbynnau Masternode. I redeg Masternode lleol anfonwch yn union 2, 5, 25, 50 neu 100 miliwn o ddarnau arian i'ch cyfeiriad Masternode ac aros am 15 cadarnhad.",
+            "STARTBUTTON": "Dechrau'n Lleol",
             "STOPBUTTON": "Stopiwch yn Lleol",
+            "STARTALIASBUTTON": "Dechrau Enw Ffug",
             "STOPALIASBUTTON": "Stopiwch Alien",
+            "STARTALLBUTTON": "Dechrau Popeth",
             "ADDREMOTE": "Ychwanegu Masternode o Bell",
             "REMOVEMN": "Tynnu Masternode",
             "ADDLOCAL": "Gosod Masternode Lleol",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Cyffredinol",
                 "COREVERSION": "Fersiwn Graidd",
+                "ALTITUDEVERSION": "Fersiwn Uchder",
                 "PROTOCOLVERSION": "Fersiwn Protocol",
                 "WALLETVERSION": "Fersiwn Wallet.dat",
                 "NETWORKTITLE": "Rhwydwaith",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Nifer y Meistrnodau",
                 "BLOCKCHAINTITLE": "Cadwyn Bloc",
                 "NUMBERBLOCKS": "Nifer cyfredol o flociau",
-                "BESTBLOCKTTIME": "Amser y bloc olaf",
-                "ALTITUDEVERSION": "Fersiwn Uchder"
+                "BESTBLOCKTTIME": "Amser y bloc olaf"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Croeso i gonsol Metrix Core RPC. Teipiwch help i gael trosolwg o'r gorchmynion sydd ar gael.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Dewis Iaith"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Trafodion",
-            "COPYBLOCKHASH": "Copïo Hash Bloc",
-            "COPYTXID": "Copïo ID Trafodiad",
-            "COPYACCOUNT": "Copïo Enw'r Cyfrif",
-            "COPYADDRESS": "Copïo Cyfeiriad",
-            "COPYAMOUNT": "Swm y Copïo",
-            "COPTBLOCKINDEX": "Copïo Mynegai Bloc",
-            "EXPLORER": "Agor yn y Bloc Explorer"
+        "CURRENCY": {
+            "TITLE": "Dewiswch Arian Cyfred Arddangos"
         },
         "EXPLORER": {
             "TITLE": "Archwiliwr Blociau",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Rhwydwaith",
             "WINDOTAB": "Ffenestr",
+            "BACKUPTAB": "Copïau wrth gefn",
+            "EXPLORERTAB": "Archwiliwr",
+            "DEVELOPERTAB": "Datblygwr",
             "NETWORK": {
                 "PROXY": "Cysylltu trwy ddirprwy SOCKS5",
                 "PROXYIP": "IP Dirprwy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Lleihau wrth gau",
                 "BEHAVIOURTITLE": "Hambwrdd System a Ymddygiad Ffenestr"
             },
-            "BACKUPTAB": "Copïau wrth gefn",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Copïau Wrth Gefn Awtomatig",
                 "ENABLED": "Gwneud copi wrth gefn o wallet.dat yn awtomatig ar amserlen",
                 "ENABLEDINFO": "Yn creu copi wrth gefn ffres o'ch ffeil waled ar amserlen, felly mae copi diweddar ar gael bob amser os bydd rhywbeth yn mynd o'i le.",
+                "INTERVALLABEL": "Gwneud copi wrth gefn bob (dyddiau)",
                 "LASTBACKUP": "Copi wrth gefn diwethaf:",
                 "NEVERBACKEDUP": "Nid oes copi wrth gefn awtomatig wedi'i wneud eto.",
                 "BACKUPNOWBUTTON": "Gwneud Copi Wrth Gefn Nawr",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ailosod i'r Diofyn",
                 "PRUNETITLE": "Hanes Copïau Wrth Gefn",
                 "PRUNEINFO": "Mae copïau wrth gefn awtomatig hŷn yn cael eu dileu felly nid yw'r ffolder hon yn tyfu am byth - dim ond y rhai diweddaraf isod sy'n cael eu cadw.",
-                "KEEPCOUNTLABEL": "Cadwch olaf",
-                "INTERVALLABEL": "Gwneud copi wrth gefn bob (dyddiau)"
+                "KEEPCOUNTLABEL": "Cadwch olaf"
             },
-            "EXPLORERTAB": "Archwiliwr",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Archwiliwr Blociau",
                 "BLOCKEXPLORERINFO": "Agorodd y wefan wrth edrych ar drafodiad ar yr archwiliwr blociau (e.e. cliciwch ar y dde ar drafodiad > Gweld ar yr Archwiliwr).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Prawf Cofrestru"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modd Datblygwr",
+                "DEVMODEINFO": "Wedi'i ddiffodd yn ddiofyn ac wedi'i fwriadu ar gyfer datblygwyr yn unig. Mae galluogi hwn yn datgelu opsiynau i ddiystyru'r cysylltiad RPC - dylai defnyddwyr safonol adael hwn i ffwrdd.",
+                "DEVMODELABEL": "Galluogi Modd Datblygwr",
+                "WARNING": "At ddibenion datblygu yn unig y mae'r gosodiadau hyn. Gall eu newid atal y waled rhag cysylltu â daemon o gwbl - defnyddiwch hyn dim ond os ydych chi'n gwybod beth rydych chi'n ei wneud.",
+                "RPCHOSTTITLE": "Cysylltiad RPC",
+                "RPCHOSTINFO": "Yn ddiofyn, mae Altitude yn cysylltu â'r daemon y mae'n ei reoli ei hun, ar y peiriant hwn (127.0.0.1). Mae diystyru'r rhain yn caniatáu iddo gysylltu â daemon gwahanol yn lle hynny - er enghraifft enghraifft prawf cofrestredig o bell, heb orfod rhedeg un yn lleol. Os bydd y cysylltiad yn llwyddo, ni fydd Altitude yn lawrlwytho nac yn cychwyn ei daemon lleol ei hun. Rhaid i rpcallowip y daemon targed ganiatáu'r cysylltiad hwn, a rhaid i rpcuser/rpcpassword isod gyd-fynd â'i ffurfweddiad. Yn dod i rym ar unwaith, nid oes angen ailgychwyn.",
+                "RPCHOSTLABEL": "Gwesteiwr RPC",
+                "RPCPORTLABEL": "Porthladd RPC",
+                "RPCUSERLABEL": "Enw Defnyddiwr RPC",
+                "RPCPASSWORDLABEL": "Cyfrinair RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Trosolwg",
-            "TRANSACTIONSTAB": "Trafodion",
-            "ADDRESSTABS": "Cyfeiriadau"
-        },
-        "CURRENCY": {
-            "TITLE": "Dewiswch Arian Cyfred Arddangos"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dangosfwrdd",
             "SEND": "Anfon",
+            "CREATECONTRACT": "Creu Contract",
             "RECEIVE": "Derbyn",
             "TRANSACTIONS": "Trafodion",
             "STAKING": "Stacio",
             "MASTERNODES": "Meistrnodau",
+            "EXPLORER": "Archwiliwr Blociau",
             "SYNC": {
                 "CONNECTING": "Cysylltu",
                 "NOBLOCKS": "Aros am flociau",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Nid yw'r waled yn betio ar hyn o bryd",
                 "MASTERNODEON": "Mae Masternode yn rhedeg ar hyn o bryd",
                 "MASTERNODEOFF": "Nid yw Masternode yn rhedeg ar hyn o bryd"
-            },
-            "EXPLORER": "Archwiliwr Blociau"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Rhowch gyfeiriad safle web3",
+            "GOBUTTON": "Ewch",
+            "QUICKLAUNCH": "Lansio Cyflym",
+            "DEVTOOLS": "Offer Datblygwyr Agored",
+            "ADDLINK": "Ychwanegu Cyswllt",
+            "LINKNAMEPLACEHOLDER": "Enw",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Cadw",
+            "CANCEL": "Canslo",
+            "REMOVE": "Tynnu",
+            "REMOVECONFIRM": "Dileu'r ddolen gyflym hon?",
+            "LINKEXISTS": "Mae'r ddolen honno eisoes yn eich rhestr lansio cyflym",
+            "LINKINVALID": "Rhowch gyfeiriad safle dilys",
+            "LINKNETWORKLABEL": "Rhwydwaith",
+            "LOADFAILED": "Methwyd llwytho'r safle",
+            "SECURESITE": "Mae'r cysylltiad yn ddiogel - tystysgrif SSL ddilys",
+            "INSECURESITE": "Nid yw'r cysylltiad yn ddiogel",
+            "INVALIDCERTSITE": "Nid yw'r cysylltiad yn breifat - tystysgrif SSL annilys neu ddiymddiried"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Rhowch Gyfrinair Eich Waled",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Mae diweddariad ar gael ar gyfer Metrix Core. Hoffech chi ei osod nawr?",
             "WALLETUPDATETITLE": "Diweddariad Uchder Ar Gael",
             "WALLETUPDATEINFO": "Mae diweddariad ar gael ar gyfer Altitude. Hoffech chi ei lawrlwytho nawr?",
+            "WALLETUPDATEREADYTITLE": "Diweddariad Uchder yn Barod",
+            "WALLETUPDATEREADYINFO": "Mae'r diweddariad wedi'i lawrlwytho. Ailgychwyn Altitude nawr i'w osod?",
+            "WALLETUPDATERESTARTBUTTON": "Ailgychwyn a Gosod",
+            "WALLETUPDATELATERBUTTON": "Yn ddiweddarach",
             "CLIENTUPDATEBUTTON": "Diweddariad",
             "CLIENTUPDATECANCELBUTTON": "Peidiwch â Diweddaru",
             "CLIENTUPDATESKIPBUTTON": "Hepgor y Diweddariad hwn",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Dylid disodli unrhyw gopïau wrth gefn blaenorol rydych chi wedi'u gwneud o'ch ffeil waled gyda'r ffeil waled newydd ei chreu, wedi'i hamgryptio. Am resymau diogelwch, bydd copïau wrth gefn blaenorol o'r ffeil waled heb ei hamgryptio yn dod yn ddiwerth cyn gynted ag y byddwch chi'n dechrau defnyddio'r waled newydd, wedi'i hamgryptio.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopiodd Metrix Core yn Annisgwyl",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Roedd problem gyda Metrix Core sydd wedi achosi iddo derfynu. Argymhellir gwirio eich ffeil debug.log am broblemau.",
+            "CLIENTUNKNOWNERRORTITLE": "Gwall Cyfathrebu Craidd Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Roedd problem wrth gyfathrebu â Metrix Core. Argymhellir gwirio eich ffeil debug.log am broblemau.",
+            "BOOTSTRAPFAILEDTITLE": "Methodd Bootstrap Craidd Metrix",
+            "BOOTSTRAPFAILEDINFO": "Roedd problem wrth gychwyn Metrix Core. Argymhellir gwirio eich ffeil log Altitude am broblemau.",
+            "BOOTSTRAPOFFERTITLE": "Waled Wedi Dyddio'n Sylweddol",
+            "BOOTSTRAPOFFERINFO": "Mae bootstrap diweddar ar gael a all ddiweddaru Metrix Core yn gyflym. Gall parhau â chysoni arferol gymryd sawl diwrnod i'w gwblhau, gan fod angen i'ch waled lawrlwytho a gwirio pob bloc y mae wedi'i fethu.",
+            "BOOTSTRAPOFFERBUTTON": "Lawrlwytho Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Parhau â Chysoni Arferol",
+            "BOOTSTRAPSPACEINFO": "Dim digon o le disg rhydd i lawrlwytho ac echdynnu'r bootstrap. Angenrheidiol: {required}, Ar gael: {free}. Rhyddhewch ychydig o le a cheisiwch eto.",
+            "STARTUPFAILEDTITLE": "Methodd Cychwyn Metrix Core",
+            "STARTUPFAILEDINFO": "Bu gwall wrth gychwyn Metrix Core. Argymhellir gwirio eich ffeil log Altitude am broblemau.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Offer Adferiad",
             "CLIENTINVALIDCONFIGTITLE": "Ffurfweddiad metrix.conf annilys",
             "CLIENTINVALIDCONFIGINFO": "Mae gan eich metrix.conf osodiad masternode annilys a fydd yn achosi i Metrix Core gau ar unwaith. Gwiriwch y ffeil hon.",
             "ADDREMOTEMNTITLE": "Ychwanegu Masternode o Bell",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Allwedd Breifat Masternode",
             "ADDREMOTEMNTXHASH": "Hash Trx Masternode",
             "ADDREMOTEMNTXINDEX": "Mynegai Trx Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Methodd Bootstrap Craidd Metrix",
-            "BOOTSTRAPFAILEDINFO": "Roedd problem wrth gychwyn Metrix Core. Argymhellir gwirio eich ffeil log Altitude am broblemau.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Offer Adferiad",
-            "STARTUPFAILEDTITLE": "Methodd Cychwyn Metrix Core",
-            "STARTUPFAILEDINFO": "Bu gwall wrth gychwyn Metrix Core. Argymhellir gwirio eich ffeil log Altitude am broblemau.",
-            "CLIENTUNKNOWNERRORTITLE": "Gwall Cyfathrebu Craidd Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Roedd problem wrth gyfathrebu â Metrix Core. Argymhellir gwirio eich ffeil debug.log am broblemau.",
             "UNENROLLGOVERNORTITLE": "Cadarnhau Dadgofrestru'r Llywodraethwr",
             "UNENROLLGOVERNORCONTENT": "Ydych chi'n siŵr eich bod chi eisiau dadgofrestru eich Llywodraethwr? Ni fyddwch chi'n gallu pleidleisio ar lywodraethu cadwyn mwyach.",
-            "WALLETUPDATEREADYTITLE": "Diweddariad Uchder yn Barod",
-            "WALLETUPDATEREADYINFO": "Mae'r diweddariad wedi'i lawrlwytho. Ailgychwyn Altitude nawr i'w osod?",
-            "WALLETUPDATERESTARTBUTTON": "Ailgychwyn a Gosod",
-            "WALLETUPDATELATERBUTTON": "Yn ddiweddarach",
             "DAPPCONNECTTITLE": "Cysylltu â'r Wefan",
             "DAPPCONNECTINFO": "Mae'r wefan hon eisiau cysylltu â'ch waled a gweld eich cyfeiriad a'ch balans.",
             "DAPPCONNECTBUTTON": "Cysylltu",
+            "DAPPCONNECTADDRESSLABEL": "Cyfeiriad",
+            "DAPPAPPROVEBUTTON": "Cymeradwyo",
             "DAPPREJECTBUTTON": "Gwrthod",
             "DAPPSENDTITLE": "Cais Trafodiad Contract",
             "DAPPSENDINFO": "Mae'r wefan hon yn gofyn am anfon trafodiad contract o'ch waled.",
-            "DAPPSIGNTITLE": "Cais am Arwyddo Neges",
-            "DAPPSIGNINFO": "Mae'r wefan hon yn gofyn am lofnodi neges gyda chyfeiriad eich waled.",
-            "DAPPNOTREADY": "Methu cysylltu â'r wefan eto - mae Metrix Core yn dal i gychwyn.",
-            "DAPPNOWALLET": "Methu cysylltu â'r wefan - nid oes cyfeiriad waled ar gael.",
-            "DAPPAPPROVEBUTTON": "Cymeradwyo",
-            "DAPPCONNECTADDRESSLABEL": "Cyfeiriad",
             "DAPPSENDSITELABEL": "Safle",
             "DAPPSENDCONTRACTLABEL": "Cyfeiriad y Contract",
             "DAPPSENDAMOUNTLABEL": "Swm",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Ffi Rhwydwaith Uchaf",
             "DAPPSENDMAXTOTALLABEL": "Cyfanswm Uchaf",
             "DAPPSENDDATALABEL": "Data Contract",
+            "DAPPSIGNTITLE": "Cais am Arwyddo Neges",
+            "DAPPSIGNINFO": "Mae'r wefan hon yn gofyn am lofnodi neges gyda chyfeiriad eich waled.",
             "DAPPSIGNMESSAGELABEL": "Neges",
-            "BOOTSTRAPOFFERTITLE": "Waled Wedi Dyddio'n Sylweddol",
-            "BOOTSTRAPOFFERINFO": "Mae bootstrap diweddar ar gael a all ddiweddaru Metrix Core yn gyflym. Gall parhau â chysoni arferol gymryd sawl diwrnod i'w gwblhau, gan fod angen i'ch waled lawrlwytho a gwirio pob bloc y mae wedi'i fethu.",
-            "BOOTSTRAPOFFERBUTTON": "Lawrlwytho Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Parhau â Chysoni Arferol",
-            "BOOTSTRAPSPACEINFO": "Dim digon o le disg rhydd i lawrlwytho ac echdynnu'r bootstrap. Angenrheidiol: {required}, Ar gael: {free}. Rhyddhewch ychydig o le a cheisiwch eto."
+            "DAPPNOTREADY": "Methu cysylltu â'r wefan eto - mae Metrix Core yn dal i gychwyn.",
+            "DAPPNOWALLET": "Methu cysylltu â'r wefan - nid oes cyfeiriad waled ar gael."
         },
         "ADDRESSBOOK": {
             "TITLE": "Llyfr Cyfeiriadau",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rhwydwaith cyfredol"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Rhowch gyfeiriad safle web3",
-            "GOBUTTON": "Ewch",
-            "QUICKLAUNCH": "Lansio Cyflym",
-            "DEVTOOLS": "Offer Datblygwyr Agored",
-            "ADDLINK": "Ychwanegu Cyswllt",
-            "LINKNAMEPLACEHOLDER": "Enw",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Cadw",
-            "CANCEL": "Canslo",
-            "REMOVE": "Tynnu",
-            "REMOVECONFIRM": "Dileu'r ddolen gyflym hon?",
-            "LINKEXISTS": "Mae'r ddolen honno eisoes yn eich rhestr lansio cyflym",
-            "LINKINVALID": "Rhowch gyfeiriad safle dilys",
-            "LINKNETWORKLABEL": "Rhwydwaith",
-            "LOADFAILED": "Methwyd llwytho'r safle",
-            "SECURESITE": "Mae'r cysylltiad yn ddiogel - tystysgrif SSL ddilys",
-            "INSECURESITE": "Nid yw'r cysylltiad yn ddiogel",
-            "INVALIDCERTSITE": "Nid yw'r cysylltiad yn breifat - tystysgrif SSL annilys neu ddiymddiried"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Waled Wrth Gefn...",
             "SIGNMESSAGE": "Llofnodi Neges...",
             "VERIFYMESSAGE": "Gwirio Neges...",
-            "LOCALE": "Iaith...",
-            "RESTARTCORE": "Ailgychwyn Metrix Core",
-            "EXIT": "Allanfa",
             "OPTIONS": "Dewisiadau...",
+            "LOCALE": "Iaith...",
             "CURRENCIES": "Dangos Arian Cyfred...",
-            "ALTITUDEREFRESH": "Adnewyddu Data Uchder"
+            "RESTARTCORE": "Ailgychwyn Metrix Core",
+            "ALTITUDEREFRESH": "Adnewyddu Data Uchder",
+            "EXIT": "Allanfa"
         },
         "ENCRYPT": {
             "TITLE": "Amgryptio",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Cyfanswm y Balans",
+        "SPENDABLEBALANCE": "Balans Gwaradwy",
+        "PENDINGBALANCE": "Balans sy'n aros",
         "CANCELBUTTON": "Canslo",
         "DONEBUTTON": "Wedi'i wneud",
         "OKBUTTON": "Iawn",
+        "ACCEPTBUTTON": "Derbyn",
         "CLEARALLBUTTON": "Clirio Popeth",
         "ENTERACCOUNTLABEL": "Rhowch label ar gyfer y cyfeiriad hwn",
         "ENTERADDRESSLABEL": "Rhowch gyfeiriad Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Trefnu Yn ôl",
         "SEARCH": "Chwilio",
         "FEE": "Ffi",
-        "ACCEPTBUTTON": "Derbyn",
         "CONFIRMED": "Wedi'i gadarnhau",
         "UNCONFIRMED": "Heb ei gadarnhau",
-        "PENDINGBALANCE": "Balans sy'n aros",
-        "SPENDABLEBALANCE": "Balans Gwaradwy",
         "SAVEBUTTON": "Cadw"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ailgychwyn Metrix Core...",
         "BOOTSTRAPPING": "Lawrlwytho bootstrap...",
         "BOOTSTRAPEXTRACTING": "Yn echdynnu bootstrap...",
-        "TIMEREMAINING": "sy'n weddill:"
+        "TIMEREMAINING": "sy'n weddill:",
+        "DEVRPCOVERRIDEACTIVE": "Mae gorbwysiad cysylltiad RPC datblygwr wedi'i osod (Opsiynau > Datblygwr) ac nid yw'n ymateb. Cliriwch ef i ailgysylltu â'r daemon lleol fel arfer.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Clirio Gor-reoleiddio RPC ac Ailgysylltu"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cyfrif newydd wedi'i greu'n llwyddiannus",
         "ADDRESSCOPIEDCLIPBOARD": "Cyfeiriad wedi'i gopïo i'r clipfwrdd",
+        "COPIEDCLIPBOARD": "Wedi'i gopïo i'r clipfwrdd",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Trafodion wedi'u copïo i'r clipfwrdd",
         "EMPTYFIELDS": "Llenwch bob maes os gwelwch yn dda",
         "NOUPDATE": "Dim diweddariad ar gael",
         "WALLETBACKEDUP": "Copïo wrth gefn y waled yn llwyddiannus",
+        "WALLETBACKUPFAILED": "Methodd copi wrth gefn awtomatig o'r waled - gwiriwch leoliad eich copi wrth gefn a'r lle disg sydd ar gael",
         "PASSPHRASEMISMATCH": "Nid yw'r cyfrineiriau a roesoch yn cyfateb",
         "CHECKINGUPDATE": "Yn gwirio am ddiweddariad...",
         "CHECKINGUPDATEFAILED": "Methu gwirio am ddiweddariad. Gwiriwch eich rhwydwaith.",
+        "WALLETUPDATEDOWNLOADING": "Lawrlwytho diweddariad...",
         "SENDINGEXCEEDSBALANCE": "Mae'r swm rydych chi'n ei anfon yn fwy na'ch balans dewisol",
         "MISSINGCHANGEADDRESS": "Rhaid i chi nodi cyfeiriad newid",
         "MISSINGDESTINATIONADDRESS": "Rhaid i chi nodi cyfeiriad cyrchfan",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Amgryptio waled...",
         "CHANGINGPASSPHARASE": "Newid cyfrinair...",
         "STARTINGMASTERNODE": "Yn cychwyn meistrnod...",
+        "STOPPINGMASTERNODE": "Yn atal y meistrnod...",
         "SENDINGTRANSACTION": "Yn anfon trafodiad...",
         "SIGNINGMESSAGE": "Neges yn cael ei llofnodi...",
         "SIGNEDMESSAGE": "Neges wedi'i llofnodi",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Yn datgloi waled...",
         "TRANSACTIONMISMATCH": "Gwall trafodiad. Rhowch gynnig arall arni.",
         "MINIMUMCONFIRMATIONS": "Mae angen o leiaf 1 cadarnhad ar bob mewnbwn cyn gwario.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Trafodion wedi'u copïo i'r clipfwrdd",
-        "STOPPINGMASTERNODE": "Yn atal y meistrnod...",
         "FAILEDTOWRITECONFIG": "Roedd problem wrth ysgrifennu i'ch ffeil metrix.conf. Gwiriwch fod y ffeil yn bodoli a bod gan Altitude ganiatâd ysgrifennu.",
         "NOPUBLICUP": "Ni chanfuwyd cyfeiriad IP Cyhoeddus. Gwiriwch eich cysylltiad rhyngrwyd ac ailgychwynwch Altitude.",
         "CONFIGURINGLOCALMN": "Ffurfweddu Masternode lleol...",
         "REPORTINGISSUE": "Yn cael gwybodaeth ddiagnostig... Bydd y wybodaeth hon yn cael ei chopïo i'ch clipfwrdd.",
-        "WALLETUPDATEDOWNLOADING": "Lawrlwytho diweddariad...",
-        "WALLETBACKUPFAILED": "Methodd copi wrth gefn awtomatig o'r waled - gwiriwch leoliad eich copi wrth gefn a'r lle disg sydd ar gael",
         "EXPLORERURLSAVED": "URL yr Archwiliwr wedi'i gadw",
         "EXPLORERURLRESET": "URL y chwiliwr wedi'i ddychwelyd i'r rhagosodyn",
         "EXPLORERURLINVALID": "Nid URL http(au) dilys yw hwnnw",
-        "EXPLORERURLUNREACHABLE": "Methu cyrraedd yr URL hwnnw - gwiriwch ef a cheisiwch eto"
+        "EXPLORERURLUNREACHABLE": "Methu cyrraedd yr URL hwnnw - gwiriwch ef a cheisiwch eto",
+        "DEVRPCHOSTSAVED": "Gwesteiwr RPC wedi'i gadw",
+        "DEVRPCHOSTRESET": "Gwesteiwr RPC wedi dychwelyd i'r diofyn (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Darnau Arian a Dderbyniwyd",
+        "NEWTRANSACTION_TITLE_STAKE": "Cyfran a Dderbyniwyd",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Wedi derbyn Gwobr Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Ychydig eiliadau",
@@ -533,11 +587,6 @@
         "MONTHS": "misoedd",
         "AYEAR": "Blwyddyn",
         "YEARS": "blynyddoedd"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Darnau Arian a Dderbyniwyd",
-        "NEWTRANSACTION_TITLE_STAKE": "Cyfran a Dderbyniwyd",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Wedi derbyn Gwobr Masternode"
     },
     "MONTH": {
         "JAN": "IONAWAR",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Mae Llywodraethwyr yn gyfrifol am bleidleisio ar gyllidebau misol a newidiadau blockchain. Gallwch ddod yn Llywodraethwr trwy gloi'r gwarantau cywir yn y contract Llywodraethu.",
                 "COLLATERAL": "Cyfochrog gofynnol",
                 "ENROLL": "Cofrestru",
+                "SELECTAGOVERNOR": "Dewiswch gyfeiriad llywodraethwr cymwys",
+                "GOVERNORNOTSELECTED": "Ni ddewiswyd unrhyw gyfeiriad cymwys",
                 "CONFIRMENROLL": "Rydych chi ar fin cofrestru fel Llywodraethwr. Bydd hyn yn anfon trafodiad gyda'r gwarantau gofynnol i'r contract llywodraethu. Gallwch ddadgofrestru unrhyw bryd.",
                 "ISGOVERNORTITLE": "Rydych chi'n Llywodraethwr gweithgar!",
                 "ISGOVERNORDETAIL1": "Mae llywodraethwyr yn gyfrifol am bleidleisio ar gyllidebau misol a newidiadau i'r blockchain.",
                 "ISGOVERNORDETAIL2": "I aros yn Llywodraethwr bydd angen i chi gymryd rhan mewn o leiaf 1 bleidlais bob 30 diwrnod.",
                 "ISGOVERNORDETAIL3": "Os nad oes dim i bleidleisio arno yna gallwch barhau â'ch cofrestru â llaw trwy anfon ping gweithredol.",
+                "MYGOVERNORADDRESS": "Cyfeiriad fy Llywodraethwr",
                 "UNENROLL": "Dadgofrestru",
                 "PING": "Anfon Ping Gweithredol",
                 "LASTPINGTITLE": "Ping olaf",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dyddiau",
                 "GOVERNORVOTEMATURITYHOURS": "oriau",
                 "GOVERNORVOTEMATURITYSUFFIX": "nes eu bod yn aeddfed",
-                "MYGOVERNORADDRESS": "Cyfeiriad fy Llywodraethwr",
-                "SELECTAGOVERNOR": "Dewiswch gyfeiriad llywodraethwr cymwys",
-                "GOVERNORNOTSELECTED": "Ni ddewiswyd unrhyw gyfeiriad cymwys",
                 "NOTFULLYSYNCEDTITLE": "Statws Llywodraethwr ar gael",
                 "NOTFULLYSYNCEDDETAIL": "Bydd eich statws cofrestru fel Llywodraethwr yn dod yn weladwy pan fydd eich blockchain wedi'i gysoni'n llawn.",
                 "DGPMIGRATIONTITLE": "Mudo DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Mae eich cynnig wedi'i greu'n llwyddiannus",
             "ENROLLINGGOVERNOR": "Yn cofrestru fel Llywodraethwr...",
             "ENROLLEDGOVERNOR": "Bydd eich cofrestru wedi'i gwblhau unwaith y bydd eich trafodiad wedi'i gadarnhau",
-            "VOTINGONPROPOSAL": "Anfon pleidlais ar y cynnig",
-            "VOTEDONPROPOSAL": "Bydd eich pleidlais yn cael ei chyfrif unwaith y bydd y trafodiad wedi'i gadarnhau.",
             "PINGINGGOVERNOR": "Yn anfon ping...",
             "PINGEDGOVERNOR": "Anfonwyd Ping yn llwyddiannus. Bydd eich Llywodraethwr yn cael y wybodaeth ddiweddaraf unwaith y bydd y trafodiad wedi'i gadarnhau.",
+            "VOTINGONPROPOSAL": "Anfon pleidlais ar y cynnig",
+            "VOTEDONPROPOSAL": "Bydd eich pleidlais yn cael ei chyfrif unwaith y bydd y trafodiad wedi'i gadarnhau.",
             "UNENROLLINGGOVERNOR": "Dadgofrestru'r Llywodraethwr...",
             "UNENROLLEDGOVERNOR": "Trafodiad wedi'i anfon. Bydd eich Llywodraethwr yn cael ei ddadgofrestru unwaith y bydd y trafodiad wedi'i gadarnhau.",
             "GOVERNORNOTMATURE": "Nid yw eich Llywodraethwr yn ddigon aeddfed i gyflawni'r weithred hon eto"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Prynu Metrix",
+                "SEARCH": "Hanes"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Rydych Chi'n Anfon",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Hanes Trafodion",
                 "SEARCHBUTTON": "CHWILIO",
+                "SEARCHPLACEHOLDER": "Rhowch gyfeiriad MRX neu BTC",
                 "TRANSACTIONDATE": "Dyddiad",
                 "TRANSACTIONTYPE": "Math o DR",
                 "TRANSACTIONAMOUNT": "Swm",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Wedi'i gadarnhau",
                 "TRANSACTIONNOTCONFIRMED": "Heb ei Gadarnhau",
                 "TRANSACTIONREFUNDED": "Ad-dalwyd - Islaw'r isafswm",
-                "AVGSWAPPRICE": "Pris Cyfnewid Cyfartalog",
-                "SEARCHPLACEHOLDER": "Rhowch gyfeiriad MRX neu BTC"
+                "AVGSWAPPRICE": "Pris Cyfnewid Cyfartalog"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Wrthi'n Cynhyrchu Cyfeiriad Cyfnewid...",
             "ALREADYHAVEADDRESS": "Mae gennych gyfeiriad BTC eisoes sy'n gysylltiedig â'r cyfeiriad Metrix hwn",
             "NOADDRESS": "Ni wnaethoch chi roi cyfeiriad Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Prynu Metrix",
-                "SEARCH": "Hanes"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Datguddio",
                 "EMPTYTITLE": "Dim Tocynnau Wedi'u Canfod Eto",
                 "EMPTYDETAIL": "Mae Altitude yn gwirio archwiliwr bloc yn awtomatig am docynnau MRC20 a MRC721 a anfonwyd i'ch cyfeiriadau, yna'n gwirio popeth yn fyw yn erbyn eich nod eich hun. Gallwch hefyd ychwanegu tocyn â llaw os ydych chi'n gwybod ei gyfeiriad contract.",
+                "EMPTYDETAILCHECKINGDISABLED": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd, felly nid yw eich cyfeiriadau'n cael eu gwirio am docynnau. Trowch ef yn ôl ymlaen uchod, neu ychwanegwch docyn â llaw os ydych chi'n gwybod ei gyfeiriad contract.",
                 "HIDDENTITLE": "Tocynnau Cudd",
                 "CONTEXTMENUHIDE": "Cuddio Tocyn",
                 "ITEMSSUFFIX": "eitem(au)",
-                "NONENUMERABLETOOLTIP": "Nid yw'r casgliad hwn yn cefnogi rhestru eitemau unigol - gan ddangos faint sydd gennych yn lle hynny."
+                "NONENUMERABLETOOLTIP": "Nid yw'r casgliad hwn yn cefnogi rhestru eitemau unigol - gan ddangos faint sydd gennych yn lle hynny.",
+                "CHECKINGENABLED": "Yn Gwirio Ar",
+                "CHECKINGDISABLED": "Ticio I ffwrdd",
+                "CHECKINGENABLEDTOOLTIP": "Mae gwirio tocynnau ymlaen - Mae Altitude yn gwirio'ch cyfeiriadau am docynnau o bryd i'w gilydd ac yn adnewyddu balansau. Cliciwch i ddiffodd.",
+                "CHECKINGDISABLEDTOOLTIP": "Mae gwirio tocynnau i ffwrdd - cliciwch i droi ymlaen eto.",
+                "CHECKINGDISABLEDNOTICE": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd. Nid yw eich cyfeiriadau'n cael eu sganio am docynnau ac ni fydd balansau'n diweddaru. Gallwch chi ychwanegu tocyn â llaw o hyd."
             },
             "ADDTOKEN": {
                 "TITLE": "Ychwanegu Tocyn",

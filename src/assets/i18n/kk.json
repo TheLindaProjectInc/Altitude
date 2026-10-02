@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Аккаунт ашу",
             "HIDEEMPTYACCOUNTS": "Аты жоқ бос тіркелгілерді жасыру"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Шолу",
+            "TRANSACTIONSTAB": "Транзакциялар",
+            "ADDRESSTABS": "Мекенжайлар"
+        },
         "SEND": {
             "ADDRECIPIENT": "Алушыны қосу",
             "SEND": "Жіберу",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Күні",
             "TABLECOLUMNS_CONFIRMS": "Растаулар",
             "ALL_SELECTUNSELECT": "Барлығын қосу/өшіру",
+            "TREEMODE": "Ағаш режимі",
+            "LISTMODE": "Тізім режимі",
             "SENDAVAILABLE": "Қолжетімді балансты пайдаланыңыз",
             "INPUTLOCKED": "Кіріс құлыпталған. Оны жұмсау үшін кірістің құлпын ашу қажет.",
             "CONTEXTMENULOCKINPUT": "Кірісті құлыптау",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Төлемнен кейінгі төлем",
             "QUANTITY": "Саны",
             "BYTES": "Байттар",
-            "TREEMODE": "Ағаш режимі",
-            "LISTMODE": "Тізім режимі",
             "ALERTFEECHANGETITLE": "Комиссияның өзгеруі",
             "ALERTFEECHANGECONTENT": "Нақты транзакция ақысы күтілгеннен жоғары. Жаңа комиссияны растаңыз:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Келісімшарт жасау",
+            "INFO": "Ақылды келісімшартты желіге оның компиляцияланған байткодын жіберу арқылы орналастырыңыз. Бұл негізгі тізбек функциясы - орналастырмас бұрын байткод пен газ параметрлерін екі рет тексеріңіз, орналастыруды болдырмау мүмкін емес.",
+            "FROM": "Бастапқы",
+            "BYTECODE": "Байткод",
+            "BYTECODEPLACEHOLDER": "Компиляцияланған келісімшарт байткодын (hex) қойыңыз",
+            "INVALIDBYTECODE": "Байткод жұп таңбалар саны бар жарамды он алтылық жол (0-9, a-f) болуы керек",
+            "GASLIMIT": "Газ лимиті",
+            "GASLIMITRANGE": "Қашықтық",
+            "GASPRICE": "Газ бағасы (газ бірлігіне MRX)",
+            "GASPRICEMIN": "Минимум",
+            "ESTIMATEDMAXCOST": "Болжамды максималды құны",
+            "DEPLOYBUTTON": "Орналастыру келісімшарты",
+            "INCOMPLETEFORM": "Жіберушінің мекенжайын таңдаңыз, жарамды байткодты енгізіңіз және жарамды бензин лимитін/бағасын орнатыңыз.",
+            "HIGHGASPRICETITLE": "Бензиннің жоғары бағасы",
+            "HIGHGASPRICEINFO": "Сіз орнатқан бензин бағасы әдеттен тыс жоғары. Бұл орналастыру құны келесіге дейін жетуі мүмкін:",
+            "DEPLOYING": "Келісімшартты орналастыру...",
+            "DEPLOYED": "Келісімшартты орналастыру тапсырылды",
+            "RESULTTITLE": "Орналастыру нәтижесі",
+            "STATUS": "Мәртебесі",
+            "STATUSPENDING": "Растау күтілуде...",
+            "STATUSCONFIRMED": "Сәтті орналастырылды",
+            "STATUSFAILED": "Орналастыру сәтсіз аяқталды",
+            "TXID": "Транзакция идентификаторы",
+            "SENDER": "Жіберуші",
+            "CONTRACTADDRESS": "Келісімшарт мекенжайы",
+            "GASUSED": "Пайдаланылған газ",
+            "DONEBUTTON": "Дайын",
+            "DEPLOYANOTHERBUTTON": "Басқасын орналастыру"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Транзакциялар",
+            "COPYBLOCKHASH": "Блок хэшін көшіру",
+            "COPYTXID": "Транзакция идентификаторын көшіру",
+            "COPYACCOUNT": "Тіркелгі атауын көшіру",
+            "COPYADDRESS": "Мекенжайды көшіру",
+            "COPYAMOUNT": "Көшіру сомасы",
+            "COPTBLOCKINDEX": "Блок индексін көшіру",
+            "EXPLORER": "Block Explorer бағдарламасында ашу"
         },
         "STAKING": {
             "UNLOCK": "Стейкинг үшін құлыпты ашу",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Мекенжай",
             "ENABLED": "Қосылған",
-            "STARTBUTTON": "Жергілікті бастау",
-            "STARTALIASBUTTON": "Бүркеншік атты бастаңыз",
-            "STARTALLBUTTON": "Барлығын бастау",
             "NOMASTERNODES": "Сізде ешқандай мастернодтар жоқ",
             "NOMNOUTPUTS": "Masternode шығыстары табылмады. Жергілікті Masternode іске қосу үшін Masternode мекенжайыңызға дәл 2,5,25,50 немесе 100 миллион монета жіберіп, 15 растауды күтіңіз.",
+            "STARTBUTTON": "Жергілікті бастау",
             "STOPBUTTON": "Жергілікті тоқтату",
+            "STARTALIASBUTTON": "Бүркеншік атты бастаңыз",
             "STOPALIASBUTTON": "Бүркеншік атты тоқтату",
+            "STARTALLBUTTON": "Барлығын бастау",
             "ADDREMOTE": "Қашықтағы Masternode қосу",
             "REMOVEMN": "Мастернодты жою",
             "ADDLOCAL": "Жергілікті Masternode орнату",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Жалпы",
                 "COREVERSION": "Негізгі нұсқа",
+                "ALTITUDEVERSION": "Биіктік нұсқасы",
                 "PROTOCOLVERSION": "Хаттама нұсқасы",
                 "WALLETVERSION": "Wallet.dat нұсқасы",
                 "NETWORKTITLE": "Желі",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Мастернодтар саны",
                 "BLOCKCHAINTITLE": "Блок тізбегі",
                 "NUMBERBLOCKS": "Ағымдағы блоктар саны",
-                "BESTBLOCKTTIME": "Соңғы блок уақыты",
-                "ALTITUDEVERSION": "Биіктік нұсқасы"
+                "BESTBLOCKTTIME": "Соңғы блок уақыты"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC консоліне қош келдіңіз. Қолжетімді командаларға шолу жасау үшін help деп теріңіз.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Тілді таңдаңыз"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Транзакциялар",
-            "COPYBLOCKHASH": "Блок хэшін көшіру",
-            "COPYTXID": "Транзакция идентификаторын көшіру",
-            "COPYACCOUNT": "Тіркелгі атауын көшіру",
-            "COPYADDRESS": "Мекенжайды көшіру",
-            "COPYAMOUNT": "Көшіру сомасы",
-            "COPTBLOCKINDEX": "Блок индексін көшіру",
-            "EXPLORER": "Block Explorer бағдарламасында ашу"
+        "CURRENCY": {
+            "TITLE": "Көрсету валютасын таңдаңыз"
         },
         "EXPLORER": {
             "TITLE": "Блокты зерттеуші",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Желі",
             "WINDOTAB": "Терезе",
+            "BACKUPTAB": "Сақтық көшірме",
+            "EXPLORERTAB": "Зерттеуші",
+            "DEVELOPERTAB": "Әзірлеуші",
             "NETWORK": {
                 "PROXY": "SOCKS5 проксиі арқылы қосылу",
                 "PROXYIP": "Прокси IP мекенжайы",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Жабылғанда кішірейту",
                 "BEHAVIOURTITLE": "Жүйелік науа және терезенің жұмыс істеу тәртібі"
             },
-            "BACKUPTAB": "Сақтық көшірме",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Автоматты сақтық көшірме",
                 "ENABLED": "wallet.dat бағдарламасын кесте бойынша автоматты түрде сақтық көшірмелеу",
                 "ENABLEDINFO": "Әмиян файлыңыздың жаңа сақтық көшірмесін кесте бойынша жасайды, сондықтан бірдеңе дұрыс болмай қалған жағдайда соңғы көшірмесі әрқашан қолжетімді болады.",
+                "INTERVALLABEL": "Сақтық көшірмесін әр (күн сайын) жасаңыз",
                 "LASTBACKUP": "Соңғы сақтық көшірме:",
                 "NEVERBACKEDUP": "Автоматты сақтық көшірме әлі жасалған жоқ.",
                 "BACKUPNOWBUTTON": "Қазір сақтық көшірме жасау",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Әдепкі күйге қайтару",
                 "PRUNETITLE": "Сақтық көшірме тарихы",
                 "PRUNEINFO": "Ескі автоматты сақтық көшірмелер жойылады, сондықтан бұл қалта мәңгілікке өспейді - тек төмендегі ең соңғылары ғана сақталады.",
-                "KEEPCOUNTLABEL": "Соңғысын қалдырыңыз",
-                "INTERVALLABEL": "Сақтық көшірмесін әр (күн сайын) жасаңыз"
+                "KEEPCOUNTLABEL": "Соңғысын қалдырыңыз"
             },
-            "EXPLORERTAB": "Зерттеуші",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Блокты зерттеуші",
                 "BLOCKEXPLORERINFO": "Сайт блок шолғышында транзакцияны қарау кезінде ашылды (мысалы, транзакцияны тінтуірдің оң жақ түймешігімен басыңыз > Explorer-де қарау).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Негізгі желі",
                 "TESTNET": "Testnet",
                 "REGTEST": "Тіркеу сынағы"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Әзірлеуші режимі",
+                "DEVMODEINFO": "Әдепкі бойынша өшірілген және тек әзірлеушілерге арналған. Мұны қосу RPC қосылымын қайта анықтау опцияларын ашады - стандартты пайдаланушылар мұны өшірулі қалдыруы керек.",
+                "DEVMODELABEL": "Әзірлеуші режимін қосу",
+                "WARNING": "Бұл параметрлер тек әзірлеу мақсаттары үшін арналған. Оларды өзгерту әмиянның демонға қосылуына мүлдем кедергі келтіруі мүмкін - мұны тек не істеп жатқаныңызды білсеңіз ғана пайдаланыңыз.",
+                "RPCHOSTTITLE": "RPC қосылымы",
+                "RPCHOSTINFO": "Әдепкі бойынша, Altitude осы машинада (127.0.0.1) өзін басқаратын демонға қосылады. Оларды қайта анықтау оның орнына басқа демонға - мысалы, қашықтағы regtest данасына, жергілікті түрде іске қоспай-ақ қосылуына мүмкіндік береді. Егер қосылым сәтті болса, Altitude өзінің жергілікті демонын жүктемейді немесе іске қоспайды. Мақсатты демонның rpcalowip бұл қосылымға рұқсат беруі керек, ал төмендегі rpcuser/rpcpassword оның конфигурациясына сәйкес келуі керек. Дереу күшіне енеді, қайта іске қосу қажет емес.",
+                "RPCHOSTLABEL": "RPC хосты",
+                "RPCPORTLABEL": "RPC порты",
+                "RPCUSERLABEL": "RPC пайдаланушы аты",
+                "RPCPASSWORDLABEL": "RPC құпия сөзі"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Шолу",
-            "TRANSACTIONSTAB": "Транзакциялар",
-            "ADDRESSTABS": "Мекенжайлар"
-        },
-        "CURRENCY": {
-            "TITLE": "Көрсету валютасын таңдаңыз"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Басқару тақтасы",
             "SEND": "Жіберу",
+            "CREATECONTRACT": "Келісімшарт жасау",
             "RECEIVE": "Қабылдау",
             "TRANSACTIONS": "Транзакциялар",
             "STAKING": "Стейк тебу",
             "MASTERNODES": "Мастернодтар",
+            "EXPLORER": "Блокты зерттеуші",
             "SYNC": {
                 "CONNECTING": "Қосылуда",
                 "NOBLOCKS": "Блоктарды күтуде",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Әмиян қазіргі уақытта ставка қойып жатқан жоқ",
                 "MASTERNODEON": "Masternode қазіргі уақытта жұмыс істеп тұр",
                 "MASTERNODEOFF": "Masternode қазіргі уақытта жұмыс істемейді"
-            },
-            "EXPLORER": "Блокты зерттеуші"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Web3 сайтының мекенжайын енгізіңіз",
+            "GOBUTTON": "Бару",
+            "QUICKLAUNCH": "Жылдам іске қосу",
+            "DEVTOOLS": "Әзірлеуші құралдарын ашу",
+            "ADDLINK": "Сілтеме қосу",
+            "LINKNAMEPLACEHOLDER": "Аты",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Сақтау",
+            "CANCEL": "Бас тарту",
+            "REMOVE": "Алып тастау",
+            "REMOVECONFIRM": "Бұл жылдам сілтемені жою керек пе?",
+            "LINKEXISTS": "Бұл сілтеме жылдам іске қосу тізіміңізде бұрыннан бар",
+            "LINKINVALID": "Жарамды сайт мекенжайын енгізіңіз",
+            "LINKNETWORKLABEL": "Желі",
+            "LOADFAILED": "Сайт жүктелмеді",
+            "SECURESITE": "Қосылым қауіпсіз - жарамды SSL сертификаты",
+            "INSECURESITE": "Байланыс қауіпсіз емес",
+            "INVALIDCERTSITE": "Қосылым құпия емес - жарамсыз немесе сенімсіз SSL сертификаты"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Әмиян құпия сөзін енгізіңіз",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core үшін жаңарту қолжетімді. Оны қазір орнатқыңыз келе ме?",
             "WALLETUPDATETITLE": "Биіктік туралы жаңарту қолжетімді",
             "WALLETUPDATEINFO": "Altitude үшін жаңарту қолжетімді. Оны қазір жүктеп алғыңыз келе ме?",
+            "WALLETUPDATEREADYTITLE": "Биіктік жаңартуы дайын",
+            "WALLETUPDATEREADYINFO": "Жаңарту жүктелді. Оны орнату үшін Altitude қолданбасын қазір қайта іске қосу керек пе?",
+            "WALLETUPDATERESTARTBUTTON": "Қайта іске қосу және орнату",
+            "WALLETUPDATELATERBUTTON": "Кейінірек",
             "CLIENTUPDATEBUTTON": "Жаңарту",
             "CLIENTUPDATECANCELBUTTON": "Жаңартпау",
             "CLIENTUPDATESKIPBUTTON": "Бұл жаңартуды өткізіп жіберу",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Әмиян файлыңыздың бұрынғы сақтық көшірмелерін жаңадан жасалған, шифрланған әмиян файлымен ауыстыру керек. Қауіпсіздік мақсатында, шифрланбаған әмиян файлының бұрынғы сақтық көшірмелері жаңа, шифрланған әмиянды пайдалана бастағаннан кейін пайдасыз болады.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core күтпеген жерден тоқтады",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core бағдарламасында ақаулық орын алды, бұл оның жұмысын тоқтатуға әкелді. debug.log файлындағы мәселелерді тексеру ұсынылады.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core байланыс қатесі",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core бағдарламасымен байланысу кезінде мәселе туындады. debug.log файлындағы мәселелерді тексеру ұсынылады.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap сәтсіз аяқталды",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core жүйесін жүктеу кезінде мәселе туындады. Мәселелерді анықтау үшін Altitude журнал файлын тексеру ұсынылады.",
+            "BOOTSTRAPOFFERTITLE": "Әмиян айтарлықтай ескірген",
+            "BOOTSTRAPOFFERINFO": "Metrix Core жүйесін тез жаңарта алатын соңғы жүктеу нұсқасы қолжетімді. Қалыпты синхрондауды жалғастыру бірнеше күнге созылуы мүмкін, себебі әмияныңыз жіберіп алған әрбір блокты жүктеп алып, тексеруі керек.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap жүктеп алу",
+            "BOOTSTRAPOFFERCANCEL": "Қалыпты синхрондауды жалғастыру",
+            "BOOTSTRAPSPACEINFO": "Bootstrap файлын жүктеп алып, шығарып алуға дискідегі бос орын жеткіліксіз. Қажетті: {required}, Қолжетімді: {free}. Біраз орын босатып, қайталап көріңіз.",
+            "STARTUPFAILEDTITLE": "Metrix Core іске қосылмады",
+            "STARTUPFAILEDINFO": "Metrix Core бағдарламасын іске қосу кезінде қате пайда болды. Altitude журнал файлындағы мәселелерді тексеру ұсынылады.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Қалпына келтіру құралдары",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf конфигурациясы жарамсыз",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf файлында жарамсыз мастернод орнатылымы бар, бұл Metrix Core бағдарламасының бірден жабылуына әкеледі. Осы файлды тексеріңіз.",
             "ADDREMOTEMNTITLE": "Қашықтағы Masternode қосу",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode құпия кілті",
             "ADDREMOTEMNTXHASH": "Masternode Trx хэші",
             "ADDREMOTEMNTXINDEX": "Masternode Trx индексі",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap сәтсіз аяқталды",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core жүйесін жүктеу кезінде мәселе туындады. Мәселелерді анықтау үшін Altitude журнал файлын тексеру ұсынылады.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Қалпына келтіру құралдары",
-            "STARTUPFAILEDTITLE": "Metrix Core іске қосылмады",
-            "STARTUPFAILEDINFO": "Metrix Core бағдарламасын іске қосу кезінде қате пайда болды. Altitude журнал файлындағы мәселелерді тексеру ұсынылады.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core байланыс қатесі",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core бағдарламасымен байланысу кезінде мәселе туындады. debug.log файлындағы мәселелерді тексеру ұсынылады.",
             "UNENROLLGOVERNORTITLE": "Губернатордың тіркеуден шығарылуын растау",
             "UNENROLLGOVERNORCONTENT": "Сіз губернаторыңызды тіркеуден шығарғыңыз келетініне сенімдісіз бе? Сіз енді тізбекті басқару бойынша дауыс бере алмайсыз.",
-            "WALLETUPDATEREADYTITLE": "Биіктік жаңартуы дайын",
-            "WALLETUPDATEREADYINFO": "Жаңарту жүктелді. Оны орнату үшін Altitude қолданбасын қазір қайта іске қосу керек пе?",
-            "WALLETUPDATERESTARTBUTTON": "Қайта іске қосу және орнату",
-            "WALLETUPDATELATERBUTTON": "Кейінірек",
             "DAPPCONNECTTITLE": "Сайтқа қосылу",
             "DAPPCONNECTINFO": "Бұл сайт сіздің әмияныңызға қосылып, мекенжайыңыз бен балансыңызды көргісі келеді.",
             "DAPPCONNECTBUTTON": "Қосылу",
+            "DAPPCONNECTADDRESSLABEL": "Мекенжай",
+            "DAPPAPPROVEBUTTON": "Мақұлдау",
             "DAPPREJECTBUTTON": "Қабылдамау",
             "DAPPSENDTITLE": "Келісімшарттық мәміле туралы өтініш",
             "DAPPSENDINFO": "Бұл сайт сіздің әмияныңыздан келісімшарттық транзакция жіберуді сұрап жатыр.",
-            "DAPPSIGNTITLE": "Хабарлама сұрауына қол қою",
-            "DAPPSIGNINFO": "Бұл сайт сіздің әмиян мекенжайыңыз көрсетілген хабарламаға қол қоюды сұрауда.",
-            "DAPPNOTREADY": "Сайтқа әлі қосылу мүмкін емес - Metrix Core әлі іске қосылуда.",
-            "DAPPNOWALLET": "Сайтқа қосылу мүмкін емес - әмиян мекенжайы қолжетімді емес.",
-            "DAPPAPPROVEBUTTON": "Мақұлдау",
-            "DAPPCONNECTADDRESSLABEL": "Мекенжай",
             "DAPPSENDSITELABEL": "Сайт",
             "DAPPSENDCONTRACTLABEL": "Келісімшарт мекенжайы",
             "DAPPSENDAMOUNTLABEL": "Сома",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Максималды желі ақысы",
             "DAPPSENDMAXTOTALLABEL": "Максималды жалпы сома",
             "DAPPSENDDATALABEL": "Келісімшарт деректері",
+            "DAPPSIGNTITLE": "Хабарлама сұрауына қол қою",
+            "DAPPSIGNINFO": "Бұл сайт сіздің әмиян мекенжайыңыз көрсетілген хабарламаға қол қоюды сұрауда.",
             "DAPPSIGNMESSAGELABEL": "Хабарлама",
-            "BOOTSTRAPOFFERTITLE": "Әмиян айтарлықтай ескірген",
-            "BOOTSTRAPOFFERINFO": "Metrix Core жүйесін тез жаңарта алатын соңғы жүктеу нұсқасы қолжетімді. Қалыпты синхрондауды жалғастыру бірнеше күнге созылуы мүмкін, себебі әмияныңыз жіберіп алған әрбір блокты жүктеп алып, тексеруі керек.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap жүктеп алу",
-            "BOOTSTRAPOFFERCANCEL": "Қалыпты синхрондауды жалғастыру",
-            "BOOTSTRAPSPACEINFO": "Bootstrap файлын жүктеп алып, шығарып алуға дискідегі бос орын жеткіліксіз. Қажетті: {required}, Қолжетімді: {free}. Біраз орын босатып, қайталап көріңіз."
+            "DAPPNOTREADY": "Сайтқа әлі қосылу мүмкін емес - Metrix Core әлі іске қосылуда.",
+            "DAPPNOWALLET": "Сайтқа қосылу мүмкін емес - әмиян мекенжайы қолжетімді емес."
         },
         "ADDRESSBOOK": {
             "TITLE": "Мекенжай кітабы",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Ағымдағы желі"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Web3 сайтының мекенжайын енгізіңіз",
-            "GOBUTTON": "Бару",
-            "QUICKLAUNCH": "Жылдам іске қосу",
-            "DEVTOOLS": "Әзірлеуші құралдарын ашу",
-            "ADDLINK": "Сілтеме қосу",
-            "LINKNAMEPLACEHOLDER": "Аты",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Сақтау",
-            "CANCEL": "Бас тарту",
-            "REMOVE": "Алып тастау",
-            "REMOVECONFIRM": "Бұл жылдам сілтемені жою керек пе?",
-            "LINKEXISTS": "Бұл сілтеме жылдам іске қосу тізіміңізде бұрыннан бар",
-            "LINKINVALID": "Жарамды сайт мекенжайын енгізіңіз",
-            "LINKNETWORKLABEL": "Желі",
-            "LOADFAILED": "Сайт жүктелмеді",
-            "SECURESITE": "Қосылым қауіпсіз - жарамды SSL сертификаты",
-            "INSECURESITE": "Байланыс қауіпсіз емес",
-            "INVALIDCERTSITE": "Қосылым құпия емес - жарамсыз немесе сенімсіз SSL сертификаты"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Сақтық көшірме әмиян...",
             "SIGNMESSAGE": "Хабарламаға қол қою...",
             "VERIFYMESSAGE": "Хабарламаны растау...",
-            "LOCALE": "Тіл...",
-            "RESTARTCORE": "Metrix Core қайта іске қосыңыз",
-            "EXIT": "Шығу",
             "OPTIONS": "Опциялар...",
+            "LOCALE": "Тіл...",
             "CURRENCIES": "Валютаны көрсету...",
-            "ALTITUDEREFRESH": "Биіктік деректерін жаңарту"
+            "RESTARTCORE": "Metrix Core қайта іске қосыңыз",
+            "ALTITUDEREFRESH": "Биіктік деректерін жаңарту",
+            "EXIT": "Шығу"
         },
         "ENCRYPT": {
             "TITLE": "Шифрлау",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Жалпы қалдық",
+        "SPENDABLEBALANCE": "Шығынға жарамды қалдық",
+        "PENDINGBALANCE": "Күтудегі қалдық",
         "CANCELBUTTON": "Бас тарту",
         "DONEBUTTON": "Дайын",
         "OKBUTTON": "Жарайды",
+        "ACCEPTBUTTON": "Қабылдау",
         "CLEARALLBUTTON": "Барлығын тазалау",
         "ENTERACCOUNTLABEL": "Бұл мекенжай үшін белгі енгізіңіз",
         "ENTERADDRESSLABEL": "Metrix мекенжайын енгізіңіз",
@@ -464,11 +511,8 @@
         "SORTBY": "Бойынша сұрыптау",
         "SEARCH": "Іздеу",
         "FEE": "Ақы",
-        "ACCEPTBUTTON": "Қабылдау",
         "CONFIRMED": "Расталды",
         "UNCONFIRMED": "Расталмаған",
-        "PENDINGBALANCE": "Күтудегі қалдық",
-        "SPENDABLEBALANCE": "Шығынға жарамды қалдық",
         "SAVEBUTTON": "Сақтау"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core қайта іске қосылуда...",
         "BOOTSTRAPPING": "Bootstrap жүктелуде...",
         "BOOTSTRAPEXTRACTING": "Bootstrap шығарылуда...",
-        "TIMEREMAINING": "қалған:"
+        "TIMEREMAINING": "қалған:",
+        "DEVRPCOVERRIDEACTIVE": "Әзірлеуші RPC қосылымын қайта анықтау орнатылған (Параметрлер > Әзірлеуші) және жауап бермейді. Жергілікті қызметке қалыпты түрде қайта қосылу үшін оны өшіріңіз.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC қайта анықтауын тазалау және қайта қосу"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Жаңа тіркелгі сәтті жасалды",
         "ADDRESSCOPIEDCLIPBOARD": "Мекенжай буферге көшірілді",
+        "COPIEDCLIPBOARD": "Буферге көшірілді",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциялар буферге көшірілді",
         "EMPTYFIELDS": "Барлық өрістерді толтырыңыз",
         "NOUPDATE": "Жаңарту қолжетімді емес",
         "WALLETBACKEDUP": "Әмиянның сақтық көшірмесі сәтті жасалды",
+        "WALLETBACKUPFAILED": "Әмиянның автоматты түрде сақтық көшірмесін жасау сәтсіз аяқталды - сақтық көшірме орнын және бос дискілік кеңістікті тексеріңіз",
         "PASSPHRASEMISMATCH": "Енгізілген құпия сөздер сәйкес келмейді",
         "CHECKINGUPDATE": "Жаңарту тексерілуде...",
         "CHECKINGUPDATEFAILED": "Жаңартуды тексеру мүмкін емес. Желіңізді тексеріңіз.",
+        "WALLETUPDATEDOWNLOADING": "Жаңарту жүктелуде...",
         "SENDINGEXCEEDSBALANCE": "Сіз жіберіп жатқан сома таңдалған баланстан асып кетті",
         "MISSINGCHANGEADDRESS": "Өзгерту мекенжайын көрсетуіңіз керек",
         "MISSINGDESTINATIONADDRESS": "Сіз баратын мекенжайды көрсетуіңіз керек",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Әмиян шифрлануда...",
         "CHANGINGPASSPHARASE": "Құпия сөзді өзгерту...",
         "STARTINGMASTERNODE": "Мастернод іске қосылуда...",
+        "STOPPINGMASTERNODE": "Мастернод тоқтатылды...",
         "SENDINGTRANSACTION": "Транзакция жіберілуде...",
         "SIGNINGMESSAGE": "Хабарламаға қол қою...",
         "SIGNEDMESSAGE": "Хабарламаға қол қойылды",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Әмиянның құлпын ашу...",
         "TRANSACTIONMISMATCH": "Транзакция қатесі. Қайталап көріңіз.",
         "MINIMUMCONFIRMATIONS": "Барлық енгізулер жұмсамас бұрын кемінде 1 растауды қажет етеді.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциялар буферге көшірілді",
-        "STOPPINGMASTERNODE": "Мастернод тоқтатылды...",
         "FAILEDTOWRITECONFIG": "metrix.conf файлыңызға жазу кезінде мәселе туындады. Файлдың бар-жоғын және Altitude жазу рұқсаттары бар-жоғын тексеріңіз.",
         "NOPUBLICUP": "Жалпыға ортақ IP мекенжайы табылмады. Интернет байланысын тексеріп, Altitude жүйесін қайта іске қосыңыз.",
         "CONFIGURINGLOCALMN": "Жергілікті Masternode конфигурациялануда...",
         "REPORTINGISSUE": "Диагностикалық ақпарат алынуда... Бұл ақпарат алмасу буферіне көшіріледі.",
-        "WALLETUPDATEDOWNLOADING": "Жаңарту жүктелуде...",
-        "WALLETBACKUPFAILED": "Әмиянның автоматты түрде сақтық көшірмесін жасау сәтсіз аяқталды - сақтық көшірме орнын және бос дискілік кеңістікті тексеріңіз",
         "EXPLORERURLSAVED": "Explorer URL мекенжайы сақталды",
         "EXPLORERURLRESET": "Explorer URL мекенжайы әдепкі күйіне қайтарылды",
         "EXPLORERURLINVALID": "Бұл жарамды http(тер) URL мекенжайы емес",
-        "EXPLORERURLUNREACHABLE": "URL мекенжайына қол жеткізу мүмкін болмады - тексеріп, қайталап көріңіз"
+        "EXPLORERURLUNREACHABLE": "URL мекенжайына қол жеткізу мүмкін болмады - тексеріп, қайталап көріңіз",
+        "DEVRPCHOSTSAVED": "RPC хосты сақталды",
+        "DEVRPCHOSTRESET": "RPC хосты әдепкі күйге қайтарылды (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Алынған монеталар",
+        "NEWTRANSACTION_TITLE_STAKE": "Алынған үлес",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode сыйлығын алды"
     },
     "TIME": {
         "AFEWSECONDS": "Бірнеше секунд",
@@ -533,11 +587,6 @@
         "MONTHS": "айлар",
         "AYEAR": "Бір жыл",
         "YEARS": "жылдар"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Алынған монеталар",
-        "NEWTRANSACTION_TITLE_STAKE": "Алынған үлес",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode сыйлығын алды"
     },
     "MONTH": {
         "JAN": "ҚАҢТАР",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Басқарушылар ай сайынғы бюджеттер мен блокчейн өзгерістері бойынша дауыс беруге жауапты. Сіз Басқару келісімшартында дұрыс кепілді бекіту арқылы Басқарушы бола аласыз.",
                 "COLLATERAL": "Қажетті кепіл",
                 "ENROLL": "Тіркелу",
+                "SELECTAGOVERNOR": "Сәйкес келетін губернатор мекенжайын таңдаңыз",
+                "GOVERNORNOTSELECTED": "Ешқандай жарамды мекенжай таңдалмаған",
                 "CONFIRMENROLL": "Сіз басқарушы ретінде тіркелмекшісіз. Бұл басқару келісімшартына қажетті кепілмен транзакция жібереді. Сіз кез келген уақытта тіркеуден бас тарта аласыз.",
                 "ISGOVERNORTITLE": "Сіз белсенді әкімсіз!",
                 "ISGOVERNORDETAIL1": "Губернаторлар ай сайынғы бюджеттер мен блокчейн өзгерістері бойынша дауыс беруге жауапты.",
                 "ISGOVERNORDETAIL2": "Губернатор болып қалу үшін сіз 30 күн сайын кемінде 1 дауыс беруге қатысуыңыз керек.",
                 "ISGOVERNORDETAIL3": "Егер дауыс беретін ештеңе болмаса, белсенді пинг жіберу арқылы тіркелуді қолмен жалғастыра аласыз.",
+                "MYGOVERNORADDRESS": "Менің губернаторлық сөзім",
                 "UNENROLL": "Тіркеуден шығару",
                 "PING": "Белсенді пинг жіберу",
                 "LASTPINGTITLE": "Соңғы пинг",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "күндер",
                 "GOVERNORVOTEMATURITYHOURS": "сағаттар",
                 "GOVERNORVOTEMATURITYSUFFIX": "жетілгенге дейін",
-                "MYGOVERNORADDRESS": "Менің губернаторлық сөзім",
-                "SELECTAGOVERNOR": "Сәйкес келетін губернатор мекенжайын таңдаңыз",
-                "GOVERNORNOTSELECTED": "Ешқандай жарамды мекенжай таңдалмаған",
                 "NOTFULLYSYNCEDTITLE": "Губернатор мәртебесі қолжетімді емес",
                 "NOTFULLYSYNCEDDETAIL": "Сіздің блокчейніңіз толық синхрондалған кезде сіздің губернаторлық тіркеу мәртебеңіз көрінетін болады.",
                 "DGPMIGRATIONTITLE": "DGP көші-қоны",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ұсынысыңыз сәтті жасалды",
             "ENROLLINGGOVERNOR": "Губернатор болып тіркелуде...",
             "ENROLLEDGOVERNOR": "Транзакция расталғаннан кейін тіркеу аяқталады",
-            "VOTINGONPROPOSAL": "Ұсынысқа дауыс беру жіберілуде",
-            "VOTEDONPROPOSAL": "Транзакция расталғаннан кейін сіздің дауысыңыз есептеледі.",
             "PINGINGGOVERNOR": "Пинг жіберілуде...",
             "PINGEDGOVERNOR": "Пинг сәтті жіберілді. Транзакция расталғаннан кейін сіздің басқарушыңыз жаңартылады",
+            "VOTINGONPROPOSAL": "Ұсынысқа дауыс беру жіберілуде",
+            "VOTEDONPROPOSAL": "Транзакция расталғаннан кейін сіздің дауысыңыз есептеледі.",
             "UNENROLLINGGOVERNOR": "Губернаторды тіркеуден шығару...",
             "UNENROLLEDGOVERNOR": "Транзакция жіберілді. Транзакция расталғаннан кейін сіздің басқарушыңыз тіркеуден шығарылады.",
             "GOVERNORNOTMATURE": "Сіздің әкіміңіз бұл әрекетті орындауға әлі жеткілікті жетілмеген"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix сатып алыңыз",
+                "SEARCH": "Тарих"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Сіз жібересіз",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Транзакция тарихы",
                 "SEARCHBUTTON": "ІЗДЕУ",
+                "SEARCHPLACEHOLDER": "MRX немесе BTC мекенжайын енгізіңіз",
                 "TRANSACTIONDATE": "Күні",
                 "TRANSACTIONTYPE": "TX түрі",
                 "TRANSACTIONAMOUNT": "Сома",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Расталды",
                 "TRANSACTIONNOTCONFIRMED": "Расталмаған",
                 "TRANSACTIONREFUNDED": "Қайтарылған сома - ең төменгі сомадан төмен",
-                "AVGSWAPPRICE": "Орташа айырбас бағасы",
-                "SEARCHPLACEHOLDER": "MRX немесе BTC мекенжайын енгізіңіз"
+                "AVGSWAPPRICE": "Орташа айырбас бағасы"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Алмастыру мекенжайы жасалуда...",
             "ALREADYHAVEADDRESS": "Сізде осы Metrix мекенжайымен байланысты BTC мекенжайы бұрыннан бар",
             "NOADDRESS": "Сіз Metrix мекенжайын енгізбедіңіз"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix сатып алыңыз",
-                "SEARCH": "Тарих"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Жасырын көрсету",
                 "EMPTYTITLE": "Әлі ешқандай токен табылмады",
                 "EMPTYDETAIL": "Altitude автоматты түрде блок зерттеушісін сіздің мекенжайларыңызға жіберілген MRC20 және MRC721 токендерін тексереді, содан кейін барлығын сіздің жеке түйініңізбен салыстырады. Егер сіз оның келісімшарт мекенжайын білсеңіз, токенді қолмен қоса аласыз.",
+                "EMPTYDETAILCHECKINGDISABLED": "Автоматты токенді тексеру өшірілген, сондықтан мекенжайларыңыз токендерге тексерілмейді. Оны жоғарыда қайта қосыңыз немесе келісімшарт мекенжайын білсеңіз, токенді қолмен қосыңыз.",
                 "HIDDENTITLE": "Жасырын токендер",
                 "CONTEXTMENUHIDE": "Токенді жасыру",
                 "ITEMSSUFFIX": "зат(тар)",
-                "NONENUMERABLETOOLTIP": "Бұл жинақ жеке заттарды тізімдеуді қолдамайды - оның орнына қаншасы бар екенін көрсетуді қолдайды."
+                "NONENUMERABLETOOLTIP": "Бұл жинақ жеке заттарды тізімдеуді қолдамайды - оның орнына қаншасы бар екенін көрсетуді қолдайды.",
+                "CHECKINGENABLED": "Тексеру жүріп жатыр",
+                "CHECKINGDISABLED": "Есеп айырысу",
+                "CHECKINGENABLEDTOOLTIP": "Токендерді тексеру қосулы - Altitude мекенжайларыңызды токендерге мезгіл-мезгіл тексеріп, баланстарды жаңартып отырады. Өшіру үшін басыңыз.",
+                "CHECKINGDISABLEDTOOLTIP": "Токенді тексеру өшірулі - қайта қосу үшін басыңыз.",
+                "CHECKINGDISABLEDNOTICE": "Автоматты токенді тексеру өшірілген. Мекенжайларыңыз токендерге тексерілмейді және қалдықтар жаңартылмайды. Токенді қолмен қосуға болады."
             },
             "ADDTOKEN": {
                 "TITLE": "Токен қосу",

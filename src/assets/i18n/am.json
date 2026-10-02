@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "መለያ ፍጠር",
             "HIDEEMPTYACCOUNTS": "ያልተሰየሙ ባዶ መለያዎችን ደብቅ"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "አጠቃላይ እይታ",
+            "TRANSACTIONSTAB": "ግብይቶች",
+            "ADDRESSTABS": "አድራሻዎች"
+        },
         "SEND": {
             "ADDRECIPIENT": "ተቀባይ ያክሉ",
             "SEND": "ላክ",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "ቀን",
             "TABLECOLUMNS_CONFIRMS": "ማረጋገጫዎች",
             "ALL_SELECTUNSELECT": "ሁሉንም ቀያይር",
+            "TREEMODE": "የዛፍ ሁነታ",
+            "LISTMODE": "የዝርዝር ሁነታ",
             "SENDAVAILABLE": "የሚገኘውን ቀሪ ሂሳብ ይጠቀሙ",
             "INPUTLOCKED": "ግብዓቱ ተቆልፏል። ይህንን ግብዓት ለማውጣት መክፈት ያስፈልግዎታል።",
             "CONTEXTMENULOCKINPUT": "የመቆለፊያ ግብዓት",
@@ -38,10 +45,48 @@
             "AFTERFEE": "ከክፍያ በኋላ",
             "QUANTITY": "ብዛት",
             "BYTES": "ባይቶች",
-            "TREEMODE": "የዛፍ ሁነታ",
-            "LISTMODE": "የዝርዝር ሁነታ",
             "ALERTFEECHANGETITLE": "የክፍያ ለውጥ",
             "ALERTFEECHANGECONTENT": "ትክክለኛው የግብይት ክፍያ ከሚጠበቀው በላይ ነው። እባክዎ አዲሱን ክፍያ ያረጋግጡ፡"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "ውል ይፍጠሩ",
+            "INFO": "የተጠናቀረውን ባይትኮድ በማስገባት ስማርት ኮንትራት ወደ አውታረ መረቡ ያሰማሩ። ይህ የኮር ሰንሰለት ተግባር ነው - ከማሰማራትዎ በፊት የእርስዎን ባይትኮድ እና የጋዝ ቅንብሮችን ደግመው ያረጋግጡ፣ ማሰማራቱ ሊቀለበስ አይችልም።",
+            "FROM": "ከ",
+            "BYTECODE": "ባይትኮድ",
+            "BYTECODEPLACEHOLDER": "የተጠናቀረውን የኮንትራት ባይት ኮድ (ሄክስ) ይለጥፉ",
+            "INVALIDBYTECODE": "ባይትኮድ ትክክለኛ የሄክስ ሕብረቁምፊ (0-9፣ a-f) እና እኩል የቁምፊዎች ብዛት ያለው መሆን አለበት",
+            "GASLIMIT": "የጋዝ ገደብ",
+            "GASLIMITRANGE": "ክልል",
+            "GASPRICE": "የጋዝ ዋጋ (MRX በአንድ የጋዝ አሃድ)",
+            "GASPRICEMIN": "ዝቅተኛው",
+            "ESTIMATEDMAXCOST": "የሚገመተው ከፍተኛ ወጪ",
+            "DEPLOYBUTTON": "ውል ማሰማራት",
+            "INCOMPLETEFORM": "እባክዎ የላኪ አድራሻ ይምረጡ፣ ትክክለኛ ባይት ኮድ ያስገቡ እና ትክክለኛ የጋዝ ገደብ/ዋጋ ያዘጋጁ",
+            "HIGHGASPRICETITLE": "ከፍተኛ የጋዝ ዋጋ",
+            "HIGHGASPRICEINFO": "የወሰኑት የነዳጅ ዋጋ ባልተለመደ ሁኔታ ከፍተኛ ነው። ይህ ማሰማራት እስከ፦",
+            "DEPLOYING": "ውል በማሰማራት ላይ...",
+            "DEPLOYED": "የኮንትራት ማሰማራት ቀርቧል",
+            "RESULTTITLE": "የማሰማራት ውጤት",
+            "STATUS": "ሁኔታ",
+            "STATUSPENDING": "ማረጋገጫ በመጠባበቅ ላይ...",
+            "STATUSCONFIRMED": "በተሳካ ሁኔታ ተሰማርቷል",
+            "STATUSFAILED": "ማሰማራት አልተሳካም",
+            "TXID": "የግብይት መታወቂያ",
+            "SENDER": "ላኪ",
+            "CONTRACTADDRESS": "የኮንትራት አድራሻ",
+            "GASUSED": "ጥቅም ላይ የዋለ ጋዝ",
+            "DONEBUTTON": "ተጠናቅቋል",
+            "DEPLOYANOTHERBUTTON": "ሌላ አሰማራ"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "ግብይቶች",
+            "COPYBLOCKHASH": "የብሎክ ሃሽ ቅዳ",
+            "COPYTXID": "የግብይት መታወቂያውን ይቅዱ",
+            "COPYACCOUNT": "የመለያ ስም ቅዳ",
+            "COPYADDRESS": "አድራሻውን ይቅዱ",
+            "COPYAMOUNT": "የቅጂ መጠን",
+            "COPTBLOCKINDEX": "የቅጂ ብሎክ ኢንዴክስ",
+            "EXPLORER": "በብሎክ ኤክስፕሎረር ውስጥ ክፈት"
         },
         "STAKING": {
             "UNLOCK": "ለስቴኪንግ ክፈት",
@@ -68,13 +113,13 @@
             "IP": "አይፒ",
             "ADDRESS": "አድራሻ",
             "ENABLED": "ነቅቷል",
-            "STARTBUTTON": "አካባቢያዊ ጀምር",
-            "STARTALIASBUTTON": "ተለዋጭ ስም ጀምር",
-            "STARTALLBUTTON": "ሁሉንም ጀምር",
             "NOMASTERNODES": "ምንም አይነት ማስተርኖዶች የሉዎትም",
             "NOMNOUTPUTS": "የማስተርኖድ ውጤቶች አልተገኙም። የአካባቢ ማስተርኖድ ለማስኬድ በትክክል 2፣ 5፣ 25፣ 50 ወይም 100 ሚሊዮን ሳንቲሞችን ወደ ማስተርኖድ አድራሻዎ ይላኩ እና 15 ማረጋገጫዎችን ይጠብቁ።",
+            "STARTBUTTON": "አካባቢያዊ ጀምር",
             "STOPBUTTON": "አካባቢያዊ አቁም",
+            "STARTALIASBUTTON": "ተለዋጭ ስም ጀምር",
             "STOPALIASBUTTON": "ቅጽል ስም አቁም",
+            "STARTALLBUTTON": "ሁሉንም ጀምር",
             "ADDREMOTE": "የርቀት ማስተርኖድን ያክሉ",
             "REMOVEMN": "ማስተርኖድን አስወግድ",
             "ADDLOCAL": "አካባቢያዊ ማስተርኖድን ያዋቅሩ",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "ጄኔራል",
                 "COREVERSION": "ዋና ስሪት",
+                "ALTITUDEVERSION": "የከፍታ ስሪት",
                 "PROTOCOLVERSION": "የፕሮቶኮል ስሪት",
                 "WALLETVERSION": "የWallet.dat ስሪት",
                 "NETWORKTITLE": "አውታረ መረብ",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "የማስተርኖዶች ብዛት",
                 "BLOCKCHAINTITLE": "የብሎክ ሰንሰለት",
                 "NUMBERBLOCKS": "የአሁኑ የብሎኮች ብዛት",
-                "BESTBLOCKTTIME": "የመጨረሻው የማገጃ ጊዜ",
-                "ALTITUDEVERSION": "የከፍታ ስሪት"
+                "BESTBLOCKTTIME": "የመጨረሻው የማገጃ ጊዜ"
             },
             "DEBUG": {
                 "CONSOLEINFO": "ወደ Metrix Core RPC ኮንሶል እንኳን በደህና መጡ። የሚገኙ ትዕዛዞችን አጠቃላይ እይታ ለማግኘት እገዛ ይተይቡ።",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "ቋንቋ ይምረጡ"
         },
-        "TRANSACTIONS": {
-            "TITLE": "ግብይቶች",
-            "COPYBLOCKHASH": "የብሎክ ሃሽ ቅዳ",
-            "COPYTXID": "የግብይት መታወቂያውን ይቅዱ",
-            "COPYACCOUNT": "የመለያ ስም ቅዳ",
-            "COPYADDRESS": "አድራሻውን ይቅዱ",
-            "COPYAMOUNT": "የቅጂ መጠን",
-            "COPTBLOCKINDEX": "የቅጂ ብሎክ ኢንዴክስ",
-            "EXPLORER": "በብሎክ ኤክስፕሎረር ውስጥ ክፈት"
+        "CURRENCY": {
+            "TITLE": "የማሳያ ምንዛሬ ይምረጡ"
         },
         "EXPLORER": {
             "TITLE": "ብሎክ ኤክስፕሎረር",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "አውታረ መረብ",
             "WINDOTAB": "መስኮት",
+            "BACKUPTAB": "ምትኬ",
+            "EXPLORERTAB": "አሳሽ",
+            "DEVELOPERTAB": "ገንቢ",
             "NETWORK": {
                 "PROXY": "በSOCKS5 ፕሮክሲ በኩል ይገናኙ",
                 "PROXYIP": "የተኪ አይፒ",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "ሲዘጋ ይቀንሱ",
                 "BEHAVIOURTITLE": "የስርዓት ትሪ እና የመስኮት ባህሪ"
             },
-            "BACKUPTAB": "ምትኬ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "ራስ-ሰር ምትኬ",
                 "ENABLED": "በጊዜ ሰሌዳ ላይ wallet.datን በራስ-ሰር ምትኬ ያስቀምጡ",
                 "ENABLEDINFO": "የኪስ ቦርሳዎን ፋይል በፕሮግራም መሰረት አዲስ የመጠባበቂያ ቅጂ ይፈጥራል፣ ስለዚህ የሆነ ችግር ከተፈጠረ የቅርብ ጊዜ ቅጂ ሁልጊዜ ይገኛል።",
+                "INTERVALLABEL": "በየ (ቀናት) ምትኬ ያስቀምጡ",
                 "LASTBACKUP": "የመጨረሻው ምትኬ፦",
                 "NEVERBACKEDUP": "እስካሁን ምንም ራስ-ሰር ምትኬ አልተደረገም።",
                 "BACKUPNOWBUTTON": "አሁን ምትኬ አስቀምጥ",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ወደ ነባሪ ዳግም አስጀምር",
                 "PRUNETITLE": "የምትኬ ታሪክ",
                 "PRUNEINFO": "ይህ አቃፊ ለዘላለም እንዳይያድግ አሮጌ አውቶማቲክ ምትኬዎች ይሰረዛሉ - ከታች ያሉት የቅርብ ጊዜዎቹ ብቻ ይቀመጣሉ።",
-                "KEEPCOUNTLABEL": "የመጨረሻውን ቦታ አቆይ",
-                "INTERVALLABEL": "በየ (ቀናት) ምትኬ ያስቀምጡ"
+                "KEEPCOUNTLABEL": "የመጨረሻውን ቦታ አቆይ"
             },
-            "EXPLORERTAB": "አሳሽ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ብሎክ ኤክስፕሎረር",
                 "BLOCKEXPLORERINFO": "ጣቢያው የተከፈተው በብሎክ ኤክስፕሎረር ላይ አንድ ግብይት ሲመለከቱ ነው (ለምሳሌ፡ ግብይት በቀኝ ጠቅ ያድርጉ > በኤክስፕሎረር ላይ ይመልከቱ)።",
@@ -259,25 +298,31 @@
                 "MAINNET": "ሜይንኔት",
                 "TESTNET": "የሙከራ መረብ",
                 "REGTEST": "ሬጅስትራር"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "የገንቢ ሁነታ",
+                "DEVMODEINFO": "በነባሪነት ጠፍቷል እና ለገንቢዎች ብቻ የታሰበ። ይህንን ማንቃት የ RPC ግንኙነትን ለመሻር አማራጮችን ያሳያል - መደበኛ ተጠቃሚዎች ይህንን መተው አለባቸው።",
+                "DEVMODELABEL": "የገንቢ ሁነታን ያንቁ",
+                "WARNING": "እነዚህ ቅንብሮች ለልማት ዓላማዎች ብቻ ናቸው። እነሱን መቀየር ቦርሳው ከአጋንንት ጋር እንዳይገናኝ ሊያደርግ ይችላል - ምን እያደረጉ እንደሆነ የሚያውቁ ከሆነ ብቻ ይጠቀሙበት።",
+                "RPCHOSTTITLE": "የ RPC ግንኙነት",
+                "RPCHOSTINFO": "በነባሪነት Altitude እራሱን ከሚያስተዳድረው ዴሞን ጋር በዚህ ማሽን (127.0.0.1) ይገናኛል። እነዚህን መሻር ይልቁንስ ከሌላ ዴሞን ጋር እንዲገናኝ ያስችለዋል - ለምሳሌ የርቀት ሬጅስትሬት ምሳሌ፣ በአካባቢው ማስኬድ ሳያስፈልገው። ግንኙነቱ ከተሳካ፣ Altitude የራሱን የአካባቢ ዴሞን አያወርድም ወይም አይጀምርም። የታለመው ዴሞን rpcalloip ይህንን ግንኙነት መፍቀድ አለበት፣ እና ከታች ያለው rpcuser/rpcpassword ከውቅሩ ጋር መዛመድ አለበት። ወዲያውኑ ተግባራዊ ይሆናል፣ ዳግም ማስጀመር አያስፈልግም።",
+                "RPCHOSTLABEL": "የ RPC አስተናጋጅ",
+                "RPCPORTLABEL": "የ RPC ወደብ",
+                "RPCUSERLABEL": "የ RPC የተጠቃሚ ስም",
+                "RPCPASSWORDLABEL": "የ RPC የይለፍ ቃል"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "አጠቃላይ እይታ",
-            "TRANSACTIONSTAB": "ግብይቶች",
-            "ADDRESSTABS": "አድራሻዎች"
-        },
-        "CURRENCY": {
-            "TITLE": "የማሳያ ምንዛሬ ይምረጡ"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ዳሽቦርድ",
             "SEND": "ላክ",
+            "CREATECONTRACT": "ውል ይፍጠሩ",
             "RECEIVE": "ተቀበል",
             "TRANSACTIONS": "ግብይቶች",
             "STAKING": "ስቴኪንግ",
             "MASTERNODES": "ማስተርኖዶች",
+            "EXPLORER": "ብሎክ ኤክስፕሎረር",
             "SYNC": {
                 "CONNECTING": "በማገናኘት ላይ",
                 "NOBLOCKS": "ብሎኮችን በመጠበቅ ላይ",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ዋሌት በአሁኑ ጊዜ በገንዘብ እየተሸጠ አይደለም",
                 "MASTERNODEON": "ማስተርኖድ በአሁኑ ጊዜ እየሰራ ነው",
                 "MASTERNODEOFF": "ማስተርኖድ በአሁኑ ጊዜ እየሰራ አይደለም"
-            },
-            "EXPLORER": "ብሎክ ኤክስፕሎረር"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "የድር 3 ጣቢያ አድራሻ ያስገቡ",
+            "GOBUTTON": "ሂድ",
+            "QUICKLAUNCH": "ፈጣን ጅምር",
+            "DEVTOOLS": "የገንቢ መሳሪያዎችን ክፈት",
+            "ADDLINK": "አገናኝ ያክሉ",
+            "LINKNAMEPLACEHOLDER": "ስም",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "አስቀምጥ",
+            "CANCEL": "ሰርዝ",
+            "REMOVE": "አስወግድ",
+            "REMOVECONFIRM": "ይህን ፈጣን አገናኝ አስወግድ?",
+            "LINKEXISTS": "ያ አገናኝ አስቀድሞ በፈጣን ማስጀመሪያ ዝርዝርዎ ውስጥ አለ",
+            "LINKINVALID": "ትክክለኛ የጣቢያ አድራሻ ያስገቡ",
+            "LINKNETWORKLABEL": "አውታረ መረብ",
+            "LOADFAILED": "ጣቢያ መጫን አልተሳካም",
+            "SECURESITE": "ግንኙነቱ ደህንነቱ የተጠበቀ ነው - ትክክለኛ የSSL ሰርተፊኬት",
+            "INSECURESITE": "ግንኙነቱ ደህንነቱ የተጠበቀ አይደለም",
+            "INVALIDCERTSITE": "ግንኙነቱ የግል አይደለም - ልክ ያልሆነ ወይም የማይታመን የSSL ሰርተፊኬት"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "የኪስ ቦርሳዎን የይለፍ ቃል ያስገቡ",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "ለሜትሪክስ ኮር ዝማኔ አለ። አሁን መጫን ይፈልጋሉ?",
             "WALLETUPDATETITLE": "የከፍታ ዝማኔ ይገኛል",
             "WALLETUPDATEINFO": "ለAltitude ዝማኔ አለ። አሁን ማውረድ ይፈልጋሉ?",
+            "WALLETUPDATEREADYTITLE": "የከፍታ ዝማኔ ዝግጁ ነው",
+            "WALLETUPDATEREADYINFO": "ዝማኔው ወርዷል። ለመጫን አሁን Altitude ን እንደገና ያስጀምሩ?",
+            "WALLETUPDATERESTARTBUTTON": "ዳግም አስጀምር እና ጫን",
+            "WALLETUPDATELATERBUTTON": "በኋላ ላይ",
             "CLIENTUPDATEBUTTON": "አዘምን",
             "CLIENTUPDATECANCELBUTTON": "አታዘምን",
             "CLIENTUPDATESKIPBUTTON": "ይህንን ዝማኔ ዝለል",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "ከዚህ በፊት የኪስ ቦርሳዎን ፋይል የሰሩዋቸው ማናቸውም ምትኬዎች በአዲስ በተፈጠረው፣ በተመሰጠረ የኪስ ቦርሳ ፋይል መተካት አለባቸው። ለደህንነት ሲባል፣ ቀደም ሲል ያልተመሰጠረው የኪስ ቦርሳ ፋይል ምትኬዎች አዲሱን የተመሰጠረ የኪስ ቦርሳ መጠቀም እንደጀመሩ ወዲያውኑ ዋጋ ቢስ ይሆናሉ።",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ሜትሪክስ ኮር ባልተጠበቀ ሁኔታ ቆመ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "በሜትሪክስ ኮር ላይ ችግር ስለተፈጠረ፣ ፋይሉ እንዲቋረጥ ምክንያት ሆኗል። የ debug.log ፋይልዎን ችግሮች ካሉ መፈተሽ ይመከራል።",
+            "CLIENTUNKNOWNERRORTITLE": "የሜትሪክስ ኮር የግንኙነት ስህተት",
+            "CLIENTUNKNOWNERRORINFO": "ከሜትሪክስ ኮር ጋር በመገናኘት ላይ ችግር ነበር። የ debug.log ፋይልዎን ችግሮች ካሉ መፈተሽ ይመከራል።",
+            "BOOTSTRAPFAILEDTITLE": "የሜትሪክስ ኮር ቡትስትራፕ አልተሳካም",
+            "BOOTSTRAPFAILEDINFO": "የሜትሪክስ ኮርን የማስነሻ ሂደት ላይ ችግር ነበር። የAltitude ሎግ ፋይልዎን ችግሮች እንዳሉበት ማረጋገጥ ይመከራል።",
+            "BOOTSTRAPOFFERTITLE": "ቦርሳ በጣም ጊዜው ያለፈበት",
+            "BOOTSTRAPOFFERINFO": "ሜትሪክስ ኮርን በፍጥነት ወቅታዊ ለማድረግ የሚያስችል የቅርብ ጊዜ የማስነሻ ማሰሪያ አለ። በምትኩ በመደበኛ ማመሳሰል መቀጠል ለማጠናቀቅ ብዙ ቀናት ሊወስድ ይችላል፣ ምክንያቱም የኪስ ቦርሳዎ ያመለጠውን እያንዳንዱን ብሎክ ማውረድ እና ማረጋገጥ ስለሚያስፈልገው።",
+            "BOOTSTRAPOFFERBUTTON": "ቡትስትራፕን ያውርዱ",
+            "BOOTSTRAPOFFERCANCEL": "መደበኛ ማመሳሰልን ቀጥል",
+            "BOOTSTRAPSPACEINFO": "የቡትስትራፕ ለማውረድ እና ለማውጣት በቂ ነፃ የዲስክ ቦታ የለም። የሚያስፈልግ፦ {አስፈላጊ}፣ የሚገኝ፦ {ነጻ}። የተወሰነ ቦታ ነፃ ያድርጉ እና እንደገና ይሞክሩ።",
+            "STARTUPFAILEDTITLE": "የሜትሪክስ ኮር ጅምር አልተሳካም",
+            "STARTUPFAILEDINFO": "Metrix Coreን በመጀመር ላይ ስህተት ነበር። የAltitude ምዝግብ ማስታወሻ ፋይልዎን ችግሮች እንዳሉበት መፈተሽ ይመከራል።",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "የመልሶ ማግኛ መሳሪያዎች",
             "CLIENTINVALIDCONFIGTITLE": "ልክ ያልሆነ የ metrix.conf ውቅር",
             "CLIENTINVALIDCONFIGINFO": "የእርስዎ metrix.conf ልክ ያልሆነ የማስተርኖድ ማዋቀር ስላለው Metrix Core ወዲያውኑ እንዲወጣ ያደርገዋል። እባክዎ ይህንን ፋይል ያረጋግጡ።",
             "ADDREMOTEMNTITLE": "የርቀት ማስተርኖድን ያክሉ",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "ማስተርኖድ የግል ቁልፍ",
             "ADDREMOTEMNTXHASH": "ማስተርኖድ ትሬክስ ሃሽ",
             "ADDREMOTEMNTXINDEX": "ማስተርኖድ ትሬክስ ኢንዴክስ",
-            "BOOTSTRAPFAILEDTITLE": "የሜትሪክስ ኮር ቡትስትራፕ አልተሳካም",
-            "BOOTSTRAPFAILEDINFO": "የሜትሪክስ ኮርን የማስነሻ ሂደት ላይ ችግር ነበር። የAltitude ሎግ ፋይልዎን ችግሮች እንዳሉበት ማረጋገጥ ይመከራል።",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "የመልሶ ማግኛ መሳሪያዎች",
-            "STARTUPFAILEDTITLE": "የሜትሪክስ ኮር ጅምር አልተሳካም",
-            "STARTUPFAILEDINFO": "Metrix Coreን በመጀመር ላይ ስህተት ነበር። የAltitude ምዝግብ ማስታወሻ ፋይልዎን ችግሮች እንዳሉበት መፈተሽ ይመከራል።",
-            "CLIENTUNKNOWNERRORTITLE": "የሜትሪክስ ኮር የግንኙነት ስህተት",
-            "CLIENTUNKNOWNERRORINFO": "ከሜትሪክስ ኮር ጋር በመገናኘት ላይ ችግር ነበር። የ debug.log ፋይልዎን ችግሮች ካሉ መፈተሽ ይመከራል።",
             "UNENROLLGOVERNORTITLE": "የገዢውን ምዝገባ ማቋረጥ ያረጋግጡ",
             "UNENROLLGOVERNORCONTENT": "ገዥዎን ከምዝገባ ማስወጣት እንደሚፈልጉ እርግጠኛ ነዎት? ከእንግዲህ በሰንሰለት አስተዳደር ላይ ድምጽ መስጠት አይችሉም።",
-            "WALLETUPDATEREADYTITLE": "የከፍታ ዝማኔ ዝግጁ ነው",
-            "WALLETUPDATEREADYINFO": "ዝማኔው ወርዷል። ለመጫን አሁን Altitude ን እንደገና ያስጀምሩ?",
-            "WALLETUPDATERESTARTBUTTON": "ዳግም አስጀምር እና ጫን",
-            "WALLETUPDATELATERBUTTON": "በኋላ ላይ",
             "DAPPCONNECTTITLE": "ከጣቢያው ጋር ይገናኙ",
             "DAPPCONNECTINFO": "ይህ ጣቢያ ከኪስ ቦርሳዎ ጋር መገናኘት እና አድራሻዎን እና ቀሪ ሂሳብዎን ማየት ይፈልጋል።",
             "DAPPCONNECTBUTTON": "ይገናኙ",
+            "DAPPCONNECTADDRESSLABEL": "አድራሻ",
+            "DAPPAPPROVEBUTTON": "አጽድቅ",
             "DAPPREJECTBUTTON": "ውድቅ አድርግ",
             "DAPPSENDTITLE": "የውል ግብይት ጥያቄ",
             "DAPPSENDINFO": "ይህ ጣቢያ ከኪስ ቦርሳዎ የውል ግብይት ለመላክ እየጠየቀ ነው።",
-            "DAPPSIGNTITLE": "የመልእክት ጥያቄን ይፈርሙ",
-            "DAPPSIGNINFO": "ይህ ጣቢያ የኪስ ቦርሳዎን የያዘ መልእክት ለመፈረም እየጠየቀ ነው።",
-            "DAPPNOTREADY": "እስካሁን ከጣቢያው ጋር መገናኘት አልተቻለም - Metrix Core አሁንም እየተጀመረ ነው።",
-            "DAPPNOWALLET": "ከጣቢያው ጋር መገናኘት አይቻልም - የኪስ ቦርሳ አድራሻ የለም።",
-            "DAPPAPPROVEBUTTON": "አጽድቅ",
-            "DAPPCONNECTADDRESSLABEL": "አድራሻ",
             "DAPPSENDSITELABEL": "ጣቢያ",
             "DAPPSENDCONTRACTLABEL": "የኮንትራት አድራሻ",
             "DAPPSENDAMOUNTLABEL": "መጠን",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "ከፍተኛ የኔትወርክ ክፍያ",
             "DAPPSENDMAXTOTALLABEL": "ከፍተኛው ድምር",
             "DAPPSENDDATALABEL": "የኮንትራት መረጃ",
+            "DAPPSIGNTITLE": "የመልእክት ጥያቄን ይፈርሙ",
+            "DAPPSIGNINFO": "ይህ ጣቢያ የኪስ ቦርሳዎን የያዘ መልእክት ለመፈረም እየጠየቀ ነው።",
             "DAPPSIGNMESSAGELABEL": "መልእክት",
-            "BOOTSTRAPOFFERTITLE": "ቦርሳ በጣም ጊዜው ያለፈበት",
-            "BOOTSTRAPOFFERINFO": "ሜትሪክስ ኮርን በፍጥነት ወቅታዊ ለማድረግ የሚያስችል የቅርብ ጊዜ የማስነሻ ማሰሪያ አለ። በምትኩ በመደበኛ ማመሳሰል መቀጠል ለማጠናቀቅ ብዙ ቀናት ሊወስድ ይችላል፣ ምክንያቱም የኪስ ቦርሳዎ ያመለጠውን እያንዳንዱን ብሎክ ማውረድ እና ማረጋገጥ ስለሚያስፈልገው።",
-            "BOOTSTRAPOFFERBUTTON": "ቡትስትራፕን ያውርዱ",
-            "BOOTSTRAPOFFERCANCEL": "መደበኛ ማመሳሰልን ቀጥል",
-            "BOOTSTRAPSPACEINFO": "የቡትስትራፕ ለማውረድ እና ለማውጣት በቂ ነፃ የዲስክ ቦታ የለም። የሚያስፈልግ፦ {አስፈላጊ}፣ የሚገኝ፦ {ነጻ}። የተወሰነ ቦታ ነፃ ያድርጉ እና እንደገና ይሞክሩ።"
+            "DAPPNOTREADY": "እስካሁን ከጣቢያው ጋር መገናኘት አልተቻለም - Metrix Core አሁንም እየተጀመረ ነው።",
+            "DAPPNOWALLET": "ከጣቢያው ጋር መገናኘት አይቻልም - የኪስ ቦርሳ አድራሻ የለም።"
         },
         "ADDRESSBOOK": {
             "TITLE": "የአድራሻ ደብተር",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "የአሁኑ አውታረ መረብ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "የድር 3 ጣቢያ አድራሻ ያስገቡ",
-            "GOBUTTON": "ሂድ",
-            "QUICKLAUNCH": "ፈጣን ጅምር",
-            "DEVTOOLS": "የገንቢ መሳሪያዎችን ክፈት",
-            "ADDLINK": "አገናኝ ያክሉ",
-            "LINKNAMEPLACEHOLDER": "ስም",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "አስቀምጥ",
-            "CANCEL": "ሰርዝ",
-            "REMOVE": "አስወግድ",
-            "REMOVECONFIRM": "ይህን ፈጣን አገናኝ አስወግድ?",
-            "LINKEXISTS": "ያ አገናኝ አስቀድሞ በፈጣን ማስጀመሪያ ዝርዝርዎ ውስጥ አለ",
-            "LINKINVALID": "ትክክለኛ የጣቢያ አድራሻ ያስገቡ",
-            "LINKNETWORKLABEL": "አውታረ መረብ",
-            "LOADFAILED": "ጣቢያ መጫን አልተሳካም",
-            "SECURESITE": "ግንኙነቱ ደህንነቱ የተጠበቀ ነው - ትክክለኛ የSSL ሰርተፊኬት",
-            "INSECURESITE": "ግንኙነቱ ደህንነቱ የተጠበቀ አይደለም",
-            "INVALIDCERTSITE": "ግንኙነቱ የግል አይደለም - ልክ ያልሆነ ወይም የማይታመን የSSL ሰርተፊኬት"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "የመጠባበቂያ ቦርሳ...",
             "SIGNMESSAGE": "መልእክት ይፈርሙ...",
             "VERIFYMESSAGE": "መልዕክት አረጋግጥ...",
-            "LOCALE": "ቋንቋ...",
-            "RESTARTCORE": "ሜትሪክስ ኮርን እንደገና ያስጀምሩ",
-            "EXIT": "ውጣ",
             "OPTIONS": "አማራጮች...",
+            "LOCALE": "ቋንቋ...",
             "CURRENCIES": "ምንዛሬ አሳይ...",
-            "ALTITUDEREFRESH": "የከፍታ ውሂብን አድስ"
+            "RESTARTCORE": "ሜትሪክስ ኮርን እንደገና ያስጀምሩ",
+            "ALTITUDEREFRESH": "የከፍታ ውሂብን አድስ",
+            "EXIT": "ውጣ"
         },
         "ENCRYPT": {
             "TITLE": "ኢንክሪፕት",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ጠቅላላ ቀሪ ሂሳብ",
+        "SPENDABLEBALANCE": "የሚወጣ ቀሪ ሂሳብ",
+        "PENDINGBALANCE": "በመጠባበቅ ላይ ያለ ቀሪ ሂሳብ",
         "CANCELBUTTON": "ሰርዝ",
         "DONEBUTTON": "ተጠናቅቋል",
         "OKBUTTON": "እሺ",
+        "ACCEPTBUTTON": "ተቀበል",
         "CLEARALLBUTTON": "ሁሉንም አጽዳ",
         "ENTERACCOUNTLABEL": "ለዚህ አድራሻ መለያ ያስገቡ",
         "ENTERADDRESSLABEL": "የሜትሪክስ አድራሻ ያስገቡ",
@@ -464,11 +511,8 @@
         "SORTBY": "ደርድር በ",
         "SEARCH": "ፈልግ",
         "FEE": "ክፍያ",
-        "ACCEPTBUTTON": "ተቀበል",
         "CONFIRMED": "የተረጋገጠ",
         "UNCONFIRMED": "ያልተረጋገጠ",
-        "PENDINGBALANCE": "በመጠባበቅ ላይ ያለ ቀሪ ሂሳብ",
-        "SPENDABLEBALANCE": "የሚወጣ ቀሪ ሂሳብ",
         "SAVEBUTTON": "አስቀምጥ"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "ሜትሪክስ ኮርን እንደገና በማስጀመር ላይ...",
         "BOOTSTRAPPING": "የማስነሻ ማውረጃን በማውረድ ላይ...",
         "BOOTSTRAPEXTRACTING": "የቡትስትራፕ ማውጣት...",
-        "TIMEREMAINING": "የቀረው፦"
+        "TIMEREMAINING": "የቀረው፦",
+        "DEVRPCOVERRIDEACTIVE": "የገንቢ RPC ግንኙነት መሻሪያ ተዘጋጅቷል (አማራጮች > ገንቢ) እና ምላሽ እየሰጠ አይደለም። በተለምዶ ከአካባቢያዊ ዲያሞን ጋር እንደገና ለመገናኘት ያጽዱት።",
+        "DEVRPCOVERRIDECLEARBUTTON": "የ RPC መሻርን አጽዳ እና እንደገና ማገናኘት"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "አዲስ መለያ በተሳካ ሁኔታ ተፈጥሯል",
         "ADDRESSCOPIEDCLIPBOARD": "አድራሻው ወደ ቅንጥብ ሰሌዳ ተቀድቷል",
+        "COPIEDCLIPBOARD": "ወደ ቅንጥብ ሰሌዳ ተቀድቷል",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ግብይቶች ወደ ቅንጥብ ሰሌዳ ተቀድተዋል",
         "EMPTYFIELDS": "እባክዎ ሁሉንም መስኮች ይሙሉ",
         "NOUPDATE": "ምንም ዝማኔ አይገኝም",
         "WALLETBACKEDUP": "የኪስ ቦርሳ ምትኬ ተሳክቷል",
+        "WALLETBACKUPFAILED": "ራስ-ሰር የኪስ ቦርሳ ምትኬ አልተሳካም - የመጠባበቂያ ቦታዎን እና የሚገኘውን የዲስክ ቦታ ያረጋግጡ",
         "PASSPHRASEMISMATCH": "ያስገቡዋቸው የይለፍ ሐረጎች አይዛመዱም",
         "CHECKINGUPDATE": "ዝማኔን በመፈተሽ ላይ...",
         "CHECKINGUPDATEFAILED": "ዝማኔ መኖሩን ማረጋገጥ አልተቻለም። አውታረ መረብዎን ያረጋግጡ።",
+        "WALLETUPDATEDOWNLOADING": "ዝማኔን በማውረድ ላይ...",
         "SENDINGEXCEEDSBALANCE": "የምትልኩት መጠን ከተመረጠው ቀሪ ሂሳብህ ይበልጣል።",
         "MISSINGCHANGEADDRESS": "የለውጥ አድራሻ መግለጽ አለብዎት",
         "MISSINGDESTINATIONADDRESS": "የመድረሻ አድራሻ መግለጽ አለብህ",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "የኪስ ቦርሳን በመመስጠር ላይ...",
         "CHANGINGPASSPHARASE": "የይለፍ ሐረግን በመቀየር ላይ...",
         "STARTINGMASTERNODE": "ማስተርኖድ በመጀመር ላይ...",
+        "STOPPINGMASTERNODE": "ማስተርኖድን በማቆም ላይ...",
         "SENDINGTRANSACTION": "ግብይት በመላክ ላይ...",
         "SIGNINGMESSAGE": "መልእክት በመፈረም ላይ...",
         "SIGNEDMESSAGE": "መልዕክት ተፈርሟል",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "የኪስ ቦርሳ በመክፈት ላይ...",
         "TRANSACTIONMISMATCH": "የግብይት ስህተት። እባክዎ እንደገና ይሞክሩ።",
         "MINIMUMCONFIRMATIONS": "ሁሉም ግብዓቶች ወጪ ከማድረጋቸው በፊት ቢያንስ አንድ ማረጋገጫ ያስፈልጋቸዋል።",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ግብይቶች ወደ ቅንጥብ ሰሌዳ ተቀድተዋል",
-        "STOPPINGMASTERNODE": "ማስተርኖድን በማቆም ላይ...",
         "FAILEDTOWRITECONFIG": "ወደ metrix.conf ፋይልዎ በመጻፍ ላይ ችግር ነበር። ፋይሉ መኖሩን እና Altitude የመጻፍ ፈቃዶች እንዳሉት ያረጋግጡ።",
         "NOPUBLICUP": "ምንም የህዝብ አይፒ አድራሻ አልተገኘም። የኢንተርኔት ግንኙነትዎን ይፈትሹ እና Altitude ን እንደገና ያስጀምሩ።",
         "CONFIGURINGLOCALMN": "የአካባቢውን ማስተርኖድ በማዋቀር ላይ...",
         "REPORTINGISSUE": "የምርመራ መረጃ ማግኘት... ይህ መረጃ ወደ ቅንጥብ ሰሌዳዎ ይገለበጣል።",
-        "WALLETUPDATEDOWNLOADING": "ዝማኔን በማውረድ ላይ...",
-        "WALLETBACKUPFAILED": "ራስ-ሰር የኪስ ቦርሳ ምትኬ አልተሳካም - የመጠባበቂያ ቦታዎን እና የሚገኘውን የዲስክ ቦታ ያረጋግጡ",
         "EXPLORERURLSAVED": "የአሳሽ ዩአርኤል ተቀምጧል",
         "EXPLORERURLRESET": "የኤክስፕሎረር ዩአርኤል ወደ ነባሪው ተመልሷል",
         "EXPLORERURLINVALID": "ያ ትክክለኛ የ http(s) URL አይደለም",
-        "EXPLORERURLUNREACHABLE": "ወደዚያ ዩአርኤል መድረስ አልተቻለም - ያረጋግጡትና እንደገና ይሞክሩ"
+        "EXPLORERURLUNREACHABLE": "ወደዚያ ዩአርኤል መድረስ አልተቻለም - ያረጋግጡትና እንደገና ይሞክሩ",
+        "DEVRPCHOSTSAVED": "የ RPC አስተናጋጅ ተቀምጧል",
+        "DEVRPCHOSTRESET": "የ RPC አስተናጋጅ ወደ ነባሪው ተመልሷል (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "የተቀበሉ ሳንቲሞች",
+        "NEWTRANSACTION_TITLE_STAKE": "የተቀበልኩት ድርሻ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "የማስተርኖድ ሽልማት ተቀብለዋል"
     },
     "TIME": {
         "AFEWSECONDS": "ጥቂት ሰከንዶች",
@@ -533,11 +587,6 @@
         "MONTHS": "ወራት",
         "AYEAR": "አንድ ዓመት",
         "YEARS": "ዓመታት"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "የተቀበሉ ሳንቲሞች",
-        "NEWTRANSACTION_TITLE_STAKE": "የተቀበልኩት ድርሻ",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "የማስተርኖድ ሽልማት ተቀብለዋል"
     },
     "MONTH": {
         "JAN": "ጃን",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "ገዥዎች በወርሃዊ በጀቶች እና በብሎክቼይን ለውጦች ላይ ድምጽ የመስጠት ኃላፊነት አለባቸው። በአስተዳደር ውል ውስጥ ትክክለኛውን መያዣ በመቆለፍ ገዥ መሆን ይችላሉ።",
                 "COLLATERAL": "የሚያስፈልግ መያዣ",
                 "ENROLL": "ይመዝገቡ",
+                "SELECTAGOVERNOR": "ብቁ የሆነ የገዢ አድራሻ ይምረጡ",
+                "GOVERNORNOTSELECTED": "ብቁ የሆነ አድራሻ አልተመረጠም",
                 "CONFIRMENROLL": "እንደ ገዥ ሊመዘገቡ ነው። ይህ አስፈላጊውን መያዣ የያዘ ግብይት ወደ የአስተዳደር ውል ይልካል። በማንኛውም ጊዜ ከምዝገባ መውጣት ይችላሉ።",
                 "ISGOVERNORTITLE": "ንቁ ገዥ ነዎት!",
                 "ISGOVERNORDETAIL1": "ገዥዎች በወርሃዊ በጀት እና በብሎክቼይን ለውጦች ላይ ድምጽ የመስጠት ኃላፊነት አለባቸው።",
                 "ISGOVERNORDETAIL2": "ገዥ ሆነው ለመቆየት በየ30 ቀኑ ቢያንስ በአንድ ድምጽ መሳተፍ ያስፈልግዎታል።",
                 "ISGOVERNORDETAIL3": "ድምጽ ለመስጠት ምንም ነገር ከሌለ፣ ንቁ ፒንግ በመላክ ምዝገባዎን በእጅ መቀጠል ይችላሉ።",
+                "MYGOVERNORADDRESS": "የገዥዬ ንግግር",
                 "UNENROLL": "ከምዝገባ ውጣ",
                 "PING": "አክቲቭ ፒንግ ላክ",
                 "LASTPINGTITLE": "የመጨረሻው ፒንግ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ቀናት",
                 "GOVERNORVOTEMATURITYHOURS": "ሰዓቶች",
                 "GOVERNORVOTEMATURITYSUFFIX": "እስኪያድግ ድረስ",
-                "MYGOVERNORADDRESS": "የገዥዬ ንግግር",
-                "SELECTAGOVERNOR": "ብቁ የሆነ የገዢ አድራሻ ይምረጡ",
-                "GOVERNORNOTSELECTED": "ብቁ የሆነ አድራሻ አልተመረጠም",
                 "NOTFULLYSYNCEDTITLE": "የገዥነት ደረጃ አይገኝም",
                 "NOTFULLYSYNCEDDETAIL": "የእርስዎ የገዢ ምዝገባ ሁኔታ የእርስዎ ብሎክቼይን ሙሉ በሙሉ ሲመሳሰል ይታያል።",
                 "DGPMIGRATIONTITLE": "የዲጂፒ ፍልሰት",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "ሀሳብዎ በተሳካ ሁኔታ ተፈጥሯል",
             "ENROLLINGGOVERNOR": "እንደ ገዥ መመዝገብ...",
             "ENROLLEDGOVERNOR": "ግብይትዎ ከተረጋገጠ በኋላ ምዝገባዎ ይጠናቀቃል",
-            "VOTINGONPROPOSAL": "የፕሮፖዛል ድምጽ በመላክ ላይ",
-            "VOTEDONPROPOSAL": "ግብይቱ ከተረጋገጠ በኋላ ድምጽዎ ይቆጠራል።",
             "PINGINGGOVERNOR": "ፒንግ በመላክ ላይ...",
             "PINGEDGOVERNOR": "ፒንግ በተሳካ ሁኔታ ተልኳል። ግብይቱ ከተረጋገጠ በኋላ ገዥዎ ይዘመናል",
+            "VOTINGONPROPOSAL": "የፕሮፖዛል ድምጽ በመላክ ላይ",
+            "VOTEDONPROPOSAL": "ግብይቱ ከተረጋገጠ በኋላ ድምጽዎ ይቆጠራል።",
             "UNENROLLINGGOVERNOR": "ከምዝገባ ውጪ መሆን...",
             "UNENROLLEDGOVERNOR": "ግብይቱ ተልኳል። ግብይቱ ከተረጋገጠ በኋላ ገዥዎ ከምዝገባ ይወጣል",
             "GOVERNORNOTMATURE": "ገዥዎ ይህንን ተግባር ለማከናወን በቂ ብስለት የለውም እስካሁን"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "ሜትሪክስ ይግዙ",
+                "SEARCH": "ታሪክ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "እርስዎ ይልካሉ",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "የግብይት ታሪክ",
                 "SEARCHBUTTON": "ፍለጋ",
+                "SEARCHPLACEHOLDER": "የMRX ወይም የBTC አድራሻ ያስገቡ",
                 "TRANSACTIONDATE": "ቀን",
                 "TRANSACTIONTYPE": "የቴክሳስ አይነት",
                 "TRANSACTIONAMOUNT": "መጠን",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "የተረጋገጠ",
                 "TRANSACTIONNOTCONFIRMED": "አልተረጋገጠም",
                 "TRANSACTIONREFUNDED": "ተመላሽ ገንዘብ - ከዝቅተኛው በታች",
-                "AVGSWAPPRICE": "አማካይ የመለዋወጫ ዋጋ",
-                "SEARCHPLACEHOLDER": "የMRX ወይም የBTC አድራሻ ያስገቡ"
+                "AVGSWAPPRICE": "አማካይ የመለዋወጫ ዋጋ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "የመቀየሪያ አድራሻ በማመንጨት ላይ...",
             "ALREADYHAVEADDRESS": "ከዚህ የሜትሪክስ አድራሻ ጋር የተያያዘ የቢቲሲ አድራሻ አስቀድመው አለዎት",
             "NOADDRESS": "የሜትሪክስ አድራሻ አላስገቡም"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "ሜትሪክስ ይግዙ",
-                "SEARCH": "ታሪክ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "አትደብቅ",
                 "EMPTYTITLE": "እስካሁን ምንም ቶከኖች አልተገኙም",
                 "EMPTYDETAIL": "ከፍታ ወደ አድራሻዎችዎ የተላኩ የMRC20 እና MRC721 ቶከኖችን የማገጃ አሳሽ በራስ-ሰር ይፈትሻል፣ ከዚያም ሁሉንም ነገር ከራስዎ ኖድ ጋር በቀጥታ ያረጋግጣል። የኮንትራት አድራሻውን የሚያውቁ ከሆነ ቶከን በእጅ ማከል ይችላሉ።",
+                "EMPTYDETAILCHECKINGDISABLED": "አውቶማቲክ የቶከን ፍተሻ ጠፍቷል፣ ስለዚህ አድራሻዎችዎ ለቶከን እየተፈተሹ አይደለም። ከላይ መልሰው ያብሩት፣ ወይም የውል አድራሻውን የሚያውቁ ከሆነ በእጅዎ ቶከን ያክሉ።",
                 "HIDDENTITLE": "የተደበቁ ቶከኖች",
                 "CONTEXTMENUHIDE": "ማስመሰያ ደብቅ",
                 "ITEMSSUFFIX": "ንጥል(ዎች)",
-                "NONENUMERABLETOOLTIP": "ይህ ስብስብ የግለሰብ እቃዎችን መዘርዘርን አይደግፍም - በምትኩ ምን ያህል እንደያዙ ያሳያል።"
+                "NONENUMERABLETOOLTIP": "ይህ ስብስብ የግለሰብ እቃዎችን መዘርዘርን አይደግፍም - በምትኩ ምን ያህል እንደያዙ ያሳያል።",
+                "CHECKINGENABLED": "በቼክ ላይ",
+                "CHECKINGDISABLED": "ቼኪንግ ኦፍ",
+                "CHECKINGENABLEDTOOLTIP": "የቶከን ፍተሻ በርቷል - ከፍታ በየጊዜው የቶከን አድራሻዎችዎን ይፈትሻል እና ሚዛኖችን ያድሳል። ለማጥፋት ጠቅ ያድርጉ።",
+                "CHECKINGDISABLEDTOOLTIP": "የቶከን ፍተሻ ጠፍቷል - እንደገና ለማብራት ጠቅ ያድርጉ።",
+                "CHECKINGDISABLEDNOTICE": "አውቶማቲክ የቶከን ፍተሻ ጠፍቷል። አድራሻዎችዎ ቶከን ለማግኘት እየተቃኙ አይደሉም እና ቀሪ ሂሳቦች አይዘመኑም። አሁንም ቶከን በእጅ ማከል ይችላሉ።"
             },
             "ADDTOKEN": {
                 "TITLE": "ቶከን ያክሉ",

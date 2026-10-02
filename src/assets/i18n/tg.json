@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Ҳисоб кушоед",
             "HIDEEMPTYACCOUNTS": "Ҳисобҳои холӣ беномро пинҳон кунед"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Шарҳи умумӣ",
+            "TRANSACTIONSTAB": "Амалиётҳо",
+            "ADDRESSTABS": "Суроғаҳо"
+        },
         "SEND": {
             "ADDRECIPIENT": "Иловаи Гиранда",
             "SEND": "Фиристодан",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Сана",
             "TABLECOLUMNS_CONFIRMS": "Тасдиқҳо",
             "ALL_SELECTUNSELECT": "Ҳамаашро кушоед/якунед",
+            "TREEMODE": "Ҳолати дарахт",
+            "LISTMODE": "Реҷаи рӯйхат",
             "SENDAVAILABLE": "Бақияи дастрасро истифода баред",
             "INPUTLOCKED": "Вуруд қулф шудааст. Барои сарф кардани он, шумо бояд ин вурудро кушоед.",
             "CONTEXTMENULOCKINPUT": "Вуруди қулф",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Баъд аз пардохти ҳаққи хизматрасонӣ",
             "QUANTITY": "Миқдор",
             "BYTES": "Байтҳо",
-            "TREEMODE": "Ҳолати дарахт",
-            "LISTMODE": "Реҷаи рӯйхат",
             "ALERTFEECHANGETITLE": "Тағйири ҳаққи хизматрасонӣ",
             "ALERTFEECHANGECONTENT": "Пардохти воқеии амалиёт аз интизорӣ баландтар аст. Лутфан, ҳаққи навро тасдиқ кунед:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Шартнома эҷод кунед",
+            "INFO": "Шартномаи интеллектуалиро тавассути пешниҳоди байткоди тартибдодашудаи он ба шабака ҷойгир кунед. Ин як функсияи асосии занҷир аст - пеш аз ҷойгиркунӣ танзимоти байткод ва гази худро дубора санҷед, ҷойгиркуниро бекор кардан мумкин нест.",
+            "FROM": "Аз",
+            "BYTECODE": "Байткод",
+            "BYTECODEPLACEHOLDER": "Рамзи байтии шартномаи тартибдодашударо (hex) часбонед",
+            "INVALIDBYTECODE": "Байткод бояд сатри шонздаҳӣ (0-9, a-f) бо шумораи ҷуфти аломатҳо бошад",
+            "GASLIMIT": "Маҳдудияти газ",
+            "GASLIMITRANGE": "Диапазон",
+            "GASPRICE": "Нархи газ (MRX барои як воҳиди газ)",
+            "GASPRICEMIN": "Ҳадди ақал",
+            "ESTIMATEDMAXCOST": "Арзиши тахминии ҳадди аксар",
+            "DEPLOYBUTTON": "Шартномаи ҷойгиркунӣ",
+            "INCOMPLETEFORM": "Лутфан, суроғаи фиристандаро интихоб кунед, рамзи дурусти байтиро ворид кунед ва лимити/нархи дурусти сӯзишвориро муқаррар кунед",
+            "HIGHGASPRICETITLE": "Нархи баланди бензин",
+            "HIGHGASPRICEINFO": "Нархи бензине, ки шумо муқаррар кардаед, ғайриоддӣ баланд аст. Ин ҷойгиркунӣ метавонад то:",
+            "DEPLOYING": "Шартномаи ҷойгиркунӣ...",
+            "DEPLOYED": "Шартномаи ҷойгиркунӣ пешниҳод карда шуд",
+            "RESULTTITLE": "Натиҷаи ҷойгиркунӣ",
+            "STATUS": "Ҳолат",
+            "STATUSPENDING": "Тасдиқи интизорӣ...",
+            "STATUSCONFIRMED": "Бомуваффақият ҷойгир карда шуд",
+            "STATUSFAILED": "Ҷойгиркунӣ ноком шуд",
+            "TXID": "ID-и амалиёт",
+            "SENDER": "Фиристанда",
+            "CONTRACTADDRESS": "Суроғаи шартнома",
+            "GASUSED": "Гази истифодашуда",
+            "DONEBUTTON": "Анҷом ёфт",
+            "DEPLOYANOTHERBUTTON": "Ҷойгиркунии дигар"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Амалиётҳо",
+            "COPYBLOCKHASH": "Нусхабардории блоки хэш",
+            "COPYTXID": "Нусхабардории ID-и амалиёт",
+            "COPYACCOUNT": "Нусхабардории номи ҳисоб",
+            "COPYADDRESS": "Нусхабардории суроға",
+            "COPYAMOUNT": "Миқдори нусхабардорӣ",
+            "COPTBLOCKINDEX": "Индекси блоки нусхабардорӣ",
+            "EXPLORER": "Дар Block Explorer кушодан"
         },
         "STAKING": {
             "UNLOCK": "Барои бози кардан кушодан",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Суроға",
             "ENABLED": "Фаъол карда шудааст",
-            "STARTBUTTON": "Маҳаллиро оғоз кунед",
-            "STARTALIASBUTTON": "Номи тахаллусро оғоз кунед",
-            "STARTALLBUTTON": "Ҳамаашро оғоз кунед",
             "NOMASTERNODES": "Шумо ягон мастернод надоред",
             "NOMNOUTPUTS": "Ҳеҷ натиҷаи Masternode ёфт нашуд. Барои иҷро кардани Masternode-и маҳаллӣ, дақиқ 2,5,25,50 ё 100 миллион тангаро ба суроғаи Masternode-и худ фиристед ва интизори 15 тасдиқ шавед.",
+            "STARTBUTTON": "Маҳаллиро оғоз кунед",
             "STOPBUTTON": "Маҳаллиро қатъ кунед",
+            "STARTALIASBUTTON": "Номи тахаллусро оғоз кунед",
             "STOPALIASBUTTON": "Номи тахаллусро қатъ кунед",
+            "STARTALLBUTTON": "Ҳамаашро оғоз кунед",
             "ADDREMOTE": "Мастернодҳои дурдастро илова кунед",
             "REMOVEMN": "Masternode-ро нест кунед",
             "ADDLOCAL": "Танзими Masternode маҳаллӣ",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Генерал",
                 "COREVERSION": "Версияи аслӣ",
+                "ALTITUDEVERSION": "Нусхаи баландӣ",
                 "PROTOCOLVERSION": "Нусхаи протокол",
                 "WALLETVERSION": "Версияи Wallet.dat",
                 "NETWORKTITLE": "Шабака",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Шумораи Мастернодҳо",
                 "BLOCKCHAINTITLE": "Занҷири блокӣ",
                 "NUMBERBLOCKS": "Шумораи ҷории блокҳо",
-                "BESTBLOCKTTIME": "Вақти охирини блок",
-                "ALTITUDEVERSION": "Нусхаи баландӣ"
+                "BESTBLOCKTTIME": "Вақти охирини блок"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Хуш омадед ба консоли Metrix Core RPC. Барои гирифтани маълумоти умумӣ дар бораи фармонҳои дастрас, калимаи \"help\"-ро нависед.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Забонро интихоб кунед"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Амалиётҳо",
-            "COPYBLOCKHASH": "Нусхабардории блоки хэш",
-            "COPYTXID": "Нусхабардории ID-и амалиёт",
-            "COPYACCOUNT": "Нусхабардории номи ҳисоб",
-            "COPYADDRESS": "Нусхабардории суроға",
-            "COPYAMOUNT": "Миқдори нусхабардорӣ",
-            "COPTBLOCKINDEX": "Индекси блоки нусхабардорӣ",
-            "EXPLORER": "Дар Block Explorer кушодан"
+        "CURRENCY": {
+            "TITLE": "Асъори намоишро интихоб кунед"
         },
         "EXPLORER": {
             "TITLE": "Блокшинос",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Шабака",
             "WINDOTAB": "Тиреза",
+            "BACKUPTAB": "Нусхабардорӣ",
+            "EXPLORERTAB": "Таҳқиқотчӣ",
+            "DEVELOPERTAB": "Таҳиягар",
             "NETWORK": {
                 "PROXY": "Пайвастшавӣ тавассути прокси SOCKS5",
                 "PROXYIP": "IP-и прокси",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Ҳангоми пӯшидан кам кардан",
                 "BEHAVIOURTITLE": "Рафтори лавҳаи система ва тиреза"
             },
-            "BACKUPTAB": "Нусхабардорӣ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Нусхабардории худкор",
                 "ENABLED": "Нусхабардории худкори wallet.dat дар ҷадвал",
                 "ENABLEDINFO": "Нусхаи эҳтиётии нави файли ҳамёни шуморо дар ҷадвал эҷод мекунад, то нусхаи охирин ҳамеша дар сурати хатогие дастрас бошад.",
+                "INTERVALLABEL": "Нусхабардории эҳтиётӣ ҳар (рӯз)",
                 "LASTBACKUP": "Нусхаи эҳтиётии охирин:",
                 "NEVERBACKEDUP": "Ҳанӯз нусхаи эҳтиётии худкор сохта нашудааст.",
                 "BACKUPNOWBUTTON": "Ҳоло нусхабардорӣ кунед",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Аз нав танзимкунӣ ба ҳолати пешфарз",
                 "PRUNETITLE": "Таърихи нусхабардорӣ",
                 "PRUNEINFO": "Нусхаҳои эҳтиётии автоматии кӯҳна нест карда мешаванд, аз ин рӯ ин папка абадӣ афзоиш намеёбад - танҳо навтаринҳо дар зер нигоҳ дошта мешаванд.",
-                "KEEPCOUNTLABEL": "Охиринро нигоҳ доред",
-                "INTERVALLABEL": "Нусхабардории эҳтиётӣ ҳар (рӯз)"
+                "KEEPCOUNTLABEL": "Охиринро нигоҳ доред"
             },
-            "EXPLORERTAB": "Таҳқиқотчӣ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Блокшинос",
                 "BLOCKEXPLORERINFO": "Сомона ҳангоми дидани транзаксия дар браузери блок кушода шуд (масалан, бо тугмаи рости муш дар болои транзаксия > Намоиш дар Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Мейннет",
                 "TESTNET": "Testnet",
                 "REGTEST": "Санҷиши бақайдгирӣ"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Реҷаи таҳиягар",
+                "DEVMODEINFO": "Пешфарз хомӯш аст ва танҳо барои таҳиягарон пешбинӣ шудааст. Фаъол кардани ин имконоти аз нав танзимкунии пайвасти RPC-ро нишон медиҳад - корбарони стандартӣ бояд инро хомӯш кунанд.",
+                "DEVMODELABEL": "Реҷаи таҳиягарро фаъол созед",
+                "WARNING": "Ин танзимот танҳо барои мақсадҳои таҳия мебошанд. Тағйир додани онҳо метавонад аз пайвастшавии ҳамён ба демон умуман пешгирӣ кунад - инро танҳо дар сурате истифода баред, ки шумо донед, ки чӣ кор карда истодаед.",
+                "RPCHOSTTITLE": "Пайвасти RPC",
+                "RPCHOSTINFO": "Бо нобаёнӣ, Altitude ба демоне, ки худаш дар ин мошин идора мекунад, пайваст мешавад (127.0.0.1). Агар инҳоро бекор кунед, ба он имкон медиҳад, ки ба демони дигар пайваст шавад - масалан, як мисоли regtest дурдаст, бе он ки якеро дар маҳал иҷро кунад. Агар пайвастшавӣ муваффақ шавад, Altitude демони маҳаллии худро зеркашӣ ё оғоз намекунад. rpclowip-и демони мақсаднок бояд ин пайвастшавиро иҷозат диҳад ва rpcuser/rpcpassword дар зер бояд ба конфигуратсияи он мувофиқат кунад. Фавран эътибор пайдо мекунад, бозоғозӣ лозим нест.",
+                "RPCHOSTLABEL": "Хости RPC",
+                "RPCPORTLABEL": "Порти RPC",
+                "RPCUSERLABEL": "Номи корбарии RPC",
+                "RPCPASSWORDLABEL": "Рамзи RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Шарҳи умумӣ",
-            "TRANSACTIONSTAB": "Амалиётҳо",
-            "ADDRESSTABS": "Суроғаҳо"
-        },
-        "CURRENCY": {
-            "TITLE": "Асъори намоишро интихоб кунед"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "панели идоракунӣ",
             "SEND": "Фиристодан",
+            "CREATECONTRACT": "Шартнома эҷод кунед",
             "RECEIVE": "Гирифтан",
             "TRANSACTIONS": "Амалиётҳо",
             "STAKING": "Стейкинг",
             "MASTERNODES": "Мастернодҳо",
+            "EXPLORER": "Блокшинос",
             "SYNC": {
                 "CONNECTING": "Пайвастшавӣ",
                 "NOBLOCKS": "Интизори блокҳо",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Ҳамён айни замон ставка намегузорад",
                 "MASTERNODEON": "Айни замон Masternode кор мекунад",
                 "MASTERNODEOFF": "Masternode айни замон кор намекунад"
-            },
-            "EXPLORER": "Блокшинос"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Суроғаи сайти web3-ро ворид кунед",
+            "GOBUTTON": "Рав",
+            "QUICKLAUNCH": "Оғози зуд",
+            "DEVTOOLS": "Асбобҳои кушодаи таҳиягар",
+            "ADDLINK": "Пайванд илова кунед",
+            "LINKNAMEPLACEHOLDER": "Ном",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Захира кардан",
+            "CANCEL": "Бекор кардан",
+            "REMOVE": "Тоза кардан",
+            "REMOVECONFIRM": "Ин пайванди зудро нест кунед?",
+            "LINKEXISTS": "Ин истинод аллакай дар рӯйхати зуди оғози шумост",
+            "LINKINVALID": "Суроғаи дурусти сайтро ворид кунед",
+            "LINKNETWORKLABEL": "Шабака",
+            "LOADFAILED": "Бор кардани сайт ноком шуд",
+            "SECURESITE": "Пайвастшавӣ бехатар аст - шаҳодатномаи SSL-и эътиборнок",
+            "INSECURESITE": "Пайвастшавӣ бехатар нест",
+            "INVALIDCERTSITE": "Пайвастшавӣ махфӣ нест - сертификати SSL нодуруст ё нобовар аст"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Рамзи ҳамёни худро ворид кунед",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Навсозӣ барои Metrix Core дастрас аст. Мехоҳед онро ҳоло насб кунед?",
             "WALLETUPDATETITLE": "Навсозии баландии маълумот дастрас аст",
             "WALLETUPDATEINFO": "Навсозӣ барои Altitude дастрас аст. Мехоҳед онро ҳоло зеркашӣ кунед?",
+            "WALLETUPDATEREADYTITLE": "Навсозии баландии омода",
+            "WALLETUPDATEREADYINFO": "Навсозӣ зеркашӣ карда шуд. Барои насб кардани он Altitude-ро ҳоло аз нав оғоз кунед?",
+            "WALLETUPDATERESTARTBUTTON": "Аз нав оғоз ва насб кунед",
+            "WALLETUPDATELATERBUTTON": "Баъдтар",
             "CLIENTUPDATEBUTTON": "Навсозӣ",
             "CLIENTUPDATECANCELBUTTON": "Навсозӣ накунед",
             "CLIENTUPDATESKIPBUTTON": "Ин навсозиро гузаред",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ҳама гуна нусхаҳои эҳтиётии қаблие, ки шумо аз файли ҳамёни худ сохтаед, бояд бо файли ҳамёни нав тавлидшуда ва рамзгузоришуда иваз карда шаванд. Аз сабаби амният, нусхаҳои эҳтиётии қаблии файли ҳамёни рамзгузоринашуда ба маҳзи оғози истифодаи ҳамёни нав ва рамзгузоришуда бефоида мешаванд.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ногаҳон қатъ шуд",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Мушкиле бо Metrix Core ба миён омад, ки боиси қатъ шудани он гардид. Тавсия дода мешавад, ки файли debug.log-и худро барои мушкилот санҷед.",
+            "CLIENTUNKNOWNERRORTITLE": "Хатои коммуникатсияи асосии Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Ҳангоми муошират бо Metrix Core мушкиле ба миён омад. Тавсия дода мешавад, ки файли debug.log-и худро барои мушкилот санҷед.",
+            "BOOTSTRAPFAILEDTITLE": "Хатогии Bootstrap дар Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Ҳангоми боркунии Metrix Core мушкилӣ ба миён омад. Тавсия дода мешавад, ки файли сабти баландии худро барои мушкилот санҷед.",
+            "BOOTSTRAPOFFERTITLE": "Ҳамён ба таври назаррас кӯҳна шудааст",
+            "BOOTSTRAPOFFERINFO": "Як bootstrap-и нав дастрас аст, ки метавонад Metrix Core-ро зуд навсозӣ кунад. Идома додани синхронизатсияи муқаррарӣ метавонад якчанд рӯзро дар бар гирад, зеро ҳамёни шумо бояд ҳар як блоки аз даст додашударо зеркашӣ ва тасдиқ кунад.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap-ро зеркашӣ кунед",
+            "BOOTSTRAPOFFERCANCEL": "Ҳамоҳангсозии муқаррариро идома диҳед",
+            "BOOTSTRAPSPACEINFO": "Барои зеркашӣ ва баровардани bootstrap фазои диски кофӣ нест. Лозим аст: {required}, Дастрас аст: {free}. Каме ҷой холӣ кунед ва дубора кӯшиш кунед.",
+            "STARTUPFAILEDTITLE": "Оғози Metrix Core ноком шуд",
+            "STARTUPFAILEDINFO": "Ҳангоми оғози Metrix Core хатогӣ ба амал омад. Тавсия дода мешавад, ки файли сабти баландии худро барои мушкилот санҷед.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Абзорҳои барқарорсозӣ",
             "CLIENTINVALIDCONFIGTITLE": "Танзимоти нодурусти metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Файли metrix.conf-и шумо танзимоти masternode-и нодуруст дорад, ки боиси қатъ шудани фаврии Metrix Core мегардад. Лутфан, ин файлро санҷед.",
             "ADDREMOTEMNTITLE": "Илова кардани Masternode дурдаст",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Калиди махфии Masternode",
             "ADDREMOTEMNTXHASH": "Мастернод Тркс Ҳэш",
             "ADDREMOTEMNTXINDEX": "Индекси TRX-и Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Хатогии Bootstrap дар Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Ҳангоми боркунии Metrix Core мушкилӣ ба миён омад. Тавсия дода мешавад, ки файли сабти баландии худро барои мушкилот санҷед.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Абзорҳои барқарорсозӣ",
-            "STARTUPFAILEDTITLE": "Оғози Metrix Core ноком шуд",
-            "STARTUPFAILEDINFO": "Ҳангоми оғози Metrix Core хатогӣ ба амал омад. Тавсия дода мешавад, ки файли сабти баландии худро барои мушкилот санҷед.",
-            "CLIENTUNKNOWNERRORTITLE": "Хатои коммуникатсияи асосии Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Ҳангоми муошират бо Metrix Core мушкиле ба миён омад. Тавсия дода мешавад, ки файли debug.log-и худро барои мушкилот санҷед.",
             "UNENROLLGOVERNORTITLE": "Тасдиқи хориҷ кардани губернатор аз рӯйхати номзадҳо",
             "UNENROLLGOVERNORCONTENT": "Шумо мутмаин ҳастед, ки мехоҳед аз рӯйхати губернатори худ хориҷ шавед? Шумо дигар наметавонед дар бораи идоракунии занҷирӣ овоз диҳед.",
-            "WALLETUPDATEREADYTITLE": "Навсозии баландии омода",
-            "WALLETUPDATEREADYINFO": "Навсозӣ зеркашӣ карда шуд. Барои насб кардани он Altitude-ро ҳоло аз нав оғоз кунед?",
-            "WALLETUPDATERESTARTBUTTON": "Аз нав оғоз ва насб кунед",
-            "WALLETUPDATELATERBUTTON": "Баъдтар",
             "DAPPCONNECTTITLE": "Пайвастшавӣ ба сайт",
             "DAPPCONNECTINFO": "Ин сайт мехоҳад ба ҳамёни шумо пайваст шавад ва суроға ва тавозуни шуморо бубинад.",
             "DAPPCONNECTBUTTON": "Пайвастшавӣ",
+            "DAPPCONNECTADDRESSLABEL": "Суроға",
+            "DAPPAPPROVEBUTTON": "Тасдиқ кардан",
             "DAPPREJECTBUTTON": "Рад кардан",
             "DAPPSENDTITLE": "Дархости амалиёти шартномавӣ",
             "DAPPSENDINFO": "Ин сайт дархост мекунад, ки аз ҳамёни шумо амалиёти шартномавӣ фиристад.",
-            "DAPPSIGNTITLE": "Дархости паёмро имзо кунед",
-            "DAPPSIGNINFO": "Ин сайт хоҳиш мекунад, ки паёмро бо суроғаи ҳамёни шумо имзо кунад.",
-            "DAPPNOTREADY": "Ҳанӯз ба сайт пайваст шуда наметавонам - Metrix Core ҳоло ҳам оғоз меёбад.",
-            "DAPPNOWALLET": "Ба сайт пайваст шуда натавонистам - суроғаи ҳамён дастрас нест.",
-            "DAPPAPPROVEBUTTON": "Тасдиқ кардан",
-            "DAPPCONNECTADDRESSLABEL": "Суроға",
             "DAPPSENDSITELABEL": "Сайт",
             "DAPPSENDCONTRACTLABEL": "Суроғаи шартнома",
             "DAPPSENDAMOUNTLABEL": "Маблағ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Ҳадди аксар ҳаққи шабака",
             "DAPPSENDMAXTOTALLABEL": "Ҳадди аксар умумӣ",
             "DAPPSENDDATALABEL": "Маълумоти шартнома",
+            "DAPPSIGNTITLE": "Дархости паёмро имзо кунед",
+            "DAPPSIGNINFO": "Ин сайт хоҳиш мекунад, ки паёмро бо суроғаи ҳамёни шумо имзо кунад.",
             "DAPPSIGNMESSAGELABEL": "Паём",
-            "BOOTSTRAPOFFERTITLE": "Ҳамён ба таври назаррас кӯҳна шудааст",
-            "BOOTSTRAPOFFERINFO": "Як bootstrap-и нав дастрас аст, ки метавонад Metrix Core-ро зуд навсозӣ кунад. Идома додани синхронизатсияи муқаррарӣ метавонад якчанд рӯзро дар бар гирад, зеро ҳамёни шумо бояд ҳар як блоки аз даст додашударо зеркашӣ ва тасдиқ кунад.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap-ро зеркашӣ кунед",
-            "BOOTSTRAPOFFERCANCEL": "Ҳамоҳангсозии муқаррариро идома диҳед",
-            "BOOTSTRAPSPACEINFO": "Барои зеркашӣ ва баровардани bootstrap фазои диски кофӣ нест. Лозим аст: {required}, Дастрас аст: {free}. Каме ҷой холӣ кунед ва дубора кӯшиш кунед."
+            "DAPPNOTREADY": "Ҳанӯз ба сайт пайваст шуда наметавонам - Metrix Core ҳоло ҳам оғоз меёбад.",
+            "DAPPNOWALLET": "Ба сайт пайваст шуда натавонистам - суроғаи ҳамён дастрас нест."
         },
         "ADDRESSBOOK": {
             "TITLE": "Китоби суроғаҳо",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Шабакаи ҷорӣ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Суроғаи сайти web3-ро ворид кунед",
-            "GOBUTTON": "Рав",
-            "QUICKLAUNCH": "Оғози зуд",
-            "DEVTOOLS": "Асбобҳои кушодаи таҳиягар",
-            "ADDLINK": "Пайванд илова кунед",
-            "LINKNAMEPLACEHOLDER": "Ном",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Захира кардан",
-            "CANCEL": "Бекор кардан",
-            "REMOVE": "Тоза кардан",
-            "REMOVECONFIRM": "Ин пайванди зудро нест кунед?",
-            "LINKEXISTS": "Ин истинод аллакай дар рӯйхати зуди оғози шумост",
-            "LINKINVALID": "Суроғаи дурусти сайтро ворид кунед",
-            "LINKNETWORKLABEL": "Шабака",
-            "LOADFAILED": "Бор кардани сайт ноком шуд",
-            "SECURESITE": "Пайвастшавӣ бехатар аст - шаҳодатномаи SSL-и эътиборнок",
-            "INSECURESITE": "Пайвастшавӣ бехатар нест",
-            "INVALIDCERTSITE": "Пайвастшавӣ махфӣ нест - сертификати SSL нодуруст ё нобовар аст"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Ҳамёни эҳтиётӣ...",
             "SIGNMESSAGE": "Паёмро имзо кунед...",
             "VERIFYMESSAGE": "Паёмро тасдиқ кунед...",
-            "LOCALE": "Забон...",
-            "RESTARTCORE": "Metrix Core-ро аз нав оғоз кунед",
-            "EXIT": "Баромадгоҳ",
             "OPTIONS": "Имконот...",
+            "LOCALE": "Забон...",
             "CURRENCIES": "Намоиши асъор...",
-            "ALTITUDEREFRESH": "Маълумоти баландиро навсозӣ кунед"
+            "RESTARTCORE": "Metrix Core-ро аз нав оғоз кунед",
+            "ALTITUDEREFRESH": "Маълумоти баландиро навсозӣ кунед",
+            "EXIT": "Баромадгоҳ"
         },
         "ENCRYPT": {
             "TITLE": "Рамзгузорӣ кунед",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Бақияи умумӣ",
+        "SPENDABLEBALANCE": "Бақияи хароҷотшаванда",
+        "PENDINGBALANCE": "Бақияи интизорӣ",
         "CANCELBUTTON": "Бекор кардан",
         "DONEBUTTON": "Анҷом ёфт",
         "OKBUTTON": "ДУРУСТ",
+        "ACCEPTBUTTON": "Қабул кардан",
         "CLEARALLBUTTON": "Ҳамаашро тоза кунед",
         "ENTERACCOUNTLABEL": "Барои ин суроға нишона ворид кунед",
         "ENTERADDRESSLABEL": "Суроғаи Metrix-ро ворид кунед",
@@ -464,11 +511,8 @@
         "SORTBY": "Ҷудо кардан ба",
         "SEARCH": "Ҷустуҷӯ",
         "FEE": "Пардохт",
-        "ACCEPTBUTTON": "Қабул кардан",
         "CONFIRMED": "Тасдиқ шудааст",
         "UNCONFIRMED": "Тасдиқнашуда",
-        "PENDINGBALANCE": "Бақияи интизорӣ",
-        "SPENDABLEBALANCE": "Бақияи хароҷотшаванда",
         "SAVEBUTTON": "Захира кардан"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core-ро аз нав оғоз кунед...",
         "BOOTSTRAPPING": "Боргирии bootstrap...",
         "BOOTSTRAPEXTRACTING": "Истихроҷи bootstrap...",
-        "TIMEREMAINING": "боқимонда:"
+        "TIMEREMAINING": "боқимонда:",
+        "DEVRPCOVERRIDEACTIVE": "Тағйири пайвасти RPC-и таҳиягар муқаррар шудааст (Имконот > Таҳиягар) ва он ҷавоб намедиҳад. Барои пайвастшавии муқаррарӣ ба демони маҳаллӣ онро тоза кунед.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Тоза кардани RPC аз нав сабт кардан ва пайвастшавӣ"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ҳисоби нав бомуваффақият сохта шуд",
         "ADDRESSCOPIEDCLIPBOARD": "Суроға ба буфер нусхабардорӣ шудааст",
+        "COPIEDCLIPBOARD": "Ба буфер нусхабардорӣ шудааст",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Муомилот ба буфер нусхабардорӣ карда шуданд",
         "EMPTYFIELDS": "Лутфан, ҳамаи майдонҳоро пур кунед",
         "NOUPDATE": "Навсозӣ дастрас нест",
         "WALLETBACKEDUP": "Нусхабардории ҳамён бомуваффақият анҷом ёфт",
+        "WALLETBACKUPFAILED": "Нусхабардории худкори ҳамён ноком шуд - макони нусхабардории худ ва фазои диски дастрасро санҷед",
         "PASSPHRASEMISMATCH": "Ибораҳои пароле, ки шумо ворид кардед, мувофиқат намекунанд",
         "CHECKINGUPDATE": "Санҷиши навсозӣ...",
         "CHECKINGUPDATEFAILED": "Санҷиши навсозӣ имконнопазир аст. Шабакаи худро санҷед.",
+        "WALLETUPDATEDOWNLOADING": "Навсозӣ зеркашӣ мешавад...",
         "SENDINGEXCEEDSBALANCE": "Маблағе, ки шумо мефиристед, аз бақияи интихобкардаи шумо зиёдтар аст",
         "MISSINGCHANGEADDRESS": "Шумо бояд суроғаи тағиротро муайян кунед",
         "MISSINGDESTINATIONADDRESS": "Шумо бояд суроғаи макони таъинотро муайян кунед",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ҳамён рамзгузорӣ мешавад...",
         "CHANGINGPASSPHARASE": "Иваз кардани парол...",
         "STARTINGMASTERNODE": "Мастернод оғоз мешавад...",
+        "STOPPINGMASTERNODE": "Қатъ кардани мастернод...",
         "SENDINGTRANSACTION": "Транзаксия фиристода мешавад...",
         "SIGNINGMESSAGE": "Имзои паём...",
         "SIGNEDMESSAGE": "Паём имзо шуд",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Кушодани ҳамён...",
         "TRANSACTIONMISMATCH": "Хатогии транзаксия. Лутфан, дубора кӯшиш кунед.",
         "MINIMUMCONFIRMATIONS": "Ҳама гуна вурудҳо пеш аз сарф кардан ҳадди аққал 1 тасдиқро талаб мекунанд.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Муомилот ба буфер нусхабардорӣ карда шуданд",
-        "STOPPINGMASTERNODE": "Қатъ кардани мастернод...",
         "FAILEDTOWRITECONFIG": "Ҳангоми навиштан ба файли metrix.conf-и шумо мушкилӣ ба миён омад. Санҷед, ки файл вуҷуд дорад ва оё Altitude иҷозатҳои навиштан дорад.",
         "NOPUBLICUP": "Суроғаи IP-и умумӣ ёфт нашуд. Пайвасти интернетии худро санҷед ва Altitude-ро аз нав оғоз кунед.",
         "CONFIGURINGLOCALMN": "Танзимоти Masternode маҳаллӣ...",
         "REPORTINGISSUE": "Гирифтани маълумоти ташхисӣ... Ин маълумот ба буфери шумо нусхабардорӣ карда мешавад.",
-        "WALLETUPDATEDOWNLOADING": "Навсозӣ зеркашӣ мешавад...",
-        "WALLETBACKUPFAILED": "Нусхабардории худкори ҳамён ноком шуд - макони нусхабардории худ ва фазои диски дастрасро санҷед",
         "EXPLORERURLSAVED": "URL-и Explorer захира карда шуд",
         "EXPLORERURLRESET": "URL-и Explorer ба ҳолати пешфарз баргардонида шуд",
         "EXPLORERURLINVALID": "Ин URL-и дурусти http(ҳо) нест",
-        "EXPLORERURLUNREACHABLE": "Ба ин URL дастрасӣ пайдо карда нашуд - онро тафтиш кунед ва дубора кӯшиш кунед"
+        "EXPLORERURLUNREACHABLE": "Ба ин URL дастрасӣ пайдо карда нашуд - онро тафтиш кунед ва дубора кӯшиш кунед",
+        "DEVRPCHOSTSAVED": "Хости RPC захира карда шуд",
+        "DEVRPCHOSTRESET": "Хости RPC ба ҳолати пешфарз баргардонида шуд (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Тангаҳои гирифташуда",
+        "NEWTRANSACTION_TITLE_STAKE": "Саҳми гирифташуда",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Мукофоти Masternode гирифта шуд"
     },
     "TIME": {
         "AFEWSECONDS": "Чанд сония",
@@ -533,11 +587,6 @@
         "MONTHS": "моҳҳо",
         "AYEAR": "Як сол",
         "YEARS": "солҳо"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Тангаҳои гирифташуда",
-        "NEWTRANSACTION_TITLE_STAKE": "Саҳми гирифташуда",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Мукофоти Masternode гирифта шуд"
     },
     "MONTH": {
         "JAN": "Янв",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Мудирон масъули овоздиҳӣ дар бораи буҷаҳои моҳона ва тағйирот дар бораи blockchain мебошанд. Шумо метавонед бо бастани гаравпулии дуруст дар шартномаи идоракунӣ Мудир шавед.",
                 "COLLATERAL": "Гаравпулии зарурӣ",
                 "ENROLL": "Бақайдгирӣ",
+                "SELECTAGOVERNOR": "Суроғаи мувофиқи губернаторро интихоб кунед",
+                "GOVERNORNOTSELECTED": "Суроғаи мувофиқ интихоб нашудааст",
                 "CONFIRMENROLL": "Шумо дар ҳоли сабти ном шудан ҳамчун Мудир ҳастед. Ин амалиёт бо гаравпулии зарурӣ ба шартномаи идоракунӣ фиристода мешавад. Шумо метавонед дар вақти дилхоҳ аз сабти ном хориҷ шавед.",
                 "ISGOVERNORTITLE": "Шумо як губернатори фаъол ҳастед!",
                 "ISGOVERNORDETAIL1": "Губернаторҳо барои овоздиҳӣ дар бораи буҷаҳои моҳона ва тағйирот дар blockchain масъуланд.",
                 "ISGOVERNORDETAIL2": "Барои боқӣ мондан дар мақоми губернатор, шумо бояд ҳадди аққал 1 овоздиҳӣ дар ҳар 30 рӯз иштирок кунед.",
                 "ISGOVERNORDETAIL3": "Агар чизе барои овоздиҳӣ вуҷуд надошта бошад, шумо метавонед бақайдгирии худро бо фиристодани пинг-и фаъол дастӣ идома диҳед.",
+                "MYGOVERNORADDRESS": "Суханронии губернатори ман",
                 "UNENROLL": "Аз рӯйхат хориҷ шудан",
                 "PING": "Фиристодани пинг-паёми фаъол",
                 "LASTPINGTITLE": "Пинги охирин",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "рӯзҳо",
                 "GOVERNORVOTEMATURITYHOURS": "соатҳо",
                 "GOVERNORVOTEMATURITYSUFFIX": "то ба камол расидан",
-                "MYGOVERNORADDRESS": "Суханронии губернатори ман",
-                "SELECTAGOVERNOR": "Суроғаи мувофиқи губернаторро интихоб кунед",
-                "GOVERNORNOTSELECTED": "Суроғаи мувофиқ интихоб нашудааст",
                 "NOTFULLYSYNCEDTITLE": "Мақоми губернатор дастрас нест",
                 "NOTFULLYSYNCEDDETAIL": "Ҳолати бақайдгирии шумо дар Губернатор вақте намоён мешавад, ки blockchain-и шумо пурра ҳамоҳанг карда шавад.",
                 "DGPMIGRATIONTITLE": "Муҳоҷирати DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Пешниҳоди шумо бомуваффақият эҷод карда шуд",
             "ENROLLINGGOVERNOR": "Сабти ном ҳамчун губернатор...",
             "ENROLLEDGOVERNOR": "Бақайдгирии шумо пас аз тасдиқи амалиёти шумо ба анҷом мерасад",
-            "VOTINGONPROPOSAL": "Фиристодани овоздиҳии пешниҳодӣ",
-            "VOTEDONPROPOSAL": "Овози шумо пас аз тасдиқи амалиёт ба ҳисоб гирифта мешавад.",
             "PINGINGGOVERNOR": "Фиристодани пинг...",
             "PINGEDGOVERNOR": "Пинг бомуваффақият фиристода шуд. Пас аз тасдиқи амалиёт, Губернатори шумо навсозӣ карда мешавад.",
+            "VOTINGONPROPOSAL": "Фиристодани овоздиҳии пешниҳодӣ",
+            "VOTEDONPROPOSAL": "Овози шумо пас аз тасдиқи амалиёт ба ҳисоб гирифта мешавад.",
             "UNENROLLINGGOVERNOR": "Ҳокими аз қайд хориҷшуда...",
             "UNENROLLEDGOVERNOR": "Транзаксия фиристода шуд. Пас аз тасдиқи транзаксия, мудири шумо аз қайд хориҷ карда мешавад.",
             "GOVERNORNOTMATURE": "Ҳокими шумо ҳанӯз барои иҷрои ин амал ба қадри кофӣ пухта нашудааст."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Метриксро харед",
+                "SEARCH": "Таърих"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Шумо фиристед",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Таърихи муомилот",
                 "SEARCHBUTTON": "ҶУСТУҶӮ",
+                "SEARCHPLACEHOLDER": "Суроғаи MRX ё BTC-ро ворид кунед",
                 "TRANSACTIONDATE": "Сана",
                 "TRANSACTIONTYPE": "Навъи TX",
                 "TRANSACTIONAMOUNT": "Маблағ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Тасдиқ шудааст",
                 "TRANSACTIONNOTCONFIRMED": "Тасдиқ нашудааст",
                 "TRANSACTIONREFUNDED": "Баргардонидашуда - Аз ҳадди ақал камтар",
-                "AVGSWAPPRICE": "Нархи миёнаи своп",
-                "SEARCHPLACEHOLDER": "Суроғаи MRX ё BTC-ро ворид кунед"
+                "AVGSWAPPRICE": "Нархи миёнаи своп"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Суроғаи ивазкунӣ тавлид мешавад...",
             "ALREADYHAVEADDRESS": "Шумо аллакай суроғаи BTC-ро, ки бо ин суроғаи Metrix алоқаманд аст, доред",
             "NOADDRESS": "Шумо суроғаи Metrix-ро ворид накардаед"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Метриксро харед",
-                "SEARCH": "Таърих"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Нишон додан",
                 "EMPTYTITLE": "Ҳанӯз ягон нишона пайдо нашудааст",
                 "EMPTYDETAIL": "Altitude ба таври худкор як муҳаррики блокро барои токенҳои MRC20 ва MRC721, ки ба суроғаҳои шумо фиристода шудаанд, тафтиш мекунад ва сипас ҳама чизро дар гиреҳи худи шумо тасдиқ мекунад. Шумо инчунин метавонед токенро дастӣ илова кунед, агар шумо суроғаи шартномавии онро донед.",
+                "EMPTYDETAILCHECKINGDISABLED": "Санҷиши худкори токен хомӯш карда шудааст, аз ин рӯ суроғаҳои шумо барои токенҳо тафтиш карда намешаванд. Онро дар боло дубора фаъол созед ё агар шумо суроғаи шартномавии онро донед, токенро дастӣ илова кунед.",
                 "HIDDENTITLE": "Нишонаҳои пинҳонӣ",
                 "CONTEXTMENUHIDE": "Пинҳон кардани нишона",
                 "ITEMSSUFFIX": "ашё(ҳо)",
-                "NONENUMERABLETOOLTIP": "Ин маҷмӯа номбар кардани ашёҳои алоҳидаро дастгирӣ намекунад - ба ҷои ин нишон додани миқдори онҳо, ки шумо доред."
+                "NONENUMERABLETOOLTIP": "Ин маҷмӯа номбар кардани ашёҳои алоҳидаро дастгирӣ намекунад - ба ҷои ин нишон додани миқдори онҳо, ки шумо доред.",
+                "CHECKINGENABLED": "Санҷиш идома дорад",
+                "CHECKINGDISABLED": "Санҷиши қайд",
+                "CHECKINGENABLEDTOOLTIP": "Санҷиши токенҳо фаъол аст - Баландӣ ба таври даврӣ суроғаҳои шуморо барои токенҳо тафтиш мекунад ва тавозунҳоро нав мекунад. Барои хомӯш кардан клик кунед.",
+                "CHECKINGDISABLEDTOOLTIP": "Санҷиши токен хомӯш аст - барои дубора фаъол кардан клик кунед.",
+                "CHECKINGDISABLEDNOTICE": "Санҷиши худкори токен хомӯш карда шудааст. Суроғаҳои шумо барои токенҳо скан карда намешаванд ва бақияҳо нав карда намешаванд. Шумо ҳоло ҳам метавонед токенро дастӣ илова кунед."
             },
             "ADDTOKEN": {
                 "TITLE": "Илова кардани нишона",

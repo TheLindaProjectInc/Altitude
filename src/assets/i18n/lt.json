@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Sukurti paskyrą",
             "HIDEEMPTYACCOUNTS": "Slėpti neįvardytas tuščias paskyras"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Apžvalga",
+            "TRANSACTIONSTAB": "Sandoriai",
+            "ADDRESSTABS": "Adresai"
+        },
         "SEND": {
             "ADDRECIPIENT": "Pridėti gavėją",
             "SEND": "Siųsti",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Patvirtinimai",
             "ALL_SELECTUNSELECT": "Perjungti viską",
+            "TREEMODE": "Medžio režimas",
+            "LISTMODE": "Sąrašo režimas",
             "SENDAVAILABLE": "Naudoti turimą likutį",
             "INPUTLOCKED": "Įvestis užrakinta. Norėdami panaudoti šią įvestį, turėsite ją atrakinti.",
             "CONTEXTMENULOCKINPUT": "Užrakinti įvestį",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Po mokesčio",
             "QUANTITY": "Kiekis",
             "BYTES": "Baitai",
-            "TREEMODE": "Medžio režimas",
-            "LISTMODE": "Sąrašo režimas",
             "ALERTFEECHANGETITLE": "Mokesčio pakeitimas",
             "ALERTFEECHANGECONTENT": "Faktinis operacijos mokestis yra didesnis nei tikėtasi. Patvirtinkite naują mokestį:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Sukurti sutartį",
+            "INFO": "Įdiekite išmaniąją sutartį tinkle pateikdami jos sukompiliuotą baitinį kodą. Tai yra pagrindinė grandinės funkcija – prieš diegdami dar kartą patikrinkite savo baitinį kodą ir dujų nustatymus, diegimo negalima atšaukti.",
+            "FROM": "Iš",
+            "BYTECODE": "Baitinis kodas",
+            "BYTECODEPLACEHOLDER": "Įklijuokite sukompiliuotą sutarties baitinį kodą (šešioliktainį)",
+            "INVALIDBYTECODE": "Baitinis kodas turi būti galiojanti šešioliktainė eilutė (0–9, a–f) su lyginiu simbolių skaičiumi.",
+            "GASLIMIT": "Dujų riba",
+            "GASLIMITRANGE": "Diapazonas",
+            "GASPRICE": "Dujų kaina (MRX už dujų vienetą)",
+            "GASPRICEMIN": "Minimalus",
+            "ESTIMATEDMAXCOST": "Numatoma maksimali kaina",
+            "DEPLOYBUTTON": "Įdiegimo sutartis",
+            "INCOMPLETEFORM": "Pasirinkite siuntėjo adresą, įveskite galiojantį baitinį kodą ir nustatykite galiojantį dujų limitą / kainą",
+            "HIGHGASPRICETITLE": "Aukšta benzino kaina",
+            "HIGHGASPRICEINFO": "Jūsų nustatyta degalų kaina yra neįprastai didelė. Šis diegimas gali kainuoti iki:",
+            "DEPLOYING": "Diegiama sutartis...",
+            "DEPLOYED": "Pateikta sutarties diegimo informacija",
+            "RESULTTITLE": "Diegimo rezultatas",
+            "STATUS": "Būsena",
+            "STATUSPENDING": "Laukiama patvirtinimo...",
+            "STATUSCONFIRMED": "Sėkmingai įdiegta",
+            "STATUSFAILED": "Diegimas nepavyko",
+            "TXID": "Operacijos ID",
+            "SENDER": "Siuntėjas",
+            "CONTRACTADDRESS": "Sutarties adresas",
+            "GASUSED": "Naudotos dujos",
+            "DONEBUTTON": "Atlikta",
+            "DEPLOYANOTHERBUTTON": "Dislokuoti kitą"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Sandoriai",
+            "COPYBLOCKHASH": "Kopijuoti bloko maišą",
+            "COPYTXID": "Kopijuoti operacijos ID",
+            "COPYACCOUNT": "Kopijuoti paskyros pavadinimą",
+            "COPYADDRESS": "Kopijuoti adresą",
+            "COPYAMOUNT": "Kopijos suma",
+            "COPTBLOCKINDEX": "Kopijuoti bloko indeksą",
+            "EXPLORER": "Atidaryti blokų naršyklėje"
         },
         "STAKING": {
             "UNLOCK": "Atrakinti statymui",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adresas",
             "ENABLED": "Įjungta",
-            "STARTBUTTON": "Pradėti vietinį",
-            "STARTALIASBUTTON": "Pradinis slapyvardis",
-            "STARTALLBUTTON": "Pradėti viską",
             "NOMASTERNODES": "Jūs neturite jokių pagrindinių mazgų",
             "NOMNOUTPUTS": "Nerasta jokių „Masternode“ išvesčių. Norėdami paleisti vietinį „Masternode“, nusiųskite tiksliai 2, 5, 25, 50 arba 100 milijonų monetų į savo „Masternode“ adresą ir laukite 15 patvirtinimų.",
+            "STARTBUTTON": "Pradėti vietinį",
             "STOPBUTTON": "Sustabdyti vietinį",
+            "STARTALIASBUTTON": "Pradinis slapyvardis",
             "STOPALIASBUTTON": "Sustabdyti slapyvardį",
+            "STARTALLBUTTON": "Pradėti viską",
             "ADDREMOTE": "Pridėti nuotolinį pagrindinį mazgą",
             "REMOVEMN": "Pašalinti Masternode",
             "ADDLOCAL": "Vietinio „Masternode“ nustatymas",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Bendra",
                 "COREVERSION": "Pagrindinė versija",
+                "ALTITUDEVERSION": "Aukščio versija",
                 "PROTOCOLVERSION": "Protokolo versija",
                 "WALLETVERSION": "„Wallet.dat“ versija",
                 "NETWORKTITLE": "Tinklas",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternodų skaičius",
                 "BLOCKCHAINTITLE": "Blokų grandinė",
                 "NUMBERBLOCKS": "Dabartinis blokų skaičius",
-                "BESTBLOCKTTIME": "Paskutinio bloko laikas",
-                "ALTITUDEVERSION": "Aukščio versija"
+                "BESTBLOCKTTIME": "Paskutinio bloko laikas"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Sveiki atvykę į „Metrix Core RPC“ konsolę. Įveskite „help“, kad pamatytumėte galimų komandų apžvalgą.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Pasirinkite kalbą"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Sandoriai",
-            "COPYBLOCKHASH": "Kopijuoti bloko maišą",
-            "COPYTXID": "Kopijuoti operacijos ID",
-            "COPYACCOUNT": "Kopijuoti paskyros pavadinimą",
-            "COPYADDRESS": "Kopijuoti adresą",
-            "COPYAMOUNT": "Kopijos suma",
-            "COPTBLOCKINDEX": "Kopijuoti bloko indeksą",
-            "EXPLORER": "Atidaryti blokų naršyklėje"
+        "CURRENCY": {
+            "TITLE": "Pasirinkite rodomą valiutą"
         },
         "EXPLORER": {
             "TITLE": "Blokų naršyklė",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Tinklas",
             "WINDOTAB": "Langas",
+            "BACKUPTAB": "Atsarginė kopija",
+            "EXPLORERTAB": "Tyrinėtojas",
+            "DEVELOPERTAB": "Kūrėjas",
             "NETWORK": {
                 "PROXY": "Prisijunkite per SOCKS5 tarpinį serverį",
                 "PROXYIP": "Tarpinio serverio IP adresas",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Sumažinti uždarant",
                 "BEHAVIOURTITLE": "Sistemos dėklo ir lango elgsena"
             },
-            "BACKUPTAB": "Atsarginė kopija",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatinis atsarginių kopijų kūrimas",
                 "ENABLED": "Automatiškai kurti „wallet.dat“ atsargines kopijas pagal tvarkaraštį",
                 "ENABLEDINFO": "Sukuria naują piniginės failo atsarginę kopiją pagal grafiką, kad naujausia kopija visada būtų prieinama, jei kas nors nutiktų.",
+                "INTERVALLABEL": "Atsarginių kopijų kūrimas kas (dienų)",
                 "LASTBACKUP": "Paskutinė atsarginė kopija:",
                 "NEVERBACKEDUP": "Automatinė atsarginė kopija dar nebuvo sukurta.",
                 "BACKUPNOWBUTTON": "Atsarginė kopija dabar",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Atkurti numatytuosius nustatymus",
                 "PRUNETITLE": "Atsarginių kopijų istorija",
                 "PRUNEINFO": "Senesnės automatinės atsarginės kopijos ištrinamos, kad šis aplankas neaugtų amžinai – išsaugomos tik naujausios, esančios žemiau.",
-                "KEEPCOUNTLABEL": "Laikyti paskutinį",
-                "INTERVALLABEL": "Atsarginių kopijų kūrimas kas (dienų)"
+                "KEEPCOUNTLABEL": "Laikyti paskutinį"
             },
-            "EXPLORERTAB": "Tyrinėtojas",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokų naršyklė",
                 "BLOCKEXPLORERINFO": "Svetainė atsidarė peržiūrint operaciją blokų naršyklėje (pvz., dešiniuoju pelės mygtuku spustelėkite operaciją > Peržiūrėti naršyklėje).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Pagrindinis tinklas",
                 "TESTNET": "Testinis tinklas",
                 "REGTEST": "Regtestas"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Kūrėjo režimas",
+                "DEVMODEINFO": "Išjungta pagal numatytuosius nustatymus ir skirta tik kūrėjams. Įjungus šią funkciją, atidaromos parinktys, kaip nepaisyti RPC ryšio – standartiniai vartotojai turėtų palikti šią funkciją išjungtą.",
+                "DEVMODELABEL": "Įjungti kūrėjo režimą",
+                "WARNING": "Šie nustatymai skirti tik kūrimo tikslais. Juos pakeitus, piniginė gali visiškai neprisijungti prie demono – naudokite tai tik tuo atveju, jei žinote, ką darote.",
+                "RPCHOSTTITLE": "RPC ryšys",
+                "RPCHOSTINFO": "Pagal numatytuosius nustatymus „Altitude“ jungiasi prie demono, kurį jis pats valdo, šiame kompiuteryje (127.0.0.1). Jų nepaisymas leidžia jam prisijungti prie kito demono, pavyzdžiui, nuotolinio „regtest“ egzemplioriaus, nereikalaujant paleisti jo lokaliai. Jei ryšys pavyksta, „Altitude“ neatsiųs ir nepaleis savo vietinio demono. Tikslinio demono „rpcallowip“ turi leisti šį ryšį, o žemiau esantys „rpcuser“ / „rpcpassword“ turi atitikti jo konfigūraciją. Įsigalioja iš karto, nereikia paleisti iš naujo.",
+                "RPCHOSTLABEL": "RPC priegloba",
+                "RPCPORTLABEL": "RPC prievadas",
+                "RPCUSERLABEL": "RPC vartotojo vardas",
+                "RPCPASSWORDLABEL": "RPC slaptažodis"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Apžvalga",
-            "TRANSACTIONSTAB": "Sandoriai",
-            "ADDRESSTABS": "Adresai"
-        },
-        "CURRENCY": {
-            "TITLE": "Pasirinkite rodomą valiutą"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Prietaisų skydelis",
             "SEND": "Siųsti",
+            "CREATECONTRACT": "Sukurti sutartį",
             "RECEIVE": "Gauti",
             "TRANSACTIONS": "Sandoriai",
             "STAKING": "Staking",
             "MASTERNODES": "Masternodai",
+            "EXPLORER": "Blokų naršyklė",
             "SYNC": {
                 "CONNECTING": "Jungiamasi",
                 "NOBLOCKS": "Laukiama blokų",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Piniginė šiuo metu nestatoma",
                 "MASTERNODEON": "Masternode šiuo metu veikia",
                 "MASTERNODEOFF": "„Masternode“ šiuo metu neveikia"
-            },
-            "EXPLORER": "Blokų naršyklė"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Įveskite web3 svetainės adresą",
+            "GOBUTTON": "Eiti",
+            "QUICKLAUNCH": "Greitas paleidimas",
+            "DEVTOOLS": "Atidaryti kūrėjo įrankius",
+            "ADDLINK": "Pridėti nuorodą",
+            "LINKNAMEPLACEHOLDER": "Vardas",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Išsaugoti",
+            "CANCEL": "Atšaukti",
+            "REMOVE": "Pašalinti",
+            "REMOVECONFIRM": "Pašalinti šią greitąją nuorodą?",
+            "LINKEXISTS": "Ta nuoroda jau yra jūsų greitojo paleidimo sąraše",
+            "LINKINVALID": "Įveskite galiojantį svetainės adresą",
+            "LINKNETWORKLABEL": "Tinklas",
+            "LOADFAILED": "Nepavyko įkelti svetainės",
+            "SECURESITE": "Ryšys saugus – galiojantis SSL sertifikatas",
+            "INSECURESITE": "Ryšys nėra saugus",
+            "INVALIDCERTSITE": "Ryšys nėra privatus – negaliojantis arba nepatikimas SSL sertifikatas"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Įveskite savo piniginės slaptažodį",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "„Metrix Core“ atnaujinimas yra prieinamas. Ar norėtumėte jį įdiegti dabar?",
             "WALLETUPDATETITLE": "Aukščio atnaujinimas galimas",
             "WALLETUPDATEINFO": "„Altitude“ atnaujinimas yra pasiekiamas. Ar norėtumėte jį atsisiųsti dabar?",
+            "WALLETUPDATEREADYTITLE": "Aukščio atnaujinimas paruoštas",
+            "WALLETUPDATEREADYINFO": "Atnaujinimas atsisiųstas. Paleiskite „Altitude“ iš naujo, kad jį įdiegtumėte?",
+            "WALLETUPDATERESTARTBUTTON": "Paleisti iš naujo ir įdiegti",
+            "WALLETUPDATELATERBUTTON": "Vėliau",
             "CLIENTUPDATEBUTTON": "Atnaujinimas",
             "CLIENTUPDATECANCELBUTTON": "Neatnaujinti",
             "CLIENTUPDATESKIPBUTTON": "Praleisti šį atnaujinimą",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Visas ankstesnes jūsų piniginės failo atsargines kopijas reikėtų pakeisti naujai sugeneruotu, užšifruotu piniginės failu. Dėl saugumo priežasčių ankstesnės neužšifruoto piniginės failo atsarginės kopijos taps nenaudingos, kai tik pradėsite naudoti naują, užšifruotą piniginę.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "„Metrix Core“ netikėtai sustojo",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Iškilo „Metrix Core“ problema, dėl kurios jis nutraukė darbą. Rekomenduojama patikrinti debug.log failą, ar nėra problemų.",
+            "CLIENTUNKNOWNERRORTITLE": "„Metrix Core“ ryšio klaida",
+            "CLIENTUNKNOWNERRORINFO": "Kilo problemų bendraujant su „Metrix Core“. Rekomenduojama patikrinti debug.log failą, ar nėra problemų.",
+            "BOOTSTRAPFAILEDTITLE": "„Metrix Core“ paleidimo klaida",
+            "BOOTSTRAPFAILEDINFO": "Paleidžiant „Metrix Core“ kilo problemų. Rekomenduojama patikrinti aukščio žurnalo failą, ar nėra problemų.",
+            "BOOTSTRAPOFFERTITLE": "Piniginė gerokai pasenusi",
+            "BOOTSTRAPOFFERINFO": "Yra nauja įkrovos programa, kuri gali greitai atnaujinti „Metrix Core“. Įprastas sinchronizavimas gali užtrukti kelias dienas, nes jūsų piniginė turi atsisiųsti ir patikrinti kiekvieną praleistą bloką.",
+            "BOOTSTRAPOFFERBUTTON": "Atsisiųsti Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Tęsti įprastą sinchronizavimą",
+            "BOOTSTRAPSPACEINFO": "Nepakanka laisvos vietos diske, kad būtų galima atsisiųsti ir išskleisti įkrovos programą. Reikalinga: {required}, Prieinama: {free}. Atlaisvinkite vietos ir bandykite dar kartą.",
+            "STARTUPFAILEDTITLE": "„Metrix Core“ paleidimas nepavyko",
+            "STARTUPFAILEDINFO": "Paleidžiant „Metrix Core“ įvyko klaida. Rekomenduojama patikrinti aukščio žurnalo failą, ar nėra problemų.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkūrimo įrankiai",
             "CLIENTINVALIDCONFIGTITLE": "Neteisinga metrix.conf konfigūracija",
             "CLIENTINVALIDCONFIGINFO": "Jūsų „metrix.conf“ faile yra neteisinga pagrindinio mazgo konfigūracija, dėl kurios „Metrix Core“ iš karto išeis. Patikrinkite šį failą.",
             "ADDREMOTEMNTITLE": "Pridėti nuotolinį pagrindinį mazgą",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode privatus raktas",
             "ADDREMOTEMNTXHASH": "„Masternode“ operacijų maišos kodas",
             "ADDREMOTEMNTXINDEX": "„Masternode“ operacijų indeksas",
-            "BOOTSTRAPFAILEDTITLE": "„Metrix Core“ paleidimo klaida",
-            "BOOTSTRAPFAILEDINFO": "Paleidžiant „Metrix Core“ kilo problemų. Rekomenduojama patikrinti aukščio žurnalo failą, ar nėra problemų.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkūrimo įrankiai",
-            "STARTUPFAILEDTITLE": "„Metrix Core“ paleidimas nepavyko",
-            "STARTUPFAILEDINFO": "Paleidžiant „Metrix Core“ įvyko klaida. Rekomenduojama patikrinti aukščio žurnalo failą, ar nėra problemų.",
-            "CLIENTUNKNOWNERRORTITLE": "„Metrix Core“ ryšio klaida",
-            "CLIENTUNKNOWNERRORINFO": "Kilo problemų bendraujant su „Metrix Core“. Rekomenduojama patikrinti debug.log failą, ar nėra problemų.",
             "UNENROLLGOVERNORTITLE": "Patvirtinkite gubernatoriaus išregistravimą",
             "UNENROLLGOVERNORCONTENT": "Ar tikrai norite išregistruoti savo valdytoją? Nebegalėsite balsuoti dėl grandinės valdymo.",
-            "WALLETUPDATEREADYTITLE": "Aukščio atnaujinimas paruoštas",
-            "WALLETUPDATEREADYINFO": "Atnaujinimas atsisiųstas. Paleiskite „Altitude“ iš naujo, kad jį įdiegtumėte?",
-            "WALLETUPDATERESTARTBUTTON": "Paleisti iš naujo ir įdiegti",
-            "WALLETUPDATELATERBUTTON": "Vėliau",
             "DAPPCONNECTTITLE": "Prisijungti prie svetainės",
             "DAPPCONNECTINFO": "Ši svetainė nori prisijungti prie jūsų piniginės ir peržiūrėti jūsų adresą bei sąskaitos likutį.",
             "DAPPCONNECTBUTTON": "Prisijungti",
+            "DAPPCONNECTADDRESSLABEL": "Adresas",
+            "DAPPAPPROVEBUTTON": "Patvirtinti",
             "DAPPREJECTBUTTON": "Atmesti",
             "DAPPSENDTITLE": "Sutarties sandorio užklausa",
             "DAPPSENDINFO": "Ši svetainė prašo išsiųsti sutarties operaciją iš jūsų piniginės.",
-            "DAPPSIGNTITLE": "Pasirašymo pranešimo užklausa",
-            "DAPPSIGNINFO": "Ši svetainė prašo pasirašyti pranešimą su jūsų piniginės adresu.",
-            "DAPPNOTREADY": "Dar nepavyksta prisijungti prie svetainės – „Metrix Core“ vis dar paleidžiama.",
-            "DAPPNOWALLET": "Nepavyksta prisijungti prie svetainės – nėra piniginės adreso.",
-            "DAPPAPPROVEBUTTON": "Patvirtinti",
-            "DAPPCONNECTADDRESSLABEL": "Adresas",
             "DAPPSENDSITELABEL": "Svetainė",
             "DAPPSENDCONTRACTLABEL": "Sutarties adresas",
             "DAPPSENDAMOUNTLABEL": "Suma",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimalus tinklo mokestis",
             "DAPPSENDMAXTOTALLABEL": "Maksimali suma",
             "DAPPSENDDATALABEL": "Sutarties duomenys",
+            "DAPPSIGNTITLE": "Pasirašymo pranešimo užklausa",
+            "DAPPSIGNINFO": "Ši svetainė prašo pasirašyti pranešimą su jūsų piniginės adresu.",
             "DAPPSIGNMESSAGELABEL": "Žinutė",
-            "BOOTSTRAPOFFERTITLE": "Piniginė gerokai pasenusi",
-            "BOOTSTRAPOFFERINFO": "Yra nauja įkrovos programa, kuri gali greitai atnaujinti „Metrix Core“. Įprastas sinchronizavimas gali užtrukti kelias dienas, nes jūsų piniginė turi atsisiųsti ir patikrinti kiekvieną praleistą bloką.",
-            "BOOTSTRAPOFFERBUTTON": "Atsisiųsti Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Tęsti įprastą sinchronizavimą",
-            "BOOTSTRAPSPACEINFO": "Nepakanka laisvos vietos diske, kad būtų galima atsisiųsti ir išskleisti įkrovos programą. Reikalinga: {required}, Prieinama: {free}. Atlaisvinkite vietos ir bandykite dar kartą."
+            "DAPPNOTREADY": "Dar nepavyksta prisijungti prie svetainės – „Metrix Core“ vis dar paleidžiama.",
+            "DAPPNOWALLET": "Nepavyksta prisijungti prie svetainės – nėra piniginės adreso."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresų knyga",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Dabartinis tinklas"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Įveskite web3 svetainės adresą",
-            "GOBUTTON": "Eiti",
-            "QUICKLAUNCH": "Greitas paleidimas",
-            "DEVTOOLS": "Atidaryti kūrėjo įrankius",
-            "ADDLINK": "Pridėti nuorodą",
-            "LINKNAMEPLACEHOLDER": "Vardas",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Išsaugoti",
-            "CANCEL": "Atšaukti",
-            "REMOVE": "Pašalinti",
-            "REMOVECONFIRM": "Pašalinti šią greitąją nuorodą?",
-            "LINKEXISTS": "Ta nuoroda jau yra jūsų greitojo paleidimo sąraše",
-            "LINKINVALID": "Įveskite galiojantį svetainės adresą",
-            "LINKNETWORKLABEL": "Tinklas",
-            "LOADFAILED": "Nepavyko įkelti svetainės",
-            "SECURESITE": "Ryšys saugus – galiojantis SSL sertifikatas",
-            "INSECURESITE": "Ryšys nėra saugus",
-            "INVALIDCERTSITE": "Ryšys nėra privatus – negaliojantis arba nepatikimas SSL sertifikatas"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Atsarginė piniginė...",
             "SIGNMESSAGE": "Pasirašyti pranešimą...",
             "VERIFYMESSAGE": "Patvirtinti pranešimą...",
-            "LOCALE": "Kalba...",
-            "RESTARTCORE": "Paleiskite „Metrix Core“ iš naujo",
-            "EXIT": "Išeiti",
             "OPTIONS": "Parinktys...",
+            "LOCALE": "Kalba...",
             "CURRENCIES": "Rodyti valiutą...",
-            "ALTITUDEREFRESH": "Atnaujinti aukščio duomenis"
+            "RESTARTCORE": "Paleiskite „Metrix Core“ iš naujo",
+            "ALTITUDEREFRESH": "Atnaujinti aukščio duomenis",
+            "EXIT": "Išeiti"
         },
         "ENCRYPT": {
             "TITLE": "Šifruoti",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Bendras likutis",
+        "SPENDABLEBALANCE": "Išleidžiamas likutis",
+        "PENDINGBALANCE": "Laukiamas likutis",
         "CANCELBUTTON": "Atšaukti",
         "DONEBUTTON": "Atlikta",
         "OKBUTTON": "Gerai",
+        "ACCEPTBUTTON": "Priimti",
         "CLEARALLBUTTON": "Išvalyti viską",
         "ENTERACCOUNTLABEL": "Įveskite šio adreso etiketę",
         "ENTERADDRESSLABEL": "Įveskite „Metrix“ adresą",
@@ -464,11 +511,8 @@
         "SORTBY": "Rūšiuoti pagal",
         "SEARCH": "Paieška",
         "FEE": "Mokestis",
-        "ACCEPTBUTTON": "Priimti",
         "CONFIRMED": "Patvirtinta",
         "UNCONFIRMED": "Nepatvirtinta",
-        "PENDINGBALANCE": "Laukiamas likutis",
-        "SPENDABLEBALANCE": "Išleidžiamas likutis",
         "SAVEBUTTON": "Išsaugoti"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "„Metrix Core“ paleidimas iš naujo...",
         "BOOTSTRAPPING": "Atsisiunčiama „bootstrap“...",
         "BOOTSTRAPEXTRACTING": "Išskleidžiama „bootstrap“...",
-        "TIMEREMAINING": "likę:"
+        "TIMEREMAINING": "likę:",
+        "DEVRPCOVERRIDEACTIVE": "Nustatytas kūrėjo RPC ryšio nepaisymas (Parinktys > Kūrėjas) ir nereaguoja. Išvalykite jį, kad įprastai vėl prisijungtumėte prie vietinio demono.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Išvalyti RPC nepaisymą ir prisijungti iš naujo"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nauja paskyra sėkmingai sukurta",
         "ADDRESSCOPIEDCLIPBOARD": "Adresas nukopijuotas į iškarpinę",
+        "COPIEDCLIPBOARD": "Nukopijuota į iškarpinę",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Operacijos nukopijuotos į iškarpinę",
         "EMPTYFIELDS": "Prašome užpildyti visus laukus",
         "NOUPDATE": "Nėra atnaujinimų",
         "WALLETBACKEDUP": "Piniginės atsarginė kopija sėkmingai sukurta",
+        "WALLETBACKUPFAILED": "Automatinis piniginės atsarginės kopijos kūrimas nepavyko – patikrinkite atsarginės kopijos vietą ir laisvą vietą diske.",
         "PASSPHRASEMISMATCH": "Įvestos slaptažodžių frazės nesutampa",
         "CHECKINGUPDATE": "Ieškoma atnaujinimų...",
         "CHECKINGUPDATEFAILED": "Nepavyko patikrinti, ar yra atnaujinimų. Patikrinkite tinklą.",
+        "WALLETUPDATEDOWNLOADING": "Atsisiunčiamas atnaujinimas...",
         "SENDINGEXCEEDSBALANCE": "Jūsų siunčiama suma viršija jūsų pasirinktą likutį",
         "MISSINGCHANGEADDRESS": "Turite nurodyti pakeitimo adresą",
         "MISSINGDESTINATIONADDRESS": "Turite nurodyti paskirties adresą",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Šifruojama piniginė...",
         "CHANGINGPASSPHARASE": "Keičiama slaptafrazė...",
         "STARTINGMASTERNODE": "Pradedamas pagrindinis mazgas...",
+        "STOPPINGMASTERNODE": "Sustabdomas pagrindinis mazgas...",
         "SENDINGTRANSACTION": "Siunčiama operacija...",
         "SIGNINGMESSAGE": "Pasirašomas pranešimas...",
         "SIGNEDMESSAGE": "Pasirašytas pranešimas",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Atrakinama piniginė...",
         "TRANSACTIONMISMATCH": "Operacijos klaida. Bandykite dar kartą.",
         "MINIMUMCONFIRMATIONS": "Prieš išleidžiant pinigus, visus įvestus duomenis reikia patvirtinti bent kartą.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Operacijos nukopijuotos į iškarpinę",
-        "STOPPINGMASTERNODE": "Sustabdomas pagrindinis mazgas...",
         "FAILEDTOWRITECONFIG": "Rašant į jūsų „metrix.conf“ failą kilo problemų. Patikrinkite, ar failas yra ir ar „Altitude“ turi rašymo teises.",
         "NOPUBLICUP": "Nerasta viešojo IP adreso. Patikrinkite interneto ryšį ir paleiskite „Altitude“ iš naujo.",
         "CONFIGURINGLOCALMN": "Konfigūruojamas vietinis „Masternode“...",
         "REPORTINGISSUE": "Gaunama diagnostikos informacija... Ši informacija bus nukopijuota į jūsų iškarpinę.",
-        "WALLETUPDATEDOWNLOADING": "Atsisiunčiamas atnaujinimas...",
-        "WALLETBACKUPFAILED": "Automatinis piniginės atsarginės kopijos kūrimas nepavyko – patikrinkite atsarginės kopijos vietą ir laisvą vietą diske.",
         "EXPLORERURLSAVED": "Naršyklės URL išsaugotas",
         "EXPLORERURLRESET": "Naršyklės URL grąžintas į numatytąjį",
         "EXPLORERURLINVALID": "Tai nėra galiojantis http(-ių) URL",
-        "EXPLORERURLUNREACHABLE": "Nepavyko pasiekti šio URL – patikrinkite jį ir bandykite dar kartą"
+        "EXPLORERURLUNREACHABLE": "Nepavyko pasiekti šio URL – patikrinkite jį ir bandykite dar kartą",
+        "DEVRPCHOSTSAVED": "RPC mazgas išsaugotas",
+        "DEVRPCHOSTRESET": "RPC serverio serveris grąžintas į numatytąjį (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Gautos monetos",
+        "NEWTRANSACTION_TITLE_STAKE": "Gautas statymas",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Gavote „Masternode“ atlygį"
     },
     "TIME": {
         "AFEWSECONDS": "Kelios sekundės",
@@ -533,11 +587,6 @@
         "MONTHS": "mėnesių",
         "AYEAR": "Metai",
         "YEARS": "metų"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Gautos monetos",
-        "NEWTRANSACTION_TITLE_STAKE": "Gautas statymas",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Gavote „Masternode“ atlygį"
     },
     "MONTH": {
         "JAN": "JAU",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Valdytojai yra atsakingi už balsavimą dėl mėnesinių biudžetų ir blokų grandinės pakeitimų. Valdytoju galite tapti užfiksuodami tinkamą užstatą valdymo sutartyje.",
                 "COLLATERAL": "Reikalingas užstatas",
                 "ENROLL": "Registruotis",
+                "SELECTAGOVERNOR": "Pasirinkite tinkamą gubernatoriaus adresą",
+                "GOVERNORNOTSELECTED": "Nebuvo pasirinktas tinkamas adresas",
                 "CONFIRMENROLL": "Jūs ruošiatės užsiregistruoti kaip valdytojas. Tai nusiunčia sandorį su reikiamu užstatu į valdymo sutartį. Galite bet kada atšaukti registraciją.",
                 "ISGOVERNORTITLE": "Esate aktyvus gubernatorius!",
                 "ISGOVERNORDETAIL1": "Valdytojai yra atsakingi už balsavimą dėl mėnesinių biudžetų ir blokų grandinės pakeitimų.",
                 "ISGOVERNORDETAIL2": "Norėdami išlikti gubernatoriumi, turėsite dalyvauti bent viename balsavime kas 30 dienų.",
                 "ISGOVERNORDETAIL3": "Jei nėra dėl ko balsuoti, galite tęsti registraciją rankiniu būdu, išsiųsdami aktyvų ping.",
+                "MYGOVERNORADDRESS": "Mano gubernatoriaus kreipimasis",
                 "UNENROLL": "Išsiregistruoti",
                 "PING": "Siųsti aktyvų pingą",
                 "LASTPINGTITLE": "Paskutinis ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dienos",
                 "GOVERNORVOTEMATURITYHOURS": "valandos",
                 "GOVERNORVOTEMATURITYSUFFIX": "iki brandos",
-                "MYGOVERNORADDRESS": "Mano gubernatoriaus kreipimasis",
-                "SELECTAGOVERNOR": "Pasirinkite tinkamą gubernatoriaus adresą",
-                "GOVERNORNOTSELECTED": "Nebuvo pasirinktas tinkamas adresas",
                 "NOTFULLYSYNCEDTITLE": "Gubernatoriaus statusas nežinomas",
                 "NOTFULLYSYNCEDDETAIL": "Jūsų gubernatoriaus registracijos būsena taps matoma, kai jūsų blokų grandinė bus visiškai sinchronizuota.",
                 "DGPMIGRATIONTITLE": "DGP migracija",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Jūsų pasiūlymas sėkmingai sukurtas",
             "ENROLLINGGOVERNOR": "Registracija į gubernatorius...",
             "ENROLLEDGOVERNOR": "Jūsų registracija bus baigta, kai jūsų operacija bus patvirtinta",
-            "VOTINGONPROPOSAL": "Siunčiamas pasiūlymo balsavimas",
-            "VOTEDONPROPOSAL": "Jūsų balsas bus įskaitytas, kai tik bus patvirtintas sandoris.",
             "PINGINGGOVERNOR": "Siunčiamas ping...",
             "PINGEDGOVERNOR": "Ping sėkmingai išsiųstas. Jūsų valdytojas bus atnaujintas, kai tik operacija bus patvirtinta.",
+            "VOTINGONPROPOSAL": "Siunčiamas pasiūlymo balsavimas",
+            "VOTEDONPROPOSAL": "Jūsų balsas bus įskaitytas, kai tik bus patvirtintas sandoris.",
             "UNENROLLINGGOVERNOR": "Išregistruojamas gubernatorius...",
             "UNENROLLEDGOVERNOR": "Operacija išsiųsta. Jūsų gubernatorius bus išregistruotas, kai tik operacija bus patvirtinta.",
             "GOVERNORNOTMATURE": "Jūsų gubernatorius dar nėra pakankamai subrendęs atlikti šį veiksmą"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Pirkite Metrix",
+                "SEARCH": "Istorija"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Jūs siunčiate",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Operacijų istorija",
                 "SEARCHBUTTON": "PAIEŠKA",
+                "SEARCHPLACEHOLDER": "Įveskite MRX arba BTC adresą",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Siuntimo tipas",
                 "TRANSACTIONAMOUNT": "Suma",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Patvirtinta",
                 "TRANSACTIONNOTCONFIRMED": "Nepatvirtinta",
                 "TRANSACTIONREFUNDED": "Grąžinta – mažesnė nei minimali suma",
-                "AVGSWAPPRICE": "Vidutinė swapo kaina",
-                "SEARCHPLACEHOLDER": "Įveskite MRX arba BTC adresą"
+                "AVGSWAPPRICE": "Vidutinė swapo kaina"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generuojamas mainų adresas...",
             "ALREADYHAVEADDRESS": "Jau turite su šiuo „Metrix“ adresu susietą BTC adresą",
             "NOADDRESS": "Neįvedėte „Metrix“ adreso"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Pirkite Metrix",
-                "SEARCH": "Istorija"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Rodyti slėpimą",
                 "EMPTYTITLE": "Kol kas nerasta žetonų",
                 "EMPTYDETAIL": "„Altitude“ automatiškai patikrina blokų naršyklę, ar nėra jūsų adresais išsiųstų MRC20 ir MRC721 žetonų, o tada viską tiesiogiai patikrina pagal jūsų mazgą. Taip pat galite pridėti žetoną rankiniu būdu, jei žinote jo sutarties adresą.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatinis žetonų tikrinimas išjungtas, todėl jūsų adresai netikrinami ieškant žetonų. Įjunkite jį atgal arba pridėkite žetoną rankiniu būdu, jei žinote jo sutarties adresą.",
                 "HIDDENTITLE": "Paslėpti žetonai",
                 "CONTEXTMENUHIDE": "Slėpti prieigos raktą",
                 "ITEMSSUFFIX": "prekė(-s)",
-                "NONENUMERABLETOOLTIP": "Šioje kolekcijoje negalima rodyti atskirų elementų – vietoj to rodoma, kiek jų turite."
+                "NONENUMERABLETOOLTIP": "Šioje kolekcijoje negalima rodyti atskirų elementų – vietoj to rodoma, kiek jų turite.",
+                "CHECKINGENABLED": "Tikrinama",
+                "CHECKINGDISABLED": "Patikrinti",
+                "CHECKINGENABLEDTOOLTIP": "Žetonų tikrinimas įjungtas – „Altitude“ periodiškai tikrina jūsų adresus, ar nėra žetonų, ir atnaujina likučius. Spustelėkite, kad išjungtumėte.",
+                "CHECKINGDISABLEDTOOLTIP": "Žetonų tikrinimas išjungtas – spustelėkite, kad vėl įjungtumėte.",
+                "CHECKINGDISABLEDNOTICE": "Automatinis žetonų tikrinimas išjungtas. Jūsų adresai nėra nuskaitomi ieškant žetonų ir likučiai nebus atnaujinami. Vis tiek galite pridėti žetoną rankiniu būdu."
             },
             "ADDTOKEN": {
                 "TITLE": "Pridėti prieigos raktą",

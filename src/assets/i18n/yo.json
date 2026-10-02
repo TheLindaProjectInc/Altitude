@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Se akanti fun ra re",
             "HIDEEMPTYACCOUNTS": "Fi Àkọọ́lẹ̀ Òfo Tí A Kò Lorukọ Pamọ́"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Àkótán Àkótán",
+            "TRANSACTIONSTAB": "Awọn iṣowo",
+            "ADDRESSTABS": "Àwọn àdírẹ́sì"
+        },
         "SEND": {
             "ADDRECIPIENT": "Fi Olùgbà kún",
             "SEND": "Firanṣẹ",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Déètì",
             "TABLECOLUMNS_CONFIRMS": "Àwọn Ìjẹ́rìísí",
             "ALL_SELECTUNSELECT": "Yí Gbogbo Rẹ̀ Padà",
+            "TREEMODE": "Ipo Igi",
+            "LISTMODE": "Ipò Àkójọ",
             "SENDAVAILABLE": "Lo iwọntunwọnsi ti o wa",
             "INPUTLOCKED": "A ti ti ìkọ́lé wọlé. O gbọ́dọ̀ ṣí ìkọ́lé yìí kí o tó lè ná an.",
             "CONTEXTMENULOCKINPUT": "Títì ìtẹ̀wọlé",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Lẹ́yìn Owó Ìsanwó",
             "QUANTITY": "Iye",
             "BYTES": "Àwọn Bìtì",
-            "TREEMODE": "Ipo Igi",
-            "LISTMODE": "Ipò Àkójọ",
             "ALERTFEECHANGETITLE": "Iyipada owo idiyele",
             "ALERTFEECHANGECONTENT": "Owó ìṣòwò gidi ga ju bí a ṣe rò lọ. Jọ̀wọ́ fìdí rẹ̀ múlẹ̀ pé owó tuntun ni wọ́n máa san:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Ṣẹ̀dá Àdéhùn",
+            "INFO": "Fi àdéhùn ọlọ́gbọ́n kan sí nẹ́tíwọ́ọ̀kì nípa fífi bytecode tí a ti ṣàkójọ rẹ̀ sílẹ̀. Èyí jẹ́ iṣẹ́ ẹ̀wọ̀n pàtàkì kan - ṣàyẹ̀wò bytecode àti ètò gaasi rẹ lẹ́ẹ̀mejì kí o tó gbé e kalẹ̀, a kò le ṣe àtúnṣe ìgbékalẹ̀ náà.",
+            "FROM": "Láti",
+            "BYTECODE": "Kóòdù Bátítẹ́kì",
+            "BYTECODEPLACEHOLDER": "Lẹ́ẹ̀mọ́ bytecode àdéhùn tí a kó jọ (hex)",
+            "INVALIDBYTECODE": "Kóòdù Bẹ́tíkọ́dì gbọ́dọ̀ jẹ́ okùn hex tó wúlò (0-9, a-f) pẹ̀lú nọ́mbà àwọn ohun kikọ tó dọ́gba",
+            "GASLIMIT": "Ààlà Gáàsì",
+            "GASLIMITRANGE": "Ibùdó",
+            "GASPRICE": "Iye Gaasi (MRX fun ẹyọ gaasi kan)",
+            "GASPRICEMIN": "Ó kéré jùlọ",
+            "ESTIMATEDMAXCOST": "Iye owo ti a ṣírò julọ",
+            "DEPLOYBUTTON": "Ṣe àdéhùn fún àwọn ènìyàn",
+            "INCOMPLETEFORM": "Jọ̀wọ́ yan àdírẹ́sì olùránṣẹ́ kan, tẹ bytecode tó wúlò, kí o sì ṣètò ààlà/owó gáàsì tó wúlò",
+            "HIGHGASPRICETITLE": "Iye Gaasi Giga",
+            "HIGHGASPRICEINFO": "Iye owo gaasi ti o ti ṣeto ga ju ti tẹlẹ lọ. Ifisilẹ yii le jẹ to:",
+            "DEPLOYING": "Àdéhùn gbígbé jáde...",
+            "DEPLOYED": "A ti fi ìgbékalẹ̀ àdéhùn náà sílẹ̀",
+            "RESULTTITLE": "Àbájáde ìṣíṣẹ́",
+            "STATUS": "Ipò",
+            "STATUSPENDING": "A n reti idaniloju...",
+            "STATUSCONFIRMED": "Ti fi sori ẹrọ ni aṣeyọri",
+            "STATUSFAILED": "Ìgbésókè kùnà",
+            "TXID": "ID Iṣowo",
+            "SENDER": "Olùránṣẹ́",
+            "CONTRACTADDRESS": "Àdírẹ́sì Àdéhùn",
+            "GASUSED": "Gáàsì tí a lò",
+            "DONEBUTTON": "Ti pari",
+            "DEPLOYANOTHERBUTTON": "Ṣe iranlọ́wọ́ Òmíràn"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Awọn iṣowo",
+            "COPYBLOCKHASH": "Daakọ Block Hash",
+            "COPYTXID": "Ṣẹ̀dá ID Ìṣòwò",
+            "COPYACCOUNT": "Daakọ Orukọ Akọọlẹ",
+            "COPYADDRESS": "Ṣe àdàkọ àdírẹ́sì",
+            "COPYAMOUNT": "Ẹ̀dà Iye",
+            "COPTBLOCKINDEX": "Àtọ́ka Àkọsílẹ̀ Àkọsílẹ̀",
+            "EXPLORER": "Ṣí i nínú Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Ṣí sílẹ̀ fún ìfipamọ́",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Àdírẹ́sì",
             "ENABLED": "Ti mu ṣiṣẹ",
-            "STARTBUTTON": "Bẹ̀rẹ̀ Àdúgbò",
-            "STARTALIASBUTTON": "Bẹ̀rẹ̀ orúkọ ìnagijẹ",
-            "STARTALLBUTTON": "Bẹ̀rẹ̀ Gbogbo",
             "NOMASTERNODES": "O kò ní àwọn masternodes kankan",
             "NOMNOUTPUTS": "A kò rí àwọn ìjáde Masternode kankan. Láti ṣiṣẹ́ Masternode àdúgbò kan, fi owó 2, 5, 25, 50 tàbí 100 mílíọ̀nù ránṣẹ́ sí àdírẹ́sì Masternode rẹ kí o sì dúró fún ìjẹ́rìí 15.",
+            "STARTBUTTON": "Bẹ̀rẹ̀ Àdúgbò",
             "STOPBUTTON": "Dúró ní Àdúgbò",
+            "STARTALIASBUTTON": "Bẹ̀rẹ̀ orúkọ ìnagijẹ",
             "STOPALIASBUTTON": "Dá Akọni-ìtumọ̀...",
+            "STARTALLBUTTON": "Bẹ̀rẹ̀ Gbogbo",
             "ADDREMOTE": "Fikun Masternode Latọna jijin",
             "REMOVEMN": "Yọ Masternode kuro",
             "ADDLOCAL": "Ṣètò Masternode Àdúgbò",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Gbogbogbòò",
                 "COREVERSION": "Ẹ̀yà Àkọ́kọ́",
+                "ALTITUDEVERSION": "Ẹ̀yà Gíga",
                 "PROTOCOLVERSION": "Ẹ̀yà Ìlànà",
                 "WALLETVERSION": "Ẹ̀yà Àpò Wáálí.dat",
                 "NETWORKTITLE": "Nẹ́ẹ̀tìwọ́ọ̀kì",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Iye awọn Masternodes",
                 "BLOCKCHAINTITLE": "Ẹ̀wọ̀n Àkọsílẹ̀",
                 "NUMBERBLOCKS": "Iye awọn bulọọki lọwọlọwọ",
-                "BESTBLOCKTTIME": "Àkókò ìdìbò ìkẹyìn",
-                "ALTITUDEVERSION": "Ẹ̀yà Gíga"
+                "BESTBLOCKTTIME": "Àkókò ìdìbò ìkẹyìn"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Ẹ kú àbọ̀ sí Metrix Core RPC console. Tẹ ìrànlọ́wọ́ fún àkópọ̀ àwọn àṣẹ tó wà.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Yan Èdè"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Awọn iṣowo",
-            "COPYBLOCKHASH": "Daakọ Block Hash",
-            "COPYTXID": "Ṣẹ̀dá ID Ìṣòwò",
-            "COPYACCOUNT": "Daakọ Orukọ Akọọlẹ",
-            "COPYADDRESS": "Ṣe àdàkọ àdírẹ́sì",
-            "COPYAMOUNT": "Ẹ̀dà Iye",
-            "COPTBLOCKINDEX": "Àtọ́ka Àkọsílẹ̀ Àkọsílẹ̀",
-            "EXPLORER": "Ṣí i nínú Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Yan Ìfihàn Owó"
         },
         "EXPLORER": {
             "TITLE": "Olùṣàwárí Àkọsílẹ̀",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Nẹ́ẹ̀tìwọ́ọ̀kì",
             "WINDOTAB": "Ferese",
+            "BACKUPTAB": "Àtìlẹ́yìn",
+            "EXPLORERTAB": "Olùṣàwárí",
+            "DEVELOPERTAB": "Olùgbékalẹ̀",
             "NETWORK": {
                 "PROXY": "Sopọ nipasẹ aṣoju SOCKS5",
                 "PROXYIP": "IP aṣoju",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Dínkù nígbà tí a bá ti dé ibẹ̀",
                 "BEHAVIOURTITLE": "Àwo Ẹ̀rọ àti Ìwà Fèrèsé"
             },
-            "BACKUPTAB": "Àtìlẹ́yìn",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Àfikún Àìfọwọ́sí",
                 "ENABLED": "Ṣe afẹyinti wallet.dat laifọwọyi lori iṣeto kan",
                 "ENABLEDINFO": "Ó ń ṣẹ̀dá àfikún tuntun fún fáìlì àpò owó rẹ lórí ìṣètò kan, nítorí náà, àdàkọ tuntun kan wà nígbà gbogbo tí nǹkan bá bàjẹ́.",
+                "INTERVALLABEL": "Ṣe afẹyinti ni gbogbo ọjọ (ọjọ)",
                 "LASTBACKUP": "Àfikún ìkẹyìn:",
                 "NEVERBACKEDUP": "Ko si afẹyinti laifọwọyi ti a ti ṣe sibẹsibẹ.",
                 "BACKUPNOWBUTTON": "Ṣe afẹyinti nisinsinyi",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Tunto si Aiyipada",
                 "PRUNETITLE": "Ìtàn Àfikún",
                 "PRUNEINFO": "A máa pa àwọn àfikún àdánidá àtijọ́ rẹ́ kí fódà yìí má baà dàgbà títí láé - àwọn tó ṣẹ̀ṣẹ̀ dé ìsàlẹ̀ nìkan ni a máa tọ́jú.",
-                "KEEPCOUNTLABEL": "Jẹ́ kí ó wà ní ìgbẹ̀yìn",
-                "INTERVALLABEL": "Ṣe afẹyinti ni gbogbo ọjọ (ọjọ)"
+                "KEEPCOUNTLABEL": "Jẹ́ kí ó wà ní ìgbẹ̀yìn"
             },
-            "EXPLORERTAB": "Olùṣàwárí",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Olùṣàwárí Àkọsílẹ̀",
                 "BLOCKEXPLORERINFO": "Ojú òpó náà ṣí nígbà tí a ń wo ìṣòwò kan lórí bulọọki explorer (fún àpẹẹrẹ, tẹ-ọtun lórí ìṣòwò kan > Wo lórí Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Nẹ́ẹ̀tìwọ́ọ̀kì ìdánwò",
                 "REGTEST": "Ìforúkọsílẹ̀"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Ipò Olùgbékalẹ̀",
+                "DEVMODEINFO": "Paarẹ nipasẹ aiyipada ati pe a pinnu fun awọn olupilẹṣẹ nikan. Muu eyi ṣiṣẹ ṣafihan awọn aṣayan lati bori asopọ RPC - awọn olumulo boṣewa yẹ ki o fi eyi silẹ.",
+                "DEVMODELABEL": "Mu Ipo Olùgbékalẹ̀ Ṣiṣẹ́",
+                "WARNING": "Àwọn ètò yìí wà fún ìdàgbàsókè nìkan. Yíyípadà wọn lè dènà àpò owó náà láti so mọ́ èṣù rárá - lo èyí nìkan tí o bá mọ ohun tí ò ń ṣe.",
+                "RPCHOSTTITLE": "Asopọ RPC",
+                "RPCHOSTINFO": "Nípa àìṣeédá, Altitude so mọ́ daemon tí ó ń ṣàkóso ara rẹ̀, lórí ẹ̀rọ yìí (127.0.0.1). Fífi àwọn wọ̀nyí sílẹ̀ jẹ́ kí ó so mọ́ daemon mìíràn dípò - fún àpẹẹrẹ àpẹẹrẹ regtest remote, láìsí pé kí ó ṣiṣẹ́ ní agbègbè. Tí ìsopọ̀ náà bá yọrí sí rere, Altitude kò ní gba láti ṣe ìgbàsílẹ̀ tàbí bẹ̀rẹ̀ daemon agbègbè tirẹ̀. Rpcallowip tí daemon ń lò gbọ́dọ̀ jẹ́ kí ìsopọ̀ yìí wáyé, àti rpcuser/rpcpassword tí ó wà ní ìsàlẹ̀ gbọ́dọ̀ bá ìṣètò rẹ̀ mu. Ó bẹ̀rẹ̀ sí ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀, kò sí ìdí láti tún bẹ̀rẹ̀.",
+                "RPCHOSTLABEL": "Olùgbàlejò RPC",
+                "RPCPORTLABEL": "Ibudo RPC",
+                "RPCUSERLABEL": "Orukọ olumulo RPC",
+                "RPCPASSWORDLABEL": "Ọrọigbaniwọle RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Àkótán Àkótán",
-            "TRANSACTIONSTAB": "Awọn iṣowo",
-            "ADDRESSTABS": "Àwọn àdírẹ́sì"
-        },
-        "CURRENCY": {
-            "TITLE": "Yan Ìfihàn Owó"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dásíbọ́ọ̀dù",
             "SEND": "Firanṣẹ",
+            "CREATECONTRACT": "Ṣẹ̀dá Àdéhùn",
             "RECEIVE": "Gba",
             "TRANSACTIONS": "Awọn iṣowo",
             "STAKING": "Ìfipamọ́",
             "MASTERNODES": "Àwọn nódù gíga",
+            "EXPLORER": "Olùṣàwárí Àkọsílẹ̀",
             "SYNC": {
                 "CONNECTING": "Sopọ̀ mọ́ra",
                 "NOBLOCKS": "Nduro fun awọn bulọọki",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Àpò owó kò sí nínú ìfowópamọ́ lọ́wọ́lọ́wọ́",
                 "MASTERNODEON": "Masternode n ṣiṣẹ lọwọlọwọ",
                 "MASTERNODEOFF": "Masternode kò ṣiṣẹ́ lọ́wọ́lọ́wọ́"
-            },
-            "EXPLORER": "Olùṣàwárí Àkọsílẹ̀"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Tẹ adirẹsi oju opo wẹẹbu 3 sii",
+            "GOBUTTON": "Lọ",
+            "QUICKLAUNCH": "Ìfilọ́lẹ̀ kíákíá",
+            "DEVTOOLS": "Ṣí Àwọn Irinṣẹ́ Olùgbékalẹ̀",
+            "ADDLINK": "Fi Ìjápọ̀ kún",
+            "LINKNAMEPLACEHOLDER": "Orúkọ",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Fipamọ",
+            "CANCEL": "Fagilee",
+            "REMOVE": "Yọ kuro",
+            "REMOVECONFIRM": "Yọ ìjápọ̀ kíákíá yìí kúrò?",
+            "LINKEXISTS": "Ìjápọ̀ yẹn ti wà nínú àkójọ ìfilọ́lẹ̀ kíákíá rẹ",
+            "LINKINVALID": "Tẹ adirẹsi aaye ti o wulo sii",
+            "LINKNETWORKLABEL": "Nẹ́ẹ̀tìwọ́ọ̀kì",
+            "LOADFAILED": "Kò ṣeé ṣe láti gbé ojú òpó náà sórí ayélujára",
+            "SECURESITE": "Ìsopọ̀mọ́ra ní ààbò - ìwé-ẹ̀rí SSL tó wúlò",
+            "INSECURESITE": "Asopọmọ ko ni aabo",
+            "INVALIDCERTSITE": "Ìsopọ̀mọ́ra kìí ṣe àdáni - ìwé ẹ̀rí SSL tí kò tọ́ tàbí tí kò ṣeé gbẹ́kẹ̀lé"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Tẹ Ọrọigbaniwọle Apamọwọ Rẹ sii",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Àtúnṣe kan wà fún Metrix Core. Ṣé o fẹ́ fi sori ẹrọ rẹ̀ báyìí?",
             "WALLETUPDATETITLE": "Imudojuiwọn Giga wa",
             "WALLETUPDATEINFO": "Àtúnṣe kan wà fún Altitude. Ṣé o fẹ́ gba á sílẹ̀ nísinsìnyí?",
+            "WALLETUPDATEREADYTITLE": "Imudojuiwọn Giga Ti Ṣetan",
+            "WALLETUPDATEREADYINFO": "A ti gba imudojuiwọn naa silẹ. Tun Altitude bẹrẹ bayi lati fi sii?",
+            "WALLETUPDATERESTARTBUTTON": "Tun bẹrẹ & Fi sori ẹrọ",
+            "WALLETUPDATELATERBUTTON": "Nigbamii",
             "CLIENTUPDATEBUTTON": "Imudojuiwọn",
             "CLIENTUPDATECANCELBUTTON": "Má ṣe Ṣe Àtúnṣe",
             "CLIENTUPDATESKIPBUTTON": "Fo Imudojuiwọn yii",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ó yẹ kí o fi fáìlì àpò ìpamọ́ tuntun tí a ṣẹ̀ṣẹ̀ ṣe rọ́pò èyíkéyí nínú àwọn àpò ìpamọ́ rẹ. Fún ààbò, àwọn àpò ìpamọ́ tẹ́lẹ̀ ti fáìlì àpò ìpamọ́ tí a kò tíì fi pamọ́ yóò di ohun tí kò wúlò ní kété tí o bá bẹ̀rẹ̀ sí í lo àpò ìpamọ́ tuntun náà.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Dúró Láìròtẹ́lẹ̀",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Iṣoro kan wa pẹlu Metrix Core ti o mu ki o pari. A gba ọ niyanju lati ṣayẹwo faili debug.log rẹ fun awọn iṣoro.",
+            "CLIENTUNKNOWNERRORTITLE": "Àṣìṣe ìbánisọ̀rọ̀ Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Iṣoro kan wa ninu biba Metrix Core soro. A gba ọ niyanju lati ṣayẹwo faili debug.log rẹ fun awọn iṣoro.",
+            "BOOTSTRAPFAILEDTITLE": "Iṣẹ́ ìkọ́kọ́ Metrix Core ti kùnà",
+            "BOOTSTRAPFAILEDINFO": "Iṣoro kan wa nigbati o ba n ṣe atunṣe Metrix Core. A gba ọ niyanju lati ṣayẹwo faili atokọ Altitude rẹ fun awọn iṣoro.",
+            "BOOTSTRAPOFFERTITLE": "Àpò owó ti di ìgbà àtijọ́ gidigidi",
+            "BOOTSTRAPOFFERINFO": "Àkójọpọ̀ tuntun kan wà tí ó lè mú kí Metrix Core tuntun dé. Títẹ̀síwájú pẹ̀lú ìṣọ̀kan déédé lè gba ọjọ́ púpọ̀ láti parí, nítorí pé àpò owó rẹ nílò láti gba gbogbo ìdènà tí ó ti pàdánù kí ó sì ṣàyẹ̀wò rẹ̀.",
+            "BOOTSTRAPOFFERBUTTON": "Ṣe igbasilẹ Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Tẹ̀síwájú Ìṣiṣẹ́pọ̀ Déédéé",
+            "BOOTSTRAPSPACEINFO": "Ààyè díìsìkì ọ̀fẹ́ kò tó láti gba sílẹ̀ àti láti yọ bootstrap náà jáde. Ó ṣe pàtàkì: {required}, Ó wà: {free}. Gba ààyè sílẹ̀ kí o sì tún gbìyànjú lẹ́ẹ̀kan síi.",
+            "STARTUPFAILEDTITLE": "Ibẹ̀rẹ̀ Metrix Core kùnà",
+            "STARTUPFAILEDINFO": "Àṣìṣe kan wáyé nígbà tí Metrix Core bẹ̀rẹ̀. A gba ọ nímọ̀ràn láti ṣàyẹ̀wò fáìlì àkọsílẹ̀ Altitude rẹ fún àwọn ìṣòro.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Àwọn Irinṣẹ́ Ìgbàpadà",
             "CLIENTINVALIDCONFIGTITLE": "Iṣeto metrix.conf ti ko tọ",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf rẹ ní ètò masternode tí kò tọ́ tí yóò mú kí Metrix Core jáde lẹ́sẹ̀kẹsẹ̀. Jọ̀wọ́ ṣàyẹ̀wò fáìlì yìí.",
             "ADDREMOTEMNTITLE": "Fikun Masternode Latọna jijin",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kọ́kọ́rọ́ Àdáni Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Àtọ́ka Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Iṣẹ́ ìkọ́kọ́ Metrix Core ti kùnà",
-            "BOOTSTRAPFAILEDINFO": "Iṣoro kan wa nigbati o ba n ṣe atunṣe Metrix Core. A gba ọ niyanju lati ṣayẹwo faili atokọ Altitude rẹ fun awọn iṣoro.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Àwọn Irinṣẹ́ Ìgbàpadà",
-            "STARTUPFAILEDTITLE": "Ibẹ̀rẹ̀ Metrix Core kùnà",
-            "STARTUPFAILEDINFO": "Àṣìṣe kan wáyé nígbà tí Metrix Core bẹ̀rẹ̀. A gba ọ nímọ̀ràn láti ṣàyẹ̀wò fáìlì àkọsílẹ̀ Altitude rẹ fún àwọn ìṣòro.",
-            "CLIENTUNKNOWNERRORTITLE": "Àṣìṣe ìbánisọ̀rọ̀ Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Iṣoro kan wa ninu biba Metrix Core soro. A gba ọ niyanju lati ṣayẹwo faili debug.log rẹ fun awọn iṣoro.",
             "UNENROLLGOVERNORTITLE": "Jẹ́rìí sí ìyọkúrò ìforúkọsílẹ̀ Gómìnà",
             "UNENROLLGOVERNORCONTENT": "Ṣé ó dá ọ lójú pé o fẹ́ yọ Gómìnà rẹ kúrò nínú ìforúkọsílẹ̀? O kò ní lè dìbò mọ́ lórí ìṣàkóso ẹ̀rọ.",
-            "WALLETUPDATEREADYTITLE": "Imudojuiwọn Giga Ti Ṣetan",
-            "WALLETUPDATEREADYINFO": "A ti gba imudojuiwọn naa silẹ. Tun Altitude bẹrẹ bayi lati fi sii?",
-            "WALLETUPDATERESTARTBUTTON": "Tun bẹrẹ & Fi sori ẹrọ",
-            "WALLETUPDATELATERBUTTON": "Nigbamii",
             "DAPPCONNECTTITLE": "Sopọ si Aaye naa",
             "DAPPCONNECTINFO": "Oju opo wẹẹbu yii fẹ lati sopọ mọ apamọwọ rẹ ki o wo adirẹsi ati iwọntunwọnsi rẹ.",
             "DAPPCONNECTBUTTON": "Sopọ̀",
+            "DAPPCONNECTADDRESSLABEL": "Àdírẹ́sì",
+            "DAPPAPPROVEBUTTON": "Fọwọ́sí",
             "DAPPREJECTBUTTON": "Kọ̀",
             "DAPPSENDTITLE": "Ìbéèrè fún Ìṣòwò Àdéhùn",
             "DAPPSENDINFO": "Aaye yii n beere lati fi adehun ranṣẹ lati inu apo owo rẹ.",
-            "DAPPSIGNTITLE": "Ìbéèrè fún Ìfiránṣẹ́ Ṣọwọ́ sí",
-            "DAPPSIGNINFO": "Oju opo wẹẹbu yii n beere lati fowo si ifiranṣẹ kan pẹlu adirẹsi apamọwọ rẹ.",
-            "DAPPNOTREADY": "Kò tíì ṣeé ṣe láti sopọ̀ mọ́ ojú-ọ̀nà náà - Metrix Core ṣì ń bẹ̀rẹ̀.",
-            "DAPPNOWALLET": "Kò le sopọ̀ mọ́ ojú-òpó wẹ́ẹ̀bù náà - kò sí àdírẹ́sì àpò owó kankan.",
-            "DAPPAPPROVEBUTTON": "Fọwọ́sí",
-            "DAPPCONNECTADDRESSLABEL": "Àdírẹ́sì",
             "DAPPSENDSITELABEL": "Oju opo wẹẹbu",
             "DAPPSENDCONTRACTLABEL": "Àdírẹ́sì Àdéhùn",
             "DAPPSENDAMOUNTLABEL": "Iye owo",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Iye owo Nẹtiwọọki to pọ julọ",
             "DAPPSENDMAXTOTALLABEL": "Àròpọ̀ Tó Pọ̀ Jùlọ",
             "DAPPSENDDATALABEL": "Dáta Àdéhùn",
+            "DAPPSIGNTITLE": "Ìbéèrè fún Ìfiránṣẹ́ Ṣọwọ́ sí",
+            "DAPPSIGNINFO": "Oju opo wẹẹbu yii n beere lati fowo si ifiranṣẹ kan pẹlu adirẹsi apamọwọ rẹ.",
             "DAPPSIGNMESSAGELABEL": "Ifiranṣẹ",
-            "BOOTSTRAPOFFERTITLE": "Àpò owó ti di ìgbà àtijọ́ gidigidi",
-            "BOOTSTRAPOFFERINFO": "Àkójọpọ̀ tuntun kan wà tí ó lè mú kí Metrix Core tuntun dé. Títẹ̀síwájú pẹ̀lú ìṣọ̀kan déédé lè gba ọjọ́ púpọ̀ láti parí, nítorí pé àpò owó rẹ nílò láti gba gbogbo ìdènà tí ó ti pàdánù kí ó sì ṣàyẹ̀wò rẹ̀.",
-            "BOOTSTRAPOFFERBUTTON": "Ṣe igbasilẹ Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Tẹ̀síwájú Ìṣiṣẹ́pọ̀ Déédéé",
-            "BOOTSTRAPSPACEINFO": "Ààyè díìsìkì ọ̀fẹ́ kò tó láti gba sílẹ̀ àti láti yọ bootstrap náà jáde. Ó ṣe pàtàkì: {required}, Ó wà: {free}. Gba ààyè sílẹ̀ kí o sì tún gbìyànjú lẹ́ẹ̀kan síi."
+            "DAPPNOTREADY": "Kò tíì ṣeé ṣe láti sopọ̀ mọ́ ojú-ọ̀nà náà - Metrix Core ṣì ń bẹ̀rẹ̀.",
+            "DAPPNOWALLET": "Kò le sopọ̀ mọ́ ojú-òpó wẹ́ẹ̀bù náà - kò sí àdírẹ́sì àpò owó kankan."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ìwé Àdírẹ́sì",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Nẹ́tíwọ́ọ̀kì lọ́wọ́lọ́wọ́"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Tẹ adirẹsi oju opo wẹẹbu 3 sii",
-            "GOBUTTON": "Lọ",
-            "QUICKLAUNCH": "Ìfilọ́lẹ̀ kíákíá",
-            "DEVTOOLS": "Ṣí Àwọn Irinṣẹ́ Olùgbékalẹ̀",
-            "ADDLINK": "Fi Ìjápọ̀ kún",
-            "LINKNAMEPLACEHOLDER": "Orúkọ",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Fipamọ",
-            "CANCEL": "Fagilee",
-            "REMOVE": "Yọ kuro",
-            "REMOVECONFIRM": "Yọ ìjápọ̀ kíákíá yìí kúrò?",
-            "LINKEXISTS": "Ìjápọ̀ yẹn ti wà nínú àkójọ ìfilọ́lẹ̀ kíákíá rẹ",
-            "LINKINVALID": "Tẹ adirẹsi aaye ti o wulo sii",
-            "LINKNETWORKLABEL": "Nẹ́ẹ̀tìwọ́ọ̀kì",
-            "LOADFAILED": "Kò ṣeé ṣe láti gbé ojú òpó náà sórí ayélujára",
-            "SECURESITE": "Ìsopọ̀mọ́ra ní ààbò - ìwé-ẹ̀rí SSL tó wúlò",
-            "INSECURESITE": "Asopọmọ ko ni aabo",
-            "INVALIDCERTSITE": "Ìsopọ̀mọ́ra kìí ṣe àdáni - ìwé ẹ̀rí SSL tí kò tọ́ tàbí tí kò ṣeé gbẹ́kẹ̀lé"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Àpò Àfikún...",
             "SIGNMESSAGE": "Fi àmì sí Ifiranṣẹ́...",
             "VERIFYMESSAGE": "Ṣàyẹ̀wò Ìránṣẹ́ náà...",
-            "LOCALE": "Èdè...",
-            "RESTARTCORE": "Tun Metrix Core bẹrẹ",
-            "EXIT": "Jade",
             "OPTIONS": "Àwọn àṣàyàn...",
+            "LOCALE": "Èdè...",
             "CURRENCIES": "Fi Owó Hàn...",
-            "ALTITUDEREFRESH": "Ṣe àtúnṣe Dátà Gíga"
+            "RESTARTCORE": "Tun Metrix Core bẹrẹ",
+            "ALTITUDEREFRESH": "Ṣe àtúnṣe Dátà Gíga",
+            "EXIT": "Jade"
         },
         "ENCRYPT": {
             "TITLE": "Fi ìkọ̀kọ̀",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Iwontunwonsi Apapọ",
+        "SPENDABLEBALANCE": "Iwontunwonsi ti a le nawo",
+        "PENDINGBALANCE": "Ìwọ̀n Ìwọ̀n Tí Ó Wà Nílẹ̀",
         "CANCELBUTTON": "Fagilee",
         "DONEBUTTON": "Ti pari",
         "OKBUTTON": "O dara",
+        "ACCEPTBUTTON": "Gba",
         "CLEARALLBUTTON": "Pa gbogbo rẹ̀ rẹ́",
         "ENTERACCOUNTLABEL": "Tẹ àmì kan sii fun adirẹsi yii",
         "ENTERADDRESSLABEL": "Tẹ adirẹsi Metrix kan sii",
@@ -464,11 +511,8 @@
         "SORTBY": "Sa pelu",
         "SEARCH": "Ṣe àwárí",
         "FEE": "Owo idiyele",
-        "ACCEPTBUTTON": "Gba",
         "CONFIRMED": "Ti jẹrisi",
         "UNCONFIRMED": "A kò tíì jẹ́rìí sí i",
-        "PENDINGBALANCE": "Ìwọ̀n Ìwọ̀n Tí Ó Wà Nílẹ̀",
-        "SPENDABLEBALANCE": "Iwontunwonsi ti a le nawo",
         "SAVEBUTTON": "Fipamọ"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "N tun Metrix Core bẹrẹ...",
         "BOOTSTRAPPING": "N ṣe ìgbàsílẹ̀ ìdènà-àkọ́kọ́...",
         "BOOTSTRAPEXTRACTING": "N fa bata bata...",
-        "TIMEREMAINING": "tó kù:"
+        "TIMEREMAINING": "tó kù:",
+        "DEVRPCOVERRIDEACTIVE": "A ti ṣètò ìyípadà ìsopọ̀ RPC olùgbékalẹ̀ (Àwọn àṣàyàn > Olùgbékalẹ̀) kò sì dáhùn. Pa á rẹ́ kí ó lè tún so mọ́ àdàmọ̀ àdúgbò déédéé.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Pa RPC Fopin & Atunsopo mọ"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "A ṣẹ̀dá àkọọ́lẹ̀ tuntun ní àṣeyọrí",
         "ADDRESSCOPIEDCLIPBOARD": "Ẹ da àdírẹ́sì náà kọ sí àtẹ ìpamọ́",
+        "COPIEDCLIPBOARD": "A daakọ si agekuru fidio",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "A daakọ awọn iṣowo si agekuru fidio",
         "EMPTYFIELDS": "Jọwọ kun gbogbo awọn aaye",
         "NOUPDATE": "Ko si imudojuiwọn to wa",
         "WALLETBACKEDUP": "Àfikún àpò owó yọrí sí rere",
+        "WALLETBACKUPFAILED": "Àfikún àpò owó àìfọwọ́ṣe kò ṣiṣẹ́ - ṣàyẹ̀wò ibi àfikún rẹ àti àyè àwo disiki tó wà",
         "PASSPHRASEMISMATCH": "Àwọn ọ̀rọ̀ ìpamọ́ tí o fi sílẹ̀ kò báramu",
         "CHECKINGUPDATE": "A n ṣayẹwo fun imudojuiwọn...",
         "CHECKINGUPDATEFAILED": "Kò le ṣàyẹ̀wò fún àtúnṣe. Ṣàyẹ̀wò nẹ́tíwọ́ọ̀kì rẹ.",
+        "WALLETUPDATEDOWNLOADING": "Ngba imudojuiwọn sori ayelujara...",
         "SENDINGEXCEEDSBALANCE": "Iye ti o n fi ranṣẹ ju iye ti o yan lọ",
         "MISSINGCHANGEADDRESS": "O gbọdọ ṣalaye adirẹsi iyipada kan",
         "MISSINGDESTINATIONADDRESS": "O gbọdọ ṣalaye adirẹsi ibi ti o nlo",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Àpò ìpamọ́...",
         "CHANGINGPASSPHARASE": "Àyípadà ọ̀rọ̀ìpamọ́...",
         "STARTINGMASTERNODE": "Bíbẹ̀rẹ̀ masternode...",
+        "STOPPINGMASTERNODE": "N da masternode duro...",
         "SENDINGTRANSACTION": "N fi ìṣòwò ránṣẹ́...",
         "SIGNINGMESSAGE": "Ìfọwọ́sí ìránṣẹ́...",
         "SIGNEDMESSAGE": "Ifiranṣẹ ti a fowo si",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ṣíṣí àpò owó...",
         "TRANSACTIONMISMATCH": "Àṣìṣe ìṣòwò. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan síi.",
         "MINIMUMCONFIRMATIONS": "Gbogbo awọn titẹ sii nilo o kere ju idaniloju kan ṣaaju ki o to nawo.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "A daakọ awọn iṣowo si agekuru fidio",
-        "STOPPINGMASTERNODE": "N da masternode duro...",
         "FAILEDTOWRITECONFIG": "Iṣoro kan wa ninu kikọ si faili metrix.conf rẹ. Ṣayẹwo pe faili naa wa ati pe Altitude ni awọn igbanilaaye kikọ.",
         "NOPUBLICUP": "A ko ri adiresi IP gbogbogbo. Ṣayẹwo asopọ intanẹẹti rẹ ki o tun bẹrẹ Altitude.",
         "CONFIGURINGLOCALMN": "Ṣíṣeto Masternode àdúgbò...",
         "REPORTINGISSUE": "Gbigba alaye ayẹwo... A o daakọ alaye yii si agekuru fidio rẹ.",
-        "WALLETUPDATEDOWNLOADING": "Ngba imudojuiwọn sori ayelujara...",
-        "WALLETBACKUPFAILED": "Àfikún àpò owó àìfọwọ́ṣe kò ṣiṣẹ́ - ṣàyẹ̀wò ibi àfikún rẹ àti àyè àwo disiki tó wà",
         "EXPLORERURLSAVED": "Ti fi URL Explorer pamọ",
         "EXPLORERURLRESET": "URL Explorer ti pada si aiyipada",
         "EXPLORERURLINVALID": "Iyẹn kìí ṣe URL http(s) tó wúlò",
-        "EXPLORERURLUNREACHABLE": "Mi ò le dé URL náà - ṣàyẹ̀wò rẹ̀ kí o sì tún gbìyànjú lẹ́ẹ̀kan sí i"
+        "EXPLORERURLUNREACHABLE": "Mi ò le dé URL náà - ṣàyẹ̀wò rẹ̀ kí o sì tún gbìyànjú lẹ́ẹ̀kan sí i",
+        "DEVRPCHOSTSAVED": "Ti fipamọ olugbalejo RPC",
+        "DEVRPCHOSTRESET": "Olùgbàlejò RPC padà sí àìṣeéyípadà (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Àwọn owó tí a gbà",
+        "NEWTRANSACTION_TITLE_STAKE": "Ìpín tí a gbà",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ti gba Ẹ̀bùn Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Awọn iṣẹju-aaya diẹ",
@@ -533,11 +587,6 @@
         "MONTHS": "oṣù",
         "AYEAR": "Ọdún kan",
         "YEARS": "ọdún"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Àwọn owó tí a gbà",
-        "NEWTRANSACTION_TITLE_STAKE": "Ìpín tí a gbà",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ti gba Ẹ̀bùn Masternode"
     },
     "MONTH": {
         "JAN": "Oṣù Kínní",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Àwọn Gómìnà ló máa ń dìbò lórí ìṣúná owó oṣooṣù àti àyípadà blockchain. O lè di Gómìnà nípa títìpa àdéhùn tó tọ́ nínú àdéhùn Ìṣàkóso.",
                 "COLLATERAL": "Atilẹyin ti a nilo",
                 "ENROLL": "Forukọsilẹ",
+                "SELECTAGOVERNOR": "Yan adirẹsi gomina ti o yẹ",
+                "GOVERNORNOTSELECTED": "A kò yan àdírẹ́sì tó yẹ kankan",
                 "CONFIRMENROLL": "O fẹ́rẹ̀ forúkọ sílẹ̀ gẹ́gẹ́ bí Gómìnà. Èyí yóò fi ìṣòwò pẹ̀lú ohun ìní tí a nílò ránṣẹ́ sí àdéhùn ìṣàkóso. O lè yọ ìforúkọsílẹ̀ kúrò nígbàkigbà.",
                 "ISGOVERNORTITLE": "Gomina ti n ṣiṣẹ lọwọ ni iwọ!",
                 "ISGOVERNORDETAIL1": "Àwọn gomina ló ní ẹrù iṣẹ́ láti dìbò lórí ìṣúná owó oṣooṣù àti àwọn àyípadà blockchain.",
                 "ISGOVERNORDETAIL2": "Láti dúró gẹ́gẹ́ bí Gómìnà, o gbọ́dọ̀ kópa nínú ó kéré tán ìdìbò kan ní gbogbo ọjọ́ 30.",
                 "ISGOVERNORDETAIL3": "Tí kò bá sí ohunkóhun láti dìbò lé lórí, o lè fi ọwọ́ tẹ̀síwájú ìforúkọsílẹ̀ rẹ nípa fífi ping kan ránṣẹ́.",
+                "MYGOVERNORADDRESS": "Àsọyé Gómìnà mi",
                 "UNENROLL": "Yọ ìforúkọsílẹ̀ kúrò",
                 "PING": "Fi Píìgì Active ranṣẹ",
                 "LASTPINGTITLE": "Ping tó kẹ́yìn",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ọjọ́",
                 "GOVERNORVOTEMATURITYHOURS": "wákàtí",
                 "GOVERNORVOTEMATURITYSUFFIX": "títí yóò fi dàgbà",
-                "MYGOVERNORADDRESS": "Àsọyé Gómìnà mi",
-                "SELECTAGOVERNOR": "Yan adirẹsi gomina ti o yẹ",
-                "GOVERNORNOTSELECTED": "A kò yan àdírẹ́sì tó yẹ kankan",
                 "NOTFULLYSYNCEDTITLE": "Ipò Gómìnà kò sí",
                 "NOTFULLYSYNCEDDETAIL": "Ipo iforukọsilẹ Gomina rẹ yoo han nigbati blockchain rẹ ba wa ni ibamu patapata.",
                 "DGPMIGRATIONTITLE": "Iṣilọ DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "A ti ṣẹ̀dá àbá rẹ ní àṣeyọrí",
             "ENROLLINGGOVERNOR": "Fíforúkọsílẹ̀ gẹ́gẹ́ bí Gómìnà...",
             "ENROLLEDGOVERNOR": "Iforukọsilẹ rẹ yoo pari ni kete ti a ba ti jẹrisi iṣowo rẹ",
-            "VOTINGONPROPOSAL": "Fífi ìdìbò ìdámọ̀ràn ránṣẹ́",
-            "VOTEDONPROPOSAL": "A o ka ibo re ni kete ti a ba ti fi idi idunadura naa mulẹ.",
             "PINGINGGOVERNOR": "Fifiranṣẹ́ ping...",
             "PINGEDGOVERNOR": "A fi Ping ranṣẹ ni aṣeyọri. A o ṣe imudojuiwọn Gomina rẹ ni kete ti a ba ti jẹrisi iṣowo naa",
+            "VOTINGONPROPOSAL": "Fífi ìdìbò ìdámọ̀ràn ránṣẹ́",
+            "VOTEDONPROPOSAL": "A o ka ibo re ni kete ti a ba ti fi idi idunadura naa mulẹ.",
             "UNENROLLINGGOVERNOR": "Tí a kò bá forúkọ sílẹ̀ fún Gómìnà...",
             "UNENROLLEDGOVERNOR": "A ti fi ìṣòwò ranṣẹ. A o yọ Gomina rẹ kuro ni iforukọsilẹ ni kete ti a ba ti jẹrisi iṣowo naa",
             "GOVERNORNOTMATURE": "Gomina rẹ ko tii dagba to lati ṣe iṣe yii sibẹsibẹ"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Ra Metrix",
+                "SEARCH": "Ìtàn"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ìwọ Firanṣẹ",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Ìtàn Ìṣòwò",
                 "SEARCHBUTTON": "WÁ ÀWÁRÍ",
+                "SEARCHPLACEHOLDER": "Tẹ adirẹsi MRX tabi BTC sii",
                 "TRANSACTIONDATE": "Déètì",
                 "TRANSACTIONTYPE": "Iru TX",
                 "TRANSACTIONAMOUNT": "Iye owo",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Ti jẹrisi",
                 "TRANSACTIONNOTCONFIRMED": "A ko ti fidi rẹ mulẹ",
                 "TRANSACTIONREFUNDED": "A ti san owo pada - Ni isalẹ o kere ju",
-                "AVGSWAPPRICE": "Iye owo Pípàrọ̀pọ̀ lápapọ̀",
-                "SEARCHPLACEHOLDER": "Tẹ adirẹsi MRX tabi BTC sii"
+                "AVGSWAPPRICE": "Iye owo Pípàrọ̀pọ̀ lápapọ̀"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "N Ń ṣe àdírẹ́sì pààrọ̀...",
             "ALREADYHAVEADDRESS": "O ti ni adiresi BTC ti o ni nkan ṣe pẹlu adirẹsi Metrix yii tẹlẹ",
             "NOADDRESS": "O kò tẹ àdírẹ́sì Metrix sí"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Ra Metrix",
-                "SEARCH": "Ìtàn"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Ṣí ìpamọ́",
                 "EMPTYTITLE": "Kò sí àwọn àmì tí a rí síbẹ̀",
                 "EMPTYDETAIL": "Altitude yoo ṣayẹwo ohun ti n ṣawari bulọọki fun awọn ami MRC20 ati MRC721 ti a firanṣẹ si awọn adirẹsi rẹ laifọwọyi, lẹhinna yoo ṣayẹwo ohun gbogbo laaye si node tirẹ. O tun le fi ami kan kun pẹlu ọwọ ti o ba mọ adirẹsi adehun rẹ.",
+                "EMPTYDETAILCHECKINGDISABLED": "A ti pa àyẹ̀wò àmì ìdánimọ̀ láìfọwọ́ṣe, nítorí náà a kò ṣe àyẹ̀wò àdírẹ́sì rẹ fún àmì ìdánimọ̀. Tan-an padà sí òkè yìí, tàbí fi àmì ìdánimọ̀ kún un pẹ̀lú ọwọ́ tí o bá mọ àdírẹ́sì àdéhùn rẹ̀.",
                 "HIDDENTITLE": "Àwọn àmì ìpamọ́",
                 "CONTEXTMENUHIDE": "Fi Àmì Pamọ́",
                 "ITEMSSUFFIX": "àwọn ohun kan",
-                "NONENUMERABLETOOLTIP": "Àkójọ yìí kò ṣe àtìlẹ́yìn fún kíkọ àwọn ohun kan kọ̀ọ̀kan - èyí tí ó ń fi iye tí o ní hàn dípò."
+                "NONENUMERABLETOOLTIP": "Àkójọ yìí kò ṣe àtìlẹ́yìn fún kíkọ àwọn ohun kan kọ̀ọ̀kan - èyí tí ó ń fi iye tí o ní hàn dípò.",
+                "CHECKINGENABLED": "Ṣíṣàyẹ̀wò Náà",
+                "CHECKINGDISABLED": "Ṣíṣíṣẹ́",
+                "CHECKINGENABLEDTOOLTIP": "Ṣíṣàyẹ̀wò àmì ìtọ́kasí ti ń ṣiṣẹ́ - Gíga máa ń ṣàyẹ̀wò àwọn àdírẹ́sì rẹ lẹ́ẹ̀kọ̀ọ̀kan fún àwọn àmì ìtọ́kasí ó sì máa ń mú ìwọ́ntúnwọ̀nsì padà. Tẹ̀ láti pa á.",
+                "CHECKINGDISABLEDTOOLTIP": "Ṣíṣàyẹ̀wò àmì-ìdámọ̀ràn ti pa - tẹ láti tan-an padà.",
+                "CHECKINGDISABLEDNOTICE": "A ti pa àyẹ̀wò àmì ìdánimọ̀ láìfọwọ́ṣe. A kò ṣe àyẹ̀wò àdírẹ́sì rẹ fún àmì ìdánimọ̀ àti pé ìwọ̀n owó kò ní ṣe àtúnṣe. O ṣì lè fi àmì ìdánimọ̀ kún un pẹ̀lú ọwọ́."
             },
             "ADDTOKEN": {
                 "TITLE": "Fi Àmì kún",

@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Vytvoriť účet",
             "HIDEEMPTYACCOUNTS": "Skryť nepomenované prázdne účty"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Prehľad",
+            "TRANSACTIONSTAB": "Transakcie",
+            "ADDRESSTABS": "Adresy"
+        },
         "SEND": {
             "ADDRECIPIENT": "Pridať príjemcu",
             "SEND": "Odoslať",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dátum",
             "TABLECOLUMNS_CONFIRMS": "Potvrdenia",
             "ALL_SELECTUNSELECT": "Prepnúť všetko",
+            "TREEMODE": "Stromový režim",
+            "LISTMODE": "Režim zoznamu",
             "SENDAVAILABLE": "Použite dostupný zostatok",
             "INPUTLOCKED": "Vstup je uzamknutý. Ak ho chcete minúť, budete ho musieť odomknúť.",
             "CONTEXTMENULOCKINPUT": "Zamknúť vstup",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Poplatok po",
             "QUANTITY": "Množstvo",
             "BYTES": "Bajty",
-            "TREEMODE": "Stromový režim",
-            "LISTMODE": "Režim zoznamu",
             "ALERTFEECHANGETITLE": "Zmena poplatku",
             "ALERTFEECHANGECONTENT": "Skutočný transakčný poplatok je vyšší, ako sa očakávalo. Potvrďte nový poplatok:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Vytvoriť zmluvu",
+            "INFO": "Nasaďte inteligentnú zmluvu do siete odoslaním jej skompilovaného bajtkódu. Ide o funkciu základného reťazca – pred nasadením si dvakrát skontrolujte bajtkód a nastavenia plynu, nasadenie sa nedá vrátiť späť.",
+            "FROM": "Od",
+            "BYTECODE": "Bajtkód",
+            "BYTECODEPLACEHOLDER": "Vložte skompilovaný bajtkód zmluvy (hex)",
+            "INVALIDBYTECODE": "Bajtkód musí byť platný hexadecimálny reťazec (0-9, a-f) s párnym počtom znakov.",
+            "GASLIMIT": "Limit plynu",
+            "GASLIMITRANGE": "Rozsah",
+            "GASPRICE": "Cena plynu (MRX za jednotku plynu)",
+            "GASPRICEMIN": "Minimálne",
+            "ESTIMATEDMAXCOST": "Odhadované maximálne náklady",
+            "DEPLOYBUTTON": "Zmluva o nasadení",
+            "INCOMPLETEFORM": "Vyberte adresu odosielateľa, zadajte platný bajtkód a nastavte platný limit/cenu plynu",
+            "HIGHGASPRICETITLE": "Vysoká cena plynu",
+            "HIGHGASPRICEINFO": "Cena plynu, ktorú ste nastavili, je nezvyčajne vysoká. Toto nasadenie by mohlo stáť až:",
+            "DEPLOYING": "Nasadenie zmluvy...",
+            "DEPLOYED": "Nasadenie zmluvy odoslané",
+            "RESULTTITLE": "Výsledok nasadenia",
+            "STATUS": "Stav",
+            "STATUSPENDING": "Čaká sa na potvrdenie...",
+            "STATUSCONFIRMED": "Úspešne nasadené",
+            "STATUSFAILED": "Nasadenie zlyhalo",
+            "TXID": "ID transakcie",
+            "SENDER": "Odosielateľ",
+            "CONTRACTADDRESS": "Adresa zmluvy",
+            "GASUSED": "Použitý plyn",
+            "DONEBUTTON": "Hotovo",
+            "DEPLOYANOTHERBUTTON": "Nasadiť ďalšieho"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transakcie",
+            "COPYBLOCKHASH": "Kopírovať hash bloku",
+            "COPYTXID": "Kopírovať ID transakcie",
+            "COPYACCOUNT": "Kopírovať názov účtu",
+            "COPYADDRESS": "Kopírovať adresu",
+            "COPYAMOUNT": "Kopírovať množstvo",
+            "COPTBLOCKINDEX": "Kopírovať index bloku",
+            "EXPLORER": "Otvoriť v Prieskumníkovi blokov"
         },
         "STAKING": {
             "UNLOCK": "Odomknúť pre stávkovanie",
@@ -68,13 +113,13 @@
             "IP": "IP adresa",
             "ADDRESS": "Adresa",
             "ENABLED": "Povolené",
-            "STARTBUTTON": "Spustiť lokálne",
-            "STARTALIASBUTTON": "Spustiť alias",
-            "STARTALLBUTTON": "Spustiť všetko",
             "NOMASTERNODES": "Nemáte žiadne masternody",
             "NOMNOUTPUTS": "Nenašli sa žiadne výstupy z Masternode. Ak chcete spustiť lokálny Masternode, pošlite presne 2, 5, 25, 50 alebo 100 miliónov mincí na adresu vášho Masternode a počkajte na 15 potvrdení.",
+            "STARTBUTTON": "Spustiť lokálne",
             "STOPBUTTON": "Zastaviť miestne",
+            "STARTALIASBUTTON": "Spustiť alias",
             "STOPALIASBUTTON": "Zastaviť alias",
+            "STARTALLBUTTON": "Spustiť všetko",
             "ADDREMOTE": "Pridať vzdialený masternode",
             "REMOVEMN": "Odstrániť masternode",
             "ADDLOCAL": "Nastavenie lokálneho masternodu",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Všeobecné",
                 "COREVERSION": "Základná verzia",
+                "ALTITUDEVERSION": "Verzia pre nadmorskú výšku",
                 "PROTOCOLVERSION": "Verzia protokolu",
                 "WALLETVERSION": "Verzia súboru Wallet.dat",
                 "NETWORKTITLE": "Sieť",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Počet masternodov",
                 "BLOCKCHAINTITLE": "Blokový reťazec",
                 "NUMBERBLOCKS": "Aktuálny počet blokov",
-                "BESTBLOCKTTIME": "Posledný čas bloku",
-                "ALTITUDEVERSION": "Verzia pre nadmorskú výšku"
+                "BESTBLOCKTTIME": "Posledný čas bloku"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Vitajte v konzole Metrix Core RPC. Pre prehľad dostupných príkazov napíšte help.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Vyberte jazyk"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transakcie",
-            "COPYBLOCKHASH": "Kopírovať hash bloku",
-            "COPYTXID": "Kopírovať ID transakcie",
-            "COPYACCOUNT": "Kopírovať názov účtu",
-            "COPYADDRESS": "Kopírovať adresu",
-            "COPYAMOUNT": "Kopírovať množstvo",
-            "COPTBLOCKINDEX": "Kopírovať index bloku",
-            "EXPLORER": "Otvoriť v Prieskumníkovi blokov"
+        "CURRENCY": {
+            "TITLE": "Vyberte zobrazovanú menu"
         },
         "EXPLORER": {
             "TITLE": "Prieskumník blokov",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Sieť",
             "WINDOTAB": "Okno",
+            "BACKUPTAB": "Záloha",
+            "EXPLORERTAB": "Prieskumník",
+            "DEVELOPERTAB": "Vývojár",
             "NETWORK": {
                 "PROXY": "Pripojenie cez proxy SOCKS5",
                 "PROXYIP": "IP adresa proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimalizovať pri zatvorení",
                 "BEHAVIOURTITLE": "Správanie systémovej lišty a okna"
             },
-            "BACKUPTAB": "Záloha",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatické zálohovanie",
                 "ENABLED": "Automaticky zálohovať súbor wallet.dat podľa plánu",
                 "ENABLEDINFO": "Vytvára novú zálohu súboru vašej peňaženky podľa plánu, takže v prípade problémov máte vždy k dispozícii najnovšiu kópiu.",
+                "INTERVALLABEL": "Zálohovať každých (dní)",
                 "LASTBACKUP": "Posledná záloha:",
                 "NEVERBACKEDUP": "Zatiaľ nebola vykonaná žiadna automatická záloha.",
                 "BACKUPNOWBUTTON": "Zálohovať teraz",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Obnoviť na predvolené",
                 "PRUNETITLE": "História záloh",
                 "PRUNEINFO": "Staršie automatické zálohy sa odstránia, aby sa tento priečinok nerozrastal donekonečna – zachovajú sa iba tie najnovšie, ktoré sú uvedené nižšie.",
-                "KEEPCOUNTLABEL": "Nechať posledný",
-                "INTERVALLABEL": "Zálohovať každých (dní)"
+                "KEEPCOUNTLABEL": "Nechať posledný"
             },
-            "EXPLORERTAB": "Prieskumník",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Prieskumník blokov",
                 "BLOCKEXPLORERINFO": "Stránka sa otvorila pri zobrazení transakcie v Prieskumníkovi blokov (napr. kliknutie pravým tlačidlom myši na transakciu > Zobraziť v Prieskumníkovi).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Hlavná sieť",
                 "TESTNET": "Testovacia sieť",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Režim pre vývojárov",
+                "DEVMODEINFO": "Predvolene vypnuté a určené len pre vývojárov. Povolením tejto možnosti sa zobrazia možnosti na prepísanie pripojenia RPC – štandardní používatelia by mali túto možnosť nechať vypnutú.",
+                "DEVMODELABEL": "Povoliť režim pre vývojárov",
+                "WARNING": "Tieto nastavenia slúžia len na vývojové účely. Ich zmena môže úplne zabrániť pripojeniu peňaženky k démonovi – používajte ich iba v prípade, že viete, čo robíte.",
+                "RPCHOSTTITLE": "RPC pripojenie",
+                "RPCHOSTINFO": "Štandardne sa Altitude pripája k démonovi, ktorého sám spravuje na tomto počítači (127.0.0.1). Prepísaním týchto nastavení sa môže pripojiť k inému démonovi – napríklad k vzdialenej inštancii regtest bez nutnosti lokálneho spustenia. Ak sa pripojenie podarí, Altitude nestiahne ani nespustí svoj vlastný lokálny démon. Cieľový démon rpcallowip musí toto pripojenie povoľovať a nižšie uvedené heslo rpcuser/rpcpassword sa musí zhodovať s jeho konfiguráciou. Účinkuje okamžite, reštart nie je potrebný.",
+                "RPCHOSTLABEL": "Hostiteľ RPC",
+                "RPCPORTLABEL": "RPC port",
+                "RPCUSERLABEL": "Používateľské meno RPC",
+                "RPCPASSWORDLABEL": "Heslo RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Prehľad",
-            "TRANSACTIONSTAB": "Transakcie",
-            "ADDRESSTABS": "Adresy"
-        },
-        "CURRENCY": {
-            "TITLE": "Vyberte zobrazovanú menu"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Prístrojová doska",
             "SEND": "Odoslať",
+            "CREATECONTRACT": "Vytvoriť zmluvu",
             "RECEIVE": "Prijať",
             "TRANSACTIONS": "Transakcie",
             "STAKING": "Vkladanie",
             "MASTERNODES": "Masternody",
+            "EXPLORER": "Prieskumník blokov",
             "SYNC": {
                 "CONNECTING": "Pripájanie",
                 "NOBLOCKS": "Čakanie na bloky",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Peňaženka momentálne nestákuje",
                 "MASTERNODEON": "Masternode je momentálne spustený",
                 "MASTERNODEOFF": "Masternode momentálne nie je spustený"
-            },
-            "EXPLORER": "Prieskumník blokov"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Zadajte adresu stránky web3",
+            "GOBUTTON": "Ísť",
+            "QUICKLAUNCH": "Rýchle spustenie",
+            "DEVTOOLS": "Otvoriť nástroje pre vývojárov",
+            "ADDLINK": "Pridať odkaz",
+            "LINKNAMEPLACEHOLDER": "Meno",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Uložiť",
+            "CANCEL": "Zrušiť",
+            "REMOVE": "Odstrániť",
+            "REMOVECONFIRM": "Odstrániť tento rýchly odkaz?",
+            "LINKEXISTS": "Tento odkaz sa už nachádza vo vašom zozname rýchleho spustenia",
+            "LINKINVALID": "Zadajte platnú adresu stránky",
+            "LINKNETWORKLABEL": "Sieť",
+            "LOADFAILED": "Nepodarilo sa načítať stránku",
+            "SECURESITE": "Pripojenie je zabezpečené - platný SSL certifikát",
+            "INSECURESITE": "Pripojenie nie je zabezpečené",
+            "INVALIDCERTSITE": "Pripojenie nie je súkromné – neplatný alebo nedôveryhodný SSL certifikát"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Zadajte prístupovú frázu k Peňaženke",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Pre Metrix Core je k dispozícii aktualizácia. Chcete ju teraz nainštalovať?",
             "WALLETUPDATETITLE": "Aktualizácia nadmorskej výšky je k dispozícii",
             "WALLETUPDATEINFO": "Pre Altitude je k dispozícii aktualizácia. Chcete si ju stiahnuť teraz?",
+            "WALLETUPDATEREADYTITLE": "Aktualizácia nadmorskej výšky je pripravená",
+            "WALLETUPDATEREADYINFO": "Aktualizácia bola stiahnutá. Reštartovať Altitude a nainštalovať ju?",
+            "WALLETUPDATERESTARTBUTTON": "Reštartovať a nainštalovať",
+            "WALLETUPDATELATERBUTTON": "Neskôr",
             "CLIENTUPDATEBUTTON": "Aktualizácia",
             "CLIENTUPDATECANCELBUTTON": "Neaktualizovať",
             "CLIENTUPDATESKIPBUTTON": "Preskočiť túto aktualizáciu",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Všetky predchádzajúce zálohy súboru peňaženky, ktoré ste si vytvorili, by mali byť nahradené novovytvoreným, zašifrovaným súborom peňaženky. Z bezpečnostných dôvodov sa predchádzajúce zálohy nešifrovaného súboru peňaženky stanú nepoužiteľnými hneď, ako začnete používať novú, zašifrovanú peňaženku.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Jadro Metrixu sa neočakávane zastavilo",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Vyskytol sa problém s Metrix Core, ktorý spôsobil jeho ukončenie. Odporúča sa skontrolovať súbor debug.log, či neobsahuje nejaké problémy.",
+            "CLIENTUNKNOWNERRORTITLE": "Chyba komunikácie jadra Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Vyskytol sa problém s komunikáciou s Metrix Core. Odporúča sa skontrolovať súbor debug.log, či neobsahuje problémy.",
+            "BOOTSTRAPFAILEDTITLE": "Zlyhalo spustenie jadra Metrixu",
+            "BOOTSTRAPFAILEDINFO": "Pri bootovaní Metrix Core sa vyskytol problém. Odporúča sa skontrolovať súbor denníka Altitude, či neobsahuje problémy.",
+            "BOOTSTRAPOFFERTITLE": "Peňaženka je výrazne zastaralá",
+            "BOOTSTRAPOFFERINFO": "K dispozícii je najnovší bootstrap, ktorý dokáže rýchlo aktualizovať Metrix Core. Pokračovanie v bežnej synchronizácii môže trvať niekoľko dní, pretože vaša peňaženka si musí stiahnuť a overiť každý blok, ktorý vynechala.",
+            "BOOTSTRAPOFFERBUTTON": "Stiahnuť Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Pokračovať v normálnej synchronizácii",
+            "BOOTSTRAPSPACEINFO": "Na stiahnutie a rozbalenie bootstrapu nie je dostatok voľného miesta na disku. Požadované: {required}, Dostupné: {free}. Uvoľnite miesto a skúste to znova.",
+            "STARTUPFAILEDTITLE": "Spustenie jadra Metrix zlyhalo",
+            "STARTUPFAILEDINFO": "Pri spustení Metrix Core sa vyskytla chyba. Odporúča sa skontrolovať súbor denníka nadmorskej výšky, či neobsahuje problémy.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nástroje na obnovu",
             "CLIENTINVALIDCONFIGTITLE": "Neplatná konfigurácia súboru metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Váš súbor metrix.conf má neplatné nastavenie hlavného uzla, ktoré spôsobí okamžité ukončenie aplikácie Metrix Core. Skontrolujte tento súbor.",
             "ADDREMOTEMNTITLE": "Pridať vzdialený masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Súkromný kľúč hlavného uzla",
             "ADDREMOTEMNTXHASH": "Hash Masternode TRX",
             "ADDREMOTEMNTXINDEX": "Index Masternode TRX",
-            "BOOTSTRAPFAILEDTITLE": "Zlyhalo spustenie jadra Metrixu",
-            "BOOTSTRAPFAILEDINFO": "Pri bootovaní Metrix Core sa vyskytol problém. Odporúča sa skontrolovať súbor denníka Altitude, či neobsahuje problémy.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nástroje na obnovu",
-            "STARTUPFAILEDTITLE": "Spustenie jadra Metrix zlyhalo",
-            "STARTUPFAILEDINFO": "Pri spustení Metrix Core sa vyskytla chyba. Odporúča sa skontrolovať súbor denníka nadmorskej výšky, či neobsahuje problémy.",
-            "CLIENTUNKNOWNERRORTITLE": "Chyba komunikácie jadra Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Vyskytol sa problém s komunikáciou s Metrix Core. Odporúča sa skontrolovať súbor debug.log, či neobsahuje problémy.",
             "UNENROLLGOVERNORTITLE": "Potvrdiť odhlásenie guvernéra",
             "UNENROLLGOVERNORCONTENT": "Naozaj chcete odhlásiť svojho guvernéra? Už nebudete môcť hlasovať o správe reťazca.",
-            "WALLETUPDATEREADYTITLE": "Aktualizácia nadmorskej výšky je pripravená",
-            "WALLETUPDATEREADYINFO": "Aktualizácia bola stiahnutá. Reštartovať Altitude a nainštalovať ju?",
-            "WALLETUPDATERESTARTBUTTON": "Reštartovať a nainštalovať",
-            "WALLETUPDATELATERBUTTON": "Neskôr",
             "DAPPCONNECTTITLE": "Pripojiť sa k stránke",
             "DAPPCONNECTINFO": "Táto stránka sa chce pripojiť k vašej peňaženke a zobraziť si vašu adresu a zostatok.",
             "DAPPCONNECTBUTTON": "Pripojiť",
+            "DAPPCONNECTADDRESSLABEL": "Adresa",
+            "DAPPAPPROVEBUTTON": "Schváliť",
             "DAPPREJECTBUTTON": "Odmietnuť",
             "DAPPSENDTITLE": "Žiadosť o zmluvnú transakciu",
             "DAPPSENDINFO": "Táto stránka žiada o odoslanie zmluvnej transakcie z vašej peňaženky.",
-            "DAPPSIGNTITLE": "Žiadosť o podpísanie správy",
-            "DAPPSIGNINFO": "Táto stránka žiada o podpísanie správy s vašou adresou peňaženky.",
-            "DAPPNOTREADY": "Zatiaľ sa nedá pripojiť k stránke – Metrix Core sa stále spúšťa.",
-            "DAPPNOWALLET": "Nedá sa pripojiť k stránke - nie je k dispozícii žiadna adresa peňaženky.",
-            "DAPPAPPROVEBUTTON": "Schváliť",
-            "DAPPCONNECTADDRESSLABEL": "Adresa",
             "DAPPSENDSITELABEL": "Stránka",
             "DAPPSENDCONTRACTLABEL": "Adresa zmluvy",
             "DAPPSENDAMOUNTLABEL": "Suma",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximálny sieťový poplatok",
             "DAPPSENDMAXTOTALLABEL": "Maximálny súčet",
             "DAPPSENDDATALABEL": "Údaje o zmluve",
+            "DAPPSIGNTITLE": "Žiadosť o podpísanie správy",
+            "DAPPSIGNINFO": "Táto stránka žiada o podpísanie správy s vašou adresou peňaženky.",
             "DAPPSIGNMESSAGELABEL": "Správa",
-            "BOOTSTRAPOFFERTITLE": "Peňaženka je výrazne zastaralá",
-            "BOOTSTRAPOFFERINFO": "K dispozícii je najnovší bootstrap, ktorý dokáže rýchlo aktualizovať Metrix Core. Pokračovanie v bežnej synchronizácii môže trvať niekoľko dní, pretože vaša peňaženka si musí stiahnuť a overiť každý blok, ktorý vynechala.",
-            "BOOTSTRAPOFFERBUTTON": "Stiahnuť Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Pokračovať v normálnej synchronizácii",
-            "BOOTSTRAPSPACEINFO": "Na stiahnutie a rozbalenie bootstrapu nie je dostatok voľného miesta na disku. Požadované: {required}, Dostupné: {free}. Uvoľnite miesto a skúste to znova."
+            "DAPPNOTREADY": "Zatiaľ sa nedá pripojiť k stránke – Metrix Core sa stále spúšťa.",
+            "DAPPNOWALLET": "Nedá sa pripojiť k stránke - nie je k dispozícii žiadna adresa peňaženky."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresár",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Aktuálna sieť"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Zadajte adresu stránky web3",
-            "GOBUTTON": "Ísť",
-            "QUICKLAUNCH": "Rýchle spustenie",
-            "DEVTOOLS": "Otvoriť nástroje pre vývojárov",
-            "ADDLINK": "Pridať odkaz",
-            "LINKNAMEPLACEHOLDER": "Meno",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Uložiť",
-            "CANCEL": "Zrušiť",
-            "REMOVE": "Odstrániť",
-            "REMOVECONFIRM": "Odstrániť tento rýchly odkaz?",
-            "LINKEXISTS": "Tento odkaz sa už nachádza vo vašom zozname rýchleho spustenia",
-            "LINKINVALID": "Zadajte platnú adresu stránky",
-            "LINKNETWORKLABEL": "Sieť",
-            "LOADFAILED": "Nepodarilo sa načítať stránku",
-            "SECURESITE": "Pripojenie je zabezpečené - platný SSL certifikát",
-            "INSECURESITE": "Pripojenie nie je zabezpečené",
-            "INVALIDCERTSITE": "Pripojenie nie je súkromné – neplatný alebo nedôveryhodný SSL certifikát"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Záložná peňaženka...",
             "SIGNMESSAGE": "Podpísať správu...",
             "VERIFYMESSAGE": "Overiť správu...",
-            "LOCALE": "Jazyk...",
-            "RESTARTCORE": "Reštartujte jadro Metrixu",
-            "EXIT": "VÝCHOD",
             "OPTIONS": "Možnosti...",
+            "LOCALE": "Jazyk...",
             "CURRENCIES": "Zobraziť menu...",
-            "ALTITUDEREFRESH": "Obnoviť údaje o nadmorskej výške"
+            "RESTARTCORE": "Reštartujte jadro Metrixu",
+            "ALTITUDEREFRESH": "Obnoviť údaje o nadmorskej výške",
+            "EXIT": "VÝCHOD"
         },
         "ENCRYPT": {
             "TITLE": "Šifrovať",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Celkový zostatok",
+        "SPENDABLEBALANCE": "Minuteľný zostatok",
+        "PENDINGBALANCE": "Čakajúci zostatok",
         "CANCELBUTTON": "Zrušiť",
         "DONEBUTTON": "Hotovo",
         "OKBUTTON": "V poriadku",
+        "ACCEPTBUTTON": "Prijať",
         "CLEARALLBUTTON": "Vymazať všetko",
         "ENTERACCOUNTLABEL": "Zadajte štítok pre túto adresu",
         "ENTERADDRESSLABEL": "Zadajte adresu Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Zoradiť podľa",
         "SEARCH": "Hľadať",
         "FEE": "Poplatok",
-        "ACCEPTBUTTON": "Prijať",
         "CONFIRMED": "Potvrdené",
         "UNCONFIRMED": "Nepotvrdené",
-        "PENDINGBALANCE": "Čakajúci zostatok",
-        "SPENDABLEBALANCE": "Minuteľný zostatok",
         "SAVEBUTTON": "Uložiť"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Reštartovanie jadra Metrixu...",
         "BOOTSTRAPPING": "Sťahovanie bootstrapu...",
         "BOOTSTRAPEXTRACTING": "Extrahovanie bootstrapu...",
-        "TIMEREMAINING": "zostávajúce:"
+        "TIMEREMAINING": "zostávajúce:",
+        "DEVRPCOVERRIDEACTIVE": "Je nastavené prepísanie RPC pripojenia pre vývojárov (Možnosti > Vývojár) a nereaguje. Zrušte jeho začiarknutie, aby ste sa normálne znova pripojili k lokálnemu démonovi.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Vymazať prepísanie RPC a znova pripojiť"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nový účet bol úspešne vytvorený",
         "ADDRESSCOPIEDCLIPBOARD": "Adresa skopírovaná do schránky",
+        "COPIEDCLIPBOARD": "Skopírované do schránky",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcie skopírované do schránky",
         "EMPTYFIELDS": "Vyplňte, prosím, všetky polia",
         "NOUPDATE": "Žiadna aktualizácia nie je k dispozícii",
         "WALLETBACKEDUP": "Zálohovanie peňaženky bolo úspešné",
+        "WALLETBACKUPFAILED": "Automatické zálohovanie peňaženky zlyhalo – skontrolujte umiestnenie zálohy a dostupné miesto na disku.",
         "PASSPHRASEMISMATCH": "Zadané prístupové frázy sa nezhodujú",
         "CHECKINGUPDATE": "Kontrola aktualizácií...",
         "CHECKINGUPDATEFAILED": "Nepodarilo sa skontrolovať aktualizácie. Skontrolujte sieť.",
+        "WALLETUPDATEDOWNLOADING": "Sťahovanie aktualizácie...",
         "SENDINGEXCEEDSBALANCE": "Suma, ktorú posielate, prevyšuje váš zvolený zostatok",
         "MISSINGCHANGEADDRESS": "Musíte zadať zmenu adresy",
         "MISSINGDESTINATIONADDRESS": "Musíte zadať cieľovú adresu",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Šifrovanie peňaženky...",
         "CHANGINGPASSPHARASE": "Zmena prístupovej frázy...",
         "STARTINGMASTERNODE": "Spúšťanie masternodu...",
+        "STOPPINGMASTERNODE": "Zastavuje sa masternode...",
         "SENDINGTRANSACTION": "Odosielanie transakcie...",
         "SIGNINGMESSAGE": "Podpisovanie správy...",
         "SIGNEDMESSAGE": "Správa podpísaná",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Odomykanie peňaženky...",
         "TRANSACTIONMISMATCH": "Chyba transakcie. Skúste to znova.",
         "MINIMUMCONFIRMATIONS": "Všetky vstupy vyžadujú aspoň jedno potvrdenie pred zaplatením.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcie skopírované do schránky",
-        "STOPPINGMASTERNODE": "Zastavuje sa masternode...",
         "FAILEDTOWRITECONFIG": "Pri zápise do súboru metrix.conf sa vyskytol problém. Skontrolujte, či súbor existuje a či má Altitude oprávnenia na zápis.",
         "NOPUBLICUP": "Nenašla sa žiadna verejná IP adresa. Skontrolujte internetové pripojenie a reštartujte Altitude.",
         "CONFIGURINGLOCALMN": "Konfigurácia lokálneho masternodu...",
         "REPORTINGISSUE": "Získavajú sa diagnostické informácie... Tieto informácie budú skopírované do schránky.",
-        "WALLETUPDATEDOWNLOADING": "Sťahovanie aktualizácie...",
-        "WALLETBACKUPFAILED": "Automatické zálohovanie peňaženky zlyhalo – skontrolujte umiestnenie zálohy a dostupné miesto na disku.",
         "EXPLORERURLSAVED": "URL adresa prieskumníka bola uložená",
         "EXPLORERURLRESET": "URL adresa prieskumníka bola vrátená na predvolenú hodnotu",
         "EXPLORERURLINVALID": "Toto nie je platná URL adresa http(s)",
-        "EXPLORERURLUNREACHABLE": "Nepodarilo sa získať prístup k tejto URL adrese – skontrolujte ju a skúste to znova."
+        "EXPLORERURLUNREACHABLE": "Nepodarilo sa získať prístup k tejto URL adrese – skontrolujte ju a skúste to znova.",
+        "DEVRPCHOSTSAVED": "Hostiteľ RPC bol uložený",
+        "DEVRPCHOSTRESET": "Hostiteľ RPC sa vrátil na predvolené nastavenie (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Prijaté mince",
+        "NEWTRANSACTION_TITLE_STAKE": "Prijatý vklad",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Získaná odmena za Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Niekoľko sekúnd",
@@ -533,11 +587,6 @@
         "MONTHS": "mesiace",
         "AYEAR": "Rok",
         "YEARS": "roky"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Prijaté mince",
-        "NEWTRANSACTION_TITLE_STAKE": "Prijatý vklad",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Získaná odmena za Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Členovia guvernérskej rady sú zodpovední za hlasovanie o mesačných rozpočtoch a zmenách v blockchaine. Členom guvernérskej rady sa môžete stať uzamknutím správneho kolaterálu v zmluve o správe.",
                 "COLLATERAL": "Požadovaná zábezpeka",
                 "ENROLL": "Zaregistrovať sa",
+                "SELECTAGOVERNOR": "Vyberte si vhodnú adresu guvernéra",
+                "GOVERNORNOTSELECTED": "Nebola vybratá žiadna vhodná adresa",
                 "CONFIRMENROLL": "Chystáte sa zaregistrovať ako správca. Týmto sa do zmluvy o správe odošle transakcia s požadovaným zabezpečením. Z registrácie sa môžete kedykoľvek odhlásiť.",
                 "ISGOVERNORTITLE": "Ste aktívny guvernér!",
                 "ISGOVERNORDETAIL1": "Guvernéri sú zodpovední za hlasovanie o mesačných rozpočtoch a zmenách blockchainu.",
                 "ISGOVERNORDETAIL2": "Ak chcete zostať guvernérom, musíte sa zúčastniť aspoň jedného hlasovania každých 30 dní.",
                 "ISGOVERNORDETAIL3": "Ak nie je o čom hlasovať, môžete v registrácii pokračovať manuálne odoslaním aktívneho pingu.",
+                "MYGOVERNORADDRESS": "Môj prejav guvernéra",
                 "UNENROLL": "Odhlásiť sa",
                 "PING": "Odoslať aktívny ping",
                 "LASTPINGTITLE": "Posledný ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dni",
                 "GOVERNORVOTEMATURITYHOURS": "hodiny",
                 "GOVERNORVOTEMATURITYSUFFIX": "kým nedospeje",
-                "MYGOVERNORADDRESS": "Môj prejav guvernéra",
-                "SELECTAGOVERNOR": "Vyberte si vhodnú adresu guvernéra",
-                "GOVERNORNOTSELECTED": "Nebola vybratá žiadna vhodná adresa",
                 "NOTFULLYSYNCEDTITLE": "Status guvernéra nie je k dispozícii",
                 "NOTFULLYSYNCEDDETAIL": "Stav vašej registrácie guvernéra sa zobrazí, keď bude váš blockchain úplne synchronizovaný.",
                 "DGPMIGRATIONTITLE": "Migrácia DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Váš návrh bol úspešne vytvorený",
             "ENROLLINGGOVERNOR": "Registrácia na post guvernéra...",
             "ENROLLEDGOVERNOR": "Vaša registrácia bude dokončená po potvrdení transakcie.",
-            "VOTINGONPROPOSAL": "Odosielanie návrhu hlasovania",
-            "VOTEDONPROPOSAL": "Váš hlas bude započítaný po potvrdení transakcie.",
             "PINGINGGOVERNOR": "Odosielanie pingu...",
             "PINGEDGOVERNOR": "Ping bol úspešne odoslaný. Váš guvernér bude aktualizovaný po potvrdení transakcie.",
+            "VOTINGONPROPOSAL": "Odosielanie návrhu hlasovania",
+            "VOTEDONPROPOSAL": "Váš hlas bude započítaný po potvrdení transakcie.",
             "UNENROLLINGGOVERNOR": "Odhlasovanie guvernéra...",
             "UNENROLLEDGOVERNOR": "Transakcia odoslaná. Váš guvernér bude odhlásený po potvrdení transakcie.",
             "GOVERNORNOTMATURE": "Váš guvernér ešte nie je dostatočne zrelý na vykonanie tejto akcie"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Kúpiť Metrix",
+                "SEARCH": "História"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Posielate",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "História transakcií",
                 "SEARCHBUTTON": "HĽADAŤ",
+                "SEARCHPLACEHOLDER": "Zadajte adresu MRX alebo BTC",
                 "TRANSACTIONDATE": "Dátum",
                 "TRANSACTIONTYPE": "Typ vysielača",
                 "TRANSACTIONAMOUNT": "Suma",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Potvrdené",
                 "TRANSACTIONNOTCONFIRMED": "Nepotvrdené",
                 "TRANSACTIONREFUNDED": "Vrátená suma – pod minimálnou hodnotou",
-                "AVGSWAPPRICE": "Priemerná swapová cena",
-                "SEARCHPLACEHOLDER": "Zadajte adresu MRX alebo BTC"
+                "AVGSWAPPRICE": "Priemerná swapová cena"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generovanie swap adresy...",
             "ALREADYHAVEADDRESS": "K tejto adrese Metrix už máte priradenú BTC adresu",
             "NOADDRESS": "Nezadali ste adresu Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Kúpiť Metrix",
-                "SEARCH": "História"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Zobraziť",
                 "EMPTYTITLE": "Zatiaľ neboli nájdené žiadne tokeny",
                 "EMPTYDETAIL": "Altitude automaticky kontroluje prieskumníka blokov, či neobsahuje tokeny MRC20 a MRC721 odoslané na vaše adresy, a potom všetko overuje naživo oproti vášmu vlastnému uzlu. Token môžete pridať aj manuálne, ak poznáte jeho zmluvnú adresu.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatická kontrola tokenov je vypnutá, takže vaše adresy sa nekontrolujú na prítomnosť tokenov. Znova ju zapnite vyššie alebo pridajte token manuálne, ak poznáte jeho zmluvnú adresu.",
                 "HIDDENTITLE": "Skryté žetóny",
                 "CONTEXTMENUHIDE": "Skryť token",
                 "ITEMSSUFFIX": "položka(y)",
-                "NONENUMERABLETOOLTIP": "Táto kolekcia nepodporuje zobrazenie jednotlivých položiek – namiesto toho zobrazuje, koľko ich vlastníte."
+                "NONENUMERABLETOOLTIP": "Táto kolekcia nepodporuje zobrazenie jednotlivých položiek – namiesto toho zobrazuje, koľko ich vlastníte.",
+                "CHECKINGENABLED": "Kontrola",
+                "CHECKINGDISABLED": "Odškrtávanie",
+                "CHECKINGENABLEDTOOLTIP": "Kontrola tokenov je zapnutá – Altitude pravidelne kontroluje vaše adresy, či neobsahujú tokeny, a obnovuje zostatky. Kliknutím ju vypnete.",
+                "CHECKINGDISABLEDTOOLTIP": "Kontrola tokenov je vypnutá – kliknutím ju znova zapnete.",
+                "CHECKINGDISABLEDNOTICE": "Automatická kontrola tokenov je vypnutá. Vaše adresy sa nekontrolujú a nehľadajú tokeny a zostatky sa neaktualizujú. Token môžete stále pridať manuálne."
             },
             "ADDTOKEN": {
                 "TITLE": "Pridať token",

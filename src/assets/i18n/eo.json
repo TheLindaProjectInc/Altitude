@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Krei Konton",
             "HIDEEMPTYACCOUNTS": "Kaŝi Sennomitajn Malplenajn Kontojn"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Superrigardo",
+            "TRANSACTIONSTAB": "Transakcioj",
+            "ADDRESSTABS": "Adresoj"
+        },
         "SEND": {
             "ADDRECIPIENT": "Aldoni Ricevanton",
             "SEND": "Sendi",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dato",
             "TABLECOLUMNS_CONFIRMS": "Konfirmoj",
             "ALL_SELECTUNSELECT": "Ŝalti Ĉion",
+            "TREEMODE": "Arba Reĝimo",
+            "LISTMODE": "Lista Reĝimo",
             "SENDAVAILABLE": "Uzu disponeblan bilancon",
             "INPUTLOCKED": "La enigo estas ŝlosita. Vi devos malŝlosi ĉi tiun enigon por elspezi ĝin.",
             "CONTEXTMENULOCKINPUT": "Ŝlosi enigon",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Post Kotizo",
             "QUANTITY": "Kvanto",
             "BYTES": "Bajtoj",
-            "TREEMODE": "Arba Reĝimo",
-            "LISTMODE": "Lista Reĝimo",
             "ALERTFEECHANGETITLE": "Ŝanĝo de Kotizoj",
             "ALERTFEECHANGECONTENT": "La efektiva transakcia kotizo estas pli alta ol atendita. Bonvolu konfirmi la novan kotizon:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Krei Kontrakton",
+            "INFO": "Deploju inteligentan kontrakton al la reto sendante ĝian kompilitan bajtkodon. Ĉi tio estas kerna ĉena funkcio - duoble kontrolu viajn bajtkodojn kaj gasajn agordojn antaŭ ol deploji, la deplojo ne povas esti malfarita.",
+            "FROM": "De",
+            "BYTECODE": "Bajtkodo",
+            "BYTECODEPLACEHOLDER": "Algluu la kompilitan kontraktan bajtkodon (deksesuma)",
+            "INVALIDBYTECODE": "Bajtkodo devas esti valida deksesuma ĉeno (0-9, a-f) kun para nombro da signoj",
+            "GASLIMIT": "Gasa Limo",
+            "GASLIMITRANGE": "Areo",
+            "GASPRICE": "Prezo de gaso (MRX por gasunuo)",
+            "GASPRICEMIN": "Minimumo",
+            "ESTIMATEDMAXCOST": "Taksa maksimuma kosto",
+            "DEPLOYBUTTON": "Deploju Kontrakton",
+            "INCOMPLETEFORM": "Bonvolu elekti sendintadreson, enigi validan bajtkodon, kaj agordi validan benzinlimon/prezon.",
+            "HIGHGASPRICETITLE": "Alta Benzinprezo",
+            "HIGHGASPRICEINFO": "La prezo de benzino, kiun vi fiksis, estas nekutime alta. Ĉi tiu deplojo povus kosti ĝis:",
+            "DEPLOYING": "Deplojante kontrakton...",
+            "DEPLOYED": "Kontrakta deplojo sendita",
+            "RESULTTITLE": "Deploja Rezulto",
+            "STATUS": "Statuso",
+            "STATUSPENDING": "Atendante konfirmon...",
+            "STATUSCONFIRMED": "Sukcese deplojita",
+            "STATUSFAILED": "Deplojo malsukcesis",
+            "TXID": "Transakcia ID",
+            "SENDER": "Sendanto",
+            "CONTRACTADDRESS": "Kontrakta Adreso",
+            "GASUSED": "Uzita gaso",
+            "DONEBUTTON": "Finita",
+            "DEPLOYANOTHERBUTTON": "Deploju Alian"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transakcioj",
+            "COPYBLOCKHASH": "Kopii Blokan Haŝon",
+            "COPYTXID": "Kopii Transakcian ID-on",
+            "COPYACCOUNT": "Kopii Konton Nomon",
+            "COPYADDRESS": "Kopii Adreson",
+            "COPYAMOUNT": "Kopiu Kvanton",
+            "COPTBLOCKINDEX": "Kopii Blokan Indekson",
+            "EXPLORER": "Malfermi en Bloka Esplorilo"
         },
         "STAKING": {
             "UNLOCK": "Malŝlosi Por Vetado",
@@ -68,13 +113,13 @@
             "IP": "IP-adreso",
             "ADDRESS": "Adreso",
             "ENABLED": "Ebligita",
-            "STARTBUTTON": "Komencu Loke",
-            "STARTALIASBUTTON": "Komencu Kaŝnomon",
-            "STARTALLBUTTON": "Komencu Ĉion",
             "NOMASTERNODES": "Vi ne havas iujn ajn majstrajn nodojn",
             "NOMNOUTPUTS": "Neniuj eligoj de la Masternodo trovitaj. Por funkciigi lokan Masternodon, sendu ekzakte 2, 5, 25, 50 aŭ 100 milionojn da moneroj al via Masternoda adreso kaj atendu 15 konfirmojn.",
+            "STARTBUTTON": "Komencu Loke",
             "STOPBUTTON": "Haltu Lokan",
+            "STARTALIASBUTTON": "Komencu Kaŝnomon",
             "STOPALIASBUTTON": "Haltigu Kaŝnomon",
+            "STARTALLBUTTON": "Komencu Ĉion",
             "ADDREMOTE": "Aldoni Foran Majstronodon",
             "REMOVEMN": "Forigi Majstronodon",
             "ADDLOCAL": "Agordi Lokan Majstronodon",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Generalo",
                 "COREVERSION": "Kerna Versio",
+                "ALTITUDEVERSION": "Altituda Versio",
                 "PROTOCOLVERSION": "Protokola Versio",
                 "WALLETVERSION": "Monujo.dat Versio",
                 "NETWORKTITLE": "Reto",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Nombro de Majstronodoj",
                 "BLOCKCHAINTITLE": "Bloka Ĉeno",
                 "NUMBERBLOCKS": "Nuna nombro da blokoj",
-                "BESTBLOCKTTIME": "Lasta bloka tempo",
-                "ALTITUDEVERSION": "Altituda Versio"
+                "BESTBLOCKTTIME": "Lasta bloka tempo"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Bonvenon al la Metrix Core RPC-konzolo. Tajpu helpon por superrigardo de la disponeblaj komandoj.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Elektu lingvon"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transakcioj",
-            "COPYBLOCKHASH": "Kopii Blokan Haŝon",
-            "COPYTXID": "Kopii Transakcian ID-on",
-            "COPYACCOUNT": "Kopii Konton Nomon",
-            "COPYADDRESS": "Kopii Adreson",
-            "COPYAMOUNT": "Kopiu Kvanton",
-            "COPTBLOCKINDEX": "Kopii Blokan Indekson",
-            "EXPLORER": "Malfermi en Bloka Esplorilo"
+        "CURRENCY": {
+            "TITLE": "Elektu Vidigan Valuton"
         },
         "EXPLORER": {
             "TITLE": "Bloka Esplorilo",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Reto",
             "WINDOTAB": "Fenestro",
+            "BACKUPTAB": "Sekurkopio",
+            "EXPLORERTAB": "Esploristo",
+            "DEVELOPERTAB": "Programisto",
             "NETWORK": {
                 "PROXY": "Konekti per SOCKS5-prokurilo",
                 "PROXYIP": "Prokurila IP-adreso",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimumigi ĉe fermo",
                 "BEHAVIOURTITLE": "Sistempleto kaj Fenestra Konduto"
             },
-            "BACKUPTAB": "Sekurkopio",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Aŭtomata Sekurkopio",
                 "ENABLED": "Aŭtomate fari sekurkopion de wallet.dat laŭ horaro",
                 "ENABLEDINFO": "Kreas freŝan sekurkopion de via monujo-dosiero laŭ horaro, do lastatempa kopio ĉiam estas havebla se io misfunkcias.",
+                "INTERVALLABEL": "Fari sekurkopion ĉiujn (tagojn)",
                 "LASTBACKUP": "Lasta sekurkopio:",
                 "NEVERBACKEDUP": "Neniu aŭtomata sekurkopio ankoraŭ estis farita.",
                 "BACKUPNOWBUTTON": "Rezervu Nun",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Restarigi al Defaŭlto",
                 "PRUNETITLE": "Rezerva Historio",
                 "PRUNEINFO": "Pli malnovaj aŭtomataj sekurkopioj estas forigitaj, por ke ĉi tiu dosierujo ne kresku eterne - nur la plej lastatempaj sube estas konservataj.",
-                "KEEPCOUNTLABEL": "Konservu laste",
-                "INTERVALLABEL": "Fari sekurkopion ĉiujn (tagojn)"
+                "KEEPCOUNTLABEL": "Konservu laste"
             },
-            "EXPLORERTAB": "Esploristo",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Bloka Esplorilo",
                 "BLOCKEXPLORERINFO": "La retejo malfermiĝis dum rigardado de transakcio en la bloka esplorilo (ekz. dekstre alklaku transakcion > Vidi en la esplorilo).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Ĉefreto",
                 "TESTNET": "Testreto",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Programista Reĝimo",
+                "DEVMODEINFO": "Malŝaltita defaŭlte kaj destinita nur por programistoj. Ebligante ĉi tion, videblas ebloj por superregi la RPC-konekton - normaj uzantoj devus lasi ĉi tion malŝaltita.",
+                "DEVMODELABEL": "Ebligi programistan reĝimon",
+                "WARNING": "Ĉi tiuj agordoj estas nur por evoluigaj celoj. Ŝanĝi ilin povas tute malhelpi la monujon konektiĝi al demono - uzu ĉi tion nur se vi scias, kion vi faras.",
+                "RPCHOSTTITLE": "RPC-Konekto",
+                "RPCHOSTINFO": "Defaŭlte, Altitude konektiĝas al la demono, kiun ĝi mem administras, sur ĉi tiu maŝino (127.0.0.1). Superregi ĉi tiujn permesas al ĝi konektiĝi al alia demono anstataŭe - ekzemple fora regtest-instanco, sen devi ruli unu loke. Se la konekto sukcesas, Altitude ne elŝutos aŭ lanĉos sian propran lokan demonon. La rpcallowip de la cela demono devas permesi ĉi tiun konekton, kaj rpcuser/rpcpassword sube devas kongrui kun ĝia agordo. Ĝi ekvalidas tuj, neniu rekomenco necesas.",
+                "RPCHOSTLABEL": "RPC-gastiganto",
+                "RPCPORTLABEL": "RPC-Pordo",
+                "RPCUSERLABEL": "RPC-uzantnomo",
+                "RPCPASSWORDLABEL": "RPC-Pasvorto"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Superrigardo",
-            "TRANSACTIONSTAB": "Transakcioj",
-            "ADDRESSTABS": "Adresoj"
-        },
-        "CURRENCY": {
-            "TITLE": "Elektu Vidigan Valuton"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Instrumentpanelo",
             "SEND": "Sendi",
+            "CREATECONTRACT": "Krei Kontrakton",
             "RECEIVE": "Ricevi",
             "TRANSACTIONS": "Transakcioj",
             "STAKING": "Fiksado",
             "MASTERNODES": "Majstronodoj",
+            "EXPLORER": "Bloka Esplorilo",
             "SYNC": {
                 "CONNECTING": "Konektante",
                 "NOBLOCKS": "Atendante blokojn",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Monujo nuntempe ne vetas",
                 "MASTERNODEON": "Masternode nuntempe funkcias",
                 "MASTERNODEOFF": "Masternode nuntempe ne funkcias"
-            },
-            "EXPLORER": "Bloka Esplorilo"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Enigu retpaĝan adreson",
+            "GOBUTTON": "Iru",
+            "QUICKLAUNCH": "Rapida Lanĉo",
+            "DEVTOOLS": "Malfermu Programilojn",
+            "ADDLINK": "Aldoni Ligilon",
+            "LINKNAMEPLACEHOLDER": "Nomo",
+            "LINKURLPLACEHOLDER": "https://ekzemplo.com",
+            "SAVE": "Konservi",
+            "CANCEL": "Nuligi",
+            "REMOVE": "Forigi",
+            "REMOVECONFIRM": "Ĉu forigi ĉi tiun rapidan ligilon?",
+            "LINKEXISTS": "Tiu ligilo jam estas en via listo de rapidaj lanĉoj",
+            "LINKINVALID": "Enigu validan retejan adreson",
+            "LINKNETWORKLABEL": "Reto",
+            "LOADFAILED": "Malsukcesis ŝargi retejon",
+            "SECURESITE": "La konekto estas sekura - valida SSL-atestilo",
+            "INSECURESITE": "La konekto ne estas sekura",
+            "INVALIDCERTSITE": "La konekto ne estas privata - malvalida aŭ nefidinda SSL-atestilo"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Enigu Vian Monujan Pasvorton",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Ĝisdatigo haveblas por Metrix Core. Ĉu vi volas instali ĝin nun?",
             "WALLETUPDATETITLE": "Altituda Ĝisdatigo Disponebla",
             "WALLETUPDATEINFO": "Ĝisdatigo haveblas por Altitude. Ĉu vi ŝatus elŝuti ĝin nun?",
+            "WALLETUPDATEREADYTITLE": "Preta Ĝisdatigo de Alteco",
+            "WALLETUPDATEREADYINFO": "La ĝisdatigo estas elŝutita. Ĉu rekomenci Altitude nun por instali ĝin?",
+            "WALLETUPDATERESTARTBUTTON": "Rekomenci kaj Instali",
+            "WALLETUPDATELATERBUTTON": "Poste",
             "CLIENTUPDATEBUTTON": "Ĝisdatigo",
             "CLIENTUPDATECANCELBUTTON": "Ne Ĝisdatigu",
             "CLIENTUPDATESKIPBUTTON": "Preterlasi ĉi tiun Ĝisdatigon",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ĉiuj antaŭaj sekurkopioj, kiujn vi faris de via monujo-dosiero, devus esti anstataŭigitaj per la nove generita, ĉifrita monujo-dosiero. Pro sekurecaj kialoj, antaŭaj sekurkopioj de la neĉifrita monujo-dosiero fariĝos senutilaj tuj kiam vi komencos uzi la novan, ĉifritan monujon.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Haltis Neatendite",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Estis problemo kun Metrix Core, kiu kaŭzis ĝian ĉesigon. Estas rekomendinde kontroli vian debug.log-dosieron por problemoj.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Komunikada Eraro",
+            "CLIENTUNKNOWNERRORINFO": "Estis problemo komunikante kun Metrix Core. Estas rekomendinde kontroli vian debug.log-dosieron por problemoj.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Malsukcesis",
+            "BOOTSTRAPFAILEDINFO": "Okazis problemo dum la startigo de Metrix Core. Estas rekomendinde kontroli vian Altitude-protokolan dosieron por problemoj.",
+            "BOOTSTRAPOFFERTITLE": "Monujo Signife Malaktuala",
+            "BOOTSTRAPOFFERINFO": "Lastatempa lanĉprogramo haveblas, kiu povas rapide ĝisdatigi Metrix Core. Daŭrigi normalan sinkronigon anstataŭe povas daŭri plurajn tagojn, ĉar via monujo bezonas elŝuti kaj kontroli ĉiun blokon, kiun ĝi maltrafis.",
+            "BOOTSTRAPOFFERBUTTON": "Elŝuti Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Daŭrigi Normalan Sinkronigon",
+            "BOOTSTRAPSPACEINFO": "Ne sufiĉe da libera diskospaco por elŝuti kaj eltiri la startigilon. Bezonata: {required}, Disponebla: {free}. Liberigu iom da spaco kaj reprovu.",
+            "STARTUPFAILEDTITLE": "Metrix Core Startigo Malsukcesis",
+            "STARTUPFAILEDINFO": "Okazis eraro lanĉante Metrix Core. Estas rekomendinde kontroli vian Altitude-protokolan dosieron por problemoj.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Reakiraj Iloj",
             "CLIENTINVALIDCONFIGTITLE": "Malvalida metrix.conf-agordo",
             "CLIENTINVALIDCONFIGINFO": "Via metrix.conf havas malvalidan agordon de majstra nodo, kiu kaŭzos tujan eliron de Metrix Core. Bonvolu kontroli ĉi tiun dosieron.",
             "ADDREMOTEMNTITLE": "Aldoni Foran Majstronodon",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Privata Ŝlosilo de Majstronodo",
             "ADDREMOTEMNTXHASH": "Majstronoda Transakcia Haŝo",
             "ADDREMOTEMNTXINDEX": "Majstronoda Transakcia Indekso",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Malsukcesis",
-            "BOOTSTRAPFAILEDINFO": "Okazis problemo dum la startigo de Metrix Core. Estas rekomendinde kontroli vian Altitude-protokolan dosieron por problemoj.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Reakiraj Iloj",
-            "STARTUPFAILEDTITLE": "Metrix Core Startigo Malsukcesis",
-            "STARTUPFAILEDINFO": "Okazis eraro lanĉante Metrix Core. Estas rekomendinde kontroli vian Altitude-protokolan dosieron por problemoj.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Komunikada Eraro",
-            "CLIENTUNKNOWNERRORINFO": "Estis problemo komunikante kun Metrix Core. Estas rekomendinde kontroli vian debug.log-dosieron por problemoj.",
             "UNENROLLGOVERNORTITLE": "Konfirmu Malaliĝon de Guberniestro",
             "UNENROLLGOVERNORCONTENT": "Ĉu vi certas, ke vi volas malaliĝi vian guberniestron? Vi ne plu povos voĉdoni pri ĉena regado.",
-            "WALLETUPDATEREADYTITLE": "Preta Ĝisdatigo de Alteco",
-            "WALLETUPDATEREADYINFO": "La ĝisdatigo estas elŝutita. Ĉu rekomenci Altitude nun por instali ĝin?",
-            "WALLETUPDATERESTARTBUTTON": "Rekomenci kaj Instali",
-            "WALLETUPDATELATERBUTTON": "Poste",
             "DAPPCONNECTTITLE": "Konekti al retejo",
             "DAPPCONNECTINFO": "Ĉi tiu retejo volas konektiĝi al via monujo kaj vidi vian adreson kaj bilancon.",
             "DAPPCONNECTBUTTON": "Konekti",
+            "DAPPCONNECTADDRESSLABEL": "Adreso",
+            "DAPPAPPROVEBUTTON": "Aprobi",
             "DAPPREJECTBUTTON": "Malakcepti",
             "DAPPSENDTITLE": "Peto pri Kontrakta Transakcio",
             "DAPPSENDINFO": "Ĉi tiu retejo petas sendi kontraktan transakcion el via monujo.",
-            "DAPPSIGNTITLE": "Peto pri Subskribo de Mesaĝo",
-            "DAPPSIGNINFO": "Ĉi tiu retejo petas subskribi mesaĝon kun via monuja adreso.",
-            "DAPPNOTREADY": "Ankoraŭ ne eblas konekti al la retejo - Metrix Core ankoraŭ ekfunkcias.",
-            "DAPPNOWALLET": "Ne eblas konekti al la retejo - neniu monuja adreso haveblas.",
-            "DAPPAPPROVEBUTTON": "Aprobi",
-            "DAPPCONNECTADDRESSLABEL": "Adreso",
             "DAPPSENDSITELABEL": "Retejo",
             "DAPPSENDCONTRACTLABEL": "Kontrakta Adreso",
             "DAPPSENDAMOUNTLABEL": "Kvanto",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimuma Retkosto",
             "DAPPSENDMAXTOTALLABEL": "Maksimuma Sumo",
             "DAPPSENDDATALABEL": "Kontraktaj Datumoj",
+            "DAPPSIGNTITLE": "Peto pri Subskribo de Mesaĝo",
+            "DAPPSIGNINFO": "Ĉi tiu retejo petas subskribi mesaĝon kun via monuja adreso.",
             "DAPPSIGNMESSAGELABEL": "Mesaĝo",
-            "BOOTSTRAPOFFERTITLE": "Monujo Signife Malaktuala",
-            "BOOTSTRAPOFFERINFO": "Lastatempa lanĉprogramo haveblas, kiu povas rapide ĝisdatigi Metrix Core. Daŭrigi normalan sinkronigon anstataŭe povas daŭri plurajn tagojn, ĉar via monujo bezonas elŝuti kaj kontroli ĉiun blokon, kiun ĝi maltrafis.",
-            "BOOTSTRAPOFFERBUTTON": "Elŝuti Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Daŭrigi Normalan Sinkronigon",
-            "BOOTSTRAPSPACEINFO": "Ne sufiĉe da libera diskospaco por elŝuti kaj eltiri la startigilon. Bezonata: {required}, Disponebla: {free}. Liberigu iom da spaco kaj reprovu."
+            "DAPPNOTREADY": "Ankoraŭ ne eblas konekti al la retejo - Metrix Core ankoraŭ ekfunkcias.",
+            "DAPPNOWALLET": "Ne eblas konekti al la retejo - neniu monuja adreso haveblas."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adresaro",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Nuna reto"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Enigu retpaĝan adreson",
-            "GOBUTTON": "Iru",
-            "QUICKLAUNCH": "Rapida Lanĉo",
-            "DEVTOOLS": "Malfermu Programilojn",
-            "ADDLINK": "Aldoni Ligilon",
-            "LINKNAMEPLACEHOLDER": "Nomo",
-            "LINKURLPLACEHOLDER": "https://ekzemplo.com",
-            "SAVE": "Konservi",
-            "CANCEL": "Nuligi",
-            "REMOVE": "Forigi",
-            "REMOVECONFIRM": "Ĉu forigi ĉi tiun rapidan ligilon?",
-            "LINKEXISTS": "Tiu ligilo jam estas en via listo de rapidaj lanĉoj",
-            "LINKINVALID": "Enigu validan retejan adreson",
-            "LINKNETWORKLABEL": "Reto",
-            "LOADFAILED": "Malsukcesis ŝargi retejon",
-            "SECURESITE": "La konekto estas sekura - valida SSL-atestilo",
-            "INSECURESITE": "La konekto ne estas sekura",
-            "INVALIDCERTSITE": "La konekto ne estas privata - malvalida aŭ nefidinda SSL-atestilo"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Rezerva Monujo...",
             "SIGNMESSAGE": "Subskribi Mesaĝon...",
             "VERIFYMESSAGE": "Konfirmi Mesaĝon...",
-            "LOCALE": "Lingvo...",
-            "RESTARTCORE": "Rekomencu Metrix Core",
-            "EXIT": "Elirejo",
             "OPTIONS": "Opcioj...",
+            "LOCALE": "Lingvo...",
             "CURRENCIES": "Montri Valuton...",
-            "ALTITUDEREFRESH": "Refreŝigi Altitudajn Datumojn"
+            "RESTARTCORE": "Rekomencu Metrix Core",
+            "ALTITUDEREFRESH": "Refreŝigi Altitudajn Datumojn",
+            "EXIT": "Elirejo"
         },
         "ENCRYPT": {
             "TITLE": "Ĉifri",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Totala Bilanco",
+        "SPENDABLEBALANCE": "Elspezebla Saldo",
+        "PENDINGBALANCE": "Atendanta Saldo",
         "CANCELBUTTON": "Nuligi",
         "DONEBUTTON": "Finita",
         "OKBUTTON": "Bone",
+        "ACCEPTBUTTON": "Akcepti",
         "CLEARALLBUTTON": "Forigi Ĉion",
         "ENTERACCOUNTLABEL": "Enigu etikedon por ĉi tiu adreso",
         "ENTERADDRESSLABEL": "Enigu Metrix-adreson",
@@ -464,11 +511,8 @@
         "SORTBY": "Ordigi Laŭ",
         "SEARCH": "Serĉi",
         "FEE": "Kotizo",
-        "ACCEPTBUTTON": "Akcepti",
         "CONFIRMED": "Konfirmita",
         "UNCONFIRMED": "Nekonfirmita",
-        "PENDINGBALANCE": "Atendanta Saldo",
-        "SPENDABLEBALANCE": "Elspezebla Saldo",
         "SAVEBUTTON": "Konservi"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Rekomencante Metrix Core...",
         "BOOTSTRAPPING": "Elŝutante bootstrap-on...",
         "BOOTSTRAPEXTRACTING": "Eltirante bootstrap-on...",
-        "TIMEREMAINING": "restanta:"
+        "TIMEREMAINING": "restanta:",
+        "DEVRPCOVERRIDEACTIVE": "Programisto-konekto-superrego estas agordita (Opcioj > Programisto) kaj ne respondas. Malŝaltu ĝin por rekonekti al la loka demono normale.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Forigi RPC-Superregilon kaj Rekonekton"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nova konto sukcese kreita",
         "ADDRESSCOPIEDCLIPBOARD": "Adreso kopiita al tondujo",
+        "COPIEDCLIPBOARD": "Kopiita al tondujo",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcioj kopiitaj al tondujo",
         "EMPTYFIELDS": "Bonvolu plenigi ĉiujn kampojn",
         "NOUPDATE": "Neniu ĝisdatigo havebla",
         "WALLETBACKEDUP": "Monujo-sekurkopio sukcesa",
+        "WALLETBACKUPFAILED": "Aŭtomata monujo-sekurkopio malsukcesis - kontrolu la lokon de via sekurkopio kaj la disponeblan diskspacon",
         "PASSPHRASEMISMATCH": "La pasvortoj, kiujn vi enigis, ne kongruas",
         "CHECKINGUPDATE": "Serĉante ĝisdatigon...",
         "CHECKINGUPDATEFAILED": "Ne eblas kontroli ĝisdatigon. Kontrolu vian reton.",
+        "WALLETUPDATEDOWNLOADING": "Elŝutante ĝisdatigon...",
         "SENDINGEXCEEDSBALANCE": "La sumo, kiun vi sendas, superas vian elektitan bilancon",
         "MISSINGCHANGEADDRESS": "Vi devas specifi ŝanĝadreson",
         "MISSINGDESTINATIONADDRESS": "Vi devas specifi celan adreson",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ĉifrante monujon...",
         "CHANGINGPASSPHARASE": "Ŝanĝante pasvorton...",
         "STARTINGMASTERNODE": "Komencante majstran nodon...",
+        "STOPPINGMASTERNODE": "Haltigante la majstran nodon...",
         "SENDINGTRANSACTION": "Sendante transakcion...",
         "SIGNINGMESSAGE": "Subskribante mesaĝon...",
         "SIGNEDMESSAGE": "Mesaĝo subskribita",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Malŝlosante monujon...",
         "TRANSACTIONMISMATCH": "Transakcia eraro. Bonvolu provi denove.",
         "MINIMUMCONFIRMATIONS": "Ĉiuj enigoj postulas almenaŭ unu konfirmon antaŭ ol elspezi.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transakcioj kopiitaj al tondujo",
-        "STOPPINGMASTERNODE": "Haltigante la majstran nodon...",
         "FAILEDTOWRITECONFIG": "Estis problemo skribi al via metrix.conf dosiero. Kontrolu, ke la dosiero ekzistas kaj ke Altitude havas skribpermesojn.",
         "NOPUBLICUP": "Neniu publika IP-adreso trovita. Kontrolu vian retkonekton kaj rekomencu Altitude.",
         "CONFIGURINGLOCALMN": "Agordante lokan Majstronodon...",
         "REPORTINGISSUE": "Akiras diagnozajn informojn... Ĉi tiuj informoj estos kopiitaj al via tondujo.",
-        "WALLETUPDATEDOWNLOADING": "Elŝutante ĝisdatigon...",
-        "WALLETBACKUPFAILED": "Aŭtomata monujo-sekurkopio malsukcesis - kontrolu la lokon de via sekurkopio kaj la disponeblan diskspacon",
         "EXPLORERURLSAVED": "Esploril-URL konservita",
         "EXPLORERURLRESET": "Esploril-URL reestigita al defaŭlta",
         "EXPLORERURLINVALID": "Tio ne estas valida http(j) URL",
-        "EXPLORERURLUNREACHABLE": "Ne eblis atingi tiun URL-on - kontrolu ĝin kaj provu denove"
+        "EXPLORERURLUNREACHABLE": "Ne eblis atingi tiun URL-on - kontrolu ĝin kaj provu denove",
+        "DEVRPCHOSTSAVED": "RPC-gastiganto konservita",
+        "DEVRPCHOSTRESET": "RPC-gastiganto revenis al defaŭlta valoro (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ricevitaj Moneroj",
+        "NEWTRANSACTION_TITLE_STAKE": "Ricevita Intereso",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricevis Majstronodan Rekompencon"
     },
     "TIME": {
         "AFEWSECONDS": "Kelkaj sekundoj",
@@ -533,11 +587,6 @@
         "MONTHS": "monatoj",
         "AYEAR": "Jaro",
         "YEARS": "jaroj"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Ricevitaj Moneroj",
-        "NEWTRANSACTION_TITLE_STAKE": "Ricevita Intereso",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ricevis Majstronodan Rekompencon"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guberniestroj respondecas pri voĉdonado pri ĉiumonataj buĝetoj kaj ŝanĝoj en la blokĉeno. Vi povas fariĝi guberniestro ŝlosante la ĝustan garantion en la kontrakto pri administrado.",
                 "COLLATERAL": "Bezonata garantio",
                 "ENROLL": "Registriĝi",
+                "SELECTAGOVERNOR": "Elektu elekteblan adreson de guberniestro",
+                "GOVERNORNOTSELECTED": "Neniu elektebla adreso estis elektita",
                 "CONFIRMENROLL": "Vi estas tuj registriĝota kiel Guberniestro. Ĉi tio sendos transakcion kun la bezonata garantiaĵo al la administrada kontrakto. Vi povas malregistriĝi iam ajn.",
                 "ISGOVERNORTITLE": "Vi estas aktiva guberniestro!",
                 "ISGOVERNORDETAIL1": "Guberniestroj respondecas pri voĉdonado pri ĉiumonataj buĝetoj kaj ŝanĝoj en blokĉeno.",
                 "ISGOVERNORDETAIL2": "Por resti guberniestro vi devos partopreni almenaŭ unu voĉdonon ĉiujn 30 tagojn.",
                 "ISGOVERNORDETAIL3": "Se ne estas io por voĉdoni, tiam vi povas permane daŭrigi vian aliĝon sendante aktivan ping-mesaĝon.",
+                "MYGOVERNORADDRESS": "Mia Guberniestra Parolado",
                 "UNENROLL": "Malregistriĝi",
                 "PING": "Sendu Aktivan Pingon",
                 "LASTPINGTITLE": "Lasta ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "tagoj",
                 "GOVERNORVOTEMATURITYHOURS": "horoj",
                 "GOVERNORVOTEMATURITYSUFFIX": "ĝis matura",
-                "MYGOVERNORADDRESS": "Mia Guberniestra Parolado",
-                "SELECTAGOVERNOR": "Elektu elekteblan adreson de guberniestro",
-                "GOVERNORNOTSELECTED": "Neniu elektebla adreso estis elektita",
                 "NOTFULLYSYNCEDTITLE": "Guberniestra statuso neatingebla",
                 "NOTFULLYSYNCEDDETAIL": "Via registriĝa statuso ĉe Governor estos videbla kiam via blokĉeno estos plene sinkronigita.",
                 "DGPMIGRATIONTITLE": "DGP-Migrado",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Via propono estis sukcese kreita",
             "ENROLLINGGOVERNOR": "Enskribiĝo kiel Guberniestro...",
             "ENROLLEDGOVERNOR": "Via aliĝo estos kompleta post kiam via transakcio estos konfirmita.",
-            "VOTINGONPROPOSAL": "Sendante proponvoĉdonon",
-            "VOTEDONPROPOSAL": "Via voĉdono estos kalkulita post kiam la transakcio estos konfirmita.",
             "PINGINGGOVERNOR": "Sendante ping-on...",
             "PINGEDGOVERNOR": "Ping sendiĝis sukcese. Via guberniestro estos ĝisdatigita post kiam la transakcio estos konfirmita.",
+            "VOTINGONPROPOSAL": "Sendante proponvoĉdonon",
+            "VOTEDONPROPOSAL": "Via voĉdono estos kalkulita post kiam la transakcio estos konfirmita.",
             "UNENROLLINGGOVERNOR": "Malregistriĝante Guberniestro...",
             "UNENROLLEDGOVERNOR": "Transakcio sendita. Via guberniestro estos malregistrita post kiam la transakcio estos konfirmita.",
             "GOVERNORNOTMATURE": "Via guberniestro ankoraŭ ne estas sufiĉe matura por plenumi ĉi tiun agon"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Aĉetu Metrix",
+                "SEARCH": "Historio"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Vi Sendas",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transakcia Historio",
                 "SEARCHBUTTON": "SERĈI",
+                "SEARCHPLACEHOLDER": "Enigu MRX- aŭ BTC-adreson",
                 "TRANSACTIONDATE": "Dato",
                 "TRANSACTIONTYPE": "Tipo de TX",
                 "TRANSACTIONAMOUNT": "Kvanto",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Konfirmita",
                 "TRANSACTIONNOTCONFIRMED": "Ne konfirmita",
                 "TRANSACTIONREFUNDED": "Repagita - Sub minimumo",
-                "AVGSWAPPRICE": "Meza Interŝanĝa Prezo",
-                "SEARCHPLACEHOLDER": "Enigu MRX- aŭ BTC-adreson"
+                "AVGSWAPPRICE": "Meza Interŝanĝa Prezo"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generante Interŝanĝan Adreson...",
             "ALREADYHAVEADDRESS": "Vi jam havas BTC-adreson asociitan kun ĉi tiu Metrix-adreso.",
             "NOADDRESS": "Vi ne enigis Metrix-adreson"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Aĉetu Metrix",
-                "SEARCH": "Historio"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Malkaŝi",
                 "EMPTYTITLE": "Neniuj ĵetonoj trovitaj ankoraŭ",
                 "EMPTYDETAIL": "Altitude aŭtomate kontrolas blokan esplorilon por MRC20 kaj MRC721 ĵetonoj senditaj al viaj adresoj, poste kontrolas ĉion enrete kontraŭ via propra nodo. Vi ankaŭ povas aldoni ĵetonon permane se vi scias ĝian kontraktan adreson.",
+                "EMPTYDETAILCHECKINGDISABLED": "Aŭtomata ĵetonkontrolo estas malŝaltita, do viaj adresoj ne estas kontrolataj por ĵetonoj. Reŝaltu ĝin supre, aŭ aldonu ĵetonon permane se vi scias ĝian kontraktan adreson.",
                 "HIDDENTITLE": "Kaŝitaj Ĵetonoj",
                 "CONTEXTMENUHIDE": "Kaŝi Ĵetonon",
                 "ITEMSSUFFIX": "ero(j)",
-                "NONENUMERABLETOOLTIP": "Ĉi tiu kolekto ne subtenas listigon de individuaj eroj - anstataŭe montron de kiom multajn vi posedas."
+                "NONENUMERABLETOOLTIP": "Ĉi tiu kolekto ne subtenas listigon de individuaj eroj - anstataŭe montron de kiom multajn vi posedas.",
+                "CHECKINGENABLED": "Kontrolado",
+                "CHECKINGDISABLED": "Markante For",
+                "CHECKINGENABLEDTOOLTIP": "Ĵetonkontrolado estas ŝaltita - Altitude periode kontrolas viajn adresojn por ĵetonoj kaj refreŝigas saldojn. Alklaku por malŝalti.",
+                "CHECKINGDISABLEDTOOLTIP": "Ĵetonkontrolado estas malŝaltita - klaku por reŝalti.",
+                "CHECKINGDISABLEDNOTICE": "Aŭtomata ĵetonkontrolo estas malŝaltita. Viaj adresoj ne estas skanitaj por ĵetonoj kaj saldoj ne ĝisdatiĝos. Vi ankoraŭ povas aldoni ĵetonon permane."
             },
             "ADDTOKEN": {
                 "TITLE": "Aldoni Ĵetonon",

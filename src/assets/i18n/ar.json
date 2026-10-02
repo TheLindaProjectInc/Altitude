@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "إنشاء حساب",
             "HIDEEMPTYACCOUNTS": "إخفاء الحسابات الفارغة غير المسماة"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ملخص",
+            "TRANSACTIONSTAB": "المعاملات",
+            "ADDRESSTABS": "العناوين"
+        },
         "SEND": {
             "ADDRECIPIENT": "إضافة مستلم",
             "SEND": "يرسل",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "تاريخ",
             "TABLECOLUMNS_CONFIRMS": "التأكيدات",
             "ALL_SELECTUNSELECT": "تبديل الكل",
+            "TREEMODE": "وضع الشجرة",
+            "LISTMODE": "وضع القائمة",
             "SENDAVAILABLE": "استخدم الرصيد المتاح",
             "INPUTLOCKED": "المدخلات مقفلة. ستحتاج إلى فتح هذه المدخلات لاستخدامها.",
             "CONTEXTMENULOCKINPUT": "إدخال القفل",
@@ -38,10 +45,48 @@
             "AFTERFEE": "بعد الرسوم",
             "QUANTITY": "كمية",
             "BYTES": "بايت",
-            "TREEMODE": "وضع الشجرة",
-            "LISTMODE": "وضع القائمة",
             "ALERTFEECHANGETITLE": "تغيير الرسوم",
             "ALERTFEECHANGECONTENT": "رسوم المعاملة الفعلية أعلى من المتوقع. يرجى تأكيد الرسوم الجديدة:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "إنشاء عقد",
+            "INFO": "انشر عقدًا ذكيًا على الشبكة عن طريق إرسال رمز البايت المُجمّع. هذه وظيفة أساسية في سلسلة الكتل - تأكد من صحة رمز البايت وإعدادات الغاز قبل النشر، حيث لا يمكن التراجع عن النشر.",
+            "FROM": "من",
+            "BYTECODE": "بايت كود",
+            "BYTECODEPLACEHOLDER": "ألصق رمز البايت المُجمّع للعقد (بالصيغة السداسية العشرية)",
+            "INVALIDBYTECODE": "يجب أن يكون رمز البايت سلسلة سداسية عشرية صالحة (0-9، a-f) بعدد زوجي من الأحرف",
+            "GASLIMIT": "حد الغاز",
+            "GASLIMITRANGE": "يتراوح",
+            "GASPRICE": "سعر الغاز (بالرينغيت الماليزي لكل وحدة غاز)",
+            "GASPRICEMIN": "الحد الأدنى",
+            "ESTIMATEDMAXCOST": "التكلفة القصوى المقدرة",
+            "DEPLOYBUTTON": "نشر العقد",
+            "INCOMPLETEFORM": "يرجى تحديد عنوان المرسل، وإدخال رمز بايت صالح، وتحديد حد/سعر غاز صالح",
+            "HIGHGASPRICETITLE": "ارتفاع أسعار الغاز",
+            "HIGHGASPRICEINFO": "سعر الغاز الذي حددته مرتفع بشكل غير معتاد. قد تصل تكلفة هذا النشر إلى:",
+            "DEPLOYING": "تنفيذ العقد...",
+            "DEPLOYED": "تم تقديم طلب نشر العقد",
+            "RESULTTITLE": "نتيجة النشر",
+            "STATUS": "حالة",
+            "STATUSPENDING": "بانتظار التأكيد...",
+            "STATUSCONFIRMED": "تم النشر بنجاح",
+            "STATUSFAILED": "فشل النشر",
+            "TXID": "رقم المعاملة",
+            "SENDER": "مرسل",
+            "CONTRACTADDRESS": "عنوان العقد",
+            "GASUSED": "الغاز المستخدم",
+            "DONEBUTTON": "منتهي",
+            "DEPLOYANOTHERBUTTON": "نشر آخر"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "المعاملات",
+            "COPYBLOCKHASH": "نسخ تجزئة الكتلة",
+            "COPYTXID": "انسخ رقم المعاملة",
+            "COPYACCOUNT": "انسخ اسم الحساب",
+            "COPYADDRESS": "انسخ العنوان",
+            "COPYAMOUNT": "عدد النسخ",
+            "COPTBLOCKINDEX": "فهرس نسخ الكتل",
+            "EXPLORER": "افتح في مستكشف الكتل"
         },
         "STAKING": {
             "UNLOCK": "افتح من أجل الرهان",
@@ -68,13 +113,13 @@
             "IP": "الملكية الفكرية",
             "ADDRESS": "عنوان",
             "ENABLED": "مُفعّل",
-            "STARTBUTTON": "ابدأ محليًا",
-            "STARTALIASBUTTON": "اسم مستعار للبداية",
-            "STARTALLBUTTON": "ابدأ الكل",
             "NOMASTERNODES": "ليس لديك أي عقد رئيسية",
             "NOMNOUTPUTS": "لم يتم العثور على أي مخرجات للعقدة الرئيسية. لتشغيل عقدة رئيسية محلية، أرسل بالضبط 2 أو 5 أو 25 أو 50 أو 100 مليون عملة إلى عنوان عقدتك الرئيسية وانتظر 15 تأكيدًا.",
+            "STARTBUTTON": "ابدأ محليًا",
             "STOPBUTTON": "توقف محليًا",
+            "STARTALIASBUTTON": "اسم مستعار للبداية",
             "STOPALIASBUTTON": "إيقاف الاسم المستعار",
+            "STARTALLBUTTON": "ابدأ الكل",
             "ADDREMOTE": "إضافة عقدة رئيسية عن بعد",
             "REMOVEMN": "إزالة العقدة الرئيسية",
             "ADDLOCAL": "إعداد العقدة الرئيسية المحلية",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "عام",
                 "COREVERSION": "الإصدار الأساسي",
+                "ALTITUDEVERSION": "نسخة الارتفاع",
                 "PROTOCOLVERSION": "إصدار البروتوكول",
                 "WALLETVERSION": "إصدار Wallet.dat",
                 "NETWORKTITLE": "شبكة",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "عدد العقد الرئيسية",
                 "BLOCKCHAINTITLE": "سلسلة الكتل",
                 "NUMBERBLOCKS": "عدد الكتل الحالي",
-                "BESTBLOCKTTIME": "آخر وقت للكتلة",
-                "ALTITUDEVERSION": "نسخة الارتفاع"
+                "BESTBLOCKTTIME": "آخر وقت للكتلة"
             },
             "DEBUG": {
                 "CONSOLEINFO": "مرحباً بك في وحدة تحكم Metrix Core RPC. اكتب help للحصول على نظرة عامة على الأوامر المتاحة.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "اختر اللغة"
         },
-        "TRANSACTIONS": {
-            "TITLE": "المعاملات",
-            "COPYBLOCKHASH": "نسخ تجزئة الكتلة",
-            "COPYTXID": "انسخ رقم المعاملة",
-            "COPYACCOUNT": "انسخ اسم الحساب",
-            "COPYADDRESS": "انسخ العنوان",
-            "COPYAMOUNT": "عدد النسخ",
-            "COPTBLOCKINDEX": "فهرس نسخ الكتل",
-            "EXPLORER": "افتح في مستكشف الكتل"
+        "CURRENCY": {
+            "TITLE": "حدد عرض العملة"
         },
         "EXPLORER": {
             "TITLE": "مستكشف الكتل",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "شبكة",
             "WINDOTAB": "نافذة",
+            "BACKUPTAB": "النسخ الاحتياطي",
+            "EXPLORERTAB": "مستكشف",
+            "DEVELOPERTAB": "مطور",
             "NETWORK": {
                 "PROXY": "اتصل عبر وكيل SOCKS5",
                 "PROXYIP": "عنوان IP للوكيل",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "تصغير عند الإغلاق",
                 "BEHAVIOURTITLE": "سلوك شريط النظام والنوافذ"
             },
-            "BACKUPTAB": "النسخ الاحتياطي",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "النسخ الاحتياطي التلقائي",
                 "ENABLED": "قم بعمل نسخة احتياطية تلقائية من ملف wallet.dat وفقًا لجدول زمني محدد.",
                 "ENABLEDINFO": "يقوم بإنشاء نسخة احتياطية جديدة من ملف محفظتك بشكل دوري، بحيث تكون النسخة الحديثة متاحة دائمًا في حالة حدوث خطأ ما.",
+                "INTERVALLABEL": "قم بعمل نسخة احتياطية كل (أيام)",
                 "LASTBACKUP": "آخر نسخة احتياطية:",
                 "NEVERBACKEDUP": "لم يتم إجراء أي نسخ احتياطي تلقائي حتى الآن.",
                 "BACKUPNOWBUTTON": "قم بالنسخ الاحتياطي الآن",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "إعادة الضبط إلى الوضع الافتراضي",
                 "PRUNETITLE": "سجل النسخ الاحتياطي",
                 "PRUNEINFO": "يتم حذف النسخ الاحتياطية التلقائية القديمة حتى لا ينمو هذا المجلد إلى الأبد - يتم الاحتفاظ فقط بأحدث النسخ الموجودة أدناه.",
-                "KEEPCOUNTLABEL": "احتفظ به أخيرًا",
-                "INTERVALLABEL": "قم بعمل نسخة احتياطية كل (أيام)"
+                "KEEPCOUNTLABEL": "احتفظ به أخيرًا"
             },
-            "EXPLORERTAB": "مستكشف",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "مستكشف الكتل",
                 "BLOCKEXPLORERINFO": "تم فتح الموقع عند عرض معاملة على مستكشف الكتل (على سبيل المثال، انقر بزر الماوس الأيمن على معاملة > عرض على المستكشف).",
@@ -259,25 +298,31 @@
                 "MAINNET": "الشبكة الرئيسية",
                 "TESTNET": "شبكة الاختبار",
                 "REGTEST": "اختبار السجل"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "وضع المطور",
+                "DEVMODEINFO": "هذا الخيار مُعطّل افتراضيًا ومُخصّص للمطورين فقط. تفعيله يُتيح خيارات لتجاوز اتصال RPC - يُنصح المستخدمون العاديون بتركه مُعطّلاً.",
+                "DEVMODELABEL": "تفعيل وضع المطور",
+                "WARNING": "هذه الإعدادات مخصصة لأغراض التطوير فقط. قد يؤدي تغييرها إلى منع المحفظة من الاتصال بالخادم نهائيًا - لذا استخدمها فقط إذا كنت على دراية بما تفعله.",
+                "RPCHOSTTITLE": "اتصال RPC",
+                "RPCHOSTINFO": "يتصل برنامج Altitude افتراضيًا بالخادم الذي يديره بنفسه على هذا الجهاز (127.0.0.1). يسمح تجاوز هذه الإعدادات بالاتصال بخادم آخر - على سبيل المثال، نسخة regtest عن بُعد - دون الحاجة إلى تشغيلها محليًا. في حال نجاح الاتصال، لن يقوم Altitude بتنزيل أو تشغيل خادمه المحلي. يجب أن يسمح عنوان IP الخاص بخادم rpcallowip بهذا الاتصال، ويجب أن يتطابق اسم المستخدم وكلمة المرور المذكوران أدناه مع إعداداته. يسري هذا التغيير فورًا، ولا يتطلب إعادة تشغيل الجهاز.",
+                "RPCHOSTLABEL": "مضيف RPC",
+                "RPCPORTLABEL": "منفذ RPC",
+                "RPCUSERLABEL": "اسم مستخدم RPC",
+                "RPCPASSWORDLABEL": "كلمة مرور RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ملخص",
-            "TRANSACTIONSTAB": "المعاملات",
-            "ADDRESSTABS": "العناوين"
-        },
-        "CURRENCY": {
-            "TITLE": "حدد عرض العملة"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "لوحة التحكم",
             "SEND": "يرسل",
+            "CREATECONTRACT": "إنشاء عقد",
             "RECEIVE": "يستلم",
             "TRANSACTIONS": "المعاملات",
             "STAKING": "حصة",
             "MASTERNODES": "العقد الرئيسية",
+            "EXPLORER": "مستكشف الكتل",
             "SYNC": {
                 "CONNECTING": "الاتصال",
                 "NOBLOCKS": "في انتظار الكتل",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "المحفظة غير مخصصة للتخزين حاليًا",
                 "MASTERNODEON": "العقدة الرئيسية قيد التشغيل حاليًا",
                 "MASTERNODEOFF": "العقدة الرئيسية غير قيد التشغيل حاليًا"
-            },
-            "EXPLORER": "مستكشف الكتل"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "أدخل عنوان موقع ويب 3",
+            "GOBUTTON": "يذهب",
+            "QUICKLAUNCH": "إطلاق سريع",
+            "DEVTOOLS": "أدوات المطورين المفتوحة",
+            "ADDLINK": "إضافة رابط",
+            "LINKNAMEPLACEHOLDER": "اسم",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "يحفظ",
+            "CANCEL": "يلغي",
+            "REMOVE": "يزيل",
+            "REMOVECONFIRM": "هل تريد إزالة هذا الرابط السريع؟",
+            "LINKEXISTS": "هذا الرابط موجود بالفعل في قائمة التشغيل السريع الخاصة بك",
+            "LINKINVALID": "أدخل عنوان موقع صالح",
+            "LINKNETWORKLABEL": "شبكة",
+            "LOADFAILED": "فشل تحميل الموقع",
+            "SECURESITE": "الاتصال آمن - شهادة SSL صالحة",
+            "INSECURESITE": "الاتصال غير آمن",
+            "INVALIDCERTSITE": "الاتصال غير خاص - شهادة SSL غير صالحة أو غير موثوقة"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "أدخل عبارة مرور محفظتك",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "يتوفر تحديث لبرنامج Metrix Core. هل ترغب بتثبيته الآن؟",
             "WALLETUPDATETITLE": "تحديث الارتفاع متاح",
             "WALLETUPDATEINFO": "يتوفر تحديث للعبة Altitude. هل ترغب بتنزيله الآن؟",
+            "WALLETUPDATEREADYTITLE": "تحديث الارتفاع جاهز",
+            "WALLETUPDATEREADYINFO": "تم تنزيل التحديث. هل تريد إعادة تشغيل برنامج Altitude الآن لتثبيته؟",
+            "WALLETUPDATERESTARTBUTTON": "أعد التشغيل والتثبيت",
+            "WALLETUPDATELATERBUTTON": "لاحقاً",
             "CLIENTUPDATEBUTTON": "تحديث",
             "CLIENTUPDATECANCELBUTTON": "لا تقم بالتحديث",
             "CLIENTUPDATESKIPBUTTON": "تخطَّ هذا التحديث",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "يجب استبدال أي نسخ احتياطية سابقة لملف محفظتك بملف المحفظة المشفر الجديد. ولأسباب أمنية، ستصبح النسخ الاحتياطية السابقة لملف المحفظة غير المشفر عديمة الفائدة بمجرد بدء استخدام المحفظة المشفرة الجديدة.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "توقف برنامج Metrix Core بشكل غير متوقع",
             "CLIENTCLOSEDUNEXPECTEDINFO": "حدثت مشكلة في برنامج Metrix Core أدت إلى توقفه. يُنصح بمراجعة ملف debug.log بحثًا عن أي مشاكل.",
+            "CLIENTUNKNOWNERRORTITLE": "خطأ في اتصال Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "حدثت مشكلة في الاتصال بـ Metrix Core. يُنصح بمراجعة ملف debug.log الخاص بك بحثًا عن أي مشاكل.",
+            "BOOTSTRAPFAILEDTITLE": "فشل عملية التمهيد لـ Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "حدثت مشكلة أثناء تهيئة Metrix Core. يُنصح بمراجعة ملف سجل Altitude الخاص بك بحثًا عن أي مشاكل.",
+            "BOOTSTRAPOFFERTITLE": "محفظة قديمة الطراز بشكل ملحوظ",
+            "BOOTSTRAPOFFERINFO": "يتوفر تحديث حديث يُمكنه تحديث Metrix Core بسرعة. أما الاستمرار في المزامنة العادية فقد يستغرق عدة أيام، حيث تحتاج محفظتك إلى تنزيل كل كتلة مفقودة والتحقق منها.",
+            "BOOTSTRAPOFFERBUTTON": "قم بتنزيل Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "استمرار المزامنة العادية",
+            "BOOTSTRAPSPACEINFO": "لا توجد مساحة كافية على القرص لتنزيل واستخراج ملف التثبيت. المساحة المطلوبة: {required}، المساحة المتاحة: {free}. قم بتوفير بعض المساحة وحاول مرة أخرى.",
+            "STARTUPFAILEDTITLE": "فشل بدء تشغيل Metrix Core",
+            "STARTUPFAILEDINFO": "حدث خطأ أثناء بدء تشغيل Metrix Core. يُنصح بمراجعة ملف سجل Altitude الخاص بك بحثًا عن أي مشاكل.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "أدوات الاسترداد",
             "CLIENTINVALIDCONFIGTITLE": "إعدادات ملف metrix.conf غير صالحة",
             "CLIENTINVALIDCONFIGINFO": "يحتوي ملف metrix.conf الخاص بك على إعداد غير صحيح للعقدة الرئيسية، مما سيؤدي إلى إغلاق Metrix Core فورًا. يرجى مراجعة هذا الملف.",
             "ADDREMOTEMNTITLE": "إضافة عقدة رئيسية عن بعد",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "المفتاح الخاص بالعقدة الرئيسية",
             "ADDREMOTEMNTXHASH": "تجزئة معاملات العقدة الرئيسية",
             "ADDREMOTEMNTXINDEX": "مؤشر معاملات العقدة الرئيسية",
-            "BOOTSTRAPFAILEDTITLE": "فشل عملية التمهيد لـ Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "حدثت مشكلة أثناء تهيئة Metrix Core. يُنصح بمراجعة ملف سجل Altitude الخاص بك بحثًا عن أي مشاكل.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "أدوات الاسترداد",
-            "STARTUPFAILEDTITLE": "فشل بدء تشغيل Metrix Core",
-            "STARTUPFAILEDINFO": "حدث خطأ أثناء بدء تشغيل Metrix Core. يُنصح بمراجعة ملف سجل Altitude الخاص بك بحثًا عن أي مشاكل.",
-            "CLIENTUNKNOWNERRORTITLE": "خطأ في اتصال Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "حدثت مشكلة في الاتصال بـ Metrix Core. يُنصح بمراجعة ملف debug.log الخاص بك بحثًا عن أي مشاكل.",
             "UNENROLLGOVERNORTITLE": "تأكيد إلغاء تسجيل الحاكم",
             "UNENROLLGOVERNORCONTENT": "هل أنت متأكد من رغبتك في إلغاء تسجيل اسم حاكمك؟ لن تتمكن بعد الآن من التصويت على نظام الحكم بالسلسلة.",
-            "WALLETUPDATEREADYTITLE": "تحديث الارتفاع جاهز",
-            "WALLETUPDATEREADYINFO": "تم تنزيل التحديث. هل تريد إعادة تشغيل برنامج Altitude الآن لتثبيته؟",
-            "WALLETUPDATERESTARTBUTTON": "أعد التشغيل والتثبيت",
-            "WALLETUPDATELATERBUTTON": "لاحقاً",
             "DAPPCONNECTTITLE": "الاتصال بالموقع",
             "DAPPCONNECTINFO": "يرغب هذا الموقع في الاتصال بمحفظتك الإلكترونية وعرض عنوانك ورصيدك.",
             "DAPPCONNECTBUTTON": "يتصل",
+            "DAPPCONNECTADDRESSLABEL": "عنوان",
+            "DAPPAPPROVEBUTTON": "يعتمد",
             "DAPPREJECTBUTTON": "يرفض",
             "DAPPSENDTITLE": "طلب معاملة عقد",
             "DAPPSENDINFO": "يطلب هذا الموقع إرسال معاملة عقد من محفظتك.",
-            "DAPPSIGNTITLE": "طلب توقيع الرسالة",
-            "DAPPSIGNINFO": "يطلب هذا الموقع توقيع رسالة باستخدام عنوان محفظتك.",
-            "DAPPNOTREADY": "لا يمكن الاتصال بالموقع بعد - لا يزال برنامج Metrix Core قيد التشغيل.",
-            "DAPPNOWALLET": "لا يمكن الاتصال بالموقع - لا يوجد عنوان محفظة متاح.",
-            "DAPPAPPROVEBUTTON": "يعتمد",
-            "DAPPCONNECTADDRESSLABEL": "عنوان",
             "DAPPSENDSITELABEL": "موقع",
             "DAPPSENDCONTRACTLABEL": "عنوان العقد",
             "DAPPSENDAMOUNTLABEL": "كمية",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "رسوم الشبكة القصوى",
             "DAPPSENDMAXTOTALLABEL": "الحد الأقصى الإجمالي",
             "DAPPSENDDATALABEL": "بيانات العقد",
+            "DAPPSIGNTITLE": "طلب توقيع الرسالة",
+            "DAPPSIGNINFO": "يطلب هذا الموقع توقيع رسالة باستخدام عنوان محفظتك.",
             "DAPPSIGNMESSAGELABEL": "رسالة",
-            "BOOTSTRAPOFFERTITLE": "محفظة قديمة الطراز بشكل ملحوظ",
-            "BOOTSTRAPOFFERINFO": "يتوفر تحديث حديث يُمكنه تحديث Metrix Core بسرعة. أما الاستمرار في المزامنة العادية فقد يستغرق عدة أيام، حيث تحتاج محفظتك إلى تنزيل كل كتلة مفقودة والتحقق منها.",
-            "BOOTSTRAPOFFERBUTTON": "قم بتنزيل Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "استمرار المزامنة العادية",
-            "BOOTSTRAPSPACEINFO": "لا توجد مساحة كافية على القرص لتنزيل واستخراج ملف التثبيت. المساحة المطلوبة: {required}، المساحة المتاحة: {free}. قم بتوفير بعض المساحة وحاول مرة أخرى."
+            "DAPPNOTREADY": "لا يمكن الاتصال بالموقع بعد - لا يزال برنامج Metrix Core قيد التشغيل.",
+            "DAPPNOWALLET": "لا يمكن الاتصال بالموقع - لا يوجد عنوان محفظة متاح."
         },
         "ADDRESSBOOK": {
             "TITLE": "دفتر العناوين",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "الشبكة الحالية"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "أدخل عنوان موقع ويب 3",
-            "GOBUTTON": "يذهب",
-            "QUICKLAUNCH": "إطلاق سريع",
-            "DEVTOOLS": "أدوات المطورين المفتوحة",
-            "ADDLINK": "إضافة رابط",
-            "LINKNAMEPLACEHOLDER": "اسم",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "يحفظ",
-            "CANCEL": "يلغي",
-            "REMOVE": "يزيل",
-            "REMOVECONFIRM": "هل تريد إزالة هذا الرابط السريع؟",
-            "LINKEXISTS": "هذا الرابط موجود بالفعل في قائمة التشغيل السريع الخاصة بك",
-            "LINKINVALID": "أدخل عنوان موقع صالح",
-            "LINKNETWORKLABEL": "شبكة",
-            "LOADFAILED": "فشل تحميل الموقع",
-            "SECURESITE": "الاتصال آمن - شهادة SSL صالحة",
-            "INSECURESITE": "الاتصال غير آمن",
-            "INVALIDCERTSITE": "الاتصال غير خاص - شهادة SSL غير صالحة أو غير موثوقة"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "محفظة احتياطية...",
             "SIGNMESSAGE": "رسالة التوقيع...",
             "VERIFYMESSAGE": "تأكيد الرسالة...",
-            "LOCALE": "لغة...",
-            "RESTARTCORE": "أعد تشغيل Metrix Core",
-            "EXIT": "مخرج",
             "OPTIONS": "خيارات...",
+            "LOCALE": "لغة...",
             "CURRENCIES": "عرض العملة...",
-            "ALTITUDEREFRESH": "تحديث بيانات الارتفاع"
+            "RESTARTCORE": "أعد تشغيل Metrix Core",
+            "ALTITUDEREFRESH": "تحديث بيانات الارتفاع",
+            "EXIT": "مخرج"
         },
         "ENCRYPT": {
             "TITLE": "تشفير",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "الرصيد الإجمالي",
+        "SPENDABLEBALANCE": "الرصيد المتاح للإنفاق",
+        "PENDINGBALANCE": "الرصيد المعلق",
         "CANCELBUTTON": "يلغي",
         "DONEBUTTON": "منتهي",
         "OKBUTTON": "نعم",
+        "ACCEPTBUTTON": "يقبل",
         "CLEARALLBUTTON": "مسح الكل",
         "ENTERACCOUNTLABEL": "أدخل تسمية لهذا العنوان",
         "ENTERADDRESSLABEL": "أدخل عنوان Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "فرز حسب",
         "SEARCH": "يبحث",
         "FEE": "مصاريف",
-        "ACCEPTBUTTON": "يقبل",
         "CONFIRMED": "مؤكد",
         "UNCONFIRMED": "غير مؤكد",
-        "PENDINGBALANCE": "الرصيد المعلق",
-        "SPENDABLEBALANCE": "الرصيد المتاح للإنفاق",
         "SAVEBUTTON": "يحفظ"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "إعادة تشغيل Metrix Core...",
         "BOOTSTRAPPING": "جارٍ تنزيل Bootstrap...",
         "BOOTSTRAPEXTRACTING": "جارٍ استخراج ملفات التمهيد...",
-        "TIMEREMAINING": "متبقي:"
+        "TIMEREMAINING": "متبقي:",
+        "DEVRPCOVERRIDEACTIVE": "تم ضبط خيار تجاوز اتصال RPC الخاص بالمطور (خيارات > المطور) وهو لا يستجيب. قم بإلغاء ضبطه لإعادة الاتصال بالخادم المحلي بشكل طبيعي.",
+        "DEVRPCOVERRIDECLEARBUTTON": "مسح تجاوز RPC وإعادة الاتصال"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "تم إنشاء الحساب الجديد بنجاح",
         "ADDRESSCOPIEDCLIPBOARD": "تم نسخ العنوان إلى الحافظة",
+        "COPIEDCLIPBOARD": "تم نسخها إلى الحافظة",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "تم نسخ المعاملات إلى الحافظة",
         "EMPTYFIELDS": "يرجى ملء جميع الحقول",
         "NOUPDATE": "لا توجد تحديثات متاحة",
         "WALLETBACKEDUP": "تم بنجاح نسخ المحفظة احتياطياً",
+        "WALLETBACKUPFAILED": "فشل النسخ الاحتياطي التلقائي للمحفظة - تحقق من موقع النسخ الاحتياطي ومساحة القرص المتاحة",
         "PASSPHRASEMISMATCH": "عبارات المرور التي أدخلتها لا تتطابق",
         "CHECKINGUPDATE": "جارٍ التحقق من وجود تحديثات...",
         "CHECKINGUPDATEFAILED": "تعذر التحقق من وجود تحديثات. يرجى التحقق من شبكتك.",
+        "WALLETUPDATEDOWNLOADING": "جارٍ تنزيل التحديث...",
         "SENDINGEXCEEDSBALANCE": "المبلغ الذي ترسله يتجاوز رصيدك المحدد",
         "MISSINGCHANGEADDRESS": "يجب عليك تحديد عنوان التغيير",
         "MISSINGDESTINATIONADDRESS": "يجب عليك تحديد عنوان الوجهة",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "تشفير المحفظة...",
         "CHANGINGPASSPHARASE": "تغيير عبارة المرور...",
         "STARTINGMASTERNODE": "بدء تشغيل العقدة الرئيسية...",
+        "STOPPINGMASTERNODE": "إيقاف العقدة الرئيسية...",
         "SENDINGTRANSACTION": "إرسال المعاملة...",
         "SIGNINGMESSAGE": "توقيع الرسائل...",
         "SIGNEDMESSAGE": "تم توقيع الرسالة",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "جارٍ فتح المحفظة...",
         "TRANSACTIONMISMATCH": "حدث خطأ في العملية. يرجى المحاولة مرة أخرى.",
         "MINIMUMCONFIRMATIONS": "تتطلب جميع المدخلات تأكيدًا واحدًا على الأقل قبل الإنفاق.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "تم نسخ المعاملات إلى الحافظة",
-        "STOPPINGMASTERNODE": "إيقاف العقدة الرئيسية...",
         "FAILEDTOWRITECONFIG": "حدثت مشكلة أثناء الكتابة إلى ملف metrix.conf. تأكد من وجود الملف وأن برنامج Altitude لديه صلاحيات الكتابة.",
         "NOPUBLICUP": "لم يتم العثور على عنوان IP عام. تحقق من اتصالك بالإنترنت وأعد تشغيل تطبيق Altitude.",
         "CONFIGURINGLOCALMN": "تهيئة العقدة الرئيسية المحلية...",
         "REPORTINGISSUE": "جارٍ الحصول على معلومات التشخيص... سيتم نسخ هذه المعلومات إلى الحافظة الخاصة بك.",
-        "WALLETUPDATEDOWNLOADING": "جارٍ تنزيل التحديث...",
-        "WALLETBACKUPFAILED": "فشل النسخ الاحتياطي التلقائي للمحفظة - تحقق من موقع النسخ الاحتياطي ومساحة القرص المتاحة",
         "EXPLORERURLSAVED": "تم حفظ عنوان URL الخاص بمستكشف الملفات",
         "EXPLORERURLRESET": "تمت إعادة عنوان URL الخاص بالمستكشف إلى الوضع الافتراضي",
         "EXPLORERURLINVALID": "هذا ليس عنوان URL صالحًا لبروتوكول HTTP(S)",
-        "EXPLORERURLUNREACHABLE": "تعذر الوصول إلى عنوان URL هذا - تحقق منه وحاول مرة أخرى"
+        "EXPLORERURLUNREACHABLE": "تعذر الوصول إلى عنوان URL هذا - تحقق منه وحاول مرة أخرى",
+        "DEVRPCHOSTSAVED": "تم حفظ مضيف RPC",
+        "DEVRPCHOSTRESET": "تمت إعادة مضيف RPC إلى الوضع الافتراضي (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "العملات المستلمة",
+        "NEWTRANSACTION_TITLE_STAKE": "الحصة المستلمة",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "تم استلام مكافأة العقدة الرئيسية"
     },
     "TIME": {
         "AFEWSECONDS": "بضع ثوانٍ",
@@ -533,11 +587,6 @@
         "MONTHS": "شهور",
         "AYEAR": "سنة",
         "YEARS": "سنين"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "العملات المستلمة",
-        "NEWTRANSACTION_TITLE_STAKE": "الحصة المستلمة",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "تم استلام مكافأة العقدة الرئيسية"
     },
     "MONTH": {
         "JAN": "يناير",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "يتحمل المحافظون مسؤولية التصويت على الميزانيات الشهرية والتغييرات المتعلقة بتقنية البلوك تشين. يمكنك أن تصبح محافظًا من خلال إيداع الضمانات المناسبة في عقد الحوكمة.",
                 "COLLATERAL": "الضمانات المطلوبة",
                 "ENROLL": "تسجل",
+                "SELECTAGOVERNOR": "يختار عنوانًا مؤهلًا للحاكم",
+                "GOVERNORNOTSELECTED": "لم يتم اختيار أي عنوان مؤهل",
                 "CONFIRMENROLL": "أنت على وشك التسجيل كمحافظ. سيؤدي هذا إلى إرسال معاملة تتضمن الضمانات المطلوبة إلى عقد الحوكمة. يمكنك إلغاء التسجيل في أي وقت.",
                 "ISGOVERNORTITLE": "أنت حاكم نشط!",
                 "ISGOVERNORDETAIL1": "يتحمل المحافظون مسؤولية التصويت على الميزانيات الشهرية والتغييرات المتعلقة بتقنية البلوك تشين.",
                 "ISGOVERNORDETAIL2": "للبقاء في منصب الحاكم، ستحتاج إلى المشاركة في تصويت واحد على الأقل كل 30 يومًا.",
                 "ISGOVERNORDETAIL3": "إذا لم يكن هناك شيء للتصويت عليه، فيمكنك متابعة تسجيلك يدويًا عن طريق إرسال إشارة تنبيه نشطة.",
+                "MYGOVERNORADDRESS": "خطابي أمام الحاكم",
                 "UNENROLL": "إلغاء التسجيل",
                 "PING": "إرسال إشارة تنبيه نشطة",
                 "LASTPINGTITLE": "آخر إشارة",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "أيام",
                 "GOVERNORVOTEMATURITYHOURS": "ساعات",
                 "GOVERNORVOTEMATURITYSUFFIX": "حتى النضج",
-                "MYGOVERNORADDRESS": "خطابي أمام الحاكم",
-                "SELECTAGOVERNOR": "يختار عنوانًا مؤهلًا للحاكم",
-                "GOVERNORNOTSELECTED": "لم يتم اختيار أي عنوان مؤهل",
                 "NOTFULLYSYNCEDTITLE": "حالة الحاكم غير متاحة",
                 "NOTFULLYSYNCEDDETAIL": "سيصبح وضع تسجيلك كمحافظ مرئيًا عندما تتم مزامنة سلسلة الكتل الخاصة بك بالكامل.",
                 "DGPMIGRATIONTITLE": "ترحيل DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "تم إنشاء اقتراحك بنجاح",
             "ENROLLINGGOVERNOR": "التسجيل كمحافظ...",
             "ENROLLEDGOVERNOR": "سيكتمل تسجيلك بمجرد تأكيد معاملتك",
-            "VOTINGONPROPOSAL": "إرسال اقتراح التصويت",
-            "VOTEDONPROPOSAL": "سيتم احتساب صوتك بمجرد تأكيد المعاملة.",
             "PINGINGGOVERNOR": "إرسال إشارة بينغ...",
             "PINGEDGOVERNOR": "تم إرسال الإشعار بنجاح. سيتم إبلاغ محافظك بمجرد تأكيد العملية.",
+            "VOTINGONPROPOSAL": "إرسال اقتراح التصويت",
+            "VOTEDONPROPOSAL": "سيتم احتساب صوتك بمجرد تأكيد المعاملة.",
             "UNENROLLINGGOVERNOR": "إلغاء تسجيل الحاكم...",
             "UNENROLLEDGOVERNOR": "تم إرسال المعاملة. سيتم إلغاء تسجيل محافظك بمجرد تأكيد المعاملة.",
             "GOVERNORNOTMATURE": "لم ينضج حاكمكم بما يكفي للقيام بهذا الإجراء بعد."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "اشترِ منتجات Metrix",
+                "SEARCH": "تاريخ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "أنت ترسل",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "سجل المعاملات",
                 "SEARCHBUTTON": "يبحث",
+                "SEARCHPLACEHOLDER": "أدخل عنوان MRX أو BTC",
                 "TRANSACTIONDATE": "تاريخ",
                 "TRANSACTIONTYPE": "نوع TX",
                 "TRANSACTIONAMOUNT": "كمية",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "مؤكد",
                 "TRANSACTIONNOTCONFIRMED": "غير مؤكد",
                 "TRANSACTIONREFUNDED": "تم استرداد المبلغ - أقل من الحد الأدنى",
-                "AVGSWAPPRICE": "متوسط سعر المبادلة",
-                "SEARCHPLACEHOLDER": "أدخل عنوان MRX أو BTC"
+                "AVGSWAPPRICE": "متوسط سعر المبادلة"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "جارٍ إنشاء عنوان التبديل...",
             "ALREADYHAVEADDRESS": "لديك بالفعل عنوان بيتكوين مرتبط بعنوان Metrix هذا",
             "NOADDRESS": "لم تُدخل عنوان Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "اشترِ منتجات Metrix",
-                "SEARCH": "تاريخ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "إظهار",
                 "EMPTYTITLE": "لم يتم العثور على أي رموز حتى الآن",
                 "EMPTYDETAIL": "يقوم برنامج Altitude تلقائيًا بفحص مستكشف الكتل بحثًا عن رموز MRC20 وMRC721 المرسلة إلى عناوينك، ثم يتحقق من كل شيء مباشرةً على عقدتك الخاصة. يمكنك أيضًا إضافة رمز يدويًا إذا كنت تعرف عنوان عقده.",
+                "EMPTYDETAILCHECKINGDISABLED": "تم إيقاف خاصية التحقق التلقائي من الرموز، لذا لن يتم فحص عناوينك بحثًا عن الرموز. أعد تشغيلها من الأعلى، أو أضف رمزًا يدويًا إذا كنت تعرف عنوان العقد الخاص به.",
                 "HIDDENTITLE": "الرموز المخفية",
                 "CONTEXTMENUHIDE": "إخفاء الرمز المميز",
                 "ITEMSSUFFIX": "أغراض)",
-                "NONENUMERABLETOOLTIP": "لا تدعم هذه المجموعة عرض العناصر الفردية - بل تعرض عدد العناصر التي تمتلكها."
+                "NONENUMERABLETOOLTIP": "لا تدعم هذه المجموعة عرض العناصر الفردية - بل تعرض عدد العناصر التي تمتلكها.",
+                "CHECKINGENABLED": "التحقق من",
+                "CHECKINGDISABLED": "إتمام الإجراءات",
+                "CHECKINGENABLEDTOOLTIP": "تم تفعيل خاصية التحقق من الرموز المميزة - يقوم تطبيق Altitude بالتحقق دوريًا من عناوينك بحثًا عن الرموز المميزة وتحديث الأرصدة. انقر لإيقاف هذه الخاصية.",
+                "CHECKINGDISABLEDTOOLTIP": "تم إيقاف التحقق من الرمز المميز - انقر لإعادة تشغيله.",
+                "CHECKINGDISABLEDNOTICE": "تم إيقاف التحقق التلقائي من الرموز المميزة. لن يتم فحص عناوينك بحثًا عن الرموز المميزة، ولن يتم تحديث الأرصدة. لا يزال بإمكانك إضافة رمز مميز يدويًا."
             },
             "ADDTOKEN": {
                 "TITLE": "إضافة رمز مميز",

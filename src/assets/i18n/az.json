@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Hesab Yarat",
             "HIDEEMPTYACCOUNTS": "Adsız Boş Hesabları Gizlət"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Baxış",
+            "TRANSACTIONSTAB": "Əməliyyatlar",
+            "ADDRESSTABS": "Ünvanlar"
+        },
         "SEND": {
             "ADDRECIPIENT": "Alıcı əlavə edin",
             "SEND": "Göndər",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Tarix",
             "TABLECOLUMNS_CONFIRMS": "Təsdiqlər",
             "ALL_SELECTUNSELECT": "Hamısını aç/bağla",
+            "TREEMODE": "Ağac Rejimi",
+            "LISTMODE": "Siyahı Rejimi",
             "SENDAVAILABLE": "Mövcud balansdan istifadə edin",
             "INPUTLOCKED": "Giriş kilidlənib. Onu xərcləmək üçün bu girişin kilidini açmalısınız.",
             "CONTEXTMENULOCKINPUT": "Girişi kilidləyin",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Ödənişdən sonrakı ödəniş",
             "QUANTITY": "Miqdar",
             "BYTES": "Baytlar",
-            "TREEMODE": "Ağac Rejimi",
-            "LISTMODE": "Siyahı Rejimi",
             "ALERTFEECHANGETITLE": "Ödəniş dəyişikliyi",
             "ALERTFEECHANGECONTENT": "Faktiki əməliyyat haqqı gözləniləndən yüksəkdir. Zəhmət olmasa, yeni haqqı təsdiqləyin:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Müqavilə Yarat",
+            "INFO": "Ağıllı müqaviləni onun tərtib edilmiş bayt kodunu təqdim etməklə şəbəkəyə yerləşdirin. Bu, əsas zəncir funksiyasıdır - yerləşdirməzdən əvvəl bayt kodunuzu və qaz parametrlərinizi ikiqat yoxlayın, yerləşdirmə geri qaytarıla bilməz.",
+            "FROM": "Kimdən",
+            "BYTECODE": "Baytkod",
+            "BYTECODEPLACEHOLDER": "Tərtib edilmiş müqavilə bayt kodunu (hex) yapışdırın",
+            "INVALIDBYTECODE": "Baytkod cüt sayda simvoldan ibarət etibarlı altıbucaqlı sətir (0-9, a-f) olmalıdır",
+            "GASLIMIT": "Qaz Limiti",
+            "GASLIMITRANGE": "Menzil",
+            "GASPRICE": "Qaz Qiyməti (qaz vahidi üçün MRX)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Təxmini maksimum xərc",
+            "DEPLOYBUTTON": "Yerləşdirmə Müqaviləsi",
+            "INCOMPLETEFORM": "Göndərənin ünvanını seçin, etibarlı baytkod daxil edin və etibarlı yanacaq limiti/qiyməti təyin edin",
+            "HIGHGASPRICETITLE": "Yüksək Benzin Qiyməti",
+            "HIGHGASPRICEINFO": "Təyin etdiyiniz yanacaq qiyməti qeyri-adi dərəcədə yüksəkdir. Bu yerləşdirmə aşağıdakılara başa gələ bilər:",
+            "DEPLOYING": "Müqavilənin yerləşdirilməsi...",
+            "DEPLOYED": "Müqavilənin yerləşdirilməsi təqdim edildi",
+            "RESULTTITLE": "Yerləşdirmə Nəticəsi",
+            "STATUS": "Status",
+            "STATUSPENDING": "Təsdiq gözlənilir...",
+            "STATUSCONFIRMED": "Uğurla yerləşdirildi",
+            "STATUSFAILED": "Yerləşdirmə uğursuz oldu",
+            "TXID": "Əməliyyat ID-si",
+            "SENDER": "Göndərən",
+            "CONTRACTADDRESS": "Müqavilə Ünvanı",
+            "GASUSED": "İstifadə olunmuş qaz",
+            "DONEBUTTON": "Hazırdır",
+            "DEPLOYANOTHERBUTTON": "Başqasını yerləşdirin"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Əməliyyatlar",
+            "COPYBLOCKHASH": "Blok Heşini Kopyalayın",
+            "COPYTXID": "Əməliyyat ID-sini kopyalayın",
+            "COPYACCOUNT": "Hesab adını kopyalayın",
+            "COPYADDRESS": "Ünvanı kopyalayın",
+            "COPYAMOUNT": "Kopyalama məbləği",
+            "COPTBLOCKINDEX": "Blok İndeksini Kopyalayın",
+            "EXPLORER": "Block Explorer-də açın"
         },
         "STAKING": {
             "UNLOCK": "Staking üçün kilidini açın",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Ünvan",
             "ENABLED": "Aktivləşdirilib",
-            "STARTBUTTON": "Yerli Başlayın",
-            "STARTALIASBUTTON": "Ləqəb başlayın",
-            "STARTALLBUTTON": "Hamısına Başla",
             "NOMASTERNODES": "Heç bir masternodunuz yoxdur",
             "NOMNOUTPUTS": "Masternode çıxışı tapılmadı. Yerli Masternode-u işə salmaq üçün Masternode ünvanınıza tam olaraq 2,5,25,50 və ya 100 milyon sikkə göndərin və 15 təsdiq gözləyin.",
+            "STARTBUTTON": "Yerli Başlayın",
             "STOPBUTTON": "Yerli Dayandırın",
+            "STARTALIASBUTTON": "Ləqəb başlayın",
             "STOPALIASBUTTON": "Ləqəbi dayandırın",
+            "STARTALLBUTTON": "Hamısına Başla",
             "ADDREMOTE": "Uzaq Masternode əlavə edin",
             "REMOVEMN": "Masternode-u silin",
             "ADDLOCAL": "Yerli Masternode Quraşdırın",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Ümumi",
                 "COREVERSION": "Əsas versiya",
+                "ALTITUDEVERSION": "Hündürlük Versiyası",
                 "PROTOCOLVERSION": "Protokol Versiyası",
                 "WALLETVERSION": "Wallet.dat versiyası",
                 "NETWORKTITLE": "Şəbəkə",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternodların sayı",
                 "BLOCKCHAINTITLE": "Blok Zənciri",
                 "NUMBERBLOCKS": "Cari blok sayı",
-                "BESTBLOCKTTIME": "Son blok vaxtı",
-                "ALTITUDEVERSION": "Hündürlük Versiyası"
+                "BESTBLOCKTTIME": "Son blok vaxtı"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC konsoluna xoş gəlmisiniz. Mövcud əmrlərə ümumi baxış üçün help yazın.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Dil seçin"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Əməliyyatlar",
-            "COPYBLOCKHASH": "Blok Heşini Kopyalayın",
-            "COPYTXID": "Əməliyyat ID-sini kopyalayın",
-            "COPYACCOUNT": "Hesab adını kopyalayın",
-            "COPYADDRESS": "Ünvanı kopyalayın",
-            "COPYAMOUNT": "Kopyalama məbləği",
-            "COPTBLOCKINDEX": "Blok İndeksini Kopyalayın",
-            "EXPLORER": "Block Explorer-də açın"
+        "CURRENCY": {
+            "TITLE": "Göstərilən Valyutanı Seçin"
         },
         "EXPLORER": {
             "TITLE": "Blok Tədqiqatçısı",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Şəbəkə",
             "WINDOTAB": "Pəncərə",
+            "BACKUPTAB": "Yedəkləmə",
+            "EXPLORERTAB": "Kəşfiyyatçı",
+            "DEVELOPERTAB": "Geliştirici",
             "NETWORK": {
                 "PROXY": "SOCKS5 proxy vasitəsilə qoşulun",
                 "PROXYIP": "Proksi IP-si",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Bağlandıqda kiçildin",
                 "BEHAVIOURTITLE": "Sistem Tepsisi və Pəncərə Davranışı"
             },
-            "BACKUPTAB": "Yedəkləmə",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Avtomatik Yedəkləmə",
                 "ENABLED": "Cədvəl üzrə avtomatik olaraq wallet.dat ehtiyat nüsxəsini çıxarın",
                 "ENABLEDINFO": "Cüzdan faylınızın yeni bir ehtiyat nüsxəsini cədvəl üzrə yaradır, beləliklə, bir şey səhv gedərsə, həmişə son bir nüsxə əlçatan olur.",
+                "INTERVALLABEL": "Hər (gün) yedəkləyin",
                 "LASTBACKUP": "Son yedəkləmə:",
                 "NEVERBACKEDUP": "Hələ ki, avtomatik ehtiyat nüsxəsi yaradılmayıb.",
                 "BACKUPNOWBUTTON": "İndi Yedəkləyin",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Varsayılan vəziyyətə sıfırlayın",
                 "PRUNETITLE": "Yedəkləmə Tarixçəsi",
                 "PRUNEINFO": "Köhnə avtomatik ehtiyat nüsxələri silinir, ona görə də bu qovluq əbədi olaraq böyümür - yalnız aşağıdakı ən son ehtiyat nüsxələr saxlanılır.",
-                "KEEPCOUNTLABEL": "Sonuncu saxlayın",
-                "INTERVALLABEL": "Hər (gün) yedəkləyin"
+                "KEEPCOUNTLABEL": "Sonuncu saxlayın"
             },
-            "EXPLORERTAB": "Kəşfiyyatçı",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blok Tədqiqatçısı",
                 "BLOCKEXPLORERINFO": "Sayt blok tədqiqatçısında əməliyyata baxarkən açıldı (məsələn, əməliyyata sağ klikləyin > Explorer-də baxın).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Əsas şəbəkə",
                 "TESTNET": "Testnet",
                 "REGTEST": "Qeydiyyat testi"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Geliştirici Rejimi",
+                "DEVMODEINFO": "Varsayılan olaraq deaktivdir və yalnız tərtibatçılar üçün nəzərdə tutulub. Bunu aktivləşdirmək RPC bağlantısını ləğv etmək üçün seçimləri açır - standart istifadəçilər bunu deaktiv saxlamalıdırlar.",
+                "DEVMODELABEL": "Geliştirici Rejimini Aktivləşdirin",
+                "WARNING": "Bu parametrlər yalnız inkişaf məqsədləri üçündür. Onları dəyişdirmək cüzdanın ümumiyyətlə bir demonla əlaqə qurmasının qarşısını ala bilər - bundan yalnız nə etdiyinizi bilirsinizsə istifadə edin.",
+                "RPCHOSTTITLE": "RPC Bağlantısı",
+                "RPCHOSTINFO": "Varsayılan olaraq, Altitude bu maşında (127.0.0.1) özünü idarə etdiyi deemonla əlaqə qurur. Bunları ləğv etmək, onun əvəzinə fərqli bir deemonla - məsələn, uzaq bir regtest nümunəsi ilə - lokal olaraq işə salmadan əlaqə qurmasına imkan verir. Bağlantı uğurlu olarsa, Altitude öz lokal deemonunu yükləməyəcək və ya işə salmayacaq. Hədəf deemonun rpcalowip bu bağlantıya icazə verməlidir və aşağıdakı rpcuser/rpcpassword onun konfiqurasiyasına uyğun olmalıdır. Dərhal qüvvəyə minir, yenidən başlatmağa ehtiyac yoxdur.",
+                "RPCHOSTLABEL": "RPC Hostu",
+                "RPCPORTLABEL": "RPC Portu",
+                "RPCUSERLABEL": "RPC İstifadəçi adı",
+                "RPCPASSWORDLABEL": "RPC Şifrəsi"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Baxış",
-            "TRANSACTIONSTAB": "Əməliyyatlar",
-            "ADDRESSTABS": "Ünvanlar"
-        },
-        "CURRENCY": {
-            "TITLE": "Göstərilən Valyutanı Seçin"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "İdarəetmə paneli",
             "SEND": "Göndər",
+            "CREATECONTRACT": "Müqavilə Yarat",
             "RECEIVE": "Qəbul et",
             "TRANSACTIONS": "Əməliyyatlar",
             "STAKING": "Staklama",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Blok Tədqiqatçısı",
             "SYNC": {
                 "CONNECTING": "Qoşulma",
                 "NOBLOCKS": "Blokları gözləyirəm",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Cüzdan hazırda stavka etmir",
                 "MASTERNODEON": "Masternode hazırda işləyir",
                 "MASTERNODEOFF": "Masternode hazırda işləmir"
-            },
-            "EXPLORER": "Blok Tədqiqatçısı"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Web3 sayt ünvanını daxil edin",
+            "GOBUTTON": "Get",
+            "QUICKLAUNCH": "Tez Başlatma",
+            "DEVTOOLS": "Açıq Geliştirici Alətləri",
+            "ADDLINK": "Link əlavə edin",
+            "LINKNAMEPLACEHOLDER": "Ad",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Yadda saxla",
+            "CANCEL": "Ləğv et",
+            "REMOVE": "Sil",
+            "REMOVECONFIRM": "Bu sürətli keçid silinsin?",
+            "LINKEXISTS": "Həmin link artıq sürətli işə salma siyahınızdadır",
+            "LINKINVALID": "Düzgün sayt ünvanı daxil edin",
+            "LINKNETWORKLABEL": "Şəbəkə",
+            "LOADFAILED": "Sayt yüklənmədi",
+            "SECURESITE": "Bağlantı təhlükəsizdir - etibarlı SSL sertifikatı",
+            "INSECURESITE": "Bağlantı təhlükəsiz deyil",
+            "INVALIDCERTSITE": "Bağlantı gizli deyil - etibarsız və ya etibarsız SSL sertifikatı"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Cüzdan Şifrənizi Daxil Edin",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core üçün yeniləmə mövcuddur. Onu indi quraşdırmaq istərdinizmi?",
             "WALLETUPDATETITLE": "Hündürlük Yeniləməsi Mövcuddur",
             "WALLETUPDATEINFO": "Altitude üçün yeniləmə mövcuddur. İndi yükləmək istərdinizmi?",
+            "WALLETUPDATEREADYTITLE": "Hündürlük Yeniləməsi Hazırdır",
+            "WALLETUPDATEREADYINFO": "Yeniləmə yükləndi. Quraşdırmaq üçün Altitude tətbiqini yenidən başladın?",
+            "WALLETUPDATERESTARTBUTTON": "Yenidən başladın və quraşdırın",
+            "WALLETUPDATELATERBUTTON": "Sonradan",
             "CLIENTUPDATEBUTTON": "Yeniləmə",
             "CLIENTUPDATECANCELBUTTON": "Yeniləməyin",
             "CLIENTUPDATESKIPBUTTON": "Bu Yeniləməni Keçir",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Cüzdan faylınızdan əvvəlki ehtiyat nüsxələrini yeni yaradılmış, şifrələnmiş cüzdan faylı ilə əvəz etməlisiniz. Təhlükəsizlik səbəblərinə görə, şifrələnməmiş cüzdan faylının əvvəlki ehtiyat nüsxələri yeni, şifrələnmiş cüzdandan istifadə etməyə başladıqdan sonra yararsız hala düşəcək.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core gözlənilmədən dayandı",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ilə bağlı bir problem yarandı və bu da onun dayandırılmasına səbəb oldu. Problemlər üçün debug.log faylınızı yoxlamağınız tövsiyə olunur.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Rabitə Xətası",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core ilə əlaqə qurarkən problem yarandı. Problemlər üçün debug.log faylınızı yoxlamağınız tövsiyə olunur.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Xətalı",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-un yüklənməsi zamanı problem yarandı. Problemlər üçün Altitude jurnal faylınızı yoxlamağınız tövsiyə olunur.",
+            "BOOTSTRAPOFFERTITLE": "Cüzdan Xeyli Köhnəlib",
+            "BOOTSTRAPOFFERINFO": "Metrix Core-u tez bir zamanda yeniləyə bilən ən son bootstrap mövcuddur. Bunun əvəzinə normal sinxronizasiya ilə davam etmək bir neçə gün çəkə bilər, çünki cüzdanınız qaçırdığı hər bloku yükləməli və yoxlamalıdır.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap-ı yükləyin",
+            "BOOTSTRAPOFFERCANCEL": "Normal Sinxronizasiyaya Davam Edin",
+            "BOOTSTRAPSPACEINFO": "Bootstrap faylını yükləmək və çıxarmaq üçün kifayət qədər boş disk yeri yoxdur. Tələb olunur: {required}, Mövcuddur: {free}. Bir az yer boşaldın və yenidən cəhd edin.",
+            "STARTUPFAILEDTITLE": "Metrix Core Başlatma Uğursuz Oldu",
+            "STARTUPFAILEDINFO": "Metrix Core proqramını işə salarkən xəta baş verdi. Problemlər üçün Altitude jurnal faylınızı yoxlamağınız tövsiyə olunur.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Bərpa Alətləri",
             "CLIENTINVALIDCONFIGTITLE": "Yanlış metrix.conf Konfiqurasiyası",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf faylınızda yanlış masternode quraşdırması var və bu da Metrix Core-un dərhal çıxmasına səbəb olacaq. Zəhmət olmasa, bu faylı yoxlayın.",
             "ADDREMOTEMNTITLE": "Uzaq Masternode əlavə edin",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode Şəxsi Açar",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx İndeksi",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Xətalı",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core-un yüklənməsi zamanı problem yarandı. Problemlər üçün Altitude jurnal faylınızı yoxlamağınız tövsiyə olunur.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Bərpa Alətləri",
-            "STARTUPFAILEDTITLE": "Metrix Core Başlatma Uğursuz Oldu",
-            "STARTUPFAILEDINFO": "Metrix Core proqramını işə salarkən xəta baş verdi. Problemlər üçün Altitude jurnal faylınızı yoxlamağınız tövsiyə olunur.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core Rabitə Xətası",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core ilə əlaqə qurarkən problem yarandı. Problemlər üçün debug.log faylınızı yoxlamağınız tövsiyə olunur.",
             "UNENROLLGOVERNORTITLE": "Qubernatorun qeydiyyatdan çıxarılmasını təsdiqləyin",
             "UNENROLLGOVERNORCONTENT": "Qubernatorunuzun qeydiyyatından çıxmaq istədiyinizə əminsiniz? Artıq zəncirvari idarəetmə ilə bağlı səs verə bilməyəcəksiniz.",
-            "WALLETUPDATEREADYTITLE": "Hündürlük Yeniləməsi Hazırdır",
-            "WALLETUPDATEREADYINFO": "Yeniləmə yükləndi. Quraşdırmaq üçün Altitude tətbiqini yenidən başladın?",
-            "WALLETUPDATERESTARTBUTTON": "Yenidən başladın və quraşdırın",
-            "WALLETUPDATELATERBUTTON": "Sonradan",
             "DAPPCONNECTTITLE": "Sayta qoşulun",
             "DAPPCONNECTINFO": "Bu sayt cüzdanınıza qoşulmaq və ünvanınızı və balansınızı görmək istəyir.",
             "DAPPCONNECTBUTTON": "Qoşulun",
+            "DAPPCONNECTADDRESSLABEL": "Ünvan",
+            "DAPPAPPROVEBUTTON": "Təsdiq et",
             "DAPPREJECTBUTTON": "Rədd et",
             "DAPPSENDTITLE": "Müqavilə Əməliyyatı Tələbi",
             "DAPPSENDINFO": "Bu sayt cüzdanınızdan müqavilə əməliyyatı göndərməyi tələb edir.",
-            "DAPPSIGNTITLE": "Mesaj Sorğusunu İmzalayın",
-            "DAPPSIGNINFO": "Bu sayt cüzdan ünvanınızla mesaj imzalamağı xahiş edir.",
-            "DAPPNOTREADY": "Sayta hələ qoşula bilmirəm - Metrix Core hələ də işə düşür.",
-            "DAPPNOWALLET": "Sayta qoşulmaq mümkün deyil - cüzdan ünvanı mövcud deyil.",
-            "DAPPAPPROVEBUTTON": "Təsdiq et",
-            "DAPPCONNECTADDRESSLABEL": "Ünvan",
             "DAPPSENDSITELABEL": "Sayt",
             "DAPPSENDCONTRACTLABEL": "Müqavilə Ünvanı",
             "DAPPSENDAMOUNTLABEL": "Məbləğ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimum Şəbəkə Ödənişi",
             "DAPPSENDMAXTOTALLABEL": "Maksimum Cəm",
             "DAPPSENDDATALABEL": "Müqavilə Məlumatları",
+            "DAPPSIGNTITLE": "Mesaj Sorğusunu İmzalayın",
+            "DAPPSIGNINFO": "Bu sayt cüzdan ünvanınızla mesaj imzalamağı xahiş edir.",
             "DAPPSIGNMESSAGELABEL": "Mesaj",
-            "BOOTSTRAPOFFERTITLE": "Cüzdan Xeyli Köhnəlib",
-            "BOOTSTRAPOFFERINFO": "Metrix Core-u tez bir zamanda yeniləyə bilən ən son bootstrap mövcuddur. Bunun əvəzinə normal sinxronizasiya ilə davam etmək bir neçə gün çəkə bilər, çünki cüzdanınız qaçırdığı hər bloku yükləməli və yoxlamalıdır.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap-ı yükləyin",
-            "BOOTSTRAPOFFERCANCEL": "Normal Sinxronizasiyaya Davam Edin",
-            "BOOTSTRAPSPACEINFO": "Bootstrap faylını yükləmək və çıxarmaq üçün kifayət qədər boş disk yeri yoxdur. Tələb olunur: {required}, Mövcuddur: {free}. Bir az yer boşaldın və yenidən cəhd edin."
+            "DAPPNOTREADY": "Sayta hələ qoşula bilmirəm - Metrix Core hələ də işə düşür.",
+            "DAPPNOWALLET": "Sayta qoşulmaq mümkün deyil - cüzdan ünvanı mövcud deyil."
         },
         "ADDRESSBOOK": {
             "TITLE": "Ünvan Kitabı",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Cari şəbəkə"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Web3 sayt ünvanını daxil edin",
-            "GOBUTTON": "Get",
-            "QUICKLAUNCH": "Tez Başlatma",
-            "DEVTOOLS": "Açıq Geliştirici Alətləri",
-            "ADDLINK": "Link əlavə edin",
-            "LINKNAMEPLACEHOLDER": "Ad",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Yadda saxla",
-            "CANCEL": "Ləğv et",
-            "REMOVE": "Sil",
-            "REMOVECONFIRM": "Bu sürətli keçid silinsin?",
-            "LINKEXISTS": "Həmin link artıq sürətli işə salma siyahınızdadır",
-            "LINKINVALID": "Düzgün sayt ünvanı daxil edin",
-            "LINKNETWORKLABEL": "Şəbəkə",
-            "LOADFAILED": "Sayt yüklənmədi",
-            "SECURESITE": "Bağlantı təhlükəsizdir - etibarlı SSL sertifikatı",
-            "INSECURESITE": "Bağlantı təhlükəsiz deyil",
-            "INVALIDCERTSITE": "Bağlantı gizli deyil - etibarsız və ya etibarsız SSL sertifikatı"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Ehtiyat Pulqabı...",
             "SIGNMESSAGE": "Mesajı imzalayın...",
             "VERIFYMESSAGE": "Mesajı təsdiqləyin...",
-            "LOCALE": "Dil...",
-            "RESTARTCORE": "Metrix Core-u yenidən başladın",
-            "EXIT": "Çıxış",
             "OPTIONS": "Seçimlər...",
+            "LOCALE": "Dil...",
             "CURRENCIES": "Valyutanı Göstər...",
-            "ALTITUDEREFRESH": "Hündürlük Məlumatlarını Yeniləyin"
+            "RESTARTCORE": "Metrix Core-u yenidən başladın",
+            "ALTITUDEREFRESH": "Hündürlük Məlumatlarını Yeniləyin",
+            "EXIT": "Çıxış"
         },
         "ENCRYPT": {
             "TITLE": "Şifrələyin",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Ümumi Balans",
+        "SPENDABLEBALANCE": "Xərclənə bilən balans",
+        "PENDINGBALANCE": "Gözlənilən Balans",
         "CANCELBUTTON": "Ləğv et",
         "DONEBUTTON": "Hazırdır",
         "OKBUTTON": "Yaxşı",
+        "ACCEPTBUTTON": "Qəbul et",
         "CLEARALLBUTTON": "Hamısını sil",
         "ENTERACCOUNTLABEL": "Bu ünvan üçün etiket daxil edin",
         "ENTERADDRESSLABEL": "Metrix ünvanını daxil edin",
@@ -464,11 +511,8 @@
         "SORTBY": "Sıralama Müəyyənləşdirin",
         "SEARCH": "Axtarış",
         "FEE": "Ödəniş",
-        "ACCEPTBUTTON": "Qəbul et",
         "CONFIRMED": "Təsdiqləndi",
         "UNCONFIRMED": "Təsdiqlənməmiş",
-        "PENDINGBALANCE": "Gözlənilən Balans",
-        "SPENDABLEBALANCE": "Xərclənə bilən balans",
         "SAVEBUTTON": "Yadda saxla"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core yenidən başladılır...",
         "BOOTSTRAPPING": "Bootstrap yüklənir...",
         "BOOTSTRAPEXTRACTING": "Bootstrap çıxarılır...",
-        "TIMEREMAINING": "qalan:"
+        "TIMEREMAINING": "qalan:",
+        "DEVRPCOVERRIDEACTIVE": "Geliştirici RPC bağlantısı yenidən təyin edilib (Seçimlər > Geliştirici) və cavab vermir. Yerli daemona normal şəkildə yenidən qoşulmaq üçün onu silin.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC Yalnışını Sil və Yenidən Qoşul"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yeni hesab uğurla yaradıldı",
         "ADDRESSCOPIEDCLIPBOARD": "Ünvan panoya kopyalandı",
+        "COPIEDCLIPBOARD": "Buferə kopyalandı",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Əməliyyatlar panoya kopyalandı",
         "EMPTYFIELDS": "Zəhmət olmasa, bütün sahələri doldurun",
         "NOUPDATE": "Yeniləmə mövcud deyil",
         "WALLETBACKEDUP": "Pul kisəsi yedəkləməsi uğurlu oldu",
+        "WALLETBACKUPFAILED": "Avtomatik cüzdan ehtiyat nüsxəsi uğursuz oldu - ehtiyat nüsxənizin yerini və mövcud disk yerini yoxlayın",
         "PASSPHRASEMISMATCH": "Daxil etdiyiniz parol ifadələri uyğun gəlmir",
         "CHECKINGUPDATE": "Yeniləmə yoxlanılır...",
         "CHECKINGUPDATEFAILED": "Yeniləməni yoxlamaq mümkün deyil. Şəbəkənizi yoxlayın.",
+        "WALLETUPDATEDOWNLOADING": "Yeniləmə yüklənir...",
         "SENDINGEXCEEDSBALANCE": "Göndərdiyiniz məbləğ seçdiyiniz balansı aşır",
         "MISSINGCHANGEADDRESS": "Dəyişiklik ünvanını göstərməlisiniz",
         "MISSINGDESTINATIONADDRESS": "Təyinat ünvanını göstərməlisiniz",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Cüzdan şifrələnir...",
         "CHANGINGPASSPHARASE": "Şifrə dəyişdirilir...",
         "STARTINGMASTERNODE": "Masternode başlayır...",
+        "STOPPINGMASTERNODE": "Masternode dayandırılır...",
         "SENDINGTRANSACTION": "Əməliyyat göndərilir...",
         "SIGNINGMESSAGE": "Mesaj imzalanır...",
         "SIGNEDMESSAGE": "Mesaj imzalandı",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Pul kisəsinin kilidi açılır...",
         "TRANSACTIONMISMATCH": "Əməliyyat xətası. Zəhmət olmasa, yenidən cəhd edin.",
         "MINIMUMCONFIRMATIONS": "Bütün daxiletmələr xərcləməzdən əvvəl ən azı 1 təsdiq tələb edir.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Əməliyyatlar panoya kopyalandı",
-        "STOPPINGMASTERNODE": "Masternode dayandırılır...",
         "FAILEDTOWRITECONFIG": "metrix.conf faylınıza yazarkən problem yarandı. Faylın mövcudluğunu və Altitude-un yazma icazələrinin olub olmadığını yoxlayın.",
         "NOPUBLICUP": "İctimai IP ünvanı tapılmadı. İnternet bağlantınızı yoxlayın və Altitude-u yenidən başladın.",
         "CONFIGURINGLOCALMN": "Yerli Masternode konfiqurasiya edilir...",
         "REPORTINGISSUE": "Diaqnostik məlumat əldə edilir... Bu məlumat panoya kopyalanacaq.",
-        "WALLETUPDATEDOWNLOADING": "Yeniləmə yüklənir...",
-        "WALLETBACKUPFAILED": "Avtomatik cüzdan ehtiyat nüsxəsi uğursuz oldu - ehtiyat nüsxənizin yerini və mövcud disk yerini yoxlayın",
         "EXPLORERURLSAVED": "Explorer URL-i yadda saxlanıldı",
         "EXPLORERURLRESET": "Explorer URL-i standart vəziyyətə qaytarıldı",
         "EXPLORERURLINVALID": "Bu, etibarlı http(lər) URL-i deyil",
-        "EXPLORERURLUNREACHABLE": "Həmin URL-ə çatmaq mümkün olmadı - yoxlayın və yenidən cəhd edin"
+        "EXPLORERURLUNREACHABLE": "Həmin URL-ə çatmaq mümkün olmadı - yoxlayın və yenidən cəhd edin",
+        "DEVRPCHOSTSAVED": "RPC hostu yadda saxlanıldı",
+        "DEVRPCHOSTRESET": "RPC hostu standart vəziyyətə qaytarıldı (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Alınan Sikkələr",
+        "NEWTRANSACTION_TITLE_STAKE": "Alınan Mərc",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode Mükafatı Alındı"
     },
     "TIME": {
         "AFEWSECONDS": "Bir neçə saniyə",
@@ -533,11 +587,6 @@
         "MONTHS": "aylar",
         "AYEAR": "Bir il",
         "YEARS": "illər"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Alınan Sikkələr",
-        "NEWTRANSACTION_TITLE_STAKE": "Alınan Mərc",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode Mükafatı Alındı"
     },
     "MONTH": {
         "JAN": "YAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "İdarəçilər aylıq büdcələr və blokçeyn dəyişiklikləri ilə bağlı səsvermədə məsuliyyət daşıyırlar. İdarəetmə müqaviləsində düzgün girovu bağlamaqla İdarəçi ola bilərsiniz.",
                 "COLLATERAL": "Tələb olunan girov",
                 "ENROLL": "Qeydiyyatdan keçin",
+                "SELECTAGOVERNOR": "Uyğun bir qubernator ünvanı seçin",
+                "GOVERNORNOTSELECTED": "Uyğun ünvan seçilməyib",
                 "CONFIRMENROLL": "İdarəçi kimi qeydiyyatdan keçmək üzrəsiniz. Bu, idarəetmə müqaviləsinə tələb olunan girovla əməliyyat göndərəcək. İstənilən vaxt qeydiyyatdan çıxa bilərsiniz.",
                 "ISGOVERNORTITLE": "Siz fəal qubernatorsunuz!",
                 "ISGOVERNORDETAIL1": "Qubernatorlar aylıq büdcələr və blokçeyn dəyişiklikləri ilə bağlı səsvermədə iştirak etməkdən məsuldurlar.",
                 "ISGOVERNORDETAIL2": "Qubernator olaraq qalmaq üçün hər 30 gündə ən azı 1 səsvermədə iştirak etməlisiniz.",
                 "ISGOVERNORDETAIL3": "Səs verəcək bir şey yoxdursa, aktiv ping göndərərək qeydiyyatınızı əl ilə davam etdirə bilərsiniz.",
+                "MYGOVERNORADDRESS": "Qubernatorun çıxışı",
                 "UNENROLL": "Qeydiyyatdan çıxın",
                 "PING": "Aktiv Ping Göndər",
                 "LASTPINGTITLE": "Son ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "günlər",
                 "GOVERNORVOTEMATURITYHOURS": "saatlar",
                 "GOVERNORVOTEMATURITYSUFFIX": "yetkinliyə qədər",
-                "MYGOVERNORADDRESS": "Qubernatorun çıxışı",
-                "SELECTAGOVERNOR": "Uyğun bir qubernator ünvanı seçin",
-                "GOVERNORNOTSELECTED": "Uyğun ünvan seçilməyib",
                 "NOTFULLYSYNCEDTITLE": "Qubernator statusu mövcud deyil",
                 "NOTFULLYSYNCEDDETAIL": "Blokçeyniniz tam sinxronizasiya olunduqda, Qubernator qeydiyyat statusunuz görünəcək.",
                 "DGPMIGRATIONTITLE": "DGP Miqrasiyası",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Təklifiniz uğurla yaradıldı",
             "ENROLLINGGOVERNOR": "Qubernator kimi qeydiyyatdan keçir...",
             "ENROLLEDGOVERNOR": "Əməliyyatınız təsdiqləndikdən sonra qeydiyyatınız tamamlanacaq",
-            "VOTINGONPROPOSAL": "Təklif səsverməsi göndərilir",
-            "VOTEDONPROPOSAL": "Əməliyyat təsdiqləndikdən sonra səsiniz sayılacaq.",
             "PINGINGGOVERNOR": "Ping göndərilir...",
             "PINGEDGOVERNOR": "Ping uğurla göndərildi. Əməliyyat təsdiqləndikdən sonra İdarəçiniz yenilənəcək",
+            "VOTINGONPROPOSAL": "Təklif səsverməsi göndərilir",
+            "VOTEDONPROPOSAL": "Əməliyyat təsdiqləndikdən sonra səsiniz sayılacaq.",
             "UNENROLLINGGOVERNOR": "Qubernatorun qeydiyyatdan çıxarılması...",
             "UNENROLLEDGOVERNOR": "Əməliyyat göndərildi. Əməliyyat təsdiqləndikdən sonra İdarəçiniz qeydiyyatdan çıxarılacaq.",
             "GOVERNORNOTMATURE": "Qubernatorunuz hələ bu hərəkəti edəcək qədər yetkin deyil"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix alın",
+                "SEARCH": "Tarix"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Sən Göndər",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Əməliyyat Tarixçəsi",
                 "SEARCHBUTTON": "AXTARIŞ",
+                "SEARCHPLACEHOLDER": "MRX və ya BTC ünvanını daxil edin",
                 "TRANSACTIONDATE": "Tarix",
                 "TRANSACTIONTYPE": "TX Növü",
                 "TRANSACTIONAMOUNT": "Məbləğ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Təsdiqləndi",
                 "TRANSACTIONNOTCONFIRMED": "Təsdiqlənməyib",
                 "TRANSACTIONREFUNDED": "Geri qaytarılmış məbləğ - Minimum məbləğdən aşağı",
-                "AVGSWAPPRICE": "Orta Mübadilə Qiyməti",
-                "SEARCHPLACEHOLDER": "MRX və ya BTC ünvanını daxil edin"
+                "AVGSWAPPRICE": "Orta Mübadilə Qiyməti"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Mübadilə Ünvanı Yaradılır...",
             "ALREADYHAVEADDRESS": "Artıq bu Metrix ünvanı ilə əlaqəli BTC ünvanınız var",
             "NOADDRESS": "Metrix ünvanı daxil etməmisiniz"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix alın",
-                "SEARCH": "Tarix"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Gizlət",
                 "EMPTYTITLE": "Hələlik heç bir token tapılmayıb",
                 "EMPTYDETAIL": "Altitude, blok tədqiqatçısını ünvanlarınıza göndərilən MRC20 və MRC721 tokenləri üçün avtomatik olaraq yoxlayır, sonra hər şeyi canlı olaraq öz qovşağınızla müqayisə edir. Müqavilə ünvanını bilirsinizsə, tokeni əl ilə də əlavə edə bilərsiniz.",
+                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik token yoxlaması söndürüldüyü üçün ünvanlarınız tokenlər üçün yoxlanılmır. Yuxarıda onu yenidən aktivləşdirin və ya müqavilə ünvanını bilirsinizsə, tokeni əl ilə əlavə edin.",
                 "HIDDENTITLE": "Gizli Tokenlər",
                 "CONTEXTMENUHIDE": "Tokeni gizlət",
                 "ITEMSSUFFIX": "əşya(lar)",
-                "NONENUMERABLETOOLTIP": "Bu kolleksiya fərdi əşyaların siyahısını dəstəkləmir - əvəzinə neçə ədəd saxladığınızı göstərir."
+                "NONENUMERABLETOOLTIP": "Bu kolleksiya fərdi əşyaların siyahısını dəstəkləmir - əvəzinə neçə ədəd saxladığınızı göstərir.",
+                "CHECKINGENABLED": "Yoxlama Başlayır",
+                "CHECKINGDISABLED": "Yoxlama",
+                "CHECKINGENABLEDTOOLTIP": "Token yoxlanışı aktivdir - Hündürlük vaxtaşırı ünvanlarınızı tokenlər üçün yoxlayır və balansları yeniləyir. Söndürmək üçün klikləyin.",
+                "CHECKINGDISABLEDTOOLTIP": "Token yoxlanışı deaktivdir - geri aktivləşdirmək üçün klikləyin.",
+                "CHECKINGDISABLEDNOTICE": "Avtomatik token yoxlaması deaktiv edilib. Ünvanlarınız tokenlər üçün skan edilmir və balanslar yenilənməyəcək. Yenə də tokenləri əl ilə əlavə edə bilərsiniz."
             },
             "ADDTOKEN": {
                 "TITLE": "Token əlavə edin",

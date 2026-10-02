@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Theha ak'haonte",
             "HIDEEMPTYACCOUNTS": "Pata Liakhaonto tse se nang Mabitso"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Kakaretso",
+            "TRANSACTIONSTAB": "Litšebelisano",
+            "ADDRESSTABS": "Liaterese"
+        },
         "SEND": {
             "ADDRECIPIENT": "Kenya Moamoheli",
             "SEND": "Romela",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Letsatsi",
             "TABLECOLUMNS_CONFIRMS": "Netefatso",
             "ALL_SELECTUNSELECT": "Fetola Tsohle",
+            "TREEMODE": "Mokhoa oa Sefate",
+            "LISTMODE": "Mokhoa oa Lenane",
             "SENDAVAILABLE": "Sebelisa tekanyo e fumanehang",
             "INPUTLOCKED": "Ho kenya ho notletswe. O tla hloka ho notlolla ho kenya hona ho ho sebedisa.",
             "CONTEXTMENULOCKINPUT": "Ho notlela ho kenya",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Kamora Tefiso",
             "QUANTITY": "Bongata",
             "BYTES": "Li-byte",
-            "TREEMODE": "Mokhoa oa Sefate",
-            "LISTMODE": "Mokhoa oa Lenane",
             "ALERTFEECHANGETITLE": "Phetoho ea Tefiso",
             "ALERTFEECHANGECONTENT": "Tefiso ea 'nete ea transaction e phahame ho feta kamoo ho neng ho lebelletsoe. Ka kopo netefatsa tefiso e ncha:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Theha Konteraka",
+            "INFO": "Kenya konteraka e bohlale marangrang ka ho romela bytecode ea eona e hlophisitsoeng. Ena ke ts'ebetso ea ketane ea mantlha - hlahloba habeli litlhophiso tsa bytecode ea hau le khase pele u e kenya, ho ke ke ha etsolloa.",
+            "FROM": "Ho tloha ho",
+            "BYTECODE": "Khoutu ea Byte",
+            "BYTECODEPLACEHOLDER": "Manamisa bytecode ea konteraka e hlophisitsoeng (hex)",
+            "INVALIDBYTECODE": "Khoutu ea Byte e tlameha ho ba khoele ea hex e sebetsang (0-9, a-f) e nang le palo e lekanang ea litlhaku",
+            "GASLIMIT": "Moeli oa Khase",
+            "GASLIMITRANGE": "Sebaka",
+            "GASPRICE": "Theko ea Khase (MRX ka yuniti ea khase)",
+            "GASPRICEMIN": "Bonyane",
+            "ESTIMATEDMAXCOST": "Tefiso e hakanyetsoang ea ho qetela",
+            "DEPLOYBUTTON": "Konteraka ea ho Romella",
+            "INCOMPLETEFORM": "Ka kopo khetha aterese ea moromelli, kenya khoutu ea byte e sebetsang, 'me u behe moeli/theko ea khase e sebetsang",
+            "HIGHGASPRICETITLE": "Theko e Phahameng ea Khase",
+            "HIGHGASPRICEINFO": "Theko ea peterole eo u e behileng e holimo ka mokhoa o sa tloaelehang. Ho kenngoa hona ho ka bitsa chelete e ka bang:",
+            "DEPLOYING": "Konteraka ea ho kenya tšebetsong...",
+            "DEPLOYED": "Ho romelloa ha konteraka ho rometsoe",
+            "RESULTTITLE": "Sephetho sa ho Romelloa ha Mosebetsi",
+            "STATUS": "Boemo",
+            "STATUSPENDING": "E emetse netefatso...",
+            "STATUSCONFIRMED": "E sebelisitsoe ka katleho",
+            "STATUSFAILED": "Ho hloleha ho kenya tšebetsong",
+            "TXID": "ID ea transaction",
+            "SENDER": "Moromelli",
+            "CONTRACTADDRESS": "Aterese ea Konteraka",
+            "GASUSED": "Khase e Sebelisitsoeng",
+            "DONEBUTTON": "E felile",
+            "DEPLOYANOTHERBUTTON": "Romella e 'Ngoe"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Litšebelisano",
+            "COPYBLOCKHASH": "Kopitsa Block Hash",
+            "COPYTXID": "Kopitsa ID ea Transaction",
+            "COPYACCOUNT": "Kopitsa Lebitso la Ak'haonte",
+            "COPYADDRESS": "Kopitsa Aterese",
+            "COPYAMOUNT": "Kopi ea Chelete",
+            "COPTBLOCKINDEX": "Kopitsa Index ea Block",
+            "EXPLORER": "Bula ho Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Notlolla Bakeng sa ho Behella ka Sethapo",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Aterese",
             "ENABLED": "E nolofalitsoe",
-            "STARTBUTTON": "Qala Sebakeng sa Lehae",
-            "STARTALIASBUTTON": "Qala lebitso la boswaswi",
-            "STARTALLBUTTON": "Qala Tsohle",
             "NOMASTERNODES": "Ha o na li-masternode",
             "NOMNOUTPUTS": "Ha ho na diphetho tsa Masternode tse fumanweng. Ho tsamaisa Masternode ya lehae, romela tjhelete ya tshepe e ka bang dimilione tse 2, 5, 25, 50 kapa 100 atereseng ya hao ya Masternode mme o emele ditiisetso tse 15.",
+            "STARTBUTTON": "Qala Sebakeng sa Lehae",
             "STOPBUTTON": "Emisa Sebaka sa Haufi",
+            "STARTALIASBUTTON": "Qala lebitso la boswaswi",
             "STOPALIASBUTTON": "Emisa lebitso la boswaswi",
+            "STARTALLBUTTON": "Qala Tsohle",
             "ADDREMOTE": "Kenya Masternode e hole",
             "REMOVEMN": "Tlosa Masternode",
             "ADDLOCAL": "Beha Masternode ea Sebaka",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Kakaretso",
                 "COREVERSION": "Phetolelo ea mantlha",
+                "ALTITUDEVERSION": "Phetolelo ea Bophahamo",
                 "PROTOCOLVERSION": "Phetolelo ea Protocole",
                 "WALLETVERSION": "Phetolelo ea Wallet.dat",
                 "NETWORKTITLE": "Marang-rang",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Palo ea Ma-Masternode",
                 "BLOCKCHAINTITLE": "Ketane ea Block",
                 "NUMBERBLOCKS": "Palo ea hona joale ea li-block",
-                "BESTBLOCKTTIME": "Nako ea ho qetela ea ho thibela",
-                "ALTITUDEVERSION": "Phetolelo ea Bophahamo"
+                "BESTBLOCKTTIME": "Nako ea ho qetela ea ho thibela"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Rea u amohela ho khomphutha ea Metrix Core RPC. Tlanya thuso bakeng sa kakaretso ea litaelo tse fumanehang.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Khetha Puo"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Litšebelisano",
-            "COPYBLOCKHASH": "Kopitsa Block Hash",
-            "COPYTXID": "Kopitsa ID ea Transaction",
-            "COPYACCOUNT": "Kopitsa Lebitso la Ak'haonte",
-            "COPYADDRESS": "Kopitsa Aterese",
-            "COPYAMOUNT": "Kopi ea Chelete",
-            "COPTBLOCKINDEX": "Kopitsa Index ea Block",
-            "EXPLORER": "Bula ho Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Khetha Chelete ea Pontšo"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Marang-rang",
             "WINDOTAB": "Fensetere",
+            "BACKUPTAB": "Boloka",
+            "EXPLORERTAB": "Mofuputsi",
+            "DEVELOPERTAB": "Moqapi",
             "NETWORK": {
                 "PROXY": "Hokela ka proxy ea SOCKS5",
                 "PROXYIP": "IP ea proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Fokotsa ha ho kwalwa",
                 "BEHAVIOURTITLE": "Terei ea Sistimi le Boitšoaro ba Fensetere"
             },
-            "BACKUPTAB": "Boloka",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Backup ea Othomathiki",
                 "ENABLED": "Boloka bekapo ea wallet.dat ka bohona ka kemiso",
                 "ENABLEDINFO": "E etsa bekapo e ncha ea faele ea sepache sa hau ka kemiso, kahoo kopi ea morao-rao e lula e fumaneha haeba ho na le ho hong ho sa tsamaeeng hantle.",
+                "INTERVALLABEL": "Etsa bekapo letsatsi le leng le le leng (matsatsi)",
                 "LASTBACKUP": "bekapo ea ho qetela:",
                 "NEVERBACKEDUP": "Ha ho na bekapo e iketsang e entsoeng hajoale.",
                 "BACKUPNOWBUTTON": "Khutlela Hona Joale",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Seta hape ho ea ho ea kamehla",
                 "PRUNETITLE": "Nalane ea ho Boloka",
                 "PRUNEINFO": "Li-backup tsa khale tse iketsang lia hlakoloa e le hore foldara ena e se ke ea hola ka ho sa feleng - ke tse sa tsoa bolokoa tse ka tlase feela.",
-                "KEEPCOUNTLABEL": "Boloka oa ho qetela",
-                "INTERVALLABEL": "Etsa bekapo letsatsi le leng le le leng (matsatsi)"
+                "KEEPCOUNTLABEL": "Boloka oa ho qetela"
             },
-            "EXPLORERTAB": "Mofuputsi",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Sebaka sa marang-rang se butsoe ha ho shebelloa transaction ho block explorer (mohlala, tobetsa ka ho le letona transaction > Sheba ho Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Letlooa la Teko",
                 "REGTEST": "Teko e Ngolisitsoeng"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mokhoa oa Moqapi",
+                "DEVMODEINFO": "E tima ka boiketsetso mme e reretsoe bahlahisi feela. Ho nolofalletsa sena ho senola dikgetho tsa ho fetola kgokelo ya RPC - basebedisi ba tloaelehileng ba lokela ho tlohela sena.",
+                "DEVMODELABEL": "Nolofatsa Mokhoa oa Moqapi",
+                "WARNING": "Litlhophiso tsena ke tsa merero ea nts'etsopele feela. Ho li fetola ho ka thibela sepache ho hokela ho daemon ho hang - sebelisa sena feela haeba u tseba seo u se etsang.",
+                "RPCHOSTTITLE": "Khokahano ea RPC",
+                "RPCHOSTINFO": "Ka tlwaelo Altitude e hokela ho daemon eo e itsamaisang ka boyona, mochining ona (127.0.0.1). Ho fetisa tsena ho e dumella ho hokela ho daemon e fapaneng ho ena le hoo - mohlala mohlala wa remote regtest, ntle le ho hloka ho tsamaisa e nngwe sebakeng sa heno. Haeba khokahano e atleha, Altitude e ke ke ya jarolla kapa ya qala daemon ya yona ya lehae. rpcallowip ya daemon e reretsweng e tlameha ho dumella khokahano ena, mme rpcuser/rpcpassword e ka tlase e tlameha ho tsamaellana le tlhophiso ya yona. E sebetsa hang-hang, ha ho hlokahale hore ho qalwe botjha.",
+                "RPCHOSTLABEL": "Moamoheli oa RPC",
+                "RPCPORTLABEL": "Kou ea RPC",
+                "RPCUSERLABEL": "Lebitso la mosebelisi la RPC",
+                "RPCPASSWORDLABEL": "Senotlolo sa RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Kakaretso",
-            "TRANSACTIONSTAB": "Litšebelisano",
-            "ADDRESSTABS": "Liaterese"
-        },
-        "CURRENCY": {
-            "TITLE": "Khetha Chelete ea Pontšo"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Romela",
+            "CREATECONTRACT": "Theha Konteraka",
             "RECEIVE": "Amohela",
             "TRANSACTIONS": "Litšebelisano",
             "STAKING": "Ho betla",
             "MASTERNODES": "Ma-Masternode",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "Ho hokela",
                 "NOBLOCKS": "E emetse liboloko",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Sepache ha se sa lekanyetsoa hona joale",
                 "MASTERNODEON": "Masternode e ntse e sebetsa hona joale",
                 "MASTERNODEOFF": "Masternode ha e sebetse hona joale"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Kenya aterese ea sebaka sa marang-rang sa 3",
+            "GOBUTTON": "Tsamaea",
+            "QUICKLAUNCH": "Ho Qalisoa ka Potlako",
+            "DEVTOOLS": "Bula Lisebelisoa tsa Baqapi",
+            "ADDLINK": "Kenya Sehokelo",
+            "LINKNAMEPLACEHOLDER": "Lebitso",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Boloka",
+            "CANCEL": "Hlakola",
+            "REMOVE": "Tlosa",
+            "REMOVECONFIRM": "Tlosa sehokelo sena se potlakileng?",
+            "LINKEXISTS": "Sehokelo seo se se se ntse se le lenaneng la hau la ho qala ka potlako",
+            "LINKINVALID": "Kenya aterese ea sebaka sa marang-rang e nepahetseng",
+            "LINKNETWORKLABEL": "Marang-rang",
+            "LOADFAILED": "E hlolehile ho kenya sebaka sa marang-rang",
+            "SECURESITE": "Khokahano e sireletsehile - setifikeiti sa SSL se sebetsang",
+            "INSECURESITE": "Khokahano ha e sireletsehe",
+            "INVALIDCERTSITE": "Khokahano ha se ea lekunutu - setifikeiti sa SSL se fosahetse kapa ha se tšepahale"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Kenya Phasewete ea Hao ea Sepache",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Ntlafatso e fumaneha bakeng sa Metrix Core. Na u ka rata ho e kenya hona joale?",
             "WALLETUPDATETITLE": "Ntlafatso ea Bophahamo ea Fumaneha",
             "WALLETUPDATEINFO": "Ntlafatso e fumaneha bakeng sa Altitude. Na u ka rata ho e jarolla hona joale?",
+            "WALLETUPDATEREADYTITLE": "Ntlafatso ea Bophahamo e Loketse",
+            "WALLETUPDATEREADYINFO": "Ntlafatso e jarollotsoe. Qala Botjha Altitude jwale ho e kenya?",
+            "WALLETUPDATERESTARTBUTTON": "Qala hape 'me u kenye",
+            "WALLETUPDATELATERBUTTON": "Hamorao",
             "CLIENTUPDATEBUTTON": "Ntlafatso",
             "CLIENTUPDATECANCELBUTTON": "Se ke oa Ntlafatsa",
             "CLIENTUPDATESKIPBUTTON": "Tlola Ntlafatso ena",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Li-backup leha e le life tseo u li entseng tsa faele ea hau ea sepache li lokela ho nkeloa sebaka ke faele ea sepache e sa tsoa hlahisoa, e patiloeng. Ka mabaka a tšireletso, li-backup tsa pele tsa faele ea sepache e sa patiloeng li tla fetoha tse se nang thuso hang ha u qala ho sebelisa sepache se secha, se patiloeng.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core e Emisitsoe ka ho sa Lebelloang",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Ho bile le bothata ka Metrix Core bo entseng hore e fele. Ho kgothaletswa ho hlahloba faele ya hao ya debug.log bakeng sa mathata.",
+            "CLIENTUNKNOWNERRORTITLE": "Phoso ea Puisano ea Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Ho bile le bothata ba ho buisana le Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya debug.log bakeng sa mathata.",
+            "BOOTSTRAPFAILEDTITLE": "Sekoahelo sa Metrix Core Bootstrap se Hlolehile",
+            "BOOTSTRAPFAILEDINFO": "Ho bile le bothata ha ho qaptjoa Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya log ya Altitude bakeng sa mathata.",
+            "BOOTSTRAPOFFERTITLE": "Sepache se siiloe ke nako haholo",
+            "BOOTSTRAPOFFERINFO": "Ho na le bootstrap ea morao tjena e ka ntlafatsang Metrix Core kapele. Ho tsoela pele ka ho hokahanya ho tloaelehileng ho ka nka matsatsi a 'maloa ho phetheha, kaha sepache sa hau se hloka ho jarolla le ho netefatsa block e 'ngoe le e 'ngoe eo se e fositseng.",
+            "BOOTSTRAPOFFERBUTTON": "Khoasolla Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Tsoela Pele ho Kgokaganya ka Tloaelehileng",
+            "BOOTSTRAPSPACEINFO": "Ha ho na sebaka sa mahala sa disk ho jarolla le ho ntsha bootstrap. Ho hlokahala: {required}, E fumaneha: {mahala}. Lokolla sebaka 'me u leke hape.",
+            "STARTUPFAILEDTITLE": "Qalo ea Metrix Core e Hlolehile",
+            "STARTUPFAILEDINFO": "Ho bile le phoso ha ho qalwa Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya log ya Altitude bakeng sa mathata.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Lisebelisoa tsa ho Pholosa",
             "CLIENTINVALIDCONFIGTITLE": "Tlhophiso e fosahetseng ea metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf ea hau e na le tlhophiso e sa nepahalang ea masternode e tla etsa hore Metrix Core e tsoe hang-hang. Ka kopo, hlahloba faele ena.",
             "ADDREMOTEMNTITLE": "Kenya Masternode e hole",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Senotlolo sa Poraefete sa Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Index ea Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Sekoahelo sa Metrix Core Bootstrap se Hlolehile",
-            "BOOTSTRAPFAILEDINFO": "Ho bile le bothata ha ho qaptjoa Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya log ya Altitude bakeng sa mathata.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Lisebelisoa tsa ho Pholosa",
-            "STARTUPFAILEDTITLE": "Qalo ea Metrix Core e Hlolehile",
-            "STARTUPFAILEDINFO": "Ho bile le phoso ha ho qalwa Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya log ya Altitude bakeng sa mathata.",
-            "CLIENTUNKNOWNERRORTITLE": "Phoso ea Puisano ea Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Ho bile le bothata ba ho buisana le Metrix Core. Ho kgothaletswa ho hlahloba faele ya hao ya debug.log bakeng sa mathata.",
             "UNENROLLGOVERNORTITLE": "Netefatsa ho se Ngolise ha 'Musisi",
             "UNENROLLGOVERNORCONTENT": "Na o na le bonnete ba hore o batla ho tlosa Mmusisi wa hao ngolisong? O ke ke wa hlola o kgona ho kgetha puso ya ketane.",
-            "WALLETUPDATEREADYTITLE": "Ntlafatso ea Bophahamo e Loketse",
-            "WALLETUPDATEREADYINFO": "Ntlafatso e jarollotsoe. Qala Botjha Altitude jwale ho e kenya?",
-            "WALLETUPDATERESTARTBUTTON": "Qala hape 'me u kenye",
-            "WALLETUPDATELATERBUTTON": "Hamorao",
             "DAPPCONNECTTITLE": "Hokela Sebakeng sa Marang-rang",
             "DAPPCONNECTINFO": "Sebaka sena sa marang-rang se batla ho hokela sepacheng sa hau le ho sheba aterese ea hau le tekanyo ea hau.",
             "DAPPCONNECTBUTTON": "Hokela",
+            "DAPPCONNECTADDRESSLABEL": "Aterese",
+            "DAPPAPPROVEBUTTON": "Amohela",
             "DAPPREJECTBUTTON": "Hana",
             "DAPPSENDTITLE": "Kopo ea Khoebo ea Konteraka",
             "DAPPSENDINFO": "Sebaka sena sa marang-rang se kopa ho romela konteraka ho tsoa ho sepache sa hau.",
-            "DAPPSIGNTITLE": "Kopo ea ho Saena Molaetsa",
-            "DAPPSIGNINFO": "Sebaka sena sa marang-rang se kopa ho saena molaetsa o nang le aterese ea sepache sa hau.",
-            "DAPPNOTREADY": "Ha e so khone ho hokela sebakeng sa marang-rang - Metrix Core e ntse e qala.",
-            "DAPPNOWALLET": "Ha e khone ho hokela webosaeteng - ha ho na aterese ea sepache e fumanehang.",
-            "DAPPAPPROVEBUTTON": "Amohela",
-            "DAPPCONNECTADDRESSLABEL": "Aterese",
             "DAPPSENDSITELABEL": "Sebaka sa marang-rang",
             "DAPPSENDCONTRACTLABEL": "Aterese ea Konteraka",
             "DAPPSENDAMOUNTLABEL": "Chelete",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tefiso e Phahameng ea Marang-rang",
             "DAPPSENDMAXTOTALLABEL": "Kakaretso e Felletseng",
             "DAPPSENDDATALABEL": "Lintlha tsa Konteraka",
+            "DAPPSIGNTITLE": "Kopo ea ho Saena Molaetsa",
+            "DAPPSIGNINFO": "Sebaka sena sa marang-rang se kopa ho saena molaetsa o nang le aterese ea sepache sa hau.",
             "DAPPSIGNMESSAGELABEL": "Molaetsa",
-            "BOOTSTRAPOFFERTITLE": "Sepache se siiloe ke nako haholo",
-            "BOOTSTRAPOFFERINFO": "Ho na le bootstrap ea morao tjena e ka ntlafatsang Metrix Core kapele. Ho tsoela pele ka ho hokahanya ho tloaelehileng ho ka nka matsatsi a 'maloa ho phetheha, kaha sepache sa hau se hloka ho jarolla le ho netefatsa block e 'ngoe le e 'ngoe eo se e fositseng.",
-            "BOOTSTRAPOFFERBUTTON": "Khoasolla Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Tsoela Pele ho Kgokaganya ka Tloaelehileng",
-            "BOOTSTRAPSPACEINFO": "Ha ho na sebaka sa mahala sa disk ho jarolla le ho ntsha bootstrap. Ho hlokahala: {required}, E fumaneha: {mahala}. Lokolla sebaka 'me u leke hape."
+            "DAPPNOTREADY": "Ha e so khone ho hokela sebakeng sa marang-rang - Metrix Core e ntse e qala.",
+            "DAPPNOWALLET": "Ha e khone ho hokela webosaeteng - ha ho na aterese ea sepache e fumanehang."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buka ea Liaterese",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Marangrang a hona joale"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Kenya aterese ea sebaka sa marang-rang sa 3",
-            "GOBUTTON": "Tsamaea",
-            "QUICKLAUNCH": "Ho Qalisoa ka Potlako",
-            "DEVTOOLS": "Bula Lisebelisoa tsa Baqapi",
-            "ADDLINK": "Kenya Sehokelo",
-            "LINKNAMEPLACEHOLDER": "Lebitso",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Boloka",
-            "CANCEL": "Hlakola",
-            "REMOVE": "Tlosa",
-            "REMOVECONFIRM": "Tlosa sehokelo sena se potlakileng?",
-            "LINKEXISTS": "Sehokelo seo se se se ntse se le lenaneng la hau la ho qala ka potlako",
-            "LINKINVALID": "Kenya aterese ea sebaka sa marang-rang e nepahetseng",
-            "LINKNETWORKLABEL": "Marang-rang",
-            "LOADFAILED": "E hlolehile ho kenya sebaka sa marang-rang",
-            "SECURESITE": "Khokahano e sireletsehile - setifikeiti sa SSL se sebetsang",
-            "INSECURESITE": "Khokahano ha e sireletsehe",
-            "INVALIDCERTSITE": "Khokahano ha se ea lekunutu - setifikeiti sa SSL se fosahetse kapa ha se tšepahale"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Sepache sa ho boloka chelete...",
             "SIGNMESSAGE": "Saena Molaetsa...",
             "VERIFYMESSAGE": "Netefatsa Molaetsa...",
-            "LOCALE": "Puo...",
-            "RESTARTCORE": "Qala hape Metrix Core",
-            "EXIT": "Etsoa",
             "OPTIONS": "Likhetho...",
+            "LOCALE": "Puo...",
             "CURRENCIES": "Chelete ea Pontšo...",
-            "ALTITUDEREFRESH": "Ntjhafatsa Lintlha tsa Bophahamo"
+            "RESTARTCORE": "Qala hape Metrix Core",
+            "ALTITUDEREFRESH": "Ntjhafatsa Lintlha tsa Bophahamo",
+            "EXIT": "Etsoa"
         },
         "ENCRYPT": {
             "TITLE": "Ngola ka mokhoa o patehileng",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Kakaretso ea Tekanyo",
+        "SPENDABLEBALANCE": "Balanse e ka Sebelisoang",
+        "PENDINGBALANCE": "Balanse e Emetseng",
         "CANCELBUTTON": "Hlakola",
         "DONEBUTTON": "E felile",
         "OKBUTTON": "HO LOKILE",
+        "ACCEPTBUTTON": "Amohela",
         "CLEARALLBUTTON": "Hlakola Tsohle",
         "ENTERACCOUNTLABEL": "Kenya leibole bakeng sa aterese ena",
         "ENTERADDRESSLABEL": "Kenya aterese ea Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Hlophisa ka",
         "SEARCH": "Batla",
         "FEE": "Tefiso",
-        "ACCEPTBUTTON": "Amohela",
         "CONFIRMED": "E netefalitsoe",
         "UNCONFIRMED": "Ha ea netefatsoa",
-        "PENDINGBALANCE": "Balanse e Emetseng",
-        "SPENDABLEBALANCE": "Balanse e ka Sebelisoang",
         "SAVEBUTTON": "Boloka"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ho qala Metrix Core hape...",
         "BOOTSTRAPPING": "Ho khoasolla bootstrap...",
         "BOOTSTRAPEXTRACTING": "Ho ntša bootstrap...",
-        "TIMEREMAINING": "tse setseng:"
+        "TIMEREMAINING": "tse setseng:",
+        "DEVRPCOVERRIDEACTIVE": "Ho fetoloa ha khokahano ea RPC ea moqapi ho setiloe (Likhetho > Moqapi) 'me ha ho arabe. E hlakole ho hokela hape ho daemon ea lehae ka tloaelo.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Tlosa RPC Override & Hokela Hape"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ak'haonte e ncha e thehiloe ka katleho",
         "ADDRESSCOPIEDCLIPBOARD": "Aterese e kopilitsoe ho clipboard",
+        "COPIEDCLIPBOARD": "E kopilitsoe ho clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Litšebelisano li kopilitsoe ho clipboard",
         "EMPTYFIELDS": "Ka kopo tlatsa masimo ohle",
         "NOUPDATE": "Ha ho ntlafatso e fumanehang",
         "WALLETBACKEDUP": "Ho boloka sepache ho atlehile",
+        "WALLETBACKUPFAILED": "Ho boloka sepache ka bohona ho hlolehile - hlahloba sebaka sa hau sa ho boloka le sebaka se fumanehang sa disk",
         "PASSPHRASEMISMATCH": "Liphasewete tseo u li kentseng ha li tšoane",
         "CHECKINGUPDATE": "E ntse e hlahloba ntlafatso...",
         "CHECKINGUPDATEFAILED": "Ha e khone ho hlahloba ntlafatso. Hlahloba netweke ea hau.",
+        "WALLETUPDATEDOWNLOADING": "Ho ntse ho jarolloa ntlafatso...",
         "SENDINGEXCEEDSBALANCE": "Chelete eo u e romelang e feta chelete eo u e khethileng",
         "MISSINGCHANGEADDRESS": "O tlameha ho totobatsa aterese ea phetoho",
         "MISSINGDESTINATIONADDRESS": "O tlameha ho totobatsa aterese ea moo u eang teng",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ho ngolwa sepache...",
         "CHANGINGPASSPHARASE": "Ho fetola lentsoe la lekunutu...",
         "STARTINGMASTERNODE": "Ho qala masternode...",
+        "STOPPINGMASTERNODE": "E emisa masternode...",
         "SENDINGTRANSACTION": "Ho romella transaction...",
         "SIGNINGMESSAGE": "Ho saena molaetsa...",
         "SIGNEDMESSAGE": "Molaetsa o saennoe",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ho notlolla sepache...",
         "TRANSACTIONMISMATCH": "Phoso ea transaction. Ka kopo leka hape.",
         "MINIMUMCONFIRMATIONS": "Litlhahiso tsohle li hloka bonyane netefatso e le 'ngoe pele u sebelisa chelete.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Litšebelisano li kopilitsoe ho clipboard",
-        "STOPPINGMASTERNODE": "E emisa masternode...",
         "FAILEDTOWRITECONFIG": "Ho bile le bothata ba ho ngola faele ea hau ea metrix.conf. Hlahloba hore faele e teng le hore Altitude e na le litumello tsa ho ngola.",
         "NOPUBLICUP": "Ha ho aterese ea IP ea sechaba e fumanoeng. Hlahloba khokahano ea hau ea inthanete 'me u qale Altitude hape.",
         "CONFIGURINGLOCALMN": "Ho hlophisoa Masternode ea lehae...",
         "REPORTINGISSUE": "Ho fumana tlhahisoleseding ea tlhahlobo... Tlhahisoleseling ena e tla kopitsoa ho clipboard ea hau.",
-        "WALLETUPDATEDOWNLOADING": "Ho ntse ho jarolloa ntlafatso...",
-        "WALLETBACKUPFAILED": "Ho boloka sepache ka bohona ho hlolehile - hlahloba sebaka sa hau sa ho boloka le sebaka se fumanehang sa disk",
         "EXPLORERURLSAVED": "URL ea Mofuputsi e bolokiloe",
         "EXPLORERURLRESET": "URL ea Explorer e khutliselitsoe ho ea kamehla",
         "EXPLORERURLINVALID": "Eo ha se URL e nepahetseng ea http(s)",
-        "EXPLORERURLUNREACHABLE": "Ha kea ka ka fihlella URL eo - e hlahlobe 'me u leke hape"
+        "EXPLORERURLUNREACHABLE": "Ha kea ka ka fihlella URL eo - e hlahlobe 'me u leke hape",
+        "DEVRPCHOSTSAVED": "Moamoheli oa RPC o bolokiloe",
+        "DEVRPCHOSTRESET": "Moamoheli oa RPC o khutliselitsoe ho ea kamehla (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Lichelete tsa tšepe tse amohetsoeng",
+        "NEWTRANSACTION_TITLE_STAKE": "Tekanyo e Amohetsoeng",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "O Fumane Moputso oa Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Metsotsoana e seng mekae",
@@ -533,11 +587,6 @@
         "MONTHS": "likhoeli",
         "AYEAR": "Selemo",
         "YEARS": "lilemo"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Lichelete tsa tšepe tse amohetsoeng",
-        "NEWTRANSACTION_TITLE_STAKE": "Tekanyo e Amohetsoeng",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "O Fumane Moputso oa Masternode"
     },
     "MONTH": {
         "JAN": "Pherekhong",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Babusisi ba ikarabella bakeng sa ho vouta ditekanyetso tsa kgwedi le kgwedi le diphetoho tsa blockchain. O ka ba Mmusi ka ho notlela konteraka ya Puso ya mmuso tiisetso e nepahetseng.",
                 "COLLATERAL": "Tefo e hlokahalang",
                 "ENROLL": "Ingolise",
+                "SELECTAGOVERNOR": "Khetha aterese ea 'musisi ea tšoanelehang",
+                "GOVERNORNOTSELECTED": "Ha ho aterese e loketseng e khethiloeng",
                 "CONFIRMENROLL": "U se u le mothating oa ho ingolisa joalo ka 'Musisi. Sena se tla romela khoebo e nang le tebeletso e hlokahalang konterakeng ea puso. U ka hlakola ngoliso neng kapa neng.",
                 "ISGOVERNORTITLE": "U 'Musisi ea mafolofolo!",
                 "ISGOVERNORDETAIL1": "Babusisi ba ikarabella bakeng sa ho vouta mabapi le ditekanyetso tsa kgwedi le kgwedi le diphetoho tsa blockchain.",
                 "ISGOVERNORDETAIL2": "Hore o dule o le Mmusisi o tla hloka ho nka karolo bonyane voutung e le 1 matsatsi a mang le a mang a 30.",
                 "ISGOVERNORDETAIL3": "Haeba ho se na letho leo u ka le voutelang, u ka tsoela pele ka ho ingolisa ka letsoho ka ho romela ping e sebetsang.",
+                "MYGOVERNORADDRESS": "Puo ea ka ea 'Musisi",
                 "UNENROLL": "Tlosa Ngoliso",
                 "PING": "Romella Ping e Sebetsang",
                 "LASTPINGTITLE": "Ping ea ho qetela",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "matsatsi",
                 "GOVERNORVOTEMATURITYHOURS": "lihora",
                 "GOVERNORVOTEMATURITYSUFFIX": "ho fihlela motho a holile",
-                "MYGOVERNORADDRESS": "Puo ea ka ea 'Musisi",
-                "SELECTAGOVERNOR": "Khetha aterese ea 'musisi ea tšoanelehang",
-                "GOVERNORNOTSELECTED": "Ha ho aterese e loketseng e khethiloeng",
                 "NOTFULLYSYNCEDTITLE": "Boemo ba 'Musisi ha bo fumanehe",
                 "NOTFULLYSYNCEDDETAIL": "Boemo ba ngoliso ea hau ho 'Musisi bo tla bonahala ha blockchain ea hau e se e hokahantsoe ka botlalo.",
                 "DGPMIGRATIONTITLE": "Phallo ea DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Tlhahiso ea hau e entsoe ka katleho",
             "ENROLLINGGOVERNOR": "Ho ingolisa joalo ka 'Musisi...",
             "ENROLLEDGOVERNOR": "Ngoliso ea hau e tla phetheha hang ha thekiso ea hau e netefalitsoe",
-            "VOTINGONPROPOSAL": "Ho romela voutu ea tlhahiso",
-            "VOTEDONPROPOSAL": "Voutu ea hau e tla baloa hang ha thekiso e tiisitsoe.",
             "PINGINGGOVERNOR": "Ho romela ping...",
             "PINGEDGOVERNOR": "Ping e rometsoe ka katleho. 'Musisi oa hau o tla ntlafatsoa hang ha thekiso e tiisitsoe.",
+            "VOTINGONPROPOSAL": "Ho romela voutu ea tlhahiso",
+            "VOTEDONPROPOSAL": "Voutu ea hau e tla baloa hang ha thekiso e tiisitsoe.",
             "UNENROLLINGGOVERNOR": "Ho tlosa 'Musisi ea sa ngoliseng...",
             "UNENROLLEDGOVERNOR": "Transaction e rometsoe. 'Musisi oa hau o tla tlosoa ho ngolisoeng hang ha transaction e tiisitsoe.",
             "GOVERNORNOTMATURE": "'Musisi oa hau ha a e-so hole ka ho lekaneng ho etsa ketso ena hajoale"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Reka Metrix",
+                "SEARCH": "Nalane"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ua Romela",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Nalane ea Transaction",
                 "SEARCHBUTTON": "BATLA",
+                "SEARCHPLACEHOLDER": "Kenya aterese ea MRX kapa BTC",
                 "TRANSACTIONDATE": "Letsatsi",
                 "TRANSACTIONTYPE": "Mofuta oa TX",
                 "TRANSACTIONAMOUNT": "Chelete",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "E netefalitsoe",
                 "TRANSACTIONNOTCONFIRMED": "Ha ea tiisoa",
                 "TRANSACTIONREFUNDED": "Chelete e khutlisitsoe - Ka tlase ho bonyane",
-                "AVGSWAPPRICE": "Theko e tloaelehileng ea ho fapanyetsana",
-                "SEARCHPLACEHOLDER": "Kenya aterese ea MRX kapa BTC"
+                "AVGSWAPPRICE": "Theko e tloaelehileng ea ho fapanyetsana"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ho Hlahisa Aterese ea Fetola...",
             "ALREADYHAVEADDRESS": "U se u ntse u e-na le aterese ea BTC e amanang le aterese ena ea Metrix",
             "NOADDRESS": "Ha ua kenya aterese ea Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Reka Metrix",
-                "SEARCH": "Nalane"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Hlalosa",
                 "EMPTYTITLE": "Ha ho na Litokene Tse Fumanehileng Hajoale",
                 "EMPTYDETAIL": "Bophahamo bo hlahloba ka bohona mofuputsi oa li-block bakeng sa li-tokens tsa MRC20 le MRC721 tse rometsoeng liatereseng tsa hau, ebe bo netefatsa ntho e 'ngoe le e 'ngoe e phela khahlanong le node ea hau. U ka boela ua eketsa tokens ka letsoho haeba u tseba aterese ea eona ea konteraka.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ho hlahloba matšoao ka boiketsetso ho timiloe, kahoo liaterese tsa hau ha li hlahlojoe matšoao. E bulele hape ka holimo, kapa u kenye letšoao ka letsoho haeba u tseba aterese ea lona ea konteraka.",
                 "HIDDENTITLE": "Litokene tse Patiloeng",
                 "CONTEXTMENUHIDE": "Pata Letšoao",
                 "ITEMSSUFFIX": "ntho(li)",
-                "NONENUMERABLETOOLTIP": "Pokello ena ha e tšehetse ho thathamisa lintho ka bonngoe - ho bontša hore na u na le tse kae ho e-na le hoo."
+                "NONENUMERABLETOOLTIP": "Pokello ena ha e tšehetse ho thathamisa lintho ka bonngoe - ho bontša hore na u na le tse kae ho e-na le hoo.",
+                "CHECKINGENABLED": "Ho hlahloba",
+                "CHECKINGDISABLED": "Ho lefa tjhelete",
+                "CHECKINGENABLEDTOOLTIP": "Ho hlahloba matshwao ho butswe - Bophahamo bo hlahloba diaterese tsa hao nako le nako bakeng sa matshwao mme bo ntjhafatsa dibalanse. Tobetsa ho tima.",
+                "CHECKINGDISABLEDTOOLTIP": "Ho hlahloba matshwao ho timilwe - tobetsa ho bulela hape.",
+                "CHECKINGDISABLEDNOTICE": "Ho hlahloba li-token ka bohona ho timiloe. Liaterese tsa hau ha li skenoe bakeng sa li-token 'me li-balance li ke ke tsa ntlafatsoa. U ntse u ka eketsa li-token ka letsoho."
             },
             "ADDTOKEN": {
                 "TITLE": "Kenya Letšoao",

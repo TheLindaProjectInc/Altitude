@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Opprett konto",
             "HIDEEMPTYACCOUNTS": "Skjul tomme kontoer med navn"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Oversikt",
+            "TRANSACTIONSTAB": "Transaksjoner",
+            "ADDRESSTABS": "Adresser"
+        },
         "SEND": {
             "ADDRECIPIENT": "Legg til mottaker",
             "SEND": "Sende",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dato",
             "TABLECOLUMNS_CONFIRMS": "Bekreftelser",
             "ALL_SELECTUNSELECT": "Slå av/på alle",
+            "TREEMODE": "Tremodus",
+            "LISTMODE": "Listemodus",
             "SENDAVAILABLE": "Bruk tilgjengelig saldo",
             "INPUTLOCKED": "Inndataene er låst. Du må låse opp disse inndataene for å bruke dem.",
             "CONTEXTMENULOCKINPUT": "Lås inngang",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Etter gebyr",
             "QUANTITY": "Mengde",
             "BYTES": "Byte",
-            "TREEMODE": "Tremodus",
-            "LISTMODE": "Listemodus",
             "ALERTFEECHANGETITLE": "Gebyrendring",
             "ALERTFEECHANGECONTENT": "Det faktiske transaksjonsgebyret er høyere enn forventet. Vennligst bekreft det nye gebyret:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Opprett kontrakt",
+            "INFO": "Distribuer en smartkontrakt til nettverket ved å sende inn den kompilerte bytekoden. Dette er en kjernefunksjon i kjeden – dobbeltsjekk bytekoden og gassinnstillingene før du distribuerer, distribusjonen kan ikke angres.",
+            "FROM": "Fra",
+            "BYTECODE": "Bytekode",
+            "BYTECODEPLACEHOLDER": "Lim inn den kompilerte kontraktens bytekode (heks)",
+            "INVALIDBYTECODE": "Bytekoden må være en gyldig heksadesimal streng (0–9, a–f) med et partall tegn",
+            "GASLIMIT": "Gassgrense",
+            "GASLIMITRANGE": "Spekter",
+            "GASPRICE": "Bensinpris (MRX per bensinenhet)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Estimert makskostnad",
+            "DEPLOYBUTTON": "Implementer kontrakt",
+            "INCOMPLETEFORM": "Vennligst velg en avsenderadresse, skriv inn gyldig bytekode og angi en gyldig gassgrense/pris",
+            "HIGHGASPRICETITLE": "Høy bensinpris",
+            "HIGHGASPRICEINFO": "Bensinprisen du har satt er uvanlig høy. Denne utplasseringen kan koste opptil:",
+            "DEPLOYING": "Implementerer kontrakt...",
+            "DEPLOYED": "Kontraktsdistribusjon sendt inn",
+            "RESULTTITLE": "Distribusjonsresultat",
+            "STATUS": "Status",
+            "STATUSPENDING": "Venter på bekreftelse...",
+            "STATUSCONFIRMED": "Implementert",
+            "STATUSFAILED": "Implementeringen mislyktes",
+            "TXID": "Transaksjons-ID",
+            "SENDER": "Avsender",
+            "CONTRACTADDRESS": "Kontraktadresse",
+            "GASUSED": "Gass brukt",
+            "DONEBUTTON": "Ferdig",
+            "DEPLOYANOTHERBUTTON": "Distribuer en annen"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaksjoner",
+            "COPYBLOCKHASH": "Kopier blokk-hash",
+            "COPYTXID": "Kopier transaksjons-ID",
+            "COPYACCOUNT": "Kopier kontonavn",
+            "COPYADDRESS": "Kopier adresse",
+            "COPYAMOUNT": "Kopier mengde",
+            "COPTBLOCKINDEX": "Kopier blokkindeks",
+            "EXPLORER": "Åpne i blokkutforskeren"
         },
         "STAKING": {
             "UNLOCK": "Lås opp for innsats",
@@ -68,13 +113,13 @@
             "IP": "IP-adresse",
             "ADDRESS": "Adresse",
             "ENABLED": "Aktivert",
-            "STARTBUTTON": "Start lokalt",
-            "STARTALIASBUTTON": "Startalias",
-            "STARTALLBUTTON": "Start alle",
             "NOMASTERNODES": "Du har ingen masternoder",
             "NOMNOUTPUTS": "Ingen Masternode-utdata funnet. For å kjøre en lokal Masternode, send nøyaktig 2, 5, 25, 50 eller 100 millioner mynter til Masternode-adressen din og vent på 15 bekreftelser.",
+            "STARTBUTTON": "Start lokalt",
             "STOPBUTTON": "Stopp lokalt",
+            "STARTALIASBUTTON": "Startalias",
             "STOPALIASBUTTON": "Stopp alias",
+            "STARTALLBUTTON": "Start alle",
             "ADDREMOTE": "Legg til ekstern masternode",
             "REMOVEMN": "Fjern Masternode",
             "ADDLOCAL": "Konfigurer lokal masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "General",
                 "COREVERSION": "Kjerneversjon",
+                "ALTITUDEVERSION": "Høydeversjon",
                 "PROTOCOLVERSION": "Protokollversjon",
                 "WALLETVERSION": "Wallet.dat-versjon",
                 "NETWORKTITLE": "Nettverk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Antall masternoder",
                 "BLOCKCHAINTITLE": "Blokkkjede",
                 "NUMBERBLOCKS": "Nåværende antall blokker",
-                "BESTBLOCKTTIME": "Siste blokkeringstid",
-                "ALTITUDEVERSION": "Høydeversjon"
+                "BESTBLOCKTTIME": "Siste blokkeringstid"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Velkommen til Metrix Core RPC-konsollen. Skriv inn hjelp for en oversikt over tilgjengelige kommandoer.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Velg språk"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaksjoner",
-            "COPYBLOCKHASH": "Kopier blokk-hash",
-            "COPYTXID": "Kopier transaksjons-ID",
-            "COPYACCOUNT": "Kopier kontonavn",
-            "COPYADDRESS": "Kopier adresse",
-            "COPYAMOUNT": "Kopier mengde",
-            "COPTBLOCKINDEX": "Kopier blokkindeks",
-            "EXPLORER": "Åpne i blokkutforskeren"
+        "CURRENCY": {
+            "TITLE": "Velg visningsvaluta"
         },
         "EXPLORER": {
             "TITLE": "Blokkutforsker",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Nettverk",
             "WINDOTAB": "Vindu",
+            "BACKUPTAB": "Sikkerhetskopiering",
+            "EXPLORERTAB": "Utforsker",
+            "DEVELOPERTAB": "Utvikler",
             "NETWORK": {
                 "PROXY": "Koble til via SOCKS5-proxy",
                 "PROXYIP": "Proxy-IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimer ved lukking",
                 "BEHAVIOURTITLE": "Systemstatus og vinduoppførsel"
             },
-            "BACKUPTAB": "Sikkerhetskopiering",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatisk sikkerhetskopiering",
                 "ENABLED": "Automatisk sikkerhetskopiering av wallet.dat etter en tidsplan",
                 "ENABLEDINFO": "Oppretter en ny sikkerhetskopi av lommebokfilen din etter en tidsplan, slik at en nylig kopi alltid er tilgjengelig hvis noe går galt.",
+                "INTERVALLABEL": "Sikkerhetskopier hver (dag)",
                 "LASTBACKUP": "Siste sikkerhetskopi:",
                 "NEVERBACKEDUP": "Ingen automatisk sikkerhetskopiering er gjort ennå.",
                 "BACKUPNOWBUTTON": "Sikkerhetskopier nå",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Tilbakestill til standard",
                 "PRUNETITLE": "Sikkerhetskopieringshistorikk",
                 "PRUNEINFO": "Eldre automatiske sikkerhetskopier slettes, slik at denne mappen ikke vokser for alltid – bare de nyeste nedenfor beholdes.",
-                "KEEPCOUNTLABEL": "Behold sist",
-                "INTERVALLABEL": "Sikkerhetskopier hver (dag)"
+                "KEEPCOUNTLABEL": "Behold sist"
             },
-            "EXPLORERTAB": "Utforsker",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokkutforsker",
                 "BLOCKEXPLORERINFO": "Nettstedet åpnet seg da jeg så en transaksjon i blokkutforskeren (f.eks. høyreklikk på en transaksjon > Vis i Utforsker).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Hovednett",
                 "TESTNET": "Testnett",
                 "REGTEST": "Registreringstest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Utviklermodus",
+                "DEVMODEINFO": "Av som standard og kun beregnet for utviklere. Aktivering av dette viser alternativer for å overstyre RPC-tilkoblingen – standardbrukere bør la dette være av.",
+                "DEVMODELABEL": "Aktiver utviklermodus",
+                "WARNING": "Disse innstillingene er kun for utviklingsformål. Å endre dem kan forhindre at lommeboken kobler seg til en daemon i det hele tatt – bruk bare dette hvis du vet hva du gjør.",
+                "RPCHOSTTITLE": "RPC-tilkobling",
+                "RPCHOSTINFO": "Som standard kobler Altitude seg til daemonen den administrerer selv, på denne maskinen (127.0.0.1). Hvis disse overstyres, kan den koble seg til en annen daemon i stedet – for eksempel en ekstern regtest-instans, uten å måtte kjøre en lokalt. Hvis tilkoblingen lykkes, vil ikke Altitude laste ned eller starte sin egen lokale daemon. Måldaemonens rpcallowip må tillate denne tilkoblingen, og rpcuser/rpcpassword nedenfor må samsvare med konfigurasjonen. Trer i kraft umiddelbart, ingen omstart nødvendig.",
+                "RPCHOSTLABEL": "RPC-vert",
+                "RPCPORTLABEL": "RPC-port",
+                "RPCUSERLABEL": "RPC-brukernavn",
+                "RPCPASSWORDLABEL": "RPC-passord"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Oversikt",
-            "TRANSACTIONSTAB": "Transaksjoner",
-            "ADDRESSTABS": "Adresser"
-        },
-        "CURRENCY": {
-            "TITLE": "Velg visningsvaluta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashbord",
             "SEND": "Sende",
+            "CREATECONTRACT": "Opprett kontrakt",
             "RECEIVE": "Motta",
             "TRANSACTIONS": "Transaksjoner",
             "STAKING": "Staking",
             "MASTERNODES": "Masternoder",
+            "EXPLORER": "Blokkutforsker",
             "SYNC": {
                 "CONNECTING": "Tilkobling",
                 "NOBLOCKS": "Venter på blokker",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Lommeboken er ikke i bruk for øyeblikket",
                 "MASTERNODEON": "Masternode kjører for øyeblikket",
                 "MASTERNODEOFF": "Masternode kjører ikke for øyeblikket"
-            },
-            "EXPLORER": "Blokkutforsker"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Skriv inn en web3-nettstedadresse",
+            "GOBUTTON": "Gå",
+            "QUICKLAUNCH": "Hurtigstart",
+            "DEVTOOLS": "Åpne utviklerverktøy",
+            "ADDLINK": "Legg til lenke",
+            "LINKNAMEPLACEHOLDER": "Navn",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Spare",
+            "CANCEL": "Kansellere",
+            "REMOVE": "Fjerne",
+            "REMOVECONFIRM": "Fjerne denne hurtiglenken?",
+            "LINKEXISTS": "Den lenken er allerede i hurtigstartlisten din",
+            "LINKINVALID": "Skriv inn en gyldig nettstedadresse",
+            "LINKNETWORKLABEL": "Nettverk",
+            "LOADFAILED": "Kunne ikke laste inn nettstedet",
+            "SECURESITE": "Tilkoblingen er sikker – gyldig SSL-sertifikat",
+            "INSECURESITE": "Tilkoblingen er ikke sikker",
+            "INVALIDCERTSITE": "Tilkoblingen er ikke privat – ugyldig eller ikke-klarert SSL-sertifikat"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Skriv inn lommebokpassordet ditt",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "En oppdatering er tilgjengelig for Metrix Core. Vil du installere den nå?",
             "WALLETUPDATETITLE": "Høydeoppdatering tilgjengelig",
             "WALLETUPDATEINFO": "En oppdatering er tilgjengelig for Altitude. Vil du laste den ned nå?",
+            "WALLETUPDATEREADYTITLE": "Klar for høydeoppdatering",
+            "WALLETUPDATEREADYINFO": "Oppdateringen er lastet ned. Start Altitude på nytt nå for å installere den?",
+            "WALLETUPDATERESTARTBUTTON": "Start på nytt og installer",
+            "WALLETUPDATELATERBUTTON": "Seinere",
             "CLIENTUPDATEBUTTON": "Oppdatering",
             "CLIENTUPDATECANCELBUTTON": "Ikke oppdater",
             "CLIENTUPDATESKIPBUTTON": "Hopp over denne oppdateringen",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Eventuelle tidligere sikkerhetskopier du har tatt av lommebokfilen din, bør erstattes med den nylig genererte, krypterte lommebokfilen. Av sikkerhetshensyn vil tidligere sikkerhetskopier av den ukrypterte lommebokfilen bli ubrukelige så snart du begynner å bruke den nye, krypterte lommeboken.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core stoppet uventet",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Det oppsto et problem med Metrix Core som førte til at den ble avsluttet. Det anbefales å sjekke debug.log-filen for problemer.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikasjonsfeil",
+            "CLIENTUNKNOWNERRORINFO": "Det oppsto et problem med kommunikasjonen med Metrix Core. Det anbefales å sjekke debug.log-filen din for problemer.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislyktes",
+            "BOOTSTRAPFAILEDINFO": "Det oppsto et problem under oppstart av Metrix Core. Det anbefales å sjekke Altitude-loggfilen din for problemer.",
+            "BOOTSTRAPOFFERTITLE": "Lommeboken er betydelig utdatert",
+            "BOOTSTRAPOFFERINFO": "En nylig oppstartsprosess er tilgjengelig som raskt kan oppdatere Metrix Core. Det kan ta flere dager å fortsette med en vanlig synkronisering i stedet, siden lommeboken din må laste ned og verifisere hver blokk den har gått glipp av.",
+            "BOOTSTRAPOFFERBUTTON": "Last ned Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Fortsett normal synkronisering",
+            "BOOTSTRAPSPACEINFO": "Ikke nok ledig diskplass til å laste ned og pakke ut bootstrap-filen. Nødvendig: {required}, Tilgjengelig: {free}. Frigjør litt plass og prøv på nytt.",
+            "STARTUPFAILEDTITLE": "Oppstart av Metrix Core mislyktes",
+            "STARTUPFAILEDINFO": "Det oppsto en feil under oppstart av Metrix Core. Det anbefales å sjekke Altitude-loggfilen din for problemer.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Gjenopprettingsverktøy",
             "CLIENTINVALIDCONFIGTITLE": "Ugyldig metrix.conf-konfigurasjon",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf-filen din har et ugyldig masternode-oppsett som vil føre til at Metrix Core avsluttes umiddelbart. Vennligst sjekk denne filen.",
             "ADDREMOTEMNTITLE": "Legg til ekstern masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode privat nøkkel",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx-indeks",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap mislyktes",
-            "BOOTSTRAPFAILEDINFO": "Det oppsto et problem under oppstart av Metrix Core. Det anbefales å sjekke Altitude-loggfilen din for problemer.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Gjenopprettingsverktøy",
-            "STARTUPFAILEDTITLE": "Oppstart av Metrix Core mislyktes",
-            "STARTUPFAILEDINFO": "Det oppsto en feil under oppstart av Metrix Core. Det anbefales å sjekke Altitude-loggfilen din for problemer.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-kommunikasjonsfeil",
-            "CLIENTUNKNOWNERRORINFO": "Det oppsto et problem med kommunikasjonen med Metrix Core. Det anbefales å sjekke debug.log-filen din for problemer.",
             "UNENROLLGOVERNORTITLE": "Bekreft avmelding fra guvernøren",
             "UNENROLLGOVERNORCONTENT": "Er du sikker på at du vil avregistrere guvernøren din? Du vil ikke lenger kunne stemme om kjedestyring.",
-            "WALLETUPDATEREADYTITLE": "Klar for høydeoppdatering",
-            "WALLETUPDATEREADYINFO": "Oppdateringen er lastet ned. Start Altitude på nytt nå for å installere den?",
-            "WALLETUPDATERESTARTBUTTON": "Start på nytt og installer",
-            "WALLETUPDATELATERBUTTON": "Seinere",
             "DAPPCONNECTTITLE": "Koble til nettstedet",
             "DAPPCONNECTINFO": "Dette nettstedet ønsker å koble til lommeboken din og se adressen og saldoen din.",
             "DAPPCONNECTBUTTON": "Koble til",
+            "DAPPCONNECTADDRESSLABEL": "Adresse",
+            "DAPPAPPROVEBUTTON": "Vedta",
             "DAPPREJECTBUTTON": "Avvis",
             "DAPPSENDTITLE": "Forespørsel om kontraktstransaksjon",
             "DAPPSENDINFO": "Dette nettstedet ber om å sende en kontraktstransaksjon fra lommeboken din.",
-            "DAPPSIGNTITLE": "Signer meldingsforespørsel",
-            "DAPPSIGNINFO": "Dette nettstedet ber om å signere en melding med lommebokadressen din.",
-            "DAPPNOTREADY": "Kan ikke koble til nettstedet ennå – Metrix Core starter fortsatt opp.",
-            "DAPPNOWALLET": "Kan ikke koble til nettstedet – ingen lommebokadresse er tilgjengelig.",
-            "DAPPAPPROVEBUTTON": "Vedta",
-            "DAPPCONNECTADDRESSLABEL": "Adresse",
             "DAPPSENDSITELABEL": "Nettsted",
             "DAPPSENDCONTRACTLABEL": "Kontraktadresse",
             "DAPPSENDAMOUNTLABEL": "Beløp",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maks. nettverksavgift",
             "DAPPSENDMAXTOTALLABEL": "Maks totalsum",
             "DAPPSENDDATALABEL": "Kontraktsdata",
+            "DAPPSIGNTITLE": "Signer meldingsforespørsel",
+            "DAPPSIGNINFO": "Dette nettstedet ber om å signere en melding med lommebokadressen din.",
             "DAPPSIGNMESSAGELABEL": "Beskjed",
-            "BOOTSTRAPOFFERTITLE": "Lommeboken er betydelig utdatert",
-            "BOOTSTRAPOFFERINFO": "En nylig oppstartsprosess er tilgjengelig som raskt kan oppdatere Metrix Core. Det kan ta flere dager å fortsette med en vanlig synkronisering i stedet, siden lommeboken din må laste ned og verifisere hver blokk den har gått glipp av.",
-            "BOOTSTRAPOFFERBUTTON": "Last ned Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Fortsett normal synkronisering",
-            "BOOTSTRAPSPACEINFO": "Ikke nok ledig diskplass til å laste ned og pakke ut bootstrap-filen. Nødvendig: {required}, Tilgjengelig: {free}. Frigjør litt plass og prøv på nytt."
+            "DAPPNOTREADY": "Kan ikke koble til nettstedet ennå – Metrix Core starter fortsatt opp.",
+            "DAPPNOWALLET": "Kan ikke koble til nettstedet – ingen lommebokadresse er tilgjengelig."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressebok",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Nåværende nettverk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Skriv inn en web3-nettstedadresse",
-            "GOBUTTON": "Gå",
-            "QUICKLAUNCH": "Hurtigstart",
-            "DEVTOOLS": "Åpne utviklerverktøy",
-            "ADDLINK": "Legg til lenke",
-            "LINKNAMEPLACEHOLDER": "Navn",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Spare",
-            "CANCEL": "Kansellere",
-            "REMOVE": "Fjerne",
-            "REMOVECONFIRM": "Fjerne denne hurtiglenken?",
-            "LINKEXISTS": "Den lenken er allerede i hurtigstartlisten din",
-            "LINKINVALID": "Skriv inn en gyldig nettstedadresse",
-            "LINKNETWORKLABEL": "Nettverk",
-            "LOADFAILED": "Kunne ikke laste inn nettstedet",
-            "SECURESITE": "Tilkoblingen er sikker – gyldig SSL-sertifikat",
-            "INSECURESITE": "Tilkoblingen er ikke sikker",
-            "INVALIDCERTSITE": "Tilkoblingen er ikke privat – ugyldig eller ikke-klarert SSL-sertifikat"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Sikkerhetskopieringslommebok...",
             "SIGNMESSAGE": "Signer melding...",
             "VERIFYMESSAGE": "Bekreft melding...",
-            "LOCALE": "Språk...",
-            "RESTARTCORE": "Start Metrix Core på nytt",
-            "EXIT": "Gå",
             "OPTIONS": "Alternativer...",
+            "LOCALE": "Språk...",
             "CURRENCIES": "Vis valuta...",
-            "ALTITUDEREFRESH": "Oppdater høydedata"
+            "RESTARTCORE": "Start Metrix Core på nytt",
+            "ALTITUDEREFRESH": "Oppdater høydedata",
+            "EXIT": "Gå"
         },
         "ENCRYPT": {
             "TITLE": "Krypter",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Totalsaldo",
+        "SPENDABLEBALANCE": "Brukbar saldo",
+        "PENDINGBALANCE": "Ventende saldo",
         "CANCELBUTTON": "Kansellere",
         "DONEBUTTON": "Ferdig",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Akseptere",
         "CLEARALLBUTTON": "Fjern alt",
         "ENTERACCOUNTLABEL": "Skriv inn en etikett for denne adressen",
         "ENTERADDRESSLABEL": "Skriv inn en Metrix-adresse",
@@ -464,11 +511,8 @@
         "SORTBY": "Sorter etter",
         "SEARCH": "Søk",
         "FEE": "Avgift",
-        "ACCEPTBUTTON": "Akseptere",
         "CONFIRMED": "Bekreftet",
         "UNCONFIRMED": "Ubekreftet",
-        "PENDINGBALANCE": "Ventende saldo",
-        "SPENDABLEBALANCE": "Brukbar saldo",
         "SAVEBUTTON": "Spare"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Starter Metrix Core på nytt...",
         "BOOTSTRAPPING": "Laster ned bootstrap...",
         "BOOTSTRAPEXTRACTING": "Pakker ut bootstrap...",
-        "TIMEREMAINING": "gjenværende:"
+        "TIMEREMAINING": "gjenværende:",
+        "DEVRPCOVERRIDEACTIVE": "En RPC-tilkoblingsoverstyring for utviklere er angitt (Alternativer > Utvikler) og svarer ikke. Fjern denne funksjonen for å koble til den lokale daemonen på vanlig måte.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Fjern RPC-overstyring og koble til på nytt"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ny konto opprettet",
         "ADDRESSCOPIEDCLIPBOARD": "Adresse kopiert til utklippstavlen",
+        "COPIEDCLIPBOARD": "Kopiert til utklippstavlen",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjoner kopiert til utklippstavlen",
         "EMPTYFIELDS": "Vennligst fyll ut alle feltene",
         "NOUPDATE": "Ingen oppdatering tilgjengelig",
         "WALLETBACKEDUP": "Sikkerhetskopiering av lommeboken var vellykket",
+        "WALLETBACKUPFAILED": "Automatisk sikkerhetskopiering av lommeboken mislyktes – sjekk plasseringen av sikkerhetskopien og tilgjengelig diskplass",
         "PASSPHRASEMISMATCH": "Passordene du skrev inn stemmer ikke overens",
         "CHECKINGUPDATE": "Sjekker etter oppdatering...",
         "CHECKINGUPDATEFAILED": "Kan ikke se etter oppdateringer. Sjekk nettverket ditt.",
+        "WALLETUPDATEDOWNLOADING": "Laster ned oppdateringen...",
         "SENDINGEXCEEDSBALANCE": "Beløpet du sender overstiger den valgte saldoen",
         "MISSINGCHANGEADDRESS": "Du må angi en endringsadresse",
         "MISSINGDESTINATIONADDRESS": "Du må angi en destinasjonsadresse",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Krypterer lommebok...",
         "CHANGINGPASSPHARASE": "Endre passordfrase...",
         "STARTINGMASTERNODE": "Starter masternode...",
+        "STOPPINGMASTERNODE": "Stopper masternoden...",
         "SENDINGTRANSACTION": "Sender transaksjonen...",
         "SIGNINGMESSAGE": "Signerer melding...",
         "SIGNEDMESSAGE": "Melding signert",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Låser opp lommeboken...",
         "TRANSACTIONMISMATCH": "Transaksjonsfeil. Prøv på nytt.",
         "MINIMUMCONFIRMATIONS": "Alle inndata krever minst én bekreftelse før forbruk.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksjoner kopiert til utklippstavlen",
-        "STOPPINGMASTERNODE": "Stopper masternoden...",
         "FAILEDTOWRITECONFIG": "Det oppsto et problem med å skrive til metrix.conf-filen din. Sjekk at filen finnes og at Altitude har skriverettigheter.",
         "NOPUBLICUP": "Ingen offentlig IP-adresse funnet. Sjekk internettforbindelsen din og start Altitude på nytt.",
         "CONFIGURINGLOCALMN": "Konfigurerer lokal Masternode...",
         "REPORTINGISSUE": "Henter diagnostisk informasjon... Denne informasjonen kopieres til utklippstavlen.",
-        "WALLETUPDATEDOWNLOADING": "Laster ned oppdateringen...",
-        "WALLETBACKUPFAILED": "Automatisk sikkerhetskopiering av lommeboken mislyktes – sjekk plasseringen av sikkerhetskopien og tilgjengelig diskplass",
         "EXPLORERURLSAVED": "Utforsker-URL lagret",
         "EXPLORERURLRESET": "Utforsker-URLen er tilbakestilt til standard",
         "EXPLORERURLINVALID": "Det er ikke en gyldig http(er) URL",
-        "EXPLORERURLUNREACHABLE": "Kunne ikke nå den nettadressen – sjekk den og prøv på nytt"
+        "EXPLORERURLUNREACHABLE": "Kunne ikke nå den nettadressen – sjekk den og prøv på nytt",
+        "DEVRPCHOSTSAVED": "RPC-vert lagret",
+        "DEVRPCHOSTRESET": "RPC-verten er tilbakestilt til standard (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mottatte mynter",
+        "NEWTRANSACTION_TITLE_STAKE": "Mottatt andel",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Mottok Masternode-belønning"
     },
     "TIME": {
         "AFEWSECONDS": "Noen få sekunder",
@@ -533,11 +587,6 @@
         "MONTHS": "måneder",
         "AYEAR": "Et år",
         "YEARS": "år"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Mottatte mynter",
-        "NEWTRANSACTION_TITLE_STAKE": "Mottatt andel",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Mottok Masternode-belønning"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guvernører er ansvarlige for å stemme over månedlige budsjetter og endringer i blokkjeden. Du kan bli guvernør ved å låse riktig sikkerhet i styringskontrakten.",
                 "COLLATERAL": "Nødvendig sikkerhet",
                 "ENROLL": "Registrere",
+                "SELECTAGOVERNOR": "Velg en kvalifisert guvernøradresse",
+                "GOVERNORNOTSELECTED": "Ingen kvalifisert adresse ble valgt",
                 "CONFIRMENROLL": "Du er i ferd med å registrere deg som guvernør. Dette vil sende en transaksjon med nødvendig sikkerhet til styringskontrakten. Du kan avregistrere deg når som helst.",
                 "ISGOVERNORTITLE": "Du er en aktiv guvernør!",
                 "ISGOVERNORDETAIL1": "Guvernørene er ansvarlige for å stemme over månedlige budsjetter og endringer i blokkjeden.",
                 "ISGOVERNORDETAIL2": "For å forbli guvernør må du delta i minst én avstemning hver 30. dag.",
                 "ISGOVERNORDETAIL3": "Hvis det ikke er noe å stemme over, kan du fortsette registreringen manuelt ved å sende en aktiv ping.",
+                "MYGOVERNORADDRESS": "Min guvernøradresse",
                 "UNENROLL": "Avregistrering",
                 "PING": "Send aktiv ping",
                 "LASTPINGTITLE": "Siste ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dager",
                 "GOVERNORVOTEMATURITYHOURS": "timer",
                 "GOVERNORVOTEMATURITYSUFFIX": "til moden",
-                "MYGOVERNORADDRESS": "Min guvernøradresse",
-                "SELECTAGOVERNOR": "Velg en kvalifisert guvernøradresse",
-                "GOVERNORNOTSELECTED": "Ingen kvalifisert adresse ble valgt",
                 "NOTFULLYSYNCEDTITLE": "Guvernørstatus utilgjengelig",
                 "NOTFULLYSYNCEDDETAIL": "Din guvernørregistreringsstatus blir synlig når blokkjeden din er fullstendig synkronisert.",
                 "DGPMIGRATIONTITLE": "DGP-migrering",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Forslaget ditt er opprettet",
             "ENROLLINGGOVERNOR": "Registrerer seg som guvernør...",
             "ENROLLEDGOVERNOR": "Registreringen din vil være fullført når transaksjonen er bekreftet",
-            "VOTINGONPROPOSAL": "Sender forslagsstemme",
-            "VOTEDONPROPOSAL": "Din stemme teller når transaksjonen er bekreftet.",
             "PINGINGGOVERNOR": "Sender ping...",
             "PINGEDGOVERNOR": "Ping sendt. Guvernøren din vil bli oppdatert når transaksjonen er bekreftet.",
+            "VOTINGONPROPOSAL": "Sender forslagsstemme",
+            "VOTEDONPROPOSAL": "Din stemme teller når transaksjonen er bekreftet.",
             "UNENROLLINGGOVERNOR": "Avregistrerer guvernør...",
             "UNENROLLEDGOVERNOR": "Transaksjon sendt. Guvernøren din blir avregistrert når transaksjonen er bekreftet.",
             "GOVERNORNOTMATURE": "Guvernøren din er ikke moden nok til å utføre denne handlingen ennå"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Kjøp Metrix",
+                "SEARCH": "Historie"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Du sender",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transaksjonshistorikk",
                 "SEARCHBUTTON": "SØK",
+                "SEARCHPLACEHOLDER": "Skriv inn MRX- eller BTC-adressen",
                 "TRANSACTIONDATE": "Dato",
                 "TRANSACTIONTYPE": "TX-type",
                 "TRANSACTIONAMOUNT": "Beløp",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Bekreftet",
                 "TRANSACTIONNOTCONFIRMED": "Ikke bekreftet",
                 "TRANSACTIONREFUNDED": "Refundert - Under minimumsbeløpet",
-                "AVGSWAPPRICE": "Gjennomsnittlig byttepris",
-                "SEARCHPLACEHOLDER": "Skriv inn MRX- eller BTC-adressen"
+                "AVGSWAPPRICE": "Gjennomsnittlig byttepris"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Genererer bytteadresse...",
             "ALREADYHAVEADDRESS": "Du har allerede en BTC-adresse tilknyttet denne Metrix-adressen",
             "NOADDRESS": "Du skrev ikke inn en Metrix-adresse"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Kjøp Metrix",
-                "SEARCH": "Historie"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Vis",
                 "EMPTYTITLE": "Ingen tokens funnet ennå",
                 "EMPTYDETAIL": "Altitude sjekker automatisk en blokkutforsker for MRC20- og MRC721-tokener sendt til adressene dine, og verifiserer deretter alt live mot din egen node. Du kan også legge til en token manuelt hvis du kjenner kontraktsadressen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokensjekk er slått av, så adressene dine blir ikke sjekket for tokener. Slå den på igjen ovenfor, eller legg til en token manuelt hvis du vet kontraktsadressen.",
                 "HIDDENTITLE": "Skjulte tokens",
                 "CONTEXTMENUHIDE": "Skjul token",
                 "ITEMSSUFFIX": "vare(r)",
-                "NONENUMERABLETOOLTIP": "Denne samlingen støtter ikke oppføring av individuelle elementer – den viser i stedet hvor mange du har."
+                "NONENUMERABLETOOLTIP": "Denne samlingen støtter ikke oppføring av individuelle elementer – den viser i stedet hvor mange du har.",
+                "CHECKINGENABLED": "Sjekker på",
+                "CHECKINGDISABLED": "Avkryssing",
+                "CHECKINGENABLEDTOOLTIP": "Tokensjekking er på – Altitude sjekker regelmessig adressene dine for tokens og oppdaterer saldoen. Klikk for å slå av.",
+                "CHECKINGDISABLEDTOOLTIP": "Tokensjekking er av – klikk for å slå den på igjen.",
+                "CHECKINGDISABLEDNOTICE": "Automatisk tokensjekk er slått av. Adressene dine skannes ikke etter tokener, og saldoene oppdateres ikke. Du kan fortsatt legge til en token manuelt."
             },
             "ADDTOKEN": {
                 "TITLE": "Legg til token",

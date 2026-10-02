@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "สร้างบัญชี",
             "HIDEEMPTYACCOUNTS": "ซ่อนบัญชีว่างที่ไม่มีชื่อ"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ภาพรวม",
+            "TRANSACTIONSTAB": "ธุรกรรม",
+            "ADDRESSTABS": "ที่อยู่"
+        },
         "SEND": {
             "ADDRECIPIENT": "เพิ่มผู้รับ",
             "SEND": "ส่ง",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "วันที่",
             "TABLECOLUMNS_CONFIRMS": "การยืนยัน",
             "ALL_SELECTUNSELECT": "สลับทั้งหมด",
+            "TREEMODE": "โหมดต้นไม้",
+            "LISTMODE": "โหมดรายการ",
             "SENDAVAILABLE": "ใช้ยอดเงินคงเหลือที่มีอยู่",
             "INPUTLOCKED": "ช่องใส่บัตรถูกล็อกอยู่ คุณต้องปลดล็อกช่องใส่บัตรก่อนจึงจะสามารถใช้งานได้",
             "CONTEXTMENULOCKINPUT": "อินพุตล็อค",
@@ -38,10 +45,48 @@
             "AFTERFEE": "หลังจากชำระค่าธรรมเนียมแล้ว",
             "QUANTITY": "ปริมาณ",
             "BYTES": "ไบต์",
-            "TREEMODE": "โหมดต้นไม้",
-            "LISTMODE": "โหมดรายการ",
             "ALERTFEECHANGETITLE": "การเปลี่ยนแปลงค่าธรรมเนียม",
             "ALERTFEECHANGECONTENT": "ค่าธรรมเนียมการทำธุรกรรมจริงสูงกว่าที่คาดไว้ โปรดยืนยันค่าธรรมเนียมใหม่:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "สร้างสัญญา",
+            "INFO": "ปรับใช้สัญญาอัจฉริยะไปยังเครือข่ายโดยการส่งไบต์โค้ดที่คอมไพล์แล้ว ฟังก์ชันนี้เป็นฟังก์ชันหลักของเชน โปรดตรวจสอบไบต์โค้ดและการตั้งค่าแก๊สของคุณอีกครั้งก่อนปรับใช้ การปรับใช้ไม่สามารถยกเลิกได้",
+            "FROM": "จาก",
+            "BYTECODE": "ไบต์โค้ด",
+            "BYTECODEPLACEHOLDER": "วางโค้ดไบต์ของสัญญาที่คอมไพล์แล้ว (เลขฐานสิบหก)",
+            "INVALIDBYTECODE": "ไบต์โค้ดต้องเป็นสตริงเลขฐานสิบหกที่ถูกต้อง (0-9, a-f) โดยมีจำนวนอักขระเป็นเลขคู่",
+            "GASLIMIT": "ขีดจำกัดก๊าซ",
+            "GASLIMITRANGE": "พิสัย",
+            "GASPRICE": "ราคาก๊าซ (MRX ต่อหน่วย)",
+            "GASPRICEMIN": "ขั้นต่ำ",
+            "ESTIMATEDMAXCOST": "ค่าใช้จ่ายสูงสุดโดยประมาณ",
+            "DEPLOYBUTTON": "ปรับใช้สัญญา",
+            "INCOMPLETEFORM": "โปรดเลือกที่อยู่ผู้ส่ง ป้อนไบต์โค้ดที่ถูกต้อง และกำหนดขีดจำกัด/ราคาก๊าซที่ถูกต้อง",
+            "HIGHGASPRICETITLE": "ราคาน้ำมันสูง",
+            "HIGHGASPRICEINFO": "ราคาก๊าซที่คุณตั้งไว้นั้นสูงผิดปกติ การติดตั้งระบบนี้อาจมีค่าใช้จ่ายสูงถึง:",
+            "DEPLOYING": "กำลังดำเนินการตามสัญญา...",
+            "DEPLOYED": "ส่งการจัดสรรสัญญาแล้ว",
+            "RESULTTITLE": "ผลลัพธ์การใช้งาน",
+            "STATUS": "สถานะ",
+            "STATUSPENDING": "รอการยืนยัน...",
+            "STATUSCONFIRMED": "ติดตั้งสำเร็จแล้ว",
+            "STATUSFAILED": "การติดตั้งล้มเหลว",
+            "TXID": "รหัสธุรกรรม",
+            "SENDER": "ผู้ส่ง",
+            "CONTRACTADDRESS": "ที่อยู่ตามสัญญา",
+            "GASUSED": "แก๊สที่ใช้",
+            "DONEBUTTON": "เสร็จแล้ว",
+            "DEPLOYANOTHERBUTTON": "ปรับใช้อีกครั้ง"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "ธุรกรรม",
+            "COPYBLOCKHASH": "คัดลอกบล็อกแฮช",
+            "COPYTXID": "คัดลอกรหัสธุรกรรม",
+            "COPYACCOUNT": "คัดลอกชื่อบัญชี",
+            "COPYADDRESS": "คัดลอกที่อยู่",
+            "COPYAMOUNT": "จำนวนเงินที่คัดลอก",
+            "COPTBLOCKINDEX": "คัดลอกดัชนีบล็อก",
+            "EXPLORER": "เปิดใน Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "ปลดล็อกเพื่อการวางเดิมพัน",
@@ -68,13 +113,13 @@
             "IP": "ไอพี",
             "ADDRESS": "ที่อยู่",
             "ENABLED": "เปิดใช้งาน",
-            "STARTBUTTON": "เริ่มต้นจากจุดเล็กๆ",
-            "STARTALIASBUTTON": "เริ่มชื่อเล่น",
-            "STARTALLBUTTON": "เริ่มทั้งหมด",
             "NOMASTERNODES": "คุณไม่มีมาสเตอร์โนดเลย",
             "NOMNOUTPUTS": "ไม่พบเอาต์พุตของ Masternode หากต้องการเรียกใช้ Masternode ในเครื่อง ให้ส่งเหรียญจำนวน 2, 5, 25, 50 หรือ 100 ล้านเหรียญไปยังที่อยู่ Masternode ของคุณ แล้วรอการยืนยัน 15 ครั้ง",
+            "STARTBUTTON": "เริ่มต้นจากจุดเล็กๆ",
             "STOPBUTTON": "หยุดท้องถิ่น",
+            "STARTALIASBUTTON": "เริ่มชื่อเล่น",
             "STOPALIASBUTTON": "หยุดนามแฝง",
+            "STARTALLBUTTON": "เริ่มทั้งหมด",
             "ADDREMOTE": "เพิ่มมาสเตอร์โนดระยะไกล",
             "REMOVEMN": "ลบมาสเตอร์โนด",
             "ADDLOCAL": "ตั้งค่ามาสเตอร์โนดในพื้นที่",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "ทั่วไป",
                 "COREVERSION": "เวอร์ชันหลัก",
+                "ALTITUDEVERSION": "เวอร์ชั่นระดับความสูง",
                 "PROTOCOLVERSION": "เวอร์ชันโปรโตคอล",
                 "WALLETVERSION": "เวอร์ชัน Wallet.dat",
                 "NETWORKTITLE": "เครือข่าย",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "จำนวนมาสเตอร์โนด",
                 "BLOCKCHAINTITLE": "บล็อกเชน",
                 "NUMBERBLOCKS": "จำนวนบล็อกปัจจุบัน",
-                "BESTBLOCKTTIME": "เวลาบล็อกสุดท้าย",
-                "ALTITUDEVERSION": "เวอร์ชั่นระดับความสูง"
+                "BESTBLOCKTTIME": "เวลาบล็อกสุดท้าย"
             },
             "DEBUG": {
                 "CONSOLEINFO": "ยินดีต้อนรับสู่คอนโซล RPC ของ Metrix Core พิมพ์ help เพื่อดูภาพรวมของคำสั่งที่มีให้ใช้งาน",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "เลือกภาษา"
         },
-        "TRANSACTIONS": {
-            "TITLE": "ธุรกรรม",
-            "COPYBLOCKHASH": "คัดลอกบล็อกแฮช",
-            "COPYTXID": "คัดลอกรหัสธุรกรรม",
-            "COPYACCOUNT": "คัดลอกชื่อบัญชี",
-            "COPYADDRESS": "คัดลอกที่อยู่",
-            "COPYAMOUNT": "จำนวนเงินที่คัดลอก",
-            "COPTBLOCKINDEX": "คัดลอกดัชนีบล็อก",
-            "EXPLORER": "เปิดใน Block Explorer"
+        "CURRENCY": {
+            "TITLE": "เลือกสกุลเงินที่จะแสดง"
         },
         "EXPLORER": {
             "TITLE": "บล็อก เอ็กซ์พลอเรอร์",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "เครือข่าย",
             "WINDOTAB": "หน้าต่าง",
+            "BACKUPTAB": "สำรองข้อมูล",
+            "EXPLORERTAB": "นักสำรวจ",
+            "DEVELOPERTAB": "นักพัฒนา",
             "NETWORK": {
                 "PROXY": "เชื่อมต่อผ่านพร็อกซี SOCKS5",
                 "PROXYIP": "พร็อกซี IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "ย่อขนาดเมื่อปิด",
                 "BEHAVIOURTITLE": "ถาดระบบและพฤติกรรมของหน้าต่าง"
             },
-            "BACKUPTAB": "สำรองข้อมูล",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "การสำรองข้อมูลอัตโนมัติ",
                 "ENABLED": "สำรองข้อมูล wallet.dat โดยอัตโนมัติตามกำหนดเวลา",
                 "ENABLEDINFO": "สร้างสำเนาสำรองไฟล์กระเป๋าเงินของคุณใหม่ตามกำหนดเวลา เพื่อให้มีสำเนาล่าสุดพร้อมใช้งานเสมอหากเกิดปัญหาใดๆ ขึ้น",
+                "INTERVALLABEL": "สำรองข้อมูลทุกๆ (วัน)",
                 "LASTBACKUP": "การสำรองข้อมูลครั้งล่าสุด:",
                 "NEVERBACKEDUP": "ยังไม่มีการสำรองข้อมูลอัตโนมัติเกิดขึ้น",
                 "BACKUPNOWBUTTON": "สำรองข้อมูลตอนนี้",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "รีเซ็ตเป็นค่าเริ่มต้น",
                 "PRUNETITLE": "ประวัติการสำรองข้อมูล",
                 "PRUNEINFO": "ไฟล์สำรองข้อมูลอัตโนมัติเก่าๆ จะถูกลบออก เพื่อไม่ให้โฟลเดอร์นี้ขยายใหญ่ขึ้นเรื่อยๆ โดยจะเก็บเฉพาะไฟล์สำรองข้อมูลล่าสุดที่อยู่ด้านล่างเท่านั้น",
-                "KEEPCOUNTLABEL": "เก็บไว้เป็นคนสุดท้าย",
-                "INTERVALLABEL": "สำรองข้อมูลทุกๆ (วัน)"
+                "KEEPCOUNTLABEL": "เก็บไว้เป็นคนสุดท้าย"
             },
-            "EXPLORERTAB": "นักสำรวจ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "บล็อก เอ็กซ์พลอเรอร์",
                 "BLOCKEXPLORERINFO": "เว็บไซต์นี้เปิดขึ้นเมื่อดูรายการธุรกรรมบนตัวสำรวจบล็อก (เช่น คลิกขวาที่รายการธุรกรรม > ดูบนตัวสำรวจ)",
@@ -259,25 +298,31 @@
                 "MAINNET": "เมนเน็ต",
                 "TESTNET": "เครือข่ายทดสอบ",
                 "REGTEST": "การทดสอบ"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "โหมดนักพัฒนา",
+                "DEVMODEINFO": "โดยค่าเริ่มต้นจะปิดใช้งานอยู่ และมีไว้สำหรับนักพัฒนาเท่านั้น การเปิดใช้งานจะแสดงตัวเลือกในการกำหนดค่าการเชื่อมต่อ RPC ใหม่ - ผู้ใช้ทั่วไปควรปิดใช้งานไว้",
+                "DEVMODELABEL": "เปิดใช้งานโหมดนักพัฒนา",
+                "WARNING": "การตั้งค่าเหล่านี้มีไว้สำหรับการพัฒนาเท่านั้น การเปลี่ยนแปลงการตั้งค่าเหล่านี้อาจทำให้กระเป๋าเงินไม่สามารถเชื่อมต่อกับโปรแกรมเบื้องหลังได้เลย โปรดใช้เฉพาะเมื่อคุณรู้ว่ากำลังทำอะไรอยู่",
+                "RPCHOSTTITLE": "การเชื่อมต่อ RPC",
+                "RPCHOSTINFO": "โดยค่าเริ่มต้น Altitude จะเชื่อมต่อกับ daemon ที่จัดการเองบนเครื่องนี้ (127.0.0.1) การเปลี่ยนแปลงการตั้งค่านี้จะทำให้มันเชื่อมต่อกับ daemon อื่นแทน เช่น อินสแตนซ์ regtest ระยะไกล โดยไม่จำเป็นต้องเรียกใช้ในเครื่อง หากการเชื่อมต่อสำเร็จ Altitude จะไม่ดาวน์โหลดหรือเริ่มต้น daemon ในเครื่องของตัวเอง rpcallowip ของ daemon เป้าหมายต้องอนุญาตการเชื่อมต่อนี้ และ rpcuser/rpcpassword ด้านล่างต้องตรงกับการกำหนดค่า การเปลี่ยนแปลงจะมีผลทันที ไม่จำเป็นต้องรีสตาร์ท",
+                "RPCHOSTLABEL": "โฮสต์ RPC",
+                "RPCPORTLABEL": "พอร์ต RPC",
+                "RPCUSERLABEL": "ชื่อผู้ใช้ RPC",
+                "RPCPASSWORDLABEL": "รหัสผ่าน RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ภาพรวม",
-            "TRANSACTIONSTAB": "ธุรกรรม",
-            "ADDRESSTABS": "ที่อยู่"
-        },
-        "CURRENCY": {
-            "TITLE": "เลือกสกุลเงินที่จะแสดง"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "แดชบอร์ด",
             "SEND": "ส่ง",
+            "CREATECONTRACT": "สร้างสัญญา",
             "RECEIVE": "รับ",
             "TRANSACTIONS": "ธุรกรรม",
             "STAKING": "การวางเดิมพัน",
             "MASTERNODES": "มาสเตอร์โนด",
+            "EXPLORER": "บล็อก เอ็กซ์พลอเรอร์",
             "SYNC": {
                 "CONNECTING": "การเชื่อมต่อ",
                 "NOBLOCKS": "กำลังรอบล็อก",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ขณะนี้กระเป๋าเงินไม่ได้ทำการ Staking",
                 "MASTERNODEON": "ขณะนี้ Masternode กำลังทำงานอยู่",
                 "MASTERNODEOFF": "ขณะนี้ Masternode ยังไม่ได้เปิดใช้งาน"
-            },
-            "EXPLORER": "บล็อก เอ็กซ์พลอเรอร์"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "ป้อนที่อยู่เว็บไซต์ web3",
+            "GOBUTTON": "ไป",
+            "QUICKLAUNCH": "เปิดใช้งานอย่างรวดเร็ว",
+            "DEVTOOLS": "เครื่องมือสำหรับนักพัฒนาซอฟต์แวร์แบบเปิด",
+            "ADDLINK": "เพิ่มลิงก์",
+            "LINKNAMEPLACEHOLDER": "ชื่อ",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "บันทึก",
+            "CANCEL": "ยกเลิก",
+            "REMOVE": "ลบ",
+            "REMOVECONFIRM": "ลบลิงก์ด่วนนี้ออกหรือไม่?",
+            "LINKEXISTS": "ลิงก์นั้นอยู่ในรายการเปิดใช้งานด่วนของคุณแล้ว",
+            "LINKINVALID": "ป้อนที่อยู่เว็บไซต์ที่ถูกต้อง",
+            "LINKNETWORKLABEL": "เครือข่าย",
+            "LOADFAILED": "ไม่สามารถโหลดเว็บไซต์ได้",
+            "SECURESITE": "การเชื่อมต่อมีความปลอดภัย - ใบรับรอง SSL ถูกต้อง",
+            "INSECURESITE": "การเชื่อมต่อไม่ปลอดภัย",
+            "INVALIDCERTSITE": "การเชื่อมต่อไม่ปลอดภัย - ใบรับรอง SSL ไม่ถูกต้องหรือไม่น่าเชื่อถือ"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ป้อนรหัสผ่านกระเป๋าเงินของคุณ",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "มีการอัปเดตสำหรับ Metrix Core แล้ว คุณต้องการติดตั้งตอนนี้หรือไม่?",
             "WALLETUPDATETITLE": "มีการอัปเดตข้อมูลระดับความสูงแล้ว",
             "WALLETUPDATEINFO": "มีการอัปเดตโปรแกรม Altitude แล้ว คุณต้องการดาวน์โหลดตอนนี้หรือไม่?",
+            "WALLETUPDATEREADYTITLE": "พร้อมอัปเดตระดับความสูงแล้ว",
+            "WALLETUPDATEREADYINFO": "การอัปเดตถูกดาวน์โหลดเรียบร้อยแล้ว โปรดรีสตาร์ท Altitude เพื่อติดตั้ง",
+            "WALLETUPDATERESTARTBUTTON": "เริ่มใหม่และติดตั้ง",
+            "WALLETUPDATELATERBUTTON": "ภายหลัง",
             "CLIENTUPDATEBUTTON": "อัปเดต",
             "CLIENTUPDATECANCELBUTTON": "อย่าอัปเดต",
             "CLIENTUPDATESKIPBUTTON": "ข้ามการอัปเดตนี้",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "ไฟล์สำรองกระเป๋าเงินดิจิทัลที่คุณเคยสร้างไว้ก่อนหน้านี้ทั้งหมด ควรถูกแทนที่ด้วยไฟล์กระเป๋าเงินดิจิทัลที่เข้ารหัสใหม่ซึ่งสร้างขึ้นมาแล้ว เพื่อความปลอดภัย ไฟล์สำรองกระเป๋าเงินดิจิทัลที่ไม่ได้เข้ารหัสก่อนหน้านี้จะไม่มีประโยชน์อีกต่อไปทันทีที่คุณเริ่มใช้กระเป๋าเงินดิจิทัลที่เข้ารหัสใหม่",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "โปรแกรม Metrix Core หยุดทำงานโดยไม่คาดคิด",
             "CLIENTCLOSEDUNEXPECTEDINFO": "เกิดปัญหาขึ้นกับ Metrix Core ทำให้โปรแกรมหยุดทำงาน ขอแนะนำให้ตรวจสอบไฟล์ debug.log เพื่อหาสาเหตุของปัญหา",
+            "CLIENTUNKNOWNERRORTITLE": "ข้อผิดพลาดในการสื่อสารของเมตริกซ์คอร์",
+            "CLIENTUNKNOWNERRORINFO": "เกิดปัญหาในการสื่อสารกับ Metrix Core ขอแนะนำให้ตรวจสอบไฟล์ debug.log เพื่อหาสาเหตุของปัญหา",
+            "BOOTSTRAPFAILEDTITLE": "การบูตสแตรปของ Metrix Core ล้มเหลว",
+            "BOOTSTRAPFAILEDINFO": "เกิดปัญหาในการเริ่มต้นใช้งาน Metrix Core ขอแนะนำให้ตรวจสอบไฟล์บันทึก Altitude เพื่อหาสาเหตุของปัญหา",
+            "BOOTSTRAPOFFERTITLE": "กระเป๋าสตางค์ล้าสมัยอย่างมาก",
+            "BOOTSTRAPOFFERINFO": "มีโปรแกรมบูตสแตรปเวอร์ชันล่าสุดที่สามารถอัปเดต Metrix Core ได้อย่างรวดเร็ว การดำเนินการซิงค์ตามปกติอาจใช้เวลาหลายวัน เนื่องจากกระเป๋าเงินของคุณจำเป็นต้องดาวน์โหลดและตรวจสอบบล็อกทั้งหมดที่พลาดไป",
+            "BOOTSTRAPOFFERBUTTON": "ดาวน์โหลด Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "ดำเนินการซิงค์ตามปกติ",
+            "BOOTSTRAPSPACEINFO": "พื้นที่ดิสก์ไม่เพียงพอสำหรับการดาวน์โหลดและแตกไฟล์บูตสแตรป จำเป็นต้องใช้: {required}, มีพื้นที่ว่าง: {free} โปรดเพิ่มพื้นที่ว่างและลองใหม่อีกครั้ง",
+            "STARTUPFAILEDTITLE": "การเริ่มต้นใช้งาน Metrix Core ล้มเหลว",
+            "STARTUPFAILEDINFO": "เกิดข้อผิดพลาดขณะเริ่มต้นใช้งาน Metrix Core ขอแนะนำให้ตรวจสอบไฟล์บันทึก Altitude เพื่อหาสาเหตุของปัญหา",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "เครื่องมือการกู้คืน",
             "CLIENTINVALIDCONFIGTITLE": "การกำหนดค่า metrix.conf ไม่ถูกต้อง",
             "CLIENTINVALIDCONFIGINFO": "ไฟล์ metrix.conf ของคุณมีการตั้งค่า masternode ที่ไม่ถูกต้อง ซึ่งจะทำให้ Metrix Core ปิดตัวลงทันที โปรดตรวจสอบไฟล์นี้",
             "ADDREMOTEMNTITLE": "เพิ่มมาสเตอร์โนดระยะไกล",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "คีย์ส่วนตัวของมาสเตอร์โนด",
             "ADDREMOTEMNTXHASH": "แฮช TRX มาสเตอร์โนด",
             "ADDREMOTEMNTXINDEX": "ดัชนี Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "การบูตสแตรปของ Metrix Core ล้มเหลว",
-            "BOOTSTRAPFAILEDINFO": "เกิดปัญหาในการเริ่มต้นใช้งาน Metrix Core ขอแนะนำให้ตรวจสอบไฟล์บันทึก Altitude เพื่อหาสาเหตุของปัญหา",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "เครื่องมือการกู้คืน",
-            "STARTUPFAILEDTITLE": "การเริ่มต้นใช้งาน Metrix Core ล้มเหลว",
-            "STARTUPFAILEDINFO": "เกิดข้อผิดพลาดขณะเริ่มต้นใช้งาน Metrix Core ขอแนะนำให้ตรวจสอบไฟล์บันทึก Altitude เพื่อหาสาเหตุของปัญหา",
-            "CLIENTUNKNOWNERRORTITLE": "ข้อผิดพลาดในการสื่อสารของเมตริกซ์คอร์",
-            "CLIENTUNKNOWNERRORINFO": "เกิดปัญหาในการสื่อสารกับ Metrix Core ขอแนะนำให้ตรวจสอบไฟล์ debug.log เพื่อหาสาเหตุของปัญหา",
             "UNENROLLGOVERNORTITLE": "ยืนยันการถอนชื่อผู้ว่าการรัฐ",
             "UNENROLLGOVERNORCONTENT": "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกการลงทะเบียนผู้ว่าการของคุณ? คุณจะไม่สามารถลงคะแนนเสียงในการบริหารจัดการเครือข่ายได้อีกต่อไป",
-            "WALLETUPDATEREADYTITLE": "พร้อมอัปเดตระดับความสูงแล้ว",
-            "WALLETUPDATEREADYINFO": "การอัปเดตถูกดาวน์โหลดเรียบร้อยแล้ว โปรดรีสตาร์ท Altitude เพื่อติดตั้ง",
-            "WALLETUPDATERESTARTBUTTON": "เริ่มใหม่และติดตั้ง",
-            "WALLETUPDATELATERBUTTON": "ภายหลัง",
             "DAPPCONNECTTITLE": "เชื่อมต่อกับเว็บไซต์",
             "DAPPCONNECTINFO": "เว็บไซต์นี้ต้องการเชื่อมต่อกับกระเป๋าเงินดิจิทัลของคุณเพื่อดูที่อยู่และยอดเงินคงเหลือของคุณ",
             "DAPPCONNECTBUTTON": "เชื่อมต่อ",
+            "DAPPCONNECTADDRESSLABEL": "ที่อยู่",
+            "DAPPAPPROVEBUTTON": "อนุมัติ",
             "DAPPREJECTBUTTON": "ปฏิเสธ",
             "DAPPSENDTITLE": "คำขอทำธุรกรรมตามสัญญา",
             "DAPPSENDINFO": "เว็บไซต์นี้ขออนุญาตส่งธุรกรรมสัญญาจากกระเป๋าเงินดิจิทัลของคุณ",
-            "DAPPSIGNTITLE": "ลงชื่อขอข้อความ",
-            "DAPPSIGNINFO": "เว็บไซต์นี้ขอให้คุณลงชื่อในข้อความโดยระบุที่อยู่กระเป๋าเงินดิจิทัลของคุณ",
-            "DAPPNOTREADY": "ยังไม่สามารถเชื่อมต่อกับเว็บไซต์ได้ - Metrix Core กำลังเริ่มต้นทำงาน",
-            "DAPPNOWALLET": "ไม่สามารถเชื่อมต่อกับเว็บไซต์ได้ - ไม่มีที่อยู่กระเป๋าเงินดิจิทัลให้ใช้งาน",
-            "DAPPAPPROVEBUTTON": "อนุมัติ",
-            "DAPPCONNECTADDRESSLABEL": "ที่อยู่",
             "DAPPSENDSITELABEL": "เว็บไซต์",
             "DAPPSENDCONTRACTLABEL": "ที่อยู่ตามสัญญา",
             "DAPPSENDAMOUNTLABEL": "จำนวน",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "ค่าธรรมเนียมเครือข่ายสูงสุด",
             "DAPPSENDMAXTOTALLABEL": "ยอดรวมสูงสุด",
             "DAPPSENDDATALABEL": "ข้อมูลสัญญา",
+            "DAPPSIGNTITLE": "ลงชื่อขอข้อความ",
+            "DAPPSIGNINFO": "เว็บไซต์นี้ขอให้คุณลงชื่อในข้อความโดยระบุที่อยู่กระเป๋าเงินดิจิทัลของคุณ",
             "DAPPSIGNMESSAGELABEL": "ข้อความ",
-            "BOOTSTRAPOFFERTITLE": "กระเป๋าสตางค์ล้าสมัยอย่างมาก",
-            "BOOTSTRAPOFFERINFO": "มีโปรแกรมบูตสแตรปเวอร์ชันล่าสุดที่สามารถอัปเดต Metrix Core ได้อย่างรวดเร็ว การดำเนินการซิงค์ตามปกติอาจใช้เวลาหลายวัน เนื่องจากกระเป๋าเงินของคุณจำเป็นต้องดาวน์โหลดและตรวจสอบบล็อกทั้งหมดที่พลาดไป",
-            "BOOTSTRAPOFFERBUTTON": "ดาวน์โหลด Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "ดำเนินการซิงค์ตามปกติ",
-            "BOOTSTRAPSPACEINFO": "พื้นที่ดิสก์ไม่เพียงพอสำหรับการดาวน์โหลดและแตกไฟล์บูตสแตรป จำเป็นต้องใช้: {required}, มีพื้นที่ว่าง: {free} โปรดเพิ่มพื้นที่ว่างและลองใหม่อีกครั้ง"
+            "DAPPNOTREADY": "ยังไม่สามารถเชื่อมต่อกับเว็บไซต์ได้ - Metrix Core กำลังเริ่มต้นทำงาน",
+            "DAPPNOWALLET": "ไม่สามารถเชื่อมต่อกับเว็บไซต์ได้ - ไม่มีที่อยู่กระเป๋าเงินดิจิทัลให้ใช้งาน"
         },
         "ADDRESSBOOK": {
             "TITLE": "สมุดที่อยู่",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "เครือข่ายปัจจุบัน"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "ป้อนที่อยู่เว็บไซต์ web3",
-            "GOBUTTON": "ไป",
-            "QUICKLAUNCH": "เปิดใช้งานอย่างรวดเร็ว",
-            "DEVTOOLS": "เครื่องมือสำหรับนักพัฒนาซอฟต์แวร์แบบเปิด",
-            "ADDLINK": "เพิ่มลิงก์",
-            "LINKNAMEPLACEHOLDER": "ชื่อ",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "บันทึก",
-            "CANCEL": "ยกเลิก",
-            "REMOVE": "ลบ",
-            "REMOVECONFIRM": "ลบลิงก์ด่วนนี้ออกหรือไม่?",
-            "LINKEXISTS": "ลิงก์นั้นอยู่ในรายการเปิดใช้งานด่วนของคุณแล้ว",
-            "LINKINVALID": "ป้อนที่อยู่เว็บไซต์ที่ถูกต้อง",
-            "LINKNETWORKLABEL": "เครือข่าย",
-            "LOADFAILED": "ไม่สามารถโหลดเว็บไซต์ได้",
-            "SECURESITE": "การเชื่อมต่อมีความปลอดภัย - ใบรับรอง SSL ถูกต้อง",
-            "INSECURESITE": "การเชื่อมต่อไม่ปลอดภัย",
-            "INVALIDCERTSITE": "การเชื่อมต่อไม่ปลอดภัย - ใบรับรอง SSL ไม่ถูกต้องหรือไม่น่าเชื่อถือ"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "สำรองข้อมูลกระเป๋าเงิน...",
             "SIGNMESSAGE": "ข้อความลงชื่อ...",
             "VERIFYMESSAGE": "ยืนยันข้อความ...",
-            "LOCALE": "ภาษา...",
-            "RESTARTCORE": "รีสตาร์ท Metrix Core",
-            "EXIT": "ทางออก",
             "OPTIONS": "ตัวเลือก...",
+            "LOCALE": "ภาษา...",
             "CURRENCIES": "แสดงสกุลเงิน...",
-            "ALTITUDEREFRESH": "รีเฟรชข้อมูลระดับความสูง"
+            "RESTARTCORE": "รีสตาร์ท Metrix Core",
+            "ALTITUDEREFRESH": "รีเฟรชข้อมูลระดับความสูง",
+            "EXIT": "ทางออก"
         },
         "ENCRYPT": {
             "TITLE": "เข้ารหัส",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ยอดคงเหลือทั้งหมด",
+        "SPENDABLEBALANCE": "ยอดเงินคงเหลือที่สามารถใช้จ่ายได้",
+        "PENDINGBALANCE": "ยอดคงเหลือที่รอดำเนินการ",
         "CANCELBUTTON": "ยกเลิก",
         "DONEBUTTON": "เสร็จแล้ว",
         "OKBUTTON": "ตกลง",
+        "ACCEPTBUTTON": "ยอมรับ",
         "CLEARALLBUTTON": "ล้างทั้งหมด",
         "ENTERACCOUNTLABEL": "ป้อนป้ายกำกับสำหรับที่อยู่นี้",
         "ENTERADDRESSLABEL": "ป้อนที่อยู่ Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "เรียงลำดับตาม",
         "SEARCH": "ค้นหา",
         "FEE": "ค่าธรรมเนียม",
-        "ACCEPTBUTTON": "ยอมรับ",
         "CONFIRMED": "ยืนยันแล้ว",
         "UNCONFIRMED": "ยังไม่ได้รับการยืนยัน",
-        "PENDINGBALANCE": "ยอดคงเหลือที่รอดำเนินการ",
-        "SPENDABLEBALANCE": "ยอดเงินคงเหลือที่สามารถใช้จ่ายได้",
         "SAVEBUTTON": "บันทึก"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "กำลังรีสตาร์ท Metrix Core...",
         "BOOTSTRAPPING": "กำลังดาวน์โหลด Bootstrap...",
         "BOOTSTRAPEXTRACTING": "กำลังดึงข้อมูลบูตสแตรป...",
-        "TIMEREMAINING": "ที่เหลืออยู่:"
+        "TIMEREMAINING": "ที่เหลืออยู่:",
+        "DEVRPCOVERRIDEACTIVE": "มีการตั้งค่าการเชื่อมต่อ RPC สำหรับนักพัฒนาไว้ (ตัวเลือก > นักพัฒนา) และไม่ตอบสนอง กรุณาล้างการตั้งค่านี้เพื่อเชื่อมต่อกับ daemon ในเครื่องตามปกติ",
+        "DEVRPCOVERRIDECLEARBUTTON": "ล้างการตั้งค่า RPC Override และเชื่อมต่อใหม่"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "สร้างบัญชีใหม่สำเร็จแล้ว",
         "ADDRESSCOPIEDCLIPBOARD": "คัดลอกที่อยู่ไปยังคลิปบอร์ดแล้ว",
+        "COPIEDCLIPBOARD": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "คัดลอกรายการธุรกรรมไปยังคลิปบอร์ดแล้ว",
         "EMPTYFIELDS": "โปรดกรอกข้อมูลในทุกช่อง",
         "NOUPDATE": "ไม่มีข้อมูลอัปเดต",
         "WALLETBACKEDUP": "การสำรองข้อมูลกระเป๋าเงินสำเร็จแล้ว",
+        "WALLETBACKUPFAILED": "การสำรองข้อมูลกระเป๋าเงินอัตโนมัติล้มเหลว - โปรดตรวจสอบตำแหน่งที่สำรองข้อมูลและพื้นที่ว่างในดิสก์ของคุณ",
         "PASSPHRASEMISMATCH": "รหัสผ่านที่คุณป้อนไม่ตรงกัน",
         "CHECKINGUPDATE": "กำลังตรวจสอบการอัปเดต...",
         "CHECKINGUPDATEFAILED": "ไม่สามารถตรวจสอบการอัปเดตได้ โปรดตรวจสอบเครือข่ายของคุณ",
+        "WALLETUPDATEDOWNLOADING": "กำลังดาวน์โหลดการอัปเดต...",
         "SENDINGEXCEEDSBALANCE": "จำนวนเงินที่คุณส่งเกินยอดเงินคงเหลือที่คุณเลือกไว้",
         "MISSINGCHANGEADDRESS": "คุณต้องระบุที่อยู่สำหรับเปลี่ยนเงิน",
         "MISSINGDESTINATIONADDRESS": "คุณต้องระบุที่อยู่ปลายทาง",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "กำลังเข้ารหัสกระเป๋าเงิน...",
         "CHANGINGPASSPHARASE": "กำลังเปลี่ยนรหัสผ่าน...",
         "STARTINGMASTERNODE": "กำลังเริ่มต้นมาสเตอร์โนด...",
+        "STOPPINGMASTERNODE": "กำลังหยุดมาสเตอร์โนด...",
         "SENDINGTRANSACTION": "กำลังส่งธุรกรรม...",
         "SIGNINGMESSAGE": "ข้อความลงนาม...",
         "SIGNEDMESSAGE": "ข้อความลงชื่อ",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "กำลังปลดล็อกกระเป๋าเงิน...",
         "TRANSACTIONMISMATCH": "เกิดข้อผิดพลาดในการทำธุรกรรม โปรดลองใหม่อีกครั้ง",
         "MINIMUMCONFIRMATIONS": "ข้อมูลทั้งหมดที่ป้อนต้องได้รับการยืนยันอย่างน้อย 1 ครั้งก่อนจึงจะสามารถใช้จ่ายได้",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "คัดลอกรายการธุรกรรมไปยังคลิปบอร์ดแล้ว",
-        "STOPPINGMASTERNODE": "กำลังหยุดมาสเตอร์โนด...",
         "FAILEDTOWRITECONFIG": "เกิดปัญหาในการเขียนไฟล์ metrix.conf ของคุณ โปรดตรวจสอบว่าไฟล์ดังกล่าวมีอยู่จริงและโปรแกรม Altitude มีสิทธิ์ในการเขียนไฟล์นั้น",
         "NOPUBLICUP": "ไม่พบที่อยู่ IP สาธารณะ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณและรีสตาร์ท Altitude",
         "CONFIGURINGLOCALMN": "กำลังตั้งค่า Masternode ในพื้นที่...",
         "REPORTINGISSUE": "กำลังดึงข้อมูลการวินิจฉัย... ข้อมูลนี้จะถูกคัดลอกไปยังคลิปบอร์ดของคุณ",
-        "WALLETUPDATEDOWNLOADING": "กำลังดาวน์โหลดการอัปเดต...",
-        "WALLETBACKUPFAILED": "การสำรองข้อมูลกระเป๋าเงินอัตโนมัติล้มเหลว - โปรดตรวจสอบตำแหน่งที่สำรองข้อมูลและพื้นที่ว่างในดิสก์ของคุณ",
         "EXPLORERURLSAVED": "บันทึก URL ของ Explorer แล้ว",
         "EXPLORERURLRESET": "URL ของ Explorer กลับไปเป็นค่าเริ่มต้นแล้ว",
         "EXPLORERURLINVALID": "นั่นไม่ใช่ URL http(s) ที่ถูกต้อง",
-        "EXPLORERURLUNREACHABLE": "ไม่สามารถเข้าถึง URL นั้นได้ โปรดตรวจสอบและลองใหม่อีกครั้ง"
+        "EXPLORERURLUNREACHABLE": "ไม่สามารถเข้าถึง URL นั้นได้ โปรดตรวจสอบและลองใหม่อีกครั้ง",
+        "DEVRPCHOSTSAVED": "บันทึกโฮสต์ RPC แล้ว",
+        "DEVRPCHOSTRESET": "โฮสต์ RPC กลับไปใช้ค่าเริ่มต้น (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ได้รับเหรียญ",
+        "NEWTRANSACTION_TITLE_STAKE": "ได้รับส่วนแบ่ง",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ได้รับรางวัลมาสเตอร์โนด"
     },
     "TIME": {
         "AFEWSECONDS": "ไม่กี่วินาที",
@@ -533,11 +587,6 @@
         "MONTHS": "หลายเดือน",
         "AYEAR": "หนึ่งปี",
         "YEARS": "ปี"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "ได้รับเหรียญ",
-        "NEWTRANSACTION_TITLE_STAKE": "ได้รับส่วนแบ่ง",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "ได้รับรางวัลมาสเตอร์โนด"
     },
     "MONTH": {
         "JAN": "ม.ค",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "ผู้ว่าการมีหน้าที่ลงคะแนนเสียงเกี่ยวกับงบประมาณรายเดือนและการเปลี่ยนแปลงบล็อกเชน คุณสามารถเป็นผู้ว่าการได้โดยการล็อกหลักประกันที่ถูกต้องในสัญญาการกำกับดูแล",
                 "COLLATERAL": "หลักประกันที่ต้องมี",
                 "ENROLL": "ลงทะเบียน",
+                "SELECTAGOVERNOR": "เลือกที่อยู่ของผู้ว่าการรัฐที่เหมาะสม",
+                "GOVERNORNOTSELECTED": "ไม่มีการเลือกที่อยู่ที่มีคุณสมบัติเหมาะสม",
                 "CONFIRMENROLL": "คุณกำลังจะลงทะเบียนเป็นผู้ว่าการ ระบบจะส่งธุรกรรมพร้อมหลักประกันที่จำเป็นไปยังสัญญาการกำกับดูแล คุณสามารถยกเลิกการลงทะเบียนได้ตลอดเวลา",
                 "ISGOVERNORTITLE": "คุณเป็นผู้ว่าการรัฐที่กระตือรือร้น!",
                 "ISGOVERNORDETAIL1": "ผู้ว่าการรัฐมีหน้าที่ลงคะแนนเสียงเกี่ยวกับงบประมาณรายเดือนและการเปลี่ยนแปลงที่เกี่ยวข้องกับเทคโนโลยีบล็อกเชน",
                 "ISGOVERNORDETAIL2": "หากต้องการดำรงตำแหน่งผู้ว่าการรัฐต่อไป คุณจะต้องเข้าร่วมการลงคะแนนอย่างน้อย 1 ครั้งทุกๆ 30 วัน",
                 "ISGOVERNORDETAIL3": "หากไม่มีเรื่องให้ลงคะแนน คุณสามารถดำเนินการลงทะเบียนต่อได้ด้วยตนเองโดยการส่งสัญญาณ ping ที่ใช้งานอยู่",
+                "MYGOVERNORADDRESS": "สุนทรพจน์ของผู้ว่าการรัฐของผม",
                 "UNENROLL": "ยกเลิกการลงทะเบียน",
                 "PING": "ส่ง Active Ping",
                 "LASTPINGTITLE": "ปิงครั้งล่าสุด",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "วัน",
                 "GOVERNORVOTEMATURITYHOURS": "ชั่วโมง",
                 "GOVERNORVOTEMATURITYSUFFIX": "จนกว่าจะโตเต็มที่",
-                "MYGOVERNORADDRESS": "สุนทรพจน์ของผู้ว่าการรัฐของผม",
-                "SELECTAGOVERNOR": "เลือกที่อยู่ของผู้ว่าการรัฐที่เหมาะสม",
-                "GOVERNORNOTSELECTED": "ไม่มีการเลือกที่อยู่ที่มีคุณสมบัติเหมาะสม",
                 "NOTFULLYSYNCEDTITLE": "สถานะผู้ว่าการรัฐไม่พร้อมใช้งาน",
                 "NOTFULLYSYNCEDDETAIL": "สถานะการลงทะเบียนผู้ว่าการของคุณจะปรากฏให้เห็นเมื่อบล็อกเชนของคุณซิงค์ข้อมูลเสร็จสมบูรณ์แล้ว",
                 "DGPMIGRATIONTITLE": "การย้าย DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "ข้อเสนอของคุณถูกสร้างขึ้นเรียบร้อยแล้ว",
             "ENROLLINGGOVERNOR": "ลงทะเบียนเป็นผู้ว่าการรัฐ...",
             "ENROLLEDGOVERNOR": "การลงทะเบียนของคุณจะเสร็จสมบูรณ์เมื่อการทำธุรกรรมได้รับการยืนยันแล้ว",
-            "VOTINGONPROPOSAL": "ส่งข้อเสนอเพื่อลงคะแนน",
-            "VOTEDONPROPOSAL": "คะแนนเสียงของคุณจะถูกนับเมื่อการทำธุรกรรมได้รับการยืนยันแล้ว",
             "PINGINGGOVERNOR": "กำลังส่งสัญญาณ ping...",
             "PINGEDGOVERNOR": "ส่ง Ping สำเร็จแล้ว ผู้ว่าการของคุณจะได้รับการแจ้งเตือนเมื่อการทำธุรกรรมได้รับการยืนยัน",
+            "VOTINGONPROPOSAL": "ส่งข้อเสนอเพื่อลงคะแนน",
+            "VOTEDONPROPOSAL": "คะแนนเสียงของคุณจะถูกนับเมื่อการทำธุรกรรมได้รับการยืนยันแล้ว",
             "UNENROLLINGGOVERNOR": "ถอดชื่อผู้ว่าการรัฐออกจากทะเบียน...",
             "UNENROLLEDGOVERNOR": "ส่งธุรกรรมเรียบร้อยแล้ว ผู้ว่าการรัฐของคุณจะถูกถอดออกจากระบบเมื่อธุรกรรมได้รับการยืนยันแล้ว",
             "GOVERNORNOTMATURE": "ผู้ว่าการรัฐของคุณยังไม่เป็นผู้ใหญ่พอที่จะดำเนินการเรื่องนี้ได้"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "ซื้อ Metrix",
+                "SEARCH": "ประวัติศาสตร์"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "คุณส่ง",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ประวัติการทำธุรกรรม",
                 "SEARCHBUTTON": "ค้นหา",
+                "SEARCHPLACEHOLDER": "ป้อนที่อยู่ MRX หรือ BTC",
                 "TRANSACTIONDATE": "วันที่",
                 "TRANSACTIONTYPE": "ประเภท TX",
                 "TRANSACTIONAMOUNT": "จำนวน",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "ยืนยันแล้ว",
                 "TRANSACTIONNOTCONFIRMED": "ยังไม่ได้รับการยืนยัน",
                 "TRANSACTIONREFUNDED": "ได้รับเงินคืน - ต่ำกว่าจำนวนขั้นต่ำ",
-                "AVGSWAPPRICE": "ราคาแลกเปลี่ยนเฉลี่ย",
-                "SEARCHPLACEHOLDER": "ป้อนที่อยู่ MRX หรือ BTC"
+                "AVGSWAPPRICE": "ราคาแลกเปลี่ยนเฉลี่ย"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "กำลังสร้างที่อยู่สวอป...",
             "ALREADYHAVEADDRESS": "คุณมีที่อยู่ BTC ที่เชื่อมโยงกับที่อยู่ Metrix นี้อยู่แล้ว",
             "NOADDRESS": "คุณไม่ได้ป้อนที่อยู่ Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "ซื้อ Metrix",
-                "SEARCH": "ประวัติศาสตร์"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "เปิดเผย",
                 "EMPTYTITLE": "ยังไม่พบโทเค็นใดๆ",
                 "EMPTYDETAIL": "Altitude จะตรวจสอบ Block Explorer โดยอัตโนมัติเพื่อหาโทเค็น MRC20 และ MRC721 ที่ส่งไปยังที่อยู่ของคุณ จากนั้นจะตรวจสอบทุกอย่างแบบเรียลไทม์กับโหนดของคุณเอง นอกจากนี้ คุณยังสามารถเพิ่มโทเค็นด้วยตนเองได้หากคุณทราบที่อยู่สัญญาของโทเค็นนั้น",
+                "EMPTYDETAILCHECKINGDISABLED": "การตรวจสอบโทเค็นอัตโนมัติถูกปิดใช้งานอยู่ ดังนั้นที่อยู่ของคุณจึงไม่ได้ถูกตรวจสอบหาโทเค็น เปิดใช้งานอีกครั้งด้านบน หรือเพิ่มโทเค็นด้วยตนเองหากคุณทราบที่อยู่สัญญาของโทเค็นนั้น",
                 "HIDDENTITLE": "โทเค็นที่ซ่อนอยู่",
                 "CONTEXTMENUHIDE": "ซ่อนโทเค็น",
                 "ITEMSSUFFIX": "รายการ(ต่างๆ)",
-                "NONENUMERABLETOOLTIP": "คอลเลกชันนี้ไม่รองรับการแสดงรายการสินค้าแต่ละชิ้น แต่จะแสดงจำนวนสินค้าที่คุณมีอยู่แทน"
+                "NONENUMERABLETOOLTIP": "คอลเลกชันนี้ไม่รองรับการแสดงรายการสินค้าแต่ละชิ้น แต่จะแสดงจำนวนสินค้าที่คุณมีอยู่แทน",
+                "CHECKINGENABLED": "การตรวจสอบ",
+                "CHECKINGDISABLED": "การทำเครื่องหมายถูก",
+                "CHECKINGENABLEDTOOLTIP": "การตรวจสอบโทเค็นเปิดใช้งานอยู่ - Altitude จะตรวจสอบที่อยู่ของคุณเพื่อหาโทเค็นและอัปเดตยอดคงเหลือเป็นระยะ คลิกเพื่อปิดใช้งาน",
+                "CHECKINGDISABLEDTOOLTIP": "การตรวจสอบโทเค็นปิดอยู่ - คลิกเพื่อเปิดใช้งานอีกครั้ง",
+                "CHECKINGDISABLEDNOTICE": "การตรวจสอบโทเค็นอัตโนมัติถูกปิดใช้งานแล้ว ที่อยู่ของคุณจะไม่ถูกสแกนหาโทเค็น และยอดคงเหลือจะไม่ได้รับการอัปเดต คุณยังคงสามารถเพิ่มโทเค็นด้วยตนเองได้"
             },
             "ADDTOKEN": {
                 "TITLE": "เพิ่มโทเค็น",

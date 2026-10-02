@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Créer un compte",
             "HIDEEMPTYACCOUNTS": "Masquer les comptes vides sans nom"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Aperçu",
+            "TRANSACTIONSTAB": "Transactions",
+            "ADDRESSTABS": "Adresses"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ajouter un destinataire",
             "SEND": "Envoyer",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Date",
             "TABLECOLUMNS_CONFIRMS": "Confirmations",
             "ALL_SELECTUNSELECT": "Tout activer/désactiver",
+            "TREEMODE": "Mode arborescent",
+            "LISTMODE": "Mode liste",
             "SENDAVAILABLE": "Utiliser le solde disponible",
             "INPUTLOCKED": "Le champ de saisie est verrouillé. Vous devrez le déverrouiller pour l'utiliser.",
             "CONTEXTMENULOCKINPUT": "Verrouiller l'entrée",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Après frais",
             "QUANTITY": "Quantité",
             "BYTES": "Octets",
-            "TREEMODE": "Mode arborescent",
-            "LISTMODE": "Mode liste",
             "ALERTFEECHANGETITLE": "Changement de frais",
             "ALERTFEECHANGECONTENT": "Les frais de transaction réels sont plus élevés que prévu. Veuillez confirmer les nouveaux frais :"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Créer un contrat",
+            "INFO": "Déployez un contrat intelligent sur le réseau en soumettant son bytecode compilé. Cette fonction essentielle de la chaîne nécessite une vérification minutieuse de votre bytecode et de vos paramètres de gaz avant le déploiement, car celui-ci est irréversible.",
+            "FROM": "Depuis",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Collez le bytecode du contrat compilé (hexadécimal)",
+            "INVALIDBYTECODE": "Le bytecode doit être une chaîne hexadécimale valide (0-9, a-f) comportant un nombre pair de caractères.",
+            "GASLIMIT": "Limite de gaz",
+            "GASLIMITRANGE": "Gamme",
+            "GASPRICE": "Prix du gaz (MRX par unité de gaz)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Coût maximal estimé",
+            "DEPLOYBUTTON": "Contrat de déploiement",
+            "INCOMPLETEFORM": "Veuillez sélectionner une adresse d'expéditeur, saisir un bytecode valide et définir une limite/un prix de gaz valide.",
+            "HIGHGASPRICETITLE": "Prix de l'essence élevés",
+            "HIGHGASPRICEINFO": "Le prix du gaz que vous avez fixé est anormalement élevé. Ce déploiement pourrait coûter jusqu'à :",
+            "DEPLOYING": "Déploiement du contrat...",
+            "DEPLOYED": "Déploiement du contrat soumis",
+            "RESULTTITLE": "Résultat du déploiement",
+            "STATUS": "Statut",
+            "STATUSPENDING": "En attente de confirmation...",
+            "STATUSCONFIRMED": "Déploiement réussi",
+            "STATUSFAILED": "Le déploiement a échoué",
+            "TXID": "ID de transaction",
+            "SENDER": "Expéditeur",
+            "CONTRACTADDRESS": "Adresse du contrat",
+            "GASUSED": "Gaz utilisé",
+            "DONEBUTTON": "Fait",
+            "DEPLOYANOTHERBUTTON": "Déployer un autre"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transactions",
+            "COPYBLOCKHASH": "Copie du hachage du bloc",
+            "COPYTXID": "Copier l'identifiant de transaction",
+            "COPYACCOUNT": "Copier le nom du compte",
+            "COPYADDRESS": "Copie de l'adresse",
+            "COPYAMOUNT": "Montant de la copie",
+            "COPTBLOCKINDEX": "Index du bloc de copie",
+            "EXPLORER": "Ouvrir dans l'explorateur de blocs"
         },
         "STAKING": {
             "UNLOCK": "Débloquer pour le staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adresse",
             "ENABLED": "Activé",
-            "STARTBUTTON": "Démarrer local",
-            "STARTALIASBUTTON": "Alias de départ",
-            "STARTALLBUTTON": "Tout commencer",
             "NOMASTERNODES": "Vous ne possédez aucun masternode",
             "NOMNOUTPUTS": "Aucune sortie de Masternode trouvée. Pour exécuter un Masternode local, envoyez exactement 2, 5, 25, 50 ou 100 millions de pièces à votre adresse Masternode et attendez 15 confirmations.",
+            "STARTBUTTON": "Démarrer local",
             "STOPBUTTON": "Arrêtez le local",
+            "STARTALIASBUTTON": "Alias de départ",
             "STOPALIASBUTTON": "Arrêter Alias",
+            "STARTALLBUTTON": "Tout commencer",
             "ADDREMOTE": "Ajouter un nœud maître distant",
             "REMOVEMN": "Supprimer le nœud maître",
             "ADDLOCAL": "Configurer le nœud maître local",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Général",
                 "COREVERSION": "Version de base",
+                "ALTITUDEVERSION": "Version Altitude",
                 "PROTOCOLVERSION": "Version du protocole",
                 "WALLETVERSION": "Version de Wallet.dat",
                 "NETWORKTITLE": "Réseau",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Nombre de nœuds maîtres",
                 "BLOCKCHAINTITLE": "Chaîne de blocs",
                 "NUMBERBLOCKS": "Nombre actuel de blocs",
-                "BESTBLOCKTTIME": "Dernière période de bloc",
-                "ALTITUDEVERSION": "Version Altitude"
+                "BESTBLOCKTTIME": "Dernière période de bloc"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Bienvenue dans la console RPC de Metrix Core. Tapez « help » pour obtenir un aperçu des commandes disponibles.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Sélectionner la langue"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transactions",
-            "COPYBLOCKHASH": "Copie du hachage du bloc",
-            "COPYTXID": "Copier l'identifiant de transaction",
-            "COPYACCOUNT": "Copier le nom du compte",
-            "COPYADDRESS": "Copie de l'adresse",
-            "COPYAMOUNT": "Montant de la copie",
-            "COPTBLOCKINDEX": "Index du bloc de copie",
-            "EXPLORER": "Ouvrir dans l'explorateur de blocs"
+        "CURRENCY": {
+            "TITLE": "Sélectionnez la devise affichée"
         },
         "EXPLORER": {
             "TITLE": "Explorateur de blocs",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Réseau",
             "WINDOTAB": "Fenêtre",
+            "BACKUPTAB": "Sauvegarde",
+            "EXPLORERTAB": "Explorateur",
+            "DEVELOPERTAB": "Promoteur",
             "NETWORK": {
                 "PROXY": "Connexion via proxy SOCKS5",
                 "PROXYIP": "Adresse IP du proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Réduire à la fermeture",
                 "BEHAVIOURTITLE": "Comportement de la barre d'état système et des fenêtres"
             },
-            "BACKUPTAB": "Sauvegarde",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Sauvegarde automatique",
                 "ENABLED": "Sauvegarde automatique du fichier wallet.dat selon une planification",
                 "ENABLEDINFO": "Crée une nouvelle sauvegarde de votre fichier de portefeuille à intervalles réguliers, afin qu'une copie récente soit toujours disponible en cas de problème.",
+                "INTERVALLABEL": "Sauvegarder tous les (jours)",
                 "LASTBACKUP": "Dernière sauvegarde :",
                 "NEVERBACKEDUP": "Aucune sauvegarde automatique n'a encore été effectuée.",
                 "BACKUPNOWBUTTON": "Sauvegarder maintenant",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Réinitialiser par défaut",
                 "PRUNETITLE": "Historique des sauvegardes",
                 "PRUNEINFO": "Les sauvegardes automatiques les plus anciennes sont supprimées afin que ce dossier ne s'allonge pas indéfiniment ; seules les plus récentes, ci-dessous, sont conservées.",
-                "KEEPCOUNTLABEL": "Conservez le dernier",
-                "INTERVALLABEL": "Sauvegarder tous les (jours)"
+                "KEEPCOUNTLABEL": "Conservez le dernier"
             },
-            "EXPLORERTAB": "Explorateur",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Explorateur de blocs",
                 "BLOCKEXPLORERINFO": "Le site s'ouvrait lors de la consultation d'une transaction dans l'explorateur de blocs (par exemple, clic droit sur une transaction > Afficher dans l'explorateur).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Réseau principal",
                 "TESTNET": "Réseau de test",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mode développeur",
+                "DEVMODEINFO": "Désactivée par défaut et réservée aux développeurs. Son activation permet d'accéder à des options de personnalisation de la connexion RPC ; les utilisateurs standard doivent la laisser désactivée.",
+                "DEVMODELABEL": "Activer le mode développeur",
+                "WARNING": "Ces paramètres sont réservés au développement. Les modifier peut empêcher le portefeuille de se connecter à un démon ; n’utilisez cette option que si vous savez ce que vous faites.",
+                "RPCHOSTTITLE": "Connexion RPC",
+                "RPCHOSTINFO": "Par défaut, Altitude se connecte au démon qu'il gère lui-même sur cette machine (127.0.0.1). En modifiant cette configuration, il est possible de se connecter à un autre démon, par exemple une instance distante de regtest, sans avoir à en exécuter une localement. Si la connexion réussit, Altitude ne téléchargera ni ne démarrera son propre démon local. L'adresse IP RPC (rpcallowip) du démon cible doit autoriser cette connexion, et les identifiants RPC (rpcuser/rpcpassword) ci-dessous doivent correspondre à sa configuration. La modification est effective immédiatement ; aucun redémarrage n'est nécessaire.",
+                "RPCHOSTLABEL": "Hôte RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Nom d'utilisateur RPC",
+                "RPCPASSWORDLABEL": "Mot de passe RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Aperçu",
-            "TRANSACTIONSTAB": "Transactions",
-            "ADDRESSTABS": "Adresses"
-        },
-        "CURRENCY": {
-            "TITLE": "Sélectionnez la devise affichée"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Tableau de bord",
             "SEND": "Envoyer",
+            "CREATECONTRACT": "Créer un contrat",
             "RECEIVE": "Recevoir",
             "TRANSACTIONS": "Transactions",
             "STAKING": "Jalonnement",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Explorateur de blocs",
             "SYNC": {
                 "CONNECTING": "De liaison",
                 "NOBLOCKS": "En attente de blocs",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Le portefeuille n'est pas en cours de staking actuellement.",
                 "MASTERNODEON": "Le masternode est actuellement en fonctionnement.",
                 "MASTERNODEOFF": "Le masternode n'est pas en fonctionnement actuellement."
-            },
-            "EXPLORER": "Explorateur de blocs"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Saisissez une adresse de site web3",
+            "GOBUTTON": "Aller",
+            "QUICKLAUNCH": "Lancement rapide",
+            "DEVTOOLS": "Outils de développement ouverts",
+            "ADDLINK": "Ajouter un lien",
+            "LINKNAMEPLACEHOLDER": "Nom",
+            "LINKURLPLACEHOLDER": "https://exemple.com",
+            "SAVE": "Sauvegarder",
+            "CANCEL": "Annuler",
+            "REMOVE": "Retirer",
+            "REMOVECONFIRM": "Supprimer ce lien rapide ?",
+            "LINKEXISTS": "Ce lien figure déjà dans votre liste de lancement rapide.",
+            "LINKINVALID": "Saisissez une adresse de site valide",
+            "LINKNETWORKLABEL": "Réseau",
+            "LOADFAILED": "Impossible de charger le site",
+            "SECURESITE": "La connexion est sécurisée - certificat SSL valide",
+            "INSECURESITE": "La connexion n'est pas sécurisée.",
+            "INVALIDCERTSITE": "La connexion n'est pas privée - certificat SSL invalide ou non approuvé"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Saisissez votre phrase de passe de portefeuille",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Une mise à jour est disponible pour Metrix Core. Souhaitez-vous l'installer maintenant ?",
             "WALLETUPDATETITLE": "Mise à jour de l'altitude disponible",
             "WALLETUPDATEINFO": "Une mise à jour est disponible pour Altitude. Souhaitez-vous la télécharger maintenant ?",
+            "WALLETUPDATEREADYTITLE": "Mise à jour d'altitude prête",
+            "WALLETUPDATEREADYINFO": "La mise à jour a été téléchargée. Redémarrez Altitude maintenant pour l'installer.",
+            "WALLETUPDATERESTARTBUTTON": "Redémarrer et installer",
+            "WALLETUPDATELATERBUTTON": "Plus tard",
             "CLIENTUPDATEBUTTON": "Mise à jour",
             "CLIENTUPDATECANCELBUTTON": "Ne pas mettre à jour",
             "CLIENTUPDATESKIPBUTTON": "Ignorer cette mise à jour",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Toute sauvegarde précédente de votre fichier de portefeuille doit être remplacée par le nouveau fichier de portefeuille chiffré. Pour des raisons de sécurité, les sauvegardes précédentes du fichier de portefeuille non chiffré deviendront inutilisables dès que vous utiliserez le nouveau portefeuille chiffré.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Le cœur de Metrix s'est arrêté de manière inattendue",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Un problème avec Metrix Core a entraîné son arrêt. Veuillez consulter votre fichier debug.log pour identifier d'éventuels problèmes.",
+            "CLIENTUNKNOWNERRORTITLE": "Erreur de communication du noyau Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Un problème de communication avec Metrix Core est survenu. Veuillez consulter votre fichier debug.log pour identifier d'éventuels problèmes.",
+            "BOOTSTRAPFAILEDTITLE": "Échec du démarrage de Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Un problème est survenu lors du démarrage de Metrix Core. Il est recommandé de consulter le fichier journal d'Altitude pour identifier d'éventuels problèmes.",
+            "BOOTSTRAPOFFERTITLE": "Portefeuille obsolète",
+            "BOOTSTRAPOFFERINFO": "Une version récente de mise à jour est disponible et permet de mettre rapidement Metrix Core à jour. Une synchronisation classique peut prendre plusieurs jours, car votre portefeuille doit télécharger et vérifier tous les blocs manquants.",
+            "BOOTSTRAPOFFERBUTTON": "Télécharger Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Poursuivre la synchronisation normale",
+            "BOOTSTRAPSPACEINFO": "Espace disque insuffisant pour télécharger et extraire le fichier d'installation. Requis : {requis}, Disponible : {free}. Libérez de l'espace et réessayez.",
+            "STARTUPFAILEDTITLE": "Échec du démarrage de Metrix Core",
+            "STARTUPFAILEDINFO": "Une erreur s'est produite lors du démarrage de Metrix Core. Il est recommandé de consulter le fichier journal d'Altitude pour identifier d'éventuels problèmes.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Outils de récupération",
             "CLIENTINVALIDCONFIGTITLE": "Configuration metrix.conf invalide",
             "CLIENTINVALIDCONFIGINFO": "Votre fichier metrix.conf contient une configuration de masternode invalide, ce qui entraînera l'arrêt immédiat de Metrix Core. Veuillez vérifier ce fichier.",
             "ADDREMOTEMNTITLE": "Ajouter un nœud maître distant",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Clé privée du masternode",
             "ADDREMOTEMNTXHASH": "Hash de transaction du maîtrenode",
             "ADDREMOTEMNTXINDEX": "Index des transactions du Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Échec du démarrage de Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Un problème est survenu lors du démarrage de Metrix Core. Il est recommandé de consulter le fichier journal d'Altitude pour identifier d'éventuels problèmes.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Outils de récupération",
-            "STARTUPFAILEDTITLE": "Échec du démarrage de Metrix Core",
-            "STARTUPFAILEDINFO": "Une erreur s'est produite lors du démarrage de Metrix Core. Il est recommandé de consulter le fichier journal d'Altitude pour identifier d'éventuels problèmes.",
-            "CLIENTUNKNOWNERRORTITLE": "Erreur de communication du noyau Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Un problème de communication avec Metrix Core est survenu. Veuillez consulter votre fichier debug.log pour identifier d'éventuels problèmes.",
             "UNENROLLGOVERNORTITLE": "Confirmer la désinscription du gouverneur",
             "UNENROLLGOVERNORCONTENT": "Êtes-vous sûr de vouloir désinscrire votre gouverneur ? Vous ne pourrez plus voter sur la gouvernance en chaîne.",
-            "WALLETUPDATEREADYTITLE": "Mise à jour d'altitude prête",
-            "WALLETUPDATEREADYINFO": "La mise à jour a été téléchargée. Redémarrez Altitude maintenant pour l'installer.",
-            "WALLETUPDATERESTARTBUTTON": "Redémarrer et installer",
-            "WALLETUPDATELATERBUTTON": "Plus tard",
             "DAPPCONNECTTITLE": "Se connecter au site",
             "DAPPCONNECTINFO": "Ce site souhaite se connecter à votre portefeuille et consulter votre adresse et votre solde.",
             "DAPPCONNECTBUTTON": "Connecter",
+            "DAPPCONNECTADDRESSLABEL": "Adresse",
+            "DAPPAPPROVEBUTTON": "Approuver",
             "DAPPREJECTBUTTON": "Rejeter",
             "DAPPSENDTITLE": "Demande de transaction contractuelle",
             "DAPPSENDINFO": "Ce site demande l'envoi d'une transaction contractuelle depuis votre portefeuille.",
-            "DAPPSIGNTITLE": "Demande de message de signature",
-            "DAPPSIGNINFO": "Ce site vous demande de signer un message avec l'adresse de votre portefeuille.",
-            "DAPPNOTREADY": "Impossible de se connecter au site pour le moment - Metrix Core est toujours en cours de démarrage.",
-            "DAPPNOWALLET": "Impossible de se connecter au site - aucune adresse de portefeuille n'est disponible.",
-            "DAPPAPPROVEBUTTON": "Approuver",
-            "DAPPCONNECTADDRESSLABEL": "Adresse",
             "DAPPSENDSITELABEL": "Site",
             "DAPPSENDCONTRACTLABEL": "Adresse du contrat",
             "DAPPSENDAMOUNTLABEL": "Montant",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Frais de réseau maximum",
             "DAPPSENDMAXTOTALLABEL": "Total maximum",
             "DAPPSENDDATALABEL": "Données contractuelles",
+            "DAPPSIGNTITLE": "Demande de message de signature",
+            "DAPPSIGNINFO": "Ce site vous demande de signer un message avec l'adresse de votre portefeuille.",
             "DAPPSIGNMESSAGELABEL": "Message",
-            "BOOTSTRAPOFFERTITLE": "Portefeuille obsolète",
-            "BOOTSTRAPOFFERINFO": "Une version récente de mise à jour est disponible et permet de mettre rapidement Metrix Core à jour. Une synchronisation classique peut prendre plusieurs jours, car votre portefeuille doit télécharger et vérifier tous les blocs manquants.",
-            "BOOTSTRAPOFFERBUTTON": "Télécharger Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Poursuivre la synchronisation normale",
-            "BOOTSTRAPSPACEINFO": "Espace disque insuffisant pour télécharger et extraire le fichier d'installation. Requis : {requis}, Disponible : {free}. Libérez de l'espace et réessayez."
+            "DAPPNOTREADY": "Impossible de se connecter au site pour le moment - Metrix Core est toujours en cours de démarrage.",
+            "DAPPNOWALLET": "Impossible de se connecter au site - aucune adresse de portefeuille n'est disponible."
         },
         "ADDRESSBOOK": {
             "TITLE": "Carnet d'adresses",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Réseau actuel"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Saisissez une adresse de site web3",
-            "GOBUTTON": "Aller",
-            "QUICKLAUNCH": "Lancement rapide",
-            "DEVTOOLS": "Outils de développement ouverts",
-            "ADDLINK": "Ajouter un lien",
-            "LINKNAMEPLACEHOLDER": "Nom",
-            "LINKURLPLACEHOLDER": "https://exemple.com",
-            "SAVE": "Sauvegarder",
-            "CANCEL": "Annuler",
-            "REMOVE": "Retirer",
-            "REMOVECONFIRM": "Supprimer ce lien rapide ?",
-            "LINKEXISTS": "Ce lien figure déjà dans votre liste de lancement rapide.",
-            "LINKINVALID": "Saisissez une adresse de site valide",
-            "LINKNETWORKLABEL": "Réseau",
-            "LOADFAILED": "Impossible de charger le site",
-            "SECURESITE": "La connexion est sécurisée - certificat SSL valide",
-            "INSECURESITE": "La connexion n'est pas sécurisée.",
-            "INVALIDCERTSITE": "La connexion n'est pas privée - certificat SSL invalide ou non approuvé"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Portefeuille de secours...",
             "SIGNMESSAGE": "Message à signer...",
             "VERIFYMESSAGE": "Vérifier le message...",
-            "LOCALE": "Langue...",
-            "RESTARTCORE": "Redémarrer Metrix Core",
-            "EXIT": "Sortie",
             "OPTIONS": "Options...",
+            "LOCALE": "Langue...",
             "CURRENCIES": "Afficher la devise...",
-            "ALTITUDEREFRESH": "Actualiser les données d'altitude"
+            "RESTARTCORE": "Redémarrer Metrix Core",
+            "ALTITUDEREFRESH": "Actualiser les données d'altitude",
+            "EXIT": "Sortie"
         },
         "ENCRYPT": {
             "TITLE": "Chiffrer",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Solde total",
+        "SPENDABLEBALANCE": "Solde disponible",
+        "PENDINGBALANCE": "Solde en attente",
         "CANCELBUTTON": "Annuler",
         "DONEBUTTON": "Fait",
         "OKBUTTON": "D'ACCORD",
+        "ACCEPTBUTTON": "Accepter",
         "CLEARALLBUTTON": "Effacer tout",
         "ENTERACCOUNTLABEL": "Saisissez un libellé pour cette adresse",
         "ENTERADDRESSLABEL": "Saisissez une adresse Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Trier par",
         "SEARCH": "Recherche",
         "FEE": "Frais",
-        "ACCEPTBUTTON": "Accepter",
         "CONFIRMED": "Confirmé",
         "UNCONFIRMED": "Non confirmé",
-        "PENDINGBALANCE": "Solde en attente",
-        "SPENDABLEBALANCE": "Solde disponible",
         "SAVEBUTTON": "Sauvegarder"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Redémarrage de Metrix Core...",
         "BOOTSTRAPPING": "Téléchargement de Bootstrap...",
         "BOOTSTRAPEXTRACTING": "Extraction du bootstrap...",
-        "TIMEREMAINING": "restant:"
+        "TIMEREMAINING": "restant:",
+        "DEVRPCOVERRIDEACTIVE": "Une connexion RPC de développeur est configurée (Options > Développeur) mais ne répond pas. Supprimez-la pour vous reconnecter normalement au démon local.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Effacer la substitution RPC et se reconnecter"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nouveau compte créé avec succès",
         "ADDRESSCOPIEDCLIPBOARD": "Adresse copiée dans le presse-papiers",
+        "COPIEDCLIPBOARD": "Copié dans le presse-papiers",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copiées dans le presse-papiers",
         "EMPTYFIELDS": "Veuillez remplir tous les champs",
         "NOUPDATE": "Aucune mise à jour disponible",
         "WALLETBACKEDUP": "Sauvegarde du portefeuille réussie",
+        "WALLETBACKUPFAILED": "La sauvegarde automatique du portefeuille a échoué : vérifiez l’emplacement de votre sauvegarde et l’espace disque disponible.",
         "PASSPHRASEMISMATCH": "Les phrases de passe que vous avez saisies ne correspondent pas.",
         "CHECKINGUPDATE": "Recherche de mises à jour...",
         "CHECKINGUPDATEFAILED": "Impossible de vérifier les mises à jour. Veuillez vérifier votre réseau.",
+        "WALLETUPDATEDOWNLOADING": "Téléchargement de la mise à jour...",
         "SENDINGEXCEEDSBALANCE": "Le montant que vous envoyez dépasse votre solde sélectionné",
         "MISSINGCHANGEADDRESS": "Vous devez indiquer une adresse de changement",
         "MISSINGDESTINATIONADDRESS": "Vous devez spécifier une adresse de destination",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Chiffrement du portefeuille...",
         "CHANGINGPASSPHARASE": "Modification du mot de passe...",
         "STARTINGMASTERNODE": "Démarrage du masternode...",
+        "STOPPINGMASTERNODE": "Arrêt du nœud maître...",
         "SENDINGTRANSACTION": "Envoi de la transaction...",
         "SIGNINGMESSAGE": "Message de signature...",
         "SIGNEDMESSAGE": "Message signé",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Déverrouillage du portefeuille...",
         "TRANSACTIONMISMATCH": "Erreur de transaction. Veuillez réessayer.",
         "MINIMUMCONFIRMATIONS": "Toute contribution nécessite au moins une confirmation avant d'être dépensée.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transactions copiées dans le presse-papiers",
-        "STOPPINGMASTERNODE": "Arrêt du nœud maître...",
         "FAILEDTOWRITECONFIG": "Un problème est survenu lors de l'écriture dans votre fichier metrix.conf. Vérifiez que le fichier existe et qu'Altitude dispose des autorisations d'écriture.",
         "NOPUBLICUP": "Aucune adresse IP publique n'a été trouvée. Vérifiez votre connexion Internet et redémarrez Altitude.",
         "CONFIGURINGLOCALMN": "Configuration du nœud maître local...",
         "REPORTINGISSUE": "Obtention des informations de diagnostic... Ces informations seront copiées dans votre presse-papiers.",
-        "WALLETUPDATEDOWNLOADING": "Téléchargement de la mise à jour...",
-        "WALLETBACKUPFAILED": "La sauvegarde automatique du portefeuille a échoué : vérifiez l’emplacement de votre sauvegarde et l’espace disque disponible.",
         "EXPLORERURLSAVED": "URL de l'explorateur enregistrée",
         "EXPLORERURLRESET": "L'URL de l'explorateur a été rétablie par défaut.",
         "EXPLORERURLINVALID": "Il ne s'agit pas d'une URL http(s) valide",
-        "EXPLORERURLUNREACHABLE": "URL inaccessible - veuillez vérifier et réessayer."
+        "EXPLORERURLUNREACHABLE": "URL inaccessible - veuillez vérifier et réessayer.",
+        "DEVRPCHOSTSAVED": "Hôte RPC enregistré",
+        "DEVRPCHOSTRESET": "L'hôte RPC est revenu à sa valeur par défaut (127.0.0.1)."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Pièces reçues",
+        "NEWTRANSACTION_TITLE_STAKE": "Jugement reçu",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Récompense de Masternode reçue"
     },
     "TIME": {
         "AFEWSECONDS": "Quelques secondes",
@@ -533,11 +587,6 @@
         "MONTHS": "mois",
         "AYEAR": "Une année",
         "YEARS": "années"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Pièces reçues",
-        "NEWTRANSACTION_TITLE_STAKE": "Jugement reçu",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Récompense de Masternode reçue"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Les gouverneurs sont chargés de voter les budgets mensuels et les modifications de la blockchain. Vous pouvez devenir gouverneur en bloquant les garanties requises dans le contrat de gouvernance.",
                 "COLLATERAL": "Garanties requises",
                 "ENROLL": "Inscrire",
+                "SELECTAGOVERNOR": "Choisissez une adresse de gouverneur admissible",
+                "GOVERNORNOTSELECTED": "Aucune adresse admissible n'a été sélectionnée.",
                 "CONFIRMENROLL": "Vous êtes sur le point de devenir gouverneur. Une transaction, incluant les garanties requises, sera alors envoyée au contrat de gouvernance. Vous pouvez vous désinscrire à tout moment.",
                 "ISGOVERNORTITLE": "Vous êtes un gouverneur actif !",
                 "ISGOVERNORDETAIL1": "Les gouverneurs sont responsables du vote sur les budgets mensuels et les modifications apportées à la blockchain.",
                 "ISGOVERNORDETAIL2": "Pour conserver son poste de gouverneur, il faut participer à au moins un vote tous les 30 jours.",
                 "ISGOVERNORDETAIL3": "S'il n'y a rien à voter, vous pouvez poursuivre manuellement votre inscription en envoyant un ping actif.",
+                "MYGOVERNORADDRESS": "Mon discours de gouverneur",
                 "UNENROLL": "Se désinscrire",
                 "PING": "Envoyer un ping actif",
                 "LASTPINGTITLE": "Dernier ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "jours",
                 "GOVERNORVOTEMATURITYHOURS": "heures",
                 "GOVERNORVOTEMATURITYSUFFIX": "jusqu'à maturité",
-                "MYGOVERNORADDRESS": "Mon discours de gouverneur",
-                "SELECTAGOVERNOR": "Choisissez une adresse de gouverneur admissible",
-                "GOVERNORNOTSELECTED": "Aucune adresse admissible n'a été sélectionnée.",
                 "NOTFULLYSYNCEDTITLE": "Statut de gouverneur indisponible",
                 "NOTFULLYSYNCEDDETAIL": "Votre statut d'inscription en tant que gouverneur deviendra visible lorsque votre blockchain sera entièrement synchronisée.",
                 "DGPMIGRATIONTITLE": "Migration DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Votre proposition a été créée avec succès",
             "ENROLLINGGOVERNOR": "Inscription au poste de gouverneur...",
             "ENROLLEDGOVERNOR": "Votre inscription sera finalisée une fois votre transaction confirmée.",
-            "VOTINGONPROPOSAL": "Envoi de la proposition de vote",
-            "VOTEDONPROPOSAL": "Votre vote sera comptabilisé une fois la transaction confirmée.",
             "PINGINGGOVERNOR": "Envoi d'un ping...",
             "PINGEDGOVERNOR": "Message envoyé avec succès. Votre gouverneur sera informé dès que la transaction sera confirmée.",
+            "VOTINGONPROPOSAL": "Envoi de la proposition de vote",
+            "VOTEDONPROPOSAL": "Votre vote sera comptabilisé une fois la transaction confirmée.",
             "UNENROLLINGGOVERNOR": "Désinscription du gouverneur...",
             "UNENROLLEDGOVERNOR": "Transaction envoyée. Votre inscription au programme Governor sera annulée une fois la transaction confirmée.",
             "GOVERNORNOTMATURE": "Votre gouverneur n'est pas encore assez mûr pour entreprendre cette action."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Acheter Metrix",
+                "SEARCH": "Histoire"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Vous envoyez",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Historique des transactions",
                 "SEARCHBUTTON": "RECHERCHE",
+                "SEARCHPLACEHOLDER": "Saisissez votre adresse MRX ou BTC",
                 "TRANSACTIONDATE": "Date",
                 "TRANSACTIONTYPE": "Type TX",
                 "TRANSACTIONAMOUNT": "Montant",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Confirmé",
                 "TRANSACTIONNOTCONFIRMED": "Non confirmé",
                 "TRANSACTIONREFUNDED": "Remboursé - Montant inférieur au minimum",
-                "AVGSWAPPRICE": "Prix moyen des swaps",
-                "SEARCHPLACEHOLDER": "Saisissez votre adresse MRX ou BTC"
+                "AVGSWAPPRICE": "Prix moyen des swaps"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Génération de l'adresse d'échange...",
             "ALREADYHAVEADDRESS": "Vous avez déjà une adresse BTC associée à cette adresse Metrix.",
             "NOADDRESS": "Vous n'avez pas saisi d'adresse Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Acheter Metrix",
-                "SEARCH": "Histoire"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Démasquer",
                 "EMPTYTITLE": "Aucun jeton trouvé pour le moment",
                 "EMPTYDETAIL": "Altitude vérifie automatiquement la présence de tokens MRC20 et MRC721 envoyés à vos adresses dans un explorateur de blocs, puis effectue une vérification en direct auprès de votre nœud. Vous pouvez également ajouter un token manuellement si vous connaissez l'adresse de son contrat.",
+                "EMPTYDETAILCHECKINGDISABLED": "La vérification automatique des jetons est désactivée ; vos adresses ne sont donc pas analysées. Réactivez-la ci-dessus ou ajoutez un jeton manuellement si vous connaissez son adresse de contrat.",
                 "HIDDENTITLE": "Jetons cachés",
                 "CONTEXTMENUHIDE": "Masquer le jeton",
                 "ITEMSSUFFIX": "articles)",
-                "NONENUMERABLETOOLTIP": "Cette collection ne permet pas d'afficher les articles individuellement ; elle indique plutôt la quantité que vous possédez."
+                "NONENUMERABLETOOLTIP": "Cette collection ne permet pas d'afficher les articles individuellement ; elle indique plutôt la quantité que vous possédez.",
+                "CHECKINGENABLED": "Vérification",
+                "CHECKINGDISABLED": "Cocher",
+                "CHECKINGENABLEDTOOLTIP": "La vérification des jetons est activée : Altitude vérifie régulièrement vos adresses pour les jetons et met à jour les soldes. Cliquez pour désactiver.",
+                "CHECKINGDISABLEDTOOLTIP": "La vérification des jetons est désactivée - cliquez pour la réactiver.",
+                "CHECKINGDISABLEDNOTICE": "La vérification automatique des jetons est désactivée. Vos adresses ne sont pas analysées à la recherche de jetons et vos soldes ne seront pas mis à jour. Vous pouvez toujours ajouter un jeton manuellement."
             },
             "ADDTOKEN": {
                 "TITLE": "Ajouter un jeton",

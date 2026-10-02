@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Buat Akun",
             "HIDEEMPTYACCOUNTS": "Sembunyikan Akun Kosong Tanpa Nama"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Ringkasan",
+            "TRANSACTIONSTAB": "Transaksi",
+            "ADDRESSTABS": "Alamat"
+        },
         "SEND": {
             "ADDRECIPIENT": "Tambahkan Penerima",
             "SEND": "Mengirim",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Tanggal",
             "TABLECOLUMNS_CONFIRMS": "Konfirmasi",
             "ALL_SELECTUNSELECT": "Alihkan Semua",
+            "TREEMODE": "Mode Pohon",
+            "LISTMODE": "Mode Daftar",
             "SENDAVAILABLE": "Gunakan saldo yang tersedia",
             "INPUTLOCKED": "Input terkunci. Anda perlu membuka kunci input ini untuk menggunakannya.",
             "CONTEXTMENULOCKINPUT": "Masukan kunci",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Setelah Biaya",
             "QUANTITY": "Kuantitas",
             "BYTES": "Byte",
-            "TREEMODE": "Mode Pohon",
-            "LISTMODE": "Mode Daftar",
             "ALERTFEECHANGETITLE": "Perubahan Biaya",
             "ALERTFEECHANGECONTENT": "Biaya transaksi sebenarnya lebih tinggi dari yang diperkirakan. Mohon konfirmasi biaya baru:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Buat Kontrak",
+            "INFO": "Lakukan deployment kontrak pintar ke jaringan dengan mengirimkan bytecode yang telah dikompilasi. Ini adalah fungsi inti dari rantai kontrak - periksa kembali bytecode dan pengaturan gas Anda sebelum melakukan deployment, karena deployment tidak dapat dibatalkan.",
+            "FROM": "Dari",
+            "BYTECODE": "Kode byte",
+            "BYTECODEPLACEHOLDER": "Tempelkan kode biner kontrak yang telah dikompilasi (heksadesimal)",
+            "INVALIDBYTECODE": "Kode byte harus berupa string heksadesimal yang valid (0-9, a-f) dengan jumlah karakter genap.",
+            "GASLIMIT": "Batas Gas",
+            "GASLIMITRANGE": "Jangkauan",
+            "GASPRICE": "Harga Gas (MRX per unit gas)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Perkiraan biaya maksimum",
+            "DEPLOYBUTTON": "Kontrak Penyebaran",
+            "INCOMPLETEFORM": "Silakan pilih alamat pengirim, masukkan bytecode yang valid, dan tetapkan batas/harga gas yang valid.",
+            "HIGHGASPRICETITLE": "Harga Gas Tinggi",
+            "HIGHGASPRICEINFO": "Harga gas yang Anda tetapkan sangat tinggi. Implementasi ini dapat menelan biaya hingga:",
+            "DEPLOYING": "Menerapkan kontrak...",
+            "DEPLOYED": "Pengerahan kontrak telah diajukan.",
+            "RESULTTITLE": "Hasil Penyebaran",
+            "STATUS": "Status",
+            "STATUSPENDING": "Menunggu konfirmasi...",
+            "STATUSCONFIRMED": "Berhasil diinstal",
+            "STATUSFAILED": "Penyebaran gagal",
+            "TXID": "ID Transaksi",
+            "SENDER": "Pengirim",
+            "CONTRACTADDRESS": "Alamat Kontrak",
+            "GASUSED": "Gas yang Digunakan",
+            "DONEBUTTON": "Selesai",
+            "DEPLOYANOTHERBUTTON": "Kerahkan yang Lain"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaksi",
+            "COPYBLOCKHASH": "Salin Blok Hash",
+            "COPYTXID": "Salin ID Transaksi",
+            "COPYACCOUNT": "Salin Nama Akun",
+            "COPYADDRESS": "Salin Alamat",
+            "COPYAMOUNT": "Salin Jumlah",
+            "COPTBLOCKINDEX": "Salin Indeks Blok",
+            "EXPLORER": "Buka di Penjelajah Blok"
         },
         "STAKING": {
             "UNLOCK": "Buka Kunci untuk Staking",
@@ -68,13 +113,13 @@
             "IP": "AKU P",
             "ADDRESS": "Alamat",
             "ENABLED": "Diaktifkan",
-            "STARTBUTTON": "Mulai Lokal",
-            "STARTALIASBUTTON": "Mulai Alias",
-            "STARTALLBUTTON": "Mulai Semua",
             "NOMASTERNODES": "Anda tidak memiliki masternode.",
             "NOMNOUTPUTS": "Tidak ditemukan output Masternode. Untuk menjalankan Masternode lokal, kirimkan tepat 2, 5, 25, 50, atau 100 juta koin ke alamat Masternode Anda dan tunggu 15 konfirmasi.",
+            "STARTBUTTON": "Mulai Lokal",
             "STOPBUTTON": "Berhenti di Lokasi",
+            "STARTALIASBUTTON": "Mulai Alias",
             "STOPALIASBUTTON": "Hentikan Alias",
+            "STARTALLBUTTON": "Mulai Semua",
             "ADDREMOTE": "Tambahkan Masternode Jarak Jauh",
             "REMOVEMN": "Hapus Masternode",
             "ADDLOCAL": "Pengaturan Masternode Lokal",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Umum",
                 "COREVERSION": "Versi Inti",
+                "ALTITUDEVERSION": "Versi Ketinggian",
                 "PROTOCOLVERSION": "Versi Protokol",
                 "WALLETVERSION": "Versi Wallet.dat",
                 "NETWORKTITLE": "Jaringan",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Jumlah Masternode",
                 "BLOCKCHAINTITLE": "Rantai Blok",
                 "NUMBERBLOCKS": "Jumlah blok saat ini",
-                "BESTBLOCKTTIME": "Waktu blok terakhir",
-                "ALTITUDEVERSION": "Versi Ketinggian"
+                "BESTBLOCKTTIME": "Waktu blok terakhir"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Selamat datang di konsol RPC Metrix Core. Ketik help untuk melihat gambaran umum perintah yang tersedia.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Pilih Bahasa"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaksi",
-            "COPYBLOCKHASH": "Salin Blok Hash",
-            "COPYTXID": "Salin ID Transaksi",
-            "COPYACCOUNT": "Salin Nama Akun",
-            "COPYADDRESS": "Salin Alamat",
-            "COPYAMOUNT": "Salin Jumlah",
-            "COPTBLOCKINDEX": "Salin Indeks Blok",
-            "EXPLORER": "Buka di Penjelajah Blok"
+        "CURRENCY": {
+            "TITLE": "Pilih Mata Uang Tampilan"
         },
         "EXPLORER": {
             "TITLE": "Penjelajah Blok",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Jaringan",
             "WINDOTAB": "Jendela",
+            "BACKUPTAB": "Cadangan",
+            "EXPLORERTAB": "Penjelajah",
+            "DEVELOPERTAB": "Pengembang",
             "NETWORK": {
                 "PROXY": "Terhubung melalui proxy SOCKS5",
                 "PROXYIP": "IP Proksi",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimalkan saat ditutup",
                 "BEHAVIOURTITLE": "Perilaku System Tray & Window"
             },
-            "BACKUPTAB": "Cadangan",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Pencadangan Otomatis",
                 "ENABLED": "Cadangkan wallet.dat secara otomatis sesuai jadwal.",
                 "ENABLEDINFO": "Membuat cadangan baru file dompet Anda secara terjadwal, sehingga salinan terbaru selalu tersedia jika terjadi kesalahan.",
+                "INTERVALLABEL": "Cadangkan setiap (hari)",
                 "LASTBACKUP": "Cadangan terakhir:",
                 "NEVERBACKEDUP": "Belum ada pencadangan otomatis yang dilakukan.",
                 "BACKUPNOWBUTTON": "Cadangkan Sekarang",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Atur Ulang ke Pengaturan Default",
                 "PRUNETITLE": "Riwayat Pencadangan",
                 "PRUNEINFO": "Cadangan otomatis yang lebih lama akan dihapus agar folder ini tidak terus bertambah ukurannya - hanya cadangan terbaru di bawah ini yang disimpan.",
-                "KEEPCOUNTLABEL": "Simpan terakhir",
-                "INTERVALLABEL": "Cadangkan setiap (hari)"
+                "KEEPCOUNTLABEL": "Simpan terakhir"
             },
-            "EXPLORERTAB": "Penjelajah",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Penjelajah Blok",
                 "BLOCKEXPLORERINFO": "Situs tersebut terbuka saat melihat transaksi di penjelajah blok (misalnya, klik kanan transaksi > Lihat di Penjelajah).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Jaringan Utama",
                 "TESTNET": "Jaringan uji",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mode Pengembang",
+                "DEVMODEINFO": "Secara default dinonaktifkan dan hanya ditujukan untuk pengembang. Mengaktifkannya akan menampilkan opsi untuk mengganti koneksi RPC - pengguna standar sebaiknya membiarkannya nonaktif.",
+                "DEVMODELABEL": "Aktifkan Mode Pengembang",
+                "WARNING": "Pengaturan ini hanya untuk tujuan pengembangan. Mengubahnya dapat mencegah dompet terhubung ke daemon sama sekali - gunakan ini hanya jika Anda tahu apa yang Anda lakukan.",
+                "RPCHOSTTITLE": "Koneksi RPC",
+                "RPCHOSTINFO": "Secara default, Altitude terhubung ke daemon yang dikelolanya sendiri, pada mesin ini (127.0.0.1). Mengganti pengaturan ini memungkinkan Altitude untuk terhubung ke daemon lain - misalnya, instance regtest jarak jauh, tanpa perlu menjalankannya secara lokal. Jika koneksi berhasil, Altitude tidak akan mengunduh atau memulai daemon lokalnya sendiri. rpcallowip daemon target harus mengizinkan koneksi ini, dan rpcuser/rpcpassword di bawah ini harus sesuai dengan konfigurasinya. Berlaku segera, tidak perlu restart.",
+                "RPCHOSTLABEL": "Host RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Nama Pengguna RPC",
+                "RPCPASSWORDLABEL": "Kata Sandi RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Ringkasan",
-            "TRANSACTIONSTAB": "Transaksi",
-            "ADDRESSTABS": "Alamat"
-        },
-        "CURRENCY": {
-            "TITLE": "Pilih Mata Uang Tampilan"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dasbor",
             "SEND": "Mengirim",
+            "CREATECONTRACT": "Buat Kontrak",
             "RECEIVE": "Menerima",
             "TRANSACTIONS": "Transaksi",
             "STAKING": "Taruhan",
             "MASTERNODES": "Masternode",
+            "EXPLORER": "Penjelajah Blok",
             "SYNC": {
                 "CONNECTING": "Menghubungkan",
                 "NOBLOCKS": "Menunggu beberapa blok",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Dompet saat ini tidak melakukan staking.",
                 "MASTERNODEON": "Masternode saat ini sedang berjalan",
                 "MASTERNODEOFF": "Masternode saat ini tidak berjalan."
-            },
-            "EXPLORER": "Penjelajah Blok"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Masukkan alamat situs web3",
+            "GOBUTTON": "Pergi",
+            "QUICKLAUNCH": "Peluncuran Cepat",
+            "DEVTOOLS": "Buka Alat Pengembang",
+            "ADDLINK": "Tambahkan Tautan",
+            "LINKNAMEPLACEHOLDER": "Nama",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Menyimpan",
+            "CANCEL": "Membatalkan",
+            "REMOVE": "Menghapus",
+            "REMOVECONFIRM": "Hapus tautan cepat ini?",
+            "LINKEXISTS": "Tautan tersebut sudah ada di daftar peluncuran cepat Anda.",
+            "LINKINVALID": "Masukkan alamat situs yang valid",
+            "LINKNETWORKLABEL": "Jaringan",
+            "LOADFAILED": "Situs gagal dimuat.",
+            "SECURESITE": "Koneksi aman - sertifikat SSL valid",
+            "INSECURESITE": "Koneksi tidak aman",
+            "INVALIDCERTSITE": "Koneksi tidak aman - sertifikat SSL tidak valid atau tidak tepercaya"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Masukkan Kata Sandi Dompet Anda",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Pembaruan tersedia untuk Metrix Core. Apakah Anda ingin menginstalnya sekarang?",
             "WALLETUPDATETITLE": "Pembaruan Ketinggian Tersedia",
             "WALLETUPDATEINFO": "Pembaruan tersedia untuk Altitude. Apakah Anda ingin mengunduhnya sekarang?",
+            "WALLETUPDATEREADYTITLE": "Pembaruan Ketinggian Siap",
+            "WALLETUPDATEREADYINFO": "Pembaruan telah diunduh. Mulai ulang Altitude sekarang untuk menginstalnya?",
+            "WALLETUPDATERESTARTBUTTON": "Mulai Ulang & Instal",
+            "WALLETUPDATELATERBUTTON": "Nanti",
             "CLIENTUPDATEBUTTON": "Memperbarui",
             "CLIENTUPDATECANCELBUTTON": "Jangan Perbarui",
             "CLIENTUPDATESKIPBUTTON": "Lewati Pembaruan ini",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Semua cadangan file dompet Anda sebelumnya harus diganti dengan file dompet terenkripsi yang baru dibuat. Demi alasan keamanan, cadangan file dompet yang tidak terenkripsi sebelumnya akan menjadi tidak berguna segera setelah Anda mulai menggunakan dompet terenkripsi yang baru.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Berhenti Secara Tak Terduga",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Terdapat masalah pada Metrix Core yang menyebabkan program tersebut berhenti. Disarankan untuk memeriksa file debug.log Anda untuk mengetahui masalahnya.",
+            "CLIENTUNKNOWNERRORTITLE": "Kesalahan Komunikasi Inti Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Terdapat masalah dalam berkomunikasi dengan Metrix Core. Disarankan untuk memeriksa file debug.log Anda untuk mengetahui masalahnya.",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap Inti Metrix Gagal",
+            "BOOTSTRAPFAILEDINFO": "Terdapat masalah saat melakukan bootstrapping Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk mengetahui masalahnya.",
+            "BOOTSTRAPOFFERTITLE": "Dompet Sudah Sangat Ketinggalan Zaman",
+            "BOOTSTRAPOFFERINFO": "Tersedia bootstrap terbaru yang dapat dengan cepat memperbarui Metrix Core. Melanjutkan dengan sinkronisasi normal mungkin membutuhkan waktu beberapa hari untuk diselesaikan, karena dompet Anda perlu mengunduh dan memverifikasi setiap blok yang terlewat.",
+            "BOOTSTRAPOFFERBUTTON": "Unduh Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Lanjutkan Sinkronisasi Normal",
+            "BOOTSTRAPSPACEINFO": "Ruang disk kosong tidak cukup untuk mengunduh dan mengekstrak bootstrap. Diperlukan: {diperlukan}, Tersedia: {gratis}. Kosongkan ruang dan coba lagi.",
+            "STARTUPFAILEDTITLE": "Startup Metrix Core Gagal",
+            "STARTUPFAILEDINFO": "Terjadi kesalahan saat memulai Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk mengetahui masalahnya.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrik.conf tidak valid",
             "CLIENTINVALIDCONFIGINFO": "File metrix.conf Anda memiliki pengaturan masternode yang tidak valid yang akan menyebabkan Metrix Core langsung keluar. Silakan periksa file ini.",
             "ADDREMOTEMNTITLE": "Tambahkan Masternode Jarak Jauh",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kunci Pribadi Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indeks Transaksi Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Bootstrap Inti Metrix Gagal",
-            "BOOTSTRAPFAILEDINFO": "Terdapat masalah saat melakukan bootstrapping Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk mengetahui masalahnya.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Alat Pemulihan",
-            "STARTUPFAILEDTITLE": "Startup Metrix Core Gagal",
-            "STARTUPFAILEDINFO": "Terjadi kesalahan saat memulai Metrix Core. Disarankan untuk memeriksa file log Altitude Anda untuk mengetahui masalahnya.",
-            "CLIENTUNKNOWNERRORTITLE": "Kesalahan Komunikasi Inti Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Terdapat masalah dalam berkomunikasi dengan Metrix Core. Disarankan untuk memeriksa file debug.log Anda untuk mengetahui masalahnya.",
             "UNENROLLGOVERNORTITLE": "Konfirmasikan Pencabutan Pendaftaran Gubernur",
             "UNENROLLGOVERNORCONTENT": "Apakah Anda yakin ingin membatalkan pendaftaran Gubernur Anda? Anda tidak akan lagi dapat memberikan suara pada tata kelola berantai.",
-            "WALLETUPDATEREADYTITLE": "Pembaruan Ketinggian Siap",
-            "WALLETUPDATEREADYINFO": "Pembaruan telah diunduh. Mulai ulang Altitude sekarang untuk menginstalnya?",
-            "WALLETUPDATERESTARTBUTTON": "Mulai Ulang & Instal",
-            "WALLETUPDATELATERBUTTON": "Nanti",
             "DAPPCONNECTTITLE": "Hubungkan ke Situs",
             "DAPPCONNECTINFO": "Situs ini ingin terhubung ke dompet Anda dan melihat alamat serta saldo Anda.",
             "DAPPCONNECTBUTTON": "Menghubungkan",
+            "DAPPCONNECTADDRESSLABEL": "Alamat",
+            "DAPPAPPROVEBUTTON": "Menyetujui",
             "DAPPREJECTBUTTON": "Menolak",
             "DAPPSENDTITLE": "Permintaan Transaksi Kontrak",
             "DAPPSENDINFO": "Situs ini meminta untuk mengirimkan transaksi kontrak dari dompet Anda.",
-            "DAPPSIGNTITLE": "Permintaan Pesan Tanda",
-            "DAPPSIGNINFO": "Situs ini meminta Anda untuk menandatangani pesan dengan alamat dompet Anda.",
-            "DAPPNOTREADY": "Belum bisa terhubung ke situs - Metrix Core masih dalam proses memulai.",
-            "DAPPNOWALLET": "Tidak dapat terhubung ke situs - alamat dompet tidak tersedia.",
-            "DAPPAPPROVEBUTTON": "Menyetujui",
-            "DAPPCONNECTADDRESSLABEL": "Alamat",
             "DAPPSENDSITELABEL": "Lokasi",
             "DAPPSENDCONTRACTLABEL": "Alamat Kontrak",
             "DAPPSENDAMOUNTLABEL": "Jumlah",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Biaya Jaringan Maksimum",
             "DAPPSENDMAXTOTALLABEL": "Total Maksimum",
             "DAPPSENDDATALABEL": "Data Kontrak",
+            "DAPPSIGNTITLE": "Permintaan Pesan Tanda",
+            "DAPPSIGNINFO": "Situs ini meminta Anda untuk menandatangani pesan dengan alamat dompet Anda.",
             "DAPPSIGNMESSAGELABEL": "Pesan",
-            "BOOTSTRAPOFFERTITLE": "Dompet Sudah Sangat Ketinggalan Zaman",
-            "BOOTSTRAPOFFERINFO": "Tersedia bootstrap terbaru yang dapat dengan cepat memperbarui Metrix Core. Melanjutkan dengan sinkronisasi normal mungkin membutuhkan waktu beberapa hari untuk diselesaikan, karena dompet Anda perlu mengunduh dan memverifikasi setiap blok yang terlewat.",
-            "BOOTSTRAPOFFERBUTTON": "Unduh Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Lanjutkan Sinkronisasi Normal",
-            "BOOTSTRAPSPACEINFO": "Ruang disk kosong tidak cukup untuk mengunduh dan mengekstrak bootstrap. Diperlukan: {diperlukan}, Tersedia: {gratis}. Kosongkan ruang dan coba lagi."
+            "DAPPNOTREADY": "Belum bisa terhubung ke situs - Metrix Core masih dalam proses memulai.",
+            "DAPPNOWALLET": "Tidak dapat terhubung ke situs - alamat dompet tidak tersedia."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku Alamat",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Jaringan saat ini"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Masukkan alamat situs web3",
-            "GOBUTTON": "Pergi",
-            "QUICKLAUNCH": "Peluncuran Cepat",
-            "DEVTOOLS": "Buka Alat Pengembang",
-            "ADDLINK": "Tambahkan Tautan",
-            "LINKNAMEPLACEHOLDER": "Nama",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Menyimpan",
-            "CANCEL": "Membatalkan",
-            "REMOVE": "Menghapus",
-            "REMOVECONFIRM": "Hapus tautan cepat ini?",
-            "LINKEXISTS": "Tautan tersebut sudah ada di daftar peluncuran cepat Anda.",
-            "LINKINVALID": "Masukkan alamat situs yang valid",
-            "LINKNETWORKLABEL": "Jaringan",
-            "LOADFAILED": "Situs gagal dimuat.",
-            "SECURESITE": "Koneksi aman - sertifikat SSL valid",
-            "INSECURESITE": "Koneksi tidak aman",
-            "INVALIDCERTSITE": "Koneksi tidak aman - sertifikat SSL tidak valid atau tidak tepercaya"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Dompet Cadangan...",
             "SIGNMESSAGE": "Pesan Tanda...",
             "VERIFYMESSAGE": "Verifikasi Pesan...",
-            "LOCALE": "Bahasa...",
-            "RESTARTCORE": "Mulai ulang Metrix Core",
-            "EXIT": "KELUAR",
             "OPTIONS": "Pilihan...",
+            "LOCALE": "Bahasa...",
             "CURRENCIES": "Tampilkan Mata Uang...",
-            "ALTITUDEREFRESH": "Perbarui Data Ketinggian"
+            "RESTARTCORE": "Mulai ulang Metrix Core",
+            "ALTITUDEREFRESH": "Perbarui Data Ketinggian",
+            "EXIT": "KELUAR"
         },
         "ENCRYPT": {
             "TITLE": "Enkripsi",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Saldo Total",
+        "SPENDABLEBALANCE": "Saldo yang Dapat Dibelanjakan",
+        "PENDINGBALANCE": "Saldo Tertunda",
         "CANCELBUTTON": "Membatalkan",
         "DONEBUTTON": "Selesai",
         "OKBUTTON": "OKE",
+        "ACCEPTBUTTON": "Menerima",
         "CLEARALLBUTTON": "Hapus Semua",
         "ENTERACCOUNTLABEL": "Masukkan label untuk alamat ini",
         "ENTERADDRESSLABEL": "Masukkan alamat Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Urutkan Berdasarkan",
         "SEARCH": "Mencari",
         "FEE": "Biaya",
-        "ACCEPTBUTTON": "Menerima",
         "CONFIRMED": "Dikonfirmasi",
         "UNCONFIRMED": "Belum dikonfirmasi",
-        "PENDINGBALANCE": "Saldo Tertunda",
-        "SPENDABLEBALANCE": "Saldo yang Dapat Dibelanjakan",
         "SAVEBUTTON": "Menyimpan"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Memulai ulang Metrix Core...",
         "BOOTSTRAPPING": "Mengunduh bootstrap...",
         "BOOTSTRAPEXTRACTING": "Mengekstraksi bootstrap...",
-        "TIMEREMAINING": "tersisa:"
+        "TIMEREMAINING": "tersisa:",
+        "DEVRPCOVERRIDEACTIVE": "Pengaturan penggantian koneksi RPC pengembang telah diatur (Opsi > Pengembang) dan tidak merespons. Hapus pengaturan tersebut untuk menyambungkan kembali ke daemon lokal secara normal.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Hapus Penggantian RPC & Sambungkan Kembali"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akun baru berhasil dibuat.",
         "ADDRESSCOPIEDCLIPBOARD": "Alamat disalin ke papan klip",
+        "COPIEDCLIPBOARD": "Disalin ke papan klip",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan klip",
         "EMPTYFIELDS": "Mohon isi semua kolom.",
         "NOUPDATE": "Tidak ada pembaruan yang tersedia.",
         "WALLETBACKEDUP": "Pencadangan dompet berhasil",
+        "WALLETBACKUPFAILED": "Pencadangan dompet otomatis gagal - periksa lokasi pencadangan dan ruang disk yang tersedia.",
         "PASSPHRASEMISMATCH": "Kata sandi yang Anda masukkan tidak cocok.",
         "CHECKINGUPDATE": "Sedang memeriksa pembaruan...",
         "CHECKINGUPDATEFAILED": "Tidak dapat memeriksa pembaruan. Periksa jaringan Anda.",
+        "WALLETUPDATEDOWNLOADING": "Mengunduh pembaruan...",
         "SENDINGEXCEEDSBALANCE": "Jumlah yang Anda kirim melebihi saldo yang Anda pilih.",
         "MISSINGCHANGEADDRESS": "Anda harus menentukan alamat perubahan.",
         "MISSINGDESTINATIONADDRESS": "Anda harus menentukan alamat tujuan.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Dompet terenkripsi...",
         "CHANGINGPASSPHARASE": "Mengubah kata sandi...",
         "STARTINGMASTERNODE": "Memulai masternode...",
+        "STOPPINGMASTERNODE": "Menghentikan masternode...",
         "SENDINGTRANSACTION": "Mengirim transaksi...",
         "SIGNINGMESSAGE": "Pesan isyarat...",
         "SIGNEDMESSAGE": "Pesan ditandatangani",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Membuka kunci dompet...",
         "TRANSACTIONMISMATCH": "Terjadi kesalahan transaksi. Silakan coba lagi.",
         "MINIMUMCONFIRMATIONS": "Semua transaksi memerlukan setidaknya 1 konfirmasi sebelum dapat dibelanjakan.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ke papan klip",
-        "STOPPINGMASTERNODE": "Menghentikan masternode...",
         "FAILEDTOWRITECONFIG": "Terdapat masalah saat menulis ke file metrik.conf Anda. Periksa apakah file tersebut ada dan apakah Altitude memiliki izin tulis.",
         "NOPUBLICUP": "Tidak ditemukan alamat IP publik. Periksa koneksi internet Anda dan mulai ulang Altitude.",
         "CONFIGURINGLOCALMN": "Mengonfigurasi Masternode lokal...",
         "REPORTINGISSUE": "Mengambil informasi diagnostik... Informasi ini akan disalin ke clipboard Anda.",
-        "WALLETUPDATEDOWNLOADING": "Mengunduh pembaruan...",
-        "WALLETBACKUPFAILED": "Pencadangan dompet otomatis gagal - periksa lokasi pencadangan dan ruang disk yang tersedia.",
         "EXPLORERURLSAVED": "URL penjelajah tersimpan",
         "EXPLORERURLRESET": "URL Explorer dikembalikan ke pengaturan default.",
         "EXPLORERURLINVALID": "Itu bukan URL http(s) yang valid",
-        "EXPLORERURLUNREACHABLE": "URL tersebut tidak dapat diakses - periksa kembali dan coba lagi."
+        "EXPLORERURLUNREACHABLE": "URL tersebut tidak dapat diakses - periksa kembali dan coba lagi.",
+        "DEVRPCHOSTSAVED": "Host RPC tersimpan",
+        "DEVRPCHOSTRESET": "Host RPC dikembalikan ke default (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Koin yang Diterima",
+        "NEWTRANSACTION_TITLE_STAKE": "Saham yang Diterima",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Menerima Hadiah Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Beberapa detik",
@@ -533,11 +587,6 @@
         "MONTHS": "bulan",
         "AYEAR": "Satu tahun",
         "YEARS": "bertahun-tahun"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Koin yang Diterima",
-        "NEWTRANSACTION_TITLE_STAKE": "Saham yang Diterima",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Menerima Hadiah Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gubernur bertanggung jawab untuk memberikan suara pada anggaran bulanan dan perubahan blockchain. Anda dapat menjadi Gubernur dengan mengunci jaminan yang tepat dalam kontrak Tata Kelola.",
                 "COLLATERAL": "Jaminan yang dibutuhkan",
                 "ENROLL": "Mendaftar",
+                "SELECTAGOVERNOR": "Pilih alamat gubernur yang memenuhi syarat.",
+                "GOVERNORNOTSELECTED": "Tidak ada alamat yang memenuhi syarat yang dipilih.",
                 "CONFIRMENROLL": "Anda akan mendaftar sebagai Gubernur. Ini akan mengirimkan transaksi dengan jaminan yang diperlukan ke kontrak tata kelola. Anda dapat membatalkan pendaftaran kapan saja.",
                 "ISGOVERNORTITLE": "Anda adalah Gubernur yang aktif!",
                 "ISGOVERNORDETAIL1": "Para gubernur bertanggung jawab untuk memberikan suara pada anggaran bulanan dan perubahan blockchain.",
                 "ISGOVERNORDETAIL2": "Untuk tetap menjabat sebagai Gubernur, Anda perlu berpartisipasi dalam setidaknya 1 pemungutan suara setiap 30 hari.",
                 "ISGOVERNORDETAIL3": "Jika tidak ada yang perlu dipilih, Anda dapat melanjutkan pendaftaran secara manual dengan mengirimkan ping aktif.",
+                "MYGOVERNORADDRESS": "Pidato Gubernur Saya",
                 "UNENROLL": "Batalkan pendaftaran",
                 "PING": "Kirim Ping Aktif",
                 "LASTPINGTITLE": "Ping terakhir",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "hari",
                 "GOVERNORVOTEMATURITYHOURS": "jam",
                 "GOVERNORVOTEMATURITYSUFFIX": "sampai dewasa",
-                "MYGOVERNORADDRESS": "Pidato Gubernur Saya",
-                "SELECTAGOVERNOR": "Pilih alamat gubernur yang memenuhi syarat.",
-                "GOVERNORNOTSELECTED": "Tidak ada alamat yang memenuhi syarat yang dipilih.",
                 "NOTFULLYSYNCEDTITLE": "Status gubernur tidak tersedia",
                 "NOTFULLYSYNCEDDETAIL": "Status pendaftaran Gubernur Anda akan terlihat ketika blockchain Anda sepenuhnya tersinkronisasi.",
                 "DGPMIGRATIONTITLE": "Migrasi DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Proposal Anda telah berhasil dibuat.",
             "ENROLLINGGOVERNOR": "Mendaftar sebagai Gubernur...",
             "ENROLLEDGOVERNOR": "Pendaftaran Anda akan selesai setelah transaksi Anda dikonfirmasi.",
-            "VOTINGONPROPOSAL": "Mengirimkan pemungutan suara proposal",
-            "VOTEDONPROPOSAL": "Suara Anda akan dihitung setelah transaksi dikonfirmasi.",
             "PINGINGGOVERNOR": "Mengirim ping...",
             "PINGEDGOVERNOR": "Ping berhasil dikirim. Gubernur Anda akan diperbarui setelah transaksi dikonfirmasi.",
+            "VOTINGONPROPOSAL": "Mengirimkan pemungutan suara proposal",
+            "VOTEDONPROPOSAL": "Suara Anda akan dihitung setelah transaksi dikonfirmasi.",
             "UNENROLLINGGOVERNOR": "Mencabut keanggotaan Gubernur...",
             "UNENROLLEDGOVERNOR": "Transaksi telah dikirim. Gubernur Anda akan dihapus dari daftar setelah transaksi dikonfirmasi.",
             "GOVERNORNOTMATURE": "Gubernur Anda belum cukup dewasa untuk melakukan tindakan ini."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Beli Metrix",
+                "SEARCH": "Sejarah"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Anda Kirim",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Riwayat Transaksi",
                 "SEARCHBUTTON": "MENCARI",
+                "SEARCHPLACEHOLDER": "Masukkan alamat MRX atau BTC",
                 "TRANSACTIONDATE": "Tanggal",
                 "TRANSACTIONTYPE": "Tipe TX",
                 "TRANSACTIONAMOUNT": "Jumlah",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Dikonfirmasi",
                 "TRANSACTIONNOTCONFIRMED": "Belum Dikonfirmasi",
                 "TRANSACTIONREFUNDED": "Dikembalikan dananya - Di bawah minimum",
-                "AVGSWAPPRICE": "Harga Tukar Rata-Rata",
-                "SEARCHPLACEHOLDER": "Masukkan alamat MRX atau BTC"
+                "AVGSWAPPRICE": "Harga Tukar Rata-Rata"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Menghasilkan Alamat Swap...",
             "ALREADYHAVEADDRESS": "Anda sudah memiliki alamat BTC yang terkait dengan alamat Metrix ini.",
             "NOADDRESS": "Anda tidak memasukkan alamat Metrix."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Beli Metrix",
-                "SEARCH": "Sejarah"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Sembunyikan",
                 "EMPTYTITLE": "Token Belum Ditemukan",
                 "EMPTYDETAIL": "Altitude secara otomatis memeriksa penjelajah blok untuk token MRC20 dan MRC721 yang dikirim ke alamat Anda, lalu memverifikasi semuanya secara langsung terhadap node Anda sendiri. Anda juga dapat menambahkan token secara manual jika Anda mengetahui alamat kontraknya.",
+                "EMPTYDETAILCHECKINGDISABLED": "Pemeriksaan token otomatis dimatikan, jadi alamat Anda tidak diperiksa untuk token. Aktifkan kembali di atas, atau tambahkan token secara manual jika Anda mengetahui alamat kontraknya.",
                 "HIDDENTITLE": "Token Tersembunyi",
                 "CONTEXTMENUHIDE": "Sembunyikan Token",
                 "ITEMSSUFFIX": "item(s)",
-                "NONENUMERABLETOOLTIP": "Koleksi ini tidak mendukung daftar item satu per satu - melainkan menampilkan jumlah item yang Anda miliki."
+                "NONENUMERABLETOOLTIP": "Koleksi ini tidak mendukung daftar item satu per satu - melainkan menampilkan jumlah item yang Anda miliki.",
+                "CHECKINGENABLED": "Memeriksa",
+                "CHECKINGDISABLED": "Mencentang",
+                "CHECKINGENABLEDTOOLTIP": "Pengecekan token aktif - Altitude secara berkala memeriksa alamat Anda untuk token dan memperbarui saldo. Klik untuk menonaktifkan.",
+                "CHECKINGDISABLEDTOOLTIP": "Pemeriksaan token dinonaktifkan - klik untuk mengaktifkannya kembali.",
+                "CHECKINGDISABLEDNOTICE": "Pemeriksaan token otomatis dimatikan. Alamat Anda tidak dipindai untuk token dan saldo tidak akan diperbarui. Anda masih dapat menambahkan token secara manual."
             },
             "ADDTOKEN": {
                 "TITLE": "Tambahkan Token",

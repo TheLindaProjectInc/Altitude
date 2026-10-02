@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Ngadamel akun",
             "HIDEEMPTYACCOUNTS": "Sumputkeun Akun Kosong Anu Teu Dingaranan"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Tinjauan",
+            "TRANSACTIONSTAB": "Transaksi",
+            "ADDRESSTABS": "Alamat"
+        },
         "SEND": {
             "ADDRECIPIENT": "Tambahkeun Panampi",
             "SEND": "Kirim",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Tanggal",
             "TABLECOLUMNS_CONFIRMS": "Konfirmasi",
             "ALL_SELECTUNSELECT": "Togél Sadayana",
+            "TREEMODE": "Modeu Tangkal",
+            "LISTMODE": "Modeu Daptar",
             "SENDAVAILABLE": "Anggo kasaimbangan anu sayogi",
             "INPUTLOCKED": "Input dikonci. Anjeun kedah muka konci input ieu pikeun ngagunakeunana.",
             "CONTEXTMENULOCKINPUT": "Konci input",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Saatos Biaya",
             "QUANTITY": "Kuantitas",
             "BYTES": "Bait",
-            "TREEMODE": "Modeu Tangkal",
-            "LISTMODE": "Modeu Daptar",
             "ALERTFEECHANGETITLE": "Parobahan Biaya",
             "ALERTFEECHANGECONTENT": "Biaya transaksi anu saleresna langkung luhur tibatan anu dipiharep. Mangga konfirmasi biaya énggal:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Jieun Kontrak",
+            "INFO": "Pasangkeun kontrak pinter ka jaringan ku cara ngalebetkeun bytecode anu dikompilasi. Ieu mangrupikeun fungsi ranté inti - pariksa dua kali setélan bytecode sareng gas anjeun sateuacan dipasang, pamasangan teu tiasa dibatalkeun.",
+            "FROM": "Ti",
+            "BYTECODE": "Kodeu bait",
+            "BYTECODEPLACEHOLDER": "Tempelkeun bytecode kontrak anu dikompilasi (hex)",
+            "INVALIDBYTECODE": "Bytecode kedah string hex anu valid (0-9, a-f) kalayan jumlah karakter anu genap",
+            "GASLIMIT": "Wates Gas",
+            "GASLIMITRANGE": "Jarak",
+            "GASPRICE": "Harga Gas (MRX per unit gas)",
+            "GASPRICEMIN": "Minimal",
+            "ESTIMATEDMAXCOST": "Perkiraan biaya maksimal",
+            "DEPLOYBUTTON": "Kontrak Panyebaran",
+            "INCOMPLETEFORM": "Mangga pilih alamat pangirim, lebetkeun bytecode anu valid, sareng atur wates/harga gas anu valid.",
+            "HIGHGASPRICETITLE": "Harga Gas Luhur",
+            "HIGHGASPRICEINFO": "Harga gas anu anjeun tetapkeun téh luar biasa mahalna. Palaksanaan ieu tiasa ngarugikeun dugi ka:",
+            "DEPLOYING": "Ngalaksanakeun kontrak...",
+            "DEPLOYED": "Palaksanaan kontrak dikintunkeun",
+            "RESULTTITLE": "Hasil Panyebaran",
+            "STATUS": "Status",
+            "STATUSPENDING": "Ngantosan konfirmasi...",
+            "STATUSCONFIRMED": "Dipasang kalayan suksés",
+            "STATUSFAILED": "Panyebaran gagal",
+            "TXID": "ID Transaksi",
+            "SENDER": "Pangirim",
+            "CONTRACTADDRESS": "Alamat Kontrak",
+            "GASUSED": "Gas anu dianggo",
+            "DONEBUTTON": "Rengse",
+            "DEPLOYANOTHERBUTTON": "Nyebarkeun Anu Sanés"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaksi",
+            "COPYBLOCKHASH": "Salin Blok Hash",
+            "COPYTXID": "Salin ID Transaksi",
+            "COPYACCOUNT": "Salin Ngaran Akun",
+            "COPYADDRESS": "Salin Alamat",
+            "COPYAMOUNT": "Jumlah Salinan",
+            "COPTBLOCKINDEX": "Salin Indéks Blok",
+            "EXPLORER": "Buka dina Blok Explorer"
         },
         "STAKING": {
             "UNLOCK": "Buka konci pikeun Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Alamat",
             "ENABLED": "Diaktipkeun",
-            "STARTBUTTON": "Mimitian Lokal",
-            "STARTALIASBUTTON": "Mimitian Alias",
-            "STARTALLBUTTON": "Mimitian Sadayana",
             "NOMASTERNODES": "Anjeun teu gaduh masternode naon waé",
             "NOMNOUTPUTS": "Teu aya kaluaran Masternode anu kapendak. Pikeun ngajalankeun Masternode lokal, kirimkeun persis 2, 5, 25, 50 atanapi 100 juta koin ka alamat Masternode anjeun sareng antosan 15 konfirmasi.",
+            "STARTBUTTON": "Mimitian Lokal",
             "STOPBUTTON": "Eureunkeun Lokal",
+            "STARTALIASBUTTON": "Mimitian Alias",
             "STOPALIASBUTTON": "Eureunkeun Alias",
+            "STARTALLBUTTON": "Mimitian Sadayana",
             "ADDREMOTE": "Tambahkeun Masternode Jarak Jauh",
             "REMOVEMN": "Hapus Masternode",
             "ADDLOCAL": "Nyetél Masternode Lokal",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Jenderal",
                 "COREVERSION": "Versi Inti",
+                "ALTITUDEVERSION": "Versi Jangkungna",
                 "PROTOCOLVERSION": "Vérsi Protokol",
                 "WALLETVERSION": "Versi Wallet.dat",
                 "NETWORKTITLE": "Jaringan",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Jumlah Masternode",
                 "BLOCKCHAINTITLE": "Ranté Blok",
                 "NUMBERBLOCKS": "Jumlah blok ayeuna",
-                "BESTBLOCKTTIME": "Waktos blok terakhir",
-                "ALTITUDEVERSION": "Versi Jangkungna"
+                "BESTBLOCKTTIME": "Waktos blok terakhir"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Wilujeng sumping di konsol Metrix Core RPC. Ketik pitulung kanggo tinjauan paréntah anu sayogi.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Pilih Basa"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaksi",
-            "COPYBLOCKHASH": "Salin Blok Hash",
-            "COPYTXID": "Salin ID Transaksi",
-            "COPYACCOUNT": "Salin Ngaran Akun",
-            "COPYADDRESS": "Salin Alamat",
-            "COPYAMOUNT": "Jumlah Salinan",
-            "COPTBLOCKINDEX": "Salin Indéks Blok",
-            "EXPLORER": "Buka dina Blok Explorer"
+        "CURRENCY": {
+            "TITLE": "Pilih Mata Uang Tampilan"
         },
         "EXPLORER": {
             "TITLE": "Blok Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Jaringan",
             "WINDOTAB": "Jandéla",
+            "BACKUPTAB": "Cadangan",
+            "EXPLORERTAB": "Pangjalajah",
+            "DEVELOPERTAB": "Pamekar",
             "NETWORK": {
                 "PROXY": "Nyambungkeun ngaliwatan proxy SOCKS5",
                 "PROXYIP": "IP Proksi",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimalkeun nalika ditutup",
                 "BEHAVIOURTITLE": "Paripolah Baki Sistem & Jandéla"
             },
-            "BACKUPTAB": "Cadangan",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Cadangan Otomatis",
                 "ENABLED": "Jieun cadangan otomatis wallet.dat dina jadwal anu tos ditangtukeun",
                 "ENABLEDINFO": "Nyiptakeun cadangan anyar tina file dompét anjeun dina jadwal, janten salinan anu pangénggalna sok sayogi upami aya anu lepat.",
+                "INTERVALLABEL": "Jieun cadangan unggal (poé)",
                 "LASTBACKUP": "Cadangan terakhir:",
                 "NEVERBACKEDUP": "Tacan aya cadangan otomatis anu dilakukeun.",
                 "BACKUPNOWBUTTON": "Jieun Cadangan Ayeuna",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Reset ka Standar",
                 "PRUNETITLE": "Riwayat Cadangan",
                 "PRUNEINFO": "Cadangan otomatis anu langkung lami dihapus supados polder ieu henteu teras-terasan ageung - ngan ukur anu pangénggalna di handap anu disimpen.",
-                "KEEPCOUNTLABEL": "Simpen terakhir",
-                "INTERVALLABEL": "Jieun cadangan unggal (poé)"
+                "KEEPCOUNTLABEL": "Simpen terakhir"
             },
-            "EXPLORERTAB": "Pangjalajah",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blok Explorer",
                 "BLOCKEXPLORERINFO": "Situs éta dibuka nalika ningali transaksi dina block explorer (contona klik katuhu transaksi > Témbongkeun dina Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Jaringan Utama",
                 "TESTNET": "Jaringan Tés",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modeu Pamekar",
+                "DEVMODEINFO": "Pareum sacara standar sareng ditujukeun kanggo pamekar hungkul. Ngaktipkeun ieu bakal nembongkeun pilihan pikeun ngaganti sambungan RPC - pangguna standar kedah mareuman ieu.",
+                "DEVMODELABEL": "Aktipkeun Modeu Pamekar",
+                "WARNING": "Setélan ieu ngan ukur kanggo tujuan pamekaran. Ngaganti setélan éta tiasa nyegah dompét nyambung ka daemon pisan - ngan ukur anggo ieu upami anjeun terang naon anu anjeun lakukeun.",
+                "RPCHOSTTITLE": "Sambungan RPC",
+                "RPCHOSTINFO": "Sacara standar Altitude nyambung ka daemon anu dikokolakeun ku sorangan, dina mesin ieu (127.0.0.1). Ngaganti ieu ngamungkinkeun éta nyambung ka daemon anu béda - contona instansi regtest jarak jauh, tanpa kedah ngajalankeunana sacara lokal. Upami sambunganna suksés, Altitude moal ngaunduh atanapi ngamimitian daemon lokalna nyalira. rpcallowip daemon target kedah ngijinkeun sambungan ieu, sareng rpcuser/rpcpassword di handap ieu kedah cocog sareng konfigurasina. Langsung épéktip, teu kedah di-restart.",
+                "RPCHOSTLABEL": "Host RPC",
+                "RPCPORTLABEL": "Palabuhan RPC",
+                "RPCUSERLABEL": "Ngaran Pangguna RPC",
+                "RPCPASSWORDLABEL": "Sandi RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Tinjauan",
-            "TRANSACTIONSTAB": "Transaksi",
-            "ADDRESSTABS": "Alamat"
-        },
-        "CURRENCY": {
-            "TITLE": "Pilih Mata Uang Tampilan"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dasbor",
             "SEND": "Kirim",
+            "CREATECONTRACT": "Jieun Kontrak",
             "RECEIVE": "Nampi",
             "TRANSACTIONS": "Transaksi",
             "STAKING": "Pancang",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Blok Explorer",
             "SYNC": {
                 "CONNECTING": "Nyambungkeun",
                 "NOBLOCKS": "Nungguan blok",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Dompét ayeuna teu keur di-staking",
                 "MASTERNODEON": "Masternode ayeuna nuju dijalankeun",
                 "MASTERNODEOFF": "Masternode ayeuna teu jalan"
-            },
-            "EXPLORER": "Blok Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Lebetkeun alamat situs wéb",
+            "GOBUTTON": "Indit",
+            "QUICKLAUNCH": "Peluncuran Gancang",
+            "DEVTOOLS": "Buka Pakakas Pamekar",
+            "ADDLINK": "Tambahkeun Tautan",
+            "LINKNAMEPLACEHOLDER": "Ngaran",
+            "LINKURLPLACEHOLDER": "https://conto.com",
+            "SAVE": "Simpen",
+            "CANCEL": "Batalkeun",
+            "REMOVE": "Hapus",
+            "REMOVECONFIRM": "Hapus tautan gancang ieu?",
+            "LINKEXISTS": "Tautan éta parantos aya dina daptar peluncuran gancang anjeun",
+            "LINKINVALID": "Lebetkeun alamat situs anu valid",
+            "LINKNETWORKLABEL": "Jaringan",
+            "LOADFAILED": "Gagal muka situs",
+            "SECURESITE": "Sambungan aman - sertipikat SSL anu valid",
+            "INSECURESITE": "Sambunganna teu aman",
+            "INVALIDCERTSITE": "Sambunganna teu pribadi - sertipikat SSL teu valid atanapi teu dipercaya"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Lebetkeun Kecap Sandi Dompét Anjeun",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Apdet sayogi kanggo Metrix Core. Naha anjeun hoyong masangna ayeuna?",
             "WALLETUPDATETITLE": "Apdet Ketinggian Sadia",
             "WALLETUPDATEINFO": "Apdet sayogi kanggo Altitude. Naha anjeun hoyong ngaunduhna ayeuna?",
+            "WALLETUPDATEREADYTITLE": "Apdet Ketinggian Siap",
+            "WALLETUPDATEREADYINFO": "Apdetna parantos diunduh. Mimitian deui Altitude ayeuna kanggo masangna?",
+            "WALLETUPDATERESTARTBUTTON": "Mimitian deui & Pasang",
+            "WALLETUPDATELATERBUTTON": "Engké",
             "CLIENTUPDATEBUTTON": "Apdet",
             "CLIENTUPDATECANCELBUTTON": "Ulah Apdet",
             "CLIENTUPDATESKIPBUTTON": "Lewati Apdet Ieu",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Cadangan sateuacanna anu anjeun jieun tina file dompét anjeun kedah diganti ku file dompét anu nembé dihasilkeun sareng dienkripsi. Pikeun alesan kaamanan, cadangan sateuacanna tina file dompét anu teu dienkripsi bakal janten teu aya gunana pas anjeun mimiti nganggo dompét énggal anu dienkripsi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Eureun Teu Disangka-sangka",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Aya masalah sareng Metrix Core anu nyababkeun éta réngsé. Disarankeun pikeun mariksa file debug.log anjeun pikeun milarian masalah.",
+            "CLIENTUNKNOWNERRORTITLE": "Kasalahan Komunikasi Inti Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Aya masalah nalika komunikasi sareng Metrix Core. Disarankeun pikeun mariksa file debug.log anjeun pikeun milarian masalah.",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap Metrix Core Gagal",
+            "BOOTSTRAPFAILEDINFO": "Aya masalah nalika bootstrap Metrix Core. Disarankeun pikeun mariksa file log Altitude anjeun pikeun masalah.",
+            "BOOTSTRAPOFFERTITLE": "Dompétna Geus Kadaluwarsa",
+            "BOOTSTRAPOFFERINFO": "Bootstrap anyar sayogi anu tiasa gancang ngapdet Metrix Core. Nuluykeun sinkronisasi normal tiasa nyandak sababaraha dinten kanggo réngsé, sabab dompét anjeun kedah ngaunduh sareng verifikasi unggal blok anu teu acan kalaksanakeun.",
+            "BOOTSTRAPOFFERBUTTON": "Unduh Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Teraskeun Sinkronisasi Normal",
+            "BOOTSTRAPSPACEINFO": "Teu cekap rohangan disk kosong pikeun ngaunduh sareng ngekstrak bootstrap. Diperlukeun: {diperlukeun}, Sadia: {gratis}. Kosongkeun sababaraha rohangan teras cobian deui.",
+            "STARTUPFAILEDTITLE": "Startup Metrix Core Gagal",
+            "STARTUPFAILEDINFO": "Aya kasalahan nalika ngamimitian Metrix Core. Disarankeun pikeun mariksa file log Altitude anjeun pikeun masalah.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Pakakas Pamulihan",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurasi metrix.conf teu valid",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf anjeun gaduh setelan masternode anu teu valid anu bakal nyababkeun Metrix Core langsung kaluar. Mangga parios file ieu.",
             "ADDREMOTEMNTITLE": "Tambahkeun Masternode Jarak Jauh",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Konci Pribadi Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indéks Trx Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Bootstrap Metrix Core Gagal",
-            "BOOTSTRAPFAILEDINFO": "Aya masalah nalika bootstrap Metrix Core. Disarankeun pikeun mariksa file log Altitude anjeun pikeun masalah.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Pakakas Pamulihan",
-            "STARTUPFAILEDTITLE": "Startup Metrix Core Gagal",
-            "STARTUPFAILEDINFO": "Aya kasalahan nalika ngamimitian Metrix Core. Disarankeun pikeun mariksa file log Altitude anjeun pikeun masalah.",
-            "CLIENTUNKNOWNERRORTITLE": "Kasalahan Komunikasi Inti Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Aya masalah nalika komunikasi sareng Metrix Core. Disarankeun pikeun mariksa file debug.log anjeun pikeun milarian masalah.",
             "UNENROLLGOVERNORTITLE": "Konfirmasi Batalna Pendaptaran Gubernur",
             "UNENROLLGOVERNORCONTENT": "Naha anjeun yakin hoyong ngabatalkeun pendaptaran Gubernur anjeun? Anjeun moal tiasa deui milih dina tata kelola ranté.",
-            "WALLETUPDATEREADYTITLE": "Apdet Ketinggian Siap",
-            "WALLETUPDATEREADYINFO": "Apdetna parantos diunduh. Mimitian deui Altitude ayeuna kanggo masangna?",
-            "WALLETUPDATERESTARTBUTTON": "Mimitian deui & Pasang",
-            "WALLETUPDATELATERBUTTON": "Engké",
             "DAPPCONNECTTITLE": "Sambungkeun ka Situs",
             "DAPPCONNECTINFO": "Situs ieu hoyong nyambung ka dompét anjeun sareng ningali alamat sareng kasaimbangan anjeun.",
             "DAPPCONNECTBUTTON": "Sambungkeun",
+            "DAPPCONNECTADDRESSLABEL": "Alamat",
+            "DAPPAPPROVEBUTTON": "Satuju",
             "DAPPREJECTBUTTON": "Tolak",
             "DAPPSENDTITLE": "Pamundut Transaksi Kontrak",
             "DAPPSENDINFO": "Situs ieu nyuhunkeun pikeun ngirim transaksi kontrak tina dompét anjeun.",
-            "DAPPSIGNTITLE": "Pamundut Pesen Tandatangan",
-            "DAPPSIGNINFO": "Situs ieu nyuhunkeun pikeun nandatangan pesen nganggo alamat dompét anjeun.",
-            "DAPPNOTREADY": "Teu acan tiasa nyambung ka situsna - Metrix Core masih kénéh tiasa dianggo.",
-            "DAPPNOWALLET": "Teu tiasa nyambung ka situs éta - teu aya alamat dompét anu sayogi.",
-            "DAPPAPPROVEBUTTON": "Satuju",
-            "DAPPCONNECTADDRESSLABEL": "Alamat",
             "DAPPSENDSITELABEL": "Situs",
             "DAPPSENDCONTRACTLABEL": "Alamat Kontrak",
             "DAPPSENDAMOUNTLABEL": "Jumlah",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Biaya Jaringan Maks.",
             "DAPPSENDMAXTOTALLABEL": "Total Maksimum",
             "DAPPSENDDATALABEL": "Data Kontrak",
+            "DAPPSIGNTITLE": "Pamundut Pesen Tandatangan",
+            "DAPPSIGNINFO": "Situs ieu nyuhunkeun pikeun nandatangan pesen nganggo alamat dompét anjeun.",
             "DAPPSIGNMESSAGELABEL": "Pesen",
-            "BOOTSTRAPOFFERTITLE": "Dompétna Geus Kadaluwarsa",
-            "BOOTSTRAPOFFERINFO": "Bootstrap anyar sayogi anu tiasa gancang ngapdet Metrix Core. Nuluykeun sinkronisasi normal tiasa nyandak sababaraha dinten kanggo réngsé, sabab dompét anjeun kedah ngaunduh sareng verifikasi unggal blok anu teu acan kalaksanakeun.",
-            "BOOTSTRAPOFFERBUTTON": "Unduh Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Teraskeun Sinkronisasi Normal",
-            "BOOTSTRAPSPACEINFO": "Teu cekap rohangan disk kosong pikeun ngaunduh sareng ngekstrak bootstrap. Diperlukeun: {diperlukeun}, Sadia: {gratis}. Kosongkeun sababaraha rohangan teras cobian deui."
+            "DAPPNOTREADY": "Teu acan tiasa nyambung ka situsna - Metrix Core masih kénéh tiasa dianggo.",
+            "DAPPNOWALLET": "Teu tiasa nyambung ka situs éta - teu aya alamat dompét anu sayogi."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku Alamat",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Jaringan ayeuna"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Lebetkeun alamat situs wéb",
-            "GOBUTTON": "Indit",
-            "QUICKLAUNCH": "Peluncuran Gancang",
-            "DEVTOOLS": "Buka Pakakas Pamekar",
-            "ADDLINK": "Tambahkeun Tautan",
-            "LINKNAMEPLACEHOLDER": "Ngaran",
-            "LINKURLPLACEHOLDER": "https://conto.com",
-            "SAVE": "Simpen",
-            "CANCEL": "Batalkeun",
-            "REMOVE": "Hapus",
-            "REMOVECONFIRM": "Hapus tautan gancang ieu?",
-            "LINKEXISTS": "Tautan éta parantos aya dina daptar peluncuran gancang anjeun",
-            "LINKINVALID": "Lebetkeun alamat situs anu valid",
-            "LINKNETWORKLABEL": "Jaringan",
-            "LOADFAILED": "Gagal muka situs",
-            "SECURESITE": "Sambungan aman - sertipikat SSL anu valid",
-            "INSECURESITE": "Sambunganna teu aman",
-            "INVALIDCERTSITE": "Sambunganna teu pribadi - sertipikat SSL teu valid atanapi teu dipercaya"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Dompét Cadangan...",
             "SIGNMESSAGE": "Pesen Tanda Tangan...",
             "VERIFYMESSAGE": "Verifikasi Pesen...",
-            "LOCALE": "Basa...",
-            "RESTARTCORE": "Mimitian deui Metrix Core",
-            "EXIT": "Kaluar",
             "OPTIONS": "Pilihan...",
+            "LOCALE": "Basa...",
             "CURRENCIES": "Témbongkeun Mata Uang...",
-            "ALTITUDEREFRESH": "Refresh Data Ketinggian"
+            "RESTARTCORE": "Mimitian deui Metrix Core",
+            "ALTITUDEREFRESH": "Refresh Data Ketinggian",
+            "EXIT": "Kaluar"
         },
         "ENCRYPT": {
             "TITLE": "Énkripsi",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Total Saldo",
+        "SPENDABLEBALANCE": "Saldo anu tiasa dibelanjakeun",
+        "PENDINGBALANCE": "Saldo Anu Ditunda",
         "CANCELBUTTON": "Batalkeun",
         "DONEBUTTON": "Rengse",
         "OKBUTTON": "OKÉ",
+        "ACCEPTBUTTON": "Tampa",
         "CLEARALLBUTTON": "Hapus Sadayana",
         "ENTERACCOUNTLABEL": "Lebetkeun labél pikeun alamat ieu",
         "ENTERADDRESSLABEL": "Lebetkeun alamat Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Diurutkeun dumasarkeun",
         "SEARCH": "Pilarian",
         "FEE": "Biaya",
-        "ACCEPTBUTTON": "Tampa",
         "CONFIRMED": "Dikonfirmasi",
         "UNCONFIRMED": "Teu acan dikonfirmasi",
-        "PENDINGBALANCE": "Saldo Anu Ditunda",
-        "SPENDABLEBALANCE": "Saldo anu tiasa dibelanjakeun",
         "SAVEBUTTON": "Simpen"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ngamimitian deui Metrix Core...",
         "BOOTSTRAPPING": "Ngundeur bootstrap...",
         "BOOTSTRAPEXTRACTING": "Ngékstrak bootstrap...",
-        "TIMEREMAINING": "sésana:"
+        "TIMEREMAINING": "sésana:",
+        "DEVRPCOVERRIDEACTIVE": "Override sambungan RPC pamekar parantos disetel (Pilihan > Pamekar) sareng henteu ngaréspon. Hapus éta pikeun nyambungkeun deui ka daemon lokal sacara normal.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Hapuskeun RPC Override & Sambungkeun Deui"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akun anyar parantos hasil didamel",
         "ADDRESSCOPIEDCLIPBOARD": "Alamat disalin ka papan klip",
+        "COPIEDCLIPBOARD": "Disalin ka papan klip",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ka papan klip",
         "EMPTYFIELDS": "Mangga eusian sadaya kolom",
         "NOUPDATE": "Teu aya apdet anu sayogi",
         "WALLETBACKEDUP": "Cadangan dompét suksés",
+        "WALLETBACKUPFAILED": "Cadangan dompét otomatis gagal - pariksa lokasi cadangan anjeun sareng rohangan disk anu sayogi",
         "PASSPHRASEMISMATCH": "Kecap akses anu anjeun lebetkeun teu cocog",
         "CHECKINGUPDATE": "Keur mariksa apdet...",
         "CHECKINGUPDATEFAILED": "Teu tiasa mariksa apdet. Pariksa jaringan anjeun.",
+        "WALLETUPDATEDOWNLOADING": "Ngundeur apdet...",
         "SENDINGEXCEEDSBALANCE": "Jumlah anu anjeun kirim ngaleuwihan kasaimbangan anu anjeun pilih",
         "MISSINGCHANGEADDRESS": "Anjeun kedah nangtukeun alamat anu badé dirobih",
         "MISSINGDESTINATIONADDRESS": "Anjeun kedah nangtukeun alamat tujuan",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Nga-énkripsi dompét...",
         "CHANGINGPASSPHARASE": "Ngaganti kecap akses...",
         "STARTINGMASTERNODE": "Ngamimitian masternode...",
+        "STOPPINGMASTERNODE": "Ngeureunkeun masternode...",
         "SENDINGTRANSACTION": "Ngirim transaksi...",
         "SIGNINGMESSAGE": "Pesen tanda tangan...",
         "SIGNEDMESSAGE": "Pesen ditandatanganan",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Muka konci dompét...",
         "TRANSACTIONMISMATCH": "Kasalahan transaksi. Mangga cobian deui.",
         "MINIMUMCONFIRMATIONS": "Sadaya input peryogi sahenteuna 1 konfirmasi sateuacan dibelanjakeun.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksi disalin ka papan klip",
-        "STOPPINGMASTERNODE": "Ngeureunkeun masternode...",
         "FAILEDTOWRITECONFIG": "Aya masalah nalika nyerat kana file metrix.conf anjeun. Pariksa file éta aya sareng Altitude gaduh idin nyerat.",
         "NOPUBLICUP": "Teu aya alamat IP Umum anu kapendak. Pariksa sambungan internét anjeun teras mimitian deui Altitude.",
         "CONFIGURINGLOCALMN": "Ngonpigurasikeun Masternode lokal...",
         "REPORTINGISSUE": "Meunangkeun inpormasi diagnostik... Inpormasi ieu bakal disalin kana papan klip anjeun.",
-        "WALLETUPDATEDOWNLOADING": "Ngundeur apdet...",
-        "WALLETBACKUPFAILED": "Cadangan dompét otomatis gagal - pariksa lokasi cadangan anjeun sareng rohangan disk anu sayogi",
         "EXPLORERURLSAVED": "URL Pangjalajah disimpen",
         "EXPLORERURLRESET": "URL Explorer dibalikkeun deui ka standar",
         "EXPLORERURLINVALID": "Éta sanés URL http(s) anu valid",
-        "EXPLORERURLUNREACHABLE": "Teu tiasa ngahontal URL éta - parios teras cobian deui"
+        "EXPLORERURLUNREACHABLE": "Teu tiasa ngahontal URL éta - parios teras cobian deui",
+        "DEVRPCHOSTSAVED": "Host RPC disimpen",
+        "DEVRPCHOSTRESET": "Host RPC dibalikkeun deui ka standar (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Koin anu Ditampi",
+        "NEWTRANSACTION_TITLE_STAKE": "Ditampi Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Nampi Ganjaran Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Sababaraha detik",
@@ -533,11 +587,6 @@
         "MONTHS": "bulan",
         "AYEAR": "Sataun",
         "YEARS": "taun"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Koin anu Ditampi",
-        "NEWTRANSACTION_TITLE_STAKE": "Ditampi Stake",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Nampi Ganjaran Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gubernur tanggung jawab pikeun milih anggaran bulanan sareng parobihan blockchain. Anjeun tiasa janten Gubernur ku cara ngunci jaminan anu leres dina kontrak Tata Kelola.",
                 "COLLATERAL": "Jaminan anu diwajibkeun",
                 "ENROLL": "Ngadaptar",
+                "SELECTAGOVERNOR": "Pilih alamat gubernur anu layak",
+                "GOVERNORNOTSELECTED": "Teu aya alamat anu layak anu dipilih",
                 "CONFIRMENROLL": "Anjeun bade ngadaptar janten Gubernur. Ieu bakal ngirim transaksi kalayan jaminan anu diperyogikeun kana kontrak tata kelola. Anjeun tiasa ngabatalkeun pendaptaran iraha waé.",
                 "ISGOVERNORTITLE": "Anjeun Gubernur anu aktip!",
                 "ISGOVERNORDETAIL1": "Gubernur tanggung jawab pikeun milih anggaran bulanan sareng parobihan blockchain.",
                 "ISGOVERNORDETAIL2": "Pikeun tetep janten Gubernur, anjeun kedah ilubiung sahenteuna 1 sora unggal 30 dinten.",
                 "ISGOVERNORDETAIL3": "Upami teu aya anu kedah dipilih, anjeun tiasa neraskeun pendaptaran sacara manual ku ngirim ping aktif.",
+                "MYGOVERNORADDRESS": "Pidato Gubernur Abdi",
                 "UNENROLL": "Batalkeun pendaptaran",
                 "PING": "Kirim Ping Aktif",
                 "LASTPINGTITLE": "Ping terakhir",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dinten-dinten",
                 "GOVERNORVOTEMATURITYHOURS": "jam",
                 "GOVERNORVOTEMATURITYSUFFIX": "nepi ka dewasa",
-                "MYGOVERNORADDRESS": "Pidato Gubernur Abdi",
-                "SELECTAGOVERNOR": "Pilih alamat gubernur anu layak",
-                "GOVERNORNOTSELECTED": "Teu aya alamat anu layak anu dipilih",
                 "NOTFULLYSYNCEDTITLE": "Status gubernur teu sayogi",
                 "NOTFULLYSYNCEDDETAIL": "Status pendaptaran Gubernur anjeun bakal katingali nalika blockchain anjeun sinkron sapinuhna.",
                 "DGPMIGRATIONTITLE": "Migrasi DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Proposal anjeun parantos hasil dijieun",
             "ENROLLINGGOVERNOR": "Ngadaptar jadi Gubernur...",
             "ENROLLEDGOVERNOR": "Pendaptaran anjeun bakal réngsé saatos transaksi anjeun dikonfirmasi",
-            "VOTINGONPROPOSAL": "Ngintunkeun sora proposal",
-            "VOTEDONPROPOSAL": "Sora anjeun bakal diitung saatos transaksi dikonfirmasi.",
             "PINGINGGOVERNOR": "Ngirim ping...",
             "PINGEDGOVERNOR": "Ping parantos dikirim kalayan suksés. Gubernur anjeun bakal diénggalan saatos transaksi dikonfirmasi",
+            "VOTINGONPROPOSAL": "Ngintunkeun sora proposal",
+            "VOTEDONPROPOSAL": "Sora anjeun bakal diitung saatos transaksi dikonfirmasi.",
             "UNENROLLINGGOVERNOR": "Gubernur nu ngabatalkeun pendaptaran...",
             "UNENROLLEDGOVERNOR": "Transaksi parantos dikirim. Gubernur anjeun bakal dihapus pendaptaranna saatos transaksi dikonfirmasi",
             "GOVERNORNOTMATURE": "Gubernur anjeun tacan cukup dewasa pikeun ngalakukeun tindakan ieu"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Meuli Metrix",
+                "SEARCH": "Sajarah"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Anjeun Ngintunkeun",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Riwayat Transaksi",
                 "SEARCHBUTTON": "PILARIAN",
+                "SEARCHPLACEHOLDER": "Lebetkeun alamat MRX atanapi BTC",
                 "TRANSACTIONDATE": "Tanggal",
                 "TRANSACTIONTYPE": "Tipe TX",
                 "TRANSACTIONAMOUNT": "Jumlah",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Dikonfirmasi",
                 "TRANSACTIONNOTCONFIRMED": "Teu Dikonfirmasi",
                 "TRANSACTIONREFUNDED": "Dibalikeun duitna - Di handap minimum",
-                "AVGSWAPPRICE": "Harga Swap Rata-rata",
-                "SEARCHPLACEHOLDER": "Lebetkeun alamat MRX atanapi BTC"
+                "AVGSWAPPRICE": "Harga Swap Rata-rata"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ngahasilkeun Alamat Swap...",
             "ALREADYHAVEADDRESS": "Anjeun parantos gaduh alamat BTC anu aya hubunganana sareng alamat Metrix ieu",
             "NOADDRESS": "Anjeun teu ngalebetkeun alamat Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Meuli Metrix",
-                "SEARCH": "Sajarah"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Bukakeun",
                 "EMPTYTITLE": "Teu Aya Token Anu Kapanggih",
                 "EMPTYDETAIL": "Altitude sacara otomatis mariksa block explorer pikeun token MRC20 sareng MRC721 anu dikirim ka alamat anjeun, teras verifikasi sadayana langsung ngalawan node anjeun nyalira. Anjeun ogé tiasa nambihan token sacara manual upami anjeun terang alamat kontrakna.",
+                "EMPTYDETAILCHECKINGDISABLED": "Pamariksaan token otomatis dipareuman, janten alamat anjeun henteu dipariksa pikeun token. Aktipkeun deui di luhur, atanapi tambahkeun token sacara manual upami anjeun terang alamat kontrakna.",
                 "HIDDENTITLE": "Token Anu Disumputkeun",
                 "CONTEXTMENUHIDE": "Sumputkeun Token",
                 "ITEMSSUFFIX": "barang",
-                "NONENUMERABLETOOLTIP": "Koleksi ieu henteu ngadukung daptar barang individu - nunjukkeun sabaraha anu anjeun simpen."
+                "NONENUMERABLETOOLTIP": "Koleksi ieu henteu ngadukung daptar barang individu - nunjukkeun sabaraha anu anjeun simpen.",
+                "CHECKINGENABLED": "Mariksa",
+                "CHECKINGDISABLED": "Nga-check-off",
+                "CHECKINGENABLEDTOOLTIP": "Pamariksaan token diaktipkeun - Altitude sacara périodik mariksa alamat anjeun pikeun token sareng ngamutahirkeun kasaimbangan. Klik pikeun mareuman.",
+                "CHECKINGDISABLEDTOOLTIP": "Pamariksaan token pareum - klik pikeun ngaktipkeun deui.",
+                "CHECKINGDISABLEDNOTICE": "Pamariksaan token otomatis dipareuman. Alamat anjeun teu keur di-scan pikeun token sareng kasaimbangan moal diropéa. Anjeun masih tiasa nambihan token sacara manual."
             },
             "ADDTOKEN": {
                 "TITLE": "Tambahkeun Token",

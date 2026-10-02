@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Gumawa ng Account",
             "HIDEEMPTYACCOUNTS": "Itago ang mga Walang Pangalang Walang Lamang Account"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Pangkalahatang-ideya",
+            "TRANSACTIONSTAB": "Mga Transaksyon",
+            "ADDRESSTABS": "Mga Address"
+        },
         "SEND": {
             "ADDRECIPIENT": "Magdagdag ng Tatanggap",
             "SEND": "Ipadala",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Petsa",
             "TABLECOLUMNS_CONFIRMS": "Mga Kumpirmasyon",
             "ALL_SELECTUNSELECT": "I-toggle Lahat",
+            "TREEMODE": "Modo ng Puno",
+            "LISTMODE": "Mode ng Listahan",
             "SENDAVAILABLE": "Gamitin ang magagamit na balanse",
             "INPUTLOCKED": "Naka-lock ang input. Kakailanganin mong i-unlock ang input na ito para magamit ito.",
             "CONTEXTMENULOCKINPUT": "I-lock ang input",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Pagkatapos ng Bayad",
             "QUANTITY": "Dami",
             "BYTES": "Mga Byte",
-            "TREEMODE": "Modo ng Puno",
-            "LISTMODE": "Mode ng Listahan",
             "ALERTFEECHANGETITLE": "Pagbabago ng Bayad",
             "ALERTFEECHANGECONTENT": "Mas mataas ang aktwal na bayarin sa transaksyon kaysa sa inaasahan. Pakikumpirma ang bagong bayarin:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Gumawa ng Kontrata",
+            "INFO": "Mag-deploy ng smart contract sa network sa pamamagitan ng pagsusumite ng na-compile na bytecode nito. Ito ay isang core chain function - i-double check ang iyong bytecode at mga setting ng gas bago i-deploy, hindi na maaaring bawiin ang deployment.",
+            "FROM": "Mula sa",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "I-paste ang na-compile na bytecode ng kontrata (hex)",
+            "INVALIDBYTECODE": "Ang bytecode ay dapat isang wastong hex string (0-9, a-f) na may pantay na bilang ng mga karakter",
+            "GASLIMIT": "Limitasyon sa Gasolina",
+            "GASLIMITRANGE": "Saklaw",
+            "GASPRICE": "Presyo ng Gasolina (MRX kada yunit ng gasolina)",
+            "GASPRICEMIN": "Pinakamababa",
+            "ESTIMATEDMAXCOST": "Tinatayang pinakamataas na gastos",
+            "DEPLOYBUTTON": "Kontrata ng Pag-deploy",
+            "INCOMPLETEFORM": "Mangyaring pumili ng address ng nagpadala, maglagay ng wastong bytecode, at magtakda ng wastong limitasyon/presyo ng gasolina",
+            "HIGHGASPRICETITLE": "Mataas na Presyo ng Gasolina",
+            "HIGHGASPRICEINFO": "Hindi pangkaraniwang mataas ang presyo ng gasolina na itinakda mo. Ang paglulunsad na ito ay maaaring umabot sa:",
+            "DEPLOYING": "Pag-deploy ng kontrata...",
+            "DEPLOYED": "Isinumite ang pag-deploy ng kontrata",
+            "RESULTTITLE": "Resulta ng Pag-deploy",
+            "STATUS": "Katayuan",
+            "STATUSPENDING": "Nakabinbin ang kumpirmasyon...",
+            "STATUSCONFIRMED": "Matagumpay na na-deploy",
+            "STATUSFAILED": "Nabigo ang pag-deploy",
+            "TXID": "ID ng Transaksyon",
+            "SENDER": "Nagpadala",
+            "CONTRACTADDRESS": "Address ng Kontrata",
+            "GASUSED": "Ginamit na Gas",
+            "DONEBUTTON": "Tapos na",
+            "DEPLOYANOTHERBUTTON": "Mag-deploy ng Isa Pa"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Mga Transaksyon",
+            "COPYBLOCKHASH": "Kopyahin ang Block Hash",
+            "COPYTXID": "Kopyahin ang ID ng Transaksyon",
+            "COPYACCOUNT": "Kopyahin ang Pangalan ng Account",
+            "COPYADDRESS": "Kopyahin ang Address",
+            "COPYAMOUNT": "Halaga ng Kopya",
+            "COPTBLOCKINDEX": "Indeks ng Kopyahin ang Block",
+            "EXPLORER": "Buksan sa Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "I-unlock Para sa Pag-stake",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Tirahan",
             "ENABLED": "Pinagana",
-            "STARTBUTTON": "Simulan ang Lokal",
-            "STARTALIASBUTTON": "Simulan ang Alyas",
-            "STARTALLBUTTON": "Simulan Lahat",
             "NOMASTERNODES": "Wala kang anumang masternode",
             "NOMNOUTPUTS": "Walang nakitang mga output ng Masternode. Para magpatakbo ng lokal na Masternode, magpadala ng eksaktong 2, 5, 25, 50 o 100 milyong coin sa iyong Masternode address at maghintay ng 15 kumpirmasyon.",
+            "STARTBUTTON": "Simulan ang Lokal",
             "STOPBUTTON": "Itigil ang Lokal",
+            "STARTALIASBUTTON": "Simulan ang Alyas",
             "STOPALIASBUTTON": "Itigil ang Alyas",
+            "STARTALLBUTTON": "Simulan Lahat",
             "ADDREMOTE": "Magdagdag ng Malayuang Masternode",
             "REMOVEMN": "Alisin ang Masternode",
             "ADDLOCAL": "I-setup ang Lokal na Masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Heneral",
                 "COREVERSION": "Pangunahing Bersyon",
+                "ALTITUDEVERSION": "Bersyon ng Altitude",
                 "PROTOCOLVERSION": "Bersyon ng Protokol",
                 "WALLETVERSION": "Bersyon ng Wallet.dat",
                 "NETWORKTITLE": "Network",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Bilang ng mga Masternode",
                 "BLOCKCHAINTITLE": "Block Chain",
                 "NUMBERBLOCKS": "Kasalukuyang bilang ng mga bloke",
-                "BESTBLOCKTTIME": "Huling oras ng bloke",
-                "ALTITUDEVERSION": "Bersyon ng Altitude"
+                "BESTBLOCKTTIME": "Huling oras ng bloke"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Maligayang pagdating sa Metrix Core RPC console. I-type ang help para sa pangkalahatang-ideya ng mga available na command.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Pumili ng Wika"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Mga Transaksyon",
-            "COPYBLOCKHASH": "Kopyahin ang Block Hash",
-            "COPYTXID": "Kopyahin ang ID ng Transaksyon",
-            "COPYACCOUNT": "Kopyahin ang Pangalan ng Account",
-            "COPYADDRESS": "Kopyahin ang Address",
-            "COPYAMOUNT": "Halaga ng Kopya",
-            "COPTBLOCKINDEX": "Indeks ng Kopyahin ang Block",
-            "EXPLORER": "Buksan sa Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Piliin ang Pera na Ipinapakita"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Bintana",
+            "BACKUPTAB": "Pag-backup",
+            "EXPLORERTAB": "Manggagalugad",
+            "DEVELOPERTAB": "Developer",
             "NETWORK": {
                 "PROXY": "Kumonekta gamit ang SOCKS5 proxy",
                 "PROXYIP": "Proxy IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Bawasan kapag nagsasara",
                 "BEHAVIOURTITLE": "Pag-uugali ng System Tray at Window"
             },
-            "BACKUPTAB": "Pag-backup",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Awtomatikong Pag-backup",
                 "ENABLED": "Awtomatikong i-back up ang wallet.dat ayon sa iskedyul",
                 "ENABLEDINFO": "Gumagawa ng panibagong backup ng iyong wallet file sa isang iskedyul, para laging may available na bagong kopya kung sakaling may magkamali.",
+                "INTERVALLABEL": "Mag-backup kada (araw)",
                 "LASTBACKUP": "Huling backup:",
                 "NEVERBACKEDUP": "Wala pang awtomatikong backup na nagawa.",
                 "BACKUPNOWBUTTON": "Mag-backup Ngayon",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "I-reset sa Default",
                 "PRUNETITLE": "Kasaysayan ng Pag-backup",
                 "PRUNEINFO": "Ang mga lumang awtomatikong pag-backup ay binubura kaya hindi lalago nang tuluyan ang folder na ito - tanging ang mga pinakabago lamang sa ibaba ang itinatago.",
-                "KEEPCOUNTLABEL": "Panatilihing huli",
-                "INTERVALLABEL": "Mag-backup kada (araw)"
+                "KEEPCOUNTLABEL": "Panatilihing huli"
             },
-            "EXPLORERTAB": "Manggagalugad",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Bumukas ang site nang tingnan ang isang transaksyon sa block explorer (hal. i-right-click ang isang transaksyon > Tingnan sa Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mode ng Nag-develop",
+                "DEVMODEINFO": "Naka-off bilang default at para lamang sa mga developer. Ang pag-enable nito ay nagpapakita ng mga opsyon para i-override ang koneksyon ng RPC - dapat itong i-off ng mga karaniwang user.",
+                "DEVMODELABEL": "Paganahin ang Mode ng Developer",
+                "WARNING": "Ang mga setting na ito ay para lamang sa mga layunin ng pag-develop. Ang pagpapalit ng mga ito ay maaaring pumigil sa wallet na kumonekta sa isang daemon - gamitin lamang ito kung alam mo ang iyong ginagawa.",
+                "RPCHOSTTITLE": "Koneksyon ng RPC",
+                "RPCHOSTINFO": "Bilang default, kumokonekta ang Altitude sa daemon na pinamamahalaan nito mismo, sa makinang ito (127.0.0.1). Ang pag-override sa mga ito ay nagbibigay-daan dito na kumonekta sa ibang daemon - halimbawa, isang remote regtest instance, nang hindi kinakailangang magpatakbo ng isa nang lokal. Kung magtagumpay ang koneksyon, hindi ida-download o sisimulan ng Altitude ang sarili nitong lokal na daemon. Dapat pahintulutan ng rpcallowip ng target na daemon ang koneksyon na ito, at dapat tumugma ang rpcuser/rpcpassword sa ibaba sa configuration nito. Magkakaroon agad ng epekto, hindi na kailangan ng pag-restart.",
+                "RPCHOSTLABEL": "RPC Host",
+                "RPCPORTLABEL": "RPC Port",
+                "RPCUSERLABEL": "Pangalan ng Gumagamit ng RPC",
+                "RPCPASSWORDLABEL": "Password ng RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Pangkalahatang-ideya",
-            "TRANSACTIONSTAB": "Mga Transaksyon",
-            "ADDRESSTABS": "Mga Address"
-        },
-        "CURRENCY": {
-            "TITLE": "Piliin ang Pera na Ipinapakita"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Ipadala",
+            "CREATECONTRACT": "Gumawa ng Kontrata",
             "RECEIVE": "Tumanggap",
             "TRANSACTIONS": "Mga Transaksyon",
             "STAKING": "Pagtaya",
             "MASTERNODES": "Mga Masternode",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "Pagkonekta",
                 "NOBLOCKS": "Naghihintay ng mga bloke",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Hindi kasalukuyang nag-i-stake ang Wallet",
                 "MASTERNODEON": "Kasalukuyang tumatakbo ang Masternode",
                 "MASTERNODEOFF": "Hindi kasalukuyang tumatakbo ang Masternode"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Maglagay ng address ng website",
+            "GOBUTTON": "Pumunta",
+            "QUICKLAUNCH": "Mabilis na Paglulunsad",
+            "DEVTOOLS": "Buksan ang Mga Tool ng Developer",
+            "ADDLINK": "Magdagdag ng Link",
+            "LINKNAMEPLACEHOLDER": "Pangalan",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "I-save",
+            "CANCEL": "Kanselahin",
+            "REMOVE": "Alisin",
+            "REMOVECONFIRM": "Alisin ang mabilisang link na ito?",
+            "LINKEXISTS": "Nasa quick launch list mo na ang link na iyan.",
+            "LINKINVALID": "Maglagay ng wastong address ng site",
+            "LINKNETWORKLABEL": "Network",
+            "LOADFAILED": "Nabigong i-load ang site",
+            "SECURESITE": "Ligtas ang koneksyon - wastong sertipiko ng SSL",
+            "INSECURESITE": "Hindi ligtas ang koneksyon",
+            "INVALIDCERTSITE": "Hindi pribado ang koneksyon - hindi wasto o hindi mapagkakatiwalaang sertipiko ng SSL"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ilagay ang Passphrase ng Iyong Wallet",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "May available na update para sa Metrix Core. Gusto mo ba itong i-install ngayon?",
             "WALLETUPDATETITLE": "Magagamit ang Update sa Altitude",
             "WALLETUPDATEINFO": "May available na update para sa Altitude. Gusto mo ba itong i-download ngayon?",
+            "WALLETUPDATEREADYTITLE": "Handa na para sa Pag-update ng Altitude",
+            "WALLETUPDATEREADYINFO": "Na-download na ang update. I-restart ang Altitude ngayon para i-install ito?",
+            "WALLETUPDATERESTARTBUTTON": "I-restart at I-install",
+            "WALLETUPDATELATERBUTTON": "Mamaya",
             "CLIENTUPDATEBUTTON": "I-update",
             "CLIENTUPDATECANCELBUTTON": "Huwag I-update",
             "CLIENTUPDATESKIPBUTTON": "Laktawan ang Update na Ito",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Anumang mga nakaraang backup na ginawa mo sa iyong wallet file ay dapat palitan ng bagong nabuo at naka-encrypt na wallet file. Para sa mga kadahilanang pangseguridad, ang mga nakaraang backup ng hindi naka-encrypt na wallet file ay mawawalan ng silbi sa sandaling simulan mong gamitin ang bago at naka-encrypt na wallet.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Hindi Inaasahang Huminto ang Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Nagkaroon ng problema sa Metrix Core na naging dahilan ng pagtatapos nito. Inirerekomenda na suriin ang iyong debug.log file para sa mga isyu.",
+            "CLIENTUNKNOWNERRORTITLE": "Error sa Komunikasyon ng Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Nagkaroon ng problema sa pakikipag-ugnayan sa Metrix Core. Inirerekomendang suriin ang iyong debug.log file para sa mga isyu.",
+            "BOOTSTRAPFAILEDTITLE": "Nabigo ang Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Nagkaroon ng problema sa pag-bootstrap ng Metrix Core. Inirerekomenda na suriin ang iyong Altitude log file para sa mga isyu.",
+            "BOOTSTRAPOFFERTITLE": "Wallet na Lubhang Luma na",
+            "BOOTSTRAPOFFERINFO": "May available na bagong bootstrap na mabilis na makapagpapabago sa Metrix Core. Ang pagpapatuloy sa normal na pag-sync ay maaaring tumagal ng ilang araw bago makumpleto, dahil kailangang i-download at i-verify ng iyong wallet ang bawat block na hindi nito na-access.",
+            "BOOTSTRAPOFFERBUTTON": "I-download ang Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Ipagpatuloy ang Normal na Pag-sync",
+            "BOOTSTRAPSPACEINFO": "Hindi sapat ang libreng espasyo sa disk para i-download at i-extract ang bootstrap. Kinakailangan: {required}, Available: {free}. Magbakante ng kaunting espasyo at subukan muli.",
+            "STARTUPFAILEDTITLE": "Nabigo ang Pagsisimula ng Metrix Core",
+            "STARTUPFAILEDINFO": "Nagkaroon ng error sa pagsisimula ng Metrix Core. Inirerekomenda na suriin ang iyong Altitude log file para sa mga isyu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mga Kagamitan sa Pagbawi",
             "CLIENTINVALIDCONFIGTITLE": "Hindi wastong Konpigurasyon ng metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ang iyong metrix.conf ay mayroong invalid na masternode setup na magiging sanhi ng agarang pag-exit ng Metrix Core. Pakisuri ang file na ito.",
             "ADDREMOTEMNTITLE": "Magdagdag ng Malayuang Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Pribadong Susi ng Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indeks ng Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Nabigo ang Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Nagkaroon ng problema sa pag-bootstrap ng Metrix Core. Inirerekomenda na suriin ang iyong Altitude log file para sa mga isyu.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mga Kagamitan sa Pagbawi",
-            "STARTUPFAILEDTITLE": "Nabigo ang Pagsisimula ng Metrix Core",
-            "STARTUPFAILEDINFO": "Nagkaroon ng error sa pagsisimula ng Metrix Core. Inirerekomenda na suriin ang iyong Altitude log file para sa mga isyu.",
-            "CLIENTUNKNOWNERRORTITLE": "Error sa Komunikasyon ng Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Nagkaroon ng problema sa pakikipag-ugnayan sa Metrix Core. Inirerekomendang suriin ang iyong debug.log file para sa mga isyu.",
             "UNENROLLGOVERNORTITLE": "Kumpirmahin ang Pag-alis sa Pagpapatala ng Gobernador",
             "UNENROLLGOVERNORCONTENT": "Sigurado ka bang gusto mong alisin sa pagkakatala ang iyong Gobernador? Hindi ka na makakaboto sa chain governance.",
-            "WALLETUPDATEREADYTITLE": "Handa na para sa Pag-update ng Altitude",
-            "WALLETUPDATEREADYINFO": "Na-download na ang update. I-restart ang Altitude ngayon para i-install ito?",
-            "WALLETUPDATERESTARTBUTTON": "I-restart at I-install",
-            "WALLETUPDATELATERBUTTON": "Mamaya",
             "DAPPCONNECTTITLE": "Kumonekta sa Site",
             "DAPPCONNECTINFO": "Gusto ng site na ito na kumonekta sa iyong wallet at tingnan ang iyong address at balanse.",
             "DAPPCONNECTBUTTON": "Kumonekta",
+            "DAPPCONNECTADDRESSLABEL": "Tirahan",
+            "DAPPAPPROVEBUTTON": "Aprubahan",
             "DAPPREJECTBUTTON": "Tanggihan",
             "DAPPSENDTITLE": "Kahilingan sa Transaksyon ng Kontrata",
             "DAPPSENDINFO": "Humihiling ang site na ito na magpadala ng transaksyon sa kontrata mula sa iyong wallet.",
-            "DAPPSIGNTITLE": "Kahilingan sa Mensahe ng Pagpirma",
-            "DAPPSIGNINFO": "Hinihiling ng site na ito na pumirma ng mensahe gamit ang address ng iyong wallet.",
-            "DAPPNOTREADY": "Hindi pa makakonekta sa site - Nagsisimula pa lang ang Metrix Core.",
-            "DAPPNOWALLET": "Hindi makakonekta sa site - walang available na wallet address.",
-            "DAPPAPPROVEBUTTON": "Aprubahan",
-            "DAPPCONNECTADDRESSLABEL": "Tirahan",
             "DAPPSENDSITELABEL": "Lugar",
             "DAPPSENDCONTRACTLABEL": "Address ng Kontrata",
             "DAPPSENDAMOUNTLABEL": "Halaga",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Pinakamataas na Bayad sa Network",
             "DAPPSENDMAXTOTALLABEL": "Pinakamataas na Kabuuan",
             "DAPPSENDDATALABEL": "Datos ng Kontrata",
+            "DAPPSIGNTITLE": "Kahilingan sa Mensahe ng Pagpirma",
+            "DAPPSIGNINFO": "Hinihiling ng site na ito na pumirma ng mensahe gamit ang address ng iyong wallet.",
             "DAPPSIGNMESSAGELABEL": "Mensahe",
-            "BOOTSTRAPOFFERTITLE": "Wallet na Lubhang Luma na",
-            "BOOTSTRAPOFFERINFO": "May available na bagong bootstrap na mabilis na makapagpapabago sa Metrix Core. Ang pagpapatuloy sa normal na pag-sync ay maaaring tumagal ng ilang araw bago makumpleto, dahil kailangang i-download at i-verify ng iyong wallet ang bawat block na hindi nito na-access.",
-            "BOOTSTRAPOFFERBUTTON": "I-download ang Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Ipagpatuloy ang Normal na Pag-sync",
-            "BOOTSTRAPSPACEINFO": "Hindi sapat ang libreng espasyo sa disk para i-download at i-extract ang bootstrap. Kinakailangan: {required}, Available: {free}. Magbakante ng kaunting espasyo at subukan muli."
+            "DAPPNOTREADY": "Hindi pa makakonekta sa site - Nagsisimula pa lang ang Metrix Core.",
+            "DAPPNOWALLET": "Hindi makakonekta sa site - walang available na wallet address."
         },
         "ADDRESSBOOK": {
             "TITLE": "Libro ng Address",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Kasalukuyang network"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Maglagay ng address ng website",
-            "GOBUTTON": "Pumunta",
-            "QUICKLAUNCH": "Mabilis na Paglulunsad",
-            "DEVTOOLS": "Buksan ang Mga Tool ng Developer",
-            "ADDLINK": "Magdagdag ng Link",
-            "LINKNAMEPLACEHOLDER": "Pangalan",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "I-save",
-            "CANCEL": "Kanselahin",
-            "REMOVE": "Alisin",
-            "REMOVECONFIRM": "Alisin ang mabilisang link na ito?",
-            "LINKEXISTS": "Nasa quick launch list mo na ang link na iyan.",
-            "LINKINVALID": "Maglagay ng wastong address ng site",
-            "LINKNETWORKLABEL": "Network",
-            "LOADFAILED": "Nabigong i-load ang site",
-            "SECURESITE": "Ligtas ang koneksyon - wastong sertipiko ng SSL",
-            "INSECURESITE": "Hindi ligtas ang koneksyon",
-            "INVALIDCERTSITE": "Hindi pribado ang koneksyon - hindi wasto o hindi mapagkakatiwalaang sertipiko ng SSL"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "I-backup ang Wallet...",
             "SIGNMESSAGE": "Mensahe ng Pagpirma...",
             "VERIFYMESSAGE": "I-verify ang Mensahe...",
-            "LOCALE": "Wika...",
-            "RESTARTCORE": "I-restart ang Metrix Core",
-            "EXIT": "Lumabas",
             "OPTIONS": "Mga Pagpipilian...",
+            "LOCALE": "Wika...",
             "CURRENCIES": "Ipakita ang Pera...",
-            "ALTITUDEREFRESH": "I-refresh ang Data ng Altitude"
+            "RESTARTCORE": "I-restart ang Metrix Core",
+            "ALTITUDEREFRESH": "I-refresh ang Data ng Altitude",
+            "EXIT": "Lumabas"
         },
         "ENCRYPT": {
             "TITLE": "I-encrypt",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Kabuuang Balanse",
+        "SPENDABLEBALANCE": "Balanseng Magastos",
+        "PENDINGBALANCE": "Nakabinbing Balanse",
         "CANCELBUTTON": "Kanselahin",
         "DONEBUTTON": "Tapos na",
         "OKBUTTON": "Sige",
+        "ACCEPTBUTTON": "Tanggapin",
         "CLEARALLBUTTON": "I-clear Lahat",
         "ENTERACCOUNTLABEL": "Maglagay ng label para sa address na ito",
         "ENTERADDRESSLABEL": "Maglagay ng address ng Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Ayusin Ayon sa",
         "SEARCH": "Maghanap",
         "FEE": "Bayad",
-        "ACCEPTBUTTON": "Tanggapin",
         "CONFIRMED": "Nakumpirma",
         "UNCONFIRMED": "Hindi nakumpirma",
-        "PENDINGBALANCE": "Nakabinbing Balanse",
-        "SPENDABLEBALANCE": "Balanseng Magastos",
         "SAVEBUTTON": "I-save"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "I-restart ang Metrix Core...",
         "BOOTSTRAPPING": "Dina-download ang bootstrap...",
         "BOOTSTRAPEXTRACTING": "Kinukuha ang bootstrap...",
-        "TIMEREMAINING": "natitira:"
+        "TIMEREMAINING": "natitira:",
+        "DEVRPCOVERRIDEACTIVE": "Nakatakda ang isang developer RPC connection override (Options > Developer) at hindi ito tumutugon. I-clear ito upang kumonekta muli sa lokal na daemon nang normal.",
+        "DEVRPCOVERRIDECLEARBUTTON": "I-clear ang RPC Override at Muling Kumonekta"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Matagumpay na nagawa ang bagong account",
         "ADDRESSCOPIEDCLIPBOARD": "Nakopya ang address sa clipboard",
+        "COPIEDCLIPBOARD": "Kinopya sa clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Kinopya ang mga transaksyon sa clipboard",
         "EMPTYFIELDS": "Pakipunan ang lahat ng patlang",
         "NOUPDATE": "Walang available na update",
         "WALLETBACKEDUP": "Matagumpay ang pag-backup ng wallet",
+        "WALLETBACKUPFAILED": "Nabigo ang awtomatikong pag-backup ng wallet - suriin ang lokasyon ng iyong backup at magagamit na espasyo sa disk",
         "PASSPHRASEMISMATCH": "Hindi magkatugma ang mga passphrase na iyong inilagay",
         "CHECKINGUPDATE": "Sinusuri ang update...",
         "CHECKINGUPDATEFAILED": "Hindi masuri ang update. Suriin ang iyong network.",
+        "WALLETUPDATEDOWNLOADING": "Dina-download ang update...",
         "SENDINGEXCEEDSBALANCE": "Lumagpas ang halagang ipapadala mo sa napili mong balanse",
         "MISSINGCHANGEADDRESS": "Dapat mong tukuyin ang isang pagbabago ng address",
         "MISSINGDESTINATIONADDRESS": "Dapat kang tumukoy ng address na patutunguhan",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ine-encrypt ang wallet...",
         "CHANGINGPASSPHARASE": "Binabago ang passphrase...",
         "STARTINGMASTERNODE": "Sinisimulan ang masternode...",
+        "STOPPINGMASTERNODE": "Pinapatigil ang masternode...",
         "SENDINGTRANSACTION": "Ipinapadala ang transaksyon...",
         "SIGNINGMESSAGE": "Mensahe ng pagpirma...",
         "SIGNEDMESSAGE": "Mensahe na nilagdaan",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ina-unlock ang wallet...",
         "TRANSACTIONMISMATCH": "Error sa transaksyon. Pakisubukang muli.",
         "MINIMUMCONFIRMATIONS": "Ang lahat ng input ay nangangailangan ng kahit isang kumpirmasyon bago gumastos.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Kinopya ang mga transaksyon sa clipboard",
-        "STOPPINGMASTERNODE": "Pinapatigil ang masternode...",
         "FAILEDTOWRITECONFIG": "Nagkaroon ng problema sa pagsulat sa iyong metrix.conf file. Suriin kung umiiral ang file at kung may mga pahintulot sa pagsulat ang Altitude.",
         "NOPUBLICUP": "Walang nakitang Pampublikong IP address. Suriin ang iyong koneksyon sa internet at i-restart ang Altitude.",
         "CONFIGURINGLOCALMN": "Pag-configure ng lokal na Masternode...",
         "REPORTINGISSUE": "Kinukuha ang impormasyong diagnostic... Kokopyahin ang impormasyong ito sa iyong clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Dina-download ang update...",
-        "WALLETBACKUPFAILED": "Nabigo ang awtomatikong pag-backup ng wallet - suriin ang lokasyon ng iyong backup at magagamit na espasyo sa disk",
         "EXPLORERURLSAVED": "Na-save na ang URL ng Explorer",
         "EXPLORERURLRESET": "Ibinalik sa default ang URL ng Explorer",
         "EXPLORERURLINVALID": "Hindi iyon isang wastong http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Hindi maabot ang URL na iyon - tingnan ito at subukang muli"
+        "EXPLORERURLUNREACHABLE": "Hindi maabot ang URL na iyon - tingnan ito at subukang muli",
+        "DEVRPCHOSTSAVED": "Na-save ang RPC host",
+        "DEVRPCHOSTRESET": "Ibinalik sa default ang RPC host (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mga Natanggap na Barya",
+        "NEWTRANSACTION_TITLE_STAKE": "Natanggap na Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Natanggap ang Gantimpala ng Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Ilang segundo",
@@ -533,11 +587,6 @@
         "MONTHS": "mga buwan",
         "AYEAR": "Isang taon",
         "YEARS": "mga taon"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Mga Natanggap na Barya",
-        "NEWTRANSACTION_TITLE_STAKE": "Natanggap na Stake",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Natanggap ang Gantimpala ng Masternode"
     },
     "MONTH": {
         "JAN": "Enero",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Ang mga Gobernador ang may pananagutan sa pagboto sa mga buwanang badyet at mga pagbabago sa blockchain. Maaari kang maging isang Gobernador sa pamamagitan ng pagla-lock ng tamang collateral sa kontrata ng Pamamahala.",
                 "COLLATERAL": "Kinakailangang kolateral",
                 "ENROLL": "Mag-enroll",
+                "SELECTAGOVERNOR": "Pumili ng kwalipikadong address para sa gobernador",
+                "GOVERNORNOTSELECTED": "Walang napiling kwalipikadong address",
                 "CONFIRMENROLL": "Malapit ka nang magpatala bilang isang Gobernador. Magpapadala ito ng transaksyon na may kinakailangang collateral sa kontrata ng pamamahala. Maaari kang mag-unenroll anumang oras.",
                 "ISGOVERNORTITLE": "Isa kang aktibong Gobernador!",
                 "ISGOVERNORDETAIL1": "Ang mga gobernador ang may pananagutan sa pagboto sa mga buwanang badyet at mga pagbabago sa blockchain.",
                 "ISGOVERNORDETAIL2": "Para manatiling Gobernador, kakailanganin mong lumahok sa kahit 1 boto kada 30 araw.",
                 "ISGOVERNORDETAIL3": "Kung walang maibobotohan, maaari mong manu-manong ipagpatuloy ang iyong pagpapatala sa pamamagitan ng pagpapadala ng aktibong ping.",
+                "MYGOVERNORADDRESS": "Ang Aking Talumpati sa Gobernador",
                 "UNENROLL": "Mag-unenroll",
                 "PING": "Magpadala ng Aktibong Ping",
                 "LASTPINGTITLE": "Huling ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "mga araw",
                 "GOVERNORVOTEMATURITYHOURS": "oras",
                 "GOVERNORVOTEMATURITYSUFFIX": "hanggang sa maging ganap",
-                "MYGOVERNORADDRESS": "Ang Aking Talumpati sa Gobernador",
-                "SELECTAGOVERNOR": "Pumili ng kwalipikadong address para sa gobernador",
-                "GOVERNORNOTSELECTED": "Walang napiling kwalipikadong address",
                 "NOTFULLYSYNCEDTITLE": "Hindi magagamit ang katayuan bilang Gobernador",
                 "NOTFULLYSYNCEDDETAIL": "Makikita ang status ng iyong rehistrasyon bilang Governor kapag ang iyong blockchain ay ganap nang naka-sync.",
                 "DGPMIGRATIONTITLE": "Paglipat ng DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Matagumpay na nalikha ang iyong panukala",
             "ENROLLINGGOVERNOR": "Pagpapatala bilang Gobernador...",
             "ENROLLEDGOVERNOR": "Makukumpleto ang iyong pagpapatala kapag nakumpirma na ang iyong transaksyon",
-            "VOTINGONPROPOSAL": "Pagpapadala ng boto ng panukala",
-            "VOTEDONPROPOSAL": "Ang iyong boto ay bibilangin kapag nakumpirma na ang transaksyon.",
             "PINGINGGOVERNOR": "Nagpapadala ng ping...",
             "PINGEDGOVERNOR": "Matagumpay na naipadala ang ping. Ia-update ang iyong Gobernador kapag nakumpirma na ang transaksyon.",
+            "VOTINGONPROPOSAL": "Pagpapadala ng boto ng panukala",
+            "VOTEDONPROPOSAL": "Ang iyong boto ay bibilangin kapag nakumpirma na ang transaksyon.",
             "UNENROLLINGGOVERNOR": "Pag-alis ng Gobernador sa Pagtatala...",
             "UNENROLLEDGOVERNOR": "Naipadala na ang transaksyon. Aalisin sa pagkakatala ang iyong Gobernador kapag nakumpirma na ang transaksyon.",
             "GOVERNORNOTMATURE": "Hindi pa sapat ang edad ng inyong Gobernador para isagawa ang aksyong ito"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Bumili ng Metrix",
+                "SEARCH": "Kasaysayan"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ipadala Mo",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Kasaysayan ng Transaksyon",
                 "SEARCHBUTTON": "PAGHAHANAP",
+                "SEARCHPLACEHOLDER": "Ilagay ang address ng MRX o BTC",
                 "TRANSACTIONDATE": "Petsa",
                 "TRANSACTIONTYPE": "Uri ng TX",
                 "TRANSACTIONAMOUNT": "Halaga",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Nakumpirma",
                 "TRANSACTIONNOTCONFIRMED": "Hindi Nakumpirma",
                 "TRANSACTIONREFUNDED": "Na-refund - Mas mababa sa minimum",
-                "AVGSWAPPRICE": "Average na Presyo ng Pagpalit",
-                "SEARCHPLACEHOLDER": "Ilagay ang address ng MRX o BTC"
+                "AVGSWAPPRICE": "Average na Presyo ng Pagpalit"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Bumubuo ng Swap Address...",
             "ALREADYHAVEADDRESS": "Mayroon ka nang BTC address na nauugnay sa Metrix address na ito",
             "NOADDRESS": "Hindi ka naglagay ng Metrix address"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Bumili ng Metrix",
-                "SEARCH": "Kasaysayan"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "I-unhide",
                 "EMPTYTITLE": "Wala Pang Nahanap na mga Token",
                 "EMPTYDETAIL": "Awtomatikong sinusuri ng Altitude ang isang block explorer para sa mga MRC20 at MRC721 token na ipinadala sa iyong mga address, pagkatapos ay bineberipika ang lahat nang live laban sa iyong sariling node. Maaari ka ring magdagdag ng token nang manu-mano kung alam mo ang address ng kontrata nito.",
+                "EMPTYDETAILCHECKINGDISABLED": "Naka-off ang awtomatikong pagsusuri ng token, kaya hindi tinitingnan ang iyong mga address para sa mga token. I-on itong muli sa itaas, o manu-manong magdagdag ng token kung alam mo ang address ng kontrata nito.",
                 "HIDDENTITLE": "Mga Nakatagong Token",
                 "CONTEXTMENUHIDE": "Itago ang Token",
                 "ITEMSSUFFIX": "bagay",
-                "NONENUMERABLETOOLTIP": "Hindi sinusuportahan ng koleksyong ito ang paglilista ng mga indibidwal na item - ipinapakita na lang kung ilan ang hawak mo."
+                "NONENUMERABLETOOLTIP": "Hindi sinusuportahan ng koleksyong ito ang paglilista ng mga indibidwal na item - ipinapakita na lang kung ilan ang hawak mo.",
+                "CHECKINGENABLED": "Pagsusuri",
+                "CHECKINGDISABLED": "Pag-check Off",
+                "CHECKINGENABLEDTOOLTIP": "Naka-on ang pagsusuri ng token - Pana-panahong sinusuri ng Altitude ang iyong mga address para sa mga token at nire-refresh ang mga balanse. I-click para i-off.",
+                "CHECKINGDISABLEDTOOLTIP": "Naka-off ang token checking - i-click para i-on muli.",
+                "CHECKINGDISABLEDNOTICE": "Naka-off ang awtomatikong pagsusuri ng token. Hindi ini-scan ang iyong mga address para sa mga token at hindi maa-update ang mga balanse. Maaari ka pa ring manu-manong magdagdag ng token."
             },
             "ADDTOKEN": {
                 "TITLE": "Magdagdag ng Token",

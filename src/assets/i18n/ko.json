@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "계정 생성",
             "HIDEEMPTYACCOUNTS": "이름 없는 빈 계정 숨기기"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "개요",
+            "TRANSACTIONSTAB": "업무",
+            "ADDRESSTABS": "구애"
+        },
         "SEND": {
             "ADDRECIPIENT": "수신자 추가",
             "SEND": "보내다",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "날짜",
             "TABLECOLUMNS_CONFIRMS": "확인",
             "ALL_SELECTUNSELECT": "모두 토글",
+            "TREEMODE": "트리 모드",
+            "LISTMODE": "목록 모드",
             "SENDAVAILABLE": "사용 가능한 잔액을 사용하세요",
             "INPUTLOCKED": "입력란이 잠겨 있습니다. 사용하려면 잠금을 해제해야 합니다.",
             "CONTEXTMENULOCKINPUT": "잠금 입력",
@@ -38,10 +45,48 @@
             "AFTERFEE": "수수료 이후",
             "QUANTITY": "수량",
             "BYTES": "바이트",
-            "TREEMODE": "트리 모드",
-            "LISTMODE": "목록 모드",
             "ALERTFEECHANGETITLE": "수수료 변경",
             "ALERTFEECHANGECONTENT": "실제 거래 수수료가 예상보다 높습니다. 새로운 수수료를 확인해 주십시오."
+        },
+        "CREATECONTRACT": {
+            "TITLE": "계약서 작성",
+            "INFO": "컴파일된 바이트코드를 제출하여 스마트 계약을 네트워크에 배포하세요. 이는 핵심 체인 기능이므로 배포 전에 바이트코드와 가스 설정을 다시 한번 확인하십시오. 배포 후에는 되돌릴 수 없습니다.",
+            "FROM": "에서",
+            "BYTECODE": "바이트코드",
+            "BYTECODEPLACEHOLDER": "컴파일된 계약 바이트코드(16진수)를 붙여넣으세요.",
+            "INVALIDBYTECODE": "바이트코드는 문자 수가 짝수인 유효한 16진수 문자열(0-9, a-f)이어야 합니다.",
+            "GASLIMIT": "가스 제한",
+            "GASLIMITRANGE": "범위",
+            "GASPRICE": "가스 가격 (가스 1단위당 MRX)",
+            "GASPRICEMIN": "최저한의",
+            "ESTIMATEDMAXCOST": "예상 최대 비용",
+            "DEPLOYBUTTON": "배포 계약",
+            "INCOMPLETEFORM": "발신자 주소를 선택하고, 유효한 바이트코드를 입력하고, 유효한 가스 한도/가격을 설정하십시오.",
+            "HIGHGASPRICETITLE": "높은 가스 가격",
+            "HIGHGASPRICEINFO": "설정하신 가스 가격이 비정상적으로 높습니다. 이 배포에는 최대 다음과 같은 비용이 발생할 수 있습니다.",
+            "DEPLOYING": "계약 배포 중...",
+            "DEPLOYED": "계약 배포 제출됨",
+            "RESULTTITLE": "배포 결과",
+            "STATUS": "상태",
+            "STATUSPENDING": "확인 대기 중...",
+            "STATUSCONFIRMED": "성공적으로 배포되었습니다",
+            "STATUSFAILED": "배포 실패",
+            "TXID": "거래 ID",
+            "SENDER": "보내는 사람",
+            "CONTRACTADDRESS": "계약 주소",
+            "GASUSED": "가스 사용",
+            "DONEBUTTON": "완료",
+            "DEPLOYANOTHERBUTTON": "다른 배포"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "업무",
+            "COPYBLOCKHASH": "블록 해시 복사",
+            "COPYTXID": "거래 ID 복사",
+            "COPYACCOUNT": "계정 이름 복사",
+            "COPYADDRESS": "주소 복사",
+            "COPYAMOUNT": "복사 금액",
+            "COPTBLOCKINDEX": "복사 블록 인덱스",
+            "EXPLORER": "블록 탐색기에서 열기"
         },
         "STAKING": {
             "UNLOCK": "스테이킹을 위한 잠금 해제",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "주소",
             "ENABLED": "활성화됨",
-            "STARTBUTTON": "로컬에서 시작하세요",
-            "STARTALIASBUTTON": "시작 별칭",
-            "STARTALLBUTTON": "모두 시작",
             "NOMASTERNODES": "마스터노드가 없습니다.",
             "NOMNOUTPUTS": "마스터노드 출력값을 찾을 수 없습니다. 로컬 마스터노드를 실행하려면 2, 5, 2,500만, 5,000만 또는 1억 개의 코인을 마스터노드 주소로 보내고 15번의 확인을 기다리세요.",
+            "STARTBUTTON": "로컬에서 시작하세요",
             "STOPBUTTON": "지역 상점 이용하기",
+            "STARTALIASBUTTON": "시작 별칭",
             "STOPALIASBUTTON": "스톱 앨리어스",
+            "STARTALLBUTTON": "모두 시작",
             "ADDREMOTE": "원격 마스터노드 추가",
             "REMOVEMN": "마스터노드 제거",
             "ADDLOCAL": "로컬 마스터노드 설정",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "일반적인",
                 "COREVERSION": "코어 버전",
+                "ALTITUDEVERSION": "고도 버전",
                 "PROTOCOLVERSION": "프로토콜 버전",
                 "WALLETVERSION": "Wallet.dat 버전",
                 "NETWORKTITLE": "회로망",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "마스터노드 수",
                 "BLOCKCHAINTITLE": "블록체인",
                 "NUMBERBLOCKS": "현재 블록 수",
-                "BESTBLOCKTTIME": "마지막 블록 시간",
-                "ALTITUDEVERSION": "고도 버전"
+                "BESTBLOCKTTIME": "마지막 블록 시간"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC 콘솔에 오신 것을 환영합니다. 사용 가능한 명령 목록을 보려면 help를 입력하십시오.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "언어를 선택하세요"
         },
-        "TRANSACTIONS": {
-            "TITLE": "업무",
-            "COPYBLOCKHASH": "블록 해시 복사",
-            "COPYTXID": "거래 ID 복사",
-            "COPYACCOUNT": "계정 이름 복사",
-            "COPYADDRESS": "주소 복사",
-            "COPYAMOUNT": "복사 금액",
-            "COPTBLOCKINDEX": "복사 블록 인덱스",
-            "EXPLORER": "블록 탐색기에서 열기"
+        "CURRENCY": {
+            "TITLE": "표시 통화를 선택하세요"
         },
         "EXPLORER": {
             "TITLE": "블록 탐색기",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "회로망",
             "WINDOTAB": "창문",
+            "BACKUPTAB": "지원",
+            "EXPLORERTAB": "탐침",
+            "DEVELOPERTAB": "개발자",
             "NETWORK": {
                 "PROXY": "SOCKS5 프록시를 통해 연결",
                 "PROXYIP": "프록시 IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "닫기 시 최소화",
                 "BEHAVIOURTITLE": "시스템 트레이 및 창 동작"
             },
-            "BACKUPTAB": "지원",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "자동 백업",
                 "ENABLED": "예약된 시간에 자동으로 wallet.dat 파일을 백업합니다.",
                 "ENABLEDINFO": "지갑 파일의 최신 백업본을 정해진 일정에 따라 생성하므로 문제가 발생하더라도 항상 최신 사본을 사용할 수 있습니다.",
+                "INTERVALLABEL": "(며칠마다) 백업하세요",
                 "LASTBACKUP": "마지막 백업:",
                 "NEVERBACKEDUP": "아직 자동 백업이 이루어지지 않았습니다.",
                 "BACKUPNOWBUTTON": "지금 백업하세요",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "기본값으로 재설정",
                 "PRUNETITLE": "백업 기록",
                 "PRUNEINFO": "이 폴더가 무한정 커지지 않도록 오래된 자동 백업 파일은 삭제됩니다. 가장 최근의 백업 파일만 아래에 유지됩니다.",
-                "KEEPCOUNTLABEL": "마지막을 유지하세요",
-                "INTERVALLABEL": "(며칠마다) 백업하세요"
+                "KEEPCOUNTLABEL": "마지막을 유지하세요"
             },
-            "EXPLORERTAB": "탐침",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "블록 탐색기",
                 "BLOCKEXPLORERINFO": "해당 사이트는 블록 탐색기에서 거래를 볼 때 열립니다(예: 거래를 마우스 오른쪽 버튼으로 클릭 > 탐색기에서 보기).",
@@ -259,25 +298,31 @@
                 "MAINNET": "메인넷",
                 "TESTNET": "테스트넷",
                 "REGTEST": "레그테스트"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "개발자 모드",
+                "DEVMODEINFO": "기본적으로 비활성화되어 있으며 개발자 전용입니다. 이 기능을 활성화하면 RPC 연결을 재정의하는 옵션이 표시됩니다. 일반 사용자는 이 기능을 비활성화 상태로 두는 것이 좋습니다.",
+                "DEVMODELABEL": "개발자 모드 활성화",
+                "WARNING": "이 설정은 개발 목적으로만 사용됩니다. 설정을 변경하면 지갑이 데몬에 전혀 연결되지 않을 수 있으므로, 무엇을 하고 있는지 정확히 알고 있는 경우에만 사용하십시오.",
+                "RPCHOSTTITLE": "RPC 연결",
+                "RPCHOSTINFO": "기본적으로 Altitude는 이 시스템(127.0.0.1)에서 자체적으로 관리하는 데몬에 연결합니다. 이 설정을 재정의하면 로컬에서 regtest 인스턴스를 실행할 필요 없이 다른 데몬(예: 원격 regtest 인스턴스)에 연결할 수 있습니다. 연결에 성공하면 Altitude는 자체 로컬 데몬을 다운로드하거나 시작하지 않습니다. 대상 데몬의 rpcallowip 설정이 이 연결을 허용해야 하며, 아래의 rpcuser/rpcpassword 값은 해당 데몬의 구성과 일치해야 합니다. 이 설정은 즉시 적용되며, 재시작이 필요하지 않습니다.",
+                "RPCHOSTLABEL": "RPC 호스트",
+                "RPCPORTLABEL": "RPC 포트",
+                "RPCUSERLABEL": "RPC 사용자 이름",
+                "RPCPASSWORDLABEL": "RPC 비밀번호"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "개요",
-            "TRANSACTIONSTAB": "업무",
-            "ADDRESSTABS": "구애"
-        },
-        "CURRENCY": {
-            "TITLE": "표시 통화를 선택하세요"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "계기반",
             "SEND": "보내다",
+            "CREATECONTRACT": "계약서 작성",
             "RECEIVE": "받다",
             "TRANSACTIONS": "업무",
             "STAKING": "말뚝 박기",
             "MASTERNODES": "마스터노드",
+            "EXPLORER": "블록 탐색기",
             "SYNC": {
                 "CONNECTING": "연결 중",
                 "NOBLOCKS": "블록을 기다리는 중",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "현재 지갑은 스테이킹을 지원하지 않습니다.",
                 "MASTERNODEON": "마스터노드가 현재 실행 중입니다.",
                 "MASTERNODEOFF": "마스터노드가 현재 실행 중이 아닙니다."
-            },
-            "EXPLORER": "블록 탐색기"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "웹3 사이트 주소를 입력하세요",
+            "GOBUTTON": "가다",
+            "QUICKLAUNCH": "빠른 실행",
+            "DEVTOOLS": "오픈 개발자 도구",
+            "ADDLINK": "링크 추가",
+            "LINKNAMEPLACEHOLDER": "이름",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "구하다",
+            "CANCEL": "취소",
+            "REMOVE": "제거하다",
+            "REMOVECONFIRM": "이 바로가기 링크를 삭제하시겠습니까?",
+            "LINKEXISTS": "해당 링크는 이미 빠른 실행 목록에 있습니다.",
+            "LINKINVALID": "유효한 사이트 주소를 입력하세요",
+            "LINKNETWORKLABEL": "회로망",
+            "LOADFAILED": "사이트를 불러오는 데 실패했습니다.",
+            "SECURESITE": "연결이 안전합니다 - 유효한 SSL 인증서가 있습니다",
+            "INSECURESITE": "연결이 안전하지 않습니다.",
+            "INVALIDCERTSITE": "연결이 비공개 상태가 아닙니다. SSL 인증서가 유효하지 않거나 신뢰할 수 없습니다."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "지갑 암호를 입력하세요",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core 업데이트가 있습니다. 지금 설치하시겠습니까?",
             "WALLETUPDATETITLE": "고도 업데이트 가능",
             "WALLETUPDATEINFO": "Altitude 업데이트가 나왔습니다. 지금 다운로드하시겠습니까?",
+            "WALLETUPDATEREADYTITLE": "고도 업데이트 준비 완료",
+            "WALLETUPDATEREADYINFO": "업데이트 다운로드가 완료되었습니다. 지금 Altitude를 재시작하여 설치하시겠습니까?",
+            "WALLETUPDATERESTARTBUTTON": "재시작 및 설치",
+            "WALLETUPDATELATERBUTTON": "나중에",
             "CLIENTUPDATEBUTTON": "업데이트",
             "CLIENTUPDATECANCELBUTTON": "업데이트하지 마세요",
             "CLIENTUPDATESKIPBUTTON": "이번 업데이트는 건너뛰세요",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "기존에 백업해 둔 지갑 파일은 새로 생성된 암호화된 지갑 파일로 덮어써야 합니다. 보안상의 이유로, 암호화되지 않은 기존 지갑 파일 백업은 새 암호화된 지갑을 사용하기 시작하는 즉시 더 이상 사용할 수 없게 됩니다.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core가 예기치 않게 중단되었습니다.",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core에 문제가 발생하여 종료되었습니다. debug.log 파일을 확인하여 문제를 파악하는 것이 좋습니다.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix 코어 통신 오류",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core와의 통신에 문제가 발생했습니다. debug.log 파일을 확인하여 문제를 파악하는 것이 좋습니다.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core 부트스트랩 실패",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core 부트스트래핑에 문제가 발생했습니다. Altitude 로그 파일에서 문제를 확인하는 것이 좋습니다.",
+            "BOOTSTRAPOFFERTITLE": "지갑이 상당히 구식입니다",
+            "BOOTSTRAPOFFERINFO": "최근 부트스트랩 기능이 제공되어 Metrix Core를 빠르게 최신 상태로 업데이트할 수 있습니다. 일반 동기화를 진행할 경우, 지갑이 누락된 모든 블록을 다운로드하고 검증해야 하므로 완료하는 데 며칠이 걸릴 수 있습니다.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap 다운로드",
+            "BOOTSTRAPOFFERCANCEL": "정상 동기화 계속",
+            "BOOTSTRAPSPACEINFO": "부트스트랩을 다운로드하고 압축을 풀기에 디스크 공간이 부족합니다. 필요 공간: {required}, 사용 가능 공간: {free}. 공간을 확보하고 다시 시도하세요.",
+            "STARTUPFAILEDTITLE": "Metrix 코어 시작 실패",
+            "STARTUPFAILEDINFO": "Metrix Core 시작 중 오류가 발생했습니다. Altitude 로그 파일에서 문제를 확인하는 것이 좋습니다.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "복구 도구",
             "CLIENTINVALIDCONFIGTITLE": "잘못된 metrix.conf 구성입니다.",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf 파일의 마스터노드 설정이 잘못되어 Metrix Core가 즉시 종료됩니다. 해당 파일을 확인해 주세요.",
             "ADDREMOTEMNTITLE": "원격 마스터노드 추가",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "마스터노드 개인 키",
             "ADDREMOTEMNTXHASH": "마스터노드 트랜잭션 해시",
             "ADDREMOTEMNTXINDEX": "마스터노드 거래 인덱스",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core 부트스트랩 실패",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core 부트스트래핑에 문제가 발생했습니다. Altitude 로그 파일에서 문제를 확인하는 것이 좋습니다.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "복구 도구",
-            "STARTUPFAILEDTITLE": "Metrix 코어 시작 실패",
-            "STARTUPFAILEDINFO": "Metrix Core 시작 중 오류가 발생했습니다. Altitude 로그 파일에서 문제를 확인하는 것이 좋습니다.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix 코어 통신 오류",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core와의 통신에 문제가 발생했습니다. debug.log 파일을 확인하여 문제를 파악하는 것이 좋습니다.",
             "UNENROLLGOVERNORTITLE": "주지사 사퇴 확인",
             "UNENROLLGOVERNORCONTENT": "정말로 거버너 자격을 해제하시겠습니까? 자격 해제 시 더 이상 체인 거버넌스 투표에 참여할 수 없습니다.",
-            "WALLETUPDATEREADYTITLE": "고도 업데이트 준비 완료",
-            "WALLETUPDATEREADYINFO": "업데이트 다운로드가 완료되었습니다. 지금 Altitude를 재시작하여 설치하시겠습니까?",
-            "WALLETUPDATERESTARTBUTTON": "재시작 및 설치",
-            "WALLETUPDATELATERBUTTON": "나중에",
             "DAPPCONNECTTITLE": "사이트에 연결",
             "DAPPCONNECTINFO": "이 사이트는 사용자의 지갑에 연결하여 주소와 잔액을 확인하려고 합니다.",
             "DAPPCONNECTBUTTON": "연결하다",
+            "DAPPCONNECTADDRESSLABEL": "주소",
+            "DAPPAPPROVEBUTTON": "승인하다",
             "DAPPREJECTBUTTON": "거부하다",
             "DAPPSENDTITLE": "계약 거래 요청",
             "DAPPSENDINFO": "이 사이트에서 귀하의 지갑으로 계약 거래를 전송하도록 요청하고 있습니다.",
-            "DAPPSIGNTITLE": "메시지 요청",
-            "DAPPSIGNINFO": "이 사이트에서 지갑 주소를 사용하여 메시지에 서명하도록 요청하고 있습니다.",
-            "DAPPNOTREADY": "아직 사이트에 연결할 수 없습니다. Metrix Core가 시작 중입니다.",
-            "DAPPNOWALLET": "사이트에 연결할 수 없습니다. 지갑 주소를 사용할 수 없습니다.",
-            "DAPPAPPROVEBUTTON": "승인하다",
-            "DAPPCONNECTADDRESSLABEL": "주소",
             "DAPPSENDSITELABEL": "대지",
             "DAPPSENDCONTRACTLABEL": "계약 주소",
             "DAPPSENDAMOUNTLABEL": "양",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "최대 네트워크 수수료",
             "DAPPSENDMAXTOTALLABEL": "최대 합계",
             "DAPPSENDDATALABEL": "계약 데이터",
+            "DAPPSIGNTITLE": "메시지 요청",
+            "DAPPSIGNINFO": "이 사이트에서 지갑 주소를 사용하여 메시지에 서명하도록 요청하고 있습니다.",
             "DAPPSIGNMESSAGELABEL": "메시지",
-            "BOOTSTRAPOFFERTITLE": "지갑이 상당히 구식입니다",
-            "BOOTSTRAPOFFERINFO": "최근 부트스트랩 기능이 제공되어 Metrix Core를 빠르게 최신 상태로 업데이트할 수 있습니다. 일반 동기화를 진행할 경우, 지갑이 누락된 모든 블록을 다운로드하고 검증해야 하므로 완료하는 데 며칠이 걸릴 수 있습니다.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap 다운로드",
-            "BOOTSTRAPOFFERCANCEL": "정상 동기화 계속",
-            "BOOTSTRAPSPACEINFO": "부트스트랩을 다운로드하고 압축을 풀기에 디스크 공간이 부족합니다. 필요 공간: {required}, 사용 가능 공간: {free}. 공간을 확보하고 다시 시도하세요."
+            "DAPPNOTREADY": "아직 사이트에 연결할 수 없습니다. Metrix Core가 시작 중입니다.",
+            "DAPPNOWALLET": "사이트에 연결할 수 없습니다. 지갑 주소를 사용할 수 없습니다."
         },
         "ADDRESSBOOK": {
             "TITLE": "주소록",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "현재 네트워크"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "웹3 사이트 주소를 입력하세요",
-            "GOBUTTON": "가다",
-            "QUICKLAUNCH": "빠른 실행",
-            "DEVTOOLS": "오픈 개발자 도구",
-            "ADDLINK": "링크 추가",
-            "LINKNAMEPLACEHOLDER": "이름",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "구하다",
-            "CANCEL": "취소",
-            "REMOVE": "제거하다",
-            "REMOVECONFIRM": "이 바로가기 링크를 삭제하시겠습니까?",
-            "LINKEXISTS": "해당 링크는 이미 빠른 실행 목록에 있습니다.",
-            "LINKINVALID": "유효한 사이트 주소를 입력하세요",
-            "LINKNETWORKLABEL": "회로망",
-            "LOADFAILED": "사이트를 불러오는 데 실패했습니다.",
-            "SECURESITE": "연결이 안전합니다 - 유효한 SSL 인증서가 있습니다",
-            "INSECURESITE": "연결이 안전하지 않습니다.",
-            "INVALIDCERTSITE": "연결이 비공개 상태가 아닙니다. SSL 인증서가 유효하지 않거나 신뢰할 수 없습니다."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "지갑 백업...",
             "SIGNMESSAGE": "메시지 표시...",
             "VERIFYMESSAGE": "메시지 확인...",
-            "LOCALE": "언어...",
-            "RESTARTCORE": "Metrix Core 재시작",
-            "EXIT": "출구",
             "OPTIONS": "옵션...",
+            "LOCALE": "언어...",
             "CURRENCIES": "통화 표시...",
-            "ALTITUDEREFRESH": "고도 데이터 새로 고침"
+            "RESTARTCORE": "Metrix Core 재시작",
+            "ALTITUDEREFRESH": "고도 데이터 새로 고침",
+            "EXIT": "출구"
         },
         "ENCRYPT": {
             "TITLE": "암호화",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "총 잔액",
+        "SPENDABLEBALANCE": "사용 가능 잔액",
+        "PENDINGBALANCE": "미결제 잔액",
         "CANCELBUTTON": "취소",
         "DONEBUTTON": "완료",
         "OKBUTTON": "좋아요",
+        "ACCEPTBUTTON": "수용하다",
         "CLEARALLBUTTON": "모두 지우기",
         "ENTERACCOUNTLABEL": "이 주소에 붙일 라벨을 입력하세요",
         "ENTERADDRESSLABEL": "Metrix 주소를 입력하세요",
@@ -464,11 +511,8 @@
         "SORTBY": "정렬 기준",
         "SEARCH": "찾다",
         "FEE": "요금",
-        "ACCEPTBUTTON": "수용하다",
         "CONFIRMED": "확인됨",
         "UNCONFIRMED": "미확인",
-        "PENDINGBALANCE": "미결제 잔액",
-        "SPENDABLEBALANCE": "사용 가능 잔액",
         "SAVEBUTTON": "구하다"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core를 재시작하는 중...",
         "BOOTSTRAPPING": "부트스트랩 다운로드 중...",
         "BOOTSTRAPEXTRACTING": "부트스트랩 추출 중...",
-        "TIMEREMAINING": "남은 것:"
+        "TIMEREMAINING": "남은 것:",
+        "DEVRPCOVERRIDEACTIVE": "개발자 RPC 연결 재정의(옵션 > 개발자)가 설정되어 있지만 응답하지 않습니다. 해당 설정을 해제하여 로컬 데몬에 정상적으로 다시 연결하십시오.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC 재정의를 지우고 다시 연결하세요."
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "새 계정이 성공적으로 생성되었습니다.",
         "ADDRESSCOPIEDCLIPBOARD": "주소가 클립보드에 복사되었습니다.",
+        "COPIEDCLIPBOARD": "클립보드에 복사됨",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "거래 내역이 클립보드에 복사되었습니다.",
         "EMPTYFIELDS": "모든 항목을 입력해 주세요.",
         "NOUPDATE": "업데이트할 내용이 없습니다.",
         "WALLETBACKEDUP": "지갑 백업이 완료되었습니다.",
+        "WALLETBACKUPFAILED": "지갑 자동 백업에 실패했습니다. 백업 위치와 사용 가능한 디스크 공간을 확인하세요.",
         "PASSPHRASEMISMATCH": "입력하신 암호가 일치하지 않습니다.",
         "CHECKINGUPDATE": "업데이트 확인 중...",
         "CHECKINGUPDATEFAILED": "업데이트를 확인할 수 없습니다. 네트워크 상태를 확인하세요.",
+        "WALLETUPDATEDOWNLOADING": "업데이트 다운로드 중...",
         "SENDINGEXCEEDSBALANCE": "송금하려는 금액이 설정하신 잔액을 초과합니다.",
         "MISSINGCHANGEADDRESS": "변경 주소를 반드시 지정해야 합니다.",
         "MISSINGDESTINATIONADDRESS": "목적지 주소를 지정해야 합니다.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "지갑 암호화 중...",
         "CHANGINGPASSPHARASE": "암호를 변경하는 중...",
         "STARTINGMASTERNODE": "마스터노드를 시작하는 중...",
+        "STOPPINGMASTERNODE": "마스터노드를 중지하는 중...",
         "SENDINGTRANSACTION": "거래 전송 중...",
         "SIGNINGMESSAGE": "서명 메시지...",
         "SIGNEDMESSAGE": "메시지 서명됨",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "지갑 잠금 해제 중...",
         "TRANSACTIONMISMATCH": "거래 오류가 발생했습니다. 다시 시도해 주세요.",
         "MINIMUMCONFIRMATIONS": "모든 입력 항목은 지출 전에 최소 1회 확인이 필요합니다.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "거래 내역이 클립보드에 복사되었습니다.",
-        "STOPPINGMASTERNODE": "마스터노드를 중지하는 중...",
         "FAILEDTOWRITECONFIG": "metrix.conf 파일에 쓰기 작업이 진행 중 문제가 발생했습니다. 파일이 존재하는지, 그리고 Altitude에 쓰기 권한이 있는지 확인하십시오.",
         "NOPUBLICUP": "공용 IP 주소를 찾을 수 없습니다. 인터넷 연결을 확인하고 Altitude를 다시 시작하십시오.",
         "CONFIGURINGLOCALMN": "로컬 마스터노드를 구성 중...",
         "REPORTINGISSUE": "진단 정보를 가져오는 중... 이 정보는 클립보드에 복사됩니다.",
-        "WALLETUPDATEDOWNLOADING": "업데이트 다운로드 중...",
-        "WALLETBACKUPFAILED": "지갑 자동 백업에 실패했습니다. 백업 위치와 사용 가능한 디스크 공간을 확인하세요.",
         "EXPLORERURLSAVED": "탐색기 URL이 저장되었습니다.",
         "EXPLORERURLRESET": "탐색기 URL이 기본값으로 되돌아갔습니다.",
         "EXPLORERURLINVALID": "그것은 유효한 http(s) URL이 아닙니다.",
-        "EXPLORERURLUNREACHABLE": "해당 URL에 연결할 수 없습니다. 확인 후 다시 시도해 주세요."
+        "EXPLORERURLUNREACHABLE": "해당 URL에 연결할 수 없습니다. 확인 후 다시 시도해 주세요.",
+        "DEVRPCHOSTSAVED": "RPC 호스트 저장됨",
+        "DEVRPCHOSTRESET": "RPC 호스트가 기본값(127.0.0.1)으로 되돌아갔습니다."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "받은 코인",
+        "NEWTRANSACTION_TITLE_STAKE": "수령한 지분",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "마스터노드 보상을 받았습니다"
     },
     "TIME": {
         "AFEWSECONDS": "몇 초",
@@ -533,11 +587,6 @@
         "MONTHS": "개월",
         "AYEAR": "1년",
         "YEARS": "연령"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "받은 코인",
-        "NEWTRANSACTION_TITLE_STAKE": "수령한 지분",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "마스터노드 보상을 받았습니다"
     },
     "MONTH": {
         "JAN": "1월",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "거버너는 월별 예산 및 블록체인 변경 사항에 대한 투표를 담당합니다. 거버너가 되려면 거버넌스 계약에 적절한 담보를 예치해야 합니다.",
                 "COLLATERAL": "필수 담보",
                 "ENROLL": "싸다",
+                "SELECTAGOVERNOR": "적격한 주지사 주소를 선택하세요",
+                "GOVERNORNOTSELECTED": "적합한 주소가 선택되지 않았습니다.",
                 "CONFIRMENROLL": "이제 거버너로 등록하시려고 합니다. 이 과정을 통해 필요한 담보금이 거버넌스 계약으로 전송됩니다. 언제든지 등록을 취소할 수 있습니다.",
                 "ISGOVERNORTITLE": "당신은 적극적인 주지사님이십니다!",
                 "ISGOVERNORDETAIL1": "주지사들은 월별 예산안과 블록체인 변경 사항에 대한 투표를 담당합니다.",
                 "ISGOVERNORDETAIL2": "주지사직을 유지하려면 30일마다 최소 한 번 이상 투표에 참여해야 합니다.",
                 "ISGOVERNORDETAIL3": "투표할 항목이 없는 경우, 활성 핑을 전송하여 수동으로 등록을 계속할 수 있습니다.",
+                "MYGOVERNORADDRESS": "주지사 연설",
                 "UNENROLL": "등록 취소",
                 "PING": "활성 핑 전송",
                 "LASTPINGTITLE": "마지막 핑",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "날",
                 "GOVERNORVOTEMATURITYHOURS": "시간",
                 "GOVERNORVOTEMATURITYSUFFIX": "성숙할 때까지",
-                "MYGOVERNORADDRESS": "주지사 연설",
-                "SELECTAGOVERNOR": "적격한 주지사 주소를 선택하세요",
-                "GOVERNORNOTSELECTED": "적합한 주소가 선택되지 않았습니다.",
                 "NOTFULLYSYNCEDTITLE": "주지사 상태를 확인할 수 없습니다.",
                 "NOTFULLYSYNCEDDETAIL": "블록체인이 완전히 동기화되면 거버너 등록 상태를 확인할 수 있습니다.",
                 "DGPMIGRATIONTITLE": "DGP 마이그레이션",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "제안서가 성공적으로 생성되었습니다.",
             "ENROLLINGGOVERNOR": "주지사 후보로 등록...",
             "ENROLLEDGOVERNOR": "결제가 확인되면 등록이 완료됩니다.",
-            "VOTINGONPROPOSAL": "제안 투표 보내기",
-            "VOTEDONPROPOSAL": "거래가 확인되면 귀하의 투표가 집계됩니다.",
             "PINGINGGOVERNOR": "핑을 보내는 중...",
             "PINGEDGOVERNOR": "핑 전송이 성공적으로 완료되었습니다. 거래가 확인되면 담당 관리자에게 업데이트될 예정입니다.",
+            "VOTINGONPROPOSAL": "제안 투표 보내기",
+            "VOTEDONPROPOSAL": "거래가 확인되면 귀하의 투표가 집계됩니다.",
             "UNENROLLINGGOVERNOR": "주지사 자격 박탈...",
             "UNENROLLEDGOVERNOR": "거래가 전송되었습니다. 거래가 확인되면 귀하의 주지사는 등록 해제됩니다.",
             "GOVERNORNOTMATURE": "당신의 주지사는 아직 이 일을 수행할 만큼 성숙하지 못했습니다."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "메트릭스 구매하기",
+                "SEARCH": "역사"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "당신이 보내는",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "거래 내역",
                 "SEARCHBUTTON": "찾다",
+                "SEARCHPLACEHOLDER": "MRX 또는 BTC 주소를 입력하세요",
                 "TRANSACTIONDATE": "날짜",
                 "TRANSACTIONTYPE": "TX 유형",
                 "TRANSACTIONAMOUNT": "양",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "확인됨",
                 "TRANSACTIONNOTCONFIRMED": "아직 확인되지 않음",
                 "TRANSACTIONREFUNDED": "환불됨 - 최소 금액 미달",
-                "AVGSWAPPRICE": "평균 스왑 가격",
-                "SEARCHPLACEHOLDER": "MRX 또는 BTC 주소를 입력하세요"
+                "AVGSWAPPRICE": "평균 스왑 가격"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "스왑 주소 생성 중...",
             "ALREADYHAVEADDRESS": "이미 이 Metrix 주소와 연결된 BTC 주소가 있습니다.",
             "NOADDRESS": "Metrix 주소를 입력하지 않으셨습니다."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "메트릭스 구매하기",
-                "SEARCH": "역사"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "숨기기 해제",
                 "EMPTYTITLE": "토큰을 아직 찾지 못했습니다.",
                 "EMPTYDETAIL": "Altitude는 자동으로 블록 탐색기에서 사용자 주소로 전송된 MRC20 및 MRC721 토큰을 확인한 후, 사용자 노드를 통해 모든 토큰을 실시간으로 검증합니다. 또한, 토큰의 컨트랙트 주소를 알고 있다면 수동으로 토큰을 추가할 수도 있습니다.",
+                "EMPTYDETAILCHECKINGDISABLED": "자동 토큰 확인 기능이 꺼져 있으므로 주소에서 토큰을 확인하지 않습니다. 위에서 기능을 다시 켜거나, 계약 주소를 알고 있다면 토큰을 수동으로 추가하세요.",
                 "HIDDENTITLE": "숨겨진 토큰",
                 "CONTEXTMENUHIDE": "토큰 숨기기",
                 "ITEMSSUFFIX": "품목(들)",
-                "NONENUMERABLETOOLTIP": "이 컬렉션은 개별 품목 목록을 지원하지 않고, 대신 보유하고 있는 수량을 보여줍니다."
+                "NONENUMERABLETOOLTIP": "이 컬렉션은 개별 품목 목록을 지원하지 않고, 대신 보유하고 있는 수량을 보여줍니다.",
+                "CHECKINGENABLED": "확인 중",
+                "CHECKINGDISABLED": "체크 표시",
+                "CHECKINGENABLEDTOOLTIP": "토큰 확인 기능이 켜져 있습니다. Altitude는 주기적으로 사용자의 주소에서 토큰을 확인하고 잔액을 갱신합니다. 클릭하여 끌 수 있습니다.",
+                "CHECKINGDISABLEDTOOLTIP": "토큰 확인 기능이 꺼져 있습니다. 클릭하여 다시 켜세요.",
+                "CHECKINGDISABLEDNOTICE": "자동 토큰 확인 기능이 꺼져 있습니다. 토큰 확인이 이루어지지 않으므로 잔액이 업데이트되지 않습니다. 토큰은 수동으로 추가할 수 있습니다."
             },
             "ADDTOKEN": {
                 "TITLE": "토큰 추가",

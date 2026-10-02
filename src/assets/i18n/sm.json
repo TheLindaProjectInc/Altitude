@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Fausia se Teugatupe",
             "HIDEEMPTYACCOUNTS": "Natia Teugatupe Gaogao e Le'i Igoaina"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Aotelega",
+            "TRANSACTIONSTAB": "Fefa'ataua'iga",
+            "ADDRESSTABS": "Tuatusi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Fa'aopoopo le Tagata e Maua",
             "SEND": "Auina atu",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Aso",
             "TABLECOLUMNS_CONFIRMS": "Fa'amaoniga",
             "ALL_SELECTUNSELECT": "Fa'asolo Uma",
+            "TREEMODE": "Faiga o La'au",
+            "LISTMODE": "Faiga o le Lisi",
             "SENDAVAILABLE": "Faaaoga le paleni o lo'o avanoa",
             "INPUTLOCKED": "Ua loka le ulufale. E manaʻomia ona e tatala lenei ulufale e faʻaaoga ai.",
             "CONTEXTMENULOCKINPUT": "Loka le ulufale",
@@ -38,10 +45,48 @@
             "AFTERFEE": "A maeʻa le Totogifuapauina",
             "QUANTITY": "Aofa'i",
             "BYTES": "Paita",
-            "TREEMODE": "Faiga o La'au",
-            "LISTMODE": "Faiga o le Lisi",
             "ALERTFEECHANGETITLE": "Suiga o Totogifuapauina",
             "ALERTFEECHANGECONTENT": "E maualuga atu le totogifuapauina moni o fefaʻatauaʻiga nai lo le mea na faʻamoemoeina. Faʻamolemole faʻamaonia le totogifuapauina fou:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Fausia se Konekarate",
+            "INFO": "Fa'atulaga se konekarate atamai i le feso'ota'iga e ala i le tu'uina atu o lana bytecode ua tu'ufa'atasia. O se galuega autu lea o le filifili - toe siaki lau bytecode ma fa'atulagaga o le kesi a'o le'i fa'atulagaina, e le mafai ona toe fa'aleaogaina le fa'atulagaina.",
+            "FROM": "Mai",
+            "BYTECODE": "Fa'ailoga o le Byte",
+            "BYTECODEPLACEHOLDER": "Fa'apipi'i le bytecode o le konekarate ua tu'ufa'atasia (hex)",
+            "INVALIDBYTECODE": "E tatau ona avea le Bytecode ma se manoa hex aloaia (0-9, a-f) faatasi ai ma se numera tutusa o mataitusi",
+            "GASLIMIT": "Tapula'a o le Kesi",
+            "GASLIMITRANGE": "Fa'asologa",
+            "GASPRICE": "Tau o le Kesi (MRX i le iunite kesi)",
+            "GASPRICEMIN": "Maualalo",
+            "ESTIMATEDMAXCOST": "Tau maualuga fuafuaina",
+            "DEPLOYBUTTON": "Konekarate Fa'atino",
+            "INCOMPLETEFORM": "Fa'amolemole filifili se tuatusi e lafo mai ai, fa'aofi le bytecode aoga, ma fa'atulaga se tapula'a/tau aoga o le kesi",
+            "HIGHGASPRICETITLE": "Tau Maualuga o le Penisini",
+            "HIGHGASPRICEINFO": "O le tau o le penisini ua e fa'atulaga e matua maualuga lava. O lenei fa'atinoina e ono taugata i le:",
+            "DEPLOYING": "O lo'o fa'atinoina le konekarate...",
+            "DEPLOYED": "Ua tu'uina atu le fa'atinoina o le konekarate",
+            "RESULTTITLE": "Iʻuga o le Faʻatulagaina",
+            "STATUS": "Tulaga",
+            "STATUSPENDING": "O loʻo faʻatali le faʻamaoniga...",
+            "STATUSCONFIRMED": "Ua manuia le fa'atinoina",
+            "STATUSFAILED": "Ua le manuia le fa'atinoina",
+            "TXID": "Fa'ailoga o Fefa'ataua'iga",
+            "SENDER": "Tagata na auina mai",
+            "CONTRACTADDRESS": "Tuatusi o le Konekarate",
+            "GASUSED": "Kesi ua Fa'aaogaina",
+            "DONEBUTTON": "Ua mae'a",
+            "DEPLOYANOTHERBUTTON": "Fa'atulaga se isi"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Fefa'ataua'iga",
+            "COPYBLOCKHASH": "Kopi le Hash Poloka",
+            "COPYTXID": "Kopi le ID o Fefaatauaiga",
+            "COPYACCOUNT": "Kopi le Igoa o le Teugatupe",
+            "COPYADDRESS": "Kopi le Tuatusi",
+            "COPYAMOUNT": "Kopi le Aofa'i",
+            "COPTBLOCKINDEX": "Kopi le Fa'asino Upu o le Poloka",
+            "EXPLORER": "Tatala i le Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Tatala mo le Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Tuatusi",
             "ENABLED": "Ua fa'agaoioia",
-            "STARTBUTTON": "Amata i le lotoifale",
-            "STARTALIASBUTTON": "Amata le Igoa Faalilolilo",
-            "STARTALLBUTTON": "Amata Uma",
             "NOMASTERNODES": "E leai ni au masternodes",
             "NOMNOUTPUTS": "Leai ni fa'ai'uga o le Masternode ua maua. Ina ia fa'agaoioia se Masternode i le lotoifale, lafo sa'o ni tupe siliva e 2,5,25,50 pe 100 miliona i lau tuatusi Masternode ma fa'atali mo ni fa'amaoniga e 15.",
+            "STARTBUTTON": "Amata i le lotoifale",
             "STOPBUTTON": "Taofi le Nofoaga",
+            "STARTALIASBUTTON": "Amata le Igoa Faalilolilo",
             "STOPALIASBUTTON": "Taofi le Igoa Faalilolilo",
+            "STARTALLBUTTON": "Amata Uma",
             "ADDREMOTE": "Fa'aopoopo le Remote Masternode",
             "REMOVEMN": "Aveese le Masternode",
             "ADDLOCAL": "Fa'atulaga le Masternode Fa'alotoifale",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Aoao",
                 "COREVERSION": "Lomiga Autū",
+                "ALTITUDEVERSION": "Lomiga Maualuga",
                 "PROTOCOLVERSION": "Lomiga Fa'a-Protocol",
                 "WALLETVERSION": "Lomiga o le Wallet.dat",
                 "NETWORKTITLE": "Feso'ota'iga",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numera o Masternodes",
                 "BLOCKCHAINTITLE": "Filifili Poloka",
                 "NUMBERBLOCKS": "Numera o poloka o loʻo iai nei",
-                "BESTBLOCKTTIME": "Taimi mulimuli o le poloka",
-                "ALTITUDEVERSION": "Lomiga Maualuga"
+                "BESTBLOCKTTIME": "Taimi mulimuli o le poloka"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Susū mai i le Metrix Core RPC console. Taina le fesoasoani mo se aotelega o poloaiga o loʻo avanoa.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Filifili le Gagana"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Fefa'ataua'iga",
-            "COPYBLOCKHASH": "Kopi le Hash Poloka",
-            "COPYTXID": "Kopi le ID o Fefaatauaiga",
-            "COPYACCOUNT": "Kopi le Igoa o le Teugatupe",
-            "COPYADDRESS": "Kopi le Tuatusi",
-            "COPYAMOUNT": "Kopi le Aofa'i",
-            "COPTBLOCKINDEX": "Kopi le Fa'asino Upu o le Poloka",
-            "EXPLORER": "Tatala i le Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Filifili le Tupe Fa'aalia"
         },
         "EXPLORER": {
             "TITLE": "Su'esu'ega Poloka",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Feso'ota'iga",
             "WINDOTAB": "Fa'amalama",
+            "BACKUPTAB": "Fa'aleoleo",
+            "EXPLORERTAB": "Tagata Su'esu'e",
+            "DEVELOPERTAB": "Tagata Atiina'e",
             "NETWORK": {
                 "PROXY": "Feso'ota'i e ala i le SOCKS5 proxy",
                 "PROXYIP": "IP Sui",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Fa'aitiitia pe a tapuni",
                 "BEHAVIOURTITLE": "Amioga a le System Tray & Window"
             },
-            "BACKUPTAB": "Fa'aleoleo",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Fa'aleoleo otometi",
                 "ENABLED": "Fa'aleoleo otometi le wallet.dat i se taimi atofaina",
                 "ENABLEDINFO": "E faia ai se kopi fou o lau faila atotupe i se faasologa, ina ia maua i taimi uma se kopi lata mai pe a iai se mea e sese.",
+                "INTERVALLABEL": "Fa'aleoleo i aso uma (i aso uma)",
                 "LASTBACKUP": "Fa'aleoleo mulimuli:",
                 "NEVERBACKEDUP": "E leai se faaleoleo otometi ua faia.",
                 "BACKUPNOWBUTTON": "Toe Fa'afo'i Nei",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Toe seti i le tulaga masani",
                 "PRUNETITLE": "Talafa'asolopito o le Fa'asao",
                 "PRUNEINFO": "O fa'amaumauga tuai fa'aleoleo otometi e tapeina ina ia 'aua ne'i fa'avavau ona tupu pea lenei faila - na'o faila aupito lata mai o lo'o i lalo e teuina.",
-                "KEEPCOUNTLABEL": "Taofi mulimuli",
-                "INTERVALLABEL": "Fa'aleoleo i aso uma (i aso uma)"
+                "KEEPCOUNTLABEL": "Taofi mulimuli"
             },
-            "EXPLORERTAB": "Tagata Su'esu'e",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Su'esu'ega Poloka",
                 "BLOCKEXPLORERINFO": "Na tatalaina le upega tafaʻilagi ina ua matamata i se fefaʻatauaʻiga i luga o le poloka suʻesuʻe (e.g. kiliki-taumatau se fefaʻatauaʻiga > Vaʻai i luga o le Suʻesuʻe).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Resitalaina"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Faiga a le Atina'e",
+                "DEVMODEINFO": "Ua tape i le tulaga masani ma ua fa'amoemoe mo na'o tagata atia'e. O le fa'agaoioia o lenei mea e fa'aalia ai filifiliga e soloia ai le feso'ota'iga RPC - e tatau i tagata fa'aoga masani ona tu'u lenei mea.",
+                "DEVMODELABEL": "Fa'agaoioia le Faiga a le Atiina'e",
+                "WARNING": "O nei fa'atulagaga e mo na'o fa'amoemoega o le atina'eina. O le suia o nei fa'atulagaga e mafai ona taofia ai le feso'ota'iga o le atotupe i se daemon - fa'aaoga lenei mea pe afai e te iloa le mea o lo'o e faia.",
+                "RPCHOSTTITLE": "Feso'ota'iga RPC",
+                "RPCHOSTINFO": "I le tulaga masani, e fesoʻotaʻi le Altitude i le daemon e pulea e ia lava, i luga o lenei masini (127.0.0.1). O le soloia o nei mea e mafai ai ona fesoʻotaʻi i se isi daemon - mo se faʻataʻitaʻiga o se faʻataʻitaʻiga regtest mamao, e aunoa ma le manaʻomia e faʻagaoioia se tasi i le lotoifale. Afai e manuia le fesoʻotaʻiga, o le a le laʻuina mai pe amata e le Altitude lana lava daemon i le lotoifale. E tatau i le rpcallowip a le daemon faʻamoemoeina ona faʻatagaina lenei fesoʻotaʻiga, ma e tatau i le rpcuser/rpcpassword o loʻo i lalo ona fetaui ma lana faʻatulagaga. E amata loa ona aoga, e le manaʻomia se toe amata.",
+                "RPCHOSTLABEL": "Host RPC",
+                "RPCPORTLABEL": "Uafu RPC",
+                "RPCUSERLABEL": "Igoa ole Tagata Fa'aoga RPC",
+                "RPCPASSWORDLABEL": "Upu faataga a le RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Aotelega",
-            "TRANSACTIONSTAB": "Fefa'ataua'iga",
-            "ADDRESSTABS": "Tuatusi"
-        },
-        "CURRENCY": {
-            "TITLE": "Filifili le Tupe Fa'aalia"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Laupapa Fa'avaa",
             "SEND": "Auina atu",
+            "CREATECONTRACT": "Fausia se Konekarate",
             "RECEIVE": "Maua",
             "TRANSACTIONS": "Fefa'ataua'iga",
             "STAKING": "Fa'amau",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Su'esu'ega Poloka",
             "SYNC": {
                 "CONNECTING": "Feso'ota'i",
                 "NOBLOCKS": "Faatali mo poloka",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "E le o fa'atauina e le atotupe le staking i le taimi nei",
                 "MASTERNODEON": "O lo'o fa'agaoioia nei le Masternode",
                 "MASTERNODEOFF": "E le o fa'agaoioia le Masternode i le taimi nei"
-            },
-            "EXPLORER": "Su'esu'ega Poloka"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Ulufale i se tuatusi o le upega tafaʻilagi",
+            "GOBUTTON": "Alu",
+            "QUICKLAUNCH": "Fa'alauiloa vave",
+            "DEVTOOLS": "Tatala Meafaigaluega a le Atina'e",
+            "ADDLINK": "Fa'aopoopo le So'otaga",
+            "LINKNAMEPLACEHOLDER": "Igoa",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Seivi",
+            "CANCEL": "Faaleaoga",
+            "REMOVE": "Aveese",
+            "REMOVECONFIRM": "Aveese lenei so'otaga vave?",
+            "LINKEXISTS": "Ua uma ona i ai le so'otaga lea i lau lisi fa'alauiloa vave",
+            "LINKINVALID": "Ulufale i se tuatusi saite aoga",
+            "LINKNETWORKLABEL": "Feso'ota'iga",
+            "LOADFAILED": "Ua le manuia le utaina o le upega tafa'ilagi",
+            "SECURESITE": "Ua saogalemu le feso'ota'iga - o se tusi faamaonia SSL aoga",
+            "INSECURESITE": "E le saogalemu le feso'ota'iga",
+            "INVALIDCERTSITE": "E lē patino le feso'ota'iga - e lē aoga pe lē talitonuina le tusi faamaonia SSL"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ulufale i le Upu Faalilolilo a lau Atotupe",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Ua maua se fa'afouga mo le Metrix Core. E te fia fa'apipi'i nei?",
             "WALLETUPDATETITLE": "Ua maua le Fa'afouga o le Maualuga",
             "WALLETUPDATEINFO": "Ua maua se fa'afouga mo le Altitude. E te fia la'uina mai nei?",
+            "WALLETUPDATEREADYTITLE": "Ua sauni mo le Fa'afouga o le Maualuga",
+            "WALLETUPDATEREADYINFO": "Ua uma ona la'uina mai le fa'afouga. Toe amata le Altitude nei e fa'apipi'i ai?",
+            "WALLETUPDATERESTARTBUTTON": "Toe amata & Fa'apipi'i",
+            "WALLETUPDATELATERBUTTON": "Mulimuli ane",
             "CLIENTUPDATEBUTTON": "Fa'afouga",
             "CLIENTUPDATECANCELBUTTON": "Aua le Fa'afouina",
             "CLIENTUPDATESKIPBUTTON": "Faase'e lenei Fa'afouga",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "So'o se fa'amaumauga tuai na e faia o lau faila atotupe e tatau ona sui i le faila atotupe ua fa'ailogaina fou. Mo mafua'aga tau saogalemu, o fa'amaumauga tuai o le faila atotupe e le'i fa'ailogaina o le a le toe aoga i le taimi lava e te amata fa'aaoga ai le atotupe fou ua fa'ailogaina.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Na Taofi Faafuase'i le Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Sa i ai se faʻafitauli i le Metrix Core lea na mafua ai ona muta. E fautuaina e siaki lau faila debug.log mo ni faʻafitauli.",
+            "CLIENTUNKNOWNERRORTITLE": "Sese o Fesootaiga a le Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Sa i ai se faʻafitauli i le fesootaʻi ma le Metrix Core. E fautuaina e siaki lau faila debug.log mo ni faʻafitauli.",
+            "BOOTSTRAPFAILEDTITLE": "Ua Le Manuia le Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Sa i ai se faʻafitauli i le faʻagaoioia o le Metrix Core. E fautuaina e siaki lau faila o le Altitude log mo ni faʻafitauli.",
+            "BOOTSTRAPOFFERTITLE": "Ua Matuā Le Toe Fa'aaogaina le Atotupe",
+            "BOOTSTRAPOFFERINFO": "O lo'o maua se fa'afouga fou e mafai ona fa'afouina vave ai le Metrix Core. O le fa'aauauina o se fa'asologa masani e ono tele ni aso e fa'amae'a ai, aua e mana'omia e lau atotupe ona sii mai ma fa'amaonia poloka uma na misia.",
+            "BOOTSTRAPOFFERBUTTON": "La'u mai le Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Fa'aauau le Fa'asologa Masani",
+            "BOOTSTRAPSPACEINFO": "E le lava le avanoa avanoa i le tisiki e sii mai ai ma aveese ai le bootstrap. Manaomia: {manaomia}, Avanoa: {free}. Fa'asa'oloto sina avanoa ma toe taumafai.",
+            "STARTUPFAILEDTITLE": "Ua Le Manuia le Fa'alauiloaina o le Metrix Core",
+            "STARTUPFAILEDINFO": "Sa i ai se fa'aletonu i le amataina o le Metrix Core. E fautuaina e siaki lau faila o le Altitude log mo ni fa'afitauli.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Meafaigaluega Toe Fa'aleleia",
             "CLIENTINVALIDCONFIGTITLE": "Fa'atulagaga o le metrix.conf e le sa'o",
             "CLIENTINVALIDCONFIGINFO": "O lau metrix.conf o loʻo i ai se faʻatulagaga masternode e le aoga lea o le a mafua ai ona vave alu ese le Metrix Core. Faʻamolemole siaki lenei faila.",
             "ADDREMOTEMNTITLE": "Fa'aopoopo le Remote Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Ki Tumaoti a le Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Fa'asinomaga o le Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Ua Le Manuia le Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Sa i ai se faʻafitauli i le faʻagaoioia o le Metrix Core. E fautuaina e siaki lau faila o le Altitude log mo ni faʻafitauli.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Meafaigaluega Toe Fa'aleleia",
-            "STARTUPFAILEDTITLE": "Ua Le Manuia le Fa'alauiloaina o le Metrix Core",
-            "STARTUPFAILEDINFO": "Sa i ai se fa'aletonu i le amataina o le Metrix Core. E fautuaina e siaki lau faila o le Altitude log mo ni fa'afitauli.",
-            "CLIENTUNKNOWNERRORTITLE": "Sese o Fesootaiga a le Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Sa i ai se faʻafitauli i le fesootaʻi ma le Metrix Core. E fautuaina e siaki lau faila debug.log mo ni faʻafitauli.",
             "UNENROLLGOVERNORTITLE": "Fa'amaonia le Fa'aleaogaina o le Kovana",
             "UNENROLLGOVERNORCONTENT": "E te mautinoa e te manaʻo e aveese lau Kovana mai le lesitalaina? O le a le toe mafai ona e palota i le pulega faʻasolosolo.",
-            "WALLETUPDATEREADYTITLE": "Ua sauni mo le Fa'afouga o le Maualuga",
-            "WALLETUPDATEREADYINFO": "Ua uma ona la'uina mai le fa'afouga. Toe amata le Altitude nei e fa'apipi'i ai?",
-            "WALLETUPDATERESTARTBUTTON": "Toe amata & Fa'apipi'i",
-            "WALLETUPDATELATERBUTTON": "Mulimuli ane",
             "DAPPCONNECTTITLE": "Feso'ota'i i le 'Upega Tafa'ilagi",
             "DAPPCONNECTINFO": "E fia feso'ota'i lenei 'upega tafa'ilagi i lau atotupe ma va'ai i lau tuatusi ma le paleni.",
             "DAPPCONNECTBUTTON": "Feso'ota'i",
+            "DAPPCONNECTADDRESSLABEL": "Tuatusi",
+            "DAPPAPPROVEBUTTON": "Fa'amaonia",
             "DAPPREJECTBUTTON": "Teena",
             "DAPPSENDTITLE": "Talosaga mo Fefa'ataua'iga o Konekarate",
             "DAPPSENDINFO": "O loʻo talosaga lenei 'upega tafaʻilagi e lafo mai se fefaʻatauaʻiga o se konekarate mai lau atotupe.",
-            "DAPPSIGNTITLE": "Talosaga mo le Saini i se Feau",
-            "DAPPSIGNINFO": "O loʻo talosaga lenei 'upega tafaʻilagi e saini se savali ma lau tuatusi atotupe.",
-            "DAPPNOTREADY": "E le mafai ona feso'ota'i i le 'upega tafa'ilagi - o lo'o amata pea le Metrix Core.",
-            "DAPPNOWALLET": "E le mafai ona feso'ota'i i le 'upega tafa'ilagi - e leai se tuatusi atotupe o maua.",
-            "DAPPAPPROVEBUTTON": "Fa'amaonia",
-            "DAPPCONNECTADDRESSLABEL": "Tuatusi",
             "DAPPSENDSITELABEL": "'Upega tafa'ilagi",
             "DAPPSENDCONTRACTLABEL": "Tuatusi o le Konekarate",
             "DAPPSENDAMOUNTLABEL": "Aofa'i",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Totogifuapauina Maualuga o le Network",
             "DAPPSENDMAXTOTALLABEL": "Aofa'i Maualuga",
             "DAPPSENDDATALABEL": "Fa'amaumauga o le Konekarate",
+            "DAPPSIGNTITLE": "Talosaga mo le Saini i se Feau",
+            "DAPPSIGNINFO": "O loʻo talosaga lenei 'upega tafaʻilagi e saini se savali ma lau tuatusi atotupe.",
             "DAPPSIGNMESSAGELABEL": "Savali",
-            "BOOTSTRAPOFFERTITLE": "Ua Matuā Le Toe Fa'aaogaina le Atotupe",
-            "BOOTSTRAPOFFERINFO": "O lo'o maua se fa'afouga fou e mafai ona fa'afouina vave ai le Metrix Core. O le fa'aauauina o se fa'asologa masani e ono tele ni aso e fa'amae'a ai, aua e mana'omia e lau atotupe ona sii mai ma fa'amaonia poloka uma na misia.",
-            "BOOTSTRAPOFFERBUTTON": "La'u mai le Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Fa'aauau le Fa'asologa Masani",
-            "BOOTSTRAPSPACEINFO": "E le lava le avanoa avanoa i le tisiki e sii mai ai ma aveese ai le bootstrap. Manaomia: {manaomia}, Avanoa: {free}. Fa'asa'oloto sina avanoa ma toe taumafai."
+            "DAPPNOTREADY": "E le mafai ona feso'ota'i i le 'upega tafa'ilagi - o lo'o amata pea le Metrix Core.",
+            "DAPPNOWALLET": "E le mafai ona feso'ota'i i le 'upega tafa'ilagi - e leai se tuatusi atotupe o maua."
         },
         "ADDRESSBOOK": {
             "TITLE": "Tusi Tuatusi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Feso'ota'iga o lo'o iai nei"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Ulufale i se tuatusi o le upega tafaʻilagi",
-            "GOBUTTON": "Alu",
-            "QUICKLAUNCH": "Fa'alauiloa vave",
-            "DEVTOOLS": "Tatala Meafaigaluega a le Atina'e",
-            "ADDLINK": "Fa'aopoopo le So'otaga",
-            "LINKNAMEPLACEHOLDER": "Igoa",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Seivi",
-            "CANCEL": "Faaleaoga",
-            "REMOVE": "Aveese",
-            "REMOVECONFIRM": "Aveese lenei so'otaga vave?",
-            "LINKEXISTS": "Ua uma ona i ai le so'otaga lea i lau lisi fa'alauiloa vave",
-            "LINKINVALID": "Ulufale i se tuatusi saite aoga",
-            "LINKNETWORKLABEL": "Feso'ota'iga",
-            "LOADFAILED": "Ua le manuia le utaina o le upega tafa'ilagi",
-            "SECURESITE": "Ua saogalemu le feso'ota'iga - o se tusi faamaonia SSL aoga",
-            "INSECURESITE": "E le saogalemu le feso'ota'iga",
-            "INVALIDCERTSITE": "E lē patino le feso'ota'iga - e lē aoga pe lē talitonuina le tusi faamaonia SSL"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Atotupe Fa'aleoleo...",
             "SIGNMESSAGE": "Savali Fa'ailoga...",
             "VERIFYMESSAGE": "Fa'amaonia le Savali...",
-            "LOCALE": "Gagana...",
-            "RESTARTCORE": "Toe amata le Metrix Core",
-            "EXIT": "Alu ese",
             "OPTIONS": "Filifiliga...",
+            "LOCALE": "Gagana...",
             "CURRENCIES": "Faaali Tupe...",
-            "ALTITUDEREFRESH": "Fa'afou Fa'amaumauga o le Maualuga"
+            "RESTARTCORE": "Toe amata le Metrix Core",
+            "ALTITUDEREFRESH": "Fa'afou Fa'amaumauga o le Maualuga",
+            "EXIT": "Alu ese"
         },
         "ENCRYPT": {
             "TITLE": "Fa'alilolilo",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Paleni Aofa'i",
+        "SPENDABLEBALANCE": "Paleni e mafai ona fa'aalu",
+        "PENDINGBALANCE": "Paleni Fa'atali",
         "CANCELBUTTON": "Faaleaoga",
         "DONEBUTTON": "Ua mae'a",
         "OKBUTTON": "Ua lelei",
+        "ACCEPTBUTTON": "Talia",
         "CLEARALLBUTTON": "Tape uma",
         "ENTERACCOUNTLABEL": "Ulufale i se fa'ailoga mo lenei tuatusi",
         "ENTERADDRESSLABEL": "Ulufale i se tuatusi Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Fa'avasega e ala i",
         "SEARCH": "Saili",
         "FEE": "Totogifuapauina",
-        "ACCEPTBUTTON": "Talia",
         "CONFIRMED": "Ua fa'amaonia",
         "UNCONFIRMED": "E le'i fa'amaoniaina",
-        "PENDINGBALANCE": "Paleni Fa'atali",
-        "SPENDABLEBALANCE": "Paleni e mafai ona fa'aalu",
         "SAVEBUTTON": "Seivi"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Toe amata le Metrix Core...",
         "BOOTSTRAPPING": "O lo'o la'uina mai le bootstrap...",
         "BOOTSTRAPEXTRACTING": "O lo'o aveese le bootstrap...",
-        "TIMEREMAINING": "o totoe:"
+        "TIMEREMAINING": "o totoe:",
+        "DEVRPCOVERRIDEACTIVE": "Ua setiina se suiga o le feso'ota'iga RPC a le atina'e (Filifiliga > Atia'e) ma e le tali mai. Fa'amama e toe fa'afeso'ota'i ai i le daemon i le lotoifale i le tulaga masani.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Tape le RPC Override & Toe Feso'ota'i"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ua manuia le faia o se teugatupe fou",
         "ADDRESSCOPIEDCLIPBOARD": "Ua kopiina le tuatusi i le laupapa faapipii",
+        "COPIEDCLIPBOARD": "Kopi i le laupapa faapipii",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "O fefa'ataua'iga ua kopiina i le laupapa fa'apipi'i",
         "EMPTYFIELDS": "Fa'amolemole fa'atumu avanoa uma",
         "NOUPDATE": "Leai se fa'afouga e maua",
         "WALLETBACKEDUP": "Ua manuia le fa'aleoleo o le atotupe",
+        "WALLETBACKUPFAILED": "Ua le manuia le fa'aleoleo otometi o le atotupe - siaki lau nofoaga fa'aleoleo ma le avanoa o lo'o avanoa i le tisiki",
         "PASSPHRASEMISMATCH": "E lē tutusa upu faataga na e ulufale i ai",
         "CHECKINGUPDATE": "Siakiina mo se faʻafouga...",
         "CHECKINGUPDATEFAILED": "Le mafai ona siaki pe iai se fa'afouga. Siaki lau feso'ota'iga.",
+        "WALLETUPDATEDOWNLOADING": "O lo'o la'uina mai le fa'afouga...",
         "SENDINGEXCEEDSBALANCE": "Ua sili atu le aofaʻi o loʻo e lafoina nai lo le paleni ua e filifilia",
         "MISSINGCHANGEADDRESS": "E tatau ona e fa'amaoti mai se tuatusi e sui ai",
         "MISSINGDESTINATIONADDRESS": "E tatau ona e fa'amaoti mai se tuatusi e te alu i ai",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "O le atotupe fa'alilolilo...",
         "CHANGINGPASSPHARASE": "Suia o le upu faataga...",
         "STARTINGMASTERNODE": "Amata le masternode...",
+        "STOPPINGMASTERNODE": "Taofia le masternode...",
         "SENDINGTRANSACTION": "O loʻo auina atu le fefaʻatauaʻiga...",
         "SIGNINGMESSAGE": "Savali sainia...",
         "SIGNEDMESSAGE": "Saini le savali",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Tatala le atotupe...",
         "TRANSACTIONMISMATCH": "Sese le fefa'ataua'iga. Fa'amolemole toe taumafai.",
         "MINIMUMCONFIRMATIONS": "O fa'amatalaga uma e mana'omia le itiiti ifo ma le 1 fa'amaoniga a'o le'i fa'aaluina.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "O fefa'ataua'iga ua kopiina i le laupapa fa'apipi'i",
-        "STOPPINGMASTERNODE": "Taofia le masternode...",
         "FAILEDTOWRITECONFIG": "Sa i ai se fa'afitauli i le tusitusi i lau faila metrix.conf. Siaki pe o iai le faila ma pe o iai ni fa'atagaga tusitusi a le Altitude.",
         "NOPUBLICUP": "Leai se tuatusi IP Lautele ua maua. Siaki lau feso'ota'iga initaneti ma toe amata le Altitude.",
         "CONFIGURINGLOCALMN": "Fa'atulagaina o le Masternode i le lotoifale...",
         "REPORTINGISSUE": "Mauaina o faʻamatalaga faʻamaʻi... O le a kopiina nei faʻamatalaga i lau laupapa faʻapipiʻi.",
-        "WALLETUPDATEDOWNLOADING": "O lo'o la'uina mai le fa'afouga...",
-        "WALLETBACKUPFAILED": "Ua le manuia le fa'aleoleo otometi o le atotupe - siaki lau nofoaga fa'aleoleo ma le avanoa o lo'o avanoa i le tisiki",
         "EXPLORERURLSAVED": "Ua sefe le URL a le Explorer",
         "EXPLORERURLRESET": "Ua toe fo'i le URL o le Explorer i le tulaga masani",
         "EXPLORERURLINVALID": "E lē o se URL http(s) aloaia lenā",
-        "EXPLORERURLUNREACHABLE": "E le mafai ona o'o atu i le URL - siaki ma toe taumafai"
+        "EXPLORERURLUNREACHABLE": "E le mafai ona o'o atu i le URL - siaki ma toe taumafai",
+        "DEVRPCHOSTSAVED": "Ua sefe le 'au talimalo RPC",
+        "DEVRPCHOSTRESET": "Ua toe foʻi le 'au talimalo RPC i le tulaga masani (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Tupe Siliva na Maua",
+        "NEWTRANSACTION_TITLE_STAKE": "Siteki na Maua",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ua maua le taui Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Ni nai sekone",
@@ -533,11 +587,6 @@
         "MONTHS": "masina",
         "AYEAR": "O le tausaga",
         "YEARS": "tausaga"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Tupe Siliva na Maua",
-        "NEWTRANSACTION_TITLE_STAKE": "Siteki na Maua",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ua maua le taui Masternode"
     },
     "MONTH": {
         "JAN": "Ianuari",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "E nafa Kovana ma le palota i paketi faalemasina ma suiga o le blockchain. E mafai ona e avea ma Kovana e ala i le lokaina o le aseta sa'o i le konekarate Pulega.",
                 "COLLATERAL": "Mea e manaʻomia mo le faʻamaoniga",
                 "ENROLL": "Lesitala",
+                "SELECTAGOVERNOR": "Filifili se tuatusi kovana agavaa",
+                "GOVERNORNOTSELECTED": "E leai se tuatusi agavaa na filifilia",
                 "CONFIRMENROLL": "Ua toeitiiti lava ona e lesitala e avea ma Kovana. O le a auina atu ai se fefaʻatauaʻiga faʻatasi ai ma le aseta manaʻomia i le konekarate pulega. E mafai ona e faʻaleaogaina lau lesitala i soʻo se taimi.",
                 "ISGOVERNORTITLE": "O oe o se Kovana galue malosi!",
                 "ISGOVERNORDETAIL1": "E nafa kovana ma le palota i paketi faalemasina ma suiga i le blockchain.",
                 "ISGOVERNORDETAIL2": "Ina ia tumau pea ma Kovana, e tatau ona e auai i le palota e le itiiti ifo ma le 1 i le 30 aso uma.",
                 "ISGOVERNORDETAIL3": "Afai e leai se mea e palota i ai, e mafai ona e faʻaauau lau lesitala e ala i le lafoina o se ping o loʻo galue.",
+                "MYGOVERNORADDRESS": "La'u Lauga a le Kovana",
                 "UNENROLL": "Aveese le lesitalaina",
                 "PING": "Auina atu le Ping Galue",
                 "LASTPINGTITLE": "Ping mulimuli",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "aso",
                 "GOVERNORVOTEMATURITYHOURS": "itula",
                 "GOVERNORVOTEMATURITYSUFFIX": "se'ia matua",
-                "MYGOVERNORADDRESS": "La'u Lauga a le Kovana",
-                "SELECTAGOVERNOR": "Filifili se tuatusi kovana agavaa",
-                "GOVERNORNOTSELECTED": "E leai se tuatusi agavaa na filifilia",
                 "NOTFULLYSYNCEDTITLE": "Ua le maua le tulaga o le kovana",
                 "NOTFULLYSYNCEDDETAIL": "O le a vaaia lou tulaga resitala Kovana pe a atoatoa ona ogatasi lau poloka poloka (blockchain).",
                 "DGPMIGRATIONTITLE": "Fesiitaiga a le DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ua manuia le fatuina o lau talosaga",
             "ENROLLINGGOVERNOR": "Lesitalaina e avea ma Kovana...",
             "ENROLLEDGOVERNOR": "O le a maeʻa lau lesitalaina pe a uma ona faʻamaonia lau fefaʻatauaʻiga",
-            "VOTINGONPROPOSAL": "Auina atu o le palota o le talosaga",
-            "VOTEDONPROPOSAL": "O le a faitaulia lau palota pe a uma ona faʻamaonia le fefaʻatauaʻiga.",
             "PINGINGGOVERNOR": "O loʻo auina atu le ping...",
             "PINGEDGOVERNOR": "Ua manuia le auina atu o le Ping. O le a faʻafouina lau Kovana pe a maeʻa ona faʻamaonia le fefaʻatauaʻiga",
+            "VOTINGONPROPOSAL": "Auina atu o le palota o le talosaga",
+            "VOTEDONPROPOSAL": "O le a faitaulia lau palota pe a uma ona faʻamaonia le fefaʻatauaʻiga.",
             "UNENROLLINGGOVERNOR": "Aveese le Kovana mai le lesitalaina...",
             "UNENROLLEDGOVERNOR": "Ua auina atu le fefaʻatauaʻiga. O le a faʻaleaogaina lau Kovana pe a maeʻa ona faʻamaonia le fefaʻatauaʻiga",
             "GOVERNORNOTMATURE": "E le'i lava le matua o lau Kovana e faatino ai lenei gaioiga."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Fa'atau Metrix",
+                "SEARCH": "Talafaasolopito"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "E te Auina Atu",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Talafa'asolopito o Fefa'ataua'iga",
                 "SEARCHBUTTON": "SAILIGA",
+                "SEARCHPLACEHOLDER": "Ulufale i le tuatusi MRX po'o le BTC",
                 "TRANSACTIONDATE": "Aso",
                 "TRANSACTIONTYPE": "Ituaiga TX",
                 "TRANSACTIONAMOUNT": "Aofa'i",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Ua fa'amaonia",
                 "TRANSACTIONNOTCONFIRMED": "E le'i fa'amaonia",
                 "TRANSACTIONREFUNDED": "Toe fa'afo'i tupe - I lalo ifo o le aofa'i maualalo",
-                "AVGSWAPPRICE": "Tau Fefa'ataua'iga Averesi",
-                "SEARCHPLACEHOLDER": "Ulufale i le tuatusi MRX po'o le BTC"
+                "AVGSWAPPRICE": "Tau Fefa'ataua'iga Averesi"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "O lo'o faia le fesuia'iga o tuatusi...",
             "ALREADYHAVEADDRESS": "Ua iai sau tuatusi BTC e feso'ota'i ma lenei tuatusi Metrix",
             "NOADDRESS": "E te le'i fa'aofiina se tuatusi Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Fa'atau Metrix",
-                "SEARCH": "Talafaasolopito"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Fa'aali",
                 "EMPTYTITLE": "E Leai ni Fa'ailoga ua Maua",
                 "EMPTYDETAIL": "E otometi lava ona siaki e le Altitude se poloka suʻesuʻe mo MRC20 ma MRC721 tokens na lafoina i au tuatusi, ona faʻamaonia lea o mea uma e faʻasaga i lau lava node. E mafai foʻi ona e faʻaopoopoina se token i le lima pe afai e te iloa lona tuatusi konekarate.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ua tape le siakiina otometi o le token, o lea e le o siakiina ai au tuatusi mo token. Toe fa'agaoioia i luga, pe fa'aopoopo se token e ala i le lima pe afai e te iloa lona tuatusi konekarate.",
                 "HIDDENTITLE": "Fa'ailoga Natia",
                 "CONTEXTMENUHIDE": "Natia le Fa'ailoga",
                 "ITEMSSUFFIX": "mea",
-                "NONENUMERABLETOOLTIP": "E lē lagolagoina e lenei aoina le lisiina o mea taʻitasi - ae o loʻo faʻaalia ai le aofaʻi o mea o loʻo e umia."
+                "NONENUMERABLETOOLTIP": "E lē lagolagoina e lenei aoina le lisiina o mea taʻitasi - ae o loʻo faʻaalia ai le aofaʻi o mea o loʻo e umia.",
+                "CHECKINGENABLED": "Siakiina",
+                "CHECKINGDISABLED": "Siaki ese",
+                "CHECKINGENABLEDTOOLTIP": "O lo'o fa'agaoioia le siakiina o le token - E siaki e le Altitude au tuatusi i lea taimi ma lea taimi mo token ma fa'afouina paleni. Kiliki e tape ai.",
+                "CHECKINGDISABLEDTOOLTIP": "Ua tape le siakiina o le fa'ailoga - kiliki e toe ki.",
+                "CHECKINGDISABLEDNOTICE": "Ua tape le siakiina otometi o le token. E le o su'esu'eina au tuatusi mo token ma o le a le fa'afouina paleni. E mafai lava ona e fa'aopoopoina se token i le lima."
             },
             "ADDTOKEN": {
                 "TITLE": "Fa'aopoopo le Fa'ailoga",

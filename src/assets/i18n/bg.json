@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Създаване на акаунт",
             "HIDEEMPTYACCOUNTS": "Скриване на неназовани празни акаунти"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Общ преглед",
+            "TRANSACTIONSTAB": "Транзакции",
+            "ADDRESSTABS": "Адреси"
+        },
         "SEND": {
             "ADDRECIPIENT": "Добавяне на получател",
             "SEND": "Изпрати",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Дата",
             "TABLECOLUMNS_CONFIRMS": "Потвърждения",
             "ALL_SELECTUNSELECT": "Превключване на всички",
+            "TREEMODE": "Дървовиден режим",
+            "LISTMODE": "Режим на списък",
             "SENDAVAILABLE": "Използвайте наличния баланс",
             "INPUTLOCKED": "Входът е заключен. Ще трябва да го отключите, за да го похарчите.",
             "CONTEXTMENULOCKINPUT": "Заключване на входа",
@@ -38,10 +45,48 @@
             "AFTERFEE": "След такса",
             "QUANTITY": "Количество",
             "BYTES": "Байтове",
-            "TREEMODE": "Дървовиден режим",
-            "LISTMODE": "Режим на списък",
             "ALERTFEECHANGETITLE": "Промяна на таксата",
             "ALERTFEECHANGECONTENT": "Действителната такса за транзакцията е по-висока от очакваната. Моля, потвърдете новата такса:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Създаване на договор",
+            "INFO": "Разположите интелигентен договор в мрежата, като изпратите компилирания му байткод. Това е функция на основната верига - проверете отново настройките на байткода и газа преди внедряване, внедряването не може да бъде отменено.",
+            "FROM": "От",
+            "BYTECODE": "Байткод",
+            "BYTECODEPLACEHOLDER": "Поставете компилирания байткод на договора (шестнадесетичен)",
+            "INVALIDBYTECODE": "Байткодът трябва да бъде валиден шестнадесетичен низ (0-9, a-f) с четен брой знаци",
+            "GASLIMIT": "Лимит на газа",
+            "GASLIMITRANGE": "Диапазон",
+            "GASPRICE": "Цена на газа (MRX за единица газ)",
+            "GASPRICEMIN": "Минимум",
+            "ESTIMATEDMAXCOST": "Очаквана максимална цена",
+            "DEPLOYBUTTON": "Договор за внедряване",
+            "INCOMPLETEFORM": "Моля, изберете адрес на подател, въведете валиден байткод и задайте валиден лимит/цена на горивото",
+            "HIGHGASPRICETITLE": "Висока цена на газа",
+            "HIGHGASPRICEINFO": "Цената на газа, която сте задали, е необичайно висока. Това внедряване може да струва до:",
+            "DEPLOYING": "Внедряване на договор...",
+            "DEPLOYED": "Разполагането на договора е подадено",
+            "RESULTTITLE": "Резултат от внедряването",
+            "STATUS": "Статус",
+            "STATUSPENDING": "Очаква се потвърждение...",
+            "STATUSCONFIRMED": "Разположено успешно",
+            "STATUSFAILED": "Разгръщането не бе успешно",
+            "TXID": "Идентификационен номер на транзакцията",
+            "SENDER": "Изпращач",
+            "CONTRACTADDRESS": "Адрес на договора",
+            "GASUSED": "Използван газ",
+            "DONEBUTTON": "Готово",
+            "DEPLOYANOTHERBUTTON": "Разположи друг"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Транзакции",
+            "COPYBLOCKHASH": "Копиране на хеш на блок",
+            "COPYTXID": "Копиране на идентификатора на транзакцията",
+            "COPYACCOUNT": "Копиране на името на акаунта",
+            "COPYADDRESS": "Копиране на адрес",
+            "COPYAMOUNT": "Копирай сумата",
+            "COPTBLOCKINDEX": "Копиране на индекс на блок",
+            "EXPLORER": "Отваряне в Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Отключи за залагане",
@@ -68,13 +113,13 @@
             "IP": "ИП",
             "ADDRESS": "Адрес",
             "ENABLED": "Активирано",
-            "STARTBUTTON": "Стартиране на локално",
-            "STARTALIASBUTTON": "Стартов псевдоним",
-            "STARTALLBUTTON": "Стартиране на всички",
             "NOMASTERNODES": "Нямате никакви мастерноди",
             "NOMNOUTPUTS": "Не са намерени изходи от Masternode. За да стартирате локален Masternode, изпратете точно 2, 5, 25, 50 или 100 милиона монети на адреса на вашия Masternode и изчакайте 15 потвърждения.",
+            "STARTBUTTON": "Стартиране на локално",
             "STOPBUTTON": "Спри локално",
+            "STARTALIASBUTTON": "Стартов псевдоним",
             "STOPALIASBUTTON": "Спиране на псевдонима",
+            "STARTALLBUTTON": "Стартиране на всички",
             "ADDREMOTE": "Добавяне на отдалечен мастернод",
             "REMOVEMN": "Премахване на мастернод",
             "ADDLOCAL": "Настройка на локален мастернод",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Общи",
                 "COREVERSION": "Основна версия",
+                "ALTITUDEVERSION": "Версия за надморска височина",
                 "PROTOCOLVERSION": "Версия на протокола",
                 "WALLETVERSION": "Версия на Wallet.dat",
                 "NETWORKTITLE": "Мрежа",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Брой мастерноди",
                 "BLOCKCHAINTITLE": "Блок верига",
                 "NUMBERBLOCKS": "Текущ брой блокове",
-                "BESTBLOCKTTIME": "Последно време за блок",
-                "ALTITUDEVERSION": "Версия за надморска височина"
+                "BESTBLOCKTTIME": "Последно време за блок"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Добре дошли в конзолата на Metrix Core RPC. Въведете „помощ“ за общ преглед на наличните команди.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Изберете език"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Транзакции",
-            "COPYBLOCKHASH": "Копиране на хеш на блок",
-            "COPYTXID": "Копиране на идентификатора на транзакцията",
-            "COPYACCOUNT": "Копиране на името на акаунта",
-            "COPYADDRESS": "Копиране на адрес",
-            "COPYAMOUNT": "Копирай сумата",
-            "COPTBLOCKINDEX": "Копиране на индекс на блок",
-            "EXPLORER": "Отваряне в Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Изберете валута на показване"
         },
         "EXPLORER": {
             "TITLE": "Блок Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Мрежа",
             "WINDOTAB": "Прозорец",
+            "BACKUPTAB": "Резервно копие",
+            "EXPLORERTAB": "Изследовател",
+            "DEVELOPERTAB": "Разработчик",
             "NETWORK": {
                 "PROXY": "Свържете се чрез SOCKS5 прокси",
                 "PROXYIP": "IP адрес на прокси сървър",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Минимизиране при затваряне",
                 "BEHAVIOURTITLE": "Поведение на системния трей и прозореца"
             },
-            "BACKUPTAB": "Резервно копие",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Автоматично архивиране",
                 "ENABLED": "Автоматично архивиране на wallet.dat по график",
                 "ENABLEDINFO": "Създава ново резервно копие на файла на портфейла ви по график, така че винаги е налично скорошно копие, ако нещо се обърка.",
+                "INTERVALLABEL": "Архивиране на всеки (дни)",
                 "LASTBACKUP": "Последно резервно копие:",
                 "NEVERBACKEDUP": "Все още не е направено автоматично архивиране.",
                 "BACKUPNOWBUTTON": "Архивиране сега",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Възстановяване на фабричните настройки",
                 "PRUNETITLE": "История на архивирането",
                 "PRUNEINFO": "По-старите автоматични резервни копия се изтриват, за да не расте тази папка безкрайно - запазват се само най-новите, изброени по-долу.",
-                "KEEPCOUNTLABEL": "Запази последно",
-                "INTERVALLABEL": "Архивиране на всеки (дни)"
+                "KEEPCOUNTLABEL": "Запази последно"
             },
-            "EXPLORERTAB": "Изследовател",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Блок Explorer",
                 "BLOCKEXPLORERINFO": "Сайтът се отвори при преглед на транзакция в Block Explorer (напр. щракване с десния бутон върху транзакция > Преглед в Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Главна мрежа",
                 "TESTNET": "Тестова мрежа",
                 "REGTEST": "Регтест"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Режим за разработчици",
+                "DEVMODEINFO": "Изключено по подразбиране и е предназначено само за разработчици. Активирането на тази опция разкрива опции за отмяна на RPC връзката - стандартните потребители трябва да я оставят изключена.",
+                "DEVMODELABEL": "Активиране на режим за разработчици",
+                "WARNING": "Тези настройки са само за целите на разработката. Промяната им може да попречи на портфейла да се свърже с демон - използвайте това само ако знаете какво правите.",
+                "RPCHOSTTITLE": "RPC връзка",
+                "RPCHOSTINFO": "По подразбиране Altitude се свързва с демона, който управлява сам, на тази машина (127.0.0.1). Преодоляването на тези настройки му позволява да се свърже с друг демон - например отдалечен regtest екземпляр, без да е необходимо да се изпълнява локално. Ако връзката е успешна, Altitude няма да изтегли или стартира свой собствен локален демон. Rpcallowip на целевия демон трябва да разрешава тази връзка, а rpcuser/rpcpassword по-долу трябва да съответства на неговата конфигурация. Влиза в сила незабавно, не се изисква рестартиране.",
+                "RPCHOSTLABEL": "RPC хост",
+                "RPCPORTLABEL": "RPC порт",
+                "RPCUSERLABEL": "Потребителско име за RPC",
+                "RPCPASSWORDLABEL": "Парола за RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Общ преглед",
-            "TRANSACTIONSTAB": "Транзакции",
-            "ADDRESSTABS": "Адреси"
-        },
-        "CURRENCY": {
-            "TITLE": "Изберете валута на показване"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Табло за управление",
             "SEND": "Изпрати",
+            "CREATECONTRACT": "Създаване на договор",
             "RECEIVE": "Получаване",
             "TRANSACTIONS": "Транзакции",
             "STAKING": "Залагане",
             "MASTERNODES": "Мастерноди",
+            "EXPLORER": "Блок Explorer",
             "SYNC": {
                 "CONNECTING": "Свързване",
                 "NOBLOCKS": "Чакане на блокове",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Портфейлът в момента не залага",
                 "MASTERNODEON": "Мастернодът работи в момента",
                 "MASTERNODEOFF": "Мастернодът в момента не работи"
-            },
-            "EXPLORER": "Блок Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Въведете адрес на web3 сайт",
+            "GOBUTTON": "Отиди",
+            "QUICKLAUNCH": "Бързо стартиране",
+            "DEVTOOLS": "Отворете инструментите за разработчици",
+            "ADDLINK": "Добавяне на връзка",
+            "LINKNAMEPLACEHOLDER": "Име",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Запазване",
+            "CANCEL": "Отказ",
+            "REMOVE": "Премахване",
+            "REMOVECONFIRM": "Да се премахне ли тази бърза връзка?",
+            "LINKEXISTS": "Тази връзка вече е в списъка ви за бързо стартиране",
+            "LINKINVALID": "Въведете валиден адрес на сайта",
+            "LINKNETWORKLABEL": "Мрежа",
+            "LOADFAILED": "Зареждането на сайта не бе успешно",
+            "SECURESITE": "Връзката е защитена - валиден SSL сертификат",
+            "INSECURESITE": "Връзката не е защитена",
+            "INVALIDCERTSITE": "Връзката не е поверителна - невалиден или ненадежден SSL сертификат"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Въведете паролата си за портфейл",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Налична е актуализация за Metrix Core. Искате ли да я инсталирате сега?",
             "WALLETUPDATETITLE": "Налична е актуализация на надморската височина",
             "WALLETUPDATEINFO": "Налична е актуализация за Altitude. Искате ли да я изтеглите сега?",
+            "WALLETUPDATEREADYTITLE": "Актуализация на надморската височина е готова",
+            "WALLETUPDATEREADYINFO": "Актуализацията е изтеглена. Да се рестартира ли Altitude сега, за да я инсталирате?",
+            "WALLETUPDATERESTARTBUTTON": "Рестартиране и инсталиране",
+            "WALLETUPDATELATERBUTTON": "По-късно",
             "CLIENTUPDATEBUTTON": "Актуализация",
             "CLIENTUPDATECANCELBUTTON": "Не актуализирай",
             "CLIENTUPDATESKIPBUTTON": "Пропуснете тази актуализация",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Всички предишни резервни копия, които сте направили на файла на портфейла си, трябва да бъдат заменени с новогенерирания, криптиран файл на портфейла. От съображения за сигурност, предишните резервни копия на некриптирания файл на портфейла ще станат безполезни веднага щом започнете да използвате новия, криптиран портфейл.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core спря неочаквано",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Възникна проблем с Metrix Core, който доведе до прекратяването му. Препоръчително е да проверите файла debug.log за проблеми.",
+            "CLIENTUNKNOWNERRORTITLE": "Грешка в комуникацията на ядрото на Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Възникна проблем при комуникацията с Metrix Core. Препоръчително е да проверите файла debug.log за евентуални проблеми.",
+            "BOOTSTRAPFAILEDTITLE": "Неуспешно първоначално зареждане на Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Възникна проблем при първоначалното зареждане на Metrix Core. Препоръчително е да проверите лог файла на Altitude за евентуални проблеми.",
+            "BOOTSTRAPOFFERTITLE": "Портфейлът е значително остарял",
+            "BOOTSTRAPOFFERINFO": "Налична е скорошна bootstrap версия, която може бързо да актуализира Metrix Core. Продължаването с нормална синхронизация може да отнеме няколко дни, тъй като портфейлът ви трябва да изтегли и провери всеки пропуснат блок.",
+            "BOOTSTRAPOFFERBUTTON": "Изтегляне на Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Продължи нормалната синхронизация",
+            "BOOTSTRAPSPACEINFO": "Няма достатъчно свободно дисково пространство за изтегляне и разархивиране на bootstrap файла. Необходимо: {required}, Налично: {free}. Освободете място и опитайте отново.",
+            "STARTUPFAILEDTITLE": "Стартирането на Metrix Core не бе успешно",
+            "STARTUPFAILEDINFO": "Възникна грешка при стартирането на Metrix Core. Препоръчително е да проверите лог файла на Altitude за проблеми.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Инструменти за възстановяване",
             "CLIENTINVALIDCONFIGTITLE": "Невалидна конфигурация на metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Вашият metrix.conf файл има невалидна настройка на мастернода, което ще доведе до незабавно затваряне на Metrix Core. Моля, проверете този файл.",
             "ADDREMOTEMNTITLE": "Добавяне на отдалечен мастернод",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Частен ключ на мастернод",
             "ADDREMOTEMNTXHASH": "Хеш на Masternode TRX",
             "ADDREMOTEMNTXINDEX": "Индекс на Masternode TRX",
-            "BOOTSTRAPFAILEDTITLE": "Неуспешно първоначално зареждане на Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Възникна проблем при първоначалното зареждане на Metrix Core. Препоръчително е да проверите лог файла на Altitude за евентуални проблеми.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Инструменти за възстановяване",
-            "STARTUPFAILEDTITLE": "Стартирането на Metrix Core не бе успешно",
-            "STARTUPFAILEDINFO": "Възникна грешка при стартирането на Metrix Core. Препоръчително е да проверите лог файла на Altitude за проблеми.",
-            "CLIENTUNKNOWNERRORTITLE": "Грешка в комуникацията на ядрото на Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Възникна проблем при комуникацията с Metrix Core. Препоръчително е да проверите файла debug.log за евентуални проблеми.",
             "UNENROLLGOVERNORTITLE": "Потвърждаване на отписването от губернатора",
             "UNENROLLGOVERNORCONTENT": "Сигурни ли сте, че искате да отпишете вашия управител? Вече няма да можете да гласувате за управлението на веригата.",
-            "WALLETUPDATEREADYTITLE": "Актуализация на надморската височина е готова",
-            "WALLETUPDATEREADYINFO": "Актуализацията е изтеглена. Да се рестартира ли Altitude сега, за да я инсталирате?",
-            "WALLETUPDATERESTARTBUTTON": "Рестартиране и инсталиране",
-            "WALLETUPDATELATERBUTTON": "По-късно",
             "DAPPCONNECTTITLE": "Свързване със сайта",
             "DAPPCONNECTINFO": "Този сайт иска да се свърже с портфейла ви и да види адреса и баланса ви.",
             "DAPPCONNECTBUTTON": "Свържете се",
+            "DAPPCONNECTADDRESSLABEL": "Адрес",
+            "DAPPAPPROVEBUTTON": "Одобряване",
             "DAPPREJECTBUTTON": "Отхвърляне",
             "DAPPSENDTITLE": "Заявка за договорна транзакция",
             "DAPPSENDINFO": "Този сайт иска да изпрати транзакция по договор от вашия портфейл.",
-            "DAPPSIGNTITLE": "Заявка за подписване на съобщение",
-            "DAPPSIGNINFO": "Този сайт иска да подпише съобщение с адреса на вашия портфейл.",
-            "DAPPNOTREADY": "Все още не мога да се свържа със сайта - Metrix Core все още стартира.",
-            "DAPPNOWALLET": "Не мога да се свържа със сайта - няма наличен адрес на портфейл.",
-            "DAPPAPPROVEBUTTON": "Одобряване",
-            "DAPPCONNECTADDRESSLABEL": "Адрес",
             "DAPPSENDSITELABEL": "Сайт",
             "DAPPSENDCONTRACTLABEL": "Адрес на договора",
             "DAPPSENDAMOUNTLABEL": "Сума",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Максимална мрежова такса",
             "DAPPSENDMAXTOTALLABEL": "Максимален общ размер",
             "DAPPSENDDATALABEL": "Данни за договора",
+            "DAPPSIGNTITLE": "Заявка за подписване на съобщение",
+            "DAPPSIGNINFO": "Този сайт иска да подпише съобщение с адреса на вашия портфейл.",
             "DAPPSIGNMESSAGELABEL": "Съобщение",
-            "BOOTSTRAPOFFERTITLE": "Портфейлът е значително остарял",
-            "BOOTSTRAPOFFERINFO": "Налична е скорошна bootstrap версия, която може бързо да актуализира Metrix Core. Продължаването с нормална синхронизация може да отнеме няколко дни, тъй като портфейлът ви трябва да изтегли и провери всеки пропуснат блок.",
-            "BOOTSTRAPOFFERBUTTON": "Изтегляне на Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Продължи нормалната синхронизация",
-            "BOOTSTRAPSPACEINFO": "Няма достатъчно свободно дисково пространство за изтегляне и разархивиране на bootstrap файла. Необходимо: {required}, Налично: {free}. Освободете място и опитайте отново."
+            "DAPPNOTREADY": "Все още не мога да се свържа със сайта - Metrix Core все още стартира.",
+            "DAPPNOWALLET": "Не мога да се свържа със сайта - няма наличен адрес на портфейл."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресна книга",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Текуща мрежа"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Въведете адрес на web3 сайт",
-            "GOBUTTON": "Отиди",
-            "QUICKLAUNCH": "Бързо стартиране",
-            "DEVTOOLS": "Отворете инструментите за разработчици",
-            "ADDLINK": "Добавяне на връзка",
-            "LINKNAMEPLACEHOLDER": "Име",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Запазване",
-            "CANCEL": "Отказ",
-            "REMOVE": "Премахване",
-            "REMOVECONFIRM": "Да се премахне ли тази бърза връзка?",
-            "LINKEXISTS": "Тази връзка вече е в списъка ви за бързо стартиране",
-            "LINKINVALID": "Въведете валиден адрес на сайта",
-            "LINKNETWORKLABEL": "Мрежа",
-            "LOADFAILED": "Зареждането на сайта не бе успешно",
-            "SECURESITE": "Връзката е защитена - валиден SSL сертификат",
-            "INSECURESITE": "Връзката не е защитена",
-            "INVALIDCERTSITE": "Връзката не е поверителна - невалиден или ненадежден SSL сертификат"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Резервен портфейл...",
             "SIGNMESSAGE": "Подписване на съобщение...",
             "VERIFYMESSAGE": "Проверка на съобщението...",
-            "LOCALE": "Език...",
-            "RESTARTCORE": "Рестартирайте Metrix Core",
-            "EXIT": "Изход",
             "OPTIONS": "Опции...",
+            "LOCALE": "Език...",
             "CURRENCIES": "Показване на валута...",
-            "ALTITUDEREFRESH": "Обновяване на данните за надморската височина"
+            "RESTARTCORE": "Рестартирайте Metrix Core",
+            "ALTITUDEREFRESH": "Обновяване на данните за надморската височина",
+            "EXIT": "Изход"
         },
         "ENCRYPT": {
             "TITLE": "Криптиране",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Общо салдо",
+        "SPENDABLEBALANCE": "Баланс за харчене",
+        "PENDINGBALANCE": "Чакащо салдо",
         "CANCELBUTTON": "Отказ",
         "DONEBUTTON": "Готово",
         "OKBUTTON": "Добре",
+        "ACCEPTBUTTON": "Приемам",
         "CLEARALLBUTTON": "Изчисти всички",
         "ENTERACCOUNTLABEL": "Въведете етикет за този адрес",
         "ENTERADDRESSLABEL": "Въведете адрес от Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Сортиране по",
         "SEARCH": "Търсене",
         "FEE": "Такса",
-        "ACCEPTBUTTON": "Приемам",
         "CONFIRMED": "Потвърдено",
         "UNCONFIRMED": "Непотвърдено",
-        "PENDINGBALANCE": "Чакащо салдо",
-        "SPENDABLEBALANCE": "Баланс за харчене",
         "SAVEBUTTON": "Запазване"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Рестартиране на Metrix Core...",
         "BOOTSTRAPPING": "Изтегляне на bootstrap...",
         "BOOTSTRAPEXTRACTING": "Извличане на bootstrap...",
-        "TIMEREMAINING": "оставащи:"
+        "TIMEREMAINING": "оставащи:",
+        "DEVRPCOVERRIDEACTIVE": "Зададено е отменяне на RPC връзка за разработчици (Опции > Разработчици) и не отговаря. Изчистете го, за да се свържете отново с локалния демон нормално.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Изчистване на RPC презаписването и повторно свързване"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нов акаунт е създаден успешно",
         "ADDRESSCOPIEDCLIPBOARD": "Адресът е копиран в клипборда",
+        "COPIEDCLIPBOARD": "Копирано в буферната памет",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциите са копирани в клипборда",
         "EMPTYFIELDS": "Моля, попълнете всички полета",
         "NOUPDATE": "Няма налична актуализация",
         "WALLETBACKEDUP": "Архивирането на портфейла е успешно",
+        "WALLETBACKUPFAILED": "Автоматичното архивиране на портфейла не бе успешно - проверете местоположението на резервното копие и наличното дисково пространство",
         "PASSPHRASEMISMATCH": "Въведените от вас пароли не съвпадат",
         "CHECKINGUPDATE": "Проверка за актуализация...",
         "CHECKINGUPDATEFAILED": "Не може да се провери за актуализация. Проверете мрежата си.",
+        "WALLETUPDATEDOWNLOADING": "Изтегляне на актуализация...",
         "SENDINGEXCEEDSBALANCE": "Сумата, която изпращате, надвишава избрания от вас баланс",
         "MISSINGCHANGEADDRESS": "Трябва да посочите адрес за промяна",
         "MISSINGDESTINATIONADDRESS": "Трябва да посочите адрес на местоназначение",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Шифроване на портфейл...",
         "CHANGINGPASSPHARASE": "Промяна на паролата...",
         "STARTINGMASTERNODE": "Стартиране на мастернод...",
+        "STOPPINGMASTERNODE": "Спиране на мастернода...",
         "SENDINGTRANSACTION": "Изпращане на транзакцията...",
         "SIGNINGMESSAGE": "Подписване на съобщение...",
         "SIGNEDMESSAGE": "Съобщението е подписано",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Отключване на портфейла...",
         "TRANSACTIONMISMATCH": "Грешка в транзакцията. Моля, опитайте отново.",
         "MINIMUMCONFIRMATIONS": "Всички входни данни изискват поне 1 потвърждение преди плащане.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Транзакциите са копирани в клипборда",
-        "STOPPINGMASTERNODE": "Спиране на мастернода...",
         "FAILEDTOWRITECONFIG": "Възникна проблем при записа във вашия metrix.conf файл. Проверете дали файлът съществува и дали Altitude има права за запис.",
         "NOPUBLICUP": "Не е намерен публичен IP адрес. Проверете интернет връзката си и рестартирайте Altitude.",
         "CONFIGURINGLOCALMN": "Конфигуриране на локален мастернод...",
         "REPORTINGISSUE": "Получаване на диагностична информация... Тази информация ще бъде копирана в клипборда ви.",
-        "WALLETUPDATEDOWNLOADING": "Изтегляне на актуализация...",
-        "WALLETBACKUPFAILED": "Автоматичното архивиране на портфейла не бе успешно - проверете местоположението на резервното копие и наличното дисково пространство",
         "EXPLORERURLSAVED": "URL адресът на Explorer е запазен",
         "EXPLORERURLRESET": "URL адресът на Explorer е върнат към стандартната стойност",
         "EXPLORERURLINVALID": "Това не е валиден http(s) URL адрес",
-        "EXPLORERURLUNREACHABLE": "Не можах да достигна този URL адрес - проверете го и опитайте отново"
+        "EXPLORERURLUNREACHABLE": "Не можах да достигна този URL адрес - проверете го и опитайте отново",
+        "DEVRPCHOSTSAVED": "RPC хостът е запазен",
+        "DEVRPCHOSTRESET": "RPC хостът е върнат към настройките по подразбиране (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Получени монети",
+        "NEWTRANSACTION_TITLE_STAKE": "Полученият залог",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Получена награда за мастернод"
     },
     "TIME": {
         "AFEWSECONDS": "Няколко секунди",
@@ -533,11 +587,6 @@
         "MONTHS": "месеци",
         "AYEAR": "Една година",
         "YEARS": "години"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Получени монети",
-        "NEWTRANSACTION_TITLE_STAKE": "Полученият залог",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Получена награда за мастернод"
     },
     "MONTH": {
         "JAN": "ЯН",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Управителите са отговорни за гласуването по месечните бюджети и промените в блокчейна. Можете да станете управител, като заключите правилното обезпечение в договора за управление.",
                 "COLLATERAL": "Необходимо обезпечение",
                 "ENROLL": "Записване",
+                "SELECTAGOVERNOR": "Изберете подходящ адрес на губернатор",
+                "GOVERNORNOTSELECTED": "Не е избран подходящ адрес",
                 "CONFIRMENROLL": "На път сте да се регистрирате като управител. Това ще изпрати транзакция с необходимото обезпечение към договора за управление. Можете да се отпишете по всяко време.",
                 "ISGOVERNORTITLE": "Вие сте активен губернатор!",
                 "ISGOVERNORDETAIL1": "Управителите са отговорни за гласуването по месечните бюджети и промените в блокчейна.",
                 "ISGOVERNORDETAIL2": "За да останете губернатор, ще трябва да участвате в поне 1 гласуване на всеки 30 дни.",
                 "ISGOVERNORDETAIL3": "Ако няма за какво да гласувате, можете ръчно да продължите регистрацията си, като изпратите активен ping.",
+                "MYGOVERNORADDRESS": "Моят адрес на губернатора",
                 "UNENROLL": "Отписване",
                 "PING": "Изпрати активен пинг",
                 "LASTPINGTITLE": "Последен пинг",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "дни",
                 "GOVERNORVOTEMATURITYHOURS": "часове",
                 "GOVERNORVOTEMATURITYSUFFIX": "докато узрее",
-                "MYGOVERNORADDRESS": "Моят адрес на губернатора",
-                "SELECTAGOVERNOR": "Изберете подходящ адрес на губернатор",
-                "GOVERNORNOTSELECTED": "Не е избран подходящ адрес",
                 "NOTFULLYSYNCEDTITLE": "Статутът на губернатор не е наличен",
                 "NOTFULLYSYNCEDDETAIL": "Вашият статус на регистрация на губернатор ще стане видим, когато вашата блокчейн мрежа е напълно синхронизирана.",
                 "DGPMIGRATIONTITLE": "Миграция на DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Вашето предложение е създадено успешно",
             "ENROLLINGGOVERNOR": "Записване за губернатор...",
             "ENROLLEDGOVERNOR": "Регистрацията ви ще бъде завършена, след като транзакцията ви бъде потвърдена",
-            "VOTINGONPROPOSAL": "Изпращане на глас за предложение",
-            "VOTEDONPROPOSAL": "Вашият глас ще бъде отчетен след потвърждаване на транзакцията.",
             "PINGINGGOVERNOR": "Изпраща се пинг...",
             "PINGEDGOVERNOR": "Пингът е изпратен успешно. Вашият губернатор ще бъде актуализиран след потвърждаване на транзакцията.",
+            "VOTINGONPROPOSAL": "Изпращане на глас за предложение",
+            "VOTEDONPROPOSAL": "Вашият глас ще бъде отчетен след потвърждаване на транзакцията.",
             "UNENROLLINGGOVERNOR": "Отписване от губернатора...",
             "UNENROLLEDGOVERNOR": "Транзакцията е изпратена. Вашият гуверньор ще бъде отписан след потвърждаване на транзакцията.",
             "GOVERNORNOTMATURE": "Вашият губернатор все още не е достатъчно зрял, за да извърши това действие."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Купете Метрикс",
+                "SEARCH": "История"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Вие изпращате",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "История на транзакциите",
                 "SEARCHBUTTON": "ТЪРСЕНЕ",
+                "SEARCHPLACEHOLDER": "Въведете MRX или BTC адрес",
                 "TRANSACTIONDATE": "Дата",
                 "TRANSACTIONTYPE": "Тип предавател",
                 "TRANSACTIONAMOUNT": "Сума",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Потвърдено",
                 "TRANSACTIONNOTCONFIRMED": "Не е потвърдено",
                 "TRANSACTIONREFUNDED": "Възстановена сума - Под минималната сума",
-                "AVGSWAPPRICE": "Средна цена на суап",
-                "SEARCHPLACEHOLDER": "Въведете MRX или BTC адрес"
+                "AVGSWAPPRICE": "Средна цена на суап"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Генериране на адрес за размяна...",
             "ALREADYHAVEADDRESS": "Вече имате BTC адрес, свързан с този Metrix адрес",
             "NOADDRESS": "Не сте въвели адрес в Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Купете Метрикс",
-                "SEARCH": "История"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Покажи",
                 "EMPTYTITLE": "Все още не са намерени токени",
                 "EMPTYDETAIL": "Altitude автоматично проверява блоковия браузър за MRC20 и MRC721 токени, изпратени до вашите адреси, след което проверява всичко на живо спрямо вашия собствен възел. Можете също така да добавите токен ръчно, ако знаете адреса на договора му.",
+                "EMPTYDETAILCHECKINGDISABLED": "Автоматичната проверка на токени е изключена, така че адресите ви не се проверяват за токени. Включете я отново по-горе или добавете токен ръчно, ако знаете адреса му в договора.",
                 "HIDDENTITLE": "Скрити жетони",
                 "CONTEXTMENUHIDE": "Скриване на токен",
                 "ITEMSSUFFIX": "артикул(и)",
-                "NONENUMERABLETOOLTIP": "Тази колекция не поддържа изброяване на отделни елементи - вместо това показва колко притежавате."
+                "NONENUMERABLETOOLTIP": "Тази колекция не поддържа изброяване на отделни елементи - вместо това показва колко притежавате.",
+                "CHECKINGENABLED": "Проверка на",
+                "CHECKINGDISABLED": "Отмятане",
+                "CHECKINGENABLEDTOOLTIP": "Проверката на токени е включена - Altitude периодично проверява адресите ви за токени и обновява балансите. Кликнете, за да я изключите.",
+                "CHECKINGDISABLEDTOOLTIP": "Проверката на токени е изключена - щракнете, за да я включите отново.",
+                "CHECKINGDISABLEDNOTICE": "Автоматичната проверка на токени е изключена. Адресите ви не се сканират за токени и салдата няма да се актуализират. Все още можете да добавите токен ръчно."
             },
             "ADDTOKEN": {
                 "TITLE": "Добавяне на токен",

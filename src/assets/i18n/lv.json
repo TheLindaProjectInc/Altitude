@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Izveidot kontu",
             "HIDEEMPTYACCOUNTS": "Slēpt nenosauktus tukšus kontus"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Pārskats",
+            "TRANSACTIONSTAB": "Darījumi",
+            "ADDRESSTABS": "Adreses"
+        },
         "SEND": {
             "ADDRECIPIENT": "Pievienot saņēmēju",
             "SEND": "Sūtīt",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datums",
             "TABLECOLUMNS_CONFIRMS": "Apstiprinājumi",
             "ALL_SELECTUNSELECT": "Pārslēgt visu",
+            "TREEMODE": "Koka režīms",
+            "LISTMODE": "Saraksta režīms",
             "SENDAVAILABLE": "Izmantot pieejamo atlikumu",
             "INPUTLOCKED": "Ievade ir bloķēta. Lai to izmantotu, šī ievade ir jāatbloķē.",
             "CONTEXTMENULOCKINPUT": "Bloķēt ievadi",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Pēc maksas",
             "QUANTITY": "Daudzums",
             "BYTES": "Baiti",
-            "TREEMODE": "Koka režīms",
-            "LISTMODE": "Saraksta režīms",
             "ALERTFEECHANGETITLE": "Maksas izmaiņas",
             "ALERTFEECHANGECONTENT": "Faktiskā darījuma maksa ir augstāka nekā paredzēts. Lūdzu, apstipriniet jauno maksu:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Izveidot līgumu",
+            "INFO": "Izvietojiet viedlīgumu tīklā, iesniedzot tā kompilēto baitkodu. Šī ir pamata ķēdes funkcija — pirms izvietošanas divreiz pārbaudiet baitkodu un gāzes iestatījumus, izvietošanu nevar atsaukt.",
+            "FROM": "No",
+            "BYTECODE": "Baitkods",
+            "BYTECODEPLACEHOLDER": "Ielīmējiet kompilēto līguma baitkodu (heksadecimāldaļa)",
+            "INVALIDBYTECODE": "Baitkodam jābūt derīgai heksadecimālai virknei (0–9, a–f) ar pāra skaitu rakstzīmju.",
+            "GASLIMIT": "Gāzes limits",
+            "GASLIMITRANGE": "Diapazons",
+            "GASPRICE": "Degvielas cena (MRX par gāzes vienību)",
+            "GASPRICEMIN": "Minimums",
+            "ESTIMATEDMAXCOST": "Paredzamās maksimālās izmaksas",
+            "DEPLOYBUTTON": "Izvietošanas līgums",
+            "INCOMPLETEFORM": "Lūdzu, atlasiet sūtītāja adresi, ievadiet derīgu baitkodu un iestatiet derīgu degvielas ierobežojumu/cenu.",
+            "HIGHGASPRICETITLE": "Augsta degvielas cena",
+            "HIGHGASPRICEINFO": "Jūsu noteiktā degvielas cena ir neparasti augsta. Šī izvietošana varētu izmaksāt līdz pat:",
+            "DEPLOYING": "Notiek līguma izvietošana...",
+            "DEPLOYED": "Līguma izvietošana iesniegta",
+            "RESULTTITLE": "Izvietošanas rezultāts",
+            "STATUS": "Statuss",
+            "STATUSPENDING": "Gaida apstiprinājumu...",
+            "STATUSCONFIRMED": "Veiksmīgi izvietots",
+            "STATUSFAILED": "Izvietošana neizdevās",
+            "TXID": "Darījuma ID",
+            "SENDER": "Sūtītājs",
+            "CONTRACTADDRESS": "Līguma adrese",
+            "GASUSED": "Izmantotā gāze",
+            "DONEBUTTON": "Pabeigts",
+            "DEPLOYANOTHERBUTTON": "Izvietot citu"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Darījumi",
+            "COPYBLOCKHASH": "Kopēt bloka jaucējkrānu",
+            "COPYTXID": "Kopēt darījuma ID",
+            "COPYACCOUNT": "Kopēt konta nosaukumu",
+            "COPYADDRESS": "Kopēt adresi",
+            "COPYAMOUNT": "Kopijas summa",
+            "COPTBLOCKINDEX": "Kopēt bloka indeksu",
+            "EXPLORER": "Atvērt bloku pārlūkā"
         },
         "STAKING": {
             "UNLOCK": "Atbloķēt likšanai",
@@ -68,13 +113,13 @@
             "IP": "IP adrese",
             "ADDRESS": "Adrese",
             "ENABLED": "Iespējots",
-            "STARTBUTTON": "Sākt lokālo",
-            "STARTALIASBUTTON": "Sākt aizstājvārdu",
-            "STARTALLBUTTON": "Sākt visu",
             "NOMASTERNODES": "Jums nav neviena galvenā mezgla.",
             "NOMNOUTPUTS": "Nav atrasti Masternode rezultāti. Lai palaistu lokālu Masternode, nosūtiet tieši 2, 5, 25, 50 vai 100 miljonus monētu uz savu Masternode adresi un gaidiet 15 apstiprinājumus.",
+            "STARTBUTTON": "Sākt lokālo",
             "STOPBUTTON": "Apturēt lokālo",
+            "STARTALIASBUTTON": "Sākt aizstājvārdu",
             "STOPALIASBUTTON": "Apturēt aizstājvārdu",
+            "STARTALLBUTTON": "Sākt visu",
             "ADDREMOTE": "Pievienot attālo galveno mezglu",
             "REMOVEMN": "Noņemt Masternode",
             "ADDLOCAL": "Iestatiet lokālo Masternode",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Vispārīgi",
                 "COREVERSION": "Galvenā versija",
+                "ALTITUDEVERSION": "Augstuma versija",
                 "PROTOCOLVERSION": "Protokola versija",
                 "WALLETVERSION": "Wallet.dat versija",
                 "NETWORKTITLE": "Tīkls",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternodu skaits",
                 "BLOCKCHAINTITLE": "Bloku ķēde",
                 "NUMBERBLOCKS": "Pašreizējais bloku skaits",
-                "BESTBLOCKTTIME": "Pēdējā bloka laiks",
-                "ALTITUDEVERSION": "Augstuma versija"
+                "BESTBLOCKTTIME": "Pēdējā bloka laiks"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Laipni lūdzam Metrix Core RPC konsolē. Ievadiet help, lai skatītu pieejamo komandu pārskatu.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Izvēlieties valodu"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Darījumi",
-            "COPYBLOCKHASH": "Kopēt bloka jaucējkrānu",
-            "COPYTXID": "Kopēt darījuma ID",
-            "COPYACCOUNT": "Kopēt konta nosaukumu",
-            "COPYADDRESS": "Kopēt adresi",
-            "COPYAMOUNT": "Kopijas summa",
-            "COPTBLOCKINDEX": "Kopēt bloka indeksu",
-            "EXPLORER": "Atvērt bloku pārlūkā"
+        "CURRENCY": {
+            "TITLE": "Atlasiet attēlošanas valūtu"
         },
         "EXPLORER": {
             "TITLE": "Bloku pārlūks",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Tīkls",
             "WINDOTAB": "Logs",
+            "BACKUPTAB": "Rezerves kopija",
+            "EXPLORERTAB": "Pētnieks",
+            "DEVELOPERTAB": "Izstrādātājs",
             "NETWORK": {
                 "PROXY": "Izveidojiet savienojumu, izmantojot SOCKS5 starpniekserveri",
                 "PROXYIP": "Starpniekservera IP adrese",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Samazināt aizverot",
                 "BEHAVIOURTITLE": "Sistēmas teknes un loga darbība"
             },
-            "BACKUPTAB": "Rezerves kopija",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automātiska dublēšana",
                 "ENABLED": "Automātiski dublēt wallet.dat pēc grafika",
                 "ENABLEDINFO": "Pēc grafika izveido jaunu maka faila dublējumu, lai vienmēr būtu pieejama jaunākā kopija, ja kaut kas noiet greizi.",
+                "INTERVALLABEL": "Dublēt ik pēc (dienām)",
                 "LASTBACKUP": "Pēdējā dublēšana:",
                 "NEVERBACKEDUP": "Automātiska dublēšana vēl nav veikta.",
                 "BACKUPNOWBUTTON": "Dublēt tūlīt",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Atiestatīt uz noklusējuma iestatījumiem",
                 "PRUNETITLE": "Dublēšanas vēsture",
                 "PRUNEINFO": "Vecākās automātiskās dublējumkopijas tiek dzēstas, lai šī mape neaugtu mūžīgi — tiek saglabātas tikai jaunākās, kas atrodas zemāk.",
-                "KEEPCOUNTLABEL": "Paturēt pēdējo",
-                "INTERVALLABEL": "Dublēt ik pēc (dienām)"
+                "KEEPCOUNTLABEL": "Paturēt pēdējo"
             },
-            "EXPLORERTAB": "Pētnieks",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Bloku pārlūks",
                 "BLOCKEXPLORERINFO": "Vietne tika atvērta, skatot darījumu bloku pārlūkā (piemēram, ar peles labo pogu noklikšķiniet uz darījuma > Skatīt pārlūkā).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Galvenais tīkls",
                 "TESTNET": "Testa tīkls",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Izstrādātāja režīms",
+                "DEVMODEINFO": "Pēc noklusējuma izslēgts un paredzēts tikai izstrādātājiem. Iespējojot šo opciju, tiek parādītas opcijas RPC savienojuma ignorēšanai — standarta lietotājiem šī opcija jāatstāj izslēgta.",
+                "DEVMODELABEL": "Iespējot izstrādātāja režīmu",
+                "WARNING": "Šie iestatījumi ir paredzēti tikai izstrādes nolūkiem. To maiņa var liegt makam vispār izveidot savienojumu ar dēmonu — izmantojiet šo iestatījumu tikai tad, ja zināt, ko darāt.",
+                "RPCHOSTTITLE": "RPC savienojums",
+                "RPCHOSTINFO": "Pēc noklusējuma Altitude izveido savienojumu ar dēmonu, kuru tas pats pārvalda, šajā datorā (127.0.0.1). Šo iestatījumu ignorēšana ļauj tam izveidot savienojumu ar citu dēmonu, piemēram, attālinātu regtest instanci, bez nepieciešamības palaist to lokāli. Ja savienojums izdodas, Altitude nelejupielādēs un neuzsāks savu lokālo dēmonu. Mērķa dēmona rpcallowip ir jāatļauj šis savienojums, un zemāk esošajam rpcuser/rpcpassword ir jāatbilst tā konfigurācijai. Stājas spēkā nekavējoties, restartēšana nav nepieciešama.",
+                "RPCHOSTLABEL": "RPC resursdators",
+                "RPCPORTLABEL": "RPC ports",
+                "RPCUSERLABEL": "RPC lietotājvārds",
+                "RPCPASSWORDLABEL": "RPC parole"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Pārskats",
-            "TRANSACTIONSTAB": "Darījumi",
-            "ADDRESSTABS": "Adreses"
-        },
-        "CURRENCY": {
-            "TITLE": "Atlasiet attēlošanas valūtu"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Informācijas panelis",
             "SEND": "Sūtīt",
+            "CREATECONTRACT": "Izveidot līgumu",
             "RECEIVE": "Saņemt",
             "TRANSACTIONS": "Darījumi",
             "STAKING": "Likmes noteikšana",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Bloku pārlūks",
             "SYNC": {
                 "CONNECTING": "Savienošana",
                 "NOBLOCKS": "Gaida blokus",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Makā pašlaik netiek veikta steikošana",
                 "MASTERNODEON": "Masternode pašlaik darbojas",
                 "MASTERNODEOFF": "Masternode pašlaik nedarbojas"
-            },
-            "EXPLORER": "Bloku pārlūks"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Ievadiet web3 vietnes adresi",
+            "GOBUTTON": "Ej",
+            "QUICKLAUNCH": "Ātrā palaišana",
+            "DEVTOOLS": "Atvērt izstrādātāja rīkus",
+            "ADDLINK": "Pievienot saiti",
+            "LINKNAMEPLACEHOLDER": "Vārds",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Saglabāt",
+            "CANCEL": "Atcelt",
+            "REMOVE": "Noņemt",
+            "REMOVECONFIRM": "Vai noņemt šo ātro saiti?",
+            "LINKEXISTS": "Šī saite jau ir jūsu ātrās palaišanas sarakstā",
+            "LINKINVALID": "Ievadiet derīgu vietnes adresi",
+            "LINKNETWORKLABEL": "Tīkls",
+            "LOADFAILED": "Neizdevās ielādēt vietni",
+            "SECURESITE": "Savienojums ir drošs — derīgs SSL sertifikāts",
+            "INSECURESITE": "Savienojums nav drošs",
+            "INVALIDCERTSITE": "Savienojums nav privāts — nederīgs vai neuzticams SSL sertifikāts"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ievadiet sava maka paroli",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core ir pieejams atjauninājums. Vai vēlaties to instalēt tūlīt?",
             "WALLETUPDATETITLE": "Augstuma atjauninājums pieejams",
             "WALLETUPDATEINFO": "Lietotnei Altitude ir pieejams atjauninājums. Vai vēlaties to lejupielādēt tūlīt?",
+            "WALLETUPDATEREADYTITLE": "Augstuma atjauninājums ir gatavs",
+            "WALLETUPDATEREADYINFO": "Atjauninājums ir lejupielādēts. Vai tagad restartēt lietotni Altitude, lai to instalētu?",
+            "WALLETUPDATERESTARTBUTTON": "Restartēt un instalēt",
+            "WALLETUPDATELATERBUTTON": "Vēlāk",
             "CLIENTUPDATEBUTTON": "Atjauninājums",
             "CLIENTUPDATECANCELBUTTON": "Neatjaunināt",
             "CLIENTUPDATESKIPBUTTON": "Izlaist šo atjauninājumu",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Visas iepriekšējās jūsu maka faila dublējumkopijas jāaizstāj ar jaunizveidotu, šifrētu maka failu. Drošības apsvērumu dēļ iepriekšējās nešifrētā maka faila dublējumkopijas kļūs nederīgas, tiklīdz sāksiet lietot jauno, šifrēto maku.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core negaidīti apstājās",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Radās problēma ar Metrix Core, kuras dēļ tas pārtrauca darbību. Ieteicams pārbaudīt debug.log failu, lai atrastu problēmas.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core komunikācijas kļūda",
+            "CLIENTUNKNOWNERRORINFO": "Radās problēma, sazinoties ar Metrix Core. Ieteicams pārbaudīt debug.log failu, lai atrastu problēmas.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core sāknēšanas kļūme",
+            "BOOTSTRAPFAILEDINFO": "Radās problēma, startējot Metrix Core. Ieteicams pārbaudīt augstuma žurnālfailu, lai atrastu problēmas.",
+            "BOOTSTRAPOFFERTITLE": "Maka dati ir ievērojami novecojuši",
+            "BOOTSTRAPOFFERINFO": "Ir pieejama jaunākā sāknēšanas versija, kas var ātri atjaunināt Metrix Core. Turpinot parasto sinhronizāciju, var paiet vairākas dienas, jo jūsu makam ir jālejupielādē un jāpārbauda katrs bloks, ko tas ir palaidis garām.",
+            "BOOTSTRAPOFFERBUTTON": "Lejupielādēt Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Turpināt parasto sinhronizāciju",
+            "BOOTSTRAPSPACEINFO": "Nav pietiekami daudz brīvas vietas diskā, lai lejupielādētu un izvilktu sāknēšanas failu. Nepieciešams: {required}, pieejams: {free}. Atbrīvojiet vietu un mēģiniet vēlreiz.",
+            "STARTUPFAILEDTITLE": "Metrix Core palaišana neizdevās",
+            "STARTUPFAILEDINFO": "Startējot Metrix Core, radās kļūda. Ieteicams pārbaudīt augstuma žurnālfailu, lai atrastu problēmas.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkopšanas rīki",
             "CLIENTINVALIDCONFIGTITLE": "Nederīga metrix.conf konfigurācija",
             "CLIENTINVALIDCONFIGINFO": "Jūsu metrix.conf failā ir nederīga galvenā mezgla iestatīšana, kuras dēļ Metrix Core nekavējoties izies. Lūdzu, pārbaudiet šo failu.",
             "ADDREMOTEMNTITLE": "Pievienot attālo galveno mezglu",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode privātā atslēga",
             "ADDREMOTEMNTXHASH": "Masternode darījumu jaucējkods",
             "ADDREMOTEMNTXINDEX": "Masternode darījumu indekss",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core sāknēšanas kļūme",
-            "BOOTSTRAPFAILEDINFO": "Radās problēma, startējot Metrix Core. Ieteicams pārbaudīt augstuma žurnālfailu, lai atrastu problēmas.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Atkopšanas rīki",
-            "STARTUPFAILEDTITLE": "Metrix Core palaišana neizdevās",
-            "STARTUPFAILEDINFO": "Startējot Metrix Core, radās kļūda. Ieteicams pārbaudīt augstuma žurnālfailu, lai atrastu problēmas.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core komunikācijas kļūda",
-            "CLIENTUNKNOWNERRORINFO": "Radās problēma, sazinoties ar Metrix Core. Ieteicams pārbaudīt debug.log failu, lai atrastu problēmas.",
             "UNENROLLGOVERNORTITLE": "Apstiprināt gubernatora atcelšanu",
             "UNENROLLGOVERNORCONTENT": "Vai tiešām vēlaties atcelt sava pārvaldnieka reģistrāciju? Jūs vairs nevarēsiet balsot par ķēdes pārvaldību.",
-            "WALLETUPDATEREADYTITLE": "Augstuma atjauninājums ir gatavs",
-            "WALLETUPDATEREADYINFO": "Atjauninājums ir lejupielādēts. Vai tagad restartēt lietotni Altitude, lai to instalētu?",
-            "WALLETUPDATERESTARTBUTTON": "Restartēt un instalēt",
-            "WALLETUPDATELATERBUTTON": "Vēlāk",
             "DAPPCONNECTTITLE": "Izveidot savienojumu ar vietni",
             "DAPPCONNECTINFO": "Šī vietne vēlas izveidot savienojumu ar jūsu maku un skatīt jūsu adresi un atlikumu.",
             "DAPPCONNECTBUTTON": "Savienojuma izveide",
+            "DAPPCONNECTADDRESSLABEL": "Adrese",
+            "DAPPAPPROVEBUTTON": "Apstiprināt",
             "DAPPREJECTBUTTON": "Noraidīt",
             "DAPPSENDTITLE": "Līguma darījuma pieprasījums",
             "DAPPSENDINFO": "Šī vietne pieprasa nosūtīt līguma darījumu no jūsu maka.",
-            "DAPPSIGNTITLE": "Pieprasījuma par parakstīšanu ziņojums",
-            "DAPPSIGNINFO": "Šī vietne pieprasa parakstīt ziņojumu ar jūsu maka adresi.",
-            "DAPPNOTREADY": "Vēl nevar izveidot savienojumu ar vietni — Metrix Core joprojām tiek startēts.",
-            "DAPPNOWALLET": "Nevar izveidot savienojumu ar vietni — maka adrese nav pieejama.",
-            "DAPPAPPROVEBUTTON": "Apstiprināt",
-            "DAPPCONNECTADDRESSLABEL": "Adrese",
             "DAPPSENDSITELABEL": "Vietne",
             "DAPPSENDCONTRACTLABEL": "Līguma adrese",
             "DAPPSENDAMOUNTLABEL": "Summa",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimālā tīkla maksa",
             "DAPPSENDMAXTOTALLABEL": "Maksimālā summa",
             "DAPPSENDDATALABEL": "Līguma dati",
+            "DAPPSIGNTITLE": "Pieprasījuma par parakstīšanu ziņojums",
+            "DAPPSIGNINFO": "Šī vietne pieprasa parakstīt ziņojumu ar jūsu maka adresi.",
             "DAPPSIGNMESSAGELABEL": "Ziņojums",
-            "BOOTSTRAPOFFERTITLE": "Maka dati ir ievērojami novecojuši",
-            "BOOTSTRAPOFFERINFO": "Ir pieejama jaunākā sāknēšanas versija, kas var ātri atjaunināt Metrix Core. Turpinot parasto sinhronizāciju, var paiet vairākas dienas, jo jūsu makam ir jālejupielādē un jāpārbauda katrs bloks, ko tas ir palaidis garām.",
-            "BOOTSTRAPOFFERBUTTON": "Lejupielādēt Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Turpināt parasto sinhronizāciju",
-            "BOOTSTRAPSPACEINFO": "Nav pietiekami daudz brīvas vietas diskā, lai lejupielādētu un izvilktu sāknēšanas failu. Nepieciešams: {required}, pieejams: {free}. Atbrīvojiet vietu un mēģiniet vēlreiz."
+            "DAPPNOTREADY": "Vēl nevar izveidot savienojumu ar vietni — Metrix Core joprojām tiek startēts.",
+            "DAPPNOWALLET": "Nevar izveidot savienojumu ar vietni — maka adrese nav pieejama."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adrešu grāmata",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Pašreizējais tīkls"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Ievadiet web3 vietnes adresi",
-            "GOBUTTON": "Ej",
-            "QUICKLAUNCH": "Ātrā palaišana",
-            "DEVTOOLS": "Atvērt izstrādātāja rīkus",
-            "ADDLINK": "Pievienot saiti",
-            "LINKNAMEPLACEHOLDER": "Vārds",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Saglabāt",
-            "CANCEL": "Atcelt",
-            "REMOVE": "Noņemt",
-            "REMOVECONFIRM": "Vai noņemt šo ātro saiti?",
-            "LINKEXISTS": "Šī saite jau ir jūsu ātrās palaišanas sarakstā",
-            "LINKINVALID": "Ievadiet derīgu vietnes adresi",
-            "LINKNETWORKLABEL": "Tīkls",
-            "LOADFAILED": "Neizdevās ielādēt vietni",
-            "SECURESITE": "Savienojums ir drošs — derīgs SSL sertifikāts",
-            "INSECURESITE": "Savienojums nav drošs",
-            "INVALIDCERTSITE": "Savienojums nav privāts — nederīgs vai neuzticams SSL sertifikāts"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Rezerves maks...",
             "SIGNMESSAGE": "Parakstīt ziņojumu...",
             "VERIFYMESSAGE": "Pārbaudīt ziņojumu...",
-            "LOCALE": "Valoda...",
-            "RESTARTCORE": "Restartējiet Metrix Core",
-            "EXIT": "Izeja",
             "OPTIONS": "Iespējas...",
+            "LOCALE": "Valoda...",
             "CURRENCIES": "Attēlot valūtu...",
-            "ALTITUDEREFRESH": "Atsvaidzināt augstuma datus"
+            "RESTARTCORE": "Restartējiet Metrix Core",
+            "ALTITUDEREFRESH": "Atsvaidzināt augstuma datus",
+            "EXIT": "Izeja"
         },
         "ENCRYPT": {
             "TITLE": "Šifrēt",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Kopējais atlikums",
+        "SPENDABLEBALANCE": "Iztērējamais atlikums",
+        "PENDINGBALANCE": "Neapmaksātais atlikums",
         "CANCELBUTTON": "Atcelt",
         "DONEBUTTON": "Pabeigts",
         "OKBUTTON": "Labi",
+        "ACCEPTBUTTON": "Pieņemt",
         "CLEARALLBUTTON": "Notīrīt visu",
         "ENTERACCOUNTLABEL": "Ievadiet šīs adreses apzīmējumu",
         "ENTERADDRESSLABEL": "Ievadiet Metrix adresi",
@@ -464,11 +511,8 @@
         "SORTBY": "Kārtot pēc",
         "SEARCH": "Meklēt",
         "FEE": "Maksa",
-        "ACCEPTBUTTON": "Pieņemt",
         "CONFIRMED": "Apstiprināts",
         "UNCONFIRMED": "Neapstiprināts",
-        "PENDINGBALANCE": "Neapmaksātais atlikums",
-        "SPENDABLEBALANCE": "Iztērējamais atlikums",
         "SAVEBUTTON": "Saglabāt"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core restartēšana...",
         "BOOTSTRAPPING": "Notiek sāknēšanas lejupielāde...",
         "BOOTSTRAPEXTRACTING": "Notiek sāknēšanas datu izgūšana...",
-        "TIMEREMAINING": "atlikušie:"
+        "TIMEREMAINING": "atlikušie:",
+        "DEVRPCOVERRIDEACTIVE": "Ir iestatīta izstrādātāja RPC savienojuma ignorēšana (Opcijas > Izstrādātājs), un tā nereaģē. Noņemiet to, lai atjaunotu savienojumu ar lokālo dēmonu normālā veidā.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Notīrīt RPC ignorēšanu un atjaunot savienojumu"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Jauns konts veiksmīgi izveidots",
         "ADDRESSCOPIEDCLIPBOARD": "Adrese kopēta starpliktuvē",
+        "COPIEDCLIPBOARD": "Kopēts starpliktuvē",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Darījumi kopēti starpliktuvē",
         "EMPTYFIELDS": "Lūdzu, aizpildiet visus laukus",
         "NOUPDATE": "Nav pieejams atjauninājums",
         "WALLETBACKEDUP": "Maka dublēšana veiksmīga",
+        "WALLETBACKUPFAILED": "Automātiska maka dublēšana neizdevās. Pārbaudiet dublējuma atrašanās vietu un pieejamo vietu diskā.",
         "PASSPHRASEMISMATCH": "Ievadītās paroles nesakrīt",
         "CHECKINGUPDATE": "Notiek atjauninājumu meklēšana...",
         "CHECKINGUPDATEFAILED": "Nevar pārbaudīt atjauninājumus. Pārbaudiet savu tīklu.",
+        "WALLETUPDATEDOWNLOADING": "Notiek atjauninājuma lejupielāde...",
         "SENDINGEXCEEDSBALANCE": "Jūsu nosūtītā summa pārsniedz jūsu izvēlēto atlikumu",
         "MISSINGCHANGEADDRESS": "Jums jānorāda mainīgā adrese",
         "MISSINGDESTINATIONADDRESS": "Jums jānorāda galamērķa adrese",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Notiek maka šifrēšana...",
         "CHANGINGPASSPHARASE": "Maina paroli...",
         "STARTINGMASTERNODE": "Tiek sākts galvenais mezgls...",
+        "STOPPINGMASTERNODE": "Aptur galveno mezglu...",
         "SENDINGTRANSACTION": "Notiek darījuma nosūtīšana...",
         "SIGNINGMESSAGE": "Notiek ziņojuma parakstīšana...",
         "SIGNEDMESSAGE": "Ziņojums parakstīts",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Notiek maka atbloķēšana...",
         "TRANSACTIONMISMATCH": "Darījuma kļūda. Lūdzu, mēģiniet vēlreiz.",
         "MINIMUMCONFIRMATIONS": "Visiem ievades datiem pirms tērēšanas ir nepieciešams vismaz viens apstiprinājums.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Darījumi kopēti starpliktuvē",
-        "STOPPINGMASTERNODE": "Aptur galveno mezglu...",
         "FAILEDTOWRITECONFIG": "Radās problēma, rakstot jūsu metrix.conf failā. Pārbaudiet, vai fails pastāv un vai pakalpojumam Altitude ir rakstīšanas atļaujas.",
         "NOPUBLICUP": "Nav atrasta publiska IP adrese. Pārbaudiet interneta savienojumu un restartējiet Altitude.",
         "CONFIGURINGLOCALMN": "Notiek lokālā Masternode konfigurēšana...",
         "REPORTINGISSUE": "Notiek diagnostikas informācijas iegūšana... Šī informācija tiks kopēta jūsu starpliktuvē.",
-        "WALLETUPDATEDOWNLOADING": "Notiek atjauninājuma lejupielāde...",
-        "WALLETBACKUPFAILED": "Automātiska maka dublēšana neizdevās. Pārbaudiet dublējuma atrašanās vietu un pieejamo vietu diskā.",
         "EXPLORERURLSAVED": "Pārlūka URL saglabāts",
         "EXPLORERURLRESET": "Pārlūka URL atjaunots uz noklusējuma vērtību",
         "EXPLORERURLINVALID": "Tas nav derīgs http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Nevarēja sasniegt šo URL — pārbaudiet to un mēģiniet vēlreiz."
+        "EXPLORERURLUNREACHABLE": "Nevarēja sasniegt šo URL — pārbaudiet to un mēģiniet vēlreiz.",
+        "DEVRPCHOSTSAVED": "RPC resursdators saglabāts",
+        "DEVRPCHOSTRESET": "RPC resursdatoram atjaunots noklusējuma iestatījums (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Saņemtās monētas",
+        "NEWTRANSACTION_TITLE_STAKE": "Saņemtā likme",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Saņemta Masternode atlīdzība"
     },
     "TIME": {
         "AFEWSECONDS": "Dažas sekundes",
@@ -533,11 +587,6 @@
         "MONTHS": "mēneši",
         "AYEAR": "Gads",
         "YEARS": "gadi"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Saņemtās monētas",
-        "NEWTRANSACTION_TITLE_STAKE": "Saņemtā likme",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Saņemta Masternode atlīdzība"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Pārvaldnieki ir atbildīgi par balsošanu par ikmēneša budžetiem un blokķēdes izmaiņām. Jūs varat kļūt par pārvaldnieku, fiksējot pareizo nodrošinājumu pārvaldības līgumā.",
                 "COLLATERAL": "Nepieciešamais nodrošinājums",
                 "ENROLL": "Reģistrēties",
+                "SELECTAGOVERNOR": "Izvēlieties atbilstošu gubernatora adresi",
+                "GOVERNORNOTSELECTED": "Nav izvēlēta neviena atbilstoša adrese",
                 "CONFIRMENROLL": "Jūs gatavojaties reģistrēties kā pārvaldnieks. Tas nosūtīs darījumu ar nepieciešamo nodrošinājumu pārvaldības līgumam. Jūs varat jebkurā laikā atsaukt reģistrāciju.",
                 "ISGOVERNORTITLE": "Jūs esat aktīvs gubernators!",
                 "ISGOVERNORDETAIL1": "Valdes locekļi ir atbildīgi par balsošanu par ikmēneša budžetiem un blokķēdes izmaiņām.",
                 "ISGOVERNORDETAIL2": "Lai saglabātu gubernatora amatu, jums būs jāpiedalās vismaz vienā balsojumā ik pēc 30 dienām.",
                 "ISGOVERNORDETAIL3": "Ja nav par ko balsot, varat manuāli turpināt reģistrāciju, nosūtot aktīvu ping.",
+                "MYGOVERNORADDRESS": "Mana gubernatora uzruna",
                 "UNENROLL": "Atcelt reģistrāciju",
                 "PING": "Sūtīt aktīvu ping",
                 "LASTPINGTITLE": "Pēdējais pings",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dienas",
                 "GOVERNORVOTEMATURITYHOURS": "stundas",
                 "GOVERNORVOTEMATURITYSUFFIX": "līdz briedumam",
-                "MYGOVERNORADDRESS": "Mana gubernatora uzruna",
-                "SELECTAGOVERNOR": "Izvēlieties atbilstošu gubernatora adresi",
-                "GOVERNORNOTSELECTED": "Nav izvēlēta neviena atbilstoša adrese",
                 "NOTFULLYSYNCEDTITLE": "Gubernatora statuss nav pieejams",
                 "NOTFULLYSYNCEDDETAIL": "Jūsu gubernatora reģistrācijas statuss kļūs redzams, kad jūsu blokķēde būs pilnībā sinhronizēta.",
                 "DGPMIGRATIONTITLE": "DGP migrācija",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Jūsu priekšlikums ir veiksmīgi izveidots",
             "ENROLLINGGOVERNOR": "Reģistrēšanās par gubernatoru...",
             "ENROLLEDGOVERNOR": "Jūsu reģistrācija būs pabeigta, tiklīdz jūsu darījums būs apstiprināts.",
-            "VOTINGONPROPOSAL": "Priekšlikuma balsojuma nosūtīšana",
-            "VOTEDONPROPOSAL": "Jūsu balss tiks ieskaitīta, tiklīdz darījums būs apstiprināts.",
             "PINGINGGOVERNOR": "Sūta ping...",
             "PINGEDGOVERNOR": "Ping veiksmīgi nosūtīts. Jūsu gubernatora informācija tiks atjaunināta, tiklīdz darījums būs apstiprināts.",
+            "VOTINGONPROPOSAL": "Priekšlikuma balsojuma nosūtīšana",
+            "VOTEDONPROPOSAL": "Jūsu balss tiks ieskaitīta, tiklīdz darījums būs apstiprināts.",
             "UNENROLLINGGOVERNOR": "Notiek gubernatora reģistrācijas atcelšana...",
             "UNENROLLEDGOVERNOR": "Darījums nosūtīts. Jūsu gubernatora reģistrācija tiks atcelta, tiklīdz darījums būs apstiprināts.",
             "GOVERNORNOTMATURE": "Jūsu gubernators vēl nav pietiekami nobriedis, lai veiktu šo darbību."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Iegādājieties Metrix",
+                "SEARCH": "Vēsture"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Jūs sūtāt",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Darījumu vēsture",
                 "SEARCHBUTTON": "MEKLĒT",
+                "SEARCHPLACEHOLDER": "Ievadiet MRX vai BTC adresi",
                 "TRANSACTIONDATE": "Datums",
                 "TRANSACTIONTYPE": "Sūtījuma veids",
                 "TRANSACTIONAMOUNT": "Summa",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Apstiprināts",
                 "TRANSACTIONNOTCONFIRMED": "Nav apstiprināts",
                 "TRANSACTIONREFUNDED": "Atmaksāts — zem minimālās summas",
-                "AVGSWAPPRICE": "Vidējā mijmaiņas cena",
-                "SEARCHPLACEHOLDER": "Ievadiet MRX vai BTC adresi"
+                "AVGSWAPPRICE": "Vidējā mijmaiņas cena"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Notiek maiņas adreses ģenerēšana...",
             "ALREADYHAVEADDRESS": "Jums jau ir BTC adrese, kas saistīta ar šo Metrix adresi.",
             "NOADDRESS": "Jūs neievadījāt Metrix adresi."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Iegādājieties Metrix",
-                "SEARCH": "Vēsture"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Parādīt slēpto",
                 "EMPTYTITLE": "Vēl nav atrasti žetoni",
                 "EMPTYDETAIL": "Altitude automātiski pārbauda bloku pārlūku, vai uz jūsu adresēm nosūtītie MRC20 un MRC721 tokeni ir bloķēti, un pēc tam visu tiešsaistē salīdzina ar jūsu mezglu. Tokenu var pievienot arī manuāli, ja zināt tā līguma adresi.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automātiskā žetonu pārbaude ir izslēgta, tāpēc jūsu adreses netiek pārbaudītas, vai tajās ir žetoni. Ieslēdziet to atpakaļ iepriekš norādītajā veidā vai pievienojiet žetonu manuāli, ja zināt tā līguma adresi.",
                 "HIDDENTITLE": "Slēptie žetoni",
                 "CONTEXTMENUHIDE": "Slēpt žetonu",
                 "ITEMSSUFFIX": "prece(-es)",
-                "NONENUMERABLETOOLTIP": "Šajā kolekcijā netiek atbalstīta atsevišķu priekšmetu uzskaitīšana — tā vietā tiek rādīts, cik jums pieder."
+                "NONENUMERABLETOOLTIP": "Šajā kolekcijā netiek atbalstīta atsevišķu priekšmetu uzskaitīšana — tā vietā tiek rādīts, cik jums pieder.",
+                "CHECKINGENABLED": "Pārbaude notiek",
+                "CHECKINGDISABLED": "Pārbaude",
+                "CHECKINGENABLEDTOOLTIP": "Žetonu pārbaude ir ieslēgta — Altitude periodiski pārbauda jūsu adreses, vai nav žetonu, un atjaunina atlikumus. Noklikšķiniet, lai izslēgtu.",
+                "CHECKINGDISABLEDTOOLTIP": "Žetonu pārbaude ir izslēgta — noklikšķiniet, lai to atkal ieslēgtu.",
+                "CHECKINGDISABLEDNOTICE": "Automātiskā žetonu pārbaude ir izslēgta. Jūsu adreses netiek skenētas, lai meklētu žetonus, un atlikumi netiks atjaunināti. Jūs joprojām varat pievienot žetonu manuāli."
             },
             "ADDTOKEN": {
                 "TITLE": "Pievienot žetonu",

@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "ਖਾਤਾ ਬਣਾਉ",
             "HIDEEMPTYACCOUNTS": "ਬੇਨਾਮ ਖਾਲੀ ਖਾਤੇ ਲੁਕਾਓ"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ਸੰਖੇਪ ਜਾਣਕਾਰੀ",
+            "TRANSACTIONSTAB": "ਲੈਣ-ਦੇਣ",
+            "ADDRESSTABS": "ਪਤੇ"
+        },
         "SEND": {
             "ADDRECIPIENT": "ਪ੍ਰਾਪਤਕਰਤਾ ਸ਼ਾਮਲ ਕਰੋ",
             "SEND": "ਭੇਜੋ",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "ਮਿਤੀ",
             "TABLECOLUMNS_CONFIRMS": "ਪੁਸ਼ਟੀਕਰਨ",
             "ALL_SELECTUNSELECT": "ਸਭ ਟੌਗਲ ਕਰੋ",
+            "TREEMODE": "ਟ੍ਰੀ ਮੋਡ",
+            "LISTMODE": "ਸੂਚੀ ਮੋਡ",
             "SENDAVAILABLE": "ਉਪਲਬਧ ਬਕਾਇਆ ਵਰਤੋ",
             "INPUTLOCKED": "ਇਨਪੁੱਟ ਲਾਕ ਹੈ। ਤੁਹਾਨੂੰ ਇਸ ਇਨਪੁੱਟ ਨੂੰ ਖਰਚਣ ਲਈ ਇਸਨੂੰ ਅਨਲੌਕ ਕਰਨ ਦੀ ਲੋੜ ਹੋਵੇਗੀ।",
             "CONTEXTMENULOCKINPUT": "ਲਾਕ ਇਨਪੁੱਟ",
@@ -38,10 +45,48 @@
             "AFTERFEE": "ਫੀਸ ਤੋਂ ਬਾਅਦ",
             "QUANTITY": "ਮਾਤਰਾ",
             "BYTES": "ਬਾਈਟ",
-            "TREEMODE": "ਟ੍ਰੀ ਮੋਡ",
-            "LISTMODE": "ਸੂਚੀ ਮੋਡ",
             "ALERTFEECHANGETITLE": "ਫ਼ੀਸ ਵਿੱਚ ਤਬਦੀਲੀ",
             "ALERTFEECHANGECONTENT": "ਅਸਲ ਲੈਣ-ਦੇਣ ਫੀਸ ਉਮੀਦ ਤੋਂ ਵੱਧ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਨਵੀਂ ਫੀਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "ਇਕਰਾਰਨਾਮਾ ਬਣਾਓ",
+            "INFO": "ਨੈੱਟਵਰਕ ਦੇ ਕੰਪਾਇਲ ਕੀਤੇ ਬਾਈਟਕੋਡ ਨੂੰ ਜਮ੍ਹਾਂ ਕਰਕੇ ਇੱਕ ਸਮਾਰਟ ਕੰਟਰੈਕਟ ਡਿਪਲਾਇ ਕਰੋ। ਇਹ ਇੱਕ ਕੋਰ ਚੇਨ ਫੰਕਸ਼ਨ ਹੈ - ਡਿਪਲਾਇ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਬਾਈਟਕੋਡ ਅਤੇ ਗੈਸ ਸੈਟਿੰਗਾਂ ਦੀ ਦੋ ਵਾਰ ਜਾਂਚ ਕਰੋ, ਡਿਪਲਾਇਮੈਂਟ ਨੂੰ ਅਨਡੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
+            "FROM": "ਤੋਂ",
+            "BYTECODE": "ਬਾਈਟਕੋਡ",
+            "BYTECODEPLACEHOLDER": "ਕੰਪਾਇਲ ਕੀਤਾ ਕੰਟਰੈਕਟ ਬਾਈਟਕੋਡ (ਹੈਕਸਾ) ਪੇਸਟ ਕਰੋ।",
+            "INVALIDBYTECODE": "ਬਾਈਟਕੋਡ ਇੱਕ ਵੈਧ ਹੈਕਸ ਸਟ੍ਰਿੰਗ (0-9, a-f) ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ ਜਿਸ ਵਿੱਚ ਅੱਖਰਾਂ ਦੀ ਇੱਕ ਬਰਾਬਰ ਸੰਖਿਆ ਹੋਵੇ",
+            "GASLIMIT": "ਗੈਸ ਸੀਮਾ",
+            "GASLIMITRANGE": "ਸੀਮਾ",
+            "GASPRICE": "ਗੈਸ ਦੀ ਕੀਮਤ (ਪ੍ਰਤੀ ਗੈਸ ਯੂਨਿਟ MRX)",
+            "GASPRICEMIN": "ਘੱਟੋ-ਘੱਟ",
+            "ESTIMATEDMAXCOST": "ਅਨੁਮਾਨਿਤ ਵੱਧ ਤੋਂ ਵੱਧ ਲਾਗਤ",
+            "DEPLOYBUTTON": "ਇਕਰਾਰਨਾਮਾ ਤੈਨਾਤ ਕਰੋ",
+            "INCOMPLETEFORM": "ਕਿਰਪਾ ਕਰਕੇ ਭੇਜਣ ਵਾਲੇ ਦਾ ਪਤਾ ਚੁਣੋ, ਵੈਧ ਬਾਈਟਕੋਡ ਦਰਜ ਕਰੋ, ਅਤੇ ਇੱਕ ਵੈਧ ਗੈਸ ਸੀਮਾ/ਕੀਮਤ ਸੈੱਟ ਕਰੋ।",
+            "HIGHGASPRICETITLE": "ਉੱਚ ਗੈਸ ਦੀ ਕੀਮਤ",
+            "HIGHGASPRICEINFO": "ਤੁਹਾਡੇ ਦੁਆਰਾ ਨਿਰਧਾਰਤ ਕੀਤੀ ਗਈ ਗੈਸ ਦੀ ਕੀਮਤ ਅਸਧਾਰਨ ਤੌਰ 'ਤੇ ਜ਼ਿਆਦਾ ਹੈ। ਇਸ ਤੈਨਾਤੀ ਦੀ ਕੀਮਤ ਇਸ ਤੱਕ ਹੋ ਸਕਦੀ ਹੈ:",
+            "DEPLOYING": "ਇਕਰਾਰਨਾਮਾ ਤੈਨਾਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+            "DEPLOYED": "ਕੰਟਰੈਕਟ ਤੈਨਾਤੀ ਸਪੁਰਦ ਕੀਤੀ ਗਈ",
+            "RESULTTITLE": "ਤੈਨਾਤੀ ਨਤੀਜਾ",
+            "STATUS": "ਸਥਿਤੀ",
+            "STATUSPENDING": "ਪੁਸ਼ਟੀਕਰਨ ਬਾਕੀ ਹੈ...",
+            "STATUSCONFIRMED": "ਸਫਲਤਾਪੂਰਵਕ ਤੈਨਾਤ ਕੀਤਾ ਗਿਆ",
+            "STATUSFAILED": "ਤੈਨਾਤੀ ਅਸਫਲ ਰਹੀ",
+            "TXID": "ਲੈਣ-ਦੇਣ ਆਈਡੀ",
+            "SENDER": "ਭੇਜਣ ਵਾਲਾ",
+            "CONTRACTADDRESS": "ਇਕਰਾਰਨਾਮੇ ਦਾ ਪਤਾ",
+            "GASUSED": "ਵਰਤੀ ਗਈ ਗੈਸ",
+            "DONEBUTTON": "ਹੋ ਗਿਆ",
+            "DEPLOYANOTHERBUTTON": "ਇੱਕ ਹੋਰ ਤੈਨਾਤ ਕਰੋ"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "ਲੈਣ-ਦੇਣ",
+            "COPYBLOCKHASH": "ਬਲਾਕ ਹੈਸ਼ ਕਾਪੀ ਕਰੋ",
+            "COPYTXID": "ਲੈਣ-ਦੇਣ ਆਈਡੀ ਕਾਪੀ ਕਰੋ",
+            "COPYACCOUNT": "ਖਾਤੇ ਦਾ ਨਾਮ ਕਾਪੀ ਕਰੋ",
+            "COPYADDRESS": "ਪਤਾ ਕਾਪੀ ਕਰੋ",
+            "COPYAMOUNT": "ਰਕਮ ਕਾਪੀ ਕਰੋ",
+            "COPTBLOCKINDEX": "ਕਾਪੀ ਬਲਾਕ ਇੰਡੈਕਸ",
+            "EXPLORER": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ ਵਿੱਚ ਖੋਲ੍ਹੋ"
         },
         "STAKING": {
             "UNLOCK": "ਸਟੇਕਿੰਗ ਲਈ ਅਨਲੌਕ ਕਰੋ",
@@ -68,13 +113,13 @@
             "IP": "ਆਈ.ਪੀ.",
             "ADDRESS": "ਪਤਾ",
             "ENABLED": "ਯੋਗ ਬਣਾਇਆ ਗਿਆ",
-            "STARTBUTTON": "ਸਥਾਨਕ ਸ਼ੁਰੂ ਕਰੋ",
-            "STARTALIASBUTTON": "ਉਪਨਾਮ ਸ਼ੁਰੂ ਕਰੋ",
-            "STARTALLBUTTON": "ਸਭ ਸ਼ੁਰੂ ਕਰੋ",
             "NOMASTERNODES": "ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਮਾਸਟਰਨੋਡ ਨਹੀਂ ਹਨ।",
             "NOMNOUTPUTS": "ਕੋਈ ਮਾਸਟਰਨੋਡ ਆਉਟਪੁੱਟ ਨਹੀਂ ਮਿਲਿਆ। ਸਥਾਨਕ ਮਾਸਟਰਨੋਡ ਚਲਾਉਣ ਲਈ ਆਪਣੇ ਮਾਸਟਰਨੋਡ ਪਤੇ 'ਤੇ ਬਿਲਕੁਲ 2,5,25,50 ਜਾਂ 100 ਮਿਲੀਅਨ ਸਿੱਕੇ ਭੇਜੋ ਅਤੇ 15 ਪੁਸ਼ਟੀਕਰਨਾਂ ਦੀ ਉਡੀਕ ਕਰੋ।",
+            "STARTBUTTON": "ਸਥਾਨਕ ਸ਼ੁਰੂ ਕਰੋ",
             "STOPBUTTON": "ਸਥਾਨਕ ਰੋਕੋ",
+            "STARTALIASBUTTON": "ਉਪਨਾਮ ਸ਼ੁਰੂ ਕਰੋ",
             "STOPALIASBUTTON": "ਉਪਨਾਮ ਬੰਦ ਕਰੋ",
+            "STARTALLBUTTON": "ਸਭ ਸ਼ੁਰੂ ਕਰੋ",
             "ADDREMOTE": "ਰਿਮੋਟ ਮਾਸਟਰਨੋਡ ਸ਼ਾਮਲ ਕਰੋ",
             "REMOVEMN": "ਮਾਸਟਰਨੋਡ ਹਟਾਓ",
             "ADDLOCAL": "ਸਥਾਨਕ ਮਾਸਟਰਨੋਡ ਸੈੱਟਅੱਪ ਕਰੋ",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "ਜਨਰਲ",
                 "COREVERSION": "ਕੋਰ ਵਰਜਨ",
+                "ALTITUDEVERSION": "ਉਚਾਈ ਵਰਜਨ",
                 "PROTOCOLVERSION": "ਪ੍ਰੋਟੋਕੋਲ ਵਰਜਨ",
                 "WALLETVERSION": "Wallet.dat ਵਰਜਨ",
                 "NETWORKTITLE": "ਨੈੱਟਵਰਕ",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "ਮਾਸਟਰਨੋਡਾਂ ਦੀ ਗਿਣਤੀ",
                 "BLOCKCHAINTITLE": "ਬਲਾਕ ਚੇਨ",
                 "NUMBERBLOCKS": "ਬਲਾਕਾਂ ਦੀ ਮੌਜੂਦਾ ਗਿਣਤੀ",
-                "BESTBLOCKTTIME": "ਆਖਰੀ ਬਲਾਕ ਸਮਾਂ",
-                "ALTITUDEVERSION": "ਉਚਾਈ ਵਰਜਨ"
+                "BESTBLOCKTTIME": "ਆਖਰੀ ਬਲਾਕ ਸਮਾਂ"
             },
             "DEBUG": {
                 "CONSOLEINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ RPC ਕੰਸੋਲ ਵਿੱਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ। ਉਪਲਬਧ ਕਮਾਂਡਾਂ ਦੀ ਸੰਖੇਪ ਜਾਣਕਾਰੀ ਲਈ ਮਦਦ ਟਾਈਪ ਕਰੋ।",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "ਭਾਸ਼ਾ ਚੁਣੋ"
         },
-        "TRANSACTIONS": {
-            "TITLE": "ਲੈਣ-ਦੇਣ",
-            "COPYBLOCKHASH": "ਬਲਾਕ ਹੈਸ਼ ਕਾਪੀ ਕਰੋ",
-            "COPYTXID": "ਲੈਣ-ਦੇਣ ਆਈਡੀ ਕਾਪੀ ਕਰੋ",
-            "COPYACCOUNT": "ਖਾਤੇ ਦਾ ਨਾਮ ਕਾਪੀ ਕਰੋ",
-            "COPYADDRESS": "ਪਤਾ ਕਾਪੀ ਕਰੋ",
-            "COPYAMOUNT": "ਰਕਮ ਕਾਪੀ ਕਰੋ",
-            "COPTBLOCKINDEX": "ਕਾਪੀ ਬਲਾਕ ਇੰਡੈਕਸ",
-            "EXPLORER": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ ਵਿੱਚ ਖੋਲ੍ਹੋ"
+        "CURRENCY": {
+            "TITLE": "ਡਿਸਪਲੇ ਮੁਦਰਾ ਚੁਣੋ"
         },
         "EXPLORER": {
             "TITLE": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "ਨੈੱਟਵਰਕ",
             "WINDOTAB": "ਖਿੜਕੀ",
+            "BACKUPTAB": "ਬੈਕਅੱਪ",
+            "EXPLORERTAB": "ਐਕਸਪਲੋਰਰ",
+            "DEVELOPERTAB": "ਡਿਵੇਲਪਰ",
             "NETWORK": {
                 "PROXY": "SOCKS5 ਪ੍ਰੌਕਸੀ ਰਾਹੀਂ ਜੁੜੋ",
                 "PROXYIP": "ਪ੍ਰੌਕਸੀ ਆਈ.ਪੀ.",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "ਬੰਦ ਕਰਨ 'ਤੇ ਛੋਟਾ ਕਰੋ",
                 "BEHAVIOURTITLE": "ਸਿਸਟਮ ਟ੍ਰੇ ਅਤੇ ਵਿੰਡੋ ਵਿਵਹਾਰ"
             },
-            "BACKUPTAB": "ਬੈਕਅੱਪ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "ਆਟੋਮੈਟਿਕ ਬੈਕਅੱਪ",
                 "ENABLED": "ਇੱਕ ਸ਼ਡਿਊਲ 'ਤੇ wallet.dat ਦਾ ਆਟੋਮੈਟਿਕਲੀ ਬੈਕਅੱਪ ਲਓ।",
                 "ENABLEDINFO": "ਇੱਕ ਸ਼ਡਿਊਲ 'ਤੇ ਤੁਹਾਡੀ ਵਾਲਿਟ ਫਾਈਲ ਦਾ ਇੱਕ ਤਾਜ਼ਾ ਬੈਕਅੱਪ ਬਣਾਉਂਦਾ ਹੈ, ਇਸ ਲਈ ਜੇਕਰ ਕੁਝ ਗਲਤ ਹੋ ਜਾਂਦਾ ਹੈ ਤਾਂ ਇੱਕ ਤਾਜ਼ਾ ਕਾਪੀ ਹਮੇਸ਼ਾ ਉਪਲਬਧ ਹੁੰਦੀ ਹੈ।",
+                "INTERVALLABEL": "ਹਰ (ਦਿਨ) ਬੈਕਅੱਪ ਲਓ",
                 "LASTBACKUP": "ਆਖਰੀ ਬੈਕਅੱਪ:",
                 "NEVERBACKEDUP": "ਅਜੇ ਤੱਕ ਕੋਈ ਆਟੋਮੈਟਿਕ ਬੈਕਅੱਪ ਨਹੀਂ ਲਿਆ ਗਿਆ ਹੈ।",
                 "BACKUPNOWBUTTON": "ਹੁਣੇ ਬੈਕਅੱਪ ਲਓ",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ਡਿਫੌਲਟ ਤੇ ਰੀਸੈਟ ਕਰੋ",
                 "PRUNETITLE": "ਬੈਕਅੱਪ ਇਤਿਹਾਸ",
                 "PRUNEINFO": "ਪੁਰਾਣੇ ਆਟੋਮੈਟਿਕ ਬੈਕਅੱਪ ਮਿਟਾ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ ਤਾਂ ਜੋ ਇਹ ਫੋਲਡਰ ਹਮੇਸ਼ਾ ਲਈ ਨਾ ਵਧੇ - ਸਿਰਫ਼ ਹੇਠਾਂ ਦਿੱਤੇ ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਬੈਕਅੱਪ ਹੀ ਰੱਖੇ ਜਾਂਦੇ ਹਨ।",
-                "KEEPCOUNTLABEL": "ਆਖਰੀ ਰੱਖੋ",
-                "INTERVALLABEL": "ਹਰ (ਦਿਨ) ਬੈਕਅੱਪ ਲਓ"
+                "KEEPCOUNTLABEL": "ਆਖਰੀ ਰੱਖੋ"
             },
-            "EXPLORERTAB": "ਐਕਸਪਲੋਰਰ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ",
                 "BLOCKEXPLORERINFO": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ 'ਤੇ ਕਿਸੇ ਲੈਣ-ਦੇਣ ਨੂੰ ਦੇਖਦੇ ਸਮੇਂ ਸਾਈਟ ਖੁੱਲ੍ਹ ਗਈ (ਜਿਵੇਂ ਕਿ ਲੈਣ-ਦੇਣ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ > ਐਕਸਪਲੋਰਰ 'ਤੇ ਦੇਖੋ)।",
@@ -259,25 +298,31 @@
                 "MAINNET": "ਮੇਨਨੈੱਟ",
                 "TESTNET": "ਟੈਸਟਨੈੱਟ",
                 "REGTEST": "ਰੀਟੈਸਟ"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "ਵਿਕਾਸਕਾਰ ਮੋਡ",
+                "DEVMODEINFO": "ਡਿਫਾਲਟ ਤੌਰ 'ਤੇ ਬੰਦ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਡਿਵੈਲਪਰਾਂ ਲਈ ਹੈ। ਇਸਨੂੰ ਸਮਰੱਥ ਕਰਨ ਨਾਲ RPC ਕਨੈਕਸ਼ਨ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਨ ਦੇ ਵਿਕਲਪ ਸਾਹਮਣੇ ਆਉਂਦੇ ਹਨ - ਮਿਆਰੀ ਉਪਭੋਗਤਾਵਾਂ ਨੂੰ ਇਸਨੂੰ ਬੰਦ ਛੱਡ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ।",
+                "DEVMODELABEL": "ਵਿਕਾਸਕਾਰ ਮੋਡ ਨੂੰ ਸਮਰੱਥ ਬਣਾਓ",
+                "WARNING": "ਇਹ ਸੈਟਿੰਗਾਂ ਸਿਰਫ਼ ਵਿਕਾਸ ਦੇ ਉਦੇਸ਼ਾਂ ਲਈ ਹਨ। ਇਹਨਾਂ ਨੂੰ ਬਦਲਣ ਨਾਲ ਵਾਲਿਟ ਨੂੰ ਡੈਮਨ ਨਾਲ ਜੁੜਨ ਤੋਂ ਬਿਲਕੁਲ ਵੀ ਰੋਕਿਆ ਜਾ ਸਕਦਾ ਹੈ - ਇਸਦੀ ਵਰਤੋਂ ਸਿਰਫ਼ ਤਾਂ ਹੀ ਕਰੋ ਜੇਕਰ ਤੁਸੀਂ ਜਾਣਦੇ ਹੋ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹੋ।",
+                "RPCHOSTTITLE": "RPC ਕਨੈਕਸ਼ਨ",
+                "RPCHOSTINFO": "ਡਿਫਾਲਟ ਤੌਰ 'ਤੇ Altitude ਉਸ ਡੈਮਨ ਨਾਲ ਜੁੜਦਾ ਹੈ ਜਿਸਨੂੰ ਇਹ ਆਪਣੇ ਆਪ ਪ੍ਰਬੰਧਿਤ ਕਰਦਾ ਹੈ, ਇਸ ਮਸ਼ੀਨ 'ਤੇ (127.0.0.1)। ਇਹਨਾਂ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਨ ਨਾਲ ਇਹ ਇੱਕ ਵੱਖਰੇ ਡੈਮਨ ਨਾਲ ਜੁੜਦਾ ਹੈ - ਉਦਾਹਰਨ ਲਈ ਇੱਕ ਰਿਮੋਟ ਰੀਗਟੈਸਟ ਇੰਸਟੈਂਸ, ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਚਲਾਉਣ ਦੀ ਲੋੜ ਤੋਂ ਬਿਨਾਂ। ਜੇਕਰ ਕਨੈਕਸ਼ਨ ਸਫਲ ਹੋ ਜਾਂਦਾ ਹੈ, ਤਾਂ Altitude ਆਪਣਾ ਸਥਾਨਕ ਡੈਮਨ ਡਾਊਨਲੋਡ ਜਾਂ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰੇਗਾ। ਟਾਰਗੇਟ ਡੈਮਨ ਦੇ rpcallowip ਨੂੰ ਇਸ ਕਨੈਕਸ਼ਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ, ਅਤੇ ਹੇਠਾਂ ਦਿੱਤੇ rpcuser/rpcpassword ਨੂੰ ਇਸਦੀ ਸੰਰਚਨਾ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। ਤੁਰੰਤ ਪ੍ਰਭਾਵੀ ਹੁੰਦਾ ਹੈ, ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
+                "RPCHOSTLABEL": "RPC ਹੋਸਟ",
+                "RPCPORTLABEL": "RPC ਪੋਰਟ",
+                "RPCUSERLABEL": "RPC ਯੂਜ਼ਰਨੇਮ",
+                "RPCPASSWORDLABEL": "RPC ਪਾਸਵਰਡ"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ਸੰਖੇਪ ਜਾਣਕਾਰੀ",
-            "TRANSACTIONSTAB": "ਲੈਣ-ਦੇਣ",
-            "ADDRESSTABS": "ਪਤੇ"
-        },
-        "CURRENCY": {
-            "TITLE": "ਡਿਸਪਲੇ ਮੁਦਰਾ ਚੁਣੋ"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ਡੈਸ਼ਬੋਰਡ",
             "SEND": "ਭੇਜੋ",
+            "CREATECONTRACT": "ਇਕਰਾਰਨਾਮਾ ਬਣਾਓ",
             "RECEIVE": "ਪ੍ਰਾਪਤ ਕਰੋ",
             "TRANSACTIONS": "ਲੈਣ-ਦੇਣ",
             "STAKING": "ਸਟੇਕਿੰਗ",
             "MASTERNODES": "ਮਾਸਟਰਨੋਡ",
+            "EXPLORER": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ",
             "SYNC": {
                 "CONNECTING": "ਜੁੜ ਰਿਹਾ ਹੈ",
                 "NOBLOCKS": "ਬਲਾਕਾਂ ਦੀ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ਵਾਲੇਟ ਇਸ ਵੇਲੇ ਸਟਾਕ ਨਹੀਂ ਕਰ ਰਿਹਾ ਹੈ",
                 "MASTERNODEON": "ਮਾਸਟਰਨੋਡ ਇਸ ਵੇਲੇ ਚੱਲ ਰਿਹਾ ਹੈ",
                 "MASTERNODEOFF": "ਮਾਸਟਰਨੋਡ ਇਸ ਵੇਲੇ ਨਹੀਂ ਚੱਲ ਰਿਹਾ ਹੈ।"
-            },
-            "EXPLORER": "ਬਲਾਕ ਐਕਸਪਲੋਰਰ"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "ਇੱਕ web3 ਸਾਈਟ ਪਤਾ ਦਰਜ ਕਰੋ",
+            "GOBUTTON": "ਜਾਓ",
+            "QUICKLAUNCH": "ਤੇਜ਼ ਲਾਂਚ",
+            "DEVTOOLS": "ਡਿਵੈਲਪਰ ਟੂਲ ਖੋਲ੍ਹੋ",
+            "ADDLINK": "ਲਿੰਕ ਸ਼ਾਮਲ ਕਰੋ",
+            "LINKNAMEPLACEHOLDER": "ਨਾਮ",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "ਸੇਵ ਕਰੋ",
+            "CANCEL": "ਰੱਦ ਕਰੋ",
+            "REMOVE": "ਹਟਾਓ",
+            "REMOVECONFIRM": "ਕੀ ਇਸ ਤੇਜ਼ ਲਿੰਕ ਨੂੰ ਹਟਾਉਣਾ ਹੈ?",
+            "LINKEXISTS": "ਉਹ ਲਿੰਕ ਪਹਿਲਾਂ ਹੀ ਤੁਹਾਡੀ ਤੁਰੰਤ ਲਾਂਚ ਸੂਚੀ ਵਿੱਚ ਹੈ।",
+            "LINKINVALID": "ਇੱਕ ਵੈਧ ਸਾਈਟ ਪਤਾ ਦਾਖਲ ਕਰੋ",
+            "LINKNETWORKLABEL": "ਨੈੱਟਵਰਕ",
+            "LOADFAILED": "ਸਾਈਟ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
+            "SECURESITE": "ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਹੈ - ਵੈਧ SSL ਸਰਟੀਫਿਕੇਟ",
+            "INSECURESITE": "ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ।",
+            "INVALIDCERTSITE": "ਕਨੈਕਸ਼ਨ ਨਿੱਜੀ ਨਹੀਂ ਹੈ - ਅਵੈਧ ਜਾਂ ਗੈਰ-ਭਰੋਸੇਯੋਗ SSL ਸਰਟੀਫਿਕੇਟ"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ਆਪਣਾ ਵਾਲਿਟ ਪਾਸਫ੍ਰੇਜ਼ ਦਰਜ ਕਰੋ",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਲਈ ਇੱਕ ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸਨੂੰ ਹੁਣੇ ਸਥਾਪਤ ਕਰਨਾ ਚਾਹੋਗੇ?",
             "WALLETUPDATETITLE": "ਉਚਾਈ ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ",
             "WALLETUPDATEINFO": "Altitude ਲਈ ਇੱਕ ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸਨੂੰ ਹੁਣੇ ਡਾਊਨਲੋਡ ਕਰਨਾ ਚਾਹੋਗੇ?",
+            "WALLETUPDATEREADYTITLE": "ਉਚਾਈ ਅੱਪਡੇਟ ਤਿਆਰ ਹੈ",
+            "WALLETUPDATEREADYINFO": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਹੋ ਗਿਆ ਹੈ। ਇਸਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਹੁਣੇ Altitude ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ?",
+            "WALLETUPDATERESTARTBUTTON": "ਰੀਸਟਾਰਟ ਅਤੇ ਸਥਾਪਤ ਕਰੋ",
+            "WALLETUPDATELATERBUTTON": "ਬਾਅਦ ਵਿੱਚ",
             "CLIENTUPDATEBUTTON": "ਅੱਪਡੇਟ",
             "CLIENTUPDATECANCELBUTTON": "ਅੱਪਡੇਟ ਨਾ ਕਰੋ",
             "CLIENTUPDATESKIPBUTTON": "ਇਸ ਅੱਪਡੇਟ ਨੂੰ ਛੱਡੋ",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "ਤੁਹਾਡੇ ਵੱਲੋਂ ਆਪਣੀ ਵਾਲਿਟ ਫਾਈਲ ਦੇ ਬਣਾਏ ਗਏ ਕਿਸੇ ਵੀ ਪੁਰਾਣੇ ਬੈਕਅੱਪ ਨੂੰ ਨਵੀਂ ਤਿਆਰ ਕੀਤੀ ਗਈ, ਏਨਕ੍ਰਿਪਟਡ ਵਾਲਿਟ ਫਾਈਲ ਨਾਲ ਬਦਲ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ। ਸੁਰੱਖਿਆ ਕਾਰਨਾਂ ਕਰਕੇ, ਜਿਵੇਂ ਹੀ ਤੁਸੀਂ ਨਵੇਂ, ਏਨਕ੍ਰਿਪਟਡ ਵਾਲਿਟ ਦੀ ਵਰਤੋਂ ਸ਼ੁਰੂ ਕਰਦੇ ਹੋ, ਅਣ-ਏਨਕ੍ਰਿਪਟਡ ਵਾਲਿਟ ਫਾਈਲ ਦੇ ਪਿਛਲੇ ਬੈਕਅੱਪ ਬੇਕਾਰ ਹੋ ਜਾਣਗੇ।",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਅਚਾਨਕ ਬੰਦ ਹੋ ਗਿਆ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core ਵਿੱਚ ਇੱਕ ਸਮੱਸਿਆ ਸੀ ਜਿਸ ਕਾਰਨ ਇਸਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ debug.log ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+            "CLIENTUNKNOWNERRORTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸੰਚਾਰ ਗਲਤੀ",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core ਨਾਲ ਸੰਚਾਰ ਕਰਨ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਆਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ debug.log ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+            "BOOTSTRAPFAILEDTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਬੂਟਸਟ੍ਰੈਪ ਅਸਫਲ ਰਿਹਾ",
+            "BOOTSTRAPFAILEDINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਬੂਟਸਟ੍ਰੈਪ ਕਰਨ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਆਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ Altitude ਲੌਗ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+            "BOOTSTRAPOFFERTITLE": "ਬਟੂਆ ਬਹੁਤ ਪੁਰਾਣਾ ਹੈ",
+            "BOOTSTRAPOFFERINFO": "ਇੱਕ ਹਾਲੀਆ ਬੂਟਸਟ੍ਰੈਪ ਉਪਲਬਧ ਹੈ ਜੋ ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਜਲਦੀ ਹੀ ਅੱਪ ਟੂ ਡੇਟ ਲਿਆ ਸਕਦਾ ਹੈ। ਇਸਦੀ ਬਜਾਏ ਇੱਕ ਆਮ ਸਿੰਕ ਨਾਲ ਜਾਰੀ ਰੱਖਣ ਵਿੱਚ ਕਈ ਦਿਨ ਲੱਗ ਸਕਦੇ ਹਨ, ਕਿਉਂਕਿ ਤੁਹਾਡੇ ਵਾਲਿਟ ਨੂੰ ਹਰ ਖੁੰਝੇ ਹੋਏ ਬਲਾਕ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਅਤੇ ਤਸਦੀਕ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।",
+            "BOOTSTRAPOFFERBUTTON": "ਬੂਟਸਟ੍ਰੈਪ ਡਾਊਨਲੋਡ ਕਰੋ",
+            "BOOTSTRAPOFFERCANCEL": "ਸਧਾਰਨ ਸਿੰਕ ਜਾਰੀ ਰੱਖੋ",
+            "BOOTSTRAPSPACEINFO": "ਬੂਟਸਟ੍ਰੈਪ ਡਾਊਨਲੋਡ ਕਰਨ ਅਤੇ ਐਕਸਟਰੈਕਟ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀ ਖਾਲੀ ਡਿਸਕ ਥਾਂ ਨਹੀਂ ਹੈ। ਲੋੜੀਂਦਾ: {ਲੋੜੀਂਦਾ}, ਉਪਲਬਧ: {ਮੁਫ਼ਤ}। ਕੁਝ ਜਗ੍ਹਾ ਖਾਲੀ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+            "STARTUPFAILEDTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸਟਾਰਟਅੱਪ ਅਸਫਲ ਰਿਹਾ",
+            "STARTUPFAILEDINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ Altitude ਲੌਗ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ਰਿਕਵਰੀ ਟੂਲ",
             "CLIENTINVALIDCONFIGTITLE": "ਅਵੈਧ metrix.conf ਸੰਰਚਨਾ",
             "CLIENTINVALIDCONFIGINFO": "ਤੁਹਾਡੇ metrix.conf ਵਿੱਚ ਇੱਕ ਅਵੈਧ ਮਾਸਟਰਨੋਡ ਸੈੱਟਅੱਪ ਹੈ ਜਿਸ ਕਾਰਨ Metrix Core ਤੁਰੰਤ ਬੰਦ ਹੋ ਜਾਵੇਗਾ। ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰੋ।",
             "ADDREMOTEMNTITLE": "ਰਿਮੋਟ ਮਾਸਟਰਨੋਡ ਸ਼ਾਮਲ ਕਰੋ",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "ਮਾਸਟਰਨੋਡ ਪ੍ਰਾਈਵੇਟ ਕੁੰਜੀ",
             "ADDREMOTEMNTXHASH": "ਮਾਸਟਰਨੋਡ ਟ੍ਰੈਕਸ ਹੈਸ਼",
             "ADDREMOTEMNTXINDEX": "ਮਾਸਟਰਨੋਡ ਟ੍ਰੈਕਸ ਇੰਡੈਕਸ",
-            "BOOTSTRAPFAILEDTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਬੂਟਸਟ੍ਰੈਪ ਅਸਫਲ ਰਿਹਾ",
-            "BOOTSTRAPFAILEDINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਬੂਟਸਟ੍ਰੈਪ ਕਰਨ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਆਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ Altitude ਲੌਗ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ਰਿਕਵਰੀ ਟੂਲ",
-            "STARTUPFAILEDTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸਟਾਰਟਅੱਪ ਅਸਫਲ ਰਿਹਾ",
-            "STARTUPFAILEDINFO": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ Altitude ਲੌਗ ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
-            "CLIENTUNKNOWNERRORTITLE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਸੰਚਾਰ ਗਲਤੀ",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core ਨਾਲ ਸੰਚਾਰ ਕਰਨ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਆਈ। ਸਮੱਸਿਆਵਾਂ ਲਈ ਆਪਣੀ debug.log ਫਾਈਲ ਦੀ ਜਾਂਚ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
             "UNENROLLGOVERNORTITLE": "ਗਵਰਨਰ ਵੱਲੋਂ ਨਾਮਾਂਕਣ ਰੱਦ ਕਰਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
             "UNENROLLGOVERNORCONTENT": "ਕੀ ਤੁਸੀਂ ਪੱਕਾ ਆਪਣੇ ਗਵਰਨਰ ਨੂੰ ਨਾਮਾਂਕਿਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਤੁਸੀਂ ਹੁਣ ਚੇਨ ਗਵਰਨੈਂਸ 'ਤੇ ਵੋਟ ਨਹੀਂ ਪਾ ਸਕੋਗੇ।",
-            "WALLETUPDATEREADYTITLE": "ਉਚਾਈ ਅੱਪਡੇਟ ਤਿਆਰ ਹੈ",
-            "WALLETUPDATEREADYINFO": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਹੋ ਗਿਆ ਹੈ। ਇਸਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਹੁਣੇ Altitude ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ?",
-            "WALLETUPDATERESTARTBUTTON": "ਰੀਸਟਾਰਟ ਅਤੇ ਸਥਾਪਤ ਕਰੋ",
-            "WALLETUPDATELATERBUTTON": "ਬਾਅਦ ਵਿੱਚ",
             "DAPPCONNECTTITLE": "ਸਾਈਟ ਨਾਲ ਜੁੜੋ",
             "DAPPCONNECTINFO": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਵਾਲਿਟ ਨਾਲ ਜੁੜਨਾ ਚਾਹੁੰਦੀ ਹੈ ਅਤੇ ਤੁਹਾਡਾ ਪਤਾ ਅਤੇ ਬਕਾਇਆ ਦੇਖਣਾ ਚਾਹੁੰਦੀ ਹੈ।",
             "DAPPCONNECTBUTTON": "ਜੁੜੋ",
+            "DAPPCONNECTADDRESSLABEL": "ਪਤਾ",
+            "DAPPAPPROVEBUTTON": "ਮਨਜ਼ੂਰ ਕਰੋ",
             "DAPPREJECTBUTTON": "ਅਸਵੀਕਾਰ ਕਰੋ",
             "DAPPSENDTITLE": "ਇਕਰਾਰਨਾਮਾ ਲੈਣ-ਦੇਣ ਦੀ ਬੇਨਤੀ",
             "DAPPSENDINFO": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਵਾਲਿਟ ਤੋਂ ਇੱਕ ਇਕਰਾਰਨਾਮਾ ਲੈਣ-ਦੇਣ ਭੇਜਣ ਦੀ ਬੇਨਤੀ ਕਰ ਰਹੀ ਹੈ।",
-            "DAPPSIGNTITLE": "ਸੁਨੇਹਾ ਬੇਨਤੀ 'ਤੇ ਦਸਤਖਤ ਕਰੋ",
-            "DAPPSIGNINFO": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਵਾਲਿਟ ਪਤੇ ਨਾਲ ਇੱਕ ਸੁਨੇਹੇ 'ਤੇ ਦਸਤਖਤ ਕਰਨ ਦੀ ਬੇਨਤੀ ਕਰ ਰਹੀ ਹੈ।",
-            "DAPPNOTREADY": "ਸਾਈਟ ਨਾਲ ਅਜੇ ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ - ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਅਜੇ ਵੀ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ।",
-            "DAPPNOWALLET": "ਸਾਈਟ ਨਾਲ ਜੁੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ - ਕੋਈ ਵਾਲਿਟ ਪਤਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
-            "DAPPAPPROVEBUTTON": "ਮਨਜ਼ੂਰ ਕਰੋ",
-            "DAPPCONNECTADDRESSLABEL": "ਪਤਾ",
             "DAPPSENDSITELABEL": "ਸਾਈਟ",
             "DAPPSENDCONTRACTLABEL": "ਇਕਰਾਰਨਾਮੇ ਦਾ ਪਤਾ",
             "DAPPSENDAMOUNTLABEL": "ਰਕਮ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "ਵੱਧ ਤੋਂ ਵੱਧ ਨੈੱਟਵਰਕ ਫ਼ੀਸ",
             "DAPPSENDMAXTOTALLABEL": "ਵੱਧ ਤੋਂ ਵੱਧ ਕੁੱਲ",
             "DAPPSENDDATALABEL": "ਇਕਰਾਰਨਾਮਾ ਡੇਟਾ",
+            "DAPPSIGNTITLE": "ਸੁਨੇਹਾ ਬੇਨਤੀ 'ਤੇ ਦਸਤਖਤ ਕਰੋ",
+            "DAPPSIGNINFO": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਵਾਲਿਟ ਪਤੇ ਨਾਲ ਇੱਕ ਸੁਨੇਹੇ 'ਤੇ ਦਸਤਖਤ ਕਰਨ ਦੀ ਬੇਨਤੀ ਕਰ ਰਹੀ ਹੈ।",
             "DAPPSIGNMESSAGELABEL": "ਸੁਨੇਹਾ",
-            "BOOTSTRAPOFFERTITLE": "ਬਟੂਆ ਬਹੁਤ ਪੁਰਾਣਾ ਹੈ",
-            "BOOTSTRAPOFFERINFO": "ਇੱਕ ਹਾਲੀਆ ਬੂਟਸਟ੍ਰੈਪ ਉਪਲਬਧ ਹੈ ਜੋ ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਜਲਦੀ ਹੀ ਅੱਪ ਟੂ ਡੇਟ ਲਿਆ ਸਕਦਾ ਹੈ। ਇਸਦੀ ਬਜਾਏ ਇੱਕ ਆਮ ਸਿੰਕ ਨਾਲ ਜਾਰੀ ਰੱਖਣ ਵਿੱਚ ਕਈ ਦਿਨ ਲੱਗ ਸਕਦੇ ਹਨ, ਕਿਉਂਕਿ ਤੁਹਾਡੇ ਵਾਲਿਟ ਨੂੰ ਹਰ ਖੁੰਝੇ ਹੋਏ ਬਲਾਕ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਅਤੇ ਤਸਦੀਕ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।",
-            "BOOTSTRAPOFFERBUTTON": "ਬੂਟਸਟ੍ਰੈਪ ਡਾਊਨਲੋਡ ਕਰੋ",
-            "BOOTSTRAPOFFERCANCEL": "ਸਧਾਰਨ ਸਿੰਕ ਜਾਰੀ ਰੱਖੋ",
-            "BOOTSTRAPSPACEINFO": "ਬੂਟਸਟ੍ਰੈਪ ਡਾਊਨਲੋਡ ਕਰਨ ਅਤੇ ਐਕਸਟਰੈਕਟ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀ ਖਾਲੀ ਡਿਸਕ ਥਾਂ ਨਹੀਂ ਹੈ। ਲੋੜੀਂਦਾ: {ਲੋੜੀਂਦਾ}, ਉਪਲਬਧ: {ਮੁਫ਼ਤ}। ਕੁਝ ਜਗ੍ਹਾ ਖਾਲੀ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+            "DAPPNOTREADY": "ਸਾਈਟ ਨਾਲ ਅਜੇ ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ - ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਅਜੇ ਵੀ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ।",
+            "DAPPNOWALLET": "ਸਾਈਟ ਨਾਲ ਜੁੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ - ਕੋਈ ਵਾਲਿਟ ਪਤਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"
         },
         "ADDRESSBOOK": {
             "TITLE": "ਐਡਰੈੱਸ ਬੁੱਕ",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "ਮੌਜੂਦਾ ਨੈੱਟਵਰਕ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "ਇੱਕ web3 ਸਾਈਟ ਪਤਾ ਦਰਜ ਕਰੋ",
-            "GOBUTTON": "ਜਾਓ",
-            "QUICKLAUNCH": "ਤੇਜ਼ ਲਾਂਚ",
-            "DEVTOOLS": "ਡਿਵੈਲਪਰ ਟੂਲ ਖੋਲ੍ਹੋ",
-            "ADDLINK": "ਲਿੰਕ ਸ਼ਾਮਲ ਕਰੋ",
-            "LINKNAMEPLACEHOLDER": "ਨਾਮ",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "ਸੇਵ ਕਰੋ",
-            "CANCEL": "ਰੱਦ ਕਰੋ",
-            "REMOVE": "ਹਟਾਓ",
-            "REMOVECONFIRM": "ਕੀ ਇਸ ਤੇਜ਼ ਲਿੰਕ ਨੂੰ ਹਟਾਉਣਾ ਹੈ?",
-            "LINKEXISTS": "ਉਹ ਲਿੰਕ ਪਹਿਲਾਂ ਹੀ ਤੁਹਾਡੀ ਤੁਰੰਤ ਲਾਂਚ ਸੂਚੀ ਵਿੱਚ ਹੈ।",
-            "LINKINVALID": "ਇੱਕ ਵੈਧ ਸਾਈਟ ਪਤਾ ਦਾਖਲ ਕਰੋ",
-            "LINKNETWORKLABEL": "ਨੈੱਟਵਰਕ",
-            "LOADFAILED": "ਸਾਈਟ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
-            "SECURESITE": "ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਹੈ - ਵੈਧ SSL ਸਰਟੀਫਿਕੇਟ",
-            "INSECURESITE": "ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ।",
-            "INVALIDCERTSITE": "ਕਨੈਕਸ਼ਨ ਨਿੱਜੀ ਨਹੀਂ ਹੈ - ਅਵੈਧ ਜਾਂ ਗੈਰ-ਭਰੋਸੇਯੋਗ SSL ਸਰਟੀਫਿਕੇਟ"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "ਬੈਕਅੱਪ ਵਾਲਿਟ...",
             "SIGNMESSAGE": "ਸੁਨੇਹੇ 'ਤੇ ਦਸਤਖਤ ਕਰੋ...",
             "VERIFYMESSAGE": "ਸੁਨੇਹੇ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ...",
-            "LOCALE": "ਭਾਸ਼ਾ...",
-            "RESTARTCORE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ",
-            "EXIT": "ਨਿਕਾਸ",
             "OPTIONS": "ਵਿਕਲਪ...",
+            "LOCALE": "ਭਾਸ਼ਾ...",
             "CURRENCIES": "ਮੁਦਰਾ ਦਿਖਾਓ...",
-            "ALTITUDEREFRESH": "ਉਚਾਈ ਡੇਟਾ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ"
+            "RESTARTCORE": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ",
+            "ALTITUDEREFRESH": "ਉਚਾਈ ਡੇਟਾ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ",
+            "EXIT": "ਨਿਕਾਸ"
         },
         "ENCRYPT": {
             "TITLE": "ਇਨਕ੍ਰਿਪਟ ਕਰੋ",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ਕੁੱਲ ਬਕਾਇਆ",
+        "SPENDABLEBALANCE": "ਖਰਚਯੋਗ ਬਕਾਇਆ",
+        "PENDINGBALANCE": "ਬਕਾਇਆ ਬਕਾਇਆ",
         "CANCELBUTTON": "ਰੱਦ ਕਰੋ",
         "DONEBUTTON": "ਹੋ ਗਿਆ",
         "OKBUTTON": "ਠੀਕ ਹੈ",
+        "ACCEPTBUTTON": "ਸਵੀਕਾਰ ਕਰੋ",
         "CLEARALLBUTTON": "ਸਭ ਸਾਫ਼ ਕਰੋ",
         "ENTERACCOUNTLABEL": "ਇਸ ਪਤੇ ਲਈ ਇੱਕ ਲੇਬਲ ਦਾਖਲ ਕਰੋ",
         "ENTERADDRESSLABEL": "ਮੈਟ੍ਰਿਕਸ ਪਤਾ ਦਰਜ ਕਰੋ",
@@ -464,11 +511,8 @@
         "SORTBY": "ਦੇ ਨਾਲ ਕ੍ਰਮਬੱਧ",
         "SEARCH": "ਖੋਜ",
         "FEE": "ਫੀਸ",
-        "ACCEPTBUTTON": "ਸਵੀਕਾਰ ਕਰੋ",
         "CONFIRMED": "ਪੁਸ਼ਟੀ ਕੀਤੀ ਗਈ",
         "UNCONFIRMED": "ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੋਈ",
-        "PENDINGBALANCE": "ਬਕਾਇਆ ਬਕਾਇਆ",
-        "SPENDABLEBALANCE": "ਖਰਚਯੋਗ ਬਕਾਇਆ",
         "SAVEBUTTON": "ਸੇਵ ਕਰੋ"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "ਮੈਟ੍ਰਿਕਸ ਕੋਰ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
         "BOOTSTRAPPING": "ਬੂਟਸਟ੍ਰੈਪ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
         "BOOTSTRAPEXTRACTING": "ਬੂਟਸਟ੍ਰੈਪ ਐਕਸਟਰੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
-        "TIMEREMAINING": "ਬਾਕੀ:"
+        "TIMEREMAINING": "ਬਾਕੀ:",
+        "DEVRPCOVERRIDEACTIVE": "ਇੱਕ ਡਿਵੈਲਪਰ RPC ਕਨੈਕਸ਼ਨ ਓਵਰਰਾਈਡ ਸੈੱਟ ਹੈ (ਵਿਕਲਪ > ਡਿਵੈਲਪਰ) ਅਤੇ ਜਵਾਬ ਨਹੀਂ ਦੇ ਰਿਹਾ ਹੈ। ਸਥਾਨਕ ਡੈਮਨ ਨਾਲ ਆਮ ਤੌਰ 'ਤੇ ਦੁਬਾਰਾ ਕਨੈਕਟ ਕਰਨ ਲਈ ਇਸਨੂੰ ਸਾਫ਼ ਕਰੋ।",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC ਓਵਰਰਾਈਡ ਸਾਫ਼ ਕਰੋ ਅਤੇ ਮੁੜ-ਕਨੈਕਟ ਕਰੋ"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "ਨਵਾਂ ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਬਣਾਇਆ ਗਿਆ",
         "ADDRESSCOPIEDCLIPBOARD": "ਪਤਾ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ",
+        "COPIEDCLIPBOARD": "ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ਲੈਣ-ਦੇਣ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤੇ ਗਏ",
         "EMPTYFIELDS": "ਕਿਰਪਾ ਕਰਕੇ ਸਾਰੇ ਖੇਤਰ ਭਰੋ।",
         "NOUPDATE": "ਕੋਈ ਅੱਪਡੇਟ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
         "WALLETBACKEDUP": "ਵਾਲੇਟ ਬੈਕਅੱਪ ਸਫਲ ਰਿਹਾ",
+        "WALLETBACKUPFAILED": "ਆਟੋਮੈਟਿਕ ਵਾਲਿਟ ਬੈਕਅੱਪ ਅਸਫਲ ਰਿਹਾ - ਆਪਣੇ ਬੈਕਅੱਪ ਸਥਾਨ ਅਤੇ ਉਪਲਬਧ ਡਿਸਕ ਸਪੇਸ ਦੀ ਜਾਂਚ ਕਰੋ।",
         "PASSPHRASEMISMATCH": "ਤੁਹਾਡੇ ਦੁਆਰਾ ਦਰਜ ਕੀਤੇ ਗਏ ਪਾਸਫਰੇਜ਼ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ।",
         "CHECKINGUPDATE": "ਅੱਪਡੇਟ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ...",
         "CHECKINGUPDATEFAILED": "ਅੱਪਡੇਟ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ। ਆਪਣੇ ਨੈੱਟਵਰਕ ਦੀ ਜਾਂਚ ਕਰੋ।",
+        "WALLETUPDATEDOWNLOADING": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
         "SENDINGEXCEEDSBALANCE": "ਤੁਹਾਡੇ ਦੁਆਰਾ ਭੇਜੀ ਜਾ ਰਹੀ ਰਕਮ ਤੁਹਾਡੇ ਚੁਣੇ ਹੋਏ ਬਕਾਏ ਤੋਂ ਵੱਧ ਹੈ।",
         "MISSINGCHANGEADDRESS": "ਤੁਹਾਨੂੰ ਇੱਕ ਤਬਦੀਲੀ ਪਤਾ ਦੱਸਣਾ ਪਵੇਗਾ।",
         "MISSINGDESTINATIONADDRESS": "ਤੁਹਾਨੂੰ ਇੱਕ ਮੰਜ਼ਿਲ ਪਤਾ ਦੇਣਾ ਪਵੇਗਾ।",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "ਵਾਲਿਟ ਨੂੰ ਇਨਕ੍ਰਿਪਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
         "CHANGINGPASSPHARASE": "ਪਾਸਫਰੇਜ ਬਦਲਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
         "STARTINGMASTERNODE": "ਮਾਸਟਰਨੋਡ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+        "STOPPINGMASTERNODE": "ਮਾਸਟਰਨੋਡ ਨੂੰ ਰੋਕਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
         "SENDINGTRANSACTION": "ਲੈਣ-ਦੇਣ ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
         "SIGNINGMESSAGE": "ਸੁਨੇਹੇ 'ਤੇ ਦਸਤਖਤ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ...",
         "SIGNEDMESSAGE": "ਸੁਨੇਹਾ ਹਸਤਾਖਰ ਕੀਤਾ ਗਿਆ",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "ਵਾਲਿਟ ਖੋਲ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
         "TRANSACTIONMISMATCH": "ਲੈਣ-ਦੇਣ ਵਿੱਚ ਗੜਬੜ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
         "MINIMUMCONFIRMATIONS": "ਸਾਰੇ ਇਨਪੁਟਸ ਨੂੰ ਖਰਚ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਘੱਟੋ-ਘੱਟ 1 ਪੁਸ਼ਟੀਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ਲੈਣ-ਦੇਣ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤੇ ਗਏ",
-        "STOPPINGMASTERNODE": "ਮਾਸਟਰਨੋਡ ਨੂੰ ਰੋਕਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
         "FAILEDTOWRITECONFIG": "ਤੁਹਾਡੀ metrix.conf ਫਾਈਲ ਨੂੰ ਲਿਖਣ ਵਿੱਚ ਇੱਕ ਸਮੱਸਿਆ ਆਈ ਸੀ। ਜਾਂਚ ਕਰੋ ਕਿ ਫਾਈਲ ਮੌਜੂਦ ਹੈ ਅਤੇ ਕੀ Altitude ਕੋਲ ਲਿਖਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।",
         "NOPUBLICUP": "ਕੋਈ ਜਨਤਕ IP ਪਤਾ ਨਹੀਂ ਮਿਲਿਆ। ਆਪਣੇ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ Altitude ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ।",
         "CONFIGURINGLOCALMN": "ਸਥਾਨਕ ਮਾਸਟਰਨੋਡ ਨੂੰ ਕੌਂਫਿਗਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
         "REPORTINGISSUE": "ਡਾਇਗਨੌਸਟਿਕ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ... ਇਹ ਜਾਣਕਾਰੀ ਤੁਹਾਡੇ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤੀ ਜਾਵੇਗੀ।",
-        "WALLETUPDATEDOWNLOADING": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
-        "WALLETBACKUPFAILED": "ਆਟੋਮੈਟਿਕ ਵਾਲਿਟ ਬੈਕਅੱਪ ਅਸਫਲ ਰਿਹਾ - ਆਪਣੇ ਬੈਕਅੱਪ ਸਥਾਨ ਅਤੇ ਉਪਲਬਧ ਡਿਸਕ ਸਪੇਸ ਦੀ ਜਾਂਚ ਕਰੋ।",
         "EXPLORERURLSAVED": "ਐਕਸਪਲੋਰਰ URL ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ",
         "EXPLORERURLRESET": "ਐਕਸਪਲੋਰਰ URL ਨੂੰ ਡਿਫੌਲਟ ਤੇ ਵਾਪਸ ਕਰ ਦਿੱਤਾ ਗਿਆ",
         "EXPLORERURLINVALID": "ਇਹ ਇੱਕ ਵੈਧ http(s) URL ਨਹੀਂ ਹੈ।",
-        "EXPLORERURLUNREACHABLE": "ਉਸ URL ਤੱਕ ਨਹੀਂ ਪਹੁੰਚ ਸਕਿਆ - ਇਸਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+        "EXPLORERURLUNREACHABLE": "ਉਸ URL ਤੱਕ ਨਹੀਂ ਪਹੁੰਚ ਸਕਿਆ - ਇਸਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+        "DEVRPCHOSTSAVED": "RPC ਹੋਸਟ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ",
+        "DEVRPCHOSTRESET": "RPC ਹੋਸਟ ਨੂੰ ਡਿਫੌਲਟ ਤੇ ਵਾਪਸ ਕਰ ਦਿੱਤਾ ਗਿਆ (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ਪ੍ਰਾਪਤ ਹੋਏ ਸਿੱਕੇ",
+        "NEWTRANSACTION_TITLE_STAKE": "ਪ੍ਰਾਪਤ ਕੀਤੀ ਹਿੱਸੇਦਾਰੀ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ਮਾਸਟਰਨੋਡ ਇਨਾਮ ਪ੍ਰਾਪਤ ਹੋਇਆ"
     },
     "TIME": {
         "AFEWSECONDS": "ਕੁਝ ਸਕਿੰਟ",
@@ -533,11 +587,6 @@
         "MONTHS": "ਮਹੀਨੇ",
         "AYEAR": "ਇੱਕ ਸਾਲ",
         "YEARS": "ਸਾਲ"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "ਪ੍ਰਾਪਤ ਹੋਏ ਸਿੱਕੇ",
-        "NEWTRANSACTION_TITLE_STAKE": "ਪ੍ਰਾਪਤ ਕੀਤੀ ਹਿੱਸੇਦਾਰੀ",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "ਮਾਸਟਰਨੋਡ ਇਨਾਮ ਪ੍ਰਾਪਤ ਹੋਇਆ"
     },
     "MONTH": {
         "JAN": "ਜਾਨ",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "ਗਵਰਨਰ ਮਾਸਿਕ ਬਜਟ ਅਤੇ ਬਲਾਕਚੈਨ ਤਬਦੀਲੀਆਂ 'ਤੇ ਵੋਟ ਪਾਉਣ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਹੁੰਦੇ ਹਨ। ਤੁਸੀਂ ਗਵਰਨੈਂਸ ਕੰਟਰੈਕਟ ਵਿੱਚ ਸਹੀ ਜਮਾਂਦਰੂ ਨੂੰ ਲਾਕ ਕਰਕੇ ਗਵਰਨਰ ਬਣ ਸਕਦੇ ਹੋ।",
                 "COLLATERAL": "ਲੋੜੀਂਦੀ ਜਮਾਨਤ",
                 "ENROLL": "ਨਾਮ ਦਰਜ ਕਰੋ",
+                "SELECTAGOVERNOR": "ਇੱਕ ਯੋਗ ਰਾਜਪਾਲ ਦਾ ਪਤਾ ਚੁਣੋ",
+                "GOVERNORNOTSELECTED": "ਕੋਈ ਯੋਗ ਪਤਾ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ ਸੀ।",
                 "CONFIRMENROLL": "ਤੁਸੀਂ ਗਵਰਨਰ ਵਜੋਂ ਨਾਮ ਦਰਜ ਕਰਵਾਉਣ ਵਾਲੇ ਹੋ। ਇਹ ਗਵਰਨੈਂਸ ਇਕਰਾਰਨਾਮੇ ਵਿੱਚ ਲੋੜੀਂਦੇ ਜਮਾਂਦਰੂ ਨਾਲ ਇੱਕ ਲੈਣ-ਦੇਣ ਭੇਜ ਦੇਵੇਗਾ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਨਾਮ ਦਰਜ ਕਰਵਾਉਣ ਤੋਂ ਇਨਕਾਰ ਕਰ ਸਕਦੇ ਹੋ।",
                 "ISGOVERNORTITLE": "ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਰਾਜਪਾਲ ਹੋ!",
                 "ISGOVERNORDETAIL1": "ਗਵਰਨਰ ਮਾਸਿਕ ਬਜਟ ਅਤੇ ਬਲਾਕਚੈਨ ਤਬਦੀਲੀਆਂ 'ਤੇ ਵੋਟ ਪਾਉਣ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਹਨ।",
                 "ISGOVERNORDETAIL2": "ਗਵਰਨਰ ਬਣੇ ਰਹਿਣ ਲਈ ਤੁਹਾਨੂੰ ਹਰ 30 ਦਿਨਾਂ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ 1 ਵੋਟ ਵਿੱਚ ਹਿੱਸਾ ਲੈਣ ਦੀ ਲੋੜ ਹੋਵੇਗੀ।",
                 "ISGOVERNORDETAIL3": "ਜੇਕਰ ਵੋਟ ਪਾਉਣ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ ਤਾਂ ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਪਿੰਗ ਭੇਜ ਕੇ ਹੱਥੀਂ ਆਪਣਾ ਨਾਮਾਂਕਣ ਜਾਰੀ ਰੱਖ ਸਕਦੇ ਹੋ।",
+                "MYGOVERNORADDRESS": "ਮੇਰਾ ਰਾਜਪਾਲ ਭਾਸ਼ਣ",
                 "UNENROLL": "ਅਨਐਨਰੋਲ ਕਰੋ",
                 "PING": "ਸਰਗਰਮ ਪਿੰਗ ਭੇਜੋ",
                 "LASTPINGTITLE": "ਆਖਰੀ ਪਿੰਗ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ਦਿਨ",
                 "GOVERNORVOTEMATURITYHOURS": "ਘੰਟੇ",
                 "GOVERNORVOTEMATURITYSUFFIX": "ਪੱਕਣ ਤੱਕ",
-                "MYGOVERNORADDRESS": "ਮੇਰਾ ਰਾਜਪਾਲ ਭਾਸ਼ਣ",
-                "SELECTAGOVERNOR": "ਇੱਕ ਯੋਗ ਰਾਜਪਾਲ ਦਾ ਪਤਾ ਚੁਣੋ",
-                "GOVERNORNOTSELECTED": "ਕੋਈ ਯੋਗ ਪਤਾ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ ਸੀ।",
                 "NOTFULLYSYNCEDTITLE": "ਰਾਜਪਾਲ ਦਾ ਦਰਜਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
                 "NOTFULLYSYNCEDDETAIL": "ਜਦੋਂ ਤੁਹਾਡਾ ਬਲਾਕਚੈਨ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸਿੰਕ ਵਿੱਚ ਹੋਵੇਗਾ ਤਾਂ ਤੁਹਾਡੀ ਗਵਰਨਰ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਸਥਿਤੀ ਦਿਖਾਈ ਦੇਵੇਗੀ।",
                 "DGPMIGRATIONTITLE": "ਡੀਜੀਪੀ ਮਾਈਗ੍ਰੇਸ਼ਨ",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "ਤੁਹਾਡਾ ਪ੍ਰਸਤਾਵ ਸਫਲਤਾਪੂਰਵਕ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
             "ENROLLINGGOVERNOR": "ਰਾਜਪਾਲ ਵਜੋਂ ਨਾਮ ਦਰਜ ਕਰਵਾਉਣਾ...",
             "ENROLLEDGOVERNOR": "ਤੁਹਾਡੇ ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡਾ ਦਾਖਲਾ ਪੂਰਾ ਹੋ ਜਾਵੇਗਾ।",
-            "VOTINGONPROPOSAL": "ਪ੍ਰਸਤਾਵ ਵੋਟ ਭੇਜ ਰਿਹਾ ਹੈ",
-            "VOTEDONPROPOSAL": "ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੀ ਵੋਟ ਗਿਣੀ ਜਾਵੇਗੀ।",
             "PINGINGGOVERNOR": "ਪਿੰਗ ਭੇਜ ਰਿਹਾ ਹੈ...",
             "PINGEDGOVERNOR": "ਪਿੰਗ ਸਫਲਤਾਪੂਰਵਕ ਭੇਜੀ ਗਈ। ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੇ ਗਵਰਨਰ ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਜਾਵੇਗਾ।",
+            "VOTINGONPROPOSAL": "ਪ੍ਰਸਤਾਵ ਵੋਟ ਭੇਜ ਰਿਹਾ ਹੈ",
+            "VOTEDONPROPOSAL": "ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੀ ਵੋਟ ਗਿਣੀ ਜਾਵੇਗੀ।",
             "UNENROLLINGGOVERNOR": "ਰਾਜਪਾਲ ਦਾ ਨਾਮ ਦਰਜ ਕਰਵਾਉਣਾ...",
             "UNENROLLEDGOVERNOR": "ਲੈਣ-ਦੇਣ ਭੇਜਿਆ ਗਿਆ। ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੇ ਗਵਰਨਰ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।",
             "GOVERNORNOTMATURE": "ਤੁਹਾਡਾ ਗਵਰਨਰ ਅਜੇ ਇੰਨਾ ਸਿਆਣਾ ਨਹੀਂ ਹੈ ਕਿ ਇਹ ਕਾਰਵਾਈ ਕਰ ਸਕੇ।"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "ਮੈਟ੍ਰਿਕਸ ਖਰੀਦੋ",
+                "SEARCH": "ਇਤਿਹਾਸ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "ਤੁਸੀਂ ਭੇਜੋ",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ਲੈਣ-ਦੇਣ ਦਾ ਇਤਿਹਾਸ",
                 "SEARCHBUTTON": "ਖੋਜ ਕਰੋ",
+                "SEARCHPLACEHOLDER": "MRX ਜਾਂ BTC ਪਤਾ ਦਰਜ ਕਰੋ",
                 "TRANSACTIONDATE": "ਮਿਤੀ",
                 "TRANSACTIONTYPE": "TX ਕਿਸਮ",
                 "TRANSACTIONAMOUNT": "ਰਕਮ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "ਪੁਸ਼ਟੀ ਕੀਤੀ ਗਈ",
                 "TRANSACTIONNOTCONFIRMED": "ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੋਈ",
                 "TRANSACTIONREFUNDED": "ਰਿਫੰਡ ਕੀਤਾ ਗਿਆ - ਘੱਟੋ-ਘੱਟ ਤੋਂ ਘੱਟ",
-                "AVGSWAPPRICE": "ਔਸਤ ਸਵੈਪ ਕੀਮਤ",
-                "SEARCHPLACEHOLDER": "MRX ਜਾਂ BTC ਪਤਾ ਦਰਜ ਕਰੋ"
+                "AVGSWAPPRICE": "ਔਸਤ ਸਵੈਪ ਕੀਮਤ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "ਸਵੈਪ ਪਤਾ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
             "ALREADYHAVEADDRESS": "ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਇਸ ਮੈਟ੍ਰਿਕਸ ਪਤੇ ਨਾਲ ਜੁੜਿਆ ਇੱਕ BTC ਪਤਾ ਹੈ।",
             "NOADDRESS": "ਤੁਸੀਂ ਮੈਟ੍ਰਿਕਸ ਪਤਾ ਦਰਜ ਨਹੀਂ ਕੀਤਾ।"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "ਮੈਟ੍ਰਿਕਸ ਖਰੀਦੋ",
-                "SEARCH": "ਇਤਿਹਾਸ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "ਦਿਖਾਓ",
                 "EMPTYTITLE": "ਅਜੇ ਤੱਕ ਕੋਈ ਟੋਕਨ ਨਹੀਂ ਮਿਲੇ",
                 "EMPTYDETAIL": "ਐਲਟੀਟਿਊਡ ਤੁਹਾਡੇ ਪਤਿਆਂ 'ਤੇ ਭੇਜੇ ਗਏ MRC20 ਅਤੇ MRC721 ਟੋਕਨਾਂ ਲਈ ਇੱਕ ਬਲਾਕ ਐਕਸਪਲੋਰਰ ਦੀ ਆਪਣੇ ਆਪ ਜਾਂਚ ਕਰਦਾ ਹੈ, ਫਿਰ ਤੁਹਾਡੇ ਆਪਣੇ ਨੋਡ ਦੇ ਵਿਰੁੱਧ ਹਰ ਚੀਜ਼ ਦੀ ਲਾਈਵ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਇਸਦਾ ਕੰਟਰੈਕਟ ਪਤਾ ਪਤਾ ਹੈ ਤਾਂ ਤੁਸੀਂ ਹੱਥੀਂ ਇੱਕ ਟੋਕਨ ਵੀ ਜੋੜ ਸਕਦੇ ਹੋ।",
+                "EMPTYDETAILCHECKINGDISABLED": "ਆਟੋਮੈਟਿਕ ਟੋਕਨ ਜਾਂਚ ਬੰਦ ਹੈ, ਇਸ ਲਈ ਤੁਹਾਡੇ ਪਤਿਆਂ ਦੀ ਟੋਕਨਾਂ ਲਈ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ। ਇਸਨੂੰ ਉੱਪਰ ਵਾਪਸ ਚਾਲੂ ਕਰੋ, ਜਾਂ ਜੇਕਰ ਤੁਹਾਨੂੰ ਇਸਦਾ ਇਕਰਾਰਨਾਮਾ ਪਤਾ ਪਤਾ ਹੈ ਤਾਂ ਹੱਥੀਂ ਇੱਕ ਟੋਕਨ ਸ਼ਾਮਲ ਕਰੋ।",
                 "HIDDENTITLE": "ਲੁਕਵੇਂ ਟੋਕਨ",
                 "CONTEXTMENUHIDE": "ਟੋਕਨ ਲੁਕਾਓ",
                 "ITEMSSUFFIX": "ਵਸਤੂਆਂ",
-                "NONENUMERABLETOOLTIP": "ਇਹ ਸੰਗ੍ਰਹਿ ਵਿਅਕਤੀਗਤ ਚੀਜ਼ਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਨ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ - ਇਸਦੀ ਬਜਾਏ ਇਹ ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਕੋਲ ਕਿੰਨੀਆਂ ਚੀਜ਼ਾਂ ਹਨ।"
+                "NONENUMERABLETOOLTIP": "ਇਹ ਸੰਗ੍ਰਹਿ ਵਿਅਕਤੀਗਤ ਚੀਜ਼ਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਨ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ - ਇਸਦੀ ਬਜਾਏ ਇਹ ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਕੋਲ ਕਿੰਨੀਆਂ ਚੀਜ਼ਾਂ ਹਨ।",
+                "CHECKINGENABLED": "ਚੈੱਕਿੰਗ ਚਾਲੂ",
+                "CHECKINGDISABLED": "ਚੈੱਕ ਆਫ",
+                "CHECKINGENABLEDTOOLTIP": "ਟੋਕਨ ਜਾਂਚ ਚਾਲੂ ਹੈ - Altitude ਸਮੇਂ-ਸਮੇਂ 'ਤੇ ਟੋਕਨਾਂ ਲਈ ਤੁਹਾਡੇ ਪਤਿਆਂ ਦੀ ਜਾਂਚ ਕਰਦਾ ਹੈ ਅਤੇ ਬਕਾਏ ਤਾਜ਼ਾ ਕਰਦਾ ਹੈ। ਬੰਦ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ।",
+                "CHECKINGDISABLEDTOOLTIP": "ਟੋਕਨ ਜਾਂਚ ਬੰਦ ਹੈ - ਵਾਪਸ ਚਾਲੂ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ।",
+                "CHECKINGDISABLEDNOTICE": "ਆਟੋਮੈਟਿਕ ਟੋਕਨ ਜਾਂਚ ਬੰਦ ਹੈ। ਤੁਹਾਡੇ ਪਤੇ ਟੋਕਨਾਂ ਲਈ ਸਕੈਨ ਨਹੀਂ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ ਅਤੇ ਬਕਾਏ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਣਗੇ। ਤੁਸੀਂ ਅਜੇ ਵੀ ਹੱਥੀਂ ਟੋਕਨ ਜੋੜ ਸਕਦੇ ਹੋ।"
             },
             "ADDTOKEN": {
                 "TITLE": "ਟੋਕਨ ਸ਼ਾਮਲ ਕਰੋ",

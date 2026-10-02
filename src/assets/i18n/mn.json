@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Бүртгэл үүсгэх",
             "HIDEEMPTYACCOUNTS": "Нэргүй хоосон бүртгэлүүдийг нуух"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Тойм",
+            "TRANSACTIONSTAB": "Гүйлгээнүүд",
+            "ADDRESSTABS": "Хаягууд"
+        },
         "SEND": {
             "ADDRECIPIENT": "Хүлээн авагч нэмэх",
             "SEND": "Илгээх",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Огноо",
             "TABLECOLUMNS_CONFIRMS": "Баталгаажуулалт",
             "ALL_SELECTUNSELECT": "Бүгдийг асаах/унтраах",
+            "TREEMODE": "Модны горим",
+            "LISTMODE": "Жагсаалтын горим",
             "SENDAVAILABLE": "Боломжит үлдэгдлийг ашиглах",
             "INPUTLOCKED": "Оролт түгжигдсэн байна. Та үүнийг зарцуулахын тулд энэ оролтын түгжээг тайлах шаардлагатай болно.",
             "CONTEXTMENULOCKINPUT": "Оролтыг түгжих",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Төлбөрийн дараах төлбөр",
             "QUANTITY": "Тоо хэмжээ",
             "BYTES": "Байт",
-            "TREEMODE": "Модны горим",
-            "LISTMODE": "Жагсаалтын горим",
             "ALERTFEECHANGETITLE": "Төлбөрийн өөрчлөлт",
             "ALERTFEECHANGECONTENT": "Гүйлгээний бодит хураамж хүлээгдэж байснаас өндөр байна. Шинэ хураамжийг баталгаажуулна уу:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Гэрээ үүсгэх",
+            "INFO": "Ухаалаг гэрээг сүлжээнд байршуулахын тулд түүний хөрвүүлсэн байткодыг илгээнэ үү. Энэ бол гол гинжин хэлхээний функц юм - байршуулахаасаа өмнө байткод болон хийн тохиргоогоо давхар шалгана уу, байршуулалтыг буцаах боломжгүй.",
+            "FROM": "-аас",
+            "BYTECODE": "Байт код",
+            "BYTECODEPLACEHOLDER": "Эмхэтгэсэн гэрээний байткодыг (hex) хуулж тавь",
+            "INVALIDBYTECODE": "Байт код нь тэгш тооны тэмдэгт бүхий хүчинтэй арван зургаатын тэмдэгт мөр (0-9, a-f) байх ёстой",
+            "GASLIMIT": "Хийн хязгаар",
+            "GASLIMITRANGE": "Хүрээ",
+            "GASPRICE": "Бензиний үнэ (MRX нэгж тутамд)",
+            "GASPRICEMIN": "Хамгийн бага",
+            "ESTIMATEDMAXCOST": "Тооцоолсон хамгийн их зардал",
+            "DEPLOYBUTTON": "Байршуулалтын гэрээ",
+            "INCOMPLETEFORM": "Илгээгчийн хаягийг сонгоод, хүчинтэй байткод оруулаад, хүчинтэй шатахууны хязгаар/үнэ тохируулна уу",
+            "HIGHGASPRICETITLE": "Бензиний өндөр үнэ",
+            "HIGHGASPRICEINFO": "Таны тогтоосон шатахууны үнэ ер бусын өндөр байна. Энэ байршуулалт нь дараах өртөгтэй байж болно:",
+            "DEPLOYING": "Байршуулалтын гэрээ...",
+            "DEPLOYED": "Гэрээг байршуулах ажлыг илгээсэн",
+            "RESULTTITLE": "Байршуулалтын үр дүн",
+            "STATUS": "Статус",
+            "STATUSPENDING": "Баталгаажуулалт хүлээгдэж байна...",
+            "STATUSCONFIRMED": "Амжилттай байршуулсан",
+            "STATUSFAILED": "Байршуулалт амжилтгүй боллоо",
+            "TXID": "Гүйлгээний дугаар",
+            "SENDER": "Илгээгч",
+            "CONTRACTADDRESS": "Гэрээний хаяг",
+            "GASUSED": "Ашигласан хий",
+            "DONEBUTTON": "Дууссан",
+            "DEPLOYANOTHERBUTTON": "Өөрийг байршуулах"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Гүйлгээнүүд",
+            "COPYBLOCKHASH": "Блок хэшийг хуулах",
+            "COPYTXID": "Гүйлгээний дугаарыг хуулах",
+            "COPYACCOUNT": "Бүртгэлийн нэрийг хуулах",
+            "COPYADDRESS": "Хаягийг хуулах",
+            "COPYAMOUNT": "Хуулбарлах хэмжээ",
+            "COPTBLOCKINDEX": "Блокийн индексийг хуулах",
+            "EXPLORER": "Block Explorer дээр нээх"
         },
         "STAKING": {
             "UNLOCK": "Staking-д зориулж түгжээг тайлах",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Хаяг",
             "ENABLED": "Идэвхжүүлсэн",
-            "STARTBUTTON": "Орон нутгийн эхлэл",
-            "STARTALIASBUTTON": "Алиас эхлүүлэх",
-            "STARTALLBUTTON": "Бүгдийг эхлүүлэх",
             "NOMASTERNODES": "Танд ямар ч мастернод байхгүй байна",
             "NOMNOUTPUTS": "Мастернодын гаралт олдсонгүй. Орон нутгийн Мастернодыг ажиллуулахын тулд яг 2, 5, 25, 50 эсвэл 100 сая зоосыг Мастернодын хаяг руугаа илгээгээд 15 баталгаажуулалтыг хүлээнэ үү.",
+            "STARTBUTTON": "Орон нутгийн эхлэл",
             "STOPBUTTON": "Орон нутгийн зогсолт",
+            "STARTALIASBUTTON": "Алиас эхлүүлэх",
             "STOPALIASBUTTON": "Алдаагаа зогсоох",
+            "STARTALLBUTTON": "Бүгдийг эхлүүлэх",
             "ADDREMOTE": "Алсын Мастернод нэмэх",
             "REMOVEMN": "Мастернодыг устгах",
             "ADDLOCAL": "Орон нутгийн мастер зангилааг тохируулах",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Ерөнхий",
                 "COREVERSION": "Гол хувилбар",
+                "ALTITUDEVERSION": "Өндөрлөгийн хувилбар",
                 "PROTOCOLVERSION": "Протоколын хувилбар",
                 "WALLETVERSION": "Wallet.dat хувилбар",
                 "NETWORKTITLE": "Сүлжээ",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Мастернодуудын тоо",
                 "BLOCKCHAINTITLE": "Блок гинж",
                 "NUMBERBLOCKS": "Одоогийн блокийн тоо",
-                "BESTBLOCKTTIME": "Сүүлийн блокийн цаг",
-                "ALTITUDEVERSION": "Өндөрлөгийн хувилбар"
+                "BESTBLOCKTTIME": "Сүүлийн блокийн цаг"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC консолд тавтай морилно уу. Боломжтой командуудын тоймыг харахын тулд help гэж бичнэ үү.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Хэл сонгох"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Гүйлгээнүүд",
-            "COPYBLOCKHASH": "Блок хэшийг хуулах",
-            "COPYTXID": "Гүйлгээний дугаарыг хуулах",
-            "COPYACCOUNT": "Бүртгэлийн нэрийг хуулах",
-            "COPYADDRESS": "Хаягийг хуулах",
-            "COPYAMOUNT": "Хуулбарлах хэмжээ",
-            "COPTBLOCKINDEX": "Блокийн индексийг хуулах",
-            "EXPLORER": "Block Explorer дээр нээх"
+        "CURRENCY": {
+            "TITLE": "Дэлгэцийн валютыг сонгох"
         },
         "EXPLORER": {
             "TITLE": "Блок судлаач",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Сүлжээ",
             "WINDOTAB": "Цонх",
+            "BACKUPTAB": "Нөөцлөлт",
+            "EXPLORERTAB": "Судлаач",
+            "DEVELOPERTAB": "Хөгжүүлэгч",
             "NETWORK": {
                 "PROXY": "SOCKS5 проксигоор холбогдоно уу",
                 "PROXYIP": "Прокси IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Хаах үед багасгах",
                 "BEHAVIOURTITLE": "Системийн тавиур ба цонхны зан төлөв"
             },
-            "BACKUPTAB": "Нөөцлөлт",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Автомат нөөцлөлт",
                 "ENABLED": "Хуваарийн дагуу wallet.dat-г автоматаар нөөцлөх",
                 "ENABLEDINFO": "Хуваарийн дагуу таны түрийвчний файлын шинэ нөөц хуулбарыг үүсгэдэг тул ямар нэгэн зүйл буруу болвол сүүлийн үеийн хуулбарыг үргэлж авах боломжтой.",
+                "INTERVALLABEL": "(Өдөр бүр) нөөцлөх",
                 "LASTBACKUP": "Сүүлийн нөөцлөлт:",
                 "NEVERBACKEDUP": "Автомат нөөцлөлт хараахан хийгдээгүй байна.",
                 "BACKUPNOWBUTTON": "Одоо нөөцлөх",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Анхдагч тохиргоонд нь дахин тохируулах",
                 "PRUNETITLE": "Нөөцлөлтийн түүх",
                 "PRUNEINFO": "Хуучин автомат нөөцлөлтүүд устгагдсан тул энэ хавтас үүрд өсөхгүй - зөвхөн доорх хамгийн сүүлийн үеийнх нь л хадгалагдана.",
-                "KEEPCOUNTLABEL": "Хамгийн сүүлд хадгалах",
-                "INTERVALLABEL": "(Өдөр бүр) нөөцлөх"
+                "KEEPCOUNTLABEL": "Хамгийн сүүлд хадгалах"
             },
-            "EXPLORERTAB": "Судлаач",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Блок судлаач",
                 "BLOCKEXPLORERINFO": "Блок хайгч дээр гүйлгээг харах үед сайт нээгдсэн (жишээ нь, гүйлгээ дээр хулганы баруун товчийг дарна уу > Explorer дээр харах).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Үндсэн сүлжээ",
                 "TESTNET": "Тестнет",
                 "REGTEST": "Бүртгэлийн тест"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Хөгжүүлэгчийн горим",
+                "DEVMODEINFO": "Анхдагчаар идэвхгүй бөгөөд зөвхөн хөгжүүлэгчдэд зориулагдсан. Үүнийг идэвхжүүлснээр RPC холболтыг дарж бичих сонголтууд гарч ирнэ - стандарт хэрэглэгчид үүнийг идэвхгүй орхих хэрэгтэй.",
+                "DEVMODELABEL": "Хөгжүүлэгчийн горимыг идэвхжүүлэх",
+                "WARNING": "Эдгээр тохиргоо нь зөвхөн хөгжүүлэлтийн зорилгоор зориулагдсан. Тэдгээрийг өөрчлөх нь түрийвчийг дэмонтой холбогдохоос огт сэргийлж болзошгүй - хэрэв та юу хийж байгаагаа мэдэж байгаа бол үүнийг ашиглаарай.",
+                "RPCHOSTTITLE": "RPC холболт",
+                "RPCHOSTINFO": "Анхдагчаар Altitude нь энэ машин дээр (127.0.0.1) өөрөө удирддаг дэмонтой холбогддог. Эдгээрийг дарснаар өөр дэмонтой холбогдох боломжтой болно - жишээлбэл, алсын regtest инстанц гэх мэт, орон нутгийн дэмоныг ажиллуулах шаардлагагүйгээр. Хэрэв холболт амжилттай болвол Altitude өөрийн орон нутгийн дэмоныг татаж авахгүй эсвэл эхлүүлэхгүй. Зорилтот дэмоны rpcalowip нь энэ холболтыг зөвшөөрөх ёстой бөгөөд доорх rpcuser/rpcpassword нь түүний тохиргоотой тохирч байх ёстой. Энэ нь шууд хүчин төгөлдөр болно, дахин эхлүүлэх шаардлагагүй.",
+                "RPCHOSTLABEL": "RPC хост",
+                "RPCPORTLABEL": "RPC порт",
+                "RPCUSERLABEL": "RPC хэрэглэгчийн нэр",
+                "RPCPASSWORDLABEL": "RPC нууц үг"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Тойм",
-            "TRANSACTIONSTAB": "Гүйлгээнүүд",
-            "ADDRESSTABS": "Хаягууд"
-        },
-        "CURRENCY": {
-            "TITLE": "Дэлгэцийн валютыг сонгох"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Хяналтын самбар",
             "SEND": "Илгээх",
+            "CREATECONTRACT": "Гэрээ үүсгэх",
             "RECEIVE": "Хүлээн авах",
             "TRANSACTIONS": "Гүйлгээнүүд",
             "STAKING": "Стэг хийх",
             "MASTERNODES": "Мастернодууд",
+            "EXPLORER": "Блок судлаач",
             "SYNC": {
                 "CONNECTING": "Холбогдож байна",
                 "NOBLOCKS": "Блокуудыг хүлээж байна",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Түрийвч одоогоор ставка хийгээгүй байна",
                 "MASTERNODEON": "Masternode одоогоор ажиллаж байна",
                 "MASTERNODEOFF": "Masternode одоогоор ажиллахгүй байна"
-            },
-            "EXPLORER": "Блок судлаач"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Web3 сайтын хаягийг оруулна уу",
+            "GOBUTTON": "Явах",
+            "QUICKLAUNCH": "Хурдан эхлүүлэх",
+            "DEVTOOLS": "Хөгжүүлэгчийн хэрэгслүүдийг нээх",
+            "ADDLINK": "Холбоос нэмэх",
+            "LINKNAMEPLACEHOLDER": "Нэр",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Хадгалах",
+            "CANCEL": "Цуцлах",
+            "REMOVE": "Хасах",
+            "REMOVECONFIRM": "Энэ хурдан холбоосыг устгах уу?",
+            "LINKEXISTS": "Энэ холбоос таны хурдан эхлүүлэх жагсаалтад аль хэдийн байна",
+            "LINKINVALID": "Хүчинтэй сайтын хаяг оруулна уу",
+            "LINKNETWORKLABEL": "Сүлжээ",
+            "LOADFAILED": "Сайтыг ачаалж чадсангүй",
+            "SECURESITE": "Холболт аюулгүй - хүчинтэй SSL сертификат",
+            "INSECURESITE": "Холболт аюулгүй биш байна",
+            "INVALIDCERTSITE": "Холболт хувийн биш байна - хүчингүй эсвэл найдваргүй SSL гэрчилгээ"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Түрийвчнийхээ нууц үгийг оруулна уу",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core-д зориулсан шинэчлэлт бэлэн байна. Та үүнийг одоо суулгахыг хүсэж байна уу?",
             "WALLETUPDATETITLE": "Өндрийн шинэчлэлт боломжтой",
             "WALLETUPDATEINFO": "Altitude-д зориулсан шинэчлэлт бэлэн байна. Та үүнийг одоо татаж авахыг хүсэж байна уу?",
+            "WALLETUPDATEREADYTITLE": "Өндрийн шинэчлэлт бэлэн байна",
+            "WALLETUPDATEREADYINFO": "Шинэчлэлтийг татаж авлаа. Үүнийг суулгахын тулд Altitude-г одоо дахин эхлүүлэх үү?",
+            "WALLETUPDATERESTARTBUTTON": "Дахин эхлүүлэх ба суулгах",
+            "WALLETUPDATELATERBUTTON": "Дараа нь",
             "CLIENTUPDATEBUTTON": "Шинэчлэлт",
             "CLIENTUPDATECANCELBUTTON": "Шинэчлэхгүй байх",
             "CLIENTUPDATESKIPBUTTON": "Энэ шинэчлэлтийг алгасах",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Түрийвчний файлаасаа өмнө нь хийсэн аливаа нөөцлөлтийг шинээр үүсгэсэн, шифрлэгдсэн түрийвчний файлаар солих хэрэгтэй. Аюулгүй байдлын үүднээс шифрлэгдээгүй түрийвчний файлын өмнөх нөөцлөлтүүд та шинэ, шифрлэгдсэн түрийвчийг ашиглаж эхэлмэгц ашиггүй болно.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core гэнэт зогссон",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core-д асуудал гарснаас болж ажиллагаа зогссон байна. Асуудлыг debug.log файлаасаа шалгахыг зөвлөж байна.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core харилцаа холбооны алдаа",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core-той холбогдоход асуудал гарлаа. Асуудлыг шалгахын тулд debug.log файлаа шалгахыг зөвлөж байна.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap амжилтгүй боллоо",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core-г ачаалахад асуудал гарлаа. Алдаа гарсан эсэхийг Altitude бүртгэлийн файлаа шалгахыг зөвлөж байна.",
+            "BOOTSTRAPOFFERTITLE": "Түрийвч мэдэгдэхүйц хуучирсан",
+            "BOOTSTRAPOFFERINFO": "Metrix Core-г хурдан шинэчлэх боломжтой хамгийн сүүлийн үеийн bootstrap хувилбар гарсан байна. Таны түрийвч алгассан блок бүрийг татаж аваад баталгаажуулах шаардлагатай тул ердийн синкийг үргэлжлүүлэхэд хэдэн өдөр шаардагдаж магадгүй.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap-г татаж авах",
+            "BOOTSTRAPOFFERCANCEL": "Хэвийн синкийг үргэлжлүүлэх",
+            "BOOTSTRAPSPACEINFO": "Bootstrap-г татаж аваад задлахад хангалттай дискний зай алга. Шаардлагатай: {required}, Боломжтой: {free}. Зай гаргаад дахин оролдоно уу.",
+            "STARTUPFAILEDTITLE": "Metrix Core эхлүүлэх ажиллагаа амжилтгүй боллоо",
+            "STARTUPFAILEDINFO": "Metrix Core-г эхлүүлэхэд алдаа гарлаа. Алдаа гарсан эсэхийг Altitude бүртгэлийн файлаа шалгахыг зөвлөж байна.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Сэргээх хэрэгслүүд",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf тохиргоо буруу байна",
             "CLIENTINVALIDCONFIGINFO": "Таны metrix.conf файл буруу masternode тохиргоотой тул Metrix Core шууд ажиллахаа болино. Энэ файлыг шалгана уу.",
             "ADDREMOTEMNTITLE": "Алсын Мастернод нэмэх",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Мастернод хувийн түлхүүр",
             "ADDREMOTEMNTXHASH": "Мастернод Тркс Хэш",
             "ADDREMOTEMNTXINDEX": "Мастернод Тркс Индекс",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap амжилтгүй боллоо",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core-г ачаалахад асуудал гарлаа. Алдаа гарсан эсэхийг Altitude бүртгэлийн файлаа шалгахыг зөвлөж байна.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Сэргээх хэрэгслүүд",
-            "STARTUPFAILEDTITLE": "Metrix Core эхлүүлэх ажиллагаа амжилтгүй боллоо",
-            "STARTUPFAILEDINFO": "Metrix Core-г эхлүүлэхэд алдаа гарлаа. Алдаа гарсан эсэхийг Altitude бүртгэлийн файлаа шалгахыг зөвлөж байна.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core харилцаа холбооны алдаа",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core-той холбогдоход асуудал гарлаа. Асуудлыг шалгахын тулд debug.log файлаа шалгахыг зөвлөж байна.",
             "UNENROLLGOVERNORTITLE": "Засаг даргын бүртгэлээс хасахыг баталгаажуулах",
             "UNENROLLGOVERNORCONTENT": "Та Засаг даргын бүртгэлээс хасахдаа итгэлтэй байна уу? Та цаашид сүлжээний засаглалын талаар санал өгөх боломжгүй болно.",
-            "WALLETUPDATEREADYTITLE": "Өндрийн шинэчлэлт бэлэн байна",
-            "WALLETUPDATEREADYINFO": "Шинэчлэлтийг татаж авлаа. Үүнийг суулгахын тулд Altitude-г одоо дахин эхлүүлэх үү?",
-            "WALLETUPDATERESTARTBUTTON": "Дахин эхлүүлэх ба суулгах",
-            "WALLETUPDATELATERBUTTON": "Дараа нь",
             "DAPPCONNECTTITLE": "Сайт руу холбогдох",
             "DAPPCONNECTINFO": "Энэ сайт таны түрийвчтэй холбогдож, хаяг болон үлдэгдлийг харахыг хүсэж байна.",
             "DAPPCONNECTBUTTON": "Холбогдох",
+            "DAPPCONNECTADDRESSLABEL": "Хаяг",
+            "DAPPAPPROVEBUTTON": "Зөвшөөрөх",
             "DAPPREJECTBUTTON": "Татгалзах",
             "DAPPSENDTITLE": "Гэрээний гүйлгээний хүсэлт",
             "DAPPSENDINFO": "Энэ сайт таны түрийвчнээс гэрээний гүйлгээ илгээхийг хүсэж байна.",
-            "DAPPSIGNTITLE": "Зурвасын хүсэлтэд гарын үсэг зурах",
-            "DAPPSIGNINFO": "Энэ сайт таны түрийвчний хаягаар мессеж бичих хүсэлт гаргаж байна.",
-            "DAPPNOTREADY": "Сайт руу холбогдож чадахгүй байна - Metrix Core одоо хүртэл ажиллаж байна.",
-            "DAPPNOWALLET": "Сайт руу холбогдож чадахгүй байна - түрийвчний хаяг байхгүй байна.",
-            "DAPPAPPROVEBUTTON": "Зөвшөөрөх",
-            "DAPPCONNECTADDRESSLABEL": "Хаяг",
             "DAPPSENDSITELABEL": "Сайт",
             "DAPPSENDCONTRACTLABEL": "Гэрээний хаяг",
             "DAPPSENDAMOUNTLABEL": "Дүн",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Сүлжээний дээд хураамж",
             "DAPPSENDMAXTOTALLABEL": "Дээд нийт дүн",
             "DAPPSENDDATALABEL": "Гэрээний өгөгдөл",
+            "DAPPSIGNTITLE": "Зурвасын хүсэлтэд гарын үсэг зурах",
+            "DAPPSIGNINFO": "Энэ сайт таны түрийвчний хаягаар мессеж бичих хүсэлт гаргаж байна.",
             "DAPPSIGNMESSAGELABEL": "Мессеж",
-            "BOOTSTRAPOFFERTITLE": "Түрийвч мэдэгдэхүйц хуучирсан",
-            "BOOTSTRAPOFFERINFO": "Metrix Core-г хурдан шинэчлэх боломжтой хамгийн сүүлийн үеийн bootstrap хувилбар гарсан байна. Таны түрийвч алгассан блок бүрийг татаж аваад баталгаажуулах шаардлагатай тул ердийн синкийг үргэлжлүүлэхэд хэдэн өдөр шаардагдаж магадгүй.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap-г татаж авах",
-            "BOOTSTRAPOFFERCANCEL": "Хэвийн синкийг үргэлжлүүлэх",
-            "BOOTSTRAPSPACEINFO": "Bootstrap-г татаж аваад задлахад хангалттай дискний зай алга. Шаардлагатай: {required}, Боломжтой: {free}. Зай гаргаад дахин оролдоно уу."
+            "DAPPNOTREADY": "Сайт руу холбогдож чадахгүй байна - Metrix Core одоо хүртэл ажиллаж байна.",
+            "DAPPNOWALLET": "Сайт руу холбогдож чадахгүй байна - түрийвчний хаяг байхгүй байна."
         },
         "ADDRESSBOOK": {
             "TITLE": "Хаягийн дэвтэр",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Одоогийн сүлжээ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Web3 сайтын хаягийг оруулна уу",
-            "GOBUTTON": "Явах",
-            "QUICKLAUNCH": "Хурдан эхлүүлэх",
-            "DEVTOOLS": "Хөгжүүлэгчийн хэрэгслүүдийг нээх",
-            "ADDLINK": "Холбоос нэмэх",
-            "LINKNAMEPLACEHOLDER": "Нэр",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Хадгалах",
-            "CANCEL": "Цуцлах",
-            "REMOVE": "Хасах",
-            "REMOVECONFIRM": "Энэ хурдан холбоосыг устгах уу?",
-            "LINKEXISTS": "Энэ холбоос таны хурдан эхлүүлэх жагсаалтад аль хэдийн байна",
-            "LINKINVALID": "Хүчинтэй сайтын хаяг оруулна уу",
-            "LINKNETWORKLABEL": "Сүлжээ",
-            "LOADFAILED": "Сайтыг ачаалж чадсангүй",
-            "SECURESITE": "Холболт аюулгүй - хүчинтэй SSL сертификат",
-            "INSECURESITE": "Холболт аюулгүй биш байна",
-            "INVALIDCERTSITE": "Холболт хувийн биш байна - хүчингүй эсвэл найдваргүй SSL гэрчилгээ"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Нөөц түрийвч...",
             "SIGNMESSAGE": "Зурвас дээр гарын үсэг зурна уу...",
             "VERIFYMESSAGE": "Мессежийг баталгаажуулах...",
-            "LOCALE": "Хэл...",
-            "RESTARTCORE": "Metrix Core-г дахин эхлүүлнэ үү",
-            "EXIT": "Гарах",
             "OPTIONS": "Сонголтууд...",
+            "LOCALE": "Хэл...",
             "CURRENCIES": "Валютыг харуулах...",
-            "ALTITUDEREFRESH": "Өндрийн өгөгдлийг шинэчлэх"
+            "RESTARTCORE": "Metrix Core-г дахин эхлүүлнэ үү",
+            "ALTITUDEREFRESH": "Өндрийн өгөгдлийг шинэчлэх",
+            "EXIT": "Гарах"
         },
         "ENCRYPT": {
             "TITLE": "Шифрлэх",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Нийт үлдэгдэл",
+        "SPENDABLEBALANCE": "Зарцуулж болох үлдэгдэл",
+        "PENDINGBALANCE": "Хүлээгдэж буй үлдэгдэл",
         "CANCELBUTTON": "Цуцлах",
         "DONEBUTTON": "Дууссан",
         "OKBUTTON": "Зүгээр дээ",
+        "ACCEPTBUTTON": "Хүлээн авах",
         "CLEARALLBUTTON": "Бүгдийг цэвэрлэх",
         "ENTERACCOUNTLABEL": "Энэ хаягийн шошго оруулна уу",
         "ENTERADDRESSLABEL": "Метрикс хаяг оруулна уу",
@@ -464,11 +511,8 @@
         "SORTBY": "Эрэмбэлэх",
         "SEARCH": "Хайлт",
         "FEE": "Төлбөр",
-        "ACCEPTBUTTON": "Хүлээн авах",
         "CONFIRMED": "Баталгаажсан",
         "UNCONFIRMED": "Баталгаажаагүй",
-        "PENDINGBALANCE": "Хүлээгдэж буй үлдэгдэл",
-        "SPENDABLEBALANCE": "Зарцуулж болох үлдэгдэл",
         "SAVEBUTTON": "Хадгалах"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core-г дахин эхлүүлж байна...",
         "BOOTSTRAPPING": "Bootstrap-г татаж авч байна...",
         "BOOTSTRAPEXTRACTING": "Bootstrap-г гаргаж авч байна...",
-        "TIMEREMAINING": "үлдсэн:"
+        "TIMEREMAINING": "үлдсэн:",
+        "DEVRPCOVERRIDEACTIVE": "Хөгжүүлэгчийн RPC холболтыг дарж тохируулах тохиргоо хийгдсэн бөгөөд хариу өгөхгүй байна (Сонголтууд > Хөгжүүлэгч) байна. Орон нутгийн демонтой хэвийн дахин холбогдохын тулд үүнийг арилгана уу.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC-г дарж, дахин холбохыг арилгах"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Шинэ бүртгэл амжилттай үүсгэгдсэн",
         "ADDRESSCOPIEDCLIPBOARD": "Хаягийг санах ойд хуулсан",
+        "COPIEDCLIPBOARD": "Түр санах ой руу хуулсан",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Гүйлгээг санах ойд хуулсан",
         "EMPTYFIELDS": "Бүх талбарыг бөглөнө үү",
         "NOUPDATE": "Шинэчлэлт байхгүй байна",
         "WALLETBACKEDUP": "Түрийвчний нөөцлөлт амжилттай боллоо",
+        "WALLETBACKUPFAILED": "Автомат түрийвч нөөцлөлт амжилтгүй боллоо - нөөцлөлтийн байршил болон дискний зайгаа шалгана уу",
         "PASSPHRASEMISMATCH": "Таны оруулсан нууц үгс таарахгүй байна",
         "CHECKINGUPDATE": "Шинэчлэлтийг шалгаж байна...",
         "CHECKINGUPDATEFAILED": "Шинэчлэлтийг шалгах боломжгүй байна. Сүлжээгээ шалгана уу.",
+        "WALLETUPDATEDOWNLOADING": "Шинэчлэлтийг татаж авч байна...",
         "SENDINGEXCEEDSBALANCE": "Таны илгээж буй дүн таны сонгосон үлдэгдлээс хэтэрсэн байна",
         "MISSINGCHANGEADDRESS": "Та өөрчлөлтийн хаягийг зааж өгөх ёстой",
         "MISSINGDESTINATIONADDRESS": "Та очих газрын хаягийг зааж өгөх ёстой",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Түрийвчийг шифрлэж байна...",
         "CHANGINGPASSPHARASE": "Нууц үгийг өөрчилж байна...",
         "STARTINGMASTERNODE": "Мастернод эхлүүлж байна...",
+        "STOPPINGMASTERNODE": "Мастернодыг зогсоож байна...",
         "SENDINGTRANSACTION": "Гүйлгээг илгээж байна...",
         "SIGNINGMESSAGE": "Зурвас гарын үсэг зурж байна...",
         "SIGNEDMESSAGE": "Зурвас гарын үсэг зурсан",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Түрийвчийг тайлж байна...",
         "TRANSACTIONMISMATCH": "Гүйлгээний алдаа гарлаа. Дахин оролдоно уу.",
         "MINIMUMCONFIRMATIONS": "Бүх оролтод зарцуулахаасаа өмнө дор хаяж 1 баталгаажуулалт шаардлагатай.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Гүйлгээг санах ойд хуулсан",
-        "STOPPINGMASTERNODE": "Мастернодыг зогсоож байна...",
         "FAILEDTOWRITECONFIG": "Таны metrix.conf файл руу бичихэд асуудал гарлаа. Файл байгаа эсэхийг болон Altitude нь бичих зөвшөөрөлтэй эсэхийг шалгана уу.",
         "NOPUBLICUP": "Нийтийн IP хаяг олдсонгүй. Интернэт холболтоо шалгаад Altitude-г дахин эхлүүлнэ үү.",
         "CONFIGURINGLOCALMN": "Орон нутгийн Masternode-г тохируулж байна...",
         "REPORTINGISSUE": "Оношилгооны мэдээлэл авч байна... Энэ мэдээллийг таны санах ой руу хуулна.",
-        "WALLETUPDATEDOWNLOADING": "Шинэчлэлтийг татаж авч байна...",
-        "WALLETBACKUPFAILED": "Автомат түрийвч нөөцлөлт амжилтгүй боллоо - нөөцлөлтийн байршил болон дискний зайгаа шалгана уу",
         "EXPLORERURLSAVED": "Explorer URL хадгалагдсан",
         "EXPLORERURLRESET": "Explorer URL-г анхдагчаар нь буцаасан",
         "EXPLORERURLINVALID": "Энэ нь хүчинтэй http(s) URL биш байна",
-        "EXPLORERURLUNREACHABLE": "Тухайн URL хаягт хүрч чадсангүй - шалгаад дахин оролдоно уу"
+        "EXPLORERURLUNREACHABLE": "Тухайн URL хаягт хүрч чадсангүй - шалгаад дахин оролдоно уу",
+        "DEVRPCHOSTSAVED": "RPC хост хадгалагдсан",
+        "DEVRPCHOSTRESET": "RPC хост анхдагч тохиргоонд буцаагдсан (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Хүлээн авсан зооснууд",
+        "NEWTRANSACTION_TITLE_STAKE": "Хүлээн авсан гадас",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Мастернодын шагналыг хүлээн авсан"
     },
     "TIME": {
         "AFEWSECONDS": "Хэдэн секунд",
@@ -533,11 +587,6 @@
         "MONTHS": "сарууд",
         "AYEAR": "Жил",
         "YEARS": "жилүүд"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Хүлээн авсан зооснууд",
-        "NEWTRANSACTION_TITLE_STAKE": "Хүлээн авсан гадас",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Мастернодын шагналыг хүлээн авсан"
     },
     "MONTH": {
         "JAN": "1-р сар",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Засаг дарга нар сарын төсөв болон блокчэйн өөрчлөлтийн талаар санал өгөх үүрэгтэй. Та Засаглалын гэрээнд зөв барьцаа хөрөнгийг түгжсэнээр Засаг дарга болж болно.",
                 "COLLATERAL": "Шаардлагатай барьцаа хөрөнгө",
                 "ENROLL": "Бүртгүүлэх",
+                "SELECTAGOVERNOR": "Засаг даргын хаягийг сонгоно уу",
+                "GOVERNORNOTSELECTED": "Тохирох хаяг сонгоогүй байна",
                 "CONFIRMENROLL": "Та Засаг даргаар бүртгүүлэх гэж байна. Энэ нь шаардлагатай барьцаа хөрөнгөтэй гүйлгээг засаглалын гэрээнд илгээх болно. Та хүссэн үедээ бүртгэлээс гарч болно.",
                 "ISGOVERNORTITLE": "Та бол идэвхтэй Засаг дарга!",
                 "ISGOVERNORDETAIL1": "Засаг дарга нар сар бүрийн төсөв болон блокчэйн технологийн өөрчлөлтийн талаар санал өгөх үүрэгтэй.",
                 "ISGOVERNORDETAIL2": "Засаг даргаар үлдэхийн тулд та 30 хоног тутамд дор хаяж 1 удаа санал өгөх шаардлагатай.",
                 "ISGOVERNORDETAIL3": "Хэрэв санал өгөх зүйл байхгүй бол та идэвхтэй ping илгээж бүртгэлээ гараар үргэлжлүүлж болно.",
+                "MYGOVERNORADDRESS": "Миний Засаг даргын үг",
                 "UNENROLL": "Бүртгэлээс хасах",
                 "PING": "Идэвхтэй пинг илгээх",
                 "LASTPINGTITLE": "Сүүлийн пинг",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "өдрүүд",
                 "GOVERNORVOTEMATURITYHOURS": "цаг",
                 "GOVERNORVOTEMATURITYSUFFIX": "нас бие гүйцэх хүртлээ",
-                "MYGOVERNORADDRESS": "Миний Засаг даргын үг",
-                "SELECTAGOVERNOR": "Засаг даргын хаягийг сонгоно уу",
-                "GOVERNORNOTSELECTED": "Тохирох хаяг сонгоогүй байна",
                 "NOTFULLYSYNCEDTITLE": "Засаг даргын статус байхгүй",
                 "NOTFULLYSYNCEDDETAIL": "Таны блокчэйн бүрэн синхрончлогдсон үед таны Засаг даргын бүртгэлийн статус харагдах болно.",
                 "DGPMIGRATIONTITLE": "DGP шилжилт хөдөлгөөн",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Таны саналыг амжилттай үүсгэлээ",
             "ENROLLINGGOVERNOR": "Засаг даргаар бүртгүүлж байна...",
             "ENROLLEDGOVERNOR": "Гүйлгээ баталгаажсаны дараа таны бүртгэл дуусна",
-            "VOTINGONPROPOSAL": "Санал хураалт илгээж байна",
-            "VOTEDONPROPOSAL": "Гүйлгээ баталгаажсаны дараа таны саналыг тоолно.",
             "PINGINGGOVERNOR": "Пинг илгээж байна...",
             "PINGEDGOVERNOR": "Пинг амжилттай илгээгдсэн. Гүйлгээ баталгаажсаны дараа таны захирал шинэчлэгдэх болно.",
+            "VOTINGONPROPOSAL": "Санал хураалт илгээж байна",
+            "VOTEDONPROPOSAL": "Гүйлгээ баталгаажсаны дараа таны саналыг тоолно.",
             "UNENROLLINGGOVERNOR": "Засаг даргыг бүртгэлээс хасах...",
             "UNENROLLEDGOVERNOR": "Гүйлгээг илгээсэн. Гүйлгээг баталгаажуулсны дараа таны захирагч бүртгэлээс хасагдах болно.",
             "GOVERNORNOTMATURE": "Танай Засаг дарга энэ үйлдлийг хийхэд хараахан хангалттай төлөвшөөгүй байна"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix худалдаж аваарай",
+                "SEARCH": "Түүх"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Та илгээнэ үү",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Гүйлгээний түүх",
                 "SEARCHBUTTON": "ХАЙЛТ",
+                "SEARCHPLACEHOLDER": "MRX эсвэл BTC хаяг оруулна уу",
                 "TRANSACTIONDATE": "Огноо",
                 "TRANSACTIONTYPE": "TX төрөл",
                 "TRANSACTIONAMOUNT": "Дүн",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Баталгаажсан",
                 "TRANSACTIONNOTCONFIRMED": "Баталгаажаагүй",
                 "TRANSACTIONREFUNDED": "Буцаан олголт - Хамгийн бага хэмжээнээс доогуур",
-                "AVGSWAPPRICE": "Дундаж солилцооны үнэ",
-                "SEARCHPLACEHOLDER": "MRX эсвэл BTC хаяг оруулна уу"
+                "AVGSWAPPRICE": "Дундаж солилцооны үнэ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Своп хаяг үүсгэж байна...",
             "ALREADYHAVEADDRESS": "Та энэ Metrix хаягтай холбоотой BTC хаягтай байна",
             "NOADDRESS": "Та Metrix хаяг оруулаагүй байна"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix худалдаж аваарай",
-                "SEARCH": "Түүх"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Ил гаргах",
                 "EMPTYTITLE": "Одоогоор токен олдсонгүй",
                 "EMPTYDETAIL": "Altitude нь таны хаяг руу илгээсэн MRC20 болон MRC721 токенуудыг блок судлаачаас автоматаар шалгаж, дараа нь бүх зүйлийг таны өөрийн зангилаатай харьцуулан баталгаажуулдаг. Хэрэв та токеныг гэрээний хаягийг мэдэж байвал гараар нэмж болно.",
+                "EMPTYDETAILCHECKINGDISABLED": "Автомат токен шалгах ажиллагаа идэвхгүй болсон тул таны хаягийг токен шалгахгүй байна. Дээрхээс буцааж асаана уу эсвэл гэрээний хаягийг нь мэдэж байвал токеныг гараар нэмнэ үү.",
                 "HIDDENTITLE": "Нууцлагдсан Токенууд",
                 "CONTEXTMENUHIDE": "Токеныг нуух",
                 "ITEMSSUFFIX": "зүйл(үүд)",
-                "NONENUMERABLETOOLTIP": "Энэ цуглуулга нь тус тусад нь зүйлсийг жагсаахыг дэмждэггүй - оронд нь та хэдэн ширхэгийг нь хадгалж байгаагаа харуулах."
+                "NONENUMERABLETOOLTIP": "Энэ цуглуулга нь тус тусад нь зүйлсийг жагсаахыг дэмждэггүй - оронд нь та хэдэн ширхэгийг нь хадгалж байгаагаа харуулах.",
+                "CHECKINGENABLED": "Шалгаж байна",
+                "CHECKINGDISABLED": "Бүртгэлээс гарах",
+                "CHECKINGENABLEDTOOLTIP": "Токен шалгах асаалттай байна - Өндөрлөг нь таны хаягийг токен байгаа эсэхийг үе үе шалгаж, үлдэгдлийг шинэчилдэг. Унтраахын тулд дарна уу.",
+                "CHECKINGDISABLEDTOOLTIP": "Токен шалгах идэвхгүй байна - буцааж асаахын тулд дарна уу.",
+                "CHECKINGDISABLEDNOTICE": "Автомат токен шалгах функц идэвхгүй байна. Таны хаягийг токен шалгахгүй бөгөөд үлдэгдэл шинэчлэгдэхгүй. Та токеныг гараар нэмж болно."
             },
             "ADDTOKEN": {
                 "TITLE": "Токен нэмэх",

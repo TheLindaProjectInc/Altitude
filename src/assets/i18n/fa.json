@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "ایجاد حساب کاربری",
             "HIDEEMPTYACCOUNTS": "مخفی کردن حساب‌های خالی بدون نام"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "نمای کلی",
+            "TRANSACTIONSTAB": "تراکنش‌ها",
+            "ADDRESSTABS": "آدرس‌ها"
+        },
         "SEND": {
             "ADDRECIPIENT": "افزودن گیرنده",
             "SEND": "ارسال",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "تاریخ",
             "TABLECOLUMNS_CONFIRMS": "تأییدیه‌ها",
             "ALL_SELECTUNSELECT": "همه را تغییر دهید",
+            "TREEMODE": "حالت درختی",
+            "LISTMODE": "حالت فهرست",
             "SENDAVAILABLE": "از موجودی موجود استفاده کنید",
             "INPUTLOCKED": "ورودی قفل شده است. برای خرج کردن آن باید قفل این ورودی را باز کنید.",
             "CONTEXTMENULOCKINPUT": "قفل ورودی",
@@ -38,10 +45,48 @@
             "AFTERFEE": "پس از پرداخت هزینه",
             "QUANTITY": "مقدار",
             "BYTES": "بایت",
-            "TREEMODE": "حالت درختی",
-            "LISTMODE": "حالت فهرست",
             "ALERTFEECHANGETITLE": "تغییر هزینه",
             "ALERTFEECHANGECONTENT": "هزینه واقعی تراکنش بیشتر از حد انتظار است. لطفاً هزینه جدید را تأیید کنید:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "ایجاد قرارداد",
+            "INFO": "با ارسال بایت‌کد کامپایل‌شده‌ی یک قرارداد هوشمند، آن را در شبکه مستقر کنید. این یک تابع زنجیره‌ی اصلی است - قبل از استقرار، تنظیمات بایت‌کد و سوخت خود را دوباره بررسی کنید، استقرار قابل لغو نیست.",
+            "FROM": "از",
+            "BYTECODE": "بایت‌کد",
+            "BYTECODEPLACEHOLDER": "بایت‌کد قرارداد کامپایل‌شده (هگز) را جای‌گذاری کنید",
+            "INVALIDBYTECODE": "بایت‌کد باید یک رشته هگز معتبر (0-9، a-f) با تعداد زوج کاراکتر باشد.",
+            "GASLIMIT": "محدودیت گاز",
+            "GASLIMITRANGE": "محدوده",
+            "GASPRICE": "قیمت گاز (MRX به ازای هر واحد گاز)",
+            "GASPRICEMIN": "حداقل",
+            "ESTIMATEDMAXCOST": "حداکثر هزینه تخمینی",
+            "DEPLOYBUTTON": "قرارداد استقرار",
+            "INCOMPLETEFORM": "لطفاً یک آدرس فرستنده انتخاب کنید، بایت‌کد معتبر وارد کنید و یک محدودیت/قیمت سوخت معتبر تنظیم کنید",
+            "HIGHGASPRICETITLE": "قیمت بالای بنزین",
+            "HIGHGASPRICEINFO": "قیمت بنزینی که تعیین کرده‌اید به طور غیرمعمولی بالاست. این استقرار می‌تواند تا موارد زیر هزینه داشته باشد:",
+            "DEPLOYING": "اجرای قرارداد...",
+            "DEPLOYED": "استقرار قرارداد ارائه شد",
+            "RESULTTITLE": "نتیجه استقرار",
+            "STATUS": "وضعیت",
+            "STATUSPENDING": "در انتظار تایید...",
+            "STATUSCONFIRMED": "با موفقیت مستقر شد",
+            "STATUSFAILED": "استقرار ناموفق بود",
+            "TXID": "شناسه تراکنش",
+            "SENDER": "فرستنده",
+            "CONTRACTADDRESS": "آدرس قرارداد",
+            "GASUSED": "گاز مورد استفاده",
+            "DONEBUTTON": "انجام شد",
+            "DEPLOYANOTHERBUTTON": "یکی دیگر را مستقر کنید"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "تراکنش‌ها",
+            "COPYBLOCKHASH": "کپی کردن هش بلاک",
+            "COPYTXID": "کپی شناسه تراکنش",
+            "COPYACCOUNT": "کپی کردن نام حساب",
+            "COPYADDRESS": "آدرس را کپی کنید",
+            "COPYAMOUNT": "مبلغ کپی",
+            "COPTBLOCKINDEX": "فهرست بلوک کپی",
+            "EXPLORER": "باز کردن در Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "باز کردن قفل برای شرط بندی",
@@ -68,13 +113,13 @@
             "IP": "آی پی",
             "ADDRESS": "آدرس",
             "ENABLED": "فعال شده",
-            "STARTBUTTON": "شروع محلی",
-            "STARTALIASBUTTON": "نام مستعار شروع",
-            "STARTALLBUTTON": "شروع همه",
             "NOMASTERNODES": "شما هیچ مسترنودی ندارید",
             "NOMNOUTPUTS": "هیچ خروجی مسترنودی یافت نشد. برای اجرای یک مسترنود محلی، دقیقاً ۲،۵،۲۵،۵۰ یا ۱۰۰ میلیون سکه به آدرس مسترنود خود ارسال کنید و منتظر ۱۵ تأیید باشید.",
+            "STARTBUTTON": "شروع محلی",
             "STOPBUTTON": "توقف محلی",
+            "STARTALIASBUTTON": "نام مستعار شروع",
             "STOPALIASBUTTON": "نام مستعار را متوقف کنید",
+            "STARTALLBUTTON": "شروع همه",
             "ADDREMOTE": "اضافه کردن مسترنود از راه دور",
             "REMOVEMN": "حذف مسترنود",
             "ADDLOCAL": "راه‌اندازی مسترنود محلی",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "عمومی",
                 "COREVERSION": "نسخه اصلی",
+                "ALTITUDEVERSION": "نسخه ارتفاعی",
                 "PROTOCOLVERSION": "نسخه پروتکل",
                 "WALLETVERSION": "نسخه Wallet.dat",
                 "NETWORKTITLE": "شبکه",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "تعداد مسترنودها",
                 "BLOCKCHAINTITLE": "زنجیره بلوکی",
                 "NUMBERBLOCKS": "تعداد فعلی بلوک‌ها",
-                "BESTBLOCKTTIME": "زمان آخرین بلاک",
-                "ALTITUDEVERSION": "نسخه ارتفاعی"
+                "BESTBLOCKTTIME": "زمان آخرین بلاک"
             },
             "DEBUG": {
                 "CONSOLEINFO": "به کنسول Metrix Core RPC خوش آمدید. برای مشاهده‌ی خلاصه‌ای از دستورات موجود، کلمه‌ی help را تایپ کنید.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "انتخاب زبان"
         },
-        "TRANSACTIONS": {
-            "TITLE": "تراکنش‌ها",
-            "COPYBLOCKHASH": "کپی کردن هش بلاک",
-            "COPYTXID": "کپی شناسه تراکنش",
-            "COPYACCOUNT": "کپی کردن نام حساب",
-            "COPYADDRESS": "آدرس را کپی کنید",
-            "COPYAMOUNT": "مبلغ کپی",
-            "COPTBLOCKINDEX": "فهرست بلوک کپی",
-            "EXPLORER": "باز کردن در Block Explorer"
+        "CURRENCY": {
+            "TITLE": "انتخاب واحد پول نمایشی"
         },
         "EXPLORER": {
             "TITLE": "کاوشگر بلوک",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "شبکه",
             "WINDOTAB": "پنجره",
+            "BACKUPTAB": "پشتیبان گیری",
+            "EXPLORERTAB": "اکسپلورر",
+            "DEVELOPERTAB": "توسعه‌دهنده",
             "NETWORK": {
                 "PROXY": "اتصال از طریق پروکسی SOCKS5",
                 "PROXYIP": "آی‌پی پروکسی",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "کوچک کردن هنگام بستن",
                 "BEHAVIOURTITLE": "رفتار سینی سیستم و پنجره‌ها"
             },
-            "BACKUPTAB": "پشتیبان گیری",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "پشتیبان گیری خودکار",
                 "ENABLED": "پشتیبان‌گیری خودکار از wallet.dat طبق یک برنامه زمانی",
                 "ENABLEDINFO": "طبق یک برنامه زمانی، یک نسخه پشتیبان جدید از فایل کیف پول شما ایجاد می‌کند، بنابراین اگر مشکلی پیش آمد، همیشه یک نسخه جدید در دسترس است.",
+                "INTERVALLABEL": "پشتیبان گیری هر (روز)",
                 "LASTBACKUP": "آخرین نسخه پشتیبان:",
                 "NEVERBACKEDUP": "هنوز هیچ پشتیبان‌گیری خودکاری انجام نشده است.",
                 "BACKUPNOWBUTTON": "همین حالا پشتیبان بگیرید",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "تنظیم مجدد به پیش‌فرض",
                 "PRUNETITLE": "تاریخچه پشتیبان گیری",
                 "PRUNEINFO": "پشتیبان‌های خودکار قدیمی‌تر حذف می‌شوند تا این پوشه برای همیشه بزرگ نشود - فقط جدیدترین نسخه‌های زیر نگه داشته می‌شوند.",
-                "KEEPCOUNTLABEL": "آخرین را نگه دارید",
-                "INTERVALLABEL": "پشتیبان گیری هر (روز)"
+                "KEEPCOUNTLABEL": "آخرین را نگه دارید"
             },
-            "EXPLORERTAB": "اکسپلورر",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "کاوشگر بلوک",
                 "BLOCKEXPLORERINFO": "سایت هنگام مشاهده تراکنش در مرورگر بلاک باز شده است (مثلاً روی تراکنش کلیک راست کرده و گزینه View on Explorer را انتخاب کنید).",
@@ -259,25 +298,31 @@
                 "MAINNET": "شبکه اصلی",
                 "TESTNET": "شبکه آزمایشی",
                 "REGTEST": "رگتست"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "حالت توسعه‌دهنده",
+                "DEVMODEINFO": "به طور پیش‌فرض غیرفعال است و فقط برای توسعه‌دهندگان در نظر گرفته شده است. فعال کردن این گزینه، گزینه‌هایی را برای لغو اتصال RPC نشان می‌دهد - کاربران عادی باید این گزینه را غیرفعال بگذارند.",
+                "DEVMODELABEL": "فعال کردن حالت توسعه‌دهنده",
+                "WARNING": "این تنظیمات فقط برای اهداف توسعه هستند. تغییر آنها می‌تواند به طور کلی مانع از اتصال کیف پول به یک سرویس شود - فقط در صورتی از این استفاده کنید که می‌دانید چه کاری انجام می‌دهید.",
+                "RPCHOSTTITLE": "اتصال RPC",
+                "RPCHOSTINFO": "به طور پیش‌فرض، Altitude به دیمنی که خودش مدیریت می‌کند، روی این دستگاه (127.0.0.1) متصل می‌شود. لغو این موارد به آن اجازه می‌دهد تا به جای آن به یک دیمن متفاوت متصل شود - برای مثال، یک نمونه regtest از راه دور، بدون نیاز به اجرای محلی آن. اگر اتصال موفقیت‌آمیز باشد، Altitude دیمن محلی خود را دانلود یا اجرا نمی‌کند. rpcallowip دیمن هدف باید این اتصال را مجاز کند و rpcuser/rpcpassword زیر باید با پیکربندی آن مطابقت داشته باشد. بلافاصله اعمال می‌شود، بدون نیاز به راه‌اندازی مجدد.",
+                "RPCHOSTLABEL": "میزبان RPC",
+                "RPCPORTLABEL": "پورت RPC",
+                "RPCUSERLABEL": "نام کاربری RPC",
+                "RPCPASSWORDLABEL": "رمز عبور RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "نمای کلی",
-            "TRANSACTIONSTAB": "تراکنش‌ها",
-            "ADDRESSTABS": "آدرس‌ها"
-        },
-        "CURRENCY": {
-            "TITLE": "انتخاب واحد پول نمایشی"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "داشبورد",
             "SEND": "ارسال",
+            "CREATECONTRACT": "ایجاد قرارداد",
             "RECEIVE": "دریافت",
             "TRANSACTIONS": "تراکنش‌ها",
             "STAKING": "شرط بندی",
             "MASTERNODES": "مسترنودها",
+            "EXPLORER": "کاوشگر بلوک",
             "SYNC": {
                 "CONNECTING": "اتصال",
                 "NOBLOCKS": "منتظر بلوک‌ها هستیم",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "کیف پول در حال حاضر سهام گذاری نمی‌کند",
                 "MASTERNODEON": "مسترنود در حال حاضر در حال اجرا است",
                 "MASTERNODEOFF": "مسترنود در حال حاضر اجرا نمی‌شود"
-            },
-            "EXPLORER": "کاوشگر بلوک"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "آدرس سایت web3 را وارد کنید",
+            "GOBUTTON": "برو",
+            "QUICKLAUNCH": "راه‌اندازی سریع",
+            "DEVTOOLS": "ابزارهای توسعه‌دهنده را باز کنید",
+            "ADDLINK": "افزودن لینک",
+            "LINKNAMEPLACEHOLDER": "نام",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "ذخیره",
+            "CANCEL": "لغو",
+            "REMOVE": "حذف",
+            "REMOVECONFIRM": "این لینک سریع را حذف کنید؟",
+            "LINKEXISTS": "آن لینک از قبل در لیست دسترسی سریع شما قرار دارد.",
+            "LINKINVALID": "آدرس سایت معتبر را وارد کنید",
+            "LINKNETWORKLABEL": "شبکه",
+            "LOADFAILED": "بارگذاری سایت ناموفق بود",
+            "SECURESITE": "اتصال امن است - گواهی SSL معتبر است",
+            "INSECURESITE": "اتصال امن نیست",
+            "INVALIDCERTSITE": "اتصال خصوصی نیست - گواهی SSL نامعتبر یا غیرقابل اعتماد است"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "رمز عبور کیف پول خود را وارد کنید",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "به‌روزرسانی برای Metrix Core در دسترس است. آیا می‌خواهید همین حالا آن را نصب کنید؟",
             "WALLETUPDATETITLE": "به‌روزرسانی ارتفاع موجود است",
             "WALLETUPDATEINFO": "یک به‌روزرسانی برای Altitude در دسترس است. آیا می‌خواهید همین حالا آن را دانلود کنید؟",
+            "WALLETUPDATEREADYTITLE": "به‌روزرسانی ارتفاع آماده است",
+            "WALLETUPDATEREADYINFO": "به‌روزرسانی دانلود شده است. اکنون Altitude را مجدداً راه‌اندازی کنید تا نصب شود؟",
+            "WALLETUPDATERESTARTBUTTON": "راه‌اندازی مجدد و نصب",
+            "WALLETUPDATELATERBUTTON": "بعداً",
             "CLIENTUPDATEBUTTON": "به‌روزرسانی",
             "CLIENTUPDATECANCELBUTTON": "به‌روزرسانی نکنید",
             "CLIENTUPDATESKIPBUTTON": "از این به‌روزرسانی صرف‌نظر کنید",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "هرگونه پشتیبان قبلی که از فایل کیف پول خود تهیه کرده‌اید باید با فایل کیف پول رمزگذاری شده جدید جایگزین شود. به دلایل امنیتی، پشتیبان‌های قبلی از فایل کیف پول رمزگذاری نشده به محض شروع استفاده از کیف پول رمزگذاری شده جدید، بی‌فایده خواهند شد.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "هسته متریکس به طور غیرمنتظره‌ای متوقف شد",
             "CLIENTCLOSEDUNEXPECTEDINFO": "مشکلی در Metrix Core وجود داشت که باعث خاتمه آن شد. توصیه می‌شود فایل debug.log خود را برای یافتن مشکلات بررسی کنید.",
+            "CLIENTUNKNOWNERRORTITLE": "خطای ارتباط هسته متریکس",
+            "CLIENTUNKNOWNERRORINFO": "مشکلی در برقراری ارتباط با Metrix Core وجود داشت. توصیه می‌شود فایل debug.log خود را برای یافتن مشکلات بررسی کنید.",
+            "BOOTSTRAPFAILEDTITLE": "بوت‌استرپ هسته متریکس ناموفق بود",
+            "BOOTSTRAPFAILEDINFO": "مشکلی در بوت‌استرپ Metrix Core وجود داشت. توصیه می‌شود فایل لاگ Altitude خود را برای یافتن مشکلات بررسی کنید.",
+            "BOOTSTRAPOFFERTITLE": "کیف پول به طور قابل توجهی قدیمی است",
+            "BOOTSTRAPOFFERINFO": "یک بوت‌استرپ جدید در دسترس است که می‌تواند به سرعت Metrix Core را به‌روز کند. ادامه دادن با یک همگام‌سازی معمولی ممکن است چند روز طول بکشد، زیرا کیف پول شما باید هر بلوکی را که از دست داده است دانلود و تأیید کند.",
+            "BOOTSTRAPOFFERBUTTON": "دانلود بوت‌استرپ",
+            "BOOTSTRAPOFFERCANCEL": "ادامه همگام‌سازی عادی",
+            "BOOTSTRAPSPACEINFO": "فضای دیسک خالی برای دانلود و استخراج بوت‌استرپ کافی نیست. الزامی: {الزامی}، موجود: {رایگان}. مقداری فضا خالی کنید و دوباره امتحان کنید.",
+            "STARTUPFAILEDTITLE": "راه‌اندازی هسته متریکس با شکست مواجه شد",
+            "STARTUPFAILEDINFO": "خطایی در شروع Metrix Core رخ داده است. توصیه می‌شود فایل گزارش Altitude خود را برای یافتن مشکلات بررسی کنید.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ابزارهای بازیابی",
             "CLIENTINVALIDCONFIGTITLE": "پیکربندی metrix.conf نامعتبر است",
             "CLIENTINVALIDCONFIGINFO": "فایل metrix.conf شما دارای تنظیمات نامعتبر مسترنود است که باعث می‌شود Metrix Core فوراً بسته شود. لطفاً این فایل را بررسی کنید.",
             "ADDREMOTEMNTITLE": "اضافه کردن مسترنود از راه دور",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "کلید خصوصی مسترنود",
             "ADDREMOTEMNTXHASH": "هش ترون در مسترنود",
             "ADDREMOTEMNTXINDEX": "شاخص مسترنود ترون",
-            "BOOTSTRAPFAILEDTITLE": "بوت‌استرپ هسته متریکس ناموفق بود",
-            "BOOTSTRAPFAILEDINFO": "مشکلی در بوت‌استرپ Metrix Core وجود داشت. توصیه می‌شود فایل لاگ Altitude خود را برای یافتن مشکلات بررسی کنید.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ابزارهای بازیابی",
-            "STARTUPFAILEDTITLE": "راه‌اندازی هسته متریکس با شکست مواجه شد",
-            "STARTUPFAILEDINFO": "خطایی در شروع Metrix Core رخ داده است. توصیه می‌شود فایل گزارش Altitude خود را برای یافتن مشکلات بررسی کنید.",
-            "CLIENTUNKNOWNERRORTITLE": "خطای ارتباط هسته متریکس",
-            "CLIENTUNKNOWNERRORINFO": "مشکلی در برقراری ارتباط با Metrix Core وجود داشت. توصیه می‌شود فایل debug.log خود را برای یافتن مشکلات بررسی کنید.",
             "UNENROLLGOVERNORTITLE": "تأیید لغو ثبت نام فرماندار",
             "UNENROLLGOVERNORCONTENT": "آیا مطمئن هستید که می‌خواهید عضویت خود را در مدیریت زنجیره لغو کنید؟ دیگر نمی‌توانید در مورد مدیریت زنجیره رأی دهید.",
-            "WALLETUPDATEREADYTITLE": "به‌روزرسانی ارتفاع آماده است",
-            "WALLETUPDATEREADYINFO": "به‌روزرسانی دانلود شده است. اکنون Altitude را مجدداً راه‌اندازی کنید تا نصب شود؟",
-            "WALLETUPDATERESTARTBUTTON": "راه‌اندازی مجدد و نصب",
-            "WALLETUPDATELATERBUTTON": "بعداً",
             "DAPPCONNECTTITLE": "اتصال به سایت",
             "DAPPCONNECTINFO": "این سایت می‌خواهد به کیف پول شما متصل شود و آدرس و موجودی شما را مشاهده کند.",
             "DAPPCONNECTBUTTON": "اتصال",
+            "DAPPCONNECTADDRESSLABEL": "آدرس",
+            "DAPPAPPROVEBUTTON": "تأیید",
             "DAPPREJECTBUTTON": "رد کردن",
             "DAPPSENDTITLE": "درخواست معامله قرارداد",
             "DAPPSENDINFO": "این سایت درخواست ارسال تراکنش قرارداد از کیف پول شما را دارد.",
-            "DAPPSIGNTITLE": "درخواست پیام امضا",
-            "DAPPSIGNINFO": "این سایت درخواست امضای پیامی با آدرس کیف پول شما را دارد.",
-            "DAPPNOTREADY": "هنوز نمی‌توانم به سایت متصل شوم - Metrix Core هنوز در حال راه‌اندازی است.",
-            "DAPPNOWALLET": "نمی‌توان به سایت متصل شد - هیچ آدرس کیف پولی در دسترس نیست.",
-            "DAPPAPPROVEBUTTON": "تأیید",
-            "DAPPCONNECTADDRESSLABEL": "آدرس",
             "DAPPSENDSITELABEL": "سایت",
             "DAPPSENDCONTRACTLABEL": "آدرس قرارداد",
             "DAPPSENDAMOUNTLABEL": "مبلغ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "حداکثر کارمزد شبکه",
             "DAPPSENDMAXTOTALLABEL": "حداکثر مجموع",
             "DAPPSENDDATALABEL": "داده‌های قرارداد",
+            "DAPPSIGNTITLE": "درخواست پیام امضا",
+            "DAPPSIGNINFO": "این سایت درخواست امضای پیامی با آدرس کیف پول شما را دارد.",
             "DAPPSIGNMESSAGELABEL": "پیام",
-            "BOOTSTRAPOFFERTITLE": "کیف پول به طور قابل توجهی قدیمی است",
-            "BOOTSTRAPOFFERINFO": "یک بوت‌استرپ جدید در دسترس است که می‌تواند به سرعت Metrix Core را به‌روز کند. ادامه دادن با یک همگام‌سازی معمولی ممکن است چند روز طول بکشد، زیرا کیف پول شما باید هر بلوکی را که از دست داده است دانلود و تأیید کند.",
-            "BOOTSTRAPOFFERBUTTON": "دانلود بوت‌استرپ",
-            "BOOTSTRAPOFFERCANCEL": "ادامه همگام‌سازی عادی",
-            "BOOTSTRAPSPACEINFO": "فضای دیسک خالی برای دانلود و استخراج بوت‌استرپ کافی نیست. الزامی: {الزامی}، موجود: {رایگان}. مقداری فضا خالی کنید و دوباره امتحان کنید."
+            "DAPPNOTREADY": "هنوز نمی‌توانم به سایت متصل شوم - Metrix Core هنوز در حال راه‌اندازی است.",
+            "DAPPNOWALLET": "نمی‌توان به سایت متصل شد - هیچ آدرس کیف پولی در دسترس نیست."
         },
         "ADDRESSBOOK": {
             "TITLE": "دفترچه آدرس",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "شبکه فعلی"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "آدرس سایت web3 را وارد کنید",
-            "GOBUTTON": "برو",
-            "QUICKLAUNCH": "راه‌اندازی سریع",
-            "DEVTOOLS": "ابزارهای توسعه‌دهنده را باز کنید",
-            "ADDLINK": "افزودن لینک",
-            "LINKNAMEPLACEHOLDER": "نام",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "ذخیره",
-            "CANCEL": "لغو",
-            "REMOVE": "حذف",
-            "REMOVECONFIRM": "این لینک سریع را حذف کنید؟",
-            "LINKEXISTS": "آن لینک از قبل در لیست دسترسی سریع شما قرار دارد.",
-            "LINKINVALID": "آدرس سایت معتبر را وارد کنید",
-            "LINKNETWORKLABEL": "شبکه",
-            "LOADFAILED": "بارگذاری سایت ناموفق بود",
-            "SECURESITE": "اتصال امن است - گواهی SSL معتبر است",
-            "INSECURESITE": "اتصال امن نیست",
-            "INVALIDCERTSITE": "اتصال خصوصی نیست - گواهی SSL نامعتبر یا غیرقابل اعتماد است"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "کیف پول پشتیبان...",
             "SIGNMESSAGE": "پیام امضا...",
             "VERIFYMESSAGE": "تأیید پیام...",
-            "LOCALE": "زبان...",
-            "RESTARTCORE": "راه‌اندازی مجدد هسته متریکس",
-            "EXIT": "خروج",
             "OPTIONS": "گزینه‌ها...",
+            "LOCALE": "زبان...",
             "CURRENCIES": "نمایش واحد پول...",
-            "ALTITUDEREFRESH": "به‌روزرسانی داده‌های ارتفاع"
+            "RESTARTCORE": "راه‌اندازی مجدد هسته متریکس",
+            "ALTITUDEREFRESH": "به‌روزرسانی داده‌های ارتفاع",
+            "EXIT": "خروج"
         },
         "ENCRYPT": {
             "TITLE": "رمزگذاری",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "کل موجودی",
+        "SPENDABLEBALANCE": "مانده قابل خرج",
+        "PENDINGBALANCE": "موجودی در انتظار",
         "CANCELBUTTON": "لغو",
         "DONEBUTTON": "انجام شد",
         "OKBUTTON": "باشه",
+        "ACCEPTBUTTON": "پذیرفتن",
         "CLEARALLBUTTON": "پاک کردن همه",
         "ENTERACCOUNTLABEL": "برای این آدرس یک برچسب وارد کنید",
         "ENTERADDRESSLABEL": "آدرس متریکس را وارد کنید",
@@ -464,11 +511,8 @@
         "SORTBY": "مرتب سازی بر اساس",
         "SEARCH": "جستجو",
         "FEE": "هزینه",
-        "ACCEPTBUTTON": "پذیرفتن",
         "CONFIRMED": "تأیید شد",
         "UNCONFIRMED": "تایید نشده",
-        "PENDINGBALANCE": "موجودی در انتظار",
-        "SPENDABLEBALANCE": "مانده قابل خرج",
         "SAVEBUTTON": "ذخیره"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "راه‌اندازی مجدد هسته متریکس...",
         "BOOTSTRAPPING": "دانلود بوت استرپ...",
         "BOOTSTRAPEXTRACTING": "استخراج بوت‌استرپ...",
-        "TIMEREMAINING": "باقی مانده:"
+        "TIMEREMAINING": "باقی مانده:",
+        "DEVRPCOVERRIDEACTIVE": "یک اتصال RPC توسعه‌دهنده لغو شده است (گزینه‌ها > توسعه‌دهنده) و پاسخ نمی‌دهد. آن را پاک کنید تا دوباره به طور عادی به سرویس محلی متصل شوید.",
+        "DEVRPCOVERRIDECLEARBUTTON": "لغو RPC را پاک کنید و دوباره وصل شوید"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "حساب کاربری جدید با موفقیت ایجاد شد",
         "ADDRESSCOPIEDCLIPBOARD": "آدرس در کلیپ بورد کپی شد",
+        "COPIEDCLIPBOARD": "در کلیپ بورد کپی شد",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "تراکنش‌ها در کلیپ‌بورد کپی شدند",
         "EMPTYFIELDS": "لطفا همه فیلدها را پر کنید",
         "NOUPDATE": "هیچ به‌روزرسانی موجود نیست",
         "WALLETBACKEDUP": "پشتیبان‌گیری از کیف پول با موفقیت انجام شد",
+        "WALLETBACKUPFAILED": "پشتیبان‌گیری خودکار از کیف پول ناموفق بود - محل پشتیبان‌گیری و فضای دیسک موجود خود را بررسی کنید",
         "PASSPHRASEMISMATCH": "رمزهای عبوری که وارد کرده‌اید مطابقت ندارند",
         "CHECKINGUPDATE": "در حال بررسی به‌روزرسانی...",
         "CHECKINGUPDATEFAILED": "بررسی به‌روزرسانی امکان‌پذیر نیست. شبکه خود را بررسی کنید.",
+        "WALLETUPDATEDOWNLOADING": "در حال دانلود آپدیت...",
         "SENDINGEXCEEDSBALANCE": "مبلغی که ارسال می‌کنید از موجودی انتخابی شما بیشتر است",
         "MISSINGCHANGEADDRESS": "شما باید آدرس تغییر را مشخص کنید",
         "MISSINGDESTINATIONADDRESS": "باید آدرس مقصد را مشخص کنید",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "رمزگذاری کیف پول...",
         "CHANGINGPASSPHARASE": "تغییر رمز عبور...",
         "STARTINGMASTERNODE": "شروع مسترنود...",
+        "STOPPINGMASTERNODE": "متوقف کردن مسترنود...",
         "SENDINGTRANSACTION": "ارسال تراکنش...",
         "SIGNINGMESSAGE": "امضای پیام...",
         "SIGNEDMESSAGE": "پیام امضا شد",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "باز کردن قفل کیف پول...",
         "TRANSACTIONMISMATCH": "خطای تراکنش. لطفا دوباره امتحان کنید.",
         "MINIMUMCONFIRMATIONS": "تمام ورودی‌ها قبل از خرج کردن، حداقل به یک تأیید نیاز دارند.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "تراکنش‌ها در کلیپ‌بورد کپی شدند",
-        "STOPPINGMASTERNODE": "متوقف کردن مسترنود...",
         "FAILEDTOWRITECONFIG": "مشکلی در نوشتن در فایل metrix.conf شما وجود دارد. بررسی کنید که فایل وجود دارد و Altitude مجوزهای نوشتن را دارد.",
         "NOPUBLICUP": "هیچ آدرس IP عمومی یافت نشد. اتصال اینترنت خود را بررسی کنید و Altitude را مجدداً راه اندازی کنید.",
         "CONFIGURINGLOCALMN": "پیکربندی مسترنود محلی...",
         "REPORTINGISSUE": "دریافت اطلاعات تشخیصی... این اطلاعات در کلیپ‌بورد شما کپی خواهد شد.",
-        "WALLETUPDATEDOWNLOADING": "در حال دانلود آپدیت...",
-        "WALLETBACKUPFAILED": "پشتیبان‌گیری خودکار از کیف پول ناموفق بود - محل پشتیبان‌گیری و فضای دیسک موجود خود را بررسی کنید",
         "EXPLORERURLSAVED": "آدرس اینترنتی اکسپلورر ذخیره شد",
         "EXPLORERURLRESET": "آدرس اینترنتی اکسپلورر به حالت پیش‌فرض برگشته است",
         "EXPLORERURLINVALID": "این یک آدرس http(s) معتبر نیست.",
-        "EXPLORERURLUNREACHABLE": "دسترسی به آن URL امکان‌پذیر نیست - آن را بررسی کنید و دوباره امتحان کنید"
+        "EXPLORERURLUNREACHABLE": "دسترسی به آن URL امکان‌پذیر نیست - آن را بررسی کنید و دوباره امتحان کنید",
+        "DEVRPCHOSTSAVED": "میزبان RPC ذخیره شد",
+        "DEVRPCHOSTRESET": "میزبان RPC به حالت پیش‌فرض (۱۲۷.۰.۰.۱) بازگشته است."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "سکه‌های دریافتی",
+        "NEWTRANSACTION_TITLE_STAKE": "سهام دریافتی",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "پاداش مسترنود دریافت شد"
     },
     "TIME": {
         "AFEWSECONDS": "چند ثانیه",
@@ -533,11 +587,6 @@
         "MONTHS": "ماه‌ها",
         "AYEAR": "یک سال",
         "YEARS": "سال‌ها"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "سکه‌های دریافتی",
-        "NEWTRANSACTION_TITLE_STAKE": "سهام دریافتی",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "پاداش مسترنود دریافت شد"
     },
     "MONTH": {
         "JAN": "جان",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "فرمانداران مسئول رأی دادن در مورد بودجه‌های ماهانه و تغییرات بلاکچین هستند. شما می‌توانید با قفل کردن وثیقه صحیح در قرارداد حاکمیت، فرماندار شوید.",
                 "COLLATERAL": "وثیقه مورد نیاز",
                 "ENROLL": "ثبت نام",
+                "SELECTAGOVERNOR": "یک آدرس واجد شرایط فرمانداری انتخاب کنید",
+                "GOVERNORNOTSELECTED": "هیچ آدرس واجد شرایطی انتخاب نشده است",
                 "CONFIRMENROLL": "شما در شرف ثبت نام به عنوان گاورنر هستید. این کار تراکنشی را با وثیقه مورد نیاز به قرارداد حاکمیت ارسال می‌کند. می‌توانید در هر زمان از ثبت نام انصراف دهید.",
                 "ISGOVERNORTITLE": "شما یک فرماندار فعال هستید!",
                 "ISGOVERNORDETAIL1": "فرمانداران مسئول رأی دادن در مورد بودجه‌های ماهانه و تغییرات بلاکچین هستند.",
                 "ISGOVERNORDETAIL2": "برای اینکه همچنان فرماندار بمانید، باید حداقل هر 30 روز یکبار در 1 رأی‌گیری شرکت کنید.",
                 "ISGOVERNORDETAIL3": "اگر چیزی برای رأی دادن وجود ندارد، می‌توانید با ارسال یک پینگ فعال، ثبت‌نام خود را به صورت دستی ادامه دهید.",
+                "MYGOVERNORADDRESS": "آدرس فرماندار من",
                 "UNENROLL": "لغو ثبت نام",
                 "PING": "ارسال پینگ فعال",
                 "LASTPINGTITLE": "آخرین پینگ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "روزها",
                 "GOVERNORVOTEMATURITYHOURS": "ساعت‌ها",
                 "GOVERNORVOTEMATURITYSUFFIX": "تا زمان بلوغ",
-                "MYGOVERNORADDRESS": "آدرس فرماندار من",
-                "SELECTAGOVERNOR": "یک آدرس واجد شرایط فرمانداری انتخاب کنید",
-                "GOVERNORNOTSELECTED": "هیچ آدرس واجد شرایطی انتخاب نشده است",
                 "NOTFULLYSYNCEDTITLE": "وضعیت فرماندار در دسترس نیست",
                 "NOTFULLYSYNCEDDETAIL": "وضعیت ثبت نام گاورنر شما زمانی قابل مشاهده خواهد بود که بلاکچین شما کاملاً همگام‌سازی شده باشد.",
                 "DGPMIGRATIONTITLE": "مهاجرت DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "پیشنهاد شما با موفقیت ایجاد شد",
             "ENROLLINGGOVERNOR": "ثبت نام به عنوان فرماندار...",
             "ENROLLEDGOVERNOR": "ثبت نام شما پس از تایید تراکنش تکمیل خواهد شد",
-            "VOTINGONPROPOSAL": "ارسال رأی پیشنهاد",
-            "VOTEDONPROPOSAL": "رأی شما پس از تأیید تراکنش محاسبه خواهد شد.",
             "PINGINGGOVERNOR": "ارسال پینگ...",
             "PINGEDGOVERNOR": "پینگ با موفقیت ارسال شد. پس از تأیید تراکنش، گاورنر شما به‌روزرسانی خواهد شد.",
+            "VOTINGONPROPOSAL": "ارسال رأی پیشنهاد",
+            "VOTEDONPROPOSAL": "رأی شما پس از تأیید تراکنش محاسبه خواهد شد.",
             "UNENROLLINGGOVERNOR": "لغو عضویت فرماندار...",
             "UNENROLLEDGOVERNOR": "تراکنش ارسال شد. پس از تأیید تراکنش، حساب گاورنر شما از حالت ثبت خارج خواهد شد.",
             "GOVERNORNOTMATURE": "فرماندار شما هنوز به اندازه کافی بالغ نشده است که این اقدام را انجام دهد"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "خرید متریکس",
+                "SEARCH": "تاریخچه"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "شما ارسال می‌کنید",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "تاریخچه تراکنش‌ها",
                 "SEARCHBUTTON": "جستجو",
+                "SEARCHPLACEHOLDER": "آدرس MRX یا BTC را وارد کنید",
                 "TRANSACTIONDATE": "تاریخ",
                 "TRANSACTIONTYPE": "نوع TX",
                 "TRANSACTIONAMOUNT": "مبلغ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "تأیید شد",
                 "TRANSACTIONNOTCONFIRMED": "تأیید نشده",
                 "TRANSACTIONREFUNDED": "بازپرداخت شد - کمتر از حداقل",
-                "AVGSWAPPRICE": "میانگین قیمت سوآپ",
-                "SEARCHPLACEHOLDER": "آدرس MRX یا BTC را وارد کنید"
+                "AVGSWAPPRICE": "میانگین قیمت سوآپ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "ایجاد آدرس swap...",
             "ALREADYHAVEADDRESS": "شما از قبل یک آدرس بیت‌کوین مرتبط با این آدرس متریکس دارید",
             "NOADDRESS": "شما آدرس Metrix را وارد نکرده‌اید"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "خرید متریکس",
-                "SEARCH": "تاریخچه"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "آشکار کردن",
                 "EMPTYTITLE": "هنوز توکنی یافت نشد",
                 "EMPTYDETAIL": "آلتیتود به طور خودکار یک کاوشگر بلوک را برای توکن‌های MRC20 و MRC721 ارسال شده به آدرس‌های شما بررسی می‌کند، سپس همه چیز را به صورت زنده با گره خودتان تأیید می‌کند. همچنین اگر آدرس قرارداد یک توکن را می‌دانید، می‌توانید آن را به صورت دستی اضافه کنید.",
+                "EMPTYDETAILCHECKINGDISABLED": "بررسی خودکار توکن غیرفعال است، بنابراین آدرس‌های شما برای توکن‌ها بررسی نمی‌شوند. آن را دوباره در بالا فعال کنید، یا اگر آدرس قرارداد یک توکن را می‌دانید، آن را به صورت دستی اضافه کنید.",
                 "HIDDENTITLE": "توکن‌های پنهان",
                 "CONTEXTMENUHIDE": "پنهان کردن توکن",
                 "ITEMSSUFFIX": "مورد(ها)",
-                "NONENUMERABLETOOLTIP": "این مجموعه از فهرست کردن اقلام به صورت تکی پشتیبانی نمی‌کند - در عوض نشان می‌دهد که چند قلم کالا دارید."
+                "NONENUMERABLETOOLTIP": "این مجموعه از فهرست کردن اقلام به صورت تکی پشتیبانی نمی‌کند - در عوض نشان می‌دهد که چند قلم کالا دارید.",
+                "CHECKINGENABLED": "بررسی در",
+                "CHECKINGDISABLED": "بررسی کردن",
+                "CHECKINGENABLEDTOOLTIP": "بررسی توکن فعال است - Altitude به صورت دوره‌ای آدرس‌های شما را برای توکن‌ها بررسی کرده و موجودی را به‌روزرسانی می‌کند. برای غیرفعال کردن کلیک کنید.",
+                "CHECKINGDISABLEDTOOLTIP": "بررسی توکن غیرفعال است - برای روشن کردن مجدد، کلیک کنید.",
+                "CHECKINGDISABLEDNOTICE": "بررسی خودکار توکن غیرفعال است. آدرس‌های شما برای توکن‌ها اسکن نمی‌شوند و موجودی‌ها به‌روزرسانی نمی‌شوند. همچنان می‌توانید توکن را به صورت دستی اضافه کنید."
             },
             "ADDTOKEN": {
                 "TITLE": "اضافه کردن توکن",

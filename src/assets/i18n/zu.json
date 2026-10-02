@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Yenza i-akhawunti",
             "HIDEEMPTYACCOUNTS": "Fihla ama-Akhawunti Angenalutho Angenagama"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Ukubuka konke",
+            "TRANSACTIONSTAB": "Ukuthengiselana",
+            "ADDRESSTABS": "Amakheli"
+        },
         "SEND": {
             "ADDRECIPIENT": "Engeza Umamukeli",
             "SEND": "Thumela",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Usuku",
             "TABLECOLUMNS_CONFIRMS": "Ukuqinisekiswa",
             "ALL_SELECTUNSELECT": "Guqula Konke",
+            "TREEMODE": "Imodi Yesihlahla",
+            "LISTMODE": "Imodi Yohlu",
             "SENDAVAILABLE": "Sebenzisa ibhalansi etholakalayo",
             "INPUTLOCKED": "Okokufaka kukhiyiwe. Kuzodingeka uvule lokhu okufakwayo ukuze ukusebenzise.",
             "CONTEXTMENULOCKINPUT": "Okokufaka kokukhiya",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Ngemva Kwenkokhelo",
             "QUANTITY": "Ubuningi",
             "BYTES": "Amabhayithi",
-            "TREEMODE": "Imodi Yesihlahla",
-            "LISTMODE": "Imodi Yohlu",
             "ALERTFEECHANGETITLE": "Ushintsho Lwemali",
             "ALERTFEECHANGECONTENT": "Imali yangempela yokuthengiselana iphakeme kunalokho obekulindelwe. Sicela uqinisekise imali entsha:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Dala Inkontileka",
+            "INFO": "Thumela inkontileka ehlakaniphile kunethiwekhi ngokuthumela i-bytecode yayo ehlanganisiwe. Lona umsebenzi we-core chain - hlola kabili izilungiselelo zakho ze-bytecode kanye negesi ngaphambi kokusebenzisa, ukusetshenziswa akukwazi ukuhlehliswa.",
+            "FROM": "Kusukela",
+            "BYTECODE": "Ikhodi ye-Byte",
+            "BYTECODEPLACEHOLDER": "Namathisela i-bytecode yenkontileka ehlanganisiwe (hex)",
+            "INVALIDBYTECODE": "I-Bytecode kumele ibe yintambo ye-hex evumelekile (0-9, a-f) enenani elilinganayo lezinhlamvu",
+            "GASLIMIT": "Umkhawulo Wegesi",
+            "GASLIMITRANGE": "Ibanga",
+            "GASPRICE": "Intengo yegesi (i-MRX ngeyunithi yegesi)",
+            "GASPRICEMIN": "Okuncane kakhulu",
+            "ESTIMATEDMAXCOST": "Izindleko eziphezulu ezilinganiselwe",
+            "DEPLOYBUTTON": "Inkontileka Yokusebenzisa",
+            "INCOMPLETEFORM": "Sicela ukhethe ikheli lomthumeli, ufake ikhodi ye-byte evumelekile, bese usetha umkhawulo/intengo yegesi evumelekile",
+            "HIGHGASPRICETITLE": "Intengo Ephakeme Kaphethiloli",
+            "HIGHGASPRICEINFO": "Intengo kaphethiloli oyibekile iphakeme ngendlela engavamile. Lokhu kuthunyelwa kungabiza kufika ku:",
+            "DEPLOYING": "Inkontileka yokusebenzisa...",
+            "DEPLOYED": "Ukuthunyelwa kwenkontileka kuthunyelwe",
+            "RESULTTITLE": "Umphumela Wokuthunyelwa",
+            "STATUS": "Isimo",
+            "STATUSPENDING": "Kusalinde ukuqinisekiswa...",
+            "STATUSCONFIRMED": "Kusetshenziswe ngempumelelo",
+            "STATUSFAILED": "Ukuthunyelwa kwehlulekile",
+            "TXID": "I-ID yokwenziwayo",
+            "SENDER": "Umthumeli",
+            "CONTRACTADDRESS": "Ikheli Lenkontileka",
+            "GASUSED": "Igesi Esetshenzisiwe",
+            "DONEBUTTON": "Kuqediwe",
+            "DEPLOYANOTHERBUTTON": "Sebenzisa Omunye"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Ukuthengiselana",
+            "COPYBLOCKHASH": "I-Hash Yokukopisha Ibhulokhi",
+            "COPYTXID": "Kopisha i-ID yokwenziwayo",
+            "COPYACCOUNT": "Kopisha Igama Le-akhawunti",
+            "COPYADDRESS": "Kopisha Ikheli",
+            "COPYAMOUNT": "Ikhophi Inani",
+            "COPTBLOCKINDEX": "Inkomba Yebhulokhi Yokukopisha",
+            "EXPLORER": "Vula ku-Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Vula Ukuze Ubeke I-Stake",
@@ -68,13 +113,13 @@
             "IP": "I-IP",
             "ADDRESS": "Ikheli",
             "ENABLED": "Kunikwe amandla",
-            "STARTBUTTON": "Qala Indawo",
-            "STARTALIASBUTTON": "Qala igama elingelona iqiniso",
-            "STARTALLBUTTON": "Qala Konke",
             "NOMASTERNODES": "Awunawo ama-masternode",
             "NOMNOUTPUTS": "Akukho okukhiphayo kwe-Masternode okutholiwe. Ukuze usebenzise i-Masternode yendawo thumela izinhlamvu zemali eziyizigidi ezingu-2, 5, 25, 50 noma eziyi-100 ngqo ekhelini lakho le-Masternode bese ulinda iziqinisekiso ezingu-15.",
+            "STARTBUTTON": "Qala Indawo",
             "STOPBUTTON": "Misa Indawo",
+            "STARTALIASBUTTON": "Qala igama elingelona iqiniso",
             "STOPALIASBUTTON": "I-Alias Yokuyeka",
+            "STARTALLBUTTON": "Qala Konke",
             "ADDREMOTE": "Engeza i-Remote Masternode",
             "REMOVEMN": "Susa i-Masternode",
             "ADDLOCAL": "Setha i-Masternode Yendawo",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Jikelele",
                 "COREVERSION": "Inguqulo Eyinhloko",
+                "ALTITUDEVERSION": "Inguqulo Yokuphakama",
                 "PROTOCOLVERSION": "Inguqulo Yephrothokholi",
                 "WALLETVERSION": "Inguqulo ye-Wallet.dat",
                 "NETWORKTITLE": "Inethiwekhi",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Inani lama-Masternode",
                 "BLOCKCHAINTITLE": "Uchungechunge Lwebhulokhi",
                 "NUMBERBLOCKS": "Inani lamanje lamabhulokhi",
-                "BESTBLOCKTTIME": "Isikhathi sokugcina sokuvimba",
-                "ALTITUDEVERSION": "Inguqulo Yokuphakama"
+                "BESTBLOCKTTIME": "Isikhathi sokugcina sokuvimba"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Siyakwamukela kukhonsoli ye-Metrix Core RPC. Thayipha usizo ukuze uthole umbono jikelele wemiyalo etholakalayo.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Khetha Ulimi"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Ukuthengiselana",
-            "COPYBLOCKHASH": "I-Hash Yokukopisha Ibhulokhi",
-            "COPYTXID": "Kopisha i-ID yokwenziwayo",
-            "COPYACCOUNT": "Kopisha Igama Le-akhawunti",
-            "COPYADDRESS": "Kopisha Ikheli",
-            "COPYAMOUNT": "Ikhophi Inani",
-            "COPTBLOCKINDEX": "Inkomba Yebhulokhi Yokukopisha",
-            "EXPLORER": "Vula ku-Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Khetha Uhlobo Lwemali Oluboniswayo"
         },
         "EXPLORER": {
             "TITLE": "I-Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Inethiwekhi",
             "WINDOTAB": "Ifasitela",
+            "BACKUPTAB": "Isipele",
+            "EXPLORERTAB": "Umhloli",
+            "DEVELOPERTAB": "Unjiniyela",
             "NETWORK": {
                 "PROXY": "Xhuma nge-proxy ye-SOCKS5",
                 "PROXYIP": "I-IP yommeleli",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Nciphisa uma uvala",
                 "BEHAVIOURTITLE": "Ithreyi Yesistimu Nokuziphatha Kwewindi"
             },
-            "BACKUPTAB": "Isipele",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Isipele Ngokuzenzakalelayo",
                 "ENABLED": "Yenza isipele ngokuzenzakalelayo i-wallet.dat kushejuli",
                 "ENABLEDINFO": "Idala ikhophi yasenqolobaneni entsha yefayela lakho lesikhwama semali ngesikhathi esibekiwe, ngakho-ke ikhophi yakamuva ihlala itholakala uma kukhona okungahambi kahle.",
+                "INTERVALLABEL": "Yenza isipele njalo (izinsuku)",
                 "LASTBACKUP": "Isipele sokugcina:",
                 "NEVERBACKEDUP": "Akukho ukusekela ngokuzenzakalelayo okwenziwe okwamanje.",
                 "BACKUPNOWBUTTON": "Yenza Isipele Manje",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Setha kabusha kube Okuzenzakalelayo",
                 "PRUNETITLE": "Umlando Wokusekelayo",
                 "PRUNEINFO": "Ama-backup amadala azenzakalelayo ayasuswa ukuze le folda ingakhuli unomphela - akamuva kuphela angezansi agcinwayo.",
-                "KEEPCOUNTLABEL": "Gcina ekugcineni",
-                "INTERVALLABEL": "Yenza isipele njalo (izinsuku)"
+                "KEEPCOUNTLABEL": "Gcina ekugcineni"
             },
-            "EXPLORERTAB": "Umhloli",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "I-Block Explorer",
                 "BLOCKEXPLORERINFO": "Isayithi livuliwe lapho kubukelwa ukuthengiselana ku-block explorer (isb. chofoza kwesokudla ukuthengiselana > Buka ku-Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "I-Mainnet",
                 "TESTNET": "I-Testnet",
                 "REGTEST": "Ukuhlolwa kabusha"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Imodi Yonjiniyela",
+                "DEVMODEINFO": "Ivaliwe ngokuzenzakalelayo futhi ihloselwe onjiniyela kuphela. Ukuvumela lokhu kwembula izinketho zokushintsha uxhumano lwe-RPC - abasebenzisi abajwayelekile kufanele bakushiye lokhu.",
+                "DEVMODELABEL": "Nika amandla imodi yonjiniyela",
+                "WARNING": "Lezi zilungiselelo zenzelwe izinjongo zokuthuthukisa kuphela. Ukuzishintsha kungavimbela isikhwama ukuthi sixhumeke ku-daemon nhlobo - sebenzisa lokhu kuphela uma wazi ukuthi wenzani.",
+                "RPCHOSTTITLE": "Ukuxhumeka kwe-RPC",
+                "RPCHOSTINFO": "Ngokuzenzakalelayo i-Altitude ixhuma kwi-daemon eyazilawula yona, kulo mshini (127.0.0.1). Ukudlula lokhu kukuvumela ukuthi ixhume kwi-daemon ehlukile esikhundleni salokho - isibonelo i-remote regtest instance, ngaphandle kwesidingo sokusebenzisa eyodwa endaweni. Uma uxhumano luphumelela, i-Altitude ngeke ilande noma iqale i-daemon yayo yendawo. I-rpcallowip ye-daemon eqondiwe kumele ivumele lokhu kuxhumana, futhi i-rpcuser/rpcpassword engezansi kumele ifane nokucushwa kwayo. Isebenza ngokushesha, akukho ukuqala kabusha okudingekayo.",
+                "RPCHOSTLABEL": "Umsingathi we-RPC",
+                "RPCPORTLABEL": "Imbobo ye-RPC",
+                "RPCUSERLABEL": "Igama lomsebenzisi le-RPC",
+                "RPCPASSWORDLABEL": "Iphasiwedi ye-RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Ukubuka konke",
-            "TRANSACTIONSTAB": "Ukuthengiselana",
-            "ADDRESSTABS": "Amakheli"
-        },
-        "CURRENCY": {
-            "TITLE": "Khetha Uhlobo Lwemali Oluboniswayo"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Ideshibhodi",
             "SEND": "Thumela",
+            "CREATECONTRACT": "Dala Inkontileka",
             "RECEIVE": "Thola",
             "TRANSACTIONS": "Ukuthengiselana",
             "STAKING": "Ukumisa",
             "MASTERNODES": "Ama-Masternode",
+            "EXPLORER": "I-Block Explorer",
             "SYNC": {
                 "CONNECTING": "Ukuxhuma",
                 "NOBLOCKS": "Ilinde amabhlogo",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Isikhwama semali asikafakwa esitokisini okwamanje",
                 "MASTERNODEON": "I-Masternode iyasebenza okwamanje",
                 "MASTERNODEOFF": "I-Masternode ayisebenzi okwamanje"
-            },
-            "EXPLORER": "I-Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Faka ikheli lesayithi lewebhu3",
+            "GOBUTTON": "Hamba",
+            "QUICKLAUNCH": "Ukuqaliswa Okusheshayo",
+            "DEVTOOLS": "Vula Amathuluzi Onjiniyela",
+            "ADDLINK": "Engeza isixhumanisi",
+            "LINKNAMEPLACEHOLDER": "Igama",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Londoloza",
+            "CANCEL": "Khansela",
+            "REMOVE": "Susa",
+            "REMOVECONFIRM": "Susa lesi sixhumanisi esisheshayo?",
+            "LINKEXISTS": "Leso sixhumanisi sesivele sisohlwini lwakho lokuqalisa olusheshayo",
+            "LINKINVALID": "Faka ikheli lesayithi elivumelekile",
+            "LINKNETWORKLABEL": "Inethiwekhi",
+            "LOADFAILED": "Yehlulekile ukulayisha isayithi",
+            "SECURESITE": "Uxhumano luphephile - isitifiketi se-SSL esivumelekile",
+            "INSECURESITE": "Ukuxhumeka akuphephile",
+            "INVALIDCERTSITE": "Ukuxhumana akuyimfihlo - isitifiketi se-SSL esingasebenzi noma esingathembekile"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Faka iphasiwedi yakho yesikhwama semali",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Isibuyekezo se-Metrix Core siyatholakala. Ungathanda ukuyifaka manje?",
             "WALLETUPDATETITLE": "Isibuyekezo Sokuphakama Siyatholakala",
             "WALLETUPDATEINFO": "Isibuyekezo se-Altitude siyatholakala. Ungathanda ukusilanda manje?",
+            "WALLETUPDATEREADYTITLE": "Ukuvuselelwa Kokuphakama Kulungile",
+            "WALLETUPDATEREADYINFO": "Isibuyekezo silandiwe. Qala kabusha i-Altitude manje ukuze usifake?",
+            "WALLETUPDATERESTARTBUTTON": "Qala kabusha futhi ufake",
+            "WALLETUPDATELATERBUTTON": "Kamuva",
             "CLIENTUPDATEBUTTON": "Isibuyekezo",
             "CLIENTUPDATECANCELBUTTON": "Ungabuyekezi",
             "CLIENTUPDATESKIPBUTTON": "Yeqa lesi Sibuyekezo",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Noma yiziphi izipele ozenzile zefayela lakho lesikhwama kufanele zithathelwe indawo yifayela lesikhwama elisanda kukhiqizwa, elibethelwe. Ngenxa yezizathu zokuphepha, izipele zangaphambilini zefayela lesikhwama elingabethelwe ngeke zisebenze ngokushesha nje lapho uqala ukusebenzisa isikhwama esisha, esibethelwe.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "I-Metrix Core Ima Ngokungalindelekile",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kube nenkinga nge-Metrix Core ebangele ukuthi iphele. Kunconywa ukuthi uhlole ifayela lakho le-debug.log ukuze ubone izinkinga.",
+            "CLIENTUNKNOWNERRORTITLE": "Iphutha Lokuxhumana le-Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Kube nenkinga yokuxhumana ne-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho le-debug.log ukuze uthole izinkinga.",
+            "BOOTSTRAPFAILEDTITLE": "I-Metrix Core Bootstrap Yehlulekile",
+            "BOOTSTRAPFAILEDINFO": "Kube nenkinga yokuqalisa kabusha i-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho lelogi ye-Altitude ukuze uthole izinkinga.",
+            "BOOTSTRAPOFFERTITLE": "Isikhwama Semali Siphelelwe Yisikhathi Kakhulu",
+            "BOOTSTRAPOFFERINFO": "I-bootstrap yakamuva iyatholakala engenza i-Metrix Core ibe yamuva ngokushesha. Ukuqhubeka nokuvumelanisa okuvamile kungathatha izinsuku eziningana ukuqeda, njengoba isikhwama sakho semali sidinga ukulanda nokuqinisekisa yonke ibhlogo esiphuthelwe yiyo.",
+            "BOOTSTRAPOFFERBUTTON": "Landa i-Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Qhubeka Nokuvumelanisa Okuvamile",
+            "BOOTSTRAPSPACEINFO": "Asikho isikhala sediski esanele sokulanda nokukhipha i-bootstrap. Kuyadingeka: {kuyadingeka}, Kuyatholakala: {mahhala}. Khulula isikhala bese uzama futhi.",
+            "STARTUPFAILEDTITLE": "Ukuqalisa kwe-Metrix Core Kwehlulekile",
+            "STARTUPFAILEDINFO": "Kube nephutha ekuqaliseni i-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho lelogi ye-Altitude ukuze uthole izinkinga.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amathuluzi Okubuyisa",
             "CLIENTINVALIDCONFIGTITLE": "Ukucushwa kwe-metrix.conf okungavumelekile",
             "CLIENTINVALIDCONFIGINFO": "I-metrix.conf yakho ine-masternode engalungile ezokwenza i-Metrix Core iphume ngokushesha. Sicela uhlole leli fayela.",
             "ADDREMOTEMNTITLE": "Engeza i-Remote Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Ukhiye Oyimfihlo we-Masternode",
             "ADDREMOTEMNTXHASH": "I-Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Inkomba ye-Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "I-Metrix Core Bootstrap Yehlulekile",
-            "BOOTSTRAPFAILEDINFO": "Kube nenkinga yokuqalisa kabusha i-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho lelogi ye-Altitude ukuze uthole izinkinga.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Amathuluzi Okubuyisa",
-            "STARTUPFAILEDTITLE": "Ukuqalisa kwe-Metrix Core Kwehlulekile",
-            "STARTUPFAILEDINFO": "Kube nephutha ekuqaliseni i-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho lelogi ye-Altitude ukuze uthole izinkinga.",
-            "CLIENTUNKNOWNERRORTITLE": "Iphutha Lokuxhumana le-Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Kube nenkinga yokuxhumana ne-Metrix Core. Kunconywa ukuthi uhlole ifayela lakho le-debug.log ukuze uthole izinkinga.",
             "UNENROLLGOVERNORTITLE": "Qinisekisa Ukususwa Kokubhalisa Kukahulumeni",
             "UNENROLLGOVERNORCONTENT": "Uqinisekile ukuthi ufuna ukususa ukubhalisa kuMbusi wakho? Ngeke usakwazi ukuvota ekuphathweni kweketanga.",
-            "WALLETUPDATEREADYTITLE": "Ukuvuselelwa Kokuphakama Kulungile",
-            "WALLETUPDATEREADYINFO": "Isibuyekezo silandiwe. Qala kabusha i-Altitude manje ukuze usifake?",
-            "WALLETUPDATERESTARTBUTTON": "Qala kabusha futhi ufake",
-            "WALLETUPDATELATERBUTTON": "Kamuva",
             "DAPPCONNECTTITLE": "Xhuma kusayithi",
             "DAPPCONNECTINFO": "Le sayithi ifuna ukuxhuma esikhwameni sakho semali futhi ibuke ikheli lakho kanye nebhalansi yakho.",
             "DAPPCONNECTBUTTON": "Xhuma",
+            "DAPPCONNECTADDRESSLABEL": "Ikheli",
+            "DAPPAPPROVEBUTTON": "Vuma",
             "DAPPREJECTBUTTON": "Yenqaba",
             "DAPPSENDTITLE": "Isicelo Sokuthengiselana Kwenkontileka",
             "DAPPSENDINFO": "Le sayithi icela ukuthumela ukuthengiselana kwenkontileka kusuka esikhwameni sakho.",
-            "DAPPSIGNTITLE": "Sayina Isicelo Somyalezo",
-            "DAPPSIGNINFO": "Le sayithi icela ukusayina umlayezo ngekheli lakho lesikhwama semali.",
-            "DAPPNOTREADY": "Ayikwazi ukuxhuma kusayithi okwamanje - i-Metrix Core isaqala ukusebenza.",
-            "DAPPNOWALLET": "Ayikwazi ukuxhuma kusayithi - alikho ikheli lesikhwama semali elitholakalayo.",
-            "DAPPAPPROVEBUTTON": "Vuma",
-            "DAPPCONNECTADDRESSLABEL": "Ikheli",
             "DAPPSENDSITELABEL": "Isayithi",
             "DAPPSENDCONTRACTLABEL": "Ikheli Lenkontileka",
             "DAPPSENDAMOUNTLABEL": "Inani",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Imali Ephezulu Yenethiwekhi",
             "DAPPSENDMAXTOTALLABEL": "Isamba Esiphezulu",
             "DAPPSENDDATALABEL": "Idatha Yenkontileka",
+            "DAPPSIGNTITLE": "Sayina Isicelo Somyalezo",
+            "DAPPSIGNINFO": "Le sayithi icela ukusayina umlayezo ngekheli lakho lesikhwama semali.",
             "DAPPSIGNMESSAGELABEL": "Umlayezo",
-            "BOOTSTRAPOFFERTITLE": "Isikhwama Semali Siphelelwe Yisikhathi Kakhulu",
-            "BOOTSTRAPOFFERINFO": "I-bootstrap yakamuva iyatholakala engenza i-Metrix Core ibe yamuva ngokushesha. Ukuqhubeka nokuvumelanisa okuvamile kungathatha izinsuku eziningana ukuqeda, njengoba isikhwama sakho semali sidinga ukulanda nokuqinisekisa yonke ibhlogo esiphuthelwe yiyo.",
-            "BOOTSTRAPOFFERBUTTON": "Landa i-Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Qhubeka Nokuvumelanisa Okuvamile",
-            "BOOTSTRAPSPACEINFO": "Asikho isikhala sediski esanele sokulanda nokukhipha i-bootstrap. Kuyadingeka: {kuyadingeka}, Kuyatholakala: {mahhala}. Khulula isikhala bese uzama futhi."
+            "DAPPNOTREADY": "Ayikwazi ukuxhuma kusayithi okwamanje - i-Metrix Core isaqala ukusebenza.",
+            "DAPPNOWALLET": "Ayikwazi ukuxhuma kusayithi - alikho ikheli lesikhwama semali elitholakalayo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Incwadi Yamakheli",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Inethiwekhi yamanje"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Faka ikheli lesayithi lewebhu3",
-            "GOBUTTON": "Hamba",
-            "QUICKLAUNCH": "Ukuqaliswa Okusheshayo",
-            "DEVTOOLS": "Vula Amathuluzi Onjiniyela",
-            "ADDLINK": "Engeza isixhumanisi",
-            "LINKNAMEPLACEHOLDER": "Igama",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Londoloza",
-            "CANCEL": "Khansela",
-            "REMOVE": "Susa",
-            "REMOVECONFIRM": "Susa lesi sixhumanisi esisheshayo?",
-            "LINKEXISTS": "Leso sixhumanisi sesivele sisohlwini lwakho lokuqalisa olusheshayo",
-            "LINKINVALID": "Faka ikheli lesayithi elivumelekile",
-            "LINKNETWORKLABEL": "Inethiwekhi",
-            "LOADFAILED": "Yehlulekile ukulayisha isayithi",
-            "SECURESITE": "Uxhumano luphephile - isitifiketi se-SSL esivumelekile",
-            "INSECURESITE": "Ukuxhumeka akuphephile",
-            "INVALIDCERTSITE": "Ukuxhumana akuyimfihlo - isitifiketi se-SSL esingasebenzi noma esingathembekile"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Isikhwama Sokulondoloza...",
             "SIGNMESSAGE": "Sayina Umlayezo...",
             "VERIFYMESSAGE": "Qinisekisa Umlayezo...",
-            "LOCALE": "Ulimi...",
-            "RESTARTCORE": "Qala kabusha i-Metrix Core",
-            "EXIT": "Phuma",
             "OPTIONS": "Izinketho...",
+            "LOCALE": "Ulimi...",
             "CURRENCIES": "Imali Yokubonisa...",
-            "ALTITUDEREFRESH": "Vuselela Idatha Yokuphakama"
+            "RESTARTCORE": "Qala kabusha i-Metrix Core",
+            "ALTITUDEREFRESH": "Vuselela Idatha Yokuphakama",
+            "EXIT": "Phuma"
         },
         "ENCRYPT": {
             "TITLE": "Bethela",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Ibhalansi Ephelele",
+        "SPENDABLEBALANCE": "Ibhalansi Engasetshenziswa",
+        "PENDINGBALANCE": "Ibhalansi Elindile",
         "CANCELBUTTON": "Khansela",
         "DONEBUTTON": "Kuqediwe",
         "OKBUTTON": "KULUNGILE",
+        "ACCEPTBUTTON": "Yamukela",
         "CLEARALLBUTTON": "Sula Konke",
         "ENTERACCOUNTLABEL": "Faka ilebula yaleli kheli",
         "ENTERADDRESSLABEL": "Faka ikheli le-Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Hlunga nge",
         "SEARCH": "Sesha",
         "FEE": "Imali",
-        "ACCEPTBUTTON": "Yamukela",
         "CONFIRMED": "Kuqinisekisiwe",
         "UNCONFIRMED": "Akuqinisekisiwe",
-        "PENDINGBALANCE": "Ibhalansi Elindile",
-        "SPENDABLEBALANCE": "Ibhalansi Engasetshenziswa",
         "SAVEBUTTON": "Londoloza"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Iqala kabusha i-Metrix Core...",
         "BOOTSTRAPPING": "Ilanda i-bootstrap...",
         "BOOTSTRAPEXTRACTING": "Ikhipha i-bootstrap...",
-        "TIMEREMAINING": "okusele:"
+        "TIMEREMAINING": "okusele:",
+        "DEVRPCOVERRIDEACTIVE": "Ukweqa uxhumano lwe-RPC yonjiniyela kusethiwe (Izinketho > Unjiniyela) futhi akuphenduli. Kusule ukuze uphinde uxhumeke ku-daemon yendawo ngokujwayelekile.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Sula i-RPC Override bese Uxhuma kabusha"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "I-akhawunti entsha idalwe ngempumelelo",
         "ADDRESSCOPIEDCLIPBOARD": "Ikheli likopishwe ebhodini lokunamathisela",
+        "COPIEDCLIPBOARD": "Kukopishwe ebhodini lokunamathisela",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Ukuthengiselana kukopishwe ebhodini lokunamathisela",
         "EMPTYFIELDS": "Sicela ugcwalise zonke izinkambu",
         "NOUPDATE": "Akukho sibuyekezo esitholakalayo",
         "WALLETBACKEDUP": "Ukusekela ngokulondoloza isikhwama semali kuphumelele",
+        "WALLETBACKUPFAILED": "Ukusekela ngokuzenzakalelayo isikhwama semali kuhlulekile - hlola indawo yakho yokusekela kanye nesikhala sediski esitholakalayo",
         "PASSPHRASEMISMATCH": "Amagama okungena owafakile awafani",
         "CHECKINGUPDATE": "Ihlola isibuyekezo...",
         "CHECKINGUPDATEFAILED": "Ayikwazi ukuhlola isibuyekezo. Hlola inethiwekhi yakho.",
+        "WALLETUPDATEDOWNLOADING": "Ilanda isibuyekezo...",
         "SENDINGEXCEEDSBALANCE": "Inani olithumelayo lidlula ibhalansi yakho oyikhethile",
         "MISSINGCHANGEADDRESS": "Kumelwe ucacise ikheli lokushintsha",
         "MISSINGDESTINATIONADDRESS": "Kumelwe ucacise ikheli lapho uya khona",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ibethela isikhwama semali...",
         "CHANGINGPASSPHARASE": "Ukushintsha igama lokungena...",
         "STARTINGMASTERNODE": "Iqala i-masternode...",
+        "STOPPINGMASTERNODE": "Imisa i-masternode...",
         "SENDINGTRANSACTION": "Kuthunyelwa ukuthengiselana...",
         "SIGNINGMESSAGE": "Kusayinwa umlayezo...",
         "SIGNEDMESSAGE": "Umlayezo usayiniwe",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ivula isikhwama semali...",
         "TRANSACTIONMISMATCH": "Iphutha lokuthengiselana. Sicela uzame futhi.",
         "MINIMUMCONFIRMATIONS": "Konke okufakwayo kudinga okungenani isiqinisekiso esisodwa ngaphambi kokusebenzisa.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Ukuthengiselana kukopishwe ebhodini lokunamathisela",
-        "STOPPINGMASTERNODE": "Imisa i-masternode...",
         "FAILEDTOWRITECONFIG": "Kube nenkinga yokubhala kufayela lakho le-metrix.conf. Hlola ukuthi ifayela likhona nokuthi i-Altitude inezimvume zokubhala.",
         "NOPUBLICUP": "Alikho ikheli le-IP lomphakathi elitholiwe. Hlola uxhumano lwakho lwe-inthanethi bese uqala kabusha i-Altitude.",
         "CONFIGURINGLOCALMN": "Ilungiselela i-Masternode yendawo...",
         "REPORTINGISSUE": "Ukuthola ulwazi lokuxilonga... Lolu lwazi luzokopishwa ebhodini lakho lokunamathisela.",
-        "WALLETUPDATEDOWNLOADING": "Ilanda isibuyekezo...",
-        "WALLETBACKUPFAILED": "Ukusekela ngokuzenzakalelayo isikhwama semali kuhlulekile - hlola indawo yakho yokusekela kanye nesikhala sediski esitholakalayo",
         "EXPLORERURLSAVED": "I-URL ye-Explorer ilondoloziwe",
         "EXPLORERURLRESET": "I-URL ye-Explorer ibuyiselwe kokuzenzakalelayo",
         "EXPLORERURLINVALID": "Leyo akuyona i-URL ye-http(s) evumelekile",
-        "EXPLORERURLUNREACHABLE": "Ayikwazanga ukufinyelela leyo URL - yihlole bese uzama futhi"
+        "EXPLORERURLUNREACHABLE": "Ayikwazanga ukufinyelela leyo URL - yihlole bese uzama futhi",
+        "DEVRPCHOSTSAVED": "I-RPC host ilondoloziwe",
+        "DEVRPCHOSTRESET": "I-RPC host ibuyiselwe kokuzenzakalelayo (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Izinhlamvu zemali ezamukelwe",
+        "NEWTRANSACTION_TITLE_STAKE": "Isiteki Esitholiwe",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Uthole Umklomelo we-Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Imizuzwana embalwa",
@@ -533,11 +587,6 @@
         "MONTHS": "izinyanga",
         "AYEAR": "Unyaka",
         "YEARS": "iminyaka"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Izinhlamvu zemali ezamukelwe",
-        "NEWTRANSACTION_TITLE_STAKE": "Isiteki Esitholiwe",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Uthole Umklomelo we-Masternode"
     },
     "MONTH": {
         "JAN": "uJanuwari",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Ababusi banesibopho sokuvota ngesabelomali sanyanga zonke kanye nezinguquko ze-blockchain. Ungaba uMbusi ngokufaka isibambiso esifanele kwinkontileka yokuphatha.",
                 "COLLATERAL": "Isibambiso esidingekayo",
                 "ENROLL": "Bhalisa",
+                "SELECTAGOVERNOR": "Khetha ikheli likahulumeni elifanelekile",
+                "GOVERNORNOTSELECTED": "Alikho ikheli elifanelekile elikhethiwe",
                 "CONFIRMENROLL": "Usuzobhalisa njengoMbusi. Lokhu kuzothumela ukuthengiselana okunesibambiso esidingekayo kwinkontileka yokuphatha. Ungayekisa ukubhalisa nganoma yisiphi isikhathi.",
                 "ISGOVERNORTITLE": "UnguMbusi osebenzayo!",
                 "ISGOVERNORDETAIL1": "Ababusi banesibopho sokuvota ngezabelomali zanyanga zonke kanye nezinguquko ze-blockchain.",
                 "ISGOVERNORDETAIL2": "Ukuze uhlale unguMbusi kuzodingeka uhlanganyele okungenani kuvoti elilodwa njalo ezinsukwini ezingama-30.",
                 "ISGOVERNORDETAIL3": "Uma kungekho lutho ongavotela kulo ungaqhubeka nokubhalisa kwakho ngesandla ngokuthumela i-ping esebenzayo.",
+                "MYGOVERNORADDRESS": "Ikheli Lami Lombusi",
                 "UNENROLL": "Susa ukubhalisa",
                 "PING": "Thumela i-Active Ping",
                 "LASTPINGTITLE": "I-ping yokugcina",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "izinsuku",
                 "GOVERNORVOTEMATURITYHOURS": "amahora",
                 "GOVERNORVOTEMATURITYSUFFIX": "kuze kube yilapho uvuthiwe",
-                "MYGOVERNORADDRESS": "Ikheli Lami Lombusi",
-                "SELECTAGOVERNOR": "Khetha ikheli likahulumeni elifanelekile",
-                "GOVERNORNOTSELECTED": "Alikho ikheli elifanelekile elikhethiwe",
                 "NOTFULLYSYNCEDTITLE": "Isimo sikahulumeni asitholakali",
                 "NOTFULLYSYNCEDDETAIL": "Isimo sakho sokubhalisa kuMbusi sizobonakala uma i-blockchain yakho isivumelanisiwe ngokugcwele.",
                 "DGPMIGRATIONTITLE": "Ukufuduka kwe-DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Isiphakamiso sakho sidalwe ngempumelelo",
             "ENROLLINGGOVERNOR": "Ukubhalisa njengoMbusi...",
             "ENROLLEDGOVERNOR": "Ukubhalisa kwakho kuzoqedwa uma ukuthengiselana kwakho sekuqinisekisiwe",
-            "VOTINGONPROPOSAL": "Ukuthumela ivoti lesiphakamiso",
-            "VOTEDONPROPOSAL": "Ivoti lakho lizobalwa uma ukuthengiselana sekuqinisekisiwe.",
             "PINGINGGOVERNOR": "Ithumela i-ping...",
             "PINGEDGOVERNOR": "I-Ping ithunyelwe ngempumelelo. Umphathi wakho uzobuyekezwa uma ukuthengiselana sekuqinisekisiwe",
+            "VOTINGONPROPOSAL": "Ukuthumela ivoti lesiphakamiso",
+            "VOTEDONPROPOSAL": "Ivoti lakho lizobalwa uma ukuthengiselana sekuqinisekisiwe.",
             "UNENROLLINGGOVERNOR": "Ukususa ukubhalisa kuMbusi...",
             "UNENROLLEDGOVERNOR": "Ukuthengiselana kuthunyelwe. UNdunankulu wakho uzokhishwa ohlwini uma ukuthengiselana sekuqinisekisiwe",
             "GOVERNORNOTMATURE": "UMbusi wakho akakavuthwa ngokwanele ukwenza lesi senzo okwamanje"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Thenga i-Metrix",
+                "SEARCH": "Umlando"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Uyathumela",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Umlando Wokuthengiselana",
                 "SEARCHBUTTON": "SESHA",
+                "SEARCHPLACEHOLDER": "Faka ikheli le-MRX noma le-BTC",
                 "TRANSACTIONDATE": "Usuku",
                 "TRANSACTIONTYPE": "Uhlobo lwe-TX",
                 "TRANSACTIONAMOUNT": "Inani",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Kuqinisekisiwe",
                 "TRANSACTIONNOTCONFIRMED": "Akuqinisekisiwe",
                 "TRANSACTIONREFUNDED": "Ibuyiselwe imali - Ngaphansi kobuncane",
-                "AVGSWAPPRICE": "Intengo Yokushintshanisa Emaphakathi",
-                "SEARCHPLACEHOLDER": "Faka ikheli le-MRX noma le-BTC"
+                "AVGSWAPPRICE": "Intengo Yokushintshanisa Emaphakathi"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Kudalwa Ikheli Lokushintshana...",
             "ALREADYHAVEADDRESS": "Usuvele unekheli le-BTC elihlotshaniswa naleli kheli le-Metrix",
             "NOADDRESS": "Awuzange ufake ikheli le-Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Thenga i-Metrix",
-                "SEARCH": "Umlando"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Veza",
                 "EMPTYTITLE": "Azikho Izimpawu Ezitholiwe Okwamanje",
                 "EMPTYDETAIL": "Ukuphakama ngokuzenzakalela kuhlola i-block explorer amathokheni e-MRC20 kanye ne-MRC721 athunyelwe emakhelini akho, bese kuqinisekisa konke bukhoma ngokumelene ne-node yakho. Ungangeza futhi ithokheni ngesandla uma wazi ikheli layo lenkontileka.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ukuhlola amathokheni ngokuzenzakalelayo kuvaliwe, ngakho-ke amakheli akho awahlolwa amathokheni. Yivule futhi ngenhla, noma engeza ithokheni ngesandla uma wazi ikheli layo lenkontileka.",
                 "HIDDENTITLE": "Amathokheni Afihliwe",
                 "CONTEXTMENUHIDE": "Fihla Ithokheni",
                 "ITEMSSUFFIX": "into(izinto)",
-                "NONENUMERABLETOOLTIP": "Leli qoqo alisekeli ukufakwa ohlwini lwezinto ngazinye - okubonisa ukuthi zingaki oziphethe esikhundleni salokho."
+                "NONENUMERABLETOOLTIP": "Leli qoqo alisekeli ukufakwa ohlwini lwezinto ngazinye - okubonisa ukuthi zingaki oziphethe esikhundleni salokho.",
+                "CHECKINGENABLED": "Ukuhlola Kuvuliwe",
+                "CHECKINGDISABLED": "Ukukhokha Kuvaliwe",
+                "CHECKINGENABLEDTOOLTIP": "Ukuhlola amathokheni kuvuliwe - Ukuphakama kuhlola amakheli akho ngezikhathi ezithile ukuze kutholakale amathokheni futhi kuvuselele ibhalansi. Chofoza ukuze uvale.",
+                "CHECKINGDISABLEDTOOLTIP": "Ukuhlola amathokheni kuvaliwe - chofoza ukuze uvule futhi.",
+                "CHECKINGDISABLEDNOTICE": "Ukuhlola amathokheni ngokuzenzakalelayo kuvaliwe. Amakheli akho awaskeniwe ukuthola amathokheni futhi izilinganiso ngeke zibuyekezwe. Usengangeza ithokheni ngesandla."
             },
             "ADDTOKEN": {
                 "TITLE": "Engeza ithokheni",

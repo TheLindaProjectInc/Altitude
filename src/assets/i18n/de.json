@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Benutzerkonto erstellen",
             "HIDEEMPTYACCOUNTS": "Unbenannte, leere Konten ausblenden"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Überblick",
+            "TRANSACTIONSTAB": "Transaktionen",
+            "ADDRESSTABS": "Adressen"
+        },
         "SEND": {
             "ADDRECIPIENT": "Empfänger hinzufügen",
             "SEND": "Schicken",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datum",
             "TABLECOLUMNS_CONFIRMS": "Bestätigungen",
             "ALL_SELECTUNSELECT": "Alle umschalten",
+            "TREEMODE": "Baummodus",
+            "LISTMODE": "Listenmodus",
             "SENDAVAILABLE": "Nutzen Sie das verfügbare Guthaben",
             "INPUTLOCKED": "Die Eingabe ist gesperrt. Sie müssen diese Eingabe entsperren, um sie ausgeben zu können.",
             "CONTEXTMENULOCKINPUT": "Sperreingang",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Nach Gebühr",
             "QUANTITY": "Menge",
             "BYTES": "Bytes",
-            "TREEMODE": "Baummodus",
-            "LISTMODE": "Listenmodus",
             "ALERTFEECHANGETITLE": "Gebührenänderung",
             "ALERTFEECHANGECONTENT": "Die tatsächliche Transaktionsgebühr ist höher als erwartet. Bitte bestätigen Sie die neue Gebühr:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Vertrag erstellen",
+            "INFO": "Stellen Sie einen Smart Contract im Netzwerk bereit, indem Sie seinen kompilierten Bytecode einreichen. Dies ist eine Kernfunktion der Blockchain – überprüfen Sie Ihren Bytecode und Ihre Gaseinstellungen sorgfältig, bevor Sie ihn bereitstellen. Die Bereitstellung kann nicht rückgängig gemacht werden.",
+            "FROM": "Aus",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Fügen Sie den kompilierten Vertragsbytecode (hex) ein.",
+            "INVALIDBYTECODE": "Der Bytecode muss eine gültige Hexadezimalzeichenkette (0-9, a-f) mit einer geraden Anzahl von Zeichen sein.",
+            "GASLIMIT": "Gasbegrenzung",
+            "GASLIMITRANGE": "Reichweite",
+            "GASPRICE": "Gaspreis (MRX pro Gaseinheit)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Geschätzte maximale Kosten",
+            "DEPLOYBUTTON": "Einsatzvertrag",
+            "INCOMPLETEFORM": "Bitte wählen Sie eine Absenderadresse, geben Sie gültigen Bytecode ein und legen Sie ein gültiges Gaslimit/einen gültigen Gaspreis fest.",
+            "HIGHGASPRICETITLE": "Hoher Benzinpreis",
+            "HIGHGASPRICEINFO": "Der von Ihnen festgelegte Gaspreis ist ungewöhnlich hoch. Diese Bereitstellung könnte bis zu folgende Kosten verursachen:",
+            "DEPLOYING": "Vertrag wird bereitgestellt...",
+            "DEPLOYED": "Vertragsbereitstellung eingereicht",
+            "RESULTTITLE": "Bereitstellungsergebnis",
+            "STATUS": "Status",
+            "STATUSPENDING": "Bestätigung ausstehend...",
+            "STATUSCONFIRMED": "Erfolgreich bereitgestellt",
+            "STATUSFAILED": "Bereitstellung fehlgeschlagen",
+            "TXID": "Transaktions-ID",
+            "SENDER": "Absender",
+            "CONTRACTADDRESS": "Vertragsadresse",
+            "GASUSED": "Gasverbrauch",
+            "DONEBUTTON": "Erledigt",
+            "DEPLOYANOTHERBUTTON": "Einen weiteren einsetzen"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaktionen",
+            "COPYBLOCKHASH": "Kopierblock-Hash",
+            "COPYTXID": "Transaktions-ID kopieren",
+            "COPYACCOUNT": "Kontonamen kopieren",
+            "COPYADDRESS": "Kopie Adresse",
+            "COPYAMOUNT": "Kopierbetrag",
+            "COPTBLOCKINDEX": "Kopierblockindex",
+            "EXPLORER": "Im Block-Explorer öffnen"
         },
         "STAKING": {
             "UNLOCK": "Freischalten für Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adresse",
             "ENABLED": "Ermöglicht",
-            "STARTBUTTON": "Lokal starten",
-            "STARTALIASBUTTON": "Alias starten",
-            "STARTALLBUTTON": "Alles starten",
             "NOMASTERNODES": "Du hast keine Masternodes.",
             "NOMNOUTPUTS": "Es wurden keine Masternode-Ausgaben gefunden. Um einen lokalen Masternode zu betreiben, senden Sie genau 2, 5, 25, 50 oder 100 Millionen Coins an Ihre Masternode-Adresse und warten Sie auf 15 Bestätigungen.",
+            "STARTBUTTON": "Lokal starten",
             "STOPBUTTON": "Lokal anhalten",
+            "STARTALIASBUTTON": "Alias starten",
             "STOPALIASBUTTON": "Alias stoppen",
+            "STARTALLBUTTON": "Alles starten",
             "ADDREMOTE": "Remote-Masternode hinzufügen",
             "REMOVEMN": "Masternode entfernen",
             "ADDLOCAL": "Lokalen Masternode einrichten",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Allgemein",
                 "COREVERSION": "Core-Version",
+                "ALTITUDEVERSION": "Höhenversion",
                 "PROTOCOLVERSION": "Protokollversion",
                 "WALLETVERSION": "Wallet.dat-Version",
                 "NETWORKTITLE": "Netzwerk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Anzahl der Masternodes",
                 "BLOCKCHAINTITLE": "Blockchain",
                 "NUMBERBLOCKS": "Aktuelle Anzahl der Blöcke",
-                "BESTBLOCKTTIME": "Letzte Blockzeit",
-                "ALTITUDEVERSION": "Höhenversion"
+                "BESTBLOCKTTIME": "Letzte Blockzeit"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Willkommen in der Metrix Core RPC-Konsole. Geben Sie „help“ ein, um eine Übersicht der verfügbaren Befehle zu erhalten.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Sprache auswählen"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaktionen",
-            "COPYBLOCKHASH": "Kopierblock-Hash",
-            "COPYTXID": "Transaktions-ID kopieren",
-            "COPYACCOUNT": "Kontonamen kopieren",
-            "COPYADDRESS": "Kopie Adresse",
-            "COPYAMOUNT": "Kopierbetrag",
-            "COPTBLOCKINDEX": "Kopierblockindex",
-            "EXPLORER": "Im Block-Explorer öffnen"
+        "CURRENCY": {
+            "TITLE": "Währung anzeigen"
         },
         "EXPLORER": {
             "TITLE": "Block-Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netzwerk",
             "WINDOTAB": "Fenster",
+            "BACKUPTAB": "Backup",
+            "EXPLORERTAB": "Forscher",
+            "DEVELOPERTAB": "Entwickler",
             "NETWORK": {
                 "PROXY": "Verbindung über SOCKS5-Proxy herstellen",
                 "PROXYIP": "Proxy-IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Beim Schließen minimieren",
                 "BEHAVIOURTITLE": "Systemleiste & Fensterverhalten"
             },
-            "BACKUPTAB": "Backup",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatische Datensicherung",
                 "ENABLED": "Automatische Sicherung der wallet.dat-Datei nach einem Zeitplan",
                 "ENABLEDINFO": "Erstellt regelmäßig eine neue Sicherungskopie Ihrer Wallet-Datei, sodass im Fehlerfall immer eine aktuelle Kopie verfügbar ist.",
+                "INTERVALLABEL": "Sichern Sie alle (Tage)",
                 "LASTBACKUP": "Letzte Sicherung:",
                 "NEVERBACKEDUP": "Es wurde noch keine automatische Datensicherung erstellt.",
                 "BACKUPNOWBUTTON": "Jetzt sichern",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Auf Standardwerte zurücksetzen",
                 "PRUNETITLE": "Sicherungsverlauf",
                 "PRUNEINFO": "Ältere automatische Backups werden gelöscht, damit dieser Ordner nicht unendlich wächst – es werden nur die neuesten Backups unten aufbewahrt.",
-                "KEEPCOUNTLABEL": "Letzten Tag behalten",
-                "INTERVALLABEL": "Sichern Sie alle (Tage)"
+                "KEEPCOUNTLABEL": "Letzten Tag behalten"
             },
-            "EXPLORERTAB": "Forscher",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block-Explorer",
                 "BLOCKEXPLORERINFO": "Die Website öffnete sich, als eine Transaktion im Block-Explorer angezeigt wurde (z. B. Rechtsklick auf eine Transaktion > Im Explorer anzeigen).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnetz",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Entwicklermodus",
+                "DEVMODEINFO": "Standardmäßig deaktiviert und nur für Entwickler vorgesehen. Durch Aktivieren dieser Option werden Optionen zum Überschreiben der RPC-Verbindung angezeigt – normale Benutzer sollten diese Option deaktiviert lassen.",
+                "DEVMODELABEL": "Entwicklermodus aktivieren",
+                "WARNING": "Diese Einstellungen sind ausschließlich für Entwicklungszwecke bestimmt. Eine Änderung dieser Einstellungen kann verhindern, dass die Wallet überhaupt eine Verbindung zu einem Daemon herstellt – verwenden Sie diese Funktion nur, wenn Sie genau wissen, was Sie tun.",
+                "RPCHOSTTITLE": "RPC-Verbindung",
+                "RPCHOSTINFO": "Standardmäßig verbindet sich Altitude mit dem von ihm selbst verwalteten Daemon auf diesem Rechner (127.0.0.1). Durch Überschreiben dieser Einstellungen kann Altitude stattdessen eine Verbindung zu einem anderen Daemon herstellen – beispielsweise zu einer entfernten regtest-Instanz, ohne dass ein lokaler Daemon ausgeführt werden muss. Bei erfolgreicher Verbindung lädt Altitude keinen eigenen lokalen Daemon herunter und startet diesen auch nicht. Die IP-Adresse des Ziel-Daemons (rpcallowip) muss diese Verbindung zulassen, und die unten angegebenen Werte für Benutzername und Passwort (rpcuser/rpcpassword) müssen mit dessen Konfiguration übereinstimmen. Die Änderung wird sofort wirksam; ein Neustart ist nicht erforderlich.",
+                "RPCHOSTLABEL": "RPC-Host",
+                "RPCPORTLABEL": "RPC-Port",
+                "RPCUSERLABEL": "RPC-Benutzername",
+                "RPCPASSWORDLABEL": "RPC-Passwort"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Überblick",
-            "TRANSACTIONSTAB": "Transaktionen",
-            "ADDRESSTABS": "Adressen"
-        },
-        "CURRENCY": {
-            "TITLE": "Währung anzeigen"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Armaturenbrett",
             "SEND": "Schicken",
+            "CREATECONTRACT": "Vertrag erstellen",
             "RECEIVE": "Erhalten",
             "TRANSACTIONS": "Transaktionen",
             "STAKING": "Staking",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Block-Explorer",
             "SYNC": {
                 "CONNECTING": "Verbindung",
                 "NOBLOCKS": "Warten auf Blöcke",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Wallet verwendet derzeit kein Staking.",
                 "MASTERNODEON": "Der Masternode läuft derzeit.",
                 "MASTERNODEOFF": "Der Masternode ist derzeit nicht aktiv."
-            },
-            "EXPLORER": "Block-Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Geben Sie eine Web3-Site-Adresse ein",
+            "GOBUTTON": "Gehen",
+            "QUICKLAUNCH": "Schnellstart",
+            "DEVTOOLS": "Open Developer Tools",
+            "ADDLINK": "Link hinzufügen",
+            "LINKNAMEPLACEHOLDER": "Name",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Speichern",
+            "CANCEL": "Stornieren",
+            "REMOVE": "Entfernen",
+            "REMOVECONFIRM": "Diesen Schnelllink entfernen?",
+            "LINKEXISTS": "Dieser Link befindet sich bereits in Ihrer Schnellstartliste.",
+            "LINKINVALID": "Geben Sie eine gültige Website-Adresse ein.",
+            "LINKNETWORKLABEL": "Netzwerk",
+            "LOADFAILED": "Website konnte nicht geladen werden",
+            "SECURESITE": "Die Verbindung ist sicher – gültiges SSL-Zertifikat",
+            "INSECURESITE": "Die Verbindung ist nicht sicher.",
+            "INVALIDCERTSITE": "Die Verbindung ist nicht privat – ungültiges oder nicht vertrauenswürdiges SSL-Zertifikat."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Geben Sie Ihre Wallet-Passphrase ein",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Für Metrix Core ist ein Update verfügbar. Möchten Sie es jetzt installieren?",
             "WALLETUPDATETITLE": "Höhenaktualisierung verfügbar",
             "WALLETUPDATEINFO": "Für Altitude ist ein Update verfügbar. Möchten Sie es jetzt herunterladen?",
+            "WALLETUPDATEREADYTITLE": "Höhenaktualisierung bereit",
+            "WALLETUPDATEREADYINFO": "Das Update wurde heruntergeladen. Starten Sie Altitude jetzt neu, um es zu installieren?",
+            "WALLETUPDATERESTARTBUTTON": "Neustart & Installation",
+            "WALLETUPDATELATERBUTTON": "Später",
             "CLIENTUPDATEBUTTON": "Aktualisieren",
             "CLIENTUPDATECANCELBUTTON": "Nicht aktualisieren",
             "CLIENTUPDATESKIPBUTTON": "Dieses Update überspringen",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Alle zuvor erstellten Sicherungskopien Ihrer Wallet-Datei sollten durch die neu generierte, verschlüsselte Wallet-Datei ersetzt werden. Aus Sicherheitsgründen sind frühere Sicherungskopien der unverschlüsselten Wallet-Datei ungültig, sobald Sie die neue, verschlüsselte Wallet verwenden.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core wurde unerwartet gestoppt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Es gab ein Problem mit Metrix Core, das zum Abbruch des Programms geführt hat. Es wird empfohlen, die Datei debug.log auf eventuelle Fehler zu überprüfen.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-Kommunikationsfehler",
+            "CLIENTUNKNOWNERRORINFO": "Es gab ein Problem bei der Kommunikation mit Metrix Core. Es wird empfohlen, die Datei debug.log auf Fehler zu überprüfen.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap fehlgeschlagen",
+            "BOOTSTRAPFAILEDINFO": "Beim Starten von Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Fehler zu überprüfen.",
+            "BOOTSTRAPOFFERTITLE": "Geldbörse deutlich veraltet",
+            "BOOTSTRAPOFFERINFO": "Ein aktuelles Bootstrap-Update ist verfügbar, mit dem Metrix Core schnell auf den neuesten Stand gebracht werden kann. Eine normale Synchronisierung kann hingegen mehrere Tage dauern, da Ihre Wallet jeden verpassten Block herunterladen und verifizieren muss.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap herunterladen",
+            "BOOTSTRAPOFFERCANCEL": "Normale Synchronisierung fortsetzen",
+            "BOOTSTRAPSPACEINFO": "Nicht genügend freier Speicherplatz zum Herunterladen und Entpacken des Bootstraps. Erforderlich: {erforderlich}, Verfügbar: {frei}. Geben Sie Speicherplatz frei und versuchen Sie es erneut.",
+            "STARTUPFAILEDTITLE": "Metrix Core-Start fehlgeschlagen",
+            "STARTUPFAILEDINFO": "Beim Starten von Metrix Core ist ein Fehler aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Fehler zu überprüfen.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Wiederherstellungstools",
             "CLIENTINVALIDCONFIGTITLE": "Ungültige metrix.conf-Konfiguration",
             "CLIENTINVALIDCONFIGINFO": "Ihre metrix.conf-Datei enthält eine ungültige Masternode-Konfiguration, wodurch Metrix Core sofort beendet wird. Bitte überprüfen Sie diese Datei.",
             "ADDREMOTEMNTITLE": "Remote-Masternode hinzufügen",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode Privater Schlüssel",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap fehlgeschlagen",
-            "BOOTSTRAPFAILEDINFO": "Beim Starten von Metrix Core ist ein Problem aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Fehler zu überprüfen.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Wiederherstellungstools",
-            "STARTUPFAILEDTITLE": "Metrix Core-Start fehlgeschlagen",
-            "STARTUPFAILEDINFO": "Beim Starten von Metrix Core ist ein Fehler aufgetreten. Es wird empfohlen, die Altitude-Protokolldatei auf Fehler zu überprüfen.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core-Kommunikationsfehler",
-            "CLIENTUNKNOWNERRORINFO": "Es gab ein Problem bei der Kommunikation mit Metrix Core. Es wird empfohlen, die Datei debug.log auf Fehler zu überprüfen.",
             "UNENROLLGOVERNORTITLE": "Bestätigung der Abmeldung durch den Gouverneur",
             "UNENROLLGOVERNORCONTENT": "Sind Sie sicher, dass Sie Ihren Gouverneur abmelden möchten? Sie können dann nicht mehr an Abstimmungen über die Kettenregierung teilnehmen.",
-            "WALLETUPDATEREADYTITLE": "Höhenaktualisierung bereit",
-            "WALLETUPDATEREADYINFO": "Das Update wurde heruntergeladen. Starten Sie Altitude jetzt neu, um es zu installieren?",
-            "WALLETUPDATERESTARTBUTTON": "Neustart & Installation",
-            "WALLETUPDATELATERBUTTON": "Später",
             "DAPPCONNECTTITLE": "Verbindung zur Website herstellen",
             "DAPPCONNECTINFO": "Diese Website möchte eine Verbindung zu Ihrer Wallet herstellen und Ihre Adresse und Ihren Kontostand einsehen.",
             "DAPPCONNECTBUTTON": "Verbinden",
+            "DAPPCONNECTADDRESSLABEL": "Adresse",
+            "DAPPAPPROVEBUTTON": "Genehmigen",
             "DAPPREJECTBUTTON": "Ablehnen",
             "DAPPSENDTITLE": "Vertragsanfrage",
             "DAPPSENDINFO": "Diese Website fordert Sie auf, eine Vertragstransaktion von Ihrer Wallet zu senden.",
-            "DAPPSIGNTITLE": "Nachricht unterschreiben Anfrage",
-            "DAPPSIGNINFO": "Diese Website fordert Sie auf, eine Nachricht mit Ihrer Wallet-Adresse zu signieren.",
-            "DAPPNOTREADY": "Verbindung zur Website noch nicht möglich - Metrix Core wird gerade gestartet.",
-            "DAPPNOWALLET": "Verbindung zur Website nicht möglich – es ist keine Wallet-Adresse verfügbar.",
-            "DAPPAPPROVEBUTTON": "Genehmigen",
-            "DAPPCONNECTADDRESSLABEL": "Adresse",
             "DAPPSENDSITELABEL": "Website",
             "DAPPSENDCONTRACTLABEL": "Vertragsadresse",
             "DAPPSENDAMOUNTLABEL": "Menge",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximale Netzwerkgebühr",
             "DAPPSENDMAXTOTALLABEL": "Maximales Gesamt",
             "DAPPSENDDATALABEL": "Vertragsdaten",
+            "DAPPSIGNTITLE": "Nachricht unterschreiben Anfrage",
+            "DAPPSIGNINFO": "Diese Website fordert Sie auf, eine Nachricht mit Ihrer Wallet-Adresse zu signieren.",
             "DAPPSIGNMESSAGELABEL": "Nachricht",
-            "BOOTSTRAPOFFERTITLE": "Geldbörse deutlich veraltet",
-            "BOOTSTRAPOFFERINFO": "Ein aktuelles Bootstrap-Update ist verfügbar, mit dem Metrix Core schnell auf den neuesten Stand gebracht werden kann. Eine normale Synchronisierung kann hingegen mehrere Tage dauern, da Ihre Wallet jeden verpassten Block herunterladen und verifizieren muss.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap herunterladen",
-            "BOOTSTRAPOFFERCANCEL": "Normale Synchronisierung fortsetzen",
-            "BOOTSTRAPSPACEINFO": "Nicht genügend freier Speicherplatz zum Herunterladen und Entpacken des Bootstraps. Erforderlich: {erforderlich}, Verfügbar: {frei}. Geben Sie Speicherplatz frei und versuchen Sie es erneut."
+            "DAPPNOTREADY": "Verbindung zur Website noch nicht möglich - Metrix Core wird gerade gestartet.",
+            "DAPPNOWALLET": "Verbindung zur Website nicht möglich – es ist keine Wallet-Adresse verfügbar."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Aktuelles Netzwerk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Geben Sie eine Web3-Site-Adresse ein",
-            "GOBUTTON": "Gehen",
-            "QUICKLAUNCH": "Schnellstart",
-            "DEVTOOLS": "Open Developer Tools",
-            "ADDLINK": "Link hinzufügen",
-            "LINKNAMEPLACEHOLDER": "Name",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Speichern",
-            "CANCEL": "Stornieren",
-            "REMOVE": "Entfernen",
-            "REMOVECONFIRM": "Diesen Schnelllink entfernen?",
-            "LINKEXISTS": "Dieser Link befindet sich bereits in Ihrer Schnellstartliste.",
-            "LINKINVALID": "Geben Sie eine gültige Website-Adresse ein.",
-            "LINKNETWORKLABEL": "Netzwerk",
-            "LOADFAILED": "Website konnte nicht geladen werden",
-            "SECURESITE": "Die Verbindung ist sicher – gültiges SSL-Zertifikat",
-            "INSECURESITE": "Die Verbindung ist nicht sicher.",
-            "INVALIDCERTSITE": "Die Verbindung ist nicht privat – ungültiges oder nicht vertrauenswürdiges SSL-Zertifikat."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Backup-Wallet...",
             "SIGNMESSAGE": "Nachricht unterschreiben...",
             "VERIFYMESSAGE": "Nachricht bestätigen...",
-            "LOCALE": "Sprache...",
-            "RESTARTCORE": "Metrix Core neu starten",
-            "EXIT": "Ausfahrt",
             "OPTIONS": "Optionen...",
+            "LOCALE": "Sprache...",
             "CURRENCIES": "Währung anzeigen...",
-            "ALTITUDEREFRESH": "Höhendaten aktualisieren"
+            "RESTARTCORE": "Metrix Core neu starten",
+            "ALTITUDEREFRESH": "Höhendaten aktualisieren",
+            "EXIT": "Ausfahrt"
         },
         "ENCRYPT": {
             "TITLE": "Verschlüsseln",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Gesamtsaldo",
+        "SPENDABLEBALANCE": "Verfügbares Guthaben",
+        "PENDINGBALANCE": "Ausstehender Saldo",
         "CANCELBUTTON": "Stornieren",
         "DONEBUTTON": "Erledigt",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Akzeptieren",
         "CLEARALLBUTTON": "Alles löschen",
         "ENTERACCOUNTLABEL": "Geben Sie eine Bezeichnung für diese Adresse ein",
         "ENTERADDRESSLABEL": "Geben Sie eine Metrix-Adresse ein",
@@ -464,11 +511,8 @@
         "SORTBY": "Sortieren nach",
         "SEARCH": "Suchen",
         "FEE": "Gebühr",
-        "ACCEPTBUTTON": "Akzeptieren",
         "CONFIRMED": "Bestätigt",
         "UNCONFIRMED": "Unbestätigt",
-        "PENDINGBALANCE": "Ausstehender Saldo",
-        "SPENDABLEBALANCE": "Verfügbares Guthaben",
         "SAVEBUTTON": "Speichern"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core wird neu gestartet...",
         "BOOTSTRAPPING": "Bootstrap wird heruntergeladen...",
         "BOOTSTRAPEXTRACTING": "Bootstrap wird extrahiert...",
-        "TIMEREMAINING": "übrig:"
+        "TIMEREMAINING": "übrig:",
+        "DEVRPCOVERRIDEACTIVE": "Eine Entwickler-RPC-Verbindungsüberschreibung ist aktiviert (Optionen > Entwickler) und reagiert nicht. Löschen Sie diese, um die Verbindung zum lokalen Daemon wiederherzustellen.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC-Überschreibung löschen und neu verbinden"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neues Konto erfolgreich erstellt",
         "ADDRESSCOPIEDCLIPBOARD": "Adresse in die Zwischenablage kopiert",
+        "COPIEDCLIPBOARD": "In die Zwischenablage kopiert",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "In die Zwischenablage kopierte Transaktionen",
         "EMPTYFIELDS": "Bitte füllen Sie alle Felder aus.",
         "NOUPDATE": "Keine Aktualisierung verfügbar",
         "WALLETBACKEDUP": "Wallet-Backup erfolgreich",
+        "WALLETBACKUPFAILED": "Automatische Wallet-Sicherung fehlgeschlagen – überprüfen Sie den Speicherort Ihrer Sicherung und den verfügbaren Speicherplatz.",
         "PASSPHRASEMISMATCH": "Die von Ihnen eingegebenen Passphrasen stimmen nicht überein.",
         "CHECKINGUPDATE": "Suche nach Updates...",
         "CHECKINGUPDATEFAILED": "Es konnte nicht nach Updates gesucht werden. Überprüfen Sie Ihre Netzwerkverbindung.",
+        "WALLETUPDATEDOWNLOADING": "Update wird heruntergeladen...",
         "SENDINGEXCEEDSBALANCE": "Der Betrag, den Sie senden, übersteigt Ihr ausgewähltes Guthaben.",
         "MISSINGCHANGEADDRESS": "Sie müssen eine Änderungsadresse angeben.",
         "MISSINGDESTINATIONADDRESS": "Sie müssen eine Zieladresse angeben.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Wallet wird verschlüsselt...",
         "CHANGINGPASSPHARASE": "Änderung der Passphrase...",
         "STARTINGMASTERNODE": "Masternode wird gestartet...",
+        "STOPPINGMASTERNODE": "Masternode wird gestoppt...",
         "SENDINGTRANSACTION": "Transaktion wird gesendet...",
         "SIGNINGMESSAGE": "Signaturnachricht...",
         "SIGNEDMESSAGE": "Nachricht unterzeichnet",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Entsperren der Wallet...",
         "TRANSACTIONMISMATCH": "Transaktionsfehler. Bitte versuchen Sie es erneut.",
         "MINIMUMCONFIRMATIONS": "Alle Eingaben erfordern mindestens eine Bestätigung vor der Verwendung.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "In die Zwischenablage kopierte Transaktionen",
-        "STOPPINGMASTERNODE": "Masternode wird gestoppt...",
         "FAILEDTOWRITECONFIG": "Es gab ein Problem beim Schreiben Ihrer metrix.conf-Datei. Überprüfen Sie, ob die Datei existiert und ob Altitude über Schreibrechte verfügt.",
         "NOPUBLICUP": "Es wurde keine öffentliche IP-Adresse gefunden. Überprüfen Sie Ihre Internetverbindung und starten Sie Altitude neu.",
         "CONFIGURINGLOCALMN": "Lokalen Masternode konfigurieren...",
         "REPORTINGISSUE": "Diagnoseinformationen werden abgerufen... Diese Informationen werden in Ihre Zwischenablage kopiert.",
-        "WALLETUPDATEDOWNLOADING": "Update wird heruntergeladen...",
-        "WALLETBACKUPFAILED": "Automatische Wallet-Sicherung fehlgeschlagen – überprüfen Sie den Speicherort Ihrer Sicherung und den verfügbaren Speicherplatz.",
         "EXPLORERURLSAVED": "Explorer-URL gespeichert",
         "EXPLORERURLRESET": "Die Explorer-URL wurde auf den Standardwert zurückgesetzt.",
         "EXPLORERURLINVALID": "Das ist keine gültige http(s)-URL.",
-        "EXPLORERURLUNREACHABLE": "Die URL konnte nicht erreicht werden – überprüfen Sie sie und versuchen Sie es erneut."
+        "EXPLORERURLUNREACHABLE": "Die URL konnte nicht erreicht werden – überprüfen Sie sie und versuchen Sie es erneut.",
+        "DEVRPCHOSTSAVED": "RPC-Host gespeichert",
+        "DEVRPCHOSTRESET": "Der RPC-Host wurde auf den Standardwert (127.0.0.1) zurückgesetzt."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Erhaltene Münzen",
+        "NEWTRANSACTION_TITLE_STAKE": "Erhaltener Anteil",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-Belohnung erhalten"
     },
     "TIME": {
         "AFEWSECONDS": "ein paar Sekunden",
@@ -533,11 +587,6 @@
         "MONTHS": "Monate",
         "AYEAR": "Pro Jahr",
         "YEARS": "Jahre"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Erhaltene Münzen",
-        "NEWTRANSACTION_TITLE_STAKE": "Erhaltener Anteil",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode-Belohnung erhalten"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Die Gouverneure sind für die Abstimmung über die monatlichen Budgets und Blockchain-Änderungen zuständig. Sie können Gouverneur werden, indem Sie die erforderlichen Sicherheiten im Governance-Vertrag hinterlegen.",
                 "COLLATERAL": "Erforderliche Sicherheiten",
                 "ENROLL": "Einschreiben",
+                "SELECTAGOVERNOR": "Wählen Sie eine berechtigte Gouverneursadresse",
+                "GOVERNORNOTSELECTED": "Es wurde keine gültige Adresse ausgewählt.",
                 "CONFIRMENROLL": "Sie sind im Begriff, sich als Gouverneur anzumelden. Dadurch wird eine Transaktion mit den erforderlichen Sicherheiten an den Governance-Vertrag gesendet. Sie können sich jederzeit abmelden.",
                 "ISGOVERNORTITLE": "Sie sind ein engagierter Gouverneur!",
                 "ISGOVERNORDETAIL1": "Die Gouverneure sind für die Abstimmung über monatliche Budgets und Blockchain-Änderungen zuständig.",
                 "ISGOVERNORDETAIL2": "Um Gouverneur zu bleiben, müssen Sie mindestens einmal alle 30 Tage an einer Abstimmung teilnehmen.",
                 "ISGOVERNORDETAIL3": "Wenn es nichts zu bewerten gibt, können Sie Ihre Registrierung manuell fortsetzen, indem Sie einen aktiven Ping senden.",
+                "MYGOVERNORADDRESS": "Meine Gouverneursrede",
                 "UNENROLL": "Abmelden",
                 "PING": "Aktiven Ping senden",
                 "LASTPINGTITLE": "Letzter Ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "Tage",
                 "GOVERNORVOTEMATURITYHOURS": "Std.",
                 "GOVERNORVOTEMATURITYSUFFIX": "bis zur Reife",
-                "MYGOVERNORADDRESS": "Meine Gouverneursrede",
-                "SELECTAGOVERNOR": "Wählen Sie eine berechtigte Gouverneursadresse",
-                "GOVERNORNOTSELECTED": "Es wurde keine gültige Adresse ausgewählt.",
                 "NOTFULLYSYNCEDTITLE": "Status des Gouverneurs nicht verfügbar",
                 "NOTFULLYSYNCEDDETAIL": "Ihr Registrierungsstatus als Gouverneur wird sichtbar, sobald Ihre Blockchain vollständig synchronisiert ist.",
                 "DGPMIGRATIONTITLE": "DGP-Migration",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ihr Angebot wurde erfolgreich erstellt.",
             "ENROLLINGGOVERNOR": "Einschreibung als Gouverneur...",
             "ENROLLEDGOVERNOR": "Ihre Anmeldung ist abgeschlossen, sobald Ihre Transaktion bestätigt wurde.",
-            "VOTINGONPROPOSAL": "Abstimmungsvorschlag senden",
-            "VOTEDONPROPOSAL": "Ihre Stimme wird gezählt, sobald die Transaktion bestätigt ist.",
             "PINGINGGOVERNOR": "Sende Ping...",
             "PINGEDGOVERNOR": "Ping erfolgreich gesendet. Ihr Gouverneur wird benachrichtigt, sobald die Transaktion bestätigt ist.",
+            "VOTINGONPROPOSAL": "Abstimmungsvorschlag senden",
+            "VOTEDONPROPOSAL": "Ihre Stimme wird gezählt, sobald die Transaktion bestätigt ist.",
             "UNENROLLINGGOVERNOR": "Abmeldung des Gouverneurs...",
             "UNENROLLEDGOVERNOR": "Die Transaktion wurde gesendet. Ihr Gouverneur wird abgemeldet, sobald die Transaktion bestätigt ist.",
             "GOVERNORNOTMATURE": "Ihr Gouverneur ist noch nicht reif genug, um diese Maßnahme durchzuführen."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix kaufen",
+                "SEARCH": "Geschichte"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Sie senden",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transaktionsverlauf",
                 "SEARCHBUTTON": "SUCHEN",
+                "SEARCHPLACEHOLDER": "Geben Sie eine MRX- oder BTC-Adresse ein.",
                 "TRANSACTIONDATE": "Datum",
                 "TRANSACTIONTYPE": "TX-Typ",
                 "TRANSACTIONAMOUNT": "Menge",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Bestätigt",
                 "TRANSACTIONNOTCONFIRMED": "Nicht bestätigt",
                 "TRANSACTIONREFUNDED": "Rückerstattung - Unterhalb des Mindestbetrags",
-                "AVGSWAPPRICE": "Durchschnittlicher Tauschpreis",
-                "SEARCHPLACEHOLDER": "Geben Sie eine MRX- oder BTC-Adresse ein."
+                "AVGSWAPPRICE": "Durchschnittlicher Tauschpreis"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Swap-Adresse wird generiert...",
             "ALREADYHAVEADDRESS": "Sie haben bereits eine BTC-Adresse mit dieser Metrix-Adresse verknüpft.",
             "NOADDRESS": "Sie haben keine Metrix-Adresse eingegeben."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix kaufen",
-                "SEARCH": "Geschichte"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Einblenden",
                 "EMPTYTITLE": "Noch keine Tokens gefunden",
                 "EMPTYDETAIL": "Altitude prüft automatisch einen Block-Explorer auf MRC20- und MRC721-Token, die an Ihre Adressen gesendet wurden, und verifiziert anschließend alles live auf Ihrem eigenen Knoten. Sie können einen Token auch manuell hinzufügen, wenn Sie dessen Vertragsadresse kennen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Die automatische Tokenprüfung ist deaktiviert, daher werden Ihre Adressen nicht auf Token überprüft. Aktivieren Sie sie oben wieder oder fügen Sie einen Token manuell hinzu, falls Sie dessen Vertragsadresse kennen.",
                 "HIDDENTITLE": "Versteckte Token",
                 "CONTEXTMENUHIDE": "Token ausblenden",
                 "ITEMSSUFFIX": "Artikel)",
-                "NONENUMERABLETOOLTIP": "Diese Sammlung unterstützt keine Auflistung einzelner Artikel – stattdessen wird angezeigt, wie viele Sie besitzen."
+                "NONENUMERABLETOOLTIP": "Diese Sammlung unterstützt keine Auflistung einzelner Artikel – stattdessen wird angezeigt, wie viele Sie besitzen.",
+                "CHECKINGENABLED": "Überprüfung",
+                "CHECKINGDISABLED": "Abhaken",
+                "CHECKINGENABLEDTOOLTIP": "Die Tokenprüfung ist aktiviert – Altitude prüft regelmäßig Ihre Adressen auf Token und aktualisiert die Guthaben. Klicken Sie hier, um die Prüfung zu deaktivieren.",
+                "CHECKINGDISABLEDTOOLTIP": "Die Token-Prüfung ist deaktiviert – klicken Sie hier, um sie wieder zu aktivieren.",
+                "CHECKINGDISABLEDNOTICE": "Die automatische Tokenprüfung ist deaktiviert. Ihre Adressen werden nicht auf Token überprüft und Ihre Guthaben werden nicht aktualisiert. Sie können weiterhin manuell Token hinzufügen."
             },
             "ADDTOKEN": {
                 "TITLE": "Token hinzufügen",

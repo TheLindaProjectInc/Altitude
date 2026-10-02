@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Krijo llogari",
             "HIDEEMPTYACCOUNTS": "Fshih llogaritë boshe pa emër"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Përmbledhje",
+            "TRANSACTIONSTAB": "Transaksionet",
+            "ADDRESSTABS": "Adresat"
+        },
         "SEND": {
             "ADDRECIPIENT": "Shto Marrësin",
             "SEND": "Dërgo",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Konfirmime",
             "ALL_SELECTUNSELECT": "Aktivizo/çaktivizo të gjitha",
+            "TREEMODE": "Modaliteti i pemës",
+            "LISTMODE": "Modaliteti i listës",
             "SENDAVAILABLE": "Përdor bilancin e disponueshëm",
             "INPUTLOCKED": "Të dhënat hyrëse janë të bllokuara. Do të duhet ta zhbllokosh këtë të dhënë për ta shpenzuar atë.",
             "CONTEXTMENULOCKINPUT": "Kyç hyrjen",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Pas tarifës",
             "QUANTITY": "Sasia",
             "BYTES": "Bajt",
-            "TREEMODE": "Modaliteti i pemës",
-            "LISTMODE": "Modaliteti i listës",
             "ALERTFEECHANGETITLE": "Ndryshimi i Tarifës",
             "ALERTFEECHANGECONTENT": "Tarifa aktuale e transaksionit është më e lartë se sa pritej. Ju lutemi konfirmoni tarifën e re:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Krijo Kontratë",
+            "INFO": "Vendosni një kontratë inteligjente në rrjet duke paraqitur kodin e saj të përpiluar të bajtit. Ky është një funksion kryesor i zinxhirit - kontrolloni dy herë cilësimet e kodit të bajtit dhe gazit para se ta vendosni, vendosja nuk mund të anulohet.",
+            "FROM": "Nga",
+            "BYTECODE": "Bajtkod",
+            "BYTECODEPLACEHOLDER": "Ngjit bajtkodin e kontratës së kompiluar (heksadeksad)",
+            "INVALIDBYTECODE": "Bajtkodi duhet të jetë një varg heksadecimal i vlefshëm (0-9, a-f) me një numër çift karakteresh",
+            "GASLIMIT": "Limiti i gazit",
+            "GASLIMITRANGE": "Diapazoni",
+            "GASPRICE": "Çmimi i gazit (MRX për njësi gazi)",
+            "GASPRICEMIN": "Minimumi",
+            "ESTIMATEDMAXCOST": "Kostoja maksimale e parashikuar",
+            "DEPLOYBUTTON": "Kontrata e Vendosjes",
+            "INCOMPLETEFORM": "Ju lutemi zgjidhni një adresë dërguesi, futni kodin e bajtit të vlefshëm dhe vendosni një limit/çmim të vlefshëm të benzinës",
+            "HIGHGASPRICETITLE": "Çmimi i lartë i benzinës",
+            "HIGHGASPRICEINFO": "Çmimi i gazit që keni vendosur është jashtëzakonisht i lartë. Ky instalim mund të kushtojë deri në:",
+            "DEPLOYING": "Duke zbatuar kontratën...",
+            "DEPLOYED": "Kontrata e vendosjes u dorëzua",
+            "RESULTTITLE": "Rezultati i Vendosjes",
+            "STATUS": "Statusi",
+            "STATUSPENDING": "Në pritje të konfirmimit...",
+            "STATUSCONFIRMED": "U vendos me sukses",
+            "STATUSFAILED": "Vendosja dështoi",
+            "TXID": "ID e transaksionit",
+            "SENDER": "Dërguesi",
+            "CONTRACTADDRESS": "Adresa e Kontratës",
+            "GASUSED": "Gazi i Përdorur",
+            "DONEBUTTON": "U krye",
+            "DEPLOYANOTHERBUTTON": "Vendos një tjetër"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaksionet",
+            "COPYBLOCKHASH": "Kopjo Hash-in e Bllokut",
+            "COPYTXID": "Kopjo ID-në e transaksionit",
+            "COPYACCOUNT": "Kopjo Emrin e Llogarisë",
+            "COPYADDRESS": "Kopjo adresën",
+            "COPYAMOUNT": "Shuma e Kopjimit",
+            "COPTBLOCKINDEX": "Kopjo Indeksin e Bllokut",
+            "EXPLORER": "Hap në Eksploruesin e Blloqeve"
         },
         "STAKING": {
             "UNLOCK": "Zhbllokoni për të vendosur bastin",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adresa",
             "ENABLED": "Aktivizuar",
-            "STARTBUTTON": "Filloni Lokalin",
-            "STARTALIASBUTTON": "Fillimi i Pseudonimit",
-            "STARTALLBUTTON": "Fillo të gjitha",
             "NOMASTERNODES": "Nuk ke asnjë masternode",
             "NOMNOUTPUTS": "Nuk u gjetën rezultate të Masternodit. Për të ekzekutuar një Masternode lokal, dërgoni saktësisht 2, 5, 25, 50 ose 100 milionë monedha në adresën tuaj të Masternodit dhe prisni për 15 konfirmime.",
+            "STARTBUTTON": "Filloni Lokalin",
             "STOPBUTTON": "Ndalo Lokalin",
+            "STARTALIASBUTTON": "Fillimi i Pseudonimit",
             "STOPALIASBUTTON": "Ndalo pseudonimin",
+            "STARTALLBUTTON": "Fillo të gjitha",
             "ADDREMOTE": "Shto Masternodë të Largët",
             "REMOVEMN": "Hiq Masternodin",
             "ADDLOCAL": "Konfiguro Masternodin Lokal",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Gjeneral",
                 "COREVERSION": "Versioni bazë",
+                "ALTITUDEVERSION": "Versioni i lartësisë",
                 "PROTOCOLVERSION": "Versioni i Protokollit",
                 "WALLETVERSION": "Versioni i Wallet.dat",
                 "NETWORKTITLE": "Rrjeti",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numri i Masternodeve",
                 "BLOCKCHAINTITLE": "Zinxhir Blloqesh",
                 "NUMBERBLOCKS": "Numri aktual i blloqeve",
-                "BESTBLOCKTTIME": "Ora e bllokut të fundit",
-                "ALTITUDEVERSION": "Versioni i lartësisë"
+                "BESTBLOCKTTIME": "Ora e bllokut të fundit"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Mirë se vini në konsolën RPC të Metrix Core. Shkruani ndihmë për një përmbledhje të komandave të disponueshme.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Zgjidh Gjuhën"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaksionet",
-            "COPYBLOCKHASH": "Kopjo Hash-in e Bllokut",
-            "COPYTXID": "Kopjo ID-në e transaksionit",
-            "COPYACCOUNT": "Kopjo Emrin e Llogarisë",
-            "COPYADDRESS": "Kopjo adresën",
-            "COPYAMOUNT": "Shuma e Kopjimit",
-            "COPTBLOCKINDEX": "Kopjo Indeksin e Bllokut",
-            "EXPLORER": "Hap në Eksploruesin e Blloqeve"
+        "CURRENCY": {
+            "TITLE": "Zgjidhni monedhën e shfaqjes"
         },
         "EXPLORER": {
             "TITLE": "Eksploruesi i Blloqeve",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Rrjeti",
             "WINDOTAB": "Dritare",
+            "BACKUPTAB": "Rezervë",
+            "EXPLORERTAB": "Eksplorues",
+            "DEVELOPERTAB": "Zhvilluesi",
             "NETWORK": {
                 "PROXY": "Lidhu përmes proxy-t SOCKS5",
                 "PROXYIP": "IP-ja e përfaqësuesit",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimizo në afërsi",
                 "BEHAVIOURTITLE": "Sjellja e tabakasë së sistemit dhe dritares"
             },
-            "BACKUPTAB": "Rezervë",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Rezervim Automatik",
                 "ENABLED": "Krijo automatikisht një kopje rezervë të wallet.dat sipas një orari",
                 "ENABLEDINFO": "Krijon një kopje rezervë të skedarit të portofolit tuaj sipas një orari, kështu që një kopje e fundit është gjithmonë e disponueshme nëse diçka shkon keq.",
+                "INTERVALLABEL": "Krijo kopje rezervë çdo (ditë)",
                 "LASTBACKUP": "Rezervimi i fundit:",
                 "NEVERBACKEDUP": "Ende nuk është bërë asnjë kopje rezervë automatike.",
                 "BACKUPNOWBUTTON": "Krijo kopje rezervë tani",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Rivendos në gjendjen fillestare",
                 "PRUNETITLE": "Historiku i Rezervimit",
                 "PRUNEINFO": "Kopjet rezervë automatike më të vjetra fshihen në mënyrë që kjo dosje të mos rritet përgjithmonë - ruhen vetëm ato më të fundit më poshtë.",
-                "KEEPCOUNTLABEL": "Mbajeni të fundit",
-                "INTERVALLABEL": "Krijo kopje rezervë çdo (ditë)"
+                "KEEPCOUNTLABEL": "Mbajeni të fundit"
             },
-            "EXPLORERTAB": "Eksplorues",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Eksploruesi i Blloqeve",
                 "BLOCKEXPLORERINFO": "Faqja u hap kur shikonte një transaksion në eksploruesin e blloqeve (p.sh. kliko me të djathtën mbi një transaksion > Shiko në Eksplorues).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Rrjeti kryesor",
                 "TESTNET": "Testnet",
                 "REGTEST": "Testi i Regjistrimit"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modaliteti i Zhvilluesit",
+                "DEVMODEINFO": "Çaktivizuar si parazgjedhje dhe e menduar vetëm për zhvilluesit. Aktivizimi i kësaj shfaq opsione për të anashkaluar lidhjen RPC - përdoruesit standardë duhet ta lënë këtë të çaktivizuar.",
+                "DEVMODELABEL": "Aktivizo Modalitetin e Zhvilluesit",
+                "WARNING": "Këto cilësime janë vetëm për qëllime zhvillimi. Ndryshimi i tyre mund ta pengojë portofolin të lidhet me një daemon - përdoreni këtë vetëm nëse e dini se çfarë po bëni.",
+                "RPCHOSTTITLE": "Lidhja RPC",
+                "RPCHOSTINFO": "Si parazgjedhje, Altitude lidhet me daemonin që e menaxhon vetë, në këtë makinë (127.0.0.1). Mbivendosja e këtyre i lejon asaj të lidhet me një daemon tjetër - për shembull, një instancë regtest të largët, pa pasur nevojë të ekzekutojë një të tillë lokalisht. Nëse lidhja ka sukses, Altitude nuk do ta shkarkojë ose nisë daemonin e vet lokal. rpcallowip i daemonit të synuar duhet ta lejojë këtë lidhje, dhe rpcuser/rpcpassword më poshtë duhet të përputhet me konfigurimin e tij. Hyn në fuqi menjëherë, nuk kërkohet rinisje.",
+                "RPCHOSTLABEL": "RPC Host",
+                "RPCPORTLABEL": "Porta RPC",
+                "RPCUSERLABEL": "Emri i përdoruesit RPC",
+                "RPCPASSWORDLABEL": "Fjalëkalimi RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Përmbledhje",
-            "TRANSACTIONSTAB": "Transaksionet",
-            "ADDRESSTABS": "Adresat"
-        },
-        "CURRENCY": {
-            "TITLE": "Zgjidhni monedhën e shfaqjes"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Paneli i kontrollit",
             "SEND": "Dërgo",
+            "CREATECONTRACT": "Krijo Kontratë",
             "RECEIVE": "Merr",
             "TRANSACTIONS": "Transaksionet",
             "STAKING": "Staking",
             "MASTERNODES": "Masternode",
+            "EXPLORER": "Eksploruesi i Blloqeve",
             "SYNC": {
                 "CONNECTING": "Duke u lidhur",
                 "NOBLOCKS": "Duke pritur për blloqe",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Portofoli nuk po vendos baste aktualisht",
                 "MASTERNODEON": "Masternode është aktualisht në funksion",
                 "MASTERNODEOFF": "Masternode nuk është aktualisht në punë"
-            },
-            "EXPLORER": "Eksploruesi i Blloqeve"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Futni një adresë faqeje web3",
+            "GOBUTTON": "Shko",
+            "QUICKLAUNCH": "Nisje e shpejtë",
+            "DEVTOOLS": "Mjetet e Hapura të Zhvilluesit",
+            "ADDLINK": "Shto lidhje",
+            "LINKNAMEPLACEHOLDER": "Emri",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Ruaj",
+            "CANCEL": "Anulo",
+            "REMOVE": "Hiq",
+            "REMOVECONFIRM": "Të hiqet kjo lidhje e shpejtë?",
+            "LINKEXISTS": "Kjo lidhje është tashmë në listën tuaj të nisjes së shpejtë",
+            "LINKINVALID": "Fut një adresë të vlefshme faqeje interneti",
+            "LINKNETWORKLABEL": "Rrjeti",
+            "LOADFAILED": "Ngarkimi i faqes dështoi",
+            "SECURESITE": "Lidhja është e sigurt - certifikatë SSL e vlefshme",
+            "INSECURESITE": "Lidhja nuk është e sigurt",
+            "INVALIDCERTSITE": "Lidhja nuk është private - certifikatë SSL e pavlefshme ose e pabesueshme"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Futni fjalëkalimin e Portofolit tuaj",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Një përditësim është i disponueshëm për Metrix Core. Dëshironi ta instaloni tani?",
             "WALLETUPDATETITLE": "Përditësimi i lartësisë është i disponueshëm",
             "WALLETUPDATEINFO": "Një përditësim është i disponueshëm për Altitude. Dëshironi ta shkarkoni tani?",
+            "WALLETUPDATEREADYTITLE": "Përditësimi i lartësisë është gati",
+            "WALLETUPDATEREADYINFO": "Përditësimi është shkarkuar. Do ta rinisësh Altitude tani për ta instaluar?",
+            "WALLETUPDATERESTARTBUTTON": "Rinisni dhe instaloni",
+            "WALLETUPDATELATERBUTTON": "Më vonë",
             "CLIENTUPDATEBUTTON": "Përditëso",
             "CLIENTUPDATECANCELBUTTON": "Mos e përditëso",
             "CLIENTUPDATESKIPBUTTON": "Kapërceje këtë Përditësim",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Çdo kopje rezervë që keni bërë më parë të skedarit të portofolit tuaj duhet të zëvendësohet me skedarin e portofolit të sapokriptuar. Për arsye sigurie, kopjet rezervë të mëparshme të skedarit të portofolit të pakriptuar do të bëhen të padobishme sapo të filloni të përdorni portofolin e ri të enkriptuar.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core u ndal papritur",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Pati një problem me Metrix Core që shkaktoi ndërprerjen e tij. Rekomandohet të kontrolloni skedarin debug.log për probleme.",
+            "CLIENTUNKNOWNERRORTITLE": "Gabim Komunikimi i Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Pati një problem gjatë komunikimit me Metrix Core. Rekomandohet të kontrolloni skedarin debug.log për probleme.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap dështoi",
+            "BOOTSTRAPFAILEDINFO": "Pati një problem gjatë bootstrapping-ut të Metrix Core. Rekomandohet të kontrolloni skedarin tuaj të regjistrit Altitude për probleme.",
+            "BOOTSTRAPOFFERTITLE": "Portofoli është dukshëm i vjetëruar",
+            "BOOTSTRAPOFFERINFO": "Një bootstrap i kohëve të fundit është i disponueshëm që mund ta përditësojë shpejt Metrix Core. Vazhdimi me një sinkronizim normal mund të zgjasë disa ditë për t'u përfunduar, pasi portofoli juaj duhet të shkarkojë dhe verifikojë çdo bllok që ka humbur.",
+            "BOOTSTRAPOFFERBUTTON": "Shkarko Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Vazhdo Sinkronizimin Normal",
+            "BOOTSTRAPSPACEINFO": "Nuk ka hapësirë të mjaftueshme të lirë në disk për të shkarkuar dhe nxjerrë bootstrap-in. E detyrueshme: {required}, E disponueshme: {free}. Lironi pak hapësirë dhe provoni përsëri.",
+            "STARTUPFAILEDTITLE": "Nisja e Metrix Core dështoi",
+            "STARTUPFAILEDINFO": "Ndodhi një gabim gjatë nisjes së Metrix Core. Rekomandohet të kontrolloni skedarin e regjistrit të Altitude për probleme.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mjetet e Rimëkëmbjes",
             "CLIENTINVALIDCONFIGTITLE": "Konfigurimi i pavlefshëm i metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf juaj ka një konfigurim të pavlefshëm të masternodës, i cili do të shkaktojë mbylljen e menjëhershme të Metrix Core. Ju lutemi kontrolloni këtë skedar.",
             "ADDREMOTEMNTITLE": "Shto Masternodë të Largët",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Çelësi Privat i Masternodës",
             "ADDREMOTEMNTXHASH": "Hash-i i Masternode Trx",
             "ADDREMOTEMNTXINDEX": "Indeksi i Masternodës Trx",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap dështoi",
-            "BOOTSTRAPFAILEDINFO": "Pati një problem gjatë bootstrapping-ut të Metrix Core. Rekomandohet të kontrolloni skedarin tuaj të regjistrit Altitude për probleme.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Mjetet e Rimëkëmbjes",
-            "STARTUPFAILEDTITLE": "Nisja e Metrix Core dështoi",
-            "STARTUPFAILEDINFO": "Ndodhi një gabim gjatë nisjes së Metrix Core. Rekomandohet të kontrolloni skedarin e regjistrit të Altitude për probleme.",
-            "CLIENTUNKNOWNERRORTITLE": "Gabim Komunikimi i Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Pati një problem gjatë komunikimit me Metrix Core. Rekomandohet të kontrolloni skedarin debug.log për probleme.",
             "UNENROLLGOVERNORTITLE": "Konfirmo Çregjistrimin e Guvernatorit",
             "UNENROLLGOVERNORCONTENT": "A jeni i sigurt që doni ta çregjistroni Guvernatorin tuaj? Nuk do të jeni më në gjendje të votoni për qeverisjen zinxhir.",
-            "WALLETUPDATEREADYTITLE": "Përditësimi i lartësisë është gati",
-            "WALLETUPDATEREADYINFO": "Përditësimi është shkarkuar. Do ta rinisësh Altitude tani për ta instaluar?",
-            "WALLETUPDATERESTARTBUTTON": "Rinisni dhe instaloni",
-            "WALLETUPDATELATERBUTTON": "Më vonë",
             "DAPPCONNECTTITLE": "Lidhu me faqen",
             "DAPPCONNECTINFO": "Kjo faqe dëshiron të lidhet me portofolin tuaj dhe të shikojë adresën dhe bilancin tuaj.",
             "DAPPCONNECTBUTTON": "Lidhu",
+            "DAPPCONNECTADDRESSLABEL": "Adresa",
+            "DAPPAPPROVEBUTTON": "Miratoj",
             "DAPPREJECTBUTTON": "Refuzo",
             "DAPPSENDTITLE": "Kërkesë për transaksion kontrate",
             "DAPPSENDINFO": "Kjo faqe po kërkon të dërgojë një transaksion kontrate nga portofoli juaj.",
-            "DAPPSIGNTITLE": "Kërkesë për Nënshkrimin e Mesazhit",
-            "DAPPSIGNINFO": "Kjo faqe po kërkon të nënshkruajë një mesazh me adresën e portofolit tuaj.",
-            "DAPPNOTREADY": "Nuk mund të lidhem ende me faqen - Metrix Core është ende duke u nisur.",
-            "DAPPNOWALLET": "Nuk mund të lidhet me faqen - nuk ka adresë të disponueshme të portofolit.",
-            "DAPPAPPROVEBUTTON": "Miratoj",
-            "DAPPCONNECTADDRESSLABEL": "Adresa",
             "DAPPSENDSITELABEL": "Vendndodhja",
             "DAPPSENDCONTRACTLABEL": "Adresa e Kontratës",
             "DAPPSENDAMOUNTLABEL": "Shuma",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Tarifa Maksimale e Rrjetit",
             "DAPPSENDMAXTOTALLABEL": "Totali Maksimal",
             "DAPPSENDDATALABEL": "Të dhënat e kontratës",
+            "DAPPSIGNTITLE": "Kërkesë për Nënshkrimin e Mesazhit",
+            "DAPPSIGNINFO": "Kjo faqe po kërkon të nënshkruajë një mesazh me adresën e portofolit tuaj.",
             "DAPPSIGNMESSAGELABEL": "Mesazh",
-            "BOOTSTRAPOFFERTITLE": "Portofoli është dukshëm i vjetëruar",
-            "BOOTSTRAPOFFERINFO": "Një bootstrap i kohëve të fundit është i disponueshëm që mund ta përditësojë shpejt Metrix Core. Vazhdimi me një sinkronizim normal mund të zgjasë disa ditë për t'u përfunduar, pasi portofoli juaj duhet të shkarkojë dhe verifikojë çdo bllok që ka humbur.",
-            "BOOTSTRAPOFFERBUTTON": "Shkarko Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Vazhdo Sinkronizimin Normal",
-            "BOOTSTRAPSPACEINFO": "Nuk ka hapësirë të mjaftueshme të lirë në disk për të shkarkuar dhe nxjerrë bootstrap-in. E detyrueshme: {required}, E disponueshme: {free}. Lironi pak hapësirë dhe provoni përsëri."
+            "DAPPNOTREADY": "Nuk mund të lidhem ende me faqen - Metrix Core është ende duke u nisur.",
+            "DAPPNOWALLET": "Nuk mund të lidhet me faqen - nuk ka adresë të disponueshme të portofolit."
         },
         "ADDRESSBOOK": {
             "TITLE": "Libri i Adresave",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rrjeti aktual"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Futni një adresë faqeje web3",
-            "GOBUTTON": "Shko",
-            "QUICKLAUNCH": "Nisje e shpejtë",
-            "DEVTOOLS": "Mjetet e Hapura të Zhvilluesit",
-            "ADDLINK": "Shto lidhje",
-            "LINKNAMEPLACEHOLDER": "Emri",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Ruaj",
-            "CANCEL": "Anulo",
-            "REMOVE": "Hiq",
-            "REMOVECONFIRM": "Të hiqet kjo lidhje e shpejtë?",
-            "LINKEXISTS": "Kjo lidhje është tashmë në listën tuaj të nisjes së shpejtë",
-            "LINKINVALID": "Fut një adresë të vlefshme faqeje interneti",
-            "LINKNETWORKLABEL": "Rrjeti",
-            "LOADFAILED": "Ngarkimi i faqes dështoi",
-            "SECURESITE": "Lidhja është e sigurt - certifikatë SSL e vlefshme",
-            "INSECURESITE": "Lidhja nuk është e sigurt",
-            "INVALIDCERTSITE": "Lidhja nuk është private - certifikatë SSL e pavlefshme ose e pabesueshme"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Portofoli Rezervë...",
             "SIGNMESSAGE": "Nënshkruaj Mesazhin...",
             "VERIFYMESSAGE": "Verifiko mesazhin...",
-            "LOCALE": "Gjuha...",
-            "RESTARTCORE": "Rinisni Metrix Core",
-            "EXIT": "Dalje",
             "OPTIONS": "Opsione...",
+            "LOCALE": "Gjuha...",
             "CURRENCIES": "Shfaq monedhën...",
-            "ALTITUDEREFRESH": "Rifresko të dhënat e lartësisë"
+            "RESTARTCORE": "Rinisni Metrix Core",
+            "ALTITUDEREFRESH": "Rifresko të dhënat e lartësisë",
+            "EXIT": "Dalje"
         },
         "ENCRYPT": {
             "TITLE": "Enkripto",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Bilanci Total",
+        "SPENDABLEBALANCE": "Bilanci i Shpenzueshëm",
+        "PENDINGBALANCE": "Bilanci në pritje",
         "CANCELBUTTON": "Anulo",
         "DONEBUTTON": "U krye",
         "OKBUTTON": "Në rregull",
+        "ACCEPTBUTTON": "Prano",
         "CLEARALLBUTTON": "Pastro të gjitha",
         "ENTERACCOUNTLABEL": "Fut një etiketë për këtë adresë",
         "ENTERADDRESSLABEL": "Fut një adresë Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Rendit sipas",
         "SEARCH": "Kërko",
         "FEE": "Tarifa",
-        "ACCEPTBUTTON": "Prano",
         "CONFIRMED": "Konfirmuar",
         "UNCONFIRMED": "I pakonfirmuar",
-        "PENDINGBALANCE": "Bilanci në pritje",
-        "SPENDABLEBALANCE": "Bilanci i Shpenzueshëm",
         "SAVEBUTTON": "Ruaj"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Duke rinisur Metrix Core...",
         "BOOTSTRAPPING": "Duke shkarkuar bootstrap...",
         "BOOTSTRAPEXTRACTING": "Duke nxjerrë bootstrap...",
-        "TIMEREMAINING": "mbetur:"
+        "TIMEREMAINING": "mbetur:",
+        "DEVRPCOVERRIDEACTIVE": "Një mbishkrim i lidhjes RPC të zhvilluesit është vendosur (Opsionet > Zhvilluesi) dhe nuk po përgjigjet. Pastroje atë për t'u rilidhur normalisht me demonin lokal.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Pastro Mbivendosjen e RPC-së dhe Rilidhu"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Llogaria e re u krijua me sukses",
         "ADDRESSCOPIEDCLIPBOARD": "Adresa u kopjua në kujtesën e përkohshme",
+        "COPIEDCLIPBOARD": "U kopjua në kujtesën e përkohshme",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksionet u kopjuan në kujtesën e përkohshme",
         "EMPTYFIELDS": "Ju lutemi plotësoni të gjitha fushat",
         "NOUPDATE": "Nuk ka përditësim të disponueshëm",
         "WALLETBACKEDUP": "Kopjimi rezervë i Portofolit u krye me sukses.",
+        "WALLETBACKUPFAILED": "Rezervimi automatik i portofolit dështoi - kontrolloni vendndodhjen e rezervimit dhe hapësirën e disponueshme në disk",
         "PASSPHRASEMISMATCH": "Fjalëkalimet që futët nuk përputhen",
         "CHECKINGUPDATE": "Duke kontrolluar për përditësim...",
         "CHECKINGUPDATEFAILED": "Nuk mund të kontrollohet për përditësim. Kontrolloni rrjetin tuaj.",
+        "WALLETUPDATEDOWNLOADING": "Duke shkarkuar përditësimin...",
         "SENDINGEXCEEDSBALANCE": "Shuma që po dërgoni tejkalon bilancin tuaj të zgjedhur",
         "MISSINGCHANGEADDRESS": "Duhet të specifikoni një adresë ndryshimi",
         "MISSINGDESTINATIONADDRESS": "Duhet të specifikoni një adresë destinacioni",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Duke enkriptuar portofolin...",
         "CHANGINGPASSPHARASE": "Duke ndryshuar fjalëkalimin...",
         "STARTINGMASTERNODE": "Duke filluar masternodin...",
+        "STOPPINGMASTERNODE": "Duke ndaluar masternodin...",
         "SENDINGTRANSACTION": "Duke dërguar transaksionin...",
         "SIGNINGMESSAGE": "Duke nënshkruar mesazhin...",
         "SIGNEDMESSAGE": "Mesazhi i nënshkruar",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Duke zhbllokuar portofolin...",
         "TRANSACTIONMISMATCH": "Gabim në transaksion. Ju lutemi provoni përsëri.",
         "MINIMUMCONFIRMATIONS": "Të gjitha të dhënat kërkojnë të paktën 1 konfirmim përpara se të shpenzohen.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaksionet u kopjuan në kujtesën e përkohshme",
-        "STOPPINGMASTERNODE": "Duke ndaluar masternodin...",
         "FAILEDTOWRITECONFIG": "Pati një problem gjatë shkrimit në skedarin tuaj metrix.conf. Kontrolloni nëse skedari ekziston dhe nëse Altitude ka leje shkrimi.",
         "NOPUBLICUP": "Nuk u gjet asnjë adresë IP publike. Kontrolloni lidhjen tuaj të internetit dhe rinisni Altitude.",
         "CONFIGURINGLOCALMN": "Duke konfiguruar Masternodin lokal...",
         "REPORTINGISSUE": "Duke marrë informacion diagnostikues... Ky informacion do të kopjohet në kujtesën tuaj të përkohshme.",
-        "WALLETUPDATEDOWNLOADING": "Duke shkarkuar përditësimin...",
-        "WALLETBACKUPFAILED": "Rezervimi automatik i portofolit dështoi - kontrolloni vendndodhjen e rezervimit dhe hapësirën e disponueshme në disk",
         "EXPLORERURLSAVED": "URL-ja e eksploruesit u ruajt",
         "EXPLORERURLRESET": "URL-ja e eksploruesit u rikthye në të parazgjedhurën",
         "EXPLORERURLINVALID": "Kjo nuk është një URL http(s) e vlefshme",
-        "EXPLORERURLUNREACHABLE": "Nuk munda ta arrija atë URL - kontrolloje dhe provo përsëri"
+        "EXPLORERURLUNREACHABLE": "Nuk munda ta arrija atë URL - kontrolloje dhe provo përsëri",
+        "DEVRPCHOSTSAVED": "Pritësi RPC u ruajt",
+        "DEVRPCHOSTRESET": "Pritësi RPC u rikthye në gjendjen fillestare (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monedha të marra",
+        "NEWTRANSACTION_TITLE_STAKE": "Pjesë e pranuar",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Mora Shpërblimin Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Disa sekonda",
@@ -533,11 +587,6 @@
         "MONTHS": "muaj",
         "AYEAR": "Një vit",
         "YEARS": "vite"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Monedha të marra",
-        "NEWTRANSACTION_TITLE_STAKE": "Pjesë e pranuar",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Mora Shpërblimin Masternode"
     },
     "MONTH": {
         "JAN": "JANAR",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guvernatorët janë përgjegjës për votimin e buxheteve mujore dhe ndryshimeve në blockchain. Ju mund të bëheni Guvernator duke bllokuar kolateralin e saktë në kontratën e Qeverisjes.",
                 "COLLATERAL": "Kolaterali i kërkuar",
                 "ENROLL": "Regjistrohu",
+                "SELECTAGOVERNOR": "Zgjidhni një adresë të përshtatshme për guvernatorin",
+                "GOVERNORNOTSELECTED": "Nuk u zgjodh asnjë adresë e përshtatshme",
                 "CONFIRMENROLL": "Je gati të regjistrohesh si Guvernator. Kjo do të dërgojë një transaksion me kolateralin e kërkuar në kontratën e qeverisjes. Mund të çregjistrohesh në çdo kohë.",
                 "ISGOVERNORTITLE": "Ju jeni një Guvernator aktiv!",
                 "ISGOVERNORDETAIL1": "Guvernatorët janë përgjegjës për votimin e buxheteve mujore dhe ndryshimeve në blockchain.",
                 "ISGOVERNORDETAIL2": "Për të qëndruar Guvernator, duhet të merrni pjesë në të paktën 1 votim çdo 30 ditë.",
                 "ISGOVERNORDETAIL3": "Nëse nuk ka asgjë për të votuar, atëherë mund të vazhdoni manualisht regjistrimin tuaj duke dërguar një ping aktiv.",
+                "MYGOVERNORADDRESS": "Adresa ime e Guvernatorit",
                 "UNENROLL": "Çregjistrohu",
                 "PING": "Dërgo Ping Aktiv",
                 "LASTPINGTITLE": "Pingu i fundit",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ditë",
                 "GOVERNORVOTEMATURITYHOURS": "orë",
                 "GOVERNORVOTEMATURITYSUFFIX": "deri në pjekuri",
-                "MYGOVERNORADDRESS": "Adresa ime e Guvernatorit",
-                "SELECTAGOVERNOR": "Zgjidhni një adresë të përshtatshme për guvernatorin",
-                "GOVERNORNOTSELECTED": "Nuk u zgjodh asnjë adresë e përshtatshme",
                 "NOTFULLYSYNCEDTITLE": "Statusi i guvernatorit nuk është i disponueshëm",
                 "NOTFULLYSYNCEDDETAIL": "Statusi juaj i regjistrimit në Guvernator do të bëhet i dukshëm kur blockchain-i juaj të jetë plotësisht i sinkronizuar.",
                 "DGPMIGRATIONTITLE": "Migrimi i DGP-së",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Propozimi juaj është krijuar me sukses",
             "ENROLLINGGOVERNOR": "Regjistrimi si Guvernator...",
             "ENROLLEDGOVERNOR": "Regjistrimi juaj do të përfundojë sapo të konfirmohet transaksioni juaj",
-            "VOTINGONPROPOSAL": "Dërgimi i votimit të propozimit",
-            "VOTEDONPROPOSAL": "Vota juaj do të llogaritet pasi të konfirmohet transaksioni.",
             "PINGINGGOVERNOR": "Duke dërguar ping...",
             "PINGEDGOVERNOR": "Ping-u u dërgua me sukses. Guvernatori juaj do të përditësohet sapo të konfirmohet transaksioni.",
+            "VOTINGONPROPOSAL": "Dërgimi i votimit të propozimit",
+            "VOTEDONPROPOSAL": "Vota juaj do të llogaritet pasi të konfirmohet transaksioni.",
             "UNENROLLINGGOVERNOR": "Duke u çregjistruar nga Guvernatori...",
             "UNENROLLEDGOVERNOR": "Transaksioni u dërgua. Guvernatori juaj do të çregjistrohet sapo të konfirmohet transaksioni.",
             "GOVERNORNOTMATURE": "Guvernatori juaj nuk është ende mjaftueshëm i pjekur për të kryer këtë veprim."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Bleni Metrix",
+                "SEARCH": "Histori"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ju dërgoni",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Historiku i transaksioneve",
                 "SEARCHBUTTON": "KËRKO",
+                "SEARCHPLACEHOLDER": "Futni adresën MRX ose BTC",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Lloji i TX-it",
                 "TRANSACTIONAMOUNT": "Shuma",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Konfirmuar",
                 "TRANSACTIONNOTCONFIRMED": "Nuk është konfirmuar",
                 "TRANSACTIONREFUNDED": "Rimbursuar - Nën minimumin",
-                "AVGSWAPPRICE": "Çmimi mesatar i shkëmbimit",
-                "SEARCHPLACEHOLDER": "Futni adresën MRX ose BTC"
+                "AVGSWAPPRICE": "Çmimi mesatar i shkëmbimit"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Duke gjeneruar adresën e shkëmbimit...",
             "ALREADYHAVEADDRESS": "Ju tashmë keni një adresë BTC të lidhur me këtë adresë Metrix",
             "NOADDRESS": "Nuk ke futur një adresë Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Bleni Metrix",
-                "SEARCH": "Histori"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Zbulo",
                 "EMPTYTITLE": "Nuk u gjetën ende shenja",
                 "EMPTYDETAIL": "Altitude kontrollon automatikisht një eksplorues blloku për tokenët MRC20 dhe MRC721 të dërguar në adresat tuaja, pastaj verifikon gjithçka drejtpërdrejt kundrejt nyjes suaj. Gjithashtu mund të shtoni një token manualisht nëse e dini adresën e tij të kontratës.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kontrollimi automatik i tokenëve është çaktivizuar, kështu që adresat tuaja nuk po kontrollohen për tokenë. Aktivizojeni përsëri më sipër ose shtoni një token manualisht nëse e dini adresën e kontratës së tij.",
                 "HIDDENTITLE": "Tokenët e fshehur",
                 "CONTEXTMENUHIDE": "Fshih shenjën",
                 "ITEMSSUFFIX": "artikull(e)",
-                "NONENUMERABLETOOLTIP": "Ky koleksion nuk mbështet renditjen e artikujve individualë - në vend të kësaj tregon se sa prej tyre mbani."
+                "NONENUMERABLETOOLTIP": "Ky koleksion nuk mbështet renditjen e artikujve individualë - në vend të kësaj tregon se sa prej tyre mbani.",
+                "CHECKINGENABLED": "Duke kontrolluar",
+                "CHECKINGDISABLED": "Duke u mbyllur",
+                "CHECKINGENABLEDTOOLTIP": "Kontrollimi i tokenëve është aktiv - Altitude kontrollon periodikisht adresat tuaja për tokenët dhe rifreskon balancat. Klikoni për ta çaktivizuar.",
+                "CHECKINGDISABLEDTOOLTIP": "Kontrollimi i tokenëve është i çaktivizuar - klikoni për ta aktivizuar përsëri.",
+                "CHECKINGDISABLEDNOTICE": "Kontrolli automatik i tokenëve është çaktivizuar. Adresat tuaja nuk po skanohen për tokenë dhe balancat nuk do të përditësohen. Ju prapëseprapë mund të shtoni një token manualisht."
             },
             "ADDTOKEN": {
                 "TITLE": "Shto shenjën",

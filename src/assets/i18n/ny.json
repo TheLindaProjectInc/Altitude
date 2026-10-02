@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Pangani akaunti",
             "HIDEEMPTYACCOUNTS": "Bisani Maakaunti Opanda Dzina"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Chidule",
+            "TRANSACTIONSTAB": "Zochitika",
+            "ADDRESSTABS": "Maadiresi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Onjezani Wolandira",
             "SEND": "Tumizani",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Tsiku",
             "TABLECOLUMNS_CONFIRMS": "Zitsimikizo",
             "ALL_SELECTUNSELECT": "Sinthani Zonse",
+            "TREEMODE": "Mtundu wa Mtengo",
+            "LISTMODE": "Mndandanda wa Mndandanda",
             "SENDAVAILABLE": "Gwiritsani ntchito ndalama zomwe zilipo",
             "INPUTLOCKED": "Cholowera chatsekedwa. Muyenera kutsegula cholowera ichi kuti mugwiritse ntchito.",
             "CONTEXTMENULOCKINPUT": "Tsekani cholowera",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Pambuyo pa Ndalama",
             "QUANTITY": "Kuchuluka",
             "BYTES": "Mabaiti",
-            "TREEMODE": "Mtundu wa Mtengo",
-            "LISTMODE": "Mndandanda wa Mndandanda",
             "ALERTFEECHANGETITLE": "Kusintha Ndalama",
             "ALERTFEECHANGECONTENT": "Ndalama zenizeni zogulira ndi zokwera kuposa momwe mukuyembekezera. Chonde tsimikizirani ndalama zatsopano:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Pangani Pangano",
+            "INFO": "Gawani mgwirizano wanzeru ku netiweki potumiza bytecode yake yokonzedwa. Iyi ndi ntchito ya unyolo wapakati - onaninso makonda anu a bytecode ndi gasi musanayigwiritse ntchito, kuyigwiritsa ntchito sikungasinthidwe.",
+            "FROM": "Kuchokera",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "Ikani bytecode yokonzedwa ya mgwirizano (hex)",
+            "INVALIDBYTECODE": "Bytecode iyenera kukhala chingwe chovomerezeka cha hex (0-9, a-f) chokhala ndi zilembo zofanana",
+            "GASLIMIT": "Malire a Gasi",
+            "GASLIMITRANGE": "Malo ozungulira",
+            "GASPRICE": "Mtengo wa Gasi (MRX pa gasi lililonse)",
+            "GASPRICEMIN": "Zochepera",
+            "ESTIMATEDMAXCOST": "Mtengo woyerekeza wamtengo wapatali",
+            "DEPLOYBUTTON": "Pangano Logawa Ntchito",
+            "INCOMPLETEFORM": "Chonde sankhani adilesi yotumizira, lembani bytecode yovomerezeka, ndikukhazikitsa malire/mtengo wamafuta wovomerezeka",
+            "HIGHGASPRICETITLE": "Mtengo Wapamwamba wa Mafuta",
+            "HIGHGASPRICEINFO": "Mtengo wa mafuta omwe mwakhazikitsa ndi wokwera kwambiri. Kuyika mafuta kumeneku kungawononge ndalama zokwana:",
+            "DEPLOYING": "Kutumiza mgwirizano...",
+            "DEPLOYED": "Kutumiza kwa pangano kwaperekedwa",
+            "RESULTTITLE": "Zotsatira za Kutumizidwa kwa Anthu",
+            "STATUS": "Udindo",
+            "STATUSPENDING": "Kudikira kutsimikizira...",
+            "STATUSCONFIRMED": "Yagwiritsidwa ntchito bwino",
+            "STATUSFAILED": "Kutumiza kwalephera",
+            "TXID": "ID ya malonda",
+            "SENDER": "Wotumiza",
+            "CONTRACTADDRESS": "Adilesi ya Pangano",
+            "GASUSED": "Gasi Wogwiritsidwa Ntchito",
+            "DONEBUTTON": "Zatha",
+            "DEPLOYANOTHERBUTTON": "Tumizani Wina"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Zochitika",
+            "COPYBLOCKHASH": "Koperani Block Hash",
+            "COPYTXID": "Koperani ID ya Transaction",
+            "COPYACCOUNT": "Koperani Dzina la Akaunti",
+            "COPYADDRESS": "Koperani Adilesi",
+            "COPYAMOUNT": "Kopi ya Ndalama",
+            "COPTBLOCKINDEX": "Koperani Mndandanda wa Mabuku",
+            "EXPLORER": "Tsegulani mu Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Tsegulani Kuti Muyike Pachimake",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adilesi",
             "ENABLED": "Yathandizidwa",
-            "STARTBUTTON": "Yambani Zapafupi",
-            "STARTALIASBUTTON": "Yambani dzina loyipa",
-            "STARTALLBUTTON": "Yambani Zonse",
             "NOMASTERNODES": "Mulibe ma masternode aliwonse",
             "NOMNOUTPUTS": "Palibe zotsatira za Masternode zomwe zapezeka. Kuti mugwiritse ntchito Masternode yakomweko tumizani ndalama zokwana 2, 5, 25, 50 kapena 100 miliyoni ku adilesi yanu ya Masternode ndikudikirira zitsimikizo 15.",
+            "STARTBUTTON": "Yambani Zapafupi",
             "STOPBUTTON": "Imani Pafupi",
+            "STARTALIASBUTTON": "Yambani dzina loyipa",
             "STOPALIASBUTTON": "Dzina loyipa loti \"Siyani\"",
+            "STARTALLBUTTON": "Yambani Zonse",
             "ADDREMOTE": "Onjezani Remote Masternode",
             "REMOVEMN": "Chotsani Masternode",
             "ADDLOCAL": "Konzani Masternode Yapafupi",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "General",
                 "COREVERSION": "Mtundu Wapakati",
+                "ALTITUDEVERSION": "Mtundu Wokwera",
                 "PROTOCOLVERSION": "Mtundu wa Protocol",
                 "WALLETVERSION": "Mtundu wa Wallet.dat",
                 "NETWORKTITLE": "Netiweki",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Chiwerengero cha Masternodes",
                 "BLOCKCHAINTITLE": "Unyolo wa Block",
                 "NUMBERBLOCKS": "Chiwerengero cha mabuloko omwe alipo panopa",
-                "BESTBLOCKTTIME": "Nthawi yomaliza yotseka",
-                "ALTITUDEVERSION": "Mtundu Wokwera"
+                "BESTBLOCKTTIME": "Nthawi yomaliza yotseka"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Takulandirani ku Metrix Core RPC console. Lembani thandizo kuti muwone mwachidule malamulo omwe alipo.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Sankhani Chilankhulo"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Zochitika",
-            "COPYBLOCKHASH": "Koperani Block Hash",
-            "COPYTXID": "Koperani ID ya Transaction",
-            "COPYACCOUNT": "Koperani Dzina la Akaunti",
-            "COPYADDRESS": "Koperani Adilesi",
-            "COPYAMOUNT": "Kopi ya Ndalama",
-            "COPTBLOCKINDEX": "Koperani Mndandanda wa Mabuku",
-            "EXPLORER": "Tsegulani mu Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Sankhani Ndalama Zowonetsera"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netiweki",
             "WINDOTAB": "Zenera",
+            "BACKUPTAB": "Kusunga zobwezeretsera",
+            "EXPLORERTAB": "Wofufuza",
+            "DEVELOPERTAB": "Wopanga mapulogalamu",
             "NETWORK": {
                 "PROXY": "Lumikizani kudzera pa proxy ya SOCKS5",
                 "PROXYIP": "IP ya proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Chepetsani pamene mwatseka",
                 "BEHAVIOURTITLE": "Thireyi Yadongosolo & Khalidwe la Zenera"
             },
-            "BACKUPTAB": "Kusunga zobwezeretsera",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Kusunga Zokha",
                 "ENABLED": "Konzani zokha zosungira za wallet.dat pa nthawi yake",
                 "ENABLEDINFO": "Imapanga kopi yatsopano ya fayilo yanu ya chikwama pa nthawi yake, kotero kopi yatsopano nthawi zonse imapezeka ngati china chake chalakwika.",
+                "INTERVALLABEL": "Bwezerani (masiku onse)",
                 "LASTBACKUP": "Kusunga komaliza:",
                 "NEVERBACKEDUP": "Palibe zosunga zobwezeretsera zokha zomwe zapangidwa panobe.",
                 "BACKUPNOWBUTTON": "Bwererani Tsopano",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Bwezeretsani ku Chokhazikika",
                 "PRUNETITLE": "Mbiri Yosungira Zinthu Zosungidwa",
                 "PRUNEINFO": "Ma backups akale odziyimira pawokha amachotsedwa kuti chikwatu ichi chisakule kwamuyaya - ndi omwe aposachedwa kwambiri omwe ali pansipa okha omwe amasungidwa.",
-                "KEEPCOUNTLABEL": "Sungani komaliza",
-                "INTERVALLABEL": "Bwezerani (masiku onse)"
+                "KEEPCOUNTLABEL": "Sungani komaliza"
             },
-            "EXPLORERTAB": "Wofufuza",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Tsambali linatsegulidwa poyang'ana malonda pa block explorer (monga kudina-kumanja pa malonda > Onani pa Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Kuyesanso"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Njira Yopangira Mapulogalamu",
+                "DEVMODEINFO": "Kuzimitsa mwachisawawa ndipo cholinga chake ndi cha opanga mapulogalamu okha. Kuyimitsa izi kukuwonetsani njira zochotsera kulumikizana kwa RPC - ogwiritsa ntchito wamba ayenera kusiya izi.",
+                "DEVMODELABEL": "Yambitsani Njira Yopangira Mapulogalamu",
+                "WARNING": "Zokonda izi ndi zachitukuko chokha. Kuzisintha kungalepheretse chikwamacho kulumikizidwa ku daemon - gwiritsani ntchito izi pokhapokha ngati mukudziwa zomwe mukuchita.",
+                "RPCHOSTTITLE": "Kulumikizana kwa RPC",
+                "RPCHOSTINFO": "Mwachisawawa, Altitude imalumikizana ndi daemon yomwe imadziyendetsa yokha, pa makina awa (127.0.0.1). Kuchotsa izi kumalola kuti ilumikizane ndi daemon ina m'malo mwake - mwachitsanzo remote regtest instance, popanda kufunikira kuyendetsa imodzi kwanuko. Ngati kulumikizanako kukuyenda bwino, Altitude sidzatsitsa kapena kuyambitsa daemon yakeyake. rpcallowip ya daemon yomwe mukufuna iyenera kulola kulumikizanaku, ndipo rpcuser/rpcpassword yomwe ili pansipa iyenera kufanana ndi kasinthidwe kake. Imagwira ntchito nthawi yomweyo, palibe kuyambiranso komwe kumafunika.",
+                "RPCHOSTLABEL": "Woyang'anira RPC",
+                "RPCPORTLABEL": "Doko la RPC",
+                "RPCUSERLABEL": "Dzina Lolowera la RPC",
+                "RPCPASSWORDLABEL": "Mawu Achinsinsi a RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Chidule",
-            "TRANSACTIONSTAB": "Zochitika",
-            "ADDRESSTABS": "Maadiresi"
-        },
-        "CURRENCY": {
-            "TITLE": "Sankhani Ndalama Zowonetsera"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Tumizani",
+            "CREATECONTRACT": "Pangani Pangano",
             "RECEIVE": "Landirani",
             "TRANSACTIONS": "Zochitika",
             "STAKING": "Kuyika",
             "MASTERNODES": "Ma Masternode",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "Kulumikiza",
                 "NOBLOCKS": "Kuyembekezera mabuloko",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Chikwama cha ndalama sichikusungidwa pakali pano",
                 "MASTERNODEON": "Masternode ikugwira ntchito pakadali pano",
                 "MASTERNODEOFF": "Masternode sikugwira ntchito pakadali pano"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Lowetsani adilesi ya tsamba la webusayiti3",
+            "GOBUTTON": "Pitani",
+            "QUICKLAUNCH": "Kutsegula Mwachangu",
+            "DEVTOOLS": "Tsegulani Zida za Opanga Mapulogalamu",
+            "ADDLINK": "Onjezani Ulalo",
+            "LINKNAMEPLACEHOLDER": "Dzina",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Sungani",
+            "CANCEL": "Letsani",
+            "REMOVE": "Chotsani",
+            "REMOVECONFIRM": "Chotsani ulalo wachangu uwu?",
+            "LINKEXISTS": "Ulalo umenewo uli kale pamndandanda wanu wotsegulira mwachangu",
+            "LINKINVALID": "Lowetsani adilesi yolondola ya tsamba",
+            "LINKNETWORKLABEL": "Netiweki",
+            "LOADFAILED": "Zalephera kutsegula tsamba",
+            "SECURESITE": "Kulumikizana kuli kotetezeka - satifiketi yolondola ya SSL",
+            "INSECURESITE": "Kulumikizana sikuli kotetezeka",
+            "INVALIDCERTSITE": "Kulumikizana si kwachinsinsi - satifiketi ya SSL yosavomerezeka kapena yosadalirika"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Lowetsani Mawu Achinsinsi a Chikwama Chanu",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Pali zosintha za Metrix Core. Kodi mukufuna kuyika tsopano?",
             "WALLETUPDATETITLE": "Zosintha za Kutalika Zikupezeka",
             "WALLETUPDATEINFO": "Pali zosintha za Altitude. Kodi mukufuna kuzitsitsa tsopano?",
+            "WALLETUPDATEREADYTITLE": "Zosintha Zokwera Zokonzeka",
+            "WALLETUPDATEREADYINFO": "Zosintha zatsitsidwa. Yambitsaninso Altitude tsopano kuti muyike?",
+            "WALLETUPDATERESTARTBUTTON": "Yambitsaninso & Ikani",
+            "WALLETUPDATELATERBUTTON": "Pambuyo pake",
             "CLIENTUPDATEBUTTON": "Zosintha",
             "CLIENTUPDATECANCELBUTTON": "Musasinthe",
             "CLIENTUPDATESKIPBUTTON": "Dulani Zosintha Izi",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ma backups aliwonse omwe mudapanga kale a fayilo yanu ya chikwama ayenera kusinthidwa ndi fayilo yatsopano yopangidwa, yobisika. Pazifukwa zachitetezo, ma backups akale a fayilo ya chikwama yosabisika sadzakhala othandiza mukangoyamba kugwiritsa ntchito chikwama chatsopano, chobisika.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Yayima Mosayembekezereka",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Panali vuto ndi Metrix Core lomwe lachititsa kuti ithetsedwe. Ndikofunikira kuti muyang'ane fayilo yanu ya debug.log kuti muwone ngati pali mavuto.",
+            "CLIENTUNKNOWNERRORTITLE": "Cholakwika cha Kulankhulana kwa Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Panali vuto polankhulana ndi Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya debug.log kuti muwone ngati pali mavuto.",
+            "BOOTSTRAPFAILEDTITLE": "Chingwe cha Metrix Core Bootstrap Chalephera",
+            "BOOTSTRAPFAILEDINFO": "Panali vuto potsegula Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya Altitude log kuti muwone ngati pali mavuto.",
+            "BOOTSTRAPOFFERTITLE": "Chikwama Chachikale Kwambiri",
+            "BOOTSTRAPOFFERINFO": "Pali bootstrap yaposachedwa yomwe ingathandize Metrix Core kusintha nthawi yomweyo. Kupitiliza ndi kusinthasintha kwabwinobwino m'malo mwake kungatenge masiku angapo kuti kumalizidwe, chifukwa chikwama chanu chikufunika kutsitsa ndikutsimikizira block iliyonse yomwe yasowa.",
+            "BOOTSTRAPOFFERBUTTON": "Tsitsani Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Pitirizani Kulumikiza Kwachizolowezi",
+            "BOOTSTRAPSPACEINFO": "Palibe malo okwanira pa disk kuti mutsitse ndikutulutsa bootstrap. Zofunika: {zofunikira}, Zikupezeka: {zaulere}. Tulutsani malo pang'ono ndikuyesanso.",
+            "STARTUPFAILEDTITLE": "Kuyambitsa kwa Metrix Core Kwalephera",
+            "STARTUPFAILEDINFO": "Panali vuto poyambitsa Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya Altitude log kuti muwone ngati pali mavuto.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zida Zobwezeretsa",
             "CLIENTINVALIDCONFIGTITLE": "Kusintha kolakwika kwa metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf yanu ili ndi masternode yosavomerezeka yomwe ingapangitse Metrix Core kutuluka nthawi yomweyo. Chonde onani fayilo iyi.",
             "ADDREMOTEMNTITLE": "Onjezani Remote Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kiyi Yachinsinsi ya Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Chingwe cha Metrix Core Bootstrap Chalephera",
-            "BOOTSTRAPFAILEDINFO": "Panali vuto potsegula Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya Altitude log kuti muwone ngati pali mavuto.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zida Zobwezeretsa",
-            "STARTUPFAILEDTITLE": "Kuyambitsa kwa Metrix Core Kwalephera",
-            "STARTUPFAILEDINFO": "Panali vuto poyambitsa Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya Altitude log kuti muwone ngati pali mavuto.",
-            "CLIENTUNKNOWNERRORTITLE": "Cholakwika cha Kulankhulana kwa Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Panali vuto polankhulana ndi Metrix Core. Ndikofunikira kuti muyang'ane fayilo yanu ya debug.log kuti muwone ngati pali mavuto.",
             "UNENROLLGOVERNORTITLE": "Tsimikizani Kuchotsedwa kwa Bwanamkubwa",
             "UNENROLLGOVERNORCONTENT": "Kodi mukutsimikiza kuti mukufuna kuchotsa Bwanamkubwa wanu paudindo? Simudzathanso kuvota pa kayendetsedwe ka unyolo.",
-            "WALLETUPDATEREADYTITLE": "Zosintha Zokwera Zokonzeka",
-            "WALLETUPDATEREADYINFO": "Zosintha zatsitsidwa. Yambitsaninso Altitude tsopano kuti muyike?",
-            "WALLETUPDATERESTARTBUTTON": "Yambitsaninso & Ikani",
-            "WALLETUPDATELATERBUTTON": "Pambuyo pake",
             "DAPPCONNECTTITLE": "Lumikizanani ndi Tsamba",
             "DAPPCONNECTINFO": "Tsambali likufuna kulumikizana ndi chikwama chanu cha ndalama ndikuwona adilesi yanu ndi ndalama zomwe muli nazo.",
             "DAPPCONNECTBUTTON": "Lumikizani",
+            "DAPPCONNECTADDRESSLABEL": "Adilesi",
+            "DAPPAPPROVEBUTTON": "Vomerezani",
             "DAPPREJECTBUTTON": "Kanani",
             "DAPPSENDTITLE": "Pempho la Kugulitsa Pangano",
             "DAPPSENDINFO": "Tsambali likupempha kutumiza mgwirizano kuchokera ku chikwama chanu.",
-            "DAPPSIGNTITLE": "Saina Pempho la Uthenga",
-            "DAPPSIGNINFO": "Tsambali likupempha kuti musayine uthenga ndi adilesi yanu ya chikwama.",
-            "DAPPNOTREADY": "Sitingathe kulumikizana ndi tsamba lino - Metrix Core ikuyambiranso.",
-            "DAPPNOWALLET": "Sitingathe kulumikizana ndi tsamba lino - palibe adilesi ya chikwama yomwe ilipo.",
-            "DAPPAPPROVEBUTTON": "Vomerezani",
-            "DAPPCONNECTADDRESSLABEL": "Adilesi",
             "DAPPSENDSITELABEL": "Tsamba",
             "DAPPSENDCONTRACTLABEL": "Adilesi ya Pangano",
             "DAPPSENDAMOUNTLABEL": "Ndalama",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Ndalama Yowonjezera ya Netiweki",
             "DAPPSENDMAXTOTALLABEL": "Chiwerengero Chonse",
             "DAPPSENDDATALABEL": "Deta ya Pangano",
+            "DAPPSIGNTITLE": "Saina Pempho la Uthenga",
+            "DAPPSIGNINFO": "Tsambali likupempha kuti musayine uthenga ndi adilesi yanu ya chikwama.",
             "DAPPSIGNMESSAGELABEL": "Uthenga",
-            "BOOTSTRAPOFFERTITLE": "Chikwama Chachikale Kwambiri",
-            "BOOTSTRAPOFFERINFO": "Pali bootstrap yaposachedwa yomwe ingathandize Metrix Core kusintha nthawi yomweyo. Kupitiliza ndi kusinthasintha kwabwinobwino m'malo mwake kungatenge masiku angapo kuti kumalizidwe, chifukwa chikwama chanu chikufunika kutsitsa ndikutsimikizira block iliyonse yomwe yasowa.",
-            "BOOTSTRAPOFFERBUTTON": "Tsitsani Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Pitirizani Kulumikiza Kwachizolowezi",
-            "BOOTSTRAPSPACEINFO": "Palibe malo okwanira pa disk kuti mutsitse ndikutulutsa bootstrap. Zofunika: {zofunikira}, Zikupezeka: {zaulere}. Tulutsani malo pang'ono ndikuyesanso."
+            "DAPPNOTREADY": "Sitingathe kulumikizana ndi tsamba lino - Metrix Core ikuyambiranso.",
+            "DAPPNOWALLET": "Sitingathe kulumikizana ndi tsamba lino - palibe adilesi ya chikwama yomwe ilipo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buku la Ma Adilesi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Netiweki yomwe ilipo pano"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Lowetsani adilesi ya tsamba la webusayiti3",
-            "GOBUTTON": "Pitani",
-            "QUICKLAUNCH": "Kutsegula Mwachangu",
-            "DEVTOOLS": "Tsegulani Zida za Opanga Mapulogalamu",
-            "ADDLINK": "Onjezani Ulalo",
-            "LINKNAMEPLACEHOLDER": "Dzina",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Sungani",
-            "CANCEL": "Letsani",
-            "REMOVE": "Chotsani",
-            "REMOVECONFIRM": "Chotsani ulalo wachangu uwu?",
-            "LINKEXISTS": "Ulalo umenewo uli kale pamndandanda wanu wotsegulira mwachangu",
-            "LINKINVALID": "Lowetsani adilesi yolondola ya tsamba",
-            "LINKNETWORKLABEL": "Netiweki",
-            "LOADFAILED": "Zalephera kutsegula tsamba",
-            "SECURESITE": "Kulumikizana kuli kotetezeka - satifiketi yolondola ya SSL",
-            "INSECURESITE": "Kulumikizana sikuli kotetezeka",
-            "INVALIDCERTSITE": "Kulumikizana si kwachinsinsi - satifiketi ya SSL yosavomerezeka kapena yosadalirika"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Chikwama Chosungiramo Zinthu Zosungira...",
             "SIGNMESSAGE": "Saina Uthenga...",
             "VERIFYMESSAGE": "Tsimikizirani Uthenga...",
-            "LOCALE": "Chilankhulo...",
-            "RESTARTCORE": "Yambitsaninso Metrix Core",
-            "EXIT": "Potulukira",
             "OPTIONS": "Zosankha...",
+            "LOCALE": "Chilankhulo...",
             "CURRENCIES": "Ndalama Yowonetsera...",
-            "ALTITUDEREFRESH": "Bwezeretsani Deta Yokwera"
+            "RESTARTCORE": "Yambitsaninso Metrix Core",
+            "ALTITUDEREFRESH": "Bwezeretsani Deta Yokwera",
+            "EXIT": "Potulukira"
         },
         "ENCRYPT": {
             "TITLE": "Sungani",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Ndalama Zonse",
+        "SPENDABLEBALANCE": "Ndalama Zogwiritsidwa Ntchito",
+        "PENDINGBALANCE": "Ndalama Yotsala Yoyembekezera",
         "CANCELBUTTON": "Letsani",
         "DONEBUTTON": "Zatha",
         "OKBUTTON": "Chabwino",
+        "ACCEPTBUTTON": "Landirani",
         "CLEARALLBUTTON": "Chotsani Zonse",
         "ENTERACCOUNTLABEL": "Lowetsani chizindikiro cha adilesi iyi",
         "ENTERADDRESSLABEL": "Lowetsani adilesi ya Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Sanjani potengera",
         "SEARCH": "Sakani",
         "FEE": "Ndalama",
-        "ACCEPTBUTTON": "Landirani",
         "CONFIRMED": "Zatsimikizika",
         "UNCONFIRMED": "Zosatsimikizika",
-        "PENDINGBALANCE": "Ndalama Yotsala Yoyembekezera",
-        "SPENDABLEBALANCE": "Ndalama Zogwiritsidwa Ntchito",
         "SAVEBUTTON": "Sungani"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Kuyambitsanso Metrix Core...",
         "BOOTSTRAPPING": "Kutsitsa bootstrap...",
         "BOOTSTRAPEXTRACTING": "Kuchotsa bootstrap...",
-        "TIMEREMAINING": "zotsala:"
+        "TIMEREMAINING": "zotsala:",
+        "DEVRPCOVERRIDEACTIVE": "Kuchotsa kulumikizana kwa RPC kwa wopanga mapulogalamu kwakhazikitsidwa (Zosankha > Wopanga Mapulogalamu) ndipo sikuyankha. Chotsani kuti mulumikizanenso ku daemon yakomweko nthawi zonse.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Chotsani Kuchotsa ndi Kulumikizanso RPC"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaunti yatsopano yapangidwa bwino",
         "ADDRESSCOPIEDCLIPBOARD": "Adilesi yakopedwa ku bolodibodi",
+        "COPIEDCLIPBOARD": "Kopedwa ku bolodibodi",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Zochitika zakopedwa ku clipboard",
         "EMPTYFIELDS": "Chonde lembani minda yonse",
         "NOUPDATE": "Palibe zosintha zomwe zikupezeka",
         "WALLETBACKEDUP": "Kusunga chikwama cha ndalama kwapambana",
+        "WALLETBACKUPFAILED": "Kusunga chikwama chanu chokha kwalephera - onani komwe muli ndi zosunga zobwezeretsera ndi malo omwe alipo pa disk",
         "PASSPHRASEMISMATCH": "Mawu achinsinsi omwe mudalemba sakugwirizana",
         "CHECKINGUPDATE": "Tikuyang'ana zosintha...",
         "CHECKINGUPDATEFAILED": "Sitingathe kuwona zosintha. Yang'anani netiweki yanu.",
+        "WALLETUPDATEDOWNLOADING": "Kutsitsa zosintha...",
         "SENDINGEXCEEDSBALANCE": "Ndalama zomwe mukutumiza zapitirira ndalama zomwe mwasankha",
         "MISSINGCHANGEADDRESS": "Muyenera kusankha adilesi yosinthira",
         "MISSINGDESTINATIONADDRESS": "Muyenera kufotokoza adilesi yopitako",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Kubisa chikwama cha ndalama...",
         "CHANGINGPASSPHARASE": "Kusintha mawu achinsinsi...",
         "STARTINGMASTERNODE": "Kuyamba masternode...",
+        "STOPPINGMASTERNODE": "Kuyimitsa masternode...",
         "SENDINGTRANSACTION": "Kutumiza malonda...",
         "SIGNINGMESSAGE": "Kusaina uthenga...",
         "SIGNEDMESSAGE": "Uthenga wasainidwa",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Kutsegula chikwama cha ndalama...",
         "TRANSACTIONMISMATCH": "Cholakwika pa malonda. Yesaninso.",
         "MINIMUMCONFIRMATIONS": "Zonse zomwe zalowetsedwa zimafunika kutsimikizira kamodzi musanagwiritse ntchito.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Zochitika zakopedwa ku clipboard",
-        "STOPPINGMASTERNODE": "Kuyimitsa masternode...",
         "FAILEDTOWRITECONFIG": "Panali vuto polemba fayilo yanu ya metrix.conf. Onetsetsani kuti fayiloyo ilipo ndipo Altitude ili ndi zilolezo zolembera.",
         "NOPUBLICUP": "Palibe adilesi ya IP ya anthu onse yomwe yapezeka. Yang'anani intaneti yanu ndikuyambitsanso Altitude.",
         "CONFIGURINGLOCALMN": "Kukonza Masternode yakomweko...",
         "REPORTINGISSUE": "Kupeza zambiri zokhudza matenda... Izi zidzakopedwa ku clipboard yanu.",
-        "WALLETUPDATEDOWNLOADING": "Kutsitsa zosintha...",
-        "WALLETBACKUPFAILED": "Kusunga chikwama chanu chokha kwalephera - onani komwe muli ndi zosunga zobwezeretsera ndi malo omwe alipo pa disk",
         "EXPLORERURLSAVED": "Ulalo wa Explorer wasungidwa",
         "EXPLORERURLRESET": "Ulalo wa Explorer wabwezeretsedwa kukhala wokhazikika",
         "EXPLORERURLINVALID": "Ulalo wa http (s) si wolondola",
-        "EXPLORERURLUNREACHABLE": "Sindinathe kufika pa URL imeneyo - yang'anani ndikuyesanso"
+        "EXPLORERURLUNREACHABLE": "Sindinathe kufika pa URL imeneyo - yang'anani ndikuyesanso",
+        "DEVRPCHOSTSAVED": "Wosunga RPC wasungidwa",
+        "DEVRPCHOSTRESET": "Woyang'anira RPC wabwezeretsedwa kukhala wokhazikika (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ndalama Zolandiridwa",
+        "NEWTRANSACTION_TITLE_STAKE": "Mtengo Wolandiridwa",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Mphotho ya Masternode Yalandiridwa"
     },
     "TIME": {
         "AFEWSECONDS": "Masekondi angapo",
@@ -533,11 +587,6 @@
         "MONTHS": "miyezi",
         "AYEAR": "Chaka chimodzi",
         "YEARS": "zaka"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Ndalama Zolandiridwa",
-        "NEWTRANSACTION_TITLE_STAKE": "Mtengo Wolandiridwa",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Mphotho ya Masternode Yalandiridwa"
     },
     "MONTH": {
         "JAN": "Jan",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Mabwanamkubwa ali ndi udindo wovota pa bajeti ya mwezi uliwonse komanso kusintha kwa blockchain. Mutha kukhala Bwanamkubwa mwa kuyika chikole choyenera mu mgwirizano wa Utsogoleri.",
                 "COLLATERAL": "Chikole chofunikira",
                 "ENROLL": "Lembetsani",
+                "SELECTAGOVERNOR": "Sankhani adilesi yoyenera ya bwanamkubwa",
+                "GOVERNORNOTSELECTED": "Palibe adilesi yoyenera yomwe yasankhidwa",
                 "CONFIRMENROLL": "Mukufuna kulembetsa ngati Bwanamkubwa. Izi zitumiza mgwirizano ndi chikole chofunikira ku mgwirizano wa boma. Mutha kusiya kulembetsa nthawi iliyonse.",
                 "ISGOVERNORTITLE": "Ndinu Bwanamkubwa wokangalika!",
                 "ISGOVERNORDETAIL1": "Mabwanamkubwa ali ndi udindo wovota pa bajeti ya mwezi uliwonse ndi kusintha kwa blockchain.",
                 "ISGOVERNORDETAIL2": "Kuti mukhalebe Bwanamkubwa muyenera kutenga nawo mbali pa voti imodzi kapena kuposerapo masiku 30 aliwonse.",
                 "ISGOVERNORDETAIL3": "Ngati palibe chovotera, mutha kupitiriza kulembetsa kwanu mwa kutumiza ping yogwira ntchito.",
+                "MYGOVERNORADDRESS": "Adilesi Yanga ya Bwanamkubwa",
                 "UNENROLL": "Chotsani kulembetsa",
                 "PING": "Tumizani Ping Yogwira Ntchito",
                 "LASTPINGTITLE": "Ping yomaliza",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "masiku",
                 "GOVERNORVOTEMATURITYHOURS": "maola",
                 "GOVERNORVOTEMATURITYSUFFIX": "mpaka atakula",
-                "MYGOVERNORADDRESS": "Adilesi Yanga ya Bwanamkubwa",
-                "SELECTAGOVERNOR": "Sankhani adilesi yoyenera ya bwanamkubwa",
-                "GOVERNORNOTSELECTED": "Palibe adilesi yoyenera yomwe yasankhidwa",
                 "NOTFULLYSYNCEDTITLE": "Udindo wa bwanamkubwa sukupezeka",
                 "NOTFULLYSYNCEDDETAIL": "Mkhalidwe wanu wolembetsa ku Governor udzawonekera pamene blockchain yanu yalumikizidwa mokwanira.",
                 "DGPMIGRATIONTITLE": "Kusamuka kwa DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Cholinga chanu chapangidwa bwino",
             "ENROLLINGGOVERNOR": "Kulembetsa kukhala Bwanamkubwa...",
             "ENROLLEDGOVERNOR": "Kulembetsa kwanu kudzachitika mukangotsimikizira zomwe mwachita",
-            "VOTINGONPROPOSAL": "Kutumiza voti yofunsira",
-            "VOTEDONPROPOSAL": "Voti yanu idzawerengedwa malonda akangotsimikizika.",
             "PINGINGGOVERNOR": "Kutumiza ping...",
             "PINGEDGOVERNOR": "Ping yatumizidwa bwino. Bwanamkubwa wanu adzasinthidwa malonda akangotsimikizika",
+            "VOTINGONPROPOSAL": "Kutumiza voti yofunsira",
+            "VOTEDONPROPOSAL": "Voti yanu idzawerengedwa malonda akangotsimikizika.",
             "UNENROLLINGGOVERNOR": "Kuchotsa Bwanamkubwa...",
             "UNENROLLEDGOVERNOR": "Ndalama zatumizidwa. Bwanamkubwa wanu adzachotsedwa muutumiki akangotsimikizika kuti ndalamazo zatumizidwa.",
             "GOVERNORNOTMATURE": "Bwanamkubwa wanu sanakhwime mokwanira kuti achite izi pakadali pano"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Gulani Metrix",
+                "SEARCH": "Mbiri"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Mumatumiza",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Mbiri ya Zochitika",
                 "SEARCHBUTTON": "FUFUZANI",
+                "SEARCHPLACEHOLDER": "Lowetsani adilesi ya MRX kapena BTC",
                 "TRANSACTIONDATE": "Tsiku",
                 "TRANSACTIONTYPE": "Mtundu wa TX",
                 "TRANSACTIONAMOUNT": "Ndalama",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Zatsimikizika",
                 "TRANSACTIONNOTCONFIRMED": "Sizitsimikiziridwa",
                 "TRANSACTIONREFUNDED": "Kubwezeredwa ndalama - Zocheperako",
-                "AVGSWAPPRICE": "Mtengo Wosinthira Wapakati",
-                "SEARCHPLACEHOLDER": "Lowetsani adilesi ya MRX kapena BTC"
+                "AVGSWAPPRICE": "Mtengo Wosinthira Wapakati"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Kupanga Adilesi Yosinthana...",
             "ALREADYHAVEADDRESS": "Muli kale ndi adilesi ya BTC yogwirizana ndi adilesi iyi ya Metrix",
             "NOADDRESS": "Simunalembe adilesi ya Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Gulani Metrix",
-                "SEARCH": "Mbiri"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Osabisa",
                 "EMPTYTITLE": "Palibe Zizindikiro Zomwe Zapezeka Pakadali Pano",
                 "EMPTYDETAIL": "Kutalika kumayang'ana kokha block explorer ya ma tokeni a MRC20 ndi MRC721 omwe atumizidwa ku ma adilesi anu, kenako kutsimikizira chilichonse chomwe chikuchitika motsutsana ndi node yanu. Muthanso kuwonjezera tokeni pamanja ngati mukudziwa adilesi yake ya mgwirizano.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kuyang'ana ma tokeni okha kumazimitsidwa, kotero ma adilesi anu sakuwunikidwa ngati ali ndi ma tokeni. Yatsaninso pamwambapa, kapena onjezani tokeni pamanja ngati mukudziwa adilesi yake ya mgwirizano.",
                 "HIDDENTITLE": "Zizindikiro Zobisika",
                 "CONTEXTMENUHIDE": "Bisani Chizindikiro",
                 "ITEMSSUFFIX": "chinthu (zinthu)",
-                "NONENUMERABLETOOLTIP": "Zosonkhanitsazi sizithandiza kulemba zinthu payokha - kusonyeza kuchuluka kwa zinthu zomwe muli nazo m'malo mwake."
+                "NONENUMERABLETOOLTIP": "Zosonkhanitsazi sizithandiza kulemba zinthu payokha - kusonyeza kuchuluka kwa zinthu zomwe muli nazo m'malo mwake.",
+                "CHECKINGENABLED": "Kuyang'anira",
+                "CHECKINGDISABLED": "Kutseka Kulipira",
+                "CHECKINGENABLEDTOOLTIP": "Kuyang'ana zizindikiro kumayatsidwa - Kutalika nthawi ndi nthawi kumafufuza maadiresi anu kuti awone ngati zizindikirozo zili ndi ma tokeni ndipo kumawonetsanso ndalama zomwe zili mu akaunti yanu. Dinani kuti muzimitse.",
+                "CHECKINGDISABLEDTOOLTIP": "Kuyang'ana zizindikiro kwazimitsidwa - dinani kuti muyatsenso.",
+                "CHECKINGDISABLEDNOTICE": "Kuyang'ana ma tokeni okha kwazimitsidwa. Ma adilesi anu sakusanthulidwa kuti apeze ma tokeni ndipo ndalama zomwe zili mkati sizisinthidwa. Mutha kuwonjezera tokeni pamanja."
             },
             "ADDTOKEN": {
                 "TITLE": "Onjezani Chizindikiro",

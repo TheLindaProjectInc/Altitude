@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Fungua Akaunti",
             "HIDEEMPTYACCOUNTS": "Ficha Akaunti Tupu Zisizo na Jina"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Muhtasari",
+            "TRANSACTIONSTAB": "Miamala",
+            "ADDRESSTABS": "Anwani"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ongeza Mpokeaji",
             "SEND": "Tuma",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Tarehe",
             "TABLECOLUMNS_CONFIRMS": "Uthibitisho",
             "ALL_SELECTUNSELECT": "Badilisha Zote",
+            "TREEMODE": "Hali ya Mti",
+            "LISTMODE": "Hali ya Orodha",
             "SENDAVAILABLE": "Tumia salio linalopatikana",
             "INPUTLOCKED": "Ingizo limefungwa. Utahitaji kufungua ingizo hili ili kulitumia.",
             "CONTEXTMENULOCKINPUT": "Ingizo la kufunga",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Baada ya Ada",
             "QUANTITY": "Kiasi",
             "BYTES": "Baiti",
-            "TREEMODE": "Hali ya Mti",
-            "LISTMODE": "Hali ya Orodha",
             "ALERTFEECHANGETITLE": "Mabadiliko ya Ada",
             "ALERTFEECHANGECONTENT": "Ada halisi ya muamala ni kubwa kuliko ilivyotarajiwa. Tafadhali thibitisha ada mpya:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Unda Mkataba",
+            "INFO": "Sambaza mkataba mahiri kwenye mtandao kwa kuwasilisha msimbo wake wa byte uliokusanywa. Huu ni chaguo-msingi la mnyororo mkuu - angalia mara mbili mipangilio yako ya msimbo wa byte na gesi kabla ya kusambaza, usambazaji hauwezi kutenduliwa.",
+            "FROM": "Kutoka",
+            "BYTECODE": "Msimbo wa Byte",
+            "BYTECODEPLACEHOLDER": "Bandika msimbo wa mkataba uliokusanywa (heksaidi)",
+            "INVALIDBYTECODE": "Msimbo wa Byte lazima uwe mfuatano halali wa heksaidi (0-9, a-f) wenye idadi sawa ya herufi",
+            "GASLIMIT": "Kikomo cha Gesi",
+            "GASLIMITRANGE": "Masafa",
+            "GASPRICE": "Bei ya Gesi (MRX kwa kila kitengo cha gesi)",
+            "GASPRICEMIN": "Kiwango cha chini",
+            "ESTIMATEDMAXCOST": "Gharama ya juu inayokadiriwa",
+            "DEPLOYBUTTON": "Mkataba wa Utekelezaji",
+            "INCOMPLETEFORM": "Tafadhali chagua anwani ya mtumaji, ingiza msimbo halali wa byte, na uweke kikomo/bei halali ya gesi",
+            "HIGHGASPRICETITLE": "Bei ya Juu ya Gesi",
+            "HIGHGASPRICEINFO": "Bei ya mafuta uliyoweka ni ya juu sana. Usambazaji huu unaweza kugharimu hadi:",
+            "DEPLOYING": "Mkataba wa kupeleka kazi...",
+            "DEPLOYED": "Uwasilishaji wa mkataba umewasilishwa",
+            "RESULTTITLE": "Matokeo ya Utekelezaji",
+            "STATUS": "Hali",
+            "STATUSPENDING": "Inasubiri uthibitisho...",
+            "STATUSCONFIRMED": "Imetumika kwa mafanikio",
+            "STATUSFAILED": "Imeshindwa kusambaza",
+            "TXID": "Kitambulisho cha muamala",
+            "SENDER": "Mtumaji",
+            "CONTRACTADDRESS": "Anwani ya Mkataba",
+            "GASUSED": "Gesi Iliyotumika",
+            "DONEBUTTON": "Imekamilika",
+            "DEPLOYANOTHERBUTTON": "Tumia Mwingine"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Miamala",
+            "COPYBLOCKHASH": "Hash ya Kizuizi cha Nakili",
+            "COPYTXID": "Nakili Kitambulisho cha Muamala",
+            "COPYACCOUNT": "Nakili Jina la Akaunti",
+            "COPYADDRESS": "Nakili Anwani",
+            "COPYAMOUNT": "Nakala Kiasi",
+            "COPTBLOCKINDEX": "Kielezo cha Nakala ya Kizuizi",
+            "EXPLORER": "Fungua katika Kivinjari cha Block"
         },
         "STAKING": {
             "UNLOCK": "Fungua kwa Kuweka",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Anwani",
             "ENABLED": "Imewezeshwa",
-            "STARTBUTTON": "Anza Eneo Lililo Karibu",
-            "STARTALIASBUTTON": "Anza Jina bandia",
-            "STARTALLBUTTON": "Anza Zote",
             "NOMASTERNODES": "Huna nodi kuu zozote",
             "NOMNOUTPUTS": "Hakuna matokeo ya Masternode yaliyopatikana. Ili kuendesha Masternode ya ndani tuma sarafu milioni 2, 5, 25, 50 au 100 kwa anwani yako ya Masternode na usubiri uthibitisho 15.",
+            "STARTBUTTON": "Anza Eneo Lililo Karibu",
             "STOPBUTTON": "Simamisha Eneo Lililopo",
+            "STARTALIASBUTTON": "Anza Jina bandia",
             "STOPALIASBUTTON": "Acha jina bandia",
+            "STARTALLBUTTON": "Anza Zote",
             "ADDREMOTE": "Ongeza Masternode ya Mbali",
             "REMOVEMN": "Ondoa Masternode",
             "ADDLOCAL": "Sanidi Masternode ya Eneo",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Jumla",
                 "COREVERSION": "Toleo Kuu",
+                "ALTITUDEVERSION": "Toleo la Urefu",
                 "PROTOCOLVERSION": "Toleo la Itifaki",
                 "WALLETVERSION": "Toleo la Wallet.dat",
                 "NETWORKTITLE": "Mtandao",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Idadi ya Masternodes",
                 "BLOCKCHAINTITLE": "Mnyororo wa Vizuizi",
                 "NUMBERBLOCKS": "Idadi ya sasa ya vitalu",
-                "BESTBLOCKTTIME": "Muda wa mwisho wa kuzuia",
-                "ALTITUDEVERSION": "Toleo la Urefu"
+                "BESTBLOCKTTIME": "Muda wa mwisho wa kuzuia"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Karibu kwenye koni ya Metrix Core RPC. Andika usaidizi kwa muhtasari wa amri zinazopatikana.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Chagua Lugha"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Miamala",
-            "COPYBLOCKHASH": "Hash ya Kizuizi cha Nakili",
-            "COPYTXID": "Nakili Kitambulisho cha Muamala",
-            "COPYACCOUNT": "Nakili Jina la Akaunti",
-            "COPYADDRESS": "Nakili Anwani",
-            "COPYAMOUNT": "Nakala Kiasi",
-            "COPTBLOCKINDEX": "Kielezo cha Nakala ya Kizuizi",
-            "EXPLORER": "Fungua katika Kivinjari cha Block"
+        "CURRENCY": {
+            "TITLE": "Chagua Sarafu ya Onyesho"
         },
         "EXPLORER": {
             "TITLE": "Kichunguzi cha Zuia",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Mtandao",
             "WINDOTAB": "Dirisha",
+            "BACKUPTAB": "Hifadhi nakala rudufu",
+            "EXPLORERTAB": "Kichunguzi",
+            "DEVELOPERTAB": "Msanidi programu",
             "NETWORK": {
                 "PROXY": "Unganisha kupitia proksi ya SOCKS5",
                 "PROXYIP": "IP ya Wakala",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Punguza unapofunga",
                 "BEHAVIOURTITLE": "Trei ya Mfumo na Tabia ya Dirisha"
             },
-            "BACKUPTAB": "Hifadhi nakala rudufu",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Hifadhi Nakala Kiotomatiki",
                 "ENABLED": "Hifadhi nakala rudufu ya wallet.dat kiotomatiki kwenye ratiba",
                 "ENABLEDINFO": "Huunda nakala rudufu mpya ya faili yako ya pochi kwa ratiba, kwa hivyo nakala ya hivi karibuni inapatikana kila wakati ikiwa kuna kitu kitaenda vibaya.",
+                "INTERVALLABEL": "Hifadhi nakala rudufu kila (siku)",
                 "LASTBACKUP": "Nakala rudufu ya mwisho:",
                 "NEVERBACKEDUP": "Hakuna nakala rudufu ya kiotomatiki iliyofanywa bado.",
                 "BACKUPNOWBUTTON": "Rudi Nyuma Sasa",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Rudisha hadi Chaguo-Msingi",
                 "PRUNETITLE": "Historia ya Hifadhi Nakala",
                 "PRUNEINFO": "Hifadhi rudufu za kiotomatiki za zamani hufutwa ili folda hii isikue milele - ni zile za hivi karibuni zilizo hapa chini pekee ndizo zinazohifadhiwa.",
-                "KEEPCOUNTLABEL": "Weka mwisho",
-                "INTERVALLABEL": "Hifadhi nakala rudufu kila (siku)"
+                "KEEPCOUNTLABEL": "Weka mwisho"
             },
-            "EXPLORERTAB": "Kichunguzi",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Kichunguzi cha Zuia",
                 "BLOCKEXPLORERINFO": "Tovuti ilifunguliwa wakati wa kutazama muamala kwenye kichunguzi cha block (k.m. bofya kulia kwenye muamala > Tazama kwenye Kichunguzi).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mtandao Mkuu",
                 "TESTNET": "Mtandao wa Majaribio",
                 "REGTEST": "Jaribio la Usajili"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Hali ya Msanidi Programu",
+                "DEVMODEINFO": "Imezimwa kwa chaguo-msingi na imekusudiwa wasanidi programu pekee. Kuwezesha hii kunaonyesha chaguo za kubatilisha muunganisho wa RPC - watumiaji wa kawaida wanapaswa kuacha hii.",
+                "DEVMODELABEL": "Washa Hali ya Msanidi Programu",
+                "WARNING": "Mipangilio hii ni kwa madhumuni ya usanidi pekee. Kuibadilisha kunaweza kuzuia pochi kuunganishwa na daemon kabisa - tumia hii tu ikiwa unajua unachofanya.",
+                "RPCHOSTTITLE": "Muunganisho wa RPC",
+                "RPCHOSTINFO": "Kwa chaguo-msingi Altitude huunganisha kwenye daemon inayojisimamia yenyewe, kwenye mashine hii (127.0.0.1). Kubadilisha hizi huiruhusu kuungana na daemon tofauti badala yake - kwa mfano mfano wa jaribio la mbali la reg, bila kuhitaji kuendesha moja ndani. Ikiwa muunganisho utafanikiwa, Altitude haitapakua au kuanzisha daemon yake ya ndani. rpcallowip ya daemon lengwa lazima iruhusu muunganisho huu, na nenosiri la rpcuser/rpc lililo hapa chini lazima lilingane na usanidi wake. Huanza kutumika mara moja, hakuna haja ya kuanzisha upya.",
+                "RPCHOSTLABEL": "Mwenyeji wa RPC",
+                "RPCPORTLABEL": "Lango la RPC",
+                "RPCUSERLABEL": "Jina la mtumiaji la RPC",
+                "RPCPASSWORDLABEL": "Nenosiri la RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Muhtasari",
-            "TRANSACTIONSTAB": "Miamala",
-            "ADDRESSTABS": "Anwani"
-        },
-        "CURRENCY": {
-            "TITLE": "Chagua Sarafu ya Onyesho"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashibodi",
             "SEND": "Tuma",
+            "CREATECONTRACT": "Unda Mkataba",
             "RECEIVE": "Pokea",
             "TRANSACTIONS": "Miamala",
             "STAKING": "Kuweka",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Kichunguzi cha Zuia",
             "SYNC": {
                 "CONNECTING": "Kuunganisha",
                 "NOBLOCKS": "Kusubiri vitalu",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Pochi haijawekwa kwenye dau kwa sasa",
                 "MASTERNODEON": "Masternode inaendeshwa kwa sasa",
                 "MASTERNODEOFF": "Masternode haifanyi kazi kwa sasa"
-            },
-            "EXPLORER": "Kichunguzi cha Zuia"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Ingiza anwani ya tovuti ya wavuti 3",
+            "GOBUTTON": "Nenda",
+            "QUICKLAUNCH": "Uzinduzi wa Haraka",
+            "DEVTOOLS": "Fungua Zana za Wasanidi Programu",
+            "ADDLINK": "Ongeza Kiungo",
+            "LINKNAMEPLACEHOLDER": "Jina",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Hifadhi",
+            "CANCEL": "Ghairi",
+            "REMOVE": "Ondoa",
+            "REMOVECONFIRM": "Ondoa kiungo hiki cha haraka?",
+            "LINKEXISTS": "Kiungo hicho tayari kiko kwenye orodha yako ya uzinduzi wa haraka",
+            "LINKINVALID": "Weka anwani sahihi ya tovuti",
+            "LINKNETWORKLABEL": "Mtandao",
+            "LOADFAILED": "Imeshindwa kupakia tovuti",
+            "SECURESITE": "Muunganisho ni salama - cheti halali cha SSL",
+            "INSECURESITE": "Muunganisho si salama",
+            "INVALIDCERTSITE": "Muunganisho si wa faragha - cheti cha SSL si sahihi au hakiaminiki"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ingiza Nenosiri la Pochi Yako",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Sasisho linapatikana kwa Metrix Core. Ungependa kusakinisha sasa?",
             "WALLETUPDATETITLE": "Sasisho la Urefu Linapatikana",
             "WALLETUPDATEINFO": "Sasisho linapatikana kwa Altitude. Ungependa kuipakua sasa?",
+            "WALLETUPDATEREADYTITLE": "Tayari Kusasisha Urefu",
+            "WALLETUPDATEREADYINFO": "Sasisho limepakuliwa. Anzisha upya Muinuko sasa ili usakinishe?",
+            "WALLETUPDATERESTARTBUTTON": "Anzisha upya na Usakinishe",
+            "WALLETUPDATELATERBUTTON": "Baadaye",
             "CLIENTUPDATEBUTTON": "Sasisho",
             "CLIENTUPDATECANCELBUTTON": "Usisasishe",
             "CLIENTUPDATESKIPBUTTON": "Ruka Sasisho hili",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Chelezo zozote za awali ulizotengeneza kutoka kwa faili yako ya pochi zinapaswa kubadilishwa na faili mpya ya pochi iliyosimbwa kwa njia fiche. Kwa sababu za kiusalama, chelezo za awali za faili ya pochi ambayo haijasimbwa kwa njia fiche hazitakuwa na maana mara tu unapoanza kutumia pochi mpya iliyosimbwa kwa njia fiche.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Imesimama Bila Kutarajia",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Kulikuwa na tatizo na Metrix Core ambalo limesababisha kuisha kwake. Inashauriwa kuangalia faili yako ya debug.log kwa matatizo.",
+            "CLIENTUNKNOWNERRORTITLE": "Hitilafu ya Mawasiliano ya Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Kulikuwa na tatizo la kuwasiliana na Metrix Core. Inashauriwa kuangalia faili yako ya debug.log kwa matatizo.",
+            "BOOTSTRAPFAILEDTITLE": "Kizio cha Metrix Core Kimeshindwa",
+            "BOOTSTRAPFAILEDINFO": "Kulikuwa na tatizo la kufunga Metrix Core. Inashauriwa kuangalia faili yako ya kumbukumbu ya Muinuko kwa matatizo.",
+            "BOOTSTRAPOFFERTITLE": "Pochi Imepitwa na Wakati Kwa Kiasi Kikubwa",
+            "BOOTSTRAPOFFERINFO": "Kifaa cha hivi karibuni cha bootstrap kinapatikana ambacho kinaweza kusasishwa haraka na Metrix Core. Kuendelea na usawazishaji wa kawaida badala yake kunaweza kuchukua siku kadhaa kukamilika, kwani pochi yako inahitaji kupakua na kuthibitisha kila kizuizi ambacho imekosa.",
+            "BOOTSTRAPOFFERBUTTON": "Pakua Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Endelea Usawazishaji wa Kawaida",
+            "BOOTSTRAPSPACEINFO": "Hakuna nafasi ya kutosha ya diski kupakua na kutoa mkanda wa kuanza. Inahitajika: {inahitajika}, Inapatikana: {bure}. Ongeza nafasi na ujaribu tena.",
+            "STARTUPFAILEDTITLE": "Kuanzisha kwa Metrix Core Kumeshindwa",
+            "STARTUPFAILEDINFO": "Kulikuwa na hitilafu katika kuanzisha Metrix Core. Inashauriwa kuangalia faili yako ya kumbukumbu ya Muinuko kwa matatizo.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zana za Urejeshaji",
             "CLIENTINVALIDCONFIGTITLE": "Usanidi batili wa metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf yako ina usanidi batili wa masternode ambao utasababisha Metrix Core kutoka mara moja. Tafadhali angalia faili hii.",
             "ADDREMOTEMNTITLE": "Ongeza Masternode ya Mbali",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Ufunguo Binafsi wa Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Kielezo cha Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Kizio cha Metrix Core Kimeshindwa",
-            "BOOTSTRAPFAILEDINFO": "Kulikuwa na tatizo la kufunga Metrix Core. Inashauriwa kuangalia faili yako ya kumbukumbu ya Muinuko kwa matatizo.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zana za Urejeshaji",
-            "STARTUPFAILEDTITLE": "Kuanzisha kwa Metrix Core Kumeshindwa",
-            "STARTUPFAILEDINFO": "Kulikuwa na hitilafu katika kuanzisha Metrix Core. Inashauriwa kuangalia faili yako ya kumbukumbu ya Muinuko kwa matatizo.",
-            "CLIENTUNKNOWNERRORTITLE": "Hitilafu ya Mawasiliano ya Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Kulikuwa na tatizo la kuwasiliana na Metrix Core. Inashauriwa kuangalia faili yako ya debug.log kwa matatizo.",
             "UNENROLLGOVERNORTITLE": "Thibitisha Kuondolewa kwa Usajili wa Gavana",
             "UNENROLLGOVERNORCONTENT": "Una uhakika unataka kumwondoa Gavana wako kwenye uandikishaji? Hutaweza tena kupiga kura kuhusu utawala wa mnyororo.",
-            "WALLETUPDATEREADYTITLE": "Tayari Kusasisha Urefu",
-            "WALLETUPDATEREADYINFO": "Sasisho limepakuliwa. Anzisha upya Muinuko sasa ili usakinishe?",
-            "WALLETUPDATERESTARTBUTTON": "Anzisha upya na Usakinishe",
-            "WALLETUPDATELATERBUTTON": "Baadaye",
             "DAPPCONNECTTITLE": "Unganisha kwenye Tovuti",
             "DAPPCONNECTINFO": "Tovuti hii inataka kuunganishwa na pochi yako na kuona anwani na salio lako.",
             "DAPPCONNECTBUTTON": "Unganisha",
+            "DAPPCONNECTADDRESSLABEL": "Anwani",
+            "DAPPAPPROVEBUTTON": "Idhinisha",
             "DAPPREJECTBUTTON": "Kataa",
             "DAPPSENDTITLE": "Ombi la Muamala wa Mkataba",
             "DAPPSENDINFO": "Tovuti hii inaomba kutuma muamala wa mkataba kutoka kwa pochi yako.",
-            "DAPPSIGNTITLE": "Ombi la Ujumbe wa Saini",
-            "DAPPSIGNINFO": "Tovuti hii inaomba kusaini ujumbe kwa anwani yako ya pochi.",
-            "DAPPNOTREADY": "Haiwezi kuunganishwa kwenye tovuti bado - Metrix Core bado inaanza.",
-            "DAPPNOWALLET": "Haiwezi kuunganishwa kwenye tovuti - hakuna anwani ya pochi inayopatikana.",
-            "DAPPAPPROVEBUTTON": "Idhinisha",
-            "DAPPCONNECTADDRESSLABEL": "Anwani",
             "DAPPSENDSITELABEL": "Tovuti",
             "DAPPSENDCONTRACTLABEL": "Anwani ya Mkataba",
             "DAPPSENDAMOUNTLABEL": "Kiasi",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Ada ya Juu Zaidi ya Mtandao",
             "DAPPSENDMAXTOTALLABEL": "Jumla ya Juu",
             "DAPPSENDDATALABEL": "Data ya Mkataba",
+            "DAPPSIGNTITLE": "Ombi la Ujumbe wa Saini",
+            "DAPPSIGNINFO": "Tovuti hii inaomba kusaini ujumbe kwa anwani yako ya pochi.",
             "DAPPSIGNMESSAGELABEL": "Ujumbe",
-            "BOOTSTRAPOFFERTITLE": "Pochi Imepitwa na Wakati Kwa Kiasi Kikubwa",
-            "BOOTSTRAPOFFERINFO": "Kifaa cha hivi karibuni cha bootstrap kinapatikana ambacho kinaweza kusasishwa haraka na Metrix Core. Kuendelea na usawazishaji wa kawaida badala yake kunaweza kuchukua siku kadhaa kukamilika, kwani pochi yako inahitaji kupakua na kuthibitisha kila kizuizi ambacho imekosa.",
-            "BOOTSTRAPOFFERBUTTON": "Pakua Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Endelea Usawazishaji wa Kawaida",
-            "BOOTSTRAPSPACEINFO": "Hakuna nafasi ya kutosha ya diski kupakua na kutoa mkanda wa kuanza. Inahitajika: {inahitajika}, Inapatikana: {bure}. Ongeza nafasi na ujaribu tena."
+            "DAPPNOTREADY": "Haiwezi kuunganishwa kwenye tovuti bado - Metrix Core bado inaanza.",
+            "DAPPNOWALLET": "Haiwezi kuunganishwa kwenye tovuti - hakuna anwani ya pochi inayopatikana."
         },
         "ADDRESSBOOK": {
             "TITLE": "Kitabu cha Anwani",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Mtandao wa sasa"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Ingiza anwani ya tovuti ya wavuti 3",
-            "GOBUTTON": "Nenda",
-            "QUICKLAUNCH": "Uzinduzi wa Haraka",
-            "DEVTOOLS": "Fungua Zana za Wasanidi Programu",
-            "ADDLINK": "Ongeza Kiungo",
-            "LINKNAMEPLACEHOLDER": "Jina",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Hifadhi",
-            "CANCEL": "Ghairi",
-            "REMOVE": "Ondoa",
-            "REMOVECONFIRM": "Ondoa kiungo hiki cha haraka?",
-            "LINKEXISTS": "Kiungo hicho tayari kiko kwenye orodha yako ya uzinduzi wa haraka",
-            "LINKINVALID": "Weka anwani sahihi ya tovuti",
-            "LINKNETWORKLABEL": "Mtandao",
-            "LOADFAILED": "Imeshindwa kupakia tovuti",
-            "SECURESITE": "Muunganisho ni salama - cheti halali cha SSL",
-            "INSECURESITE": "Muunganisho si salama",
-            "INVALIDCERTSITE": "Muunganisho si wa faragha - cheti cha SSL si sahihi au hakiaminiki"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Pochi ya Hifadhi Nakala...",
             "SIGNMESSAGE": "Saini Ujumbe...",
             "VERIFYMESSAGE": "Thibitisha Ujumbe...",
-            "LOCALE": "Lugha...",
-            "RESTARTCORE": "Anzisha upya Metrix Core",
-            "EXIT": "Utgång",
             "OPTIONS": "Chaguzi...",
+            "LOCALE": "Lugha...",
             "CURRENCIES": "Sarafu ya Onyesho...",
-            "ALTITUDEREFRESH": "Onyesha Data ya Urefu"
+            "RESTARTCORE": "Anzisha upya Metrix Core",
+            "ALTITUDEREFRESH": "Onyesha Data ya Urefu",
+            "EXIT": "Utgång"
         },
         "ENCRYPT": {
             "TITLE": "Simba",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Jumla ya Salio",
+        "SPENDABLEBALANCE": "Salio Linaloweza Kutumika",
+        "PENDINGBALANCE": "Salio Linalosubiri Kusalia",
         "CANCELBUTTON": "Ghairi",
         "DONEBUTTON": "Imekamilika",
         "OKBUTTON": "Sawa",
+        "ACCEPTBUTTON": "Kubali",
         "CLEARALLBUTTON": "Futa Zote",
         "ENTERACCOUNTLABEL": "Ingiza lebo ya anwani hii",
         "ENTERADDRESSLABEL": "Ingiza anwani ya Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Panga Kulingana na",
         "SEARCH": "Tafuta",
         "FEE": "Ada",
-        "ACCEPTBUTTON": "Kubali",
         "CONFIRMED": "Imethibitishwa",
         "UNCONFIRMED": "Haijathibitishwa",
-        "PENDINGBALANCE": "Salio Linalosubiri Kusalia",
-        "SPENDABLEBALANCE": "Salio Linaloweza Kutumika",
         "SAVEBUTTON": "Hifadhi"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Inaanzisha upya Metrix Core...",
         "BOOTSTRAPPING": "Inapakua bootstrap...",
         "BOOTSTRAPEXTRACTING": "Inatoa mkanda wa kuanzia...",
-        "TIMEREMAINING": "iliyobaki:"
+        "TIMEREMAINING": "iliyobaki:",
+        "DEVRPCOVERRIDEACTIVE": "Ubatilishaji wa muunganisho wa RPC wa msanidi programu umewekwa (Chaguo > Msanidi Programu) na haujibu. Uondoe ili uunganishe tena kwenye daemon ya ndani kawaida.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Futa Ubatilishaji wa RPC na Unganisha Upya"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaunti mpya imeundwa kwa mafanikio",
         "ADDRESSCOPIEDCLIPBOARD": "Anwani imenakiliwa kwenye ubao wa kunakili",
+        "COPIEDCLIPBOARD": "Imenakiliwa kwenye ubao wa kunakili",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Miamala imenakiliwa kwenye ubao wa kunakili",
         "EMPTYFIELDS": "Tafadhali jaza sehemu zote",
         "NOUPDATE": "Hakuna sasisho linalopatikana",
         "WALLETBACKEDUP": "Nakala rudufu ya pochi imefanikiwa",
+        "WALLETBACKUPFAILED": "Kuhifadhi nakala rudufu kiotomatiki kwenye pochi kumeshindwa - angalia eneo lako la kuhifadhi nakala rudufu na nafasi ya diski inayopatikana",
         "PASSPHRASEMISMATCH": "Manenosiri uliyoingiza hayalingani",
         "CHECKINGUPDATE": "Inatafuta sasisho...",
         "CHECKINGUPDATEFAILED": "Haiwezi kuangalia sasisho. Angalia mtandao wako.",
+        "WALLETUPDATEDOWNLOADING": "Inapakua sasisho...",
         "SENDINGEXCEEDSBALANCE": "Kiasi unachotuma kinazidi salio ulilochagua",
         "MISSINGCHANGEADDRESS": "Lazima ubainishe anwani ya mabadiliko",
         "MISSINGDESTINATIONADDRESS": "Lazima ubainishe anwani ya unakoenda",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Inasimba pochi kwa njia fiche...",
         "CHANGINGPASSPHARASE": "Kubadilisha kaulisiri...",
         "STARTINGMASTERNODE": "Inaanzisha nodi kuu...",
+        "STOPPINGMASTERNODE": "Inasimamisha masternode...",
         "SENDINGTRANSACTION": "Inatuma muamala...",
         "SIGNINGMESSAGE": "Inasaini ujumbe...",
         "SIGNEDMESSAGE": "Ujumbe umesainiwa",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Inafungua pochi...",
         "TRANSACTIONMISMATCH": "Hitilafu ya muamala. Tafadhali jaribu tena.",
         "MINIMUMCONFIRMATIONS": "Pembejeo zote zinahitaji angalau uthibitisho 1 kabla ya kutumia.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Miamala imenakiliwa kwenye ubao wa kunakili",
-        "STOPPINGMASTERNODE": "Inasimamisha masternode...",
         "FAILEDTOWRITECONFIG": "Kulikuwa na tatizo la kuandika kwenye faili yako ya metrix.conf. Hakikisha faili ipo na kwamba Altitude ina ruhusa za kuandika.",
         "NOPUBLICUP": "Hakuna anwani ya IP ya umma iliyopatikana. Angalia muunganisho wako wa intaneti na uanze tena Muinuko.",
         "CONFIGURINGLOCALMN": "Inasanidi Masternode ya ndani...",
         "REPORTINGISSUE": "Kupata taarifa za uchunguzi... Taarifa hii itanakiliwa kwenye ubao wako wa kunakili.",
-        "WALLETUPDATEDOWNLOADING": "Inapakua sasisho...",
-        "WALLETBACKUPFAILED": "Kuhifadhi nakala rudufu kiotomatiki kwenye pochi kumeshindwa - angalia eneo lako la kuhifadhi nakala rudufu na nafasi ya diski inayopatikana",
         "EXPLORERURLSAVED": "URL ya Explorer imehifadhiwa",
         "EXPLORERURLRESET": "URL ya Explorer imerejeshwa kuwa chaguo-msingi",
         "EXPLORERURLINVALID": "Hiyo si URL halali ya http(s)",
-        "EXPLORERURLUNREACHABLE": "Haikuweza kufikia URL hiyo - iangalie na ujaribu tena"
+        "EXPLORERURLUNREACHABLE": "Haikuweza kufikia URL hiyo - iangalie na ujaribu tena",
+        "DEVRPCHOSTSAVED": "Seva ya RPC imehifadhiwa",
+        "DEVRPCHOSTRESET": "Seva mwenyeji ya RPC imerejeshwa kuwa chaguo-msingi (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Sarafu Zilizopokelewa",
+        "NEWTRANSACTION_TITLE_STAKE": "Dau Lililopokelewa",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Umepokea Zawadi ya Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Sekunde chache",
@@ -533,11 +587,6 @@
         "MONTHS": "miezi",
         "AYEAR": "Mwaka",
         "YEARS": "miaka"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Sarafu Zilizopokelewa",
-        "NEWTRANSACTION_TITLE_STAKE": "Dau Lililopokelewa",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Umepokea Zawadi ya Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Magavana wana jukumu la kupiga kura kuhusu bajeti ya kila mwezi na mabadiliko ya blockchain. Unaweza kuwa Gavana kwa kufunga dhamana sahihi katika mkataba wa Utawala.",
                 "COLLATERAL": "Dhamana inayohitajika",
                 "ENROLL": "Jiandikishe",
+                "SELECTAGOVERNOR": "Chagua anwani ya gavana inayostahiki",
+                "GOVERNORNOTSELECTED": "Hakuna anwani inayostahiki iliyochaguliwa",
                 "CONFIRMENROLL": "Unakaribia kujiandikisha kama Gavana. Hii itatuma muamala wenye dhamana inayohitajika kwa mkataba wa utawala. Unaweza kujiondoa wakati wowote.",
                 "ISGOVERNORTITLE": "Wewe ni Gavana anayefanya kazi!",
                 "ISGOVERNORDETAIL1": "Magavana wana jukumu la kupiga kura kuhusu bajeti ya kila mwezi na mabadiliko ya blockchain.",
                 "ISGOVERNORDETAIL2": "Ili kubaki Gavana utahitaji kushiriki angalau kura 1 kila baada ya siku 30.",
                 "ISGOVERNORDETAIL3": "Ikiwa hakuna cha kupiga kura basi unaweza kuendelea na uandikishaji wako mwenyewe kwa kutuma ping inayotumika.",
+                "MYGOVERNORADDRESS": "Hotuba Yangu ya Gavana",
                 "UNENROLL": "Ondoa usajili",
                 "PING": "Tuma Ping Inayotumika",
                 "LASTPINGTITLE": "Ping ya mwisho",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "siku",
                 "GOVERNORVOTEMATURITYHOURS": "saa",
                 "GOVERNORVOTEMATURITYSUFFIX": "hadi kukomaa",
-                "MYGOVERNORADDRESS": "Hotuba Yangu ya Gavana",
-                "SELECTAGOVERNOR": "Chagua anwani ya gavana inayostahiki",
-                "GOVERNORNOTSELECTED": "Hakuna anwani inayostahiki iliyochaguliwa",
                 "NOTFULLYSYNCEDTITLE": "Hali ya gavana haipatikani",
                 "NOTFULLYSYNCEDDETAIL": "Hali yako ya usajili wa Gavana itaonekana wakati blockchain yako itakaposawazishwa kikamilifu.",
                 "DGPMIGRATIONTITLE": "Uhamiaji wa DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Pendekezo lako limeundwa kwa mafanikio",
             "ENROLLINGGOVERNOR": "Kujiandikisha kama Gavana...",
             "ENROLLEDGOVERNOR": "Usajili wako utakamilika mara tu muamala wako utakapothibitishwa",
-            "VOTINGONPROPOSAL": "Kutuma kura ya pendekezo",
-            "VOTEDONPROPOSAL": "Kura yako itahesabiwa mara tu muamala utakapothibitishwa.",
             "PINGINGGOVERNOR": "Inatuma ping...",
             "PINGEDGOVERNOR": "Ping imetumwa kwa mafanikio. Gavana wako atasasishwa mara tu muamala utakapothibitishwa.",
+            "VOTINGONPROPOSAL": "Kutuma kura ya pendekezo",
+            "VOTEDONPROPOSAL": "Kura yako itahesabiwa mara tu muamala utakapothibitishwa.",
             "UNENROLLINGGOVERNOR": "Kumfukuza Gavana...",
             "UNENROLLEDGOVERNOR": "Muamala umetumwa. Gavana wako ataondolewa kwenye usajili mara tu muamala utakapothibitishwa.",
             "GOVERNORNOTMATURE": "Gavana wako bado hajakomaa vya kutosha kutekeleza kitendo hiki"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Nunua Metrix",
+                "SEARCH": "Historia"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Unatuma",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Historia ya Muamala",
                 "SEARCHBUTTON": "TAFUTA",
+                "SEARCHPLACEHOLDER": "Ingiza anwani ya MRX au BTC",
                 "TRANSACTIONDATE": "Tarehe",
                 "TRANSACTIONTYPE": "Aina ya TX",
                 "TRANSACTIONAMOUNT": "Kiasi",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Imethibitishwa",
                 "TRANSACTIONNOTCONFIRMED": "Haijathibitishwa",
                 "TRANSACTIONREFUNDED": "Imerejeshwa - Chini ya kiwango cha chini",
-                "AVGSWAPPRICE": "Bei ya Wastani ya Kubadilishana",
-                "SEARCHPLACEHOLDER": "Ingiza anwani ya MRX au BTC"
+                "AVGSWAPPRICE": "Bei ya Wastani ya Kubadilishana"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Inazalisha Anwani ya Kubadilisha...",
             "ALREADYHAVEADDRESS": "Tayari una anwani ya BTC inayohusiana na anwani hii ya Metrix",
             "NOADDRESS": "Hukuingiza anwani ya Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Nunua Metrix",
-                "SEARCH": "Historia"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Onyesha",
                 "EMPTYTITLE": "Hakuna Tokeni Zilizopatikana Bado",
                 "EMPTYDETAIL": "Urefu huangalia kiotomatiki kichunguzi cha block kwa tokeni za MRC20 na MRC721 zilizotumwa kwenye anwani zako, kisha huthibitisha kila kitu kiko moja kwa moja dhidi ya nodi yako mwenyewe. Unaweza pia kuongeza tokeni mwenyewe ikiwa unajua anwani yake ya mkataba.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ukaguzi wa tokeni kiotomatiki umezimwa, kwa hivyo anwani zako hazikaguliwa kwa tokeni. Ziwashe tena hapo juu, au ongeza tokeni mwenyewe ikiwa unajua anwani yake ya mkataba.",
                 "HIDDENTITLE": "Tokeni Zilizofichwa",
                 "CONTEXTMENUHIDE": "Ficha Tokeni",
                 "ITEMSSUFFIX": "bidhaa(vipengee)",
-                "NONENUMERABLETOOLTIP": "Mkusanyiko huu hauruhusu kuorodhesha vitu vya kibinafsi - kuonyesha ni vingapi unavyoshikilia badala yake."
+                "NONENUMERABLETOOLTIP": "Mkusanyiko huu hauruhusu kuorodhesha vitu vya kibinafsi - kuonyesha ni vingapi unavyoshikilia badala yake.",
+                "CHECKINGENABLED": "Kuangalia",
+                "CHECKINGDISABLED": "Kuondoa Malipo",
+                "CHECKINGENABLEDTOOLTIP": "Ukaguzi wa tokeni umewashwa - Urefu huangalia anwani zako mara kwa mara kwa tokeni na huonyesha upya salio. Bofya ili kuzima.",
+                "CHECKINGDISABLEDTOOLTIP": "Ukaguzi wa tokeni umezimwa - bofya ili kuwasha tena.",
+                "CHECKINGDISABLEDNOTICE": "Ukaguzi wa tokeni kiotomatiki umezimwa. Anwani zako hazichanganuliwi kwa tokeni na salio halitasasishwa. Bado unaweza kuongeza tokeni mwenyewe."
             },
             "ADDTOKEN": {
                 "TITLE": "Ongeza Tokeni",

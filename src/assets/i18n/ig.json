@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Mebe akaụntụ",
             "HIDEEMPTYACCOUNTS": "Zoo Akaụntụ Ndị Na-enweghị Aha"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Nchịkọta",
+            "TRANSACTIONSTAB": "Azụmahịa",
+            "ADDRESSTABS": "Adreesị"
+        },
         "SEND": {
             "ADDRECIPIENT": "Tinye onye nnata",
             "SEND": "Zipu",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Ụbọchị",
             "TABLECOLUMNS_CONFIRMS": "Nkwenye",
             "ALL_SELECTUNSELECT": "Gbanwee Ha Niile",
+            "TREEMODE": "Ụdị Osisi",
+            "LISTMODE": "Ụdị Ndepụta",
             "SENDAVAILABLE": "Jiri nguzozi dịnụ",
             "INPUTLOCKED": "Akpọchiri ntinye. Ị ga-achọ imepe ntinye a iji mefuo ya.",
             "CONTEXTMENULOCKINPUT": "Mkpọchi ntinye",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Ụgwọ Mgbe Ụgwọ Gasịrị",
             "QUANTITY": "Ọnụọgụ",
             "BYTES": "Bytes",
-            "TREEMODE": "Ụdị Osisi",
-            "LISTMODE": "Ụdị Ndepụta",
             "ALERTFEECHANGETITLE": "Mgbanwe Ụgwọ",
             "ALERTFEECHANGECONTENT": "Ụgwọ azụmahịa ahụ dị elu karịa ka a tụrụ anya ya. Biko kwado ụgwọ ọhụrụ:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Mepụta Nkwekọrịta",
+            "INFO": "Tinye nkwekọrịta smart na netwọk ahụ site na izipu koodu byte ya achịkọtara. Nke a bụ ọrụ isi agbụ - lelee koodu byte na ntọala gas gị ugboro abụọ tupu ebuga ya, enweghị ike iwepụ ntinye ahụ.",
+            "FROM": "Site na",
+            "BYTECODE": "Koodu byte",
+            "BYTECODEPLACEHOLDER": "Mado koodu bytecod nkwekọrịta chịkọtara (hex)",
+            "INVALIDBYTECODE": "Koodu byte ga-abụrịrị eriri hex dị irè (0-9, a-f) nwere ọnụọgụ mkpụrụedemede dị larịị",
+            "GASLIMIT": "Oke Gas",
+            "GASLIMITRANGE": "Oke",
+            "GASPRICE": "Ọnụego Gas (MRX kwa otu gas)",
+            "GASPRICEMIN": "Nke kacha nta",
+            "ESTIMATEDMAXCOST": "Atụmatụ ọnụ ahịa kachasị",
+            "DEPLOYBUTTON": "Tinye Nkwekọrịta",
+            "INCOMPLETEFORM": "Biko họrọ adreesị onye zitere ya, tinye koodu byte dị irè, ma tọọ oke/ọnụego gas dị irè",
+            "HIGHGASPRICETITLE": "Ọnụ ego Gas dị elu",
+            "HIGHGASPRICEINFO": "Ọnụ ego mmanụ ụgbọala ị setịpụrụ dị oke elu. Ntinye a nwere ike ịdị ọnụ ruo:",
+            "DEPLOYING": "Nkwekọrịta itinye...",
+            "DEPLOYED": "Enyere ntinye nkwekọrịta",
+            "RESULTTITLE": "Nsonaazụ nke nnyefe",
+            "STATUS": "Ọnọdụ",
+            "STATUSPENDING": "Nkwenye na-echere...",
+            "STATUSCONFIRMED": "E tinyere ya nke ọma",
+            "STATUSFAILED": "Ntinye ọrụ agaghị nke ọma",
+            "TXID": "NJ Azụmahịa",
+            "SENDER": "Onye zitere",
+            "CONTRACTADDRESS": "Adreesị Nkwekọrịta",
+            "GASUSED": "Gas ejiri",
+            "DONEBUTTON": "Emechaala",
+            "DEPLOYANOTHERBUTTON": "Mee ka Ọzọ Dịkwuo"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Azụmahịa",
+            "COPYBLOCKHASH": "Detuo Block Hash",
+            "COPYTXID": "Detuo NJ Azụmahịa",
+            "COPYACCOUNT": "Detuo Aha Akaụntụ",
+            "COPYADDRESS": "Detuo adreesị",
+            "COPYAMOUNT": "Detuo ego ole",
+            "COPTBLOCKINDEX": "Detuo Ndekọ Ngọngọ",
+            "EXPLORER": "Mepee na Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Mepee Maka Ịkwado",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adreesị",
             "ENABLED": "Agbanyere ya",
-            "STARTBUTTON": "Malite Mpaghara",
-            "STARTALIASBUTTON": "Malite Aha otutu",
-            "STARTALLBUTTON": "Malite Ihe Niile",
             "NOMASTERNODES": "Ị nweghị masternodes ọ bụla",
             "NOMNOUTPUTS": "Achọtaghị ihe Masternode pụtara. Iji mee Masternode dị n'ógbè gị, ziga kpọmkwem mkpụrụ ego 2, 5, 25, 50 ma ọ bụ 100 nde na adreesị Masternode gị wee chere maka nkwenye 15.",
+            "STARTBUTTON": "Malite Mpaghara",
             "STOPBUTTON": "Kwụsị Mpaghara",
+            "STARTALIASBUTTON": "Malite Aha otutu",
             "STOPALIASBUTTON": "Kwụsị Aha otutu",
+            "STARTALLBUTTON": "Malite Ihe Niile",
             "ADDREMOTE": "Tinye Remote Masternode",
             "REMOVEMN": "Wepụ Masternode",
             "ADDLOCAL": "Tọọ ntọala mpaghara",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Izugbe",
                 "COREVERSION": "Ụdị Isi",
+                "ALTITUDEVERSION": "Ụdị Elu",
                 "PROTOCOLVERSION": "Ụdị Usoro Iwu",
                 "WALLETVERSION": "Ụdị Wallet.dat",
                 "NETWORKTITLE": "Netwọk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Ọnụọgụ nke Masternodes",
                 "BLOCKCHAINTITLE": "Yinye ngọngọ",
                 "NUMBERBLOCKS": "Ọnụọgụ nke blọk ugbu a",
-                "BESTBLOCKTTIME": "Oge mmechi ikpeazụ",
-                "ALTITUDEVERSION": "Ụdị Elu"
+                "BESTBLOCKTTIME": "Oge mmechi ikpeazụ"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Nnọọ na Metrix Core RPC console. Dee enyemaka maka nkọwa nke iwu ndị dị.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Họrọ Asụsụ"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Azụmahịa",
-            "COPYBLOCKHASH": "Detuo Block Hash",
-            "COPYTXID": "Detuo NJ Azụmahịa",
-            "COPYACCOUNT": "Detuo Aha Akaụntụ",
-            "COPYADDRESS": "Detuo adreesị",
-            "COPYAMOUNT": "Detuo ego ole",
-            "COPTBLOCKINDEX": "Detuo Ndekọ Ngọngọ",
-            "EXPLORER": "Mepee na Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Họrọ Ego Ngosipụta"
         },
         "EXPLORER": {
             "TITLE": "Ihe Nchọgharị Ngọngọ",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netwọk",
             "WINDOTAB": "Windo",
+            "BACKUPTAB": "Ndabere",
+            "EXPLORERTAB": "Onye Nchọgharị",
+            "DEVELOPERTAB": "Onye Mmepụta",
             "NETWORK": {
                 "PROXY": "Jikọọ site na SOCKS5 proxy",
                 "PROXYIP": "IP nnọchiteanya",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Belata mgbe emechara",
                 "BEHAVIOURTITLE": "Tray Sistemụ na Omume Windo"
             },
-            "BACKUPTAB": "Ndabere",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Ndabere akpaghị aka",
                 "ENABLED": "Kwado wallet.dat na akpaghị aka na usoro oge",
                 "ENABLEDINFO": "Na-emepụta ndabere ọhụrụ nke faịlụ obere akpa gị na usoro oge, yabụ enwere ike ịnweta otu mbipụta ọhụrụ ma ọ bụrụ na ihe adịghị mma.",
+                "INTERVALLABEL": "Kwado azụ kwa ụbọchị (ụbọchị)",
                 "LASTBACKUP": "Ndabere ikpeazụ:",
                 "NEVERBACKEDUP": "Emebeghị nkwado ndabere akpaka ọ bụla.",
                 "BACKUPNOWBUTTON": "Kwadoghachi Ugbu a",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Tọgharịa na Ndabara",
                 "PRUNETITLE": "Akụkọ Ndabere",
                 "PRUNEINFO": "A na-ehichapụ ndabere akpaka ochie ka folda a ghara itolite ruo mgbe ebighị ebi - naanị ndị kachasị ọhụrụ dị n'okpuru ka a na-echekwa.",
-                "KEEPCOUNTLABEL": "Debe ya n'ikpeazụ",
-                "INTERVALLABEL": "Kwado azụ kwa ụbọchị (ụbọchị)"
+                "KEEPCOUNTLABEL": "Debe ya n'ikpeazụ"
             },
-            "EXPLORERTAB": "Onye Nchọgharị",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Ihe Nchọgharị Ngọngọ",
                 "BLOCKEXPLORERINFO": "Ebe nrụọrụ weebụ ahụ meghere mgbe a na-elele azụmahịa na ihe nchọgharị blọk (dịka ọmụmaatụ pịa aka nri na azụmahịa > Lee na Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Netwọk Nnwale",
                 "REGTEST": "Ndebanye aha"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Ụdị Onye Mmepụta",
+                "DEVMODEINFO": "Gbanyụọ na ndabara ma ezubere maka ndị mmepe naanị. Inye nke a na-egosi nhọrọ iji gbochie njikọ RPC - ndị ọrụ ọkọlọtọ kwesịrị ịhapụ nke a.",
+                "DEVMODELABEL": "Gbanye Ọnọdụ Onye Mmepụta",
+                "WARNING": "Ntọala ndị a bụ maka ebumnuche mmepe naanị. Ịgbanwe ha nwere ike igbochi obere akpa ahụ ijikọ na mmụọ ọjọọ ma ọlị - jiri nke a naanị ma ọ bụrụ na ị maara ihe ị na-eme.",
+                "RPCHOSTTITLE": "Njikọ RPC",
+                "RPCHOSTINFO": "Site na ndabara, Altitude na-ejikọ na daemon ọ na-ejikwa onwe ya, na igwe a (127.0.0.1). Ịkagbu ndị a na-eme ka ọ jikọọ na daemon dị iche kama - dịka ọmụmaatụ ihe atụ regtest dịpụrụ adịpụ, na-enweghị mkpa ịgba ọsọ otu n'ime mpaghara. Ọ bụrụ na njikọ ahụ agaa nke ọma, Altitude agaghị ebudata ma ọ bụ malite daemon nke ya. rpcallowip nke daemon lekwasịrị anya ga-ekwe ka njikọ a kwe omume, rpcuser/rpcpassword dị n'okpuru ga-adakọrịrị nhazi ya. Na-amalite ozugbo, ọ dịghị mkpa ịmalitegharị.",
+                "RPCHOSTLABEL": "Onye ọbịa RPC",
+                "RPCPORTLABEL": "Ọdụ ụgbọ mmiri RPC",
+                "RPCUSERLABEL": "Aha njirimara RPC",
+                "RPCPASSWORDLABEL": "Paswọọdụ RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Nchịkọta",
-            "TRANSACTIONSTAB": "Azụmahịa",
-            "ADDRESSTABS": "Adreesị"
-        },
-        "CURRENCY": {
-            "TITLE": "Họrọ Ego Ngosipụta"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Zipu",
+            "CREATECONTRACT": "Mepụta Nkwekọrịta",
             "RECEIVE": "Nata",
             "TRANSACTIONS": "Azụmahịa",
             "STAKING": "Ịtọ ihe",
             "MASTERNODES": "Isi ihe dị elu",
+            "EXPLORER": "Ihe Nchọgharị Ngọngọ",
             "SYNC": {
                 "CONNECTING": "Na-ejikọ",
                 "NOBLOCKS": "Na-eche blọk",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Akpa ego anaghị etinye ego ugbu a",
                 "MASTERNODEON": "Masternode na-arụ ọrụ ugbu a",
                 "MASTERNODEOFF": "Masternode anaghị arụ ọrụ ugbu a"
-            },
-            "EXPLORER": "Ihe Nchọgharị Ngọngọ"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Tinye adreesị saịtị weebụ3",
+            "GOBUTTON": "Gaa",
+            "QUICKLAUNCH": "Mmalite ngwa ngwa",
+            "DEVTOOLS": "Mepee Ngwaọrụ Mmepụta",
+            "ADDLINK": "Tinye njikọ",
+            "LINKNAMEPLACEHOLDER": "Aha",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Chekwaa",
+            "CANCEL": "Kagbuo",
+            "REMOVE": "Wepụ",
+            "REMOVECONFIRM": "Wepụ njikọ a dị ngwa?",
+            "LINKEXISTS": "Njikọ ahụ dịlarị na ndepụta mmalite ngwa ngwa gị",
+            "LINKINVALID": "Tinye adreesị saịtị dị irè",
+            "LINKNETWORKLABEL": "Netwọk",
+            "LOADFAILED": "Ịbugo saịtị ahụ agaghị arụ ọrụ",
+            "SECURESITE": "Njikọ dị nchebe - asambodo SSL dị irè",
+            "INSECURESITE": "Njikọ adịghị mma",
+            "INVALIDCERTSITE": "Njikọ abụghị nkeonwe - asambodo SSL adịghị mma ma ọ bụ nke a na-atụkwasịghị obi"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Tinye Paswọọdụ Akpa Ego Gị",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Mmelite dị maka Metrix Core. Ị chọrọ itinye ya ugbu a?",
             "WALLETUPDATETITLE": "Mmelite Elu dị",
             "WALLETUPDATEINFO": "Mmelite dị maka Altitude. Ị chọrọ ibudata ya ugbu a?",
+            "WALLETUPDATEREADYTITLE": "Mmelite Elu Dị njikere",
+            "WALLETUPDATEREADYINFO": "Ebudatala mmelite ahụ. Malitegharịa Elu ugbu a iji wụnye ya?",
+            "WALLETUPDATERESTARTBUTTON": "Malitegharịa ma wụnye",
+            "WALLETUPDATELATERBUTTON": "Mgbe e mesịrị",
             "CLIENTUPDATEBUTTON": "Mmelite",
             "CLIENTUPDATECANCELBUTTON": "Emelitela",
             "CLIENTUPDATESKIPBUTTON": "Wụpụ Mmelite a",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "A ga-eji faịlụ akpa ego e mepụtara ọhụrụ dochie faịlụ akpa ego gị na ndabere ọ bụla gara aga. Maka ihe gbasara nchekwa, ndabere mbụ nke faịlụ akpa ego e zoro ezo agaghị aba uru ozugbo ị malitere iji obere akpa ego ọhụrụ ahụ.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Kwụsịrị n'atụghị anya ya",
             "CLIENTCLOSEDUNEXPECTEDINFO": "E nwere nsogbu na Metrix Core nke mere ka ọ kwụsị. A na-atụ aro ka ịlele faịlụ debug.log gị maka nsogbu.",
+            "CLIENTUNKNOWNERRORTITLE": "Njehie Nkwukọrịta Metrix Isi",
+            "CLIENTUNKNOWNERRORINFO": "E nwere nsogbu na mkparịta ụka na Metrix Core. A na-atụ aro ka ị lelee faịlụ debug.log gị maka nsogbu.",
+            "BOOTSTRAPFAILEDTITLE": "Mkpọtụ Metrix Core Adaaghị",
+            "BOOTSTRAPFAILEDINFO": "E nwere nsogbu mgbe ị na-amalite Metrix Core. A na-atụ aro ka ị lelee faịlụ ndekọ Altitude gị maka nsogbu.",
+            "BOOTSTRAPOFFERTITLE": "Akpa ego ochie nke ukwuu",
+            "BOOTSTRAPOFFERINFO": "E nwere eriri mmalite ọhụrụ nke nwere ike ime ka Metrix Core dị ọhụrụ ngwa ngwa. Kama ịga n'ihu na mmekọrịta nkịtị, ọ nwere ike were ọtụtụ ụbọchị iji mezue, ebe ọ bụ na obere akpa gị kwesịrị ibudata ma nyochaa ngọngọ ọ bụla ọ furu efu.",
+            "BOOTSTRAPOFFERBUTTON": "Budata Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Gaa n'ihu na Mmekọrịta Nkịtị",
+            "BOOTSTRAPSPACEINFO": "Ohere diski efu ezughi oke iji budata ma wepụta bootstrap. Achọrọ: {achọrọ}, Dị: {n'efu}. Hapụ ohere wee nwaa ọzọ.",
+            "STARTUPFAILEDTITLE": "Mmalite Metrix Core dara ada",
+            "STARTUPFAILEDINFO": "E nwere nsogbu ịmalite Metrix Core. A na-atụ aro ka ị lelee faịlụ ndekọ Altitude gị maka nsogbu.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngwaọrụ Mgbake",
             "CLIENTINVALIDCONFIGTITLE": "Nhazi metrix.conf na-ezighi ezi",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf gị nwere ntọala masternode na-adịghị mma nke ga-eme ka Metrix Core pụọ ozugbo. Biko lelee faịlụ a.",
             "ADDREMOTEMNTITLE": "Tinye Remote Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Igodo nkeonwe Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Ndepụta Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Mkpọtụ Metrix Core Adaaghị",
-            "BOOTSTRAPFAILEDINFO": "E nwere nsogbu mgbe ị na-amalite Metrix Core. A na-atụ aro ka ị lelee faịlụ ndekọ Altitude gị maka nsogbu.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngwaọrụ Mgbake",
-            "STARTUPFAILEDTITLE": "Mmalite Metrix Core dara ada",
-            "STARTUPFAILEDINFO": "E nwere nsogbu ịmalite Metrix Core. A na-atụ aro ka ị lelee faịlụ ndekọ Altitude gị maka nsogbu.",
-            "CLIENTUNKNOWNERRORTITLE": "Njehie Nkwukọrịta Metrix Isi",
-            "CLIENTUNKNOWNERRORINFO": "E nwere nsogbu na mkparịta ụka na Metrix Core. A na-atụ aro ka ị lelee faịlụ debug.log gị maka nsogbu.",
             "UNENROLLGOVERNORTITLE": "Kwenye na edebanyeghị aha Gọvanọ",
             "UNENROLLGOVERNORCONTENT": "Ị ji n'aka na ịchọrọ iwepụ aha Gọvanọ gị? Ị gaghịzi enwe ike ịtụ vootu maka ọchịchị agbụ.",
-            "WALLETUPDATEREADYTITLE": "Mmelite Elu Dị njikere",
-            "WALLETUPDATEREADYINFO": "Ebudatala mmelite ahụ. Malitegharịa Elu ugbu a iji wụnye ya?",
-            "WALLETUPDATERESTARTBUTTON": "Malitegharịa ma wụnye",
-            "WALLETUPDATELATERBUTTON": "Mgbe e mesịrị",
             "DAPPCONNECTTITLE": "Jikọọ na saịtị",
             "DAPPCONNECTINFO": "Ebe nrụọrụ weebụ a chọrọ ijikọ na obere akpa gị ma lelee adreesị na nguzozi gị.",
             "DAPPCONNECTBUTTON": "Jikọọ",
+            "DAPPCONNECTADDRESSLABEL": "Adreesị",
+            "DAPPAPPROVEBUTTON": "Kwado",
             "DAPPREJECTBUTTON": "Jụ",
             "DAPPSENDTITLE": "Arịrịọ Azụmahịa Nkwekọrịta",
             "DAPPSENDINFO": "Ebe nrụọrụ weebụ a na-arịọ ka e ziga azụmahịa nkwekọrịta site na obere akpa gị.",
-            "DAPPSIGNTITLE": "Bịanye aka n'arịrịọ ozi",
-            "DAPPSIGNINFO": "Ebe nrụọrụ weebụ a na-arịọ ka ị bịanye aka na ozi site na adreesị obere akpa gị.",
-            "DAPPNOTREADY": "Enweghị ike ijikọ na saịtị ahụ - Metrix Core ka na-amalite.",
-            "DAPPNOWALLET": "Enweghị ike ijikọ na saịtị ahụ - enweghị adreesị obere akpa ego dị.",
-            "DAPPAPPROVEBUTTON": "Kwado",
-            "DAPPCONNECTADDRESSLABEL": "Adreesị",
             "DAPPSENDSITELABEL": "Ebe nrụọrụ weebụ",
             "DAPPSENDCONTRACTLABEL": "Adreesị Nkwekọrịta",
             "DAPPSENDAMOUNTLABEL": "Ọnụ ego",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Ụgwọ netwọkụ kachasị elu",
             "DAPPSENDMAXTOTALLABEL": "Ngụkọta Kachasị",
             "DAPPSENDDATALABEL": "Data Nkwekọrịta",
+            "DAPPSIGNTITLE": "Bịanye aka n'arịrịọ ozi",
+            "DAPPSIGNINFO": "Ebe nrụọrụ weebụ a na-arịọ ka ị bịanye aka na ozi site na adreesị obere akpa gị.",
             "DAPPSIGNMESSAGELABEL": "Ozi",
-            "BOOTSTRAPOFFERTITLE": "Akpa ego ochie nke ukwuu",
-            "BOOTSTRAPOFFERINFO": "E nwere eriri mmalite ọhụrụ nke nwere ike ime ka Metrix Core dị ọhụrụ ngwa ngwa. Kama ịga n'ihu na mmekọrịta nkịtị, ọ nwere ike were ọtụtụ ụbọchị iji mezue, ebe ọ bụ na obere akpa gị kwesịrị ibudata ma nyochaa ngọngọ ọ bụla ọ furu efu.",
-            "BOOTSTRAPOFFERBUTTON": "Budata Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Gaa n'ihu na Mmekọrịta Nkịtị",
-            "BOOTSTRAPSPACEINFO": "Ohere diski efu ezughi oke iji budata ma wepụta bootstrap. Achọrọ: {achọrọ}, Dị: {n'efu}. Hapụ ohere wee nwaa ọzọ."
+            "DAPPNOTREADY": "Enweghị ike ijikọ na saịtị ahụ - Metrix Core ka na-amalite.",
+            "DAPPNOWALLET": "Enweghị ike ijikọ na saịtị ahụ - enweghị adreesị obere akpa ego dị."
         },
         "ADDRESSBOOK": {
             "TITLE": "Akwụkwọ Adreesị",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Netwọk dị ugbu a"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Tinye adreesị saịtị weebụ3",
-            "GOBUTTON": "Gaa",
-            "QUICKLAUNCH": "Mmalite ngwa ngwa",
-            "DEVTOOLS": "Mepee Ngwaọrụ Mmepụta",
-            "ADDLINK": "Tinye njikọ",
-            "LINKNAMEPLACEHOLDER": "Aha",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Chekwaa",
-            "CANCEL": "Kagbuo",
-            "REMOVE": "Wepụ",
-            "REMOVECONFIRM": "Wepụ njikọ a dị ngwa?",
-            "LINKEXISTS": "Njikọ ahụ dịlarị na ndepụta mmalite ngwa ngwa gị",
-            "LINKINVALID": "Tinye adreesị saịtị dị irè",
-            "LINKNETWORKLABEL": "Netwọk",
-            "LOADFAILED": "Ịbugo saịtị ahụ agaghị arụ ọrụ",
-            "SECURESITE": "Njikọ dị nchebe - asambodo SSL dị irè",
-            "INSECURESITE": "Njikọ adịghị mma",
-            "INVALIDCERTSITE": "Njikọ abụghị nkeonwe - asambodo SSL adịghị mma ma ọ bụ nke a na-atụkwasịghị obi"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Obere akpa ndabere...",
             "SIGNMESSAGE": "Mbinye aka na ozi...",
             "VERIFYMESSAGE": "Nyochaa Ozi...",
-            "LOCALE": "Asụsụ...",
-            "RESTARTCORE": "Malitegharịa Metrix Core",
-            "EXIT": "Ụzọ ọpụpụ",
             "OPTIONS": "Nhọrọ...",
+            "LOCALE": "Asụsụ...",
             "CURRENCIES": "Gosi Ego...",
-            "ALTITUDEREFRESH": "Melite Data Elu"
+            "RESTARTCORE": "Malitegharịa Metrix Core",
+            "ALTITUDEREFRESH": "Melite Data Elu",
+            "EXIT": "Ụzọ ọpụpụ"
         },
         "ENCRYPT": {
             "TITLE": "Zochie ya",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Ngụkọta Nhazi",
+        "SPENDABLEBALANCE": "Nhazi ego a ga-emefu",
+        "PENDINGBALANCE": "Nhazi Na-echere",
         "CANCELBUTTON": "Kagbuo",
         "DONEBUTTON": "Emechaala",
         "OKBUTTON": "Ọ DỊ MMA",
+        "ACCEPTBUTTON": "Nabata",
         "CLEARALLBUTTON": "Hichapụ Ihe Niile",
         "ENTERACCOUNTLABEL": "Tinye akara maka adreesị a",
         "ENTERADDRESSLABEL": "Tinye adreesị Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Hazie site na",
         "SEARCH": "Chọọ",
         "FEE": "Ụgwọ",
-        "ACCEPTBUTTON": "Nabata",
         "CONFIRMED": "Ekwenyere na",
         "UNCONFIRMED": "Enweghị nkwenye",
-        "PENDINGBALANCE": "Nhazi Na-echere",
-        "SPENDABLEBALANCE": "Nhazi ego a ga-emefu",
         "SAVEBUTTON": "Chekwaa"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Na-amalitegharị Metrix Core...",
         "BOOTSTRAPPING": "Na-ebudata eriri mmalite...",
         "BOOTSTRAPEXTRACTING": "Na-ewepụta eriri akpụkpọ ụkwụ...",
-        "TIMEREMAINING": "fọdụrụ:"
+        "TIMEREMAINING": "fọdụrụ:",
+        "DEVRPCOVERRIDEACTIVE": "Edobere njikwa njikọ RPC nke onye nrụpụta (Nhọrọ > Onye Mmepụta) ma ọ naghị azaghachi. Kpochapụ ya ka o wee jikọọ na mmụọ ọjọọ mpaghara ahụ mgbe niile.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Kpochapụ Mkpuchi RPC & Jikọọghachi"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Emepụtara akaụntụ ọhụrụ nke ọma",
         "ADDRESSCOPIEDCLIPBOARD": "Edegharịrị adreesị ahụ na klipbọọdụ",
+        "COPIEDCLIPBOARD": "Edepụtaghachiri ya na klipbọọdụ",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "E depụtaghachiri azụmahịa na klipbọọdụ",
         "EMPTYFIELDS": "Biko dejupụta ubi niile",
         "NOUPDATE": "Enweghị mmelite dị",
         "WALLETBACKEDUP": "Nkwado nchekwa obere akpa gara nke ọma",
+        "WALLETBACKUPFAILED": "Nchekwa akpaaka akpaka dara - lelee ebe nchekwa ndabere gị na oghere diski dị",
         "PASSPHRASEMISMATCH": "Okwu ndị ị tinyere adabaghị",
         "CHECKINGUPDATE": "Na-elele maka mmelite...",
         "CHECKINGUPDATEFAILED": "Enweghị ike ịlele maka mmelite. Lelee netwọk gị.",
+        "WALLETUPDATEDOWNLOADING": "Na-ebudata mmelite...",
         "SENDINGEXCEEDSBALANCE": "Ego ị na-eziga gafere nguzozi ị họọrọ",
         "MISSINGCHANGEADDRESS": "Ị ga-akọwapụta adreesị mgbanwe",
         "MISSINGDESTINATIONADDRESS": "Ị ga-akọwapụta adreesị ebe ị ga-aga",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Na-ezochi obere akpa...",
         "CHANGINGPASSPHARASE": "Na-agbanwe okwuntughe...",
         "STARTINGMASTERNODE": "Na-amalite masternode...",
+        "STOPPINGMASTERNODE": "Na-akwụsị masternode...",
         "SENDINGTRANSACTION": "Na-eziga azụmahịa...",
         "SIGNINGMESSAGE": "Mbinye aka ozi...",
         "SIGNEDMESSAGE": "Abinyere ozi ahụ aka",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Na-emepe obere akpa ego...",
         "TRANSACTIONMISMATCH": "Njehie azụmahịa. Biko nwaa ọzọ.",
         "MINIMUMCONFIRMATIONS": "Ntinye niile chọrọ opekata mpe otu nkwenye tupu emefu ego.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "E depụtaghachiri azụmahịa na klipbọọdụ",
-        "STOPPINGMASTERNODE": "Na-akwụsị masternode...",
         "FAILEDTOWRITECONFIG": "Enwere nsogbu idegara faịlụ metrix.conf gị. Lelee na faịlụ ahụ dị na Altitude nwere ikike ide ihe.",
         "NOPUBLICUP": "Achọtaghị adreesị IP ọha. Lelee njikọ ịntanetị gị wee malitegharịa Altitude.",
         "CONFIGURINGLOCALMN": "Na-ahazi Masternode mpaghara...",
         "REPORTINGISSUE": "Inweta ozi nchọpụta... A ga-edegharị ozi a na klipbọọdụ gị.",
-        "WALLETUPDATEDOWNLOADING": "Na-ebudata mmelite...",
-        "WALLETBACKUPFAILED": "Nchekwa akpaaka akpaka dara - lelee ebe nchekwa ndabere gị na oghere diski dị",
         "EXPLORERURLSAVED": "Echekwara URL nke Explorer",
         "EXPLORERURLRESET": "URL Explorer laghachiri na ndabara",
         "EXPLORERURLINVALID": "Nke ahụ abụghị URL http(s) ziri ezi",
-        "EXPLORERURLUNREACHABLE": "Enweghị m ike iru URL ahụ - lelee ya wee nwaa ọzọ"
+        "EXPLORERURLUNREACHABLE": "Enweghị m ike iru URL ahụ - lelee ya wee nwaa ọzọ",
+        "DEVRPCHOSTSAVED": "Echekwara onye nnabata RPC",
+        "DEVRPCHOSTRESET": "Onye nnabata RPC laghachiri na ndabara (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mkpụrụ ego enwetara",
+        "NEWTRANSACTION_TITLE_STAKE": "E natara òkè",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Enwetara ụgwọ ọrụ Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Sekọnd ole na ole",
@@ -533,11 +587,6 @@
         "MONTHS": "ọnwa",
         "AYEAR": "Otu afọ",
         "YEARS": "afọ"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Mkpụrụ ego enwetara",
-        "NEWTRANSACTION_TITLE_STAKE": "E natara òkè",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Enwetara ụgwọ ọrụ Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Ndị gọvanọ nwere ọrụ ịtụ vootu na mmefu ego kwa ọnwa na mgbanwe blockchain. Ị nwere ike ịghọ Gọvanọ site na ịkpọchi ihe mkpuchi ziri ezi na nkwekọrịta Gọọmentị.",
                 "COLLATERAL": "Ihe nkwado achọrọ",
                 "ENROLL": "Debanye aha",
+                "SELECTAGOVERNOR": "Họrọ adreesị gọvanọ ruru eru",
+                "GOVERNORNOTSELECTED": "Ahọpụtaghị adreesị ruru eru ọ bụla",
                 "CONFIRMENROLL": "Ị na-achọ ịdenye aha dịka Gọvanọ. Nke a ga-eziga azụmahịa nwere ihe mkpuchi achọrọ na nkwekọrịta ọchịchị. Ị nwere ike ịpụ na ndebanye aha n'oge ọ bụla.",
                 "ISGOVERNORTITLE": "Ị bụ Gọvanọ na-arụsi ọrụ ike!",
                 "ISGOVERNORDETAIL1": "Ndị gọvanọ na-ahụ maka ntuli aka na mmefu ego kwa ọnwa na mgbanwe blockchain.",
                 "ISGOVERNORDETAIL2": "Iji nọgide na Gọvanọ, ị ga-achọ isonye na votu otu ma ọ dịkarịa ala kwa ụbọchị iri atọ.",
                 "ISGOVERNORDETAIL3": "Ọ bụrụ na ọ dịghị ihe ị ga-eme ntuli aka na ya, ị nwere ike ịga n'ihu na ndebanye aha gị site na izipu ping na-arụ ọrụ.",
+                "MYGOVERNORADDRESS": "Okwu Gọvanọ m kwuru",
                 "UNENROLL": "Wepu aha",
                 "PING": "Zipu Ping Na-arụ Ọrụ",
                 "LASTPINGTITLE": "Ping ikpeazụ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ụbọchị",
                 "GOVERNORVOTEMATURITYHOURS": "awa",
                 "GOVERNORVOTEMATURITYSUFFIX": "ruo mgbe o toruru",
-                "MYGOVERNORADDRESS": "Okwu Gọvanọ m kwuru",
-                "SELECTAGOVERNOR": "Họrọ adreesị gọvanọ ruru eru",
-                "GOVERNORNOTSELECTED": "Ahọpụtaghị adreesị ruru eru ọ bụla",
                 "NOTFULLYSYNCEDTITLE": "Ọkwa gọvanọ adịghị",
                 "NOTFULLYSYNCEDDETAIL": "Ọnọdụ ndebanye aha Gọvanọ gị ga-apụta ìhè mgbe blockchain gị dị n'otu nke ọma.",
                 "DGPMIGRATIONTITLE": "Mbugharị DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Emepụtala atụmatụ gị nke ọma",
             "ENROLLINGGOVERNOR": "Ịdenye aha dịka Gọvanọ...",
             "ENROLLEDGOVERNOR": "Ndebanye aha gị ga-emezu ozugbo ekwenyechara azụmahịa gị",
-            "VOTINGONPROPOSAL": "Izipu votu aro",
-            "VOTEDONPROPOSAL": "A ga-agụta votu gị ozugbo emechara nkwenye azụmahịa ahụ.",
             "PINGINGGOVERNOR": "Na-eziga ping...",
             "PINGEDGOVERNOR": "E zigara Ping nke ọma. A ga-emelite Gọvanọ gị ozugbo ekwenyechara azụmahịa ahụ",
+            "VOTINGONPROPOSAL": "Izipu votu aro",
+            "VOTEDONPROPOSAL": "A ga-agụta votu gị ozugbo emechara nkwenye azụmahịa ahụ.",
             "UNENROLLINGGOVERNOR": "Ịhapụ Gọvanọ...",
             "UNENROLLEDGOVERNOR": "Ezitere azụmahịa ahụ. A ga-ewepụ Gọvanọ gị n'akwụkwọ ozugbo emechara nkwekọrịta ahụ",
             "GOVERNORNOTMATURE": "Gọvanọ gị etozubeghị ime ihe a ugbu a"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Zụta Metrix",
+                "SEARCH": "Akụkọ ihe mere eme"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ị Zipụrụ",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Akụkọ Azụmahịa",
                 "SEARCHBUTTON": "Chọọ",
+                "SEARCHPLACEHOLDER": "Tinye adreesị MRX ma ọ bụ BTC",
                 "TRANSACTIONDATE": "Ụbọchị",
                 "TRANSACTIONTYPE": "Ụdị TX",
                 "TRANSACTIONAMOUNT": "Ọnụ ego",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Ekwenyere na",
                 "TRANSACTIONNOTCONFIRMED": "Ekwenyeghi",
                 "TRANSACTIONREFUNDED": "Akwụghachiri ego - N'okpuru opekempe kacha nta",
-                "AVGSWAPPRICE": "Ọnụahịa Mgbanwe nkezi",
-                "SEARCHPLACEHOLDER": "Tinye adreesị MRX ma ọ bụ BTC"
+                "AVGSWAPPRICE": "Ọnụahịa Mgbanwe nkezi"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Na-emepụta Adreesị Mgbanwe...",
             "ALREADYHAVEADDRESS": "I nwelarị adreesị BTC nke jikọtara ya na adreesị Metrix a",
             "NOADDRESS": "I tinyeghị adreesị Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Zụta Metrix",
-                "SEARCH": "Akụkọ ihe mere eme"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Mepee",
                 "EMPTYTITLE": "Achọtabeghị ihe ngosi ọ bụla",
                 "EMPTYDETAIL": "Elu na-enyocha ihe nchọgharị blọk na akpaghị aka maka ihe nrịbama MRC20 na MRC721 ezigara na adreesị gị, wee nyochaa ihe niile dị ndụ na node nke gị. I nwekwara ike itinye ihe nrịbama aka n'aka ma ọ bụrụ na ị maara adreesị nkwekọrịta ya.",
+                "EMPTYDETAILCHECKINGDISABLED": "A gbanyụrụ nlele akara ngosi akpaka, yabụ na a naghị enyocha adreesị gị maka akara ngosi. Gbanye ya ọzọ n'elu, ma ọ bụ tinye akara ngosi aka ma ọ bụrụ na ị maara adreesị nkwekọrịta ya.",
                 "HIDDENTITLE": "Ihe ngosi zoro ezo",
                 "CONTEXTMENUHIDE": "Zoo akara ngosi",
                 "ITEMSSUFFIX": "ihe(ndị)",
-                "NONENUMERABLETOOLTIP": "Nchịkọta a anaghị akwado ịdepụta ihe dị iche iche - na-egosi ọnụọgụgụ ị nwere kama."
+                "NONENUMERABLETOOLTIP": "Nchịkọta a anaghị akwado ịdepụta ihe dị iche iche - na-egosi ọnụọgụgụ ị nwere kama.",
+                "CHECKINGENABLED": "Ịlele Anya",
+                "CHECKINGDISABLED": "Ịkwụ ụgwọ",
+                "CHECKINGENABLEDTOOLTIP": "A na-agba mbọ ịlele akara ngosi - Elu na-enyocha adreesị gị mgbe niile maka akara ngosi ma na-eme ka nguzozi dị ọhụrụ. Pịa iji gbanyụọ.",
+                "CHECKINGDISABLEDTOOLTIP": "A gbanyụrụ nlele akara ngosi - pịa ka ịgbanwuo ya ọzọ.",
+                "CHECKINGDISABLEDNOTICE": "Agbanyụrụla nlele akara ngosi akpaka. A naghị enyocha adreesị gị maka akara ngosi na nguzozi agaghị emelite. Ị ka nwere ike itinye akara ngosi aka."
             },
             "ADDTOKEN": {
                 "TITLE": "Tinye akara ngosi",

@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Cruthaigh Cuntas",
             "HIDEEMPTYACCOUNTS": "Folaigh Cuntais Fholmha Gan Ainm"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Forbhreathnú",
+            "TRANSACTIONSTAB": "Idirbhearta",
+            "ADDRESSTABS": "Seoltaí"
+        },
         "SEND": {
             "ADDRECIPIENT": "Cuir Faighteoir Leis",
             "SEND": "Seol",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dáta",
             "TABLECOLUMNS_CONFIRMS": "Deimhnithe",
             "ALL_SELECTUNSELECT": "Athraigh Gach Rud",
+            "TREEMODE": "Mód Crann",
+            "LISTMODE": "Mód Liosta",
             "SENDAVAILABLE": "Úsáid an t-iarmhéid atá ar fáil",
             "INPUTLOCKED": "Tá an t-ionchur faoi ghlas. Beidh ort an t-ionchur seo a dhíghlasáil le go mbeidh tú in ann é a chaitheamh.",
             "CONTEXTMENULOCKINPUT": "Glasáil ionchur",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Tar éis Táille",
             "QUANTITY": "Cainníocht",
             "BYTES": "Béiteanna",
-            "TREEMODE": "Mód Crann",
-            "LISTMODE": "Mód Liosta",
             "ALERTFEECHANGETITLE": "Athrú Táille",
             "ALERTFEECHANGECONTENT": "Tá an táille idirbhirt iarbhír níos airde ná mar a bhíothas ag súil leis. Deimhnigh an táille nua le do thoil:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Cruthaigh Conradh",
+            "INFO": "Imscaradh conradh cliste chuig an líonra trína chód bíte tiomsaithe a chur isteach. Is feidhm lárnach den slabhra í seo - déan seiceáil dhúbailte ar do shocruithe cód bíte agus gáis sula ndéantar é a imscaradh, ní féidir an t-imscaradh a chealú.",
+            "FROM": "Ó",
+            "BYTECODE": "Cód Bheit",
+            "BYTECODEPLACEHOLDER": "Greamaigh an cód bíte conartha tiomsaithe (heicsidheachúlach)",
+            "INVALIDBYTECODE": "Ní mór don chód beart a bheith ina shreang heicsidheachúlach bailí (0-9, a-f) le líon cothrom carachtar.",
+            "GASLIMIT": "Teorainn Gáis",
+            "GASLIMITRANGE": "Raon",
+            "GASPRICE": "Praghas Gáis (MRX in aghaidh an aonaid gáis)",
+            "GASPRICEMIN": "Íosmhéid",
+            "ESTIMATEDMAXCOST": "Uaschostas measta",
+            "DEPLOYBUTTON": "Conradh Imscaradh",
+            "INCOMPLETEFORM": "Roghnaigh seoladh seoltóra, cuir isteach cód baite bailí, agus socraigh teorainn/praghas gáis bailí",
+            "HIGHGASPRICETITLE": "Praghas Ard Gáis",
+            "HIGHGASPRICEINFO": "Tá an praghas gáis atá socraithe agat thar a bheith ard. D’fhéadfadh an t-imscaradh seo suas le:",
+            "DEPLOYING": "Ag imscaradh conartha...",
+            "DEPLOYED": "Imscaradh conartha curtha isteach",
+            "RESULTTITLE": "Toradh Imscartha",
+            "STATUS": "Stádas",
+            "STATUSPENDING": "Deimhniú ar feitheamh...",
+            "STATUSCONFIRMED": "Imscaradh go rathúil",
+            "STATUSFAILED": "Theip ar an imscaradh",
+            "TXID": "Aitheantas Idirbhirt",
+            "SENDER": "Seoltóir",
+            "CONTRACTADDRESS": "Seoladh an Chonartha",
+            "GASUSED": "Gás a Úsáideadh",
+            "DONEBUTTON": "Déanta",
+            "DEPLOYANOTHERBUTTON": "Imscaradh Ceann Eile"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Idirbhearta",
+            "COPYBLOCKHASH": "Cóipeáil Bloc Hash",
+            "COPYTXID": "Cóipeáil ID Idirbhirt",
+            "COPYACCOUNT": "Cóipeáil Ainm an Chuntais",
+            "COPYADDRESS": "Cóipeáil Seoladh",
+            "COPYAMOUNT": "Méid Cóipeála",
+            "COPTBLOCKINDEX": "Cóipeáil Innéacs na Bloc",
+            "EXPLORER": "Oscail i mBloc-Iniúchóir"
         },
         "STAKING": {
             "UNLOCK": "Díghlasáil le haghaidh Geallchur",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Seoladh",
             "ENABLED": "Cumasaithe",
-            "STARTBUTTON": "Tosaigh Áitiúil",
-            "STARTALIASBUTTON": "Tosaigh Leasainm",
-            "STARTALLBUTTON": "Tosaigh Uile",
             "NOMASTERNODES": "Níl aon mháistirnóid agat",
             "NOMNOUTPUTS": "Níor aimsíodh aon aschur Masternode. Chun Masternode áitiúil a rith, seol 2, 5, 25, 50 nó 100 milliún mona go díreach chuig do sheoladh Masternode agus fan ar feadh 15 dheimhniú.",
+            "STARTBUTTON": "Tosaigh Áitiúil",
             "STOPBUTTON": "Stop Áitiúil",
+            "STARTALIASBUTTON": "Tosaigh Leasainm",
             "STOPALIASBUTTON": "Stop Leasainm",
+            "STARTALLBUTTON": "Tosaigh Uile",
             "ADDREMOTE": "Cuir Máistirnód Cianda leis",
             "REMOVEMN": "Bain Masternode",
             "ADDLOCAL": "Socraigh Máistirnód Áitiúil",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Ginearálta",
                 "COREVERSION": "Leagan Croí",
+                "ALTITUDEVERSION": "Leagan Airde",
                 "PROTOCOLVERSION": "Leagan Prótacail",
                 "WALLETVERSION": "Leagan Wallet.dat",
                 "NETWORKTITLE": "Líonra",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Líon na Máistirnóid",
                 "BLOCKCHAINTITLE": "Slabhra Bloc",
                 "NUMBERBLOCKS": "Líon reatha na mbloc",
-                "BESTBLOCKTTIME": "Am bloc deireanach",
-                "ALTITUDEVERSION": "Leagan Airde"
+                "BESTBLOCKTTIME": "Am bloc deireanach"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Fáilte go dtí consól Metrix Core RPC. Clóscríobh cabhair le haghaidh forbhreathnú ar na horduithe atá ar fáil.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Roghnaigh Teanga"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Idirbhearta",
-            "COPYBLOCKHASH": "Cóipeáil Bloc Hash",
-            "COPYTXID": "Cóipeáil ID Idirbhirt",
-            "COPYACCOUNT": "Cóipeáil Ainm an Chuntais",
-            "COPYADDRESS": "Cóipeáil Seoladh",
-            "COPYAMOUNT": "Méid Cóipeála",
-            "COPTBLOCKINDEX": "Cóipeáil Innéacs na Bloc",
-            "EXPLORER": "Oscail i mBloc-Iniúchóir"
+        "CURRENCY": {
+            "TITLE": "Roghnaigh Airgeadra Taispeána"
         },
         "EXPLORER": {
             "TITLE": "Taiscéalaí Bloc",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Líonra",
             "WINDOTAB": "Fuinneog",
+            "BACKUPTAB": "Cúltaca",
+            "EXPLORERTAB": "Taiscéalaí",
+            "DEVELOPERTAB": "Forbróir",
             "NETWORK": {
                 "PROXY": "Ceangail trí sheachfhreastalaí SOCKS5",
                 "PROXYIP": "IP seachfhreastalaí",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Íoslaghdaigh ar dhúnadh",
                 "BEHAVIOURTITLE": "Iompar Tráidire an Chórais & Fuinneog"
             },
-            "BACKUPTAB": "Cúltaca",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Cúltaca Uathoibríoch",
                 "ENABLED": "Déan cúltaca uathoibríoch de wallet.dat ar sceideal",
                 "ENABLEDINFO": "Cruthaíonn sé cúltaca úr de do chomhad sparán ar sceideal, ionas go mbeidh cóip le déanaí ar fáil i gcónaí má théann rud éigin amú.",
+                "INTERVALLABEL": "Déan cúltaca gach (laethanta)",
                 "LASTBACKUP": "Cúltaca deireanach:",
                 "NEVERBACKEDUP": "Níl aon chúltaca uathoibríoch déanta go fóill.",
                 "BACKUPNOWBUTTON": "Cúltaca Anois",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Athshocraigh go Réamhshocrú",
                 "PRUNETITLE": "Stair Chúltaca",
                 "PRUNEINFO": "Scriostar cúltacaí uathoibríocha níos sine ionas nach bhfásfaidh an fillteán seo go deo - ní choimeádtar ach na cinn is déanaí thíos.",
-                "KEEPCOUNTLABEL": "Coinnigh deireanach",
-                "INTERVALLABEL": "Déan cúltaca gach (laethanta)"
+                "KEEPCOUNTLABEL": "Coinnigh deireanach"
             },
-            "EXPLORERTAB": "Taiscéalaí",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Taiscéalaí Bloc",
                 "BLOCKEXPLORERINFO": "D’oscail an suíomh agus idirbheart á fheiceáil ar an iniúchóir bloc (e.g. cliceáil ar dheis ar idirbheart > Féach ar an Iniúchóir).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Tástlíonra",
                 "REGTEST": "Tástáil Chláraithe"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mód Forbróra",
+                "DEVMODEINFO": "Múchta de réir réamhshocraithe agus beartaithe do fhorbróirí amháin. Nochtar roghanna chun an nasc RPC a shárú nuair a chuirtear ar chumas é seo - ba chóir d'úsáideoirí caighdeánacha é seo a fhágáil múchta.",
+                "DEVMODELABEL": "Cumasaigh Mód Forbróra",
+                "WARNING": "Chun críocha forbartha amháin atá na socruithe seo. Má athraíonn tú iad, is féidir leis an sparán cosc a chur ar chor ar bith ceangal le daemon - ná húsáid é seo ach amháin má tá a fhios agat cad atá á dhéanamh agat.",
+                "RPCHOSTTITLE": "Ceangal RPC",
+                "RPCHOSTINFO": "De réir réamhshocraithe, ceanglaíonn Altitude leis an daemon a bhainistíonn sé féin, ar an meaisín seo (127.0.0.1). Trí na rudaí seo a shárú, ligeann sé dó ceangal le daemon difriúil ina ionad - mar shampla, cás tástála cláraithe iargúlta, gan gá ceann a rith go háitiúil. Má éiríonn leis an nasc, ní dhéanfaidh Altitude a daemon áitiúil féin a íoslódáil ná a thosú. Ní mór don rpcallowip de chuid an daemon sprice an nasc seo a cheadú, agus ní mór don rpcuser/rpcpassword thíos a chumraíocht a mheaitseáil. Tagann sé i bhfeidhm láithreach, níl gá le hatosú.",
+                "RPCHOSTLABEL": "Óstach RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Ainm úsáideora RPC",
+                "RPCPASSWORDLABEL": "Pasfhocal RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Forbhreathnú",
-            "TRANSACTIONSTAB": "Idirbhearta",
-            "ADDRESSTABS": "Seoltaí"
-        },
-        "CURRENCY": {
-            "TITLE": "Roghnaigh Airgeadra Taispeána"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Painéal Rialaithe",
             "SEND": "Seol",
+            "CREATECONTRACT": "Cruthaigh Conradh",
             "RECEIVE": "Faigh",
             "TRANSACTIONS": "Idirbhearta",
             "STAKING": "Geallchur",
             "MASTERNODES": "Máistirnóid",
+            "EXPLORER": "Taiscéalaí Bloc",
             "SYNC": {
                 "CONNECTING": "Ag ceangal",
                 "NOBLOCKS": "Ag fanacht le bloic",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Níl an sparán ag geallchur faoi láthair",
                 "MASTERNODEON": "Tá Masternode ag rith faoi láthair",
                 "MASTERNODEOFF": "Níl Masternode ag rith faoi láthair"
-            },
-            "EXPLORER": "Taiscéalaí Bloc"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Cuir isteach seoladh suíomh gréasáin3",
+            "GOBUTTON": "Téigh",
+            "QUICKLAUNCH": "Seoladh Tapa",
+            "DEVTOOLS": "Oscail Uirlisí Forbróra",
+            "ADDLINK": "Cuir Nasc leis",
+            "LINKNAMEPLACEHOLDER": "Ainm",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Sábháil",
+            "CANCEL": "Cealaigh",
+            "REMOVE": "Bain",
+            "REMOVECONFIRM": "An nasc tapaidh seo a bhaint?",
+            "LINKEXISTS": "Tá an nasc sin i do liosta lainseála tapa cheana féin",
+            "LINKINVALID": "Cuir isteach seoladh suímh bailí",
+            "LINKNETWORKLABEL": "Líonra",
+            "LOADFAILED": "Theip ar an suíomh a lódáil",
+            "SECURESITE": "Tá an nasc slán - teastas SSL bailí",
+            "INSECURESITE": "Níl an nasc slán",
+            "INVALIDCERTSITE": "Níl an nasc príobháideach - teastas SSL neamhbhailí nó neamhiontaofa"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Cuir isteach Pasfhocal do Sparáin",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Tá nuashonrú ar fáil do Metrix Core. Ar mhaith leat é a shuiteáil anois?",
             "WALLETUPDATETITLE": "Nuashonrú Airde Ar Fáil",
             "WALLETUPDATEINFO": "Tá nuashonrú ar fáil do Altitude. Ar mhaith leat é a íoslódáil anois?",
+            "WALLETUPDATEREADYTITLE": "Nuashonrú Airde Réidh",
+            "WALLETUPDATEREADYINFO": "Tá an nuashonrú íoslódáilte. Atosaigh Altitude anois chun é a shuiteáil?",
+            "WALLETUPDATERESTARTBUTTON": "Atosaigh & Suiteáil",
+            "WALLETUPDATELATERBUTTON": "Níos déanaí",
             "CLIENTUPDATEBUTTON": "Nuashonrú",
             "CLIENTUPDATECANCELBUTTON": "Ná Nuashonraigh",
             "CLIENTUPDATESKIPBUTTON": "Seachain an Nuashonrú seo",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ba chóir aon chúltaca roimhe seo atá déanta agat de do chomhad sparán a athsholáthar leis an gcomhad sparán criptithe nua-ghinte. Ar chúiseanna slándála, ní bheidh aon úsáid le cúltacaí roimhe seo den chomhad sparán neamhchriptithe a luaithe a thosóidh tú ag úsáid an sparán nua criptithe.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Stopadh Croílár Metrix go Gan Choinne",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Bhí fadhb ann le Metrix Core a chuir deireadh leis. Moltar duit do chomhad debug.log a sheiceáil le haghaidh fadhbanna.",
+            "CLIENTUNKNOWNERRORTITLE": "Earráid Chumarsáide Croí-Metrix",
+            "CLIENTUNKNOWNERRORINFO": "Bhí fadhb ann cumarsáid a dhéanamh le Metrix Core. Moltar duit do chomhad debug.log a sheiceáil le haghaidh fadhbanna.",
+            "BOOTSTRAPFAILEDTITLE": "Theip ar Tosaithe Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Bhí fadhb ann agus Metrix Core á thosú. Moltar duit do chomhad loga Altitude a sheiceáil le haghaidh fadhbanna.",
+            "BOOTSTRAPOFFERTITLE": "Sparán atá as dáta go mór",
+            "BOOTSTRAPOFFERINFO": "Tá tosaitheoir le déanaí ar fáil ar féidir leis Metrix Core a thabhairt cothrom le dáta go tapa. D’fhéadfadh sé roinnt laethanta a thógáil chun leanúint ar aghaidh le sioncrónú gnáth ina ionad sin, ós rud é go gcaithfidh do sparán gach bloc atá caillte aige a íoslódáil agus a fhíorú.",
+            "BOOTSTRAPOFFERBUTTON": "Íoslódáil Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Lean ar aghaidh le Sioncrónú Gnáth",
+            "BOOTSTRAPSPACEINFO": "Níl dóthain spáis diosca saor chun an bootstrap a íoslódáil agus a bhaint amach. Riachtanach: {required}, Ar Fáil: {free}. Scaoil roinnt spáis agus déan iarracht arís.",
+            "STARTUPFAILEDTITLE": "Theip ar Tosaithe Metrix Core",
+            "STARTUPFAILEDINFO": "Tharla earráid agus Metrix Core á thosú. Moltar duit do chomhad loga Altitude a sheiceáil le haghaidh fadhbanna.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Uirlisí Aisghabhála",
             "CLIENTINVALIDCONFIGTITLE": "Cumraíocht neamhbhailí metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Tá socrú masternode neamhbhailí ag do metrix.conf rud a fhágfaidh go scoirfidh Metrix Core láithreach. Seiceáil an comhad seo le do thoil.",
             "ADDREMOTEMNTITLE": "Cuir Máistirnód Cianda leis",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Eochair Phríobháideach Masternode",
             "ADDREMOTEMNTXHASH": "Hash Trx Masternode",
             "ADDREMOTEMNTXINDEX": "Innéacs Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Theip ar Tosaithe Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Bhí fadhb ann agus Metrix Core á thosú. Moltar duit do chomhad loga Altitude a sheiceáil le haghaidh fadhbanna.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Uirlisí Aisghabhála",
-            "STARTUPFAILEDTITLE": "Theip ar Tosaithe Metrix Core",
-            "STARTUPFAILEDINFO": "Tharla earráid agus Metrix Core á thosú. Moltar duit do chomhad loga Altitude a sheiceáil le haghaidh fadhbanna.",
-            "CLIENTUNKNOWNERRORTITLE": "Earráid Chumarsáide Croí-Metrix",
-            "CLIENTUNKNOWNERRORINFO": "Bhí fadhb ann cumarsáid a dhéanamh le Metrix Core. Moltar duit do chomhad debug.log a sheiceáil le haghaidh fadhbanna.",
             "UNENROLLGOVERNORTITLE": "Deimhnigh Díchlárú an Ghobharnóra",
             "UNENROLLGOVERNORCONTENT": "An bhfuil tú cinnte gur mian leat do Ghobharnóir a dhíchlárú? Ní bheidh tú in ann vótáil ar rialachas slabhra a thuilleadh.",
-            "WALLETUPDATEREADYTITLE": "Nuashonrú Airde Réidh",
-            "WALLETUPDATEREADYINFO": "Tá an nuashonrú íoslódáilte. Atosaigh Altitude anois chun é a shuiteáil?",
-            "WALLETUPDATERESTARTBUTTON": "Atosaigh & Suiteáil",
-            "WALLETUPDATELATERBUTTON": "Níos déanaí",
             "DAPPCONNECTTITLE": "Ceangail leis an Suíomh",
             "DAPPCONNECTINFO": "Ba mhaith leis an suíomh seo ceangal le do sparán agus do sheoladh agus d’iarmhéid a fheiceáil.",
             "DAPPCONNECTBUTTON": "Ceangail",
+            "DAPPCONNECTADDRESSLABEL": "Seoladh",
+            "DAPPAPPROVEBUTTON": "Ceadaigh",
             "DAPPREJECTBUTTON": "Diúltaigh",
             "DAPPSENDTITLE": "Iarratas ar Idirbheart Conartha",
             "DAPPSENDINFO": "Tá an suíomh seo ag iarraidh idirbheart conartha a sheoladh ó do sparán.",
-            "DAPPSIGNTITLE": "Iarratas ar Theachtaireacht a Shíniú",
-            "DAPPSIGNINFO": "Tá an suíomh seo ag iarraidh teachtaireacht a shíniú le seoladh do sparán.",
-            "DAPPNOTREADY": "Ní féidir ceangal leis an suíomh go fóill - tá Metrix Core fós ag tosú.",
-            "DAPPNOWALLET": "Ní féidir ceangal leis an suíomh - níl aon seoladh sparán ar fáil.",
-            "DAPPAPPROVEBUTTON": "Ceadaigh",
-            "DAPPCONNECTADDRESSLABEL": "Seoladh",
             "DAPPSENDSITELABEL": "Suíomh",
             "DAPPSENDCONTRACTLABEL": "Seoladh an Chonartha",
             "DAPPSENDAMOUNTLABEL": "Méid",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Uasmhéid Táille Líonra",
             "DAPPSENDMAXTOTALLABEL": "Uasmhéid Iomlán",
             "DAPPSENDDATALABEL": "Sonraí Conartha",
+            "DAPPSIGNTITLE": "Iarratas ar Theachtaireacht a Shíniú",
+            "DAPPSIGNINFO": "Tá an suíomh seo ag iarraidh teachtaireacht a shíniú le seoladh do sparán.",
             "DAPPSIGNMESSAGELABEL": "Teachtaireacht",
-            "BOOTSTRAPOFFERTITLE": "Sparán atá as dáta go mór",
-            "BOOTSTRAPOFFERINFO": "Tá tosaitheoir le déanaí ar fáil ar féidir leis Metrix Core a thabhairt cothrom le dáta go tapa. D’fhéadfadh sé roinnt laethanta a thógáil chun leanúint ar aghaidh le sioncrónú gnáth ina ionad sin, ós rud é go gcaithfidh do sparán gach bloc atá caillte aige a íoslódáil agus a fhíorú.",
-            "BOOTSTRAPOFFERBUTTON": "Íoslódáil Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Lean ar aghaidh le Sioncrónú Gnáth",
-            "BOOTSTRAPSPACEINFO": "Níl dóthain spáis diosca saor chun an bootstrap a íoslódáil agus a bhaint amach. Riachtanach: {required}, Ar Fáil: {free}. Scaoil roinnt spáis agus déan iarracht arís."
+            "DAPPNOTREADY": "Ní féidir ceangal leis an suíomh go fóill - tá Metrix Core fós ag tosú.",
+            "DAPPNOWALLET": "Ní féidir ceangal leis an suíomh - níl aon seoladh sparán ar fáil."
         },
         "ADDRESSBOOK": {
             "TITLE": "Leabhar Seoltaí",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Líonra reatha"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Cuir isteach seoladh suíomh gréasáin3",
-            "GOBUTTON": "Téigh",
-            "QUICKLAUNCH": "Seoladh Tapa",
-            "DEVTOOLS": "Oscail Uirlisí Forbróra",
-            "ADDLINK": "Cuir Nasc leis",
-            "LINKNAMEPLACEHOLDER": "Ainm",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Sábháil",
-            "CANCEL": "Cealaigh",
-            "REMOVE": "Bain",
-            "REMOVECONFIRM": "An nasc tapaidh seo a bhaint?",
-            "LINKEXISTS": "Tá an nasc sin i do liosta lainseála tapa cheana féin",
-            "LINKINVALID": "Cuir isteach seoladh suímh bailí",
-            "LINKNETWORKLABEL": "Líonra",
-            "LOADFAILED": "Theip ar an suíomh a lódáil",
-            "SECURESITE": "Tá an nasc slán - teastas SSL bailí",
-            "INSECURESITE": "Níl an nasc slán",
-            "INVALIDCERTSITE": "Níl an nasc príobháideach - teastas SSL neamhbhailí nó neamhiontaofa"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Sparán Cúltaca...",
             "SIGNMESSAGE": "Sínigh Teachtaireacht...",
             "VERIFYMESSAGE": "Fíoraigh Teachtaireacht...",
-            "LOCALE": "Teanga...",
-            "RESTARTCORE": "Atosaigh Metrix Core",
-            "EXIT": "Scoir",
             "OPTIONS": "Roghanna...",
+            "LOCALE": "Teanga...",
             "CURRENCIES": "Taispeáin Airgeadra...",
-            "ALTITUDEREFRESH": "Athnuachan Sonraí Airde"
+            "RESTARTCORE": "Atosaigh Metrix Core",
+            "ALTITUDEREFRESH": "Athnuachan Sonraí Airde",
+            "EXIT": "Scoir"
         },
         "ENCRYPT": {
             "TITLE": "Criptigh",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Iarmhéid Iomlán",
+        "SPENDABLEBALANCE": "Iarmhéid Inchaite",
+        "PENDINGBALANCE": "Iarmhéid ar Feitheamh",
         "CANCELBUTTON": "Cealaigh",
         "DONEBUTTON": "Déanta",
         "OKBUTTON": "Ceart go leor",
+        "ACCEPTBUTTON": "Glac leis",
         "CLEARALLBUTTON": "Glan Gach Rud",
         "ENTERACCOUNTLABEL": "Cuir lipéad isteach don seoladh seo",
         "ENTERADDRESSLABEL": "Cuir isteach seoladh Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Sórtáil De réir",
         "SEARCH": "Cuardaigh",
         "FEE": "Táille",
-        "ACCEPTBUTTON": "Glac leis",
         "CONFIRMED": "Deimhnithe",
         "UNCONFIRMED": "Gan deimhniú",
-        "PENDINGBALANCE": "Iarmhéid ar Feitheamh",
-        "SPENDABLEBALANCE": "Iarmhéid Inchaite",
         "SAVEBUTTON": "Sábháil"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ag atosú Metrix Core...",
         "BOOTSTRAPPING": "Ag íoslódáil bootstrap...",
         "BOOTSTRAPEXTRACTING": "Ag baint tosaithe...",
-        "TIMEREMAINING": "atá fágtha:"
+        "TIMEREMAINING": "atá fágtha:",
+        "DEVRPCOVERRIDEACTIVE": "Tá sárú nasc RPC forbróra socraithe (Roghanna > Forbróir) agus níl sé ag freagairt. Glan é chun athcheangal leis an daemon áitiúil de ghnáth.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Glan Sárú RPC & Athcheangail"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cruthaíodh cuntas nua go rathúil",
         "ADDRESSCOPIEDCLIPBOARD": "Seoladh cóipeáilte chuig an ghearrthaisce",
+        "COPIEDCLIPBOARD": "Cóipeáilte chuig an ghearrthaisce",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Idirbhearta cóipeáilte chuig an ghearrthaisce",
         "EMPTYFIELDS": "Líon isteach na réimsí uile le do thoil",
         "NOUPDATE": "Níl aon nuashonrú ar fáil",
         "WALLETBACKEDUP": "Cúltaca sparán rathúil",
+        "WALLETBACKUPFAILED": "Theip ar chúltaca uathoibríoch sparán - seiceáil suíomh do chúltaca agus an spás diosca atá ar fáil",
         "PASSPHRASEMISMATCH": "Ní hionann na frásaí faire a chuir tú isteach",
         "CHECKINGUPDATE": "Ag seiceáil le haghaidh nuashonraithe...",
         "CHECKINGUPDATEFAILED": "Ní féidir seiceáil le haghaidh nuashonruithe. Seiceáil do líonra.",
+        "WALLETUPDATEDOWNLOADING": "Ag íoslódáil an nuashonraithe...",
         "SENDINGEXCEEDSBALANCE": "Tá an méid atá á sheoladh agat níos mó ná an t-iarmhéid roghnaithe agat",
         "MISSINGCHANGEADDRESS": "Ní mór duit seoladh athraithe a shonrú",
         "MISSINGDESTINATIONADDRESS": "Ní mór duit seoladh ceann scríbe a shonrú",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ag criptiú sparán...",
         "CHANGINGPASSPHARASE": "Ag athrú frása faire...",
         "STARTINGMASTERNODE": "Ag tosú máistirnód...",
+        "STOPPINGMASTERNODE": "Ag stopadh máistirnód...",
         "SENDINGTRANSACTION": "Ag seoladh idirbheart...",
         "SIGNINGMESSAGE": "Teachtaireacht á síniú...",
         "SIGNEDMESSAGE": "Teachtaireacht sínithe",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ag díghlasáil sparán...",
         "TRANSACTIONMISMATCH": "Earráid idirbhirt. Déan iarracht arís.",
         "MINIMUMCONFIRMATIONS": "Éilíonn gach ionchur deimhniú amháin ar a laghad sula gcaitear airgead.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Idirbhearta cóipeáilte chuig an ghearrthaisce",
-        "STOPPINGMASTERNODE": "Ag stopadh máistirnód...",
         "FAILEDTOWRITECONFIG": "Bhí fadhb ann agus tú ag scríobh chuig do chomhad metrix.conf. Seiceáil go bhfuil an comhad ann agus go bhfuil ceadanna scríbhneoireachta ag Altitude.",
         "NOPUBLICUP": "Níor aimsíodh aon seoladh IP poiblí. Seiceáil do nasc idirlín agus atosú Altitude.",
         "CONFIGURINGLOCALMN": "Ag cumrú Masternode áitiúil...",
         "REPORTINGISSUE": "Ag fáil faisnéise diagnóisí... Déanfar an fhaisnéis seo a chóipeáil chuig do ghearrthaisce.",
-        "WALLETUPDATEDOWNLOADING": "Ag íoslódáil an nuashonraithe...",
-        "WALLETBACKUPFAILED": "Theip ar chúltaca uathoibríoch sparán - seiceáil suíomh do chúltaca agus an spás diosca atá ar fáil",
         "EXPLORERURLSAVED": "URL an taiscéalaí sábháilte",
         "EXPLORERURLRESET": "URL an taiscéalaí ar ais go dtí an réamhshocrú",
         "EXPLORERURLINVALID": "Ní URL http bailí é sin",
-        "EXPLORERURLUNREACHABLE": "Níorbh fhéidir an URL sin a bhaint amach - seiceáil é agus déan iarracht arís"
+        "EXPLORERURLUNREACHABLE": "Níorbh fhéidir an URL sin a bhaint amach - seiceáil é agus déan iarracht arís",
+        "DEVRPCHOSTSAVED": "Óstach RPC sábháilte",
+        "DEVRPCHOSTRESET": "Óstach RPC ar ais go dtí an réamhshocrú (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Boinn a Fuarthas",
+        "NEWTRANSACTION_TITLE_STAKE": "Geall a Fuarthas",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Fuair luach saothair Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Cúpla soicind",
@@ -533,11 +587,6 @@
         "MONTHS": "míonna",
         "AYEAR": "Bliain",
         "YEARS": "blianta"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Boinn a Fuarthas",
-        "NEWTRANSACTION_TITLE_STAKE": "Geall a Fuarthas",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Fuair luach saothair Masternode"
     },
     "MONTH": {
         "JAN": "Eanáir",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Tá na Gobharnóirí freagrach as vótáil ar bhuiséid mhíosúla agus ar athruithe ar an blockchain. Is féidir leat a bheith i do Ghobharnóir tríd an gcomhthaobhacht cheart a ghlasáil sa chonradh Rialachais.",
                 "COLLATERAL": "Comhthaobhacht riachtanach",
                 "ENROLL": "Cláraigh",
+                "SELECTAGOVERNOR": "Roghnaigh seoladh gobharnóra incháilithe",
+                "GOVERNORNOTSELECTED": "Níor roghnaíodh aon seoladh incháilithe",
                 "CONFIRMENROLL": "Tá tú ar tí clárú mar Ghobharnóir. Seolfar idirbheart leis an gcomhthaobhacht riachtanach chuig an gconradh rialachais leis seo. Is féidir leat díchlárú ag am ar bith.",
                 "ISGOVERNORTITLE": "Is Gobharnóir gníomhach thú!",
                 "ISGOVERNORDETAIL1": "Tá na Gobharnóirí freagrach as vótáil ar bhuiséid mhíosúla agus ar athruithe ar an blockchain.",
                 "ISGOVERNORDETAIL2": "Chun fanacht i do Ghobharnóir beidh ort páirt a ghlacadh i vóta amháin ar a laghad gach 30 lá.",
                 "ISGOVERNORDETAIL3": "Mura bhfuil aon rud le vótáil air, is féidir leat leanúint de láimh le do chlárú trí ping gníomhach a sheoladh.",
+                "MYGOVERNORADDRESS": "Seoladh mo Ghobharnóra",
                 "UNENROLL": "Díchláraigh",
                 "PING": "Seol Ping Gníomhach",
                 "LASTPINGTITLE": "An ping deireanach",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "laethanta",
                 "GOVERNORVOTEMATURITYHOURS": "uaireanta",
                 "GOVERNORVOTEMATURITYSUFFIX": "go dtí go mbeidh siad aibí",
-                "MYGOVERNORADDRESS": "Seoladh mo Ghobharnóra",
-                "SELECTAGOVERNOR": "Roghnaigh seoladh gobharnóra incháilithe",
-                "GOVERNORNOTSELECTED": "Níor roghnaíodh aon seoladh incháilithe",
                 "NOTFULLYSYNCEDTITLE": "Stádas an Ghobharnóra ar fáil",
                 "NOTFULLYSYNCEDDETAIL": "Beidh do stádas clárúcháin mar Ghobharnóir le feiceáil nuair a bheidh do blockchain sioncrónaithe go hiomlán.",
                 "DGPMIGRATIONTITLE": "Imirce DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Tá do thogra cruthaithe go rathúil",
             "ENROLLINGGOVERNOR": "Ag clárú mar Ghobharnóir...",
             "ENROLLEDGOVERNOR": "Beidh do chlárú críochnaithe a luaithe a bheidh d’idirbheart deimhnithe",
-            "VOTINGONPROPOSAL": "Vóta togra á sheoladh",
-            "VOTEDONPROPOSAL": "Déanfar do vóta a chomhaireamh a luaithe a bheidh an t-idirbheart deimhnithe.",
             "PINGINGGOVERNOR": "Ag seoladh ping...",
             "PINGEDGOVERNOR": "Seoltar an ping go rathúil. Cuirfear do Ghobharnóir ar an eolas nuair a bheidh an t-idirbheart deimhnithe.",
+            "VOTINGONPROPOSAL": "Vóta togra á sheoladh",
+            "VOTEDONPROPOSAL": "Déanfar do vóta a chomhaireamh a luaithe a bheidh an t-idirbheart deimhnithe.",
             "UNENROLLINGGOVERNOR": "Ag díchlárú an Ghobharnóra...",
             "UNENROLLEDGOVERNOR": "Idirbheart seolta. Díchlárófar do Ghobharnóir a luaithe a dheimhneofar an t-idirbheart.",
             "GOVERNORNOTMATURE": "Níl do Ghobharnóir aibí go leor chun an gníomh seo a dhéanamh fós"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Ceannaigh Metrix",
+                "SEARCH": "Stair"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Seolann tú",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Stair Idirbheart",
                 "SEARCHBUTTON": "CUARDAIGH",
+                "SEARCHPLACEHOLDER": "Cuir isteach seoladh MRX nó BTC",
                 "TRANSACTIONDATE": "Dáta",
                 "TRANSACTIONTYPE": "Cineál TX",
                 "TRANSACTIONAMOUNT": "Méid",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Deimhnithe",
                 "TRANSACTIONNOTCONFIRMED": "Gan Deimhniú",
                 "TRANSACTIONREFUNDED": "Aisíocaíocht - Faoi bhun an íosmhéid",
-                "AVGSWAPPRICE": "Meánphraghas Malartaithe",
-                "SEARCHPLACEHOLDER": "Cuir isteach seoladh MRX nó BTC"
+                "AVGSWAPPRICE": "Meánphraghas Malartaithe"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ag Giniúint Seoladh Malartaithe...",
             "ALREADYHAVEADDRESS": "Tá seoladh BTC agat cheana féin atá nasctha leis an seoladh Metrix seo",
             "NOADDRESS": "Níor chuir tú seoladh Metrix isteach"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Ceannaigh Metrix",
-                "SEARCH": "Stair"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Nochtadh",
                 "EMPTYTITLE": "Níor aimsíodh aon chomharthaí fós",
                 "EMPTYDETAIL": "Déanann Altitude seiceáil uathoibríoch ar thaiscéalaí bloc le haghaidh comharthaí MRC20 agus MRC721 a sheoltar chuig do sheoltaí, agus ansin déanann sé gach rud a fhíorú beo i gcoinne do nóid féin. Is féidir leat comhartha a chur leis de láimh freisin má tá a sheoladh conartha ar eolas agat.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tá seiceáil uathoibríoch comharthaí múchta, mar sin níl do sheoltaí á seiceáil le haghaidh comharthaí. Cas air arís é thuas, nó cuir comhartha leis de láimh má tá a sheoladh conartha ar eolas agat.",
                 "HIDDENTITLE": "Comharthaí Folaithe",
                 "CONTEXTMENUHIDE": "Folaigh Comhartha",
                 "ITEMSSUFFIX": "mír(í)",
-                "NONENUMERABLETOOLTIP": "Ní thacaíonn an bailiúchán seo le míreanna aonair a liostáil - taispeánann sé cé mhéad atá agat ina ionad sin."
+                "NONENUMERABLETOOLTIP": "Ní thacaíonn an bailiúchán seo le míreanna aonair a liostáil - taispeánann sé cé mhéad atá agat ina ionad sin.",
+                "CHECKINGENABLED": "Ag Seiceáil Ar",
+                "CHECKINGDISABLED": "Ag Seiceáil",
+                "CHECKINGENABLEDTOOLTIP": "Tá seiceáil comharthaí ar siúl - Déanann Altitude seiceáil tréimhsiúil ar do sheoltaí le haghaidh comharthaí agus athnuachan ar iarmhéideanna. Cliceáil chun é a mhúchadh.",
+                "CHECKINGDISABLEDTOOLTIP": "Tá seiceáil comharthaí múchta - cliceáil chun é a chasadh air arís.",
+                "CHECKINGDISABLEDNOTICE": "Tá seiceáil uathoibríoch comharthaí múchta. Níl do sheoltaí á scanadh le haghaidh comharthaí agus ní dhéanfar iarmhéideanna a nuashonrú. Is féidir leat comhartha a chur leis de láimh fós."
             },
             "ADDTOKEN": {
                 "TITLE": "Cuir Comhartha leis",

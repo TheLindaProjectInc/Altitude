@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "建立帳戶",
             "HIDEEMPTYACCOUNTS": "隱藏未命名的空白帳戶"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "概述",
+            "TRANSACTIONSTAB": "交易",
+            "ADDRESSTABS": "地址"
+        },
         "SEND": {
             "ADDRECIPIENT": "新增收件者",
             "SEND": "傳送",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "日期",
             "TABLECOLUMNS_CONFIRMS": "確認",
             "ALL_SELECTUNSELECT": "全部切換",
+            "TREEMODE": "樹狀模式",
+            "LISTMODE": "列表模式",
             "SENDAVAILABLE": "使用可用餘額",
             "INPUTLOCKED": "輸入框已鎖定。您需要解鎖此輸入框才能使用它。",
             "CONTEXTMENULOCKINPUT": "鎖定輸入",
@@ -38,10 +45,48 @@
             "AFTERFEE": "費用後",
             "QUANTITY": "數量",
             "BYTES": "位元組",
-            "TREEMODE": "樹狀模式",
-            "LISTMODE": "列表模式",
             "ALERTFEECHANGETITLE": "費用變更",
             "ALERTFEECHANGECONTENT": "實際交易手續費高於預期。請確認新的手續費："
+        },
+        "CREATECONTRACT": {
+            "TITLE": "創建合約",
+            "INFO": "透過提交編譯後的字節碼，將智能合約部署到網路。這是鏈的核心功能——部署前請仔細檢查字節碼和 gas 設置，部署操作無法撤銷。",
+            "FROM": "從",
+            "BYTECODE": "位元組碼",
+            "BYTECODEPLACEHOLDER": "貼上編譯後的合約字節碼（十六進位）",
+            "INVALIDBYTECODE": "位元組碼必須是有效的十六進位字串（0-9，a-f），且字元數為偶數。",
+            "GASLIMIT": "氣體極限",
+            "GASLIMITRANGE": "範圍",
+            "GASPRICE": "天然氣價格（每單位天然氣，MRX）",
+            "GASPRICEMIN": "最低限度",
+            "ESTIMATEDMAXCOST": "預計最高成本",
+            "DEPLOYBUTTON": "部署合約",
+            "INCOMPLETEFORM": "請選擇發送方位址，輸入有效的字節碼，並設定有效的 gas 限額/價格。",
+            "HIGHGASPRICETITLE": "高油價",
+            "HIGHGASPRICEINFO": "您設定的 Gas 價格異常高。此次部署可能高達：",
+            "DEPLOYING": "部署合約…",
+            "DEPLOYED": "合約部署已提交",
+            "RESULTTITLE": "部署結果",
+            "STATUS": "地位",
+            "STATUSPENDING": "待確認…",
+            "STATUSCONFIRMED": "已成功部署",
+            "STATUSFAILED": "部署失敗",
+            "TXID": "交易 ID",
+            "SENDER": "寄件人",
+            "CONTRACTADDRESS": "合約地址",
+            "GASUSED": "瓦斯使用",
+            "DONEBUTTON": "完畢",
+            "DEPLOYANOTHERBUTTON": "部署另一個"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "交易",
+            "COPYBLOCKHASH": "複製區塊哈希",
+            "COPYTXID": "複製交易 ID",
+            "COPYACCOUNT": "複製帳號名",
+            "COPYADDRESS": "副本地址",
+            "COPYAMOUNT": "複製金額",
+            "COPTBLOCKINDEX": "複製區塊索引",
+            "EXPLORER": "在區塊瀏覽器中打開"
         },
         "STAKING": {
             "UNLOCK": "解鎖質押功能",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "地址",
             "ENABLED": "已啟用",
-            "STARTBUTTON": "開始本地",
-            "STARTALIASBUTTON": "起始別名",
-            "STARTALLBUTTON": "全部開始",
             "NOMASTERNODES": "您沒有任何主節點。",
             "NOMNOUTPUTS": "未找到主節點輸出。要運行本地主節點，請向您的主節點地址發送 200 萬、500 萬、2500 萬、5000 萬或 1 億枚代幣，並等待 15 次確認。",
+            "STARTBUTTON": "開始本地",
             "STOPBUTTON": "本地停車",
+            "STARTALIASBUTTON": "起始別名",
             "STOPALIASBUTTON": "停止別名",
+            "STARTALLBUTTON": "全部開始",
             "ADDREMOTE": "新增遠端主節點",
             "REMOVEMN": "移除主節點",
             "ADDLOCAL": "設定本地主節點",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "一般的",
                 "COREVERSION": "核心版本",
+                "ALTITUDEVERSION": "高海拔版",
                 "PROTOCOLVERSION": "協定版本",
                 "WALLETVERSION": "錢包.dat 版本",
                 "NETWORKTITLE": "網路",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "主節點數量",
                 "BLOCKCHAINTITLE": "區塊鏈",
                 "NUMBERBLOCKS": "當前區塊數量",
-                "BESTBLOCKTTIME": "最後一個時段",
-                "ALTITUDEVERSION": "高海拔版"
+                "BESTBLOCKTTIME": "最後一個時段"
             },
             "DEBUG": {
                 "CONSOLEINFO": "歡迎使用 Metrix Core RPC 控制台。輸入 help 查看可用指令的概覽。",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "選擇語言"
         },
-        "TRANSACTIONS": {
-            "TITLE": "交易",
-            "COPYBLOCKHASH": "複製區塊哈希",
-            "COPYTXID": "複製交易 ID",
-            "COPYACCOUNT": "複製帳號名",
-            "COPYADDRESS": "副本地址",
-            "COPYAMOUNT": "複製金額",
-            "COPTBLOCKINDEX": "複製區塊索引",
-            "EXPLORER": "在區塊瀏覽器中打開"
+        "CURRENCY": {
+            "TITLE": "選擇顯示貨幣"
         },
         "EXPLORER": {
             "TITLE": "區塊瀏覽器",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "網路",
             "WINDOTAB": "窗戶",
+            "BACKUPTAB": "備份",
+            "EXPLORERTAB": "探索者",
+            "DEVELOPERTAB": "開發者",
             "NETWORK": {
                 "PROXY": "透過 SOCKS5 代理連接",
                 "PROXYIP": "代理IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "關閉時最小化",
                 "BEHAVIOURTITLE": "系統托盤和視窗行為"
             },
-            "BACKUPTAB": "備份",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "自動備份",
                 "ENABLED": "按排程自動備份 wallet.dat 文件",
                 "ENABLEDINFO": "按計畫建立錢包檔案的最新備份，以便在出現問題時始終可以使用最新副本。",
+                "INTERVALLABEL": "每隔（天）備份一次",
                 "LASTBACKUP": "上次備份：",
                 "NEVERBACKEDUP": "尚未進行自動備份。",
                 "BACKUPNOWBUTTON": "立即備份",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "重設為預設值",
                 "PRUNETITLE": "備份歷史記錄",
                 "PRUNEINFO": "較舊的自動備份將被刪除，因此該資料夾不會無限增長——僅保留以下最新的備份。",
-                "KEEPCOUNTLABEL": "保留最後",
-                "INTERVALLABEL": "每隔（天）備份一次"
+                "KEEPCOUNTLABEL": "保留最後"
             },
-            "EXPLORERTAB": "探索者",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "區塊瀏覽器",
                 "BLOCKEXPLORERINFO": "在區塊瀏覽器中查看交易時（例如，右鍵單擊交易 > 在瀏覽器中查看），網站會開啟。",
@@ -259,25 +298,31 @@
                 "MAINNET": "主網",
                 "TESTNET": "測試網",
                 "REGTEST": "回歸測試"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "開發者模式",
+                "DEVMODEINFO": "預設關閉，僅供開發人員使用。啟用此選項將顯示用於覆蓋 RPC 連線的選項—普通使用者應保持關閉。",
+                "DEVMODELABEL": "啟用開發者模式",
+                "WARNING": "這些設定僅用於開發目的。更改這些設定可能會導致錢包完全無法連接到守護程序——請僅在您清楚自己在做什麼的情況下使用此功能。",
+                "RPCHOSTTITLE": "RPC 連接",
+                "RPCHOSTINFO": "預設情況下，Altitude 會連接到它自身管理的守護進程，該進程位於此機器 (127.0.0.1) 上。覆蓋此設定後，它可以連接到其他守護進程，例如遠端 regtest 實例，而無需在本地運行。如果連線成功，Altitude 將不會下載或啟動其自身的本機守護程式。目標守護程序的 rpcallowip 必須允許此連接，並且下面的 rpcuser/rpcpassword 必須與其配置相符。更改立即生效，無需重新啟動。",
+                "RPCHOSTLABEL": "RPC主機",
+                "RPCPORTLABEL": "RPC埠",
+                "RPCUSERLABEL": "RPC 使用者名稱",
+                "RPCPASSWORDLABEL": "RPC 密碼"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "概述",
-            "TRANSACTIONSTAB": "交易",
-            "ADDRESSTABS": "地址"
-        },
-        "CURRENCY": {
-            "TITLE": "選擇顯示貨幣"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "儀表板",
             "SEND": "傳送",
+            "CREATECONTRACT": "創建合約",
             "RECEIVE": "收到",
             "TRANSACTIONS": "交易",
             "STAKING": "質押",
             "MASTERNODES": "主節點",
+            "EXPLORER": "區塊瀏覽器",
             "SYNC": {
                 "CONNECTING": "連接",
                 "NOBLOCKS": "等待區塊",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "錢包目前未進行質押。",
                 "MASTERNODEON": "主節點目前正在運行",
                 "MASTERNODEOFF": "主節點當前未運行"
-            },
-            "EXPLORER": "區塊瀏覽器"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "輸入 Web3 站台位址",
+            "GOBUTTON": "去",
+            "QUICKLAUNCH": "快速啟動",
+            "DEVTOOLS": "開啟開發者工具",
+            "ADDLINK": "添加連結",
+            "LINKNAMEPLACEHOLDER": "姓名",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "節省",
+            "CANCEL": "取消",
+            "REMOVE": "消除",
+            "REMOVECONFIRM": "移除此快捷連結？",
+            "LINKEXISTS": "該連結已在您的快速啟動清單中。",
+            "LINKINVALID": "請輸入有效的網站地址",
+            "LINKNETWORKLABEL": "網路",
+            "LOADFAILED": "網站載入失敗",
+            "SECURESITE": "連線安全 - 有效的 SSL 憑證",
+            "INSECURESITE": "連線不安全",
+            "INVALIDCERTSITE": "連線不私密 - SSL 憑證無效或不受信任"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "輸入您的錢包密碼",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core 有更新可用。您現在要安裝嗎？",
             "WALLETUPDATETITLE": "海拔更新可用",
             "WALLETUPDATEINFO": "Altitude 有更新可用。您現在想下載嗎？",
+            "WALLETUPDATEREADYTITLE": "海拔更新已準備就緒",
+            "WALLETUPDATEREADYINFO": "更新已下載。現在重新啟動 Altitude 進行安裝嗎？",
+            "WALLETUPDATERESTARTBUTTON": "重新啟動並安裝",
+            "WALLETUPDATELATERBUTTON": "之後",
             "CLIENTUPDATEBUTTON": "更新",
             "CLIENTUPDATECANCELBUTTON": "不要更新",
             "CLIENTUPDATESKIPBUTTON": "跳過此更新",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "您之前對錢包檔案所做的任何備份都應該替換為新產生的加密錢包檔案。出於安全考慮，一旦您開始使用新的加密錢包，先前對未加密錢包檔案的備份將失效。",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core 意外停止運作",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core 出現問題，導致程式終止。建議您檢查 debug.log 檔案以查找問題。",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core 通訊錯誤",
+            "CLIENTUNKNOWNERRORINFO": "與 Metrix Core 通訊時出現問題。建議檢查 debug.log 檔案以查找問題。",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap 失敗",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core啟動時出現問題。建議檢查Altitude日誌檔案以尋找問題。",
+            "BOOTSTRAPOFFERTITLE": "皮夾嚴重過時",
+            "BOOTSTRAPOFFERINFO": "目前有一個最新的引導程序，可以快速將 Metrix Core 更新到最新版本。如果繼續使用常規同步方式，則可能需要幾天才能完成，因為您的錢包需要下載並驗證所有錯過的區塊。",
+            "BOOTSTRAPOFFERBUTTON": "下載 Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "繼續正常同步",
+            "BOOTSTRAPSPACEINFO": "磁碟空間不足，無法下載和解壓引導程式。必填：{required}，可用：{free}。請釋放一些空間，然後再試一次。",
+            "STARTUPFAILEDTITLE": "Metrix Core啟動失敗",
+            "STARTUPFAILEDINFO": "啟動 Metrix Core 時發生錯誤。建議您檢查 Altitude 日誌檔案以尋找問題。",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "恢復工具",
             "CLIENTINVALIDCONFIGTITLE": "無效的 metax.conf 配置",
             "CLIENTINVALIDCONFIGINFO": "您的 metrix.conf 檔案中包含無效的主節點配置，這將導致 Metrix Core 立即退出。請檢查此文件。",
             "ADDREMOTEMNTITLE": "新增遠端主節點",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "主節點私鑰",
             "ADDREMOTEMNTXHASH": "主節點交易哈希",
             "ADDREMOTEMNTXINDEX": "主節點交易指數",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap 失敗",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core啟動時出現問題。建議檢查Altitude日誌檔案以尋找問題。",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "恢復工具",
-            "STARTUPFAILEDTITLE": "Metrix Core啟動失敗",
-            "STARTUPFAILEDINFO": "啟動 Metrix Core 時發生錯誤。建議您檢查 Altitude 日誌檔案以尋找問題。",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core 通訊錯誤",
-            "CLIENTUNKNOWNERRORINFO": "與 Metrix Core 通訊時出現問題。建議檢查 debug.log 檔案以查找問題。",
             "UNENROLLGOVERNORTITLE": "確認州長退選",
             "UNENROLLGOVERNORCONTENT": "您確定要取消您的 Governor 的註冊嗎？您將不再能夠參與鏈治理投票。",
-            "WALLETUPDATEREADYTITLE": "海拔更新已準備就緒",
-            "WALLETUPDATEREADYINFO": "更新已下載。現在重新啟動 Altitude 進行安裝嗎？",
-            "WALLETUPDATERESTARTBUTTON": "重新啟動並安裝",
-            "WALLETUPDATELATERBUTTON": "之後",
             "DAPPCONNECTTITLE": "連接到網站",
             "DAPPCONNECTINFO": "本網站想要連接到您的錢包並查看您的地址和餘額。",
             "DAPPCONNECTBUTTON": "連接",
+            "DAPPCONNECTADDRESSLABEL": "地址",
+            "DAPPAPPROVEBUTTON": "核准",
             "DAPPREJECTBUTTON": "拒絕",
             "DAPPSENDTITLE": "合約交易請求",
             "DAPPSENDINFO": "本網站請求從您的錢包發送一筆合約交易。",
-            "DAPPSIGNTITLE": "簽署資訊請求",
-            "DAPPSIGNINFO": "本網站請求您使用錢包地址簽署一則訊息。",
-            "DAPPNOTREADY": "暫時無法連線到網站 - Metrix Core 仍在啟動中。",
-            "DAPPNOWALLET": "無法連接到網站——沒有可用的錢包地址。",
-            "DAPPAPPROVEBUTTON": "核准",
-            "DAPPCONNECTADDRESSLABEL": "地址",
             "DAPPSENDSITELABEL": "地點",
             "DAPPSENDCONTRACTLABEL": "合約地址",
             "DAPPSENDAMOUNTLABEL": "數量",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "最高網路費用",
             "DAPPSENDMAXTOTALLABEL": "總計",
             "DAPPSENDDATALABEL": "合約數據",
+            "DAPPSIGNTITLE": "簽署資訊請求",
+            "DAPPSIGNINFO": "本網站請求您使用錢包地址簽署一則訊息。",
             "DAPPSIGNMESSAGELABEL": "訊息",
-            "BOOTSTRAPOFFERTITLE": "皮夾嚴重過時",
-            "BOOTSTRAPOFFERINFO": "目前有一個最新的引導程序，可以快速將 Metrix Core 更新到最新版本。如果繼續使用常規同步方式，則可能需要幾天才能完成，因為您的錢包需要下載並驗證所有錯過的區塊。",
-            "BOOTSTRAPOFFERBUTTON": "下載 Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "繼續正常同步",
-            "BOOTSTRAPSPACEINFO": "磁碟空間不足，無法下載和解壓引導程式。必填：{required}，可用：{free}。請釋放一些空間，然後再試一次。"
+            "DAPPNOTREADY": "暫時無法連線到網站 - Metrix Core 仍在啟動中。",
+            "DAPPNOWALLET": "無法連接到網站——沒有可用的錢包地址。"
         },
         "ADDRESSBOOK": {
             "TITLE": "地址簿",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "目前網路"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "輸入 Web3 站台位址",
-            "GOBUTTON": "去",
-            "QUICKLAUNCH": "快速啟動",
-            "DEVTOOLS": "開啟開發者工具",
-            "ADDLINK": "添加連結",
-            "LINKNAMEPLACEHOLDER": "姓名",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "節省",
-            "CANCEL": "取消",
-            "REMOVE": "消除",
-            "REMOVECONFIRM": "移除此快捷連結？",
-            "LINKEXISTS": "該連結已在您的快速啟動清單中。",
-            "LINKINVALID": "請輸入有效的網站地址",
-            "LINKNETWORKLABEL": "網路",
-            "LOADFAILED": "網站載入失敗",
-            "SECURESITE": "連線安全 - 有效的 SSL 憑證",
-            "INSECURESITE": "連線不安全",
-            "INVALIDCERTSITE": "連線不私密 - SSL 憑證無效或不受信任"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "備用錢包...",
             "SIGNMESSAGE": "簽名留言…",
             "VERIFYMESSAGE": "驗證訊息...",
-            "LOCALE": "語言...",
-            "RESTARTCORE": "重新啟動 Metrix Core",
-            "EXIT": "出口",
             "OPTIONS": "選項...",
+            "LOCALE": "語言...",
             "CURRENCIES": "顯示貨幣...",
-            "ALTITUDEREFRESH": "刷新高度數據"
+            "RESTARTCORE": "重新啟動 Metrix Core",
+            "ALTITUDEREFRESH": "刷新高度數據",
+            "EXIT": "出口"
         },
         "ENCRYPT": {
             "TITLE": "加密",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "總餘額",
+        "SPENDABLEBALANCE": "可用餘額",
+        "PENDINGBALANCE": "待處理餘額",
         "CANCELBUTTON": "取消",
         "DONEBUTTON": "完畢",
         "OKBUTTON": "好的",
+        "ACCEPTBUTTON": "接受",
         "CLEARALLBUTTON": "全部清除",
         "ENTERACCOUNTLABEL": "請為此地址輸入標籤",
         "ENTERADDRESSLABEL": "輸入 Metrix 位址",
@@ -464,11 +511,8 @@
         "SORTBY": "排序方式",
         "SEARCH": "搜尋",
         "FEE": "費用",
-        "ACCEPTBUTTON": "接受",
         "CONFIRMED": "確認的",
         "UNCONFIRMED": "未經證實",
-        "PENDINGBALANCE": "待處理餘額",
-        "SPENDABLEBALANCE": "可用餘額",
         "SAVEBUTTON": "節省"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "正在重新啟動 Metrix Core...",
         "BOOTSTRAPPING": "正在下載 Bootstrap...",
         "BOOTSTRAPEXTRACTING": "正在提取引導程式...",
-        "TIMEREMAINING": "其餘的："
+        "TIMEREMAINING": "其餘的：",
+        "DEVRPCOVERRIDEACTIVE": "已設定開發者 RPC 連線覆蓋（選項 > 開發者），但連線無回應。請清除該設定以正常重新連線到本機守護程式。",
+        "DEVRPCOVERRIDECLEARBUTTON": "清除 RPC 覆蓋並重新連接"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "新帳戶創建成功",
         "ADDRESSCOPIEDCLIPBOARD": "位址已複製到剪貼簿",
+        "COPIEDCLIPBOARD": "已複製到剪貼簿",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "交易記錄已複製到剪貼簿",
         "EMPTYFIELDS": "請填寫所有字段",
         "NOUPDATE": "暫無更新",
         "WALLETBACKEDUP": "錢包備份成功",
+        "WALLETBACKUPFAILED": "自動錢包備份失敗 - 請檢查備份位置和可用磁碟空間",
         "PASSPHRASEMISMATCH": "您輸入的密碼短語不匹配",
         "CHECKINGUPDATE": "正在檢查更新...",
         "CHECKINGUPDATEFAILED": "無法檢查更新。請檢查您的網路連線。",
+        "WALLETUPDATEDOWNLOADING": "正在下載更新…",
         "SENDINGEXCEEDSBALANCE": "您發送的金額超過了您選擇的餘額。",
         "MISSINGCHANGEADDRESS": "您必須指定變更位址",
         "MISSINGDESTINATIONADDRESS": "您必須指定目標位址",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "加密錢包…",
         "CHANGINGPASSPHARASE": "更改密碼短語...",
         "STARTINGMASTERNODE": "正在啟動主節點...",
+        "STOPPINGMASTERNODE": "正在停止主節點...",
         "SENDINGTRANSACTION": "正在發送交易...",
         "SIGNINGMESSAGE": "簽名資訊…",
         "SIGNEDMESSAGE": "訊息已簽名",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "正在解鎖錢包…",
         "TRANSACTIONMISMATCH": "交易出錯，請重試。",
         "MINIMUMCONFIRMATIONS": "所有輸入內容至少需要 1 次確認才能消費。",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "交易記錄已複製到剪貼簿",
-        "STOPPINGMASTERNODE": "正在停止主節點...",
         "FAILEDTOWRITECONFIG": "寫入 metrix.conf 檔案時出現問題。請檢查該檔案是否存在，並確認 Altitude 是否具有寫入權限。",
         "NOPUBLICUP": "未找到公網 IP 位址。請檢查您的網路連線並重新啟動 Altitude 裝置。",
         "CONFIGURINGLOCALMN": "正在設定本地主節點...",
         "REPORTINGISSUE": "正在獲取診斷資訊…此資訊將複製到您的剪貼簿。",
-        "WALLETUPDATEDOWNLOADING": "正在下載更新…",
-        "WALLETBACKUPFAILED": "自動錢包備份失敗 - 請檢查備份位置和可用磁碟空間",
         "EXPLORERURLSAVED": "已儲存的 Explorer URL",
         "EXPLORERURLRESET": "瀏覽器 URL 已恢復為預設值",
         "EXPLORERURLINVALID": "那不是一個有效的 http(s) URL",
-        "EXPLORERURLUNREACHABLE": "無法存取該網址 - 請檢查並重試。"
+        "EXPLORERURLUNREACHABLE": "無法存取該網址 - 請檢查並重試。",
+        "DEVRPCHOSTSAVED": "RPC 主機已儲存",
+        "DEVRPCHOSTRESET": "RPC主機已恢復為預設值（127.0.0.1）"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "收到的硬幣",
+        "NEWTRANSACTION_TITLE_STAKE": "已收到股份",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "已收到主節點獎勵"
     },
     "TIME": {
         "AFEWSECONDS": "幾秒鐘",
@@ -533,11 +587,6 @@
         "MONTHS": "幾個月",
         "AYEAR": "一年",
         "YEARS": "年"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "收到的硬幣",
-        "NEWTRANSACTION_TITLE_STAKE": "已收到股份",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "已收到主節點獎勵"
     },
     "MONTH": {
         "JAN": "一月",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "治理者負責對每月預算和區塊鏈變更進行投票。您可以透過在治理合約中鎖定正確的抵押品來成為治理者。",
                 "COLLATERAL": "所需抵押品",
                 "ENROLL": "註冊",
+                "SELECTAGOVERNOR": "選擇符合條件的州長地址",
+                "GOVERNORNOTSELECTED": "未選擇符合條件的地址",
                 "CONFIRMENROLL": "您即將註冊成為理事。此操作將向治理合約發送包含所需抵押品的交易。您可以隨時取消註冊。",
                 "ISGOVERNORTITLE": "您是一位積極進取的州長！",
                 "ISGOVERNORDETAIL1": "各州州長負責對每月預算和區塊鏈變更進行投票表決。",
                 "ISGOVERNORDETAIL2": "要繼續擔任州長，您需要每 30 天至少參加 1 次投票。",
                 "ISGOVERNORDETAIL3": "如果沒有需要投票的內容，您可以發送主動 ping 來手動繼續註冊。",
+                "MYGOVERNORADDRESS": "我的州長致辭",
                 "UNENROLL": "取消註冊",
                 "PING": "發送主動 Ping",
                 "LASTPINGTITLE": "最後一次 ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "天",
                 "GOVERNORVOTEMATURITYHOURS": "小時",
                 "GOVERNORVOTEMATURITYSUFFIX": "直至成熟",
-                "MYGOVERNORADDRESS": "我的州長致辭",
-                "SELECTAGOVERNOR": "選擇符合條件的州長地址",
-                "GOVERNORNOTSELECTED": "未選擇符合條件的地址",
                 "NOTFULLYSYNCEDTITLE": "州長狀態不可用",
                 "NOTFULLYSYNCEDDETAIL": "當您的區塊鏈完全同步後，您的州長註冊狀態將會顯示出來。",
                 "DGPMIGRATIONTITLE": "DGP遷移",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "您的提案已成功建立。",
             "ENROLLINGGOVERNOR": "報名參選州長…",
             "ENROLLEDGOVERNOR": "您的註冊將在交易確認後完成。",
-            "VOTINGONPROPOSAL": "發送提案投票",
-            "VOTEDONPROPOSAL": "交易確認後，您的投票將被計入。",
             "PINGINGGOVERNOR": "正在發送 ping 請求...",
             "PINGEDGOVERNOR": "Ping 已成功發送。交易確認後，您的 Governor 將會收到更新通知。",
+            "VOTINGONPROPOSAL": "發送提案投票",
+            "VOTEDONPROPOSAL": "交易確認後，您的投票將被計入。",
             "UNENROLLINGGOVERNOR": "取消州長資格…",
             "UNENROLLEDGOVERNOR": "交易已發送。交易確認後，您的州長將被取消註冊。",
             "GOVERNORNOTMATURE": "您的州長還不夠成熟，無法採取這項行動。"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "購買 Metrix",
+                "SEARCH": "歷史"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "你發送",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "交易歷史記錄",
                 "SEARCHBUTTON": "搜尋",
+                "SEARCHPLACEHOLDER": "輸入 MRX 或 BTC 位址",
                 "TRANSACTIONDATE": "日期",
                 "TRANSACTIONTYPE": "TX 類型",
                 "TRANSACTIONAMOUNT": "數量",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "確認的",
                 "TRANSACTIONNOTCONFIRMED": "尚未確認",
                 "TRANSACTIONREFUNDED": "已退款 - 低於最低限額",
-                "AVGSWAPPRICE": "平均互換價格",
-                "SEARCHPLACEHOLDER": "輸入 MRX 或 BTC 位址"
+                "AVGSWAPPRICE": "平均互換價格"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "正在產生交換地址...",
             "ALREADYHAVEADDRESS": "您已有一個與此 Metrix 位址關聯的 BTC 位址",
             "NOADDRESS": "您未輸入 Metrix 位址"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "購買 Metrix",
-                "SEARCH": "歷史"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "取消隱藏",
                 "EMPTYTITLE": "尚未找到令牌",
                 "EMPTYDETAIL": "Altitude 會自動檢查區塊瀏覽器，尋找發送到您地址的 MRC20 和 MRC721 代幣，然後使用您自己的節點即時驗證所有資訊。如果您知道代幣的合約地址，也可以手動新增。",
+                "EMPTYDETAILCHECKINGDISABLED": "自動代幣檢查功能已關閉，因此系統不會檢查您的地址是否有代幣。請在上方重新啟用此功能，或者如果您知道代幣的合約地址，您也可以手動新增代幣。",
                 "HIDDENTITLE": "隱藏令牌",
                 "CONTEXTMENUHIDE": "隱藏令牌",
                 "ITEMSSUFFIX": "專案)",
-                "NONENUMERABLETOOLTIP": "此收藏夾不支援列出單一商品，而是顯示您擁有的商品數量。"
+                "NONENUMERABLETOOLTIP": "此收藏夾不支援列出單一商品，而是顯示您擁有的商品數量。",
+                "CHECKINGENABLED": "檢查",
+                "CHECKINGDISABLED": "勾選",
+                "CHECKINGENABLEDTOOLTIP": "代幣檢查已開啟 - Altitude 會定期檢查您的地址中的代幣並刷新餘額。點擊即可關閉。",
+                "CHECKINGDISABLEDTOOLTIP": "令牌檢查已關閉 - 點選重新開啟。",
+                "CHECKINGDISABLEDNOTICE": "自動代幣檢查已關閉。您的地址將不會被掃描以查找代幣，餘額也不會更新。您仍然可以手動新增代幣。"
             },
             "ADDTOKEN": {
                 "TITLE": "添加令牌",

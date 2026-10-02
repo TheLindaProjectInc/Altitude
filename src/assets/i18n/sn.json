@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Gadzira Akaunti",
             "HIDEEMPTYACCOUNTS": "Viga Maakaundi Asina Zita"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Pfupiso",
+            "TRANSACTIONSTAB": "Kutengeserana",
+            "ADDRESSTABS": "Kero"
+        },
         "SEND": {
             "ADDRECIPIENT": "Wedzera Mugamuchiri",
             "SEND": "Tumira",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Zuva",
             "TABLECOLUMNS_CONFIRMS": "Zvisimbiso",
             "ALL_SELECTUNSELECT": "Chinja Zvese",
+            "TREEMODE": "Muti weMuti",
+            "LISTMODE": "Nzira Yokunyora",
             "SENDAVAILABLE": "Shandisa mari yasara iripo",
             "INPUTLOCKED": "Zvinoiswa mukati zvakakiyiwa. Uchafanira kuvhura zvinoiswa mukati izvi kuti uzvishandise.",
             "CONTEXTMENULOCKINPUT": "Kiya chinhu chekupinda",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Mushure meMutero",
             "QUANTITY": "Huwandu",
             "BYTES": "Mabhaiti",
-            "TREEMODE": "Muti weMuti",
-            "LISTMODE": "Nzira Yokunyora",
             "ALERTFEECHANGETITLE": "Kuchinja Mari",
             "ALERTFEECHANGECONTENT": "Mari chaiyo yekubhadhara yakakwira kupfuura zvaitarisirwa. Ndapota simbisai muripo mutsva:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Gadzira Chibvumirano",
+            "INFO": "Isa chibvumirano chakangwara kune network nekutumira bytecode yayo yakaunganidzwa. Iri ibasa repakati pecheni - tarisa kaviri marongero ebytecode yako negasi usati waisa, kuisa hakugone kudzoserwa.",
+            "FROM": "Kubva",
+            "BYTECODE": "Kodhi yeByte",
+            "BYTECODEPLACEHOLDER": "Namatira chibvumirano chakabatanidzwa bytecode (hex)",
+            "INVALIDBYTECODE": "Bytecode inofanira kunge iri tambo yehex inoshanda (0-9, a-f) ine nhamba yakaenzana yemavara",
+            "GASLIMIT": "Muganho weGasi",
+            "GASLIMITRANGE": "Range",
+            "GASPRICE": "Mutengo weGasi (MRX pagasi rega rega)",
+            "GASPRICEMIN": "Chishoma",
+            "ESTIMATEDMAXCOST": "Mutengo wepamusoro unofungidzirwa",
+            "DEPLOYBUTTON": "Chibvumirano Chekutumira Basa",
+            "INCOMPLETEFORM": "Ndapota sarudza kero yekutumira, isa bytecode inoshanda, uye isa muganho wegesi/mutengo unoshanda",
+            "HIGHGASPRICETITLE": "Mutengo weGasi Wakakwira",
+            "HIGHGASPRICEINFO": "Mutengo wepeturu wawakasarudza wakakwira zvisingawanzoitiki. Kuisa peturu uku kunogona kudhura kusvika ku:",
+            "DEPLOYING": "Kuisa chibvumirano pabasa...",
+            "DEPLOYED": "Kutumirwa kwechibvumirano kwapihwa",
+            "RESULTTITLE": "Mhedzisiro yeKutumirwa kweVashandi",
+            "STATUS": "Chinzvimbo",
+            "STATUSPENDING": "Kumirira kusimbiswa...",
+            "STATUSCONFIRMED": "Yabudirira kushandiswa",
+            "STATUSFAILED": "Kutumirwa kwakundikana",
+            "TXID": "ID yekutengeserana",
+            "SENDER": "Mutumi",
+            "CONTRACTADDRESS": "Kero Yechibvumirano",
+            "GASUSED": "Gasi Rinoshandiswa",
+            "DONEBUTTON": "Zvaitwa",
+            "DEPLOYANOTHERBUTTON": "Isa Mumwe"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Kutengeserana",
+            "COPYBLOCKHASH": "Kopi yeHash Block",
+            "COPYTXID": "Kopi ID yekutengeserana",
+            "COPYACCOUNT": "Kopa Zita reAkaunti",
+            "COPYADDRESS": "Kopa Kero",
+            "COPYAMOUNT": "Kopi yeMari",
+            "COPTBLOCKINDEX": "Kopi yeBhokisi reBhokisi",
+            "EXPLORER": "Vhura muBlock Explorer"
         },
         "STAKING": {
             "UNLOCK": "Vhura Kuti Uise Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Kero",
             "ENABLED": "Yakagoneswa",
-            "STARTBUTTON": "Tanga Nzvimbo Yemunharaunda",
-            "STARTALIASBUTTON": "Tanga zita rekuti \"Ani\"",
-            "STARTALLBUTTON": "Tanga Zvese",
             "NOMASTERNODES": "Hauna ma masternode",
             "NOMNOUTPUTS": "Hapana zvakabuda paMasternode. Kuti ushandise Masternode yemuno tumira mari inosvika mamiriyoni 2, 5, 25, 50 kana 100 kukero yako yeMasternode womirira zvisimbiso gumi neshanu.",
+            "STARTBUTTON": "Tanga Nzvimbo Yemunharaunda",
             "STOPBUTTON": "Mira Munharaunda",
+            "STARTALIASBUTTON": "Tanga zita rekuti \"Ani\"",
             "STOPALIASBUTTON": "Zita rekuti Mira",
+            "STARTALLBUTTON": "Tanga Zvese",
             "ADDREMOTE": "Wedzera Remote Masternode",
             "REMOVEMN": "Bvisa Masternode",
             "ADDLOCAL": "Gadzirisa Masternode Yemunharaunda",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Mukuru",
                 "COREVERSION": "Shanduro Yepakati",
+                "ALTITUDEVERSION": "Shanduro yeKukwira",
                 "PROTOCOLVERSION": "Shanduro yeProtocol",
                 "WALLETVERSION": "Shanduro yeWallet.dat",
                 "NETWORKTITLE": "Network",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Nhamba yeMasternodes",
                 "BLOCKCHAINTITLE": "Cheni yeBlock",
                 "NUMBERBLOCKS": "Nhamba yezvino yeblocks",
-                "BESTBLOCKTTIME": "Nguva yekupedzisira yekuvhara",
-                "ALTITUDEVERSION": "Shanduro yeKukwira"
+                "BESTBLOCKTTIME": "Nguva yekupedzisira yekuvhara"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Tinokugamuchirai kuMetrix Core RPC console. Nyora rubatsiro kuti uwane ruzivo rwemirairo iripo.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Sarudza Mutauro"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Kutengeserana",
-            "COPYBLOCKHASH": "Kopi yeHash Block",
-            "COPYTXID": "Kopi ID yekutengeserana",
-            "COPYACCOUNT": "Kopa Zita reAkaunti",
-            "COPYADDRESS": "Kopa Kero",
-            "COPYAMOUNT": "Kopi yeMari",
-            "COPTBLOCKINDEX": "Kopi yeBhokisi reBhokisi",
-            "EXPLORER": "Vhura muBlock Explorer"
+        "CURRENCY": {
+            "TITLE": "Sarudza Mari Yekuratidzira"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Network",
             "WINDOTAB": "Hwindo",
+            "BACKUPTAB": "Backup",
+            "EXPLORERTAB": "Muongorori",
+            "DEVELOPERTAB": "Mugadziri",
             "NETWORK": {
                 "PROXY": "Batanidza uchishandisa proxy yeSOCKS5",
                 "PROXYIP": "IP yemumiririri",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Deredza zvishoma kana wavhara",
                 "BEHAVIOURTITLE": "System Tray & Mafambiro Emahwindo"
             },
-            "BACKUPTAB": "Backup",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Backup otomatiki",
                 "ENABLED": "Chengetedza otomatiki backup yewallet.dat pane purogiramu",
                 "ENABLEDINFO": "Inogadzira backup itsva yefaira rako rechikwama panguva yakatarwa, saka kopi yazvino inogara iripo kana paine chisina kumira zvakanaka.",
+                "INTERVALLABEL": "Dzorera shure (mazuva ese)",
                 "LASTBACKUP": "Backup yekupedzisira:",
                 "NEVERBACKEDUP": "Hapana backup yakaitwa otomatiki parizvino.",
                 "BACKUPNOWBUTTON": "Dzokera Kumashure Iye Zvino",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Dzorerazve kuDefault",
                 "PRUNETITLE": "Nhoroondo Yekuchengetedza",
                 "PRUNEINFO": "Makopi ekare ekuchengetedza otomatiki anodzimwa kuitira kuti folda iyi isakure nekusingaperi - achangoburwa ari pazasi ndiwo anochengetwa.",
-                "KEEPCOUNTLABEL": "Chengeta pekupedzisira",
-                "INTERVALLABEL": "Dzorera shure (mazuva ese)"
+                "KEEPCOUNTLABEL": "Chengeta pekupedzisira"
             },
-            "EXPLORERTAB": "Muongorori",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Nzvimbo iyi yakavhurwa painoona kutengeserana pa block explorer (semuenzaniso tinya kurudyi pakutengeserana > Tarisa paExplorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Maitiro Ekugadzira",
+                "DEVMODEINFO": "Dzima zvachose uye yakagadzirirwa vagadziri chete. Kugonesa izvi kunoratidza sarudzo dzekudzima kubatana kweRPC - vashandisi vakajairwa vanofanira kusiya izvi.",
+                "DEVMODELABEL": "Bvumira Mode Yekugadzira",
+                "WARNING": "Marongero aya ndeekugadzira chete. Kuachinja kunogona kudzivirira wallet kuti isabatane ne daemon zvachose - shandisa izvi chete kana uchiziva zvauri kuita.",
+                "RPCHOSTTITLE": "Kubatanidza RPC",
+                "RPCHOSTINFO": "Nekuda kweizvozvo, Altitude inobatanidza nedaemon yainozvibata pachayo, pamuchina uyu (127.0.0.1). Kupfuura izvi kunoita kuti ibatanidzwe kune imwe daemon - semuenzaniso remote regtest instance, pasina chikonzero chekumhanyisa imwe munharaunda. Kana kubatana kwacho kukabudirira, Altitude haizodhawunirodha kana kutanga daemon yayo yemuno. rpcallowip yedaemon yakanangana inofanira kubvumidza kubatana uku, uye rpcuser/rpcpassword iri pazasi inofanira kuenderana nemagadzirirwo ayo. Inoshanda ipapo ipapo, hapana kutangazve kunodiwa.",
+                "RPCHOSTLABEL": "Mugamuchiri weRPC",
+                "RPCPORTLABEL": "Chiteshi cheRPC",
+                "RPCUSERLABEL": "Zita rekushandisa reRPC",
+                "RPCPASSWORDLABEL": "Password yeRPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Pfupiso",
-            "TRANSACTIONSTAB": "Kutengeserana",
-            "ADDRESSTABS": "Kero"
-        },
-        "CURRENCY": {
-            "TITLE": "Sarudza Mari Yekuratidzira"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Tumira",
+            "CREATECONTRACT": "Gadzira Chibvumirano",
             "RECEIVE": "Gamuchira",
             "TRANSACTIONS": "Kutengeserana",
             "STAKING": "Kuisa Staking",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "Kubatanidza",
                 "NOBLOCKS": "Kumirira mabhuroko",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Chikwama chemari hachisi kutengeswa pari zvino",
                 "MASTERNODEON": "Masternode iri kushanda pari zvino",
                 "MASTERNODEOFF": "Masternode haisi kushanda parizvino"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Isa kero yewebhusaiti ye3",
+            "GOBUTTON": "Enda",
+            "QUICKLAUNCH": "Kutanga Kukurumidza",
+            "DEVTOOLS": "Vhura Zvishandiso zveVagadziri",
+            "ADDLINK": "Wedzera Chinongedzo",
+            "LINKNAMEPLACEHOLDER": "Zita",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Chengetedza",
+            "CANCEL": "Dzima",
+            "REMOVE": "Bvisa",
+            "REMOVECONFIRM": "Bvisa iyi link inokurumidza?",
+            "LINKEXISTS": "Chinongedzo ichocho chatove pane rondedzero yako yekuburitswa nekukurumidza",
+            "LINKINVALID": "Isa kero yewebhusaiti yakakodzera",
+            "LINKNETWORKLABEL": "Network",
+            "LOADFAILED": "Takundikana kurodha saiti",
+            "SECURESITE": "Kubatana kwakachengeteka - chitupa cheSSL chiri kushanda",
+            "INSECURESITE": "Kubatana hakuna kuchengetedzeka",
+            "INVALIDCERTSITE": "Kubatana hakusi kwepachivande - chitupa cheSSL hachina kushanda kana kuti hachina kuvimbika"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Isa Password Yechikwama Chako",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Pane imwe update iripo yeMetrix Core. Ungada kuiisa izvozvi here?",
             "WALLETUPDATETITLE": "Kuvandudzwa kweAltitude Kuripo",
             "WALLETUPDATEINFO": "Pane imwe update yeAltitude iripo. Ungada kuidhawunirodha izvozvi here?",
+            "WALLETUPDATEREADYTITLE": "Kugadziriswa Kwekukwira Kwenzvimbo Kwakagadzirira",
+            "WALLETUPDATEREADYINFO": "Chigadziriso ichi chatorwa. Tangazve Altitude kuti uchiise here?",
+            "WALLETUPDATERESTARTBUTTON": "Tangazve & Isa",
+            "WALLETUPDATELATERBUTTON": "Gare gare",
             "CLIENTUPDATEBUTTON": "Zvichangobva Kuitika",
             "CLIENTUPDATECANCELBUTTON": "Usagadzirise",
             "CLIENTUPDATESKIPBUTTON": "Siyai Chiziviso ichi",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Chero ma backup awakamboita efaira rako rewallet anofanira kutsiviwa nefaira rewallet rakagadzirwa, rakavharirwa. Nekuda kwekuchengetedza, ma backup ekare efaira rewallet risina kuvharirwa haazoshandi kana wangotanga kushandisa wallet itsva, yakavharirwa.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Yakamira Zvisingatarisirwi",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Paiva nedambudziko neMetrix Core rakaita kuti igumiswe. Zvinokurudzirwa kuti utarise faira rako re debug.log kuti uone kana paine matambudziko.",
+            "CLIENTUNKNOWNERRORTITLE": "Chikanganiso chekutaurirana cheMetrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Paive nedambudziko pakutaurirana neMetrix Core. Zvinokurudzirwa kuti utarise faira rako re debug.log kuti uone kana paine matambudziko.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Yakundikana",
+            "BOOTSTRAPFAILEDINFO": "Pakave nedambudziko pakugadzirisa Metrix Core. Zvinokurudzirwa kuti utarise faira rako reAltitude log kuti uone kana paine matambudziko.",
+            "BOOTSTRAPOFFERTITLE": "Chikwama Chemari Chisina Kushanda Zvakakwana",
+            "BOOTSTRAPOFFERINFO": "Pane bootstrap yazvino iripo inogona kukurumidza kugadzirisa Metrix Core. Kuramba uchibatanidza zvinhu nenzira yakajairika kunogona kutora mazuva akati wandei kuti ipere, sezvo wallet yako ichida kudhawunirodha uye kusimbisa block yega yega yawarasikirwa nayo.",
+            "BOOTSTRAPOFFERBUTTON": "Dhawunirodha Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Ramba Uchibatanidza Zvakajairika",
+            "BOOTSTRAPSPACEINFO": "Hapana nzvimbo yakakwana yedhisiki yekudhawunirodha nekuburitsa bootstrap. Inodiwa: {inodiwa}, Inowanikwa: {yemahara}. Bvisa imwe nzvimbo woedza zvakare.",
+            "STARTUPFAILEDTITLE": "Kutanga kweMetrix Core Kwakundikana",
+            "STARTUPFAILEDINFO": "Pakave nedambudziko pakutanga Metrix Core. Zvinokurudzirwa kuti utarise faira rako reAltitude log kuti uone kana paine matambudziko.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zvishandiso Zvekudzoreredza",
             "CLIENTINVALIDCONFIGTITLE": "Kugadziriswa kwemetrix.conf kusina kunaka",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf yako ine masternode setup isina kushanda iyo ichaita kuti Metrix Core ibude nekukasika. Ndapota tarisa faira iri.",
             "ADDREMOTEMNTITLE": "Wedzera Remote Masternode",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kiyi Yepachivande yeMasternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap Yakundikana",
-            "BOOTSTRAPFAILEDINFO": "Pakave nedambudziko pakugadzirisa Metrix Core. Zvinokurudzirwa kuti utarise faira rako reAltitude log kuti uone kana paine matambudziko.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zvishandiso Zvekudzoreredza",
-            "STARTUPFAILEDTITLE": "Kutanga kweMetrix Core Kwakundikana",
-            "STARTUPFAILEDINFO": "Pakave nedambudziko pakutanga Metrix Core. Zvinokurudzirwa kuti utarise faira rako reAltitude log kuti uone kana paine matambudziko.",
-            "CLIENTUNKNOWNERRORTITLE": "Chikanganiso chekutaurirana cheMetrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Paive nedambudziko pakutaurirana neMetrix Core. Zvinokurudzirwa kuti utarise faira rako re debug.log kuti uone kana paine matambudziko.",
             "UNENROLLGOVERNORTITLE": "Simbisa Kubviswa kweVanyoreri naGavhuna",
             "UNENROLLGOVERNORCONTENT": "Une chokwadi here chekuti unoda kubvisa Gavhuna wako pachigaro? Hauzokwanisi kuvhota pamusoro pekutonga kwecheni.",
-            "WALLETUPDATEREADYTITLE": "Kugadziriswa Kwekukwira Kwenzvimbo Kwakagadzirira",
-            "WALLETUPDATEREADYINFO": "Chigadziriso ichi chatorwa. Tangazve Altitude kuti uchiise here?",
-            "WALLETUPDATERESTARTBUTTON": "Tangazve & Isa",
-            "WALLETUPDATELATERBUTTON": "Gare gare",
             "DAPPCONNECTTITLE": "Batanidza kuSaiti",
             "DAPPCONNECTINFO": "Saiti iyi inoda kubatana newallet yako uye kuona kero yako nebhajeti rako.",
             "DAPPCONNECTBUTTON": "Batanidza",
+            "DAPPCONNECTADDRESSLABEL": "Kero",
+            "DAPPAPPROVEBUTTON": "Bvumidza",
             "DAPPREJECTBUTTON": "Ramba",
             "DAPPSENDTITLE": "Chikumbiro Chekutengeserana Kwechibvumirano",
             "DAPPSENDINFO": "Iyi saiti iri kukumbira kutumira chibvumirano kubva muchikwama chako.",
-            "DAPPSIGNTITLE": "Saina Chikumbiro cheMeseji",
-            "DAPPSIGNINFO": "Saiti iyi iri kukumbira kusaina meseji ine kero yako yechikwama.",
-            "DAPPNOTREADY": "Hazvikwanisike kubatana newebhusaiti parizvino - Metrix Core ichiri kutanga kushanda.",
-            "DAPPNOWALLET": "Haikwanise kubatana newebhusaiti - hapana kero yewallet iripo.",
-            "DAPPAPPROVEBUTTON": "Bvumidza",
-            "DAPPCONNECTADDRESSLABEL": "Kero",
             "DAPPSENDSITELABEL": "Nzvimbo",
             "DAPPSENDCONTRACTLABEL": "Kero Yechibvumirano",
             "DAPPSENDAMOUNTLABEL": "Huwandu",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Mari Yakanyanya Kubhadharwa yeNetwork",
             "DAPPSENDMAXTOTALLABEL": "Huwandu Hwese Hwakanyanya",
             "DAPPSENDDATALABEL": "Ruzivo rweChibvumirano",
+            "DAPPSIGNTITLE": "Saina Chikumbiro cheMeseji",
+            "DAPPSIGNINFO": "Saiti iyi iri kukumbira kusaina meseji ine kero yako yechikwama.",
             "DAPPSIGNMESSAGELABEL": "Mharidzo",
-            "BOOTSTRAPOFFERTITLE": "Chikwama Chemari Chisina Kushanda Zvakakwana",
-            "BOOTSTRAPOFFERINFO": "Pane bootstrap yazvino iripo inogona kukurumidza kugadzirisa Metrix Core. Kuramba uchibatanidza zvinhu nenzira yakajairika kunogona kutora mazuva akati wandei kuti ipere, sezvo wallet yako ichida kudhawunirodha uye kusimbisa block yega yega yawarasikirwa nayo.",
-            "BOOTSTRAPOFFERBUTTON": "Dhawunirodha Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Ramba Uchibatanidza Zvakajairika",
-            "BOOTSTRAPSPACEINFO": "Hapana nzvimbo yakakwana yedhisiki yekudhawunirodha nekuburitsa bootstrap. Inodiwa: {inodiwa}, Inowanikwa: {yemahara}. Bvisa imwe nzvimbo woedza zvakare."
+            "DAPPNOTREADY": "Hazvikwanisike kubatana newebhusaiti parizvino - Metrix Core ichiri kutanga kushanda.",
+            "DAPPNOWALLET": "Haikwanise kubatana newebhusaiti - hapana kero yewallet iripo."
         },
         "ADDRESSBOOK": {
             "TITLE": "Bhuku reKero",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Network iripo parizvino"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Isa kero yewebhusaiti ye3",
-            "GOBUTTON": "Enda",
-            "QUICKLAUNCH": "Kutanga Kukurumidza",
-            "DEVTOOLS": "Vhura Zvishandiso zveVagadziri",
-            "ADDLINK": "Wedzera Chinongedzo",
-            "LINKNAMEPLACEHOLDER": "Zita",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Chengetedza",
-            "CANCEL": "Dzima",
-            "REMOVE": "Bvisa",
-            "REMOVECONFIRM": "Bvisa iyi link inokurumidza?",
-            "LINKEXISTS": "Chinongedzo ichocho chatove pane rondedzero yako yekuburitswa nekukurumidza",
-            "LINKINVALID": "Isa kero yewebhusaiti yakakodzera",
-            "LINKNETWORKLABEL": "Network",
-            "LOADFAILED": "Takundikana kurodha saiti",
-            "SECURESITE": "Kubatana kwakachengeteka - chitupa cheSSL chiri kushanda",
-            "INSECURESITE": "Kubatana hakuna kuchengetedzeka",
-            "INVALIDCERTSITE": "Kubatana hakusi kwepachivande - chitupa cheSSL hachina kushanda kana kuti hachina kuvimbika"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Chikwama Chekuchengetedza...",
             "SIGNMESSAGE": "Saina Mharidzo...",
             "VERIFYMESSAGE": "Simbisa Mharidzo...",
-            "LOCALE": "Mutauro...",
-            "RESTARTCORE": "Tangazve Metrix Core",
-            "EXIT": "Kubuda",
             "OPTIONS": "Sarudzo...",
+            "LOCALE": "Mutauro...",
             "CURRENCIES": "Mari Yekuratidzira...",
-            "ALTITUDEREFRESH": "Dzokorora Ruzivo rweKukwira"
+            "RESTARTCORE": "Tangazve Metrix Core",
+            "ALTITUDEREFRESH": "Dzokorora Ruzivo rweKukwira",
+            "EXIT": "Kubuda"
         },
         "ENCRYPT": {
             "TITLE": "Nzvera",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Zvose Zvasara",
+        "SPENDABLEBALANCE": "Mari Yasara Inoshandiswa",
+        "PENDINGBALANCE": "Mari Yasara Yakamirira",
         "CANCELBUTTON": "Dzima",
         "DONEBUTTON": "Zvaitwa",
         "OKBUTTON": "Zvakanaka",
+        "ACCEPTBUTTON": "Gamuchira",
         "CLEARALLBUTTON": "Bvisa Zvese",
         "ENTERACCOUNTLABEL": "Isa zita rekero iyi",
         "ENTERADDRESSLABEL": "Isa kero yeMetrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Ronga Ne",
         "SEARCH": "Tsvaga",
         "FEE": "Muripo",
-        "ACCEPTBUTTON": "Gamuchira",
         "CONFIRMED": "Zvasimbiswa",
         "UNCONFIRMED": "Hazvina kusimbiswa",
-        "PENDINGBALANCE": "Mari Yasara Yakamirira",
-        "SPENDABLEBALANCE": "Mari Yasara Inoshandiswa",
         "SAVEBUTTON": "Chengetedza"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Kutangazve Metrix Core...",
         "BOOTSTRAPPING": "Tiri kudhawunirodha bootstrap...",
         "BOOTSTRAPEXTRACTING": "Kubvisa bootstrap...",
-        "TIMEREMAINING": "zvasara:"
+        "TIMEREMAINING": "zvasara:",
+        "DEVRPCOVERRIDEACTIVE": "Kubviswa kwekubatanidza kweRPC yemugadziri kwaiswa (Options > Developer) uye hakusi kupindura. Kubvise kuti ubatanidzezve ku daemon yemuno nguva dzose.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Bvisa RPC Override & Batanidzazve"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akaunti itsva yakagadzirwa zvakanaka",
         "ADDRESSCOPIEDCLIPBOARD": "Kero yakakopwa ku clipboard",
+        "COPIEDCLIPBOARD": "Yakakopwa ku clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Kutengeserana kwakakopwa ku clipboard",
         "EMPTYFIELDS": "Ndapota zadzai minda yese",
         "NOUPDATE": "Hapana update iripo",
         "WALLETBACKEDUP": "Kuchengetedza mari muwallet kwabudirira",
+        "WALLETBACKUPFAILED": "Kuchengetedza mari muwallet otomatiki kwakundikana - tarisa nzvimbo yako yekuchengetedza uye nzvimbo yedhisiki iripo",
         "PASSPHRASEMISMATCH": "Mapassword awakanyora haaenderane",
         "CHECKINGUPDATE": "Tiri kutarisa kuti zvinhu zvitsva here...",
         "CHECKINGUPDATEFAILED": "Hatikwanisi kutarisa kana paine zvitsva. Tarisa network yako.",
+        "WALLETUPDATEDOWNLOADING": "Tiri kudhawunirodha zvichangobva kuitika...",
         "SENDINGEXCEEDSBALANCE": "Mari yauri kutumira inodarika mari yawakasarudza",
         "MISSINGCHANGEADDRESS": "Unofanira kutsanangura kero yekuchinja",
         "MISSINGDESTINATIONADDRESS": "Unofanira kudoma kero yekuenda",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Kunyora chikwama chewallet...",
         "CHANGINGPASSPHARASE": "Kuchinja shoko repasiwedhi...",
         "STARTINGMASTERNODE": "Kutanga masternode...",
+        "STOPPINGMASTERNODE": "Kumisa masternode...",
         "SENDINGTRANSACTION": "Kutumira kutengeserana...",
         "SIGNINGMESSAGE": "Kusaina meseji...",
         "SIGNEDMESSAGE": "Meseji yakasainwa",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Kuvhura chikwama...",
         "TRANSACTIONMISMATCH": "Dambudziko rekutengeserana. Edza zvakare.",
         "MINIMUMCONFIRMATIONS": "Zvese zvinopinda zvinoda kanenge kamwe chete kusimbisa usati washandisa.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Kutengeserana kwakakopwa ku clipboard",
-        "STOPPINGMASTERNODE": "Kumisa masternode...",
         "FAILEDTOWRITECONFIG": "Pakave nedambudziko pakunyora faira rako remetrix.conf. Tarisa kuti faira riripo here uye kuti Altitude ine mvumo yekunyora.",
         "NOPUBLICUP": "Hapana kero yeIP yeruzhinji yakawanikwa. Tarisa internet yako wobva watangazve Altitude.",
         "CONFIGURINGLOCALMN": "Kugadzirisa Masternode yemuno...",
         "REPORTINGISSUE": "Kuwana ruzivo rwekuongorora... Ruzivo urwu ruchakopwa ku clipboard yako.",
-        "WALLETUPDATEDOWNLOADING": "Tiri kudhawunirodha zvichangobva kuitika...",
-        "WALLETBACKUPFAILED": "Kuchengetedza mari muwallet otomatiki kwakundikana - tarisa nzvimbo yako yekuchengetedza uye nzvimbo yedhisiki iripo",
         "EXPLORERURLSAVED": "URL yeExplorer yakachengetedzwa",
         "EXPLORERURLRESET": "URL yeExplorer yakadzoserwa kudefault",
         "EXPLORERURLINVALID": "Iyoyo haisi URL ye http(s) inoshanda",
-        "EXPLORERURLUNREACHABLE": "Haana kukwanisa kusvika pa URL iyoyo - iongorore woedza zvakare"
+        "EXPLORERURLUNREACHABLE": "Haana kukwanisa kusvika pa URL iyoyo - iongorore woedza zvakare",
+        "DEVRPCHOSTSAVED": "RPC host yakachengetedzwa",
+        "DEVRPCHOSTRESET": "RPC host yakadzoserwa ku default (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Mari Dzakagamuchirwa",
+        "NEWTRANSACTION_TITLE_STAKE": "Danda Rakagamuchirwa",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Yakagamuchira Mubairo weMasternode"
     },
     "TIME": {
         "AFEWSECONDS": "Masekondi mashoma",
@@ -533,11 +587,6 @@
         "MONTHS": "mwedzi",
         "AYEAR": "Gore",
         "YEARS": "makore"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Mari Dzakagamuchirwa",
-        "NEWTRANSACTION_TITLE_STAKE": "Danda Rakagamuchirwa",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Yakagamuchira Mubairo weMasternode"
     },
     "MONTH": {
         "JAN": "Ndira",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Magavhuna ane basa rekuvhota mabhajeti emwedzi nemwedzi uye shanduko dze blockchain. Unogona kuva Gavhuna nekuvhara chibatiso chakakodzera muchibvumirano cheHurumende.",
                 "COLLATERAL": "Chibatiso chinodiwa",
                 "ENROLL": "Nyorera",
+                "SELECTAGOVERNOR": "Sarudza kero yagavhuna inokodzera",
+                "GOVERNORNOTSELECTED": "Hapana kero yakakodzera yakasarudzwa",
                 "CONFIRMENROLL": "Wava kuda kunyoresa saGavhuna. Izvi zvichatumira chibvumirano chine chibatiso chinodiwa kuchibvumirano chekutonga. Unogona kubvisa kunyoresa chero nguva.",
                 "ISGOVERNORTITLE": "Uri Gavhuna anoshanda!",
                 "ISGOVERNORDETAIL1": "Magavhuna ane basa rekuvhota mabhajeti emwedzi nemwedzi uye shanduko dze blockchain.",
                 "ISGOVERNORDETAIL2": "Kuti urambe uri Gavhuna uchafanirwa kutora chikamu muvhoti imwe chete mazuva makumi matatu ega ega.",
                 "ISGOVERNORDETAIL3": "Kana pasina chekuvhota, unogona kuramba uchinyoresa nemaoko nekutumira ping inoshanda.",
+                "MYGOVERNORADDRESS": "Kero Yangu yeGavhuna",
                 "UNENROLL": "Bvisa kunyoresa",
                 "PING": "Tumira Active Ping",
                 "LASTPINGTITLE": "Ping yekupedzisira",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "mazuva",
                 "GOVERNORVOTEMATURITYHOURS": "maawa",
                 "GOVERNORVOTEMATURITYSUFFIX": "kusvika yakura",
-                "MYGOVERNORADDRESS": "Kero Yangu yeGavhuna",
-                "SELECTAGOVERNOR": "Sarudza kero yagavhuna inokodzera",
-                "GOVERNORNOTSELECTED": "Hapana kero yakakodzera yakasarudzwa",
                 "NOTFULLYSYNCEDTITLE": "Chinzvimbo chegavhuna hachiwanikwe",
                 "NOTFULLYSYNCEDDETAIL": "Kunyoresa kwako paGavhuna kuchaonekwa kana blockchain yako yanyatsoenderana.",
                 "DGPMIGRATIONTITLE": "Kutama kweDGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Chikumbiro chako chagadzirwa zvinobudirira",
             "ENROLLINGGOVERNOR": "Kunyoresa saGavhuna...",
             "ENROLLEDGOVERNOR": "Kunyoresa kwako kuchapera kana kutengeserana kwako kwasimbiswa",
-            "VOTINGONPROPOSAL": "Kutumira vhoti yekukurudzira",
-            "VOTEDONPROPOSAL": "Vhoti yako ichaverengwa kana kutengeserana kwasimbiswa.",
             "PINGINGGOVERNOR": "Kutumira ping...",
             "PINGEDGOVERNOR": "Ping yatumirwa zvakanaka. Gavhuna wenyu achaziviswa kana kutengeserana kwasimbiswa",
+            "VOTINGONPROPOSAL": "Kutumira vhoti yekukurudzira",
+            "VOTEDONPROPOSAL": "Vhoti yako ichaverengwa kana kutengeserana kwasimbiswa.",
             "UNENROLLINGGOVERNOR": "Kubvisa Gavhuna pachigaro...",
             "UNENROLLEDGOVERNOR": "Kutengeserana kwatumirwa. Gavhuna wako achabviswa pakunyoreswa kana kutengeserana kwasimbiswa",
             "GOVERNORNOTMATURE": "Gavhuna wenyu haasati akura zvakakwana kuti aite izvi"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Tenga Metrix",
+                "SEARCH": "Nhoroondo"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Unotumira",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Nhoroondo yekutengeserana",
                 "SEARCHBUTTON": "Tsvaga",
+                "SEARCHPLACEHOLDER": "Isa kero yeMRX kana BTC",
                 "TRANSACTIONDATE": "Zuva",
                 "TRANSACTIONTYPE": "Rudzi rweTX",
                 "TRANSACTIONAMOUNT": "Huwandu",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Zvasimbiswa",
                 "TRANSACTIONNOTCONFIRMED": "Hazvina Kusimbiswa",
                 "TRANSACTIONREFUNDED": "Mari Yadzoserwa - Pasi pemutengo wepamusana",
-                "AVGSWAPPRICE": "Mutengo weAvhareji weKuchinjana",
-                "SEARCHPLACEHOLDER": "Isa kero yeMRX kana BTC"
+                "AVGSWAPPRICE": "Mutengo weAvhareji weKuchinjana"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Kugadzira Kero Yekuchinjana...",
             "ALREADYHAVEADDRESS": "Watova nekero yeBTC yakabatana nekero iyi yeMetrix",
             "NOADDRESS": "Hamuna kuisa kero yeMetrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Tenga Metrix",
-                "SEARCH": "Nhoroondo"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Bvisa pachena",
                 "EMPTYTITLE": "Hapana Tokeni Dzakawanikwa Pari Zvino",
                 "EMPTYDETAIL": "Altitude inotarisa otomatiki block explorer kuti ione kana paine MRC20 neMRC721 tokens dzakatumirwa kukero dzako, uye yobva yaongorora zvese zviri mhenyu zvichienderana ne node yako. Unogona zvakare kuwedzera token nemaoko kana uchiziva kero yayo yechibvumirano.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kutarisa otomatiki matikiti kunodzimwa, saka kero dzako hadzisi kuongororwa matikiti. Dzima zvakare pamusoro, kana kuwedzera matikiti nemaoko kana uchiziva kero yayo yechibvumirano.",
                 "HIDDENTITLE": "Zviratidzo Zvakavanzwa",
                 "CONTEXTMENUHIDE": "Viga Chiratidzo",
                 "ITEMSSUFFIX": "chinhu(zvinhu)",
-                "NONENUMERABLETOOLTIP": "Muunganidzwa uyu hautsigire kunyora zvinhu zvega zvega - zvichiratidza kuti une zvingani."
+                "NONENUMERABLETOOLTIP": "Muunganidzwa uyu hautsigire kunyora zvinhu zvega zvega - zvichiratidza kuti une zvingani.",
+                "CHECKINGENABLED": "Kutarisa",
+                "CHECKINGDISABLED": "Kubhadhara Mari",
+                "CHECKINGENABLEDTOOLTIP": "Kutarisa zviratidzo kuri kushanda - Altitude inoongorora kero dzako nguva nenguva kuti uone kana paine zviratidzo uye inovandudza mabhiriji. Dzvanya kuti udzime.",
+                "CHECKINGDISABLEDTOOLTIP": "Kutarisa zviratidzo kwadzimwa - tinya kuti uvhure zvakare.",
+                "CHECKINGDISABLEDNOTICE": "Kutarisa otomatiki ma token kwadzimwa. Kero dzako hadzisi kuskenwa kuti uone ma token uye ma balances haagadziriswe. Unogona kuwedzera token nemaoko."
             },
             "ADDTOKEN": {
                 "TITLE": "Wedzera Chiratidzo",

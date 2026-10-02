@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Samee Akoon",
             "HIDEEMPTYACCOUNTS": "Qari Akoonnada Madhan ee aan Magaca Lahayn"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Dulmar Guud",
+            "TRANSACTIONSTAB": "Macaamil ganacsi",
+            "ADDRESSTABS": "Cinwaanada"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ku dar qaataha",
             "SEND": "Dir",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Taariikh",
             "TABLECOLUMNS_CONFIRMS": "Xaqiijinta",
             "ALL_SELECTUNSELECT": "Dhammaan beddel",
+            "TREEMODE": "Qaabka Geedka",
+            "LISTMODE": "Habka Liiska",
             "SENDAVAILABLE": "Isticmaal dheelitirka la heli karo",
             "INPUTLOCKED": "Wax-gelinta waa la xiray. Waxaad u baahan doontaa inaad furto wax-gelintan si aad u isticmaasho.",
             "CONTEXTMENULOCKINPUT": "gelinta qufulka",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Kharashka Kadib",
             "QUANTITY": "Tirada",
             "BYTES": "Baytyada",
-            "TREEMODE": "Qaabka Geedka",
-            "LISTMODE": "Habka Liiska",
             "ALERTFEECHANGETITLE": "Isbeddelka Kharashka",
             "ALERTFEECHANGECONTENT": "Lacagta dhabta ah ee macaamil ganacsigu way ka badan tahay intii la filayay. Fadlan xaqiiji khidmadda cusub:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Samee Qandaraas",
+            "INFO": "Qandaraas caqli badan u geli shabakadda adigoo soo gudbinaya bytecode-keeda la soo ururiyay. Kani waa shaqo silsilad asaasi ah - laba jeer hubi bytecode-kaaga iyo dejimaha gaaska ka hor inta aan la geyn, dejinta lama tirtiri karo.",
+            "FROM": "Laga bilaabo",
+            "BYTECODE": "bytecode",
+            "BYTECODEPLACEHOLDER": "Ku dheji bytecode-ka qandaraaska ee la soo ururiyey (hex)",
+            "INVALIDBYTECODE": "bytecode waa inuu ahaadaa xarig hex ah oo ansax ah (0-9, a-f) oo leh tiro siman oo xarfo ah",
+            "GASLIMIT": "Xadka Gaaska",
+            "GASLIMITRANGE": "Kala duwanaanshaha",
+            "GASPRICE": "Qiimaha Gaaska (MRX halkii cutub ee gaaska)",
+            "GASPRICEMIN": "Ugu Yar",
+            "ESTIMATEDMAXCOST": "Qiimaha ugu badan ee la qiyaasay",
+            "DEPLOYBUTTON": "Qandaraaska Dhigista",
+            "INCOMPLETEFORM": "Fadlan dooro cinwaan soo diraha, geli bytecode sax ah, oo deji xadka/qiimaha gaaska ee saxda ah",
+            "HIGHGASPRICETITLE": "Qiimaha Gaaska Sare",
+            "HIGHGASPRICEINFO": "Qiimaha gaaska ee aad dejisay waa mid aan caadi ahayn oo sarreeya. Hawlgalkan wuxuu ku kici karaa ilaa:",
+            "DEPLOYING": "Qandaraaska dejinta...",
+            "DEPLOYED": "Soo gudbinta qandaraaska ayaa la gudbiyay",
+            "RESULTTITLE": "Natiijada Hawlgalinta",
+            "STATUS": "Xaaladda",
+            "STATUSPENDING": "Xaqiijin ayaa sugeysa...",
+            "STATUSCONFIRMED": "Si guul leh ayaa loo daadgureeyay",
+            "STATUSFAILED": "Hawlgalku wuu fashilmay",
+            "TXID": "Aqoonsiga Macaamilka",
+            "SENDER": "Diraha",
+            "CONTRACTADDRESS": "Cinwaanka Qandaraaska",
+            "GASUSED": "Gaaska la isticmaalay",
+            "DONEBUTTON": "La dhammeeyay",
+            "DEPLOYANOTHERBUTTON": "Dhig Mid Kale"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Macaamil ganacsi",
+            "COPYBLOCKHASH": "Nuqul ka samee Block Hash",
+            "COPYTXID": "Nuqul ka samee Aqoonsiga Macaamilka",
+            "COPYACCOUNT": "Nuqul ka samee Magaca Akoonka",
+            "COPYADDRESS": "Nuqul ka samee Cinwaanka",
+            "COPYAMOUNT": "Nuqul ka samee Lacagta",
+            "COPTBLOCKINDEX": "Nuqul ka samee Tusmada Block-ka",
+            "EXPLORER": "Fur Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Furitaanka Ku-meel-gaarka ah",
@@ -68,13 +113,13 @@
             "IP": "IP-ga",
             "ADDRESS": "Cinwaanka",
             "ENABLED": "La daah-furay",
-            "STARTBUTTON": "Bilow Deegaanka",
-            "STARTALIASBUTTON": "Bilow Magaca",
-            "STARTALLBUTTON": "Bilow Dhammaan",
             "NOMASTERNODES": "Ma lihid wax masternodes ah",
             "NOMNOUTPUTS": "Wax soo saar Masternode ah lama helin. Si aad u socodsiiso Masternode maxalli ah u dir 2,5,25,50 ama 100 milyan oo qadaadiic ah cinwaankaaga Masternode oo sug 15 xaqiijin.",
+            "STARTBUTTON": "Bilow Deegaanka",
             "STOPBUTTON": "Jooji Deegaanka",
+            "STARTALIASBUTTON": "Bilow Magaca",
             "STOPALIASBUTTON": "Jooji Magaca Hore",
+            "STARTALLBUTTON": "Bilow Dhammaan",
             "ADDREMOTE": "Ku dar Masternode Fog",
             "REMOVEMN": "Ka saar Masternode-ka",
             "ADDLOCAL": "Deji Masternode-ka Deegaanka",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Guud ahaan",
                 "COREVERSION": "Nooca Aasaasiga ah",
+                "ALTITUDEVERSION": "Nooca Heerka Sare",
                 "PROTOCOLVERSION": "Nooca Borotokoolka",
                 "WALLETVERSION": "Nooca Wallet.dat",
                 "NETWORKTITLE": "Shabakad",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Tirada Masternodes-ka",
                 "BLOCKCHAINTITLE": "Silsilad Baloog",
                 "NUMBERBLOCKS": "Tirada baloogyada hadda jira",
-                "BESTBLOCKTTIME": "Waqtiga baloogga ugu dambeeya",
-                "ALTITUDEVERSION": "Nooca Heerka Sare"
+                "BESTBLOCKTTIME": "Waqtiga baloogga ugu dambeeya"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Kusoo dhawoow qalabka Metrix Core RPC. Ku qor caawimo si aad u hesho dulmar guud oo ku saabsan amarrada la heli karo.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Xullo Luqad"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Macaamil ganacsi",
-            "COPYBLOCKHASH": "Nuqul ka samee Block Hash",
-            "COPYTXID": "Nuqul ka samee Aqoonsiga Macaamilka",
-            "COPYACCOUNT": "Nuqul ka samee Magaca Akoonka",
-            "COPYADDRESS": "Nuqul ka samee Cinwaanka",
-            "COPYAMOUNT": "Nuqul ka samee Lacagta",
-            "COPTBLOCKINDEX": "Nuqul ka samee Tusmada Block-ka",
-            "EXPLORER": "Fur Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Xullo Lacagta Muujisa"
         },
         "EXPLORER": {
             "TITLE": "Baloogga Sahamiyaha",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Shabakad",
             "WINDOTAB": "Daaqadda",
+            "BACKUPTAB": "Kaydinta",
+            "EXPLORERTAB": "Sahamiye",
+            "DEVELOPERTAB": "Horumariye",
             "NETWORK": {
                 "PROXY": "Ku xidh SOCKS5 proxy",
                 "PROXYIP": "IP-ga Wakiilka ah",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Yaree marka la xiro",
                 "BEHAVIOURTITLE": "Saxanka Nidaamka & Dhaqanka Daaqadda"
             },
-            "BACKUPTAB": "Kaydinta",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Kaydinta Tooska ah",
                 "ENABLED": "Si toos ah ugu kaydi wallet.dat jadwalka",
                 "ENABLEDINFO": "Waxay abuurtaa kayd cusub oo faylka jeebkaaga ah oo jadwal ku jira, si nuqul dhawaan ah had iyo jeer loo heli karo haddii wax qaldamaan.",
+                "INTERVALLABEL": "Dib u soo celi (maalmo kasta)",
                 "LASTBACKUP": "Kaydintii ugu dambeysay:",
                 "NEVERBACKEDUP": "Wali lama samayn kayd otomaatig ah.",
                 "BACKUPNOWBUTTON": "Dib u soo celi Hadda",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Dib ugu celi sidii caadiga ahayd",
                 "PRUNETITLE": "Taariikhda Kaydinta",
                 "PRUNEINFO": "Kaydka otomaatiga ah ee hore waa la tirtiraa si faylkani uusan weligiis u korin - kuwa ugu dambeeyay ee hoose oo keliya ayaa la hayaa.",
-                "KEEPCOUNTLABEL": "Hayso ugu dambeyn",
-                "INTERVALLABEL": "Dib u soo celi (maalmo kasta)"
+                "KEEPCOUNTLABEL": "Hayso ugu dambeyn"
             },
-            "EXPLORERTAB": "Sahamiye",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Baloogga Sahamiyaha",
                 "BLOCKEXPLORERINFO": "Goobtu waxay furantay markii la daawanayay macaamil ganacsi oo ku jira baloogga sahamiyaha (tusaale ahaan, guji midig-guji macaamil ganacsi > Ka eeg Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Shabakadda weyn",
                 "TESTNET": "Shabakadda Tijaabada",
                 "REGTEST": "Diiwaan-gelinta"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Habka Horumariyaha",
+                "DEVMODEINFO": "Dami caadi ahaan waxaana loogu talagalay horumariyayaasha oo keliya. Awoodsiinta tan waxay muujineysaa ikhtiyaarro lagu beddeli karo xiriirka RPC - isticmaalayaasha caadiga ah waa inay ka tagaan tan.",
+                "DEVMODELABEL": "Daar Habka Horumariyaha",
+                "WARNING": "Dejintan waxaa loogu talagalay ujeeddooyin horumarineed oo keliya. Beddelkooda waxay ka hortagi kartaa in boorsada jeebka ay ku xirto jinni gabi ahaanba - isticmaal tan oo keliya haddii aad taqaanid waxaad samaynayso.",
+                "RPCHOSTTITLE": "Xiriirka RPC",
+                "RPCHOSTINFO": "Sida caadiga ah, Altitude waxay ku xiran tahay daemon-ka ay iskeed u maamusho, mashiinkan (127.0.0.1). Ka-dhaafidda kuwan waxay u oggolaanaysaa inay ku xidho daemon kale - tusaale ahaan tusaale regtest fog, iyada oo aan loo baahnayn in mid lagu socodsiiyo gudaha. Haddii xiriirku guuleysto, Altitude ma soo dejisan doonto ama ma bilaabi doonto daemon-keeda maxalliga ah. rpcallowip-ka daemon ee bartilmaameedka ah waa inuu oggolaadaa xiriirkan, rpcuser/rpcpassword-ka hoose waa inuu la mid noqdaa habayntiisa. Isla markiiba ayuu dhaqan galayaa, dib-u-bilaabis looma baahna.",
+                "RPCHOSTLABEL": "Martigeliyaha RPC",
+                "RPCPORTLABEL": "Dekedda RPC",
+                "RPCUSERLABEL": "Magaca isticmaalaha RPC",
+                "RPCPASSWORDLABEL": "RPC Password"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Dulmar Guud",
-            "TRANSACTIONSTAB": "Macaamil ganacsi",
-            "ADDRESSTABS": "Cinwaanada"
-        },
-        "CURRENCY": {
-            "TITLE": "Xullo Lacagta Muujisa"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard-ka",
             "SEND": "Dir",
+            "CREATECONTRACT": "Samee Qandaraas",
             "RECEIVE": "Hel",
             "TRANSACTIONS": "Macaamil ganacsi",
             "STAKING": "Kala-goynta",
             "MASTERNODES": "Mastarro yaryar",
+            "EXPLORER": "Baloogga Sahamiyaha",
             "SYNC": {
                 "CONNECTING": "Isku xiraya",
                 "NOBLOCKS": "Sugitaanka baloogyada",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Boorsada jeebka hadda ma aha mid la kala iibsanayo",
                 "MASTERNODEON": "Masternode hadda wuu shaqeynayaa",
                 "MASTERNODEOFF": "Masternode hadda ma shaqeynayo"
-            },
-            "EXPLORER": "Baloogga Sahamiyaha"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Geli cinwaanka bogga shabakadda3",
+            "GOBUTTON": "Tag",
+            "QUICKLAUNCH": "Bilaabid Degdeg ah",
+            "DEVTOOLS": "Qalabka Horumariyaha Furan",
+            "ADDLINK": "Ku dar Xiriir",
+            "LINKNAMEPLACEHOLDER": "Magaca",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Keydi",
+            "CANCEL": "Jooji",
+            "REMOVE": "Ka saar",
+            "REMOVECONFIRM": "Ka saar xiriirkan degdega ah?",
+            "LINKEXISTS": "Xiriiriyahaasi wuxuu horey ugu jiray liiskaaga bilaabista degdegga ah",
+            "LINKINVALID": "Geli cinwaan goob oo sax ah",
+            "LINKNETWORKLABEL": "Shabakad",
+            "LOADFAILED": "Ku guuldareystay in la soo raro goobta",
+            "SECURESITE": "Xiriirku waa ammaan - shahaadada SSL oo ansax ah",
+            "INSECURESITE": "Xidhiidhku ammaan ma aha",
+            "INVALIDCERTSITE": "Xiriirku ma aha mid gaar ah - shahaadada SSL ee aan ansax ahayn ama aan la aamini karin"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Geli Furaha Sirta ah ee Boorsadaada",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Cusbooneysiin ayaa diyaar u ah Metrix Core. Ma jeclaan lahayd inaad hadda rakibto?",
             "WALLETUPDATETITLE": "Cusboonaysiinta Heerka Sare ayaa la heli karaa",
             "WALLETUPDATEINFO": "Cusbooneysiin ayaa diyaar u ah Altitude. Ma jeclaan lahayd inaad hadda soo dejiso?",
+            "WALLETUPDATEREADYTITLE": "Cusbooneysiinta Heerka Sare waa diyaar",
+            "WALLETUPDATEREADYINFO": "Cusboonaysiinta waa la soo dejiyey. Dib u bilow Heerka hadda si aad u rakibto?",
+            "WALLETUPDATERESTARTBUTTON": "Dib u bilow & Rakib",
+            "WALLETUPDATELATERBUTTON": "Dabadeed",
             "CLIENTUPDATEBUTTON": "Cusbooneysii",
             "CLIENTUPDATECANCELBUTTON": "Ha Cusboonaysiin",
             "CLIENTUPDATESKIPBUTTON": "Ka bood Cusboonaysiintan",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Wixii kayd ah ee hore ee aad ka samaysay faylkaaga jeebka waa in lagu beddelaa faylka jeebka ee cusub ee la soo saaray oo sir ah. Sababo amni awgood, kaydkii hore ee faylka jeebka ee aan la sirmin wuxuu noqon doonaa mid aan waxtar lahayn isla marka aad bilowdo isticmaalka boorsada jeebka ee cusub ee sir ah.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core si lama filaan ah ayuu u istaagay",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Waxaa jiray dhibaato ka haysatay Metrix Core taasoo keentay in la joojiyo. Waxaa lagugula talinayaa inaad hubiso faylkaaga debug.log wixii arrimo ah.",
+            "CLIENTUNKNOWNERRORTITLE": "Khaladka Isgaarsiinta Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Waxaa jiray dhibaato la xiriirta Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga debug.log si aad u ogaato dhibaatooyinka.",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap-ka Metrix Core wuu fashilmay",
+            "BOOTSTRAPFAILEDINFO": "Waxaa jirtay dhibaato ku saabsan bootstrapping Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga diiwaanka Altitude si aad u ogaato dhibaatooyinka.",
+            "BOOTSTRAPOFFERTITLE": "Boorsada jeebka oo si weyn u duugowday",
+            "BOOTSTRAPOFFERINFO": "Xirmo cusub ayaa diyaar ah oo si dhakhso ah u cusbooneysiin kara Metrix Core. Ku sii wadida isku-xidhka caadiga ah waxay qaadan kartaa dhowr maalmood in la dhammaystiro, maadaama boorsadaadu u baahan tahay inay soo dejiso oo ay xaqiijiso baloog kasta oo ay seegtay.",
+            "BOOTSTRAPOFFERBUTTON": "Soo dejiso Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Sii wad Isku-xirka Caadiga ah",
+            "BOOTSTRAPSPACEINFO": "Meel bannaan oo disk ah oo bilaash ah oo lagu soo dejin karo laguna soo saari karo bootstrap-ka ma jirto. Loo baahan yahay: {loo baahan yahay}, La heli karo: {bilaash}. Bannayso meel bannaan oo mar kale isku day.",
+            "STARTUPFAILEDTITLE": "Bilaabidda Metrix Core way fashilantay",
+            "STARTUPFAILEDINFO": "Waxaa jiray qalad ku saabsan bilaabista Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga diiwaanka Altitude si aad u ogaato dhibaatooyinka.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qalabka Soo-kabashada",
             "CLIENTINVALIDCONFIGTITLE": "Habaynta metrix.conf aan sax ahayn",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf-kaagu wuxuu leeyahay habayn masternode ah oo aan sax ahayn taasoo keeni doonta in Metrix Core uu isla markiiba baxo. Fadlan hubi faylkan.",
             "ADDREMOTEMNTITLE": "Ku dar Masternode Fog",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Furaha Gaarka ah ee Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Tusmada Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Bootstrap-ka Metrix Core wuu fashilmay",
-            "BOOTSTRAPFAILEDINFO": "Waxaa jirtay dhibaato ku saabsan bootstrapping Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga diiwaanka Altitude si aad u ogaato dhibaatooyinka.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qalabka Soo-kabashada",
-            "STARTUPFAILEDTITLE": "Bilaabidda Metrix Core way fashilantay",
-            "STARTUPFAILEDINFO": "Waxaa jiray qalad ku saabsan bilaabista Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga diiwaanka Altitude si aad u ogaato dhibaatooyinka.",
-            "CLIENTUNKNOWNERRORTITLE": "Khaladka Isgaarsiinta Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Waxaa jiray dhibaato la xiriirta Metrix Core. Waxaa lagugula talinayaa inaad hubiso faylkaaga debug.log si aad u ogaato dhibaatooyinka.",
             "UNENROLLGOVERNORTITLE": "Xaqiiji Ka Baxitaanka Guddoomiyaha Gobolka",
             "UNENROLLGOVERNORCONTENT": "Ma hubtaa inaad rabto inaad ka noqoto diiwaanka Guddoomiyaha Gobolkaaga? Mar dambe ma awoodi doontid inaad u codeyso maamulka silsiladda.",
-            "WALLETUPDATEREADYTITLE": "Cusbooneysiinta Heerka Sare waa diyaar",
-            "WALLETUPDATEREADYINFO": "Cusboonaysiinta waa la soo dejiyey. Dib u bilow Heerka hadda si aad u rakibto?",
-            "WALLETUPDATERESTARTBUTTON": "Dib u bilow & Rakib",
-            "WALLETUPDATELATERBUTTON": "Dabadeed",
             "DAPPCONNECTTITLE": "Ku xidh bogga",
             "DAPPCONNECTINFO": "Mareegtan waxay rabtaa inay ku xirto boorsadaada jeebka oo ay aragto cinwaankaaga iyo dheelitirkaaga.",
             "DAPPCONNECTBUTTON": "Ku xidh",
+            "DAPPCONNECTADDRESSLABEL": "Cinwaanka",
+            "DAPPAPPROVEBUTTON": "Ansixi",
             "DAPPREJECTBUTTON": "Diid",
             "DAPPSENDTITLE": "Codsiga Macaamilka Qandaraaska",
             "DAPPSENDINFO": "Mareegtan waxay codsanaysaa inaad dirto macaamil qandaraas oo ka imanaya jeebkaaga.",
-            "DAPPSIGNTITLE": "Saxiix Codsiga Fariinta",
-            "DAPPSIGNINFO": "Boggan wuxuu codsanayaa inuu saxiixo farriin cinwaanka boorsadaada.",
-            "DAPPNOTREADY": "Wali kuma xidhmi karo goobta - Metrix Core wali wuu bilaabmayaa.",
-            "DAPPNOWALLET": "Kuma xidhmi karo goobta - cinwaan boorso ma jiro.",
-            "DAPPAPPROVEBUTTON": "Ansixi",
-            "DAPPCONNECTADDRESSLABEL": "Cinwaanka",
             "DAPPSENDSITELABEL": "Goobta",
             "DAPPSENDCONTRACTLABEL": "Cinwaanka Qandaraaska",
             "DAPPSENDAMOUNTLABEL": "Tirada",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Kharashka ugu Badan ee Shabakadda",
             "DAPPSENDMAXTOTALLABEL": "Wadarta Ugu Badan",
             "DAPPSENDDATALABEL": "Xogta Qandaraaska",
+            "DAPPSIGNTITLE": "Saxiix Codsiga Fariinta",
+            "DAPPSIGNINFO": "Boggan wuxuu codsanayaa inuu saxiixo farriin cinwaanka boorsadaada.",
             "DAPPSIGNMESSAGELABEL": "Farriin",
-            "BOOTSTRAPOFFERTITLE": "Boorsada jeebka oo si weyn u duugowday",
-            "BOOTSTRAPOFFERINFO": "Xirmo cusub ayaa diyaar ah oo si dhakhso ah u cusbooneysiin kara Metrix Core. Ku sii wadida isku-xidhka caadiga ah waxay qaadan kartaa dhowr maalmood in la dhammaystiro, maadaama boorsadaadu u baahan tahay inay soo dejiso oo ay xaqiijiso baloog kasta oo ay seegtay.",
-            "BOOTSTRAPOFFERBUTTON": "Soo dejiso Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Sii wad Isku-xirka Caadiga ah",
-            "BOOTSTRAPSPACEINFO": "Meel bannaan oo disk ah oo bilaash ah oo lagu soo dejin karo laguna soo saari karo bootstrap-ka ma jirto. Loo baahan yahay: {loo baahan yahay}, La heli karo: {bilaash}. Bannayso meel bannaan oo mar kale isku day."
+            "DAPPNOTREADY": "Wali kuma xidhmi karo goobta - Metrix Core wali wuu bilaabmayaa.",
+            "DAPPNOWALLET": "Kuma xidhmi karo goobta - cinwaan boorso ma jiro."
         },
         "ADDRESSBOOK": {
             "TITLE": "Buugga Cinwaanka",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Shabakadda hadda jirta"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Geli cinwaanka bogga shabakadda3",
-            "GOBUTTON": "Tag",
-            "QUICKLAUNCH": "Bilaabid Degdeg ah",
-            "DEVTOOLS": "Qalabka Horumariyaha Furan",
-            "ADDLINK": "Ku dar Xiriir",
-            "LINKNAMEPLACEHOLDER": "Magaca",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Keydi",
-            "CANCEL": "Jooji",
-            "REMOVE": "Ka saar",
-            "REMOVECONFIRM": "Ka saar xiriirkan degdega ah?",
-            "LINKEXISTS": "Xiriiriyahaasi wuxuu horey ugu jiray liiskaaga bilaabista degdegga ah",
-            "LINKINVALID": "Geli cinwaan goob oo sax ah",
-            "LINKNETWORKLABEL": "Shabakad",
-            "LOADFAILED": "Ku guuldareystay in la soo raro goobta",
-            "SECURESITE": "Xiriirku waa ammaan - shahaadada SSL oo ansax ah",
-            "INSECURESITE": "Xidhiidhku ammaan ma aha",
-            "INVALIDCERTSITE": "Xiriirku ma aha mid gaar ah - shahaadada SSL ee aan ansax ahayn ama aan la aamini karin"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Boorsada Kaydka ah...",
             "SIGNMESSAGE": "Fariinta Saxiixa...",
             "VERIFYMESSAGE": "Xaqiiji Fariinta...",
-            "LOCALE": "Luqadda...",
-            "RESTARTCORE": "Dib u bilow Metrix Core",
-            "EXIT": "Bixid",
             "OPTIONS": "Xulashooyinka...",
+            "LOCALE": "Luqadda...",
             "CURRENCIES": "Soo Bandhig Lacagta...",
-            "ALTITUDEREFRESH": "Cusbooneysii Xogta Heerka Sare"
+            "RESTARTCORE": "Dib u bilow Metrix Core",
+            "ALTITUDEREFRESH": "Cusbooneysii Xogta Heerka Sare",
+            "EXIT": "Bixid"
         },
         "ENCRYPT": {
             "TITLE": "Qari",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Isu-dheellitirka Guud",
+        "SPENDABLEBALANCE": "Hadhaaga La Bixin Karo",
+        "PENDINGBALANCE": "Hadhaaga Sugaya",
         "CANCELBUTTON": "Jooji",
         "DONEBUTTON": "La dhammeeyay",
         "OKBUTTON": "Hagaag",
+        "ACCEPTBUTTON": "Aqbal",
         "CLEARALLBUTTON": "Dhammaan Tirtir",
         "ENTERACCOUNTLABEL": "Geli calaamad cinwaankan",
         "ENTERADDRESSLABEL": "Geli cinwaanka Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Kala sooc",
         "SEARCH": "Raadi",
         "FEE": "Kharashka",
-        "ACCEPTBUTTON": "Aqbal",
         "CONFIRMED": "La xaqiijiyay",
         "UNCONFIRMED": "Aan la xaqiijin",
-        "PENDINGBALANCE": "Hadhaaga Sugaya",
-        "SPENDABLEBALANCE": "Hadhaaga La Bixin Karo",
         "SAVEBUTTON": "Keydi"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Dib u bilaabaya Metrix Core...",
         "BOOTSTRAPPING": "Soo dejinaya suunka kabaha...",
         "BOOTSTRAPEXTRACTING": "Soo saarista suunka kabaha...",
-        "TIMEREMAINING": "haray:"
+        "TIMEREMAINING": "haray:",
+        "DEVRPCOVERRIDEACTIVE": "Dib-u-habaynta xidhiidhka RPC ee horumariyaha ayaa la dejiyay (Ikhtiyaarada > Horumariyaha) mana jawaabayo. Nadiifi si aad si caadi ah ugu xidho jinniga maxalliga ah.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Nadiifi Joojinta RPC & Dib-u-Xidhiidhka"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Akoon cusub ayaa si guul leh loo sameeyay",
         "ADDRESSCOPIEDCLIPBOARD": "Cinwaanka waxaa lagu koobiyay looxa sawirka",
+        "COPIEDCLIPBOARD": "Waxaa lagu koobiyey looxa looxa",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Macaamiladihii la sameeyay waxaa lagu koobiyay looxa kaydka",
         "EMPTYFIELDS": "Fadlan buuxi dhammaan meelaha",
         "NOUPDATE": "Cusboonaysiin lama heli karo",
         "WALLETBACKEDUP": "Kaydinta boorsada jeebka ayaa lagu guuleystay",
+        "WALLETBACKUPFAILED": "Kaydinta boorsada tooska ah ayaa ku guuldareysatay - hubi goobta kaydintaada iyo booska diskka ee la heli karo",
         "PASSPHRASEMISMATCH": "Erayada sirta ah ee aad gelisay isma waafaqsana",
         "CHECKINGUPDATE": "Hubinta cusbooneysiinta...",
         "CHECKINGUPDATEFAILED": "Lama hubin karo cusbooneysiinta. Hubi shabakaddaada.",
+        "WALLETUPDATEDOWNLOADING": "Soo dejinta cusbooneysiinta...",
         "SENDINGEXCEEDSBALANCE": "Lacagta aad dirayso waxay dhaaftay hadhaaga aad dooratay",
         "MISSINGCHANGEADDRESS": "Waa inaad caddeysaa cinwaanka isbeddelka",
         "MISSINGDESTINATIONADDRESS": "Waa inaad cayimtaa cinwaanka meesha aad u socoto",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Sir ka dhigidda boorsada jeebka...",
         "CHANGINGPASSPHARASE": "Beddelidda erayga sirta ah...",
         "STARTINGMASTERNODE": "Bilaabidda masternode-ka...",
+        "STOPPINGMASTERNODE": "Joojinta masternode-ka...",
         "SENDINGTRANSACTION": "Diritaanka macaamil ganacsi...",
         "SIGNINGMESSAGE": "Fariinta saxiixa...",
         "SIGNEDMESSAGE": "Fariinta la saxiixay",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Furitaanka boorsada jeebka...",
         "TRANSACTIONMISMATCH": "Khalad macaamil ganacsi. Fadlan isku day mar kale.",
         "MINIMUMCONFIRMATIONS": "Dhammaan waxyaabaha la soo gelinayo waxay u baahan yihiin ugu yaraan 1 xaqiijin ka hor inta aan la bixin.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Macaamiladihii la sameeyay waxaa lagu koobiyay looxa kaydka",
-        "STOPPINGMASTERNODE": "Joojinta masternode-ka...",
         "FAILEDTOWRITECONFIG": "Waxaa jirtay dhibaato ku saabsan qorista faylkaaga metrix.conf. Hubi in faylka uu jiro iyo in Altitude uu leeyahay ogolaansho qoraal ah.",
         "NOPUBLICUP": "Cinwaanka IP-ga Dadweynaha lama helin. Hubi xiriirkaaga internetka oo dib u bilow Altitude.",
         "CONFIGURINGLOCALMN": "Habaynta Masternode-ka maxalliga ah...",
         "REPORTINGISSUE": "Helitaanka macluumaadka ogaanshaha... Macluumaadkan waxaa lagu koobi doonaa koodhkaaga.",
-        "WALLETUPDATEDOWNLOADING": "Soo dejinta cusbooneysiinta...",
-        "WALLETBACKUPFAILED": "Kaydinta boorsada tooska ah ayaa ku guuldareysatay - hubi goobta kaydintaada iyo booska diskka ee la heli karo",
         "EXPLORERURLSAVED": "URL-ka Explorer ayaa la keydiyay",
         "EXPLORERURLRESET": "URL-ka Explorer ayaa dib loogu celiyay sidii caadiga ahayd",
         "EXPLORERURLINVALID": "Taasi ma aha URL http(s) oo sax ah",
-        "EXPLORERURLUNREACHABLE": "Ma gaari karin URL-kaas - hubi oo isku day mar kale"
+        "EXPLORERURLUNREACHABLE": "Ma gaari karin URL-kaas - hubi oo isku day mar kale",
+        "DEVRPCHOSTSAVED": "Martigeliyaha RPC ayaa la keydiyay",
+        "DEVRPCHOSTRESET": "Martigeliyaha RPC wuxuu dib ugu noqday sidii caadiga ahayd (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Qadaadiicda La Helay",
+        "NEWTRANSACTION_TITLE_STAKE": "Saamiga La Helay",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Abaalmarinta Masternode ee la helay"
     },
     "TIME": {
         "AFEWSECONDS": "Dhowr ilbiriqsi",
@@ -533,11 +587,6 @@
         "MONTHS": "bilo",
         "AYEAR": "Sanad",
         "YEARS": "sano"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Qadaadiicda La Helay",
-        "NEWTRANSACTION_TITLE_STAKE": "Saamiga La Helay",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Abaalmarinta Masternode ee la helay"
     },
     "MONTH": {
         "JAN": "JANAA",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guddoomiyeyaasha gobollada ayaa mas'uul ka ah codbixinta miisaaniyadaha bilaha ah iyo isbeddellada blockchain. Waxaad noqon kartaa Guddoomiye adigoo xiraya dammaanadda saxda ah ee qandaraaska Maamulka.",
                 "COLLATERAL": "Dammaanadda loo baahan yahay",
                 "ENROLL": "Isdiiwaangeli",
+                "SELECTAGOVERNOR": "Dooro cinwaan guddoomiye oo u qalma",
+                "GOVERNORNOTSELECTED": "Cinwaan u qalma lama dooran",
                 "CONFIRMENROLL": "Waxaad ku dhowdahay inaad iska diiwaangeliso Guddoomiye ahaan. Tani waxay qandaraaska maamulka u diri doontaa macaamil ganacsi oo leh dammaanadda loo baahan yahay. Waad ka bixi kartaa diiwaangelinta wakhti kasta.",
                 "ISGOVERNORTITLE": "Waxaad tahay Guddoomiye firfircoon!",
                 "ISGOVERNORDETAIL1": "Guddoomiyeyaasha gobollada ayaa mas'uul ka ah codbixinta miisaaniyadaha bilaha ah iyo isbeddellada blockchain.",
                 "ISGOVERNORDETAIL2": "Si aad u sii ahaato Guddoomiye Gobol, waxaad u baahan doontaa inaad ka qaybgasho ugu yaraan 1 cod 30kii maalmoodba mar.",
                 "ISGOVERNORDETAIL3": "Haddii aysan jirin wax aad codaynayso markaa waxaad gacanta ku sii wadi kartaa diiwaangelintaada adigoo diraya ping firfircoon.",
+                "MYGOVERNORADDRESS": "Khudbadda Guddoomiyahayga",
                 "UNENROLL": "Ka bax diiwaanka",
                 "PING": "Dir Ping Firfircoon",
                 "LASTPINGTITLE": "Ping-kii ugu dambeeyay",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "maalmo",
                 "GOVERNORVOTEMATURITYHOURS": "saacadood",
                 "GOVERNORVOTEMATURITYSUFFIX": "ilaa uu bislaado",
-                "MYGOVERNORADDRESS": "Khudbadda Guddoomiyahayga",
-                "SELECTAGOVERNOR": "Dooro cinwaan guddoomiye oo u qalma",
-                "GOVERNORNOTSELECTED": "Cinwaan u qalma lama dooran",
                 "NOTFULLYSYNCEDTITLE": "Heerka guddoomiyaha lama heli karo",
                 "NOTFULLYSYNCEDDETAIL": "Xaaladdaada diiwaangelinta Guddoomiyaha Gobolka ayaa muuqan doonta marka blockchain-kaagu si buuxda isula jaanqaado.",
                 "DGPMIGRATIONTITLE": "Socdaalka DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Soo jeedintaada si guul leh ayaa loo sameeyay",
             "ENROLLINGGOVERNOR": "Isdiiwaangelinta Guddoomiye...",
             "ENROLLEDGOVERNOR": "Diiwaangelintaadu way dhammaan doontaa marka la xaqiijiyo macaamilkaaga",
-            "VOTINGONPROPOSAL": "Diritaanka codaynta soo jeedinta",
-            "VOTEDONPROPOSAL": "Codkaaga waa la tirin doonaa marka la xaqiijiyo macaamilka.",
             "PINGINGGOVERNOR": "Diraya ping...",
             "PINGEDGOVERNOR": "Ping si guul leh ayaa loo diray. Guddoomiyahaaga ayaa la cusbooneysiin doonaa marka la xaqiijiyo macaamilka.",
+            "VOTINGONPROPOSAL": "Diritaanka codaynta soo jeedinta",
+            "VOTEDONPROPOSAL": "Codkaaga waa la tirin doonaa marka la xaqiijiyo macaamilka.",
             "UNENROLLINGGOVERNOR": "Guddoomiyaha oo ka tagaya diiwaanka...",
             "UNENROLLEDGOVERNOR": "Lacag-bixinta waa la diray. Guddoomiyahaaga waa laga saari doonaa diiwaanka marka la xaqiijiyo macaamilka",
             "GOVERNORNOTMATURE": "Guddoomiyahaagu weli ma bislaado inuu ficilkan fuliyo"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Iibso Metrix",
+                "SEARCH": "Taariikh"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Adigaa diraya",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Taariikhda Macaamil Ganacsi",
                 "SEARCHBUTTON": "RAADIN",
+                "SEARCHPLACEHOLDER": "Geli cinwaanka MRX ama BTC",
                 "TRANSACTIONDATE": "Taariikh",
                 "TRANSACTIONTYPE": "Nooca TX",
                 "TRANSACTIONAMOUNT": "Tirada",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "La xaqiijiyay",
                 "TRANSACTIONNOTCONFIRMED": "Lama xaqiijin",
                 "TRANSACTIONREFUNDED": "Lacag la soo celiyay - Ka hooseeya ugu yaraan",
-                "AVGSWAPPRICE": "Celceliska Qiimaha Is-weydaarsiga",
-                "SEARCHPLACEHOLDER": "Geli cinwaanka MRX ama BTC"
+                "AVGSWAPPRICE": "Celceliska Qiimaha Is-weydaarsiga"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Samaynta Cinwaanka Is-weydaarsiga...",
             "ALREADYHAVEADDRESS": "Waxaad horey u haysatay cinwaan BTC ah oo la xiriira cinwaankan Metrix",
             "NOADDRESS": "Ma aadan gelin cinwaan Metrix ah"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Iibso Metrix",
-                "SEARCH": "Taariikh"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Qari",
                 "EMPTYTITLE": "Lama helin calaamado weli",
                 "EMPTYDETAIL": "Altitude si toos ah ayuu u hubiyaa sahamiyaha baloogga calaamadaha MRC20 iyo MRC721 ee loo diray cinwaanadaada, ka dibna wuxuu hubiyaa wax walba oo toos ah oo ka soo horjeeda node-kaaga. Waxa kale oo aad ku dari kartaa calaamad gacanta haddii aad taqaan cinwaanka qandaraaska.",
+                "EMPTYDETAILCHECKINGDISABLED": "Hubinta calaamadaha otomaatiga ah waa la damiyay, sidaa darteed cinwaanadaada laguma hubinayo calaamadaha. Dib u shid kor, ama ku dar calaamad gacanta haddii aad taqaan cinwaanka qandaraaska.",
                 "HIDDENTITLE": "Calaamadaha Qarsoon",
                 "CONTEXTMENUHIDE": "Qari Calaamadda",
                 "ITEMSSUFFIX": "shay(yo)",
-                "NONENUMERABLETOOLTIP": "Ururintani ma taageerto liiska shay gaar ah - taas oo muujinaysa inta aad haysato."
+                "NONENUMERABLETOOLTIP": "Ururintani ma taageerto liiska shay gaar ah - taas oo muujinaysa inta aad haysato.",
+                "CHECKINGENABLED": "Hubinta",
+                "CHECKINGDISABLED": "Bixinta Lacagta",
+                "CHECKINGENABLEDTOOLTIP": "Hubinta calaamaduhu way shidan tahay - Heerka sare wuxuu si joogto ah u hubiyaa cinwaanadaada calaamadaha wuxuuna cusboonaysiiyaa dheelitirka. Guji si aad u damiso.",
+                "CHECKINGDISABLEDTOOLTIP": "Hubinta calaamadda waa dansan tahay - dhagsii si aad dib u shido.",
+                "CHECKINGDISABLEDNOTICE": "Hubinta calaamadaha tooska ah waa la damiyay. Cinwaanadaada lama baarayo si loo helo calaamadaha, hadhaagana lama cusbooneysiin doono. Wali waad ku dari kartaa calaamad gacanta."
             },
             "ADDTOKEN": {
                 "TITLE": "Ku dar calaamad",

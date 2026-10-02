@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Crea Rationem",
             "HIDEEMPTYACCOUNTS": "Rationes Vacuas Innominatas Celare"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Conspectus",
+            "TRANSACTIONSTAB": "Transactiones",
+            "ADDRESSTABS": "Inscriptiones"
+        },
         "SEND": {
             "ADDRECIPIENT": "Accipientem Adde",
             "SEND": "Mitte",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dies",
             "TABLECOLUMNS_CONFIRMS": "Confirmationes",
             "ALL_SELECTUNSELECT": "Omnia Commutare/Aperire",
+            "TREEMODE": "Modus Arboris",
+            "LISTMODE": "Modus Indicis",
             "SENDAVAILABLE": "Utere reliquo praesto",
             "INPUTLOCKED": "Input clausum est. Hoc input reserandum erit ut eum expendas.",
             "CONTEXTMENULOCKINPUT": "Claustra ingressus",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Post Feodum",
             "QUANTITY": "Quantitas",
             "BYTES": "Bytes",
-            "TREEMODE": "Modus Arboris",
-            "LISTMODE": "Modus Indicis",
             "ALERTFEECHANGETITLE": "Mutatio Pretii",
             "ALERTFEECHANGECONTENT": "Pretium transactionis actuale maius est quam expectatum. Quaeso novum pretium confirma:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Contractum Crea",
+            "INFO": "Contractum intelligentem in reti distribue per submissionem codicis binarii compilati. Haec functio catenae principalis est - codicem binarium et configurationes gasis ante distributionem bis inspice; distributio enim irrita fieri non potest.",
+            "FROM": "Ab",
+            "BYTECODE": "Codex binarius",
+            "BYTECODEPLACEHOLDER": "Contractus compilati codicem binarium (hexadecimale) inserere",
+            "INVALIDBYTECODE": "Codicem binorum (bytecode) seriem hexadecimalem validam (0-9, a-f) cum numero characterum pari esse oportet.",
+            "GASLIMIT": "Limitis Gasis",
+            "GASLIMITRANGE": "Spatium",
+            "GASPRICE": "Pretium Gasis (MRX per unitatem gasis)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Sumptus maximus aestimatus",
+            "DEPLOYBUTTON": "Contractum Explica",
+            "INCOMPLETEFORM": "Quaeso inscriptionem mittentis elige, codicem validum inscribe, et limitem/pretium gasolini validum constitue.",
+            "HIGHGASPRICETITLE": "Pretium Gasolinae Altum",
+            "HIGHGASPRICEINFO": "Pretium gasolini quod constituisti insolito pretio altum est. Haec dispositio usque ad haec constare potest.",
+            "DEPLOYING": "Contractus explicatur...",
+            "DEPLOYED": "Contractus distributio submissa",
+            "RESULTTITLE": "Resultatum Distributionis",
+            "STATUS": "Status",
+            "STATUSPENDING": "Confirmatione pendente...",
+            "STATUSCONFIRMED": "Feliciter dispositum",
+            "STATUSFAILED": "Distributio defecit",
+            "TXID": "Identificatio Transactionis",
+            "SENDER": "Mittens",
+            "CONTRACTADDRESS": "Inscriptio Contractus",
+            "GASUSED": "Gas Adhibitum",
+            "DONEBUTTON": "Factum",
+            "DEPLOYANOTHERBUTTON": "Aliud Disponere"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transactiones",
+            "COPYBLOCKHASH": "Copiare Hash Block",
+            "COPYTXID": "Copia ID Transactionis",
+            "COPYACCOUNT": "Nomen Rationis Copiare",
+            "COPYADDRESS": "Copia Inscriptionis",
+            "COPYAMOUNT": "Quantitas Exemplaris",
+            "COPTBLOCKINDEX": "Index Bloci Copiae",
+            "EXPLORER": "Aperi in Exploratore Blocorum"
         },
         "STAKING": {
             "UNLOCK": "Aperire pro Pignore",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Inscriptio",
             "ENABLED": "Activatum",
-            "STARTBUTTON": "Incipe Localiter",
-            "STARTALIASBUTTON": "Initium Alias",
-            "STARTALLBUTTON": "Incipe Omnia",
             "NOMASTERNODES": "Nullos magistros habes.",
             "NOMNOUTPUTS": "Nullae exitus Masternode inventae sunt. Ad Masternode localem currendum, mitte exacte 2, 5, 25, 50 vel 100 miliones nummorum ad inscriptionem Masternode tui et exspecta 15 confirmationes.",
+            "STARTBUTTON": "Incipe Localiter",
             "STOPBUTTON": "Siste Localem",
+            "STARTALIASBUTTON": "Initium Alias",
             "STOPALIASBUTTON": "Siste Alias",
+            "STARTALLBUTTON": "Incipe Omnia",
             "ADDREMOTE": "Adde Nodum Magistralem Remotum",
             "REMOVEMN": "Nodum Magistralem Remove",
             "ADDLOCAL": "Nodum Magistralem Localem Constituere",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Generalis",
                 "COREVERSION": "Versio Centralis",
+                "ALTITUDEVERSION": "Versio Altitudinis",
                 "PROTOCOLVERSION": "Versio Protocoli",
                 "WALLETVERSION": "Versio Wallet.dat",
                 "NETWORKTITLE": "Rete",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numerus Nodorum Magistrorum",
                 "BLOCKCHAINTITLE": "Catena Bloccorum",
                 "NUMBERBLOCKS": "Numerus praesens quadratorum",
-                "BESTBLOCKTTIME": "Tempus ultimum insulæ",
-                "ALTITUDEVERSION": "Versio Altitudinis"
+                "BESTBLOCKTTIME": "Tempus ultimum insulæ"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Salvete in consola RPC Metrix Core. Scribe \"help\" ut conspectum mandatorum praesto habeas.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Linguam Elige"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transactiones",
-            "COPYBLOCKHASH": "Copiare Hash Block",
-            "COPYTXID": "Copia ID Transactionis",
-            "COPYACCOUNT": "Nomen Rationis Copiare",
-            "COPYADDRESS": "Copia Inscriptionis",
-            "COPYAMOUNT": "Quantitas Exemplaris",
-            "COPTBLOCKINDEX": "Index Bloci Copiae",
-            "EXPLORER": "Aperi in Exploratore Blocorum"
+        "CURRENCY": {
+            "TITLE": "Elige Monetam Ostendendam"
         },
         "EXPLORER": {
             "TITLE": "Explorator Blocorum",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Rete",
             "WINDOTAB": "Fenestra",
+            "BACKUPTAB": "Copia subsidiaria",
+            "EXPLORERTAB": "Explorator",
+            "DEVELOPERTAB": "Elaborator",
             "NETWORK": {
                 "PROXY": "Coniunge per procuratorem SOCKS5",
                 "PROXYIP": "Procurator IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Imminue in claudendo",
                 "BEHAVIOURTITLE": "System Tray et Fenestrae Habitus"
             },
-            "BACKUPTAB": "Copia subsidiaria",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Copia Automatica",
                 "ENABLED": "Automatice et secundum tempus reservare wallet.dat",
                 "ENABLEDINFO": "Copiam recentem fasciculi crumenae tuae secundum tempus constitutum creat, ut exemplar recens semper praesto sit si quid mali accidat.",
+                "INTERVALLABEL": "Reserva singulis (diebus)",
                 "LASTBACKUP": "Ultima copia reservata:",
                 "NEVERBACKEDUP": "Nulla adhuc copia automatica facta est.",
                 "BACKUPNOWBUTTON": "Nunc Refice",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ad Default Restituere",
                 "PRUNETITLE": "Historia Reservarum",
                 "PRUNEINFO": "Vetustiores copiae automaticae delentur ne haec fasciculus in perpetuum crescat - tantum recentissimae infra servantur.",
-                "KEEPCOUNTLABEL": "Ultimum tene",
-                "INTERVALLABEL": "Reserva singulis (diebus)"
+                "KEEPCOUNTLABEL": "Ultimum tene"
             },
-            "EXPLORERTAB": "Explorator",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Explorator Blocorum",
                 "BLOCKEXPLORERINFO": "Situs apertus est cum transactionem in exploratore fragmentorum inspiceres (e.g., dextro-cliccare transactionem > View on Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Rete principale",
                 "TESTNET": "Rete Probationis",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Modus Fabricatoris",
+                "DEVMODEINFO": "Initium per default et solis programmatoribus destinatum. Hoc activando optiones ad nexum RPC superandum revelantur - usores ordinarii hoc initium relinquere debent.",
+                "DEVMODELABEL": "Modum Fabricatoris Activa",
+                "WARNING": "Hae optiones ad usum progressionis tantum destinantur. Si eas mutaveris, crumena omnino ne daemoni coniungatur prohiberi potest — his tantum utere si scias quid agas.",
+                "RPCHOSTTITLE": "Conexio RPC",
+                "RPCHOSTINFO": "Defalta, Altitude daemoni quod ipse administrat, in hac machina (127.0.0.1), coniungitur. His notis, daemoni altero coniungi potest — exempli gratia, instantia remota regtest — sine necessitate unum localiter currendi. Si conexio prospere procedit, Altitude daemonem suum localem non deponet nec incipiet. `rpcallowip` daemonis destinati hanc conexionem permittere debet, et `rpcuser/rpcpassword` infra configurationem eius congruere debet. Statim valet, nullo initio opus est.",
+                "RPCHOSTLABEL": "Hospes RPC",
+                "RPCPORTLABEL": "Portus RPC",
+                "RPCUSERLABEL": "Nomen usoris RPC",
+                "RPCPASSWORDLABEL": "Tessera RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Conspectus",
-            "TRANSACTIONSTAB": "Transactiones",
-            "ADDRESSTABS": "Inscriptiones"
-        },
-        "CURRENCY": {
-            "TITLE": "Elige Monetam Ostendendam"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Tabula instrumentorum",
             "SEND": "Mitte",
+            "CREATECONTRACT": "Contractum Crea",
             "RECEIVE": "Accipe",
             "TRANSACTIONS": "Transactiones",
             "STAKING": "Pilae collocatio",
             "MASTERNODES": "Magistri Nodi",
+            "EXPLORER": "Explorator Blocorum",
             "SYNC": {
                 "CONNECTING": "Coniunctio",
                 "NOBLOCKS": "Expectantes saxa",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Cassidile non nunc pignore afficitur.",
                 "MASTERNODEON": "Masternode nunc currit.",
                 "MASTERNODEOFF": "Masternode non currit in praesenti."
-            },
-            "EXPLORER": "Explorator Blocorum"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Inscriptionem situs interretialis (web3) inscribe.",
+            "GOBUTTON": "Ire",
+            "QUICKLAUNCH": "Initium Celere",
+            "DEVTOOLS": "Instrumenta Aperi Fabricatoris",
+            "ADDLINK": "Adde Vinculum",
+            "LINKNAMEPLACEHOLDER": "Nomen",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Serva",
+            "CANCEL": "Abrogare",
+            "REMOVE": "Remove",
+            "REMOVECONFIRM": "Hunc nexum celerem removere vis?",
+            "LINKEXISTS": "Nexus ille iam in indice tuo celeris initii est.",
+            "LINKINVALID": "Inscriptionem situs validam inscribe.",
+            "LINKNETWORKLABEL": "Rete",
+            "LOADFAILED": "Situs onerari non potuit.",
+            "SECURESITE": "Conexio secura est - certificatum SSL validum",
+            "INSECURESITE": "Conexio non est tuta",
+            "INVALIDCERTSITE": "Conexio non est privata - libellum SSL invalidum vel non fidum"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Tesserae Crumenae Tuae Inscribe",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Renovatio pro Metrix Core praesto est. Visne eam nunc instituere?",
             "WALLETUPDATETITLE": "Renovatio Altitudinis Praesto",
             "WALLETUPDATEINFO": "Renovatio programmatis Altitude praesto est. Visne eam nunc depromere?",
+            "WALLETUPDATEREADYTITLE": "Altitudo Recensita Parata",
+            "WALLETUPDATEREADYINFO": "Renovatio recepta est. Visne Altitude nunc denuo incipere ut eam instituas?",
+            "WALLETUPDATERESTARTBUTTON": "Reincipe et Installa",
+            "WALLETUPDATELATERBUTTON": "Postea",
             "CLIENTUPDATEBUTTON": "Renovatio",
             "CLIENTUPDATECANCELBUTTON": "Noli renovare",
             "CLIENTUPDATESKIPBUTTON": "Hanc Renovationem Omitte",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Omnia priora exemplaria quae ex fasciculo crumenae tuae fecisti fasciculo crumenae encryptato nuper generato substituenda sunt. Ob rationes securitatis, priora exemplaria fasciculi crumenae non encryptati inutiles fient simulac novo crumena encryptato uti coeperis.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Nucleus Metrix Inopinato Interclusus Est",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Difficultas cum Metrix Core orta est quae finem eius effecit. Suadetur ut fasciculum debug.log inspicias propter problemata.",
+            "CLIENTUNKNOWNERRORTITLE": "Error Communicationis Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Difficultas communicationis cum Metrix Core orta est. Suadetur ut fasciculum debug.log inspicias propter problemata.",
+            "BOOTSTRAPFAILEDTITLE": "Defecit Initiatio Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "Difficultas orta est in Metrix Core incipiendo. Suadetur ut fasciculum diarii Altitude inspicias propter problemata.",
+            "BOOTSTRAPOFFERTITLE": "Crumena Significanter Obsoleta",
+            "BOOTSTRAPOFFERINFO": "Recens programmatio \"bootstrap\" praesto est quae Metrix Core celeriter ad diem renovare potest. Continuatio cum synchronizatione normali fortasse aliquot dies ad perficiendum requiret, cum crumena tua omnes partes quas omisit deponere et verificare debeat.",
+            "BOOTSTRAPOFFERBUTTON": "Deprime Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Synchronizationem Normalem Perge",
+            "BOOTSTRAPSPACEINFO": "Spatium liberum in disco non satis est ad programmata initialia depromenda et extrahenda. Requiritur: {required}, Praesto est: {free}. Spatium libera et iterum conare.",
+            "STARTUPFAILEDTITLE": "Initium Metrix Core Defecit",
+            "STARTUPFAILEDINFO": "Error accidit incipiendo Metrix Core. Suadetur ut fasciculum diarii Altitude inspicias propter problemata.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumenta Recuperationis",
             "CLIENTINVALIDCONFIGTITLE": "Configuratio metrix.conf invalida",
             "CLIENTINVALIDCONFIGINFO": "`metrix.conf` tuum nodum principalem invalidum habet, quod Metrix Core statim exire faciet. Quaeso, hunc fasciculum inspice.",
             "ADDREMOTEMNTITLE": "Adde Nodum Magistralem Remotum",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Clavis Privata Nodi Magistralis",
             "ADDREMOTEMNTXHASH": "Magistro Nodo Transactionis Hash",
             "ADDREMOTEMNTXINDEX": "Index Transactionum Nodi Magistralis",
-            "BOOTSTRAPFAILEDTITLE": "Defecit Initiatio Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "Difficultas orta est in Metrix Core incipiendo. Suadetur ut fasciculum diarii Altitude inspicias propter problemata.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumenta Recuperationis",
-            "STARTUPFAILEDTITLE": "Initium Metrix Core Defecit",
-            "STARTUPFAILEDINFO": "Error accidit incipiendo Metrix Core. Suadetur ut fasciculum diarii Altitude inspicias propter problemata.",
-            "CLIENTUNKNOWNERRORTITLE": "Error Communicationis Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Difficultas communicationis cum Metrix Core orta est. Suadetur ut fasciculum debug.log inspicias propter problemata.",
             "UNENROLLGOVERNORTITLE": "Confirma Exscriptionem Gubernatoris",
             "UNENROLLGOVERNORCONTENT": "Certe gubernatorem tuum ex inscriptione removere vis? Iam de gubernatione concatenata suffragium ferre non poteris.",
-            "WALLETUPDATEREADYTITLE": "Altitudo Recensita Parata",
-            "WALLETUPDATEREADYINFO": "Renovatio recepta est. Visne Altitude nunc denuo incipere ut eam instituas?",
-            "WALLETUPDATERESTARTBUTTON": "Reincipe et Installa",
-            "WALLETUPDATELATERBUTTON": "Postea",
             "DAPPCONNECTTITLE": "Coniunge cum Situ",
             "DAPPCONNECTINFO": "Hic situs cum crumena tua coniungere et inscriptionem tuam atque reliquum inspicere vult.",
             "DAPPCONNECTBUTTON": "Coniunge",
+            "DAPPCONNECTADDRESSLABEL": "Inscriptio",
+            "DAPPAPPROVEBUTTON": "Approba",
             "DAPPREJECTBUTTON": "Reicere",
             "DAPPSENDTITLE": "Petitio Transactionis Contractus",
             "DAPPSENDINFO": "Hic situs petit ut contractus transactionem e crumena tua mittamus.",
-            "DAPPSIGNTITLE": "Petitio Nuntii Signandi",
-            "DAPPSIGNINFO": "Hic situs petit ut epistulam cum inscriptione crumenae tuae subscribas.",
-            "DAPPNOTREADY": "Ad situm coniungere nondum possum — Metrix Core adhuc incipit.",
-            "DAPPNOWALLET": "Coniungere cum situ non possum — nulla inscriptio crumenae praesto est.",
-            "DAPPAPPROVEBUTTON": "Approba",
-            "DAPPCONNECTADDRESSLABEL": "Inscriptio",
             "DAPPSENDSITELABEL": "Situs",
             "DAPPSENDCONTRACTLABEL": "Inscriptio Contractus",
             "DAPPSENDAMOUNTLABEL": "Quantitas",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximum Pretium Retis",
             "DAPPSENDMAXTOTALLABEL": "Summa Maxima",
             "DAPPSENDDATALABEL": "Data Contractus",
+            "DAPPSIGNTITLE": "Petitio Nuntii Signandi",
+            "DAPPSIGNINFO": "Hic situs petit ut epistulam cum inscriptione crumenae tuae subscribas.",
             "DAPPSIGNMESSAGELABEL": "Nuntius",
-            "BOOTSTRAPOFFERTITLE": "Crumena Significanter Obsoleta",
-            "BOOTSTRAPOFFERINFO": "Recens programmatio \"bootstrap\" praesto est quae Metrix Core celeriter ad diem renovare potest. Continuatio cum synchronizatione normali fortasse aliquot dies ad perficiendum requiret, cum crumena tua omnes partes quas omisit deponere et verificare debeat.",
-            "BOOTSTRAPOFFERBUTTON": "Deprime Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Synchronizationem Normalem Perge",
-            "BOOTSTRAPSPACEINFO": "Spatium liberum in disco non satis est ad programmata initialia depromenda et extrahenda. Requiritur: {required}, Praesto est: {free}. Spatium libera et iterum conare."
+            "DAPPNOTREADY": "Ad situm coniungere nondum possum — Metrix Core adhuc incipit.",
+            "DAPPNOWALLET": "Coniungere cum situ non possum — nulla inscriptio crumenae praesto est."
         },
         "ADDRESSBOOK": {
             "TITLE": "Liber Adscriptionum",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rete praesens"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Inscriptionem situs interretialis (web3) inscribe.",
-            "GOBUTTON": "Ire",
-            "QUICKLAUNCH": "Initium Celere",
-            "DEVTOOLS": "Instrumenta Aperi Fabricatoris",
-            "ADDLINK": "Adde Vinculum",
-            "LINKNAMEPLACEHOLDER": "Nomen",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Serva",
-            "CANCEL": "Abrogare",
-            "REMOVE": "Remove",
-            "REMOVECONFIRM": "Hunc nexum celerem removere vis?",
-            "LINKEXISTS": "Nexus ille iam in indice tuo celeris initii est.",
-            "LINKINVALID": "Inscriptionem situs validam inscribe.",
-            "LINKNETWORKLABEL": "Rete",
-            "LOADFAILED": "Situs onerari non potuit.",
-            "SECURESITE": "Conexio secura est - certificatum SSL validum",
-            "INSECURESITE": "Conexio non est tuta",
-            "INVALIDCERTSITE": "Conexio non est privata - libellum SSL invalidum vel non fidum"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Crumena Subsidiaria...",
             "SIGNMESSAGE": "Nuntium Signa...",
             "VERIFYMESSAGE": "Nuntium Verifica...",
-            "LOCALE": "Lingua...",
-            "RESTARTCORE": "Nucleum Metrix denuo incipe",
-            "EXIT": "Exitus",
             "OPTIONS": "Optiones...",
+            "LOCALE": "Lingua...",
             "CURRENCIES": "Monstra Pecuniam...",
-            "ALTITUDEREFRESH": "Data Altitudinis Renovare"
+            "RESTARTCORE": "Nucleum Metrix denuo incipe",
+            "ALTITUDEREFRESH": "Data Altitudinis Renovare",
+            "EXIT": "Exitus"
         },
         "ENCRYPT": {
             "TITLE": "Encrypta",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Summa Libra",
+        "SPENDABLEBALANCE": "Libra Expendenda",
+        "PENDINGBALANCE": "Libra Pendens",
         "CANCELBUTTON": "Abrogare",
         "DONEBUTTON": "Factum",
         "OKBUTTON": "Bene",
+        "ACCEPTBUTTON": "Accipe",
         "CLEARALLBUTTON": "Omnia Dele",
         "ENTERACCOUNTLABEL": "Inscribe titulum huic inscriptioni",
         "ENTERADDRESSLABEL": "Inscriptionem Metrix inscribe.",
@@ -464,11 +511,8 @@
         "SORTBY": "Ordina Secundum",
         "SEARCH": "Quaerere",
         "FEE": "Pretium",
-        "ACCEPTBUTTON": "Accipe",
         "CONFIRMED": "Confirmatum",
         "UNCONFIRMED": "Inconfirmatum",
-        "PENDINGBALANCE": "Libra Pendens",
-        "SPENDABLEBALANCE": "Libra Expendenda",
         "SAVEBUTTON": "Serva"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core denuo incipiens...",
         "BOOTSTRAPPING": "Bootstrap detrahitur...",
         "BOOTSTRAPEXTRACTING": "Extractio bootstrap...",
-        "TIMEREMAINING": "reliqua:"
+        "TIMEREMAINING": "reliqua:",
+        "DEVRPCOVERRIDEACTIVE": "Nexus RPC fabricatoris substitutus est (Optiones > Fabricator) et non respondet. Dele eum ut iterum cum daemone locali normaliter coniungaris.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Dele RPC Superscriptionem et Reconnexionem"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nova ratio feliciter creata est",
         "ADDRESSCOPIEDCLIPBOARD": "Inscriptio in tabulam extractam",
+        "COPIEDCLIPBOARD": "In tabulam extractam",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transactiones in tabulam extractae",
         "EMPTYFIELDS": "Quaeso omnia spatia imple.",
         "NOUPDATE": "Nulla renovatio praesto est.",
         "WALLETBACKEDUP": "Copia reservata crumenae prospere facta est",
+        "WALLETBACKUPFAILED": "Copia automatica crumenae defecit — locum copiae et spatium disci praesto inspice.",
         "PASSPHRASEMISMATCH": "Tesserae quas intulisti non congruunt.",
         "CHECKINGUPDATE": "Renovationes quaerimus...",
         "CHECKINGUPDATEFAILED": "Renovationem inspicere non potest. Rete tuum inspice.",
+        "WALLETUPDATEDOWNLOADING": "Renovatio depromitur...",
         "SENDINGEXCEEDSBALANCE": "Summa quam mittis debitum electum excedit.",
         "MISSINGCHANGEADDRESS": "Mutationem inscriptionis specificare debes.",
         "MISSINGDESTINATIONADDRESS": "Inscriptionem destinationis specificare debes.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Cassidile cifratur...",
         "CHANGINGPASSPHARASE": "Mutatio tesserae...",
         "STARTINGMASTERNODE": "Nodum principalem incipiens...",
+        "STOPPINGMASTERNODE": "Nodum principalem sistendo...",
         "SENDINGTRANSACTION": "Transactionem mittendo...",
         "SIGNINGMESSAGE": "Nuntium subscribens...",
         "SIGNEDMESSAGE": "Nuntius signatus",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Crumenam reserando...",
         "TRANSACTIONMISMATCH": "Error transactionis. Quaeso, iterum conare.",
         "MINIMUMCONFIRMATIONS": "Omnia inputata saltem unam confirmationem requirunt antequam pecunia expendatur.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transactiones in tabulam extractae",
-        "STOPPINGMASTERNODE": "Nodum principalem sistendo...",
         "FAILEDTOWRITECONFIG": "Difficultas orta est in scribendo in fasciculum tuum metrix.conf. Fac ut fasciculus exstet et ut Altitude iura scribendi habeat.",
         "NOPUBLICUP": "Nulla inscriptio IP publica inventa. Conexio interretialis tua inspice et Altitude denuo incipe.",
         "CONFIGURINGLOCALMN": "Nodum Magistralem localem configuramus...",
         "REPORTINGISSUE": "Informationes diagnosticae accipiuntur... Hae informationes in tabulam tuam exscribentur.",
-        "WALLETUPDATEDOWNLOADING": "Renovatio depromitur...",
-        "WALLETBACKUPFAILED": "Copia automatica crumenae defecit — locum copiae et spatium disci praesto inspice.",
         "EXPLORERURLSAVED": "URL exploratoris servata",
         "EXPLORERURLRESET": "URL exploratoris ad statum pristinum reversa est",
         "EXPLORERURLINVALID": "URL http(s) valida non est.",
-        "EXPLORERURLUNREACHABLE": "Ad URL illam pervenire non potui - eam inspice et iterum conare."
+        "EXPLORERURLUNREACHABLE": "Ad URL illam pervenire non potui - eam inspice et iterum conare.",
+        "DEVRPCHOSTSAVED": "Hospes RPC servatus",
+        "DEVRPCHOSTRESET": "Hospes RPC ad statum initialem (127.0.0.1) reversus est."
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Nummi Accepti",
+        "NEWTRANSACTION_TITLE_STAKE": "Pactum Acceptum",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Praemium Nodi Magistralis Accepti"
     },
     "TIME": {
         "AFEWSECONDS": "Paucis secundis",
@@ -533,11 +587,6 @@
         "MONTHS": "menses",
         "AYEAR": "Annus",
         "YEARS": "annos"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Nummi Accepti",
-        "NEWTRANSACTION_TITLE_STAKE": "Pactum Acceptum",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Praemium Nodi Magistralis Accepti"
     },
     "MONTH": {
         "JAN": "IAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gubernatores suffragium de rationibus publicis menstruis et mutationibus catenarum interretialium (blockchain) suscipiunt. Gubernator fieri potes pignore correcto in contractu gubernationis obsignato.",
                 "COLLATERAL": "Pignus requisitum",
                 "ENROLL": "Inscribere",
+                "SELECTAGOVERNOR": "Elige inscriptionem gubernatoris idonei",
+                "GOVERNORNOTSELECTED": "Nulla inscriptio idonea selecta est.",
                 "CONFIRMENROLL": "Mox te ut Gubernatorem inscribere paras. Hoc negotium cum pignore necessario ad contractum gubernationis mittet. Te ex inscriptione quovis tempore removere potes.",
                 "ISGOVERNORTITLE": "Gubernator activus es!",
                 "ISGOVERNORDETAIL1": "Gubernatores suffragium de rationibus publicis menstruis et mutationibus catenarum bloccorum (blockchain) suscipiunt.",
                 "ISGOVERNORDETAIL2": "Ut gubernator maneas, saltem uno suffragio singulis triginta diebus interesse debebis.",
                 "ISGOVERNORDETAIL3": "Si nihil est de quo suffragium feras, inscriptionem tuam manu continuare potes nuntium \"ping\" activum mittendo.",
+                "MYGOVERNORADDRESS": "Oratio Gubernatoris Mei",
                 "UNENROLL": "Exscribere",
                 "PING": "Mitte Ping Activum",
                 "LASTPINGTITLE": "Ultimus tinnitus",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "dies",
                 "GOVERNORVOTEMATURITYHOURS": "horae",
                 "GOVERNORVOTEMATURITYSUFFIX": "usque ad maturitatem",
-                "MYGOVERNORADDRESS": "Oratio Gubernatoris Mei",
-                "SELECTAGOVERNOR": "Elige inscriptionem gubernatoris idonei",
-                "GOVERNORNOTSELECTED": "Nulla inscriptio idonea selecta est.",
                 "NOTFULLYSYNCEDTITLE": "Status gubernatoris non praesto est",
                 "NOTFULLYSYNCEDDETAIL": "Status registrationis tuae Gubernatoris visibilis fiet cum tua catena catenarum (blockchain) plene synchronizata erit.",
                 "DGPMIGRATIONTITLE": "Migratio DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Propositum tuum feliciter creatum est.",
             "ENROLLINGGOVERNOR": "Gubernatoris nomen datum...",
             "ENROLLEDGOVERNOR": "Inscriptio tua completa erit simul ac transactio tua confirmata erit.",
-            "VOTINGONPROPOSAL": "Suffragium propositionis mitto.",
-            "VOTEDONPROPOSAL": "Suffragium tuum numerabitur postquam transactio confirmata erit.",
             "PINGINGGOVERNOR": "Mittens signum ping...",
             "PINGEDGOVERNOR": "Ping feliciter missum. Moderator tuus certior fiet postquam transactio confirmata erit.",
+            "VOTINGONPROPOSAL": "Suffragium propositionis mitto.",
+            "VOTEDONPROPOSAL": "Suffragium tuum numerabitur postquam transactio confirmata erit.",
             "UNENROLLINGGOVERNOR": "Gubernator a inscriptione removetur...",
             "UNENROLLEDGOVERNOR": "Transactio missa. Gubernator tuus ex inscriptione removebitur, simul ac transactio confirmata erit.",
             "GOVERNORNOTMATURE": "Gubernator vester nondum satis maturus est ad hanc actionem perficiendam."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Eme Metrix",
+                "SEARCH": "Historia"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Mittis",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Historia Transactionum",
                 "SEARCHBUTTON": "QUAERERE",
+                "SEARCHPLACEHOLDER": "Inscriptionem MRX vel BTC inscribe.",
                 "TRANSACTIONDATE": "Dies",
                 "TRANSACTIONTYPE": "Typus Transmissionis (TX)",
                 "TRANSACTIONAMOUNT": "Quantitas",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Confirmatum",
                 "TRANSACTIONNOTCONFIRMED": "Non Confirmatum",
                 "TRANSACTIONREFUNDED": "Redditum - Infra minimum",
-                "AVGSWAPPRICE": "Pretium Permutationis Medium",
-                "SEARCHPLACEHOLDER": "Inscriptionem MRX vel BTC inscribe."
+                "AVGSWAPPRICE": "Pretium Permutationis Medium"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Inscriptionem Permutationis Generans...",
             "ALREADYHAVEADDRESS": "Iam habes inscriptionem BTC cum hac inscriptione Metrix coniunctam.",
             "NOADDRESS": "Inscriptionem Metrix non intulisti."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Eme Metrix",
-                "SEARCH": "Historia"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Detege",
                 "EMPTYTITLE": "Nullae adhuc tesserae inventae sunt",
                 "EMPTYDETAIL": "Altitude automatice exploratorem segmentorum pro indicibus MRC20 et MRC721 ad inscriptiones tuas missis inspicit, deinde omnia in praesenti cum nodo tuo proprio verificat. Etiam indicium manu addere potes si inscriptionem contractus eius nosti.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automataria probatio tesserarum inactiva est, ergo inscriptiones tuae non pro tesseris prospiciuntur. Supra iterum eam activa, vel tesseram manu adde si inscriptionem contractus eius nosti.",
                 "HIDDENTITLE": "Tesserae Occultae",
                 "CONTEXTMENUHIDE": "Tessera Celanda",
                 "ITEMSSUFFIX": "res (res)",
-                "NONENUMERABLETOOLTIP": "Haec collectio singulas res enumerare non potest, sed potius numerum earum ostendere."
+                "NONENUMERABLETOOLTIP": "Haec collectio singulas res enumerare non potest, sed potius numerum earum ostendere.",
+                "CHECKINGENABLED": "Inspectio",
+                "CHECKINGDISABLED": "Examinatio",
+                "CHECKINGENABLEDTOOLTIP": "Inspectio tesserarum activa est — Altitude periodicē inscriptiones tuas pro tesseris inspicit et reliqua renovat. Preme ut inactives.",
+                "CHECKINGDISABLEDTOOLTIP": "Inspectio tesserarum inactiva est - preme ut iterum accendatur.",
+                "CHECKINGDISABLEDNOTICE": "Automata probatio tesserarum inactiva est. Inscriptiones tuae tesseras non perscrutantur et reliqua non renovabuntur. Tesseram manu addere tamen potes."
             },
             "ADDTOKEN": {
                 "TITLE": "Tessera Addenda",

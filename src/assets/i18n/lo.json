@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "ສ້າງບັນຊີ",
             "HIDEEMPTYACCOUNTS": "ເຊື່ອງບັນຊີຫວ່າງເປົ່າທີ່ບໍ່ມີຊື່"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ພາບລວມ",
+            "TRANSACTIONSTAB": "ທຸລະກຳ",
+            "ADDRESSTABS": "ທີ່ຢູ່"
+        },
         "SEND": {
             "ADDRECIPIENT": "ເພີ່ມຜູ້ຮັບ",
             "SEND": "ສົ່ງ",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "ວັນທີ",
             "TABLECOLUMNS_CONFIRMS": "ການຢືນຢັນ",
             "ALL_SELECTUNSELECT": "ສະຫຼັບທັງໝົດ",
+            "TREEMODE": "ໂໝດຕົ້ນໄມ້",
+            "LISTMODE": "ໂໝດລາຍຊື່",
             "SENDAVAILABLE": "ໃຊ້ຍອດເງິນທີ່ມີຢູ່",
             "INPUTLOCKED": "ການປ້ອນຂໍ້ມູນຖືກລັອກໄວ້. ທ່ານຈະຕ້ອງປົດລັອກການປ້ອນຂໍ້ມູນນີ້ເພື່ອໃຊ້ຈ່າຍມັນ.",
             "CONTEXTMENULOCKINPUT": "ລັອກອິນພຸດ",
@@ -38,10 +45,48 @@
             "AFTERFEE": "ຫຼັງຄ່າທຳນຽມ",
             "QUANTITY": "ປະລິມານ",
             "BYTES": "ໄບຕ໌",
-            "TREEMODE": "ໂໝດຕົ້ນໄມ້",
-            "LISTMODE": "ໂໝດລາຍຊື່",
             "ALERTFEECHANGETITLE": "ການປ່ຽນແປງຄ່າທຳນຽມ",
             "ALERTFEECHANGECONTENT": "ຄ່າທຳນຽມທຸລະກຳຕົວຈິງສູງກວ່າທີ່ຄາດໄວ້. ກະລຸນາຢືນຢັນຄ່າທຳນຽມໃໝ່:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "ສ້າງສັນຍາ",
+            "INFO": "ນຳໃຊ້ສັນຍາອັດສະລິຍະໄປຍັງເຄືອຂ່າຍໂດຍການສົ່ງໄບຕ໌ໂຄດທີ່ຄອມໄພລ໌ແລ້ວ. ນີ້ແມ່ນຟັງຊັນຕ່ອງໂສ້ຫຼັກ - ກວດສອບໄບຕ໌ໂຄດ ແລະ ການຕັ້ງຄ່າແກັສຂອງທ່ານສອງຄັ້ງກ່ອນການນຳໃຊ້, ການນຳໃຊ້ບໍ່ສາມາດຍົກເລີກໄດ້.",
+            "FROM": "ຈາກ",
+            "BYTECODE": "ໄບຕ໌ໂຄດ",
+            "BYTECODEPLACEHOLDER": "ວາງລະຫັດສັນຍາທີ່ຄອມໄພລ໌ແລ້ວ (hex)",
+            "INVALIDBYTECODE": "ລະຫັດໄບຕ໌ຕ້ອງເປັນສະຕຣິງ hex ທີ່ຖືກຕ້ອງ (0-9, a-f) ພ້ອມດ້ວຍຈຳນວນຕົວອັກສອນຄູ່",
+            "GASLIMIT": "ຂີດຈຳກັດອາຍແກັສ",
+            "GASLIMITRANGE": "ຂອບເຂດ",
+            "GASPRICE": "ລາຄານໍ້າມັນ (MRX ຕໍ່ໜ່ວຍນໍ້າມັນ)",
+            "GASPRICEMIN": "ຕໍ່າສຸດ",
+            "ESTIMATEDMAXCOST": "ຄ່າໃຊ້ຈ່າຍສູງສຸດປະມານ",
+            "DEPLOYBUTTON": "ນຳໃຊ້ສັນຍາ",
+            "INCOMPLETEFORM": "ກະລຸນາເລືອກທີ່ຢູ່ຜູ້ສົ່ງ, ໃສ່ລະຫັດໄບຕ໌ທີ່ຖືກຕ້ອງ, ແລະ ກຳນົດຂອບເຂດ/ລາຄານໍ້າມັນທີ່ຖືກຕ້ອງ",
+            "HIGHGASPRICETITLE": "ລາຄານໍ້າມັນສູງ",
+            "HIGHGASPRICEINFO": "ລາຄານໍ້າມັນທີ່ທ່ານໄດ້ກຳນົດໄວ້ນັ້ນສູງຜິດປົກກະຕິ. ການນຳໃຊ້ນີ້ອາດມີລາຄາສູງເຖິງ:",
+            "DEPLOYING": "ກຳລັງນຳໃຊ້ສັນຍາ...",
+            "DEPLOYED": "ສົ່ງການສົ່ງສັນຍາແລ້ວ",
+            "RESULTTITLE": "ຜົນການນຳໃຊ້",
+            "STATUS": "ສະຖານະ",
+            "STATUSPENDING": "ລໍຖ້າການຢືນຢັນ...",
+            "STATUSCONFIRMED": "ນຳໃຊ້ສຳເລັດແລ້ວ",
+            "STATUSFAILED": "ການນຳໃຊ້ລົ້ມເຫຼວ",
+            "TXID": "ລະຫັດທຸລະກຳ",
+            "SENDER": "ຜູ້ສົ່ງ",
+            "CONTRACTADDRESS": "ທີ່ຢູ່ສັນຍາ",
+            "GASUSED": "ອາຍແກັສທີ່ໃຊ້ແລ້ວ",
+            "DONEBUTTON": "ສຳເລັດແລ້ວ",
+            "DEPLOYANOTHERBUTTON": "ນຳໃຊ້ອັນອື່ນ"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "ທຸລະກຳ",
+            "COPYBLOCKHASH": "ຄັດລອກບລັອກແຮຊ",
+            "COPYTXID": "ສຳເນົາ ID ທຸລະກຳ",
+            "COPYACCOUNT": "ສຳເນົາຊື່ບັນຊີ",
+            "COPYADDRESS": "ສຳເນົາທີ່ຢູ່",
+            "COPYAMOUNT": "ຈຳນວນສຳເນົາ",
+            "COPTBLOCKINDEX": "ດັດຊະນີບລັອກສຳເນົາ",
+            "EXPLORER": "ເປີດໃນ Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "ປົດລັອກສຳລັບການວາງເດີມພັນ",
@@ -68,13 +113,13 @@
             "IP": "ໄອທີ",
             "ADDRESS": "ທີ່ຢູ່",
             "ENABLED": "ເປີດໃຊ້ງານແລ້ວ",
-            "STARTBUTTON": "ເລີ່ມຕົ້ນທ້ອງຖິ່ນ",
-            "STARTALIASBUTTON": "ເລີ່ມຊື່ແຝງ",
-            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງໝົດ",
             "NOMASTERNODES": "ທ່ານບໍ່ມີ masternodes ໃດໆ",
             "NOMNOUTPUTS": "ບໍ່ພົບຜົນຜະລິດຂອງ Masternode. ເພື່ອໃຊ້ Masternode ທ້ອງຖິ່ນ, ໃຫ້ສົ່ງເງິນຈຳນວນ 2,5,25,50 ຫຼື 100 ລ້ານຫຼຽນໄປຫາທີ່ຢູ່ Masternode ຂອງທ່ານ ແລະລໍຖ້າການຢືນຢັນ 15 ຄັ້ງ.",
+            "STARTBUTTON": "ເລີ່ມຕົ້ນທ້ອງຖິ່ນ",
             "STOPBUTTON": "ຢຸດທ້ອງຖິ່ນ",
+            "STARTALIASBUTTON": "ເລີ່ມຊື່ແຝງ",
             "STOPALIASBUTTON": "ຢຸດຊື່ແຝງ",
+            "STARTALLBUTTON": "ເລີ່ມຕົ້ນທັງໝົດ",
             "ADDREMOTE": "ເພີ່ມ Masternode ໄລຍະໄກ",
             "REMOVEMN": "ລຶບ Masternode ອອກ",
             "ADDLOCAL": "ຕັ້ງຄ່າ Masternode ທ້ອງຖິ່ນ",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "ທົ່ວໄປ",
                 "COREVERSION": "ເວີຊັນຫຼັກ",
+                "ALTITUDEVERSION": "ລຸ້ນລະດັບຄວາມສູງ",
                 "PROTOCOLVERSION": "ເວີຊັນໂປໂຕຄອນ",
                 "WALLETVERSION": "ເວີຊັນ Wallet.dat",
                 "NETWORKTITLE": "ເຄືອຂ່າຍ",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "ຈຳນວນຂອງມາສເຕີໂນດ",
                 "BLOCKCHAINTITLE": "ລະບົບຕ່ອງໂສ້ຕັນ",
                 "NUMBERBLOCKS": "ຈຳນວນບລັອກປະຈຸບັນ",
-                "BESTBLOCKTTIME": "ເວລາບລັອກສຸດທ້າຍ",
-                "ALTITUDEVERSION": "ລຸ້ນລະດັບຄວາມສູງ"
+                "BESTBLOCKTTIME": "ເວລາບລັອກສຸດທ້າຍ"
             },
             "DEBUG": {
                 "CONSOLEINFO": "ຍິນດີຕ້ອນຮັບສູ່ຄອນໂຊນ Metrix Core RPC. ພິມ help ເພື່ອເບິ່ງພາບລວມຂອງຄຳສັ່ງທີ່ມີຢູ່.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "ເລືອກພາສາ"
         },
-        "TRANSACTIONS": {
-            "TITLE": "ທຸລະກຳ",
-            "COPYBLOCKHASH": "ຄັດລອກບລັອກແຮຊ",
-            "COPYTXID": "ສຳເນົາ ID ທຸລະກຳ",
-            "COPYACCOUNT": "ສຳເນົາຊື່ບັນຊີ",
-            "COPYADDRESS": "ສຳເນົາທີ່ຢູ່",
-            "COPYAMOUNT": "ຈຳນວນສຳເນົາ",
-            "COPTBLOCKINDEX": "ດັດຊະນີບລັອກສຳເນົາ",
-            "EXPLORER": "ເປີດໃນ Block Explorer"
+        "CURRENCY": {
+            "TITLE": "ເລືອກສະກຸນເງິນທີ່ສະແດງ"
         },
         "EXPLORER": {
             "TITLE": "ເຄື່ອງມືສຳຫຼວດບລັອກ",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "ເຄືອຂ່າຍ",
             "WINDOTAB": "ປ່ອງຢ້ຽມ",
+            "BACKUPTAB": "ສຳຮອງຂໍ້ມູນ",
+            "EXPLORERTAB": "ນັກສຳຫຼວດ",
+            "DEVELOPERTAB": "ນັກພັດທະນາ",
             "NETWORK": {
                 "PROXY": "ເຊື່ອມຕໍ່ຜ່ານ proxy SOCKS5",
                 "PROXYIP": "IP ພຣັອກຊີ",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "ຫຍໍ້ລົງເມື່ອປິດ",
                 "BEHAVIOURTITLE": "ພຶດຕິກຳຂອງຖາດລະບົບ ແລະ ໜ້າຕ່າງ"
             },
-            "BACKUPTAB": "ສຳຮອງຂໍ້ມູນ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "ສຳຮອງຂໍ້ມູນອັດຕະໂນມັດ",
                 "ENABLED": "ສຳຮອງຂໍ້ມູນ wallet.dat ໂດຍອັດຕະໂນມັດຕາມກຳນົດເວລາ",
                 "ENABLEDINFO": "ສ້າງການສຳຮອງຂໍ້ມູນໃໝ່ຂອງໄຟລ໌ກະເປົາເງິນຂອງທ່ານຕາມກຳນົດເວລາ, ດັ່ງນັ້ນສຳເນົາຫຼ້າສຸດຈຶ່ງຈະມີໃຫ້ສະເໝີຖ້າມີບາງຢ່າງຜິດພາດເກີດຂຶ້ນ.",
+                "INTERVALLABEL": "ສຳຮອງຂໍ້ມູນທຸກໆ (ມື້)",
                 "LASTBACKUP": "ສຳຮອງຂໍ້ມູນຄັ້ງສຸດທ້າຍ:",
                 "NEVERBACKEDUP": "ຍັງບໍ່ມີການສຳຮອງຂໍ້ມູນອັດຕະໂນມັດເທື່ອ.",
                 "BACKUPNOWBUTTON": "ສຳຮອງຂໍ້ມູນດຽວນີ້",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ຣີເຊັດເປັນຄ່າເລີ່ມຕົ້ນ",
                 "PRUNETITLE": "ປະຫວັດການສຳຮອງຂໍ້ມູນ",
                 "PRUNEINFO": "ການສຳຮອງຂໍ້ມູນອັດຕະໂນມັດເກົ່າກວ່າຈະຖືກລຶບອອກ ດັ່ງນັ້ນໂຟນເດີນີ້ຈະບໍ່ເຕີບໃຫຍ່ຕະຫຼອດໄປ - ມີພຽງແຕ່ອັນລ່າສຸດທີ່ຢູ່ດ້ານລຸ່ມເທົ່ານັ້ນທີ່ຖືກເກັບໄວ້.",
-                "KEEPCOUNTLABEL": "ຮັກສາໄວ້ສຸດທ້າຍ",
-                "INTERVALLABEL": "ສຳຮອງຂໍ້ມູນທຸກໆ (ມື້)"
+                "KEEPCOUNTLABEL": "ຮັກສາໄວ້ສຸດທ້າຍ"
             },
-            "EXPLORERTAB": "ນັກສຳຫຼວດ",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ເຄື່ອງມືສຳຫຼວດບລັອກ",
                 "BLOCKEXPLORERINFO": "ເວັບໄຊທ໌ໄດ້ເປີດຂຶ້ນເມື່ອເບິ່ງທຸລະກໍາໃນຕົວສຳຫຼວດບລັອກ (ຕົວຢ່າງ: ຄລິກຂວາໃສ່ທຸລະກໍາ > ເບິ່ງໃນຕົວສຳຫຼວດ).",
@@ -259,25 +298,31 @@
                 "MAINNET": "ເຄືອຂ່າຍຫຼັກ",
                 "TESTNET": "ເທສເນັດ",
                 "REGTEST": "ການທົດສອບການລົງທະບຽນ"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "ໂໝດນັກພັດທະນາ",
+                "DEVMODEINFO": "ປິດຕາມຄ່າເລີ່ມຕົ້ນ ແລະ ມີຈຸດປະສົງສຳລັບນັກພັດທະນາເທົ່ານັ້ນ. ການເປີດໃຊ້ສິ່ງນີ້ຈະສະແດງຕົວເລືອກເພື່ອຍົກເລີກການເຊື່ອມຕໍ່ RPC - ຜູ້ໃຊ້ມາດຕະຖານຄວນປິດສິ່ງນີ້ໄວ້.",
+                "DEVMODELABEL": "ເປີດໃຊ້ໂໝດນັກພັດທະນາ",
+                "WARNING": "ການຕັ້ງຄ່າເຫຼົ່ານີ້ແມ່ນສຳລັບຈຸດປະສົງການພັດທະນາເທົ່ານັ້ນ. ການປ່ຽນແປງພວກມັນສາມາດປ້ອງກັນບໍ່ໃຫ້ກະເປົາເງິນເຊື່ອມຕໍ່ກັບ daemon ໄດ້ເລີຍ - ໃຊ້ອັນນີ້ພຽງແຕ່ຖ້າທ່ານຮູ້ວ່າທ່ານກຳລັງເຮັດຫຍັງຢູ່.",
+                "RPCHOSTTITLE": "ການເຊື່ອມຕໍ່ RPC",
+                "RPCHOSTINFO": "ຕາມຄ່າເລີ່ມຕົ້ນ Altitude ເຊື່ອມຕໍ່ກັບ daemon ທີ່ມັນຈັດການເອງ, ໃນເຄື່ອງນີ້ (127.0.0.1). ການລົບລ້າງສິ່ງເຫຼົ່ານີ້ຊ່ວຍໃຫ້ມັນເຊື່ອມຕໍ່ກັບ daemon ອື່ນແທນ - ຕົວຢ່າງເຊັ່ນ instance regtest ໄລຍະໄກ, ໂດຍບໍ່ຈຳເປັນຕ້ອງແລ່ນມັນຢູ່ໃນທ້ອງຖິ່ນ. ຖ້າການເຊື່ອມຕໍ່ສຳເລັດ, Altitude ຈະບໍ່ດາວໂຫຼດ ຫຼື ເລີ່ມ daemon ທ້ອງຖິ່ນຂອງມັນເອງ. rpcallowip ຂອງ daemon ເປົ້າໝາຍຕ້ອງອະນຸຍາດການເຊື່ອມຕໍ່ນີ້, ແລະ rpcuser/rpcpassword ຂ້າງລຸ່ມນີ້ຕ້ອງກົງກັບການຕັ້ງຄ່າຂອງມັນ. ມີຜົນບັງຄັບໃຊ້ທັນທີ, ບໍ່ຈຳເປັນຕ້ອງເລີ່ມໃໝ່.",
+                "RPCHOSTLABEL": "ໂຮສຕ໌ RPC",
+                "RPCPORTLABEL": "ພອດ RPC",
+                "RPCUSERLABEL": "ຊື່ຜູ້ໃຊ້ RPC",
+                "RPCPASSWORDLABEL": "ລະຫັດຜ່ານ RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ພາບລວມ",
-            "TRANSACTIONSTAB": "ທຸລະກຳ",
-            "ADDRESSTABS": "ທີ່ຢູ່"
-        },
-        "CURRENCY": {
-            "TITLE": "ເລືອກສະກຸນເງິນທີ່ສະແດງ"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ແຜງຄວບຄຸມ",
             "SEND": "ສົ່ງ",
+            "CREATECONTRACT": "ສ້າງສັນຍາ",
             "RECEIVE": "ຮັບ",
             "TRANSACTIONS": "ທຸລະກຳ",
             "STAKING": "ການວາງເດີມພັນ",
             "MASTERNODES": "ໂຫນດມາສເຕີ",
+            "EXPLORER": "ເຄື່ອງມືສຳຫຼວດບລັອກ",
             "SYNC": {
                 "CONNECTING": "ກຳລັງເຊື່ອມຕໍ່",
                 "NOBLOCKS": "ລໍຖ້າບລັອກ",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ປະຈຸບັນ Wallet ບໍ່ໄດ້ວາງເດີມພັນ",
                 "MASTERNODEON": "Masternode ກຳລັງເຮັດວຽກຢູ່",
                 "MASTERNODEOFF": "Masternode ບໍ່ໄດ້ເຮັດວຽກຢູ່ໃນປະຈຸບັນ"
-            },
-            "EXPLORER": "ເຄື່ອງມືສຳຫຼວດບລັອກ"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "ໃສ່ທີ່ຢູ່ເວັບໄຊທ໌ web3",
+            "GOBUTTON": "ໄປ",
+            "QUICKLAUNCH": "ເປີດໃຊ້ງານດ່ວນ",
+            "DEVTOOLS": "ເປີດເຄື່ອງມືນັກພັດທະນາ",
+            "ADDLINK": "ເພີ່ມລິ້ງ",
+            "LINKNAMEPLACEHOLDER": "ຊື່",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "ບັນທຶກ",
+            "CANCEL": "ຍົກເລີກ",
+            "REMOVE": "ລຶບອອກ",
+            "REMOVECONFIRM": "ລຶບລິ້ງໄວນີ້ອອກບໍ?",
+            "LINKEXISTS": "ລິ້ງນັ້ນຢູ່ໃນລາຍຊື່ເປີດຕົວດ່ວນຂອງທ່ານແລ້ວ",
+            "LINKINVALID": "ໃສ່ທີ່ຢູ່ເວັບໄຊທີ່ຖືກຕ້ອງ",
+            "LINKNETWORKLABEL": "ເຄືອຂ່າຍ",
+            "LOADFAILED": "ໂຫຼດເວັບໄຊບໍ່ສຳເລັດ",
+            "SECURESITE": "ການເຊື່ອມຕໍ່ປອດໄພ - ໃບຢັ້ງຢືນ SSL ທີ່ຖືກຕ້ອງ",
+            "INSECURESITE": "ການເຊື່ອມຕໍ່ບໍ່ປອດໄພ",
+            "INVALIDCERTSITE": "ການເຊື່ອມຕໍ່ບໍ່ແມ່ນສ່ວນຕົວ - ໃບຢັ້ງຢືນ SSL ບໍ່ຖືກຕ້ອງ ຫຼື ບໍ່ໜ້າເຊື່ອຖື"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ໃສ່ລະຫັດຜ່ານກະເປົາເງິນຂອງທ່ານ",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "ມີການອັບເດດສຳລັບ Metrix Core. ທ່ານຕ້ອງການຕິດຕັ້ງມັນດຽວນີ້ບໍ?",
             "WALLETUPDATETITLE": "ມີການອັບເດດລະດັບຄວາມສູງ",
             "WALLETUPDATEINFO": "ມີການອັບເດດສຳລັບ Altitude. ທ່ານຕ້ອງການດາວໂຫຼດມັນດຽວນີ້ບໍ?",
+            "WALLETUPDATEREADYTITLE": "ອັບເດດລະດັບຄວາມສູງພ້ອມແລ້ວ",
+            "WALLETUPDATEREADYINFO": "ດາວໂຫຼດການອັບເດດແລ້ວ. ເປີດ Altitude ໃໝ່ດຽວນີ້ເພື່ອຕິດຕັ້ງມັນບໍ?",
+            "WALLETUPDATERESTARTBUTTON": "ເລີ່ມຕົ້ນໃໝ່ ແລະ ຕິດຕັ້ງ",
+            "WALLETUPDATELATERBUTTON": "ຕໍ່ມາ",
             "CLIENTUPDATEBUTTON": "ອັບເດດ",
             "CLIENTUPDATECANCELBUTTON": "ຢ່າອັບເດດ",
             "CLIENTUPDATESKIPBUTTON": "ຂ້າມການອັບເດດນີ້",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "ການສຳຮອງຂໍ້ມູນໃດໆທີ່ທ່ານໄດ້ເຮັດຈາກໄຟລ໌ກະເປົາເງິນຂອງທ່ານກ່ອນໜ້ານີ້ຄວນຖືກປ່ຽນແທນດ້ວຍໄຟລ໌ກະເປົາເງິນທີ່ເຂົ້າລະຫັດໃໝ່. ເພື່ອເຫດຜົນດ້ານຄວາມປອດໄພ, ການສຳຮອງຂໍ້ມູນກ່ອນໜ້ານີ້ຂອງໄຟລ໌ກະເປົາເງິນທີ່ບໍ່ໄດ້ເຂົ້າລະຫັດຈະກາຍເປັນບໍ່ມີປະໂຫຍດທັນທີທີ່ທ່ານເລີ່ມໃຊ້ກະເປົາເງິນທີ່ເຂົ້າລະຫັດໃໝ່.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core ຢຸດເຮັດວຽກໂດຍບໍ່ຄາດຄິດ",
             "CLIENTCLOSEDUNEXPECTEDINFO": "ມີບັນຫາກັບ Metrix Core ທີ່ເຮັດໃຫ້ມັນຢຸດເຮັດວຽກ. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ debug.log ຂອງທ່ານເພື່ອຊອກຫາບັນຫາ.",
+            "CLIENTUNKNOWNERRORTITLE": "ຄວາມຜິດພາດໃນການສື່ສານຫຼັກຂອງ Metrix",
+            "CLIENTUNKNOWNERRORINFO": "ມີບັນຫາໃນການສື່ສານກັບ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ debug.log ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap ລົ້ມເຫລວ",
+            "BOOTSTRAPFAILEDINFO": "ມີບັນຫາໃນການບູດສະແຕຣບ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ບັນທຶກ Altitude ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
+            "BOOTSTRAPOFFERTITLE": "ກະເປົາເງິນລ້າສະໄໝຫຼາຍ",
+            "BOOTSTRAPOFFERINFO": "ມີ bootstrap ລຸ້ນໃໝ່ທີ່ສາມາດອັບເດດ Metrix Core ໄດ້ຢ່າງວ່ອງໄວ. ການສືບຕໍ່ໃຊ້ການຊິ້ງແບບປົກກະຕິອາດຈະໃຊ້ເວລາຫຼາຍມື້ເພື່ອໃຫ້ສຳເລັດ, ເນື່ອງຈາກກະເປົາເງິນຂອງທ່ານຈຳເປັນຕ້ອງດາວໂຫຼດ ແລະ ກວດສອບທຸກໆບລັອກທີ່ມັນພາດໄປ.",
+            "BOOTSTRAPOFFERBUTTON": "ດາວໂຫຼດ Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "ສືບຕໍ່ການຊິ້ງຂໍ້ມູນປົກກະຕິ",
+            "BOOTSTRAPSPACEINFO": "ບໍ່ມີພື້ນທີ່ຫວ່າງພຽງພໍທີ່ຈະດາວໂຫຼດ ແລະ ສະກັດເອົາ bootstrap. ຕ້ອງການ: {ຕ້ອງການ}, ມີໃຫ້ໃຊ້: {ຟຣີ}. ເພີ່ມພື້ນທີ່ຫວ່າງ ແລະ ລອງໃໝ່ອີກຄັ້ງ.",
+            "STARTUPFAILEDTITLE": "ການເລີ່ມຕົ້ນ Metrix Core ລົ້ມເຫລວ",
+            "STARTUPFAILEDINFO": "ມີຂໍ້ຜິດພາດໃນການເລີ່ມຕົ້ນ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ບັນທຶກ Altitude ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ເຄື່ອງມືກູ້ຄືນ",
             "CLIENTINVALIDCONFIGTITLE": "ການຕັ້ງຄ່າ metrix.conf ບໍ່ຖືກຕ້ອງ",
             "CLIENTINVALIDCONFIGINFO": "metrix.conf ຂອງທ່ານມີການຕັ້ງຄ່າ masternode ທີ່ບໍ່ຖືກຕ້ອງເຊິ່ງຈະເຮັດໃຫ້ Metrix Core ອອກຈາກລະບົບທັນທີ. ກະລຸນາກວດສອບໄຟລ໌ນີ້.",
             "ADDREMOTEMNTITLE": "ເພີ່ມ Masternode ໄລຍະໄກ",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "ກະແຈສ່ວນຕົວຂອງ Masternode",
             "ADDREMOTEMNTXHASH": "ແຮຊ Trx ຂອງ Masternode",
             "ADDREMOTEMNTXINDEX": "ດັດຊະນີ Trx ຂອງ Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap ລົ້ມເຫລວ",
-            "BOOTSTRAPFAILEDINFO": "ມີບັນຫາໃນການບູດສະແຕຣບ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ບັນທຶກ Altitude ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ເຄື່ອງມືກູ້ຄືນ",
-            "STARTUPFAILEDTITLE": "ການເລີ່ມຕົ້ນ Metrix Core ລົ້ມເຫລວ",
-            "STARTUPFAILEDINFO": "ມີຂໍ້ຜິດພາດໃນການເລີ່ມຕົ້ນ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ບັນທຶກ Altitude ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
-            "CLIENTUNKNOWNERRORTITLE": "ຄວາມຜິດພາດໃນການສື່ສານຫຼັກຂອງ Metrix",
-            "CLIENTUNKNOWNERRORINFO": "ມີບັນຫາໃນການສື່ສານກັບ Metrix Core. ແນະນຳໃຫ້ກວດສອບໄຟລ໌ debug.log ຂອງທ່ານເພື່ອຊອກຫາບັນຫາຕ່າງໆ.",
             "UNENROLLGOVERNORTITLE": "ຢືນຢັນການຖອນການລົງທະບຽນຂອງຜູ້ວ່າການ",
             "UNENROLLGOVERNORCONTENT": "ທ່ານແນ່ໃຈບໍ່ວ່າທ່ານຕ້ອງການຍົກເລີກການລົງທະບຽນຜູ້ວ່າການຂອງທ່ານ? ທ່ານຈະບໍ່ສາມາດລົງຄະແນນສຽງໃນລະບົບການປົກຄອງແບບຕ່ອງໂສ້ໄດ້ອີກຕໍ່ໄປ.",
-            "WALLETUPDATEREADYTITLE": "ອັບເດດລະດັບຄວາມສູງພ້ອມແລ້ວ",
-            "WALLETUPDATEREADYINFO": "ດາວໂຫຼດການອັບເດດແລ້ວ. ເປີດ Altitude ໃໝ່ດຽວນີ້ເພື່ອຕິດຕັ້ງມັນບໍ?",
-            "WALLETUPDATERESTARTBUTTON": "ເລີ່ມຕົ້ນໃໝ່ ແລະ ຕິດຕັ້ງ",
-            "WALLETUPDATELATERBUTTON": "ຕໍ່ມາ",
             "DAPPCONNECTTITLE": "ເຊື່ອມຕໍ່ກັບເວັບໄຊ",
             "DAPPCONNECTINFO": "ເວັບໄຊນີ້ຕ້ອງການເຊື່ອມຕໍ່ຫາກະເປົາເງິນຂອງທ່ານ ແລະ ເບິ່ງທີ່ຢູ່ ແລະ ຍອດເງິນຂອງທ່ານ.",
             "DAPPCONNECTBUTTON": "ເຊື່ອມຕໍ່",
+            "DAPPCONNECTADDRESSLABEL": "ທີ່ຢູ່",
+            "DAPPAPPROVEBUTTON": "ອະນຸມັດ",
             "DAPPREJECTBUTTON": "ປະຕິເສດ",
             "DAPPSENDTITLE": "ການຮ້ອງຂໍທຸລະກຳສັນຍາ",
             "DAPPSENDINFO": "ເວັບໄຊທ໌ນີ້ກຳລັງຮ້ອງຂໍໃຫ້ສົ່ງທຸລະກຳສັນຍາຈາກກະເປົາເງິນຂອງທ່ານ.",
-            "DAPPSIGNTITLE": "ຮ້ອງຂໍຂໍ້ຄວາມລົງນາມ",
-            "DAPPSIGNINFO": "ເວັບໄຊນີ້ກຳລັງຮ້ອງຂໍໃຫ້ເຊັນຂໍ້ຄວາມດ້ວຍທີ່ຢູ່ກະເປົາເງິນຂອງທ່ານ.",
-            "DAPPNOTREADY": "ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບເວັບໄຊໄດ້ເທື່ອ - Metrix Core ຍັງເລີ່ມຕົ້ນຢູ່.",
-            "DAPPNOWALLET": "ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບເວັບໄຊທ໌ໄດ້ - ບໍ່ມີທີ່ຢູ່ກະເປົາເງິນທີ່ສາມາດໃຊ້ໄດ້.",
-            "DAPPAPPROVEBUTTON": "ອະນຸມັດ",
-            "DAPPCONNECTADDRESSLABEL": "ທີ່ຢູ່",
             "DAPPSENDSITELABEL": "ເວັບໄຊ",
             "DAPPSENDCONTRACTLABEL": "ທີ່ຢູ່ສັນຍາ",
             "DAPPSENDAMOUNTLABEL": "ຈຳນວນເງິນ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "ຄ່າທຳນຽມເຄືອຂ່າຍສູງສຸດ",
             "DAPPSENDMAXTOTALLABEL": "ຍອດລວມສູງສຸດ",
             "DAPPSENDDATALABEL": "ຂໍ້ມູນສັນຍາ",
+            "DAPPSIGNTITLE": "ຮ້ອງຂໍຂໍ້ຄວາມລົງນາມ",
+            "DAPPSIGNINFO": "ເວັບໄຊນີ້ກຳລັງຮ້ອງຂໍໃຫ້ເຊັນຂໍ້ຄວາມດ້ວຍທີ່ຢູ່ກະເປົາເງິນຂອງທ່ານ.",
             "DAPPSIGNMESSAGELABEL": "ຂໍ້ຄວາມ",
-            "BOOTSTRAPOFFERTITLE": "ກະເປົາເງິນລ້າສະໄໝຫຼາຍ",
-            "BOOTSTRAPOFFERINFO": "ມີ bootstrap ລຸ້ນໃໝ່ທີ່ສາມາດອັບເດດ Metrix Core ໄດ້ຢ່າງວ່ອງໄວ. ການສືບຕໍ່ໃຊ້ການຊິ້ງແບບປົກກະຕິອາດຈະໃຊ້ເວລາຫຼາຍມື້ເພື່ອໃຫ້ສຳເລັດ, ເນື່ອງຈາກກະເປົາເງິນຂອງທ່ານຈຳເປັນຕ້ອງດາວໂຫຼດ ແລະ ກວດສອບທຸກໆບລັອກທີ່ມັນພາດໄປ.",
-            "BOOTSTRAPOFFERBUTTON": "ດາວໂຫຼດ Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "ສືບຕໍ່ການຊິ້ງຂໍ້ມູນປົກກະຕິ",
-            "BOOTSTRAPSPACEINFO": "ບໍ່ມີພື້ນທີ່ຫວ່າງພຽງພໍທີ່ຈະດາວໂຫຼດ ແລະ ສະກັດເອົາ bootstrap. ຕ້ອງການ: {ຕ້ອງການ}, ມີໃຫ້ໃຊ້: {ຟຣີ}. ເພີ່ມພື້ນທີ່ຫວ່າງ ແລະ ລອງໃໝ່ອີກຄັ້ງ."
+            "DAPPNOTREADY": "ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບເວັບໄຊໄດ້ເທື່ອ - Metrix Core ຍັງເລີ່ມຕົ້ນຢູ່.",
+            "DAPPNOWALLET": "ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບເວັບໄຊທ໌ໄດ້ - ບໍ່ມີທີ່ຢູ່ກະເປົາເງິນທີ່ສາມາດໃຊ້ໄດ້."
         },
         "ADDRESSBOOK": {
             "TITLE": "ປຶ້ມທີ່ຢູ່",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "ເຄືອຂ່າຍປັດຈຸບັນ"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "ໃສ່ທີ່ຢູ່ເວັບໄຊທ໌ web3",
-            "GOBUTTON": "ໄປ",
-            "QUICKLAUNCH": "ເປີດໃຊ້ງານດ່ວນ",
-            "DEVTOOLS": "ເປີດເຄື່ອງມືນັກພັດທະນາ",
-            "ADDLINK": "ເພີ່ມລິ້ງ",
-            "LINKNAMEPLACEHOLDER": "ຊື່",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "ບັນທຶກ",
-            "CANCEL": "ຍົກເລີກ",
-            "REMOVE": "ລຶບອອກ",
-            "REMOVECONFIRM": "ລຶບລິ້ງໄວນີ້ອອກບໍ?",
-            "LINKEXISTS": "ລິ້ງນັ້ນຢູ່ໃນລາຍຊື່ເປີດຕົວດ່ວນຂອງທ່ານແລ້ວ",
-            "LINKINVALID": "ໃສ່ທີ່ຢູ່ເວັບໄຊທີ່ຖືກຕ້ອງ",
-            "LINKNETWORKLABEL": "ເຄືອຂ່າຍ",
-            "LOADFAILED": "ໂຫຼດເວັບໄຊບໍ່ສຳເລັດ",
-            "SECURESITE": "ການເຊື່ອມຕໍ່ປອດໄພ - ໃບຢັ້ງຢືນ SSL ທີ່ຖືກຕ້ອງ",
-            "INSECURESITE": "ການເຊື່ອມຕໍ່ບໍ່ປອດໄພ",
-            "INVALIDCERTSITE": "ການເຊື່ອມຕໍ່ບໍ່ແມ່ນສ່ວນຕົວ - ໃບຢັ້ງຢືນ SSL ບໍ່ຖືກຕ້ອງ ຫຼື ບໍ່ໜ້າເຊື່ອຖື"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "ກະເປົາເງິນສຳຮອງ...",
             "SIGNMESSAGE": "ເຊັນຂໍ້ຄວາມ...",
             "VERIFYMESSAGE": "ຢືນຢັນຂໍ້ຄວາມ...",
-            "LOCALE": "ພາສາ...",
-            "RESTARTCORE": "ເລີ່ມຕົ້ນ Metrix Core ຄືນໃໝ່",
-            "EXIT": "ອອກ",
             "OPTIONS": "ຕົວເລືອກຕ່າງໆ...",
+            "LOCALE": "ພາສາ...",
             "CURRENCIES": "ສະແດງສະກຸນເງິນ...",
-            "ALTITUDEREFRESH": "ໂຫຼດຂໍ້ມູນລະດັບຄວາມສູງຄືນໃໝ່"
+            "RESTARTCORE": "ເລີ່ມຕົ້ນ Metrix Core ຄືນໃໝ່",
+            "ALTITUDEREFRESH": "ໂຫຼດຂໍ້ມູນລະດັບຄວາມສູງຄືນໃໝ່",
+            "EXIT": "ອອກ"
         },
         "ENCRYPT": {
             "TITLE": "ເຂົ້າລະຫັດ",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ຍອດເງິນທັງໝົດ",
+        "SPENDABLEBALANCE": "ຍອດເງິນທີ່ໃຊ້ຈ່າຍໄດ້",
+        "PENDINGBALANCE": "ຍອດເງິນທີ່ຍັງຄ້າງຢູ່",
         "CANCELBUTTON": "ຍົກເລີກ",
         "DONEBUTTON": "ສຳເລັດແລ້ວ",
         "OKBUTTON": "ໂອເຄ",
+        "ACCEPTBUTTON": "ຍອມຮັບ",
         "CLEARALLBUTTON": "ລຶບລ້າງທັງໝົດ",
         "ENTERACCOUNTLABEL": "ໃສ່ປ້າຍກຳກັບສຳລັບທີ່ຢູ່ນີ້",
         "ENTERADDRESSLABEL": "ໃສ່ທີ່ຢູ່ Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "ຈັດຮຽງຕາມ",
         "SEARCH": "ຄົ້ນຫາ",
         "FEE": "ຄ່າທຳນຽມ",
-        "ACCEPTBUTTON": "ຍອມຮັບ",
         "CONFIRMED": "ຢືນຢັນແລ້ວ",
         "UNCONFIRMED": "ຍັງບໍ່ໄດ້ຢືນຢັນ",
-        "PENDINGBALANCE": "ຍອດເງິນທີ່ຍັງຄ້າງຢູ່",
-        "SPENDABLEBALANCE": "ຍອດເງິນທີ່ໃຊ້ຈ່າຍໄດ້",
         "SAVEBUTTON": "ບັນທຶກ"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "ກຳລັງເລີ່ມຕົ້ນ Metrix Core ຄືນໃໝ່...",
         "BOOTSTRAPPING": "ກຳລັງດາວໂຫຼດ bootstrap...",
         "BOOTSTRAPEXTRACTING": "ກຳລັງສະກັດ bootstrap...",
-        "TIMEREMAINING": "ຍັງເຫຼືອ:"
+        "TIMEREMAINING": "ຍັງເຫຼືອ:",
+        "DEVRPCOVERRIDEACTIVE": "ການຍົກເລີກການເຊື່ອມຕໍ່ RPC ຂອງນັກພັດທະນາຖືກຕັ້ງຄ່າໄວ້ (ຕົວເລືອກ > ນັກພັດທະນາ) ແລະ ບໍ່ຕອບສະໜອງ. ລຶບມັນເພື່ອເຊື່ອມຕໍ່ກັບ daemon ທ້ອງຖິ່ນຄືນໃໝ່ຕາມປົກກະຕິ.",
+        "DEVRPCOVERRIDECLEARBUTTON": "ລຶບລ້າງການລົບລ້າງ RPC ແລະ ເຊື່ອມຕໍ່ຄືນໃໝ່"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "ສ້າງບັນຊີໃໝ່ສຳເລັດແລ້ວ",
         "ADDRESSCOPIEDCLIPBOARD": "ສຳເນົາທີ່ຢູ່ໄປໃສ່ຄລິບບອດແລ້ວ",
+        "COPIEDCLIPBOARD": "ສຳເນົາໃສ່ຄລິບບອດແລ້ວ",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ສຳເນົາທຸລະກຳໄປໃສ່ຄລິບບອດແລ້ວ",
         "EMPTYFIELDS": "ກະລຸນາຕື່ມຂໍ້ມູນໃສ່ໃນທຸກຊ່ອງ",
         "NOUPDATE": "ບໍ່ມີການອັບເດດ",
         "WALLETBACKEDUP": "ການສຳຮອງຂໍ້ມູນກະເປົາເງິນສຳເລັດແລ້ວ",
+        "WALLETBACKUPFAILED": "ການສຳຮອງຂໍ້ມູນກະເປົາເງິນອັດຕະໂນມັດລົ້ມເຫຼວ - ກວດສອບສະຖານທີ່ສຳຮອງຂໍ້ມູນຂອງທ່ານ ແລະ ພື້ນທີ່ຫວ່າງໃນແຜ່ນດິດທີ່ມີຢູ່",
         "PASSPHRASEMISMATCH": "ວະລີລະຫັດຜ່ານທີ່ທ່ານປ້ອນເຂົ້າບໍ່ກົງກັນ",
         "CHECKINGUPDATE": "ກຳລັງກວດສອບການອັບເດດ...",
         "CHECKINGUPDATEFAILED": "ບໍ່ສາມາດກວດສອບການອັບເດດໄດ້. ກວດສອບເຄືອຂ່າຍຂອງທ່ານ.",
+        "WALLETUPDATEDOWNLOADING": "ກຳລັງດາວໂຫຼດອັບເດດ...",
         "SENDINGEXCEEDSBALANCE": "ຈຳນວນເງິນທີ່ທ່ານກຳລັງສົ່ງເກີນຍອດເງິນທີ່ທ່ານເລືອກ",
         "MISSINGCHANGEADDRESS": "ທ່ານຕ້ອງລະບຸທີ່ຢູ່ສຳລັບການປ່ຽນແປງ",
         "MISSINGDESTINATIONADDRESS": "ທ່ານຕ້ອງລະບຸທີ່ຢູ່ປາຍທາງ",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "ກຳລັງເຂົ້າລະຫັດກະເປົາເງິນ...",
         "CHANGINGPASSPHARASE": "ກຳລັງປ່ຽນລະຫັດຜ່ານ...",
         "STARTINGMASTERNODE": "ກຳລັງເລີ່ມຕົ້ນໂຫນດຫຼັກ...",
+        "STOPPINGMASTERNODE": "ກຳລັງຢຸດ masternode...",
         "SENDINGTRANSACTION": "ກຳລັງສົ່ງທຸລະກຳ...",
         "SIGNINGMESSAGE": "ກຳລັງເຊັນຂໍ້ຄວາມ...",
         "SIGNEDMESSAGE": "ຂໍ້ຄວາມຖືກເຊັນແລ້ວ",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "ກຳລັງປົດລັອກກະເປົາເງິນ...",
         "TRANSACTIONMISMATCH": "ການເຮັດທຸລະກຳຜິດພາດ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ.",
         "MINIMUMCONFIRMATIONS": "ຂໍ້ມູນທັງໝົດຕ້ອງການການຢືນຢັນຢ່າງໜ້ອຍ 1 ຄັ້ງກ່ອນການໃຊ້ຈ່າຍ.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ສຳເນົາທຸລະກຳໄປໃສ່ຄລິບບອດແລ້ວ",
-        "STOPPINGMASTERNODE": "ກຳລັງຢຸດ masternode...",
         "FAILEDTOWRITECONFIG": "ມີບັນຫາໃນການຂຽນໃສ່ໄຟລ໌ metrix.conf ຂອງທ່ານ. ກະລຸນາກວດສອບວ່າໄຟລ໌ດັ່ງກ່າວມີຢູ່ ແລະ Altitude ມີສິດອະນຸຍາດໃນການຂຽນ.",
         "NOPUBLICUP": "ບໍ່ພົບທີ່ຢູ່ IP ສາທາລະນະ. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ ແລະ ປິດເປີດ Altitude ຄືນໃໝ່.",
         "CONFIGURINGLOCALMN": "ກຳລັງຕັ້ງຄ່າ Masternode ທ້ອງຖິ່ນ...",
         "REPORTINGISSUE": "ກຳລັງໄດ້ຮັບຂໍ້ມູນການວິນິດໄສ... ຂໍ້ມູນນີ້ຈະຖືກຄັດລອກໄປໃສ່ຄລິບບອດຂອງທ່ານ.",
-        "WALLETUPDATEDOWNLOADING": "ກຳລັງດາວໂຫຼດອັບເດດ...",
-        "WALLETBACKUPFAILED": "ການສຳຮອງຂໍ້ມູນກະເປົາເງິນອັດຕະໂນມັດລົ້ມເຫຼວ - ກວດສອບສະຖານທີ່ສຳຮອງຂໍ້ມູນຂອງທ່ານ ແລະ ພື້ນທີ່ຫວ່າງໃນແຜ່ນດິດທີ່ມີຢູ່",
         "EXPLORERURLSAVED": "ບັນທຶກ URL ຂອງ Explorer ແລ້ວ",
         "EXPLORERURLRESET": "URL ຂອງ Explorer ຖືກປ່ຽນກັບໄປເປັນຄ່າເລີ່ມຕົ້ນແລ້ວ",
         "EXPLORERURLINVALID": "ນັ້ນບໍ່ແມ່ນ URL http ທີ່ຖືກຕ້ອງ",
-        "EXPLORERURLUNREACHABLE": "ບໍ່ສາມາດເຂົ້າເຖິງ URL ນັ້ນໄດ້ - ກະລຸນາກວດສອບມັນ ແລະ ລອງໃໝ່ອີກຄັ້ງ"
+        "EXPLORERURLUNREACHABLE": "ບໍ່ສາມາດເຂົ້າເຖິງ URL ນັ້ນໄດ້ - ກະລຸນາກວດສອບມັນ ແລະ ລອງໃໝ່ອີກຄັ້ງ",
+        "DEVRPCHOSTSAVED": "ບັນທຶກໂຮສ RPC ແລ້ວ",
+        "DEVRPCHOSTRESET": "ໂຮສ RPC ຖືກປ່ຽນກັບຄືນໄປເປັນຄ່າເລີ່ມຕົ້ນ (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ຫຼຽນທີ່ໄດ້ຮັບ",
+        "NEWTRANSACTION_TITLE_STAKE": "ຮຸ້ນທີ່ໄດ້ຮັບ",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "ໄດ້ຮັບລາງວັນ Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "ສອງສາມວິນາທີ",
@@ -533,11 +587,6 @@
         "MONTHS": "ເດືອນ",
         "AYEAR": "ໜຶ່ງປີ",
         "YEARS": "ປີ"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "ຫຼຽນທີ່ໄດ້ຮັບ",
-        "NEWTRANSACTION_TITLE_STAKE": "ຮຸ້ນທີ່ໄດ້ຮັບ",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "ໄດ້ຮັບລາງວັນ Masternode"
     },
     "MONTH": {
         "JAN": "ມັງກອນ",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "ຜູ້ວ່າການມີໜ້າທີ່ຮັບຜິດຊອບໃນການລົງຄະແນນສຽງກ່ຽວກັບງົບປະມານປະຈຳເດືອນ ແລະ ການປ່ຽນແປງ blockchain. ທ່ານສາມາດກາຍເປັນຜູ້ວ່າການໄດ້ໂດຍການລັອກຫຼັກຊັບຄ້ຳປະກັນທີ່ຖືກຕ້ອງໄວ້ໃນສັນຍາການຄຸ້ມຄອງ.",
                 "COLLATERAL": "ຫຼັກຊັບຄ້ຳປະກັນທີ່ຕ້ອງການ",
                 "ENROLL": "ລົງທະບຽນ",
+                "SELECTAGOVERNOR": "ເລືອກທີ່ຢູ່ຂອງຜູ້ວ່າການທີ່ມີສິດ",
+                "GOVERNORNOTSELECTED": "ບໍ່ໄດ້ເລືອກທີ່ຢູ່ທີ່ມີສິດ",
                 "CONFIRMENROLL": "ທ່ານກຳລັງຈະລົງທະບຽນເປັນຜູ້ວ່າການ. ນີ້ຈະສົ່ງທຸລະກຳພ້ອມດ້ວຍຫຼັກປະກັນທີ່ຕ້ອງການຕໍ່ສັນຍາການຄຸ້ມຄອງ. ທ່ານສາມາດຍົກເລີກການລົງທະບຽນໄດ້ທຸກເວລາ.",
                 "ISGOVERNORTITLE": "ທ່ານເປັນຜູ້ປົກຄອງທີ່ມີການເຄື່ອນໄຫວ!",
                 "ISGOVERNORDETAIL1": "ຜູ້ວ່າການມີຄວາມຮັບຜິດຊອບໃນການລົງຄະແນນສຽງກ່ຽວກັບງົບປະມານປະຈໍາເດືອນ ແລະ ການປ່ຽນແປງ blockchain.",
                 "ISGOVERNORDETAIL2": "ເພື່ອຈະຍັງຄົງເປັນຜູ້ວ່າການລັດໄດ້ ທ່ານຈະຕ້ອງມີສ່ວນຮ່ວມໃນການລົງຄະແນນສຽງຢ່າງໜ້ອຍ 1 ຄັ້ງທຸກໆ 30 ມື້.",
                 "ISGOVERNORDETAIL3": "ຖ້າບໍ່ມີຫຍັງໃຫ້ລົງຄະແນນສຽງ, ທ່ານສາມາດສືບຕໍ່ການລົງທະບຽນຂອງທ່ານດ້ວຍຕົນເອງໂດຍການສົ່ງ ping ທີ່ໃຊ້ງານຢູ່.",
+                "MYGOVERNORADDRESS": "ທີ່ຢູ່ຂອງຜູ້ວ່າການຂອງຂ້ອຍ",
                 "UNENROLL": "ຍົກເລີກການລົງທະບຽນ",
                 "PING": "ສົ່ງ Ping ທີ່ໃຊ້ງານຢູ່",
                 "LASTPINGTITLE": "ping ສຸດທ້າຍ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ມື້",
                 "GOVERNORVOTEMATURITYHOURS": "ຊົ່ວໂມງ",
                 "GOVERNORVOTEMATURITYSUFFIX": "ຈົນກວ່າຈະເຕີບໃຫຍ່ເຕັມທີ່",
-                "MYGOVERNORADDRESS": "ທີ່ຢູ່ຂອງຜູ້ວ່າການຂອງຂ້ອຍ",
-                "SELECTAGOVERNOR": "ເລືອກທີ່ຢູ່ຂອງຜູ້ວ່າການທີ່ມີສິດ",
-                "GOVERNORNOTSELECTED": "ບໍ່ໄດ້ເລືອກທີ່ຢູ່ທີ່ມີສິດ",
                 "NOTFULLYSYNCEDTITLE": "ບໍ່ມີສະຖານະຜູ້ວ່າການ",
                 "NOTFULLYSYNCEDDETAIL": "ສະຖານະການລົງທະບຽນຜູ້ວ່າການຂອງທ່ານຈະສາມາດເບິ່ງເຫັນໄດ້ເມື່ອ blockchain ຂອງທ່ານຊິ້ງຂໍ້ມູນຢ່າງສົມບູນ.",
                 "DGPMIGRATIONTITLE": "ການໂອນຍ້າຍ DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "ຂໍ້ສະເໜີຂອງທ່ານໄດ້ຖືກສ້າງຂຶ້ນສຳເລັດແລ້ວ",
             "ENROLLINGGOVERNOR": "ລົງທະບຽນເປັນຜູ້ວ່າການ...",
             "ENROLLEDGOVERNOR": "ການລົງທະບຽນຂອງທ່ານຈະສຳເລັດເມື່ອທຸລະກຳຂອງທ່ານໄດ້ຮັບການຢືນຢັນແລ້ວ",
-            "VOTINGONPROPOSAL": "ກຳລັງສົ່ງການລົງຄະແນນສຽງຂໍ້ສະເໜີ",
-            "VOTEDONPROPOSAL": "ຄະແນນສຽງຂອງທ່ານຈະຖືກນັບເມື່ອທຸລະກຳໄດ້ຮັບການຢືນຢັນແລ້ວ.",
             "PINGINGGOVERNOR": "ກຳລັງສົ່ງ ping...",
             "PINGEDGOVERNOR": "ສົ່ງ Ping ສຳເລັດແລ້ວ. ຜູ້ວ່າການຂອງທ່ານຈະຖືກອັບເດດເມື່ອທຸລະກຳໄດ້ຮັບການຢືນຢັນແລ້ວ",
+            "VOTINGONPROPOSAL": "ກຳລັງສົ່ງການລົງຄະແນນສຽງຂໍ້ສະເໜີ",
+            "VOTEDONPROPOSAL": "ຄະແນນສຽງຂອງທ່ານຈະຖືກນັບເມື່ອທຸລະກຳໄດ້ຮັບການຢືນຢັນແລ້ວ.",
             "UNENROLLINGGOVERNOR": "ຖອນການລົງທະບຽນຜູ້ວ່າການ...",
             "UNENROLLEDGOVERNOR": "ສົ່ງທຸລະກຳແລ້ວ. ຜູ້ວ່າການຂອງທ່ານຈະຖືກຍົກເລີກການລົງທະບຽນເມື່ອທຸລະກຳໄດ້ຮັບການຢືນຢັນແລ້ວ",
             "GOVERNORNOTMATURE": "ຜູ້ວ່າການຂອງທ່ານຍັງບໍ່ທັນມີຄວາມເປັນຜູ້ໃຫຍ່ພຽງພໍທີ່ຈະປະຕິບັດການກະທຳນີ້ເທື່ອ"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "ຊື້ Metrix",
+                "SEARCH": "ປະຫວັດສາດ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "ເຈົ້າສົ່ງ",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ປະຫວັດການເຮັດທຸລະກຳ",
                 "SEARCHBUTTON": "ຄົ້ນຫາ",
+                "SEARCHPLACEHOLDER": "ໃສ່ທີ່ຢູ່ MRX ຫຼື BTC",
                 "TRANSACTIONDATE": "ວັນທີ",
                 "TRANSACTIONTYPE": "ປະເພດ TX",
                 "TRANSACTIONAMOUNT": "ຈຳນວນເງິນ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "ຢືນຢັນແລ້ວ",
                 "TRANSACTIONNOTCONFIRMED": "ຍັງບໍ່ໄດ້ຢືນຢັນ",
                 "TRANSACTIONREFUNDED": "ຄືນເງິນແລ້ວ - ຕໍ່າກວ່າຂັ້ນຕ່ຳ",
-                "AVGSWAPPRICE": "ລາຄາແລກປ່ຽນສະເລ່ຍ",
-                "SEARCHPLACEHOLDER": "ໃສ່ທີ່ຢູ່ MRX ຫຼື BTC"
+                "AVGSWAPPRICE": "ລາຄາແລກປ່ຽນສະເລ່ຍ"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "ກຳລັງສ້າງທີ່ຢູ່ສະຫຼັບ...",
             "ALREADYHAVEADDRESS": "ທ່ານມີທີ່ຢູ່ BTC ທີ່ເຊື່ອມໂຍງກັບທີ່ຢູ່ Metrix ນີ້ແລ້ວ",
             "NOADDRESS": "ທ່ານບໍ່ໄດ້ໃສ່ທີ່ຢູ່ Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "ຊື້ Metrix",
-                "SEARCH": "ປະຫວັດສາດ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "ຍົກເລີກການເຊື່ອງ",
                 "EMPTYTITLE": "ບໍ່ພົບໂທເຄັນເທື່ອ",
                 "EMPTYDETAIL": "Altitude ຈະກວດສອບຕົວສຳຫຼວດບລັອກໂດຍອັດຕະໂນມັດສຳລັບໂທເຄັນ MRC20 ແລະ MRC721 ທີ່ສົ່ງໄປຫາທີ່ຢູ່ຂອງທ່ານ, ຈາກນັ້ນຢືນຢັນທຸກຢ່າງທີ່ສະແດງຕົວຈິງກັບໂນດຂອງທ່ານເອງ. ທ່ານຍັງສາມາດເພີ່ມໂທເຄັນດ້ວຍຕົນເອງໄດ້ຖ້າທ່ານຮູ້ທີ່ຢູ່ສັນຍາຂອງມັນ.",
+                "EMPTYDETAILCHECKINGDISABLED": "ການກວດສອບໂທເຄັນອັດຕະໂນມັດຖືກປິດໄວ້, ດັ່ງນັ້ນທີ່ຢູ່ຂອງທ່ານຈຶ່ງບໍ່ຖືກກວດສອບໂທເຄັນ. ໃຫ້ເປີດມັນຄືນຢູ່ຂ້າງເທິງ, ຫຼື ເພີ່ມໂທເຄັນດ້ວຍຕົນເອງ ຖ້າທ່ານຮູ້ທີ່ຢູ່ສັນຍາຂອງມັນ.",
                 "HIDDENTITLE": "ໂທເຄັນທີ່ເຊື່ອງໄວ້",
                 "CONTEXTMENUHIDE": "ເຊື່ອງໂທເຄັນ",
                 "ITEMSSUFFIX": "ລາຍການ",
-                "NONENUMERABLETOOLTIP": "ຄໍເລັກຊັນນີ້ບໍ່ຮອງຮັບການສະແດງລາຍການແຕ່ລະລາຍການ - ສະແດງຈຳນວນທີ່ທ່ານຖືແທນ."
+                "NONENUMERABLETOOLTIP": "ຄໍເລັກຊັນນີ້ບໍ່ຮອງຮັບການສະແດງລາຍການແຕ່ລະລາຍການ - ສະແດງຈຳນວນທີ່ທ່ານຖືແທນ.",
+                "CHECKINGENABLED": "ກຳລັງກວດສອບ",
+                "CHECKINGDISABLED": "ກວດສອບປິດ",
+                "CHECKINGENABLEDTOOLTIP": "ການກວດສອບໂທເຄັນເປີດຢູ່ - Altitude ຈະກວດສອບທີ່ຢູ່ຂອງທ່ານເປັນໄລຍະເພື່ອຊອກຫາໂທເຄັນ ແລະ ໂຫຼດຍອດເງິນຄືນໃໝ່. ຄລິກເພື່ອປິດ.",
+                "CHECKINGDISABLEDTOOLTIP": "ການກວດສອບໂທເຄັນປິດຢູ່ - ຄລິກເພື່ອເປີດຄືນ.",
+                "CHECKINGDISABLEDNOTICE": "ການກວດສອບໂທເຄັນອັດຕະໂນມັດຖືກປິດໄວ້. ທີ່ຢູ່ຂອງທ່ານຈະບໍ່ຖືກສະແກນຫາໂທເຄັນ ແລະ ຍອດເງິນຈະບໍ່ຖືກອັບເດດ. ທ່ານຍັງສາມາດເພີ່ມໂທເຄັນດ້ວຍຕົນເອງໄດ້."
             },
             "ADDTOKEN": {
                 "TITLE": "ເພີ່ມໂທເຄັນ",

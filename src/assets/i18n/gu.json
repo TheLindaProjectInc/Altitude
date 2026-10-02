@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "ખાતું બનાવો",
             "HIDEEMPTYACCOUNTS": "અનામી ખાલી એકાઉન્ટ્સ છુપાવો"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ઝાંખી",
+            "TRANSACTIONSTAB": "વ્યવહારો",
+            "ADDRESSTABS": "સરનામાંઓ"
+        },
         "SEND": {
             "ADDRECIPIENT": "પ્રાપ્તકર્તા ઉમેરો",
             "SEND": "મોકલો",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "તારીખ",
             "TABLECOLUMNS_CONFIRMS": "પુષ્ટિકરણો",
             "ALL_SELECTUNSELECT": "બધાને ટૉગલ કરો",
+            "TREEMODE": "ટ્રી મોડ",
+            "LISTMODE": "સૂચિ મોડ",
             "SENDAVAILABLE": "ઉપલબ્ધ બેલેન્સનો ઉપયોગ કરો",
             "INPUTLOCKED": "ઇનપુટ લૉક કરેલું છે. આ ઇનપુટ ખર્ચવા માટે તમારે તેને અનલૉક કરવાની જરૂર પડશે.",
             "CONTEXTMENULOCKINPUT": "લોક ઇનપુટ",
@@ -38,10 +45,48 @@
             "AFTERFEE": "ફી પછી",
             "QUANTITY": "જથ્થો",
             "BYTES": "બાઇટ્સ",
-            "TREEMODE": "ટ્રી મોડ",
-            "LISTMODE": "સૂચિ મોડ",
             "ALERTFEECHANGETITLE": "ફીમાં ફેરફાર",
             "ALERTFEECHANGECONTENT": "વાસ્તવિક વ્યવહાર ફી અપેક્ષા કરતાં વધુ છે. કૃપા કરીને નવી ફીની પુષ્ટિ કરો:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "કરાર બનાવો",
+            "INFO": "નેટવર્કમાં તેનો કમ્પાઇલ કરેલ બાયટેકોડ સબમિટ કરીને સ્માર્ટ કોન્ટ્રાક્ટ જમાવો. આ એક કોર ચેઇન ફંક્શન છે - જમાવટ કરતા પહેલા તમારા બાયટેકોડ અને ગેસ સેટિંગ્સને બે વાર તપાસો, જમાવટ પૂર્વવત્ કરી શકાતી નથી.",
+            "FROM": "પ્રતિ",
+            "BYTECODE": "બાઇટકોડ",
+            "BYTECODEPLACEHOLDER": "કમ્પાઇલ કરેલ કોન્ટ્રેક્ટ બાયકોડ (હેક્સ) પેસ્ટ કરો.",
+            "INVALIDBYTECODE": "બાઇટકોડ એક માન્ય હેક્સ સ્ટ્રિંગ (0-9, a-f) હોવો જોઈએ જેમાં બેકી સંખ્યામાં અક્ષરો હોય.",
+            "GASLIMIT": "ગેસ મર્યાદા",
+            "GASLIMITRANGE": "શ્રેણી",
+            "GASPRICE": "ગેસનો ભાવ (ગેસ યુનિટ દીઠ MRX)",
+            "GASPRICEMIN": "ન્યૂનતમ",
+            "ESTIMATEDMAXCOST": "અંદાજિત મહત્તમ ખર્ચ",
+            "DEPLOYBUTTON": "કરાર જમાવો",
+            "INCOMPLETEFORM": "કૃપા કરીને મોકલનારનું સરનામું પસંદ કરો, માન્ય બાયકોડ દાખલ કરો અને માન્ય ગેસ મર્યાદા/કિંમત સેટ કરો.",
+            "HIGHGASPRICETITLE": "ગેસનો ઊંચો ભાવ",
+            "HIGHGASPRICEINFO": "તમે નક્કી કરેલ ગેસનો ભાવ અસામાન્ય રીતે ઊંચો છે. આ ડિપ્લોયમેન્ટનો ખર્ચ આટલો હોઈ શકે છે:",
+            "DEPLOYING": "કરાર જમાવી રહ્યા છીએ...",
+            "DEPLOYED": "કોન્ટ્રાક્ટ ડિપ્લોયમેન્ટ સબમિટ કર્યું",
+            "RESULTTITLE": "ડિપ્લોયમેન્ટ પરિણામ",
+            "STATUS": "સ્થિતિ",
+            "STATUSPENDING": "પુષ્ટિકરણ બાકી છે...",
+            "STATUSCONFIRMED": "સફળતાપૂર્વક ઉપયોગમાં લેવાયું",
+            "STATUSFAILED": "ડિપ્લોયમેન્ટ નિષ્ફળ થયું",
+            "TXID": "ટ્રાન્ઝેક્શન ID",
+            "SENDER": "મોકલનાર",
+            "CONTRACTADDRESS": "કરાર સરનામું",
+            "GASUSED": "વપરાયેલ ગેસ",
+            "DONEBUTTON": "થઈ ગયું",
+            "DEPLOYANOTHERBUTTON": "બીજું જમાવો"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "વ્યવહારો",
+            "COPYBLOCKHASH": "બ્લોક હેશની નકલ કરો",
+            "COPYTXID": "ટ્રાન્ઝેક્શન ID ની નકલ કરો",
+            "COPYACCOUNT": "એકાઉન્ટ નામ કૉપિ કરો",
+            "COPYADDRESS": "સરનામું કૉપિ કરો",
+            "COPYAMOUNT": "રકમની નકલ કરો",
+            "COPTBLOCKINDEX": "બ્લોક ઇન્ડેક્સની નકલ કરો",
+            "EXPLORER": "બ્લોક એક્સપ્લોરરમાં ખોલો"
         },
         "STAKING": {
             "UNLOCK": "સ્ટેકિંગ માટે અનલોક કરો",
@@ -68,13 +113,13 @@
             "IP": "આઈપી",
             "ADDRESS": "સરનામું",
             "ENABLED": "સક્ષમ",
-            "STARTBUTTON": "સ્થાનિક શરૂ કરો",
-            "STARTALIASBUTTON": "ઉપનામ શરૂ કરો",
-            "STARTALLBUTTON": "બધું શરૂ કરો",
             "NOMASTERNODES": "તમારી પાસે કોઈ માસ્ટરનોડ્સ નથી.",
             "NOMNOUTPUTS": "કોઈ માસ્ટરનોડ આઉટપુટ મળ્યા નથી. સ્થાનિક માસ્ટરનોડ ચલાવવા માટે તમારા માસ્ટરનોડ સરનામાં પર બરાબર 2,5,25,50 અથવા 100 મિલિયન સિક્કા મોકલો અને 15 પુષ્ટિકરણો માટે રાહ જુઓ.",
+            "STARTBUTTON": "સ્થાનિક શરૂ કરો",
             "STOPBUTTON": "સ્થાનિક રોકો",
+            "STARTALIASBUTTON": "ઉપનામ શરૂ કરો",
             "STOPALIASBUTTON": "ઉપનામ રોકો",
+            "STARTALLBUTTON": "બધું શરૂ કરો",
             "ADDREMOTE": "રિમોટ માસ્ટરનોડ ઉમેરો",
             "REMOVEMN": "માસ્ટરનોડ દૂર કરો",
             "ADDLOCAL": "સ્થાનિક માસ્ટરનોડ સેટ કરો",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "જનરલ",
                 "COREVERSION": "મુખ્ય સંસ્કરણ",
+                "ALTITUDEVERSION": "ઊંચાઈ આવૃત્તિ",
                 "PROTOCOLVERSION": "પ્રોટોકોલ સંસ્કરણ",
                 "WALLETVERSION": "Wallet.dat સંસ્કરણ",
                 "NETWORKTITLE": "નેટવર્ક",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "માસ્ટરનોડ્સની સંખ્યા",
                 "BLOCKCHAINTITLE": "બ્લોક ચેઇન",
                 "NUMBERBLOCKS": "બ્લોક્સની વર્તમાન સંખ્યા",
-                "BESTBLOCKTTIME": "છેલ્લો બ્લોક સમય",
-                "ALTITUDEVERSION": "ઊંચાઈ આવૃત્તિ"
+                "BESTBLOCKTTIME": "છેલ્લો બ્લોક સમય"
             },
             "DEBUG": {
                 "CONSOLEINFO": "મેટ્રિક્સ કોર RPC કન્સોલમાં આપનું સ્વાગત છે. ઉપલબ્ધ આદેશોની ઝાંખી માટે મદદ લખો.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "ભાષા પસંદ કરો"
         },
-        "TRANSACTIONS": {
-            "TITLE": "વ્યવહારો",
-            "COPYBLOCKHASH": "બ્લોક હેશની નકલ કરો",
-            "COPYTXID": "ટ્રાન્ઝેક્શન ID ની નકલ કરો",
-            "COPYACCOUNT": "એકાઉન્ટ નામ કૉપિ કરો",
-            "COPYADDRESS": "સરનામું કૉપિ કરો",
-            "COPYAMOUNT": "રકમની નકલ કરો",
-            "COPTBLOCKINDEX": "બ્લોક ઇન્ડેક્સની નકલ કરો",
-            "EXPLORER": "બ્લોક એક્સપ્લોરરમાં ખોલો"
+        "CURRENCY": {
+            "TITLE": "ડિસ્પ્લે ચલણ પસંદ કરો"
         },
         "EXPLORER": {
             "TITLE": "બ્લોક એક્સપ્લોરર",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "નેટવર્ક",
             "WINDOTAB": "બારી",
+            "BACKUPTAB": "બેકઅપ",
+            "EXPLORERTAB": "શોધક",
+            "DEVELOPERTAB": "ડેવલપર",
             "NETWORK": {
                 "PROXY": "SOCKS5 પ્રોક્સી દ્વારા કનેક્ટ થાઓ",
                 "PROXYIP": "પ્રોક્સી આઈપી",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "બંધ થવા પર નાનું કરો",
                 "BEHAVIOURTITLE": "સિસ્ટમ ટ્રે અને વિન્ડો બિહેવિયર"
             },
-            "BACKUPTAB": "બેકઅપ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "સ્વચાલિત બેકઅપ",
                 "ENABLED": "શેડ્યૂલ પર wallet.dat નો આપમેળે બેકઅપ લો",
                 "ENABLEDINFO": "શેડ્યૂલ પર તમારી વોલેટ ફાઇલનો નવો બેકઅપ બનાવે છે, જેથી કંઈક ખોટું થાય તો તાજેતરની નકલ હંમેશા ઉપલબ્ધ રહે.",
+                "INTERVALLABEL": "દર (દિવસે) બેકઅપ લો",
                 "LASTBACKUP": "છેલ્લો બેકઅપ:",
                 "NEVERBACKEDUP": "હજુ સુધી કોઈ ઓટોમેટિક બેકઅપ લેવામાં આવ્યું નથી.",
                 "BACKUPNOWBUTTON": "હમણાં બેકઅપ લો",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ડિફોલ્ટ પર રીસેટ કરો",
                 "PRUNETITLE": "બેકઅપ ઇતિહાસ",
                 "PRUNEINFO": "જૂના ઓટોમેટિક બેકઅપ કાઢી નાખવામાં આવે છે જેથી આ ફોલ્ડર કાયમ માટે વધતું નથી - ફક્ત નીચે આપેલા સૌથી તાજેતરના બેકઅપ રાખવામાં આવે છે.",
-                "KEEPCOUNTLABEL": "છેલ્લે રાખો",
-                "INTERVALLABEL": "દર (દિવસે) બેકઅપ લો"
+                "KEEPCOUNTLABEL": "છેલ્લે રાખો"
             },
-            "EXPLORERTAB": "શોધક",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "બ્લોક એક્સપ્લોરર",
                 "BLOCKEXPLORERINFO": "બ્લોક એક્સપ્લોરર પર ટ્રાન્ઝેક્શન જોતી વખતે સાઇટ ખુલી (દા.ત., ટ્રાન્ઝેક્શન પર રાઇટ-ક્લિક કરો > એક્સપ્લોરર પર જુઓ).",
@@ -259,25 +298,31 @@
                 "MAINNET": "મેઈનનેટ",
                 "TESTNET": "ટેસ્ટનેટ",
                 "REGTEST": "ફરીથી પરીક્ષણ કરો"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "વિકાસકર્તા મોડ",
+                "DEVMODEINFO": "ડિફૉલ્ટ રૂપે બંધ છે અને ફક્ત વિકાસકર્તાઓ માટે બનાવાયેલ છે. આને સક્ષમ કરવાથી RPC કનેક્શનને ઓવરરાઇડ કરવાના વિકલ્પો ખુલે છે - માનક વપરાશકર્તાઓએ આને બંધ રાખવું જોઈએ.",
+                "DEVMODELABEL": "વિકાસકર્તા મોડ સક્ષમ કરો",
+                "WARNING": "આ સેટિંગ્સ ફક્ત વિકાસ હેતુઓ માટે છે. તેમને બદલવાથી વોલેટ ડિમન સાથે કનેક્ટ થવાથી બિલકુલ બચી શકે છે - જો તમને ખબર હોય કે તમે શું કરી રહ્યા છો તો જ આનો ઉપયોગ કરો.",
+                "RPCHOSTTITLE": "RPC કનેક્શન",
+                "RPCHOSTINFO": "ડિફૉલ્ટ રૂપે Altitude આ મશીન પર (૧૨૭.૦.૦.૧) ડિમન સાથે જોડાય છે જે તે પોતે મેનેજ કરે છે. આને ઓવરરાઇડ કરવાથી તે બીજા ડિમન સાથે જોડાય છે - ઉદાહરણ તરીકે રિમોટ રેગટેસ્ટ ઇન્સ્ટન્સ, સ્થાનિક રીતે ચલાવવાની જરૂર વગર. જો કનેક્શન સફળ થાય છે, તો Altitude તેનું પોતાનું સ્થાનિક ડિમન ડાઉનલોડ અથવા શરૂ કરશે નહીં. લક્ષ્ય ડિમનનો rpcallowip આ કનેક્શનને મંજૂરી આપવો આવશ્યક છે, અને નીચેનો rpcuser/rpcpassword તેના રૂપરેખાંકન સાથે મેળ ખાતો હોવો જોઈએ. તરત જ પ્રભાવમાં આવે છે, પુનઃપ્રારંભ કરવાની જરૂર નથી.",
+                "RPCHOSTLABEL": "RPC હોસ્ટ",
+                "RPCPORTLABEL": "RPC પોર્ટ",
+                "RPCUSERLABEL": "RPC વપરાશકર્તા નામ",
+                "RPCPASSWORDLABEL": "RPC પાસવર્ડ"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ઝાંખી",
-            "TRANSACTIONSTAB": "વ્યવહારો",
-            "ADDRESSTABS": "સરનામાંઓ"
-        },
-        "CURRENCY": {
-            "TITLE": "ડિસ્પ્લે ચલણ પસંદ કરો"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ડેશબોર્ડ",
             "SEND": "મોકલો",
+            "CREATECONTRACT": "કરાર બનાવો",
             "RECEIVE": "પ્રાપ્ત કરો",
             "TRANSACTIONS": "વ્યવહારો",
             "STAKING": "સ્ટેકિંગ",
             "MASTERNODES": "માસ્ટરનોડ્સ",
+            "EXPLORER": "બ્લોક એક્સપ્લોરર",
             "SYNC": {
                 "CONNECTING": "કનેક્ટિંગ",
                 "NOBLOCKS": "બ્લોક્સની રાહ જોઈ રહ્યા છીએ",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "વોલેટ હાલમાં સ્ટેક કરી રહ્યું નથી",
                 "MASTERNODEON": "માસ્ટરનોડ હાલમાં ચાલી રહ્યું છે",
                 "MASTERNODEOFF": "માસ્ટરનોડ હાલમાં ચાલી રહ્યું નથી."
-            },
-            "EXPLORER": "બ્લોક એક્સપ્લોરર"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "વેબ3 સાઇટ સરનામું દાખલ કરો",
+            "GOBUTTON": "જાઓ",
+            "QUICKLAUNCH": "ઝડપી લોન્ચ",
+            "DEVTOOLS": "ડેવલપર ટૂલ્સ ખોલો",
+            "ADDLINK": "લિંક ઉમેરો",
+            "LINKNAMEPLACEHOLDER": "નામ",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "સાચવો",
+            "CANCEL": "રદ કરો",
+            "REMOVE": "દૂર કરો",
+            "REMOVECONFIRM": "આ ઝડપી લિંક દૂર કરીએ?",
+            "LINKEXISTS": "તે લિંક પહેલેથી જ તમારી ક્વિક લોન્ચ સૂચિમાં છે.",
+            "LINKINVALID": "માન્ય સાઇટ સરનામું દાખલ કરો",
+            "LINKNETWORKLABEL": "નેટવર્ક",
+            "LOADFAILED": "સાઇટ લોડ કરવામાં નિષ્ફળ થયાં",
+            "SECURESITE": "કનેક્શન સુરક્ષિત છે - માન્ય SSL પ્રમાણપત્ર",
+            "INSECURESITE": "કનેક્શન સુરક્ષિત નથી",
+            "INVALIDCERTSITE": "કનેક્શન ખાનગી નથી - અમાન્ય અથવા અવિશ્વસનીય SSL પ્રમાણપત્ર"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "તમારો વોલેટ પાસફ્રેઝ દાખલ કરો",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "મેટ્રિક્સ કોર માટે એક અપડેટ ઉપલબ્ધ છે. શું તમે તેને હમણાં ઇન્સ્ટોલ કરવા માંગો છો?",
             "WALLETUPDATETITLE": "ઊંચાઈ અપડેટ ઉપલબ્ધ છે",
             "WALLETUPDATEINFO": "Altitude માટે અપડેટ ઉપલબ્ધ છે. શું તમે તેને હમણાં ડાઉનલોડ કરવા માંગો છો?",
+            "WALLETUPDATEREADYTITLE": "ઊંચાઈ અપડેટ તૈયાર છે",
+            "WALLETUPDATEREADYINFO": "અપડેટ ડાઉનલોડ થઈ ગયું છે. તેને ઇન્સ્ટોલ કરવા માટે હમણાં જ Altitude ફરી શરૂ કરીએ?",
+            "WALLETUPDATERESTARTBUTTON": "પુનઃપ્રારંભ કરો અને ઇન્સ્ટોલ કરો",
+            "WALLETUPDATELATERBUTTON": "પછીથી",
             "CLIENTUPDATEBUTTON": "અપડેટ",
             "CLIENTUPDATECANCELBUTTON": "અપડેટ કરશો નહીં",
             "CLIENTUPDATESKIPBUTTON": "આ અપડેટ છોડી દો",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "તમારી વોલેટ ફાઇલમાંથી તમે જે પણ બેકઅપ લીધા છે તેને નવી જનરેટ કરેલી, એન્ક્રિપ્ટેડ વોલેટ ફાઇલથી બદલવા જોઈએ. સુરક્ષા કારણોસર, તમે નવા, એન્ક્રિપ્ટેડ વોલેટનો ઉપયોગ શરૂ કરો કે તરત જ અનએન્ક્રિપ્ટેડ વોલેટ ફાઇલના પાછલા બેકઅપ નકામા થઈ જશે.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "મેટ્રિક્સ કોર અણધારી રીતે બંધ થઈ ગયું",
             "CLIENTCLOSEDUNEXPECTEDINFO": "મેટ્રિક્સ કોરમાં કોઈ સમસ્યા હતી જેના કારણે તે બંધ થઈ ગયું છે. સમસ્યાઓ માટે તમારી debug.log ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
+            "CLIENTUNKNOWNERRORTITLE": "મેટ્રિક્સ કોર કોમ્યુનિકેશન ભૂલ",
+            "CLIENTUNKNOWNERRORINFO": "મેટ્રિક્સ કોર સાથે વાતચીત કરવામાં સમસ્યા આવી હતી. સમસ્યાઓ માટે તમારી debug.log ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
+            "BOOTSTRAPFAILEDTITLE": "મેટ્રિક્સ કોર બુટસ્ટ્રેપ નિષ્ફળ ગયું",
+            "BOOTSTRAPFAILEDINFO": "મેટ્રિક્સ કોરને બુટસ્ટ્રેપ કરવામાં સમસ્યા આવી હતી. સમસ્યાઓ માટે તમારી Altitude લોગ ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
+            "BOOTSTRAPOFFERTITLE": "વોલેટ નોંધપાત્ર રીતે જૂનું છે",
+            "BOOTSTRAPOFFERINFO": "તાજેતરનો બુટસ્ટ્રેપ ઉપલબ્ધ છે જે મેટ્રિક્સ કોરને ઝડપથી અપ ટુ ડેટ લાવી શકે છે. સામાન્ય સિંક સાથે ચાલુ રાખવાથી ઘણા દિવસો લાગી શકે છે, કારણ કે તમારા વોલેટને તે ચૂકી ગયેલા દરેક બ્લોકને ડાઉનલોડ અને ચકાસવાની જરૂર છે.",
+            "BOOTSTRAPOFFERBUTTON": "બુટસ્ટ્રેપ ડાઉનલોડ કરો",
+            "BOOTSTRAPOFFERCANCEL": "સામાન્ય સમન્વયન ચાલુ રાખો",
+            "BOOTSTRAPSPACEINFO": "બુટસ્ટ્રેપ ડાઉનલોડ કરવા અને કાઢવા માટે પૂરતી ખાલી ડિસ્ક જગ્યા નથી. જરૂરી: {જરૂરી}, ઉપલબ્ધ: {મફત}. થોડી જગ્યા ખાલી કરો અને ફરી પ્રયાસ કરો.",
+            "STARTUPFAILEDTITLE": "મેટ્રિક્સ કોર સ્ટાર્ટઅપ નિષ્ફળ ગયું",
+            "STARTUPFAILEDINFO": "મેટ્રિક્સ કોર શરૂ કરવામાં ભૂલ આવી હતી. સમસ્યાઓ માટે તમારી Altitude લોગ ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "પુનઃપ્રાપ્તિ સાધનો",
             "CLIENTINVALIDCONFIGTITLE": "અમાન્ય metrix.conf રૂપરેખાંકન",
             "CLIENTINVALIDCONFIGINFO": "તમારા metrix.conf માં અમાન્ય માસ્ટરનોડ સેટઅપ છે જેના કારણે Metrix Core તરત જ બહાર નીકળી જશે. કૃપા કરીને આ ફાઇલ તપાસો.",
             "ADDREMOTEMNTITLE": "રિમોટ માસ્ટરનોડ ઉમેરો",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "માસ્ટરનોડ ખાનગી કી",
             "ADDREMOTEMNTXHASH": "માસ્ટરનોડ ટ્રેક્સ હેશ",
             "ADDREMOTEMNTXINDEX": "માસ્ટરનોડ ટ્રેક્સ ઇન્ડેક્સ",
-            "BOOTSTRAPFAILEDTITLE": "મેટ્રિક્સ કોર બુટસ્ટ્રેપ નિષ્ફળ ગયું",
-            "BOOTSTRAPFAILEDINFO": "મેટ્રિક્સ કોરને બુટસ્ટ્રેપ કરવામાં સમસ્યા આવી હતી. સમસ્યાઓ માટે તમારી Altitude લોગ ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "પુનઃપ્રાપ્તિ સાધનો",
-            "STARTUPFAILEDTITLE": "મેટ્રિક્સ કોર સ્ટાર્ટઅપ નિષ્ફળ ગયું",
-            "STARTUPFAILEDINFO": "મેટ્રિક્સ કોર શરૂ કરવામાં ભૂલ આવી હતી. સમસ્યાઓ માટે તમારી Altitude લોગ ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
-            "CLIENTUNKNOWNERRORTITLE": "મેટ્રિક્સ કોર કોમ્યુનિકેશન ભૂલ",
-            "CLIENTUNKNOWNERRORINFO": "મેટ્રિક્સ કોર સાથે વાતચીત કરવામાં સમસ્યા આવી હતી. સમસ્યાઓ માટે તમારી debug.log ફાઇલ તપાસવાની ભલામણ કરવામાં આવે છે.",
             "UNENROLLGOVERNORTITLE": "ગવર્નર દ્વારા નોંધણી રદ કરવાની પુષ્ટિ કરો",
             "UNENROLLGOVERNORCONTENT": "શું તમે ખરેખર તમારા ગવર્નરની નોંધણી રદ કરવા માંગો છો? તમે હવે ચેઇન ગવર્નન્સ પર મતદાન કરી શકશો નહીં.",
-            "WALLETUPDATEREADYTITLE": "ઊંચાઈ અપડેટ તૈયાર છે",
-            "WALLETUPDATEREADYINFO": "અપડેટ ડાઉનલોડ થઈ ગયું છે. તેને ઇન્સ્ટોલ કરવા માટે હમણાં જ Altitude ફરી શરૂ કરીએ?",
-            "WALLETUPDATERESTARTBUTTON": "પુનઃપ્રારંભ કરો અને ઇન્સ્ટોલ કરો",
-            "WALLETUPDATELATERBUTTON": "પછીથી",
             "DAPPCONNECTTITLE": "સાઇટ સાથે કનેક્ટ કરો",
             "DAPPCONNECTINFO": "આ સાઇટ તમારા વૉલેટ સાથે કનેક્ટ થવા માંગે છે અને તમારું સરનામું અને બેલેન્સ જોવા માંગે છે.",
             "DAPPCONNECTBUTTON": "જોડાવા",
+            "DAPPCONNECTADDRESSLABEL": "સરનામું",
+            "DAPPAPPROVEBUTTON": "મંજૂર કરો",
             "DAPPREJECTBUTTON": "નકારો",
             "DAPPSENDTITLE": "કરાર વ્યવહાર વિનંતી",
             "DAPPSENDINFO": "આ સાઇટ તમારા વોલેટમાંથી કોન્ટ્રેક્ટ ટ્રાન્ઝેક્શન મોકલવાની વિનંતી કરી રહી છે.",
-            "DAPPSIGNTITLE": "સંદેશ વિનંતી પર સહી કરો",
-            "DAPPSIGNINFO": "આ સાઇટ તમારા વોલેટ સરનામાં સાથે સંદેશ પર સહી કરવાની વિનંતી કરી રહી છે.",
-            "DAPPNOTREADY": "સાઇટ સાથે હજુ કનેક્ટ થઈ શકતું નથી - મેટ્રિક્સ કોર હજુ પણ શરૂ થઈ રહ્યું છે.",
-            "DAPPNOWALLET": "સાઇટ સાથે કનેક્ટ થઈ શકતું નથી - કોઈ વોલેટ સરનામું ઉપલબ્ધ નથી.",
-            "DAPPAPPROVEBUTTON": "મંજૂર કરો",
-            "DAPPCONNECTADDRESSLABEL": "સરનામું",
             "DAPPSENDSITELABEL": "સાઇટ",
             "DAPPSENDCONTRACTLABEL": "કરાર સરનામું",
             "DAPPSENDAMOUNTLABEL": "રકમ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "મહત્તમ નેટવર્ક ફી",
             "DAPPSENDMAXTOTALLABEL": "મહત્તમ કુલ",
             "DAPPSENDDATALABEL": "કરાર ડેટા",
+            "DAPPSIGNTITLE": "સંદેશ વિનંતી પર સહી કરો",
+            "DAPPSIGNINFO": "આ સાઇટ તમારા વોલેટ સરનામાં સાથે સંદેશ પર સહી કરવાની વિનંતી કરી રહી છે.",
             "DAPPSIGNMESSAGELABEL": "સંદેશ",
-            "BOOTSTRAPOFFERTITLE": "વોલેટ નોંધપાત્ર રીતે જૂનું છે",
-            "BOOTSTRAPOFFERINFO": "તાજેતરનો બુટસ્ટ્રેપ ઉપલબ્ધ છે જે મેટ્રિક્સ કોરને ઝડપથી અપ ટુ ડેટ લાવી શકે છે. સામાન્ય સિંક સાથે ચાલુ રાખવાથી ઘણા દિવસો લાગી શકે છે, કારણ કે તમારા વોલેટને તે ચૂકી ગયેલા દરેક બ્લોકને ડાઉનલોડ અને ચકાસવાની જરૂર છે.",
-            "BOOTSTRAPOFFERBUTTON": "બુટસ્ટ્રેપ ડાઉનલોડ કરો",
-            "BOOTSTRAPOFFERCANCEL": "સામાન્ય સમન્વયન ચાલુ રાખો",
-            "BOOTSTRAPSPACEINFO": "બુટસ્ટ્રેપ ડાઉનલોડ કરવા અને કાઢવા માટે પૂરતી ખાલી ડિસ્ક જગ્યા નથી. જરૂરી: {જરૂરી}, ઉપલબ્ધ: {મફત}. થોડી જગ્યા ખાલી કરો અને ફરી પ્રયાસ કરો."
+            "DAPPNOTREADY": "સાઇટ સાથે હજુ કનેક્ટ થઈ શકતું નથી - મેટ્રિક્સ કોર હજુ પણ શરૂ થઈ રહ્યું છે.",
+            "DAPPNOWALLET": "સાઇટ સાથે કનેક્ટ થઈ શકતું નથી - કોઈ વોલેટ સરનામું ઉપલબ્ધ નથી."
         },
         "ADDRESSBOOK": {
             "TITLE": "સરનામાં પુસ્તિકા",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "વર્તમાન નેટવર્ક"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "વેબ3 સાઇટ સરનામું દાખલ કરો",
-            "GOBUTTON": "જાઓ",
-            "QUICKLAUNCH": "ઝડપી લોન્ચ",
-            "DEVTOOLS": "ડેવલપર ટૂલ્સ ખોલો",
-            "ADDLINK": "લિંક ઉમેરો",
-            "LINKNAMEPLACEHOLDER": "નામ",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "સાચવો",
-            "CANCEL": "રદ કરો",
-            "REMOVE": "દૂર કરો",
-            "REMOVECONFIRM": "આ ઝડપી લિંક દૂર કરીએ?",
-            "LINKEXISTS": "તે લિંક પહેલેથી જ તમારી ક્વિક લોન્ચ સૂચિમાં છે.",
-            "LINKINVALID": "માન્ય સાઇટ સરનામું દાખલ કરો",
-            "LINKNETWORKLABEL": "નેટવર્ક",
-            "LOADFAILED": "સાઇટ લોડ કરવામાં નિષ્ફળ થયાં",
-            "SECURESITE": "કનેક્શન સુરક્ષિત છે - માન્ય SSL પ્રમાણપત્ર",
-            "INSECURESITE": "કનેક્શન સુરક્ષિત નથી",
-            "INVALIDCERTSITE": "કનેક્શન ખાનગી નથી - અમાન્ય અથવા અવિશ્વસનીય SSL પ્રમાણપત્ર"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "બેકઅપ વોલેટ...",
             "SIGNMESSAGE": "સંદેશ પર સહી કરો...",
             "VERIFYMESSAGE": "સંદેશ ચકાસો...",
-            "LOCALE": "ભાષા...",
-            "RESTARTCORE": "મેટ્રિક્સ કોર પુનઃપ્રારંભ કરો",
-            "EXIT": "બહાર નીકળો",
             "OPTIONS": "વિકલ્પો...",
+            "LOCALE": "ભાષા...",
             "CURRENCIES": "ચલણ દર્શાવો...",
-            "ALTITUDEREFRESH": "ઊંચાઈનો ડેટા રિફ્રેશ કરો"
+            "RESTARTCORE": "મેટ્રિક્સ કોર પુનઃપ્રારંભ કરો",
+            "ALTITUDEREFRESH": "ઊંચાઈનો ડેટા રિફ્રેશ કરો",
+            "EXIT": "બહાર નીકળો"
         },
         "ENCRYPT": {
             "TITLE": "એન્ક્રિપ્ટ કરો",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "કુલ બેલેન્સ",
+        "SPENDABLEBALANCE": "ખર્ચ કરી શકાય તેવી રકમ",
+        "PENDINGBALANCE": "બાકી બેલેન્સ",
         "CANCELBUTTON": "રદ કરો",
         "DONEBUTTON": "થઈ ગયું",
         "OKBUTTON": "બરાબર",
+        "ACCEPTBUTTON": "સ્વીકારો",
         "CLEARALLBUTTON": "બધું સાફ કરો",
         "ENTERACCOUNTLABEL": "આ સરનામાં માટે લેબલ દાખલ કરો",
         "ENTERADDRESSLABEL": "મેટ્રિક્સ સરનામું દાખલ કરો",
@@ -464,11 +511,8 @@
         "SORTBY": "ક્રમ પ્રમાણે ગોઠવો",
         "SEARCH": "શોધો",
         "FEE": "ફી",
-        "ACCEPTBUTTON": "સ્વીકારો",
         "CONFIRMED": "પુષ્ટિ થયેલ",
         "UNCONFIRMED": "પુષ્ટિ થયેલ નથી",
-        "PENDINGBALANCE": "બાકી બેલેન્સ",
-        "SPENDABLEBALANCE": "ખર્ચ કરી શકાય તેવી રકમ",
         "SAVEBUTTON": "સાચવો"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "મેટ્રિક્સ કોર ફરી શરૂ કરી રહ્યું છે...",
         "BOOTSTRAPPING": "બુટસ્ટ્રેપ ડાઉનલોડ કરી રહ્યું છે...",
         "BOOTSTRAPEXTRACTING": "બુટસ્ટ્રેપ કાઢી રહ્યું છે...",
-        "TIMEREMAINING": "બાકી:"
+        "TIMEREMAINING": "બાકી:",
+        "DEVRPCOVERRIDEACTIVE": "ડેવલપર RPC કનેક્શન ઓવરરાઇડ સેટ કરેલું છે (વિકલ્પો > ડેવલપર) અને તે પ્રતિસાદ આપી રહ્યું નથી. સ્થાનિક ડિમન સાથે સામાન્ય રીતે ફરીથી કનેક્ટ થવા માટે તેને સાફ કરો.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC ઓવરરાઇડ સાફ કરો અને ફરીથી કનેક્ટ કરો"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "નવું એકાઉન્ટ સફળતાપૂર્વક બનાવવામાં આવ્યું",
         "ADDRESSCOPIEDCLIPBOARD": "ક્લિપબોર્ડ પર સરનામું કૉપિ કર્યું",
+        "COPIEDCLIPBOARD": "ક્લિપબોર્ડ પર કૉપિ કરી",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ક્લિપબોર્ડ પર વ્યવહારોની કૉપિ કરી",
         "EMPTYFIELDS": "કૃપા કરીને બધા ફીલ્ડ ભરો.",
         "NOUPDATE": "કોઈ અપડેટ ઉપલબ્ધ નથી",
         "WALLETBACKEDUP": "વૉલેટ બેકઅપ સફળ થયું",
+        "WALLETBACKUPFAILED": "ઓટોમેટિક વોલેટ બેકઅપ નિષ્ફળ ગયું - તમારા બેકઅપ સ્થાન અને ઉપલબ્ધ ડિસ્ક જગ્યા તપાસો.",
         "PASSPHRASEMISMATCH": "તમે દાખલ કરેલા પાસફ્રેઝ મેળ ખાતા નથી.",
         "CHECKINGUPDATE": "અપડેટ માટે તપાસી રહ્યું છે...",
         "CHECKINGUPDATEFAILED": "અપડેટ તપાસી શકાતું નથી. તમારું નેટવર્ક તપાસો.",
+        "WALLETUPDATEDOWNLOADING": "અપડેટ ડાઉનલોડ કરી રહ્યું છે...",
         "SENDINGEXCEEDSBALANCE": "તમે જે રકમ મોકલી રહ્યા છો તે તમારા પસંદ કરેલા બેલેન્સ કરતાં વધુ છે.",
         "MISSINGCHANGEADDRESS": "તમારે ફેરફાર સરનામું સ્પષ્ટ કરવું આવશ્યક છે.",
         "MISSINGDESTINATIONADDRESS": "તમારે ગંતવ્ય સરનામું સ્પષ્ટ કરવું આવશ્યક છે",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "વોલેટ એન્ક્રિપ્ટ કરી રહ્યું છે...",
         "CHANGINGPASSPHARASE": "પાસફ્રેઝ બદલી રહ્યા છીએ...",
         "STARTINGMASTERNODE": "માસ્ટરનોડ શરૂ કરી રહ્યા છીએ...",
+        "STOPPINGMASTERNODE": "માસ્ટરનોડ બંધ કરી રહ્યા છીએ...",
         "SENDINGTRANSACTION": "વ્યવહાર મોકલી રહ્યું છે...",
         "SIGNINGMESSAGE": "સંદેશ પર સહી કરી રહ્યા છીએ...",
         "SIGNEDMESSAGE": "સંદેશ પર સહી કરી",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "વૉલેટ અનલૉક કરી રહ્યું છે...",
         "TRANSACTIONMISMATCH": "વ્યવહાર ભૂલ. કૃપા કરીને ફરી પ્રયાસ કરો.",
         "MINIMUMCONFIRMATIONS": "બધા ઇનપુટ્સ માટે ખર્ચ કરતા પહેલા ઓછામાં ઓછી 1 પુષ્ટિ જરૂરી છે.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ક્લિપબોર્ડ પર વ્યવહારોની કૉપિ કરી",
-        "STOPPINGMASTERNODE": "માસ્ટરનોડ બંધ કરી રહ્યા છીએ...",
         "FAILEDTOWRITECONFIG": "તમારી metrix.conf ફાઇલમાં લખવામાં સમસ્યા આવી હતી. તપાસો કે ફાઇલ અસ્તિત્વમાં છે અને Altitude પાસે લખવાની પરવાનગીઓ છે.",
         "NOPUBLICUP": "કોઈ સાર્વજનિક IP સરનામું મળ્યું નથી. તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને Altitude ફરી શરૂ કરો.",
         "CONFIGURINGLOCALMN": "સ્થાનિક માસ્ટરનોડ ગોઠવી રહ્યું છે...",
         "REPORTINGISSUE": "ડાયગ્નોસ્ટિક માહિતી મેળવી રહ્યા છીએ... આ માહિતી તમારા ક્લિપબોર્ડ પર કૉપિ કરવામાં આવશે.",
-        "WALLETUPDATEDOWNLOADING": "અપડેટ ડાઉનલોડ કરી રહ્યું છે...",
-        "WALLETBACKUPFAILED": "ઓટોમેટિક વોલેટ બેકઅપ નિષ્ફળ ગયું - તમારા બેકઅપ સ્થાન અને ઉપલબ્ધ ડિસ્ક જગ્યા તપાસો.",
         "EXPLORERURLSAVED": "એક્સપ્લોરર URL સાચવ્યું",
         "EXPLORERURLRESET": "એક્સપ્લોરર URL ને ડિફોલ્ટ પર પાછું ફેરવ્યું",
         "EXPLORERURLINVALID": "તે માન્ય http(s) URL નથી.",
-        "EXPLORERURLUNREACHABLE": "તે URL સુધી પહોંચી શકાયું નથી - તેને તપાસો અને ફરી પ્રયાસ કરો."
+        "EXPLORERURLUNREACHABLE": "તે URL સુધી પહોંચી શકાયું નથી - તેને તપાસો અને ફરી પ્રયાસ કરો.",
+        "DEVRPCHOSTSAVED": "RPC હોસ્ટ સાચવ્યો",
+        "DEVRPCHOSTRESET": "RPC હોસ્ટ ડિફોલ્ટ પર પાછો ફર્યો (૧૨૭.૦.૦.૧)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "પ્રાપ્ત સિક્કા",
+        "NEWTRANSACTION_TITLE_STAKE": "પ્રાપ્ત હિસ્સો",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "માસ્ટરનોડ પુરસ્કાર પ્રાપ્ત થયો"
     },
     "TIME": {
         "AFEWSECONDS": "થોડીક સેકન્ડ",
@@ -533,11 +587,6 @@
         "MONTHS": "મહિનાઓ",
         "AYEAR": "એક વર્ષ",
         "YEARS": "વર્ષો"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "પ્રાપ્ત સિક્કા",
-        "NEWTRANSACTION_TITLE_STAKE": "પ્રાપ્ત હિસ્સો",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "માસ્ટરનોડ પુરસ્કાર પ્રાપ્ત થયો"
     },
     "MONTH": {
         "JAN": "જાન્યુ",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "માસિક બજેટ અને બ્લોકચેન ફેરફારો પર મતદાન કરવા માટે ગવર્નર જવાબદાર છે. ગવર્નન્સ કોન્ટ્રાક્ટમાં યોગ્ય કોલેટરલ લોક કરીને તમે ગવર્નર બની શકો છો.",
                 "COLLATERAL": "જરૂરી કોલેટરલ",
                 "ENROLL": "નોંધણી કરો",
+                "SELECTAGOVERNOR": "યોગ્ય રાજ્યપાલનું સરનામું પસંદ કરો",
+                "GOVERNORNOTSELECTED": "કોઈ યોગ્ય સરનામું પસંદ કરવામાં આવ્યું ન હતું.",
                 "CONFIRMENROLL": "તમે ગવર્નર તરીકે નોંધણી કરાવવા જઈ રહ્યા છો. આનાથી ગવર્નન્સ કોન્ટ્રાક્ટમાં જરૂરી કોલેટરલ સાથેનો વ્યવહાર મોકલવામાં આવશે. તમે ગમે ત્યારે નોંધણી રદ કરી શકો છો.",
                 "ISGOVERNORTITLE": "તમે એક સક્રિય રાજ્યપાલ છો!",
                 "ISGOVERNORDETAIL1": "માસિક બજેટ અને બ્લોકચેન ફેરફારો પર મતદાન કરવા માટે ગવર્નર જવાબદાર છે.",
                 "ISGOVERNORDETAIL2": "રાજ્યપાલ રહેવા માટે તમારે દર 30 દિવસે ઓછામાં ઓછા 1 મતદાનમાં ભાગ લેવો પડશે.",
                 "ISGOVERNORDETAIL3": "જો મતદાન કરવા માટે કંઈ ન હોય તો તમે સક્રિય પિંગ મોકલીને મેન્યુઅલી તમારું નોંધણી ચાલુ રાખી શકો છો.",
+                "MYGOVERNORADDRESS": "મારું રાજ્યપાલનું સંબોધન",
                 "UNENROLL": "નોંધણી રદ કરો",
                 "PING": "સક્રિય પિંગ મોકલો",
                 "LASTPINGTITLE": "છેલ્લો પિંગ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "દિવસો",
                 "GOVERNORVOTEMATURITYHOURS": "કલાકો",
                 "GOVERNORVOTEMATURITYSUFFIX": "પરિપક્વ થાય ત્યાં સુધી",
-                "MYGOVERNORADDRESS": "મારું રાજ્યપાલનું સંબોધન",
-                "SELECTAGOVERNOR": "યોગ્ય રાજ્યપાલનું સરનામું પસંદ કરો",
-                "GOVERNORNOTSELECTED": "કોઈ યોગ્ય સરનામું પસંદ કરવામાં આવ્યું ન હતું.",
                 "NOTFULLYSYNCEDTITLE": "રાજ્યપાલનો દરજ્જો ઉપલબ્ધ નથી",
                 "NOTFULLYSYNCEDDETAIL": "જ્યારે તમારું બ્લોકચેન સંપૂર્ણપણે સમન્વયિત થશે ત્યારે તમારી ગવર્નર નોંધણી સ્થિતિ દેખાશે.",
                 "DGPMIGRATIONTITLE": "ડીજીપી સ્થળાંતર",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "તમારો પ્રસ્તાવ સફળતાપૂર્વક બનાવવામાં આવ્યો છે.",
             "ENROLLINGGOVERNOR": "રાજ્યપાલ તરીકે નોંધણી...",
             "ENROLLEDGOVERNOR": "તમારા વ્યવહારની પુષ્ટિ થયા પછી તમારી નોંધણી પૂર્ણ થશે.",
-            "VOTINGONPROPOSAL": "દરખાસ્ત મત મોકલી રહ્યું છે",
-            "VOTEDONPROPOSAL": "વ્યવહાર કન્ફર્મ થયા પછી તમારા મતની ગણતરી કરવામાં આવશે.",
             "PINGINGGOVERNOR": "પિંગ મોકલી રહ્યું છે...",
             "PINGEDGOVERNOR": "પિંગ સફળતાપૂર્વક મોકલવામાં આવ્યું. વ્યવહાર કન્ફર્મ થયા પછી તમારા ગવર્નરને અપડેટ કરવામાં આવશે.",
+            "VOTINGONPROPOSAL": "દરખાસ્ત મત મોકલી રહ્યું છે",
+            "VOTEDONPROPOSAL": "વ્યવહાર કન્ફર્મ થયા પછી તમારા મતની ગણતરી કરવામાં આવશે.",
             "UNENROLLINGGOVERNOR": "રાજ્યપાલ દ્વારા નોંધણી રદ કરી રહ્યા છીએ...",
             "UNENROLLEDGOVERNOR": "વ્યવહાર મોકલવામાં આવ્યો. વ્યવહારની પુષ્ટિ થયા પછી તમારા ગવર્નરની નોંધણી રદ કરવામાં આવશે.",
             "GOVERNORNOTMATURE": "તમારા રાજ્યપાલ હજુ આ કાર્યવાહી કરવા માટે પૂરતા પરિપક્વ નથી."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "મેટ્રિક્સ ખરીદો",
+                "SEARCH": "ઇતિહાસ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "તમે મોકલો",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "વ્યવહાર ઇતિહાસ",
                 "SEARCHBUTTON": "શોધો",
+                "SEARCHPLACEHOLDER": "MRX અથવા BTC સરનામું દાખલ કરો",
                 "TRANSACTIONDATE": "તારીખ",
                 "TRANSACTIONTYPE": "TX પ્રકાર",
                 "TRANSACTIONAMOUNT": "રકમ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "પુષ્ટિ થયેલ",
                 "TRANSACTIONNOTCONFIRMED": "પુષ્ટિ થયેલ નથી",
                 "TRANSACTIONREFUNDED": "રિફંડ કર્યું - ન્યૂનતમ કરતાં ઓછું",
-                "AVGSWAPPRICE": "સરેરાશ સ્વેપ કિંમત",
-                "SEARCHPLACEHOLDER": "MRX અથવા BTC સરનામું દાખલ કરો"
+                "AVGSWAPPRICE": "સરેરાશ સ્વેપ કિંમત"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "સ્વેપ સરનામું જનરેટ કરી રહ્યું છે...",
             "ALREADYHAVEADDRESS": "તમારી પાસે પહેલાથી જ આ મેટ્રિક્સ સરનામાં સાથે સંકળાયેલ BTC સરનામું છે.",
             "NOADDRESS": "તમે મેટ્રિક્સ સરનામું દાખલ કર્યું નથી."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "મેટ્રિક્સ ખરીદો",
-                "SEARCH": "ઇતિહાસ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "બતાવો",
                 "EMPTYTITLE": "હજુ સુધી કોઈ ટોકન મળ્યા નથી",
                 "EMPTYDETAIL": "Altitude તમારા સરનામાં પર મોકલવામાં આવેલા MRC20 અને MRC721 ટોકન્સ માટે બ્લોક એક્સપ્લોરરને આપમેળે તપાસે છે, પછી તમારા પોતાના નોડ સામે બધું લાઇવ ચકાસે છે. જો તમને ટોકનનો કોન્ટ્રાક્ટ સરનામું ખબર હોય તો તમે મેન્યુઅલી પણ ટોકન ઉમેરી શકો છો.",
+                "EMPTYDETAILCHECKINGDISABLED": "ઓટોમેટિક ટોકન ચેકિંગ બંધ છે, તેથી તમારા સરનામાં ટોકન માટે ચેક કરવામાં આવી રહ્યા નથી. તેને ઉપર પાછું ચાલુ કરો, અથવા જો તમને ટોકનનું કોન્ટ્રેક્ટ સરનામું ખબર હોય તો મેન્યુઅલી ઉમેરો.",
                 "HIDDENTITLE": "છુપાયેલા ટોકન્સ",
                 "CONTEXTMENUHIDE": "ટોકન છુપાવો",
                 "ITEMSSUFFIX": "વસ્તુ(ઓ)",
-                "NONENUMERABLETOOLTIP": "આ સંગ્રહ વ્યક્તિગત વસ્તુઓની યાદી બનાવવાનું સમર્થન કરતું નથી - તેના બદલે તમારી પાસે કેટલી વસ્તુઓ છે તે દર્શાવે છે."
+                "NONENUMERABLETOOLTIP": "આ સંગ્રહ વ્યક્તિગત વસ્તુઓની યાદી બનાવવાનું સમર્થન કરતું નથી - તેના બદલે તમારી પાસે કેટલી વસ્તુઓ છે તે દર્શાવે છે.",
+                "CHECKINGENABLED": "તપાસ ચાલુ છે",
+                "CHECKINGDISABLED": "ચેક ઓફ",
+                "CHECKINGENABLEDTOOLTIP": "ટોકન ચેકિંગ ચાલુ છે - Altitude સમયાંતરે ટોકન માટે તમારા સરનામાં તપાસે છે અને બેલેન્સ રિફ્રેશ કરે છે. બંધ કરવા માટે ક્લિક કરો.",
+                "CHECKINGDISABLEDTOOLTIP": "ટોકન ચેકિંગ બંધ છે - ફરી ચાલુ કરવા માટે ક્લિક કરો.",
+                "CHECKINGDISABLEDNOTICE": "ઓટોમેટિક ટોકન ચેકિંગ બંધ છે. તમારા સરનામાં ટોકન માટે સ્કેન કરવામાં આવી રહ્યા નથી અને બેલેન્સ અપડેટ થશે નહીં. તમે હજુ પણ મેન્યુઅલી ટોકન ઉમેરી શકો છો."
             },
             "ADDTOKEN": {
                 "TITLE": "ટોકન ઉમેરો",

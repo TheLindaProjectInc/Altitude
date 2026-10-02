@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Waihanga Pūkete",
             "HIDEEMPTYACCOUNTS": "Hunaia ngā Pūkete Putua Kore Ingoa"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Tirohanga Whānui",
+            "TRANSACTIONSTAB": "Ngā Whakawhitiwhitinga",
+            "ADDRESSTABS": "Ngā Wāhitau"
+        },
         "SEND": {
             "ADDRECIPIENT": "Tāpirihia te Kaiwhiwhi",
             "SEND": "Tukuna",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Te Rā",
             "TABLECOLUMNS_CONFIRMS": "Ngā Whakaū",
             "ALL_SELECTUNSELECT": "Whakawhiti Katoa",
+            "TREEMODE": "Aratau Rākau",
+            "LISTMODE": "Aratau Rārangi",
             "SENDAVAILABLE": "Whakamahia te toenga e wātea ana",
             "INPUTLOCKED": "Kua raka te tāuru. Me iriti e koe tēnei tāuru kia pau ai.",
             "CONTEXTMENULOCKINPUT": "Maukati tāuru",
@@ -38,10 +45,48 @@
             "AFTERFEE": "I muri i te utu",
             "QUANTITY": "Te rahinga",
             "BYTES": "Ngā Paita",
-            "TREEMODE": "Aratau Rākau",
-            "LISTMODE": "Aratau Rārangi",
             "ALERTFEECHANGETITLE": "Huringa Utu",
             "ALERTFEECHANGECONTENT": "He nui ake te utu tauwhitinga tuturu i te mea i tumanakohia. Tena koa whakaūhia te utu hou:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Waihangahia he kirimana",
+            "INFO": "Whakatakotoria he kirimana atamai ki te whatunga mā te tuku i tana waehere paita kua whakahiatohia. He mahi mekameka matua tēnei - tirohia anō ō tautuhinga waehere paita me te hau i mua i te whakatinanatanga, kāore e taea te whakakore i te whakatinanatanga.",
+            "FROM": "Mai i",
+            "BYTECODE": "Waehere Paita",
+            "BYTECODEPLACEHOLDER": "Whakapirihia te waehere paita kirimana kua whakahiatohia (hex)",
+            "INVALIDBYTECODE": "Me whai mana te waehere paita i tētahi aho hex (0-9, a-f) me te tau ōrite o ngā pūāhua",
+            "GASLIMIT": "Tepe Hauhanga",
+            "GASLIMITRANGE": "Awhe",
+            "GASPRICE": "Utu Penehīni (MRX mō ia wae penehīni)",
+            "GASPRICEMIN": "Te iti rawa",
+            "ESTIMATEDMAXCOST": "Te utu mōrahi kua whakatauhia",
+            "DEPLOYBUTTON": "Whakatakoto Kirimana",
+            "INCOMPLETEFORM": "Tīpakohia he wāhitau kaituku, tāuruhia he waehere paita tika, ā, whakatakotoria he rohe/utu penehīni tika.",
+            "HIGHGASPRICETITLE": "Te Utu Penehīni Nui",
+            "HIGHGASPRICEINFO": "He tino teitei rawa te utu penehīni i whakatakotoria e koe. Tērā pea ka eke te utu mō tēnei whakatinanatanga ki:",
+            "DEPLOYING": "Te whakatinana i te kirimana...",
+            "DEPLOYED": "Kua tukuna te whakatinanatanga kirimana",
+            "RESULTTITLE": "Hua Whakatakotoranga",
+            "STATUS": "Tūnga",
+            "STATUSPENDING": "Kei te tatari kia whakaūtia...",
+            "STATUSCONFIRMED": "I whakatinanahia angitu",
+            "STATUSFAILED": "I rahua te whakatinanatanga",
+            "TXID": "Tauwhitinga Tauwhitinga",
+            "SENDER": "Kaituku",
+            "CONTRACTADDRESS": "Wāhitau Kirimana",
+            "GASUSED": "Hau e whakamahia ana",
+            "DONEBUTTON": "Kua oti",
+            "DEPLOYANOTHERBUTTON": "Whakatakotoria tētahi atu"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Ngā Whakawhitiwhitinga",
+            "COPYBLOCKHASH": "Tāruatia te Hash Poraka",
+            "COPYTXID": "Tāruatia te Tauwhitinga ID",
+            "COPYACCOUNT": "Tāruatia te Ingoa Pūkete",
+            "COPYADDRESS": "Tāruatia te Wāhitau",
+            "COPYAMOUNT": "Te nui o te tārua",
+            "COPTBLOCKINDEX": "Tāruatia te Rārangi Poraka",
+            "EXPLORER": "Whakatuwheratia i roto i te Tirotiro Poraka"
         },
         "STAKING": {
             "UNLOCK": "Wewete mō te Tātaitanga",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Wāhitau",
             "ENABLED": "Kua whakahohea",
-            "STARTBUTTON": "Tīmata ā-Rohe",
-            "STARTALIASBUTTON": "Tīmata Ingoa Ingoakē",
-            "STARTALLBUTTON": "Tīmata Katoa",
             "NOMASTERNODES": "Kāore āu pona matua",
             "NOMNOUTPUTS": "Kāore i kitea he putanga Masternode. Hei whakahaere i tētahi Masternode ā-rohe, tukuna kia 2, 5, 25, 50, 100 miriona rānei ngā moni ki tō wāhitau Masternode, ā, tatari kia 15 ngā whakaū.",
+            "STARTBUTTON": "Tīmata ā-Rohe",
             "STOPBUTTON": "Whakamutua te Rohe",
+            "STARTALIASBUTTON": "Tīmata Ingoa Ingoakē",
             "STOPALIASBUTTON": "Whakamutua te Ingoa Ingoa",
+            "STARTALLBUTTON": "Tīmata Katoa",
             "ADDREMOTE": "Tāpirihia te Pūnaha Matua Mamao",
             "REMOVEMN": "Tangohia te Masternode",
             "ADDLOCAL": "Tatūnga Pūnaha Matua ā-Rohe",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Whānui",
                 "COREVERSION": "Putanga Matua",
+                "ALTITUDEVERSION": "Putanga Teitei",
                 "PROTOCOLVERSION": "Putanga Kawa",
                 "WALLETVERSION": "Putanga Wallet.dat",
                 "NETWORKTITLE": "Whatunga",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Te maha o ngā Pūnaha Matua",
                 "BLOCKCHAINTITLE": "Mekameka Poraka",
                 "NUMBERBLOCKS": "Te maha o ngā poraka o nāianei",
-                "BESTBLOCKTTIME": "Te wā poraka whakamutunga",
-                "ALTITUDEVERSION": "Putanga Teitei"
+                "BESTBLOCKTTIME": "Te wā poraka whakamutunga"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Nau mai ki te papatohu Metrix Core RPC. Patohia he āwhina hei tiro whānui i ngā whakahau e wātea ana.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Tīpakohia te Reo"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Ngā Whakawhitiwhitinga",
-            "COPYBLOCKHASH": "Tāruatia te Hash Poraka",
-            "COPYTXID": "Tāruatia te Tauwhitinga ID",
-            "COPYACCOUNT": "Tāruatia te Ingoa Pūkete",
-            "COPYADDRESS": "Tāruatia te Wāhitau",
-            "COPYAMOUNT": "Te nui o te tārua",
-            "COPTBLOCKINDEX": "Tāruatia te Rārangi Poraka",
-            "EXPLORER": "Whakatuwheratia i roto i te Tirotiro Poraka"
+        "CURRENCY": {
+            "TITLE": "Tīpakohia te Moni Whakaatu"
         },
         "EXPLORER": {
             "TITLE": "Poraka Tirotiro",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Whatunga",
             "WINDOTAB": "Matapihi",
+            "BACKUPTAB": "Tārua",
+            "EXPLORERTAB": "Kaihōpara",
+            "DEVELOPERTAB": "Kaiwhakawhanake",
             "NETWORK": {
                 "PROXY": "Hono atu mā te takawaenga SOCKS5",
                 "PROXYIP": "IP Takawaenga",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Whakaitihia i te katinga",
                 "BEHAVIOURTITLE": "Te Whanaketanga o te Paepae Pūnaha me te Matapihi"
             },
-            "BACKUPTAB": "Tārua",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Tārua Aunoa",
                 "ENABLED": "Tārua aunoa i te wallet.dat i runga i te wātaka",
                 "ENABLEDINFO": "Ka waihanga i tētahi tārua hou o tō kōnae pēke moni i runga i tētahi maramataka, kia wātea tonu ai he tārua hou mēnā he hapa.",
+                "INTERVALLABEL": "Tāruatia ia (rā)",
                 "LASTBACKUP": "Tārua whakamutunga:",
                 "NEVERBACKEDUP": "Kāore anō kia mahia he tārua aunoa.",
                 "BACKUPNOWBUTTON": "Tārua Inaianei",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Tautuhi anō ki te Taunoa",
                 "PRUNETITLE": "Hītori Tārua",
                 "PRUNEINFO": "Ka mukua ngā tārua aunoa tawhito kia kore ai tēnei kōpaki e tipu ake tonu atu - ko ngā mea hou rawa i raro nei ka puritia.",
-                "KEEPCOUNTLABEL": "Puritia kia whakamutunga",
-                "INTERVALLABEL": "Tāruatia ia (rā)"
+                "KEEPCOUNTLABEL": "Puritia kia whakamutunga"
             },
-            "EXPLORERTAB": "Kaihōpara",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Poraka Tirotiro",
                 "BLOCKEXPLORERINFO": "I tuwhera te pae i te wā e tirohia ana tētahi tauwhitinga i runga i te pūtirotiro poraka (hei tauira, pāwhiri-matau i tētahi tauwhitinga > Tirohia i runga i te pūtirotiro).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Whatunga Matua",
                 "TESTNET": "Kupenga Whakamātautau",
                 "REGTEST": "Whakamātautau Rehita"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Aratau Kaiwhakawhanake",
+                "DEVMODEINFO": "Kua whakawetohia i te taunoa, ā, mā ngā kaiwhakawhanake anake. Mā te whakahohe i tēnei ka kitea ngā kōwhiringa hei whakakore i te hononga RPC - me waiho tēnei e ngā kaiwhakamahi paerewa.",
+                "DEVMODELABEL": "Whakahohehia te Aratau Kaiwhakawhanake",
+                "WARNING": "Mō ngā kaupapa whakawhanake anake ēnei tautuhinga. Mā te whakarerekē i ēnei tautuhinga ka ārai pea i te hononga o te pēke moni ki tētahi rewera - whakamahia noa tēnei mēnā e mōhio ana koe ki tāu e mahi nei.",
+                "RPCHOSTTITLE": "Hononga RPC",
+                "RPCHOSTINFO": "Mā te taunoa ka hono a Altitude ki te daemon e whakahaere ana i a ia anō, i runga i tēnei mīhini (127.0.0.1). Mā te whakakore i ēnei ka taea te hono atu ki tētahi atu daemon - hei tauira, he tauira whakamātautau mamao, me te kore e hiahia ki te whakahaere i tētahi ā-rohe. Mena ka angitu te hononga, e kore a Altitude e tango, e tīmata rānei i tana ake daemon ā-rohe. Me whakaae te rpcallowip o te daemon ūnga ki tēnei hononga, ā, me ōrite te rpcuser/rpcpassword i raro nei ki tana whirihoranga. Ka whai mana tonu, kāore e hiahiatia he tīmatanga anō.",
+                "RPCHOSTLABEL": "Kaihautū RPC",
+                "RPCPORTLABEL": "Tauranga RPC",
+                "RPCUSERLABEL": "Ingoa Kaiwhakamahi RPC",
+                "RPCPASSWORDLABEL": "Kupuhipa RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Tirohanga Whānui",
-            "TRANSACTIONSTAB": "Ngā Whakawhitiwhitinga",
-            "ADDRESSTABS": "Ngā Wāhitau"
-        },
-        "CURRENCY": {
-            "TITLE": "Tīpakohia te Moni Whakaatu"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Papatohu",
             "SEND": "Tukuna",
+            "CREATECONTRACT": "Waihangahia he kirimana",
             "RECEIVE": "Whiwhi",
             "TRANSACTIONS": "Ngā Whakawhitiwhitinga",
             "STAKING": "Te tūnga",
             "MASTERNODES": "Ngā Pūnaha Matua",
+            "EXPLORER": "Poraka Tirotiro",
             "SYNC": {
                 "CONNECTING": "Te hono atu",
                 "NOBLOCKS": "E tatari ana mō ngā poraka",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Kāore te pēke moni e pupuri ana i te staking i tēnei wā",
                 "MASTERNODEON": "Kei te whakahaerehia te Masternode i tēnei wā",
                 "MASTERNODEOFF": "Kāore te Masternode e whakahaeretia ana i tēnei wā"
-            },
-            "EXPLORER": "Poraka Tirotiro"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Tāuruhia he wāhitau paetukutuku",
+            "GOBUTTON": "Haere",
+            "QUICKLAUNCH": "Whakarewa Tere",
+            "DEVTOOLS": "Whakatuwheratia ngā Utauta Kaiwhakawhanake",
+            "ADDLINK": "Tāpiri Hononga",
+            "LINKNAMEPLACEHOLDER": "Ingoa",
+            "LINKURLPLACEHOLDER": "https://tauira.com",
+            "SAVE": "Tiaki",
+            "CANCEL": "Whakakore",
+            "REMOVE": "Tangohia",
+            "REMOVECONFIRM": "Tangohia tēnei hononga tere?",
+            "LINKEXISTS": "Kei roto kē taua hononga i tō rārangi whakarewatanga tere",
+            "LINKINVALID": "Tāuruhia he wāhitau pae tika",
+            "LINKNETWORKLABEL": "Whatunga",
+            "LOADFAILED": "I rahua te uta i te pae",
+            "SECURESITE": "He haumaru te hononga - he tiwhikete SSL whai mana",
+            "INSECURESITE": "Kāore te hononga i te haumaru",
+            "INVALIDCERTSITE": "Kāore te hononga i te tūmataiti - he tiwhikete SSL kore mana, kāore rānei i te whakawhirinakihia"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Whakauruhia te Kupuhipa o tō Pūkete Moni",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Kei te wātea he whakahōutanga mō Metrix Core. Kei te hiahia koe ki te tāuta inaianei?",
             "WALLETUPDATETITLE": "Whakahōutanga Teitei e Wātea ana",
             "WALLETUPDATEINFO": "Kei te wātea he whakahōutanga mō Altitude. Kei te hiahia koe ki te tango mai ināianei?",
+            "WALLETUPDATEREADYTITLE": "Whakahōu Teitei Kua Rite",
+            "WALLETUPDATEREADYINFO": "Kua tikiakehia te whakahōutanga. Tīmata anō i a Altitude inaianei hei tāuta?",
+            "WALLETUPDATERESTARTBUTTON": "Tīmata anō & Tāuta",
+            "WALLETUPDATELATERBUTTON": "Ā muri ake nei",
             "CLIENTUPDATEBUTTON": "Whakahōu",
             "CLIENTUPDATECANCELBUTTON": "Kaua e Whakahōu",
             "CLIENTUPDATESKIPBUTTON": "Pekehia tēnei Whakahōutanga",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Me whakakapi ngā tārua o mua i mahia e koe mō tō kōnae pēke ki te kōnae pēke kua whakamunatia houtia. Mō ngā take haumarutanga, ka kore e whai hua ngā tārua o mua o te kōnae pēke kāore i whakamunatia ina tīmata koe ki te whakamahi i te pēke hou kua whakamunatia.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "I mutu ohorere a Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "I puta he raruraru ki a Metrix Core, ā, i mutu ai. Me tirotiro tō kōnae debug.log mō ngā raruraru.",
+            "CLIENTUNKNOWNERRORTITLE": "Hapa Whakawhitiwhiti Kōrero Matua Metrix",
+            "CLIENTUNKNOWNERRORINFO": "I pā mai he raruraru i te whakawhitiwhiti kōrero ki a Metrix Core. He mea pai kia tirohia tō kōnae debug.log mō ngā raruraru.",
+            "BOOTSTRAPFAILEDTITLE": "I rahua te Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "I puta he raruraru i te wā i tīmata ai a Metrix Core. He mea pai kia tirohia tō kōnae rangitaki Altitude mō ngā raruraru.",
+            "BOOTSTRAPOFFERTITLE": "Kua Tawhito rawa te Wāhi Putea",
+            "BOOTSTRAPOFFERINFO": "Kei te wātea he pūnaha whakaara hou hei whakahou wawe i a Metrix Core. Engari, me haere tonu ki te tukutahi noa, ka roa pea ētahi rā, nā te mea me tango e tō pēke moni ngā poraka katoa kua ngaro, ā, me manatoko.",
+            "BOOTSTRAPOFFERBUTTON": "Tikiake i te Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Haere Tonu te Tukutahi Noa",
+            "BOOTSTRAPSPACEINFO": "Kāore i te nui te wāhi kōpae wātea hei tango me te tango i te bootstrap. Me: {me}, Kei te wātea: {free}. Whakawāteahia he wāhi ka ngana anō.",
+            "STARTUPFAILEDTITLE": "I rahua te Whakaoho Metrix Core",
+            "STARTUPFAILEDINFO": "I puta he hapa i te tīmatanga o Metrix Core. He mea pai kia tirohia tō kōnae rangitaki Altitude mō ngā raruraru.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngā Utauta Whakaora",
             "CLIENTINVALIDCONFIGTITLE": "Whirihoranga metrix.conf kore mana",
             "CLIENTINVALIDCONFIGINFO": "Kāore he tatūnga masternode o tō metrix.conf, ā, ka puta tonu atu a Metrix Core. Tirohia tēnei kōnae.",
             "ADDREMOTEMNTITLE": "Tāpirihia te Pūnaha Matua Mamao",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kī Tūmataiti o te Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Taupū Trx Masternode",
-            "BOOTSTRAPFAILEDTITLE": "I rahua te Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "I puta he raruraru i te wā i tīmata ai a Metrix Core. He mea pai kia tirohia tō kōnae rangitaki Altitude mō ngā raruraru.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Ngā Utauta Whakaora",
-            "STARTUPFAILEDTITLE": "I rahua te Whakaoho Metrix Core",
-            "STARTUPFAILEDINFO": "I puta he hapa i te tīmatanga o Metrix Core. He mea pai kia tirohia tō kōnae rangitaki Altitude mō ngā raruraru.",
-            "CLIENTUNKNOWNERRORTITLE": "Hapa Whakawhitiwhiti Kōrero Matua Metrix",
-            "CLIENTUNKNOWNERRORINFO": "I pā mai he raruraru i te whakawhitiwhiti kōrero ki a Metrix Core. He mea pai kia tirohia tō kōnae debug.log mō ngā raruraru.",
             "UNENROLLGOVERNORTITLE": "Whakaū i te Whakakorenga o te Kāwana",
             "UNENROLLGOVERNORCONTENT": "Kei te tino hiahia koe ki te whakakore i tō Kāwana? Kāore e taea e koe te pōti mō te whakahaere mekameka.",
-            "WALLETUPDATEREADYTITLE": "Whakahōu Teitei Kua Rite",
-            "WALLETUPDATEREADYINFO": "Kua tikiakehia te whakahōutanga. Tīmata anō i a Altitude inaianei hei tāuta?",
-            "WALLETUPDATERESTARTBUTTON": "Tīmata anō & Tāuta",
-            "WALLETUPDATELATERBUTTON": "Ā muri ake nei",
             "DAPPCONNECTTITLE": "Hono atu ki te Pae",
             "DAPPCONNECTINFO": "E hiahia ana tēnei pae ki te hono atu ki tō pēke moni, me te tiro i tō wāhitau me tō toenga moni.",
             "DAPPCONNECTBUTTON": "Hono atu",
+            "DAPPCONNECTADDRESSLABEL": "Wāhitau",
+            "DAPPAPPROVEBUTTON": "Whakaaetia",
             "DAPPREJECTBUTTON": "Whakakore",
             "DAPPSENDTITLE": "Tono Tauwhitinga Kirimana",
             "DAPPSENDINFO": "Kei te tono tēnei pae tukutuku kia tukuna he tauwhitinga kirimana mai i tō pēke moni.",
-            "DAPPSIGNTITLE": "Tono Karere Waitohu",
-            "DAPPSIGNINFO": "Kei te tono tēnei pae tukutuku kia hainatia he karere me te wāhitau o tō pēke moni.",
-            "DAPPNOTREADY": "Kāore anō kia taea te hono atu ki te pae - kei te tīmata tonu a Metrix Core.",
-            "DAPPNOWALLET": "Kāore e taea te hono atu ki te pae - kāore he wāhitau putea e wātea ana.",
-            "DAPPAPPROVEBUTTON": "Whakaaetia",
-            "DAPPCONNECTADDRESSLABEL": "Wāhitau",
             "DAPPSENDSITELABEL": "Pae",
             "DAPPSENDCONTRACTLABEL": "Wāhitau Kirimana",
             "DAPPSENDAMOUNTLABEL": "Te nui",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Utu Whatunga Mōrahi",
             "DAPPSENDMAXTOTALLABEL": "Tapeke Mōrahi",
             "DAPPSENDDATALABEL": "Raraunga Kirimana",
+            "DAPPSIGNTITLE": "Tono Karere Waitohu",
+            "DAPPSIGNINFO": "Kei te tono tēnei pae tukutuku kia hainatia he karere me te wāhitau o tō pēke moni.",
             "DAPPSIGNMESSAGELABEL": "Karere",
-            "BOOTSTRAPOFFERTITLE": "Kua Tawhito rawa te Wāhi Putea",
-            "BOOTSTRAPOFFERINFO": "Kei te wātea he pūnaha whakaara hou hei whakahou wawe i a Metrix Core. Engari, me haere tonu ki te tukutahi noa, ka roa pea ētahi rā, nā te mea me tango e tō pēke moni ngā poraka katoa kua ngaro, ā, me manatoko.",
-            "BOOTSTRAPOFFERBUTTON": "Tikiake i te Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Haere Tonu te Tukutahi Noa",
-            "BOOTSTRAPSPACEINFO": "Kāore i te nui te wāhi kōpae wātea hei tango me te tango i te bootstrap. Me: {me}, Kei te wātea: {free}. Whakawāteahia he wāhi ka ngana anō."
+            "DAPPNOTREADY": "Kāore anō kia taea te hono atu ki te pae - kei te tīmata tonu a Metrix Core.",
+            "DAPPNOWALLET": "Kāore e taea te hono atu ki te pae - kāore he wāhitau putea e wātea ana."
         },
         "ADDRESSBOOK": {
             "TITLE": "Pukapuka Wāhitau",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Whatunga o nāianei"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Tāuruhia he wāhitau paetukutuku",
-            "GOBUTTON": "Haere",
-            "QUICKLAUNCH": "Whakarewa Tere",
-            "DEVTOOLS": "Whakatuwheratia ngā Utauta Kaiwhakawhanake",
-            "ADDLINK": "Tāpiri Hononga",
-            "LINKNAMEPLACEHOLDER": "Ingoa",
-            "LINKURLPLACEHOLDER": "https://tauira.com",
-            "SAVE": "Tiaki",
-            "CANCEL": "Whakakore",
-            "REMOVE": "Tangohia",
-            "REMOVECONFIRM": "Tangohia tēnei hononga tere?",
-            "LINKEXISTS": "Kei roto kē taua hononga i tō rārangi whakarewatanga tere",
-            "LINKINVALID": "Tāuruhia he wāhitau pae tika",
-            "LINKNETWORKLABEL": "Whatunga",
-            "LOADFAILED": "I rahua te uta i te pae",
-            "SECURESITE": "He haumaru te hononga - he tiwhikete SSL whai mana",
-            "INSECURESITE": "Kāore te hononga i te haumaru",
-            "INVALIDCERTSITE": "Kāore te hononga i te tūmataiti - he tiwhikete SSL kore mana, kāore rānei i te whakawhirinakihia"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Pūkete Tārua...",
             "SIGNMESSAGE": "Karere Waitohu...",
             "VERIFYMESSAGE": "Manatokohia te Karere...",
-            "LOCALE": "Reo...",
-            "RESTARTCORE": "Tīmata anō i te Metrix Core",
-            "EXIT": "Putanga",
             "OPTIONS": "Ngā Kōwhiringa...",
+            "LOCALE": "Reo...",
             "CURRENCIES": "Whakaatu Moni...",
-            "ALTITUDEREFRESH": "Whakahouhia ngā Raraunga Teitei"
+            "RESTARTCORE": "Tīmata anō i te Metrix Core",
+            "ALTITUDEREFRESH": "Whakahouhia ngā Raraunga Teitei",
+            "EXIT": "Putanga"
         },
         "ENCRYPT": {
             "TITLE": "Whakamuna",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Tapeke Pauna",
+        "SPENDABLEBALANCE": "Pauna Whakapaunga",
+        "PENDINGBALANCE": "Taurite e tatari ana",
         "CANCELBUTTON": "Whakakore",
         "DONEBUTTON": "Kua oti",
         "OKBUTTON": "Āe",
+        "ACCEPTBUTTON": "Whakaae",
         "CLEARALLBUTTON": "Ūkui Katoa",
         "ENTERACCOUNTLABEL": "Tāuruhia he tapanga mō tēnei wāhitau",
         "ENTERADDRESSLABEL": "Tāuruhia he wāhitau Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Whakarōpūtia mā te",
         "SEARCH": "Rapu",
         "FEE": "Utu",
-        "ACCEPTBUTTON": "Whakaae",
         "CONFIRMED": "Kua whakaūtia",
         "UNCONFIRMED": "Kāore anō kia whakaūtia",
-        "PENDINGBALANCE": "Taurite e tatari ana",
-        "SPENDABLEBALANCE": "Pauna Whakapaunga",
         "SAVEBUTTON": "Tiaki"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Te Tīmata Anō i a Metrix Core...",
         "BOOTSTRAPPING": "Kei te tikiake i te bootstrap...",
         "BOOTSTRAPEXTRACTING": "Te tango i te bootstrap...",
-        "TIMEREMAINING": "toenga:"
+        "TIMEREMAINING": "toenga:",
+        "DEVRPCOVERRIDEACTIVE": "Kua whakatakotoria he whakakorenga hononga RPC a te kaiwhakawhanake (Ngā Kōwhiringa > Kaiwhakawhanake) ā, kāore e aro mai ana. Whakakorea kia hono anō ki te daemon ā-rohe i te tikanga.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Mukua te Whakakorenga RPC me te Hono Anō"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kua angitu te hanga i tētahi pūkete hou",
         "ADDRESSCOPIEDCLIPBOARD": "Kua tāruatia te wāhitau ki te papatuhituhi",
+        "COPIEDCLIPBOARD": "Kua tāruatia ki te papatuhituhi",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Ngā tauwhitinga kua tāruatia ki te papatuhituhi",
         "EMPTYFIELDS": "Whakakīia ngā āpure katoa",
         "NOUPDATE": "Kāore he whakahōutanga e wātea ana",
         "WALLETBACKEDUP": "Kua angitu te tārua i te pēke moni",
+        "WALLETBACKUPFAILED": "I rahua te tārua aunoa o te pēke moni - tirohia tō tauwāhi tārua me te mokowā kōpae e wātea ana",
         "PASSPHRASEMISMATCH": "Kāore ngā kupuhipa i whakaurua e koe e ōrite ana",
         "CHECKINGUPDATE": "Kei te tirotiro mō te whakahōutanga...",
         "CHECKINGUPDATEFAILED": "Kāore e taea te tirotiro mō te whakahōu. Tirohia tō whatunga.",
+        "WALLETUPDATEDOWNLOADING": "Kei te tikiake i te whakahōu...",
         "SENDINGEXCEEDSBALANCE": "Kua hipa te moni e tukuna ana e koe i tō toenga kua tohua",
         "MISSINGCHANGEADDRESS": "Me tohu e koe he wāhitau whakarerekē",
         "MISSINGDESTINATIONADDRESS": "Me tohu e koe he wāhitau ūnga",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Te whakamuna i te pēke moni...",
         "CHANGINGPASSPHARASE": "Te huri i te kupuhipa...",
         "STARTINGMASTERNODE": "Te tīmata i te masternode...",
+        "STOPPINGMASTERNODE": "Te whakamutu i te masternode...",
         "SENDINGTRANSACTION": "Te tuku tauwhitinga...",
         "SIGNINGMESSAGE": "Karere waitohu...",
         "SIGNEDMESSAGE": "Karere kua hainatia",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Te wetewete i te pēke moni...",
         "TRANSACTIONMISMATCH": "Hapa tauwhitinga. Ngāna anō.",
         "MINIMUMCONFIRMATIONS": "Me whakaū kia kotahi te iti rawa o ngā tāurunga katoa i mua i te whakapaunga.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Ngā tauwhitinga kua tāruatia ki te papatuhituhi",
-        "STOPPINGMASTERNODE": "Te whakamutu i te masternode...",
         "FAILEDTOWRITECONFIG": "I puta he raru i te tuhi ki tō kōnae metrix.conf. Tirohia mēnā kei te wātea te kōnae, ā, kei a Altitude ngā whakaaetanga tuhi.",
         "NOPUBLICUP": "Kāore i kitea he wāhitau IP ā-Iwi. Tirohia tō hononga ipurangi, ka tīmata anō i te Altitude.",
         "CONFIGURINGLOCALMN": "Te whirihora i te Masternode ā-rohe...",
         "REPORTINGISSUE": "Te tiki mōhiohio tātaritanga... Ka tāruatia ēnei mōhiohio ki tō papatuhituhi.",
-        "WALLETUPDATEDOWNLOADING": "Kei te tikiake i te whakahōu...",
-        "WALLETBACKUPFAILED": "I rahua te tārua aunoa o te pēke moni - tirohia tō tauwāhi tārua me te mokowā kōpae e wātea ana",
         "EXPLORERURLSAVED": "Kua tiakina te URL o te Explorer",
         "EXPLORERURLRESET": "Kua whakahokia te URL Explorer ki te taunoa",
         "EXPLORERURLINVALID": "Ehara tēnā i te URL http(s) whaimana",
-        "EXPLORERURLUNREACHABLE": "Kāore i taea te tae atu ki taua URL - tirohia, ka ngana anō"
+        "EXPLORERURLUNREACHABLE": "Kāore i taea te tae atu ki taua URL - tirohia, ka ngana anō",
+        "DEVRPCHOSTSAVED": "Kua tiakina te kaihautū RPC",
+        "DEVRPCHOSTRESET": "Kua hoki te kaihautū RPC ki te taunoa (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Ngā Moni i Whiwhi",
+        "NEWTRANSACTION_TITLE_STAKE": "Te Wāhi i Whiwhihia",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "I whiwhi i te utu Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "He torutoru hēkona",
@@ -533,11 +587,6 @@
         "MONTHS": "ngā marama",
         "AYEAR": "He tau",
         "YEARS": "tau"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Ngā Moni i Whiwhi",
-        "NEWTRANSACTION_TITLE_STAKE": "Te Wāhi i Whiwhihia",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "I whiwhi i te utu Masternode"
     },
     "MONTH": {
         "JAN": "HĀN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Ko ngā Kāwana te kawenga mō te pōti i ngā tahua ā-marama me ngā huringa poraka mekameka. Ka taea e koe te noho hei Kāwana mā te raka i te pūtāhui tika i roto i te kirimana Whakahaere.",
                 "COLLATERAL": "Pūtāhui e hiahiatia ana",
                 "ENROLL": "Whakauru",
+                "SELECTAGOVERNOR": "Kōwhiria he wāhitau kāwana e tika ana",
+                "GOVERNORNOTSELECTED": "Kāore i tīpakohia he wāhitau whai mana",
                 "CONFIRMENROLL": "Kei te tata koe ki te rēhita hei Kāwana. Mā tēnei ka tukuna he tauwhitinga me ngā pūtāhui e hiahiatia ana ki te kirimana whakahaere. Ka taea e koe te whakakore i tō rēhitatanga i ngā wā katoa.",
                 "ISGOVERNORTITLE": "He Kāwana hohe koe!",
                 "ISGOVERNORDETAIL1": "Ko ngā Kāwana te kawenga mō te pōti i ngā tahua ā-marama me ngā huringa ki te poraka mekameka.",
                 "ISGOVERNORDETAIL2": "Hei noho tonu hei Kāwana, me whai wāhi koe ki te pōti kotahi i te iti rawa i ia 30 rā.",
                 "ISGOVERNORDETAIL3": "Mena kāore he mea hei pōti māu, ka taea e koe te haere tonu i tō rēhitatanga mā te tuku i tētahi ping hohe.",
+                "MYGOVERNORADDRESS": "Taku Wāhitau Kāwana",
                 "UNENROLL": "Whakakore rēhita",
                 "PING": "Tukuna te Ping Hohe",
                 "LASTPINGTITLE": "Pīnga whakamutunga",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "ngā rā",
                 "GOVERNORVOTEMATURITYHOURS": "ngā hāora",
                 "GOVERNORVOTEMATURITYSUFFIX": "kia pakeke rā anō",
-                "MYGOVERNORADDRESS": "Taku Wāhitau Kāwana",
-                "SELECTAGOVERNOR": "Kōwhiria he wāhitau kāwana e tika ana",
-                "GOVERNORNOTSELECTED": "Kāore i tīpakohia he wāhitau whai mana",
                 "NOTFULLYSYNCEDTITLE": "Kāore i te wātea te tūnga Kāwana",
                 "NOTFULLYSYNCEDDETAIL": "Ka kitea tō tūnga rēhita Kāwana ina tino honoa tō poraka mekameka.",
                 "DGPMIGRATIONTITLE": "Hekenga DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Kua oti pai te waihanga i tō tono",
             "ENROLLINGGOVERNOR": "Te rēhitatanga hei Kāwana...",
             "ENROLLEDGOVERNOR": "Ka oti tō rēhitatanga ina whakaūtia tō tauwhitinga",
-            "VOTINGONPROPOSAL": "Te tuku pōti tono",
-            "VOTEDONPROPOSAL": "Ka tatauhia tō pōti ina whakaūtia te tauwhitinga.",
             "PINGINGGOVERNOR": "Kei te tuku ping...",
             "PINGEDGOVERNOR": "Kua tukuna angitu te Ping. Ka whakahōungia tō Kāwana ina whakaūngia te tauwhitinga",
+            "VOTINGONPROPOSAL": "Te tuku pōti tono",
+            "VOTEDONPROPOSAL": "Ka tatauhia tō pōti ina whakaūtia te tauwhitinga.",
             "UNENROLLINGGOVERNOR": "Te whakakore i te rēhitatanga o te Kāwana...",
             "UNENROLLEDGOVERNOR": "Kua tukuna te tauwhitinga. Ka tangohia tō Kāwana mai i te rēhita ina whakaūngia te tauwhitinga",
             "GOVERNORNOTMATURE": "Kāore anō tō Kāwana kia pakeke ki te mahi i tēnei mahi"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Hokona a Metrix",
+                "SEARCH": "Hītori"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Tukuna e koe",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Hītori Tauwhitinga",
                 "SEARCHBUTTON": "RAPU",
+                "SEARCHPLACEHOLDER": "Whakauruhia te wāhitau MRX, BTC rānei",
                 "TRANSACTIONDATE": "Te Rā",
                 "TRANSACTIONTYPE": "Momo TX",
                 "TRANSACTIONAMOUNT": "Te nui",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Kua whakaūtia",
                 "TRANSACTIONNOTCONFIRMED": "Kāore anō kia whakaūtia",
                 "TRANSACTIONREFUNDED": "Kua whakahokia mai te moni - I raro iho i te iti rawa",
-                "AVGSWAPPRICE": "Utu Whakawhiti Toharite",
-                "SEARCHPLACEHOLDER": "Whakauruhia te wāhitau MRX, BTC rānei"
+                "AVGSWAPPRICE": "Utu Whakawhiti Toharite"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Te whakaputa i te Wāhitau Whakawhiti...",
             "ALREADYHAVEADDRESS": "Kei a koe kē tētahi wāhitau BTC e hono ana ki tēnei wāhitau Metrix",
             "NOADDRESS": "Kāore koe i whakauru i tētahi wāhitau Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Hokona a Metrix",
-                "SEARCH": "Hītori"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Whakaaturia",
                 "EMPTYTITLE": "Kāore anō kia kitea he tohu",
                 "EMPTYDETAIL": "Ka tirohia aunoatia e Altitude te pūtirotiro poraka mō ngā tohu MRC20 me MRC721 kua tukuna ki ō wāhitau, kātahi ka manatoko i ngā mea katoa ki tō ake pūnga. Ka taea hoki e koe te tāpiri ā-ringa i tētahi tohu mēnā e mōhio ana koe ki tōna wāhitau kirimana.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kua whakawetohia te tirotiro tohu aunoa, nō reira kāore ō wāhitau e tirohia ana mō ngā tohu. Whakahoutia anō i runga ake nei, tāpirihia rānei he tohu ā-ringa mēnā e mōhio ana koe ki tōna wāhitau kirimana.",
                 "HIDDENTITLE": "Ngā Tohu Huna",
                 "CONTEXTMENUHIDE": "Hunaia te Tohu",
                 "ITEMSSUFFIX": "tūemi",
-                "NONENUMERABLETOOLTIP": "Kāore tēnei kohinga e tautoko i te whakarārangi i ngā tūemi takitahi - engari e whakaatu ana i te maha o ngā tūemi kei a koe."
+                "NONENUMERABLETOOLTIP": "Kāore tēnei kohinga e tautoko i te whakarārangi i ngā tūemi takitahi - engari e whakaatu ana i te maha o ngā tūemi kei a koe.",
+                "CHECKINGENABLED": "Te Tirotiro",
+                "CHECKINGDISABLED": "Te Tāpae Atu",
+                "CHECKINGENABLEDTOOLTIP": "Kei te whakahohehia te tirotiro tohu - Ka tirotirohia e Altitude ō wāhitau i ia wā mō ngā tohu, ā, ka whakahoutia ngā toenga. Pāwhiritia hei whakaweto.",
+                "CHECKINGDISABLEDTOOLTIP": "Kua weto te tirotiro tohu - pāwhiritia hei whakakā anō.",
+                "CHECKINGDISABLEDNOTICE": "Kua whakawetohia te tirotiro tohu aunoa. Kāore ō wāhitau e matawaihia ana mō ngā tohu, ā, kāore ngā toenga e whakahōu. Ka taea tonu e koe te tāpiri ā-ringa i tētahi tohu."
             },
             "ADDTOKEN": {
                 "TITLE": "Tāpirihia te Tohu",

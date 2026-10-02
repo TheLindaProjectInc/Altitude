@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Hamorona kaonty",
             "HIDEEMPTYACCOUNTS": "Afeno ireo kaonty foana tsy misy anarana"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Topimaso",
+            "TRANSACTIONSTAB": "varotra",
+            "ADDRESSTABS": "adiresy"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ampio ny mpandray",
             "SEND": "Alefaso",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Daty",
             "TABLECOLUMNS_CONFIRMS": "fandraisana ho mpikambana",
             "ALL_SELECTUNSELECT": "Ampifamadiho ny rehetra",
+            "TREEMODE": "Fomba Hazo",
+            "LISTMODE": "Fomba lisitra",
             "SENDAVAILABLE": "Ampiasao ny vola azo ampiasaina",
             "INPUTLOCKED": "Voahidy ny fidirana. Mila sokafanao ity fidirana ity mba hampiasana azy.",
             "CONTEXTMENULOCKINPUT": "Hidio ny fidirana",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Aorian'ny sarany",
             "QUANTITY": "Isany",
             "BYTES": "oktety",
-            "TREEMODE": "Fomba Hazo",
-            "LISTMODE": "Fomba lisitra",
             "ALERTFEECHANGETITLE": "Fiovan'ny sarany",
             "ALERTFEECHANGECONTENT": "Ambony noho ny nantenaina ny saram-pandraharahana tena izy. Azafady mba hamafiso ny sarany vaovao:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Mamorona fifanarahana",
+            "INFO": "Mametraha fifanarahana marani-tsaina ao amin'ny tambajotra amin'ny alàlan'ny fandefasana ny bytecode voaangona. Asa fototra amin'ny rojo ity - jereo indroa ny fikirana bytecode sy ny gazy alohan'ny hametrahana azy, tsy azo foanana ny fametrahana azy.",
+            "FROM": "From",
+            "BYTECODE": "Kaody byte",
+            "BYTECODEPLACEHOLDER": "Apetaho ny bytecode (hex) an'ny fifanarahana voaangona",
+            "INVALIDBYTECODE": "Tsy maintsy tady hexagonal manan-kery (0-9, a-f) misy isa mitovy amin'ny tarehintsoratra ny bytecode.",
+            "GASLIMIT": "Fetra amin'ny lasantsy",
+            "GASLIMITRANGE": "isan-karazany",
+            "GASPRICE": "Vidin'ny lasantsy (MRX isaky ny lasantsy)",
+            "GASPRICEMIN": "Farafahakeliny",
+            "ESTIMATEDMAXCOST": "Vidiny ambony indrindra tombanana",
+            "DEPLOYBUTTON": "Fifanarahana fametrahana",
+            "INCOMPLETEFORM": "Mifidiana adiresin'ny mpandefa, ampidiro ny bytecode manan-kery, ary mametraha fetra/vidin'ny lasantsy manan-kery.",
+            "HIGHGASPRICETITLE": "Vidin-tsolika lafo",
+            "HIGHGASPRICEINFO": "Lafo tsy araka ny mahazatra ny vidin-tsolika napetrakao. Mety hahatratra hatramin'ny:",
+            "DEPLOYING": "Fametrahana ny fifanarahana...",
+            "DEPLOYED": "Nalefa ny fametrahana ny fifanarahana",
+            "RESULTTITLE": "Vokatra fametrahana",
+            "STATUS": "sata",
+            "STATUSPENDING": "Miandry fanamafisana...",
+            "STATUSCONFIRMED": "Napetraka soa aman-tsara",
+            "STATUSFAILED": "Tsy nahomby ny fametrahana",
+            "TXID": "Laharan'ny fifanakalozana",
+            "SENDER": "mpandefa",
+            "CONTRACTADDRESS": "Adiresin'ny fifanarahana",
+            "GASUSED": "Gaz ampiasaina",
+            "DONEBUTTON": "hatao",
+            "DEPLOYANOTHERBUTTON": "Mametraha iray hafa"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "varotra",
+            "COPYBLOCKHASH": "Kopia ny Block Hash",
+            "COPYTXID": "Kopia ny ID-n'ny fifanakalozana",
+            "COPYACCOUNT": "Adikao ny Anaran'ny Kaonty",
+            "COPYADDRESS": "Adiresy kopia",
+            "COPYAMOUNT": "Habetsahana kopia",
+            "COPTBLOCKINDEX": "Fanondroana sakana kopia",
+            "EXPLORER": "Sokafy ao amin'ny Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Sokafy ho an'ny Staking",
@@ -68,13 +113,13 @@
             "IP": ": ip",
             "ADDRESS": "Adiresy",
             "ENABLED": "afaka",
-            "STARTBUTTON": "Atombohy eo an-toerana",
-            "STARTALIASBUTTON": "Atombohy ny solonanarana",
-            "STARTALLBUTTON": "Atombohy ny rehetra",
             "NOMASTERNODES": "Tsy manana masternodes ianao",
             "NOMNOUTPUTS": "Tsy misy vokatra Masternode hita. Mba hampandehanana Masternode eo an-toerana dia alefaso any amin'ny adiresinao Masternode ny vola madinika 2, 5, 25, 50 na 100 tapitrisa ary andraso ny fanamafisana 15.",
+            "STARTBUTTON": "Atombohy eo an-toerana",
             "STOPBUTTON": "Atsaharo ny eo an-toerana",
+            "STARTALIASBUTTON": "Atombohy ny solonanarana",
             "STOPALIASBUTTON": "Atsaharo ny solonanarana",
+            "STARTALLBUTTON": "Atombohy ny rehetra",
             "ADDREMOTE": "Ampio ny Masternode lavitra",
             "REMOVEMN": "Esory ny Masternode",
             "ADDLOCAL": "Mametraha Masternode eo an-toerana",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "General",
                 "COREVERSION": "Dikan-teny fototra",
+                "ALTITUDEVERSION": "Dikan-teny momba ny Altitude",
                 "PROTOCOLVERSION": "Dikan-teny Protocole",
                 "WALLETVERSION": "Dikan-teny Wallet.dat",
                 "NETWORKTITLE": "Tambajotra",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Isan'ny Masternodes",
                 "BLOCKCHAINTITLE": "Rojo vy",
                 "NUMBERBLOCKS": "Isan'ny sakana amin'izao fotoana izao",
-                "BESTBLOCKTTIME": "Fotoana farany nanaovana sakana",
-                "ALTITUDEVERSION": "Dikan-teny momba ny Altitude"
+                "BESTBLOCKTTIME": "Fotoana farany nanaovana sakana"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Tongasoa eto amin'ny console Metrix Core RPC. Soraty ny fanampiana raha hijery topimaso momba ireo baiko azo ampiasaina.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Fidio ny fiteny"
         },
-        "TRANSACTIONS": {
-            "TITLE": "varotra",
-            "COPYBLOCKHASH": "Kopia ny Block Hash",
-            "COPYTXID": "Kopia ny ID-n'ny fifanakalozana",
-            "COPYACCOUNT": "Adikao ny Anaran'ny Kaonty",
-            "COPYADDRESS": "Adiresy kopia",
-            "COPYAMOUNT": "Habetsahana kopia",
-            "COPTBLOCKINDEX": "Fanondroana sakana kopia",
-            "EXPLORER": "Sokafy ao amin'ny Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Safidio ny vola aseho"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Tambajotra",
             "WINDOTAB": "Varavarankely",
+            "BACKUPTAB": "nomaniny ho solon'izay",
+            "EXPLORERTAB": "mpikaroka tany vaovao",
+            "DEVELOPERTAB": "Mpamorona",
             "NETWORK": {
                 "PROXY": "Mifandraisa amin'ny alàlan'ny proxy SOCKS5",
                 "PROXYIP": "IP Proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Ahena rehefa mihidy",
                 "BEHAVIOURTITLE": "Fitondran-tenan'ny System Tray & Window"
             },
-            "BACKUPTAB": "nomaniny ho solon'izay",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Famerenana mandeha ho azy",
                 "ENABLED": "Manao backup ho azy ny wallet.dat araka ny fandaharam-potoana",
                 "ENABLEDINFO": "Mamorona backup vaovao amin'ny rakitra ao amin'ny poketranao araka ny fandaharam-potoana, mba ho azo alaina foana ny kopia vao haingana raha misy zavatra tsy mety.",
+                "INTERVALLABEL": "Manaova backup isaky ny (andro)",
                 "LASTBACKUP": "Fanamboarana farany:",
                 "NEVERBACKEDUP": "Mbola tsy nisy backup mandeha ho azy natao.",
                 "BACKUPNOWBUTTON": "Miverena izao",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Averina amin'ny mahazatra",
                 "PRUNETITLE": "Tantaran'ny backup",
                 "PRUNEINFO": "Voafafa ireo backup mandeha ho azy taloha mba tsy hitombo mandrakizay ity lahatahiry ity - ireo farany indrindra etsy ambany ihany no tehirizina.",
-                "KEEPCOUNTLABEL": "Tazomy farany",
-                "INTERVALLABEL": "Manaova backup isaky ny (andro)"
+                "KEEPCOUNTLABEL": "Tazomy farany"
             },
-            "EXPLORERTAB": "mpikaroka tany vaovao",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Nisokatra ny tranonkala rehefa nijery fifanakalozana tao amin'ny \"block explorer\" (oh: tsindrio havanana amin'ny \"transaction\" > \"View on Explorer\").",
@@ -259,25 +298,31 @@
                 "MAINNET": "Mainnet",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Fomba mpamorona",
+                "DEVMODEINFO": "Tsy mandeha amin'ny laoniny ary natao ho an'ny mpamorona rindrambaiko ihany. Ny fampandehanana ity dia mampiseho safidy hanafoanana ny fifandraisana RPC - tokony tsy ho ampiasaina izany ho an'ny mpampiasa mahazatra.",
+                "DEVMODELABEL": "Alefaso ny fomba mpamorona",
+                "WARNING": "Ireo fikirana ireo dia natao ho an'ny fampandrosoana ihany. Ny fanovana azy ireo dia mety hisakana ny wallet tsy hifandray amin'ny daemon mihitsy - ampiasao fotsiny ity raha fantatrao izay ataonao.",
+                "RPCHOSTTITLE": "Fifandraisana RPC",
+                "RPCHOSTINFO": "Amin'ny ankapobeny dia mifandray amin'ny daemon izay tantaniny manokana ny Altitude, amin'ity milina ity (127.0.0.1). Ny fanesorana ireo dia ahafahany mifandray amin'ny daemon hafa - ohatra, ohatra, amin'ny regtest lavitra, tsy mila mampiasa azy eo an-toerana. Raha mahomby ny fifandraisana, dia tsy hisintona na hanomboka ny daemon eo an-toerana ny Altitude. Tsy maintsy mamela ity fifandraisana ity ny rpcallowip an'ny daemon kendrena, ary tsy maintsy mifanaraka amin'ny fandrindrany ny rpcuser/rpcpassword etsy ambany. Hihatra avy hatrany izany, tsy mila averina atomboka.",
+                "RPCHOSTLABEL": "Mpampiantrano RPC",
+                "RPCPORTLABEL": "Seranan-tsambo RPC",
+                "RPCUSERLABEL": "Anaran'ny mpampiasa RPC",
+                "RPCPASSWORDLABEL": "Tenimiafina RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Topimaso",
-            "TRANSACTIONSTAB": "varotra",
-            "ADDRESSTABS": "adiresy"
-        },
-        "CURRENCY": {
-            "TITLE": "Safidio ny vola aseho"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "anaty fiara",
             "SEND": "Alefaso",
+            "CREATECONTRACT": "Mamorona fifanarahana",
             "RECEIVE": "Raiso",
             "TRANSACTIONS": "varotra",
             "STAKING": "Fametrahana tsato-kazo",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "mampifandray",
                 "NOBLOCKS": "Miandry sakana",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Tsy mi-stake ny Wallet amin'izao fotoana izao",
                 "MASTERNODEON": "Mandeha amin'izao fotoana izao ny Masternode",
                 "MASTERNODEOFF": "Tsy miasa amin'izao fotoana izao ny Masternode"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Ampidiro ny adiresin'ny tranonkala",
+            "GOBUTTON": "Mandehana",
+            "QUICKLAUNCH": "Fanombohana haingana",
+            "DEVTOOLS": "Sokafy ny Fitaovana ho an'ny Mpamorona",
+            "ADDLINK": "Ampio rohy",
+            "LINKNAMEPLACEHOLDER": "Anarana",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "afa-tsy",
+            "CANCEL": "hanafoana",
+            "REMOVE": "esory",
+            "REMOVECONFIRM": "Esory ity rohy haingana ity?",
+            "LINKEXISTS": "Efa ao amin'ny lisitry ny fandefasana haingana anao io rohy io",
+            "LINKINVALID": "Ampidiro adiresy tranonkala manan-kery",
+            "LINKNETWORKLABEL": "Tambajotra",
+            "LOADFAILED": "Tsy nahomby ny famoahana ny tranonkala",
+            "SECURESITE": "Azo antoka ny fifandraisana - mari-pankasitrahana SSL manankery",
+            "INSECURESITE": "Tsy azo antoka ny fifandraisana",
+            "INVALIDCERTSITE": "Tsy manokana ny fifandraisana - tsy manan-kery na tsy azo itokisana ny mari-pankasitrahana SSL"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Ampidiro ny tenimiafinao amin'ny poketranao",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Misy fanavaozana azo alaina ho an'ny Metrix Core. Tianao ve ny hametraka azy izao?",
             "WALLETUPDATETITLE": "Azo alaina ny fanavaozana ny haavo",
             "WALLETUPDATEINFO": "Misy fanavaozana azo alaina ho an'ny Altitude. Tianao ve ny misintona azy izao?",
+            "WALLETUPDATEREADYTITLE": "Vonona ny Fanavaozana ny Haavo",
+            "WALLETUPDATEREADYINFO": "Voasintona ny fanavaozana. Avereno atomboka indray ny Altitude izao mba hametrahana azy?",
+            "WALLETUPDATERESTARTBUTTON": "Atombohy indray ary apetraho",
+            "WALLETUPDATELATERBUTTON": "TATỲ AORIANA",
             "CLIENTUPDATEBUTTON": "vaovao farany",
             "CLIENTUPDATECANCELBUTTON": "Aza havaozina",
             "CLIENTUPDATESKIPBUTTON": "Aza ajanona ity fanavaozana ity",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Ny backup rehetra nataonao tamin'ny rakitra poketranao dia tokony hosoloina amin'ny rakitra poketra vaovao noforonina sy voaaro. Noho ny antony fiarovana, ny backup teo aloha tamin'ny rakitra poketra tsy voaaro dia ho very maina raha vao manomboka mampiasa ny poketra vaovao sy voaaro ianao.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Nijanona tsy nampoizina ny Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Nisy olana tamin'ny Metrix Core ka nahatonga azy io ho tapaka. Tsara raha jerenao ny rakitra debug.log-nao raha misy olana.",
+            "CLIENTUNKNOWNERRORTITLE": "Hadisoana amin'ny fifandraisana Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Nisy olana tamin'ny fifandraisana tamin'ny Metrix Core. Tsara raha jerenao ny rakitra debug.log-nao raha misy olana.",
+            "BOOTSTRAPFAILEDTITLE": "Tsy nahomby ny Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Nisy olana tamin'ny fanombohana ny Metrix Core. Tsara raha jerenao ny rakitra Altitude log-nao raha misy olana.",
+            "BOOTSTRAPOFFERTITLE": "Lany andro be ny poketra",
+            "BOOTSTRAPOFFERINFO": "Misy \"bootstrap\" vao haingana izay afaka manavao haingana ny Metrix Core. Mety haharitra andro maromaro vao ho vita ny fanohizana ny \"sync\" mahazatra, satria mila misintona sy manamarina ny sakana rehetra tsy voavaha ny \"wallet\"-nao.",
+            "BOOTSTRAPOFFERBUTTON": "Sintomy ny Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Tohizo ny fampifanarahana mahazatra",
+            "BOOTSTRAPSPACEINFO": "Tsy ampy ny toerana malalaka ao amin'ny kapila mafy hisintonana sy hanesorana ny bootstrap. Ilaina: {takiana}, Azo alaina: {free}. Omeo toerana malalaka ary andramo indray.",
+            "STARTUPFAILEDTITLE": "Tsy nahomby ny fanombohana ny Metrix Core",
+            "STARTUPFAILEDINFO": "Nisy olana tamin'ny fanombohana ny Metrix Core. Tsara raha jerena ny rakitra Altitude log-nao raha misy olana.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Fitaovana fanarenana",
             "CLIENTINVALIDCONFIGTITLE": "Fikirana metrix.conf tsy mety",
             "CLIENTINVALIDCONFIGINFO": "Misy fametrahana masternode tsy mety ao amin'ny metrix.conf-nao izay hahatonga ny Metrix Core hiala avy hatrany. Azafady mba jereo ity rakitra ity.",
             "ADDREMOTEMNTITLE": "Ampio ny Masternode lavitra",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Lakile manokana Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Index Masternode Trx",
-            "BOOTSTRAPFAILEDTITLE": "Tsy nahomby ny Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Nisy olana tamin'ny fanombohana ny Metrix Core. Tsara raha jerenao ny rakitra Altitude log-nao raha misy olana.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Fitaovana fanarenana",
-            "STARTUPFAILEDTITLE": "Tsy nahomby ny fanombohana ny Metrix Core",
-            "STARTUPFAILEDINFO": "Nisy olana tamin'ny fanombohana ny Metrix Core. Tsara raha jerena ny rakitra Altitude log-nao raha misy olana.",
-            "CLIENTUNKNOWNERRORTITLE": "Hadisoana amin'ny fifandraisana Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Nisy olana tamin'ny fifandraisana tamin'ny Metrix Core. Tsara raha jerenao ny rakitra debug.log-nao raha misy olana.",
             "UNENROLLGOVERNORTITLE": "Hamafiso ny fanafoanana ny fisoratana anarana ho Governora",
             "UNENROLLGOVERNORCONTENT": "Azonao antoka ve fa te-hanafoana ny fisoratana anarana ho Governoranao ianao? Tsy ho afaka hifidy amin'ny fitantanana rojo intsony ianao.",
-            "WALLETUPDATEREADYTITLE": "Vonona ny Fanavaozana ny Haavo",
-            "WALLETUPDATEREADYINFO": "Voasintona ny fanavaozana. Avereno atomboka indray ny Altitude izao mba hametrahana azy?",
-            "WALLETUPDATERESTARTBUTTON": "Atombohy indray ary apetraho",
-            "WALLETUPDATELATERBUTTON": "TATỲ AORIANA",
             "DAPPCONNECTTITLE": "Mifandraisa amin'ny tranonkala",
             "DAPPCONNECTINFO": "Te hifandray amin'ny poketranao ity tranonkala ity ary hijery ny adiresinao sy ny ambim-bolanao.",
             "DAPPCONNECTBUTTON": "Mifandraisa",
+            "DAPPCONNECTADDRESSLABEL": "Adiresy",
+            "DAPPAPPROVEBUTTON": "hanaiky",
             "DAPPREJECTBUTTON": "mandà",
             "DAPPSENDTITLE": "Fangatahana fifanakalozana fifanarahana",
             "DAPPSENDINFO": "Mangataka ny handefasana fifanakalozana fifanarahana avy amin'ny poketranao ity tranonkala ity.",
-            "DAPPSIGNTITLE": "Fangatahana Hafatra Soniavina",
-            "DAPPSIGNINFO": "Mangataka ny hanasoniavana hafatra misy ny adiresin'ny poketranao ity tranonkala ity.",
-            "DAPPNOTREADY": "Mbola tsy afaka mifandray amin'ny tranonkala - mbola mandeha ny Metrix Core.",
-            "DAPPNOWALLET": "Tsy afaka mifandray amin'ny tranonkala - tsy misy adiresin'ny poketra azo ampiasaina.",
-            "DAPPAPPROVEBUTTON": "hanaiky",
-            "DAPPCONNECTADDRESSLABEL": "Adiresy",
             "DAPPSENDSITELABEL": "toerana",
             "DAPPSENDCONTRACTLABEL": "Adiresin'ny fifanarahana",
             "DAPPSENDAMOUNTLABEL": "vola",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Saram-pifandraisana ambony indrindra",
             "DAPPSENDMAXTOTALLABEL": "Totaly ambony indrindra",
             "DAPPSENDDATALABEL": "Angon-drakitra momba ny fifanarahana",
+            "DAPPSIGNTITLE": "Fangatahana Hafatra Soniavina",
+            "DAPPSIGNINFO": "Mangataka ny hanasoniavana hafatra misy ny adiresin'ny poketranao ity tranonkala ity.",
             "DAPPSIGNMESSAGELABEL": "hAFATRA",
-            "BOOTSTRAPOFFERTITLE": "Lany andro be ny poketra",
-            "BOOTSTRAPOFFERINFO": "Misy \"bootstrap\" vao haingana izay afaka manavao haingana ny Metrix Core. Mety haharitra andro maromaro vao ho vita ny fanohizana ny \"sync\" mahazatra, satria mila misintona sy manamarina ny sakana rehetra tsy voavaha ny \"wallet\"-nao.",
-            "BOOTSTRAPOFFERBUTTON": "Sintomy ny Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Tohizo ny fampifanarahana mahazatra",
-            "BOOTSTRAPSPACEINFO": "Tsy ampy ny toerana malalaka ao amin'ny kapila mafy hisintonana sy hanesorana ny bootstrap. Ilaina: {takiana}, Azo alaina: {free}. Omeo toerana malalaka ary andramo indray."
+            "DAPPNOTREADY": "Mbola tsy afaka mifandray amin'ny tranonkala - mbola mandeha ny Metrix Core.",
+            "DAPPNOWALLET": "Tsy afaka mifandray amin'ny tranonkala - tsy misy adiresin'ny poketra azo ampiasaina."
         },
         "ADDRESSBOOK": {
             "TITLE": "Boky Adiresy",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Tambajotra ankehitriny"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Ampidiro ny adiresin'ny tranonkala",
-            "GOBUTTON": "Mandehana",
-            "QUICKLAUNCH": "Fanombohana haingana",
-            "DEVTOOLS": "Sokafy ny Fitaovana ho an'ny Mpamorona",
-            "ADDLINK": "Ampio rohy",
-            "LINKNAMEPLACEHOLDER": "Anarana",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "afa-tsy",
-            "CANCEL": "hanafoana",
-            "REMOVE": "esory",
-            "REMOVECONFIRM": "Esory ity rohy haingana ity?",
-            "LINKEXISTS": "Efa ao amin'ny lisitry ny fandefasana haingana anao io rohy io",
-            "LINKINVALID": "Ampidiro adiresy tranonkala manan-kery",
-            "LINKNETWORKLABEL": "Tambajotra",
-            "LOADFAILED": "Tsy nahomby ny famoahana ny tranonkala",
-            "SECURESITE": "Azo antoka ny fifandraisana - mari-pankasitrahana SSL manankery",
-            "INSECURESITE": "Tsy azo antoka ny fifandraisana",
-            "INVALIDCERTSITE": "Tsy manokana ny fifandraisana - tsy manan-kery na tsy azo itokisana ny mari-pankasitrahana SSL"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Kitapom-bola backup...",
             "SIGNMESSAGE": "Hafatra sonia...",
             "VERIFYMESSAGE": "Hamarino ny Hafatra...",
-            "LOCALE": "Fiteny...",
-            "RESTARTCORE": "Atombohy indray ny Metrix Core",
-            "EXIT": "Fivoahana",
             "OPTIONS": "Safidy...",
+            "LOCALE": "Fiteny...",
             "CURRENCIES": "Asehoy ny vola...",
-            "ALTITUDEREFRESH": "Havaozy ny angon-drakitra momba ny haavo"
+            "RESTARTCORE": "Atombohy indray ny Metrix Core",
+            "ALTITUDEREFRESH": "Havaozy ny angon-drakitra momba ny haavo",
+            "EXIT": "Fivoahana"
         },
         "ENCRYPT": {
             "TITLE": "Hanafina",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Totalin'ny ambim-bola",
+        "SPENDABLEBALANCE": "Ambiny azo laniana",
+        "PENDINGBALANCE": "Ambiny miandry",
         "CANCELBUTTON": "hanafoana",
         "DONEBUTTON": "hatao",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "MANAIKY",
         "CLEARALLBUTTON": "Fafao daholo",
         "ENTERACCOUNTLABEL": "Ampidiro marika ho an'ity adiresy ity",
         "ENTERADDRESSLABEL": "Ampidiro ny adiresy Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Sivanina araka",
         "SEARCH": "karohy",
         "FEE": "saram-",
-        "ACCEPTBUTTON": "MANAIKY",
         "CONFIRMED": "noraisina ho mpikambana",
         "UNCONFIRMED": "tsy voamarina",
-        "PENDINGBALANCE": "Ambiny miandry",
-        "SPENDABLEBALANCE": "Ambiny azo laniana",
         "SAVEBUTTON": "afa-tsy"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Manomboka indray ny Metrix Core...",
         "BOOTSTRAPPING": "Mampidina ny bootstrap...",
         "BOOTSTRAPEXTRACTING": "Manala ny bootstrap...",
-        "TIMEREMAINING": "sisa tavela:"
+        "TIMEREMAINING": "sisa tavela:",
+        "DEVRPCOVERRIDEACTIVE": "Napetraka ny fanovana ny fifandraisana RPC an'ny mpamorona (Options > Developer) ary tsy mamaly izany. Fafao izany mba hifandraisana indray amin'ny daemon eo an-toerana amin'ny fomba mahazatra.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Fafao ny RPC Override & Avereno Ampifandraiso"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Kaonty vaovao noforonina soa aman-tsara",
         "ADDRESSCOPIEDCLIPBOARD": "Adiresy voadika ao amin'ny takelaka famintinana",
+        "COPIEDCLIPBOARD": "Nadika tao amin'ny takelaka famintinana",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Nadika tao amin'ny takelaka famintinana ny fifanakalozana",
         "EMPTYFIELDS": "Fenoy azafady ny saha rehetra",
         "NOUPDATE": "Tsy misy fanavaozana azo ampiasaina",
         "WALLETBACKEDUP": "Nahomby ny backup-n'ny Wallet",
+        "WALLETBACKUPFAILED": "Tsy nahomby ny backup-nao ho azy - jereo ny toerana backup-nao sy ny toerana misy ny kapila mafy",
         "PASSPHRASEMISMATCH": "Tsy mifanaraka ireo tenimiafina nampidirinao",
         "CHECKINGUPDATE": "Manamarina raha misy fanavaozana...",
         "CHECKINGUPDATEFAILED": "Tsy afaka nanamarina raha misy fanavaozana. Jereo ny tambajotrao.",
+        "WALLETUPDATEDOWNLOADING": "Misintona ny fanavaozana...",
         "SENDINGEXCEEDSBALANCE": "Mihoatra ny vola nofidinao ny vola alefanao",
         "MISSINGCHANGEADDRESS": "Tsy maintsy mamaritra adiresy fanovana ianao",
         "MISSINGDESTINATIONADDRESS": "Tsy maintsy mamaritra adiresy haleha ianao",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Fametrahana kaody miafina amin'ny poketra...",
         "CHANGINGPASSPHARASE": "Fanovana tenimiafina...",
         "STARTINGMASTERNODE": "Manomboka ny masternode...",
+        "STOPPINGMASTERNODE": "Manajanona ny masternode...",
         "SENDINGTRANSACTION": "Mandefa ny fifanakalozana...",
         "SIGNINGMESSAGE": "Hafatra fanasoniavana...",
         "SIGNEDMESSAGE": "Hafatra nosoniavina",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Mamoha ny poketra...",
         "TRANSACTIONMISMATCH": "Hadisoana tamin'ny fifanakalozana. Andramo indray azafady.",
         "MINIMUMCONFIRMATIONS": "Mila fanamafisana 1 farafahakeliny ny fidirana rehetra alohan'ny handaniana vola.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Nadika tao amin'ny takelaka famintinana ny fifanakalozana",
-        "STOPPINGMASTERNODE": "Manajanona ny masternode...",
         "FAILEDTOWRITECONFIG": "Nisy olana tamin'ny fanoratana tao amin'ny rakitra metrix.conf-nao. Hamarino tsara fa misy ilay rakitra ary manana alalana hanoratra ny Altitude.",
         "NOPUBLICUP": "Tsy misy adiresy IP ho an'ny daholobe hita. Jereo ny fifandraisanao amin'ny Internet ary avereno indray ny Altitude.",
         "CONFIGURINGLOCALMN": "Fametrahana ny Masternode eo an-toerana...",
         "REPORTINGISSUE": "Mahazo fampahalalana momba ny diagnostika... Hadika ao amin'ny takelakao ity fampahalalana ity.",
-        "WALLETUPDATEDOWNLOADING": "Misintona ny fanavaozana...",
-        "WALLETBACKUPFAILED": "Tsy nahomby ny backup-nao ho azy - jereo ny toerana backup-nao sy ny toerana misy ny kapila mafy",
         "EXPLORERURLSAVED": "Voatahiry ny URL-n'ny Explorer",
         "EXPLORERURLRESET": "Naverina amin'ny laoniny ny URL-n'ny Explorer",
         "EXPLORERURLINVALID": "Tsy URL http(s) manan-kery izany",
-        "EXPLORERURLUNREACHABLE": "Tsy tratra io URL io - jereo ary andramo indray"
+        "EXPLORERURLUNREACHABLE": "Tsy tratra io URL io - jereo ary andramo indray",
+        "DEVRPCHOSTSAVED": "Voatahiry ny mpampiantrano RPC",
+        "DEVRPCHOSTRESET": "Naverina tamin'ny laoniny ny mpampiantrano RPC (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Vola madinika voaray",
+        "NEWTRANSACTION_TITLE_STAKE": "Tsatoka voaray",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Nahazo ny valisoa Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Segondra vitsy",
@@ -533,11 +587,6 @@
         "MONTHS": "VOLANA",
         "AYEAR": "Herintaona",
         "YEARS": "taona"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Vola madinika voaray",
-        "NEWTRANSACTION_TITLE_STAKE": "Tsatoka voaray",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Nahazo ny valisoa Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Andraikitry ny Governora ny mifidy ny teti-bola isam-bolana sy ny fanovana ny blockchain. Afaka ny ho Governora ianao amin'ny alàlan'ny fanidiana ny antoka marina ao amin'ny fifanarahana momba ny fitantanana.",
                 "COLLATERAL": "Antoka takiana",
                 "ENROLL": "hosoratana",
+                "SELECTAGOVERNOR": "Mifidiana adiresin'ny governora mahafeno fepetra",
+                "GOVERNORNOTSELECTED": "Tsy nisy adiresy mendrika nofantenana",
                 "CONFIRMENROLL": "Hisoratra anarana ho Governora ianao. Izany dia handefa fifanakalozana misy ny antoka ilaina amin'ny fifanarahana fitantanana. Azonao atao ny manafoana ny fisoratana anarana amin'ny fotoana rehetra.",
                 "ISGOVERNORTITLE": "Governora mavitrika ianao!",
                 "ISGOVERNORDETAIL1": "Andraikitry ny governora ny mifidy ny teti-bola isam-bolana sy ny fanovana ny blockchain.",
                 "ISGOVERNORDETAIL2": "Mba hijanonana ho Governora dia mila mandray anjara amin'ny fifidianana 1 farafahakeliny isaky ny 30 andro ianao.",
                 "ISGOVERNORDETAIL3": "Raha tsy misy zavatra hofidiana dia azonao atao ny manohy ny fisoratana anarana amin'ny tanana amin'ny fandefasana ping mavitrika.",
+                "MYGOVERNORADDRESS": "Ny lahatenin'ny Governorako",
                 "UNENROLL": "Manafoana ny fisoratana anarana",
                 "PING": "Alefaso ny Ping mavitrika",
                 "LASTPINGTITLE": "Ping farany",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "andro",
                 "GOVERNORVOTEMATURITYHOURS": "ORA",
                 "GOVERNORVOTEMATURITYSUFFIX": "mandra-pahamatotra",
-                "MYGOVERNORADDRESS": "Ny lahatenin'ny Governorako",
-                "SELECTAGOVERNOR": "Mifidiana adiresin'ny governora mahafeno fepetra",
-                "GOVERNORNOTSELECTED": "Tsy nisy adiresy mendrika nofantenana",
                 "NOTFULLYSYNCEDTITLE": "Tsy misy ny sata ho governora",
                 "NOTFULLYSYNCEDDETAIL": "Ho hita eo ny sata fisoratana anarana ho Governor rehefa mifanaraka tanteraka ny blockchain-nao.",
                 "DGPMIGRATIONTITLE": "Fifindran'ny DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Voaforona soa aman-tsara ny tolo-kevitrao",
             "ENROLLINGGOVERNOR": "Misoratra anarana ho Governora...",
             "ENROLLEDGOVERNOR": "Ho vita ny fisoratana anaranao rehefa voamarina ny fifanakalozana nataonao.",
-            "VOTINGONPROPOSAL": "Mandefa vatom-pifidianana",
-            "VOTEDONPROPOSAL": "Ho isaina ny vatonao rehefa voamarina ny fifanakalozana.",
             "PINGINGGOVERNOR": "Mandefa ping...",
             "PINGEDGOVERNOR": "Nalefa soa aman-tsara ny Ping. Havaozina ny Governora rehefa voamarina ny fifanakalozana.",
+            "VOTINGONPROPOSAL": "Mandefa vatom-pifidianana",
+            "VOTEDONPROPOSAL": "Ho isaina ny vatonao rehefa voamarina ny fifanakalozana.",
             "UNENROLLINGGOVERNOR": "Manafoana ny fisoratana anarana ho Governora...",
             "UNENROLLEDGOVERNOR": "Lasa ny fifanakalozana. Hoesorina amin'ny fisoratana anarana ny Governoranao rehefa voamarina ny fifanakalozana.",
             "GOVERNORNOTMATURE": "Mbola tsy matotra tsara ny Governoranareo hanao ity hetsika ity"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Mividiana Metrix",
+                "SEARCH": "FIAINANY TALOHA"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Mandefa ianao",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tantaran'ny fifanakalozana",
                 "SEARCHBUTTON": "karohy",
+                "SEARCHPLACEHOLDER": "Ampidiro ny adiresy MRX na BTC",
                 "TRANSACTIONDATE": "Daty",
                 "TRANSACTIONTYPE": "Karazana TX",
                 "TRANSACTIONAMOUNT": "vola",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "noraisina ho mpikambana",
                 "TRANSACTIONNOTCONFIRMED": "Tsy voamarina",
                 "TRANSACTIONREFUNDED": "Naverina - Ambanin'ny farafahakeliny",
-                "AVGSWAPPRICE": "Vidiny fifanakalozana antonony",
-                "SEARCHPLACEHOLDER": "Ampidiro ny adiresy MRX na BTC"
+                "AVGSWAPPRICE": "Vidiny fifanakalozana antonony"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Mamorona Adiresy Fifandimbiasan-toerana...",
             "ALREADYHAVEADDRESS": "Efa manana adiresy BTC mifandray amin'ity adiresy Metrix ity ianao",
             "NOADDRESS": "Tsy nampiditra adiresy Metrix ianao"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Mividiana Metrix",
-                "SEARCH": "FIAINANY TALOHA"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Asehoy",
                 "EMPTYTITLE": "Mbola tsy misy Token hita",
                 "EMPTYDETAIL": "Manamarina ho azy ny \"block explorer\" ny \"tokens\" MRC20 sy MRC721 nalefa tany amin'ny adiresinao ny Altitude, avy eo manamarina mivantana ny zava-drehetra amin'ny \"node\"-nao. Azonao atao ihany koa ny manampy \"token\" amin'ny tanana raha fantatrao ny adiresin'ny fifanarahana.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tsy mandeha ny fanamarinana token mandeha ho azy, ka tsy misy token hojerena ny adiresinao. Avereno ampiasaina indray etsy ambony, na ampio token amin'ny tanana raha fantatrao ny adiresin'ny fifanarahana.",
                 "HIDDENTITLE": "Tokens miafina",
                 "CONTEXTMENUHIDE": "Afeno ny Token",
                 "ITEMSSUFFIX": "entana",
-                "NONENUMERABLETOOLTIP": "Tsy mahazaka ny fitanisana entana tsirairay ity fanangonana ity - fa mampiseho kosa ny isan'ny entana tazoninao."
+                "NONENUMERABLETOOLTIP": "Tsy mahazaka ny fitanisana entana tsirairay ity fanangonana ity - fa mampiseho kosa ny isan'ny entana tazoninao.",
+                "CHECKINGENABLED": "Fanamarinana",
+                "CHECKINGDISABLED": "Manamarina",
+                "CHECKINGENABLEDTOOLTIP": "Mandeha ny fanamarinana ny \"Token\" - Manamarina tsy tapaka ny adiresinao ny Altitude raha misy \"Token\" ary manavao ny fifandanjana. Tsindrio raha hamono.",
+                "CHECKINGDISABLEDTOOLTIP": "Tsy mandeha ny fanamarinana ny mari-pamantarana - tsindrio raha hamerina hampiasa azy indray.",
+                "CHECKINGDISABLEDNOTICE": "Tsy mandeha ny fanamarinana token mandeha ho azy. Tsy misy token voasivana ny adiresinao ary tsy havaozina ny ambiny. Mbola afaka manampy token amin'ny tanana ianao."
             },
             "ADDTOKEN": {
                 "TITLE": "Ampio Token",

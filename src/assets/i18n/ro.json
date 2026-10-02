@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Creează cont",
             "HIDEEMPTYACCOUNTS": "Ascundeți conturile goale fără nume"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Prezentare generală",
+            "TRANSACTIONSTAB": "Tranzacții",
+            "ADDRESSTABS": "Adrese"
+        },
         "SEND": {
             "ADDRECIPIENT": "Adăugați destinatar",
             "SEND": "Trimite",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Data",
             "TABLECOLUMNS_CONFIRMS": "Confirmări",
             "ALL_SELECTUNSELECT": "Comutare toate",
+            "TREEMODE": "Modul arbore",
+            "LISTMODE": "Mod listă",
             "SENDAVAILABLE": "Folosește soldul disponibil",
             "INPUTLOCKED": "Intrarea este blocată. Va trebui să deblochezi această intrare pentru a o cheltui.",
             "CONTEXTMENULOCKINPUT": "Intrare blocare",
@@ -38,10 +45,48 @@
             "AFTERFEE": "După taxă",
             "QUANTITY": "Cantitate",
             "BYTES": "octeți",
-            "TREEMODE": "Modul arbore",
-            "LISTMODE": "Mod listă",
             "ALERTFEECHANGETITLE": "Modificare taxă",
             "ALERTFEECHANGECONTENT": "Taxa reală a tranzacției este mai mare decât cea așteptată. Vă rugăm să confirmați noua taxă:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Creați contract",
+            "INFO": "Implementează un contract inteligent în rețea prin trimiterea bytecode-ului său compilat. Aceasta este o funcție de bază a lanțului - verifică de două ori setările bytecode-ului și ale gazului înainte de implementare, implementarea nu poate fi anulată.",
+            "FROM": "Din",
+            "BYTECODE": "Cod de byte",
+            "BYTECODEPLACEHOLDER": "Lipiți bytecode-ul contractului compilat (hex)",
+            "INVALIDBYTECODE": "Codul de byte trebuie să fie un șir hexadecimal valid (0-9, a-f) cu un număr par de caractere.",
+            "GASLIMIT": "Limită de gaz",
+            "GASLIMITRANGE": "Gamă",
+            "GASPRICE": "Prețul gazului (MRX per unitate de gaz)",
+            "GASPRICEMIN": "Minim",
+            "ESTIMATEDMAXCOST": "Cost maxim estimat",
+            "DEPLOYBUTTON": "Implementează contractul",
+            "INCOMPLETEFORM": "Selectați o adresă de expeditor, introduceți un bytecode valid și setați o limită/un preț valid pentru benzină.",
+            "HIGHGASPRICETITLE": "Preț ridicat la benzină",
+            "HIGHGASPRICEINFO": "Prețul la benzină pe care l-ați setat este neobișnuit de mare. Această implementare ar putea costa până la:",
+            "DEPLOYING": "Se implementează contractul...",
+            "DEPLOYED": "Implementarea contractului a fost trimisă",
+            "RESULTTITLE": "Rezultatul implementării",
+            "STATUS": "Stare",
+            "STATUSPENDING": "În așteptarea confirmării...",
+            "STATUSCONFIRMED": "Implementat cu succes",
+            "STATUSFAILED": "Implementarea a eșuat",
+            "TXID": "ID-ul tranzacției",
+            "SENDER": "Expeditor",
+            "CONTRACTADDRESS": "Adresa contractului",
+            "GASUSED": "Gaz utilizat",
+            "DONEBUTTON": "Făcut",
+            "DEPLOYANOTHERBUTTON": "Implementează un alt"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tranzacții",
+            "COPYBLOCKHASH": "Copiere bloc hash",
+            "COPYTXID": "Copiați ID-ul tranzacției",
+            "COPYACCOUNT": "Copiați numele contului",
+            "COPYADDRESS": "Copiați adresa",
+            "COPYAMOUNT": "Cantitate copie",
+            "COPTBLOCKINDEX": "Copiere index bloc",
+            "EXPLORER": "Deschideți în Exploratorul de blocuri"
         },
         "STAKING": {
             "UNLOCK": "Deblocare pentru mizare",
@@ -68,13 +113,13 @@
             "IP": "IP-ul",
             "ADDRESS": "Adresa",
             "ENABLED": "Activat",
-            "STARTBUTTON": "Pornire locală",
-            "STARTALIASBUTTON": "Alias de început",
-            "STARTALLBUTTON": "Începeți toate",
             "NOMASTERNODES": "Nu aveți niciun masternode",
             "NOMNOUTPUTS": "Nu s-au găsit ieșiri de la Masternode. Pentru a rula un Masternode local, trimiteți exact 2, 5, 25, 50 sau 100 de milioane de monede la adresa Masternode-ului dvs. și așteptați 15 confirmări.",
+            "STARTBUTTON": "Pornire locală",
             "STOPBUTTON": "Opriți local",
+            "STARTALIASBUTTON": "Alias de început",
             "STOPALIASBUTTON": "Opriți Aliasul",
+            "STARTALLBUTTON": "Începeți toate",
             "ADDREMOTE": "Adăugați Masternode la distanță",
             "REMOVEMN": "Eliminați Masternode-ul",
             "ADDLOCAL": "Configurați Masternode-ul Local",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "General",
                 "COREVERSION": "Versiunea de bază",
+                "ALTITUDEVERSION": "Versiunea Altitude",
                 "PROTOCOLVERSION": "Versiunea protocolului",
                 "WALLETVERSION": "Versiunea Wallet.dat",
                 "NETWORKTITLE": "Reţea",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Numărul de Masternoduri",
                 "BLOCKCHAINTITLE": "Lanț de blocuri",
                 "NUMBERBLOCKS": "Numărul actual de blocuri",
-                "BESTBLOCKTTIME": "Ora ultimului bloc",
-                "ALTITUDEVERSION": "Versiunea Altitude"
+                "BESTBLOCKTTIME": "Ora ultimului bloc"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Bun venit la consola RPC Metrix Core. Tastați ajutor pentru o prezentare generală a comenzilor disponibile.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Selectați limba"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tranzacții",
-            "COPYBLOCKHASH": "Copiere bloc hash",
-            "COPYTXID": "Copiați ID-ul tranzacției",
-            "COPYACCOUNT": "Copiați numele contului",
-            "COPYADDRESS": "Copiați adresa",
-            "COPYAMOUNT": "Cantitate copie",
-            "COPTBLOCKINDEX": "Copiere index bloc",
-            "EXPLORER": "Deschideți în Exploratorul de blocuri"
+        "CURRENCY": {
+            "TITLE": "Selectați moneda de afișare"
         },
         "EXPLORER": {
             "TITLE": "Explorator de blocuri",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Reţea",
             "WINDOTAB": "Fereastră",
+            "BACKUPTAB": "Copie de rezervă",
+            "EXPLORERTAB": "Explorator",
+            "DEVELOPERTAB": "Dezvoltator",
             "NETWORK": {
                 "PROXY": "Conectare prin proxy-ul SOCKS5",
                 "PROXYIP": "IP-ul proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimizează la închidere",
                 "BEHAVIOURTITLE": "Comportamentul barei de sistem și al ferestrei"
             },
-            "BACKUPTAB": "Copie de rezervă",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Copiere de rezervă automată",
                 "ENABLED": "Copiere automată de rezervă a fișierului wallet.dat conform unui program",
                 "ENABLEDINFO": "Creează o copie de rezervă nouă a fișierului portofelului tău conform unui program, astfel încât o copie recentă să fie întotdeauna disponibilă în cazul în care ceva nu merge bine.",
+                "INTERVALLABEL": "Copiere de rezervă la fiecare (zile)",
                 "LASTBACKUP": "Ultima copie de rezervă:",
                 "NEVERBACKEDUP": "Încă nu s-a făcut nicio copie de rezervă automată.",
                 "BACKUPNOWBUTTON": "Copiere de rezervă acum",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Resetare la valorile implicite",
                 "PRUNETITLE": "Istoric copii de rezervă",
                 "PRUNEINFO": "Copiile de rezervă automate mai vechi sunt șterse, astfel încât acest folder să nu crească la nesfârșit - se păstrează doar cele mai recente de mai jos.",
-                "KEEPCOUNTLABEL": "Păstrează ultimul",
-                "INTERVALLABEL": "Copiere de rezervă la fiecare (zile)"
+                "KEEPCOUNTLABEL": "Păstrează ultimul"
             },
-            "EXPLORERTAB": "Explorator",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Explorator de blocuri",
                 "BLOCKEXPLORERINFO": "Site-ul s-a deschis la vizualizarea unei tranzacții în exploratorul de blocuri (de exemplu, faceți clic dreapta pe o tranzacție > Vizualizare în Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Rețea principală",
                 "TESTNET": "Rețea de testare",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mod Dezvoltator",
+                "DEVMODEINFO": "Dezactivat în mod implicit și destinat exclusiv dezvoltatorilor. Activarea acestei opțiuni dezvăluie opțiuni pentru suprascrierea conexiunii RPC - utilizatorii standard ar trebui să lase această opțiune dezactivată.",
+                "DEVMODELABEL": "Activează modul dezvoltator",
+                "WARNING": "Aceste setări sunt doar pentru dezvoltare. Modificarea lor poate împiedica portofelul să se conecteze la un daemon - folosiți-le doar dacă știți ce faceți.",
+                "RPCHOSTTITLE": "Conexiune RPC",
+                "RPCHOSTINFO": "În mod implicit, Altitude se conectează la daemonul pe care îl gestionează singur, pe această mașină (127.0.0.1). Suprascrierea acestora îi permite să se conecteze la un alt daemon - de exemplu, o instanță regtest la distanță, fără a fi nevoie să ruleze una local. Dacă conexiunea reușește, Altitude nu va descărca sau porni propriul daemon local. Parametrul rpcallowip al daemonului țintă trebuie să permită această conexiune, iar parola rpcuser/rpcpassword de mai jos trebuie să corespundă configurației sale. Are efect imediat, nu este necesară repornirea.",
+                "RPCHOSTLABEL": "Gazdă RPC",
+                "RPCPORTLABEL": "Port RPC",
+                "RPCUSERLABEL": "Nume de utilizator RPC",
+                "RPCPASSWORDLABEL": "Parolă RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Prezentare generală",
-            "TRANSACTIONSTAB": "Tranzacții",
-            "ADDRESSTABS": "Adrese"
-        },
-        "CURRENCY": {
-            "TITLE": "Selectați moneda de afișare"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Bord",
             "SEND": "Trimite",
+            "CREATECONTRACT": "Creați contract",
             "RECEIVE": "Primi",
             "TRANSACTIONS": "Tranzacții",
             "STAKING": "Mizare",
             "MASTERNODES": "Masternode-uri",
+            "EXPLORER": "Explorator de blocuri",
             "SYNC": {
                 "CONNECTING": "Conectare",
                 "NOBLOCKS": "Așteptând blocuri",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Portofelul nu este în prezent mizător",
                 "MASTERNODEON": "Masternode-ul rulează în prezent",
                 "MASTERNODEOFF": "Masternode-ul nu rulează în prezent"
-            },
-            "EXPLORER": "Explorator de blocuri"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Introduceți adresa unui site web3",
+            "GOBUTTON": "Merge",
+            "QUICKLAUNCH": "Lansare rapidă",
+            "DEVTOOLS": "Deschideți instrumentele pentru dezvoltatori",
+            "ADDLINK": "Adăugați link",
+            "LINKNAMEPLACEHOLDER": "Nume",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Salva",
+            "CANCEL": "Anula",
+            "REMOVE": "Elimina",
+            "REMOVECONFIRM": "Eliminați acest link rapid?",
+            "LINKEXISTS": "Linkul respectiv se află deja în lista ta de lansare rapidă",
+            "LINKINVALID": "Introduceți o adresă validă a site-ului",
+            "LINKNETWORKLABEL": "Reţea",
+            "LOADFAILED": "Nu s-a putut încărca site-ul",
+            "SECURESITE": "Conexiunea este securizată - certificat SSL valid",
+            "INSECURESITE": "Conexiunea nu este sigură",
+            "INVALIDCERTSITE": "Conexiunea nu este privată - certificat SSL nevalid sau nesigur"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Introduceți parola portofelului dvs.",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Este disponibilă o actualizare pentru Metrix Core. Doriți să o instalați acum?",
             "WALLETUPDATETITLE": "Actualizare altitudine disponibilă",
             "WALLETUPDATEINFO": "Este disponibilă o actualizare pentru Altitude. Doriți să o descărcați acum?",
+            "WALLETUPDATEREADYTITLE": "Actualizare altitudine gata",
+            "WALLETUPDATEREADYINFO": "Actualizarea a fost descărcată. Reporniți Altitude acum pentru a o instala?",
+            "WALLETUPDATERESTARTBUTTON": "Reporniți și instalați",
+            "WALLETUPDATELATERBUTTON": "Mai târziu",
             "CLIENTUPDATEBUTTON": "Actualizare",
             "CLIENTUPDATECANCELBUTTON": "Nu actualizați",
             "CLIENTUPDATESKIPBUTTON": "Sari peste această actualizare",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Orice copii de rezervă anterioare ale fișierului portofelului dvs. ar trebui înlocuite cu fișierul portofel criptat nou generat. Din motive de securitate, copiile de rezervă anterioare ale fișierului portofel necriptat vor deveni inutile imediat ce începeți să utilizați noul portofel criptat.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core s-a oprit pe neașteptate",
             "CLIENTCLOSEDUNEXPECTEDINFO": "A apărut o problemă cu Metrix Core care a cauzat terminarea acestuia. Se recomandă verificarea fișierului debug.log pentru a identifica eventuale probleme.",
+            "CLIENTUNKNOWNERRORTITLE": "Eroare de comunicare Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "A apărut o problemă de comunicare cu Metrix Core. Se recomandă verificarea fișierului debug.log pentru a identifica eventualele probleme.",
+            "BOOTSTRAPFAILEDTITLE": "Bootstrap-ul Metrix Core a eșuat",
+            "BOOTSTRAPFAILEDINFO": "A apărut o problemă la pornirea Metrix Core. Se recomandă verificarea fișierului jurnal Altitude pentru a vedea dacă există probleme.",
+            "BOOTSTRAPOFFERTITLE": "Portofel semnificativ învechit",
+            "BOOTSTRAPOFFERINFO": "Este disponibilă o versiune recentă de bootstrap care poate actualiza rapid Metrix Core. Continuarea unei sincronizări normale poate dura câteva zile, deoarece portofelul dvs. trebuie să descarce și să verifice fiecare bloc pe care l-a ratat.",
+            "BOOTSTRAPOFFERBUTTON": "Descărcați Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Continuă sincronizarea normală",
+            "BOOTSTRAPSPACEINFO": "Nu este suficient spațiu liber pe disc pentru a descărca și extrage fișierul bootstrap. Necesar: {required}, Disponibil: {free}. Eliberați spațiu și încercați din nou.",
+            "STARTUPFAILEDTITLE": "Pornirea Metrix Core a eșuat",
+            "STARTUPFAILEDINFO": "A apărut o eroare la pornirea Metrix Core. Se recomandă verificarea fișierului jurnal Altitude pentru a depista probleme.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumente de recuperare",
             "CLIENTINVALIDCONFIGTITLE": "Configurație metrix.conf nevalidă",
             "CLIENTINVALIDCONFIGINFO": "Fișierul metrix.conf are o configurație masternode nevalidă, ceea ce va duce la închiderea imediată a Metrix Core. Verificați acest fișier.",
             "ADDREMOTEMNTITLE": "Adăugați Masternode la distanță",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Cheia privată a Masternode-ului",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Indexul tranzacțiilor Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Bootstrap-ul Metrix Core a eșuat",
-            "BOOTSTRAPFAILEDINFO": "A apărut o problemă la pornirea Metrix Core. Se recomandă verificarea fișierului jurnal Altitude pentru a vedea dacă există probleme.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Instrumente de recuperare",
-            "STARTUPFAILEDTITLE": "Pornirea Metrix Core a eșuat",
-            "STARTUPFAILEDINFO": "A apărut o eroare la pornirea Metrix Core. Se recomandă verificarea fișierului jurnal Altitude pentru a depista probleme.",
-            "CLIENTUNKNOWNERRORTITLE": "Eroare de comunicare Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "A apărut o problemă de comunicare cu Metrix Core. Se recomandă verificarea fișierului debug.log pentru a identifica eventualele probleme.",
             "UNENROLLGOVERNORTITLE": "Confirmați dezînscrierea guvernatorului",
             "UNENROLLGOVERNORCONTENT": "Sigur vrei să-ți anulezi înscrierea guvernatorului? Nu vei mai putea vota asupra guvernării în lanț.",
-            "WALLETUPDATEREADYTITLE": "Actualizare altitudine gata",
-            "WALLETUPDATEREADYINFO": "Actualizarea a fost descărcată. Reporniți Altitude acum pentru a o instala?",
-            "WALLETUPDATERESTARTBUTTON": "Reporniți și instalați",
-            "WALLETUPDATELATERBUTTON": "Mai târziu",
             "DAPPCONNECTTITLE": "Conectați-vă la site",
             "DAPPCONNECTINFO": "Acest site dorește să se conecteze la portofelul dvs. și să vă vizualizeze adresa și soldul.",
             "DAPPCONNECTBUTTON": "Conectează-te",
+            "DAPPCONNECTADDRESSLABEL": "Adresa",
+            "DAPPAPPROVEBUTTON": "Aproba",
             "DAPPREJECTBUTTON": "Respinge",
             "DAPPSENDTITLE": "Cerere de tranzacție contractuală",
             "DAPPSENDINFO": "Acest site solicită trimiterea unei tranzacții contractuale din portofelul tău.",
-            "DAPPSIGNTITLE": "Cerere de semnare a mesajului",
-            "DAPPSIGNINFO": "Acest site solicită semnarea unui mesaj cu adresa portofelului tău.",
-            "DAPPNOTREADY": "Nu mă pot conecta încă la site - Metrix Core încă pornește.",
-            "DAPPNOWALLET": "Nu se poate conecta la site - nu este disponibilă nicio adresă de portofel.",
-            "DAPPAPPROVEBUTTON": "Aproba",
-            "DAPPCONNECTADDRESSLABEL": "Adresa",
             "DAPPSENDSITELABEL": "Site",
             "DAPPSENDCONTRACTLABEL": "Adresa contractului",
             "DAPPSENDAMOUNTLABEL": "Cantitate",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Taxă maximă de rețea",
             "DAPPSENDMAXTOTALLABEL": "Total maxim",
             "DAPPSENDDATALABEL": "Date contractuale",
+            "DAPPSIGNTITLE": "Cerere de semnare a mesajului",
+            "DAPPSIGNINFO": "Acest site solicită semnarea unui mesaj cu adresa portofelului tău.",
             "DAPPSIGNMESSAGELABEL": "Mesaj",
-            "BOOTSTRAPOFFERTITLE": "Portofel semnificativ învechit",
-            "BOOTSTRAPOFFERINFO": "Este disponibilă o versiune recentă de bootstrap care poate actualiza rapid Metrix Core. Continuarea unei sincronizări normale poate dura câteva zile, deoarece portofelul dvs. trebuie să descarce și să verifice fiecare bloc pe care l-a ratat.",
-            "BOOTSTRAPOFFERBUTTON": "Descărcați Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Continuă sincronizarea normală",
-            "BOOTSTRAPSPACEINFO": "Nu este suficient spațiu liber pe disc pentru a descărca și extrage fișierul bootstrap. Necesar: {required}, Disponibil: {free}. Eliberați spațiu și încercați din nou."
+            "DAPPNOTREADY": "Nu mă pot conecta încă la site - Metrix Core încă pornește.",
+            "DAPPNOWALLET": "Nu se poate conecta la site - nu este disponibilă nicio adresă de portofel."
         },
         "ADDRESSBOOK": {
             "TITLE": "Agendă de adrese",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rețeaua actuală"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Introduceți adresa unui site web3",
-            "GOBUTTON": "Merge",
-            "QUICKLAUNCH": "Lansare rapidă",
-            "DEVTOOLS": "Deschideți instrumentele pentru dezvoltatori",
-            "ADDLINK": "Adăugați link",
-            "LINKNAMEPLACEHOLDER": "Nume",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Salva",
-            "CANCEL": "Anula",
-            "REMOVE": "Elimina",
-            "REMOVECONFIRM": "Eliminați acest link rapid?",
-            "LINKEXISTS": "Linkul respectiv se află deja în lista ta de lansare rapidă",
-            "LINKINVALID": "Introduceți o adresă validă a site-ului",
-            "LINKNETWORKLABEL": "Reţea",
-            "LOADFAILED": "Nu s-a putut încărca site-ul",
-            "SECURESITE": "Conexiunea este securizată - certificat SSL valid",
-            "INSECURESITE": "Conexiunea nu este sigură",
-            "INVALIDCERTSITE": "Conexiunea nu este privată - certificat SSL nevalid sau nesigur"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Portofel de rezervă...",
             "SIGNMESSAGE": "Semnează mesajul...",
             "VERIFYMESSAGE": "Verificați mesajul...",
-            "LOCALE": "Limbă...",
-            "RESTARTCORE": "Reporniți Metrix Core",
-            "EXIT": "Ieșire",
             "OPTIONS": "Opțiuni...",
+            "LOCALE": "Limbă...",
             "CURRENCIES": "Afișați moneda...",
-            "ALTITUDEREFRESH": "Actualizați datele de altitudine"
+            "RESTARTCORE": "Reporniți Metrix Core",
+            "ALTITUDEREFRESH": "Actualizați datele de altitudine",
+            "EXIT": "Ieșire"
         },
         "ENCRYPT": {
             "TITLE": "Criptare",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Sold total",
+        "SPENDABLEBALANCE": "Sold cheltuibil",
+        "PENDINGBALANCE": "Sold în așteptare",
         "CANCELBUTTON": "Anula",
         "DONEBUTTON": "Făcut",
         "OKBUTTON": "Bine",
+        "ACCEPTBUTTON": "Accepta",
         "CLEARALLBUTTON": "Ștergeți tot",
         "ENTERACCOUNTLABEL": "Introduceți o etichetă pentru această adresă",
         "ENTERADDRESSLABEL": "Introduceți o adresă Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Filtrează după",
         "SEARCH": "Căutare",
         "FEE": "Taxă",
-        "ACCEPTBUTTON": "Accepta",
         "CONFIRMED": "Confirmat",
         "UNCONFIRMED": "Neconfirmat",
-        "PENDINGBALANCE": "Sold în așteptare",
-        "SPENDABLEBALANCE": "Sold cheltuibil",
         "SAVEBUTTON": "Salva"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Se repornește Metrix Core...",
         "BOOTSTRAPPING": "Se descarcă bootstrapul...",
         "BOOTSTRAPEXTRACTING": "Extragerea bootstrap-ului...",
-        "TIMEREMAINING": "rămase:"
+        "TIMEREMAINING": "rămase:",
+        "DEVRPCOVERRIDEACTIVE": "O suprascriere a conexiunii RPC pentru dezvoltatori este setată (Opțiuni > Dezvoltator) și nu răspunde. Ștergeți-o pentru a vă reconecta normal la daemonul local.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Ștergeți suprascrierea RPC și reconectați"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Cont nou creat cu succes",
         "ADDRESSCOPIEDCLIPBOARD": "Adresa a fost copiată în clipboard",
+        "COPIEDCLIPBOARD": "Copiat în clipboard",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzacții copiate în clipboard",
         "EMPTYFIELDS": "Vă rugăm să completați toate câmpurile",
         "NOUPDATE": "Nicio actualizare disponibilă",
         "WALLETBACKEDUP": "Copie de rezervă a portofelului realizată cu succes",
+        "WALLETBACKUPFAILED": "Copia de rezervă automată a portofelului a eșuat - verificați locația copiei de rezervă și spațiul disponibil pe disc",
         "PASSPHRASEMISMATCH": "Parolele introduse nu se potrivesc",
         "CHECKINGUPDATE": "Se verifică dacă există actualizări...",
         "CHECKINGUPDATEFAILED": "Nu se poate verifica dacă există actualizări. Verificați rețeaua.",
+        "WALLETUPDATEDOWNLOADING": "Se descarcă actualizarea...",
         "SENDINGEXCEEDSBALANCE": "Suma pe care o trimiteți depășește soldul selectat",
         "MISSINGCHANGEADDRESS": "Trebuie să specificați o adresă de modificare",
         "MISSINGDESTINATIONADDRESS": "Trebuie să specificați o adresă de destinație",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Se criptează portofelul...",
         "CHANGINGPASSPHARASE": "Se schimbă parola...",
         "STARTINGMASTERNODE": "Se pornește masternode-ul...",
+        "STOPPINGMASTERNODE": "Se oprește masternodul...",
         "SENDINGTRANSACTION": "Se trimite tranzacția...",
         "SIGNINGMESSAGE": "Se semnează mesajul...",
         "SIGNEDMESSAGE": "Mesaj semnat",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Se deblochează portofelul...",
         "TRANSACTIONMISMATCH": "Eroare de tranzacție. Vă rugăm să încercați din nou.",
         "MINIMUMCONFIRMATIONS": "Toate intrările necesită cel puțin o confirmare înainte de cheltuire.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzacții copiate în clipboard",
-        "STOPPINGMASTERNODE": "Se oprește masternodul...",
         "FAILEDTOWRITECONFIG": "A apărut o problemă la scrierea în fișierul metrix.conf. Verificați dacă fișierul există și dacă Altitude are permisiuni de scriere.",
         "NOPUBLICUP": "Nu a fost găsită nicio adresă IP publică. Verificați conexiunea la internet și reporniți Altitude.",
         "CONFIGURINGLOCALMN": "Configurarea Masternode-ului local...",
         "REPORTINGISSUE": "Se obțin informații de diagnosticare... Aceste informații vor fi copiate în clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Se descarcă actualizarea...",
-        "WALLETBACKUPFAILED": "Copia de rezervă automată a portofelului a eșuat - verificați locația copiei de rezervă și spațiul disponibil pe disc",
         "EXPLORERURLSAVED": "Adresa URL a Explorerului a fost salvată",
         "EXPLORERURLRESET": "URL-ul Explorer a fost revenit la valoarea implicită",
         "EXPLORERURLINVALID": "Aceasta nu este o adresă URL http validă.",
-        "EXPLORERURLUNREACHABLE": "Nu s-a putut accesa adresa URL respectivă - verificați-o și încercați din nou"
+        "EXPLORERURLUNREACHABLE": "Nu s-a putut accesa adresa URL respectivă - verificați-o și încercați din nou",
+        "DEVRPCHOSTSAVED": "Gazdă RPC salvată",
+        "DEVRPCHOSTRESET": "Gazda RPC a revenit la valorile implicite (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Monede primite",
+        "NEWTRANSACTION_TITLE_STAKE": "Miză primită",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ai primit recompensă Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Câteva secunde",
@@ -533,11 +587,6 @@
         "MONTHS": "luni",
         "AYEAR": "Un an",
         "YEARS": "ani"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Monede primite",
-        "NEWTRANSACTION_TITLE_STAKE": "Miză primită",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ai primit recompensă Masternode"
     },
     "MONTH": {
         "JAN": "IANUARIE",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Guvernatorii sunt responsabili de votarea bugetelor lunare și a modificărilor blockchain. Poți deveni guvernator prin blocarea garanției corecte în contractul de guvernanță.",
                 "COLLATERAL": "Garanții necesare",
                 "ENROLL": "Înscrie-te",
+                "SELECTAGOVERNOR": "Alegeți o adresă eligibilă pentru guvernator",
+                "GOVERNORNOTSELECTED": "Nu a fost selectată nicio adresă eligibilă",
                 "CONFIRMENROLL": "Ești pe cale să te înscrii ca guvernator. Aceasta va trimite o tranzacție cu garanțiile necesare pentru contractul de guvernanță. Te poți dezabona oricând.",
                 "ISGOVERNORTITLE": "Ești un guvernator activ!",
                 "ISGOVERNORDETAIL1": "Guvernatorii sunt responsabili de votarea bugetelor lunare și a modificărilor blockchain.",
                 "ISGOVERNORDETAIL2": "Pentru a rămâne guvernator, va trebui să participați la cel puțin un vot la fiecare 30 de zile.",
                 "ISGOVERNORDETAIL3": "Dacă nu există nimic pentru care să votați, puteți continua manual înscrierea trimițând un ping activ.",
+                "MYGOVERNORADDRESS": "Discursul meu de guvernator",
                 "UNENROLL": "Anulare înregistrare",
                 "PING": "Trimite Ping Activ",
                 "LASTPINGTITLE": "Ultimul ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "zile",
                 "GOVERNORVOTEMATURITYHOURS": "ore",
                 "GOVERNORVOTEMATURITYSUFFIX": "până la maturitate",
-                "MYGOVERNORADDRESS": "Discursul meu de guvernator",
-                "SELECTAGOVERNOR": "Alegeți o adresă eligibilă pentru guvernator",
-                "GOVERNORNOTSELECTED": "Nu a fost selectată nicio adresă eligibilă",
                 "NOTFULLYSYNCEDTITLE": "Statutul de guvernator nu este disponibil",
                 "NOTFULLYSYNCEDDETAIL": "Statutul înregistrării tale ca Governor va deveni vizibil atunci când blockchain-ul tău va fi complet sincronizat.",
                 "DGPMIGRATIONTITLE": "Migrare DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Propunerea dumneavoastră a fost creată cu succes",
             "ENROLLINGGOVERNOR": "Înscrierea ca guvernator...",
             "ENROLLEDGOVERNOR": "Înscrierea ta va fi finalizată odată ce tranzacția este confirmată.",
-            "VOTINGONPROPOSAL": "Se trimite votul pentru propunere",
-            "VOTEDONPROPOSAL": "Votul dumneavoastră va fi luat în considerare după confirmarea tranzacției.",
             "PINGINGGOVERNOR": "Se trimite ping-ul...",
             "PINGEDGOVERNOR": "Ping trimis cu succes. Guvernatorul dvs. va fi actualizat după confirmarea tranzacției.",
+            "VOTINGONPROPOSAL": "Se trimite votul pentru propunere",
+            "VOTEDONPROPOSAL": "Votul dumneavoastră va fi luat în considerare după confirmarea tranzacției.",
             "UNENROLLINGGOVERNOR": "Se anulează înscrierea guvernatorului...",
             "UNENROLLEDGOVERNOR": "Tranzacție trimisă. Înregistrarea guvernatorului dvs. va fi anulată după confirmarea tranzacției.",
             "GOVERNORNOTMATURE": "Guvernatorul vostru nu este încă suficient de matur pentru a îndeplini această acțiune."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Cumpără Metrix",
+                "SEARCH": "Istorie"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Tu trimiți",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Istoricul tranzacțiilor",
                 "SEARCHBUTTON": "CĂUTARE",
+                "SEARCHPLACEHOLDER": "Introduceți adresa MRX sau BTC",
                 "TRANSACTIONDATE": "Data",
                 "TRANSACTIONTYPE": "Tipul transmisiei",
                 "TRANSACTIONAMOUNT": "Cantitate",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Confirmat",
                 "TRANSACTIONNOTCONFIRMED": "Neconfirmat",
                 "TRANSACTIONREFUNDED": "Rambursat - Sub minim",
-                "AVGSWAPPRICE": "Preț mediu de swap",
-                "SEARCHPLACEHOLDER": "Introduceți adresa MRX sau BTC"
+                "AVGSWAPPRICE": "Preț mediu de swap"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Se generează adresa de schimb...",
             "ALREADYHAVEADDRESS": "Aveți deja o adresă BTC asociată cu această adresă Metrix.",
             "NOADDRESS": "Nu ați introdus o adresă Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Cumpără Metrix",
-                "SEARCH": "Istorie"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Afișează",
                 "EMPTYTITLE": "Nu s-au găsit încă token-uri",
                 "EMPTYDETAIL": "Altitude verifică automat un explorator de blocuri pentru token-urile MRC20 și MRC721 trimise la adresele dvs., apoi verifică totul în timp real în raport cu propriul nod. De asemenea, puteți adăuga un token manual dacă cunoașteți adresa contractului său.",
+                "EMPTYDETAILCHECKINGDISABLED": "Verificarea automată a tokenurilor este dezactivată, prin urmare adresele dvs. nu sunt verificate pentru tokenuri. Reactivați-o mai sus sau adăugați un token manual dacă îi cunoașteți adresa contractuală.",
                 "HIDDENTITLE": "Jetoane ascunse",
                 "CONTEXTMENUHIDE": "Ascunde jetonul",
                 "ITEMSSUFFIX": "articol(e)",
-                "NONENUMERABLETOOLTIP": "Această colecție nu permite listarea articolelor individuale - în schimb, afișarea numărului de articole pe care le dețineți."
+                "NONENUMERABLETOOLTIP": "Această colecție nu permite listarea articolelor individuale - în schimb, afișarea numărului de articole pe care le dețineți.",
+                "CHECKINGENABLED": "Verificare",
+                "CHECKINGDISABLED": "Bifare",
+                "CHECKINGENABLEDTOOLTIP": "Verificarea tokenurilor este activată - Altitude verifică periodic adresele dvs. pentru tokenuri și actualizează soldurile. Faceți clic pentru a dezactiva.",
+                "CHECKINGDISABLEDTOOLTIP": "Verificarea jetoanelor este dezactivată - faceți clic pentru a o reactiva.",
+                "CHECKINGDISABLEDNOTICE": "Verificarea automată a jetoanelor este dezactivată. Adresele dvs. nu sunt scanate pentru jetoane, iar soldurile nu se vor actualiza. Puteți adăuga în continuare un jeton manual."
             },
             "ADDTOKEN": {
                 "TITLE": "Adăugați un token",

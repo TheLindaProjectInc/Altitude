@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Kirkira ajiya",
             "HIDEEMPTYACCOUNTS": "Ɓoye Asusun da Ba a Suna Ba Babu Suna"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Bayani",
+            "TRANSACTIONSTAB": "Ma'amaloli",
+            "ADDRESSTABS": "Adiresoshi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ƙara Mai Karɓa",
             "SEND": "Aika",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Kwanan wata",
             "TABLECOLUMNS_CONFIRMS": "Tabbatarwa",
             "ALL_SELECTUNSELECT": "Kunna Duk",
+            "TREEMODE": "Yanayin Bishiya",
+            "LISTMODE": "Yanayin Jeri",
             "SENDAVAILABLE": "Yi amfani da ma'aunin da ake da shi",
             "INPUTLOCKED": "An kulle shigarwar. Za ku buƙaci buɗe wannan shigarwar don ku kashe ta.",
             "CONTEXTMENULOCKINPUT": "Shigar da makulli",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Bayan Kuɗi",
             "QUANTITY": "Adadi",
             "BYTES": "Bytes",
-            "TREEMODE": "Yanayin Bishiya",
-            "LISTMODE": "Yanayin Jeri",
             "ALERTFEECHANGETITLE": "Canjin Kuɗi",
             "ALERTFEECHANGECONTENT": "Kudin ciniki na ainihi ya fi yadda aka zata. Da fatan za a tabbatar da sabon kuɗin:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Ƙirƙiri Kwantiragi",
+            "INFO": "Sanya kwangilar wayo zuwa ga hanyar sadarwa ta hanyar aika lambar bytecode ɗinta da aka tattara. Wannan aikin sarkar asali ne - sake duba lambar bytecode da saitunan gas ɗinka kafin a tura, ba za a iya soke aikin ba.",
+            "FROM": "Daga",
+            "BYTECODE": "Lambar byte",
+            "BYTECODEPLACEHOLDER": "Manna lambar bytecode ta kwangilar da aka haɗa (hex)",
+            "INVALIDBYTECODE": "Dole ne lambar byte ta zama ingantaccen igiyar hex (0-9, a-f) tare da adadin haruffa daidai gwargwado",
+            "GASLIMIT": "Iyakar Gas",
+            "GASLIMITRANGE": "Nisa",
+            "GASPRICE": "Farashin Gas (MRX a kowace na'urar gas)",
+            "GASPRICEMIN": "Mafi ƙaranci",
+            "ESTIMATEDMAXCOST": "Matsakaicin farashi da aka kiyasta",
+            "DEPLOYBUTTON": "Kwantiragin Tura",
+            "INCOMPLETEFORM": "Da fatan za a zaɓi adireshin mai aikawa, shigar da lambar byte mai inganci, sannan a saita iyaka/farashi mai inganci",
+            "HIGHGASPRICETITLE": "Babban Farashin Gas",
+            "HIGHGASPRICEINFO": "Farashin mai da ka saita yana da tsada sosai. Wannan aikin zai iya kashe har zuwa:",
+            "DEPLOYING": "Kwantiragin tura...",
+            "DEPLOYED": "An gabatar da ƙaddamar da kwangila",
+            "RESULTTITLE": "Sakamakon Turawa",
+            "STATUS": "Matsayi",
+            "STATUSPENDING": "Ana jiran tabbatarwa...",
+            "STATUSCONFIRMED": "An yi nasarar tura shi cikin nasara",
+            "STATUSFAILED": "An kasa tura kayan aiki",
+            "TXID": "ID na Ma'amala",
+            "SENDER": "Mai aikawa",
+            "CONTRACTADDRESS": "Adireshin Kwantiragi",
+            "GASUSED": "Iskar da aka yi amfani da ita",
+            "DONEBUTTON": "An gama",
+            "DEPLOYANOTHERBUTTON": "Tura Wani"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Ma'amaloli",
+            "COPYBLOCKHASH": "Kwafi Hash ɗin Toshe",
+            "COPYTXID": "Kwafi ID na Ma'amala",
+            "COPYACCOUNT": "Kwafi Sunan Asusu",
+            "COPYADDRESS": "Kwafi Adireshi",
+            "COPYAMOUNT": "Kwafi Adadin",
+            "COPTBLOCKINDEX": "Fihirisar Toshe Kwafi",
+            "EXPLORER": "Buɗe a cikin Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Buɗewa Don Sanyawa",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adireshi",
             "ENABLED": "An kunna",
-            "STARTBUTTON": "Fara Na Gida",
-            "STARTALIASBUTTON": "Fara Laƙabi",
-            "STARTALLBUTTON": "Fara Duk",
             "NOMASTERNODES": "Ba ku da wani masternodes",
             "NOMNOUTPUTS": "Ba a sami fitowar Masternode ba. Don gudanar da Masternode na gida, aika daidai tsabar kuɗi miliyan 2, 5, 25, 50 ko 100 zuwa adireshin Masternode ɗinku kuma jira tabbatarwa 15.",
+            "STARTBUTTON": "Fara Na Gida",
             "STOPBUTTON": "Tsaya a Gida",
+            "STARTALIASBUTTON": "Fara Laƙabi",
             "STOPALIASBUTTON": "Dakatar da Laƙabi",
+            "STARTALLBUTTON": "Fara Duk",
             "ADDREMOTE": "Ƙara Na'urar Jagora Mai Nesa",
             "REMOVEMN": "Cire Masternode",
             "ADDLOCAL": "Saita Babban Ma'aikacin Gida",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Janar",
                 "COREVERSION": "Sigar Asali",
+                "ALTITUDEVERSION": "Sigar Tsawo",
                 "PROTOCOLVERSION": "Sigar Yarjejeniya",
                 "WALLETVERSION": "Sigar Wallet.dat",
                 "NETWORKTITLE": "Cibiyar sadarwa",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Adadin Masternodes",
                 "BLOCKCHAINTITLE": "Sarkar Toshe",
                 "NUMBERBLOCKS": "Adadin tubalan yanzu",
-                "BESTBLOCKTTIME": "Lokacin toshewa na ƙarshe",
-                "ALTITUDEVERSION": "Sigar Tsawo"
+                "BESTBLOCKTTIME": "Lokacin toshewa na ƙarshe"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Barka da zuwa na'urar Metrix Core RPC. Rubuta taimako don taƙaitaccen bayani game da umarnin da ake da su.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Zaɓi Harshe"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Ma'amaloli",
-            "COPYBLOCKHASH": "Kwafi Hash ɗin Toshe",
-            "COPYTXID": "Kwafi ID na Ma'amala",
-            "COPYACCOUNT": "Kwafi Sunan Asusu",
-            "COPYADDRESS": "Kwafi Adireshi",
-            "COPYAMOUNT": "Kwafi Adadin",
-            "COPTBLOCKINDEX": "Fihirisar Toshe Kwafi",
-            "EXPLORER": "Buɗe a cikin Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Zaɓi Nunin Kuɗi"
         },
         "EXPLORER": {
             "TITLE": "Toshe Mai Binciken",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Cibiyar sadarwa",
             "WINDOTAB": "Taga",
+            "BACKUPTAB": "Ajiyayyen",
+            "EXPLORERTAB": "Mai Bincike",
+            "DEVELOPERTAB": "Mai Haɓakawa",
             "NETWORK": {
                 "PROXY": "Haɗa ta hanyar SOCKS5 proxy",
                 "PROXYIP": "IP na wakili",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Rage lokacin rufewa",
                 "BEHAVIOURTITLE": "Tsarin Tire & Ɗabi'ar Tagogi"
             },
-            "BACKUPTAB": "Ajiyayyen",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Ajiyayyen atomatik",
                 "ENABLED": "Ajiye wallet.dat ta atomatik a cikin jadawalin aiki",
                 "ENABLEDINFO": "Yana ƙirƙirar sabon madadin fayil ɗin walat ɗinku akan jadawalin lokaci, don haka kwafin da aka kwafa kwanan nan koyaushe yana samuwa idan wani abu ya faru ba daidai ba.",
+                "INTERVALLABEL": "Ajiyewa kowace (kwanaki)",
                 "LASTBACKUP": "Ajiyar ƙarshe:",
                 "NEVERBACKEDUP": "Ba a yi madadin atomatik ba tukuna.",
                 "BACKUPNOWBUTTON": "Ajiye Yanzu",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Sake saita zuwa Tsohuwa",
                 "PRUNETITLE": "Tarihin Ajiyar Bayanai",
                 "PRUNEINFO": "Ana share tsoffin madadin atomatik don haka wannan babban fayil ɗin ba zai girma har abada ba - waɗanda suka gabata ne kawai aka ajiye a ƙasa.",
-                "KEEPCOUNTLABEL": "A ci gaba da zama na ƙarshe",
-                "INTERVALLABEL": "Ajiyewa kowace (kwanaki)"
+                "KEEPCOUNTLABEL": "A ci gaba da zama na ƙarshe"
             },
-            "EXPLORERTAB": "Mai Bincike",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Toshe Mai Binciken",
                 "BLOCKEXPLORERINFO": "Shafin ya buɗe ne lokacin da ake duba ciniki a kan mai binciken toshe (misali danna dama a ciniki > Duba akan Mai Binciken).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Babban Yanar Gizo",
                 "TESTNET": "Na'urar gwaji",
                 "REGTEST": "Rajistar Rijista"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Yanayin Mai Haɓakawa",
+                "DEVMODEINFO": "An kashe ta tsohuwa kuma an yi shi ne kawai ga masu haɓakawa. Kunna wannan yana nuna zaɓuɓɓuka don maye gurbin haɗin RPC - masu amfani na yau da kullun ya kamata su bar wannan.",
+                "DEVMODELABEL": "Kunna Yanayin Mai Haɓakawa",
+                "WARNING": "Waɗannan saituna don dalilai na haɓakawa ne kawai. Canza su na iya hana walat ɗin haɗawa da aljani kwata-kwata - yi amfani da wannan kawai idan kun san abin da kuke yi.",
+                "RPCHOSTTITLE": "Haɗin RPC",
+                "RPCHOSTINFO": "Ta hanyar tsoho, Altitude yana haɗuwa da aljani da yake sarrafa kansa, akan wannan na'urar (127.0.0.1). Fitar da waɗannan yana ba shi damar haɗawa zuwa wani aljani daban - misali misali na gwajin regtest mai nisa, ba tare da buƙatar gudanar da shi a gida ba. Idan haɗin ya yi nasara, Altitude ba zai sauke ko fara aljani na gida ba. Dole ne rpcallowip na aljani da aka nufa ya ba da damar wannan haɗin, kuma kalmar sirri ta rpcuser/rpc da ke ƙasa dole ne ta dace da tsarinta. Yana fara aiki nan da nan, babu buƙatar sake kunnawa.",
+                "RPCHOSTLABEL": "Mai watsa shiri na RPC",
+                "RPCPORTLABEL": "Tashar RPC",
+                "RPCUSERLABEL": "Sunan mai amfani na RPC",
+                "RPCPASSWORDLABEL": "Kalmar sirri ta RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Bayani",
-            "TRANSACTIONSTAB": "Ma'amaloli",
-            "ADDRESSTABS": "Adiresoshi"
-        },
-        "CURRENCY": {
-            "TITLE": "Zaɓi Nunin Kuɗi"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Allon allo",
             "SEND": "Aika",
+            "CREATECONTRACT": "Ƙirƙiri Kwantiragi",
             "RECEIVE": "Karɓa",
             "TRANSACTIONS": "Ma'amaloli",
             "STAKING": "Yin amfani da sanda",
             "MASTERNODES": "Manyan ma'ajiyar kwamfuta",
+            "EXPLORER": "Toshe Mai Binciken",
             "SYNC": {
                 "CONNECTING": "Haɗawa",
                 "NOBLOCKS": "Ana jiran tubalan",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Wallet ba ya yin saka hannun jari a yanzu",
                 "MASTERNODEON": "Masternode yana aiki a halin yanzu",
                 "MASTERNODEOFF": "Masternode ba ya aiki a halin yanzu"
-            },
-            "EXPLORER": "Toshe Mai Binciken"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Shigar da adireshin shafin yanar gizo na 3",
+            "GOBUTTON": "Tafi",
+            "QUICKLAUNCH": "Farawa da Sauri",
+            "DEVTOOLS": "Buɗe Kayan Aikin Mai Haɓakawa",
+            "ADDLINK": "Ƙara Hanya",
+            "LINKNAMEPLACEHOLDER": "Suna",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Ajiye",
+            "CANCEL": "Soke",
+            "REMOVE": "Cire",
+            "REMOVECONFIRM": "Cire wannan hanyar haɗin sauri?",
+            "LINKEXISTS": "Wannan hanyar haɗin yanar gizon ta riga ta kasance cikin jerin ƙaddamar da sauri ɗinku",
+            "LINKINVALID": "Shigar da ingantaccen adireshin shafin yanar gizo",
+            "LINKNETWORKLABEL": "Cibiyar sadarwa",
+            "LOADFAILED": "An kasa loda shafin",
+            "SECURESITE": "Haɗin yana da aminci - takardar shaidar SSL mai inganci",
+            "INSECURESITE": "Haɗin ba shi da tsaro",
+            "INVALIDCERTSITE": "Haɗin ba na sirri ba ne - takardar shaidar SSL mara inganci ko mara aminci"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Shigar da Kalmar Sirrin Walat ɗinku",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Akwai sabuntawa ga Metrix Core. Kuna son shigar da shi yanzu?",
             "WALLETUPDATETITLE": "Ana Samun Sabunta Tsayi",
             "WALLETUPDATEINFO": "Akwai sabuntawa don Altitude. Kuna son saukar da shi yanzu?",
+            "WALLETUPDATEREADYTITLE": "Sabunta Altitude A Shirye",
+            "WALLETUPDATEREADYINFO": "An sauke sabuntawar. Sake kunna Altitude yanzu don shigar da shi?",
+            "WALLETUPDATERESTARTBUTTON": "Sake kunnawa & Shigarwa",
+            "WALLETUPDATELATERBUTTON": "Daga baya",
             "CLIENTUPDATEBUTTON": "Sabuntawa",
             "CLIENTUPDATECANCELBUTTON": "Kar a Sabunta",
             "CLIENTUPDATESKIPBUTTON": "A tsallake wannan Sabuntawa",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Duk wani madadin da ka yi a baya na fayil ɗin walat ɗinka ya kamata a maye gurbinsa da sabon fayil ɗin walat ɗin da aka ƙirƙira, wanda aka ɓoye. Don dalilai na tsaro, madadin fayil ɗin walat ɗin da ba a ɓoye ba na baya zai zama mara amfani da zarar ka fara amfani da sabon walat ɗin da aka ɓoye.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core Ya Tsaya Ba Zato Ba Tsaye",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Akwai matsala da Metrix Core wanda ya sa ya ƙare. Ana ba da shawarar duba fayil ɗin debug.log ɗinku don ganin ko akwai matsala.",
+            "CLIENTUNKNOWNERRORTITLE": "Kuskuren Sadarwa na Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "An sami matsala wajen sadarwa da Metrix Core. Ana ba da shawarar duba fayil ɗin debug.log ɗinku don ganin ko akwai matsala.",
+            "BOOTSTRAPFAILEDTITLE": "An kasa yin nasarar Bootstrap na Metrix Core",
+            "BOOTSTRAPFAILEDINFO": "An sami matsala wajen fara amfani da Metrix Core. Ana ba da shawarar a duba fayil ɗin log ɗin Altitude ɗinka don ganin ko akwai matsala.",
+            "BOOTSTRAPOFFERTITLE": "Wallet Ya tsufa sosai",
+            "BOOTSTRAPOFFERINFO": "Akwai sabon tsari na bootstrap wanda zai iya sabunta Metrix Core cikin sauri. Ci gaba da daidaitawa na yau da kullun na iya ɗaukar kwanaki da yawa kafin a kammala, tunda walat ɗinku yana buƙatar saukewa da tabbatar da duk wani toshe da ya ɓace.",
+            "BOOTSTRAPOFFERBUTTON": "Sauke Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Ci gaba da Daidaita Daidaito na Al'ada",
+            "BOOTSTRAPSPACEINFO": "Babu isasshen sararin faifai kyauta don saukewa da cire bootstrap. Ana buƙata: {wajibi}, Akwai: {kyauta}. 'Yantar da sarari kuma sake gwadawa.",
+            "STARTUPFAILEDTITLE": "An kasa fara aikin Metrix Core",
+            "STARTUPFAILEDINFO": "An sami kuskure wajen fara Metrix Core. Ana ba da shawarar a duba fayil ɗin log ɗin Altitude ɗinka don ganin ko akwai matsala.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kayan Aikin Maidowa",
             "CLIENTINVALIDCONFIGTITLE": "Tsarin metrix.conf mara inganci",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf ɗinka yana da saitin masternode mara inganci wanda zai sa Metrix Core ya fita nan take. Da fatan za a duba wannan fayil ɗin.",
             "ADDREMOTEMNTITLE": "Ƙara Na'urar Jagora Mai Nesa",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Maɓallin Keɓaɓɓen Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Babban Jagorar Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "An kasa yin nasarar Bootstrap na Metrix Core",
-            "BOOTSTRAPFAILEDINFO": "An sami matsala wajen fara amfani da Metrix Core. Ana ba da shawarar a duba fayil ɗin log ɗin Altitude ɗinka don ganin ko akwai matsala.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Kayan Aikin Maidowa",
-            "STARTUPFAILEDTITLE": "An kasa fara aikin Metrix Core",
-            "STARTUPFAILEDINFO": "An sami kuskure wajen fara Metrix Core. Ana ba da shawarar a duba fayil ɗin log ɗin Altitude ɗinka don ganin ko akwai matsala.",
-            "CLIENTUNKNOWNERRORTITLE": "Kuskuren Sadarwa na Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "An sami matsala wajen sadarwa da Metrix Core. Ana ba da shawarar duba fayil ɗin debug.log ɗinku don ganin ko akwai matsala.",
             "UNENROLLGOVERNORTITLE": "Tabbatar da Fita Daga Gwamna",
             "UNENROLLGOVERNORCONTENT": "Shin kana da tabbacin kana son ka cire sunan Gwamnanka daga cikin jerin 'yan takarar? Ba za ka sake samun damar kaɗa ƙuri'a kan tsarin mulki ba.",
-            "WALLETUPDATEREADYTITLE": "Sabunta Altitude A Shirye",
-            "WALLETUPDATEREADYINFO": "An sauke sabuntawar. Sake kunna Altitude yanzu don shigar da shi?",
-            "WALLETUPDATERESTARTBUTTON": "Sake kunnawa & Shigarwa",
-            "WALLETUPDATELATERBUTTON": "Daga baya",
             "DAPPCONNECTTITLE": "Haɗa zuwa Shafin",
             "DAPPCONNECTINFO": "Wannan shafin yana son haɗawa da walat ɗinka da kuma duba adireshinka da sauran kuɗinka.",
             "DAPPCONNECTBUTTON": "Haɗa",
+            "DAPPCONNECTADDRESSLABEL": "Adireshi",
+            "DAPPAPPROVEBUTTON": "Amince",
             "DAPPREJECTBUTTON": "ƙin amincewa",
             "DAPPSENDTITLE": "Buƙatar Ma'amalar Kwantiragi",
             "DAPPSENDINFO": "Wannan shafin yana neman a aika muku da yarjejeniyar kwangila daga walat ɗinku.",
-            "DAPPSIGNTITLE": "Sanya Hannu Kan Buƙatar Saƙo",
-            "DAPPSIGNINFO": "Wannan shafin yana neman sanya hannu kan saƙo tare da adireshin walat ɗin ku.",
-            "DAPPNOTREADY": "Ba za a iya haɗawa da shafin ba tukuna - Metrix Core har yanzu yana farawa.",
-            "DAPPNOWALLET": "Ba za a iya haɗawa da shafin ba - babu adireshin walat.",
-            "DAPPAPPROVEBUTTON": "Amince",
-            "DAPPCONNECTADDRESSLABEL": "Adireshi",
             "DAPPSENDSITELABEL": "Shafin yanar gizo",
             "DAPPSENDCONTRACTLABEL": "Adireshin Kwantiragi",
             "DAPPSENDAMOUNTLABEL": "Adadin",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Matsakaicin Kuɗin Cibiyar sadarwa",
             "DAPPSENDMAXTOTALLABEL": "Matsakaicin Jimilla",
             "DAPPSENDDATALABEL": "Bayanan Kwantiragi",
+            "DAPPSIGNTITLE": "Sanya Hannu Kan Buƙatar Saƙo",
+            "DAPPSIGNINFO": "Wannan shafin yana neman sanya hannu kan saƙo tare da adireshin walat ɗin ku.",
             "DAPPSIGNMESSAGELABEL": "Saƙo",
-            "BOOTSTRAPOFFERTITLE": "Wallet Ya tsufa sosai",
-            "BOOTSTRAPOFFERINFO": "Akwai sabon tsari na bootstrap wanda zai iya sabunta Metrix Core cikin sauri. Ci gaba da daidaitawa na yau da kullun na iya ɗaukar kwanaki da yawa kafin a kammala, tunda walat ɗinku yana buƙatar saukewa da tabbatar da duk wani toshe da ya ɓace.",
-            "BOOTSTRAPOFFERBUTTON": "Sauke Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Ci gaba da Daidaita Daidaito na Al'ada",
-            "BOOTSTRAPSPACEINFO": "Babu isasshen sararin faifai kyauta don saukewa da cire bootstrap. Ana buƙata: {wajibi}, Akwai: {kyauta}. 'Yantar da sarari kuma sake gwadawa."
+            "DAPPNOTREADY": "Ba za a iya haɗawa da shafin ba tukuna - Metrix Core har yanzu yana farawa.",
+            "DAPPNOWALLET": "Ba za a iya haɗawa da shafin ba - babu adireshin walat."
         },
         "ADDRESSBOOK": {
             "TITLE": "Littafin Adireshi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Cibiyar sadarwa ta yanzu"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Shigar da adireshin shafin yanar gizo na 3",
-            "GOBUTTON": "Tafi",
-            "QUICKLAUNCH": "Farawa da Sauri",
-            "DEVTOOLS": "Buɗe Kayan Aikin Mai Haɓakawa",
-            "ADDLINK": "Ƙara Hanya",
-            "LINKNAMEPLACEHOLDER": "Suna",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Ajiye",
-            "CANCEL": "Soke",
-            "REMOVE": "Cire",
-            "REMOVECONFIRM": "Cire wannan hanyar haɗin sauri?",
-            "LINKEXISTS": "Wannan hanyar haɗin yanar gizon ta riga ta kasance cikin jerin ƙaddamar da sauri ɗinku",
-            "LINKINVALID": "Shigar da ingantaccen adireshin shafin yanar gizo",
-            "LINKNETWORKLABEL": "Cibiyar sadarwa",
-            "LOADFAILED": "An kasa loda shafin",
-            "SECURESITE": "Haɗin yana da aminci - takardar shaidar SSL mai inganci",
-            "INSECURESITE": "Haɗin ba shi da tsaro",
-            "INVALIDCERTSITE": "Haɗin ba na sirri ba ne - takardar shaidar SSL mara inganci ko mara aminci"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Wallet ɗin Ajiyar Kuɗi...",
             "SIGNMESSAGE": "Sa hannu a Saƙo...",
             "VERIFYMESSAGE": "Tabbatar da Saƙo...",
-            "LOCALE": "Harshe...",
-            "RESTARTCORE": "Sake kunna Metrix Core",
-            "EXIT": "Fita",
             "OPTIONS": "Zaɓuɓɓuka...",
+            "LOCALE": "Harshe...",
             "CURRENCIES": "Nuna Kuɗin...",
-            "ALTITUDEREFRESH": "Sabunta Bayanan Tsayi"
+            "RESTARTCORE": "Sake kunna Metrix Core",
+            "ALTITUDEREFRESH": "Sabunta Bayanan Tsayi",
+            "EXIT": "Fita"
         },
         "ENCRYPT": {
             "TITLE": "Ƙirƙiri",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Jimlar Ma'auni",
+        "SPENDABLEBALANCE": "Ma'aunin Kashewa",
+        "PENDINGBALANCE": "Ma'aunin da ake jira",
         "CANCELBUTTON": "Soke",
         "DONEBUTTON": "An gama",
         "OKBUTTON": "KO",
+        "ACCEPTBUTTON": "Karɓa",
         "CLEARALLBUTTON": "Share Duk",
         "ENTERACCOUNTLABEL": "Shigar da lakabin wannan adireshin",
         "ENTERADDRESSLABEL": "Shigar da adireshin Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Kasa",
         "SEARCH": "Bincika",
         "FEE": "Kudin",
-        "ACCEPTBUTTON": "Karɓa",
         "CONFIRMED": "An tabbatar",
         "UNCONFIRMED": "Ba a tabbatar ba",
-        "PENDINGBALANCE": "Ma'aunin da ake jira",
-        "SPENDABLEBALANCE": "Ma'aunin Kashewa",
         "SAVEBUTTON": "Ajiye"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Sake kunna Metrix Core...",
         "BOOTSTRAPPING": "Ana sauke madaurin farawa...",
         "BOOTSTRAPEXTRACTING": "Ana cire madaurin taya...",
-        "TIMEREMAINING": "sauran:"
+        "TIMEREMAINING": "sauran:",
+        "DEVRPCOVERRIDEACTIVE": "An saita wani haɗin RPC na mai haɓakawa (Zaɓuɓɓuka > Mai haɓakawa) kuma ba ya amsawa. Share shi don sake haɗawa da aljani na gida akai-akai.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Share Override & Sake Haɗa RPC"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "An ƙirƙiri sabon asusu cikin nasara",
         "ADDRESSCOPIEDCLIPBOARD": "An kwafi adireshin zuwa allo mai allo",
+        "COPIEDCLIPBOARD": "An kwafi zuwa allo mai allo",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "An kwafi ma'amaloli zuwa allo mai riƙe da allo",
         "EMPTYFIELDS": "Da fatan za a cike dukkan filayen",
         "NOUPDATE": "Babu sabuntawa da ake samu",
         "WALLETBACKEDUP": "An yi nasarar adana walat ɗin ajiya",
+        "WALLETBACKUPFAILED": "An kasa samun nasarar madadin walat ɗinka ta atomatik - duba wurin ajiyarka da kuma sararin faifai da ake da shi",
         "PASSPHRASEMISMATCH": "Kalmomin sirri da kuka shigar ba su dace ba",
         "CHECKINGUPDATE": "Ana duba sabuntawa...",
         "CHECKINGUPDATEFAILED": "Ba za a iya duba sabuntawa ba. Duba hanyar sadarwarka.",
+        "WALLETUPDATEDOWNLOADING": "Ana sauke sabuntawa...",
         "SENDINGEXCEEDSBALANCE": "Adadin da kake aikawa ya wuce adadin da ka zaɓa",
         "MISSINGCHANGEADDRESS": "Dole ne ku ƙayyade adireshin canji",
         "MISSINGDESTINATIONADDRESS": "Dole ne ka ƙayyade adireshin wurin da za ka je",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Walat ɗin ɓoyewa...",
         "CHANGINGPASSPHARASE": "Canza kalmar sirri...",
         "STARTINGMASTERNODE": "Fara masternode...",
+        "STOPPINGMASTERNODE": "Dakatar da babban node...",
         "SENDINGTRANSACTION": "Ana aika ma'amala...",
         "SIGNINGMESSAGE": "Sa hannu kan saƙon...",
         "SIGNEDMESSAGE": "Saƙon da aka sanya hannu",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Buɗe walat ɗin...",
         "TRANSACTIONMISMATCH": "Kuskuren ciniki. Da fatan za a sake gwadawa.",
         "MINIMUMCONFIRMATIONS": "Duk shigarwar suna buƙatar aƙalla tabbatarwa 1 kafin a kashe kuɗi.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "An kwafi ma'amaloli zuwa allo mai riƙe da allo",
-        "STOPPINGMASTERNODE": "Dakatar da babban node...",
         "FAILEDTOWRITECONFIG": "An sami matsala wajen rubuta fayil ɗin metrix.conf ɗinka. Duba cewa akwai fayil ɗin kuma Altitude yana da izinin rubutu.",
         "NOPUBLICUP": "Ba a sami adireshin IP na jama'a ba. Duba haɗin intanet ɗinku kuma sake kunna Altitude.",
         "CONFIGURINGLOCALMN": "Ana saita Masternode na gida...",
         "REPORTINGISSUE": "Samun bayanan ganewar asali... Za a kwafi wannan bayanin zuwa allon rubutu.",
-        "WALLETUPDATEDOWNLOADING": "Ana sauke sabuntawa...",
-        "WALLETBACKUPFAILED": "An kasa samun nasarar madadin walat ɗinka ta atomatik - duba wurin ajiyarka da kuma sararin faifai da ake da shi",
         "EXPLORERURLSAVED": "An adana adireshin URL na Mai Binciken",
         "EXPLORERURLRESET": "An mayar da adireshin URL na Explorer zuwa tsoho",
         "EXPLORERURLINVALID": "Wannan ba ingantaccen adireshin URL bane na http(s)",
-        "EXPLORERURLUNREACHABLE": "Ban sami damar isa ga wannan adireshin URL ba - duba shi kuma sake gwadawa"
+        "EXPLORERURLUNREACHABLE": "Ban sami damar isa ga wannan adireshin URL ba - duba shi kuma sake gwadawa",
+        "DEVRPCHOSTSAVED": "An adana mai masaukin RPC",
+        "DEVRPCHOSTRESET": "An mayar da mai masaukin RPC zuwa tsoho (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Tsabar Kuɗin da aka karɓa",
+        "NEWTRANSACTION_TITLE_STAKE": "An Karɓi Hannun Jari",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "An karɓi kyautar Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "ƴan daƙiƙa kaɗan",
@@ -533,11 +587,6 @@
         "MONTHS": "watanni",
         "AYEAR": "Shekara guda",
         "YEARS": "shekaru"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Tsabar Kuɗin da aka karɓa",
-        "NEWTRANSACTION_TITLE_STAKE": "An Karɓi Hannun Jari",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "An karɓi kyautar Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gwamnoni ne ke da alhakin kaɗa ƙuri'a kan kasafin kuɗi na wata-wata da canje-canjen blockchain. Za ka iya zama Gwamna ta hanyar kulle madaidaicin jinginar gida a cikin kwangilar Gudanarwa.",
                 "COLLATERAL": "Garanti da ake buƙata",
                 "ENROLL": "Yi rijista",
+                "SELECTAGOVERNOR": "Zaɓi adireshin gwamna mai cancanta",
+                "GOVERNORNOTSELECTED": "Ba a zaɓi adireshin da ya cancanta ba",
                 "CONFIRMENROLL": "Za ka yi rijista a matsayin Gwamna. Wannan zai aika da ciniki tare da jinginar da ake buƙata zuwa kwangilar gudanarwa. Za ka iya cire rajista a kowane lokaci.",
                 "ISGOVERNORTITLE": "Kai Gwamna ne mai himma!",
                 "ISGOVERNORDETAIL1": "Gwamnoni ne ke da alhakin kaɗa ƙuri'a kan kasafin kuɗi na wata-wata da canje-canjen blockchain.",
                 "ISGOVERNORDETAIL2": "Domin ci gaba da zama Gwamna, za ku buƙaci ku shiga aƙalla kuri'a 1 a kowace kwana 30.",
                 "ISGOVERNORDETAIL3": "Idan babu wani abu da za a kaɗa ƙuri'a a kai to za ka iya ci gaba da yin rijista da hannu ta hanyar aika saƙon ping mai aiki.",
+                "MYGOVERNORADDRESS": "Jawabin Gwamna na",
                 "UNENROLL": "Cire Rijista",
                 "PING": "Aika Active Ping",
                 "LASTPINGTITLE": "Ping na ƙarshe",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "kwanaki",
                 "GOVERNORVOTEMATURITYHOURS": "awanni",
                 "GOVERNORVOTEMATURITYSUFFIX": "har sai ya girma",
-                "MYGOVERNORADDRESS": "Jawabin Gwamna na",
-                "SELECTAGOVERNOR": "Zaɓi adireshin gwamna mai cancanta",
-                "GOVERNORNOTSELECTED": "Ba a zaɓi adireshin da ya cancanta ba",
                 "NOTFULLYSYNCEDTITLE": "Matsayin gwamna ba ya nan",
                 "NOTFULLYSYNCEDDETAIL": "Matsayin rajistar Gwamna zai bayyana lokacin da blockchain ɗinku ya daidaita gaba ɗaya.",
                 "DGPMIGRATIONTITLE": "Hijira daga DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "An ƙirƙiri shawararka cikin nasara",
             "ENROLLINGGOVERNOR": "Yin rijista a matsayin Gwamna...",
             "ENROLLEDGOVERNOR": "Za a kammala rajistar ku da zarar an tabbatar da cinikin ku",
-            "VOTINGONPROPOSAL": "Aika ƙuri'ar neman shawara",
-            "VOTEDONPROPOSAL": "Za a ƙidaya ƙuri'arku da zarar an tabbatar da cinikin.",
             "PINGINGGOVERNOR": "Ana aika ping...",
             "PINGEDGOVERNOR": "An aika da Ping cikin nasara. Za a sabunta Gwamnan ku da zarar an tabbatar da cinikin",
+            "VOTINGONPROPOSAL": "Aika ƙuri'ar neman shawara",
+            "VOTEDONPROPOSAL": "Za a ƙidaya ƙuri'arku da zarar an tabbatar da cinikin.",
             "UNENROLLINGGOVERNOR": "Cire Rijistar Gwamna...",
             "UNENROLLEDGOVERNOR": "An aika da ciniki. Za a cire Gwamnan ku daga rajista da zarar an tabbatar da cinikin",
             "GOVERNORNOTMATURE": "Gwamnan ku bai isa ya yi wannan aikin ba tukuna"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Sayi Metrix",
+                "SEARCH": "Tarihi"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ka Aika",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tarihin Ma'amala",
                 "SEARCHBUTTON": "NEMAN",
+                "SEARCHPLACEHOLDER": "Shigar da adireshin MRX ko BTC",
                 "TRANSACTIONDATE": "Kwanan wata",
                 "TRANSACTIONTYPE": "Nau'in TX",
                 "TRANSACTIONAMOUNT": "Adadin",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "An tabbatar",
                 "TRANSACTIONNOTCONFIRMED": "Ba a Tabbatar ba",
                 "TRANSACTIONREFUNDED": "An mayar da kuɗi - Ƙasa da mafi ƙarancin kuɗi",
-                "AVGSWAPPRICE": "Matsakaicin Farashin Musanya",
-                "SEARCHPLACEHOLDER": "Shigar da adireshin MRX ko BTC"
+                "AVGSWAPPRICE": "Matsakaicin Farashin Musanya"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ana Samar da Adireshin Musanya...",
             "ALREADYHAVEADDRESS": "Kun riga kuna da adireshin BTC da ke da alaƙa da wannan adireshin Metrix",
             "NOADDRESS": "Ba ka shigar da adireshin Metrix ba"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Sayi Metrix",
-                "SEARCH": "Tarihi"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Buɗe",
                 "EMPTYTITLE": "Ba a Samu Alamomi Ba Tukunna",
                 "EMPTYDETAIL": "Altitude yana duba alamar MRC20 da MRC721 ta atomatik a cikin mai binciken toshe wanda aka aika zuwa adiresoshin ku, sannan ya tabbatar da komai a kan na'urar ku. Hakanan zaka iya ƙara alamar da hannu idan ka san adireshin kwangilar ta.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ana kashe duba alamun ta atomatik, don haka ba a duba adireshinka don alamun ba. Kunna shi a sama, ko ƙara alamar da hannu idan kun san adireshin kwangilarsa.",
                 "HIDDENTITLE": "Alamun Ɓoye",
                 "CONTEXTMENUHIDE": "Ɓoye Alama",
                 "ITEMSSUFFIX": "abu(s)",
-                "NONENUMERABLETOOLTIP": "Wannan tarin ba ya goyan bayan jerin abubuwa daban-daban - yana nuna adadin da kuke riƙewa maimakon haka."
+                "NONENUMERABLETOOLTIP": "Wannan tarin ba ya goyan bayan jerin abubuwa daban-daban - yana nuna adadin da kuke riƙewa maimakon haka.",
+                "CHECKINGENABLED": "Dubawa",
+                "CHECKINGDISABLED": "Kammala Biyan Kuɗi",
+                "CHECKINGENABLEDTOOLTIP": "Ana kunna duba alamun - Tsawon lokaci yana duba adireshin ku don alamun kuma yana sabunta ma'auni. Danna don kashewa.",
+                "CHECKINGDISABLEDTOOLTIP": "Duba alama a kashe - danna don sake kunnawa.",
+                "CHECKINGDISABLEDNOTICE": "An kashe duba alamun ta atomatik. Ba a duba adireshinku don ganin alamun kuma ma'auni ba za su sabunta ba. Har yanzu kuna iya ƙara alamar da hannu."
             },
             "ADDTOKEN": {
                 "TITLE": "Ƙara Alama",

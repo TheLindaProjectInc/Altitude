@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "اکاؤنٹ بنائیں",
             "HIDEEMPTYACCOUNTS": "بے نام خالی اکاؤنٹس چھپائیں۔"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "جائزہ",
+            "TRANSACTIONSTAB": "لین دین",
+            "ADDRESSTABS": "پتے"
+        },
         "SEND": {
             "ADDRECIPIENT": "وصول کنندہ شامل کریں۔",
             "SEND": "بھیجیں۔",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "تاریخ",
             "TABLECOLUMNS_CONFIRMS": "تصدیقات",
             "ALL_SELECTUNSELECT": "سبھی کو ٹوگل کریں۔",
+            "TREEMODE": "ٹری موڈ",
+            "LISTMODE": "فہرست وضع",
             "SENDAVAILABLE": "دستیاب بیلنس استعمال کریں۔",
             "INPUTLOCKED": "ان پٹ مقفل ہے۔ آپ کو اس ان پٹ کو خرچ کرنے کے لیے اسے غیر مقفل کرنا ہوگا۔",
             "CONTEXTMENULOCKINPUT": "ان پٹ کو لاک کریں۔",
@@ -38,10 +45,48 @@
             "AFTERFEE": "فیس کے بعد",
             "QUANTITY": "مقدار",
             "BYTES": "بائٹس",
-            "TREEMODE": "ٹری موڈ",
-            "LISTMODE": "فہرست وضع",
             "ALERTFEECHANGETITLE": "فیس کی تبدیلی",
             "ALERTFEECHANGECONTENT": "اصل لین دین کی فیس توقع سے زیادہ ہے۔ براہ کرم نئی فیس کی تصدیق کریں:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "معاہدہ بنائیں",
+            "INFO": "اس کا مرتب کردہ بائٹ کوڈ جمع کر کے نیٹ ورک پر ایک سمارٹ کنٹریکٹ تعینات کریں۔ یہ ایک بنیادی سلسلہ فنکشن ہے - تعینات کرنے سے پہلے اپنے بائیک کوڈ اور گیس کی ترتیبات کو دو بار چیک کریں، تعیناتی کو کالعدم نہیں کیا جا سکتا۔",
+            "FROM": "سے",
+            "BYTECODE": "بائٹ کوڈ",
+            "BYTECODEPLACEHOLDER": "مرتب شدہ معاہدہ بائٹ کوڈ (ہیکس) چسپاں کریں",
+            "INVALIDBYTECODE": "بائٹ کوڈ ایک درست ہیکس سٹرنگ (0-9، a-f) حروف کی یکساں تعداد کے ساتھ ہونا چاہیے",
+            "GASLIMIT": "گیس کی حد",
+            "GASLIMITRANGE": "رینج",
+            "GASPRICE": "گیس کی قیمت (ایم آر ایکس فی گیس یونٹ)",
+            "GASPRICEMIN": "کم از کم",
+            "ESTIMATEDMAXCOST": "تخمینہ زیادہ سے زیادہ لاگت",
+            "DEPLOYBUTTON": "معاہدہ تعینات کریں۔",
+            "INCOMPLETEFORM": "براہ کرم بھیجنے والے کا پتہ منتخب کریں، درست بائی کوڈ درج کریں، اور گیس کی ایک درست حد/قیمت مقرر کریں۔",
+            "HIGHGASPRICETITLE": "گیس کی اونچی قیمت",
+            "HIGHGASPRICEINFO": "آپ کی مقرر کردہ گیس کی قیمت غیر معمولی طور پر زیادہ ہے۔ اس تعیناتی پر لاگت آسکتی ہے:",
+            "DEPLOYING": "معاہدہ کی تعیناتی...",
+            "DEPLOYED": "کنٹریکٹ تعیناتی جمع کرائی گئی۔",
+            "RESULTTITLE": "تعیناتی کا نتیجہ",
+            "STATUS": "حیثیت",
+            "STATUSPENDING": "زیر التواء تصدیق...",
+            "STATUSCONFIRMED": "کامیابی سے تعینات",
+            "STATUSFAILED": "تعیناتی ناکام ہو گئی۔",
+            "TXID": "ٹرانزیکشن ID",
+            "SENDER": "بھیجنے والا",
+            "CONTRACTADDRESS": "معاہدہ کا پتہ",
+            "GASUSED": "استعمال شدہ گیس",
+            "DONEBUTTON": "ہو گیا",
+            "DEPLOYANOTHERBUTTON": "دوسرا تعینات کریں۔"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "لین دین",
+            "COPYBLOCKHASH": "بلاک ہیش کو کاپی کریں۔",
+            "COPYTXID": "ٹرانزیکشن آئی ڈی کاپی کریں۔",
+            "COPYACCOUNT": "اکاؤنٹ کا نام کاپی کریں۔",
+            "COPYADDRESS": "ایڈریس کاپی کریں۔",
+            "COPYAMOUNT": "رقم کاپی کریں۔",
+            "COPTBLOCKINDEX": "بلاک انڈیکس کاپی کریں۔",
+            "EXPLORER": "بلاک ایکسپلورر میں کھولیں۔"
         },
         "STAKING": {
             "UNLOCK": "Staking کے لیے غیر مقفل کریں۔",
@@ -68,13 +113,13 @@
             "IP": "آئی پی",
             "ADDRESS": "پتہ",
             "ENABLED": "فعال",
-            "STARTBUTTON": "مقامی شروع کریں۔",
-            "STARTALIASBUTTON": "عرف شروع کریں۔",
-            "STARTALLBUTTON": "سب شروع کریں۔",
             "NOMASTERNODES": "آپ کے پاس کوئی ماسٹر نوڈز نہیں ہیں۔",
             "NOMNOUTPUTS": "کوئی ماسٹر نوڈ آؤٹ پٹ نہیں ملا۔ مقامی ماسٹرنوڈ چلانے کے لیے اپنے ماسٹرنوڈ ایڈریس پر بالکل 2,5,25,50 یا 100 ملین سکے بھیجیں اور 15 تصدیقوں کا انتظار کریں۔",
+            "STARTBUTTON": "مقامی شروع کریں۔",
             "STOPBUTTON": "مقامی کو روکیں۔",
+            "STARTALIASBUTTON": "عرف شروع کریں۔",
             "STOPALIASBUTTON": "عرف کو روکو",
+            "STARTALLBUTTON": "سب شروع کریں۔",
             "ADDREMOTE": "ریموٹ ماسٹرنوڈ شامل کریں۔",
             "REMOVEMN": "ماسٹرنوڈ کو ہٹا دیں۔",
             "ADDLOCAL": "مقامی ماسٹرنوڈ سیٹ اپ کریں۔",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "جنرل",
                 "COREVERSION": "کور ورژن",
+                "ALTITUDEVERSION": "اونچائی کا ورژن",
                 "PROTOCOLVERSION": "پروٹوکول ورژن",
                 "WALLETVERSION": "Wallet.dat ورژن",
                 "NETWORKTITLE": "نیٹ ورک",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "ماسٹر نوڈس کی تعداد",
                 "BLOCKCHAINTITLE": "بلاک چین",
                 "NUMBERBLOCKS": "بلاکس کی موجودہ تعداد",
-                "BESTBLOCKTTIME": "آخری بلاک کا وقت",
-                "ALTITUDEVERSION": "اونچائی کا ورژن"
+                "BESTBLOCKTTIME": "آخری بلاک کا وقت"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC کنسول میں خوش آمدید۔ دستیاب کمانڈز کا جائزہ لینے کے لیے مدد ٹائپ کریں۔",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "زبان منتخب کریں۔"
         },
-        "TRANSACTIONS": {
-            "TITLE": "لین دین",
-            "COPYBLOCKHASH": "بلاک ہیش کو کاپی کریں۔",
-            "COPYTXID": "ٹرانزیکشن آئی ڈی کاپی کریں۔",
-            "COPYACCOUNT": "اکاؤنٹ کا نام کاپی کریں۔",
-            "COPYADDRESS": "ایڈریس کاپی کریں۔",
-            "COPYAMOUNT": "رقم کاپی کریں۔",
-            "COPTBLOCKINDEX": "بلاک انڈیکس کاپی کریں۔",
-            "EXPLORER": "بلاک ایکسپلورر میں کھولیں۔"
+        "CURRENCY": {
+            "TITLE": "ڈسپلے کرنسی کو منتخب کریں۔"
         },
         "EXPLORER": {
             "TITLE": "بلاک ایکسپلورر",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "نیٹ ورک",
             "WINDOTAB": "کھڑکی",
+            "BACKUPTAB": "بیک اپ",
+            "EXPLORERTAB": "ایکسپلورر",
+            "DEVELOPERTAB": "ڈویلپر",
             "NETWORK": {
                 "PROXY": "SOCKS5 پراکسی کے ذریعے جڑیں۔",
                 "PROXYIP": "پراکسی آئی پی",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "بند ہونے پر کم سے کم کریں۔",
                 "BEHAVIOURTITLE": "سسٹم ٹرے اور ونڈو سلوک"
             },
-            "BACKUPTAB": "بیک اپ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "خودکار بیک اپ",
                 "ENABLED": "ایک شیڈول پر wallet.dat کا خودکار طور پر بیک اپ لیں۔",
                 "ENABLEDINFO": "ایک شیڈول پر آپ کی والیٹ فائل کا ایک تازہ بیک اپ بناتا ہے، لہذا اگر کچھ غلط ہو جائے تو ایک حالیہ کاپی ہمیشہ دستیاب رہتی ہے۔",
+                "INTERVALLABEL": "ہر (دن) بیک اپ",
                 "LASTBACKUP": "آخری بیک اپ:",
                 "NEVERBACKEDUP": "ابھی تک کوئی خودکار بیک اپ نہیں بنایا گیا ہے۔",
                 "BACKUPNOWBUTTON": "ابھی بیک اپ کریں۔",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "ڈیفالٹ پر ری سیٹ کریں۔",
                 "PRUNETITLE": "بیک اپ ہسٹری",
                 "PRUNEINFO": "پرانے خودکار بیک اپز کو حذف کر دیا جاتا ہے اس لیے یہ فولڈر ہمیشہ کے لیے نہیں بڑھتا ہے - صرف سب سے حالیہ ذیل میں رکھے گئے ہیں۔",
-                "KEEPCOUNTLABEL": "آخری رکھیں",
-                "INTERVALLABEL": "ہر (دن) بیک اپ"
+                "KEEPCOUNTLABEL": "آخری رکھیں"
             },
-            "EXPLORERTAB": "ایکسپلورر",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "بلاک ایکسپلورر",
                 "BLOCKEXPLORERINFO": "بلاک ایکسپلورر پر ٹرانزیکشن دیکھتے وقت سائٹ کھل گئی (مثلاً ٹرانزیکشن پر دائیں کلک کریں > ایکسپلورر پر دیکھیں)۔",
@@ -259,25 +298,31 @@
                 "MAINNET": "مین نیٹ",
                 "TESTNET": "ٹیسٹ نیٹ",
                 "REGTEST": "ریجسٹ کریں۔"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "ڈویلپر موڈ",
+                "DEVMODEINFO": "بطور ڈیفالٹ آف اور صرف ڈویلپرز کے لیے ہے۔ اسے فعال کرنے سے RPC کنکشن کو اوور رائڈ کرنے کے اختیارات ظاہر ہوتے ہیں - معیاری صارفین کو اسے چھوڑ دینا چاہیے۔",
+                "DEVMODELABEL": "ڈیولپر موڈ کو فعال کریں۔",
+                "WARNING": "یہ ترتیبات صرف ترقیاتی مقاصد کے لیے ہیں۔ ان کو تبدیل کرنے سے بٹوے کو ڈیمون سے جڑنے سے بالکل بھی روکا جا سکتا ہے - اسے صرف اس صورت میں استعمال کریں جب آپ جانتے ہوں کہ آپ کیا کر رہے ہیں۔",
+                "RPCHOSTTITLE": "آر پی سی کنکشن",
+                "RPCHOSTINFO": "پہلے سے طے شدہ طور پر اونچائی ڈیمون سے جڑ جاتی ہے یہ اس مشین (127.0.0.1) پر خود کو منظم کرتا ہے۔ ان کو اوور رائیڈ کرنے سے یہ اس کے بجائے ایک مختلف ڈیمون سے جڑنے دیتا ہے - مثال کے طور پر ایک ریموٹ ریجسٹ مثال، مقامی طور پر چلانے کی ضرورت کے بغیر۔ اگر کنکشن کامیاب ہو جاتا ہے تو، Altitude اپنا مقامی ڈیمون ڈاؤن لوڈ یا شروع نہیں کرے گا۔ ٹارگٹ ڈیمون کے rpcallowip کو اس کنکشن کی اجازت دینی چاہیے، اور نیچے rpcuser/rpcpassword کو اس کی ترتیب سے مماثل ہونا چاہیے۔ فوری طور پر اثر انداز ہوتا ہے، دوبارہ شروع کرنے کی ضرورت نہیں ہے.",
+                "RPCHOSTLABEL": "RPC میزبان",
+                "RPCPORTLABEL": "آر پی سی پورٹ",
+                "RPCUSERLABEL": "RPC صارف نام",
+                "RPCPASSWORDLABEL": "RPC پاس ورڈ"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "جائزہ",
-            "TRANSACTIONSTAB": "لین دین",
-            "ADDRESSTABS": "پتے"
-        },
-        "CURRENCY": {
-            "TITLE": "ڈسپلے کرنسی کو منتخب کریں۔"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "ڈیش بورڈ",
             "SEND": "بھیجیں۔",
+            "CREATECONTRACT": "معاہدہ بنائیں",
             "RECEIVE": "وصول کریں۔",
             "TRANSACTIONS": "لین دین",
             "STAKING": "سٹیکنگ",
             "MASTERNODES": "ماسٹر نوڈس",
+            "EXPLORER": "بلاک ایکسپلورر",
             "SYNC": {
                 "CONNECTING": "جڑ رہا ہے۔",
                 "NOBLOCKS": "بلاکس کا انتظار ہے۔",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "پرس فی الحال اسٹیک نہیں کر رہا ہے۔",
                 "MASTERNODEON": "ماسٹرنوڈ فی الحال چل رہا ہے۔",
                 "MASTERNODEOFF": "ماسٹرنوڈ فی الحال نہیں چل رہا ہے۔"
-            },
-            "EXPLORER": "بلاک ایکسپلورر"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "ویب 3 سائٹ کا پتہ درج کریں۔",
+            "GOBUTTON": "جاؤ",
+            "QUICKLAUNCH": "فوری لانچ",
+            "DEVTOOLS": "ڈویلپر ٹولز کھولیں۔",
+            "ADDLINK": "لنک شامل کریں۔",
+            "LINKNAMEPLACEHOLDER": "نام",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "محفوظ کریں۔",
+            "CANCEL": "منسوخ کریں۔",
+            "REMOVE": "ہٹا دیں۔",
+            "REMOVECONFIRM": "اس فوری لنک کو ہٹا دیں؟",
+            "LINKEXISTS": "وہ لنک پہلے سے ہی آپ کی فوری لانچ لسٹ میں ہے۔",
+            "LINKINVALID": "ایک درست سائٹ کا پتہ درج کریں۔",
+            "LINKNETWORKLABEL": "نیٹ ورک",
+            "LOADFAILED": "سائٹ لوڈ کرنے میں ناکام",
+            "SECURESITE": "کنکشن محفوظ ہے - درست SSL سرٹیفکیٹ",
+            "INSECURESITE": "کنکشن محفوظ نہیں ہے۔",
+            "INVALIDCERTSITE": "کنکشن نجی نہیں ہے - غلط یا ناقابل اعتماد SSL سرٹیفکیٹ"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "اپنا والیٹ پاسفریز درج کریں۔",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core کے لیے ایک اپ ڈیٹ دستیاب ہے۔ کیا آپ اسے ابھی انسٹال کرنا چاہیں گے؟",
             "WALLETUPDATETITLE": "اونچائی کی تازہ کاری دستیاب ہے۔",
             "WALLETUPDATEINFO": "اونچائی کے لیے ایک اپ ڈیٹ دستیاب ہے۔ کیا آپ اسے ابھی ڈاؤن لوڈ کرنا چاہیں گے؟",
+            "WALLETUPDATEREADYTITLE": "اونچائی کی تازہ کاری تیار ہے۔",
+            "WALLETUPDATEREADYINFO": "اپ ڈیٹ ڈاؤن لوڈ ہو چکا ہے۔ اسے انسٹال کرنے کے لیے ابھی بلندی کو دوبارہ شروع کریں؟",
+            "WALLETUPDATERESTARTBUTTON": "دوبارہ شروع کریں اور انسٹال کریں۔",
+            "WALLETUPDATELATERBUTTON": "بعد میں",
             "CLIENTUPDATEBUTTON": "اپ ڈیٹ کریں۔",
             "CLIENTUPDATECANCELBUTTON": "اپ ڈیٹ نہ کریں۔",
             "CLIENTUPDATESKIPBUTTON": "اس اپ ڈیٹ کو چھوڑ دیں۔",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "آپ نے اپنی والیٹ فائل کا جو بھی سابقہ بیک اپ بنایا ہے اسے نئی تیار کردہ، انکرپٹڈ والیٹ فائل سے تبدیل کیا جانا چاہیے۔ سیکورٹی وجوہات کی بناء پر، جیسے ہی آپ نیا، انکرپٹڈ والیٹ استعمال کرنا شروع کریں گے، غیر انکرپٹڈ والیٹ فائل کے پچھلے بیک اپ بیکار ہو جائیں گے۔",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "میٹرکس کور غیر متوقع طور پر رک گیا۔",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core میں ایک مسئلہ تھا جس کی وجہ سے یہ ختم ہو گیا ہے۔ مسائل کے لیے اپنی debug.log فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
+            "CLIENTUNKNOWNERRORTITLE": "میٹرکس کور کمیونیکیشن کی خرابی۔",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core کے ساتھ مواصلت کرنے میں ایک مسئلہ تھا۔ مسائل کے لیے اپنی debug.log فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
+            "BOOTSTRAPFAILEDTITLE": "میٹرکس کور بوٹسٹریپ ناکام ہو گیا۔",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core کو بوٹسٹریپ کرنے میں ایک مسئلہ تھا۔ مسائل کے لیے اپنی Altitude لاگ فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
+            "BOOTSTRAPOFFERTITLE": "والیٹ نمایاں طور پر پرانا ہے۔",
+            "BOOTSTRAPOFFERINFO": "ایک حالیہ بوٹسٹریپ دستیاب ہے جو Metrix Core کو تیزی سے اپ ٹو ڈیٹ کر سکتا ہے۔ اس کے بجائے معمول کی مطابقت پذیری کے ساتھ جاری رکھنے کو مکمل ہونے میں کئی دن لگ سکتے ہیں، کیونکہ آپ کے بٹوے کو ہر اس بلاک کو ڈاؤن لوڈ کرنے اور اس کی تصدیق کرنے کی ضرورت ہے جو اس سے چھوٹ گیا ہے۔",
+            "BOOTSTRAPOFFERBUTTON": "بوٹسٹریپ ڈاؤن لوڈ کریں۔",
+            "BOOTSTRAPOFFERCANCEL": "نارمل مطابقت پذیری جاری رکھیں",
+            "BOOTSTRAPSPACEINFO": "بوٹسٹریپ کو ڈاؤن لوڈ کرنے اور نکالنے کے لیے کافی خالی جگہ نہیں ہے۔ مطلوبہ: {ضروری}، دستیاب: {مفت}۔ کچھ جگہ خالی کریں اور دوبارہ کوشش کریں۔",
+            "STARTUPFAILEDTITLE": "میٹرکس کور اسٹارٹ اپ ناکام ہوگیا۔",
+            "STARTUPFAILEDINFO": "Metrix Core شروع کرنے میں ایک خرابی تھی۔ مسائل کے لیے اپنی Altitude لاگ فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ریکوری ٹولز",
             "CLIENTINVALIDCONFIGTITLE": "غلط metrix.conf کنفیگریشن",
             "CLIENTINVALIDCONFIGINFO": "آپ کے metrix.conf میں ایک غلط ماسٹر نوڈ سیٹ اپ ہے جس کی وجہ سے Metrix Core فوری طور پر باہر نکل جائے گا۔ براہ کرم اس فائل کو چیک کریں۔",
             "ADDREMOTEMNTITLE": "ریموٹ ماسٹرنوڈ شامل کریں۔",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "ماسٹرنوڈ پرائیویٹ کلید",
             "ADDREMOTEMNTXHASH": "ماسٹرنوڈ Trx ہیش",
             "ADDREMOTEMNTXINDEX": "ماسٹرنوڈ Trx انڈیکس",
-            "BOOTSTRAPFAILEDTITLE": "میٹرکس کور بوٹسٹریپ ناکام ہو گیا۔",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core کو بوٹسٹریپ کرنے میں ایک مسئلہ تھا۔ مسائل کے لیے اپنی Altitude لاگ فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ریکوری ٹولز",
-            "STARTUPFAILEDTITLE": "میٹرکس کور اسٹارٹ اپ ناکام ہوگیا۔",
-            "STARTUPFAILEDINFO": "Metrix Core شروع کرنے میں ایک خرابی تھی۔ مسائل کے لیے اپنی Altitude لاگ فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
-            "CLIENTUNKNOWNERRORTITLE": "میٹرکس کور کمیونیکیشن کی خرابی۔",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core کے ساتھ مواصلت کرنے میں ایک مسئلہ تھا۔ مسائل کے لیے اپنی debug.log فائل کو چیک کرنے کی سفارش کی جاتی ہے۔",
             "UNENROLLGOVERNORTITLE": "گورنر کے اندراج کی تصدیق کریں۔",
             "UNENROLLGOVERNORCONTENT": "کیا آپ واقعی اپنے گورنر کا اندراج ختم کرنا چاہتے ہیں؟ اب آپ چین گورننس پر ووٹ نہیں دے سکیں گے۔",
-            "WALLETUPDATEREADYTITLE": "اونچائی کی تازہ کاری تیار ہے۔",
-            "WALLETUPDATEREADYINFO": "اپ ڈیٹ ڈاؤن لوڈ ہو چکا ہے۔ اسے انسٹال کرنے کے لیے ابھی بلندی کو دوبارہ شروع کریں؟",
-            "WALLETUPDATERESTARTBUTTON": "دوبارہ شروع کریں اور انسٹال کریں۔",
-            "WALLETUPDATELATERBUTTON": "بعد میں",
             "DAPPCONNECTTITLE": "سائٹ سے جڑیں۔",
             "DAPPCONNECTINFO": "یہ سائٹ آپ کے بٹوے سے منسلک ہونا اور آپ کا پتہ اور بیلنس دیکھنا چاہتی ہے۔",
             "DAPPCONNECTBUTTON": "جڑیں۔",
+            "DAPPCONNECTADDRESSLABEL": "پتہ",
+            "DAPPAPPROVEBUTTON": "منظور کرو",
             "DAPPREJECTBUTTON": "رد کرنا",
             "DAPPSENDTITLE": "معاہدہ لین دین کی درخواست",
             "DAPPSENDINFO": "یہ سائٹ آپ کے بٹوے سے معاہدہ کا لین دین بھیجنے کی درخواست کر رہی ہے۔",
-            "DAPPSIGNTITLE": "پیغام کی درخواست پر دستخط کریں۔",
-            "DAPPSIGNINFO": "یہ سائٹ آپ کے بٹوے کے پتے کے ساتھ ایک پیغام پر دستخط کرنے کی درخواست کر رہی ہے۔",
-            "DAPPNOTREADY": "ابھی تک سائٹ سے منسلک نہیں ہو سکتا - Metrix Core ابھی بھی شروع ہو رہا ہے۔",
-            "DAPPNOWALLET": "سائٹ سے منسلک نہیں ہو سکتا - پرس کا کوئی پتہ دستیاب نہیں ہے۔",
-            "DAPPAPPROVEBUTTON": "منظور کرو",
-            "DAPPCONNECTADDRESSLABEL": "پتہ",
             "DAPPSENDSITELABEL": "سائٹ",
             "DAPPSENDCONTRACTLABEL": "معاہدہ کا پتہ",
             "DAPPSENDAMOUNTLABEL": "رقم",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "زیادہ سے زیادہ نیٹ ورک فیس",
             "DAPPSENDMAXTOTALLABEL": "زیادہ سے زیادہ کل",
             "DAPPSENDDATALABEL": "معاہدہ کا ڈیٹا",
+            "DAPPSIGNTITLE": "پیغام کی درخواست پر دستخط کریں۔",
+            "DAPPSIGNINFO": "یہ سائٹ آپ کے بٹوے کے پتے کے ساتھ ایک پیغام پر دستخط کرنے کی درخواست کر رہی ہے۔",
             "DAPPSIGNMESSAGELABEL": "پیغام",
-            "BOOTSTRAPOFFERTITLE": "والیٹ نمایاں طور پر پرانا ہے۔",
-            "BOOTSTRAPOFFERINFO": "ایک حالیہ بوٹسٹریپ دستیاب ہے جو Metrix Core کو تیزی سے اپ ٹو ڈیٹ کر سکتا ہے۔ اس کے بجائے معمول کی مطابقت پذیری کے ساتھ جاری رکھنے کو مکمل ہونے میں کئی دن لگ سکتے ہیں، کیونکہ آپ کے بٹوے کو ہر اس بلاک کو ڈاؤن لوڈ کرنے اور اس کی تصدیق کرنے کی ضرورت ہے جو اس سے چھوٹ گیا ہے۔",
-            "BOOTSTRAPOFFERBUTTON": "بوٹسٹریپ ڈاؤن لوڈ کریں۔",
-            "BOOTSTRAPOFFERCANCEL": "نارمل مطابقت پذیری جاری رکھیں",
-            "BOOTSTRAPSPACEINFO": "بوٹسٹریپ کو ڈاؤن لوڈ کرنے اور نکالنے کے لیے کافی خالی جگہ نہیں ہے۔ مطلوبہ: {ضروری}، دستیاب: {مفت}۔ کچھ جگہ خالی کریں اور دوبارہ کوشش کریں۔"
+            "DAPPNOTREADY": "ابھی تک سائٹ سے منسلک نہیں ہو سکتا - Metrix Core ابھی بھی شروع ہو رہا ہے۔",
+            "DAPPNOWALLET": "سائٹ سے منسلک نہیں ہو سکتا - پرس کا کوئی پتہ دستیاب نہیں ہے۔"
         },
         "ADDRESSBOOK": {
             "TITLE": "ایڈریس بک",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "موجودہ نیٹ ورک"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "ویب 3 سائٹ کا پتہ درج کریں۔",
-            "GOBUTTON": "جاؤ",
-            "QUICKLAUNCH": "فوری لانچ",
-            "DEVTOOLS": "ڈویلپر ٹولز کھولیں۔",
-            "ADDLINK": "لنک شامل کریں۔",
-            "LINKNAMEPLACEHOLDER": "نام",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "محفوظ کریں۔",
-            "CANCEL": "منسوخ کریں۔",
-            "REMOVE": "ہٹا دیں۔",
-            "REMOVECONFIRM": "اس فوری لنک کو ہٹا دیں؟",
-            "LINKEXISTS": "وہ لنک پہلے سے ہی آپ کی فوری لانچ لسٹ میں ہے۔",
-            "LINKINVALID": "ایک درست سائٹ کا پتہ درج کریں۔",
-            "LINKNETWORKLABEL": "نیٹ ورک",
-            "LOADFAILED": "سائٹ لوڈ کرنے میں ناکام",
-            "SECURESITE": "کنکشن محفوظ ہے - درست SSL سرٹیفکیٹ",
-            "INSECURESITE": "کنکشن محفوظ نہیں ہے۔",
-            "INVALIDCERTSITE": "کنکشن نجی نہیں ہے - غلط یا ناقابل اعتماد SSL سرٹیفکیٹ"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "بیک اپ والیٹ...",
             "SIGNMESSAGE": "دستخطی پیغام...",
             "VERIFYMESSAGE": "پیغام کی تصدیق کریں...",
-            "LOCALE": "زبان...",
-            "RESTARTCORE": "میٹرکس کور کو دوبارہ شروع کریں۔",
-            "EXIT": "باہر نکلیں۔",
             "OPTIONS": "اختیارات...",
+            "LOCALE": "زبان...",
             "CURRENCIES": "ڈسپلے کرنسی...",
-            "ALTITUDEREFRESH": "اونچائی کا ڈیٹا ریفریش کریں۔"
+            "RESTARTCORE": "میٹرکس کور کو دوبارہ شروع کریں۔",
+            "ALTITUDEREFRESH": "اونچائی کا ڈیٹا ریفریش کریں۔",
+            "EXIT": "باہر نکلیں۔"
         },
         "ENCRYPT": {
             "TITLE": "خفیہ کاری",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "ٹوٹل بیلنس",
+        "SPENDABLEBALANCE": "قابل خرچ بیلنس",
+        "PENDINGBALANCE": "زیر التواء بیلنس",
         "CANCELBUTTON": "منسوخ کریں۔",
         "DONEBUTTON": "ہو گیا",
         "OKBUTTON": "ٹھیک ہے",
+        "ACCEPTBUTTON": "قبول کریں۔",
         "CLEARALLBUTTON": "تمام صاف کریں۔",
         "ENTERACCOUNTLABEL": "اس پتے کے لیے ایک لیبل درج کریں۔",
         "ENTERADDRESSLABEL": "میٹرکس کا پتہ درج کریں۔",
@@ -464,11 +511,8 @@
         "SORTBY": "ترتیب دیں",
         "SEARCH": "تلاش کریں۔",
         "FEE": "فیس",
-        "ACCEPTBUTTON": "قبول کریں۔",
         "CONFIRMED": "تصدیق شدہ",
         "UNCONFIRMED": "غیر تصدیق شدہ",
-        "PENDINGBALANCE": "زیر التواء بیلنس",
-        "SPENDABLEBALANCE": "قابل خرچ بیلنس",
         "SAVEBUTTON": "محفوظ کریں۔"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "میٹرکس کور کو دوبارہ شروع کیا جا رہا ہے...",
         "BOOTSTRAPPING": "بوٹسٹریپ ڈاؤن لوڈ ہو رہا ہے...",
         "BOOTSTRAPEXTRACTING": "بوٹسٹریپ نکالا جا رہا ہے...",
-        "TIMEREMAINING": "باقی:"
+        "TIMEREMAINING": "باقی:",
+        "DEVRPCOVERRIDEACTIVE": "ایک ڈویلپر RPC کنکشن اوور رائڈ سیٹ ہے (اختیارات > ڈویلپر) اور جواب نہیں دے رہا ہے۔ عام طور پر مقامی ڈیمون سے دوبارہ جڑنے کے لیے اسے صاف کریں۔",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC اوور رائیڈ کو صاف کریں اور دوبارہ جڑیں۔"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "نیا اکاؤنٹ کامیابی کے ساتھ بنایا گیا۔",
         "ADDRESSCOPIEDCLIPBOARD": "پتہ کلپ بورڈ پر کاپی ہو گیا۔",
+        "COPIEDCLIPBOARD": "کلپ بورڈ پر کاپی ہو گیا۔",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ٹرانزیکشنز کو کلپ بورڈ پر کاپی کیا گیا۔",
         "EMPTYFIELDS": "براہ کرم تمام فیلڈز کو پُر کریں۔",
         "NOUPDATE": "کوئی اپ ڈیٹ دستیاب نہیں ہے۔",
         "WALLETBACKEDUP": "والیٹ بیک اپ کامیاب",
+        "WALLETBACKUPFAILED": "خودکار والیٹ بیک اپ ناکام ہو گیا - اپنے بیک اپ کی جگہ اور دستیاب ڈسک کی جگہ چیک کریں۔",
         "PASSPHRASEMISMATCH": "آپ کے درج کردہ پاسفریز مماثل نہیں ہیں۔",
         "CHECKINGUPDATE": "اپ ڈیٹ کی جانچ ہو رہی ہے...",
         "CHECKINGUPDATEFAILED": "اپ ڈیٹ چیک کرنے سے قاصر۔ اپنا نیٹ ورک چیک کریں۔",
+        "WALLETUPDATEDOWNLOADING": "اپ ڈیٹ ڈاؤن لوڈ ہو رہا ہے...",
         "SENDINGEXCEEDSBALANCE": "آپ جو رقم بھیج رہے ہیں وہ آپ کے منتخب کردہ بیلنس سے زیادہ ہے۔",
         "MISSINGCHANGEADDRESS": "آپ کو تبدیلی کا پتہ بتانا ہوگا۔",
         "MISSINGDESTINATIONADDRESS": "آپ کو ایک منزل کا پتہ بتانا ہوگا۔",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "بٹوے کو خفیہ کر رہا ہے...",
         "CHANGINGPASSPHARASE": "پاسفریز تبدیل ہو رہا ہے...",
         "STARTINGMASTERNODE": "ماسٹر نوڈ شروع ہو رہا ہے...",
+        "STOPPINGMASTERNODE": "ماسٹر نوڈ کو روک رہا ہے...",
         "SENDINGTRANSACTION": "ٹرانزیکشن بھیجی جا رہی ہے...",
         "SIGNINGMESSAGE": "پیغام پر دستخط ہو رہا ہے...",
         "SIGNEDMESSAGE": "پیغام پر دستخط کیے گئے۔",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "پرس کھول رہا ہے...",
         "TRANSACTIONMISMATCH": "لین دین کی خرابی۔ براہ کرم دوبارہ کوشش کریں۔",
         "MINIMUMCONFIRMATIONS": "تمام ان پٹس کو خرچ کرنے سے پہلے کم از کم 1 تصدیق کی ضرورت ہوتی ہے۔",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ٹرانزیکشنز کو کلپ بورڈ پر کاپی کیا گیا۔",
-        "STOPPINGMASTERNODE": "ماسٹر نوڈ کو روک رہا ہے...",
         "FAILEDTOWRITECONFIG": "آپ کی metrix.conf فائل میں لکھنے میں ایک مسئلہ تھا۔ چیک کریں کہ فائل موجود ہے اور اونچائی کو لکھنے کی اجازت ہے۔",
         "NOPUBLICUP": "کوئی عوامی IP پتہ نہیں ملا۔ اپنا انٹرنیٹ کنکشن چیک کریں اور اونچائی کو دوبارہ شروع کریں۔",
         "CONFIGURINGLOCALMN": "مقامی ماسٹر نوڈ کو ترتیب دیا جا رہا ہے...",
         "REPORTINGISSUE": "تشخیصی معلومات حاصل کی جا رہی ہیں... یہ معلومات آپ کے کلپ بورڈ پر کاپی کر دی جائیں گی۔",
-        "WALLETUPDATEDOWNLOADING": "اپ ڈیٹ ڈاؤن لوڈ ہو رہا ہے...",
-        "WALLETBACKUPFAILED": "خودکار والیٹ بیک اپ ناکام ہو گیا - اپنے بیک اپ کی جگہ اور دستیاب ڈسک کی جگہ چیک کریں۔",
         "EXPLORERURLSAVED": "ایکسپلورر URL محفوظ ہو گیا۔",
         "EXPLORERURLRESET": "ایکسپلورر یو آر ایل کو ڈیفالٹ پر واپس کر دیا گیا۔",
         "EXPLORERURLINVALID": "یہ درست http(s) URL نہیں ہے۔",
-        "EXPLORERURLUNREACHABLE": "اس URL تک نہیں پہنچ سکا - اسے چیک کریں اور دوبارہ کوشش کریں۔"
+        "EXPLORERURLUNREACHABLE": "اس URL تک نہیں پہنچ سکا - اسے چیک کریں اور دوبارہ کوشش کریں۔",
+        "DEVRPCHOSTSAVED": "RPC ہوسٹ محفوظ ہو گیا۔",
+        "DEVRPCHOSTRESET": "RPC ہوسٹ کو ڈیفالٹ پر واپس کر دیا گیا (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "سکے موصول ہوئے۔",
+        "NEWTRANSACTION_TITLE_STAKE": "داؤ وصول کیا۔",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode انعام موصول ہوا۔"
     },
     "TIME": {
         "AFEWSECONDS": "چند سیکنڈ",
@@ -533,11 +587,6 @@
         "MONTHS": "مہینے",
         "AYEAR": "ایک سال",
         "YEARS": "سال"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "سکے موصول ہوئے۔",
-        "NEWTRANSACTION_TITLE_STAKE": "داؤ وصول کیا۔",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode انعام موصول ہوا۔"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "گورنرز ماہانہ بجٹ اور بلاکچین تبدیلیوں پر ووٹنگ کے ذمہ دار ہیں۔ آپ گورننس کنٹریکٹ میں درست کولیٹرل لاک کر کے گورنر بن سکتے ہیں۔",
                 "COLLATERAL": "ضمانت کی ضرورت ہے۔",
                 "ENROLL": "اندراج کریں۔",
+                "SELECTAGOVERNOR": "ایک اہل گورنر ایڈریس کا انتخاب کریں۔",
+                "GOVERNORNOTSELECTED": "کوئی اہل پتہ منتخب نہیں کیا گیا۔",
                 "CONFIRMENROLL": "آپ گورنر کے طور پر اندراج کرنے والے ہیں۔ یہ گورننس کنٹریکٹ کو مطلوبہ کولیٹرل کے ساتھ لین دین بھیجے گا۔ آپ کسی بھی وقت اندراج ختم کر سکتے ہیں۔",
                 "ISGOVERNORTITLE": "آپ ایک فعال گورنر ہیں!",
                 "ISGOVERNORDETAIL1": "گورنرز ماہانہ بجٹ اور بلاکچین تبدیلیوں پر ووٹنگ کے ذمہ دار ہیں۔",
                 "ISGOVERNORDETAIL2": "گورنر رہنے کے لیے آپ کو ہر 30 دن میں کم از کم 1 ووٹ میں حصہ لینا ہوگا۔",
                 "ISGOVERNORDETAIL3": "اگر ووٹ دینے کے لیے کچھ نہیں ہے تو آپ ایک فعال پنگ بھیج کر دستی طور پر اپنا اندراج جاری رکھ سکتے ہیں۔",
+                "MYGOVERNORADDRESS": "میرا گورنر کا خطاب",
                 "UNENROLL": "اندراج ختم کریں۔",
                 "PING": "ایکٹو پنگ بھیجیں۔",
                 "LASTPINGTITLE": "آخری پنگ",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "دن",
                 "GOVERNORVOTEMATURITYHOURS": "گھنٹے",
                 "GOVERNORVOTEMATURITYSUFFIX": "بالغ ہونے تک",
-                "MYGOVERNORADDRESS": "میرا گورنر کا خطاب",
-                "SELECTAGOVERNOR": "ایک اہل گورنر ایڈریس کا انتخاب کریں۔",
-                "GOVERNORNOTSELECTED": "کوئی اہل پتہ منتخب نہیں کیا گیا۔",
                 "NOTFULLYSYNCEDTITLE": "گورنر کا درجہ دستیاب نہیں ہے۔",
                 "NOTFULLYSYNCEDDETAIL": "جب آپ کا بلاک چین مکمل طور پر مطابقت پذیر ہو جائے گا تو آپ کی گورنر رجسٹریشن کی حیثیت ظاہر ہو جائے گی۔",
                 "DGPMIGRATIONTITLE": "ڈی جی پی مائیگریشن",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "آپ کی تجویز کامیابی کے ساتھ بنائی گئی ہے۔",
             "ENROLLINGGOVERNOR": "گورنر کے طور پر اندراج...",
             "ENROLLEDGOVERNOR": "آپ کے لین دین کی تصدیق ہونے کے بعد آپ کا اندراج مکمل ہو جائے گا۔",
-            "VOTINGONPROPOSAL": "تجویز ووٹ بھیج رہا ہے۔",
-            "VOTEDONPROPOSAL": "لین دین کی تصدیق ہونے کے بعد آپ کا ووٹ شمار کیا جائے گا۔",
             "PINGINGGOVERNOR": "پنگ بھیجی جا رہی ہے...",
             "PINGEDGOVERNOR": "پنگ کامیابی سے بھیج دی گئی۔ ٹرانزیکشن کی تصدیق ہونے کے بعد آپ کے گورنر کو اپ ڈیٹ کر دیا جائے گا۔",
+            "VOTINGONPROPOSAL": "تجویز ووٹ بھیج رہا ہے۔",
+            "VOTEDONPROPOSAL": "لین دین کی تصدیق ہونے کے بعد آپ کا ووٹ شمار کیا جائے گا۔",
             "UNENROLLINGGOVERNOR": "گورنر کا اندراج ختم کرنا...",
             "UNENROLLEDGOVERNOR": "لین دین بھیجا گیا۔ ٹرانزیکشن کی تصدیق ہونے کے بعد آپ کے گورنر کا اندراج ختم کر دیا جائے گا۔",
             "GOVERNORNOTMATURE": "آپ کا گورنر ابھی اتنا بالغ نہیں ہے کہ اس کارروائی کو انجام دے سکے۔"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "میٹرکس خریدیں۔",
+                "SEARCH": "تاریخ"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "آپ بھیجیں۔",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "لین دین کی تاریخ",
                 "SEARCHBUTTON": "تلاش کریں۔",
+                "SEARCHPLACEHOLDER": "MRX یا BTC ایڈریس درج کریں۔",
                 "TRANSACTIONDATE": "تاریخ",
                 "TRANSACTIONTYPE": "TX قسم",
                 "TRANSACTIONAMOUNT": "رقم",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "تصدیق شدہ",
                 "TRANSACTIONNOTCONFIRMED": "تصدیق شدہ نہیں۔",
                 "TRANSACTIONREFUNDED": "ریفنڈ - کم سے کم",
-                "AVGSWAPPRICE": "اوسط تبادلہ قیمت",
-                "SEARCHPLACEHOLDER": "MRX یا BTC ایڈریس درج کریں۔"
+                "AVGSWAPPRICE": "اوسط تبادلہ قیمت"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "سویپ ایڈریس تیار ہو رہا ہے...",
             "ALREADYHAVEADDRESS": "آپ کے پاس پہلے سے ہی اس میٹرکس ایڈریس سے منسلک ایک BTC پتہ ہے۔",
             "NOADDRESS": "آپ نے میٹرکس کا پتہ درج نہیں کیا۔"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "میٹرکس خریدیں۔",
-                "SEARCH": "تاریخ"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "چھپائیں",
                 "EMPTYTITLE": "ابھی تک کوئی ٹوکن نہیں ملے",
                 "EMPTYDETAIL": "اونچائی آپ کے پتے پر بھیجے گئے MRC20 اور MRC721 ٹوکنز کے لیے بلاک ایکسپلورر کو خود بخود چیک کرتا ہے، پھر آپ کے اپنے نوڈ کے خلاف ہر چیز کی براہ راست تصدیق کرتا ہے۔ اگر آپ کو اس کا معاہدہ پتہ معلوم ہے تو آپ دستی طور پر ٹوکن بھی شامل کر سکتے ہیں۔",
+                "EMPTYDETAILCHECKINGDISABLED": "خودکار ٹوکن چیکنگ بند ہے، اس لیے ٹوکنز کے لیے آپ کے پتے چیک نہیں کیے جا رہے ہیں۔ اسے اوپر دوبارہ آن کریں، یا اگر آپ کو اس کا معاہدہ پتہ معلوم ہے تو دستی طور پر ایک ٹوکن شامل کریں۔",
                 "HIDDENTITLE": "پوشیدہ ٹوکنز",
                 "CONTEXTMENUHIDE": "ٹوکن چھپائیں۔",
                 "ITEMSSUFFIX": "اشیاء",
-                "NONENUMERABLETOOLTIP": "یہ مجموعہ انفرادی آئٹمز کی فہرست سازی کی حمایت نہیں کرتا ہے - اس کے بجائے آپ کے پاس کتنی تعداد ہے۔"
+                "NONENUMERABLETOOLTIP": "یہ مجموعہ انفرادی آئٹمز کی فہرست سازی کی حمایت نہیں کرتا ہے - اس کے بجائے آپ کے پاس کتنی تعداد ہے۔",
+                "CHECKINGENABLED": "چیک کر رہا ہے۔",
+                "CHECKINGDISABLED": "چیکنگ آف",
+                "CHECKINGENABLEDTOOLTIP": "ٹوکن چیکنگ آن ہے - اونچائی وقفے وقفے سے ٹوکن کے لیے آپ کے پتے چیک کرتی ہے اور بیلنس کو تازہ کرتی ہے۔ آف کرنے کے لیے کلک کریں۔",
+                "CHECKINGDISABLEDTOOLTIP": "ٹوکن چیکنگ آف ہے - واپس آن کرنے کے لیے کلک کریں۔",
+                "CHECKINGDISABLEDNOTICE": "خودکار ٹوکن چیکنگ بند ہے۔ آپ کے پتے ٹوکنز کے لیے اسکین نہیں کیے جا رہے ہیں اور بیلنس اپ ڈیٹ نہیں ہوں گے۔ آپ اب بھی دستی طور پر ٹوکن شامل کر سکتے ہیں۔"
             },
             "ADDTOKEN": {
                 "TITLE": "ٹوکن شامل کریں۔",

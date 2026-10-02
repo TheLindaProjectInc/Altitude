@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Направи налог",
             "HIDEEMPTYACCOUNTS": "Сакриј неименоване празне налоге"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Преглед",
+            "TRANSACTIONSTAB": "Трансакције",
+            "ADDRESSTABS": "Адресе"
+        },
         "SEND": {
             "ADDRECIPIENT": "Додај примаоца",
             "SEND": "Пошаљи",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Датум",
             "TABLECOLUMNS_CONFIRMS": "Потврде",
             "ALL_SELECTUNSELECT": "Укључи/искључи све",
+            "TREEMODE": "Режим дрвета",
+            "LISTMODE": "Режим листе",
             "SENDAVAILABLE": "Користите расположиви салдо",
             "INPUTLOCKED": "Унос је закључан. Мораћете да откључате овај унос да бисте га потрошили.",
             "CONTEXTMENULOCKINPUT": "Закључај унос",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Након накнаде",
             "QUANTITY": "Количина",
             "BYTES": "Бајтови",
-            "TREEMODE": "Режим дрвета",
-            "LISTMODE": "Режим листе",
             "ALERTFEECHANGETITLE": "Промена накнаде",
             "ALERTFEECHANGECONTENT": "Стварна накнада за трансакцију је већа од очекиване. Молимо вас да потврдите нову накнаду:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Направи уговор",
+            "INFO": "Распоредите паметни уговор на мрежу слањем његовог компајлираног бајткода. Ово је функција основног ланца - двапут проверите свој бајткод и подешавања гаса пре распоређивања, распоређивање се не може поништити.",
+            "FROM": "Од",
+            "BYTECODE": "Бајткод",
+            "BYTECODEPLACEHOLDER": "Налепите компајлирани бајткод уговора (хекс)",
+            "INVALIDBYTECODE": "Бајткод мора бити важећи хексадецимални стринг (0-9, a-f) са парним бројем знакова",
+            "GASLIMIT": "Ограничење гаса",
+            "GASLIMITRANGE": "Домет",
+            "GASPRICE": "Цена гаса (MRX по јединици гаса)",
+            "GASPRICEMIN": "Минимум",
+            "ESTIMATEDMAXCOST": "Процењени максимални трошак",
+            "DEPLOYBUTTON": "Уговор о распоређивању",
+            "INCOMPLETEFORM": "Изаберите адресу пошиљаоца, унесите важећи бајткод и подесите важеће ограничење/цену гаса",
+            "HIGHGASPRICETITLE": "Висока цена гаса",
+            "HIGHGASPRICEINFO": "Цена гаса коју сте поставили је необично висока. Ово примењивање би могло да кошта до:",
+            "DEPLOYING": "Примена уговора...",
+            "DEPLOYED": "Распоређивање уговора је послато",
+            "RESULTTITLE": "Резултат распоређивања",
+            "STATUS": "Статус",
+            "STATUSPENDING": "Чека се потврда...",
+            "STATUSCONFIRMED": "Успешно распоређено",
+            "STATUSFAILED": "Распоређивање није успело",
+            "TXID": "ИД трансакције",
+            "SENDER": "Пошиљалац",
+            "CONTRACTADDRESS": "Адреса уговора",
+            "GASUSED": "Коришћени гас",
+            "DONEBUTTON": "Готово",
+            "DEPLOYANOTHERBUTTON": "Распореди још једног"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Трансакције",
+            "COPYBLOCKHASH": "Копирај хеш блока",
+            "COPYTXID": "Копирај ИД трансакције",
+            "COPYACCOUNT": "Копирај име налога",
+            "COPYADDRESS": "Копирај адресу",
+            "COPYAMOUNT": "Копирај износ",
+            "COPTBLOCKINDEX": "Копирај индекс блока",
+            "EXPLORER": "Отвори у Block Explorer-у"
         },
         "STAKING": {
             "UNLOCK": "Откључај за улагање",
@@ -68,13 +113,13 @@
             "IP": "ИП",
             "ADDRESS": "Адреса",
             "ENABLED": "Омогућено",
-            "STARTBUTTON": "Покрени локално",
-            "STARTALIASBUTTON": "Почетни алиас",
-            "STARTALLBUTTON": "Покрени све",
             "NOMASTERNODES": "Немате ниједан мастернод",
             "NOMNOUTPUTS": "Нису пронађени излази мастернода. Да бисте покренули локални мастернод, пошаљите тачно 2, 5, 25, 50 или 100 милиона новчића на адресу вашег мастернода и сачекајте 15 потврда.",
+            "STARTBUTTON": "Покрени локално",
             "STOPBUTTON": "Заустави локално",
+            "STARTALIASBUTTON": "Почетни алиас",
             "STOPALIASBUTTON": "Заустави алијас",
+            "STARTALLBUTTON": "Покрени све",
             "ADDREMOTE": "Додај удаљени мастернод",
             "REMOVEMN": "Уклони мастернод",
             "ADDLOCAL": "Подесите локални мастернод",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Опште",
                 "COREVERSION": "Основна верзија",
+                "ALTITUDEVERSION": "Верзија за надморску висину",
                 "PROTOCOLVERSION": "Верзија протокола",
                 "WALLETVERSION": "Верзија датотеке Wallet.dat",
                 "NETWORKTITLE": "Мрежа",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Број мастернодова",
                 "BLOCKCHAINTITLE": "Блок ланац",
                 "NUMBERBLOCKS": "Тренутни број блокова",
-                "BESTBLOCKTTIME": "Последње време блока",
-                "ALTITUDEVERSION": "Верзија за надморску висину"
+                "BESTBLOCKTTIME": "Последње време блока"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Добродошли у Metrix Core RPC конзолу. Унесите помоћ за преглед доступних команди.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Изаберите језик"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Трансакције",
-            "COPYBLOCKHASH": "Копирај хеш блока",
-            "COPYTXID": "Копирај ИД трансакције",
-            "COPYACCOUNT": "Копирај име налога",
-            "COPYADDRESS": "Копирај адресу",
-            "COPYAMOUNT": "Копирај износ",
-            "COPTBLOCKINDEX": "Копирај индекс блока",
-            "EXPLORER": "Отвори у Block Explorer-у"
+        "CURRENCY": {
+            "TITLE": "Изаберите валуту приказа"
         },
         "EXPLORER": {
             "TITLE": "Блок истраживач",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Мрежа",
             "WINDOTAB": "Прозор",
+            "BACKUPTAB": "Резервна копија",
+            "EXPLORERTAB": "Истраживач",
+            "DEVELOPERTAB": "Програмер",
             "NETWORK": {
                 "PROXY": "Повежите се преко SOCKS5 проксија",
                 "PROXYIP": "ИП проксија",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Минимизирај при затварању",
                 "BEHAVIOURTITLE": "Понашање системске палете и прозора"
             },
-            "BACKUPTAB": "Резервна копија",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Аутоматска резервна копија",
                 "ENABLED": "Аутоматски направите резервну копију датотеке wallet.dat по распореду",
                 "ENABLEDINFO": "Прави нову резервну копију датотеке вашег новчаника по распореду, тако да је скорашња копија увек доступна ако нешто крене наопако.",
+                "INTERVALLABEL": "Прави резервну копију сваких (дана)",
                 "LASTBACKUP": "Последња резервна копија:",
                 "NEVERBACKEDUP": "Још није направљена аутоматска резервна копија.",
                 "BACKUPNOWBUTTON": "Направи резервну копију сада",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Ресетуј на подразумевано",
                 "PRUNETITLE": "Историја резервних копија",
                 "PRUNEINFO": "Старије аутоматске резервне копије се бришу како се ова фасцикла не би заувек повећавала - чувају се само најновије испод.",
-                "KEEPCOUNTLABEL": "Остави последње",
-                "INTERVALLABEL": "Прави резервну копију сваких (дана)"
+                "KEEPCOUNTLABEL": "Остави последње"
             },
-            "EXPLORERTAB": "Истраживач",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Блок истраживач",
                 "BLOCKEXPLORERINFO": "Сајт се отворио приликом прегледа трансакције у прегледачу блокова (нпр. десни клик на трансакцију > Прикажи у прегледачу).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Главна мрежа",
                 "TESTNET": "Тестнет",
                 "REGTEST": "Регистарски тест"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Режим за програмере",
+                "DEVMODEINFO": "Искључено је подразумевано и намењено је само програмерима. Омогућавањем ове опције откривају се опције за заобилђавање RPC конекције - стандардни корисници би требало да је оставе искључену.",
+                "DEVMODELABEL": "Омогући режим за програмере",
+                "WARNING": "Ова подешавања су само у сврху развоја. Њихова промена може спречити новчаник да се уопште повеже са демоном - користите ово само ако знате шта радите.",
+                "RPCHOSTTITLE": "RPC веза",
+                "RPCHOSTINFO": "Подразумевано, Altitude се повезује са демоном којим сам управља, на овој машини (127.0.0.1). Заобилажење ових подешавања му омогућава да се повеже са другим демоном - на пример, са удаљеном инстанцом regtest-а, без потребе за локалним покретањем. Ако веза успе, Altitude неће преузети нити покренути сопствени локални демон. rpcallowip циљног демона мора дозволити ову везу, а rpcuser/rpcpassword испод мора се подударати са његовом конфигурацијом. Ступа на снагу одмах, није потребно поновно покретање.",
+                "RPCHOSTLABEL": "RPC хост",
+                "RPCPORTLABEL": "RPC порт",
+                "RPCUSERLABEL": "RPC корисничко име",
+                "RPCPASSWORDLABEL": "RPC лозинка"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Преглед",
-            "TRANSACTIONSTAB": "Трансакције",
-            "ADDRESSTABS": "Адресе"
-        },
-        "CURRENCY": {
-            "TITLE": "Изаберите валуту приказа"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Контролна табла",
             "SEND": "Пошаљи",
+            "CREATECONTRACT": "Направи уговор",
             "RECEIVE": "Прими",
             "TRANSACTIONS": "Трансакције",
             "STAKING": "Улагање",
             "MASTERNODES": "Мастернодови",
+            "EXPLORER": "Блок истраживач",
             "SYNC": {
                 "CONNECTING": "Повезивање",
                 "NOBLOCKS": "Чекање на блокове",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Новчаник тренутно не улаже средства",
                 "MASTERNODEON": "Мастернод тренутно ради",
                 "MASTERNODEOFF": "Мастернод тренутно не ради"
-            },
-            "EXPLORER": "Блок истраживач"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Унесите адресу web3 сајта",
+            "GOBUTTON": "Иди",
+            "QUICKLAUNCH": "Брзо покретање",
+            "DEVTOOLS": "Отвори алате за програмере",
+            "ADDLINK": "Додај линк",
+            "LINKNAMEPLACEHOLDER": "Име",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Сачувај",
+            "CANCEL": "Откажи",
+            "REMOVE": "Уклони",
+            "REMOVECONFIRM": "Уклонити овај брзи линк?",
+            "LINKEXISTS": "Тај линк је већ на вашој листи за брзо покретање",
+            "LINKINVALID": "Унесите важећу адресу сајта",
+            "LINKNETWORKLABEL": "Мрежа",
+            "LOADFAILED": "Учитавање сајта није успело",
+            "SECURESITE": "Веза је безбедна - важећи SSL сертификат",
+            "INSECURESITE": "Веза није безбедна",
+            "INVALIDCERTSITE": "Веза није приватна - неважећи или непоуздан SSL сертификат"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Унесите лозинку за новчаник",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Доступно је ажурирање за Metrix Core. Да ли желите да га инсталирате сада?",
             "WALLETUPDATETITLE": "Доступно је ажурирање надморске висине",
             "WALLETUPDATEINFO": "Доступно је ажурирање за Altitude. Да ли желите да га преузмете сада?",
+            "WALLETUPDATEREADYTITLE": "Ажурирање надморске висине је спремно",
+            "WALLETUPDATEREADYINFO": "Ажурирање је преузето. Поново покрените Altitude да бисте га инсталирали?",
+            "WALLETUPDATERESTARTBUTTON": "Поново покрени и инсталирај",
+            "WALLETUPDATELATERBUTTON": "Касније",
             "CLIENTUPDATEBUTTON": "Ажурирање",
             "CLIENTUPDATECANCELBUTTON": "Не ажурирај",
             "CLIENTUPDATESKIPBUTTON": "Прескочи ово ажурирање",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Све претходне резервне копије које сте направили за датотеку новчаника требало би да буду замењене новогенерисаном, шифрованом датотеком новчаника. Из безбедносних разлога, претходне резервне копије нешифроване датотеке новчаника постаће бескорисне чим почнете да користите нови, шифровани новчаник.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Метрикс језгро је неочекивано заустављено",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Дошло је до проблема са Metrix Core-ом који је довео до његовог прекида рада. Препоручује се да проверите датотеку debug.log да бисте пронашли евентуалне проблеме.",
+            "CLIENTUNKNOWNERRORTITLE": "Грешка у комуникацији са језгром Metrix-а",
+            "CLIENTUNKNOWNERRORINFO": "Дошло је до проблема у комуникацији са Metrix Core-ом. Препоручује се да проверите датотеку debug.log да бисте проверили да ли постоје проблеми.",
+            "BOOTSTRAPFAILEDTITLE": "Покретање система Metrix Core није успело",
+            "BOOTSTRAPFAILEDINFO": "Дошло је до проблема приликом покретања Metrix Core-а. Препоручује се да проверите датотеку дневника Altitude да бисте проверили евентуалне проблеме.",
+            "BOOTSTRAPOFFERTITLE": "Новчаник је знатно застарео",
+            "BOOTSTRAPOFFERINFO": "Доступна је најновија верзија за покретање система (bootstrap) која може брзо ажурирати Metrix Core. Наставак са нормалном синхронизацијом може потрајати неколико дана, јер ваш новчаник мора да преузме и верификује сваки блок који је пропустио.",
+            "BOOTSTRAPOFFERBUTTON": "Преузми Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Настави нормалну синхронизацију",
+            "BOOTSTRAPSPACEINFO": "Нема довољно слободног простора на диску за преузимање и распакивање bootstrap датотеке. Потребно: {required}, Доступно: {free}. Ослободите простор и покушајте поново.",
+            "STARTUPFAILEDTITLE": "Покретање Metrix Core-а није успело",
+            "STARTUPFAILEDINFO": "Дошло је до грешке при покретању Metrix Core-а. Препоручује се да проверите датотеку дневника Altitude да бисте проверили евентуалне проблеме.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Алати за опоравак",
             "CLIENTINVALIDCONFIGTITLE": "Неважећа конфигурација датотеке metrix.conf",
             "CLIENTINVALIDCONFIGINFO": "Ваш metrix.conf има неважеће подешавање мастернода што ће довести до тренутног затварања Metrix Core-а. Молимо вас да проверите овај фајл.",
             "ADDREMOTEMNTITLE": "Додај удаљени мастернод",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Приватни кључ мастернода",
             "ADDREMOTEMNTXHASH": "Мастернод ТРX хеш",
             "ADDREMOTEMNTXINDEX": "Мастернод ТРX индекс",
-            "BOOTSTRAPFAILEDTITLE": "Покретање система Metrix Core није успело",
-            "BOOTSTRAPFAILEDINFO": "Дошло је до проблема приликом покретања Metrix Core-а. Препоручује се да проверите датотеку дневника Altitude да бисте проверили евентуалне проблеме.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Алати за опоравак",
-            "STARTUPFAILEDTITLE": "Покретање Metrix Core-а није успело",
-            "STARTUPFAILEDINFO": "Дошло је до грешке при покретању Metrix Core-а. Препоручује се да проверите датотеку дневника Altitude да бисте проверили евентуалне проблеме.",
-            "CLIENTUNKNOWNERRORTITLE": "Грешка у комуникацији са језгром Metrix-а",
-            "CLIENTUNKNOWNERRORINFO": "Дошло је до проблема у комуникацији са Metrix Core-ом. Препоручује се да проверите датотеку debug.log да бисте проверили да ли постоје проблеми.",
             "UNENROLLGOVERNORTITLE": "Потврдите одјаву гувернера",
             "UNENROLLGOVERNORCONTENT": "Да ли сте сигурни да желите да одјавите свог гувернера? Више нећете моћи да гласате о управљању ланцем.",
-            "WALLETUPDATEREADYTITLE": "Ажурирање надморске висине је спремно",
-            "WALLETUPDATEREADYINFO": "Ажурирање је преузето. Поново покрените Altitude да бисте га инсталирали?",
-            "WALLETUPDATERESTARTBUTTON": "Поново покрени и инсталирај",
-            "WALLETUPDATELATERBUTTON": "Касније",
             "DAPPCONNECTTITLE": "Повежи се са сајтом",
             "DAPPCONNECTINFO": "Ова страница жели да се повеже са вашим новчаником и види вашу адресу и стање.",
             "DAPPCONNECTBUTTON": "Повежи се",
+            "DAPPCONNECTADDRESSLABEL": "Адреса",
+            "DAPPAPPROVEBUTTON": "Одобри",
             "DAPPREJECTBUTTON": "Одбиј",
             "DAPPSENDTITLE": "Захтев за трансакцију уговора",
             "DAPPSENDINFO": "Ова страница захтева слање уговорне трансакције из вашег новчаника.",
-            "DAPPSIGNTITLE": "Захтев за потписивање поруке",
-            "DAPPSIGNINFO": "Ова страница захтева потписивање поруке са адресом вашег новчаника.",
-            "DAPPNOTREADY": "Још увек није могуће повезати се са сајтом - Metrix Core се још увек покреће.",
-            "DAPPNOWALLET": "Не могу се повезати са сајтом - није доступна адреса новчаника.",
-            "DAPPAPPROVEBUTTON": "Одобри",
-            "DAPPCONNECTADDRESSLABEL": "Адреса",
             "DAPPSENDSITELABEL": "Сајт",
             "DAPPSENDCONTRACTLABEL": "Адреса уговора",
             "DAPPSENDAMOUNTLABEL": "Износ",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Максимална мрежна накнада",
             "DAPPSENDMAXTOTALLABEL": "Макс. укупно",
             "DAPPSENDDATALABEL": "Подаци о уговору",
+            "DAPPSIGNTITLE": "Захтев за потписивање поруке",
+            "DAPPSIGNINFO": "Ова страница захтева потписивање поруке са адресом вашег новчаника.",
             "DAPPSIGNMESSAGELABEL": "Порука",
-            "BOOTSTRAPOFFERTITLE": "Новчаник је знатно застарео",
-            "BOOTSTRAPOFFERINFO": "Доступна је најновија верзија за покретање система (bootstrap) која може брзо ажурирати Metrix Core. Наставак са нормалном синхронизацијом може потрајати неколико дана, јер ваш новчаник мора да преузме и верификује сваки блок који је пропустио.",
-            "BOOTSTRAPOFFERBUTTON": "Преузми Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Настави нормалну синхронизацију",
-            "BOOTSTRAPSPACEINFO": "Нема довољно слободног простора на диску за преузимање и распакивање bootstrap датотеке. Потребно: {required}, Доступно: {free}. Ослободите простор и покушајте поново."
+            "DAPPNOTREADY": "Још увек није могуће повезати се са сајтом - Metrix Core се још увек покреће.",
+            "DAPPNOWALLET": "Не могу се повезати са сајтом - није доступна адреса новчаника."
         },
         "ADDRESSBOOK": {
             "TITLE": "Адресар",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Тренутна мрежа"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Унесите адресу web3 сајта",
-            "GOBUTTON": "Иди",
-            "QUICKLAUNCH": "Брзо покретање",
-            "DEVTOOLS": "Отвори алате за програмере",
-            "ADDLINK": "Додај линк",
-            "LINKNAMEPLACEHOLDER": "Име",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Сачувај",
-            "CANCEL": "Откажи",
-            "REMOVE": "Уклони",
-            "REMOVECONFIRM": "Уклонити овај брзи линк?",
-            "LINKEXISTS": "Тај линк је већ на вашој листи за брзо покретање",
-            "LINKINVALID": "Унесите важећу адресу сајта",
-            "LINKNETWORKLABEL": "Мрежа",
-            "LOADFAILED": "Учитавање сајта није успело",
-            "SECURESITE": "Веза је безбедна - важећи SSL сертификат",
-            "INSECURESITE": "Веза није безбедна",
-            "INVALIDCERTSITE": "Веза није приватна - неважећи или непоуздан SSL сертификат"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Резервна копија новчаника...",
             "SIGNMESSAGE": "Потпиши поруку...",
             "VERIFYMESSAGE": "Провери поруку...",
-            "LOCALE": "Језик...",
-            "RESTARTCORE": "Поново покрените Metrix Core",
-            "EXIT": "Излаз",
             "OPTIONS": "Опције...",
+            "LOCALE": "Језик...",
             "CURRENCIES": "Прикажи валуту...",
-            "ALTITUDEREFRESH": "Освежи податке о надморској висини"
+            "RESTARTCORE": "Поново покрените Metrix Core",
+            "ALTITUDEREFRESH": "Освежи податке о надморској висини",
+            "EXIT": "Излаз"
         },
         "ENCRYPT": {
             "TITLE": "Шифруј",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Укупан салдо",
+        "SPENDABLEBALANCE": "Расположиви износ",
+        "PENDINGBALANCE": "Неизмирено стање",
         "CANCELBUTTON": "Откажи",
         "DONEBUTTON": "Готово",
         "OKBUTTON": "У реду",
+        "ACCEPTBUTTON": "Прихвати",
         "CLEARALLBUTTON": "Обриши све",
         "ENTERACCOUNTLABEL": "Унесите ознаку за ову адресу",
         "ENTERADDRESSLABEL": "Унесите адресу Метрикса",
@@ -464,11 +511,8 @@
         "SORTBY": "Сортирај по",
         "SEARCH": "Претрага",
         "FEE": "Накнада",
-        "ACCEPTBUTTON": "Прихвати",
         "CONFIRMED": "Потврђено",
         "UNCONFIRMED": "Непотврђено",
-        "PENDINGBALANCE": "Неизмирено стање",
-        "SPENDABLEBALANCE": "Расположиви износ",
         "SAVEBUTTON": "Сачувај"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Поновно покретање Metrix Core-а...",
         "BOOTSTRAPPING": "Преузимање bootstrap-а...",
         "BOOTSTRAPEXTRACTING": "Издвајање bootstrap-а...",
-        "TIMEREMAINING": "преостало:"
+        "TIMEREMAINING": "преостало:",
+        "DEVRPCOVERRIDEACTIVE": "Подешено је занемаривање RPC конекције за програмере (Опције > Програмер) и не реагује. Обришите га да бисте се нормално поново повезали са локалним демоном.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Обриши RPC замену и поново се повежи"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Нови налог је успешно креиран",
         "ADDRESSCOPIEDCLIPBOARD": "Адреса је копирана у међуспремник",
+        "COPIEDCLIPBOARD": "Копирано у међуспремник",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Трансакције копиране у међуспремник",
         "EMPTYFIELDS": "Молимо вас да попуните сва поља",
         "NOUPDATE": "Нема доступних ажурирања",
         "WALLETBACKEDUP": "Резервна копија новчаника је успела",
+        "WALLETBACKUPFAILED": "Аутоматска резервна копија новчаника није успела - проверите локацију резервне копије и расположиви простор на диску",
         "PASSPHRASEMISMATCH": "Лозинке које сте унели се не подударају",
         "CHECKINGUPDATE": "Провера ажурирања...",
         "CHECKINGUPDATEFAILED": "Није могуће проверити ажурирања. Проверите мрежу.",
+        "WALLETUPDATEDOWNLOADING": "Преузимање ажурирања...",
         "SENDINGEXCEEDSBALANCE": "Износ који шаљете премашује ваш изабрани салдо",
         "MISSINGCHANGEADDRESS": "Морате навести адресу за промену",
         "MISSINGDESTINATIONADDRESS": "Морате навести адресу одредишта",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Шифровање новчаника...",
         "CHANGINGPASSPHARASE": "Промена лозинке...",
         "STARTINGMASTERNODE": "Покретање мастернода...",
+        "STOPPINGMASTERNODE": "Заустављање мастернода...",
         "SENDINGTRANSACTION": "Слање трансакције...",
         "SIGNINGMESSAGE": "Потписивање поруке...",
         "SIGNEDMESSAGE": "Порука потписана",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Откључавање новчаника...",
         "TRANSACTIONMISMATCH": "Грешка у трансакцији. Молимо покушајте поново.",
         "MINIMUMCONFIRMATIONS": "Сви уноси захтевају најмање једну потврду пре трошења.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Трансакције копиране у међуспремник",
-        "STOPPINGMASTERNODE": "Заустављање мастернода...",
         "FAILEDTOWRITECONFIG": "Дошло је до проблема при писању у вашу датотеку metrix.conf. Проверите да ли датотека постоји и да ли Altitude има дозволе за писање.",
         "NOPUBLICUP": "Није пронађена јавна IP адреса. Проверите интернет везу и поново покрените Altitude.",
         "CONFIGURINGLOCALMN": "Конфигурисање локалног мастернода...",
         "REPORTINGISSUE": "Преузимање дијагностичких информација... Ове информације ће бити копиране у вашу међуспремник.",
-        "WALLETUPDATEDOWNLOADING": "Преузимање ажурирања...",
-        "WALLETBACKUPFAILED": "Аутоматска резервна копија новчаника није успела - проверите локацију резервне копије и расположиви простор на диску",
         "EXPLORERURLSAVED": "URL истраживача је сачуван",
         "EXPLORERURLRESET": "URL истраживача враћен на подразумевану вредност",
         "EXPLORERURLINVALID": "То није важећи http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Нисам могао да дођем до те URL адресе - проверите је и покушајте поново"
+        "EXPLORERURLUNREACHABLE": "Нисам могао да дођем до те URL адресе - проверите је и покушајте поново",
+        "DEVRPCHOSTSAVED": "RPC хост је сачуван",
+        "DEVRPCHOSTRESET": "RPC хост враћен на подразумеване вредности (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Примљени новчићи",
+        "NEWTRANSACTION_TITLE_STAKE": "Примљени улог",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Добијена награда за мастернод"
     },
     "TIME": {
         "AFEWSECONDS": "Неколико секунди",
@@ -533,11 +587,6 @@
         "MONTHS": "месеци",
         "AYEAR": "Година",
         "YEARS": "године"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Примљени новчићи",
-        "NEWTRANSACTION_TITLE_STAKE": "Примљени улог",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Добијена награда за мастернод"
     },
     "MONTH": {
         "JAN": "ЈАН",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Гувернери су одговорни за гласање о месечним буџетима и променама блокчејна. Можете постати гувернер тако што ћете закључати одговарајући колатерал у уговору о управљању.",
                 "COLLATERAL": "Потребна залог",
                 "ENROLL": "Упиши се",
+                "SELECTAGOVERNOR": "Изаберите одговарајућу адресу гувернера",
+                "GOVERNORNOTSELECTED": "Није изабрана ниједна одговарајућа адреса",
                 "CONFIRMENROLL": "Управо ћете се регистровати као гувернер. Овим ћете послати трансакцију са потребним колатералом у уговор о управљању. Можете се одјавити у било ком тренутку.",
                 "ISGOVERNORTITLE": "Ви сте активни гувернер!",
                 "ISGOVERNORDETAIL1": "Гувернери су одговорни за гласање о месечним буџетима и променама блокчејна.",
                 "ISGOVERNORDETAIL2": "Да бисте остали гувернер, мораћете да учествујете у најмање једном гласању сваких 30 дана.",
                 "ISGOVERNORDETAIL3": "Ако нема о чему да се гласа, можете ручно наставити регистрацију слањем активног пинга.",
+                "MYGOVERNORADDRESS": "Моја гувернерска адреса",
                 "UNENROLL": "Одјави се",
                 "PING": "Пошаљи активни пинг",
                 "LASTPINGTITLE": "Последњи пинг",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "дана",
                 "GOVERNORVOTEMATURITYHOURS": "сати",
                 "GOVERNORVOTEMATURITYSUFFIX": "док не сазри",
-                "MYGOVERNORADDRESS": "Моја гувернерска адреса",
-                "SELECTAGOVERNOR": "Изаберите одговарајућу адресу гувернера",
-                "GOVERNORNOTSELECTED": "Није изабрана ниједна одговарајућа адреса",
                 "NOTFULLYSYNCEDTITLE": "Статус гувернера није доступан",
                 "NOTFULLYSYNCEDDETAIL": "Статус ваше регистрације гувернера постаће видљив када ваш блокчејн буде потпуно синхронизован.",
                 "DGPMIGRATIONTITLE": "Миграција DGP-а",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ваш предлог је успешно креиран",
             "ENROLLINGGOVERNOR": "Пријављивање за гувернера...",
             "ENROLLEDGOVERNOR": "Ваша регистрација ће бити завршена када се трансакција потврди",
-            "VOTINGONPROPOSAL": "Слање гласа за предлог",
-            "VOTEDONPROPOSAL": "Ваш глас ће бити урачунат након што трансакција буде потврђена.",
             "PINGINGGOVERNOR": "Слање пинга...",
             "PINGEDGOVERNOR": "Пинг је успешно послат. Ваш гувернер ће бити ажуриран када трансакција буде потврђена.",
+            "VOTINGONPROPOSAL": "Слање гласа за предлог",
+            "VOTEDONPROPOSAL": "Ваш глас ће бити урачунат након што трансакција буде потврђена.",
             "UNENROLLINGGOVERNOR": "Одјава гувернера...",
             "UNENROLLEDGOVERNOR": "Трансакција је послата. Ваш гувернер ће бити одјављен када трансакција буде потврђена.",
             "GOVERNORNOTMATURE": "Ваш гувернер још није довољно зрео да изврши ову акцију"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Купи Метрикс",
+                "SEARCH": "Историја"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ви шаљете",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Историја трансакција",
                 "SEARCHBUTTON": "ПРЕТРАГА",
+                "SEARCHPLACEHOLDER": "Унесите MRX или BTC адресу",
                 "TRANSACTIONDATE": "Датум",
                 "TRANSACTIONTYPE": "Тип предајника",
                 "TRANSACTIONAMOUNT": "Износ",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Потврђено",
                 "TRANSACTIONNOTCONFIRMED": "Није потврђено",
                 "TRANSACTIONREFUNDED": "Рефундирано - Испод минималног износа",
-                "AVGSWAPPRICE": "Просечна цена замене",
-                "SEARCHPLACEHOLDER": "Унесите MRX или BTC адресу"
+                "AVGSWAPPRICE": "Просечна цена замене"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Генерисање адресе за размену...",
             "ALREADYHAVEADDRESS": "Већ имате BTC адресу повезану са овом Metrix адресом",
             "NOADDRESS": "Нисте унели адресу за Метрикс"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Купи Метрикс",
-                "SEARCH": "Историја"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Откриј",
                 "EMPTYTITLE": "Још увек нису пронађени токени",
                 "EMPTYDETAIL": "Altitude аутоматски проверава блок истраживач за MRC20 и MRC721 токене послате на ваше адресе, а затим све проверава уживо у односу на ваш чвор. Такође можете ручно додати токен ако знате његову адресу уговора.",
+                "EMPTYDETAILCHECKINGDISABLED": "Аутоматска провера токена је искључена, тако да се ваше адресе не проверавају за токене. Поново је укључите изнад или ручно додајте токен ако знате његову адресу уговора.",
                 "HIDDENTITLE": "Скривени токени",
                 "CONTEXTMENUHIDE": "Сакриј токен",
                 "ITEMSSUFFIX": "ставке",
-                "NONENUMERABLETOOLTIP": "Ова колекција не подржава навођење појединачних предмета - уместо тога приказује колико их поседујете."
+                "NONENUMERABLETOOLTIP": "Ова колекција не подржава навођење појединачних предмета - уместо тога приказује колико их поседујете.",
+                "CHECKINGENABLED": "Провера",
+                "CHECKINGDISABLED": "Одјављивање",
+                "CHECKINGENABLEDTOOLTIP": "Провера токена је укључена - Altitude периодично проверава ваше адресе за токене и освежава стање. Кликните да бисте је искључили.",
+                "CHECKINGDISABLEDTOOLTIP": "Провера токена је искључена - кликните да бисте је поново укључили.",
+                "CHECKINGDISABLEDNOTICE": "Аутоматска провера токена је искључена. Ваше адресе се не скенирају у потрази за токенима и стање се неће ажурирати. И даље можете ручно додати токен."
             },
             "ADDTOKEN": {
                 "TITLE": "Додај токен",

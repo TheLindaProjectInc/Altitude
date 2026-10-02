@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Hisob yaratish",
             "HIDEEMPTYACCOUNTS": "Nomsiz bo'sh hisoblarni yashirish"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Umumiy ma'lumot",
+            "TRANSACTIONSTAB": "Tranzaksiyalar",
+            "ADDRESSTABS": "Manzillar"
+        },
         "SEND": {
             "ADDRECIPIENT": "Qabul qiluvchini qo'shish",
             "SEND": "Yuborish",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Sana",
             "TABLECOLUMNS_CONFIRMS": "Tasdiqlashlar",
             "ALL_SELECTUNSELECT": "Hammasini yoqish/o'chirish",
+            "TREEMODE": "Daraxt rejimi",
+            "LISTMODE": "Ro'yxat rejimi",
             "SENDAVAILABLE": "Mavjud balansdan foydalaning",
             "INPUTLOCKED": "Kiritish qulflangan. Uni sarflash uchun ushbu kirishni ochishingiz kerak bo'ladi.",
             "CONTEXTMENULOCKINPUT": "Kirishni qulflash",
@@ -38,10 +45,48 @@
             "AFTERFEE": "To'lovdan keyingi",
             "QUANTITY": "Miqdori",
             "BYTES": "Baytlar",
-            "TREEMODE": "Daraxt rejimi",
-            "LISTMODE": "Ro'yxat rejimi",
             "ALERTFEECHANGETITLE": "To'lov o'zgarishi",
             "ALERTFEECHANGECONTENT": "Haqiqiy tranzaksiya narxi kutilganidan yuqori. Iltimos, yangi to'lovni tasdiqlang:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Shartnoma tuzing",
+            "INFO": "Aqlli shartnomani uning kompilyatsiya qilingan bayt kodini yuborish orqali tarmoqqa joylashtiring. Bu asosiy zanjir funktsiyasi - joylashtirishdan oldin bayt kodingiz va gaz sozlamalarini ikki marta tekshiring, joylashtirishni bekor qilib bo'lmaydi.",
+            "FROM": "Kimdan",
+            "BYTECODE": "Baytkod",
+            "BYTECODEPLACEHOLDER": "Kompilyatsiya qilingan shartnoma bayt kodini (hex) joylashtiring",
+            "INVALIDBYTECODE": "Baytkod juft sonli belgilarga ega bo'lgan yaroqli olti burchakli satr (0-9, a-f) bo'lishi kerak",
+            "GASLIMIT": "Gaz limiti",
+            "GASLIMITRANGE": "Diapazon",
+            "GASPRICE": "Gaz narxi (har bir gaz birligi uchun MRX)",
+            "GASPRICEMIN": "Minimal",
+            "ESTIMATEDMAXCOST": "Taxminiy maksimal xarajat",
+            "DEPLOYBUTTON": "Joylashtirish shartnomasi",
+            "INCOMPLETEFORM": "Iltimos, jo'natuvchi manzilini tanlang, yaroqli baytkodni kiriting va yaroqli benzin limiti/narxini belgilang",
+            "HIGHGASPRICETITLE": "Yuqori benzin narxi",
+            "HIGHGASPRICEINFO": "Siz belgilagan benzin narxi g'ayrioddiy darajada yuqori. Ushbu joylashtirish quyidagi xarajatlarga olib kelishi mumkin:",
+            "DEPLOYING": "Shartnomani joylashtirish...",
+            "DEPLOYED": "Shartnomani joylashtirish topshirildi",
+            "RESULTTITLE": "Joylashtirish natijasi",
+            "STATUS": "Holat",
+            "STATUSPENDING": "Tasdiqlash kutilmoqda...",
+            "STATUSCONFIRMED": "Muvaffaqiyatli joylashtirildi",
+            "STATUSFAILED": "Joylashtirish amalga oshmadi",
+            "TXID": "Tranzaksiya identifikatori",
+            "SENDER": "Yuboruvchi",
+            "CONTRACTADDRESS": "Shartnoma manzili",
+            "GASUSED": "Ishlatilgan gaz",
+            "DONEBUTTON": "Bajarildi",
+            "DEPLOYANOTHERBUTTON": "Boshqasini joylashtiring"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tranzaksiyalar",
+            "COPYBLOCKHASH": "Blok xeshini nusxalash",
+            "COPYTXID": "Tranzaksiya identifikatorini nusxalash",
+            "COPYACCOUNT": "Hisob nomini nusxalash",
+            "COPYADDRESS": "Manzilni nusxalash",
+            "COPYAMOUNT": "Nusxalash miqdori",
+            "COPTBLOCKINDEX": "Blok indeksini nusxalash",
+            "EXPLORER": "Block Explorer’da ochish"
         },
         "STAKING": {
             "UNLOCK": "Steyk uchun qulfni oching",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Manzil",
             "ENABLED": "Yoqilgan",
-            "STARTBUTTON": "Mahalliy boshlang",
-            "STARTALIASBUTTON": "Taxallusni boshlang",
-            "STARTALLBUTTON": "Hammasini boshlang",
             "NOMASTERNODES": "Sizda hech qanday masternodlar yo'q",
             "NOMNOUTPUTS": "Masternode chiqishlari topilmadi. Mahalliy Masternode’ni ishga tushirish uchun Masternode manzilingizga aniq 2,5,25,50 yoki 100 million tanga yuboring va 15 ta tasdiqlashni kuting.",
+            "STARTBUTTON": "Mahalliy boshlang",
             "STOPBUTTON": "Mahalliy to'xtash",
+            "STARTALIASBUTTON": "Taxallusni boshlang",
             "STOPALIASBUTTON": "Taxallusni to'xtatish",
+            "STARTALLBUTTON": "Hammasini boshlang",
             "ADDREMOTE": "Masofaviy Masternode qo'shish",
             "REMOVEMN": "Masternode-ni olib tashlang",
             "ADDLOCAL": "Mahalliy Masternode-ni sozlash",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Umumiy",
                 "COREVERSION": "Asosiy versiya",
+                "ALTITUDEVERSION": "Balandlik versiyasi",
                 "PROTOCOLVERSION": "Protokol versiyasi",
                 "WALLETVERSION": "Wallet.dat versiyasi",
                 "NETWORKTITLE": "Tarmoq",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternodalar soni",
                 "BLOCKCHAINTITLE": "Blok zanjiri",
                 "NUMBERBLOCKS": "Joriy bloklar soni",
-                "BESTBLOCKTTIME": "Oxirgi blok vaqti",
-                "ALTITUDEVERSION": "Balandlik versiyasi"
+                "BESTBLOCKTTIME": "Oxirgi blok vaqti"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC konsoliga xush kelibsiz. Mavjud buyruqlar haqida umumiy ma'lumot olish uchun help deb yozing.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Tilni tanlang"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tranzaksiyalar",
-            "COPYBLOCKHASH": "Blok xeshini nusxalash",
-            "COPYTXID": "Tranzaksiya identifikatorini nusxalash",
-            "COPYACCOUNT": "Hisob nomini nusxalash",
-            "COPYADDRESS": "Manzilni nusxalash",
-            "COPYAMOUNT": "Nusxalash miqdori",
-            "COPTBLOCKINDEX": "Blok indeksini nusxalash",
-            "EXPLORER": "Block Explorer’da ochish"
+        "CURRENCY": {
+            "TITLE": "Ko'rsatish valyutasini tanlang"
         },
         "EXPLORER": {
             "TITLE": "Blok qidiruvchisi",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Tarmoq",
             "WINDOTAB": "Deraza",
+            "BACKUPTAB": "Zaxira nusxasi",
+            "EXPLORERTAB": "Tadqiqotchi",
+            "DEVELOPERTAB": "Dasturchi",
             "NETWORK": {
                 "PROXY": "SOCKS5 proksi-serveri orqali ulaning",
                 "PROXYIP": "Proksi IP-manzili",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Yopilganda minimallashtirish",
                 "BEHAVIOURTITLE": "Tizim laganda va oynaning ishlashi"
             },
-            "BACKUPTAB": "Zaxira nusxasi",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Avtomatik zaxiralash",
                 "ENABLED": "Jadvalda avtomatik ravishda wallet.dat zaxira nusxasini yarating",
                 "ENABLEDINFO": "Jadvalda hamyon faylingizning yangi zaxira nusxasini yaratadi, shuning uchun biror narsa noto'g'ri bo'lib qolsa, har doim so'nggi nusxasi mavjud bo'ladi.",
+                "INTERVALLABEL": "Har (kun) zaxira nusxasini yarating",
                 "LASTBACKUP": "Oxirgi zaxira nusxasi:",
                 "NEVERBACKEDUP": "Avtomatik zaxira nusxasi hali yaratilmagan.",
                 "BACKUPNOWBUTTON": "Hozir zaxiralash",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Standart holatga qaytarish",
                 "PRUNETITLE": "Zaxiralash tarixi",
                 "PRUNEINFO": "Eski avtomatik zaxira nusxalari o'chiriladi, shuning uchun bu papka abadiy o'smaydi - faqat quyida keltirilgan eng so'nggilari saqlanadi.",
-                "KEEPCOUNTLABEL": "Oxirgisini saqlang",
-                "INTERVALLABEL": "Har (kun) zaxira nusxasini yarating"
+                "KEEPCOUNTLABEL": "Oxirgisini saqlang"
             },
-            "EXPLORERTAB": "Tadqiqotchi",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blok qidiruvchisi",
                 "BLOCKEXPLORERINFO": "Sayt blok-qidiruv panelida tranzaksiyani ko'rish paytida ochildi (masalan, tranzaksiyani sichqonchaning o'ng tugmasi bilan bosing > Explorerda ko'rish).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Asosiy tarmoq",
                 "TESTNET": "Testnet",
                 "REGTEST": "Registratsiya testi"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Dasturchi rejimi",
+                "DEVMODEINFO": "Sukut bo'yicha o'chirilgan va faqat ishlab chiquvchilar uchun mo'ljallangan. Buni yoqish RPC ulanishini bekor qilish imkoniyatlarini ochadi - standart foydalanuvchilar buni o'chirib qo'yishlari kerak.",
+                "DEVMODELABEL": "Dasturchi rejimini yoqish",
+                "WARNING": "Ushbu sozlamalar faqat ishlab chiqish maqsadlarida. Ularni o'zgartirish hamyonning demonga ulanishiga umuman to'sqinlik qilishi mumkin - bundan faqat nima qilayotganingizni bilsangiz foydalaning.",
+                "RPCHOSTTITLE": "RPC ulanishi",
+                "RPCHOSTINFO": "Odatiy bo'lib, Altitude ushbu mashinada (127.0.0.1) o'zini boshqaradigan deemonga ulanadi. Bularni bekor qilish, uni mahalliy ishga tushirishga hojat qoldirmasdan, boshqa deemonga - masalan, masofaviy regtest nusxasiga ulanish imkonini beradi. Agar ulanish muvaffaqiyatli bo'lsa, Altitude o'zining mahalliy deemonini yuklab olmaydi yoki ishga tushirmaydi. Maqsadli deemonning rpcalowip bu ulanishga ruxsat berishi kerak va quyidagi rpcuser/rpcpassword uning konfiguratsiyasiga mos kelishi kerak. Darhol kuchga kiradi, qayta ishga tushirish shart emas.",
+                "RPCHOSTLABEL": "RPC Xost",
+                "RPCPORTLABEL": "RPC porti",
+                "RPCUSERLABEL": "RPC foydalanuvchi nomi",
+                "RPCPASSWORDLABEL": "RPC paroli"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Umumiy ma'lumot",
-            "TRANSACTIONSTAB": "Tranzaksiyalar",
-            "ADDRESSTABS": "Manzillar"
-        },
-        "CURRENCY": {
-            "TITLE": "Ko'rsatish valyutasini tanlang"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Boshqaruv paneli",
             "SEND": "Yuborish",
+            "CREATECONTRACT": "Shartnoma tuzing",
             "RECEIVE": "Qabul qilish",
             "TRANSACTIONS": "Tranzaksiyalar",
             "STAKING": "Staking",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Blok qidiruvchisi",
             "SYNC": {
                 "CONNECTING": "Ulanmoqda",
                 "NOBLOCKS": "Bloklarni kutish",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Hamyon hozirda tikish bilan shug'ullanmayapti",
                 "MASTERNODEON": "Masternode hozirda ishlayapti",
                 "MASTERNODEOFF": "Masternode hozirda ishlamayapti"
-            },
-            "EXPLORER": "Blok qidiruvchisi"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Web3 sayt manzilini kiriting",
+            "GOBUTTON": "Boring",
+            "QUICKLAUNCH": "Tez ishga tushirish",
+            "DEVTOOLS": "Dasturchilar uchun ochiq vositalar",
+            "ADDLINK": "Havola qo'shish",
+            "LINKNAMEPLACEHOLDER": "Ism",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Saqlash",
+            "CANCEL": "Bekor qilish",
+            "REMOVE": "Olib tashlash",
+            "REMOVECONFIRM": "Ushbu tezkor havola olib tashlansinmi?",
+            "LINKEXISTS": "Bu havola allaqachon tezkor ishga tushirish ro'yxatingizda",
+            "LINKINVALID": "Sayt manzilini to'g'ri kiriting",
+            "LINKNETWORKLABEL": "Tarmoq",
+            "LOADFAILED": "Saytni yuklashda xatolik yuz berdi",
+            "SECURESITE": "Ulanish xavfsiz - amal qiluvchi SSL sertifikati",
+            "INSECURESITE": "Ulanish xavfsiz emas",
+            "INVALIDCERTSITE": "Ulanish maxfiy emas - yaroqsiz yoki ishonchsiz SSL sertifikati"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Hamyon parolingizni kiriting",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core uchun yangilanish mavjud. Uni hozir o'rnatmoqchimisiz?",
             "WALLETUPDATETITLE": "Balandlik haqida yangilanish mavjud",
             "WALLETUPDATEINFO": "Altitude uchun yangilanish mavjud. Uni hozir yuklab olmoqchimisiz?",
+            "WALLETUPDATEREADYTITLE": "Balandlik yangilanishi tayyor",
+            "WALLETUPDATEREADYINFO": "Yangilanish yuklab olindi. Uni o'rnatish uchun Altitude ilovasini hozir qayta ishga tushiringmi?",
+            "WALLETUPDATERESTARTBUTTON": "Qayta ishga tushiring va o'rnating",
+            "WALLETUPDATELATERBUTTON": "Keyinroq",
             "CLIENTUPDATEBUTTON": "Yangilash",
             "CLIENTUPDATECANCELBUTTON": "Yangilamang",
             "CLIENTUPDATESKIPBUTTON": "Ushbu yangilanishni o'tkazib yuborish",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Hamyon faylingizning avvalgi zaxira nusxalarini yangi yaratilgan, shifrlangan hamyon fayli bilan almashtirish kerak. Xavfsizlik nuqtai nazaridan, shifrlanmagan hamyon faylining avvalgi zaxira nusxalari yangi, shifrlangan hamyondan foydalanishni boshlashingiz bilan foydasiz bo'lib qoladi.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core kutilmaganda to'xtadi",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core bilan bog'liq muammo yuzaga keldi, bu uning tugashiga sabab bo'ldi. Muammolar uchun debug.log faylingizni tekshirish tavsiya etiladi.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core aloqa xatosi",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core bilan aloqa o'rnatishda muammo yuz berdi. Muammolar uchun debug.log faylingizni tekshirish tavsiya etiladi.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap xatosi",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core’ni yuklashda muammo yuz berdi. Muammolar uchun Altitude jurnal faylingizni tekshirish tavsiya etiladi.",
+            "BOOTSTRAPOFFERTITLE": "Hamyon sezilarli darajada eskirgan",
+            "BOOTSTRAPOFFERINFO": "Metrix Core’ni tezda yangilab turadigan so‘nggi bootstrap mavjud. Buning o‘rniga oddiy sinxronizatsiya bilan davom etish bir necha kun davom etishi mumkin, chunki hamyoningiz o‘tkazib yuborgan har bir blokni yuklab olishi va tekshirishi kerak.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrapni yuklab oling",
+            "BOOTSTRAPOFFERCANCEL": "Oddiy sinxronlashni davom ettirish",
+            "BOOTSTRAPSPACEINFO": "Bootstrap faylini yuklab olish va chiqarib olish uchun diskda yetarli bo'sh joy yo'q. Majburiy: {required}, Mavjud: {free}. Biroz joy bo'shating va qaytadan urinib ko'ring.",
+            "STARTUPFAILEDTITLE": "Metrix Core ishga tushirilmadi",
+            "STARTUPFAILEDINFO": "Metrix Core’ni ishga tushirishda xatolik yuz berdi. Muammolar uchun Altitude jurnal faylingizni tekshirish tavsiya etiladi.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qayta tiklash vositalari",
             "CLIENTINVALIDCONFIGTITLE": "metrix.conf konfiguratsiyasi noto'g'ri",
             "CLIENTINVALIDCONFIGINFO": "Metrix.conf faylida noto'g'ri masternode sozlamalari mavjud, bu esa Metrix Core darhol ishdan chiqishiga olib keladi. Iltimos, ushbu faylni tekshiring.",
             "ADDREMOTEMNTITLE": "Masofaviy Masternode qo'shish",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode maxfiy kaliti",
             "ADDREMOTEMNTXHASH": "Masternode Trx xeshi",
             "ADDREMOTEMNTXINDEX": "Masternode Trx indeksi",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap xatosi",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core’ni yuklashda muammo yuz berdi. Muammolar uchun Altitude jurnal faylingizni tekshirish tavsiya etiladi.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Qayta tiklash vositalari",
-            "STARTUPFAILEDTITLE": "Metrix Core ishga tushirilmadi",
-            "STARTUPFAILEDINFO": "Metrix Core’ni ishga tushirishda xatolik yuz berdi. Muammolar uchun Altitude jurnal faylingizni tekshirish tavsiya etiladi.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core aloqa xatosi",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core bilan aloqa o'rnatishda muammo yuz berdi. Muammolar uchun debug.log faylingizni tekshirish tavsiya etiladi.",
             "UNENROLLGOVERNORTITLE": "Gubernatorni ro'yxatdan chiqarishni tasdiqlash",
             "UNENROLLGOVERNORCONTENT": "Gubernatoringizni ro'yxatdan chiqarmoqchi ekanligingizga aminmisiz? Siz endi zanjirli boshqaruv bo'yicha ovoz bera olmaysiz.",
-            "WALLETUPDATEREADYTITLE": "Balandlik yangilanishi tayyor",
-            "WALLETUPDATEREADYINFO": "Yangilanish yuklab olindi. Uni o'rnatish uchun Altitude ilovasini hozir qayta ishga tushiringmi?",
-            "WALLETUPDATERESTARTBUTTON": "Qayta ishga tushiring va o'rnating",
-            "WALLETUPDATELATERBUTTON": "Keyinroq",
             "DAPPCONNECTTITLE": "Saytga ulanish",
             "DAPPCONNECTINFO": "Bu sayt sizning hamyoningizga ulanib, manzilingiz va balansingizni ko'rishni xohlaydi.",
             "DAPPCONNECTBUTTON": "Ulanish",
+            "DAPPCONNECTADDRESSLABEL": "Manzil",
+            "DAPPAPPROVEBUTTON": "Tasdiqlash",
             "DAPPREJECTBUTTON": "Rad etish",
             "DAPPSENDTITLE": "Shartnoma bitimi bo'yicha so'rov",
             "DAPPSENDINFO": "Ushbu sayt sizning hamyoningizdan shartnomaviy tranzaksiyani yuborishni so'ramoqda.",
-            "DAPPSIGNTITLE": "Xabar so'rovini imzolash",
-            "DAPPSIGNINFO": "Ushbu sayt sizning hamyon manzilingiz bilan xabar imzolashni so'ramoqda.",
-            "DAPPNOTREADY": "Saytga hali ulanib bo'lmadi - Metrix Core hali ham ishga tushmoqda.",
-            "DAPPNOWALLET": "Saytga ulanib bo'lmadi - hamyon manzili mavjud emas.",
-            "DAPPAPPROVEBUTTON": "Tasdiqlash",
-            "DAPPCONNECTADDRESSLABEL": "Manzil",
             "DAPPSENDSITELABEL": "Sayt",
             "DAPPSENDCONTRACTLABEL": "Shartnoma manzili",
             "DAPPSENDAMOUNTLABEL": "Miqdori",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maksimal tarmoq to'lovi",
             "DAPPSENDMAXTOTALLABEL": "Maksimal Jami",
             "DAPPSENDDATALABEL": "Shartnoma ma'lumotlari",
+            "DAPPSIGNTITLE": "Xabar so'rovini imzolash",
+            "DAPPSIGNINFO": "Ushbu sayt sizning hamyon manzilingiz bilan xabar imzolashni so'ramoqda.",
             "DAPPSIGNMESSAGELABEL": "Xabar",
-            "BOOTSTRAPOFFERTITLE": "Hamyon sezilarli darajada eskirgan",
-            "BOOTSTRAPOFFERINFO": "Metrix Core’ni tezda yangilab turadigan so‘nggi bootstrap mavjud. Buning o‘rniga oddiy sinxronizatsiya bilan davom etish bir necha kun davom etishi mumkin, chunki hamyoningiz o‘tkazib yuborgan har bir blokni yuklab olishi va tekshirishi kerak.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrapni yuklab oling",
-            "BOOTSTRAPOFFERCANCEL": "Oddiy sinxronlashni davom ettirish",
-            "BOOTSTRAPSPACEINFO": "Bootstrap faylini yuklab olish va chiqarib olish uchun diskda yetarli bo'sh joy yo'q. Majburiy: {required}, Mavjud: {free}. Biroz joy bo'shating va qaytadan urinib ko'ring."
+            "DAPPNOTREADY": "Saytga hali ulanib bo'lmadi - Metrix Core hali ham ishga tushmoqda.",
+            "DAPPNOWALLET": "Saytga ulanib bo'lmadi - hamyon manzili mavjud emas."
         },
         "ADDRESSBOOK": {
             "TITLE": "Manzillar kitobi",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Joriy tarmoq"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Web3 sayt manzilini kiriting",
-            "GOBUTTON": "Boring",
-            "QUICKLAUNCH": "Tez ishga tushirish",
-            "DEVTOOLS": "Dasturchilar uchun ochiq vositalar",
-            "ADDLINK": "Havola qo'shish",
-            "LINKNAMEPLACEHOLDER": "Ism",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Saqlash",
-            "CANCEL": "Bekor qilish",
-            "REMOVE": "Olib tashlash",
-            "REMOVECONFIRM": "Ushbu tezkor havola olib tashlansinmi?",
-            "LINKEXISTS": "Bu havola allaqachon tezkor ishga tushirish ro'yxatingizda",
-            "LINKINVALID": "Sayt manzilini to'g'ri kiriting",
-            "LINKNETWORKLABEL": "Tarmoq",
-            "LOADFAILED": "Saytni yuklashda xatolik yuz berdi",
-            "SECURESITE": "Ulanish xavfsiz - amal qiluvchi SSL sertifikati",
-            "INSECURESITE": "Ulanish xavfsiz emas",
-            "INVALIDCERTSITE": "Ulanish maxfiy emas - yaroqsiz yoki ishonchsiz SSL sertifikati"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Zaxira hamyon...",
             "SIGNMESSAGE": "Xabarni imzolash...",
             "VERIFYMESSAGE": "Xabarni tasdiqlash...",
-            "LOCALE": "Til...",
-            "RESTARTCORE": "Metrix Core’ni qayta ishga tushiring",
-            "EXIT": "Chiqish",
             "OPTIONS": "Variantlar...",
+            "LOCALE": "Til...",
             "CURRENCIES": "Valyutani ko'rsatish...",
-            "ALTITUDEREFRESH": "Balandlik ma'lumotlarini yangilang"
+            "RESTARTCORE": "Metrix Core’ni qayta ishga tushiring",
+            "ALTITUDEREFRESH": "Balandlik ma'lumotlarini yangilang",
+            "EXIT": "Chiqish"
         },
         "ENCRYPT": {
             "TITLE": "Shifrlash",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Umumiy qoldiq",
+        "SPENDABLEBALANCE": "Sarflanadigan qoldiq",
+        "PENDINGBALANCE": "Kutilayotgan qoldiq",
         "CANCELBUTTON": "Bekor qilish",
         "DONEBUTTON": "Bajarildi",
         "OKBUTTON": "KELISHDIKMI",
+        "ACCEPTBUTTON": "Qabul qilish",
         "CLEARALLBUTTON": "Hammasini tozalash",
         "ENTERACCOUNTLABEL": "Bu manzil uchun yorliq kiriting",
         "ENTERADDRESSLABEL": "Metrix manzilini kiriting",
@@ -464,11 +511,8 @@
         "SORTBY": "Saralash turi",
         "SEARCH": "Qidiruv",
         "FEE": "To'lov",
-        "ACCEPTBUTTON": "Qabul qilish",
         "CONFIRMED": "Tasdiqlangan",
         "UNCONFIRMED": "Tasdiqlanmagan",
-        "PENDINGBALANCE": "Kutilayotgan qoldiq",
-        "SPENDABLEBALANCE": "Sarflanadigan qoldiq",
         "SAVEBUTTON": "Saqlash"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core qayta ishga tushirilmoqda...",
         "BOOTSTRAPPING": "Bootstrap yuklab olinmoqda...",
         "BOOTSTRAPEXTRACTING": "Bootstrap chiqarilmoqda...",
-        "TIMEREMAINING": "qolgan:"
+        "TIMEREMAINING": "qolgan:",
+        "DEVRPCOVERRIDEACTIVE": "Dasturchi RPC ulanishini bekor qilish sozlangan (Variantlar > Dasturchi) va u javob bermayapti. Mahalliy demonga odatiy ravishda qayta ulanish uchun uni tozalang.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC bekor qilish va qayta ulanishni tozalash"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Yangi hisob muvaffaqiyatli yaratildi",
         "ADDRESSCOPIEDCLIPBOARD": "Manzil buferga nusxalandi",
+        "COPIEDCLIPBOARD": "Buferga nusxalandi",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksiyalar buferga nusxalandi",
         "EMPTYFIELDS": "Iltimos, barcha maydonlarni to'ldiring",
         "NOUPDATE": "Yangilanish mavjud emas",
         "WALLETBACKEDUP": "Hamyon zaxira nusxasi muvaffaqiyatli",
+        "WALLETBACKUPFAILED": "Avtomatik hamyon zaxira nusxasi bajarilmadi - zaxira nusxangiz joylashuvini va bo'sh disk maydonini tekshiring",
         "PASSPHRASEMISMATCH": "Siz kiritgan parollar mos kelmayapti",
         "CHECKINGUPDATE": "Yangilanish tekshirilmoqda...",
         "CHECKINGUPDATEFAILED": "Yangilanishni tekshirib bo'lmadi. Tarmoqni tekshiring.",
+        "WALLETUPDATEDOWNLOADING": "Yangilanish yuklab olinmoqda...",
         "SENDINGEXCEEDSBALANCE": "Siz yuborayotgan summa tanlangan balansingizdan oshib ketdi",
         "MISSINGCHANGEADDRESS": "O'zgartirish manzilini ko'rsatishingiz kerak",
         "MISSINGDESTINATIONADDRESS": "Siz manzilni ko'rsatishingiz kerak",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Hamyon shifrlanmoqda...",
         "CHANGINGPASSPHARASE": "Parol o'zgartirilmoqda...",
         "STARTINGMASTERNODE": "Masternode ishga tushirilmoqda...",
+        "STOPPINGMASTERNODE": "Masternode to'xtatilmoqda...",
         "SENDINGTRANSACTION": "Tranzaksiya yuborilmoqda...",
         "SIGNINGMESSAGE": "Xabar imzolanmoqda...",
         "SIGNEDMESSAGE": "Xabar imzolandi",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Hamyon qulfini ochmoqda...",
         "TRANSACTIONMISMATCH": "Tranzaksiyada xatolik yuz berdi. Qaytadan urinib ko'ring.",
         "MINIMUMCONFIRMATIONS": "Barcha kiritishlar sarflashdan oldin kamida 1 ta tasdiqlashni talab qiladi.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksiyalar buferga nusxalandi",
-        "STOPPINGMASTERNODE": "Masternode to'xtatilmoqda...",
         "FAILEDTOWRITECONFIG": "metrix.conf faylingizga yozishda muammo yuz berdi. Fayl mavjudligini va Altitude yozish ruxsatlariga ega ekanligini tekshiring.",
         "NOPUBLICUP": "Umumiy IP-manzil topilmadi. Internetga ulanishingizni tekshiring va Altitude’ni qayta ishga tushiring.",
         "CONFIGURINGLOCALMN": "Mahalliy Masternode konfiguratsiya qilinmoqda...",
         "REPORTINGISSUE": "Diagnostika ma'lumotlari olinmoqda... Ushbu ma'lumot sizning buferingizga nusxalanadi.",
-        "WALLETUPDATEDOWNLOADING": "Yangilanish yuklab olinmoqda...",
-        "WALLETBACKUPFAILED": "Avtomatik hamyon zaxira nusxasi bajarilmadi - zaxira nusxangiz joylashuvini va bo'sh disk maydonini tekshiring",
         "EXPLORERURLSAVED": "Explorer URL manzili saqlandi",
         "EXPLORERURLRESET": "Explorer URL manzili standart holatga qaytarildi",
         "EXPLORERURLINVALID": "Bu yaroqli http(lar) URL manzili emas",
-        "EXPLORERURLUNREACHABLE": "URL manziliga yetib bo'lmadi - tekshirib ko'ring va qaytadan urinib ko'ring"
+        "EXPLORERURLUNREACHABLE": "URL manziliga yetib bo'lmadi - tekshirib ko'ring va qaytadan urinib ko'ring",
+        "DEVRPCHOSTSAVED": "RPC xosti saqlandi",
+        "DEVRPCHOSTRESET": "RPC xosti standart holatga qaytarildi (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Qabul qilingan tangalar",
+        "NEWTRANSACTION_TITLE_STAKE": "Qabul qilingan garov",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode mukofotini oldi"
     },
     "TIME": {
         "AFEWSECONDS": "Bir necha soniya",
@@ -533,11 +587,6 @@
         "MONTHS": "oylar",
         "AYEAR": "Bir yil",
         "YEARS": "yillar"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Qabul qilingan tangalar",
-        "NEWTRANSACTION_TITLE_STAKE": "Qabul qilingan garov",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode mukofotini oldi"
     },
     "MONTH": {
         "JAN": "YANVAR",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gubernatorlar oylik byudjetlar va blokcheyn o'zgarishlari bo'yicha ovoz berish uchun javobgardirlar. Siz boshqaruv shartnomasida to'g'ri garovni qulflab, Gubernator bo'lishingiz mumkin.",
                 "COLLATERAL": "Talab qilinadigan garov",
                 "ENROLL": "Ro'yxatdan o'tish",
+                "SELECTAGOVERNOR": "Tegishli gubernator manzilini tanlang",
+                "GOVERNORNOTSELECTED": "Hech qanday mos manzil tanlanmagan",
                 "CONFIRMENROLL": "Siz boshqaruvchi sifatida ro'yxatdan o'tmoqchisiz. Bu boshqaruv shartnomasiga zarur garov bilan bitimni yuboradi. Siz istalgan vaqtda ro'yxatdan chiqishingiz mumkin.",
                 "ISGOVERNORTITLE": "Siz faol gubernatorsiz!",
                 "ISGOVERNORDETAIL1": "Gubernatorlar oylik byudjetlar va blokcheyn o'zgarishlari bo'yicha ovoz berish uchun javobgardirlar.",
                 "ISGOVERNORDETAIL2": "Gubernator bo'lib qolish uchun har 30 kunda kamida 1 ta ovoz berishda ishtirok etishingiz kerak.",
                 "ISGOVERNORDETAIL3": "Agar ovoz berish uchun hech narsa bo'lmasa, faol ping yuborish orqali ro'yxatdan o'tishni qo'lda davom ettirishingiz mumkin.",
+                "MYGOVERNORADDRESS": "Mening gubernator nutqim",
                 "UNENROLL": "Ro'yxatdan chiqarish",
                 "PING": "Faol Pingni yuborish",
                 "LASTPINGTITLE": "Oxirgi ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "kunlar",
                 "GOVERNORVOTEMATURITYHOURS": "soatlar",
                 "GOVERNORVOTEMATURITYSUFFIX": "yetuklikka qadar",
-                "MYGOVERNORADDRESS": "Mening gubernator nutqim",
-                "SELECTAGOVERNOR": "Tegishli gubernator manzilini tanlang",
-                "GOVERNORNOTSELECTED": "Hech qanday mos manzil tanlanmagan",
                 "NOTFULLYSYNCEDTITLE": "Gubernator maqomi mavjud emas",
                 "NOTFULLYSYNCEDDETAIL": "Blokcheyningiz to'liq sinxronlashtirilganda, sizning Gubernator ro'yxatdan o'tish holatingiz ko'rinadi.",
                 "DGPMIGRATIONTITLE": "DGP migratsiyasi",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Taklifingiz muvaffaqiyatli yaratildi",
             "ENROLLINGGOVERNOR": "Gubernator sifatida ro'yxatdan o'tmoqda...",
             "ENROLLEDGOVERNOR": "Tranzaksiyangiz tasdiqlangandan so'ng, ro'yxatdan o'tishingiz yakunlanadi",
-            "VOTINGONPROPOSAL": "Taklif bo'yicha ovoz berish yuborilmoqda",
-            "VOTEDONPROPOSAL": "Tranzaksiya tasdiqlangandan so'ng sizning ovozingiz hisobga olinadi.",
             "PINGINGGOVERNOR": "Ping yuborilmoqda...",
             "PINGEDGOVERNOR": "Ping muvaffaqiyatli yuborildi. Tranzaksiya tasdiqlangandan so'ng, boshqaruvchingiz yangilanadi",
+            "VOTINGONPROPOSAL": "Taklif bo'yicha ovoz berish yuborilmoqda",
+            "VOTEDONPROPOSAL": "Tranzaksiya tasdiqlangandan so'ng sizning ovozingiz hisobga olinadi.",
             "UNENROLLINGGOVERNOR": "Gubernatorni ro'yxatdan chiqarish...",
             "UNENROLLEDGOVERNOR": "Tranzaksiya yuborildi. Tranzaksiya tasdiqlangandan so'ng, boshqaruvchingiz ro'yxatdan chiqariladi.",
             "GOVERNORNOTMATURE": "Sizning hokimingiz hali bu harakatni bajarish uchun yetarlicha yetuk emas"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix sotib oling",
+                "SEARCH": "Tarix"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Siz yuborasiz",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tranzaksiya tarixi",
                 "SEARCHBUTTON": "QIDIRUV",
+                "SEARCHPLACEHOLDER": "MRX yoki BTC manzilini kiriting",
                 "TRANSACTIONDATE": "Sana",
                 "TRANSACTIONTYPE": "TX turi",
                 "TRANSACTIONAMOUNT": "Miqdori",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Tasdiqlangan",
                 "TRANSACTIONNOTCONFIRMED": "Tasdiqlanmagan",
                 "TRANSACTIONREFUNDED": "Qaytarilgan summa - Minimal summadan past",
-                "AVGSWAPPRICE": "O'rtacha almashtirish narxi",
-                "SEARCHPLACEHOLDER": "MRX yoki BTC manzilini kiriting"
+                "AVGSWAPPRICE": "O'rtacha almashtirish narxi"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Almashtirish manzili yaratilmoqda...",
             "ALREADYHAVEADDRESS": "Sizda allaqachon ushbu Metrix manzili bilan bog'liq BTC manzili mavjud",
             "NOADDRESS": "Siz Metrix manzilini kiritmadingiz"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix sotib oling",
-                "SEARCH": "Tarix"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Yashirish",
                 "EMPTYTITLE": "Hali hech qanday token topilmadi",
                 "EMPTYDETAIL": "Altitude avtomatik ravishda blok tadqiqotchisini sizning manzillaringizga yuborilgan MRC20 va MRC721 tokenlari uchun tekshiradi, so'ngra hamma narsani o'z tuguningizga nisbatan jonli ravishda tekshiradi. Agar siz uning shartnoma manzilini bilsangiz, tokenni qo'lda ham qo'shishingiz mumkin.",
+                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik tokenlarni tekshirish o'chirilgan, shuning uchun manzillaringiz tokenlar uchun tekshirilmayapti. Yuqorida uni qayta yoqing yoki agar uning shartnoma manzilini bilsangiz, tokenni qo'lda qo'shing.",
                 "HIDDENTITLE": "Yashirin tokenlar",
                 "CONTEXTMENUHIDE": "Tokenni yashirish",
                 "ITEMSSUFFIX": "buyum(lar)",
-                "NONENUMERABLETOOLTIP": "Bu toʻplam alohida buyumlarni roʻyxatlashni qoʻllab-quvvatlamaydi - buning oʻrniga sizda qanchasi borligini koʻrsatish mumkin."
+                "NONENUMERABLETOOLTIP": "Bu toʻplam alohida buyumlarni roʻyxatlashni qoʻllab-quvvatlamaydi - buning oʻrniga sizda qanchasi borligini koʻrsatish mumkin.",
+                "CHECKINGENABLED": "Tekshiruv davom etmoqda",
+                "CHECKINGDISABLED": "Tekshiruvdan o'tish",
+                "CHECKINGENABLEDTOOLTIP": "Tokenlarni tekshirish yoqilgan - Balandlik vaqti-vaqti bilan manzillaringizni tokenlar uchun tekshiradi va balanslarni yangilaydi. O'chirish uchun bosing.",
+                "CHECKINGDISABLEDTOOLTIP": "Token tekshiruvi o'chirilgan - qayta yoqish uchun bosing.",
+                "CHECKINGDISABLEDNOTICE": "Avtomatik tokenlarni tekshirish o'chirilgan. Manzillaringiz tokenlar uchun tekshirilmayapti va balanslar yangilanmaydi. Siz hali ham tokenni qo'lda qo'shishingiz mumkin."
             },
             "ADDTOKEN": {
                 "TITLE": "Token qo'shish",

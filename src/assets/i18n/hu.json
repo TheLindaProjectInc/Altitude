@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Fiók létrehozása",
             "HIDEEMPTYACCOUNTS": "Névtelen üres fiókok elrejtése"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Áttekintés",
+            "TRANSACTIONSTAB": "Tranzakciók",
+            "ADDRESSTABS": "Címek"
+        },
         "SEND": {
             "ADDRECIPIENT": "Címzett hozzáadása",
             "SEND": "Elküld",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dátum",
             "TABLECOLUMNS_CONFIRMS": "Megerősítések",
             "ALL_SELECTUNSELECT": "Összes ki-/bekapcsolása",
+            "TREEMODE": "Fa mód",
+            "LISTMODE": "Lista mód",
             "SENDAVAILABLE": "Használja fel a rendelkezésre álló egyenleget",
             "INPUTLOCKED": "A bemenet zárolva van. Fel kell oldani a zárolását a felhasználásához.",
             "CONTEXTMENULOCKINPUT": "Bevitel zárolása",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Díj után",
             "QUANTITY": "Mennyiség",
             "BYTES": "Bájtok",
-            "TREEMODE": "Fa mód",
-            "LISTMODE": "Lista mód",
             "ALERTFEECHANGETITLE": "Díjváltozás",
             "ALERTFEECHANGECONTENT": "A tényleges tranzakciós díj magasabb a vártnál. Kérjük, erősítse meg az új díjat:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Szerződés létrehozása",
+            "INFO": "Telepíts egy intelligens szerződést a hálózatra a lefordított bájtkód beküldésével. Ez egy alapvető láncfüggvény - a telepítés előtt ellenőrizd a bájtkódot és a gázbeállításokat, a telepítés nem vonható vissza.",
+            "FROM": "Tól",
+            "BYTECODE": "Bájtkód",
+            "BYTECODEPLACEHOLDER": "Illessze be a lefordított szerződés bájtkódját (hex)",
+            "INVALIDBYTECODE": "A bájtkódnak érvényes hexadecimális karakterláncnak (0-9, a-f) kell lennie, páros számú karakterrel.",
+            "GASLIMIT": "Gázhatár",
+            "GASLIMITRANGE": "Hatótávolság",
+            "GASPRICE": "Gázár (MRX gázegységenként)",
+            "GASPRICEMIN": "Minimális",
+            "ESTIMATEDMAXCOST": "Becsült maximális költség",
+            "DEPLOYBUTTON": "Szerződés telepítése",
+            "INCOMPLETEFORM": "Kérjük, válasszon ki egy feladó címét, adjon meg érvényes bájtkódot, és állítson be érvényes gázkorlátot/árat.",
+            "HIGHGASPRICETITLE": "Magas benzinár",
+            "HIGHGASPRICEINFO": "A beállított benzinár szokatlanul magas. Ez a telepítés akár a következő összegbe is kerülhet:",
+            "DEPLOYING": "Szerződés telepítése...",
+            "DEPLOYED": "Szerződésbevezetés benyújtva",
+            "RESULTTITLE": "Telepítési eredmény",
+            "STATUS": "Állapot",
+            "STATUSPENDING": "Megerősítésre vár...",
+            "STATUSCONFIRMED": "Sikeresen telepítve",
+            "STATUSFAILED": "A telepítés sikertelen",
+            "TXID": "Tranzakcióazonosító",
+            "SENDER": "Feladó",
+            "CONTRACTADDRESS": "Szerződéses cím",
+            "GASUSED": "Felhasznált gáz",
+            "DONEBUTTON": "Kész",
+            "DEPLOYANOTHERBUTTON": "Telepítsen egy másikat"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tranzakciók",
+            "COPYBLOCKHASH": "Blokk hash másolása",
+            "COPYTXID": "Tranzakcióazonosító másolása",
+            "COPYACCOUNT": "Fióknév másolása",
+            "COPYADDRESS": "Cím másolása",
+            "COPYAMOUNT": "Másolás összege",
+            "COPTBLOCKINDEX": "Blokkindex másolása",
+            "EXPLORER": "Megnyitás a Blokkböngészőben"
         },
         "STAKING": {
             "UNLOCK": "Feloldás a stakinghez",
@@ -68,13 +113,13 @@
             "IP": "IP-cím",
             "ADDRESS": "Cím",
             "ENABLED": "Engedélyezve",
-            "STARTBUTTON": "Helyi indítás",
-            "STARTALIASBUTTON": "Alias indítása",
-            "STARTALLBUTTON": "Összes indítása",
             "NOMASTERNODES": "Nincsenek masternode-jaid",
             "NOMNOUTPUTS": "Nem található Masternode kimenet. Helyi Masternode futtatásához küldjön pontosan 2, 5, 25, 50 vagy 100 millió érmét a Masternode címére, és várjon 15 visszaigazolást.",
+            "STARTBUTTON": "Helyi indítás",
             "STOPBUTTON": "Helyi leállítás",
+            "STARTALIASBUTTON": "Alias indítása",
             "STOPALIASBUTTON": "Álnév leállítása",
+            "STARTALLBUTTON": "Összes indítása",
             "ADDREMOTE": "Távoli masternode hozzáadása",
             "REMOVEMN": "Masternode eltávolítása",
             "ADDLOCAL": "Helyi Masternode beállítása",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Általános",
                 "COREVERSION": "Alapverzió",
+                "ALTITUDEVERSION": "Magassági verzió",
                 "PROTOCOLVERSION": "Protokoll verzió",
                 "WALLETVERSION": "Wallet.dat verzió",
                 "NETWORKTITLE": "Hálózat",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Masternode-ok száma",
                 "BLOCKCHAINTITLE": "Blokklánc",
                 "NUMBERBLOCKS": "A blokkok jelenlegi száma",
-                "BESTBLOCKTTIME": "Utolsó blokk ideje",
-                "ALTITUDEVERSION": "Magassági verzió"
+                "BESTBLOCKTTIME": "Utolsó blokk ideje"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Üdvözöljük a Metrix Core RPC konzolon. Írja be a help parancsot az elérhető parancsok áttekintéséhez.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Nyelv kiválasztása"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tranzakciók",
-            "COPYBLOCKHASH": "Blokk hash másolása",
-            "COPYTXID": "Tranzakcióazonosító másolása",
-            "COPYACCOUNT": "Fióknév másolása",
-            "COPYADDRESS": "Cím másolása",
-            "COPYAMOUNT": "Másolás összege",
-            "COPTBLOCKINDEX": "Blokkindex másolása",
-            "EXPLORER": "Megnyitás a Blokkböngészőben"
+        "CURRENCY": {
+            "TITLE": "Válassza ki a megjelenített pénznemet"
         },
         "EXPLORER": {
             "TITLE": "Blokkböngésző",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Hálózat",
             "WINDOTAB": "Ablak",
+            "BACKUPTAB": "Biztonsági mentés",
+            "EXPLORERTAB": "Felfedező",
+            "DEVELOPERTAB": "Fejlesztő",
             "NETWORK": {
                 "PROXY": "Csatlakozás SOCKS5 proxyn keresztül",
                 "PROXYIP": "Proxy IP-cím",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimalizálás bezáráskor",
                 "BEHAVIOURTITLE": "A tálca és az ablak viselkedése"
             },
-            "BACKUPTAB": "Biztonsági mentés",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatikus biztonsági mentés",
                 "ENABLED": "A wallet.dat automatikus biztonsági mentése ütemterv szerint",
                 "ENABLEDINFO": "Ütemezetten friss biztonsági mentést készít a pénztárca fájljáról, így mindig elérhető egy friss másolat, ha valami probléma adódna.",
+                "INTERVALLABEL": "Biztonsági mentés minden (nap)",
                 "LASTBACKUP": "Utolsó biztonsági mentés:",
                 "NEVERBACKEDUP": "Automatikus biztonsági mentés még nem készült.",
                 "BACKUPNOWBUTTON": "Biztonsági mentés most",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Alapértelmezett visszaállítás",
                 "PRUNETITLE": "Biztonsági mentési előzmények",
                 "PRUNEINFO": "A régebbi automatikus biztonsági mentések törlődnek, így ez a mappa nem növekszik örökké – csak a legújabbak maradnak meg.",
-                "KEEPCOUNTLABEL": "Tartsa az utolsót",
-                "INTERVALLABEL": "Biztonsági mentés minden (nap)"
+                "KEEPCOUNTLABEL": "Tartsa az utolsót"
             },
-            "EXPLORERTAB": "Felfedező",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Blokkböngésző",
                 "BLOCKEXPLORERINFO": "Az oldal egy tranzakció blokkböngészőben történő megtekintésekor nyílt meg (pl. jobb egérgombbal kattintson egy tranzakcióra > Megtekintés az Intézőben).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Főhálózat",
                 "TESTNET": "Teszthálózat",
                 "REGTEST": "Regteszt"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Fejlesztői mód",
+                "DEVMODEINFO": "Alapértelmezés szerint kikapcsolva, és csak fejlesztők számára készült. Engedélyezése esetén megjelennek az RPC-kapcsolat felülbírálására szolgáló lehetőségek - a normál felhasználóknak ezt kikapcsolva kell hagyniuk.",
+                "DEVMODELABEL": "Fejlesztői mód engedélyezése",
+                "WARNING": "Ezek a beállítások csak fejlesztési célokat szolgálnak. Megváltoztatásuk megakadályozhatja, hogy a tárca csatlakozzon egy démonhoz – csak akkor használd ezt a beállítást, ha tudod, mit csinálsz.",
+                "RPCHOSTTITLE": "RPC-kapcsolat",
+                "RPCHOSTINFO": "Alapértelmezés szerint az Altitude az általa kezelt démonhoz csatlakozik ezen a gépen (127.0.0.1). Ezek felülbírálása lehetővé teszi, hogy egy másik démonhoz csatlakozzon - például egy távoli regtest példányhoz - anélkül, hogy helyben kellene futtatnia egyet. Ha a kapcsolat sikeres, az Altitude nem tölti le vagy indítja el a saját helyi démont. A cél démon rpcallowip-jének engedélyeznie kell ezt a kapcsolatot, és az alábbi rpcuser/rpcpassword paraméternek meg kell egyeznie a konfigurációjával. Azonnal érvénybe lép, újraindítás nem szükséges.",
+                "RPCHOSTLABEL": "RPC-állomás",
+                "RPCPORTLABEL": "RPC-port",
+                "RPCUSERLABEL": "RPC felhasználónév",
+                "RPCPASSWORDLABEL": "RPC jelszó"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Áttekintés",
-            "TRANSACTIONSTAB": "Tranzakciók",
-            "ADDRESSTABS": "Címek"
-        },
-        "CURRENCY": {
-            "TITLE": "Válassza ki a megjelenített pénznemet"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Műszerfal",
             "SEND": "Elküld",
+            "CREATECONTRACT": "Szerződés létrehozása",
             "RECEIVE": "Kap",
             "TRANSACTIONS": "Tranzakciók",
             "STAKING": "Karózás",
             "MASTERNODES": "Masternode-ok",
+            "EXPLORER": "Blokkböngésző",
             "SYNC": {
                 "CONNECTING": "Csatlakozás",
                 "NOBLOCKS": "Blokkokra várva",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "A pénztárca jelenleg nem stakel",
                 "MASTERNODEON": "A Masternode jelenleg fut",
                 "MASTERNODEOFF": "A Masternode jelenleg nem fut"
-            },
-            "EXPLORER": "Blokkböngésző"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Adjon meg egy web3 webhely címét",
+            "GOBUTTON": "Megy",
+            "QUICKLAUNCH": "Gyorsindítás",
+            "DEVTOOLS": "Nyissa meg a fejlesztői eszközöket",
+            "ADDLINK": "Link hozzáadása",
+            "LINKNAMEPLACEHOLDER": "Név",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Megtakarítás",
+            "CANCEL": "Mégsem",
+            "REMOVE": "Eltávolítás",
+            "REMOVECONFIRM": "Eltávolítja ezt a gyorslinket?",
+            "LINKEXISTS": "Ez a hivatkozás már szerepel a gyorsindító listában",
+            "LINKINVALID": "Adjon meg egy érvényes webhelycímet",
+            "LINKNETWORKLABEL": "Hálózat",
+            "LOADFAILED": "Nem sikerült betölteni az oldalt",
+            "SECURESITE": "A kapcsolat biztonságos - érvényes SSL-tanúsítvány",
+            "INSECURESITE": "A kapcsolat nem biztonságos",
+            "INVALIDCERTSITE": "A kapcsolat nem privát - érvénytelen vagy nem megbízható SSL-tanúsítvány"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Adja meg a pénztárca jelszavát",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Elérhető egy frissítés a Metrix Core-hoz. Szeretnéd most telepíteni?",
             "WALLETUPDATETITLE": "Magasságfrissítés elérhető",
             "WALLETUPDATEINFO": "Elérhető egy frissítés az Altitude játékhoz. Szeretnéd most letölteni?",
+            "WALLETUPDATEREADYTITLE": "Magasságfrissítés kész",
+            "WALLETUPDATEREADYINFO": "A frissítés letöltődött. Indítsa újra az Altitude alkalmazást a telepítéshez?",
+            "WALLETUPDATERESTARTBUTTON": "Újraindítás és telepítés",
+            "WALLETUPDATELATERBUTTON": "Később",
             "CLIENTUPDATEBUTTON": "Frissítés",
             "CLIENTUPDATECANCELBUTTON": "Ne frissítse",
             "CLIENTUPDATESKIPBUTTON": "Frissítés kihagyása",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "A pénztárcafájlról korábban készített biztonsági mentéseket le kell cserélni az újonnan létrehozott, titkosított pénztárcafájllal. Biztonsági okokból a titkosítatlan pénztárcafájl korábbi biztonsági mentései használhatatlanná válnak, amint elkezdi használni az új, titkosított pénztárcát.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "A Metrix Core váratlanul leállt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Probléma merült fel a Metrix Core-ral, ami miatt leállt. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák szempontjából.",
+            "CLIENTUNKNOWNERRORTITLE": "Metrix Core kommunikációs hiba",
+            "CLIENTUNKNOWNERRORINFO": "Kommunikációs probléma merült fel a Metrix Core-ral. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák szempontjából.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core rendszerindítási hiba",
+            "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze az Altitude naplófájlt a problémák szempontjából.",
+            "BOOTSTRAPOFFERTITLE": "A pénztárca jelentősen elavult",
+            "BOOTSTRAPOFFERINFO": "Egy újabb bootstrap verzió érhető el, amellyel gyorsan frissíthető a Metrix Core. A normál szinkronizálás folytatása több napot is igénybe vehet, mivel a tárcának le kell töltenie és ellenőriznie kell minden kihagyott blokkot.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap letöltése",
+            "BOOTSTRAPOFFERCANCEL": "Normál szinkronizálás folytatása",
+            "BOOTSTRAPSPACEINFO": "Nincs elég szabad lemezterület a bootstrap letöltéséhez és kicsomagolásához. Szükséges: {required}, Elérhető: {free}. Szabadítson fel helyet, és próbálja újra.",
+            "STARTUPFAILEDTITLE": "Metrix Core indítása sikertelen",
+            "STARTUPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájlt a problémák szempontjából.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállító eszközök",
             "CLIENTINVALIDCONFIGTITLE": "Érvénytelen metrix.conf konfiguráció",
             "CLIENTINVALIDCONFIGINFO": "A metrix.conf fájlod érvénytelen masternode beállítással rendelkezik, ami a Metrix Core azonnali kilépését okozza. Kérjük, ellenőrizd ezt a fájlt.",
             "ADDREMOTEMNTITLE": "Távoli masternode hozzáadása",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode privát kulcs",
             "ADDREMOTEMNTXHASH": "Masternode tranzakció hash",
             "ADDREMOTEMNTXINDEX": "Masternode tranzakcióindex",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core rendszerindítási hiba",
-            "BOOTSTRAPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze az Altitude naplófájlt a problémák szempontjából.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Helyreállító eszközök",
-            "STARTUPFAILEDTITLE": "Metrix Core indítása sikertelen",
-            "STARTUPFAILEDINFO": "Hiba történt a Metrix Core indításakor. Javasoljuk, hogy ellenőrizze a magassági naplófájlt a problémák szempontjából.",
-            "CLIENTUNKNOWNERRORTITLE": "Metrix Core kommunikációs hiba",
-            "CLIENTUNKNOWNERRORINFO": "Kommunikációs probléma merült fel a Metrix Core-ral. Javasoljuk, hogy ellenőrizze a debug.log fájlt a problémák szempontjából.",
             "UNENROLLGOVERNORTITLE": "Kormányzói leiratkozás megerősítése",
             "UNENROLLGOVERNORCONTENT": "Biztosan törölni szeretnéd a kormányzódat? Többé nem fogsz tudni szavazni a láncirányításról.",
-            "WALLETUPDATEREADYTITLE": "Magasságfrissítés kész",
-            "WALLETUPDATEREADYINFO": "A frissítés letöltődött. Indítsa újra az Altitude alkalmazást a telepítéshez?",
-            "WALLETUPDATERESTARTBUTTON": "Újraindítás és telepítés",
-            "WALLETUPDATELATERBUTTON": "Később",
             "DAPPCONNECTTITLE": "Csatlakozás az oldalhoz",
             "DAPPCONNECTINFO": "Ez az oldal csatlakozni szeretne a pénztárcádhoz, és megtekinteni szeretné a címedet és az egyenlegedet.",
             "DAPPCONNECTBUTTON": "Csatlakozás",
+            "DAPPCONNECTADDRESSLABEL": "Cím",
+            "DAPPAPPROVEBUTTON": "Jóváhagyás",
             "DAPPREJECTBUTTON": "Elutasít",
             "DAPPSENDTITLE": "Szerződéses tranzakciós kérelem",
             "DAPPSENDINFO": "Ez a webhely egy szerződéses tranzakció elküldését kéri a tárcájából.",
-            "DAPPSIGNTITLE": "Üzenet aláírásának kérése",
-            "DAPPSIGNINFO": "Ez az oldal egy üzenet aláírását kéri a pénztárca címeddel.",
-            "DAPPNOTREADY": "Még nem lehet csatlakozni az oldalhoz - a Metrix Core még indulás alatt áll.",
-            "DAPPNOWALLET": "Nem lehet csatlakozni az oldalhoz - nincs elérhető pénztárca cím.",
-            "DAPPAPPROVEBUTTON": "Jóváhagyás",
-            "DAPPCONNECTADDRESSLABEL": "Cím",
             "DAPPSENDSITELABEL": "Telek",
             "DAPPSENDCONTRACTLABEL": "Szerződéses cím",
             "DAPPSENDAMOUNTLABEL": "Összeg",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximális hálózati díj",
             "DAPPSENDMAXTOTALLABEL": "Max. összeg",
             "DAPPSENDDATALABEL": "Szerződéses adatok",
+            "DAPPSIGNTITLE": "Üzenet aláírásának kérése",
+            "DAPPSIGNINFO": "Ez az oldal egy üzenet aláírását kéri a pénztárca címeddel.",
             "DAPPSIGNMESSAGELABEL": "Üzenet",
-            "BOOTSTRAPOFFERTITLE": "A pénztárca jelentősen elavult",
-            "BOOTSTRAPOFFERINFO": "Egy újabb bootstrap verzió érhető el, amellyel gyorsan frissíthető a Metrix Core. A normál szinkronizálás folytatása több napot is igénybe vehet, mivel a tárcának le kell töltenie és ellenőriznie kell minden kihagyott blokkot.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap letöltése",
-            "BOOTSTRAPOFFERCANCEL": "Normál szinkronizálás folytatása",
-            "BOOTSTRAPSPACEINFO": "Nincs elég szabad lemezterület a bootstrap letöltéséhez és kicsomagolásához. Szükséges: {required}, Elérhető: {free}. Szabadítson fel helyet, és próbálja újra."
+            "DAPPNOTREADY": "Még nem lehet csatlakozni az oldalhoz - a Metrix Core még indulás alatt áll.",
+            "DAPPNOWALLET": "Nem lehet csatlakozni az oldalhoz - nincs elérhető pénztárca cím."
         },
         "ADDRESSBOOK": {
             "TITLE": "Címjegyzék",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Jelenlegi hálózat"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Adjon meg egy web3 webhely címét",
-            "GOBUTTON": "Megy",
-            "QUICKLAUNCH": "Gyorsindítás",
-            "DEVTOOLS": "Nyissa meg a fejlesztői eszközöket",
-            "ADDLINK": "Link hozzáadása",
-            "LINKNAMEPLACEHOLDER": "Név",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Megtakarítás",
-            "CANCEL": "Mégsem",
-            "REMOVE": "Eltávolítás",
-            "REMOVECONFIRM": "Eltávolítja ezt a gyorslinket?",
-            "LINKEXISTS": "Ez a hivatkozás már szerepel a gyorsindító listában",
-            "LINKINVALID": "Adjon meg egy érvényes webhelycímet",
-            "LINKNETWORKLABEL": "Hálózat",
-            "LOADFAILED": "Nem sikerült betölteni az oldalt",
-            "SECURESITE": "A kapcsolat biztonságos - érvényes SSL-tanúsítvány",
-            "INSECURESITE": "A kapcsolat nem biztonságos",
-            "INVALIDCERTSITE": "A kapcsolat nem privát - érvénytelen vagy nem megbízható SSL-tanúsítvány"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Tartalék tárca...",
             "SIGNMESSAGE": "Üzenet aláírása...",
             "VERIFYMESSAGE": "Üzenet ellenőrzése...",
-            "LOCALE": "Nyelv...",
-            "RESTARTCORE": "Metrix Core újraindítása",
-            "EXIT": "Kijárat",
             "OPTIONS": "Opciók...",
+            "LOCALE": "Nyelv...",
             "CURRENCIES": "Megjelenített pénznem...",
-            "ALTITUDEREFRESH": "Magassági adatok frissítése"
+            "RESTARTCORE": "Metrix Core újraindítása",
+            "ALTITUDEREFRESH": "Magassági adatok frissítése",
+            "EXIT": "Kijárat"
         },
         "ENCRYPT": {
             "TITLE": "Titkosítás",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Teljes egyenleg",
+        "SPENDABLEBALANCE": "Elkölthető egyenleg",
+        "PENDINGBALANCE": "Függőben lévő egyenleg",
         "CANCELBUTTON": "Mégsem",
         "DONEBUTTON": "Kész",
         "OKBUTTON": "RENDBEN",
+        "ACCEPTBUTTON": "Elfogadás",
         "CLEARALLBUTTON": "Összes törlése",
         "ENTERACCOUNTLABEL": "Adjon meg egy címkét ehhez a címhez",
         "ENTERADDRESSLABEL": "Adjon meg egy Metrix címet",
@@ -464,11 +511,8 @@
         "SORTBY": "Rendezés alapja",
         "SEARCH": "Keresés",
         "FEE": "Díj",
-        "ACCEPTBUTTON": "Elfogadás",
         "CONFIRMED": "Megerősített",
         "UNCONFIRMED": "Megerősítetlen",
-        "PENDINGBALANCE": "Függőben lévő egyenleg",
-        "SPENDABLEBALANCE": "Elkölthető egyenleg",
         "SAVEBUTTON": "Megtakarítás"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core újraindítása...",
         "BOOTSTRAPPING": "Bootstrap letöltése...",
         "BOOTSTRAPEXTRACTING": "Bootstrap kinyerése...",
-        "TIMEREMAINING": "többi:"
+        "TIMEREMAINING": "többi:",
+        "DEVRPCOVERRIDEACTIVE": "Fejlesztői RPC-kapcsolat felülbírálása van beállítva (Beállítások > Fejlesztők), és nem válaszol. Törölje a jelölőnégyzetet a helyi démonhoz való normál újracsatlakozáshoz.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC felülbírálás törlése és újracsatlakozás"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Új fiók sikeresen létrehozva",
         "ADDRESSCOPIEDCLIPBOARD": "Cím a vágólapra másolva",
+        "COPIEDCLIPBOARD": "Vágólapra másolva",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzakciók másolva a vágólapra",
         "EMPTYFIELDS": "Kérjük, töltse ki az összes mezőt",
         "NOUPDATE": "Nincs elérhető frissítés",
         "WALLETBACKEDUP": "A pénztárca biztonsági mentése sikeres volt",
+        "WALLETBACKUPFAILED": "Az automatikus tárca biztonsági mentése sikertelen volt – ellenőrizze a biztonsági mentés helyét és a rendelkezésre álló lemezterületet.",
         "PASSPHRASEMISMATCH": "A megadott jelszavak nem egyeznek",
         "CHECKINGUPDATE": "Frissítések keresése...",
         "CHECKINGUPDATEFAILED": "Nem sikerült frissítéseket keresni. Ellenőrizd a hálózatodat.",
+        "WALLETUPDATEDOWNLOADING": "Frissítés letöltése...",
         "SENDINGEXCEEDSBALANCE": "A küldött összeg meghaladja a kiválasztott egyenleget",
         "MISSINGCHANGEADDRESS": "Meg kell adnia egy változáscímet",
         "MISSINGDESTINATIONADDRESS": "Meg kell adnia egy célcímet",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Pénztárca titkosítása...",
         "CHANGINGPASSPHARASE": "Jelszó módosítása...",
         "STARTINGMASTERNODE": "Masternode indítása...",
+        "STOPPINGMASTERNODE": "Masternode leállítása...",
         "SENDINGTRANSACTION": "Tranzakció küldése...",
         "SIGNINGMESSAGE": "Üzenet aláírása...",
         "SIGNEDMESSAGE": "Üzenet aláírva",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Pénztárca feloldása...",
         "TRANSACTIONMISMATCH": "Tranzakciós hiba. Kérjük, próbálja újra.",
         "MINIMUMCONFIRMATIONS": "Minden bevitelhez legalább egy megerősítés szükséges a vásárlás előtt.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzakciók másolva a vágólapra",
-        "STOPPINGMASTERNODE": "Masternode leállítása...",
         "FAILEDTOWRITECONFIG": "Hiba történt a metrix.conf fájl írása közben. Ellenőrizd, hogy a fájl létezik-e, és hogy az Altitude rendelkezik-e írási jogosultsággal.",
         "NOPUBLICUP": "Nem található nyilvános IP-cím. Ellenőrizze az internetkapcsolatát, és indítsa újra az Altitude programot.",
         "CONFIGURINGLOCALMN": "Helyi Masternode konfigurálása...",
         "REPORTINGISSUE": "Diagnosztikai információk beszerzése... Ezek az információk a vágólapra lesznek másolva.",
-        "WALLETUPDATEDOWNLOADING": "Frissítés letöltése...",
-        "WALLETBACKUPFAILED": "Az automatikus tárca biztonsági mentése sikertelen volt – ellenőrizze a biztonsági mentés helyét és a rendelkezésre álló lemezterületet.",
         "EXPLORERURLSAVED": "Böngésző URL-címe mentve",
         "EXPLORERURLRESET": "A böngésző URL-címe visszaállt az alapértelmezettre",
         "EXPLORERURLINVALID": "Ez nem érvényes http URL",
-        "EXPLORERURLUNREACHABLE": "Nem sikerült elérni az URL-t - ellenőrizze, és próbálja újra."
+        "EXPLORERURLUNREACHABLE": "Nem sikerült elérni az URL-t - ellenőrizze, és próbálja újra.",
+        "DEVRPCHOSTSAVED": "RPC-hoszt mentése",
+        "DEVRPCHOSTRESET": "Az RPC-állomás visszaállt az alapértelmezett értékre (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Kapott érmék",
+        "NEWTRANSACTION_TITLE_STAKE": "Kapott tét",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode jutalmat kaptam"
     },
     "TIME": {
         "AFEWSECONDS": "Néhány másodperc",
@@ -533,11 +587,6 @@
         "MONTHS": "hónapok",
         "AYEAR": "Egy év",
         "YEARS": "évek"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Kapott érmék",
-        "NEWTRANSACTION_TITLE_STAKE": "Kapott tét",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode jutalmat kaptam"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "A kormányzók felelősek a havi költségvetések és a blokklánc-változások megszavazásáért. Kormányzóvá úgy válhatsz, hogy a megfelelő biztosítékot rögzíted a kormányzási szerződésben.",
                 "COLLATERAL": "Szükséges fedezet",
                 "ENROLL": "Regisztráció",
+                "SELECTAGOVERNOR": "Válasszon egy jogosult kormányzói címet",
+                "GOVERNORNOTSELECTED": "Nem választott ki megfelelő címet",
                 "CONFIRMENROLL": "Ön hamarosan regisztrálni fog kormányzóként. Ez egy tranzakciót küld a szükséges fedezettel az irányítási szerződéshez. Bármikor leiratkozhat.",
                 "ISGOVERNORTITLE": "Aktív kormányzó vagy!",
                 "ISGOVERNORDETAIL1": "A kormányzók felelősek a havi költségvetések és a blokklánc-változások szavazásáért.",
                 "ISGOVERNORDETAIL2": "Ahhoz, hogy kormányzó maradj, legalább 30 naponta egyszer részt kell venned a szavazáson.",
                 "ISGOVERNORDETAIL3": "Ha nincs miről szavazni, akkor manuálisan folytathatod a regisztrációt egy aktív ping küldésével.",
+                "MYGOVERNORADDRESS": "A kormányzóm beszéde",
                 "UNENROLL": "Leiratkozás",
                 "PING": "Aktív ping küldése",
                 "LASTPINGTITLE": "Utolsó ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "napok",
                 "GOVERNORVOTEMATURITYHOURS": "órák",
                 "GOVERNORVOTEMATURITYSUFFIX": "érett korig",
-                "MYGOVERNORADDRESS": "A kormányzóm beszéde",
-                "SELECTAGOVERNOR": "Válasszon egy jogosult kormányzói címet",
-                "GOVERNORNOTSELECTED": "Nem választott ki megfelelő címet",
                 "NOTFULLYSYNCEDTITLE": "A kormányzói státusz nem elérhető",
                 "NOTFULLYSYNCEDDETAIL": "A kormányzói regisztrációs állapotod akkor válik láthatóvá, amikor a blokkláncod teljesen szinkronizálva van.",
                 "DGPMIGRATIONTITLE": "DGP migráció",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Az ajánlatod sikeresen létrejött",
             "ENROLLINGGOVERNOR": "Beiratkozás kormányzónak...",
             "ENROLLEDGOVERNOR": "A regisztráció a tranzakció megerősítését követően válik teljessé.",
-            "VOTINGONPROPOSAL": "Javaslatszavazat küldése",
-            "VOTEDONPROPOSAL": "A szavazatodat a tranzakció visszaigazolása után számoljuk.",
             "PINGINGGOVERNOR": "Ping küldése...",
             "PINGEDGOVERNOR": "A ping sikeresen elküldve. A tranzakció megerősítése után frissítjük a kormányzó adatait.",
+            "VOTINGONPROPOSAL": "Javaslatszavazat küldése",
+            "VOTEDONPROPOSAL": "A szavazatodat a tranzakció visszaigazolása után számoljuk.",
             "UNENROLLINGGOVERNOR": "Kormányzó törlése...",
             "UNENROLLEDGOVERNOR": "Tranzakció elküldve. A kormányzó regisztrációját a tranzakció megerősítése után töröljük.",
             "GOVERNORNOTMATURE": "A kormányzód még nem elég érett ennek a cselekedetnek a végrehajtásához."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Vásároljon Metrixet",
+                "SEARCH": "Történelem"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Te küldöd",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Tranzakcióelőzmények",
                 "SEARCHBUTTON": "KERESÉS",
+                "SEARCHPLACEHOLDER": "Adja meg az MRX vagy BTC címet",
                 "TRANSACTIONDATE": "Dátum",
                 "TRANSACTIONTYPE": "Adás típusa",
                 "TRANSACTIONAMOUNT": "Összeg",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Megerősített",
                 "TRANSACTIONNOTCONFIRMED": "Nincs megerősítve",
                 "TRANSACTIONREFUNDED": "Visszatérített - Minimum alatt",
-                "AVGSWAPPRICE": "Átlagos swap ár",
-                "SEARCHPLACEHOLDER": "Adja meg az MRX vagy BTC címet"
+                "AVGSWAPPRICE": "Átlagos swap ár"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Cserecím generálása...",
             "ALREADYHAVEADDRESS": "Már van egy BTC címed társítva ehhez a Metrix címhez",
             "NOADDRESS": "Nem adott meg Metrix címet"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Vásároljon Metrixet",
-                "SEARCH": "Történelem"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Felfedés",
                 "EMPTYTITLE": "Még nem találhatók tokenek",
                 "EMPTYDETAIL": "Az Altitude automatikusan ellenőrzi a blokkböngészőt a címeidre küldött MRC20 és MRC721 tokenek után, majd mindent élőben ellenőrz a saját csomópontoddal szemben. Manuálisan is hozzáadhatsz egy tokent, ha ismered a szerződéses címét.",
+                "EMPTYDETAILCHECKINGDISABLED": "Az automatikus tokenellenőrzés ki van kapcsolva, így a címeidet nem ellenőrzi a rendszer tokenek után. Kapcsold be újra fent, vagy adj hozzá manuálisan egy tokent, ha ismered a szerződéses címét.",
                 "HIDDENTITLE": "Rejtett tokenek",
                 "CONTEXTMENUHIDE": "Token elrejtése",
                 "ITEMSSUFFIX": "tétel(ek)",
-                "NONENUMERABLETOOLTIP": "Ez a gyűjtemény nem támogatja az egyes tételek listázását – ehelyett a meglévő tételek számát mutatja."
+                "NONENUMERABLETOOLTIP": "Ez a gyűjtemény nem támogatja az egyes tételek listázását – ehelyett a meglévő tételek számát mutatja.",
+                "CHECKINGENABLED": "Ellenőrzés folyamatban",
+                "CHECKINGDISABLED": "Kipipálás",
+                "CHECKINGENABLEDTOOLTIP": "Tokenellenőrzés be van kapcsolva – Az Altitude rendszeresen ellenőrzi a címeidet tokenek után kutatva, és frissíti az egyenlegeket. Kattints a kikapcsoláshoz.",
+                "CHECKINGDISABLEDTOOLTIP": "A tokenellenőrzés ki van kapcsolva - kattintson ide a visszakapcsoláshoz.",
+                "CHECKINGDISABLEDNOTICE": "Az automatikus tokenellenőrzés ki van kapcsolva. A címeit nem vizsgáljuk tokenek után, és az egyenlegek sem frissülnek. Manuálisan továbbra is hozzáadhat tokent."
             },
             "ADDTOKEN": {
                 "TITLE": "Token hozzáadása",

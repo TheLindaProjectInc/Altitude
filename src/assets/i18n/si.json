@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "ගිණුම තනන්න",
             "HIDEEMPTYACCOUNTS": "නම් නොකළ හිස් ගිණුම් සඟවන්න"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "දළ විශ්ලේෂණය",
+            "TRANSACTIONSTAB": "ගනුදෙනු",
+            "ADDRESSTABS": "ලිපින"
+        },
         "SEND": {
             "ADDRECIPIENT": "ලබන්නා එක් කරන්න",
             "SEND": "යවන්න",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "දිනය",
             "TABLECOLUMNS_CONFIRMS": "තහවුරු කිරීම්",
             "ALL_SELECTUNSELECT": "සියල්ල ටොගල් කරන්න",
+            "TREEMODE": "රුක් ප්‍රකාරය",
+            "LISTMODE": "ලැයිස්තු ප්‍රකාරය",
             "SENDAVAILABLE": "පවතින ශේෂය භාවිතා කරන්න",
             "INPUTLOCKED": "ආදානය අගුළු දමා ඇත. එය වියදම් කිරීමට ඔබට මෙම ආදානය අගුළු ඇරීමට අවශ්‍ය වනු ඇත.",
             "CONTEXTMENULOCKINPUT": "අගුළු ආදානය",
@@ -38,10 +45,48 @@
             "AFTERFEE": "ගාස්තුවෙන් පසු",
             "QUANTITY": "ප්‍රමාණය",
             "BYTES": "බයිට්",
-            "TREEMODE": "රුක් ප්‍රකාරය",
-            "LISTMODE": "ලැයිස්තු ප්‍රකාරය",
             "ALERTFEECHANGETITLE": "ගාස්තු වෙනස",
             "ALERTFEECHANGECONTENT": "සැබෑ ගනුදෙනු ගාස්තුව අපේක්ෂා කළ ප්‍රමාණයට වඩා වැඩිය. කරුණාකර නව ගාස්තුව තහවුරු කරන්න:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "ගිවිසුමක් සාදන්න",
+            "INFO": "සම්පාදනය කරන ලද බයිට් කේතය ඉදිරිපත් කිරීමෙන් ජාලයට ස්මාර්ට් කොන්ත්‍රාත්තුවක් යොදවන්න. මෙය මූලික දාම ශ්‍රිතයකි - යෙදවීමට පෙර ඔබේ බයිට් කේතය සහ ගෑස් සැකසුම් දෙවරක් පරීක්ෂා කරන්න, යෙදවීම අහෝසි කළ නොහැක.",
+            "FROM": "සිට",
+            "BYTECODE": "බයිට් කේතය",
+            "BYTECODEPLACEHOLDER": "සම්පාදනය කරන ලද කොන්ත්‍රාත් බයිට් කේතය (හෙක්ස්) අලවන්න.",
+            "INVALIDBYTECODE": "බයිට් කේතය ඉරට්ටේ අක්ෂර සංඛ්‍යාවක් සහිත වලංගු ෂඩ් තන්තුවක් (0-9, a-f) විය යුතුය.",
+            "GASLIMIT": "ගෑස් සීමාව",
+            "GASLIMITRANGE": "පරාසය",
+            "GASPRICE": "ගෑස් මිල (ගෑස් ඒකකයකට MRX)",
+            "GASPRICEMIN": "අවම",
+            "ESTIMATEDMAXCOST": "ඇස්තමේන්තුගත උපරිම පිරිවැය",
+            "DEPLOYBUTTON": "කොන්ත්‍රාත්තුව යොදවන්න",
+            "INCOMPLETEFORM": "කරුණාකර යවන්නාගේ ලිපිනයක් තෝරන්න, වලංගු බයිට් කේතයක් ඇතුළත් කරන්න, සහ වලංගු ගෑස් සීමාවක්/මිලක් සකසන්න.",
+            "HIGHGASPRICETITLE": "ඉහළ ගෑස් මිල",
+            "HIGHGASPRICEINFO": "ඔබ නියම කර ඇති ගෑස් මිල අසාමාන්‍ය ලෙස ඉහළයි. මෙම යෙදවීම සඳහා වැය විය හැක්කේ:",
+            "DEPLOYING": "කොන්ත්‍රාත්තුව ක්‍රියාත්මක කරමින්...",
+            "DEPLOYED": "කොන්ත්‍රාත් යෙදවීම ඉදිරිපත් කරන ලදී",
+            "RESULTTITLE": "යෙදවීමේ ප්‍රතිඵලය",
+            "STATUS": "තත්ත්වය",
+            "STATUSPENDING": "තහවුරු කිරීම පොරොත්තුයි...",
+            "STATUSCONFIRMED": "සාර්ථකව යොදවන ලදී",
+            "STATUSFAILED": "යෙදවීම අසාර්ථක විය",
+            "TXID": "ගනුදෙනු හැඳුනුම්පත",
+            "SENDER": "යවන්නා",
+            "CONTRACTADDRESS": "කොන්ත්‍රාත් ලිපිනය",
+            "GASUSED": "භාවිතා කළ ගෑස්",
+            "DONEBUTTON": "කළා",
+            "DEPLOYANOTHERBUTTON": "තවත් එකක් යොදවන්න"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "ගනුදෙනු",
+            "COPYBLOCKHASH": "බ්ලොක් හැෂ් පිටපත් කරන්න",
+            "COPYTXID": "ගනුදෙනු හැඳුනුම්පත පිටපත් කරන්න",
+            "COPYACCOUNT": "ගිණුමේ නම පිටපත් කරන්න",
+            "COPYADDRESS": "ලිපිනය පිටපත් කරන්න",
+            "COPYAMOUNT": "පිටපත් මුදල",
+            "COPTBLOCKINDEX": "බ්ලොක් දර්ශකය පිටපත් කරන්න",
+            "EXPLORER": "බ්ලොක් ගවේෂකය තුළ විවෘත කරන්න"
         },
         "STAKING": {
             "UNLOCK": "ස්ටේකින් සඳහා අගුළු හරින්න",
@@ -68,13 +113,13 @@
             "IP": "අයිපී",
             "ADDRESS": "ලිපිනය",
             "ENABLED": "සබල කරන ලදී",
-            "STARTBUTTON": "දේශීයව ආරම්භ කරන්න",
-            "STARTALIASBUTTON": "අන්වර්ථ නාමය ආරම්භ කරන්න",
-            "STARTALLBUTTON": "සියල්ල ආරම්භ කරන්න",
             "NOMASTERNODES": "ඔබට කිසිදු මාස්ටර්නෝඩ් එකක් නොමැත.",
             "NOMNOUTPUTS": "Masternode ප්‍රතිදානයන් හමු නොවීය. දේශීය Masternode එකක් ක්‍රියාත්මක කිරීම සඳහා ඔබේ Masternode ලිපිනයට හරියටම කාසි 2,5,25,50 ක් හෝ මිලියන 100 ක් යවා තහවුරු කිරීම් 15 ක් බලා සිටින්න.",
+            "STARTBUTTON": "දේශීයව ආරම්භ කරන්න",
             "STOPBUTTON": "දේශීය නවත්වන්න",
+            "STARTALIASBUTTON": "අන්වර්ථ නාමය ආරම්භ කරන්න",
             "STOPALIASBUTTON": "නවත්වන්න අන්වර්ථ නාමය",
+            "STARTALLBUTTON": "සියල්ල ආරම්භ කරන්න",
             "ADDREMOTE": "දුරස්ථ මාස්ටර්නෝඩ් එක් කරන්න",
             "REMOVEMN": "Masternode ඉවත් කරන්න",
             "ADDLOCAL": "දේශීය මාස්ටර්නෝඩය සකසන්න",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "ජනරාල්",
                 "COREVERSION": "මූලික අනුවාදය",
+                "ALTITUDEVERSION": "උන්නතාංශ අනුවාදය",
                 "PROTOCOLVERSION": "ප්‍රොටෝකෝල අනුවාදය",
                 "WALLETVERSION": "Wallet.dat අනුවාදය",
                 "NETWORKTITLE": "ජාලය",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "මාස්ටර්නෝඩ් ගණන",
                 "BLOCKCHAINTITLE": "බ්ලොක් දාමය",
                 "NUMBERBLOCKS": "වත්මන් බ්ලොක් ගණන",
-                "BESTBLOCKTTIME": "අවසාන වාරණ කාලය",
-                "ALTITUDEVERSION": "උන්නතාංශ අනුවාදය"
+                "BESTBLOCKTTIME": "අවසාන වාරණ කාලය"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Metrix Core RPC කොන්සෝලය වෙත සාදරයෙන් පිළිගනිමු. පවතින විධාන පිළිබඳ දළ විශ්ලේෂණයක් සඳහා help ටයිප් කරන්න.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "භාෂාව තෝරන්න"
         },
-        "TRANSACTIONS": {
-            "TITLE": "ගනුදෙනු",
-            "COPYBLOCKHASH": "බ්ලොක් හැෂ් පිටපත් කරන්න",
-            "COPYTXID": "ගනුදෙනු හැඳුනුම්පත පිටපත් කරන්න",
-            "COPYACCOUNT": "ගිණුමේ නම පිටපත් කරන්න",
-            "COPYADDRESS": "ලිපිනය පිටපත් කරන්න",
-            "COPYAMOUNT": "පිටපත් මුදල",
-            "COPTBLOCKINDEX": "බ්ලොක් දර්ශකය පිටපත් කරන්න",
-            "EXPLORER": "බ්ලොක් ගවේෂකය තුළ විවෘත කරන්න"
+        "CURRENCY": {
+            "TITLE": "සංදර්ශක මුදල් වර්ගය තෝරන්න"
         },
         "EXPLORER": {
             "TITLE": "බ්ලොක් ගවේෂකය",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "ජාලය",
             "WINDOTAB": "කවුළුව",
+            "BACKUPTAB": "උපස්ථ",
+            "EXPLORERTAB": "ගවේෂක",
+            "DEVELOPERTAB": "සංවර්ධක",
             "NETWORK": {
                 "PROXY": "SOCKS5 ප්‍රොක්සි හරහා සම්බන්ධ වන්න",
                 "PROXYIP": "ප්‍රොක්සි IP ලිපිනය",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "වසා දැමීමේදී අවම කරන්න",
                 "BEHAVIOURTITLE": "පද්ධති තැටි සහ කවුළු හැසිරීම"
             },
-            "BACKUPTAB": "උපස්ථ",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "ස්වයංක්‍රීය උපස්ථය",
                 "ENABLED": "කාලසටහනකට අනුව wallet.dat ස්වයංක්‍රීයව උපස්ථ කරන්න.",
                 "ENABLEDINFO": "කාලසටහනකට අනුව ඔබගේ මුදල් පසුම්බි ගොනුවේ නැවුම් උපස්ථයක් නිර්මාණය කරයි, එබැවින් යමක් වැරදුනහොත් මෑත පිටපතක් සැමවිටම ලබා ගත හැකිය.",
+                "INTERVALLABEL": "සෑම (දිනකම) උපස්ථ කරන්න",
                 "LASTBACKUP": "අවසන් උපස්ථය:",
                 "NEVERBACKEDUP": "තවමත් ස්වයංක්‍රීය උපස්ථයක් සිදු කර නොමැත.",
                 "BACKUPNOWBUTTON": "දැන් උපස්ථ කරන්න",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "පෙරනිමියට නැවත සකසන්න",
                 "PRUNETITLE": "උපස්ථ ඉතිහාසය",
                 "PRUNEINFO": "මෙම ෆෝල්ඩරය සදහටම වර්ධනය නොවන පරිදි පැරණි ස්වයංක්‍රීය උපස්ථ මකා දමනු ලැබේ - පහත නවතම ඒවා පමණක් තබා ගනී.",
-                "KEEPCOUNTLABEL": "අන්තිමට තබා ගන්න",
-                "INTERVALLABEL": "සෑම (දිනකම) උපස්ථ කරන්න"
+                "KEEPCOUNTLABEL": "අන්තිමට තබා ගන්න"
             },
-            "EXPLORERTAB": "ගවේෂක",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "බ්ලොක් ගවේෂකය",
                 "BLOCKEXPLORERINFO": "බ්ලොක් ගවේෂකයේ ගනුදෙනුවක් නරඹන විට අඩවිය විවෘත විය (උදා: ගනුදෙනුවක් දකුණු-ක්ලික් කරන්න > ගවේෂකයේ බලන්න).",
@@ -259,25 +298,31 @@
                 "MAINNET": "ප්‍රධාන ජාලය",
                 "TESTNET": "ටෙස්ට්නෙට්",
                 "REGTEST": "නැවත පරීක්ෂණය"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "සංවර්ධක ප්‍රකාරය",
+                "DEVMODEINFO": "පෙරනිමියෙන් අක්‍රිය කර ඇති අතර සංවර්ධකයින් සඳහා පමණි. මෙය සක්‍රීය කිරීමෙන් RPC සම්බන්ධතාවය අභිබවා යාමට විකල්ප හෙළි වේ - සම්මත පරිශීලකයින් මෙය අක්‍රිය කළ යුතුය.",
+                "DEVMODELABEL": "සංවර්ධක ප්‍රකාරය සක්‍රීය කරන්න",
+                "WARNING": "මෙම සැකසුම් සංවර්ධන අරමුණු සඳහා පමණි. ඒවා වෙනස් කිරීමෙන් පසුම්බිය ඩීමන් එකකට සම්බන්ධ වීම කිසිසේත් වළක්වා ගත හැකිය - ඔබ කරන්නේ කුමක්දැයි ඔබ දන්නේ නම් පමණක් මෙය භාවිතා කරන්න.",
+                "RPCHOSTTITLE": "RPC සම්බන්ධතාවය",
+                "RPCHOSTINFO": "පෙරනිමියෙන් Altitude මෙම යන්ත්‍රයේ (127.0.0.1) එය විසින්ම කළමනාකරණය කරන ඩීමන් එකට සම්බන්ධ වේ. මේවා අභිබවා යාමෙන් එය වෙනත් ඩීමන් එකකට සම්බන්ධ වීමට ඉඩ සලසයි - උදාහරණයක් ලෙස දුරස්ථ regtest අවස්ථාවක්, එකක් දේශීයව ක්‍රියාත්මක කිරීමට අවශ්‍ය නොවී. සම්බන්ධතාවය සාර්ථක වුවහොත්, Altitude තමන්ගේම දේශීය ඩීමන් බාගත කිරීම හෝ ආරම්භ කිරීම සිදු නොකරයි. ඉලක්ක ඩීමන් හි rpcallowip මෙම සම්බන්ධතාවයට අවසර දිය යුතු අතර, පහත rpcuser/rpcpassword එහි වින්‍යාසයට ගැලපේ. වහාම ක්‍රියාත්මක වේ, නැවත ආරම්භ කිරීම අවශ්‍ය නොවේ.",
+                "RPCHOSTLABEL": "RPC සත්කාරක",
+                "RPCPORTLABEL": "RPC වරාය",
+                "RPCUSERLABEL": "RPC පරිශීලක නාමය",
+                "RPCPASSWORDLABEL": "RPC මුරපදය"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "දළ විශ්ලේෂණය",
-            "TRANSACTIONSTAB": "ගනුදෙනු",
-            "ADDRESSTABS": "ලිපින"
-        },
-        "CURRENCY": {
-            "TITLE": "සංදර්ශක මුදල් වර්ගය තෝරන්න"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "උපකරණ පුවරුව",
             "SEND": "යවන්න",
+            "CREATECONTRACT": "ගිවිසුමක් සාදන්න",
             "RECEIVE": "ලබා ගන්න",
             "TRANSACTIONS": "ගනුදෙනු",
             "STAKING": "ස්ටේකින්",
             "MASTERNODES": "මාස්ටර්නෝඩ්ස්",
+            "EXPLORER": "බ්ලොක් ගවේෂකය",
             "SYNC": {
                 "CONNECTING": "සම්බන්ධ කිරීම",
                 "NOBLOCKS": "අවහිර කිරීම් සඳහා රැඳී සිටිමින්",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "මුදල් පසුම්බිය දැනට ස්ටේකින් කරන්නේ නැහැ.",
                 "MASTERNODEON": "Masternode දැනට ක්‍රියාත්මක වේ.",
                 "MASTERNODEOFF": "Masternode දැනට ක්‍රියාත්මක නොවේ."
-            },
-            "EXPLORER": "බ්ලොක් ගවේෂකය"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "web3 අඩවි ලිපිනයක් ඇතුළත් කරන්න",
+            "GOBUTTON": "යන්න",
+            "QUICKLAUNCH": "ඉක්මන් දියත් කිරීම",
+            "DEVTOOLS": "සංවර්ධක මෙවලම් විවෘත කරන්න",
+            "ADDLINK": "සබැඳිය එක් කරන්න",
+            "LINKNAMEPLACEHOLDER": "නම",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "සුරකින්න",
+            "CANCEL": "අවලංගු කරන්න",
+            "REMOVE": "ඉවත් කරන්න",
+            "REMOVECONFIRM": "මෙම ඉක්මන් සබැඳිය ඉවත් කරන්නද?",
+            "LINKEXISTS": "එම සබැඳිය දැනටමත් ඔබගේ ඉක්මන් දියත් කිරීමේ ලැයිස්තුවේ ඇත.",
+            "LINKINVALID": "වලංගු අඩවි ලිපිනයක් ඇතුළත් කරන්න.",
+            "LINKNETWORKLABEL": "ජාලය",
+            "LOADFAILED": "අඩවිය පූරණය කිරීමට අසමත් විය.",
+            "SECURESITE": "සම්බන්ධතාවය ආරක්ෂිතයි - වලංගු SSL සහතිකය",
+            "INSECURESITE": "සම්බන්ධතාවය ආරක්ෂිත නොවේ.",
+            "INVALIDCERTSITE": "සම්බන්ධතාවය පුද්ගලික නොවේ - අවලංගු හෝ විශ්වාස කළ නොහැකි SSL සහතිකයකි."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "ඔබගේ පසුම්බියේ මුරපදය ඇතුළත් කරන්න",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Metrix Core සඳහා යාවත්කාලීනයක් තිබේ. ඔබ එය දැන් ස්ථාපනය කිරීමට කැමතිද?",
             "WALLETUPDATETITLE": "උන්නතාංශ යාවත්කාලීනය ලබා ගත හැකිය",
             "WALLETUPDATEINFO": "Altitude සඳහා යාවත්කාලීනයක් තිබේ. දැන් එය බාගැනීමට ඔබ කැමතිද?",
+            "WALLETUPDATEREADYTITLE": "උන්නතාංශ යාවත්කාලීන කිරීම සූදානම්",
+            "WALLETUPDATEREADYINFO": "යාවත්කාලීනය බාගත කර ඇත. එය ස්ථාපනය කිරීමට දැන් Altitude නැවත ආරම්භ කරන්නද?",
+            "WALLETUPDATERESTARTBUTTON": "නැවත ආරම්භ කර ස්ථාපනය කරන්න",
+            "WALLETUPDATELATERBUTTON": "පසුව",
             "CLIENTUPDATEBUTTON": "යාවත්කාලීන කරන්න",
             "CLIENTUPDATECANCELBUTTON": "යාවත්කාලීන නොකරන්න",
             "CLIENTUPDATESKIPBUTTON": "මෙම යාවත්කාලීනය මඟ හරින්න",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "ඔබගේ මුදල් පසුම්බි ගොනුවෙන් ඔබ කලින් සාදන ලද ඕනෑම උපස්ථයක් අලුතින් ජනනය කරන ලද, සංකේතනය කරන ලද පසුම්බි ගොනුවකින් ප්‍රතිස්ථාපනය කළ යුතුය. ආරක්ෂක හේතූන් මත, ඔබ නව, සංකේතනය කරන ලද පසුම්බිය භාවිතා කිරීමට පටන් ගත් වහාම සංකේතනය නොකළ පසුම්බි ගොනුවේ පෙර උපස්ථ නිෂ්ඵල වනු ඇත.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "මෙට්‍රික්ස් කෝර් අනපේක්ෂිත ලෙස නතර විය",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Metrix Core සමඟ ගැටළුවක් ඇති වූ අතර එය අවසන් වීමට හේතු විය. ගැටළු සඳහා ඔබේ debug.log ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
+            "CLIENTUNKNOWNERRORTITLE": "මෙට්‍රික්ස් මූලික සන්නිවේදන දෝෂය",
+            "CLIENTUNKNOWNERRORINFO": "Metrix Core සමඟ සන්නිවේදනය කිරීමේදී ගැටලුවක් ඇති විය. ගැටළු සඳහා ඔබේ debug.log ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap අසාර්ථක විය",
+            "BOOTSTRAPFAILEDINFO": "Metrix Core බූට්ස්ට්‍රැප් කිරීමේදී ගැටලුවක් ඇති විය. ගැටළු සඳහා ඔබේ Altitude ලොග් ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
+            "BOOTSTRAPOFFERTITLE": "මුදල් පසුම්බිය සැලකිය යුතු ලෙස කල් ඉකුත් වී ඇත",
+            "BOOTSTRAPOFFERINFO": "Metrix Core ඉක්මනින් යාවත්කාලීන කළ හැකි මෑත කාලීන bootstrap එකක් තිබේ. ඒ වෙනුවට සාමාන්‍ය සමමුහුර්තකරණයක් සමඟ ඉදිරියට යාම සම්පූර්ණ වීමට දින කිහිපයක් ගත විය හැකිය, මන්ද ඔබේ මුදල් පසුම්බියට මග හැරුණු සෑම බ්ලොක් එකක්ම බාගත කර සත්‍යාපනය කිරීමට අවශ්‍ය වේ.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap බාගන්න",
+            "BOOTSTRAPOFFERCANCEL": "සාමාන්‍ය සමමුහුර්තකරණය දිගටම කරගෙන යන්න",
+            "BOOTSTRAPSPACEINFO": "bootstrap බාගත කර උපුටා ගැනීමට ප්‍රමාණවත් නිදහස් තැටි ඉඩක් නොමැත. අවශ්‍යයි: {required}, ලබා ගත හැකිය: {free}. යම් ඉඩක් නිදහස් කර නැවත උත්සාහ කරන්න.",
+            "STARTUPFAILEDTITLE": "මෙට්‍රික්ස් මූලික ආරම්භය අසාර්ථක විය",
+            "STARTUPFAILEDINFO": "Metrix Core ආරම්භ කිරීමේදී දෝෂයක් ඇති විය. ගැටළු සඳහා ඔබේ Altitude ලොග් ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ප්‍රතිසාධන මෙවලම්",
             "CLIENTINVALIDCONFIGTITLE": "වලංගු නොවන metrix.conf වින්‍යාසය",
             "CLIENTINVALIDCONFIGINFO": "ඔබගේ metrix.conf හි වලංගු නොවන masternode සැකසුමක් ඇති අතර එමඟින් Metrix Core වහාම පිටවීමට හේතු වේ. කරුණාකර මෙම ගොනුව පරීක්ෂා කරන්න.",
             "ADDREMOTEMNTITLE": "දුරස්ථ මාස්ටර්නෝඩ් එක් කරන්න",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "මාස්ටර්නෝඩ් පුද්ගලික යතුර",
             "ADDREMOTEMNTXHASH": "මාස්ටර්නෝඩ් ට්‍රැක්ස් හැෂ්",
             "ADDREMOTEMNTXINDEX": "මාස්ටර්නෝඩ් ට්‍රැක්ස් දර්ශකය",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap අසාර්ථක විය",
-            "BOOTSTRAPFAILEDINFO": "Metrix Core බූට්ස්ට්‍රැප් කිරීමේදී ගැටලුවක් ඇති විය. ගැටළු සඳහා ඔබේ Altitude ලොග් ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "ප්‍රතිසාධන මෙවලම්",
-            "STARTUPFAILEDTITLE": "මෙට්‍රික්ස් මූලික ආරම්භය අසාර්ථක විය",
-            "STARTUPFAILEDINFO": "Metrix Core ආරම්භ කිරීමේදී දෝෂයක් ඇති විය. ගැටළු සඳහා ඔබේ Altitude ලොග් ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
-            "CLIENTUNKNOWNERRORTITLE": "මෙට්‍රික්ස් මූලික සන්නිවේදන දෝෂය",
-            "CLIENTUNKNOWNERRORINFO": "Metrix Core සමඟ සන්නිවේදනය කිරීමේදී ගැටලුවක් ඇති විය. ගැටළු සඳහා ඔබේ debug.log ගොනුව පරීක්ෂා කිරීම නිර්දේශ කෙරේ.",
             "UNENROLLGOVERNORTITLE": "ආණ්ඩුකාරවරයා බඳවා ගැනීමෙන් ඉවත් වීම තහවුරු කරන්න",
             "UNENROLLGOVERNORCONTENT": "ඔබේ ආණ්ඩුකාරවරයා ලියාපදිංචියෙන් ඉවත් කිරීමට ඔබට අවශ්‍ය බව ඔබට විශ්වාසද? ඔබට තවදුරටත් දාම පාලනය පිළිබඳ ඡන්දය ප්‍රකාශ කිරීමට නොහැකි වනු ඇත.",
-            "WALLETUPDATEREADYTITLE": "උන්නතාංශ යාවත්කාලීන කිරීම සූදානම්",
-            "WALLETUPDATEREADYINFO": "යාවත්කාලීනය බාගත කර ඇත. එය ස්ථාපනය කිරීමට දැන් Altitude නැවත ආරම්භ කරන්නද?",
-            "WALLETUPDATERESTARTBUTTON": "නැවත ආරම්භ කර ස්ථාපනය කරන්න",
-            "WALLETUPDATELATERBUTTON": "පසුව",
             "DAPPCONNECTTITLE": "අඩවියට සම්බන්ධ වන්න",
             "DAPPCONNECTINFO": "මෙම වෙබ් අඩවියට ඔබගේ මුදල් පසුම්බියට සම්බන්ධ වී ඔබගේ ලිපිනය සහ ශේෂය බැලීමට අවශ්‍යයි.",
             "DAPPCONNECTBUTTON": "සම්බන්ධ කරන්න",
+            "DAPPCONNECTADDRESSLABEL": "ලිපිනය",
+            "DAPPAPPROVEBUTTON": "අනුමත කරන්න",
             "DAPPREJECTBUTTON": "ප්‍රතික්ෂේප කරන්න",
             "DAPPSENDTITLE": "කොන්ත්‍රාත් ගනුදෙනු ඉල්ලීම",
             "DAPPSENDINFO": "මෙම වෙබ් අඩවිය ඔබගේ මුදල් පසුම්බිය හරහා ගිවිසුම් ගනුදෙනුවක් යැවීමට ඉල්ලා සිටී.",
-            "DAPPSIGNTITLE": "පණිවිඩ ඉල්ලීම අත්සන් කරන්න",
-            "DAPPSIGNINFO": "මෙම වෙබ් අඩවිය ඔබගේ මුදල් පසුම්බියේ ලිපිනය සහිත පණිවිඩයක් අත්සන් කිරීමට ඉල්ලා සිටී.",
-            "DAPPNOTREADY": "තවමත් අඩවියට සම්බන්ධ විය නොහැක - Metrix Core තවමත් ආරම්භ වෙමින් පවතී.",
-            "DAPPNOWALLET": "අඩවියට සම්බන්ධ විය නොහැක - මුදල් පසුම්බියේ ලිපිනයක් නොමැත.",
-            "DAPPAPPROVEBUTTON": "අනුමත කරන්න",
-            "DAPPCONNECTADDRESSLABEL": "ලිපිනය",
             "DAPPSENDSITELABEL": "අඩවිය",
             "DAPPSENDCONTRACTLABEL": "කොන්ත්‍රාත් ලිපිනය",
             "DAPPSENDAMOUNTLABEL": "ප්‍රමාණය",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "උපරිම ජාල ගාස්තුව",
             "DAPPSENDMAXTOTALLABEL": "උපරිම එකතුව",
             "DAPPSENDDATALABEL": "ගිවිසුම් දත්ත",
+            "DAPPSIGNTITLE": "පණිවිඩ ඉල්ලීම අත්සන් කරන්න",
+            "DAPPSIGNINFO": "මෙම වෙබ් අඩවිය ඔබගේ මුදල් පසුම්බියේ ලිපිනය සහිත පණිවිඩයක් අත්සන් කිරීමට ඉල්ලා සිටී.",
             "DAPPSIGNMESSAGELABEL": "පණිවිඩය",
-            "BOOTSTRAPOFFERTITLE": "මුදල් පසුම්බිය සැලකිය යුතු ලෙස කල් ඉකුත් වී ඇත",
-            "BOOTSTRAPOFFERINFO": "Metrix Core ඉක්මනින් යාවත්කාලීන කළ හැකි මෑත කාලීන bootstrap එකක් තිබේ. ඒ වෙනුවට සාමාන්‍ය සමමුහුර්තකරණයක් සමඟ ඉදිරියට යාම සම්පූර්ණ වීමට දින කිහිපයක් ගත විය හැකිය, මන්ද ඔබේ මුදල් පසුම්බියට මග හැරුණු සෑම බ්ලොක් එකක්ම බාගත කර සත්‍යාපනය කිරීමට අවශ්‍ය වේ.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap බාගන්න",
-            "BOOTSTRAPOFFERCANCEL": "සාමාන්‍ය සමමුහුර්තකරණය දිගටම කරගෙන යන්න",
-            "BOOTSTRAPSPACEINFO": "bootstrap බාගත කර උපුටා ගැනීමට ප්‍රමාණවත් නිදහස් තැටි ඉඩක් නොමැත. අවශ්‍යයි: {required}, ලබා ගත හැකිය: {free}. යම් ඉඩක් නිදහස් කර නැවත උත්සාහ කරන්න."
+            "DAPPNOTREADY": "තවමත් අඩවියට සම්බන්ධ විය නොහැක - Metrix Core තවමත් ආරම්භ වෙමින් පවතී.",
+            "DAPPNOWALLET": "අඩවියට සම්බන්ධ විය නොහැක - මුදල් පසුම්බියේ ලිපිනයක් නොමැත."
         },
         "ADDRESSBOOK": {
             "TITLE": "ලිපින පොත",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "වත්මන් ජාලය"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "web3 අඩවි ලිපිනයක් ඇතුළත් කරන්න",
-            "GOBUTTON": "යන්න",
-            "QUICKLAUNCH": "ඉක්මන් දියත් කිරීම",
-            "DEVTOOLS": "සංවර්ධක මෙවලම් විවෘත කරන්න",
-            "ADDLINK": "සබැඳිය එක් කරන්න",
-            "LINKNAMEPLACEHOLDER": "නම",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "සුරකින්න",
-            "CANCEL": "අවලංගු කරන්න",
-            "REMOVE": "ඉවත් කරන්න",
-            "REMOVECONFIRM": "මෙම ඉක්මන් සබැඳිය ඉවත් කරන්නද?",
-            "LINKEXISTS": "එම සබැඳිය දැනටමත් ඔබගේ ඉක්මන් දියත් කිරීමේ ලැයිස්තුවේ ඇත.",
-            "LINKINVALID": "වලංගු අඩවි ලිපිනයක් ඇතුළත් කරන්න.",
-            "LINKNETWORKLABEL": "ජාලය",
-            "LOADFAILED": "අඩවිය පූරණය කිරීමට අසමත් විය.",
-            "SECURESITE": "සම්බන්ධතාවය ආරක්ෂිතයි - වලංගු SSL සහතිකය",
-            "INSECURESITE": "සම්බන්ධතාවය ආරක්ෂිත නොවේ.",
-            "INVALIDCERTSITE": "සම්බන්ධතාවය පුද්ගලික නොවේ - අවලංගු හෝ විශ්වාස කළ නොහැකි SSL සහතිකයකි."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "උපස්ථ පසුම්බිය...",
             "SIGNMESSAGE": "පණිවිඩය අත්සන් කරන්න...",
             "VERIFYMESSAGE": "පණිවිඩය සත්‍යාපනය කරන්න...",
-            "LOCALE": "භාෂාව...",
-            "RESTARTCORE": "මෙට්‍රික්ස් කෝර් නැවත ආරම්භ කරන්න",
-            "EXIT": "පිටවීම",
             "OPTIONS": "විකල්ප...",
+            "LOCALE": "භාෂාව...",
             "CURRENCIES": "මුදල් ඒකකය පෙන්වන්න...",
-            "ALTITUDEREFRESH": "උන්නතාංශ දත්ත නැවුම් කරන්න"
+            "RESTARTCORE": "මෙට්‍රික්ස් කෝර් නැවත ආරම්භ කරන්න",
+            "ALTITUDEREFRESH": "උන්නතාංශ දත්ත නැවුම් කරන්න",
+            "EXIT": "පිටවීම"
         },
         "ENCRYPT": {
             "TITLE": "සංකේතනය කරන්න",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "මුළු ශේෂය",
+        "SPENDABLEBALANCE": "වියදම් කළ හැකි ශේෂය",
+        "PENDINGBALANCE": "පොරොත්තු ශේෂය",
         "CANCELBUTTON": "අවලංගු කරන්න",
         "DONEBUTTON": "කළා",
         "OKBUTTON": "හරි",
+        "ACCEPTBUTTON": "පිළිගන්න",
         "CLEARALLBUTTON": "සියල්ල හිස් කරන්න",
         "ENTERACCOUNTLABEL": "මෙම ලිපිනය සඳහා ලේබලයක් ඇතුළත් කරන්න.",
         "ENTERADDRESSLABEL": "මෙට්‍රික්ස් ලිපිනයක් ඇතුළත් කරන්න",
@@ -464,11 +511,8 @@
         "SORTBY": "අනුව තෝරන්න",
         "SEARCH": "සෙවීම",
         "FEE": "ගාස්තුව",
-        "ACCEPTBUTTON": "පිළිගන්න",
         "CONFIRMED": "තහවුරු කරන ලදී",
         "UNCONFIRMED": "තහවුරු නොකළ",
-        "PENDINGBALANCE": "පොරොත්තු ශේෂය",
-        "SPENDABLEBALANCE": "වියදම් කළ හැකි ශේෂය",
         "SAVEBUTTON": "සුරකින්න"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "මෙට්‍රික්ස් කෝර් නැවත ආරම්භ කරමින්...",
         "BOOTSTRAPPING": "bootstrap බාගනිමින්...",
         "BOOTSTRAPEXTRACTING": "බූට්ස්ට්‍රැප් උපුටා ගනිමින්...",
-        "TIMEREMAINING": "ඉතිරි:"
+        "TIMEREMAINING": "ඉතිරි:",
+        "DEVRPCOVERRIDEACTIVE": "සංවර්ධක RPC සම්බන්ධතා අභිබවා යාමක් සකසා ඇත (විකල්ප > සංවර්ධක) සහ ප්‍රතිචාර නොදක්වයි. සාමාන්‍යයෙන් දේශීය ඩීමන් වෙත නැවත සම්බන්ධ වීමට එය හිස් කරන්න.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC අතික්‍රමණය ඉවත් කර නැවත සම්බන්ධ කරන්න"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "නව ගිණුම සාර්ථකව නිර්මාණය කරන ලදී.",
         "ADDRESSCOPIEDCLIPBOARD": "ලිපිනය පසුරු පුවරුවට පිටපත් කරන ලදී",
+        "COPIEDCLIPBOARD": "පසුරු පුවරුවට පිටපත් කරන ලදී",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "ගනුදෙනු පසුරු පුවරුවට පිටපත් කරන ලදී",
         "EMPTYFIELDS": "කරුණාකර සියලුම ක්ෂේත්‍ර පුරවන්න.",
         "NOUPDATE": "යාවත්කාලීන කිරීමක් නොමැත",
         "WALLETBACKEDUP": "පසුම්බිය උපස්ථ කිරීම සාර්ථකයි",
+        "WALLETBACKUPFAILED": "ස්වයංක්‍රීය පසුම්බිය උපස්ථ කිරීම අසාර්ථක විය - ඔබගේ උපස්ථ ස්ථානය සහ පවතින තැටි ඉඩ පරීක්ෂා කරන්න.",
         "PASSPHRASEMISMATCH": "ඔබ ඇතුළත් කළ මුරපද නොගැලපේ.",
         "CHECKINGUPDATE": "යාවත්කාලීන කිරීම සඳහා පරීක්ෂා කරමින්...",
         "CHECKINGUPDATEFAILED": "යාවත්කාලීනය සඳහා පරීක්ෂා කළ නොහැක. ඔබේ ජාලය පරීක්ෂා කරන්න.",
+        "WALLETUPDATEDOWNLOADING": "යාවත්කාලීනය බාගනිමින්...",
         "SENDINGEXCEEDSBALANCE": "ඔබ යවන මුදල ඔබ තෝරාගත් ශේෂය ඉක්මවා යයි.",
         "MISSINGCHANGEADDRESS": "ඔබ වෙනස් කිරීමේ ලිපිනයක් සඳහන් කළ යුතුය.",
         "MISSINGDESTINATIONADDRESS": "ඔබ ගමනාන්ත ලිපිනයක් සඳහන් කළ යුතුය.",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "පසුම්බිය සංකේතනය කරමින්...",
         "CHANGINGPASSPHARASE": "මුරපදය වෙනස් කරමින්...",
         "STARTINGMASTERNODE": "මාස්ටර්නෝඩ් ආරම්භ කරමින්...",
+        "STOPPINGMASTERNODE": "මාස්ටර්නෝඩ් නවත්වමින්...",
         "SENDINGTRANSACTION": "ගනුදෙනුව යවමින්...",
         "SIGNINGMESSAGE": "පණිවිඩය අත්සන් කරමින්...",
         "SIGNEDMESSAGE": "පණිවිඩය අත්සන් කරන ලදී",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "පසුම්බිය අගුළු හරිමින්...",
         "TRANSACTIONMISMATCH": "ගනුදෙනු දෝෂයක්. කරුණාකර නැවත උත්සාහ කරන්න.",
         "MINIMUMCONFIRMATIONS": "වියදම් කිරීමට පෙර සියලුම යෙදවුම් සඳහා අවම වශයෙන් 1 තහවුරු කිරීමක් අවශ්‍ය වේ.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "ගනුදෙනු පසුරු පුවරුවට පිටපත් කරන ලදී",
-        "STOPPINGMASTERNODE": "මාස්ටර්නෝඩ් නවත්වමින්...",
         "FAILEDTOWRITECONFIG": "ඔබගේ metrix.conf ගොනුවට ලිවීමේදී ගැටලුවක් ඇති විය. ගොනුව පවතින බවත් Altitude හි ලිවීමේ අවසර ඇති බවත් පරීක්ෂා කරන්න.",
         "NOPUBLICUP": "පොදු IP ලිපිනයක් හමු නොවීය. ඔබගේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කර Altitude නැවත ආරම්භ කරන්න.",
         "CONFIGURINGLOCALMN": "දේශීය මාස්ටර්නෝඩ් වින්‍යාස කරමින්...",
         "REPORTINGISSUE": "රෝග විනිශ්චය තොරතුරු ලබා ගනිමින්... මෙම තොරතුරු ඔබගේ පසුරු පුවරුවට පිටපත් කරනු ලැබේ.",
-        "WALLETUPDATEDOWNLOADING": "යාවත්කාලීනය බාගනිමින්...",
-        "WALLETBACKUPFAILED": "ස්වයංක්‍රීය පසුම්බිය උපස්ථ කිරීම අසාර්ථක විය - ඔබගේ උපස්ථ ස්ථානය සහ පවතින තැටි ඉඩ පරීක්ෂා කරන්න.",
         "EXPLORERURLSAVED": "ගවේෂක URL සුරකින ලදී",
         "EXPLORERURLRESET": "ගවේෂක URL එක පෙරනිමියට ප්‍රතිවර්තනය කරන ලදී",
         "EXPLORERURLINVALID": "එය වලංගු http(s) URL එකක් නොවේ.",
-        "EXPLORERURLUNREACHABLE": "එම URL වෙත ළඟා වීමට නොහැකි විය - එය පරීක්ෂා කර නැවත උත්සාහ කරන්න."
+        "EXPLORERURLUNREACHABLE": "එම URL වෙත ළඟා වීමට නොහැකි විය - එය පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
+        "DEVRPCHOSTSAVED": "RPC සත්කාරකය සුරකින ලදී",
+        "DEVRPCHOSTRESET": "RPC සත්කාරකය පෙරනිමියට ප්‍රතිවර්තනය කරන ලදී (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "ලැබුණු කාසි",
+        "NEWTRANSACTION_TITLE_STAKE": "ලැබුණු කොටස්",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode ත්‍යාගය ලැබුණා"
     },
     "TIME": {
         "AFEWSECONDS": "තත්පර කිහිපයක්",
@@ -533,11 +587,6 @@
         "MONTHS": "මාස",
         "AYEAR": "අවුරුද්දක්",
         "YEARS": "අවුරුදු"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "ලැබුණු කාසි",
-        "NEWTRANSACTION_TITLE_STAKE": "ලැබුණු කොටස්",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode ත්‍යාගය ලැබුණා"
     },
     "MONTH": {
         "JAN": "ජන",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "මාසික අයවැය සහ බ්ලොක්චේන් වෙනස්කම් පිළිබඳව ඡන්දය ප්‍රකාශ කිරීම සඳහා ආණ්ඩුකාරවරුන් වගකිව යුතුය. පාලන කොන්ත්‍රාත්තුවේ නිවැරදි ඇපකරය අගුළු දැමීමෙන් ඔබට ආණ්ඩුකාරවරයෙකු විය හැකිය.",
                 "COLLATERAL": "අවශ්‍ය ඇපකරය",
                 "ENROLL": "ලියාපදිංචි වන්න",
+                "SELECTAGOVERNOR": "සුදුසුකම් ලත් ආණ්ඩුකාර ලිපිනයක් තෝරන්න",
+                "GOVERNORNOTSELECTED": "සුදුසුකම් ලත් ලිපිනයක් තෝරාගෙන නොමැත.",
                 "CONFIRMENROLL": "ඔබ ආණ්ඩුකාරවරයෙකු ලෙස ලියාපදිංචි වීමට ආසන්නයි. මෙය පාලන කොන්ත්‍රාත්තුවට අවශ්‍ය ඇපකරය සහිත ගනුදෙනුවක් යවනු ඇත. ඔබට ඕනෑම වේලාවක ලියාපදිංචියෙන් ඉවත් විය හැකිය.",
                 "ISGOVERNORTITLE": "ඔබ ක්‍රියාකාරී ආණ්ඩුකාරවරයෙක්!",
                 "ISGOVERNORDETAIL1": "මාසික අයවැය සහ බ්ලොක්චේන් වෙනස්කම් පිළිබඳව ඡන්දය ප්‍රකාශ කිරීම සඳහා ආණ්ඩුකාරවරුන් වගකිව යුතුය.",
                 "ISGOVERNORDETAIL2": "ආණ්ඩුකාරවරයෙකු ලෙස රැඳී සිටීමට නම්, ඔබ සෑම දින 30 කට වරක් අවම වශයෙන් ඡන්දයකට සහභාගී විය යුතුය.",
                 "ISGOVERNORDETAIL3": "ඡන්දය දීමට කිසිවක් නොමැති නම්, ඔබට ක්‍රියාකාරී පිං එකක් යැවීමෙන් ඔබේ ලියාපදිංචිය අතින් කරගෙන යා හැක.",
+                "MYGOVERNORADDRESS": "මගේ ආණ්ඩුකාරවරයාගේ ලිපිනය",
                 "UNENROLL": "ලියාපදිංචියෙන් ඉවත් වන්න",
                 "PING": "ක්‍රියාකාරී පිං යවන්න",
                 "LASTPINGTITLE": "අවසන් පිං එක",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "දින",
                 "GOVERNORVOTEMATURITYHOURS": "පැය",
                 "GOVERNORVOTEMATURITYSUFFIX": "පරිණත වන තුරු",
-                "MYGOVERNORADDRESS": "මගේ ආණ්ඩුකාරවරයාගේ ලිපිනය",
-                "SELECTAGOVERNOR": "සුදුසුකම් ලත් ආණ්ඩුකාර ලිපිනයක් තෝරන්න",
-                "GOVERNORNOTSELECTED": "සුදුසුකම් ලත් ලිපිනයක් තෝරාගෙන නොමැත.",
                 "NOTFULLYSYNCEDTITLE": "ආණ්ඩුකාර තත්ත්වය නොමැත.",
                 "NOTFULLYSYNCEDDETAIL": "ඔබගේ බ්ලොක්චේන් සම්පූර්ණයෙන්ම සමමුහුර්ත වූ විට ඔබගේ ආණ්ඩුකාර ලියාපදිංචි තත්ත්වය දෘශ්‍යමාන වනු ඇත.",
                 "DGPMIGRATIONTITLE": "නියෝජ්‍ය පොලිස්පති සංක්‍රමණය",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "ඔබගේ යෝජනාව සාර්ථකව නිර්මාණය කර ඇත.",
             "ENROLLINGGOVERNOR": "ආණ්ඩුකාර ධුරයට ලියාපදිංචි වීම...",
             "ENROLLEDGOVERNOR": "ඔබේ ගනුදෙනුව තහවුරු වූ පසු ඔබේ ලියාපදිංචිය සම්පූර්ණ වනු ඇත.",
-            "VOTINGONPROPOSAL": "යෝජනා ඡන්දය යැවීම",
-            "VOTEDONPROPOSAL": "ගනුදෙනුව තහවුරු වූ පසු ඔබේ ඡන්දය ගණන් කෙරේ.",
             "PINGINGGOVERNOR": "පිං යවමින්...",
             "PINGEDGOVERNOR": "Ping සාර්ථකව යවන ලදී. ගනුදෙනුව තහවුරු කළ පසු ඔබගේ ආණ්ඩුකාරවරයා යාවත්කාලීන කරනු ලැබේ.",
+            "VOTINGONPROPOSAL": "යෝජනා ඡන්දය යැවීම",
+            "VOTEDONPROPOSAL": "ගනුදෙනුව තහවුරු වූ පසු ඔබේ ඡන්දය ගණන් කෙරේ.",
             "UNENROLLINGGOVERNOR": "ආණ්ඩුකාරවරයා ඉවත් කරමින්...",
             "UNENROLLEDGOVERNOR": "ගනුදෙනුව යවන ලදී. ගනුදෙනුව තහවුරු කළ පසු ඔබේ ආණ්ඩුකාරවරයා ලියාපදිංචියෙන් ඉවත් කරනු ලැබේ.",
             "GOVERNORNOTMATURE": "මෙම ක්‍රියාව සිදු කිරීමට ඔබේ ආණ්ඩුකාරවරයා තවමත් පරිණත වී නොමැත."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "මෙට්‍රික්ස් මිලදී ගන්න",
+                "SEARCH": "ඉතිහාසය"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "ඔබ යවන්න",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "ගනුදෙනු ඉතිහාසය",
                 "SEARCHBUTTON": "සෙවීම",
+                "SEARCHPLACEHOLDER": "MRX හෝ BTC ලිපිනය ඇතුළත් කරන්න",
                 "TRANSACTIONDATE": "දිනය",
                 "TRANSACTIONTYPE": "TX වර්ගය",
                 "TRANSACTIONAMOUNT": "ප්‍රමාණය",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "තහවුරු කරන ලදී",
                 "TRANSACTIONNOTCONFIRMED": "තහවුරු කර නැත",
                 "TRANSACTIONREFUNDED": "ආපසු ගෙවන ලදී - අවමයට වඩා අඩුය",
-                "AVGSWAPPRICE": "සාමාන්‍ය හුවමාරු මිල",
-                "SEARCHPLACEHOLDER": "MRX හෝ BTC ලිපිනය ඇතුළත් කරන්න"
+                "AVGSWAPPRICE": "සාමාන්‍ය හුවමාරු මිල"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "හුවමාරු ලිපිනය ජනනය කරමින්...",
             "ALREADYHAVEADDRESS": "ඔබට දැනටමත් මෙම Metrix ලිපිනය සමඟ සම්බන්ධ BTC ලිපිනයක් තිබේ.",
             "NOADDRESS": "ඔබ Metrix ලිපිනයක් ඇතුළත් කළේ නැත."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "මෙට්‍රික්ස් මිලදී ගන්න",
-                "SEARCH": "ඉතිහාසය"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "නොසඟවන්න",
                 "EMPTYTITLE": "තවමත් ටෝකන හමු නොවීය.",
                 "EMPTYDETAIL": "Altitude මඟින් ඔබේ ලිපින වෙත යවන ලද MRC20 සහ MRC721 ටෝකන සඳහා බ්ලොක් ගවේෂකයක් ස්වයංක්‍රීයව පරීක්ෂා කර, පසුව ඔබේම නෝඩයට එරෙහිව සියල්ල සජීවීව සත්‍යාපනය කරයි. ඔබ එහි කොන්ත්‍රාත් ලිපිනය දන්නේ නම් ඔබට ටෝකනයක් අතින් එකතු කළ හැකිය.",
+                "EMPTYDETAILCHECKINGDISABLED": "ස්වයංක්‍රීය ටෝකන් පරීක්ෂාව අක්‍රිය කර ඇත, එබැවින් ඔබේ ලිපින ටෝකන් සඳහා පරීක්ෂා නොකෙරේ. එය නැවත ඉහළින් ක්‍රියාත්මක කරන්න, නැතහොත් ඔබ එහි කොන්ත්‍රාත් ලිපිනය දන්නේ නම් ටෝකනයක් අතින් එක් කරන්න.",
                 "HIDDENTITLE": "සැඟවුණු ටෝකන",
                 "CONTEXTMENUHIDE": "ටෝකනය සඟවන්න",
                 "ITEMSSUFFIX": "අයිතමය(ය)",
-                "NONENUMERABLETOOLTIP": "මෙම එකතුව තනි අයිතම ලැයිස්තුගත කිරීමට සහාය නොදක්වයි - ඒ වෙනුවට ඔබ කොපමණ ප්‍රමාණයක් තබාගෙන සිටිනවාද යන්න පෙන්වයි."
+                "NONENUMERABLETOOLTIP": "මෙම එකතුව තනි අයිතම ලැයිස්තුගත කිරීමට සහාය නොදක්වයි - ඒ වෙනුවට ඔබ කොපමණ ප්‍රමාණයක් තබාගෙන සිටිනවාද යන්න පෙන්වයි.",
+                "CHECKINGENABLED": "පරීක්ෂා කරමින්",
+                "CHECKINGDISABLED": "පරීක්ෂා කිරීම අක්‍රිය කරමින්",
+                "CHECKINGENABLEDTOOLTIP": "ටෝකන් පරීක්ෂාව ක්‍රියාත්මකයි - Altitude වරින් වර ටෝකන් සඳහා ඔබේ ලිපින පරීක්ෂා කර ශේෂයන් නැවුම් කරයි. අක්‍රිය කිරීමට ක්ලික් කරන්න.",
+                "CHECKINGDISABLEDTOOLTIP": "ටෝකන් පරීක්ෂාව අක්‍රියයි - නැවත සක්‍රිය කිරීමට ක්ලික් කරන්න.",
+                "CHECKINGDISABLEDNOTICE": "ස්වයංක්‍රීය ටෝකන් පරීක්ෂාව අක්‍රිය කර ඇත. ඔබගේ ලිපින ටෝකන් සඳහා ස්කෑන් කර නොමැති අතර ශේෂයන් යාවත්කාලීන නොවේ. ඔබට තවමත් අතින් ටෝකනයක් එක් කළ හැකිය."
             },
             "ADDTOKEN": {
                 "TITLE": "ටෝකනය එක් කරන්න",

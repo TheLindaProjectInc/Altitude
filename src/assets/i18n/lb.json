@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Kont erstellen",
             "HIDEEMPTYACCOUNTS": "Benannt eidel Konten verstoppen"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Iwwersiicht",
+            "TRANSACTIONSTAB": "Transaktiounen",
+            "ADDRESSTABS": "Adressen"
+        },
         "SEND": {
             "ADDRECIPIENT": "Empfänger derbäisetzen",
             "SEND": "Schécken",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Datum",
             "TABLECOLUMNS_CONFIRMS": "Bestätegungen",
             "ALL_SELECTUNSELECT": "Alles op- an ofschalten",
+            "TREEMODE": "Bammodus",
+            "LISTMODE": "Lëschtmodus",
             "SENDAVAILABLE": "Verfügbare Saldo benotzen",
             "INPUTLOCKED": "Den Input ass gespaart. Dir musst dësen Input fräischalten fir en auszeginn.",
             "CONTEXTMENULOCKINPUT": "Input spären",
@@ -38,10 +45,48 @@
             "AFTERFEE": "No der Tax",
             "QUANTITY": "Quantitéit",
             "BYTES": "Bytes",
-            "TREEMODE": "Bammodus",
-            "LISTMODE": "Lëschtmodus",
             "ALERTFEECHANGETITLE": "Ännerung vun der Gebühr",
             "ALERTFEECHANGECONTENT": "Déi tatsächlech Transaktiounsgebühr ass méi héich wéi erwaart. Bestätegt w.e.g. déi nei Gebühr:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Kontrakt erstellen",
+            "INFO": "Deployéiert e Smart Contract am Netzwierk andeems Dir säi kompiléierte Bytecode ofgitt. Dëst ass eng Kärfunktioun vun der Ketten - kontrolléiert Äre Bytecode an d'Gas-Astellungen nach eng Kéier ier Dir en deployéiert, den Deployment kann net réckgängeg gemaach ginn.",
+            "FROM": "Vun",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "De kompiléierte Kontrakt-Bytecode (hex) anfüügen",
+            "INVALIDBYTECODE": "De Bytecode muss eng gülteg Hexadezimalzeichenzeichen (0-9, a-f) mat enger gerueder Zuel vu Zeechen sinn.",
+            "GASLIMIT": "Gaslimit",
+            "GASLIMITRANGE": "Reechwäit",
+            "GASPRICE": "Gaspräis (MRX pro Gasunitéit)",
+            "GASPRICEMIN": "Minimum",
+            "ESTIMATEDMAXCOST": "Geschätzte maximal Käschten",
+            "DEPLOYBUTTON": "Kontrakt opsetzen",
+            "INCOMPLETEFORM": "Wielt w.e.g. eng Absenderadress aus, gitt e gültege Bytecode an a setzt e gültege Gaslimit/Präis",
+            "HIGHGASPRICETITLE": "Héije Benzinpräis",
+            "HIGHGASPRICEINFO": "De Benzinpräis, deen Dir festgeluecht hutt, ass ongewéinlech héich. Dës Installatioun kéint bis zu folgend kaschten:",
+            "DEPLOYING": "Kontrakt implementéieren...",
+            "DEPLOYED": "Kontraktëmsetzung agereecht",
+            "RESULTTITLE": "Resultat vum Asaz",
+            "STATUS": "Status",
+            "STATUSPENDING": "Waart op Bestätegung...",
+            "STATUSCONFIRMED": "Erfollegräich agesat",
+            "STATUSFAILED": "D'Deployment ass gescheitert",
+            "TXID": "Transaktiouns-ID",
+            "SENDER": "Absender",
+            "CONTRACTADDRESS": "Kontraktadress",
+            "GASUSED": "Benotzt Gas",
+            "DONEBUTTON": "Fäerdeg",
+            "DEPLOYANOTHERBUTTON": "Eng aner ausrollen"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Transaktiounen",
+            "COPYBLOCKHASH": "Block-Hash kopéieren",
+            "COPYTXID": "Transaktiouns-ID kopéieren",
+            "COPYACCOUNT": "Kontnumm kopéieren",
+            "COPYADDRESS": "Adress kopéieren",
+            "COPYAMOUNT": "Betrag kopéieren",
+            "COPTBLOCKINDEX": "Blockindex kopéieren",
+            "EXPLORER": "Am Block Explorer opmaachen"
         },
         "STAKING": {
             "UNLOCK": "Entsperren fir Staking",
@@ -68,13 +113,13 @@
             "IP": "IP-Adress",
             "ADDRESS": "Adress",
             "ENABLED": "Aktivéiert",
-            "STARTBUTTON": "Lokal ufänken",
-            "STARTALIASBUTTON": "Alias ufänken",
-            "STARTALLBUTTON": "Alles ufänken",
             "NOMASTERNODES": "Dir hutt keng Masternoden",
             "NOMNOUTPUTS": "Keng Masternode-Ausgäng fonnt. Fir e lokale Masternode ze bedreiwen, schéckt genau 2, 5, 25, 50 oder 100 Millioune Mënzen op Är Masternode-Adress a waart op 15 Bestätegungen.",
+            "STARTBUTTON": "Lokal ufänken",
             "STOPBUTTON": "Lokal stoppen",
+            "STARTALIASBUTTON": "Alias ufänken",
             "STOPALIASBUTTON": "Alias stoppen",
+            "STARTALLBUTTON": "Alles ufänken",
             "ADDREMOTE": "Remote Masternode derbäisetzen",
             "REMOVEMN": "Masternode ewechhuelen",
             "ADDLOCAL": "Lokale Masternode opsetzen",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Allgemeng",
                 "COREVERSION": "Kärversioun",
+                "ALTITUDEVERSION": "Altitude Versioun",
                 "PROTOCOLVERSION": "Protokollversioun",
                 "WALLETVERSION": "Wallet.dat Versioun",
                 "NETWORKTITLE": "Netzwierk",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Zuel vun de Masternoden",
                 "BLOCKCHAINTITLE": "Blockkette",
                 "NUMBERBLOCKS": "Aktuell Zuel vu Blöcken",
-                "BESTBLOCKTTIME": "Zäit vum leschte Block",
-                "ALTITUDEVERSION": "Altitude Versioun"
+                "BESTBLOCKTTIME": "Zäit vum leschte Block"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Wëllkomm op der Metrix Core RPC Konsole. Gitt help an fir eng Iwwersiicht vun de verfügbare Kommandoen.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Sprooch auswielen"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Transaktiounen",
-            "COPYBLOCKHASH": "Block-Hash kopéieren",
-            "COPYTXID": "Transaktiouns-ID kopéieren",
-            "COPYACCOUNT": "Kontnumm kopéieren",
-            "COPYADDRESS": "Adress kopéieren",
-            "COPYAMOUNT": "Betrag kopéieren",
-            "COPTBLOCKINDEX": "Blockindex kopéieren",
-            "EXPLORER": "Am Block Explorer opmaachen"
+        "CURRENCY": {
+            "TITLE": "Wielt d'Währung vun der Display"
         },
         "EXPLORER": {
             "TITLE": "Block Explorer",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Netzwierk",
             "WINDOTAB": "Fënster",
+            "BACKUPTAB": "Sécherheetskopie",
+            "EXPLORERTAB": "Entdecker",
+            "DEVELOPERTAB": "Entwéckler",
             "NETWORK": {
                 "PROXY": "Verbannt Iech iwwer de SOCKS5 Proxy",
                 "PROXYIP": "Proxy-IP",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimiséieren beim Zoumaachen",
                 "BEHAVIOURTITLE": "Verhalen vum Systemtablett a Fënster"
             },
-            "BACKUPTAB": "Sécherheetskopie",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Automatesch Backup",
                 "ENABLED": "Automatesch Backup vun wallet.dat no engem Zäitplang maachen",
                 "ENABLEDINFO": "Erstellt e frësche Backup vun Ärer Wallet-Datei no engem Zäitplang, sou datt ëmmer eng rezent Kopie verfügbar ass, wann eppes falsch leeft.",
+                "INTERVALLABEL": "All (Deeg) Backup maachen",
                 "LASTBACKUP": "Lescht Backup:",
                 "NEVERBACKEDUP": "Et gouf nach keen automatesche Backup gemaach.",
                 "BACKUPNOWBUTTON": "Elo sécher maachen",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Zrécksetzen op Standard",
                 "PRUNETITLE": "Backup-Verlaf",
                 "PRUNEINFO": "Méi al automatesch Backupe ginn geläscht, sou datt dësen Dossier net fir ëmmer wiisst - nëmmen déi lescht hei ënnendrënner ginn erhale bliwwen.",
-                "KEEPCOUNTLABEL": "Lescht halen",
-                "INTERVALLABEL": "All (Deeg) Backup maachen"
+                "KEEPCOUNTLABEL": "Lescht halen"
             },
-            "EXPLORERTAB": "Entdecker",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "D'Websäit huet sech opgemaach, wéi eng Transaktioun am Block Explorer gekuckt gouf (z.B. rietsklickt op eng Transaktioun > Am Explorer kucken).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Haaptnetz",
                 "TESTNET": "Testnet",
                 "REGTEST": "Regtest"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Entwécklermodus",
+                "DEVMODEINFO": "Standardméisseg ausgeschalt a just fir Entwéckler geduecht. Wann Dir dëst aktivéiert, ginn Optiounen ugewisen, fir d'RPC-Verbindung ze iwwerschreiwen - Standardbenotzer sollten dëst ausschalten.",
+                "DEVMODELABEL": "Entwécklermodus aktivéieren",
+                "WARNING": "Dës Astellunge sinn nëmme fir Entwécklungszwecker geduecht. Wann Dir se ännert, kann de Portemonnaie guer net méi mat engem Daemon verbannen - benotzt dëst nëmmen, wann Dir wësst, wat Dir maacht.",
+                "RPCHOSTTITLE": "RPC-Verbindung",
+                "RPCHOSTINFO": "Standardméisseg verbënnt sech Altitude mam Daemon, deen e selwer verwaltet, op dëser Maschinn (127.0.0.1). Wann dës iwwerschriwwe ginn, verbënnt en sech amplaz mat engem aneren Daemon - zum Beispill enger Remote Regtest Instanz, ouni datt een lokal ausgefouert muss ginn. Wann d'Verbindung erfollegräich ass, luet Altitude säin eegene lokale Daemon net erof oder start en net. Den rpcallowip vum Zildaemon muss dës Verbindung erlaben, an den rpcuser/rpcpassword hei ënnendrënner muss mat senger Konfiguratioun iwwereneestëmmen. Trëtt direkt a Kraaft, kee Restart néideg.",
+                "RPCHOSTLABEL": "RPC-Host",
+                "RPCPORTLABEL": "RPC-Port",
+                "RPCUSERLABEL": "RPC Benotzernumm",
+                "RPCPASSWORDLABEL": "RPC-Passwuert"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Iwwersiicht",
-            "TRANSACTIONSTAB": "Transaktiounen",
-            "ADDRESSTABS": "Adressen"
-        },
-        "CURRENCY": {
-            "TITLE": "Wielt d'Währung vun der Display"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Dashboard",
             "SEND": "Schécken",
+            "CREATECONTRACT": "Kontrakt erstellen",
             "RECEIVE": "Empfang",
             "TRANSACTIONS": "Transaktiounen",
             "STAKING": "Staking",
             "MASTERNODES": "Masternoden",
+            "EXPLORER": "Block Explorer",
             "SYNC": {
                 "CONNECTING": "Verbannen",
                 "NOBLOCKS": "Waarden op Blöcken",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "De Portemonnaie gëtt de Moment net gestach",
                 "MASTERNODEON": "Masternode leeft am Moment",
                 "MASTERNODEOFF": "Masternode leeft am Moment net"
-            },
-            "EXPLORER": "Block Explorer"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Gitt eng Websäitadress an",
+            "GOBUTTON": "Goen",
+            "QUICKLAUNCH": "Schnellstart",
+            "DEVTOOLS": "Entwéckler-Tools opmaachen",
+            "ADDLINK": "Link derbäisetzen",
+            "LINKNAMEPLACEHOLDER": "Numm",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Späicheren",
+            "CANCEL": "Ofbriechen",
+            "REMOVE": "Ewechhuelen",
+            "REMOVECONFIRM": "Dëse Schnelllink ewechhuelen?",
+            "LINKEXISTS": "Dee Link ass schonn an Ärer Schnellstartlëscht",
+            "LINKINVALID": "Gitt eng gülteg Websäitadress an",
+            "LINKNETWORKLABEL": "Netzwierk",
+            "LOADFAILED": "D'Websäit konnt net gelueden ginn",
+            "SECURESITE": "D'Verbindung ass sécher - gültegt SSL-Zertifikat",
+            "INSECURESITE": "D'Verbindung ass net sécher",
+            "INVALIDCERTSITE": "D'Verbindung ass net privat - ongëltegt oder net vertrauenswierdegt SSL-Zertifikat"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Gitt Äert Portemonnaie-Passwuert an",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "En Update ass fir Metrix Core verfügbar. Wëllt Dir en elo installéieren?",
             "WALLETUPDATETITLE": "Héichtenupdate verfügbar",
             "WALLETUPDATEINFO": "En Update ass fir Altitude verfügbar. Wëllt Dir en elo eroflueden?",
+            "WALLETUPDATEREADYTITLE": "Héichtenupdate prett",
+            "WALLETUPDATEREADYINFO": "Den Update gouf erofgelueden. Altitude elo nei starten fir en z'installéieren?",
+            "WALLETUPDATERESTARTBUTTON": "Nei starten & installéieren",
+            "WALLETUPDATELATERBUTTON": "Méi spéit",
             "CLIENTUPDATEBUTTON": "Aktualiséierung",
             "CLIENTUPDATECANCELBUTTON": "Net aktualiséieren",
             "CLIENTUPDATESKIPBUTTON": "Dësen Update iwwersprangen",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "All fréier Backups, déi Dir vun Ärer Wallet-Datei gemaach hutt, sollten duerch déi nei generéiert, verschlësselte Wallet-Datei ersat ginn. Aus Sécherheetsgrënn ginn fréier Backups vun der onverschlësselter Wallet-Datei nëtzlos, soubal Dir ufänkt, déi nei, verschlësselte Wallet ze benotzen.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core huet onerwaart gestoppt",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Et gouf e Problem mam Metrix Core, deen dozou gefouert huet, datt en ofgebrach gouf. Et ass recommandéiert, Är debug.log-Datei op Problemer ze kontrolléieren.",
+            "CLIENTUNKNOWNERRORTITLE": "Kommunikatiounsfehler vum Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Et gouf e Problem mat der Kommunikatioun mam Metrix Core. Et ass recommandéiert, Är debug.log-Datei op Problemer ze kontrolléieren.",
+            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap feelgeschloen",
+            "BOOTSTRAPFAILEDINFO": "Et gouf e Problem beim Bootstrapping vu Metrix Core. Et ass recommandéiert, Är Altitude-Logdatei op Problemer ze kontrolléieren.",
+            "BOOTSTRAPOFFERTITLE": "Portemonnaie däitlech veraltet",
+            "BOOTSTRAPOFFERINFO": "E rezente Bootstrap ass verfügbar, deen de Metrix Core séier um neiste Stand brénge kann. Fir mat enger normaler Synchroniséierung weiderzemaachen, kann et e puer Deeg daueren, well Äre Portemonnaie all Block muss eroflueden a verifizéieren, deen e verpasst huet.",
+            "BOOTSTRAPOFFERBUTTON": "Bootstrap eroflueden",
+            "BOOTSTRAPOFFERCANCEL": "Normal Synchroniséierung weiderféieren",
+            "BOOTSTRAPSPACEINFO": "Net genuch fräie Späicherplatz fir de Bootstrap erofzelueden an ze extrahéieren. Néideg: {required}, Verfügbar: {free}. Maacht e bësse Plaz fräi a probéiert et nach eng Kéier.",
+            "STARTUPFAILEDTITLE": "Metrix Core Startup feelgeschloen",
+            "STARTUPFAILEDINFO": "Et gouf e Feeler beim Start vu Metrix Core. Et ass recommandéiert, Är Altitude-Logdatei op Problemer ze kontrolléieren.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Erhuelungsinstrumenter",
             "CLIENTINVALIDCONFIGTITLE": "Ongülteg metrix.conf Konfiguratioun",
             "CLIENTINVALIDCONFIGINFO": "Är metrix.conf huet eng ongëlteg Masternode-Astellung, déi dozou féiert, datt Metrix Core direkt ofschléisst. Kontrolléiert w.e.g. dës Datei.",
             "ADDREMOTEMNTITLE": "Remote Masternode derbäisetzen",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Masternode Privatschlëssel",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Masternode Trx Index",
-            "BOOTSTRAPFAILEDTITLE": "Metrix Core Bootstrap feelgeschloen",
-            "BOOTSTRAPFAILEDINFO": "Et gouf e Problem beim Bootstrapping vu Metrix Core. Et ass recommandéiert, Är Altitude-Logdatei op Problemer ze kontrolléieren.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Erhuelungsinstrumenter",
-            "STARTUPFAILEDTITLE": "Metrix Core Startup feelgeschloen",
-            "STARTUPFAILEDINFO": "Et gouf e Feeler beim Start vu Metrix Core. Et ass recommandéiert, Är Altitude-Logdatei op Problemer ze kontrolléieren.",
-            "CLIENTUNKNOWNERRORTITLE": "Kommunikatiounsfehler vum Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Et gouf e Problem mat der Kommunikatioun mam Metrix Core. Et ass recommandéiert, Är debug.log-Datei op Problemer ze kontrolléieren.",
             "UNENROLLGOVERNORTITLE": "Confirméiert d'Ausschreiwung vum Gouverneur",
             "UNENROLLGOVERNORCONTENT": "Bass du sécher, datt du däi Gouverneur ofmellen wëlls? Du kanns dann net méi iwwer d'Kettenverwaltung ofstëmmen.",
-            "WALLETUPDATEREADYTITLE": "Héichtenupdate prett",
-            "WALLETUPDATEREADYINFO": "Den Update gouf erofgelueden. Altitude elo nei starten fir en z'installéieren?",
-            "WALLETUPDATERESTARTBUTTON": "Nei starten & installéieren",
-            "WALLETUPDATELATERBUTTON": "Méi spéit",
             "DAPPCONNECTTITLE": "Verbindung mat der Säit",
             "DAPPCONNECTINFO": "Dës Säit wëll sech mat Ärem Portemonnaie verbannen a wëllt Är Adress a Saldo gesinn.",
             "DAPPCONNECTBUTTON": "Verbannen",
+            "DAPPCONNECTADDRESSLABEL": "Adress",
+            "DAPPAPPROVEBUTTON": "Zoustëmmen",
             "DAPPREJECTBUTTON": "Ofleenen",
             "DAPPSENDTITLE": "Ufro fir eng Kontrakttransaktioun",
             "DAPPSENDINFO": "Dës Säit freet Iech, eng Kontrakttransaktioun vun Ärem Portemonnaie ze schécken.",
-            "DAPPSIGNTITLE": "Ufro fir Messagen ënnerschreiwen",
-            "DAPPSIGNINFO": "Dës Säit freet Iech, eng Noriicht mat Ärer Portemonnaie-Adress z'ënnerschreiwen.",
-            "DAPPNOTREADY": "Ech kann nach keng Verbindung mat der Säit opbauen - Metrix Core start nach ëmmer.",
-            "DAPPNOWALLET": "Kann net mat der Säit verbannen - keng Portemonnaie-Adress ass verfügbar.",
-            "DAPPAPPROVEBUTTON": "Zoustëmmen",
-            "DAPPCONNECTADDRESSLABEL": "Adress",
             "DAPPSENDSITELABEL": "Säit",
             "DAPPSENDCONTRACTLABEL": "Kontraktadress",
             "DAPPSENDAMOUNTLABEL": "Betrag",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Maximal Netzwierkkäschten",
             "DAPPSENDMAXTOTALLABEL": "Maximal Gesamtbetrag",
             "DAPPSENDDATALABEL": "Kontraktdaten",
+            "DAPPSIGNTITLE": "Ufro fir Messagen ënnerschreiwen",
+            "DAPPSIGNINFO": "Dës Säit freet Iech, eng Noriicht mat Ärer Portemonnaie-Adress z'ënnerschreiwen.",
             "DAPPSIGNMESSAGELABEL": "Message",
-            "BOOTSTRAPOFFERTITLE": "Portemonnaie däitlech veraltet",
-            "BOOTSTRAPOFFERINFO": "E rezente Bootstrap ass verfügbar, deen de Metrix Core séier um neiste Stand brénge kann. Fir mat enger normaler Synchroniséierung weiderzemaachen, kann et e puer Deeg daueren, well Äre Portemonnaie all Block muss eroflueden a verifizéieren, deen e verpasst huet.",
-            "BOOTSTRAPOFFERBUTTON": "Bootstrap eroflueden",
-            "BOOTSTRAPOFFERCANCEL": "Normal Synchroniséierung weiderféieren",
-            "BOOTSTRAPSPACEINFO": "Net genuch fräie Späicherplatz fir de Bootstrap erofzelueden an ze extrahéieren. Néideg: {required}, Verfügbar: {free}. Maacht e bësse Plaz fräi a probéiert et nach eng Kéier."
+            "DAPPNOTREADY": "Ech kann nach keng Verbindung mat der Säit opbauen - Metrix Core start nach ëmmer.",
+            "DAPPNOWALLET": "Kann net mat der Säit verbannen - keng Portemonnaie-Adress ass verfügbar."
         },
         "ADDRESSBOOK": {
             "TITLE": "Adressbuch",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Aktuellt Netzwierk"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Gitt eng Websäitadress an",
-            "GOBUTTON": "Goen",
-            "QUICKLAUNCH": "Schnellstart",
-            "DEVTOOLS": "Entwéckler-Tools opmaachen",
-            "ADDLINK": "Link derbäisetzen",
-            "LINKNAMEPLACEHOLDER": "Numm",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Späicheren",
-            "CANCEL": "Ofbriechen",
-            "REMOVE": "Ewechhuelen",
-            "REMOVECONFIRM": "Dëse Schnelllink ewechhuelen?",
-            "LINKEXISTS": "Dee Link ass schonn an Ärer Schnellstartlëscht",
-            "LINKINVALID": "Gitt eng gülteg Websäitadress an",
-            "LINKNETWORKLABEL": "Netzwierk",
-            "LOADFAILED": "D'Websäit konnt net gelueden ginn",
-            "SECURESITE": "D'Verbindung ass sécher - gültegt SSL-Zertifikat",
-            "INSECURESITE": "D'Verbindung ass net sécher",
-            "INVALIDCERTSITE": "D'Verbindung ass net privat - ongëltegt oder net vertrauenswierdegt SSL-Zertifikat"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Backup-Portemonnaie...",
             "SIGNMESSAGE": "Message ënnerschreiwen...",
             "VERIFYMESSAGE": "Message verifizéieren...",
-            "LOCALE": "Sprooch...",
-            "RESTARTCORE": "Metrix Core nei starten",
-            "EXIT": "Ausgang",
             "OPTIONS": "Optiounen...",
+            "LOCALE": "Sprooch...",
             "CURRENCIES": "Währung uweisen...",
-            "ALTITUDEREFRESH": "Héichtendaten aktualiséieren"
+            "RESTARTCORE": "Metrix Core nei starten",
+            "ALTITUDEREFRESH": "Héichtendaten aktualiséieren",
+            "EXIT": "Ausgang"
         },
         "ENCRYPT": {
             "TITLE": "Verschlësselen",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Gesamtbalance",
+        "SPENDABLEBALANCE": "Ausgütbare Saldo",
+        "PENDINGBALANCE": "Ausstehenden Saldo",
         "CANCELBUTTON": "Ofbriechen",
         "DONEBUTTON": "Fäerdeg",
         "OKBUTTON": "Okay",
+        "ACCEPTBUTTON": "Akzeptéieren",
         "CLEARALLBUTTON": "Alles läschen",
         "ENTERACCOUNTLABEL": "Gitt eng Beschrëftung fir dës Adress an",
         "ENTERADDRESSLABEL": "Gitt eng Metrix-Adress an",
@@ -464,11 +511,8 @@
         "SORTBY": "Sortéieren no",
         "SEARCH": "Sich",
         "FEE": "Gebühr",
-        "ACCEPTBUTTON": "Akzeptéieren",
         "CONFIRMED": "Bestätegt",
         "UNCONFIRMED": "Onbestätegt",
-        "PENDINGBALANCE": "Ausstehenden Saldo",
-        "SPENDABLEBALANCE": "Ausgütbare Saldo",
         "SAVEBUTTON": "Späicheren"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Metrix Core nei starten...",
         "BOOTSTRAPPING": "Bootstrap gëtt erofgelueden...",
         "BOOTSTRAPEXTRACTING": "Bootstrap gëtt extrahéiert...",
-        "TIMEREMAINING": "Rescht:"
+        "TIMEREMAINING": "Rescht:",
+        "DEVRPCOVERRIDEACTIVE": "Eng RPC-Verbindungsiwwerschreiwung fir Entwéckler ass agestallt (Optiounen > Entwéckler) an äntwert net. Deaktivéiert dës Optioun fir normal mam lokalen Daemon erëm ze verbannen.",
+        "DEVRPCOVERRIDECLEARBUTTON": "RPC Iwwerschreiwen läschen & Nei verbannen"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Neie Kont erfollegräich erstallt",
         "ADDRESSCOPIEDCLIPBOARD": "Adress an d'Zwëschespäicher kopéiert",
+        "COPIEDCLIPBOARD": "An d'Zwëschespäicher kopéiert",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiounen an d'Zwëschespäicher kopéiert",
         "EMPTYFIELDS": "Fëllt w.e.g. all Felder aus",
         "NOUPDATE": "Kee Update verfügbar",
         "WALLETBACKEDUP": "Portemonnaie-Sicherung erfollegräich",
+        "WALLETBACKUPFAILED": "Automatesch Portemonnaie-Sicherung feelgeschloen - kontrolléiert Är Sicherungsplaz an de verfügbare Späicherplatz",
         "PASSPHRASEMISMATCH": "D'Passwierder, déi Dir aginn hutt, stëmmen net iwwereneen",
         "CHECKINGUPDATE": "Iwwerpréift no Aktualiséierungen...",
         "CHECKINGUPDATEFAILED": "Konnt net no Aktualiséierunge sichen. Iwwerpréift Äert Netzwierk.",
+        "WALLETUPDATEDOWNLOADING": "Aktualiséierung gëtt erofgelueden...",
         "SENDINGEXCEEDSBALANCE": "De Betrag, deen Dir schéckt, iwwerschreit Äre gewielte Saldo",
         "MISSINGCHANGEADDRESS": "Dir musst eng Adressännerung uginn",
         "MISSINGDESTINATIONADDRESS": "Dir musst eng Destinatiounsadress uginn",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Portemonnaie verschlësselen...",
         "CHANGINGPASSPHARASE": "Passwuert änneren...",
         "STARTINGMASTERNODE": "Masternode gëtt gestart...",
+        "STOPPINGMASTERNODE": "Masternode gëtt gestoppt...",
         "SENDINGTRANSACTION": "Transaktioun gëtt geschéckt...",
         "SIGNINGMESSAGE": "Message ënnerschreiwen...",
         "SIGNEDMESSAGE": "Message ënnerschriwwen",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Portemonnaie gëtt opgeschalt...",
         "TRANSACTIONMISMATCH": "Transaktiounsfehler. Probéiert et nach eng Kéier.",
         "MINIMUMCONFIRMATIONS": "All Inputen erfuerderen op d'mannst 1 Bestätegung ier se ausginn.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Transaktiounen an d'Zwëschespäicher kopéiert",
-        "STOPPINGMASTERNODE": "Masternode gëtt gestoppt...",
         "FAILEDTOWRITECONFIG": "Et gouf e Problem beim Schreiwen an Är metrix.conf Datei. Kontrolléiert ob d'Datei existéiert an ob Altitude Schreifrechter huet.",
         "NOPUBLICUP": "Keng ëffentlech IP-Adress fonnt. Iwwerpréift Är Internetverbindung a start Altitude nei.",
         "CONFIGURINGLOCALMN": "Konfiguratioun vum lokalen Masternode...",
         "REPORTINGISSUE": "Diagnosesch Informatiounen kréien... Dës Informatioun gëtt an Är Zwëschespeicher kopéiert.",
-        "WALLETUPDATEDOWNLOADING": "Aktualiséierung gëtt erofgelueden...",
-        "WALLETBACKUPFAILED": "Automatesch Portemonnaie-Sicherung feelgeschloen - kontrolléiert Är Sicherungsplaz an de verfügbare Späicherplatz",
         "EXPLORERURLSAVED": "Explorer-URL gespäichert",
         "EXPLORERURLRESET": "Explorer URL op Standard zréckgesat",
         "EXPLORERURLINVALID": "Dat ass keng gülteg http(s) URL",
-        "EXPLORERURLUNREACHABLE": "Konnt dës URL net erreechen - kontrolléiert se a probéiert et nach eng Kéier"
+        "EXPLORERURLUNREACHABLE": "Konnt dës URL net erreechen - kontrolléiert se a probéiert et nach eng Kéier",
+        "DEVRPCHOSTSAVED": "RPC-Host gespäichert",
+        "DEVRPCHOSTRESET": "RPC-Host op Standard zréckgesat (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Empfangene Mënzen",
+        "NEWTRANSACTION_TITLE_STAKE": "Empfangene Bedeelegung",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode Belounung kritt"
     },
     "TIME": {
         "AFEWSECONDS": "E puer Sekonnen",
@@ -533,11 +587,6 @@
         "MONTHS": "Méint",
         "AYEAR": "E Joer",
         "YEARS": "Joer"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Empfangene Mënzen",
-        "NEWTRANSACTION_TITLE_STAKE": "Empfangene Bedeelegung",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Masternode Belounung kritt"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "D'Gouverneure si verantwortlech fir d'Ofstëmmung iwwer monatlech Budgeter a Blockchain-Ännerungen. Dir kënnt Gouverneur ginn, andeems Dir déi richteg Sécherheeten am Gouvernance-Kontrakt festleet.",
                 "COLLATERAL": "Erfuerderlech Sécherheeten",
                 "ENROLL": "Aschreiwen",
+                "SELECTAGOVERNOR": "Wielt eng berechtegt Adress vum Gouverneur",
+                "GOVERNORNOTSELECTED": "Keng berechtegt Adress gouf ausgewielt",
                 "CONFIRMENROLL": "Dir sidd amgaang Iech als Gouverneur anzeschreiwen. Dëst schéckt eng Transaktioun mat de néidege Sécherheeten un de Gouvernancekontrakt. Dir kënnt Iech zu all Moment ofmellen.",
                 "ISGOVERNORTITLE": "Dir sidd en aktiven Gouverneur!",
                 "ISGOVERNORDETAIL1": "D'Gouverneure sinn zoustänneg fir d'Ofstëmmung iwwer monatlech Budgeter a Blockchain-Ännerungen.",
                 "ISGOVERNORDETAIL2": "Fir Gouverneur ze bleiwen, musst Dir all 30 Deeg un op d'mannst enger Ofstëmmung deelhuelen.",
                 "ISGOVERNORDETAIL3": "Wann et näischt gëtt, iwwer wat Dir ofstëmme kënnt, kënnt Dir Är Aschreiwung manuell weiderféieren, andeems Dir en aktiven Ping schéckt.",
+                "MYGOVERNORADDRESS": "Meng Adress vum Gouverneur",
                 "UNENROLL": "Ofmellen",
                 "PING": "Aktiv Ping schécken",
                 "LASTPINGTITLE": "Leschte Ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "Deeg",
                 "GOVERNORVOTEMATURITYHOURS": "Stonnen",
                 "GOVERNORVOTEMATURITYSUFFIX": "bis reif",
-                "MYGOVERNORADDRESS": "Meng Adress vum Gouverneur",
-                "SELECTAGOVERNOR": "Wielt eng berechtegt Adress vum Gouverneur",
-                "GOVERNORNOTSELECTED": "Keng berechtegt Adress gouf ausgewielt",
                 "NOTFULLYSYNCEDTITLE": "Gouverneurstatus net verfügbar",
                 "NOTFULLYSYNCEDDETAIL": "Äre Status als Gouverneur gëtt sichtbar, wann Är Blockchain voll synchroniséiert ass.",
                 "DGPMIGRATIONTITLE": "DGP-Migratioun",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Äre Virschlag gouf erfollegräich erstallt",
             "ENROLLINGGOVERNOR": "Aschreiwung als Gouverneur...",
             "ENROLLEDGOVERNOR": "Är Aschreiwung ass ofgeschloss, soubal Är Transaktioun confirméiert gouf",
-            "VOTINGONPROPOSAL": "Ofstëmmung vum Virschlag schécken",
-            "VOTEDONPROPOSAL": "Är Stëmm gëtt gezielt, soubal d'Transaktioun confirméiert ass.",
             "PINGINGGOVERNOR": "Ping schécken...",
             "PINGEDGOVERNOR": "Ping erfollegräich geschéckt. Äre Gouverneur gëtt informéiert soubal d'Transaktioun confirméiert ass.",
+            "VOTINGONPROPOSAL": "Ofstëmmung vum Virschlag schécken",
+            "VOTEDONPROPOSAL": "Är Stëmm gëtt gezielt, soubal d'Transaktioun confirméiert ass.",
             "UNENROLLINGGOVERNOR": "Gouverneur ofschléissen...",
             "UNENROLLEDGOVERNOR": "Transaktioun geschéckt. Äre Gouverneur gëtt ofgeschriwwe soubal d'Transaktioun bestätegt ass.",
             "GOVERNORNOTMATURE": "Äre Gouverneur ass nach net reif genuch fir dës Aktioun auszeféieren"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Metrix kafen",
+                "SEARCH": "Geschicht"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Dir schéckt",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Transaktiounsgeschicht",
                 "SEARCHBUTTON": "SICHEN",
+                "SEARCHPLACEHOLDER": "Gitt d'MRX- oder BTC-Adress an",
                 "TRANSACTIONDATE": "Datum",
                 "TRANSACTIONTYPE": "TX-Typ",
                 "TRANSACTIONAMOUNT": "Betrag",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Bestätegt",
                 "TRANSACTIONNOTCONFIRMED": "Net confirméiert",
                 "TRANSACTIONREFUNDED": "Rembourséiert - Ënnert dem Minimum",
-                "AVGSWAPPRICE": "Duerchschnëttleche Swappräis",
-                "SEARCHPLACEHOLDER": "Gitt d'MRX- oder BTC-Adress an"
+                "AVGSWAPPRICE": "Duerchschnëttleche Swappräis"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Generéiert Swap-Adress...",
             "ALREADYHAVEADDRESS": "Dir hutt schonn eng BTC-Adress, déi mat dëser Metrix-Adress verbonnen ass",
             "NOADDRESS": "Dir hutt keng Metrix-Adress aginn"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Metrix kafen",
-                "SEARCH": "Geschicht"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Ophiewen",
                 "EMPTYTITLE": "Nach keng Tokens fonnt",
                 "EMPTYDETAIL": "Altitude kontrolléiert automatesch e Block Explorer op MRC20- an MRC721-Token, déi un Är Adressen geschéckt ginn, a verifizéiert dann alles live géint Ären eegene Knuet. Dir kënnt och en Token manuell derbäisetzen, wann Dir seng Kontraktadress kennt.",
+                "EMPTYDETAILCHECKINGDISABLED": "Déi automatesch Token-Kontroll ass ausgeschalt, dofir ginn Är Adressen net op Tokens iwwerpréift. Aktivéiert et uewen erëm oder füügt en Token manuell derbäi, wann Dir seng Kontraktadress kennt.",
                 "HIDDENTITLE": "Verstoppte Jetonen",
                 "CONTEXTMENUHIDE": "Token verstoppen",
                 "ITEMSSUFFIX": "Artikel(en)",
-                "NONENUMERABLETOOLTIP": "Dës Kollektioun ënnerstëtzt keng Oplëschtung vun eenzelnen Artikelen - amplaz gëtt ugewisen, wéivill Dir hutt."
+                "NONENUMERABLETOOLTIP": "Dës Kollektioun ënnerstëtzt keng Oplëschtung vun eenzelnen Artikelen - amplaz gëtt ugewisen, wéivill Dir hutt.",
+                "CHECKINGENABLED": "Iwwerpréiwen",
+                "CHECKINGDISABLED": "Ofchecken",
+                "CHECKINGENABLEDTOOLTIP": "Token-Kontroll ass aktivéiert - Altitude kontrolléiert periodesch Är Adressen op Tokenen a aktualiséiert de Saldo. Klickt fir auszeschalten.",
+                "CHECKINGDISABLEDTOOLTIP": "Token-Kontroll ass ausgeschalt - klickt fir erëm unzeschalten.",
+                "CHECKINGDISABLEDNOTICE": "Déi automatesch Token-Kontroll ass ausgeschalt. Är Adressen ginn net op Tokens gescannt an d'Saldoen ginn net aktualiséiert. Dir kënnt ëmmer nach en Token manuell derbäisetzen."
             },
             "ADDTOKEN": {
                 "TITLE": "Token derbäisetzen",

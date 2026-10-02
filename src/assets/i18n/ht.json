@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Kreye yon kont",
             "HIDEEMPTYACCOUNTS": "Kache Kont Vid San Non"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "Apèsi sou sijè a",
+            "TRANSACTIONSTAB": "Tranzaksyon yo",
+            "ADDRESSTABS": "Adrès"
+        },
         "SEND": {
             "ADDRECIPIENT": "Ajoute Moun k ap Resevwa a",
             "SEND": "Voye",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Dat",
             "TABLECOLUMNS_CONFIRMS": "Konfimasyon",
             "ALL_SELECTUNSELECT": "Chanje tout",
+            "TREEMODE": "Mòd pyebwa",
+            "LISTMODE": "Mòd Lis",
             "SENDAVAILABLE": "Sèvi ak balans ki disponib la",
             "INPUTLOCKED": "Antre a bloke. Ou ap bezwen debloke antre sa a pou ou ka depanse li.",
             "CONTEXTMENULOCKINPUT": "Antre kadna",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Apre Frè a",
             "QUANTITY": "Kantite",
             "BYTES": "Okte",
-            "TREEMODE": "Mòd pyebwa",
-            "LISTMODE": "Mòd Lis",
             "ALERTFEECHANGETITLE": "Chanjman Frè",
             "ALERTFEECHANGECONTENT": "Frè tranzaksyon reyèl la pi wo pase sa yo te prevwa. Tanpri konfime nouvo frè a:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "Kreye Kontra",
+            "INFO": "Deplwaye yon kontra entelijan sou rezo a lè w soumèt bytecode konpile li a. Sa a se yon fonksyon chèn debaz - verifye bytecode ou ak paramèt gaz ou yo anvan ou deplwaye, ou pa ka anile deplwaman an.",
+            "FROM": "Soti nan",
+            "BYTECODE": "Kòd okte",
+            "BYTECODEPLACEHOLDER": "Kole bytecode kontra konpile a (egzadèkal)",
+            "INVALIDBYTECODE": "Kòd bytekòd la dwe yon chèn hex ki valab (0-9, a-f) avèk yon kantite karaktè pè.",
+            "GASLIMIT": "Limit Gaz",
+            "GASLIMITRANGE": "Ranje",
+            "GASPRICE": "Pri Gaz (MRX pou chak inite gaz)",
+            "GASPRICEMIN": "Minimòm",
+            "ESTIMATEDMAXCOST": "Pri maksimòm estime",
+            "DEPLOYBUTTON": "Deplwaye Kontra a",
+            "INCOMPLETEFORM": "Tanpri chwazi yon adrès pou voye, antre yon bytecode ki valab, epi mete yon limit/pri gaz ki valab.",
+            "HIGHGASPRICETITLE": "Pri gaz ki wo",
+            "HIGHGASPRICEINFO": "Pri gaz ou fikse a wo anpil. Deplwaman sa a ka koute jiska:",
+            "DEPLOYING": "Deplwaye kontra a...",
+            "DEPLOYED": "Deplwaman kontra soumèt",
+            "RESULTTITLE": "Rezilta Deplwayman an",
+            "STATUS": "Estati",
+            "STATUSPENDING": "Ap tann konfimasyon...",
+            "STATUSCONFIRMED": "Deplwaye avèk siksè",
+            "STATUSFAILED": "Deplwaman an echwe",
+            "TXID": "ID Tranzaksyon",
+            "SENDER": "Moun k ap voye a",
+            "CONTRACTADDRESS": "Adrès Kontra a",
+            "GASUSED": "Gaz ki itilize",
+            "DONEBUTTON": "Fini",
+            "DEPLOYANOTHERBUTTON": "Deplwaye yon lòt"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Tranzaksyon yo",
+            "COPYBLOCKHASH": "Kopi Blòk Hach",
+            "COPYTXID": "Kopi ID Tranzaksyon an",
+            "COPYACCOUNT": "Kopi Non Kont lan",
+            "COPYADDRESS": "Kopi Adrès",
+            "COPYAMOUNT": "Kantite Kopi",
+            "COPTBLOCKINDEX": "Kopi Endèks Blòk",
+            "EXPLORER": "Louvri nan Eksploratè Blòk la"
         },
         "STAKING": {
             "UNLOCK": "Debloke pou Piyonaj",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Adrès",
             "ENABLED": "Aktive",
-            "STARTBUTTON": "Kòmanse Lokalman",
-            "STARTALIASBUTTON": "Kòmanse Alyas",
-            "STARTALLBUTTON": "Kòmanse tout",
             "NOMASTERNODES": "Ou pa gen okenn masternode",
             "NOMNOUTPUTS": "Pa jwenn okenn rezilta Masternode. Pou w lanse yon Masternode lokal, voye egzakteman 2, 5, 25, 50 oubyen 100 milyon pyès monnen nan adrès Masternode ou a epi tann 15 konfimasyon.",
+            "STARTBUTTON": "Kòmanse Lokalman",
             "STOPBUTTON": "Sispann Lokal la",
+            "STARTALIASBUTTON": "Kòmanse Alyas",
             "STOPALIASBUTTON": "Sispann Alyas",
+            "STARTALLBUTTON": "Kòmanse tout",
             "ADDREMOTE": "Ajoute Masternode a distans",
             "REMOVEMN": "Retire Masternode la",
             "ADDLOCAL": "Enstale Masternode Lokal la",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Jeneral",
                 "COREVERSION": "Vèsyon prensipal la",
+                "ALTITUDEVERSION": "Vèsyon Altitid",
                 "PROTOCOLVERSION": "Vèsyon Pwotokòl la",
                 "WALLETVERSION": "Vèsyon Wallet.dat",
                 "NETWORKTITLE": "Rezo",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Kantite Masternodes",
                 "BLOCKCHAINTITLE": "Chèn blòk",
                 "NUMBERBLOCKS": "Kantite blòk aktyèl la",
-                "BESTBLOCKTTIME": "Dènye lè blòk la",
-                "ALTITUDEVERSION": "Vèsyon Altitid"
+                "BESTBLOCKTTIME": "Dènye lè blòk la"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Byenveni nan konsòl Metrix Core RPC a. Tape èd pou yon apèsi sou kòmandman ki disponib yo.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Chwazi Lang"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Tranzaksyon yo",
-            "COPYBLOCKHASH": "Kopi Blòk Hach",
-            "COPYTXID": "Kopi ID Tranzaksyon an",
-            "COPYACCOUNT": "Kopi Non Kont lan",
-            "COPYADDRESS": "Kopi Adrès",
-            "COPYAMOUNT": "Kantite Kopi",
-            "COPTBLOCKINDEX": "Kopi Endèks Blòk",
-            "EXPLORER": "Louvri nan Eksploratè Blòk la"
+        "CURRENCY": {
+            "TITLE": "Chwazi Lajan pou Montre"
         },
         "EXPLORER": {
             "TITLE": "Eksploratè Blòk",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Rezo",
             "WINDOTAB": "Fenèt",
+            "BACKUPTAB": "Sovgad",
+            "EXPLORERTAB": "Eksploratè",
+            "DEVELOPERTAB": "Devlopè",
             "NETWORK": {
                 "PROXY": "Konekte atravè proxy SOCKS5 la",
                 "PROXYIP": "Adrès IP prokurasyon",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "Minimize lè w fèmen",
                 "BEHAVIOURTITLE": "Plato Sistèm ak Konpòtman Fenèt"
             },
-            "BACKUPTAB": "Sovgad",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Sovgad Otomatik",
                 "ENABLED": "Fè yon kopi otomatikman nan wallet.dat selon yon pwogram.",
                 "ENABLEDINFO": "Kreye yon nouvo backup nan fichye bous ou a selon yon pwogram, konsa yon kopi resan toujou disponib si yon bagay ale mal.",
+                "INTERVALLABEL": "Fè yon kopi chak (jou)",
                 "LASTBACKUP": "Dènye backup:",
                 "NEVERBACKEDUP": "Pa gen okenn backup otomatik ki fèt ankò.",
                 "BACKUPNOWBUTTON": "Fè yon backup kounye a",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Reyajiste nan valè defo",
                 "PRUNETITLE": "Istwa Sauvegarde",
                 "PRUNEINFO": "Ansyen backup otomatik yo efase pou dosye sa a pa grandi pou tout tan - se sèlman sa ki pi resan yo ki anba a ki konsève.",
-                "KEEPCOUNTLABEL": "Kenbe dènye",
-                "INTERVALLABEL": "Fè yon kopi chak (jou)"
+                "KEEPCOUNTLABEL": "Kenbe dènye"
             },
-            "EXPLORERTAB": "Eksploratè",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "Eksploratè Blòk",
                 "BLOCKEXPLORERINFO": "Sit la te ouvri lè w ap gade yon tranzaksyon sou eksploratè blòk la (pa egzanp, klike sou yon tranzaksyon ak bouton dwat sourit la > Gade sou Eksploratè a).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Rezo prensipal",
                 "TESTNET": "Tèsnèt",
                 "REGTEST": "Tès anrejistreman"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "Mòd Devlopè",
+                "DEVMODEINFO": "Li etenn pa default epi li fèt pou devlopè sèlman. Lè ou aktive sa, ou ka wè opsyon pou ranplase koneksyon RPC a - itilizatè estanda yo ta dwe kite sa etenn.",
+                "DEVMODELABEL": "Aktive Mòd Devlopè a",
+                "WARNING": "Paramèt sa yo se pou rezon devlopman sèlman. Chanje yo ka anpeche bous la konekte ak yon daemon ditou - sèvi ak sa sèlman si ou konnen sa w ap fè.",
+                "RPCHOSTTITLE": "Koneksyon RPC",
+                "RPCHOSTINFO": "Pa default, Altitude konekte ak sèvis li jere tèt li a, sou machin sa a (127.0.0.1). Si ou ranplase sa yo, sa pèmèt li konekte ak yon lòt sèvis - pa egzanp, yon egzanp regtest aleka, san li pa bezwen egzekite youn lokalman. Si koneksyon an reyisi, Altitude pap telechaje oswa kòmanse pwòp sèvis lokal li a. rpcallowip sèvis sib la dwe pèmèt koneksyon sa a, epi rpcuser/rpcpassword ki anba a dwe koresponn ak konfigirasyon li. Li pran efè imedyatman, ou pa bezwen rekòmanse.",
+                "RPCHOSTLABEL": "Otè RPC",
+                "RPCPORTLABEL": "Pò RPC",
+                "RPCUSERLABEL": "Non itilizatè RPC",
+                "RPCPASSWORDLABEL": "Modpas RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "Apèsi sou sijè a",
-            "TRANSACTIONSTAB": "Tranzaksyon yo",
-            "ADDRESSTABS": "Adrès"
-        },
-        "CURRENCY": {
-            "TITLE": "Chwazi Lajan pou Montre"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Tablodbò",
             "SEND": "Voye",
+            "CREATECONTRACT": "Kreye Kontra",
             "RECEIVE": "Resevwa",
             "TRANSACTIONS": "Tranzaksyon yo",
             "STAKING": "Pike",
             "MASTERNODES": "Masternodes",
+            "EXPLORER": "Eksploratè Blòk",
             "SYNC": {
                 "CONNECTING": "Konekte",
                 "NOBLOCKS": "Ap tann blòk yo",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "Bous la pa nan parye kounye a",
                 "MASTERNODEON": "Masternode ap fonksyone kounye a",
                 "MASTERNODEOFF": "Masternode a pa ap fonksyone kounye a"
-            },
-            "EXPLORER": "Eksploratè Blòk"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "Antre yon adrès sit entènèt3",
+            "GOBUTTON": "Ale",
+            "QUICKLAUNCH": "Lansman rapid",
+            "DEVTOOLS": "Louvri Zouti Devlopè yo",
+            "ADDLINK": "Ajoute yon lyen",
+            "LINKNAMEPLACEHOLDER": "Non",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Sove",
+            "CANCEL": "Anile",
+            "REMOVE": "Retire",
+            "REMOVECONFIRM": "Retire lyen rapid sa a?",
+            "LINKEXISTS": "Lyen sa a deja nan lis lansman rapid ou a.",
+            "LINKINVALID": "Antre yon adrès sit ki valab",
+            "LINKNETWORKLABEL": "Rezo",
+            "LOADFAILED": "Sit la pa t ka chaje.",
+            "SECURESITE": "Koneksyon an an sekirite - sètifika SSL valab",
+            "INSECURESITE": "Koneksyon an pa an sekirite",
+            "INVALIDCERTSITE": "Koneksyon an pa prive - sètifika SSL la pa valab oswa li pa fyab."
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "Antre modpas bous ou a",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Gen yon mizajou disponib pou Metrix Core. Èske ou ta renmen enstale li kounye a?",
             "WALLETUPDATETITLE": "Mizajou Altitid Disponib",
             "WALLETUPDATEINFO": "Gen yon mizajou disponib pou Altitude. Èske ou ta renmen telechaje li kounye a?",
+            "WALLETUPDATEREADYTITLE": "Mizajou Altitid Pare",
+            "WALLETUPDATEREADYINFO": "Mizajou a telechaje. Rekòmanse Altitude kounye a pou enstale li?",
+            "WALLETUPDATERESTARTBUTTON": "Rekòmanse & Enstale",
+            "WALLETUPDATELATERBUTTON": "Pita",
             "CLIENTUPDATEBUTTON": "Mizajou",
             "CLIENTUPDATECANCELBUTTON": "Pa mete ajou",
             "CLIENTUPDATESKIPBUTTON": "Sote Mizajou sa a",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Nenpòt ansyen kopi sekirite ou te fè nan fichye bous ou a ta dwe ranplase ak nouvo fichye bous chiffres ki fèk pwodui a. Pou rezon sekirite, ansyen kopi sekirite fichye bous ki pa chiffres la ap vin initil le pli vit ke ou kòmanse itilize nouvo bous chiffres la.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Metrix Core te kanpe sanzatann",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Te gen yon pwoblèm ak Metrix Core ki lakòz li fini. Li rekòmande pou tcheke fichye debug.log ou a pou wè si gen pwoblèm.",
+            "CLIENTUNKNOWNERRORTITLE": "Erè Kominikasyon Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Te gen yon pwoblèm pou kominike avèk Metrix Core. Li rekòmande pou tcheke fichye debug.log ou a pou wè si gen pwoblèm.",
+            "BOOTSTRAPFAILEDTITLE": "Echèk Bootstrap Metrix Core la",
+            "BOOTSTRAPFAILEDINFO": "Te gen yon pwoblèm pandan demaraj Metrix Core la. Li rekòmande pou tcheke fichye jounal Altitude ou a pou wè si gen pwoblèm.",
+            "BOOTSTRAPOFFERTITLE": "Bous la pa ajou ditou",
+            "BOOTSTRAPOFFERINFO": "Gen yon bootstrap resan ki disponib ki ka mete Metrix Core ajou byen vit. Kontinye ak yon senkronizasyon nòmal ka pran plizyè jou pou fini, piske bous ou a bezwen telechaje epi verifye chak blòk li rate.",
+            "BOOTSTRAPOFFERBUTTON": "Telechaje Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "Kontinye senkronizasyon nòmal la",
+            "BOOTSTRAPSPACEINFO": "Pa gen ase espas lib sou disk la pou telechaje epi ekstrè bootstrap la. Obligatwa: {required}, Disponib: {free}. Libere espas epi eseye ankò.",
+            "STARTUPFAILEDTITLE": "Demaraj Metrix Core la echwe.",
+            "STARTUPFAILEDINFO": "Te gen yon erè pandan w ap demarre Metrix Core. Li rekòmande pou w tcheke dosye jounal Altitude ou a pou wè si gen pwoblèm.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zouti Rekiperasyon",
             "CLIENTINVALIDCONFIGTITLE": "Konfigirasyon metrix.conf ki pa valab",
             "CLIENTINVALIDCONFIGINFO": "Fichye metrix.conf ou a gen yon konfigirasyon masternode ki pa valab, sa ap lakòz Metrix Core fèmen imedyatman. Tanpri verifye fichye sa a.",
             "ADDREMOTEMNTITLE": "Ajoute Masternode a distans",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kle Prive Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Endèks Trx Masternode",
-            "BOOTSTRAPFAILEDTITLE": "Echèk Bootstrap Metrix Core la",
-            "BOOTSTRAPFAILEDINFO": "Te gen yon pwoblèm pandan demaraj Metrix Core la. Li rekòmande pou tcheke fichye jounal Altitude ou a pou wè si gen pwoblèm.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Zouti Rekiperasyon",
-            "STARTUPFAILEDTITLE": "Demaraj Metrix Core la echwe.",
-            "STARTUPFAILEDINFO": "Te gen yon erè pandan w ap demarre Metrix Core. Li rekòmande pou w tcheke dosye jounal Altitude ou a pou wè si gen pwoblèm.",
-            "CLIENTUNKNOWNERRORTITLE": "Erè Kominikasyon Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Te gen yon pwoblèm pou kominike avèk Metrix Core. Li rekòmande pou tcheke fichye debug.log ou a pou wè si gen pwoblèm.",
             "UNENROLLGOVERNORTITLE": "Konfime dez-enskripsyon Gouvènè a",
             "UNENROLLGOVERNORCONTENT": "Èske ou sèten ou vle dezenskri Gouvènè ou a? Ou p ap kapab vote sou gouvènans chèn lan ankò.",
-            "WALLETUPDATEREADYTITLE": "Mizajou Altitid Pare",
-            "WALLETUPDATEREADYINFO": "Mizajou a telechaje. Rekòmanse Altitude kounye a pou enstale li?",
-            "WALLETUPDATERESTARTBUTTON": "Rekòmanse & Enstale",
-            "WALLETUPDATELATERBUTTON": "Pita",
             "DAPPCONNECTTITLE": "Konekte ak Sit la",
             "DAPPCONNECTINFO": "Sit sa a vle konekte ak bous ou a epi wè adrès ou ak balans ou.",
             "DAPPCONNECTBUTTON": "Konekte",
+            "DAPPCONNECTADDRESSLABEL": "Adrès",
+            "DAPPAPPROVEBUTTON": "Apwouve",
             "DAPPREJECTBUTTON": "Rejte",
             "DAPPSENDTITLE": "Demann Tranzaksyon Kontra",
             "DAPPSENDINFO": "Sit sa a ap mande pou voye yon tranzaksyon kontra soti nan bous ou a.",
-            "DAPPSIGNTITLE": "Demann pou siyen mesaj",
-            "DAPPSIGNINFO": "Sit sa a ap mande pou siyen yon mesaj ak adrès bous ou a.",
-            "DAPPNOTREADY": "M pa ka konekte ak sit la ankò - Metrix Core ap demarre toujou.",
-            "DAPPNOWALLET": "Pa ka konekte sou sit la - pa gen adrès bous ki disponib.",
-            "DAPPAPPROVEBUTTON": "Apwouve",
-            "DAPPCONNECTADDRESSLABEL": "Adrès",
             "DAPPSENDSITELABEL": "Sit",
             "DAPPSENDCONTRACTLABEL": "Adrès Kontra a",
             "DAPPSENDAMOUNTLABEL": "Montan",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Frè Rezo Maksimòm",
             "DAPPSENDMAXTOTALLABEL": "Maksimòm Total",
             "DAPPSENDDATALABEL": "Done Kontra",
+            "DAPPSIGNTITLE": "Demann pou siyen mesaj",
+            "DAPPSIGNINFO": "Sit sa a ap mande pou siyen yon mesaj ak adrès bous ou a.",
             "DAPPSIGNMESSAGELABEL": "Mesaj",
-            "BOOTSTRAPOFFERTITLE": "Bous la pa ajou ditou",
-            "BOOTSTRAPOFFERINFO": "Gen yon bootstrap resan ki disponib ki ka mete Metrix Core ajou byen vit. Kontinye ak yon senkronizasyon nòmal ka pran plizyè jou pou fini, piske bous ou a bezwen telechaje epi verifye chak blòk li rate.",
-            "BOOTSTRAPOFFERBUTTON": "Telechaje Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "Kontinye senkronizasyon nòmal la",
-            "BOOTSTRAPSPACEINFO": "Pa gen ase espas lib sou disk la pou telechaje epi ekstrè bootstrap la. Obligatwa: {required}, Disponib: {free}. Libere espas epi eseye ankò."
+            "DAPPNOTREADY": "M pa ka konekte ak sit la ankò - Metrix Core ap demarre toujou.",
+            "DAPPNOWALLET": "Pa ka konekte sou sit la - pa gen adrès bous ki disponib."
         },
         "ADDRESSBOOK": {
             "TITLE": "Liv Adrès",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Rezo aktyèl la"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "Antre yon adrès sit entènèt3",
-            "GOBUTTON": "Ale",
-            "QUICKLAUNCH": "Lansman rapid",
-            "DEVTOOLS": "Louvri Zouti Devlopè yo",
-            "ADDLINK": "Ajoute yon lyen",
-            "LINKNAMEPLACEHOLDER": "Non",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Sove",
-            "CANCEL": "Anile",
-            "REMOVE": "Retire",
-            "REMOVECONFIRM": "Retire lyen rapid sa a?",
-            "LINKEXISTS": "Lyen sa a deja nan lis lansman rapid ou a.",
-            "LINKINVALID": "Antre yon adrès sit ki valab",
-            "LINKNETWORKLABEL": "Rezo",
-            "LOADFAILED": "Sit la pa t ka chaje.",
-            "SECURESITE": "Koneksyon an an sekirite - sètifika SSL valab",
-            "INSECURESITE": "Koneksyon an pa an sekirite",
-            "INVALIDCERTSITE": "Koneksyon an pa prive - sètifika SSL la pa valab oswa li pa fyab."
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "Bous backup...",
             "SIGNMESSAGE": "Siyen Mesaj la...",
             "VERIFYMESSAGE": "Verifye Mesaj...",
-            "LOCALE": "Lang...",
-            "RESTARTCORE": "Rekòmanse Metrix Core la",
-            "EXIT": "Sòti",
             "OPTIONS": "Opsyon...",
+            "LOCALE": "Lang...",
             "CURRENCIES": "Montre lajan...",
-            "ALTITUDEREFRESH": "Rafrechi Done Altitid yo"
+            "RESTARTCORE": "Rekòmanse Metrix Core la",
+            "ALTITUDEREFRESH": "Rafrechi Done Altitid yo",
+            "EXIT": "Sòti"
         },
         "ENCRYPT": {
             "TITLE": "Chifre",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Balans Total",
+        "SPENDABLEBALANCE": "Balans Depansab",
+        "PENDINGBALANCE": "Balans An Atant",
         "CANCELBUTTON": "Anile",
         "DONEBUTTON": "Fini",
         "OKBUTTON": "OK",
+        "ACCEPTBUTTON": "Aksepte",
         "CLEARALLBUTTON": "Efase tout",
         "ENTERACCOUNTLABEL": "Mete yon etikèt pou adrès sa a",
         "ENTERADDRESSLABEL": "Antre yon adrès Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Klase pa",
         "SEARCH": "Rechèch",
         "FEE": "Frè",
-        "ACCEPTBUTTON": "Aksepte",
         "CONFIRMED": "Konfime",
         "UNCONFIRMED": "Pa konfime",
-        "PENDINGBALANCE": "Balans An Atant",
-        "SPENDABLEBALANCE": "Balans Depansab",
         "SAVEBUTTON": "Sove"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ap rekòmanse Metrix Core...",
         "BOOTSTRAPPING": "Ap telechaje bootstrap la...",
         "BOOTSTRAPEXTRACTING": "Ekstrè bootstrap la...",
-        "TIMEREMAINING": "rete:"
+        "TIMEREMAINING": "rete:",
+        "DEVRPCOVERRIDEACTIVE": "Yon ranplasman koneksyon RPC pou devlopè a configuré (Opsyon > Devlopè) epi li pa reponn. Efase li pou rekonekte ak daemon lokal la nòmalman.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Efase RPC Override & Reconnect"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Nouvo kont lan kreye avèk siksè",
         "ADDRESSCOPIEDCLIPBOARD": "Adrès la kopye nan clipboard la",
+        "COPIEDCLIPBOARD": "Kopye nan clipboard la",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksyon yo kopye nan clipboard la",
         "EMPTYFIELDS": "Tanpri ranpli tout chan yo",
         "NOUPDATE": "Pa gen mizajou disponib",
         "WALLETBACKEDUP": "Sovgad bous la reyisi",
+        "WALLETBACKUPFAILED": "Sovgad otomatik bous la echwe - tcheke kote backup ou a ak espas ki disponib sou disk la",
         "PASSPHRASEMISMATCH": "Fraz modpas ou te antre yo pa koresponn",
         "CHECKINGUPDATE": "Ap tcheke pou mizajou...",
         "CHECKINGUPDATEFAILED": "Pa kapab verifye si gen mizajou. Tcheke rezo w la.",
+        "WALLETUPDATEDOWNLOADING": "Ap telechaje mizajou a...",
         "SENDINGEXCEEDSBALANCE": "Montan w ap voye a depase balans ou te chwazi a",
         "MISSINGCHANGEADDRESS": "Ou dwe presize yon adrès pou chanje",
         "MISSINGDESTINATIONADDRESS": "Ou dwe presize yon adrès destinasyon",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ap chifre bous la...",
         "CHANGINGPASSPHARASE": "Chanje fraz modpas la...",
         "STARTINGMASTERNODE": "Ap kòmanse masternode la...",
+        "STOPPINGMASTERNODE": "Ap kanpe masternode la...",
         "SENDINGTRANSACTION": "Ap voye tranzaksyon an...",
         "SIGNINGMESSAGE": "Mesaj siyen...",
         "SIGNEDMESSAGE": "Mesaj siyen",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ap debloke bous la...",
         "TRANSACTIONMISMATCH": "Erè nan tranzaksyon an. Tanpri eseye ankò.",
         "MINIMUMCONFIRMATIONS": "Tout enfòmasyon yo mande omwen 1 konfimasyon anvan ou depanse yo.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Tranzaksyon yo kopye nan clipboard la",
-        "STOPPINGMASTERNODE": "Ap kanpe masternode la...",
         "FAILEDTOWRITECONFIG": "Te gen yon pwoblèm pou ekri nan fichye metrix.conf ou a. Tcheke fichye a egziste epi si Altitude gen pèmisyon ekri.",
         "NOPUBLICUP": "Pa jwenn okenn adrès IP piblik. Tcheke koneksyon entènèt ou epi rekòmanse Altitude.",
         "CONFIGURINGLOCALMN": "Konfigirasyon Masternode lokal la...",
         "REPORTINGISSUE": "Ap resevwa enfòmasyon dyagnostik... Enfòmasyon sa a pral kopye nan clipboard ou a.",
-        "WALLETUPDATEDOWNLOADING": "Ap telechaje mizajou a...",
-        "WALLETBACKUPFAILED": "Sovgad otomatik bous la echwe - tcheke kote backup ou a ak espas ki disponib sou disk la",
         "EXPLORERURLSAVED": "URL eksploratè a sove",
         "EXPLORERURLRESET": "URL eksploratè a retounen nan valè defo a",
         "EXPLORERURLINVALID": "Sa pa yon URL http(yo) ki valab.",
-        "EXPLORERURLUNREACHABLE": "Pa t ka jwenn URL sa a - verifye li epi eseye ankò."
+        "EXPLORERURLUNREACHABLE": "Pa t ka jwenn URL sa a - verifye li epi eseye ankò.",
+        "DEVRPCHOSTSAVED": "Lame RPC a sove",
+        "DEVRPCHOSTRESET": "Lame RPC a retounen nan valè defo a (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Pyès monnen resevwa yo",
+        "NEWTRANSACTION_TITLE_STAKE": "Patisipasyon resevwa",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Resevwa Rekonpans Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "Kèk segonn",
@@ -533,11 +587,6 @@
         "MONTHS": "mwa",
         "AYEAR": "Yon ane",
         "YEARS": "ane"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Pyès monnen resevwa yo",
-        "NEWTRANSACTION_TITLE_STAKE": "Patisipasyon resevwa",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Resevwa Rekonpans Masternode"
     },
     "MONTH": {
         "JAN": "JAN",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Gouvènè yo responsab pou vote sou bidjè chak mwa ak chanjman nan blockchain lan. Ou ka vin yon Gouvènè lè w bloke garanti ki kòrèk la nan kontra Gouvènans lan.",
                 "COLLATERAL": "Garanti obligatwa",
                 "ENROLL": "Enskri",
+                "SELECTAGOVERNOR": "Chwazi yon adrès gouvènè ki kalifye",
+                "GOVERNORNOTSELECTED": "Pa gen okenn adrès ki kalifye ki te chwazi.",
                 "CONFIRMENROLL": "Ou pral enskri kòm yon Gouvènè. Sa ap voye yon tranzaksyon ak garanti ki nesesè pou kontra gouvènans lan. Ou ka dezabòne nenpòt ki lè.",
                 "ISGOVERNORTITLE": "Ou se yon Gouvènè aktif!",
                 "ISGOVERNORDETAIL1": "Gouvènè yo responsab pou vote sou bidjè chak mwa ak chanjman nan blockchain.",
                 "ISGOVERNORDETAIL2": "Pou rete gouvènè, ou dwe patisipe nan omwen 1 vòt chak 30 jou.",
                 "ISGOVERNORDETAIL3": "Si pa gen anyen pou vote sou li, ou ka kontinye enskripsyon ou manyèlman lè w voye yon ping aktif.",
+                "MYGOVERNORADDRESS": "Adrès Gouvènè mwen an",
                 "UNENROLL": "Dezabòne",
                 "PING": "Voye Ping Aktif la",
                 "LASTPINGTITLE": "Dènye ping",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "jou",
                 "GOVERNORVOTEMATURITYHOURS": "èdtan",
                 "GOVERNORVOTEMATURITYSUFFIX": "jiskaske li rive nan matirite",
-                "MYGOVERNORADDRESS": "Adrès Gouvènè mwen an",
-                "SELECTAGOVERNOR": "Chwazi yon adrès gouvènè ki kalifye",
-                "GOVERNORNOTSELECTED": "Pa gen okenn adrès ki kalifye ki te chwazi.",
                 "NOTFULLYSYNCEDTITLE": "Estati gouvènè a pa disponib",
                 "NOTFULLYSYNCEDDETAIL": "Estati anrejistreman Gouvènè ou a ap vin vizib lè blockchain ou a fin senkronize nèt.",
                 "DGPMIGRATIONTITLE": "Migrasyon DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Pwopozisyon ou an te kreye avèk siksè",
             "ENROLLINGGOVERNOR": "Enskripsyon kòm Gouvènè...",
             "ENROLLEDGOVERNOR": "Enskripsyon ou an ap konplè yon fwa tranzaksyon ou an konfime.",
-            "VOTINGONPROPOSAL": "Voye vòt pwopozisyon an",
-            "VOTEDONPROPOSAL": "Y ap konte vòt ou a yon fwa tranzaksyon an konfime.",
             "PINGINGGOVERNOR": "Ap voye ping...",
             "PINGEDGOVERNOR": "Ping voye avèk siksè. Gouvènè ou a ap resevwa yon dènye enfòmasyon yon fwa tranzaksyon an konfime.",
+            "VOTINGONPROPOSAL": "Voye vòt pwopozisyon an",
+            "VOTEDONPROPOSAL": "Y ap konte vòt ou a yon fwa tranzaksyon an konfime.",
             "UNENROLLINGGOVERNOR": "Ap dezenskri Gouvènè a...",
             "UNENROLLEDGOVERNOR": "Tranzaksyon an voye. Gouvènè ou a ap dezenskri yon fwa tranzaksyon an konfime.",
             "GOVERNORNOTMATURE": "Gouvènè ou a poko gen ase matirite pou l fè aksyon sa a."
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "Achte Metrix",
+                "SEARCH": "Istwa"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Ou voye",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Istwa Tranzaksyon",
                 "SEARCHBUTTON": "RECHÈCH",
+                "SEARCHPLACEHOLDER": "Antre adrès MRX oswa BTC a",
                 "TRANSACTIONDATE": "Dat",
                 "TRANSACTIONTYPE": "Kalite TX",
                 "TRANSACTIONAMOUNT": "Montan",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Konfime",
                 "TRANSACTIONNOTCONFIRMED": "Pa konfime",
                 "TRANSACTIONREFUNDED": "Ranbousman - Anba minimòm nan",
-                "AVGSWAPPRICE": "Pri Echanj Mwayèn",
-                "SEARCHPLACEHOLDER": "Antre adrès MRX oswa BTC a"
+                "AVGSWAPPRICE": "Pri Echanj Mwayèn"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ap jenere adrès echanj...",
             "ALREADYHAVEADDRESS": "Ou deja gen yon adrès BTC ki asosye avèk adrès Metrix sa a.",
             "NOADDRESS": "Ou pa t antre yon adrès Metrix."
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "Achte Metrix",
-                "SEARCH": "Istwa"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Montre",
                 "EMPTYTITLE": "Pa gen okenn jeton yo jwenn ankò",
                 "EMPTYDETAIL": "Altitude otomatikman tcheke yon eksploratè blòk pou jeton MRC20 ak MRC721 ki voye nan adrès ou yo, epi li verifye tout bagay an dirèk avèk pwòp nœd ou a. Ou kapab tou ajoute yon jeton manyèlman si ou konnen adrès kontra li.",
+                "EMPTYDETAILCHECKINGDISABLED": "Verifikasyon otomatik jeton an enfim, kidonk yo p ap verifye adrès ou yo pou jeton. Aktive l ankò anwo a, oubyen ajoute yon jeton manyèlman si ou konnen adrès kontra li.",
                 "HIDDENTITLE": "Jeton kache",
                 "CONTEXTMENUHIDE": "Kache Jeton an",
                 "ITEMSSUFFIX": "atik(yo)",
-                "NONENUMERABLETOOLTIP": "Koleksyon sa a pa sipòte lis atik endividyèl - li pèmèt ou montre konbyen ou genyen pito."
+                "NONENUMERABLETOOLTIP": "Koleksyon sa a pa sipòte lis atik endividyèl - li pèmèt ou montre konbyen ou genyen pito.",
+                "CHECKINGENABLED": "Verifikasyon",
+                "CHECKINGDISABLED": "Tcheke",
+                "CHECKINGENABLEDTOOLTIP": "Verifikasyon jeton an aktive - Altitude tcheke adrès ou yo detanzantan pou jeton epi li mete balans yo ajou. Klike pou dezaktive.",
+                "CHECKINGDISABLEDTOOLTIP": "Verifikasyon jeton an etenn - klike pou aktive l ankò.",
+                "CHECKINGDISABLEDNOTICE": "Verifikasyon otomatik jeton an enfim. Yo pa eskane adrès ou yo pou jeton epi balans yo p ap mete ajou. Ou ka toujou ajoute yon jeton manyèlman."
             },
             "ADDTOKEN": {
                 "TITLE": "Ajoute Jeton",

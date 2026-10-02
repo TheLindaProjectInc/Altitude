@@ -8,6 +8,11 @@
             "CREATEACCOUNTBUTTON": "Hana i kahi moʻokāki",
             "HIDEEMPTYACCOUNTS": "Hūnā i nā moʻokāki hakahaka i kapa ʻole ʻia"
         },
+        "MANAGEACCOUNT": {
+            "OVERVIEWTAB": "ʻIke laulā",
+            "TRANSACTIONSTAB": "Nā Hana Kūʻai",
+            "ADDRESSTABS": "Nā helu wahi"
+        },
         "SEND": {
             "ADDRECIPIENT": "Hoʻohui i ka mea loaʻa",
             "SEND": "Hoʻouna",
@@ -27,6 +32,8 @@
             "TABLECOLUMNS_DATE": "Lā",
             "TABLECOLUMNS_CONFIRMS": "Nā Hōʻoia",
             "ALL_SELECTUNSELECT": "Hoʻololi i nā mea a pau",
+            "TREEMODE": "ʻAno Lāʻau",
+            "LISTMODE": "ʻAno Papa Inoa",
             "SENDAVAILABLE": "E hoʻohana i ke koena i loaʻa",
             "INPUTLOCKED": "Ua laka ʻia ka mea hoʻokomo. Pono ʻoe e wehe i kēia mea hoʻokomo e hoʻolilo ai.",
             "CONTEXTMENULOCKINPUT": "Hoʻokomo laka",
@@ -38,10 +45,48 @@
             "AFTERFEE": "Ma hope o ka uku",
             "QUANTITY": "Ka nui",
             "BYTES": "Nā Byte",
-            "TREEMODE": "ʻAno Lāʻau",
-            "LISTMODE": "ʻAno Papa Inoa",
             "ALERTFEECHANGETITLE": "Hoʻololi uku",
             "ALERTFEECHANGECONTENT": "ʻOi aku ke kiʻekiʻe o ka uku hana maoli ma mua o ka mea i manaʻo ʻia. E ʻoluʻolu e hōʻoia i ka uku hou:"
+        },
+        "CREATECONTRACT": {
+            "TITLE": "E hana i ka ʻaelike",
+            "INFO": "E hoʻolaha i kahi ʻaelike akamai i ka pūnaewele ma ka hoʻouna ʻana i kāna bytecode i hōʻuluʻulu ʻia. He hana kaulahao koʻikoʻi kēia - e nānā pālua i kāu bytecode a me nā hoʻonohonoho kinoea ma mua o ka hoʻolaha ʻana, ʻaʻole hiki ke hoʻihoʻi ʻia ka hoʻolaha ʻana.",
+            "FROM": "Mai",
+            "BYTECODE": "Bytecode",
+            "BYTECODEPLACEHOLDER": "E hoʻopili i ka bytecode ʻaelike i hōʻuluʻulu ʻia (hex)",
+            "INVALIDBYTECODE": "Pono ka Bytecode i kahi kaula hex kūpono (0-9, a-f) me ka helu like o nā huapalapala",
+            "GASLIMIT": "Palena Kinoea",
+            "GASLIMITRANGE": "Pae",
+            "GASPRICE": "Kumukūʻai Kinoea (MRX no kēlā me kēia ʻāpana kinoea)",
+            "GASPRICEMIN": "Ka palena iki",
+            "ESTIMATEDMAXCOST": "Kumukūʻai kiʻekiʻe i manaʻo ʻia",
+            "DEPLOYBUTTON": "Hoʻolaha i ka ʻaelike",
+            "INCOMPLETEFORM": "E koho i kahi helu wahi o ka mea hoʻouna, e hoʻokomo i ka bytecode kūpono, a hoʻonohonoho i kahi palena/kumukūʻai kinoea kūpono",
+            "HIGHGASPRICETITLE": "Kumukūʻai Kinoea Kiʻekiʻe",
+            "HIGHGASPRICEINFO": "He kiʻekiʻe loa ke kumukūʻai kinoea āu i hoʻonohonoho ai. Hiki i kēia hoʻolaha ke kumukūʻai a hiki i:",
+            "DEPLOYING": "Ke hoʻolaha nei i ka ʻaelike...",
+            "DEPLOYED": "Ua waiho ʻia ka hoʻolaha ʻaelike",
+            "RESULTTITLE": "Hopena Hoʻolaha",
+            "STATUS": "Kūlana",
+            "STATUSPENDING": "Ke kali nei ka hōʻoia...",
+            "STATUSCONFIRMED": "Ua hoʻolaha pono ʻia",
+            "STATUSFAILED": "Ua hāʻule ka hoʻolaha ʻana",
+            "TXID": "ID Hana",
+            "SENDER": "Mea hoʻouna",
+            "CONTRACTADDRESS": "Ka helu wahi o ka ʻaelike",
+            "GASUSED": "Kinoea i hoʻohana ʻia",
+            "DONEBUTTON": "Ua pau",
+            "DEPLOYANOTHERBUTTON": "E hoʻolaha i kekahi"
+        },
+        "TRANSACTIONS": {
+            "TITLE": "Nā Hana Kūʻai",
+            "COPYBLOCKHASH": "Kope i ka Hash Poloka",
+            "COPYTXID": "Kope i ka ID Hana",
+            "COPYACCOUNT": "Kope i ka inoa moʻokāki",
+            "COPYADDRESS": "Kope i ka helu wahi",
+            "COPYAMOUNT": "Ka nui o ke kope",
+            "COPTBLOCKINDEX": "Kope Papa Kuhikuhi Poloka",
+            "EXPLORER": "E wehe ma ka Block Explorer"
         },
         "STAKING": {
             "UNLOCK": "Wehe no ka Staking",
@@ -68,13 +113,13 @@
             "IP": "IP",
             "ADDRESS": "Wahi noho",
             "ENABLED": "Ua hoʻā ʻia",
-            "STARTBUTTON": "Hoʻomaka Kūloko",
-            "STARTALIASBUTTON": "Hoʻomaka i ka inoa ʻē aʻe",
-            "STARTALLBUTTON": "Hoʻomaka i nā mea a pau",
             "NOMASTERNODES": "ʻAʻohe ou masternodes",
             "NOMNOUTPUTS": "ʻAʻohe hopena Masternode i loaʻa. No ka holo ʻana i kahi Masternode kūloko, e hoʻouna pololei i 2,5,25,50 a i ʻole 100 miliona mau kālā i kāu helu wahi Masternode a kali no 15 mau hōʻoia.",
+            "STARTBUTTON": "Hoʻomaka Kūloko",
             "STOPBUTTON": "Hoʻōki i ke kūloko",
+            "STARTALIASBUTTON": "Hoʻomaka i ka inoa ʻē aʻe",
             "STOPALIASBUTTON": "Hoʻōki i ka inoa ʻē",
+            "STARTALLBUTTON": "Hoʻomaka i nā mea a pau",
             "ADDREMOTE": "Hoʻohui i ka Masternode Mamao",
             "REMOVEMN": "Wehe i ka Masternode",
             "ADDLOCAL": "Hoʻonohonoho i ka Masternode Kūloko",
@@ -102,6 +147,7 @@
             "ABOUT": {
                 "GENERALTITLE": "Nui",
                 "COREVERSION": "Mana Koʻikoʻi",
+                "ALTITUDEVERSION": "Mana Kiʻekiʻe",
                 "PROTOCOLVERSION": "Mana Protocol",
                 "WALLETVERSION": "Mana Wallet.dat",
                 "NETWORKTITLE": "Pūnaewele",
@@ -109,8 +155,7 @@
                 "NUMBERMASTERNODES": "Helu o nā Masternodes",
                 "BLOCKCHAINTITLE": "Kaula Poloka",
                 "NUMBERBLOCKS": "Helu o nā poloka i kēia manawa",
-                "BESTBLOCKTTIME": "Ka manawa poloka hope loa",
-                "ALTITUDEVERSION": "Mana Kiʻekiʻe"
+                "BESTBLOCKTTIME": "Ka manawa poloka hope loa"
             },
             "DEBUG": {
                 "CONSOLEINFO": "Welina mai i ka console Metrix Core RPC. E kikokiko i ke kōkua no kahi ʻike holoʻokoʻa o nā kauoha i loaʻa.",
@@ -161,15 +206,8 @@
         "LOCALE": {
             "TITLE": "Koho i ka ʻŌlelo"
         },
-        "TRANSACTIONS": {
-            "TITLE": "Nā Hana Kūʻai",
-            "COPYBLOCKHASH": "Kope i ka Hash Poloka",
-            "COPYTXID": "Kope i ka ID Hana",
-            "COPYACCOUNT": "Kope i ka inoa moʻokāki",
-            "COPYADDRESS": "Kope i ka helu wahi",
-            "COPYAMOUNT": "Ka nui o ke kope",
-            "COPTBLOCKINDEX": "Kope Papa Kuhikuhi Poloka",
-            "EXPLORER": "E wehe ma ka Block Explorer"
+        "CURRENCY": {
+            "TITLE": "Koho i ke kālā hōʻike"
         },
         "EXPLORER": {
             "TITLE": "ʻImi Poloka",
@@ -206,6 +244,9 @@
         "OPTIONS": {
             "NETWORKTAB": "Pūnaewele",
             "WINDOTAB": "Puka makani",
+            "BACKUPTAB": "Papa hoʻihoʻi",
+            "EXPLORERTAB": "Mea ʻimi honua",
+            "DEVELOPERTAB": "Mea Hoʻomohala",
             "NETWORK": {
                 "PROXY": "E hoʻohui ma o ka proxy SOCKS5",
                 "PROXYIP": "IP Proxy",
@@ -233,11 +274,11 @@
                 "MINIMIZEONCLOSE": "E hoʻēmi i ka pani ʻana",
                 "BEHAVIOURTITLE": "ʻAno o ka Pā Hana a me ka Puka makani"
             },
-            "BACKUPTAB": "Papa hoʻihoʻi",
             "BACKUP": {
                 "AUTOBACKUPTITLE": "Hoʻihoʻi ʻakomi",
                 "ENABLED": "E hoʻopaʻa pono i ka wallet.dat ma kahi papa hana",
                 "ENABLEDINFO": "Hoʻokumu i kahi kope hou o kāu faila ʻeke kālā ma kahi papa hana, no laila loaʻa mau kahi kope hou inā hewa kekahi mea.",
+                "INTERVALLABEL": "E hoʻihoʻi i kēlā me kēia (lā)",
                 "LASTBACKUP": "Kākoʻo hope loa:",
                 "NEVERBACKEDUP": "ʻAʻohe kope kope i hana ʻia a hiki i kēia manawa.",
                 "BACKUPNOWBUTTON": "E hoʻihoʻi i kēia manawa",
@@ -247,10 +288,8 @@
                 "RESETBUTTON": "Hoʻihoʻi i ka Paʻamau",
                 "PRUNETITLE": "Mōʻaukala Hoʻihoʻi",
                 "PRUNEINFO": "Holoi ʻia nā kope kope kahiko i ʻole e ulu mau loa kēia waihona - mālama wale ʻia nā mea hou loa ma lalo nei.",
-                "KEEPCOUNTLABEL": "E mālama i ka hope loa",
-                "INTERVALLABEL": "E hoʻihoʻi i kēlā me kēia (lā)"
+                "KEEPCOUNTLABEL": "E mālama i ka hope loa"
             },
-            "EXPLORERTAB": "Mea ʻimi honua",
             "EXPLORER": {
                 "BLOCKEXPLORERTITLE": "ʻImi Poloka",
                 "BLOCKEXPLORERINFO": "Ua wehe ʻia ke kahua pūnaewele i ka wā e nānā ana i kahi hana ma ka ʻimi poloka (e.g. kaomi ʻākau i kahi hana > Nānā ma Explorer).",
@@ -259,25 +298,31 @@
                 "MAINNET": "Pūnaewele Nui",
                 "TESTNET": "ʻUpena Hoʻāʻo",
                 "REGTEST": "Hoʻāʻo Register"
+            },
+            "DEVELOPER": {
+                "DEVMODETITLE": "ʻAno Hoʻomohala",
+                "DEVMODEINFO": "Ua pio ma ka paʻamau a ua manaʻo ʻia no nā mea hoʻomohala wale nō. ʻO ka hoʻā ʻana i kēia e hōʻike ana i nā koho e kāpae i ka pilina RPC - pono nā mea hoʻohana maʻamau e haʻalele i kēia.",
+                "DEVMODELABEL": "E hoʻā i ke ʻano hoʻomohala",
+                "WARNING": "No nā kumu hoʻomohala wale nō kēia mau hoʻonohonoho. ʻO ka hoʻololi ʻana iā lākou hiki ke pale i ka ʻeke kālā mai ka hoʻopili ʻana i kahi daemon - e hoʻohana wale i kēia inā ʻike ʻoe i kāu mea e hana nei.",
+                "RPCHOSTTITLE": "Hoʻohui RPC",
+                "RPCHOSTINFO": "Ma ka paʻamau, hoʻopili ʻo Altitude i ka daemon āna e hoʻokele ai iā ia iho, ma kēia mīkini (127.0.0.1). ʻO ka hoʻopau ʻana i kēia mau mea e hiki ai iā ia ke hoʻopili i kahi daemon ʻē aʻe - no ka laʻana he hiʻohiʻona regtest mamao, me ka ʻole o ka pono e holo i hoʻokahi ma kahi kūloko. Inā holomua ka pilina, ʻaʻole e hoʻoiho a hoʻomaka paha ʻo Altitude i kāna daemon kūloko ponoʻī. Pono ka rpcallowip o ka daemon i manaʻo ʻia e ʻae i kēia pilina, a pono ka rpcuser/rpcpassword ma lalo e kūlike me kāna hoʻonohonoho ʻana. Hoʻomaka koke, ʻaʻohe pono e hoʻomaka hou.",
+                "RPCHOSTLABEL": "Hoʻokipa RPC",
+                "RPCPORTLABEL": "Puka RPC",
+                "RPCUSERLABEL": "Inoa Mea Hoʻohana RPC",
+                "RPCPASSWORDLABEL": "ʻŌlelo huna RPC"
             }
-        },
-        "MANAGEACCOUNT": {
-            "OVERVIEWTAB": "ʻIke laulā",
-            "TRANSACTIONSTAB": "Nā Hana Kūʻai",
-            "ADDRESSTABS": "Nā helu wahi"
-        },
-        "CURRENCY": {
-            "TITLE": "Koho i ke kālā hōʻike"
         }
     },
     "COMPONENTS": {
         "SIDEBAR": {
             "DASHBOARD": "Papa Hoʻonohonoho",
             "SEND": "Hoʻouna",
+            "CREATECONTRACT": "E hana i ka ʻaelike",
             "RECEIVE": "Loaʻa",
             "TRANSACTIONS": "Nā Hana Kūʻai",
             "STAKING": "Ke kau ʻana",
             "MASTERNODES": "Nā Masternodes",
+            "EXPLORER": "ʻImi Poloka",
             "SYNC": {
                 "CONNECTING": "Hoʻohui",
                 "NOBLOCKS": "Ke kali nei no nā poloka",
@@ -295,8 +340,27 @@
                 "NOTSTAKING": "ʻAʻole ke kau nei ʻo Wallet i kēia manawa",
                 "MASTERNODEON": "Ke holo nei ʻo Masternode i kēia manawa",
                 "MASTERNODEOFF": "ʻAʻole e holo nei ʻo Masternode i kēia manawa"
-            },
-            "EXPLORER": "ʻImi Poloka"
+            }
+        },
+        "BROWSER": {
+            "ADDRESSPLACEHOLDER": "E hoʻokomo i kahi helu wahi pūnaewele",
+            "GOBUTTON": "E hele",
+            "QUICKLAUNCH": "Hoʻokuʻu wikiwiki",
+            "DEVTOOLS": "E wehe i nā Mea Hana Hoʻomohala",
+            "ADDLINK": "Hoʻohui i ka loulou",
+            "LINKNAMEPLACEHOLDER": "Inoa",
+            "LINKURLPLACEHOLDER": "https://example.com",
+            "SAVE": "Mālama",
+            "CANCEL": "Hoʻōki",
+            "REMOVE": "Wehe",
+            "REMOVECONFIRM": "Wehe i kēia loulou wikiwiki?",
+            "LINKEXISTS": "Aia kēlā loulou i loko o kāu papa inoa hoʻomaka wikiwiki",
+            "LINKINVALID": "E hoʻokomo i kahi helu wahi kūpono",
+            "LINKNETWORKLABEL": "Pūnaewele",
+            "LOADFAILED": "ʻAʻole i hiki ke hoʻouka i ka pūnaewele",
+            "SECURESITE": "Palekana ka pilina - palapala hōʻoia SSL kūpono",
+            "INSECURESITE": "ʻAʻole palekana ka pilina",
+            "INVALIDCERTSITE": "ʻAʻole pilikino ka pilina - palapala hōʻoia SSL kūpono ʻole a hilinaʻi ʻole ʻia paha"
         },
         "PROMPT": {
             "ENTERPASSPHRASETITLE": "E hoʻokomo i ka ʻōlelo huna o kāu ʻeke kālā",
@@ -305,6 +369,10 @@
             "CLIENTUPDATEINFO": "Loaʻa kahi mea hou no Metrix Core. Makemake ʻoe e hoʻokomo iā ia i kēia manawa?",
             "WALLETUPDATETITLE": "Loaʻa ka Hoʻohou Kiʻekiʻe",
             "WALLETUPDATEINFO": "Loaʻa kahi mea hou no Altitude. Makemake ʻoe e hoʻoiho iā ia i kēia manawa?",
+            "WALLETUPDATEREADYTITLE": "Mākaukau no ka Hoʻohou ʻana i ke Kiʻekiʻe",
+            "WALLETUPDATEREADYINFO": "Ua hoʻoiho ʻia ka mea hou. E hoʻomaka hou i ka Altitude i kēia manawa e hoʻouka ai?",
+            "WALLETUPDATERESTARTBUTTON": "Hoʻomaka hou a hoʻouka",
+            "WALLETUPDATELATERBUTTON": "Ma hope aku",
             "CLIENTUPDATEBUTTON": "Hoʻohou",
             "CLIENTUPDATECANCELBUTTON": "Mai Hoʻohou",
             "CLIENTUPDATESKIPBUTTON": "Hōʻalo i kēia Hoʻohou",
@@ -323,6 +391,18 @@
             "ENCRYPTEDCONTENT": "Pono e hoʻololi ʻia nā kope mua āu i hana ai o kāu faila ʻeke kālā me ka faila ʻeke kālā i hoʻopāʻālua ʻia i hana hou ʻia. No nā kumu palekana, e lilo nā kope mua o ka faila ʻeke kālā i hoʻopāʻālua ʻole ʻia i mea ʻole ke hoʻomaka ʻoe e hoʻohana i ka ʻeke kālā hou i hoʻopāʻālua ʻia.",
             "CLIENTCLOSEDUNEXPECTEDTITLE": "Ua kū koke ʻo Metrix Core",
             "CLIENTCLOSEDUNEXPECTEDINFO": "Aia kekahi pilikia me Metrix Core i hoʻopau ai. Manaʻo ʻia e nānā i kāu faila debug.log no nā pilikia.",
+            "CLIENTUNKNOWNERRORTITLE": "Hewa Kamaʻilio Metrix Core",
+            "CLIENTUNKNOWNERRORINFO": "Aia kekahi pilikia i ka kamaʻilio ʻana me Metrix Core. Manaʻo ʻia e nānā i kāu faila debug.log no nā pilikia.",
+            "BOOTSTRAPFAILEDTITLE": "ʻAʻole i hāʻule ka Metrix Core Bootstrap",
+            "BOOTSTRAPFAILEDINFO": "Aia kekahi pilikia i ka hoʻomaka ʻana iā Metrix Core. Manaʻo ʻia e nānā i kāu faila log Altitude no nā pilikia.",
+            "BOOTSTRAPOFFERTITLE": "Ua Pau Loa ka Lā o ka ʻEke kālā",
+            "BOOTSTRAPOFFERINFO": "Loaʻa kahi bootstrap hou e hiki ai ke hoʻonui koke iā Metrix Core. ʻO ka hoʻomau ʻana me kahi sync maʻamau ma kahi o ia mea e hala paha i kekahi mau lā e hoʻopau ai, no ka mea, pono kāu ʻeke kālā e hoʻoiho a hōʻoia i kēlā me kēia poloka i hala ʻole iā ia.",
+            "BOOTSTRAPOFFERBUTTON": "Hoʻoiho iā Bootstrap",
+            "BOOTSTRAPOFFERCANCEL": "E hoʻomau i ka hoʻonohonoho maʻamau",
+            "BOOTSTRAPSPACEINFO": "ʻAʻole lawa ka wahi hakahaka no ka hoʻoiho ʻana a me ka unuhi ʻana i ka bootstrap. Pono: {required}, Loaʻa: {free}. E hoʻokuʻu i kahi hakahaka a hoʻāʻo hou.",
+            "STARTUPFAILEDTITLE": "Ua hāʻule ka hoʻomaka ʻana o Metrix Core",
+            "STARTUPFAILEDINFO": "Aia kahi hewa i ka hoʻomaka ʻana o Metrix Core. Manaʻo ʻia e nānā i kāu faila log Altitude no nā pilikia.",
+            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nā Mea Hana Hoʻōla",
             "CLIENTINVALIDCONFIGTITLE": "Hoʻonohonoho metrix.conf hewa ʻole",
             "CLIENTINVALIDCONFIGINFO": "Loaʻa i kāu metrix.conf kahi hoʻonohonoho masternode kūpono ʻole e hoʻopau koke ai ʻo Metrix Core. E ʻoluʻolu e nānā i kēia faila.",
             "ADDREMOTEMNTITLE": "Hoʻohui i ka Masternode Mamao",
@@ -331,31 +411,16 @@
             "ADDREMOTEMNKEY": "Kī pilikino Masternode",
             "ADDREMOTEMNTXHASH": "Masternode Trx Hash",
             "ADDREMOTEMNTXINDEX": "Papa Kuhikuhi Trx Masternode",
-            "BOOTSTRAPFAILEDTITLE": "ʻAʻole i hāʻule ka Metrix Core Bootstrap",
-            "BOOTSTRAPFAILEDINFO": "Aia kekahi pilikia i ka hoʻomaka ʻana iā Metrix Core. Manaʻo ʻia e nānā i kāu faila log Altitude no nā pilikia.",
-            "CLIENTCLOSEDUNEXPECTEDBUTTONRECOVERY": "Nā Mea Hana Hoʻōla",
-            "STARTUPFAILEDTITLE": "Ua hāʻule ka hoʻomaka ʻana o Metrix Core",
-            "STARTUPFAILEDINFO": "Aia kahi hewa i ka hoʻomaka ʻana o Metrix Core. Manaʻo ʻia e nānā i kāu faila log Altitude no nā pilikia.",
-            "CLIENTUNKNOWNERRORTITLE": "Hewa Kamaʻilio Metrix Core",
-            "CLIENTUNKNOWNERRORINFO": "Aia kekahi pilikia i ka kamaʻilio ʻana me Metrix Core. Manaʻo ʻia e nānā i kāu faila debug.log no nā pilikia.",
             "UNENROLLGOVERNORTITLE": "E hōʻoia i ka wehe ʻana o ke Kiaʻāina i ke kākau inoa ʻana",
             "UNENROLLGOVERNORCONTENT": "Ua maopopo anei iā ʻoe makemake ʻoe e kāpae i kāu Kiaʻāina? ʻAʻole hiki iā ʻoe ke koho balota ma ke kaulahao hoʻomalu.",
-            "WALLETUPDATEREADYTITLE": "Mākaukau no ka Hoʻohou ʻana i ke Kiʻekiʻe",
-            "WALLETUPDATEREADYINFO": "Ua hoʻoiho ʻia ka mea hou. E hoʻomaka hou i ka Altitude i kēia manawa e hoʻouka ai?",
-            "WALLETUPDATERESTARTBUTTON": "Hoʻomaka hou a hoʻouka",
-            "WALLETUPDATELATERBUTTON": "Ma hope aku",
             "DAPPCONNECTTITLE": "Hoʻohui i ka Pūnaewele",
             "DAPPCONNECTINFO": "Makemake kēia pūnaewele e hoʻopili i kāu ʻeke kālā a nānā i kāu helu wahi a me ke koena.",
             "DAPPCONNECTBUTTON": "Hoʻohui",
+            "DAPPCONNECTADDRESSLABEL": "Wahi noho",
+            "DAPPAPPROVEBUTTON": "ʻĀpono",
             "DAPPREJECTBUTTON": "Hōʻole",
             "DAPPSENDTITLE": "Noi Hana ʻAelike",
             "DAPPSENDINFO": "Ke noi nei kēia pūnaewele e hoʻouna i kahi hana ʻaelike mai kāu ʻeke kālā.",
-            "DAPPSIGNTITLE": "Noi Leka Kau Inoa",
-            "DAPPSIGNINFO": "Ke noi nei kēia pūnaewele e kau inoa i kahi leka me kāu helu wahi kālā.",
-            "DAPPNOTREADY": "ʻAʻole hiki ke hoʻopili i ka pūnaewele i kēia manawa - ke hoʻomaka nei ʻo Metrix Core.",
-            "DAPPNOWALLET": "ʻAʻole hiki ke hoʻopili i ka pūnaewele - ʻaʻohe helu wahi o ka ʻeke kālā i loaʻa.",
-            "DAPPAPPROVEBUTTON": "ʻĀpono",
-            "DAPPCONNECTADDRESSLABEL": "Wahi noho",
             "DAPPSENDSITELABEL": "Pūnaewele",
             "DAPPSENDCONTRACTLABEL": "Ka helu wahi o ka ʻaelike",
             "DAPPSENDAMOUNTLABEL": "Ka nui",
@@ -364,12 +429,11 @@
             "DAPPSENDMAXFEELABEL": "Uku Pūnaewele Kiʻekiʻe Loa",
             "DAPPSENDMAXTOTALLABEL": "Huina Nui Loa",
             "DAPPSENDDATALABEL": "ʻIkepili ʻaelike",
+            "DAPPSIGNTITLE": "Noi Leka Kau Inoa",
+            "DAPPSIGNINFO": "Ke noi nei kēia pūnaewele e kau inoa i kahi leka me kāu helu wahi kālā.",
             "DAPPSIGNMESSAGELABEL": "Leka",
-            "BOOTSTRAPOFFERTITLE": "Ua Pau Loa ka Lā o ka ʻEke kālā",
-            "BOOTSTRAPOFFERINFO": "Loaʻa kahi bootstrap hou e hiki ai ke hoʻonui koke iā Metrix Core. ʻO ka hoʻomau ʻana me kahi sync maʻamau ma kahi o ia mea e hala paha i kekahi mau lā e hoʻopau ai, no ka mea, pono kāu ʻeke kālā e hoʻoiho a hōʻoia i kēlā me kēia poloka i hala ʻole iā ia.",
-            "BOOTSTRAPOFFERBUTTON": "Hoʻoiho iā Bootstrap",
-            "BOOTSTRAPOFFERCANCEL": "E hoʻomau i ka hoʻonohonoho maʻamau",
-            "BOOTSTRAPSPACEINFO": "ʻAʻole lawa ka wahi hakahaka no ka hoʻoiho ʻana a me ka unuhi ʻana i ka bootstrap. Pono: {required}, Loaʻa: {free}. E hoʻokuʻu i kahi hakahaka a hoʻāʻo hou."
+            "DAPPNOTREADY": "ʻAʻole hiki ke hoʻopili i ka pūnaewele i kēia manawa - ke hoʻomaka nei ʻo Metrix Core.",
+            "DAPPNOWALLET": "ʻAʻole hiki ke hoʻopili i ka pūnaewele - ʻaʻohe helu wahi o ka ʻeke kālā i loaʻa."
         },
         "ADDRESSBOOK": {
             "TITLE": "Puke Wahi Noho",
@@ -392,26 +456,6 @@
         },
         "NETWORKTYPE": {
             "CURRENT": "Pūnaewele o kēia manawa"
-        },
-        "BROWSER": {
-            "ADDRESSPLACEHOLDER": "E hoʻokomo i kahi helu wahi pūnaewele",
-            "GOBUTTON": "E hele",
-            "QUICKLAUNCH": "Hoʻokuʻu wikiwiki",
-            "DEVTOOLS": "E wehe i nā Mea Hana Hoʻomohala",
-            "ADDLINK": "Hoʻohui i ka loulou",
-            "LINKNAMEPLACEHOLDER": "Inoa",
-            "LINKURLPLACEHOLDER": "https://example.com",
-            "SAVE": "Mālama",
-            "CANCEL": "Hoʻōki",
-            "REMOVE": "Wehe",
-            "REMOVECONFIRM": "Wehe i kēia loulou wikiwiki?",
-            "LINKEXISTS": "Aia kēlā loulou i loko o kāu papa inoa hoʻomaka wikiwiki",
-            "LINKINVALID": "E hoʻokomo i kahi helu wahi kūpono",
-            "LINKNETWORKLABEL": "Pūnaewele",
-            "LOADFAILED": "ʻAʻole i hiki ke hoʻouka i ka pūnaewele",
-            "SECURESITE": "Palekana ka pilina - palapala hōʻoia SSL kūpono",
-            "INSECURESITE": "ʻAʻole palekana ka pilina",
-            "INVALIDCERTSITE": "ʻAʻole pilikino ka pilina - palapala hōʻoia SSL kūpono ʻole a hilinaʻi ʻole ʻia paha"
         }
     },
     "MENU": {
@@ -420,12 +464,12 @@
             "BACKUPWALLET": "ʻEke kālā hoʻihoʻi...",
             "SIGNMESSAGE": "Leka Kau Inoa...",
             "VERIFYMESSAGE": "E hōʻoia i ka leka...",
-            "LOCALE": "ʻŌlelo...",
-            "RESTARTCORE": "Hoʻomaka hou i ka Metrix Core",
-            "EXIT": "Puka",
             "OPTIONS": "Nā koho...",
+            "LOCALE": "ʻŌlelo...",
             "CURRENCIES": "Hōʻike i ke kālā...",
-            "ALTITUDEREFRESH": "Hoʻohou i ka ʻIkepili Kiʻekiʻe"
+            "RESTARTCORE": "Hoʻomaka hou i ka Metrix Core",
+            "ALTITUDEREFRESH": "Hoʻohou i ka ʻIkepili Kiʻekiʻe",
+            "EXIT": "Puka"
         },
         "ENCRYPT": {
             "TITLE": "Hoʻopāʻālua",
@@ -454,9 +498,12 @@
     },
     "MISC": {
         "BALANCE": "Koena Huina",
+        "SPENDABLEBALANCE": "Koena hiki ke hoʻolilo ʻia",
+        "PENDINGBALANCE": "Koena e kali ana",
         "CANCELBUTTON": "Hoʻōki",
         "DONEBUTTON": "Ua pau",
         "OKBUTTON": "ʻAe",
+        "ACCEPTBUTTON": "ʻAe",
         "CLEARALLBUTTON": "Holoi i nā mea a pau",
         "ENTERACCOUNTLABEL": "E hoʻokomo i kahi lepili no kēia helu wahi",
         "ENTERADDRESSLABEL": "E hoʻokomo i kahi helu wahi Metrix",
@@ -464,11 +511,8 @@
         "SORTBY": "Hoʻokaʻawale Ma o",
         "SEARCH": "Huli",
         "FEE": "Uku",
-        "ACCEPTBUTTON": "ʻAe",
         "CONFIRMED": "Ua hōʻoia ʻia",
         "UNCONFIRMED": "ʻAʻole i hōʻoia ʻia",
-        "PENDINGBALANCE": "Koena e kali ana",
-        "SPENDABLEBALANCE": "Koena hiki ke hoʻolilo ʻia",
         "SAVEBUTTON": "Mālama"
     },
     "CLIENTSTATUS": {
@@ -479,17 +523,23 @@
         "RESTARTING": "Ke hoʻomaka hou nei iā Metrix Core...",
         "BOOTSTRAPPING": "Ke hoʻoiho nei i ka bootstrap...",
         "BOOTSTRAPEXTRACTING": "Ke unuhi nei i ka bootstrap...",
-        "TIMEREMAINING": "ke koena:"
+        "TIMEREMAINING": "ke koena:",
+        "DEVRPCOVERRIDEACTIVE": "Ua hoʻonohonoho ʻia kahi override pili RPC a ka mea hoʻomohala (Options > Developer) a ʻaʻole ia e pane mai ana. E holoi iā ia e hoʻopili hou i ka daemon kūloko ma ke ʻano maʻamau.",
+        "DEVRPCOVERRIDECLEARBUTTON": "Holoi i ka RPC Override a hoʻohui hou"
     },
     "NOTIFICATIONS": {
         "CREATEDNEWACCOUNT": "Ua hana pono ʻia kahi moʻokāki hou",
         "ADDRESSCOPIEDCLIPBOARD": "Ua kope ʻia ka helu wahi i ka papa hoʻopaʻa leo",
+        "COPIEDCLIPBOARD": "Ua kope ʻia i ka papa hoʻopaʻa",
+        "TRANSACTIONSCOPIEDCLIPBOARD": "Ua kope ʻia nā hana i ka papa hoʻopaʻa",
         "EMPTYFIELDS": "E ʻoluʻolu e hoʻopiha i nā kahua āpau",
         "NOUPDATE": "ʻAʻohe mea hou i loaʻa",
         "WALLETBACKEDUP": "Ua holomua ka hoʻihoʻi ʻana o ka ʻeke kālā",
+        "WALLETBACKUPFAILED": "Ua hāʻule ka hana kope ʻakomi no ka waihona kālā - e nānā i kou wahi kope a me ka wahi disk i loaʻa",
         "PASSPHRASEMISMATCH": "ʻAʻole kūlike nā huaʻōlelo huna āu i hoʻokomo ai",
         "CHECKINGUPDATE": "Ke nānā nei no ka hōʻano hou...",
         "CHECKINGUPDATEFAILED": "ʻAʻole hiki ke nānā no ka hōʻano hou. E nānā i kāu pūnaewele.",
+        "WALLETUPDATEDOWNLOADING": "Ke hoʻoiho nei i ka mea hou...",
         "SENDINGEXCEEDSBALANCE": "Ua ʻoi aku ka nui o ka nui āu e hoʻouna nei ma mua o kāu koena i koho ʻia",
         "MISSINGCHANGEADDRESS": "Pono ʻoe e kuhikuhi i kahi helu wahi hoʻololi",
         "MISSINGDESTINATIONADDRESS": "Pono ʻoe e kuhikuhi i kahi helu wahi e hele ai",
@@ -501,6 +551,7 @@
         "WALLETENCRYPTING": "Ke hoʻopāʻālua nei i ka ʻeke kālā...",
         "CHANGINGPASSPHARASE": "Ke hoʻololi nei i ka ʻōlelo huna...",
         "STARTINGMASTERNODE": "Ke hoʻomaka nei i ka masternode...",
+        "STOPPINGMASTERNODE": "Ke hoʻōki nei i ka masternode...",
         "SENDINGTRANSACTION": "Ke hoʻouna nei i ka hana kūʻai...",
         "SIGNINGMESSAGE": "Leka kau inoa...",
         "SIGNEDMESSAGE": "Ua kau inoa ʻia ka leka",
@@ -508,18 +559,21 @@
         "WALLETUNLOCKING": "Ke wehe nei i ka ʻeke kālā...",
         "TRANSACTIONMISMATCH": "Hewa hana. E ʻoluʻolu e hoʻāʻo hou.",
         "MINIMUMCONFIRMATIONS": "Pono nā mea hoʻokomo a pau ma ka liʻiliʻi he 1 hōʻoia ma mua o ka hoʻolilo ʻana.",
-        "TRANSACTIONSCOPIEDCLIPBOARD": "Ua kope ʻia nā hana i ka papa hoʻopaʻa",
-        "STOPPINGMASTERNODE": "Ke hoʻōki nei i ka masternode...",
         "FAILEDTOWRITECONFIG": "Aia kekahi pilikia i ke kākau ʻana i kāu faila metrix.conf. E nānā inā aia ka faila a loaʻa iā Altitude nā ʻae kākau.",
         "NOPUBLICUP": "ʻAʻohe helu wahi IP lehulehu i loaʻa. E nānā i kāu pilina pūnaewele a hoʻomaka hou iā Altitude.",
         "CONFIGURINGLOCALMN": "Ke hoʻonohonoho nei i ka Masternode kūloko...",
         "REPORTINGISSUE": "Ke kiʻi nei i ka ʻike diagnostics... E kope ʻia kēia ʻike i kāu clipboard.",
-        "WALLETUPDATEDOWNLOADING": "Ke hoʻoiho nei i ka mea hou...",
-        "WALLETBACKUPFAILED": "Ua hāʻule ka hana kope ʻakomi no ka waihona kālā - e nānā i kou wahi kope a me ka wahi disk i loaʻa",
         "EXPLORERURLSAVED": "Ua mālama ʻia ka URL o ka Explorer",
         "EXPLORERURLRESET": "Ua hoʻihoʻi ʻia ka URL Explorer i ka paʻamau",
         "EXPLORERURLINVALID": "ʻAʻole kēlā he URL http(s) kūpono",
-        "EXPLORERURLUNREACHABLE": "ʻAʻole hiki ke hōʻea i kēlā URL - e nānā a hoʻāʻo hou"
+        "EXPLORERURLUNREACHABLE": "ʻAʻole hiki ke hōʻea i kēlā URL - e nānā a hoʻāʻo hou",
+        "DEVRPCHOSTSAVED": "Ua mālama ʻia ka kikowaena RPC",
+        "DEVRPCHOSTRESET": "Ua hoʻihoʻi ʻia ka kikowaena RPC i ka paʻamau (127.0.0.1)"
+    },
+    "DESKTOPNOTIFICATIONS": {
+        "NEWTRANSACTION_TITLE_RECEIVED": "Nā Kālā i Loaʻa",
+        "NEWTRANSACTION_TITLE_STAKE": "Ua loaʻa ka Stake",
+        "NEWTRANSACTION_TITLE_MASTERNODE": "Ua loaʻa ka makana Masternode"
     },
     "TIME": {
         "AFEWSECONDS": "He mau kekona",
@@ -533,11 +587,6 @@
         "MONTHS": "nā mahina",
         "AYEAR": "Hoʻokahi makahiki",
         "YEARS": "nā makahiki"
-    },
-    "DESKTOPNOTIFICATIONS": {
-        "NEWTRANSACTION_TITLE_RECEIVED": "Nā Kālā i Loaʻa",
-        "NEWTRANSACTION_TITLE_STAKE": "Ua loaʻa ka Stake",
-        "NEWTRANSACTION_TITLE_MASTERNODE": "Ua loaʻa ka makana Masternode"
     },
     "MONTH": {
         "JAN": "Ian",
@@ -560,11 +609,14 @@
                 "NOTGOVERNORDETAIL": "Na nā kiaʻāina ke kuleana no ke koho balota ʻana i nā kālā mahina a me nā hoʻololi blockchain. Hiki iā ʻoe ke lilo i Kiaʻāina ma ka laka ʻana i ka collateral kūpono i loko o ka ʻaelike Hoʻokele.",
                 "COLLATERAL": "Palapala hōʻoia i koi ʻia",
                 "ENROLL": "E kākau inoa",
+                "SELECTAGOVERNOR": "E koho i kahi helu wahi kiaʻāina kūpono",
+                "GOVERNORNOTSELECTED": "ʻAʻohe helu wahi kūpono i koho ʻia",
                 "CONFIRMENROLL": "Ke kokoke nei ʻoe e kākau inoa ma ke ʻano he Kiaʻāina. E hoʻouna kēia i kahi hana me ka waiwai i koi ʻia i ka ʻaelike hoʻomalu. Hiki iā ʻoe ke wehe i ke kākau inoa i kēlā me kēia manawa.",
                 "ISGOVERNORTITLE": "He Kiaʻāina ʻeleu ʻoe!",
                 "ISGOVERNORDETAIL1": "Na nā kiaʻāina ke kuleana no ke koho balota ʻana i nā kālā o kēlā me kēia mahina a me nā loli blockchain.",
                 "ISGOVERNORDETAIL2": "No ka noho ʻana i Kiaʻāina, pono ʻoe e komo i ka liʻiliʻi he 1 balota i kēlā me kēia 30 lā.",
                 "ISGOVERNORDETAIL3": "Inā ʻaʻohe mea e koho balota ai, a laila hiki iā ʻoe ke hoʻomau i kāu kākau inoa ma ka hoʻouna ʻana i kahi ping hana.",
+                "MYGOVERNORADDRESS": "Kaʻu Haʻiʻōlelo Kiaʻāina",
                 "UNENROLL": "Wehe i ke kākau inoa",
                 "PING": "Hoʻouna i ka Ping Hana",
                 "LASTPINGTITLE": "Ping hope loa",
@@ -577,9 +629,6 @@
                 "GOVERNORVOTEMATURITYDAYS": "nā lā",
                 "GOVERNORVOTEMATURITYHOURS": "nā hola",
                 "GOVERNORVOTEMATURITYSUFFIX": "a hiki i ka wā e oʻo ai",
-                "MYGOVERNORADDRESS": "Kaʻu Haʻiʻōlelo Kiaʻāina",
-                "SELECTAGOVERNOR": "E koho i kahi helu wahi kiaʻāina kūpono",
-                "GOVERNORNOTSELECTED": "ʻAʻohe helu wahi kūpono i koho ʻia",
                 "NOTFULLYSYNCEDTITLE": "ʻAʻole i loaʻa ke kūlana kiaʻāina",
                 "NOTFULLYSYNCEDDETAIL": "E ʻike ʻia kou kūlana hoʻopaʻa inoa Kiaʻāina ke hoʻonohonoho piha ʻia kāu blockchain.",
                 "DGPMIGRATIONTITLE": "Ka Neʻe ʻana o DGP",
@@ -631,16 +680,22 @@
             "CREATEDPROPOSAL": "Ua hoʻokumu pono ʻia kāu manaʻo",
             "ENROLLINGGOVERNOR": "Ke kākau inoa nei ma ke ʻano he Kiaʻāina...",
             "ENROLLEDGOVERNOR": "E pau kāu kākau inoa ʻana ke hōʻoia ʻia kāu hana",
-            "VOTINGONPROPOSAL": "Ke hoʻouna nei i ka balota noi",
-            "VOTEDONPROPOSAL": "E helu ʻia kāu balota ke hōʻoia ʻia ka hana.",
             "PINGINGGOVERNOR": "Ke hoʻouna nei i ka ping...",
             "PINGEDGOVERNOR": "Ua hoʻouna pono ʻia ka Ping. E hōʻano hou ʻia kāu Kiaʻāina ke hōʻoia ʻia ka hana",
+            "VOTINGONPROPOSAL": "Ke hoʻouna nei i ka balota noi",
+            "VOTEDONPROPOSAL": "E helu ʻia kāu balota ke hōʻoia ʻia ka hana.",
             "UNENROLLINGGOVERNOR": "Ke wehe nei i ke kākau inoa ʻana o ke Kiaʻāina...",
             "UNENROLLEDGOVERNOR": "Ua hoʻouna ʻia ke kālepa. E wehe ʻia kāu Kiaʻāina ke hōʻoia ʻia ke kālepa",
             "GOVERNORNOTMATURE": "ʻAʻole i lawa ka makua o kou Kiaʻāina e hana i kēia hana"
         }
     },
     "BUY": {
+        "COMPONENTS": {
+            "SIDEBAR": {
+                "SWAP": "E kūʻai iā Metrix",
+                "SEARCH": "Moʻolelo"
+            }
+        },
         "PAGES": {
             "HOME": {
                 "YOUSEND": "Hoʻouna ʻoe",
@@ -659,6 +714,7 @@
             "HISTORY": {
                 "TITLE": "Moʻolelo Hana Kūʻai",
                 "SEARCHBUTTON": "HUI",
+                "SEARCHPLACEHOLDER": "E hoʻokomo i ka helu wahi MRX a i ʻole BTC",
                 "TRANSACTIONDATE": "Lā",
                 "TRANSACTIONTYPE": "ʻAno TX",
                 "TRANSACTIONAMOUNT": "Ka nui",
@@ -669,20 +725,13 @@
                 "TRANSACTIONCONFIRMED": "Ua hōʻoia ʻia",
                 "TRANSACTIONNOTCONFIRMED": "ʻAʻole i hōʻoia ʻia",
                 "TRANSACTIONREFUNDED": "Hoʻihoʻi ʻia ke kālā - Ma lalo o ka palena iki",
-                "AVGSWAPPRICE": "Kumukūʻai Kūʻai Avg",
-                "SEARCHPLACEHOLDER": "E hoʻokomo i ka helu wahi MRX a i ʻole BTC"
+                "AVGSWAPPRICE": "Kumukūʻai Kūʻai Avg"
             }
         },
         "NOTIFICATIONS": {
             "GETTINGSWAPADDRESS": "Ke hana nei i ka helu wahi hoʻololi...",
             "ALREADYHAVEADDRESS": "Loaʻa iā ʻoe kahi helu wahi BTC e pili ana i kēia helu wahi Metrix",
             "NOADDRESS": "ʻAʻole ʻoe i hoʻokomo i kahi helu wahi Metrix"
-        },
-        "COMPONENTS": {
-            "SIDEBAR": {
-                "SWAP": "E kūʻai iā Metrix",
-                "SEARCH": "Moʻolelo"
-            }
         }
     },
     "MNS": {
@@ -704,10 +753,16 @@
                 "UNHIDE": "Hōʻike",
                 "EMPTYTITLE": "ʻAʻohe Hōʻailona i Loaʻa",
                 "EMPTYDETAIL": "Nānā ʻakomi ʻo Altitude i kahi mea ʻimi poloka no nā hōʻailona MRC20 a me MRC721 i hoʻouna ʻia i kāu mau helu wahi, a laila hōʻoia i nā mea āpau e kūʻē i kāu node ponoʻī. Hiki iā ʻoe ke hoʻohui lima i kahi hōʻailona inā ʻike ʻoe i kona helu wahi ʻaelike.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ua pio ka nānā ʻakomi ʻana i nā hōʻailona, no laila ʻaʻole e nānā ʻia kāu mau helu wahi no nā hōʻailona. E hoʻā hou iā ia ma luna, a i ʻole e hoʻohui lima i kahi hōʻailona inā ʻike ʻoe i kona helu wahi ʻaelike.",
                 "HIDDENTITLE": "Nā Hōʻailona Huna",
                 "CONTEXTMENUHIDE": "Hūnā i ka Hōʻailona",
                 "ITEMSSUFFIX": "mea(mau)",
-                "NONENUMERABLETOOLTIP": "ʻAʻole kākoʻo kēia hōʻiliʻili i ka papa inoa ʻana i nā mea pākahi - e hōʻike ana i ka nui o kāu e paʻa nei."
+                "NONENUMERABLETOOLTIP": "ʻAʻole kākoʻo kēia hōʻiliʻili i ka papa inoa ʻana i nā mea pākahi - e hōʻike ana i ka nui o kāu e paʻa nei.",
+                "CHECKINGENABLED": "Ke Nānā Nei",
+                "CHECKINGDISABLED": "Ke nānā nei",
+                "CHECKINGENABLEDTOOLTIP": "Ua hoʻā ʻia ka nānā ʻana i nā hōʻailona - Nānā pinepine ʻo Altitude i kāu mau helu wahi no nā hōʻailona a hoʻohou i nā koena. Kaomi e hoʻopau.",
+                "CHECKINGDISABLEDTOOLTIP": "Ua pio ka nānā ʻana i nā hōʻailona - kaomi e hoʻā hou.",
+                "CHECKINGDISABLEDNOTICE": "Ua pio ka nānā ʻakomi ʻana i nā hōʻailona. ʻAʻole e nānā ʻia kāu mau helu wahi no nā hōʻailona a ʻaʻole e hōʻano hou ʻia nā koena. Hiki nō iā ʻoe ke hoʻohui lima i kahi hōʻailona."
             },
             "ADDTOKEN": {
                 "TITLE": "Hoʻohui i ka Hōʻailona",
