@@ -3,6 +3,28 @@
 # Altitude
 The Altitude wallet is the wallet of choice for Metrix.
 
+## OS Compatibility
+
+Altitude is a desktop app, built with Electron. Installers for each supported platform are published on the [Releases page](https://github.com/TheLindaProjectInc/Altitude/releases).
+
+| OS | Supported versions | Architecture | Installer |
+|---|---|---|---|
+| Windows | Windows 10 and later | x64, x86 (32-bit) | `.exe` |
+| macOS | macOS 12 (Monterey) and later | Apple Silicon (arm64), Intel (x64) | `.dmg` |
+| Linux | Most modern distributions (e.g. Ubuntu 18.04+, Debian 10+, Fedora 32+) | x64 | `.AppImage` |
+
+> [!IMPORTANT]
+> **Mac users:** as of 4.0.0, Altitude requires **macOS 12 (Monterey) or later**. Previous releases supported macOS 11 (Big Sur) and later - if you're still on Big Sur, 4.0.0 will not run and you'll need to either update macOS or stay on your current Altitude version. This follows the minimum macOS version required by the version of Electron Altitude is now built with. Both Intel and Apple Silicon Macs continue to be supported.
+
+### Recommended Specs
+
+Altitude downloads and runs a full Metrix node alongside its own interface, so it benefits from a bit more than a typical lightweight desktop app:
+
+- **CPU:** A 64-bit, dual-core (or better) processor
+- **RAM:** 4 GB minimum, 8 GB or more recommended
+- **Storage:** At least 20 GB free, on an SSD if possible - the Metrix blockchain is several GB and grows over time, and syncing from a traditional hard drive is noticeably slower
+- **Network:** An internet connection, to sync with the network and keep the wallet up to date
+
 ## Help and troubleshooting
 
 In order to get help regarding Altitude:
