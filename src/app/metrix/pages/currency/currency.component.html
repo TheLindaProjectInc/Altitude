@@ -9,7 +9,8 @@
 
   @for (currency of currenciesToShow(); track currency) {
     <button class="btn btn-default" (click)="setCurrency(currency)"
-      [ngClass]="{'btn-success':currency===currencyService.currency}">
+      [ngClass]="{'btn-success':currency===currencyService.currency}"
+      title="{{ currencyService.currencyName(currency) }}">
       {{currency}}
     </button>
   }

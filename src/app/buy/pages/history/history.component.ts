@@ -7,6 +7,7 @@ import Big from 'big.js';
 import { ElectronService } from 'app/providers/electron.service';
 import { AddressBookService } from 'app/metrix/components/address-book/address-book.service';
 import { TranslationService } from 'app/providers/translation.service';
+import { ChainType } from 'app/enum';
 
 @Component({
     templateUrl: './history.component.html',
@@ -53,7 +54,9 @@ export class HistoryComponent {
         // Add Deposit TX
         if (!trx.pending && trx.swapFee < 1) {
           let price = (Number(trx.depositAmount) * (1 - trx.swapFee)) / Number(trx.SwapAmount);
-          let mrxExplorerLink = trx.swapTxId ? 'https://explorer.metrixcoin.com/tx/' + trx.swapTxId : '';
+          // buy/swap transactions are always real mainnet MRX, regardless of which
+          // network the wallet itself is currently pointed at
+          let mrxExplorerLink = trx.swapTxId ? `${this.electron.blockExplorerUrl(ChainType.MAINNET)}/tx/${trx.swapTxId}` : '';
           this.transactions.push({type: swap, date: trx.createdAt, amount: trx.SwapAmount, txid: trx.swapTxId, price: price, link: mrxExplorerLink});
         } else if (!trx.pending && trx.swapFee > 0) {
           const refund = await this.translation.translate('BUY.PAGES.HISTORY.TRANSACTIONREFUNDED');

@@ -20,6 +20,10 @@ export class BudgetProposal {
     imgUrl: string = 'assets/img/metrix-logo.png';
     myVote: BudgetVote = BudgetVote.NONE;
     removed: number = 0;
+    // set once loadImageIfNeeded() has been called, successful or not, so a proposal
+    // re-fetched on every new block doesn't re-request its image metadata forever -
+    // once attempted (or already loaded), later refresh passes skip it entirely
+    private imgLoadAttempted: boolean = false;
 
     constructor(contractData?: any) {
         if (contractData) {
@@ -35,9 +39,17 @@ export class BudgetProposal {
             this.yesVote = Number(U256(chunks[8], 16));
             this.noVote = Number(U256(chunks[9], 16));
             this.removed = Number(U256(chunks[10], 16));
-
-            if (Helpers.validateURL(this.url)) this.loadImg();
         }
+    }
+
+    // called explicitly by the caller (not from the constructor) so a proposal that's
+    // just being re-fetched to pick up updated vote counts - and whose image was
+    // already loaded, or already attempted, on a previous pass - doesn't trigger a
+    // redundant network fetch every time a new block arrives
+    public loadImageIfNeeded(delayMs: number = 0) {
+        if (this.imgLoadAttempted) return;
+        this.imgLoadAttempted = true;
+        if (Helpers.validateURL(this.url)) this.loadImg(delayMs);
     }
 
     private extractString(index: number, chunks: Array<string>, output: string): string {
@@ -47,8 +59,13 @@ export class BudgetProposal {
         return Buffer.from(textString, 'hex').toString();
     }
 
-    private async loadImg() {
+    // fired independently per-proposal (not awaited by the caller), so without a
+    // stagger every proposal loaded in the same batch fires its metadata fetch at once
+    // - several proposals often link to github.com URLs, and bursting anonymous
+    // requests there like that is exactly what trips their rate limit (429)
+    private async loadImg(delayMs: number = 0) {
         try {
+            if (delayMs > 0) await new Promise(resolve => setTimeout(resolve, delayMs));
             let metadata = await urlMetadata(this.url);
             this.imgUrl = metadata['og:image'] || metadata['image'] || this.imgUrl;
         } catch (ex) {

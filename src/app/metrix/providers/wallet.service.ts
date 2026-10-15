@@ -5,6 +5,8 @@ import { RPCMethods, RpcService } from './rpc.service';
 import Helpers from 'app/helpers';
 import { ElectronService } from 'app/providers/electron.service';
 import { ErrorService } from 'app/providers/error.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
+import { ChainType } from 'app/enum';
 import {
     Account,
     Address,
@@ -70,11 +72,15 @@ export class WalletService {
     @Output() newBlockReceived: EventEmitter<any> = new EventEmitter();
     @Output() peersUpdated: EventEmitter<any> = new EventEmitter();
 
+    // guards the out-of-date/bootstrap-offer check so it only ever runs once per app startup
+    private outOfDateCheckDone = false;
+
     constructor(
         private rpc: RpcService,
         private electron: ElectronService,
         private errorService: ErrorService,
-        private desktopNotification: DesktopNotificationService
+        private desktopNotification: DesktopNotificationService,
+        private prompt: PromptService,
     ) {
         this.resetState();
         if (electron.isElectron()) this.setupListeners()
@@ -90,6 +96,7 @@ export class WalletService {
         this.stakingStatus = new StakingStatus();
         this._peers = new Array<Peer>();
         this._addressBook = new Array<AddressBookItem>();
+        this.outOfDateCheckDone = false;
     }
 
     setupListeners() {
@@ -357,11 +364,46 @@ export class WalletService {
     private async syncBlockchain() {
         let currentBlock = this.blockchainStatus.latestBlockHeight;
         this.blockchainStatus = await this.rpc.requestData(RPCMethods.GETBLOCKCHAIN);
-        if (!this.walletInfo.startupBlockTime)
+        if (!this.walletInfo.startupBlockTime) {
             this.walletInfo.startupBlockTime = this.blockchainStatus.latestBlockTime;
+            // first blockchain sync tick since startup - the earliest point we know
+            // how far behind the local chain tip is
+            this.checkOutOfDate();
+        }
         if (this.blockchainStatus.latestBlockHeight > currentBlock)
             this.newBlockReceived.emit(true);
             //this.newBlockReceived.next(true)
+    }
+
+    // if the wallet is more than a month behind the network, a normal sync can take
+    // days - offer a fresh bootstrap instead when one is available, so the user can
+    // make an informed choice rather than just staring at a slow sync with no context
+    private async checkOutOfDate() {
+        if (this.outOfDateCheckDone) return;
+        this.outOfDateCheckDone = true;
+        // bootstrap is only published for MainNet
+        if (this.electron.chain !== ChainType.MAINNET) return;
+        if (!this.walletInfo.startupBlockTime) return;
+        const oneMonthMs = 30 * 24 * 60 * 60 * 1000;
+        const behindMs = Date.now() - this.walletInfo.startupBlockTime;
+        if (behindMs <= oneMonthMs) return;
+        try {
+            const bootstrap = await this.electron.checkBootstrap();
+            if (!bootstrap.available || !bootstrap.lastModified) return;
+            if (Date.now() - bootstrap.lastModified >= oneMonthMs) return;
+            const daysBehind = Math.floor(behindMs / (24 * 60 * 60 * 1000));
+            await this.prompt.alert(
+                'COMPONENTS.PROMPT.BOOTSTRAPOFFERTITLE',
+                'COMPONENTS.PROMPT.BOOTSTRAPOFFERINFO',
+                'COMPONENTS.PROMPT.BOOTSTRAPOFFERBUTTON',
+                'COMPONENTS.PROMPT.BOOTSTRAPOFFERCANCEL',
+                `Your wallet is currently approximately ${daysBehind} days behind the network.`
+            );
+            // user chose to download the bootstrap
+            this.rpc.bootstrapClient();
+        } catch (ex) {
+            // user chose to continue with a normal sync, or the availability check failed
+        }
     }
 
     private async getPeersList() {

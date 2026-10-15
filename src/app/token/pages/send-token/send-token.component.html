@@ -1,0 +1,73 @@
+<div class="content" #scrollingBlock>
+    <div class="content-card">
+        <h3>{{ 'TOKEN.PAGES.SEND.TITLE' | translate }}</h3>
+
+        @if (token) {
+            <p>
+                {{ 'TOKEN.PAGES.SEND.TOKEN' | translate }}:
+                <span class="token-preview-name">{{ token.name }} ({{ token.symbol }})</span>
+            </p>
+        }
+
+        <div class="form-stacked">
+            <span>{{ 'TOKEN.PAGES.SEND.FROM' | translate }}</span>
+            <text-input [inputModel]="fromAddress" [disabled]="true"></text-input>
+        </div>
+
+        @if (token && token.type === 'MRC20') {
+            <p class="option-card-subtitle">
+                {{ 'TOKEN.PAGES.SEND.AVAILABLE' | translate }}: {{ balance | prettyCoins: (token.decimals > 8 ? 8 : token.decimals) }} {{ token.symbol }}
+            </p>
+        }
+
+        @if (token && token.type === 'MRC721') {
+            <div class="form-stacked">
+                <span>{{ 'TOKEN.PAGES.SEND.TOKENID' | translate }}</span>
+                <text-input [inputModel]="tokenId" [disabled]="true"></text-input>
+            </div>
+        }
+
+        <div class="form-stacked">
+            <span>{{ 'TOKEN.PAGES.SEND.RECIPIENT' | translate }}</span>
+            <div class="form-inline no-padding">
+                <text-input [(inputModel)]="recipient"></text-input>
+                <button class="btn btn-default btn-icon" (click)="getFromAddressBook()">
+                    <fa-icon icon="address-book"></fa-icon>
+                </button>
+            </div>
+        </div>
+
+        @if (token && token.type === 'MRC20') {
+            <div class="form-stacked">
+                <span>{{ 'TOKEN.PAGES.SEND.AMOUNT' | translate }}</span>
+                <div class="form-inline no-padding">
+                    <text-input [(inputModel)]="amount" type="number"></text-input>
+                    <button class="btn btn-default btn-icon" (click)="useMax()">
+                        {{ 'TOKEN.PAGES.SEND.MAXBUTTON' | translate }}
+                    </button>
+                </div>
+            </div>
+        }
+
+        <div style="display: flex;">
+            <div class="form-stacked">
+                <span>{{ 'TOKEN.PAGES.SEND.GASLIMIT' | translate }}</span>
+                <text-input [(inputModel)]="gasLimit" type="number"></text-input>
+            </div>
+
+            <div class="form-stacked">
+                <span>{{ 'TOKEN.PAGES.SEND.GASPRICE' | translate }}</span>
+                <text-input [(inputModel)]="gasPrice" type="number"></text-input>
+            </div>
+        </div>
+
+        <div class="flex-row-right" style="padding-top: 20px;">
+            <button class="btn btn-default" routerLink="/token">
+                {{ 'MISC.CANCELBUTTON' | translate }}
+            </button>
+            <button class="btn btn-success" [disabled]="sending" (click)="send()">
+                {{ 'TOKEN.PAGES.SEND.SENDBUTTON' | translate }}
+            </button>
+        </div>
+    </div>
+</div>
