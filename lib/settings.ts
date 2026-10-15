@@ -168,9 +168,18 @@ function set_devRpc(field: 'devRpcHost' | 'devRpcPort' | 'devRpcUser' | 'devRpcP
 // lets a user who doesn't hold any tokens turn off the Token screen's automatic contract
 // discovery/balance polling entirely, to avoid the explorer/daemon requests it otherwise
 // makes on every new block. Global rather than per-chain - this is a "I don't use tokens"
-// preference, not something that plausibly differs per network.
+// preference, not something that plausibly differs per network. Off by default (see the
+// Settings class below) - users opt in via the Token screen or Options > Explorer.
 function set_tokenCheckingEnabled(enabled: boolean) {
     settings.tokenCheckingEnabled = enabled;
+    saveSettings();
+}
+
+// how often (in minutes) TokenService re-checks addresses once token checking is enabled
+// and the initial post-sync check has happened - see TokenService.refresh() in
+// token.service.ts, which reads this fresh on every call rather than caching it
+function set_tokenScanIntervalMinutes(minutes: number) {
+    settings.tokenScanIntervalMinutes = minutes;
     saveSettings();
 }
 
@@ -310,6 +319,9 @@ function setupIPC() {
             case 'SETTOKENCHECKINGENABLED':
                 set_tokenCheckingEnabled(data);
                 break;
+            case 'SETTOKENSCANINTERVAL':
+                set_tokenScanIntervalMinutes(data);
+                break;
         }
     });
 }
@@ -368,9 +380,13 @@ export class Settings {
     devRpcPasswordMainnet: string = '';
     devRpcPasswordTestnet: string = '';
     devRpcPasswordRegtest: string = '';
-    // on by default so existing behaviour is unchanged until a user explicitly opts out
-    // from the Token screen
-    tokenCheckingEnabled: boolean = true;
+    // off by default for every user - token holders opt in from the Token screen (or
+    // Options > Explorer), rather than everyone paying for explorer/daemon requests they
+    // may never need
+    tokenCheckingEnabled: boolean = false;
+    // minutes between re-checks once enabled, after the initial post-sync check - see
+    // TokenService.refresh() in token.service.ts
+    tokenScanIntervalMinutes: number = 60;
 
     constructor(data) {
         if (data) {

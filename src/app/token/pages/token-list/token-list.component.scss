@@ -18,14 +18,39 @@
         }
     }
 
-    .busy-banner,
-    .checking-disabled-banner {
+    .busy-banner {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 15px;
         opacity: 0.85;
         font-size: 0.9em;
+    }
+
+    .checking-disabled-banner {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        .checking-disabled-banner-text {
+            flex: 1;
+
+            h5 {
+                margin: 0 0 4px;
+            }
+
+            p {
+                margin: 0;
+                opacity: 0.85;
+                font-size: 0.9em;
+            }
+        }
+
+        .btn {
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
     }
 
     .empty-state {

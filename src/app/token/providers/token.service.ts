@@ -31,10 +31,27 @@ export class TokenService {
 
     // lets a user who doesn't hold tokens turn off all automatic contract
     // discovery/balance polling (see refresh() below, which this gates centrally) -
-    // "!== false" so a settings object that hasn't loaded this key yet (or predates the
-    // setting entirely) defaults to enabled, matching the Settings class default
+    // "=== true" so a settings object that hasn't loaded this key yet (or predates the
+    // setting entirely) defaults to disabled, matching the Settings class default
     get checkingEnabled(): boolean {
-        return this.electron.settings.tokenCheckingEnabled !== false;
+        return this.electron.settings.tokenCheckingEnabled === true;
+    }
+
+    // minutes between automatic re-checks once enabled - user-configurable via Options >
+    // Explorer (see setTokenScanIntervalMinutes() there); read fresh on every refresh()
+    // call rather than cached, and floored so a stray 0/negative/garbage value saved to
+    // storage can't turn this back into a tight polling loop
+    private get scanIntervalMs(): number {
+        const minutes = Number(this.electron.settings.tokenScanIntervalMinutes);
+        return Math.max(minutes > 0 ? minutes : 60, 5) * 60 * 1000;
+    }
+
+    // the explorer/daemon sweep is only meaningful once the local node has actually
+    // caught up - mid-sync, balances and discovery results would just reflect a stale
+    // chain tip. "99.99" matches the threshold SyncStatusComponent already uses to
+    // decide the wallet has finished syncing.
+    private get walletSynced(): boolean {
+        return this.wallet.blockchainStatus.syncProgresss >= 99.99;
     }
 
     setCheckingEnabled(enabled: boolean) {
@@ -50,7 +67,9 @@ export class TokenService {
     private newBlockReceivedSub: Subscription;
     private onAccountsUpdatedSub: Subscription;
     private lastScanTs = 0;
-    private readonly scanThrottleMs = 30000;
+    // becomes true once the first scan after a chain (re)start has actually run - gates
+    // whether refresh() waits for the wallet to finish syncing (see refresh() below)
+    private hasScannedOnce = false;
     private refreshing = false;
 
     private log(...args: any[]) {
@@ -96,6 +115,10 @@ export class TokenService {
         // keep skipping the new chain's own scans as "already in progress" until that
         // orphaned old-chain scan eventually completes
         this.refreshing = false;
+        // so the new chain gets its own "once synced" initial scan and isn't stuck
+        // waiting out whatever was left of the previous chain's hourly interval
+        this.hasScannedOnce = false;
+        this.lastScanTs = 0;
         this.chainData = { tokens: [] };
         this.init();
     }
@@ -178,9 +201,17 @@ export class TokenService {
         if (!this.checkingEnabled) { this.log('refresh: skipped, token checking disabled'); return; }
         if (!this.wallet.accounts.length) { this.log('refresh: skipped, no wallet accounts loaded yet'); return; }
         if (this.refreshing) { this.log('refresh: skipped, a refresh is already in progress'); return; }
-        if (!force && Date.now() - this.lastScanTs < this.scanThrottleMs) { this.log('refresh: skipped, throttled'); return; }
+        if (!force) {
+            // the very first automatic scan after enabling/launch waits for the chain to
+            // finish syncing rather than racing it - every newBlockReceived tick during
+            // IBD would otherwise count as "a scan happened" and start the hourly clock
+            // long before the data behind it meant anything
+            if (!this.hasScannedOnce && !this.walletSynced) { this.log('refresh: skipped, waiting for wallet to finish syncing before first scan'); return; }
+            if (this.hasScannedOnce && Date.now() - this.lastScanTs < this.scanIntervalMs) { this.log('refresh: skipped, throttled'); return; }
+        }
 
         this.refreshing = true;
+        this.hasScannedOnce = true;
         this.lastScanTs = Date.now();
         this.log('refresh: starting (force =', force, ')');
         try {

@@ -3,21 +3,19 @@
   <div class="toolbar-top">
     <h3>{{ 'TOKEN.PAGES.LIST.TITLE' | translate }}</h3>
     <div class="toolbar-actions">
-      <button class="btn btn-default btn-sm" [title]="'TOKEN.PAGES.LIST.' + (token.checkingEnabled ? 'CHECKINGENABLEDTOOLTIP' : 'CHECKINGDISABLEDTOOLTIP') | translate" (click)="token.setCheckingEnabled(!token.checkingEnabled)">
-        <fa-icon [icon]="token.checkingEnabled ? 'toggle-on' : 'toggle-off'" [class.success]="token.checkingEnabled"></fa-icon>
-        {{ (token.checkingEnabled ? 'TOKEN.PAGES.LIST.CHECKINGENABLED' : 'TOKEN.PAGES.LIST.CHECKINGDISABLED') | translate }}
-      </button>
       <button class="btn btn-default btn-sm" (click)="toggleShowEmpty()">
         {{ (showEmptyAddresses ? 'TOKEN.PAGES.LIST.HIDEEMPTY' : 'TOKEN.PAGES.LIST.SHOWEMPTY') | translate }}
       </button>
-      <button class="btn btn-default btn-sm" [disabled]="token.busy || !token.checkingEnabled" (click)="refresh()">
-        @if (token.busy) {
-          <fa-icon icon="spinner" animation="spin"></fa-icon>
-        } @else {
-          <fa-icon icon="search"></fa-icon>
-        }
-        {{ 'TOKEN.PAGES.LIST.REFRESH' | translate }}
-      </button>
+      @if (token.checkingEnabled) {
+        <button class="btn btn-default btn-sm" [disabled]="token.busy" (click)="refresh()">
+          @if (token.busy) {
+            <fa-icon icon="spinner" animation="spin"></fa-icon>
+          } @else {
+            <fa-icon icon="search"></fa-icon>
+          }
+          {{ 'TOKEN.PAGES.LIST.REFRESH' | translate }}
+        </button>
+      }
       <button class="btn btn-success btn-sm" routerLink="/token/add">
         <fa-icon icon="plus"></fa-icon> {{ 'TOKEN.PAGES.LIST.ADDTOKEN' | translate }}
       </button>
@@ -26,8 +24,14 @@
 
   @if (!token.checkingEnabled) {
     <div class="content-card checking-disabled-banner">
-      <fa-icon icon="toggle-off"></fa-icon>
-      <span>{{ 'TOKEN.PAGES.LIST.CHECKINGDISABLEDNOTICE' | translate }}</span>
+      <fa-icon icon="toggle-off" class="fa-2x"></fa-icon>
+      <div class="checking-disabled-banner-text">
+        <h5>{{ 'TOKEN.PAGES.LIST.CHECKINGDISABLEDTITLE' | translate }}</h5>
+        <p>{{ 'TOKEN.PAGES.LIST.CHECKINGDISABLEDNOTICE' | translate }}</p>
+      </div>
+      <button class="btn btn-success" (click)="enableChecking()">
+        <fa-icon icon="toggle-on"></fa-icon> {{ 'TOKEN.PAGES.LIST.ENABLEBUTTON' | translate }}
+      </button>
     </div>
   } @else if (token.busy) {
     <div class="content-card busy-banner">

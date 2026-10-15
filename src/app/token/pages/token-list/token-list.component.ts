@@ -5,6 +5,7 @@ import { TokenService } from 'app/token/providers/token.service';
 import { Token } from 'app/token/classes/token';
 import { NFT } from 'app/token/classes/nft';
 import { ContextMenuService } from 'app/components/context-menu/context-menu.service';
+import { PromptService } from 'app/components/prompt/prompt.service';
 
 interface AddressCard {
     address: string;
@@ -30,6 +31,7 @@ export class TokenListComponent {
         public token: TokenService,
         private router: Router,
         private contextMenu: ContextMenuService,
+        private prompt: PromptService,
     ) { }
 
     get addressCards(): Array<AddressCard> {
@@ -115,5 +117,19 @@ export class TokenListComponent {
 
     refresh() {
         this.token.refresh(true);
+    }
+
+    async enableChecking() {
+        try {
+            await this.prompt.alert(
+                'TOKEN.PAGES.LIST.ENABLECONFIRMTITLE',
+                'TOKEN.PAGES.LIST.ENABLECONFIRMCONTENT',
+                'TOKEN.PAGES.LIST.ENABLEBUTTON',
+                'MISC.CANCELBUTTON',
+            );
+        } catch (ex) {
+            return; // user chose not to enable
+        }
+        this.token.setCheckingEnabled(true);
     }
 }

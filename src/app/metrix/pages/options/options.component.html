@@ -208,6 +208,20 @@
   @if (tab==3) {
     <div class="tab-content">
       <div class="content-card option-card">
+        <h5>{{ 'PAGES.OPTIONS.EXPLORER.TOKENSCANNINGTITLE' | translate }}</h5>
+        <div class="option-row">
+          <input id="chkTokenChecking" (change)="setTokenCheckingEnabled()" [(ngModel)]="electron.settings.tokenCheckingEnabled" type='checkbox' />
+          <label for="chkTokenChecking">{{ 'PAGES.OPTIONS.EXPLORER.TOKENSCANNINGENABLED' | translate }}</label>
+        </div>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.TOKENSCANNINGINFO' | translate }}</p>
+        <div class="form-inline">
+          <span>{{ 'PAGES.OPTIONS.EXPLORER.TOKENSCANNINGINTERVALLABEL' | translate }}:</span>
+          <text-input class="number-field" type="number" [min]="5" [(inputModel)]="electron.settings.tokenScanIntervalMinutes" (change)="setTokenScanIntervalMinutes()"></text-input>
+        </div>
+        <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.TOKENSCANNINGINTERVALINFO' | translate }}</p>
+      </div>
+
+      <div class="content-card option-card">
         <h5>{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERTITLE' | translate }}</h5>
         <p class="option-card-subtitle">{{ 'PAGES.OPTIONS.EXPLORER.BLOCKEXPLORERINFO' | translate }}</p>
         @for (network of explorerNetworks; track network) {

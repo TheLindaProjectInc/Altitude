@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Keep last"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token Scanning",
+                "TOKENSCANNINGENABLED": "Automatically check addresses for tokens and refresh balances",
+                "TOKENSCANNINGINFO": "Off by default. When enabled, Altitude checks a block explorer to discover MRC20/MRC721 tokens held by your addresses, then verifies balances and ownership directly against your own node. Most wallets don't hold any tokens, so this is opt-in to avoid unnecessary background requests.",
+                "TOKENSCANNINGINTERVALLABEL": "Check every (minutes)",
+                "TOKENSCANNINGINTERVALINFO": "After enabling, the first check runs once your wallet has fully synced. After that, Altitude re-checks on this interval.",
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "The site opened when viewing a transaction on the block explorer (e.g. right-click a transaction > View on Explorer).",
                 "TOKENDISCOVERYTITLE": "Token Discovery",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Unhide",
                 "EMPTYTITLE": "No Tokens Found Yet",
                 "EMPTYDETAIL": "Altitude automatically checks a block explorer for MRC20 and MRC721 tokens sent to your addresses, then verifies everything live against your own node. You can also add a token manually if you know its contract address.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatic token checking is turned off, so your addresses aren't being checked for tokens. Turn it back on above, or add a token manually if you know its contract address.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatic token checking is turned off by default. Use the Enable Token Scanning button above, or add a token manually if you know its contract address.",
                 "HIDDENTITLE": "Hidden Tokens",
                 "CONTEXTMENUHIDE": "Hide Token",
                 "ITEMSSUFFIX": "item(s)",
                 "NONENUMERABLETOOLTIP": "This collection doesn't support listing individual items - showing how many you hold instead.",
-                "CHECKINGENABLED": "Checking On",
-                "CHECKINGDISABLED": "Checking Off",
-                "CHECKINGENABLEDTOOLTIP": "Token checking is on - Altitude periodically checks your addresses for tokens and refreshes balances. Click to turn off.",
-                "CHECKINGDISABLEDTOOLTIP": "Token checking is off - click to turn back on.",
-                "CHECKINGDISABLEDNOTICE": "Automatic token checking is turned off. Your addresses are not being scanned for tokens and balances will not update. You can still add a token manually."
+                "CHECKINGDISABLEDTITLE": "Token Scanning Is Off",
+                "CHECKINGDISABLEDNOTICE": "Automatic token checking is off by default. Your addresses aren't being scanned for tokens and balances won't update until you turn it on.",
+                "ENABLEBUTTON": "Enable Token Scanning",
+                "ENABLECONFIRMTITLE": "Enable Token Scanning?",
+                "ENABLECONFIRMCONTENT": "Altitude will periodically check a block explorer to see which MRC20/MRC721 tokens your addresses hold, then verify balances and ownership directly against your own node. The first check runs once your wallet has fully synced, and after that it repeats every 60 minutes by default. You can change this interval, or turn token scanning back off, anytime from Options > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Add Token",

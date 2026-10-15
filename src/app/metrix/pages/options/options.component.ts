@@ -265,6 +265,17 @@ export class OptionsComponent implements OnInit {
     this.saveExplorerUrl(category, network);
   }
 
+  // delegates to TokenService.setCheckingEnabled() rather than sending the IPC command
+  // directly, so toggling it here also gets the same "re-enabling triggers an immediate
+  // refresh" behaviour as the Token screen's own Enable button
+  setTokenCheckingEnabled() {
+    this.token.setCheckingEnabled(this.electron.settings.tokenCheckingEnabled);
+  }
+
+  setTokenScanIntervalMinutes() {
+    this.electron.ipcRenderer.send('settings', 'SETTOKENSCANINTERVAL', Number(this.electron.settings.tokenScanIntervalMinutes));
+  }
+
   private chainFor(network: ExplorerUrlNetwork): ChainType {
     if (network === 'mainnet') return ChainType.MAINNET;
     if (network === 'testnet') return ChainType.TESTNET;

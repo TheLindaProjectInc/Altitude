@@ -33,7 +33,7 @@ const STATE_FILE = path.join(__dirname, 'state.json');
 const retranslate = [];
 // add leaf key names (or "parentKey.leafKey") here to remove them from every
 // translated file - en.json itself must still be edited manually
-const removeTranslation = [];
+const removeTranslation = ['CHECKINGENABLED', 'CHECKINGDISABLED', 'CHECKINGENABLEDTOOLTIP', 'CHECKINGDISABLEDTOOLTIP'];
 
 // Google Cloud Translation Basic (v2) pricing is per character, independent of how
 // many strings are batched into a request - approximate, verify current pricing at
