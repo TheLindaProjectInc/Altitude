@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Naj bo zadnji"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skeniranje žetonov",
+                "TOKENSCANNINGENABLED": "Samodejno preverjanje naslovov za žetone in osveževanje stanja",
+                "TOKENSCANNINGINFO": "Privzeto izklopljeno. Ko je omogočeno, Altitude preveri raziskovalec blokov, da odkrije žetone MRC20/MRC721, ki jih imajo vaši naslovi, nato pa preveri stanje in lastništvo neposredno na vašem vozlišču. Večina denarnic ne hrani žetonov, zato je to opcijska možnost, da se izognete nepotrebnim zahtevam v ozadju.",
+                "TOKENSCANNINGINTERVALLABEL": "Preveri vsakih (minut)",
+                "TOKENSCANNINGINTERVALINFO": "Po omogočenju se prvo preverjanje izvede, ko je vaša denarnica v celoti sinhronizirana. Po tem Altitude ponovno preverja v tem intervalu.",
                 "BLOCKEXPLORERTITLE": "Raziskovalec blokov",
                 "BLOCKEXPLORERINFO": "Spletno mesto se je odprlo med ogledom transakcije v raziskovalcu blokov (npr. klik z desno tipko miške na transakcijo > Ogled v raziskovalcu).",
                 "TOKENDISCOVERYTITLE": "Odkrivanje žetonov",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Razkrij",
                 "EMPTYTITLE": "Žetonov še ni bilo najdenih",
                 "EMPTYDETAIL": "Altitude samodejno preveri raziskovalec blokov za žetone MRC20 in MRC721, poslane na vaše naslove, nato pa vse v živo preveri glede na vaše vozlišče. Žeton lahko dodate tudi ročno, če poznate njegov pogodbeni naslov.",
-                "EMPTYDETAILCHECKINGDISABLED": "Samodejno preverjanje žetonov je izklopljeno, zato se vaši naslovi ne preverjajo glede žetonov. Zgoraj ga znova vklopite ali pa žeton dodajte ročno, če poznate njegov pogodbeni naslov.",
+                "EMPTYDETAILCHECKINGDISABLED": "Samodejno preverjanje žetonov je privzeto izklopljeno. Uporabite zgornji gumb Omogoči skeniranje žetonov ali pa žeton dodajte ročno, če poznate njegov pogodbeni naslov.",
                 "HIDDENTITLE": "Skriti žetoni",
                 "CONTEXTMENUHIDE": "Skrij žeton",
                 "ITEMSSUFFIX": "element(-i)",
                 "NONENUMERABLETOOLTIP": "Ta zbirka ne podpira naštevanja posameznih predmetov – namesto tega prikazuje, koliko jih imate.",
-                "CHECKINGENABLED": "Preverjanje",
-                "CHECKINGDISABLED": "Odkljukanje",
-                "CHECKINGENABLEDTOOLTIP": "Preverjanje žetonov je vklopljeno – Altitude občasno preverja vaše naslove za žetone in osvežuje stanje. Kliknite za izklop.",
-                "CHECKINGDISABLEDTOOLTIP": "Preverjanje žetonov je izklopljeno – kliknite za ponovni vklop.",
-                "CHECKINGDISABLEDNOTICE": "Samodejno preverjanje žetonov je izklopljeno. Vaši naslovi se ne pregledujejo za žetone in stanje se ne bo posodobilo. Žeton lahko še vedno dodate ročno."
+                "CHECKINGDISABLEDTITLE": "Skeniranje žetonov je izklopljeno",
+                "CHECKINGDISABLEDNOTICE": "Samodejno preverjanje žetonov je privzeto izklopljeno. Vaši naslovi se ne pregledujejo za žetone in stanje se ne bo posodobilo, dokler ga ne vklopite.",
+                "ENABLEBUTTON": "Omogoči skeniranje žetonov",
+                "ENABLECONFIRMTITLE": "Omogoči skeniranje žetonov?",
+                "ENABLECONFIRMCONTENT": "Altitude bo občasno preverjal raziskovalec blokov, da bi videl, katere žetone MRC20/MRC721 imajo vaši naslovi, nato pa bo stanje in lastništvo preveril neposredno na vašem vozlišču. Prvo preverjanje se izvede, ko je vaša denarnica v celoti sinhronizirana, nato pa se privzeto ponovi vsakih 60 minut. Ta interval lahko kadar koli spremenite ali skeniranje žetonov ponovno izklopite v Možnosti > Raziskovalec."
             },
             "ADDTOKEN": {
                 "TITLE": "Dodaj žeton",

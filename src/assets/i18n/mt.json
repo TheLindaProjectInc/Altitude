@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Żomm l-aħħar"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skennjar tat-Tokens",
+                "TOKENSCANNINGENABLED": "Iċċekkja awtomatikament l-indirizzi għal tokens u aġġorna l-bilanċi",
+                "TOKENSCANNINGINFO": "Mitfi awtomatikament. Meta jkun attivat, Altitude jiċċekkja esploratur tal-blokki biex jiskopri tokens MRC20/MRC721 miżmuma mill-indirizzi tiegħek, imbagħad jivverifika l-bilanċi u s-sjieda direttament man-nodu tiegħek stess. Il-biċċa l-kbira tal-kartieri ma jżommux tokens, għalhekk dan huwa opt-in biex jiġu evitati talbiet bla bżonn fl-isfond.",
+                "TOKENSCANNINGINTERVALLABEL": "Iċċekkja kull (minuti)",
+                "TOKENSCANNINGINTERVALINFO": "Wara li tattiva dan, l-ewwel verifika ssir ladarba l-kartiera tiegħek tkun sinkronizzata kompletament. Wara dan, Altitude terġa' tiċċekkja f'dan l-intervall.",
                 "BLOCKEXPLORERTITLE": "Esploratur tal-Blokkijiet",
                 "BLOCKEXPLORERINFO": "Is-sit infetaħ meta kont qed tara transazzjoni fuq il-blokk explorer (eż. ikklikkja bil-lemin fuq transazzjoni > View on Explorer).",
                 "TOKENDISCOVERYTITLE": "Skoperta tat-Tokens",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Uri",
                 "EMPTYTITLE": "Għadhom ma nstabu l-ebda tokens",
                 "EMPTYDETAIL": "Altitude awtomatikament jiċċekkja block explorer għal tokens MRC20 u MRC721 mibgħuta lill-indirizzi tiegħek, imbagħad jivverifika kollox live man-node tiegħek stess. Tista' wkoll iżżid token manwalment jekk taf l-indirizz tal-kuntratt tiegħu.",
-                "EMPTYDETAILCHECKINGDISABLED": "L-iċċekkjar awtomatiku tat-tokens huwa mitfi, għalhekk l-indirizzi tiegħek mhux qed jiġu ċċekkjati għat-tokens. Erġa' ixgħelha hawn fuq, jew żid token manwalment jekk taf l-indirizz tal-kuntratt tiegħu.",
+                "EMPTYDETAILCHECKINGDISABLED": "L-iċċekkjar awtomatiku tat-tokens huwa mitfi awtomatikament. Uża l-buttuna Ippermetti l-Iskennjar tat-Tokens hawn fuq, jew żid token manwalment jekk taf l-indirizz tal-kuntratt tiegħu.",
                 "HIDDENTITLE": "Tokens Moħbija",
                 "CONTEXTMENUHIDE": "Aħbi t-Token",
                 "ITEMSSUFFIX": "oġġett(i)",
                 "NONENUMERABLETOOLTIP": "Din il-kollezzjoni ma tappoġġjax il-lista ta' oġġetti individwali - minflok turi kemm għandek.",
-                "CHECKINGENABLED": "Iċċekkjar Fuq",
-                "CHECKINGDISABLED": "Immarkar Mitfi",
-                "CHECKINGENABLEDTOOLTIP": "L-iċċekkjar tat-tokens huwa mixgħul - Altitude tiċċekkja l-indirizzi tiegħek perjodikament għal tokens u tirrifreska l-bilanċi. Ikklikkja biex titfi.",
-                "CHECKINGDISABLEDTOOLTIP": "Il-verifika tat-tokens hija mitfija - ikklikkja biex terġa' tixgħelha.",
-                "CHECKINGDISABLEDNOTICE": "L-iċċekkjar awtomatiku tat-tokens huwa mitfi. L-indirizzi tiegħek mhumiex qed jiġu skennjati għat-tokens u l-bilanċi mhux se jiġu aġġornati. Xorta tista' żżid token manwalment."
+                "CHECKINGDISABLEDTITLE": "L-Iskennjar tat-Tokens Huwa Mitfi",
+                "CHECKINGDISABLEDNOTICE": "Il-verifika awtomatika tat-tokens hija mitfija awtomatikament. L-indirizzi tiegħek mhux qed jiġu skennjati għat-tokens u l-bilanċi mhux se jiġu aġġornati sakemm ma tixgħelhiex.",
+                "ENABLEBUTTON": "Ippermetti l-Iskennjar tat-Tokens",
+                "ENABLECONFIRMTITLE": "Tippermetti l-Iskennjar tat-Tokens?",
+                "ENABLECONFIRMCONTENT": "Altitude se tiċċekkja perjodikament esploratur tal-blokki biex tara liema tokens MRC20/MRC721 għandhom l-indirizzi tiegħek, imbagħad tivverifika l-bilanċi u s-sjieda direttament man-nodu tiegħek stess. L-ewwel kontroll isir ladarba l-kartiera tiegħek tkun sinkronizzata kompletament, u wara dan tirrepeti ruħha kull 60 minuta awtomatikament. Tista' tbiddel dan l-intervall, jew titfi l-iskannjar tat-tokens lura, f'kull ħin minn Options > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Żid it-Token",

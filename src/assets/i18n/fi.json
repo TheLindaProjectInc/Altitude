@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Pidä viimeinen"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Tunnuksen skannaus",
+                "TOKENSCANNINGENABLED": "Tarkista osoitteiden automaattisesti tokenien varalta ja päivitä saldot",
+                "TOKENSCANNINGINFO": "Oletusarvoisesti pois päältä. Kun tämä on käytössä, Altitude tarkistaa lohkoselaimella osoitteidesi hallussa olevat MRC20/MRC721-tokenit ja varmistaa sitten saldot ja omistajuuden suoraan omaa solmuasi vasten. Useimmat lompakot eivät säilytä tokeneita, joten tämä on valinnainen vaihtoehto tarpeettomien taustapyyntöjen välttämiseksi.",
+                "TOKENSCANNINGINTERVALLABEL": "Tarkista joka (minuutti)",
+                "TOKENSCANNINGINTERVALINFO": "Käyttöönoton jälkeen ensimmäinen tarkistus suoritetaan, kun lompakkosi on synkronoitu kokonaan. Tämän jälkeen Altitude tarkistaa uudelleen tällä aikavälillä.",
                 "BLOCKEXPLORERTITLE": "Lohkojen selaus",
                 "BLOCKEXPLORERINFO": "Sivusto avautui, kun katseli tapahtumaa lohkoselaimessa (esim. napsauta tapahtumaa hiiren kakkospainikkeella > Näytä lohkoselaimessa).",
                 "TOKENDISCOVERYTITLE": "Tokenin löytäminen",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Näytä",
                 "EMPTYTITLE": "Ei tokeneita vielä löytynyt",
                 "EMPTYDETAIL": "Altitude tarkistaa automaattisesti lohkoselaimesta osoitteisiisi lähetetyt MRC20- ja MRC721-tokenit ja varmistaa sitten kaiken reaaliajassa omaa solmuasi vasten. Voit myös lisätä tokenin manuaalisesti, jos tiedät sen sopimusosoitteen.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automaattinen token-tarkistus on pois päältä, joten osoitteitasi ei tarkisteta tokenien varalta. Ota se takaisin käyttöön yllä tai lisää token manuaalisesti, jos tiedät sen sopimusosoitteen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automaattinen token-tarkistus on oletuksena pois päältä. Käytä yllä olevaa Ota token-skannaus käyttöön -painiketta tai lisää token manuaalisesti, jos tiedät sen sopimusosoitteen.",
                 "HIDDENTITLE": "Piilotetut merkit",
                 "CONTEXTMENUHIDE": "Piilota tunnus",
                 "ITEMSSUFFIX": "tuote(et)",
                 "NONENUMERABLETOOLTIP": "Tämä kokoelma ei tue yksittäisten esineiden listaamista – sen sijaan näytetään, kuinka monta esinettä sinulla on.",
-                "CHECKINGENABLED": "Tarkistetaan",
-                "CHECKINGDISABLED": "Tarkastus pois päältä",
-                "CHECKINGENABLEDTOOLTIP": "Token-tarkistus on käytössä – Altitude tarkistaa säännöllisesti osoitteidesi tokenien varalta ja päivittää saldot. Poista käytöstä napsauttamalla.",
-                "CHECKINGDISABLEDTOOLTIP": "Tunnuksen tarkistus on pois päältä - napsauta ottaaksesi sen takaisin käyttöön.",
-                "CHECKINGDISABLEDNOTICE": "Automaattinen token-tarkistus on poistettu käytöstä. Osoitteitasi ei skannata tokenien varalta, eivätkä saldot päivity. Voit silti lisätä tokenin manuaalisesti."
+                "CHECKINGDISABLEDTITLE": "Tunnusskannaus on pois päältä",
+                "CHECKINGDISABLEDNOTICE": "Automaattinen token-tarkistus on oletuksena pois päältä. Osoitteitasi ei skannata tokeneiden varalta, eivätkä saldot päivity, ennen kuin otat sen käyttöön.",
+                "ENABLEBUTTON": "Ota käyttöön merkkien skannaus",
+                "ENABLECONFIRMTITLE": "Ota käyttöön token-skannaus?",
+                "ENABLECONFIRMCONTENT": "Altitude tarkistaa säännöllisesti lohkoselaimella, mitä MRC20/MRC721-tokeneja osoitteissasi on, ja tarkistaa sitten saldot ja omistajuuden suoraan omaa solmuasi vasten. Ensimmäinen tarkistus suoritetaan, kun lompakkosi on synkronoitu kokonaan, ja sen jälkeen se toistuu oletuksena 60 minuutin välein. Voit muuttaa tätä aikaväliä tai poistaa tokenien skannauksen käytöstä milloin tahansa kohdasta Asetukset > Selain."
             },
             "ADDTOKEN": {
                 "TITLE": "Lisää tunnus",

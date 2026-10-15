@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Mantenir l'últim"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Escaneig de tokens",
+                "TOKENSCANNINGENABLED": "Comprova automàticament les adreces per a tokens i actualitza els saldos",
+                "TOKENSCANNINGINFO": "Desactivat per defecte. Quan està habilitat, Altitude comprova un explorador de blocs per descobrir els tokens MRC20/MRC721 que tenen les vostres adreces i, a continuació, verifica els saldos i la propietat directament amb el vostre propi node. La majoria de moneders no contenen cap token, per la qual cosa és opcional per evitar sol·licituds innecessàries en segon pla.",
+                "TOKENSCANNINGINTERVALLABEL": "Comprovar cada (minuts)",
+                "TOKENSCANNINGINTERVALINFO": "Després d'habilitar-ho, la primera comprovació s'executa un cop la cartera s'hagi sincronitzat completament. Després d'això, Altitude torna a comprovar-ho en aquest interval.",
                 "BLOCKEXPLORERTITLE": "Explorador de blocs",
                 "BLOCKEXPLORERINFO": "El lloc s'obria en visualitzar una transacció a l'explorador de blocs (per exemple, feu clic amb el botó dret en una transacció > Visualitza a l'explorador).",
                 "TOKENDISCOVERYTITLE": "Descobriment de tokens",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mostra",
                 "EMPTYTITLE": "Encara no s'han trobat fitxes",
                 "EMPTYDETAIL": "Altitude comprova automàticament en un explorador de blocs els tokens MRC20 i MRC721 enviats a les vostres adreces i, a continuació, verifica que tot està en directe amb el vostre propi node. També podeu afegir un token manualment si coneixeu la seva adreça de contracte.",
-                "EMPTYDETAILCHECKINGDISABLED": "La comprovació automàtica de tokens està desactivada, de manera que no es comproven els tokens a les vostres adreces. Torneu-la a activar més amunt o afegiu un token manualment si en sabeu l'adreça del contracte.",
+                "EMPTYDETAILCHECKINGDISABLED": "La comprovació automàtica de tokens està desactivada per defecte. Feu servir el botó Activa l'escaneig de tokens que hi ha a sobre o afegiu un token manualment si en sabeu l'adreça del contracte.",
                 "HIDDENTITLE": "Fitxes ocultes",
                 "CONTEXTMENUHIDE": "Amaga el testimoni",
                 "ITEMSSUFFIX": "article(s)",
                 "NONENUMERABLETOOLTIP": "Aquesta col·lecció no permet llistar elements individuals; en comptes d'això, es mostren quants en tens.",
-                "CHECKINGENABLED": "Comprovació d'activació",
-                "CHECKINGDISABLED": "Marcant",
-                "CHECKINGENABLEDTOOLTIP": "La comprovació de tokens està activada: Altitude comprova periòdicament les vostres adreces per detectar tokens i actualitza els saldos. Feu clic per desactivar-la.",
-                "CHECKINGDISABLEDTOOLTIP": "La comprovació de testimonis està desactivada; feu clic per tornar-la a activar.",
-                "CHECKINGDISABLEDNOTICE": "La comprovació automàtica de tokens està desactivada. No s'estan escanejant les vostres adreces per detectar tokens i els saldos no s'actualitzaran. Tot i així, podeu afegir un token manualment."
+                "CHECKINGDISABLEDTITLE": "L'escaneig de tokens està desactivat",
+                "CHECKINGDISABLEDNOTICE": "La comprovació automàtica de tokens està desactivada per defecte. No s'escanegen les vostres adreces per detectar tokens i els saldos no s'actualitzaran fins que no l'activeu.",
+                "ENABLEBUTTON": "Activa l'escaneig de tokens",
+                "ENABLECONFIRMTITLE": "Voleu activar l'escaneig de testimonis?",
+                "ENABLECONFIRMCONTENT": "Altitude comprovarà periòdicament un explorador de blocs per veure quins tokens MRC20/MRC721 tenen les vostres adreces i, a continuació, verificarà els saldos i la propietat directament amb el vostre propi node. La primera comprovació s'executa un cop el vostre moneder s'ha sincronitzat completament i, després, es repeteix cada 60 minuts per defecte. Podeu canviar aquest interval o desactivar l'escaneig de tokens en qualsevol moment des d'Opcions > Explorador."
             },
             "ADDTOKEN": {
                 "TITLE": "Afegeix un testimoni",

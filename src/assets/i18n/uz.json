@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Oxirgisini saqlang"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Tokenlarni skanerlash",
+                "TOKENSCANNINGENABLED": "Tokenlar uchun manzillarni avtomatik ravishda tekshiring va balanslarni yangilang",
+                "TOKENSCANNINGINFO": "Sukut bo'yicha o'chirilgan. Yoqilganda, Altitude sizning manzillaringiz tomonidan ushlab turilgan MRC20/MRC721 tokenlarini aniqlash uchun blok tadqiqotchisini tekshiradi, so'ngra balanslar va egalikni to'g'ridan-to'g'ri o'z tuguningizga nisbatan tekshiradi. Ko'pgina hamyonlarda hech qanday tokenlar yo'q, shuning uchun keraksiz fon so'rovlaridan qochish uchun bu obuna hisoblanadi.",
+                "TOKENSCANNINGINTERVALLABEL": "Har (daqiqa) da tekshiring",
+                "TOKENSCANNINGINTERVALINFO": "Yoqilgandan so'ng, hamyoningiz to'liq sinxronlashtirilgandan so'ng birinchi tekshirish amalga oshiriladi. Shundan so'ng, Altitude ushbu vaqt oralig'ida qayta tekshiradi.",
                 "BLOCKEXPLORERTITLE": "Blok qidiruvchisi",
                 "BLOCKEXPLORERINFO": "Sayt blok-qidiruv panelida tranzaksiyani ko'rish paytida ochildi (masalan, tranzaksiyani sichqonchaning o'ng tugmasi bilan bosing > Explorerda ko'rish).",
                 "TOKENDISCOVERYTITLE": "Tokenlarni kashf etish",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Yashirish",
                 "EMPTYTITLE": "Hali hech qanday token topilmadi",
                 "EMPTYDETAIL": "Altitude avtomatik ravishda blok tadqiqotchisini sizning manzillaringizga yuborilgan MRC20 va MRC721 tokenlari uchun tekshiradi, so'ngra hamma narsani o'z tuguningizga nisbatan jonli ravishda tekshiradi. Agar siz uning shartnoma manzilini bilsangiz, tokenni qo'lda ham qo'shishingiz mumkin.",
-                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik tokenlarni tekshirish o'chirilgan, shuning uchun manzillaringiz tokenlar uchun tekshirilmayapti. Yuqorida uni qayta yoqing yoki agar uning shartnoma manzilini bilsangiz, tokenni qo'lda qo'shing.",
+                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik token tekshiruvi sukut bo'yicha o'chirilgan. Yuqoridagi \"Tokenni skanerlashni yoqish\" tugmasini bosing yoki agar uning shartnoma manzilini bilsangiz, tokenni qo'lda qo'shing.",
                 "HIDDENTITLE": "Yashirin tokenlar",
                 "CONTEXTMENUHIDE": "Tokenni yashirish",
                 "ITEMSSUFFIX": "buyum(lar)",
                 "NONENUMERABLETOOLTIP": "Bu toʻplam alohida buyumlarni roʻyxatlashni qoʻllab-quvvatlamaydi - buning oʻrniga sizda qanchasi borligini koʻrsatish mumkin.",
-                "CHECKINGENABLED": "Tekshiruv davom etmoqda",
-                "CHECKINGDISABLED": "Tekshiruvdan o'tish",
-                "CHECKINGENABLEDTOOLTIP": "Tokenlarni tekshirish yoqilgan - Balandlik vaqti-vaqti bilan manzillaringizni tokenlar uchun tekshiradi va balanslarni yangilaydi. O'chirish uchun bosing.",
-                "CHECKINGDISABLEDTOOLTIP": "Token tekshiruvi o'chirilgan - qayta yoqish uchun bosing.",
-                "CHECKINGDISABLEDNOTICE": "Avtomatik tokenlarni tekshirish o'chirilgan. Manzillaringiz tokenlar uchun tekshirilmayapti va balanslar yangilanmaydi. Siz hali ham tokenni qo'lda qo'shishingiz mumkin."
+                "CHECKINGDISABLEDTITLE": "Tokenni skanerlash o'chirilgan",
+                "CHECKINGDISABLEDNOTICE": "Avtomatik tokenlarni tekshirish sukut bo'yicha o'chirilgan. Manzillaringiz tokenlar uchun tekshirilmayapti va balanslar uni yoqmaguningizcha yangilanmaydi.",
+                "ENABLEBUTTON": "Token skanerlashni yoqish",
+                "ENABLECONFIRMTITLE": "Token skanerlash yoqilsinmi?",
+                "ENABLECONFIRMCONTENT": "Altitude vaqti-vaqti bilan blok-qidiruv vositasini tekshirib, manzillaringiz qaysi MRC20/MRC721 tokenlarida ekanligini ko'radi, so'ngra balanslar va egalikni to'g'ridan-to'g'ri o'z tuguningizga nisbatan tekshiradi. Birinchi tekshirish hamyoningiz to'liq sinxronlashtirilgandan so'ng amalga oshiriladi va shundan so'ng u har 60 daqiqada sukut bo'yicha takrorlanadi. Siz bu oraliqni istalgan vaqtda Variantlar > Explorer menyusidan o'zgartirishingiz yoki tokenlarni skanerlashni o'chirib qo'yishingiz mumkin."
             },
             "ADDTOKEN": {
                 "TITLE": "Token qo'shish",

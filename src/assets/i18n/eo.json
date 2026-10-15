@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Konservu laste"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Ĵetona Skanado",
+                "TOKENSCANNINGENABLED": "Aŭtomate kontroli adresojn por ĵetonoj kaj refreŝigi saldojn",
+                "TOKENSCANNINGINFO": "Malŝaltita defaŭlte. Kiam ebligita, Altitude kontrolas blokan esplorilon por malkovri MRC20/MRC721-ĵetonojn tenatajn de viaj adresoj, poste kontrolas saldojn kaj proprieton rekte kontraŭ via propra nodo. Plej multaj monujoj ne tenas iujn ajn ĵetonojn, do ĉi tio estas aliĝebla por eviti nenecesajn fonajn petojn.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrolu ĉiujn (minutojn)",
+                "TOKENSCANNINGINTERVALINFO": "Post ebligado, la unua kontrolo komenciĝas kiam via monujo plene sinkroniĝis. Post tio, Altitude rekontrolas je ĉi tiu intervalo.",
                 "BLOCKEXPLORERTITLE": "Bloka Esplorilo",
                 "BLOCKEXPLORERINFO": "La retejo malfermiĝis dum rigardado de transakcio en la bloka esplorilo (ekz. dekstre alklaku transakcion > Vidi en la esplorilo).",
                 "TOKENDISCOVERYTITLE": "Ĵetona Malkovro",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Malkaŝi",
                 "EMPTYTITLE": "Neniuj ĵetonoj trovitaj ankoraŭ",
                 "EMPTYDETAIL": "Altitude aŭtomate kontrolas blokan esplorilon por MRC20 kaj MRC721 ĵetonoj senditaj al viaj adresoj, poste kontrolas ĉion enrete kontraŭ via propra nodo. Vi ankaŭ povas aldoni ĵetonon permane se vi scias ĝian kontraktan adreson.",
-                "EMPTYDETAILCHECKINGDISABLED": "Aŭtomata ĵetonkontrolo estas malŝaltita, do viaj adresoj ne estas kontrolataj por ĵetonoj. Reŝaltu ĝin supre, aŭ aldonu ĵetonon permane se vi scias ĝian kontraktan adreson.",
+                "EMPTYDETAILCHECKINGDISABLED": "Aŭtomata ĵetonkontrolado estas malŝaltita defaŭlte. Uzu la butonon \"Ebligi Ĵetonskanadon\" supre, aŭ aldonu ĵetonon permane se vi scias ĝian kontraktan adreson.",
                 "HIDDENTITLE": "Kaŝitaj Ĵetonoj",
                 "CONTEXTMENUHIDE": "Kaŝi Ĵetonon",
                 "ITEMSSUFFIX": "ero(j)",
                 "NONENUMERABLETOOLTIP": "Ĉi tiu kolekto ne subtenas listigon de individuaj eroj - anstataŭe montron de kiom multajn vi posedas.",
-                "CHECKINGENABLED": "Kontrolado",
-                "CHECKINGDISABLED": "Markante For",
-                "CHECKINGENABLEDTOOLTIP": "Ĵetonkontrolado estas ŝaltita - Altitude periode kontrolas viajn adresojn por ĵetonoj kaj refreŝigas saldojn. Alklaku por malŝalti.",
-                "CHECKINGDISABLEDTOOLTIP": "Ĵetonkontrolado estas malŝaltita - klaku por reŝalti.",
-                "CHECKINGDISABLEDNOTICE": "Aŭtomata ĵetonkontrolo estas malŝaltita. Viaj adresoj ne estas skanitaj por ĵetonoj kaj saldoj ne ĝisdatiĝos. Vi ankoraŭ povas aldoni ĵetonon permane."
+                "CHECKINGDISABLEDTITLE": "Ĵetona Skanado Estas Malŝaltita",
+                "CHECKINGDISABLEDNOTICE": "Aŭtomata ĵetonkontrolo estas malŝaltita defaŭlte. Viaj adresoj ne estas skanitaj por ĵetonoj kaj saldoj ne ĝisdatiĝos ĝis vi ŝaltos ĝin.",
+                "ENABLEBUTTON": "Ebligi Ĵetonan Skanadon",
+                "ENABLECONFIRMTITLE": "Ĉu ebligi Ĵeton-Skanadon?",
+                "ENABLECONFIRMCONTENT": "Altitude periode kontrolos blokan esplorilon por vidi, kiujn MRC20/MRC721-ĵetonojn viaj adresoj tenas, poste kontrolos saldojn kaj proprieton rekte kontraŭ via propra nodo. La unua kontrolo funkcias post kiam via monujo plene sinkroniĝis, kaj post tio ĝi ripetas ĉiujn 60 minutojn defaŭlte. Vi povas ŝanĝi ĉi tiun intervalon, aŭ malŝalti ĵetonan skanadon, iam ajn el Opcioj > Esplorilo."
             },
             "ADDTOKEN": {
                 "TITLE": "Aldoni Ĵetonon",

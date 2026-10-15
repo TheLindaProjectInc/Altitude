@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Bewaar als laatste"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token scannen",
+                "TOKENSCANNINGENABLED": "Controleer automatisch adressen op tokens en vernieuw saldi.",
+                "TOKENSCANNINGINFO": "Standaard uitgeschakeld. Indien ingeschakeld, controleert Altitude een block explorer om MRC20/MRC721-tokens te vinden die door uw adressen worden aangehouden. Vervolgens worden de saldi en het eigendom rechtstreeks geverifieerd via uw eigen node. De meeste wallets bevatten geen tokens, dus deze functie is optioneel om onnodige achtergrondverzoeken te voorkomen.",
+                "TOKENSCANNINGINTERVALLABEL": "Controleer elke (minuten)",
+                "TOKENSCANNINGINTERVALINFO": "Na inschakeling wordt de eerste controle uitgevoerd zodra uw wallet volledig is gesynchroniseerd. Daarna voert Altitude met dit interval een nieuwe controle uit.",
                 "BLOCKEXPLORERTITLE": "Blokkenverkenner",
                 "BLOCKEXPLORERINFO": "De site werd geopend bij het bekijken van een transactie in de block explorer (bijvoorbeeld door met de rechtermuisknop op een transactie te klikken > 'Bekijken in Explorer').",
                 "TOKENDISCOVERYTITLE": "Token Discovery",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Weergeven",
                 "EMPTYTITLE": "Nog geen tokens gevonden",
                 "EMPTYDETAIL": "Altitude controleert automatisch een block explorer op MRC20- en MRC721-tokens die naar uw adressen zijn verzonden en verifieert vervolgens alles live met uw eigen node. U kunt ook handmatig een token toevoegen als u het contractadres ervan weet.",
-                "EMPTYDETAILCHECKINGDISABLED": "De automatische tokencontrole is uitgeschakeld, waardoor uw adressen niet worden gecontroleerd op tokens. Schakel deze functie hierboven weer in, of voeg handmatig een token toe als u het contractadres kent.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatische tokencontrole is standaard uitgeschakeld. Gebruik de knop 'Tokenscannen inschakelen' hierboven, of voeg handmatig een token toe als u het contractadres kent.",
                 "HIDDENTITLE": "Verborgen tokens",
                 "CONTEXTMENUHIDE": "Token verbergen",
                 "ITEMSSUFFIX": "artikel(en)",
                 "NONENUMERABLETOOLTIP": "Deze collectie ondersteunt geen weergave van individuele items, maar toont in plaats daarvan het aantal items dat u bezit.",
-                "CHECKINGENABLED": "Controleren",
-                "CHECKINGDISABLED": "Afvinken",
-                "CHECKINGENABLEDTOOLTIP": "Tokencontrole is ingeschakeld - Altitude controleert periodiek uw adressen op tokens en vernieuwt uw saldo. Klik om dit uit te schakelen.",
-                "CHECKINGDISABLEDTOOLTIP": "Tokencontrole is uitgeschakeld - klik om deze weer in te schakelen.",
-                "CHECKINGDISABLEDNOTICE": "De automatische tokencontrole is uitgeschakeld. Uw adressen worden niet meer gescand op tokens en uw saldo wordt niet bijgewerkt. U kunt nog steeds handmatig een token toevoegen."
+                "CHECKINGDISABLEDTITLE": "Tokenscanning is uitgeschakeld",
+                "CHECKINGDISABLEDNOTICE": "Automatische tokencontrole is standaard uitgeschakeld. Uw adressen worden niet gescand op tokens en saldi worden niet bijgewerkt totdat u deze functie inschakelt.",
+                "ENABLEBUTTON": "Tokenscannen inschakelen",
+                "ENABLECONFIRMTITLE": "Tokenscannen inschakelen?",
+                "ENABLECONFIRMCONTENT": "Altitude controleert periodiek een block explorer om te zien welke MRC20/MRC721-tokens uw adressen bezitten, en verifieert vervolgens de saldi en het eigendom rechtstreeks met uw eigen node. De eerste controle vindt plaats zodra uw wallet volledig is gesynchroniseerd, en daarna wordt deze standaard elke 60 minuten herhaald. U kunt dit interval op elk gewenst moment wijzigen of het scannen naar tokens weer uitschakelen via Opties > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Token toevoegen",

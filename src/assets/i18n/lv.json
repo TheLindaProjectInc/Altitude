@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Paturēt pēdējo"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Žetonu skenēšana",
+                "TOKENSCANNINGENABLED": "Automātiski pārbaudīt adreses, vai nav žetonu, un atjaunināt atlikumus",
+                "TOKENSCANNINGINFO": "Pēc noklusējuma izslēgts. Ja šī opcija ir iespējota, Altitude pārbauda bloku pārlūku, lai atrastu jūsu adresēs esošos MRC20/MRC721 žetonus, un pēc tam pārbauda atlikumus un īpašumtiesības tieši, salīdzinot ar jūsu mezglu. Lielākajā daļā maku nav žetonu, tāpēc šī ir izvēles iespēja, lai izvairītos no nevajadzīgiem fona pieprasījumiem.",
+                "TOKENSCANNINGINTERVALLABEL": "Pārbaudiet ik pēc (minūtēm)",
+                "TOKENSCANNINGINTERVALINFO": "Pēc iespējošanas pirmā pārbaude tiek veikta, kad jūsu maks ir pilnībā sinhronizēts. Pēc tam Altitude atkārtoti pārbauda šajā intervālā.",
                 "BLOCKEXPLORERTITLE": "Bloku pārlūks",
                 "BLOCKEXPLORERINFO": "Vietne tika atvērta, skatot darījumu bloku pārlūkā (piemēram, ar peles labo pogu noklikšķiniet uz darījuma > Skatīt pārlūkā).",
                 "TOKENDISCOVERYTITLE": "Žetonu atklāšana",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Parādīt slēpto",
                 "EMPTYTITLE": "Vēl nav atrasti žetoni",
                 "EMPTYDETAIL": "Altitude automātiski pārbauda bloku pārlūku, vai uz jūsu adresēm nosūtītie MRC20 un MRC721 tokeni ir bloķēti, un pēc tam visu tiešsaistē salīdzina ar jūsu mezglu. Tokenu var pievienot arī manuāli, ja zināt tā līguma adresi.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automātiskā žetonu pārbaude ir izslēgta, tāpēc jūsu adreses netiek pārbaudītas, vai tajās ir žetoni. Ieslēdziet to atpakaļ iepriekš norādītajā veidā vai pievienojiet žetonu manuāli, ja zināt tā līguma adresi.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automātiskā tokenu pārbaude pēc noklusējuma ir izslēgta. Izmantojiet iepriekš redzamo pogu “Iespējot tokenu skenēšanu” vai pievienojiet tokenu manuāli, ja zināt tā līguma adresi.",
                 "HIDDENTITLE": "Slēptie žetoni",
                 "CONTEXTMENUHIDE": "Slēpt žetonu",
                 "ITEMSSUFFIX": "prece(-es)",
                 "NONENUMERABLETOOLTIP": "Šajā kolekcijā netiek atbalstīta atsevišķu priekšmetu uzskaitīšana — tā vietā tiek rādīts, cik jums pieder.",
-                "CHECKINGENABLED": "Pārbaude notiek",
-                "CHECKINGDISABLED": "Pārbaude",
-                "CHECKINGENABLEDTOOLTIP": "Žetonu pārbaude ir ieslēgta — Altitude periodiski pārbauda jūsu adreses, vai nav žetonu, un atjaunina atlikumus. Noklikšķiniet, lai izslēgtu.",
-                "CHECKINGDISABLEDTOOLTIP": "Žetonu pārbaude ir izslēgta — noklikšķiniet, lai to atkal ieslēgtu.",
-                "CHECKINGDISABLEDNOTICE": "Automātiskā žetonu pārbaude ir izslēgta. Jūsu adreses netiek skenētas, lai meklētu žetonus, un atlikumi netiks atjaunināti. Jūs joprojām varat pievienot žetonu manuāli."
+                "CHECKINGDISABLEDTITLE": "Žetonu skenēšana ir izslēgta",
+                "CHECKINGDISABLEDNOTICE": "Automātiskā žetonu pārbaude pēc noklusējuma ir izslēgta. Jūsu adreses netiek skenētas, lai meklētu žetonus, un atlikumi netiks atjaunināti, kamēr to neieslēgsiet.",
+                "ENABLEBUTTON": "Iespējot žetonu skenēšanu",
+                "ENABLECONFIRMTITLE": "Vai iespējot žetonu skenēšanu?",
+                "ENABLECONFIRMCONTENT": "Altitude periodiski pārbaudīs bloku pārlūku, lai redzētu, kuri MRC20/MRC721 žetoni atrodas jūsu adresēs, un pēc tam tieši salīdzinās atlikumus un īpašumtiesības ar jūsu mezglu. Pirmā pārbaude tiek veikta, kad jūsu maks ir pilnībā sinhronizēts, un pēc tam tā pēc noklusējuma atkārtojas ik pēc 60 minūtēm. Jūs varat mainīt šo intervālu vai izslēgt žetonu skenēšanu jebkurā laikā sadaļā Opcijas > Pārlūks."
             },
             "ADDTOKEN": {
                 "TITLE": "Pievienot žetonu",

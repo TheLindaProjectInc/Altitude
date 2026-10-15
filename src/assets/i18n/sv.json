@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Behåll sist"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Tokenskanning",
+                "TOKENSCANNINGENABLED": "Kontrollera automatiskt adresser för tokens och uppdatera saldon",
+                "TOKENSCANNINGINFO": "Av som standard. När det är aktiverat kontrollerar Altitude en blockutforskare för att upptäcka MRC20/MRC721-tokens som innehas av dina adresser och verifierar sedan saldon och ägarskap direkt mot din egen nod. De flesta plånböcker innehåller inga tokens, så detta är ett valfritt alternativ för att undvika onödiga bakgrundsförfrågningar.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrollera varje (minut)",
+                "TOKENSCANNINGINTERVALINFO": "Efter aktivering körs den första kontrollen när din plånbok har synkroniserats helt. Därefter gör Altitude en ny kontroll under detta intervall.",
                 "BLOCKEXPLORERTITLE": "Blockutforskaren",
                 "BLOCKEXPLORERINFO": "Webbplatsen öppnades när en transaktion visades i blockutforskaren (t.ex. högerklicka på en transaktion > Visa i Utforskaren).",
                 "TOKENDISCOVERYTITLE": "Tokenupptäckt",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Visa",
                 "EMPTYTITLE": "Inga tokens hittades ännu",
                 "EMPTYDETAIL": "Altitude kontrollerar automatiskt en blockutforskare för MRC20- och MRC721-tokens som skickats till dina adresser och verifierar sedan allt live mot din egen nod. Du kan också lägga till en token manuellt om du känner till dess kontraktsadress.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokenkontroll är avstängd, så dina adresser kontrolleras inte för tokens. Aktivera det igen ovan, eller lägg till en token manuellt om du vet dess avtalsadress.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokenkontroll är avstängd som standard. Använd knappen Aktivera tokenskanning ovan, eller lägg till en token manuellt om du vet dess kontraktsadress.",
                 "HIDDENTITLE": "Dolda tokens",
                 "CONTEXTMENUHIDE": "Dölj token",
                 "ITEMSSUFFIX": "föremål(er)",
                 "NONENUMERABLETOOLTIP": "Den här samlingen har inte stöd för att lista enskilda objekt – istället visas hur många du innehar.",
-                "CHECKINGENABLED": "Kontrollerar",
-                "CHECKINGDISABLED": "Avbocka",
-                "CHECKINGENABLEDTOOLTIP": "Tokenkontroll är på – Altitude kontrollerar regelbundet dina adresser för tokens och uppdaterar saldon. Klicka för att stänga av.",
-                "CHECKINGDISABLEDTOOLTIP": "Tokenkontroll är avstängd – klicka för att aktivera den igen.",
-                "CHECKINGDISABLEDNOTICE": "Automatisk tokenkontroll är avstängd. Dina adresser genomsöks inte efter tokens och saldon uppdateras inte. Du kan fortfarande lägga till en token manuellt."
+                "CHECKINGDISABLEDTITLE": "Tokenskanning är avstängd",
+                "CHECKINGDISABLEDNOTICE": "Automatisk tokenkontroll är avstängd som standard. Dina adresser genomsöks inte efter tokens och saldon uppdateras inte förrän du aktiverar det.",
+                "ENABLEBUTTON": "Aktivera tokenskanning",
+                "ENABLECONFIRMTITLE": "Aktivera tokenskanning?",
+                "ENABLECONFIRMCONTENT": "Altitude kommer regelbundet att kontrollera en blockutforskare för att se vilka MRC20/MRC721-tokens dina adresser innehåller, och sedan verifiera saldon och ägarskap direkt mot din egen nod. Den första kontrollen körs när din plånbok har synkroniserats helt, och därefter upprepas den som standard var 60:e minut. Du kan ändra detta intervall, eller stänga av tokenskanning igen, när som helst från Alternativ > Utforskare."
             },
             "ADDTOKEN": {
                 "TITLE": "Lägg till token",

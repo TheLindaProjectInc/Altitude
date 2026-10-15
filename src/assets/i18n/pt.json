@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Guarde por último"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Leitura de tokens",
+                "TOKENSCANNINGENABLED": "Verificar automaticamente os endereços em busca de tokens e atualizar os saldos.",
+                "TOKENSCANNINGINFO": "Desativado por padrão. Quando ativado, o Altitude consulta um explorador de blocos para descobrir tokens MRC20/MRC721 mantidos por seus endereços e, em seguida, verifica os saldos e a propriedade diretamente em seu próprio nó. A maioria das carteiras não armazena tokens, portanto, essa opção é opcional para evitar solicitações desnecessárias em segundo plano.",
+                "TOKENSCANNINGINTERVALLABEL": "Verifique a cada (minutos)",
+                "TOKENSCANNINGINTERVALINFO": "Após a ativação, a primeira verificação é executada assim que sua carteira estiver totalmente sincronizada. Depois disso, o Altitude realiza novas verificações nesse intervalo.",
                 "BLOCKEXPLORERTITLE": "Explorador de Blocos",
                 "BLOCKEXPLORERINFO": "O site foi aberto ao visualizar uma transação no explorador de blocos (por exemplo, clicando com o botão direito do mouse em uma transação > Exibir no Explorador).",
                 "TOKENDISCOVERYTITLE": "Descoberta de Tokens",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mostrar",
                 "EMPTYTITLE": "Nenhum token encontrado ainda",
                 "EMPTYDETAIL": "O Altitude verifica automaticamente um explorador de blocos em busca de tokens MRC20 e MRC721 enviados para seus endereços e, em seguida, verifica tudo em tempo real em relação ao seu próprio nó. Você também pode adicionar um token manualmente se souber o endereço do contrato.",
-                "EMPTYDETAILCHECKINGDISABLED": "A verificação automática de tokens está desativada, portanto, seus endereços não estão sendo verificados em busca de tokens. Ative-a novamente acima ou adicione um token manualmente se souber o endereço do contrato.",
+                "EMPTYDETAILCHECKINGDISABLED": "A verificação automática de tokens está desativada por padrão. Use o botão Ativar verificação de tokens acima ou adicione um token manualmente se souber o endereço do contrato.",
                 "HIDDENTITLE": "Fichas Ocultas",
                 "CONTEXTMENUHIDE": "Ocultar token",
                 "ITEMSSUFFIX": "Unid)",
                 "NONENUMERABLETOOLTIP": "Esta coleção não permite listar itens individuais; em vez disso, mostra quantos itens você possui.",
-                "CHECKINGENABLED": "Verificando",
-                "CHECKINGDISABLED": "Marcando como concluído",
-                "CHECKINGENABLEDTOOLTIP": "A verificação de tokens está ativada. O Altitude verifica periodicamente seus endereços em busca de tokens e atualiza os saldos. Clique para desativar.",
-                "CHECKINGDISABLEDTOOLTIP": "A verificação de tokens está desativada - clique para reativá-la.",
-                "CHECKINGDISABLEDNOTICE": "A verificação automática de tokens está desativada. Seus endereços não serão verificados em busca de tokens e os saldos não serão atualizados. Você ainda pode adicionar um token manualmente."
+                "CHECKINGDISABLEDTITLE": "A leitura de tokens está desativada.",
+                "CHECKINGDISABLEDNOTICE": "A verificação automática de tokens está desativada por padrão. Seus endereços não serão verificados em busca de tokens e os saldos não serão atualizados até que você a ative.",
+                "ENABLEBUTTON": "Ativar leitura de token",
+                "ENABLECONFIRMTITLE": "Ativar a leitura de tokens?",
+                "ENABLECONFIRMCONTENT": "O Altitude verificará periodicamente um explorador de blocos para ver quais tokens MRC20/MRC721 seus endereços possuem e, em seguida, verificará os saldos e a propriedade diretamente em seu próprio nó. A primeira verificação é executada assim que sua carteira estiver totalmente sincronizada e, depois disso, ela se repete a cada 60 minutos por padrão. Você pode alterar esse intervalo ou desativar a verificação de tokens a qualquer momento em Opções > Explorador."
             },
             "ADDTOKEN": {
                 "TITLE": "Adicionar token",

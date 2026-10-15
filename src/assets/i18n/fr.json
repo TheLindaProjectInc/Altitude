@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Conservez le dernier"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Numérisation des jetons",
+                "TOKENSCANNINGENABLED": "Vérification automatique des adresses pour les jetons et mise à jour des soldes",
+                "TOKENSCANNINGINFO": "Désactivé par défaut. Lorsqu'il est activé, Altitude consulte un explorateur de blocs pour détecter les jetons MRC20/MRC721 détenus par vos adresses, puis vérifie les soldes et la propriété directement auprès de votre nœud. La plupart des portefeuilles ne contiennent aucun jeton ; l'activation de cette option permet donc d'éviter les requêtes en arrière-plan inutiles.",
+                "TOKENSCANNINGINTERVALLABEL": "Vérifier toutes les (minutes)",
+                "TOKENSCANNINGINTERVALINFO": "Une fois la fonctionnalité activée, une première vérification est effectuée lorsque votre portefeuille est entièrement synchronisé. Ensuite, Altitude effectue des vérifications de suivi à intervalles réguliers.",
                 "BLOCKEXPLORERTITLE": "Explorateur de blocs",
                 "BLOCKEXPLORERINFO": "Le site s'ouvrait lors de la consultation d'une transaction dans l'explorateur de blocs (par exemple, clic droit sur une transaction > Afficher dans l'explorateur).",
                 "TOKENDISCOVERYTITLE": "Découverte de jetons",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Démasquer",
                 "EMPTYTITLE": "Aucun jeton trouvé pour le moment",
                 "EMPTYDETAIL": "Altitude vérifie automatiquement la présence de tokens MRC20 et MRC721 envoyés à vos adresses dans un explorateur de blocs, puis effectue une vérification en direct auprès de votre nœud. Vous pouvez également ajouter un token manuellement si vous connaissez l'adresse de son contrat.",
-                "EMPTYDETAILCHECKINGDISABLED": "La vérification automatique des jetons est désactivée ; vos adresses ne sont donc pas analysées. Réactivez-la ci-dessus ou ajoutez un jeton manuellement si vous connaissez son adresse de contrat.",
+                "EMPTYDETAILCHECKINGDISABLED": "La vérification automatique des jetons est désactivée par défaut. Utilisez le bouton « Activer l’analyse des jetons » ci-dessus ou ajoutez un jeton manuellement si vous connaissez son adresse de contrat.",
                 "HIDDENTITLE": "Jetons cachés",
                 "CONTEXTMENUHIDE": "Masquer le jeton",
                 "ITEMSSUFFIX": "articles)",
                 "NONENUMERABLETOOLTIP": "Cette collection ne permet pas d'afficher les articles individuellement ; elle indique plutôt la quantité que vous possédez.",
-                "CHECKINGENABLED": "Vérification",
-                "CHECKINGDISABLED": "Cocher",
-                "CHECKINGENABLEDTOOLTIP": "La vérification des jetons est activée : Altitude vérifie régulièrement vos adresses pour les jetons et met à jour les soldes. Cliquez pour désactiver.",
-                "CHECKINGDISABLEDTOOLTIP": "La vérification des jetons est désactivée - cliquez pour la réactiver.",
-                "CHECKINGDISABLEDNOTICE": "La vérification automatique des jetons est désactivée. Vos adresses ne sont pas analysées à la recherche de jetons et vos soldes ne seront pas mis à jour. Vous pouvez toujours ajouter un jeton manuellement."
+                "CHECKINGDISABLEDTITLE": "La lecture des jetons est désactivée.",
+                "CHECKINGDISABLEDNOTICE": "La vérification automatique des jetons est désactivée par défaut. Vos adresses ne sont pas analysées à la recherche de jetons et vos soldes ne seront pas mis à jour tant que vous ne l'aurez pas activée.",
+                "ENABLEBUTTON": "Activer la numérisation des jetons",
+                "ENABLECONFIRMTITLE": "Activer la numérisation des jetons ?",
+                "ENABLECONFIRMCONTENT": "Altitude vérifie régulièrement un explorateur de blocs pour identifier les jetons MRC20/MRC721 détenus par vos adresses, puis vérifie les soldes et la propriété directement auprès de votre nœud. La première vérification a lieu une fois votre portefeuille entièrement synchronisé, puis elle se répète toutes les 60 minutes par défaut. Vous pouvez modifier cet intervalle ou désactiver l'analyse des jetons à tout moment dans Options > Explorateur."
             },
             "ADDTOKEN": {
                 "TITLE": "Ajouter un jeton",

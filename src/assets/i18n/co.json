@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Mantene l'ultimu"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Scansione di gettoni",
+                "TOKENSCANNINGENABLED": "Verificate automaticamente l'indirizzi per i gettoni è aghjurnate i saldi",
+                "TOKENSCANNINGINFO": "Disattivatu per difettu. Quandu hè attivatu, Altitude verifica un esploratore di blocchi per scopre i gettoni MRC20/MRC721 detenuti da i vostri indirizzi, dopu verifica i saldi è a pruprietà direttamente contr'à u vostru propiu nodu. A maiò parte di i portafogli ùn detenenu micca gettoni, dunque questu hè opt-in per evità richieste in background innecessarie.",
+                "TOKENSCANNINGINTERVALLABEL": "Verificate ogni (minuti)",
+                "TOKENSCANNINGINTERVALINFO": "Dopu l'attivazione, a prima verificazione si svolge una volta chì u vostru portafogliu hè cumpletamente sincronizatu. Dopu à quessa, Altitude verifica di novu in questu intervallu.",
                 "BLOCKEXPLORERTITLE": "Esploratore di Blocchi",
                 "BLOCKEXPLORERINFO": "U situ s'hè apertu quandu si visualizzava una transazzione nantu à l'esploratore di blocchi (per esempiu, cliccate cù u dirittu nantu à una transazzione> Vede nantu à l'Esploratore).",
                 "TOKENDISCOVERYTITLE": "Scuperta di Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mustrà",
                 "EMPTYTITLE": "Nisun gettu trovu ancu",
                 "EMPTYDETAIL": "Altitude verifica automaticamente un esploratore di blocchi per i gettoni MRC20 è MRC721 mandati à i vostri indirizzi, dopu verifica tuttu in diretta contr'à u vostru propiu nodu. Pudete ancu aghjunghje un gettoni manualmente se cunniscite u so indirizzu di cuntrattu.",
-                "EMPTYDETAILCHECKINGDISABLED": "A verificazione automatica di i gettoni hè disattivata, dunque i vostri indirizzi ùn sò micca verificati per i gettoni. Riattivatela sopra, o aghjunghjite un gettone manualmente se cunniscite u so indirizzu di cuntrattu.",
+                "EMPTYDETAILCHECKINGDISABLED": "A verificazione automatica di i token hè disattivata per difettu. Aduprate u buttone Attivà a scansione di i token sopra, o aghjunghjite un token manualmente se cunniscite u so indirizzu di cuntrattu.",
                 "HIDDENTITLE": "Gettoni nascosti",
                 "CONTEXTMENUHIDE": "Ammuccià u gettone",
                 "ITEMSSUFFIX": "articulu(i)",
                 "NONENUMERABLETOOLTIP": "Sta cullezzione ùn permette micca di listà l'articuli individuali - mustrà invece quanti ne tenete.",
-                "CHECKINGENABLED": "Verificazione in corso",
-                "CHECKINGDISABLED": "Verificazione",
-                "CHECKINGENABLEDTOOLTIP": "A verificazione di i gettoni hè attivata - Altitude verifica periodicamente i vostri indirizzi per i gettoni è aghjurnà i saldi. Cliccate per disattivà.",
-                "CHECKINGDISABLEDTOOLTIP": "A verificazione di i gettoni hè disattivata - cliccate per riattivalla.",
-                "CHECKINGDISABLEDNOTICE": "A verificazione automatica di i gettoni hè disattivata. I vostri indirizzi ùn sò micca scansionati per i gettoni è i saldi ùn saranu micca aghjurnati. Pudete sempre aghjunghje un gettone manualmente."
+                "CHECKINGDISABLEDTITLE": "A scansione di gettoni hè disattivata",
+                "CHECKINGDISABLEDNOTICE": "A verificazione automatica di gettoni hè disattivata per difettu. I vostri indirizzi ùn sò micca scansionati per i gettoni è i saldi ùn saranu micca aghjurnati finchè ùn l'avete micca attivata.",
+                "ENABLEBUTTON": "Attivà a scansione di gettoni",
+                "ENABLECONFIRMTITLE": "Attivà a scansione di gettoni?",
+                "ENABLECONFIRMCONTENT": "Altitude verificarà periodicamente un esploratore di blocchi per vede quali gettoni MRC20/MRC721 sò inclusi in i vostri indirizzi, dopu verificarà i saldi è a pruprietà direttamente contr'à u vostru propiu nodu. A prima verificazione si esegue una volta chì u vostru portafogliu hè cumpletamente sincronizatu, è dopu si ripete ogni 60 minuti per difettu. Pudete cambià questu intervallu, o disattivà a scansione di gettoni, in ogni mumentu da Opzioni > Esploratore."
             },
             "ADDTOKEN": {
                 "TITLE": "Aghjunghje un gettone",

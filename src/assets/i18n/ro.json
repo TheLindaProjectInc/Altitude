@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Păstrează ultimul"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Scanare token",
+                "TOKENSCANNINGENABLED": "Verificați automat adresele pentru token-uri și actualizați soldurile",
+                "TOKENSCANNINGINFO": "Dezactivat în mod implicit. Când este activat, Altitude verifică un explorator de blocuri pentru a descoperi token-urile MRC20/MRC721 deținute de adresele dvs., apoi verifică soldurile și proprietatea direct în raport cu propriul nod. Majoritatea portofelelor nu dețin token-uri, așa că această opțiune este optată pentru a evita solicitările inutile în fundal.",
+                "TOKENSCANNINGINTERVALLABEL": "Verificați la fiecare (minute)",
+                "TOKENSCANNINGINTERVALINFO": "După activare, prima verificare se execută după ce portofelul s-a sincronizat complet. După aceea, Altitude verifică din nou la acest interval.",
                 "BLOCKEXPLORERTITLE": "Explorator de blocuri",
                 "BLOCKEXPLORERINFO": "Site-ul s-a deschis la vizualizarea unei tranzacții în exploratorul de blocuri (de exemplu, faceți clic dreapta pe o tranzacție > Vizualizare în Explorer).",
                 "TOKENDISCOVERYTITLE": "Descoperirea jetoanelor",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Afișează",
                 "EMPTYTITLE": "Nu s-au găsit încă token-uri",
                 "EMPTYDETAIL": "Altitude verifică automat un explorator de blocuri pentru token-urile MRC20 și MRC721 trimise la adresele dvs., apoi verifică totul în timp real în raport cu propriul nod. De asemenea, puteți adăuga un token manual dacă cunoașteți adresa contractului său.",
-                "EMPTYDETAILCHECKINGDISABLED": "Verificarea automată a tokenurilor este dezactivată, prin urmare adresele dvs. nu sunt verificate pentru tokenuri. Reactivați-o mai sus sau adăugați un token manual dacă îi cunoașteți adresa contractuală.",
+                "EMPTYDETAILCHECKINGDISABLED": "Verificarea automată a tokenurilor este dezactivată în mod implicit. Folosește butonul Activează scanarea tokenurilor de mai sus sau adaugă manual un token dacă îi cunoști adresa contractului.",
                 "HIDDENTITLE": "Jetoane ascunse",
                 "CONTEXTMENUHIDE": "Ascunde jetonul",
                 "ITEMSSUFFIX": "articol(e)",
                 "NONENUMERABLETOOLTIP": "Această colecție nu permite listarea articolelor individuale - în schimb, afișarea numărului de articole pe care le dețineți.",
-                "CHECKINGENABLED": "Verificare",
-                "CHECKINGDISABLED": "Bifare",
-                "CHECKINGENABLEDTOOLTIP": "Verificarea tokenurilor este activată - Altitude verifică periodic adresele dvs. pentru tokenuri și actualizează soldurile. Faceți clic pentru a dezactiva.",
-                "CHECKINGDISABLEDTOOLTIP": "Verificarea jetoanelor este dezactivată - faceți clic pentru a o reactiva.",
-                "CHECKINGDISABLEDNOTICE": "Verificarea automată a jetoanelor este dezactivată. Adresele dvs. nu sunt scanate pentru jetoane, iar soldurile nu se vor actualiza. Puteți adăuga în continuare un jeton manual."
+                "CHECKINGDISABLEDTITLE": "Scanarea jetoanelor este dezactivată",
+                "CHECKINGDISABLEDNOTICE": "Verificarea automată a tokenurilor este dezactivată în mod implicit. Adresele dvs. nu sunt scanate pentru tokenuri, iar soldurile nu se vor actualiza până nu o activați.",
+                "ENABLEBUTTON": "Activați scanarea tokenurilor",
+                "ENABLECONFIRMTITLE": "Activați scanarea tokenurilor?",
+                "ENABLECONFIRMCONTENT": "Altitude va verifica periodic un explorator de blocuri pentru a vedea ce token-uri MRC20/MRC721 dețin adresele dvs., apoi va verifica soldurile și proprietatea direct în raport cu propriul nod. Prima verificare se execută după ce portofelul dvs. s-a sincronizat complet, iar după aceea se repetă la fiecare 60 de minute în mod implicit. Puteți modifica acest interval sau puteți dezactiva scanarea token-urilor oricând din Opțiuni > Explorator."
             },
             "ADDTOKEN": {
                 "TITLE": "Adăugați un token",

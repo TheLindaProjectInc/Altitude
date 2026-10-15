@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Hoia viimane"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Tokeni skaneerimine",
+                "TOKENSCANNINGENABLED": "Kontrollige aadresse automaatselt tokenite osas ja värskendage saldosid",
+                "TOKENSCANNINGINFO": "Vaikimisi välja lülitatud. Kui see on lubatud, kontrollib Altitude plokkide uurijat, et leida teie aadresside all olevaid MRC20/MRC721 tokeneid, seejärel kinnitab saldosid ja omandiõigust otse teie enda sõlme suhtes. Enamik rahakotte ei hoia ühtegi tokenit, seega on see valik, et vältida tarbetuid taustapäringuid.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrolli iga (minutite) järel",
+                "TOKENSCANNINGINTERVALINFO": "Pärast lubamist tehakse esimene kontroll siis, kui teie rahakott on täielikult sünkroonitud. Seejärel kontrollib Altitude uuesti sellel intervallil.",
                 "BLOCKEXPLORERTITLE": "Blokeeri uurija",
                 "BLOCKEXPLORERINFO": "Sait avanes tehingu vaatamisel plokkide uurijas (nt paremklõpsake tehingul > Kuva uurijas).",
                 "TOKENDISCOVERYTITLE": "Tokeni avastamine",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Näita uuesti",
                 "EMPTYTITLE": "Tokeneid pole veel leitud",
                 "EMPTYDETAIL": "Altitude kontrollib automaatselt plokkide uurijat teie aadressidele saadetud MRC20 ja MRC721 tokenite suhtes ning seejärel võrdleb kõike reaalajas teie enda sõlmega. Kui teate tokeni lepingu aadressi, saate selle ka käsitsi lisada.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automaatne tokenite kontrollimine on välja lülitatud, seega teie aadresse tokenite suhtes ei kontrollita. Lülitage see ülalpool uuesti sisse või lisage token käsitsi, kui teate selle lepingu aadressi.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automaatne žetoonide kontrollimine on vaikimisi välja lülitatud. Kasutage ülalolevat nuppu „Luba žetoonide skannimine“ või lisage žetoon käsitsi, kui teate selle lepingu aadressi.",
                 "HIDDENTITLE": "Varjatud märgid",
                 "CONTEXTMENUHIDE": "Peida märk",
                 "ITEMSSUFFIX": "ese(med)",
                 "NONENUMERABLETOOLTIP": "See kollektsioon ei toeta üksikute esemete loetlemist – selle asemel kuvatakse teil olevate esemete arv.",
-                "CHECKINGENABLED": "Kontrollimine",
-                "CHECKINGDISABLED": "Kontrollimine maha",
-                "CHECKINGENABLEDTOOLTIP": "Žetoonide kontrollimine on sisse lülitatud – Altitude kontrollib perioodiliselt teie aadresse žetoonide suhtes ja värskendab saldosid. Väljalülitamiseks klõpsake.",
-                "CHECKINGDISABLEDTOOLTIP": "Žetoonide kontrollimine on välja lülitatud – klõpsake uuesti sisselülitamiseks.",
-                "CHECKINGDISABLEDNOTICE": "Automaatne žetoonide kontrollimine on välja lülitatud. Teie aadresse ei skannita žetoonide suhtes ja saldosid ei uuendata. Saate žetooni siiski käsitsi lisada."
+                "CHECKINGDISABLEDTITLE": "Žetoonide skaneerimine on välja lülitatud",
+                "CHECKINGDISABLEDNOTICE": "Automaatne žetoonide kontrollimine on vaikimisi välja lülitatud. Teie aadresse ei skannita žetoonide suhtes ja saldosid ei värskendata enne, kui olete selle sisse lülitanud.",
+                "ENABLEBUTTON": "Luba märkide skannimine",
+                "ENABLECONFIRMTITLE": "Kas lubada märkide skannimine?",
+                "ENABLECONFIRMCONTENT": "Altitude kontrollib perioodiliselt plokkide explorerit, et näha, milliseid MRC20/MRC721 tokeneid teie aadressid hoiavad, seejärel kontrollib saldosid ja omandiõigust otse teie enda sõlme abil. Esimene kontroll toimub siis, kui teie rahakott on täielikult sünkroonitud, ja seejärel kordub see vaikimisi iga 60 minuti järel. Saate seda intervalli muuta või tokenite skannimise igal ajal välja lülitada valikute > Explorer alt."
             },
             "ADDTOKEN": {
                 "TITLE": "Lisa token",

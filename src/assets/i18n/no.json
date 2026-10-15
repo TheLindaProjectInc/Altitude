@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Behold sist"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token-skanning",
+                "TOKENSCANNINGENABLED": "Sjekk automatisk adresser for tokener og oppdater saldoer",
+                "TOKENSCANNINGINFO": "Av som standard. Når den er aktivert, sjekker Altitude en blokkutforsker for å oppdage MRC20/MRC721-tokens som oppbevares av adressene dine, og verifiserer deretter saldoer og eierskap direkte mot din egen node. De fleste lommebøker inneholder ingen tokens, så dette er et valg for å unngå unødvendige bakgrunnsforespørsler.",
+                "TOKENSCANNINGINTERVALLABEL": "Sjekk hvert (minutt)",
+                "TOKENSCANNINGINTERVALINFO": "Etter aktivering kjøres den første sjekken når lommeboken din er fullstendig synkronisert. Deretter sjekker Altitude på nytt i dette intervallet.",
                 "BLOCKEXPLORERTITLE": "Blokkutforsker",
                 "BLOCKEXPLORERINFO": "Nettstedet åpnet seg da jeg så en transaksjon i blokkutforskeren (f.eks. høyreklikk på en transaksjon > Vis i Utforsker).",
                 "TOKENDISCOVERYTITLE": "Tokenoppdagelse",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Vis",
                 "EMPTYTITLE": "Ingen tokens funnet ennå",
                 "EMPTYDETAIL": "Altitude sjekker automatisk en blokkutforsker for MRC20- og MRC721-tokener sendt til adressene dine, og verifiserer deretter alt live mot din egen node. Du kan også legge til en token manuelt hvis du kjenner kontraktsadressen.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokensjekk er slått av, så adressene dine blir ikke sjekket for tokener. Slå den på igjen ovenfor, eller legg til en token manuelt hvis du vet kontraktsadressen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokensjekk er slått av som standard. Bruk knappen Aktiver tokenskanning ovenfor, eller legg til en token manuelt hvis du vet kontraktsadressen.",
                 "HIDDENTITLE": "Skjulte tokens",
                 "CONTEXTMENUHIDE": "Skjul token",
                 "ITEMSSUFFIX": "vare(r)",
                 "NONENUMERABLETOOLTIP": "Denne samlingen støtter ikke oppføring av individuelle elementer – den viser i stedet hvor mange du har.",
-                "CHECKINGENABLED": "Sjekker på",
-                "CHECKINGDISABLED": "Avkryssing",
-                "CHECKINGENABLEDTOOLTIP": "Tokensjekking er på – Altitude sjekker regelmessig adressene dine for tokens og oppdaterer saldoen. Klikk for å slå av.",
-                "CHECKINGDISABLEDTOOLTIP": "Tokensjekking er av – klikk for å slå den på igjen.",
-                "CHECKINGDISABLEDNOTICE": "Automatisk tokensjekk er slått av. Adressene dine skannes ikke etter tokener, og saldoene oppdateres ikke. Du kan fortsatt legge til en token manuelt."
+                "CHECKINGDISABLEDTITLE": "Token-skanning er av",
+                "CHECKINGDISABLEDNOTICE": "Automatisk tokensjekk er slått av som standard. Adressene dine skannes ikke etter tokener, og saldoene oppdateres ikke før du slår det på.",
+                "ENABLEBUTTON": "Aktiver tokenskanning",
+                "ENABLECONFIRMTITLE": "Aktiver token-skanning?",
+                "ENABLECONFIRMCONTENT": "Altitude vil med jevne mellomrom sjekke en blokkutforsker for å se hvilke MRC20/MRC721-tokens adressene dine inneholder, og deretter bekrefte saldoer og eierskap direkte mot din egen node. Den første sjekken kjøres når lommeboken din er fullstendig synkronisert, og deretter gjentas den hvert 60. minutt som standard. Du kan endre dette intervallet, eller slå av token-skanning igjen, når som helst fra Alternativer > Utforsker."
             },
             "ADDTOKEN": {
                 "TITLE": "Legg til token",

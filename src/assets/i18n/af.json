@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Hou laaste"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Teken-skandering",
+                "TOKENSCANNINGENABLED": "Kontroleer outomaties adresse vir tokens en verfris saldo's",
+                "TOKENSCANNINGINFO": "Standaard afgeskakel. Wanneer dit geaktiveer is, kontroleer Altitude 'n blokverkenner om MRC20/MRC721-tokens wat deur jou adresse gehou word, te ontdek, en verifieer dan saldo's en eienaarskap direk teen jou eie nodus. Die meeste beursies hou geen tokens nie, dus is dit 'n intekening om onnodige agtergrondversoeke te vermy.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontroleer elke (minute)",
+                "TOKENSCANNINGINTERVALINFO": "Nadat dit geaktiveer is, word die eerste kontrole uitgevoer sodra jou beursie volledig gesinkroniseer is. Daarna kontroleer Altitude weer op hierdie interval.",
                 "BLOCKEXPLORERTITLE": "Blokverkenner",
                 "BLOCKEXPLORERINFO": "Die webwerf het oopgemaak toe 'n transaksie op die blokverkenner besigtig is (bv. regs-kliek op 'n transaksie > Bekyk op Verkenner).",
                 "TOKENDISCOVERYTITLE": "Tekenontdekking",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Wys dit",
                 "EMPTYTITLE": "Geen tekens nog gevind nie",
                 "EMPTYDETAIL": "Altitude kontroleer outomaties 'n blokverkenner vir MRC20- en MRC721-tokens wat na jou adresse gestuur is, en verifieer dan alles regstreeks teen jou eie nodus. Jy kan ook 'n token handmatig byvoeg as jy die kontrakadres daarvan ken.",
-                "EMPTYDETAILCHECKINGDISABLED": "Outomatiese tokenkontrole is afgeskakel, so jou adresse word nie vir tokens gekontroleer nie. Skakel dit weer hierbo aan, of voeg 'n token handmatig by as jy die kontrakadres daarvan ken.",
+                "EMPTYDETAILCHECKINGDISABLED": "Outomatiese tokenkontrole is standaard afgeskakel. Gebruik die Aktiveer tokenskandering-knoppie hierbo, of voeg 'n token handmatig by as jy die kontrakadres daarvan ken.",
                 "HIDDENTITLE": "Versteekte tekens",
                 "CONTEXTMENUHIDE": "Versteek teken",
                 "ITEMSSUFFIX": "item(s)",
                 "NONENUMERABLETOOLTIP": "Hierdie versameling ondersteun nie die lys van individuele items nie - dit wys eerder hoeveel jy besit.",
-                "CHECKINGENABLED": "Kontroleer Aan",
-                "CHECKINGDISABLED": "Afmerk",
-                "CHECKINGENABLEDTOOLTIP": "Tekenkontrole is aan - Altitude kontroleer gereeld jou adresse vir tekens en verfris saldo's. Klik om af te skakel.",
-                "CHECKINGDISABLEDTOOLTIP": "Tekenkontrole is af - klik om weer aan te skakel.",
-                "CHECKINGDISABLEDNOTICE": "Outomatiese tokenkontrole is afgeskakel. Jou adresse word nie vir tokens geskandeer nie en saldo's sal nie opdateer nie. Jy kan steeds 'n token handmatig byvoeg."
+                "CHECKINGDISABLEDTITLE": "Teken-skandering is af",
+                "CHECKINGDISABLEDNOTICE": "Outomatiese tokenkontrole is standaard afgeskakel. Jou adresse word nie vir tokens geskandeer nie en saldo's sal nie opdateer totdat jy dit aanskakel nie.",
+                "ENABLEBUTTON": "Aktiveer tekenskandering",
+                "ENABLECONFIRMTITLE": "Aktiveer tekenskandering?",
+                "ENABLECONFIRMCONTENT": "Altitude sal periodiek 'n blokverkenner nagaan om te sien watter MRC20/MRC721-tokens jou adresse bevat, en dan saldo's en eienaarskap direk teen jou eie nodus verifieer. Die eerste kontrole loop sodra jou beursie volledig gesinkroniseer is, en daarna herhaal dit elke 60 minute by verstek. Jy kan hierdie interval verander, of token-skandering weer afskakel, enige tyd vanaf Opsies > Verkenner."
             },
             "ADDTOKEN": {
                 "TITLE": "Voeg teken by",

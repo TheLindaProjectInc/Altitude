@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Simpen terakhir"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Nyeken Token",
+                "TOKENSCANNINGENABLED": "Pariksa alamat sacara otomatis pikeun token sareng kasaimbangan refresh",
+                "TOKENSCANNINGINFO": "Pareum sacara standar. Nalika diaktipkeun, Altitude mariksa pangjalajah blok pikeun mendakan token MRC20/MRC721 anu diayakeun ku alamat anjeun, teras verifikasi kasaimbangan sareng kapamilikan langsung ngalawan node anjeun nyalira. Kaseueuran dompét henteu nyimpen token naon waé, janten ieu mangrupikeun pilihan pikeun nyingkahan pamundut latar anu teu perlu.",
+                "TOKENSCANNINGINTERVALLABEL": "Pariksa unggal (menit)",
+                "TOKENSCANNINGINTERVALINFO": "Saatos diaktipkeun, pamariksaan anu munggaran dijalankeun saatos dompét anjeun parantos sinkron sapinuhna. Saatos éta, Altitude bakal mariksa deui dina interval ieu.",
                 "BLOCKEXPLORERTITLE": "Blok Explorer",
                 "BLOCKEXPLORERINFO": "Situs éta dibuka nalika ningali transaksi dina block explorer (contona klik katuhu transaksi > Témbongkeun dina Explorer).",
                 "TOKENDISCOVERYTITLE": "Kapanggihna Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Bukakeun",
                 "EMPTYTITLE": "Teu Aya Token Anu Kapanggih",
                 "EMPTYDETAIL": "Altitude sacara otomatis mariksa block explorer pikeun token MRC20 sareng MRC721 anu dikirim ka alamat anjeun, teras verifikasi sadayana langsung ngalawan node anjeun nyalira. Anjeun ogé tiasa nambihan token sacara manual upami anjeun terang alamat kontrakna.",
-                "EMPTYDETAILCHECKINGDISABLED": "Pamariksaan token otomatis dipareuman, janten alamat anjeun henteu dipariksa pikeun token. Aktipkeun deui di luhur, atanapi tambahkeun token sacara manual upami anjeun terang alamat kontrakna.",
+                "EMPTYDETAILCHECKINGDISABLED": "Pamariksaan token otomatis dipareuman sacara standar. Anggo tombol Aktipkeun Pindai Token di luhur, atanapi tambahkeun token sacara manual upami anjeun terang alamat kontrakna.",
                 "HIDDENTITLE": "Token Anu Disumputkeun",
                 "CONTEXTMENUHIDE": "Sumputkeun Token",
                 "ITEMSSUFFIX": "barang",
                 "NONENUMERABLETOOLTIP": "Koleksi ieu henteu ngadukung daptar barang individu - nunjukkeun sabaraha anu anjeun simpen.",
-                "CHECKINGENABLED": "Mariksa",
-                "CHECKINGDISABLED": "Nga-check-off",
-                "CHECKINGENABLEDTOOLTIP": "Pamariksaan token diaktipkeun - Altitude sacara périodik mariksa alamat anjeun pikeun token sareng ngamutahirkeun kasaimbangan. Klik pikeun mareuman.",
-                "CHECKINGDISABLEDTOOLTIP": "Pamariksaan token pareum - klik pikeun ngaktipkeun deui.",
-                "CHECKINGDISABLEDNOTICE": "Pamariksaan token otomatis dipareuman. Alamat anjeun teu keur di-scan pikeun token sareng kasaimbangan moal diropéa. Anjeun masih tiasa nambihan token sacara manual."
+                "CHECKINGDISABLEDTITLE": "Pamindaian Token Pareum",
+                "CHECKINGDISABLEDNOTICE": "Pamariksaan token otomatis pareum sacara standar. Alamat anjeun teu keur discan pikeun token sareng kasaimbangan moal diropéa sateuacan anjeun ngaktipkeunana.",
+                "ENABLEBUTTON": "Aktipkeun Pamindaian Token",
+                "ENABLECONFIRMTITLE": "Aktipkeun Pamindaian Token?",
+                "ENABLECONFIRMCONTENT": "Altitude bakal mariksa sacara périodik blok explorer pikeun ningali token MRC20/MRC721 mana anu dicekel ku alamat anjeun, teras verifikasi kasaimbangan sareng kapamilikan langsung ngalawan node anjeun nyalira. Pamariksaan anu munggaran dijalankeun saatos dompét anjeun parantos sinkron sapinuhna, sareng saatos éta diulang unggal 60 menit sacara standar. Anjeun tiasa ngarobih interval ieu, atanapi mareuman deui pamindaian token, iraha waé ti Pilihan > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Tambahkeun Token",

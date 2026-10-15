@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Tetep pungkasan"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Pindai Token",
+                "TOKENSCANNINGENABLED": "Priksa alamat kanthi otomatis kanggo token lan saldo refresh",
+                "TOKENSCANNINGINFO": "Pateni minangka standar. Nalika diaktifake, Altitude mriksa panjelajah blok kanggo nemokake token MRC20/MRC721 sing dicekel dening alamat sampeyan, banjur verifikasi saldo lan kepemilikan langsung marang node sampeyan dhewe. Umume dompet ora nyekel token apa wae, mula iki minangka pilihan kanggo nyegah panjalukan latar mburi sing ora perlu.",
+                "TOKENSCANNINGINTERVALLABEL": "Priksa saben (menit)",
+                "TOKENSCANNINGINTERVALINFO": "Sawise diaktifake, pamriksan pisanan ditindakake sawise dompet sampeyan wis sinkron kanthi lengkap. Sawise iku, Altitude bakal mriksa maneh ing interval iki.",
                 "BLOCKEXPLORERTITLE": "Penjelajah Blok",
                 "BLOCKEXPLORERINFO": "Situs kasebut dibukak nalika ndeleng transaksi ing blok explorer (contone, klik-tengen transaksi > Deleng ing Explorer).",
                 "TOKENDISCOVERYTITLE": "Panemuan Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mbukak ndhelik",
                 "EMPTYTITLE": "Durung Ana Token sing Ditemokake",
                 "EMPTYDETAIL": "Altitude kanthi otomatis mriksa penjelajah blok kanggo token MRC20 lan MRC721 sing dikirim menyang alamat sampeyan, banjur verifikasi kabeh langsung karo node sampeyan dhewe. Sampeyan uga bisa nambah token kanthi manual yen sampeyan ngerti alamat kontrak kasebut.",
-                "EMPTYDETAILCHECKINGDISABLED": "Pamriksaan token otomatis dipateni, mula alamat sampeyan ora dipriksa kanggo token. Uripake maneh ing ndhuwur, utawa tambahake token kanthi manual yen sampeyan ngerti alamat kontrake.",
+                "EMPTYDETAILCHECKINGDISABLED": "Pamriksaan token otomatis dipateni kanthi gawan. Gunakake tombol Aktifake Pindai Token ing ndhuwur, utawa tambahake token kanthi manual yen sampeyan ngerti alamat kontrak kasebut.",
                 "HIDDENTITLE": "Token sing Didhelikake",
                 "CONTEXTMENUHIDE": "Ndhelikake Token",
                 "ITEMSSUFFIX": "barang",
                 "NONENUMERABLETOOLTIP": "Koleksi iki ora ndhukung ndhaptar item individu - nanging nuduhake pira sing sampeyan simpen.",
-                "CHECKINGENABLED": "Mriksa",
-                "CHECKINGDISABLED": "Mriksa",
-                "CHECKINGENABLEDTOOLTIP": "Pamriksaan token diaktifake - Altitude mriksa alamat sampeyan kanthi periodik kanggo token lan nganyari saldo. Klik kanggo mateni.",
-                "CHECKINGDISABLEDTOOLTIP": "Pamriksaan token dipateni - klik kanggo nguripake maneh.",
-                "CHECKINGDISABLEDNOTICE": "Pamriksaan token otomatis dipateni. Alamat sampeyan ora lagi dipindai kanggo token lan saldo ora bakal dianyari. Sampeyan isih bisa nambah token kanthi manual."
+                "CHECKINGDISABLEDTITLE": "Pemindaian Token Mati",
+                "CHECKINGDISABLEDNOTICE": "Pamriksaan token otomatis dipateni kanthi gawan. Alamat sampeyan ora dipindai kanggo token lan saldo ora bakal dianyari nganti sampeyan nguripake.",
+                "ENABLEBUTTON": "Aktifake Pindai Token",
+                "ENABLECONFIRMTITLE": "Aktifake Pindai Token?",
+                "ENABLECONFIRMCONTENT": "Altitude bakal mriksa blok explorer kanthi periodik kanggo ndeleng token MRC20/MRC721 endi sing disimpen ing alamat sampeyan, banjur verifikasi saldo lan kepemilikan langsung karo node sampeyan dhewe. Pamriksaan pisanan ditindakake sawise dompet sampeyan wis sinkron kanthi lengkap, lan sawise iku diulang saben 60 menit kanthi standar. Sampeyan bisa ngganti interval iki, utawa mateni pemindaian token, kapan wae saka Pilihan > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Tambah Token",

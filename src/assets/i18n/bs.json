@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Ostavi zadnje"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skeniranje tokena",
+                "TOKENSCANNINGENABLED": "Automatski provjeri adrese za tokene i osvježi stanje",
+                "TOKENSCANNINGINFO": "Isključeno prema zadanim postavkama. Kada je omogućeno, Altitude provjerava preglednik blokova kako bi otkrio MRC20/MRC721 tokene koje posjeduju vaše adrese, a zatim direktno provjerava stanje i vlasništvo na vašem čvoru. Većina novčanika ne sadrži tokene, tako da je ovo opcija koju treba uključiti kako bi se izbjegli nepotrebni pozadinski zahtjevi.",
+                "TOKENSCANNINGINTERVALLABEL": "Provjeri svakih (minuta)",
+                "TOKENSCANNINGINTERVALINFO": "Nakon omogućavanja, prva provjera se pokreće nakon što se vaš novčanik potpuno sinhronizuje. Nakon toga, Altitude ponovo provjerava u ovom intervalu.",
                 "BLOCKEXPLORERTITLE": "Istraživač blokova",
                 "BLOCKEXPLORERINFO": "Stranica se otvorila prilikom pregleda transakcije u pregledniku blokova (npr. desni klik na transakciju > Prikaži u pregledniku).",
                 "TOKENDISCOVERYTITLE": "Otkrivanje tokena",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Otkrij",
                 "EMPTYTITLE": "Još nisu pronađeni tokeni",
                 "EMPTYDETAIL": "Altitude automatski provjerava pretraživač blokova za MRC20 i MRC721 tokene poslane na vaše adrese, a zatim sve uživo provjerava u odnosu na vaš vlastiti čvor. Token možete dodati i ručno ako znate njegovu ugovornu adresu.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatska provjera tokena je isključena, tako da se vaše adrese ne provjeravaju za tokene. Ponovo je uključite iznad ili ručno dodajte token ako znate njegovu ugovornu adresu.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatska provjera tokena je podrazumevano isključena. Koristite dugme Omogući skeniranje tokena iznad ili ručno dodajte token ako znate njegovu ugovornu adresu.",
                 "HIDDENTITLE": "Skriveni tokeni",
                 "CONTEXTMENUHIDE": "Sakrij token",
                 "ITEMSSUFFIX": "stavka(e)",
                 "NONENUMERABLETOOLTIP": "Ova kolekcija ne podržava nabrajanje pojedinačnih predmeta - umjesto toga prikazuje koliko ih posjedujete.",
-                "CHECKINGENABLED": "Provjeravam",
-                "CHECKINGDISABLED": "Odjava",
-                "CHECKINGENABLEDTOOLTIP": "Provjera tokena je uključena - Altitude periodično provjerava vaše adrese za tokene i osvježava stanje. Kliknite da isključite.",
-                "CHECKINGDISABLEDTOOLTIP": "Provjera tokena je isključena - kliknite da je ponovo uključite.",
-                "CHECKINGDISABLEDNOTICE": "Automatska provjera tokena je isključena. Vaše adrese se ne skeniraju za tokene i stanja se neće ažurirati. Token i dalje možete dodati ručno."
+                "CHECKINGDISABLEDTITLE": "Skeniranje tokena je isključeno",
+                "CHECKINGDISABLEDNOTICE": "Automatska provjera tokena je podrazumevano isključena. Vaše adrese se ne skeniraju u potrazi za tokenima i stanja se neće ažurirati dok je ne uključite.",
+                "ENABLEBUTTON": "Omogući skeniranje tokena",
+                "ENABLECONFIRMTITLE": "Omogućiti skeniranje tokena?",
+                "ENABLECONFIRMCONTENT": "Altitude će periodično provjeravati pretraživač blokova kako bi vidio koje MRC20/MRC721 tokene posjeduju vaše adrese, a zatim će direktno provjeravati stanje i vlasništvo na vašem čvoru. Prva provjera se pokreće nakon što se vaš novčanik potpuno sinhronizuje, a nakon toga se ponavlja svakih 60 minuta prema zadanim postavkama. Ovaj interval možete promijeniti ili ponovo isključiti skeniranje tokena u bilo kojem trenutku iz Opcije > Istraživač."
             },
             "ADDTOKEN": {
                 "TITLE": "Dodaj token",

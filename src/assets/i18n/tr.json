@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "En sonuncuyu saklayın"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Jeton Tarama",
+                "TOKENSCANNINGENABLED": "Adreslerdeki token'ları otomatik olarak kontrol edin ve bakiyeleri yenileyin.",
+                "TOKENSCANNINGINFO": "Varsayılan olarak kapalıdır. Etkinleştirildiğinde, Altitude, adreslerinizde bulunan MRC20/MRC721 token'larını keşfetmek için bir blok gezgini kontrol eder ve ardından bakiyeleri ve sahipliği doğrudan kendi düğümünüze karşı doğrular. Çoğu cüzdan herhangi bir token tutmaz, bu nedenle gereksiz arka plan isteklerinden kaçınmak için bu özellik isteğe bağlıdır.",
+                "TOKENSCANNINGINTERVALLABEL": "(Dakika) aralıklarla kontrol edin",
+                "TOKENSCANNINGINTERVALINFO": "Etkinleştirildikten sonra, cüzdanınız tamamen senkronize olduktan sonra ilk kontrol çalışır. Bundan sonra, Altitude bu aralıkta tekrar kontrol yapar.",
                 "BLOCKEXPLORERTITLE": "Blok Gezgini",
                 "BLOCKEXPLORERINFO": "Blok gezgininde bir işlemi görüntülerken (örneğin, bir işleme sağ tıklayıp \"Gezginde Görüntüle\" seçeneğini kullanarak) site açılıyordu.",
                 "TOKENDISCOVERYTITLE": "Token Keşfi",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Gizlemeyi Kaldır",
                 "EMPTYTITLE": "Henüz Jeton Bulunamadı",
                 "EMPTYDETAIL": "Altitude, adreslerinize gönderilen MRC20 ve MRC721 token'larını bir blok gezgini üzerinden otomatik olarak kontrol eder ve ardından her şeyi kendi düğümünüze karşı canlı olarak doğrular. Sözleşme adresini biliyorsanız, token'ı manuel olarak da ekleyebilirsiniz.",
-                "EMPTYDETAILCHECKINGDISABLED": "Otomatik token kontrolü kapalı olduğundan, adresleriniz tokenlar açısından kontrol edilmiyor. Yukarıdan tekrar açın veya sözleşme adresini biliyorsanız manuel olarak bir token ekleyin.",
+                "EMPTYDETAILCHECKINGDISABLED": "Otomatik token kontrolü varsayılan olarak kapalıdır. Yukarıdaki \"Token Taramasını Etkinleştir\" düğmesini kullanın veya sözleşme adresini biliyorsanız token'ı manuel olarak ekleyin.",
                 "HIDDENTITLE": "Gizli Jetonlar",
                 "CONTEXTMENUHIDE": "Jetonu Gizle",
                 "ITEMSSUFFIX": "öğeler)",
                 "NONENUMERABLETOOLTIP": "Bu koleksiyon, tek tek öğeleri listelemeyi desteklemiyor; bunun yerine sahip olduğunuz öğe sayısını gösteriyor.",
-                "CHECKINGENABLED": "Kontrol Ediliyor",
-                "CHECKINGDISABLED": "İşaretleme",
-                "CHECKINGENABLEDTOOLTIP": "Token kontrolü açık - Altitude, adreslerinizi periyodik olarak tokenlar açısından kontrol eder ve bakiyeleri günceller. Kapatmak için tıklayın.",
-                "CHECKINGDISABLEDTOOLTIP": "Token kontrolü kapalı - tekrar açmak için tıklayın.",
-                "CHECKINGDISABLEDNOTICE": "Otomatik token kontrolü kapatıldı. Adresleriniz token kontrolü için taranmıyor ve bakiyeleriniz güncellenmeyecek. Yine de manuel olarak token ekleyebilirsiniz."
+                "CHECKINGDISABLEDTITLE": "Jeton Tarama Kapalı",
+                "CHECKINGDISABLEDNOTICE": "Otomatik token kontrolü varsayılan olarak kapalıdır. Adresleriniz tokenlar için taranmaz ve bu özelliği açana kadar bakiyeleriniz güncellenmez.",
+                "ENABLEBUTTON": "Token Taramasını Etkinleştir",
+                "ENABLECONFIRMTITLE": "Token Tarama özelliğini etkinleştirilsin mi?",
+                "ENABLECONFIRMCONTENT": "Altitude, adreslerinizin hangi MRC20/MRC721 token'larını tuttuğunu görmek için periyodik olarak bir blok gezgini kontrol edecek ve ardından bakiyeleri ve sahipliği doğrudan kendi düğümünüze karşı doğrulayacaktır. İlk kontrol, cüzdanınız tamamen senkronize olduktan sonra çalışır ve bundan sonra varsayılan olarak her 60 dakikada bir tekrarlanır. Bu aralığı değiştirebilir veya token taramasını istediğiniz zaman Seçenekler > Gezgin bölümünden kapatabilirsiniz."
             },
             "ADDTOKEN": {
                 "TITLE": "Token Ekle",

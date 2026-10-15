@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Cadwch olaf"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Sganio Tocynnau",
+                "TOKENSCANNINGENABLED": "Gwirio cyfeiriadau yn awtomatig am docynnau ac adnewyddu balansau",
+                "TOKENSCANNINGINFO": "I ffwrdd yn ddiofyn. Pan gaiff ei alluogi, mae Altitude yn gwirio archwiliwr bloc i ddarganfod tocynnau MRC20/MRC721 a gedwir gan eich cyfeiriadau, yna'n gwirio balansau a pherchnogaeth yn uniongyrchol yn erbyn eich nod eich hun. Nid yw'r rhan fwyaf o waledi'n dal unrhyw docynnau, felly mae hyn yn opsiwn i mewn i osgoi ceisiadau cefndir diangen.",
+                "TOKENSCANNINGINTERVALLABEL": "Gwiriwch bob (munud)",
+                "TOKENSCANNINGINTERVALINFO": "Ar ôl ei alluogi, bydd y gwiriad cyntaf yn rhedeg unwaith y bydd eich waled wedi cydamseru'n llawn. Ar ôl hynny, bydd Altitude yn ail-wirio ar yr adeg hon.",
                 "BLOCKEXPLORERTITLE": "Archwiliwr Blociau",
                 "BLOCKEXPLORERINFO": "Agorodd y wefan wrth edrych ar drafodiad ar yr archwiliwr blociau (e.e. cliciwch ar y dde ar drafodiad > Gweld ar yr Archwiliwr).",
                 "TOKENDISCOVERYTITLE": "Darganfod Tocynnau",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Datguddio",
                 "EMPTYTITLE": "Dim Tocynnau Wedi'u Canfod Eto",
                 "EMPTYDETAIL": "Mae Altitude yn gwirio archwiliwr bloc yn awtomatig am docynnau MRC20 a MRC721 a anfonwyd i'ch cyfeiriadau, yna'n gwirio popeth yn fyw yn erbyn eich nod eich hun. Gallwch hefyd ychwanegu tocyn â llaw os ydych chi'n gwybod ei gyfeiriad contract.",
-                "EMPTYDETAILCHECKINGDISABLED": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd, felly nid yw eich cyfeiriadau'n cael eu gwirio am docynnau. Trowch ef yn ôl ymlaen uchod, neu ychwanegwch docyn â llaw os ydych chi'n gwybod ei gyfeiriad contract.",
+                "EMPTYDETAILCHECKINGDISABLED": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd yn ddiofyn. Defnyddiwch y botwm Galluogi Sganio Tocynnau uchod, neu ychwanegwch docyn â llaw os ydych chi'n gwybod ei gyfeiriad contract.",
                 "HIDDENTITLE": "Tocynnau Cudd",
                 "CONTEXTMENUHIDE": "Cuddio Tocyn",
                 "ITEMSSUFFIX": "eitem(au)",
                 "NONENUMERABLETOOLTIP": "Nid yw'r casgliad hwn yn cefnogi rhestru eitemau unigol - gan ddangos faint sydd gennych yn lle hynny.",
-                "CHECKINGENABLED": "Yn Gwirio Ar",
-                "CHECKINGDISABLED": "Ticio I ffwrdd",
-                "CHECKINGENABLEDTOOLTIP": "Mae gwirio tocynnau ymlaen - Mae Altitude yn gwirio'ch cyfeiriadau am docynnau o bryd i'w gilydd ac yn adnewyddu balansau. Cliciwch i ddiffodd.",
-                "CHECKINGDISABLEDTOOLTIP": "Mae gwirio tocynnau i ffwrdd - cliciwch i droi ymlaen eto.",
-                "CHECKINGDISABLEDNOTICE": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd. Nid yw eich cyfeiriadau'n cael eu sganio am docynnau ac ni fydd balansau'n diweddaru. Gallwch chi ychwanegu tocyn â llaw o hyd."
+                "CHECKINGDISABLEDTITLE": "Mae Sganio Tocynnau wedi'i Ddiffodd",
+                "CHECKINGDISABLEDNOTICE": "Mae gwirio tocynnau awtomatig wedi'i ddiffodd yn ddiofyn. Nid yw eich cyfeiriadau'n cael eu sganio am docynnau ac ni fydd balansau'n diweddaru nes i chi ei droi ymlaen.",
+                "ENABLEBUTTON": "Galluogi Sganio Tocynnau",
+                "ENABLECONFIRMTITLE": "Galluogi Sganio Tocynnau?",
+                "ENABLECONFIRMCONTENT": "Bydd Altitude yn gwirio archwiliwr blociau o bryd i'w gilydd i weld pa docynnau MRC20/MRC721 sydd gan eich cyfeiriadau, yna'n gwirio balansau a pherchnogaeth yn uniongyrchol yn erbyn eich nod eich hun. Mae'r gwiriad cyntaf yn rhedeg unwaith y bydd eich waled wedi cydamseru'n llawn, ac ar ôl hynny mae'n ailadrodd bob 60 munud yn ddiofyn. Gallwch newid y cyfnod hwn, neu ddiffodd sganio tocynnau yn ôl, unrhyw bryd o Opsiynau > Archwiliwr."
             },
             "ADDTOKEN": {
                 "TITLE": "Ychwanegu Tocyn",

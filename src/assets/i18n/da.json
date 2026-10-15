@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Behold sidst"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token-scanning",
+                "TOKENSCANNINGENABLED": "Tjek automatisk adresser for tokens og opdater saldi",
+                "TOKENSCANNINGINFO": "Fra som standard. Når den er aktiveret, tjekker Altitude en blokudforsker for at finde MRC20/MRC721-tokens, der opbevares af dine adresser, og verificerer derefter saldi og ejerskab direkte mod din egen node. De fleste tegnebøger indeholder ingen tokens, så dette er et tilvalg for at undgå unødvendige baggrundsanmodninger.",
+                "TOKENSCANNINGINTERVALLABEL": "Tjek hvert (minut)",
+                "TOKENSCANNINGINTERVALINFO": "Efter aktivering kører den første kontrol, når din tegnebog er fuldt synkroniseret. Derefter kontrollerer Altitude igen i dette interval.",
                 "BLOCKEXPLORERTITLE": "Blok Explorer",
                 "BLOCKEXPLORERINFO": "Siden åbnede, når en transaktion blev vist i blokstifinderen (f.eks. højreklik på en transaktion > Vis i stifinder).",
                 "TOKENDISCOVERYTITLE": "Token-opdagelse",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Vis",
                 "EMPTYTITLE": "Ingen tokens fundet endnu",
                 "EMPTYDETAIL": "Altitude tjekker automatisk en block explorer for MRC20- og MRC721-tokens sendt til dine adresser og verificerer derefter alt live mod din egen node. Du kan også tilføje et token manuelt, hvis du kender dets kontraktadresse.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokenkontrol er slået fra, så dine adresser bliver ikke kontrolleret for tokens. Slå det til igen ovenfor, eller tilføj et token manuelt, hvis du kender dets kontraktadresse.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatisk tokenkontrol er som standard slået fra. Brug knappen Aktivér tokenscanning ovenfor, eller tilføj en token manuelt, hvis du kender dens kontraktadresse.",
                 "HIDDENTITLE": "Skjulte tokens",
                 "CONTEXTMENUHIDE": "Skjul token",
                 "ITEMSSUFFIX": "vare(r)",
                 "NONENUMERABLETOOLTIP": "Denne samling understøtter ikke liste over individuelle genstande - den viser i stedet, hvor mange du har.",
-                "CHECKINGENABLED": "Tjekker på",
-                "CHECKINGDISABLED": "Afkrydsning",
-                "CHECKINGENABLEDTOOLTIP": "Token-kontrol er aktiveret – Altitude tjekker med jævne mellemrum dine adresser for tokens og opdaterer saldi. Klik for at slå det fra.",
-                "CHECKINGDISABLEDTOOLTIP": "Tokenkontrol er slået fra – klik for at aktivere igen.",
-                "CHECKINGDISABLEDNOTICE": "Automatisk tokenkontrol er slået fra. Dine adresser scannes ikke for tokens, og saldi opdateres ikke. Du kan stadig tilføje en token manuelt."
+                "CHECKINGDISABLEDTITLE": "Tokenscanning er slået fra",
+                "CHECKINGDISABLEDNOTICE": "Automatisk tokenkontrol er som standard slået fra. Dine adresser scannes ikke for tokens, og saldi opdateres ikke, før du aktiverer det.",
+                "ENABLEBUTTON": "Aktivér tokenscanning",
+                "ENABLECONFIRMTITLE": "Aktivér tokenscanning?",
+                "ENABLECONFIRMCONTENT": "Altitude vil med jævne mellemrum tjekke en blok-explorer for at se, hvilke MRC20/MRC721-tokens dine adresser indeholder, og derefter verificere saldi og ejerskab direkte mod din egen node. Den første kontrol kører, når din tegnebog er fuldt synkroniseret, og derefter gentages den som standard hvert 60. minut. Du kan ændre dette interval eller slå token-scanning fra igen når som helst fra Indstillinger > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Tilføj token",

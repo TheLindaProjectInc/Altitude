@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Lescht halen"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token-Scanning",
+                "TOKENSCANNINGENABLED": "Adressen automatesch op Tokens kontrolléieren an d'Saldoen aktualiséieren",
+                "TOKENSCANNINGINFO": "Standardméisseg ausgeschalt. Wann aktivéiert, kontrolléiert Altitude e Block Explorer fir MRC20/MRC721 Tokens ze entdecken, déi vun Ären Adressen gehale ginn, an iwwerpréift dann d'Saldoen an d'Besëtzverhältnisser direkt géint Ären eegene Knuet. Déi meescht Portemonnaien enthalen keng Tokens, dofir ass dëst en Opt-in fir onnéideg Ufroen am Hannergrond ze vermeiden.",
+                "TOKENSCANNINGINTERVALLABEL": "All (Minutten) kontrolléieren",
+                "TOKENSCANNINGINTERVALINFO": "Nom Aktivéieren gëtt déi éischt Kontroll duerchgefouert, soubal Äre Portemonnaie komplett synchroniséiert ass. Duerno kontrolléiert Altitude an dësem Intervall nach eng Kéier.",
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "D'Websäit huet sech opgemaach, wéi eng Transaktioun am Block Explorer gekuckt gouf (z.B. rietsklickt op eng Transaktioun > Am Explorer kucken).",
                 "TOKENDISCOVERYTITLE": "Token Entdeckung",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Ophiewen",
                 "EMPTYTITLE": "Nach keng Tokens fonnt",
                 "EMPTYDETAIL": "Altitude kontrolléiert automatesch e Block Explorer op MRC20- an MRC721-Token, déi un Är Adressen geschéckt ginn, a verifizéiert dann alles live géint Ären eegene Knuet. Dir kënnt och en Token manuell derbäisetzen, wann Dir seng Kontraktadress kennt.",
-                "EMPTYDETAILCHECKINGDISABLED": "Déi automatesch Token-Kontroll ass ausgeschalt, dofir ginn Är Adressen net op Tokens iwwerpréift. Aktivéiert et uewen erëm oder füügt en Token manuell derbäi, wann Dir seng Kontraktadress kennt.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatesch Token-Kontroll ass standardméisseg ausgeschalt. Benotzt de Knäppchen \"Token-Scanning aktivéieren\" uewen, oder füügt en Token manuell derbäi, wann Dir seng Kontraktadress kennt.",
                 "HIDDENTITLE": "Verstoppte Jetonen",
                 "CONTEXTMENUHIDE": "Token verstoppen",
                 "ITEMSSUFFIX": "Artikel(en)",
                 "NONENUMERABLETOOLTIP": "Dës Kollektioun ënnerstëtzt keng Oplëschtung vun eenzelnen Artikelen - amplaz gëtt ugewisen, wéivill Dir hutt.",
-                "CHECKINGENABLED": "Iwwerpréiwen",
-                "CHECKINGDISABLED": "Ofchecken",
-                "CHECKINGENABLEDTOOLTIP": "Token-Kontroll ass aktivéiert - Altitude kontrolléiert periodesch Är Adressen op Tokenen a aktualiséiert de Saldo. Klickt fir auszeschalten.",
-                "CHECKINGDISABLEDTOOLTIP": "Token-Kontroll ass ausgeschalt - klickt fir erëm unzeschalten.",
-                "CHECKINGDISABLEDNOTICE": "Déi automatesch Token-Kontroll ass ausgeschalt. Är Adressen ginn net op Tokens gescannt an d'Saldoen ginn net aktualiséiert. Dir kënnt ëmmer nach en Token manuell derbäisetzen."
+                "CHECKINGDISABLEDTITLE": "Token-Scanning ass ausgeschalt",
+                "CHECKINGDISABLEDNOTICE": "Automatesch Token-Kontroll ass standardméisseg ausgeschalt. Är Adressen ginn net op Tokens gescannt an d'Saldoen ginn eréischt aktualiséiert, wann Dir et aktivéiert.",
+                "ENABLEBUTTON": "Token-Scanning aktivéieren",
+                "ENABLECONFIRMTITLE": "Token-Scanning aktivéieren?",
+                "ENABLECONFIRMCONTENT": "Altitude kontrolléiert periodesch e Block Explorer fir ze kucken, wéi eng MRC20/MRC721 Tokens Är Adressen enthalen, an iwwerpréift dann d'Saldoen an d'Besëtzverhältnisser direkt géint Ären eegene Knuet. Déi éischt Kontroll leeft soubal Äre Portemonnaie komplett synchroniséiert ass, an duerno widderhëlt se sech standardméisseg all 60 Minutten. Dir kënnt dësen Intervall änneren oder den Token-Scanning zu all Moment ënner Optiounen > Explorer ausschalten."
             },
             "ADDTOKEN": {
                 "TITLE": "Token derbäisetzen",

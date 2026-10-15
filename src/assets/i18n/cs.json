@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Nechte poslední"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skenování tokenů",
+                "TOKENSCANNINGENABLED": "Automaticky kontrolovat adresy pro tokeny a obnovovat zůstatky",
+                "TOKENSCANNINGINFO": "Ve výchozím nastavení vypnuto. Pokud je tato možnost povolena, Altitude kontroluje v průzkumníku bloků tokeny MRC20/MRC721 držené vašimi adresami a poté ověří zůstatky a vlastnictví přímo na vašem uzlu. Většina peněženek žádné tokeny nedrží, takže se jedná o volbu, která zabraňuje zbytečným požadavkům na pozadí.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrolovat každých (minut)",
+                "TOKENSCANNINGINTERVALINFO": "Po povolení se první kontrola spustí po úplné synchronizaci peněženky. Poté Altitude v tomto intervalu provádí opakované kontroly.",
                 "BLOCKEXPLORERTITLE": "Průzkumník bloků",
                 "BLOCKEXPLORERINFO": "Stránka se otevřela při zobrazení transakce v Průzkumníku bloků (např. kliknutí pravým tlačítkem myši na transakci > Zobrazit v Průzkumníku).",
                 "TOKENDISCOVERYTITLE": "Objevování tokenů",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Zobrazit",
                 "EMPTYTITLE": "Zatím nenalezeny žádné tokeny",
                 "EMPTYDETAIL": "Altitude automaticky kontroluje v průzkumníku bloků tokeny MRC20 a MRC721 odeslané na vaše adresy a poté vše ověří na vašem vlastním uzlu. Token můžete také přidat ručně, pokud znáte jeho kontraktní adresu.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatická kontrola tokenů je vypnuta, takže vaše adresy nejsou kontrolovány na přítomnost tokenů. Znovu ji zapněte výše nebo přidejte token ručně, pokud znáte jeho smluvní adresu.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatická kontrola tokenů je ve výchozím nastavení vypnuta. Použijte tlačítko Povolit skenování tokenů výše nebo přidejte token ručně, pokud znáte jeho smluvní adresu.",
                 "HIDDENTITLE": "Skryté žetony",
                 "CONTEXTMENUHIDE": "Skrýt token",
                 "ITEMSSUFFIX": "položka(y)",
                 "NONENUMERABLETOOLTIP": "Tato kolekce nepodporuje zobrazení jednotlivých položek – místo toho zobrazuje, kolik jich máte.",
-                "CHECKINGENABLED": "Kontrola",
-                "CHECKINGDISABLED": "Odškrtávání",
-                "CHECKINGENABLEDTOOLTIP": "Kontrola tokenů je zapnutá – Altitude pravidelně kontroluje vaše adresy, zda neobsahují tokeny, a obnovuje zůstatky. Kliknutím ji vypnete.",
-                "CHECKINGDISABLEDTOOLTIP": "Kontrola tokenů je vypnuta – kliknutím ji znovu zapnete.",
-                "CHECKINGDISABLEDNOTICE": "Automatická kontrola tokenů je vypnuta. Vaše adresy nejsou skenovány a zůstatky se neaktualizují. Token můžete stále přidat ručně."
+                "CHECKINGDISABLEDTITLE": "Skenování tokenů je vypnuto",
+                "CHECKINGDISABLEDNOTICE": "Automatická kontrola tokenů je ve výchozím nastavení vypnuta. Vaše adresy nebudou skenovány na přítomnost tokenů a zůstatky se nebudou aktualizovat, dokud ji nezapnete.",
+                "ENABLEBUTTON": "Povolit skenování tokenů",
+                "ENABLECONFIRMTITLE": "Povolit skenování tokenů?",
+                "ENABLECONFIRMCONTENT": "Altitude bude pravidelně kontrolovat v průzkumníku bloků, aby zjistila, které tokeny MRC20/MRC721 vaše adresy drží, a poté bude ověřit zůstatky a vlastnictví přímo na vašem vlastním uzlu. První kontrola se spustí po úplné synchronizaci vaší peněženky a poté se ve výchozím nastavení opakuje každých 60 minut. Tento interval můžete kdykoli změnit nebo skenování tokenů znovu vypnout v nabídce Možnosti > Průzkumník."
             },
             "ADDTOKEN": {
                 "TITLE": "Přidat token",

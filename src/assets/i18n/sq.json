@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Mbajeni të fundit"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skanimi i Tokenëve",
+                "TOKENSCANNINGENABLED": "Kontrolloni automatikisht adresat për tokenët dhe rifreskoni balancat",
+                "TOKENSCANNINGINFO": "Si parazgjedhje çaktivizuar. Kur aktivizohet, Altitude kontrollon një eksplorues bllokesh për të zbuluar tokenët MRC20/MRC721 të mbajtur nga adresat tuaja, pastaj verifikon balancat dhe pronësinë direkt kundrejt nyjes suaj. Shumica e portofoleve nuk mbajnë asnjë token, kështu që kjo është opsionale për të shmangur kërkesat e panevojshme në sfond.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrolloni çdo (minuta)",
+                "TOKENSCANNINGINTERVALINFO": "Pas aktivizimit, kontrolli i parë kryhet pasi portofoli juaj të jetë sinkronizuar plotësisht. Pas kësaj, Altitude kontrollon përsëri në këtë interval.",
                 "BLOCKEXPLORERTITLE": "Eksploruesi i Blloqeve",
                 "BLOCKEXPLORERINFO": "Faqja u hap kur shikonte një transaksion në eksploruesin e blloqeve (p.sh. kliko me të djathtën mbi një transaksion > Shiko në Eksplorues).",
                 "TOKENDISCOVERYTITLE": "Zbulimi i Tokenit",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Zbulo",
                 "EMPTYTITLE": "Nuk u gjetën ende shenja",
                 "EMPTYDETAIL": "Altitude kontrollon automatikisht një eksplorues blloku për tokenët MRC20 dhe MRC721 të dërguar në adresat tuaja, pastaj verifikon gjithçka drejtpërdrejt kundrejt nyjes suaj. Gjithashtu mund të shtoni një token manualisht nëse e dini adresën e tij të kontratës.",
-                "EMPTYDETAILCHECKINGDISABLED": "Kontrollimi automatik i tokenëve është çaktivizuar, kështu që adresat tuaja nuk po kontrollohen për tokenë. Aktivizojeni përsëri më sipër ose shtoni një token manualisht nëse e dini adresën e kontratës së tij.",
+                "EMPTYDETAILCHECKINGDISABLED": "Kontrollimi automatik i tokenëve është çaktivizuar si parazgjedhje. Përdorni butonin Aktivizo Skanimin e Tokenëve më sipër ose shtoni një token manualisht nëse e dini adresën e kontratës së tij.",
                 "HIDDENTITLE": "Tokenët e fshehur",
                 "CONTEXTMENUHIDE": "Fshih shenjën",
                 "ITEMSSUFFIX": "artikull(e)",
                 "NONENUMERABLETOOLTIP": "Ky koleksion nuk mbështet renditjen e artikujve individualë - në vend të kësaj tregon se sa prej tyre mbani.",
-                "CHECKINGENABLED": "Duke kontrolluar",
-                "CHECKINGDISABLED": "Duke u mbyllur",
-                "CHECKINGENABLEDTOOLTIP": "Kontrollimi i tokenëve është aktiv - Altitude kontrollon periodikisht adresat tuaja për tokenët dhe rifreskon balancat. Klikoni për ta çaktivizuar.",
-                "CHECKINGDISABLEDTOOLTIP": "Kontrollimi i tokenëve është i çaktivizuar - klikoni për ta aktivizuar përsëri.",
-                "CHECKINGDISABLEDNOTICE": "Kontrolli automatik i tokenëve është çaktivizuar. Adresat tuaja nuk po skanohen për tokenë dhe balancat nuk do të përditësohen. Ju prapëseprapë mund të shtoni një token manualisht."
+                "CHECKINGDISABLEDTITLE": "Skanimi i Tokenëve është i çaktivizuar",
+                "CHECKINGDISABLEDNOTICE": "Kontrollimi automatik i tokenëve është çaktivizuar si parazgjedhje. Adresat tuaja nuk skanohen për tokena dhe bilancet nuk do të përditësohen derisa ta aktivizoni.",
+                "ENABLEBUTTON": "Aktivizo skanimin e tokenëve",
+                "ENABLECONFIRMTITLE": "Të aktivizohet skanimi i tokenëve?",
+                "ENABLECONFIRMCONTENT": "Altitude do të kontrollojë periodikisht një eksplorues blloku për të parë se cilat tokenë MRC20/MRC721 mbajnë adresat tuaja, pastaj do të verifikojë balancat dhe pronësinë direkt kundrejt nyjes suaj. Kontrolli i parë kryhet pasi portofoli juaj të jetë sinkronizuar plotësisht dhe pas kësaj përsëritet çdo 60 minuta si parazgjedhje. Mund ta ndryshoni këtë interval ose ta çaktivizoni skanimin e tokenëve në çdo kohë nga Opsionet > Eksploruesi."
             },
             "ADDTOKEN": {
                 "TITLE": "Shto shenjën",

@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Tartsa az utolsót"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token szkennelés",
+                "TOKENSCANNINGENABLED": "Címek automatikus ellenőrzése tokenekért és egyenlegek frissítése",
+                "TOKENSCANNINGINFO": "Alapértelmezés szerint kikapcsolva. Ha engedélyezve van, az Altitude egy blokkböngészőt ellenőrzi, hogy a címeidhez tartozó MRC20/MRC721 tokeneket megtalálja-e, majd közvetlenül a saját csomópontoddal összehasonlítva ellenőrzi az egyenlegeket és a tulajdonjogot. A legtöbb tárca nem tárol tokeneket, ezért ez egy opcionális beállítás a felesleges háttérkérések elkerülése érdekében.",
+                "TOKENSCANNINGINTERVALLABEL": "Ellenőrizd minden (perc)",
+                "TOKENSCANNINGINTERVALINFO": "Az engedélyezés után az első ellenőrzés a tárca teljes szinkronizálása után fut le. Ezt követően az Altitude újra ellenőrzi ezt az intervallumot.",
                 "BLOCKEXPLORERTITLE": "Blokkböngésző",
                 "BLOCKEXPLORERINFO": "Az oldal egy tranzakció blokkböngészőben történő megtekintésekor nyílt meg (pl. jobb egérgombbal kattintson egy tranzakcióra > Megtekintés az Intézőben).",
                 "TOKENDISCOVERYTITLE": "Token felfedezés",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Felfedés",
                 "EMPTYTITLE": "Még nem találhatók tokenek",
                 "EMPTYDETAIL": "Az Altitude automatikusan ellenőrzi a blokkböngészőt a címeidre küldött MRC20 és MRC721 tokenek után, majd mindent élőben ellenőrz a saját csomópontoddal szemben. Manuálisan is hozzáadhatsz egy tokent, ha ismered a szerződéses címét.",
-                "EMPTYDETAILCHECKINGDISABLED": "Az automatikus tokenellenőrzés ki van kapcsolva, így a címeidet nem ellenőrzi a rendszer tokenek után. Kapcsold be újra fent, vagy adj hozzá manuálisan egy tokent, ha ismered a szerződéses címét.",
+                "EMPTYDETAILCHECKINGDISABLED": "Az automatikus tokenellenőrzés alapértelmezés szerint ki van kapcsolva. Használja a fenti Tokenszkennelés engedélyezése gombot, vagy adjon hozzá manuálisan egy tokent, ha ismeri a szerződéses címét.",
                 "HIDDENTITLE": "Rejtett tokenek",
                 "CONTEXTMENUHIDE": "Token elrejtése",
                 "ITEMSSUFFIX": "tétel(ek)",
                 "NONENUMERABLETOOLTIP": "Ez a gyűjtemény nem támogatja az egyes tételek listázását – ehelyett a meglévő tételek számát mutatja.",
-                "CHECKINGENABLED": "Ellenőrzés folyamatban",
-                "CHECKINGDISABLED": "Kipipálás",
-                "CHECKINGENABLEDTOOLTIP": "Tokenellenőrzés be van kapcsolva – Az Altitude rendszeresen ellenőrzi a címeidet tokenek után kutatva, és frissíti az egyenlegeket. Kattints a kikapcsoláshoz.",
-                "CHECKINGDISABLEDTOOLTIP": "A tokenellenőrzés ki van kapcsolva - kattintson ide a visszakapcsoláshoz.",
-                "CHECKINGDISABLEDNOTICE": "Az automatikus tokenellenőrzés ki van kapcsolva. A címeit nem vizsgáljuk tokenek után, és az egyenlegek sem frissülnek. Manuálisan továbbra is hozzáadhat tokent."
+                "CHECKINGDISABLEDTITLE": "A tokenszkennelés ki van kapcsolva",
+                "CHECKINGDISABLEDNOTICE": "Az automatikus tokenellenőrzés alapértelmezés szerint ki van kapcsolva. A címeidet nem vizsgálja a rendszer tokenek után, és az egyenlegek sem frissülnek, amíg be nem kapcsolod.",
+                "ENABLEBUTTON": "Token szkennelés engedélyezése",
+                "ENABLECONFIRMTITLE": "Engedélyezi a tokenszkennelést?",
+                "ENABLECONFIRMCONTENT": "Az Altitude rendszeresen ellenőrzi a blokkböngészőt, hogy lássa, mely MRC20/MRC721 tokeneket tartalmazzák a címeid, majd közvetlenül a saját csomópontoddal összehasonlítva ellenőrzi az egyenlegeket és a tulajdonjogot. Az első ellenőrzés a tárca teljes szinkronizálása után fut le, majd alapértelmezés szerint 60 percenként ismétlődik. Ezt az intervallumot bármikor megváltoztathatod, vagy kikapcsolhatod a tokenszkennelést a Beállítások > Böngésző menüpontban."
             },
             "ADDTOKEN": {
                 "TITLE": "Token hozzáadása",

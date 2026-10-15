@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Laikyti paskutinį"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Žetonų nuskaitymas",
+                "TOKENSCANNINGENABLED": "Automatiškai tikrinti adresus dėl žetonų ir atnaujinti likučius",
+                "TOKENSCANNINGINFO": "Išjungta pagal numatytuosius nustatymus. Kai įjungta, „Altitude“ patikrina blokų naršyklę, ar nėra jūsų adresuose esančių MRC20/MRC721 žetonų, tada tiesiogiai patikrina likučius ir nuosavybę pagal jūsų mazgą. Daugumoje piniginių nėra jokių žetonų, todėl tai pasirenkama, siekiant išvengti nereikalingų foninių užklausų.",
+                "TOKENSCANNINGINTERVALLABEL": "Tikrinti kas (minutes)",
+                "TOKENSCANNINGINTERVALINFO": "Įjungus, pirmasis patikrinimas atliekamas, kai jūsų piniginė visiškai sinchronizuojama. Po to „Altitude“ pakartotinai patikrina šiuo intervalu.",
                 "BLOCKEXPLORERTITLE": "Blokų naršyklė",
                 "BLOCKEXPLORERINFO": "Svetainė atsidarė peržiūrint operaciją blokų naršyklėje (pvz., dešiniuoju pelės mygtuku spustelėkite operaciją > Peržiūrėti naršyklėje).",
                 "TOKENDISCOVERYTITLE": "Žetonų atradimas",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Rodyti slėpimą",
                 "EMPTYTITLE": "Kol kas nerasta žetonų",
                 "EMPTYDETAIL": "„Altitude“ automatiškai patikrina blokų naršyklę, ar nėra jūsų adresais išsiųstų MRC20 ir MRC721 žetonų, o tada viską tiesiogiai patikrina pagal jūsų mazgą. Taip pat galite pridėti žetoną rankiniu būdu, jei žinote jo sutarties adresą.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatinis žetonų tikrinimas išjungtas, todėl jūsų adresai netikrinami ieškant žetonų. Įjunkite jį atgal arba pridėkite žetoną rankiniu būdu, jei žinote jo sutarties adresą.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatinis žetonų tikrinimas pagal numatytuosius nustatymus yra išjungtas. Naudokite aukščiau esantį mygtuką „Įjungti žetonų nuskaitymą“ arba pridėkite žetoną rankiniu būdu, jei žinote jo sutarties adresą.",
                 "HIDDENTITLE": "Paslėpti žetonai",
                 "CONTEXTMENUHIDE": "Slėpti prieigos raktą",
                 "ITEMSSUFFIX": "prekė(-s)",
                 "NONENUMERABLETOOLTIP": "Šioje kolekcijoje negalima rodyti atskirų elementų – vietoj to rodoma, kiek jų turite.",
-                "CHECKINGENABLED": "Tikrinama",
-                "CHECKINGDISABLED": "Patikrinti",
-                "CHECKINGENABLEDTOOLTIP": "Žetonų tikrinimas įjungtas – „Altitude“ periodiškai tikrina jūsų adresus, ar nėra žetonų, ir atnaujina likučius. Spustelėkite, kad išjungtumėte.",
-                "CHECKINGDISABLEDTOOLTIP": "Žetonų tikrinimas išjungtas – spustelėkite, kad vėl įjungtumėte.",
-                "CHECKINGDISABLEDNOTICE": "Automatinis žetonų tikrinimas išjungtas. Jūsų adresai nėra nuskaitomi ieškant žetonų ir likučiai nebus atnaujinami. Vis tiek galite pridėti žetoną rankiniu būdu."
+                "CHECKINGDISABLEDTITLE": "Žetonų nuskaitymas išjungtas",
+                "CHECKINGDISABLEDNOTICE": "Automatinis žetonų tikrinimas pagal numatytuosius nustatymus yra išjungtas. Jūsų adresai nėra nuskaitomi ieškant žetonų, o likučiai nebus atnaujinami, kol neįjungsite šio mygtuko.",
+                "ENABLEBUTTON": "Įjungti žetonų nuskaitymą",
+                "ENABLECONFIRMTITLE": "Įjungti žetonų nuskaitymą?",
+                "ENABLECONFIRMCONTENT": "„Altitude“ periodiškai tikrins blokų naršyklę, kad pamatytų, kuriuos MRC20/MRC721 žetonus laiko jūsų adresai, tada tiesiogiai patikrins likučius ir nuosavybę pagal jūsų mazgą. Pirmasis patikrinimas atliekamas, kai jūsų piniginė visiškai sinchronizuojama, o po to pagal numatytuosius nustatymus kartojamas kas 60 minučių. Šį intervalą galite bet kada pakeisti arba išjungti žetonų nuskaitymą skiltyje „Parinktys“ > „Naršyklė“."
             },
             "ADDTOKEN": {
                 "TITLE": "Pridėti prieigos raktą",

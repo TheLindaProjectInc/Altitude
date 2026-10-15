@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Sonuncu saxlayın"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token Skanı",
+                "TOKENSCANNINGENABLED": "Tokenlər üçün ünvanları avtomatik olaraq yoxlayın və balansları yeniləyin",
+                "TOKENSCANNINGINFO": "Varsayılan olaraq deaktivdir. Aktivləşdirildikdə, Altitude ünvanlarınızda saxlanılan MRC20/MRC721 tokenlərini aşkar etmək üçün blok tədqiqatçısını yoxlayır, sonra balansları və mülkiyyəti birbaşa öz qovşağınızla yoxlayır. Əksər cüzdanlarda heç bir token yoxdur, buna görə də lazımsız fon sorğularının qarşısını almaq üçün bu seçim aktivdir.",
+                "TOKENSCANNINGINTERVALLABEL": "Hər (dəqiqə) yoxlayın",
+                "TOKENSCANNINGINTERVALINFO": "Aktivləşdirildikdən sonra, cüzdanınız tam sinxronlaşdırıldıqdan sonra ilk yoxlama başlayır. Bundan sonra, Altitude bu intervalda yenidən yoxlayır.",
                 "BLOCKEXPLORERTITLE": "Blok Tədqiqatçısı",
                 "BLOCKEXPLORERINFO": "Sayt blok tədqiqatçısında əməliyyata baxarkən açıldı (məsələn, əməliyyata sağ klikləyin > Explorer-də baxın).",
                 "TOKENDISCOVERYTITLE": "Token Kəşfi",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Gizlət",
                 "EMPTYTITLE": "Hələlik heç bir token tapılmayıb",
                 "EMPTYDETAIL": "Altitude, blok tədqiqatçısını ünvanlarınıza göndərilən MRC20 və MRC721 tokenləri üçün avtomatik olaraq yoxlayır, sonra hər şeyi canlı olaraq öz qovşağınızla müqayisə edir. Müqavilə ünvanını bilirsinizsə, tokeni əl ilə də əlavə edə bilərsiniz.",
-                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik token yoxlaması söndürüldüyü üçün ünvanlarınız tokenlər üçün yoxlanılmır. Yuxarıda onu yenidən aktivləşdirin və ya müqavilə ünvanını bilirsinizsə, tokeni əl ilə əlavə edin.",
+                "EMPTYDETAILCHECKINGDISABLED": "Avtomatik token yoxlaması standart olaraq deaktivdir. Yuxarıdakı Token Skanlamasını Aktivləşdir düyməsini istifadə edin və ya müqavilə ünvanını bilirsinizsə, tokeni əl ilə əlavə edin.",
                 "HIDDENTITLE": "Gizli Tokenlər",
                 "CONTEXTMENUHIDE": "Tokeni gizlət",
                 "ITEMSSUFFIX": "əşya(lar)",
                 "NONENUMERABLETOOLTIP": "Bu kolleksiya fərdi əşyaların siyahısını dəstəkləmir - əvəzinə neçə ədəd saxladığınızı göstərir.",
-                "CHECKINGENABLED": "Yoxlama Başlayır",
-                "CHECKINGDISABLED": "Yoxlama",
-                "CHECKINGENABLEDTOOLTIP": "Token yoxlanışı aktivdir - Hündürlük vaxtaşırı ünvanlarınızı tokenlər üçün yoxlayır və balansları yeniləyir. Söndürmək üçün klikləyin.",
-                "CHECKINGDISABLEDTOOLTIP": "Token yoxlanışı deaktivdir - geri aktivləşdirmək üçün klikləyin.",
-                "CHECKINGDISABLEDNOTICE": "Avtomatik token yoxlaması deaktiv edilib. Ünvanlarınız tokenlər üçün skan edilmir və balanslar yenilənməyəcək. Yenə də tokenləri əl ilə əlavə edə bilərsiniz."
+                "CHECKINGDISABLEDTITLE": "Token Skanı Deaktivdir",
+                "CHECKINGDISABLEDNOTICE": "Avtomatik token yoxlaması standart olaraq deaktivdir. Ünvanlarınız tokenlər üçün skan edilmir və balanslar siz onu aktivləşdirənə qədər yenilənməyəcək.",
+                "ENABLEBUTTON": "Token Skanlamasını Aktivləşdirin",
+                "ENABLECONFIRMTITLE": "Token Skanlaması Aktivləşdirilsin?",
+                "ENABLECONFIRMCONTENT": "Altitude, ünvanlarınızın hansı MRC20/MRC721 tokenlərinin olduğunu görmək üçün vaxtaşırı blok tədqiqatçısını yoxlayacaq, sonra balansları və mülkiyyəti birbaşa öz qovşağınızla yoxlayacaq. İlk yoxlama cüzdanınız tam sinxronlaşdırıldıqdan sonra başlayır və bundan sonra standart olaraq hər 60 dəqiqədən bir təkrarlanır. Bu intervalı istənilən vaxt Seçimlər > Explorer bölməsindən dəyişə və ya token skanlamasını yenidən söndürə bilərsiniz."
             },
             "ADDTOKEN": {
                 "TITLE": "Token əlavə edin",

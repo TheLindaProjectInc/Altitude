@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Ipabilin sa katapusan"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Pag-scan sa Token",
+                "TOKENSCANNINGENABLED": "Awtomatikong susihon ang mga adres para sa mga token ug mga balanse sa pag-refresh",
+                "TOKENSCANNINGINFO": "Palong isip default. Kon gi-enable, susihon sa Altitude ang block explorer aron madiskobrehan ang mga MRC20/MRC721 token nga gihuptan sa imong mga address, dayon i-verify ang mga balanse ug pagpanag-iya direkta batok sa imong kaugalingong node. Kadaghanan sa mga wallet walay mga token, busa kini opt-in aron malikayan ang wala kinahanglana nga mga hangyo sa background.",
+                "TOKENSCANNINGINTERVALLABEL": "Susiha matag (minuto)",
+                "TOKENSCANNINGINTERVALINFO": "Human sa pag-enable, ang unang pagsusi modagan kung ang imong wallet hingpit nang naka-sync. Pagkahuman niana, ang Altitude mosusi pag-usab niini nga interval.",
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Ang site miabli samtang nagtan-aw og transaksyon sa block explorer (pananglitan, i-right-click ang transaksyon > View on Explorer).",
                 "TOKENDISCOVERYTITLE": "Pagdiskobre sa Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "I-unhide",
                 "EMPTYTITLE": "Wala Pa'y Nakit-an nga mga Token",
                 "EMPTYDETAIL": "Awtomatikong susihon sa Altitude ang block explorer para sa mga MRC20 ug MRC721 token nga gipadala sa imong mga adres, dayon i-verify ang tanan nga live batok sa imong kaugalingong node. Mahimo ka usab nga magdugang og token nga mano-mano kung nahibal-an nimo ang adres sa kontrata niini.",
-                "EMPTYDETAILCHECKINGDISABLED": "Ang awtomatikong pagsusi sa token gipalong, busa ang imong mga adres wala gisusi alang sa mga token. I-on kini pag-usab sa ibabaw, o pagdugang og token nga mano-mano kung nahibal-an nimo ang adres sa kontrata niini.",
+                "EMPTYDETAILCHECKINGDISABLED": "Ang awtomatikong pagsusi sa token gipalong isip default. Gamita ang buton nga Enable Token Scanning sa ibabaw, o idugang ang token nga mano-mano kon nahibal-an nimo ang adres sa kontrata niini.",
                 "HIDDENTITLE": "Mga Natago nga Token",
                 "CONTEXTMENUHIDE": "Itago ang Token",
                 "ITEMSSUFFIX": "butang(mga)",
                 "NONENUMERABLETOOLTIP": "Kini nga koleksyon dili mosuporta sa paglista sa indibidwal nga mga butang - apan ipakita kung pila ang imong gikuptan.",
-                "CHECKINGENABLED": "Pagsusi",
-                "CHECKINGDISABLED": "Pag-check-off",
-                "CHECKINGENABLEDTOOLTIP": "Ang pagsusi sa token kay naka-on - Ang Altitude matag karon ug unya mosusi sa imong mga adres para sa mga token ug mo-refresh sa mga balanse. I-klik aron i-off.",
-                "CHECKINGDISABLEDTOOLTIP": "Ang pagsusi sa token wala naka-on - i-klik aron mobalik sa pag-on.",
-                "CHECKINGDISABLEDNOTICE": "Ang awtomatikong pagsusi sa token gipalong. Ang imong mga adres wala gi-scan para sa mga token ug ang mga balanse dili ma-update. Mahimo ka gihapon nga magdugang og token nga mano-mano."
+                "CHECKINGDISABLEDTITLE": "Ang Token Scanning Gipalong",
+                "CHECKINGDISABLEDNOTICE": "Ang awtomatikong pagsusi sa token dili aktibo. Ang imong mga adres wala gi-scan para sa mga token ug ang mga balanse dili ma-update hangtod nga imong i-on kini.",
+                "ENABLEBUTTON": "I-enable ang Token Scanning",
+                "ENABLECONFIRMTITLE": "I-enable ang Token Scanning?",
+                "ENABLECONFIRMCONTENT": "Ang Altitude matag karon ug unya mosusi sa block explorer aron makita kung unsang mga MRC20/MRC721 token ang anaa sa imong mga address, dayon i-verify ang mga balanse ug pagpanag-iya direkta batok sa imong kaugalingong node. Ang unang pagsusi modagan kung ang imong wallet hingpit nang naka-sync, ug pagkahuman niana kini balikon matag 60 ka minuto isip default. Mahimo nimong usbon kini nga interval, o i-off ang token scanning, bisan unsang orasa gikan sa Options > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Idugang ang Token",

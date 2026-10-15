@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Kekalkan yang terakhir"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Pengimbasan Token",
+                "TOKENSCANNINGENABLED": "Semak alamat secara automatik untuk token dan baki segar semula",
+                "TOKENSCANNINGINFO": "Dimatikan secara lalai. Apabila diaktifkan, Altitude menyemak penjelajah blok untuk menemui token MRC20/MRC721 yang dipegang oleh alamat anda, kemudian mengesahkan baki dan pemilikan secara langsung terhadap nod anda sendiri. Kebanyakan dompet tidak menyimpan sebarang token, jadi ini adalah pilihan masuk untuk mengelakkan permintaan latar belakang yang tidak perlu.",
+                "TOKENSCANNINGINTERVALLABEL": "Semak setiap (minit)",
+                "TOKENSCANNINGINTERVALINFO": "Selepas mendayakan, semakan pertama akan dijalankan sebaik sahaja dompet anda disegerakkan sepenuhnya. Selepas itu, Altitude akan menyemak semula pada selang masa ini.",
                 "BLOCKEXPLORERTITLE": "Penjelajah Blok",
                 "BLOCKEXPLORERINFO": "Laman web dibuka apabila melihat transaksi pada penjelajah blok (cth. klik kanan transaksi > Lihat pada Penjelajah).",
                 "TOKENDISCOVERYTITLE": "Penemuan Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Nyahsembunyi",
                 "EMPTYTITLE": "Tiada Token Ditemui Lagi",
                 "EMPTYDETAIL": "Altitude secara automatik menyemak penjelajah blok untuk token MRC20 dan MRC721 yang dihantar ke alamat anda, kemudian mengesahkan semuanya secara langsung terhadap nod anda sendiri. Anda juga boleh menambah token secara manual jika anda mengetahui alamat kontraknya.",
-                "EMPTYDETAILCHECKINGDISABLED": "Semakan token automatik dimatikan, jadi alamat anda tidak disemak untuk token. Hidupkannya semula di atas atau tambahkan token secara manual jika anda mengetahui alamat kontraknya.",
+                "EMPTYDETAILCHECKINGDISABLED": "Semakan token automatik dimatikan secara lalai. Gunakan butang Dayakan Pengimbasan Token di atas atau tambahkan token secara manual jika anda mengetahui alamat kontraknya.",
                 "HIDDENTITLE": "Token Tersembunyi",
                 "CONTEXTMENUHIDE": "Sembunyikan Token",
                 "ITEMSSUFFIX": "barang",
                 "NONENUMERABLETOOLTIP": "Koleksi ini tidak menyokong penyenaraian item individu - sebaliknya menunjukkan berapa banyak yang anda pegang.",
-                "CHECKINGENABLED": "Memeriksa",
-                "CHECKINGDISABLED": "Menanda Tamat",
-                "CHECKINGENABLEDTOOLTIP": "Pemeriksaan token dihidupkan - Altitude menyemak alamat anda secara berkala untuk token dan menyegarkan baki. Klik untuk mematikannya.",
-                "CHECKINGDISABLEDTOOLTIP": "Pemeriksaan token dimatikan - klik untuk menghidupkan semula.",
-                "CHECKINGDISABLEDNOTICE": "Semakan token automatik dimatikan. Alamat anda tidak diimbas untuk token dan baki tidak akan dikemas kini. Anda masih boleh menambah token secara manual."
+                "CHECKINGDISABLEDTITLE": "Pengimbasan Token Dimatikan",
+                "CHECKINGDISABLEDNOTICE": "Semakan token automatik dimatikan secara lalai. Alamat anda tidak diimbas untuk token dan baki tidak akan dikemas kini sehingga anda menghidupkannya.",
+                "ENABLEBUTTON": "Dayakan Pengimbasan Token",
+                "ENABLECONFIRMTITLE": "Dayakan Pengimbasan Token?",
+                "ENABLECONFIRMCONTENT": "Altitude akan menyemak penjelajah blok secara berkala untuk melihat token MRC20/MRC721 yang dipegang oleh alamat anda, kemudian mengesahkan baki dan pemilikan secara langsung terhadap nod anda sendiri. Semakan pertama dijalankan setelah dompet anda disegerakkan sepenuhnya dan selepas itu ia diulang setiap 60 minit secara lalai. Anda boleh menukar selang masa ini atau mematikan pengimbasan token pada bila-bila masa dari Pilihan > Penjelajah."
             },
             "ADDTOKEN": {
                 "TITLE": "Tambah Token",

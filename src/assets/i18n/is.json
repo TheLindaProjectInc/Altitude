@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Halda síðasta"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Táknaskönnun",
+                "TOKENSCANNINGENABLED": "Athugaðu sjálfkrafa heimilisföng fyrir tákn og endurnýja stöðu",
+                "TOKENSCANNINGINFO": "Slökkt sjálfgefið. Þegar þetta er virkt athugar Altitude blokkakönnun til að finna MRC20/MRC721 tákn sem vistföng þín geyma og staðfestir síðan stöðu og eignarhald beint á móti þínum eigin hnút. Flest veski geyma engin tákn, svo þetta er valkvætt til að forðast óþarfa bakgrunnsbeiðnir.",
+                "TOKENSCANNINGINTERVALLABEL": "Athugaðu á (mínútu fresti)",
+                "TOKENSCANNINGINTERVALINFO": "Eftir að þetta hefur verið virkjað keyrir fyrsta athugunin þegar veskið þitt hefur verið að fullu samstillt. Eftir það endurskoðar Altitude þetta á þessu tímabili.",
                 "BLOCKEXPLORERTITLE": "Blokkakönnuður",
                 "BLOCKEXPLORERINFO": "Síðan opnaðist þegar færsla var skoðuð í blokkavafranum (t.d. hægrismellt á færslu > Skoða í vafra).",
                 "TOKENDISCOVERYTITLE": "Táknuppgötvun",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Sýna",
                 "EMPTYTITLE": "Engin tákn fundust ennþá",
                 "EMPTYDETAIL": "Altitude kannar sjálfkrafa blokkakönnunarforrit fyrir MRC20 og MRC721 tákn sem send eru á netföngin þín og staðfestir síðan allt beint á móti þínum eigin hnút. Þú getur líka bætt við tákni handvirkt ef þú veist samningsfang þess.",
-                "EMPTYDETAILCHECKINGDISABLED": "Sjálfvirk auðkennisathugun er slökkt, þannig að heimilisföngin þín eru ekki könnuð fyrir auðkenni. Kveiktu aftur á þessu hér að ofan eða bættu auðkenni við handvirkt ef þú veist samningsbundið heimilisfang þess.",
+                "EMPTYDETAILCHECKINGDISABLED": "Sjálfvirk auðkenning er slökkt sjálfkrafa. Notaðu hnappinn „Virkja auðkenningarskönnun“ hér að ofan eða bættu auðkenni við handvirkt ef þú veist samningsfang þess.",
                 "HIDDENTITLE": "Falin tákn",
                 "CONTEXTMENUHIDE": "Fela tákn",
                 "ITEMSSUFFIX": "hlutur/hlutir",
                 "NONENUMERABLETOOLTIP": "Þetta safn styður ekki lista yfir einstök atriði - í staðinn er sýnt hversu marga þú átt.",
-                "CHECKINGENABLED": "Athuga á",
-                "CHECKINGDISABLED": "Að haka við",
-                "CHECKINGENABLEDTOOLTIP": "Táknaathugun er virk - Altitude athugar reglulega hvort tákn séu til staðar á heimilisföngum þínum og uppfærir stöðu. Smelltu til að slökkva á þessu.",
-                "CHECKINGDISABLEDTOOLTIP": "Táknaathugun er slökkt - smelltu til að kveikja aftur á henni.",
-                "CHECKINGDISABLEDNOTICE": "Sjálfvirk auðkennisathugun er slökkt. Heimilisföngin þín eru ekki skönnuð í leit að auðkennum og stöður munu ekki uppfærast. Þú getur samt bætt við auðkenni handvirkt."
+                "CHECKINGDISABLEDTITLE": "Táknaskönnun er slökkt",
+                "CHECKINGDISABLEDNOTICE": "Sjálfvirk auðkennisleit er slökkt sjálfgefið. Heimilisföngin þín eru ekki skönnuð í leit að auðkennum og stöður uppfærast ekki fyrr en þú kveikir á því.",
+                "ENABLEBUTTON": "Virkja táknskönnun",
+                "ENABLECONFIRMTITLE": "Virkja táknaskönnun?",
+                "ENABLECONFIRMCONTENT": "Altitude mun reglulega athuga blokkakönnun til að sjá hvaða MRC20/MRC721 tákn vistföng þín geyma og staðfesta síðan stöðu og eignarhald beint á móti þínum eigin hnút. Fyrsta skoðunin keyrir þegar veskið þitt hefur verið að fullu samstillt og eftir það endurtekur hún sig sjálfgefið á 60 mínútna fresti. Þú getur breytt þessu tímabili eða slökkt aftur á táknaskönnun hvenær sem er í Valkostir > Könnuður."
             },
             "ADDTOKEN": {
                 "TITLE": "Bæta við tákni",

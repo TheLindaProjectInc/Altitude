@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Tieni l'ultimo"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Scansione del token",
+                "TOKENSCANNINGENABLED": "Verifica automaticamente gli indirizzi per i token e aggiorna i saldi",
+                "TOKENSCANNINGINFO": "Disattivato per impostazione predefinita. Quando è abilitato, Altitude controlla un block explorer per scoprire i token MRC20/MRC721 detenuti dai tuoi indirizzi, quindi verifica i saldi e la proprietà direttamente sul tuo nodo. La maggior parte dei wallet non detiene token, quindi questa opzione è facoltativa per evitare richieste in background non necessarie.",
+                "TOKENSCANNINGINTERVALLABEL": "Controllare ogni (minuti)",
+                "TOKENSCANNINGINTERVALINFO": "Dopo l'attivazione, il primo controllo viene eseguito una volta che il portafoglio è completamente sincronizzato. Successivamente, Altitude ripete il controllo a questo intervallo.",
                 "BLOCKEXPLORERTITLE": "Supporta Explorer",
                 "BLOCKEXPLORERINFO": "Il sito si è aperto visualizzando una transazione nell'explorer dei blocchi (ad esempio, facendo clic con il pulsante destro del mouse su una transazione > Visualizza nell'explorer).",
                 "TOKENDISCOVERYTITLE": "Scoperta del token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Svelare",
                 "EMPTYTITLE": "Nessun token trovato finora",
                 "EMPTYDETAIL": "Altitude controlla automaticamente un block explorer alla ricerca di token MRC20 e MRC721 inviati ai tuoi indirizzi, quindi verifica tutto in tempo reale sul tuo nodo. Puoi anche aggiungere un token manualmente se conosci il suo indirizzo di contratto.",
-                "EMPTYDETAILCHECKINGDISABLED": "Il controllo automatico dei token è disattivato, quindi i tuoi indirizzi non vengono controllati per la presenza di token. Riattivalo qui sopra oppure aggiungi un token manualmente se conosci il suo indirizzo di contratto.",
+                "EMPTYDETAILCHECKINGDISABLED": "Il controllo automatico dei token è disattivato per impostazione predefinita. Utilizza il pulsante \"Abilita scansione token\" qui sopra oppure aggiungi un token manualmente se ne conosci l'indirizzo del contratto.",
                 "HIDDENTITLE": "Token nascosti",
                 "CONTEXTMENUHIDE": "Nascondi token",
                 "ITEMSSUFFIX": "elementi)",
                 "NONENUMERABLETOOLTIP": "Questa collezione non supporta la visualizzazione dei singoli articoli, ma mostra la quantità totale in tuo possesso.",
-                "CHECKINGENABLED": "Controllo",
-                "CHECKINGDISABLED": "Spuntare",
-                "CHECKINGENABLEDTOOLTIP": "Il controllo dei token è attivo: Altitude verifica periodicamente i tuoi indirizzi per la presenza di token e aggiorna i saldi. Clicca per disattivarlo.",
-                "CHECKINGDISABLEDTOOLTIP": "Il controllo del token è disattivato: fai clic per riattivarlo.",
-                "CHECKINGDISABLEDNOTICE": "Il controllo automatico dei token è disattivato. I tuoi indirizzi non verranno scansionati alla ricerca di token e i saldi non verranno aggiornati. Puoi comunque aggiungere un token manualmente."
+                "CHECKINGDISABLEDTITLE": "La scansione dei token è disattivata",
+                "CHECKINGDISABLEDNOTICE": "Il controllo automatico dei token è disattivato per impostazione predefinita. I tuoi indirizzi non vengono scansionati alla ricerca di token e i saldi non verranno aggiornati finché non lo attiverai.",
+                "ENABLEBUTTON": "Abilita la scansione del token",
+                "ENABLECONFIRMTITLE": "Abilitare la scansione del token?",
+                "ENABLECONFIRMCONTENT": "Altitude controllerà periodicamente un block explorer per vedere quali token MRC20/MRC721 sono presenti nei tuoi indirizzi, quindi verificherà i saldi e la proprietà direttamente sul tuo nodo. Il primo controllo viene eseguito una volta che il tuo wallet è completamente sincronizzato, dopodiché si ripete ogni 60 minuti per impostazione predefinita. Puoi modificare questo intervallo o disattivare la scansione dei token in qualsiasi momento da Opzioni > Esplora."
             },
             "ADDTOKEN": {
                 "TITLE": "Aggiungi token",

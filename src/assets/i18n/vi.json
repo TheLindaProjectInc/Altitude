@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Giữ lại cuối cùng"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Quét mã thông báo",
+                "TOKENSCANNINGENABLED": "Tự động kiểm tra địa chỉ để tìm token và cập nhật số dư.",
+                "TOKENSCANNINGINFO": "Mặc định là tắt. Khi được bật, Altitude sẽ kiểm tra trình khám phá khối để phát hiện các token MRC20/MRC721 do địa chỉ của bạn nắm giữ, sau đó xác minh số dư và quyền sở hữu trực tiếp với node của riêng bạn. Hầu hết các ví không nắm giữ bất kỳ token nào, vì vậy đây là tùy chọn để tránh các yêu cầu nền không cần thiết.",
+                "TOKENSCANNINGINTERVALLABEL": "Kiểm tra mỗi (phút)",
+                "TOKENSCANNINGINTERVALINFO": "Sau khi kích hoạt, lần kiểm tra đầu tiên sẽ được thực hiện một lần khi ví của bạn đã được đồng bộ hóa hoàn toàn. Sau đó, Altitude sẽ kiểm tra lại theo khoảng thời gian này.",
                 "BLOCKEXPLORERTITLE": "Trình khám phá khối",
                 "BLOCKEXPLORERINFO": "Trang web này được mở ra khi xem một giao dịch trên trình khám phá khối (ví dụ: nhấp chuột phải vào một giao dịch > Xem trên Trình khám phá).",
                 "TOKENDISCOVERYTITLE": "Khám phá Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Bỏ ẩn",
                 "EMPTYTITLE": "Chưa tìm thấy mã thông báo nào",
                 "EMPTYDETAIL": "Altitude tự động kiểm tra trình khám phá khối để tìm các token MRC20 và MRC721 được gửi đến địa chỉ của bạn, sau đó xác minh mọi thứ trực tiếp với node của riêng bạn. Bạn cũng có thể thêm token theo cách thủ công nếu bạn biết địa chỉ hợp đồng của nó.",
-                "EMPTYDETAILCHECKINGDISABLED": "Chức năng kiểm tra token tự động đã bị tắt, vì vậy địa chỉ của bạn không được kiểm tra xem có token hay không. Hãy bật lại chức năng này ở trên, hoặc thêm token thủ công nếu bạn biết địa chỉ hợp đồng của nó.",
+                "EMPTYDETAILCHECKINGDISABLED": "Chức năng kiểm tra token tự động được tắt theo mặc định. Hãy sử dụng nút \"Bật quét token\" ở trên hoặc thêm token thủ công nếu bạn biết địa chỉ hợp đồng của nó.",
                 "HIDDENTITLE": "Mã thông báo ẩn",
                 "CONTEXTMENUHIDE": "Ẩn mã thông báo",
                 "ITEMSSUFFIX": "mặt hàng)",
                 "NONENUMERABLETOOLTIP": "Bộ sưu tập này không hỗ trợ liệt kê từng mặt hàng riêng lẻ - thay vào đó chỉ hiển thị số lượng bạn đang sở hữu.",
-                "CHECKINGENABLED": "Kiểm tra",
-                "CHECKINGDISABLED": "Đánh dấu hoàn thành",
-                "CHECKINGENABLEDTOOLTIP": "Chức năng kiểm tra token đang được bật - Altitude định kỳ kiểm tra địa chỉ của bạn để tìm token và cập nhật số dư. Nhấp vào đây để tắt.",
-                "CHECKINGDISABLEDTOOLTIP": "Chức năng kiểm tra mã thông báo đã tắt - hãy nhấp vào đây để bật lại.",
-                "CHECKINGDISABLEDNOTICE": "Tính năng kiểm tra token tự động đã bị tắt. Địa chỉ của bạn sẽ không được quét token và số dư sẽ không được cập nhật. Bạn vẫn có thể thêm token thủ công."
+                "CHECKINGDISABLEDTITLE": "Tính năng quét mã thông báo đã tắt.",
+                "CHECKINGDISABLEDNOTICE": "Chức năng kiểm tra token tự động được tắt theo mặc định. Địa chỉ của bạn sẽ không được quét token và số dư sẽ không được cập nhật cho đến khi bạn bật chức năng này lên.",
+                "ENABLEBUTTON": "Bật tính năng quét mã thông báo",
+                "ENABLECONFIRMTITLE": "Bật tính năng quét mã thông báo?",
+                "ENABLECONFIRMCONTENT": "Altitude sẽ định kỳ kiểm tra trình khám phá khối để xem địa chỉ của bạn đang nắm giữ những token MRC20/MRC721 nào, sau đó xác minh số dư và quyền sở hữu trực tiếp với node của bạn. Lần kiểm tra đầu tiên sẽ chạy sau khi ví của bạn được đồng bộ hóa hoàn toàn, và sau đó mặc định sẽ lặp lại mỗi 60 phút. Bạn có thể thay đổi khoảng thời gian này hoặc tắt tính năng quét token bất cứ lúc nào từ Tùy chọn > Trình khám phá."
             },
             "ADDTOKEN": {
                 "TITLE": "Thêm mã thông báo",

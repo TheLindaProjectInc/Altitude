@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Letzten Tag behalten"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token-Scanning",
+                "TOKENSCANNINGENABLED": "Automatische Überprüfung der Adressen auf Token und Aktualisierung der Guthaben",
+                "TOKENSCANNINGINFO": "Standardmäßig deaktiviert. Ist diese Funktion aktiviert, prüft Altitude einen Block-Explorer, um MRC20/MRC721-Token in Ihren Adressen zu finden, und verifiziert anschließend Guthaben und Eigentumsverhältnisse direkt auf Ihrem eigenen Node. Da die meisten Wallets keine Token halten, ist diese Funktion optional, um unnötige Hintergrundanfragen zu vermeiden.",
+                "TOKENSCANNINGINTERVALLABEL": "Prüfen Sie alle (Minuten)",
+                "TOKENSCANNINGINTERVALINFO": "Nach der Aktivierung erfolgt die erste Überprüfung, sobald Ihre Wallet vollständig synchronisiert ist. Danach führt Altitude in diesem Intervall erneute Überprüfungen durch.",
                 "BLOCKEXPLORERTITLE": "Block-Explorer",
                 "BLOCKEXPLORERINFO": "Die Website öffnete sich, als eine Transaktion im Block-Explorer angezeigt wurde (z. B. Rechtsklick auf eine Transaktion > Im Explorer anzeigen).",
                 "TOKENDISCOVERYTITLE": "Token-Erkennung",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Einblenden",
                 "EMPTYTITLE": "Noch keine Tokens gefunden",
                 "EMPTYDETAIL": "Altitude prüft automatisch einen Block-Explorer auf MRC20- und MRC721-Token, die an Ihre Adressen gesendet wurden, und verifiziert anschließend alles live auf Ihrem eigenen Knoten. Sie können einen Token auch manuell hinzufügen, wenn Sie dessen Vertragsadresse kennen.",
-                "EMPTYDETAILCHECKINGDISABLED": "Die automatische Tokenprüfung ist deaktiviert, daher werden Ihre Adressen nicht auf Token überprüft. Aktivieren Sie sie oben wieder oder fügen Sie einen Token manuell hinzu, falls Sie dessen Vertragsadresse kennen.",
+                "EMPTYDETAILCHECKINGDISABLED": "Die automatische Tokenprüfung ist standardmäßig deaktiviert. Verwenden Sie die Schaltfläche „Tokenprüfung aktivieren“ oben oder fügen Sie ein Token manuell hinzu, wenn Sie dessen Vertragsadresse kennen.",
                 "HIDDENTITLE": "Versteckte Token",
                 "CONTEXTMENUHIDE": "Token ausblenden",
                 "ITEMSSUFFIX": "Artikel)",
                 "NONENUMERABLETOOLTIP": "Diese Sammlung unterstützt keine Auflistung einzelner Artikel – stattdessen wird angezeigt, wie viele Sie besitzen.",
-                "CHECKINGENABLED": "Überprüfung",
-                "CHECKINGDISABLED": "Abhaken",
-                "CHECKINGENABLEDTOOLTIP": "Die Tokenprüfung ist aktiviert – Altitude prüft regelmäßig Ihre Adressen auf Token und aktualisiert die Guthaben. Klicken Sie hier, um die Prüfung zu deaktivieren.",
-                "CHECKINGDISABLEDTOOLTIP": "Die Token-Prüfung ist deaktiviert – klicken Sie hier, um sie wieder zu aktivieren.",
-                "CHECKINGDISABLEDNOTICE": "Die automatische Tokenprüfung ist deaktiviert. Ihre Adressen werden nicht auf Token überprüft und Ihre Guthaben werden nicht aktualisiert. Sie können weiterhin manuell Token hinzufügen."
+                "CHECKINGDISABLEDTITLE": "Token-Scanning ist deaktiviert",
+                "CHECKINGDISABLEDNOTICE": "Die automatische Tokenprüfung ist standardmäßig deaktiviert. Ihre Adressen werden nicht auf Token überprüft und Ihre Guthaben werden erst aktualisiert, wenn Sie diese Funktion aktivieren.",
+                "ENABLEBUTTON": "Token-Scan aktivieren",
+                "ENABLECONFIRMTITLE": "Token-Scan aktivieren?",
+                "ENABLECONFIRMCONTENT": "Altitude prüft regelmäßig einen Block-Explorer, um festzustellen, welche MRC20/MRC721-Token Ihre Adressen halten, und verifiziert anschließend Guthaben und Eigentumsverhältnisse direkt mit Ihrem eigenen Node. Die erste Prüfung erfolgt, sobald Ihre Wallet vollständig synchronisiert ist, danach standardmäßig alle 60 Minuten. Sie können dieses Intervall jederzeit unter Optionen > Explorer ändern oder die Token-Prüfung deaktivieren."
             },
             "ADDTOKEN": {
                 "TITLE": "Token hinzufügen",

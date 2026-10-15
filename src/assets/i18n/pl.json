@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Zachowaj na końcu"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Skanowanie tokenów",
+                "TOKENSCANNINGENABLED": "Automatyczne sprawdzanie adresów pod kątem tokenów i odświeżanie sald",
+                "TOKENSCANNINGINFO": "Domyślnie wyłączone. Po włączeniu Altitude sprawdza eksplorator bloków w celu wykrycia tokenów MRC20/MRC721 przechowywanych na Twoich adresach, a następnie weryfikuje saldo i własność bezpośrednio w Twoim węźle. Większość portfeli nie przechowuje żadnych tokenów, więc jest to opcja opcjonalna, aby uniknąć niepotrzebnych żądań w tle.",
+                "TOKENSCANNINGINTERVALLABEL": "Sprawdzaj co (minuty)",
+                "TOKENSCANNINGINTERVALINFO": "Po włączeniu, pierwsze sprawdzenie zostanie wykonane po pełnej synchronizacji portfela. Następnie, w tym samym odstępie czasu, sprawdzana będzie wysokość.",
                 "BLOCKEXPLORERTITLE": "Eksplorator bloków",
                 "BLOCKEXPLORERINFO": "Witryna otwierała się podczas przeglądania transakcji w eksploratorze bloków (np. po kliknięciu transakcji prawym przyciskiem myszy > wybraniu opcji Wyświetl w eksploratorze).",
                 "TOKENDISCOVERYTITLE": "Odkrywanie tokenów",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Odkryj",
                 "EMPTYTITLE": "Nie znaleziono jeszcze żadnych tokenów",
                 "EMPTYDETAIL": "Altitude automatycznie sprawdza eksplorator bloków pod kątem tokenów MRC20 i MRC721 wysłanych na Twoje adresy, a następnie weryfikuje wszystko na żywo na Twoim własnym węźle. Możesz również dodać token ręcznie, jeśli znasz jego adres kontraktu.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatyczne sprawdzanie tokenów jest wyłączone, więc Twoje adresy nie są sprawdzane pod kątem tokenów. Włącz je ponownie powyżej lub dodaj token ręcznie, jeśli znasz jego adres kontraktowy.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatyczne sprawdzanie tokenów jest domyślnie wyłączone. Użyj przycisku „Włącz skanowanie tokenów” powyżej lub dodaj token ręcznie, jeśli znasz adres jego umowy.",
                 "HIDDENTITLE": "Ukryte tokeny",
                 "CONTEXTMENUHIDE": "Ukryj token",
                 "ITEMSSUFFIX": "rzeczy)",
                 "NONENUMERABLETOOLTIP": "Kolekcja ta nie obsługuje wystawiania pojedynczych przedmiotów. Zamiast tego wyświetlana jest liczba posiadanych przedmiotów.",
-                "CHECKINGENABLED": "Sprawdzanie",
-                "CHECKINGDISABLED": "Odfajkowanie",
-                "CHECKINGENABLEDTOOLTIP": "Sprawdzanie tokenów jest włączone – Altitude okresowo sprawdza Twoje adresy pod kątem tokenów i odświeża saldo. Kliknij, aby wyłączyć.",
-                "CHECKINGDISABLEDTOOLTIP": "Sprawdzanie tokenów jest wyłączone — kliknij, aby je ponownie włączyć.",
-                "CHECKINGDISABLEDNOTICE": "Automatyczne sprawdzanie tokenów jest wyłączone. Twoje adresy nie są skanowane w poszukiwaniu tokenów, a salda nie będą aktualizowane. Nadal możesz dodać token ręcznie."
+                "CHECKINGDISABLEDTITLE": "Skanowanie tokenów jest wyłączone",
+                "CHECKINGDISABLEDNOTICE": "Automatyczne sprawdzanie tokenów jest domyślnie wyłączone. Twoje adresy nie będą skanowane w poszukiwaniu tokenów, a salda nie zostaną zaktualizowane, dopóki tej funkcji nie włączysz.",
+                "ENABLEBUTTON": "Włącz skanowanie tokenów",
+                "ENABLECONFIRMTITLE": "Włączyć skanowanie tokenów?",
+                "ENABLECONFIRMCONTENT": "Altitude będzie okresowo sprawdzać eksplorator bloków, aby sprawdzić, jakie tokeny MRC20/MRC721 znajdują się na Twoich adresach, a następnie weryfikować saldo i własność bezpośrednio na Twoim własnym węźle. Pierwsze sprawdzenie zostanie przeprowadzone po pełnej synchronizacji portfela, a następnie będzie powtarzane domyślnie co 60 minut. Możesz zmienić ten interwał lub wyłączyć skanowanie tokenów w dowolnym momencie, wybierając Opcje > Eksplorator."
             },
             "ADDTOKEN": {
                 "TITLE": "Dodaj token",

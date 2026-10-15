@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Kenbe dènye"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Eskane Jeton",
+                "TOKENSCANNINGENABLED": "Tcheke adrès yo otomatikman pou jeton epi rafrechi balans yo",
+                "TOKENSCANNINGINFO": "Enfim pa default. Lè li aktive, Altitude tcheke yon eksploratè blòk pou dekouvri jeton MRC20/MRC721 ki nan adrès ou yo, answit verifye balans ak pwopriyetè dirèkteman ak pwòp nòd ou a. Pifò bous pa gen okenn jeton, kidonk sa a se yon opsyon pou evite demann background ki pa nesesè.",
+                "TOKENSCANNINGINTERVALLABEL": "Tcheke chak (minit)",
+                "TOKENSCANNINGINTERVALINFO": "Apre aktive, premye verifikasyon an ap fèt yon fwa bous ou a fin senkronize nèt. Apre sa, Altitude ap verifye ankò nan entèval sa a.",
                 "BLOCKEXPLORERTITLE": "Eksploratè Blòk",
                 "BLOCKEXPLORERINFO": "Sit la te ouvri lè w ap gade yon tranzaksyon sou eksploratè blòk la (pa egzanp, klike sou yon tranzaksyon ak bouton dwat sourit la > Gade sou Eksploratè a).",
                 "TOKENDISCOVERYTITLE": "Dekouvèt Jeton",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Montre",
                 "EMPTYTITLE": "Pa gen okenn jeton yo jwenn ankò",
                 "EMPTYDETAIL": "Altitude otomatikman tcheke yon eksploratè blòk pou jeton MRC20 ak MRC721 ki voye nan adrès ou yo, epi li verifye tout bagay an dirèk avèk pwòp nœd ou a. Ou kapab tou ajoute yon jeton manyèlman si ou konnen adrès kontra li.",
-                "EMPTYDETAILCHECKINGDISABLED": "Verifikasyon otomatik jeton an enfim, kidonk yo p ap verifye adrès ou yo pou jeton. Aktive l ankò anwo a, oubyen ajoute yon jeton manyèlman si ou konnen adrès kontra li.",
+                "EMPTYDETAILCHECKINGDISABLED": "Verifikasyon otomatik jeton yo enfim pa default. Sèvi ak bouton Aktive Analiz Jeton ki anwo a, oubyen ajoute yon jeton manyèlman si ou konnen adrès kontra li.",
                 "HIDDENTITLE": "Jeton kache",
                 "CONTEXTMENUHIDE": "Kache Jeton an",
                 "ITEMSSUFFIX": "atik(yo)",
                 "NONENUMERABLETOOLTIP": "Koleksyon sa a pa sipòte lis atik endividyèl - li pèmèt ou montre konbyen ou genyen pito.",
-                "CHECKINGENABLED": "Verifikasyon",
-                "CHECKINGDISABLED": "Tcheke",
-                "CHECKINGENABLEDTOOLTIP": "Verifikasyon jeton an aktive - Altitude tcheke adrès ou yo detanzantan pou jeton epi li mete balans yo ajou. Klike pou dezaktive.",
-                "CHECKINGDISABLEDTOOLTIP": "Verifikasyon jeton an etenn - klike pou aktive l ankò.",
-                "CHECKINGDISABLEDNOTICE": "Verifikasyon otomatik jeton an enfim. Yo pa eskane adrès ou yo pou jeton epi balans yo p ap mete ajou. Ou ka toujou ajoute yon jeton manyèlman."
+                "CHECKINGDISABLEDTITLE": "Eskane jeton an etenn",
+                "CHECKINGDISABLEDNOTICE": "Verifikasyon jeton otomatik la pa default. Yo pa pral eskane adrès ou yo pou jeton epi balans yo p ap mete ajou jiskaske ou aktive li.",
+                "ENABLEBUTTON": "Aktive Eskane Jeton",
+                "ENABLECONFIRMTITLE": "Aktive eskanè jeton?",
+                "ENABLECONFIRMCONTENT": "Altitude pral tcheke yon eksploratè blòk detanzantan pou wè ki jeton MRC20/MRC721 adrès ou yo genyen, answit verifye balans ak pwopriyetè dirèkteman avèk pwòp nòd ou a. Premye verifikasyon an fèt yon fwa bous ou a fin senkronize nèt, epi apre sa li repete chak 60 minit pa default. Ou ka chanje entèval sa a, oswa dezaktive eskanè jeton yo, nenpòt ki lè nan Opsyon > Eksploratè."
             },
             "ADDTOKEN": {
                 "TITLE": "Ajoute Jeton",

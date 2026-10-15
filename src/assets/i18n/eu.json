@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Azkena mantendu"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token eskaneatzea",
+                "TOKENSCANNINGENABLED": "Egiaztatu automatikoki helbideak tokenen bila eta freskatu saldoak",
+                "TOKENSCANNINGINFO": "Desaktibatuta lehenespenez. Gaituta dagoenean, Altitude-k bloke-arakatzaile bat egiaztatzen du zure helbideek dituzten MRC20/MRC721 tokenak aurkitzeko, eta gero saldoak eta jabetza zuzenean egiaztatzen ditu zure nodoarekin. Zorro gehienek ez dute tokenik gordetzen, beraz, hau aukerakoa da atzeko planoan beharrezkoak ez diren eskaerak saihesteko.",
+                "TOKENSCANNINGINTERVALLABEL": "Begiratu minuturo (minutu)",
+                "TOKENSCANNINGINTERVALINFO": "Gaitu ondoren, lehenengo egiaztapena zorroa guztiz sinkronizatu ondoren exekutatzen da. Ondoren, Altitude-k tarte horretan berriro egiaztatzen du.",
                 "BLOCKEXPLORERTITLE": "Bloke-arakatzailea",
                 "BLOCKEXPLORERINFO": "Gunea bloke-arakatzailean transakzio bat ikustean ireki zen (adibidez, transakzio batean eskuineko botoiarekin klik eginez > Arakatzailean ikusi).",
                 "TOKENDISCOVERYTITLE": "Tokenen aurkikuntza",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Erakutsi",
                 "EMPTYTITLE": "Ez da tokenik aurkitu oraindik",
                 "EMPTYDETAIL": "Altitude-k automatikoki bloke-esploratzaile batean egiaztatzen ditu zure helbideetara bidalitako MRC20 eta MRC721 tokenak, eta gero dena zure nodoarekin egiaztatzen du. Token bat eskuz ere gehi dezakezu, bere kontratu-helbidea badakizu.",
-                "EMPTYDETAILCHECKINGDISABLED": "Tokenen egiaztapen automatikoa desaktibatuta dago, beraz, zure helbideak ez dira tokenak egiaztatzen. Aktibatu berriro goian, edo gehitu token bat eskuz bere kontratu helbidea badakizu.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tokenen egiaztapen automatikoa desaktibatuta dago lehenespenez. Erabili goiko \"Gaitu tokenen eskaneatzea\" botoia, edo gehitu token bat eskuz bere kontratuaren helbidea badakizu.",
                 "HIDDENTITLE": "Ezkutuko tokenak",
                 "CONTEXTMENUHIDE": "Ezkutatu tokena",
                 "ITEMSSUFFIX": "elementu(ak)",
                 "NONENUMERABLETOOLTIP": "Bilduma honek ez du onartzen banakako elementuak zerrendatzea - horren ordez, zenbat dituzun erakustea.",
-                "CHECKINGENABLED": "Egiaztatzen",
-                "CHECKINGDISABLED": "Markatzen",
-                "CHECKINGENABLEDTOOLTIP": "Token egiaztapena aktibatuta dago - Altitude-k aldian-aldian egiaztatzen ditu zure helbideak tokenak bilatzeko eta saldoak freskatzen ditu. Sakatu desaktibatzeko.",
-                "CHECKINGDISABLEDTOOLTIP": "Token egiaztapena desaktibatuta dago - egin klik berriro aktibatzeko.",
-                "CHECKINGDISABLEDNOTICE": "Tokenen egiaztapen automatikoa desaktibatuta dago. Zure helbideak ez dira eskaneatzen tokenen bila eta saldoak ez dira eguneratuko. Eskuz gehi dezakezu token bat oraindik."
+                "CHECKINGDISABLEDTITLE": "Token eskaneatzea desaktibatuta dago",
+                "CHECKINGDISABLEDNOTICE": "Tokenen egiaztapen automatikoa desaktibatuta dago lehenespenez. Zure helbideak ez dira eskaneatzen tokenen bila eta saldoak ez dira eguneratuko aktibatu arte.",
+                "ENABLEBUTTON": "Gaitu tokenen eskaneatzea",
+                "ENABLECONFIRMTITLE": "Token eskaneatzea gaitu?",
+                "ENABLECONFIRMCONTENT": "Altitude-k aldian-aldian bloke-esploratzaile bat egiaztatuko du zure helbideek zein MRC20/MRC721 token dituzten ikusteko, eta ondoren saldoak eta jabetza zuzenean egiaztatuko ditu zure nodoaren aurka. Lehenengo egiaztapena zure zorroa guztiz sinkronizatu ondoren exekutatzen da, eta ondoren, 60 minuturo errepikatzen da lehenespenez. Tarte hori alda dezakezu, edo tokenen eskaneatzea berriro desaktibatu, edozein unetan Aukerak > Esploratzailea ataletik."
             },
             "ADDTOKEN": {
                 "TITLE": "Gehitu tokena",

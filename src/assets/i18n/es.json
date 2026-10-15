@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Mantener al último"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Escaneo de tokens",
+                "TOKENSCANNINGENABLED": "Comprueba automáticamente las direcciones en busca de tokens y actualiza los saldos.",
+                "TOKENSCANNINGINFO": "Desactivado por defecto. Al activarlo, Altitude consulta un explorador de bloques para descubrir los tokens MRC20/MRC721 que poseen tus direcciones y, a continuación, verifica los saldos y la propiedad directamente con tu propio nodo. La mayoría de las carteras no almacenan tokens, por lo que esta opción es opcional para evitar solicitudes innecesarias en segundo plano.",
+                "TOKENSCANNINGINTERVALLABEL": "Comprobar cada (minutos)",
+                "TOKENSCANNINGINTERVALINFO": "Tras activarla, la primera comprobación se realiza una vez que la cartera se haya sincronizado por completo. Posteriormente, Altitude vuelve a comprobarla en ese intervalo.",
                 "BLOCKEXPLORERTITLE": "Explorador de bloques",
                 "BLOCKEXPLORERINFO": "El sitio se abrió al visualizar una transacción en el explorador de bloques (por ejemplo, haciendo clic con el botón derecho en una transacción > Ver en el explorador).",
                 "TOKENDISCOVERYTITLE": "Descubrimiento de tokens",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mostrar",
                 "EMPTYTITLE": "Aún no se han encontrado tokens.",
                 "EMPTYDETAIL": "Altitude comprueba automáticamente en un explorador de bloques si se han enviado tokens MRC20 y MRC721 a tus direcciones, y luego verifica todo en tiempo real contra tu propio nodo. También puedes añadir un token manualmente si conoces la dirección de su contrato.",
-                "EMPTYDETAILCHECKINGDISABLED": "La comprobación automática de tokens está desactivada, por lo que no se están verificando tus direcciones en busca de tokens. Vuelve a activarla arriba o añade un token manualmente si conoces su dirección de contrato.",
+                "EMPTYDETAILCHECKINGDISABLED": "La comprobación automática de tokens está desactivada por defecto. Utilice el botón \"Habilitar escaneo de tokens\" que aparece arriba, o añada un token manualmente si conoce su dirección de contrato.",
                 "HIDDENTITLE": "Fichas ocultas",
                 "CONTEXTMENUHIDE": "Ocultar token",
                 "ITEMSSUFFIX": "elementos)",
                 "NONENUMERABLETOOLTIP": "Esta colección no permite listar artículos individualmente, sino que muestra cuántos tienes.",
-                "CHECKINGENABLED": "Revisando",
-                "CHECKINGDISABLED": "Marcando",
-                "CHECKINGENABLEDTOOLTIP": "La comprobación de tokens está activada: Altitude revisa periódicamente tus direcciones en busca de tokens y actualiza los saldos. Haz clic para desactivarla.",
-                "CHECKINGDISABLEDTOOLTIP": "La comprobación de tokens está desactivada; haga clic para volver a activarla.",
-                "CHECKINGDISABLEDNOTICE": "La comprobación automática de tokens está desactivada. No se están escaneando tus direcciones en busca de tokens y los saldos no se actualizarán. Aún puedes añadir un token manualmente."
+                "CHECKINGDISABLEDTITLE": "El escaneo de tokens está desactivado.",
+                "CHECKINGDISABLEDNOTICE": "La comprobación automática de tokens está desactivada por defecto. Tus direcciones no se escanean en busca de tokens y los saldos no se actualizarán hasta que la actives.",
+                "ENABLEBUTTON": "Habilitar escaneo de tokens",
+                "ENABLECONFIRMTITLE": "¿Habilitar el escaneo de tokens?",
+                "ENABLECONFIRMCONTENT": "Altitude revisará periódicamente un explorador de bloques para ver qué tokens MRC20/MRC721 poseen tus direcciones y, a continuación, verificará los saldos y la propiedad directamente con tu propio nodo. La primera revisión se ejecuta una vez que tu billetera se haya sincronizado por completo y, posteriormente, se repite cada 60 minutos de forma predeterminada. Puedes cambiar este intervalo o desactivar el escaneo de tokens en cualquier momento desde Opciones > Explorador."
             },
             "ADDTOKEN": {
                 "TITLE": "Agregar token",

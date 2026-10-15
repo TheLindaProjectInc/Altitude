@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Manter o último"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Escaneado de tokens",
+                "TOKENSCANNINGENABLED": "Comprobar automaticamente os enderezos para detectar tokens e actualizar os saldos",
+                "TOKENSCANNINGINFO": "Desactivado por defecto. Cando está activado, Altitude comproba un explorador de bloques para descubrir tokens MRC20/MRC721 que posúen os teus enderezos e, a continuación, verifica os saldos e a propiedade directamente co teu propio nodo. A maioría das carteiras non conteñen ningún token, polo que isto é opcional para evitar solicitudes innecesarias en segundo plano.",
+                "TOKENSCANNINGINTERVALLABEL": "Comprobar cada (minutos)",
+                "TOKENSCANNINGINTERVALINFO": "Despois de activala, a primeira comprobación execútase unha vez que a carteira estea completamente sincronizada. Despois diso, Altitude volve comprobar neste intervalo.",
                 "BLOCKEXPLORERTITLE": "Explorador de bloques",
                 "BLOCKEXPLORERINFO": "O sitio abriuse ao visualizar unha transacción no explorador de bloques (por exemplo, premer co botón dereito nunha transacción > Ver no explorador).",
                 "TOKENDISCOVERYTITLE": "Descubrimento de tokens",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Mostrar",
                 "EMPTYTITLE": "Aínda non se atoparon tokens",
                 "EMPTYDETAIL": "Altitude comproba automaticamente nun explorador de bloques os tokens MRC20 e MRC721 enviados aos teus enderezos e, a continuación, verifica todo en directo co teu propio nodo. Tamén podes engadir un token manualmente se coñeces o seu enderezo de contrato.",
-                "EMPTYDETAILCHECKINGDISABLED": "A comprobación automática de tokens está desactivada, polo que non se comprobarán os teus enderezos para detectar tokens. Activaa de novo arriba ou engade un token manualmente se coñeces o seu enderezo contractual.",
+                "EMPTYDETAILCHECKINGDISABLED": "A comprobación automática de tokens está desactivada por defecto. Usa o botón Activar a comprobación de tokens que aparece arriba ou engade un token manualmente se coñeces o seu enderezo contractual.",
                 "HIDDENTITLE": "Fichas ocultas",
                 "CONTEXTMENUHIDE": "Ocultar o token",
                 "ITEMSSUFFIX": "artigo(s)",
                 "NONENUMERABLETOOLTIP": "Esta colección non permite listar elementos individuais; no seu lugar, mostra cantos tes.",
-                "CHECKINGENABLED": "Comprobación activada",
-                "CHECKINGDISABLED": "Marcando",
-                "CHECKINGENABLEDTOOLTIP": "A comprobación de tokens está activada: Altitude comproba periodicamente os teus enderezos para detectar tokens e actualiza os saldos. Fai clic para desactivala.",
-                "CHECKINGDISABLEDTOOLTIP": "A comprobación de tokens está desactivada. Fai clic para activala de novo.",
-                "CHECKINGDISABLEDNOTICE": "A comprobación automática de tokens está desactivada. Non se están a escanear os teus enderezos para detectar tokens e os saldos non se actualizarán. Aínda podes engadir un token manualmente."
+                "CHECKINGDISABLEDTITLE": "A dixitalización de tokens está desactivada",
+                "CHECKINGDISABLEDNOTICE": "A comprobación automática de tokens está desactivada por defecto. Os teus enderezos non se analizarán para detectar tokens e os saldos non se actualizarán ata que a actives.",
+                "ENABLEBUTTON": "Activar a dixitalización de tokens",
+                "ENABLECONFIRMTITLE": "Activar a análise de tokens?",
+                "ENABLECONFIRMCONTENT": "Altitude comprobará periodicamente un explorador de bloques para ver que tokens MRC20/MRC721 conteñen os teus enderezos e, a continuación, verificará os saldos e a propiedade directamente co teu propio nodo. A primeira comprobación execútase unha vez que a túa carteira estea completamente sincronizada e, despois, repítese cada 60 minutos por defecto. Podes cambiar este intervalo ou desactivar a dixitalización de tokens en calquera momento desde Opcións > Explorador."
             },
             "ADDTOKEN": {
                 "TITLE": "Engadir token",

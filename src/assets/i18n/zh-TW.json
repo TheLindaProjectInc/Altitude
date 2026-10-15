@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "保留最後"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "令牌掃描",
+                "TOKENSCANNINGENABLED": "自動檢查地址中的代幣並刷新餘額",
+                "TOKENSCANNINGINFO": "預設關閉。啟用後，Altitude 會檢查區塊瀏覽器以發現您地址持有的 MRC20/MRC721 代幣，然後直接在您的節點上驗證餘額和所有權。大多數錢包不持有任何代幣，因此此功能為可選功能，以避免不必要的後台請求。",
+                "TOKENSCANNINGINTERVALLABEL": "每隔（分鐘）檢查一次",
+                "TOKENSCANNINGINTERVALINFO": "啟用後，錢包完全同步後會執行第一次檢查。之後，Altitude 會依此間隔重新檢查。",
                 "BLOCKEXPLORERTITLE": "區塊瀏覽器",
                 "BLOCKEXPLORERINFO": "在區塊瀏覽器中查看交易時（例如，右鍵單擊交易 > 在瀏覽器中查看），網站會開啟。",
                 "TOKENDISCOVERYTITLE": "代幣發現",
@@ -753,16 +758,16 @@
                 "UNHIDE": "取消隱藏",
                 "EMPTYTITLE": "尚未找到令牌",
                 "EMPTYDETAIL": "Altitude 會自動檢查區塊瀏覽器，尋找發送到您地址的 MRC20 和 MRC721 代幣，然後使用您自己的節點即時驗證所有資訊。如果您知道代幣的合約地址，也可以手動新增。",
-                "EMPTYDETAILCHECKINGDISABLED": "自動代幣檢查功能已關閉，因此系統不會檢查您的地址是否有代幣。請在上方重新啟用此功能，或者如果您知道代幣的合約地址，您也可以手動新增代幣。",
+                "EMPTYDETAILCHECKINGDISABLED": "預設情況下，自動代幣檢查功能已關閉。請使用上方的「啟用代幣掃描」按鈕啟用此功能，或者如果您知道代幣的合約地址，您也可以手動新增代幣。",
                 "HIDDENTITLE": "隱藏令牌",
                 "CONTEXTMENUHIDE": "隱藏令牌",
                 "ITEMSSUFFIX": "專案)",
                 "NONENUMERABLETOOLTIP": "此收藏夾不支援列出單一商品，而是顯示您擁有的商品數量。",
-                "CHECKINGENABLED": "檢查",
-                "CHECKINGDISABLED": "勾選",
-                "CHECKINGENABLEDTOOLTIP": "代幣檢查已開啟 - Altitude 會定期檢查您的地址中的代幣並刷新餘額。點擊即可關閉。",
-                "CHECKINGDISABLEDTOOLTIP": "令牌檢查已關閉 - 點選重新開啟。",
-                "CHECKINGDISABLEDNOTICE": "自動代幣檢查已關閉。您的地址將不會被掃描以查找代幣，餘額也不會更新。您仍然可以手動新增代幣。"
+                "CHECKINGDISABLEDTITLE": "令牌掃描已關閉",
+                "CHECKINGDISABLEDNOTICE": "自動代幣檢查功能預設為關閉。您的地址不會被掃描代幣，餘額也不會更新，直到您將其開啟。",
+                "ENABLEBUTTON": "啟用令牌掃描",
+                "ENABLECONFIRMTITLE": "啟用令牌掃描？",
+                "ENABLECONFIRMCONTENT": "Altitude 會定期檢查區塊瀏覽器，查看您的地址持有哪些 MRC20/MRC721 代幣，然後直接在您的節點上驗證餘額和所有權。首次檢查會在您的錢包完全同步後運行，之後預設每 60 分鐘重複一次。您可以隨時在「選項」>「瀏覽器」中變更此間隔或關閉代幣掃描。"
             },
             "ADDTOKEN": {
                 "TITLE": "添加令牌",

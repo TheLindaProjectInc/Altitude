@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Tazomy farany"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Fijerena Token",
+                "TOKENSCANNINGENABLED": "Jereo ho azy ny adiresy raha misy \"token\" sy ny \"refresh balances\"",
+                "TOKENSCANNINGINFO": "Tsy miasa amin'ny alàlan'ny default. Rehefa alefa, ny Altitude dia manamarina ny \"block explorer\" mba hahitana ireo \"token\" MRC20/MRC721 tazon'ny adiresinao, avy eo dia manamarina ny fifandanjana sy ny fananana mivantana amin'ny \"node\"-nao. Ny ankamaroan'ny \"wallet\" dia tsy mitazona \"token\", ka safidy fidirana ity mba hisorohana ny fangatahana tsy ilaina.",
+                "TOKENSCANNINGINTERVALLABEL": "Jereo isaky ny (minitra)",
+                "TOKENSCANNINGINTERVALINFO": "Rehefa alefa ny kaontinao dia hatao ny fanamarinana voalohany rehefa mifanaraka tsara ny poketranao. Aorian'izay dia averina jerena indray ny Altitude amin'io elanelam-potoana io.",
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Nisokatra ny tranonkala rehefa nijery fifanakalozana tao amin'ny \"block explorer\" (oh: tsindrio havanana amin'ny \"transaction\" > \"View on Explorer\").",
                 "TOKENDISCOVERYTITLE": "Fahitana Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Asehoy",
                 "EMPTYTITLE": "Mbola tsy misy Token hita",
                 "EMPTYDETAIL": "Manamarina ho azy ny \"block explorer\" ny \"tokens\" MRC20 sy MRC721 nalefa tany amin'ny adiresinao ny Altitude, avy eo manamarina mivantana ny zava-drehetra amin'ny \"node\"-nao. Azonao atao ihany koa ny manampy \"token\" amin'ny tanana raha fantatrao ny adiresin'ny fifanarahana.",
-                "EMPTYDETAILCHECKINGDISABLED": "Tsy mandeha ny fanamarinana token mandeha ho azy, ka tsy misy token hojerena ny adiresinao. Avereno ampiasaina indray etsy ambony, na ampio token amin'ny tanana raha fantatrao ny adiresin'ny fifanarahana.",
+                "EMPTYDETAILCHECKINGDISABLED": "Tsy mandeha ho azy ny fanamarinana famantarana mandeha ho azy. Ampiasao ny bokotra Enable Token Scanning etsy ambony, na ampio famantarana amin'ny tanana raha fantatrao ny adiresin'ny fifanarahana.",
                 "HIDDENTITLE": "Tokens miafina",
                 "CONTEXTMENUHIDE": "Afeno ny Token",
                 "ITEMSSUFFIX": "entana",
                 "NONENUMERABLETOOLTIP": "Tsy mahazaka ny fitanisana entana tsirairay ity fanangonana ity - fa mampiseho kosa ny isan'ny entana tazoninao.",
-                "CHECKINGENABLED": "Fanamarinana",
-                "CHECKINGDISABLED": "Manamarina",
-                "CHECKINGENABLEDTOOLTIP": "Mandeha ny fanamarinana ny \"Token\" - Manamarina tsy tapaka ny adiresinao ny Altitude raha misy \"Token\" ary manavao ny fifandanjana. Tsindrio raha hamono.",
-                "CHECKINGDISABLEDTOOLTIP": "Tsy mandeha ny fanamarinana ny mari-pamantarana - tsindrio raha hamerina hampiasa azy indray.",
-                "CHECKINGDISABLEDNOTICE": "Tsy mandeha ny fanamarinana token mandeha ho azy. Tsy misy token voasivana ny adiresinao ary tsy havaozina ny ambiny. Mbola afaka manampy token amin'ny tanana ianao."
+                "CHECKINGDISABLEDTITLE": "Tsy mandeha ny Token Scanning",
+                "CHECKINGDISABLEDNOTICE": "Tsy mandeha ho azy ny fanamarinana token. Tsy misy token voasivana ao amin'ny adiresinao ary tsy havaozina ny ambiny raha tsy alefanao.",
+                "ENABLEBUTTON": "Alefaso ny Token Scanning",
+                "ENABLECONFIRMTITLE": "Alefaso ve ny Token Scanning?",
+                "ENABLECONFIRMCONTENT": "Hanamarina tsy tapaka ny \"block explorer\" ny Altitude mba hahitana hoe iza amin'ireo \"token\" MRC20/MRC721 no ananan'ny adiresinao, avy eo dia hanamarina mivantana ny fifandanjana sy ny fananana amin'ny \"node\"-nao. Ny fanamarinana voalohany dia atao rehefa mifanaraka tanteraka ny \"wallet\"-nao, ary aorian'izay dia averina isaky ny 60 minitra amin'ny alàlan'ny default. Azonao atao ny manova ity elanelam-potoana ity, na mampitsahatra ny \"scanner\" ny \"token\", amin'ny fotoana rehetra avy amin'ny Options > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Ampio Token",

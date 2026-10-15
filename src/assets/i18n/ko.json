@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "마지막을 유지하세요"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "토큰 스캐닝",
+                "TOKENSCANNINGENABLED": "토큰을 찾기 위해 주소를 자동으로 확인하고 잔액을 갱신합니다.",
+                "TOKENSCANNINGINFO": "기본적으로 비활성화되어 있습니다. 활성화하면 Altitude는 블록 탐색기를 통해 사용자의 주소가 보유한 MRC20/MRC721 토큰을 확인한 후, 사용자의 노드에서 직접 잔액과 소유권을 검증합니다. 대부분의 지갑은 토큰을 보유하지 않으므로, 불필요한 백그라운드 요청을 방지하기 위해 선택적으로 활성화할 수 있습니다.",
+                "TOKENSCANNINGINTERVALLABEL": "(분)마다 확인하세요",
+                "TOKENSCANNINGINTERVALINFO": "이 기능을 활성화하면 지갑 동기화가 완전히 완료된 후 첫 번째 확인이 실행됩니다. 그 후 Altitude는 동일한 간격으로 다시 확인합니다.",
                 "BLOCKEXPLORERTITLE": "블록 탐색기",
                 "BLOCKEXPLORERINFO": "해당 사이트는 블록 탐색기에서 거래를 볼 때 열립니다(예: 거래를 마우스 오른쪽 버튼으로 클릭 > 탐색기에서 보기).",
                 "TOKENDISCOVERYTITLE": "토큰 발견",
@@ -753,16 +758,16 @@
                 "UNHIDE": "숨기기 해제",
                 "EMPTYTITLE": "토큰을 아직 찾지 못했습니다.",
                 "EMPTYDETAIL": "Altitude는 자동으로 블록 탐색기에서 사용자 주소로 전송된 MRC20 및 MRC721 토큰을 확인한 후, 사용자 노드를 통해 모든 토큰을 실시간으로 검증합니다. 또한, 토큰의 컨트랙트 주소를 알고 있다면 수동으로 토큰을 추가할 수도 있습니다.",
-                "EMPTYDETAILCHECKINGDISABLED": "자동 토큰 확인 기능이 꺼져 있으므로 주소에서 토큰을 확인하지 않습니다. 위에서 기능을 다시 켜거나, 계약 주소를 알고 있다면 토큰을 수동으로 추가하세요.",
+                "EMPTYDETAILCHECKINGDISABLED": "자동 토큰 확인 기능은 기본적으로 비활성화되어 있습니다. 위의 '토큰 스캔 활성화' 버튼을 사용하거나, 토큰의 컨트랙트 주소를 알고 있다면 수동으로 추가하세요.",
                 "HIDDENTITLE": "숨겨진 토큰",
                 "CONTEXTMENUHIDE": "토큰 숨기기",
                 "ITEMSSUFFIX": "품목(들)",
                 "NONENUMERABLETOOLTIP": "이 컬렉션은 개별 품목 목록을 지원하지 않고, 대신 보유하고 있는 수량을 보여줍니다.",
-                "CHECKINGENABLED": "확인 중",
-                "CHECKINGDISABLED": "체크 표시",
-                "CHECKINGENABLEDTOOLTIP": "토큰 확인 기능이 켜져 있습니다. Altitude는 주기적으로 사용자의 주소에서 토큰을 확인하고 잔액을 갱신합니다. 클릭하여 끌 수 있습니다.",
-                "CHECKINGDISABLEDTOOLTIP": "토큰 확인 기능이 꺼져 있습니다. 클릭하여 다시 켜세요.",
-                "CHECKINGDISABLEDNOTICE": "자동 토큰 확인 기능이 꺼져 있습니다. 토큰 확인이 이루어지지 않으므로 잔액이 업데이트되지 않습니다. 토큰은 수동으로 추가할 수 있습니다."
+                "CHECKINGDISABLEDTITLE": "토큰 스캔 기능이 꺼져 있습니다",
+                "CHECKINGDISABLEDNOTICE": "자동 토큰 확인 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하기 전까지는 주소에서 토큰이 스캔되지 않으며 잔액도 업데이트되지 않습니다.",
+                "ENABLEBUTTON": "토큰 스캔 활성화",
+                "ENABLECONFIRMTITLE": "토큰 스캔을 활성화하시겠습니까?",
+                "ENABLECONFIRMCONTENT": "Altitude는 주기적으로 블록 탐색기를 확인하여 사용자의 주소가 보유한 MRC20/MRC721 토큰을 확인하고, 사용자의 노드에서 직접 잔액과 소유권을 검증합니다. 첫 번째 확인은 지갑 동기화가 완료된 후 실행되며, 이후에는 기본적으로 60분마다 반복됩니다. 옵션 > 탐색기에서 언제든지 이 간격을 변경하거나 토큰 스캔 기능을 비활성화할 수 있습니다."
             },
             "ADDTOKEN": {
                 "TITLE": "토큰 추가",

@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Panatilihing huli"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Pag-scan ng Token",
+                "TOKENSCANNINGENABLED": "Awtomatikong suriin ang mga address para sa mga token at mga balanse ng pag-refresh",
+                "TOKENSCANNINGINFO": "Naka-off bilang default. Kapag naka-enable, sinusuri ng Altitude ang isang block explorer upang matuklasan ang mga MRC20/MRC721 token na hawak ng iyong mga address, pagkatapos ay direktang beripikahin ang mga balanse at pagmamay-ari laban sa iyong sariling node. Karamihan sa mga wallet ay walang hawak na anumang token, kaya opt-in ito upang maiwasan ang mga hindi kinakailangang kahilingan sa background.",
+                "TOKENSCANNINGINTERVALLABEL": "Suriin bawat (minuto)",
+                "TOKENSCANNINGINTERVALINFO": "Pagkatapos paganahin, ang unang pagsusuri ay isasagawa kapag ganap nang naka-sync ang iyong wallet. Pagkatapos nito, muling susuriin ng Altitude sa panahong ito.",
                 "BLOCKEXPLORERTITLE": "Block Explorer",
                 "BLOCKEXPLORERINFO": "Bumukas ang site nang tingnan ang isang transaksyon sa block explorer (hal. i-right-click ang isang transaksyon > Tingnan sa Explorer).",
                 "TOKENDISCOVERYTITLE": "Pagtuklas ng Token",
@@ -753,16 +758,16 @@
                 "UNHIDE": "I-unhide",
                 "EMPTYTITLE": "Wala Pang Nahanap na mga Token",
                 "EMPTYDETAIL": "Awtomatikong sinusuri ng Altitude ang isang block explorer para sa mga MRC20 at MRC721 token na ipinadala sa iyong mga address, pagkatapos ay bineberipika ang lahat nang live laban sa iyong sariling node. Maaari ka ring magdagdag ng token nang manu-mano kung alam mo ang address ng kontrata nito.",
-                "EMPTYDETAILCHECKINGDISABLED": "Naka-off ang awtomatikong pagsusuri ng token, kaya hindi tinitingnan ang iyong mga address para sa mga token. I-on itong muli sa itaas, o manu-manong magdagdag ng token kung alam mo ang address ng kontrata nito.",
+                "EMPTYDETAILCHECKINGDISABLED": "Naka-off bilang default ang awtomatikong pagsusuri ng token. Gamitin ang button na Paganahin ang Pag-scan ng Token sa itaas, o manu-manong magdagdag ng token kung alam mo ang address ng kontrata nito.",
                 "HIDDENTITLE": "Mga Nakatagong Token",
                 "CONTEXTMENUHIDE": "Itago ang Token",
                 "ITEMSSUFFIX": "bagay",
                 "NONENUMERABLETOOLTIP": "Hindi sinusuportahan ng koleksyong ito ang paglilista ng mga indibidwal na item - ipinapakita na lang kung ilan ang hawak mo.",
-                "CHECKINGENABLED": "Pagsusuri",
-                "CHECKINGDISABLED": "Pag-check Off",
-                "CHECKINGENABLEDTOOLTIP": "Naka-on ang pagsusuri ng token - Pana-panahong sinusuri ng Altitude ang iyong mga address para sa mga token at nire-refresh ang mga balanse. I-click para i-off.",
-                "CHECKINGDISABLEDTOOLTIP": "Naka-off ang token checking - i-click para i-on muli.",
-                "CHECKINGDISABLEDNOTICE": "Naka-off ang awtomatikong pagsusuri ng token. Hindi ini-scan ang iyong mga address para sa mga token at hindi maa-update ang mga balanse. Maaari ka pa ring manu-manong magdagdag ng token."
+                "CHECKINGDISABLEDTITLE": "Naka-off ang Token Scanning",
+                "CHECKINGDISABLEDNOTICE": "Naka-off bilang default ang awtomatikong pagsusuri ng token. Hindi ini-scan ang iyong mga address para sa mga token at hindi maa-update ang mga balanse hangga't hindi mo ito ino-on.",
+                "ENABLEBUTTON": "Paganahin ang Pag-scan ng Token",
+                "ENABLECONFIRMTITLE": "Paganahin ang Token Scanning?",
+                "ENABLECONFIRMCONTENT": "Pana-panahong susuriin ng Altitude ang isang block explorer upang makita kung aling mga MRC20/MRC721 token ang hawak ng iyong mga address, pagkatapos ay ibeberipika ang mga balanse at pagmamay-ari nang direkta laban sa iyong sariling node. Ang unang pagsusuri ay isinasagawa kapag ganap nang na-sync ang iyong wallet, at pagkatapos nito ay uulitin ito kada 60 minuto bilang default. Maaari mong baguhin ang interval na ito, o i-off muli ang token scanning, anumang oras mula sa Options > Explorer."
             },
             "ADDTOKEN": {
                 "TITLE": "Magdagdag ng Token",

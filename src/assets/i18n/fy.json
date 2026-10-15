@@ -291,6 +291,11 @@
                 "KEEPCOUNTLABEL": "Hâld lêst"
             },
             "EXPLORER": {
+                "TOKENSCANNINGTITLE": "Token scannen",
+                "TOKENSCANNINGENABLED": "Kontrolearje automatysk adressen op tokens en ferfarskje saldo's",
+                "TOKENSCANNINGINFO": "Standert út. As ynskeakele, kontrolearret Altitude in blokferkenner om MRC20/MRC721-tokens te ûntdekken dy't troch jo adressen bewarre wurde, en ferifiearret dan saldo's en eigendom direkt tsjin jo eigen knooppunt. De measte wallets befetsje gjin tokens, dus dit is in opt-in om ûnnedige eftergrûnfersyk te foarkommen.",
+                "TOKENSCANNINGINTERVALLABEL": "Kontrolearje elke (minuten)",
+                "TOKENSCANNINGINTERVALINFO": "Nei it ynskeakeljen wurdt de earste kontrôle útfierd as jo wallet folslein syngronisearre is. Dêrnei kontrolearret Altitude opnij op dit ynterval.",
                 "BLOCKEXPLORERTITLE": "Blokûntdekker",
                 "BLOCKEXPLORERINFO": "De side iepene by it besjen fan in transaksje op 'e blokferkenner (bygelyks rjochtsklikke op in transaksje > Besjoch op ferkenner).",
                 "TOKENDISCOVERYTITLE": "Tokenûntdekking",
@@ -753,16 +758,16 @@
                 "UNHIDE": "Unthâlde",
                 "EMPTYTITLE": "Noch gjin tokens fûn",
                 "EMPTYDETAIL": "Altitude kontrolearret automatysk in blokferkenner op MRC20- en MRC721-tokens dy't nei jo adressen stjoerd binne, en ferifiearret dan alles live tsjin jo eigen node. Jo kinne ek in token manuell tafoegje as jo it kontraktadres witte.",
-                "EMPTYDETAILCHECKINGDISABLED": "Automatyske tokenkontrôle is útskeakele, dus jo adressen wurde net kontrolearre op tokens. Skeakelje it hjirboppe wer yn, of foegje in token manuell ta as jo it kontraktadres witte.",
+                "EMPTYDETAILCHECKINGDISABLED": "Automatyske tokenkontrôle is standert útskeakele. Brûk de knop Tokenscannen ynskeakelje hjirboppe, of foegje in token manuell ta as jo it kontraktadres witte.",
                 "HIDDENTITLE": "Ferburgen tokens",
                 "CONTEXTMENUHIDE": "Token ferbergje",
                 "ITEMSSUFFIX": "item(s)",
                 "NONENUMERABLETOOLTIP": "Dizze kolleksje stipet gjin list mei yndividuele items - ynstee dêrfan wurdt werjûn hoefolle jo hawwe.",
-                "CHECKINGENABLED": "Kontrolearje op",
-                "CHECKINGDISABLED": "Ofkontrôle",
-                "CHECKINGENABLEDTOOLTIP": "Tokenkontrôle is oan - Altitude kontrolearret jo adressen periodyk op tokens en ferfarsket it saldo. Klik om út te skeakeljen.",
-                "CHECKINGDISABLEDTOOLTIP": "Tokenkontrôle is út - klik om wer yn te skeakeljen.",
-                "CHECKINGDISABLEDNOTICE": "Automatyske tokenkontrôle is útskeakele. Jo adressen wurde net scannen op tokens en saldo's sille net bywurke wurde. Jo kinne noch altyd in token manuell tafoegje."
+                "CHECKINGDISABLEDTITLE": "Tokenscannen is útskeakele",
+                "CHECKINGDISABLEDNOTICE": "Automatyske tokenkontrôle is standert útskeakele. Jo adressen wurde net scannen op tokens en saldo's wurde net bywurke oant jo it ynskeakelje.",
+                "ENABLEBUTTON": "Tokenscannen ynskeakelje",
+                "ENABLECONFIRMTITLE": "Tokenscannen ynskeakelje?",
+                "ENABLECONFIRMCONTENT": "Altitude sil periodyk in blokferkenner kontrolearje om te sjen hokker MRC20/MRC721-tokens jo adressen befetsje, en dan saldo's en eigendom direkt ferifiearje tsjin jo eigen node. De earste kontrôle rint as jo wallet folslein syngronisearre is, en dêrnei wurdt it standert elke 60 minuten werhelle. Jo kinne dit ynterval feroarje, of tokenscannen wer útskeakelje, op elk momint fanút Opsjes > Ferkenner."
             },
             "ADDTOKEN": {
                 "TITLE": "Token tafoegje",
